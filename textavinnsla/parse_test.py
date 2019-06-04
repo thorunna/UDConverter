@@ -14,11 +14,11 @@ path.extend(['./testing/'])
 # )
 
 icepahc = LazyCorpusLoader(
-    'icepahc-v0.9/psd/', CategorizedBracketParseCorpusReader,
+    'icepahc-v0.9/psd_orig/', CategorizedBracketParseCorpusReader,
     r'.*\.psd', cat_pattern=r'.*(nar|rel|sci|bio|law)\-.*'
 )
 
-tree = icepahc.parsed_sents()[0]
+tree = icepahc.parsed_sents()[5]
 
 ptree = ParentedTree.convert(tree)
 
@@ -26,11 +26,12 @@ sentence = []
 runner = 0
 sentence.append(['nr.', 'token', 'lemma', 'UD_tag', 'ice_tag', 'feats', 'rel', 'rel_type'])
 for i in tree.pos():
-    token = i[0]
+    word = i[0].split('-')
+    token = word[0]
     if token[0] in ['*', '0']: continue
+    lemma = word[1]
     ice_tag = i[1]
     runner += 1
-    lemma = '_'
     UD_tag = '_'
     feats = '_'
     rel = '_'
