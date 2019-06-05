@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Eyða (CODE...)
+sed -i 's/\(CODE[\s{}\wðÐÖ\:\-\?]*\)//g' ../icecorpus/finished/*.psd
 #Eyða auðri línu
 sed -i '/^$/d' ../icecorpus/finished/*.psd
 #Eyða línu sem inniheldur '(ID'
