@@ -179,16 +179,6 @@ def get_UD_tag(tag, word):
         #     return 'NUM'
         elif tag[0:2] == 'DO' or tag[0:2] == 'DA':
             return 'VERB'       #ATH. merkt sem sögn í bili
-#        elif tag == 'DON':
-#            return 'VERB'     #ATH. merkt sem sögn í bili
-#        elif tag == 'DAN':
-#            return 'VERB'     #ATH. merkt sem sögn í bili
-#        elif tag == 'DO':
-#            return 'VERB'     #ATH. merkt sem sögn í bili    
-#        elif tag == 'DOPS':
-#            return 'VERB'     #ATH. merkt sem sögn í bili
-#        elif tag == 'DODS':
-#            return 'VERB'     #ATH. merkt sem sögn í bili    
         elif tag == 'CONJ' and word in cconj:
             return 'CCONJ'
         elif tag in string.punctuation:
