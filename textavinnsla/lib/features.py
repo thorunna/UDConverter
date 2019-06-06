@@ -15,15 +15,17 @@ tags = {
     'W' : 'DET',    # WH-determiner tagged as DET (determiner)
     'R' : 'VERB',   # All forms of "verða" tagged as VERB
     'TO' : 'PART',  # Infinitive marker tagged as PART (particle)
-    'NPR' : 'POPN', # proper nouns tagged as POPN
-    'NPRS': 'POPN',
+    'NPR' : 'PROPN', # proper nouns tagged as PROPN
+    'NPRS': 'PROPN',
     'PRO' : 'PRON',
+    'WQ' : 'PRON',  #interrogative pronoun
     'NUM' : 'NUM',
     'ONE' : 'NUM',
     'ADJ' : 'ADJ',  # Adjectives tagged as ADV
     'ADJR' : 'ADJ', # Comparative adjectives tagged as ADV
     'ADJS' : 'ADJ', # Superlative adjectives tagged as ADV
     'ADV' : 'ADV',  # Adverbs tagged as ADV
+    'WADV' : 'ADV', #TODO: ath. betur - bara spor?
     'NEG' : 'ADV',
     'ADVR' : 'ADV', # Comparative adverbs tagged as ADV
     'ADVS' : 'ADV', # Superlative adverbs tagged as ADV
@@ -56,7 +58,7 @@ feats = {
             '' : 'Neut'
         }
     },
-    'POPN' : { # Case, Number, Definite
+    'PROPN' : { # Case, Number, Definite
         'Number': {
             'NPRS' : 'Plur',  # noun, plural number
             'NPR' : 'Sing'    # noun singular number
@@ -70,26 +72,89 @@ feats = {
     },
     'PRON' : { # Case, Gender, Number, PronType
         'Number': {
-            'NPRS' : 'Plur',  # noun, plural number
-            'NP' : 'Sing'    # noun singular number
+            'NS' : 'Plur',  # noun, plural number
+            'N' : 'Sing'    # noun singular number
         },
         'Case' : {
             'N' : 'Nom',    # nominative case
             'A' : 'Acc',    # accusative case
             'D' : 'Dat',    # dative case
             'G' : 'Gen'     # genitive case
+        },
+        'PronType' : {
+            '' : 'Prs',     #personal
+            '' : 'Rcp',     #reciprocal
+            '' : 'Int',     #interrogative
+            '' : 'Rel',     #relative
+            '' : 'Dem',     #demonstrative
+            '' : 'Ind'      #indefinite
+        },
+        'Gender' : {
+            '' : 'Masc',
+            '' : 'Fem',
+            '' : 'Neut'
         }
     },
-    'DET' : {},
-    'ADP' : {},
-    'ADJ' : {},
-    'SCONJ' : {},
-    'VERB' : {},
-    'DET' : {},
-    'PART' : {},
-    'NUM' : {},
-    'ADJ' : {},
-    'ADV' : {}
+    'DET' : {
+        'Case' : {
+            'N' : 'Nom',
+            'A' : 'Acc',
+            'D' : 'Dat',
+            'G' : 'Gen'
+        }
+    },
+    'ADJ' : {
+        'Case' : {
+            'N' : 'Nom',
+            'A' : 'Acc',
+            'D' : 'Dat',
+            'G' : 'Gen'            
+        },
+        'Degree' : {
+            '' : 'Pos',     #first degree
+            'R' : 'Cmp',    #second Degree
+            'S' : 'Sup'     #third degree
+        },
+        'Gender' : {
+            '' : 'Masc',
+            '' : 'Fem',
+            '' : 'Neut'
+        }
+    },
+    'VERB' : {},   
+    'NUM' : {
+        'Case' : {
+            'N' : 'Nom',
+            'A' : 'Acc',
+            'D' : 'Dat',
+            'G' : 'Gen'            
+        },
+        'Gender' : {
+            '' : 'Masc',
+            '' : 'Fem',
+            '' : 'Neut'
+        },
+        'Number': {
+            'NPRS' : 'Plur',  # plural
+            'NP' : 'Sing'    # singular
+        },
+        'NumType' : {       #ATH. mögulegt að tilgreina þetta?
+            '' : 'Card',    #Cardinal number
+            '' : 'Ord',     #Ordinal number
+            '' : 'Frac'     #Fraction
+        }       
+    },
+    'ADV' : {
+        'Degree' : {
+            '' : 'Pos',    #first degree
+            '' : 'Cmp',    #second Degree
+            '' : 'Sup'     #third degree
+        }    
+    },
+    'SCONJ' : {},   #no features needed for subordinating conjunctions
+    'CCONJ' : {},   #no features needed for coordinating conjunctions
+    'ADP' : {},     #no features needed for adpositions
+    'PART' : {},    #no features possible for particles 
 }
 
 def check_def(word):
@@ -112,6 +177,18 @@ def get_UD_tag(tag, word):
         #     return tags['PRO']
         # elif tag.startswith('NUM') or tag.startswith('ONE'):
         #     return 'NUM'
+        elif tag[0:2] == 'DO' or tag[0:2] == 'DA':
+            return 'VERB'       #ATH. merkt sem sögn í bili
+#        elif tag == 'DON':
+#            return 'VERB'     #ATH. merkt sem sögn í bili
+#        elif tag == 'DAN':
+#            return 'VERB'     #ATH. merkt sem sögn í bili
+#        elif tag == 'DO':
+#            return 'VERB'     #ATH. merkt sem sögn í bili    
+#        elif tag == 'DOPS':
+#            return 'VERB'     #ATH. merkt sem sögn í bili
+#        elif tag == 'DODS':
+#            return 'VERB'     #ATH. merkt sem sögn í bili    
         elif tag == 'CONJ' and word in cconj:
             return 'CCONJ'
         elif tag in string.punctuation:
@@ -127,22 +204,90 @@ def get_feats(leaf):
         lemma = leaf[0].split('-')[1]
         token = leaf[0].split('-')[0]
         tag = leaf[1]
+        print(tag)
         UD_tag = get_UD_tag(tag, lemma)
-        if UD_tag in {'NOUN', 'POPN'}:
+#       print(tag)
+        if UD_tag in {'NOUN', 'PROPN'}:
             tag_name = tag.split('-')[0]
             tag_info = tag.split('-')[1]
             case = 'Case='+feats[UD_tag]['Case'][tag_info]
             num = 'Number='+feats[UD_tag]['Number'][tag_name]
             det = check_def(token)
             return case+'|'+num+'|'+det
-        # if UD_tag == 'PRON':
-        #     tag_name = tag.split('-')[0]
-        #     tag_info = tag.split('-')[1]
-        #     case = 'Case='+feats[UD_tag]['Case'][tag_info]
-        #     num = 'Number='+feats[UD_tag]['Number'][tag_name]
-        #     return leaf
+        if UD_tag == 'PRON':
+            try: 
+                tag_name = tag.split('-')[0]
+                tag_info = tag.split('-')[1]
+                case = 'Case='+feats[UD_tag]['Case'][tag_info]
+#               num = 'Number='+feats[UD_tag]['Number'][tag_name]
+                return case
+            except:
+                return 'Tag cannot be split'    #TODO: díla við þetta
+                return '_'
+        if UD_tag == 'DET':
+            tag_name = tag.split('-')[0]
+            tag_info = tag.split('-')[1]
+            case = 'Case='+feats[UD_tag]['Case'][tag_info]
+            return case
+        if UD_tag == 'ADJ':
+            try:
+                tag_name = tag.split('-')[0]
+                tag_info = tag.split('-')[1]
+                if tag_name[-1] == 'R':
+                    degree = 'Degree=Cmp'
+                elif tag_name[-1] == 'S':
+                    degree = 'Degree=Sup'
+                else:
+                    degree = 'Degree=Pos'
+                case = 'Case='+feats[UD_tag]['Case'][tag_info]  #TODO: ath. fleiri feats
+                return case+'|'+degree
+            except:
+                if tag[-1] == 'R':
+                    degree = 'Degree=Cmp'
+                elif tag[-1] == 'S':
+                    degree = 'Degree=Sup'
+                else:
+                    degree = 'Degree=Pos'
+                return 'Tag cannot be split, no information on case'    #TODO: díla við þetta
+                return case
+        if UD_tag == 'NUM':
+            tag_name = tag.split('-')[0]
+            tag_info = tag.split('-')[1]
+            case = 'Case='+feats[UD_tag]['Case'][tag_info]  #TODO: ath. fleiri feats
+            return case
         else:
             return '_'
+
+"""
+def get_feats(leaf):
+    if leaf[0][0] not in {'*', '0'}: # ATH Used while traces etc. are still in data
+        lemma = leaf[0].split('-')[1]
+        token = leaf[0].split('-')[0]
+        tag = leaf[1]
+        print(tag)
+        UD_tag = get_UD_tag(tag, lemma)
+#       print(tag)
+        try:
+            tag_name = tag.split('-')[0]
+            tag_info = tag.split('-')[1]
+            case = 'Case='+feats[UD_tag]['Case'][tag_info]
+            num = 'Number='+feats[UD_tag]['Number'][tag_name]
+            if UD_tag in {'NOUN', 'PROPN'}:
+                det = check_def(token)
+                return case+'|'+num+'|'+det
+            if UD_tag == 'PRON' or 'DET' or 'NUM':
+                return case
+            if UD_tag == 'ADJ':
+                if tag_name[-1] == 'R':
+                    degree = 'Degree=Cmp'
+                elif tag_name[-1] == 'S':
+                    degree = 'Degree=Sup'
+                else:
+                    degree = 'Degree=Pos'
+                return case+'|'+degree
+        except:
+            return '_'
+"""
 
 if __name__ == '__main__':
     # icepahc = LazyCorpusLoader(
