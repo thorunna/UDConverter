@@ -36,6 +36,7 @@ tags = {
     'R' : 'VERB',   # All forms of "verða" tagged as VERB
     'TO' : 'PART',  # Infinitive marker tagged as PART (particle)
     'NPR' : 'POPN', # proper nouns tagged as POPN
+    'NPRS': 'POPN',
     'PRO' : 'PRON',
     'NUM' : 'NUM',
     'ONE' : 'NUM',
@@ -51,7 +52,7 @@ tags = {
     'OTHERS' : 'PRON'
 }
 
-features = {
+feats = {
     'NOUN' : {
         'Case' : {
             'N' : 'Nom',    # nominative case
@@ -60,12 +61,19 @@ features = {
             'G' : 'Gen'     # genitive case
         },
         'Number': {
-            'NS' : 'Plur',   # plural number
-            'N' : 'Sing'    # singular number
+            'NS' : 'Plur',  # noun, plural number
+            'N' : 'Sing'    # noun singular number
+            # 'NPR' : ''
+            # 'NPRS' : 'Plur' # proper noun plural
         },
-        'Definite' : { # ATH this may be dropped from feature dict
-            '' : 'Def',
+        'Definite' : { # TODO: remove def from dict
+            '$' : 'Def',
             '' : 'Ind'
+        },
+        'Gender' : {
+            '' : 'Masc',
+            '' : 'Fem',
+            '' : 'Neut'
         }
     },
     'DET' : {},
@@ -119,7 +127,31 @@ def sent_text(sentence):
     text = '# text = ' + correct_spaces(' '.join(text))
     return text
 
-def word_info(sentence):
+def check_def(word):
+    if word[-1] == '$':
+        det = 'Definite=Def'
+    else:
+        det = 'Definite=Ind'
+    return det
+
+def get_feats(leaf):
+    if leaf[0][0] not in {'*', '0'}: # ATH Used while traces etc. are still in data
+        lemma = leaf[0].split('-')[1]
+        token = leaf[0].split('-')[0]
+        tag = leaf[1]
+        UD_tag = get_UD_tag(tag, lemma)
+        if UD_tag == 'NOUN':            # TODO: gender feature
+            tag_name = tag.split('-')[0]
+            tag_info = tag.split('-')[1]
+            case = 'Case='+feats[UD_tag]['Case'][tag_info]
+            num = 'Number='+feats[UD_tag]['Number'][tag_name]
+            det = check_def(token)
+            return case+'|'+num+'|'+det
+        else:
+            return '_'
+
+
+def word_info(tree):
     '''
     Takes in a nltk Tree object and returns an approximation of the tree sentence
     in the CONLLU format for UD
@@ -139,7 +171,7 @@ def word_info(sentence):
         LEMMA = word[1] # LEMMA: Lemma or stem of word form.
         XPOS = leaf[1] # XPOS: Language-specific part-of-speech tag (IcePaHC)
         UPOS = get_UD_tag(XPOS, LEMMA) # UPOS: Universal part-of-speech tag.
-        FEATS = '_' # FEATS: List of morphological features from the universal feature inventory
+        FEATS = get_feats(leaf) # FEATS: List of morphological features from the universal feature inventory
         HEAD = '_' # HEAD: Head of the current word, which is either a value of ID or zero (0).
         DEPREL = '_' # DEPREL: Universal dependency relation to the HEAD (root iff HEAD = 0)
         DEPS = '_' # DEPS: Enhanced dependency graph in the form of a list of head-deprel pairs.
@@ -167,34 +199,41 @@ fileids = icepahc.fileids()
 # for s in trees:
 #     print(s)
 
-current_sentence = 0
+def print_data():
+    current_sentence = 0
+    with open('out_test/is_test.02.conllu', 'w') as file:
+        while current_sentence <= 100:
+            try:
+                # file.write('hello')
+                print('\n# sent_id = ', current_sentence + 1)
+                tree = icepahc.parsed_sents()[current_sentence]
+                # file.write('# sent_id = ' + str(current_sentence + 1))
+                # file.write('\n')
+                for line in word_info(tree):
+                    if line[0] == '#':
+                        print(line)
+                        # file.write(line)
+                        # file.write('\n')
+                    else:
+                        print('\t'.join(line))
+                        # file.write('\t'.join(line))
+                        # file.write('\n')
+                file.write('\n')
+                current_sentence += 1
+            except:
+                raise
+                print('\n# sent_id = ', current_sentence)
+                print('Failure')
+                current_sentence += 1
+                continue
 
-with open('is_test.conllu', 'w') as file:
-    while current_sentence <= 100:
-        try:
-            # file.write('hello')
-            tree = icepahc.parsed_sents()[current_sentence]
-            print('\n# sent_id = ', current_sentence + 1)
-            # file.write('# sent_id = ' + str(current_sentence + 1))
-            # file.write('\n')
-            for line in word_info(tree):
-                if line[0] == '#':
-                    print(line)
-                    # file.write(line)
-                    # file.write('\n')
-                else:
-                    print('\t'.join(line))
-                    # file.write('\t'.join(line))
-                    # file.write('\n')
-            # file.write('\n')
-            current_sentence += 1
-        except:
-            # raise
-            print('\n# sent_id = ', current_sentence)
-            print('Failure')
-            current_sentence += 1
-            continue
+# tree = tree = icepahc.parsed_sents()[2]
+# for leaf in tree.pos():
+#     feat = get_feats(leaf)
+#     if feat:
+#         print(leaf, feat)
 
+print_data()
 
 
 
