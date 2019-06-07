@@ -278,7 +278,7 @@ def get_feats(leaf):
                     degree = 'Degree='+feats[UD_tag]['Degree']['P']
                 return case+'|'+degree
         except:
-            return 'Tag cannot be split'
+            return '_'
 
 if __name__ == '__main__':
     # icepahc = LazyCorpusLoader(
