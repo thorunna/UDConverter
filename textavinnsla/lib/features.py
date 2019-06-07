@@ -110,7 +110,7 @@ feats = {
             'N' : 'Nom',
             'A' : 'Acc',
             'D' : 'Dat',
-            'G' : 'Gen'            
+            'G' : 'Gen'
         },
         'Degree' : {
             'P' : 'Pos',     #first degree
@@ -123,13 +123,13 @@ feats = {
             '' : 'Neut'
         }
     },
-    'VERB' : {},   
+    'VERB' : {},
     'NUM' : {
         'Case' : {
             'N' : 'Nom',
             'A' : 'Acc',
             'D' : 'Dat',
-            'G' : 'Gen'            
+            'G' : 'Gen'
         },
         'Gender' : {
             '' : 'Masc',
@@ -144,19 +144,19 @@ feats = {
             '' : 'Card',    #Cardinal number
             '' : 'Ord',     #Ordinal number
             '' : 'Frac'     #Fraction
-        }       
+        }
     },
     'ADV' : {
         'Degree' : {
             '' : 'Pos',    #first degree
             '' : 'Cmp',    #second Degree
             '' : 'Sup'     #third degree
-        }    
+        }
     },
     'SCONJ' : {},   #no features needed for subordinating conjunctions
     'CCONJ' : {},   #no features needed for coordinating conjunctions
     'ADP' : {},     #no features needed for adpositions
-    'PART' : {},    #no features possible for particles 
+    'PART' : {},    #no features possible for particles
 }
 
 def check_def(word):
@@ -178,7 +178,7 @@ def get_UD_tag(tag, word):
         # elif tag.startswith('NUM') or tag.startswith('ONE'):
         #     return 'NUM'
         elif tag[0:2] == 'DO' or tag[0:2] == 'DA':
-            return 'VERB'       #ATH. merkt sem sögn í bili   
+            return 'VERB'       #ATH. merkt sem sögn í bili
         elif tag == 'CONJ' and word in cconj:
             return 'CCONJ'
         elif tag in string.punctuation:
@@ -211,7 +211,7 @@ def get_feats(leaf):
             return case+'|'+num
         if UD_tag == 'PRON':
             print(tag)
-            try: 
+            try:
                 tag_name = tag.split('-')[0]
                 tag_info = tag.split('-')[1]
                 case = 'Case='+feats[UD_tag]['Case'][tag_info]
@@ -267,7 +267,18 @@ def get_feats(leaf):
                 if UD_tag in {'NOUN', 'PROPN'}:
                     num = 'Number='+feats[UD_tag]['Number'][tag_name]
                     det = check_def(token)
-                    return case+'|'+num+'|'+det
+                    token = token.replace('$', '')
+                    print(token, token+lemma)
+                    try:
+                        gender = 'Gender='+feats[UD_tag]['Gender'][DMII_data.check_DMII(DMII, token+lemma)[1]]
+                    except:
+                        gender = None
+                    print(token, gender)
+                    if gender:
+                        return case+'|'+num+'|'+gender+'|'+det
+                    else:
+                        return case+'|'+num+'|'+det+'*'
+                    # return case+'|'+num+'|'+det
                 if UD_tag in {'PRON', 'DET', 'NUM'}:
                     return case
                 if UD_tag == 'ADJ':
