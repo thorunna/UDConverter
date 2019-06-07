@@ -31,7 +31,9 @@ tags = {
     'ADVS' : 'ADV', # Superlative adverbs tagged as ADV
     'ALSO' : 'ADV',
     'OTHER' : 'PRON',
-    'OTHERS' : 'PRON'
+    'OTHERS' : 'PRON',
+    'FW' : 'X',
+    'X' : 'X'
 }
 
 feats = {
@@ -111,7 +113,7 @@ feats = {
             'G' : 'Gen'            
         },
         'Degree' : {
-            '' : 'Pos',     #first degree
+            'P' : 'Pos',     #first degree
             'R' : 'Cmp',    #second Degree
             'S' : 'Sup'     #third degree
         },
@@ -189,31 +191,36 @@ def get_UD_tag(tag, word):
             except:
                 return '_'
 
+"""
 def get_feats(leaf):
     if leaf[0][0] not in {'*', '0'}: # ATH Used while traces etc. are still in data
         lemma = leaf[0].split('-')[1]
         token = leaf[0].split('-')[0]
         tag = leaf[1]
-        print(tag)
         UD_tag = get_UD_tag(tag, lemma)
-#       print(tag)
-        if UD_tag in {'NOUN', 'PROPN'}:
+        if UD_tag == 'NOUN':
             tag_name = tag.split('-')[0]
             tag_info = tag.split('-')[1]
             case = 'Case='+feats[UD_tag]['Case'][tag_info]
             num = 'Number='+feats[UD_tag]['Number'][tag_name]
             det = check_def(token)
             return case+'|'+num+'|'+det
+        if UD_tag == 'PROPN':
+            tag_name = tag.split('-')[0]
+            tag_info = tag.split('-')[1]
+            case = 'Case='+feats[UD_tag]['Case'][tag_info]
+            num = 'Number='+feats[UD_tag]['Number'][tag_name]
+            return case+'|'+num
         if UD_tag == 'PRON':
+            print(tag)
             try: 
                 tag_name = tag.split('-')[0]
                 tag_info = tag.split('-')[1]
                 case = 'Case='+feats[UD_tag]['Case'][tag_info]
-#               num = 'Number='+feats[UD_tag]['Number'][tag_name]
+#                num = 'Number='+feats[UD_tag]['Number'][tag_name]      #Engar upplýsingar um num. eins og er
                 return case
             except:
                 return 'Tag cannot be split'    #TODO: díla við þetta
-                return '_'
         if UD_tag == 'DET':
             tag_name = tag.split('-')[0]
             tag_info = tag.split('-')[1]
@@ -238,8 +245,7 @@ def get_feats(leaf):
                     degree = 'Degree=Sup'
                 else:
                     degree = 'Degree=Pos'
-                return 'Tag cannot be split, no information on case'    #TODO: díla við þetta
-                return case
+                return 'Tag cannot be split'+'|'+'case'    #TODO: díla við þetta
         if UD_tag == 'NUM':
             tag_name = tag.split('-')[0]
             tag_info = tag.split('-')[1]
@@ -247,37 +253,34 @@ def get_feats(leaf):
             return case
         else:
             return '_'
-
 """
+
 def get_feats(leaf):
     if leaf[0][0] not in {'*', '0'}: # ATH Used while traces etc. are still in data
         lemma = leaf[0].split('-')[1]
         token = leaf[0].split('-')[0]
         tag = leaf[1]
-        print(tag)
         UD_tag = get_UD_tag(tag, lemma)
-#       print(tag)
-        try:
+        try:        #TODO: ath. fleiri feats
             tag_name = tag.split('-')[0]
             tag_info = tag.split('-')[1]
             case = 'Case='+feats[UD_tag]['Case'][tag_info]
-            num = 'Number='+feats[UD_tag]['Number'][tag_name]
             if UD_tag in {'NOUN', 'PROPN'}:
+                num = 'Number='+feats[UD_tag]['Number'][tag_name]
                 det = check_def(token)
                 return case+'|'+num+'|'+det
-            if UD_tag == 'PRON' or 'DET' or 'NUM':
+            if UD_tag in {'PRON', 'DET', 'NUM'}:
                 return case
             if UD_tag == 'ADJ':
                 if tag_name[-1] == 'R':
-                    degree = 'Degree=Cmp'
+                    degree = 'Degree='+feats[UD_tag]['Degree']['R']
                 elif tag_name[-1] == 'S':
-                    degree = 'Degree=Sup'
+                    degree = 'Degree='+feats[UD_tag]['Degree']['S']
                 else:
-                    degree = 'Degree=Pos'
+                    degree = 'Degree='+feats[UD_tag]['Degree']['P']
                 return case+'|'+degree
         except:
-            return '_'
-"""
+            return 'Tag cannot be split'
 
 if __name__ == '__main__':
     # icepahc = LazyCorpusLoader(
