@@ -10,6 +10,17 @@ DMII = csv.reader(open(DMII_path, encoding = 'UTF-8'), delimiter=';')
 SpMy = csv.reader(open(spurnarmyndir_path, encoding = 'UTF-8'), delimiter=';')
 Plst = csv.reader(open(plastur_path, encoding = 'UTF-8'), delimiter=';')
 
+#for row in Plst:
+#    print(row)
+
+#f = open('plastur_copy', 'w+')
+#f.write(Plst)
+#f.close()
+
+#with open('plastur_copy', 'w+', encoding='utf-8') as file:
+#    for row in Plst:
+#        file.write(row)
+
 namelist = ['no', 'lo', 'so', 'ao', 'pfn', 'afturbfn', 'fn', 'to', 'gr']
 
 no = []
@@ -44,7 +55,7 @@ def makefiles(list, dir):
 def split(dmii, string):
     print('Processing {0}...'.format(string))
     start = time.time()
-    for line in DMII:
+    for line in dmii:
         # if line[2] not in {'kk', 'kvk', 'hk', 'so', 'lo'}:
         #     print(line[2], end=' ')
         if line [2] in {'kk', 'kvk', 'hk'}:
@@ -57,7 +68,7 @@ def split(dmii, string):
             ao.append(line)
         elif line [2] == 'pfn':
             pfn.append(line)
-        elif line [2] == 'afturbfn':
+        elif line [2] == 'abfn':
             afturbfn.append(line)
         elif line [2] == 'fn':
             fn.append(line)
@@ -72,11 +83,11 @@ def split(dmii, string):
     end = time.time()
     print('Time elapsed:', end-start, 'seconds.')
 
-split(DMII, 'DMII databse')
+split(DMII, 'DMII database')
 split(Plst, 'Plástur')
 split(SpMy, 'Spurnarmyndir')
 
-parent_dir = os.path.join('DMII_data', 'split')
+parent_dir = os.path.join('DMII_data', 'split2')
 os.mkdir(parent_dir)
 
 makefiles(namelist, parent_dir)
