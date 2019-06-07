@@ -137,8 +137,8 @@ feats = {
             '' : 'Neut'
         },
         'Number': {
-            'NPRS' : 'Plur',  # plural
-            'NP' : 'Sing'    # singular
+            '' : 'Plur',  # plural
+            '' : 'Sing'    # singular
         },
         'NumType' : {       #ATH. mögulegt að tilgreina þetta?
             '' : 'Card',    #Cardinal number
