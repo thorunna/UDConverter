@@ -259,25 +259,28 @@ def get_feats(leaf):
         token = leaf[0].split('-')[0]
         tag = leaf[1]
         UD_tag = get_UD_tag(tag, lemma)
-        try:        #TODO: ath. fleiri feats
-            tag_name = tag.split('-')[0]
-            tag_info = tag.split('-')[1]
-            case = 'Case='+feats[UD_tag]['Case'][tag_info]
-            if UD_tag in {'NOUN', 'PROPN'}:
-                num = 'Number='+feats[UD_tag]['Number'][tag_name]
-                det = check_def(token)
-                return case+'|'+num+'|'+det
-            if UD_tag in {'PRON', 'DET', 'NUM'}:
-                return case
-            if UD_tag == 'ADJ':
-                if tag_name[-1] == 'R':
-                    degree = 'Degree='+feats[UD_tag]['Degree']['R']
-                elif tag_name[-1] == 'S':
-                    degree = 'Degree='+feats[UD_tag]['Degree']['S']
-                else:
-                    degree = 'Degree='+feats[UD_tag]['Degree']['P']
-                return case+'|'+degree
-        except:
+        if UD_tag in feats:
+            try:        #TODO: ath. fleiri feats
+                tag_name = tag.split('-')[0]
+                tag_info = tag.split('-')[1]
+                case = 'Case='+feats[UD_tag]['Case'][tag_info]
+                if UD_tag in {'NOUN', 'PROPN'}:
+                    num = 'Number='+feats[UD_tag]['Number'][tag_name]
+                    det = check_def(token)
+                    return case+'|'+num+'|'+det
+                if UD_tag in {'PRON', 'DET', 'NUM'}:
+                    return case
+                if UD_tag == 'ADJ':
+                    if tag_name[-1] == 'R':
+                        degree = 'Degree='+feats[UD_tag]['Degree']['R']
+                    elif tag_name[-1] == 'S':
+                        degree = 'Degree='+feats[UD_tag]['Degree']['S']
+                    else:
+                        degree = 'Degree='+feats[UD_tag]['Degree']['P']
+                    return case+'|'+degree
+            except:
+                return 'Tag cannot be split'      #ATH. some tags cannot be split (OTHER, WQ, ...)
+        else:
             return '_'
 
 if __name__ == '__main__':
