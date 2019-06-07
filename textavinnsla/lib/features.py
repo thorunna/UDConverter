@@ -3,6 +3,7 @@ import string
 
 DMII_no = DMII_data.DMII_data('no')
 DMII_lo = DMII_data.DMII_data('lo')
+DMII_fn = DMII_data.DMII_data('fn')
 
 # DMII_data.check_DMII(DMII_lo, 'góðrigóður')
 
@@ -59,7 +60,7 @@ feats = {
             '$' : 'Def',
             '' : 'Ind'
         },
-        'Gender' : { # TODO: add gender to feature matrix
+        'Gender' : {
             'kk' : 'Masc',
             'kvk' : 'Fem',
             'hk' : 'Neut'
@@ -118,7 +119,7 @@ feats = {
             'G' : 'Gen'
         },
         'Degree' : {
-            'P' : 'Pos',     #first degree
+            'P' : 'Pos',    #first degree
             'R' : 'Cmp',    #second Degree
             'S' : 'Sup'     #third degree
         },
@@ -126,6 +127,11 @@ feats = {
             'KK' : 'Masc',
             'KVK' : 'Fem',
             'HK' : 'Neut'
+        },
+        'Definite' : {
+            'VB' : 'Def',
+            'SB' : 'Ind',
+            'ST' : None
         }
     },
     'VERB' : {},
@@ -263,6 +269,7 @@ def get_feats(leaf):
         lemma = leaf[0].split('-')[1]
         token = leaf[0].split('-')[0]
         tag = leaf[1]
+        # print(token, tag) # TEMP
         UD_tag = get_UD_tag(tag, lemma)
         if UD_tag in feats:
             try:        #TODO: ath. fleiri feats
@@ -273,12 +280,12 @@ def get_feats(leaf):
                     num = 'Number='+feats[UD_tag]['Number'][tag_name]
                     det = check_def(token)
                     token = token.replace('$', '')
-                    # print(token, token+lemma)
+                    # print(token, token+lemma) # TEMP
                     try:
                         gender = 'Gender='+feats[UD_tag]['Gender'][DMII_data.check_DMII(DMII_no, token+lemma)[1]]
                     except:
                         gender = None
-                    # print(token, gender)
+                    # print(token, gender) # TEMP
                     if gender:
                         return case+'|'+num+'|'+gender+'|'+det
                     else:
@@ -294,16 +301,24 @@ def get_feats(leaf):
                     else:
                         degree = 'Degree='+feats[UD_tag]['Degree']['P']
                     # print(token, lemma)
-                    ID = DMII_data.check_DMII(DMII_lo, token+lemma)[0]
-                    # print(token, ID)
-                    gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
-                    # print(ID.split('-'))
-                    # print(ID.split('-')[1])
-                    if gender:
-                        return case+'|'+degree+'|'+gender
-                    else:
+                    try:
+                        ID = DMII_data.check_DMII(DMII_lo, token+lemma)[0]
+                        # print(token, ID)
+                        gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
+                        # print(ID.split('-'))
+                        # print(ID.split('-')[1])
+                        # det = 'Degree='+feats[UD_tag]['Degree'][ID.split('-')[0][-2:]]
+                        # print(det)
+                        if gender:
+                            return case+'|'+degree+'|'+gender
+                        else: # TEMP: WIP for pronouns tagged as ADJ in UD
+                            ID = DMII_data.check_DMII(DMII_fn, token+lemma)[0]
+                            gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[0]]
+                            print(ID, gender)
+                            return case+'|'+degree+'|'+gender
+                    except TypeError:
                         return case+'|'+degree+'*'
-            except:
+            except IndexError:
                 return 'Tag cannot be split'      #ATH. some tags cannot be split (OTHER, WQ, ...)
         else:
             return '_'
