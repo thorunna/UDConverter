@@ -55,9 +55,9 @@ feats = {
             '' : 'Ind'
         },
         'Gender' : { # TODO: add gender to feature matrix
-            '' : 'Masc',
-            '' : 'Fem',
-            '' : 'Neut'
+            'kk' : 'Masc',
+            'kvk' : 'Fem',
+            'hk' : 'Neut'
         }
     },
     'PROPN' : { # Case, Number, Definite
