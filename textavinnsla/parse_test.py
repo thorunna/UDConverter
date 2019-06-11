@@ -1,4 +1,4 @@
-from lib import BIN_data
+from lib import DMII_data
 from lib import features
 from nltk.corpus.util import LazyCorpusLoader
 from nltk.corpus.reader import CategorizedBracketParseCorpusReader
@@ -40,8 +40,18 @@ def sent_text(sentence):
 
 def word_info(tree):
     '''
-    Takes in a nltk Tree object and returns an approximation of the tree sentence
-    in the CONLLU format for UD
+        Takes in a nltk Tree object and returns an approximation of the tree sentence
+        in the CONLLU format for UD:
+            ID: Word index, integer starting at 1 for each new sentence.
+            FORM: Word form or punctuation symbol.
+            LEMMA: Lemma or stem of word form.
+            UPOS: Universal part-of-speech tag.
+            XPOS: Language-specific part-of-speech tag; underscore if not available.
+            FEATS: List of morphological features from the universal feature inventory or from a defined language-specific extension; underscore if not available.
+            HEAD: Head of the current word, which is either a value of ID or zero (0).
+            DEPREL: Universal dependency relation to the HEAD (root iff HEAD = 0) or a defined language-specific subtype of one.
+            DEPS: Enhanced dependency graph in the form of a list of head-deprel pairs.
+            MISC: Any other annotation.
     '''
     sentence = []
     runner = 0
@@ -67,17 +77,6 @@ def word_info(tree):
         sentence.append(line)
     return sentence
 
-# ID: Word index, integer starting at 1 for each new sentence.
-# FORM: Word form or punctuation symbol.
-# LEMMA: Lemma or stem of word form.
-# UPOS: Universal part-of-speech tag.
-# XPOS: Language-specific part-of-speech tag; underscore if not available.
-# FEATS: List of morphological features from the universal feature inventory or from a defined language-specific extension; underscore if not available.
-# HEAD: Head of the current word, which is either a value of ID or zero (0).
-# DEPREL: Universal dependency relation to the HEAD (root iff HEAD = 0) or a defined language-specific subtype of one.
-# DEPS: Enhanced dependency graph in the form of a list of head-deprel pairs.
-# MISC: Any other annotation.
-
 fileids = icepahc.fileids() # TODO: Get fileid info per tree for tree ids
 # trees = icepahc.parsed_sents()[0:10]
 
@@ -87,25 +86,28 @@ fileids = icepahc.fileids() # TODO: Get fileid info per tree for tree ids
 #     print(s)
 
 def print_data():
+    '''
+        Prints the CONllu data to command line or writes it to file, by
+        specification.
+    '''
     current_sentence = 0
     with open('out_test/is_test.02.conllu', 'w') as file:
-        while current_sentence <= 100:
+        while current_sentence <= 500:
             try:
-                # file.write('hello')
                 print('\n# sent_id = ', current_sentence + 1)
                 tree = icepahc.parsed_sents()[current_sentence]
-                # file.write('# sent_id = ' + str(current_sentence + 1))
-                # file.write('\n')
+                file.write('# sent_id = ' + str(current_sentence + 1))
+                file.write('\n')
                 for line in word_info(tree):
                     if line[0] == '#':
-                        print(line)
-                        # file.write(line)
-                        # file.write('\n')
+                        # print(line)
+                        file.write(line)
+                        file.write('\n')
                     else:
-                        print('\t'.join(line))
-                        # file.write('\t'.join(line))
-                        # file.write('\n')
-                # file.write('\n')
+                        # print('\t'.join(line))
+                        file.write('\t'.join(line))
+                        file.write('\n')
+                file.write('\n')
                 current_sentence += 1
             except:
                 raise
@@ -114,6 +116,6 @@ def print_data():
                 current_sentence += 1
                 continue
 
-# BIN_data.get_BIN()
+# print(DMII_data.get_DMII()['flestum'])
 
 print_data()
