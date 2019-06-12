@@ -21,7 +21,7 @@ path.extend(['./testing/'])
 # )
 
 icepahc = LazyCorpusLoader(
-    'icepahc-v0.9/psd_orig/', CategorizedBracketParseCorpusReader,
+    'icepahc-v0.9/psd/', CategorizedBracketParseCorpusReader,
     r'.*\.psd', cat_pattern=r'.*(nar|rel|sci|bio|law)\-.*'
 )
 
