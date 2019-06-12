@@ -7,8 +7,7 @@ DMII_lo = DMII_data.DMII_data('lo')
 DMII_fn = DMII_data.DMII_data('fn')
 DMII_to = DMII_data.DMII_data('to')
 DMII_ao = DMII_data.DMII_data('ao')
-
-# DMII_data.check_DMII(DMII_lo, 'góðrigóður')
+DMII_so = DMII_data.DMII_data('so')
 
 cconj = {'og', 'eða', 'en', 'heldur', 'enda', 'ellegar',
         'bæði','hvorki','annaðhvort','hvort', 'ýmist'}
@@ -18,6 +17,7 @@ tags = {
     'N' : 'NOUN',   # generalized nouns tagged as NOUN
     'D' : 'DET',    # generalized determiners tagged as DET (determiner)
     'P' : 'ADP',    # generalized prepositions tagged as ADP
+    'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
     'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
     'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
     'V' : 'VERB',
@@ -101,9 +101,9 @@ feats = {
             'oakv' : 'Ind'      #indefinite
         },
         'Gender' : {
-            'kk' : 'Masc',
-            'kvk' : 'Fem',
-            'hk' : 'Neut'
+            'KK' : 'Masc',
+            'KVK' : 'Fem',
+            'HK' : 'Neut'
         }
     },
     'DET' : {
@@ -132,7 +132,47 @@ feats = {
             'HK' : 'Neut'
         }
     },
-    'VERB' : {},
+    'VERB' : {
+        'Mood' : {
+            'IMP' : 'Imp',  #imperative 
+            'FH' : 'Ind',    #indicative
+            'VH' : 'Sub'     #subjunctive
+        },
+        'Tense' : {
+            'NT' : 'Pres',   #present tense
+            'ÞT' : 'Past'    #past tense
+        },
+        'VerbForm' : {
+            '' : 'Fin',     #finite verb
+            'inf' : 'Inf',     #infinitive verb
+            'part' : 'Part'     #participle
+        },
+        'Voice' : {
+            'GM' : 'Act',     #active voice
+            'MM' : 'Mid',     #middle voice
+            'pass' : 'Pass'     #passive voice
+        },
+        'Person' : {
+            '1P' : '1',
+            '2P' : '2',
+            '3P' : '3'
+        },
+        'Number' : {
+            'ET' : 'Sing',
+            'FT' : 'Plur'
+        },
+        'Case' : {
+            'NF' : 'Nom',
+            'ÞF' : 'Acc',
+            'ÞGF' : 'Dat',
+            'EF' : 'Gen'
+        },
+        'Gender' : {
+            'KK' : 'Masc',
+            'KVK' : 'Fem',
+            'HK' : 'Neut'
+        }
+    },
     'NUM' : {
         'Case' : {
             'N' : 'Nom',
@@ -155,17 +195,11 @@ feats = {
             '' : 'Frac'     #Fraction
         }
     },
-    'ADV' : {
-        'Degree' : {
-            'P' : 'Pos',    #first degree
-            'R' : 'Cmp',    #second Degree
-            'S' : 'Sup'     #third degree
-        }
-    },
 #    'SCONJ' : {},   #no features needed for subordinating conjunctions
 #    'CCONJ' : {},   #no features needed for coordinating conjunctions
 #    'ADP' : {},     #no features needed for adpositions
 #    'PART' : {},    #no features possible for particles
+#    'ADV' : {}      #no features possible for particles
 }
 
 def check_def(word):
@@ -343,7 +377,56 @@ def get_feats(leaf):
         print(token, tag) # TEMP
         UD_tag = get_UD_tag(tag, lemma)
         if UD_tag in feats:
-            try:        #TODO: ath. fleiri feats
+            try:
+                #if UD_tag == 'VERB':
+                if UD_tag == 'VERB':    #works for VB and RD (verða)
+#                    mood, tense, verbform, voice
+                    if len(tag) == 2:       #infinitive
+                        verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['inf']
+                        return verbform
+                    elif tag[:3] == 'VAN' or tag[:3] == 'VBN':     #VAN (lh.þt. í þolmynd) og VBN (lh.þt.)
+                        if '-' in tag:
+                            tag = tag.split('-')[0]
+                        try:
+                            for k, v in DMII_so.items():
+                                if token+lemma == k and v[0].startswith('LHÞT') or v[0].startswith('OP-LHÞT'):
+                                    if v[0].startswith('OP-'):
+                                        ID = re.sub('OP-', '', v[0])
+                                    ID = v[0]
+                                    case = 'Case='+feats[UD_tag]['Case'][(ID.split('-')[3])[:-2]]
+                                    num = 'Number='+feats[UD_tag]['Number'][(ID.split('-')[3])[-2:]]
+                                    gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[2]]
+                                    tense = 'Tense='+feats[UD_tag]['Tense']['ÞT']
+                                    verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['part']
+                                    if tag[1] == 'B':
+                                        return case+'|'+num+'|'+gender+'|'+tense+'|'+verbform
+                                    elif tag[1] == 'A':
+                                        voice = 'Voice='+feats[UD_tag]['Voice']['pass']
+                                        return case+'|'+voice+'|'+num+'|'+gender+'|'+tense+'|'+verbform
+                        except KeyError:
+                            return 'lykill finnst ekki'
+                        except TypeError:
+                            return 'orð finnst ekki í BÍN'
+                    elif tag[1:3] == 'AG':      #lh.nt., VAG, DAG og RAG 
+                        verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['part']
+                        tense = 'Tense='+feats[UD_tag]['Tense']['NT']
+                        return tense+'|'+verbform
+                    elif len(tag) == 3 and tag[2] == 'I':     #imperative
+                        mood = 'Mood='+feats[UD_tag]['Mood']['IMP']
+                        return mood
+                    else:
+                        try:
+                            ID = DMII_data.check_DMII(DMII_so, token+lemma)[0]
+                            if ID.startswith('OP'):     #upplýsingar um ópersónulega beygingu teknar út
+                                ID = re.sub('OP-', '', ID)
+                            tense = 'Tense='+feats[UD_tag]['Tense'][ID.split('-')[2]]
+                            mood = 'Mood='+feats[UD_tag]['Mood'][ID.split('-')[1]]
+                            voice = 'Voice='+feats[UD_tag]['Voice'][ID.split('-')[0]]
+                            person = 'Person='+feats[UD_tag]['Person'][ID.split('-')[3]]
+                            num = 'Number='+feats[UD_tag]['Number'][ID.split('-')[4]]
+                            return person+'|'+num+'|'+mood+'|'+tense+'|'+voice        #TODO: ath. fleiri feats
+                        except TypeError:
+                            return 'ORÐ FINNST EKKI Í BÍN'      #ATH. returna upplýsingum frá Icepahc?
                 tag_name = tag.split('-')[0]
                 tag_info = tag.split('-')[1]
                 case = 'Case='+feats[UD_tag]['Case'][tag_info]
@@ -369,16 +452,18 @@ def get_feats(leaf):
                             num = 'Number='+feats[UD_tag]['Number'][nummark[-2:]]
                             prontype = 'PronType='+feats[UD_tag]['PronType'][v[1]]
                             return case+'|'+num+'|'+prontype
-                        elif v[1] == 'abfn':
+                        if v[1] == 'abfn':
                             num = 'Number='+feats[UD_tag]['Number']['ET']
                             prontype = 'PronType='+feats[UD_tag]['PronType'][v[1]]
                             return case+'|'+num+'|'+prontype
-#                        elif v[0].startswith('fn_'):
-#                            re.sub('fn_', '', v[0])
-#                        else:
-#                            mark = v[0].split('-')[0]
-#                            num = 'Number='+feats[UD_tag]['Number'][nummark[-2:]]
-#                            gender = 'Gender='+feats[UD_tag]['Gender'][v[0].split('-')[0]]
+                        if v[1] == 'fn':
+                            mark = v[0]
+                            num = 'Number='+feats[UD_tag]['Number'][mark[-2:]]
+                            try:
+                                gender = 'Gender='+feats[UD_tag]['Gender'][mark.split('_')[1]]
+                            except:
+                                gender = 'Gender='+feats[UD_tag]['Gender'][mark.split('-')[0]]
+                            return case+'|'+num+'|'+gender
                 if UD_tag == 'DET':
                     return case 
                 if UD_tag == 'NUM':
@@ -387,14 +472,13 @@ def get_feats(leaf):
                         gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('_')[0]]
                         mark = ID.split('_')[1]
                         num = 'Number='+feats[UD_tag]['Number'][mark[-2:]]
-#                       return case+'|'+num+'|'+gender
                         if tag_name[-1] == 'P':
                             numtype = 'NumType='+feats[UD_tag]['NumType']['P']
                             return case+'|'+num+'|'+gender+'|'+numtype
                         else:
                             numtype = 'NumType='+feats[UD_tag]['NumType']['O']
                             return case+'|'+num+'|'+gender+'|'+numtype
-                    except TypeError:   #ATH. ef num finnst ekki
+                    except TypeError:   #ATH. ef orðið finnst ekki
                         if tag_name[-1] == 'P':
                             numtype = 'NumType='+feats[UD_tag]['NumType']['P']
                             return numtype
@@ -408,14 +492,9 @@ def get_feats(leaf):
                         degree = 'Degree='+feats[UD_tag]['Degree']['S']
                     else:
                         degree = 'Degree='+feats[UD_tag]['Degree']['P']
-                    # print(token, lemma)
                     try:
                         ID = DMII_data.check_DMII(DMII_lo, token+lemma)[0]
                         gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
-                        # print(ID.split('-'))
-                        # print(ID.split('-')[1])
-                        # det = 'Degree='+feats[UD_tag]['Degree'][ID.split('-')[0][-2:]]
-                        # print(det)
                         if gender:
                             return case+'|'+degree+'|'+gender
                         else: # TEMP: WIP for pronouns tagged as ADJ in UD
