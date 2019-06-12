@@ -1,20 +1,54 @@
 #!/bin/bash
 
+'''
+12.06.19
+Hinrik Hafsteinsson & Þórunn Arnardóttir
+
+Script for cleaning IcePaHC corpus files (.psd)
+ - Removes sentence ID tags
+ - Removes nonstructural label nodes
+ - Removes last parantheses from each file (main imbalance issue)
+
+Machine-specific paths must be un-commented before use
+'''
+
 # HH Path:
-# ./testing/corpora/icepahc-v0.9/psd/*.psd
+in_dir="./testing/corpora/icepahc-v0.9/psd_orig"
+out_dir="./testing/corpora/icepahc-v0.9/psd"
 
 # ÞA Path:
-# ../icecorpus/finished/*.psd
+# in_dir="../icecorpus/finished"
+# out_dir="../icecorpus/psd"
 
-./scripts/rm-code.prl $1 > $2
 
-#Eyða (CODE...)
-sed -i "" 's/(CODE[ {}*<>a-zA-Z0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$_:-?/]*)//g' $2 #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
-#Eyða auðri línu
-sed -i "" '/^$/d' $2 #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
-#Eyða línu sem inniheldur '(ID'
-sed -i "" '/(ID/d' $2 #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
-#Eyða öllum '( '
-sed -i "" 's/( //g' $2 #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
+# Create output directory
 
-# sed -i "" 's/) //g' ./testing/corpora/icepahc-v0.9/psd_orig/*.psd
+if [ ! -d $out_dir ];
+  then
+    echo "Creating '$out_dir' directory..."
+    mkdir $out_dir
+  else
+    echo "Directory '$out_dir' already exists. Using that."
+fi
+
+for file in $in_dir/*; do
+  echo "Copying file: ${file##*/}"
+  cp $file ${file//_orig}
+done
+
+for file in $out_dir/*; do
+  echo "Working on file: ${file##*/}"
+  perl scripts/rm-nonstruct.prl -i $file
+  #Eyða (CODE...)
+  sed -i "" 's/(CODE[ {}*<>a-zA-Z0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$_:-?/]*)//g' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
+  #Eyða auðri línu
+  sed -i "" '/^$/d' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
+  #Eyða línu sem inniheldur '(ID'
+  sed -i "" '/(ID/d' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
+  #Eyða öllum '( '
+  sed -i "" 's/( //g' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
+  # Eyða síðasta stafnum í skjalinu (ójafn lokaður svigi)
+  sed -i "" '$ s/.$//' $file
+done
+
+  # sed -i "" 's/) //g' #./testing/corpora/icepahc-v0.9/psd_orig/*.psd

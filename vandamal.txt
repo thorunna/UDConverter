@@ -11,7 +11,7 @@ SAGNIR
     Lausn(?): Fyrst finna IcePaHC mark og bera það saman við BÍN mark
 
   Tilgreina sterka og veika beygingu lýsingarháttar þátíðar?
-  
+
   Tilgreina sagnbætur?
     if ID.endswith('SAGNB'):
       return 'SUPINUM'
@@ -20,9 +20,8 @@ FORNÖFN
   Flokkun annarra fornafna, spurnar-, tilvísunar-, ábendingar- og óákveðinna fornafna.
 
 TEXTAVINNSLA
-  Taka út IDs and nonstructural labels í IcePaHC .psd skránum
-   - alveg að koma
+  Ójafnir svigar á CP-QUE setningum - spurningamerki utan setningarinnar
 
-  Taka út síðasta sviga þegar er ójafnt - erfitt með kommusetningum
+  FIXED Taka út IDs and nonstructural labels í IcePaHC .psd skránum
 
-  Ójafnir sviga á CP-QUE setningum - spurningamerki utan setningarinnar
+  FIXED Taka út síðasta sviga þegar er ójafnt - erfitt með kommusetningum
