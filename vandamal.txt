@@ -13,6 +13,8 @@ SAGNIR
   Tilgreina sterka og veika beygingu lýsingarháttar þátíðar?
   
   Tilgreina sagnbætur?
+    if ID.endswith('SAGNB'):
+      return 'SUPINUM'
 
 FORNÖFN
   Flokkun annarra fornafna, spurnar-, tilvísunar-, ábendingar- og óákveðinna fornafna.
