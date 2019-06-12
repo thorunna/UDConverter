@@ -10,34 +10,15 @@ DMII = csv.reader(open(DMII_path, encoding = 'UTF-8'), delimiter=';')
 SpMy = csv.reader(open(spurnarmyndir_path, encoding = 'UTF-8'), delimiter=';')
 Plst = csv.reader(open(plastur_path, encoding = 'UTF-8'), delimiter=';')
 
-#for row in Plst:
-#    print(row)
-
-#f = open('plastur_copy', 'w+')
-#f.write(Plst)
-#f.close()
-
-#with open('plastur_copy', 'w+', encoding='utf-8') as file:
-#    for row in Plst:
-#        file.write(row)
-
-namelist = ['no', 'lo', 'so', 'ao', 'pfn', 'afturbfn', 'fn', 'to', 'gr']
+namelist = ['no', 'lo', 'so', 'ao', 'fn', 'to', 'gr']
 
 no = []
 lo = []
 so = []
 ao = []
-pfn = []
-afturbfn = []
 fn = []
 to = []
 gr = []
-
-
-# with open('BKL_utts.03.tsv', 'w') as tsvfile:
-#     writer = csv.writer(tsvfile, delimiter='\t')
-#     for line in all_lines:
-#         writer.writerow(line)
 
 def makefiles(list, dir):
     for name in list:
@@ -67,9 +48,9 @@ def split(dmii, string):
         elif line [2] == 'ao':
             ao.append(line)
         elif line [2] == 'pfn':
-            pfn.append(line)
+            fn.append(line)
         elif line [2] == 'abfn':
-            afturbfn.append(line)
+            fn.append(line)
         elif line [2] == 'fn':
             fn.append(line)
         elif line [2] == 'to':
@@ -87,7 +68,7 @@ split(DMII, 'DMII database')
 split(Plst, 'Plástur')
 split(SpMy, 'Spurnarmyndir')
 
-parent_dir = os.path.join('DMII_data', 'split2')
+parent_dir = os.path.join('DMII_data', 'split')
 os.mkdir(parent_dir)
 
 makefiles(namelist, parent_dir)
@@ -96,8 +77,6 @@ print('Nafnorð:', len(no))
 print('lýsingarorð:', len(lo))
 print('Sagnorð:', len(so))
 print('Atviksorð:', len(ao))
-print('Persónufornöfn:', len(pfn))
-print('Afturb. fornöfn:', len(afturbfn))
 print('Önnur fornöfn:', len(fn))
 print('Töluorð:',len(to))
 print('Greinir:', len(gr))
