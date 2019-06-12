@@ -25,3 +25,15 @@ TEXTAVINNSLA
   FIXED Taka út IDs and nonstructural labels í IcePaHC .psd skránum
 
   FIXED Taka út síðasta sviga þegar er ójafnt - erfitt með kommusetningum
+
+ÓÞEKKT ORÐ
+  Hástafir trufla BÍN
+    Lausn: .lower() á token+lemma strenginn
+
+  BÍN ófullkomið
+    lítið hægt að gera?
+
+  Úreld eða óhefðbundin stafsetning
+    Lausn (?): safna saman orðum sem finnast ekki, t.d. með því að skila
+               stjörnumerktum línum í úttaksgögnunum og búa til leiðréttingar-
+               skriptu út frá því
