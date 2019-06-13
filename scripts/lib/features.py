@@ -493,15 +493,29 @@ def get_feats(leaf):
                     else:
                         degree = 'Degree='+feats[UD_tag]['Degree']['P']
                     try:
-                        ID = DMII_data.check_DMII(DMII_lo, token+lemma)[0]
-                        gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
-                        if gender:
-                            return case+'|'+degree+'|'+gender
-                        else: # TEMP: WIP for pronouns tagged as ADJ in UD
-                            ID = DMII_data.check_DMII(DMII_fn, token+lemma)[0]
-                            gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[0]]
-                            print(ID, gender)
-                            return case+'|'+degree+'|'+gender
+                        ID = DMII_data.check_DMII(DMII_lo, token, lemma)[0]
+                        if ID:
+                            gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
+                            num = 'Number='+feats[UD_tag]['Number'][(ID.split('-')[2])[-2:]]
+#                            if gender:
+                            return case+'|'+num+'|'+degree+'|'+gender
+#                            else: # TEMP: WIP for pronouns tagged as ADJ in UD
+#                                ID = DMII_data.check_DMII(DMII_fn, token, lemma)[0]
+#                                gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[0]]
+#                                return case+'|'+num+'|'+degree+'|'+gender
+                        else:       #handles mismatch between world class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
+                            ID = DMII_data.check_DMII(DMII_fn, token, lemma)[0]
+                            if '-' in ID:
+                                gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[0]]
+                                num = 'Number='+feats[UD_tag]['Number'][(ID.split('-')[1])[-2:]]
+                                return case+'|'+num+'|'+degree+'|'+gender
+                            elif '_' in ID:
+                                gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('_')[1]]
+                                num = 'Number='+feats[UD_tag]['Number'][(ID.split('_')[2])[-2:]]
+                                return case+'|'+num+'|'+degree+'|'+gender
+                            else:
+                                num = 'Number='+feats[UD_tag]['Number'][ID[-2:]]
+                                return case+'|'+num+'|'+degree+'*'
                     except TypeError:
                         return case+'|'+degree+'*'
             except KeyError:
