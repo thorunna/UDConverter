@@ -38,17 +38,19 @@ done
 
 for file in $out_dir/*; do
   echo "Working on file: ${file##*/}"
-  perl scripts/rm-nonstruct.prl -i $file
-  #Eyða (CODE...)
-  sed -i "" 's/(CODE[ {}*<>a-zA-Z0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$_:-?/]*)//g' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
-  #Eyða auðri línu
-  sed -i "" '/^$/d' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
-  #Eyða línu sem inniheldur '(ID'
-  sed -i "" '/(ID/d' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
-  #Eyða öllum '( '
-  sed -i "" 's/( //g' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
-  # Eyða síðasta stafnum í skjalinu (ójafn lokaður svigi)
-  sed -i "" '$ s/.$//' $file
+  perl ./rm-nonstruct.prl -i $file
+  #Delete (CODE...)
+  sed -i 's/(CODE[ {}*<>a-zA-Z0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$_:-?/]*)//g' $file 
+  #Delete (ID...))
+  sed -i 's/(ID [0-9]*\.[A-Z]*\.[A-Z]*-[A-Z]*,\.[0-9]*))//g' $file
+  #Delete empty lines
+  sed -i '/^$/d' $file 
+  #Delete line which includes (ID
+  #sed -i '/(ID/d' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
+  #Delete every instance of '( '
+  sed -i 's/( //g' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
+  #Delete last character in file (uneven parentheses)
+  sed -i '$ s/.$//' $file
 done
 
   # sed -i "" 's/) //g' #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
