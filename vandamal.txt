@@ -38,12 +38,10 @@ TEXTAVINNSLA
                stjörnumerktum línum í úttaksgögnunum og búa til leiðréttingar-
                skriptu út frá því
 
-VANDAMÁL MEÐ SETNINGAR TIL OG MEÐ 1300:
-LEYST - setning 182 - síðasta setning í Fyrstu málfræðiritgerðinni
-  'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split''
-  Allar setningar eftir hana skila 'Bad tree detected' en greina þær samt rétt?
-  Lausn: línan sem inniheldur ID er eytt, í henni var punktur og svigi sem vantaði til að loka. Síðan var einum sviga eytt í      lok skjals sem þarf að vera.
+HRAÐI
+  Skrifa DMII_data.DMII_data('no'), DMII_data.DMII_data('combined') og restina í skjal sem er opnað?
 
+VANDAMÁL MEÐ SETNINGAR TIL OG MEÐ 2300:
 Setning 579 (Hómilíubók)
   'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split'' - ekkert virðist vera að setningunni
 Setning 592 (Hómilíubók)
@@ -51,13 +49,32 @@ Setning 592 (Hómilíubók)
   (CODE *XXX*-laga) inní setningunni en virðist ekki vera vandamálið
 Setning (Hómilíubók)
   'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split'' - ekkert virðist vera að setningunni
-Setning 875 (Hómilíubók)
-  'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split'' 
-  Setningin er bara (. ?-?)) - ætti að vera punktur í setningu á undan en er ekki með þar
 Setning 1107 (Hómilíubók)
   'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split'' - ekkert virðist vera að setningunni
 Setning 1216 (Hómilíubók)
   'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split'' - ekkert virðist vera að setningunni
+Setning 2267 (Hómilíubók) - lína 44588-44599 í breyttu skjali
+  'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split'' - ekkert virðist vera að
+
+LEYST:
+Setning 182 - síðasta setning í Fyrstu málfræðiritgerðinni
+  'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split''
+  Allar setningar eftir hana skila 'Bad tree detected' en greina þær samt rétt?
+  Ástæða: línan sem inniheldur ID er eytt, í henni var punktur og svigi sem vantaði til að loka. Síðan var einum sviga eytt í      lok skjals sem þarf að vera.
+  
+Setning 875 (Hómilíubók)
+  'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split'' 
+  Setningin er bara (. ?-?)) - ætti að vera punktur í setningu á undan en er ekki með þar - ekki heldur rétt í upprunalegu skjali
 Setning 1220 (Hómilíubók)
   'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split'' 
   Setningin er bara (. ?-?)) - ætti að vera punktur í setningu á undan en er ekki með þar
+Setning 1662 (Hómilíubók) - lína 31878 í breyttu skjali
+  'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split'' 
+  Setningin er bara (. .-.)) - ætti að vera punktur í setningu á undan en svigar sýna að hún er ekki með þar
+Setning 1748 (Hómilíubók) - lína 32847 í breyttu skjali
+  'Bad tree detected' og 'AttributeError: 'tuple' object has no attribute 'split'' 
+  Setningin er bara (. ?-?)) - ætti að vera punktur í setningu á undan en er ekki með þar
+
+Setning 2830 (Jartein) - lína 7906-7950 í breyttu skjali
+  'Bad tree detected' og 'IndexError: list index out of range' - engin lemma fyrir no. sylgju$
+
