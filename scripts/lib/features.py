@@ -190,8 +190,8 @@ feats = {
             'ET' : 'Sing'    # singular
         },
         'NumType' : {       #ATH. mögulegt að tilgreina þetta?
-            'O' : 'Card',    #Cardinal number
-            'P' : 'Ord',     #Ordinal number
+            'C' : 'Card',    #Cardinal number
+            'O' : 'Ord',     #Ordinal number
             '' : 'Frac'     #Fraction
         }
     },
