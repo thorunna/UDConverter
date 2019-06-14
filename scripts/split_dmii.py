@@ -10,7 +10,7 @@ DMII = csv.reader(open(DMII_path, encoding = 'UTF-8'), delimiter=';')
 SpMy = csv.reader(open(spurnarmyndir_path, encoding = 'UTF-8'), delimiter=';')
 Plst = csv.reader(open(plastur_path, encoding = 'UTF-8'), delimiter=';')
 
-namelist = ['no', 'lo', 'so', 'ao', 'fn', 'to', 'gr']
+namelist = ['no', 'lo', 'so', 'ao', 'fn', 'to', 'gr', 'combined']
 
 no = []
 lo = []
@@ -19,6 +19,7 @@ ao = []
 fn = []
 to = []
 gr = []
+combined = []
 
 def makefiles(list, dir):
     for name in list:
@@ -41,22 +42,31 @@ def split(dmii, string):
         #     print(line[2], end=' ')
         if line [2] in {'kk', 'kvk', 'hk'}:
             no.append(line)
+            combined.append(line)
         elif line [2] == 'lo':
             lo.append(line)
+            combined.append(line)
         elif line [2] == 'so':
             so.append(line)
+            combined.append(line)
         elif line [2] == 'ao':
             ao.append(line)
+            combined.append(line)
         elif line [2] == 'pfn':
             fn.append(line)
+            combined.append(line)
         elif line [2] == 'abfn':
             fn.append(line)
+            combined.append(line)
         elif line [2] == 'fn':
             fn.append(line)
+            combined.append(line)
         elif line [2] == 'to':
             to.append(line)
+            combined.append(line)
         elif line [2] == 'gr':
             gr.append(line)
+            combined.append(line)
         else:
             continue
             # print(line)
@@ -80,3 +90,4 @@ print('Atviksorð:', len(ao))
 print('Fornöfn:', len(fn))
 print('Töluorð:',len(to))
 print('Greinir:', len(gr))
+print('Samanlagt:', len(combined))
