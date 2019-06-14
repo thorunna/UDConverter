@@ -45,10 +45,12 @@ for file in $out_dir/*; do
   sed -i 's/(ID [0-9]*\.[A-Z]*\.[A-Z]*-[A-Z]*,\.[0-9]*))//g' $file
   #Delete empty lines
   sed -i '/^$/d' $file 
-  #Delete line which includes (ID
-  #sed -i '/(ID/d' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
+  #Delete lines which include (ID
+  #sed -i '/(ID/d' $file 
+  #Delete lines which only include (. ?-?)) or (. .-.)) at the beginning of line
+  sed -i 's/^(\. [\.?]-[\.?]))$//g' $file
   #Delete every instance of '( '
-  sed -i 's/( //g' $file #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
+  sed -i 's/( //g' $file 
   #Delete last character in file (uneven parentheses)
   sed -i '$ s/.$//' $file
 done
