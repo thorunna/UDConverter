@@ -25,6 +25,8 @@ icepahc = LazyCorpusLoader(
     r'.*\.psd', cat_pattern=r'.*(nar|rel|sci|bio|law)\-.*'
 )
 
+DMII_combined = DMII_data.DMII_data('combined')
+
 def sent_text(sentence):
     '''
     Takes in a nltk Tree object and returns the sentence text in string form
