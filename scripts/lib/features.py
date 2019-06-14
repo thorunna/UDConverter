@@ -411,8 +411,6 @@ def get_feats(leaf):
                             return 'lykill finnst ekki'
                         except TypeError:
                             return 'orð finnst ekki í BÍN'
-                        except IndexError:
-                            return 'orðflokkur ekki sá sami í BÍN'
                     elif tag[1:3] == 'AG':      #lh.nt., VAG, DAG og RAG 
                         verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['part']
                         tense = 'Tense='+feats[UD_tag]['Tense']['NT']
