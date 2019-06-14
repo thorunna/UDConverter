@@ -378,7 +378,6 @@ def get_feats(leaf):
         UD_tag = get_UD_tag(tag, lemma)
         if UD_tag in feats:
             try:
-                #if UD_tag == 'VERB':
                 if UD_tag == 'VERB':    #works for VB and RD (verða)
 #                    mood, tense, verbform, voice
                     if len(tag) == 2:       #infinitive
@@ -389,7 +388,7 @@ def get_feats(leaf):
                             tag = tag.split('-')[0]
                         try:
                             for k, v in DMII_so.items():
-                                if token+lemma == k and v[0].startswith('LHÞT') or v[0].startswith('OP-LHÞT'):
+                                if token == k[0] and lemma == k[1] and v[0].startswith('LHÞT') or v[0].startswith('OP-LHÞT'):
                                     if v[0].startswith('OP-'):
                                         ID = re.sub('OP-', '', v[0])
                                     ID = v[0]
@@ -403,10 +402,17 @@ def get_feats(leaf):
                                     elif tag[1] == 'A':
                                         voice = 'Voice='+feats[UD_tag]['Voice']['pass']
                                         return case+'|'+voice+'|'+num+'|'+gender+'|'+tense+'|'+verbform
+                                elif token == k[0] and lemma == k[1] and v[0].endswith('SAGNB'):
+                                    ID = v[0]
+                                    verbform = 'VerbForm='+feats[UD_tag]['VerbForm'][ID.split('-')[1]]
+                                    voice = 'Voice='+feats[UD_tag]['Voice'][ID.split('-')[0]]
+                                    return voice+'|'+verbform
                         except KeyError:
                             return 'lykill finnst ekki'
                         except TypeError:
                             return 'orð finnst ekki í BÍN'
+                        except IndexError:
+                            return 'orðflokkur ekki sá sami í BÍN'
                     elif tag[1:3] == 'AG':      #lh.nt., VAG, DAG og RAG 
                         verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['part']
                         tense = 'Tense='+feats[UD_tag]['Tense']['NT']
