@@ -2,10 +2,13 @@
 import os
 import csv
 import time
+import string
+import re
 
 def DMII_data(filename):
     print('Accessing DMII data for', filename+'.csv...')
-    bin_keys = []
+    bin_token = []
+    bin_lemma = []
     bin_tags = []
     bin_classes = []
     # DMII_path = os.path.join('DMII_data', 'SHsnid.csv')
@@ -16,17 +19,19 @@ def DMII_data(filename):
         # print(line)
         # bin_lemmas.append(line[0])
         # print(line[4]+line[0], line[5])
-        bin_keys.append(line[4]+line[0])
+        bin_token.append(line[4])
+        bin_lemma.append(line[0])
         bin_tags.append(line[5])
         bin_classes.append(line[2])
-    bin_all = dict(zip(bin_keys, zip(bin_tags, bin_classes)))
+    bin_all = dict(zip(zip(bin_token, bin_lemma) , zip(bin_tags, bin_classes)))
     end = time.time()
     print('DMII ready. Time elapsed:', end-start, 'seconds' )
     return bin_all
 
-def check_DMII(dict, word):
+def check_DMII(dict, token, lemma):
     # print('Finding word...')
     start = time.time()
+    word = token, lemma
     try:
         end = time.time()
         # print('Time elapsed searching for word:', end-start, 'seconds' )
@@ -37,6 +42,19 @@ def check_DMII(dict, word):
         end = time.time()
         print('Time elapsed searching for word:', end-start, 'seconds' )
         return
+
+def get_lemma(thedict, token):
+    if token.endswith('$'):
+        token = re.sub('\$', '', token)
+    print('Finding lemma for "{0}"...'.format(token))
+    try:
+        for word, tag in thedict.items():
+            if word[0] == token:
+                return word[1]
+    except:
+        print('Word "{0}" not present in DMII.'.format(token))
+        return
+
 '''
 def get_gender(word_info, lemma, token):
     if lemma = word_info[1] and type == word_info[2]:
