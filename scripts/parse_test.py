@@ -59,13 +59,20 @@ def word_info(tree):
     sentence.append(sent_text(tree))
     sentence.append(['ID', 'FORM', 'LEMMA', 'UPOS', 'XPOS', 'FEATS', 'HEAD', 'DEPREL', 'DEPS', 'MISC'])
     for leaf in tree.pos():
-        # print(leaf)
         runner += 1 # runner updated for counting
         ID = str(runner) # ID: Word index, integer starting at 1 for each new sentence.
-        word = leaf[0].split('-') # token and lemma seperated.
-        FORM = word[0] # FORM: Word form or punctuation symbol (token).
+        if '-' in leaf[0]:  # if token and lemma present
+            word = leaf[0].split('-') # token and lemma separated.
+            FORM = word[0] # FORM: Word form or punctuation symbol (token).
+            LEMMA = word[1]
+        else:   # if no lemma present
+            FORM = leaf[0]
+            if FORM[0] not in ['*', '0']:
+                LEMMA = DMII_data.get_lemma(DMII_combined, FORM)
+                token_lemma = str(FORM+'-'+LEMMA)
+                tag = leaf[1]
+                leaf = token_lemma, tag
         if FORM[0] in ['*', '0']: continue
-        LEMMA = word[1] # LEMMA: Lemma or stem of word form.
         XPOS = leaf[1] # XPOS: Language-specific part-of-speech tag (IcePaHC)
         UPOS = features.get_UD_tag(XPOS, LEMMA) # UPOS: Universal part-of-speech tag.
         FEATS = features.get_feats(leaf) # FEATS: List of morphological features from the universal feature inventory
