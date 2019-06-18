@@ -372,14 +372,12 @@ def get_feats(leaf):
 def get_feats(leaf):
     if leaf[0][0] not in {'*', '0'}: # ATH Used while traces etc. are still in data
         lemma = leaf[0].split('-')[1]
-        token = leaf[0].split('-')[0]
+        token = leaf[0].split('-')[0].lower()
         tag = leaf[1]
-        print(token, tag) # TEMP
         UD_tag = get_UD_tag(tag, lemma)
         if UD_tag in feats:
             try:
                 if UD_tag == 'VERB':    #works for VB and RD (verða)
-#                    mood, tense, verbform, voice
                     if len(tag) == 2:       #infinitive
                         verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['inf']
                         return verbform
@@ -446,17 +444,11 @@ def get_feats(leaf):
                     num = 'Number='+feats[UD_tag]['Number'][tag_name]
                     det = check_def(token)
                     token = token.replace('$', '')
-                    # print(token, token, lemma) # TEMP
                     try:
                         gender = 'Gender='+feats[UD_tag]['Gender'][DMII_data.check_DMII(DMII_no, token, lemma)[1]]
-                    except:
-                        gender = None
-                    # print(token, gender) # TEMP
-                    if gender:
                         return case+'|'+num+'|'+gender+'|'+det
-                    else:
+                    except:
                         return case+'|'+num+'|'+det+'*'
-                    # return case+'|'+num+'|'+det
                 if UD_tag == 'PRON':
                     for k, v in DMII_fn.items():
                         if v[1] == 'pfn':
@@ -509,12 +501,7 @@ def get_feats(leaf):
                         if ID:
                             gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
                             num = 'Number='+feats[UD_tag]['Number'][(ID.split('-')[2])[-2:]]
-#                            if gender:
                             return case+'|'+num+'|'+degree+'|'+gender
-#                            else: # TEMP: WIP for pronouns tagged as ADJ in UD
-#                                ID = DMII_data.check_DMII(DMII_fn, token, lemma)[0]
-#                                gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[0]]
-#                                return case+'|'+num+'|'+degree+'|'+gender
                         else:       #handles mismatch between world class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
                             ID = DMII_data.check_DMII(DMII_fn, token, lemma)[0]
                             if '-' in ID:
