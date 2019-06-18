@@ -6,6 +6,7 @@ from nltk.data import path
 from nltk.tree import *
 from tokenizer import correct_spaces
 from pprint import pprint
+import os
 
 import re
 
@@ -85,43 +86,48 @@ def word_info(tree):
         sentence.append(line)
     return sentence
 
-fileids = icepahc.fileids() # TODO: Get fileid info per tree for tree ids
-# trees = icepahc.parsed_sents()[0:10]
-
-# tree = trees[0]
-
-# for s in trees:
-#     print(s)
 
 def print_data():
     '''
         Prints the CONllu data to command line or writes it to file, by
         specification.
     '''
-    current_sentence = 0
-    with open('out_test/is_test.02.conllu', 'w') as file:
-        while current_sentence <= 500:
+    # fileids = icepahc.fileids() # leave uncommented for whole corpus use
+    fileids = ['1150.homiliubok.rel-ser.psd'] # For debug use only
+    total_sents = 0
+    # CONLLU_log = open('out_test/is_test.02.conllu', 'w') # old debug
+    for fileid in fileids:
+        file_sents = 0
+        # CONLLU_log = os.path.splitext(fileid)[0]
+        # CONLLU_log = os.path.join('out_test', '03', CONLLU_log + '.conllu')
+        # CONLLU_log = open(CONLLU_log, 'w')
+        for tree in icepahc.parsed_sents(fileid):
+            treeID = fileid + '_' + str(file_sents+1) + '_' + str(total_sents+1)
             try:
-                print('\n# sent_id = ', current_sentence + 1)
-                tree = icepahc.parsed_sents()[current_sentence]
-                file.write('# sent_id = ' + str(current_sentence + 1))
-                file.write('\n')
+                print('# sent_id =', treeID)
+                # CONLLU_log.write('# sent_id = ' + treeID)
+                # CONLLU_log.write('\n')
                 for line in word_info(tree):
                     if line[0] == '#':
-                        # print(line)
-                        file.write(line)
-                        file.write('\n')
+                        print(line)
+                        # CONLLU_log.write(line)
+                        # CONLLU_log.write('\n')
                     else:
-                        # print('\t'.join(line))
-                        file.write('\t'.join(line))
-                        file.write('\n')
-                file.write('\n')
-                current_sentence += 1
+                        print('\t'.join(line))
+                        # CONLLU_log.write('\t'.join(line))
+                        # CONLLU_log.write('\n')
+                # CONLLU_log.write('\n')
+                total_sents += 1
+                file_sents += 1
             except:
                 raise
-                print('\n# sent_id = ', current_sentence)
+                print('\n# sent_id = ',  treeID)
                 print('Failure')
-                current_sentence += 1
+                print(tree)
+                # CONLLU_log.write('# sent_id = ' + treeID)
+                # CONLLU_log.write('Failure\n\n')
+                total_sents += 1
+                file_sents += 1
                 continue
 
 # print(DMII_data.get_DMII()['flestum'])
