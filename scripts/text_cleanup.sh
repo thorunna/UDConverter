@@ -46,6 +46,7 @@ for file in $out_dir/*; do
   sed -i "" 's/(ID [0-9]*\.[A-Z]*\.[A-Z]*-[A-Z]*[,\.][0-9]*[,\.][0-9]*))//g' $file
   #Delete empty lines
   sed -i "" '/^$/d' $file
+  sed -i "" '/^  $/d' $file
   #Delete lines which include (ID
   #sed -i '/(ID/d' $file
   #Delete lines which only include (. ?-?)) or (. .-.)) at the beginning of line
