@@ -310,9 +310,9 @@ def get_feats(leaf):
                     num = 'Number='+feats[UD_tag]['Number'][tag_name]
                     det = check_def(token)
                     token = token.replace('$', '')
-                    # print(token, token+lemma)
+                    # print(token, lemma)
                     try:
-                        gender = 'Gender='+feats[UD_tag]['Gender'][DMII_data.check_DMII(DMII_no, token+lemma)[1]]
+                        gender = 'Gender='+feats[UD_tag]['Gender'][DMII_data.check_DMII(DMII_no, token, lemma)[1]]
                     except:
                         gender = None
                     # print(token, gender)
@@ -325,7 +325,7 @@ def get_feats(leaf):
 #                    number, case, PronType, gender
                     return case
 #                    try:
-#                        ID = DMII_data.check_DMII(DMII_lo, token+lemma)[0]
+#                        ID = DMII_data.check_DMII(DMII_lo, token, lemma)[0]
 #                        number = [ID.split('-')[1]][-2:]
 #                        gender = ID.split('-')[0]
 #                        return number
@@ -347,7 +347,7 @@ def get_feats(leaf):
                     else:
                         degree = 'Degree='+feats[UD_tag]['Degree']['P']
                     # print(token, lemma)
-                    ID = DMII_data.check_DMII(DMII_lo, token+lemma)[0]
+                    ID = DMII_data.check_DMII(DMII_lo, token, lemma)[0]
                     # print(token, ID)
                     gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
                     # print(ID.split('-'))
@@ -420,7 +420,7 @@ def get_feats(leaf):
                         return mood
                     else:
                         try:
-                            ID = DMII_data.check_DMII(DMII_so, token+lemma)[0]
+                            ID = DMII_data.check_DMII(DMII_so, token, lemma)[0]
                             if ID.startswith('OP'):     #upplýsingar um ópersónulega beygingu teknar út
                                 ID = re.sub('OP-', '', ID)
                             tense = 'Tense='+feats[UD_tag]['Tense'][ID.split('-')[2]]
@@ -446,9 +446,9 @@ def get_feats(leaf):
                     num = 'Number='+feats[UD_tag]['Number'][tag_name]
                     det = check_def(token)
                     token = token.replace('$', '')
-                    # print(token, token+lemma) # TEMP
+                    # print(token, token, lemma) # TEMP
                     try:
-                        gender = 'Gender='+feats[UD_tag]['Gender'][DMII_data.check_DMII(DMII_no, token+lemma)[1]]
+                        gender = 'Gender='+feats[UD_tag]['Gender'][DMII_data.check_DMII(DMII_no, token, lemma)[1]]
                     except:
                         gender = None
                     # print(token, gender) # TEMP
@@ -480,7 +480,7 @@ def get_feats(leaf):
                     return case 
                 if UD_tag == 'NUM':
                     try:
-                        ID = DMII_data.check_DMII(DMII_to, token+lemma)[0]
+                        ID = DMII_data.check_DMII(DMII_to, token, lemma)[0]
                         gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('_')[0]]
                         mark = ID.split('_')[1]
                         num = 'Number='+feats[UD_tag]['Number'][mark[-2:]]
