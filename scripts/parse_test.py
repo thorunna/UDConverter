@@ -25,8 +25,6 @@ icepahc = LazyCorpusLoader(
     r'.*\.psd', cat_pattern=r'.*(nar|rel|sci|bio|law)\-.*'
 )
 
-DMII_combined = DMII_data.DMII_data('combined')
-
 def sent_text(sentence):
     '''
     Takes in a nltk Tree object and returns the sentence text in string form
@@ -70,6 +68,7 @@ def word_info(tree):
         else:   # if no lemma present
             FORM = leaf[0]
             if FORM[0] not in ['*', '0']:
+                DMII_combined = DMII_data.DMII_data('combined')
                 LEMMA = DMII_data.get_lemma(DMII_combined, FORM)
                 token_lemma = str(FORM+'-'+LEMMA)
                 tag = leaf[1]
