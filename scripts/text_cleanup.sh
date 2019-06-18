@@ -17,10 +17,6 @@ Machine-specific paths must be un-commented before use
 in_dir="./testing/corpora/icepahc-v0.9/psd_orig"
 out_dir="./testing/corpora/icepahc-v0.9/psd"
 
-# ÞA Path:
-# in_dir="../icecorpus/finished"
-# out_dir="../icecorpus/psd"
-
 
 # Create output directory
 
@@ -39,7 +35,7 @@ done
 
 for file in $out_dir/*; do
   echo "Working on file: ${file##*/}"
-  perl scripts/rm-nonstruct.prl -i $file
+  perl ./rm-nonstruct.prl -i $file
   #Delete (CODE...)
   sed -i "" 's/(CODE[ {}*<>a-zA-Z0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$_:-?/]*)//g' $file
   #Delete (ID...))
