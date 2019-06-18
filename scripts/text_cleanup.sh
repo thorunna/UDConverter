@@ -42,7 +42,7 @@ for file in $out_dir/*; do
   #Delete (CODE...)
   sed -i 's/(CODE[ {}*<>a-zA-Z0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$_:-?/]*)//g' $file 
   #Delete (ID...))
-  sed -i 's/(ID [0-9]*\.[A-Z]*\.[A-Z]*-[A-Z]*,\.[0-9]*))//g' $file
+  sed -i "" 's/(ID [0-9]*\.[A-Z]*\.[A-Z]*-[A-Z]*[,\.][0-9]*[,\.][0-9]*))//g' $file
   #Delete empty lines
   sed -i '/^$/d' $file 
   #Delete lines which include (ID
