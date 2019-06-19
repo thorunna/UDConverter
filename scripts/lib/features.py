@@ -281,7 +281,7 @@ def get_feats(leaf):
                         return mood
                     else:
                         try:
-                            ID = DMII_data.check_DMII_verb(DMII_so, token, lemma, tag)[0]
+                            ID = DMII_data.check_DMII(DMII_so, token, lemma)[0]
                             if ID.startswith('OP'):     #upplýsingar um ópersónulega beygingu teknar út
                                 ID = re.sub('OP-', '', ID)
                             tense = 'Tense='+feats[UD_tag]['Tense'][ID.split('-')[2]]
@@ -291,16 +291,17 @@ def get_feats(leaf):
                             num = 'Number='+feats[UD_tag]['Number'][ID.split('-')[4]]
                             return person+'|'+num+'|'+mood+'|'+tense+'|'+voice        #TODO: finna orð í BÍN með hjálp tense og mood
                         except TypeError:   #ef orð finnst ekki í BÍN eru upplýsingar frá Icepahc notaðar
-                            if tag[2] == 'D':
-                                tense = 'Tense='+feats[UD_tag]['Tense']['ÞT']
-                            elif tag[2] == 'P':
-                                tense = 'Tense='+feats[UD_tag]['Tense']['NT']
-                            if tag[3] == 'I':
-                                mood = 'Mood='+feats[UD_tag]['Mood']['FH']
-                            elif tag[3] == 'S':
-                                mood = 'Mood='+feats[UD_tag]['Mood']['VH']
-                            return mood+'|'+tense
-                            else:
+                            try:
+                                if tag[2] == 'D':
+                                        tense = 'Tense='+feats[UD_tag]['Tense']['ÞT']
+                                elif tag[2] == 'P':
+                                        tense = 'Tense='+feats[UD_tag]['Tense']['NT']
+                                if tag[3] == 'I':
+                                        mood = 'Mood='+feats[UD_tag]['Mood']['FH']
+                                elif tag[3] == 'S':
+                                        mood = 'Mood='+feats[UD_tag]['Mood']['VH']
+                                return mood+'|'+tense
+                            except:
                                 return '_' 
                 tag_name = tag.split('-')[0]
                 tag_info = tag.split('-')[1]
