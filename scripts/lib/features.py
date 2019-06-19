@@ -130,6 +130,10 @@ feats = {
             'KK' : 'Masc',
             'KVK' : 'Fem',
             'HK' : 'Neut'
+        },
+         'Number' : {
+            'ET' : 'Sing',
+            'FT' : 'Plur'
         }
     },
     'VERB' : {
@@ -367,7 +371,7 @@ def get_feats(leaf):
                         gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
                         num = 'Number='+feats[UD_tag]['Number'][(ID.split('-')[2])[-2:]]
                         return case+'|'+num+'|'+degree+'|'+gender
-                    except TypeError:   #handles mismatch between world class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
+                    except TypeError:   #handles mismatch between word class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
                         try:
                             ID = DMII_data.check_DMII(DMII_fn, token, lemma)[0]
                             if '-' in ID:
