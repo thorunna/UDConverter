@@ -49,6 +49,8 @@ for file in $out_dir/*; do
   sed -i "" 's/^(\. [\.?]-[\.?]))$//g' $file
   #Delete every instance of '( '
   sed -i "" 's/( //g' $file
+  #Include token and lemma for ','
+  sed -i "" 's/(, -)/(, ,-,)/g' $file
   #Delete last character in file (uneven parentheses)
   sed -i "" '$ s/.$//' $file
 done
