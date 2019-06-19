@@ -43,6 +43,25 @@ def check_DMII(dict, token, lemma):
         print('Time elapsed searching for word:', end-start, 'seconds' )
         return
 
+def check_DMII_verb(thedict, token, lemma, IPtag):
+    word = token, lemma
+    tense = IPtag[2]
+    mood = IPtag[3]
+    if tense == 'P':
+        bin_tense = 'NT'
+    elif tense == 'D':
+        bin_tense = 'ÞT'
+    if mood == 'I':
+        bin_mood = 'FH'
+    elif mood == 'S':
+        bin_mood = 'VH'
+    for k, v in thedict.items():
+        tag = v[0].split('-')
+        if tag[0] == 'OP':
+            del tag[0]
+        if k[0] == token and k[1] == lemma and tag[1] == bin_mood and tag[2] == bin_tense:
+            return thedict[word]
+
 def get_lemma(thedict, token):
     if token.endswith('$'):
         token = re.sub('\$', '', token)
