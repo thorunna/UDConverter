@@ -418,7 +418,7 @@ def get_feats(leaf):
                         return mood
                     else:
                         try:
-                            ID = DMII_data.check_DMII(DMII_so, token, lemma)[0]
+                            ID = DMII_data.check_DMII_verb(DMII_so, token, lemma, tag)[0]
                             if ID.startswith('OP'):     #upplýsingar um ópersónulega beygingu teknar út
                                 ID = re.sub('OP-', '', ID)
                             tense = 'Tense='+feats[UD_tag]['Tense'][ID.split('-')[2]]
@@ -436,7 +436,7 @@ def get_feats(leaf):
                                 mood = 'Mood='+feats[UD_tag]['Mood']['FH']
                             elif tag[3] == 'S':
                                 mood = 'Mood='+feats[UD_tag]['Mood']['VH']
-                            return mood+'|'+tense
+                            return mood+'|'+tense 
                 tag_name = tag.split('-')[0]
                 tag_info = tag.split('-')[1]
                 case = 'Case='+feats[UD_tag]['Case'][tag_info]
