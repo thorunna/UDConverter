@@ -131,7 +131,7 @@ feats = {
             'KVK' : 'Fem',
             'HK' : 'Neut'
         },
-         'Number' : {
+        'Number' : {
             'ET' : 'Sing',
             'FT' : 'Plur'
         }
@@ -248,7 +248,7 @@ def get_feats(leaf):
                     if len(tag) == 2:       #infinitive
                         verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['inf']
                         return verbform
-                    elif tag[:3] == 'VAN' or tag[:3] == 'VBN':     #VAN (lh.þt. í þolmynd) og VBN (lh.þt.)
+                    elif tag[:3] == 'VAN' or tag[:3] == 'VBN' or tag[:3] == 'DAN':     #VAN (lh.þt. í þolmynd) og VBN (lh.þt.)
                         if '-' in tag:
                             tag = tag.split('-')[0]
                         try:
@@ -303,7 +303,7 @@ def get_feats(leaf):
                                 mood = 'Mood='+feats[UD_tag]['Mood']['FH']
                             elif tag[3] == 'S':
                                 mood = 'Mood='+feats[UD_tag]['Mood']['VH']
-                            return mood+'|'+tense 
+                            return mood+'|'+tense             
                 tag_name = tag.split('-')[0]
                 tag_info = tag.split('-')[1]
                 case = 'Case='+feats[UD_tag]['Case'][tag_info]
@@ -314,7 +314,7 @@ def get_feats(leaf):
                     try:
                         gender = 'Gender='+feats[UD_tag]['Gender'][DMII_data.check_DMII(DMII_no, token, lemma)[1]]
                         return case+'|'+num+'|'+gender+'|'+det
-                    except:
+                    except TypeError:
                         return case+'|'+num+'|'+det+'*'
                 if UD_tag == 'PRON':
                     for k, v in DMII_fn.items():
@@ -349,7 +349,7 @@ def get_feats(leaf):
                         else:
                             numtype = 'NumType='+feats[UD_tag]['NumType']['O']
                             return case+'|'+num+'|'+gender+'|'+numtype
-                    except TypeError:   #ATH. ef orðið finnst ekki
+                    except TypeError:   #ef orðið finnst ekki
                         if tag_name[-1] == 'P':
                             numtype = 'NumType='+feats[UD_tag]['NumType']['P']
                             return numtype
@@ -366,7 +366,7 @@ def get_feats(leaf):
                     try:
                         ID = DMII_data.check_DMII(DMII_lo, token, lemma)[0]
                         gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
-                        num = 'Number='+feats[UD_tag]['Number'][(ID.split('-')[2])[-2:]]
+                        num = 'Number='+feats[UD_tag]['Number'][ID.split('-')[2][-2:]]
                         return case+'|'+num+'|'+degree+'|'+gender
                     except TypeError:   #handles mismatch between word class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
                         try:
