@@ -299,7 +299,9 @@ def get_feats(leaf):
                                 mood = 'Mood='+feats[UD_tag]['Mood']['FH']
                             elif tag[3] == 'S':
                                 mood = 'Mood='+feats[UD_tag]['Mood']['VH']
-                            return mood+'|'+tense 
+                            return mood+'|'+tense
+                            else:
+                                return '_' 
                 tag_name = tag.split('-')[0]
                 tag_info = tag.split('-')[1]
                 case = 'Case='+feats[UD_tag]['Case'][tag_info]
