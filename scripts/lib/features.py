@@ -498,11 +498,11 @@ def get_feats(leaf):
                         degree = 'Degree='+feats[UD_tag]['Degree']['P']
                     try:
                         ID = DMII_data.check_DMII(DMII_lo, token, lemma)[0]
-                        if ID:
-                            gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
-                            num = 'Number='+feats[UD_tag]['Number'][(ID.split('-')[2])[-2:]]
-                            return case+'|'+num+'|'+degree+'|'+gender
-                        else:       #handles mismatch between world class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
+                        gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
+                        num = 'Number='+feats[UD_tag]['Number'][(ID.split('-')[2])[-2:]]
+                        return case+'|'+num+'|'+degree+'|'+gender
+                    except TypeError:   #handles mismatch between world class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
+                        try:
                             ID = DMII_data.check_DMII(DMII_fn, token, lemma)[0]
                             if '-' in ID:
                                 gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[0]]
@@ -515,8 +515,8 @@ def get_feats(leaf):
                             else:
                                 num = 'Number='+feats[UD_tag]['Number'][ID[-2:]]
                                 return case+'|'+num+'|'+degree+'*'
-                    except TypeError:
-                        return case+'|'+degree+'*'
+                        except TypeError:
+                            return case+'|'+degree+'*'
             except KeyError:
                 return '(Eitthvað að)'
             except IndexError:
