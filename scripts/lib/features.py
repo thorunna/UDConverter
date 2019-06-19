@@ -294,19 +294,16 @@ def get_feats(leaf):
                             person = 'Person='+feats[UD_tag]['Person'][ID.split('-')[3]]
                             num = 'Number='+feats[UD_tag]['Number'][ID.split('-')[4]]
                             return person+'|'+num+'|'+mood+'|'+tense+'|'+voice        #TODO: finna orð í BÍN með hjálp tense og mood
-                        except TypeError:   #ef orð finnst ekki í BÍN eru upplýsingar frá Icepahc notaðar
-                            try:
-                                if tag[2] == 'D':
-                                        tense = 'Tense='+feats[UD_tag]['Tense']['ÞT']
-                                elif tag[2] == 'P':
-                                        tense = 'Tense='+feats[UD_tag]['Tense']['NT']
-                                if tag[3] == 'I':
-                                        mood = 'Mood='+feats[UD_tag]['Mood']['FH']
-                                elif tag[3] == 'S':
-                                        mood = 'Mood='+feats[UD_tag]['Mood']['VH']
-                                return mood+'|'+tense
-                            except:
-                                return '_' 
+                        except (TypeError, KeyError):   #ef orð finnst ekki í BÍN eru upplýsingar frá Icepahc notaðar
+                            if tag[2] == 'D':
+                                tense = 'Tense='+feats[UD_tag]['Tense']['ÞT']
+                            elif tag[2] == 'P':
+                                tense = 'Tense='+feats[UD_tag]['Tense']['NT']
+                            if tag[3] == 'I':
+                                mood = 'Mood='+feats[UD_tag]['Mood']['FH']
+                            elif tag[3] == 'S':
+                                mood = 'Mood='+feats[UD_tag]['Mood']['VH']
+                            return mood+'|'+tense 
                 tag_name = tag.split('-')[0]
                 tag_info = tag.split('-')[1]
                 case = 'Case='+feats[UD_tag]['Case'][tag_info]
