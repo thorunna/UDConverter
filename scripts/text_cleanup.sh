@@ -47,16 +47,17 @@ for file in $out_dir/*; do
   sed -i "" 's/( //g' $file
   #Delete lines which only include (. ?-?)), (. .-.)) or (" "-")) at the beginning of line
   sed -i "" 's/^([\."] [\.?"]-[\.?"]))$//g' $file
-  #Delete empty lines
-  sed -i "" '/^$/d' $file
-  sed -i "" '/^  $/d' $file
   #Include token and lemma for ',' and '.'
   sed -i "" 's/(, -)/(, ,-,)/g' $file
   sed -i "" 's/(\. -)/(\. \.-\.)/g' $file
   #Delete extra (, ---)
   sed -i "" 's/(, ---)//g' $file
+  #Delete extra (, ---)
+  sed -i "" 's/(, -----)//g' $file
   #Correct (. ---)
   sed -i "" 's/(\. ---)/(\. \.-\.)/g' $file
+  #Delete extra (- -)
+  sed -i "" 's/(- -)//g' $file
   #Replace <dash/> with proper notation
   #sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file
   #Delete empty spaces before (QTP
@@ -65,8 +66,11 @@ for file in $out_dir/*; do
   sed -i "" 's/^  (IP-MAT/(IP-MAT/g' $file
   #Delete empty spaces before (FRAG
   sed -i "" 's/^  (FRAG/(FRAG/g' $file
+  #Delete empty lines
+  sed -i "" '/^$/d' $file
+  sed -i "" '/^  $/d' $file
   #Delete last character in file (uneven parentheses) NOTE only needed on some machines!!!
-  # sed -i "" '$ s/.$//' $file
+  sed -i "" '$ s/.$//' $file
 done
 
   # sed -i "" 's/) //g' #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
