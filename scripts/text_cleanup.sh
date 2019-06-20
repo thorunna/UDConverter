@@ -54,7 +54,7 @@ for file in $out_dir/*; do
   sed -i "" 's/(, -)/(, ,-,)/g' $file
   sed -i "" 's/(\. -)/(\. \.-\.)/g' $file
   #Delete extra (, ---)
-  sed -i "" '/(, ---)/d' $file
+  sed -i "" 's/(, ---)//g' $file
   #Correct (. ---)
   sed -i "" 's/(\. ---)/(\. \.-\.)/g' $file
   #Replace <dash/> with proper notation
