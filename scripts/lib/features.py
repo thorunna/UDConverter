@@ -2,12 +2,12 @@ from lib import DMII_data
 import string
 import re
 
-DMII_no = DMII_data.DMII_data('no')
-DMII_lo = DMII_data.DMII_data('lo')
-DMII_fn = DMII_data.DMII_data('fn')
-DMII_to = DMII_data.DMII_data('to')
-DMII_ao = DMII_data.DMII_data('ao')
-DMII_so = DMII_data.DMII_data('so')
+DMII_no = DMII_data.load_json('no')
+DMII_lo = DMII_data.load_json('lo')
+DMII_fn = DMII_data.load_json('fn')
+DMII_to = DMII_data.load_json('to')
+DMII_ao = DMII_data.load_json('ao')
+DMII_so = DMII_data.load_json('so')
 
 cconj = {'og', 'eða', 'en', 'heldur', 'enda', 'ellegar',
         'bæði','hvorki','annaðhvort','hvort', 'ýmist'}
@@ -18,7 +18,7 @@ tags = {
     'D' : 'DET',    # generalized determiners tagged as DET (determiner)
     'P' : 'ADP',    # generalized prepositions tagged as ADP
     'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
-    'RPX' : 'ADP', 
+    'RPX' : 'ADP',
     'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
     'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
     'V' : 'VERB',
@@ -83,7 +83,7 @@ feats = {
             'A' : 'Acc',    # accusative case
             'D' : 'Dat',    # dative case
             'G' : 'Gen'     # genitive case
-        }, 
+        },
         'Gender' : {
             'kk' : 'Masc',
             'kvk' : 'Fem',
@@ -147,7 +147,7 @@ feats = {
     },
     'VERB' : {
         'Mood' : {
-            'IMP' : 'Imp',  #imperative 
+            'IMP' : 'Imp',  #imperative
             'FH' : 'Ind',    #indicative
             'VH' : 'Sub'     #subjunctive
         },
@@ -285,7 +285,7 @@ def get_feats(leaf):
                             return 'lykill finnst ekki'
                         except TypeError:
                             return 'orð finnst ekki í BÍN'
-                    elif tag[1:3] == 'AG':      #lh.nt., VAG, DAG og RAG 
+                    elif tag[1:3] == 'AG':      #lh.nt., VAG, DAG og RAG
                         verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['part']
                         tense = 'Tense='+feats[UD_tag]['Tense']['NT']
                         return tense+'|'+verbform
@@ -312,7 +312,7 @@ def get_feats(leaf):
                                 mood = 'Mood='+feats[UD_tag]['Mood']['FH']
                             elif tag[3] == 'S':
                                 mood = 'Mood='+feats[UD_tag]['Mood']['VH']
-                            return mood+'|'+tense             
+                            return mood+'|'+tense
                 tag_name = tag.split('-')[0]
                 tag_info = tag.split('-')[1]
                 if tag_name == 'NP':
@@ -359,7 +359,7 @@ def get_feats(leaf):
                                 gender = 'Gender='+feats[UD_tag]['Gender'][mark.split('-')[0]]
                             return case+'|'+num+'|'+gender
                 if UD_tag == 'DET':
-                    return case 
+                    return case
                 if UD_tag == 'NUM':
                     try:
                         ID = DMII_data.check_DMII(DMII_to, token, lemma)[0]

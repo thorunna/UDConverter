@@ -72,7 +72,7 @@ def word_info(tree):
             LEMMA = '-'
             token_lemma = str(FORM+'-'+LEMMA)
             tag = leaf[1]
-            leaf = token_lemma, tag 
+            leaf = token_lemma, tag
         else:   # if no lemma present
             FORM = leaf[0]
             if FORM[0] not in ['*', '0']:
@@ -212,7 +212,7 @@ def print_data():
         print('Number of sentences in file: {0}'.format(file_sents))
         print('Number of failed sentences: {0}'.format(error_num))
 
-DMII_combined = DMII_data.DMII_data('combined')
+DMII_combined = DMII_data.load_json('combined')
 
 if __name__ == '__main__':
     print_data()

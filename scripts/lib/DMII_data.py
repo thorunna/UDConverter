@@ -1,8 +1,10 @@
 
+from ast import literal_eval as make_tuple
 import os
 import csv
 import time
 import string
+import json
 import re
 
 def DMII_data(filename):
@@ -14,7 +16,7 @@ def DMII_data(filename):
     # DMII_path = os.path.join('DMII_data', 'SHsnid.csv')
     DMII_path = os.path.join('DMII_data', 'split', filename+'.csv')
     DMII = csv.reader(open(DMII_path, encoding = 'UTF-8'), delimiter=';')
-    start = time.time()
+
     for line in DMII:
         # print(line)
         # bin_lemmas.append(line[0])
@@ -28,6 +30,18 @@ def DMII_data(filename):
     print('DMII ready. Time elapsed:', end-start, 'seconds' )
     return bin_all
 
+def load_json(filename):
+    print('Accessing DMII data for', filename + '.json...')
+    start = time.time()
+    DMII_path = os.path.join('DMII_data', 'json', 'DMII_' + filename + '.json')
+    with open(DMII_path) as file:
+        data = json.load(file)
+        # data = {make_tuple(k):v for k,v in data.items()}
+        end = time.time()
+        print('DMII ready. Time elapsed:', end-start, 'seconds')
+        return data
+
+
 def check_DMII(dict, token, lemma):
     # print('Finding word...')
     start = time.time()
@@ -36,11 +50,11 @@ def check_DMII(dict, token, lemma):
         end = time.time()
         # print('Time elapsed searching for word:', end-start, 'seconds' )
         # print(word, dict[word])
-        return dict[word]
+        return dict[make_tuple(word)]
     except:
-        print('Word "{0}" not present in DMII.'.format(word))
+        # print('Word "{0}" not present in DMII.'.format(word))
         end = time.time()
-        print('Time elapsed searching for word:', end-start, 'seconds' )
+        # print('Time elapsed searching for word:', end-start, 'seconds' )
         return
 
 def check_DMII_verb(thedict, token, lemma, IPtag):
@@ -65,14 +79,16 @@ def check_DMII_verb(thedict, token, lemma, IPtag):
 def get_lemma(thedict, token):
     if token.endswith('$'):
         token = re.sub('\$', '', token)
-    print('Finding lemma for "{0}"...'.format(token))
+    # print('Finding lemma for "{0}"...'.format(token))
     try:
         for word, tag in thedict.items():
             if word[0] == token:
                 return word[1]
     except:
-        print('Word "{0}" not present in DMII.'.format(token))
+        # print('Word "{0}" not present in DMII.'.format(token))
         return
+
+
 
 '''
 def get_gender(word_info, lemma, token):
