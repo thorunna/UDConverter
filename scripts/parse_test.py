@@ -78,6 +78,8 @@ def word_info(tree):
             if FORM[0] not in ['*', '0']:
                 # DMII_combined = DMII_data.DMII_data('combined')
                 LEMMA = DMII_data.get_lemma(DMII_combined, FORM)
+                if LEMMA == None:
+                    LEMMA = 'enginlemma'
                 token_lemma = str(FORM+'-'+LEMMA)
                 tag = leaf[1]
                 leaf = token_lemma, tag
