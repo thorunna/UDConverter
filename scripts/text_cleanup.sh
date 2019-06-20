@@ -58,6 +58,8 @@ for file in $out_dir/*; do
   sed -i "" 's/(\. ---)/(\. \.-\.)/g' $file
   #Delete extra (- -)
   sed -i "" 's/(- -)//g' $file
+  #Delete extra (NUM-N -)
+  sed -i "" 's/(NUM-N -)//g' $file    #ath. --- í frumtextanum
   #Replace <dash/> with proper notation
   #sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file
   #Delete empty spaces before (QTP
