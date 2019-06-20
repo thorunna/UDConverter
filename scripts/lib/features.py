@@ -82,6 +82,11 @@ feats = {
             'A' : 'Acc',    # accusative case
             'D' : 'Dat',    # dative case
             'G' : 'Gen'     # genitive case
+        },
+        'Gender' : {
+            'kk' : 'Masc',
+            'kvk' : 'Fem',
+            'hk' : 'Neut'
         }
     },
     'PRON' : { # Case, Gender, Number, PronType
