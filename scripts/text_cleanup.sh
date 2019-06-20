@@ -58,7 +58,7 @@ for file in $out_dir/*; do
   #Correct (. ---)
   sed -i "" 's/(\. ---)/(\. \.-\.)/g' $file
   #Replace <dash/> with proper notation
-  sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file
+  #sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file
   #Delete empty spaces before (QTP
   sed -i "" 's/^  (QTP/(QTP/g' $file
   #Delete empty spaces before (IP-MAT
