@@ -18,6 +18,7 @@ tags = {
     'D' : 'DET',    # generalized determiners tagged as DET (determiner)
     'P' : 'ADP',    # generalized prepositions tagged as ADP
     'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
+    'RPX' : 'ADP', 
     'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
     'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
     'V' : 'VERB',
@@ -28,6 +29,7 @@ tags = {
     'NPRS': 'PROPN',
     'PRO' : 'PRON',
     'WQ' : 'PRON',  #interrogative pronoun
+    'WPRO' : 'PRON',  #wh-pronouns
     'NUM' : 'NUM',
     'ONE' : 'NUM',
     'ADJ' : 'ADJ',  # Adjectives tagged as ADV
@@ -41,6 +43,7 @@ tags = {
     'ALSO' : 'ADV',
     'OTHER' : 'PRON',
     'OTHERS' : 'PRON',
+    'INTJ' : 'INTJ',    #interjection
     'FW' : 'X',
     'X' : 'X'
 }
