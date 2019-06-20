@@ -374,8 +374,7 @@ def get_feats(leaf):
                         num = 'Number='+feats[UD_tag]['Number'][ID.split('-')[2][-2:]]
                         return case+'|'+num+'|'+degree+'|'+gender
                     except KeyError:
-                        num = 'Number='+feats[UD_tag]['Number'][ID.split('-')[2][-2:]]
-                        return case+'|'+num+'|'+degree+'*'
+                        return case+'|'+degree+'*'
                     except TypeError:   #handles mismatch between word class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
                         try:
                             ID = DMII_data.check_DMII(DMII_fn, token, lemma)[0]
