@@ -306,7 +306,10 @@ def get_feats(leaf):
                             return mood+'|'+tense             
                 tag_name = tag.split('-')[0]
                 tag_info = tag.split('-')[1]
-                case = 'Case='+feats[UD_tag]['Case'][tag_info]
+                if tag_name == 'NP':
+                    return '_'      #TODO: sækja BÍN-upplýsingar
+                else:
+                    case = 'Case='+feats[UD_tag]['Case'][tag_info]
                 if UD_tag in {'NOUN', 'PROPN'}:
                     num = 'Number='+feats[UD_tag]['Number'][tag_name]
                     det = check_def(token)
