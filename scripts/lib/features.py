@@ -309,8 +309,14 @@ def get_feats(leaf):
                 if tag_name == 'NP':
                     return '_'      #TODO: sækja BÍN-upplýsingar
                 else:
-                    case = 'Case='+feats[UD_tag]['Case'][tag_info]
+                    if tag_info == '1':
+                        case = 'Case='+feats[UD_tag]['Case']['N']
+                    else:
+                        case = 'Case='+feats[UD_tag]['Case'][tag_info]
                 if UD_tag in {'NOUN', 'PROPN'}:
+                    if tag_name.endswith('21') or tag_name.endswith('22'):
+                        tag_name = re.sub('21', '', tag_name)
+                        tag_name = re.sub('22', '', tag_name)
                     num = 'Number='+feats[UD_tag]['Number'][tag_name]
                     det = check_def(token)
                     token = token.replace('$', '')
