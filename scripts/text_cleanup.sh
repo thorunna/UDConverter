@@ -53,14 +53,18 @@ for file in $out_dir/*; do
   #Include token and lemma for ',' and '.'
   sed -i "" 's/(, -)/(, ,-,)/g' $file
   sed -i "" 's/(\. -)/(\. \.-\.)/g' $file
+  #Delete extra (, ---)
+  sed -i "" '/(, ---)/d' $file
+  #Correct (. ---)
+  sed -i "" 's/(\. ---)/(\. \.-\.)/g' $file
   #Replace <dash/> with proper notation
   sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file
   #Delete empty spaces before (QTP
   sed -i "" 's/^  (QTP/(QTP/g' $file
   #Delete empty spaces before (IP-MAT-SPE
   sed -i "" 's/^  (IP-MAT-SPE/(IP-MAT-SPE/g' $file
-  #Delete last character in file (uneven parentheses) NOTE only needed on some machines!!!
-  # sed -i "" '$ s/.$//' $file
+  #Delete last character in file (uneven parentheses)
+  #sed -i "" '$ s/.$//' $file
 done
 
   # sed -i "" 's/) //g' #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
