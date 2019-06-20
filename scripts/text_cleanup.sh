@@ -9,7 +9,8 @@ Script for cleaning IcePaHC corpus files (.psd)
  - Removes sentence ID tags
  - Removes nonstructural label nodes
  - Removes last parantheses from each file (main imbalance issue)
-
+ - Adds token/lemma for missing punctuations (, and .)
+ - Replaces (, <dash/>) with (, ,-,)
 Machine-specific paths must be un-commented before use
 '''
 
@@ -55,9 +56,9 @@ for file in $out_dir/*; do
   #Replace <dash/> with proper notation
   sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file
   #Delete empty spaces before (QTP
-  sed -i "" 's/^  (QTP/(QTP/g' $file 
-  #Delete last character in file (uneven parentheses)
-  #sed -i "" '$ s/.$//' $file
+  sed -i "" 's/^  (QTP/(QTP/g' $file
+  #Delete last character in file (uneven parentheses) NOTE only needed on some machines!!!
+  # sed -i "" '$ s/.$//' $file
 done
 
   # sed -i "" 's/) //g' #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
