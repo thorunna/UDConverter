@@ -318,7 +318,7 @@ def get_feats(leaf):
                 if tag_name == 'NP':
                     return '_'      #TODO: sækja BÍN-upplýsingar
                 else:
-                    if tag_info == '1' or tag_info == '2':
+                    if tag_info == '1' or tag_info == '2' or tag_info == '10':
                         case = 'Case='+feats[UD_tag]['Case']['N']
                     else:
                         case = 'Case='+feats[UD_tag]['Case'][tag_info]
