@@ -61,8 +61,8 @@ for file in $out_dir/*; do
   sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file
   #Delete empty spaces before (QTP
   sed -i "" 's/^  (QTP/(QTP/g' $file
-  #Delete empty spaces before (IP-MAT-SPE
-  sed -i "" 's/^  (IP-MAT-SPE/(IP-MAT-SPE/g' $file
+  #Delete empty spaces before (IP-MAT
+  sed -i "" 's/^  (IP-MAT/(IP-MAT/g' $file
   #Delete last character in file (uneven parentheses)
   #sed -i "" '$ s/.$//' $file
 done
