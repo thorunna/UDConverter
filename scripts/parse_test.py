@@ -67,6 +67,12 @@ def word_info(tree):
             word = leaf[0].split('-') # token and lemma separated.
             FORM = word[0] # FORM: Word form or punctuation symbol (token).
             LEMMA = word[1]
+        elif leaf[0] == '<dash/>':
+            FORM = '-'
+            LEMMA = '-'
+            token_lemma = str(FORM+'-'+LEMMA)
+            tag = leaf[1]
+            leaf = token_lemma, tag 
         else:   # if no lemma present
             FORM = leaf[0]
             if FORM[0] not in ['*', '0']:
