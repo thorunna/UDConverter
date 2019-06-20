@@ -312,10 +312,15 @@ def get_feats(leaf):
                     det = check_def(token)
                     token = token.replace('$', '')
                     try:
-                        gender = 'Gender='+feats[UD_tag]['Gender'][DMII_data.check_DMII(DMII_no, token, lemma)[1]]
+                        ID = DMII_data.check_DMII(DMII_no, token, lemma)
+                        gender = 'Gender='+feats[UD_tag]['Gender'][ID[1]]
                         return case+'|'+num+'|'+gender+'|'+det
-                    except TypeError:
+                    except (TypeError, IndexError):
                         return case+'|'+num+'|'+det+'*'
+#                if UD_tag == 'PROPN':
+#                    num = 'Number='+feats[UD_tag]['Number'][tag_name]
+#                    det = check_def(token)
+#                    token = token.replace('$', '')
                 if UD_tag == 'PRON':
                     for k, v in DMII_fn.items():
                         if v[1] == 'pfn':
@@ -349,7 +354,7 @@ def get_feats(leaf):
                         else:
                             numtype = 'NumType='+feats[UD_tag]['NumType']['O']
                             return case+'|'+num+'|'+gender+'|'+numtype
-                    except TypeError:   #ef orðið finnst ekki
+                    except (TypeError, KeyError):   #ef orðið finnst ekki
                         if tag_name[-1] == 'P':
                             numtype = 'NumType='+feats[UD_tag]['NumType']['P']
                             return numtype
@@ -368,6 +373,9 @@ def get_feats(leaf):
                         gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
                         num = 'Number='+feats[UD_tag]['Number'][ID.split('-')[2][-2:]]
                         return case+'|'+num+'|'+degree+'|'+gender
+                    except KeyError:
+                        num = 'Number='+feats[UD_tag]['Number'][ID.split('-')[2][-2:]]
+                        return case+'|'+num+'|'+degree+'*'
                     except TypeError:   #handles mismatch between word class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
                         try:
                             ID = DMII_data.check_DMII(DMII_fn, token, lemma)[0]
@@ -382,10 +390,10 @@ def get_feats(leaf):
                             else:
                                 num = 'Number='+feats[UD_tag]['Number'][ID[-2:]]
                                 return case+'|'+num+'|'+degree+'*'
-                        except TypeError:
+                        except (TypeError, KeyError):
                             return case+'|'+degree+'*'
-            except KeyError:
-                return '(Eitthvað að)'
+#            except KeyError:
+#                return '(Eitthvað að)'
             except IndexError:
                 return '(Tag cannot be split)'      #ATH. some tags cannot be split (OTHER, WQ, ...)
         else:
