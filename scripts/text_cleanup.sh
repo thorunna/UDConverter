@@ -52,6 +52,8 @@ for file in $out_dir/*; do
   #Include token and lemma for ',' and '.'
   sed -i "" 's/(, -)/(, ,-,)/g' $file
   sed -i "" 's/(\. -)/(\. \.-\.)/g' $file
+  #Replace <dash/> with proper notation
+  sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file
   #Delete empty spaces before (QTP
   sed -i "" 's/^  (QTP/(QTP/g' $file 
   #Delete last character in file (uneven parentheses)
