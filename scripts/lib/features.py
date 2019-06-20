@@ -58,7 +58,8 @@ feats = {
         },
         'Number': {
             'NS' : 'Plur',  # noun, plural number
-            'N' : 'Sing'    # noun singular number
+            'N' : 'Sing',
+            'NPR' : 'Sing'    # noun singular number
             # 'NPR' : ''
             # 'NPRS' : 'Plur' # proper noun plural
         },
@@ -82,7 +83,7 @@ feats = {
             'A' : 'Acc',    # accusative case
             'D' : 'Dat',    # dative case
             'G' : 'Gen'     # genitive case
-        },
+        }, 
         'Gender' : {
             'kk' : 'Masc',
             'kvk' : 'Fem',
@@ -253,7 +254,7 @@ def get_feats(leaf):
         if UD_tag in feats:
             try:
                 if UD_tag == 'VERB':    #works for VB and RD (verða)
-                    if len(tag) == 2:       #infinitive
+                    if len(tag) == 2 or tag.endswith('TTT'):       #infinitive
                         verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['inf']
                         return verbform
                     elif tag[:3] == 'VAN' or tag[:3] == 'VBN' or tag[:3] == 'DAN':     #VAN (lh.þt. í þolmynd) og VBN (lh.þt.)
@@ -317,7 +318,7 @@ def get_feats(leaf):
                 if tag_name == 'NP':
                     return '_'      #TODO: sækja BÍN-upplýsingar
                 else:
-                    if tag_info == '1':
+                    if tag_info == '1' or tag_info == '2':
                         case = 'Case='+feats[UD_tag]['Case']['N']
                     else:
                         case = 'Case='+feats[UD_tag]['Case'][tag_info]
