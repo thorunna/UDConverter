@@ -65,8 +65,8 @@ for file in $out_dir/*; do
   sed -i "" 's/^  (IP-MAT/(IP-MAT/g' $file
   #Delete empty spaces before (FRAG
   sed -i "" 's/^  (FRAG/(FRAG/g' $file
-  #Delete last character in file (uneven parentheses)
-  #sed -i "" '$ s/.$//' $file
+  #Delete last character in file (uneven parentheses) NOTE only needed on some machines!!!
+  # sed -i "" '$ s/.$//' $file
 done
 
   # sed -i "" 's/) //g' #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
