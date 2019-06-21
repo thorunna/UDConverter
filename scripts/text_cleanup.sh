@@ -71,6 +71,8 @@ for file in $out_dir/*; do
   #Delete empty lines
   sed -i "" '/^$/d' $file
   sed -i "" '/^  $/d' $file
+  #Correct one instance of uneven parentheses
+  sed -i "" 's/^(VAG sofandi\.-sofa))/(VAG sofandi\.-sofa)/g' $file
   #Delete last character in file (uneven parentheses) NOTE only needed on some machines!!!
   sed -i "" '$ s/.$//' $file
 done
