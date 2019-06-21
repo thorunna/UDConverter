@@ -18,13 +18,14 @@ tags = {
     'D' : 'DET',    # generalized determiners tagged as DET (determiner)
     'P' : 'ADP',    # generalized prepositions tagged as ADP
     'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
-    'RPX' : 'ADP',
+    'RPX' : 'ADP', 
     'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
     'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
     'V' : 'VERB',
     'W' : 'DET',    # WH-determiner tagged as DET (determiner)
     'R' : 'VERB',   # All forms of "verða" tagged as VERB
     'TO' : 'PART',  # Infinitive marker tagged as PART (particle)
+    'FP' : 'PART',  #focus particles marked as PART
     'NPR' : 'PROPN', # proper nouns tagged as PROPN
     'NPRS': 'PROPN',
     'PRO' : 'PRON',
@@ -83,7 +84,7 @@ feats = {
             'A' : 'Acc',    # accusative case
             'D' : 'Dat',    # dative case
             'G' : 'Gen'     # genitive case
-        },
+        }, 
         'Gender' : {
             'kk' : 'Masc',
             'kvk' : 'Fem',
@@ -147,7 +148,7 @@ feats = {
     },
     'VERB' : {
         'Mood' : {
-            'IMP' : 'Imp',  #imperative
+            'IMP' : 'Imp',  #imperative 
             'FH' : 'Ind',    #indicative
             'VH' : 'Sub'     #subjunctive
         },
@@ -285,7 +286,7 @@ def get_feats(leaf):
                             return 'lykill finnst ekki'
                         except TypeError:
                             return 'orð finnst ekki í BÍN'
-                    elif tag[1:3] == 'AG':      #lh.nt., VAG, DAG og RAG
+                    elif tag[1:3] == 'AG':      #lh.nt., VAG, DAG og RAG 
                         verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['part']
                         tense = 'Tense='+feats[UD_tag]['Tense']['NT']
                         return tense+'|'+verbform
@@ -312,16 +313,19 @@ def get_feats(leaf):
                                 mood = 'Mood='+feats[UD_tag]['Mood']['FH']
                             elif tag[3] == 'S':
                                 mood = 'Mood='+feats[UD_tag]['Mood']['VH']
-                            return mood+'|'+tense
+                            return mood+'|'+tense             
                 tag_name = tag.split('-')[0]
                 if tag_name == 'NUM+NUM':
                     tag_name = re.sub('NUM\+NUM', 'NUM', tag_name)
+                    UD_tag = 'NUM'
+                if tag_name == 'NUM+N':
+                    tag_name = re.sub('\+N', '', tag_name)
                     UD_tag = 'NUM'
                 tag_info = tag.split('-')[1]
                 if tag_name == 'NP':
                     return '_'      #TODO: sækja BÍN-upplýsingar
                 else:
-                    if tag_info == '1' or tag_info == '2' or tag_info == '10':
+                    if tag_info == '1' or tag_info == '2' or tag_info == '10' or tag_info == '4':
                         case = 'Case='+feats[UD_tag]['Case']['N']
                     else:
                         case = 'Case='+feats[UD_tag]['Case'][tag_info]
@@ -333,8 +337,7 @@ def get_feats(leaf):
                     det = check_def(token)
                     token = token.replace('$', '')
                     try:
-                        ID = DMII_data.check_DMII(DMII_no, token, lemma)
-                        gender = 'Gender='+feats[UD_tag]['Gender'][ID[1]]
+                        gender = 'Gender='+feats[UD_tag]['Gender'][DMII_data.check_DMII(DMII_no, token, lemma)[1]]
                         return case+'|'+num+'|'+gender+'|'+det
                     except (TypeError, IndexError):
                         return case+'|'+num+'|'+det+'*'
@@ -362,7 +365,7 @@ def get_feats(leaf):
                                 gender = 'Gender='+feats[UD_tag]['Gender'][mark.split('-')[0]]
                             return case+'|'+num+'|'+gender
                 if UD_tag == 'DET':
-                    return case
+                    return case 
                 if UD_tag == 'NUM':
                     try:
                         ID = DMII_data.check_DMII(DMII_to, token, lemma)[0]
