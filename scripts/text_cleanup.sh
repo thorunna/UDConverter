@@ -44,7 +44,7 @@ for file in $out_dir/*; do
   #Delete lines which include (ID
   #sed -i '/(ID/d' $file
   #Delete every instance of '( '
-  sed -i "" 's/( //g' $file
+  sed -i "" 's/^( //g' $file
   #Delete lines which only include (. ?-?)), (. .-.)) or (" "-")) at the beginning of line
   sed -i "" 's/^([\."] [\.?"]-[\.?"]))$//g' $file
   #Include token and lemma for ',' and '.'
@@ -68,13 +68,15 @@ for file in $out_dir/*; do
   sed -i "" 's/^  (IP-MAT/(IP-MAT/g' $file
   #Delete empty spaces before (FRAG
   sed -i "" 's/^  (FRAG/(FRAG/g' $file
+  #Delete empty spaces before (CP-QUE
+  sed -i "" 's/^  (CP-QUE/(CP-QUE/g' $file
   #Delete empty lines
   sed -i "" '/^$/d' $file
   sed -i "" '/^  $/d' $file
   #Correct one instance of uneven parentheses
   sed -i "" 's/^(VAG sofandi\.-sofa))/(VAG sofandi\.-sofa)/g' $file
   #Delete last character in file (uneven parentheses) NOTE only needed on some machines!!!
-  sed -i "" '$ s/.$//' $file
+  #sed -i "" '$ s/.$//' $file
 done
 
   # sed -i "" 's/) //g' #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
