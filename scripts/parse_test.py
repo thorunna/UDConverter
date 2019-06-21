@@ -67,7 +67,7 @@ def word_info(tree):
             word = leaf[0].split('-') # token and lemma separated.
             FORM = word[0] # FORM: Word form or punctuation symbol (token).
             LEMMA = word[1]
-        elif leaf[0] == '<dash/>':
+        elif leaf[0] == '<dash/>' or leaf[0] == '<dash>' or leaf[0] == '</dash>':
             FORM = '-'
             LEMMA = '-'
             token_lemma = str(FORM+'-'+LEMMA)
@@ -78,6 +78,8 @@ def word_info(tree):
             if FORM[0] not in ['*', '0']:
                 # DMII_combined = DMII_data.DMII_data('combined')
                 LEMMA = DMII_data.get_lemma(DMII_combined, FORM)
+                if LEMMA == None:
+                    LEMMA = '_'
                 token_lemma = str(FORM+'-'+LEMMA)
                 tag = leaf[1]
                 leaf = token_lemma, tag
