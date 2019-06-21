@@ -254,7 +254,7 @@ def get_feats(leaf):
         if UD_tag in feats:
             try:
                 if UD_tag == 'VERB':    #works for VB and RD (verða)
-                    if len(tag) == 2 or tag.endswith('TTT'):       #infinitive
+                    if len(tag) == 2 or tag.endswith('TTT') or tag == 'VB-1':       #infinitive
                         verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['inf']
                         return verbform
                     elif tag[:3] == 'VAN' or tag[:3] == 'VBN' or tag[:3] == 'DAN':     #VAN (lh.þt. í þolmynd) og VBN (lh.þt.)
