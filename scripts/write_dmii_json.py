@@ -36,6 +36,7 @@ def write_json(dict, file):
         json.dump(data, file)
 
 def process_DMII():
+    make_out_dir()
     flags = ['no', 'lo', 'fn', 'to', 'ao', 'so', 'combined']
     for flag in flags:
         # print('Processing DMII data for {0}.csv...'.format(flag))
@@ -45,7 +46,6 @@ def process_DMII():
         print('Writing data to ' + json_filename)
         write_json(data, json_filepath)
         print('Finished!')
-
 
 
 
