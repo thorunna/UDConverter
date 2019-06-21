@@ -22,6 +22,10 @@ tags = {
     'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
     'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
     'V' : 'VERB',
+    'DO' : 'VERB',  #'gera', do, tagged as verb
+    'HV' : 'AUX',   #'have' tagged as auxiliary verb
+    'MD' : 'AUX',   #modal verbs tagged as auxiliary
+    'RD' : 'VB',    #'verða', become, tagged as verb
     'W' : 'DET',    # WH-determiner tagged as DET (determiner)
     'R' : 'VERB',   # All forms of "verða" tagged as VERB
     'TO' : 'PART',  # Infinitive marker tagged as PART (particle)
@@ -254,7 +258,7 @@ def get_feats(leaf):
         UD_tag = get_UD_tag(tag, lemma)
         if UD_tag in feats:
             try:
-                if UD_tag == 'VERB':    #works for VB and RD (verða)
+                if UD_tag in {'VERB', 'AUX'}:    #TODO: include all verbs
                     if len(tag) == 2 or tag.endswith('TTT') or tag == 'VB-1':       #infinitive
                         verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['inf']
                         return verbform
