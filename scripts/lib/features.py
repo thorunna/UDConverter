@@ -319,8 +319,8 @@ def get_feats(leaf):
                     tag_name = re.sub('NUM\+NUM', 'NUM', tag_name)
                     UD_tag = 'NUM'
                 if tag_name == 'NUM+N':
-                    tag_name = re.sub('\+N', '', tag_name)
-                    UD_tag = 'NUM'
+                    tag_name = re.sub('NUM\+', '', tag_name)
+                    UD_tag = 'N'
                 tag_info = tag.split('-')[1]
                 if tag_name == 'NP':
                     return '_'      #TODO: sækja BÍN-upplýsingar
