@@ -314,6 +314,9 @@ def get_feats(leaf):
                                 mood = 'Mood='+feats[UD_tag]['Mood']['VH']
                             return mood+'|'+tense
                 tag_name = tag.split('-')[0]
+                if tag_name == 'NUM+NUM':
+                    tag_name = re.sub('NUM\+NUM', 'NUM', tag_name)
+                    UD_tag = 'NUM'
                 tag_info = tag.split('-')[1]
                 if tag_name == 'NP':
                     return '_'      #TODO: sækja BÍN-upplýsingar
