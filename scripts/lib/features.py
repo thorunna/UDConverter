@@ -324,15 +324,14 @@ def get_feats(leaf):
                     UD_tag = 'NUM'
                 if tag_name == 'NUM+N':
                     tag_name = re.sub('NUM\+', '', tag_name)
-                    UD_tag = 'N'
+                    UD_tag = 'NOUN'
                 tag_info = tag.split('-')[1]
                 if tag_name == 'NP':
                     return '_'      #TODO: sækja BÍN-upplýsingar
+                if tag_info == '1' or tag_info == '2' or tag_info == '10' or tag_info == '4':
+                    case = 'Case='+feats[UD_tag]['Case']['N']
                 else:
-                    if tag_info == '1' or tag_info == '2' or tag_info == '10' or tag_info == '4':
-                        case = 'Case='+feats[UD_tag]['Case']['N']
-                    else:
-                        case = 'Case='+feats[UD_tag]['Case'][tag_info]
+                    case = 'Case='+feats[UD_tag]['Case'][tag_info]
                 if UD_tag in {'NOUN', 'PROPN'}:
                     if tag_name.endswith('21') or tag_name.endswith('22'):
                         tag_name = re.sub('21', '', tag_name)
