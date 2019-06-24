@@ -279,7 +279,7 @@ def get_UD_tag(tag, word):
             return tags[tag]
         # elif tag.startswith('NUM') or tag.startswith('ONE'):
         #     return 'NUM'
-        elif tag[0:2] == 'DO' or tag[0:2] == 'DA':
+        elif tag[0:2] == 'DO' or tag[0:2] == 'DA' or tag[0:2] == 'HV':
             return 'VERB'       #ATH. merkt sem sögn í bili
         elif tag == 'CONJ' and word in cconj:
             return 'CCONJ'
@@ -292,7 +292,7 @@ def get_UD_tag(tag, word):
                 return '_'
 
 def get_feats_verb(lemma, token, tag, UD_tag):
-    if len(tag) == 2 or tag.endswith('TTT') or tag == 'VB-1':       #infinitive
+    if len(tag) == 2 or tag.endswith('TTT') or tag == 'VB-1' or tag == 'VB-3' or tag == 'VB-2':       #infinitive
         verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['inf']
         return verbform
     elif tag[:3] == 'VAN' or tag[:3] == 'VBN' or tag[:3] == 'DAN' or tag[:3] == 'DON':     #VAN (lh.þt. í þolmynd) og VBN (lh.þt.)
@@ -309,7 +309,7 @@ def get_feats_verb(lemma, token, tag, UD_tag):
         else_feats = feats_verb_else(lemma, token, tag, UD_tag)
         return else_feats                    
 
-def feats_verb_part(lemma, token, tag, UD_tag):
+def feats_verb_part(lemma, token, tag, UD_tag):     #VAN, VBN, DAN, DON
     if '-' in tag:
         tag = tag.split('-')[0]
     try:
@@ -358,15 +358,19 @@ def feats_verb_else(lemma, token, tag, UD_tag):
             tense = 'Tense='+feats[UD_tag]['Tense']['NT']
         if tag[3] == 'I':
             mood = 'Mood='+feats[UD_tag]['Mood']['FH']
+            return mood+'|'+tense 
         elif tag[3] == 'S':
             mood = 'Mood='+feats[UD_tag]['Mood']['VH']
-        return mood+'|'+tense 
+            return mood+'|'+tense 
 
 
 def get_feats_noun(lemma, token, UD_tag, tag_name, case):
-    if tag_name.endswith('21') or tag_name.endswith('22'):
+    if tag_name.endswith('21') or tag_name.endswith('22') or tag_name.endswith('31') or tag_name.endswith('32') or tag_name.endswith('33'):
         tag_name = re.sub('21', '', tag_name)
         tag_name = re.sub('22', '', tag_name)
+        tag_name = re.sub('31', '', tag_name)
+        tag_name = re.sub('32', '', tag_name)
+        tag_name = re.sub('33', '', tag_name)
     num = 'Number='+feats[UD_tag]['Number'][tag_name]
     det = check_def(token)
     token = token.replace('$', '')
@@ -469,7 +473,15 @@ def get_feats(leaf):
                 if tag_name == 'NUM+N':
                     tag_name = re.sub('NUM\+', '', tag_name)
                     UD_tag = 'NOUN'
+                if tag_name == 'N+Q':
+                    tag_name = re.sub('N\+', '', tag_name)
+                    UD_tag = 'ADJ'
+                if tag_name == 'NPR+NS':
+                    tag_name = re.sub('\+NS', '', tag_name)
+                    UD_tag = 'PROPN'
                 tag_info = tag.split('-')[1]
+                if tag_info == 'TTT':
+                    tag_info = tag.split('-')[2]
                 if tag_name == 'NP':
                     return '_'      #TODO: sækja BÍN-upplýsingar
                 if tag_info == '1' or tag_info == '2' or tag_info == '10' or tag_info == '4':
@@ -496,7 +508,6 @@ def get_feats(leaf):
                 return '(Tag cannot be split)'      #ATH. some tags cannot be split (OTHER, WQ, ...)
         else:
             return '_'
-
 if __name__ == '__main__':
     # icepahc = LazyCorpusLoader(
     #     'icepahc-v0.9/psd_orig/', CategorizedBracketParseCorpusReader,
