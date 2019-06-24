@@ -76,6 +76,8 @@ for file in $out_dir/*; do
   sed -i "" 's/^  (IP-IMP-SPE/(IP-IMP-SPE/g' $file
   #Delete empty spaces before (LATIN
   sed -i "" 's/^  (LATIN/(LATIN/g' $file
+  #Delete empty spaces before (CP-EXL-SPE
+  sed -i "" 's/^  (CP-EXL-SPE/(CP-EXL-SPE/g' $file
   #Delete empty lines
   sed -i "" '/^$/d' $file
   sed -i "" '/^  $/d' $file
