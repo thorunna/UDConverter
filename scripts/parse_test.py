@@ -1,5 +1,6 @@
 from lib import DMII_data
 from lib import features
+# from lib import depender
 from nltk.corpus.util import LazyCorpusLoader
 from nltk.corpus.reader import CategorizedBracketParseCorpusReader
 from nltk.data import path
@@ -95,77 +96,83 @@ def word_info(tree):
         sentence.append(line)
     return sentence
 
-# Filename	                      Sents   Errors
-# 1150.firstgrammar.sci-lin.psd     182     0
-# 1150.homiliubok.rel-ser.psd      2103     0
-# 1210.jartein.rel-sag.psd          822     1
-# 1210.thorlakur.rel-sag.psd        540     2
-# 1250.sturlunga.nar-sag.psd       2224     1
-# 1250.thetubrot.nar-sag.psd        246     8
-# 1260.jomsvikingar.nar-sag.psd    1532     0
-# 1270.gragas.law-law.psd           346     0
-# 1275.morkin.nar-his.psd          2186     0
-# 1300.alexander.nar-sag.psd       1383     1
-# 1310.grettir.nar-sag.psd         2057     2
-# 1325.arni.nar-sag.psd            1125     0
-# 1350.bandamennM.nar-sag.psd      1222     1
-# 1350.finnbogi.nar-sag.psd        2342     2
-# 1350.marta.rel-sag.psd            977     2
-# 1400.gunnar.nar-sag.psd           936     0
-# 1400.gunnar2.nar-sag.psd          340     0
-# 1400.viglundur.nar-sag.psd       1288     0
-# 1450.bandamenn.nar-sag.psd       1034     3
-# 1450.ectorssaga.nar-sag.psd      1950     0
-# 1450.judit.rel-bib.psd            491     0
-# 1450.vilhjalmur.nar-sag.psd      2414     1
-# 1475.aevintyri.nar-rel.psd       1200     2
-# 1480.jarlmann.nar-sag.psd        1283     0
-# 1525.erasmus.nar-sag.psd          462     1
-# 1525.georgius.nar-rel.psd        1060     3
-# 1540.ntacts.rel-bib.psd          1184     1
-# 1540.ntjohn.rel-bib.psd          1685     1
-# 1593.eintal.rel-oth.psd          1552     0
-# 1611.okur.rel-oth.psd             629     1
-# 1628.olafuregils.bio-tra.psd      906     0
-# 1630.gerhard.rel-oth.psd          701     2
-# 1650.illugi.nar-sag.psd          1929     0
-# 1659.pislarsaga.bio-aut.psd       324     1
-# 1661.indiafari.bio-tra.psd       1388     1
-# 1675.armann.nar-fic.psd          1018     0
-# 1675.magnus.bio-oth.psd           204     0
-# 1675.modars.nar-fic.psd           373     1
-# 1680.skalholt.nar-rel.psd         870     1
-# 1720.vidalin.rel-ser.psd         1112     0
-# 1725.biskupasogur.nar-rel.psd    1105     3
-# 1745.klim.nar-fic.psd             873     0
-# 1790.fimmbraedra.nar-sag.psd     1603     2
-# 1791.jonsteingrims.bio-aut.psd   1518     1
-# 1830.hellismenn.nar-sag.psd      1411     1
-# 1835.jonasedli.sci-nat.psd        163     0
-# 1850.piltur.nar-fic.psd          1430    15
-# 1859.hugvekjur.rel-ser.psd       1107     0
-# 1861.orrusta.nar-fic.psd         1804     0
-# 1882.torfhildur.nar-fic.psd      2000     2
-# 1883.voggur.nar-fic.psd           130     0
-# 1888.grimur.nar-fic.psd           625     0
-# 1888.vordraumur.nar-fic.psd       756     1
-# 1902.fossar.nar-fic.psd          1659    11
-# 1907.leysing.nar-fic.psd         1521     0
-# 1908.ofurefli.nar-fic.psd        1743     1
-# 1920.arin.rel-ser.psd            1149     1
-# 1985.margsaga.nar-fic.psd        1705     4
-# 1985.sagan.nar-fic.psd           2008     2
-# 2008.mamma.nar-fic.psd           1844     8
-# 2008.ofsi.nar-sag.psd            1210     1
-# Total:                          72984    92
+# No. Filename No. of sents. Errors
+# 1 1150.firstgrammar.sci-lin.psd    182 0
+# 2 1150.homiliubok.rel-ser.psd     2103 0
+# 3 1210.jartein.rel-sag.psd         822 0
+# 4 1210.thorlakur.rel-sag.psd       540 0
+# 5 1250.sturlunga.nar-sag.psd      2225 0
+# 6 1250.thetubrot.nar-sag.psd       246 0
+# 7 1260.jomsvikingar.nar-sag.psd   1532 0
+# 8 1270.gragas.law-law.psd          346 0
+# 9 1275.morkin.nar-his.psd         2186 0
+# 10 1300.alexander.nar-sag.psd     1383 1
+# 11 1310.grettir.nar-sag.psd       2057 0
+# 12 1325.arni.nar-sag.psd          1125 0
+# 13 1350.bandamennM.nar-sag.psd    1222 0
+# 14 1350.finnbogi.nar-sag.psd      2342 2
+# 15 1350.marta.rel-sag.psd          977 1
+# 16 1400.gunnar.nar-sag.psd         935 0
+# 17 1400.gunnar2.nar-sag.psd        340 0
+# 18 1400.viglundur.nar-sag.psd     1288 0
+# 19 1450.bandamenn.nar-sag.psd     1034 0
+# 20 1450.ectorssaga.nar-sag.psd    1950 0
+# 21 1450.judit.rel-bib.psd          491 0
+# 22 1450.vilhjalmur.nar-sag.psd    2414 0
+# 23 1475.aevintyri.nar-rel.psd     1200 2
+# 24 1480.jarlmann.nar-sag.psd      1282 0
+            # Bad tree detected; trying to recover...
+            #   Recovered by returning a flat parse.
+# 25 1525.erasmus.nar-sag.psd        461 1
+# 26 1525.georgius.nar-rel.psd      1060 0
+# 27 1540.ntacts.rel-bib.psd        1183 0
+# 28 1540.ntjohn.rel-bib.psd        1685 0
+# 29 1593.eintal.rel-oth.psd        1553 0
+# 30 1611.okur.rel-oth.psd           629 0
+# 31 1628.olafuregils.bio-tra.psd    906 0
+# 32 1630.gerhard.rel-oth.psd        701 0
+# 33 1650.illugi.nar-sag.psd        1929 0
+# 34 1659.pislarsaga.bio-aut.psd     324 0
+# 35 1661.indiafari.bio-tra.psd     1388 0
+# 36 1675.armann.nar-fic.psd        1018 0
+# 37 1675.magnus.bio-oth.psd         204 0
+# 38 1675.modars.nar-fic.psd         373 0
+# 39 1680.skalholt.nar-rel.psd       869 0
+# 40 1720.vidalin.rel-ser.psd       1112 0
+# 41 1725.biskupasogur.nar-rel.psd  1105 0
+# 42 1745.klim.nar-fic.psd           873 0
+# 43 1790.fimmbraedra.nar-sag.psd   1602 1
+            # Bad tree detected; trying to recover...
+            #   Recovered by returning a flat parse.
+# 44 1791.jonsteingrims.bio-aut.psd 1517 1
+# 45 1830.hellismenn.nar-sag.psd    1411 0
+# 46 1835.jonasedli.sci-nat.psd      163 0
+# 47 1850.piltur.nar-fic.psd        1440 1
+# 48 1859.hugvekjur.rel-ser.psd     1110 0
+# 49 1861.orrusta.nar-fic.psd       1804 0
+            # Bad tree detected; trying to recover...
+            #   Recovered by returning a flat parse.
+# 50 1882.torfhildur.nar-fic.psd    1999 3
+# 51 1883.voggur.nar-fic.psd         130 0
+# 52 1888.grimur.nar-fic.psd         625 0
+# 53 1888.vordraumur.nar-fic.psd     756 0
+# 54 1902.fossar.nar-fic.psd        1659 0
+# 55 1907.leysing.nar-fic.psd       1521 0
+# 56 1908.ofurefli.nar-fic.psd      1743 0
+# 57 1920.arin.rel-ser.psd          1149 0
+# 58 1985.margsaga.nar-fic.psd      1705 0
+# 59 1985.sagan.nar-fic.psd         2008 0
+# 60 2008.mamma.nar-fic.psd         1845 0
+# 61 2008.ofsi.nar-sag.psd          1210 0
+# Total:                           72992 13
 
 def print_data():
     '''
         Prints the CONllu data to command line or writes it to file, by
         specification.
     '''
-    # fileids = icepahc.fileids() # leave uncommented for whole corpus use
-    fileids = ['1150.firstgrammar.sci-lin.psd'] # For debug use only
+    fileids = icepahc.fileids()[5:10] # leave uncommented for whole corpus use
+    # fileids = ['1250.sturlunga.nar-sag.psd'] # For debug use only
     total_sents = 0
     # CONLLU_log = open('out_test/is_test.02.conllu', 'w') # old debug
     for fileid in fileids:
@@ -196,7 +203,7 @@ def print_data():
                 total_sents += 1
                 file_sents += 1
             except Exception as ex:
-                raise
+                # raise
                 error_num += 1
                 print('\n# sent_id = ',  treeID)
                 print('Failure - {0}. Arguments:\n{1!r}'.format(type(ex).__name__, ex.args))
@@ -208,7 +215,7 @@ def print_data():
                 # continue
         end = time.time()
         duration = '%.2f' % float(end - start)
-        print('Finished! Data logged. Time elapsed: {0} seconds'.format(duration))
+        print('Finished! Time elapsed: {0} seconds'.format(duration))
         print('Number of sentences in file: {0}'.format(file_sents))
         print('Number of failed sentences: {0}'.format(error_num))
 
