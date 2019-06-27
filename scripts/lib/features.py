@@ -2,12 +2,19 @@ from lib import DMII_data
 import string
 import re
 
-DMII_no = DMII_data.load_json('no')
+"""DMII_no = DMII_data.load_json('no')
 DMII_lo = DMII_data.load_json('lo')
 DMII_fn = DMII_data.load_json('fn')
 DMII_to = DMII_data.load_json('to')
 DMII_ao = DMII_data.load_json('ao')
-DMII_so = DMII_data.load_json('so')
+DMII_so = DMII_data.load_json('so')"""
+
+DMII_no = DMII_data.DMII_data('no')
+DMII_lo = DMII_data.DMII_data('lo')
+DMII_fn = DMII_data.DMII_data('fn')
+DMII_to = DMII_data.DMII_data('to')
+DMII_ao = DMII_data.DMII_data('ao')
+DMII_so = DMII_data.DMII_data('so')
 
 cconj = {'og', 'eða', 'en', 'heldur', 'enda', 'ellegar',
         'bæði','hvorki','annaðhvort','hvort', 'ýmist'}
