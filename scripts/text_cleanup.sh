@@ -87,11 +87,11 @@ for file in $out_dir/*; do
   sed -i "" '$ s/.$//' $file
 done
 
-matt1="./testing/corpora/icepahc-v0.9/psd/ntmatthew01.psd"
-matt2="./testing/corpora/icepahc-v0.9/psd/ntmatthew02.psd"
-matt3="./testing/corpora/icepahc-v0.9/psd/ntmatthew02.psd"
+#matt1="./testing/corpora/icepahc-v0.9/psd/ntmatthew01.psd"
+#matt2="./testing/corpora/icepahc-v0.9/psd/ntmatthew02.psd"
+#matt3="./testing/corpora/icepahc-v0.9/psd/ntmatthew02.psd"
 
-sed -i "" 's/\.-\.)))/\.-\.))/g' $matt1 $matt2 $matt3
-sed -i "" 's/,-,)))/,-,))/g' $matt1 $matt2 $matt3
+#sed -i "" 's/\.-\.)))/\.-\.))/g' $matt1 $matt2 $matt3
+#sed -i "" 's/,-,)))/,-,))/g' $matt1 $matt2 $matt3
 
   # sed -i "" 's/) //g' #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
