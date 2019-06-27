@@ -254,6 +254,11 @@ feats = {
             '' : 'Frac'     #Fraction
         }
     },
+    'ADP' : {
+        'AdpType' : {
+            'P' : 'Prep'
+        }
+    },
 #    'SCONJ' : {},   #no features needed for subordinating conjunctions
 #    'CCONJ' : {},   #no features needed for coordinating conjunctions
 #    'ADP' : {},     #no features needed for adpositions
@@ -455,6 +460,10 @@ def get_feats_adj(lemma, token, UD_tag, case, tag_name):
         except (TypeError, KeyError):
             return case+'|'+degree+'*'
 
+def get_adp_feats(UD_tag):
+    type = 'AdpType='+feats[UD_tag]['AdpType']['P']
+    return type
+
 def get_feats(leaf):
     if leaf[0][0] not in {'*', '0'}: # ATH Used while traces etc. are still in data
         lemma = leaf[0].split('-')[1]
@@ -465,8 +474,14 @@ def get_feats(leaf):
             try:
                 if UD_tag in {'VERB', 'AUX'}:    #TODO: include all verbs
                     verb_feats = get_feats_verb(lemma, token, tag, UD_tag)
-                    return verb_feats        
-                tag_name = tag.split('-')[0]
+                    return verb_feats   
+                if UD_tag == 'ADP':
+                    adp_feats = get_adp_feats(UD_tag)
+                    return adp_feats     
+                try:    
+                    tag_name = tag.split('-')[0]
+                except IndexError:
+                    tag_name = tag
                 if tag_name == 'NUM+NUM':
                     tag_name = re.sub('NUM\+NUM', 'NUM', tag_name)
                     UD_tag = 'NUM'
@@ -479,12 +494,14 @@ def get_feats(leaf):
                 if tag_name == 'NPR+NS':
                     tag_name = re.sub('\+NS', '', tag_name)
                     UD_tag = 'PROPN'
+                if tag == 'RP-2':
+                    tag = re.sub('-2', '', tag)
                 tag_info = tag.split('-')[1]
                 if tag_info == 'TTT':
                     tag_info = tag.split('-')[2]
                 if tag_name == 'NP':
                     return '_'      #TODO: sækja BÍN-upplýsingar
-                if tag_info == '1' or tag_info == '2' or tag_info == '10' or tag_info == '4':
+                if tag_info.isdigit():
                     case = 'Case='+feats[UD_tag]['Case']['N']
                 else:
                     case = 'Case='+feats[UD_tag]['Case'][tag_info]
@@ -508,6 +525,7 @@ def get_feats(leaf):
                 return '(Tag cannot be split)'      #ATH. some tags cannot be split (OTHER, WQ, ...)
         else:
             return '_'
+
 if __name__ == '__main__':
     # icepahc = LazyCorpusLoader(
     #     'icepahc-v0.9/psd_orig/', CategorizedBracketParseCorpusReader,
