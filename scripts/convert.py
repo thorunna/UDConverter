@@ -42,6 +42,8 @@ class Converter():
             #'CONJP'   : {'dir':'r', 'rules':['IP-INF']}   # óþarfi, er fyrsti frá vinstri
             
             'IP-INF'        : {'dir':'r', 'rules':['VB']},
+            'IP-INF-PRP'    : {'dir':'r', 'rules':['VB']},
+            'IP-INF-PRP-PRN': {'dir':'r', 'rules':['VB']},
             'IP-MAT'        : {'dir':'r', 'rules':['VB.*','RD.*','BE.*', 'DO.*','N.*']}, 
             'IP-MAT-PRN'    : {'dir':'r', 'rules':['VB.*']},
             'IP-SUB'        : {'dir':'r', 'rules':['VB.*','BE.*','.*']},    #meira?
@@ -60,11 +62,11 @@ class Converter():
             'CP-ADV'        : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-EOP'        : {'dir':'r', 'rules':['IP-INF']},
             'CP-TMC'        : {'dir':'r', 'rules':['IP-INF']},
-            'NP'            : {'dir':'r', 'rules':['NS-.', 'N-.', 'NPR-.']},
+            'NP'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.']},
             'NP-ADV'        : {'dir':'r', 'rules':['NP.*']},
             'NP-CMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
             'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
-            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N']},
+            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-N', 'ADJ-N']},
             'NP-OB1'        : {'dir':'r', 'rules':['N-A', 'NPR-A', 'NS-A', 'ONE+Q-A']},
             'NP-OB2'        : {'dir':'r', 'rules':['NP.*', 'PRO-.', 'N-D', 'NS-D', 'NPR-.', 'CP-FRL', 'MAN-.']},    #MEIRA?
             'NP-OB3'        : {'dir':'r', 'rules':['PRO-D', 'N-D', 'NS-D', 'NPR-D']},
@@ -74,9 +76,9 @@ class Converter():
             'NP-ADT'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
             'NP-TMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
             'NP-MSR'        : {'dir':'r', 'rules':['NS-.', 'N-.']},
-            'ADJP'          : {'dir':'r', 'rules':['ADJ-N', 'ADJR-N', 'ADJS-N', 'ADJ.*', 'ADVR']},
-            'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N', 'ADJR-N']},
-            'PP'            : {'dir':'r', 'rules':['P']},
+            'ADJP'          : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE']},
+            'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},
+            'PP'            : {'dir':'r', 'rules':['NP.*', 'P']},
             'PP-BY'         : {'dir':'r', 'rules':['P']},
             'PP-PRN'        : {'dir':'r', 'rules':['P']},
             'ADVP'          : {'dir':'r', 'rules':['ADV', 'WADV']},
@@ -84,7 +86,7 @@ class Converter():
             'ADVP-LOC'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-TMP'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'RP'            : {'dir':'r', 'rules':[]},  #tagg fyrir orð en ekki phrase type?
-            'CONJP'         : {'dir':'r', 'rules':['CONJ']},
+            'CONJP'         : {'dir':'r', 'rules':['NP.*', 'CONJ']},
             'WNP'           : {'dir':'r', 'rules':['WPRO-.', 'PRO-.']}, #MEIRA?
             'WPP'           : {'dir':'r', 'rules':['WNP', 'NP']}
             }
@@ -117,7 +119,70 @@ class Converter():
             tree.set_id(tree[1].id()) # first from left indicated or no head rule index found
 
     def _relation(self, mod_tag, head_tag):
-        return '_'
+        """
+            Return a Universal Relation name given an IcePaHC/Penn phrase-type tag
+
+            http://www.linguist.is/icelandic_treebank/Phrase_Types
+            to
+            http://universaldependencies.github.io/docs/u/dep/index.html
+
+        :param mod_tag: str
+        :return: str
+        """
+
+        #todo use head_tag and more info about the constituency to better select the relation label
+
+        if '-' in mod_tag:
+            mod_tag, mod_func = mod_tag.split('-', 1) #todo, handle more than one function label
+        else:
+            mod_func = None
+
+        if mod_tag == 'NP':
+            # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
+            return {
+                'SBJ': 'nsubj',
+                'OB1': 'dobj',
+                'OB2': 'iobj',
+                'OB3': 'iobj',
+                'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
+            }.get(mod_func, 'rel')
+        elif mod_tag == 'D' or mod_tag == 'ONE':
+            return 'det'
+        elif mod_tag == 'ADJP' or mod_tag == 'ADJ' or mod_tag == 'Q':
+            # -SPR (secondary predicate)
+            return 'amod'
+        elif mod_tag == 'PP':
+            # -BY, -PRN
+            return 'obl'        #NP sem er haus PP fær obl nominal
+        elif mod_tag == 'P':
+            return 'case'
+        elif mod_tag == 'ADVP':
+            # -DIR, -LOC, -TP
+            return 'amod'
+        elif mod_tag in ['VAN', 'BAN', 'DAN', 'HAN']:
+            return 'aux'
+        elif mod_tag in ['VBN', 'BEN', 'DON', 'HVN', 'RDN']:
+            return 'auxpass'
+        elif mod_tag[0:2] in ['VB', 'BE', 'DO', 'HV', 'RD', 'MD']: #todo
+            return 'aux'
+        elif mod_tag == 'RP': #todo, adverbial particles
+            return 'amod'
+        elif mod_tag == 'CONJ':
+            return 'cc'
+        elif mod_tag == 'CONJP':
+            return 'conj'
+        elif mod_tag == 'NUM':
+            return 'nummod'
+        elif mod_tag in string.punctuation:
+            return 'punct'
+        elif mod_tag in ['FW', 'X', 'LATIN']:    #meira?
+            return '_'
+        elif mod_tag == 'INTJ':
+            return 'discourse'
+        elif mod_tag == 'TO':   #infinitival marker with marker relation
+            return 'mark'
+
+        return 'rel-'+mod_tag
 
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree."""
