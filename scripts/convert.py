@@ -156,9 +156,9 @@ class Converter():
             return 'obl'        #NP sem er haus PP fær obl nominal
         elif mod_tag == 'P':
             return 'case'
-        elif mod_tag == 'ADVP':
+        elif mod_tag == 'ADVP' or mod_tag == 'NEG':
             # -DIR, -LOC, -TP
-            return 'amod'
+            return 'advmod'
         elif mod_tag in ['VAN', 'BAN', 'DAN', 'HAN']:
             return 'aux'
         elif mod_tag in ['VBN', 'BEN', 'DON', 'HVN', 'RDN']:
