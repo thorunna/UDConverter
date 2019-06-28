@@ -42,6 +42,7 @@ tags = {
     'PRO' : 'PRON',
     'WQ' : 'PRON',  #interrogative pronoun
     'WPRO' : 'PRON',  #wh-pronouns
+    'SUCH' : 'PRON',
     'NUM' : 'NUM',
     'ONE' : 'NUM',
     'ADJ' : 'ADJ',  # Adjectives tagged as ADV
