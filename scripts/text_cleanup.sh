@@ -11,10 +11,12 @@ Script for cleaning IcePaHC corpus files (.psd)
  - Removes last parantheses from each file (main imbalance issue)
  - Adds token/lemma for missing punctuations (, and .)
  - Replaces (, <dash/>) with (, ,-,)
+ - Joins nouns with corresponding determiners (stýrimanns$ $ins -> stýrimannsins)
 Machine-specific paths must be un-commented before use
 '''
 
-# HH Path:
+# Paths
+
 in_dir="./testing/corpora/icepahc-v0.9/psd_orig"
 out_dir="./testing/corpora/icepahc-v0.9/psd"
 
@@ -29,14 +31,18 @@ if [ ! -d $out_dir ];
     echo "Directory '$out_dir' already exists. Using that."
 fi
 
+# Copy files to new directory
+
 for file in $in_dir/*; do
   echo "Copying file: ${file##*/}"
   cp $file ${file//_orig}
 done
 
+# Each file run through commands
+
 for file in $out_dir/*; do
   echo "Working on file: ${file##*/}"
-  perl -pi -e 'undef $/; $_=<>; s/\( \((META|CODE|LATIN|QTP)(?:(?!\( \()[\w\W])*//g' $file
+  # perl -pi -e 'undef $/; $_=<>; s/\( \((META|CODE|LATIN|QTP)(?:(?!\( \()[\w\W])*//g' $file
   #Delete (CODE...)
   sed -i "" 's/(CODE[ {}*<>a-zA-Z0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$_:-?/]*)//g' $file
   #Delete (ID...))
@@ -85,6 +91,8 @@ for file in $out_dir/*; do
   sed -i "" 's/^(VAG sofandi\.-sofa))/(VAG sofandi\.-sofa)/g' $file
   #Delete last character in file (uneven parentheses) NOTE only needed on some machines!!!
   sed -i "" '$ s/.$//' $file
+  # Join nouns and corresponding determiners
+  python3 scripts/combine_NPs.py $file
 done
 
 #matt1="./testing/corpora/icepahc-v0.9/psd/ntmatthew01.psd"
