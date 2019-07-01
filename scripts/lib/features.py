@@ -43,6 +43,7 @@ tags = {
     'WQ' : 'PRON',  #interrogative pronoun
     'WPRO' : 'PRON',  #wh-pronouns
     'SUCH' : 'PRON',
+    'ES' : 'PRON',  #expletive tagged as PRON
     'NUM' : 'NUM',
     'ONE' : 'NUM',
     'ADJ' : 'ADJ',  # Adjectives tagged as ADV
