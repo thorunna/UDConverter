@@ -12,6 +12,7 @@ from collections import defaultdict, OrderedDict
 import os
 import time
 import re
+import string
 
 path.extend(['./testing/'])
 
@@ -42,14 +43,16 @@ class Converter():
             #'CONJP'   : {'dir':'r', 'rules':['IP-INF']}   # óþarfi, er fyrsti frá vinstri
             
             'IP-INF'        : {'dir':'r', 'rules':['VB']},
+            'IP-INF-1'      : {'dir':'r', 'rules':['VB']},
             'IP-INF-PRP'    : {'dir':'r', 'rules':['VB']},
             'IP-INF-PRP-PRN': {'dir':'r', 'rules':['VB']},
-            'IP-MAT'        : {'dir':'r', 'rules':['VB.*','RD.*','BE.*', 'DO.*','N.*']}, 
+            'IP-MAT'        : {'dir':'r', 'rules':['VB.*','RD.*', 'DO.*','N.*']}, 
             'IP-MAT-PRN'    : {'dir':'r', 'rules':['VB.*']},
-            'IP-SUB'        : {'dir':'r', 'rules':['VB.*','BE.*','.*']},    #meira?
-            'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*','BE.*']},
+            'IP-SUB'        : {'dir':'r', 'rules':['VB.*', 'DO.*', '.*', 'ADVP']},    #meira?
+            'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*']},
+            'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*']},
             'IP-IMP'        : {'dir':'r', 'rules':['VB.*']},
-            'IP-SMC'        : {'dir':'r', 'rules':[]},
+            'IP-SMC'        : {'dir':'r', 'rules':['ADJP']},
             'IP-PPL'        : {'dir':'r', 'rules':[]},
             'CP-THT'        : {'dir':'r', 'rules':['IP-SUB.*','.*']},
             'CP-CAR'        : {'dir':'r', 'rules':['NP.*']},
@@ -63,14 +66,16 @@ class Converter():
             'CP-EOP'        : {'dir':'r', 'rules':['IP-INF']},
             'CP-TMC'        : {'dir':'r', 'rules':['IP-INF']},
             'NP'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.']},
+            'NP-1'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.']},
             'NP-ADV'        : {'dir':'r', 'rules':['NP.*']},
             'NP-CMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
-            'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
-            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-N', 'ADJ-N']},
+            'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.']},
+            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-N', 'ADJ-N', 'ES']},
+            'NP-SBJ-1'      : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-N', 'ADJ-N', 'ES']},
             'NP-OB1'        : {'dir':'r', 'rules':['N-A', 'NPR-A', 'NS-A', 'ONE+Q-A']},
             'NP-OB2'        : {'dir':'r', 'rules':['NP.*', 'PRO-.', 'N-D', 'NS-D', 'NPR-.', 'CP-FRL', 'MAN-.']},    #MEIRA?
             'NP-OB3'        : {'dir':'r', 'rules':['PRO-D', 'N-D', 'NS-D', 'NPR-D']},
-            'NP-PRD'        : {'dir':'r', 'rules':['NP.*', 'NPR-N']},
+            'NP-PRD'        : {'dir':'r', 'rules':['NP.*', 'NPR-N', 'N-.']},
             'NP-POS'        : {'dir':'r', 'rules':['N.*', 'PRO-.']},
             'NP-COM'        : {'dir':'r', 'rules':[]},  #bara spor, hafa með?
             'NP-ADT'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
@@ -86,9 +91,11 @@ class Converter():
             'ADVP-LOC'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-TMP'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'RP'            : {'dir':'r', 'rules':[]},  #tagg fyrir orð en ekki phrase type?
-            'CONJP'         : {'dir':'r', 'rules':['NP.*', 'CONJ']},
+            'CONJP'         : {'dir':'l', 'rules':['NP.*', 'NX' 'CONJ']},
             'WNP'           : {'dir':'r', 'rules':['WPRO-.', 'PRO-.']}, #MEIRA?
-            'WPP'           : {'dir':'r', 'rules':['WNP', 'NP']}
+            'WPP'           : {'dir':'r', 'rules':['WNP', 'NP']},
+            'NX'            : {'dir':'r', 'rules':['N-.']},
+            'FRAG-LFD'      : {'dir':'r', 'rules':['IP-SMC']}
             }
 
     def _select_head(self, tree):
@@ -137,6 +144,11 @@ class Converter():
         else:
             mod_func = None
 
+        if '-' in head_tag:
+            head_tag, head_func = head_tag.split('-', 1)
+        else:
+            head_func = None
+
         if mod_tag == 'NP':
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
             return {
@@ -146,6 +158,12 @@ class Converter():
                 'OB3': 'iobj',
                 'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
             }.get(mod_func, 'rel')
+        elif mod_tag == 'N' and head_tag == 'NP':
+            return 'conj'
+        elif mod_tag == 'NPR' and head_tag == 'NP':     #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj? 
+            return 'dobj'
+        elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj? 
+            return 'dobj'
         elif mod_tag == 'D' or mod_tag == 'ONE':
             return 'det'
         elif mod_tag == 'ADJP' or mod_tag == 'ADJ' or mod_tag == 'Q':
@@ -159,18 +177,26 @@ class Converter():
         elif mod_tag == 'ADVP' or mod_tag == 'NEG':
             # -DIR, -LOC, -TP
             return 'advmod'
-        elif mod_tag in ['VAN', 'BAN', 'DAN', 'HAN']:
-            return 'aux'
-        elif mod_tag in ['VBN', 'BEN', 'DON', 'HVN', 'RDN']:
+        elif mod_tag[0:2] == 'VB' and head_tag == 'CP':
+            return 'ccomp'
+        elif mod_tag in ['VAN', 'DAN', 'HAN']:
+            return 'aux:pass'
+        elif mod_tag in ['VBN', 'DON', 'HVN', 'RDN']:
             return 'auxpass'
-        elif mod_tag[0:2] in ['VB', 'BE', 'DO', 'HV', 'RD', 'MD']: #todo
+        elif mod_tag[0:2] in ['VB', 'DO', 'HV', 'RD', 'MD']: #todo
             return 'aux'
-        elif mod_tag == 'RP': #todo, adverbial particles
+        elif mod_tag[0:2] == 'BE' or mod_tag == 'BAN':  #copular
+            return 'cop'
+        elif mod_tag == 'RP' or mod_tag == 'FP': #todo, adverbial particles
             return 'amod'
         elif mod_tag == 'CONJ':
             return 'cc'
         elif mod_tag == 'CONJP':
             return 'conj'
+        elif mod_tag == 'C' or mod_tag == 'CP' or mod_tag == 'TO':  #infinitival marker with marker relation
+            return 'mark'
+        elif mod_tag == 'ES':
+            return 'expl'
         elif mod_tag == 'NUM':
             return 'nummod'
         elif mod_tag in string.punctuation:
@@ -179,8 +205,6 @@ class Converter():
             return '_'
         elif mod_tag == 'INTJ':
             return 'discourse'
-        elif mod_tag == 'TO':   #infinitival marker with marker relation
-            return 'mark'
 
         return 'rel-'+mod_tag
 
@@ -275,8 +299,8 @@ class Converter():
         return self.dg
 
 if __name__ == '__main__':
-    fileids = icepahc.fileids() # leave uncommented for whole corpus use
-    # fileids = ['1150.firstgrammar.sci-lin.psd'] # For debug use only
+    #fileids = icepahc.fileids() # leave uncommented for whole corpus use
+    fileids = ['2008.ofsi.nar-sag.psd'] # For debug use only
     c = Converter() # Creates instance of Converter class
     total_sents = 0
 
@@ -291,9 +315,9 @@ if __name__ == '__main__':
             try:
                 dep = c.create_dependency_graph(str(tree))
                 dep_c = dep.to_conllU()
-                # print(dep_c)
-                # print('# sent_id =', treeID)
-                # print(dep.to_conllU())
+                #print(dep_c)
+                print('# sent_id =', treeID)
+                print(dep.to_conllU())
             except:
                 error_num += 1
             file_sents += 1
