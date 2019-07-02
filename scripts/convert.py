@@ -46,7 +46,7 @@ class Converter():
             'IP-INF-1'      : {'dir':'r', 'rules':['VB']},
             'IP-INF-PRP'    : {'dir':'r', 'rules':['VB']},
             'IP-INF-PRP-PRN': {'dir':'r', 'rules':['VB']},
-            'IP-MAT'        : {'dir':'r', 'rules':['VB.*','RD.*', 'DO.*','N.*']}, 
+            'IP-MAT'        : {'dir':'r', 'rules':['VB.*','RD.*', 'DO.*', 'NP-1', 'N.*']}, 
             'IP-MAT-PRN'    : {'dir':'r', 'rules':['VB.*']},
             'IP-SUB'        : {'dir':'r', 'rules':['VB.*', 'DO.*', '.*', 'ADVP']},    #meira?
             'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*']},
@@ -69,7 +69,7 @@ class Converter():
             'NP-1'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.']},
             'NP-ADV'        : {'dir':'r', 'rules':['NP.*']},
             'NP-CMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
-            'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.']},
+            'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.']},   #viðurlag, appositive
             'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-N', 'ADJ-N', 'ES']},
             'NP-SBJ-1'      : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-N', 'ADJ-N', 'ES']},
             'NP-OB1'        : {'dir':'r', 'rules':['N-A', 'NPR-A', 'NS-A', 'ONE+Q-A']},
@@ -79,7 +79,7 @@ class Converter():
             'NP-POS'        : {'dir':'r', 'rules':['N.*', 'PRO-.']},
             'NP-COM'        : {'dir':'r', 'rules':[]},  #bara spor, hafa með?
             'NP-ADT'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
-            'NP-TMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
+            'NP-TMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},    #temporal NP
             'NP-MSR'        : {'dir':'r', 'rules':['NS-.', 'N-.']},
             'ADJP'          : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE']},
             'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},
@@ -87,6 +87,7 @@ class Converter():
             'PP-BY'         : {'dir':'r', 'rules':['P']},
             'PP-PRN'        : {'dir':'r', 'rules':['P']},
             'ADVP'          : {'dir':'r', 'rules':['ADV', 'WADV']},
+            'ADVP-1'        : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-DIR'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-LOC'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-TMP'      : {'dir':'r', 'rules':['ADV', 'WADV']},
@@ -153,15 +154,16 @@ class Converter():
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
             return {
                 'SBJ': 'nsubj',
+                'SBJ-1' : 'nsubj',
                 'OB1': 'dobj',
                 'OB2': 'iobj',
                 'OB3': 'iobj',
                 'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
             }.get(mod_func, 'rel')
-        elif mod_tag == 'N' and head_tag == 'NP':
-            return 'conj'
-        elif mod_tag == 'NPR' and head_tag == 'NP':     #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj? 
-            return 'dobj'
+#        elif mod_tag == 'N' and head_tag == 'NP':
+#            return 'conj'
+        elif mod_tag == 'NPR' and head_tag == 'NP':     #TODO: skoða betur, hliðstæð NPR, seinna er flat? 
+            return 'flat:name'
         elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj? 
             return 'dobj'
         elif mod_tag == 'D' or mod_tag == 'ONE':
@@ -182,12 +184,12 @@ class Converter():
         elif mod_tag in ['VAN', 'DAN', 'HAN']:
             return 'aux:pass'
         elif mod_tag in ['VBN', 'DON', 'HVN', 'RDN']:
-            return 'auxpass'
+            return 'aux:pass'
         elif mod_tag[0:2] in ['VB', 'DO', 'HV', 'RD', 'MD']: #todo
             return 'aux'
         elif mod_tag[0:2] == 'BE' or mod_tag == 'BAN':  #copular
             return 'cop'
-        elif mod_tag == 'RP' or mod_tag == 'FP': #todo, adverbial particles
+        elif mod_tag == 'RP' or mod_tag == 'FP': #todo, adverbial particles     #FP = focus particles
             return 'amod'
         elif mod_tag == 'CONJ':
             return 'cc'
