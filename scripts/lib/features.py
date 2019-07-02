@@ -495,11 +495,12 @@ def get_feats(leaf):
                     return verb_feats   
                 if UD_tag == 'ADP':
                     adp_feats = get_adp_feats(UD_tag)
-                    return adp_feats     
-                try:    
-                    tag_name = tag.split('-')[0]
-                except IndexError:
+                    return adp_feats
+                if '-' in tag:
+                    tag_name, tag_info = tag.split('-')
+                else:
                     tag_name = tag
+                    tag_info = '0'
                 if tag_name == 'NUM+NUM':
                     tag_name = re.sub('NUM\+NUM', 'NUM', tag_name)
                     UD_tag = 'NUM'
@@ -514,7 +515,6 @@ def get_feats(leaf):
                     UD_tag = 'PROPN'
                 if tag == 'RP-2':
                     tag = re.sub('-2', '', tag)
-                tag_info = tag.split('-')[1]
                 if tag_info == 'TTT':
                     tag_info = tag.split('-')[2]
                 if tag_name == 'NP':
