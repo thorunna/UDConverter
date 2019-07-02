@@ -128,7 +128,7 @@ class Converter():
         else:
             tree.set_id(tree[1].id()) # first from left indicated or no head rule index found
 
-        def _relation(self, mod_tag, head_tag):
+    def _relation(self, mod_tag, head_tag):
         """
             Return a Universal Relation name given an IcePaHC/Penn phrase-type tag
 
@@ -178,7 +178,7 @@ class Converter():
             return 'obl'        #NP sem er haus PP fær obl nominal
         elif mod_tag == 'P':
             return 'case'
-        elif mod_tag == 'ADVP' or mod_tag == 'NEG':
+        elif mod_tag == 'ADVP' or mod_tag == 'NEG' or mod_tag == 'RP' or mod_tag == 'FP':   #todo, adverbial particles     #ath. RP adverbial modifier?     #FP = focus particles
             # -DIR, -LOC, -TP
             return 'advmod'
         elif mod_tag[0:2] == 'VB' and head_tag == 'CP':
@@ -191,8 +191,6 @@ class Converter():
             return 'aux'
         elif mod_tag[0:2] == 'BE' or mod_tag == 'BAN':  #copular, TODO: ekki alltaf copular
             return 'cop'
-        elif mod_tag == 'RP' or mod_tag == 'FP': #todo, adverbial particles     #FP = focus particles
-            return 'amod'
         elif mod_tag == 'CONJ':
             return 'cc'
         elif mod_tag == 'CONJP':
