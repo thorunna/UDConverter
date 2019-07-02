@@ -275,12 +275,14 @@ feats = {
 #    'ADV' : {}      #no features possible for particles
 }
 
+"""
 def check_def(word):
     if word[-1] == '$':
         det = 'Definite=Def'
     else:
         det = 'Definite=Ind'
     return det
+"""
 
 def get_UD_tag(tag, word):
     # if ipsd_tag.beginswith('NPR'):
@@ -386,13 +388,18 @@ def get_feats_noun(lemma, token, UD_tag, tag_name, case):
         tag_name = re.sub('32', '', tag_name)
         tag_name = re.sub('33', '', tag_name)
     num = 'Number='+feats[UD_tag]['Number'][tag_name]
-    det = check_def(token)
-    token = token.replace('$', '')
+#    det = check_def(token)
+#    token = token.replace('$', '')
     try:
-        gender = 'Gender='+feats[UD_tag]['Gender'][DMII_data.check_DMII(DMII_no, token, lemma)[1]]
+        ID = DMII_data.check_DMII(DMII_no, token, lemma)
+        gender = 'Gender='+feats[UD_tag]['Gender'][ID[1]]
+        if ID[0].endswith('gr'):
+            det = 'Definite=Def'
+        else:
+            det = 'Definite=Ind' 
         return case+'|'+num+'|'+gender+'|'+det
     except (TypeError, IndexError):
-        return case+'|'+num+'|'+det+'*'
+        return case+'|'+num+'*'+'*'
 
 def get_feats_pron(UD_tag, case):
     for k, v in DMII_fn.items():
