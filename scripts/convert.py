@@ -46,15 +46,17 @@ class Converter():
             'IP-INF-1'      : {'dir':'r', 'rules':['VB']},
             'IP-INF-PRP'    : {'dir':'r', 'rules':['VB']},
             'IP-INF-PRP-PRN': {'dir':'r', 'rules':['VB']},
-            'IP-MAT'        : {'dir':'r', 'rules':['VB.*','RD.*', 'DO.*', 'NP-1', 'N.*']}, 
+            'IP-MAT'        : {'dir':'r', 'rules':['VB.*','RD.*', 'DO.*', 'NP-1', 'ADJP', 'N.*']}, 
             'IP-MAT-PRN'    : {'dir':'r', 'rules':['VB.*']},
-            'IP-SUB'        : {'dir':'r', 'rules':['VB.*', 'DO.*', '.*', 'ADVP']},    #meira?
+            'IP-SUB'        : {'dir':'r', 'rules':['VB.*', 'DO.*', 'NP-PRD', '.*', 'ADVP', 'ADJP']},    #meira?
             'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*']},
             'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*']},
             'IP-IMP'        : {'dir':'r', 'rules':['VB.*']},
             'IP-SMC'        : {'dir':'r', 'rules':['ADJP']},
             'IP-PPL'        : {'dir':'r', 'rules':[]},
             'CP-THT'        : {'dir':'r', 'rules':['IP-SUB.*','.*']},
+            'CP-THT-1'      : {'dir':'r', 'rules':['IP-SUB.*','.*']},
+            'CP-THT-SBJ'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},
             'CP-CAR'        : {'dir':'r', 'rules':['NP.*']},
             'CP-CLF'        : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-CMP'        : {'dir':'r', 'rules':['IP-SUB.*']},
@@ -75,7 +77,7 @@ class Converter():
             'NP-OB1'        : {'dir':'r', 'rules':['N-A', 'NPR-A', 'NS-A', 'ONE+Q-A']},
             'NP-OB2'        : {'dir':'r', 'rules':['NP.*', 'PRO-.', 'N-D', 'NS-D', 'NPR-.', 'CP-FRL', 'MAN-.']},    #MEIRA?
             'NP-OB3'        : {'dir':'r', 'rules':['PRO-D', 'N-D', 'NS-D', 'NPR-D']},
-            'NP-PRD'        : {'dir':'r', 'rules':['NP.*', 'NPR-N', 'N-.']},
+            'NP-PRD'        : {'dir':'r', 'rules':['N-.', 'NP.*', 'NPR-N']},
             'NP-POS'        : {'dir':'r', 'rules':['N.*', 'PRO-.']},
             'NP-COM'        : {'dir':'r', 'rules':[]},  #bara spor, hafa með?
             'NP-ADT'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
@@ -126,7 +128,7 @@ class Converter():
         else:
             tree.set_id(tree[1].id()) # first from left indicated or no head rule index found
 
-    def _relation(self, mod_tag, head_tag):
+        def _relation(self, mod_tag, head_tag):
         """
             Return a Universal Relation name given an IcePaHC/Penn phrase-type tag
 
@@ -183,11 +185,11 @@ class Converter():
             return 'ccomp'
         elif mod_tag in ['VAN', 'DAN', 'HAN']:
             return 'aux:pass'
-        elif mod_tag in ['VBN', 'DON', 'HVN', 'RDN']:
-            return 'aux:pass'
+        elif mod_tag in ['VBN', 'DON', 'HVN', 'RDN']:   #ath. VBN getur verið rót
+            return '?'
         elif mod_tag[0:2] in ['VB', 'DO', 'HV', 'RD', 'MD']: #todo
             return 'aux'
-        elif mod_tag[0:2] == 'BE' or mod_tag == 'BAN':  #copular
+        elif mod_tag[0:2] == 'BE' or mod_tag == 'BAN':  #copular, TODO: ekki alltaf copular
             return 'cop'
         elif mod_tag == 'RP' or mod_tag == 'FP': #todo, adverbial particles     #FP = focus particles
             return 'amod'
@@ -195,6 +197,8 @@ class Converter():
             return 'cc'
         elif mod_tag == 'CONJP':
             return 'conj'
+        elif mod_func == 'THT':     #TODO: too greedy
+            return 'ccomp'
         elif mod_tag == 'C' or mod_tag == 'CP' or mod_tag == 'TO':  #infinitival marker with marker relation
             return 'mark'
         elif mod_tag == 'ES':
@@ -284,6 +288,9 @@ class Converter():
             for child in t[i]:
                 mod_tag = child.label()
                 mod_nr = child.id()
+#                if head_nr == mod_nr and re.match("NP-PRD", head_tag):      #ath. virkar þetta rétt? Leið til að láta sagnfyllingu cop vera rót
+#                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
+#                    self.dg.root = self.dg.get_by_address(mod_nr)
                 if head_nr == mod_nr and re.match( "IP-.+|QTP|CP-.+|FRAG", head_tag):  #todo root phrase types from config
                     self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
                     self.dg.root = self.dg.get_by_address(mod_nr)
