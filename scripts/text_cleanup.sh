@@ -12,16 +12,15 @@ Script for cleaning IcePaHC corpus files (.psd)
  - Adds token/lemma for missing punctuations (, and .)
  - Replaces (, <dash/>) with (, ,-,)
  - Joins nouns with corresponding determiners (stýrimanns$ $ins -> stýrimannsins)
-Machine-specific paths must be un-commented before use
+Machine-specific paths must be specified before use
 '''
 
-# Paths
+# paths
 
 in_dir="./testing/corpora/icepahc-v0.9/psd_orig"
 out_dir="./testing/corpora/icepahc-v0.9/psd"
 
-
-# Create output directory
+# Create output directory if needed
 
 if [ ! -d $out_dir ];
   then
@@ -43,63 +42,60 @@ done
 for file in $out_dir/*; do
   echo "Working on file: ${file##*/}"
   # perl -pi -e 'undef $/; $_=<>; s/\( \((META|CODE|LATIN|QTP)(?:(?!\( \()[\w\W])*//g' $file
-  #Delete (CODE...)
+  # Delete (CODE...)
   sed -i "" 's/(CODE[ {}*<>a-zA-Z0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$_:-?/]*)//g' $file
-  #Delete (ID...))
+  # Delete (ID...))
   sed -i "" 's/(ID [0-9]*\.[A-Z]*[0-9]*\.[A-Z]*-[A-Z]*[,\.][0-9]*[,\.][0-9]*))//g' $file
-  #Delete lines which include (ID
-  #sed -i '/(ID/d' $file
-  #Delete every instance of '( '
+  # Delete lines which include (ID
+  # sed -i '/(ID/d' $file
+  # Delete every instance of '( '
   sed -i "" 's/^( //g' $file
-  #Delete lines which only include (. ?-?)), (. .-.)) or (" "-")) at the beginning of line
+  # Delete lines which only include (. ?-?)), (. .-.)) or (" "-")) at the beginning of line
   sed -i "" 's/^([\."] [\.?"]-[\.?"]))$//g' $file
-  #Include token and lemma for ',' and '.'
+  # Include token and lemma for ',' and '.'
   sed -i "" 's/(, -)/(, ,-,)/g' $file
   sed -i "" 's/(\. -)/(\. \.-\.)/g' $file
-  #Delete extra (, ---)
+  # Delete extra (, ---)
   sed -i "" 's/(, ---)//g' $file
-  #Delete extra (, ---)
+  # Delete extra (, ---)
   sed -i "" 's/(, -----)//g' $file
-  #Correct (. ---)
+  # Correct (. ---)
   sed -i "" 's/(\. ---)/(\. \.-\.)/g' $file
-  #Delete extra (- -)
+  # Delete extra (- -)
   sed -i "" 's/(- -)//g' $file
-  #Delete extra (- ---)
+  # Delete extra (- ---)
   sed -i "" 's/^(IP-MAT (- ---)/(IP-MAT/g' $file
-  #Delete extra (NUM-N -)
-  sed -i "" 's/(NUM-N -)//g' $file    #ath. --- í frumtextanum
-  #Replace <dash/> with proper notation
-  #sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file
-  #Delete empty spaces before (QTP
+  # Delete extra (NUM-N -)
+  sed -i "" 's/(NUM-N -)//g' $file    # ath. --- í frumtextanum
+  # Replace <dash/> with proper notation
+  # sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file
+  # Delete empty spaces before (QTP
   sed -i "" 's/^  (QTP/(QTP/g' $file
-  #Delete empty spaces before (IP-MAT
+  # Delete empty spaces before (IP-MAT
   sed -i "" 's/^  (IP-MAT/(IP-MAT/g' $file
-  #Delete empty spaces before (FRAG
+  # Delete empty spaces before (FRAG
   sed -i "" 's/^  (FRAG/(FRAG/g' $file
-  #Delete empty spaces before (CP-QUE
+  # Delete empty spaces before (CP-QUE
   sed -i "" 's/^  (CP-QUE/(CP-QUE/g' $file
-  #Delete empty spaces before (IP-IMP-SPE
+  # Delete empty spaces before (IP-IMP-SPE
   sed -i "" 's/^  (IP-IMP-SPE/(IP-IMP-SPE/g' $file
-  #Delete empty spaces before (LATIN
+  # Delete empty spaces before (LATIN
   sed -i "" 's/^  (LATIN/(LATIN/g' $file
-  #Delete empty spaces before (CP-EXL-SPE
+  # Delete empty spaces before (CP-EXL-SPE
   sed -i "" 's/^  (CP-EXL-SPE/(CP-EXL-SPE/g' $file
-  #Delete empty lines
-  sed -i "" '/^$/d' $file
-  sed -i "" '/^  $/d' $file
-  #Correct one instance of uneven parentheses
+  # Correct one instance of uneven parentheses
   sed -i "" 's/^(VAG sofandi\.-sofa))/(VAG sofandi\.-sofa)/g' $file
-  #Delete last character in file (uneven parentheses) NOTE only needed on some machines!!!
-  sed -i "" '$ s/.$//' $file
+  # Fix error in sentence 1350.BANDAMENNM.NAR-SAG,.886
+  sed -i "" 's/D-N $ðu/PRO-N $ðu/g' $file
+  # Fix error in sentence 1350.BANDAMENNM.NAR-SAG,.909
+  sed -i "" 's/D-N $tu/PRO-N $tu/g' $file
   # Join nouns and corresponding determiners
   python3 scripts/combine_NPs.py $file
+  # Delete empty lines
+  sed -i "" '/^$/d' $file
+  sed -i "" '/^  $/d' $file
+  # Delete last character in file (uneven parentheses) NOTE only needed on some machines!!!
+  sed -i "" '$ s/.$//' $file
 done
-
-#matt1="./testing/corpora/icepahc-v0.9/psd/ntmatthew01.psd"
-#matt2="./testing/corpora/icepahc-v0.9/psd/ntmatthew02.psd"
-#matt3="./testing/corpora/icepahc-v0.9/psd/ntmatthew02.psd"
-
-#sed -i "" 's/\.-\.)))/\.-\.))/g' $matt1 $matt2 $matt3
-#sed -i "" 's/,-,)))/,-,))/g' $matt1 $matt2 $matt3
 
   # sed -i "" 's/) //g' #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
