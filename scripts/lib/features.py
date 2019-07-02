@@ -295,8 +295,10 @@ def get_UD_tag(tag, word):
             return tags[tag]
         # elif tag.startswith('NUM') or tag.startswith('ONE'):
         #     return 'NUM'
-        elif tag[0:2] == 'DO' or tag[0:2] == 'DA' or tag[0:2] == 'HV':
+        elif tag[0:2] == 'DO' or tag[0:2] == 'DA' or tag[0:2] == 'RD' or tag[0:2] == 'RA':
             return 'VERB'       #ATH. merkt sem sögn í bili
+        elif tag[0:2] == 'BE' or tag[0:2] == 'BA' or tag[0:2] == 'HV' or tag[0:2] == 'HA' or tag[0:2] == 'MD' or tag[0:2] == 'MA':
+            return 'AUX'
         elif tag == 'CONJ' and word in cconj:
             return 'CCONJ'
         elif tag in string.punctuation:
