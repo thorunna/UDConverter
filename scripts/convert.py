@@ -31,13 +31,26 @@ class Converter():
         self.head_rules = {
             'IP-INF'        : {'dir':'r', 'rules':['VB']},
             'IP-INF-1'      : {'dir':'r', 'rules':['VB']},
+            'IP-INF-2'      : {'dir':'r', 'rules':['VB']},
+            'IP-INF-3'      : {'dir':'r', 'rules':['VB']},
+            'IP-INF=3'      : {'dir':'r', 'rules':['VB']},
+            'IP-INF-5'      : {'dir':'r', 'rules':['VB']},
+            'IP-INF-7'      : {'dir':'r', 'rules':['VB']},
             'IP-INF-PRP'    : {'dir':'r', 'rules':['VB']},      #tilgangsnafnháttur
+            'IP-INF-PRP-3'  : {'dir':'r', 'rules':['VB']},
             'IP-INF-PRP-PRN': {'dir':'r', 'rules':['VB']},
             'IP-INF-SPE'    : {'dir':'r', 'rules':['VB']},      #spe = direct speech
-#            'IP-INF-PRN'
-#            'IP-INF-PRN-2'
+            'IP-INF-SPE-1'  : {'dir':'r', 'rules':['VB']},
+            'IP-INF-SPE-2'  : {'dir':'r', 'rules':['VB']},
+            'IP-INF-PRN'    : {'dir':'r', 'rules':['VB']},
+            'IP-INF-PRN-1'  : {'dir':'r', 'rules':['VB']},
+            'IP-INF-PRN-2'  : {'dir':'r', 'rules':['VB']},
 #            'IP-INF-PRN-ELAB'
 #            'IP-INF-PRN-ELAB=2'
+            'IP-INF-SBJ'    : {'dir':'r', 'rules':['VB']},
+            'IP-INF-DEG'    : {'dir':'r', 'rules':['VB']},  #degree infinitive
+            'IP-INF-ADT'    : {'dir':'r', 'rules':['VB']},
+            'IP-INF-ADT-SPE': {'dir':'r', 'rules':['VB']},
             'IP-MAT'        : {'dir':'r', 'rules':['VB.*','RD.*', 'DO.*', 'NP-1', 'ADJP', 'VAN', 'N.*']}, 
             'IP-MAT-PRN'    : {'dir':'r', 'rules':['VB.*']},
             'IP-SUB'        : {'dir':'r', 'rules':['VB.*', 'DO.*', 'NP-PRD', '.*', 'ADVP', 'ADJP']},    #meira?
@@ -45,23 +58,23 @@ class Converter():
             'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*']},
             'IP-IMP'        : {'dir':'r', 'rules':['VB.']},    #imperative
             'IP-IMP-SPE'    : {'dir':'r', 'rules':['VB.']},
-            'IP-SMC'        : {'dir':'r', 'rules':['ADJP']},
-            'IP-PPL'        : {'dir':'r', 'rules':[]},
-            'CP-THT'        : {'dir':'r', 'rules':['IP-SUB.*','.*']},
+            'IP-SMC'        : {'dir':'r', 'rules':['ADJP']},    #small clause
+            'IP-PPL'        : {'dir':'r', 'rules':[]},  #lýsingarháttarsetning
+            'CP-THT'        : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #að
             'CP-THT-1'      : {'dir':'r', 'rules':['IP-SUB.*','.*']},
-            'CP-THT-SBJ'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},
-            'CP-CAR'        : {'dir':'r', 'rules':['NP.*']},
-            'CP-CLF'        : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-CMP'        : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-DEG'        : {'dir':'r', 'rules':[]},
-            'CP-FRL'        : {'dir':'r', 'rules':[]},
-            'CP-REL'        : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-QUE'        : {'dir':'r', 'rules':['IP-SUB.*']},
+            'CP-THT-SBJ'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #extraposed subject
+            'CP-CAR'        : {'dir':'r', 'rules':['IP-SUB.*']},    #clause-adjoined relatives
+            'CP-CLF'        : {'dir':'r', 'rules':['IP-SUB.*']},    #it-cleft
+            'CP-CMP'        : {'dir':'r', 'rules':['IP-SUB.*']},    #comparative clause
+            'CP-DEG'        : {'dir':'r', 'rules':[]},  #degree complements
+            'CP-FRL'        : {'dir':'r', 'rules':[]},  #free relative
+            'CP-REL'        : {'dir':'r', 'rules':['IP-SUB.*']},    #relative
+            'CP-QUE'        : {'dir':'r', 'rules':['IP-SUB.*']},    #question
             'CP-QUE-SPE'    : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-ADV'        : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-EOP'        : {'dir':'r', 'rules':['IP-INF']},
-            'CP-TMC'        : {'dir':'r', 'rules':['IP-INF']},
-            'NP'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.']},
+            'CP-EOP'        : {'dir':'r', 'rules':['IP-INF']},  #empty operator
+            'CP-TMC'        : {'dir':'r', 'rules':['IP-INF']},  #tough-movement
+            'NP'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*']},
             'NP-1'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.']},
             'NP-ADV'        : {'dir':'r', 'rules':['NP.*']},
             'NP-CMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
@@ -74,8 +87,8 @@ class Converter():
             'NP-PRD'        : {'dir':'r', 'rules':['N-.', 'NP.*']},
             'NP-SPR'        : {'dir':'r', 'rules':[]},   #secondary predicate
             'NP-POS'        : {'dir':'r', 'rules':['N.*', 'PRO-.']},
-            'NP-COM'        : {'dir':'r', 'rules':[]},  #bara spor, hafa með? ekki bara spor
-            'NP-ADT'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
+            'NP-COM'        : {'dir':'r', 'rules':['N.*', 'NP.*']},  #fylliliður N sem er ekki í ef.
+            'NP-ADT'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},    #instrumental NP
             'NP-TMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},    #temporal NP
             'NP-MSR'        : {'dir':'r', 'rules':['NS-.', 'N-.']},
             'NP-VOC'        : {'dir':'r', 'rules':['N-N']},
@@ -84,6 +97,8 @@ class Converter():
             'PP'            : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'P']},
             'PP-BY'         : {'dir':'r', 'rules':['P']},
             'PP-PRN'        : {'dir':'r', 'rules':['P']},
+            'WPP-1'         : {'dir':'r', 'rules':[]},
+            'WPP-2'         : {'dir':'r', 'rules':[]},
             'ADVP'          : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-1'        : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-DIR'      : {'dir':'r', 'rules':['ADV', 'WADV']},
@@ -159,7 +174,10 @@ class Converter():
                 'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
                 'VOC': 'vocative',
                 'PRD': '?',
-                'PRN': 'appos'
+                'SPR': '?',
+                'PRN': 'appos',
+                'COM': 'nmod',
+                'ADT': 'obl'    #ATH. rétt?
             }.get(mod_func, 'rel')
 #        elif mod_tag == 'N' and head_tag == 'NP':
 #            return 'conj'
@@ -167,7 +185,7 @@ class Converter():
             return 'flat:name'
         elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj? 
             return 'obj'
-        elif mod_tag == 'D' or mod_tag == 'ONE':
+        elif mod_tag == 'D' or mod_tag == 'ONE' or mod_tag == 'OTHER':
             return 'det'
         elif mod_tag == 'ADJP' or mod_tag == 'ADJ' or mod_tag == 'Q':
             # -SPR (secondary predicate)
@@ -186,6 +204,7 @@ class Converter():
                 'INF-1': '',
                 'INF-PRP': 'advcl',
                 'INF-PRP-PRN': '',
+                'INF-PRN': 'xcomp', #ADVCL?
                 'INF-SPE': 'xcomp'  #ATH. réttur merkimiði?
             }.get(mod_func, 'rel')
         elif mod_tag[0:2] == 'VB' and head_tag == 'CP':
@@ -207,7 +226,13 @@ class Converter():
         elif mod_tag == 'CP':
             return {
                 'THT': 'advcl',    
-                'ADV': 'advcl'
+                'ADV': 'advcl',
+                'REL': 'acl:relcl',
+                'CAR': 'acl:relcl',
+                'CLF': 'acl:relcl',
+                'CMP': 'ccomp',      #ATH. rétt?
+                'DEG': 'ccomp',      #ATH. rétt?
+                'FRL': 'ccomp'      #ATH. rétt?
             }.get(mod_func, 'rel')
 #        elif mod_func == 'THT':     #TODO: too greedy
 #            return 'ccomp'
@@ -221,7 +246,7 @@ class Converter():
             return 'punct'
         elif mod_tag in ['FW', 'X', 'LATIN']:    #meira?
             return '_'
-        elif mod_tag == 'INTJ':
+        elif mod_tag == 'INTJ' or mod_tag == 'INTJP':
             return 'discourse'
 
         return 'rel-'+mod_tag
