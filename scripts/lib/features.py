@@ -513,6 +513,9 @@ def get_feats(leaf):
                 if tag_name == 'NPR+NS':
                     tag_name = re.sub('\+NS', '', tag_name)
                     UD_tag = 'PROPN'
+                if tag_name == 'ONE+Q':
+                    tag_name = re.sub('ONE\+', '', tag_name)
+                    UD_tag == 'ADJ'
                 if tag == 'RP-2':
                     tag = re.sub('-2', '', tag)
                 if tag_info == 'TTT':
