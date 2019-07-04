@@ -23,6 +23,8 @@ tags = {
     # ipsd_tag : UD_tag
     'N' : 'NOUN',   # generalized nouns tagged as NOUN
     'D' : 'DET',    # generalized determiners tagged as DET (determiner)
+    'ONE' : 'DET',  #ath. áður taggað sem NUM
+    'ONES' : 'DET',
     'P' : 'ADP',    # generalized prepositions tagged as ADP
     'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
     'RPX' : 'ADP', 
@@ -45,7 +47,6 @@ tags = {
     'SUCH' : 'PRON',
     'ES' : 'PRON',  #expletive tagged as PRON
     'NUM' : 'NUM',
-    'ONE' : 'NUM',
     'ADJ' : 'ADJ',  # Adjectives tagged as ADV
     'ADJR' : 'ADJ', # Comparative adjectives tagged as ADV
     'ADJS' : 'ADJ', # Superlative adjectives tagged as ADV
