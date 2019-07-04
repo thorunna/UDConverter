@@ -48,7 +48,7 @@ class Converter():
             'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*']},
             'IP-IMP'        : {'dir':'r', 'rules':['VB.']},    #imperative
             'IP-IMP-SPE'    : {'dir':'r', 'rules':['VB.']},
-            'IP-SMC'        : {'dir':'r', 'rules':['ADJP']},    #small clause
+            'IP-SMC'        : {'dir':'r', 'rules':['IP-INF-SBJ', 'ADJP', 'NP']},    #small clause
             'IP-PPL'        : {'dir':'r', 'rules':[]},  #lýsingarháttarsetning
             'CP-THT'        : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #að
             'CP-THT-SBJ'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #extraposed subject
@@ -63,23 +63,23 @@ class Converter():
             'CP-ADV'        : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-EOP'        : {'dir':'r', 'rules':['IP-INF']},  #empty operator
             'CP-TMC'        : {'dir':'r', 'rules':['IP-INF']},  #tough-movement
-            'NP'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*']},
+            'NP'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*', 'MAN-.']},
             'NP-ADV'        : {'dir':'r', 'rules':['NP.*']},
-            'NP-CMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},
-            'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.']},   #viðurlag, appositive
-            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-N', 'ADJ-N', 'ES']},
-            'NP-OB1'        : {'dir':'r', 'rules':['N-A', 'NPR-A', 'NS-A', 'ONE+Q-A']},
+            'NP-CMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'MAN-.']},
+            'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.']},   #viðurlag, appositive
+            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-N', 'ADJ-N', 'MAN-N']},
+            'NP-OB1'        : {'dir':'r', 'rules':['N-A', 'NPR-A', 'NS-A', 'ONE+Q-A', 'MAN-A']},
             'NP-OB2'        : {'dir':'r', 'rules':['NP.*', 'PRO-.', 'N-D', 'NS-D', 'NPR-.', 'CP-FRL', 'MAN-.']},    #MEIRA?
-            'NP-OB3'        : {'dir':'r', 'rules':['PRO-D', 'N-D', 'NS-D', 'NPR-D']},
+            'NP-OB3'        : {'dir':'r', 'rules':['PRO-D', 'N-D', 'NS-D', 'NPR-D', 'MAN-.']},
             'NP-PRD'        : {'dir':'r', 'rules':['N-.', 'NP.*']},     #sagnfylling copulu
             'NP-SPR'        : {'dir':'r', 'rules':[]},   #secondary predicate
-            'NP-POS'        : {'dir':'r', 'rules':['N.*', 'PRO-.']},
+            'NP-POS'        : {'dir':'r', 'rules':['N.*', 'PRO-.', 'MAN-.']},
             'NP-COM'        : {'dir':'r', 'rules':['N.*', 'NP.*']},  #fylliliður N sem er ekki í ef.
-            'NP-ADT'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.']},    #instrumental NP
-            'NP-TMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'ADJ-.']},    #temporal NP
+            'NP-ADT'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'MAN-.']},    #instrumental NP
+            'NP-TMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'ADJ-.', 'NUM-.']},    #temporal NP
             'NP-MSR'        : {'dir':'r', 'rules':['NS-.', 'N-.']},
-            'NP-VOC'        : {'dir':'r', 'rules':['N-N']},
-            'ADJP'          : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE']},
+            'NP-VOC'        : {'dir':'r', 'rules':['N-N', 'MAN-N']},
+            'ADJP'          : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE', 'ONES']},
             'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},
             'PP'            : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'P']},
             'PP-BY'         : {'dir':'r', 'rules':['P']},
@@ -149,7 +149,11 @@ class Converter():
         else:
             head_func = None
 
-        if mod_tag == 'NP':
+#        if mod_tag == 'NP' and mod_func == 'SBJ-1':
+#            return 'expl'
+        if head_tag == 'NP' and head_func == 'SBJ-1':       #TODO: finna aðra lausn til að merkja expl
+            return 'expl'
+        elif mod_tag == 'NP':
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
             return {
                 'SBJ': 'nsubj',
@@ -168,23 +172,25 @@ class Converter():
             }.get(mod_func, 'rel')
 #        elif mod_tag == 'N' and head_tag == 'NP':
 #            return 'conj'
-        elif mod_tag == 'NPR' and head_tag == 'NP':     #TODO: skoða betur, hliðstæð NPR, seinna er flat? 
+        elif mod_tag == 'NPR' and head_tag == 'NP': 
             return 'flat:name'
-        elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj? 
-            return 'obj'
-        elif mod_tag == 'D' or mod_tag == 'ONE' or mod_tag == 'OTHER':
+#        elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj? 
+#            return 'obj'
+        elif mod_tag == 'D' or mod_tag == 'ONE' or mod_tag == 'ONES' or mod_tag == 'OTHER' or mod_tag == 'OTHERS':
             return 'det'
         elif mod_tag == 'ADJP' or mod_tag == 'ADJ' or mod_tag == 'Q':
             # -SPR (secondary predicate)
             return 'amod'
         elif mod_tag == 'PP':
             # -BY, -PRN
-            return 'obl'        #NP sem er haus PP fær obl nominal  #TODO: haus CP-ADV á að vera merktur advcl
+            return 'obl'        #NP sem er haus PP fær obl nominal  #TODO: haus CP-ADV (sem er PP) á að vera merktur advcl
         elif mod_tag == 'P':
             return 'case'
-        elif mod_tag == 'ADVP' or mod_tag == 'ADV' or mod_tag == 'NEG' or mod_tag == 'RP' or mod_tag == 'FP':   #todo, adverbial particles     #ath. RP adverbial modifier?     #FP = focus particles
+        elif mod_tag == 'ADVP' or mod_tag == 'ADV' or mod_tag == 'NEG' or mod_tag == 'FP':    #FP = focus particles
             # -DIR, -LOC, -TP
             return 'advmod'
+        elif mod_tag == 'RP':
+            return 'compound:prt'
         elif mod_tag == 'IP':
             return {
                 'INF': '',
@@ -206,7 +212,7 @@ class Converter():
             return 'cop'
         elif mod_tag == 'CONJ':
             return 'cc'
-        elif mod_tag == 'CONJP':
+        elif mod_tag == 'CONJP' or mod_tag == 'N':      #N: tvö N í einum NP tengd með CONJ
             return 'conj'
 #        elif mod_tag == 'CP' and mod_func == 'ADV':
 #            return 'VIRKAR'
@@ -226,10 +232,10 @@ class Converter():
 #            return 'ccomp'
         elif mod_tag == 'C' or mod_tag == 'CP' or mod_tag == 'TO' or mod_tag == 'WQ':  #infinitival marker with marker relation
             return 'mark'
-        elif mod_tag == 'ES':
-            return 'expl'
         elif mod_tag == 'NUM':
             return 'nummod'
+        elif mod_tag == 'FRAG':
+            return 'xcomp'
         elif mod_tag in string.punctuation:
             return 'punct'
         elif mod_tag in ['FW', 'X', 'LATIN']:    #meira?
