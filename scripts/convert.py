@@ -45,13 +45,16 @@ class Converter():
             'IP-MAT-PRN'    : {'dir':'r', 'rules':['VB.*']},
             'IP-SUB'        : {'dir':'r', 'rules':['IP-INF.*', 'VB.*', 'DO.*', 'NP-PRD', 'RD.*', 'ADVP', 'ADJP', 'IP-SUB']},    #meira?
             'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*']},
+            'IP-SUB-PRN=4'  : {'dir':'r', 'rules':['VB.*']},
             'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*']},
             'IP-IMP'        : {'dir':'r', 'rules':['VB.']},    #imperative
             'IP-IMP-SPE'    : {'dir':'r', 'rules':['VB.']},
-            'IP-SMC'        : {'dir':'r', 'rules':['IP-INF-SBJ', 'ADJP', 'NP']},    #small clause
+            'IP-SMC'        : {'dir':'r', 'rules':['IP-INF-SBJ', 'ADJP', 'NP.*']},    #small clause
             'IP-PPL'        : {'dir':'r', 'rules':[]},  #lýsingarháttarsetning
             'CP-THT'        : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #að
+            'CP-THT-1'      : {'dir':'r', 'rules':['IP-SUB.*','.*']},
             'CP-THT-SBJ'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #extraposed subject
+            'CP-THT-PRN'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},
             'CP-CAR'        : {'dir':'r', 'rules':['IP-SUB.*']},    #clause-adjoined relatives
             'CP-CLF'        : {'dir':'r', 'rules':['IP-SUB.*']},    #it-cleft
             'CP-CMP'        : {'dir':'r', 'rules':['IP-SUB.*']},    #comparative clause
@@ -71,30 +74,31 @@ class Converter():
             'NP-OB1'        : {'dir':'r', 'rules':['N-A', 'NPR-A', 'NS-A', 'ONE+Q-A', 'MAN-A']},
             'NP-OB2'        : {'dir':'r', 'rules':['NP.*', 'PRO-.', 'N-D', 'NS-D', 'NPR-.', 'CP-FRL', 'MAN-.']},    #MEIRA?
             'NP-OB3'        : {'dir':'r', 'rules':['PRO-D', 'N-D', 'NS-D', 'NPR-D', 'MAN-.']},
-            'NP-PRD'        : {'dir':'r', 'rules':['N-.', 'NP.*']},     #sagnfylling copulu
+            'NP-PRD'        : {'dir':'r', 'rules':['N-.', 'NS.*', 'NP.*']},     #sagnfylling copulu
             'NP-SPR'        : {'dir':'r', 'rules':[]},   #secondary predicate
             'NP-POS'        : {'dir':'r', 'rules':['N.*', 'PRO-.', 'MAN-.']},
             'NP-COM'        : {'dir':'r', 'rules':['N.*', 'NP.*']},  #fylliliður N sem er ekki í ef.
             'NP-ADT'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'MAN-.']},    #instrumental NP
             'NP-TMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'ADJ-.', 'NUM-.']},    #temporal NP
             'NP-MSR'        : {'dir':'r', 'rules':['NS-.', 'N-.']},
-            'NP-VOC'        : {'dir':'r', 'rules':['N-N', 'MAN-N']},
+            'NP-VOC'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'MAN-N']},
             'ADJP'          : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE', 'ONES']},
             'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},
             'PP'            : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'P']},
             'PP-BY'         : {'dir':'r', 'rules':['P']},
             'PP-PRN'        : {'dir':'r', 'rules':['CP-ADV', 'P']},
+            'PP-LFD'        : {'dir':'r', 'rules':['CP-ADV']},
             'ADVP'          : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-DIR'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-LOC'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-TMP'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'WADVP'         : {'dir':'r', 'rules':[]},
-            'RP'            : {'dir':'r', 'rules':[]},  #tagg fyrir orð en ekki phrase type?
             'CONJP'         : {'dir':'l', 'rules':['NP.*', 'NX' 'CONJ']},
             'WNP'           : {'dir':'r', 'rules':['WPRO-.', 'PRO-.']}, #MEIRA?
             'WPP'           : {'dir':'r', 'rules':['WNP', 'NP']},
             'NX'            : {'dir':'r', 'rules':['N-.']},
-            'FRAG-LFD'      : {'dir':'r', 'rules':['IP-SMC']}
+            'FRAG-LFD'      : {'dir':'r', 'rules':['IP-SMC']},
+            'QP'            : {'dir':'r', 'rules':['Q-.']}
             }
 
     def _select_head(self, tree):
@@ -163,7 +167,7 @@ class Converter():
                 'OB3': 'iobj',
                 'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
                 'VOC': 'vocative',
-                'PRD': '?',
+                'PRD': '?',     #sagnfylling, predicate
                 'SPR': '?',
                 'PRN': 'appos',
                 'COM': 'nmod',
@@ -186,7 +190,7 @@ class Converter():
             return 'obl'        #NP sem er haus PP fær obl nominal  #TODO: haus CP-ADV (sem er PP) á að vera merktur advcl
         elif mod_tag == 'P':
             return 'case'
-        elif mod_tag == 'ADVP' or mod_tag == 'ADV' or mod_tag == 'NEG' or mod_tag == 'FP':    #FP = focus particles
+        elif mod_tag == 'ADVP' or mod_tag == 'ADV' or mod_tag == 'NEG' or mod_tag == 'FP' or mod_tag == 'QP':    #FP = focus particles  #QP = quantifier phrase - ATH.
             # -DIR, -LOC, -TP
             return 'advmod'
         elif mod_tag == 'RP':
@@ -218,7 +222,9 @@ class Converter():
 #            return 'VIRKAR'
         elif mod_tag == 'CP':
             return {
-                'THT': 'advcl',    
+                'THT': 'ccomp',    
+                'THT-1': 'ccomp',   
+                'THT-PRN': 'ccomp', 
                 'ADV': 'advcl',
                 'REL': 'acl:relcl',
                 'CAR': 'acl:relcl',
