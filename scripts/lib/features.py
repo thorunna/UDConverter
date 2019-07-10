@@ -370,7 +370,7 @@ def feats_verb_else(lemma, token, tag, UD_tag):
         person = 'Person='+feats[UD_tag]['Person'][ID.split('-')[3]]
         num = 'Number='+feats[UD_tag]['Number'][ID.split('-')[4]]
         return person+'|'+num+'|'+mood+'|'+tense+'|'+voice        #TODO: finna orð í BÍN með hjálp tense og mood
-    except (TypeError, KeyError):   #ef orð finnst ekki í BÍN eru upplýsingar frá Icepahc notaðar
+    except (TypeError, KeyError, IndexError):   #ef orð finnst ekki í BÍN eru upplýsingar frá Icepahc notaðar
         if tag[2] == 'D':
             tense = 'Tense='+feats[UD_tag]['Tense']['ÞT']
         elif tag[2] == 'P':
