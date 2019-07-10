@@ -29,7 +29,8 @@ class Converter():
         self.t = None
         self.dg = None
         self.head_rules = {
-            'IP-INF'        : {'dir':'r', 'rules':['VB']},
+            'IP-INF'        : {'dir':'r', 'rules':['VB', 'DO']},
+            'IP-INF-1'      : {'dir':'r', 'rules':['VB']},
             'IP-INF=3'      : {'dir':'r', 'rules':['VB']},
             'IP-INF-PRP'    : {'dir':'r', 'rules':['VB']},      #tilgangsnafnháttur
             'IP-INF-PRP-PRN': {'dir':'r', 'rules':['VB']},
@@ -41,40 +42,58 @@ class Converter():
             'IP-INF-DEG'    : {'dir':'r', 'rules':['VB']},  #degree infinitive
             'IP-INF-ADT'    : {'dir':'r', 'rules':['VB']},
             'IP-INF-ADT-SPE': {'dir':'r', 'rules':['VB']},
-            'IP-MAT'        : {'dir':'r', 'rules':['VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
-            'IP-MAT-1'      : {'dir':'r', 'rules':['VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'VAN', 'NP-PRD', 'ADJP', 'N.*', 'IP-SMC', 'IP-MAT-1']},
-            'IP-MAT=1'      : {'dir':'r', 'rules':['VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC']}, 
+            'IP-MAT'        : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
+            'IP-MAT-1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'VAN', 'NP-PRD', 'ADJP', 'N.*', 'IP-SMC', 'IP-MAT-1']},
+            'IP-MAT=1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC']}, 
             'IP-MAT-PRN'    : {'dir':'r', 'rules':['VB.*']},
-            'IP-SUB'        : {'dir':'r', 'rules':['IP-INF.*', 'VB.*', 'DO.*', 'DAN', 'NP-PRD', 'RD.*', 'ADVP', 'ADJP', 'IP-SUB', 'NP-PRD']},    #meira?
+            'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
+#            'IP-SUB'        : {'dir':'r', 'rules':['IP-INF.*', 'VB', 'VB.*', 'DO.*', 'DAN', 'NP-PRD', 'RD.*', 'ADVP', 'ADJP', 'IP-SUB', 'NP-PRD']},    #meira?
+            'IP-SUB'        : {'dir':'r', 'rules':['ADJP', 'IP-INF.*', 'VB', 'VB.*', 'DO.*', 'DAN', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB', 'NP-2', 'HVN']},
+            'IP-SUB-4'      : {'dir':'r', 'rules':['ADJP', 'IP-INF.*', 'VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB', 'NP-2', 'HVN']},
             'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*']},
-            'IP-SUB-PRN=4'  : {'dir':'r', 'rules':['VB.*']},
+            'IP-SUB-PRN=4'  : {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*']},
             'IP-IMP'        : {'dir':'r', 'rules':['VB.']},    #imperative
             'IP-IMP-SPE'    : {'dir':'r', 'rules':['VB.']},
             'IP-SMC'        : {'dir':'r', 'rules':['IP-INF-SBJ', 'ADJP', 'NP.*', 'NP-PRD']},    #small clause
-            'IP-PPL'        : {'dir':'r', 'rules':[]},  #lýsingarháttarsetning
+            'IP-PPL'        : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},  #lýsingarháttarsetning
             'CP-THT'        : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #að
             'CP-THT-1'      : {'dir':'r', 'rules':['IP-SUB.*','.*']},
             'CP-THT-SBJ'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #extraposed subject
             'CP-THT-PRN'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},
+            'CP-THT-PRN-1'  : {'dir':'r', 'rules':['IP-SUB.*','.*']},
+            'CP-THT-PRN-2'  : {'dir':'r', 'rules':['IP-SUB.*','.*']},
             'CP-CAR'        : {'dir':'r', 'rules':['IP-SUB.*']},    #clause-adjoined relatives
             'CP-CLF'        : {'dir':'r', 'rules':['IP-SUB.*']},    #it-cleft
             'CP-CMP'        : {'dir':'r', 'rules':['IP-SUB.*']},    #comparative clause
-            'CP-DEG'        : {'dir':'r', 'rules':[]},  #degree complements
-            'CP-FRL'        : {'dir':'r', 'rules':[]},  #free relative
+            'CP-DEG'        : {'dir':'r', 'rules':['IP-SUB.*']},  #degree complements
+            'CP-DEG-1'      : {'dir':'r', 'rules':['IP-SUB.*']},
+            'CP-DEG-2'      : {'dir':'r', 'rules':['IP-SUB.*']},
+            'CP-FRL'        : {'dir':'r', 'rules':['IP-SUB.*']},  #free relative
             'CP-REL'        : {'dir':'r', 'rules':['IP-SUB.*']},    #relative
+            'CP-REL-1'      : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-QUE'        : {'dir':'r', 'rules':['IP-SUB.*']},    #question
+            'CP-QUE-1'      : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-QUE-SPE'    : {'dir':'r', 'rules':['IP-SUB.*']},
+            'CP-QUE-ADV'    : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-ADV'        : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-EOP'        : {'dir':'r', 'rules':['IP-INF']},  #empty operator
+            'CP-EOP-1'      : {'dir':'r', 'rules':['IP-INF']},
             'CP-TMC'        : {'dir':'r', 'rules':['IP-INF']},  #tough-movement
+            'CP-TMC-3'      : {'dir':'r', 'rules':['IP-INF']},
             'NP'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*', 'MAN-.', 'OTHER-.']},
             'NP-1'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*', 'MAN-.', 'OTHER-.']},
+            'NP-2'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*', 'MAN-.', 'OTHER-.']},
+            'NP-4'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*', 'MAN-.', 'OTHER-.']},
             'NP-ADV'        : {'dir':'r', 'rules':['NP.*']},
             'NP-CMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'MAN-.', 'OTHER-.']},
             'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},   #viðurlag, appositive
-            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-N', 'ADJ-N', 'MAN-N', 'OTHER-.']},
-            'NP-OB1'        : {'dir':'r', 'rules':['N-A', 'NPR-A', 'NS-A', 'ONE+Q-A', 'MAN-A', 'OTHER-.']},
+            'NP-PRN-3'      : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
+            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
+            'NP-SBJ-1'      : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
+            'NP-SBJ-2'      : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
+            'NP-SBJ-4'      : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
+            'NP-OB1'        : {'dir':'r', 'rules':['N-.', 'NPR-A', 'NS-.', 'ONE+Q-A', 'MAN-A', 'OTHER-.', 'PRO-.']},
             'NP-OB2'        : {'dir':'r', 'rules':['NP.*', 'PRO-.', 'N-D', 'NS-D', 'NPR-.', 'CP-FRL', 'MAN-.', 'OTHER-.']},    #MEIRA?
             'NP-OB3'        : {'dir':'r', 'rules':['PRO-D', 'N-D', 'NS-D', 'NPR-D', 'MAN-.', 'OTHER-.']},
             'NP-PRD'        : {'dir':'r', 'rules':['N-.', 'NS.*', 'NP.*', 'OTHER-.']},     #sagnfylling copulu
@@ -86,8 +105,11 @@ class Converter():
             'NP-MSR'        : {'dir':'r', 'rules':['NS-.', 'N-.', 'Q-.', 'QS-.', 'QR-.', 'OTHER-.']},
             'NP-VOC'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'MAN-N', 'OTHER-.']},
             'ADJP'          : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE', 'ONES']},
+            'ADJP-1'        : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE', 'ONES']},
             'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},
-            'PP'            : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'P']},
+            'PP'            : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'ADJP', 'P']},
+            'PP-1'          : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'ADJP', 'P']},
+            'PP-2'          : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'ADJP', 'P']},
             'PP-BY'         : {'dir':'r', 'rules':['P']},
             'PP-PRN'        : {'dir':'r', 'rules':['CP-ADV', 'P']},
             'PP-LFD'        : {'dir':'r', 'rules':['CP-ADV']},
@@ -95,12 +117,22 @@ class Converter():
             'ADVP-DIR'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-LOC'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-TMP'      : {'dir':'r', 'rules':['ADV', 'WADV']},
-            'WADVP'         : {'dir':'r', 'rules':[]},
+            'ADVP-RSP'      : {'dir':'r', 'rules':['ADV', 'WADV']},
+            'ADVP-TMP-RSP'  : {'dir':'r', 'rules':['ADV', 'WADV']},
+            'WADVP'         : {'dir':'r', 'rules':['WADV']},
+            'WADVP-1'       : {'dir':'r', 'rules':['WADV']},
+            'WADVP-2'       : {'dir':'r', 'rules':['WADV']},
+            'WADVP-3'       : {'dir':'r', 'rules':['WADV']},
             'CONJP'         : {'dir':'l', 'rules':['NP.*', 'NX' 'CONJ']},
             'WNP'           : {'dir':'r', 'rules':['WPRO-.', 'PRO-.']}, #MEIRA?
+            'WNP-1'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.']},
+            'WNP-2'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.']},
+            'WNP-3'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.']},
+            'WNP-4'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.']},
             'WPP'           : {'dir':'r', 'rules':['WNP', 'NP']},
             'NX'            : {'dir':'r', 'rules':['N-.']},
             'FRAG-LFD'      : {'dir':'r', 'rules':['IP-SMC']},
+            'FRAG'          : {'dir':'r', 'rules':['NP']}
             'QP'            : {'dir':'r', 'rules':['Q-.', 'QS-.', 'QR-.']}
             }
 
@@ -109,7 +141,7 @@ class Converter():
 
         '''
         tag_orig = str(tree.label())
-        tag = re.sub('-\d\+', '', tag_orig)
+        tag = re.sub('-\d\+', '', tag_orig)     #TODO: virkar ekki
         head_rule = self.head_rules.get(tag, {'dir':'r', 'rules':['.*']})  #default rule, first from left
         rules = head_rule['rules']
         dir = head_rule['dir']
@@ -150,8 +182,14 @@ class Converter():
             mod_tag, mod_func = mod_tag.split('-', 1) #todo, handle more than one function label
         else:
             mod_func = None
-        if mod_func == '1':
+        if mod_func in {'0', '1', '2', '3', '4', '5', '6'}:     #TODO: virkar ekki
             mod_func = None
+#        elif '-' in mod_func:
+#            mod_func, mod_3 = mod_func.split('-', 1)
+#            if mod_3 in {'0', '1', '2', '3', '4', '5', '6'}:
+#                mod_3 = None
+#        else:
+#            mod_3 = None
 
         if '-' in head_tag:
             head_tag, head_func = head_tag.split('-', 1)
@@ -162,32 +200,40 @@ class Converter():
 #            return 'expl'
         if head_tag == 'NP' and head_func == 'SBJ-1':       #TODO: finna aðra lausn til að merkja expl
             return 'expl'
-        elif mod_tag == 'NP':
+        elif mod_tag == 'NP':   #TODO: hvað ef mod_tag er bara NP?
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
             return {
                 'SBJ': 'nsubj',
                 'SBJ-1' : 'nsubj',
+                'SBJ-2' : 'nsubj',
+                'SBJ-4' : 'nsubj',
                 'OB1': 'obj',
                 'OB2': 'iobj',
                 'OB3': 'iobj',
                 'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
                 'VOC': 'vocative',
-                'PRD': 'root',    #sagnfylling, predicate
+                'PRD': '?',    #sagnfylling, predicate
                 'SPR': '?',
                 'PRN': 'appos',
+                'PRN-3': 'appos',
                 'COM': 'nmod',
                 'ADT': 'obl',    #ATH. rétt?
                 'TMP': 'advmod',  #ATH. rétt?
-#                '1'  : '?',
-                'MSR': 'amod'   #measure phrase
+                '1'  : '?',
+                '2': '?',
+                '4': '?',
+                'MSR': 'amod',   #measure phrase
+                'ADV': '?'
             }.get(mod_func, 'rel')
 #        elif mod_tag == 'N' and head_tag == 'NP':
 #            return 'conj'
+        elif mod_tag == 'NS' or mod_tag == 'N' and head_tag == 'NP':    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
+            return 'conj'
         elif mod_tag == 'NPR' and head_tag == 'NP': 
             return 'flat:name'
 #        elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj? 
 #            return 'obj'
-        elif mod_tag == 'D' or mod_tag == 'ONE' or mod_tag == 'ONES' or mod_tag == 'OTHER' or mod_tag == 'OTHERS':
+        elif mod_tag == 'D' or mod_tag == 'ONE' or mod_tag == 'ONES' or mod_tag == 'OTHER' or mod_tag == 'OTHERS' or mod_tag == 'SUCH':
             return 'det'
         elif mod_tag == 'ADJP' or mod_tag == 'ADJ' or mod_tag == 'Q' or mod_tag == 'QR' or mod_tag == 'QS':
             # -SPR (secondary predicate)
@@ -197,19 +243,21 @@ class Converter():
             return 'obl'        #NP sem er haus PP fær obl nominal  #TODO: haus CP-ADV (sem er PP) á að vera merktur advcl
         elif mod_tag == 'P':
             return 'case'
-        elif mod_tag == 'ADVP' or mod_tag == 'ADV' or mod_tag == 'NEG' or mod_tag == 'FP' or mod_tag == 'QP':    #FP = focus particles  #QP = quantifier phrase - ATH.
+        elif mod_tag == 'ADVP' or mod_tag == 'ADV' or mod_tag == 'ADVR' or mod_tag == 'ADVS' or mod_tag == 'NEG' or mod_tag == 'FP' or mod_tag == 'QP' or mod_tag == 'ALSO':    #FP = focus particles  #QP = quantifier phrase - ATH.
             # -DIR, -LOC, -TP
             return 'advmod'
         elif mod_tag == 'RP':
             return 'compound:prt'
         elif mod_tag == 'IP':
             return {
-                'INF': '',
+                'INF': 'ccomp', #?
                 'INF-1': '',
                 'INF-PRP': 'advcl',
                 'INF-PRP-PRN': '',
                 'INF-PRN': 'xcomp', #ADVCL?
-                'INF-SPE': 'xcomp'  #ATH. réttur merkimiði?
+                'INF-SPE': 'xcomp',  #ATH. réttur merkimiði?
+                'PPL': 'advcl',  #?
+                'SUB-PRN=4': 'aux:pass'     #sérstakt dæmi
             }.get(mod_func, 'rel')
         elif mod_tag[0:2] == 'VB' and head_tag == 'CP':
             return 'ccomp'
@@ -232,11 +280,12 @@ class Converter():
                 'THT': 'ccomp',    
                 'THT-1': 'ccomp',   
                 'THT-PRN': 'ccomp', 
+                'THT-PRN-1': 'ccomp',
                 'ADV': 'advcl',
                 'REL': 'acl:relcl',
                 'CAR': 'acl:relcl',
                 'CLF': 'acl:relcl',
-                'CMP': 'ccomp',      #ATH. rétt?
+                'CMP': 'advcl',      #ATH. rétt?
                 'DEG': 'ccomp',      #ATH. rétt?
                 'FRL': 'ccomp',      #ATH. rétt?
                 'QUE': 'ccomp'
