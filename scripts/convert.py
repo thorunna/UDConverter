@@ -44,7 +44,7 @@ class Converter():
             'IP-INF-ADT-SPE': {'dir':'r', 'rules':['VB']},
             'IP-MAT'        : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
             'IP-MAT-1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'VAN', 'NP-PRD', 'ADJP', 'N.*', 'IP-SMC', 'IP-MAT-1']},
-            'IP-MAT=1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC']}, 
+            'IP-MAT=1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC']},
             'IP-MAT-PRN'    : {'dir':'r', 'rules':['VB.*']},
             'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
 #            'IP-SUB'        : {'dir':'r', 'rules':['IP-INF.*', 'VB', 'VB.*', 'DO.*', 'DAN', 'NP-PRD', 'RD.*', 'ADVP', 'ADJP', 'IP-SUB', 'NP-PRD']},    #meira?
@@ -132,7 +132,7 @@ class Converter():
             'WPP'           : {'dir':'r', 'rules':['WNP', 'NP']},
             'NX'            : {'dir':'r', 'rules':['N-.']},
             'FRAG-LFD'      : {'dir':'r', 'rules':['IP-SMC']},
-            'FRAG'          : {'dir':'r', 'rules':['NP']}
+            'FRAG'          : {'dir':'r', 'rules':['NP']},
             'QP'            : {'dir':'r', 'rules':['Q-.', 'QS-.', 'QR-.']}
             }
 
@@ -229,9 +229,9 @@ class Converter():
 #            return 'conj'
         elif mod_tag == 'NS' or mod_tag == 'N' and head_tag == 'NP':    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
             return 'conj'
-        elif mod_tag == 'NPR' and head_tag == 'NP': 
+        elif mod_tag == 'NPR' and head_tag == 'NP':
             return 'flat:name'
-#        elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj? 
+#        elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj?
 #            return 'obj'
         elif mod_tag == 'D' or mod_tag == 'ONE' or mod_tag == 'ONES' or mod_tag == 'OTHER' or mod_tag == 'OTHERS' or mod_tag == 'SUCH':
             return 'det'
@@ -277,9 +277,9 @@ class Converter():
 #            return 'VIRKAR'
         elif mod_tag == 'CP':
             return {
-                'THT': 'ccomp',    
-                'THT-1': 'ccomp',   
-                'THT-PRN': 'ccomp', 
+                'THT': 'ccomp',
+                'THT-1': 'ccomp',
+                'THT-PRN': 'ccomp',
                 'THT-PRN-1': 'ccomp',
                 'ADV': 'advcl',
                 'REL': 'acl:relcl',
@@ -318,7 +318,13 @@ class Converter():
 
         for i in t.treepositions():
             if isinstance(t[i], Tree):
-                if len(t[i]) == 1:
+                # If trace node, skip (preliminary)
+                # e.g.
+                if t[i][0] in {'0', '*'}:
+                    continue
+                # If terminal node with no label (token-lemma)
+                # e.g. tók-taka
+                elif '-' in t[i]:
                     # If terminal node with label
                     # e.g. (VBDI tók-taka) or (NP-SBJ (PRO-N hann-hann))
                     tag_list[nr] = t[i].label()
