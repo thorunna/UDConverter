@@ -44,7 +44,7 @@ class Converter():
             'IP-INF-ADT-SPE': {'dir':'r', 'rules':['VB']},
             'IP-MAT'        : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
             'IP-MAT-1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'VAN', 'NP-PRD', 'ADJP', 'N.*', 'IP-SMC', 'IP-MAT-1']},
-            'IP-MAT=1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC']},
+            'IP-MAT=1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC']}, 
             'IP-MAT-PRN'    : {'dir':'r', 'rules':['VB.*']},
             'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
 #            'IP-SUB'        : {'dir':'r', 'rules':['IP-INF.*', 'VB', 'VB.*', 'DO.*', 'DAN', 'NP-PRD', 'RD.*', 'ADVP', 'ADJP', 'IP-SUB', 'NP-PRD']},    #meira?
@@ -102,12 +102,12 @@ class Converter():
             'NP-COM'        : {'dir':'r', 'rules':['N.*', 'NP.*', 'OTHER-.']},  #fylliliður N sem er ekki í ef.
             'NP-ADT'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'MAN-.', 'OTHER-.']},    #instrumental NP
             'NP-TMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'ADJ-.', 'NUM-.', 'OTHER-.']},    #temporal NP
-            'NP-MSR'        : {'dir':'r', 'rules':['NS-.', 'N-.', 'Q-.', 'QS-.', 'QR-.', 'OTHER-.']},
+            'NP-MSR'        : {'dir':'r', 'rules':['NS-.', 'N-.', 'Q-.', 'QS-.', 'QR-.', 'OTHER-.', 'ADV']},
             'NP-VOC'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'MAN-N', 'OTHER-.']},
             'ADJP'          : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE', 'ONES']},
             'ADJP-1'        : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE', 'ONES']},
             'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},
-            'PP'            : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'ADJP', 'P']},
+            'PP'            : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'ADJP', 'CP-.*', 'P']},
             'PP-1'          : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'ADJP', 'P']},
             'PP-2'          : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'ADJP', 'P']},
             'PP-BY'         : {'dir':'r', 'rules':['P']},
