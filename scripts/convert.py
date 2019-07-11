@@ -355,6 +355,8 @@ class Converter():
                     # token_lemma = str(FORM+'-'+LEMMA)
                     tag = tag_list[nr]
                     # leaf = token_lemma, tag
+                if '+' in tag:
+                    tag = re.sub('\w+\+', '', tag)
                 token_lemma = str(FORM+'-'+LEMMA)
                 leaf = token_lemma, tag
                 # UPOS = '_'
