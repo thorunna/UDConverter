@@ -46,6 +46,7 @@ tags = {
     'WPRO' : 'PRON',  #wh-pronouns
     'SUCH' : 'PRON',
     'ES' : 'PRON',  #expletive tagged as PRON
+    'MAN' : 'PRON',
     'NUM' : 'NUM',
     'ADJ' : 'ADJ',  # Adjectives tagged as ADV
     'ADJR' : 'ADJ', # Comparative adjectives tagged as ADV
@@ -160,6 +161,19 @@ feats = {
             'FT' : 'Plur'
         }
     },
+    'ADV' : {
+        'Degree' : {
+            'P' : 'Pos',     #first degree
+            'R' : 'Cmp',    #second Degree
+            'S' : 'Sup'     #third degree
+        },
+        'Case' : {
+            'N' : 'Nom',
+            'A' : 'Acc',
+            'D' : 'Dat',
+            'G' : 'Gen'
+        }
+    },
     'VERB' : {
         'Mood' : {
             'IMP' : 'Imp',  #imperative 
@@ -193,7 +207,8 @@ feats = {
             'NF' : 'Nom',
             'ÞF' : 'Acc',
             'ÞGF' : 'Dat',
-            'EF' : 'Gen'
+            'EF' : 'Gen',
+            'D' : 'Dat'
         },
         'Gender' : {
             'KK' : 'Masc',
@@ -310,6 +325,7 @@ def get_UD_tag(tag, word):
             except:
                 return '_'
 
+
 def get_feats_verb(lemma, token, tag, UD_tag):
     if len(tag) == 2 or tag.endswith('TTT') or tag == 'VB-1' or tag == 'VB-3' or tag == 'VB-2':       #infinitive
         verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['inf']
@@ -324,11 +340,14 @@ def get_feats_verb(lemma, token, tag, UD_tag):
     elif len(tag) == 3 and tag[2] == 'I':     #imperative
         mood = 'Mood='+feats[UD_tag]['Mood']['IMP']
         return mood
+    elif len(tag) == 3:
+        rdn_feats = feats_verb_part(lemma, token, tag, UD_tag)
+        return rdn_feats
     else:
         else_feats = feats_verb_else(lemma, token, tag, UD_tag)
         return else_feats                    
 
-def feats_verb_part(lemma, token, tag, UD_tag):     #VAN, VBN, DAN, DON
+def feats_verb_part(lemma, token, tag, UD_tag):     #VAN, VBN, DAN, DON, RDN
     if '-' in tag:
         tag = tag.split('-')[0]
     try:
@@ -421,10 +440,10 @@ def get_feats_pron(UD_tag, case):
                 num = 'Number='+feats[UD_tag]['Number'][mark[-2:]]
             except KeyError:
                 num = '*'
-            try:
+            if '_' in mark:
                 gender = 'Gender='+feats[UD_tag]['Gender'][mark.split('_')[1]]
                 return case+'|'+num+'|'+gender
-            except:
+            elif '-' in mark:
                 gender = 'Gender='+feats[UD_tag]['Gender'][mark.split('-')[0]]
                 return case+'|'+num+'|'+gender
 
@@ -479,9 +498,21 @@ def get_feats_adj(lemma, token, UD_tag, case, tag_name):
         except (TypeError, KeyError):
             return case+'|'+degree+'*'
 
+def get_feats_adv(UD_tag, tag_name):
+    if tag_name[-1] == 'R':
+        degree = 'Degree='+feats[UD_tag]['Degree']['R']
+#        return degree
+    elif tag_name[-1] == 'S':
+        degree = 'Degree='+feats[UD_tag]['Degree']['S']
+#        return degree
+    else:
+        degree = 'Degree='+feats[UD_tag]['Degree']['P']
+    return degree
+
 def get_adp_feats(UD_tag):
     type = 'AdpType='+feats[UD_tag]['AdpType']['P']
     return type
+
 
 def get_feats(leaf):
     if leaf[0][0] not in {'*', '0'}: # ATH Used while traces etc. are still in data
@@ -502,6 +533,9 @@ def get_feats(leaf):
                 else:
                     tag_name = tag
                     tag_info = '0'
+                if tag_name == 'ADVR+ADV':
+                    tag_name = re.sub('ADVR\+', '', tag_name)
+                    UD_tag = 'ADV'
                 if tag_name == 'NUM+NUM':
                     tag_name = re.sub('NUM\+NUM', 'NUM', tag_name)
                     UD_tag = 'NUM'
@@ -541,6 +575,9 @@ def get_feats(leaf):
                 if UD_tag == 'ADJ':
                     adj_feats = get_feats_adj(lemma, token, UD_tag, case, tag_name)
                     return adj_feats
+                if UD_tag == 'ADV':
+                    adv_feats = get_feats_adv(UD_tag, tag_name)
+                    return adv_feats
 #            except KeyError:
 #                return '(Eitthvað að)'
             except IndexError:
