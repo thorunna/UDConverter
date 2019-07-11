@@ -10,14 +10,10 @@ Based on earlier work by
 
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
-from collections import defaultdict, OrderedDict
-import re
 from sys import argv, stdin, stdout
 import getopt
 from lib import features
-from collections import defaultdict, OrderedDict
-import os
-import time
+from collections import defaultdict
 import re
 import string
 
