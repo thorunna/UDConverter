@@ -1,18 +1,12 @@
 from lib import DMII_data
-from lib import features
 from lib import depender
 
 from nltk.corpus.util import LazyCorpusLoader
 from nltk.corpus.reader import CategorizedBracketParseCorpusReader
 from nltk.data import path
 from nltk.tree import *
-from tokenizer import correct_spaces
-from pprint import pprint
-from collections import defaultdict, OrderedDict
-import os
 import time
 import re
-import string
 
 path.extend(['./testing/'])
 
