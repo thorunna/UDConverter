@@ -196,7 +196,7 @@ class Converter():
             'NP-1'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*', 'MAN-.', 'OTHER-.']},
             'NP-2'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*', 'MAN-.', 'OTHER-.']},
             'NP-4'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*', 'MAN-.', 'OTHER-.']},
-            'NP-ADV'        : {'dir':'r', 'rules':['NP.*']},
+            'NP-ADV'        : {'dir':'r', 'rules':['NP.*', 'PRO-.']},
             'NP-CMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'MAN-.', 'OTHER-.']},
             'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},   #viðurlag, appositive
             'NP-PRN-3'      : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
@@ -234,7 +234,7 @@ class Converter():
             'WADVP-1'       : {'dir':'r', 'rules':['WADV']},
             'WADVP-2'       : {'dir':'r', 'rules':['WADV']},
             'WADVP-3'       : {'dir':'r', 'rules':['WADV']},
-            'CONJP'         : {'dir':'l', 'rules':['NP.*', 'NX' 'CONJ']},
+            'CONJP'         : {'dir':'l', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-SUB', 'CONJ']},
             'WNP'           : {'dir':'r', 'rules':['WPRO-.', 'PRO-.']}, #MEIRA?
             'WNP-1'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.']},
             'WNP-2'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.']},
@@ -244,7 +244,8 @@ class Converter():
             'NX'            : {'dir':'r', 'rules':['N-.']},
             'FRAG-LFD'      : {'dir':'r', 'rules':['IP-SMC']},
             'FRAG'          : {'dir':'r', 'rules':['NP']},
-            'QP'            : {'dir':'r', 'rules':['Q-.', 'QS-.', 'QR-.']}
+            'QP'            : {'dir':'r', 'rules':['Q-.', 'QS-.', 'QR-.']},
+            'NUMP'          : {'dir':'r', 'rules':['NUM-.']}
             }
 
     def _select_head(self, tree):
@@ -338,15 +339,15 @@ class Converter():
             }.get(mod_func, 'rel')
 #        elif mod_tag == 'N' and head_tag == 'NP':
 #            return 'conj'
-        elif mod_tag == 'NS' or mod_tag == 'N' and head_tag == 'NP':    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
+        elif mod_tag in ['NS', 'N'] and head_tag == 'NP':    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
             return 'conj'
         elif mod_tag == 'NPR' and head_tag == 'NP':
             return 'flat:name'
 #        elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj?
 #            return 'obj'
-        elif mod_tag == 'D' or mod_tag == 'ONE' or mod_tag == 'ONES' or mod_tag == 'OTHER' or mod_tag == 'OTHERS' or mod_tag == 'SUCH':
+        elif mod_tag in ['D', 'ONE', 'ONES', 'OTHER', 'OTHERS', 'SUCH']:
             return 'det'
-        elif mod_tag == 'ADJP' or mod_tag == 'ADJ' or mod_tag == 'Q' or mod_tag == 'QR' or mod_tag == 'QS':
+        elif mod_tag in ['ADJP', 'ADJ', 'Q', 'QR', 'QS']:
             # -SPR (secondary predicate)
             return 'amod'
         elif mod_tag == 'PP':
@@ -354,7 +355,7 @@ class Converter():
             return 'obl'        #NP sem er haus PP fær obl nominal  #TODO: haus CP-ADV (sem er PP) á að vera merktur advcl
         elif mod_tag == 'P':
             return 'case'
-        elif mod_tag == 'ADVP' or mod_tag == 'ADV' or mod_tag == 'ADVR' or mod_tag == 'ADVS' or mod_tag == 'NEG' or mod_tag == 'FP' or mod_tag == 'QP' or mod_tag == 'ALSO':    #FP = focus particles  #QP = quantifier phrase - ATH.
+        elif mod_tag[0:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO']:    #FP = focus particles  #QP = quantifier phrase - ATH.
             # -DIR, -LOC, -TP
             return 'advmod'
         elif mod_tag == 'RP':
@@ -382,7 +383,7 @@ class Converter():
             return 'cop'
         elif mod_tag == 'CONJ':
             return 'cc'
-        elif mod_tag == 'CONJP' or mod_tag == 'N':      #N: tvö N í einum NP tengd með CONJ
+        elif mod_tag in ['CONJP', 'N']:      #N: tvö N í einum NP tengd með CONJ
             return 'conj'
 #        elif mod_tag == 'CP' and mod_func == 'ADV':
 #            return 'VIRKAR'
@@ -403,9 +404,9 @@ class Converter():
             }.get(mod_func, 'rel')
 #        elif mod_func == 'THT':     #TODO: too greedy
 #            return 'ccomp'
-        elif mod_tag == 'C' or mod_tag == 'CP' or mod_tag == 'TO' or mod_tag == 'WQ':  #infinitival marker with marker relation
+        elif mod_tag in ['C', 'CP', 'TO', 'WQ']:  #infinitival marker with marker relation
             return 'mark'
-        elif mod_tag == 'NUM':
+        elif mod_tag in ['NUM', 'NUMP']:
             return 'nummod'
         elif mod_tag == 'FRAG':
             return 'xcomp'
