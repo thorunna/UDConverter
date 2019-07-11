@@ -533,24 +533,27 @@ def get_feats(leaf):
                 else:
                     tag_name = tag
                     tag_info = '0'
-                if tag_name == 'ADVR+ADV':
-                    tag_name = re.sub('ADVR\+', '', tag_name)
-                    UD_tag = 'ADV'
-                if tag_name == 'NUM+NUM':
-                    tag_name = re.sub('NUM\+NUM', 'NUM', tag_name)
-                    UD_tag = 'NUM'
-                if tag_name == 'NUM+N':
-                    tag_name = re.sub('NUM\+', '', tag_name)
-                    UD_tag = 'NOUN'
-                if tag_name == 'N+Q':
-                    tag_name = re.sub('N\+', '', tag_name)
-                    UD_tag = 'ADJ'
-                if tag_name == 'NPR+NS':
-                    tag_name = re.sub('\+NS', '', tag_name)
-                    UD_tag = 'PROPN'
-                if tag_name == 'ONE+Q':
-                    tag_name = re.sub('ONE\+', '', tag_name)
-                    UD_tag == 'ADJ'
+#                if tag_name == 'NUM+NUM':
+#                    tag_name = re.sub('NUM\+NUM', 'NUM', tag_name)
+#                    UD_tag = 'NUM'
+#                if tag_name == 'NUM+N':
+#                    tag_name = re.sub('NUM\+', '', tag_name)
+#                    UD_tag = 'NOUN'
+#                if tag_name == 'N+Q':
+#                    tag_name = re.sub('N\+', '', tag_name)
+#                    UD_tag = 'ADJ'
+#                if tag_name == 'NPR+NS':
+#                    tag_name = re.sub('\+NS', '', tag_name)
+#                    UD_tag = 'PROPN'
+#                if tag_name == 'ONE+Q':
+#                    tag_name = re.sub('ONE\+', '', tag_name)
+#                    UD_tag == 'ADJ'
+                if tag == 'RP-2':
+                    tag = re.sub('-2', '', tag)
+                if tag_info == 'TTT':
+                    tag_info = tag.split('-')[2]
+#                if tag_name == 'ADVR+ADV':
+#                    tag_name = re.sub('ADVR\+', '', tag_name)
                 if tag == 'RP-2':
                     tag = re.sub('-2', '', tag)
                 if tag_info == 'TTT':
