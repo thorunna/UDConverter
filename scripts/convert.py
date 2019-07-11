@@ -318,13 +318,7 @@ class Converter():
 
         for i in t.treepositions():
             if isinstance(t[i], Tree):
-                # If trace node, skip (preliminary)
-                # e.g.
-                if t[i][0] in {'0', '*'}:
-                    continue
-                # If terminal node with no label (token-lemma)
-                # e.g. tók-taka
-                elif '-' in t[i]:
+                if len(t[i]) == 1:
                     # If terminal node with label
                     # e.g. (VBDI tók-taka) or (NP-SBJ (PRO-N hann-hann))
                     tag_list[nr] = t[i].label()
@@ -336,9 +330,13 @@ class Converter():
                     t[i].set_id(0)
                     const.append(i)
             else:
+                # If trace node, skip (preliminary, may result in errors)
+                # e.g. *T*-3 etc.
+                if t[i][0] in {'0', '*'}:
+                    continue
                 # If terminal node with no label (token-lemma)
                 # e.g. tók-taka
-                if '-' in t[i]:
+                elif '-' in t[i]:
                     FORM, LEMMA = t[i].split('-', 1)
                     tag = tag_list[nr]
                     # print(tag_list)
