@@ -1,10 +1,11 @@
 from lib import DMII_data
-from lib import depender
+from lib.depender import Converter
 
 from nltk.corpus.util import LazyCorpusLoader
 from nltk.corpus.reader import CategorizedBracketParseCorpusReader
 from nltk.data import path
 from nltk.tree import *
+from collections import defaultdict
 import time
 import re
 
@@ -20,7 +21,7 @@ icepahc = LazyCorpusLoader(
 #if __name__ == '__main__':
 #fileids = icepahc.fileids() # leave uncommented for whole corpus use
 fileids = ['1985.sagan.nar-fic.psd'] # For debug use only
-c = depender.Converter() # Creates instance of Converter class
+c = Converter() # Creates instance of Converter class
 total_sents = 0
 
     #f = open('voggur_conllu.conllu', 'w+')
