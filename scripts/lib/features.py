@@ -539,10 +539,13 @@ def get_feats(leaf):
                 if tag == 'ADVR-Q-D':
                     tag = re.sub('ADVR-', '', tag)
                 if '-' in tag:
-                    tag_name, tag_info = tag.split('-')
+                    tag_name, tag_info = tag.split('-', 1)
                 else:
                     tag_name = tag
                     tag_info = '0'
+                    UD_tag = 'ADV'
+                if '-' in tag_info:
+                    tag_info, tag_extra = tag_info.split('-')
 #                if tag_name == 'NUM+NUM':
 #                    tag_name = re.sub('NUM\+NUM', 'NUM', tag_name)
 #                    UD_tag = 'NUM'
@@ -552,9 +555,9 @@ def get_feats(leaf):
 #                if tag_name == 'N+Q':
 #                    tag_name = re.sub('N\+', '', tag_name)
 #                    UD_tag = 'ADJ'
-#                if tag_name == 'NPR+NS':
-#                    tag_name = re.sub('\+NS', '', tag_name)
-#                    UD_tag = 'PROPN'
+                if tag_name == 'NPR+NS':
+                    tag_name = re.sub('\+NS', '', tag_name)
+                    UD_tag = 'PROPN'
 #                if tag_name == 'ONE+Q':
 #                    tag_name = re.sub('ONE\+', '', tag_name)
 #                    UD_tag == 'ADJ'
@@ -564,10 +567,6 @@ def get_feats(leaf):
                     tag_info = tag.split('-')[2]
 #                if tag_name == 'ADVR+ADV':
 #                    tag_name = re.sub('ADVR\+', '', tag_name)
-                if tag == 'RP-2':
-                    tag = re.sub('-2', '', tag)
-                if tag_info == 'TTT':
-                    tag_info = tag.split('-')[2]
                 if tag_name == 'NP':
                     return '_'      #TODO: sækja BÍN-upplýsingar
                 if tag_info.isdigit():
@@ -591,8 +590,6 @@ def get_feats(leaf):
                 if UD_tag == 'ADV':
                     adv_feats = get_feats_adv(UD_tag, tag_name)
                     return adv_feats
-#            except KeyError:
-#                return '(Eitthvað að)'
             except IndexError:
                 return '(Tag cannot be split)'      #ATH. some tags cannot be split (OTHER, WQ, ...)
         else:
