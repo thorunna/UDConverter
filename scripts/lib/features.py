@@ -304,6 +304,12 @@ def get_UD_tag(tag, word):
     # if ipsd_tag.beginswith('NPR'):
     #     return tags['NPR']
     tag = tag.split('-')[0]
+    if tag.endswith('21') or tag.endswith('22') or tag.endswith('31') or tag.endswith('32') or tag.endswith('33'):
+        tag = re.sub('21', '', tag)
+        tag = re.sub('22', '', tag)
+        tag = re.sub('31', '', tag)
+        tag = re.sub('32', '', tag)
+        tag = re.sub('33', '', tag)
     try:
         return tags[tag]
     except:
