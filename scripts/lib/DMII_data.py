@@ -16,7 +16,7 @@ def DMII_data(filename):
     # DMII_path = os.path.join('DMII_data', 'SHsnid.csv')
     DMII_path = os.path.join('DMII_data', 'split', filename+'.csv')
     DMII = csv.reader(open(DMII_path, encoding = 'UTF-8'), delimiter=';')
-
+    start = time.time()
     for line in DMII:
         # print(line)
         # bin_lemmas.append(line[0])
