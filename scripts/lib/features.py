@@ -534,6 +534,8 @@ def get_feats(leaf):
                 if UD_tag == 'ADP':
                     adp_feats = get_adp_feats(UD_tag)
                     return adp_feats
+                if tag == 'ADV-Q-N':
+                    tag = re.sub('ADV-', '', tag)
                 if '-' in tag:
                     tag_name, tag_info = tag.split('-')
                 else:
