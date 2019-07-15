@@ -50,7 +50,7 @@ def check_DMII(dict, token, lemma):
         end = time.time()
         # print('Time elapsed searching for word:', end-start, 'seconds' )
         # print(word, dict[word])
-        return dict[make_tuple(word)]
+        return dict[word]
     except:
         # print('Word "{0}" not present in DMII.'.format(word))
         end = time.time()
