@@ -429,13 +429,17 @@ def get_feats_noun(lemma, token, UD_tag, tag_name, case):
     except (TypeError, IndexError):
         return case+'|'+num+'*'+'*'
 
-def get_feats_pron(UD_tag, case):
+def get_feats_pron(UD_tag, case, token):
     for k, v in DMII_fn.items():
         if v[1] == 'pfn':
             nummark = v[0]
             num = 'Number='+feats[UD_tag]['Number'][nummark[-2:]]
             prontype = 'PronType='+feats[UD_tag]['PronType'][v[1]]
-            return case+'|'+num+'|'+prontype
+            if token.startswith('$'):
+                clitic = 'Clitic=Yes'
+                return clitic+'|'+case+'|'+num+'|'+prontype
+            else:
+                return case+'|'+num+'|'+prontype
         if v[1] == 'abfn':
             num = 'Number='+feats[UD_tag]['Number']['ET']
             prontype = 'PronType='+feats[UD_tag]['PronType'][v[1]]
@@ -448,10 +452,18 @@ def get_feats_pron(UD_tag, case):
                 num = '*'
             if '_' in mark:
                 gender = 'Gender='+feats[UD_tag]['Gender'][mark.split('_')[1]]
-                return case+'|'+num+'|'+gender
+                if token.startswith('$'):
+                    clitic = 'Clitic=Yes'
+                    return clitic+'|'+case+'|'+num+'|'+gender
+                else:
+                    return case+'|'+num+'|'+gender
             elif '-' in mark:
                 gender = 'Gender='+feats[UD_tag]['Gender'][mark.split('-')[0]]
-                return case+'|'+num+'|'+gender
+                if token.startswith('$'):
+                    clitic = 'Clitic=Yes'
+                    return clitic+'|'+case+'|'+num+'|'+gender
+                else:
+                    return case+'|'+num+'|'+gender
 
 def get_feats_num(lemma, token, UD_tag, case, tag_name):
     try:
@@ -577,7 +589,7 @@ def get_feats(leaf):
                     noun_feats = get_feats_noun(lemma, token, UD_tag, tag_name, case)
                     return noun_feats
                 if UD_tag == 'PRON':
-                    pron_feats = get_feats_pron(UD_tag, case)
+                    pron_feats = get_feats_pron(UD_tag, case, token)
                     return pron_feats
                 if UD_tag == 'DET':
                     return case 
