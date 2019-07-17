@@ -525,15 +525,16 @@ class Converter():
 #                if head_nr == mod_nr and re.match("NP-PRD", head_tag):      #ath. virkar þetta rétt? Leið til að láta sagnfyllingu cop vera rót
 #                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
 #                    self.dg.root = self.dg.get_by_address(mod_nr)
-                if head_nr == mod_nr and re.match( "IP-MAT.*", head_tag):  #todo root phrase types from config
-                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
-                    self.dg.root = self.dg.get_by_address(mod_nr)
-                elif child[0] == '0' or head_tag == 'PP' and child[0] == None:   # or child[0] == None
-                    continue
-                else:
-                    self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
-                if head_nr != mod_nr:
-                    self.dg.add_arc(head_nr, mod_nr)
+                if child:
+                    if head_nr == mod_nr and re.match( "IP-MAT.*", head_tag):  #todo root phrase types from config
+                        self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
+                        self.dg.root = self.dg.get_by_address(mod_nr)
+                    elif child[0] == '0':   # or child[0] == None
+                        continue
+                    else:
+                        self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
+                    if head_nr != mod_nr:
+                        self.dg.add_arc(head_nr, mod_nr)
 
             """child = t[i][0]
                                                    mod_tag = child.label()
