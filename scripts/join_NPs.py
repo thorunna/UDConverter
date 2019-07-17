@@ -8,12 +8,12 @@ Part of UniTree project for IcePaHC
 
 Text preperation script for IcePaHC corpus files.
  - joins nouns and determiners in raw text data in treebank .psd files
- - input: .psd file on command line
+ - input: .psd file on command line (edits files in situ by renaming/removing)
 '''
 
 
-det_token = r'(?<=D-. \$).*(?=-)' # matches the token of a determiner, excluding "$"
-det_node = r' {0,1}\(D-[ A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ*$-]*\)' # matches a whole determiner node
+det_token = r'(?<=D-. \$)[a-zþæðöáéýúíóA-ZÞÆÐÖÁÉÝÚÍÓ]*(?=-)' # matches the token of a determiner, excluding "$"
+det_node = r' ?\(D-[A-Z] \$[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ*$-]*\)' # matches a whole determiner node
 noun_trail = r'(?<=)\$(?=-)' # matches the trailing "$" of a noun
 noun_node =  r' {0,1}\(((N|NS|NPR|NPRS)-|FW).*\$-' # matches a whole noun node
 noun_token_incompl = r'(?<=N-. )[^($]*(?=-)' # noun token where "$" is missing
@@ -30,11 +30,13 @@ indexes = range(len(lines))
 for curr in indexes:
     prev = curr-1
     if re.search(det_token, lines[curr]) and re.search(noun_trail, lines[curr]):
+        ''''''
         # print(lines[curr].strip('\n'))
         lines[curr] = re.sub(noun_trail, re.findall(det_token, lines[curr])[0], lines[curr])
         lines[curr] = re.sub(det_node, '', lines[curr])
         # print(curr, lines[curr].strip('\n'), 'XXX')
         out_file.write(lines[curr])
+        # print(lines[curr].strip('\n'))
     elif re.search(det_token, lines[curr]) and not re.search(noun_trail, lines[curr]) and re.search(noun_trail, lines[prev]):
         # print(prev, lines[prev].strip('\n'))
         # print(curr, lines[curr].strip('\n'))
@@ -53,6 +55,7 @@ for curr in indexes:
         # print(lines[curr].strip('\n'))
     elif not re.search(noun_node, lines[curr]):
         out_file.write(lines[curr])
+        # print(lines[curr].strip('\n'))
     elif re.search(noun_node, lines[curr]) and not re.search(det_token, lines[curr+1]):
         #
         out_file.write(lines[curr])

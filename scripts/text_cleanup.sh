@@ -48,10 +48,14 @@ for file in $out_dir/*; do
   sed -i "" 's/(ID [0-9]*\.[A-Z]*[0-9]*\.[A-Z]*-[A-Z]*[,\.][0-9]*[,\.][0-9]*))//g' $file
   # Delete lines which include (ID
   # sed -i '/(ID/d' $file
+
   # Delete every instance of '( '
   sed -i "" 's/^( //g' $file
   # Delete lines which only include (. ?-?)), (. .-.)) or (" "-")) at the beginning of line
   sed -i "" 's/^([\."] [\.?"]-[\.?"]))$//g' $file
+  # TODO: insert command that joins punctuation to sentence instead
+  #       of deleting line
+    # python3 scripts/join_puncts.py $file
   # Include token and lemma for ',' and '.'
   sed -i "" 's/(, -)/(, ,-,)/g' $file
   sed -i "" 's/(\. -)/(\. \.-\.)/g' $file
@@ -68,7 +72,7 @@ for file in $out_dir/*; do
   # Delete extra (NUM-N -)
   sed -i "" 's/(NUM-N -)//g' $file    # ath. --- í frumtextanum
   # Replace <dash/> with proper notation
-  # sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file
+  # sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file # NOTE maybe obsolete, check
   # Delete empty spaces before (QTP
   sed -i "" 's/^  (QTP/(QTP/g' $file
   # Delete empty spaces before (IP-MAT
@@ -89,11 +93,15 @@ for file in $out_dir/*; do
   sed -i "" 's/D-N $ðu/PRO-N $ðu/g' $file
   # Fix error in sentence 1350.BANDAMENNM.NAR-SAG,.909
   sed -i "" 's/D-N $tu/PRO-N $tu/g' $file
+  # Fix error in sentence 1985.SAGAN.NAR-FIC,.772
+  sed -i "" 's/BEBI er-vera/BEPI er-vera/g' $file
   # Join nouns and corresponding determiners
-  python3 scripts/combine_NPs.py $file
+  python3 scripts/join_NPs.py $file
   # Delete empty lines
   sed -i "" '/^$/d' $file
   sed -i "" '/^  $/d' $file
+  # TEMP ---------
+  # python3 scripts/join_sents.py $file
   # Delete last character in file (uneven parentheses) NOTE only needed on some machines!!!
   sed -i "" '$ s/.$//' $file
 done
