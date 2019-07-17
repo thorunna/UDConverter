@@ -139,7 +139,7 @@ class Converter():
         self.t = None
         self.dg = None
         self.head_rules = {
-            'IP-INF'        : {'dir':'r', 'rules':['VB', 'DO', 'VAN']},
+            'IP-INF'        : {'dir':'r', 'rules':['VB', 'DO', 'VAN', 'IP-INF']},
             'IP-INF-1'      : {'dir':'r', 'rules':['VB', 'DO', 'VAN']},
             'IP-INF=3'      : {'dir':'r', 'rules':['VB', 'DO', 'VAN']},
             'IP-INF-PRP'    : {'dir':'r', 'rules':['VB', 'IP-INF']},      #tilgangsnafnháttur
@@ -152,20 +152,20 @@ class Converter():
             'IP-INF-DEG'    : {'dir':'r', 'rules':['VB']},  #degree infinitive
             'IP-INF-ADT'    : {'dir':'r', 'rules':['VB']},
             'IP-INF-ADT-SPE': {'dir':'r', 'rules':['VB']},
-            'IP-MAT'        : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'HV.*', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
+            'IP-MAT'        : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'NP-1', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
             'IP-MAT-1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'HV.*', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
             'IP-MAT=1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'HV.*', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']}, 
             'IP-MAT-PRN'    : {'dir':'r', 'rules':['VB.*']},
             'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
 #            'IP-SUB'        : {'dir':'r', 'rules':['IP-INF.*', 'VB', 'VB.*', 'DO.*', 'DAN', 'NP-PRD', 'RD.*', 'ADVP', 'ADJP', 'IP-SUB', 'NP-PRD']},    #meira?
-            'IP-SUB'        : {'dir':'r', 'rules':['ADJP', 'VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'IP-INF.*', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB', 'NP', 'NP-2', 'HVN']},
+            'IP-SUB'        : {'dir':'r', 'rules':['VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HV.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'RD.*', 'NP', 'NP-2', 'ADVP', 'IP-SUB', 'HVN']},
             'IP-SUB-4'      : {'dir':'r', 'rules':['ADJP', 'IP-INF.*', 'VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB', 'NP', 'NP-2', 'HVN']},
             'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-PRN=4'  : {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*']},
             'IP-IMP'        : {'dir':'r', 'rules':['VB.']},    #imperative
             'IP-IMP-SPE'    : {'dir':'r', 'rules':['VB.']},
-            'IP-SMC'        : {'dir':'r', 'rules':['IP-INF-SBJ', 'NP-PRD', 'ADJP', 'NP.*']},    #small clause
+            'IP-SMC'        : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAG-.', 'ADJP', 'NP.*']},    #small clause
             'IP-PPL'        : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},  #lýsingarháttarsetning
             'CP-THT'        : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #að
             'CP-THT-1'      : {'dir':'r', 'rules':['IP-SUB.*','.*']},
@@ -206,8 +206,9 @@ class Converter():
             'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},   #viðurlag, appositive
             'NP-PRN-1'      : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
             'NP-PRN-3'      : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
+            'NP-PRN-ELAB'   : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
             'NP-PRN-ELAB-1' : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
-            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'NPRS-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
+            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'N-.', 'NS-N', 'NPR-N', 'NPRS-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
             'NP-SBJ-RSP'    : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'NPRS-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
             'NP-SBJ-1'      : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
             'NP-SBJ-2'      : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
@@ -223,10 +224,11 @@ class Converter():
             'NP-TMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'ADJ-.', 'NUM-.', 'OTHER-.']},    #temporal NP
             'NP-MSR'        : {'dir':'r', 'rules':['NS-.', 'N-.', 'Q-.', 'QS-.', 'QR-.', 'OTHER-.', 'ADV']},
             'NP-VOC'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'MAN-N', 'OTHER-.']},
+            'NP-DIR'        : {'dir':'r', 'rules':['N-.', 'NP.*']},
             'ADJP'          : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES']},
             'ADJP-1'        : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE', 'ONES']},
             'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},
-            'PP'            : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
+            'PP'            : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
             'PP-1'          : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'ADJP', 'P']},
             'PP-2'          : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'ADJP', 'P']},
             'PP-BY'         : {'dir':'r', 'rules':['P']},
@@ -242,7 +244,8 @@ class Converter():
             'WADVP-1'       : {'dir':'r', 'rules':['WADV']},
             'WADVP-2'       : {'dir':'r', 'rules':['WADV']},
             'WADVP-3'       : {'dir':'r', 'rules':['WADV']},
-            'CONJP'         : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-SUB', 'IP-MAT=1', 'IP-INF', 'CP-QUE', 'CONJ']},
+            'CONJP'         : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-.+', 'CP-QUE', 'PP', 'CONJ']},
+            'CONJP-1'       : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-.+', 'CP-QUE', 'PP', 'CONJ']},
             'CONJP-4'       : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-SUB', 'IP-MAT=1', 'IP-INF', 'CP-QUE', 'CONJ']},
             'WNP'           : {'dir':'r', 'rules':['WPRO-.', 'PRO-.', 'N-.']}, #MEIRA?
             'WNP-1'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.', 'N-.']},
@@ -327,9 +330,9 @@ class Converter():
             return {
                 'SBJ': 'nsubj',
                 'SBJ-RSP': 'nsubj',     #?
-                'SBJ-1' : 'nsubj:pass?',
-                'SBJ-2' : 'nsubj:pass?',
-                'SBJ-4' : 'nsubj:pass?',
+                'SBJ-1' : 'nsubj',    #nsubj:pass?
+                'SBJ-2' : 'nsubj',    #nsubj:pass?
+                'SBJ-4' : 'nsubj',    #nsubj:pass?
                 'OB1': 'obj',
                 'OB2': 'iobj',
                 'OB3': 'iobj',
@@ -340,6 +343,7 @@ class Converter():
                 'PRN': 'appos',     #viðurlag, appositive
                 'PRN-1': 'appos',
                 'PRN-3': 'appos',
+                'PRN-ELAB': 'appos',
                 'COM': 'nmod',
                 'ADT': 'obl',    #ATH. rétt?
                 'TMP': 'advmod',  #ATH. rétt?
@@ -347,7 +351,8 @@ class Converter():
                 '2': '?',
                 '4': '?',
                 'MSR': 'amod',   #measure phrase
-                'ADV': '?'
+                'ADV': '?',
+                'DIR': '?'
             }.get(mod_func, 'rel')
 #        elif mod_tag == 'N' and head_tag == 'NP':
 #            return 'conj'
@@ -401,7 +406,7 @@ class Converter():
             return 'cop'
         elif mod_tag == 'CONJ':
             return 'cc'
-        elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N']:      #N: tvö N í einum NP tengd með CONJ
+        elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N', 'PP']:      #N: tvö N í einum NP tengd með CONJ
             return 'conj'
 #        elif mod_tag == 'CP' and mod_func == 'ADV':
 #            return 'VIRKAR'
@@ -521,6 +526,8 @@ class Converter():
             head_nr = t[i].id()
             for child in t[i]:
                 mod_tag = child.label()
+                if '+' in mod_tag:
+                    mod_tag = re.sub('\w+\+', '', mod_tag)
                 mod_nr = child.id()
 #                if head_nr == mod_nr and re.match("NP-PRD", head_tag):      #ath. virkar þetta rétt? Leið til að láta sagnfyllingu cop vera rót
 #                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
@@ -529,25 +536,12 @@ class Converter():
                     if head_nr == mod_nr and re.match( "IP-MAT.*", head_tag):  #todo root phrase types from config
                         self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
                         self.dg.root = self.dg.get_by_address(mod_nr)
-                    elif child[0] == '0':   # or child[0] == None
+                    elif child[0] == '0':
                         continue
                     else:
                         self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
                     if head_nr != mod_nr:
-                        self.dg.add_arc(head_nr, mod_nr)
-
-            """child = t[i][0]
-                                                   mod_tag = child.label()
-                                                   mod_nr = child.id()
-                                                   if head_nr == mod_nr and re.match( "IP-.+|QTP|CP-.+|FRAG", head_tag):
-                                                       self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
-                                                       self.dg.root = self.dg.get_by_address(mod_nr)
-                                                   else:
-                                                       self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
-                                                   if head_nr != mod_nr:
-                                                       self.dg.add_arc(head_nr, mod_nr)
-                                                   child += 1
-                                                   return """   
+                        self.dg.add_arc(head_nr, mod_nr)  
 
 
         #todo coordination, http://www.linguist.is/icelandic_treebank/Conjunction
