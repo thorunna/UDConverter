@@ -12,7 +12,8 @@ Text preperation script for IcePaHC corpus files.
 '''
 
 
-det_token = r'(?<=D-. \$)[a-zþæðöáéýúíóA-ZÞÆÐÖÁÉÝÚÍÓ]*(?=-)' # matches the token of a determiner, excluding "$"
+det_token = r'(?<=D-. \$)[a-zþæðöáéýúíó]*(?=-)' # matches the token of a determiner, excluding "$"
+det_token_alt = r'(?<=D-.-TTT \$)[a-zþæðöáéýúíó]*(?=-)' # matches det token in case of -TTT in tag
 det_node = r' ?\(D-[A-Z] \$[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ*$-]*\)' # matches a whole determiner node
 noun_trail = r'(?<=)\$(?=-)' # matches the trailing "$" of a noun
 noun_node =  r' {0,1}\(((N|NS|NPR|NPRS)-|FW).*\$-' # matches a whole noun node
@@ -34,6 +35,13 @@ for curr in indexes:
         # print(lines[curr].strip('\n'))
         lines[curr] = re.sub(noun_trail, re.findall(det_token, lines[curr])[0], lines[curr])
         lines[curr] = re.sub(det_node, '', lines[curr])
+        # print(curr, lines[curr].strip('\n'), 'XXX')
+        out_file.write(lines[curr])
+        # print(lines[curr].strip('\n'))
+    elif re.search(det_token_alt, lines[curr]) and re.search(noun_trail, lines[curr]):
+        # print(lines[curr].strip('\n'))
+        lines[curr] = re.sub(noun_trail, re.findall(det_token_alt, lines[curr])[0], lines[curr])
+        lines[curr] = re.sub(det_node_alt, '', lines[curr])
         # print(curr, lines[curr].strip('\n'), 'XXX')
         out_file.write(lines[curr])
         # print(lines[curr].strip('\n'))
