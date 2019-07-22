@@ -1,3 +1,275 @@
+tags = {
+    # ipsd_tag : UD_tag
+    'N' : 'NOUN',   # generalized nouns tagged as NOUN
+    'D' : 'DET',    # generalized determiners tagged as DET (determiner)
+    'ONE' : 'DET',  #ath. áður taggað sem NUM
+    'ONES' : 'DET',
+    'P' : 'ADP',    # generalized prepositions tagged as ADP
+    'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
+    'RPX' : 'ADP', 
+    'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
+    'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
+    'V' : 'VERB',
+    'DO' : 'VERB',  #'gera', do, tagged as verb
+    'HV' : 'AUX',   #'have' tagged as auxiliary verb
+    'MD' : 'AUX',   #modal verbs tagged as auxiliary
+    'RD' : 'VB',    #'verða', become, tagged as verb
+    'W' : 'DET',    # WH-determiner tagged as DET (determiner)
+    'R' : 'VERB',   # All forms of "verða" tagged as VERB
+    'TO' : 'PART',  # Infinitive marker tagged as PART (particle)
+    'FP' : 'PART',  #focus particles marked as PART
+    'NPR' : 'PROPN', # proper nouns tagged as PROPN
+    'NPRS': 'PROPN',
+    'PRO' : 'PRON',
+    'WQ' : 'PRON',  #interrogative pronoun
+    'WPRO' : 'PRON',  #wh-pronouns
+    'SUCH' : 'PRON',
+    'ES' : 'PRON',  #expletive tagged as PRON
+    'MAN' : 'PRON',
+    'NUM' : 'NUM',
+    'ADJ' : 'ADJ',  # Adjectives tagged as ADV
+    'ADJR' : 'ADJ', # Comparative adjectives tagged as ADV
+    'ADJS' : 'ADJ', # Superlative adjectives tagged as ADV
+    'ADV' : 'ADV',  # Adverbs tagged as ADV
+    'WADV' : 'ADV', #TODO: ath. betur - bara spor?
+    'NEG' : 'ADV',
+    'ADVR' : 'ADV', # Comparative adverbs tagged as ADV
+    'ADVS' : 'ADV', # Superlative adverbs tagged as ADV
+    'ALSO' : 'ADV',
+    'OTHER' : 'PRON',
+    'OTHERS' : 'PRON',
+    'INTJ' : 'INTJ',    #interjection
+    'FW' : 'X',
+    'X' : 'X'
+}
+
+feats = {
+    'NOUN' : {
+        'Case' : {
+            'N' : 'Nom',    # nominative case
+            'A' : 'Acc',    # accusative case
+            'D' : 'Dat',    # dative case
+            'G' : 'Gen'     # genitive case
+        },
+        'Number': {
+            'NS' : 'Plur',  # noun, plural number
+            'N' : 'Sing',
+            'NPR' : 'Sing'    # noun singular number
+            # 'NPR' : ''
+            # 'NPRS' : 'Plur' # proper noun plural
+        },
+        'Definite' : { # TODO: remove def from dict
+            '$' : 'Def',
+            '' : 'Ind'
+        },
+        'Gender' : { # TODO: add gender to feature matrix
+            'kk' : 'Masc',
+            'kvk' : 'Fem',
+            'hk' : 'Neut'
+        }
+    },
+    'PROPN' : { # Case, Number, Definite
+        'Number': {
+            'NPRS' : 'Plur',  # noun, plural number
+            'NPR' : 'Sing'    # noun singular number
+        },
+        'Case' : {
+            'N' : 'Nom',    # nominative case
+            'A' : 'Acc',    # accusative case
+            'D' : 'Dat',    # dative case
+            'G' : 'Gen'     # genitive case
+        }, 
+        'Gender' : {
+            'kk' : 'Masc',
+            'kvk' : 'Fem',
+            'hk' : 'Neut'
+        }
+    },
+    'PRON' : { # Case, Gender, Number, PronType
+        'Number': {
+            'FT' : 'Plur',  # noun, plural number
+            'ET' : 'Sing'    # noun singular number
+        },
+        'Case' : {
+            'N' : 'Nom',    # nominative case
+            'A' : 'Acc',    # accusative case
+            'D' : 'Dat',    # dative case
+            'G' : 'Gen'     # genitive case
+        },
+        'PronType' : {
+            'pfn' : 'Prs',     #personal
+            'abfn' : 'Rcp',     #reciprocal
+            'sp' : 'Int',     #interrogative
+            'tv' : 'Rel',     #relative
+            'ab' : 'Dem',     #demonstrative
+            'oakv' : 'Ind'      #indefinite
+        },
+        'Gender' : {
+            'KK' : 'Masc',
+            'KVK' : 'Fem',
+            'HK' : 'Neut'
+        }
+    },
+    'DET' : {
+        'Case' : {
+            'N' : 'Nom',
+            'A' : 'Acc',
+            'D' : 'Dat',
+            'G' : 'Gen'
+        }
+    },
+    'ADJ' : {
+        'Case' : {
+            'N' : 'Nom',
+            'A' : 'Acc',
+            'D' : 'Dat',
+            'G' : 'Gen'
+        },
+        'Degree' : {
+            'P' : 'Pos',     #first degree
+            'R' : 'Cmp',    #second Degree
+            'S' : 'Sup'     #third degree
+        },
+        'Gender' : {
+            'KK' : 'Masc',
+            'KVK' : 'Fem',
+            'HK' : 'Neut'
+        },
+        'Number' : {
+            'ET' : 'Sing',
+            'FT' : 'Plur'
+        }
+    },
+    'ADV' : {
+        'Degree' : {
+            'P' : 'Pos',     #first degree
+            'R' : 'Cmp',    #second Degree
+            'S' : 'Sup'     #third degree
+        },
+        'Case' : {
+            'N' : 'Nom',
+            'A' : 'Acc',
+            'D' : 'Dat',
+            'G' : 'Gen'
+        }
+    },
+    'VERB' : {
+        'Mood' : {
+            'IMP' : 'Imp',  #imperative 
+            'FH' : 'Ind',    #indicative
+            'VH' : 'Sub'     #subjunctive
+        },
+        'Tense' : {
+            'NT' : 'Pres',   #present tense
+            'ÞT' : 'Past'    #past tense
+        },
+        'VerbForm' : {
+            '' : 'Fin',     #finite verb
+            'inf' : 'Inf',     #infinitive verb
+            'part' : 'Part'     #participle
+        },
+        'Voice' : {
+            'GM' : 'Act',     #active voice
+            'MM' : 'Mid',     #middle voice
+            'pass' : 'Pass'     #passive voice
+        },
+        'Person' : {
+            '1P' : '1',
+            '2P' : '2',
+            '3P' : '3'
+        },
+        'Number' : {
+            'ET' : 'Sing',
+            'FT' : 'Plur'
+        },
+        'Case' : {
+            'NF' : 'Nom',
+            'ÞF' : 'Acc',
+            'ÞGF' : 'Dat',
+            'EF' : 'Gen',
+            'D' : 'Dat'
+        },
+        'Gender' : {
+            'KK' : 'Masc',
+            'KVK' : 'Fem',
+            'HK' : 'Neut'
+        }
+    },
+    'AUX' : {
+        'Mood' : {
+            'IMP' : 'Imp',  #imperative 
+            'FH' : 'Ind',    #indicative
+            'VH' : 'Sub'     #subjunctive
+        },
+        'Tense' : {
+            'NT' : 'Pres',   #present tense
+            'ÞT' : 'Past'    #past tense
+        },
+        'VerbForm' : {
+            '' : 'Fin',     #finite verb
+            'inf' : 'Inf',     #infinitive verb
+            'part' : 'Part'     #participle
+        },
+        'Voice' : {
+            'GM' : 'Act',     #active voice
+            'MM' : 'Mid',     #middle voice
+            'pass' : 'Pass'     #passive voice
+        },
+        'Person' : {
+            '1P' : '1',
+            '2P' : '2',
+            '3P' : '3'
+        },
+        'Number' : {
+            'ET' : 'Sing',
+            'FT' : 'Plur'
+        },
+        'Case' : {
+            'NF' : 'Nom',
+            'ÞF' : 'Acc',
+            'ÞGF' : 'Dat',
+            'EF' : 'Gen'
+        },
+        'Gender' : {
+            'KK' : 'Masc',
+            'KVK' : 'Fem',
+            'HK' : 'Neut'
+        }
+    },
+    'NUM' : {
+        'Case' : {
+            'N' : 'Nom',
+            'A' : 'Acc',
+            'D' : 'Dat',
+            'G' : 'Gen'
+        },
+        'Gender' : {
+            'KK' : 'Masc',
+            'KVK' : 'Fem',
+            'HK' : 'Neut'
+        },
+        'Number': {
+            'FT' : 'Plur',  # plural
+            'ET' : 'Sing'    # singular
+        },
+        'NumType' : {       #ATH. mögulegt að tilgreina þetta?
+            'C' : 'Card',    #Cardinal number
+            'O' : 'Ord',     #Ordinal number
+            '' : 'Frac'     #Fraction
+        }
+    },
+    'ADP' : {
+        'AdpType' : {
+            'P' : 'Prep'
+        }
+    },
+#    'SCONJ' : {},   #no features needed for subordinating conjunctions
+#    'CCONJ' : {},   #no features needed for coordinating conjunctions
+#    'ADP' : {},     #no features needed for adpositions
+#    'PART' : {},    #no features possible for particles
+#    'ADV' : {}      #no features possible for particles
+}
+
 head_rules = {
             'IP-INF'        : {'dir':'r', 'rules':['VB', 'DO', 'VAN', 'IP-INF']},
 #            'IP-INF-1'      : {'dir':'r', 'rules':['VB', 'DO', 'VAN']},
