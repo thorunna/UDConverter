@@ -162,7 +162,7 @@ class Converter():
             'IP-SUB-4'      : {'dir':'r', 'rules':['ADJP', 'IP-INF.*', 'VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB', 'NP', 'NP-2', 'HVN']},
             'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-PRN=4'  : {'dir':'r', 'rules':['VB.*', 'VAN']},
-            'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*']},
+            'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*', 'HV.*']},
             'IP-IMP'        : {'dir':'r', 'rules':['VB.']},    #imperative
             'IP-IMP-SPE'    : {'dir':'r', 'rules':['VB.']},
             'IP-SMC'        : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAG-.', 'ADJP', 'NP.*']},    #small clause
@@ -185,6 +185,7 @@ class Converter():
             'CP-FRL'        : {'dir':'r', 'rules':['IP-SUB.*', 'WNP.*']},  #free relative
             'CP-REL'        : {'dir':'r', 'rules':['IP-SUB.*']},    #relative
             'CP-REL-1'      : {'dir':'r', 'rules':['IP-SUB.*']},
+            'CP-REL-SPE'    : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-QUE'        : {'dir':'r', 'rules':['IP-SUB.*']},    #question
             'CP-QUE-1'      : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-QUE-SPE'    : {'dir':'r', 'rules':['IP-SUB.*']},
@@ -227,13 +228,15 @@ class Converter():
             'NP-DIR'        : {'dir':'r', 'rules':['N-.', 'NP.*']},
             'ADJP'          : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES']},
             'ADJP-1'        : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE', 'ONES']},
-            'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},
+            'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},     #SPR = secondary predicate
             'PP'            : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
-            'PP-1'          : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'ADJP', 'P']},
-            'PP-2'          : {'dir':'r', 'rules':['NP.*', 'CP-ADV', 'ADVP', 'ADJP', 'P']},
-            'PP-BY'         : {'dir':'r', 'rules':['P']},
-            'PP-PRN'        : {'dir':'r', 'rules':['CP-ADV', 'P']},
-            'PP-LFD'        : {'dir':'r', 'rules':['CP-ADV', 'CP-THT', 'NP']},    #left dislocation
+            'PP-1'          : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
+            'PP-2'          : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
+            'PP-BY'         : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
+            'PP-PRN'        : {'dir':'r', 'rules':['CP-ADV', 'NP', 'P']},
+            'PP-PRN-1'      : {'dir':'r', 'rules':['CP-ADV', 'NP', 'P']},
+            'PP-PRN-2'      : {'dir':'r', 'rules':['CP-ADV', 'NP', 'P']},
+            'PP-LFD'        : {'dir':'r', 'rules':['CP-ADV.*', 'CP-THT', 'NP', 'PP']},    #left dislocation
             'ADVP'          : {'dir':'r', 'rules':['ADV', 'ADVR', 'ADVS', 'WADV']},
             'ADVP-DIR'      : {'dir':'r', 'rules':['ADV', 'WADV']},
             'ADVP-LOC'      : {'dir':'r', 'rules':['ADV', 'WADV']},
@@ -244,9 +247,9 @@ class Converter():
             'WADVP-1'       : {'dir':'r', 'rules':['WADV']},
             'WADVP-2'       : {'dir':'r', 'rules':['WADV']},
             'WADVP-3'       : {'dir':'r', 'rules':['WADV']},
-            'CONJP'         : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-.+', 'CP-QUE', 'PP', 'CONJ']},
-            'CONJP-1'       : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-.+', 'CP-QUE', 'PP', 'CONJ']},
-            'CONJP-4'       : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-SUB', 'IP-MAT=1', 'IP-INF', 'CP-QUE', 'CONJ']},
+            'CONJP'         : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-SUB', 'IP-MAT=1', 'IP-INF', 'IP-.+', 'CP-QUE', 'PP', 'CONJ']},
+            'CONJP-1'       : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-SUB', 'IP-MAT=1', 'IP-INF', 'IP-.+', 'CP-QUE', 'PP', 'CONJ']},
+            'CONJP-4'       : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-SUB', 'IP-MAT=1', 'IP-INF', 'IP-.+', 'CP-QUE', 'PP', 'CONJ']},
             'WNP'           : {'dir':'r', 'rules':['WPRO-.', 'PRO-.', 'N-.']}, #MEIRA?
             'WNP-1'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.', 'N-.']},
             'WNP-2'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.', 'N-.']},
@@ -328,6 +331,16 @@ class Converter():
         elif mod_tag == 'NP':   #TODO: hvað ef mod_tag er bara NP?
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
             return {
+                '1'  : '?',
+                '2': '?',
+                '4': '?',
+                'ADV': '',
+                'CMP': '',
+                'PRN': 'appos',     #viðurlag, appositive
+                'PRN-1': 'appos',
+                'PRN-3': 'appos',
+                'PRN-ELAB': 'appos',
+                'PRN-ELAB-1': 'appos',
                 'SBJ': 'nsubj',
                 'SBJ-RSP': 'nsubj',     #?
                 'SBJ-1' : 'nsubj',    #nsubj:pass?
@@ -336,22 +349,14 @@ class Converter():
                 'OB1': 'obj',
                 'OB2': 'iobj',
                 'OB3': 'iobj',
-                'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
-                'VOC': 'vocative',
                 'PRD': 'acl?',    #sagnfylling, predicate
                 'SPR': 'xcomp?',
-                'PRN': 'appos',     #viðurlag, appositive
-                'PRN-1': 'appos',
-                'PRN-3': 'appos',
-                'PRN-ELAB': 'appos',
+                'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
                 'COM': 'nmod',
                 'ADT': 'obl',    #ATH. rétt?
                 'TMP': 'advmod',  #ATH. rétt?
-                '1'  : '?',
-                '2': '?',
-                '4': '?',
                 'MSR': 'amod',   #measure phrase
-                'ADV': '?',
+                'VOC': 'vocative',
                 'DIR': '?'
             }.get(mod_func, 'rel')
 #        elif mod_tag == 'N' and head_tag == 'NP':
@@ -383,16 +388,29 @@ class Converter():
             return {
                 'INF': 'ccomp', #?, xcomp ef ekkert frumlag
                 'INF-1': 'ccomp', #?
+                'INF=3': '',
                 'INF-PRP': 'advcl',
                 'INF-PRP-PRN': '',
-                'INF-PRN': 'xcomp', #ADVCL?
                 'INF-SPE': 'xcomp',  #ATH. réttur merkimiði?
+                'INF-PRN': 'xcomp', #ADVCL?
+                'INF-SBJ': '',
+                'INF-DEG': '',
                 'INF-ADT': 'advcl?',
-                'PPL': 'advcl',  #?
-                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
+                'INF-ADT-SPE': '',
+                'MAT': '',
+                'MAT-1': '',
+                'MAT=1': '',
                 'MAT-PRN': 'ccomp?',
+                'MAT-SPE': '',
+                'SUB': 'ATH',
+                'SUB-4': 'ATH',
+                'SUB-PRN': '',
+                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
+                'SUB-SPE': '',
+                'IMP': '',
+                'IMP-SPE': '',
                 'SMC': 'acl?',
-                'SUB': 'ATH'
+                'PPL': 'advcl',  #?
             }.get(mod_func, 'rel')
         elif mod_tag[0:2] == 'VB' and head_tag == 'CP':
             return 'ccomp'
@@ -414,23 +432,35 @@ class Converter():
             return {
                 'THT': 'ccomp',
                 'THT-1': 'ccomp',
+                'THT-SBJ': 'ccomp',
                 'THT-PRN': 'ccomp',
                 'THT-PRN-1': 'ccomp',
                 'THT-PRN-2': 'ccomp',
                 'THT-PRN-3': 'ccomp',
                 'THT-PRN-4': 'ccomp',
-                'THT-SBJ': 'ccomp',
-                'ADV': 'advcl',
-                'ADV-LFD': 'advcl',
-                'REL': 'acl:relcl',
+                'THT-LFD': '',
                 'CAR': 'acl:relcl',
                 'CLF': 'acl:relcl',
-                'FRL': 'acl:relcl?',    #ccomp?
                 'CMP': 'advcl',      #ATH. rétt?
-                'DEG': 'ccomp',      #ATH. rétt
+                'DEG': 'ccomp',      #ATH. rétt?
+                'DEG-1': 'ccomp',      
+                'DEG-2': 'ccomp',   
+                'FRL': 'acl:relcl?',    #ccomp? 
+                'REL': 'acl:relcl',
+                'REL-1': 'acl:relcl',
+                'REL-SPE': 'acl:relcl',  
                 'QUE': 'ccomp',
+                'QUE-1': 'ccomp',
+                'QUE-SPE': 'ccomp',
                 'QUE-ADV': 'advcl?',
-                'EOP': 'xcomp'
+                'QUE-ADV-LFD': 'advcl?',
+                'ADV': 'advcl',
+                'ADV-LFD': 'advcl',
+                'EOP': 'xcomp',
+                'EOP-1': 'xcomp',
+                'EOP-2': 'xcomp',
+                'TMC': '',
+                'TMC-3': ''
             }.get(mod_func, 'rel')
         elif mod_tag in ['C', 'CP', 'TO', 'WQ']:  #infinitival marker with marker relation
             return 'mark'
