@@ -8,7 +8,7 @@ Based on earlier work by
 Örvar Kárason (ohk2@hi.is)
 '''
 from lib import features
-from lib import heads
+from lib.rules import head_rules
 
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
@@ -147,7 +147,7 @@ class Converter():
         tag_orig = str(tree.label())
         tag = re.sub('-\d+', '', tag_orig)
         tag = re.sub('-TTT', '', tag)
-        head_rule = heads.head_rules.get(tag, {'dir':'r', 'rules':['.*']})  #default rule, first from left
+        head_rule = head_rules.get(tag, {'dir':'r', 'rules':['.*']})  #default rule, first from left
         rules = head_rule['rules']
         dir = head_rule['dir']
         head = None
