@@ -8,6 +8,7 @@ Based on earlier work by
 Örvar Kárason (ohk2@hi.is)
 '''
 from lib import features
+from lib import heads
 
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
@@ -138,139 +139,15 @@ class Converter():
         #todo read rules from config file
         self.t = None
         self.dg = None
-        self.head_rules = {
-            'IP-INF'        : {'dir':'r', 'rules':['VB', 'DO', 'VAN', 'IP-INF']},
-            'IP-INF-1'      : {'dir':'r', 'rules':['VB', 'DO', 'VAN']},
-            'IP-INF=3'      : {'dir':'r', 'rules':['VB', 'DO', 'VAN']},
-            'IP-INF-PRP'    : {'dir':'r', 'rules':['VB', 'IP-INF']},      #tilgangsnafnháttur
-            'IP-INF-PRP-PRN': {'dir':'r', 'rules':['VB']},
-            'IP-INF-SPE'    : {'dir':'r', 'rules':['VB']},      #spe = direct speech
-            'IP-INF-PRN'    : {'dir':'r', 'rules':['VB']},
-#            'IP-INF-PRN-ELAB'
-#            'IP-INF-PRN-ELAB=2'
-            'IP-INF-SBJ'    : {'dir':'r', 'rules':['VB']},
-            'IP-INF-DEG'    : {'dir':'r', 'rules':['VB']},  #degree infinitive
-            'IP-INF-ADT'    : {'dir':'r', 'rules':['VB']},
-            'IP-INF-ADT-SPE': {'dir':'r', 'rules':['VB']},
-            'IP-MAT'        : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'NP-1', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
-            'IP-MAT-1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'HV.*', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
-            'IP-MAT=1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'HV.*', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']}, 
-            'IP-MAT-PRN'    : {'dir':'r', 'rules':['VB.*']},
-            'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP-1', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT-1']},
-#            'IP-SUB'        : {'dir':'r', 'rules':['IP-INF.*', 'VB', 'VB.*', 'DO.*', 'DAN', 'NP-PRD', 'RD.*', 'ADVP', 'ADJP', 'IP-SUB', 'NP-PRD']},    #meira?
-            'IP-SUB'        : {'dir':'r', 'rules':['VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HV.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'RD.*', 'NP', 'NP-2', 'ADVP', 'IP-SUB', 'HVN']},
-            'IP-SUB-4'      : {'dir':'r', 'rules':['ADJP', 'IP-INF.*', 'VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB', 'NP', 'NP-2', 'HVN']},
-            'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*', 'VAN']},
-            'IP-SUB-PRN=4'  : {'dir':'r', 'rules':['VB.*', 'VAN']},
-            'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*', 'HV.*']},
-            'IP-IMP'        : {'dir':'r', 'rules':['VB.']},    #imperative
-            'IP-IMP-SPE'    : {'dir':'r', 'rules':['VB.']},
-            'IP-SMC'        : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAG-.', 'ADJP', 'NP.*']},    #small clause
-            'IP-PPL'        : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},  #lýsingarháttarsetning
-            'CP-THT'        : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #að
-            'CP-THT-1'      : {'dir':'r', 'rules':['IP-SUB.*','.*']},
-            'CP-THT-SBJ'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #extraposed subject
-            'CP-THT-PRN'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},
-            'CP-THT-PRN-1'  : {'dir':'r', 'rules':['IP-SUB.*','.*']},
-            'CP-THT-PRN-2'  : {'dir':'r', 'rules':['IP-SUB.*','.*']},
-            'CP-THT-PRN-3'  : {'dir':'r', 'rules':['IP-SUB.*','.*']},
-            'CP-THT-PRN-4'  : {'dir':'r', 'rules':['IP-SUB.*','.*']},
-            'CP-THT-LFD'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},
-            'CP-CAR'        : {'dir':'r', 'rules':['IP-SUB.*']},    #clause-adjoined relatives
-            'CP-CLF'        : {'dir':'r', 'rules':['IP-SUB.*']},    #it-cleft
-            'CP-CMP'        : {'dir':'r', 'rules':['IP-SUB.*']},    #comparative clause
-            'CP-DEG'        : {'dir':'r', 'rules':['IP-SUB.*']},  #degree complements
-            'CP-DEG-1'      : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-DEG-2'      : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-FRL'        : {'dir':'r', 'rules':['IP-SUB.*', 'WNP.*']},  #free relative
-            'CP-REL'        : {'dir':'r', 'rules':['IP-SUB.*']},    #relative
-            'CP-REL-1'      : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-REL-SPE'    : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-QUE'        : {'dir':'r', 'rules':['IP-SUB.*']},    #question
-            'CP-QUE-1'      : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-QUE-SPE'    : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-QUE-ADV'    : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-QUE-ADV-LFD': {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-ADV'        : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-ADV-LFD'    : {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-EOP'        : {'dir':'r', 'rules':['IP-INF']},  #empty operator
-            'CP-EOP-1'      : {'dir':'r', 'rules':['IP-INF']},
-            'CP-EOP-2'      : {'dir':'r', 'rules':['IP-INF']},
-            'CP-TMC'        : {'dir':'r', 'rules':['IP-INF']},  #tough-movement
-            'CP-TMC-3'      : {'dir':'r', 'rules':['IP-INF']},
-            'NP'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'NP.*', 'Q.*', 'MAN-.', 'OTHER-.', 'CP-FRL']},
-            'NP-1'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*', 'MAN-.', 'OTHER-.']},
-            'NP-2'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*', 'MAN-.', 'OTHER-.']},
-            'NP-4'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP.*', 'PRO-.', 'Q.*', 'MAN-.', 'OTHER-.']},
-            'NP-ADV'        : {'dir':'r', 'rules':['NP.*', 'PRO-.']},
-            'NP-CMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'MAN-.', 'OTHER-.']},
-            'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},   #viðurlag, appositive
-            'NP-PRN-1'      : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
-            'NP-PRN-3'      : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
-            'NP-PRN-ELAB'   : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
-            'NP-PRN-ELAB-1' : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
-            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'N-.', 'NS-N', 'NPR-N', 'NPRS-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
-            'NP-SBJ-RSP'    : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'NPRS-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
-            'NP-SBJ-1'      : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
-            'NP-SBJ-2'      : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
-            'NP-SBJ-4'      : {'dir':'r', 'rules':['N-N', 'NS-N', 'NPR-N', 'PRO-.', 'ADJ-N', 'MAN-N', 'OTHER-.']},
-            'NP-OB1'        : {'dir':'r', 'rules':['N-.', 'NPR-A', 'NS-.', 'NP', 'ONE+Q-A', 'MAN-A', 'OTHER-.', 'PRO-.']},
-            'NP-OB2'        : {'dir':'r', 'rules':['NP.*', 'PRO-.', 'N-D', 'NS-D', 'NPR-.', 'CP-FRL', 'MAN-.', 'OTHER-.']},    #MEIRA?
-            'NP-OB3'        : {'dir':'r', 'rules':['PRO-D', 'N-D', 'NS-D', 'NPR-D', 'MAN-.', 'OTHER-.']},
-            'NP-PRD'        : {'dir':'r', 'rules':['N-.', 'NS.*', 'NP.*', 'OTHER-.']},     #sagnfylling copulu
-            'NP-SPR'        : {'dir':'r', 'rules':['N-.', 'NS-.']},   #secondary predicate
-            'NP-POS'        : {'dir':'r', 'rules':['N-.', 'NPR-.', 'PRO-.', 'NP-.+', 'MAN-.', 'OTHER-.']},
-            'NP-COM'        : {'dir':'r', 'rules':['N.*', 'NP.*', 'OTHER-.']},  #fylliliður N sem er ekki í ef.
-            'NP-ADT'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'MAN-.', 'OTHER-.']},    #clause-level dative adjuncts, e.g. instrumental datives
-            'NP-TMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'ADJ-.', 'NUM-.', 'OTHER-.']},    #temporal NP
-            'NP-MSR'        : {'dir':'r', 'rules':['NS-.', 'N-.', 'Q-.', 'QS-.', 'QR-.', 'OTHER-.', 'ADV']},
-            'NP-VOC'        : {'dir':'r', 'rules':['N-N', 'NS-N', 'MAN-N', 'OTHER-.']},
-            'NP-DIR'        : {'dir':'r', 'rules':['N-.', 'NP.*']},
-            'ADJP'          : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES']},
-            'ADJP-1'        : {'dir':'r', 'rules':['ADJ.*', 'ADJR.*', 'ADJS.*', 'ADVR', 'ONE', 'ONES']},
-            'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},     #SPR = secondary predicate
-            'PP'            : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
-            'PP-1'          : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
-            'PP-2'          : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
-            'PP-BY'         : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
-            'PP-PRN'        : {'dir':'r', 'rules':['CP-ADV', 'NP', 'P']},
-            'PP-PRN-1'      : {'dir':'r', 'rules':['CP-ADV', 'NP', 'P']},
-            'PP-PRN-2'      : {'dir':'r', 'rules':['CP-ADV', 'NP', 'P']},
-            'PP-LFD'        : {'dir':'r', 'rules':['CP-ADV.*', 'CP-THT', 'NP', 'PP']},    #left dislocation
-            'ADVP'          : {'dir':'r', 'rules':['ADV', 'ADVR', 'ADVS', 'WADV']},
-            'ADVP-DIR'      : {'dir':'r', 'rules':['ADV', 'WADV']},
-            'ADVP-LOC'      : {'dir':'r', 'rules':['ADV', 'WADV']},
-            'ADVP-TMP'      : {'dir':'r', 'rules':['ADV', 'WADV']},
-            'ADVP-RSP'      : {'dir':'r', 'rules':['ADV', 'WADV']},
-            'ADVP-TMP-RSP'  : {'dir':'r', 'rules':['ADV', 'WADV']},
-            'WADVP'         : {'dir':'r', 'rules':['WADV']},
-            'WADVP-1'       : {'dir':'r', 'rules':['WADV']},
-            'WADVP-2'       : {'dir':'r', 'rules':['WADV']},
-            'WADVP-3'       : {'dir':'r', 'rules':['WADV']},
-            'CONJP'         : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-SUB', 'IP-MAT=1', 'IP-INF', 'IP-.+', 'CP-QUE', 'PP', 'CONJ']},
-            'CONJP-1'       : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-SUB', 'IP-MAT=1', 'IP-INF', 'IP-.+', 'CP-QUE', 'PP', 'CONJ']},
-            'CONJP-4'       : {'dir':'r', 'rules':['NP.*', 'NX', 'NUM-.', 'IP-SUB', 'IP-MAT=1', 'IP-INF', 'IP-.+', 'CP-QUE', 'PP', 'CONJ']},
-            'WNP'           : {'dir':'r', 'rules':['WPRO-.', 'PRO-.', 'N-.']}, #MEIRA?
-            'WNP-1'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.', 'N-.']},
-            'WNP-2'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.', 'N-.']},
-            'WNP-3'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.', 'N-.']},
-            'WNP-4'         : {'dir':'r', 'rules':['WPRO-.', 'PRO-.', 'N-.']},
-            'WPP'           : {'dir':'r', 'rules':['WNP', 'NP']},
-            'WPP-1'         : {'dir':'r', 'rules':['WNP', 'NP']},
-            'NX'            : {'dir':'r', 'rules':['N-.']},
-            'FRAG-LFD'      : {'dir':'r', 'rules':['IP-SMC']},
-            'FRAG'          : {'dir':'r', 'rules':['NP']},
-            'QP'            : {'dir':'r', 'rules':['Q-.', 'QS-.', 'QR-.']},
-            'NUMP'          : {'dir':'r', 'rules':['NUM-.']}
-            }
 
     def _select_head(self, tree):
         '''
 
         '''
         tag_orig = str(tree.label())
-        tag = re.sub('-\d\+', '', tag_orig)     #TODO: virkar ekki
-        head_rule = self.head_rules.get(tag, {'dir':'r', 'rules':['.*']})  #default rule, first from left
+        tag = re.sub('-\d+', '', tag_orig)
+        tag = re.sub('-TTT', '', tag)
+        head_rule = heads.head_rules.get(tag, {'dir':'r', 'rules':['.*']})  #default rule, first from left
         rules = head_rule['rules']
         dir = head_rule['dir']
         head = None
@@ -306,12 +183,16 @@ class Converter():
 
         #todo use head_tag and more info about the constituency to better select the relation label
 
+        mod_tag = re.sub('-TTT', '', mod_tag)
+        mod_tag = re.sub('-\d+', '', mod_tag)
+        mod_tag = re.sub('=\d+|=X|=XXX', '', mod_tag)
+
         if '-' in mod_tag:
             mod_tag, mod_func = mod_tag.split('-', 1) #todo, handle more than one function label
         else:
             mod_func = None
-        if mod_func in {'0', '1', '2', '3', '4', '5', '6'}:     #TODO: virkar ekki
-            mod_func = None
+#        if mod_func == r'[0123456]':     #TODO: virkar ekki, in {'0', '1', '2', '3', '4', '5', '6'}:
+#            mod_func = None
 #        elif '-' in mod_func:
 #            mod_func, mod_3 = mod_func.split('-', 1)
 #            if mod_3 in {'0', '1', '2', '3', '4', '5', '6'}:
@@ -331,21 +212,21 @@ class Converter():
         elif mod_tag == 'NP':   #TODO: hvað ef mod_tag er bara NP?
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
             return {
-                '1'  : '?',
-                '2': '?',
-                '4': '?',
+#                '1'  : '?',
+#                '2': '?',
+#                '4': '?',
                 'ADV': '',
                 'CMP': '',
                 'PRN': 'appos',     #viðurlag, appositive
-                'PRN-1': 'appos',
-                'PRN-3': 'appos',
+#                'PRN-1': 'appos',
+#                'PRN-3': 'appos',
                 'PRN-ELAB': 'appos',
-                'PRN-ELAB-1': 'appos',
+#                'PRN-ELAB-1': 'appos',
                 'SBJ': 'nsubj',
                 'SBJ-RSP': 'nsubj',     #?
-                'SBJ-1' : 'nsubj',    #nsubj:pass?
-                'SBJ-2' : 'nsubj',    #nsubj:pass?
-                'SBJ-4' : 'nsubj',    #nsubj:pass?
+#                'SBJ-1' : 'nsubj',    #nsubj:pass?
+#                'SBJ-2' : 'nsubj',    #nsubj:pass?
+#                'SBJ-4' : 'nsubj',    #nsubj:pass?
                 'OB1': 'obj',
                 'OB2': 'iobj',
                 'OB3': 'iobj',
@@ -387,7 +268,7 @@ class Converter():
         elif mod_tag == 'IP':
             return {
                 'INF': 'ccomp', #?, xcomp ef ekkert frumlag
-                'INF-1': 'ccomp', #?
+#                'INF-1': 'ccomp', #?
                 'INF=3': '',
                 'INF-PRP': 'advcl',
                 'INF-PRP-PRN': '',
@@ -398,12 +279,12 @@ class Converter():
                 'INF-ADT': 'advcl?',
                 'INF-ADT-SPE': '',
                 'MAT': '',
-                'MAT-1': '',
+#                'MAT-1': '',
                 'MAT=1': '',
                 'MAT-PRN': 'ccomp?',
                 'MAT-SPE': '',
                 'SUB': 'ATH',
-                'SUB-4': 'ATH',
+#                'SUB-4': 'ATH',
                 'SUB-PRN': '',
                 'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
                 'SUB-SPE': '',
@@ -431,36 +312,36 @@ class Converter():
         elif mod_tag == 'CP':
             return {
                 'THT': 'ccomp',
-                'THT-1': 'ccomp',
+#                'THT-1': 'ccomp',
                 'THT-SBJ': 'ccomp',
                 'THT-PRN': 'ccomp',
-                'THT-PRN-1': 'ccomp',
-                'THT-PRN-2': 'ccomp',
-                'THT-PRN-3': 'ccomp',
-                'THT-PRN-4': 'ccomp',
+#                'THT-PRN-1': 'ccomp',
+#                'THT-PRN-2': 'ccomp',
+#                'THT-PRN-3': 'ccomp',
+#                'THT-PRN-4': 'ccomp',
                 'THT-LFD': '',
                 'CAR': 'acl:relcl',
                 'CLF': 'acl:relcl',
                 'CMP': 'advcl',      #ATH. rétt?
                 'DEG': 'ccomp',      #ATH. rétt?
-                'DEG-1': 'ccomp',      
-                'DEG-2': 'ccomp',   
+#                'DEG-1': 'ccomp',      
+#                'DEG-2': 'ccomp',   
                 'FRL': 'acl:relcl?',    #ccomp? 
                 'REL': 'acl:relcl',
-                'REL-1': 'acl:relcl',
+#                'REL-1': 'acl:relcl',
                 'REL-SPE': 'acl:relcl',  
                 'QUE': 'ccomp',
-                'QUE-1': 'ccomp',
+#                'QUE-1': 'ccomp',
                 'QUE-SPE': 'ccomp',
                 'QUE-ADV': 'advcl?',
                 'QUE-ADV-LFD': 'advcl?',
                 'ADV': 'advcl',
                 'ADV-LFD': 'advcl',
                 'EOP': 'xcomp',
-                'EOP-1': 'xcomp',
-                'EOP-2': 'xcomp',
+#                'EOP-1': 'xcomp',
+#                'EOP-2': 'xcomp',
                 'TMC': '',
-                'TMC-3': ''
+#                'TMC-3': ''
             }.get(mod_func, 'rel')
         elif mod_tag in ['C', 'CP', 'TO', 'WQ']:  #infinitival marker with marker relation
             return 'mark'
@@ -518,11 +399,11 @@ class Converter():
                     # leaf = token_lemma, tag
                 else: # If no lemma present
                     FORM = t[i][0]
-                    # DMII_combined = DMII_data.DMII_data('combined')
-                    LEMMA = '_'# DMII_data.get_lemma(DMII_combined, FORM)
+                    DMII_combined = DMII_data.DMII_data('combined')
+                    DMII_data.get_lemma(DMII_combined, FORM)    # LEMMA = '_'
                     if LEMMA == None:
                         LEMMA = '_'
-                    # token_lemma = str(FORM+'-'+LEMMA)
+                    token_lemma = str(FORM+'-'+LEMMA)
                     tag = tag_list[nr]
                     # leaf = token_lemma, tag
                 if '+' in tag:
