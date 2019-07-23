@@ -15,6 +15,7 @@ Text preperation script for IcePaHC corpus files.
 det_token = r'(?<=D-. \$)[a-zþæðöáéýúíó]*(?=-)' # matches the token of a determiner, excluding "$"
 det_token_alt = r'(?<=D-.-TTT \$)[a-zþæðöáéýúíó]*(?=-)' # matches det token in case of -TTT in tag
 det_node = r' ?\(D-[A-Z] \$[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ*$-]*\)' # matches a whole determiner node
+det_node_alt = r'-TTT' 
 noun_trail = r'(?<=)\$(?=-)' # matches the trailing "$" of a noun
 noun_node =  r' {0,1}\(((N|NS|NPR|NPRS)-|FW).*\$-' # matches a whole noun node
 noun_token_incompl = r'(?<=N-. )[^($]*(?=-)' # noun token where "$" is missing

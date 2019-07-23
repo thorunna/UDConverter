@@ -37,11 +37,13 @@ for file in $in_dir/*; do
   cp $file ${file//_orig}
 done
 
+# Corpus errors fixed before processing
+./scripts/fix_corpus_errors.sh
+
 # Each file run through commands
 
 for file in $out_dir/*; do
   echo "Working on file: ${file##*/}"
-  # perl -pi -e 'undef $/; $_=<>; s/\( \((META|CODE|LATIN|QTP)(?:(?!\( \()[\w\W])*//g' $file
   # Delete (CODE...)
   sed -i "" 's/(CODE[ {}*<>a-zA-Z0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$_:-?/]*)//g' $file
   # Delete (ID...))
@@ -89,12 +91,6 @@ for file in $out_dir/*; do
   sed -i "" 's/^  (CP-EXL-SPE/(CP-EXL-SPE/g' $file
   # Correct one instance of uneven parentheses
   sed -i "" 's/^(VAG sofandi\.-sofa))/(VAG sofandi\.-sofa)/g' $file
-  # Fix error in sentence 1350.BANDAMENNM.NAR-SAG,.886
-  sed -i "" 's/D-N $ðu/PRO-N $ðu/g' $file
-  # Fix error in sentence 1350.BANDAMENNM.NAR-SAG,.909
-  sed -i "" 's/D-N $tu/PRO-N $tu/g' $file
-  # Fix error in sentence 1985.SAGAN.NAR-FIC,.772
-  sed -i "" 's/BEBI er-vera/BEPI er-vera/g' $file
   # Join nouns and corresponding determiners
   python3 scripts/join_NPs.py $file
   # Delete empty lines
