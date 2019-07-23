@@ -157,6 +157,7 @@ class Word:
         # elif self.UD_tag in {'VERB', 'AUX', 'ADP'}: # NOTE: QUICK FIX
         #     return self
         else: # NOTE: Why is this here again? :/
+            self.tag_name = self.tag
             # self.tag_name = self.tag
             # self.tag_info = '0'
             # self.UD_tag = 'ADV'
@@ -176,7 +177,7 @@ class Word:
         if self.tag == 'RP-2':
             self.tag = re.sub('-2', '', self.tag)
         if self.tag_info == 'TTT':
-            self.tag_info = tag.split('-')[2]
+            self.tag_info = self.tag.split('-')[1]
 
         # TODO: find permanent fix for this, where -N is not default
         # e.g. join words in .psd file that have these numbers in tag
