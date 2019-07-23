@@ -1,4 +1,3 @@
-from lib import DMII_data
 from lib.depender import Converter
 
 from nltk.corpus.util import LazyCorpusLoader
@@ -11,8 +10,6 @@ import re
 import string
 
 path.extend(['./testing/'])
-
-DMII_combined = DMII_data.load_json('combined') # TODO: Move to features script
 
 icepahc = LazyCorpusLoader(
     'icepahc-v0.9/psd/', CategorizedBracketParseCorpusReader,
