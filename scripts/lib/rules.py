@@ -1,3 +1,8 @@
+
+
+cconj = {'og', 'eða', 'en', 'heldur', 'enda', 'ellegar',
+        'bæði','hvorki','annaðhvort','hvort', 'ýmist'}
+
 tags = {
     # ipsd_tag : UD_tag
     'N' : 'NOUN',   # generalized nouns tagged as NOUN
