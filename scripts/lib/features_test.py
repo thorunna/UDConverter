@@ -464,7 +464,7 @@ class Word:
         elif self.UD_tag == 'NUM':
             self.get_feats_num()
         elif self.UD_tag == 'DET':
-            if tag_info:
+            if self.tag_info:
                 self.features.Case = self.feats[self.UD_tag]['Case'][self.tag_info]
             else:
                 self.features.Case = None
