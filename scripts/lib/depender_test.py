@@ -207,6 +207,14 @@ class Converter():
         else:
             head_func = None
 
+        if mod_func:        
+            if '-' in mod_func:
+                mod_func, mod_extra = mod_func.split('-', 1)    
+
+        if head_func:        
+            if '-' in head_func:
+                head_func, head_extra = head_func.split('-', 1)
+
 #        if mod_tag == 'NP' and mod_func == 'SBJ-1':
 #            return 'expl'
         if head_tag == 'NP' and head_func == 'SBJ-1':       #TODO: finna aðra lausn til að merkja expl
@@ -256,12 +264,12 @@ class Converter():
         elif mod_tag[0:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO']:    #FP = focus particles  #QP = quantifier phrase - ATH.
             # -DIR, -LOC, -TP
             return 'advmod'
-        elif mod_tag == 'RP':
+        elif mod_tag in ['RP', 'RPX']:
             return 'compound:prt'
         elif mod_tag == 'IP':
             return {
                 'INF': 'ccomp', #?, xcomp ef ekkert frumlag
-                'INF=3': '',
+#                'INF=3': '',
                 'INF-PRP': 'advcl',
                 'INF-PRP-PRN': '',
                 'INF-SPE': 'xcomp',  #ATH. réttur merkimiði?
@@ -271,12 +279,12 @@ class Converter():
                 'INF-ADT': 'advcl?',
                 'INF-ADT-SPE': '',
                 'MAT': '',
-                'MAT=1': '',
+#                'MAT=1': '',
                 'MAT-PRN': 'ccomp?',
                 'MAT-SPE': '',
                 'SUB': 'ATH',
                 'SUB-PRN': '',
-                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
+#                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
                 'SUB-SPE': '',
                 'IMP': '',
                 'IMP-SPE': '',
@@ -297,27 +305,62 @@ class Converter():
             return 'cc'
         elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N', 'PP']:      #N: tvö N í einum NP tengd með CONJ
             return 'conj'
+        elif mod_tag == 'CONJP' and head_tag == 'IP':
+            return {
+                'INF': 'ccomp', #?, xcomp ef ekkert frumlag
+#                'INF=3': '',
+                'INF-PRP': 'advcl',
+                'INF-PRP-PRN': '',
+                'INF-SPE': 'xcomp',  #ATH. réttur merkimiði?
+                'INF-PRN': 'xcomp', #ADVCL?
+                'INF-SBJ': '',
+                'INF-DEG': '',
+                'INF-ADT': 'advcl?',
+                'INF-ADT-SPE': '',
+                'MAT': '',
+#                'MAT=1': '',
+                'MAT-PRN': 'ccomp?',
+                'MAT-SPE': '',
+                'SUB': 'ATH',
+                'SUB-PRN': '',
+#                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
+                'SUB-SPE': '',
+                'IMP': '',
+                'IMP-SPE': '',
+                'SMC': 'acl?',
+                'PPL': 'advcl',  #?
+            }.get(head_func, 'rel')
 #        elif mod_tag == 'CP' and mod_func == 'ADV':
 #            return 'VIRKAR'
         elif mod_tag == 'CP':
             return {
                 'THT': 'ccomp',
-                'THT-SBJ': 'ccomp',
-                'THT-PRN': 'ccomp',
-                'THT-LFD': '',
+#                'THT-SBJ': 'ccomp',
+#                'THT-SBJ-SPE': 'ccomp',
+#                'THT-SPE': 'HALLO',
+#                'THT-SPE-PRN': 'ccomp',
+#                'THT-SPE-SBJ': 'ccomp',
+#                'THT-PRN': 'ccomp',
+#                'THT-PRN-NaN': 'ccomp',
+#                'THT-PRN-SPE': 'ccomp',
+#                'THT-LFD': '',
+#                'THT-RSP': '',
                 'CAR': 'acl:relcl',
+#                'CAR-SPE': 'acl:relcl',
                 'CLF': 'acl:relcl',
+#                'CLF-SPE': 'acl:relcl',
                 'CMP': 'advcl',      #ATH. rétt?
                 'DEG': 'ccomp',      #ATH. rétt?  
+#                'DEG-SPE': 'ccomp',
                 'FRL': 'acl:relcl?',    #ccomp? 
                 'REL': 'acl:relcl',
-                'REL-SPE': 'acl:relcl',  
+#                'REL-SPE': 'acl:relcl',  
                 'QUE': 'ccomp',
-                'QUE-SPE': 'ccomp',
-                'QUE-ADV': 'advcl?',
-                'QUE-ADV-LFD': 'advcl?',
+#                'QUE-SPE': 'ccomp',
+#                'QUE-ADV': 'advcl?',
+#                'QUE-ADV-LFD': 'advcl?',
                 'ADV': 'advcl',
-                'ADV-LFD': 'advcl',
+#                'ADV-LFD': 'advcl',
                 'EOP': 'xcomp',
                 'TMC': '',
             }.get(mod_func, 'rel')
