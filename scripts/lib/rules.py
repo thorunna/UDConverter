@@ -270,9 +270,7 @@ feats = {
     },
 #    'SCONJ' : {},   #no features needed for subordinating conjunctions
 #    'CCONJ' : {},   #no features needed for coordinating conjunctions
-#    'ADP' : {},     #no features needed for adpositions
 #    'PART' : {},    #no features possible for particles
-#    'ADV' : {}      #no features possible for particles
 }
 
 head_rules = {
