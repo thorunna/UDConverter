@@ -19,6 +19,8 @@ Machine-specific paths must be specified before use
 
 in_dir="./testing/corpora/icepahc-v0.9/psd_orig"
 out_dir="./testing/corpora/icepahc-v0.9/psd"
+# in_dir="./testing/corpora/icecorpus/psd_orig"
+# out_dir="./testing/corpora/icecorpus/psd"
 
 # Create output directory if needed
 
@@ -75,6 +77,8 @@ for file in $out_dir/*; do
   sed -i "" 's/(NUM-N -)//g' $file    # ath. --- í frumtextanum
   # Replace <dash/> with proper notation
   # sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file # NOTE maybe obsolete, check
+  # Remove -TTT (possibly temporary)
+  sed -i "" 's/-TTT//g' $file
   # Delete empty spaces before (QTP
   sed -i "" 's/^  (QTP/(QTP/g' $file
   # Delete empty spaces before (IP-MAT
