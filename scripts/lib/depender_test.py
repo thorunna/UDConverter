@@ -191,6 +191,8 @@ class Converter():
 
         if '-' in mod_tag:
             mod_tag, mod_func = mod_tag.split('-', 1) #todo, handle more than one function label
+            if mod_tag == 'CP' and '-' in mod_func:
+                mod_func, mod_extra = mod_func.split('-', 1) 
         else:
             mod_func = None
 #        if mod_func == r'[0123456]':     #TODO: virkar ekki, in {'0', '1', '2', '3', '4', '5', '6'}:
@@ -207,13 +209,13 @@ class Converter():
         else:
             head_func = None
 
-        if mod_func:        
-            if '-' in mod_func:
-                mod_func, mod_extra = mod_func.split('-', 1)    
+#        if mod_func:        
+#            if '-' in mod_func:
+#                mod_func, mod_extra = mod_func.split('-', 1)    
 
-        if head_func:        
-            if '-' in head_func:
-                head_func, head_extra = head_func.split('-', 1)
+#        if head_func:        
+#            if '-' in head_func:
+#                head_func, head_extra = head_func.split('-', 1)
 
 #        if mod_tag == 'NP' and mod_func == 'SBJ-1':
 #            return 'expl'
@@ -223,23 +225,40 @@ class Converter():
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
             return {
                 'ADV': '',
+                'ADV-LFD': '',
+                'ADV-RSP': '',
                 'CMP': '',
                 'PRN': 'appos',     #viðurlag, appositive
                 'PRN-ELAB': 'appos',
+                'PRN-REP': '',
+                'RSP': '',
                 'SBJ': 'nsubj',
+                'SBJ-LFD': 'nsubj',
                 'SBJ-RSP': 'nsubj',     #?
+                'SMC': '',
+                'SPE': '',
                 'OB1': 'obj',
+                'OB1-LFD': 'obj',
+                'OB1-RSP': 'obj',
                 'OB2': 'iobj',
+                'OB2-RSP': 'iobj',
                 'OB3': 'iobj',
                 'PRD': 'acl?',    #sagnfylling, predicate
                 'SPR': 'xcomp?',
                 'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
+                'POS-RSP': '',
                 'COM': 'nmod',
                 'ADT': 'obl',    #ATH. rétt?
                 'TMP': 'advmod',  #ATH. rétt?
+                'TMP-LFD': 'advmod',
+                'TMP-RSP': '',
+                'NUM': '',
                 'MSR': 'amod',   #measure phrase
                 'VOC': 'vocative',
-                'DIR': '?'
+                'VOC-LFD': 'vocative',
+                'DIR': '?',
+                'DIR-LFD': '?',
+                'DIR-PRN': '?',
             }.get(mod_func, 'rel')
 #        elif mod_tag == 'N' and head_tag == 'NP':
 #            return 'conj'
@@ -270,26 +289,90 @@ class Converter():
             return {
                 'INF': 'ccomp', #?, xcomp ef ekkert frumlag
 #                'INF=3': '',
+                'INF-ABS': 'ccomp', #TODO: xcomp ef ekkert frumlag
+                'INF-ABS-PRN': 'ccomp', #TODO: xcomp ef ekkert frumlag
                 'INF-PRP': 'advcl',
-                'INF-PRP-PRN': '',
+                'INF-PRP-PRN': 'advcl',
+                'INF-PRP-PRN-SPE': 'advcl',
+                'INF-PRP-SPE': 'advcl',
+                'INF-PRP-SPE-PRN': 'advcl',
                 'INF-SPE': 'xcomp',  #ATH. réttur merkimiði?
+                'INF-SPE-ADT': '?',      # ADT = clause-level dative adjunct
+                'INF-SPE-DEG': '?',
+                'INF-SPE-LFD': 'xcomp?',
+                'INF-SPE-PRN': '?',
+                'INF-SPE-PRN-ELAB': '?',    #sama merki og INF-SPE-PRN
+                'INF-SPE-PRP': 'advcl',
+                'INF-SPE-PRP-PRN': '?',
+                'INF-SPE-SBJ': 'ccomp?',
                 'INF-PRN': 'xcomp', #ADVCL?
-                'INF-SBJ': '',
-                'INF-DEG': '',
+                'INF-PRN-ELAB': 'xcomp',
+                'INF-PRN-PRP': 'advcl',     #notað í til þess að
+                'INF-PRN-SPE': 'xcomp',
+                'INF-RSP': 'ccomp',      # RSP = resumptive
+                'INF-SBJ': '?',
+                'INF-SBJ-SPE': '?',
+                'INF-DEG': '?',
+                'INF-DEG-PRN': '?',
+                'INF-DEG-SPE': '?',
+                'INF-LFD': 'ccomp',     #TODO: xcomp ef ekkert frumlag
+                'INF-PRD': 'advcl?',
                 'INF-ADT': 'advcl?',
-                'INF-ADT-SPE': '',
+                'INF-ADT-SPE': 'advcl?',
+                'INF-ADT-SPE-LFD': 'advcl?',
+                'INF-ADT-LFD': 'advcl?',
+                'INF-ADT-PRN': 'advcl?',
                 'MAT': '',
 #                'MAT=1': '',
+                'MAT-DIR': '',
+                'MAT-LFD': '',
+                'MAT-OB1': '',
                 'MAT-PRN': 'ccomp?',
+                'MAT-PRN-ELAB': '',
+                'MAT-PRN-LFD': '',
+                'MAT-PRN-SPE': '',
+                'MAT-SBJ': '',
+                'MAT-SENT-BEFORE': '',
                 'MAT-SPE': '',
+                'MAT-SPE-PRN': '',
+                'MAT-SPE-PRN-ELAB': '',
+                'MAT-SPE-PRN-LFD': '',
+                'MAT-SPE-SBJ': '',
+                'MAT-SUB-SPE': '',
+                'MAT-SMC': '',
                 'SUB': 'ATH',
+                'SUB-INF': '',
+                'SUB-LFD': '',
                 'SUB-PRN': '',
+                'SUB-PRN-ELAB': '',
+                'SUB-REP': '',
 #                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
                 'SUB-SPE': '',
+                'SUB-SPE-PRN': '',
+                'SUB-SPE-PRN-ELAB': '',
                 'IMP': '',
+                'IMP-PRN': '',
                 'IMP-SPE': '',
+                'IMP-SPE-PRN': '',
+                'IMP-SPE-SBJ': '',
                 'SMC': 'acl?',
+                'SMC-SBJ': 'acl?',
+                'SMC-SPE': 'acl?',
                 'PPL': 'advcl',  #?
+                'PPL-ABS': 'advcl',  #?
+                'PPL-ABS-SPE': 'advcl',  #?
+                'PPL-OB1': 'advcl',  #?
+                'PPL-OB1-SPE': 'advcl',  #?
+                'PPL-OB2': 'advcl',  #?
+                'PPL-PRD': 'advcl',  #?
+                'PPL-PRN': 'advcl',  #?
+                'PPL-SBJ': 'advcl',  #?
+                'PPL-SPE': 'advcl',  #?
+                'PPL-SPE-OB1': 'advcl',  #?
+                'PPL-SPE-PRD': 'advcl',  #?
+                'ABS': '',
+                'ABS-PRN': '',
+                'ABS-SBJ': ''
             }.get(mod_func, 'rel')
         elif mod_tag[0:2] == 'VB' and head_tag == 'CP':
             return 'ccomp'
@@ -305,7 +388,7 @@ class Converter():
             return 'cc'
         elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N', 'PP']:      #N: tvö N í einum NP tengd með CONJ
             return 'conj'
-        elif mod_tag == 'CONJP' and head_tag == 'IP':
+        elif mod_tag == 'CONJP' and head_tag == 'IP':   #TODO: tilgreina allar IP-gerðir sem eru fyrir ofan
             return {
                 'INF': 'ccomp', #?, xcomp ef ekkert frumlag
 #                'INF=3': '',
