@@ -298,7 +298,10 @@ class Word:
         token = self.token
         UD_tag = self.UD_tag
         tag_name, tag_info = self.tag_name, self.tag_info
-        self.features.Case = self.feats[UD_tag]['Case'][tag_info]
+        if tag_info:
+            self.features.Case = self.feats[UD_tag]['Case'][tag_info]
+        else:
+            self.features.Case = None
         self.features.Number = self.feats[UD_tag]['Number'][tag_name]
         try:
             ID = DMII_data.check_DMII(DMII_no, token, self.lemma)
@@ -310,7 +313,7 @@ class Word:
             return self
         except (TypeError, IndexError, KeyError) as err:
         # except Exception as err:
-            self.features.xxx = error_info(err)
+            self.features.ERROR = error_info(err)
             return self
 
     def get_feats_pron(self):
@@ -394,7 +397,7 @@ class Word:
             self.features.Number = self.feats[UD_tag]['Number'][ID.split('-')[2][-2:]]
             return self
         except KeyError as err:
-            self.features.xxx = error_info(err)
+            self.features.ERROR = error_info(err)
             return self
         except TypeError as err:   #handles mismatch between word class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
             try:
@@ -409,10 +412,10 @@ class Word:
                     return self
                 else:
                     self.features.Number = self.feats[UD_tag]['Number'][ID[-2:]]
-                    self.features.xxx = error_info(err)
+                    self.features.ERROR = error_info(err)
                     return self
             except (TypeError, KeyError) as err:
-                self.features.xxx =  error_info(err)
+                self.features.ERROR =  error_info(err)
                 return self
 
     def get_feats_adv(self):
@@ -446,7 +449,7 @@ class Word:
         self.split_tag() # IcePaHC tag split (if applicable)
         self.tag_cleanup() # IcePaHC tag info cleaned
         self.getUD_tag() # UD_tag variable populated
-        if self.tag_info is not None and self.tag_info.isdigit() and self.UD_tag not in {'CCONJ', 'PART'}:
+        if self.tag_info is not None and self.tag_info.isdigit() and self.UD_tag not in {'CCONJ', 'PART', 'SCONJ', 'ADP', 'VERB', 'AUX'}:
             self.features.Case = self.feats[self.UD_tag]['Case']['N']
             return self
         if self.UD_tag in {'VERB', 'AUX'}:    #TODO: include all verbs
