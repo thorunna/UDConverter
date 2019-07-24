@@ -18,7 +18,7 @@ tags = {
     'DO' : 'VERB',  #'gera', do, tagged as verb
     'HV' : 'AUX',   #'have' tagged as auxiliary verb
     'MD' : 'AUX',   #modal verbs tagged as auxiliary
-    'RD' : 'VB',    #'verða', become, tagged as verb
+    'RD' : 'VERB',    #'verða', become, tagged as verb
     'W' : 'DET',    # WH-determiner tagged as DET (determiner)
     'R' : 'VERB',   # All forms of "verða" tagged as VERB
     'TO' : 'PART',  # Infinitive marker tagged as PART (particle)
