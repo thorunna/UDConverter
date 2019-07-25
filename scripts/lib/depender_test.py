@@ -149,7 +149,9 @@ class Converter():
 
         '''
         tag_orig = str(tree.label())
-        tag = re.sub('-\d+', '', tag_orig)   
+        tag = re.sub('-\d+', '', tag_orig)
+        tag = re.sub('-TTT', '', tag)
+        tag = re.sub('=\d+|=X|=X{3}', '', tag)   
         head_rule = head_rules.get(tag, {'dir':'r', 'rules':['.*']})  #default rule, first from left
         rules = head_rule['rules']
         dir = head_rule['dir']
@@ -216,16 +218,12 @@ class Converter():
 #        if head_func:        
 #            if '-' in head_func:
 #                head_func, head_extra = head_func.split('-', 1)
-
-#        if mod_tag == 'NP' and mod_func == 'SBJ-1':
-#            return 'expl'
+        
         if head_tag == 'NP' and head_func == 'SBJ-1':       #TODO: finna aðra lausn til að merkja expl
             return 'expl'
         elif mod_tag == 'NP':   #TODO: hvað ef mod_tag er bara NP?
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
             return relation_NP.get(mod_func, 'rel')
-#        elif mod_tag == 'N' and head_tag == 'NP':
-#            return 'conj'
         elif mod_tag == 'WNP':
             return 'obj'
         elif mod_tag in ['NS', 'N'] and head_tag == 'NP':    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
@@ -234,7 +232,7 @@ class Converter():
             return 'flat:name'
 #        elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj?
 #            return 'obj'
-        elif mod_tag in ['D', 'ONE', 'ONES', 'OTHER', 'OTHERS', 'SUCH']:
+        elif mod_tag in ['D', 'WD', 'ONE', 'ONES', 'OTHER', 'OTHERS', 'SUCH']:
             return 'det'
         elif mod_tag in ['ADJP', 'ADJ', 'ADJR', 'ADJS', 'Q', 'QR', 'QS']:
             # -SPR (secondary predicate)
@@ -249,6 +247,8 @@ class Converter():
             return 'advmod'
         elif mod_tag in ['RP', 'RPX']:
             return 'compound:prt'
+        elif mod_tag == 'IP' and mod_func == 'SUB' and head_tag == 'CP' and head_func == 'FRL':
+            return 'acl:relcl'
         elif mod_tag == 'IP':
             return relation_IP.get(mod_func, 'rel')
         elif mod_tag[0:2] == 'VB' and head_tag == 'CP':
@@ -265,7 +265,7 @@ class Converter():
             return 'cc'
         elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N', 'PP']:      #N: tvö N í einum NP tengd með CONJ
             return 'conj'
-        elif mod_tag == 'CONJP' and head_tag == 'IP':   #TODO: tilgreina allar IP-gerðir sem eru fyrir ofan
+        elif mod_tag == 'CONJP' and head_tag == 'IP':
             return relation_IP.get(head_func, 'rel')
 #        elif mod_tag == 'CP' and mod_func == 'ADV':
 #            return 'VIRKAR'
@@ -364,15 +364,16 @@ class Converter():
 #                if head_nr == mod_nr and re.match("NP-PRD", head_tag):      #ath. virkar þetta rétt? Leið til að láta sagnfyllingu cop vera rót
 #                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
 #                    self.dg.root = self.dg.get_by_address(mod_nr)
-                if head_nr == mod_nr and re.match( "IP-MAT.*", head_tag):  #todo root phrase types from config
-                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
-                    self.dg.root = self.dg.get_by_address(mod_nr)
-                # elif child[0] == '0' or head_tag == 'PP' and child[0] == None:   # or child[0] == None
-                #     continue
-                else:
-                    self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
-                if head_nr != mod_nr:
-                    self.dg.add_arc(head_nr, mod_nr)
+                if child:
+                    if head_nr == mod_nr and re.match( "IP-MAT.*", head_tag):  #todo root phrase types from config
+                        self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
+                        self.dg.root = self.dg.get_by_address(mod_nr)
+                    elif child[0] == '0':
+                        continue
+                    else:
+                        self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
+                    if head_nr != mod_nr:
+                        self.dg.add_arc(head_nr, mod_nr)
 
         return self.dg
 
