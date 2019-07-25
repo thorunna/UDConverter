@@ -359,7 +359,6 @@ head_rules = {
 #            'IP-MAT-PRN=2'  : {'dir':'r', 'rules':['VB.*']},
 #            'IP-MAT-PRN=3'  : {'dir':'r', 'rules':['VB.*']},
             'IP-MAT-SBJ'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'NP', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT']},
-            'IP-MAT-SENT-BEFORE': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'NP', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT']},
             'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE-PRN': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE-PRN-ELAB': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
@@ -775,57 +774,56 @@ relation_IP = {
       'INF-ADT-SPE-LFD': 'advcl?',
       'INF-ADT-LFD': 'advcl?',
       'INF-ADT-PRN': 'advcl?',
-      'MAT': '',
+      'MAT': '',        #þarf ekki að hafa merkimiða því sögnin er alltaf rót?
 #      'MAT=1': '',
-      'MAT-DIR': '',
-      'MAT-LFD': '',
-      'MAT-OB1': '',
+      'MAT-DIR': '',    #sama og MAT    
+      'MAT-LFD': '',    #sama og MAT
+      'MAT-OB1': 'advcl',     #kemur einu sinni fyrir, haus á eftir nær(þegar), jonsteingrims
       'MAT-PRN': 'ccomp?',
-      'MAT-PRN-ELAB': '',
-      'MAT-PRN-LFD': '',
-      'MAT-PRN-SPE': '',
+      'MAT-PRN-ELAB': 'ccomp?',
+      'MAT-PRN-LFD': 'ccomp?',
+      'MAT-PRN-SPE': 'ccomp?',
       'MAT-SBJ': '',
-      'MAT-SENT-BEFORE': '',
       'MAT-SPE': '',
-      'MAT-SPE-PRN': '',
-      'MAT-SPE-PRN-ELAB': '',
-      'MAT-SPE-PRN-LFD': '',
+      'MAT-SPE-PRN': 'ccomp?',
+      'MAT-SPE-PRN-ELAB': 'ccomp?',
+      'MAT-SPE-PRN-LFD': 'ccomp?',
       'MAT-SPE-SBJ': '',
       'MAT-SUB-SPE': '',
-      'MAT-SMC': '',
+      'MAT-SMC': '',    #sama og MAT, kemur einu sinni fyrir og hausinn er rót
       'SUB': 'ATH',
-      'SUB-INF': '',
+      'SUB-INF': 'xcomp',
       'SUB-LFD': '',
-      'SUB-PRN': '',
-      'SUB-PRN-ELAB': '',
-      'SUB-REP': '',
+      'SUB-PRN': 'ccomp/xcomp?',
+      'SUB-PRN-ELAB': 'ccomp/xcomp?',
+      'SUB-REP': '?',    # REP = repetition
 #      'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
       'SUB-SPE': '',
-      'SUB-SPE-PRN': '',
-      'SUB-SPE-PRN-ELAB': '',
-      'IMP': '',
-      'IMP-PRN': '',
-      'IMP-SPE': '',
-      'IMP-SPE-PRN': '',
-      'IMP-SPE-SBJ': '',
+      'SUB-SPE-PRN': 'ccomp/xcomp?',
+      'SUB-SPE-PRN-ELAB': 'ccomp/xcomp?',       # ELAB = elaborations
+      'IMP': 'ccomp',
+      'IMP-PRN': 'ccomp',
+      'IMP-SPE': 'ccomp',
+      'IMP-SPE-PRN': 'ccomp',
+      'IMP-SPE-SBJ': 'ccomp',
       'SMC': 'acl?',
       'SMC-SBJ': 'acl?',
       'SMC-SPE': 'acl?',
-      'PPL': 'advcl',  #?
-      'PPL-ABS': 'advcl',  #?
-      'PPL-ABS-SPE': 'advcl',  #?
-      'PPL-OB1': 'advcl',  #?
-      'PPL-OB1-SPE': 'advcl',  #?
-      'PPL-OB2': 'advcl',  #?
-      'PPL-PRD': 'advcl',  #?
-      'PPL-PRN': 'advcl',  #?
-      'PPL-SBJ': 'advcl',  #?
-      'PPL-SPE': 'advcl',  #?
-      'PPL-SPE-OB1': 'advcl',  #?
-      'PPL-SPE-PRD': 'advcl',  #?
-      'ABS': '',
-      'ABS-PRN': '',
-      'ABS-SBJ': ''
+      'PPL': 'advcl/acl?',  #?
+      'PPL-ABS': 'advcl/acl?',  #?
+      'PPL-ABS-SPE': 'advcl/acl?',  #?
+      'PPL-OB1': 'advcl/acl?',  #?
+      'PPL-OB1-SPE': 'advcl/acl?',  #?
+      'PPL-OB2': 'advcl/acl?',  #?
+      'PPL-PRD': 'advcl/acl?',  #?
+      'PPL-PRN': 'advcl/acl?',  #?
+      'PPL-SBJ': 'advcl/acl?',  #?
+      'PPL-SPE': 'advcl/acl?',  #?
+      'PPL-SPE-OB1': 'advcl/acl?',  #?
+      'PPL-SPE-PRD': 'advcl/acl?',  #?
+      'ABS': 'advcl/acl?',        #absolutus
+      'ABS-PRN': 'advcl/acl?',
+      'ABS-SBJ': 'advcl/acl?'
 }
 
 relation_CP = {
