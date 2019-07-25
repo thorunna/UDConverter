@@ -27,6 +27,7 @@ sed -i "" 's/(IP-MAT-KOMINN/(IP-MAT/' $dir/1210.jartein.rel-sag.psd # .321
 sed -i "" 's/NP-A/NS-A/g' $dir/1250.sturlunga.nar-sag.psd # 135.1604
 sed -i "" 's/(IP-SUB (ADVP-OC/(IP-SUB (ADVP-LOC/g' $dir/1250.sturlunga.nar-sag.psd # 448.2121
 sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1250.sturlunga.nar-sag.psd # 393.186, 419.994, 421.1061, 423.1171
+sed -i "" 's/(WNP-N-1 hver-hver/(WNP-1 (WPRO-N hver-hver/' $dir1250.sturlunga.nar-sag.psd # 427.1265
 
 #1250.thetubrot.nar-sag.psd
 sed -i "" 's/(NP-PRN-LL/NP-PRN/' $dir/1250.thetubrot.nar-sag.psd # .151
@@ -73,6 +74,9 @@ sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1540.ntjohn.r
 
 #1628.olafuregils.bio-tra.psd
 sed -i "" 's/(IP-INF-ZZZ/(IP-INF/' $dir/1628.olafuregils.bio-tra.psd # .205
+
+#1661.indiafari.bio-tra.psd
+sed -i "" 's/(IP-MAT-SENT-BEFORE/(IP-MAT/' $dir/1661.indiafari.bio-tra.psd # .845
 
 #1790.fimmbraedra.nar-sag.psd
 sed -i "" 's/(NP-SBJ-ZZZ-2SBJ/(NP-SBJ/' $dir/1790.fimmbraedra.nar-sag.psd # .1198
