@@ -10,7 +10,7 @@ Part of UniTree project for IcePaHC
 '''
 from lib import features_test as f
 from lib import DMII_data
-from lib.rules import head_rules
+from lib.rules import head_rules, relation_NP, relation_IP, relation_CP
 
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
@@ -191,8 +191,8 @@ class Converter():
 
         if '-' in mod_tag:
             mod_tag, mod_func = mod_tag.split('-', 1) #todo, handle more than one function label
-            if mod_tag == 'CP' and '-' in mod_func:
-                mod_func, mod_extra = mod_func.split('-', 1) 
+#            if mod_tag == 'CP' and '-' in mod_func:
+#                mod_func, mod_extra = mod_func.split('-', 1) 
         else:
             mod_func = None
 #        if mod_func == r'[0123456]':     #TODO: virkar ekki, in {'0', '1', '2', '3', '4', '5', '6'}:
@@ -223,43 +223,7 @@ class Converter():
             return 'expl'
         elif mod_tag == 'NP':   #TODO: hvað ef mod_tag er bara NP?
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
-            return {
-                'ADV': '',
-                'ADV-LFD': '',
-                'ADV-RSP': '',
-                'CMP': '',
-                'PRN': 'appos',     #viðurlag, appositive
-                'PRN-ELAB': 'appos',
-                'PRN-REP': '',
-                'RSP': '',
-                'SBJ': 'nsubj',
-                'SBJ-LFD': 'nsubj',
-                'SBJ-RSP': 'nsubj',     #?
-                'SMC': '',
-                'SPE': '',
-                'OB1': 'obj',
-                'OB1-LFD': 'obj',
-                'OB1-RSP': 'obj',
-                'OB2': 'iobj',
-                'OB2-RSP': 'iobj',
-                'OB3': 'iobj',
-                'PRD': 'acl?',    #sagnfylling, predicate
-                'SPR': 'xcomp?',
-                'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
-                'POS-RSP': '',
-                'COM': 'nmod',
-                'ADT': 'obl',    #ATH. rétt?
-                'TMP': 'advmod',  #ATH. rétt?
-                'TMP-LFD': 'advmod',
-                'TMP-RSP': '',
-                'NUM': '',
-                'MSR': 'amod',   #measure phrase
-                'VOC': 'vocative',
-                'VOC-LFD': 'vocative',
-                'DIR': '?',
-                'DIR-LFD': '?',
-                'DIR-PRN': '?',
-            }.get(mod_func, 'rel')
+            return relation_NP.get(mod_func, 'rel')
 #        elif mod_tag == 'N' and head_tag == 'NP':
 #            return 'conj'
         elif mod_tag == 'WNP':
@@ -286,94 +250,7 @@ class Converter():
         elif mod_tag in ['RP', 'RPX']:
             return 'compound:prt'
         elif mod_tag == 'IP':
-            return {
-                'INF': 'ccomp', #?, xcomp ef ekkert frumlag
-#                'INF=3': '',
-                'INF-ABS': 'ccomp', #TODO: xcomp ef ekkert frumlag
-                'INF-ABS-PRN': 'ccomp', #TODO: xcomp ef ekkert frumlag
-                'INF-PRP': 'advcl',
-                'INF-PRP-PRN': 'advcl',
-                'INF-PRP-PRN-SPE': 'advcl',
-                'INF-PRP-SPE': 'advcl',
-                'INF-PRP-SPE-PRN': 'advcl',
-                'INF-SPE': 'xcomp',  #ATH. réttur merkimiði?
-                'INF-SPE-ADT': '?',      # ADT = clause-level dative adjunct
-                'INF-SPE-DEG': '?',
-                'INF-SPE-LFD': 'xcomp?',
-                'INF-SPE-PRN': '?',
-                'INF-SPE-PRN-ELAB': '?',    #sama merki og INF-SPE-PRN
-                'INF-SPE-PRP': 'advcl',
-                'INF-SPE-PRP-PRN': '?',
-                'INF-SPE-SBJ': 'ccomp?',
-                'INF-PRN': 'xcomp', #ADVCL?
-                'INF-PRN-ELAB': 'xcomp',
-                'INF-PRN-PRP': 'advcl',     #notað í til þess að
-                'INF-PRN-SPE': 'xcomp',
-                'INF-RSP': 'ccomp',      # RSP = resumptive
-                'INF-SBJ': '?',
-                'INF-SBJ-SPE': '?',
-                'INF-DEG': '?',
-                'INF-DEG-PRN': '?',
-                'INF-DEG-SPE': '?',
-                'INF-LFD': 'ccomp',     #TODO: xcomp ef ekkert frumlag
-                'INF-PRD': 'advcl?',
-                'INF-ADT': 'advcl?',
-                'INF-ADT-SPE': 'advcl?',
-                'INF-ADT-SPE-LFD': 'advcl?',
-                'INF-ADT-LFD': 'advcl?',
-                'INF-ADT-PRN': 'advcl?',
-                'MAT': '',
-#                'MAT=1': '',
-                'MAT-DIR': '',
-                'MAT-LFD': '',
-                'MAT-OB1': '',
-                'MAT-PRN': 'ccomp?',
-                'MAT-PRN-ELAB': '',
-                'MAT-PRN-LFD': '',
-                'MAT-PRN-SPE': '',
-                'MAT-SBJ': '',
-                'MAT-SENT-BEFORE': '',
-                'MAT-SPE': '',
-                'MAT-SPE-PRN': '',
-                'MAT-SPE-PRN-ELAB': '',
-                'MAT-SPE-PRN-LFD': '',
-                'MAT-SPE-SBJ': '',
-                'MAT-SUB-SPE': '',
-                'MAT-SMC': '',
-                'SUB': 'ATH',
-                'SUB-INF': '',
-                'SUB-LFD': '',
-                'SUB-PRN': '',
-                'SUB-PRN-ELAB': '',
-                'SUB-REP': '',
-#                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
-                'SUB-SPE': '',
-                'SUB-SPE-PRN': '',
-                'SUB-SPE-PRN-ELAB': '',
-                'IMP': '',
-                'IMP-PRN': '',
-                'IMP-SPE': '',
-                'IMP-SPE-PRN': '',
-                'IMP-SPE-SBJ': '',
-                'SMC': 'acl?',
-                'SMC-SBJ': 'acl?',
-                'SMC-SPE': 'acl?',
-                'PPL': 'advcl',  #?
-                'PPL-ABS': 'advcl',  #?
-                'PPL-ABS-SPE': 'advcl',  #?
-                'PPL-OB1': 'advcl',  #?
-                'PPL-OB1-SPE': 'advcl',  #?
-                'PPL-OB2': 'advcl',  #?
-                'PPL-PRD': 'advcl',  #?
-                'PPL-PRN': 'advcl',  #?
-                'PPL-SBJ': 'advcl',  #?
-                'PPL-SPE': 'advcl',  #?
-                'PPL-SPE-OB1': 'advcl',  #?
-                'PPL-SPE-PRD': 'advcl',  #?
-                'ABS': '',
-                'ABS-PRN': '',
-                'ABS-SBJ': ''
-            }.get(mod_func, 'rel')
+            return relation_IP.get(mod_func, 'rel')
         elif mod_tag[0:2] == 'VB' and head_tag == 'CP':
             return 'ccomp'
         elif mod_tag in ['VAN', 'DAN', 'HAN', 'BAN']:
@@ -389,64 +266,11 @@ class Converter():
         elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N', 'PP']:      #N: tvö N í einum NP tengd með CONJ
             return 'conj'
         elif mod_tag == 'CONJP' and head_tag == 'IP':   #TODO: tilgreina allar IP-gerðir sem eru fyrir ofan
-            return {
-                'INF': 'ccomp', #?, xcomp ef ekkert frumlag
-#                'INF=3': '',
-                'INF-PRP': 'advcl',
-                'INF-PRP-PRN': '',
-                'INF-SPE': 'xcomp',  #ATH. réttur merkimiði?
-                'INF-PRN': 'xcomp', #ADVCL?
-                'INF-SBJ': '',
-                'INF-DEG': '',
-                'INF-ADT': 'advcl?',
-                'INF-ADT-SPE': '',
-                'MAT': '',
-#                'MAT=1': '',
-                'MAT-PRN': 'ccomp?',
-                'MAT-SPE': '',
-                'SUB': 'ATH',
-                'SUB-PRN': '',
-#                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
-                'SUB-SPE': '',
-                'IMP': '',
-                'IMP-SPE': '',
-                'SMC': 'acl?',
-                'PPL': 'advcl',  #?
-            }.get(head_func, 'rel')
+            return relation_IP.get(head_func, 'rel')
 #        elif mod_tag == 'CP' and mod_func == 'ADV':
 #            return 'VIRKAR'
         elif mod_tag == 'CP':
-            return {
-                'THT': 'ccomp',
-#                'THT-SBJ': 'ccomp',
-#                'THT-SBJ-SPE': 'ccomp',
-#                'THT-SPE': 'HALLO',
-#                'THT-SPE-PRN': 'ccomp',
-#                'THT-SPE-SBJ': 'ccomp',
-#                'THT-PRN': 'ccomp',
-#                'THT-PRN-NaN': 'ccomp',
-#                'THT-PRN-SPE': 'ccomp',
-#                'THT-LFD': '',
-#                'THT-RSP': '',
-                'CAR': 'acl:relcl',
-#                'CAR-SPE': 'acl:relcl',
-                'CLF': 'acl:relcl',
-#                'CLF-SPE': 'acl:relcl',
-                'CMP': 'advcl',      #ATH. rétt?
-                'DEG': 'ccomp',      #ATH. rétt?  
-#                'DEG-SPE': 'ccomp',
-                'FRL': 'acl:relcl?',    #ccomp? 
-                'REL': 'acl:relcl',
-#                'REL-SPE': 'acl:relcl',  
-                'QUE': 'ccomp',
-#                'QUE-SPE': 'ccomp',
-#                'QUE-ADV': 'advcl?',
-#                'QUE-ADV-LFD': 'advcl?',
-                'ADV': 'advcl',
-#                'ADV-LFD': 'advcl',
-                'EOP': 'xcomp',
-                'TMC': '',
-            }.get(mod_func, 'rel')
+            return relation_CP.get(mod_func, 'rel')
         elif mod_tag in ['C', 'CP', 'TO', 'WQ']:  #infinitival marker with marker relation
             return 'mark'
         elif mod_tag in ['NUM', 'NUMP']:
