@@ -189,6 +189,15 @@ class Converter():
         mod_tag = re.sub('-\d+', '', mod_tag)
         mod_tag = re.sub('=\d+|=X|=XXX', '', mod_tag)
 
+        head_tag = re.sub('-TTT', '', head_tag)
+        head_tag = re.sub('-\d+', '', head_tag)
+        head_tag = re.sub('=\d+|=X|=XXX', '', head_tag)
+
+        if '+' in mod_tag:
+            mod_tag = re.sub('\w+\+', '', mod_tag)
+        if '+' in head_tag:
+            head_tag = re.sub('\w+\+', '', head_tag)
+
         #todo use head_tag and more info about the constituency to better select the relation label
 
         if '-' in mod_tag:
@@ -221,9 +230,11 @@ class Converter():
         
         if head_tag == 'NP' and head_func == 'SBJ-1':       #TODO: finna aðra lausn til að merkja expl
             return 'expl'
+#        if mod_tag == 'NP' and mod_func == None:
+#            return 'NP???'
         elif mod_tag == 'NP':   #TODO: hvað ef mod_tag er bara NP?
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
-            return relation_NP.get(mod_func, 'rel')
+            return relation_NP.get(mod_func, 'rel-'+mod_tag)
         elif mod_tag == 'WNP':
             return 'obj'
         elif mod_tag in ['NS', 'N'] and head_tag == 'NP':    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
@@ -234,7 +245,7 @@ class Converter():
 #            return 'obj'
         elif mod_tag in ['D', 'WD', 'ONE', 'ONES', 'OTHER', 'OTHERS', 'SUCH']:
             return 'det'
-        elif mod_tag in ['ADJP', 'ADJ', 'ADJR', 'ADJS', 'Q', 'QR', 'QS']:
+        elif mod_tag[:3] == 'ADJ' or mod_tag[:4] == 'WADJ' or mod_tag in ['Q', 'QR', 'QS', 'WQP']:
             # -SPR (secondary predicate)
             return 'amod'
         elif mod_tag in ['PP', 'WPP']:
@@ -242,7 +253,7 @@ class Converter():
             return 'obl'        #NP sem er haus PP fær obl nominal  #TODO: haus CP-ADV (sem er PP) á að vera merktur advcl
         elif mod_tag == 'P':
             return 'case'
-        elif mod_tag[0:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO']:    #FP = focus particles  #QP = quantifier phrase - ATH.
+        elif mod_tag[:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO', 'WADV', 'WADVP']:    #FP = focus particles  #QP = quantifier phrase - ATH.
             # -DIR, -LOC, -TP
             return 'advmod'
         elif mod_tag in ['RP', 'RPX']:
@@ -250,39 +261,43 @@ class Converter():
         elif mod_tag == 'IP' and mod_func == 'SUB' and head_tag == 'CP' and head_func == 'FRL':
             return 'acl:relcl'
         elif mod_tag == 'IP':
-            return relation_IP.get(mod_func, 'rel')
-        elif mod_tag[0:2] == 'VB' and head_tag == 'CP':
+            return relation_IP.get(mod_func, 'rel-'+mod_tag)
+        elif mod_tag[:2] == 'VB' and head_tag == 'CP':
             return 'ccomp'
         elif mod_tag in ['VAN', 'DAN', 'HAN', 'BAN']:
             return 'aux:pass'
         elif mod_tag in ['VBN', 'DON', 'HVN', 'RDN']:   #ath. VBN getur verið rót
             return '?'
-        elif mod_tag[0:2] in ['VB', 'DO', 'HV', 'RD', 'MD']: #todo
+        elif mod_tag[:2] in ['VB', 'DO', 'HV', 'RD', 'MD']: #todo
             return 'aux'
-        elif mod_tag[0:2] == 'BE' or mod_tag == 'BAN':  #copular, TODO: ekki alltaf copular
+        elif mod_tag[:2] == 'BE' or mod_tag == 'BAN':  #copular, TODO: ekki alltaf copular
             return 'cop'
+        elif mod_tag == 'RRC':
+            return 'acl:relcl?'
         elif mod_tag == 'CONJ':
             return 'cc'
         elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N', 'PP']:      #N: tvö N í einum NP tengd með CONJ
             return 'conj'
         elif mod_tag == 'CONJP' and head_tag == 'IP':
-            return relation_IP.get(head_func, 'rel')
-#        elif mod_tag == 'CP' and mod_func == 'ADV':
-#            return 'VIRKAR'
+            return relation_IP.get(head_func, 'rel-'+mod_tag+head_tag+head_func)
+        elif mod_tag == 'CONJP':
+            return 'conj'
         elif mod_tag == 'CP':
-            return relation_CP.get(mod_func, 'rel')
+            return relation_CP.get(mod_func, 'rel-'+mod_tag)
         elif mod_tag in ['C', 'CP', 'TO', 'WQ']:  #infinitival marker with marker relation
             return 'mark'
         elif mod_tag in ['NUM', 'NUMP']:
             return 'nummod'
         elif mod_tag == 'FRAG':
             return 'xcomp'
-        elif mod_tag in string.punctuation:
+        elif mod_tag in string.punctuation or mod_tag == 'LB':
             return 'punct'
         elif mod_tag in ['FW', 'X', 'LATIN']:    #meira?
             return '_'
         elif mod_tag == 'INTJ' or mod_tag == 'INTJP':
             return 'discourse'
+        elif mod_tag in ['XXX', 'FOREIGN', 'FW']:      #XXX = annotator unsure of parse
+            return 'dep'    #unspecified dependency
 
         return 'rel-'+mod_tag
 
@@ -311,7 +326,7 @@ class Converter():
             else:
                 # If trace node, skip (preliminary, may result in errors)
                 # e.g. *T*-3 etc.
-                if t[i][0] in {'0', '*'}:   #if t[1].pos()[0][0] in {'0', '*'}:
+                if t[i][0] in {'0', '*', '{'}:   #if t[1].pos()[0][0] in {'0', '*'}:
                     continue
                 # If terminal node with no label (token-lemma)
                 # e.g. tók-taka
@@ -368,7 +383,7 @@ class Converter():
                     if head_nr == mod_nr and re.match( "IP-MAT.*", head_tag):  #todo root phrase types from config
                         self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
                         self.dg.root = self.dg.get_by_address(mod_nr)
-                    elif child[0] == '0':
+                    elif child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
                         continue
                     else:
                         self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
