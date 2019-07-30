@@ -346,7 +346,7 @@ class Word:
                 self.features.PronType = entry.features.get('PronType')
                 self.features.Gender = entry.features.get('Gender')
             if self.lemma in {'hann', 'hún', 'það'}:
-                self.features.Case = self.feats[self.UD_tag]['Case'][self.lemma]
+                self.features.Gender = self.feats[self.UD_tag]['Gender'][self.lemma]
             else:
                 continue
             return self
