@@ -11,7 +11,7 @@ Part of UniTree project for IcePaHC
 
 from lib import features as f
 from lib import DMII_data
-from lib.rules import head_rules
+from lib.rules import head_rules, relation_NP, relation_IP, relation_CP
 
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
@@ -188,10 +188,21 @@ class Converter():
         mod_tag = re.sub('-\d+', '', mod_tag)
         mod_tag = re.sub('=\d+|=X|=XXX', '', mod_tag)
 
+        head_tag = re.sub('-TTT', '', head_tag)
+        head_tag = re.sub('-\d+', '', head_tag)
+        head_tag = re.sub('=\d+|=X|=XXX', '', head_tag)
+
+        if '+' in mod_tag:
+            mod_tag = re.sub('\w+\+', '', mod_tag)
+        if '+' in head_tag:
+            head_tag = re.sub('\w+\+', '', head_tag)
+
         #todo use head_tag and more info about the constituency to better select the relation label
 
         if '-' in mod_tag:
             mod_tag, mod_func = mod_tag.split('-', 1) #todo, handle more than one function label
+#            if mod_tag == 'CP' and '-' in mod_func:
+#                mod_func, mod_extra = mod_func.split('-', 1) 
         else:
             mod_func = None
 #        if mod_func == r'[0123456]':     #TODO: virkar ekki, in {'0', '1', '2', '3', '4', '5', '6'}:
@@ -208,175 +219,92 @@ class Converter():
         else:
             head_func = None
 
-        if mod_func:
-            if '-' in mod_func:
-                mod_func, mod_extra = mod_func.split('-', 1)
+#        if mod_func:        
+#            if '-' in mod_func:
+#                mod_func, mod_extra = mod_func.split('-', 1)    
 
-        if head_func:
-            if '-' in head_func:
-                head_func, head_extra = head_func.split('-', 1)
-
-#        if mod_tag == 'NP' and mod_func == 'SBJ-1':
-#            return 'expl'
+#        if head_func:        
+#            if '-' in head_func:
+#                head_func, head_extra = head_func.split('-', 1)
+        
         if head_tag == 'NP' and head_func == 'SBJ-1':       #TODO: finna aðra lausn til að merkja expl
             return 'expl'
-        elif mod_tag == 'NP':   #TODO: hvað ef mod_tag er bara NP?
+#        elif mod_tag == 'NS':
+#            return 'HALLO'
+#        if mod_tag == 'NP' and mod_func == None:
+#            return 'NP???'
+        elif mod_tag in ['NP', 'NX']:   #TODO: hvað ef mod_tag er bara NP?
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
-            return {
-                'ADV': '',
-                'CMP': '',
-                'PRN': 'appos',     #viðurlag, appositive
-                'PRN-ELAB': 'appos',
-                'SBJ': 'nsubj',
-                'SBJ-RSP': 'nsubj',     #?
-                'OB1': 'obj',
-                'OB2': 'iobj',
-                'OB3': 'iobj',
-                'PRD': 'acl?',    #sagnfylling, predicate
-                'SPR': 'xcomp?',
-                'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
-                'COM': 'nmod',
-                'ADT': 'obl',    #ATH. rétt?
-                'TMP': 'advmod',  #ATH. rétt?
-                'MSR': 'amod',   #measure phrase
-                'VOC': 'vocative',
-                'DIR': '?'
-            }.get(mod_func, 'rel')
-#        elif mod_tag == 'N' and head_tag == 'NP':
-#            return 'conj'
+            return relation_NP.get(mod_func, 'rel-'+mod_tag)
         elif mod_tag == 'WNP':
             return 'obj'
-        elif mod_tag in ['NS', 'N'] and head_tag == 'NP':    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
+        elif mod_tag in ['NS', 'N', 'NPRS'] and head_tag in ['NP', 'NX', 'QTP', 'ADJP', 'CONJP']:    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
             return 'conj'
         elif mod_tag == 'NPR' and head_tag == 'NP':
             return 'flat:name'
+        elif mod_tag == 'ES':
+            return 'expl'   #expletive
+        elif mod_tag in ['PRO', 'WPRO']:
+            return 'nmod?'
 #        elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj?
 #            return 'obj'
-        elif mod_tag in ['D', 'ONE', 'ONES', 'OTHER', 'OTHERS', 'SUCH']:
+        elif mod_tag in ['D', 'WD', 'ONE', 'ONES', 'OTHER', 'OTHERS', 'SUCH']:
             return 'det'
-        elif mod_tag in ['ADJP', 'ADJ', 'ADJR', 'ADJS', 'Q', 'QR', 'QS']:
+        elif mod_tag[:3] == 'ADJ' or mod_tag[:4] == 'WADJ' or mod_tag in ['Q', 'QR', 'QS', 'WQP']:
             # -SPR (secondary predicate)
             return 'amod'
-        elif mod_tag in ['PP', 'WPP']:
+        elif mod_tag in ['PP', 'WPP', 'PX']:
             # -BY, -PRN
             return 'obl'        #NP sem er haus PP fær obl nominal  #TODO: haus CP-ADV (sem er PP) á að vera merktur advcl
         elif mod_tag == 'P':
             return 'case'
-        elif mod_tag[0:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO']:    #FP = focus particles  #QP = quantifier phrase - ATH.
+        elif mod_tag[:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO', 'WADV', 'WADVP']:    #FP = focus particles  #QP = quantifier phrase - ATH.
             # -DIR, -LOC, -TP
             return 'advmod'
         elif mod_tag in ['RP', 'RPX']:
             return 'compound:prt'
-        elif mod_tag == 'IP':
-            return {
-                'INF': 'ccomp', #?, xcomp ef ekkert frumlag
-#                'INF=3': '',
-                'INF-PRP': 'advcl',
-                'INF-PRP-PRN': '',
-                'INF-SPE': 'xcomp',  #ATH. réttur merkimiði?
-                'INF-PRN': 'xcomp', #ADVCL?
-                'INF-SBJ': '',
-                'INF-DEG': '',
-                'INF-ADT': 'advcl?',
-                'INF-ADT-SPE': '',
-                'MAT': '',
-#                'MAT=1': '',
-                'MAT-PRN': 'ccomp?',
-                'MAT-SPE': '',
-                'SUB': 'ATH',
-                'SUB-PRN': '',
-#                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
-                'SUB-SPE': '',
-                'IMP': '',
-                'IMP-SPE': '',
-                'SMC': 'acl?',
-                'PPL': 'advcl',  #?
-            }.get(mod_func, 'rel')
-        elif mod_tag[0:2] == 'VB' and head_tag == 'CP':
+        elif mod_tag == 'IP' and mod_func == 'SUB' and head_tag == 'CP' and head_func == 'FRL':
+            return 'acl:relcl'
+        elif mod_tag in ['IP', 'VP']:
+            return relation_IP.get(mod_func, 'rel-'+mod_tag)
+        elif mod_tag[:2] == 'VB' and head_tag == 'CP':
             return 'ccomp'
         elif mod_tag in ['VAN', 'DAN', 'HAN', 'BAN']:
             return 'aux:pass'
         elif mod_tag in ['VBN', 'DON', 'HVN', 'RDN']:   #ath. VBN getur verið rót
             return '?'
-        elif mod_tag[0:2] in ['VB', 'DO', 'HV', 'RD', 'MD']: #todo
+        elif mod_tag[:2] in ['VB', 'DO', 'HV', 'RD', 'MD']: #todo
             return 'aux'
-        elif mod_tag[0:2] == 'BE' or mod_tag == 'BAN':  #copular, TODO: ekki alltaf copular
+        elif mod_tag[:2] == 'BE' or mod_tag == 'BAN':  #copular, TODO: ekki alltaf copular
             return 'cop'
+        elif mod_tag == 'VAG':
+            return 'amod?'
+        elif mod_tag == 'RRC':
+            return 'acl:relcl?'
         elif mod_tag == 'CONJ':
             return 'cc'
         elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N', 'PP']:      #N: tvö N í einum NP tengd með CONJ
             return 'conj'
         elif mod_tag == 'CONJP' and head_tag == 'IP':
-            return {
-                'INF': 'ccomp', #?, xcomp ef ekkert frumlag
-#                'INF=3': '',
-                'INF-PRP': 'advcl',
-                'INF-PRP-PRN': '',
-                'INF-SPE': 'xcomp',  #ATH. réttur merkimiði?
-                'INF-PRN': 'xcomp', #ADVCL?
-                'INF-SBJ': '',
-                'INF-DEG': '',
-                'INF-ADT': 'advcl?',
-                'INF-ADT-SPE': '',
-                'MAT': '',
-#                'MAT=1': '',
-                'MAT-PRN': 'ccomp?',
-                'MAT-SPE': '',
-                'SUB': 'ATH',
-                'SUB-PRN': '',
-#                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
-                'SUB-SPE': '',
-                'IMP': '',
-                'IMP-SPE': '',
-                'SMC': 'acl?',
-                'PPL': 'advcl',  #?
-            }.get(head_func, 'rel')
-#        elif mod_tag == 'CP' and mod_func == 'ADV':
-#            return 'VIRKAR'
+            return relation_IP.get(head_func, 'rel-'+mod_tag+head_tag+head_func)
+        elif mod_tag == 'CONJP':
+            return 'conj'
         elif mod_tag == 'CP':
-            return {
-                'THT': 'ccomp',
-#                'THT-SBJ': 'ccomp',
-#                'THT-SBJ-SPE': 'ccomp',
-#                'THT-SPE': 'HALLO',
-#                'THT-SPE-PRN': 'ccomp',
-#                'THT-SPE-SBJ': 'ccomp',
-#                'THT-PRN': 'ccomp',
-#                'THT-PRN-NaN': 'ccomp',
-#                'THT-PRN-SPE': 'ccomp',
-#                'THT-LFD': '',
-#                'THT-RSP': '',
-                'CAR': 'acl:relcl',
-#                'CAR-SPE': 'acl:relcl',
-                'CLF': 'acl:relcl',
-#                'CLF-SPE': 'acl:relcl',
-                'CMP': 'advcl',      #ATH. rétt?
-                'DEG': 'ccomp',      #ATH. rétt?
-#                'DEG-SPE': 'ccomp',
-                'FRL': 'acl:relcl?',    #ccomp?
-                'REL': 'acl:relcl',
-#                'REL-SPE': 'acl:relcl',
-                'QUE': 'ccomp',
-#                'QUE-SPE': 'ccomp',
-#                'QUE-ADV': 'advcl?',
-#                'QUE-ADV-LFD': 'advcl?',
-                'ADV': 'advcl',
-#                'ADV-LFD': 'advcl',
-                'EOP': 'xcomp',
-                'TMC': '',
-            }.get(mod_func, 'rel')
+            return relation_CP.get(mod_func, 'rel-'+mod_tag)
         elif mod_tag in ['C', 'CP', 'TO', 'WQ']:  #infinitival marker with marker relation
             return 'mark'
         elif mod_tag in ['NUM', 'NUMP']:
             return 'nummod'
         elif mod_tag == 'FRAG':
             return 'xcomp'
-        elif mod_tag in string.punctuation:
+        elif mod_tag in string.punctuation or mod_tag == 'LB':
             return 'punct'
         elif mod_tag in ['FW', 'X', 'LATIN']:    #meira?
             return '_'
         elif mod_tag == 'INTJ' or mod_tag == 'INTJP':
             return 'discourse'
+        elif mod_tag in ['XXX', 'FOREIGN', 'FW', 'QTP', 'REP', 'META']:      #XXX = annotator unsure of parse
+            return 'dep'    #unspecified dependency
 
         return 'rel-'+mod_tag
 
@@ -454,21 +382,26 @@ class Converter():
         for i in const:
             head_tag = t[i].label()
             head_nr = t[i].id()
+            if re.search(r'\w{1,5}(21|22|31|32|33)', head_tag):
+                head_tag = re.sub('(21|22|31|32|33)', '', head_tag)
             for child in t[i]:
                 mod_tag = child.label()
+                if re.search(r'\w{1,5}(21|22|31|32|33)', mod_tag):
+                    mod_tag = re.sub('(21|22|31|32|33)', '', mod_tag)
                 mod_nr = child.id()
 #                if head_nr == mod_nr and re.match("NP-PRD", head_tag):      #ath. virkar þetta rétt? Leið til að láta sagnfyllingu cop vera rót
 #                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
 #                    self.dg.root = self.dg.get_by_address(mod_nr)
-                if head_nr == mod_nr and re.match( "IP-MAT.*", head_tag):  #todo root phrase types from config
-                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
-                    self.dg.root = self.dg.get_by_address(mod_nr)
-                # elif child[0] == '0' or head_tag == 'PP' and child[0] == None:   # or child[0] == None
-                #     continue
-                else:
-                    self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
-                if head_nr != mod_nr:
-                    self.dg.add_arc(head_nr, mod_nr)
+                if child:
+                    if head_nr == mod_nr and re.match( "IP-MAT.*", head_tag):  #todo root phrase types from config
+                        self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
+                        self.dg.root = self.dg.get_by_address(mod_nr)
+                    elif child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
+                        continue
+                    else:
+                        self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
+                    if head_nr != mod_nr:
+                        self.dg.add_arc(head_nr, mod_nr)
 
         return self.dg
 
