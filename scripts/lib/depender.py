@@ -9,9 +9,9 @@ Based on earlier work by
 Part of UniTree project for IcePaHC
 '''
 
-from lib_test import features_test_test as f
-from lib_test import DMII_data
-from lib_test.rules import head_rules
+from lib import features as f
+from lib import DMII_data
+from lib.rules import head_rules
 
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph

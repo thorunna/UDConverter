@@ -7,8 +7,8 @@ Hinrik Hafsteinsson (hih43@hi.is)
 Part of UniTree project for IcePaHC
 '''
 
-from lib_test import DMII_data
-from lib_test.rules import tags, feats, cconj
+from lib import DMII_data
+from lib.rules import tags, feats, cconj
 import string
 import re
 from nltk.tree import Tree
