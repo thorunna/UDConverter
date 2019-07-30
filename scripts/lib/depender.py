@@ -9,7 +9,7 @@ Based on earlier work by
 Part of UniTree project for IcePaHC
 '''
 
-from lib import features as f
+#from lib import features as f
 from lib import DMII_data
 from lib.rules import head_rules, relation_NP, relation_IP, relation_CP
 
@@ -227,18 +227,20 @@ class Converter():
 #            if '-' in head_func:
 #                head_func, head_extra = head_func.split('-', 1)
         
-        if head_tag == 'NP' and head_func == 'SBJ-1':       #TODO: finna aðra lausn til að merkja expl
-            return 'expl'
+#        if head_tag == 'NP' and head_func == 'SBJ-1':       #TODO: finna aðra lausn til að merkja expl
+#            return 'expl'
 #        elif mod_tag == 'NS':
 #            return 'HALLO'
 #        if mod_tag == 'NP' and mod_func == None:
 #            return 'NP???'
-        elif mod_tag in ['NP', 'NX']:   #TODO: hvað ef mod_tag er bara NP?
+        if mod_tag in ['NP', 'NX']:   #TODO: hvað ef mod_tag er bara NP?
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
             return relation_NP.get(mod_func, 'rel-'+mod_tag)
         elif mod_tag == 'WNP':
             return 'obj'
-        elif mod_tag in ['NS', 'N', 'NPRS'] and head_tag in ['NP', 'NX', 'QTP', 'ADJP', 'CONJP']:    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
+        elif mod_tag in ['NS', 'N', 'NPRS'] and head_tag in ['NP', 'NX', 'QTP', 'ADJP', 'CONJP', 'NPR']:    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
+            return 'conj'
+        elif mod_tag == 'NPR' and head_tag == 'CONJP':
             return 'conj'
         elif mod_tag == 'NPR' and head_tag == 'NP':
             return 'flat:name'
@@ -261,6 +263,8 @@ class Converter():
         elif mod_tag[:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO', 'WADV', 'WADVP']:    #FP = focus particles  #QP = quantifier phrase - ATH.
             # -DIR, -LOC, -TP
             return 'advmod'
+        elif mod_tag == 'NS' and head_tag == 'ADVP' and head_func == 'TMP':     #ath. virkar fyrir eitt dæmi, of greedy?
+            return 'conj'
         elif mod_tag in ['RP', 'RPX']:
             return 'compound:prt'
         elif mod_tag == 'IP' and mod_func == 'SUB' and head_tag == 'CP' and head_func == 'FRL':
@@ -303,10 +307,10 @@ class Converter():
             return '_'
         elif mod_tag == 'INTJ' or mod_tag == 'INTJP':
             return 'discourse'
-        elif mod_tag in ['XXX', 'FOREIGN', 'FW', 'QTP', 'REP', 'META']:      #XXX = annotator unsure of parse
+        elif mod_tag in ['XXX', 'FOREIGN', 'FW', 'QTP', 'REP', 'META', 'FS', 'LS']:      #XXX = annotator unsure of parse, LS = list marker
             return 'dep'    #unspecified dependency
 
-        return 'rel-'+mod_tag
+        return 'rel-'+mod_tag+head_tag
 
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree."""
@@ -360,15 +364,17 @@ class Converter():
                 leaf = token_lemma, tag
                 XPOS = tag
                 # Feature Classes called here
-                leaf = f.Word(leaf).getinfo()
-                UPOS = leaf.UD_tag
-                FEATS = leaf.features.featString()
+                #leaf = f.Word(leaf).getinfo()
+                #UPOS = leaf.UD_tag
+                #FEATS = leaf.features.featString()
                 self.dg.add_node({'address': nr,
                                   'word': FORM,
                                   'lemma': LEMMA,
-                                  'ctag': UPOS, # upostag
+                                  #'ctag': UPOS, # upostag
+                                  'ctag': None, # upostag
                                   'tag': XPOS,   # xpostag
-                                  'feats': FEATS,
+                                  #'feats': FEATS,
+                                  'feats': None,
                                   'deps': defaultdict(list),
                                   'rel': None})
                 nr += 1
