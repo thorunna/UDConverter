@@ -181,11 +181,8 @@ class Word:
 
         # TODO: find permanent fix for this, where -N is not default
         # e.g. join words in .psd file that have these numbers in tag
-        if re.search(r'^N(21|22|31|32|33)', self.tag[-2:]):
+        if re.search(r'\w{1,5}(21|22|31|32|33)', self.tag):
             self.tag = re.sub(r'(21|22|31|32|33)', '-N', self.tag)
-            return self.split_tag()
-        if re.search(r'(21|22|31|32|33)-?', self.tag):
-            self.tag = re.sub(r'(21|22|31|32|33)', '', self.tag)
             return self.split_tag()
 
         return self
