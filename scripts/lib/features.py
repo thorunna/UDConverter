@@ -1,14 +1,19 @@
-from lib import DMII_data
-from lib.rules import tags, feats
+
+'''
+features_test.py
+Hinrik Hafsteinsson (hih43@hi.is)
+Þórunn Arnardóttir (tha86@hi.is)
+2019
+Part of UniTree project for IcePaHC
+'''
+
+from lib_test import DMII_data
+from lib_test.rules import tags, feats, cconj
 import string
 import re
-
-"""DMII_no = DMII_data.load_json('no')
-DMII_lo = DMII_data.load_json('lo')
-DMII_fn = DMII_data.load_json('fn')
-DMII_to = DMII_data.load_json('to')
-DMII_ao = DMII_data.load_json('ao')
-DMII_so = DMII_data.load_json('so')"""
+from nltk.tree import Tree
+from collections import OrderedDict
+import inspect
 
 DMII_no = DMII_data.DMII_data('no')
 DMII_lo = DMII_data.DMII_data('lo')
@@ -17,333 +22,475 @@ DMII_to = DMII_data.DMII_data('to')
 DMII_ao = DMII_data.DMII_data('ao')
 DMII_so = DMII_data.DMII_data('so')
 
-cconj = {'og', 'eða', 'en', 'heldur', 'enda', 'ellegar',
-        'bæði','hvorki','annaðhvort','hvort', 'ýmist'}
-
-"""
-def check_def(word):
-    if word[-1] == '$':
-        det = 'Definite=Def'
-    else:
-        det = 'Definite=Ind'
-    return det
-"""
-
-def get_UD_tag(tag, word):
-    # if ipsd_tag.beginswith('NPR'):
-    #     return tags['NPR']
-    tag = tag.split('-')[0]
-    if tag.endswith('21') or tag.endswith('22') or tag.endswith('31') or tag.endswith('32') or tag.endswith('33'):
-        tag = re.sub('21', '', tag)
-        tag = re.sub('22', '', tag)
-        tag = re.sub('31', '', tag)
-        tag = re.sub('32', '', tag)
-        tag = re.sub('33', '', tag)
-    try:
-        return tags[tag]
-    except:
-        #if tag == 'NEG':
-        #    return tags[tag]
-        # elif tag.startswith('NUM') or tag.startswith('ONE'):
-        #     return 'NUM'
-        if tag[0:2] == 'DO' or tag[0:2] == 'DA' or tag[0:2] == 'RD' or tag[0:2] == 'RA':
-            return 'VERB'       #ATH. merkt sem sögn í bili
-        elif tag[0:2] == 'BE' or tag[0:2] == 'BA' or tag[0:2] == 'HV' or tag[0:2] == 'HA' or tag[0:2] == 'MD' or tag[0:2] == 'MA':
-            return 'AUX'
-        elif tag == 'CONJ' and word in cconj:
-            return 'CCONJ'
-        elif tag in string.punctuation:
-            return 'PUNCT'
-        else:
-            try:
-                return tags[tag[0]]
-            except:
-                return '_'
 
 
-def get_feats_verb(lemma, token, tag, UD_tag):
-    if len(tag) == 2 or tag.endswith('TTT') or tag == 'VB-1' or tag == 'VB-3' or tag == 'VB-2':       #infinitive
-        verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['inf']
-        return verbform
-    elif tag[:3] == 'VAN' or tag[:3] == 'VBN' or tag[:3] == 'DAN' or tag[:3] == 'DON':     #VAN (lh.þt. í þolmynd) og VBN (lh.þt.)
-        part_feats = feats_verb_part(lemma, token, tag, UD_tag)
-        return part_feats
-    elif tag[1:3] == 'AG':      #lh.nt., VAG, DAG og RAG 
-        verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['part']
-        tense = 'Tense='+feats[UD_tag]['Tense']['NT']
-        return tense+'|'+verbform
-    elif len(tag) == 3 and tag[2] == 'I':     #imperative
-        mood = 'Mood='+feats[UD_tag]['Mood']['IMP']
-        return mood
-    elif len(tag) == 3:
-        rdn_feats = feats_verb_part(lemma, token, tag, UD_tag)
-        return rdn_feats
-    else:
-        else_feats = feats_verb_else(lemma, token, tag, UD_tag)
-        return else_feats                    
+def error_info(err):
+    '''
+    Debug method
+    Returns the current line number in our program and type of exception.
+    '''
+    err = str(type(err).__name__)
+    return err+' Loc: '+str(inspect.currentframe().f_back.f_lineno)
 
-def feats_verb_part(lemma, token, tag, UD_tag):     #VAN, VBN, DAN, DON, RDN
-    if '-' in tag:
-        tag = tag.split('-')[0]
-    try:
-        for k, v in DMII_so.items():
-            if token == k[0] and lemma == k[1] and v[0].startswith('LHÞT') or v[0].startswith('OP-LHÞT'):
-                if v[0].startswith('OP-'):
-                    ID = re.sub('OP-', '', v[0])
-                ID = v[0]
-                case = 'Case='+feats[UD_tag]['Case'][(ID.split('-')[3])[:-2]]
-                num = 'Number='+feats[UD_tag]['Number'][(ID.split('-')[3])[-2:]]
-                gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[2]]
-                tense = 'Tense='+feats[UD_tag]['Tense']['ÞT']
-                verbform = 'VerbForm='+feats[UD_tag]['VerbForm']['part']
-                if tag[1] == 'B':
-                    return case+'|'+num+'|'+gender+'|'+tense+'|'+verbform
-                elif tag[1] == 'A':
-                    voice = 'Voice='+feats[UD_tag]['Voice']['pass']
-                    return case+'|'+voice+'|'+num+'|'+gender+'|'+tense+'|'+verbform
-            elif token == k[0] and lemma == k[1] and v[0].endswith('SAGNB'):
-                ID = v[0]
-                verbform = 'VerbForm='+feats[UD_tag]['VerbForm'][ID.split('-')[1]]
-                voice = 'Voice='+feats[UD_tag]['Voice'][ID.split('-')[0]]
-                return voice+'|'+verbform
-            else:
-                return 'Orðasamstæða finnst ekki í BÍN-dictinu'
-    except KeyError:
-        return 'lykill finnst ekki'
-    except TypeError:
-        return 'orð finnst ekki í BÍN'
+class IcelandicUDFeatures:
+    """
+    Class for handling features of a Word class object
+    Each feature is an instance variable with default value None and is updated
+    by class methods in Word class (see below), per word
+    """
 
-def feats_verb_else(lemma, token, tag, UD_tag):
-    try:
-        ID = DMII_data.check_DMII(DMII_so, token, lemma)[0]
-        if ID.startswith('OP'):     #upplýsingar um ópersónulega beygingu teknar út
-            ID = re.sub('OP-', '', ID)
-        tense = 'Tense='+feats[UD_tag]['Tense'][ID.split('-')[2]]
-        mood = 'Mood='+feats[UD_tag]['Mood'][ID.split('-')[1]]
-        voice = 'Voice='+feats[UD_tag]['Voice'][ID.split('-')[0]]
-        person = 'Person='+feats[UD_tag]['Person'][ID.split('-')[3]]
-        num = 'Number='+feats[UD_tag]['Number'][ID.split('-')[4]]
-        return person+'|'+num+'|'+mood+'|'+tense+'|'+voice        #TODO: finna orð í BÍN með hjálp tense og mood
-    except (TypeError, KeyError, IndexError):   #ef orð finnst ekki í BÍN eru upplýsingar frá Icepahc notaðar
-        if tag[2] == 'D':
-            tense = 'Tense='+feats[UD_tag]['Tense']['ÞT']
-        elif tag[2] == 'P':
-            tense = 'Tense='+feats[UD_tag]['Tense']['NT']
-        if tag[3] == 'I':
-            mood = 'Mood='+feats[UD_tag]['Mood']['FH']
-            return mood+'|'+tense 
-        elif tag[3] == 'S':
-            mood = 'Mood='+feats[UD_tag]['Mood']['VH']
-            return mood+'|'+tense 
+    def __init__(self):
+        # Feature list
+        self.Case = None
+        self.Number = None
+        self.Definite = None
+        self.Gender = None
+        self.PronType = None
+        self.Degree = None
+        self.Mood = None
+        self.Tense = None
+        self.VerbForm = None
+        self.Voice = None
+        self.Person = None
+        self.NumType = None
+        self.AdpType = None
+        self.Clitic = None
+        # Compiled features
+        self.all_features = None
+        # Debug
+        self.ERROR = None
 
-
-def get_feats_noun(lemma, token, UD_tag, tag_name, case):
-    if tag_name.endswith('21') or tag_name.endswith('22') or tag_name.endswith('31') or tag_name.endswith('32') or tag_name.endswith('33'):
-        tag_name = re.sub('21', '', tag_name)
-        tag_name = re.sub('22', '', tag_name)
-        tag_name = re.sub('31', '', tag_name)
-        tag_name = re.sub('32', '', tag_name)
-        tag_name = re.sub('33', '', tag_name)
-    num = 'Number='+feats[UD_tag]['Number'][tag_name]
-#    det = check_def(token)
-#    token = token.replace('$', '')
-    try:
-        ID = DMII_data.check_DMII(DMII_no, token, lemma)
-        gender = 'Gender='+feats[UD_tag]['Gender'][ID[1]]
-        if ID[0].endswith('gr'):
-            det = 'Definite=Def'
-        else:
-            det = 'Definite=Ind' 
-        return case+'|'+num+'|'+gender+'|'+det
-    except (TypeError, IndexError):
-        return case+'|'+num+'*'+'*'
-
-def get_feats_pron(UD_tag, case, token):
-    for k, v in DMII_fn.items():
-        if v[1] == 'pfn':
-            nummark = v[0]
-            num = 'Number='+feats[UD_tag]['Number'][nummark[-2:]]
-            prontype = 'PronType='+feats[UD_tag]['PronType'][v[1]]
-            if token.startswith('$'):
-                clitic = 'Clitic=Yes'
-                return clitic+'|'+case+'|'+num+'|'+prontype
-            else:
-                return case+'|'+num+'|'+prontype
-        if v[1] == 'abfn':
-            num = 'Number='+feats[UD_tag]['Number']['ET']
-            prontype = 'PronType='+feats[UD_tag]['PronType'][v[1]]
-            return case+'|'+num+'|'+prontype
-        if v[1] == 'fn':
-            mark = v[0]
-            try:
-                num = 'Number='+feats[UD_tag]['Number'][mark[-2:]]
-            except KeyError:
-                num = '*'
-            if '_' in mark:
-                gender = 'Gender='+feats[UD_tag]['Gender'][mark.split('_')[1]]
-                if token.startswith('$'):
-                    clitic = 'Clitic=Yes'
-                    return clitic+'|'+case+'|'+num+'|'+gender
+    def setAll_features(self):
+        '''
+        Joins features present into a dict object (self.all_features) where
+        feature variable names are keys and with their respective attr values
+        as dict values
+        '''
+        if not isinstance(self.all_features, str):
+            feats = {}
+            for k,v in self.__dict__.items():
+                if v is not None:
+                    feats[k] = v
                 else:
-                    return case+'|'+num+'|'+gender
-            elif '-' in mark:
-                gender = 'Gender='+feats[UD_tag]['Gender'][mark.split('-')[0]]
-                if token.startswith('$'):
-                    clitic = 'Clitic=Yes'
-                    return clitic+'|'+case+'|'+num+'|'+gender
-                else:
-                    return case+'|'+num+'|'+gender
+                    continue
+            self.all_features = feats
 
-def get_feats_num(lemma, token, UD_tag, case, tag_name):
-    try:
-        ID = DMII_data.check_DMII(DMII_to, token, lemma)[0]
-        gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('_')[0]]
-        mark = ID.split('_')[1]
-        num = 'Number='+feats[UD_tag]['Number'][mark[-2:]]
-        if tag_name[-1] == 'P':
-            numtype = 'NumType='+feats[UD_tag]['NumType']['P']
-            return case+'|'+num+'|'+gender+'|'+numtype
-        else:
-            numtype = 'NumType='+feats[UD_tag]['NumType']['O']
-            return case+'|'+num+'|'+gender+'|'+numtype
-    except (TypeError, KeyError):   #ef orðið finnst ekki
-        if tag_name[-1] == 'P':
-            numtype = 'NumType='+feats[UD_tag]['NumType']['P']
-            return numtype
-        else:
-            numtype = 'NumType='+feats[UD_tag]['NumType']['O']
-            return case+'|'+numtype
+    def featString(self):
+        '''
+        returns feature dict in string format that matches ConllU output
+        returns '_' if feature dict empty
 
-def get_feats_adj(lemma, token, UD_tag, case, tag_name):
-    if tag_name[-1] == 'R':
-        degree = 'Degree='+feats[UD_tag]['Degree']['R']
-    elif tag_name[-1] == 'S':
-        degree = 'Degree='+feats[UD_tag]['Degree']['S']
-    else:
-        degree = 'Degree='+feats[UD_tag]['Degree']['P']
-    try:
-        ID = DMII_data.check_DMII(DMII_lo, token, lemma)[0]
-        gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[1]]
-        num = 'Number='+feats[UD_tag]['Number'][ID.split('-')[2][-2:]]
-        return case+'|'+num+'|'+degree+'|'+gender
-    except KeyError:
-        return case+'|'+degree+'*'
-    except TypeError:   #handles mismatch between word class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
+        ex: Number=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=1
+        ex: _
+
+        # TODO: FIX ORDER
+        '''
+        # TODO: Order output (random as is)
+        NoneType = type(None)
+        if not isinstance(self.all_features, (str, NoneType)):
+            return '|'.join(['='.join([k,v]) for k,v in self.all_features.items()])
+        else:
+            return self.all_features
+
+class Word:
+    '''
+    Class for finding Icelandic grammatical features of words in Universal
+    Dependency (UD) format. Uses DMII data extensively
+
+    Uses Tree.pos objects from NLTK Tree module (here called leaf objects)
+    to get Universal Dependency format POS tage
+
+    Saves further grammatical features in a IcelandicUDFeatures class instance
+
+    # TODO: Add all word classes from original features.py script
+    '''
+
+    def __init__(self, leaf):
+        self.leaf = leaf
+        self.lemma = leaf[0].split('-')[1]
+        self.token = leaf[0].split('-')[0].lower()
+        self.tag = leaf[1]
+        self.tag_name = None
+        self.tag_info = None
+        self.tag_extra = None
+        self.UD_tag = None
+        self.features = IcelandicUDFeatures() # Feature class instance created
+        self.tags = tags
+        self.feats = feats
+        self.cconj = cconj
+
+    def getUD_tag(self):
+        '''
+        Checks IcePaHC POS-tag of leaf and saves Universal Dependency format
+        POS-tag as instance variable (self.UD_tag) by comparing with 'tags' dict
+        '''
+        tag = self.tag.split('-')[0]
+            # This condition can be minimized further
         try:
-            ID = DMII_data.check_DMII(DMII_fn, token, lemma)[0]
-            if '-' in ID:
-                gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('-')[0]]
-                num = 'Number='+feats[UD_tag]['Number'][(ID.split('-')[1])[-2:]]
-                return case+'|'+num+'|'+degree+'|'+gender
-            elif '_' in ID:
-                gender = 'Gender='+feats[UD_tag]['Gender'][ID.split('_')[1]]
-                num = 'Number='+feats[UD_tag]['Number'][(ID.split('_')[2])[-2:]]
-                return case+'|'+num+'|'+degree+'|'+gender
+            self.UD_tag = self.tags[tag]
+            return self
+        except:
+            # raise
+            if re.search(r'(DO|DA|RD|RA)', tag[0:2]):
+                self.UD_tag = 'VERB'       #ATH. merkt sem sögn í bili
+                return self
+            elif re.search(r'(BE|BA|HV|HA|MD|MA)', tag[0:2]):
+                self.UD_tag = 'AUX'
+                return self
+            elif tag == 'CONJ' and self.lemma in self.cconj:
+                self.UD_tag = 'CCONJ'
+                return self
+            elif tag in string.punctuation:
+                self.UD_tag = 'PUNCT'
+                return self
             else:
-                num = 'Number='+feats[UD_tag]['Number'][ID[-2:]]
-                return case+'|'+num+'|'+degree+'*'
-        except (TypeError, KeyError):
-            return case+'|'+degree+'*'
+                self.UD_tag = self.tags.get(tag[0], '_')
+                return self
 
-def get_feats_adv(UD_tag, tag_name):
-    if tag_name[-1] == 'R':
-        degree = 'Degree='+feats[UD_tag]['Degree']['R']
-#        return degree
-    elif tag_name[-1] == 'S':
-        degree = 'Degree='+feats[UD_tag]['Degree']['S']
-#        return degree
-    else:
-        degree = 'Degree='+feats[UD_tag]['Degree']['P']
-    return degree
-
-def get_adp_feats(UD_tag):
-    type = 'AdpType='+feats[UD_tag]['AdpType']['P']
-    return type
-
-
-def get_feats(leaf):
-    if leaf[0][0] not in {'*', '0'}: # ATH Used while traces etc. are still in data
-        lemma = leaf[0].split('-')[1]
-        token = leaf[0].split('-')[0].lower()
-        tag = leaf[1]
-        UD_tag = get_UD_tag(tag, lemma)
-        if UD_tag in feats:
-            try:
-                if UD_tag in {'VERB', 'AUX'}:    #TODO: include all verbs
-                    verb_feats = get_feats_verb(lemma, token, tag, UD_tag)
-                    return verb_feats   
-                if UD_tag == 'ADP':
-                    adp_feats = get_adp_feats(UD_tag)
-                    return adp_feats
-                if tag == 'ADV-Q-N':
-                    tag = re.sub('ADV-', '', tag)
-                if tag == 'ADVR-Q-D':
-                    tag = re.sub('ADVR-', '', tag)
-                if '-' in tag:
-                    tag_name, tag_info = tag.split('-', 1)
-                else:
-                    tag_name = tag
-                    tag_info = '0'
-                    UD_tag = 'ADV'
-                if '-' in tag_info:
-                    tag_info, tag_extra = tag_info.split('-')
-#                if tag_name == 'NUM+NUM':
-#                    tag_name = re.sub('NUM\+NUM', 'NUM', tag_name)
-#                    UD_tag = 'NUM'
-#                if tag_name == 'NUM+N':
-#                    tag_name = re.sub('NUM\+', '', tag_name)
-#                    UD_tag = 'NOUN'
-#                if tag_name == 'N+Q':
-#                    tag_name = re.sub('N\+', '', tag_name)
-#                    UD_tag = 'ADJ'
-                if tag_name == 'NPR+NS':
-                    tag_name = re.sub('\+NS', '', tag_name)
-                    UD_tag = 'PROPN'
-#                if tag_name == 'ONE+Q':
-#                    tag_name = re.sub('ONE\+', '', tag_name)
-#                    UD_tag == 'ADJ'
-                if tag == 'RP-2':
-                    tag = re.sub('-2', '', tag)
-                if tag_info == 'TTT':
-                    tag_info = tag.split('-')[2]
-#                if tag_name == 'ADVR+ADV':
-#                    tag_name = re.sub('ADVR\+', '', tag_name)
-                if tag_name == 'NP':
-                    return '_'      #TODO: sækja BÍN-upplýsingar
-                if tag_info.isdigit():
-                    case = 'Case='+feats[UD_tag]['Case']['N']
-                else:
-                    case = 'Case='+feats[UD_tag]['Case'][tag_info]
-                if UD_tag in {'NOUN', 'PROPN'}:
-                    noun_feats = get_feats_noun(lemma, token, UD_tag, tag_name, case)
-                    return noun_feats
-                if UD_tag == 'PRON':
-                    pron_feats = get_feats_pron(UD_tag, case, token)
-                    return pron_feats
-                if UD_tag == 'DET':
-                    return case 
-                if UD_tag == 'NUM':
-                    num_feats = get_feats_num(lemma, token, UD_tag, case, tag_name)
-                    return num_feats
-                if UD_tag == 'ADJ':
-                    adj_feats = get_feats_adj(lemma, token, UD_tag, case, tag_name)
-                    return adj_feats
-                if UD_tag == 'ADV':
-                    adv_feats = get_feats_adv(UD_tag, tag_name)
-                    return adv_feats
-            except IndexError:
-                return '(Tag cannot be split)'      #ATH. some tags cannot be split (OTHER, WQ, ...)
+    def split_tag(self):
+        '''
+        Splits IcePaHC tag into sub-parts if '-' in tag
+        '''
+        if '-' in self.tag:
+            self.tag_name, self.tag_info = self.tag.split('-', 1)
+            if '-' in self.tag_info:
+                self.tag_info, self.tag_extra = self.tag_info.split('-')
+            return self
+        # elif self.UD_tag in {'VERB', 'AUX', 'ADP'}: # NOTE: QUICK FIX
+        #     return self
         else:
-            return '_'
+            self.tag_name = self.tag
+            return self
+
+    def tag_cleanup(self):
+        '''
+        Removes various unimportant information from IcePaHC tag
+        '''
+        if self.tag == 'ADV-Q-N':
+            self.tag = re.sub('ADV-', '', self.tag)
+        if self.tag == 'ADVR-Q-D':
+            self.tag = re.sub('ADVR-', '', self.tag)
+        if self.tag_name == 'NPR+NS':
+            self.tag_name = re.sub('\+NS', '', self.tag_name)
+            self.UD_tag = 'PROPN'
+        if self.tag == 'RP-2':
+            self.tag = re.sub('-2', '', self.tag)
+        if self.tag_info == 'TTT':
+            self.tag_info = self.tag.split('-')[1]
+        self.tag = re.sub(r'-(1|2|3)', '', self.tag) # removes all '-(1/2/3)' from tags
+
+        # TODO: find permanent fix for this, where -N is not default
+        # e.g. join words in .psd file that have these numbers in tag
+        if re.search(r'\w{1,5}(21|22|31|32|33)', self.tag):
+            self.tag = re.sub(r'(21|22|31|32|33)', '-N', self.tag)
+            return self.split_tag()
+
+        return self
+
+    def get_feats_verb(self):
+        '''
+        Finds features for verbs
+        Updates features for infinitives, imperatives and present participles
+        Calls methods for all other verbs
+        '''
+        tag = self.tag
+        UD_tag = self.UD_tag
+        if len(tag) == 2 or tag.endswith('TTT') or re.search(r'VB-[123]', tag):       #infinitive
+            self.features.VerbForm = self.feats[UD_tag]['VerbForm']['inf']
+            return self
+        elif re.search(r'([DV][AB]N)', tag[:3]):     #VAN (lh.þt. í þolmynd) og VBN (lh.þt.)
+            part_feats = self.feats_verb_part()
+            return part_feats
+        elif tag[1:3] == 'AG':      #lh.nt., VAG, DAG og RAG
+            self.features.VerbForm = self.feats[UD_tag]['VerbForm']['part']
+            self.features.Tense = self.feats[UD_tag]['Tense']['NT']
+            return self
+        elif len(tag) == 3 and tag[2] == 'I':     #imperative
+            self.features.Mood = self.feats[UD_tag]['Mood']['IMP']
+            return self
+        elif len(tag) == 3:
+            rdn_feats = self.feats_verb_part()
+            return rdn_feats
+        else:
+            # return None
+            else_feats = self.feats_verb_else()
+            return else_feats
+
+    def feats_verb_part(self):     #VAN, VBN, DAN, DON, RDN
+        '''
+        Finds features for verbs that are participles
+        Relevant IcePaHC tags:
+        VAN, VBN, DAN, DON, RDN
+        '''
+        tag = self.tag
+        token = self.token
+        UD_tag = self.UD_tag
+        tag_name, tag_info = self.tag_name, self.tag_info
+        # print(tag_name, tag_info)
+        if '-' in tag:
+            tag = tag.split('-')[0]
+        else:
+            tag = tag
+        self.features.Case = self.feats[UD_tag]['Case'].get(tag_info)
+        self.features.Tense = self.feats[UD_tag]['Tense']['ÞT']
+        self.features.VerbForm = self.feats[UD_tag]['VerbForm']['part']
+        DMII_entries = DMII_so.get(self.lemma)
+        if not DMII_entries:
+            self.features.ERROR = 'NOT_FOUND'
+            return self
+        try:
+            for entry in DMII_entries:
+                # print(entry.token, entry.features)
+                if token == entry.token and entry.subclass == 'LHÞT':
+                    self.features.Number = entry.features['Number']
+                    self.features.Gender = entry.features['Gender']
+                    if tag[1] == 'B':
+                        return self
+                    elif tag[1] == 'A':
+                        self.features.Voice = self.feats[UD_tag]['Voice']['pass']
+                        return self
+                # elif # NOTE: Leftover from supine, maybe can be deleted?
+                #     self.features.VerbForm = entry.features['VerbForm']
+                #     self.features.Voice = entry.features['Voice']
+                #     return self
+                else:
+                    continue
+        except KeyError:
+            # raise
+            self.features.ERROR = error_info(err)
+            return self
+        except TypeError:
+            # raise
+            self.features.ERROR = error_info(err)
+            return self
+
+    def feats_verb_else(self):
+        '''
+        Finds features for all 'other' verbs
+        '''
+        tag = self.tag
+        token = self.token
+        UD_tag = self.UD_tag
+        self.features.Tense = self.feats[UD_tag]['Tense'][tag[2]]
+        self.features.Mood = self.feats[UD_tag]['Mood'][tag[3]]
+        DMII_entries = DMII_so.get(self.lemma)
+        if not DMII_entries:
+            self.features.ERROR = 'NOT_FOUND'
+            return self
+        for entry in DMII_entries:
+            # print(entry.token, entry.features)
+            # print((token, self.features.Mood, self.features.Tense), (entry.features['Mood'], entry.features['Tense'], entry.token))
+            try:
+                if (token, self.features.Mood, self.features.Tense) == (entry.token, entry.features.get('Mood'), entry.features.get('Tense')):
+                    # print(entry.token, entry.features)
+                    self.features.Voice = entry.features['Voice']
+                    self.features.Person = entry.features['Person']
+                    self.features.Number = entry.features['Number']
+                    return self
+                else:
+                    continue
+            except (TypeError, KeyError, IndexError) as err:   #ef orð finnst ekki í BÍN eru upplýsingar frá Icepahc notaðar
+                # continue
+                # print(entry.token, entry.features)
+                # raise
+                self.features.ERROR = error_info(err)
+                return self
+
+    def get_feats_noun(self):
+        '''
+        Finds features for all nouns and proper names
+        # TODO: add full proper name support (not found in DMII)
+        '''
+        tag = self.tag
+        token = self.token
+        UD_tag = self.UD_tag
+        tag_name, tag_info = self.tag_name, self.tag_info
+        self.features.Case = self.feats[UD_tag]['Case'].get(tag_info)
+        self.features.Number = self.feats[UD_tag]['Number'][tag_name]
+        DMII_entries = DMII_no.get(self.lemma)
+        if not DMII_entries:
+            self.features.ERROR = 'NOT_FOUND'
+            return self
+        for entry in DMII_entries:
+            try:
+                if (self.token, self.features.Case, self.features.Number) == (entry.token, entry.features['Case'], entry.features['Number']):
+                    self.features.Gender = entry.features.get('Gender')
+                    self.features.Definite = entry.features.get('Definite')
+                    return self
+                else:
+                    continue
+            except Exception as err:
+                # raise
+                self.features.ERROR = error_info(err)
+                return self
+
+    def get_feats_pron(self):
+        '''
+        # NOTE: 'hann', 'hún' and 'það' do not have native gender marker in
+                DMII data. This should be fixed with if condition
+        # ERROR: 'vér' is never found as it has lemma 'ég' in IcePaHC, which
+                doesn't match DMII
+        '''
+        self.features.Case = self.feats[self.UD_tag]['Case'].get(self.tag.split('-')[1])
+        DMII_entries = DMII_fn.get(self.lemma)
+        if self.token.startswith('$'):
+            self.features.Clitic = 'Yes'
+        if not DMII_entries:
+            self.features.ERROR = 'NOT_FOUND'
+            return self
+        for entry in DMII_entries:
+            if entry.token == self.token:
+                if not self.feautes.Case:
+                    self.features.Case = entry.features.get('Case')
+                self.features.Number = entry.features.get('Number')
+                self.features.PronType = entry.features.get('PronType')
+                self.features.Gender = entry.features.get('Gender')
+            if self.lemma in {'hann', 'hún', 'það'}:
+                self.features.Case = self.feats[UD_tag]['Case'][self.lemma]
+            else:
+                continue
+            return self
+
+    def get_feats_num(self):
+        '''
+        Finds features for numerals
+        '''
+        DMII_entries = DMII_to.get(self.lemma)
+        # print(self.token, self.tag)
+        self.features.NumType = 'Card'# self.feats[UD_tag]['NumType']['C'] (Specific data not present in IcePaHC)
+        try:
+            self.features.Case = self.feats[self.UD_tag]['Case'].get(self.tag.split('-')[1])
+            if not DMII_entries:
+                self.features.ERROR = 'NOT_FOUND'
+                return self
+            for entry in DMII_entries:
+                if self.token == entry.token and self.features.Case == entry.features['Case']:
+                    self.features.Gender = entry.features.get('Gender')
+                    self.features.Number = entry.features.get('Number')
+                    return self
+                else:
+                    continue
+        except Exception as err:   #ef orðið finnst ekki
+            # raise
+            self.features.ERROR =  error_info(err)
+            return self
+
+    def get_feats_adj(self):
+        '''
+        Finds features for all adjectives
+        '''
+        tag = self.tag
+        token = self.token
+        UD_tag = self.UD_tag
+        tag_name, tag_info = self.tag_name, self.tag_info
+        # print(token, tag, tag_name, tag_info)
+        self.features.Case = self.feats[UD_tag]['Case'].get(tag_info)
+        if self.tag_name[-1] == 'R':
+            self.features.Degree = self.feats[UD_tag]['Degree']['R']
+        elif self.tag_name[-1] == 'S':
+            self.features.Degree = self.feats[UD_tag]['Degree']['S']
+        else:
+            self.features.Degree = self.feats[UD_tag]['Degree']['P']
+        DMII_entries = DMII_lo.get(self.lemma)
+        if not DMII_entries:
+            self.features.ERROR = 'NOT_FOUND'
+            return self
+        try:
+            for entry in DMII_entries:
+                if (entry.token, entry.features['Case']) == (self.token, self.features.Case):
+                    self.features.Gender = entry.features.get('Gender')
+                    self.features.Number = entry.features.get('Number')
+                    self.features.Definite = entry.features.get('Definite')
+                    return self
+        except Exception as err: #handles mismatch between word class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
+            try:
+                self.get_feats_pron()
+            except (TypeError, KeyError) as err:
+                # raise
+                self.features.ERROR =  error_info(err)
+                return self
+
+    def get_feats_adv(self):
+        '''
+        Finds features for adverbs (?)
+        '''
+        UD_tag = self.UD_tag
+        tag_name = self.tag
+        if tag_name[-1] == 'R':
+            self.features.Degree = self.feats[UD_tag]['Degree']['R']
+    #        return degree
+        elif tag_name[-1] == 'S':
+            self.features.Degree = self.feats[UD_tag]['Degree']['S']
+    #        return degree
+        else:
+            self.features.Degree = self.feats[UD_tag]['Degree']['P']
+        return self
+
+    def get_adp_feats(self):
+        '''
+        # NOTE: Think this does something with adpositions (???)
+        '''
+        self.features.AdpType = self.feats[self.UD_tag]['AdpType']['P']
+        return self
+
+    def getinfo(self):
+        '''
+        Populates instance variables with relevant information
+        Must be called specifically outside of class for class to function
+        '''
+        self.split_tag() # IcePaHC tag split (if applicable)
+        self.tag_cleanup() # IcePaHC tag info cleaned
+        self.getUD_tag() # UD_tag variable populated
+        if self.tag_info is not None and self.tag_info.isdigit() and self.UD_tag not in {'CCONJ', 'SCONJ', 'VERB', 'AUX', 'ADP', 'PART'}:
+            # print(self.leaf, self.UD_tag)
+            self.features.Case = self.feats[self.UD_tag]['Case']['N']
+            return self
+        if self.UD_tag in {'VERB', 'AUX'}:    #TODO: include all verbs
+            # self.features.all_features = '_'
+            self.get_feats_verb()
+        elif self.UD_tag in {'NOUN', 'PROPN'}:
+            # self.features.all_features = '_'
+            self.get_feats_noun()
+        elif self.UD_tag == 'PRON':
+            # self.features.all_features = '_'
+            self.get_feats_pron()
+        elif self.UD_tag == 'ADJ':
+            # self.features.all_features = '_'
+            self.get_feats_adj()
+        elif self.UD_tag == 'ADV':
+            # self.features.all_features = '_'
+            self.get_feats_adv()
+        elif self.UD_tag == 'ADP':
+            # self.features.all_features = '_'
+            self.get_adp_feats()
+        elif self.UD_tag == 'NUM':
+            # self.features.all_features = '_'
+            self.get_feats_num()
+        elif self.UD_tag == 'DET':
+            self.features.all_features = '_'
+            # if self.tag_info:
+            #     self.features.Case = self.feats[self.UD_tag]['Case'][self.tag_info]
+            # else:
+            #     self.features.Case = None
+        else:
+            self.features.all_features = '_'
+        self.features.setAll_features()
+        return self
 
 if __name__ == '__main__':
-    # icepahc = LazyCorpusLoader(
-    #     'icepahc-v0.9/psd_orig/', CategorizedBracketParseCorpusReader,
-    #     r'.*\.psd', cat_pattern=r'.*(nar|rel|sci|bio|law)\-.*'
-    # )
-    # tree = tree = icepahc.parsed_sents()[2]
-    # for leaf in tree.pos():
-    #     feat = get_feats(leaf)
-    #     if feat:
-    #         print(leaf)
-    pass
+    sent1 = '(IP-MAT (NP-OB2 (D-A Inn-hinn) (ADJS-A æðsta-æðri) (N-A föður-faðir)) (VBPI biðjum-biðja) (NP-SBJ (PRO-N vér-ég)) (NP-OB1 (D-G innar-hinn) (ADJS-G æðstu-æðri) (N-G bænar-bæn) (, :-:) (NP-PRN (FW Sanctificetur-sanctificetur) (FW nomen-nomen) (FW tuum-tuum))) (. .-.))'
+    sent2 = '(IP-MAT (VBDI Ætluðu-ætla) (ADVP-TMP (ADV þá-þá)) (NP-SBJ (Q-N allir-allur)) (CP-THT (C að-að) (IP-SUB (NP-SBJ (NPR-N Gunnar-gunnar)) (MDDS mundi-munu) (VB falla-falla) (PP (P þegar-þegar) (CP-ADV (C er-er) (IP-SUB (NP-SBJ (PRO-N þeir-hann)) (VBDS tækju-taka) (PP (P til-til) (NP (N-G glímu-glíma)))))))))'
+    sent3 = '(IP-MAT (CONJ en-en) (ADVP (ADV þó-þó)) (BEDI voru-vera) (NP-SBJ (Q-N báðir-báðir)) (ADJP (ADJ-N sterklegir-sterklegur)) (. .-.))'
+    sent4 = '(IP-MAT (NP-SBJ (NP (NPR-N Þorgrímur-þorgrímur) (NP-PRN (N-N bóndi-bóndi))) (CONJP *ICH*-1)) (VBDI sat-sitja) (PP (P á-á) (NP (N-D palli-palli))) (CONJP-1 (CONJ og-og) (NP (NPR-N Helga-helga) (NP-PRN (N-N dóttir-dóttir) (NP-POS (PRO-G hans-hann))))))'
+    sent5 = '(IP-MAT (CONJ og-og) (VBDI skartaði-skarta) (NP-SBJ (PRO-N hún-hún)) (NP-MSR (ADJ-N allmikið-allmikill)) (. .-.))'
+    sent6 = '(IP-MAT (NP-SBJ (NPR-N Gunnar-gunnar)) (VBDI fór-fara) (PP (P úr-úr) (NP (N-D kuflinum-kufl))))'
+    sent7 = '(IP-MAT (CONJ og-og) (NP-SBJ-1 *exp*) (VBDI fauk-fjúka) (PP (P úr-úr) (NP (PRO-D honum-hann))) (NP-1 (N-N aska-aska) (Q-N mikil-mikill)) (. .-.))'
+    sents = [sent1, sent2, sent3, sent4, sent5, sent6, sent7]
+    for sent in sents:
+        print('\n\n')
+        tree = Tree.fromstring(sent)
+        for leaf in tree.pos():
+            word = Word(leaf).getinfo()
+            f = word.features
+            print(word.token, word.UD_tag, f.featString())
+            #

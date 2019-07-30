@@ -6,9 +6,12 @@ Hinrik Hafsteinsson (hih43@hi.is)
 2019
 Based on earlier work by
 Örvar Kárason (ohk2@hi.is)
+Part of UniTree project for IcePaHC
 '''
-from lib import features
-from lib.rules import head_rules
+
+from lib_test import features_test_test as f
+from lib_test import DMII_data
+from lib_test.rules import head_rules
 
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
@@ -17,6 +20,8 @@ import getopt
 from collections import defaultdict
 import re
 import string
+
+# DMII_combined = DMII_data.DMII_data('combined') # TODO: Move to features script
 
 class UniversalDependencyGraph(DependencyGraph):
     '''
@@ -146,7 +151,6 @@ class Converter():
         '''
         tag_orig = str(tree.label())
         tag = re.sub('-\d+', '', tag_orig)
-        tag = re.sub('-TTT', '', tag)
         head_rule = head_rules.get(tag, {'dir':'r', 'rules':['.*']})  #default rule, first from left
         rules = head_rule['rules']
         dir = head_rule['dir']
@@ -180,12 +184,11 @@ class Converter():
         :param mod_tag: str
         :return: str
         """
-
-        #todo use head_tag and more info about the constituency to better select the relation label
-
         mod_tag = re.sub('-TTT', '', mod_tag)
         mod_tag = re.sub('-\d+', '', mod_tag)
         mod_tag = re.sub('=\d+|=X|=XXX', '', mod_tag)
+
+        #todo use head_tag and more info about the constituency to better select the relation label
 
         if '-' in mod_tag:
             mod_tag, mod_func = mod_tag.split('-', 1) #todo, handle more than one function label
@@ -205,6 +208,14 @@ class Converter():
         else:
             head_func = None
 
+        if mod_func:
+            if '-' in mod_func:
+                mod_func, mod_extra = mod_func.split('-', 1)
+
+        if head_func:
+            if '-' in head_func:
+                head_func, head_extra = head_func.split('-', 1)
+
 #        if mod_tag == 'NP' and mod_func == 'SBJ-1':
 #            return 'expl'
         if head_tag == 'NP' and head_func == 'SBJ-1':       #TODO: finna aðra lausn til að merkja expl
@@ -212,21 +223,12 @@ class Converter():
         elif mod_tag == 'NP':   #TODO: hvað ef mod_tag er bara NP?
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
             return {
-#                '1'  : '?',
-#                '2': '?',
-#                '4': '?',
                 'ADV': '',
                 'CMP': '',
                 'PRN': 'appos',     #viðurlag, appositive
-#                'PRN-1': 'appos',
-#                'PRN-3': 'appos',
                 'PRN-ELAB': 'appos',
-#                'PRN-ELAB-1': 'appos',
                 'SBJ': 'nsubj',
                 'SBJ-RSP': 'nsubj',     #?
-#                'SBJ-1' : 'nsubj',    #nsubj:pass?
-#                'SBJ-2' : 'nsubj',    #nsubj:pass?
-#                'SBJ-4' : 'nsubj',    #nsubj:pass?
                 'OB1': 'obj',
                 'OB2': 'iobj',
                 'OB3': 'iobj',
@@ -263,13 +265,12 @@ class Converter():
         elif mod_tag[0:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO']:    #FP = focus particles  #QP = quantifier phrase - ATH.
             # -DIR, -LOC, -TP
             return 'advmod'
-        elif mod_tag == 'RP':
+        elif mod_tag in ['RP', 'RPX']:
             return 'compound:prt'
         elif mod_tag == 'IP':
             return {
                 'INF': 'ccomp', #?, xcomp ef ekkert frumlag
-#                'INF-1': 'ccomp', #?
-                'INF=3': '',
+#                'INF=3': '',
                 'INF-PRP': 'advcl',
                 'INF-PRP-PRN': '',
                 'INF-SPE': 'xcomp',  #ATH. réttur merkimiði?
@@ -279,14 +280,12 @@ class Converter():
                 'INF-ADT': 'advcl?',
                 'INF-ADT-SPE': '',
                 'MAT': '',
-#                'MAT-1': '',
-                'MAT=1': '',
+#                'MAT=1': '',
                 'MAT-PRN': 'ccomp?',
                 'MAT-SPE': '',
                 'SUB': 'ATH',
-#                'SUB-4': 'ATH',
                 'SUB-PRN': '',
-                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
+#                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
                 'SUB-SPE': '',
                 'IMP': '',
                 'IMP-SPE': '',
@@ -307,41 +306,64 @@ class Converter():
             return 'cc'
         elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N', 'PP']:      #N: tvö N í einum NP tengd með CONJ
             return 'conj'
+        elif mod_tag == 'CONJP' and head_tag == 'IP':
+            return {
+                'INF': 'ccomp', #?, xcomp ef ekkert frumlag
+#                'INF=3': '',
+                'INF-PRP': 'advcl',
+                'INF-PRP-PRN': '',
+                'INF-SPE': 'xcomp',  #ATH. réttur merkimiði?
+                'INF-PRN': 'xcomp', #ADVCL?
+                'INF-SBJ': '',
+                'INF-DEG': '',
+                'INF-ADT': 'advcl?',
+                'INF-ADT-SPE': '',
+                'MAT': '',
+#                'MAT=1': '',
+                'MAT-PRN': 'ccomp?',
+                'MAT-SPE': '',
+                'SUB': 'ATH',
+                'SUB-PRN': '',
+#                'SUB-PRN=4': 'aux:pass',     #sérstakt dæmi
+                'SUB-SPE': '',
+                'IMP': '',
+                'IMP-SPE': '',
+                'SMC': 'acl?',
+                'PPL': 'advcl',  #?
+            }.get(head_func, 'rel')
 #        elif mod_tag == 'CP' and mod_func == 'ADV':
 #            return 'VIRKAR'
         elif mod_tag == 'CP':
             return {
                 'THT': 'ccomp',
-#                'THT-1': 'ccomp',
-                'THT-SBJ': 'ccomp',
-                'THT-PRN': 'ccomp',
-#                'THT-PRN-1': 'ccomp',
-#                'THT-PRN-2': 'ccomp',
-#                'THT-PRN-3': 'ccomp',
-#                'THT-PRN-4': 'ccomp',
-                'THT-LFD': '',
+#                'THT-SBJ': 'ccomp',
+#                'THT-SBJ-SPE': 'ccomp',
+#                'THT-SPE': 'HALLO',
+#                'THT-SPE-PRN': 'ccomp',
+#                'THT-SPE-SBJ': 'ccomp',
+#                'THT-PRN': 'ccomp',
+#                'THT-PRN-NaN': 'ccomp',
+#                'THT-PRN-SPE': 'ccomp',
+#                'THT-LFD': '',
+#                'THT-RSP': '',
                 'CAR': 'acl:relcl',
+#                'CAR-SPE': 'acl:relcl',
                 'CLF': 'acl:relcl',
+#                'CLF-SPE': 'acl:relcl',
                 'CMP': 'advcl',      #ATH. rétt?
                 'DEG': 'ccomp',      #ATH. rétt?
-#                'DEG-1': 'ccomp',      
-#                'DEG-2': 'ccomp',   
-                'FRL': 'acl:relcl?',    #ccomp? 
+#                'DEG-SPE': 'ccomp',
+                'FRL': 'acl:relcl?',    #ccomp?
                 'REL': 'acl:relcl',
-#                'REL-1': 'acl:relcl',
-                'REL-SPE': 'acl:relcl',  
+#                'REL-SPE': 'acl:relcl',
                 'QUE': 'ccomp',
-#                'QUE-1': 'ccomp',
-                'QUE-SPE': 'ccomp',
-                'QUE-ADV': 'advcl?',
-                'QUE-ADV-LFD': 'advcl?',
+#                'QUE-SPE': 'ccomp',
+#                'QUE-ADV': 'advcl?',
+#                'QUE-ADV-LFD': 'advcl?',
                 'ADV': 'advcl',
-                'ADV-LFD': 'advcl',
+#                'ADV-LFD': 'advcl',
                 'EOP': 'xcomp',
-#                'EOP-1': 'xcomp',
-#                'EOP-2': 'xcomp',
                 'TMC': '',
-#                'TMC-3': ''
             }.get(mod_func, 'rel')
         elif mod_tag in ['C', 'CP', 'TO', 'WQ']:  #infinitival marker with marker relation
             return 'mark'
@@ -383,39 +405,36 @@ class Converter():
             else:
                 # If trace node, skip (preliminary, may result in errors)
                 # e.g. *T*-3 etc.
-                if t[i][0] in {'0', '*'}:   #if t[1].pos()[0][0] in {'0', '*'}: 
+                if t[i][0] in {'0', '*'}:   #if t[1].pos()[0][0] in {'0', '*'}:
                     continue
                 # If terminal node with no label (token-lemma)
                 # e.g. tók-taka
                 if '-' in t[i]:
                     FORM, LEMMA = t[i].split('-', 1)
                     tag = tag_list[nr]
-                    # print(tag_list)
                 # If <dash/>, <dash> or </dash>
                 elif t[i][0] in {'<dash/>', '<dash>', '</dash>'}:
                     FORM = LEMMA = '-'
-                    # token_lemma = str(FORM+'-'+LEMMA)
                     tag = tag_list[nr]
-                    # leaf = token_lemma, tag
                 else: # If no lemma present
                     FORM = t[i][0]
-                    DMII_combined = DMII_data.DMII_data('combined')
-                    DMII_data.get_lemma(DMII_combined, FORM)    # LEMMA = '_'
+                    #DMII_combined = f.DMII_data('combined')
+                    # print(FORM)
+                    # LEMMA = DMII_data.get_lemma(DMII_combined, FORM)    # LEMMA = '_'
+                    LEMMA = DMII_data.get_lemma(FORM)
                     if LEMMA == None:
                         LEMMA = '_'
                     token_lemma = str(FORM+'-'+LEMMA)
                     tag = tag_list[nr]
-                    # leaf = token_lemma, tag
                 if '+' in tag:
                     tag = re.sub('\w+\+', '', tag)
                 token_lemma = str(FORM+'-'+LEMMA)
                 leaf = token_lemma, tag
-                # UPOS = '_'
-                UPOS = features.get_UD_tag(tag, LEMMA)
                 XPOS = tag
-                # print(FORM, UPOS, XPOS)
-                FEATS = '_'
-                FEATS = features.get_feats(leaf)
+                # Feature Classes called here
+                leaf = f.Word(leaf).getinfo()
+                UPOS = leaf.UD_tag
+                FEATS = leaf.features.featString()
                 self.dg.add_node({'address': nr,
                                   'word': FORM,
                                   'lemma': LEMMA,
@@ -437,48 +456,21 @@ class Converter():
             head_nr = t[i].id()
             for child in t[i]:
                 mod_tag = child.label()
-                if '+' in mod_tag:
-                    mod_tag = re.sub('\w+\+', '', mod_tag)
                 mod_nr = child.id()
 #                if head_nr == mod_nr and re.match("NP-PRD", head_tag):      #ath. virkar þetta rétt? Leið til að láta sagnfyllingu cop vera rót
 #                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
 #                    self.dg.root = self.dg.get_by_address(mod_nr)
-                if child:
-                    if head_nr == mod_nr and re.match( "IP-MAT.*", head_tag):  #todo root phrase types from config
-                        self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
-                        self.dg.root = self.dg.get_by_address(mod_nr)
-                    elif child[0] == '0':
-                        continue
-                    else:
-                        self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
-                    if head_nr != mod_nr:
-                        self.dg.add_arc(head_nr, mod_nr)  
-
-
-        #todo coordination, http://www.linguist.is/icelandic_treebank/Conjunction
-
-        #todo gaps, http://www.linguist.is/icelandic_treebank/Empty_categories
-
-        #todo ...
+                if head_nr == mod_nr and re.match( "IP-MAT.*", head_tag):  #todo root phrase types from config
+                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
+                    self.dg.root = self.dg.get_by_address(mod_nr)
+                # elif child[0] == '0' or head_tag == 'PP' and child[0] == None:   # or child[0] == None
+                #     continue
+                else:
+                    self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
+                if head_nr != mod_nr:
+                    self.dg.add_arc(head_nr, mod_nr)
 
         return self.dg
-"""
-def arcs(head_nr, mod_nr, head_tag, mod_tag):
-    if mod_tag == 'CONJ' and head_tag == 'NP':
-"""
-
-"""
-Example usage of the Converter class:
-
-psd = "( (IP-MAT (NP-SBJ (N-N Himinn$-himinni) (D-N $inn-hinn)) (BEDI var-vera) (ADJP (ADV alveg-alveg) \
-       (ADJ-N blár-blár)) (. .-.)) (ID 2008.MAMMA.NAR-FIC,.9))"
-
-c = Converter()
-dep = c.toDep(psd)
-print(dep.to_conllU())
-tree = dep.tree()
-tree.draw()
-"""
 
 def main(argv):
     c = Converter()
