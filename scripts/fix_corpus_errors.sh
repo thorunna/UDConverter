@@ -11,8 +11,8 @@ Script for fixing various presumed errors in IcePaHC corpus files (.psd)
 Any machine-specific paths must be specified before use
 '''
 
-dir="./testing/corpora/icepahc-v0.9/psd"
-# dir="./testing/corpora/icecorpus/psd"
+# dir="./testing/corpora/icepahc-v0.9/psd"
+dir="./testing/corpora/icecorpus/psd"
 
 # 1150.homiliubok.rel-ser.psd
 sed -i "" 's/(WADJ hversu-hversu)/(WADV hversu-hversu)/g' $dir/1150.homiliubok.rel-ser.psd # .105
@@ -28,10 +28,10 @@ sed -i "" 's/(N-A sylgju\$)/(N-A sylgju\$-sylgja)/' $dir/1210.jartein.rel-sag.ps
 sed -i "" 's/NP-A/NS-A/g' $dir/1250.sturlunga.nar-sag.psd # 135.1604
 sed -i "" 's/(IP-SUB (ADVP-OC/(IP-SUB (ADVP-LOC/g' $dir/1250.sturlunga.nar-sag.psd # 448.2121
 sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1250.sturlunga.nar-sag.psd # 393.186, 419.994, 421.1061, 423.1171
-sed -i "" 's/(WNP-N-1 hver-hver/(WNP-1 (WPRO-N hver-hver/' $dir1250.sturlunga.nar-sag.psd # 427.1265
+sed -i "" 's/(WNP-N-1 hver-hver/(WNP-1 (WPRO-N hver-hver)/' $dir/1250.sturlunga.nar-sag.psd # 427.1265
 
 #1250.thetubrot.nar-sag.psd
-sed -i "" 's/(NP-PRN-LL/NP-PRN/' $dir/1250.thetubrot.nar-sag.psd # .151
+sed -i "" 's/(NP-PRN-LL/(NP-PRN/' $dir/1250.thetubrot.nar-sag.psd # .151
 
 # 1310.grettir.nar-sag.psd
 sed -i "" 's/(N-S/(N-G/g' $dir/1310.grettir.nar-sag.psd # .95
