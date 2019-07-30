@@ -1,5 +1,5 @@
 
-from lib_test.rules import DMII_map
+from lib.rules import DMII_map
 from ast import literal_eval as make_tuple
 from collections import defaultdict, Hashable
 from sys import getsizeof
