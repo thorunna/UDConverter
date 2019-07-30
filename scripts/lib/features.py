@@ -331,7 +331,7 @@ class Word:
         # ERROR: 'vér' is never found as it has lemma 'ég' in IcePaHC, which
                 doesn't match DMII
         '''
-        self.features.Case = self.feats[self.UD_tag]['Case'].get(self.tag.split('-')[1])
+        self.features.Case = self.feats[self.UD_tag]['Case'].get(self.tag_info)
         DMII_entries = DMII_fn.get(self.lemma)
         if self.token.startswith('$'):
             self.features.Clitic = 'Yes'
