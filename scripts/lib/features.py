@@ -340,7 +340,7 @@ class Word:
             return self
         for entry in DMII_entries:
             if entry.token == self.token:
-                if not self.feautes.Case:
+                if not self.features.Case:
                     self.features.Case = entry.features.get('Case')
                 self.features.Number = entry.features.get('Number')
                 self.features.PronType = entry.features.get('PronType')
