@@ -11,8 +11,8 @@ Script for fixing various presumed errors in IcePaHC corpus files (.psd)
 Any machine-specific paths must be specified before use
 '''
 
-# dir="./testing/corpora/icepahc-v0.9/psd"
-dir="./testing/corpora/icecorpus/psd"
+dir="./testing/corpora/icepahc-v0.9/psd"
+# dir="./testing/corpora/icecorpus/psd"
 
 # 1150.homiliubok.rel-ser.psd
 sed -i "" 's/(WADJ hversu-hversu)/(WADV hversu-hversu)/g' $dir/1150.homiliubok.rel-ser.psd # .105
