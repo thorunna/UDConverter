@@ -11,8 +11,8 @@ Script for fixing various presumed errors in IcePaHC corpus files (.psd)
 Any machine-specific paths must be specified before use
 '''
 
-dir="./testing/corpora/icepahc-v0.9/psd"
-# dir="./testing/corpora/icecorpus/psd"
+# dir="./testing/corpora/icepahc-v0.9/psd"
+dir="./testing/corpora/icecorpus/psd"
 
 # 1150.homiliubok.rel-ser.psd
 sed -i "" 's/(WADJ hversu-hversu)/(WADV hversu-hversu)/g' $dir/1150.homiliubok.rel-ser.psd # .105
@@ -22,6 +22,7 @@ sed -i "" 's/(NP-ADT járnum-járna)/(NP-ADT (NS-D járnum-járn))/g' $dir/1150.
 
 #1210.jartein.rel-sag.psd
 sed -i "" 's/(IP-MAT-KOMINN/(IP-MAT/' $dir/1210.jartein.rel-sag.psd # .321
+sed -i "" 's/(N-A sylgju\$)/(N-A sylgju\$-sylgja)/' $dir/1210.jartein.rel-sag.psd # .552
 
 # 1250.sturlunga.nar-sag.psd
 sed -i "" 's/NP-A/NS-A/g' $dir/1250.sturlunga.nar-sag.psd # 135.1604
