@@ -186,11 +186,11 @@ class Converter():
         """
         mod_tag = re.sub('-TTT', '', mod_tag)
         mod_tag = re.sub('-\d+', '', mod_tag)
-        mod_tag = re.sub('=\d+|=X|=XXX', '', mod_tag)
+        mod_tag = re.sub('=\d+|=XXX|=X', '', mod_tag)
 
         head_tag = re.sub('-TTT', '', head_tag)
         head_tag = re.sub('-\d+', '', head_tag)
-        head_tag = re.sub('=\d+|=X|=XXX', '', head_tag)
+        head_tag = re.sub('=\d+|=XXX|=X', '', head_tag)
 
         if '+' in mod_tag:
             mod_tag = re.sub('\w+\+', '', mod_tag)
@@ -307,10 +307,12 @@ class Converter():
             return '_'
         elif mod_tag == 'INTJ' or mod_tag == 'INTJP':
             return 'discourse'
-        elif mod_tag in ['XXX', 'FOREIGN', 'FW', 'QTP', 'REP', 'META', 'FS', 'LS']:      #XXX = annotator unsure of parse, LS = list marker
+        elif mod_tag in ['XXX', 'FOREIGN', 'FW', 'QTP', 'REP', 'FS', 'LS']:      #XXX = annotator unsure of parse, LS = list marker
             return 'dep'    #unspecified dependency
+        elif head_tag == 'META':
+            return 'dep'
 
-        return 'rel-'+mod_tag+head_tag
+        return 'rel-'+mod_tag+'+'+head_tag
 
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree."""
