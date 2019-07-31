@@ -233,7 +233,7 @@ class Converter():
 #            return 'HALLO'
 #        if mod_tag == 'NP' and mod_func == None:
 #            return 'NP???'
-        if mod_tag in ['NP', 'NX']:   #TODO: hvað ef mod_tag er bara NP?
+        if mod_tag in ['NP', 'NX', 'WNX']:   #TODO: hvað ef mod_tag er bara NP?
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
             return relation_NP.get(mod_func, 'rel-'+mod_tag)
         elif mod_tag == 'WNP':
@@ -242,7 +242,7 @@ class Converter():
             return 'conj'
         elif mod_tag == 'NPR' and head_tag == 'CONJP':
             return 'conj'
-        elif mod_tag == 'NPR' and head_tag == 'NP':
+        elif mod_tag == 'NPR' and head_tag in ['NP', 'NX', 'QTP']:
             return 'flat:name'
         elif mod_tag == 'ES':
             return 'expl'   #expletive
@@ -305,11 +305,11 @@ class Converter():
             return 'punct'
         elif mod_tag in ['FW', 'X', 'LATIN']:    #meira?
             return '_'
-        elif mod_tag == 'INTJ' or mod_tag == 'INTJP':
+        elif mod_tag in ['INTJ', 'INTJP'] or head_tag == 'INTJP':
             return 'discourse'
-        elif mod_tag in ['XXX', 'FOREIGN', 'FW', 'QTP', 'REP', 'FS', 'LS']:      #XXX = annotator unsure of parse, LS = list marker
+        elif mod_tag in ['XXX', 'XP', 'FOREIGN', 'FW', 'QTP', 'REP', 'FS', 'LS', 'META', 'REF', 'ENGLISH']:      #XXX = annotator unsure of parse, LS = list marker
             return 'dep'    #unspecified dependency
-        elif head_tag == 'META':
+        elif head_tag in ['META', 'CODE', 'REF', 'FRAG']:
             return 'dep'
 
         return 'rel-'+mod_tag+'+'+head_tag
@@ -339,7 +339,7 @@ class Converter():
             else:
                 # If trace node, skip (preliminary, may result in errors)
                 # e.g. *T*-3 etc.
-                if t[i][0] in {'0', '*'}:   #if t[1].pos()[0][0] in {'0', '*'}:
+                if t[i][0] in {'0', '*', '{'}:   #if t[1].pos()[0][0] in {'0', '*'}:
                     continue
                 # If terminal node with no label (token-lemma)
                 # e.g. tók-taka
@@ -401,7 +401,7 @@ class Converter():
 #                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
 #                    self.dg.root = self.dg.get_by_address(mod_nr)
                 if child:
-                    if head_nr == mod_nr and re.match( "IP-MAT.*", head_tag):  #todo root phrase types from config
+                    if head_nr == mod_nr and re.match( "IP-MAT.*|INTJP|FRAG", head_tag):  #todo root phrase types from config
                         self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
                         self.dg.root = self.dg.get_by_address(mod_nr)
                     elif child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
