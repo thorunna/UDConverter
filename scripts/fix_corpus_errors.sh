@@ -126,6 +126,9 @@ sed -i "" 's/(NP-SBJ \$ðu-þú)/(NP-SBJ (PRO-N \$ðu-þú))/g' $dir/1985.sagan.
 sed -i "" 's/(VBDI Heyr\$/(VBI Heyr\$/g' $dir/2008.mamma.nar-fic.psd # .784
 sed -i "" 's/(VBI koddu-koma)/(VBI kod\$-koma)/g' $dir/2008.mamma.nar-fic.psd # .1811, .1812, .1813
 
+# 2008.ofsi.nar-sag.psd
+sed -i "" 's/(VBN \$hitt-\$hitta/(VBN \$hitt-\hitta/g' $dir/2008.ofsi.nar-sag.psd # .313
+
 # sed -i "" 's///g' $dir/ # .
 # sed -i "" 's///g' $dir/ # .
 # sed -i "" 's///g' $dir/ # .
