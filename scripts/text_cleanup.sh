@@ -97,6 +97,8 @@ for file in $out_dir/*; do
   sed -i "" 's/^(VAG sofandi\.-sofa))/(VAG sofandi\.-sofa)/g' $file
   # Join nouns and corresponding determiners
   python3 scripts/join_NPs.py $file
+  # Join word which should be written as one
+  python3 scripts/join_split_nodes.py $file
   # Delete empty lines
   sed -i "" '/^$/d' $file
   sed -i "" '/^  $/d' $file
