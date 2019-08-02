@@ -77,9 +77,9 @@ sed -i "" 's/(IP-MAT-KOMINN/(IP-MAT/' $dir/1525.georgius.nar-rel.psd # .743
 sed -i "" 's/(NP-SBJ ekki-ekkert)/(NP-SBJ (Q-N ekki-ekkert))/g' $dir/1540.ntjohn.rel-bib.psd # .414
 sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1540.ntjohn.rel-bib.psd # .1147, .1148, .1394
 
-# 1611.okur.rel-oth.psd
-sed -i "" 's/(NP-SBJ (NPR-N Jesús-jesús))/(NP-SBJ (NPR-N Jesús-jesús)/' $1611.okur.rel-oth.psd # .581
-sed -i "" 's/tabtab      (NPR-N kristur-kristur)/tabtab      (NPR-N kristur-kristur))/' $1611.okur.rel-oth.psd # .581
+# 1611.okur.rel-oth.psd     #seinni sedskipun virkar ekki, sleppa öllu í bili
+#sed -i "" 's/(NP-SBJ (NPR-N Jesús-jesús))/(NP-SBJ (NPR-N Jesús-jesús)/' $1611.okur.rel-oth.psd # .581
+#sed -i "" 's/tabtab      (NPR-N kristur-kristur)/tabtab      (NPR-N kristur-kristur))/' $1611.okur.rel-oth.psd # .581
 
 #1628.olafuregils.bio-tra.psd
 sed -i "" 's/(IP-INF-ZZZ/(IP-INF/' $dir/1628.olafuregils.bio-tra.psd # .205
