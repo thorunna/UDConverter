@@ -9,8 +9,8 @@ Based on earlier work by
 Part of UniTree project for IcePaHC
 '''
 
-#from lib import features as f
-from lib import DMII_data
+from lib import features as f
+#from lib import DMII_data
 from lib.rules import head_rules, relation_NP, relation_IP, relation_CP
 
 from nltk.tree import Tree
@@ -172,6 +172,7 @@ class Converter():
             tree.set_id(tree[-1].id())
         else:
             tree.set_id(tree[1].id()) # first from left indicated or no head rule index found
+            #TODO: frekar síðasta orð?
 
     def _relation(self, mod_tag, head_tag):
         """
@@ -182,8 +183,10 @@ class Converter():
             http://universaldependencies.github.io/docs/u/dep/index.html
 
         :param mod_tag: str
+        :param head_tag: str
         :return: str
         """
+
         mod_tag = re.sub('-TTT', '', mod_tag)
         mod_tag = re.sub('-\d+', '', mod_tag)
         mod_tag = re.sub('=\d+|=XXX|=X', '', mod_tag)
@@ -201,41 +204,18 @@ class Converter():
 
         if '-' in mod_tag:
             mod_tag, mod_func = mod_tag.split('-', 1) #todo, handle more than one function label
-#            if mod_tag == 'CP' and '-' in mod_func:
-#                mod_func, mod_extra = mod_func.split('-', 1) 
         else:
             mod_func = None
-#        if mod_func == r'[0123456]':     #TODO: virkar ekki, in {'0', '1', '2', '3', '4', '5', '6'}:
-#            mod_func = None
-#        elif '-' in mod_func:
-#            mod_func, mod_3 = mod_func.split('-', 1)
-#            if mod_3 in {'0', '1', '2', '3', '4', '5', '6'}:
-#                mod_3 = None
-#        else:
-#            mod_3 = None
 
         if '-' in head_tag:
             head_tag, head_func = head_tag.split('-', 1)
         else:
             head_func = None
 
-#        if mod_func:        
-#            if '-' in mod_func:
-#                mod_func, mod_extra = mod_func.split('-', 1)    
-
-#        if head_func:        
-#            if '-' in head_func:
-#                head_func, head_extra = head_func.split('-', 1)
-        
-#        if head_tag == 'NP' and head_func == 'SBJ-1':       #TODO: finna aðra lausn til að merkja expl
-#            return 'expl'
-#        elif mod_tag == 'NS':
-#            return 'HALLO'
-#        if mod_tag == 'NP' and mod_func == None:
-#            return 'NP???'
         if mod_tag in ['NP', 'NX', 'WNX']:   #TODO: hvað ef mod_tag er bara NP?
             # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
-            return relation_NP.get(mod_func, 'rel-'+mod_tag)
+            return relation_NP.get(mod_func, 'rel')
+#            return relation_NP.get(mod_func, 'rel-'+mod_tag)
         elif mod_tag == 'WNP':
             return 'obj'
         elif mod_tag in ['NS', 'N', 'NPRS'] and head_tag in ['NP', 'NX', 'QTP', 'ADJP', 'CONJP', 'NPR']:    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
@@ -270,7 +250,8 @@ class Converter():
         elif mod_tag == 'IP' and mod_func == 'SUB' and head_tag == 'CP' and head_func == 'FRL':
             return 'acl:relcl'
         elif mod_tag in ['IP', 'VP']:
-            return relation_IP.get(mod_func, 'rel-'+mod_tag)
+            return relation_IP.get(mod_func, 'rel')
+#            return relation_IP.get(mod_func, 'rel-'+mod_tag)
         elif mod_tag[:2] == 'VB' and head_tag == 'CP':
             return 'ccomp'
         elif mod_tag in ['VAN', 'DAN', 'HAN', 'BAN']:
@@ -290,11 +271,13 @@ class Converter():
         elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N', 'PP']:      #N: tvö N í einum NP tengd með CONJ
             return 'conj'
         elif mod_tag == 'CONJP' and head_tag == 'IP':
-            return relation_IP.get(head_func, 'rel-'+mod_tag+head_tag+head_func)
+            return relation_IP.get(head_func, 'rel')
+#            return relation_IP.get(head_func, 'rel-'+mod_tag+head_tag+head_func)
         elif mod_tag == 'CONJP':
             return 'conj'
         elif mod_tag == 'CP':
-            return relation_CP.get(mod_func, 'rel-'+mod_tag)
+            return relation_CP.get(mod_func, 'rel')
+#            return relation_CP.get(mod_func, 'rel-'+mod_tag)
         elif mod_tag in ['C', 'CP', 'TO', 'WQ']:  #infinitival marker with marker relation
             return 'mark'
         elif mod_tag in ['NUM', 'NUMP']:
@@ -303,16 +286,22 @@ class Converter():
             return 'xcomp'
         elif mod_tag in string.punctuation or mod_tag == 'LB':
             return 'punct'
-        elif mod_tag in ['FW', 'X', 'LATIN']:    #meira?
-            return '_'
         elif mod_tag in ['INTJ', 'INTJP'] or head_tag == 'INTJP':
             return 'discourse'
-        elif mod_tag in ['XXX', 'XP', 'FOREIGN', 'FW', 'QTP', 'REP', 'FS', 'LS', 'META', 'REF', 'ENGLISH']:      #XXX = annotator unsure of parse, LS = list marker
+        elif mod_tag in ['FOREIGN', 'FW', 'ENGLISH', 'LATIN'] or head_tag in ['FOREIGN', 'FW', 'ENGLISH', 'LATIN']:
+            return 'foreign'
+        elif mod_tag in ['XXX', 'XP', 'X', 'QTP', 'REP', 'FS', 'LS', 'META', 'REF']:      #XXX = annotator unsure of parse, LS = list marker
             return 'dep'    #unspecified dependency
         elif head_tag in ['META', 'CODE', 'REF', 'FRAG']:
             return 'dep'
+        elif mod_tag in ['N', 'NS', 'NPR', 'NPRS']:
+            return 'rel'
 
-        return 'rel-'+mod_tag+'+'+head_tag
+        return 'rel-'+mod_tag
+#        if mod_func:
+#            return 'rel-'+mod_tag+'+'+mod_func+'+'+head_tag
+#        else:
+#            return 'rel-'+mod_tag+'+'+head_tag
 
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree."""
@@ -336,6 +325,7 @@ class Converter():
                     # e.g. (ADVP (ADV smám-smám) (ADV saman-saman))
                     t[i].set_id(0)
                     const.append(i)
+
             else:
                 # If trace node, skip (preliminary, may result in errors)
                 # e.g. *T*-3 etc.
@@ -355,7 +345,7 @@ class Converter():
                     #DMII_combined = f.DMII_data('combined')
                     # print(FORM)
                     # LEMMA = DMII_data.get_lemma(DMII_combined, FORM)    # LEMMA = '_'
-                    LEMMA = DMII_data.get_lemma(FORM)
+                    #LEMMA = DMII_data.get_lemma(FORM)
                     if LEMMA == None:
                         LEMMA = '_'
                     token_lemma = str(FORM+'-'+LEMMA)
@@ -366,9 +356,9 @@ class Converter():
                 leaf = token_lemma, tag
                 XPOS = tag
                 # Feature Classes called here
-                #leaf = f.Word(leaf).getinfo()
-                #UPOS = leaf.UD_tag
-                #FEATS = leaf.features.featString()
+                leaf = f.Word(leaf).getinfo()
+                UPOS = leaf.UD_tag
+                FEATS = leaf.features.featString()
                 self.dg.add_node({'address': nr,
                                   'word': FORM,
                                   'lemma': LEMMA,
@@ -401,7 +391,7 @@ class Converter():
 #                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
 #                    self.dg.root = self.dg.get_by_address(mod_nr)
                 if child:
-                    if head_nr == mod_nr and re.match( "IP-MAT.*|INTJP|FRAG", head_tag):  #todo root phrase types from config
+                    if head_nr == mod_nr and re.match( "IP-MAT.*|CP.*|INTJP|FRAG", head_tag):  #todo root phrase types from config
                         self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
                         self.dg.root = self.dg.get_by_address(mod_nr)
                     elif child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
