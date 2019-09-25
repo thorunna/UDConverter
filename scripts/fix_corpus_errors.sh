@@ -21,6 +21,7 @@ sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1150.homiliub
 sed -i "" 's/(NP-ADT járnum-járna)/(NP-ADT (NS-D járnum-járn))/g' $dir/1150.homiliubok.rel-ser.psd # .410
 
 #1210.jartein.rel-sag.psd
+sed -i "" 's/(D-A ið-hinn)/(D-A \$ð-hinn)/' $dir/1210.jartein.rel-sag.psd # .159
 sed -i "" 's/(IP-MAT-KOMINN/(IP-MAT/' $dir/1210.jartein.rel-sag.psd # .321
 sed -i "" 's/(N-A sylgju\$)/(N-A sylgju\$-sylgja)/' $dir/1210.jartein.rel-sag.psd # .552
 
@@ -102,8 +103,9 @@ sed -i "" 's/(ADVP (ADVR eins-eins)))/(ADVP (ADVR \$eins-eins)))/g' $dir/1593.ei
 # sed -i "" 's/tabtab      (NPR-N kristur-kristur)/tabtab      (NPR-N kristur-kristur))/' $dir/1611.okur.rel-oth.psd # .581
 # commented out for now because of error
 
-#1628.olafuregils.bio-tra.psd
+# 1628.olafuregils.bio-tra.psd
 sed -i "" 's/(IP-INF-ZZZ/(IP-INF/' $dir/1628.olafuregils.bio-tra.psd # .205
+sed -i "" 's/(N-N \$n-hinn)/(D-N \$n-hinn)/' $dir/1628.olafuregils.bio-tra.psd # 345
 
 # 1630.gerhard.rel-oth.psd
 sed -i "" 's/(IP-IMP-SPE (VBI Sjá-sjá)/(IP-IMP-SPE (VBI Sjá\$-sjá)/g' $dir/1630.gerhard.rel-oth.psd # .901, .2991, .3003
@@ -112,6 +114,7 @@ sed -i "" 's/(VBDI \$bjó-\$búa)/(VBDI \$bjó-búa)/g' $dir/1630.gerhard.rel-ot
 
 # 1661.indiafari.bio-tra.psd
 sed -i "" 's/(N-N stóð-stóð)/(VBDI stóð-standa)/' $dir/1661.indiafari.bio-tra.psd # .36
+sed -i "" 's/(Q-G hvers-hver) (N-G \$kyns-kyn)/(Q-G hvers\$-hver) (N-G \$kyns-kyn)/' $dir/1661.indiafari.bio-tra.psd # 28.116
 sed -i "" 's/(N-N bað-bað)/(VBDI bað-biðja)/' $dir/1661.indiafari.bio-tra.psd # .577
 sed -i "" 's/(IP-MAT-SENT-BEFORE/(IP-MAT/' $dir/1661.indiafari.bio-tra.psd # .845
 
@@ -152,20 +155,35 @@ sed -i "" 's/(N-N brynjan-brynja)/(N-N brynja\$-brynja)/g' $dir/1861.orrusta.nar
 sed -i "" 's/IP-SUB-SUB/IP-SUB/g' $dir/1882.torfhildur.nar-fic.psd # .1983
 
 # 1985.sagan.nar-fic.psd
-sed -i "" 's/BEBI er-vera/BEPI er-vera/g' $dir/1985.sagan.nar-fic.psd # .772
 sed -i "" 's/(NP-SBJ \$ðu-þú)/(NP-SBJ (PRO-N \$ðu-þú))/g' $dir/1985.sagan.nar-fic.psd # .494
+sed -i "" 's/(ADV einu\$-einu)/(ADV einu\$-einu)/g' $dir/1985.sagan.nar-fic.psd # .693
+sed -i "" 's/BEBI er-vera/BEPI er-vera/g' $dir/1985.sagan.nar-fic.psd # .772
+sed -i "" 's/(N-N \$ið-hinn)/(D-N \$ið-hinn)/g' $dir/1985.sagan.nar-fic.psd # .773
+sed -i "" 's/(N-N Þula\$-þula) (N-N \$n-hinn))/(N-N Þula\$-þula) (D-N \$n-hinn))/g' $dir/1985.sagan.nar-fic.psd # .1416
+sed -i "" 's/(NS-A svefnpoka\$-svefnpoki) (N-A \$na-na))/(NS-A svefnpoka\$-svefnpoki) (D-A \$na-na))/g' $dir/1985.sagan.nar-fic.psd # .1487
+sed -i "" 's/(N-N stjúpa\$-stjúpa) (N-N \$n-hinn))/(N-N stjúpa\$-stjúpa) (D-N \$n-hinn))/g' $dir/1985.sagan.nar-fic.psd # .1520
+sed -i "" 's/(D-N tal\$-tal) (N-N \$ið-hinn))/(N-N tal\$-tal) (D-N \$ið-hinn))/g' $dir/1985.sagan.nar-fic.psd # .1751
 
 # 2008.mamma.nar-fic.psd
 sed -i "" 's/(VBDI Heyr\$/(VBI Heyr\$/g' $dir/2008.mamma.nar-fic.psd # .784
+sed -i "" 's/Kaupmannahafnar\./Kaupmannahafnar/g' $dir/2008.mamma.nar-fic.psd # .876
 sed -i "" 's/(NP-OB1 (NS-A augun-auga)/(NP-OB1 (NS-A augu\$-auga)/g' $dir/2008.mamma.nar-fic.psd # .1129
-sed -i "" 's/\$svo\$/\svo/g' $dir/2008.mamma.nar-fic.psd # .1286
+sed -i "" 's/\$vel\$/\$vel/g' $dir/2008.mamma.nar-fic.psd # .1286
 sed -i "" 's/(PRO-N ðu-þú))/(PRO-N \$ðu-þú))/g' $dir/2008.mamma.nar-fic.psd # .1289
+sed -i "" 's/sofandi\./sofandi/g' $dir/2008.mamma.nar-fic.psd # .1746
+sed -i "" 's/kallinn\./kallinn/g' $dir/2008.mamma.nar-fic.psd # .1757
+sed -i "" 's/Já\./Já/g' $dir/2008.mamma.nar-fic.psd # .1757
+sed -i "" 's/hahaha\./hahaha/g' $dir/2008.mamma.nar-fic.psd # .1791
 sed -i "" 's/(VBI Koddu-koma)/(VBI Kod\$-koma)/g' $dir/2008.mamma.nar-fic.psd # .1811
 sed -i "" 's/(VBI koddu-koma)/(VBI kod\$-koma)/g' $dir/2008.mamma.nar-fic.psd # .1812, .1813
 
 # 2008.ofsi.nar-sag.psd
 sed -i "" '13057, 13058d' $dir/2008.ofsi.nar-sag.psd # .622
 sed -i "" 's/\$hitta)/hitta)/g' $dir/2008.ofsi.nar-sag.psd # .313
+sed -i "" 's/(N-A \$veginn-vegur))/(N-A \$veg\$-vegur) (D-A \$inn-hinn))/g' $dir/2008.ofsi.nar-sag.psd # .442
+sed -i "" 's/(Q-A nokkurntíma-nokkurntími) (N-A \$tíma-tími))/(Q-A nokkurn\$-nokkur) (N-A $tíma-tími))/g' $dir/2008.ofsi.nar-sag.psd # .450
+
+
 
 # sed -i "" 's///g' $dir/ # .
 # sed -i "" 's///g' $dir/ # .
