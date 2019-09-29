@@ -126,6 +126,7 @@ sed -i "" 's/(IP-IMP-SPE (MDPI skal-skulu)/(IP-IMP-SPE (MDPI skal\$-skulu)/g' $d
 sed -i "" 's/(ITEM item-item)//' $dir/1680.skalholt.nar-rel.psd # .799
 
 # 1790.fimmbraedra.nar-sag.psd
+sed -i "" 's/(VAN \$lögð-\$leggja))/(RP upp\$-upp) (RP \$á\$-á) (VAN \$lögð-leggja))/g' $dir/1790.fimmbraedra.nar-sag.psd # .72
 sed -i "" 's/(NP-SBJ-ZZZ-2SBJ/(NP-SBJ/' $dir/1790.fimmbraedra.nar-sag.psd # .1198
 
 # 1791.jonsteingrims.bio-aut.psd
@@ -154,11 +155,19 @@ sed -i "" 's/(N-N brynjan-brynja)/(N-N brynja\$-brynja)/g' $dir/1861.orrusta.nar
 # 1882.torfhildur.nar-fic.psd
 sed -i "" 's/IP-SUB-SUB/IP-SUB/g' $dir/1882.torfhildur.nar-fic.psd # .1983
 
+# 1888.grimur.nar-fic.psd
+sed -i "" 's/(IP-MAT=1 (NP-SBJ (N-N verðið-verð)/(IP-MAT=1 (NP-SBJ (N-N verð\$-verð)/g' $dir/1888.grimur.nar-fic.psd # .20
+
 # 1985.sagan.nar-fic.psd
 sed -i "" 's/(NP-SBJ \$ðu-þú)/(NP-SBJ (PRO-N \$ðu-þú))/g' $dir/1985.sagan.nar-fic.psd # .494
+sed -i "" 's/(NP (N-A skrána-skrá)/(NP (N-A skrá\$-skrá)/g' $dir/1985.sagan.nar-fic.psd # .628
 sed -i "" 's/(ADV einu\$-einu)/(ADV einu\$-einu)/g' $dir/1985.sagan.nar-fic.psd # .693
 sed -i "" 's/BEBI er-vera/BEPI er-vera/g' $dir/1985.sagan.nar-fic.psd # .772
 sed -i "" 's/(N-N \$ið-hinn)/(D-N \$ið-hinn)/g' $dir/1985.sagan.nar-fic.psd # .773
+sed -i "" 's/(PP (P af\.-af)/(PP (P af-af)/g' $dir/1985.sagan.nar-fic.psd # .846
+# sed -i "" 's///g' $dir/1985.sagan.nar-fic.psd # .1287
+sed -i "" 's/(PP (P t.$-t)/(PP (P t.\$-til)/g' $dir/1985.sagan.nar-fic.psd # .1352
+sed -i "" 's/(NP (N-G \$d.-d)))/(NP (N-G $d.-dæmis)))/g' $dir/1985.sagan.nar-fic.psd # .1352
 sed -i "" 's/(N-N Þula\$-þula) (N-N \$n-hinn))/(N-N Þula\$-þula) (D-N \$n-hinn))/g' $dir/1985.sagan.nar-fic.psd # .1416
 sed -i "" 's/(NS-A svefnpoka\$-svefnpoki) (N-A \$na-na))/(NS-A svefnpoka\$-svefnpoki) (D-A \$na-na))/g' $dir/1985.sagan.nar-fic.psd # .1487
 sed -i "" 's/(N-N stjúpa\$-stjúpa) (N-N \$n-hinn))/(N-N stjúpa\$-stjúpa) (D-N \$n-hinn))/g' $dir/1985.sagan.nar-fic.psd # .1520
