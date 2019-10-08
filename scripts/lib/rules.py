@@ -48,6 +48,85 @@ tags = {
     'X' : 'X'
 }
 
+OTB_map = {
+        'Gender' : {
+            'k' : 'Masc',
+            'v' : 'Fem',
+            'h' : 'Neut',
+            'x' : 'None'
+        },
+        'Number': {
+            'f' : 'Plur',  # noun, plural number
+            'e' : 'Sing'    # noun singular number
+        },
+        'PronType' : {
+            'p' : 'Prs',    #personal
+            'e' : 'Prs',    #posessive (tagged as personal)
+            # 'a' : 'Rcp',   #reciprocal
+            's' : 'Int',     #interrogative
+            't' : 'Rel',     #relative
+            'a' : 'Dem',     #demonstrative
+            'b' : 'Dem',
+            'o' : 'Ind'    #indefinite
+        },
+        'Tense' : {
+            'n' : 'Pres',   #present tense
+            'þ' : 'Past',    #past tense
+            'NF' : None
+        },
+        'Person' : {
+            '1' : '1',
+            '2' : '2',
+            '3' : '3'
+        },
+        'Case' : {
+            'n' : 'Nom',   # nominative case
+            'o' : 'Acc',   # accusative case
+            'þ' : 'Dat',  # dative case
+            'e' : 'Gen',   # dative case
+            None : 'Nom'
+        },
+        'Mood' : {
+            'n' : 'infinitive',
+            'b' : 'Imp',  #imperative
+            'f' : 'Ind',   #indicative
+            'v' : 'Sub',   #subjunctive
+            'I' : 'Ind',    #indicative (IcePaHC POS-tag)
+            'S' : 'Sub',    #subjunctive (IcePaHC POS-tag)
+            'OSKH' : None   # TEMP
+        },
+        'VerbForm' : {
+            '' : 'Fin',     #finite verb
+            'n' : 'Inf',     #infinitive verb
+            'l' : 'Part',     #participle
+            'þ' : 'Part',     #participle
+            's' : 'Sup'
+        },
+        'Voice' : {
+            'g' : 'Act',     #active voice
+            'm' : 'Mid',     #middle voice
+            'pass' : 'Pass'     #passive voice
+        },
+        'Definite' : {
+            's' : 'Ind', # adjectives
+            'v' : 'Def', # adjectives
+            'g' : 'Def', # nouns
+            'o' : 'ÓBEYGT',
+            None : 'Ind'
+        },
+        'Degree' : {
+            'f' : 'Pos', # adjectives
+            'm' : 'Com', # adjectives
+            'e' : 'Sup' # nouns
+        },
+        'NumType' : {
+            'f' : 'Card',    #Cardinal number
+            'a' : 'Card',
+            'o' : 'Ord',     # FIX Ordinal number (not in OTB tag)
+            'p' : 'Frac'     #Fraction
+        }
+    }
+
 DMII_map = {
         'Gender' : { # TODO: add gender to feature matrix
             'kk' : 'Masc',
@@ -412,7 +491,7 @@ head_rules = {
             'IP-MAT-SPE-PRN-LFD': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE-SBJ': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SUB-SPE': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VP', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
-            'IP-MAT-SMC'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'NP', 'VAG', 'VP', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT']},    
+            'IP-MAT-SMC'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'NP', 'VAG', 'VP', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT']},
             #MD.* á eftir VB: ef VB er spor ruglast venslin en þá getur MD sem hjálparsögn líka verið haus. Ef MD er seinna er það seinna í lagi
             'IP-SUB'        : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'ADJP', 'NP.*', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB']},
             'IP-SUB-INF'    : {'dir':'r', 'rules':['VB']},
@@ -607,12 +686,12 @@ head_rules = {
             'QTP'           : {'dir':'r', 'rules':['IP.*', 'NP.*', 'N.*']},      #quote phrase
             'QTP-SBJ'       : {'dir':'r', 'rules':['IP.*', 'NP.*']},
             'REP'           : {'dir':'r', 'rules':['NP', 'PP', 'ADJP', 'IP.*', 'VB.*']},      #repetition
-            'RRC'           : {'dir':'r', 'rules':['V.+', 'ADJP', 'RRC.*', 'PP']},      #reduced relative clause   
-            'RRC-PRN'       : {'dir':'r', 'rules':['V.+', 'ADJP', 'RRC.*', 'PP']}, 
+            'RRC'           : {'dir':'r', 'rules':['V.+', 'ADJP', 'RRC.*', 'PP']},      #reduced relative clause
+            'RRC-PRN'       : {'dir':'r', 'rules':['V.+', 'ADJP', 'RRC.*', 'PP']},
             'RRC-SPE'       : {'dir':'r', 'rules':['V.+', 'ADJP', 'RRC.*', 'PP']},
             'NUMP'          : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NUM-.']},
             'INTJP'         : {'dir':'r', 'rules':['INTJ', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.']},
-            'VP'            : {'dir':'r', 'rules':['V.+', 'BE.']}, 
+            'VP'            : {'dir':'r', 'rules':['V.+', 'BE.']},
             'XP'            : {'dir':'r', 'rules':['XXX']},
             'FS'            : {'dir':'r', 'rules':['CP-ADV']},
             'META'          : {'dir':'r', 'rules':['NP', 'N.*']}
@@ -632,7 +711,7 @@ relation_NP = {
       'RSP': 'obl',
       'SBJ': 'nsubj',
       'SBJ-LFD': 'nsubj',
-      'SBJ-RSP': 'nsubj',     
+      'SBJ-RSP': 'nsubj',
       'SMC': 'obl',
       'SPE': 'nsubj',
       'OB1': 'obj',
@@ -664,14 +743,14 @@ relation_NP = {
 relation_IP = {
       None: '?',
       'INF': 'acl',
-      'INF-ABS': 'acl', 
-      'INF-ABS-PRN': 'acl', 
-      'INF-PRP': 'advcl',   #merkingin 'til þess að'   
+      'INF-ABS': 'acl',
+      'INF-ABS-PRN': 'acl',
+      'INF-PRP': 'advcl',   #merkingin 'til þess að'
       'INF-PRP-PRN': 'advcl',
       'INF-PRP-PRN-SPE': 'advcl',
       'INF-PRP-SPE': 'advcl',
       'INF-PRP-SPE-PRN': 'advcl',
-      'INF-SPE': 'acl',  
+      'INF-SPE': 'acl',
       'INF-SPE-ADT': 'advcl',      # ADT = clause-level dative adjunct
       'INF-SPE-DEG': 'acl',
       'INF-SPE-LFD': 'acl',
@@ -690,7 +769,7 @@ relation_IP = {
       'INF-DEG': 'acl',
       'INF-DEG-PRN': 'acl',
       'INF-DEG-SPE': 'acl',
-      'INF-LFD': 'acl',    
+      'INF-LFD': 'acl',
       'INF-PRD': 'csubj',
       'INF-ADT': 'advcl',   #clause-level modifier af því clause-level dative adjunct
       'INF-ADT-SPE': 'advcl',
@@ -698,7 +777,7 @@ relation_IP = {
       'INF-ADT-LFD': 'advcl',
       'INF-ADT-PRN': 'advcl',
       'MAT': 'conj',        #þarf ekki að hafa merkimiða því sögnin er alltaf rót? - conj þegar búið er að gera punkt til punkts
-      'MAT-DIR': 'conj',    #sama og MAT    
+      'MAT-DIR': 'conj',    #sama og MAT
       'MAT-LFD': 'conj',    #sama og MAT
       'MAT-OB1': 'advcl',     #kemur einu sinni fyrir, haus á eftir nær(þegar), jonsteingrims
       'MAT-PRN': 'conj',
@@ -767,13 +846,13 @@ relation_CP = {
       'CMP': 'advcl',      #ATH. acl í enska bankanum á eftir 'than', advcl í sænska og norska
       'CMP-LFD': 'advcl',
       'CMP-SPE': 'advcl',
-      'DEG': 'advcl', 
+      'DEG': 'advcl',
       'DEG-SPE': 'advcl',
-      'FRL': 'ccomp/xcomp',    #ccomp?, free relative 
+      'FRL': 'ccomp/xcomp',    #ccomp?, free relative
       'FRL-SPE': 'ccomp/xcomp',
       'REL': 'acl:relcl',
       'REL-SPE': 'acl:relcl',
-      'REL-SPE-PRN': 'acl:relcl',  
+      'REL-SPE-PRN': 'acl:relcl',
       'QUE': 'ccomp/xcomp',
       'QUE-SPE': 'ccomp/xcomp',
       'QUE-SPE-LFD': 'ccomp/xcomp',
@@ -805,5 +884,5 @@ relation_CP = {
       'EXL-SPE': 'ccomp/xcomp',
       'TMC': 'xcomp',        #so. í nh. fylgir alltaf, ekkert frl.
       'TMC-SPE': 'xcomp',
-      'TMP': 'xcomp'    #so. í nh fylgir alltaf, ekkert frl.   
+      'TMP': 'xcomp'    #so. í nh fylgir alltaf, ekkert frl.
 }
