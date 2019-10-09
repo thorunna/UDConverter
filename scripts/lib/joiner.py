@@ -461,7 +461,7 @@ class NodeJoiner():
         # det_node_alt = r'-TTT'
         noun_trail = r'(?<=)\$(?=-)' # matches the trailing "$" of a noun
         noun_node =  r' {0,1}\(((N|NS|NPR|NPRS)-|FW).*\$-' # matches a whole noun node
-        noun_token_incompl = r'(?<=N-. )[^($]*(?=-)' # noun token where "$" is missing
+        noun_token_incompl = r'(?<=N-. )(</?dash/?>)?[^($]*(?=-)' # noun token where "$" is missing
 
         prev = index-1
         next = index+1
@@ -563,9 +563,8 @@ class NodeJoiner():
 
             substitute_line = re.sub('\([A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+(\+[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+)?21(-[NADG])? [A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ<>]+-[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ<>]+\) \((ADJ|ADJR|ADV|FP|N|NPR|NS|NUM|ONE|Q|VAG|VAN|VBN|VBPI|WPRO)(\+[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+)?22(-[NADG])? [A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+-[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+\)', new_token_lemma, match)
             self.lines[index] = self.lines[index].replace(match, substitute_line)
-            if '<dash>' in self.lines[index]:
-                self.lines[index] = re.sub('<dash>', '', self.lines[index])
-
+            if re.search(r'<\/?dash\/?>',self.lines[index]):
+                self.lines[index] = re.sub(r'<\/?dash\/?>', '', self.lines[index])
             return self
 
         elif re.search(tags_33, self.lines[index]):
@@ -590,8 +589,8 @@ class NodeJoiner():
 
             substitute_line = re.sub('\([A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+(\+[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+)?31(-[NADG])? [A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ<>]+-[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ<>]+\) \([A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+(\+[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+)?32(-[NADG])? [A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ<>]+-[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ<>]+\) \((ADJ|ADJR|ADV|FP|N|NPR|NS|NUM|ONE|Q|VAG|VAN|VBN|VBPI|WPRO)(\+[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+)?33(-[NADG])? [A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ<>]+-[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ<>]+\)', new_token_lemma, match)
             self.lines[index] = self.lines[index].replace(match, substitute_line)
-            if '<dash>' in self.lines[index]:
-                self.lines[index] = re.sub('<dash>', '', self.lines[index])
+            if re.search(r'<\/?dash\/?>',self.lines[index]):
+                self.lines[index] = re.sub(r'<\/?dash\/?>', '', self.lines[index])
             return self
 
     def join_adverbs(self, index):
@@ -661,10 +660,10 @@ class NodeJoiner():
             self.lines[index] = re.sub(general_second_node, '', self.lines[index])
             # print('\t', curr, lines[curr].strip())
 
-    def join_various_nouns(self, index):
+    def join_various_nodes(self, index):
         '''
         # TODO:
-            FINISH IMPLEMENTING
+            FINISH IMPLEMENTING SCRIPT
 
         Joins various nouns not covered by other parts of module.
         Mostly not systematic
@@ -673,6 +672,7 @@ class NodeJoiner():
             ('Páls\$', '\$messu'),
             ('Staðar\$', '\$Kolbeins'),
             ('Staðar\$', '\$Böðvars'),
+            ('Staðar<dash/>\$', '\$Böðvars'),
             ('vígsakar\$', '\$aðilinn'),
             ('tíunda\$', '\$skipti'),
             ('Helga\$', '\$son'),
@@ -718,16 +718,82 @@ class NodeJoiner():
 
         tripart = ('Skaga\$', '\$fjarðar\$', '\$sýslum')
 
+        first_token = r'(?<=-[A-Z] )[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ*$-<>]+(?=\$)' # matches first token, excluding "$"
+        first_trail = r'(?<=)\$(?=-)' # matches the trailing "$" of a noun
+        first_lemma = r'(?<=[a-zþæðöáéýúíó<>]-)[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+(?=\))'
+        second_node = r' ?\(N[A-Z]{0,3}-[A-Z] \$[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ*$-]*\)' # matches a whole determiner node
+        second_token =  r'(?<=-. \$)[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]*(?=-)' # matches the token of the second node, excluding "$"
+        second_lemma = r'(?<=[a-zþæðöáéýúíó]-)[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+(?=\))'
+
+        pos_nodes = r'\(NP-POS \(N[A-Z]{0,2}-. [A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ*$-<>]+\) \(CONJ og-og\) \(N[A-Z]{0,2}-. [A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ*<>]+\$-[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ*<>]+\)\)'
+
         prev = index-1
         next = index+1
         for pair in di_nodes:
-            first_node = pair[0]
-            second_node = pair[1]
-            if re.search(second_node, self.lines[index]):
-                print('\t', prev, self.lines[prev].strip())
-                print('\t', index, self.lines[index].strip())
-                print('\t', next, self.lines[next].strip())
-                print()
+            first_word = pair[0]
+            second_word = pair[1]
+            if re.search(second_word, self.lines[index]) and re.search(first_word, self.lines[index]):
+                # print('\t', prev, self.lines[prev].strip())
+                # print('\t', index, self.lines[index].strip())
+                # print('\t', next, self.lines[next].strip())
+                # print()
+
+                new_lemma = re.findall(first_token, self.lines[index])[0] + re.findall(second_lemma, self.lines[index])[0]
+                self.lines[index] = re.sub(first_trail, re.findall(second_token, self.lines[index])[0], self.lines[index])
+                self.lines[index] = re.sub(second_node, '', self.lines[index])
+                self.lines[index] = re.sub(first_lemma, new_lemma, self.lines[index])
+
+                # print('\t\t', prev, self.lines[prev].strip())
+                # print('\t\t', index, self.lines[index].strip())
+                # print('\t\t', next, self.lines[next].strip())
+                # print()
+
+            elif re.search(second_word, self.lines[index]) and re.search(first_word, self.lines[prev]):
+                # print('\t', prev, self.lines[prev].strip())
+                # print('\t', index, self.lines[index].strip())
+                # print('\t', next, self.lines[next].strip())
+                # print()
+
+                # print('\t\t', prev, self.lines[prev].strip())
+                # print('\t\t', index, self.lines[index].strip())
+                # print('\t\t', next, self.lines[next].strip())
+                # print()
+
+                pass
+            elif re.search(second_word, self.lines[index]) and re.search(first_word, self.lines[prev-1]):
+                # print('\t', prev, self.lines[prev-1].strip())
+                # print('\t', prev, self.lines[prev].strip())
+                # print('\t', index, self.lines[index].strip())
+                # print('\t', next, self.lines[next].strip())
+                # print()
+
+                # print('\t\t', prev, self.lines[prev-1].strip())
+                # print('\t\t', prev, self.lines[prev].strip())
+                # print('\t\t', index, self.lines[index].strip())
+                # print('\t\t', next, self.lines[next].strip())
+                # print()
+
+                pass
+            # else:
+            #     # print('\t', prev, self.lines[prev].strip())
+            #     # print('\t', index, self.lines[index].strip())
+            #     # print('\t', next, self.lines[next].strip())
+            #     # print()
+            #     pass
+            elif re.search(pos_nodes, self.lines[index]):
+                '''
+                Possibly not fixable here...
+                1022 (NP-SBJ (D-N þessi-þessi)
+                1023 (NP-POS (N-G óþolinmæðis-óþolinmæði) (CONJ og-og) (N-G gáleysis$-gáleysi))
+                1024 (NS-N $orð-orð))
+                '''
+
+                # print('\t', prev, self.lines[prev].strip())
+                # print('\t', index, self.lines[index].strip())
+                # print('\t', next, self.lines[next].strip())
+                # print()
+
+
 
     def join_clitics(self, index):
         curr_line, prev_line = self.lines[index].split('\t'), self.lines[index-1].split('\t')
@@ -872,14 +938,14 @@ class NodeJoiner():
     def iterate_nodes(self):
         '''
         Runs input file through each method, line by line
+        Mostly used for debugging
         '''
         # print(self.name)
         # print(self.file_type)
         if self.file_type == '.psd':
             for current_line_num in self.indexes:
-                # Adverbs and various small nodes processed
+                # adverbs processed
                 self.join_adverbs(current_line_num)
-                # ADD SCRIPT HERE for fixing various nodes
                 # NPs processed
                 self.join_NPs(current_line_num)
                 self.join_split_nodes(current_line_num)
@@ -889,6 +955,8 @@ class NodeJoiner():
                 self.join_verbs_three_lines(current_line_num)
                 # adjectives processed
                 self.join_adjectives(current_line_num)
+                # various remaining nodes processed
+                self.join_various_nodes(current_line_num)
         elif self.file_type == '.conllu':
             for current_line_num in reversed(self.indexes):
                 self.join_clitics(current_line_num)
@@ -933,9 +1001,10 @@ class NodeJoiner():
 
 if __name__ == '__main__':
 
-    # for file in os.listdir('testing/corpora/icecorpus/psd_prt_testing'):
-    for file in os.listdir('testing/CoNLLU_output'):
-        IN_FILE = os.path.join('testing/CoNLLU_output', file)
+    for file in os.listdir('testing/corpora/icecorpus/psd'):
+    # for file in os.listdir('testing/CoNLLU_output'):
+        # IN_FILE = os.path.join('testing/CoNLLU_output', file)
+        IN_FILE = os.path.join('testing/corpora/icecorpus/psd', file)
         # IN_FILE = sys.argv[1]
         file = open(IN_FILE, 'r')
         j = NodeJoiner(file)

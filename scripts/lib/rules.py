@@ -48,6 +48,51 @@ tags = {
     'X' : 'X'
 }
 
+UD_map = {
+    # ipsd_tag : UD_tag
+    'N' : 'NOUN',   # generalized nouns tagged as NOUN
+    'D' : 'DET',    # generalized determiners tagged as DET (determiner)
+    'ONE' : 'DET',  #ath. áður taggað sem NUM
+    'ONES' : 'DET',
+    'P' : 'ADP',    # generalized prepositions tagged as ADP
+    'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
+    'RPX' : 'ADP',
+    'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
+    'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
+    'V' : 'VERB',
+    'DO' : 'VERB',  #'gera', do, tagged as verb
+    'HV' : 'AUX',   #'have' tagged as auxiliary verb
+    'MD' : 'AUX',   #modal verbs tagged as auxiliary
+    'RD' : 'VERB',    #'verða', become, tagged as verb
+    'W' : 'DET',    # WH-determiner tagged as DET (determiner)
+    'R' : 'VERB',   # All forms of "verða" tagged as VERB
+    'TO' : 'PART',  # Infinitive marker tagged as PART (particle)
+    'FP' : 'PART',  #focus particles marked as PART
+    'NPR' : 'PROPN', # proper nouns tagged as PROPN
+    'NPRS': 'PROPN',
+    'PRO' : 'PRON',
+    'WQ' : 'PRON',  #interrogative pronoun
+    'WPRO' : 'PRON',  #wh-pronouns
+    'SUCH' : 'PRON',
+    'ES' : 'PRON',  #expletive tagged as PRON
+    'MAN' : 'PRON',
+    'NUM' : 'NUM',
+    'ADJ' : 'ADJ',  # Adjectives tagged as ADV
+    'ADJR' : 'ADJ', # Comparative adjectives tagged as ADV
+    'ADJS' : 'ADJ', # Superlative adjectives tagged as ADV
+    'ADV' : 'ADV',  # Adverbs tagged as ADV
+    'WADV' : 'ADV', #TODO: ath. betur - bara spor?
+    'NEG' : 'ADV',
+    'ADVR' : 'ADV', # Comparative adverbs tagged as ADV
+    'ADVS' : 'ADV', # Superlative adverbs tagged as ADV
+    'ALSO' : 'ADV',
+    'OTHER' : 'PRON',
+    'OTHERS' : 'PRON',
+    'INTJ' : 'INTJ',    #interjection
+    'FW' : 'X',
+    'X' : 'X'
+}
+
 OTB_map = {
         'Gender' : {
             'k' : 'Masc',
