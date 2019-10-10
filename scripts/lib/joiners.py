@@ -1039,11 +1039,14 @@ class SentJoiner():
                     token.head = self.first_root
                     token.deprel = 'conj'
                     # print(token.conll())
+                finally:
+                    token.id = token.id.split('.')[1]
 
         return sentence
 
     def _add_to_fixed(self, sent):
         self.lines.append(sent)
+        self.lines.append('\n\n')
 
     def set_vars(self):
         '''

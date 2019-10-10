@@ -20,6 +20,8 @@ if __name__ == '__main__':
     IN_PATH = sys.argv[1]
 
     file = open(IN_PATH, 'r')
+
+    # NODES JOINED
     nj = NodeJoiner(file)
     close(file)
     # print(j.name)
@@ -30,16 +32,19 @@ if __name__ == '__main__':
     f.write_to_file(sepdir=False, overwrite=True)
     for s in
 
-    # output written to file
+    # output written to file ()
     f1 = FileWriter(nj)
     f1.write_to_file(sepdir=False, overwrite=True)
 
-    # former output file used as input
-    file = open(IN_PATH, 'r')
-    sj = SentJoiner(file)
-    close(file)
+    # SENTENCES JOINED, comment out if not wanted
+    # TODO: finish
 
-    final output file
-    sj.set_vars()
-    f2 = FileWriter(file)
-    f2.write_to_file(sepdir=False, overwrite=True)
+    # # former output file used as input
+    # file = open(IN_PATH, 'r')
+    # sj = SentJoiner(file)
+    # close(file)
+    #
+    # final output file
+    # sj.set_vars()
+    # f2 = FileWriter(file)
+    # f2.write_to_file(sepdir=False, overwrite=True)
