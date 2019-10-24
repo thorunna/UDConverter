@@ -163,7 +163,10 @@ class Converter():
         for rule in rules:
             for child in tree:
                 if re.match(rule, child.label()):
-                    tree.set_id(child.id())
+                    if '*' in child[0]: #or ' ' in child[0]: ATH. sturlunga 822 CODE tekið út og '' sett í staðinn - betra að hafa ' '
+                        continue
+                    else:
+                        tree.set_id(child.id())
                     return
 
         #no head-rules applicable: select either the first or last child as head
@@ -190,11 +193,13 @@ class Converter():
 
         mod_tag = re.sub('-TTT', '', mod_tag)
         mod_tag = re.sub('-\d+', '', mod_tag)
-        mod_tag = re.sub('=\d+|=XXX|=X', '', mod_tag)
+        #'=\d+|
+        mod_tag = re.sub('=XXX|=X', '', mod_tag)
 
         head_tag = re.sub('-TTT', '', head_tag)
         head_tag = re.sub('-\d+', '', head_tag)
-        head_tag = re.sub('=\d+|=XXX|=X', '', head_tag)
+        #'=\d+|
+        head_tag = re.sub('=XXX|=X', '', head_tag)
 
         if '+' in mod_tag:
             mod_tag = re.sub('\w+\+', '', mod_tag)
@@ -313,7 +318,7 @@ class Converter():
                     #    if head_nr != mod_nr:
                     #        self.dg.add_arc(head_nr, mod_nr)
                     #if head_nr == mod_nr and re.match("IP-MAT.*|CP.*|INTJP|FRAG", head_tag):  #todo root phrase types from config
-                    if head_nr == mod_nr and re.match("IP-MAT.*|INTJP|FRAG|CP-QUE-SPE|IP-IMP-SPE|QTP", head_tag):  #todo root phrase types from config
+                    if head_nr == mod_nr and re.match("IP-MAT|IP-MAT.*[^=]|IP-MAT[^=].*|INTJP|FRAG|CP-QUE-SPE|IP-IMP-SPE[^=1]|QTP|CODE|LATIN|TRANSLATION|META|IP-IMP|CP-QUE|CP-EXL|CP-THT", head_tag):  #todo root phrase types from config
                         self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
                         self.dg.root = self.dg.get_by_address(mod_nr)
                     elif child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
