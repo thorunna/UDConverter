@@ -1,0 +1,148 @@
+VENSL SEM ERU NOTUÐ EINS OG ER:
+acl
+acl:relcl
+advcl
+advmod
+appos
+aux
+case
+cc
+(clitic)
+compound:prt
+conj
+cop
+det
+dep
+discourse
+expl
+fixed
+flat:name
+foreign
+iobj
+mark
+nmod
+nmod:poss
+nsubj
+nummod
+obj
+obl
+punct
+vocative
+xcomp
+
+ATH:
+	acl
+	list
+	dislocated
+	fixed
+	obl:arg (forsetningarliður sem er rökliður)
+	parataxis (tenging milli beinnar ræðu og aðalsetningar)
+	orphan
+
+NP-SBJ = nsubj
+NP-OB1 = obj 
+NP-OB2 = iobj
+NP-OB3 = iobj
+ATH: ef andlag sagnar er bara eitt fær það obj þó það sé óbeint andlag
+NP-POS = nmod:poss
+NP-VOC = vocative
+NP-PRD = xcomp
+NP-SPR = xcomp (second predicate)
+NP-PRN = appos
+NP-COM = obl (nmod:poss?)
+NP-ADT = obl
+NP-TMP = obl
+NP-MSR = amod?
+Önnur NP-tögg: obl
+
+WNP = obj
+
+N, head tag NP = conj
+NPR, head tag NP/NX/QTP = flat:name
+PRO, head NP-PRN = obj 
+D = det
+ONE = det
+OTHER = det
+OTHERS = det
+SUCH = det
+ADJP = amod
+ADJ = amod
+ADJ-PRD = xcomp
+Q = amod
+PP = obl	#no. fær obl
+WPP = obl 
+PX = obl
+P = case
+ADVP, NEG, FP, QP, ALSO, WADVP = advmod
+
+IP
+	Frumlag: ccomp
+	Ekki frumlag: xcomp
+	advcl
+
+NEG = advmod
+VB.., head tag CP = ccomp
+VAN = aux:pass
+DAN = aux:pass
+HAN = aux:pass
+VBN = aux:pass
+DON = aux:pass
+HVN = aux:pass
+RDN = aux:pass
+VB.. = aux
+DO.. = aux
+HV.. = aux
+RD.. = aux
+MD.. = aux
+BE.. = cop 		
+BAN = cop 		
+RP = compound:part
+FP = amod 		#focus particles
+CONJ = cc
+CONJP = conj
+	conj er líka fyrir hausa setninga á eftir cc eða í upptalningum á eftir kommu
+
+CP-ADV = advcl
+CP-ADV-SPE = advcl
+CP-THT = ccomp		#ath. xcomp ef frl. er ekki til staðar
+CP-THT-PRN = ccomp		#ath. xcomp ef frl. er ekki til staðar
+CP-REL = acl:relcl
+CP-CAR = acl:relcl
+CP-CLF = acl:relcl
+CP-CMP = advcl? - þannig í ensku á eftir as long as - acl á eftir than
+	7	längre	länge	ADV	AB|KOM	Degree=Cmp	1	advmod	1:advmod	_
+	8	än	än	SCONJ	SN	_	10	mark	10:mark	_
+	9	du	du	PRON	PN|UTR|SIN|DEF|SUB	Case=Nom|Definite=Def|Gender=Com|Number=Sing|PronType=Prs	10	nsubj	10:nsubj	_
+	10	behöver	behöva	VERB	VB|PRS|AKT	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	1	advcl	1:advcl:än	_
+
+CP-DEG = ccomp/xcomp
+CP-FRL = ccomp/xcomp
+CP-PRN = appos
+Önnur CP-tögg = ccomp/xcomp
+
+(IP-)INF-PRP = advcl
+C = mark
+CP = mark
+TO = mark
+WQ = mark
+ES = expl
+NUM = nummod
+FRAG = ?
+punct. = punct
+XP, X, QTP, REP, FS, LS, META, REF, CODE = dep
+FOREIGN, FW, ENGLISH = foreign
+INTJ = discourse
+INTJP = discourse
+
+Dæmi um samsetningar sem tilheyra fixed:
+	eins og
+	til þess að
+	af því að
+	þar sem
+	áður en
+	á meðan
+	þangað til að
+	svo að
+	þó að
+	heldur en
+	þar sem
