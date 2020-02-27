@@ -520,7 +520,7 @@ head_rules = {
             'IP-INF-ADT-SPE': {'dir':'r', 'rules':['VB']},
             'IP-INF-ADT-SPE-LFD': {'dir':'r', 'rules':['VB']}, 
             'IP-MAT'        : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'IP-MAT-\d', 'PP', 'ADJP', 'RP', 'NP-PRD', 'NP', 'N.*', 'IP-SMC', 'IP-MAT', 'IP-MAT-*']},
-            #'IP-MAT=\d'     : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'IP-MAT-\d', 'PP', 'ADJP', 'RP', 'NP-PRD', 'NP', 'N.*', 'IP-SMC', 'IP-MAT', 'IP-MAT-*']},
+            'IP-MAT=\d'     : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'IP-MAT-\d', 'PP', 'ADJP', 'RP', 'NP-PRD', 'NP', 'N.*', 'IP-SMC', 'IP-MAT', 'IP-MAT-*']},
             #'IP-MAT-1'       : {'dir':'r', 'rules':['NP-MSR']},
             #'IP-MAT=1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'PP', 'ADJP', 'NP-PRD', 'NP', 'N.*', 'IP-SMC', 'IP-MAT']},
             #'IP-MAT=1'      : {'dir':'r', 'rules':['NP-SBJ']},
@@ -532,7 +532,8 @@ head_rules = {
             'IP-MAT-PRN-LFD': {'dir':'r', 'rules':['VB.*', 'VP']},
             'IP-MAT-PRN-SPE': {'dir':'r', 'rules':['VB.*', 'VP']},
             'IP-MAT-SBJ'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'NP', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT']},
-            'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VP', 'NP', 'ADJP', 'VAN', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
+            'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VP', 'ADJP', 'NP', 'VAN', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
+            'IP-MAT-SPE=1'  : {'dir':'r', 'rules':['ADJP']},
             'IP-MAT-SPE-PRN': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE-PRN-ELAB': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE-PRN-LFD': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
@@ -715,7 +716,7 @@ head_rules = {
             'WADVP'         : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'WADV']},
             'WADVP-LOC'     : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'WADV']},
             'WADVP-NaN'     : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'WADV']},
-            'CONJP'         : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP.*', 'NX', 'NUMP.*', 'NUM-.', 'QP', 'QX', 'IP-SUB', 'IP-MAT', 'IP-INF', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'ADVP.*', 'PP', 'CONJ']},
+            'CONJP'         : {'dir':'r', 'rules':['IP-MAT-SPE=1', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP.*', 'NX', 'NUMP.*', 'NUM-.', 'QTP', 'QP', 'QX', 'IP-SUB', 'IP-MAT.*', 'IP-INF', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'ADVP.*', 'PP', 'CONJ']},
             'CONJP-PP'      : {'dir':'r', 'rules':['NP.*', 'NX', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NUM-.', 'QP', 'QX', 'IP-SUB', 'IP-MAT', 'IP-INF', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'PP', 'CONJ']},
             'CONJP-PRN'     : {'dir':'r', 'rules':['NP.*', 'NX', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NUM-.', 'QP', 'QX', 'IP-SUB', 'IP-MAT', 'IP-INF', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'PP', 'CONJ']},
             'WNP'           : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'Q-.', 'WQ-.', 'WPRO-.', 'PRO-.', 'WD-.', 'NP.*', 'WNP.*']}, #MEIRA?
@@ -760,7 +761,7 @@ relation_NP = {
       'RSP': 'obl',
       'SBJ': 'nsubj',
       'SBJ-LFD': 'nsubj',
-      'SBJ-RSP': 'nsubj',
+      'SBJ-RSP': 'nsubj',     
       'SMC': 'obl',
       'SPE': 'nsubj',
       'OB1': 'obj',
@@ -792,14 +793,14 @@ relation_NP = {
 relation_IP = {
       None: '?',
       'INF': 'acl',
-      'INF-ABS': 'acl',
-      'INF-ABS-PRN': 'acl',
-      'INF-PRP': 'advcl',   #merkingin 'til þess að'
+      'INF-ABS': 'acl', 
+      'INF-ABS-PRN': 'acl', 
+      'INF-PRP': 'advcl',   #merkingin 'til þess að'   
       'INF-PRP-PRN': 'advcl',
       'INF-PRP-PRN-SPE': 'advcl',
       'INF-PRP-SPE': 'advcl',
       'INF-PRP-SPE-PRN': 'advcl',
-      'INF-SPE': 'acl',
+      'INF-SPE': 'acl',  
       'INF-SPE-ADT': 'advcl',      # ADT = clause-level dative adjunct
       'INF-SPE-DEG': 'acl',
       'INF-SPE-LFD': 'acl',
@@ -818,7 +819,7 @@ relation_IP = {
       'INF-DEG': 'acl',
       'INF-DEG-PRN': 'acl',
       'INF-DEG-SPE': 'acl',
-      'INF-LFD': 'acl',
+      'INF-LFD': 'acl',    
       'INF-PRD': 'csubj',
       'INF-ADT': 'advcl',   #clause-level modifier af því clause-level dative adjunct
       'INF-ADT-SPE': 'advcl',
@@ -826,7 +827,7 @@ relation_IP = {
       'INF-ADT-LFD': 'advcl',
       'INF-ADT-PRN': 'advcl',
       'MAT': 'conj',        #þarf ekki að hafa merkimiða því sögnin er alltaf rót? - conj þegar búið er að gera punkt til punkts
-      'MAT-DIR': 'conj',    #sama og MAT
+      'MAT-DIR': 'conj',    #sama og MAT    
       'MAT-LFD': 'conj',    #sama og MAT
       'MAT-OB1': 'advcl',     #kemur einu sinni fyrir, haus á eftir nær(þegar), jonsteingrims
       'MAT-PRN': 'conj',
@@ -895,13 +896,13 @@ relation_CP = {
       'CMP': 'advcl',      #ATH. acl í enska bankanum á eftir 'than', advcl í sænska og norska
       'CMP-LFD': 'advcl',
       'CMP-SPE': 'advcl',
-      'DEG': 'advcl',
+      'DEG': 'advcl', 
       'DEG-SPE': 'advcl',
-      'FRL': 'ccomp/xcomp',    #ccomp?, free relative
+      'FRL': 'ccomp/xcomp',    #ccomp?, free relative 
       'FRL-SPE': 'ccomp/xcomp',
       'REL': 'acl:relcl',
       'REL-SPE': 'acl:relcl',
-      'REL-SPE-PRN': 'acl:relcl',
+      'REL-SPE-PRN': 'acl:relcl',  
       'QUE': 'ccomp/xcomp',
       'QUE-SPE': 'ccomp/xcomp',
       'QUE-SPE-LFD': 'ccomp/xcomp',
@@ -933,5 +934,5 @@ relation_CP = {
       'EXL-SPE': 'ccomp/xcomp',
       'TMC': 'xcomp',        #so. í nh. fylgir alltaf, ekkert frl.
       'TMC-SPE': 'xcomp',
-      'TMP': 'xcomp'    #so. í nh fylgir alltaf, ekkert frl.
+      'TMP': 'xcomp'    #so. í nh fylgir alltaf, ekkert frl.   
 }
