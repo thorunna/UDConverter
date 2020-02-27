@@ -18,7 +18,7 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif mod_tag == 'ES':
         return 'expl'   #expletive
     elif mod_tag in ['PRO', 'WPRO']:
-        return 'nmod?'
+        return 'nmod'
 #        elif mod_tag == 'PRO' and head_tag == 'NP' and head_func == 'PRN':  #TODO: skoða betur, hliðstæð NPR sem eru bæði dobj?
 #            return 'obj'
     elif mod_tag in ['D', 'WD', 'ONE', 'ONES', 'OTHER', 'OTHERS', 'SUCH']:
@@ -26,6 +26,8 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif mod_tag[:3] == 'ADJ' or mod_tag[:4] == 'WADJ' or mod_tag in ['Q', 'QR', 'QS', 'WQP']:
             # -SPR (secondary predicate)
         return 'amod'
+    #elif mod_tag == 'PP' and head_tag == 'IP':  #CP-ADV
+    #    return 'advcl'
     elif mod_tag in ['PP', 'WPP', 'PX']:
             # -BY, -PRN
         return 'obl'        #NP sem er haus PP fær obl nominal  #TODO: haus CP-ADV (sem er PP) á að vera merktur advcl
