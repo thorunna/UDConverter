@@ -9,7 +9,7 @@ Based on earlier work by
 Part of UniTree project for IcePaHC
 '''
 
-#from lib import features as f
+from lib import features as f
 #from lib import DMII_data
 from lib.rules import head_rules
 from lib import relations
@@ -163,10 +163,10 @@ class Converter():
         for rule in rules:
             for child in tree:
                 if re.match(rule, child.label()):
-                    if '*' in child[0]: #or ' ' in child[0]: ATH. sturlunga 822 CODE tekið út og '' sett í staðinn - betra að hafa ' '
-                        continue
-                    else:
-                        tree.set_id(child.id())
+                    #if '*' in child[0]: #or ' ' in child[0]: ATH. sturlunga 822 CODE tekið út og '' sett í staðinn - betra að hafa ' '
+                    #    continue
+                    #else:
+                    tree.set_id(child.id())
                     return
 
         #no head-rules applicable: select either the first or last child as head
@@ -257,12 +257,12 @@ class Converter():
                     tag = tag_list[nr]
                 else: # If no lemma present
                     FORM = t[i][0]
-                    #DMII_combined = f.DMII_data('combined')
+                    DMII_combined = f.DMII_data('combined')
                     # print(FORM)
                     # LEMMA = DMII_data.get_lemma(DMII_combined, FORM)    # LEMMA = '_'
-                    #LEMMA = DMII_data.get_lemma(FORM)
-                    if LEMMA == None:
-                        LEMMA = '_'
+                    LEMMA = DMII_data.get_lemma(FORM)
+                    #if LEMMA == None:
+                    #LEMMA = '_'
                     token_lemma = str(FORM+'-'+LEMMA)
                     tag = tag_list[nr]
                 if '+' in tag:
@@ -271,18 +271,19 @@ class Converter():
                 leaf = token_lemma, tag
                 XPOS = tag
                 # Feature Classes called here
-                #leaf = f.Word(leaf).getinfo()
-                #UPOS = leaf.UD_tag
-                #FEATS = leaf.features.featString()
+                leaf = f.Word(leaf).getinfo()
+                UPOS = leaf.UD_tag
+                FEATS = leaf.features.featString()
                 if FORM != None:
                     self.dg.add_node({'address': nr,
                                     'word': FORM,
                                     'lemma': LEMMA,
-                                    #'ctag': UPOS, # upostag
-                                    'ctag': '_', # upostag
+                                    #'lemma': '_',
+                                    'ctag': UPOS, # upostag
+                                    #'ctag': '_', # upostag
                                     'tag': XPOS,   # xpostag
-                                    #'feats': FEATS,
-                                    'feats': '_',
+                                    'feats': FEATS,
+                                    #'feats': '_',
                                     'deps': defaultdict(list),
                                     'rel': '_'})
                     nr += 1
@@ -298,6 +299,8 @@ class Converter():
             head_nr = t[i].id()
             if re.search(r'\w{1,5}(21|22|31|32|33)', head_tag):
                 head_tag = re.sub('(21|22|31|32|33)', '', head_tag)
+            #if re.search(r'IP-MAT=\d+', head_tag):
+            #    head_tag = re.sub('IP-MAT=\d+', 'IP-MAT', head_tag)
             for child in t[i]:
                 mod_tag = child.label()
                 if re.search(r'\w{1,5}(21|22|31|32|33)', mod_tag):
@@ -318,7 +321,7 @@ class Converter():
                     #    if head_nr != mod_nr:
                     #        self.dg.add_arc(head_nr, mod_nr)
                     #if head_nr == mod_nr and re.match("IP-MAT.*|CP.*|INTJP|FRAG", head_tag):  #todo root phrase types from config
-                    if head_nr == mod_nr and re.match("IP-MAT|IP-MAT.*[^=]|IP-MAT[^=].*|INTJP|FRAG|CP-QUE-SPE|IP-IMP-SPE[^=1]|QTP|CODE|LATIN|TRANSLATION|META|IP-IMP|CP-QUE|CP-EXL|CP-THT", head_tag):  #todo root phrase types from config
+                    if head_nr == mod_nr and re.match("IP-MAT|IP-MAT-[^=].*|INTJP|FRAG|CP-QUE-SPE|IP-IMP-SPE[^=1]|QTP|CODE|LATIN|TRANSLATION|META|IP-IMP|CP-QUE|CP-EXL|CP-THT", head_tag):  #todo root phrase types from config
                         self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
                         self.dg.root = self.dg.get_by_address(mod_nr)
                     elif child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
