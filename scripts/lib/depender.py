@@ -10,7 +10,7 @@ Part of UniTree project for IcePaHC
 '''
 
 from lib import features as f
-#from lib import DMII_data
+from lib import DMII_data
 from lib.rules import head_rules
 from lib import relations
 
@@ -257,12 +257,12 @@ class Converter():
                     tag = tag_list[nr]
                 else: # If no lemma present
                     FORM = t[i][0]
-                    DMII_combined = f.DMII_data('combined')
+                    #DMII_combined = f.DMII_data('combined')
                     # print(FORM)
                     # LEMMA = DMII_data.get_lemma(DMII_combined, FORM)    # LEMMA = '_'
-                    LEMMA = DMII_data.get_lemma(FORM)
+                    #LEMMA = DMII_data.get_lemma(FORM)
                     #if LEMMA == None:
-                    #LEMMA = '_'
+                    LEMMA = '_'
                     token_lemma = str(FORM+'-'+LEMMA)
                     tag = tag_list[nr]
                 if '+' in tag:
