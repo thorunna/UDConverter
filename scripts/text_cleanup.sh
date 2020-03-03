@@ -17,10 +17,10 @@ Machine-specific paths must be specified before use
 
 # paths
 
-in_dir="./testing/corpora/icepahc-v0.9/psd_orig"
-out_dir="./testing/corpora/icepahc-v0.9/psd"
-# in_dir="./testing/corpora/icecorpus/psd_orig"
-# out_dir="./testing/corpora/icecorpus/psd"
+# in_dir="./testing/corpora/icepahc-v0.9/psd_orig"
+# out_dir="./testing/corpora/icepahc-v0.9/psd"
+in_dir="./testing/corpora/icecorpus/psd_orig"
+out_dir="./testing/corpora/icecorpus/psd"
 
 # Create output directory if needed
 

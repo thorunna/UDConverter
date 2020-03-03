@@ -26,7 +26,7 @@ if __name__ == '__main__':
     total_sents = 0
     file_num = 1
 
-    #f = open('homilia_conllu.conllu', 'w+')
+    # f = open('homilia_conllu.conllu', 'w+')
 
     ''' Prints the dependency graph data in conllU format '''
     for fileid in fileids:
@@ -38,23 +38,23 @@ if __name__ == '__main__':
             treeID = fileid + '_' + str(file_sents+1) + '_' + str(total_sents+1)
             try:
                 dep = c.create_dependency_graph(str(tree))
-                #dep_c = dep.to_conllU()
-                #print(dep_c)
-                #f.write('# sent_id =')
-                #f.write(treeID)
-                #f.write('\n')
-                #print('# sent_id =', treeID)
-                #f.write(dep.to_conllU())
-                #print(dep.to_conllU())
+                # dep_c = dep.to_conllU()
+                # print(dep_c)
+                # f.write('# sent_id =')
+                # f.write(treeID)
+                # f.write('\n')
+                # print('# sent_id =', treeID)
+                # f.write(dep.to_conllU())
+                # print(dep.to_conllU())
             except:
                 error_num += 1
             file_sents += 1
             total_sents += 1
         end = time.time()
         duration = '%.2f' % float(end - start)
-        #print('Finished! Time elapsed: {0} seconds'.format(duration))
-        #print('Number of sentences in file: {0}'.format(file_sents))
-        #print('Number of failed sentences: {0}'.format(error_num))
+        # print('Finished! Time elapsed: {0} seconds'.format(duration))
+        # print('Number of sentences in file: {0}'.format(file_sents))
+        # print('Number of failed sentences: {0}'.format(error_num))
         print('\t'.join([str(i) for i in [file_num, fileid, error_num]]))
 
     #f.close()
