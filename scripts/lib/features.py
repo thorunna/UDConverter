@@ -1,36 +1,33 @@
-
-'''
-features_test.py
-Hinrik Hafsteinsson (hih43@hi.is)
-Þórunn Arnardóttir (tha86@hi.is)
-2019
-Part of UniTree project for IcePaHC
-'''
-
-from lib import DMII_data
-from lib.rules import tags, feats, cconj
-import string
+import os
 import re
-from nltk.tree import Tree
-from collections import OrderedDict
-import inspect
+import string
 
-DMII_no = DMII_data.DMII_data('no')
-DMII_lo = DMII_data.DMII_data('lo')
-DMII_fn = DMII_data.DMII_data('fn')
-DMII_to = DMII_data.DMII_data('to')
-DMII_ao = DMII_data.DMII_data('ao')
-DMII_so = DMII_data.DMII_data('so')
+from collections import defaultdict
 
+from lib.rules import UD_map, OTB_map
 
+# in_path = str(sys.argv[1])
+# in_path = 'taggers/test_conllu/2008.mamma.nar-fic.conllu'
 
-def error_info(err):
-    '''
-    Debug method
-    Returns the current line number in our program and type of exception.
-    '''
-    err = str(type(err).__name__)
-    return err+' Loc: '+str(inspect.currentframe().f_back.f_lineno)
+def getTagDict(filename):
+    OTB_path = os.path.join('taggers','tagged', re.sub('conllu', 'txt.tagged', filename))
+    OTB_file = open(OTB_path, 'r')
+    index = 0
+    # empty tuple returned to trip token correction if end of dict found
+    indexedWords = defaultdict(lambda: ('',''))
+    for line in OTB_file.readlines():
+        # print(line)
+        if not '\t' in line: continue
+        word,tag = line.strip('\n').split('\t')
+        if word == '$': continue
+        if '``' in word:
+            # print(line.strip('\n'))
+            word = re.sub('``', '"', word)
+            # print(word)
+        index += 1
+        indexedWords[index] = word, tag
+    OTB_file.close()
+    return indexedWords
 
 class IcelandicUDFeatures:
     """
@@ -55,6 +52,7 @@ class IcelandicUDFeatures:
         self.NumType = None
         self.AdpType = None
         self.Clitic = None
+        self.Foreign = None
         # Compiled features
         self.all_features = None
         # Debug
@@ -83,414 +81,332 @@ class IcelandicUDFeatures:
         ex: Number=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=1
         ex: _
 
-        # TODO: FIX ORDER
+        # TODO: FIX ORDER (random as is)
         '''
-        # TODO: Order output (random as is)
         NoneType = type(None)
         if not isinstance(self.all_features, (str, NoneType)):
             return '|'.join(['='.join([k,v]) for k,v in self.all_features.items()])
         else:
             return self.all_features
 
-class Word:
+
+
+class Features():
     '''
-    Class for finding Icelandic grammatical features of words in Universal
-    Dependency (UD) format. Uses DMII data extensively
-
-    Uses Tree.pos objects from NLTK Tree module (here called leaf objects)
-    to get Universal Dependency format POS tage
-
-    Saves further grammatical features in a IcelandicUDFeatures class instance
-
-    # TODO: Add all word classes from original features.py script
     '''
-
-    def __init__(self, leaf):
-        self.leaf = leaf
-        self.lemma = leaf[0].split('-')[1]
-        self.token = leaf[0].split('-')[0].lower()
-        self.tag = leaf[1]
-        self.tag_name = None
-        self.tag_info = None
-        self.tag_extra = None
+    def __init__(self, lines, dict, index, word_index):
+        self.OTB_tagDict = dict
+        self.index = index
+        self.word_index = word_index
+        self.curr_line = self._get_line(lines)
+        self.token = None
+        self.IcePaHC_tag = None
         self.UD_tag = None
-        self.features = IcelandicUDFeatures() # Feature class instance created
-        self.tags = tags
-        self.feats = feats
-        self.cconj = cconj
+        self.OTB_token = None
+        self.OTB_tag = None
+        self.return_count = None
+        self.features = IcelandicUDFeatures()
+        self.methods = {
+            'n' : self._noun_features,
+            'l' : self._adjective_features,
+            'f' : self._pronoun_features,
+            'g' : self._determiner_features,
+            't' : self._numeral_features,
+            's' : self._verb_features,
+            'a' : self._adverb_features,
+            'e' : self._other_features,
+            'x' : self._other_features
+        }
+        self.split = None
 
-    def getUD_tag(self):
-        '''
-        Checks IcePaHC POS-tag of leaf and saves Universal Dependency format
-        POS-tag as instance variable (self.UD_tag) by comparing with 'tags' dict
-        '''
-        tag = self.tag.split('-')[0]
-            # This condition can be minimized further
-        try:
-            self.UD_tag = self.tags[tag]
-            return self
-        except:
-            # raise
-            if re.search(r'(DO|DA|RD|RA)', tag[0:2]):
-                self.UD_tag = 'VERB'       #ATH. merkt sem sögn í bili
-                return self
-            elif re.search(r'(BE|BA|HV|HA|MD|MA)', tag[0:2]):
-                self.UD_tag = 'AUX'
-                return self
-            elif tag == 'CONJ' and self.lemma in self.cconj:
-                self.UD_tag = 'CCONJ'
-                return self
-            elif tag in string.punctuation:
-                self.UD_tag = 'PUNCT'
-                return self
-            else:
-                self.UD_tag = self.tags.get(tag[0], '_')
-                return self
+    def _get_line(self, lst):
+        if len(lst[self.index]) == 10:
+            curr_line = lst[self.index]
+            return curr_line
 
-    def split_tag(self):
-        '''
-        Splits IcePaHC tag into sub-parts if '-' in tag
-        '''
-        if '-' in self.tag:
-            self.tag_name, self.tag_info = self.tag.split('-', 1)
-            if '-' in self.tag_info:
-                self.tag_info, self.tag_extra = self.tag_info.split('-')
-            return self
-        # elif self.UD_tag in {'VERB', 'AUX', 'ADP'}: # NOTE: QUICK FIX
+    def correct_token(self):
+        self.word_index -= 1
+        # if self.token == self.OTB_tagDict[self.word_index]:
+        return self.get_OTB_tag()
+        # else:
+        #     print(self.token, self.OTB_tagDict[self.word_index][0], self.OTB_tagDict[self.word_index][1])
+        #     self.OTB_token, self.OTB_tag == None, None
         #     return self
-        else:
-            self.tag_name = self.tag
-            return self
 
-    def tag_cleanup(self):
-        '''
-        Removes various unimportant information from IcePaHC tag
-        '''
-        if self.tag == 'ADV-Q-N':
-            self.tag = re.sub('ADV-', '', self.tag)
-        if self.tag == 'ADVR-Q-D':
-            self.tag = re.sub('ADVR-', '', self.tag)
-        if self.tag_name == 'NPR+NS':
-            self.tag_name = re.sub('\+NS', '', self.tag_name)
-            self.UD_tag = 'PROPN'
-        if self.tag == 'RP-2':
-            self.tag = re.sub('-2', '', self.tag)
-        if self.tag_info == 'TTT':
-            self.tag_info = self.tag.split('-')[1]
-        self.tag = re.sub(r'-(1|2|3)', '', self.tag) # removes all '-(1/2/3)' from tags
-
-        # TODO: find permanent fix for this, where -N is not default
-        # e.g. join words in .psd file that have these numbers in tag
-        if re.search(r'\w{1,5}(21|22|31|32|33)', self.tag):
-            self.tag = re.sub(r'(21|22|31|32|33)', '-N', self.tag)
-            return self.split_tag()
-
-        return self
-
-    def get_feats_verb(self):
-        '''
-        Finds features for verbs
-        Updates features for infinitives, imperatives and present participles
-        Calls methods for all other verbs
-        '''
-        tag = self.tag
-        UD_tag = self.UD_tag
-        if len(tag) == 2 or tag.endswith('TTT') or re.search(r'VB-[123]', tag):       #infinitive
-            self.features.VerbForm = self.feats[UD_tag]['VerbForm']['inf']
-            return self
-        elif re.search(r'([DV][AB]N)', tag[:3]):     #VAN (lh.þt. í þolmynd) og VBN (lh.þt.)
-            part_feats = self.feats_verb_part()
-            return part_feats
-        elif tag[1:3] == 'AG':      #lh.nt., VAG, DAG og RAG
-            self.features.VerbForm = self.feats[UD_tag]['VerbForm']['part']
-            self.features.Tense = self.feats[UD_tag]['Tense']['NT']
-            return self
-        elif len(tag) == 3 and tag[2] == 'I':     #imperative
-            self.features.Mood = self.feats[UD_tag]['Mood']['IMP']
-            return self
-        elif len(tag) == 3:
-            rdn_feats = self.feats_verb_part()
-            return rdn_feats
-        else:
-            # return None
-            else_feats = self.feats_verb_else()
-            return else_feats
-
-    def feats_verb_part(self):     #VAN, VBN, DAN, DON, RDN
-        '''
-        Finds features for verbs that are participles
-        Relevant IcePaHC tags:
-        VAN, VBN, DAN, DON, RDN
-        '''
-        tag = self.tag
-        token = self.token
-        UD_tag = self.UD_tag
-        tag_name, tag_info = self.tag_name, self.tag_info
-        # print(tag_name, tag_info)
+    def _noun_features(self, tag):
         if '-' in tag:
-            tag = tag.split('-')[0]
+            tag, tag_extra = tag.split('-')
+        self.features.Gender = OTB_map['Gender'][tag[1]]
+        self.features.Number = OTB_map['Number'][tag[2]]
+        self.features.Case = OTB_map['Case'][tag[3]]
+        if len(tag) > 4:
+            self.features.Definite = OTB_map['Definite'][tag[4]]
         else:
-            tag = tag
-        self.features.Case = self.feats[UD_tag]['Case'].get(tag_info)
-        self.features.Tense = self.feats[UD_tag]['Tense']['ÞT']
-        self.features.VerbForm = self.feats[UD_tag]['VerbForm']['part']
-        DMII_entries = DMII_so.get(self.lemma)
-        if not DMII_entries:
-            self.features.ERROR = 'NOT_FOUND'
-            return self
-        try:
-            for entry in DMII_entries:
-                # print(entry.token, entry.features)
-                if token == entry.token and entry.subclass == 'LHÞT':
-                    self.features.Number = entry.features['Number']
-                    self.features.Gender = entry.features['Gender']
-                    if tag[1] == 'B':
-                        return self
-                    elif tag[1] == 'A':
-                        self.features.Voice = self.feats[UD_tag]['Voice']['pass']
-                        return self
-                # elif # NOTE: Leftover from supine, maybe can be deleted?
-                #     self.features.VerbForm = entry.features['VerbForm']
-                #     self.features.Voice = entry.features['Voice']
-                #     return self
-                else:
-                    continue
-        except KeyError:
-            # raise
-            self.features.ERROR = error_info(err)
-            return self
-        except TypeError:
-            # raise
-            self.features.ERROR = error_info(err)
-            return self
+            self.features.Definite = OTB_map['Definite'][None]
+        return self
 
-    def feats_verb_else(self):
-        '''
-        Finds features for all 'other' verbs
-        '''
-        tag = self.tag
-        token = self.token
-        UD_tag = self.UD_tag
-        self.features.Tense = self.feats[UD_tag]['Tense'][tag[2]]
-        self.features.Mood = self.feats[UD_tag]['Mood'][tag[3]]
-        DMII_entries = DMII_so.get(self.lemma)
-        if not DMII_entries:
-            self.features.ERROR = 'NOT_FOUND'
-            return self
-        for entry in DMII_entries:
-            # print(entry.token, entry.features)
-            # print((token, self.features.Mood, self.features.Tense), (entry.features['Mood'], entry.features['Tense'], entry.token))
-            try:
-                if (token, self.features.Mood, self.features.Tense) == (entry.token, entry.features.get('Mood'), entry.features.get('Tense')):
-                    # print(entry.token, entry.features)
-                    self.features.Voice = entry.features['Voice']
-                    self.features.Person = entry.features['Person']
-                    self.features.Number = entry.features['Number']
-                    return self
-                else:
-                    continue
-            except (TypeError, KeyError, IndexError) as err:   #ef orð finnst ekki í BÍN eru upplýsingar frá Icepahc notaðar
-                # continue
-                # print(entry.token, entry.features)
-                # raise
-                self.features.ERROR = error_info(err)
+    def _adjective_features(self, tag):
+        self.features.Gender = OTB_map['Gender'][tag[1]]
+        self.features.Number = OTB_map['Number'][tag[2]]
+        self.features.Case = OTB_map['Case'][tag[3]]
+        self.features.Definite = OTB_map['Definite'][tag[4]]
+        self.features.Degree = OTB_map['Degree'][tag[5]]
+        return self
+
+    def _pronoun_features(self, tag):
+        self.features.PronType = OTB_map['PronType'][tag[1]]
+        if tag[2] in {'1', '2'}:
+            self.features.Person = OTB_map['Person'][tag[2]]
+        else:
+            self.features.Gender = OTB_map['Gender'][tag[2]]
+        self.features.Number = OTB_map['Number'][tag[3]]
+        self.features.Case = OTB_map['Case'][tag[4]]
+        return self
+
+    def _determiner_features(self, tag):
+        self.features.Gender = OTB_map['Gender'][tag[1]]
+        self.features.Number = OTB_map['Number'][tag[2]]
+        self.features.Case = OTB_map['Case'][tag[3]]
+        return self
+
+    def _numeral_features(self, tag):
+        self.features.NumType = OTB_map['NumType'][tag[1]]
+        if len(tag) > 2:
+            self.features.Gender = OTB_map['Gender'][tag[2]]
+            self.features.Number = OTB_map['Number'][tag[3]]
+            self.features.Case = OTB_map['Case'][tag[4]]
+        return self
+
+    def _verb_features(self, tag):
+        if tag[1] not in {'s', 'þ', 'l', 'n'}:
+            self.features.Mood = OTB_map['Mood'][tag[1]]
+            self.features.Voice = OTB_map['Voice'][tag[2]]
+            self.features.Person = OTB_map['Person'][tag[3]]
+            self.features.Number = OTB_map['Number'][tag[4]]
+            self.features.Tense = OTB_map['Tense'][tag[5]]
+            self.features.VerbForm = OTB_map['VerbForm']['']
+        elif tag[1] in {'þ', 'l'}:
+            self.features.VerbForm = OTB_map['VerbForm'][tag[1]]
+            self.features.Voice = OTB_map['Voice'][tag[2]]
+            if tag[1] == 'þ':
+                self.features.Gender = OTB_map['Gender'][tag[3]]
+                self.features.Number = OTB_map['Number'][tag[4]]
+                self.features.Case = OTB_map['Case'][tag[5]]
+        else:
+            self.features.VerbForm = OTB_map['VerbForm'][tag[1]]
+            self.features.Voice = OTB_map['Voice'][tag[2]]
+        return self
+
+    def _adverb_features(self, tag):
+        if tag[-1] in {'m', 'e'}:
+            if len(tag) == 2:
                 return self
-
-    def get_feats_noun(self):
-        '''
-        Finds features for all nouns and proper names
-        # TODO: add full proper name support (not found in DMII)
-        '''
-        tag = self.tag
-        token = self.token
-        UD_tag = self.UD_tag
-        tag_name, tag_info = self.tag_name, self.tag_info
-        self.features.Case = self.feats[UD_tag]['Case'].get(tag_info)
-        self.features.Number = self.feats[UD_tag]['Number'][tag_name]
-        DMII_entries = DMII_no.get(self.lemma)
-        if not DMII_entries:
-            self.features.ERROR = 'NOT_FOUND'
-            return self
-        for entry in DMII_entries:
-            try:
-                if (self.token, self.features.Case, self.features.Number) == (entry.token, entry.features['Case'], entry.features['Number']):
-                    self.features.Gender = entry.features.get('Gender')
-                    self.features.Definite = entry.features.get('Definite')
-                    return self
-                else:
-                    continue
-            except Exception as err:
-                # raise
-                self.features.ERROR = error_info(err)
-                return self
-
-    def get_feats_pron(self):
-        '''
-        # NOTE: 'hann', 'hún' and 'það' do not have native gender marker in
-                DMII data. This should be fixed with if condition
-        # ERROR: 'vér' is never found as it has lemma 'ég' in IcePaHC, which
-                doesn't match DMII
-        '''
-        self.features.Case = self.feats[self.UD_tag]['Case'].get(self.tag_info)
-        DMII_entries = DMII_fn.get(self.lemma)
-        if self.token.startswith('$'):
-            self.features.Clitic = 'Yes'
-        if not DMII_entries:
-            self.features.ERROR = 'NOT_FOUND'
-            return self
-        for entry in DMII_entries:
-            if entry.token == self.token:
-                if not self.features.Case:
-                    self.features.Case = entry.features.get('Case')
-                self.features.Number = entry.features.get('Number')
-                self.features.PronType = entry.features.get('PronType')
-                self.features.Gender = entry.features.get('Gender')
-            if self.lemma in {'hann', 'hún', 'það'}:
-                self.features.Gender = self.feats[self.UD_tag]['Gender'][self.lemma]
             else:
-                continue
-            return self
-
-    def get_feats_num(self):
-        '''
-        Finds features for numerals
-        '''
-        DMII_entries = DMII_to.get(self.lemma)
-        # print(self.token, self.tag)
-        self.features.NumType = 'Card'# self.feats[UD_tag]['NumType']['C'] (Specific data not present in IcePaHC)
-        try:
-            self.features.Case = self.feats[self.UD_tag]['Case'].get(self.tag.split('-')[1])
-            if not DMII_entries:
-                self.features.ERROR = 'NOT_FOUND'
-                return self
-            for entry in DMII_entries:
-                if self.token == entry.token and self.features.Case == entry.features['Case']:
-                    self.features.Gender = entry.features.get('Gender')
-                    self.features.Number = entry.features.get('Number')
-                    return self
-                else:
-                    continue
-        except Exception as err:   #ef orðið finnst ekki
-            # raise
-            self.features.ERROR =  error_info(err)
-            return self
-
-    def get_feats_adj(self):
-        '''
-        Finds features for all adjectives
-        '''
-        tag = self.tag
-        token = self.token
-        UD_tag = self.UD_tag
-        tag_name, tag_info = self.tag_name, self.tag_info
-        # print(token, tag, tag_name, tag_info)
-        self.features.Case = self.feats[UD_tag]['Case'].get(tag_info)
-        if self.tag_name[-1] == 'R':
-            self.features.Degree = self.feats[UD_tag]['Degree']['R']
-        elif self.tag_name[-1] == 'S':
-            self.features.Degree = self.feats[UD_tag]['Degree']['S']
+                self.features.Degree = OTB_map['Degree'][tag[-1]]
         else:
-            self.features.Degree = self.feats[UD_tag]['Degree']['P']
-        DMII_entries = DMII_lo.get(self.lemma)
-        if not DMII_entries:
-            self.features.ERROR = 'NOT_FOUND'
-            return self
-        try:
-            for entry in DMII_entries:
-                if (entry.token, entry.features['Case']) == (self.token, self.features.Case):
-                    self.features.Gender = entry.features.get('Gender')
-                    self.features.Number = entry.features.get('Number')
-                    self.features.Definite = entry.features.get('Definite')
-                    return self
-        except Exception as err: #handles mismatch between word class analysis in Icepahc and BÍN, quantifiers tagged as ADJ in UD, WIP for pronouns tagged as ADJ in UD?
-            try:
-                self.get_feats_pron()
-            except (TypeError, KeyError) as err:
-                # raise
-                self.features.ERROR =  error_info(err)
-                return self
-
-    def get_feats_adv(self):
-        '''
-        Finds features for adverbs (?)
-        '''
-        UD_tag = self.UD_tag
-        tag_name = self.tag
-        if tag_name[-1] == 'R':
-            self.features.Degree = self.feats[UD_tag]['Degree']['R']
-    #        return degree
-        elif tag_name[-1] == 'S':
-            self.features.Degree = self.feats[UD_tag]['Degree']['S']
-    #        return degree
-        else:
-            self.features.Degree = self.feats[UD_tag]['Degree']['P']
+            self.features.Degree = OTB_map['Degree']['f']
         return self
 
-    def get_adp_feats(self):
-        '''
-        # NOTE: Think this does something with adpositions (???)
-        '''
-        self.features.AdpType = self.feats[self.UD_tag]['AdpType']['P']
-        return self
+    def _other_features(self, tag):
+        if tag[0] == 'e':
+            self.features.Foreign = 'Yes'
 
-    def getinfo(self):
-        '''
-        Populates instance variables with relevant information
-        Must be called specifically outside of class for class to function
-        '''
-        self.split_tag() # IcePaHC tag split (if applicable)
-        self.tag_cleanup() # IcePaHC tag info cleaned
-        self.getUD_tag() # UD_tag variable populated
-        if self.tag_info is not None and self.tag_info.isdigit() and self.UD_tag not in {'CCONJ', 'SCONJ', 'VERB', 'AUX', 'ADP', 'PART'}:
-            # print(self.leaf, self.UD_tag)
-            self.features.Case = self.feats[self.UD_tag]['Case']['N']
-            return self
-        if self.UD_tag in {'VERB', 'AUX'}:    #TODO: include all verbs
-            # self.features.all_features = '_'
-            self.get_feats_verb()
-        elif self.UD_tag in {'NOUN', 'PROPN'}:
-            # self.features.all_features = '_'
-            self.get_feats_noun()
-        elif self.UD_tag == 'PRON':
-            # self.features.all_features = '_'
-            self.get_feats_pron()
-        elif self.UD_tag == 'ADJ':
-            # self.features.all_features = '_'
-            self.get_feats_adj()
-        elif self.UD_tag == 'ADV':
-            # self.features.all_features = '_'
-            self.get_feats_adv()
-        elif self.UD_tag == 'ADP':
-            # self.features.all_features = '_'
-            self.get_adp_feats()
-        elif self.UD_tag == 'NUM':
-            # self.features.all_features = '_'
-            self.get_feats_num()
-        elif self.UD_tag == 'DET':
-            self.features.all_features = '_'
-            # if self.tag_info:
-            #     self.features.Case = self.feats[self.UD_tag]['Case'][self.tag_info]
-            # else:
-            #     self.features.Case = None
-        else:
-            self.features.all_features = '_'
+    def _get_features(self, tag):
+        self.methods.get(tag[0], lambda x: 'x')(tag)
         self.features.setAll_features()
         return self
 
+    # Here follow methods for finding a word's UD-tag from its IcePaHC tag
+
+    def _get_IcePaHC_tag(self):
+        '''
+        Isolates IcePaHC tag from line and saves as instance variable
+        '''
+        if isinstance(self.curr_line, list):# and self.curr_line[4] == 'None':
+            self.IcePaHC_tag = self.curr_line[4]
+            self._tag_cleanup()
+            return self
+
+    def _split_tag(self):
+        '''
+        Splits IcePaHC tag into sub-parts if '-' in tag (returns only first part)
+        '''
+        if '-' in self.IcePaHC_tag:
+            self.IcePaHC_tag = self.IcePaHC_tag.split('-', 1)[0]
+            return self
+        else:
+            self.IcePaHC_tag = self.IcePaHC_tag
+            return self
+
+    def _tag_cleanup(self):
+        '''
+        Removes various unimportant information from IcePaHC tag
+        '''
+        if self.IcePaHC_tag == 'ADV-Q-N':
+            self.IcePaHC_tag = re.sub('ADV-', '', self.IcePaHC_tag)
+        if self.IcePaHC_tag == 'ADVR-Q-D':
+            self.IcePaHC_tag = re.sub('ADVR-', '', self.IcePaHC_tag)
+        if self.IcePaHC_tag == 'RP-2':
+            self.IcePaHC_tag = re.sub('-2', '', self.IcePaHC_tag)
+        self.IcePaHC_tag = re.sub(r'-(1|2|3)', '', self.IcePaHC_tag) # removes all '-(1/2/3)' from tags
+        # TODO: find permanent fix for this, where -N is not default
+        # e.g. join words in .psd file that have these numbers in tag
+        if re.search(r'\w{1,5}(21|22|31|32|33)', self.IcePaHC_tag):
+            self.IcePaHC_tag = re.sub(r'(21|22|31|32|33)', '-N', self.IcePaHC_tag)
+        return self._split_tag()
+
+    def get_UD_tag(self):
+        '''
+        Checks IcePaHC POS-tag of word and saves Universal Dependency format
+        POS-tag as instance variable (self.UD_tag) by comparing with 'tags' dict
+        '''
+        self._get_IcePaHC_tag()
+        if self.IcePaHC_tag:
+            try:
+                self.UD_tag = UD_map[self.IcePaHC_tag]
+                return self
+            except:
+                # raise
+                if re.search(r'(DO|DA|RD|RA)', self.IcePaHC_tag[0:2]):
+                    self.UD_tag = 'VERB'       #ATH. merkt sem sögn í bili
+                    return self
+                elif re.search(r'(BE|BA|HV|HA|MD|MA)', self.IcePaHC_tag[0:2]):
+                    self.UD_tag = 'AUX'
+                    return self
+                elif self.IcePaHC_tag == 'CONJ':
+                    self.UD_tag = 'CCONJ'
+                    return self
+                elif self.IcePaHC_tag in string.punctuation:
+                    self.UD_tag = 'PUNCT'
+                    return self
+                else:
+                    self.UD_tag = UD_map.get(self.IcePaHC_tag[0], '_')
+                    return self
+
+
+    def get_OTB_tag(self):
+        self.return_count = 0
+        if self.curr_line:
+            self.token = re.sub(r'<dash/?>', '-', self.curr_line[1])
+            self.token = re.sub(r'<apostrophe>', "'", self.token)
+            if self.token[-1] == '.':
+                if len(self.token[:-1]) > 1:
+                    self.token = self.token[:-1]
+                if self.token[-1] == '.' and self.token[0] in {
+                                                                '0', '1', '2',
+                                                                '3', '4', '5',
+                                                                '6', '7', '8',
+                                                                '9', 'N', 'X',
+                                                                'LI', 'L', 'I',
+                                                                'V', 's', 'S',
+                                                                'c', 'M', 'm',
+                                                                'H', 'h', 'Þ',
+                                                                'b', 'A', 'B',
+                                                                'C', 'D', 'E',
+                                                                'v', 't', 'd',
+                                                                'K', 'W',
+                                                                }:
+                    # TODO: convert string match to regex search
+                    self.token = self.token[:-1]
+                if self.token[:-1] in {'et'}:
+                    self.token = self.token[:-1]
+            if not len(self.curr_line) == 10:
+                return self
+            if self.IcePaHC_tag == '_':
+                return self
+            if self.token == '<' and self.OTB_tagDict[self.word_index][0] == '-':
+                self.token = '-'
+                self.OTB_token = self.OTB_tagDict[self.word_index][0]
+                self.OTB_tag = self.OTB_tagDict[self.word_index][1]
+                return self
+            if self.token == '<' and not self.curr_line[1] == self.OTB_tagDict[self.word_index][0]:
+                return self
+            if self.token[-1] == '$':
+                self.OTB_token = self.OTB_tagDict[self.word_index][0] + '($ split)'
+                self.OTB_tag = self.OTB_tagDict[self.word_index][1]
+                self.split = True
+                return self
+            if self.token[0] == '$':
+                return self
+            if self.curr_line[1] == self.curr_line[2] == self.curr_line[3] == 'None':
+                return self
+            # if self.token[-1] == '.':
+            #     self.token = self.token[:-1]
+            #     self.correct_token()
+            #     self.return_count += 1
+            #     # print(self.word_index, self.return_count)
+            #     return self
+            # if '_' in self.curr_line[3]:
+            #     self.OTB_token = 'Placeholder'
+            #     self.OTB_tag = 'Placeholder'
+            #     return self
+            # if len(self.prev_line) == 10 and '_' in self.prev_line[3]:
+            #     self.OTB_token = self.OTB_tagDict[self.word_index][0]
+            #     self.OTB_tag = self.OTB_tagDict[self.word_index][1]
+            #     return self
+            # if len(self.prevprev_line) == 10 and '_' in self.prevprev_line[3]:
+            #     self.OTB_token = 'Placeholder'
+            #     self.OTB_tag = 'Placeholder'
+            #     return self
+            elif not self.token in self.OTB_tagDict[self.word_index][0]:
+                # self.OTB_token = self.OTB_tagDict[self.word_index][0]
+                # self.OTB_tag = self.OTB_tagDict[self.word_index][1]
+                # print(self.word_index, self.token, self.OTB_token, self.OTB_tag)
+                # print('here')
+                self.correct_token()
+                self.return_count += 1
+                # print(self.word_index, self.return_count)
+                return self
+            else:
+                self.OTB_token = self.OTB_tagDict[self.word_index][0]
+                self.OTB_tag = self.OTB_tagDict[self.word_index][1]
+                self._get_features(self.OTB_tag)
+                return self
+        else:
+            return self
+
+
+
 if __name__ == '__main__':
-    sent1 = '(IP-MAT (NP-OB2 (D-A Inn-hinn) (ADJS-A æðsta-æðri) (N-A föður-faðir)) (VBPI biðjum-biðja) (NP-SBJ (PRO-N vér-ég)) (NP-OB1 (D-G innar-hinn) (ADJS-G æðstu-æðri) (N-G bænar-bæn) (, :-:) (NP-PRN (FW Sanctificetur-sanctificetur) (FW nomen-nomen) (FW tuum-tuum))) (. .-.))'
-    sent2 = '(IP-MAT (VBDI Ætluðu-ætla) (ADVP-TMP (ADV þá-þá)) (NP-SBJ (Q-N allir-allur)) (CP-THT (C að-að) (IP-SUB (NP-SBJ (NPR-N Gunnar-gunnar)) (MDDS mundi-munu) (VB falla-falla) (PP (P þegar-þegar) (CP-ADV (C er-er) (IP-SUB (NP-SBJ (PRO-N þeir-hann)) (VBDS tækju-taka) (PP (P til-til) (NP (N-G glímu-glíma)))))))))'
-    sent3 = '(IP-MAT (CONJ en-en) (ADVP (ADV þó-þó)) (BEDI voru-vera) (NP-SBJ (Q-N báðir-báðir)) (ADJP (ADJ-N sterklegir-sterklegur)) (. .-.))'
-    sent4 = '(IP-MAT (NP-SBJ (NP (NPR-N Þorgrímur-þorgrímur) (NP-PRN (N-N bóndi-bóndi))) (CONJP *ICH*-1)) (VBDI sat-sitja) (PP (P á-á) (NP (N-D palli-palli))) (CONJP-1 (CONJ og-og) (NP (NPR-N Helga-helga) (NP-PRN (N-N dóttir-dóttir) (NP-POS (PRO-G hans-hann))))))'
-    sent5 = '(IP-MAT (CONJ og-og) (VBDI skartaði-skarta) (NP-SBJ (PRO-N hún-hún)) (NP-MSR (ADJ-N allmikið-allmikill)) (. .-.))'
-    sent6 = '(IP-MAT (NP-SBJ (NPR-N Gunnar-gunnar)) (VBDI fór-fara) (PP (P úr-úr) (NP (N-D kuflinum-kufl))))'
-    sent7 = '(IP-MAT (CONJ og-og) (NP-SBJ-1 *exp*) (VBDI fauk-fjúka) (PP (P úr-úr) (NP (PRO-D honum-hann))) (NP-1 (N-N aska-aska) (Q-N mikil-mikill)) (. .-.))'
-    sents = [sent1, sent2, sent3, sent4, sent5, sent6, sent7]
-    for sent in sents:
-        print('\n\n')
-        tree = Tree.fromstring(sent)
-        for leaf in tree.pos():
-            word = Word(leaf).getinfo()
-            f = word.features
-            print(word.token, word.UD_tag, f.featString())
-            #
+
+    in_dir = 'testing/CoNLLU_output/'
+    # in_path = 'testing/CoNLLU_output/1985.sagan.nar-fic.conllu'
+
+
+    for filename in os.listdir(in_dir)[1:]:
+        # filename = os.path.basename(in_path)
+        in_path = os.path.join(in_dir, filename)
+        # OTB_path = os.path.join('taggers','tagged', re.sub('conllu', 'txt.tagged', filename))
+        # OTB_path = 'taggers/tagged/2008.mamma.nar-fic.txt.tagged'
+        out_path = in_path + '.tmp'
+
+        CoNLLU_file = open(in_path, 'r')
+        # OTB_file = open(OTB_path, 'r')
+
+        CoNLLU_lines = [line.split('\t') for line in list(CoNLLU_file.readlines())]
+        line_indexes = [i for i in range(len(CoNLLU_lines))]
+        self.OTB_tagDict = getTagDict(filename)
+
+        word_index = 1
+        try:
+            for i in line_indexes:
+                f = Features(CoNLLU_lines, self.OTB_tagDict, i, word_index)
+                f.get_UD_tag()
+                f.get_OTB_tag()
+                # print(f.index, f.IcePaHC_tag, f.UD_tag)
+                # if f.OTB_token == 'Placeholder':
+                #     print(f.word_index, f.token, f.OTB_token, f.OTB_tag, f.IcePaHC_tag, f.UD_tag)
+                if f.OTB_tag:
+                    word_index += 1
+                    # print(f.word_index, f.token, f.OTB_token, f.OTB_tag, f.IcePaHC_tag, f.UD_tag)
+                    # print(f.curr_line)
+        except RecursionError:
+            print('Recursion error!!!!')
+            # print(f.curr_line)
+            print(f.token, f.IcePaHC_tag)
+            break
+        print('You have just finished', filename)
+        # input()
+
+        CoNLLU_file.close()
+        # OTB_file.close()

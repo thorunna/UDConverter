@@ -10,7 +10,7 @@ Part of UniTree project for IcePaHC
 '''
 
 from lib import features as f
-from lib import DMII_data
+# from lib import DMII_data
 from lib.rules import head_rules
 from lib import relations
 
@@ -22,26 +22,32 @@ from collections import defaultdict
 import re
 import string
 
-# DMII_combined = DMII_data.DMII_data('combined') # TODO: Move to features script
 
 class UniversalDependencyGraph(DependencyGraph):
     '''
-        Takes in a nltk Tree object and returns an approximation of the tree sentence
-        in the CONLLU format for UD:
-            ID: Word index, integer starting at 1 for each new sentence.
-            FORM: Word form or punctuation symbol.
-            LEMMA: Lemma or stem of word form.
-            UPOS: Universal part-of-speech tag.
-            XPOS: Language-specific part-of-speech tag; underscore if not available.
-            FEATS: List of morphological features from the universal feature inventory or from a defined language-specific extension; underscore if not available.
-            HEAD: Head of the current word, which is either a value of ID or zero (0).
-            DEPREL: Universal dependency relation to the HEAD (root iff HEAD = 0) or a defined language-specific subtype of one.
-            DEPS: Enhanced dependency graph in the form of a list of head-deprel pairs.
-            MISC: Any other annotation.
+    Takes in a nltk Tree object and returns an approximation of the tree
+    sentence in the CONLLU format for UD:
+        ID: Word index, integer starting at 1 for each new sentence.
+        FORM: Word form or punctuation symbol.
+        LEMMA: Lemma or stem of word form.
+        UPOS: Universal part-of-speech tag.
+        XPOS: Language-specific part-of-speech tag; underscore if not available.
+        FEATS: List of morphological features from the universal feature
+            inventory or from a defined language-specific extension; underscore
+            if not available.
+        HEAD: Head of the current word, which is either a value of ID or
+            zero (0).
+        DEPREL: Universal dependency relation to the HEAD (root iff HEAD = 0)
+            or a defined language-specific subtype of one.
+        DEPS: Enhanced dependency graph in the form of a list of head-deprel
+            pairs.
+        MISC: Any other annotation.
     '''
 
-    def __init__(self, tree_str=None, cell_extractor=None, zero_based=False, cell_separator=None, top_relation_label='root'):
-        DependencyGraph.__init__(self,tree_str, cell_extractor, zero_based, cell_separator, top_relation_label)
+    def __init__(self, tree_str=None, cell_extractor=None, zero_based=False,
+                scell_separator=None, top_relation_label='root'):
+        DependencyGraph.__init__(self, tree_str, cell_extractor, zero_based,
+                                cell_separator, top_relation_label)
 
         self.nodes = defaultdict(lambda:  {'address': None,
                                    'word': None,
@@ -261,8 +267,8 @@ class Converter():
                     # print(FORM)
                     # LEMMA = DMII_data.get_lemma(DMII_combined, FORM)    # LEMMA = '_'
                     #LEMMA = DMII_data.get_lemma(FORM)
-                    #if LEMMA == None:
-                    LEMMA = '_'
+                    if LEMMA == None:
+                        LEMMA = '_'
                     token_lemma = str(FORM+'-'+LEMMA)
                     tag = tag_list[nr]
                 if '+' in tag:
@@ -271,9 +277,14 @@ class Converter():
                 leaf = token_lemma, tag
                 XPOS = tag
                 # Feature Classes called here
+                '''
+                # NOTE: Features Classes rewritten, may be removed from here
                 leaf = f.Word(leaf).getinfo()
                 UPOS = leaf.UD_tag
                 FEATS = leaf.features.featString()
+                '''
+                UPOS = '_'
+                FEATS = '_'
                 if FORM != None:
                     self.dg.add_node({'address': nr,
                                     'word': FORM,
@@ -333,12 +344,13 @@ class Converter():
 
         return self.dg
 
+
 def main(argv):
     c = Converter()
     psd = ''
     infilename = outfilename = None
 
-    opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
+    opts, args = getopt.getopt(argv, "hi:o:", ["ifile=", "ofile="])
 
     for opt, arg in opts:
         if opt == '-h':
@@ -350,7 +362,7 @@ def main(argv):
             outfilename = arg
 
     with open(infilename) if infilename else stdin as infile, \
-         open(outfilename, 'w') if outfilename else stdout as outfile:
+        open(outfilename, 'w') if outfilename else stdout as outfile:
         for line in infile:
             psd += line
             if len(line.strip()) == 0 and len(psd.strip()) > 0:
@@ -361,6 +373,7 @@ def main(argv):
 
         dep = c.create_dependency_graph(psd)
         outfile.write(dep.to_conllU())
+
 
 if __name__ == "__main__":
     main(argv[1:])
