@@ -23,28 +23,28 @@ if __name__ == '__main__':
 
     # NODES JOINED
     nj = NodeJoiner(file)
-    close(file)
+    file.close()
     # print(j.name)
     for n in reversed(nj.indexes):
         # Various clitics processed
         nj.join_clitics(n)
-    f = FileWriter(nj)
-    f.write_to_file(sepdir=False, overwrite=True)
-    for s in
+    # f = FileWriter(nj)
+    # f.write_to_file(sepdir=False, overwrite=True)
 
     # output written to file ()
     f1 = FileWriter(nj)
     f1.write_to_file(sepdir=False, overwrite=True)
 
     # SENTENCES JOINED, comment out if not wanted
-    # TODO: finish
-
+    # TODO: find more efficient way to implement (not write-rewrite output)
+    #
     # # former output file used as input
     # file = open(IN_PATH, 'r')
     # sj = SentJoiner(file)
-    # close(file)
+    # file.close()
     #
-    # final output file
+    # # final output file
     # sj.set_vars()
-    # f2 = FileWriter(file)
+    # f2 = FileWriter(sj)
+    # # in this setting = writes output to seperate directory
     # f2.write_to_file(sepdir=False, overwrite=True)
