@@ -98,7 +98,7 @@ OTB_map = {
             'k' : 'Masc',
             'v' : 'Fem',
             'h' : 'Neut',
-            'x' : 'None'
+            'x' : None
         },
         'Number': {
             'f' : 'Plur',  # noun, plural number
