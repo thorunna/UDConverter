@@ -7,6 +7,9 @@ import pyconll
 
 '''
 
+# TODO:
+    FINISH IMPLEMENTING join_various_nodes() method
+
 2019
 Hinrik Hafsteinsson
 Þórunn Arnardóttir
@@ -1013,6 +1016,8 @@ class SentJoiner():
     def _set_token_IDs(self, sentence):
         subsentence = 0
         for token in sentence:
+            if '-' in token.id:
+                return sentence
             if token.id == '1':
                 subsentence += 1
             self.new_token_ID += 1

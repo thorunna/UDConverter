@@ -9,7 +9,7 @@ Based on earlier work by
 Part of UniTree project for IcePaHC
 '''
 
-from lib import features as f
+# from lib import features as f
 # from lib import DMII_data
 from lib.rules import head_rules
 from lib import relations
@@ -55,7 +55,7 @@ class UniversalDependencyGraph(DependencyGraph):
                                    'ctag': None,    # upostag
                                    'tag': None,     # xpostag
                                    'feats': None,
-                                   'head': None,
+                                   'head': '_', # None, # NOTE: possible fix to None in head output........
                                    'deps': defaultdict(list),
                                    'rel': None,
                                    })
@@ -111,6 +111,18 @@ class UniversalDependencyGraph(DependencyGraph):
 
 
 class IndexedTree(Tree):
+    """
+    Contains a tree object with each leaf indexed by location within tree
+    # TODO: finish/fix documentation
+
+    Args:
+        node (tree): leaf.
+        children (tree?): constituents.
+
+    Attributes:
+        _id (int): Counter for index.
+
+    """
 
     def __init__(self, node, children=None):
         Tree.__init__(self, node, children)
@@ -145,17 +157,29 @@ class IndexedTree(Tree):
         return phrases
 
 
-
 class Converter():
+    """
+    Converts constituency tree to
+
+    Attributes:
+        t (type): NLTK.Tree object being converted.
+        dg (type): NLTK.parse.DependencyGraph object.
+
+    """
     def __init__(self):
         #todo read rules from config file
         self.t = None
         self.dg = None
 
     def _select_head(self, tree):
-        '''
+        """
+        Selects dependency head of a tree object, specifically a constituency
+        tree (i.e. small part) of a bigger sentence
 
-        '''
+        Args:
+            tree (IndexedTree): IndexedTree object to have head selected
+        """
+
         tag_orig = str(tree.label())
         tag = re.sub('-\d+', '', tag_orig)
         head_rule = head_rules.get(tag, {'dir':'r', 'rules':['.*']})  #default rule, first from left
@@ -180,9 +204,16 @@ class Converter():
             tree.set_id(999) # For when there is no terminal node in head (text edit artifact)
         elif dir == 'l':
             tree.set_id(tree[-1].id())
+
+        # NOTE: Þetta er mögulega þar sem None kemur inn í úttakið... HH
         else:
-            tree.set_id(tree[1].id()) # first from left indicated or no head rule index found
+            tree.set_id(tree[1].id())  # first from left indicated or no head rule index found
             #TODO: frekar síðasta orð?
+
+        # elif tree[1].id() is not None:
+        #     tree.set_id(tree[1].id())  # first from left indicated or no head rule index found
+        # else:
+        #     tree.set_id('_')
 
     def _relation(self, mod_tag, head_tag):
         """
@@ -287,27 +318,31 @@ class Converter():
                 FEATS = '_'
                 if FORM != None:
                     self.dg.add_node({'address': nr,
-                                    'word': FORM,
-                                    'lemma': LEMMA,
-                                    #'lemma': '_',
-                                    'ctag': UPOS, # upostag
-                                    #'ctag': '_', # upostag
-                                    'tag': XPOS,   # xpostag
-                                    'feats': FEATS,
-                                    #'feats': '_',
-                                    'deps': defaultdict(list),
-                                    'rel': '_'})
+                                      'word': FORM,
+                                      'lemma': LEMMA,
+                                      #'lemma': '_',
+                                      'ctag': UPOS, # upostag
+                                      #'ctag': '_', # upostag
+                                      'tag': XPOS,   # xpostag
+                                      'feats': FEATS,
+                                      #'feats': '_',
+                                      'deps': defaultdict(list),
+                                      'rel': '_'})
                     nr += 1
 
+        print(t)
         # go through the constituencies (bottom up) and find their heads
         const.sort(key=lambda x: len(x), reverse=True)
 
         for i in const:
+            print(i, t[i], t[i].label())
+            input()
             self._select_head(t[i])
 
         for i in const:
             head_tag = t[i].label()
             head_nr = t[i].id()
+
             if re.search(r'\w{1,5}(21|22|31|32|33)', head_tag):
                 head_tag = re.sub('(21|22|31|32|33)', '', head_tag)
             #if re.search(r'IP-MAT=\d+', head_tag):
@@ -317,6 +352,7 @@ class Converter():
                 if re.search(r'\w{1,5}(21|22|31|32|33)', mod_tag):
                     mod_tag = re.sub('(21|22|31|32|33)', '', mod_tag)
                 mod_nr = child.id()
+
 #                if head_nr == mod_nr and re.match("NP-PRD", head_tag):      #ath. virkar þetta rétt? Leið til að láta sagnfyllingu cop vera rót
 #                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
 #                    self.dg.root = self.dg.get_by_address(mod_nr)
@@ -335,6 +371,7 @@ class Converter():
                     if head_nr == mod_nr and re.match("IP-MAT|IP-MAT-[^=].*|INTJP|FRAG|CP-QUE-SPE|IP-IMP-SPE[^=1]|QTP|CODE|LATIN|TRANSLATION|META|IP-IMP|CP-QUE|CP-EXL|CP-THT", head_tag):  #todo root phrase types from config
                         self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
                         self.dg.root = self.dg.get_by_address(mod_nr)
+
                     elif child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
                         continue
                     else:
@@ -345,6 +382,27 @@ class Converter():
         return self.dg
 
 
+def test_case(infile):
+    # NOTE: not used!!!
+    '''05.03.20
+    Test case for debugging head choice algorithm
+    Prints output to command line
+
+    Args:
+        infile (string): Path to input file.
+
+    '''
+    psd = ''
+    with open(infile) as file:
+        for line in file:
+            psd += line
+            if len(line.strip()) == 0 and len(psd.strip()) > 0:
+                dep = c.create_dependency_graph(psd)
+                dep.to_conllU()
+
+
+'''
+# NOTE: Old main function
 def main(argv):
     c = Converter()
     psd = ''
@@ -373,7 +431,8 @@ def main(argv):
 
         dep = c.create_dependency_graph(psd)
         outfile.write(dep.to_conllU())
-
+'''
 
 if __name__ == "__main__":
-    main(argv[1:])
+    # main(argv[1:])
+    test_case(sys.argv[1])

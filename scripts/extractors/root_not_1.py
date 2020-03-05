@@ -7,12 +7,24 @@ import os
 # that have != 1 root (most likely 0 or 2 roots)
 
 def get_root_errors(in_file, no_roots_file, many_roots_file):
+    """
+    Short summary.
+
+    Args:
+        in_file (string): Description of parameter `in_file`.
+        no_roots_file (string): Description of parameter `no_roots_file`.
+        many_roots_file (string): Description of parameter `many_roots_file`.
+
+    Returns:
+        None
+
+    """
     count_roots = 0
     no_roots = 0
     many_roots = 0
+    parse_errors = 0
 
     for sentence in in_file:
-
         count_roots = 0
         for token in sentence:
             if token.deprel == 'root' or token.head == '0':
@@ -31,8 +43,10 @@ def get_root_errors(in_file, no_roots_file, many_roots_file):
             many_roots_file.write('\n')
             many_roots_file.write('\n')
 
-    print('Sents. with no roots: ', no_roots)
-    print('Sents. with many roots: ', many_roots)
+
+    print('Sents. with no roots:', no_roots)
+    print('Sents. with many roots:', many_roots)
+    # print('Sents. with None (parse error):', parse_errors)
 
 def main():
     f = open('root_check/no_root_allt.txt', 'w+')
