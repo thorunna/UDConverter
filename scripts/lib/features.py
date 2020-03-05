@@ -10,7 +10,7 @@ from lib.rules import UD_map, OTB_map
 # in_path = 'taggers/test_conllu/2008.mamma.nar-fic.conllu'
 
 def getTagDict(filename):
-    OTB_path = os.path.join('taggers','tagged', re.sub('conllu', 'txt.tagged', filename))
+    OTB_path = os.path.join('../taggers','tagged', re.sub('conllu', 'txt.tagged', filename))
     OTB_file = open(OTB_path, 'r')
     index = 0
     # empty tuple returned to trip token correction if end of dict found

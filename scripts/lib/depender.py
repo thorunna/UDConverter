@@ -45,7 +45,7 @@ class UniversalDependencyGraph(DependencyGraph):
     '''
 
     def __init__(self, tree_str=None, cell_extractor=None, zero_based=False,
-                scell_separator=None, top_relation_label='root'):
+                cell_separator=None, top_relation_label='root'):
         DependencyGraph.__init__(self, tree_str, cell_extractor, zero_based,
                                 cell_separator, top_relation_label)
 
