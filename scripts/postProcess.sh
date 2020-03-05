@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
 
-'''
-01.08.19
-Hinrik Hafsteinsson
-Þórunn Arnardóttir
 
-Script for postprocessing IcePaHC Conll-U files
-Machine-specific paths must be specified before use
-'''
+# 01.08.19
+# Hinrik Hafsteinsson
+# Þórunn Arnardóttir
+#
+# Script for postprocessing IcePaHC Conll-U files
+# Machine-specific paths must be specified before use
 
-dir="./testing/CoNLLU_output"
 
-for file in $dir/*; do
+# dir="../testing/CoNLLU_output"
+dir=$1
+
+for file in $dir/*;
+do
   echo "Working on file: ${file##*/}"
   # All lines with 'None' as token/lemma removed (errors from sentence parsing step)
   # Will need to be addressed at source
@@ -21,8 +23,8 @@ for file in $dir/*; do
   #     in e.g. 1260.jomsvikingar.nar-sag.conllu
   #   - ONE+Q-G changed to ADV (and possibly others) if joined ('einhversstaðar')
   # python3 taggers/test_conllu/otb_feats.py $file
-  python3 scripts/join_conllu.py $file
-  python3 scripts/rename_conllu.py $file
+  python3 join_conllu.py $file
+  python3 rename_conllu.py $file
 done
 
 # Former todo, now done:
