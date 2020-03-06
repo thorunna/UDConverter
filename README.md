@@ -1,4 +1,4 @@
-# UD - Samantekt á hugbúnaðinum 
+# UD - Samantekt á hugbúnaðinum (06.03.20)
 ## Keyrsluröð:
 Í breytingarferli. Eins og er (06.03.20) annaðhvort:
 1. `text_cleanup.sh`
