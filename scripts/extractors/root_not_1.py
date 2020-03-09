@@ -38,7 +38,7 @@ def get_root_errors(in_file, no_roots_file, many_roots_file):
             no_roots_file.write('\n')
             # print('Sentences with != 1 root: ',sentence.conll())
         if count_roots > 1:
-            no_roots += 1
+            many_roots += 1
             many_roots_file.write(sentence.conll())
             many_roots_file.write('\n')
             many_roots_file.write('\n')
