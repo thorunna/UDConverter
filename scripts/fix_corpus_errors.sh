@@ -179,7 +179,8 @@ sed -i "" 's/Kaupmannahafnar\./Kaupmannahafnar/g' $dir/2008.mamma.nar-fic.psd # 
 sed -i "" 's/(NP-OB1 (NS-A augun-auga)/(NP-OB1 (NS-A augu\$-auga)/g' $dir/2008.mamma.nar-fic.psd # .1129
 sed -i "" 's/\$vel\$/\$vel/g' $dir/2008.mamma.nar-fic.psd # .1286
 sed -i "" 's/(PRO-N ðu-þú))/(PRO-N \$ðu-þú))/g' $dir/2008.mamma.nar-fic.psd # .1289
-sed -i "" 's/sofandi\./sofandi/g' $dir/2008.mamma.nar-fic.psd # .1746
+# sed -i "" 's/sofandi\./sofandi/g' $dir/2008.mamma.nar-fic.psd # .1746
+sed -i "" 's/( (VAG sofandi\.-sofa))//g' $dir/2008.mamma.nar-fic.psd # .1746 (09.03.20: line removed instead of edited)
 sed -i "" 's/kallinn\./kallinn/g' $dir/2008.mamma.nar-fic.psd # .1757
 sed -i "" 's/Já\./Já/g' $dir/2008.mamma.nar-fic.psd # .1757
 sed -i "" 's/hahaha\./hahaha/g' $dir/2008.mamma.nar-fic.psd # .1791
