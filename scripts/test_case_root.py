@@ -1,7 +1,17 @@
+# -*- coding: utf-8 -*-
 
+'''06.03.20
+
+Hinrik Hafsteinsson (hih43@hi.is)
+Þórunn Arnardóttir (tha86@hi.is)
+Debugging script for use with depender.py module
+Part of UniTree project for IcePaHC
+'''
+
+import sys
 from lib.rules import head_rules
 from lib import relations, depender
-import sys
+
 
 
 def main(infile):
@@ -20,6 +30,7 @@ def main(infile):
             psd += line
             if len(line.strip()) == 0 and len(psd.strip()) > 0:
                 dep = c.create_dependency_graph(psd)
+                print(dep.plain_text())
                 print(dep.to_conllU())
                 input()
 
