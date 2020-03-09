@@ -55,7 +55,7 @@ class UniversalDependencyGraph(DependencyGraph):
                                    'ctag': None,    # upostag
                                    'tag': None,     # xpostag
                                    'feats': None,
-                                   'head': '_', # None, # NOTE: possible fix to None in head output........
+                                   'head': '_', # None, # TODO: find permanent fix!
                                    'deps': defaultdict(list),
                                    'rel': None,
                                    })
@@ -66,11 +66,56 @@ class UniversalDependencyGraph(DependencyGraph):
                 'ID': 0,
             }
         )
+
     #todo _parse for CoNLL-U
 
     def _deps_str(self, deps_dict):
         #todo, format should be "4:nsubj|11:nsubj", see http://universaldependencies.github.io/docs/format.html
         return '_' #return ''.join('%s:%s,' % (dep, '+'.join(str(rel))) for (dep, rel) in deps_dict.items())[0:-1]
+
+    def rels(self):
+        '''
+        Checks and counts the relations in the sentence
+
+        Returns:
+            defaultdict: Relations found in the sentence graph, counted.
+        '''
+        rels = defaultdict(int)
+        rels['root'] = 0
+        for node in self.nodes.values():
+            rels[node['rel']] += 1
+        # return {rel for rel in [node['rel'] for node in self.nodes.values()]}
+        return rels
+
+    def num_roots(self):
+        '''
+        Method for checking the root relation in the graph.
+        There must be one relation to the root node in each sentence, no more
+        no less. This should return 1 if sentence is correctly parsed.
+
+        Returns:
+            int: Number of root relations found in sentence.
+        '''
+        return self.rels()['root']
+
+    def num_verbs(self):
+        '''09.03.20
+        Checks by POS (IcePaHC PoS tag) how many verbs are in sent. graph.
+        Used to estimate whether verb 'aux' UPOS is correct or wrong.
+        Converter generalizes 'aux' UPOS for 'hafa' and 'vera'.
+
+        Returns:
+            int: Number of verb tags found in sentence.
+
+        # TODO: Finish implementation
+        '''
+
+        verb_count = 0
+        for node in self.nodes.values():
+            if node['tag'][0:2] in  {'VB', 'BE', 'DO', 'HV', 'MD', 'RD',}:
+                verb_count += 1
+
+        return verb_count
 
     def to_conllU(self):
         """
@@ -195,10 +240,19 @@ class Converter():
 
         tag_orig = str(tree.label())
         tag = re.sub('-\d+', '', tag_orig)
+
+        # # DEBUG:
+        # print('Tree: ('+tree.+')\n', tree, tag)
+        # input()
+
         head_rule = head_rules.get(tag, {'dir':'r', 'rules':['.*']})  #default rule, first from left
         rules = head_rule['rules']
         dir = head_rule['dir']
-        head = None
+        head = None # NOTE: er þetta eitthvað?
+
+        # DEBUG:
+        # print(head_rule)
+        # input()
 
         if dir == 'l':
             rules = reversed(rules)
@@ -206,27 +260,36 @@ class Converter():
         for rule in rules:
             for child in tree:
                 if re.match(rule, child.label()):
+
+                    # # DEBUG:
+                    # print('Child\n', child, child.label(), child.id(), head_rule)
+                    # input()
+
                     #if '*' in child[0]: #or ' ' in child[0]: ATH. sturlunga 822 CODE tekið út og '' sett í staðinn - betra að hafa ' '
                     #    continue
                     #else:
                     tree.set_id(child.id())
+
+                    # DEBUG:
+                    # print(tree.id())
+                    # input()
+
                     return
 
         #no head-rules applicable: select either the first or last child as head
         if len(tree) == 0:
+            # print('==no_head==')
             tree.set_id(999) # For when there is no terminal node in head (text edit artifact)
         elif dir == 'l':
             tree.set_id(tree[-1].id())
 
         # NOTE: Þetta er mögulega þar sem None kemur inn í úttakið... HH
+        #       Réttara væri að hér er None ekki tekið út, þ.e. None er
+        #       (var) default og svo uppl. bætt við. Ath. þetta.
         else:
+            # print('\tNo head rule found')
             tree.set_id(tree[1].id())  # first from left indicated or no head rule index found
             #TODO: frekar síðasta orð?
-
-        # elif tree[1].id() is not None:
-        #     tree.set_id(tree[1].id())  # first from left indicated or no head rule index found
-        # else:
-        #     tree.set_id('_')
 
     def _relation(self, mod_tag, head_tag):
         """
@@ -268,6 +331,67 @@ class Converter():
 
         return relations.determine_relations(mod_tag, mod_func, head_tag, head_func)
 
+    def _fix_root_relation(self):
+        """09.03.20
+        Fixes buggy root relations in filled out sentence graph by checking
+        number of root relations and verb POS tags.
+
+        # TODO: Finish implementation / documentation
+        """
+        # print(graph.nodes.items())
+        # print('\n@ _fix_root_relation()\n')
+        if self.dg.num_roots() < 1:
+            if self.dg.num_verbs() == 0:
+                # NOTE: when no verb in sentence and no root
+                # print('No root relation found in sentence.')
+                for address, info in self.dg.nodes.items():
+                    # print(address, info['head'])
+                    if address == info['head']:
+
+                        # # DEBUG:
+                        # print('Node to fix:')
+                        # print(self.dg.get_by_address(address))
+                        # print()
+
+                        self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
+
+            elif self.dg.num_verbs() == 1:
+                # NOTE: when one verb in sent but no root
+                # TODO: Hér þarf sögnin að vera valin sem rót en vensl annarra
+                #       orða við sögnina haldist rétt / séu lagfærð í leiðinni.
+                # pass
+                for address, info in self.dg.nodes.items():
+                    # print(address, info['head'])
+                    if address == info['head']:
+                        self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
+
+            elif self.dg.num_verbs() > 1:
+                # NOTE: when more than one verb in sent but no root
+                #       E.g. "Má ég klappa honum aftur á eftir?", where Klappa
+                #       should get the root relation but not "Má"
+                # TODO: Passa að rétt sögn (umsögn aðalsetningar) sé valin sem
+                #       rót og ekki aðrar sagnir.
+                for address, info in self.dg.nodes.items():
+                    # print(address, info['head'])
+                    if address == info['head']:
+
+                        # # DEBUG:
+                        # print('Node to fix:')
+                        # print(self.dg.get_by_address(address))
+                        # print()
+
+                        self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
+                pass
+
+        elif self.dg.num_roots() > 1:
+
+            # # DEBUG:
+            # print('\nNo. of verbs in sentence:\n', self.dg.num_verbs())
+            # print()
+
+            if self.dg.num_verbs() == 1:
+                pass
+
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree."""
         const = []
@@ -307,10 +431,6 @@ class Converter():
                     tag = tag_list[nr]
                 else: # If no lemma present
                     FORM = t[i][0]
-                    #DMII_combined = f.DMII_data('combined')
-                    # print(FORM)
-                    # LEMMA = DMII_data.get_lemma(DMII_combined, FORM)    # LEMMA = '_'
-                    #LEMMA = DMII_data.get_lemma(FORM)
                     if LEMMA == None:
                         LEMMA = '_'
                     token_lemma = str(FORM+'-'+LEMMA)
@@ -343,13 +463,18 @@ class Converter():
                                       'rel': '_'})
                     nr += 1
 
-        print(t)
+        # # DEBUG:
+        # print(t)
+
         # go through the constituencies (bottom up) and find their heads
         const.sort(key=lambda x: len(x), reverse=True)
 
         for i in const:
-            print(i, t[i], t[i].label())
-            input()
+
+            # DEBUG:
+            # print(i, t[i], t[i].label())
+            # input()
+
             self._select_head(t[i])
 
         for i in const:
@@ -361,15 +486,26 @@ class Converter():
             #if re.search(r'IP-MAT=\d+', head_tag):
             #    head_tag = re.sub('IP-MAT=\d+', 'IP-MAT', head_tag)
             for child in t[i]:
+                # # DEBUG:
+                # print(child)
+                # input()
                 mod_tag = child.label()
                 if re.search(r'\w{1,5}(21|22|31|32|33)', mod_tag):
                     mod_tag = re.sub('(21|22|31|32|33)', '', mod_tag)
                 mod_nr = child.id()
 
+                # DEBUG:
+                # print(head_nr, mod_nr)
+                # print(self.dg.get_by_address(mod_nr))
+                # input()
+
 #                if head_nr == mod_nr and re.match("NP-PRD", head_tag):      #ath. virkar þetta rétt? Leið til að láta sagnfyllingu cop vera rót
 #                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
 #                    self.dg.root = self.dg.get_by_address(mod_nr)
                 if child:
+                    # NOTE: This is where the root is selected
+
+
                     #if child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
                     #    continue
                     #else:
@@ -381,9 +517,24 @@ class Converter():
                     #    if head_nr != mod_nr:
                     #        self.dg.add_arc(head_nr, mod_nr)
                     #if head_nr == mod_nr and re.match("IP-MAT.*|CP.*|INTJP|FRAG", head_tag):  #todo root phrase types from config
-                    if head_nr == mod_nr and re.match("IP-MAT|IP-MAT-[^=].*|INTJP|FRAG|CP-QUE-SPE|IP-IMP-SPE[^=1]|QTP|CODE|LATIN|TRANSLATION|META|IP-IMP|CP-QUE|CP-EXL|CP-THT", head_tag):  #todo root phrase types from config
-                        self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
-                        self.dg.root = self.dg.get_by_address(mod_nr)
+                    if head_nr == mod_nr:
+                        # print(self.dg.get_by_address(mod_nr))
+                        if re.match("IP-MAT|IP-MAT-[^=].*|INTJP|FRAG|CP-QUE-SPE|IP-IMP-SPE[^=1]|QTP|CODE|LATIN|TRANSLATION|META|IP-IMP|CP-QUE|CP-EXL|CP-THT", head_tag):  #todo root phrase types from config
+                            self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
+                            self.dg.root = self.dg.get_by_address(mod_nr)
+                        else:
+                            # TEMP: This is most likely why "None" is popping up in the output
+                            self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': '***'})
+                            self.dg.root = self.dg.get_by_address(mod_nr)
+                        # if not head_tag.endswith('=1') and re.match("IP-MAT|IP-MAT-[^=].*|INTJP|FRAG|CP-QUE-SPE|IP-IMP-SPE[^=1]|QTP|CODE|LATIN|TRANSLATION|META|IP-IMP|CP-QUE|CP-EXL|CP-THT", head_tag):  #todo root phrase types from config
+                        #     self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
+                        #     self.dg.root = self.dg.get_by_address(mod_nr)
+
+                        # elif head_tag.endswith('=1'):
+                        #     # DEBUG:
+                        #     print(head_tag)
+                        #     print(self.dg.root)
+                        #     input()
 
                     elif child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
                         continue
@@ -391,6 +542,11 @@ class Converter():
                         self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
                     if head_nr != mod_nr:
                         self.dg.add_arc(head_nr, mod_nr)
+
+
+        # NOTE: Here call method to fix dependency graph if needed?
+        if self.dg.num_roots() != 1:
+            self._fix_root_relation()
 
         return self.dg
 
