@@ -80,9 +80,11 @@ def main():
             try:
                 dep = c.create_dependency_graph(str(tree))
                 dep_c = dep.to_conllU()
+                text_line = dep.plain_text()+'\n'
                 outFile.write('# sent_id = ')
                 outFile.write(treeID)
                 outFile.write('\n')
+                outFile.write(text_line)
                 outFile.write(dep_c)
                 # print('# sent_id =', treeID)
                 # print(dep_c)

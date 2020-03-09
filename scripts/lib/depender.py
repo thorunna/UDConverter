@@ -98,16 +98,29 @@ class UniversalDependencyGraph(DependencyGraph):
                          for i, node in sorted(self.nodes.items()) if node['tag'] != 'TOP') \
                + '\n'
 
-        def plain_text(self):
-            '''
-            '''
-            text = []
-            for leaf in leaves:
-                leaf = leaf.split('-')
-                if leaf[0][0] in {'*', '0'}: continue
-                text.append(leaf[0])
-            text = '# text = ' + ' '.join(text)
-            return text
+    def plain_text(self):
+        """ 09.03.20
+        Extracts text from dependency graph.
+
+        Returns:
+            string: String representation of sentence text
+
+        """
+        # NOTE: Old method kept as comment
+        # text = []
+        # for leaf in leaves:
+        #     leaf = leaf.split('-')
+        #     if leaf[0][0] in {'*', '0'}: continue
+        #     text.append(leaf[0])
+        # text = '# text = ' + ' '.join(text)
+        # return text
+        text = []
+        for address, info in self.nodes.items():
+            if info['word']:
+                text.append(info['word'])
+        text = '# text = ' + ' '.join(text)
+        text = re.sub('\$ \$', '', text)
+        return text
 
 
 class IndexedTree(Tree):
