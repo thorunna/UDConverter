@@ -118,7 +118,13 @@ def insert_features(lines, OTB_tagDict, line_index):
             lines[line_index][3] = re.sub(lines[line_index][3], f.UD_tag, lines[line_index][3])
             if not f.features.featString() == '':
                 lines[line_index][5] = re.sub(lines[line_index][3], f.features.featString(), lines[line_index][3])
-            lines[line_index][9] = re.sub('_', f.OTB_tag, lines[line_index][9])
+            # NOTE: 10.03.20
+            #       Fix for additional misc info
+            if lines[line_index][9] != '_':
+                lines[line_index][9] = 'IFD='+f.OTB_tag+'|'+lines[line_index][9]
+            else:
+                lines[line_index][9] = re.sub('_', f.OTB_tag, lines[line_index][9])
+            # lines[line_index][9] = re.sub('_', f.OTB_tag, lines[line_index][9])
             # print(lines[line_index], f.token)
             # return WORD_INDEX
             return lines[line_index]

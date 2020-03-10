@@ -58,6 +58,7 @@ class UniversalDependencyGraph(DependencyGraph):
                                    'head': '_', # None, # TODO: find permanent fix!
                                    'deps': defaultdict(list),
                                    'rel': None,
+                                   'misc': None,    # testing adding Misc column
                                    })
         self.nodes[0].update(
             {
@@ -72,6 +73,18 @@ class UniversalDependencyGraph(DependencyGraph):
     def _deps_str(self, deps_dict):
         #todo, format should be "4:nsubj|11:nsubj", see http://universaldependencies.github.io/docs/format.html
         return '_' #return ''.join('%s:%s,' % (dep, '+'.join(str(rel))) for (dep, rel) in deps_dict.items())[0:-1]
+
+    def addresses(self):
+        """10.03.20
+        Gets addresses of the dependency graph.
+
+        Returns:
+            tuple: all addresses in dependency graph of sentence.
+
+        """
+
+        return tuple(address for address in [node['address'] for node in self.nodes.values()] if address != None)
+
 
     def rels(self):
         '''
@@ -137,7 +150,8 @@ class UniversalDependencyGraph(DependencyGraph):
         :rtype: str
         """
 
-        template = '{i}\t{word}\t{lemma}\t{ctag}\t{tag}\t{feats}\t{head}\t{rel}\t{deps_str}\t_\n'
+        # template = '{i}\t{word}\t{lemma}\t{ctag}\t{tag}\t{feats}\t{head}\t{rel}\t{deps_str}\t_\n'
+        template = '{i}\t{word}\t{lemma}\t{ctag}\t{tag}\t{feats}\t{head}\t{rel}\t{deps_str}\t{misc}\n' # testing misc column
 
         return ''.join(template.format(i=i, **node, deps_str=self._deps_str(node['deps']))
                          for i, node in sorted(self.nodes.items()) if node['tag'] != 'TOP') \
@@ -392,6 +406,25 @@ class Converter():
             if self.dg.num_verbs() == 1:
                 pass
 
+    def _misc_column(self):
+        """10.03.20
+        Fills in misc column. If no attribute applicable, uses '_'.
+
+        Current attributes: SpaceAfter=No (only if before punctuation)
+
+        """
+        no_space_string = 'SpaceAfter=No'
+        punctuation = '!"#$%&\'()*+, -./:;<=>?@[\\]^_`{|}~'
+        for address in self.dg.addresses():
+            if self.dg.get_by_address(address)['word'] not in punctuation \
+            and address+1 in self.dg.nodes \
+            and self.dg.get_by_address(address+1)['word'] != None \
+            and self.dg.get_by_address(address+1)['word'] in punctuation:
+                self.dg.get_by_address(address).update({'misc': no_space_string})
+            else:
+                self.dg.get_by_address(address).update({'misc': '_'})
+
+
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree."""
         const = []
@@ -543,9 +576,15 @@ class Converter():
                     if head_nr != mod_nr:
                         self.dg.add_arc(head_nr, mod_nr)
 
+        self._misc_column()
 
         # NOTE: Here call method to fix dependency graph if needed?
         if self.dg.num_roots() != 1:
+
+            # # DEBUG:
+            # print(self.dg.to_conllU())
+            # input()
+
             self._fix_root_relation()
 
         return self.dg
