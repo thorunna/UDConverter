@@ -3,6 +3,8 @@ import pyconll.util
 import sys
 import os
 
+import argparse
+
 # script that reads conllu file as first argument (path) and prints sentences
 # that have != 1 root (most likely 0 or 2 roots)
 
@@ -43,19 +45,33 @@ def get_root_errors(in_file, no_roots_file, many_roots_file):
             many_roots_file.write('\n')
             many_roots_file.write('\n')
 
+    return (no_roots, many_roots)
 
-    print('Sents. with no roots:', no_roots)
-    print('Sents. with many roots:', many_roots)
+
     # print('Sents. with None (parse error):', parse_errors)
 
 def main():
+
+    parser = argparse.ArgumentParser(description='Count root errors in CoNLL-U file corpus')
+    parser.add_argument('--input', '-i', type=str, required=True,
+                        help='path to input CoNLL-U (.conllu) directory')
+    parser.add_argument('--verbose', '-v', action='store_true',
+                        help='verbose flag')
+    args = parser.parse_args()
+
     f = open('root_check/no_root_allt.txt', 'w+')
     f2 = open('root_check/too_many_roots_allt.txt', 'w+')
-    conllu_path = sys.argv[1]
+    conllu_path = args.input
     for conllu_file in os.listdir(conllu_path):
-        print('Current file:', conllu_file)
         train = pyconll.load_from_file(os.path.join(conllu_path, conllu_file))
-        get_root_errors(train, f, f2)
+        if args.verbose:
+            print('Current file:', conllu_file)
+            no_roots, many_roots = get_root_errors(train, f, f2)
+            print('Sents. with no roots:', no_roots)
+            print('Sents. with many roots:', many_roots)
+        else:
+            no_roots, many_roots = get_root_errors(train, f, f2)
+            print(f'{conllu_file}\t{no_roots}\t{many_roots}')
     f.close()
     f2.close()
 
