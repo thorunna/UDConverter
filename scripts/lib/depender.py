@@ -355,6 +355,10 @@ class Converter():
         # print(graph.nodes.items())
         # print('\n@ _fix_root_relation()\n')
         if self.dg.num_roots() < 1:
+            if len(self.dg.nodes) == 2:
+                # NOTE: catches sentences with only one word and marks it as root
+                self.dg.get_by_address(1).update({'head': 0, 'rel': 'root'})
+
             if self.dg.num_verbs() == 0:
                 # NOTE: when no verb in sentence and no root
                 # print('No root relation found in sentence.')
