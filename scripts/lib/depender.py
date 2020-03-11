@@ -160,6 +160,8 @@ class UniversalDependencyGraph(DependencyGraph):
     def plain_text(self):
         """ 09.03.20
         Extracts text from dependency graph.
+        - Removes '$' from conjoined words and joins word-parts using regex
+        - Joins punctuation to previous word by adding '$' and removing with regex
 
         Returns:
             string: String representation of sentence text
@@ -173,12 +175,18 @@ class UniversalDependencyGraph(DependencyGraph):
         #     text.append(leaf[0])
         # text = '# text = ' + ' '.join(text)
         # return text
+        punctuation = '!"#$%&\'()*+, -./:;<=>?@[\\]^_`{|}~'
         text = []
         for address, info in self.nodes.items():
             if info['word']:
-                text.append(info['word'])
+                if info['word'] in punctuation:
+                    text.append('$'+info['word'])
+                else:
+                    text.append(info['word'])
         text = '# text = ' + ' '.join(text)
         text = re.sub('\$ \$', '', text)
+        text = re.sub(' \$', '', text)
+        text = re.sub('</?dash/?>', '-', text)
         return text
 
 
@@ -234,8 +242,8 @@ class Converter():
     Converts constituency tree to
 
     Attributes:
-        t (type): NLTK.Tree object being converted.
-        dg (type): NLTK.parse.DependencyGraph object.
+        t (type): IndexedTree object being converted.
+        dg (type): UnviersalDependencyGraph object.
 
     """
     def __init__(self):
@@ -297,9 +305,6 @@ class Converter():
         elif dir == 'l':
             tree.set_id(tree[-1].id())
 
-        # NOTE: Þetta er mögulega þar sem None kemur inn í úttakið... HH
-        #       Réttara væri að hér er None ekki tekið út, þ.e. None er
-        #       (var) default og svo uppl. bætt við. Ath. þetta.
         else:
             # print('\tNo head rule found')
             tree.set_id(tree[1].id())  # first from left indicated or no head rule index found
@@ -568,10 +573,10 @@ class Converter():
                         #     self.dg.root = self.dg.get_by_address(mod_nr)
 
                         # elif head_tag.endswith('=1'):
-                        #     # DEBUG:
-                        #     print(head_tag)
-                        #     print(self.dg.root)
-                        #     input()
+                            # # DEBUG:
+                            # print(head_tag)
+                            # print(self.dg.root)
+                            # input()
 
                     elif child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
                         continue
