@@ -71,7 +71,7 @@ def main():
             print('Sents. with many roots:', many_roots)
         else:
             no_roots, many_roots = get_root_errors(train, f, f2)
-            print(f'{conllu_file}\t{no_roots}\t{many_roots}')
+            print(f'{no_roots}\t{many_roots}\t{conllu_file}')
     f.close()
     f2.close()
 
