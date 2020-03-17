@@ -80,12 +80,11 @@ class IcelandicUDFeatures:
 
         ex: Number=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=1
         ex: _
-
-        # TODO: FIX ORDER (random as is)
+        
         '''
         NoneType = type(None)
         if not isinstance(self.all_features, (str, NoneType)):
-            return '|'.join(['='.join([k,v]) for k,v in self.all_features.items()])
+            return '|'.join(['='.join([k,v]) for k,v in sorted(self.all_features.items(), key=lambda x: x[0].lower())])
         else:
             return self.all_features
 
