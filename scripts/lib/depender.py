@@ -74,6 +74,19 @@ class UniversalDependencyGraph(DependencyGraph):
         #todo, format should be "4:nsubj|11:nsubj", see http://universaldependencies.github.io/docs/format.html
         return '_' #return ''.join('%s:%s,' % (dep, '+'.join(str(rel))) for (dep, rel) in deps_dict.items())[0:-1]
 
+    def _misc_string(self, misc_dict):
+        """17.03.20
+
+        Returns:
+                string: contents of MISC column for word.
+                        ex. {'SpaceAfter' : 'No'} -> 'SpaceAfter=No'
+                        If misc_dict is None returns '_'
+
+        # TODO: implement
+
+        """
+        pass
+
     def addresses(self):
         """10.03.20
         Gets addresses of the dependency graph.
@@ -148,6 +161,8 @@ class UniversalDependencyGraph(DependencyGraph):
         MISC: Any other annotation.
 
         :rtype: str
+
+        # TODO: _misc_string
         """
 
         # template = '{i}\t{word}\t{lemma}\t{ctag}\t{tag}\t{feats}\t{head}\t{rel}\t{deps_str}\t_\n'
