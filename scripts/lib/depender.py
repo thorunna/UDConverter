@@ -251,10 +251,45 @@ class IndexedTree(Tree):
                 phrases.extend(child.phrases())
         return phrases
 
+    def tags(self):
+        """18.03.20
+
+        Returns:
+            list: All PoS tags in tree.
+
+        """
+        pos_tags = []
+        for pair in self.pos():
+            pos_tags.append(pair[1])
+        return pos_tags
+
+    def num_verbs(self):
+        '''18.03.20
+
+        # COPIED FROM CLASS UniversalDependencyGraph()
+
+        Checks by POS (IcePaHC PoS tag) how many verbs are in list of tags
+        Used to estimate whether verb 'aux' UPOS is correct or wrong.
+        Converter generalizes 'aux' UPOS for 'hafa' and 'vera'.
+
+        Returns:
+            int: Number of verb tags found in sentence.
+
+        '''
+
+        verb_count = 0
+        for tag in self.tags():
+            if tag[0:2] in  {'VB', 'BE', 'DO', 'HV', 'MD', 'RD',}:
+                verb_count += 1
+
+        return verb_count
+
 
 class Converter():
     """
     Converts constituency tree to
+
+    # TODO: finish documentation
 
     Attributes:
         t (type): IndexedTree object being converted.
@@ -275,17 +310,41 @@ class Converter():
             tree (IndexedTree): IndexedTree object to have head selected
         """
 
-        tag_orig = str(tree.label())
-        tag = re.sub('-\d+', '', tag_orig)
+        # tag_orig = str(tree.label())
+        # tag = re.sub('-\d+', '', tag_orig)
+        tag = str(tree.label())
 
-        # # DEBUG:
-        # print('Tree: ('+tree.+')\n', tree, tag)
+        # print(tag)
+
+        if tag[:2] == 'IP':
+            # if tree.num_verbs() == 1:
+            #     tag = 'IP-aux'
+            #     tree.set_label(tag)
+            #     # return self._select_head(tree)
+
+            if tag.endswith('-1'):
+
+                print(tree.id())
+
+                tag = re.sub('-\d+', '', tag)
+                tree.set_label(tag)
+                return self._select_head(tree)
+
+            elif tag.endswith('=1'):
+                pass
+
+        # DEBUG:
+        # print('Tree: ('+tree.label()+')\n', tree, tag)
         # input()
 
         head_rule = head_rules.get(tag, {'dir':'r', 'rules':['.*']})  #default rule, first from left
         rules = head_rule['rules']
         dir = head_rule['dir']
         head = None # NOTE: er þetta eitthvað?
+
+        # Fix for aux verbs
+        if tree.num_verbs() == 1:
+            rules[4:4] = ['BE.*', 'HV.*', 'MD.*', 'RD.*']
 
         # DEBUG:
         # print(head_rule)
@@ -308,7 +367,7 @@ class Converter():
                     tree.set_id(child.id())
 
                     # DEBUG:
-                    # print(tree.id())
+                    # print('Head:\n',child)
                     # input()
 
                     return
@@ -324,6 +383,10 @@ class Converter():
             # print('\tNo head rule found')
             tree.set_id(tree[1].id())  # first from left indicated or no head rule index found
             #TODO: frekar síðasta orð?
+
+            # DEBUG:
+            # print('Head:\n',child)
+            # input()
 
     def _relation(self, mod_tag, head_tag):
         """
@@ -373,14 +436,18 @@ class Converter():
         # TODO: Finish implementation / documentation
         """
         # print(graph.nodes.items())
+
+        # If there is no root in sentence
         # print('\n@ _fix_root_relation()\n')
         if self.dg.num_roots() < 1:
+
+            # NOTE: catches sentences with only one word and marks it as root
             if len(self.dg.nodes) == 2:
-                # NOTE: catches sentences with only one word and marks it as root
                 self.dg.get_by_address(1).update({'head': 0, 'rel': 'root'})
 
+            # NOTE: when no verb in sentence and no root
             if self.dg.num_verbs() == 0:
-                # NOTE: when no verb in sentence and no root
+
                 # print('No root relation found in sentence.')
                 for address, info in self.dg.nodes.items():
                     # print(address, info['head'])
@@ -393,8 +460,9 @@ class Converter():
 
                         self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
 
+            # NOTE: when one verb in sent but no root
             elif self.dg.num_verbs() == 1:
-                # NOTE: when one verb in sent but no root
+
                 # TODO: Hér þarf sögnin að vera valin sem rót en vensl annarra
                 #       orða við sögnina haldist rétt / séu lagfærð í leiðinni.
                 # pass
@@ -403,10 +471,10 @@ class Converter():
                     if address == info['head']:
                         self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
 
+            # NOTE: when more than one verb in sent but no root
+            #       E.g. "Má ég klappa honum aftur á eftir?", where Klappa
+            #       should get the root relation but not "Má"
             elif self.dg.num_verbs() > 1:
-                # NOTE: when more than one verb in sent but no root
-                #       E.g. "Má ég klappa honum aftur á eftir?", where Klappa
-                #       should get the root relation but not "Má"
                 # TODO: Passa að rétt sögn (umsögn aðalsetningar) sé valin sem
                 #       rót og ekki aðrar sagnir.
                 for address, info in self.dg.nodes.items():
@@ -421,6 +489,7 @@ class Converter():
                         self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
                 pass
 
+        # If there is more than one root in sentence
         elif self.dg.num_roots() > 1:
 
             # # DEBUG:
@@ -525,6 +594,11 @@ class Converter():
 
         # go through the constituencies (bottom up) and find their heads
         const.sort(key=lambda x: len(x), reverse=True)
+
+        # # DEBUG:
+        # print(t.tags())
+        # print(t.num_verbs())
+        # input()
 
         for i in const:
 
