@@ -11,6 +11,7 @@ Part of UniTree project for IcePaHC
 
 # from lib import features as f
 # from lib import DMII_data
+from lib.reader import IndexedCorpusTree
 from lib.rules import head_rules
 from lib import relations
 
@@ -67,6 +68,7 @@ class UniversalDependencyGraph(DependencyGraph):
                 'ID': 0,
             }
         )
+        self.original_ID = None
 
     #todo _parse for CoNLL-U
 
@@ -204,85 +206,10 @@ class UniversalDependencyGraph(DependencyGraph):
         text = re.sub('</?dash/?>', '-', text)
         return text
 
+    def original_ID_plain_text(self, **kwargs):
+        return '# '+kwargs.get('corpus_name', 'Original')+'_ID = '+ str(self.original_ID)
 
-class IndexedTree(Tree):
-    """
-    Contains a tree object with each leaf indexed by location within tree
-    # TODO: finish/fix documentation
 
-    Args:
-        node (tree): leaf.
-        children (tree?): constituents.
-
-    Attributes:
-        _id (int): Counter for index.
-
-    """
-
-    def __init__(self, node, children=None):
-        Tree.__init__(self, node, children)
-        self._id = 0
-
-    def id(self):
-        """
-        Returns the (leaf) index of the tree or leaf
-        :return: (leaf) index of tree or leaf
-        """
-        return self._id
-
-    def set_id(self, id):
-        """
-        Sets the (leaf) index of the tree or leaf
-        """
-        self._id = int(id)
-
-    def phrases(self):
-        """
-        Return the "constituencies" of the tree.
-
-        :return: a list containing this tree's "constituencies" in-order.
-        :rtype: list
-        """
-        phrases = []
-        for child in self:
-            if isinstance(child, Tree):
-                if len(child) > 1:
-                    phrases.append(child)
-                phrases.extend(child.phrases())
-        return phrases
-
-    def tags(self):
-        """18.03.20
-
-        Returns:
-            list: All PoS tags in tree.
-
-        """
-        pos_tags = []
-        for pair in self.pos():
-            pos_tags.append(pair[1])
-        return pos_tags
-
-    def num_verbs(self):
-        '''18.03.20
-
-        # COPIED FROM CLASS UniversalDependencyGraph()
-
-        Checks by POS (IcePaHC PoS tag) how many verbs are in list of tags
-        Used to estimate whether verb 'aux' UPOS is correct or wrong.
-        Converter generalizes 'aux' UPOS for 'hafa' and 'vera'.
-
-        Returns:
-            int: Number of verb tags found in sentence.
-
-        '''
-
-        verb_count = 0
-        for tag in self.tags():
-            if tag[0:2] in  {'VB', 'BE', 'DO', 'HV', 'MD', 'RD',}:
-                verb_count += 1
-
-        return verb_count
 
 
 class Converter():
@@ -292,7 +219,7 @@ class Converter():
     # TODO: finish documentation
 
     Attributes:
-        t (type): IndexedTree object being converted.
+        t (type): IndexedCorpusTree object being converted.
         dg (type): UnviersalDependencyGraph object.
 
     """
@@ -301,13 +228,13 @@ class Converter():
         self.t = None
         self.dg = None
 
-    def _select_head(self, tree):
+    def _select_head(self, tree, main_clause=None):
         """
         Selects dependency head of a tree object, specifically a constituency
         tree (i.e. small part) of a bigger sentence
 
         Args:
-            tree (IndexedTree): IndexedTree object to have head selected
+            tree (IndexedCorpusTree): IndexedCorpusTree object to have head selected
         """
 
         # tag_orig = str(tree.label())
@@ -316,49 +243,83 @@ class Converter():
 
         # print(tag)
 
-        if tag[:2] == 'IP':
+        if re.match(tag[:2], 'IP|CP'):
+            # NOTE: if the IP... tag is indexed, the index is removed in the
+            #       tag variable, as the tag is used to look up in the head
+            #       rules, where the indexes don't matter.
+
+            # # DEBUG
+            # print('\nMatch IP\n')
+
+            tag = re.sub('[=-]\d+', '', tag)
             # if tree.num_verbs() == 1:
             #     tag = 'IP-aux'
             #     tree.set_label(tag)
             #     # return self._select_head(tree)
 
-            if tag.endswith('-1'):
+            # if re.match('-\d', tag[-2:]):
+            #
+            #     # print(tree.id())
+            #
+            #     tag = re.sub('-\d+', '', tag)
+            #     # tree.set_label(tag)
+            #     # return self._select_head(tree)
+            #
+            # elif re.match('=\d', tag[-2:]):
+            #     tag = re.sub('-\d+', '', tag)
 
-                print(tree.id())
 
-                tag = re.sub('-\d+', '', tag)
-                tree.set_label(tag)
-                return self._select_head(tree)
-
-            elif tag.endswith('=1'):
-                pass
-
-        # DEBUG:
+        # # DEBUG:
         # print('Tree: ('+tree.label()+')\n', tree, tag)
         # input()
 
+        new_rules = []
         head_rule = head_rules.get(tag, {'dir':'r', 'rules':['.*']})  #default rule, first from left
         rules = head_rule['rules']
         dir = head_rule['dir']
         head = None # NOTE: er þetta eitthvað?
 
-        # Fix for aux verbs
-        if tree.num_verbs() == 1:
-            rules[4:4] = ['BE.*', 'HV.*', 'MD.*', 'RD.*']
+        if not main_clause:
+            main_clause = tree
 
         # DEBUG:
-        # print(head_rule)
+        # if tag[:2] == 'IP':
+        #     print(len(head_rule['rules']))
+        # input()
+
+        # if tree.num_verbs() > 1:
+        #     for rule in rules:
+        #         if rule in {'BE.*', 'HV.*', 'MD.*', 'RD.*', 'BE', 'HV', 'MD', 'RD'}:
+        #             rules.remove(rule)
+
+        # Somewhat efficient fix for aux verbs
+        if tree.num_verbs() == 1 or main_clause.num_verbs() == 1:
+            new_rules[0:0] = rules
+            # new_rules[4:4] = ['BE.*', 'HV.*', 'MD.*', 'RD.*']
+            new_rules[4:4] = ['HV.*', 'MD.*', 'RD.*']
+            rules = new_rules
+
+
+        # # DEBUG:
+        # print(len(new_rules))
         # input()
 
         if dir == 'l':
             rules = reversed(rules)
 
+        # For catching relation to main clause verb
+
+        # # DEBUG
+        # print('MC:\n',main_clause)
+        # print('Verb num:\n',tree.num_verbs())
+
+
         for rule in rules:
-            for child in tree:
+            for child in main_clause:
                 if re.match(rule, child.label()):
 
                     # # DEBUG:
-                    # print('Child\n', child, child.label(), child.id(), head_rule)
+                    # print(head_rule)
                     # input()
 
                     #if '*' in child[0]: #or ' ' in child[0]: ATH. sturlunga 822 CODE tekið út og '' sett í staðinn - betra að hafa ' '
@@ -366,7 +327,7 @@ class Converter():
                     #else:
                     tree.set_id(child.id())
 
-                    # DEBUG:
+                    # # DEBUG
                     # print('Head:\n',child)
                     # input()
 
@@ -384,7 +345,10 @@ class Converter():
             tree.set_id(tree[1].id())  # first from left indicated or no head rule index found
             #TODO: frekar síðasta orð?
 
-            # DEBUG:
+            # # DEBUG:
+            # print(head_rule)
+            # input()
+            # # DEBUG:
             # print('Head:\n',child)
             # input()
 
@@ -519,13 +483,23 @@ class Converter():
 
 
     def create_dependency_graph(self, tree):
+        """Create a dependency graph from a phrase structure tree.
+
+        Returns:
+            type: .
+
+        """
         """Create a dependency graph from a phrase structure tree."""
         const = []
         tag_list = {}
         nr = 1
         # Tree item read in as string and transferred to UD graph instance
-        t = IndexedTree.fromstring(tree)
+        if isinstance(tree, (IndexedCorpusTree)):
+            t = tree
+        else:
+            t = IndexedCorpusTree.fromstring(tree)
         self.dg = UniversalDependencyGraph()
+        self.dg.original_ID = t.corpus_id
 
         for i in t.treepositions():
             if isinstance(t[i], Tree):
@@ -542,10 +516,19 @@ class Converter():
                     const.append(i)
 
             else:
+
                 # If trace node, skip (preliminary, may result in errors)
                 # e.g. *T*-3 etc.
                 if t[i][0] in {'0', '*', '{'}:   #if t[1].pos()[0][0] in {'0', '*'}:
                     continue
+
+                # # catches e.g. <heading>
+                # if re.search(r'\<.*\>', t[i][0]):
+                #     print(t[i])
+                #     input()
+                #     FORM = LEMMA = '-'
+                #     tag = tag_list[nr]
+
                 # If terminal node with no label (token-lemma)
                 # e.g. tók-taka
                 if '-' in t[i]:
@@ -556,15 +539,19 @@ class Converter():
                     FORM = LEMMA = '-'
                     tag = tag_list[nr]
                 else: # If no lemma present
+                    continue
+                    # print(t[i])
+                    # input()
                     FORM = t[i][0]
-                    if LEMMA == None:
-                        LEMMA = '_'
-                    token_lemma = str(FORM+'-'+LEMMA)
+                    LEMMA = None
+                    # if LEMMA == None:
+                    #     LEMMA = '_'
+                    # token_lemma = str(FORM+'-'+LEMMA)
                     tag = tag_list[nr]
                 if '+' in tag:
                     tag = re.sub('\w+\+', '', tag)
-                token_lemma = str(FORM+'-'+LEMMA)
-                leaf = token_lemma, tag
+                # token_lemma = str(FORM+'-'+LEMMA)
+                # leaf = token_lemma, tag
                 XPOS = tag
                 # Feature Classes called here
                 '''
@@ -575,7 +562,7 @@ class Converter():
                 '''
                 UPOS = '_'
                 FEATS = '_'
-                if FORM != None:
+                if FORM != None or FORM != 'None':
                     self.dg.add_node({'address': nr,
                                       'word': FORM,
                                       'lemma': LEMMA,
@@ -600,13 +587,22 @@ class Converter():
         # print(t.num_verbs())
         # input()
 
+        # Catch index referenced sentences in treebank
         for i in const:
 
-            # DEBUG:
+            # # DEBUG:
             # print(i, t[i], t[i].label())
             # input()
 
-            self._select_head(t[i])
+            if re.match('=\d', t[i].label()[-2:]):# or t[i].label() == 'CONJP':
+                clause_index = t[i].label()[-1]
+                # re.match('\d', t[i].label()[-2:])
+                for j in const:
+                    if re.match(f'-{clause_index}', t[j].label()[-2:]):
+                        self._select_head(t[i], main_clause=t[j])
+
+            else:
+                self._select_head(t[i])
 
         for i in const:
             head_tag = t[i].label()

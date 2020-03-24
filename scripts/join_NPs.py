@@ -44,14 +44,7 @@ for curr in indexes:
         lines[curr] = re.sub(det_node, '', lines[curr])
         # print(curr, lines[curr].strip('\n'), 'XXX')
         out_file.write(lines[curr])
-        # print(lines[curr].strip('\n'))
-    # elif re.search(det_token_alt, lines[curr]) and re.search(noun_trail, lines[curr]):
-    #     # print(lines[curr].strip('\n'))
-    #     lines[curr] = re.sub(noun_trail, re.findall(det_token_alt, lines[curr])[0], lines[curr])
-    #     lines[curr] = re.sub(det_node_alt, '', lines[curr])
-    #     # print(curr, lines[curr].strip('\n'), 'XXX')
-    #     out_file.write(lines[curr])
-    #     # print(lines[curr].strip('\n'))
+
     elif re.search(det_token, lines[curr]) and not re.search(noun_trail, lines[curr]) and re.search(noun_trail, lines[prev]):
         # print(prev, lines[prev].strip('\n'))
         # print(curr, lines[curr].strip('\n'))
@@ -75,6 +68,8 @@ for curr in indexes:
         #
         out_file.write(lines[curr])
         # print(curr, lines[curr].strip('\n'))
+    # else:
+    #     out_file.write(lines[curr])
 
 in_file.close()
 out_file.close()

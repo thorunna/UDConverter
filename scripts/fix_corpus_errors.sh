@@ -12,9 +12,10 @@ Any machine-specific paths must be specified before use
 '''
 
 # dir="./testing/corpora/icepahc-v0.9/psd"
-dir="./testing/corpora/icecorpus/psd"
+dir="../testing/corpora/icecorpus/psd"
 
 # 1150.homiliubok.rel-ser.psd
+sed -i "" 's/( (IP-MAT=1/( (IP-MAT-1/g' $dir/1150.homiliubok.rel-ser.psd # .37
 sed -i "" 's/(WADJ hversu-hversu)/(WADV hversu-hversu)/g' $dir/1150.homiliubok.rel-ser.psd # .105
 sed -i "" 's/(VBI \$gef-gefa)/(VBI \$gef\$-gefa)/g' $dir/1150.homiliubok.rel-ser.psd # .1648
 sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1150.homiliubok.rel-ser.psd # .246
@@ -188,7 +189,7 @@ sed -i "" 's/(VBI Koddu-koma)/(VBI Kod\$-koma)/g' $dir/2008.mamma.nar-fic.psd # 
 sed -i "" 's/(VBI koddu-koma)/(VBI kod\$-koma)/g' $dir/2008.mamma.nar-fic.psd # .1812, .1813
 
 # 2008.ofsi.nar-sag.psd
-sed -i "" '13057, 13058d' $dir/2008.ofsi.nar-sag.psd # .622
+# sed -i "" '13057, 13058d' $dir/2008.ofsi.nar-sag.psd # .622 Not completely sure why this is here.
 sed -i "" 's/\$hitta)/hitta)/g' $dir/2008.ofsi.nar-sag.psd # .313
 sed -i "" 's/(N-A \$veginn-vegur))/(N-A \$veg\$-vegur) (D-A \$inn-hinn))/g' $dir/2008.ofsi.nar-sag.psd # .442
 sed -i "" 's/(Q-A nokkurntíma-nokkurntími) (N-A \$tíma-tími))/(Q-A nokkurn\$-nokkur) (N-A $tíma-tími))/g' $dir/2008.ofsi.nar-sag.psd # .450

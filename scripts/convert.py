@@ -12,6 +12,7 @@ import re
 import os
 import subprocess
 import sys
+# import argparse
 from itertools import cycle
 
 from nltk.corpus.util import LazyCorpusLoader
@@ -20,20 +21,12 @@ from nltk.data import path
 # from nltk.tree import *
 
 from lib.depender import Converter
-
-path.extend(['../testing/'])
-
-ICEPAHC = LazyCorpusLoader(
-    'icecorpus/psd/', CategorizedBracketParseCorpusReader,
-    r'.*\.psd', cat_pattern=r'.*(nar|rel|sci|bio|law)\-.*'
-    )
-
-
+from lib.reader import IcePaHCFormatReader #, IcePaHCTree
 
 def run_pre():
     '''Run preprocessing shell script for the given corpus.'''
     subprocess.check_call(
-        ['./textCleanup.sh', '../testing/corpora/icecorpus/psd_orig', './testing/corpora/icecorpus/psd'])
+        ['./text_cleanup.sh', '../testing/corpora/icecorpus/psd_orig', '../testing/corpora/icecorpus/psd'])
 
 
 def run_post():
@@ -44,6 +37,13 @@ def run_post():
 def main():
 
     # run_pre()
+
+    path.extend(['../testing/'])
+
+    ICEPAHC = LazyCorpusLoader(
+        'icecorpus/psd/', IcePaHCFormatReader,
+        r'.*\.psd', cat_pattern=r'.*(nar|rel|sci|bio|law)\-.*'
+        )
 
     fileids = ICEPAHC.fileids()  # leave uncommented for whole corpus use
     # fileids = ['2008.ofsi.nar-sag.psd'] # For debug use only
@@ -78,16 +78,25 @@ def main():
             treeID = fileid + '_' + \
                 str(file_sents+1) + '_' + str(total_sents+1)
             try:
-                dep = c.create_dependency_graph(str(tree))
+
+                dep = c.create_dependency_graph(tree)
                 dep_c = dep.to_conllU()
+
+                sent_id_line = '# sent_id = ' + treeID + '\n'
                 text_line = dep.plain_text()+'\n'
-                outFile.write('# sent_id = ')
-                outFile.write(treeID)
-                outFile.write('\n')
-                outFile.write(text_line)
-                outFile.write(dep_c)
+                icepahc_id_line = str(dep.original_ID_plain_text(corpus_name='IcePaHC')) + '\n'
+
+                if len(dep.nodes) > 1:
+                    outFile.write(sent_id_line)
+                    outFile.write(icepahc_id_line)
+                    outFile.write(text_line)
+                    outFile.write(dep_c)
+
                 # print('# sent_id =', treeID)
+                # print(dep.original_ID_plain_text(corpus_name='IcePaHC'))
+                # print(dep.plain_text())
                 # print(dep_c)
+
                 #
                 # print(' ', next(spinner),
                 #     fileid,
@@ -109,7 +118,7 @@ def main():
               file_sents, error_num, str(duration)+' sec']]))
         file_num += 1
 
-    run_post()
+    # run_post()
 
 
 if __name__ == '__main__':
