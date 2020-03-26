@@ -243,15 +243,16 @@ class Converter():
 
         # print(tag)
 
-        if re.match(tag[:2], 'IP|CP'):
+        if re.match(tag[:2], r'IP') or re.match(tag[:2], r'CP'):
             # NOTE: if the IP... tag is indexed, the index is removed in the
             #       tag variable, as the tag is used to look up in the head
             #       rules, where the indexes don't matter.
+            # NOTE: r'IP|CP' regex doesn't work here for some reason.
 
             # # DEBUG
-            # print('\nMatch IP\n')
+            # print('\nMatch IP/CP\n')
 
-            tag = re.sub('[=-]\d+', '', tag)
+            tag = re.sub(r'[=-]\d+', '', tag)
             # if tree.num_verbs() == 1:
             #     tag = 'IP-aux'
             #     tree.set_label(tag)
