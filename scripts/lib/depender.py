@@ -652,7 +652,8 @@ class Converter():
                             self.dg.root = self.dg.get_by_address(mod_nr)
                         else:
                             # TEMP: This is most likely why "None" is popping up in the output
-                            self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': '***'})
+                            # self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': '***'})
+                            self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': 'dep'})
                             self.dg.root = self.dg.get_by_address(mod_nr)
                         # if not head_tag.endswith('=1') and re.match("IP-MAT|IP-MAT-[^=].*|INTJP|FRAG|CP-QUE-SPE|IP-IMP-SPE[^=1]|QTP|CODE|LATIN|TRANSLATION|META|IP-IMP|CP-QUE|CP-EXL|CP-THT", head_tag):  #todo root phrase types from config
                         #     self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
