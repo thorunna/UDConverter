@@ -3,6 +3,7 @@ from lib.rules import relation_NP, relation_IP, relation_CP
 import string
 
 def determine_relations(mod_tag, mod_func, head_tag, head_func):
+    # print(mod_tag, mod_func, head_tag, head_func)
     if mod_tag in ['NP', 'NX', 'WNX']:   #TODO: hvað ef mod_tag er bara NP?
         # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
         return relation_NP.get(mod_func, 'rel')
@@ -34,8 +35,12 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif mod_tag == 'P':
         return 'case'
     elif mod_tag[:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO', 'WADV', 'WADVP']:    #FP = focus particles  #QP = quantifier phrase - ATH.
+        if head_func == 'QUE' or head_tag == 'WNP':
+            # Ætti að grípa spurnarorð í spurnarsetningum, sem eru mark svk. greiningu HJ
+            return 'mark'
+        else:
             # -DIR, -LOC, -TP
-        return 'advmod'
+            return 'advmod'
     elif mod_tag == 'NS' and head_tag == 'ADVP' and head_func == 'TMP':     #ath. virkar fyrir eitt dæmi, of greedy?
         return 'conj'
     elif mod_tag in ['RP', 'RPX']:
@@ -84,7 +89,7 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif mod_tag in ['INTJ', 'INTJP'] or head_tag == 'INTJP':
         return 'discourse'
     elif mod_tag in ['FOREIGN', 'FW', 'ENGLISH', 'LATIN'] or head_tag in ['FOREIGN', 'FW', 'ENGLISH', 'LATIN']:
-        return 'foreign'
+        return 'flat:foreign'
     elif mod_tag in ['XXX', 'XP', 'X', 'QTP', 'REP', 'FS', 'LS', 'META', 'REF']:      #XXX = annotator unsure of parse, LS = list marker
         return 'dep'    #unspecified dependency
     elif head_tag in ['META', 'CODE', 'REF', 'FRAG']:

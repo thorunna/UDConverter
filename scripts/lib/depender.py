@@ -110,6 +110,7 @@ class UniversalDependencyGraph(DependencyGraph):
         '''
         rels = defaultdict(int)
         rels['root'] = 0
+        rels['ccomp/xcomp'] = 0
         for node in self.nodes.values():
             rels[node['rel']] += 1
         # return {rel for rel in [node['rel'] for node in self.nodes.values()]}
@@ -243,7 +244,9 @@ class Converter():
 
         # print(tag)
 
-        if re.match(tag[:2], r'IP') or re.match(tag[:2], r'CP'):
+        if re.match(tag[:2], r'IP') \
+        or re.match(tag[:2], r'CP') \
+        or re.match(tag[:2], r'WNP'):
             # NOTE: if the IP... tag is indexed, the index is removed in the
             #       tag variable, as the tag is used to look up in the head
             #       rules, where the indexes don't matter.
@@ -464,6 +467,72 @@ class Converter():
             if self.dg.num_verbs() == 1:
                 pass
 
+
+    def _fix_ccomp(self):
+        """
+        finds all nodes in graph with the relation 'ccomp/xcomp' and fixes them
+
+        checks where ccomp can appear and should leave only xcomp nodes
+
+        Returns:
+            None
+
+        """
+        for address, info in self.dg.nodes.items():
+            if info['rel'] == 'ccomp/xcomp':
+
+                self.dg.get_by_address(address).update({'rel': 'xcomp'})
+                # # DEBUG:
+                # print('\nccomp/xcomp error node:')
+                # print(address, info)
+
+                for other_address, other_info in self.dg.nodes.items():
+                    # check if nsubj node has ccomp/xcomp node as head
+                    if other_info['head'] == address and other_info['rel'] == 'nsubj':
+
+
+                        # # DEBUG:
+                        # print('\n=> check for nsubj relation to error node\n')
+                        # print(other_address, other_info)
+                        # input()
+
+                        self.dg.get_by_address(address).update({'rel': 'ccomp'})
+                    elif other_info['address'] == info['head'] and self.dg.get_by_address(other_info['head'])['ctag'] in {'AUX', 'VERB'}:
+                        # checks if error node head is verb and whether that verb has a nsubj node attached
+                        # NOTE: likely be too greedy
+                        for other_other_address, other_other_info in self.dg.nodes.items():
+                            if other_other_info['head'] == other_info['head'] and other_other_info['rel'] == 'nsubj':
+
+                                # # DEBUG:
+                                # print('\n=> check if error node head is verb and verb has nsubj\n')
+                                # print(other_address, other_info)
+                                # print(other_other_address, other_other_info)
+                                # input()
+
+                                self.dg.get_by_address(address).update({'rel': 'ccomp'})
+                    elif other_info['head'] == info['head'] and other_info['rel'] == 'nsubj':
+
+                        if other_info['ctag'] == 'PRON' and re.search('(-A|-D|-G)', other_info['tag']):
+                            # accusative and dative pronouns as subject may indicate no real subject, thus xcomp relation
+                            # print('\n=> MAYBE NOT TOO GREEDY? (xcomp)')
+                            # self.dg.get_by_address(address).update({'rel': 'xcomp'})
+                            continue
+                        else:
+                            # This chould also be ccomp but is too greedy
+                            # print('\n=> TOO GREEDY\n')
+                            self.dg.get_by_address(address).update({'rel': 'ccomp'})
+                            # continue
+
+                # else:
+                #     print('\n=> NO FIX\n')
+
+
+                    # else:
+                    #     self.dg.get_by_address(address).update({'rel': 'xcomp'})
+
+    def _fix_cop(self):
+        pass
+
     def _misc_column(self):
         """10.03.20
         Fills in misc column. If no attribute applicable, uses '_'.
@@ -682,7 +751,8 @@ class Converter():
             # input()
 
             self._fix_root_relation()
-
+        if self.dg.rels()['ccomp/xcomp'] > 0:
+            self._fix_ccomp()
         return self.dg
 
 
