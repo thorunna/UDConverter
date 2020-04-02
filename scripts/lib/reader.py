@@ -8,7 +8,7 @@ from nltk.tree import Tree
 
 class IndexedCorpusTree(Tree):
     """
-    Tree object extension with indexed constituents and corpus ID attribute
+    Tree object extension with indexed constituents and corpus ID and ID number attributes
     See NLTK Tree class documentation for more: https://www.nltk.org/_modules/nltk/tree.html
 
     Args:
@@ -24,6 +24,7 @@ class IndexedCorpusTree(Tree):
         Tree.__init__(self, node, children)
         self._id = 0
         self.corpus_id = None
+        self.corpus_id_num = None
 
     def id(self):
         """
@@ -106,6 +107,7 @@ class IcePaHCFormatReader(CategorizedBracketParseCorpusReader):
             # If there's an empty node at the top, strip it off
             if tree.label() == '' and len(tree) == 2:
                 tree[0].corpus_id = str(tree[1]).strip('()')
+                tree[0].corpus_id_num = str(tree[1]).strip('()').split(',')[1]
                 return tree[0]
             else:
                 return tree
