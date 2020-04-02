@@ -541,14 +541,14 @@ head_rules = {
             'IP-MAT-SUB-SPE': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VP', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SMC'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'NP', 'VAG', 'VP', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT']},
             #MD.* á eftir VB: ef VB er spor ruglast venslin en þá getur MD sem hjálparsögn líka verið haus. Ef MD er seinna er það seinna í lagi
-            'IP-SUB'        : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'ADJP', 'NP.*', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB']},
+            'IP-SUB'        : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'VAG', 'RAG', 'HAG', 'BAG', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'NP.*', 'RD.*', 'ADVP', 'IP-SUB']},
             'IP-SUB-INF'    : {'dir':'r', 'rules':['VB']},
             'IP-SUB-LFD'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HV.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'RD.*', 'NP', 'ADVP', 'IP-SUB', 'HVN']},
             'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-PRN-ELAB': {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-PRN=XXX': {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-REP'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'NP.*', 'ADJP', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB']},
-            'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*', 'HV.*']},
+            'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*', 'HV.*', 'IP-SUB-SPE']},
             'IP-SUB-SPE-PRN': {'dir':'r', 'rules':['VB.*', 'HV.*']},
             'IP-SUB-SPE-PRN-ELAB': {'dir':'r', 'rules':['VB.*', 'HV.*']},
             'IP-IMP'        : {'dir':'r', 'rules':['VB.']},    #imperative
@@ -599,7 +599,7 @@ head_rules = {
             'CP-REL'        : {'dir':'r', 'rules':['IP-SUB.*']},    #relative
             'CP-REL-SPE'    : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-REL-SPE-PRN': {'dir':'r', 'rules':['IP-SUB.*']},
-            'CP-QUE'        : {'dir':'r', 'rules':['WNP', 'WADVP', 'CP-QUE', 'IP-SUB.*']},    #question
+            'CP-QUE'        : {'dir':'r', 'rules':['IP-SUB.*', 'WNP', 'WADVP', 'CP-QUE', ]},    #question
             'CP-QUE-SPE'    : {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-QUE-SPE-LFD': {'dir':'r', 'rules':['IP-SUB.*']},
             'CP-QUE-SPE-PRN': {'dir':'r', 'rules':['IP-SUB.*']},
@@ -731,7 +731,7 @@ head_rules = {
             'FRAG'          : {'dir':'r', 'rules':['CP.*', 'IP.*', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP.*', 'PP', 'ADJP']},
             'QP'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'Q-.', 'QS-.', 'QR-.']},
             'WQP'           : {'dir':'r', 'rules':['Q-.', 'QS-.', 'QR-.']},
-            'QTP'           : {'dir':'r', 'rules':['IP.*', 'NP.*', 'N.*']},      #quote phrase
+            'QTP'           : {'dir':'r', 'rules':['IP.*', 'NP.*', 'N.*', 'QTP']},      #quote phrase
             'QTP-SBJ'       : {'dir':'r', 'rules':['IP.*', 'NP.*']},
             'REP'           : {'dir':'r', 'rules':['NP', 'PP', 'ADJP', 'IP.*', 'VB.*']},      #repetition
             'RRC'           : {'dir':'r', 'rules':['V.+', 'ADJP', 'RRC.*', 'PP']},      #reduced relative clause
