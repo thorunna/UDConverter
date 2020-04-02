@@ -507,7 +507,7 @@ head_rules = {
             'IP-INF-PRN-PRP': {'dir':'r', 'rules':['VB']},
             'IP-INF-PRN-SPE': {'dir':'r', 'rules':['VB']},
             'IP-INF-RSP'    : {'dir':'r', 'rules':['VB']},
-            'IP-INF-SBJ'    : {'dir':'r', 'rules':['VB']},
+            'IP-INF-SBJ'    : {'dir':'r', 'rules':['VB', 'IP-INF']},
             'IP-INF-SBJ-SPE': {'dir':'r', 'rules':['VB']},
             'IP-INF-DEG'    : {'dir':'r', 'rules':['VB']},  #degree infinitive
             'IP-INF-DEG-PRN': {'dir':'r', 'rules':['VB']},
