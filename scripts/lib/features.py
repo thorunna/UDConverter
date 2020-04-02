@@ -80,7 +80,7 @@ class IcelandicUDFeatures:
 
         ex: Number=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=1
         ex: _
-        
+
         '''
         NoneType = type(None)
         if not isinstance(self.all_features, (str, NoneType)):
@@ -254,6 +254,7 @@ class Features():
             self.IcePaHC_tag = re.sub(r'(21|22|31|32|33)', '-N', self.IcePaHC_tag)
         return self._split_tag()
 
+
     def get_UD_tag(self):
         '''
         Checks IcePaHC POS-tag of word and saves Universal Dependency format
@@ -282,6 +283,33 @@ class Features():
                     self.UD_tag = UD_map.get(self.IcePaHC_tag[0], '_')
                     return self
 
+    @staticmethod
+    def get_UD_tag_external(tag):
+        '''
+
+        '''
+        if '-' in tag:
+            tag = tag.split('-')[0]
+        try:
+            tag = UD_map[tag]
+            return tag
+        except:
+            # raise
+            if re.search(r'(DO|DA|RD|RA)', tag[0:2]):
+                tag = 'VERB'       #ATH. merkt sem sögn í bili
+                return tag
+            elif re.search(r'(BE|BA|HV|HA|MD|MA)', tag[0:2]):
+                tag = 'AUX'
+                return tag
+            elif tag == 'CONJ':
+                tag = 'CCONJ'
+                return tag
+            elif tag in string.punctuation:
+                tag = 'PUNCT'
+                return tag
+            else:
+                tag = UD_map.get(tag[0], '_')
+                return tag
 
     def get_OTB_tag(self):
         self.return_count = 0
