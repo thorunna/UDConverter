@@ -9,7 +9,7 @@ Based on earlier work by
 Part of UniTree project for IcePaHC
 '''
 
-# from lib import features as f
+from lib import features as f
 # from lib import DMII_data
 from lib.reader import IndexedCorpusTree
 from lib.rules import head_rules
@@ -212,7 +212,6 @@ class UniversalDependencyGraph(DependencyGraph):
 
 
 
-
 class Converter():
     """
     Converts constituency tree to
@@ -286,7 +285,7 @@ class Converter():
         if not main_clause:
             main_clause = tree
 
-        # DEBUG:
+        # # DEBUG:
         # if tag[:2] == 'IP':
         #     print(len(head_rule['rules']))
         # input()
@@ -302,7 +301,13 @@ class Converter():
             # new_rules[4:4] = ['BE.*', 'HV.*', 'MD.*', 'RD.*']
             new_rules[4:4] = ['HV.*', 'MD.*', 'RD.*']
             rules = new_rules
+        # TEMP: testing for 3 verb sentences where the 'first' verb is 'vera', e.g. 'En það var eftir að hann var farinn sem mér varð ljóst að ég yrði'
 
+        elif tree.num_verbs() > 2 or main_clause.num_verbs() > 2:
+            new_rules[0:0] = rules
+            new_rules[4:4] = [ 'IP-INF', 'HV.*', 'MD.*', 'RD.*']
+            new_rules.append('BE.*')
+            rules = new_rules
 
         # # DEBUG:
         # print(len(new_rules))
@@ -320,10 +325,15 @@ class Converter():
 
         for rule in rules:
             for child in main_clause:
+
+                # # DEBUG:
+                # print(rule, child.label())
+                # print(child,'\n')
+
                 if re.match(rule, child.label()):
 
                     # # DEBUG:
-                    # print(head_rule)
+                    # print('Head rules:', rules)
                     # input()
 
                     #if '*' in child[0]: #or ' ' in child[0]: ATH. sturlunga 822 CODE tekið út og '' sett í staðinn - betra að hafa ' '
@@ -350,7 +360,7 @@ class Converter():
             #TODO: frekar síðasta orð?
 
             # # DEBUG:
-            # print(head_rule)
+            # print('Head rules:', rules)
             # input()
             # # DEBUG:
             # print('Head:\n',child)
@@ -559,7 +569,6 @@ class Converter():
             type: .
 
         """
-        """Create a dependency graph from a phrase structure tree."""
         const = []
         tag_list = {}
         nr = 1
@@ -584,6 +593,7 @@ class Converter():
                     # e.g. (ADVP (ADV smám-smám) (ADV saman-saman))
                     t[i].set_id(0)
                     const.append(i)
+
 
             else:
 
@@ -624,13 +634,7 @@ class Converter():
                 # leaf = token_lemma, tag
                 XPOS = tag
                 # Feature Classes called here
-                '''
-                # NOTE: Features Classes rewritten, may be removed from here
-                leaf = f.Word(leaf).getinfo()
-                UPOS = leaf.UD_tag
-                FEATS = leaf.features.featString()
-                '''
-                UPOS = '_'
+                UPOS = f.Features.get_UD_tag_external(tag)
                 FEATS = '_'
                 if FORM != None or FORM != 'None':
                     self.dg.add_node({'address': nr,
@@ -647,7 +651,7 @@ class Converter():
                     nr += 1
 
         # # DEBUG:
-        # print(t)
+        # print(tag_list)
 
         # go through the constituencies (bottom up) and find their heads
         const.sort(key=lambda x: len(x), reverse=True)
@@ -657,13 +661,14 @@ class Converter():
         # print(t.num_verbs())
         # input()
 
-        # Catch index referenced sentences in treebank
+        # head selection
         for i in const:
 
             # # DEBUG:
             # print(i, t[i], t[i].label())
             # input()
 
+            # Catch index referenced sentences in treebank
             if re.match('=\d', t[i].label()[-2:]):# or t[i].label() == 'CONJP':
                 clause_index = t[i].label()[-1]
                 # re.match('\d', t[i].label()[-2:])
@@ -674,25 +679,30 @@ class Converter():
             else:
                 self._select_head(t[i])
 
+        # relations set
         for i in const:
+
             head_tag = t[i].label()
             head_nr = t[i].id()
 
-            if re.search(r'\w{1,5}(21|22|31|32|33)', head_tag):
-                head_tag = re.sub('(21|22|31|32|33)', '', head_tag)
-            #if re.search(r'IP-MAT=\d+', head_tag):
-            #    head_tag = re.sub('IP-MAT=\d+', 'IP-MAT', head_tag)
+            # if re.search(r'\w{1,5}(21|22|31|32|33)', head_tag):
+            head_tag = re.sub('(21|22|31|32|33)', '', head_tag)
+
             for child in t[i]:
-                # # DEBUG:
-                # print(child)
-                # input()
-                mod_tag = child.label()
-                if re.search(r'\w{1,5}(21|22|31|32|33)', mod_tag):
-                    mod_tag = re.sub('(21|22|31|32|33)', '', mod_tag)
+
+                # block to catch explatives inside e.g. NP-SBJ nodes
+                if len(child) ==1 and not isinstance(child[0], str) and child[0].label() == 'ES':
+                    mod_tag = child[0].label()
+                else:
+                    mod_tag = child.label()
+
+                # if re.search(r'\w{1,5}(21|22|31|32|33)', mod_tag):
+                mod_tag = re.sub('(21|22|31|32|33)', '', mod_tag)
                 mod_nr = child.id()
 
-                # DEBUG:
+                # # DEBUG:
                 # print(head_nr, mod_nr)
+                # print(head_tag, mod_tag)
                 # print(self.dg.get_by_address(mod_nr))
                 # input()
 
@@ -720,7 +730,7 @@ class Converter():
                             self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
                             self.dg.root = self.dg.get_by_address(mod_nr)
                         else:
-                            # TEMP: This is most likely why "None" is popping up in the output
+                            # Unknown dependency relation (things to fix)
                             # self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': '***'})
                             self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': 'dep'})
                             self.dg.root = self.dg.get_by_address(mod_nr)
