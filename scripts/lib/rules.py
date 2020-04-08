@@ -559,21 +559,21 @@ head_rules = {
             'IP-SMC'        : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAG-.', 'ADJP', 'NP.*']},    #small clause
             'IP-SMC-SBJ'    : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAG-.', 'ADJP', 'NP.*']},
             'IP-SMC-SPE'    : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAG-.', 'ADJP', 'NP.*']},
-            'IP-PPL'        : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},  #lýsingarháttarsetning
-            'IP-PPL-ABS'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},
-            'IP-PPL-ABS-SPE': {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},
-            'IP-PPL-OB1'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},
-            'IP-PPL-OB1-SPE': {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},
-            'IP-PPL-OB2'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},
-            'IP-PPL-PRD'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},
-            'IP-PPL-PRN'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},
-            'IP-PPL-SBJ'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},
-            'IP-PPL-SPE'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},
-            'IP-PPL-SPE-OB1': {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},
-            'IP-PPL-SPE-PRD': {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG']},
-            'IP-ABS'        : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'NP.*', 'ADJP', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB']},
-            'IP-ABS-PRN'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'NP.*', 'ADJP', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB']},
-            'IP-ABS-SBJ'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'NP.*', 'ADJP', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB']},
+            'IP-PPL'        : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},  #lýsingarháttarsetning
+            'IP-PPL-ABS'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
+            'IP-PPL-ABS-SPE': {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
+            'IP-PPL-OB1'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
+            'IP-PPL-OB1-SPE': {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
+            'IP-PPL-OB2'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
+            'IP-PPL-PRD'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
+            'IP-PPL-PRN'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
+            'IP-PPL-SBJ'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
+            'IP-PPL-SPE'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
+            'IP-PPL-SPE-OB1': {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
+            'IP-PPL-SPE-PRD': {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
+            'IP-ABS'        : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'NP.*', 'ADJP', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB', 'IP-ABS']},
+            'IP-ABS-PRN'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'NP.*', 'ADJP', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB', 'IP-ABS']},
+            'IP-ABS-SBJ'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'NP.*', 'ADJP', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB', 'IP-ABS']},
             'CP-THT'        : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #að
             'CP-THT-SBJ'    : {'dir':'r', 'rules':['IP-SUB.*','.*']},   #extraposed subject
             'CP-THT-SBJ-SPE': {'dir':'r', 'rules':['IP-SUB.*','.*']},
@@ -675,14 +675,14 @@ head_rules = {
             'ADJP-DIR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'Q.*']},
             'ADJP-LFD'      : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'Q.*']},
             'ADJP-LOC'      : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'Q.*']},  #eitt dæmi um ADJP-OC
-            'ADJP-PRN'      : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'Q.*']},
+            'ADJP-PRN'      : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ADJP', 'ONE', 'ONES', 'CP-TMP', 'Q.*']}, # ADJP bætt við útaf 1902.FOSSAR.NAR-FIC,.542, villa í ADJP-PRN hausavali
             'ADJP-PRN-ELAB' : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'Q.*']},
             'ADJP-RSP'      : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'Q.*']},
             'ADJP-TMP'      : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'Q.*']},
             'ADJX'          : {'dir':'r', 'rules':['ADJ.*']},
             'WADJP'         : {'dir':'r', 'rules':['ADJ.*', 'ADV.*']},
             'WADJX'         : {'dir':'r', 'rules':['ADJ.*', 'ADV.*']},
-            'PP'            : {'dir':'r', 'rules':['CP-FRL', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP', 'NP-.+', 'FS', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
+            'PP'            : {'dir':'r', 'rules':['CP-FRL', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP', 'NP-.+', 'FS', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'IP-PPL', 'P']},
             'PX'            : {'dir':'r', 'rules':['CP-FRL', 'NP', 'NP-.+', 'FS', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
             'PP-BY'         : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
             'PP-BY-RSP'     : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
@@ -860,20 +860,20 @@ relation_IP = {
       'SMC-SBJ': 'ccomp/xcomp',
       'SMC-SPE': 'ccomp/xcomp',
       'PPL': 'acl/advcl',  #?
-      'PPL-ABS': 'advcl/acl?',  #?
-      'PPL-ABS-SPE': 'advcl/acl?',  #?
-      'PPL-OB1': 'advcl/acl?',  #?
-      'PPL-OB1-SPE': 'advcl/acl?',  #?
-      'PPL-OB2': 'advcl/acl?',  #?
-      'PPL-PRD': 'advcl/acl?',  #?
-      'PPL-PRN': 'advcl/acl?',  #?
-      'PPL-SBJ': 'advcl/acl?',  #?
-      'PPL-SPE': 'advcl/acl?',  #?
-      'PPL-SPE-OB1': 'advcl/acl?',  #?
-      'PPL-SPE-PRD': 'advcl/acl?',  #?
-      'ABS': 'advcl/acl?',        #absolutus
-      'ABS-PRN': 'advcl/acl?',
-      'ABS-SBJ': 'advcl/acl?'
+      'PPL-ABS': 'acl/advcl',  #?
+      'PPL-ABS-SPE': 'acl/advcl',  #?
+      'PPL-OB1': 'acl/advcl',  #?
+      'PPL-OB1-SPE': 'acl/advcl',  #?
+      'PPL-OB2': 'acl/advcl',  #?
+      'PPL-PRD': 'acl/advcl',  #?
+      'PPL-PRN': 'acl/advcl',  #?
+      'PPL-SBJ': 'acl/advcl',  #?
+      'PPL-SPE': 'acl/advcl',  #?
+      'PPL-SPE-OB1': 'acl/advcl',  #?
+      'PPL-SPE-PRD': 'acl/advcl',  #?
+      'ABS': 'acl/advcl',        #absolutus
+      'ABS-PRN': 'acl/advcl',
+      'ABS-SBJ': 'acl/advcl'
 }
 
 relation_CP = {

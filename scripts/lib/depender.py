@@ -243,9 +243,9 @@ class Converter():
 
         # print(tag)
 
-        if re.match(tag[:2], r'IP') \
-        or re.match(tag[:2], r'CP') \
-        or re.match(tag[:2], r'WNP'):
+        # if re.match(tag[:2], r'IP') \
+        # or re.match(tag[:2], r'CP') \
+        # or re.match(tag[:2], r'WNP'):
             # NOTE: if the IP... tag is indexed, the index is removed in the
             #       tag variable, as the tag is used to look up in the head
             #       rules, where the indexes don't matter.
@@ -254,7 +254,12 @@ class Converter():
             # # DEBUG
             # print('\nMatch IP/CP\n')
 
-            tag = re.sub(r'[=-]\d+', '', tag)
+
+        # apparently this it's better to generalize this over all tags
+        tag = re.sub(r'[=-]\d+', '', tag)
+
+
+
             # if tree.num_verbs() == 1:
             #     tag = 'IP-aux'
             #     tree.set_label(tag)
@@ -284,6 +289,10 @@ class Converter():
 
         if not main_clause:
             main_clause = tree
+
+        # # DEBUG
+        # else:
+        #     print('\nMain Clause indicated\n')
 
         # # DEBUG:
         # if tag[:2] == 'IP':
@@ -543,6 +552,43 @@ class Converter():
     def _fix_cop(self):
         pass
 
+    def _fix_acl_advcl(self):
+        """
+        finds all nodes in graph with the relation 'acl/advcl' and fixes them
+
+        checks where ccomp can appear and should leave only xcomp nodes
+
+        Returns:
+            None
+
+        """
+        for address, info in self.dg.nodes.items():
+            if info['rel'] == 'acl/advcl':
+                # If the head is a verb
+                if self.dg.get_by_address(info['head'])['ctag'] == 'VERB':
+
+                    # # DEBUG
+                    # print('=> Head is verb\n', self.dg.get_by_address(address))
+
+                    self.dg.get_by_address(address).update({'rel': 'advcl'})
+                # If the head has a cop attached
+                elif self.dg.get_by_address(info['head'])['ctag'] in {'NOUN', 'PROPN', 'PRON', 'ADJ'}:
+
+                    # # DEBUG
+                    # print('=> Head seems to be nominal\n', self.dg.get_by_address(address))
+
+                    for other_address, other_info in self.dg.nodes.items():
+                        if other_info['head'] == info['head'] and other_info['rel'] == 'cop':
+                            self.dg.get_by_address(address).update({'rel': 'advcl'})
+                        # Should have acl relation if not caught above
+                        else:
+                            self.dg.get_by_address(address).update({'rel': 'acl'})
+                # All cases not yet caught ~should~ have relation acl
+                else:
+                    self.dg.get_by_address(address).update({'rel': 'acl'})
+            else:
+                continue
+
     def _misc_column(self):
         """10.03.20
         Fills in misc column. If no attribute applicable, uses '_'.
@@ -691,7 +737,7 @@ class Converter():
             for child in t[i]:
 
                 # block to catch explatives inside e.g. NP-SBJ nodes
-                if len(child) ==1 and not isinstance(child[0], str) and child[0].label() == 'ES':
+                if len(child) == 1 and not isinstance(child[0], str) and child[0].label() == 'ES':
                     mod_tag = child[0].label()
                 else:
                     mod_tag = child.label()
@@ -761,8 +807,11 @@ class Converter():
             # input()
 
             self._fix_root_relation()
-        if self.dg.rels()['ccomp/xcomp'] > 0:
+        rel_counts = self.dg.rels()
+        if rel_counts['ccomp/xcomp'] > 0:
             self._fix_ccomp()
+        if rel_counts['acl/advcl'] > 0:
+            self._fix_acl_advcl()
         return self.dg
 
 
