@@ -552,6 +552,16 @@ class Converter():
     def _fix_cop(self):
         pass
 
+    def _fix_aux_tag(self):
+        """
+        UD convention
+        Fixes UPOS tag for verbs that have relation 'aux' but not UPOS tag AUX.
+        """
+
+        for address, info in self.dg.nodes.items():
+            if info['rel'] == 'aux' and info['tag'] != 'AUX':
+                self.dg.get_by_address(address).update({'ctag': 'AUX'})
+
     def _fix_acl_advcl(self):
         """
         finds all nodes in graph with the relation 'acl/advcl' and fixes them
@@ -807,9 +817,13 @@ class Converter():
             # input()
 
             self._fix_root_relation()
+
         rel_counts = self.dg.rels()
+
         if rel_counts['ccomp/xcomp'] > 0:
             self._fix_ccomp()
+        if rel_counts['aux'] > 0:
+            self._fix_aux_tag()
         if rel_counts['acl/advcl'] > 0:
             self._fix_acl_advcl()
         return self.dg
