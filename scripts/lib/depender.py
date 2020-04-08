@@ -599,6 +599,15 @@ class Converter():
             else:
                 continue
 
+    def _fix_punct_heads(self):
+        for address, info in self.dg.nodes.items():
+            if info['ctag'] == 'PUNCT':
+                if address+1 in self.dg.nodes \
+                and self.dg.get_by_address(address+1)['rel'] == 'conj':
+                    self.dg.get_by_address(address).update({'head': address+1})
+
+
+
     def _misc_column(self):
         """10.03.20
         Fills in misc column. If no attribute applicable, uses '_'.
@@ -826,6 +835,8 @@ class Converter():
             self._fix_aux_tag()
         if rel_counts['acl/advcl'] > 0:
             self._fix_acl_advcl()
+        if rel_counts['punct'] > 0:
+            self._fix_punct_heads()
         return self.dg
 
 
