@@ -27,6 +27,7 @@ sed -i "" 's/(IP-MAT-KOMINN/(IP-MAT/' $dir/1210.jartein.rel-sag.psd # .321
 sed -i "" 's/(N-A sylgju\$)/(N-A sylgju\$-sylgja)/' $dir/1210.jartein.rel-sag.psd # .552
 
 # 1250.sturlunga.nar-sag.psd
+sed -i "" 's/NS-ADT/NP-ADT/g' $dir/1250.sturlunga.nar-sag.psd # 390.77, 393.187, 421.1076, 421.1096, 428.1318
 sed -i "" 's/NP-A/NS-A/g' $dir/1250.sturlunga.nar-sag.psd # 135.1604
 sed -i "" 's/(IP-SUB (ADVP-OC/(IP-SUB (ADVP-LOC/g' $dir/1250.sturlunga.nar-sag.psd # 448.2121
 sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1250.sturlunga.nar-sag.psd # 393.186, 419.994, 421.1061, 423.1171
