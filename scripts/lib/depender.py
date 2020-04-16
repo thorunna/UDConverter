@@ -366,6 +366,7 @@ class Converter():
         else:
             # print('\tNo head rule found')
             tree.set_id(tree[1].id())  # first from left indicated or no head rule index found
+            tree.set_id(tree[0].id())  # first from left indicated or no head rule index found
             #TODO: frekar síðasta orð?
 
             # # DEBUG:
@@ -743,6 +744,36 @@ class Converter():
 
             else:
                 self._select_head(t[i])
+
+        # fixes subtrees with 1 child but wrong id
+        for i in list(set(t.treepositions()).difference(const)):
+            if isinstance(t[i][0], Tree) and t[i].id() != t[i][0].id():
+
+                # # DEBUG:
+                # print()
+                # print('Tree ID:', t[i].id(), 'Child ID:', t[i][0].id())
+                # print('Tree:', t[i])
+                # # print()
+                # print('Child:', t[i][0])
+
+                if re.match('=\d', t[i].label()[-2:]):
+                    # print('\nMain Clause indicated\n')
+                    clause_index = t[i].label()[-1]
+                    # re.match('\d', t[i].label()[-2:])
+                    for j in const:
+                        if re.match(f'-{clause_index}', t[j].label()[-2:]):
+                            self._select_head(t[i][0], main_clause=t[j])
+                # else
+                else:
+                    t[i].set_id(t[i][0].id())
+
+                # print('Tree ID:', t[i].id(), 'Child ID:', t[i][0].id())
+
+        for i in list(set(t.treepositions()).difference(const)):
+            if isinstance(t[i][0], Tree) and t[i].label() == 'CONJP':
+                t[i].set_id(t[i][0].id())
+
+
 
         # relations set
         for i in const:
