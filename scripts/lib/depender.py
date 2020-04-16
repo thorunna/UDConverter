@@ -390,12 +390,12 @@ class Converter():
         """
 
         mod_tag = re.sub('-TTT', '', mod_tag)
-        mod_tag = re.sub('-\d+', '', mod_tag)
+        mod_tag = re.sub(r'[=-]\d+', '', mod_tag)
         #'=\d+|
         mod_tag = re.sub('=XXX|=X', '', mod_tag)
 
         head_tag = re.sub('-TTT', '', head_tag)
-        head_tag = re.sub('-\d+', '', head_tag)
+        head_tag = re.sub(r'[=-]\d+', '', head_tag)
         #'=\d+|
         head_tag = re.sub('=XXX|=X', '', head_tag)
 
