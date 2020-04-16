@@ -59,7 +59,7 @@ class UniversalDependencyGraph(DependencyGraph):
                                    'head': '_', # None, # TODO: find permanent fix!
                                    'deps': defaultdict(list),
                                    'rel': None,
-                                   'misc': None,    # testing adding Misc column
+                                   'misc': defaultdict(None),    # testing adding Misc column
                                    })
         self.nodes[0].update(
             {
@@ -87,7 +87,7 @@ class UniversalDependencyGraph(DependencyGraph):
         # TODO: implement
 
         """
-        pass
+        return '|'.join(f'{pair[0]}={pair[1]}' for pair in misc_dict.items())
 
     def addresses(self):
         """10.03.20
@@ -169,9 +169,9 @@ class UniversalDependencyGraph(DependencyGraph):
         """
 
         # template = '{i}\t{word}\t{lemma}\t{ctag}\t{tag}\t{feats}\t{head}\t{rel}\t{deps_str}\t_\n'
-        template = '{i}\t{word}\t{lemma}\t{ctag}\t{tag}\t{feats}\t{head}\t{rel}\t{deps_str}\t{misc}\n' # testing misc column
+        template = '{i}\t{word}\t{lemma}\t{ctag}\t{tag}\t{feats}\t{head}\t{rel}\t{deps_str}\t{misc_str}\n' # testing misc column
 
-        return ''.join(template.format(i=i, **node, deps_str=self._deps_str(node['deps']))
+        return ''.join(template.format(i=i, **node, deps_str=self._deps_str(node['deps']), misc_str=self._misc_string(node['misc']))
                          for i, node in sorted(self.nodes.items()) if node['tag'] != 'TOP') \
                + '\n'
 
@@ -608,23 +608,23 @@ class Converter():
 
 
 
-    def _misc_column(self):
+    def _add_space_after(self):
         """10.03.20
-        Fills in misc column. If no attribute applicable, uses '_'.
-
-        Current attributes: SpaceAfter=No (only if before punctuation)
+        Fills in Space_after feature in misc column.
 
         """
-        no_space_string = 'SpaceAfter=No'
-        punctuation = '!"#$%&\'()*+, -./:;<=>?@[\\]^_`{|}~'
+
         for address in self.dg.addresses():
-            if self.dg.get_by_address(address)['word'] not in punctuation \
-            and address+1 in self.dg.nodes \
-            and self.dg.get_by_address(address+1)['word'] != None \
-            and self.dg.get_by_address(address+1)['word'] in punctuation:
-                self.dg.get_by_address(address).update({'misc': no_space_string})
-            else:
-                self.dg.get_by_address(address).update({'misc': '_'})
+            if self.dg.get_by_address(address)['ctag'] == 'PUNCT':
+                id_to_fix = int(address) - 1
+                if id_to_fix < 0:
+                    continue
+                elif self.dg.get_by_address(address)['ctag'] == '„':
+                    self.dg.get_by_address(address)['misc']['SpaceAfter'] = 'No'
+                elif self.dg.get_by_address(id_to_fix)['lemma'] in {'„', ':'} or address == '1':
+                    continue
+                else:
+                    self.dg.get_by_address(id_to_fix)['misc']['SpaceAfter'] = 'No'
 
 
     def create_dependency_graph(self, tree):
@@ -816,7 +816,7 @@ class Converter():
                     if head_nr != mod_nr:
                         self.dg.add_arc(head_nr, mod_nr)
 
-        self._misc_column()
+        self._add_space_after()
 
         # NOTE: Here call method to fix dependency graph if needed?
         if self.dg.num_roots() != 1:
