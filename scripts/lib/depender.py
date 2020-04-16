@@ -278,7 +278,7 @@ class Converter():
 
 
         # # DEBUG:
-        # print('Tree: ('+tree.label()+')\n', tree, tag)
+        # print(f'Tree: ({tree.label()}), length: {len(tree)}, height: {tree.height()}\n', tree, tag)
         # input()
 
         new_rules = []
@@ -310,9 +310,10 @@ class Converter():
             # new_rules[4:4] = ['BE.*', 'HV.*', 'MD.*', 'RD.*']
             new_rules[4:4] = ['HV.*', 'MD.*', 'RD.*']
             rules = new_rules
-        # TEMP: testing for 3 verb sentences where the 'first' verb is 'vera', e.g. 'En það var eftir að hann var farinn sem mér varð ljóst að ég yrði'
 
+        # TEMP: testing for 3 verb sentences where the 'first' verb is 'vera', e.g. 'En það var eftir að hann var farinn sem mér varð ljóst að ég yrði'
         elif tree.num_verbs() > 2 or main_clause.num_verbs() > 2:
+            # print('\n3 verb sentence\n')
             new_rules[0:0] = rules
             new_rules[4:4] = [ 'IP-INF', 'HV.*', 'MD.*', 'RD.*']
             new_rules.append('BE.*')
@@ -364,8 +365,7 @@ class Converter():
             tree.set_id(tree[-1].id())
 
         else:
-            # print('\tNo head rule found')
-            tree.set_id(tree[1].id())  # first from left indicated or no head rule index found
+            # print('\tNo head rule found\n')
             tree.set_id(tree[0].id())  # first from left indicated or no head rule index found
             #TODO: frekar síðasta orð?
 
@@ -648,13 +648,15 @@ class Converter():
 
         for i in t.treepositions():
             if isinstance(t[i], Tree):
+
                 if len(t[i]) == 1:
-                    # If terminal node with label
+                    # If terminal node with label or tree with single child
                     # e.g. (VBDI tók-taka) or (NP-SBJ (PRO-N hann-hann))
                     tag_list[nr] = t[i].label()
                     t[i].set_id(nr)
-                    # print(t[i])
+                    # print(t[i],'\n', t[i].height(), len(t[i]))
                 else:
+                    # print(t[i])
                     # If constituent / complex phrase
                     # e.g. (ADVP (ADV smám-smám) (ADV saman-saman))
                     t[i].set_id(0)
@@ -680,10 +682,11 @@ class Converter():
                 if '-' in t[i]:
                     FORM, LEMMA = t[i].split('-', 1)
                     tag = tag_list[nr]
-                # If <dash/>, <dash> or </dash>
-                elif t[i][0] in {'<dash/>', '<dash>', '</dash>'}:
-                    FORM = LEMMA = '-'
-                    tag = tag_list[nr]
+                # # If <dash/>, <dash> or </dash>
+                # elif t[i][0] in {'<dash/>', '<dash>', '</dash>'}:
+                #     print('DASH')
+                #     FORM = LEMMA = '-'
+                #     tag = tag_list[nr]
                 else: # If no lemma present
                     continue
                     # print(t[i])
@@ -731,7 +734,7 @@ class Converter():
         for i in const:
 
             # # DEBUG:
-            # print(i, t[i], t[i].label())
+            # print(i, t[i], t[i].label(), len(t[i]))
             # input()
 
             # Catch index referenced sentences in treebank
@@ -796,11 +799,7 @@ class Converter():
                 mod_tag = re.sub('(21|22|31|32|33)', '', mod_tag)
                 mod_nr = child.id()
 
-                # # DEBUG:
-                # print(head_nr, mod_nr)
-                # print(head_tag, mod_tag)
-                # print(self.dg.get_by_address(mod_nr))
-                # input()
+
 
 #                if head_nr == mod_nr and re.match("NP-PRD", head_tag):      #ath. virkar þetta rétt? Leið til að láta sagnfyllingu cop vera rót
 #                    self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})
@@ -830,9 +829,8 @@ class Converter():
                             # self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': '***'})
                             self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': 'dep'})
                             self.dg.root = self.dg.get_by_address(mod_nr)
-                        # if not head_tag.endswith('=1') and re.match("IP-MAT|IP-MAT-[^=].*|INTJP|FRAG|CP-QUE-SPE|IP-IMP-SPE[^=1]|QTP|CODE|LATIN|TRANSLATION|META|IP-IMP|CP-QUE|CP-EXL|CP-THT", head_tag):  #todo root phrase types from config
-                        #     self.dg.get_by_address(mod_nr).update({'head': 0, 'rel': 'root'})  #todo copula not a head
-                        #     self.dg.root = self.dg.get_by_address(mod_nr)
+
+                            # print(self.dg.get_by_address(mod_nr))
 
                         # elif head_tag.endswith('=1'):
                             # # DEBUG:
@@ -843,7 +841,19 @@ class Converter():
                     elif child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
                         continue
                     else:
+
+                        # # DEBUG:
+                        # print('head_nr:', head_nr, 'mod_nr:', mod_nr)
+                        # print('head_tag', head_tag, 'mod_tag', mod_tag)
+                        # print(self.dg.get_by_address(mod_nr))
+                        # # input()
+
                         self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
+
+                        # # DEBUG:
+                        # print(self.dg.get_by_address(mod_nr))
+                        # input()
+
                     if head_nr != mod_nr:
                         self.dg.add_arc(head_nr, mod_nr)
 
