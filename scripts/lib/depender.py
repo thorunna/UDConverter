@@ -59,7 +59,7 @@ class UniversalDependencyGraph(DependencyGraph):
                                    'head': '_', # None, # TODO: find permanent fix!
                                    'deps': defaultdict(list),
                                    'rel': None,
-                                   'misc': defaultdict(None),    # testing adding Misc column
+                                   'misc': defaultdict(lambda: None),    # testing adding Misc column
                                    })
         self.nodes[0].update(
             {
@@ -87,7 +87,7 @@ class UniversalDependencyGraph(DependencyGraph):
         # TODO: implement
 
         """
-        return '|'.join(f'{pair[0]}={pair[1]}' for pair in misc_dict.items())
+        return '|'.join(f'{pair[0]}={pair[1]}' for pair in misc_dict.items()) if len(misc_dict) != 0 else '_'
 
     def addresses(self):
         """10.03.20
