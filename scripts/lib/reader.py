@@ -94,6 +94,28 @@ class IndexedCorpusTree(Tree):
 
         return verb_count
 
+    def remove_code_nodes(self):
+        """
+        Removes all Code nodes with no subtree from Tree
+
+        Returns: self
+            type: IndexedCorpusTree
+
+        # Does not function correctly
+
+        """
+        for subtree in self.subtrees(filter=lambda t: t.height() == 2):
+            if subtree.label() == 'CODE':
+                try:
+                    self.remove(subtree)
+                except ValueError:
+                    continue
+                # print(subtree)
+        return self
+
+    def remove_trace(self):
+        pass
+
 
 class IcePaHCFormatReader(CategorizedBracketParseCorpusReader):
     """24.03.20
