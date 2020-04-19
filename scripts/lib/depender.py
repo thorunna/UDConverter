@@ -292,7 +292,7 @@ class Converter():
 
         # # DEBUG
         # else:
-        #     print('\nMain Clause indicated\n')
+        #     print(f'\nMain Clause indicated: {main_clause.label()} \n')
 
         # # DEBUG:
         # if tag[:2] == 'IP':
@@ -669,13 +669,6 @@ class Converter():
                 # e.g. *T*-3 etc.
                 if t[i][0] in {'0', '*', '{'}:   #if t[1].pos()[0][0] in {'0', '*'}:
                     continue
-
-                # # catches e.g. <heading>
-                # if re.search(r'\<.*\>', t[i][0]):
-                #     print(t[i])
-                #     input()
-                #     FORM = LEMMA = '-'
-                #     tag = tag_list[nr]
 
                 # If terminal node with no label (token-lemma)
                 # e.g. tók-taka
