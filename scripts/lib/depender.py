@@ -640,9 +640,9 @@ class Converter():
         nr = 1
         # Tree item read in as string and transferred to UD graph instance
         if isinstance(tree, (IndexedCorpusTree)):
-            t = tree
+            t = tree.remove_code_nodes()
         else:
-            t = IndexedCorpusTree.fromstring(tree)
+            t = IndexedCorpusTree.fromstring(tree).remove_code_nodes()
         self.dg = UniversalDependencyGraph()
         self.dg.original_ID = t.corpus_id
 
@@ -722,6 +722,9 @@ class Converter():
         # # DEBUG:
         # print(tag_list)
 
+        # trees with single child
+        singles = [i for i in set(t.treepositions()).difference(const) if isinstance(t[i], Tree)]
+
         # go through the constituencies (bottom up) and find their heads
         const.sort(key=lambda x: len(x), reverse=True)
 
@@ -738,18 +741,21 @@ class Converter():
             # input()
 
             # Catch index referenced sentences in treebank
-            if re.match('=\d', t[i].label()[-2:]):# or t[i].label() == 'CONJP':
+            if re.match('=\d', t[i].label()[-2:]):# or t[i].label() == 'CONJP
                 clause_index = t[i].label()[-1]
                 # re.match('\d', t[i].label()[-2:])
-                for j in const:
+                for j in const + singles:
                     if re.match(f'-{clause_index}', t[j].label()[-2:]):
-                        self._select_head(t[i], main_clause=t[j])
+                        if isinstance(t[j][0], str):
+                            t[i].set_id(t[j].id())
+                        else:
+                            self._select_head(t[i], main_clause=t[j])
 
             else:
                 self._select_head(t[i])
 
         # fixes subtrees with 1 child but wrong id
-        for i in list(set(t.treepositions()).difference(const)):
+        for i in singles:
             if isinstance(t[i][0], Tree) and t[i].id() != t[i][0].id():
 
                 # # DEBUG:
@@ -772,10 +778,24 @@ class Converter():
 
                 # print('Tree ID:', t[i].id(), 'Child ID:', t[i][0].id())
 
+        # runs various subtrees that are likely to have root errors after
+        # last block back through head selection
+        for i in const:
+            if re.match('(IP-MAT|IP-SUB-SPE|FRAG|QTP|IP-IMP|CONJP|META|LATIN)', t[i].label()):
+                self._select_head(t[i])
+
         for i in list(set(t.treepositions()).difference(const)):
             if isinstance(t[i][0], Tree) and t[i].label() == 'CONJP':
                 t[i].set_id(t[i][0].id())
 
+        # for i in const:
+        #     # Catch index referenced sentences run back through head selection
+        #     if re.match('=\d', t[i].label()[-2:]):# or t[i].label() == 'CONJP
+        #         clause_index = t[i].label()[-1]
+        #         # re.match('\d', t[i].label()[-2:])
+        #         for j in const:
+        #             if re.match(f'-{clause_index}', t[j].label()[-2:]):
+        #                 self._select_head(t[i], main_clause=t[j])
 
 
         # relations set
