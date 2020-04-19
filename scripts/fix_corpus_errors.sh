@@ -78,6 +78,7 @@ sed -i "" 's/mát-mega/mát\$-mega/g' $dir/1475.aevintyri.nar-rel.psd # .805
 sed -i "" 's/skal-skulu/skal\$-skulu/g' $dir/1475.aevintyri.nar-rel.psd # .840
 
 # 1525.erasmus.nar-sag.psd
+sed -i "" 's/(IP-SUB-SPE-3 (/(IP-SUB-SPE-3 (/g' $dir/1525.erasmus.nar-sag.psd # .56
 sed -i "" 's/(NP-SBJ \$u-þú)/(NP-SBJ (PRO-N \$u-þú))/g' $dir/1525.erasmus.nar-sag.psd # .88
 
 # 1525.georgius.nar-rel.psd
