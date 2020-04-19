@@ -54,13 +54,17 @@ class IndexedCorpusTree(Tree):
                 phrases.extend(child.phrases())
         return phrases
 
-    def tags(self):
+    def tags(self, filter=None):
         """18.03.20
 
         Returns:
             list: All PoS tags in tree.
 
         """
+
+        if not filter or filter(self):
+            yield self
+
         pos_tags = []
         for pair in self.pos():
             pos_tags.append(pair[1])
@@ -69,11 +73,13 @@ class IndexedCorpusTree(Tree):
     def num_verbs(self):
         '''18.03.20
 
-        # COPIED FROM CLASS UniversalDependencyGraph()
+        # Based on similar method in class UniversalDependencyGraph()
 
         Checks by POS (IcePaHC PoS tag) how many verbs are in list of tags
         Used to estimate whether verb 'aux' UPOS is correct or wrong.
         Converter generalizes 'aux' UPOS for 'hafa' and 'vera'.
+
+        lambda function to only check two levels of tree, not further
 
         Returns:
             int: Number of verb tags found in sentence.
@@ -81,7 +87,8 @@ class IndexedCorpusTree(Tree):
         '''
 
         verb_count = 0
-        for tag in self.tags():
+        for tag in self.tags(lambda t: t.height() == 2):
+            # print(tag)
             if tag[0:2] in  {'VB', 'BE', 'DO', 'HV', 'MD', 'RD',}:
                 verb_count += 1
 
