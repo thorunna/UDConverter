@@ -208,7 +208,17 @@ class UniversalDependencyGraph(DependencyGraph):
         return text
 
     def original_ID_plain_text(self, **kwargs):
-        return '# '+kwargs.get('corpus_name', 'Original')+'_ID = '+ str(self.original_ID)
+        """Short summary.
+
+        Returns:
+            type: .
+
+        """
+
+        if isinstance(self.original_ID, list):
+            return '# '+kwargs.get('corpus_name', 'Original')+'_IDs = '+' ; '.join(self.original_ID)
+        else:
+            return '# '+kwargs.get('corpus_name', 'Original')+'_ID = '+ str(self.original_ID)
 
 
 
@@ -640,9 +650,9 @@ class Converter():
         nr = 1
         # Tree item read in as string and transferred to UD graph instance
         if isinstance(tree, (IndexedCorpusTree)):
-            t = tree.remove_code_nodes()
+            t = tree.remove_nodes(tags=['CODE'], trace=True)
         else:
-            t = IndexedCorpusTree.fromstring(tree).remove_code_nodes()
+            t = IndexedCorpusTree.fromstring(tree).remove_nodes(tags=['CODE'], trace=True)
         self.dg = UniversalDependencyGraph()
         self.dg.original_ID = t.corpus_id
 
@@ -667,7 +677,7 @@ class Converter():
 
                 # If trace node, skip (preliminary, may result in errors)
                 # e.g. *T*-3 etc.
-                if t[i][0] in {'0', '*', '{'}:   #if t[1].pos()[0][0] in {'0', '*'}:
+                if t[i][0] in {'0', '*', '{','<'}:   #if t[1].pos()[0][0] in {'0', '*'}:
                     continue
 
                 # If terminal node with no label (token-lemma)
@@ -675,11 +685,11 @@ class Converter():
                 if '-' in t[i]:
                     FORM, LEMMA = t[i].split('-', 1)
                     tag = tag_list[nr]
-                # # If <dash/>, <dash> or </dash>
-                # elif t[i][0] in {'<dash/>', '<dash>', '</dash>'}:
-                #     print('DASH')
-                #     FORM = LEMMA = '-'
-                #     tag = tag_list[nr]
+
+                elif t[i][0] in {'<dash/>', '<dash>', '</dash>',}:
+                    print('======DASH======')
+                    FORM = LEMMA = '-'
+                    tag = tag_list[nr]
                 else: # If no lemma present
                     continue
                     # print(t[i])
@@ -698,16 +708,13 @@ class Converter():
                 # Feature Classes called here
                 UPOS = f.Features.get_UD_tag_external(tag)
                 FEATS = '_'
-                if FORM != None or FORM != 'None':
+                if FORM not in {'None', None}:
                     self.dg.add_node({'address': nr,
                                       'word': FORM,
                                       'lemma': LEMMA,
-                                      #'lemma': '_',
                                       'ctag': UPOS, # upostag
-                                      #'ctag': '_', # upostag
                                       'tag': XPOS,   # xpostag
                                       'feats': FEATS,
-                                      #'feats': '_',
                                       'deps': defaultdict(list),
                                       'rel': '_'})
                     nr += 1
@@ -781,16 +788,6 @@ class Converter():
             if isinstance(t[i][0], Tree) and t[i].label() == 'CONJP':
                 t[i].set_id(t[i][0].id())
 
-        # for i in const:
-        #     # Catch index referenced sentences run back through head selection
-        #     if re.match('=\d', t[i].label()[-2:]):# or t[i].label() == 'CONJP
-        #         clause_index = t[i].label()[-1]
-        #         # re.match('\d', t[i].label()[-2:])
-        #         for j in const:
-        #             if re.match(f'-{clause_index}', t[j].label()[-2:]):
-        #                 self._select_head(t[i], main_clause=t[j])
-
-
         # relations set
         for i in const:
 
@@ -851,7 +848,7 @@ class Converter():
                             # print(self.dg.root)
                             # input()
 
-                    elif child[0] == '0' or '*' in child[0] or '{' in child[0] or '<' in child[0] or mod_tag == 'CODE':
+                    elif child[0] == '0' or '*' in child[0] or '{' in child[0] or child[0][0] == '<' or mod_tag == 'CODE':
                         continue
                     else:
 
@@ -870,7 +867,7 @@ class Converter():
                     if head_nr != mod_nr:
                         self.dg.add_arc(head_nr, mod_nr)
 
-        self._add_space_after()
+        # self.add_space_after()
 
         # NOTE: Here call method to fix dependency graph if needed?
         if self.dg.num_roots() != 1:
@@ -892,6 +889,64 @@ class Converter():
         if rel_counts['punct'] > 0:
             self._fix_punct_heads()
         return self.dg
+
+    @staticmethod
+    def join_graphs(to_join):
+        """
+        Takes in a list of UniversalDependencyGraph objects and joins them into
+        a single UniversalDependencyGraph object, taking into account correct
+        relations and deps.
+
+
+        Arguments:
+            to_join (list): List of dependencyGraphs that are to be joined.
+        Returns:
+            new_dg (UniversalDependencyGraph): New dependency graph of they
+                the joined sentences.
+
+        """
+
+        # for dg in list:
+        #     print(dg.to_conllU())
+        new_dg = to_join[0]
+        # print('==NEW==')
+        # print(new_dg.to_conllU())
+        new_dg.original_ID = [str(dg.original_ID) for dg  in to_join]
+        for node in new_dg.nodes.values():
+            if node['head'] == 0:
+                new_root = node['address']
+        new_id = len(new_dg.nodes)
+        for old_dg in to_join[1:]:
+            # print('==OLD==')
+            # print(old_dg.to_conllU())
+            old_new_addresses = {}
+            for node in old_dg.nodes.values():
+                old_new_addresses[node['address']] = new_id
+                if node['address'] == None or node['word'] == 'None':
+                    continue
+                else:
+                    node.update({'address': new_id})
+                new_id +=1
+            for node in old_dg.nodes.values():
+                if node['address'] == 0 or node['tag'] == 'TOP' or node['word'] == 'None':
+                    # print(node)
+                    continue
+                if node['head'] == 0:
+                    node.update({'head': new_root, 'rel':'conj', 'misc':{'OriginalHead':'0'}})
+                else:
+                    # print(node)
+                    node.update({'head' : old_new_addresses[node['head']]})
+                new_dg.add_node(node)
+
+        # TODO: fix deps:
+        # for node in new_dg.nodes.values():
+        #     node.update({'deps' : None})
+        # for i in range(len(new_dg.nodes)+1):
+        #     new_dg.add_arc(new_dg.get_by_address(i)['head'], i)
+        # print(new_dg)
+
+        return new_dg
+
 
 
 def test_case(infile):
