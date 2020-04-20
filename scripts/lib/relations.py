@@ -3,7 +3,10 @@ from lib.rules import relation_NP, relation_IP, relation_CP
 import string
 
 def determine_relations(mod_tag, mod_func, head_tag, head_func):
-    # print(mod_tag, mod_func, head_tag, head_func)
+
+    # # DEBUG:
+    # print('\n'+mod_tag, mod_func, head_tag, head_func, '\n')
+
     if mod_tag in ['NP', 'NX', 'WNX']:   #TODO: hvað ef mod_tag er bara NP?
         # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
         return relation_NP.get(mod_func, 'rel')
@@ -36,7 +39,7 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
         return 'case'
     elif mod_tag[:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO', 'WADV', 'WADVP']:    #FP = focus particles  #QP = quantifier phrase - ATH.
         if head_func == 'QUE' or head_tag == 'WNP':
-            # Ætti að grípa spurnarorð í spurnarsetningum, sem eru mark svk. greiningu HJ
+            # Ætti að grípa spurnarorð í spurnarsetningum, sem eru mark skv. greiningu HJ
             return 'mark'
         else:
             # -DIR, -LOC, -TP
@@ -55,15 +58,22 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif mod_tag in ['VAN', 'DAN', 'HAN', 'BAN']:
         return 'aux:pass'
     elif mod_tag in ['VBN', 'DON', 'HVN', 'RDN']:   #ath. VBN getur verið rót
-        return '?'
+        if head_func and '=' in head_func:
+            return 'conj'
+        else:
+            # return '?'
+            return 'dep'
     elif mod_tag[:2] in ['VB', 'DO', 'HV', 'RD', 'MD']: #todo
         return 'aux'
     elif mod_tag[:2] == 'BE' or mod_tag == 'BAN':  #copular, TODO: ekki alltaf copular
         return 'cop'
     elif mod_tag == 'VAG':
-        return 'amod?'
+        # return 'amod?'
+        return 'amod'
     elif mod_tag == 'RRC':
-        return 'acl:relcl?'
+        return 'acl:relcl'
+        # return 'acl:relcl?'
+
     elif mod_tag == 'CONJ':
         return 'cc'
     elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N', 'PP']:      #N: tvö N í einum NP tengd með CONJ
@@ -95,6 +105,8 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif head_tag in ['META', 'CODE', 'REF', 'FRAG']:
         return 'dep'
     elif mod_tag in ['N', 'NS', 'NPR', 'NPRS']:
-        return 'rel'
+        # return 'rel'
+        return 'dep'
 
-    return 'rel-'+mod_tag
+    # return 'rel-'+mod_tag
+    return 'dep'

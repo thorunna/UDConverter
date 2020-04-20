@@ -792,7 +792,8 @@ relation_NP = {
 }
 
 relation_IP = {
-      None: '?',
+      # None: '?',
+      None: 'dep',
       'INF': 'acl',
       'INF-ABS': 'acl',
       'INF-ABS-PRN': 'acl',
@@ -878,7 +879,8 @@ relation_IP = {
 }
 
 relation_CP = {
-      None: '?',
+      # None: '?',
+      None: 'dep',
       'THT': 'ccomp/xcomp',
       'THT-SBJ': 'ccomp/xcomp',
       'THT-SBJ-SPE': 'ccomp/xcomp',
