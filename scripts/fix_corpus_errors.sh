@@ -20,6 +20,8 @@ sed -i "" 's/(WADJ hversu-hversu)/(WADV hversu-hversu)/g' $dir/1150.homiliubok.r
 sed -i "" 's/(VBI \$gef-gefa)/(VBI \$gef\$-gefa)/g' $dir/1150.homiliubok.rel-ser.psd # .1648
 sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1150.homiliubok.rel-ser.psd # .246
 sed -i "" 's/(NP-ADT járnum-járna)/(NP-ADT (NS-D járnum-járn))/g' $dir/1150.homiliubok.rel-ser.psd # .410
+sed -i "" 's/( (\. \?-\?))//g' $dir/1150.homiliubok.rel-ser.psd # .691, .697, .1040, .1044, .1572
+sed -i "" 's/( (\. \.-\.))//g' $dir/1150.homiliubok.rel-ser.psd # .1486
 
 #1210.jartein.rel-sag.psd
 sed -i "" 's/(D-A ið-hinn)/(D-A \$ð-hinn)/' $dir/1210.jartein.rel-sag.psd # .159
@@ -33,8 +35,15 @@ sed -i "" 's/(IP-SUB (ADVP-OC/(IP-SUB (ADVP-LOC/g' $dir/1250.sturlunga.nar-sag.p
 sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1250.sturlunga.nar-sag.psd # 393.186, 419.994, 421.1061, 423.1171
 sed -i "" 's/(WNP-N-1 hver-hver/(WNP-1 (WPRO-N hver-hver)/' $dir/1250.sturlunga.nar-sag.psd # 427.1265
 
-#1250.thetubrot.nar-sag.psd
+# 1250.thetubrot.nar-sag.psd
 sed -i "" 's/(NP-PRN-LL/(NP-PRN/' $dir/1250.thetubrot.nar-sag.psd # .151
+
+# 1260.jomsvikingar.nar-sag.psd
+sed -i "" 's/) (CONJ og-og) (NPR-N Gull<dash>Haraldur-gullharaldur))/) (CONJP (CONJ og-og) (NPR-N Gull<dash>Haraldur-gullharaldur)))/' $dir/1260.jomsvikingar.nar-sag.psd # .
+
+# 1275.morkin.nar-his.psd
+sed -i "" 's/( (. .-.))//' $dir/1275.morkin.nar-his.psd # .451, .1680
+sed -i "" 's/( (" "-"))//' $dir/1275.morkin.nar-his.psd # .451
 
 # 1310.grettir.nar-sag.psd
 sed -i "" 's/(N-S/(N-G/g' $dir/1310.grettir.nar-sag.psd # .95
@@ -61,6 +70,10 @@ sed -i "" 's/(CP-COM/(NP-COM/' $dir/1350.finnbogi.nar-sag.psd # .2073
 # 1400.gunnar.nar-sag.psd
 sed -i "" 's/Er\$\$-vera/Er\$-vera/g' $dir/1400.gunnar.nar-sag.psd # .82
 sed -i "" 's/Leggðu-leggja/Legg\$-leggja/g' $dir/1400.gunnar.nar-sag.psd # .465
+
+# 1450.bandamenn.nar-sag.psd
+sed -i "" 's;(NPR-G Skalla<dash/>Grímssonar-skalla<dash/>grímsson);(NP-POS (NPR-G Skalla<dash/>Grímssonar-skalla<dash/>grímsson);g' $dir/1450.bandamenn.nar-sag.psd # 29.205
+sed -i "" 's/(NP-POS (NPR-G Kveldúlfssonar-kveldúlfsson)))))$/(NP-POS (NPR-G Kveldúlfssonar-kveldúlfsson))))))/g' $dir/1450.bandamenn.nar-sag.psd # 29.205
 
 # 1450.ectorssaga.nar-sag.psd
 sed -i "" 's/(HDDI/(HVDI/' $dir/1450.ectorssaga.nar-sag.psd # .1096
@@ -126,7 +139,17 @@ sed -i "" 's/(VB \$sjá-\$sjá)/(VB \$sjá-sjá)/g' $dir/1675.armann.nar-fic.psd
 sed -i "" 's/(IP-IMP-SPE (MDPI skal-skulu)/(IP-IMP-SPE (MDPI skal\$-skulu)/g' $dir/1675.armann.nar-fic.psd # 104.446, 108.578
 
 # 1680.skalholt.nar-rel.psd
+sed -i "" 's/(NP (N-D erkibiskupi-erkibiskup)/(NP (N-D erkibiskupi-erkibiskup) (CONJP/' $dir/1680.skalholt.nar-rel.psd # .48
+sed -i "" 's;(NPRS-D capitula<dash/>bræðrum-capitulabróðir);(NPRS-D capitula<dash/>bræðrum-capitulabróðir));' $dir/1680.skalholt.nar-rel.psd # .48
 sed -i "" 's/(ITEM item-item)//' $dir/1680.skalholt.nar-rel.psd # .799
+
+# 1720.vidalin.rel-ser.psd
+sed -i "" 's;(N-N umskurn-umskurn) (CONJ né-né) (N-N yfir<dash/>húð-yfir<dash/>húð))$;(N-N umskurn-umskurn) (CONJP (CONJ né-né) (N-N yfir<dash/>húð-yfir<dash/>húð)));' $dir/1720.vidalin.rel-ser.psd # .168
+sed -i "" 's;(NS-G mennta-menntir) (CONJ og-og) (NS-G mann<dash/>kosta-mann<dash/>kostur)))$;(NS-G mennta-menntir) (CONJP (CONJ og-og) (NS-G mann<dash/>kosta-mann<dash/>kostur))));' $dir/1720.vidalin.rel-ser.psd # .329
+sed -i "" 's;(N-N búningur-búningur) (CONJ og-og) (N-N klæða<dash/>snið-klæða<dash/>snið))$;(N-N búningur-búningur) (CONJP (CONJ og-og) (N-N klæða<dash/>snið-klæða<dash/>snið)));' $dir/1720.vidalin.rel-ser.psd # .384
+sed -i "" 's;(NP-SBJ (N-N ágirni-ágirni)$;(NP-SBJ (N-N ágirni-ágirni) (CONJP;' $dir/1720.vidalin.rel-ser.psd # .928
+sed -i "" 's;(N-N fé<dash/>dráttur-fé<dash/>dráttur)$;(N-N fé<dash/>dráttur-fé<dash/>dráttur));' $dir/1720.vidalin.rel-ser.psd # .928
+sed -i "" 's;(N-D ráðleysu-ráðleysi) (CONJ og-og) (N-D hugar<dash/>víli-hugar<dash/>víli)))$;(N-D ráðleysu-ráðleysi) (CONJP (CONJ og-og) (N-D hugar<dash/>víli-hugar<dash/>víli))));' $dir/1720.vidalin.rel-ser.psd # .1064
 
 # 1790.fimmbraedra.nar-sag.psd
 sed -i "" 's/(VAN \$lögð-\$leggja))/(RP upp\$-upp) (RP \$á\$-á) (VAN \$lögð-leggja))/g' $dir/1790.fimmbraedra.nar-sag.psd # .72
