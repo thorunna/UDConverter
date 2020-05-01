@@ -654,26 +654,12 @@ class Converter():
                 and self.dg.get_by_address(address+1)['rel'] == 'conj':
                     self.dg.get_by_address(address).update({'head': address+1})
 
-
-
-    def _add_space_after(self):
-        """10.03.20
-        Fills in Space_after feature in misc column.
-
-        """
-
-        for address in self.dg.addresses():
-            if self.dg.get_by_address(address)['ctag'] == 'PUNCT':
-                id_to_fix = int(address) - 1
-                if id_to_fix < 0:
-                    continue
-                elif self.dg.get_by_address(address)['ctag'] == '„':
-                    self.dg.get_by_address(address)['misc']['SpaceAfter'] = 'No'
-                elif self.dg.get_by_address(id_to_fix)['lemma'] in {'„', ':'} or address == '1':
-                    continue
-                else:
-                    self.dg.get_by_address(id_to_fix)['misc']['SpaceAfter'] = 'No'
-
+    def _fix_empty_node(self):
+        last_index = len(self.dg.nodes)-1
+        for address, node in self.dg.nodes.items():
+            if node['head'] == last_index:
+                node['head'] = self.dg.get_by_address(last_index)['head']
+        del self.dg.nodes[last_index]
 
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree.
@@ -943,6 +929,33 @@ class Converter():
         if rel_counts['punct'] > 0:
             self._fix_punct_heads()
         return self.dg
+
+    @staticmethod
+    def add_space_after(dgraph):
+        """10.03.20
+        Fills in Space_after feature in misc column.
+
+        """
+
+        for address in dgraph.addresses():
+            # print(dgraph.get_by_address(address)['word'])
+            id_to_fix = int(address) - 1
+            if dgraph.get_by_address(address)['ctag'] == 'PUNCT':
+                # id_to_fix = int(address) - 1
+                if id_to_fix < 0:
+                    continue
+                elif dgraph.get_by_address(address)['ctag'] == '„':
+                    dgraph.get_by_address(address)['misc']['SpaceAfter'] = 'No'
+                elif dgraph.get_by_address(id_to_fix)['lemma'] in {'„', ':', '|'} or address == '1':
+                    continue
+                else:
+                    dgraph.get_by_address(id_to_fix)['misc']['SpaceAfter'] = 'No'
+            # adding space after word ending in $. Needs better fix
+            elif dgraph.get_by_address(address)['word'].endswith('$') and dgraph.get_by_address(address)['ctag'] not in {'VERB', 'AUX', 'SCONJ'}:
+                dgraph.get_by_address(address)['misc']['SpaceAfter'] = 'No'
+
+        return dgraph
+
 
     @staticmethod
     def join_graphs(to_join):
