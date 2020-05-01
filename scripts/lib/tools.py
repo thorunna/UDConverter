@@ -1,6 +1,7 @@
-from lib.rules import relation_NP, relation_IP, relation_CP
+from lib.rules import relation_NP, relation_IP, relation_CP, abbr_map
 
 import string
+import re
 
 def determine_relations(mod_tag, mod_func, head_tag, head_func):
 
@@ -9,7 +10,8 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
 
     if mod_tag in ['NP', 'NX', 'WNX']:   #TODO: hvað ef mod_tag er bara NP?
         # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
-        return relation_NP.get(mod_func, 'rel')
+        return relation_NP.get(mod_func, 'dep')
+        # return relation_NP.get(mod_func, 'rel')
 #       return relation_NP.get(mod_func, 'rel-'+mod_tag)
     elif mod_tag == 'WNP':
         return 'obj'
@@ -51,20 +53,25 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif mod_tag == 'IP' and mod_func == 'SUB' and head_tag == 'CP' and head_func == 'FRL':
         return 'acl:relcl'
     elif mod_tag in ['IP', 'VP']:
-        return relation_IP.get(mod_func, 'rel')
+        return relation_IP.get(mod_func, 'dep')
+        # return relation_IP.get(mod_func, 'rel')
 #            return relation_IP.get(mod_func, 'rel-'+mod_tag)
     elif mod_tag[:2] == 'VB' and head_tag == 'CP':
         return 'ccomp'
-    elif mod_tag in ['VAN', 'DAN', 'HAN', 'BAN']:
-        return 'aux:pass'
+    elif mod_tag in ['VAN', 'DAN', 'HAN', 'BAN', 'RAN']: # RAN vantaði?
+        # return 'aux:pass' # UD hætt með aux:pass?
+        return 'aux'
+        # return 'verb' # testing dropping aux
     elif mod_tag in ['VBN', 'DON', 'HVN', 'RDN']:   #ath. VBN getur verið rót
         if head_func and '=' in head_func:
             return 'conj'
         else:
             # return '?'
             return 'dep'
-    elif mod_tag[:2] in ['VB', 'DO', 'HV', 'RD', 'MD']: #todo
+    # elif mod_tag[:2] in ['VB', 'DO', 'HV', 'RD', 'MD']: #todo
+    elif mod_tag[:2] in ['DO', 'HV', 'RD', 'MD']: #todo
         return 'aux'
+        # return 'verb' # testing dropping aux in output
     elif mod_tag[:2] == 'BE' or mod_tag == 'BAN':  #copular, TODO: ekki alltaf copular
         return 'cop'
     elif mod_tag == 'VAG':
@@ -79,14 +86,16 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif mod_tag in ['CONJP', 'N'] and head_tag in ['NP', 'N', 'PP']:      #N: tvö N í einum NP tengd með CONJ
         return 'conj'
     elif mod_tag == 'CONJP' and head_tag == 'IP':
-        return relation_IP.get(head_func, 'rel')
+        return relation_IP.get(head_func, 'dep')
+        # return relation_IP.get(head_func, 'rel')
 #            return relation_IP.get(head_func, 'rel-'+mod_tag+head_tag+head_func)
     elif mod_tag == 'CONJP':
         return 'conj'
     elif mod_tag == 'CP' and mod_func == 'REL' and head_tag == 'ADVP':
         return 'advcl'
     elif mod_tag == 'CP':
-        return relation_CP.get(mod_func, 'rel')
+        return relation_CP.get(mod_func, 'dep')
+        # return relation_CP.get(mod_func, 'rel')
 #            return relation_CP.get(mod_func, 'rel-'+mod_tag)
     elif mod_tag in ['C', 'CP', 'TO', 'WQ']:  #infinitival marker with marker relation
         return 'mark'
@@ -110,3 +119,30 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
 
     # return 'rel-'+mod_tag
     return 'dep'
+
+def decode_escaped(string, lemma=False):
+    '''
+    Fixes various punctuations (-, /, ') that are escaped in corpus data
+    Also fixes most abbrevations in corpus data using abbrevations rules dictionar
+    '''
+    if re.search(r'[<>]', string):
+        ''' Tokens processed '''
+        # print('\t', line[1], line[2])
+        if re.search(r'</?dash/?>', string):
+            string= re.sub(r'</?dash/?>', '-',string)
+        if re.search(r'</?slash/?>', string):
+            string= re.sub(r'</?slash/?>', '/', string)
+        if re.search(r'</?apostrophe/?>', string):
+            string = re.sub(r'</?apostrophe/?>', "'", string)
+        return string
+    if string in abbr_map.keys():
+        # print(string)
+        string = re.sub(abbr_map[string][0], abbr_map[string][1], string)
+            # if lemma == True:
+            #     string = re.sub(pattern, output[1])
+            # else:)
+
+        # print(string)
+        return string
+    else:
+        return string
