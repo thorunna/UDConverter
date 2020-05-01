@@ -942,6 +942,37 @@ relation_CP = {
       'TMP': 'xcomp'    #so. í nh fylgir alltaf, ekkert frl.
 }
 
+
+abbr_tokens = {'o.', 's.', 'frv.', 't.', 't.', 'd.', 'fl.', 't.$', '$d.', 'þ.$',
+               '$e.', '$e.$', '$a.$', '$s.', 'a$', '$m$', '$k', 'm.$', '$a.',
+               'm.$', '$a.$', '$s.', 't.$', '$d.'}
+abbr_map = {
+    #abbr : token, lemma, lemma(true)
+    'o.' : (r'o\.', 'og', 'og', 'og'),
+    's.' : (r's\.', 'svo', 'svo', ''),
+    'frv.' : (r'frv\.', 'framvegis', 'framvegis', ''),
+    't.' : (r't\.', 'til', 'til', ''),
+    't.' : (r't\.', 'til', 't', ''),
+    'd.' : (r'd\.', 'dæmis', 'dæmi', ''),
+    'fl.' : (r'fl\.', 'fleira', 'margur', ''),
+    't.$' : (r't\.\$', 'til', 't', 'til'),
+    '$d.' : (r'\$d\.', 'dæmis', 'd', 'dæmi'),
+    'þ.$' : (r'þ\.\$', 'það', 'þú', 'þú'),
+    '$e.' : (r'\$e\.', 'er', 'vera', ''),
+    '$e.$' : (r'\$e\.\$', 'er', 'vera', ''),
+    '$a.$' : (r'\$a\.\$', 'að', 'a\.', 'að'),
+    '$s.' : (r'\$s\.', 'segja', 's', 'segja'),
+    'a$' : (r'a$', 'að', 'að', 'að'),
+    '$m$' : (r'\$m$', 'minnsta', 'lítill', ''),
+    '$k' : (r'\$k', 'kosti', 'kostur', ''),
+    'm.$' : (r'm\.\$', 'meðal', 'm', 'meðal'),
+    '$a.' : (r'\$a\.', 'annars', 'annar', ''),
+    'm.$' : (r'm\.\$', 'meira', 'm', 'meira'),
+    '$a.$' : (r'\$a\.\$', 'að', 'a\.', 'að'),
+    '$s.' : (r'\$s\.', 'segja', 's', 'segja'),
+    't.$' : (r't\.\$', 'til', 'til', ''),
+    '$d.' : (r'\$d\.', 'dæmis', 'dæmis', '')}
+
 mwes = ['af því að',
         'á meðan',
         'áður en',
