@@ -71,7 +71,8 @@ UD_map = {
     'NPR' : 'PROPN', # proper nouns tagged as PROPN
     'NPRS': 'PROPN',
     'PRO' : 'PRON',
-    'WQ' : 'PRON',  #interrogative pronoun
+    # 'WQ' : 'PRON',  #interrogative pronoun
+    'WQ' : 'SCONJ',
     'WPRO' : 'PRON',  #wh-pronouns
     'SUCH' : 'PRON',
     'ES' : 'PRON',  #expletive tagged as PRON
@@ -90,6 +91,7 @@ UD_map = {
     'OTHERS' : 'PRON',
     'INTJ' : 'INTJ',    #interjection
     'FW' : 'X',
+    'LS' : 'NUM',    # list marker tagged as numeral
     'X' : 'X'
 }
 
@@ -161,7 +163,7 @@ OTB_map = {
         },
         'Degree' : {
             'f' : 'Pos', # adjectives
-            'm' : 'Com', # adjectives
+            'm' : 'Cmp', # adjectives
             'e' : 'Sup' # nouns
         },
         'NumType' : {
