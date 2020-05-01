@@ -28,6 +28,7 @@ if __name__ == '__main__':
     for n in reversed(nj.indexes):
         # Various clitics processed
         nj.join_clitics(n)
+        # nj.fix_joined_space_after(n)
     # f = FileWriter(nj)
     # f.write_to_file(sepdir=False, overwrite=True)
 
