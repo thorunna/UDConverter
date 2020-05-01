@@ -179,33 +179,55 @@ class UniversalDependencyGraph(DependencyGraph):
         """ 09.03.20
         Extracts text from dependency graph.
         - Removes '$' from conjoined words and joins word-parts using regex
-        - Joins punctuation to previous word by adding '$' and removing with regex
+
+        # TODO: Fix spacing ambiguous quotation marks: ",\'
 
         Returns:
             string: String representation of sentence text
 
         """
-        # NOTE: Old method kept as comment
+        # p_space_after = '!),.:;?\\]>^_`„”}'
+        # p_space_before = '“([<{'
+        # p_isolate = '*+=/|~#%-$&'
+        # p_nospace = '@'
+        # p_amb_quotes = '"\''
         # text = []
-        # for leaf in leaves:
-        #     leaf = leaf.split('-')
-        #     if leaf[0][0] in {'*', '0'}: continue
-        #     text.append(leaf[0])
+        # for address, node in self.nodes.items():
+        #     if node['word']:
+        #         if node['word'] in p_space_after:
+        #             text.append('$'+node['word'])
+        #         elif node['word'] in p_space_before:
+        #             text.append(node['word']+'$')
+        #         elif node['word'] in p_isolate:
+        #             text.append('$'+node['word']+'$')
+        #         elif node['word'] in p_amb_quotes:
+        #             # needs proper fixing
+        #             text.append(node['word'])
+        #         else:
+        #             text.append(node['word'])
         # text = '# text = ' + ' '.join(text)
-        # return text
-        punctuation = '!"#$%&\'()*+, -./:;<=>?@[\\]^_`{|}~'
+        # text = re.sub('\$ \$', '', text)
+        # text = re.sub(' \$', '', text)
+        # text = re.sub('\$ ', '', text)
+        # text = re.sub('</?dash/?>', '-', text)
         text = []
-        for address, info in self.nodes.items():
-            if info['word']:
-                if info['word'] in punctuation:
-                    text.append('$'+info['word'])
-                else:
-                    text.append(info['word'])
-        text = '# text = ' + ' '.join(text)
-        text = re.sub('\$ \$', '', text)
-        text = re.sub(' \$', '', text)
-        text = re.sub('</?dash/?>', '-', text)
-        return text
+        for address, node in self.nodes.items():
+            if node['word'] == None:
+                continue
+            elif 'SpaceAfter' in node['misc'] or address == len(self.nodes):
+                text.append(decode_escaped(node['word']))
+            else:
+                text.append(decode_escaped(node['word']+' '))
+        text = ''.join(text)
+        # print(text)
+        text = re.sub(r'(?<=\S)\$(?=\S)', '', text)
+        # print(text)
+        text = re.sub(r'\$ \$', '', text)
+        text = re.sub(r'\$\$', '', text)
+        text = re.sub(r' \$', ' ', text)
+        text = re.sub(r'\$ ', ' ', text)
+        text = re.sub(r' $', '', text)
+        return '# text = ' + text
 
     def original_ID_plain_text(self, **kwargs):
         """Short summary.
