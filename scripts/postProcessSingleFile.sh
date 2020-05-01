@@ -10,22 +10,19 @@
 
 
 # dir="../testing/CoNLLU_output"
-dir=$1
+file=$1
 
-for file in $dir/*;
-do
-  echo "Working on file: ${file##*/}"
-  # All lines with 'None' as token/lemma removed (errors from sentence parsing step)
-  # Will need to be addressed at source
-  sed -i "" '/None	None	None	None/d' $file
-  # TODO:
-  #   - Possibly remove $ from CoNLLU files in 'því$ $að' and 'þó$ $að'
-  #     in e.g. 1260.jomsvikingar.nar-sag.conllu
-  #   - ONE+Q-G changed to ADV (and possibly others) if joined ('einhversstaðar')
-  # python3 taggers/test_conllu/otb_feats.py $file
-  python3 join_conllu.py $file
-  python3 rename_conllu.py $file
-done
+# echo "Running post-processing script for file: ${file##*/}"
+# All lines with 'None' as token/lemma removed (errors from sentence parsing step)
+# Will need to be addressed at source
+sed -i "" '/None	None	None	None/d' $file
+# TODO:
+#   - Possibly remove $ from CoNLLU files in 'því$ $að' and 'þó$ $að'
+#     in e.g. 1260.jomsvikingar.nar-sag.conllu
+#   - ONE+Q-G changed to ADV (and possibly others) if joined ('einhversstaðar')
+# python3 taggers/test_conllu/otb_feats.py $file
+python3 join_conllu.py $file
+python3 rename_conllu.py $file
 
 # Former todo, now done:
 #   - ADD SCRIPT FOR renaming abbrevations to correct tokens/lemmas in:

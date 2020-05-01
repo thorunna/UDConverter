@@ -1,9 +1,11 @@
 #!/bin/bash
 
-'''
+echo '''
 12.06.19
 Hinrik Hafsteinsson
 Þórunn Arnardóttir
+
+preProcess.sh
 
 Script for cleaning IcePaHC corpus files (.psd)
  - Removes sentence ID tags
@@ -15,40 +17,11 @@ Script for cleaning IcePaHC corpus files (.psd)
 Machine-specific paths must be specified before use
 '''
 
-# paths
-
-# in_dir="./testing/corpora/icepahc-v0.9/psd_orig"
-# out_dir="./testing/corpora/icepahc-v0.9/psd"
-# in_dir="./testing/corpora/icecorpus/psd_orig"
-# out_dir="./testing/corpora/icecorpus/psd"
-
-in_dir=$1
-out_dir=$2
-
-# Create output directory if needed
-
-if [ ! -d $out_dir ];
-  then
-    echo "Creating '$out_dir' directory..."
-    mkdir $out_dir
-  else
-    echo "Directory '$out_dir' already exists. Using that."
-fi
-
-# Copy files to new directory
-
-for file in $in_dir/*; do
-  echo "Copying file: ${file##*/}"
-  cp $file ${file//_orig}
-done
-
-# Corpus errors fixed before processing
-# ./scripts/fix_corpus_errors.sh
-./fix_corpus_errors.sh
+# path
+dir=$1
 
 # Each file run through commands
-
-for file in $out_dir/*; do
+for file in $dir/*; do
   echo "Working on file: ${file##*/}"
   # Delete (CODE...)
   # sed -i "" 's/(CODE[ {}*<>a-zA-Z0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$_:-?/]*)//g' $file
@@ -71,6 +44,7 @@ for file in $out_dir/*; do
   sed -i "" 's/(, ---)//g' $file
   # Delete extra (, ---)
   sed -i "" 's/(, -----)//g' $file
+  sed -i "" 's/(, -----)//g' $file
   # Correct (. ---)
   sed -i "" 's/(\. ---)/(\. \.-\.)/g' $file
   # Delete extra (- -)
@@ -83,6 +57,7 @@ for file in $out_dir/*; do
   # sed -i "" 's/(, <dash\/>)/(, ,-,)/g' $file # NOTE maybe obsolete, check
   # Remove -TTT (possibly temporary)
   sed -i "" 's/-TTT//g' $file
+  sed -i "" 's/(LB \|-\|)//g' $file
   # # Delete empty spaces before (QTP
   # sed -i "" 's/^  (QTP/(QTP/g' $file
   # # Delete empty spaces before (IP-MAT
@@ -100,18 +75,5 @@ for file in $out_dir/*; do
   # Correct one instance of uneven parentheses
   sed -i "" 's/^(VAG sofandi\.-sofa))/(VAG sofandi\.-sofa)/g' $file
   # Join nouns and corresponding determiners
-  # python3 scripts/join_NPs.py $file
-  # python3 ./join_NPs.py $file
-  # Join word which should be written as one
-  # python3 scripts/join_split_nodes.py $file
-  python3 ./join_split_nodes.py $file
-  # Delete empty lines
-  # sed -i "" '/^$/d' $file
-  # sed -i "" '/^  $/d' $file
-  # TEMP ---------
-  # python3 scripts/join_sents.py $file
-  # Delete last character in file (uneven parentheses) NOTE only needed on some machines!!!
-  # sed -i "" '$ s/.$//' $file
-done
-
-  # sed -i "" 's/) //g' #./testing/corpora/icepahc-v0.9/psd_orig/*.psd
+  python3 ./join_psd.py $file
+done;
