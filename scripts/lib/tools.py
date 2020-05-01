@@ -1,7 +1,13 @@
-from lib.rules import relation_NP, relation_IP, relation_CP, abbr_map
 
 import string
 import re
+import requests
+import json
+
+from lib.rules import relation_NP, relation_IP, relation_CP, abbr_map
+from lib.reader import IndexedCorpusTree
+
+
 
 def determine_relations(mod_tag, mod_func, head_tag, head_func):
 
@@ -146,3 +152,61 @@ def decode_escaped(string, lemma=False):
         return string
     else:
         return string
+
+def fix_IcePaHC_tree_errors(tree):
+    '''
+    Fixes specific punctuation errors in IcePaHC trees
+    '''
+    if not tree.corpus_id:
+        return tree
+    fileid = tree.corpus_id.split(',')[0]
+    if fileid == '1150.HOMILIUBOK.REL-SER':
+        if tree.corpus_id_num in {'.691', '.697', '.1040', '.1044', '.1572'}:
+            tree.append(IndexedCorpusTree.fromstring('(. ?-?)'))
+        elif tree.corpus_id_num == '.1486':
+            tree.append(IndexedCorpusTree.fromstring('(. .-.)'))
+    elif fileid == '1275.MORKIN.NAR-HIS':
+        if tree.corpus_id_num == '.451':
+            tree.append(IndexedCorpusTree.fromstring('(. .-.)'))
+            tree.append(IndexedCorpusTree.fromstring('(" "-")'))
+        elif tree.corpus_id_num == '.1680':
+            tree.append(IndexedCorpusTree.fromstring('(. .-.)'))
+    return tree
+
+def tagged_corpus(corpus):
+    '''
+    Gets tagged data for corpus
+    '''
+    text = ''
+    IDs = []
+    counter = 0
+    for tree in corpus:
+        counter += 1
+        text += re.sub(r' \.', '.',re.sub(r'(\$ \$|\*ICH\*|\*T\*)', '', ' '.join([tree[i].split('-')[0] for i in tree.treepositions() if isinstance(tree[i], str) and '-' in tree[i] ]))+'\n')
+
+        if tree.corpus_id != None:
+            IDs.append(tree.corpus_id)
+        else:
+            # IDs.append(IDs[0][:-1]+str(counter))
+            IDs.append('ID_missing_'+str(counter))
+
+    url = 'http://malvinnsla.arnastofnun.is'
+    payload = {'text':text, 'lemma':'on'}
+    headers = {}
+    res = requests.post(url, data=payload, headers=headers)
+    tagged = json.loads(res.text)
+    tagged_sents = []
+    for par in tagged['paragraphs']:
+        tagged_sent = {}
+        for sent in par['sentences']:
+            for pair in sent:
+                tagged_sent[pair['word']] = (pair['tag'], pair['lemma'])
+        tagged_sents.append(tagged_sent)
+    ID_sents = dict(zip(IDs, tagged_sents))
+
+    # for i, j in ID_sents.items():
+    #     print(i,j)
+    #     input()
+    # exit()
+
+    return ID_sents
