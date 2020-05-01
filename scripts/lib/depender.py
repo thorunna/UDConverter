@@ -9,11 +9,11 @@ Based on earlier work by
 Part of UniTree project for IcePaHC
 '''
 
-from lib import features as f
+from lib.features import *
 # from lib import DMII_data
 from lib.reader import IndexedCorpusTree
 from lib.rules import head_rules
-from lib import relations
+from lib.tools import determine_relations, decode_escaped
 
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
@@ -55,7 +55,7 @@ class UniversalDependencyGraph(DependencyGraph):
                                    'lemma': None,
                                    'ctag': None,    # upostag
                                    'tag': None,     # xpostag
-                                   'feats': None,
+                                   'feats': defaultdict(lambda: None),
                                    'head': '_', # None, # TODO: find permanent fix!
                                    'deps': defaultdict(list),
                                    'rel': None,
@@ -76,18 +76,16 @@ class UniversalDependencyGraph(DependencyGraph):
         #todo, format should be "4:nsubj|11:nsubj", see http://universaldependencies.github.io/docs/format.html
         return '_' #return ''.join('%s:%s,' % (dep, '+'.join(str(rel))) for (dep, rel) in deps_dict.items())[0:-1]
 
-    def _misc_string(self, misc_dict):
+    def _dict_to_string(self, dict):
         """17.03.20
 
         Returns:
-                string: contents of MISC column for word.
+                string: contents of column column for word from defaultdict.
                         ex. {'SpaceAfter' : 'No'} -> 'SpaceAfter=No'
-                        If misc_dict is None returns '_'
-
-        # TODO: implement
+                        If dict is None returns '_'
 
         """
-        return '|'.join(f'{pair[0]}={pair[1]}' for pair in misc_dict.items()) if len(misc_dict) != 0 else '_'
+        return '|'.join(f'{pair[0]}={pair[1]}' for pair in sorted(dict.items(), key=lambda s: s[0].lower()) if pair[1] is not None) if len(dict) != 0 else '_'
 
     def addresses(self):
         """10.03.20
@@ -141,7 +139,9 @@ class UniversalDependencyGraph(DependencyGraph):
 
         verb_count = 0
         for node in self.nodes.values():
-            if node['tag'][0:2] in  {'VB', 'BE', 'DO', 'HV', 'MD', 'RD',}:
+            if node['tag'] == None:
+                continue
+            elif node['tag'][0:2] in  {'VB', 'BE', 'DO', 'HV', 'MD', 'RD',}:
                 verb_count += 1
 
         return verb_count
@@ -216,9 +216,9 @@ class UniversalDependencyGraph(DependencyGraph):
         """
 
         if isinstance(self.original_ID, list):
-            return '# '+kwargs.get('corpus_name', 'Original')+'_IDs = '+' ; '.join(self.original_ID)
+            return '# '+kwargs.get('corpus_name', 'X')+'_IDs = '+' ; '.join(self.original_ID)
         else:
-            return '# '+kwargs.get('corpus_name', 'Original')+'_ID = '+ str(self.original_ID)
+            return '# '+kwargs.get('corpus_name', 'X')+'_ID = '+ str(self.original_ID)
 
 
 
@@ -233,10 +233,15 @@ class Converter():
         dg (type): UnviersalDependencyGraph object.
 
     """
-    def __init__(self):
+    def __init__(self, auto_tags=False):
         #todo read rules from config file
         self.t = None
         self.dg = None
+        self.auto_tags = auto_tags
+        self.tagged_sentences = None
+
+    def set_tag_dict(self, tag_dict):
+        self.tagged_sentences = tag_dict
 
     def _select_head(self, tree, main_clause=None):
         """
@@ -346,11 +351,14 @@ class Converter():
         for rule in rules:
             for child in main_clause:
 
+                if child.height() == 2 and child[0][0] == '*':
+                    continue
+
                 # # DEBUG:
                 # print(rule, child.label())
                 # print(child,'\n')
 
-                if re.match(rule, child.label()):
+                elif re.match(rule, child.label()):
 
                     # # DEBUG:
                     # print('Head rules:', rules)
@@ -424,7 +432,36 @@ class Converter():
         else:
             head_func = None
 
-        return relations.determine_relations(mod_tag, mod_func, head_tag, head_func)
+        return determine_relations(mod_tag, mod_func, head_tag, head_func)
+
+    def _get_tag_dict(self, tree):
+        if self.auto_tags == 'single_sentence':
+            try:
+                text = re.sub('\$ \$', '', ' '.join([tree[i].split('-')[0] for i in tree.treepositions() if isinstance(tree[i], str) ]))
+                # print(text)
+                tag_pairs = Features.tagged_sent(text)
+                # print(tag_pairs)
+                return tag_pairs
+            except FeatureExtractionError:
+                raise
+        elif self.auto_tags == 'corpus':
+            return self.tagged_sentences.get(tree.corpus_id, defaultdict(None))
+    # def _features(self):
+    #     if self.auto_tags == True:
+    #         TAG_PAIRS = []
+    #         try:
+    #             text = re.sub(r'# text = ', '', self.dg.plain_text()) + ' '
+    #             text = re.sub(r'"', '\\"', text)
+    #             TAG_PAIRS = Features.tagged_sent(text)
+    #             print(TAG_PAIRS)
+    #         except FeatureExtractionError:
+    #             raise
+    #         for address, node in self.dg.nodes:
+    #             self.dg.get_by_address(address)['misc'].update({'IFD_tag' : TAG_PAIRS.get(node['word'], 'missing')})
+    #     else:
+    #         pass
+
+
 
     def _fix_root_relation(self):
         """09.03.20
@@ -652,7 +689,10 @@ class Converter():
         if isinstance(tree, (IndexedCorpusTree)):
             t = tree.remove_nodes(tags=['CODE'], trace=True)
         else:
-            t = IndexedCorpusTree.fromstring(tree).remove_nodes(tags=['CODE'], trace=True)
+            t = IndexedCorpusTree.fromstring(tree, trim_id_tag=True).remove_nodes(tags=['CODE'], trace=True)
+        if self.auto_tags:
+            TAG_DICT = self._get_tag_dict(t)
+
         self.dg = UniversalDependencyGraph()
         self.dg.original_ID = t.corpus_id
 
@@ -683,31 +723,44 @@ class Converter():
                 # If terminal node with no label (token-lemma)
                 # e.g. tók-taka
                 if '-' in t[i]:
-                    FORM, LEMMA = t[i].split('-', 1)
+                    FORM = decode_escaped(t[i].split('-', 1)[0])
+                    LEMMA = decode_escaped(t[i].split('-', 1)[1])
                     tag = tag_list[nr]
-
                 elif t[i][0] in {'<dash/>', '<dash>', '</dash>',}:
-                    print('======DASH======')
                     FORM = LEMMA = '-'
                     tag = tag_list[nr]
                 else: # If no lemma present
-                    continue
-                    # print(t[i])
-                    # input()
-                    FORM = t[i][0]
+                    FORM = t[i]
                     LEMMA = None
-                    # if LEMMA == None:
-                    #     LEMMA = '_'
-                    # token_lemma = str(FORM+'-'+LEMMA)
                     tag = tag_list[nr]
                 if '+' in tag:
                     tag = re.sub('\w+\+', '', tag)
                 # token_lemma = str(FORM+'-'+LEMMA)
-                # leaf = token_lemma, tag
                 XPOS = tag
+                MISC = defaultdict(lambda: None)
                 # Feature Classes called here
-                UPOS = f.Features.get_UD_tag_external(tag)
-                FEATS = '_'
+                UPOS = Features.get_UD_tag(tag)
+                if self.auto_tags:
+                    # ifd tag found from POS tagger output
+                    ifd_tag = TAG_DICT.get(FORM, 'x')[0]
+                    if ifd_tag == None:
+                        if UPOS == 'PRON':
+                            ifd_tag = 'fp2en'
+                        else:
+                            for w, tl in TAG_DICT.items():
+                                if tl[1] == LEMMA:
+                                    ifd_tag = tl[0]
+                                else:
+                                    ifd_tag = 'x'
+                    if LEMMA == None:
+                        print(TAG_DICT.get(re.sub(r'\$', '', FORM), '_'))
+                        print(FORM)
+                        LEMMA = TAG_DICT.get(re.sub(r'\$', '', FORM), '_')[1]
+                    FEATS = Features(ifd_tag).features
+                    MISC = defaultdict(lambda: None, {'IFD_tag': ifd_tag})
+                else:
+                    FEATS = defaultdict(lambda: None)
+                    MISC = defaultdict(lambda: None)
                 if FORM not in {'None', None}:
                     self.dg.add_node({'address': nr,
                                       'word': FORM,
@@ -716,7 +769,8 @@ class Converter():
                                       'tag': XPOS,   # xpostag
                                       'feats': FEATS,
                                       'deps': defaultdict(list),
-                                      'rel': '_'})
+                                      'rel': '_',
+                                      'misc': MISC})
                     nr += 1
 
         # # DEBUG:
