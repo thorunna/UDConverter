@@ -1,18 +1,35 @@
 #!/bin/bash
 
 echo '''
-fix_corpus_error.sh
 22.07.19
 Hinrik Hafsteinsson
 Þórunn Arnardóttir
 
-Script for fixing various presumed errors in IcePaHC corpus files (.psd)
+fix_corpus_error.sh
 
-Any machine-specific paths must be specified before use
+Script for fixing various presumed errors in IcePaHC corpus files (.psd)
 '''
 
 # dir="./testing/corpora/icepahc-v0.9/psd"
-dir="../testing/corpora/icecorpus/psd"
+# dir="../testing/corpora/icecorpus/psd "
+corpus=$1
+# dir="${corpus}_fixed"
+dir=$2
+
+if [ ! -d $dir ];
+  then
+    echo "Creating '$dir' directory..."
+    mkdir $dir
+  else
+    echo "Directory '$dir' already exists. Using that."
+fi
+
+for file in $corpus/*; do
+  echo "Copying file: ${file##*/}"
+  cp $file $dir
+done
+
+echo "Fixing annotation errors..."
 
 # 1150.homiliubok.rel-ser.psd
 sed -i "" 's/( (IP-MAT=1/( (IP-MAT-1/g' $dir/1150.homiliubok.rel-ser.psd # .37
