@@ -515,7 +515,7 @@ class NodeJoiner():
             # print('\t\t', next, self.lines[next].strip())
             # print()
 
-        elif re.search(det_token_caps, self.lines[index]):
+        if re.search(det_token_caps, self.lines[index]):
             '''
             Fixes determiners in all caps.
             Only occurs in:
@@ -820,8 +820,12 @@ class NodeJoiner():
                     curr_line[1] = re.sub(r'\$[tðd]?[uú]', 'þú', curr_line[1])
                     prev_line[1] = re.sub(r'\$', '', prev_line[1])
                     prevprev_line[1] = re.sub(r'\$', '', prevprev_line[1])
+                    curr_line[9] = re.sub(r'\|SpaceAfter=No', '', curr_line[9])
+                    curr_line[9] = re.sub(r'SpaceAfter=No', '_', curr_line[9])
+                    prev_line[9] = re.sub(r'\|SpaceAfter=No', '', prev_line[9])
+                    prev_line[9] = re.sub(r'SpaceAfter=No', '_', prev_line[9])
                     self.lines[index], self.lines[index-1], self.lines[index-2] = '\t'.join(curr_line), '\t'.join(prev_line), '\t'.join(prevprev_line)
-                    self.lines.insert(index-1, new_line)
+                    self.lines.insert(index-2, new_line)
                     # print(new_line.strip('\n'))
                     # print(prevprev_line)
                     # print(prev_line)
@@ -830,16 +834,24 @@ class NodeJoiner():
                     ''' at$ $tú '''
                     joined_token = prev_line[1] + curr_line[1]
                     joined_token = re.sub(r'\$\$', '', joined_token)
+                    # print(joined_token)
                     joined_number = prev_line[0] + '-' + curr_line[0]
-                    new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+                    if re.search(r'SpaceAfter=No', curr_line[9]):
+                        new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n'])
+                    else:
+                        new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
                     curr_line[1] = re.sub(r'\$[tðd]?[uú]', 'þú', curr_line[1])
                     prev_line[1] = re.sub(r'\$', '', prev_line[1])
                     # print(prev_line)
                     # print(curr_line)
                     # print(new_line.strip('\n'))
+                    curr_line[9] = re.sub(r'\|SpaceAfter=No', '', curr_line[9])
+                    curr_line[9] = re.sub(r'SpaceAfter=No', '_', curr_line[9])
+                    prev_line[9] = re.sub(r'\|SpaceAfter=No', '', prev_line[9])
+                    prev_line[9] = re.sub(r'SpaceAfter=No', '_', prev_line[9])
                     self.lines[index], self.lines[index-1] = '\t'.join(curr_line), '\t'.join(prev_line)
                     self.lines.insert(index-1, new_line)
-                # return self
+                return
             # print(prev_line)
             # print(curr_line)
             joined_token = prev_line[1] + curr_line[1]
@@ -862,10 +874,17 @@ class NodeJoiner():
                 prev_line[1] = re.sub(r'\$', '', prev_line[1])
             curr_line[1] = re.sub(r'\$[tðd]?[uú]', 'þú', curr_line[1])
             curr_line[1] = re.sub(r'\$ði', 'þið', curr_line[1])
-            self.lines[index], self.lines[index-1] = '\t'.join(curr_line), '\t'.join(prev_line)
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
-            new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+            if re.search(r'SpaceAfter=No', curr_line[9]):
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n'])
+            else:
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+            curr_line[9] = re.sub(r'\|SpaceAfter=No', '', curr_line[9])
+            curr_line[9] = re.sub(r'SpaceAfter=No', '_', curr_line[9])
+            prev_line[9] = re.sub(r'\|SpaceAfter=No', '', prev_line[9])
+            prev_line[9] = re.sub(r'SpaceAfter=No', '_', prev_line[9])
+            self.lines[index], self.lines[index-1] = '\t'.join(curr_line), '\t'.join(prev_line)
             # print(new_line.strip('\n'))
             # print(prev_line)
             # print(curr_line)
@@ -878,12 +897,19 @@ class NodeJoiner():
             joined_token = prev_line[1] + curr_line[1]
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
-            new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+            if re.search(r'SpaceAfter=No', curr_line[9]):
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n'])
+            else:
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
             prev_line[1] = re.sub(r'\$', '', prev_line[1])
             curr_line[1] = re.sub(r'\$i', 'þið', curr_line[1])
             # print(new_line.strip('\n'))
             # print(index-1, prev_line)
             # print(index, curr_line)
+            curr_line[9] = re.sub(r'\|SpaceAfter=No', '', curr_line[9])
+            curr_line[9] = re.sub(r'SpaceAfter=No', '_', curr_line[9])
+            prev_line[9] = re.sub(r'\|SpaceAfter=No', '', prev_line[9])
+            prev_line[9] = re.sub(r'SpaceAfter=No', '_', prev_line[9])
             self.lines[index], self.lines[index-1] = '\t'.join(curr_line), '\t'.join(prev_line)
             self.lines.insert(index-1, new_line)
         elif re.search(r'\$(S|s|a|[kg][ia]?|veg)$', curr_line[1]):
@@ -893,7 +919,10 @@ class NodeJoiner():
             joined_token = prev_line[1] + curr_line[1]
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
-            new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+            if re.search(r'SpaceAfter=No', curr_line[9]):
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n'])
+            else:
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
             prev_line[1] = re.sub(r'\$', '', prev_line[1])
             if curr_line[2] == 'kostur':
                 return self
@@ -921,6 +950,10 @@ class NodeJoiner():
                 # print(new_line.strip('\n'))
                 # print(index-1, prev_line)
                 # print(index, curr_line)
+            curr_line[9] = re.sub(r'\|SpaceAfter=No', '', curr_line[9])
+            curr_line[9] = re.sub(r'SpaceAfter=No', '_', curr_line[9])
+            prev_line[9] = re.sub(r'\|SpaceAfter=No', '', prev_line[9])
+            prev_line[9] = re.sub(r'SpaceAfter=No', '_', prev_line[9])
             self.lines[index], self.lines[index-1] = '\t'.join(curr_line), '\t'.join(prev_line)
             self.lines.insert(index-1, new_line)
             # print(new_line.strip('\n'))
@@ -931,13 +964,35 @@ class NodeJoiner():
             joined_token = prev_line[1] + curr_line[1]
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
-            new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+            if re.search(r'SpaceAfter=No', curr_line[9]):
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n'])
+            else:
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
             prev_line[1] = re.sub(r'þ\$', 'þó', prev_line[1])
             prev_line[1] = re.sub(r'Þ\$', 'ÞÓ', prev_line[1])
             curr_line[1] = re.sub(r'\$', '', curr_line[1])
+            curr_line[9] = re.sub(r'\|SpaceAfter=No', '', curr_line[9])
+            curr_line[9] = re.sub(r'SpaceAfter=No', '_', curr_line[9])
+            prev_line[9] = re.sub(r'\|SpaceAfter=No', '', prev_line[9])
+            prev_line[9] = re.sub(r'SpaceAfter=No', '_', prev_line[9])
             self.lines[index], self.lines[index-1] = '\t'.join(curr_line), '\t'.join(prev_line)
             self.lines.insert(index-1, new_line)
             # print(new_line.strip('\n')
+
+    def fix_joined_space_after(self, index):
+
+        curr_line, token_end_line = self.lines[index].split('\t'), self.lines[index+2].split('\t')
+        if len(curr_line) == 1 or len(token_end_line) == 1: return self
+        # if token_end_line[4] == '_': return self
+        elif re.search(r'\d+-\d+', curr_line[0]):
+            print('ID match')
+            if re.search(r'SpaceAfter=No', token_end_line[9]):
+                print('SpaceAfter match')
+                token_end_line[9] = re.sub(r'\|SpaceAfter=No', '', token_end_line[9])
+                curr_line[9] = 'SpaceAfter=No\n'
+                self.lines[index], self.lines[index+2] = '\t'.join(curr_line), '\t'.join(token_end_line)
+
+
 
     def iterate_nodes(self):
         '''
@@ -964,6 +1019,7 @@ class NodeJoiner():
         elif self.file_type == '.conllu':
             for current_line_num in reversed(self.indexes):
                 self.join_clitics(current_line_num)
+                self.fix_joined_space_after(current_line_num)
         return self
 
     # def _create_out_dir(self):
@@ -975,19 +1031,19 @@ class NodeJoiner():
 class SentJoiner():
     '''
     '''
-    def __init__(self, file):
-        self.input_lines = file.readlines()
-        self.path = file.name
-        self.line_indexes = range(len(self.input_lines))
-        self.last_num = None
-        self.name = os.path.basename(file.name)
-        self.joined_sents = []
-        self.sent_num = 0
+    def __init__(self, graph_list):
+        # self.input_lines = file.readlines()
+        # self.path = file.name
+        # self.line_indexes = range(len(self.input_lines))
+        # self.last_num = None
+        # self.name = os.path.basename(file.name)
+        # self.joined_sents = []
+        self.sent_num = len(graph_list)
         self.new_token_ID = 0
         self.old_new_tokens = defaultdict(None)
         self.token_key = None
         self.first_root = None
-        self.lines = []
+        # self.lines = []
 
 
     def _join_sents(self):
