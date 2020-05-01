@@ -25,6 +25,25 @@ class IndexedCorpusTree(Tree):
         self._id = 0
         self.corpus_id = None
         self.corpus_id_num = None
+        # self._trim_ID(self)
+
+        # if self.height() == 2:
+        #     if self.label() in '!"#$%&()*+, -./:;<=>?@[\]^_`{|}~' \
+        #     or self.label() != 'ID' and re.match(r'\d+\.?', self[0]):
+        #         self[0] = str(self[0])+'-'+(self[0])
+
+    @classmethod
+    def fromstring(cls, s, trim_id_tag=False, **kwargs):
+        """
+        Extension of parent class method to check for ID tag and
+        """
+        tree = super().fromstring(s, **kwargs)
+        if trim_id_tag and tree._label == '' and len(tree) == 2:
+            tree[0].corpus_id = str(tree[1]).strip('()ID ')
+            tree[0].corpus_id_num = str(tree[1]).strip('()ID ').split(',')[1]
+            tree = tree[0]
+        return tree
+
 
     def id(self):
         """
@@ -70,6 +89,18 @@ class IndexedCorpusTree(Tree):
             pos_tags.append(pair[1])
         return pos_tags
 
+    # def immmediate_tags(self):
+    #     """
+    #     alternate version of tags() (as filter isn't working)
+    #     """
+    #     pos_tags = []
+    #     for child in self:
+    #         pos_tags.append(child.label())
+    #         for subchild in child:
+    #             pos_tags.append(child.label())
+    #     return pos_tags
+
+
     def num_verbs(self):
         '''18.03.20
 
@@ -88,6 +119,7 @@ class IndexedCorpusTree(Tree):
 
         verb_count = 0
         for tag in self.tags(lambda t: t.height() == 2):
+        # for tag in self.immmediate_tags():
             # print(tag)
             if tag[0:2] in  {'VB', 'BE', 'DO', 'HV', 'MD', 'RD',}:
                 verb_count += 1
@@ -207,7 +239,7 @@ class IndexedCorpusTree(Tree):
             except:
                 continue
 
-        # print(self)
+        # print('clean out:\n',self)
         return self
 
     def remove_trace_nodes(self):
@@ -257,18 +289,19 @@ class IcePaHCFormatReader(CategorizedBracketParseCorpusReader):
 
     def _parse(self, t):
         try:
-            tree = IndexedCorpusTree.fromstring(t, remove_empty_top_bracketing=False)
-            # If there's an empty node at the top, strip it off
-            if tree.label() == '' and len(tree) == 2:
-                tree[0].corpus_id = str(tree[1]).strip('()ID ')
-                tree[0].corpus_id_num = str(tree[1]).strip('()ID ').split(',')[1]
-                return tree[0]
-            else:
-                return tree
+            tree = IndexedCorpusTree.fromstring(t, remove_empty_top_bracketing=False, trim_id_tag=True).remove_nodes(tags=['CODE'], trace=True)
+            # # If there's an empty node at the top, strip it off
+            # if tree.label() == '' and len(tree) == 2:
+            #     tree[0].corpus_id = str(tree[1]).strip('()ID ')
+            #     tree[0].corpus_id_num = str(tree[1]).strip('()ID ').split(',')[1]
+            #     return tree[0]
+            # else:
+            #     return tree
             return tree
 
         except ValueError as e:
             sys.stderr.write("Bad tree detected; trying to recover...\n")
+            sys.stderr.write(t)
             # Try to recover, if we can:
             if e.args == ("mismatched parens",):
                 for n in range(1, 5):
