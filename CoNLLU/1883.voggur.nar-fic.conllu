@@ -1,5 +1,5 @@
 # sent_id = 1883.VOGGUR.NAR-FIC,1.32008
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.1
+# X_ID = 1883.VOGGUR.NAR-FIC,.1
 # text = Hans Vöggur hafði verið vatnskarl í Reykjavík nær því svo lengi, sem menn mundu eftir.
 1	Hans	hans	PROPN	NPR-N	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	3	nsubj	_	IFD_tag=fpkee
 2	Vöggur	vöggur	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	flat:name	_	IFD_tag=nken-s
@@ -13,14 +13,14 @@
 10	svo	svo	ADV	ADVR	_	8	advmod	_	IFD_tag=aa
 11	lengi	lengi	ADV	ADV	_	8	advmod	_	IFD_tag=aa|SpaceAfter=No
 12	,	,	PUNCT	,	_	8	punct	_	IFD_tag=,
-13	sem	sem	SCONJ	C	_	15	mark	_	IFD_tag=c
+13	sem	sem	SCONJ	C	_	15	mark	_	IFD_tag=ct
 14	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	15	nsubj	_	IFD_tag=nkfn
 15	mundu	muna	VERB	VBDI	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	advcl	_	IFD_tag=svg3fþ
 16	eftir	eftir	ADV	ADV	_	15	advmod	_	IFD_tag=aa|SpaceAfter=No
 17	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,2.32009
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.2
+# X_ID = 1883.VOGGUR.NAR-FIC,.2
 # text = Og jafnlengi hafði hann raulað sömu vísuna með sama vísnalaginu fyrir munni sér, þegar hann var búinn að pósta vatnið upp í föturnar sínar úr póstinum í Aðalstræti og var kominn á stað.
 1	Og	og	CCONJ	CONJ	_	5	cc	_	IFD_tag=c
 2	jafnlengi	jafnlengi	ADV	ADV	_	5	obl	_	IFD_tag=aa
@@ -59,7 +59,7 @@
 35	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,3.32010
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.3
+# X_ID = 1883.VOGGUR.NAR-FIC,.3
 # text = Hann gekk raulandi upp allt strætið.
 1	Hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	2	nsubj	_	IFD_tag=fpken
 2	gekk	ganga	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -70,7 +70,7 @@
 7	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,4.32011
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.4
+# X_ID = 1883.VOGGUR.NAR-FIC,.4
 # text = Og hvar sem menn hittu Hans Vögg á ferð með föturnar sínar, raulaði hann alltaf með sama lagi þessa vísu:
 1	Og	og	CCONJ	CONJ	_	14	cc	_	IFD_tag=c
 2	hvar	hvar	ADV	WADV	_	5	advmod	_	IFD_tag=aa
@@ -96,14 +96,14 @@
 22	:	:	PUNCT	.	_	14	punct	_	IFD_tag=:
 
 # sent_id = 1883.VOGGUR.NAR-FIC,5.32012
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.5 ; 1883.VOGGUR.NAR-FIC,.6 ; 1883.VOGGUR.NAR-FIC,.7
+# X_IDs = 1883.VOGGUR.NAR-FIC,.5 ; 1883.VOGGUR.NAR-FIC,.6 ; 1883.VOGGUR.NAR-FIC,.7
 # text = Vöggur karlinn vatnar borg, Vögg þó flestir gleyma; enga gleði, enga sorg á hans líf að geyma.
 1	Vöggur	vöggur	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	3	nsubj	_	IFD_tag=nken-s
 2	karlinn	karl	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	appos	_	IFD_tag=nkeng
 3	vatnar	vatna	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
 4	borg	borg	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	3	obj	_	IFD_tag=nveo|SpaceAfter=No
 5	,	,	PUNCT	.	_	3	punct	_	IFD_tag=,
-6	Vögg	vöggur	NOUN	N-A	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	9	obj	_	IFD_tag=nkeþ-s
+6	Vögg	vöggur	NOUN	N-A	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	9	obj	_	IFD_tag=nken-s
 7	þó	þó	ADV	ADV	_	9	advmod	_	IFD_tag=aa
 8	flestir	margur	ADJ	QS-N	Case=Nom|Definite=Ind|Degree=Sup|Gender=Masc|Number=Plur	9	nsubj	_	IFD_tag=lkfnse
 9	gleyma	gleyma	VERB	VBPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0|SpaceAfter=No
@@ -121,7 +121,7 @@
 21	.	.	PUNCT	.	_	20	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,6.32013
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.8
+# X_ID = 1883.VOGGUR.NAR-FIC,.8
 # text = Það er eigi gott að vita, hvort vísan var gerð um Hans Vögg eða hún var gamall húsgangur.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	4	expl	_	IFD_tag=fphen
 2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3en
@@ -145,7 +145,7 @@
 20	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,7.32014
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.9 ; 1883.VOGGUR.NAR-FIC,.10
+# X_IDs = 1883.VOGGUR.NAR-FIC,.9 ; 1883.VOGGUR.NAR-FIC,.10
 # text = Hitt var víst, að hún átti ósköp vel við Hans; hann var kallaður Vöggur af því hann vaggaði dálítið út á hliðarnar, kannske reyndar til að hvíla hendurnar á víxl, undir vatnsfötunum, því hann var orðinn gamall og farinn.
 1	Hitt	hinn	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	3	nsubj	_	IFD_tag=fahen
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3eþ
@@ -153,8 +153,8 @@
 4	,	,	PUNCT	,	_	3	punct	_	IFD_tag=,
 5	að	að	SCONJ	C	_	7	mark	_	IFD_tag=c
 6	hún	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Prs	7	nsubj	_	IFD_tag=fpven
-7	átti	eiga	VERB	VBDI	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	IFD_tag=svg3en
-8	ósköp	ósköp	ADV	ADV	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	7	advmod	_	IFD_tag=nhfo
+7	átti	eiga	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	ccomp	_	IFD_tag=sfg3eþ
+8	ósköp	ósköp	ADV	ADV	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	7	advmod	_	IFD_tag=nhfn
 9	vel	vel	ADV	ADV	_	8	advmod	_	IFD_tag=aa
 10	við	við	ADP	P	_	11	case	_	IFD_tag=ao
 11	Hans	hans	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	7	obl	_	IFD_tag=nkeo-s|SpaceAfter=No
@@ -194,7 +194,7 @@
 45	.	.	PUNCT	.	_	15	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,8.32015
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.11 ; 1883.VOGGUR.NAR-FIC,.12
+# X_IDs = 1883.VOGGUR.NAR-FIC,.11 ; 1883.VOGGUR.NAR-FIC,.12
 # text = Hans hafði aldrei verið fríður sýnum, jafnvel ekki í æsku sinni, og ekki fríkkaði hann með aldrinum eins og að líkindum lætur.
 1	Hans	hans	PROPN	NPR-N	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	2	nsubj	_	IFD_tag=fpkee
 2	hafði	hafa	AUX	HVDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -223,7 +223,7 @@
 25	.	.	PUNCT	.	_	16	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,9.32016
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.13 ; 1883.VOGGUR.NAR-FIC,.14
+# X_IDs = 1883.VOGGUR.NAR-FIC,.13 ; 1883.VOGGUR.NAR-FIC,.14
 # text = Nú var hann kominn yfir fimmtugt, var langleitur og toginleitur, óliðlegur í vexti og orðinn lotinn í herðum, eins og flestir vatnskarlar verða, af því að líta alltaf niður fyrir sig, til þess að gá að, hvort ekki hellist úr fötunum.
 1	Nú	nú	ADV	ADV	_	4	advmod	_	IFD_tag=aa
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3eþ
@@ -275,7 +275,7 @@
 48	.	.	PUNCT	.	_	15	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,10.32017
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.15 ; 1883.VOGGUR.NAR-FIC,.16 ; 1883.VOGGUR.NAR-FIC,.17
+# X_IDs = 1883.VOGGUR.NAR-FIC,.15 ; 1883.VOGGUR.NAR-FIC,.16 ; 1883.VOGGUR.NAR-FIC,.17
 # text = Og með aldrinum var göngulag hans orðið hið sama, hvort hann hélt á vatnsfötunum eða ekki; þegar hann gekk í na á sunnudögum, en það gerði hann alltaf, þá gekk hann lotinn í herðum, álútur og hélt frá sér handleggjunum, eins og hann bæri vatnsfötur í báðum höndum.
 1	Og	og	CCONJ	CONJ	_	7	cc	_	IFD_tag=c
 2	með	með	ADP	P	_	3	case	_	IFD_tag=aþ
@@ -334,7 +334,7 @@
 55	.	.	PUNCT	.	_	42	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,11.32018
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.18 ; 1883.VOGGUR.NAR-FIC,.19 ; 1883.VOGGUR.NAR-FIC,.20
+# X_IDs = 1883.VOGGUR.NAR-FIC,.18 ; 1883.VOGGUR.NAR-FIC,.19 ; 1883.VOGGUR.NAR-FIC,.20
 # text = Hans hafði verið rauðhærður í æsku, en nú var hárið orðið grátt, og af því Hans var ekki vanur að greiða sér á hverjum degi, þá hékk hárið í hrokknum, rauðgráum druslum niður á ennið og niður fyrir augun.
 1	Hans	hans	PROPN	NPR-N	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	2	nsubj	_	IFD_tag=fpkee
 2	hafði	hafa	AUX	HVDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -353,7 +353,7 @@
 15	og	og	CCONJ	CONJ	_	30	cc	_	IFD_tag=c
 16	af	af	ADP	P	_	17	case	_	IFD_tag=aþ
 17	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	30	obl	_	IFD_tag=fpheþ
-18	Hans	hans	PROPN	NPR-N	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	21	nsubj	_	IFD_tag=fpkeo
+18	Hans	hans	PROPN	NPR-N	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	21	nsubj	_	IFD_tag=nkeþ-s
 19	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	21	cop	_	IFD_tag=sfg3eþ
 20	ekki	ekki	ADV	NEG	_	21	advmod	_	IFD_tag=aa
 21	vanur	vanur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	17	ccomp	_	IFD_tag=lkensf
@@ -368,10 +368,10 @@
 30	hékk	hanga	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
 31	hárið	hár	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	30	nsubj	_	IFD_tag=nheng
 32	í	í	ADP	P	_	36	case	_	IFD_tag=aþ
-33	hrokknum	hrekja	VERB	VAN-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	36	amod	_	IFD_tag=lvfþsf|SpaceAfter=No
+33	hrokknum	hrekja	VERB	VAN-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	36	amod	_	IFD_tag=lkfþsf|SpaceAfter=No
 34	,	,	PUNCT	,	_	33	punct	_	IFD_tag=,
-35	rauðgráum	rauðgrár	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	33	amod	_	IFD_tag=lvfþsf
-36	druslum	drusla	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	30	obl	_	IFD_tag=nvfþ
+35	rauðgráum	rauðgrár	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	33	amod	_	IFD_tag=lkfþsf
+36	druslum	drusla	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	30	obl	_	IFD_tag=nkfþ
 37	niður	niður	ADP	RP	_	39	compound:prt	_	IFD_tag=aa
 38	á	á	ADP	P	_	39	case	_	IFD_tag=ao
 39	ennið	enni	NOUN	N-A	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	30	obl	_	IFD_tag=nheog
@@ -382,7 +382,7 @@
 44	.	.	PUNCT	.	_	30	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,12.32019
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.21 ; 1883.VOGGUR.NAR-FIC,.22 ; 1883.VOGGUR.NAR-FIC,.23 ; 1883.VOGGUR.NAR-FIC,.24
+# X_IDs = 1883.VOGGUR.NAR-FIC,.21 ; 1883.VOGGUR.NAR-FIC,.22 ; 1883.VOGGUR.NAR-FIC,.23 ; 1883.VOGGUR.NAR-FIC,.24
 # text = Miklum skeggvexti hafði Hans aldrei átt að fagna, enda rækti hann ekki skegg sitt mjög; vangaskegg hafði hann aldrei fengið, en á hökunni og efri vörinni héngu skeggtoppar, sem nú voru orðnir hvítir.
 1	Miklum	mikill	ADJ	Q-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	IFD_tag=lkeþsf
 2	skeggvexti	skeggvöxtur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	6	obj	_	IFD_tag=nkeþ
@@ -424,7 +424,7 @@
 38	.	.	PUNCT	.	_	30	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,13.32020
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.25
+# X_ID = 1883.VOGGUR.NAR-FIC,.25
 # text = Hans var vanur að klippa dálítið af þeim, þegar honum þóttu þeir vera orðnir of langir.
 1	Hans	hans	PROPN	NPR-N	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	12	nsubj	_	IFD_tag=fpkee
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	cop	_	IFD_tag=sfg3eþ
@@ -446,7 +446,7 @@
 18	.	.	PUNCT	.	_	12	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,14.32021
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.26 ; 1883.VOGGUR.NAR-FIC,.27 ; 1883.VOGGUR.NAR-FIC,.28 ; 1883.VOGGUR.NAR-FIC,.29
+# X_IDs = 1883.VOGGUR.NAR-FIC,.26 ; 1883.VOGGUR.NAR-FIC,.27 ; 1883.VOGGUR.NAR-FIC,.28 ; 1883.VOGGUR.NAR-FIC,.29
 # text = Hans gamli var einkennilegur að mörgu leyti; hann átti aldrei illt við nokkurn mann og lifði sáttur við allan heiminn, en þar með er líka allt sagt, sem hægt var að segja um sambúð hans við mennina.
 1	Hans	hans	PROPN	NPR-N	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	7	nsubj	_	IFD_tag=fpkee
 2	gamli	gamall	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	1	amod	_	IFD_tag=lkenvf
@@ -491,7 +491,7 @@
 41	.	.	PUNCT	.	_	29	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,15.32022
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.30
+# X_ID = 1883.VOGGUR.NAR-FIC,.30
 # text = Hann hafði aldrei átt nokkurn vin eða trúnaðarmann, svo menn vissu, og aldrei verið við ástir kenndur.
 1	Hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	4	nsubj	_	IFD_tag=fpken
 2	hafði	hafa	AUX	HVDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	IFD_tag=sfg3eþ
@@ -515,7 +515,7 @@
 20	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,16.32023
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.31
+# X_ID = 1883.VOGGUR.NAR-FIC,.31
 # text = Eiginlega tók enginn lifandi maður eftir Hans.
 1	Eiginlega	eiginlega	ADV	ADV	_	2	advmod	_	IFD_tag=aa
 2	tók	taka	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -523,11 +523,11 @@
 4	lifandi	lifa	VERB	VAG	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	IFD_tag=lkenof
 5	maður	maður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nsubj	_	IFD_tag=nken
 6	eftir	eftir	ADP	P	_	7	case	_	IFD_tag=ao
-7	Hans	hans	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	2	obl	_	IFD_tag=nkeþ-s|SpaceAfter=No
+7	Hans	hans	PROPN	NPR-D	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	obl	_	IFD_tag=nkeo-s|SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,17.32024
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.32 ; 1883.VOGGUR.NAR-FIC,.33
+# X_IDs = 1883.VOGGUR.NAR-FIC,.32 ; 1883.VOGGUR.NAR-FIC,.33
 # text = Vinnukonurnar í húsum þeim, sem Hans bar vatn til, skoðuðu Hans eins og nokkurs konar lægri veru, sem ekki væri orðum eyðandi við; þær köstuðu til hans matarbita eftir skipun húsmóðurinnar.
 1	Vinnukonurnar	vinnukona	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Fem|Number=Plur	12	nsubj	_	IFD_tag=nvfng
 2	í	í	ADP	P	_	3	case	_	IFD_tag=aþ
@@ -542,12 +542,12 @@
 11	,	,	PUNCT	,	_	12	punct	_	IFD_tag=,
 12	skoðuðu	skoða	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ
 13	Hans	hans	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	12	obj	_	IFD_tag=nkeo-s
-14	eins	eins	ADV	ADVR	Case=Gen|Gender=Masc|Number=Sing|NumType=Card	12	advmod	_	IFD_tag=tfkee
+14	eins	eins	ADV	ADVR	_	12	advmod	_	IFD_tag=aa
 15	og	og	ADP	P	_	19	case	_	IFD_tag=c
 16	nokkurs	nokkur	ADJ	Q-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Ind	17	amod	_	IFD_tag=fokee
 17	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	19	nmod:poss	_	IFD_tag=nkee
 18	lægri	lágur	ADJ	ADJR-A	Case=Gen|Definite=Def|Degree=Cmp|Gender=Fem|Number=Sing	19	amod	_	IFD_tag=lveevm
-19	veru	vera	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	14	obl	_	IFD_tag=nveo|SpaceAfter=No
+19	veru	vera	NOUN	N-A	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	14	obl	_	IFD_tag=nvee|SpaceAfter=No
 20	,	,	PUNCT	,	_	19	punct	_	IFD_tag=,
 21	sem	sem	SCONJ	C	_	25	mark	_	IFD_tag=ct
 22	ekki	ekki	ADV	NEG	_	25	advmod	_	IFD_tag=aa
@@ -561,19 +561,19 @@
 30	til	til	ADP	P	_	31	case	_	IFD_tag=ae
 31	hans	hann	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	29	obl	_	IFD_tag=fpkee
 32	matarbita	matarbiti	NOUN	NS-A	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	29	obj	_	IFD_tag=nkfe
-33	eftir	eftir	ADP	P	_	34	case	_	IFD_tag=ao
+33	eftir	eftir	ADP	P	_	34	case	_	IFD_tag=aþ
 34	skipun	skipun	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	29	obl	_	IFD_tag=nveþ
 35	húsmóðurinnar	húsmóðir	NOUN	N-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	34	nmod:poss	_	IFD_tag=nveeg|SpaceAfter=No
 36	.	.	PUNCT	.	_	29	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,18.32025
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.34 ; 1883.VOGGUR.NAR-FIC,.35 ; 1883.VOGGUR.NAR-FIC,.36
+# X_IDs = 1883.VOGGUR.NAR-FIC,.34 ; 1883.VOGGUR.NAR-FIC,.35 ; 1883.VOGGUR.NAR-FIC,.36
 # text = Hans tók við, þakkaði fyrir og borðaði þegjandi.
 1	Hans	hans	PROPN	NPR-N	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	2	nsubj	_	IFD_tag=fpkee
 2	tók	taka	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
 3	við	við	ADP	RP	_	2	compound:prt	_	IFD_tag=aa|SpaceAfter=No
 4	,	,	PUNCT	.	_	2	punct	_	IFD_tag=,
-5	þakkaði	þakka	VERB	VBDI	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
+5	þakkaði	þakka	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
 6	fyrir	fyrir	ADP	RP	_	5	compound:prt	_	IFD_tag=ao
 7	og	og	CCONJ	CONJ	_	8	cc	_	IFD_tag=c
 8	borðaði	borða	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
@@ -581,7 +581,7 @@
 10	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,19.32026
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.37
+# X_ID = 1883.VOGGUR.NAR-FIC,.37
 # text = Húsbændurnir borguðu honum vatnsburðinn á vissum tímum.
 1	Húsbændurnir	húsbóndi	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Masc|Number=Plur	2	nsubj	_	IFD_tag=nkfng
 2	borguðu	borga	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ
@@ -593,7 +593,7 @@
 8	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,20.32027
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.38
+# X_ID = 1883.VOGGUR.NAR-FIC,.38
 # text = Svo var öllum hans viðskiptum við heiminn lokið, að undanteknum hestum og götustrákum.
 1	Svo	svo	ADV	ADV	_	8	advmod	_	IFD_tag=aa
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	IFD_tag=sfg3eþ
@@ -612,7 +612,7 @@
 15	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,21.32028
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.39
+# X_ID = 1883.VOGGUR.NAR-FIC,.39
 # text = Engum datt í hug, að vert væri að reyna til að kynnast honum, þekkja hann eða þíða burtu klakann, sem frosinn var utan um þessa vatnskarlssál, eins og föturnar hans á vetrardegi.
 1	Engum	enginn	ADJ	Q-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Ind	2	nsubj	_	IFD_tag=fokeþ
 2	datt	detta	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -637,12 +637,12 @@
 21	klakann	klaki	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	19	obj	_	IFD_tag=nkeog|SpaceAfter=No
 22	,	,	PUNCT	,	_	21	punct	_	IFD_tag=,
 23	sem	sem	SCONJ	C	_	24	mark	_	IFD_tag=ct
-24	frosinn	frjósa	VERB	VAN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	21	acl:relcl	_	IFD_tag=sþgken
+24	frosinn	frjósa	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	21	acl:relcl	_	IFD_tag=lkensf
 25	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	cop	_	IFD_tag=sfg3eþ
 26	utan	utan	ADV	ADV	_	29	advmod	_	IFD_tag=aa
 27	um	um	ADP	P	_	29	case	_	IFD_tag=ao
-28	þessa	þessi	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	29	det	_	IFD_tag=feheo
-29	vatnskarlssál	vatnskarlssál	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	24	obl	_	IFD_tag=nveo|SpaceAfter=No
+28	þessa	þessi	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Ind	29	det	_	IFD_tag=foheo
+29	vatnskarlssál	vatnskarlssál	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	24	obl	_	IFD_tag=nheo|SpaceAfter=No
 30	,	,	PUNCT	,	_	24	punct	_	IFD_tag=,
 31	eins	eins	ADV	ADVR	_	24	advmod	_	IFD_tag=aa
 32	og	og	ADP	P	_	33	case	_	IFD_tag=c
@@ -653,7 +653,7 @@
 37	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,22.32029
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.40 ; 1883.VOGGUR.NAR-FIC,.41
+# X_IDs = 1883.VOGGUR.NAR-FIC,.40 ; 1883.VOGGUR.NAR-FIC,.41
 # text = Nei, það datt engum í hug, sízt af öllum Hans sjálfum; vaninn var orðinn eðli hans.
 1	Nei	nei	INTJ	INTJ	_	4	discourse	_	IFD_tag=au|SpaceAfter=No
 2	,	,	PUNCT	,	_	4	punct	_	IFD_tag=,
@@ -665,8 +665,8 @@
 8	,	,	PUNCT	,	_	4	punct	_	IFD_tag=,
 9	sízt	síst	ADJ	QS	Degree=Sup	11	obl	_	IFD_tag=aae
 10	af	af	ADP	P	_	11	case	_	IFD_tag=aþ
-11	öllum	allur	ADJ	Q-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Ind	4	conj	_	IFD_tag=fokfþ
-12	Hans	hans	PROPN	NPR-D	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	11	nsubj	_	IFD_tag=fpkee
+11	öllum	allur	ADJ	Q-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Ind	4	conj	_	IFD_tag=fokeþ
+12	Hans	hans	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	11	nsubj	_	IFD_tag=nkeþ-s
 13	sjálfum	sjálfur	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Dem	12	appos	_	IFD_tag=fbkeþ|SpaceAfter=No
 14	;	;	PUNCT	.	_	4	punct	_	IFD_tag=;
 15	vaninn	vani	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	17	nsubj	_	IFD_tag=nkeng
@@ -677,7 +677,7 @@
 20	.	.	PUNCT	.	_	17	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,23.32030
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.42
+# X_ID = 1883.VOGGUR.NAR-FIC,.42
 # text = En hefði nokkur mátt líta inn í sál hans, mundi hann að líkindum hafa komizt að raun um að hún fyrir innan klakann var orðin eins kreppt af vatnsburðinum og hendurnar hans.
 1	En	en	CCONJ	CONJ	_	16	cc	_	IFD_tag=c
 2	hefði	hafa	AUX	HVDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	IFD_tag=svg3eþ
@@ -685,8 +685,8 @@
 4	mátt	mega	AUX	MDN	VerbForm=Sup|Voice=Act	5	aux	_	IFD_tag=ssg
 5	líta	líta	VERB	VB	VerbForm=Inf|Voice=Act	16	advcl	_	IFD_tag=sng
 6	inn	inn	ADP	RP	_	5	compound:prt	_	IFD_tag=aa
-7	í	í	ADP	P	_	8	case	_	IFD_tag=aþ
-8	sál	sál	NOUN	N-A	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	5	obl	_	IFD_tag=nveþ
+7	í	í	ADP	P	_	8	case	_	IFD_tag=ao
+8	sál	sál	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	5	obl	_	IFD_tag=nveo
 9	hans	hann	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	8	nmod:poss	_	IFD_tag=fpkee|SpaceAfter=No
 10	,	,	PUNCT	,	_	16	punct	_	IFD_tag=,
 11	mundi	munu	AUX	MDDS	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	aux	_	IFD_tag=sfg3eþ
@@ -715,14 +715,14 @@
 34	.	.	PUNCT	.	_	16	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,24.32031
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.43
+# X_ID = 1883.VOGGUR.NAR-FIC,.43
 # text = En hestarnir í Reykjavík vissu það betur en allir menn, að þrátt fyrir allan vanans klaka var sálin hans Hans Vöggs ekki orðin eins köld og hendurnar.
 1	En	en	CCONJ	CONJ	_	5	cc	_	IFD_tag=c
 2	hestarnir	hestur	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Masc|Number=Plur	5	nsubj	_	IFD_tag=nkfng
 3	í	í	ADP	P	_	4	case	_	IFD_tag=aþ
 4	Reykjavík	reykjavík	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	5	obl	_	IFD_tag=nveþ-s
 5	vissu	vita	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ
-6	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	5	obj	_	IFD_tag=fpheo
+6	það	það	PRON	PRO-A	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	5	obj	_	IFD_tag=fphen
 7	betur	vel	ADV	ADVR	Degree=Cmp	5	advmod	_	IFD_tag=aam
 8	en	en	ADP	P	_	10	case	_	IFD_tag=c
 9	allir	allur	ADJ	Q-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Ind	10	amod	_	IFD_tag=fokfn
@@ -748,7 +748,7 @@
 29	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,25.32032
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.44 ; 1883.VOGGUR.NAR-FIC,.45 ; 1883.VOGGUR.NAR-FIC,.46 ; 1883.VOGGUR.NAR-FIC,.47 ; 1883.VOGGUR.NAR-FIC,.48 ; 1883.VOGGUR.NAR-FIC,.49
+# X_IDs = 1883.VOGGUR.NAR-FIC,.44 ; 1883.VOGGUR.NAR-FIC,.45 ; 1883.VOGGUR.NAR-FIC,.46 ; 1883.VOGGUR.NAR-FIC,.47 ; 1883.VOGGUR.NAR-FIC,.48 ; 1883.VOGGUR.NAR-FIC,.49
 # text = Það er sorgleg sjón að sjá útigangshestana í Reykjavík á veturna; þeir hrekjast um fjöruna eða göturnar skinhoraðir, þyrstir og athvarfslausir; enginn skiptir sér hið minnsta af þeim, og enginn veit jafnvel, hver á þá; í stormunum og byljunum híma þeir nötrandi undir húsveggjunum eða láta fyrir berast á bersvæði, hálfdauðir úr sulti og kulda.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	4	expl	_	IFD_tag=fphen
 2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3en
@@ -767,7 +767,7 @@
 15	um	um	ADP	P	_	16	case	_	IFD_tag=ao
 16	fjöruna	fjara	NOUN	N-A	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	14	obl	_	IFD_tag=nveog
 17	eða	eða	CCONJ	CONJ	_	18	cc	_	IFD_tag=c
-18	göturnar	gata	NOUN	NS-A	Case=Nom|Definite=Def|Gender=Fem|Number=Plur	16	conj	_	IFD_tag=nvfng
+18	göturnar	gata	NOUN	NS-A	Case=Acc|Definite=Def|Gender=Fem|Number=Plur	16	conj	_	IFD_tag=nvfog
 19	skinhoraðir	skinhoraður	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	14	amod	_	IFD_tag=lkfnsf|SpaceAfter=No
 20	,	,	PUNCT	,	_	19	punct	_	IFD_tag=,
 21	þyrstir	þyrstur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	19	amod	_	IFD_tag=lkfnsf
@@ -805,7 +805,7 @@
 53	fyrir	fyrir	ADP	RP	_	54	compound:prt	_	IFD_tag=aa
 54	berast	bera	VERB	VB	VerbForm=Inf|Voice=Mid	52	acl	_	IFD_tag=snm
 55	á	á	ADP	P	_	56	case	_	IFD_tag=ao
-56	bersvæði	bersvæði	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	54	obl	_	IFD_tag=nheo|SpaceAfter=No
+56	bersvæði	bersvæði	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	54	obl	_	IFD_tag=nheþ|SpaceAfter=No
 57	,	,	PUNCT	,	_	54	punct	_	IFD_tag=,
 58	hálfdauðir	hálfdauður	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	54	amod	_	IFD_tag=lkfnsf
 59	úr	úr	ADP	P	_	60	case	_	IFD_tag=aþ
@@ -815,10 +815,10 @@
 63	.	.	PUNCT	.	_	52	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,26.32033
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.50 ; 1883.VOGGUR.NAR-FIC,.51 ; 1883.VOGGUR.NAR-FIC,.52 ; 1883.VOGGUR.NAR-FIC,.53 ; 1883.VOGGUR.NAR-FIC,.54
+# X_IDs = 1883.VOGGUR.NAR-FIC,.50 ; 1883.VOGGUR.NAR-FIC,.51 ; 1883.VOGGUR.NAR-FIC,.52 ; 1883.VOGGUR.NAR-FIC,.53 ; 1883.VOGGUR.NAR-FIC,.54
 # text = Þessa hesta tók Hans Vöggur að sér; hann vatnaði öllum, sem hann náði í, klappaði þeim og klóraði undir eyrunum og setti upp við þá langar hrókaræður, sem enginn skildi neitt í nema hann og þeir.
 1	Þessa	þessi	DET	D-A	Case=Acc|Gender=Masc|Number=Plur|PronType=Dem	2	det	_	IFD_tag=fakfo
-2	hesta	hestur	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	3	obj	_	IFD_tag=nkfo
+2	hesta	hestur	NOUN	NS-A	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	3	obj	_	IFD_tag=nkfe
 3	tók	taka	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
 4	Hans	hans	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	3	nsubj	_	IFD_tag=nken-s
 5	Vöggur	vöggur	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	4	flat:name	_	IFD_tag=nken-s
@@ -837,7 +837,7 @@
 18	klappaði	klappa	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
 19	þeim	það	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Prs	18	obj	_	IFD_tag=fpkfþ
 20	og	og	CCONJ	CONJ	_	21	cc	_	IFD_tag=c
-21	klóraði	klóra	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
+21	klóraði	klóra	VERB	VBDI	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
 22	undir	undir	ADP	P	_	23	case	_	IFD_tag=aþ
 23	eyrunum	eyra	NOUN	NS-D	Case=Dat|Definite=Def|Gender=Neut|Number=Plur	21	obl	_	IFD_tag=nhfþg
 24	og	og	CCONJ	CONJ	_	25	cc	_	IFD_tag=c
@@ -860,7 +860,7 @@
 41	.	.	PUNCT	.	_	25	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,27.32034
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.55
+# X_ID = 1883.VOGGUR.NAR-FIC,.55
 # text = Af þessu varð hann svo ástsæll í þeirra hóp, að þeir stundum fylgdu honum eftir flokkum saman um göturnar.
 1	Af	af	ADP	P	_	2	case	_	IFD_tag=aþ
 2	þessu	þessi	DET	D-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	3	obl	_	IFD_tag=faheþ
@@ -885,7 +885,7 @@
 21	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,28.32035
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.56
+# X_ID = 1883.VOGGUR.NAR-FIC,.56
 # text = Aldrei var Hans Vöggur kátari eða ánægðari, en þegar svo bar undir.
 1	Aldrei	aldrei	ADV	ADV	_	5	advmod	_	IFD_tag=aa
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3eþ
@@ -903,14 +903,14 @@
 14	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,29.32036
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.57 ; 1883.VOGGUR.NAR-FIC,.58 ; 1883.VOGGUR.NAR-FIC,.59
+# X_IDs = 1883.VOGGUR.NAR-FIC,.57 ; 1883.VOGGUR.NAR-FIC,.58 ; 1883.VOGGUR.NAR-FIC,.59
 # text = Hann raulaði þá vísuna sína nokkuð hærra en venjulegt var, vaggaði dálítið meira út á hliðarnar og var brosleitur út undir eyru.
 1	Hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	2	nsubj	_	IFD_tag=fpken
 2	raulaði	raula	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
 3	þá	þá	ADV	ADV	_	2	advmod	_	IFD_tag=aa
 4	vísuna	vísa	NOUN	N-A	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	2	obj	_	IFD_tag=nveog
 5	sína	sinn	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Prs	4	nmod:poss	_	IFD_tag=feveo
-6	nokkuð	nokkur	ADJ	Q-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Ind	7	obl	_	IFD_tag=foheo
+6	nokkuð	nokkur	ADJ	Q-A	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	7	obl	_	IFD_tag=fohen
 7	hærra	hátt	ADV	ADVR	Degree=Cmp	2	advmod	_	IFD_tag=aam
 8	en	en	ADP	P	_	9	case	_	IFD_tag=c
 9	venjulegt	venjulegur	ADJ	ADJ-A	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	7	obl	_	IFD_tag=lhensf
@@ -931,7 +931,7 @@
 24	.	.	PUNCT	.	_	23	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,30.32037
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.60
+# X_ID = 1883.VOGGUR.NAR-FIC,.60
 # text = Líkt var farið sambúð hans við götustrákana.
 1	Líkt	líkt	ADV	ADV	_	3	advmod	_	IFD_tag=aa
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3eþ
@@ -943,7 +943,7 @@
 8	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,31.32038
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.61
+# X_ID = 1883.VOGGUR.NAR-FIC,.61
 # text = Það gekk sú saga um Hans, að þegar hann var nýorðinn vatnskarl, hefðu götustrákarnir farið að hrekkja hann og erta, eins og hina vatnskarlana og vatnskerlingarnar.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	2	expl	_	IFD_tag=fphen
 2	gekk	ganga	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -977,7 +977,7 @@
 30	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,32.32039
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.62 ; 1883.VOGGUR.NAR-FIC,.63 ; 1883.VOGGUR.NAR-FIC,.64
+# X_IDs = 1883.VOGGUR.NAR-FIC,.62 ; 1883.VOGGUR.NAR-FIC,.63 ; 1883.VOGGUR.NAR-FIC,.64
 # text = Þeir köstuðu í hann snjókúlum, helltu úr fötunum fyrir honum, og kölluðu eftir honum ýms háðsyrði.
 1	Þeir	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Prs	2	nsubj	_	IFD_tag=fpkfn
 2	köstuðu	kasta	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ
@@ -995,12 +995,12 @@
 14	kölluðu	kalla	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
 15	eftir	eftir	ADP	P	_	16	case	_	IFD_tag=aþ
 16	honum	hann	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Prs	14	obl	_	IFD_tag=fpkeþ
-17	ýms	ýmiss	ADJ	Q-A	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	18	amod	_	IFD_tag=lheoof
+17	ýms	ýmiss	ADJ	Q-A	Foreign=Yes	18	amod	_	IFD_tag=e
 18	háðsyrði	háðsyrði	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	14	obj	_	IFD_tag=nhfo|SpaceAfter=No
 19	.	.	PUNCT	.	_	14	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,33.32040
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.65 ; 1883.VOGGUR.NAR-FIC,.66 ; 1883.VOGGUR.NAR-FIC,.67 ; 1883.VOGGUR.NAR-FIC,.68
+# X_IDs = 1883.VOGGUR.NAR-FIC,.65 ; 1883.VOGGUR.NAR-FIC,.66 ; 1883.VOGGUR.NAR-FIC,.67 ; 1883.VOGGUR.NAR-FIC,.68
 # text = Hans tók öllu þessu með mestu stillingu, og einu sinni, þegar ertingarnar og fúkyrðin keyrðu fram úr hófi, sagði hann við þá ofur rólega: " Þetta gerir ekkert til, blessuð börnin þurfa að leika sér".
 1	Hans	hans	PROPN	NPR-N	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	2	nsubj	_	IFD_tag=fpkee
 2	tók	taka	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1046,7 +1046,7 @@
 42	.	.	PUNCT	.	_	37	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,34.32041
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.69 ; 1883.VOGGUR.NAR-FIC,.70
+# X_IDs = 1883.VOGGUR.NAR-FIC,.69 ; 1883.VOGGUR.NAR-FIC,.70
 # text = Þó undarlegt kunni að virðast, sljákkaði í strákum, og smátt og smátt hættu þeir alveg að erta Hans gamla.
 1	Þó	þó	ADP	P	_	3	case	_	IFD_tag=aa
 2	undarlegt	undarlegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	IFD_tag=lhensf
@@ -1072,12 +1072,12 @@
 22	.	.	PUNCT	.	_	15	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,35.32042
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.71
+# X_ID = 1883.VOGGUR.NAR-FIC,.71
 # text = Og eftir ekki all-langan tíma kom þar, að það var skoðað hinn mesti ódrengskapur, að gera nokkuð á hluta hans.
 1	Og	og	CCONJ	CONJ	_	6	cc	_	IFD_tag=c
-2	eftir	eftir	ADP	P	_	5	case	_	IFD_tag=ao
+2	eftir	eftir	ADP	P	_	5	case	_	IFD_tag=aa
 3	ekki	ekki	ADV	NEG	_	5	advmod	_	IFD_tag=aa
-4	all-langan	alllangur	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	IFD_tag=lkeosf
+4	all-langan	alllangur	ADJ	ADJ-A	_	5	amod	_	IFD_tag=x
 5	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	6	obl	_	IFD_tag=nkeo
 6	kom	koma	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
 7	þar	þar	ADV	ADV	_	6	advmod	_	IFD_tag=aa|SpaceAfter=No
@@ -1099,7 +1099,7 @@
 23	.	.	PUNCT	.	_	6	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,36.32043
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.72 ; 1883.VOGGUR.NAR-FIC,.73
+# X_IDs = 1883.VOGGUR.NAR-FIC,.72 ; 1883.VOGGUR.NAR-FIC,.73
 # text = Hitt kom oft fyrir, að hann væri tekinn til þess að koma sáttum eða stundarfriði á milli götustrákanna og hinna vatnskarlanna og vatnskerlinganna, og þó hann hefði enga amtmannsskipun til þessa starfa, varð honum þó meira ágengt, en flestum sáttanefndarmönnum mundi hafa orðið.
 1	Hitt	hinn	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	2	nsubj	_	IFD_tag=fahen
 2	kom	koma	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1143,15 +1143,15 @@
 40	ágengt	áganga	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	36	aux	_	IFD_tag=lhensf|SpaceAfter=No
 41	,	,	PUNCT	,	_	36	punct	_	IFD_tag=,
 42	en	en	ADP	P	_	47	case	_	IFD_tag=c
-43	flestum	margur	ADJ	QS-D	Case=Dat|Definite=Ind|Degree=Sup|Gender=Fem|Number=Plur	47	nsubj	_	IFD_tag=lvfþse
-44	sáttanefndarmönnum	sáttanefndarmaður	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	43	conj	_	IFD_tag=nkfþ
+43	flestum	margur	ADJ	QS-D	Case=Dat|Definite=Ind|Degree=Sup|Gender=Neut|Number=Plur	47	nsubj	_	IFD_tag=lhfþse
+44	sáttanefndarmönnum	sáttanefndarmaður	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	43	conj	_	IFD_tag=nhfþ
 45	mundi	munu	AUX	MDDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	47	aux	_	IFD_tag=svg3eþ
 46	hafa	hafa	AUX	HV	VerbForm=Inf|Voice=Act	47	aux	_	IFD_tag=sng
 47	orðið	verða	VERB	RDN	VerbForm=Sup|Voice=Act	36	obl	_	IFD_tag=ssg|SpaceAfter=No
 48	.	.	PUNCT	.	_	36	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,37.32044
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.74
+# X_ID = 1883.VOGGUR.NAR-FIC,.74
 # text = Svo bar það til einn góðan veðurdag eftir nýárið, að Hans kom ekki með vatnið.
 1	Svo	svo	ADV	ADVR	_	2	advmod	_	IFD_tag=aa
 2	bar	bera	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1172,7 +1172,7 @@
 17	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,38.32045
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.75
+# X_ID = 1883.VOGGUR.NAR-FIC,.75
 # text = Vinnukonurnar urðu að sækja vatnið þann daginn, þó þær væru ekki viljugar á það.
 1	Vinnukonurnar	vinnukona	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Fem|Number=Plur	2	nsubj	_	IFD_tag=nvfng
 2	urðu	verða	VERB	RDDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ
@@ -1192,7 +1192,7 @@
 16	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,39.32046
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.76
+# X_ID = 1883.VOGGUR.NAR-FIC,.76
 # text = Engum kom til hugar að fara heim til Hans.
 1	Engum	enginn	ADJ	Q-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Ind	2	nsubj	_	IFD_tag=fokeþ
 2	kom	koma	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1206,7 +1206,7 @@
 10	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,40.32047
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.77
+# X_ID = 1883.VOGGUR.NAR-FIC,.77
 # text = Hann var vanur að skila sér aftur karlinn, undir eins og hann varð rólfær, þegar svo bar undir að hann dag og dag varð lasinn og gat ekki gegnt störfum sínum.
 1	Hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	3	nsubj	_	IFD_tag=fpken
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3eþ
@@ -1244,7 +1244,7 @@
 34	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,41.32048
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.78 ; 1883.VOGGUR.NAR-FIC,.79
+# X_IDs = 1883.VOGGUR.NAR-FIC,.78 ; 1883.VOGGUR.NAR-FIC,.79
 # text = Það datt kannske engum í hug, að Hans Vöggur væri meðal þeirra, sem fyrirheitið er gefið um: " Sjúkur var ég og þér vitjuðuð mín".
 1	Það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	2	obj	_	IFD_tag=fphen
 2	datt	detta	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1264,7 +1264,7 @@
 16	fyrirheitið	fyrirheit	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	18	nsubj	_	IFD_tag=nheng
 17	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	cop	_	IFD_tag=sfg3en
 18	gefið	gefa	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	13	acl:relcl	_	IFD_tag=sþghen
-19	um	um	ADP	P	_	18	obl	_	IFD_tag=aa|SpaceAfter=No
+19	um	um	ADP	P	_	18	obl	_	IFD_tag=ao|SpaceAfter=No
 20	:	:	PUNCT	,	_	18	punct	_	IFD_tag=:
 21	"	"	PUNCT	"	_	18	punct	_	IFD_tag="
 22	Sjúkur	sjúkur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	18	ccomp	_	IFD_tag=nken
@@ -1278,7 +1278,7 @@
 30	.	.	PUNCT	.	_	27	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,42.32049
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.80
+# X_ID = 1883.VOGGUR.NAR-FIC,.80
 # text = Hans var undantekning.
 1	Hans	hans	PROPN	NPR-N	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	3	nsubj	_	IFD_tag=fpkee
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3eþ
@@ -1286,7 +1286,7 @@
 4	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,43.32050
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.81 ; 1883.VOGGUR.NAR-FIC,.82
+# X_IDs = 1883.VOGGUR.NAR-FIC,.81 ; 1883.VOGGUR.NAR-FIC,.82
 # text = Það þurfti ekki að vitja um Hans, hann var vanur að skila sér.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	2	expl	_	IFD_tag=fphen
 2	þurfti	þurfa	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1305,7 +1305,7 @@
 15	.	.	PUNCT	.	_	11	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,44.32051
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.83
+# X_ID = 1883.VOGGUR.NAR-FIC,.83
 # text = En þegar hann kom ekki í þrjá daga, var næturvörðurinn sendur upp í kofann hjá Seli, sem Hans svaf í einsamall.
 1	En	en	CCONJ	CONJ	_	12	cc	_	IFD_tag=c
 2	þegar	þegar	ADP	P	_	4	case	_	IFD_tag=c
@@ -1333,7 +1333,7 @@
 24	.	.	PUNCT	.	_	12	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,45.32052
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.84 ; 1883.VOGGUR.NAR-FIC,.85
+# X_IDs = 1883.VOGGUR.NAR-FIC,.84 ; 1883.VOGGUR.NAR-FIC,.85
 # text = Næturvörðurinn kom aftur og sagði, að Hans væri dauður.
 1	Næturvörðurinn	næturvörður	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	2	nsubj	_	IFD_tag=nkeng
 2	kom	koma	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1348,7 +1348,7 @@
 11	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,46.32053
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.86 ; 1883.VOGGUR.NAR-FIC,.87
+# X_IDs = 1883.VOGGUR.NAR-FIC,.86 ; 1883.VOGGUR.NAR-FIC,.87
 # text = Þessi fregn flaug um allan bæinn og það var ekki talað um annað en Hans og dauða hans.
 1	Þessi	þessi	DET	D-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	IFD_tag=faven
 2	fregn	fregn	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	3	nsubj	_	IFD_tag=nven
@@ -1371,7 +1371,7 @@
 19	.	.	PUNCT	.	_	11	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,47.32054
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.88
+# X_ID = 1883.VOGGUR.NAR-FIC,.88
 # text = Allir fundu honum eitthvað til hóls.
 1	Allir	allur	ADJ	Q-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Ind	2	nsubj	_	IFD_tag=fokfn
 2	fundu	finna	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ
@@ -1382,7 +1382,7 @@
 7	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,48.32055
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.89
+# X_ID = 1883.VOGGUR.NAR-FIC,.89
 # text = Hann var einstök fyrirmynd allra vatnskarla, dyggur og iðjusamur og eftir því þakklátur fyrir allt, sem honum var gott gert.
 1	Hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	8	nsubj	_	IFD_tag=fpken
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	IFD_tag=sfg3eþ
@@ -1409,7 +1409,7 @@
 23	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,49.32056
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.90
+# X_ID = 1883.VOGGUR.NAR-FIC,.90
 # text = Og allar ræður manna enduðu með því, að það mundi verða langt þangað til annar eins vatnskarl fengist.
 1	Og	og	CCONJ	CONJ	_	5	cc	_	IFD_tag=c
 2	allar	allur	ADJ	Q-N	Case=Nom|Gender=Fem|Number=Plur|PronType=Ind	3	amod	_	IFD_tag=fovfn
@@ -1429,11 +1429,11 @@
 16	annar	annar	PRON	OTHER-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	18	det	_	IFD_tag=foken
 17	eins	eins	ADV	ADVR	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	18	advmod	_	IFD_tag=lkenof
 18	vatnskarl	vatnskarl	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	19	nsubj	_	IFD_tag=nken
-19	fengist	fá	VERB	VBDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Mid	12	obl	_	IFD_tag=svm3eþ|SpaceAfter=No
+19	fengist	fá	VERB	VBDS	VerbForm=Sup|Voice=Mid	12	obl	_	IFD_tag=ssm|SpaceAfter=No
 20	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,50.32057
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.91 ; 1883.VOGGUR.NAR-FIC,.92
+# X_IDs = 1883.VOGGUR.NAR-FIC,.91 ; 1883.VOGGUR.NAR-FIC,.92
 # text = Konurnar í húsum þeim, sem Hans bar vatn til, og meðal þeirra voru bæði frúr og maddömur, létu olíulampa loga í kofanum hjá Hans, meðan hann stóð uppi, og ein frúin gaf sálmabók til þess að leggja á brjóstið á honum.
 1	Konurnar	kona	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Fem|Number=Plur	21	nsubj	_	IFD_tag=nvfng
 2	í	í	ADP	P	_	3	case	_	IFD_tag=aþ
@@ -1456,7 +1456,7 @@
 19	maddömur	maddama	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	17	conj	_	IFD_tag=nvfn|SpaceAfter=No
 20	,	,	PUNCT	,	_	21	punct	_	IFD_tag=,
 21	létu	láta	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ
-22	olíulampa	olíulampi	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	23	nsubj	_	IFD_tag=nkfo
+22	olíulampa	olíulampi	NOUN	NS-A	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	23	nsubj	_	IFD_tag=nkeþ
 23	loga	loga	VERB	VB	VerbForm=Inf|Voice=Act	21	acl	_	IFD_tag=sng
 24	í	í	ADP	P	_	25	case	_	IFD_tag=aþ
 25	kofanum	kofi	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	23	obl	_	IFD_tag=nkeþg
@@ -1484,7 +1484,7 @@
 47	.	.	PUNCT	.	_	37	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,51.32058
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.93 ; 1883.VOGGUR.NAR-FIC,.94
+# X_IDs = 1883.VOGGUR.NAR-FIC,.93 ; 1883.VOGGUR.NAR-FIC,.94
 # text = Þar lá Hans á börunum í kofanum sínum og um allan kofann ljómaði slík birta frá olíulampanum, að Hans mundi hafa vaknað frá dauðum af undrun, ef hann hefði mátt.
 1	Þar	þar	ADV	ADV	_	2	advmod	_	IFD_tag=aa
 2	lá	liggja	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1521,7 +1521,7 @@
 33	.	.	PUNCT	.	_	13	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,52.32059
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.95
+# X_ID = 1883.VOGGUR.NAR-FIC,.95
 # text = Í lífinu hafði hann aldrei átt slíku ljósi að fagna.
 1	Í	í	ADP	P	_	2	case	_	IFD_tag=aþ
 2	lífinu	líf	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	6	obl	_	IFD_tag=nheþg
@@ -1536,7 +1536,7 @@
 11	.	.	PUNCT	.	_	6	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,53.32060
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.96 ; 1883.VOGGUR.NAR-FIC,.97
+# X_IDs = 1883.VOGGUR.NAR-FIC,.96 ; 1883.VOGGUR.NAR-FIC,.97
 # text = Og á brjósti hans lá sálmabókin logagyllta; lifandi hefði enginn látið hann snerta svo fallega bók.
 1	Og	og	CCONJ	CONJ	_	5	cc	_	IFD_tag=c
 2	á	á	ADP	P	_	3	case	_	IFD_tag=aþ
@@ -1544,7 +1544,7 @@
 4	hans	hann	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	3	nmod:poss	_	IFD_tag=fpkee
 5	lá	liggja	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
 6	sálmabókin	sálmabók	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	5	nsubj	_	IFD_tag=nveng
-7	logagyllta	logagylltur	ADJ	ADJ-N	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	IFD_tag=lveosf|SpaceAfter=No
+7	logagyllta	logagylltur	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	IFD_tag=lvenvf|SpaceAfter=No
 8	;	;	PUNCT	.	_	5	punct	_	IFD_tag=;
 9	lifandi	lifa	VERB	VAG	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	12	advcl	_	IFD_tag=lkenof
 10	hefði	hafa	AUX	HVDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	aux	_	IFD_tag=svg3eþ
@@ -1558,7 +1558,7 @@
 18	.	.	PUNCT	.	_	12	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,54.32061
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.98 ; 1883.VOGGUR.NAR-FIC,.99
+# X_IDs = 1883.VOGGUR.NAR-FIC,.98 ; 1883.VOGGUR.NAR-FIC,.99
 # text = Nú var Hans orðinn hreinn og fínn, hann var dauður.
 1	Nú	nú	ADV	ADV	_	4	advmod	_	IFD_tag=aa
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3eþ
@@ -1574,7 +1574,7 @@
 12	.	.	PUNCT	.	_	11	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,55.32062
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.100 ; 1883.VOGGUR.NAR-FIC,.101
+# X_IDs = 1883.VOGGUR.NAR-FIC,.100 ; 1883.VOGGUR.NAR-FIC,.101
 # text = Hans lét ekki mikið eftir sig af þessa heims gæðum, og það urðu mestu vandræði með útförina.
 1	Hans	hann	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	2	nmod:poss	_	IFD_tag=fpkee
 2	lét	láta	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1597,14 +1597,14 @@
 19	.	.	PUNCT	.	_	14	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,56.32063
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.102 ; 1883.VOGGUR.NAR-FIC,.103 ; 1883.VOGGUR.NAR-FIC,.104
+# X_IDs = 1883.VOGGUR.NAR-FIC,.102 ; 1883.VOGGUR.NAR-FIC,.103 ; 1883.VOGGUR.NAR-FIC,.104
 # text = Menn fóru að tala um samskot, en úr því varð þó ekkert; enginn vildi byrja.
 1	Menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	2	nsubj	_	IFD_tag=nkfn
 2	fóru	fara	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ
 3	að	að	PART	TO	_	4	mark	_	IFD_tag=cn
 4	tala	tala	VERB	VB	VerbForm=Inf|Voice=Act	2	acl	_	IFD_tag=sng
 5	um	um	ADP	P	_	6	case	_	IFD_tag=ao
-6	samskot	samskot	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	4	obl	_	IFD_tag=nheo|SpaceAfter=No
+6	samskot	samskot	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	4	obl	_	IFD_tag=nhfo|SpaceAfter=No
 7	,	,	PUNCT	.	_	2	punct	_	IFD_tag=,
 8	en	en	CCONJ	CONJ	_	11	cc	_	IFD_tag=c
 9	úr	úr	ADP	P	_	10	case	_	IFD_tag=aþ
@@ -1619,7 +1619,7 @@
 18	.	.	PUNCT	.	_	17	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,57.32064
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.105 ; 1883.VOGGUR.NAR-FIC,.106 ; 1883.VOGGUR.NAR-FIC,.107
+# X_IDs = 1883.VOGGUR.NAR-FIC,.105 ; 1883.VOGGUR.NAR-FIC,.106 ; 1883.VOGGUR.NAR-FIC,.107
 # text = Maddama Sigríður sagði, að það væri ætíð leiðinlegt að byrja við slík tækifæri; það væri eins og menn vildu trana sér fram með góðverk sín; hún fyrir sitt leyti sagðist helzt vilja gera góðverk sín svo, að" hin vinstri sæi ekki það, sem hin hægri gerði".
 1	Maddama	maddama	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	3	nsubj	_	IFD_tag=nven
 2	Sigríður	sigríður	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	flat:name	_	IFD_tag=nven-s
@@ -1663,21 +1663,21 @@
 40	,	,	PUNCT	,	_	39	punct	_	IFD_tag=,
 41	að	að	SCONJ	C	_	45	mark	_	IFD_tag=c|SpaceAfter=No
 42	"	"	PUNCT	"	_	45	punct	_	IFD_tag="
-43	hin	hinn	DET	D-N	Case=Nom|Gender=Neut|Number=Plur	44	det	_	IFD_tag=ghfn
-44	vinstri	vinstri	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	45	nsubj	_	IFD_tag=lvenvf
+43	hin	hinn	DET	D-N	Case=Nom|Gender=Fem|Number=Sing	44	det	_	IFD_tag=gven
+44	vinstri	vinstri	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	45	nsubj	_	IFD_tag=lkenvf
 45	sæi	sjá	VERB	VBDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	39	advcl	_	IFD_tag=svg3eþ
 46	ekki	ekki	ADV	NEG	_	45	advmod	_	IFD_tag=aa
-47	það	það	PRON	PRO-A	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	45	obj	_	IFD_tag=fahen|SpaceAfter=No
+47	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	45	obj	_	IFD_tag=faheo|SpaceAfter=No
 48	,	,	PUNCT	,	_	47	punct	_	IFD_tag=,
 49	sem	sem	SCONJ	C	_	52	mark	_	IFD_tag=ct
-50	hin	hinn	DET	D-N	Case=Nom|Gender=Neut|Number=Plur	51	det	_	IFD_tag=ghfn
-51	hægri	hægri	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	52	nsubj	_	IFD_tag=lvenvf
+50	hin	hinn	DET	D-N	Case=Nom|Gender=Fem|Number=Sing	51	det	_	IFD_tag=gven
+51	hægri	hægri	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	52	nsubj	_	IFD_tag=lkenvf
 52	gerði	gera	VERB	DODS	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	47	acl:relcl	_	IFD_tag=nhfn|SpaceAfter=No
 53	"	"	PUNCT	"	_	33	punct	_	IFD_tag="|SpaceAfter=No
 54	.	.	PUNCT	.	_	33	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,58.32065
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.108
+# X_ID = 1883.VOGGUR.NAR-FIC,.108
 # text = Og vinkonur hennar, sem hún talaði um þetta við, sögðust hugsa alveg eins og hún í þessu efni.
 1	Og	og	CCONJ	CONJ	_	12	cc	_	IFD_tag=c
 2	vinkonur	vinkona	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	12	nsubj	_	IFD_tag=nvfn
@@ -1702,7 +1702,7 @@
 21	.	.	PUNCT	.	_	12	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,59.32066
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.109
+# X_ID = 1883.VOGGUR.NAR-FIC,.109
 # text = Svo átti þá að grafa Hans á kostnað sveitarinnar.
 1	Svo	svo	ADV	ADV	_	2	advmod	_	IFD_tag=aa
 2	átti	eiga	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1716,7 +1716,7 @@
 10	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,60.32067
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.110 ; 1883.VOGGUR.NAR-FIC,.111
+# X_IDs = 1883.VOGGUR.NAR-FIC,.110 ; 1883.VOGGUR.NAR-FIC,.111
 # text = Menn sögðu, að það væri líka í raun og veru eðlilegast, og þar við sat.
 1	Menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	2	nsubj	_	IFD_tag=nkfn
 2	sögðu	segja	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ|SpaceAfter=No
@@ -1738,7 +1738,7 @@
 18	.	.	PUNCT	.	_	17	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,61.32068
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.112 ; 1883.VOGGUR.NAR-FIC,.113
+# X_IDs = 1883.VOGGUR.NAR-FIC,.112 ; 1883.VOGGUR.NAR-FIC,.113
 # text = En svo fundust peningar í kistli Hans karlsins, og þó þeir væru ekki stórfé, þá voru þeir þó nægir til þess að gera útför hans heiðarlega og sómasamlega.
 1	En	en	CCONJ	CONJ	_	3	cc	_	IFD_tag=c
 2	svo	svo	ADV	ADV	_	3	advmod	_	IFD_tag=aa
@@ -1754,7 +1754,7 @@
 12	þeir	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Prs	15	nsubj	_	IFD_tag=fpkfn
 13	væru	vera	AUX	BEDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	cop	_	IFD_tag=svg3fþ
 14	ekki	ekki	ADV	NEG	_	15	advmod	_	IFD_tag=aa
-15	stórfé	stórfé	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	21	obl	_	IFD_tag=nhfn|SpaceAfter=No
+15	stórfé	stórfé	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	21	obl	_	IFD_tag=nhen|SpaceAfter=No
 16	,	,	PUNCT	,	_	21	punct	_	IFD_tag=,
 17	þá	þá	ADV	ADV	_	21	advmod	_	IFD_tag=aa
 18	voru	vera	AUX	BEDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	21	cop	_	IFD_tag=sfg3fþ
@@ -1773,7 +1773,7 @@
 31	.	.	PUNCT	.	_	21	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,62.32069
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.114
+# X_ID = 1883.VOGGUR.NAR-FIC,.114
 # text = Seinna trúði maddama Anna vinkonum sínum fyrir því, að hún hefði haft peninga til útfarannar til taks, en hefði aðeins viljað láta" þá" komast í dálítil vandræði, til þess svo allt í einu að reka á þá stampinn með peningunum.
 1	Seinna	seint	ADV	ADVR	Degree=Cmp	2	advmod	_	IFD_tag=aam
 2	trúði	trúa	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1823,7 +1823,7 @@
 46	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,63.32070
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.115
+# X_ID = 1883.VOGGUR.NAR-FIC,.115
 # text = Hún bætti því við, að til þess hefði aldrei komið, fyrst peningarnir hefðu fundizt hjá Hans.
 1	Hún	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Prs	2	nsubj	_	IFD_tag=fpven
 2	bætti	bæta	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -1840,13 +1840,13 @@
 13	fyrst	fyrst	ADP	P	_	16	case	_	IFD_tag=c
 14	peningarnir	peningur	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Masc|Number=Plur	16	nsubj	_	IFD_tag=nkfng
 15	hefðu	hafa	AUX	HVDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	aux	_	IFD_tag=svg3fþ
-16	fundizt	finna	VERB	VBN	_	11	obl	_	IFD_tag=x
+16	fundizt	finna	VERB	VBN	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	11	obl	_	IFD_tag=nveo
 17	hjá	hjá	ADP	P	_	18	case	_	IFD_tag=aþ
 18	Hans	hans	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	16	obl	_	IFD_tag=nkeþ-s|SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,64.32071
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.116
+# X_ID = 1883.VOGGUR.NAR-FIC,.116
 # text = En vinkonur hennar sögðu hver eftir aðra, um leið og þær tæmdu þriðja kaffibollann hjá henni, að það væri náttúrlega alveg það sama, sem hún hefði gert það, og henni gat ekki betur fundizt sjálfri, en það væri nokkuð til í því í.
 1	En	en	CCONJ	CONJ	_	4	cc	_	IFD_tag=c
 2	vinkonur	vinkona	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	4	nsubj	_	IFD_tag=nvfn
@@ -1885,7 +1885,7 @@
 35	gat	geta	AUX	MDDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	38	aux	_	IFD_tag=sfg3eþ
 36	ekki	ekki	ADV	NEG	_	38	advmod	_	IFD_tag=aa
 37	betur	vel	ADV	ADVR	Degree=Cmp	38	advmod	_	IFD_tag=aam
-38	fundizt	finna	VERB	VBN	_	24	conj	_	IFD_tag=x
+38	fundizt	finna	VERB	VBN	VerbForm=Sup|Voice=Mid	24	conj	_	IFD_tag=ssm
 39	sjálfri	sjálfur	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Dem	38	appos	_	IFD_tag=fbveþ|SpaceAfter=No
 40	,	,	PUNCT	,	_	24	punct	_	IFD_tag=,
 41	en	en	CCONJ	CONJ	_	42	cc	_	IFD_tag=c
@@ -1899,7 +1899,7 @@
 49	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,65.32072
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.117 ; 1883.VOGGUR.NAR-FIC,.118
+# X_IDs = 1883.VOGGUR.NAR-FIC,.117 ; 1883.VOGGUR.NAR-FIC,.118
 # text = Maddama Sigríður, sem var ein af vinkonum hennar, sagði reyndar seinna, að það væri engin tilhæfa í því, að hún hefði ætlað fé til greftrunar Hans, og af því maddama Anna frétti það daginn eftir, að maddama Sigríður hafði sagt það, þá urðu þau ummæli orsök þess, að þær drukku ekki kaffi hvor hjá annarri í hálft annað ár.
 1	Maddama	maddama	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	11	nsubj	_	IFD_tag=nven
 2	Sigríður	sigríður	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	flat:name	_	IFD_tag=nven-s|SpaceAfter=No
@@ -1958,7 +1958,7 @@
 55	,	,	PUNCT	,	_	54	punct	_	IFD_tag=,
 56	að	að	SCONJ	C	_	58	mark	_	IFD_tag=c
 57	þær	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Plur|PronType=Prs	58	nsubj	_	IFD_tag=fpvfn
-58	drukku	drekka	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	54	ccomp	_	IFD_tag=sfg3fþ
+58	drukku	drekka	VERB	VBDI	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	54	ccomp	_	IFD_tag=svg3fþ
 59	ekki	ekki	ADV	NEG	_	58	advmod	_	IFD_tag=aa
 60	kaffi	kaffi	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	58	obj	_	IFD_tag=nheo
 61	hvor	hvor	ADJ	Q-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	58	obl	_	IFD_tag=foken
@@ -1966,12 +1966,12 @@
 63	annarri	annar	PRON	OTHER-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Ind	61	obl	_	IFD_tag=foveþ
 64	í	í	ADP	P	_	67	case	_	IFD_tag=ao
 65	hálft	hálfur	NUM	NUM-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	67	nummod	_	IFD_tag=lheosf
-66	annað	annar	PRON	OTHER-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Ind	67	det	_	IFD_tag=foheo
+66	annað	annar	PRON	OTHER-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	67	det	_	IFD_tag=lheosf
 67	ár	ár	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	58	obl	_	IFD_tag=nheo|SpaceAfter=No
 68	.	.	PUNCT	.	_	50	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,66.32073
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.119
+# X_ID = 1883.VOGGUR.NAR-FIC,.119
 # text = Svo var Hans þá grafinn á sinn eiginn kostnað.
 1	Svo	svo	ADV	ADV	_	5	advmod	_	IFD_tag=aa
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3eþ
@@ -1985,7 +1985,7 @@
 10	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,67.32074
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.120 ; 1883.VOGGUR.NAR-FIC,.121
+# X_IDs = 1883.VOGGUR.NAR-FIC,.120 ; 1883.VOGGUR.NAR-FIC,.121
 # text = Jarðarförin var fjölmenn; honum fylgdu nær því allar frúr og maddömur í húsunum, sem hann hafði borið vatn til.
 1	Jarðarförin	jarðarför	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	3	nsubj	_	IFD_tag=nveng
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3eþ
@@ -2011,7 +2011,7 @@
 22	.	.	PUNCT	.	_	6	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,68.32075
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.122
+# X_ID = 1883.VOGGUR.NAR-FIC,.122
 # text = Mörg kona viknaði, er hún minntist álúta karlsins með bognu handleggina.
 1	Mörg	margur	ADJ	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	IFD_tag=lvensf
 2	kona	kona	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	3	nsubj	_	IFD_tag=nven
@@ -2028,7 +2028,7 @@
 13	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,69.32076
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.123
+# X_ID = 1883.VOGGUR.NAR-FIC,.123
 # text = Og það var ekki trútt um, að tár rynnu yfir moldum hans.
 1	Og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
 2	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	10	nsubj	_	IFD_tag=fphen
@@ -2046,7 +2046,7 @@
 14	.	.	PUNCT	.	_	10	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,70.32077
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.124
+# X_ID = 1883.VOGGUR.NAR-FIC,.124
 # text = Og þó sú tilfinning hjartans, er vekur tárin, sé eigi ætíð svo sterk, að hún nái að hreyfa hendurnar til fjárframlaga, þá eru þó tárin ávallt talin vottur viðkvæmni og blíðu, vottur þess, að mennirnir séu í raun og veru góðir, þrátt fyrir allt, sem skrifað er og talað móti því.
 1	Og	og	CCONJ	CONJ	_	31	cc	_	IFD_tag=c
 2	þó	þó	ADP	P	_	15	case	_	IFD_tag=aa
@@ -2110,7 +2110,7 @@
 60	.	.	PUNCT	.	_	31	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,71.32078
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.125
+# X_ID = 1883.VOGGUR.NAR-FIC,.125
 # text = Þegar kom fram á vorið, trúði frú Guðlaug einni vinkonu sinni fyrir því, að hún ætlaði sér að leggja krans á leiði Hans Vöggs, vatnskarlsins síns sáluga.
 1	Þegar	þegar	ADP	P	_	2	case	_	IFD_tag=c
 2	kom	koma	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	obl	_	IFD_tag=sfg3eþ
@@ -2121,7 +2121,7 @@
 7	trúði	trúa	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
 8	frú	frú	PROPN	NPR-N	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	7	nsubj	_	IFD_tag=nveþ
 9	Guðlaug	guðlaug	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	8	flat:name	_	IFD_tag=nven-s
-10	einni	einn	DET	ONE-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Ind	11	det	_	IFD_tag=foveþ
+10	einni	einn	DET	ONE-D	Case=Dat|Gender=Fem|Number=Sing|NumType=Card	11	det	_	IFD_tag=tfveþ
 11	vinkonu	vinkona	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	7	obj	_	IFD_tag=nveþ
 12	sinni	sinn	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Prs	11	nmod:poss	_	IFD_tag=feveþ
 13	fyrir	fyrir	ADP	P	_	14	case	_	IFD_tag=aþ
@@ -2145,7 +2145,7 @@
 31	.	.	PUNCT	.	_	7	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,72.32079
-# IcePaHC_ID = 1883.VOGGUR.NAR-FIC,.126
+# X_ID = 1883.VOGGUR.NAR-FIC,.126
 # text = Daginn eftir var það altalað um allan bæinn, að frú Guðlaug hefði lagt tvo kransa á leiði Hans Vöggs.
 1	Daginn	dagur	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	5	obl	_	IFD_tag=nkeog
 2	eftir	eftir	ADV	ADV	_	1	advmod	_	IFD_tag=aa
@@ -2163,14 +2163,14 @@
 14	lagt	leggja	VERB	VBN	VerbForm=Sup|Voice=Act	5	ccomp	_	IFD_tag=ssg
 15	tvo	tveir	NUM	NUM-A	Case=Acc|Gender=Masc|Number=Plur|NumType=Card	16	nummod	_	IFD_tag=tfkfo
 16	kransa	krans	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	14	obj	_	IFD_tag=nkfo
-17	á	á	ADP	P	_	18	case	_	IFD_tag=aþ
+17	á	á	ADP	P	_	18	case	_	IFD_tag=ao
 18	leiði	leiði	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	14	obl	_	IFD_tag=nheo
 19	Hans	hann	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	18	nmod:poss	_	IFD_tag=nkee-s
 20	Vöggs	vöggur	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	19	flat:name	_	IFD_tag=nkee-s|SpaceAfter=No
 21	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,73.32080
-# IcePaHC_IDs = 1883.VOGGUR.NAR-FIC,.127 ; 1883.VOGGUR.NAR-FIC,.128 ; 1883.VOGGUR.NAR-FIC,.129
+# X_IDs = 1883.VOGGUR.NAR-FIC,.127 ; 1883.VOGGUR.NAR-FIC,.128 ; 1883.VOGGUR.NAR-FIC,.129
 # text = Mönnum þótti það mjög sennilegt; það var alkunnugt, hvað hún frú Guðlaug var hjartagóð og raungóð og menn mundu nú eftir mörgum sögum um örlæti hennar og góðmennsku við fátæklinga.
 1	Mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	2	nsubj	_	IFD_tag=nkfþ
 2	þótti	þykja	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -2207,7 +2207,7 @@
 33	.	.	PUNCT	.	_	21	punct	_	IFD_tag=.
 
 # sent_id = 1883.VOGGUR.NAR-FIC,74.32081
-# IcePaHC_ID = None
+# X_ID = None
 # text = En enginn fór upp í kirkjugarð, til þess að gá að, hvort nokkur krans væri kominn á leiðið hans Vöggs.
 1	En	en	CCONJ	CONJ	_	3	cc	_	IFD_tag=x
 2	enginn	enginn	ADJ	Q-N	_	3	nsubj	_	IFD_tag=x
