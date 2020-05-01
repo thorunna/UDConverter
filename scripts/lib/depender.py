@@ -168,12 +168,14 @@ class UniversalDependencyGraph(DependencyGraph):
         # TODO: _misc_string
         """
 
-        # template = '{i}\t{word}\t{lemma}\t{ctag}\t{tag}\t{feats}\t{head}\t{rel}\t{deps_str}\t_\n'
-        template = '{i}\t{word}\t{lemma}\t{ctag}\t{tag}\t{feats}\t{head}\t{rel}\t{deps_str}\t{misc_str}\n' # testing misc column
+        template = '{i}\t{word}\t{lemma}\t{ctag}\t{tag}\t{feats_str}\t{head}\t{rel}\t{deps_str}\t{misc_str}\n'
 
-        return ''.join(template.format(i=i, **node, deps_str=self._deps_str(node['deps']), misc_str=self._misc_string(node['misc']))
-                         for i, node in sorted(self.nodes.items()) if node['tag'] != 'TOP') \
-               + '\n'
+        return ''.join(template.format(i=i, **node,
+                                       deps_str=self._deps_str(node['deps']),
+                                       feats_str=self._dict_to_string(node['feats']),
+                                       misc_str=self._dict_to_string(node['misc']))
+                                    for i, node in sorted(self.nodes.items()) if node['tag'] != 'TOP') \
+                                    + '\n'
 
     def plain_text(self):
         """ 09.03.20
@@ -342,6 +344,7 @@ class Converter():
         #             rules.remove(rule)
 
         # Somewhat efficient fix for aux verbs
+        # print(tree.num_verbs())
         if tree.num_verbs() == 1 or main_clause.num_verbs() == 1:
             new_rules[0:0] = rules
             # new_rules[4:4] = ['BE.*', 'HV.*', 'MD.*', 'RD.*']
@@ -506,9 +509,9 @@ class Converter():
             if self.dg.num_verbs() == 0:
 
                 # print('No root relation found in sentence.')
-                for address, info in self.dg.nodes.items():
-                    # print(address, info['head'])
-                    if address == info['head']:
+                for address, node in self.dg.nodes.items():
+                    # print(address, node['head'])
+                    if address == node['head']:
 
                         # # DEBUG:
                         # print('Node to fix:')
@@ -523,9 +526,9 @@ class Converter():
                 # TODO: Hér þarf sögnin að vera valin sem rót en vensl annarra
                 #       orða við sögnina haldist rétt / séu lagfærð í leiðinni.
                 # pass
-                for address, info in self.dg.nodes.items():
-                    # print(address, info['head'])
-                    if address == info['head']:
+                for address, node in self.dg.nodes.items():
+                    # print(address, node['head'])
+                    if address == node['head']:
                         self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
 
             # NOTE: when more than one verb in sent but no root
@@ -534,9 +537,9 @@ class Converter():
             elif self.dg.num_verbs() > 1:
                 # TODO: Passa að rétt sögn (umsögn aðalsetningar) sé valin sem
                 #       rót og ekki aðrar sagnir.
-                for address, info in self.dg.nodes.items():
-                    # print(address, info['head'])
-                    if address == info['head']:
+                for address, node in self.dg.nodes.items():
+                    # print(address, node['head'])
+                    if address == node['head']:
 
                         # # DEBUG:
                         # print('Node to fix:')
@@ -567,41 +570,41 @@ class Converter():
             None
 
         """
-        for address, info in self.dg.nodes.items():
-            if info['rel'] == 'ccomp/xcomp':
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'ccomp/xcomp':
 
                 self.dg.get_by_address(address).update({'rel': 'xcomp'})
                 # # DEBUG:
                 # print('\nccomp/xcomp error node:')
-                # print(address, info)
+                # print(address, node)
 
-                for other_address, other_info in self.dg.nodes.items():
+                for other_address, other_node in self.dg.nodes.items():
                     # check if nsubj node has ccomp/xcomp node as head
-                    if other_info['head'] == address and other_info['rel'] == 'nsubj':
+                    if other_node['head'] == address and other_node['rel'] == 'nsubj':
 
 
                         # # DEBUG:
                         # print('\n=> check for nsubj relation to error node\n')
-                        # print(other_address, other_info)
+                        # print(other_address, other_node)
                         # input()
 
                         self.dg.get_by_address(address).update({'rel': 'ccomp'})
-                    elif other_info['address'] == info['head'] and self.dg.get_by_address(other_info['head'])['ctag'] in {'AUX', 'VERB'}:
+                    elif other_node['address'] == node['head'] and self.dg.get_by_address(other_node['head'])['ctag'] in {'AUX', 'VERB'}:
                         # checks if error node head is verb and whether that verb has a nsubj node attached
                         # NOTE: likely be too greedy
-                        for other_other_address, other_other_info in self.dg.nodes.items():
-                            if other_other_info['head'] == other_info['head'] and other_other_info['rel'] == 'nsubj':
+                        for other_other_address, other_other_node in self.dg.nodes.items():
+                            if other_other_node['head'] == other_node['head'] and other_other_node['rel'] == 'nsubj':
 
                                 # # DEBUG:
                                 # print('\n=> check if error node head is verb and verb has nsubj\n')
-                                # print(other_address, other_info)
-                                # print(other_other_address, other_other_info)
+                                # print(other_address, other_node)
+                                # print(other_other_address, other_other_node)
                                 # input()
 
                                 self.dg.get_by_address(address).update({'rel': 'ccomp'})
-                    elif other_info['head'] == info['head'] and other_info['rel'] == 'nsubj':
+                    elif other_node['head'] == node['head'] and other_node['rel'] == 'nsubj':
 
-                        if other_info['ctag'] == 'PRON' and re.search('(-A|-D|-G)', other_info['tag']):
+                        if other_node['ctag'] == 'PRON' and re.search('(-A|-D|-G)', other_node['tag']):
                             # accusative and dative pronouns as subject may indicate no real subject, thus xcomp relation
                             # print('\n=> MAYBE NOT TOO GREEDY? (xcomp)')
                             # self.dg.get_by_address(address).update({'rel': 'xcomp'})
@@ -628,8 +631,8 @@ class Converter():
         Fixes UPOS tag for verbs that have relation 'aux' but not UPOS tag AUX.
         """
 
-        for address, info in self.dg.nodes.items():
-            if info['rel'] == 'aux' and info['tag'] != 'AUX':
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'aux' and node['tag'] != 'AUX':
                 self.dg.get_by_address(address).update({'ctag': 'AUX'})
 
     def _fix_acl_advcl(self):
@@ -642,23 +645,23 @@ class Converter():
             None
 
         """
-        for address, info in self.dg.nodes.items():
-            if info['rel'] == 'acl/advcl':
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'acl/advcl':
                 # If the head is a verb
-                if self.dg.get_by_address(info['head'])['ctag'] == 'VERB':
+                if self.dg.get_by_address(node['head'])['ctag'] == 'VERB':
 
                     # # DEBUG
                     # print('=> Head is verb\n', self.dg.get_by_address(address))
 
                     self.dg.get_by_address(address).update({'rel': 'advcl'})
                 # If the head has a cop attached
-                elif self.dg.get_by_address(info['head'])['ctag'] in {'NOUN', 'PROPN', 'PRON', 'ADJ'}:
+                elif self.dg.get_by_address(node['head'])['ctag'] in {'NOUN', 'PROPN', 'PRON', 'ADJ'}:
 
                     # # DEBUG
                     # print('=> Head seems to be nominal\n', self.dg.get_by_address(address))
 
-                    for other_address, other_info in self.dg.nodes.items():
-                        if other_info['head'] == info['head'] and other_info['rel'] == 'cop':
+                    for other_address, other_node in self.dg.nodes.items():
+                        if other_node['head'] == node['head'] and other_node['rel'] == 'cop':
                             self.dg.get_by_address(address).update({'rel': 'advcl'})
                         # Should have acl relation if not caught above
                         else:
@@ -670,8 +673,8 @@ class Converter():
                 continue
 
     def _fix_punct_heads(self):
-        for address, info in self.dg.nodes.items():
-            if info['ctag'] == 'PUNCT':
+        for address, node in self.dg.nodes.items():
+            if node['ctag'] == 'PUNCT':
                 if address+1 in self.dg.nodes \
                 and self.dg.get_by_address(address+1)['rel'] == 'conj':
                     self.dg.get_by_address(address).update({'head': address+1})
@@ -929,7 +932,8 @@ class Converter():
                     if head_nr != mod_nr:
                         self.dg.add_arc(head_nr, mod_nr)
 
-        # self.add_space_after()
+        # # self.add_space_after()
+        # self._features()
 
         # NOTE: Here call method to fix dependency graph if needed?
         if self.dg.num_roots() != 1:
@@ -940,16 +944,23 @@ class Converter():
 
             self._fix_root_relation()
 
+        # for address, node in self.dg.nodes.items():
+        #     if node['rel'] in {'aux', 'aux:pass'} and node['tag'] != 'AUX':
+        #         node.update({'ctag': 'AUX'})
+
         rel_counts = self.dg.rels()
 
         if rel_counts['ccomp/xcomp'] > 0:
             self._fix_ccomp()
-        if rel_counts['aux'] > 0:
-            self._fix_aux_tag()
+        # if rel_counts['aux'] > 0:
+        #     self._fix_aux_tag()
         if rel_counts['acl/advcl'] > 0:
             self._fix_acl_advcl()
         if rel_counts['punct'] > 0:
             self._fix_punct_heads()
+        # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
+        #     self._fix_empty_node()
+
         return self.dg
 
     @staticmethod
@@ -1022,6 +1033,7 @@ class Converter():
                     continue
                 if node['head'] == 0:
                     node.update({'head': new_root, 'rel':'conj', 'misc':{'OriginalHead':'0'}})
+                    # TODO: fix misc, erases previous
                 else:
                     # print(node)
                     node.update({'head' : old_new_addresses[node['head']]})
