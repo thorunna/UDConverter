@@ -57,16 +57,6 @@ def main():
     '''01.05.20
 
     Converts IcePaHC-format .psd corpus to Universal Dependecies framework
-    Looks for IcePaHC default location in '../psd/' folder.
-
-    Usage:
-    Single tree from corpus:
-        python3 test_convert.py -I -id 1150.HOMILIUBOK.REL-SER,.691
-
-    Single file from corpus:
-        python3 test_convert.py -I -f 1150.HOMILIUBOK.REL-SER
-
-    Single tree from other corpus location
 
     '''
     parser = argparse.ArgumentParser(description='Script for testing UD converter')
@@ -137,6 +127,9 @@ def main():
 
                 dep = c.create_dependency_graph(psd)
                 outfile.write(dep.to_conllU())
+
+            if output_path and args.post_process:
+                run_post_file(output_path)
 
             print(f'{file_num}\t{file_id}\t{file_sents+1}')
 
@@ -244,6 +237,9 @@ def main():
                         print('\n\n', dep.original_ID_plain_text(CORPUS='IcePaHC'))
                         print(f'{type(ex).__name__} for sentence: {ex.args}\n\n')
                 to_join = []
+
+        if output_path and args.post_process:
+            run_post_file(output_path)
 
     if args.corpus:
 
