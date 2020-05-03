@@ -70,7 +70,7 @@ def main():
     file_num = 1
 
     # OUTPUT_DIR = '../testing/CoNLLU_output/'
-    OUTPUT_DIR = '../CoNLLU/'
+    OUTPUT_DIR = '../IcePaHC-CoNLLU/'
     if not os.path.isdir(OUTPUT_DIR):
         os.mkdir(OUTPUT_DIR)
 
