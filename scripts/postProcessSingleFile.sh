@@ -14,7 +14,7 @@ file=$1
 
 # echo "Running post-processing script for file: ${file##*/}"
 # All lines with 'None' as token/lemma removed (errors from sentence parsing step)
-# Will need to be addressed at source
+# Should already be taken care of at source but kept here none the less
 sed -i "" '/None	None	None	None/d' $file
 # TODO:
 #   - Possibly remove $ from CoNLLU files in 'því$ $að' and 'þó$ $að'
