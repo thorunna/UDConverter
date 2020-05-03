@@ -52,7 +52,7 @@ def main():
 
     run_pre(FIXED_IcePaHC_DIR)
 
-    path.extend(['../psd/'])
+    path.extend(['..'])
 
     ICEPAHC = LazyCorpusLoader(
         'icepahc-v0.9/psd_fix/', IcePaHCFormatReader,
