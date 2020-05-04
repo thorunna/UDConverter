@@ -1,47 +1,35 @@
-# UD - Samantekt á hugbúnaðinum (06.03.20)
-## Keyrsluröð:
-Í breytingarferli. Eins og er (06.03.20) annaðhvort:
-1. `text_cleanup.sh`
-2. `convert.py`
-3. `postProcess.sh`
+# Treebank format converter
 
-Eða:
-1. `text_cleanup.sh`
-2. `convert.py`
+A Python module for converting bracket parsed [PPCME-format](https://www.ling.upenn.edu/hist-corpora/) treebanks to the [Universal Dependencies](https://universaldependencies.org/) framework. It is heavily based on existing [NLTK](https://www.nltk.org/) packages.
 
-## Forritseiningar
-### `depender.py`
- - Les inn IcePaHC tré og skilar venslagrafi fyrir það (UD-skema) 
-### `relations.py`
-- Inniheldur fall sem ákvarðar gerð vensla og er notað í depender.py
+At the moment the module is specifically configured to convert treebanks in the [IcePaHC](https://linguist.is/icelandic_treebank/Icelandic_Parsed_Historical_Corpus_(IcePaHC) format, which is based on PPCME.
 
-### `features.py`
-**ATH óklárað**
-- Finnur UD þætti út frá OTB marki orðs
-- Ber saman CoNLL-U skrá og markaða textaskrá hennar og finnur rétt mark á orð
-- Þarf að hafa markaðan texta úr hverri IcePaHC skrá fyrir sig til að virka sjá https://github.com/thorunna/UD/tree/master/taggers/tagged
-- Ef CoNLL-U textinn breytist efnislega fyrir lok verkefnisins þarf að endurmarka hann. Það er sér skrifta sem undirbýr skrárnar til þess
+## Usage
 
-### `joiners.py`
-- Inniheldur föll sem annars vegar sameinar liði og orð í .psd skrám og hins vegar sameinar orð í conllu skrám
+Scripts to run are in the `scripts` folder.
 
-### `rules.py`
-- Inniheldur reglur sem eru notaðar víðs vegar í öðrum skriftum
+_In all examples below, the_ `--output` _flag is used to write to files in the_ `/CoNNLU/` _output folder. Otherwise prints to standard output._
 
-## Skriftur
-### `convert.py`
-- Kallar á depender.py módulinn og skrifar út .conllu skrárnar fyrir hverja IcePaHC skrá
-### `text_cleanup.sh` 
-- Forvinnur IcePaHC skrárnar og gerir þær tilbúnar fyrir convert.py og depender.
-### `join_psd.py`
-- Sameinar alls konar liði og orð í .psd skrám með því að kalla á mismunandi föll í joiners.py módulnum
-### `postProcess.sh`
-- Vinnur úr eftirstöðuatriðum í CoNLL-U skránum
+> *Convert single file or directory of files:*
 
-### `join_conllu.py`
-- kallar á föll í joiners.py til að sameina orð í CoNLL-U skráum (t.d. Sagnir og snýkla) 
-- Í vinnslu: Sameinar setningar í CoNLL-U skrám út frá greinarmerkjum
+> `convert.py -N -i path/to/corpus/file.psd --output --post_process`
 
-### `rename_conllu.py`
-- Kallar á features.py og setur inn UD-þætti orðs ásamt OTB-marki í síðasta sæti hverrar línu
-- Endurnefnir stök orð í CoNLL-U skrám, t.d. sumar skammstafanir 
+> `convert.py -N -i path/to/corpus/* --output --post_process`
+
+_For further usage, input files must be placed in a folder within the_ `corpora` _folde:r_
+
+> *Convert single tree in treebank using sentence ID (only prints to standard output):*
+
+> `convert.py -C FOLDER_NAME -id SENTENCE_ID`
+
+> *Convert single file in treebank*
+
+> `convert.py -C FOLDER_NAME -f FILE_NAME --output --post_process`
+
+_Additionally included is a script to only convert the IcePaHC corpus (_ `icepahc-v0.9`_), with pre- and post-processing:_
+
+> `convert_icepahc.py`
+
+
+## Acknowledgements
+This converter is part of the UniTree project for IcePaHC, funded by The Strategic Research and Development Programme for Language Technology, grant no. 180020-5301. Thanks are due to Örvar Kárason, whose previous work was used as a basis for the conversion.
