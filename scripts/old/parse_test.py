@@ -5,7 +5,6 @@ from nltk.corpus.util import LazyCorpusLoader
 from nltk.corpus.reader import CategorizedBracketParseCorpusReader
 from nltk.data import path
 from nltk.tree import *
-from tokenizer import correct_spaces
 # from pprint import pprint
 import os
 import time
