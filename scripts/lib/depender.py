@@ -687,7 +687,7 @@ class Converter():
                 node['head'] = self.dg.get_by_address(last_index)['head']
         del self.dg.nodes[last_index]
 
-    def create_dependency_graph(self, tree):
+    def create_dependency_graph(self, tree, faroese):
         """Create a dependency graph from a phrase structure tree.
 
         Returns:
@@ -751,7 +751,10 @@ class Converter():
                 XPOS = tag
                 MISC = defaultdict(lambda: None)
                 # Feature Classes called here
-                UPOS = Features.get_UD_tag(tag)
+                if faroese:
+                    UPOS = Features.get_UD_tag(tag, True)
+                else:
+                    UPOS = Features.get_UD_tag(tag, False)
                 if self.auto_tags:
                     # ifd tag found from POS tagger output
                     ifd_tag = TAG_DICT.get(FORM, 'x')[0]

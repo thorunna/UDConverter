@@ -7,6 +7,7 @@ import requests
 from collections import defaultdict
 
 from lib.rules import UD_map, OTB_map
+from lib import fo_rules
 from lib.tools import decode_escaped
 
 # in_path = str(sys.argv[1])
@@ -154,7 +155,7 @@ class Features():
     # Here follow methods for finding a word's UD-tag from its IcePaHC tag
 
     @staticmethod
-    def get_UD_tag(tag):
+    def get_UD_tag(tag, faroese):
         '''
 
         '''
@@ -178,7 +179,10 @@ class Features():
                 tag = 'PUNCT'
                 return tag
             else:
-                tag = UD_map.get(tag[0], 'X')
+                if faroese:
+                    tag = fo_rules.UD_map.get(tag[0], 'X')
+                else:
+                    tag = UD_map.get(tag[0], 'X')
                 return tag
 
     @staticmethod

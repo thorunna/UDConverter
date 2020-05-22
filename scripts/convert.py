@@ -83,6 +83,8 @@ def main():
                        help='flag to parse whole Treebank corpus')
     input_mode.add_argument('--input', '-i', nargs='+', help='(IF NOT USING CORPUS PATH) path to single file to convert')
 
+    parser.add_argument('--faroese', '-far', help='flag for converting a Faroese treebank', action='store_true')
+
     args = parser.parse_args()
     
 
@@ -91,6 +93,7 @@ def main():
         file_id = args.file.lower()
         if file_id[-4] != '.psd':
             file_id += '.psd'
+
 
     if args.NO_CORPUS:
     
@@ -202,7 +205,10 @@ def main():
 
                 TREE = tree.remove_nodes(tags=['CODE'], trace=True)
 
-                dep = c.create_dependency_graph(TREE)
+                if args.faroese:
+                    dep = c.create_dependency_graph(TREE, True)
+                else:
+                    dep = c.create_dependency_graph(TREE)
 
                 if dep.get_by_address(len(dep.nodes)-1)['word'] not in {'.', ':', '?', '!', 'kafli'} \
                 and len(dep.nodes) != 1:
@@ -276,8 +282,6 @@ def main():
                     tree = fix_IcePaHC_tree_errors(tree)
 
                     TREE = tree.remove_nodes(tags=['CODE'], trace=True)
-
-                    dep = c.create_dependency_graph(TREE)
 
                     if dep.get_by_address(len(dep.nodes)-1)['word'] not in {'.', ':', '?', '!', 'kafli'} \
                     and len(dep.nodes) != 1:

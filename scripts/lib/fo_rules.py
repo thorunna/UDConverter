@@ -1,249 +1,58 @@
 
 
-cconj = {'og', 'eða', 'en', 'heldur', 'enda', 'ellegar',
-        'bæði','hvorki','annaðhvort','hvort', 'ýmist'}
-
-tags = {
-    # ipsd_tag : UD_tag
-    'N' : 'NOUN',   # generalized nouns tagged as NOUN
-    'D' : 'DET',    # generalized determiners tagged as DET (determiner)
-    'ONE' : 'DET',  #ath. áður taggað sem NUM
-    'ONES' : 'DET',
-    'P' : 'ADP',    # generalized prepositions tagged as ADP
-    'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
-    'RPX' : 'ADP',
-    'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
-    'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
-    'V' : 'VERB',
-    'DO' : 'VERB',  #'gera', do, tagged as verb
-    'HV' : 'AUX',   #'have' tagged as auxiliary verb
-    'MD' : 'AUX',   #modal verbs tagged as auxiliary
-    'RD' : 'VERB',    #'verða', become, tagged as verb
-    'W' : 'DET',    # WH-determiner tagged as DET (determiner)
-    'R' : 'VERB',   # All forms of "verða" tagged as VERB
-    'TO' : 'PART',  # Infinitive marker tagged as PART (particle)
-    'FP' : 'PART',  #focus particles marked as PART
-    'NPR' : 'PROPN', # proper nouns tagged as PROPN
-    'NPRS': 'PROPN',
-    'PRO' : 'PRON',
-    'WQ' : 'PRON',  #interrogative pronoun
-    'WPRO' : 'PRON',  #wh-pronouns
-    'SUCH' : 'PRON',
-    'ES' : 'PRON',  #expletive tagged as PRON
-    'MAN' : 'PRON',
-    'NUM' : 'NUM',
-    'ADJ' : 'ADJ',  # Adjectives tagged as ADV
-    'ADJR' : 'ADJ', # Comparative adjectives tagged as ADV
-    'ADJS' : 'ADJ', # Superlative adjectives tagged as ADV
-    'ADV' : 'ADV',  # Adverbs tagged as ADV
-    'WADV' : 'ADV', #TODO: ath. betur - bara spor?
-    'NEG' : 'ADV',
-    'ADVR' : 'ADV', # Comparative adverbs tagged as ADV
-    'ADVS' : 'ADV', # Superlative adverbs tagged as ADV
-    'ALSO' : 'ADV',
-    'OTHER' : 'PRON',
-    'OTHERS' : 'PRON',
-    'INTJ' : 'INTJ',    #interjection
-    'FW' : 'X',
-    'X' : 'X'
-}
+cconj = {'og', 'men', 'tí', 'ella', 'bæði', 'annaðhvørt', 'hvørki'}
 
 UD_map = {
-    # ipsd_tag : UD_tag
-    'N' : 'NOUN',   # generalized nouns tagged as NOUN
-    'D' : 'DET',    # generalized determiners tagged as DET (determiner)
-    'ONE' : 'DET',  #ath. áður taggað sem NUM
-    'ONES' : 'DET',
-    'P' : 'ADP',    # generalized prepositions tagged as ADP
-    'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
-    'RPX' : 'ADP',
-    'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
-    'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
-    'V' : 'VERB',
-    'DO' : 'VERB',  #'gera', do, tagged as verb
-    'HV' : 'AUX',   #'have' tagged as auxiliary verb
-    'MD' : 'AUX',   #modal verbs tagged as auxiliary
-    'RD' : 'VERB',    #'verða', become, tagged as verb
-    'W' : 'DET',    # WH-determiner tagged as DET (determiner)
-    'R' : 'VERB',   # All forms of "verða" tagged as VERB
-    'TO' : 'PART',  # Infinitive marker tagged as PART (particle)
-    'FP' : 'PART',  #focus particles marked as PART
-    'NPR' : 'PROPN', # proper nouns tagged as PROPN
-    'NPRS': 'PROPN',
-    'PRO' : 'PRON',
-    # 'WQ' : 'PRON',  #interrogative pronoun
-    'WQ' : 'SCONJ',
-    'WPRO' : 'PRON',  #wh-pronouns
-    'SUCH' : 'PRON',
-    'ES' : 'PRON',  #expletive tagged as PRON
-    'MAN' : 'PRON',
-    'NUM' : 'NUM',
-    'ADJ' : 'ADJ',  # Adjectives tagged as ADV
+    'ADJ' : 'ADJ',  # Adjectives tagged as ADJ
     'ADJR' : 'ADJ', # Comparative adjectives tagged as ADV
     'ADJS' : 'ADJ', # Superlative adjectives tagged as ADV
     'ADV' : 'ADV',  # Adverbs tagged as ADV
-    'WADV' : 'ADV', #TODO: ath. betur - bara spor?
-    'NEG' : 'ADV',
     'ADVR' : 'ADV', # Comparative adverbs tagged as ADV
     'ADVS' : 'ADV', # Superlative adverbs tagged as ADV
     'ALSO' : 'ADV',
+    'BAG' : 'VERB', #verandi
+    'BE' : 'VERB',  #vera, verður cop í relations?
+    'BEI' : 'VERB', # boðháttur
+    'BEN' : 'VERB',
+    'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
+    'D' : 'DET',    # generalized determiners tagged as DET (determiner)
+    'DAN' : 'VERB', #gjörd
+    'DO' : 'VERB',  #'gera', do, tagged as verb
+    'ES' : 'PRON',  #expletive tagged as PRON
+    'FOR' : 'FOR', #P? TODO 
+    'FP' : 'PART',  #focus particles marked as PART
+    'FW' : 'X',
+    'HV' : 'AUX',   # getur líka verið aðalsögn #'have' tagged as auxiliary verb
+    'HVI' : 'VERB',
+    'HVN' : 'VERB',
+    'INTJ' : 'INTJ',    #interjection
+    'MD' : 'AUX',   #modal verbs tagged as auxiliary
+    'N' : 'NOUN',   # generalized nouns tagged as NOUN
+    'NEG' : 'ADV',
+    'NPR' : 'PROPN',    # proper nouns tagged as PROPN
+    'NPRS' : 'PROPN',
+    'NUM' : 'NUM',
+    'ONE' : 'DET',
     'OTHER' : 'PRON',
     'OTHERS' : 'PRON',
-    'INTJ' : 'INTJ',    #interjection
-    'FW' : 'X',
-    'LS' : 'NUM',    # list marker tagged as numeral
-    'X' : 'X',
+    'P' : 'ADP',    # generalized prepositions tagged as ADP
+    'PRO' : 'PRON',
+    'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
+    'RAG' : '', # verðandi TODO 
+    'RD' : 'VERB',  #'verða', become, tagged as verb
+    'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
+    'RPX' : 'PART', # agnir markaðar sem PART
+    'SUCH' : 'PRON',
+    'TO' : 'PART',  # Infinitive marker tagged as PART (particle)
+    'VAG' : 'VERB',
+    'VAN' : 'VERB',
+    'VB' : 'VERB',
+    'WADV' : 'ADV', #TODO: ath. betur - bara spor?
+    'WD' : 'DET',   # WH-determiner tagged as DET (determiner)
+    'WPRO' : 'PRON',    #wh-pronouns
+    'WQ' : 'SCONJ'
 }
 
-OTB_map = {
-        'Gender' : {
-            'k' : 'Masc',
-            'v' : 'Fem',
-            'h' : 'Neut',
-            'x' : None
-        },
-        'Number': {
-            'f' : 'Plur',  # noun, plural number
-            'e' : 'Sing'    # noun singular number
-        },
-        'PronType' : {
-            'p' : 'Prs',    #personal
-            'e' : 'Prs',    #posessive (tagged as personal)
-            # 'a' : 'Rcp',   #reciprocal
-            's' : 'Int',     #interrogative
-            't' : 'Rel',     #relative
-            'a' : 'Dem',     #demonstrative
-            'b' : 'Dem',
-            'o' : 'Ind'    #indefinite
-        },
-        'Tense' : {
-            'n' : 'Pres',   #present tense
-            'þ' : 'Past',    #past tense
-            'NF' : None
-        },
-        'Person' : {
-            '1' : '1',
-            '2' : '2',
-            '3' : '3'
-        },
-        'Case' : {
-            'n' : 'Nom',   # nominative case
-            'o' : 'Acc',   # accusative case
-            'þ' : 'Dat',  # dative case
-            'e' : 'Gen',   # dative case
-            None : 'Nom'
-        },
-        'Mood' : {
-            'n' : 'infinitive',
-            'b' : 'Imp',  #imperative
-            'f' : 'Ind',   #indicative
-            'v' : 'Sub',   #subjunctive
-            'I' : 'Ind',    #indicative (IcePaHC POS-tag)
-            'S' : 'Sub',    #subjunctive (IcePaHC POS-tag)
-            'OSKH' : None   # TEMP
-        },
-        'VerbForm' : {
-            '' : 'Fin',     #finite verb
-            'n' : 'Inf',     #infinitive verb
-            'l' : 'Part',     #participle
-            'þ' : 'Part',     #participle
-            's' : 'Sup'
-        },
-        'Voice' : {
-            'g' : 'Act',     #active voice
-            'm' : 'Mid',     #middle voice
-            'pass' : 'Pass'     #passive voice
-        },
-        'Definite' : {
-            's' : 'Ind', # adjectives
-            'v' : 'Def', # adjectives
-            'g' : 'Def', # nouns
-            'o' : None, # 'ÓBEYGT', TODO: check if output 100% correct
-            None : 'Ind'
-        },
-        'Degree' : {
-            'f' : 'Pos', # adjectives
-            'm' : 'Cmp', # adjectives
-            'e' : 'Sup' # nouns
-        },
-        'NumType' : {
-            'f' : 'Card',    #Cardinal number
-            'a' : 'Card',
-            'o' : 'Ord',     # FIX Ordinal number (not in OTB tag)
-            'p' : 'Frac'     #Fraction
-        }
-    }
-
-DMII_map = {
-        'Gender' : { # TODO: add gender to feature matrix
-            'kk' : 'Masc',
-            'kvk' : 'Fem',
-            'hk' : 'Neut',
-            'KK' : 'Masc',
-            'KVK' : 'Fem',
-            'HK' : 'Neut',
-        },
-        'Number': {
-            'FT' : 'Plur',  # noun, plural number
-            'ET' : 'Sing'    # noun singular number
-        },
-        'PronType' : {
-            'pfn' : 'Prs',    #personal
-            'abfn' : 'Rcp',   #reciprocal
-            'sp' : 'Int',     #interrogative
-            'tv' : 'Rel',     #relative
-            'ab' : 'Dem',     #demonstrative
-            'oakv' : 'Ind'    #indefinite
-        },
-        'Tense' : {
-            'NT' : 'Pres',   #present tense
-            'ÞT' : 'Past',    #past tense
-            'NF' : None
-        },
-        'Person' : {
-            '1P' : '1',
-            '2P' : '2',
-            '3P' : '3'
-        },
-        'Case' : {
-            'NF' : 'Nom',   # nominative case (DMII)
-            'ÞF' : 'Acc',   # accusative case (DMII)
-            'ÞGF' : 'Dat',  # dative case (DMII)
-            'ÞG' : 'Dat',   # dative case (DMII, alternative)
-            'EF' : 'Gen',   # genitive case (DMII)
-            'N' : 'Nom',    # nominative case (IcePaHC)
-            'A' : 'Acc',    # accusative case (IcePaHC)
-            'D' : 'Dat',    # dative case (IcePaHC)
-            'G' : 'Gen',    # genitive case (IcePaHC)
-            None : 'Nom'
-        },
-        'Mood' : {
-            'IMP' : 'Imp',  #imperative
-            'FH' : 'Ind',   #indicative
-            'VH' : 'Sub',   #subjunctive
-            'I' : 'Ind',    #indicative (IcePaHC POS-tag)
-            'S' : 'Sub',    #subjunctive (IcePaHC POS-tag)
-            'OSKH' : None   # TEMP
-        },
-        'VerbForm' : {
-            '' : 'Fin',     #finite verb
-            'inf' : 'Inf',     #infinitive verb
-            'part' : 'Part'     #participle
-        },
-        'Voice' : {
-            'GM' : 'Act',     #active voice
-            'MM' : 'Mid',     #middle voice
-            'pass' : 'Pass'     #passive voice
-        },
-        'Definite' : {
-            'SB' : 'Ind', # strong inflection (adjectives)
-            'VB' : 'Def', # weak inflection (adjectives)
-            'gr' : 'Def', # DMII definite article marker
-            'ET' : 'Ind', # if def marker not present in DMII
-            'FT' : 'Ind', # if def marker not present in DMII
-            None : None
-        },
-    },
 
 feats = {
     'NOUN' : {
@@ -257,18 +66,16 @@ feats = {
             'NS' : 'Plur',  # noun, plural number
             'N' : 'Sing',
             'NPR' : 'Sing'    # noun singular number
-            # 'NPR' : ''
-            # 'NPRS' : 'Plur' # proper noun plural
         },
         'Definite' : { # TODO: remove def from dict
             '$' : 'Def',
             '' : 'Ind'
         },
-        'Gender' : { # TODO: add gender to feature matrix
-            'kk' : 'Masc',
-            'kvk' : 'Fem',
-            'hk' : 'Neut'
-        }
+        #'Gender' : { # TODO: add gender to feature matrix
+        #    'kk' : 'Masc',
+        #    'kvk' : 'Fem',
+        #    'hk' : 'Neut'
+        
     },
     'PROPN' : { # Case, Number, Definite
         'Number': {
@@ -281,11 +88,11 @@ feats = {
             'D' : 'Dat',    # dative case
             'G' : 'Gen'     # genitive case
         },
-        'Gender' : {
-            'kk' : 'Masc',
-            'kvk' : 'Fem',
-            'hk' : 'Neut'
-        }
+        #'Gender' : {
+        #    'kk' : 'Masc',
+        #    'kvk' : 'Fem',
+        #    'hk' : 'Neut'
+        
     },
     'PRON' : { # Case, Gender, Number, PronType
         'Number': {
@@ -973,60 +780,4 @@ abbr_map = {
     't.$' : (r't\.\$', 'til', 'til', ''),
     '$d.' : (r'\$d\.', 'dæmis', 'dæmis', '')}
 
-mwes = ['af því að',
-        'á meðan',
-        'áður en',
-        'eftir að',
-        'eins og',
-        'enda þótt',
-        'frá því að',
-        'frá því er',
-        'frá því',
-        'fyrir því að',
-        'fyrr en',
-        'heldur en',
-        'hvar sem',
-        'hvaðan er',
-        'hvaðan sem',
-        'hvenær sem',
-        'hvernig sem',
-        'hvert er',
-        'hvert sem',
-        'í sjálfu sér', # Á þetta við
-        'jafnskjótt og',
-        'jafnskjótt sem',
-        'jafnvel þótt',
-        'með því að',
-        'óðar en',
-        'sakir þess að',
-        'sökum þess að',
-        'strax og',
-        'svo að',
-        'svo framarlega sem',
-        'svo sem',
-        'til að',
-        'til þess að',
-        'til þess er',
-        'um leið og',
-        'undireins og',
-        'úr því að',
-        'vegna þess að',
-        'vel á minnst',
-        'þangað er',
-        'þangað sem',
-        'þangað til að',
-        'þar er',
-        'þar eð',
-        'þar sem',
-        'þar sem',
-        'þar til að',
-        'þar til er',
-        'þaðan er',
-        'þaðan sem',
-        'þá er',
-        'þeim mun',
-        'þó að',
-        'þrátt fyrir að',
-        'þrátt fyrir það að',
-        'því að',
-        ]
+mwes = []
