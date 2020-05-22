@@ -17,7 +17,7 @@ from sys import stdin, stdout
 
 
 from nltk.corpus.util import LazyCorpusLoader
-from nltk.data import path
+from nltk.data import path as nltk_path
 
 from lib import depender
 from lib.reader import IcePaHCFormatReader, IndexedCorpusTree
@@ -46,7 +46,7 @@ def run_post_file(file_path):
 
 def load_corpus(name):
     corpus_loader = LazyCorpusLoader(
-        f'{name}/', IcePaHCFormatReader,
+        f'{name}/psd', IcePaHCFormatReader,
         r'.*\.psd', cat_pattern=r'.*(nar|rel|sci|bio|law)\-.*'
         )
     return corpus_loader
@@ -138,7 +138,7 @@ def main():
 
     corpus_path = os.path.abspath(args.corpus_path)
     # path.extend(['../testing/',])
-    path.extend([corpus_path])
+    nltk_path.extend([corpus_path])
     CORPUS = load_corpus(args.CORPUS_NAME)
 
     if args.ID_number:
