@@ -168,9 +168,10 @@ class UniversalDependencyGraph(DependencyGraph):
         # TODO: _misc_string
         """
 
-        template = '{i}\t{word}\t{lemma}\t{ctag}\t{tag}\t{feats_str}\t{head}\t{rel}\t{deps_str}\t{misc_str}\n'
+        template = '{i}\t{word}\t{lemma_str}\t{ctag}\t{tag}\t{feats_str}\t{head}\t{rel}\t{deps_str}\t{misc_str}\n'
 
         return ''.join(template.format(i=i, **node,
+                                       lemma_str=node['lemma'] if node['lemma'] else '_',
                                        deps_str=self._deps_str(node['deps']),
                                        feats_str=self._dict_to_string(node['feats']),
                                        misc_str=self._dict_to_string(node['misc']))
