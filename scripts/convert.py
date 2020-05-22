@@ -69,6 +69,7 @@ def main():
     parser.add_argument('--corpus_path', '-cpath', default='..',
                         help='path to corpora parent folder, default is current working dir')
     parser.add_argument('--output', '-o', help='path to output folder', action='store_true')
+    parser.add_argument('--auto_tag', '-tag', help='flag for automatically tagging input text', action='store_true')
 
     input_type = parser.add_mutually_exclusive_group(required=True)
     input_type.add_argument('--NO_CORPUS', '-N', help='no corpus, convert single file',action='store_true',)
@@ -83,6 +84,8 @@ def main():
     input_mode.add_argument('--input', '-i', nargs='+', help='(IF NOT USING CORPUS PATH) path to single file to convert')
 
     args = parser.parse_args()
+    
+
 
     if args.file:
         file_id = args.file.lower()
@@ -90,7 +93,7 @@ def main():
             file_id += '.psd'
 
     if args.NO_CORPUS:
-
+    
         c = depender.Converter()
 
         file_num = 0
@@ -158,7 +161,11 @@ def main():
         try:
             print(TREE)
             print()
-            c = depender.Converter(auto_tags='single_sentence')
+            if args.auto_tag:
+                c = depender.Converter(auto_tags='single_sentence')
+            else:
+                c = depender.Converter()
+            # c = depender.Converter(auto_tags='single_sentence')
             dep = c.add_space_after(c.create_dependency_graph(TREE))
             # print(dep.nodes)
             print(dep.original_ID)
@@ -173,7 +180,10 @@ def main():
 
     if args.file:
 
-        c = depender.Converter(auto_tags='corpus')
+        if args.auto_tag:
+            c = depender.Converter(auto_tags='corpus')
+        else:
+            c = depender.Converter()
 
         tag_dict = tagged_corpus(CORPUS.parsed_sents(file_id))
         c.set_tag_dict(tag_dict)
@@ -242,7 +252,12 @@ def main():
             run_post_file(output_path)
 
     if args.corpus:
-
+        
+        if args.auto_tag:
+            c = depender.Converter(auto_tags='corpus')
+        else:
+            c = depender.Converter()
+        
         fileids = CORPUS.fileids()
 
         for file_id in fileids:
