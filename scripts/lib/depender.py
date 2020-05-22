@@ -764,8 +764,8 @@ class Converter():
                                 else:
                                     ifd_tag = 'x'
                     if LEMMA == None:
-                        print(TAG_DICT.get(re.sub(r'\$', '', FORM), '_'))
-                        print(FORM)
+                        # print(TAG_DICT.get(re.sub(r'\$', '', FORM), '_'))
+                        # print(FORM)
                         LEMMA = TAG_DICT.get(re.sub(r'\$', '', FORM), '_')[1]
                     FEATS = Features(ifd_tag).features
                     MISC = defaultdict(lambda: None, {'IFD_tag': ifd_tag})
