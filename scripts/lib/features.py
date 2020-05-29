@@ -243,12 +243,16 @@ class FO_Features():
         if '-' in tag:
             tag, tag_extra = tag.split('-')
         #self.features['Gender'] = fo_rules.feats['Gender'][tag[1]]
-        self.features['Number'] = fo_rules.feats['NOUN']['Number'][tag[2]]
-        self.features['Case'] = fo_rules.feats['NOUN']['Case'][tag[3]]
-        if len(tag) > 4:
-            self.features['Definite'] = fo_rules.feats['NOUN']['Definite'][tag[4]]
+        self.features['Number'] = fo_rules.feats['NOUN']['Number'][tag]
+        self.features['Case'] = fo_rules.feats['NOUN']['Case'][tag_extra]
+        if '$' in tag:
+            self.features['Definite'] = fo_rules.feats['NOUN']['Definite']['$']
         else:
-            self.features['Definite'] = fo_rules.feats['NOUN']['Definite'][None]
+            self.features['Definite'] = fo_rules.feats['NOUN']['Definite']['']
+        #if len(tag) > 4:
+        #    self.features['Definite'] = fo_rules.feats['NOUN']['Definite'][tag[4]]
+        #else:
+        #    self.features['Definite'] = fo_rules.feats['NOUN']['Definite'][None]
         return self.features
 
     def _adjective_features(self, tag):
@@ -322,6 +326,8 @@ class FO_Features():
         return self.features
 
     def _other_features(self, tag):
+        if tag == 'NEG':
+            self.features = None
         if tag[0] == 'e':
             self.features['Foreign'] = 'Yes'
 
@@ -332,23 +338,25 @@ class FO_Features():
 
     def get_features(self):
         word = self.tag[0:3]
-        if word == 'NOU':
-            self._noun_features(self.tag)
+        if word == 'NEG':
+            return self._other_features(self.tag)
+        elif word.startswith('N'): #or word.startswith('NS') in {'N', 'NS'}:
+            return self._noun_features(self.tag)
         elif word == 'ADJ':
-            self._adjective_features(self.tag)
+            return self._adjective_features(self.tag)
         elif word == 'PRO':
             #print(self.tag)
-            self._pronoun_features(self.tag)
+            return self._pronoun_features(self.tag)
         elif word == 'DET':
-            self._determiner_features(self.tag)
+            return self._determiner_features(self.tag)
         elif word == 'NUM':
-            self._numeral_features(self.tag)
+            return self._numeral_features(self.tag)
         elif word == 'VER':
-            self._verb_features(self.tag)
+            return self._verb_features(self.tag)
         elif word == 'ADV':
-            self._adverb_features(self.tag)
+            return self._adverb_features(self.tag)
         else:
-            self._other_features(self.tag)
+            return self._other_features(self.tag)
 
 
 if __name__ == '__main__':
