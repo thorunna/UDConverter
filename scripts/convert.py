@@ -169,7 +169,11 @@ def main():
             else:
                 c = depender.Converter()
             # c = depender.Converter(auto_tags='single_sentence')
-            dep = c.add_space_after(c.create_dependency_graph(TREE))
+            if args.faroese:
+                dep = c.create_dependency_graph(TREE, True)
+            else:
+                dep = c.create_dependency_graph(TREE)
+            dep = c.add_space_after(dep)
             # print(dep.nodes)
             print(dep.original_ID)
             print(dep.plain_text())
