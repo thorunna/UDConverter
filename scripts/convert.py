@@ -189,11 +189,12 @@ def main():
 
         if args.auto_tag:
             c = depender.Converter(auto_tags='corpus')
+            tag_dict = tagged_corpus(CORPUS.parsed_sents(file_id))
+            c.set_tag_dict(tag_dict)
         else:
             c = depender.Converter()
 
-        tag_dict = tagged_corpus(CORPUS.parsed_sents(file_id))
-        c.set_tag_dict(tag_dict)
+        
 
         to_join = []
         to_tag = ''
