@@ -257,7 +257,7 @@ def main():
                         raise
                         print('\n\n', dep.original_ID_plain_text(CORPUS='IcePaHC'))
                         print(f'{type(ex).__name__} for sentence: {ex.args}\n\n')
-                to_join = []
+                    to_join = []
 
         if output_path and args.post_process:
             run_post_file(output_path)
