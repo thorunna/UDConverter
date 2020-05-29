@@ -4,20 +4,22 @@ cconj = {'og', 'men', 'tí', 'ella', 'bæði', 'annaðhvørt', 'hvørki'}
 
 UD_map = {
     'ADJ' : 'ADJ',  # Adjectives tagged as ADJ
-    'ADJR' : 'ADJ', # Comparative adjectives tagged as ADV
-    'ADJS' : 'ADJ', # Superlative adjectives tagged as ADV
     'ADV' : 'ADV',  # Adverbs tagged as ADV
-    'ADVR' : 'ADV', # Comparative adverbs tagged as ADV
-    'ADVS' : 'ADV', # Superlative adverbs tagged as ADV
-    'ALSO' : 'ADV',
+    'ALS' : 'ADV',  #ALSO
     'BAG' : 'VERB', #verandi
     'BE' : 'VERB',  #vera, verður cop í relations?
     'BEI' : 'VERB', # boðháttur
     'BEN' : 'VERB',
+    'BED' : 'VERB',
+    'BEP' : 'VERB',
     'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
     'D' : 'DET',    # generalized determiners tagged as DET (determiner)
     'DAN' : 'VERB', #gjörd
     'DO' : 'VERB',  #'gera', do, tagged as verb
+    'DOD' : 'VERB',
+    'DOI' : 'VERB',
+    'DON' : 'VERB',
+    'DOP' : 'VERB',
     'ES' : 'PRON',  #expletive tagged as PRON
     'FOR' : 'FOR', #P? TODO 
     'FP' : 'PART',  #focus particles marked as PART
@@ -25,31 +27,43 @@ UD_map = {
     'HV' : 'AUX',   # getur líka verið aðalsögn #'have' tagged as auxiliary verb
     'HVI' : 'VERB',
     'HVN' : 'VERB',
-    'INTJ' : 'INTJ',    #interjection
+    'HVD' : 'VERB',
+    'HVP' : 'VERB',
+    'INT' : 'INTJ',    #interjection
     'MD' : 'AUX',   #modal verbs tagged as auxiliary
+    'MDD' : 'AUX',
+    'MDP' : 'AUX',
     'N' : 'NOUN',   # generalized nouns tagged as NOUN
+    'NS' : 'NOUN',
     'NEG' : 'ADV',
     'NPR' : 'PROPN',    # proper nouns tagged as PROPN
-    'NPRS' : 'PROPN',
     'NUM' : 'NUM',
     'ONE' : 'DET',
-    'OTHER' : 'PRON',
-    'OTHERS' : 'PRON',
+    'OTH' : 'PRON',
     'P' : 'ADP',    # generalized prepositions tagged as ADP
     'PRO' : 'PRON',
     'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
+    'QR' : 'ADJ',
     'RAG' : '', # verðandi TODO 
     'RD' : 'VERB',  #'verða', become, tagged as verb
+    'RDP' : 'VERB',
+    'RDI' : 'VERB',
+    'RDN' : 'VERB',
+    'RDD' : 'VERB',
     'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
     'RPX' : 'PART', # agnir markaðar sem PART
-    'SUCH' : 'PRON',
+    'SUC' : 'PRON', #SUCH
     'TO' : 'PART',  # Infinitive marker tagged as PART (particle)
     'VAG' : 'VERB',
     'VAN' : 'VERB',
     'VB' : 'VERB',
-    'WADV' : 'ADV', #TODO: ath. betur - bara spor?
+    'VBD' : 'VERB',
+    'VBN' : 'VERB',
+    'VBI' : 'VERB',
+    'VBP' : 'VERB',
+    'WAD' : 'ADV', #TODO: ath. betur - bara spor? - WADV
     'WD' : 'DET',   # WH-determiner tagged as DET (determiner)
-    'WPRO' : 'PRON',    #wh-pronouns
+    'WPR' : 'PRON',    #wh-pronouns - WPRO
     'WQ' : 'SCONJ'
 }
 
@@ -95,32 +109,32 @@ feats = {
         
     },
     'PRON' : { # Case, Gender, Number, PronType
-        'Number': {
-            'FT' : 'Plur',  # noun, plural number
-            'ET' : 'Sing'    # noun singular number
-        },
+        #'Number': {
+        #    'FT' : 'Plur',  # noun, plural number
+        #    'ET' : 'Sing'    # noun singular number
+        #},
         'Case' : {
             'N' : 'Nom',    # nominative case
             'A' : 'Acc',    # accusative case
             'D' : 'Dat',    # dative case
             'G' : 'Gen'     # genitive case
-        },
-        'PronType' : {
-            'pfn' : 'Prs',     #personal
-            'abfn' : 'Rcp',     #reciprocal
-            'sp' : 'Int',     #interrogative
-            'tv' : 'Rel',     #relative
-            'ab' : 'Dem',     #demonstrative
-            'oakv' : 'Ind'      #indefinite
-        },
-        'Gender' : {
-            'KK' : 'Masc',
-            'KVK' : 'Fem',
-            'HK' : 'Neut',
-            'hann' : 'Masc',    # for capturing personal pronoun gender
-            'hún' : 'Fem',      # for capturing personal pronoun gender
-            'það' : 'Neut',     # for capturing personal pronoun gender
         }
+        #'PronType' : {
+        #    'pfn' : 'Prs',     #personal
+        #    'abfn' : 'Rcp',     #reciprocal
+        #    'sp' : 'Int',     #interrogative
+        #    'tv' : 'Rel',     #relative
+        #    'ab' : 'Dem',     #demonstrative
+        #    'oakv' : 'Ind'      #indefinite
+        #},
+        #'Gender' : {
+        #    'KK' : 'Masc',
+        #    'KVK' : 'Fem',
+        #    'HK' : 'Neut',
+        #    'hann' : 'Masc',    # for capturing personal pronoun gender
+        #    'hún' : 'Fem',      # for capturing personal pronoun gender
+        #    'það' : 'Neut',     # for capturing personal pronoun gender
+        #}
     },
     'DET' : {
         'Case' : {
@@ -141,16 +155,16 @@ feats = {
             'P' : 'Pos',    #first degree
             'R' : 'Cmp',    #second Degree
             'S' : 'Sup'     #third degree
-        },
-        'Gender' : {
-            'KK' : 'Masc',
-            'KVK' : 'Fem',
-            'HK' : 'Neut'
-        },
-        'Number' : {
-            'ET' : 'Sing',
-            'FT' : 'Plur'
         }
+        #'Gender' : {
+        #    'KK' : 'Masc',
+        #    'KVK' : 'Fem',
+        #    'HK' : 'Neut'
+        #}
+        #'Number' : {
+        #    'ET' : 'Sing',
+        #    'FT' : 'Plur'
+        #}
     },
     'ADV' : {
         'Degree' : {

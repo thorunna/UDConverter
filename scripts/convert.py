@@ -56,7 +56,7 @@ TREE = ''
 def main():
     '''01.05.20
 
-    Converts IcePaHC-format .psd corpus to Universal Dependecies framework
+    Converts IcePaHC-format .psd corpus to Universal Dependencies framework
 
     '''
     parser = argparse.ArgumentParser(description='Script for testing UD converter')
@@ -70,6 +70,7 @@ def main():
                         help='path to corpora parent folder, default is current working dir')
     parser.add_argument('--output', '-o', help='path to output folder', action='store_true')
     parser.add_argument('--auto_tag', '-tag', help='flag for automatically tagging input text', action='store_true')
+    parser.add_argument('--faroese', '-far', help='flag for converting a Faroese treebank', action='store_true')
 
     input_type = parser.add_mutually_exclusive_group(required=True)
     input_type.add_argument('--NO_CORPUS', '-N', help='no corpus, convert single file',action='store_true',)
@@ -83,7 +84,6 @@ def main():
                        help='flag to parse whole Treebank corpus')
     input_mode.add_argument('--input', '-i', nargs='+', help='(IF NOT USING CORPUS PATH) path to single file to convert')
 
-    parser.add_argument('--faroese', '-far', help='flag for converting a Faroese treebank', action='store_true')
 
     args = parser.parse_args()
     
@@ -166,6 +166,9 @@ def main():
             print()
             if args.auto_tag:
                 c = depender.Converter(auto_tags='single_sentence')
+            elif args.faroese:
+                print('FAROESE')
+                c = depender.Converter(faroese=True)
             else:
                 c = depender.Converter()
             # c = depender.Converter(auto_tags='single_sentence')

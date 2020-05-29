@@ -258,12 +258,13 @@ class Converter():
         dg (type): UnviersalDependencyGraph object.
 
     """
-    def __init__(self, auto_tags=False):
+    def __init__(self, auto_tags=False, faroese=False):
         #todo read rules from config file
         self.t = None
         self.dg = None
         self.auto_tags = auto_tags
         self.tagged_sentences = None
+        self.faroese = faroese
 
     def set_tag_dict(self, tag_dict):
         self.tagged_sentences = tag_dict
@@ -687,7 +688,7 @@ class Converter():
                 node['head'] = self.dg.get_by_address(last_index)['head']
         del self.dg.nodes[last_index]
 
-    def create_dependency_graph(self, tree, faroese):
+    def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree.
 
         Returns:
@@ -751,7 +752,8 @@ class Converter():
                 XPOS = tag
                 MISC = defaultdict(lambda: None)
                 # Feature Classes called here
-                if faroese:
+                if self.faroese:
+                    #print('HALLO')
                     UPOS = Features.get_UD_tag(tag, True)
                 else:
                     UPOS = Features.get_UD_tag(tag, False)
@@ -773,6 +775,11 @@ class Converter():
                         LEMMA = TAG_DICT.get(re.sub(r'\$', '', FORM), '_')[1]
                     FEATS = Features(ifd_tag).features
                     MISC = defaultdict(lambda: None, {'IFD_tag': ifd_tag})
+                elif self.faroese:
+                    FEATS = FO_Features(tag).get_features()
+                    print(FEATS)
+                    #print(type(FEATS))
+                    MISC = defaultdict(lambda: None)
                 else:
                     FEATS = defaultdict(lambda: None)
                     MISC = defaultdict(lambda: None)
