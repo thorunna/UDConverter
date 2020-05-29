@@ -777,7 +777,7 @@ class Converter():
                     MISC = defaultdict(lambda: None, {'IFD_tag': ifd_tag})
                 elif self.faroese:
                     FEATS = FO_Features(tag).get_features()
-                    print(FEATS)
+                    #print(FEATS)
                     #print(type(FEATS))
                     MISC = defaultdict(lambda: None)
                 else:

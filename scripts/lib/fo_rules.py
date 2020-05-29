@@ -69,6 +69,13 @@ UD_map = {
 
 
 feats = {
+    'Case' : {
+        'N' : 'Nom',
+        'A' : 'Acc',
+        'D' : 'Dat',
+        'G' : 'Gen'
+    },
+    
     'NOUN' : {
         'Case' : {
             'N' : 'Nom',    # nominative case
@@ -188,20 +195,18 @@ feats = {
             'S' : 'Sub',    #subjunctive (IcePaHC POS-tag)
         },
         'Tense' : {
-            'NT' : 'Pres',   #present tense
-            'ÞT' : 'Past',    #past tense
             'P' : 'Pres',
             'D' : 'Past'
         },
         'VerbForm' : {
             '' : 'Fin',     #finite verb
             'inf' : 'Inf',     #infinitive verb
-            'part' : 'Part'     #participle
+            'N' : 'Part'     #participle
         },
         'Voice' : {
             'GM' : 'Act',     #active voice
             'MM' : 'Mid',     #middle voice
-            'pass' : 'Pass'     #passive voice
+            'A' : 'Pass'     #passive voice
         },
         'Person' : {
             '1P' : '1',
