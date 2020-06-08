@@ -6,7 +6,7 @@ import requests
 
 from collections import defaultdict
 
-from lib.rules import UD_map, OTB_map, feats
+from lib.rules import UD_map, OTB_map, Icepahc_feats
 from lib import fo_rules
 from lib.tools import decode_escaped
 
@@ -242,29 +242,29 @@ class ICE_Features():
     def _noun_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
-        self.features['Number'] = feats['NOUN']['Number'][tag]
-        self.features['Case'] = feats['NOUN']['Case'][case]
+        self.features['Number'] = Icepahc_feats['NOUN']['Number'][tag]
+        self.features['Case'] = Icepahc_feats['NOUN']['Case'][case]
         if '$' in tag:
-            self.features['Definite'] = feats['NOUN']['Definite']['$']
+            self.features['Definite'] = Icepahc_feats['NOUN']['Definite']['$']
         else:
-            self.features['Definite'] = feats['NOUN']['Definite']['']
+            self.features['Definite'] = Icepahc_feats['NOUN']['Definite']['']
         return self.features
 
     def _adjective_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
-            self.features['Case'] = feats['ADJ']['Case'][case]
+            self.features['Case'] = Icepahc_feats['ADJ']['Case'][case]
         if len(tag) > 3:
-            self.features['Degree'] = feats['ADJ']['Degree'][tag[3]]
+            self.features['Degree'] = Icepahc_feats['ADJ']['Degree'][tag[3]]
         else:
-            self.features['Degree'] = feats['ADJ']['Degree']['P']
+            self.features['Degree'] = Icepahc_feats['ADJ']['Degree']['P']
         #print(self.features)
         return self.features
 
     def _pronoun_features(self, tag):
         if '-' in tag:
             case = tag.split('-')[1]
-            self.features['Case'] = feats['Case'][case]
+            self.features['Case'] = Icepahc_feats['Case'][case]
             return self.features
 
     def _determiner_features(self, tag):
@@ -272,37 +272,37 @@ class ICE_Features():
             self.features['PronType'] = 'Article'
         if '-' in tag:
             case = tag.split('-')[1]
-            self.features['Case'] = feats['Case'][case]
+            self.features['Case'] = Icepahc_feats['Case'][case]
         return self.features
 
     def _numeral_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
-            self.features['Case'] = feats['NUM']['Case'][case]
+            self.features['Case'] = Icepahc_feats['NUM']['Case'][case]
         return self.features
 
     def _verb_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
-            self.features['Case'] = feats['VERB']['Case'][case]
+            self.features['Case'] = Icepahc_feats['VERB']['Case'][case]
         if len(tag) < 3:
-            self.features['VerbForm'] = feats['VERB']['VerbForm']['inf']
+            self.features['VerbForm'] = Icepahc_feats['VERB']['VerbForm']['inf']
         elif len(tag) == 4:
-            self.features['Tense'] = feats['VERB']['Tense'][tag[2]]
-            self.features['Mood'] = feats['VERB']['Mood'][tag[3]]
+            self.features['Tense'] = Icepahc_feats['VERB']['Tense'][tag[2]]
+            self.features['Mood'] = Icepahc_feats['VERB']['Mood'][tag[3]]
         elif len(tag) == 3:
             if tag[1] == 'A':
-                self.features['Voice'] = feats['VERB']['Voice'][tag[1]]
-            self.features['VerbForm'] = feats['VERB']['VerbForm'][tag[2]]
+                self.features['Voice'] = Icepahc_feats['VERB']['Voice'][tag[1]]
+            self.features['VerbForm'] = Icepahc_feats['VERB']['VerbForm'][tag[2]]
             if tag[2] == 'I':
-                self.features['Mood'] = feats['VERB']['Mood']['IMP']
+                self.features['Mood'] = Icepahc_feats['VERB']['Mood']['IMP']
         return self.features
 
     def _adverb_features(self, tag):
         if len(tag) > 3:
-            self.features['Degree'] = feats['ADV']['Degree'][tag[3]]
+            self.features['Degree'] = Icepahc_feats['ADV']['Degree'][tag[3]]
         else:
-            self.features['Degree'] = feats['ADV']['Degree']['P']
+            self.features['Degree'] = Icepahc_feats['ADV']['Degree']['P']
         return self.features
     
     def _foreign_features(self, tag):

@@ -135,57 +135,7 @@ feats = {
             'inf' : 'Inf',     #infinitive verb
             'N' : 'Part'     #participle
         }
-    },
-    'AUX' : {
-        'Mood' : {
-            'IMP' : 'Imp',  #imperative
-            'FH' : 'Ind',   #indicative
-            'VH' : 'Sub',   #subjunctive
-            'I' : 'Ind',    #indicative (IcePaHC POS-tag)
-            'S' : 'Sub',    #subjunctive (IcePaHC POS-tag)
-        },
-        'Tense' : {
-            'NT' : 'Pres',   #present tense
-            'ÞT' : 'Past',    #past tense
-            'P' : 'Pres',
-            'D' : 'Past'
-        },
-        'VerbForm' : {
-            '' : 'Fin',     #finite verb
-            'inf' : 'Inf',     #infinitive verb
-            'part' : 'Part'     #participle
-        },
-        'Voice' : {
-            'GM' : 'Act',     #active voice
-            'MM' : 'Mid',     #middle voice
-            'pass' : 'Pass'     #passive voice
-        },
-        'Person' : {
-            '1P' : '1',
-            '2P' : '2',
-            '3P' : '3'
-        },
-        'Number' : {
-            'ET' : 'Sing',
-            'FT' : 'Plur'
-        },
-        'Case' : {
-            'NF' : 'Nom',
-            'ÞF' : 'Acc',
-            'ÞGF' : 'Dat',
-            'EF' : 'Gen'
-        },
-        'Gender' : {
-            'KK' : 'Masc',
-            'KVK' : 'Fem',
-            'HK' : 'Neut'
-        }
-    },
-    'ADP' : {
-        'AdpType' : {
-            'P' : 'Prep'
-        }
-    },
+    }
 #    'SCONJ' : {},   #no features needed for subordinating conjunctions
 #    'CCONJ' : {},   #no features needed for coordinating conjunctions
 #    'PART' : {},    #no features possible for particles
