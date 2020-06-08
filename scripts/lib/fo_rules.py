@@ -42,8 +42,8 @@ UD_map = {
     'OTH' : 'PRON',
     'P' : 'ADP',    # generalized prepositions tagged as ADP
     'PRO' : 'PRON',
-    'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
-    'QR' : 'ADJ',
+    'Q' : 'DET',    # quantifiers tagged as DET - upphaflega varpað yfir í ADJ
+    'QR' : 'DET',
     'RAG' : '', # verðandi TODO 
     'RD' : 'VERB',  #'verða', become, tagged as verb
     'RDP' : 'VERB',
@@ -86,70 +86,13 @@ feats = {
         'Number': {
             'NS' : 'Plur',  # noun, plural number
             'N' : 'Sing',
-            'NPR' : 'Sing'    # noun singular number
+            'NPR' : 'Sing',    # noun singular number
+            'NPRS' : 'Plur'
         },
         'Definite' : { # TODO: remove def from dict
             '$' : 'Def',
             '' : 'Ind'
-        },
-        #'Gender' : { # TODO: add gender to feature matrix
-        #    'kk' : 'Masc',
-        #    'kvk' : 'Fem',
-        #    'hk' : 'Neut'
-        
-    },
-    'PROPN' : { # Case, Number, Definite
-        'Number': {
-            'NPRS' : 'Plur',  # noun, plural number
-            'NPR' : 'Sing'    # noun singular number
-        },
-        'Case' : {
-            'N' : 'Nom',    # nominative case
-            'A' : 'Acc',    # accusative case
-            'D' : 'Dat',    # dative case
-            'G' : 'Gen'     # genitive case
-        },
-        #'Gender' : {
-        #    'kk' : 'Masc',
-        #    'kvk' : 'Fem',
-        #    'hk' : 'Neut'
-        
-    },
-    'PRON' : { # Case, Gender, Number, PronType
-        #'Number': {
-        #    'FT' : 'Plur',  # noun, plural number
-        #    'ET' : 'Sing'    # noun singular number
-        #},
-        'Case' : {
-            'N' : 'Nom',    # nominative case
-            'A' : 'Acc',    # accusative case
-            'D' : 'Dat',    # dative case
-            'G' : 'Gen'     # genitive case
-        }
-        #'PronType' : {
-        #    'pfn' : 'Prs',     #personal
-        #    'abfn' : 'Rcp',     #reciprocal
-        #    'sp' : 'Int',     #interrogative
-        #    'tv' : 'Rel',     #relative
-        #    'ab' : 'Dem',     #demonstrative
-        #    'oakv' : 'Ind'      #indefinite
-        #},
-        #'Gender' : {
-        #    'KK' : 'Masc',
-        #    'KVK' : 'Fem',
-        #    'HK' : 'Neut',
-        #    'hann' : 'Masc',    # for capturing personal pronoun gender
-        #    'hún' : 'Fem',      # for capturing personal pronoun gender
-        #    'það' : 'Neut',     # for capturing personal pronoun gender
-        #}
-    },
-    'DET' : {
-        'Case' : {
-            'N' : 'Nom',
-            'A' : 'Acc',
-            'D' : 'Dat',
-            'G' : 'Gen'
-        }
+        } 
     },
     'ADJ' : {
         'Case' : {
@@ -163,15 +106,6 @@ feats = {
             'R' : 'Cmp',    #second Degree
             'S' : 'Sup'     #third degree
         }
-        #'Gender' : {
-        #    'KK' : 'Masc',
-        #    'KVK' : 'Fem',
-        #    'HK' : 'Neut'
-        #}
-        #'Number' : {
-        #    'ET' : 'Sing',
-        #    'FT' : 'Plur'
-        #}
     },
     'ADV' : {
         'Degree' : {
@@ -189,8 +123,6 @@ feats = {
     'VERB' : {
         'Mood' : {
             'IMP' : 'Imp',  #imperative
-            'FH' : 'Ind',   #indicative
-            'VH' : 'Sub',   #subjunctive
             'I' : 'Ind',    #indicative (IcePaHC POS-tag)
             'S' : 'Sub',    #subjunctive (IcePaHC POS-tag)
         },
@@ -202,37 +134,6 @@ feats = {
             '' : 'Fin',     #finite verb
             'inf' : 'Inf',     #infinitive verb
             'N' : 'Part'     #participle
-        },
-        'Voice' : {
-            'GM' : 'Act',     #active voice
-            'MM' : 'Mid',     #middle voice
-            'A' : 'Pass'     #passive voice
-        },
-        'Person' : {
-            '1P' : '1',
-            '2P' : '2',
-            '3P' : '3'
-        },
-        'Number' : {
-            'ET' : 'Sing',
-            'FT' : 'Plur'
-        },
-        'Case' : {
-            'NF' : 'Nom',   # nominative case (DMII)
-            'ÞF' : 'Acc',   # accusative case (DMII)
-            'ÞGF' : 'Dat',  # dative case (DMII)
-            'ÞG' : 'Dat',   # dative case (DMII, alternative)
-            'EF' : 'Gen',   # genitive case (DMII)
-            'N' : 'Nom',    # nominative case (IcePaHC)
-            'A' : 'Acc',    # accusative case (IcePaHC)
-            'D' : 'Dat',    # dative case (IcePaHC)
-            'G' : 'Gen',    # genitive case (IcePaHC)
-            None : 'Nom'
-        },
-        'Gender' : {
-            'KK' : 'Masc',
-            'KVK' : 'Fem',
-            'HK' : 'Neut'
         }
     },
     'AUX' : {
@@ -278,28 +179,6 @@ feats = {
             'KK' : 'Masc',
             'KVK' : 'Fem',
             'HK' : 'Neut'
-        }
-    },
-    'NUM' : {
-        'Case' : {
-            'N' : 'Nom',
-            'A' : 'Acc',
-            'D' : 'Dat',
-            'G' : 'Gen'
-        },
-        'Gender' : {
-            'KK' : 'Masc',
-            'KVK' : 'Fem',
-            'HK' : 'Neut'
-        },
-        'Number': {
-            'FT' : 'Plur',  # plural
-            'ET' : 'Sing'    # singular
-        },
-        'NumType' : {       #ATH. mögulegt að tilgreina þetta?
-            'C' : 'Card',    #Cardinal number
-            'O' : 'Ord',     #Ordinal number
-            '' : 'Frac'      #Fraction
         }
     },
     'ADP' : {
