@@ -57,7 +57,7 @@ UD_map = {
     'P' : 'ADP',    # generalized prepositions tagged as ADP
     'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
     'RPX' : 'ADP',
-    'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
+    'Q' : 'DET',    # quantifiers tagged as DET - áður: quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
     'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
     'V' : 'VERB',
     'DO' : 'VERB',  #'gera', do, tagged as verb
@@ -81,6 +81,7 @@ UD_map = {
     'ADJ' : 'ADJ',  # Adjectives tagged as ADV
     'ADJR' : 'ADJ', # Comparative adjectives tagged as ADV
     'ADJS' : 'ADJ', # Superlative adjectives tagged as ADV
+    'WADJ' : 'ADJ',
     'ADV' : 'ADV',  # Adverbs tagged as ADV
     'WADV' : 'ADV', #TODO: ath. betur - bara spor?
     'NEG' : 'ADV',
@@ -290,8 +291,8 @@ Icepahc_feats = {
     },
     'PRON' : { # Case, Gender, Number, PronType
         'Number': {
-            'FT' : 'Plur',  # noun, plural number
-            'ET' : 'Sing'    # noun singular number
+            'S' : 'Plur',  # noun, plural number
+            '' : 'Sing'    # noun singular number
         },
         'Case' : {
             'N' : 'Nom',    # nominative case
@@ -317,12 +318,15 @@ Icepahc_feats = {
         }
     },
     'DET' : {
-        'Case' : {
-            'N' : 'Nom',
-            'A' : 'Acc',
-            'D' : 'Dat',
-            'G' : 'Gen'
-        }
+        'Number' : {
+            '' : 'Sing',
+            'S' : 'Plur'
+        },
+        'Degree' : {
+            '' : 'Pos',
+            'R' : 'Cmp',
+            'S' : 'Sup'
+        },
     },
     'ADJ' : {
         'Case' : {

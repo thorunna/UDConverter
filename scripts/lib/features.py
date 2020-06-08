@@ -266,13 +266,26 @@ class ICE_Features():
             case = tag.split('-')[1]
             self.features['Case'] = Icepahc_feats['Case'][case]
             return self.features
+        if tag.startswith('OTHERS'):
+            self.features['Number'] = Icepahc_feats['PRON']['Number']['S']
+        elif tag.startswith('OTHER'):
+            self.features['Number'] = Icepahc_feats['PRON']['Number']['']
 
     def _determiner_features(self, tag):
-        if tag == 'D':
-            self.features['PronType'] = 'Article'
         if '-' in tag:
             case = tag.split('-')[1]
             self.features['Case'] = Icepahc_feats['Case'][case]
+        if tag == 'D':
+            self.features['PronType'] = 'Article'
+        elif tag == 'ONES':
+            self.features['Number'] = Icepahc_feats['DET']['Number']['S']
+        elif tag.startswith('Q'):
+            if tag == 'Q':
+                self.features['Degree'] = Icepahc_feats['DET']['Degree']['']
+            else:
+                self.features['Degree'] = Icepahc_feats['DET']['Degree'][tag]
+        else:
+            self.features['Number'] = Icepahc_feats['DET']['Number']['']
         return self.features
 
     def _numeral_features(self, tag):
@@ -294,12 +307,19 @@ class ICE_Features():
             if tag[1] == 'A':
                 self.features['Voice'] = Icepahc_feats['VERB']['Voice'][tag[1]]
             self.features['VerbForm'] = Icepahc_feats['VERB']['VerbForm'][tag[2]]
+            if tag[2] == 'N':
+                elf.features['Tense'] = Icepahc_feats['VERB']['Tense']['D']
+            elif tag[2] == 'G':
+                elf.features['Tense'] = Icepahc_feats['VERB']['Tense']['P']
             if tag[2] == 'I':
                 self.features['Mood'] = Icepahc_feats['VERB']['Mood']['IMP']
         return self.features
 
     def _adverb_features(self, tag):
-        if len(tag) > 3:
+        if '-' in tag:
+            tag, case = tag.split('-')
+            self.features['Case'] = Icepahc_feats['ADV']['Case'][case]
+        if len(tag) > 3 and tag != 'ALSO':
             self.features['Degree'] = Icepahc_feats['ADV']['Degree'][tag[3]]
         else:
             self.features['Degree'] = Icepahc_feats['ADV']['Degree']['P']
@@ -329,23 +349,23 @@ class ICE_Features():
         word = self.tag[0:3]
         verbal_prefixes = ['VB', 'VA', 'BE', 'BA', 'DO', 'DA', 'HV', 'HA', 'MD', 'RD', 'RA']
         det_prefixes = ['D', 'WD', 'Q', 'QR']
-        if word == 'ADJ':
+        if word == 'ADJ' or tag.startswith('WADJ'):
             return self._adjective_features(self.tag)
-        elif word in {'PRO', 'SUCH', 'WPRO', 'OTHER'}:
+        elif word in {'PRO', 'SUC', 'WPR', 'OTH'}:
             return self._pronoun_features(self.tag)
-        elif word.startswith(tuple(det_prefixes)) or word == 'ONE':
-            return self._determiner_features(self.tag)
         elif word == 'NUM':
             return self._numeral_features(self.tag)
         elif word.startswith('N') and word != 'NEG':
             return self._noun_features(self.tag)
         elif word.startswith(tuple(verbal_prefixes)):
             return self._verb_features(self.tag)
-        elif word == 'ADV' or word == 'WADV':
+        elif word.startswith(tuple(det_prefixes)) or word == 'ONE':
+            return self._determiner_features(self.tag)
+        elif word in {'ADV', 'WAD', 'ALSO'} or word.startswith('FP'):
             return self._adverb_features(self.tag)
         elif word.startswith('FW'):
             return self._foreign_features(self.tag)
-        elif word.startswith('P') or word == 'FOR':
+        elif word.startswith('P'):
             return self._prep_features(self.tag)
         elif word.startswith('TO'):
             return self._to_features(self.tag)
@@ -418,6 +438,9 @@ class FO_Features():
         return self.features
 
     def _adverb_features(self, tag):
+        if '-' in tag:
+            tag, case = tag.split('-')
+            self.features['Case'] = fo_rules.feats['ADV']['Case'][case]
         if len(tag) > 3:
             self.features['Degree'] = fo_rules.feats['ADV']['Degree'][tag[3]]
         else:
@@ -450,7 +473,7 @@ class FO_Features():
         det_prefixes = ['D', 'WD', 'Q', 'QR']
         if word == 'ADJ':
             return self._adjective_features(self.tag)
-        elif word in {'PRO', 'SUCH', 'WPRO', 'OTHER'}:
+        elif word in {'PRO', 'SUC', 'WPR', 'OTH'}:
             return self._pronoun_features(self.tag)
         elif word.startswith(tuple(det_prefixes)) or word == 'ONE':
             return self._determiner_features(self.tag)
