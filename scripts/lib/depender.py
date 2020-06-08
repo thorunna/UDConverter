@@ -781,7 +781,7 @@ class Converter():
                     #print(type(FEATS))
                     MISC = defaultdict(lambda: None)
                 else:
-                    FEATS = defaultdict(lambda: None)
+                    FEATS = ICE_Features(tag).get_features()
                     MISC = defaultdict(lambda: None)
                 if FORM not in {'None', None}:
                     self.dg.add_node({'address': nr,

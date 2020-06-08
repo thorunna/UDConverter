@@ -21,7 +21,7 @@ UD_map = {
     'DON' : 'VERB',
     'DOP' : 'VERB',
     'ES' : 'PRON',  #expletive tagged as PRON
-    'FOR' : 'FOR', #P? TODO 
+    'FOR' : 'P', #P? TODO 
     'FP' : 'PART',  #focus particles marked as PART
     'FW' : 'X',
     'HV' : 'AUX',   # getur líka verið aðalsögn #'have' tagged as auxiliary verb
