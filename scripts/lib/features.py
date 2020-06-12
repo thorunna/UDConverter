@@ -258,7 +258,6 @@ class ICE_Features():
             self.features['Degree'] = Icepahc_feats['ADJ']['Degree'][tag[3]]
         else:
             self.features['Degree'] = Icepahc_feats['ADJ']['Degree']['P']
-        #print(self.features)
         return self.features
 
     def _pronoun_features(self, tag):
@@ -291,7 +290,7 @@ class ICE_Features():
     def _numeral_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
-            self.features['Case'] = Icepahc_feats['NUM']['Case'][case]
+            self.features['Case'] = Icepahc_feats['Case'][case]
         return self.features
 
     def _verb_features(self, tag):
@@ -336,13 +335,14 @@ class ICE_Features():
     def _to_features(self, tag):
         self.features['PartType'] = 'Inf'
         return self.features
+
+    def _es_features(self, tag):
+        self.features['Gender'] = 'Neut'
+        self.features['Case'] = 'Nom'
+        self.features['Number'] = 'Sing'
+        return self.features
     
     def _other_features(self, tag):
-        return self.features
-
-    def _get_features(self, tag):
-        self.methods.get(tag[0], lambda x: 'x')(tag)
-        self.features.setAll_features()
         return self.features
 
     def get_features(self):
@@ -369,6 +369,8 @@ class ICE_Features():
             return self._prep_features(self.tag)
         elif word.startswith('TO'):
             return self._to_features(self.tag)
+        elif word.startswith('ES'):
+            return self._es_features(self.tag)
         else:
             return self._other_features(self.tag)
 
@@ -397,7 +399,6 @@ class FO_Features():
             self.features['Degree'] = fo_rules.feats['ADJ']['Degree'][tag[3]]
         else:
             self.features['Degree'] = fo_rules.feats['ADJ']['Degree']['P']
-        #print(self.features)
         return self.features
 
     def _pronoun_features(self, tag):
@@ -417,7 +418,7 @@ class FO_Features():
     def _numeral_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
-            self.features['Case'] = fo_rules.feats['NUM']['Case'][case]
+            self.features['Case'] = fo_rules.feats['Case'][case]
         return self.features
 
     def _verb_features(self, tag):
@@ -458,13 +459,14 @@ class FO_Features():
     def _to_features(self, tag):
         self.features['PartType'] = 'Inf'
         return self.features
+
+    def _es_features(self, tag):
+        self.features['Gender'] = 'Neut'
+        self.features['Case'] = 'Nom'
+        self.features['Number'] = 'Sing'
+        return self.features
     
     def _other_features(self, tag):
-        return self.features
-
-    def _get_features(self, tag):
-        self.methods.get(tag[0], lambda x: 'x')(tag)
-        self.features.setAll_features()
         return self.features
 
     def get_features(self):
@@ -491,6 +493,8 @@ class FO_Features():
             return self._prep_features(self.tag)
         elif word.startswith('TO'):
             return self._to_features(self.tag)
+        elif word.startswith('ES'):
+            return self._es_features(self.tag)
         else:
             return self._other_features(self.tag)
 

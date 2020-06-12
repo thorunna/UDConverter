@@ -21,7 +21,7 @@ UD_map = {
     'DON' : 'VERB',
     'DOP' : 'VERB',
     'ES' : 'PRON',  #expletive tagged as PRON
-    'FOR' : 'P', #P? TODO 
+    'FOR' : 'P', #P?
     'FP' : 'PART',  #focus particles marked as PART
     'FW' : 'X',
     'HV' : 'AUX',   # getur líka verið aðalsögn #'have' tagged as auxiliary verb
@@ -44,7 +44,7 @@ UD_map = {
     'PRO' : 'PRON',
     'Q' : 'DET',    # quantifiers tagged as DET - upphaflega varpað yfir í ADJ
     'QR' : 'DET',
-    'RAG' : '', # verðandi TODO 
+    'RAG' : 'VERB', # verðandi 
     'RD' : 'VERB',  #'verða', become, tagged as verb
     'RDP' : 'VERB',
     'RDI' : 'VERB',

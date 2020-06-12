@@ -244,7 +244,7 @@ DMII_map = {
             'FT' : 'Ind', # if def marker not present in DMII
             None : None
         },
-    },
+}
 
 Icepahc_feats = {
     'Case' : {
@@ -263,30 +263,12 @@ Icepahc_feats = {
         'Number': {
             'NS' : 'Plur',  # noun, plural number
             'N' : 'Sing',
-            'NPR' : 'Sing'    # noun singular number
-            # 'NPR' : ''
-            # 'NPRS' : 'Plur' # proper noun plural
+            'NPR' : 'Sing',    # noun singular number
+            'NPRS' : 'Plur' # proper noun plural
         },
         'Definite' : { # TODO: remove def from dict
             '$' : 'Def',
             '' : 'Ind'
-        }
-    },
-    'PROPN' : { # Case, Number, Definite
-        'Number': {
-            'NPRS' : 'Plur',  # noun, plural number
-            'NPR' : 'Sing'    # noun singular number
-        },
-        'Case' : {
-            'N' : 'Nom',    # nominative case
-            'A' : 'Acc',    # accusative case
-            'D' : 'Dat',    # dative case
-            'G' : 'Gen'     # genitive case
-        },
-        'Gender' : {
-            'kk' : 'Masc',
-            'kvk' : 'Fem',
-            'hk' : 'Neut'
         }
     },
     'PRON' : { # Case, Gender, Number, PronType
@@ -299,22 +281,6 @@ Icepahc_feats = {
             'A' : 'Acc',    # accusative case
             'D' : 'Dat',    # dative case
             'G' : 'Gen'     # genitive case
-        },
-        'PronType' : {
-            'pfn' : 'Prs',     #personal
-            'abfn' : 'Rcp',     #reciprocal
-            'sp' : 'Int',     #interrogative
-            'tv' : 'Rel',     #relative
-            'ab' : 'Dem',     #demonstrative
-            'oakv' : 'Ind'      #indefinite
-        },
-        'Gender' : {
-            'KK' : 'Masc',
-            'KVK' : 'Fem',
-            'HK' : 'Neut',
-            'hann' : 'Masc',    # for capturing personal pronoun gender
-            'hún' : 'Fem',      # for capturing personal pronoun gender
-            'það' : 'Neut',     # for capturing personal pronoun gender
         }
     },
     'DET' : {
@@ -369,32 +335,7 @@ Icepahc_feats = {
             'inf' : 'Inf',     #infinitive verb
             'N' : 'Part'     #participle
         }
-    },
-    'NUM' : {
-        'Case' : {
-            'N' : 'Nom',
-            'A' : 'Acc',
-            'D' : 'Dat',
-            'G' : 'Gen'
-        },
-        'Gender' : {
-            'KK' : 'Masc',
-            'KVK' : 'Fem',
-            'HK' : 'Neut'
-        },
-        'Number': {
-            'FT' : 'Plur',  # plural
-            'ET' : 'Sing'    # singular
-        },
-        'NumType' : {       #ATH. mögulegt að tilgreina þetta?
-            'C' : 'Card',    #Cardinal number
-            'O' : 'Ord',     #Ordinal number
-            '' : 'Frac'      #Fraction
-        }
     }
-#    'SCONJ' : {},   #no features needed for subordinating conjunctions
-#    'CCONJ' : {},   #no features needed for coordinating conjunctions
-#    'PART' : {},    #no features possible for particles
 }
 
 head_rules = {
