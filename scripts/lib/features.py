@@ -342,15 +342,7 @@ class ICE_Features():
         return self.features
     
     def _foreign_features(self, tag):
-        self.features['Foreign'] = 'Foreign'
-        return self.features
-
-    def _prep_features(self, tag):
-        self.features['AdpType'] = 'Prep'
-        return self.features
-
-    def _to_features(self, tag):
-        self.features['PartType'] = 'Inf'
+        self.features['Foreign'] = 'Yes'
         return self.features
 
     def _es_features(self, tag):
@@ -382,10 +374,6 @@ class ICE_Features():
             return self._adverb_features(self.tag)
         elif word.startswith('FW'):
             return self._foreign_features(self.tag)
-        elif word.startswith('P'):
-            return self._prep_features(self.tag)
-        elif word.startswith('TO'):
-            return self._to_features(self.tag)
         elif word.startswith('ES'):
             return self._es_features(self.tag)
         else:
@@ -473,15 +461,7 @@ class FO_Features():
         return self.features
     
     def _foreign_features(self, tag):
-        self.features['Foreign'] = 'Foreign'
-        return self.features
-
-    def _prep_features(self, tag):
-        self.features['AdpType'] = 'Prep'
-        return self.features
-
-    def _to_features(self, tag):
-        self.features['PartType'] = 'Inf'
+        self.features['Foreign'] = 'Yes'
         return self.features
 
     def _es_features(self, tag):
@@ -513,10 +493,6 @@ class FO_Features():
             return self._adverb_features(self.tag)
         elif word.startswith('FW'):
             return self._foreign_features(self.tag)
-        elif word.startswith('P') or word == 'FOR':
-            return self._prep_features(self.tag)
-        elif word.startswith('TO'):
-            return self._to_features(self.tag)
         elif word.startswith('ES'):
             return self._es_features(self.tag)
         else:
