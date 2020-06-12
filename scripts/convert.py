@@ -213,7 +213,7 @@ def main():
 
                 dep = c.create_dependency_graph(TREE)
 
-                if dep.get_by_address(len(dep.nodes)-1)['word'] not in {'.', ':', '?', '!', 'kafli'} \
+                if dep.get_by_address(len(dep.nodes)-1)['word'] not in {'.', ':', '?', '!', 'kafli', '"'} \
                 and len(dep.nodes) != 1:
                     to_join.append(dep)
                 else:
