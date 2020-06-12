@@ -441,22 +441,25 @@ class FO_Features():
     def _verb_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
-            self.features['Case'] = Icepahc_feats['VERB']['Case'][case]
+            self.features['Case'] = fo_rules.feats['Case'][case]
         if len(tag) < 3:
-            self.features['VerbForm'] = Icepahc_feats['VERB']['VerbForm']['inf']
+            self.features['VerbForm'] = fo_rules.feats['VERB']['VerbForm']['inf']
         elif len(tag) == 4:
-            self.features['Tense'] = Icepahc_feats['VERB']['Tense'][tag[2]]
-            self.features['Mood'] = Icepahc_feats['VERB']['Mood'][tag[3]]
+            self.features['Tense'] = fo_rules.feats['VERB']['Tense'][tag[2]]
+            self.features['Mood'] = fo_rules.feats['VERB']['Mood'][tag[3]]
         elif len(tag) == 3:
             #if tag[1] == 'A':
             #    self.features['Voice'] = Icepahc_feats['VERB']['Voice'][tag[1]]
-            self.features['VerbForm'] = Icepahc_feats['VERB']['VerbForm'][tag[2]]
+            if tag in {'VBI', 'RDI', 'HVI', 'DOI', 'BEI'}:
+                self.features['Mood'] = fo_rules.feats['VERB']['Mood']['IMP']
+            else:
+                self.features['VerbForm'] = fo_rules.feats['VERB']['VerbForm'][tag[2]]
             if tag[2] == 'N':
-                self.features['Tense'] = Icepahc_feats['VERB']['Tense']['D']
+                self.features['Tense'] = fo_rules.feats['VERB']['Tense']['D']
             elif tag[2] == 'G':
-                self.features['Tense'] = Icepahc_feats['VERB']['Tense']['P']
+                self.features['Tense'] = fo_rules.feats['VERB']['Tense']['P']
             if tag[2] == 'I':
-                self.features['Mood'] = Icepahc_feats['VERB']['Mood']['IMP']
+                self.features['Mood'] = fo_rules.feats['VERB']['Mood']['IMP']
         return self.features
 
     def _adverb_features(self, tag):

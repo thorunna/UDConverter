@@ -133,7 +133,8 @@ feats = {
         'VerbForm' : {
             '' : 'Fin',     #finite verb
             'inf' : 'Inf',     #infinitive verb
-            'N' : 'Part'     #participle
+            'N' : 'Part',     #participle
+            'G' : 'Part'
         }
     }
 #    'SCONJ' : {},   #no features needed for subordinating conjunctions
