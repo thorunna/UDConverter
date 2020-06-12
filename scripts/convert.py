@@ -167,7 +167,6 @@ def main():
             if args.auto_tag:
                 c = depender.Converter(auto_tags='single_sentence')
             elif args.faroese:
-                print('FAROESE')
                 c = depender.Converter(faroese=True)
             else:
                 c = depender.Converter()
@@ -191,6 +190,8 @@ def main():
             c = depender.Converter(auto_tags='corpus')
             tag_dict = tagged_corpus(CORPUS.parsed_sents(file_id))
             c.set_tag_dict(tag_dict)
+        elif args.faroese:
+            c = depender.Converter(faroese=True)
         else:
             c = depender.Converter()
 
@@ -210,10 +211,7 @@ def main():
 
                 TREE = tree.remove_nodes(tags=['CODE'], trace=True)
 
-                if args.faroese:
-                    dep = c.create_dependency_graph(TREE, True)
-                else:
-                    dep = c.create_dependency_graph(TREE)
+                dep = c.create_dependency_graph(TREE)
 
                 if dep.get_by_address(len(dep.nodes)-1)['word'] not in {'.', ':', '?', '!', 'kafli'} \
                 and len(dep.nodes) != 1:
@@ -255,7 +253,10 @@ def main():
 
                     except Exception as ex:
                         raise
-                        print('\n\n', dep.original_ID_plain_text(CORPUS='IcePaHC'))
+                        if args.faroese:
+                            print('\n\n', dep.original_ID_plain_text(CORPUS='FarPaHC'))
+                        else:
+                            print('\n\n', dep.original_ID_plain_text(CORPUS='IcePaHC'))
                         print(f'{type(ex).__name__} for sentence: {ex.args}\n\n')
                     to_join = []
 
@@ -266,6 +267,8 @@ def main():
         
         if args.auto_tag:
             c = depender.Converter(auto_tags='corpus')
+        elif args.faroese:
+            c = depender.Converter(faroese=True)
         else:
             c = depender.Converter()
         
