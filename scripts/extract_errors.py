@@ -166,6 +166,24 @@ def check_sentence_final(in_file):
             ends[sentence[-1].form[0]] += 1
     return ends
 
+def check_left_to_right_errors(in_file, **kwargs):
+    if appos:
+        pass
+    else:
+        cnt = Counter()
+        rels = ['conj', 'fixed', 'flat:name', 'flat:foreign', 'goeswith', 'appos']
+        for rel in rels:
+            cnt[rel] = 0
+        for sentence in in_file:
+            for token in sentence:
+                if re.match(r'^[1-9][0-9]*-[1-9][0-9]*$', token.id): continue
+                if re.match(r'^(conj|fixed|flat|goeswith|appos)', token.deprel)\
+                and int(token.id) < int(token.head):
+                    cnt[token.deprel] += 1
+                        
+
+    return cnt
+
 
 
 def main():
@@ -179,6 +197,7 @@ def main():
                         help='verbose flag')
     parser.add_argument('--sent_id', '-id', action='store_true',
                         help='flag for returning Treebank sentence IDs of matched sentences')
+    parser.add_argument('--appos', action='store_true', help='flag for checking appos rel errors')
 
     error_types = parser.add_mutually_exclusive_group(required=True)
     error_types.add_argument('--roots', '-r',
@@ -191,6 +210,7 @@ def main():
                         help='check for number of dependency errors in files', action='store_true')
     error_types.add_argument('-punct', '-p',
                         help='check type of sentence final punctuation', action='store_true')
+    error_types.add_argument('--left_right', '-lr', help='check for left-to-right errors', action='store_true')
     args = parser.parse_args()
 
     conllu_path = args.input
@@ -203,7 +223,10 @@ def main():
             ends += Counter(check_sentence_final(train))
         for k,v in ends.items():
             print(f'{k}\t{v}')
-
+    
+    if args.left_right:
+        if args.appos:
+            total_counts = Counter()
 
     for conllu_file in os.listdir(conllu_path):
         train = pyconll.load_from_file(os.path.join(conllu_path, conllu_file))
@@ -259,8 +282,14 @@ def main():
                 dep, same, rel, que = get_dependency_errors(train, f)
                 print(f'{dep}\t{same}\t{rel}\t{que}\t{conllu_file}')
             f.close()
-
-
+        if args.left_right:
+            if args.appos:
+                check_left_to_right(train, appos=True)
+            else:
+                counts = check_left_to_right_errors(train)
+                # print('\t'.join([i[0] for i in sorted(counts.items())]))
+                print('\t'.join([str(i[1]) for i in sorted(counts.items())])+f'\t{conllu_file}')
+                
 
 
 if __name__ == '__main__':
