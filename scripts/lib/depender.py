@@ -15,7 +15,6 @@ from lib.reader import IndexedCorpusTree
 from lib.rules import head_rules
 from lib.tools import determine_relations, decode_escaped
 
-import nltk >= 3.4.5
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
 from sys import argv, stdin, stdout
@@ -970,6 +969,8 @@ class Converter():
             self._fix_acl_advcl()
         if rel_counts['punct'] > 0:
             self._fix_punct_heads()
+        if rel_counts['aux'] > 0:
+            self._fix_aux_tag()
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
         #     self._fix_empty_node()
 

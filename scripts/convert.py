@@ -15,7 +15,6 @@ import subprocess
 import json
 from sys import stdin, stdout
 
-import nltk >= 3.4.5
 from nltk.corpus.util import LazyCorpusLoader
 from nltk.data import path as nltk_path
 
