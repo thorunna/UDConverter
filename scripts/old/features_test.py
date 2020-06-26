@@ -11,6 +11,7 @@ from lib import DMII_data
 from lib.rules import tags, feats, cconj
 import string
 import re
+import nltk >= 3.4.5
 from nltk.tree import Tree
 from collections import OrderedDict
 import inspect

@@ -1,3 +1,4 @@
+import nltk >= 3.4.5
 from nltk.corpus.util import LazyCorpusLoader
 from nltk.corpus.reader import CategorizedBracketParseCorpusReader
 from nltk.data import path

@@ -15,6 +15,7 @@ import requests
 import subprocess
 from sys import stdin, stdout
 
+import nltk >= 3.4.5
 from nltk.corpus.util import LazyCorpusLoader
 from nltk.data import path
 

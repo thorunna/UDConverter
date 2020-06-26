@@ -15,6 +15,7 @@ from lib.reader import IndexedCorpusTree
 from lib.rules import head_rules
 from lib.tools import determine_relations, decode_escaped
 
+import nltk >= 3.4.5
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
 from sys import argv, stdin, stdout
