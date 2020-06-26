@@ -341,7 +341,7 @@ Icepahc_feats = {
 }
 
 head_rules = {
-            'IP-INF'        : {'dir':'r', 'rules':['VB', 'DO', 'VAN', 'IP-INF']},
+            'IP-INF'        : {'dir':'r', 'rules':['VB', 'DO', 'VAN', 'IP-INF', 'ADJP']},
             'IP-INF-ABS'    : {'dir':'r', 'rules':['VB']},
             'IP-INF-ABS-PRN': {'dir':'r', 'rules':['VB']},
             'IP-INF-PRP'    : {'dir':'r', 'rules':['VB', 'IP-INF']},      #tilgangsnafnháttur
@@ -388,7 +388,7 @@ head_rules = {
             'IP-MAT-PRN-LFD': {'dir':'r', 'rules':['VB.*', 'VP']},
             'IP-MAT-PRN-SPE': {'dir':'r', 'rules':['VB.*', 'VP']},
             'IP-MAT-SBJ'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'NP', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT']},
-            'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*', 'VAN', 'RD.*', 'DO.*', 'DAN', 'VP', 'ADJP', 'NP', 'VAN', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
+            'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*', 'VAN', 'RD.*', 'DO.*', 'DAN', 'VP', 'ADJP', 'ADVP', 'NP', 'VAN', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE=1'  : {'dir':'r', 'rules':['ADJP']},
             'IP-MAT-SPE-PRN': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE-PRN-ELAB': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
@@ -398,23 +398,24 @@ head_rules = {
             'IP-MAT-SMC'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'NP', 'VAG', 'VP', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT']},
             #MD.* á eftir VB: ef VB er spor ruglast venslin en þá getur MD sem hjálparsögn líka verið haus. Ef MD er seinna er það seinna í lagi
             'IP-SUB'        : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'VAN', 'RD.*', 'DAN', 'RAN', 'HAN', 'BAN', 'VAG', 'RAG', 'HAG', 'BAG', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'NP.*', 'RD.*', 'ADVP', 'IP-SUB']},
+            'IP-SUB=1'      : {'dir':'r', 'rules':['VAN']},
             'IP-SUB-INF'    : {'dir':'r', 'rules':['VB']},
             'IP-SUB-LFD'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HV.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'RD.*', 'NP', 'ADVP', 'IP-SUB', 'HVN']},
             'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-PRN-ELAB': {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-PRN=XXX': {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-REP'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'NP.*', 'ADJP', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB']},
-            'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*', 'HV.*', 'VAN', '.*AG', 'IP-SUB-SPE', 'DO.*',]},
+            'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*', 'HV.*', 'VAN', 'DAN', '.*AG', 'IP-SUB-SPE', 'DO.*',]},
             'IP-SUB-SPE-PRN': {'dir':'r', 'rules':['VB.*', 'HV.*']},
             'IP-SUB-SPE-PRN-ELAB': {'dir':'r', 'rules':['VB.*', 'HV.*']},
             'IP-IMP'        : {'dir':'r', 'rules':['VB.', 'HV.']},    #imperative
             'IP-IMP-PRN'    : {'dir':'r', 'rules':['VB.']},
-            'IP-IMP-SPE'    : {'dir':'r', 'rules':['VB.']},
+            'IP-IMP-SPE'    : {'dir':'r', 'rules':['VB.', 'VAN']},
             'IP-IMP-SPE-PRN': {'dir':'r', 'rules':['VB.']},
             'IP-IMP-SPE-SBJ': {'dir':'r', 'rules':['VB.']},
-            'IP-SMC'        : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAG-.', 'ADJP', 'NP.*']},    #small clause
-            'IP-SMC-SBJ'    : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAG-.', 'ADJP', 'NP.*']},
-            'IP-SMC-SPE'    : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAG-.', 'ADJP', 'NP.*']},
+            'IP-SMC'        : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAN', 'VAG-.', 'ADJP', 'NP.*', 'ADJP']},    #small clause
+            'IP-SMC-SBJ'    : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAN', 'VAG-.', 'ADJP', 'NP.*']},
+            'IP-SMC-SPE'    : {'dir':'r', 'rules':['IP-INF-SBJ', 'IP-SMC', 'NP-PRD', 'VAN', 'VAG-.', 'ADJP', 'NP.*']},
             'IP-PPL'        : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},  #lýsingarháttarsetning
             'IP-PPL-ABS'    : {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
             'IP-PPL-ABS-SPE': {'dir':'r', 'rules':['VAG', 'RAG', 'MAG', 'HAG', 'DAG', 'BAG', 'IP-PPL', 'VAN', 'RAN', 'MAN', 'HAN', 'DAN', 'BAN', 'VBN', 'DON', 'MDN', 'HVN', 'RDN', 'BEN']},
@@ -587,7 +588,7 @@ head_rules = {
             'FRAG'          : {'dir':'r', 'rules':['CP.*', 'IP.*', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP.*', 'PP', 'ADJP']},
             'QP'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'Q-.', 'QS-.', 'QR-.']},
             'WQP'           : {'dir':'r', 'rules':['Q-.', 'QS-.', 'QR-.']},
-            'QTP'           : {'dir':'r', 'rules':['IP.*', 'NP.*', 'ADVP', 'N.*', 'QTP']},      #quote phrase
+            'QTP'           : {'dir':'r', 'rules':['IP.*', 'NP.*', 'VAN', 'ADVP', 'N.*', 'QTP']},      #quote phrase
             'QTP-SBJ'       : {'dir':'r', 'rules':['IP.*', 'NP.*']},
             'REP'           : {'dir':'r', 'rules':['NP', 'PP', 'ADJP', 'IP.*', 'VB.*']},      #repetition
             'RRC'           : {'dir':'r', 'rules':['V.+', 'ADJP', 'RRC.*', 'PP', '.AG']},      #reduced relative clause

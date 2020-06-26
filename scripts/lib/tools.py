@@ -67,6 +67,10 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
         return 'ccomp'
     elif head_tag == 'IP' and head_func == 'INF-PRP':
         return 'advcl'
+#    elif head_tag == 'IP' and head_func == 'INF':
+#        return 'xcomp'
+    elif head_tag == 'NP' and mod_tag == 'VAN':
+        return 'amod'
     elif mod_tag in ['VAN', 'DAN', 'HAN', 'BAN', 'RAN']: # RAN vantaði?
         # return 'aux:pass' # UD hætt með aux:pass?
         return 'aux'
@@ -124,6 +128,8 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
         return 'dep'
     elif mod_tag in ['N', 'NS', 'NPR', 'NPRS']:
         # return 'rel'
+        return 'dep'
+    elif head_tag == 'IP' and head_func == 'SMC':
         return 'dep'
 
     # return 'rel-'+mod_tag

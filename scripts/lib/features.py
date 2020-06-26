@@ -242,8 +242,8 @@ class ICE_Features():
     def _noun_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
+            self.features['Case'] = Icepahc_feats['NOUN']['Case'][case]
         self.features['Number'] = Icepahc_feats['NOUN']['Number'][tag]
-        self.features['Case'] = Icepahc_feats['NOUN']['Case'][case]
         if '$' in tag:
             self.features['Definite'] = Icepahc_feats['NOUN']['Definite']['$']
         else:
@@ -263,7 +263,8 @@ class ICE_Features():
     def _pronoun_features(self, tag):
         if '-' in tag:
             case = tag.split('-')[1]
-            self.features['Case'] = Icepahc_feats['Case'][case]
+            if case not in {'1', '2', '3', '4', '5', '6'}:
+                self.features['Case'] = Icepahc_feats['Case'][case]
             return self.features
         if tag.startswith('OTHERS'):
             self.features['Number'] = Icepahc_feats['PRON']['Number']['S']
@@ -273,7 +274,8 @@ class ICE_Features():
     def _determiner_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
-            self.features['Case'] = Icepahc_feats['Case'][case]
+            if case != 'ADV':
+                self.features['Case'] = Icepahc_feats['Case'][case]
             if tag == 'D':
                 self.features['PronType'] = 'Art'
             elif tag == 'ONES':
@@ -308,7 +310,8 @@ class ICE_Features():
     def _verb_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
-            self.features['Case'] = Icepahc_feats['Case'][case]
+            if case != 'TTT':
+                self.features['Case'] = Icepahc_feats['Case'][case]
         if len(tag) < 3:
             self.features['VerbForm'] = Icepahc_feats['VERB']['VerbForm']['inf']
         elif len(tag) == 4:

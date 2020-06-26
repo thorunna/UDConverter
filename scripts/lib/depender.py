@@ -85,7 +85,7 @@ class UniversalDependencyGraph(DependencyGraph):
                         If dict is None returns '_'
 
         """
-        return '|'.join(f'{pair[0]}={pair[1]}' for pair in sorted(dict.items(), key=lambda s: s[0].lower()) if pair[1] is not None) if len(dict) != 0 else '_'
+        return '|'.join(f'{pair[0]}={pair[1]}' for pair in sorted(dict.items(), key=lambda s: s[0].lower()) if pair[1] is not None) if dict and len(dict) != 0 else '_'
 
     def addresses(self):
         """10.03.20
@@ -690,6 +690,16 @@ class Converter():
                 node['head'] = self.dg.get_by_address(last_index)['head']
         del self.dg.nodes[last_index]
 
+    def _fix_advmod_tag(self):
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'advmod' and node['ctag'] != 'ADV':
+                self.dg.get_by_address(address).update({'ctag': 'ADV'})
+
+    def _fix_nummod_tag(self):
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'nummod' and node['ctag'] != 'NUM':
+                self.dg.get_by_address(address).update({'ctag': 'NUM'})
+
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree.
 
@@ -750,6 +760,12 @@ class Converter():
                     tag = tag_list[nr]
                 if '+' in tag:
                     tag = re.sub('\w+\+', '', tag)
+                if '21' in tag:
+                    tag = re.sub('21', '', tag)
+                elif '22' in tag:
+                    tag = re.sub('22', '', tag)
+                elif tag.endswith('TTT'):
+                    tag = re.sub('-TTT', '', tag)
                 # token_lemma = str(FORM+'-'+LEMMA)
                 XPOS = tag
                 MISC = defaultdict(lambda: None)
@@ -972,6 +988,10 @@ class Converter():
             self._fix_punct_heads()
         if rel_counts['aux'] > 0:
             self._fix_aux_tag()
+        if rel_counts['advmod'] > 0:
+            self._fix_advmod_tag()
+        if rel_counts['nummod'] > 0:
+            self._fix_nummod_tag()
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
         #     self._fix_empty_node()
 
@@ -1047,6 +1067,8 @@ class Converter():
                     continue
                 if node['head'] == 0:
                     node.update({'head': new_root, 'rel':'conj', 'misc':{'OriginalHead':'0'}})
+                    if node['ctag'] == 'PUNCT':
+                        node.update({'rel' : 'punct'})
                     # TODO: fix misc, erases previous
                 else:
                     # print(node)
