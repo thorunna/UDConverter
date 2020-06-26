@@ -159,6 +159,8 @@ def main():
             tree = fix_IcePaHC_tree_errors(tree)
             if tree.corpus_id_num == tree_num:
                 TREE = tree.remove_nodes(tags=['CODE'], trace=True)
+            else:
+                TREE = tree.remove_nodes(tags=['CODE'], trace=True)
 
         try:
             print(TREE)
@@ -289,6 +291,8 @@ def main():
                     tree = fix_IcePaHC_tree_errors(tree)
 
                     TREE = tree.remove_nodes(tags=['CODE'], trace=True)
+
+                    dep = c.create_dependency_graph(TREE)
 
                     if dep.get_by_address(len(dep.nodes)-1)['word'] not in {'.', ':', '?', '!', 'kafli'} \
                     and len(dep.nodes) != 1:

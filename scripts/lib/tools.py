@@ -11,6 +11,7 @@ from lib.reader import IndexedCorpusTree
 
 def determine_relations(mod_tag, mod_func, head_tag, head_func):
 
+    #return mod_tag, mod_func, head_tag, head_func
     # # DEBUG:
     # print('\n'+mod_tag, mod_func, head_tag, head_func, '\n')
     #return head_tag, head_func

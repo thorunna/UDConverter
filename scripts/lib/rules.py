@@ -333,6 +333,7 @@ Icepahc_feats = {
         'VerbForm' : {
             '' : 'Fin',     #finite verb
             'inf' : 'Inf',     #infinitive verb
+            'I' : 'Inf',
             'N' : 'Part',     #participle
             'G' : 'Part'
         }
@@ -586,7 +587,7 @@ head_rules = {
             'FRAG'          : {'dir':'r', 'rules':['CP.*', 'IP.*', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP.*', 'PP', 'ADJP']},
             'QP'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'Q-.', 'QS-.', 'QR-.']},
             'WQP'           : {'dir':'r', 'rules':['Q-.', 'QS-.', 'QR-.']},
-            'QTP'           : {'dir':'r', 'rules':['IP.*', 'NP.*', 'N.*', 'QTP']},      #quote phrase
+            'QTP'           : {'dir':'r', 'rules':['IP.*', 'NP.*', 'ADVP', 'N.*', 'QTP']},      #quote phrase
             'QTP-SBJ'       : {'dir':'r', 'rules':['IP.*', 'NP.*']},
             'REP'           : {'dir':'r', 'rules':['NP', 'PP', 'ADJP', 'IP.*', 'VB.*']},      #repetition
             'RRC'           : {'dir':'r', 'rules':['V.+', 'ADJP', 'RRC.*', 'PP', '.AG']},      #reduced relative clause

@@ -230,6 +230,8 @@ class UniversalDependencyGraph(DependencyGraph):
         text = re.sub(r' \$', ' ', text)
         text = re.sub(r'\$ ', ' ', text)
         text = re.sub(r' $', '', text)
+        text = re.sub(r' \.', '.', text)
+        text = re.sub(r' ,', ',', text)
         return '# text = ' + text
 
     def original_ID_plain_text(self, **kwargs):
@@ -884,7 +886,6 @@ class Converter():
                 # if re.search(r'\w{1,5}(21|22|31|32|33)', mod_tag):
                 mod_tag = re.sub('(21|22|31|32|33)', '', mod_tag)
                 mod_nr = child.id()
-
 
 
 #                if head_nr == mod_nr and re.match("NP-PRD", head_tag):      #ath. virkar þetta rétt? Leið til að láta sagnfyllingu cop vera rót
