@@ -26,8 +26,8 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
         return 'conj'
     elif mod_tag == 'NPR' and head_tag == 'CONJP':
         return 'conj'
-    elif mod_tag == 'NPR' and head_tag in ['NP', 'NX', 'QTP']:
-        return 'flat:name'
+#    elif mod_tag == 'NPR' and head_tag in ['NP', 'NX', 'QTP']:
+#        return 'flat:name'
     elif mod_tag == 'ES':
         return 'expl'   #expletive
     elif mod_tag in ['PRO', 'WPRO']:

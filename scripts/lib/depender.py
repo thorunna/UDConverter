@@ -114,6 +114,19 @@ class UniversalDependencyGraph(DependencyGraph):
         # return {rel for rel in [node['rel'] for node in self.nodes.values()]}
         return rels
 
+    def ctags(self):
+        '''
+        Checks and counts the IcePaHC tags in the sentence
+
+        Returns:
+            defaultdict: IcePaHC tags found in the sentence graph, counted.
+        '''
+        ctags = defaultdict(int)
+        for node in self.nodes.values():
+            ctags[node['ctag']] += 1
+        # return {rel for rel in [node['rel'] for node in self.nodes.values()]}
+        return ctags
+
     def num_roots(self):
         '''
         Method for checking the root relation in the graph.
@@ -682,6 +695,8 @@ class Converter():
                 if address+1 in self.dg.nodes \
                 and self.dg.get_by_address(address+1)['rel'] == 'conj':
                     self.dg.get_by_address(address).update({'head': address+1})
+                if node['rel'] != 'punct':
+                    self.dg.get_by_address(address).update({'rel': 'punct'})
 
     def _fix_empty_node(self):
         last_index = len(self.dg.nodes)-1
@@ -699,6 +714,23 @@ class Converter():
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'nummod' and node['ctag'] != 'NUM':
                 self.dg.get_by_address(address).update({'ctag': 'NUM'})
+
+    def _fix_mark_tag(self):
+        for address, node in self.dg.nodes.items():
+            if node['ctag'] == 'PART' and node['rel'] != 'mark':
+                self.dg.get_by_address(address).update({'rel': 'mark'})
+
+    def _fix_flatname_dep(self):
+        for address, node in self.dg.nodes.items():
+            if node['ctag'] == 'PROPN' and self.dg.get_by_address(address-1)['ctag'] == 'PROPN' \
+            and node['rel'] != 'flat:name':
+                self.dg.get_by_address(address).update({'rel': 'flat:name'})
+
+    def _fix_mark_dep(self):
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'mark' and node['ctag'] == 'SCONJ' and self.dg.get_by_address(address+1)['rel'] == 'mark' and self.dg.get_by_address(address+1)['ctag'] == 'SCONJ':
+                self.dg.get_by_address(address+1).update({'rel': 'fixed'})
+
 
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree.
@@ -977,6 +1009,7 @@ class Converter():
         #         node.update({'ctag': 'AUX'})
 
         rel_counts = self.dg.rels()
+        ctag_counts = self.dg.ctags()
 
         if rel_counts['ccomp/xcomp'] > 0:
             self._fix_ccomp()
@@ -992,6 +1025,11 @@ class Converter():
             self._fix_advmod_tag()
         if rel_counts['nummod'] > 0:
             self._fix_nummod_tag()
+        if ctag_counts['PROPN'] > 0:
+            self._fix_flatname_dep()
+        if rel_counts['mark'] > 0:
+            self._fix_mark_dep()
+
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
         #     self._fix_empty_node()
 

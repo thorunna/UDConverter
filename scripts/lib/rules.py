@@ -388,8 +388,9 @@ head_rules = {
             'IP-MAT-PRN-LFD': {'dir':'r', 'rules':['VB.*', 'VP']},
             'IP-MAT-PRN-SPE': {'dir':'r', 'rules':['VB.*', 'VP']},
             'IP-MAT-SBJ'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'NP', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT']},
-            'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*', 'VAN', 'RD.*', 'DO.*', 'DAN', 'VP', 'ADJP', 'ADVP', 'NP', 'VAN', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
-            'IP-MAT-SPE=1'  : {'dir':'r', 'rules':['ADJP']},
+            'IP-MAT-SPE'    : {'dir':'r', 'rules':['IP-MAT-PRN', 'VB', 'VB.*', 'VAN', 'RD.*', 'DO.*', 'DAN', 'VP', 'HV.*', 'ADJP', 'ADVP', 'NP', 'VAN', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
+            'IP-MAT-SPE-1'    : {'dir':'r', 'rules':['VB', 'VB.*', 'VAN', 'RD.*', 'DO.*', 'DAN', 'VP', 'HV.*', 'ADJP', 'ADVP', 'NP', 'VAN', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
+            'IP-MAT-SPE=1'  : {'dir':'r', 'rules':['PP', 'ADJP']},
             'IP-MAT-SPE-PRN': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE-PRN-ELAB': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE-PRN-LFD': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
@@ -399,13 +400,14 @@ head_rules = {
             #MD.* á eftir VB: ef VB er spor ruglast venslin en þá getur MD sem hjálparsögn líka verið haus. Ef MD er seinna er það seinna í lagi
             'IP-SUB'        : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'VAN', 'RD.*', 'DAN', 'RAN', 'HAN', 'BAN', 'VAG', 'RAG', 'HAG', 'BAG', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'NP.*', 'RD.*', 'ADVP', 'IP-SUB']},
             'IP-SUB=1'      : {'dir':'r', 'rules':['VAN']},
+            'IP-SUB=5'      : {'dir':'r', 'rules':['PP-BY']},
             'IP-SUB-INF'    : {'dir':'r', 'rules':['VB']},
             'IP-SUB-LFD'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HV.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'RD.*', 'NP', 'ADVP', 'IP-SUB', 'HVN']},
             'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-PRN-ELAB': {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-PRN=XXX': {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-REP'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'NP.*', 'ADJP', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB']},
-            'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*', 'HV.*', 'VAN', 'DAN', '.*AG', 'IP-SUB-SPE', 'DO.*',]},
+            'IP-SUB-SPE'    : {'dir':'r', 'rules':['VB.*', 'HV.*', 'VAN', 'DAN', '.*AG', 'IP-SUB-SPE', 'DO.*']},
             'IP-SUB-SPE-PRN': {'dir':'r', 'rules':['VB.*', 'HV.*']},
             'IP-SUB-SPE-PRN-ELAB': {'dir':'r', 'rules':['VB.*', 'HV.*']},
             'IP-IMP'        : {'dir':'r', 'rules':['VB.', 'HV.']},    #imperative
@@ -494,18 +496,19 @@ head_rules = {
             'NP-CMP'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'MAN-.', 'OTHER-.']},
             'NP-PRN'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NP', 'NPRS-.', 'PRO-.', 'MAN-.', 'OTHER-.']},   #viðurlag, appositive
             'NP-PRN-ELAB'   : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
+            'NP-PRN-ELAB'   : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'PRO-.', 'MAN-.', 'OTHER-.']},
             'NP-PRN-REP'    : {'dir':'r', 'rules':['N-.', 'NS.*', 'NP.*', 'OTHER-.']},
             'NP-RSP'        : {'dir':'r', 'rules':['N-.', 'NS.*', 'NP.*', 'OTHER-.']},
             #NP-SBJ: 'NP.*' var á undan 'PRO', búið að víxla til að NP-PRN verði appos og PRO nsubj
-            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'N-.', 'NS-N', 'NPR-N', 'NPRS-N', 'MAN.*', 'PRO-.', 'NP.*', 'ADJ-N', 'OTHER-.', 'Q', 'IP-MAT-PRN']},
+            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'N-.', 'NS-N', 'NS-.*', 'NPR-N', 'NPRS-N', 'MAN.*', 'PRO-.', 'NP.*', 'ADJ-N', 'OTHER-.', 'Q', 'IP-MAT-PRN']},
             'NP-SBJ-LFD'    : {'dir':'r', 'rules':['N-N', 'N-.', 'NS-N', 'NPR-N', 'NPRS-N', 'MAN.*', 'NP.*', 'PRO-.', 'ADJ-N', 'OTHER-.']},
             'NP-SBJ-RSP'    : {'dir':'r', 'rules':['N-N', 'N-.', 'NS-N', 'NPR-N', 'NPRS-N', 'MAN.*', 'NP.*', 'PRO-.', 'ADJ-N', 'OTHER-.']},
             'NP-SMC'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'PRO-.', 'NP.*', 'Q.*', 'MAN-.', 'OTHER-.', 'CP-FRL']},
             'NP-SPE'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'PRO-.', 'NP.*', 'Q.*', 'MAN-.', 'OTHER-.', 'CP-FRL']},
-            'NP-OB1'        : {'dir':'r', 'rules':['N-.', 'NPR-.', 'NPRS-.', 'NS-.', 'NP', 'NP-.+', 'PRO-.', 'ONE+Q-A', 'MAN-A', 'OTHER-.']},
+            #'NP-OB1'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NS-.', 'NP', 'NP-.+', 'PRO-.', 'ONE+Q-A', 'MAN-A', 'OTHER-.']},
             'NP-OB1-LFD'    : {'dir':'r', 'rules':['N-.', 'NPR-.', 'NPRS-.', 'NS-.', 'NP', 'ONE+Q-A', 'MAN-A', 'OTHER-.', 'PRO-.']},
             'NP-OB1-RSP'    : {'dir':'r', 'rules':['N-.', 'NPR-.', 'NPRS-.', 'NS-.', 'NP', 'ONE+Q-A', 'MAN-A', 'OTHER-.', 'PRO-.']},
-            'NP-OB2'        : {'dir':'r', 'rules':['NP.*', 'PRO-.', 'N-D', 'NS-D', 'NPR-.', 'NPRS-.', 'CP-FRL', 'MAN-.', 'OTHER-.']},    #MEIRA?
+            'NP-OB2'        : {'dir':'r', 'rules':['N-D', 'NS-D', 'NP.*', 'PRO-.', 'NPR-.', 'NPRS-.', 'CP-FRL', 'MAN-.', 'OTHER-.']},    #MEIRA?
             'NP-OB2-RSP'    : {'dir':'r', 'rules':['NP.*', 'PRO-.', 'N-D', 'NS-D', 'NPR-.', 'NPRS-.', 'CP-FRL', 'MAN-.', 'OTHER-.']},
             'NP-OB3'        : {'dir':'r', 'rules':['PRO-D', 'N-D', 'NS-D', 'NPR-D', 'NPRS-D', 'MAN-.', 'OTHER-.']},
             'NP-PRD'        : {'dir':'r', 'rules':['N-.', 'NS.*', 'NP.*', 'PRO.*' 'OTHER-.', 'NUMP']},     #sagnfylling copulu
@@ -539,7 +542,7 @@ head_rules = {
             'ADJX'          : {'dir':'r', 'rules':['ADJ.*']},
             'WADJP'         : {'dir':'r', 'rules':['ADJ.*', 'ADV.*']},
             'WADJX'         : {'dir':'r', 'rules':['ADJ.*', 'ADV.*']},
-            'PP'            : {'dir':'r', 'rules':['CP-FRL', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP', 'NP-.+', 'FS', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'IP-PPL', 'P']},
+            'PP'            : {'dir':'r', 'rules':['CP-FRL', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP', 'NP-.+', 'FS', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'IP-PPL', 'P', 'PP']},
             'PX'            : {'dir':'r', 'rules':['CP-FRL', 'NP', 'NP-.+', 'FS', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
             'PP-BY'         : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
             'PP-BY-RSP'     : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
@@ -573,7 +576,7 @@ head_rules = {
             'WADVP'         : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'WADV']},
             'WADVP-LOC'     : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'WADV']},
             'WADVP-NaN'     : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'WADV']},
-            'CONJP'         : {'dir':'r', 'rules':['IP-MAT-SPE=1', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP.*', 'NX', 'NUMP.*', 'NUM-.', 'QTP', 'QP', 'QX', 'IP-SUB', 'IP-MAT.*', 'IP-INF', 'IP-INF.*', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'ADVP.*', 'PP', 'RRC', 'CONJ']},
+            'CONJP'         : {'dir':'r', 'rules':['IP-INF-SPE', 'IP-MAT-SPE', 'IP-MAT-SPE=1', 'IP-SUB=5', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP.*', 'NX', 'NUMP.*', 'NUM-.', 'QTP', 'QP', 'QX', 'IP-SUB', 'IP-MAT.*', 'IP-INF', 'IP-INF.*', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'ADVP.*', 'PP', 'RRC', 'CONJ']},
             'CONJP-PP'      : {'dir':'r', 'rules':['NP.*', 'NX', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NUM-.', 'QP', 'QX', 'IP-SUB', 'IP-MAT', 'IP-INF', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'PP', 'RRC', 'CONJ']},
             'CONJP-PRN'     : {'dir':'r', 'rules':['NP.*', 'NX', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NUM-.', 'QP', 'QX', 'IP-SUB', 'IP-MAT', 'IP-INF', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'PP', 'RRC', 'CONJ']},
             'WNP'           : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'Q-.', 'WQ-.', 'WPRO-.', 'PRO-.', 'WD-.', 'NP.*', 'WNP.*']}, #MEIRA?

@@ -346,7 +346,7 @@ class ICE_Features():
         return self.features
     
     def _foreign_features(self, tag):
-        self.features['Foreign'] = 'Foreign'
+        self.features['Foreign'] = 'Yes'
         return self.features
 
     def _es_features(self, tag):
@@ -465,7 +465,7 @@ class FO_Features():
         return self.features
     
     def _foreign_features(self, tag):
-        self.features['Foreign'] = 'Foreign'
+        self.features['Foreign'] = 'Yes'
         return self.features
 
     def _es_features(self, tag):
