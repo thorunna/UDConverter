@@ -145,6 +145,13 @@ class UniversalDependencyGraph(DependencyGraph):
                 verb_count += 1
 
         return verb_count
+    
+    def fix_left_right_alignment(self):
+        """
+        Method for fixing relations in dependency graph that should go 
+        left-to-right but for some reason don't
+        """
+        rels = ['conj', 'fixed', 'flat:name', 'flat:foreign', 'goeswith', 'appos']
 
     def to_conllU(self):
         """
