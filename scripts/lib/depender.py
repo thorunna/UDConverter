@@ -731,6 +731,46 @@ class Converter():
             if node['rel'] == 'mark' and node['ctag'] == 'SCONJ' and self.dg.get_by_address(address+1)['rel'] == 'mark' and self.dg.get_by_address(address+1)['ctag'] == 'SCONJ':
                 self.dg.get_by_address(address+1).update({'rel': 'fixed'})
 
+    def _fix_dep(self):
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'dep':
+                if self.dg.get_by_address(address-1)['ctag'] == 'CCONJ' and self.dg.get_by_address(address-2)['ctag'] == r'N[PRS-NADG]':
+                    self.dg.get_by_address(address).update({'rel': 'conj'})
+
+    #def _fix_vilja(self):
+    #    for address, node in self.dg.nodes.items():
+    #        if node['lemma'] == 'vilja' and node['rel'] == 'aux':
+
+    def _fix_root_tag(self):
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'root' and node['ctag'] == 'AUX':
+                self.dg.get_by_address(address).update({'ctag': 'VERB'})
+
+    def _fix_head_id_same(self):
+        for address, node in self.dg.nodes.items():
+            if node['address'] == node['head']:
+                if self.dg.get_by_address(address-4)['ctag'] == 'VERB':
+                    self.dg.get_by_address(address).update({'head': address-4})
+                elif self.dg.get_by_address(address-3)['ctag'] == 'VERB':
+                    self.dg.get_by_address(address).update({'head': address-3})
+                elif self.dg.get_by_address(address-2)['ctag'] == 'VERB':
+                    self.dg.get_by_address(address).update({'head': address-2})
+                elif self.dg.get_by_address(address-1)['ctag'] == 'VERB':
+                    self.dg.get_by_address(address).update({'head': address-1})
+                elif self.dg.get_by_address(address+1)['ctag'] == 'VERB':
+                    self.dg.get_by_address(address).update({'head': address+1})
+                elif self.dg.get_by_address(address+2)['ctag'] == 'VERB':
+                    self.dg.get_by_address(address).update({'head': address+2})
+                elif self.dg.get_by_address(address+3)['ctag'] == 'VERB':
+                    self.dg.get_by_address(address).update({'head': address+3})
+                elif self.dg.get_by_address(address+4)['ctag'] == 'VERB':
+                    self.dg.get_by_address(address).update({'head': address+4})
+
+    def _fix_verb_conj(self):
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'conj' and node['head'] > address:
+                self.dg.get_by_address(address).update({'rel': 'ccomp/xcomp'})
+
 
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree.
@@ -1011,6 +1051,8 @@ class Converter():
         rel_counts = self.dg.rels()
         ctag_counts = self.dg.ctags()
 
+        #if rel_counts['conj'] > 0:
+        #    self._fix_verb_conj()
         if rel_counts['ccomp/xcomp'] > 0:
             self._fix_ccomp()
         # if rel_counts['aux'] > 0:
@@ -1029,6 +1071,11 @@ class Converter():
             self._fix_flatname_dep()
         if rel_counts['mark'] > 0:
             self._fix_mark_dep()
+        if rel_counts['rel'] > 0:
+            self._fix_dep()
+        if ctag_counts['AUX'] > 0:
+            self._fix_root_tag()
+        self._fix_head_id_same()
 
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
         #     self._fix_empty_node()

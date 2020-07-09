@@ -15,6 +15,8 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     # # DEBUG:
     # print('\n'+mod_tag, mod_func, head_tag, head_func, '\n')
     #return head_tag, head_func
+    #if mod_tag == 'IP' and mod_func == 'MAT':
+    #    return 'rel'+mod_tag+head_tag
     if mod_tag in ['NP', 'NX', 'WNX']:   #TODO: hvað ef mod_tag er bara NP?
         # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
         return relation_NP.get(mod_func, 'dep')
@@ -132,7 +134,7 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif head_tag == 'IP' and head_func == 'SMC':
         return 'dep'
 
-    # return 'rel-'+mod_tag
+    #return 'rel-'+mod_tag+' '+head_tag+head_func
     return 'dep'
 
 def decode_escaped(string, lemma=False):
