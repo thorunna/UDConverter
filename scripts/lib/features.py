@@ -310,8 +310,12 @@ class ICE_Features():
     def _verb_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
-            if case != 'TTT':
-                self.features['Case'] = Icepahc_feats['Case'][case]
+            if case not in {'TTT', '3'}:
+                try:
+                    self.features['Case'] = Icepahc_feats['Case'][case]
+                except KeyError:
+                    print(tag, case)
+                    raise
         if len(tag) < 3:
             self.features['VerbForm'] = Icepahc_feats['VERB']['VerbForm']['inf']
         elif len(tag) == 4:

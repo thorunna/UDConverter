@@ -213,16 +213,32 @@ sed -i "" 's/(N-D komu-koma)/(VBDI komu-koma)/' $dir/1859.hugvekjur.rel-ser.psd 
 
 # 1861.orrusta.nar-fic.psd
 sed -i "" 's/(N-N brynjan-brynja)/(N-N brynja\$-brynja)/g' $dir/1861.orrusta.nar-fic.psd # .433
-
+sed -i "" 's/( (IP-MAT (, -)/( (IP-MAT (, ,-,)/g' $dir/1861.orrusta.nar-fic.psd # .530
+sed -i "" 's/(, -)/(, ,-,)/g' $dir/1861.orrusta.nar-fic.psd # .1742
+ 
 # 1882.torfhildur.nar-fic.psd
 sed -i "" 's/IP-SUB-SUB/IP-SUB/g' $dir/1882.torfhildur.nar-fic.psd # .1983
+sed -i "" 's/(NP-PRD (ADJA-N bezt-góður))/(NP-PRD (ADJS-N bezt-góður))/g' $dir/1882.torfhildur.nar-fic.psd # .1318
+sed -i "" 's/(IP-PPL (NP-OB1 (ADVR-Q-D jafnmörgum-jafnmargur) (NS-D göllum-galli))/(IP-PPL (NP-OB1 (ADVR-D jafnmörgum-jafnmargur) (NS-D göllum-galli))/g' $dir/1882.torfhildur.nar-fic.psd # .1741
+sed -i "" 's/(, -)/(, ,-,)/g' $dir/1882.torfhildur.nar-fic.psd # .748
+
+# 1883.voggur.nar-fic.psd
+sed -i "" 's/(, -)/(, ,-,)/g' $dir/1883.voggur.nar-fic.psd # .16 o.fl.
 
 # 1888.grimur.nar-fic.psd
 sed -i "" 's/(IP-MAT=1 (NP-SBJ (N-N verðið-verð)/(IP-MAT=1 (NP-SBJ (N-N verð\$-verð)/g' $dir/1888.grimur.nar-fic.psd # .20
 sed -i "" 's/(NS-N augun-auga) (D-N \$n-hinn)/(NS-N augu$-auga) (D-N $n-hinn)/g' $dir/1888.grimur.nar-fic.psd # .280
+sed -i "" 's/(, -)/(, ,-,)/g' $dir/1888.grimur.nar-fic.psd # .202 o.fl.
+sed -i "" 's/(. -))/(. .-.))/g' $dir/1888.grimur.nar-fic.psd # .256 o.fl.
 
 # 1902.fossar.nar-fic.psd
 sed -i "" 's/(PP (P -))//' $dir/1902.fossar.nar-fic.psd # .879
+sed -i "" 's/(, -)/(, ,-,)/g' $dir/1902.fossar.nar-fic.psd # .92 o.fl.
+sed -i "" 's/(. -)/(. .-.)/g' $dir/1902.fossar.nar-fic.psd # .510 o.fl.
+sed -i "" 's/(, -----)/(, ,-,)/g' $dir/1902.fossar.nar-fic.psd # .822
+sed -i "" 's/(- -)//g' $dir/1902.fossar.nar-fic.psd # .872 o.fl.
+sed -i "" 's/(PP (P -))//g' $dir/1902.fossar.nar-fic.psd # .879
+sed -i "" 's/(NUM-N -)//g' $dir/1902.fossar.nar-fic.psd # .881
 
 # 1985.sagan.nar-fic.psd
 sed -i "" 's/(NP-SBJ \$ðu-þú)/(NP-SBJ (PRO-N \$ðu-þú))/g' $dir/1985.sagan.nar-fic.psd # .494

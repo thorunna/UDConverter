@@ -159,11 +159,19 @@ class UniversalDependencyGraph(DependencyGraph):
 
         return verb_count
 
+    #def fix_left_right_alignments(self):
+
+    #    rels = {'conj', 'fixed', 'flat:name', 'flat:foreign', 'goesWith'}
+
+    #    for address, node in self.dg.nodes.items():
+    #        if node['rel'] in rels and node['head'] > address:
+    #            self.dg.get_by_address(address).update({'rel': 'HALLO'})
+
     def to_conllU(self):
         """
         The dependency graph in CoNLL-U (Universal) format.
 
-        Consist of one or more word lines, and word lines contain the following fields:
+        Consists of one or more word lines, and word lines contain the following fields:
 
         ID: Word index, integer starting at 1 for each new sentence; may be a range for tokens with multiple words.
         FORM: Word form or punctuation symbol.
@@ -706,47 +714,77 @@ class Converter():
         del self.dg.nodes[last_index]
 
     def _fix_advmod_tag(self):
+        """
+        A word with the deprel 'advmod' must be tagged ADV
+        """
+
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'advmod' and node['ctag'] != 'ADV':
                 self.dg.get_by_address(address).update({'ctag': 'ADV'})
 
     def _fix_nummod_tag(self):
+        """
+        A word with the deprel 'nummod' must be tagged NUM
+        """
+
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'nummod' and node['ctag'] != 'NUM':
                 self.dg.get_by_address(address).update({'ctag': 'NUM'})
 
     def _fix_mark_tag(self):
+        """
+        A word tagges PART must have the deprel 'mark'
+        """
+
         for address, node in self.dg.nodes.items():
             if node['ctag'] == 'PART' and node['rel'] != 'mark':
                 self.dg.get_by_address(address).update({'rel': 'mark'})
 
     def _fix_flatname_dep(self):
+        """
+        Finds and fixes a fixed phrase, flat:name
+        """
+
         for address, node in self.dg.nodes.items():
-            if node['ctag'] == 'PROPN' and self.dg.get_by_address(address-1)['ctag'] == 'PROPN' \
+            if node['ctag'] == 'PROPN' and self.dg.get_by_address(address-1)['ctag'] in {'PROPN', 'NOUN'} and node['head'] == address-1 \
             and node['rel'] != 'flat:name':
                 self.dg.get_by_address(address).update({'rel': 'flat:name'})
 
     def _fix_mark_dep(self):
+        """
+        Finds a fixed phrase and fixes its deprel
+        """
+
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'mark' and node['ctag'] == 'SCONJ' and self.dg.get_by_address(address+1)['rel'] == 'mark' and self.dg.get_by_address(address+1)['ctag'] == 'SCONJ':
                 self.dg.get_by_address(address+1).update({'rel': 'fixed'})
+                if self.dg.get_by_address(address+1)['head'] != address:
+                    self.dg.get_by_address(address+1).update({'head':address})
 
     def _fix_dep(self):
+        """
+        Fixes the second noun's deprel in a CONJP
+        """
+
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'dep':
                 if self.dg.get_by_address(address-1)['ctag'] == 'CCONJ' and self.dg.get_by_address(address-2)['ctag'] == r'N[PRS-NADG]':
                     self.dg.get_by_address(address).update({'rel': 'conj'})
 
-    #def _fix_vilja(self):
-    #    for address, node in self.dg.nodes.items():
-    #        if node['lemma'] == 'vilja' and node['rel'] == 'aux':
-
     def _fix_root_tag(self):
+        """
+        Changes a verb's tag from AUX to VERB if it is the root of the sentence
+        """
+
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'root' and node['ctag'] == 'AUX':
                 self.dg.get_by_address(address).update({'ctag': 'VERB'})
 
     def _fix_head_id_same(self):
+        """
+        Changes a node's head if it is dependent on itself
+        """
+        
         for address, node in self.dg.nodes.items():
             if node['address'] == node['head']:
                 if self.dg.get_by_address(address-4)['ctag'] == 'VERB':
@@ -766,10 +804,43 @@ class Converter():
                 elif self.dg.get_by_address(address+4)['ctag'] == 'VERB':
                     self.dg.get_by_address(address).update({'head': address+4})
 
-    def _fix_verb_conj(self):
+    def _fix_flat_foreign(self):
+
+        for address, node in self.dg.nodes.items():
+            if node['ctag'] == 'X' and self.dg.get_by_address(address+1)['head'] == address and self.dg.get_by_address(address+1)['ctag'] == 'PROPN':
+                self.dg.get_by_address(address+1).update({'rel': 'flat:foreign'})
+
+    def _fix_left_right_alignments(self):
+
+        #rels = {'conj', 'fixed', 'flat:name', 'flat:foreign', 'goesWith'}
+
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'conj' and node['head'] > address:
-                self.dg.get_by_address(address).update({'rel': 'ccomp/xcomp'})
+                if self.dg.get_by_address(address-2)['ctag'] in {'ADJ', 'N.*'} and self.dg.get_by_address(address-1)['ctag'] == 'CCONJ':
+                    self.dg.get_by_address(address).update({'head': address-2})
+
+                #self.dg.get_by_address(address).update({'rel': 'HALLO'})
+
+    def _fix_many_subj(self):
+
+        for address, node in self.dg.nodes.items():
+            if self.dg.get_by_address(address)['rel'] == 'nsubj':
+                head_verb = self.dg.get_by_address(address)['head']
+                break
+        
+        count = 0
+        for address, node in self.dg.nodes.items():
+            if self.dg.get_by_address(address)['rel'] == 'nsubj' and count >= 1 \
+                and self.dg.get_by_address(address-1)['ctag'] in {'PUNCT', 'CCONJ'} and self.dg.get_by_address(address)['head'] == head_verb:
+                self.dg.get_by_address(address).update({'rel': 'conj'})
+                count += 1
+
+
+    #def _fix_det_mark(self):
+
+    #    for address, node in self.dg.nodes.items():
+    #        if node['ctag'] == 'DET' and node['rel'] == 'mark':
+    #            self.dg.get_by_address(address).update({'ctag':''})
 
 
     def create_dependency_graph(self, tree):
@@ -1051,10 +1122,13 @@ class Converter():
         rel_counts = self.dg.rels()
         ctag_counts = self.dg.ctags()
 
-        #if rel_counts['conj'] > 0:
-        #    self._fix_verb_conj()
         if rel_counts['ccomp/xcomp'] > 0:
             self._fix_ccomp()
+        #if rel_counts['nsubj'] > 1:
+        #    self._fix_many_subj()
+        
+        #self._fix_left_right_alignments()
+        
         # if rel_counts['aux'] > 0:
         #     self._fix_aux_tag()
         if rel_counts['acl/advcl'] > 0:
@@ -1076,6 +1150,9 @@ class Converter():
         if ctag_counts['AUX'] > 0:
             self._fix_root_tag()
         self._fix_head_id_same()
+        if ctag_counts['X'] > 0:
+            self._fix_flat_foreign()
+
 
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
         #     self._fix_empty_node()

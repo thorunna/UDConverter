@@ -49,12 +49,15 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif mod_tag == 'P':
         return 'case'
     elif mod_tag[:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO', 'WADV', 'WADVP']:    #FP = focus particles  #QP = quantifier phrase - ATH.
+        """
         if head_func == 'QUE' or head_tag == 'WNP':
-            # Ætti að grípa spurnarorð í spurnarsetningum, sem eru mark skv. greiningu HJ
+            # Ætti að grípa spurnarorð í spurnarsetningum, sem eru mark skv. greiningu HJ - TODO er þetta rétt?
             return 'mark'
         else:
             # -DIR, -LOC, -TP
             return 'advmod'
+        """
+        return 'advmod'
     elif mod_tag == 'NS' and head_tag == 'ADVP' and head_func == 'TMP':     #ath. virkar fyrir eitt dæmi, of greedy?
         return 'conj'
     elif mod_tag in ['RP', 'RPX']:
@@ -73,6 +76,8 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
 #        return 'xcomp'
     elif head_tag == 'NP' and mod_tag == 'VAN':
         return 'amod'
+    elif mod_tag in ['VAN', 'DAN'] or mod_tag[:2] == 'DO':
+        return 'ccomp/xcomp'
     elif mod_tag in ['VAN', 'DAN', 'HAN', 'BAN', 'RAN']: # RAN vantaði?
         # return 'aux:pass' # UD hætt með aux:pass?
         return 'aux'
