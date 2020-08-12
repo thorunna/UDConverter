@@ -158,6 +158,13 @@ class UniversalDependencyGraph(DependencyGraph):
                 verb_count += 1
 
         return verb_count
+    
+    def fix_left_right_alignment(self):
+        """
+        Method for fixing relations in dependency graph that should go 
+        left-to-right but for some reason don't
+        """
+        rels = ['conj', 'fixed', 'flat:name', 'flat:foreign', 'goeswith', 'appos']
 
     #def fix_left_right_alignments(self):
 
@@ -949,7 +956,7 @@ class Converter():
                     #print(type(FEATS))
                     MISC = defaultdict(lambda: None)
                 else:
-                    FEATS = ICE_Features(tag).get_features()
+                    FEATS = defaultdict(lambda: None)
                     MISC = defaultdict(lambda: None)
                 if FORM not in {'None', None}:
                     self.dg.add_node({'address': nr,
@@ -1163,10 +1170,37 @@ class Converter():
 
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
         #     self._fix_empty_node()
+
+
         if rel_counts['cop'] > 0:
             self._fix_cop()
 
+
         return self.dg
+    
+            
+    @staticmethod
+    def check_left_to_right(dgraph):
+        """
+        Certain UD relations must always go left-to-right.
+        """
+        for address in dgraph.addresses():
+            cols = dgraph.get_by_address(address)
+            if re.match(r'^[1-9][0-9]*-[1-9][0-9]*$', str(cols['address'])):
+                continue
+            # if DEPREL >= len(cols):
+            #     return # this has been already reported in trees()
+            # According to the v2 guidelines, apposition should also be left-headed, although the definition of apposition may need to be improved.
+            if re.match(r"^(conj|fixed|flat|goeswith|appos)", cols['rel']):
+                ichild = int(cols['address'])
+                iparent = int(cols['head'])
+                if ichild < iparent:
+                    # We must recognize the relation type in the test id so we can manage exceptions for legacy treebanks.
+                    # For conj, flat, and fixed the requirement was introduced already before UD 2.2, and all treebanks in UD 2.3 passed it.
+                    # For appos and goeswith the requirement was introduced before UD 2.4 and legacy treebanks are allowed to fail it.
+                    # testid = "right-to-left-%s" % lspec2ud(cols['rel'])
+                    testmessage = 'Line %s: Relation %s must go left-to-right.\nWord form: %s' % (address, cols['rel'], cols['word'])
+                    print(testmessage)
 
     @staticmethod
     def add_space_after(dgraph):

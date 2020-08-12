@@ -180,6 +180,7 @@ def main():
             print(dep.to_conllU())
             # input()
             psd = ''
+            # c.check_left_to_right(dep)
 
         except ValueError:
             raise
@@ -251,7 +252,12 @@ def main():
                             outfile.write(str(dep.plain_text())+'\n')
                             # sentence CoNLLU
                             outfile.write(c.add_space_after(dep).to_conllU())
-                            
+
+                            # print(dep.original_ID)
+                            # print(dep.plain_text())
+                            # print(c.add_space_after(dep).to_conllU())
+                            # c.check_left_to_right(dep)
+        
                             if not output_path:
                                 # when writing to stdout, asks for user input (enter)
                                 input()
@@ -275,7 +281,12 @@ def main():
                             outfile.write(str(dep.plain_text())+'\n')
                             # sentence CoNLLU
                             outfile.write(c.add_space_after(dep).to_conllU())
-                        
+
+                            # print(dep.original_ID)
+                            # print(dep.plain_text())
+                            # print(c.add_space_after(dep).to_conllU())
+                            # c.check_left_to_right(dep)
+
                             if not output_path:
                                 # when writing to stdout, asks for user input (enter)
                                 input()
