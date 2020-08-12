@@ -834,16 +834,21 @@ class Converter():
                     self.dg.get_by_address(address).update({'head': head_headaddress})
 
     def _fix_many_subj(self):
+        """
+        If subjects of a verb are more than one
+        """
 
         for address, node in self.dg.nodes.items():
             if self.dg.get_by_address(address)['rel'] == 'nsubj':
-                head_verb = self.dg.get_by_address(address)['head']
+                head_verbs_head = self.dg.get_by_address(address)['head']
                 break
         
         count = 0
         for address, node in self.dg.nodes.items():
+            if self.dg.get_by_address(address)['rel'] == 'nsubj' and count == 0:
+                count += 1
             if self.dg.get_by_address(address)['rel'] == 'nsubj' and count >= 1 \
-                and self.dg.get_by_address(address-1)['ctag'] in {'PUNCT', 'CCONJ'} and self.dg.get_by_address(address)['head'] == head_verb:
+                and self.dg.get_by_address(address-1)['ctag'] in {'PUNCT', 'CCONJ'} and node['head'] == head_verbs_head:
                 self.dg.get_by_address(address).update({'rel': 'conj'})
                 count += 1
 
