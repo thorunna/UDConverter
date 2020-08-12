@@ -648,7 +648,14 @@ class Converter():
                     #     self.dg.get_by_address(address).update({'rel': 'xcomp'})
 
     def _fix_cop(self):
-        pass
+        """
+        Fixes a copula verb's argument
+        """
+
+        for address, node in self.dg.nodes.items():
+            print('address:', address, 'node:', node)
+            if node['rel'] == 'cop':
+                self.dg.get_by_address(address+1).update({'rel': 'root'})
 
     def _fix_aux_tag(self):
         """
@@ -1156,6 +1163,8 @@ class Converter():
 
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
         #     self._fix_empty_node()
+        if rel_counts['cop'] > 0:
+            self._fix_cop()
 
         return self.dg
 
