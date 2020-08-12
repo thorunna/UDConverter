@@ -180,7 +180,7 @@ def main():
             print(dep.to_conllU())
             # input()
             psd = ''
-            c.check_left_to_right(dep)
+            # c.check_left_to_right(dep)
 
         except ValueError:
             raise
@@ -233,7 +233,7 @@ def main():
                             # print(dep.original_ID)
                             # print(dep.plain_text())
                             # print(c.add_space_after(dep).to_conllU())
-                            c.check_left_to_right(dep)
+                            # c.check_left_to_right(dep)
                             if not output_path:
                                 input()
                             file_sents += 1
@@ -251,7 +251,7 @@ def main():
                             # print(dep.original_ID)
                             # print(dep.plain_text())
                             # print(c.add_space_after(dep).to_conllU())
-                            c.check_left_to_right(dep)
+                            # c.check_left_to_right(dep)
 
                             if not output_path:
                                 input()
