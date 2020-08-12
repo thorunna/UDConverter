@@ -1205,7 +1205,7 @@ def validate_left_to_right_relations(id, tree):
         return # this has been already reported in trees()
     # According to the v2 guidelines, apposition should also be left-headed, although the definition of apposition may need to be improved.
     #if re.match(r"^(conj|fixed|flat|goeswith|appos)", cols[DEPREL]):
-    if re.match(r"^(conj|fixed|flat|goeswith)", cols[DEPREL]):
+    if re.match(r"^(conj|fixed|flat|goeswith|appos)", cols[DEPREL]):
         ichild = int(cols[ID])
         iparent = int(cols[HEAD])
         if ichild < iparent:

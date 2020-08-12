@@ -821,6 +821,13 @@ class Converter():
 
                 #self.dg.get_by_address(address).update({'rel': 'HALLO'})
 
+    def _fix_cop_head(self):
+        """
+        A copula cannot be head
+        """
+
+        pass
+
     def _fix_many_subj(self):
 
         for address, node in self.dg.nodes.items():
