@@ -13,6 +13,7 @@ Prints tree .13 from 2008.ofsi.nar.psd file.
 import os
 import re
 from sys import argv
+import nltk >= 3.4.5
 from nltk.corpus.util import LazyCorpusLoader
 from nltk.data import path
 
