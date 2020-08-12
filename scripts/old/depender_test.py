@@ -12,6 +12,7 @@ from lib import features_test as f
 from lib import DMII_data
 from lib.rules import head_rules, relation_NP, relation_IP, relation_CP
 
+import nltk >= 3.4.5
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
 from sys import argv, stdin, stdout

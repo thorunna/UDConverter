@@ -11,9 +11,12 @@ from lib.reader import IndexedCorpusTree
 
 def determine_relations(mod_tag, mod_func, head_tag, head_func):
 
+    #return mod_tag, mod_func, head_tag, head_func
     # # DEBUG:
     # print('\n'+mod_tag, mod_func, head_tag, head_func, '\n')
-
+    #return head_tag, head_func
+    #if mod_tag == 'IP' and mod_func == 'MAT':
+    #    return 'rel'+mod_tag+head_tag
     if mod_tag in ['NP', 'NX', 'WNX']:   #TODO: hvað ef mod_tag er bara NP?
         # -ADV, -CMP, -PRN, -SBJ, -OB1, -OB2, -OB3, -PRD, -POS, -COM, -ADT, -TMP, -MSR
         return relation_NP.get(mod_func, 'dep')
@@ -25,8 +28,8 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
         return 'conj'
     elif mod_tag == 'NPR' and head_tag == 'CONJP':
         return 'conj'
-    elif mod_tag == 'NPR' and head_tag in ['NP', 'NX', 'QTP']:
-        return 'flat:name'
+#    elif mod_tag == 'NPR' and head_tag in ['NP', 'NX', 'QTP']:
+#        return 'flat:name'
     elif mod_tag == 'ES':
         return 'expl'   #expletive
     elif mod_tag in ['PRO', 'WPRO']:
@@ -46,12 +49,15 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif mod_tag == 'P':
         return 'case'
     elif mod_tag[:3] == 'ADV' or mod_tag in ['NEG', 'FP', 'QP', 'ALSO', 'WADV', 'WADVP']:    #FP = focus particles  #QP = quantifier phrase - ATH.
+        """
         if head_func == 'QUE' or head_tag == 'WNP':
-            # Ætti að grípa spurnarorð í spurnarsetningum, sem eru mark skv. greiningu HJ
+            # Ætti að grípa spurnarorð í spurnarsetningum, sem eru mark skv. greiningu HJ - TODO er þetta rétt?
             return 'mark'
         else:
             # -DIR, -LOC, -TP
             return 'advmod'
+        """
+        return 'advmod'
     elif mod_tag == 'NS' and head_tag == 'ADVP' and head_func == 'TMP':     #ath. virkar fyrir eitt dæmi, of greedy?
         return 'conj'
     elif mod_tag in ['RP', 'RPX']:
@@ -64,6 +70,14 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
 #            return relation_IP.get(mod_func, 'rel-'+mod_tag)
     elif mod_tag[:2] == 'VB' and head_tag == 'CP':
         return 'ccomp'
+    elif head_tag == 'IP' and head_func == 'INF-PRP':
+        return 'advcl'
+#    elif head_tag == 'IP' and head_func == 'INF':
+#        return 'xcomp'
+    elif head_tag == 'NP' and mod_tag == 'VAN':
+        return 'amod'
+    elif mod_tag in ['VAN', 'DAN'] or mod_tag[:2] == 'DO':
+        return 'ccomp/xcomp'
     elif mod_tag in ['VAN', 'DAN', 'HAN', 'BAN', 'RAN']: # RAN vantaði?
         # return 'aux:pass' # UD hætt með aux:pass?
         return 'aux'
@@ -122,8 +136,10 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif mod_tag in ['N', 'NS', 'NPR', 'NPRS']:
         # return 'rel'
         return 'dep'
+    elif head_tag == 'IP' and head_func == 'SMC':
+        return 'dep'
 
-    # return 'rel-'+mod_tag
+    #return 'rel-'+mod_tag+' '+head_tag+head_func
     return 'dep'
 
 def decode_escaped(string, lemma=False):

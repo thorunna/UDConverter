@@ -15,7 +15,6 @@ import subprocess
 import json
 from sys import stdin, stdout
 
-
 from nltk.corpus.util import LazyCorpusLoader
 from nltk.data import path as nltk_path
 
@@ -160,6 +159,8 @@ def main():
             tree = fix_IcePaHC_tree_errors(tree)
             if tree.corpus_id_num == tree_num:
                 TREE = tree.remove_nodes(tags=['CODE'], trace=True)
+            else:
+                TREE = tree.remove_nodes(tags=['CODE'], trace=True)
 
         try:
             print(TREE)
@@ -167,7 +168,6 @@ def main():
             if args.auto_tag:
                 c = depender.Converter(auto_tags='single_sentence')
             elif args.faroese:
-                print('FAROESE')
                 c = depender.Converter(faroese=True)
             else:
                 c = depender.Converter()
@@ -192,6 +192,8 @@ def main():
             c = depender.Converter(auto_tags='corpus')
             tag_dict = tagged_corpus(CORPUS.parsed_sents(file_id))
             c.set_tag_dict(tag_dict)
+        elif args.faroese:
+            c = depender.Converter(faroese=True)
         else:
             # uses treebank PoS tags for UD features
             c = depender.Converter()
@@ -211,6 +213,7 @@ def main():
                 tree = fix_IcePaHC_tree_errors(tree)
                 # Tree static variable defined, code nodes and some traces removed
                 TREE = tree.remove_nodes(tags=['CODE'], trace=True)
+
                 
                 # TEMP: for processing faroese treebank 
                 # eventually implemented differently
@@ -220,7 +223,8 @@ def main():
                     dep = c.create_dependency_graph(TREE)
                 
                 # conversion happens below
-                if dep.get_by_address(len(dep.nodes)-1)['word'] not in {'.', ':', '?', '!', 'kafli'} \
+                if dep.get_by_address(len(dep.nodes)-1)['word'] not in {'.', ':', '?', '!', 'kafli', '"'} \
+
                 and len(dep.nodes) != 1:
                     # checks for incomplete sentence (single clause) by checking
                     # puntuation and specific words (e.g. 'kafli') 
@@ -280,7 +284,10 @@ def main():
                     except Exception as ex:
                         # catches any exception
                         raise
-                        print('\n\n', dep.original_ID_plain_text(CORPUS='IcePaHC'))
+                        if args.faroese:
+                            print('\n\n', dep.original_ID_plain_text(CORPUS='FarPaHC'))
+                        else:
+                            print('\n\n', dep.original_ID_plain_text(CORPUS='IcePaHC'))
                         print(f'{type(ex).__name__} for sentence: {ex.args}\n\n')
                     to_join = []
 
@@ -293,6 +300,8 @@ def main():
         
         if args.auto_tag:
             c = depender.Converter(auto_tags='corpus')
+        elif args.faroese:
+            c = depender.Converter(faroese=True)
         else:
             c = depender.Converter()
         
@@ -314,6 +323,8 @@ def main():
                     tree = fix_IcePaHC_tree_errors(tree)
 
                     TREE = tree.remove_nodes(tags=['CODE'], trace=True)
+
+                    dep = c.create_dependency_graph(TREE)
 
                     if dep.get_by_address(len(dep.nodes)-1)['word'] not in {'.', ':', '?', '!', 'kafli'} \
                     and len(dep.nodes) != 1:

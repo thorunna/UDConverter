@@ -21,7 +21,7 @@ UD_map = {
     'DON' : 'VERB',
     'DOP' : 'VERB',
     'ES' : 'PRON',  #expletive tagged as PRON
-    'FOR' : 'FOR', #P? TODO 
+    'FOR' : 'P', #P?
     'FP' : 'PART',  #focus particles marked as PART
     'FW' : 'X',
     'HV' : 'AUX',   # getur líka verið aðalsögn #'have' tagged as auxiliary verb
@@ -42,9 +42,9 @@ UD_map = {
     'OTH' : 'PRON',
     'P' : 'ADP',    # generalized prepositions tagged as ADP
     'PRO' : 'PRON',
-    'Q' : 'ADJ',    # quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
-    'QR' : 'ADJ',
-    'RAG' : '', # verðandi TODO 
+    'Q' : 'DET',    # quantifiers tagged as DET - upphaflega varpað yfir í ADJ
+    'QR' : 'DET',
+    'RAG' : 'VERB', # verðandi 
     'RD' : 'VERB',  #'verða', become, tagged as verb
     'RDP' : 'VERB',
     'RDI' : 'VERB',
@@ -69,6 +69,13 @@ UD_map = {
 
 
 feats = {
+    'Case' : {
+        'N' : 'Nom',
+        'A' : 'Acc',
+        'D' : 'Dat',
+        'G' : 'Gen'
+    },
+    
     'NOUN' : {
         'Case' : {
             'N' : 'Nom',    # nominative case
@@ -79,70 +86,13 @@ feats = {
         'Number': {
             'NS' : 'Plur',  # noun, plural number
             'N' : 'Sing',
-            'NPR' : 'Sing'    # noun singular number
+            'NPR' : 'Sing',    # noun singular number
+            'NPRS' : 'Plur'
         },
         'Definite' : { # TODO: remove def from dict
             '$' : 'Def',
             '' : 'Ind'
-        },
-        #'Gender' : { # TODO: add gender to feature matrix
-        #    'kk' : 'Masc',
-        #    'kvk' : 'Fem',
-        #    'hk' : 'Neut'
-        
-    },
-    'PROPN' : { # Case, Number, Definite
-        'Number': {
-            'NPRS' : 'Plur',  # noun, plural number
-            'NPR' : 'Sing'    # noun singular number
-        },
-        'Case' : {
-            'N' : 'Nom',    # nominative case
-            'A' : 'Acc',    # accusative case
-            'D' : 'Dat',    # dative case
-            'G' : 'Gen'     # genitive case
-        },
-        #'Gender' : {
-        #    'kk' : 'Masc',
-        #    'kvk' : 'Fem',
-        #    'hk' : 'Neut'
-        
-    },
-    'PRON' : { # Case, Gender, Number, PronType
-        #'Number': {
-        #    'FT' : 'Plur',  # noun, plural number
-        #    'ET' : 'Sing'    # noun singular number
-        #},
-        'Case' : {
-            'N' : 'Nom',    # nominative case
-            'A' : 'Acc',    # accusative case
-            'D' : 'Dat',    # dative case
-            'G' : 'Gen'     # genitive case
-        }
-        #'PronType' : {
-        #    'pfn' : 'Prs',     #personal
-        #    'abfn' : 'Rcp',     #reciprocal
-        #    'sp' : 'Int',     #interrogative
-        #    'tv' : 'Rel',     #relative
-        #    'ab' : 'Dem',     #demonstrative
-        #    'oakv' : 'Ind'      #indefinite
-        #},
-        #'Gender' : {
-        #    'KK' : 'Masc',
-        #    'KVK' : 'Fem',
-        #    'HK' : 'Neut',
-        #    'hann' : 'Masc',    # for capturing personal pronoun gender
-        #    'hún' : 'Fem',      # for capturing personal pronoun gender
-        #    'það' : 'Neut',     # for capturing personal pronoun gender
-        #}
-    },
-    'DET' : {
-        'Case' : {
-            'N' : 'Nom',
-            'A' : 'Acc',
-            'D' : 'Dat',
-            'G' : 'Gen'
-        }
+        } 
     },
     'ADJ' : {
         'Case' : {
@@ -156,15 +106,6 @@ feats = {
             'R' : 'Cmp',    #second Degree
             'S' : 'Sup'     #third degree
         }
-        #'Gender' : {
-        #    'KK' : 'Masc',
-        #    'KVK' : 'Fem',
-        #    'HK' : 'Neut'
-        #}
-        #'Number' : {
-        #    'ET' : 'Sing',
-        #    'FT' : 'Plur'
-        #}
     },
     'ADV' : {
         'Degree' : {
@@ -182,126 +123,20 @@ feats = {
     'VERB' : {
         'Mood' : {
             'IMP' : 'Imp',  #imperative
-            'FH' : 'Ind',   #indicative
-            'VH' : 'Sub',   #subjunctive
             'I' : 'Ind',    #indicative (IcePaHC POS-tag)
             'S' : 'Sub',    #subjunctive (IcePaHC POS-tag)
         },
         'Tense' : {
-            'NT' : 'Pres',   #present tense
-            'ÞT' : 'Past',    #past tense
             'P' : 'Pres',
             'D' : 'Past'
         },
         'VerbForm' : {
             '' : 'Fin',     #finite verb
             'inf' : 'Inf',     #infinitive verb
-            'part' : 'Part'     #participle
-        },
-        'Voice' : {
-            'GM' : 'Act',     #active voice
-            'MM' : 'Mid',     #middle voice
-            'pass' : 'Pass'     #passive voice
-        },
-        'Person' : {
-            '1P' : '1',
-            '2P' : '2',
-            '3P' : '3'
-        },
-        'Number' : {
-            'ET' : 'Sing',
-            'FT' : 'Plur'
-        },
-        'Case' : {
-            'NF' : 'Nom',   # nominative case (DMII)
-            'ÞF' : 'Acc',   # accusative case (DMII)
-            'ÞGF' : 'Dat',  # dative case (DMII)
-            'ÞG' : 'Dat',   # dative case (DMII, alternative)
-            'EF' : 'Gen',   # genitive case (DMII)
-            'N' : 'Nom',    # nominative case (IcePaHC)
-            'A' : 'Acc',    # accusative case (IcePaHC)
-            'D' : 'Dat',    # dative case (IcePaHC)
-            'G' : 'Gen',    # genitive case (IcePaHC)
-            None : 'Nom'
-        },
-        'Gender' : {
-            'KK' : 'Masc',
-            'KVK' : 'Fem',
-            'HK' : 'Neut'
+            'N' : 'Part',     #participle
+            'G' : 'Part'
         }
-    },
-    'AUX' : {
-        'Mood' : {
-            'IMP' : 'Imp',  #imperative
-            'FH' : 'Ind',   #indicative
-            'VH' : 'Sub',   #subjunctive
-            'I' : 'Ind',    #indicative (IcePaHC POS-tag)
-            'S' : 'Sub',    #subjunctive (IcePaHC POS-tag)
-        },
-        'Tense' : {
-            'NT' : 'Pres',   #present tense
-            'ÞT' : 'Past',    #past tense
-            'P' : 'Pres',
-            'D' : 'Past'
-        },
-        'VerbForm' : {
-            '' : 'Fin',     #finite verb
-            'inf' : 'Inf',     #infinitive verb
-            'part' : 'Part'     #participle
-        },
-        'Voice' : {
-            'GM' : 'Act',     #active voice
-            'MM' : 'Mid',     #middle voice
-            'pass' : 'Pass'     #passive voice
-        },
-        'Person' : {
-            '1P' : '1',
-            '2P' : '2',
-            '3P' : '3'
-        },
-        'Number' : {
-            'ET' : 'Sing',
-            'FT' : 'Plur'
-        },
-        'Case' : {
-            'NF' : 'Nom',
-            'ÞF' : 'Acc',
-            'ÞGF' : 'Dat',
-            'EF' : 'Gen'
-        },
-        'Gender' : {
-            'KK' : 'Masc',
-            'KVK' : 'Fem',
-            'HK' : 'Neut'
-        }
-    },
-    'NUM' : {
-        'Case' : {
-            'N' : 'Nom',
-            'A' : 'Acc',
-            'D' : 'Dat',
-            'G' : 'Gen'
-        },
-        'Gender' : {
-            'KK' : 'Masc',
-            'KVK' : 'Fem',
-            'HK' : 'Neut'
-        },
-        'Number': {
-            'FT' : 'Plur',  # plural
-            'ET' : 'Sing'    # singular
-        },
-        'NumType' : {       #ATH. mögulegt að tilgreina þetta?
-            'C' : 'Card',    #Cardinal number
-            'O' : 'Ord',     #Ordinal number
-            '' : 'Frac'      #Fraction
-        }
-    },
-    'ADP' : {
-        'AdpType' : {
-            'P' : 'Prep'
-        }
-    },
+    }
 #    'SCONJ' : {},   #no features needed for subordinating conjunctions
 #    'CCONJ' : {},   #no features needed for coordinating conjunctions
 #    'PART' : {},    #no features possible for particles
@@ -364,7 +199,7 @@ head_rules = {
             'IP-MAT-SUB-SPE': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VP', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SMC'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'NP', 'VAG', 'VP', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT']},
             #MD.* á eftir VB: ef VB er spor ruglast venslin en þá getur MD sem hjálparsögn líka verið haus. Ef MD er seinna er það seinna í lagi
-            'IP-SUB'        : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'VAG', 'RAG', 'HAG', 'BAG', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'NP.*', 'RD.*', 'ADVP', 'IP-SUB']},
+            'IP-SUB'        : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'VAN', 'RD.*', 'DAN', 'RAN', 'HAN', 'BAN', 'VAG', 'RAG', 'HAG', 'BAG', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'NP.*', 'RD.*', 'ADVP', 'IP-SUB']},
             'IP-SUB-INF'    : {'dir':'r', 'rules':['VB']},
             'IP-SUB-LFD'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HV.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'RD.*', 'NP', 'ADVP', 'IP-SUB', 'HVN']},
             'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*', 'VAN']},
@@ -463,11 +298,11 @@ head_rules = {
             'NP-PRN-REP'    : {'dir':'r', 'rules':['N-.', 'NS.*', 'NP.*', 'OTHER-.']},
             'NP-RSP'        : {'dir':'r', 'rules':['N-.', 'NS.*', 'NP.*', 'OTHER-.']},
             #NP-SBJ: 'NP.*' var á undan 'PRO', búið að víxla til að NP-PRN verði appos og PRO nsubj
-            'NP-SBJ'        : {'dir':'r', 'rules':['N-N', 'N-.', 'NS-N', 'NPR-N', 'NPRS-N', 'MAN.*', 'PRO-.', 'NP.*', 'ADJ-N', 'OTHER-.', 'Q', 'IP-MAT-PRN']},
+            'NP-SBJ'        : {'dir':'r', 'rules':['N-.*|FW|NS-.*[^NP-POS]', 'N-N', 'N-.', 'NS-N', 'NPR-N', 'NPRS-N', 'MAN.*', 'PRO-.', 'NP.*', 'ADJ-N', 'OTHER-.', 'Q', 'IP-MAT-PRN']},
             'NP-SBJ-LFD'    : {'dir':'r', 'rules':['N-N', 'N-.', 'NS-N', 'NPR-N', 'NPRS-N', 'MAN.*', 'NP.*', 'PRO-.', 'ADJ-N', 'OTHER-.']},
             'NP-SBJ-RSP'    : {'dir':'r', 'rules':['N-N', 'N-.', 'NS-N', 'NPR-N', 'NPRS-N', 'MAN.*', 'NP.*', 'PRO-.', 'ADJ-N', 'OTHER-.']},
             'NP-SMC'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'PRO-.', 'NP.*', 'Q.*', 'MAN-.', 'OTHER-.', 'CP-FRL']},
-            'NP-SPE'            : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'PRO-.', 'NP.*', 'Q.*', 'MAN-.', 'OTHER-.', 'CP-FRL']},
+            'NP-SPE'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'PRO-.', 'NP.*', 'Q.*', 'MAN-.', 'OTHER-.', 'CP-FRL']},
             'NP-OB1'        : {'dir':'r', 'rules':['N-.', 'NPR-.', 'NPRS-.', 'NS-.', 'NP', 'NP-.+', 'PRO-.', 'ONE+Q-A', 'MAN-A', 'OTHER-.']},
             'NP-OB1-LFD'    : {'dir':'r', 'rules':['N-.', 'NPR-.', 'NPRS-.', 'NS-.', 'NP', 'ONE+Q-A', 'MAN-A', 'OTHER-.', 'PRO-.']},
             'NP-OB1-RSP'    : {'dir':'r', 'rules':['N-.', 'NPR-.', 'NPRS-.', 'NS-.', 'NP', 'ONE+Q-A', 'MAN-A', 'OTHER-.', 'PRO-.']},
