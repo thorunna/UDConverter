@@ -823,10 +823,15 @@ class Converter():
 
     def _fix_cop_head(self):
         """
-        A copula cannot be head
+        A copula cannot be head. If so, the dependents' head addresses are changed to the head's head address
         """
 
-        pass
+        for address, node in self.dg.nodes.items():
+            if node['head'] != '_':
+                headaddress = node['head']
+                if self.dg.get_by_address(headaddress)['rel'] == 'cop':
+                    head_headaddress = self.dg.get_by_address(headaddress)['head']
+                    self.dg.get_by_address(address).update({'head': head_headaddress})
 
     def _fix_many_subj(self):
 
@@ -1159,6 +1164,8 @@ class Converter():
         self._fix_head_id_same()
         if ctag_counts['X'] > 0:
             self._fix_flat_foreign()
+        if rel_counts['cop'] > 0:
+            self._fix_cop_head()
 
 
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
