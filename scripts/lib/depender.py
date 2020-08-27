@@ -821,6 +821,16 @@ class Converter():
 
                 #self.dg.get_by_address(address).update({'rel': 'HALLO'})
 
+    def _fix_appos_lr(self):
+
+        for address, node, in self.dg.nodes.items():
+            if self.dg.get_by_address(address)['rel'] == 'appos' and self.dg.get_by_address(address)['head'] > address:
+                head_address = self.dg.get_by_address(address)['head']
+                if self.dg.get_by_address(head_address)['ctag'] == 'VERB':
+                    self.dg.get_by_address(address).update({'rel': 'obl'})
+                elif self.dg.get_by_address(head_address)['ctag'] == 'NOUN':
+                    self.dg.get_by_address(address).update({'rel': 'nmod'})
+
     def _fix_cop_head(self):
         """
         A copula cannot be head. If so, the dependents' head addresses are changed to the head's head address
@@ -840,13 +850,14 @@ class Converter():
 
         for address, node in self.dg.nodes.items():
             if self.dg.get_by_address(address)['rel'] == 'nsubj':
-                head_verbs_head = self.dg.get_by_address(address)['head']
+                head_verbs_head = self.dg.get_by_address(address)
                 break
-        
+
         count = 0
         for address, node in self.dg.nodes.items():
             if self.dg.get_by_address(address)['rel'] == 'nsubj' and count == 0:
                 count += 1
+                head_verbs_head = self.dg.get_by_address(address)['head']
             if self.dg.get_by_address(address)['rel'] == 'nsubj' and count >= 1 \
                 and self.dg.get_by_address(address-1)['ctag'] in {'PUNCT', 'CCONJ'} and node['head'] == head_verbs_head:
                 self.dg.get_by_address(address).update({'rel': 'conj'})
@@ -1171,6 +1182,8 @@ class Converter():
             self._fix_flat_foreign()
         if rel_counts['cop'] > 0:
             self._fix_cop_head()
+        if rel_counts['appos'] > 0:
+            self._fix_appos_lr()
 
 
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
