@@ -57,6 +57,7 @@ UD_map = {
     'P' : 'ADP',    # generalized prepositions tagged as ADP
     'RP' : 'ADP',   # specifiers of P/complements of P - Ath. flokka sem eitthvað annað?
     'RPX' : 'ADP',
+    'FOR' : 'ADP',
     'Q' : 'DET',    # quantifiers tagged as DET - áður: quantifiers tagged as ADJ - ATH ÞETTA ÞARF AÐ ENDURSKOÐA
     'C' : 'SCONJ',  # complimentizer tagged as SCONJ (subordinate conjunction)
     'V' : 'VERB',
