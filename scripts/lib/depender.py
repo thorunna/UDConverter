@@ -799,30 +799,40 @@ class Converter():
         Changes a node's head if it is dependent on itself
         """
         
-        for address, node in self.dg.nodes.items():
-            if node['address'] == node['head']:
-                if self.dg.get_by_address(address-4)['ctag'] == 'VERB':
-                    self.dg.get_by_address(address).update({'head': address-4})
-                elif self.dg.get_by_address(address-3)['ctag'] == 'VERB':
-                    self.dg.get_by_address(address).update({'head': address-3})
-                elif self.dg.get_by_address(address-2)['ctag'] == 'VERB':
-                    self.dg.get_by_address(address).update({'head': address-2})
-                elif self.dg.get_by_address(address-1)['ctag'] == 'VERB':
-                    self.dg.get_by_address(address).update({'head': address-1})
-                elif self.dg.get_by_address(address+1)['ctag'] == 'VERB':
-                    self.dg.get_by_address(address).update({'head': address+1})
-                elif self.dg.get_by_address(address+2)['ctag'] == 'VERB':
-                    self.dg.get_by_address(address).update({'head': address+2})
-                elif self.dg.get_by_address(address+3)['ctag'] == 'VERB':
-                    self.dg.get_by_address(address).update({'head': address+3})
-                elif self.dg.get_by_address(address+4)['ctag'] == 'VERB':
-                    self.dg.get_by_address(address).update({'head': address+4})
+        try:
+            for address, node in self.dg.nodes.items():
+                    if node['address'] == node['head']:
+                        if self.dg.get_by_address(address-4)['ctag'] == 'VERB':
+                            self.dg.get_by_address(address).update({'head': address-4})
+                        elif self.dg.get_by_address(address-3)['ctag'] == 'VERB':
+                            self.dg.get_by_address(address).update({'head': address-3})
+                        elif self.dg.get_by_address(address-2)['ctag'] == 'VERB':
+                            self.dg.get_by_address(address).update({'head': address-2})
+                        elif self.dg.get_by_address(address-1)['ctag'] == 'VERB':
+                            self.dg.get_by_address(address).update({'head': address-1})
+                        elif self.dg.get_by_address(address+1)['ctag'] == 'VERB':
+                            self.dg.get_by_address(address).update({'head': address+1})
+                        elif self.dg.get_by_address(address+2)['ctag'] == 'VERB':
+                            self.dg.get_by_address(address).update({'head': address+2})
+                        elif self.dg.get_by_address(address+3)['ctag'] == 'VERB':
+                            self.dg.get_by_address(address).update({'head': address+3})
+                        elif self.dg.get_by_address(address+4)['ctag'] == 'VERB':
+                            self.dg.get_by_address(address).update({'head': address+4})
+        except RuntimeError:
+            pass
+            #print(self.dg.nodes.items())
+            #raise
 
     def _fix_flat_foreign(self):
 
-        for address, node in self.dg.nodes.items():
-            if node['ctag'] == 'X' and self.dg.get_by_address(address+1)['head'] == address and self.dg.get_by_address(address+1)['ctag'] == 'PROPN':
-                self.dg.get_by_address(address+1).update({'rel': 'flat:foreign'})
+        try:
+            for address, node in self.dg.nodes.items():
+                if node['ctag'] == 'X' and self.dg.get_by_address(address+1)['head'] == address and self.dg.get_by_address(address+1)['ctag'] == 'PROPN':
+                    self.dg.get_by_address(address+1).update({'rel': 'flat:foreign'})
+        except RuntimeError:
+            pass
+            #print(self.dg.nodes.items())
+            #raise
 
     def _fix_left_right_alignments(self):
 
@@ -835,18 +845,46 @@ class Converter():
 
                 #self.dg.get_by_address(address).update({'rel': 'HALLO'})
 
-    def _fix_many_subj(self):
+    def _fix_appos_lr(self):
+
+        for address, node, in self.dg.nodes.items():
+            if self.dg.get_by_address(address)['rel'] == 'appos' and self.dg.get_by_address(address)['head'] > address:
+                head_address = self.dg.get_by_address(address)['head']
+                if self.dg.get_by_address(head_address)['ctag'] == 'VERB':
+                    self.dg.get_by_address(address).update({'rel': 'obl'})
+                elif self.dg.get_by_address(head_address)['ctag'] == 'NOUN':
+                    self.dg.get_by_address(address).update({'rel': 'nmod'})
+
+    def _fix_cop_head(self):
+        """
+        A copula cannot be head. If so, the dependents' head addresses are changed to the head's head address
+        """
 
         for address, node in self.dg.nodes.items():
-            if self.dg.get_by_address(address)['rel'] == 'nsubj':
-                head_verb = self.dg.get_by_address(address)['head']
-                break
-        
+            if node['head'] != '_':
+                headaddress = node['head']
+                if self.dg.get_by_address(headaddress)['rel'] == 'cop':
+                    head_headaddress = self.dg.get_by_address(headaddress)['head']
+                    self.dg.get_by_address(address).update({'head': head_headaddress})
+
+    def _fix_many_subj(self):
+        """
+        If subjects of a verb are more than one
+        """
+
+        #for address, node in self.dg.nodes.items():
+        #    if self.dg.get_by_address(address)['rel'] == 'nsubj':
+        #        head_verbs_head = self.dg.get_by_address(address)['head']
+        #        break
+
         count = 0
         for address, node in self.dg.nodes.items():
+            if self.dg.get_by_address(address)['rel'] == 'nsubj' and count == 0:
+                count += 1
+                head_verbs_head = self.dg.get_by_address(address)['head']
             if self.dg.get_by_address(address)['rel'] == 'nsubj' and count >= 1 \
-                and self.dg.get_by_address(address-1)['ctag'] in {'PUNCT', 'CCONJ'} and self.dg.get_by_address(address)['head'] == head_verb:
-                self.dg.get_by_address(address).update({'rel': 'conj'})
+                and self.dg.get_by_address(address-1)['ctag'] in {'PUNCT', 'CCONJ'} and self.dg.get_by_address(address)['head'] == head_verbs_head:
+                self.dg.get_by_address(address).update({'rel': 'obl'})
                 count += 1
 
 
@@ -921,6 +959,12 @@ class Converter():
                     tag = re.sub('21', '', tag)
                 elif '22' in tag:
                     tag = re.sub('22', '', tag)
+                elif '31' in tag:
+                    tag = re.sub('31', '', tag)
+                elif '32' in tag:
+                    tag = re.sub('32', '', tag)
+                elif '33' in tag:
+                    tag = re.sub('33', '', tag)
                 elif tag.endswith('TTT'):
                     tag = re.sub('-TTT', '', tag)
                 # token_lemma = str(FORM+'-'+LEMMA)
@@ -1166,6 +1210,10 @@ class Converter():
         self._fix_head_id_same()
         if ctag_counts['X'] > 0:
             self._fix_flat_foreign()
+        if rel_counts['cop'] > 0:
+            self._fix_cop_head()
+        if rel_counts['appos'] > 0:
+            self._fix_appos_lr()
 
 
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:

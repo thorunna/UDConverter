@@ -343,7 +343,12 @@ def main():
                     else:
                         try:
                             if len(to_join) == 0:
-                                outfile.write(dep.original_ID)
+                                try:
+                                    outfile.write(dep.original_ID)
+                                except TypeError:
+                                    print(file_id)
+                                    print(dep)
+                                    raise
                                 outfile.write(dep.plain_text())
                                 outfile.write(c.add_space_after(dep).to_conllU())
                                 # print(dep.original_ID)
