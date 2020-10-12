@@ -242,8 +242,12 @@ class ICE_Features():
     def _noun_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
+            try:
+                self.features['Case'] = Icepahc_feats['NOUN']['Case'][case]
+            except KeyError:
+                print(tag)
+                raise
         self.features['Number'] = Icepahc_feats['NOUN']['Number'][tag]
-        self.features['Case'] = Icepahc_feats['NOUN']['Case'][case]
         if '$' in tag:
             self.features['Definite'] = Icepahc_feats['NOUN']['Definite']['$']
         else:
@@ -255,7 +259,10 @@ class ICE_Features():
             tag, case = tag.split('-')
             self.features['Case'] = Icepahc_feats['ADJ']['Case'][case]
         if len(tag) > 3:
-            self.features['Degree'] = Icepahc_feats['ADJ']['Degree'][tag[3]]
+            if tag.startswith('W') and len(tag) > 4:
+                self.features['Degree'] = Icepahc_feats['ADJ']['Degree'][tag[4]]
+            elif not tag.startswith('W'):
+                self.features['Degree'] = Icepahc_feats['ADJ']['Degree'][tag[3]]
         else:
             self.features['Degree'] = Icepahc_feats['ADJ']['Degree']['P']
         return self.features
@@ -263,7 +270,12 @@ class ICE_Features():
     def _pronoun_features(self, tag):
         if '-' in tag:
             case = tag.split('-')[1]
-            self.features['Case'] = Icepahc_feats['Case'][case]
+            if case not in {'1', '2', '3', '4', '5', '6', 'TTT'}:
+                try:
+                    self.features['Case'] = Icepahc_feats['Case'][case]
+                except KeyError:
+                    print(tag)
+                    raise
             return self.features
         if tag.startswith('OTHERS'):
             self.features['Number'] = Icepahc_feats['PRON']['Number']['S']
@@ -273,13 +285,14 @@ class ICE_Features():
     def _determiner_features(self, tag):
         if '-' in tag:
             tag, case = tag.split('-')
-            self.features['Case'] = Icepahc_feats['Case'][case]
+            if case != 'ADV':
+                self.features['Case'] = Icepahc_feats['Case'][case]
             if tag == 'D':
-                self.features['PronType'] = 'Article'
+                self.features['PronType'] = 'Art'
             elif tag == 'ONES':
                 self.features['Number'] = Icepahc_feats['DET']['Number']['S']
             elif tag.startswith('Q'):
-                if tag == 'Q':
+                if tag.startswith('Q'):
                     self.features['Degree'] = Icepahc_feats['DET']['Degree']['']
                 else:
                     self.features['Degree'] = Icepahc_feats['DET']['Degree'][tag]
@@ -287,11 +300,11 @@ class ICE_Features():
                 self.features['Number'] = Icepahc_feats['DET']['Number']['']
         else:
             if tag == 'D':
-                self.features['PronType'] = 'Article'
+                self.features['PronType'] = 'Art'
             elif tag == 'ONES':
                 self.features['Number'] = Icepahc_feats['DET']['Number']['S']
             elif tag.startswith('Q'):
-                if tag == 'Q':
+                if tag.startswith('Q'):
                     self.features['Degree'] = Icepahc_feats['DET']['Degree']['']
                 else:
                     self.features['Degree'] = Icepahc_feats['DET']['Degree'][tag]
@@ -301,23 +314,36 @@ class ICE_Features():
 
     def _numeral_features(self, tag):
         if '-' in tag:
-            tag, case = tag.split('-')
-            self.features['Case'] = Icepahc_feats['Case'][case]
+            case = tag.split('-')[1]
+            tag = tag.split('-')[0]
+            if case != '1':
+                self.features['Case'] = Icepahc_feats['Case'][case]
         return self.features
 
     def _verb_features(self, tag):
         if '-' in tag:
-            tag, case = tag.split('-')
-            self.features['Case'] = Icepahc_feats['VERB']['Case'][case]
+            case = tag.split('-')[1]
+            tag = tag.split('-')[0]
+            if case not in {'TTT', '3', '1', '2', '4'}:
+                try:
+                    self.features['Case'] = Icepahc_feats['Case'][case]
+                except KeyError:
+                    print(tag, case)
+                    raise
         if len(tag) < 3:
             self.features['VerbForm'] = Icepahc_feats['VERB']['VerbForm']['inf']
         elif len(tag) == 4:
             self.features['Tense'] = Icepahc_feats['VERB']['Tense'][tag[2]]
-            self.features['Mood'] = Icepahc_feats['VERB']['Mood'][tag[3]]
+            if tag != 'VBDP':
+                self.features['Mood'] = Icepahc_feats['VERB']['Mood'][tag[3]]
         elif len(tag) == 3:
             #if tag[1] == 'A':
             #    self.features['Voice'] = Icepahc_feats['VERB']['Voice'][tag[1]]
-            self.features['VerbForm'] = Icepahc_feats['VERB']['VerbForm'][tag[2]]
+            try:
+                self.features['VerbForm'] = Icepahc_feats['VERB']['VerbForm'][tag[2]]
+            except:
+                print(tag)
+                raise
             if tag[2] == 'N':
                 self.features['Tense'] = Icepahc_feats['VERB']['Tense']['D']
             elif tag[2] == 'G':
@@ -328,29 +354,35 @@ class ICE_Features():
 
     def _adverb_features(self, tag):
         if '-' in tag:
-            tag, case = tag.split('-')
-            self.features['Case'] = Icepahc_feats['ADV']['Case'][case]
-            if len(tag) > 3 and tag != 'ALSO':
-                self.features['Degree'] = Icepahc_feats['ADV']['Degree'][tag[3]]
+            case = tag.split('-')[1]
+            tag = tag.split('-')[0]
+            if case not in {'1', '2', '3', '5', '10'}:
+                try:
+                    self.features['Case'] = Icepahc_feats['ADV']['Case'][case]
+                except KeyError:
+                    print(tag)
+                    raise
+            if len(tag) > 3 and tag not in {'ALSO', 'WADV', 'WADVP'}:
+                try:
+                    self.features['Degree'] = Icepahc_feats['ADV']['Degree'][tag[3]]
+                except KeyError:
+                    print(tag)
+                    raise
             else:
                 self.features['Degree'] = Icepahc_feats['ADV']['Degree']['P']
         else:
             if len(tag) > 3 and tag not in {'ALSO', 'WADV'}:
-                self.features['Degree'] = Icepahc_feats['ADV']['Degree'][tag[3]]
+                try:
+                    self.features['Degree'] = Icepahc_feats['ADV']['Degree'][tag[3]]
+                except KeyError:
+                    print(tag)
+                    raise
             else:
                 self.features['Degree'] = Icepahc_feats['ADV']['Degree']['P']
         return self.features
     
     def _foreign_features(self, tag):
-        self.features['Foreign'] = 'Foreign'
-        return self.features
-
-    def _prep_features(self, tag):
-        self.features['AdpType'] = 'Prep'
-        return self.features
-
-    def _to_features(self, tag):
-        self.features['PartType'] = 'Inf'
+        self.features['Foreign'] = 'Yes'
         return self.features
 
     def _es_features(self, tag):
@@ -372,7 +404,7 @@ class ICE_Features():
             return self._pronoun_features(self.tag)
         elif word == 'NUM':
             return self._numeral_features(self.tag)
-        elif word.startswith('N') and word != 'NEG':
+        elif word.startswith('N') and word != 'NEG' and word[0:2] != 'NP':
             return self._noun_features(self.tag)
         elif word.startswith(tuple(verbal_prefixes)):
             return self._verb_features(self.tag)
@@ -382,10 +414,6 @@ class ICE_Features():
             return self._adverb_features(self.tag)
         elif word.startswith('FW'):
             return self._foreign_features(self.tag)
-        elif word.startswith('P'):
-            return self._prep_features(self.tag)
-        elif word.startswith('TO'):
-            return self._to_features(self.tag)
         elif word.startswith('ES'):
             return self._es_features(self.tag)
         else:
@@ -426,7 +454,7 @@ class FO_Features():
 
     def _determiner_features(self, tag):
         if tag == 'D':
-            self.features['PronType'] = 'Article'
+            self.features['PronType'] = 'Art'
         if '-' in tag:
             case = tag.split('-')[1]
             self.features['Case'] = fo_rules.feats['Case'][case]
@@ -473,15 +501,7 @@ class FO_Features():
         return self.features
     
     def _foreign_features(self, tag):
-        self.features['Foreign'] = 'Foreign'
-        return self.features
-
-    def _prep_features(self, tag):
-        self.features['AdpType'] = 'Prep'
-        return self.features
-
-    def _to_features(self, tag):
-        self.features['PartType'] = 'Inf'
+        self.features['Foreign'] = 'Yes'
         return self.features
 
     def _es_features(self, tag):
@@ -513,10 +533,6 @@ class FO_Features():
             return self._adverb_features(self.tag)
         elif word.startswith('FW'):
             return self._foreign_features(self.tag)
-        elif word.startswith('P') or word == 'FOR':
-            return self._prep_features(self.tag)
-        elif word.startswith('TO'):
-            return self._to_features(self.tag)
         elif word.startswith('ES'):
             return self._es_features(self.tag)
         else:
