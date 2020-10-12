@@ -658,7 +658,6 @@ class Converter():
         """
 
         for address, node in self.dg.nodes.items():
-            print('address:', address, 'node:', node)
             if node['rel'] == 'cop':
                 self.dg.get_by_address(address+1).update({'rel': 'root'})
 

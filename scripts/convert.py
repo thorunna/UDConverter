@@ -225,7 +225,6 @@ def main():
                 
                 # conversion happens below
                 if dep.get_by_address(len(dep.nodes)-1)['word'] not in {'.', ':', '?', '!', 'kafli', '"'} \
-
                 and len(dep.nodes) != 1:
                     # checks for incomplete sentence (single clause) by checking
                     # puntuation and specific words (e.g. 'kafli') 
