@@ -64,11 +64,11 @@ class NodeJoiner():
     '''
     def __init__(self, file):
         self.file = file
-        self.lines = file.readlines()
+        self.lines = file #file.readlines()
         self.indexes = range(len(self.lines))
-        self.path = file.name
-        self.name = os.path.basename(file.name)
-        self.file_type = os.path.splitext(file.name)[1]
+        # self.path = file.name
+        # self.name = os.path.basename(file.name)
+        # self.file_type = os.path.splitext(file.name)[1]
 
     def _join_tag(self, tag):
         new_tag = ''
@@ -978,6 +978,7 @@ class NodeJoiner():
             self.lines[index], self.lines[index-1] = '\t'.join(curr_line), '\t'.join(prev_line)
             self.lines.insert(index-1, new_line)
             # print(new_line.strip('\n')
+        return self
 
     def fix_joined_space_after(self, index):
 

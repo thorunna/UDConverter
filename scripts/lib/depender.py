@@ -14,6 +14,7 @@ from lib.features import *
 from lib.reader import IndexedCorpusTree
 from lib.rules import head_rules
 from lib.tools import determine_relations, decode_escaped
+from lib.joiners import NodeJoiner
 
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
@@ -159,21 +160,18 @@ class UniversalDependencyGraph(DependencyGraph):
 
         return verb_count
     
-    def fix_left_right_alignment(self):
-        """
-        Method for fixing relations in dependency graph that should go 
-        left-to-right but for some reason don't
-        """
-        rels = ['conj', 'fixed', 'flat:name', 'flat:foreign', 'goeswith', 'appos']
 
-    #def fix_left_right_alignments(self):
-
-    #    rels = {'conj', 'fixed', 'flat:name', 'flat:foreign', 'goesWith'}
-
-    #    for address, node in self.dg.nodes.items():
-    #        if node['rel'] in rels and node['head'] > address:
-    #            self.dg.get_by_address(address).update({'rel': 'HALLO'})
-
+    def join_output_nodes(self, conllU):
+        '''
+        Joins clitics in CoNLLU string output with NodeJoiner class
+        '''
+        nj = NodeJoiner(conllU.split('\n'))
+        for n in reversed(nj.indexes):
+            # Various clitics processed
+            nj.join_clitics(n)
+        conllU = '\n'.join(nj.lines)
+        return conllU
+      
     def to_conllU(self):
         """
         The dependency graph in CoNLL-U (Universal) format.
@@ -198,13 +196,13 @@ class UniversalDependencyGraph(DependencyGraph):
 
         template = '{i}\t{word}\t{lemma_str}\t{ctag}\t{tag}\t{feats_str}\t{head}\t{rel}\t{deps_str}\t{misc_str}\n'
 
-        return ''.join(template.format(i=i, **node,
+        return self.join_output_nodes(''.join(template.format(i=i, **node,
                                        lemma_str=node['lemma'] if node['lemma'] else '_',
                                        deps_str=self._deps_str(node['deps']),
                                        feats_str=self._dict_to_string(node['feats']),
                                        misc_str=self._dict_to_string(node['misc']))
                                     for i, node in sorted(self.nodes.items()) if node['tag'] != 'TOP') \
-                                    + '\n'
+                                    + '\n')
 
     def plain_text(self):
         """ 09.03.20
