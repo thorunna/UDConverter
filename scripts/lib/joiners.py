@@ -1008,7 +1008,7 @@ class NodeJoiner():
                 self.join_adverbs(current_line_num)
                 # NPs processed
                 self.join_NPs(current_line_num)
-                self.join_split_nodes(current_line_num)
+                #self.join_split_nodes(current_line_num)
                 # verbs processed
                 self.join_verbs_same_line(current_line_num)
                 self.join_verbs_two_lines(current_line_num)
