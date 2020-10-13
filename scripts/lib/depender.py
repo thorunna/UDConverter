@@ -405,15 +405,15 @@ class Converter():
 
         for rule in rules:
             for child in main_clause:
-
-                if child.height() == 2 and child[0][0] == '*':
-                    continue
+                try:
+                    if child.height() == 2 and child[0][0] == '*':
+                        continue
 
                 # # DEBUG:
                 # print(rule, child.label())
                 # print(child,'\n')
 
-                elif re.match(rule, child.label()):
+                    elif re.match(rule, child.label()):
 
                     # # DEBUG:
                     # print('Head rules:', rules)
@@ -422,13 +422,16 @@ class Converter():
                     #if '*' in child[0]: #or ' ' in child[0]: ATH. sturlunga 822 CODE tekið út og '' sett í staðinn - betra að hafa ' '
                     #    continue
                     #else:
-                    tree.set_id(child.id())
+                        tree.set_id(child.id())
 
                     # # DEBUG
                     # print('Head:\n',child)
                     # input()
 
-                    return
+                        return
+                except AttributeError:
+                    print(child)
+                    raise
 
         #no head-rules applicable: select either the first or last child as head
         if len(tree) == 0:
@@ -751,6 +754,15 @@ class Converter():
             if node['ctag'] == 'PART' and node['rel'] != 'mark':
                 self.dg.get_by_address(address).update({'rel': 'mark'})
 
+    def _fix_punct_tag(self):
+        """
+        A word with the deprel 'punct' must be tagged PUNCT
+        """
+
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'punct' and node['ctag'] != 'PUNCT':
+                self.dg.get_by_address(address).update({'ctag': 'PUNCT'})
+
     def _fix_flatname_dep(self):
         """
         Finds and fixes a fixed phrase, flat:name
@@ -911,7 +923,11 @@ class Converter():
             TAG_DICT = self._get_tag_dict(t)
 
         self.dg = UniversalDependencyGraph()
-        self.dg.original_ID = t.corpus_id
+
+        if t.corpus_id == None:
+            self.dg.original_ID = 'ID_MISSING'
+        else:
+            self.dg.original_ID = t.corpus_id
 
         for i in t.treepositions():
             if isinstance(t[i], Tree):
@@ -988,7 +1004,10 @@ class Converter():
                     if LEMMA == None:
                         # print(TAG_DICT.get(re.sub(r'\$', '', FORM), '_'))
                         # print(FORM)
-                        LEMMA = TAG_DICT.get(re.sub(r'\$', '', FORM), '_')[1]
+                        try:
+                            LEMMA = TAG_DICT.get(re.sub(r'\$', '', FORM), '_')[1]
+                        except IndexError:
+                            LEMMA = '_'
                     FEATS = Features(ifd_tag).features
                     MISC = defaultdict(lambda: None, {'IFD_tag': ifd_tag})
                 elif self.faroese:
@@ -997,7 +1016,7 @@ class Converter():
                     #print(type(FEATS))
                     MISC = defaultdict(lambda: None)
                 else:
-                    FEATS = defaultdict(lambda: None)
+                    FEATS = ICE_Features(tag).get_features()
                     MISC = defaultdict(lambda: None)
                 if FORM not in {'None', None}:
                     self.dg.add_node({'address': nr,
@@ -1190,6 +1209,7 @@ class Converter():
             self._fix_acl_advcl()
         if rel_counts['punct'] > 0:
             self._fix_punct_heads()
+            self._fix_punct_tag()
         if rel_counts['aux'] > 0:
             self._fix_aux_tag()
         if rel_counts['advmod'] > 0:
@@ -1216,10 +1236,8 @@ class Converter():
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
         #     self._fix_empty_node()
 
-
         # if rel_counts['cop'] > 0:
         #     self._fix_cop()
-
 
         return self.dg
     
@@ -1246,6 +1264,30 @@ class Converter():
                     # testid = "right-to-left-%s" % lspec2ud(cols['rel'])
                     testmessage = 'Line %s: Relation %s must go left-to-right.\nWord form: %s' % (address, cols['rel'], cols['word'])
                     print(testmessage)
+
+    @staticmethod
+    def check_left_to_right(dgraph):
+        """
+        Certain UD relations must always go left-to-right.
+        """
+        for address in dgraph.addresses():
+            cols = dgraph.get_by_address(address)
+            if re.match(r'^[1-9][0-9]*-[1-9][0-9]*$', str(cols['address'])):
+                continue
+            # if DEPREL >= len(cols):
+            #     return # this has been already reported in trees()
+            # According to the v2 guidelines, apposition should also be left-headed, although the definition of apposition may need to be improved.
+            if re.match(r"^(conj|fixed|flat|goeswith|appos)", cols['rel']):
+                ichild = int(cols['address'])
+                iparent = int(cols['head'])
+                if ichild < iparent:
+                    # We must recognize the relation type in the test id so we can manage exceptions for legacy treebanks.
+                    # For conj, flat, and fixed the requirement was introduced already before UD 2.2, and all treebanks in UD 2.3 passed it.
+                    # For appos and goeswith the requirement was introduced before UD 2.4 and legacy treebanks are allowed to fail it.
+                    # testid = "right-to-left-%s" % lspec2ud(cols['rel'])
+                    testmessage = 'Line %s: Relation %s must go left-to-right.\nWord form: %s' % (address, cols['rel'], cols['word'])
+                    print(testmessage)
+
 
     @staticmethod
     def add_space_after(dgraph):

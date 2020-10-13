@@ -52,6 +52,7 @@ class IndexedCorpusTree(Tree):
                 # NPs processed
                 j.join_NPs(n)
                 # j.join_split_nodes(n) # NOTE: tentatively removed because error
+
                 # verbs processed
                 j.join_verbs_same_line(n)
                 j.join_verbs_two_lines(n)
@@ -59,6 +60,8 @@ class IndexedCorpusTree(Tree):
                 # adjectives processed
                 j.join_adjectives(n)
             # print('\n'.join(j.lines))
+        else:
+            j = NodeJoiner(s.split('\n'))
         s = '\n'.join(j.lines)
         tree = super().fromstring(s)
         if trim_id_tag and tree._label == '' and len(tree) == 2:

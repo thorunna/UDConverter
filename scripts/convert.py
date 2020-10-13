@@ -204,7 +204,10 @@ def main():
         
         # path to output saved if indicated, else saved as None
         output_file = re.sub(r'\.psd', '.conllu', file_id) if args.output else None
-        output_path = os.path.join('../CoNLLU', output_file) if output_file else None
+        if args.faroese:
+            output_path = os.path.join('../CoNLLU/farpahc/', output_file) if output_file else None
+        else:
+            output_path = os.path.join('../CoNLLU/icepahc/', output_file) if output_file else None
 
         with open(output_path, 'w') if args.output else stdout as outfile:
             # open file if writing to output, else to stdout, either way called
@@ -215,10 +218,6 @@ def main():
                 # Tree static variable defined, code nodes and some traces removed
                 TREE = tree.remove_nodes(tags=['CODE'], trace=True)
 
-                
-                # TEMP: for processing faroese treebank 
-                # eventually implemented differently
-                
                 dep = c.create_dependency_graph(TREE)
                 
                 # conversion happens below
@@ -324,7 +323,10 @@ def main():
             file_sents = 0 # no. of sentence from current file
 
             output_file = re.sub(r'\.psd', '.conllu', file_id) if args.output else None
-            output_path = os.path.join('../CoNLLU', output_file) if output_file else None
+            if args.faroese:
+                output_path = os.path.join('../CoNLLU/icepahc/', output_file) if output_file else None
+            else:
+                output_path = os.path.join('../CoNLLU/icepahc/', output_file) if output_file else None
 
             with open(output_path, 'w') if args.output else stdout as outfile:
                 for tree in CORPUS.parsed_sents(file_id):
@@ -341,6 +343,7 @@ def main():
                     else:
                         try:
                             if len(to_join) == 0:
+
                                 
                                 # sentence ID saved as string using file_sent runner
                                 sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
@@ -354,6 +357,7 @@ def main():
                                 # sentence text
                                 outfile.write(str(dep.plain_text())+'\n')
                                 # sentence CoNLLU
+
                                 outfile.write(c.add_space_after(dep).to_conllU())
 
                                 if not output_path:
@@ -364,7 +368,7 @@ def main():
                             else:
                                 to_join.append(dep)
                                 dep = c.add_space_after(c.join_graphs(to_join))
-                                
+      
                                 # sentence ID saved as string using file_sent runner
                                 sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
                                 sent_id_line = '# sent_id = ' + sent_id + '\n'

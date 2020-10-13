@@ -44,6 +44,9 @@ sed -i "" 's/(NP-ADT járnum-járna)/(NP-ADT (NS-D járnum-járn))/g' $dir/1150.
 sed -i "" 's/( (\. \?-\?))//g' $dir/1150.homiliubok.rel-ser.psd # .691, .697, .1040, .1044, .1572
 sed -i "" 's/( (\. \.-\.))//g' $dir/1150.homiliubok.rel-ser.psd # .1486
 sed -i "" 's/(CP-REL (WADVP-3 (WADVP þar-þar))/(CP-REL (WADVP-3 (WADV þar-þar))/g' $dir/1150.homiliubok.rel-ser.psd # .42565
+sed -i "" 's/(NP-SBJ \*con\*-N)/(NP-SBJ \*con\*)/g' $dir/1150.homiliubok.rel-ser.psd # .463
+sed -i "" 's/(NP-SBJ \*con\*-D)/(NP-SBJ \*con\*)/g' $dir/1150.homiliubok.rel-ser.psd # .1325
+sed -i "" 's/(NP-SBJ \*con\*-A)/(NP-SBJ \*con\*)/g' $dir/1150.homiliubok.rel-ser.psd # .1587
 
 #1210.jartein.rel-sag.psd
 sed -i "" 's/(D-A ið-hinn)/(D-A \$ð-hinn)/' $dir/1210.jartein.rel-sag.psd # .159
