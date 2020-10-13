@@ -1217,8 +1217,8 @@ class Converter():
         #     self._fix_empty_node()
 
 
-        if rel_counts['cop'] > 0:
-            self._fix_cop()
+        # if rel_counts['cop'] > 0:
+        #     self._fix_cop()
 
 
         return self.dg
