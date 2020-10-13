@@ -405,15 +405,15 @@ class Converter():
 
         for rule in rules:
             for child in main_clause:
-
-                if child.height() == 2 and child[0][0] == '*':
-                    continue
+                try:
+                    if child.height() == 2 and child[0][0] == '*':
+                        continue
 
                 # # DEBUG:
                 # print(rule, child.label())
                 # print(child,'\n')
 
-                elif re.match(rule, child.label()):
+                    elif re.match(rule, child.label()):
 
                     # # DEBUG:
                     # print('Head rules:', rules)
@@ -422,13 +422,16 @@ class Converter():
                     #if '*' in child[0]: #or ' ' in child[0]: ATH. sturlunga 822 CODE tekið út og '' sett í staðinn - betra að hafa ' '
                     #    continue
                     #else:
-                    tree.set_id(child.id())
+                        tree.set_id(child.id())
 
                     # # DEBUG
                     # print('Head:\n',child)
                     # input()
 
-                    return
+                        return
+                except AttributeError:
+                    print(child)
+                    raise
 
         #no head-rules applicable: select either the first or last child as head
         if len(tree) == 0:
@@ -1250,6 +1253,30 @@ class Converter():
                     # testid = "right-to-left-%s" % lspec2ud(cols['rel'])
                     testmessage = 'Line %s: Relation %s must go left-to-right.\nWord form: %s' % (address, cols['rel'], cols['word'])
                     print(testmessage)
+
+    @staticmethod
+    def check_left_to_right(dgraph):
+        """
+        Certain UD relations must always go left-to-right.
+        """
+        for address in dgraph.addresses():
+            cols = dgraph.get_by_address(address)
+            if re.match(r'^[1-9][0-9]*-[1-9][0-9]*$', str(cols['address'])):
+                continue
+            # if DEPREL >= len(cols):
+            #     return # this has been already reported in trees()
+            # According to the v2 guidelines, apposition should also be left-headed, although the definition of apposition may need to be improved.
+            if re.match(r"^(conj|fixed|flat|goeswith|appos)", cols['rel']):
+                ichild = int(cols['address'])
+                iparent = int(cols['head'])
+                if ichild < iparent:
+                    # We must recognize the relation type in the test id so we can manage exceptions for legacy treebanks.
+                    # For conj, flat, and fixed the requirement was introduced already before UD 2.2, and all treebanks in UD 2.3 passed it.
+                    # For appos and goeswith the requirement was introduced before UD 2.4 and legacy treebanks are allowed to fail it.
+                    # testid = "right-to-left-%s" % lspec2ud(cols['rel'])
+                    testmessage = 'Line %s: Relation %s must go left-to-right.\nWord form: %s' % (address, cols['rel'], cols['word'])
+                    print(testmessage)
+
 
     @staticmethod
     def add_space_after(dgraph):

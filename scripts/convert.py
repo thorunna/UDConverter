@@ -204,7 +204,10 @@ def main():
         
         # path to output saved if indicated, else saved as None
         output_file = re.sub(r'\.psd', '.conllu', file_id) if args.output else None
-        output_path = os.path.join('../CoNLLU', output_file) if output_file else None
+        if args.faroese:
+            output_path = os.path.join('../CoNLLU/farpahc/', output_file) if output_file else None
+        else:
+            output_path = os.path.join('../CoNLLU/icepahc/', output_file) if output_file else None
 
         with open(output_path, 'w') if args.output else stdout as outfile:
             # open file if writing to output, else to stdout, either way called
@@ -319,7 +322,10 @@ def main():
             to_tag = ''
 
             output_file = re.sub(r'\.psd', '.conllu', file_id) if args.output else None
-            output_path = os.path.join('../CoNLLU', output_file) if output_file else None
+            if args.faroese:
+                output_path = os.path.join('../CoNLLU/icepahc/', output_file) if output_file else None
+            else:
+                output_path = os.path.join('../CoNLLU/icepahc/', output_file) if output_file else None
 
             with open(output_path, 'w') if args.output else stdout as outfile:
                 for tree in CORPUS.parsed_sents(file_id):
