@@ -5,12 +5,15 @@ import sys
 from nltk.corpus.reader import CategorizedBracketParseCorpusReader
 from nltk.tree import Tree
 
+from lib.joiners import NodeJoiner
 
 class IndexedCorpusTree(Tree):
     """
     Tree object extension with indexed constituents and corpus ID and ID number attributes
     See NLTK Tree class documentation for more: https://www.nltk.org/_modules/nltk/tree.html
-
+    
+    2.7.20 - Added text preprocessing to fromstring method
+    
     Args:
         node (tree): leaf.
         children (tree?): constituents.
@@ -33,11 +36,31 @@ class IndexedCorpusTree(Tree):
         #         self[0] = str(self[0])+'-'+(self[0])
 
     @classmethod
-    def fromstring(cls, s, trim_id_tag=False, **kwargs):
+    def fromstring(cls, s, trim_id_tag=False, preprocess=False, remove_empty_top_bracketing=False):
         """
         Extension of parent class method to check for ID tag and
         """
-        tree = super().fromstring(s, **kwargs)
+        # block for joining seperated nodes in the IcePaHC tree structure
+        if preprocess == True:
+            # print('\n'.join(s.split('\n')))
+            j = NodeJoiner(s.split('\n'))
+            # print('\n'.join(j.lines))
+            for n in j.indexes:
+                # Adverbs and various small nodes processed
+                j.join_adverbs(n)
+                # ADD METHOD HERE for fixing various nodes
+                # NPs processed
+                j.join_NPs(n)
+                j.join_split_nodes(n)
+                # verbs processed
+                j.join_verbs_same_line(n)
+                j.join_verbs_two_lines(n)
+                j.join_verbs_three_lines(n)
+                # adjectives processed
+                j.join_adjectives(n)
+            # print('\n'.join(j.lines))
+        s = '\n'.join(j.lines)
+        tree = super().fromstring(s)
         if trim_id_tag and tree._label == '' and len(tree) == 2:
             tree[0].corpus_id = str(tree[1]).strip('()ID ')
             tree[0].corpus_id_num = str(tree[1]).strip('()ID ').split(',')[1]
@@ -289,7 +312,7 @@ class IcePaHCFormatReader(CategorizedBracketParseCorpusReader):
 
     def _parse(self, t):
         try:
-            tree = IndexedCorpusTree.fromstring(t, remove_empty_top_bracketing=False, trim_id_tag=True).remove_nodes(tags=['CODE'], trace=True)
+            tree = IndexedCorpusTree.fromstring(t, remove_empty_top_bracketing=False, trim_id_tag=True, preprocess=True).remove_nodes(tags=['CODE'], trace=True)
             # # If there's an empty node at the top, strip it off
             # if tree.label() == '' and len(tree) == 2:
             #     tree[0].corpus_id = str(tree[1]).strip('()ID ')

@@ -14,6 +14,7 @@ from lib.features import *
 from lib.reader import IndexedCorpusTree
 from lib.rules import head_rules
 from lib.tools import determine_relations, decode_escaped
+from lib.joiners import NodeJoiner
 
 from nltk.tree import Tree
 from nltk.parse import DependencyGraph
@@ -158,15 +159,19 @@ class UniversalDependencyGraph(DependencyGraph):
                 verb_count += 1
 
         return verb_count
+    
 
-    #def fix_left_right_alignments(self):
-
-    #    rels = {'conj', 'fixed', 'flat:name', 'flat:foreign', 'goesWith'}
-
-    #    for address, node in self.dg.nodes.items():
-    #        if node['rel'] in rels and node['head'] > address:
-    #            self.dg.get_by_address(address).update({'rel': 'HALLO'})
-
+    def join_output_nodes(self, conllU):
+        '''
+        Joins clitics in CoNLLU string output with NodeJoiner class
+        '''
+        nj = NodeJoiner(conllU.split('\n'))
+        for n in reversed(nj.indexes):
+            # Various clitics processed
+            nj.join_clitics(n)
+        conllU = '\n'.join(nj.lines)
+        return conllU
+      
     def to_conllU(self):
         """
         The dependency graph in CoNLL-U (Universal) format.
@@ -191,13 +196,13 @@ class UniversalDependencyGraph(DependencyGraph):
 
         template = '{i}\t{word}\t{lemma_str}\t{ctag}\t{tag}\t{feats_str}\t{head}\t{rel}\t{deps_str}\t{misc_str}\n'
 
-        return ''.join(template.format(i=i, **node,
+        return self.join_output_nodes(''.join(template.format(i=i, **node,
                                        lemma_str=node['lemma'] if node['lemma'] else '_',
                                        deps_str=self._deps_str(node['deps']),
                                        feats_str=self._dict_to_string(node['feats']),
                                        misc_str=self._dict_to_string(node['misc']))
                                     for i, node in sorted(self.nodes.items()) if node['tag'] != 'TOP') \
-                                    + '\n'
+                                    + '\n')
 
     def plain_text(self):
         """ 09.03.20
@@ -909,7 +914,11 @@ class Converter():
             TAG_DICT = self._get_tag_dict(t)
 
         self.dg = UniversalDependencyGraph()
-        self.dg.original_ID = t.corpus_id
+
+        if t.corpus_id == None:
+            self.dg.original_ID = 'ID_MISSING'
+        else:
+            self.dg.original_ID = t.corpus_id
 
         for i in t.treepositions():
             if isinstance(t[i], Tree):
@@ -1214,7 +1223,36 @@ class Converter():
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
         #     self._fix_empty_node()
 
+
+        if rel_counts['cop'] > 0:
+            self._fix_cop()
+
+
         return self.dg
+    
+            
+    @staticmethod
+    def check_left_to_right(dgraph):
+        """
+        Certain UD relations must always go left-to-right.
+        """
+        for address in dgraph.addresses():
+            cols = dgraph.get_by_address(address)
+            if re.match(r'^[1-9][0-9]*-[1-9][0-9]*$', str(cols['address'])):
+                continue
+            # if DEPREL >= len(cols):
+            #     return # this has been already reported in trees()
+            # According to the v2 guidelines, apposition should also be left-headed, although the definition of apposition may need to be improved.
+            if re.match(r"^(conj|fixed|flat|goeswith|appos)", cols['rel']):
+                ichild = int(cols['address'])
+                iparent = int(cols['head'])
+                if ichild < iparent:
+                    # We must recognize the relation type in the test id so we can manage exceptions for legacy treebanks.
+                    # For conj, flat, and fixed the requirement was introduced already before UD 2.2, and all treebanks in UD 2.3 passed it.
+                    # For appos and goeswith the requirement was introduced before UD 2.4 and legacy treebanks are allowed to fail it.
+                    # testid = "right-to-left-%s" % lspec2ud(cols['rel'])
+                    testmessage = 'Line %s: Relation %s must go left-to-right.\nWord form: %s' % (address, cols['rel'], cols['word'])
+                    print(testmessage)
 
     @staticmethod
     def check_left_to_right(dgraph):
