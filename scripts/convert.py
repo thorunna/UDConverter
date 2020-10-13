@@ -215,13 +215,7 @@ def main():
                 # Tree static variable defined, code nodes and some traces removed
                 TREE = tree.remove_nodes(tags=['CODE'], trace=True)
 
-                
-                # TEMP: for processing faroese treebank 
-                # eventually implemented differently
-                if args.faroese:
-                    dep = c.create_dependency_graph(TREE, True)
-                else:
-                    dep = c.create_dependency_graph(TREE)
+                dep = c.create_dependency_graph(TREE)
                 
                 # conversion happens below
                 if dep.get_by_address(len(dep.nodes)-1)['word'] not in {'.', ':', '?', '!', 'kafli', '"'} \
