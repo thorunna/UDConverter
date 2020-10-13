@@ -457,24 +457,26 @@ class NodeJoiner():
         '''
         prev = index-1
         next = index+1
-
-        det_token = r'(?<=D-. \$)[a-zþæðöáéýúíó]*(?=-)' # matches the token of a determiner, excluding "$"
-        det_token_alt = r'(?<=D-.-TTT \$)[a-zþæðöáéýúíó]*(?=-)' # matches det token in case of -TTT in tag
-        det_token_caps = r'(?<=D-. \$)[A-ZÞÆÐÖÁÉÝÚÍÓ]*(?=-)' # match det token if in caps (few examples)
+        
+        det_token = r'(?<=D-. \$)[a-zþæðöáéýúíó]*(?=[-\)])' # matches the token of a determiner, excluding "$"
+        det_token_alt = r'(?<=D-.-TTT \$)[a-zþæðöáéýúíó]*(?=[-\)])' # matches det token in case of -TTT in tag
+        det_token_caps = r'(?<=D-. \$)[A-ZÞÆÐÖÁÉÝÚÍÓ]*(?=[-\)])' # match det token if in caps (few examples)
         det_node = r' ?\(D-[A-Z] \$[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ*$-]*\)' # matches a whole determiner node
         # det_node_alt = r'-TTT'
-        noun_trail = r'(?<=)\$(?=-)' # matches the trailing "$" of a noun
+        noun_trail = r'(?<=)\$(?=[-\)])' # matches the trailing "$" of a noun
         noun_node =  r' {0,1}\(((N|NS|NPR|NPRS)-|FW).*\$-' # matches a whole noun node
-        noun_token_incompl = r'(?<=N-. )(</?dash/?>)?[^($]*(?=-)' # noun token where "$" is missing
+        noun_token_incompl = r'(?<=N-. )(</?dash/?>)?[^($]*(?=[-\)])' # noun token where "$" is missing
 
         prev = index-1
         next = index+1
+        
         if re.search(det_token, self.lines[index]) and re.search(noun_trail, self.lines[index]):
+            
             # print('\t', prev, self.lines[prev].strip())
             # print('\t', index, self.lines[index].strip())
             # print('\t', next, self.lines[next].strip())
             # print()
-
+            
             self.lines[index] = re.sub(noun_trail, re.findall(det_token, self.lines[index])[0], self.lines[index])
             self.lines[index] = re.sub(det_node, '', self.lines[index])
 
@@ -544,6 +546,7 @@ class NodeJoiner():
             # print('\t\t', index, self.lines[index].strip())
             # print('\t\t', next, self.lines[next].strip())
             # print()
+        return self
 
     def join_split_nodes(self, index):
         tags_22 = r'\((ADJ|ADJR|ADV|FP|N|NPR|NS|NUM|ONE|Q|VAG|VAN|VBN|VBPI|WPRO)(\+[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+)?22(-[NADG])? [A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ<>]+-[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+\)'
