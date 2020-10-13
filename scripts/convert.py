@@ -315,6 +315,8 @@ def main():
         fileids = CORPUS.fileids()
 
         for file_id in fileids:
+            if file_id == '1823.ntmatt.rel-bib.psd': continue
+            
             tag_dict = tagged_corpus(CORPUS.parsed_sents(file_id))
             c.set_tag_dict(tag_dict)
 
@@ -324,7 +326,7 @@ def main():
 
             output_file = re.sub(r'\.psd', '.conllu', file_id) if args.output else None
             if args.faroese:
-                output_path = os.path.join('../CoNLLU/icepahc/', output_file) if output_file else None
+                output_path = os.path.join('../CoNLLU/farpahc/', output_file) if output_file else None
             else:
                 output_path = os.path.join('../CoNLLU/icepahc/', output_file) if output_file else None
 
