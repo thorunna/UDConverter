@@ -321,6 +321,7 @@ def main():
 
             to_join = []
             to_tag = ''
+            file_sents = 0 # no. of sentence from current file
 
             output_file = re.sub(r'\.psd', '.conllu', file_id) if args.output else None
             output_path = os.path.join('../CoNLLU', output_file) if output_file else None
@@ -340,30 +341,48 @@ def main():
                     else:
                         try:
                             if len(to_join) == 0:
-                                try:
-                                    outfile.write(dep.original_ID)
-                                except TypeError:
-                                    print(file_id)
-                                    print(dep)
-                                    raise
-                                outfile.write(dep.plain_text())
+                                
+                                # sentence ID saved as string using file_sent runner
+                                sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
+                                sent_id_line = '# sent_id = ' + sent_id + '\n'
+                                
+                                # output written:
+                                # sentence ID
+                                outfile.write(sent_id_line)
+                                # sent ID from original treebank
+                                outfile.write(str(dep.original_ID_plain_text()) + '\n')
+                                # sentence text
+                                outfile.write(str(dep.plain_text())+'\n')
+                                # sentence CoNLLU
                                 outfile.write(c.add_space_after(dep).to_conllU())
-                                # print(dep.original_ID)
-                                # print(dep.plain_text())
-                                # print(c.add_space_after(dep).to_conllU())
+
                                 if not output_path:
                                     input()
+                                    
+                                file_sents += 1 # sentence count runner incremented by 1     
+                                
                             else:
                                 to_join.append(dep)
                                 dep = c.add_space_after(c.join_graphs(to_join))
-                                outfile.write(dep.original_ID)
-                                outfile.write(dep.plain_text())
-                                outfile.write(dep.to_conllU())
-                                # print(dep.original_ID)
-                                # print(dep.plain_text())
-                                # print(dep.to_conllU())
+                                
+                                # sentence ID saved as string using file_sent runner
+                                sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
+                                sent_id_line = '# sent_id = ' + sent_id + '\n'
+                                
+                                # output written:
+                                # sentence ID
+                                outfile.write(sent_id_line)
+                                # sent ID from original treebank
+                                outfile.write(str(dep.original_ID_plain_text()) + '\n')
+                                # sentence text
+                                outfile.write(str(dep.plain_text())+'\n')
+                                # sentence CoNLLU
+                                outfile.write(c.add_space_after(dep).to_conllU())
+
                                 if not output_path:
                                     input()
+                                    
+                                file_sents += 1 # sentence count runner incremented by 1 
 
                         except Exception as ex:
                             raise
