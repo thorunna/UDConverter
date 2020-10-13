@@ -819,7 +819,7 @@ class NodeJoiner():
                     joined_token = prevprev_line[1] + prev_line[1] + curr_line[1]
                     joined_token = re.sub(r'\$\$', '', joined_token)
                     joined_number = prevprev_line[0] + '-' + curr_line[0]
-                    new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+                    new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
                     curr_line[1] = re.sub(r'\$[tðd]?[uú]', 'þú', curr_line[1])
                     prev_line[1] = re.sub(r'\$', '', prev_line[1])
                     prevprev_line[1] = re.sub(r'\$', '', prevprev_line[1])
@@ -840,9 +840,9 @@ class NodeJoiner():
                     # print(joined_token)
                     joined_number = prev_line[0] + '-' + curr_line[0]
                     if re.search(r'SpaceAfter=No', curr_line[9]):
-                        new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n'])
+                        new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
                     else:
-                        new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+                        new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
                     curr_line[1] = re.sub(r'\$[tðd]?[uú]', 'þú', curr_line[1])
                     prev_line[1] = re.sub(r'\$', '', prev_line[1])
                     # print(prev_line)
@@ -880,9 +880,9 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
-                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n'])
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
-                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             curr_line[9] = re.sub(r'\|SpaceAfter=No', '', curr_line[9])
             curr_line[9] = re.sub(r'SpaceAfter=No', '_', curr_line[9])
             prev_line[9] = re.sub(r'\|SpaceAfter=No', '', prev_line[9])
@@ -901,9 +901,9 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
-                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n'])
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
-                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             prev_line[1] = re.sub(r'\$', '', prev_line[1])
             curr_line[1] = re.sub(r'\$i', 'þið', curr_line[1])
             # print(new_line.strip('\n'))
@@ -923,9 +923,9 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
-                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n'])
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
-                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             prev_line[1] = re.sub(r'\$', '', prev_line[1])
             if curr_line[2] == 'kostur':
                 return self
@@ -968,9 +968,9 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
-                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n'])
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
-                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n'])
+                new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             prev_line[1] = re.sub(r'þ\$', 'þó', prev_line[1])
             prev_line[1] = re.sub(r'Þ\$', 'ÞÓ', prev_line[1])
             curr_line[1] = re.sub(r'\$', '', curr_line[1])

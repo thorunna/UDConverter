@@ -763,6 +763,12 @@ class Converter():
             if node['rel'] == 'punct' and node['ctag'] != 'PUNCT':
                 self.dg.get_by_address(address).update({'ctag': 'PUNCT'})
 
+    def _fix_punct_rel(self):
+
+        for address, node in self.dg.nodes.items():
+            if node['ctag'] == 'PUNCT' and node['rel'] != 'punct':
+                self.dg.get_by_address(address).update({'rel': 'punct'})
+
     def _fix_flatname_dep(self):
         """
         Finds and fixes a fixed phrase, flat:name
@@ -854,14 +860,19 @@ class Converter():
 
                 #self.dg.get_by_address(address).update({'rel': 'HALLO'})
 
+  #def _fix_foreign_rels(self):
+
+#        for address, node in self.dg.nodes.items():
+#            if node['rel'] == 'flat:foreign' and node['head'] > address:
+
     def _fix_appos_lr(self):
 
         for address, node, in self.dg.nodes.items():
             if self.dg.get_by_address(address)['rel'] == 'appos' and self.dg.get_by_address(address)['head'] > address:
                 head_address = self.dg.get_by_address(address)['head']
-                if self.dg.get_by_address(head_address)['ctag'] == 'VERB':
+                if self.dg.get_by_address(head_address)['ctag'] in {'VERB', 'AUX'}:
                     self.dg.get_by_address(address).update({'rel': 'obl'})
-                elif self.dg.get_by_address(head_address)['ctag'] == 'NOUN':
+                elif self.dg.get_by_address(head_address)['ctag'] in {'NOUN', 'PROPN', 'PRON', 'ADJ'}:
                     self.dg.get_by_address(address).update({'rel': 'nmod'})
 
     def _fix_cop_head(self):
@@ -1227,6 +1238,8 @@ class Converter():
         self._fix_head_id_same()
         if ctag_counts['X'] > 0:
             self._fix_flat_foreign()
+        if ctag_counts['PUNCT'] > 0:
+            self._fix_punct_rel()
         if rel_counts['cop'] > 0:
             self._fix_cop_head()
         if rel_counts['appos'] > 0:

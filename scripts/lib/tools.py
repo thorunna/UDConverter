@@ -26,6 +26,8 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
         return 'obj'
     elif mod_tag in ['NS', 'N', 'NPRS'] and head_tag in ['NP', 'NX', 'QTP', 'ADJP', 'CONJP', 'NPR']:    #seinna no. í nafnlið fær 'conj' og er háð fyrra no.
         return 'conj'
+    elif head_tag == 'ADJP':
+        return 'amod'
     elif mod_tag == 'NPR' and head_tag == 'CONJP':
         return 'conj'
 #    elif mod_tag == 'NPR' and head_tag in ['NP', 'NX', 'QTP']:
@@ -72,8 +74,8 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
         return 'ccomp'
     elif head_tag == 'IP' and head_func == 'INF-PRP':
         return 'advcl'
-#    elif head_tag == 'IP' and head_func == 'INF':
-#        return 'xcomp'
+    #elif head_tag == 'IP':
+    #    return head_tag+head_func
     elif head_tag == 'NP' and mod_tag == 'VAN':
         return 'amod'
     elif mod_tag in ['VAN', 'DAN'] or mod_tag[:2] == 'DO':
@@ -140,6 +142,9 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
         return 'dep'
 
     #return 'rel-'+mod_tag+' '+head_tag+head_func
+    #if head_tag != None and head_func != None:
+    #    return 'dep'+head_tag+head_func
+    #else:
     return 'dep'
 
 def decode_escaped(string, lemma=False):

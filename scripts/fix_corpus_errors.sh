@@ -223,6 +223,7 @@ sed -i "" 's/(WNP-1 (WADVP Hvað-hvað) (ADV lengi-lengi))/(WNP-1 (WADV Hvað-hv
 sed -i "" 's/(NS-N orðin-verða))/(RDN orðin-verða))/' $dir/1791.jonsteingrims.bio-aut.psd # .322
 sed -i "" 's/(NP-SBJ \$ðu-þú)/(NP-SBJ (PRO-N \$ðu-þú))/g' $dir/1791.jonsteingrims.bio-aut.psd # .971
 sed -i "" 's/(PRO-C oss-ég)/(PRO-D oss-ég)/g' $dir/1791.jonsteingrims.bio-aut.psd # .461
+sed -i "" 's/(CP-THT-SPE (FW nema-nema)/(CP-THT-SPE (FP nema-nema)/g' $dir/1791.jonsteingrims.bio-aut.psd # .1154
 
 # 1830.hellismenn.nar-sag.psd
 sed -i "" 's/(MDPI muntu-munu)/(MDPI mun\$-munu)/g' $dir/1830.hellismenn.nar-sag.psd # .256
@@ -273,6 +274,9 @@ sed -i "" 's/(- -)//g' $dir/1902.fossar.nar-fic.psd # .872 o.fl.
 sed -i "" 's/(PP (P -))//g' $dir/1902.fossar.nar-fic.psd # .879
 sed -i "" 's/(NUM-N -)//g' $dir/1902.fossar.nar-fic.psd # .881
 
+# 1907.leysing.nar-fic.psd
+sed -i "" 's/( (IP-MAT (, -))\n  (ID 1907.LEYSING.NAR-FIC,.1311))//' $dir/1907.leysing.nar-fic.psd # .1311
+
 # 1985.sagan.nar-fic.psd
 sed -i "" 's/(NP-SBJ \$ðu-þú)/(NP-SBJ (PRO-N \$ðu-þú))/g' $dir/1985.sagan.nar-fic.psd # .494
 sed -i "" 's/(NP (N-A skrána-skrá)/(NP (N-A skrá\$-skrá)/g' $dir/1985.sagan.nar-fic.psd # .628
@@ -310,6 +314,7 @@ sed -i "" 's/(VBI koddu-koma)/(VBI kod\$-koma)/g' $dir/2008.mamma.nar-fic.psd # 
 # 2008.ofsi.nar-sag.psd
 # sed -i "" '13057, 13058d' $dir/2008.ofsi.nar-sag.psd # .622 Not completely sure why this is here.
 sed -i "" 's/\$hitta)/hitta)/g' $dir/2008.ofsi.nar-sag.psd # .313
+sed -i "" 's/(CONJP-4 (CONJP eða-eða)/(CONJP-4 (CONJ eða-eða)/g' $dir/2008.ofsi.nar-sag.psd # .318
 sed -i "" 's/(N-A \$veginn-vegur))/(N-A \$veg\$-vegur) (D-A \$inn-hinn))/g' $dir/2008.ofsi.nar-sag.psd # .442
 sed -i "" 's/(Q-A nokkurntíma-nokkurntími) (N-A \$tíma-tími))/(Q-A nokkurn\$-nokkur) (N-A $tíma-tími))/g' $dir/2008.ofsi.nar-sag.psd # .450
 sed -i "" 's/(NRP-N skarði/(NPR-N skarði/g' $dir/2008.ofsi.nar-sag.psd # .734
