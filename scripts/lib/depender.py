@@ -911,7 +911,11 @@ class Converter():
             TAG_DICT = self._get_tag_dict(t)
 
         self.dg = UniversalDependencyGraph()
-        self.dg.original_ID = t.corpus_id
+
+        if t.corpus_id == None:
+            self.dg.original_ID = 'ID_MISSING'
+        else:
+            self.dg.original_ID = t.corpus_id
 
         for i in t.treepositions():
             if isinstance(t[i], Tree):
