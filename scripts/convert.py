@@ -348,7 +348,7 @@ def main():
                                     print(file_id)
                                     print(dep)
                                     raise
-                                outfile.write(dep.plain_text())
+                                outfile.write(dep.plain_text()+'\n')
                                 outfile.write(c.add_space_after(dep).to_conllU())
                                 # print(dep.original_ID)
                                 # print(dep.plain_text())
@@ -359,7 +359,7 @@ def main():
                                 to_join.append(dep)
                                 dep = c.add_space_after(c.join_graphs(to_join))
                                 outfile.write(dep.original_ID)
-                                outfile.write(dep.plain_text())
+                                outfile.write(dep.plain_text()+'\n')
                                 outfile.write(dep.to_conllU())
                                 # print(dep.original_ID)
                                 # print(dep.plain_text())

@@ -754,6 +754,15 @@ class Converter():
             if node['ctag'] == 'PART' and node['rel'] != 'mark':
                 self.dg.get_by_address(address).update({'rel': 'mark'})
 
+    def _fix_punct_tag(self):
+        """
+        A word with the deprel 'punct' must be tagged PUNCT
+        """
+
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'punct' and node['ctag'] != 'PUNCT':
+                self.dg.get_by_address(address).update({'ctag': 'PUNCT'})
+
     def _fix_flatname_dep(self):
         """
         Finds and fixes a fixed phrase, flat:name
@@ -995,7 +1004,10 @@ class Converter():
                     if LEMMA == None:
                         # print(TAG_DICT.get(re.sub(r'\$', '', FORM), '_'))
                         # print(FORM)
-                        LEMMA = TAG_DICT.get(re.sub(r'\$', '', FORM), '_')[1]
+                        try:
+                            LEMMA = TAG_DICT.get(re.sub(r'\$', '', FORM), '_')[1]
+                        except IndexError:
+                            LEMMA = '_'
                     FEATS = Features(ifd_tag).features
                     MISC = defaultdict(lambda: None, {'IFD_tag': ifd_tag})
                 elif self.faroese:
@@ -1197,6 +1209,7 @@ class Converter():
             self._fix_acl_advcl()
         if rel_counts['punct'] > 0:
             self._fix_punct_heads()
+            self._fix_punct_tag()
         if rel_counts['aux'] > 0:
             self._fix_aux_tag()
         if rel_counts['advmod'] > 0:
@@ -1224,8 +1237,8 @@ class Converter():
         #     self._fix_empty_node()
 
 
-        if rel_counts['cop'] > 0:
-            self._fix_cop()
+        #if rel_counts['cop'] > 0:
+        #    self._fix_cop()
 
 
         return self.dg
