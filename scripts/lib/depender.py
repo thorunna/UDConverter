@@ -1377,7 +1377,16 @@ class Converter():
                     # TODO: fix misc, erases previous
                 else:
                     # print(node)
-                    node.update({'head' : old_new_addresses[node['head']]})
+                    try:
+                        node.update({'head' : old_new_addresses[node['head']]})
+                    except KeyError:
+                        print(node)
+                        for x in to_join:
+                            print(x.plain_text())
+                        #print(list(to_join))
+                        print(node['head'])
+                        raise
+
                 new_dg.add_node(node)
 
         # TODO: fix deps:
