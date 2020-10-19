@@ -534,7 +534,7 @@ head_rules = {
             'NP-DIR'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NP.*']},
             'NP-DIR-LFD'    : {'dir':'r', 'rules':['N-.', 'NS-.', 'NP.*']},
             'NP-DIR-PRN'    : {'dir':'r', 'rules':['N-.', 'NS-.', 'NP.*']},
-            'ADJP'          : {'dir':'r', 'rules':['VAN|ADJ-.|ADJR-.ADJS-.|Q.*', 'ADJR-.', 'ADJS-.', 'ADVP', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'N-.+|NS-.+', 'ADJP']},
+            'ADJP'          : {'dir':'r', 'rules':['VAN|ADJ-.|ADJR-.ADJS-.|Q.*', 'ADJR-.', 'ADJS-.', 'ADVP', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'N-.+|NS-.+', 'CONJP', 'ADJP']},
             #'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},     #SPR = secondary predicate
             'ADJP-SPR-LFD'  : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},
             'ADJP-DIR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'Q.*']},
