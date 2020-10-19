@@ -141,10 +141,9 @@ def determine_relations(mod_tag, mod_func, head_tag, head_func):
     elif head_tag == 'IP' and head_func == 'SMC':
         return 'dep'
 
-    #return 'rel-'+mod_tag+' '+head_tag+head_func
-    #if head_tag != None and head_func != None:
+    #try:
     #    return 'dep'+head_tag+head_func
-    #else:
+    #except TypeError:
     return 'dep'
 
 def decode_escaped(string, lemma=False):

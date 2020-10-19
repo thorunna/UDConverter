@@ -76,6 +76,10 @@ sed -i "" 's/( (. .-.))//' $dir/1275.morkin.nar-his.psd # .451, .1680
 sed -i "" 's/( (" "-"))//' $dir/1275.morkin.nar-his.psd # .451
 sed -i "" 's/(CP-REL (WADVP-1 (WADVP hvert-hvert))/(CP-REL (WADVP-1 (WADV hvert-hvert))/' $dir/1275.morkin.nar-his.psd # .11804
 sed -i "" 's/(CP-QUE-SPE (WADVP-1 (WADVP Hví-hví))/(CP-QUE-SPE (WADVP-1 (WADV Hví-hví))/' $dir/1275.morkin.nar-his.psd # .16267
+sed -i "" 's/(NP-TMP (NS-A ið-hinn)/(NP-TMP (D-A ið-hinn)/' $dir/1275.morkin.nar-his.psd # .1285
+
+# 1300.alexander.nar-sag.psd
+sed -i "" 's/(BEPI sér-sjá)/(BEPI sér-vera)/g' $dir/1300.alexander.nar-sag.psd # .55
 
 # 1310.grettir.nar-sag.psd
 sed -i "" 's/(NP-POS (N-S hryggjar-hryggur))))/(NP-POS (N-G hryggjar-hryggur))))/g' $dir/1310.grettir.nar-sag.psd # .95
@@ -134,6 +138,9 @@ sed -i "" 's/(IP-INF-SPE (NP-OB2 ICH*-1)/(IP-INF-SPE (NP-OB2 *ICH*-1)/g' $dir/14
 sed -i "" 's/(P (RP upp-upp)/(PP (RP upp-upp)/g' $dir/1450.vilhjalmur.nar-sag.psd # 46.901
 sed -i "" 's/(NX (VAN-A skyggðan-skyggðja) (N-A hjálm-hjálmur))))/(NX (VAN-A skyggðan-skyggja) (N-A hjálm-hjálmur))))/g' $dir/1450.vilhjalmur.nar-sag.psd # 78.1575
 
+# 1450.bandamenn.nar-rel.psd
+sed -i "" 's/(NP-PRD (NS-N engi-engi) (N-N svívirðing-svívirðing))/(NP-PRD (Q-N engi-enginn) (N-N svívirðing-svívirðing))/g' $dir/1475.aevintyri.nar-rel.psd # .346
+
 # 1475.aevintyri.nar-rel.psd
 sed -i "" 's/mát-mega/mát\$-mega/g' $dir/1475.aevintyri.nar-rel.psd # .805
 # sed -i "" 's/skal-skulu/skal\$-skulu/g' $dir/1475.aevintyri.nar-rel.psd # .840
@@ -173,6 +180,7 @@ sed -i "" 's/(ADVP (ADVR eins-eins)))/(ADVP (ADVR \$eins-eins)))/g' $dir/1593.ei
 # 1628.olafuregils.bio-tra.psd
 sed -i "" 's/(IP-INF-ZZZ/(IP-INF/' $dir/1628.olafuregils.bio-tra.psd # .205
 sed -i "" 's/(N-N \$n-hinn)/(D-N \$n-hinn)/' $dir/1628.olafuregils.bio-tra.psd # 345
+sed -i "" 's/(ADJP (N-A bezta-bestur) (CONJ og-og) (ADJS-A beinasta-beinastur))/(ADJP (ADJS-A bezta-bestur) (CONJ og-og) (ADJS-A beinasta-beinastur))/' $dir/1628.olafuregils.bio-tra.psd # 138
 
 # 1630.gerhard.rel-oth.psd
 sed -i "" 's/(IP-IMP-SPE (VBI Sjá-sjá)/(IP-IMP-SPE (VBI Sjá\$-sjá)/g' $dir/1630.gerhard.rel-oth.psd # .901, .2991, .3003
@@ -213,6 +221,7 @@ sed -i "" 's;(N-D ráðleysu-ráðleysi) (CONJ og-og) (N-D hugar<dash/>víli-hug
 
 # 1725.biskupasogur.nar-rel.psd
 sed -i "" 's;(- ---);(- <dash/>-<dash/>);g' $dir/1725.biskupasogur.nar-rel.psd # .12, .24
+sed -i "" 's/(NP-SBJ (NPRS-N herra-herra) (NPR-N Guðbrandur-guðbrandur))/(NP-SBJ (NPR-N herra-herra) (NPR-N Guðbrandur-guðbrandur))/g' $dir/1725.biskupasogur.nar-rel.psd # .135
 
 # 1790.fimmbraedra.nar-sag.psd
 sed -i "" 's/(VAN \$lögð-\$leggja))/(RP upp\$-upp) (RP \$á\$-á) (VAN \$lögð-leggja))/g' $dir/1790.fimmbraedra.nar-sag.psd # .72
