@@ -406,7 +406,7 @@ head_rules = {
             'IP-SUB=5'      : {'dir':'r', 'rules':['PP-BY']},
             'IP-SUB-INF'    : {'dir':'r', 'rules':['VB']},
             'IP-SUB-LFD'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HV.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'RD.*', 'NP', 'ADVP', 'IP-SUB', 'HVN']},
-            'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*', 'VAN', 'NP-POS', 'IP-SUB', 'ADVP', 'NP-SBJ']},
+            'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*', 'VAN', 'NP-POS', 'IP-SUB', 'ADVP.*', 'NP-SBJ']},
             'IP-SUB-PRN-ELAB': {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-PRN=XXX': {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-REP'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'NP.*', 'ADJP', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB']},
@@ -516,7 +516,7 @@ head_rules = {
             'NP-OB2'        : {'dir':'r', 'rules':['N.*', 'N-D', 'NS-D', 'N-A', 'NP.*', 'PRO-.', 'NPR-.', 'NPRS-.', 'CP-FRL', 'MAN-.', 'OTHER-.']},    #MEIRA?
             'NP-OB2-RSP'    : {'dir':'r', 'rules':['NP.*', 'PRO-.', 'N-D', 'NS-D', 'NPR-.', 'NPRS-.', 'CP-FRL', 'MAN-.', 'OTHER-.']},
             'NP-OB3'        : {'dir':'r', 'rules':['PRO-D', 'N-D', 'NS-D', 'NPR-D', 'NPRS-D', 'MAN-.', 'OTHER-.']},
-            'NP-PRD'        : {'dir':'r', 'rules':['(N-.|FW)', 'NS.*', 'NP.*|LATIN', 'PRO.*' 'OTHER-.', 'NUMP', 'ADJ.*']},     #sagnfylling copulu
+            'NP-PRD'        : {'dir':'r', 'rules':['(N-.|FW|NS.*)', 'NP.*|LATIN', 'PRO.*' 'OTHER-.', 'NUMP', 'ADJ.*']},     #sagnfylling copulu
             'NP-SPR'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.' 'NPRS-.',]},   #secondary predicate
             'NP-POS'        : {'dir':'r', 'rules':['N.*|FW', 'NPR-.', 'N-.', 'NS-.', 'NPRS-.', 'PRO-.', 'NP', 'NP-.+', 'MAN-.', 'OTHER-.']},
             'NP-POS-RSP'    : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'PRO-.', 'NP-.+', 'MAN-.', 'OTHER-.']},
@@ -534,7 +534,7 @@ head_rules = {
             'NP-DIR'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NP.*']},
             'NP-DIR-LFD'    : {'dir':'r', 'rules':['N-.', 'NS-.', 'NP.*']},
             'NP-DIR-PRN'    : {'dir':'r', 'rules':['N-.', 'NS-.', 'NP.*']},
-            'ADJP'          : {'dir':'r', 'rules':['VAN', 'ADJ-.|ADJR-.ADJS-.|Q.*', 'ADJR-.', 'ADJS-.', 'ADVP', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'N.+', 'ADJP']},
+            'ADJP'          : {'dir':'r', 'rules':['VAN|ADJ-.|ADJR-.ADJS-.|Q.*', 'ADJR-.', 'ADJS-.', 'ADVP', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'N-.+|NS-.+', 'ADJP']},
             #'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},     #SPR = secondary predicate
             'ADJP-SPR-LFD'  : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},
             'ADJP-DIR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJR-.', 'ADJS-.', 'ADVR', 'ONE', 'ONES', 'CP-TMP', 'Q.*']},
@@ -582,7 +582,7 @@ head_rules = {
             'WADVP'         : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'WADV']},
             'WADVP-LOC'     : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'WADV']},
             'WADVP-NaN'     : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'WADV']},
-            'CONJP'         : {'dir':'r', 'rules':['IP-INF-SPE', 'IP-MAT-SPE', 'IP-MAT-SPE=1', 'IP-SUB', 'IP-SUB=5', 'IP-SUB=2', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP.*', 'NX', 'NUMP.*', 'NUM-.', 'QTP', 'QP', 'QX', 'IP-SUB', 'IP-MAT.*', 'IP-INF', 'IP-INF.*', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'ADJ-.', 'ADVP.*', 'PP', 'RRC', 'CONJ']},
+            'CONJP'         : {'dir':'r', 'rules':['IP-INF-SPE', 'IP-MAT-SPE', 'IP-MAT-SPE=1', 'IP-SUB', 'IP-SUB=5', 'IP-SUB=2', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP.*', 'NX', 'NUMP.*', 'NUM-.', 'QTP', 'QP', 'QX', 'IP-SUB', 'IP-MAT.*', 'IP-INF', 'IP-INF.*', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'ADJ-.', 'ADVP.*', 'PP', 'RRC', 'CONJ', 'FRAG']},
             'CONJP-PP'      : {'dir':'r', 'rules':['NP.*', 'NX', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NUM-.', 'QP', 'QX', 'IP-SUB', 'IP-MAT', 'IP-INF', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'PP', 'RRC', 'CONJ']},
             'CONJP-PRN'     : {'dir':'r', 'rules':['NP.*', 'NX', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NUM-.', 'QP', 'QX', 'IP-SUB', 'IP-MAT', 'IP-INF', 'IP-.+', 'CP-QUE', 'ADJP', 'ADJX', 'PP', 'RRC', 'CONJ']},
             'WNP'           : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'Q-.', 'WQ-.', 'WPRO-.', 'PRO-.', 'WD-.', 'NP.*', 'WNP.*']}, #MEIRA?

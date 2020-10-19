@@ -286,6 +286,9 @@ sed -i "" 's/(NUM-N -)//g' $dir/1902.fossar.nar-fic.psd # .881
 # 1907.leysing.nar-fic.psd
 sed -i "" 's/( (IP-MAT (, -))\n  (ID 1907.LEYSING.NAR-FIC,.1311))//' $dir/1907.leysing.nar-fic.psd # .1311
 
+# 1985.margsaga.nar-fic.psd
+sed -i "" 's/(NP-ADV (D+N-D hinumegin-hinumeginn)/(NP-ADV (N+D-D hinumegin-hinumeginn)/g' $dir/1985.margsaga.nar-fic.psd # .1173
+
 # 1985.sagan.nar-fic.psd
 sed -i "" 's/(NP-SBJ \$ðu-þú)/(NP-SBJ (PRO-N \$ðu-þú))/g' $dir/1985.sagan.nar-fic.psd # .494
 sed -i "" 's/(NP (N-A skrána-skrá)/(NP (N-A skrá\$-skrá)/g' $dir/1985.sagan.nar-fic.psd # .628
@@ -304,6 +307,8 @@ sed -i "" 's/(D-N tal\$-tal) (N-N \$ið-hinn))/(N-N tal\$-tal) (D-N \$ið-hinn))
 # 2008.mamma.nar-fic.psd
 sed -i "" 's/^ (IP-MAT (NP-SBJ (PRO-N Við-ég))/( (IP-MAT (NP-SBJ (PRO-N Við-ég))/g' $dir/2008.mamma.nar-fic.psd # .1
 sed -i "" 's/(ID 2008.MAMMA.NAR-FIC,.1)/(ID 2008.MAMMA.NAR-FIC,.1))/g' $dir/2008.mamma.nar-fic.psd # .1
+sed -i "" 's/(CODE {COM:threedots})/(. .-.)/g' $dir/2008.mamma.nar-fic.psd # .405
+sed -i "" 's/(, -)//g' $dir/2008.mamma.nar-fic.psd # .588
 sed -i "" 's/(VBDI Heyr\$/(VBI Heyr\$/g' $dir/2008.mamma.nar-fic.psd # .784
 sed -i "" 's/Kaupmannahafnar\./Kaupmannahafnar/g' $dir/2008.mamma.nar-fic.psd # .876
 sed -i "" 's/(NP-OB1 (NS-A augun-auga)/(NP-OB1 (NS-A augu\$-auga)/g' $dir/2008.mamma.nar-fic.psd # .1129
