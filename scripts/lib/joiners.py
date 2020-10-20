@@ -819,6 +819,7 @@ class NodeJoiner():
                     joined_token = prevprev_line[1] + prev_line[1] + curr_line[1]
                     joined_token = re.sub(r'\$\$', '', joined_token)
                     joined_number = prevprev_line[0] + '-' + curr_line[0]
+                    # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                     new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
                     curr_line[1] = re.sub(r'\$[tðd]?[uú]', 'þú', curr_line[1])
                     prev_line[1] = re.sub(r'\$', '', prev_line[1])
@@ -840,8 +841,10 @@ class NodeJoiner():
                     # print(joined_token)
                     joined_number = prev_line[0] + '-' + curr_line[0]
                     if re.search(r'SpaceAfter=No', curr_line[9]):
+                        # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n']) # NOTE: newline causes error
                         new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
                     else:
+                        # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                         new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
                     curr_line[1] = re.sub(r'\$[tðd]?[uú]', 'þú', curr_line[1])
                     prev_line[1] = re.sub(r'\$', '', prev_line[1])
@@ -880,8 +883,10 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             curr_line[9] = re.sub(r'\|SpaceAfter=No', '', curr_line[9])
             curr_line[9] = re.sub(r'SpaceAfter=No', '_', curr_line[9])
@@ -901,8 +906,10 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             prev_line[1] = re.sub(r'\$', '', prev_line[1])
             curr_line[1] = re.sub(r'\$i', 'þið', curr_line[1])
@@ -923,8 +930,10 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             prev_line[1] = re.sub(r'\$', '', prev_line[1])
             if curr_line[2] == 'kostur':
@@ -968,8 +977,10 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             prev_line[1] = re.sub(r'þ\$', 'þó', prev_line[1])
             prev_line[1] = re.sub(r'Þ\$', 'ÞÓ', prev_line[1])
@@ -982,7 +993,6 @@ class NodeJoiner():
             self.lines.insert(index-1, new_line)
             # print(new_line.strip('\n')
         return self
-
     def fix_joined_space_after(self, index):
 
         curr_line, token_end_line = self.lines[index].split('\t'), self.lines[index+2].split('\t')
