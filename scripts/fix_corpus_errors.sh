@@ -43,7 +43,7 @@ sed -i "" 's/(CODE </heading>))/(CODE </heading>) (. .-.))/g' $dir/1150.homiliub
 sed -i "" 's/(CODE </modern_translation_of_heading>))/(CODE </modern_translation_of_heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .138
 sed -i "" 's/(CODE </translation>))/(CODE </translation>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .390
 sed -i "" 's/(WQ (WADV hve-hve) (Q-N mikill-mikill))/(WQP (WADV hve-hve) (Q-N mikill-mikill))/g' $dir/1150.homiliubok.rel-ser.psd # .470
-sed -i "" 's/(CODE </heading>))/(CODE </heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .585
+sed -i "" 's/(CODE </heading>))/(CODE </heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .585, 676, 798
 sed -i "" 's/(VBI \$gef-gefa)/(VBI \$gef\$-gefa)/g' $dir/1150.homiliubok.rel-ser.psd # .1648
 sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1150.homiliubok.rel-ser.psd # .246
 sed -i "" 's/FOREIGN/FW/g' $dir/1150.homiliubok.rel-ser.psd # .338
@@ -122,6 +122,7 @@ sed -i "" 's/(WADJP (WADVP Hversu-hversu) (ADJ-N gamall-gamall))/(WADJP (WADV Hv
 sed -i "" 's/(NP-SBJ (NRP-N kóngur-kóngur) (FW Regulus-regulus))))/(NP-SBJ (NPR-N kóngur-kóngur) (FW Regulus-regulus))))/g' $dir/1350.marta.rel-sag.psd # .193
 sed -i "" 's/(NP (NPR-D Lasarus-lasarus) (CONJ og-og) (NPR-D Mörtu-marta)))/(NP (NPR-D Lasarus-lasarus) (CONJ og-og) (NPR-D Mörtu-marta))) (. .-.))/g' $dir/1350.marta.rel-sag.psd # .281
 sed -i "" 's/( (META (NP (FW Capitulum-capitulum))/( (META (NP (FW Capitulum-capitulum)) (. .-.))/g' $dir/1350.marta.rel-sag.psd # .467
+sed -i "" 's/(FW Miraculum-miraculum)/(FW Miraculum-miraculum) (. .-.))/g' $dir/1350.marta.rel-sag.psd # .813, 883, 915, 924, 950, 958
 
 # 1400.gunnar.nar-sag.psd
 sed -i "" 's/Er\$\$-vera/Er\$-vera/g' $dir/1400.gunnar.nar-sag.psd # .82
@@ -175,6 +176,7 @@ sed -i "" 's/(CP-QUE-SPE (WADJP-1 (WADVP hversu-hversu)/(CP-QUE-SPE (WADJP-1 (WA
 # 1525.georgius.nar-rel.psd
 sed -i "" 's/NPÖ-SBJ/NP-SBJ/g' $dir/1525.georgius.nar-rel.psd # .392
 sed -i "" 's/(IP-MAT-KOMINN/(IP-MAT/' $dir/1525.georgius.nar-rel.psd # .743
+sed -i "" 's/(IP-SUB-SPE=4 (NP-SBJ (NP-POS (NP-POS (PRO-G hans-hann))/(IP-SUB-SPE (NP-SBJ (NP-POS (NP-POS (PRO-G hans-hann))/' $dir/1525.georgius.nar-rel.psd # .1056
 
 # 1540.ntacts.rel-bib.psd
 sed -i "" 's/\$út-út/út\$-út/g' $dir/1540.ntacts.rel-bib.psd # 239.141
