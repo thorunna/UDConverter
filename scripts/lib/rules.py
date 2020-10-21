@@ -376,7 +376,7 @@ head_rules = {
             'IP-INF-ADT-PRN': {'dir':'r', 'rules':['VB']},
             'IP-INF-ADT-SPE': {'dir':'r', 'rules':['VB']},
             'IP-INF-ADT-SPE-LFD': {'dir':'r', 'rules':['VB']},
-            'IP-MAT'        : {'dir':'r', 'rules':['VB', 'VB.*','VAN', 'RD.*', 'DO.*', 'DAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'IP-MAT-\d', 'MD.*', 'HAN', 'PP|ADJP', 'RP', 'NP-PRD', 'NP-SBJ', 'NP', 'N.*', 'IP-SMC', 'IP-MAT', 'IP-MAT-*', '.+[^PUNCT]']},
+            'IP-MAT'        : {'dir':'r', 'rules':['VB', 'VB.*','VAN', 'RD.*', 'DO.*', 'DAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'IP-MAT-\d', 'MD.*', 'HAN', 'PP|ADJP', 'RP', 'NP-PRD', 'NP-SBJ|IP-MAT', 'NP', 'N.*', 'IP-SMC', 'IP-MAT-*', '.+[^PUNCT]']},
             'IP-MAT=\d'     : {'dir':'r', 'rules':['VB', 'VB.*', 'VAN', 'RD.*', 'DO.*', 'DAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'IP-MAT-\d', 'PP|ADJP', 'RP', 'NP-PRD', 'NP', 'N.*', 'IP-SMC', 'IP-MAT', 'IP-MAT-*']},
             #'IP-MAT-1'       : {'dir':'r', 'rules':['NP-MSR']},
             #'IP-MAT=1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'PP', 'ADJP', 'NP-PRD', 'NP', 'N.*', 'IP-SMC', 'IP-MAT']},

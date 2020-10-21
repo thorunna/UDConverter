@@ -407,7 +407,7 @@ def main():
                             raise
                             print('\n\n', dep.original_ID_plain_text(CORPUS='IcePaHC'))
                             print(f'{type(ex).__name__} for sentence: {ex.args}\n\n')
-                    to_join = []
+                        to_join = []
             print(f'> Converting {file_id} - Output sentences: {file_sents}')
     
     print('All done!')

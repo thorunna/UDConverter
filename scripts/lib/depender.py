@@ -893,6 +893,9 @@ class Converter():
                 if self.dg.get_by_address(address+4)['rel'] == 'obl':
                     if node['ctag'] == 'ADV':
                         self.dg.get_by_address(address).update({'rel': 'advmod'})
+                elif self.dg.get_by_address(address+4)['rel'] == 'ccomp':
+                    if self.dg.get_by_address(address-3)['rel'] == 'nsubj' and self.dg.get_by_address(address-3)['head'] == node['head']:
+                        self.dg.get_by_address(address).update({'head': address-3})
             elif node['rel'] == 'conj' and node['head'] == address+5:
                 if self.dg.get_by_address(address+5)['rel'] == 'obl' and self.dg.get_by_address(address-4)['rel'] == 'nsubj' and self.dg.get_by_address(address-4)['head'] == node['head']:
                     self.dg.get_by_address(address).update({'head': address-4})
@@ -1566,7 +1569,7 @@ class Converter():
                     node.update({'address': new_id})
                 new_id +=1
             for node in old_dg.nodes.values():
-                if node['address'] == 0 or node['tag'] == 'TOP' or node['word'] == 'None':
+                if node['address'] == 0 or node['tag'] == 'TOP' or node['word'] in {'None', None}:
                     # print(node)
                     continue
                 if node['head'] == 0:
