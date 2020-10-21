@@ -239,6 +239,9 @@ def main():
                             sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
                             sent_id_line = '# sent_id = ' + sent_id + '\n'
                             
+                            # add NoSpaceAfter to misc column
+                            dep = c.add_space_after(dep)
+                            
                             # output written:
                             # sentence ID
                             outfile.write(sent_id_line)
@@ -247,7 +250,7 @@ def main():
                             # sentence text
                             outfile.write(str(dep.plain_text())+'\n')
                             # sentence CoNLLU
-                            outfile.write(c.add_space_after(dep).to_conllU())
+                            outfile.write(dep.to_conllU())
 
                             # print(dep.original_ID)
                             # print(dep.plain_text())
@@ -268,15 +271,18 @@ def main():
                             sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
                             sent_id_line = '# sent_id = ' + sent_id + '\n'
                             
+                            # add NoSpaceAfter to misc column
+                            dep = c.add_space_after(dep)
+                            
                             # output written:
                             # sentence ID
                             outfile.write(sent_id_line)
                             # sent ID from original treebank
-                            outfile.write(str(dep.original_ID_plain_text()) + '\n')
+                            outfile.write(str(dep.original_ID_plain_text()) + '\n') 
                             # sentence text
                             outfile.write(str(dep.plain_text())+'\n')
                             # sentence CoNLLU
-                            outfile.write(c.add_space_after(dep).to_conllU())
+                            outfile.write(dep.to_conllU())
 
                             # print(dep.original_ID)
                             # print(dep.plain_text())
@@ -334,7 +340,7 @@ def main():
                 for tree in CORPUS.parsed_sents(file_id):
                     # Catch error in corpus where ? token is missing
                     tree = fix_IcePaHC_tree_errors(tree)
-
+                    
                     TREE = tree.remove_nodes(tags=['CODE'], trace=True)
 
                     dep = c.create_dependency_graph(TREE)
@@ -351,16 +357,18 @@ def main():
                                 sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
                                 sent_id_line = '# sent_id = ' + sent_id + '\n'
                                 
+                                # add NoSpaceAfter to misc column
+                                dep = c.add_space_after(dep)
+                                
                                 # output written:
                                 # sentence ID
                                 outfile.write(sent_id_line)
                                 # sent ID from original treebank
-                                outfile.write(str(dep.original_ID_plain_text()) + '\n')
+                                outfile.write(str(dep.original_ID_plain_text()) + '\n') 
                                 # sentence text
                                 outfile.write(str(dep.plain_text())+'\n')
                                 # sentence CoNLLU
-
-                                outfile.write(c.add_space_after(dep).to_conllU())
+                                outfile.write(dep.to_conllU())
 
                                 if not output_path:
                                     input()
@@ -375,15 +383,18 @@ def main():
                                 sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
                                 sent_id_line = '# sent_id = ' + sent_id + '\n'
                                 
+                                # add NoSpaceAfter to misc column
+                                dep = c.add_space_after(dep)
+                                
                                 # output written:
                                 # sentence ID
                                 outfile.write(sent_id_line)
                                 # sent ID from original treebank
-                                outfile.write(str(dep.original_ID_plain_text()) + '\n')
+                                outfile.write(str(dep.original_ID_plain_text()) + '\n') 
                                 # sentence text
                                 outfile.write(str(dep.plain_text())+'\n')
                                 # sentence CoNLLU
-                                outfile.write(c.add_space_after(dep).to_conllU())
+                                outfile.write(dep.to_conllU())
 
                                 if not output_path:
                                     input()
