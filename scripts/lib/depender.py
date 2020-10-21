@@ -1560,7 +1560,7 @@ class Converter():
 
         """
 
-        # for dg in list:
+        # for dg in to_join:
         #     print(dg.to_conllU())
         new_dg = to_join[0]
         # print('==NEW==')
@@ -1576,7 +1576,7 @@ class Converter():
             old_new_addresses = {}
             for node in old_dg.nodes.values():
                 old_new_addresses[node['address']] = new_id
-                if node['address'] == None or node['word'] == 'None':
+                if node['address'] == None or node['word'] in {'None', None}:
                     continue
                 else:
                     node.update({'address': new_id})
