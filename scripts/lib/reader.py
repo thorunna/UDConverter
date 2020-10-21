@@ -51,7 +51,8 @@ class IndexedCorpusTree(Tree):
                 # ADD METHOD HERE for fixing various nodes
                 # NPs processed
                 j.join_NPs(n)
-                #j.join_split_nodes(n)
+                # j.join_split_nodes(n) # NOTE: tentatively removed because error
+
                 # verbs processed
                 j.join_verbs_same_line(n)
                 j.join_verbs_two_lines(n)

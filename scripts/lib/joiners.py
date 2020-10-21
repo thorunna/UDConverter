@@ -457,24 +457,26 @@ class NodeJoiner():
         '''
         prev = index-1
         next = index+1
-
-        det_token = r'(?<=D-. \$)[a-zþæðöáéýúíó]*(?=-)' # matches the token of a determiner, excluding "$"
-        det_token_alt = r'(?<=D-.-TTT \$)[a-zþæðöáéýúíó]*(?=-)' # matches det token in case of -TTT in tag
-        det_token_caps = r'(?<=D-. \$)[A-ZÞÆÐÖÁÉÝÚÍÓ]*(?=-)' # match det token if in caps (few examples)
+        
+        det_token = r'(?<=D-. \$)[a-zþæðöáéýúíó]*(?=[-\)])' # matches the token of a determiner, excluding "$"
+        det_token_alt = r'(?<=D-.-TTT \$)[a-zþæðöáéýúíó]*(?=[-\)])' # matches det token in case of -TTT in tag
+        det_token_caps = r'(?<=D-. \$)[A-ZÞÆÐÖÁÉÝÚÍÓ]*(?=[-\)])' # match det token if in caps (few examples)
         det_node = r' ?\(D-[A-Z] \$[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ*$-]*\)' # matches a whole determiner node
         # det_node_alt = r'-TTT'
-        noun_trail = r'(?<=)\$(?=-)' # matches the trailing "$" of a noun
+        noun_trail = r'(?<=)\$(?=[-\)])' # matches the trailing "$" of a noun
         noun_node =  r' {0,1}\(((N|NS|NPR|NPRS)-|FW).*\$-' # matches a whole noun node
-        noun_token_incompl = r'(?<=N-. )(</?dash/?>)?[^($]*(?=-)' # noun token where "$" is missing
+        noun_token_incompl = r'(?<=N-. )(</?dash/?>)?[^($]*(?=[-\)])' # noun token where "$" is missing
 
         prev = index-1
         next = index+1
+        
         if re.search(det_token, self.lines[index]) and re.search(noun_trail, self.lines[index]):
+            
             # print('\t', prev, self.lines[prev].strip())
             # print('\t', index, self.lines[index].strip())
             # print('\t', next, self.lines[next].strip())
             # print()
-
+            
             self.lines[index] = re.sub(noun_trail, re.findall(det_token, self.lines[index])[0], self.lines[index])
             self.lines[index] = re.sub(det_node, '', self.lines[index])
 
@@ -544,6 +546,7 @@ class NodeJoiner():
             # print('\t\t', index, self.lines[index].strip())
             # print('\t\t', next, self.lines[next].strip())
             # print()
+        return self
 
     def join_split_nodes(self, index):
         tags_22 = r'\((ADJ|ADJR|ADV|FP|N|NPR|NS|NUM|ONE|Q|VAG|VAN|VBN|VBPI|WPRO)(\+[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+)?22(-[NADG])? [A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ<>]+-[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+\)'
@@ -816,6 +819,7 @@ class NodeJoiner():
                     joined_token = prevprev_line[1] + prev_line[1] + curr_line[1]
                     joined_token = re.sub(r'\$\$', '', joined_token)
                     joined_number = prevprev_line[0] + '-' + curr_line[0]
+                    # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                     new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
                     curr_line[1] = re.sub(r'\$[tðd]?[uú]', 'þú', curr_line[1])
                     prev_line[1] = re.sub(r'\$', '', prev_line[1])
@@ -837,8 +841,10 @@ class NodeJoiner():
                     # print(joined_token)
                     joined_number = prev_line[0] + '-' + curr_line[0]
                     if re.search(r'SpaceAfter=No', curr_line[9]):
+                        # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n']) # NOTE: newline causes error
                         new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
                     else:
+                        # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                         new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
                     curr_line[1] = re.sub(r'\$[tðd]?[uú]', 'þú', curr_line[1])
                     prev_line[1] = re.sub(r'\$', '', prev_line[1])
@@ -877,8 +883,10 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             curr_line[9] = re.sub(r'\|SpaceAfter=No', '', curr_line[9])
             curr_line[9] = re.sub(r'SpaceAfter=No', '_', curr_line[9])
@@ -898,8 +906,10 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             prev_line[1] = re.sub(r'\$', '', prev_line[1])
             curr_line[1] = re.sub(r'\$i', 'þið', curr_line[1])
@@ -920,8 +930,10 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             prev_line[1] = re.sub(r'\$', '', prev_line[1])
             if curr_line[2] == 'kostur':
@@ -965,8 +977,10 @@ class NodeJoiner():
             joined_token = re.sub(r'\$\$', '', joined_token)
             joined_number = prev_line[0] + '-' + curr_line[0]
             if re.search(r'SpaceAfter=No', curr_line[9]):
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', 'SpaceAfter=No'])
             else:
+                # new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_\n']) # NOTE: newline causes error
                 new_line = '\t'.join([joined_number, joined_token, '_', '_', '_', '_', '_', '_', '_', '_'])
             prev_line[1] = re.sub(r'þ\$', 'þó', prev_line[1])
             prev_line[1] = re.sub(r'Þ\$', 'ÞÓ', prev_line[1])
@@ -979,7 +993,6 @@ class NodeJoiner():
             self.lines.insert(index-1, new_line)
             # print(new_line.strip('\n')
         return self
-
     def fix_joined_space_after(self, index):
 
         curr_line, token_end_line = self.lines[index].split('\t'), self.lines[index+2].split('\t')

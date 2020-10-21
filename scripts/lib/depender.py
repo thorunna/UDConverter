@@ -1119,7 +1119,7 @@ class Converter():
         if isinstance(tree, (IndexedCorpusTree)):
             t = tree.remove_nodes(tags=['CODE'], trace=True)
         else:
-            t = IndexedCorpusTree.fromstring(tree, trim_id_tag=True).remove_nodes(tags=['CODE'], trace=True)
+            t = IndexedCorpusTree.fromstring(tree, trim_id_tag=True, preprocess=True).remove_nodes(tags=['CODE'], trace=True)
         if self.auto_tags:
             TAG_DICT = self._get_tag_dict(t)
 
@@ -1448,10 +1448,8 @@ class Converter():
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
         #     self._fix_empty_node()
 
-
-        #if rel_counts['cop'] > 0:
-        #    self._fix_cop()
-
+        # if rel_counts['cop'] > 0:
+        #     self._fix_cop()
 
         return self.dg
     
@@ -1584,7 +1582,10 @@ class Converter():
                         print(node)
                         for x in to_join:
                             print(x.plain_text())
+                        #print(list(to_join))
+                        print(node['head'])
                         raise
+
                 new_dg.add_node(node)
 
         # TODO: fix deps:
