@@ -323,6 +323,8 @@ def main():
         for file_id in fileids:
             if file_id == '1823.ntmatt.rel-bib.psd': continue
             
+            print(f'> Converting {file_id} ...', end='\r')
+            
             tag_dict = tagged_corpus(CORPUS.parsed_sents(file_id))
             c.set_tag_dict(tag_dict)
 
@@ -406,7 +408,9 @@ def main():
                             print('\n\n', dep.original_ID_plain_text(CORPUS='IcePaHC'))
                             print(f'{type(ex).__name__} for sentence: {ex.args}\n\n')
                     to_join = []
-
+            print(f'> Converting {file_id} - Output sentences: {file_sents}')
+    
+    print('All done!')
 
 if __name__ == '__main__':
     main()
