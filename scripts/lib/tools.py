@@ -213,9 +213,16 @@ def tagged_corpus(corpus):
     url = 'http://malvinnsla.arnastofnun.is'
     payload = {'text':text, 'lemma':'on'}
     headers = {}
-    res = requests.post(url, data=payload, headers=headers)
-    tagged = json.loads(res.text)
+    # res = requests.post(url, data=payload, headers=headers)
+    # tagged = json.loads(res.text)
+    tagged = None
     tagged_sents = []
+    while tagged is None:
+        try:
+            res = requests.post(url, data=payload, headers=headers)
+            tagged = json.loads(res.text)
+        except:
+             pass
     for par in tagged['paragraphs']:
         tagged_sent = {}
         for sent in par['sentences']:
