@@ -229,6 +229,11 @@ class IndexedCorpusTree(Tree):
                         and self[i][0] == '*':
                             parent_index = i[:-1]
                             pairs_to_delete.append((parent_index, i))
+                        #elif self[i].label() == 'CODE' \
+                        #and len(self[i]) == 2 \
+                        #and self[i][1][0][0] == '{':
+                        #    child_index = i + (1,)
+                        #    pairs_to_delete.append((i, child_index))
                     except IndexError:
                         continue
             for parent, child in pairs_to_delete:

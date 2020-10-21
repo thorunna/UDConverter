@@ -159,7 +159,26 @@ class UniversalDependencyGraph(DependencyGraph):
                 verb_count += 1
 
         return verb_count
-    
+
+    def num_subj(self):
+        '''
+        Returns a set of the words whose deprel is 'nsubj' and whose head is the same.
+        '''
+        from itertools import chain
+
+        if self.rels()['nsubj'] > 1:
+            subjs = {}
+            for node in self.nodes.items():
+                if node[1]['rel'] == 'nsubj':
+                    subjs[node[1]['word']] = node[1]['head']
+
+            rev_dict = {}
+            for key, value in subjs.items():
+                rev_dict.setdefault(value, set()).add(key)
+
+            result = set(chain.from_iterable(values for key, values in rev_dict.items() if len(values) > 1))
+        
+            return result
 
     def join_output_nodes(self, conllU):
         '''
@@ -717,6 +736,43 @@ class Converter():
                 if address+1 in self.dg.nodes \
                 and self.dg.get_by_address(address+1)['rel'] == 'conj':
                     self.dg.get_by_address(address).update({'head': address+1})
+                if self.dg.get_by_address(address-1)['head'] == address:
+                    self.dg.get_by_address(address-1).update({'head': node['head']})
+                #if node['head'] < int(self.dg.get_by_address(address+1)['head']) and self.dg.get_by_address(address+1)['ctag'] == 'ADV':
+                #    self.dg.get_by_address(address).update({'head': self.dg.get_by_address(address+1)['head']})
+                #else:
+                #    new_head = self.dg.get_by_address(address+1)['head']
+                #    self.dg.get_by_address(address).update({'head': new_head})
+                #elif not address+1 in self.dg.nodes:
+                #    new_head = self.dg.get_by_address(address-1)['head']
+                #    self.dg.get_by_address(address).update({'head': new_head})
+                #if node['head'] > address:
+                #    next_heads = []
+                #    for x in range(6):
+                #        next_heads.append(self.dg.get_by_address(address+x+1)['head'])
+                #    fix = False
+                #    for y in next_heads:
+                #        if y < address:
+                #            fix = True
+                #            break
+                #    if fix == True:
+                #        if self.dg.get_by_address(address+1)['head'] < address \
+                #            and self.dg.get_by_address(address+2)['head'] < address \
+                #                and self.dg.get_by_address(address+3)['head'] < address \
+                #                    and self.dg.get_by_address(address+6)['head'] < address:
+                #                    self.dg.get_by_address(address+1).update({'head': address+3})
+                #                    self.dg.get_by_address(address+2).update({'head': address+3})
+                #                    self.dg.get_by_address(address+3).update({'head': node['head']})
+                #                    self.dg.get_by_address(address+6).update({'head': address+3})
+                #                    if self.dg.get_by_address(address+1)['ctag'] == 'ADV':
+                #                        self.dg.get_by_address(address+1).update({'rel': 'advmod'})
+                #                    if self.dg.get_by_address(address+2)['ctag'] == 'DET':
+                #                        self.dg.get_by_address(address+1).update({'rel': 'obl'})
+                #                    if self.dg.get_by_address(address+3)['ctag'] == 'ADV':
+                #                        self.dg.get_by_address(address+1).update({'rel': 'advmod'})
+                #                    if self.dg.get_by_address(address+6)['ctag'] == 'N-D':
+                #                        self.dg.get_by_address(address+1).update({'rel': 'obl'})
+
                 if node['rel'] != 'punct':
                     self.dg.get_by_address(address).update({'rel': 'punct'})
 
@@ -754,6 +810,99 @@ class Converter():
             if node['ctag'] == 'PART' and node['rel'] != 'mark':
                 self.dg.get_by_address(address).update({'rel': 'mark'})
 
+    def _fix_cconj_rel(self):
+
+        for address, node in self.dg.nodes.items():
+            if node['word'] == 'og' and node['ctag'] == 'CCONJ' and node['rel'] == 'amod':
+                self.dg.get_by_address(address).update({'rel': 'cc'})
+
+    def _fix_cc_tag(self):
+        """
+        A word with the deprel 'cc' cannot be tagged 'PRON' and a word cannot be dependent on it
+        ie. annað hvort
+        """
+
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'cc' and node['ctag'] == 'PRON':
+                self.dg.get_by_address(address).update({'ctag': 'CCONJ'}) 
+                if self.dg.get_by_address(address+1)['head'] == address:
+                    self.dg.get_by_address(address+1).update({'head': node['head']})
+
+    def _fix_cc_rel(self):
+
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'cc' and node['head'] == address-1 and self.dg.get_by_address(address+1)['head'] == address-1:
+                self.dg.get_by_address(address).update({'head': address+1})
+                if self.dg.get_by_address(address+1)['rel'] != 'conj':
+                    self.dg.get_by_address(address+1).update({'rel': 'conj'})
+                if self.dg.get_by_address(address-1)['rel'] == 'conj' and self.dg.get_by_address(address-1)['ctag'] == 'ADJ':
+                    self.dg.get_by_address(address-1).update({'rel': 'amod'})
+            elif node['rel'] == 'cc' and node['head'] == address+1 and self.dg.get_by_address(address+1)['head'] > address+1 and self.dg.get_by_address(address-1)['rel'] == 'amod':
+                self.dg.get_by_address(address+1).update({'head': address-1}) 
+
+    def _fix_conj_rel(self):
+
+        for address, node in self.dg.nodes.items():
+            #if node['rel'] == 'conj' and node['head'] > address:
+            #    if self.dg.get_by_address(address-5)['rel'] == 'nsubj':
+            #        self.dg.get_by_address(address).update({'head': address-5})
+            if node['rel'] == 'conj' and node['head'] == address+1: 
+                if self.dg.get_by_address(address+1)['rel'] == 'obl': 
+                    if node['ctag'] == 'NOUN':
+                        self.dg.get_by_address(address).update({'rel': 'nummod'})
+                    elif node['ctag'] == 'ADJ':
+                        self.dg.get_by_address(address).update({'rel': 'amod'})
+                    elif node['ctag'] == 'PRON':
+                        self.dg.get_by_address(address).update({'rel': 'det'})
+                elif self.dg.get_by_address(address+1)['rel'] == 'nsubj':
+                    if node['ctag'] == 'ADJ':
+                        self.dg.get_by_address(address).update({'rel': 'amod'})
+                elif self.dg.get_by_address(address+1)['rel'] == 'amod':
+                    if node['ctag'] == 'NOUN':
+                        self.dg.get_by_address(address).update({'rel': 'nmod'})
+                elif self.dg.get_by_address(address+1)['rel'] == 'nmod:poss':
+                    if node['ctag'] == 'ADJ':
+                        self.dg.get_by_address(address).update({'rel': 'amod'})
+                elif self.dg.get_by_address(address+1)['rel'] == 'advcl':
+                    if node['ctag'] == 'CCONJ':
+                        self.dg.get_by_address(address).update({'rel': 'cc'})
+                #elif self.dg.get_by_address(address+1)['rel'] == 'conj':
+                elif self.dg.get_by_address(address-6)['rel'] == 'nsubj' and self.dg.get_by_address(address-6)['head'] == node['head']:
+                    self.dg.get_by_address(address).update({'head': address-6})
+            elif node['rel'] == 'conj' and node['head'] == address+2:
+                if self.dg.get_by_address(address+2)['rel'] == 'root' and self.dg.get_by_address(address+2)['ctag'] == 'NOUN':
+                    if node['ctag'] == 'ADV':
+                        self.dg.get_by_address(address).update({'rel': 'advmod'})
+                elif self.dg.get_by_address(address+2)['rel'] == 'ccomp':
+                    if node['ctag'] == 'CCONJ':
+                        self.dg.get_by_address(address).update({'rel': 'cc'})
+            elif node['rel'] == 'conj' and node['head'] == address+3:
+                if self.dg.get_by_address(address+3)['rel'] == 'obl':
+                    if node['ctag'] == 'VERB':
+                        self.dg.get_by_address(address).update({'rel': 'amod'})
+                elif self.dg.get_by_address(address+3)['rel'] == 'nsubj':
+                    if node['ctag'] == 'NOUN':
+                        self.dg.get_by_address(address).update({'rel': 'nmod'})
+                elif self.dg.get_by_address(address+3)['rel'] == 'advcl':
+                    if node['ctag'] == 'NOUN':
+                        self.dg.get_by_address(address).update({'rel': 'nmod'})
+                elif self.dg.get_by_address(address+3)['rel'] == 'ccomp':
+                    if self.dg.get_by_address(address-5)['rel'] == 'nsubj':
+                        self.dg.get_by_address(address).update({'head': address-5})
+            elif node['rel'] == 'conj' and node['head'] == address+4:
+                if self.dg.get_by_address(address+4)['rel'] == 'obl':
+                    if node['ctag'] == 'ADV':
+                        self.dg.get_by_address(address).update({'rel': 'advmod'})
+            elif node['rel'] == 'conj' and node['head'] == address+5:
+                if self.dg.get_by_address(address+5)['rel'] == 'obl' and self.dg.get_by_address(address-4)['rel'] == 'nsubj' and self.dg.get_by_address(address-4)['head'] == node['head']:
+                    self.dg.get_by_address(address).update({'head': address-4})
+            elif node['rel'] == 'conj' and node['head'] == address+7:
+                if self.dg.get_by_address(address+7)['rel'] == 'ccomp' and self.dg.get_by_address(address-3)['rel'] == 'nsubj' and self.dg.get_by_address(address-3)['head'] == node['head']:
+                    self.dg.get_by_address(address).update({'head': address-3})
+            elif node['rel'] == 'conj' and node['head'] == address+13:
+                if self.dg.get_by_address(address+13)['rel'] == 'root' and self.dg.get_by_address(address-7)['word'] == 'þegar' and self.dg.get_by_address(address-7)['head'] == address:
+                    self.dg.get_by_address(address).update({'rel': 'advcl'})
+
     def _fix_punct_tag(self):
         """
         A word with the deprel 'punct' must be tagged PUNCT
@@ -764,6 +913,9 @@ class Converter():
                 self.dg.get_by_address(address).update({'ctag': 'PUNCT'})
 
     def _fix_punct_rel(self):
+        """
+        A word with the tag PUNCT must have the deprel 'punct'
+        """
 
         for address, node in self.dg.nodes.items():
             if node['ctag'] == 'PUNCT' and node['rel'] != 'punct':
@@ -775,9 +927,11 @@ class Converter():
         """
 
         for address, node in self.dg.nodes.items():
-            if node['ctag'] == 'PROPN' and self.dg.get_by_address(address-1)['ctag'] in {'PROPN', 'NOUN'} and node['head'] == address-1 \
+            if node['ctag'] == 'PROPN' and self.dg.get_by_address(address-1)['ctag'] == 'PROPN' and node['head'] == address-1 \
             and node['rel'] != 'flat:name':
                 self.dg.get_by_address(address).update({'rel': 'flat:name'})
+                #if self.dg.get_by_address(address+1)['ctag'] == 'PROPN' and self.dg.get_by_address(address+1)['rel'] == 'dep' and self.dg.get_by_address(address+1)['head'] == node['head']:
+                #    self.dg.get_by_address(address+1).update({'rel': 'flat:name'})
 
     def _fix_mark_dep(self):
         """
@@ -789,6 +943,9 @@ class Converter():
                 self.dg.get_by_address(address+1).update({'rel': 'fixed'})
                 if self.dg.get_by_address(address+1)['head'] != address:
                     self.dg.get_by_address(address+1).update({'head':address})
+                if self.dg.get_by_address(address+2)['rel'] == 'mark' and self.dg.get_by_address(address+2)['ctag'] == 'SCONJ' and self.dg.get_by_address(address+2)['head'] == address+1:
+                    self.dg.get_by_address(address+2).update({'rel': 'fixed'})
+                    self.dg.get_by_address(address+2).update({'head': address})
 
     def _fix_dep(self):
         """
@@ -817,7 +974,9 @@ class Converter():
         try:
             for address, node in self.dg.nodes.items():
                     if node['address'] == node['head']:
-                        if self.dg.get_by_address(address-4)['ctag'] == 'VERB':
+                        if self.dg.get_by_address(address-12)['ctag'] == 'VERB':
+                            self.dg.get_by_address(address).update({'head': address-12})
+                        elif self.dg.get_by_address(address-4)['ctag'] == 'VERB':
                             self.dg.get_by_address(address).update({'head': address-4})
                         elif self.dg.get_by_address(address-3)['ctag'] == 'VERB':
                             self.dg.get_by_address(address).update({'head': address-3})
@@ -842,8 +1001,14 @@ class Converter():
 
         try:
             for address, node in self.dg.nodes.items():
-                if node['ctag'] == 'X' and self.dg.get_by_address(address+1)['head'] == address and self.dg.get_by_address(address+1)['ctag'] == 'PROPN':
-                    self.dg.get_by_address(address+1).update({'rel': 'flat:foreign'})
+                if node['ctag'] == 'X': 
+                    if self.dg.get_by_address(address+1)['head'] == address and self.dg.get_by_address(address+1)['ctag'] == 'PROPN':
+                        self.dg.get_by_address(address+1).update({'rel': 'flat:foreign'})
+                    elif node['head'] > address:
+                        self.dg.get_by_address(address).update({'rel': 'dep'})
+                    elif self.dg.get_by_address(address-1)['head'] == address and self.dg.get_by_address(address-1)['ctag'] == 'ADP':
+                        self.dg.get_by_address(address-1).update({'rel': 'dep'})
+                
         except RuntimeError:
             pass
             #print(self.dg.nodes.items())
@@ -855,8 +1020,12 @@ class Converter():
 
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'conj' and node['head'] > address:
-                if self.dg.get_by_address(address-2)['ctag'] in {'ADJ', 'N.*'} and self.dg.get_by_address(address-1)['ctag'] == 'CCONJ':
-                    self.dg.get_by_address(address).update({'head': address-2})
+                #if self.dg.get_by_address(address-2)['ctag'] in {'ADJ', 'N.*'} and self.dg.get_by_address(address-1)['ctag'] == 'CCONJ':
+                #    self.dg.get_by_address(address).update({'head': address-2})
+                if self.dg.get_by_address(address-5)['rel'] == 'nsubj' and self.dg.get_by_address(address-5)['head'] == node['head']:
+                    self.dg.get_by_address(address).update({'head': address-5})
+                elif self.dg.get_by_address(address-9)['rel'] == 'nsubj' and self.dg.get_by_address(address-5)['head'] == node['head']:
+                    self.dg.get_by_address(address).update({'head': address-9})
 
                 #self.dg.get_by_address(address).update({'rel': 'HALLO'})
 
@@ -887,9 +1056,19 @@ class Converter():
                     head_headaddress = self.dg.get_by_address(headaddress)['head']
                     self.dg.get_by_address(address).update({'head': head_headaddress})
 
+    def _fix_zero_dep(self):
+
+        for address, node in self.dg.nodes.items():
+            if node['rel'] != 'root' and node['head'] == 0:
+                if node['rel'] == 'cc' and self.dg.get_by_address(address+1)['head'] == 0 and self.dg.get_by_address(address+3)['head'] == 0:
+                    if self.dg.get_by_address(address+1)['rel'] == 'advmod' and self.dg.get_by_address(address+3)['rel'] == 'obl':
+                        self.dg.get_by_address(address).update({'head': address+1})
+                        self.dg.get_by_address(address+1).update({'head': address-1})
+                        self.dg.get_by_address(address+3).update({'head': address+1})
+
     def _fix_many_subj(self):
         """
-        If subjects of a verb are more than one
+        If subjects of a verb are more than one, the ones following the first subject get the deprel 'obl'
         """
 
         #for address, node in self.dg.nodes.items():
@@ -897,16 +1076,27 @@ class Converter():
         #        head_verbs_head = self.dg.get_by_address(address)['head']
         #        break
 
-        count = 0
-        for address, node in self.dg.nodes.items():
-            if self.dg.get_by_address(address)['rel'] == 'nsubj' and count == 0:
-                count += 1
-                head_verbs_head = self.dg.get_by_address(address)['head']
-            if self.dg.get_by_address(address)['rel'] == 'nsubj' and count >= 1 \
-                and self.dg.get_by_address(address-1)['ctag'] in {'PUNCT', 'CCONJ'} and self.dg.get_by_address(address)['head'] == head_verbs_head:
-                self.dg.get_by_address(address).update({'rel': 'obl'})
-                count += 1
+        #print(self.dg.num_subj())
+        nsubj = self.dg.num_subj()
 
+        if nsubj:
+            count = 0
+            for address, node in self.dg.nodes.items():
+                if node['word'] in nsubj:
+                    if count == 0:
+                        count += 1
+                    elif count > 0:
+                        self.dg.get_by_address(address).update({'rel': 'obl'})
+
+#        count = 0
+#        for address, node in self.dg.nodes.items():
+#            if self.dg.get_by_address(address)['rel'] == 'nsubj' and count == 0:
+#                count += 1
+#                head_verbs_head = self.dg.get_by_address(address)['head']
+#            if self.dg.get_by_address(address)['rel'] == 'nsubj' and count >= 1 \
+#                and self.dg.get_by_address(address-1)['ctag'] in {'PUNCT', 'CCONJ'} and self.dg.get_by_address(address)['head'] == head_verbs_head:
+#                self.dg.get_by_address(address).update({'rel': 'obl'})
+#                count += 1
 
     #def _fix_det_mark(self):
 
@@ -1158,7 +1348,8 @@ class Converter():
                         else:
                             # Unknown dependency relation (things to fix)
                             # self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': '***'})
-                            self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': 'dep'})
+                            #self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': 'dep'})
+                            self.dg.get_by_address(mod_nr).update({'head': head_nr, 'rel': self._relation(mod_tag, head_tag)})
                             self.dg.root = self.dg.get_by_address(mod_nr)
 
                             # print(self.dg.get_by_address(mod_nr))
@@ -1209,8 +1400,8 @@ class Converter():
 
         if rel_counts['ccomp/xcomp'] > 0:
             self._fix_ccomp()
-        #if rel_counts['nsubj'] > 1:
-        #    self._fix_many_subj()
+        if rel_counts['nsubj'] > 1:
+            self._fix_many_subj()
         
         #self._fix_left_right_alignments()
         
@@ -1238,12 +1429,20 @@ class Converter():
         self._fix_head_id_same()
         if ctag_counts['X'] > 0:
             self._fix_flat_foreign()
-        if ctag_counts['PUNCT'] > 0:
-            self._fix_punct_rel()
+        if ctag_counts['CCONJ'] > 0:
+            self._fix_cconj_rel()
         if rel_counts['cop'] > 0:
             self._fix_cop_head()
         if rel_counts['appos'] > 0:
             self._fix_appos_lr()
+        if rel_counts['cc'] > 0:
+            self._fix_cc_tag()
+            #self._fix_cc_rel()
+            self._fix_zero_dep()
+        if rel_counts['conj'] > 0:
+            self._fix_conj_rel()
+        if ctag_counts['PUNCT'] > 0:
+            self._fix_punct_rel()
 
 
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
