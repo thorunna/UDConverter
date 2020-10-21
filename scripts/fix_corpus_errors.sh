@@ -356,9 +356,20 @@ sed -i "" 's/(, -----)/(, ,-,)/g' $dir/1902.fossar.nar-fic.psd # .822
 sed -i "" 's/(- -)//g' $dir/1902.fossar.nar-fic.psd # .872 o.fl.
 sed -i "" 's/(PP (P -))//g' $dir/1902.fossar.nar-fic.psd # .879
 sed -i "" 's/(NUM-N -)//g' $dir/1902.fossar.nar-fic.psd # .881
+sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/1902.fossar.nar-fic.psd # .1024
 
 # 1907.leysing.nar-fic.psd
+sed -i "" 's/(IP-MAT-1 (NP-SBJ (D-N Hinir-hinn)/(IP-MAT (NP-SBJ (D-N Hinir-hinn)/' $dir/1907.leysing.nar-fic.psd # .455
+sed -i "" 's/(IP-SMC=1 (NP-SBJ (N-N öskuhaugur$-öskuhaugur) (D-N $inn-hinn))/(IP-SMC (NP-SBJ (N-N öskuhaugur$-öskuhaugur) (D-N $inn-hinn))/' $dir/1907.leysing.nar-fic.psd # .455
+sed -i "" 's/(IP-MAT=1 (NP-SBJ (NS-N vindhanar$-vindhani) (D-N $nir-hinn))/(IP-MAT (NP-SBJ (NS-N vindhanar$-vindhani) (D-N $nir-hinn))/' $dir/1907.leysing.nar-fic.psd # .455
 sed -i "" 's/( (IP-MAT (, -))\n  (ID 1907.LEYSING.NAR-FIC,.1311))//' $dir/1907.leysing.nar-fic.psd # .1311
+sed -i "" 's/(TO \*)/(TO )/' $dir/1907.leysing.nar-fic.psd # .1458
+
+# 1908.ofurefli.nar-fic.psd
+sed -i "" 's/(CP-QUE-PRN (CP-QUE=1 (WQ hvort-hvort)/(CP-QUE-PRN (CP-QUE (WQ hvort-hvort)/' $dir/1908.ofurefli.nar-fic.psd # .1115
+
+# 1920.arin.rel-ser.psd
+sed -i "" 's/(IP-SUB-PRN=4 (CONJ og-og)/(IP-SUB-PRN (CONJ og-og)/g' $dir/1920.arin.rel-ser.psd # .839
 
 # 1985.margsaga.nar-fic.psd
 sed -i "" 's/(NP-ADV (D+N-D hinumegin-hinumeginn)/(NP-ADV (N+D-D hinumegin-hinumeginn)/g' $dir/1985.margsaga.nar-fic.psd # .1173
