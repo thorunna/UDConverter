@@ -407,7 +407,7 @@ head_rules = {
             'IP-SUB=5'      : {'dir':'r', 'rules':['PP-BY']},
             'IP-SUB-INF'    : {'dir':'r', 'rules':['VB']},
             'IP-SUB-LFD'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HV.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'RD.*', 'NP', 'ADVP', 'IP-SUB', 'HVN']},
-            'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*', 'VAN', 'NP-POS', 'IP-SUB', 'ADVP.*', 'NP-SBJ']},
+            'IP-SUB-PRN'    : {'dir':'r', 'rules':['VB.*', 'VAN', 'NP-POS', 'IP-SUB', 'NP-SBJ', 'ADVP.*', 'BEPI|BEPS']},
             'IP-SUB-PRN-ELAB': {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-PRN=XXX': {'dir':'r', 'rules':['VB.*', 'VAN']},
             'IP-SUB-REP'    : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'RD.*', 'DAN', 'VAN', 'RAN', 'HAN', 'BAN', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'NP.*', 'ADJP', 'NP-PRD', 'RD.*', 'ADVP', 'IP-SUB']},
@@ -518,7 +518,7 @@ head_rules = {
             'NP-OB3'        : {'dir':'r', 'rules':['PRO-D', 'N-D', 'NS-D', 'NPR-D', 'NPRS-D', 'MAN-.', 'OTHER-.']},
             'NP-PRD'        : {'dir':'r', 'rules':['N-.|FW|NS.*|ADJ-N|PRO.*', 'NP.*|LATIN', 'OTHER-.', 'NUMP', 'ADJ.*']},     #sagnfylling copulu
             'NP-SPR'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.' 'NPRS-.',]},   #secondary predicate
-            'NP-POS'        : {'dir':'r', 'rules':['N-.*|NS-.*|FW', 'NPR-.', 'N-.', 'NS-.', 'NPRS-.', 'PRO-.', 'NP', 'NP-.+', 'MAN-.', 'OTHER-.']},
+            'NP-POS'        : {'dir':'r', 'rules':['N-.*|NS-.*|FW|NPR-.|NPRS-.', 'N-.', 'NS-.', 'PRO-.', 'NP', 'NP-.+', 'MAN-.', 'OTHER-.']},
             'NP-POS-RSP'    : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'PRO-.', 'NP-.+', 'MAN-.', 'OTHER-.']},
             'NP-COM'        : {'dir':'r', 'rules':['N.*', 'NP.*', 'OTHER-.']},  #fylliliður N sem er ekki í ef.
             'NP-ADT'        : {'dir':'r', 'rules':['(N-.|NS-.)', 'NS-.', 'NPR-.', 'NPRS-.', 'MAN-.', 'OTHER-.']},    #clause-level dative adjuncts, e.g. instrumental datives
@@ -547,7 +547,7 @@ head_rules = {
             'ADJX'          : {'dir':'r', 'rules':['ADJ.*']},
             'WADJP'         : {'dir':'r', 'rules':['ADJ.*', 'ADV.*']},
             'WADJX'         : {'dir':'r', 'rules':['ADJ.*', 'ADV.*']},
-            'PP'            : {'dir':'r', 'rules':['CP-FRL', 'N-.|NPRS-.|NS-.|NPR-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP', 'NP-.+', 'FS', 'CP-ADV.*', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*|PP', 'IP-INF.*', 'IP-PPL', 'P', 'PP']},
+            'PP'            : {'dir':'r', 'rules':['CP-FRL', 'N-.|NPRS-.|NS-.|NPR-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP', 'NP-.+', 'FS', 'CP-ADV.*', 'IP-SMC', 'ADV.*|ADVP', 'ADJP', 'IP-MAT.*', 'CONJ.*', 'CP-.*|PP', 'IP-INF.*', 'IP-PPL', 'P', 'PP']},
             'PX'            : {'dir':'r', 'rules':['CP-FRL', 'NP', 'NP-.+', 'FS', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
             'PP-BY'         : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
             'PP-BY-RSP'     : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
@@ -612,7 +612,7 @@ head_rules = {
             'CODE'          : {'dir':'r', 'rules':['NP']},
             'TRANSLATION'   : {'dir':'r', 'rules':['NP']},
             'LATIN'         : {'dir':'r', 'rules':['FW', 'CODE']},
-            'MDPI'          : {'dir':'r', 'rules':['MDPI']}
+            #'MDPI'          : {'dir':'r', 'rules':['MDPI']}
             }
 
 relation_NP = {
