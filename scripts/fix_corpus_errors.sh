@@ -164,6 +164,7 @@ sed -i "" 's/(NX (VAN-A skyggðan-skyggðja) (N-A hjálm-hjálmur))))/(NX (VAN-A
 sed -i "" 's/(NP-PRD (NS-N engi-engi) (N-N svívirðing-svívirðing))/(NP-PRD (Q-N engi-enginn) (N-N svívirðing-svívirðing))/g' $dir/1475.aevintyri.nar-rel.psd # .346
 
 # 1475.aevintyri.nar-rel.psd
+sed -i "" 's/(BEPI-TTT en-en)/(BEPI-TTT en-vera)/g' $dir/1475.aevintyri.nar-rel.psd # .159
 sed -i "" 's/mát-mega/mát\$-mega/g' $dir/1475.aevintyri.nar-rel.psd # .805
 # sed -i "" 's/skal-skulu/skal\$-skulu/g' $dir/1475.aevintyri.nar-rel.psd # .840
 # greedy, causes errors. No automatic fix?
@@ -174,6 +175,7 @@ sed -i "" 's/(NP-SBJ \$u-þú)/(NP-SBJ (PRO-N \$u-þú))/g' $dir/1525.erasmus.na
 sed -i "" 's/(CP-QUE-SPE (WADJP-1 (WADVP hversu-hversu)/(CP-QUE-SPE (WADJP-1 (WADV hversu-hversu)/g' $dir/1525.erasmus.nar-sag.psd # .366
 
 # 1525.georgius.nar-rel.psd
+sed -i "" 's/(VB blífa-blífa)/(BE blífa-blífa)/g' $dir/1525.georgius.nar-rel.psd # .280, .992
 sed -i "" 's/NPÖ-SBJ/NP-SBJ/g' $dir/1525.georgius.nar-rel.psd # .392
 sed -i "" 's/(IP-MAT-KOMINN/(IP-MAT/' $dir/1525.georgius.nar-rel.psd # .743
 sed -i "" 's/(IP-SUB-SPE=4 (NP-SBJ (NP-POS (NP-POS (PRO-G hans-hann))/(IP-SUB-SPE (NP-SBJ (NP-POS (NP-POS (PRO-G hans-hann))/' $dir/1525.georgius.nar-rel.psd # .1056
@@ -278,11 +280,18 @@ sed -i "" 's/((IP-INF=1 (CONJ eður-eður)/(IP-INF (CONJ eður-eður)/g' $dir/17
 sed -i "" 's/(IP-SUB-PRN=2 (CONJ eður-eður)/(IP-SUB-PRN (CONJ eður-eður)/g' $dir/1725.biskupasogur.nar-rel.psd # .412
 sed -i "" 's/(FW offielalis-offielalis))/(FW offielalis-offielalis) (. .-.))/g' $dir/1725.biskupasogur.nar-rel.psd # .533
 sed -i "" 's/(PP (P (CONJ *ICH*-4)/(PP (PP (CONJ *ICH*-4)/g' $dir/1725.biskupasogur.nar-rel.psd # .747
+sed -i "" 's/(CONJP (NX (N-D áborna-áborinn)))/(ADJ-D áborna-áborinn)/g' $dir/1725.biskupasogur.nar-rel.psd # .952
+sed -i "" 's/(CONJP (NX (NS-A fursta-fursti)))/(N-D fursta-fursti)/g' $dir/1725.biskupasogur.nar-rel.psd # .952
+sed -i "" 's/(NX (NPR-G herra-herra)))/(NX (NPR-D herra-herra)))/g' $dir/1725.biskupasogur.nar-rel.psd # .952
+sed -i "" 's/(NP-PRN (N-D konungi-konungur)/(NP-PRN (NPR-D konungi-konungur)/g' $dir/1725.biskupasogur.nar-rel.psd # .952
+sed -i "" 's/(NP-PRN (NPR-D Friderick-friderick)/(NPR-D Friderick-friderick)/g' $dir/1725.biskupasogur.nar-rel.psd # .952
+sed -i "" 's/(NP-PRN (D-D þeim-sá) (ADJ-D þriðja-þriðji))))/(NP-PRN (D-D þeim-sá) (ADJ-D þriðja-þriðji)))/g' $dir/1725.biskupasogur.nar-rel.psd # .952
 
 # 1745.klim.nar-fic.psd
 sed -i "" 's/(IP-SUB-PRN=1 (CONJ og-og)/(IP-SUB-PRN (CONJ og-og)/g' $dir/1745.klim.nar-fic.psd # .106
 sed -i "" 's/(CONJP (PRO-D mér-ég))/(NP-SBJ (PRO-D mér-ég))/g' $dir/1745.klim.nar-fic.psd # .289
 sed -i "" 's/( (" "-"))//g' $dir/1745.klim.nar-fic.psd # .335
+sed -i "" 's/(BEN veit-vita)/(BEN veit-vera)/g' $dir/1745.klim.nar-fic.psd # .741, .804
 
 # 1790.fimmbraedra.nar-sag.psd
 sed -i "" 's/(VAN \$lögð-\$leggja))/(RP upp\$-upp) (RP \$á\$-á) (VAN \$lögð-leggja))/g' $dir/1790.fimmbraedra.nar-sag.psd # .72
@@ -430,6 +439,11 @@ sed -i "" 's/(N-A \$veginn-vegur))/(N-A \$veg\$-vegur) (D-A \$inn-hinn))/g' $dir
 sed -i "" 's/(Q-A nokkurntíma-nokkurntími) (N-A \$tíma-tími))/(Q-A nokkurn\$-nokkur) (N-A $tíma-tími))/g' $dir/2008.ofsi.nar-sag.psd # .450
 sed -i "" 's/(NRP-N skarði/(NPR-N skarði/g' $dir/2008.ofsi.nar-sag.psd # .734
 sed -i "" 's/(VBPI tilheyrum-tilheyra)/(VBPI $heyrum-tilheyra)/' $dir/2008.ofsi.nar-sag.psd # .1152
+
+## FARPAHC
+
+# 1928.ntacts.rel-bib.psd
+sed -i "" 's/(IP-SMC (NP-SBJ \*)/(IP-SMC (NP-SBJ )/g' $dir/1928.ntacts.rel-bib.psd # .846
 
 echo "Done"
 
