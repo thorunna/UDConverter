@@ -1047,10 +1047,9 @@ class NodeJoiner():
                     curr_line[9] += '|SpaceAfter=No'
             else:
                 pass
-            prev_line[1] = re.sub(r'\$', '', prev_line[1])
-            curr_line[1] = re.sub(r'\$', '', curr_line[1])
-            self.lines[index], self.lines[index-1] = '\t'.join(curr_line), '\t'.join(prev_line)
-            self.lines.insert(index-1, new_line)
+        prev_line[1] = re.sub(r'\$', '', prev_line[1])
+        curr_line[1] = re.sub(r'\$', '', curr_line[1])
+        self.lines[index], self.lines[index-1] = '\t'.join(curr_line), '\t'.join(prev_line)
         return
     
     def fix_joined_space_after(self, index):
