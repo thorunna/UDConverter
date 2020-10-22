@@ -188,6 +188,7 @@ class UniversalDependencyGraph(DependencyGraph):
         for n in reversed(nj.indexes):
             # Various clitics processed
             nj.join_clitics(n)
+            nj.join_other_nodes(n)
         conllU = '\n'.join(nj.lines)
         return conllU
       
