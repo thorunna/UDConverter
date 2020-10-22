@@ -880,6 +880,8 @@ class Converter():
                             self.dg.get_by_address(address).update({'head': address-9})
                         elif self.dg.get_by_address(address-2)['rel'] == 'cop' and self.dg.get_by_address(address-2)['head'] == node['head']:
                             self.dg.get_by_address(address).update({'head': address-2})
+                    elif self.dg.get_by_address(address+2)['rel'] == 'acl:relcl' and self.dg.get_by_address(address-4)['rel'] == 'nsubj' and self.dg.get_by_address(address-4)['head'] == node['head']:
+                        self.dg.get_by_address(address).update({'head': address-4})
                 
                 elif node['rel'] == 'conj' and node['head'] == address+3:
                     if self.dg.get_by_address(address+3)['rel'] == 'obl':
@@ -914,8 +916,10 @@ class Converter():
                 elif node['rel'] == 'conj' and node['head'] == address+5:
                     if self.dg.get_by_address(address+5)['rel'] == 'obl' and self.dg.get_by_address(address-4)['rel'] == 'nsubj' and self.dg.get_by_address(address-4)['head'] == node['head']:
                         self.dg.get_by_address(address).update({'head': address-4})
-                    if self.dg.get_by_address(address+5)['rel'] == 'acl:relcl' and self.dg.get_by_address(address-5)['rel'] == 'nsubj' and self.dg.get_by_address(address-5)['head'] == node['head']:
+                    elif self.dg.get_by_address(address+5)['rel'] == 'acl:relcl' and self.dg.get_by_address(address-5)['rel'] == 'nsubj' and self.dg.get_by_address(address-5)['head'] == node['head']:
                         self.dg.get_by_address(address).update({'head': address-5})
+                    elif self.dg.get_by_address(address+5)['rel'] == 'conj' and self.dg.get_by_address(address-7)['rel'] == 'nsubj' and self.dg.get_by_address(address-7)['head'] == node['head']:
+                        self.dg.get_by_address(address).update({'head': address-7})
                 
                 elif node['rel'] == 'conj' and node['head'] == address+6:
                     if self.dg.get_by_address(address+6)['rel'] == 'ccomp' and self.dg.get_by_address(address-5)['rel'] == 'nsubj' and self.dg.get_by_address(address-5)['head'] == node['head']:

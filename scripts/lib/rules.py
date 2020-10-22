@@ -392,6 +392,7 @@ head_rules = {
             'IP-MAT-SPE'    : {'dir':'r', 'rules':['VB', 'VB.*', 'VAN', 'RD.*', 'DO.*', 'IP-MAT.*', 'IP-MAT-PRN', 'DAN', 'VP', 'HV.*', 'ADJP', 'IP-SMC.*|ADVP', 'ADVP', 'NP', 'VAN', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*', 'PP', '.+[^PUNCT]']},
             'IP-MAT-SPE-1'    : {'dir':'r', 'rules':['VB', 'VB.*', 'VAN', 'RD.*', 'DO.*', 'DAN', 'VP', 'HV.*', 'ADJP', 'ADVP', 'NP', 'VAN', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE=1'  : {'dir':'r', 'rules':['PP', 'ADJP']},
+            'IP-MAT-SPE-TTT'    : {'dir':'r', 'rules':['VB', 'VB.*', 'VAN', 'RD.*', 'DO.*', 'IP-MAT.*', 'IP-MAT-PRN', 'DAN', 'VP', 'HV.*', 'ADJP', 'IP-SMC.*|ADVP', 'ADVP', 'NP', 'VAN', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*', 'PP', '.+[^PUNCT]']},
             'IP-MAT-SPE-PRN': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE-PRN-ELAB': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SPE-PRN-LFD': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VAG', 'VP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
