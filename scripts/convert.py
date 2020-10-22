@@ -160,7 +160,7 @@ def main():
             if tree.corpus_id_num == tree_num:
                 TREE = tree.remove_nodes(tags=['CODE'], trace=True)
             else:
-                TREE = tree.remove_nodes(tags=['CODE'], trace=True)
+                continue
 
         try:
             print(TREE)
