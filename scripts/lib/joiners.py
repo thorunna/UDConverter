@@ -609,6 +609,42 @@ class NodeJoiner():
             - annar$ $staðar e.g. 1888.grimur.nar-fic.psd
             - einhvers$ $konar e.g. 2008.ofsi.nar-sag.psd
             - hvers$ $konar e.g. 2008.ofsi.nar-sag.psd
+            
+        Additions needed for Faroese:
+            Vitnisburðar<dash/>$ $tjaldið # NOTE: noun
+            upp$ $í
+            út$ $valt       # NOTE: verb
+            út$ $lagt
+            av$ $stað
+            til$ $bað       # NOTE: verb
+            í$ $mót
+            um$ $kring
+            um$ $skornir    # NOTE: verb?
+            út$ $helt       # NOTE: verb
+            av$ $stað
+            uttan$ $fyri
+            út$ $breiddist  # NOTE: verb
+            upp$ $rættum    # NOTE: verb
+            upp$ $fyltu     # NOTE: verb
+            um$ $skornir    # NOTE: verb
+            niður$ $rivið   # NOTE: verb
+            Her$ $eftir
+            Higar$ $til
+            aftan$ $á
+            av$ $stað
+            fram$ $við
+            líka$ $sum
+            niður$ $í
+            um$ $kring
+            uttan$ $fyri
+            Áðr$ $enn
+            á$ $millum
+            áðr$ $enn
+            í$ $gjögnum
+            í$ $millum
+            í$ $mót
+            í$ $móti
+            út$ $á
         '''
 
         # regex for joining "einhvernveginn"
@@ -993,6 +1029,13 @@ class NodeJoiner():
             self.lines.insert(index-1, new_line)
             # print(new_line.strip('\n')
         return self
+    
+    def join_other_nodes(self, index):
+        """
+        Catches other instances of seperated nodes that cause errors
+        Only adds SpaceAfter=No and removes $, does not add new line
+        """
+    
     def fix_joined_space_after(self, index):
 
         curr_line, token_end_line = self.lines[index].split('\t'), self.lines[index+2].split('\t')
