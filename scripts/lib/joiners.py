@@ -1035,6 +1035,20 @@ class NodeJoiner():
         Catches other instances of seperated nodes that cause errors
         Only adds SpaceAfter=No and removes $, does not add new line
         """
+        curr_line, prev_line = self.lines[index].split('\t'), self.lines[index-1].split('\t')
+        if len(curr_line) == 1 or len(prev_line) == 1: return self
+        if prev_line[4] == '_': return self
+        elif re.search(r'\$$', curr_line[1]):
+            if not re.search(r'SpaceAfter=No', curr_line[9]):
+                if curr_line[9] == '':
+                    curr_line[9] = 'SpaceAfter=No'
+                else:
+                    curr_line[9] += '|SpaceAfter=No'
+            else:
+                pass
+        curr_line[1] = re.sub(r'\$', '', curr_line[1])
+        self.lines[index], self.lines[index-1] = '\t'.join(curr_line), '\t'.join(prev_line)
+        return
     
     def fix_joined_space_after(self, index):
 
