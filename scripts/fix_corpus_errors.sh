@@ -222,6 +222,7 @@ sed -i "" 's/(IP-SUB-SPE=4 (NP-SBJ (NP-POS (NP-POS (PRO-G hans-hann))/(IP-SUB-SP
 sed -i "" 's/\$út-út/út\$-út/g' $dir/1540.ntacts.rel-bib.psd # 239.141
 sed -i "" 's/\sann\$-sannur/sann-sannur/g' $dir/1540.ntacts.rel-bib.psd # 239.160
 sed -i "" 's/(MDDS skyldu-skylda)/(MDDS skyldu-skulu)/g' $dir/1540.ntacts.rel-bib.psd # .306, .356
+sed -i "" 's/(RP til\$+til-til+til)/(RP til\$-til)/g' $dir/1540.ntacts.rel-bib.psd # 263.789
 sed -i "" 's/(N-G borg-borg)/(N-G borgar\$-borg)/g' $dir/1540.ntacts.rel-bib.psd # 266.879
 sed -i "" 's/(NS-D yfirboðuru-yfirboðari)/(NS-D yfirboðuru\$-yfirboðari)/g' $dir/1540.ntacts.rel-bib.psd # 273.1071
 
