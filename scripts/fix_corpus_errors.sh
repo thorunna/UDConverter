@@ -208,8 +208,11 @@ sed -i "" 's/(RDPS verði-verð)/(RDPS verði-verða)/g' $dir/1525.erasmus.nar-s
 sed -i "" 's/(MDPI Vilt-vila)/(MDPI Vilt-vilja)/g' $dir/1525.erasmus.nar-sag.psd # .253
 sed -i "" 's/(MDDS mætti-máttur)/(MDDS mætti-mega)/g' $dir/1525.erasmus.nar-sag.psd # .264
 sed -i "" 's/(CP-QUE-SPE (WADJP-1 (WADVP hversu-hversu)/(CP-QUE-SPE (WADJP-1 (WADV hversu-hversu)/g' $dir/1525.erasmus.nar-sag.psd # .366
+sed -i "" 's/(MDDI mættu-mæta)/(MDDI mættu-mega)/g' $dir/1525.erasmus.nar-sag.psd # .666
 
 # 1525.georgius.nar-rel.psd
+sed -i "" 's/(RDPS verði-verð)/(RDPS verði-verða)/g' $dir/1525.georgius.nar-rel.psd # .80
+sed -i "" 's/(MD mæða-mæða)/(VB mæða-mæða)/g' $dir/1525.georgius.nar-rel.psd # .174
 sed -i "" 's/(VB blífa-blífa)/(BE blífa-blífa)/g' $dir/1525.georgius.nar-rel.psd # .280, .992
 sed -i "" 's/NPÖ-SBJ/NP-SBJ/g' $dir/1525.georgius.nar-rel.psd # .392
 sed -i "" 's/(IP-MAT-KOMINN/(IP-MAT/' $dir/1525.georgius.nar-rel.psd # .743
@@ -313,6 +316,7 @@ sed -i "" 's;(NS-G mennta-menntir) (CONJ og-og) (NS-G mann<dash/>kosta-mann<dash
 sed -i "" 's;(N-N búningur-búningur) (CONJ og-og) (N-N klæða<dash/>snið-klæða<dash/>snið))$;(N-N búningur-búningur) (CONJP (CONJ og-og) (N-N klæða<dash/>snið-klæða<dash/>snið)));' $dir/1720.vidalin.rel-ser.psd # .384
 sed -i "" 's;(NP-SBJ (N-N ágirni-ágirni)$;(NP-SBJ (N-N ágirni-ágirni) (CONJP;' $dir/1720.vidalin.rel-ser.psd # .928
 sed -i "" 's;(N-N fé<dash/>dráttur-fé<dash/>dráttur)$;(N-N fé<dash/>dráttur-fé<dash/>dráttur));' $dir/1720.vidalin.rel-ser.psd # .928
+sed -i "" 's/(MDPS megum-megu)/(MDPS megum-mega)/g' $dir/1720.vidalin.rel-ser.psd # .931
 sed -i "" 's;(N-D ráðleysu-ráðleysi) (CONJ og-og) (N-D hugar<dash/>víli-hugar<dash/>víli)))$;(N-D ráðleysu-ráðleysi) (CONJP (CONJ og-og) (N-D hugar<dash/>víli-hugar<dash/>víli))));' $dir/1720.vidalin.rel-ser.psd # .1064
 
 # 1725.biskupasogur.nar-rel.psd
