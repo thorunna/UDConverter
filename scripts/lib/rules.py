@@ -613,7 +613,7 @@ head_rules = {
             'CODE'          : {'dir':'r', 'rules':['NP']},
             'TRANSLATION'   : {'dir':'r', 'rules':['NP']},
             'LATIN'         : {'dir':'r', 'rules':['FW', 'CODE']},
-            #'MDPI'          : {'dir':'r', 'rules':['MDPI']}
+            'MDPI'          : {'dir':'r', 'rules':['MDPI']}
             }
 
 relation_NP = {
