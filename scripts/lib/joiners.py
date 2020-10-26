@@ -1038,8 +1038,7 @@ class NodeJoiner():
         curr_line, prev_line = self.lines[index].split('\t'), self.lines[index-1].split('\t')
         if len(curr_line) == 1 or len(prev_line) == 1: return self
         if prev_line[4] == '_': return self
-        # elif re.search('\$[a-zþæðöáéýúíó]', curr_line[1]):
-        elif re.search('\$$', curr_line[1]):
+        elif re.search(r'\$$', curr_line[1]):
             if not re.search(r'SpaceAfter=No', curr_line[9]):
                 if curr_line[9] == '':
                     curr_line[9] = 'SpaceAfter=No'
@@ -1047,7 +1046,6 @@ class NodeJoiner():
                     curr_line[9] += '|SpaceAfter=No'
             else:
                 pass
-        prev_line[1] = re.sub(r'\$', '', prev_line[1])
         curr_line[1] = re.sub(r'\$', '', curr_line[1])
         self.lines[index], self.lines[index-1] = '\t'.join(curr_line), '\t'.join(prev_line)
         return

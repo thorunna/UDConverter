@@ -221,7 +221,8 @@ class UniversalDependencyGraph(DependencyGraph):
                                        deps_str=self._deps_str(node['deps']),
                                        feats_str=self._dict_to_string(node['feats']),
                                        misc_str=self._dict_to_string(node['misc']))
-                                    for i, node in sorted(self.nodes.items()) if node['tag'] != 'TOP') \
+                                    for i, node in sorted(self.nodes.items()) \
+                                    if node['tag'] != 'TOP' and node['word'] not in {'None', None} ) \
                                     + '\n')
 
     def plain_text(self):
@@ -1171,19 +1172,29 @@ class Converter():
                 if t[i][0] in {'0', '*', '{','<'}:   #if t[1].pos()[0][0] in {'0', '*'}:
                     continue
 
-                # If terminal node with no label (token-lemma)
-                # e.g. tók-taka
-                if '-' in t[i]:
-                    FORM = decode_escaped(t[i].split('-', 1)[0])
-                    LEMMA = decode_escaped(t[i].split('-', 1)[1])
-                    tag = tag_list[nr]
+                
+                if '---' in t[i]:
+                    FORM = LEMMA = '-'
+                    # tag = tag_list[nr]
+                
+                elif '-' in t[i]:
+                    # if leaf is for whatever reason a single symbol with no 
+                    # hyphen treat seperately
+                    if len(t[i]) == 1:
+                        FORM = LEMMA = tag = tag_list[nr]
+                    # If terminal node with no label (token-lemma)
+                    # e.g. tók-taka
+                    else:
+                        FORM = decode_escaped(t[i].split('-', 1)[0])
+                        LEMMA = decode_escaped(t[i].split('-', 1)[1])
+                        # tag = tag_list[nr]
                 elif t[i][0] in {'<dash/>', '<dash>', '</dash>',}:
                     FORM = LEMMA = '-'
-                    tag = tag_list[nr]
+                    # tag = tag_list[nr]
                 else: # If no lemma present
                     FORM = t[i]
                     LEMMA = None
-                    tag = tag_list[nr]
+                tag = tag_list[nr]
                 if '+' in tag:
                     tag = re.sub('\w+\+', '', tag)
                 if '21' in tag:
