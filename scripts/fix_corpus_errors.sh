@@ -272,8 +272,8 @@ sed -i "" 's/(OTHER-WPRO-N annaðhvört-annaðhvort)/(OTHER+WPRO-N annaðhvört-
 sed -i "" 's/(OTHER+WPRO annaðhvört-annaðhvort)/(OTHER+WPRO annaðhvört+annaðhvort)/g' $dir/1630.gerhard.rel-oth.psd # .448
 
 # 1650.illugi-nar-sag.psd
-sed -i "" 's/(IP-SMC (NP-SBJ \*)/(IP-SMC (NP-SBJ )/' $dir/1650.illugi-nar-sag.psd # .860
-sed -i "" 's/(PP (P (P norðan-norðan) (CONJ og-og) (P austan-austan))/(PP (PP (P norðan-norðan) (CONJ og-og) (P austan-austan))/' $dir/1650.illugi-nar-sag.psd # .1165
+sed -i "" 's/(IP-SMC (NP-SBJ \*)/(IP-SMC (NP-SBJ )/' $dir/1650.illugi.nar-sag.psd # .860
+sed -i "" 's/(PP (P (P norðan-norðan) (CONJ og-og) (P austan-austan))/(PP (PP (P norðan-norðan) (CONJ og-og) (P austan-austan))/' $dir/1650.illugi.nar-sag.psd # .1165
 
 # 1659.pislarsaga.bio-aut.psd
 sed -i "" 's/(IP-SUB-PRN=2 (CONJ og-og)/(IP-SUB-PRN (CONJ og-og)/' $dir/1659.pislarsaga.bio-aut.psd # .109
