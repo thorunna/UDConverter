@@ -314,6 +314,7 @@ sed -i "" 's/(ITEM item-item)//' $dir/1680.skalholt.nar-rel.psd # .799
 sed -i "" 's/(MDDS kynni-kynni)/(MDDS kynni-kunna)/' $dir/1680.skalholt.nar-rel.psd # .605
 
 # 1720.vidalin.rel-ser.psd
+sed -i "" 's/(IP-SUB=1 (NP-PRD (CP-FRL (WNP-3 (WPRO-A hvað-hver))/(IP-SUB (NP-PRD (CP-FRL (WNP-3 (WPRO-A hvað-hver))/g' $dir/1720.vidalin.rel-ser.psd # .146
 sed -i "" 's/(IP-SUB-PRN=1 (CONJ og-og)/(IP-SUB-PRN (CONJ og-og)/g' $dir/1720.vidalin.rel-ser.psd # .150
 sed -i "" 's;(N-N umskurn-umskurn) (CONJ né-né) (N-N yfir<dash/>húð-yfir<dash/>húð))$;(N-N umskurn-umskurn) (CONJP (CONJ né-né) (N-N yfir<dash/>húð-yfir<dash/>húð)));' $dir/1720.vidalin.rel-ser.psd # .168
 sed -i "" 's;(NS-G mennta-menntir) (CONJ og-og) (NS-G mann<dash/>kosta-mann<dash/>kostur)))$;(NS-G mennta-menntir) (CONJP (CONJ og-og) (NS-G mann<dash/>kosta-mann<dash/>kostur))));' $dir/1720.vidalin.rel-ser.psd # .329
@@ -440,7 +441,7 @@ sed -i "" 's/	  (NP-SBJ \*con\*)/	  (NP-SBJ )/g' $dir/1888.vordraumur.nar-fic.ps
 sed -i "" 's/(PP (P -))//' $dir/1902.fossar.nar-fic.psd # .879
 sed -i "" 's/(, -)/(, ,-,)/g' $dir/1902.fossar.nar-fic.psd # .92 o.fl.
 sed -i "" 's/(CP-ADV-SPE (C 0) (BREAK 0)))/)/g' $dir/1902.fossar.nar-fic.psd # .123
-sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/1902.fossar.nar-fic.psd # .140
+sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/1902.fossar.nar-fic.psd # .140, .177
 sed -i "" 's/(. -)/(. .-.)/g' $dir/1902.fossar.nar-fic.psd # .510 o.fl.
 sed -i "" 's/(, -----)/(, ,-,)/g' $dir/1902.fossar.nar-fic.psd # .822
 sed -i "" 's/(- -)//g' $dir/1902.fossar.nar-fic.psd # .872 o.fl.
@@ -507,7 +508,9 @@ sed -i "" 's/(CONJP-4 (CONJP eða-eða)/(CONJP-4 (CONJ eða-eða)/g' $dir/2008.o
 sed -i "" 's/(N-A \$veginn-vegur))/(N-A \$veg\$-vegur) (D-A \$inn-hinn))/g' $dir/2008.ofsi.nar-sag.psd # .442
 sed -i "" 's/(Q-A nokkurntíma-nokkurntími) (N-A \$tíma-tími))/(Q-A nokkurn\$-nokkur) (N-A $tíma-tími))/g' $dir/2008.ofsi.nar-sag.psd # .450
 sed -i "" 's/(NRP-N skarði/(NPR-N skarði/g' $dir/2008.ofsi.nar-sag.psd # .734
+sed -i "" 's/(IP-SUB-PRN=3 (NEG ekki-ekki)/(IP-SUB-PRN (NEG ekki-ekki)/g' $dir/2008.ofsi.nar-sag.psd # .984
 sed -i "" 's/(VBPI tilheyrum-tilheyra)/(VBPI $heyrum-tilheyra)/' $dir/2008.ofsi.nar-sag.psd # .1152
+sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/' $dir/2008.ofsi.nar-sag.psd # .1157
 
 ## FARPAHC
 
