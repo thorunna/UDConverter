@@ -1085,7 +1085,10 @@ class Converter():
             for address, node in self.dg.nodes.items():
                     if node['address'] == node['head']:
                         if address != 1:
-                            if self.dg.get_by_address(address-12)['ctag'] == 'VERB' and address-12 in self.dg.nodes.items():
+                            if node['rel'] == 'conj' and node['ctag'] == 'NOUN' and self.dg.get_by_address(address-1)['ctag'] == 'ADJ' and self.dg.get_by_address(address-1)['rel'] == 'obl':
+                                self.dg.get_by_address(address).update({'head': self.dg.get_by_address(address-1)['head'], 'rel': self.dg.get_by_address(address-1)['rel']})
+                                self.dg.get_by_address(address-1).update({'head': address, 'rel': 'amod'})
+                            elif self.dg.get_by_address(address-12)['ctag'] == 'VERB' and address-12 in self.dg.nodes.items():
                                 self.dg.get_by_address(address).update({'head': address-12})
                             elif self.dg.get_by_address(address-4)['ctag'] == 'VERB' and address-4 in self.dg.nodes.items():
                                 self.dg.get_by_address(address).update({'head': address-4})
