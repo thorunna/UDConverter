@@ -830,7 +830,7 @@ abbr_map = {
     '$s.' : (r'\$s\.', 'segja', 's', 'segja'),
     'a$' : (r'a$', 'að', 'að', 'að'),
     '$m$' : (r'\$m$', 'minnsta', 'lítill', ''),
-    '$k' : (r'\$k', 'kosti', 'kostur', ''),
+    # '$k' : (r'\$k', 'kosti', 'kostur', ''), # NOTE: Not needed!
     'm.$' : (r'm\.\$', 'meðal', 'm', 'meðal'),
     '$a.' : (r'\$a\.', 'annars', 'annar', ''),
     'm.$' : (r'm\.\$', 'meira', 'm', 'meira'),
