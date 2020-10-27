@@ -742,32 +742,39 @@ class Converter():
                     if address+1 in self.dg.nodes \
                     and self.dg.get_by_address(address+1)['rel'] == 'conj':
                         self.dg.get_by_address(address).update({'head': address+1})
-                    elif address+1 not in self.dg.nodes and node['head'] != self.dg.get_by_address(address-1)['head']:
+                    elif address+1 not in self.dg.nodes and address-1 in self.dg.nodes and node['head'] != self.dg.get_by_address(address-1)['head']:
                         self.dg.get_by_address(address).update({'head':address-1})
                     elif address != 1:
-                        if node['head'] == address-1:
-                            if self.dg.get_by_address(address-1)['head'] == address:
-                                print(self.dg.get_by_address(address-1)['head'])
-                                self.dg.get_by_address(address-1).update({'head': address-2})
+                        #if address-1 in self.dg.nodes and node['head'] == address-1:
+                        #    if self.dg.get_by_address(address-1)['head'] == address and address-2 in self.dg.nodes:
+                        #        print(self.dg.get_by_address(address-1)['head'])
+                        #        self.dg.get_by_address(address-1).update({'head': address-2})
                         #elif self.dg.get_by_address(address+1)['head'] == address+2 and self.dg.get_by_address(address+2)['head'] == address-1 and node['head'] == self.dg.get_by_address(address-1)['head'] and self.dg.get_by_address(address-1)['rel'] == 'amod':
                         #    self.dg.get_by_address(address).update({'head': address-1})
-                        elif self.dg.get_by_address(address-1)['head'] == address:
-                            print(self.dg.get_by_address(address-1)['head'])
-                            self.dg.get_by_address(address-1).update({'head': node['head']})
-                        elif self.dg.get_by_address(address-1)['head'] != '_' and node['head'] <= int(self.dg.get_by_address(address-1)['head']):
-                            self.dg.get_by_address(address).update({'head': address-1})
-                        elif self.dg.get_by_address(address-2)['rel'] == 'advcl' and node['head'] > self.dg.get_by_address(address-2)['head'] and self.dg.get_by_address(address-1)['head'] == address-2:
-                            self.dg.get_by_address(address).update({'head': address-1})
-                        elif self.dg.get_by_address(address-1)['rel'] == 'conj' and node['head'] > self.dg.get_by_address(address-1)['head']:
-                            self.dg.get_by_address(address).update({'head': address-1})
-                        elif self.dg.get_by_address(address+2)['head'] != '_' and self.dg.get_by_address(address-1)['rel'] == 'amod' and self.dg.get_by_address(address-1)['head'] <= node['head']:
-                            self.dg.get_by_address(address).update({'head': self.dg.get_by_address(address-1)['head']})
-                        elif self.dg.get_by_address(address+2)['head'] == address-1 and node['head'] < address-1:
-                            self.dg.get_by_address(address).update({'head': address-1})
-                        elif node['head'] > address and self.dg.get_by_address(address+1)['head'] < address+1:
-                            self.dg.get_by_address(address).update({'head': address-1})
-                        elif node['head'] < address-1 and self.dg.get_by_address(address+1)['head'] == address-1:
-                            self.dg.get_by_address(address).update({'head': address-1})
+                        if address-1 in self.dg.nodes: 
+                            if self.dg.get_by_address(address-1)['head'] == address:
+                                print(self.dg.get_by_address(address-1)['head'])
+                                self.dg.get_by_address(address-1).update({'head': node['head']})
+                            elif self.dg.get_by_address(address-1)['head'] != '_' and node['head'] <= int(self.dg.get_by_address(address-1)['head']):
+                                self.dg.get_by_address(address).update({'head': address-1})
+                            elif self.dg.get_by_address(address-1)['rel'] == 'conj' and node['head'] > self.dg.get_by_address(address-1)['head']:
+                                self.dg.get_by_address(address).update({'head': address-1})
+                        elif address-2 in self.dg.nodes and address-1 in self.dg.nodes:
+                            if node['head'] == address-1:
+                                if self.dg.get_by_address(address-1)['head'] == address:
+                                    self.dg.get_by_address(address-1).update({'head': address-2})
+                            elif self.dg.get_by_address(address-2)['rel'] == 'advcl' and node['head'] > self.dg.get_by_address(address-2)['head'] and self.dg.get_by_address(address-1)['head'] == address-2:
+                                self.dg.get_by_address(address).update({'head': address-1})
+                        elif address+2 in self.dg.nodes and address-1 in self.dg.nodes:
+                            if self.dg.get_by_address(address+2)['head'] != '_' and self.dg.get_by_address(address-1)['rel'] == 'amod' and self.dg.get_by_address(address-1)['head'] <= node['head']:
+                                self.dg.get_by_address(address).update({'head': self.dg.get_by_address(address-1)['head']})
+                            elif self.dg.get_by_address(address+2)['head'] == address-1 and node['head'] < address-1:
+                                self.dg.get_by_address(address).update({'head': address-1})
+                        elif address+1 in self.dg.nodes and address-1 in self.dg.nodes:
+                            if node['head'] > address and self.dg.get_by_address(address+1)['head'] < address+1:
+                                self.dg.get_by_address(address).update({'head': address-1})
+                            elif node['head'] < address-1 and self.dg.get_by_address(address+1)['head'] == address-1:
+                                self.dg.get_by_address(address).update({'head': address-1})
  
                 #if node['head'] < int(self.dg.get_by_address(address+1)['head']) and self.dg.get_by_address(address+1)['ctag'] == 'ADV':
                 #    self.dg.get_by_address(address).update({'head': self.dg.get_by_address(address+1)['head']})
