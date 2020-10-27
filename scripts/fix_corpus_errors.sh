@@ -343,6 +343,7 @@ sed -i "" 's/(NP-PRN (D-D þeim-sá) (ADJ-D þriðja-þriðji))))/(NP-PRN (D-D �
 
 # 1745.klim.nar-fic.psd
 sed -i "" 's/(IP-SUB-PRN=1 (CONJ og-og)/(IP-SUB-PRN (CONJ og-og)/g' $dir/1745.klim.nar-fic.psd # .106
+sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/1745.klim.nar-fic.psd # .216
 sed -i "" 's/(CONJP (PRO-D mér-ég))/(NP-SBJ (PRO-D mér-ég))/g' $dir/1745.klim.nar-fic.psd # .289
 sed -i "" 's/( (" "-"))//g' $dir/1745.klim.nar-fic.psd # .335
 sed -i "" 's/(MDPS mætti-máttur)/(MDPS mætti-mega)/g' $dir/1745.klim.nar-fic.psd # .479
@@ -515,6 +516,7 @@ sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/' $dir/2008.ofsi.na
 ## FARPAHC
 
 # 1928.ntacts.rel-bib.psd
+sed -i "" 's/(IP-SMC-SPE (NP-SBJ \*)/(IP-SMC-SPE (NP-SBJ )/g' $dir/1928.ntacts.rel-bib.psd # .456
 sed -i "" 's/(IP-SMC (NP-SBJ \*)/(IP-SMC (NP-SBJ )/g' $dir/1928.ntacts.rel-bib.psd # .846
 
 echo "Done"
