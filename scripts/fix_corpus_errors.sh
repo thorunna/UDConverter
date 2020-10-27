@@ -89,6 +89,7 @@ sed -i "" 's/(CP-REL-SPE (WADVP-1 þar-þar)/(CP-REL-SPE (WADVP-1 (WADV þar-þa
 # 1260.jomsvikingar.nar-sag.psd
 sed -i "" 's/) (CONJ og-og) (NPR-N Gull<dash>Haraldur-gullharaldur))/) (CONJP (CONJ og-og) (NPR-N Gull<dash>Haraldur-gullharaldur)))/' $dir/1260.jomsvikingar.nar-sag.psd # .
 sed -i "" 's/(HVDI hatði-hata)/(HVDI hatði-hafa)/' $dir/1260.jomsvikingar.nar-sag.psd # .341
+sed -i "" 's/(NP-SBJ (PRO-N tú-þú))/(NP-SBJ (PRO-N $tú-þú))/' $dir/1260.jomsvikingar.nar-sag.psd # .1233
 sed -i "" 's/(MDPI muna-muna)/(MDPI muna-munu)/' $dir/1260.jomsvikingar.nar-sag.psd # .1459
 
 # 1275.morkin.nar-his.psd
