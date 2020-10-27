@@ -970,6 +970,8 @@ class Converter():
                     if self.dg.get_by_address(address+6)['rel'] == 'ccomp' and self.dg.get_by_address(address-5)['rel'] == 'nsubj' and self.dg.get_by_address(address-5)['head'] == node['head']:
                         if node['ctag'] == 'NOUN':
                             self.dg.get_by_address(address).update({'head': address-5})
+                        elif node['ctag'] == 'ADV':
+                            self.dg.get_by_address(address).update({'rel': 'advmod'})
                     elif self.dg.get_by_address(address-6)['rel'] == 'nsubj' and self.dg.get_by_address(address-6)['head'] == node['head']:
                         self.dg.get_by_address(address).update({'head': address-6})
                     elif self.dg.get_by_address(address+6)['rel'] == 'acl:relcl' and self.dg.get_by_address(address-5)['rel'] == 'nsubj' and self.dg.get_by_address(address-5)['head'] == node['head']:
@@ -1083,36 +1085,28 @@ class Converter():
             for address, node in self.dg.nodes.items():
                     if node['address'] == node['head']:
                         if address != 1:
-                            if address-12 in self.dg.nodes.items():
-                                if self.dg.get_by_address(address-12)['ctag'] == 'VERB':
-                                    self.dg.get_by_address(address).update({'head': address-12})
-                            elif address-4 in self.dg.nodes.items():
-                                if self.dg.get_by_address(address-4)['ctag'] == 'VERB':
-                                    self.dg.get_by_address(address).update({'head': address-4})
-                            elif address-3 in self.dg.nodes.items():
-                                if self.dg.get_by_address(address-3)['ctag'] == 'VERB':
-                                    self.dg.get_by_address(address).update({'head': address-3})
-                            elif address-2 in self.dg.nodes.items():
-                                if self.dg.get_by_address(address-2)['ctag'] == 'VERB':
-                                    self.dg.get_by_address(address).update({'head': address-2})
-                                elif self.dg.get_by_address(address-2)['rel'] == 'root':
-                                    self.dg.get_by_address(address).update({'head': address-2})
+                            if self.dg.get_by_address(address-12)['ctag'] == 'VERB' and address-12 in self.dg.nodes.items():
+                                self.dg.get_by_address(address).update({'head': address-12})
+                            elif self.dg.get_by_address(address-4)['ctag'] == 'VERB' and address-4 in self.dg.nodes.items():
+                                self.dg.get_by_address(address).update({'head': address-4})
+                            elif self.dg.get_by_address(address-3)['ctag'] == 'VERB' and address-3 in self.dg.nodes.items():
+                                self.dg.get_by_address(address).update({'head': address-3})
+                            elif self.dg.get_by_address(address-2)['ctag'] == 'VERB' and address-2 in self.dg.nodes.items():
+                                self.dg.get_by_address(address).update({'head': address-2})
+                            elif self.dg.get_by_address(address-2)['rel'] == 'root' and address-2 in self.dg.nodes.items():
+                                self.dg.get_by_address(address).update({'head': address-2})
                             elif address-1 in self.dg.nodes.items():
                                 if self.dg.get_by_address(address-1)['ctag'] == 'VERB':
                                     self.dg.get_by_address(address).update({'head': address-1})
                         else:
-                            if address+1 in self.dg.nodes.items():
-                                if self.dg.get_by_address(address+1)['ctag'] == 'VERB':
-                                    self.dg.get_by_address(address).update({'head': address+1})
-                            elif address+2 in self.dg.nodes.items():
-                                if self.dg.get_by_address(address+2)['word'] != None and self.dg.get_by_address(address+2)['ctag'] == 'VERB':
-                                    self.dg.get_by_address(address).update({'head': address+2})
-                            elif address+3 in self.dg.nodes.items():
-                                if self.dg.get_by_address(address+3)['word'] != None and self.dg.get_by_address(address+3)['ctag'] == 'VERB':
-                                    self.dg.get_by_address(address).update({'head': address+3})
-                            elif address+4 in self.dg.nodes.items():
-                                if self.dg.get_by_address(address+4)['word'] != None and self.dg.get_by_address(address+4)['ctag'] == 'VERB':
-                                    self.dg.get_by_address(address).update({'head': address+4})
+                            if address+1 in self.dg.nodes.items() and self.dg.get_by_address(address+1)['ctag'] == 'VERB':
+                                self.dg.get_by_address(address).update({'head': address+1})
+                            elif address+2 in self.dg.nodes.items() and self.dg.get_by_address(address+2)['word'] != None and self.dg.get_by_address(address+2)['ctag'] == 'VERB':
+                                self.dg.get_by_address(address).update({'head': address+2})
+                            elif address+3 in self.dg.nodes.items() and self.dg.get_by_address(address+3)['word'] != None and self.dg.get_by_address(address+3)['ctag'] == 'VERB':
+                                self.dg.get_by_address(address).update({'head': address+3})
+                            elif address+4 in self.dg.nodes.items() and self.dg.get_by_address(address+4)['word'] != None and self.dg.get_by_address(address+4)['ctag'] == 'VERB':
+                                self.dg.get_by_address(address).update({'head': address+4})
         except RuntimeError:
             pass
             #print(self.dg.nodes.items())
