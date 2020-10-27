@@ -35,7 +35,9 @@ echo "Fixing annotation errors..."
 sed -i "" 's/(DAN \&gört-gera)/(DAN $gört-gera)/g' $dir/1150.homiliubok.rel-ser.psd # .37
 
 # 1150.homiliubok.rel-ser.psd
+sed -i "" 's/(CODE </heading>))/(CODE </heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .2
 sed -i "" 's/( (LATIN (FW Assumptio-assumptio) (FW sancte-sancte) (FW Marie-marie))( (LATIN (FW Assumptio-assumptio) (FW sancte-sancte) (FW Marie-marie) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .11
+sed -i "" 's/(CODE </translation>))/(CODE </translation>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .12
 sed -i "" 's/( (IP-MAT=1/( (IP-MAT-1/g' $dir/1150.homiliubok.rel-ser.psd # .37
 sed -i "" 's/(HVN hafða-hafða)/(HVN hafða-hafa)/g' $dir/1150.homiliubok.rel-ser.psd # .52
 sed -i "" 's/(WADJ hversu-hversu)/(WADV hversu-hversu)/g' $dir/1150.homiliubok.rel-ser.psd # .105
@@ -50,6 +52,7 @@ sed -i "" 's/(MDDS vildim-vildim)/(MDDS vildim-vilja)/g' $dir/1150.homiliubok.re
 sed -i "" 's/(WQ (WADV hve-hve) (Q-N mikill-mikill))/(WQP (WADV hve-hve) (Q-N mikill-mikill))/g' $dir/1150.homiliubok.rel-ser.psd # .470
 sed -i "" 's/(CODE </heading>))/(CODE </heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .585, 676, 798
 sed -i "" 's/(MDPS mætti-máttur)/(MDPS mætti-mega)/g' $dir/1150.homiliubok.rel-ser.psd # .1050
+sed -i "" 's/(FW sermonis-sermonis) (CODE </heading>))/(FW sermonis-sermonis) (CODE </heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .1063
 sed -i "" 's/(VBI \$gef-gefa)/(VBI \$gef\$-gefa)/g' $dir/1150.homiliubok.rel-ser.psd # .1648
 sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1150.homiliubok.rel-ser.psd # .246
 sed -i "" 's/FOREIGN/FW/g' $dir/1150.homiliubok.rel-ser.psd # .338
