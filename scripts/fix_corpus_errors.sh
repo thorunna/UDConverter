@@ -255,6 +255,7 @@ sed -i "" 's/(IP-SUB-PRN=4 (CONJ og-og) (BEPS sé-vera))/(IP-SUB-PRN (CONJ og-og
 sed -i "" 's/(IP-SUB-PRN=2 (CONJ og-og)/(IP-SUB-PRN (CONJ og-og)/' $dir/1611.okur.rel-oth.psd # .112
 sed -i "" 's/(CODE <\/heading>))/(CODE <\/heading>) (. .-.))/' $dir/1611.okur.rel-oth.psd # .124, 125
 sed -i "" 's/(IP-SUB-PRN=8 (ADJ-N þrásamlega-þrásamlegur)/(IP-SUB-PRN (ADJ-N þrásamlega-þrásamlegur)/' $dir/1611.okur.rel-oth.psd # .414
+sed -i "" 's/(MDPS-TTT kenni-kenna)/(VBPS-TTT kenni-kenna)/' $dir/1611.okur.rel-oth.psd # .495
 sed -i "" 's/(WQ (WADV Hvað-hvað) (Q-N margar-margur))/(WQP (WADV Hvað-hvað) (Q-N margar-margur))/' $dir/1611.okur.rel-oth.psd # .524
 sed -i "" 's/(FW et.-et.))/(FW et.-et.) (. .-.))/' $dir/1611.okur.rel-oth.psd # .580
 sed -i "" 's/(CONJP (IP-SUB=5 (PP (P auk-auk)/(CONJP (IP-SUB (PP (P auk-auk)/' $dir/1611.okur.rel-oth.psd # .526
