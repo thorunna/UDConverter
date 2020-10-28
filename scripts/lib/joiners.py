@@ -877,6 +877,7 @@ class NodeJoiner():
                     curr_line[1] = re.sub(r'\$[tðd]?[uú]', 'þú', curr_line[1])
                     prev_line[1] = re.sub(r'\$', '', prev_line[1])
                     prevprev_line[1] = re.sub(r'\$', '', prevprev_line[1])
+                    prevprev_line[9] = re.sub(r'\|SpaceAfter=No', '', prevprev_line[9])
                     curr_line[9] = re.sub(r'\|SpaceAfter=No', '', curr_line[9])
                     curr_line[9] = re.sub(r'SpaceAfter=No', '_', curr_line[9])
                     prev_line[9] = re.sub(r'\|SpaceAfter=No', '', prev_line[9])
