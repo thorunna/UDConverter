@@ -218,6 +218,7 @@ sed -i "" 's/(MDDI mættu-mæta)/(MDDI mættu-mega)/g' $dir/1525.erasmus.nar-sag
 # 1525.georgius.nar-rel.psd
 sed -i "" 's/(RDPS verði-verð)/(RDPS verði-verða)/g' $dir/1525.georgius.nar-rel.psd # .80
 sed -i "" 's/(MD mæða-mæða)/(VB mæða-mæða)/g' $dir/1525.georgius.nar-rel.psd # .174
+sed -i "" 's/(MD vilja-vilji))/(MD vilja-vilja))/g' $dir/1525.georgius.nar-rel.psd # .224
 sed -i "" 's/(VB blífa-blífa)/(BE blífa-blífa)/g' $dir/1525.georgius.nar-rel.psd # .280, .992
 sed -i "" 's/NPÖ-SBJ/NP-SBJ/g' $dir/1525.georgius.nar-rel.psd # .392
 sed -i "" 's/(IP-MAT-KOMINN/(IP-MAT/' $dir/1525.georgius.nar-rel.psd # .743
