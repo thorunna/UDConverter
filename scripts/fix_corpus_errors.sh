@@ -209,6 +209,7 @@ sed -i "" 's/mát-mega/mát\$-mega/g' $dir/1475.aevintyri.nar-rel.psd # .805
 sed -i "" 's/(IP-SUB-SPE-3 (/(IP-SUB-SPE-3 (/g' $dir/1525.erasmus.nar-sag.psd # .56
 sed -i "" 's/(MDPS muni-muna)/(MDPS muni-munu)/g' $dir/1525.erasmus.nar-sag.psd # .56
 sed -i "" 's/(NP-SBJ \$u-þú)/(NP-SBJ (PRO-N \$u-þú))/g' $dir/1525.erasmus.nar-sag.psd # .88
+sed -i "" 's/(VBN komið\$-koma)/(VBN \$komið-koma)/g' $dir/1525.erasmus.nar-sag.psd # .111
 sed -i "" 's/(RDPS verði-verð)/(RDPS verði-verða)/g' $dir/1525.erasmus.nar-sag.psd # .195
 sed -i "" 's/(MDPI Vilt-vila)/(MDPI Vilt-vilja)/g' $dir/1525.erasmus.nar-sag.psd # .253
 sed -i "" 's/(MDDS mætti-máttur)/(MDDS mætti-mega)/g' $dir/1525.erasmus.nar-sag.psd # .264
