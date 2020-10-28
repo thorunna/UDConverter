@@ -233,6 +233,7 @@ sed -i "" 's/(N-G borg-borg)/(N-G borgar\$-borg)/g' $dir/1540.ntacts.rel-bib.psd
 sed -i "" 's/(NS-D yfirboðuru-yfirboðari)/(NS-D yfirboðuru\$-yfirboðari)/g' $dir/1540.ntacts.rel-bib.psd # 273.1071
 
 # 1540.ntjohn.rel-bib.psd
+sed -i "" 's/(IP-SUB-SPE-PRN=2 (NP-SBJ (D-A þau-sá)/(IP-SUB-SPE-PRN (NP-SBJ (D-A þau-sá)/g' $dir/1540.ntjohn.rel-bib.psd # .374
 sed -i "" 's/(NP-SBJ ekki-ekkert)/(NP-SBJ (Q-N ekki-ekkert))/g' $dir/1540.ntjohn.rel-bib.psd # .414
 sed -i "" 's/(MDDI mættu-mæta)/(MDDI mættu-mega)/g' $dir/1540.ntjohn.rel-bib.psd # .606, .999, .1684
 sed -i "" 's/(NP-SBJ \$tu-þú)/(NP-SBJ (PRO-N \$tu-þú))/g' $dir/1540.ntjohn.rel-bib.psd # .1147, .1148, .1394
