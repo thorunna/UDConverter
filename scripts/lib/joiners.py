@@ -126,6 +126,11 @@ class NodeJoiner():
             # print('\t', index, self.lines[index].strip())
             # print('\t', next, self.lines[next].strip())
             # print()
+            
+            # verb tag found
+            # NOTE: Moved from lower position (see note)
+            verb_tag = re.findall(VERB_TAG, self.lines[index])[0]
+            verb_tag = self._join_tag(verb_tag)
 
             # particles joined
             self.lines[index] = re.sub(PARTICLE_START, re.findall(PARTICLE_TOKEN, self.lines[index])[0], self.lines[index], 1)
@@ -136,10 +141,13 @@ class NodeJoiner():
             # update verb token
             self.lines[index] = re.sub(VERB_START, re.findall(PARTICLE_TOKEN, self.lines[index])[0], self.lines[index])
             # update verb lemma:
-            # verb tag found
-            verb_tag = re.findall(VERB_TAG, self.lines[index])[0]
-            verb_tag = self._join_tag(verb_tag)
+            
+            # NOTE: Moved to front for error fix in 2008.OFSI.NAR-SAG,.158
+            # # verb tag found
+            # verb_tag = re.findall(VERB_TAG, self.lines[index])[0]
+            # verb_tag = self._join_tag(verb_tag)
                 # print(verb_tag)
+            
             # tag used to find new verb token found
             new_verb_token_regex = r'(?<=' + verb_tag + r' )[A-Za-zþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+(?=-)'
             new_verb_token = re.findall(new_verb_token_regex, self.lines[index])[-1]
