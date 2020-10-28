@@ -1297,7 +1297,7 @@ class Converter():
                     FORM = LEMMA = '-'
                     # tag = tag_list[nr]
                 else: # If no lemma present
-                    FORM = t[i]
+                    FORM = decode_escaped(t[i])
                     LEMMA = None
                 tag = tag_list[nr]
                 if '+' in tag:

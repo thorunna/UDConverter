@@ -36,8 +36,8 @@ sed -i "" 's/(DAN \&gört-gera)/(DAN $gört-gera)/g' $dir/1150.homiliubok.rel-se
 
 # 1150.homiliubok.rel-ser.psd
 sed -i "" 's/(CODE </heading>))/(CODE </heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .2
-sed -i "" 's/( (LATIN (FW Assumptio-assumptio) (FW sancte-sancte) (FW Marie-marie))( (LATIN (FW Assumptio-assumptio) (FW sancte-sancte) (FW Marie-marie) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .11
 sed -i "" 's/(CODE </translation>))/(CODE </translation>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .12
+sed -i "" 's/( (LATIN (FW Assumptio-assumptio) (FW sancte-sancte) (FW Marie-marie))/( (LATIN (FW Assumptio-assumptio) (FW sancte-sancte) (FW Marie-marie) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .11
 sed -i "" 's/( (IP-MAT=1/( (IP-MAT-1/g' $dir/1150.homiliubok.rel-ser.psd # .37
 sed -i "" 's/(HVN hafða-hafða)/(HVN hafða-hafa)/g' $dir/1150.homiliubok.rel-ser.psd # .52
 sed -i "" 's/(WADJ hversu-hversu)/(WADV hversu-hversu)/g' $dir/1150.homiliubok.rel-ser.psd # .105
@@ -45,12 +45,12 @@ sed -i "" 's/(MDDS mætti-máttur)/(MDDS mætti-mega)/g' $dir/1150.homiliubok.re
 sed -i "" 's/(IP-SUB=3 (ADJP *T*-7)/(IP-SUB (ADJP *T*-7)/g' $dir/1150.homiliubok.rel-ser.psd # .112
 sed -i "" 's/(MDPS megim-má)/(MDPS megim-mega)/g' $dir/1150.homiliubok.rel-ser.psd # .112
 sed -i "" 's/(MDPI MUN$-MUNU)/(MDPI MUN$-munu)/g' $dir/1150.homiliubok.rel-ser.psd # .155
-sed -i "" 's/(CODE </heading>))/(CODE </heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .137, .389
-sed -i "" 's/(CODE </modern_translation_of_heading>))/(CODE </modern_translation_of_heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .138
-sed -i "" 's/(CODE </translation>))/(CODE </translation>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .390
+sed -i "" 's/(CODE <\/heading>))/(CODE <\/heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .137, .389
+sed -i "" 's/(CODE <\/modern_translation_of_heading>))/(CODE <\/modern_translation_of_heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .138
+sed -i "" 's/(CODE <\/translation>))/(CODE <\/translation>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .390
 sed -i "" 's/(MDDS vildim-vildim)/(MDDS vildim-vilja)/g' $dir/1150.homiliubok.rel-ser.psd # .412
 sed -i "" 's/(WQ (WADV hve-hve) (Q-N mikill-mikill))/(WQP (WADV hve-hve) (Q-N mikill-mikill))/g' $dir/1150.homiliubok.rel-ser.psd # .470
-sed -i "" 's/(CODE </heading>))/(CODE </heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .585, 676, 798
+sed -i "" 's/(CODE <\/heading>))/(CODE <\/heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .585, 676, 798
 sed -i "" 's/(MDPS mætti-máttur)/(MDPS mætti-mega)/g' $dir/1150.homiliubok.rel-ser.psd # .1050
 sed -i "" 's/(FW sermonis-sermonis) (CODE </heading>))/(FW sermonis-sermonis) (CODE </heading>) (. .-.))/g' $dir/1150.homiliubok.rel-ser.psd # .1063
 sed -i "" 's/(VBI \$gef-gefa)/(VBI \$gef\$-gefa)/g' $dir/1150.homiliubok.rel-ser.psd # .1648
@@ -89,6 +89,7 @@ sed -i "" 's/(CP-REL-SPE (WADVP-1 þar-þar)/(CP-REL-SPE (WADVP-1 (WADV þar-þa
 # 1260.jomsvikingar.nar-sag.psd
 sed -i "" 's/) (CONJ og-og) (NPR-N Gull<dash>Haraldur-gullharaldur))/) (CONJP (CONJ og-og) (NPR-N Gull<dash>Haraldur-gullharaldur)))/' $dir/1260.jomsvikingar.nar-sag.psd # .
 sed -i "" 's/(HVDI hatði-hata)/(HVDI hatði-hafa)/' $dir/1260.jomsvikingar.nar-sag.psd # .341
+sed -i "" 's/(NP-SBJ (PRO-N tú-þú))/(NP-SBJ (PRO-N $tú-þú))/' $dir/1260.jomsvikingar.nar-sag.psd # .1233
 sed -i "" 's/(MDPI muna-muna)/(MDPI muna-munu)/' $dir/1260.jomsvikingar.nar-sag.psd # .1459
 
 # 1275.morkin.nar-his.psd
@@ -147,10 +148,10 @@ sed -i "" 's/(WADJP (WADVP Hversu-hversu) (ADJ-N gamall-gamall))/(WADJP (WADV Hv
 
 # 1350.marta.rel-sag.psd
 sed -i "" 's/(NP-SBJ (NRP-N kóngur-kóngur) (FW Regulus-regulus))))/(NP-SBJ (NPR-N kóngur-kóngur) (FW Regulus-regulus))))/g' $dir/1350.marta.rel-sag.psd # .193
-sed -i "" 's/(NP (NPR-D Lasarus-lasarus) (CONJ og-og) (NPR-D Mörtu-marta)))/(NP (NPR-D Lasarus-lasarus) (CONJ og-og) (NPR-D Mörtu-marta))) (. .-.))/g' $dir/1350.marta.rel-sag.psd # .281
+sed -i "" 's/(NP (NPR-D Lasarus-lasarus) (CONJ og-og) (NPR-D Mörtu-marta)))/(NP (NPR-D Lasarus-lasarus) (CONJ og-og) (NPR-D Mörtu-marta))) (. .-.)/g' $dir/1350.marta.rel-sag.psd # .281
 sed -i "" 's/(MDDI mættu-mæta)/(MDDI mættu-mega)/g' $dir/1350.marta.rel-sag.psd # .356
-sed -i "" 's/( (META (NP (FW Capitulum-capitulum))/( (META (NP (FW Capitulum-capitulum)) (. .-.))/g' $dir/1350.marta.rel-sag.psd # .467
-sed -i "" 's/(FW Miraculum-miraculum)/(FW Miraculum-miraculum) (. .-.))/g' $dir/1350.marta.rel-sag.psd # .813, 883, 915, 924, 950, 958
+sed -i "" 's/( (META (NP (FW Capitulum-capitulum))/( (META (NP (FW Capitulum-capitulum)) (. .-.)/g' $dir/1350.marta.rel-sag.psd # .467
+sed -i "" 's/(FW Miraculum-miraculum)/(FW Miraculum-miraculum) (. .-.)/g' $dir/1350.marta.rel-sag.psd # .813, 883, 915, 924, 950, 958
 
 # 1400.gunnar.nar-sag.psd
 sed -i "" 's/Er\$\$-vera/Er\$-vera/g' $dir/1400.gunnar.nar-sag.psd # .82
@@ -173,7 +174,7 @@ sed -i "" 's/(NP (Q+ŃUM-D hvorumtveggjum-hvorumtveggi))))/(NP (Q+NUM-D hvorumtv
 sed -i "" 's/(ADJP-OC/(ADJP-LOC/g' $dir/1450.ectorssaga.nar-sag.psd # .1853
 
 # 1450.judit.rel-bib.psd
-sed -i "" 's/(CODE </heading>))/(CODE </heading>) (. .-.))/g' $dir/1450.judit.rel-bib.psd # .22, 48
+sed -i "" 's/(CODE <\/heading>))/(CODE <\/heading>) (. .-.))/g' $dir/1450.judit.rel-bib.psd # .22, 48
 sed -i "" 's/( (META (NP (ADJ-N 4-fjórir) (FW Kapitulum-kapitulum)))/( (META (NP (ADJ-N 4-fjórir) (FW Kapitulum-kapitulum)) (. .-.))/g' $dir/1450.judit.rel-bib.psd # .65
 
 # 1450.vilhjalmur.nar-sag.psd
@@ -250,7 +251,7 @@ sed -i "" 's/(BEPI s-s))))/(FW s-s))))/' $dir/1611.okur.rel-oth.psd # .11
 sed -i "" 's/(MDDI mættu-mæta)/(MDDI mættu-mega)/' $dir/1611.okur.rel-oth.psd # .45
 sed -i "" 's/(IP-SUB-PRN=4 (CONJ og-og) (BEPS sé-vera))/(IP-SUB-PRN (CONJ og-og) (BEPS sé-vera))/' $dir/1611.okur.rel-oth.psd # .45
 sed -i "" 's/(IP-SUB-PRN=2 (CONJ og-og)/(IP-SUB-PRN (CONJ og-og)/' $dir/1611.okur.rel-oth.psd # .112
-sed -i "" 's/(CODE </heading>))/(CODE </heading>) (. .-.))/' $dir/1611.okur.rel-oth.psd # .124, 125
+sed -i "" 's/(CODE <\/heading>))/(CODE <\/heading>) (. .-.))/' $dir/1611.okur.rel-oth.psd # .124, 125
 sed -i "" 's/(IP-SUB-PRN=8 (ADJ-N þrásamlega-þrásamlegur)/(IP-SUB-PRN (ADJ-N þrásamlega-þrásamlegur)/' $dir/1611.okur.rel-oth.psd # .414
 sed -i "" 's/(WQ (WADV Hvað-hvað) (Q-N margar-margur))/(WQP (WADV Hvað-hvað) (Q-N margar-margur))/' $dir/1611.okur.rel-oth.psd # .524
 sed -i "" 's/(FW et.-et.))/(FW et.-et.) (. .-.))/' $dir/1611.okur.rel-oth.psd # .580
@@ -329,7 +330,7 @@ sed -i "" 's;(N-D ráðleysu-ráðleysi) (CONJ og-og) (N-D hugar<dash/>víli-hug
 sed -i "" 's;(- ---);(- <dash/>-<dash/>);g' $dir/1725.biskupasogur.nar-rel.psd # .12, .24
 sed -i "" 's/(IP-SUB-PRN=4 (CONJ og-og)/(IP-SUB-PRN (CONJ og-og)/g' $dir/1725.biskupasogur.nar-rel.psd # .168
 sed -i "" 's/(NP-SBJ (NPRS-N herra-herra) (NPR-N Guðbrandur-guðbrandur))/(NP-SBJ (NPR-N herra-herra) (NPR-N Guðbrandur-guðbrandur))/g' $dir/1725.biskupasogur.nar-rel.psd # .135
-sed -i "" 's/(FRAG-TTT (FW p.32.2-p.32.2) (CODE </paren>)))/(FRAG-TTT (FW p.32.2-p.32.2) (. .-.)))/g' $dir/1725.biskupasogur.nar-rel.psd # .193
+sed -i "" 's/(FRAG-TTT (FW p.32.2-p.32.2) (CODE <\/paren>)))/(FRAG-TTT (FW p.32.2-p.32.2) (. .-.)))/g' $dir/1725.biskupasogur.nar-rel.psd # .193
 sed -i "" 's/((IP-INF=1 (CONJ eður-eður)/(IP-INF (CONJ eður-eður)/g' $dir/1725.biskupasogur.nar-rel.psd # .376
 sed -i "" 's/(IP-SUB-PRN=2 (CONJ eður-eður)/(IP-SUB-PRN (CONJ eður-eður)/g' $dir/1725.biskupasogur.nar-rel.psd # .412
 sed -i "" 's/(FW offielalis-offielalis))/(FW offielalis-offielalis) (. .-.))/g' $dir/1725.biskupasogur.nar-rel.psd # .533
@@ -443,7 +444,7 @@ sed -i "" 's/	  (NP-SBJ \*con\*)/	  (NP-SBJ )/g' $dir/1888.vordraumur.nar-fic.ps
 sed -i "" 's/(PP (P -))//' $dir/1902.fossar.nar-fic.psd # .879
 sed -i "" 's/(, -)/(, ,-,)/g' $dir/1902.fossar.nar-fic.psd # .92 o.fl.
 sed -i "" 's/(CP-ADV-SPE (C 0) (BREAK 0)))/)/g' $dir/1902.fossar.nar-fic.psd # .123
-sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/1902.fossar.nar-fic.psd # .140, .177
+sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/1902.fossar.nar-fic.psd # .140
 sed -i "" 's/(. -)/(. .-.)/g' $dir/1902.fossar.nar-fic.psd # .510 o.fl.
 sed -i "" 's/(, -----)/(, ,-,)/g' $dir/1902.fossar.nar-fic.psd # .822
 sed -i "" 's/(- -)//g' $dir/1902.fossar.nar-fic.psd # .872 o.fl.
