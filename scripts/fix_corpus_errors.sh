@@ -159,6 +159,7 @@ sed -i "" 's/Leggðu-leggja/Legg\$-leggja/g' $dir/1400.gunnar.nar-sag.psd # .465
 # 1400.viglundur.nar-sag.psd
 sed -i "" 's/( (. .-.))//g' $dir/1400.viglundur.nar-sag.psd # .279
 sed -i "" 's/( (" "-"))//g' $dir/1400.viglundur.nar-sag.psd # .280
+sed -i "" 's/(IP-MAT=1 (VB snúa-snúa)/(IP-MAT (VB snúa-snúa)/g' $dir/1400.viglundur.nar-sag.psd # .747
 
 # 1450.bandamenn.nar-sag.psd
 sed -i "" 's;(NPR-G Skalla<dash/>Grímssonar-skalla<dash/>grímsson);(NP-POS (NPR-G Skalla<dash/>Grímssonar-skalla<dash/>grímsson);g' $dir/1450.bandamenn.nar-sag.psd # 29.205
@@ -464,6 +465,7 @@ sed -i "" 's/(CP-QUE-PRN (CP-QUE=1 (WQ hvort-hvort)/(CP-QUE-PRN (CP-QUE (WQ hvor
 sed -i "" 's/(IP-SUB-PRN=4 (CONJ og-og)/(IP-SUB-PRN (CONJ og-og)/g' $dir/1920.arin.rel-ser.psd # .839
 
 # 1985.margsaga.nar-fic.psd
+sed -i "" 's/(IP-SUB-REP=4 (INTJ já-já)/(IP-SUB-REP (INTJ já-já)/g' $dir/1985.margsaga.nar-fic.psd # .765
 sed -i "" 's/(NP-ADV (D+N-D hinumegin-hinumeginn)/(NP-ADV (N+D-D hinumegin-hinumeginn)/g' $dir/1985.margsaga.nar-fic.psd # .1173
 
 # 1985.sagan.nar-fic.psd
