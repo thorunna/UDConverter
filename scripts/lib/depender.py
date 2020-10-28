@@ -277,7 +277,7 @@ class UniversalDependencyGraph(DependencyGraph):
         text = re.sub(r'\$ ', ' ', text)
         text = re.sub(r' $', '', text)
         # text = re.sub(r' \.', '.', text)
-        text = re.sub(r' ,', ',', text)
+        text = re.sub(r'(?<!:) ,', ',', text)
         return '# text = ' + text
 
     def original_ID_plain_text(self, **kwargs):
