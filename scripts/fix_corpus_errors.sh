@@ -292,6 +292,7 @@ sed -i "" 's/(MDPI vilda-vilda)/(MDPI vilda-vilja)/' $dir/1659.pislarsaga.bio-au
 
 # 1661.indiafari.bio-tra.psd
 sed -i "" 's/(N-N stóð-stóð)/(VBDI stóð-standa)/' $dir/1661.indiafari.bio-tra.psd # .36
+sed -i "" 's/(VAN gripinn\$-grípa))/(VAN \$gripinn-grípa))/' $dir/1661.indiafari.bio-tra.psd # 53.762
 sed -i "" 's/(Q-G hvers-hver) (N-G \$kyns-kyn)/(Q-G hvers\$-hver) (N-G \$kyns-kyn)/' $dir/1661.indiafari.bio-tra.psd # 28.116
 sed -i "" 's/(IP-SUB=1 (NP-SBJ (PRO-N hann-hann))/(IP-SUB (NP-SBJ (PRO-N hann-hann))/' $dir/1661.indiafari.bio-tra.psd # .125
 sed -i "" 's/(IP-SUB=1 (VBN sýnt-sýna)/(IP-SUB (VBN sýnt-sýna)/' $dir/1661.indiafari.bio-tra.psd # .125
