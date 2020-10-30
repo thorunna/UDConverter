@@ -28,7 +28,7 @@
 25	,	,	PUNCT	,	_	24	punct	_	IFD_tag=,
 26	vitur	vitur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	31	xcomp	_	IFD_tag=lkensf
 27	og	og	CCONJ	CONJ	_	26	cc	_	IFD_tag=c
-28	hugspár	hugspár	ADJ	ADJ-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	26	amod	_	IFD_tag=nvfn
+28	hugspár	hugspár	ADJ	ADJ-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	26	amod	_	IFD_tag=nven
 29	af	af	ADP	P	_	30	case	_	IFD_tag=aþ
 30	mörgum	margur	DET	Q-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	31	obl	_	IFD_tag=lvfþsf
 31	haldinn	halda	VERB	VAN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	24	acl:relcl	_	IFD_tag=sþgken
@@ -45,16 +45,16 @@
 # sent_id = 1675.MAGNUS.BIO-OTH,.2
 # X_IDs = 1675.MAGNUS.BIO-OTH,.3 ; 1675.MAGNUS.BIO-OTH,.4
 # text = Hans faðir Jón var Magnússon; sá Magnús var son Þorkels prests Guðbjartssonar, sem lengi hélt Laufásstað í áðurnefndri sveit.
-1	Hans	hann	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	2	nmod:poss	_	IFD_tag=fpkee
+1	Hans	hann	PRON	PRO-G	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	2	nmod:poss	_	IFD_tag=fpken
 2	faðir	faðir	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	nsubj	_	IFD_tag=nken
 3	Jón	jón	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	appos	_	IFD_tag=nken-s
 4	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3eþ
 5	Magnússon	magnússon	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	0	root	_	IFD_tag=nken-s|SpaceAfter=No
 6	;	;	PUNCT	.	_	5	punct	_	IFD_tag=;
-7	sá	sá	DET	D-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	8	det	_	IFD_tag=faken
+7	sá	sá	DET	D-N	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	det	_	IFD_tag=sfg3eþ
 8	Magnús	magnús	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	10	nsubj	_	IFD_tag=nken-s
 9	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	IFD_tag=sfg3eþ
-10	son	son	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	conj	_	OriginalHead=0
+10	son	son	NOUN	N-N	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	5	conj	_	OriginalHead=0
 11	Þorkels	þorkell	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	10	nmod:poss	_	IFD_tag=nkee-s
 12	prests	prestur	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	11	appos	_	IFD_tag=nkee
 13	Guðbjartssonar	guðbjartsson	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	11	dep	_	IFD_tag=nkee-s|SpaceAfter=No
@@ -62,7 +62,7 @@
 15	sem	sem	SCONJ	C	_	17	mark	_	IFD_tag=ct
 16	lengi	lengi	ADV	ADV	_	17	obl	_	IFD_tag=aa
 17	hélt	halda	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	acl:relcl	_	IFD_tag=sfg3eþ
-18	Laufásstað	laufásstaður	PROPN	NPR-A	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	17	obj	_	IFD_tag=nvengs
+18	Laufásstað	laufásstaður	PROPN	NPR-A	Case=Nom|Definite=Ind|Number=Sing	17	obj	_	IFD_tag=nxen-s
 19	í	í	ADP	P	_	21	case	_	IFD_tag=aþ
 20	áðurnefndri	áðurnefndur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	21	amod	_	IFD_tag=lveþsf
 21	sveit	sveit	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	18	obl	_	IFD_tag=nveþ|SpaceAfter=No
@@ -78,9 +78,9 @@
 5	í	í	ADP	P	_	6	case	_	IFD_tag=aþ
 6	Þýskalandi	þýskaland	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	3	obl	_	IFD_tag=nheþ-s
 7	og	og	CCONJ	CONJ	_	9	cc	_	IFD_tag=c
-8	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	IFD_tag=sfg1eþ
+8	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	IFD_tag=sfg3eþ
 9	haldinn	halda	VERB	VAN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	3	conj	_	OriginalHead=0
-10	margkunnandi	margkunnandi	ADJ	ADJ-N	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	9	xcomp	_	IFD_tag=lkenof
+10	margkunnandi	margkunnandi	ADJ	ADJ-N	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	9	xcomp	_	IFD_tag=lhenof
 11	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
 12	fróður	fróður	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	IFD_tag=lkensf|SpaceAfter=No
 13	.	.	PUNCT	.	_	12	punct	_	IFD_tag=.
@@ -96,7 +96,7 @@
 6	Þorkell	þorkell	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	flat:name	_	IFD_tag=nken-s
 7	hafi	hafa	AUX	HVPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	IFD_tag=svg3en
 8	átt	eiga	VERB	VBN	VerbForm=Sup|Voice=Act	1	ccomp	_	IFD_tag=ssg
-9	eina	einn	DET	ONE-A	Case=Acc|Gender=Fem|Number=Sing|NumType=Card	10	det	_	IFD_tag=tfveo
+9	eina	einn	DET	ONE-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	10	det	_	IFD_tag=lveosf
 10	bók	bók	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	8	obj	_	IFD_tag=nveo
 11	sem	sem	SCONJ	C	_	13	mark	_	IFD_tag=ct
 12	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	13	nsubj	_	IFD_tag=fpken
@@ -185,12 +185,12 @@
 13	á	á	ADP	P	_	14	case	_	IFD_tag=ao
 14	bréfið	bréf	NOUN	N-A	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	15	obl	_	IFD_tag=nheog
 15	settur	setja	VERB	VAN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	IFD_tag=sþgken
-16	virðingatitill	virðingatitill	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	15	nsubj	_	IFD_tag=nhen
+16	virðingatitill	virðingatitill	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	15	nsubj	_	IFD_tag=nken
 17	sá	sá	DET	D-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	16	det	_	IFD_tag=faken|SpaceAfter=No
 18	:	:	PUNCT	,	_	17	punct	_	IFD_tag=:
-19	frómum	frómur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	22	amod	_	IFD_tag=nvfþ
+19	frómum	frómur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	22	amod	_	IFD_tag=nkfþ
 20	og	og	CCONJ	CONJ	_	22	cc	_	IFD_tag=c
-21	velrýndum	velrýndur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	22	amod	_	IFD_tag=nvfþ
+21	velrýndum	velrýndur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	22	amod	_	IFD_tag=nhfþ
 22	etc.	etc.	X	FW	_	16	appos	_	IFD_tag=x
 23	En	en	CCONJ	CONJ	_	28	cc	_	IFD_tag=c
 24	þó	þó	ADV	ADV	_	28	advmod	_	IFD_tag=aa
@@ -215,8 +215,8 @@
 43	söfnuði	söfnuður	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	44	obl	_	IFD_tag=nkeþ
 44	vísaði	vísa	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	55	obl	_	IFD_tag=sfg3eþ
 45	aftur	aftur	ADV	ADV	_	44	advmod	_	IFD_tag=aa
-46	burtgripnu	burtgrípa	VERB	VAN-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	47	amod	_	IFD_tag=lheþsf
-47	fé	fé	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	44	obj	_	IFD_tag=nheþ|SpaceAfter=No
+46	burtgripnu	burtgrípa	VERB	VAN-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	47	amod	_	IFD_tag=nheþg
+47	fé	fé	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	44	obj	_	IFD_tag=nheo|SpaceAfter=No
 48	,	,	PUNCT	,	_	55	punct	_	IFD_tag=,
 49	þá	þá	ADV	ADV	_	55	advmod	_	IFD_tag=aa
 50	skyldi	skulu	AUX	MDDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	55	aux	_	IFD_tag=svg3eþ
@@ -288,7 +288,7 @@
 11	rýndur	rýna	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	4	ccomp	_	IFD_tag=lkensf
 12	í	í	ADP	P	_	13	case	_	IFD_tag=aþ
 13	fyrnsku	fyrnska	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	11	obl	_	IFD_tag=nveþ
-14	nokkri	nokkur	DET	Q-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	13	amod	_	IFD_tag=nheþ
+14	nokkri	nokkur	DET	Q-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	13	amod	_	IFD_tag=nkeþ
 15	sem	sem	SCONJ	C	_	18	mark	_	IFD_tag=ct
 16	þá	þá	ADV	ADV	_	18	advmod	_	IFD_tag=aa
 17	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	18	cop	_	IFD_tag=sfg3eþ
@@ -355,7 +355,7 @@
 50	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	51	nsubj	_	IFD_tag=nken
 51	skriftaði	skrifta	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	47	obl	_	IFD_tag=sfg3eþ
 52	og	og	CCONJ	CONJ	_	54	cc	_	IFD_tag=c
-53	lausan	laus	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	54	amod	_	IFD_tag=lkeosf
+53	lausan	laus	ADJ	ADJ-A	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	54	amod	_	IFD_tag=nveng
 54	gaf	gefa	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	51	conj	_	IFD_tag=sfg3eþ
 55	manninn	maður	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	54	obj	_	IFD_tag=nkeog|SpaceAfter=No
 56	.	.	PUNCT	.	_	55	punct	_	IFD_tag=.
@@ -441,13 +441,13 @@
 21	,	,	PUNCT	.	_	20	punct	_	IFD_tag=,
 22	boðaði	boða	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	conj	_	OriginalHead=0
 23	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	22	obl	_	IFD_tag=fpheþ
-24	síra	síra	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	22	obj	_	IFD_tag=nkeo
+24	síra	síra	PROPN	NPR-A	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	22	obj	_	IFD_tag=nkeþ
 25	Þorkel	þorkel	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	24	flat:name	_	IFD_tag=nkeo-s
 26	fyrir	fyrir	ADP	P	_	27	case	_	IFD_tag=ao
 27	sig	sig	PRON	PRO-A	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	22	obl	_	IFD_tag=fpkeo
 28	heim	heim	ADV	ADV	_	30	advmod	_	IFD_tag=aa
 29	til	til	ADP	P	_	30	case	_	IFD_tag=ae
-30	Hólastaðar	hólastaður	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	22	obl	_	IFD_tag=nkee-s|SpaceAfter=No
+30	Hólastaðar	hólastaður	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	22	obl	_	IFD_tag=nvee-s|SpaceAfter=No
 31	.	.	PUNCT	.	_	30	punct	_	IFD_tag=.
 
 # sent_id = 1675.MAGNUS.BIO-OTH,.14
@@ -460,7 +460,7 @@
 5	sannri	sannur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	6	amod	_	IFD_tag=lveþsf
 6	hlýðni	hlýðni	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	2	obl	_	IFD_tag=nveþ
 7	við	við	ADP	P	_	8	case	_	IFD_tag=ao
-8	biskup	biskup	NOUN	N-A	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	6	obl	_	IFD_tag=nken
+8	biskup	biskup	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	6	obl	_	IFD_tag=nkfo
 9	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
 10	kom	koma	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
 11	til	til	ADP	P	_	12	case	_	IFD_tag=ae
@@ -561,8 +561,8 @@
 3	lengi	lengi	ADV	ADV	_	1	obl	_	IFD_tag=aa|SpaceAfter=No
 4	,	,	PUNCT	,	_	3	punct	_	IFD_tag=,
 5	þar	þar	ADV	ADV	_	7	advmod	_	IFD_tag=aa
-6	til	til	ADP	P	_	7	case	_	IFD_tag=ae
-7	leið	líða	VERB	VBDI	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	obl	_	IFD_tag=nven
+6	til	til	ADP	P	_	7	case	_	IFD_tag=aa
+7	leið	líða	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	obl	_	IFD_tag=sfg3eþ
 8	að	að	ADP	P	_	9	case	_	IFD_tag=aþ
 9	miðdagsmáltíðartíma	miðdagsmáltíðartími	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	7	obl	_	IFD_tag=nkeþ|SpaceAfter=No
 10	;	;	PUNCT	.	_	9	punct	_	IFD_tag=;
@@ -570,7 +570,7 @@
 12	kom	koma	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	OriginalHead=0
 13	bryti	bryti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	12	nsubj	_	IFD_tag=nken
 14	og	og	CCONJ	CONJ	_	15	cc	_	IFD_tag=c
-15	sagði	segja	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	OriginalHead=0
+15	sagði	segja	VERB	VBDI	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	OriginalHead=0
 16	að	að	SCONJ	C	_	19	mark	_	IFD_tag=c
 17	dúkur	dúkur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	19	nsubj	_	IFD_tag=nken
 18	væri	vera	AUX	BEDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	19	cop	_	IFD_tag=svg3eþ
@@ -603,7 +603,7 @@
 16	borðs	borð	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	14	obl	_	IFD_tag=nhee
 17	og	og	CCONJ	CONJ	_	18	cc	_	IFD_tag=c
 18	kvað	kveða	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
-19	Þorkel	þorkell	PROPN	NPR-A	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	23	nsubj	_	IFD_tag=nken-s
+19	Þorkel	þorkell	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	23	nsubj	_	IFD_tag=nkeo-s
 20	klerk	klerkur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	19	appos	_	IFD_tag=nkeo
 21	þess	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Prs	23	obl	_	IFD_tag=fphee
 22	ei	ei	ADV	NEG	_	23	advmod	_	IFD_tag=aa
@@ -629,7 +629,7 @@
 42	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	38	obj	_	IFD_tag=nhfþ
 43	slæmum	slæmur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	42	amod	_	IFD_tag=lkfþsf
 44	og	og	CCONJ	CONJ	_	43	cc	_	IFD_tag=c
-45	ógeðfelldum	ógeðfelldur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	43	amod	_	IFD_tag=lkfþsf|SpaceAfter=No
+45	ógeðfelldum	ógeðfelldur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	43	amod	_	IFD_tag=lhfþsf|SpaceAfter=No
 46	.	.	PUNCT	.	_	45	punct	_	IFD_tag=.
 
 # sent_id = 1675.MAGNUS.BIO-OTH,.19
@@ -650,7 +650,7 @@
 12	þú	þú	PRON	PRO-N	_	11	nsubj	_	IFD_tag=x
 13	hann	hann	PRON	PRO-A	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	11	obj	_	IFD_tag=fpkeo|SpaceAfter=No
 14	,	,	PUNCT	,	_	13	punct	_	IFD_tag=,
-15	smellilegur	smellilegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	11	vocative	_	IFD_tag=nken|SpaceAfter=No
+15	smellilegur	smellilegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	11	vocative	_	IFD_tag=lkensf|SpaceAfter=No
 16	!	!	PUNCT	.	_	15	punct	_	IFD_tag=!|SpaceAfter=No
 17	"	"	PUNCT	"	_	16	punct	_	IFD_tag="
 
@@ -700,7 +700,7 @@
 6	vera	vera	AUX	BE	VerbForm=Inf|Voice=Act	4	cop	_	IFD_tag=sng
 7	mundu	munu	AUX	MD	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	IFD_tag=svg3fþ
 8	biskups	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	9	nmod:poss	_	IFD_tag=nkee
-9	andagift	andagift	NOUN	N-A	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	4	nsubj	_	IFD_tag=nven
+9	andagift	andagift	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	4	nsubj	_	IFD_tag=nveo
 10	og	og	CCONJ	CONJ	_	12	cc	_	IFD_tag=c
 11	andlegt	andlegur	ADJ	ADJ-A	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	12	amod	_	IFD_tag=lhensf
 12	vald	vald	NOUN	N-A	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	9	conj	_	IFD_tag=nhen
@@ -719,11 +719,11 @@
 25	;	;	PUNCT	.	_	24	punct	_	IFD_tag=;
 26	kvað	kveða	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
 27	sjálfa	sjálfur	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	26	obj	_	IFD_tag=fbveo
-28	þá	hann	PRON	PRO-A	_	27	nmod	_	IFD_tag=aa
+28	þá	hann	PRON	PRO-A	Case=Acc|Gender=Masc|Number=Plur|PronType=Prs	27	nmod	_	IFD_tag=fpkfo
 29	til	til	ADP	P	_	30	case	_	IFD_tag=ae
 30	vitnis	vitni	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	26	obl	_	IFD_tag=nhee
 31	að	að	SCONJ	C	_	35	mark	_	IFD_tag=c
-32	ei	ei	ADV	NEG	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	35	advmod	_	IFD_tag=nkeo
+32	ei	ei	ADV	NEG	_	35	advmod	_	IFD_tag=aa
 33	væri	vera	AUX	BEDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	35	cop	_	IFD_tag=svg3eþ
 34	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	35	nsubj	_	IFD_tag=fpken
 35	orsök	orsök	NOUN	N-N	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	30	ccomp	_	IFD_tag=nveþ
@@ -738,7 +738,7 @@
 44	slæm	slæmur	ADJ	ADJ-N	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	45	amod	_	IFD_tag=lhfosf
 45	orð	orð	NOUN	NS-N	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	42	nsubj	_	IFD_tag=nhfo
 46	og	og	CCONJ	CONJ	_	47	cc	_	IFD_tag=c
-47	breytni	breytni	NOUN	N-N	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	45	conj	_	IFD_tag=nveo|SpaceAfter=No
+47	breytni	breytni	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	45	conj	_	IFD_tag=nven|SpaceAfter=No
 48	,	,	PUNCT	.	_	47	punct	_	IFD_tag=,
 49	og	og	CCONJ	CONJ	_	54	cc	_	IFD_tag=c
 50	guð	guð	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	54	nsubj	_	IFD_tag=nken
@@ -805,7 +805,7 @@
 20	losa	losa	VERB	VB	VerbForm=Inf|Voice=Act	15	acl	_	IFD_tag=sng
 21	brytann	bryti	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	20	obj	_	IFD_tag=nkeog|SpaceAfter=No
 22	,	,	PUNCT	,	_	21	punct	_	IFD_tag=,
-23	lofandi	lofa	VERB	VAG	VerbForm=Part|Voice=Act	15	advcl	_	IFD_tag=slg
+23	lofandi	lofa	VERB	VAG	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	15	advcl	_	IFD_tag=lkenof
 24	honum	hann	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Prs	23	iobj	_	IFD_tag=fpkeþ
 25	frí	frí	ADJ	ADJ-D	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	26	amod	_	IFD_tag=lhfosf
 26	fararleyfi	fararleyfi	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	23	obj	_	IFD_tag=nhfo
@@ -826,7 +826,7 @@
 7	þú	þú	PRON	PRO-N	_	6	nsubj	_	IFD_tag=x
 8	honum	hann	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Prs	6	obj	_	IFD_tag=fpkeþ|SpaceAfter=No
 9	,	,	PUNCT	,	_	8	punct	_	IFD_tag=,
-10	smellilegur	smellilegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	IFD_tag=lkensf|SpaceAfter=No
+10	smellilegur	smellilegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	6	amod	_	IFD_tag=nken|SpaceAfter=No
 11	!	!	PUNCT	.	_	10	punct	_	IFD_tag=!|SpaceAfter=No
 12	"	"	PUNCT	"	_	11	punct	_	IFD_tag="
 
@@ -844,7 +844,7 @@
 # X_IDs = 1675.MAGNUS.BIO-OTH,.58 ; 1675.MAGNUS.BIO-OTH,.59
 # text = Biskup forærti klerk góðan hest og silfurstaup, og skildu að svo mæltu.
 1	Biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nsubj	_	IFD_tag=nken
-2	forærti	foræra	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
+2	forærti	foræra	VERB	VBDI	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	0	root	_	IFD_tag=nhfn
 3	klerk	klerkur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	iobj	_	IFD_tag=nkeo
 4	góðan	góður	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	IFD_tag=lkeosf
 5	hest	hestur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	obj	_	IFD_tag=nkeo
@@ -886,7 +886,7 @@
 23	um	um	ADP	P	_	24	case	_	IFD_tag=ao
 24	kyrrt	kyrr	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	22	obl	_	IFD_tag=lheosf
 25	í	í	ADP	P	_	27	case	_	IFD_tag=aþ
-26	góðum	góður	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	27	amod	_	IFD_tag=lkfþsf
+26	góðum	góður	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	27	amod	_	IFD_tag=lvfþsf
 27	náðum	náð	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	22	obl	_	IFD_tag=nkfþ|SpaceAfter=No
 28	.	.	PUNCT	.	_	27	punct	_	IFD_tag=.
 
@@ -907,7 +907,7 @@
 12	á	á	ADP	P	_	13	case	_	IFD_tag=ao
 13	biskupinn	biskup	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	11	obl	_	IFD_tag=nkeog
 14	og	og	CCONJ	CONJ	_	15	cc	_	IFD_tag=c
-15	gjörðu	gera	VERB	DODI	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	OriginalHead=0
+15	gjörðu	gera	VERB	DODI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	OriginalHead=0
 16	sér	sig	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Plur|PronType=Prs	15	iobj	_	IFD_tag=fphfþ
 17	kátt	kátur	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	15	obj	_	IFD_tag=lheosf
 18	að	að	ADP	P	_	19	case	_	IFD_tag=aþ
@@ -920,10 +920,10 @@
 1	Nú	nú	ADV	ADV	_	2	advmod	_	IFD_tag=aa
 2	fregnar	fregna	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
 3	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nsubj	_	IFD_tag=nken
-4	umræður	umræða	NOUN	NS-A	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	2	obj	_	IFD_tag=nvfn
+4	umræður	umræða	NOUN	NS-A	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	2	obj	_	IFD_tag=nvee
 5	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	4	nmod:poss	_	IFD_tag=nkfe
 6	um	um	ADP	P	_	7	case	_	IFD_tag=ao
-7	viðskifti	viðskipti	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	12	obl	_	IFD_tag=nkfo
+7	viðskifti	viðskipti	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	12	obl	_	IFD_tag=nheo
 8	þeirra	hún	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Plur|PronType=Prs	7	nmod:poss	_	IFD_tag=fpkfe
 9	Þorkels	þorkelur	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	8	appos	_	IFD_tag=nkee-s
 10	prests	prestur	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	9	appos	_	IFD_tag=nkee
@@ -941,11 +941,11 @@
 22	öngva	enginn	DET	Q-A	Case=Acc|Gender=Masc|Number=Plur|PronType=Ind	21	obj	_	IFD_tag=fokfo
 23	að	að	ADP	P	_	24	case	_	IFD_tag=cn
 24	gamanleikum	gamanleikur	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	21	obl	_	IFD_tag=nvfþ
-25	sínum	sinn	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Plur|PronType=Prs	24	nmod:poss	_	IFD_tag=fevfþ|SpaceAfter=No
+25	sínum	sinn	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Prs	24	nmod:poss	_	IFD_tag=fekfþ|SpaceAfter=No
 26	,	,	PUNCT	,	_	25	punct	_	IFD_tag=,
 27	nær	nær	ADV	ADV	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	advmod	_	IFD_tag=sfg3en
 28	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	31	nsubj	_	IFD_tag=fphen
-29	sig	sig	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	31	obj	_	IFD_tag=fpheo
+29	sig	sig	PRON	PRO-A	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	31	obj	_	IFD_tag=fpkeo
 30	svo	svo	ADV	ADV	_	31	advmod	_	IFD_tag=aa
 31	henti	henda	VERB	VBDI	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	27	advcl	_	IFD_tag=svg3eþ
 32	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	35	nsubj	_	IFD_tag=fpken
@@ -963,7 +963,7 @@
 44	uppfylltist	uppfylla	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Mid	31	acl:relcl	_	IFD_tag=sfm3eþ
 45	heiftar	heift	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	44	obl	_	IFD_tag=nvee
 46	og	og	CCONJ	CONJ	_	45	cc	_	IFD_tag=c
-47	bræði	bræði	NOUN	N-G	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	45	conj	_	IFD_tag=svg3en
+47	bræði	bræði	NOUN	N-G	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	45	conj	_	IFD_tag=nveo
 48	við	við	ADP	P	_	51	case	_	IFD_tag=ao
 49	áður	áður	ADV	ADVR	_	50	advmod	_	IFD_tag=aa
 50	téðan	tjá	VERB	VAN-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	51	acl:relcl	_	IFD_tag=lkeosf
@@ -979,7 +979,7 @@
 60	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	58	nsubj	_	IFD_tag=nken
 61	af	af	ADP	P	_	63	case	_	IFD_tag=aþ
 62	þeirra	hann	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Plur|PronType=Prs	63	nmod:poss	_	IFD_tag=fpkfe
-63	viðskiftum	viðskifti	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	65	obl	_	IFD_tag=nkfþ
+63	viðskiftum	viðskifti	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	65	obl	_	IFD_tag=nhfþ
 64	vera	vera	AUX	BE	VerbForm=Inf|Voice=Act	65	cop	_	IFD_tag=sng
 65	vanhaldinn	vanhaldinn	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	58	acl	_	IFD_tag=lkensf
 66	og	og	CCONJ	CONJ	_	67	cc	_	IFD_tag=c
@@ -1002,7 +1002,7 @@
 83	maktar	makt	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	79	obl	_	IFD_tag=nvee
 84	og	og	CCONJ	CONJ	_	79	cc	_	IFD_tag=c
 85	hegna	hegna	VERB	VB	VerbForm=Inf|Voice=Act	79	dep	_	IFD_tag=sng
-86	klerki	klerkur	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	79	obj	_	IFD_tag=nkeo
+86	klerki	klerkur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	79	obj	_	IFD_tag=nkeþ
 87	fyrir	fyrir	ADP	P	_	90	case	_	IFD_tag=ao
 88	þessa	þessi	DET	D-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	90	det	_	IFD_tag=faveo
 89	sína	sinn	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Prs	90	nmod:poss	_	IFD_tag=feveo
@@ -1071,7 +1071,7 @@
 48	valdi	vald	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	46	conj	_	IFD_tag=nheþ
 49	og	og	CCONJ	CONJ	_	50	cc	_	IFD_tag=c
 50	setja	setja	VERB	VB	VerbForm=Inf|Voice=Act	44	acl	_	IFD_tag=sng
-51	fastan	fastur	ADJ	ADJ-A	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	50	ccomp	_	IFD_tag=nveog
+51	fastan	fastur	ADJ	ADJ-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	50	ccomp	_	IFD_tag=nkeog
 52	og	og	CCONJ	CONJ	_	53	cc	_	IFD_tag=c
 53	flytja	flytja	VERB	VB	VerbForm=Inf|Voice=Act	44	acl	_	IFD_tag=sng
 54	með	með	ADP	P	_	55	case	_	IFD_tag=aþ
@@ -1122,7 +1122,7 @@
 22	þar	þar	ADV	ADV	_	23	advmod	_	IFD_tag=aa
 23	liggur	liggja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	acl:relcl	_	IFD_tag=sfg3en
 24	nær	nær	ADJ	ADJ-N	_	23	amod	_	IFD_tag=aa
-25	við	við	ADP	P	_	26	case	_	IFD_tag=aa
+25	við	við	ADP	P	_	26	case	_	IFD_tag=ao
 26	staðinn	staður	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	24	amod	_	IFD_tag=nkeog|SpaceAfter=No
 27	.	.	PUNCT	.	_	26	punct	_	IFD_tag=.
 
@@ -1143,7 +1143,7 @@
 12	þarkomu	þarkoma	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	9	obl	_	IFD_tag=nveo
 13	biskups	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	12	nmod:poss	_	IFD_tag=nkee|SpaceAfter=No
 14	,	,	PUNCT	,	_	13	punct	_	IFD_tag=,
-15	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	9	obl	_	IFD_tag=fpheþ
+15	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	9	obl	_	IFD_tag=faheþ
 16	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	18	nsubj	_	IFD_tag=fpken
 17	hafði	hafa	AUX	HVDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	18	aux	_	IFD_tag=sfg3eþ
 18	skipað	skipa	VERB	VBN	VerbForm=Sup|Voice=Act	15	ccomp	_	IFD_tag=ssg
@@ -1151,14 +1151,14 @@
 20	kynda	kynda	VERB	VB	VerbForm=Inf|Voice=Act	18	acl	_	IFD_tag=sng
 21	baðstofu	baðstofa	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	20	obj	_	IFD_tag=nveo
 22	vel	vel	ADV	ADV	_	20	advmod	_	IFD_tag=aa
-23	heita	heitur	ADJ	ADJ-A	VerbForm=Inf|Voice=Act	20	amod	_	IFD_tag=sng
+23	heita	heitur	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	20	amod	_	IFD_tag=lveosf
 24	og	og	CCONJ	CONJ	_	25	cc	_	IFD_tag=c
 25	spara	spara	VERB	VB	VerbForm=Inf|Voice=Act	20	acl	_	IFD_tag=sng
-26	ei	ei	ADV	NEG	_	25	advmod	_	IFD_tag=aa
+26	ei	ei	ADV	NEG	Foreign=Yes	25	advmod	_	IFD_tag=e
 27	til	til	ADP	RP	_	25	compound:prt	_	IFD_tag=aa
 28	eldivið	eldiviður	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	25	obj	_	IFD_tag=nkeo|SpaceAfter=No
 29	,	,	PUNCT	,	_	28	punct	_	IFD_tag=,
-30	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	25	obl	_	IFD_tag=fpheþ
+30	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	25	obl	_	IFD_tag=faheþ
 31	hrís	hrís	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	30	xcomp	_	IFD_tag=nhen
 32	væri	vera	AUX	BEDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	31	cop	_	IFD_tag=svg3eþ
 33	nóg	nógur	ADJ	ADJR-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	31	obl	_	IFD_tag=lhensf|SpaceAfter=No
@@ -1208,7 +1208,7 @@
 # text = Stóð þá vindur svo hentuglega sem presti þóknaðist, að þennan reyk lagði með gnístaflugi á veg fyrir biskup með svörtu myrkri og var það tíðlega dags.
 1	Stóð	standa	VERB	VBDI	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1eþ
 2	þá	þá	ADV	ADV	_	1	advmod	_	IFD_tag=aa
-3	vindur	vindur	NOUN	N-N	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	nsubj	_	IFD_tag=sfg3en
+3	vindur	vindur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	nsubj	_	IFD_tag=nken
 4	svo	svo	ADV	ADVR	_	1	advmod	_	IFD_tag=aa
 5	hentuglega	hentuglega	ADV	ADV	_	4	advmod	_	IFD_tag=aa
 6	sem	sem	SCONJ	C	_	8	mark	_	IFD_tag=c
@@ -1231,7 +1231,7 @@
 23	og	og	CCONJ	CONJ	_	25	cc	_	IFD_tag=c
 24	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	25	cop	_	IFD_tag=sfg3eþ
 25	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	1	conj	_	OriginalHead=0
-26	tíðlega	tíðlegur	ADV	ADV	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	25	advmod	_	IFD_tag=lkeovf
+26	tíðlega	tíðlegur	ADV	ADV	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	25	advmod	_	IFD_tag=lhenvf
 27	dags	dagur	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	26	nmod:poss	_	IFD_tag=nkee|SpaceAfter=No
 28	.	.	PUNCT	.	_	27	punct	_	IFD_tag=.
 
@@ -1266,10 +1266,10 @@
 26	skegg	skegg	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	24	conj	_	IFD_tag=nhen
 27	sviðna	sviðna	VERB	VB	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	23	acl	_	IFD_tag=lveosf
 28	af	af	ADP	P	_	29	case	_	IFD_tag=aþ
-29	sér	sig	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Prs	27	obl	_	IFD_tag=fpkeþ
+29	sér	sig	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	27	obl	_	IFD_tag=fpheþ
 30	og	og	CCONJ	CONJ	_	32	cc	_	IFD_tag=c
 31	klæðin	klæði	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	32	nsubj	_	IFD_tag=nhfng
-32	brenna	brenna	VERB	VB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	27	acl	_	IFD_tag=sfg3fn|SpaceAfter=No
+32	brenna	brenna	VERB	VB	VerbForm=Inf|Voice=Act	27	acl	_	IFD_tag=sng|SpaceAfter=No
 33	,	,	PUNCT	.	_	32	punct	_	IFD_tag=,
 34	hestarnir	hestur	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Masc|Number=Plur	35	nsubj	_	IFD_tag=nkfng
 35	fældust	fælda	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Mid	2	conj	_	OriginalHead=0
@@ -1291,7 +1291,7 @@
 51	,	,	PUNCT	,	_	50	punct	_	IFD_tag=,
 52	svo	svo	ADP	P	_	56	case	_	IFD_tag=aa
 53	að	að	SCONJ	C	_	56	mark	_	IFD_tag=c
-54	þeirra	hann	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Plur|PronType=Prs	55	nmod:poss	_	IFD_tag=fpkfe
+54	þeirra	hann	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Plur|PronType=Prs	55	nmod:poss	_	IFD_tag=fphfe
 55	klæði	klæði	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	56	nsubj	_	IFD_tag=nhfn
 56	rifnuðu	rifna	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	42	obl	_	IFD_tag=sfg3fþ
 57	öll	allur	DET	Q-N	Case=Nom|Gender=Neut|Number=Plur|PronType=Ind	56	amod	_	IFD_tag=fohfn
@@ -1366,7 +1366,7 @@
 # sent_id = 1675.MAGNUS.BIO-OTH,.37
 # X_IDs = 1675.MAGNUS.BIO-OTH,.87 ; 1675.MAGNUS.BIO-OTH,.88
 # text = Þá þetta hafði nú lengi varað, gaus á yfirmáta miklu regni og krapahríð, og það gekk lengi dags og fram á nótt.
-1	Þá	þá	ADV	ADV	_	8	advmod	_	IFD_tag=c
+1	Þá	þá	ADV	ADV	_	8	advmod	_	IFD_tag=aa
 2	þetta	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	6	nsubj	_	IFD_tag=fahen
 3	hafði	hafa	AUX	HVDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	IFD_tag=sfg3eþ
 4	nú	nú	ADV	ADV	_	6	advmod	_	IFD_tag=aa
@@ -1439,7 +1439,7 @@
 15	og	og	CCONJ	CONJ	_	17	cc	_	IFD_tag=c
 16	hans	hann	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	17	nmod:poss	_	IFD_tag=fpkee
 17	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	14	conj	_	IFD_tag=nkfþ
-18	kólnaði	kólna	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	obl	_	IFD_tag=sfg3eþ
+18	kólnaði	kólna	VERB	VBDI	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	obl	_	IFD_tag=svg3eþ
 19	mjög	mjög	ADV	ADV	_	18	obl	_	IFD_tag=aa|SpaceAfter=No
 20	.	.	PUNCT	.	_	19	punct	_	IFD_tag=.
 
@@ -1490,8 +1490,8 @@
 20	muni	munu	AUX	MDPS	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	xcomp	_	IFD_tag=svg3fn
 21	eður	eður	CCONJ	CONJ	_	24	cc	_	IFD_tag=c
 22	hverju	hver	PRON	WPRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Ind	24	obj	_	IFD_tag=foheþ
-23	soddan	soddan	PRON	SUCH-N	Case=Dat|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	24	nsubj	_	IFD_tag=lheþvf
-24	gegni	gegna	VERB	VBPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	conj	_	IFD_tag=svg3en|SpaceAfter=No
+23	soddan	soddan	PRON	SUCH-N	Case=Dat|Degree=Pos|Gender=Neut|Number=Sing	24	nsubj	_	IFD_tag=lheþof
+24	gegni	gegna	VERB	VBPS	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	20	conj	_	IFD_tag=nheþ|SpaceAfter=No
 25	,	,	PUNCT	,	_	24	punct	_	IFD_tag=,
 26	þar	þar	ADV	ADV	_	29	advmod	_	IFD_tag=aa
 27	til	til	ADP	P	_	29	case	_	IFD_tag=ae
@@ -1502,7 +1502,7 @@
 32	einn	einn	DET	ONE-A	Case=Acc|Gender=Masc|Number=Sing|NumType=Card	31	appos	_	IFD_tag=tfkeo
 33	og	og	CCONJ	CONJ	_	32	cc	_	IFD_tag=c
 34	einn	einn	DET	ONE-A	Case=Acc|Gender=Masc|Number=Sing|NumType=Card	32	det	_	IFD_tag=tfkeo
-35	hver	hver	PRON	WPRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	37	obj	_	IFD_tag=foken
+35	hver	hver	PRON	WPRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Int	37	obj	_	IFD_tag=fsken
 36	sér	sig	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Prs	37	obj	_	IFD_tag=fpkfþ
 37	kúra	kúra	VERB	VBPI	VerbForm=Inf|Voice=Act	32	acl:relcl	_	IFD_tag=sng
 38	við	við	ADP	P	_	39	case	_	IFD_tag=ao
@@ -1545,7 +1545,7 @@
 1	Þeir	þeir	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Prs	2	nsubj	_	IFD_tag=fpkfn
 2	segja	segja	VERB	VBPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fn
 3	honum	hann	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Prs	2	iobj	_	IFD_tag=fpkeþ
-4	allt	allur	DET	Q-A	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	2	obj	_	IFD_tag=fohen
+4	allt	allur	DET	Q-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Ind	2	obj	_	IFD_tag=foheo
 5	af	af	ADP	P	_	6	case	_	IFD_tag=aþ
 6	létta	létti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	4	obl	_	IFD_tag=nkeþ|SpaceAfter=No
 7	,	,	PUNCT	,	_	6	punct	_	IFD_tag=,
@@ -1578,7 +1578,7 @@
 34	hefði	hafa	AUX	HVDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	35	aux	_	IFD_tag=svg3eþ
 35	ádynjað	ádynja	VERB	VBN	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	16	obl	_	IFD_tag=nheo
 36	með	með	ADP	P	_	37	case	_	IFD_tag=aþ
-37	þokureyk	þokureykur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	35	obl	_	IFD_tag=nveþ
+37	þokureyk	þokureykur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	35	obl	_	IFD_tag=nhfþ
 38	og	og	CCONJ	CONJ	_	37	cc	_	IFD_tag=c
 39	eldglæringum	eldglæringa	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	37	conj	_	IFD_tag=nvfþ|SpaceAfter=No
 40	,	,	PUNCT	,	_	39	punct	_	IFD_tag=,
@@ -1634,7 +1634,7 @@
 16	en	en	CCONJ	CONJ	_	17	cc	_	IFD_tag=c
 17	ei	ei	ADV	NEG	_	4	acl	_	IFD_tag=aa
 18	utan	utan	ADV	ADV	_	17	advmod	_	IFD_tag=aa
-19	lítið	lítill	DET	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	20	amod	_	IFD_tag=lhensf
+19	lítið	lítill	DET	Q-N	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	20	amod	_	IFD_tag=lheosf
 20	döggfall	döggfall	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	17	nsubj	_	IFD_tag=nhen
 21	í	í	ADP	P	_	22	case	_	IFD_tag=ao
 22	nótt	nótt	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	17	obl	_	IFD_tag=nveo|SpaceAfter=No
@@ -1651,7 +1651,7 @@
 6	ekki	ekki	ADV	NEG	_	5	advmod	_	IFD_tag=aa
 7	lengra	langt	ADV	ADVR	Degree=Cmp	5	obl	_	IFD_tag=aam
 8	í	í	ADP	P	_	9	case	_	IFD_tag=aþ
-9	millum	millum	ADP	P	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	5	obl	_	IFD_tag=nvfþ|SpaceAfter=No
+9	millum	millum	ADP	P	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	5	obl	_	IFD_tag=nkfþ|SpaceAfter=No
 10	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
 
 # sent_id = 1675.MAGNUS.BIO-OTH,.47
@@ -1691,7 +1691,7 @@
 2	svaraði	svara	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
 3	smalamaður	smalamaður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nsubj	_	IFD_tag=nken
 4	að	að	SCONJ	C	_	6	mark	_	IFD_tag=cn
-5	ei	ei	ADV	NEG	_	6	advmod	_	IFD_tag=aa
+5	ei	ei	ADV	NEG	Foreign=Yes	6	advmod	_	IFD_tag=e
 6	mundi	munu	AUX	MDDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	IFD_tag=svg3eþ
 7	óráðlegt	óráðlegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	6	amod	_	IFD_tag=lhensf
 8	að	að	PART	TO	_	9	mark	_	IFD_tag=cn
@@ -1711,7 +1711,7 @@
 22	þeir	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Prs	24	nsubj	_	IFD_tag=fpkfn
 23	mættu	mega	AUX	MDDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	aux	_	IFD_tag=svg3fþ
 24	leita	leita	VERB	VB	VerbForm=Inf|Voice=Act	2	obl	_	IFD_tag=sng
-25	hann	hann	PRON	PRO-A	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	24	obj	_	IFD_tag=fpken
+25	hann	hann	PRON	PRO-A	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	24	obj	_	IFD_tag=fpkeo
 26	upp	upp	ADP	RP	_	24	compound:prt	_	IFD_tag=aa
 27	og	og	CCONJ	CONJ	_	24	cc	_	IFD_tag=c
 28	vísa	vísa	VERB	VB	VerbForm=Inf|Voice=Act	24	dep	_	IFD_tag=sng
@@ -1780,7 +1780,7 @@
 32	,	,	PUNCT	.	_	31	punct	_	IFD_tag=,
 33	og	og	CCONJ	CONJ	_	34	cc	_	IFD_tag=c
 34	kvað	kveða	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
-35	þá	hann	PRON	PRO-A	_	34	obj	_	IFD_tag=aa
+35	þá	hann	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	34	obj	_	IFD_tag=faveo
 36	hjúkrunar	hjúkrun	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	39	obj	_	IFD_tag=nvee
 37	mundu	munu	AUX	MD	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	39	aux	_	IFD_tag=svg3fþ
 38	við	við	ADP	RP	_	39	compound:prt	_	IFD_tag=aa
@@ -1843,8 +1843,8 @@
 3	nú	nú	ADV	ADV	_	1	advmod	_	IFD_tag=aa
 4	líkindi	líkindi	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	1	obj	_	IFD_tag=nhfo
 5	til	til	ADP	P	_	6	case	_	IFD_tag=ae
-6	alls	allur	DET	Q-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Ind	1	obl	_	IFD_tag=fohee
-7	þessa	þessi	DET	D-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	6	det	_	IFD_tag=fahee
+6	alls	allur	DET	Q-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Ind	1	obl	_	IFD_tag=fokee
+7	þessa	þessi	DET	D-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	6	det	_	IFD_tag=fakee
 8	sem	sem	SCONJ	C	_	12	mark	_	IFD_tag=ct
 9	smalamaður	smalamaður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	12	nsubj	_	IFD_tag=nken
 10	hafði	hafa	AUX	HVDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	aux	_	IFD_tag=sfg3eþ
@@ -1871,7 +1871,7 @@
 31	hverju	hver	PRON	WPRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Int	34	obj	_	IFD_tag=fsheþ
 32	þeir	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Prs	34	nsubj	_	IFD_tag=fpkfn
 33	nú	nú	ADV	ADV	_	34	advmod	_	IFD_tag=aa
-34	samansöfnuðu	samansafna	VERB	VBDI	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	29	acl:relcl	_	IFD_tag=lheþsf|SpaceAfter=No
+34	samansöfnuðu	samansafna	VERB	VBDI	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	29	acl:relcl	_	IFD_tag=lkfnvf|SpaceAfter=No
 35	.	.	PUNCT	.	_	34	punct	_	IFD_tag=.
 
 # sent_id = 1675.MAGNUS.BIO-OTH,.52
@@ -1918,8 +1918,8 @@
 7	á	á	ADP	P	_	8	case	_	IFD_tag=ao
 8	hestbak	hestbak	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	5	obl	_	IFD_tag=nheo
 9	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
-10	flytja	flytja	VERB	VBPI	VerbForm=Inf|Voice=Act	5	acl	_	IFD_tag=sng
-11	þá	hann	PRON	PRO-A	Case=Acc|Gender=Masc|Number=Plur|PronType=Prs	10	obj	_	IFD_tag=fpkfo
+10	flytja	flytja	VERB	VBPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl	_	IFD_tag=sfg3fn
+11	þá	hann	PRON	PRO-A	_	10	obj	_	IFD_tag=aa
 12	svo	svo	ADV	ADV	_	10	advmod	_	IFD_tag=aa
 13	heim	heim	ADV	ADV	_	15	advmod	_	IFD_tag=aa
 14	til	til	ADP	P	_	15	case	_	IFD_tag=ae
@@ -1939,7 +1939,7 @@
 28	ágæt	ágætur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	29	amod	_	IFD_tag=lvensf
 29	aðhjúkrun	aðhjúkrun	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	19	obj	_	IFD_tag=nven
 30	veitt	veita	VERB	VAN	Case=Nom|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Act	19	ccomp	_	IFD_tag=sþgven
-31	eftir	eftir	ADP	P	_	32	case	_	IFD_tag=aþ
+31	eftir	eftir	ADP	P	_	32	case	_	IFD_tag=ao
 32	skipan	skipan	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	19	obl	_	IFD_tag=nveþ
 33	prestsins	prestur	NOUN	N-G	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	32	nmod:poss	_	IFD_tag=nkeeg|SpaceAfter=No
 34	.	.	PUNCT	.	_	33	punct	_	IFD_tag=.
@@ -1971,8 +1971,8 @@
 9	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
 10	sýnist	sýna	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	2	conj	_	OriginalHead=0
 11	atkvæði	atkvæði	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	10	obj	_	IFD_tag=nhfn
-12	að	að	ADP	P	_	13	case	_	IFD_tag=aþ
-13	kost	kostur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	10	obl	_	IFD_tag=nkeþ
+12	að	að	ADP	P	_	13	case	_	IFD_tag=c
+13	kost	kostur	NOUN	N-D	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	10	obl	_	IFD_tag=nkfe
 14	og	og	CCONJ	CONJ	_	13	cc	_	IFD_tag=c
 15	gæðum	gæði	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	13	conj	_	IFD_tag=nhfþ|SpaceAfter=No
 16	,	,	PUNCT	.	_	15	punct	_	IFD_tag=,
@@ -2019,7 +2019,7 @@
 9	í	í	ADP	P	_	10	case	_	IFD_tag=aþ
 10	skóginum	skógur	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	8	obl	_	IFD_tag=nkeþg
 11	sem	sem	SCONJ	C	_	12	mark	_	IFD_tag=c
-12	ýlfur	ýlfur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	8	obj	_	IFD_tag=nheo
+12	ýlfur	ýlfur	NOUN	N-A	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	8	obj	_	IFD_tag=nhen
 13	eða	eða	CCONJ	CONJ	_	14	cc	_	IFD_tag=c
 14	vein	vein	NOUN	N-A	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	12	conj	_	IFD_tag=nhen
 15	nokkuð	nokkur	DET	Q-A	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	14	amod	_	IFD_tag=fohen|SpaceAfter=No
@@ -2043,11 +2043,11 @@
 33	eik	eik	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	30	obl	_	IFD_tag=nveþ
 34	einhvern	einhver	DET	Q-A	Case=Acc|Gender=Masc|Number=Sing|PronType=Ind	35	amod	_	IFD_tag=fokeo
 35	mann	maður	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	38	nsubj	_	IFD_tag=nkeo
-36	sig	sig	PRON	PRO-A	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	38	iobj	_	IFD_tag=fpkeo
+36	sig	sig	PRON	PRO-A	Case=Acc|Gender=Masc|Number=Plur|PronType=Prs	38	iobj	_	IFD_tag=fpkfo
 37	aumlega	aumlega	ADV	ADV	_	38	advmod	_	IFD_tag=aa
 38	klaga	klaga	VERB	VB	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	30	acl	_	IFD_tag=nven|SpaceAfter=No
 39	,	,	PUNCT	,	_	38	punct	_	IFD_tag=,
-40	hvað	hvað	ADV	WADV	Case=Nom|Gender=Neut|Number=Sing|PronType=Int	41	advmod	_	IFD_tag=fshen
+40	hvað	hvað	ADV	WADV	Case=Acc|Gender=Neut|Number=Sing|PronType=Int	41	advmod	_	IFD_tag=fsheo
 41	ólukkusamur	ólukkusamur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	42	amod	_	IFD_tag=lkensf
 42	maður	maður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	45	obj	_	IFD_tag=nken
 43	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	45	nsubj	_	IFD_tag=fpken
@@ -2097,16 +2097,16 @@
 87	vesöld	vesöld	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	83	conj	_	IFD_tag=nveþ|SpaceAfter=No
 88	,	,	PUNCT	.	_	87	punct	_	IFD_tag=,
 89	og	og	CCONJ	CONJ	_	90	cc	_	IFD_tag=c
-90	kvaðst	kveðast	VERB	VBDI	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Mid	1	conj	_	OriginalHead=0
+90	kvaðst	kveðast	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Mid	1	conj	_	OriginalHead=0
 91	ei	ei	ADV	NEG	_	94	advmod	_	IFD_tag=aa
-92	annað	annar	PRON	OTHER-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Ind	94	obj	_	IFD_tag=foheo
+92	annað	annar	PRON	OTHER-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	94	obj	_	IFD_tag=lheosf
 93	vissara	viss	ADJ	ADJR-A	Case=Nom|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	92	amod	_	IFD_tag=lhenvm
 94	sjá	sjá	VERB	VB	VerbForm=Inf|Voice=Act	90	acl	_	IFD_tag=sng
 95	fyrir	fyrir	ADP	P	_	97	case	_	IFD_tag=aþ
 96	sínum	sinn	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Plur|PronType=Prs	97	nmod:poss	_	IFD_tag=fehfþ
 97	augum	auga	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	94	obl	_	IFD_tag=nhfþ|SpaceAfter=No
 98	;	;	PUNCT	.	_	97	punct	_	IFD_tag=;
-99	vildi	vilja	AUX	MDDS	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	103	aux	_	IFD_tag=sfg3eþ
+99	vildi	vilja	AUX	MDDS	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	103	aux	_	IFD_tag=sfg1eþ
 100	nú	nú	ADV	ADV	_	103	advmod	_	IFD_tag=aa
 101	þar	þar	ADV	ADV	_	103	obl	_	IFD_tag=aa
 102	fyrir	fyrir	ADP	P	_	101	case	_	IFD_tag=aa
@@ -2125,12 +2125,12 @@
 115	,	,	PUNCT	,	_	114	punct	_	IFD_tag=,
 116	í	í	ADP	P	_	117	case	_	IFD_tag=ao
 117	bland	bland	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	120	obl	_	IFD_tag=nheo
-118	hverra	hver	PRON	WPRO-G	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	117	obj	_	IFD_tag=foken
+118	hverra	hver	PRON	WPRO-G	Case=Gen|Gender=Masc|Number=Plur|PronType=Int	117	obj	_	IFD_tag=fskfe
 119	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	120	nsubj	_	IFD_tag=fpken
-120	framtaldi	framtelja	VERB	VBDI	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	114	acl:relcl	_	IFD_tag=nheþ
+120	framtaldi	framtelja	VERB	VBDI	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	114	acl:relcl	_	IFD_tag=nken
 121	og	og	CCONJ	CONJ	_	122	cc	_	IFD_tag=c
 122	meðkenndi	meðkenna	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	OriginalHead=0
-123	sig	sig	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Prs	122	obj	_	IFD_tag=fpveo
+123	sig	sig	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	122	obj	_	IFD_tag=fpheo
 124	að	að	PART	TO	_	126	mark	_	IFD_tag=c
 125	hafa	hafa	AUX	HV	VerbForm=Inf|Voice=Act	126	aux	_	IFD_tag=sng
 126	drýgt	drýga	VERB	VBN	VerbForm=Sup|Voice=Act	122	acl	_	IFD_tag=ssg
@@ -2157,7 +2157,7 @@
 147	guðs	guð	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	148	nmod:poss	_	IFD_tag=nkee
 148	ástvin	ástvinur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	144	obj	_	IFD_tag=nkeo
 149	og	og	CCONJ	CONJ	_	150	cc	_	IFD_tag=c
-150	þénara	þénari	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	148	conj	_	IFD_tag=nkfo|SpaceAfter=No
+150	þénara	þénari	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	148	conj	_	IFD_tag=nkeo|SpaceAfter=No
 151	,	,	PUNCT	,	_	150	punct	_	IFD_tag=,
 152	síra	síra	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	148	appos	_	IFD_tag=nkeo
 153	Þorkel	þorkel	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	152	flat:name	_	IFD_tag=nkeo-s
@@ -2198,7 +2198,7 @@
 188	væri	vera	AUX	BEDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	196	cop	_	IFD_tag=svg3eþ
 189	hataður	hata	VERB	VAN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	196	ccomp	_	IFD_tag=sþgken|SpaceAfter=No
 190	,	,	PUNCT	,	_	189	punct	_	IFD_tag=,
-191	ofsóttur	ofsækja	VERB	VAN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	189	xcomp	_	IFD_tag=sþgken
+191	ofsóttur	ofsækja	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	189	xcomp	_	IFD_tag=lkensf
 192	og	og	CCONJ	CONJ	_	189	cc	_	IFD_tag=c
 193	baktalaður	baktala	VERB	VAN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	189	xcomp	_	IFD_tag=sþgken
 194	af	af	ADP	P	_	196	case	_	IFD_tag=aþ
@@ -2253,8 +2253,8 @@
 22	á	á	ADP	P	_	23	case	_	IFD_tag=ao
 23	Hólastað	hólastaður	PROPN	NPR-D	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	19	obl	_	IFD_tag=nkeo-s|SpaceAfter=No
 24	,	,	PUNCT	,	_	23	punct	_	IFD_tag=,
-25	þá	þá	ADV	ADV	_	17	advmod	_	IFD_tag=aa
-26	síra	síra	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	29	nsubj	_	IFD_tag=nken
+25	þá	þá	ADV	ADV	Case=Acc|Gender=Masc|Number=Plur|PronType=Dem	17	advmod	_	IFD_tag=fakfo
+26	síra	síra	PROPN	NPR-N	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	29	nsubj	_	IFD_tag=nkeo
 27	Þorkell	þorkell	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	26	flat:name	_	IFD_tag=nken-s
 28	þangað	þangað	ADV	ADV	_	29	advmod	_	IFD_tag=aa
 29	kom	koma	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	25	advcl	_	IFD_tag=sfg3eþ
@@ -2278,7 +2278,7 @@
 47	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	6	conj	_	OriginalHead=0
 48	með	með	ADP	P	_	49	case	_	IFD_tag=aþ
 49	hógværð	hógværð	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	47	obl	_	IFD_tag=nveþ
-50	svarað	svara	VERB	VBN	Case=Acc|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	47	dep	_	IFD_tag=sþgheo
+50	svarað	svara	VERB	VBN	VerbForm=Sup|Voice=Act	47	dep	_	IFD_tag=ssg
 51	og	og	CCONJ	CONJ	_	50	cc	_	IFD_tag=c
 52	afsakað	afsaka	VERB	VBN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	50	dep	_	IFD_tag=sþghen|SpaceAfter=No
 53	,	,	PUNCT	,	_	52	punct	_	IFD_tag=,
@@ -2330,7 +2330,7 @@
 99	hendur	hönd	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	96	obl	_	IFD_tag=nvfo|SpaceAfter=No
 100	,	,	PUNCT	.	_	99	punct	_	IFD_tag=,
 101	Í	í	ADP	P	_	103	case	_	IFD_tag=ao
-102	þriðja	þriðji	ADJ	ADJ-D	Case=Dat|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	103	amod	_	IFD_tag=lkeþvf
+102	þriðja	þriðji	ADJ	ADJ-D	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	103	amod	_	IFD_tag=lkeovf
 103	máta	máti	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	104	obl	_	IFD_tag=nkeo
 104	játar	játa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	OriginalHead=0
 105	nú	nú	ADV	ADV	_	104	advmod	_	IFD_tag=aa
@@ -2370,7 +2370,7 @@
 139	biður	biðja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	OriginalHead=0
 140	nú	nú	ADV	ADV	_	139	advmod	_	IFD_tag=aa
 141	guð	guð	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	139	iobj	_	IFD_tag=nkeo
-142	innilega	innilega	ADV	ADV	Case=Gen|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	139	advmod	_	IFD_tag=lheevf
+142	innilega	innilega	ADV	ADV	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	139	advmod	_	IFD_tag=lveosf
 143	fyrirgefningar	fyrirgefning	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	139	nmod:poss	_	IFD_tag=nvee|SpaceAfter=No
 144	,	,	PUNCT	.	_	143	punct	_	IFD_tag=,
 145	les	lesa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	OriginalHead=0
@@ -2406,18 +2406,18 @@
 9	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	8	nsubj	_	IFD_tag=fpken
 10	þar	þar	ADV	ADV	_	8	obl	_	IFD_tag=aa
 11	að	að	ADP	P	_	10	case	_	IFD_tag=c
-12	sem	sem	SCONJ	C	_	14	mark	_	IFD_tag=c
+12	sem	sem	SCONJ	C	_	14	mark	_	IFD_tag=ct
 13	biskupinn	biskup	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	14	nsubj	_	IFD_tag=nkeng
 14	liggur	liggja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	acl:relcl	_	IFD_tag=sfg3en
 15	undir	undir	ADP	P	_	17	case	_	IFD_tag=aþ
 16	einni	einn	DET	ONE-D	Case=Dat|Gender=Fem|Number=Sing|NumType=Card	17	det	_	IFD_tag=tfveþ
 17	eik	eik	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	14	obl	_	IFD_tag=nveþ
 18	í	í	ADP	P	_	20	case	_	IFD_tag=aa
-19	einu	einn	DET	ONE-D	Case=Dat|Gender=Neut|Number=Sing|NumType=Card	20	det	_	IFD_tag=tfheþ
+19	einu	einn	DET	ONE-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	20	det	_	IFD_tag=lheþsf
 20	moldarflagi	moldarflag	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	14	obl	_	IFD_tag=nheþ|SpaceAfter=No
 21	,	,	PUNCT	,	_	20	punct	_	IFD_tag=,
 22	allur	allur	DET	Q-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	23	nsubj	_	IFD_tag=foken
-23	rifinn	rífa	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	14	advcl	_	IFD_tag=lkensf
+23	rifinn	rífa	VERB	VAN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	14	advcl	_	IFD_tag=sþgken
 24	í	í	ADP	P	_	25	case	_	IFD_tag=aa
 25	andliti	andlit	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	23	obl	_	IFD_tag=nheþ
 26	af	af	ADP	P	_	28	case	_	IFD_tag=aþ
@@ -2433,12 +2433,12 @@
 36	þrengt	þrengja	VERB	VBN	VerbForm=Sup|Voice=Act	28	acl:relcl	_	IFD_tag=ssg|SpaceAfter=No
 37	,	,	PUNCT	,	_	36	punct	_	IFD_tag=,
 38	og	og	CCONJ	CONJ	_	43	cc	_	IFD_tag=c
-39	klæðin	klæði	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	43	nsubj	_	IFD_tag=nhfng
+39	klæðin	klæði	NOUN	NS-N	Case=Acc|Definite=Def|Gender=Neut|Number=Plur	43	nsubj	_	IFD_tag=nhfog
 40	öll	allur	DET	Q-N	Case=Nom|Gender=Neut|Number=Plur|PronType=Ind	39	amod	_	IFD_tag=fohfn
 41	í	í	ADP	P	_	42	case	_	IFD_tag=aa
 42	sundur	sundur	ADV	ADV	_	43	obl	_	IFD_tag=aa
-43	rifin	rífa	VERB	VAN	Case=Nom|Gender=Neut|Number=Plur|VerbForm=Part|Voice=Act	23	advcl	_	IFD_tag=sþghfn
-44	á	á	ADP	P	_	46	case	_	IFD_tag=ao
+43	rifin	rífa	VERB	VAN	Case=Acc|Definite=Def|Gender=Neut|Number=Plur	23	advcl	_	IFD_tag=nhfog
+44	á	á	ADP	P	_	46	case	_	IFD_tag=aþ
 45	hans	hann	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	46	nmod:poss	_	IFD_tag=fpkee
 46	líkama	líkami	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	43	obl	_	IFD_tag=nkeo|SpaceAfter=No
 47	.	.	PUNCT	.	_	46	punct	_	IFD_tag=.
@@ -2466,7 +2466,7 @@
 18	allur	allur	DET	Q-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	21	nsubj	_	IFD_tag=foken
 19	í	í	ADP	P	_	20	case	_	IFD_tag=aþ
 20	saur	saur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	21	obl	_	IFD_tag=nkeþ
-21	kvolaður	kvola	VERB	VAN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	8	conj	_	IFD_tag=sþgken|SpaceAfter=No
+21	kvolaður	kvola	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	8	conj	_	IFD_tag=lkensf|SpaceAfter=No
 22	,	,	PUNCT	,	_	21	punct	_	IFD_tag=,
 23	svo	svo	ADP	P	_	25	case	_	IFD_tag=aa
 24	varla	varla	ADV	ADV	_	25	advmod	_	IFD_tag=aa
@@ -2519,7 +2519,7 @@
 14	sé	vera	AUX	BEPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	IFD_tag=svg3en
 15	biskupstignin	biskupstign	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	17	nsubj	_	IFD_tag=nveng
 16	nokkuð	nokkur	DET	Q-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	17	obl	_	IFD_tag=fohen
-17	lægð	lægja	VERB	VAN	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	10	obl	_	IFD_tag=nven|SpaceAfter=No
+17	lægð	lægja	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	10	obl	_	IFD_tag=lvensf|SpaceAfter=No
 18	.	.	PUNCT	.	_	17	punct	_	IFD_tag=.
 
 # sent_id = 1675.MAGNUS.BIO-OTH,.62
@@ -2530,8 +2530,8 @@
 3	spyr	spyrja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
 4	hverju	hver	PRON	WPRO-N	Case=Dat|Gender=Neut|Number=Sing|PronType=Ind	5	obj	_	IFD_tag=foheþ
 5	sæti	sæta	VERB	VBPS	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	3	ccomp	_	IFD_tag=nheo
-6	að	að	SCONJ	C	_	13	mark	_	IFD_tag=c
-7	sinn	sinn	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	9	nmod:poss	_	IFD_tag=feken
+6	að	að	SCONJ	C	_	13	mark	_	IFD_tag=ao
+7	sinn	sinn	PRON	PRO-N	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	9	nmod:poss	_	IFD_tag=fekeo
 8	andlegi	andlegur	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	9	amod	_	IFD_tag=lkenvf
 9	faðir	faðir	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	13	nsubj	_	IFD_tag=nken
 10	skuli	skulu	AUX	MDPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	IFD_tag=svg3en
@@ -2543,18 +2543,18 @@
 16	sig	sig	PRON	PRO-A	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	17	obl	_	IFD_tag=fpkeo
 17	kominn	koma	VERB	VBN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	13	advcl	_	IFD_tag=sþgken|SpaceAfter=No
 18	,	,	PUNCT	,	_	17	punct	_	IFD_tag=,
-19	klagandi	klaga	VERB	VAG	VerbForm=Part|Voice=Act	17	advcl	_	IFD_tag=slg
-20	meðaukunarlega	meðaukunarlega	ADV	ADV	_	19	advmod	_	IFD_tag=aa
+19	klagandi	klaga	VERB	VAG	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	17	advcl	_	IFD_tag=nken
+20	meðaukunarlega	meðaukunarlega	ADV	ADV	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	19	advmod	_	IFD_tag=nkfe
 21	yfir	yfir	ADP	P	_	25	case	_	IFD_tag=aþ
 22	óstöðugu	óstöðugur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	25	amod	_	IFD_tag=lheþsf
 23	lukkunnar	lukka	NOUN	N-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	25	nmod:poss	_	IFD_tag=nveeg
 24	fallvöltu	fallvaltur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	25	amod	_	IFD_tag=lheþsf
 25	hjóli	hjól	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	19	obl	_	IFD_tag=nheþ
 26	og	og	CCONJ	CONJ	_	28	cc	_	IFD_tag=c
-27	þess	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	28	nmod:poss	_	IFD_tag=fahee
+27	þess	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Prs	28	nmod:poss	_	IFD_tag=fphee
 28	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	25	conj	_	IFD_tag=nheþ|SpaceAfter=No
 29	,	,	PUNCT	,	_	28	punct	_	IFD_tag=,
-30	gjörandi	gjöra	VERB	DAG	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	17	advcl	_	IFD_tag=nkeþ
+30	gjörandi	gjöra	VERB	DAG	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	17	advcl	_	IFD_tag=nken
 31	öngvan	enginn	DET	Q-A	Case=Acc|Gender=Masc|Number=Sing|PronType=Ind	32	amod	_	IFD_tag=fokeo
 32	greinarmun	greinarmunur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	30	obj	_	IFD_tag=nkeo
 33	á	á	ADP	P	_	35	case	_	IFD_tag=aþ
@@ -2571,7 +2571,7 @@
 44	og	og	CCONJ	CONJ	_	43	cc	_	IFD_tag=c
 45	fátækra	fátækur	ADJ	ADJ-G	Case=Gen|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	43	amod	_	IFD_tag=lkfesf|SpaceAfter=No
 46	,	,	PUNCT	,	_	47	punct	_	IFD_tag=,
-47	andlegra	andlegur	ADJ	ADJ-G	Case=Nom|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	35	conj	_	IFD_tag=lhenvm
+47	andlegra	andlegur	ADJ	ADJ-G	Case=Gen|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	35	conj	_	IFD_tag=lkfesf
 48	eður	eður	CCONJ	CONJ	_	47	cc	_	IFD_tag=c
 49	veraldlegra	veraldlegur	ADJ	ADJ-G	Case=Nom|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	47	amod	_	IFD_tag=lhenvm|SpaceAfter=No
 50	.	.	PUNCT	.	_	49	punct	_	IFD_tag=.
@@ -2582,7 +2582,7 @@
 1	Já	já	INTJ	INTJ	_	2	discourse	_	IFD_tag=au
 2	það	sá	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	0	root	_	IFD_tag=fahen
 3	sem	sem	SCONJ	C	_	4	mark	_	IFD_tag=ct
-4	forundrunarlegast	forundrunarlegur	ADJ	ADJS-N	Case=Nom|Definite=Ind|Degree=Sup|Gender=Neut|Number=Sing	2	acl:relcl	_	IFD_tag=lhense
+4	forundrunarlegast	forundrunarlegur	ADJ	ADJS-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	2	acl:relcl	_	IFD_tag=nhen
 5	væri	vera	AUX	BEDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=svg3eþ|SpaceAfter=No
 6	,	,	PUNCT	.	_	5	punct	_	IFD_tag=,
 7	kirkjunnar	kirkja	NOUN	N-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	8	nmod:poss	_	IFD_tag=nveeg
@@ -2616,12 +2616,12 @@
 35	svo	svo	ADV	ADV	_	33	advmod	_	IFD_tag=aa
 36	upp	upp	ADP	RP	_	38	compound:prt	_	IFD_tag=aa
 37	úr	úr	ADP	P	_	38	case	_	IFD_tag=aþ
-38	saurnum	saur	NOUN	NS-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	33	obl	_	IFD_tag=nkeþg
+38	saurnum	saur	NOUN	NS-D	Case=Dat|Definite=Def|Gender=Masc|Number=Plur	33	obl	_	IFD_tag=nkfþg
 39	með	með	ADP	P	_	41	case	_	IFD_tag=aþ
 40	stórri	stór	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	41	amod	_	IFD_tag=lveþsf
 41	harmaklögun	harmaklögun	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	33	obl	_	IFD_tag=nveþ|SpaceAfter=No
 42	,	,	PUNCT	,	_	41	punct	_	IFD_tag=,
-43	þakkandi	þakka	VERB	VAG	VerbForm=Part|Voice=Act	33	advcl	_	IFD_tag=slg
+43	þakkandi	þakka	VERB	VAG	Case=Dat|Degree=Pos|Gender=Masc|Number=Sing	33	advcl	_	IFD_tag=lkeþof
 44	guði	guð	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	43	iobj	_	IFD_tag=nkeþ
 45	þá	þá	DET	D-A	_	46	det	_	IFD_tag=aa
 46	náð	náð	NOUN	N-A	VerbForm=Sup|Voice=Act	43	obj	_	IFD_tag=ssg
@@ -2638,7 +2638,7 @@
 57	þeirrar	sá	DET	D-G	Case=Gen|Gender=Fem|Number=Sing|PronType=Dem	58	det	_	IFD_tag=favee
 58	æru	æra	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	56	obj	_	IFD_tag=nvee
 59	og	og	CCONJ	CONJ	_	61	cc	_	IFD_tag=c
-60	mega	mega	AUX	MD	VerbForm=Inf|Voice=Act	61	aux	_	IFD_tag=sng
+60	mega	mega	AUX	MD	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	61	aux	_	IFD_tag=sfg3fn
 61	þéna	þéna	VERB	VB	VerbForm=Inf|Voice=Act	56	acl	_	IFD_tag=sng
 62	sínum	sinn	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Prs	63	nmod:poss	_	IFD_tag=fekeþ
 63	herra	herra	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	61	obj	_	IFD_tag=nkeþ
@@ -2651,7 +2651,7 @@
 70	,	,	PUNCT	,	_	69	punct	_	IFD_tag=,
 71	hefjandi	hefja	VERB	VAG	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	43	advcl	_	IFD_tag=nken
 72	síðan	síðan	ADV	ADV	_	71	advmod	_	IFD_tag=aa
-73	bikupinn	biskup	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	71	obj	_	IFD_tag=nkeng
+73	bikupinn	biskup	NOUN	N-N	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	71	obj	_	IFD_tag=nkeog
 74	hófsamlega	hófsamlega	ADV	ADV	_	71	advmod	_	IFD_tag=aa
 75	frá	frá	ADP	P	_	76	case	_	IFD_tag=aþ
 76	jörðinni	jörð	NOUN	N-D	Case=Dat|Definite=Def|Gender=Fem|Number=Sing	71	obl	_	IFD_tag=nveþg
@@ -2740,10 +2740,10 @@
 47	færu	fara	VERB	VBDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	44	ccomp	_	IFD_tag=svg3fþ
 48	þar	þar	ADV	ADV	_	47	advmod	_	IFD_tag=aa
 49	með	með	ADP	P	_	50	case	_	IFD_tag=aa
-50	lík	lík	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	47	obl	_	IFD_tag=nheo
+50	lík	lík	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	47	obl	_	IFD_tag=nhfo
 51	biskupsins	biskup	NOUN	N-G	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	50	nmod:poss	_	IFD_tag=nkeeg|SpaceAfter=No
 52	,	,	PUNCT	,	_	51	punct	_	IFD_tag=,
-53	spyrjandi	spyrja	VERB	VAG	_	44	advcl	_	IFD_tag=aa
+53	spyrjandi	spyrja	VERB	VAG	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	44	advcl	_	IFD_tag=lkfnof
 54	biskup	biskup	NOUN	N-A	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	53	iobj	_	IFD_tag=nken
 55	þó	þó	ADV	ADV	_	53	advmod	_	IFD_tag=aa
 56	að	að	ADP	RP	_	53	compound:prt	_	IFD_tag=aa|SpaceAfter=No
@@ -2757,11 +2757,11 @@
 64	vísa	vísa	VERB	VB	VerbForm=Inf|Voice=Act	62	acl	_	IFD_tag=sng
 65	fyrst	fyrr	ADV	ADVS	Degree=Sup	64	advmod	_	IFD_tag=aae
 66	í	í	ADP	P	_	67	case	_	IFD_tag=ao
-67	kirkju	kirkja	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	71	obl	_	IFD_tag=nveo
+67	kirkju	kirkja	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	71	obl	_	IFD_tag=nveþ
 68	eður	eður	CCONJ	CONJ	_	71	cc	_	IFD_tag=c
 69	í	í	ADP	P	_	71	case	_	IFD_tag=ao
 70	heita	heitur	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	71	amod	_	IFD_tag=lveosf
-71	baðstofu	baðstofa	NOUN	N-A	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	64	obl	_	IFD_tag=nveþ|SpaceAfter=No
+71	baðstofu	baðstofa	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	64	obl	_	IFD_tag=nveo|SpaceAfter=No
 72	,	,	PUNCT	,	_	71	punct	_	IFD_tag=,
 73	þar	þar	ADV	WADV	_	76	advmod	_	IFD_tag=aa
 74	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	76	nsubj	_	IFD_tag=fpken
@@ -2774,7 +2774,7 @@
 # text = Biskup kvaðst mundu verða láta hjá líða kirkjugönguna og lestra í þetta sinn, en lést með þökkum taka mundi í móti baðstofuhitanum.
 1	Biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nsubj	_	IFD_tag=nken
 2	kvaðst	kveða	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Mid	0	root	_	IFD_tag=sfm3eþ
-3	mundu	munu	AUX	MD	VerbForm=Inf|Voice=Act	5	aux	_	IFD_tag=sng
+3	mundu	munu	AUX	MD	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	IFD_tag=svg3fþ
 4	verða	verða	AUX	RD	VerbForm=Inf|Voice=Act	5	aux	_	IFD_tag=sng
 5	láta	láta	VERB	VB	VerbForm=Inf|Voice=Act	2	acl	_	IFD_tag=sng
 6	hjá	hjá	ADP	RP	_	7	compound:prt	_	IFD_tag=aa
@@ -2792,7 +2792,7 @@
 18	með	með	ADP	P	_	19	case	_	IFD_tag=aþ
 19	þökkum	þökk	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	20	obl	_	IFD_tag=nvfþ
 20	taka	taka	VERB	VB	VerbForm=Inf|Voice=Act	17	acl	_	IFD_tag=sng
-21	mundi	munu	AUX	MD	_	20	aux	_	IFD_tag=x
+21	mundi	munu	AUX	MD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	20	aux	_	IFD_tag=sfg3eþ
 22	í	í	ADP	P	_	23	case	_	IFD_tag=aa
 23	móti	móti	NOUN	N-D	_	20	obl	_	IFD_tag=aþ
 24	baðstofuhitanum	baðstofuhiti	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	23	nmod:poss	_	IFD_tag=nkeþg|SpaceAfter=No
@@ -2809,8 +2809,8 @@
 6	ekki	ekki	ADV	NEG	_	7	advmod	_	IFD_tag=aa
 7	fær	fá	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	4	ccomp	_	IFD_tag=lkensf
 8	til	til	ADP	P	_	10	case	_	IFD_tag=ae
-9	langra	langur	ADJ	ADJ-G	Case=Gen|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	10	amod	_	IFD_tag=lvfesf
-10	bænagjörða	bænagjörð	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Plur	7	obl	_	IFD_tag=nvfe
+9	langra	langur	ADJ	ADJ-G	Case=Gen|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	10	amod	_	IFD_tag=lhfesf
+10	bænagjörða	bænagjörð	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	7	obl	_	IFD_tag=nhfe
 11	í	í	ADP	P	_	12	case	_	IFD_tag=aþ
 12	kirkjunni	kirkja	NOUN	N-D	Case=Dat|Definite=Def|Gender=Fem|Number=Sing	10	obl	_	IFD_tag=nveþg
 13	þetta	þessi	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	14	det	_	IFD_tag=faheo
@@ -2911,7 +2911,7 @@
 23	upp	upp	ADP	RP	_	21	compound:prt	_	IFD_tag=aa|SpaceAfter=No
 24	,	,	PUNCT	,	_	23	punct	_	IFD_tag=,
 25	af	af	ADP	P	_	27	case	_	IFD_tag=aþ
-26	þeim	sá	DET	D-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Prs	27	det	_	IFD_tag=fpkfþ
+26	þeim	sá	DET	D-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Dem	27	det	_	IFD_tag=fakeþ
 27	hrakningi	hrakningur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	21	obl	_	IFD_tag=nkeþ
 28	þeir	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Prs	30	nsubj	_	IFD_tag=fpkfn
 29	höfðu	hafa	AUX	HVDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	30	aux	_	IFD_tag=sfg3fþ
@@ -2927,7 +2927,7 @@
 4	hvíld	hvíld	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	3	nsubj	_	IFD_tag=nveþ
 5	og	og	CCONJ	CONJ	_	7	cc	_	IFD_tag=c
 6	hressingu	hressing	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	7	nsubj	_	IFD_tag=nveþ
-7	tekinni	taka	VERB	VAN-D	VerbForm=Part|Voice=Act	3	ccomp	_	IFD_tag=slg|SpaceAfter=No
+7	tekinni	taka	VERB	VAN-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	3	ccomp	_	IFD_tag=lveþsf|SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	IFD_tag=,
 9	stóðu	standa	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ
 10	þeir	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Prs	9	nsubj	_	IFD_tag=fpkfn
@@ -2945,7 +2945,7 @@
 3	til	til	ADP	P	_	4	case	_	IFD_tag=ae
 4	kirkju	kirkja	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	2	obl	_	IFD_tag=nvee
 5	með	með	ADP	P	_	6	case	_	IFD_tag=aþ
-6	síra	síra	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	2	obl	_	IFD_tag=nkeþ
+6	síra	síra	PROPN	NPR-D	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	obl	_	IFD_tag=nkeo
 7	Þorkeli	þorkell	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	6	flat:name	_	IFD_tag=nkeþ-s|SpaceAfter=No
 8	,	,	PUNCT	.	_	7	punct	_	IFD_tag=,
 9	byrjaði	byrja	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
@@ -3001,7 +3001,7 @@
 10	öllu	allur	DET	Q-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Ind	11	amod	_	IFD_tag=foheþ
 11	kappi	kapp	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	7	obl	_	IFD_tag=nheþ
 12	og	og	CCONJ	CONJ	_	13	cc	_	IFD_tag=c
-13	alvöru	alvara	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	11	conj	_	IFD_tag=nveþ
+13	alvöru	alvara	NOUN	N-D	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	11	conj	_	IFD_tag=nvee
 14	og	og	CCONJ	CONJ	_	15	cc	_	IFD_tag=c
 15	skorti	skorta	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
 16	ekkert	enginn	DET	Q-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Ind	15	nsubj	_	IFD_tag=foheo
@@ -3052,7 +3052,7 @@
 37	hastarlega	hastarlega	ADV	ADV	_	36	advmod	_	IFD_tag=aa
 38	heiman	heiman	ADV	ADV	_	39	advmod	_	IFD_tag=aa
 39	riðið	ríða	VERB	VBN	VerbForm=Sup|Voice=Act	34	advcl	_	IFD_tag=ssg
-40	hafi	hafa	AUX	HVPS	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	39	aux	_	IFD_tag=nken|SpaceAfter=No
+40	hafi	hafa	AUX	HVPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	39	aux	_	IFD_tag=svg3en|SpaceAfter=No
 41	.	.	PUNCT	.	_	40	punct	_	IFD_tag=.
 
 # sent_id = 1675.MAGNUS.BIO-OTH,.76
@@ -3077,7 +3077,7 @@
 17	og	og	CCONJ	CONJ	_	18	cc	_	IFD_tag=c
 18	eftirgrennslast	eftirgrennslast	VERB	VB	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	14	acl	_	IFD_tag=nheo
 19	þeirra	hann	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Plur|PronType=Prs	20	nmod:poss	_	IFD_tag=fpkfe
-20	kenningu	kenning	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	18	obj	_	IFD_tag=nveo|SpaceAfter=No
+20	kenningu	kenning	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	18	obj	_	IFD_tag=nveþ|SpaceAfter=No
 21	,	,	PUNCT	,	_	22	punct	_	IFD_tag=,
 22	siðum	siður	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	20	conj	_	IFD_tag=nkfþ
 23	og	og	CCONJ	CONJ	_	24	cc	_	IFD_tag=c
@@ -3089,10 +3089,10 @@
 29	,	,	PUNCT	,	_	28	punct	_	IFD_tag=,
 30	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	12	obl	_	IFD_tag=fpheþ
 31	að	að	SCONJ	C	_	33	mark	_	IFD_tag=aa
-32	oss	ég	PRON	PRO-D	Case=Dat|Number=Plur|Person=1|PronType=Prs	33	nsubj	_	IFD_tag=fp1fþ
+32	oss	ég	PRON	PRO-D	Case=Acc|Number=Plur|Person=1|PronType=Prs	33	nsubj	_	IFD_tag=fp1fo
 33	hefur	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	30	ccomp	_	IFD_tag=sfg3en
 34	margt	margur	DET	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	33	obj	_	IFD_tag=lhensf
-35	undarlegt	undarlegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	34	amod	_	IFD_tag=lhensf
+35	undarlegt	undarlegur	ADJ	ADJ-N	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	34	amod	_	IFD_tag=lheosf
 36	hér	hér	ADV	ADV	_	33	obl	_	IFD_tag=aa
 37	norðan	norðan	ADV	ADV	_	36	advmod	_	IFD_tag=aa
 38	að	að	ADP	P	_	36	case	_	IFD_tag=aa
@@ -3105,7 +3105,7 @@
 45	og	og	ADV	ALSO	_	46	advmod	_	IFD_tag=c
 46	heimsótt	heimsækja	VERB	VBN	VerbForm=Sup|Voice=Act	2	conj	_	OriginalHead=0
 47	í	í	ADP	P	_	49	case	_	IFD_tag=ao
-48	vorum	vor	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Plur|PronType=Prs	49	nmod:poss	_	IFD_tag=fevfþ
+48	vorum	vor	PRON	PRO-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	49	nmod:poss	_	IFD_tag=nhfþ
 49	þrengingum	þrenging	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	46	obl	_	IFD_tag=nvfþ
 50	og	og	CCONJ	CONJ	_	51	cc	_	IFD_tag=c
 51	fundið	finna	VERB	VBN	VerbForm=Sup|Voice=Act	46	conj	_	IFD_tag=ssg
@@ -3131,7 +3131,7 @@
 71	,	,	PUNCT	,	_	70	punct	_	IFD_tag=,
 72	sem	sem	SCONJ	C	_	74	mark	_	IFD_tag=ct
 73	oss	ég	PRON	PRO-D	Case=Dat|Number=Plur|Person=1|PronType=Prs	74	iobj	_	IFD_tag=fp1fþ
-74	auðsýnt	auðsýna	VERB	VBN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	70	acl:relcl	_	IFD_tag=sþghen
+74	auðsýnt	auðsýna	VERB	VBN	VerbForm=Sup|Voice=Act	70	acl:relcl	_	IFD_tag=ssg
 75	hafið	hafa	AUX	HVPI	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	74	aux	_	IFD_tag=nheog|SpaceAfter=No
 76	.	.	PUNCT	.	_	75	punct	_	IFD_tag=.
 
@@ -3145,7 +3145,7 @@
 5	héðan	héðan	ADV	ADV	_	6	obl	_	IFD_tag=aa
 6	heita	heita	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
 7	yður	þú	PRON	PRO-D	Case=Dat|Number=Plur|Person=2|PronType=Prs	6	iobj	_	IFD_tag=fp2fþ
-8	minni	minn	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Prs	12	nmod:poss	_	IFD_tag=feveþ
+8	minni	minn	PRON	PRO-D	Case=Nom|Definite=Def|Degree=Cmp|Gender=Fem|Number=Sing	12	nmod:poss	_	IFD_tag=lvenvm
 9	fullri	fullur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	IFD_tag=lveþsf
 10	og	og	CCONJ	CONJ	_	9	cc	_	IFD_tag=c
 11	fastri	fastur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	IFD_tag=lveþsf
@@ -3215,10 +3215,10 @@
 17	ei	ei	ADV	NEG	_	21	advmod	_	IFD_tag=aa
 18	snemma	snemma	ADV	ADV	_	21	advmod	_	IFD_tag=aa
 19	úr	úr	ADP	P	_	20	case	_	IFD_tag=aþ
-20	minni	minn	NOUN	N-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Prs	21	obl	_	IFD_tag=feveþ
+20	minni	minn	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	21	obl	_	IFD_tag=nheþ
 21	líða	líða	VERB	VB	VerbForm=Inf|Voice=Act	14	acl	_	IFD_tag=sng
 22	sú	sá	DET	D-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Dem	24	det	_	IFD_tag=faven
-23	hríðar	hríðar	NOUN	NS-G	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	24	nmod:poss	_	IFD_tag=nven
+23	hríðar	hríðar	NOUN	NS-G	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	24	nmod:poss	_	IFD_tag=nvfn
 24	veðrátta	veðrátta	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	21	obj	_	IFD_tag=nven
 25	sem	sem	SCONJ	C	_	28	mark	_	IFD_tag=ct
 26	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	28	nsubj	_	IFD_tag=fpken
@@ -3233,7 +3233,7 @@
 1	Prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nsubj	_	IFD_tag=nken
 2	kvað	kveða	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
 3	mjög	mjög	ADV	ADV	_	4	amod	_	IFD_tag=aa
-4	hretviðrasamt	hretviðrasamur	ADJ	ADJ-N	_	2	ccomp	_	IFD_tag=aa
+4	hretviðrasamt	hretviðrasamur	ADJ	ADJ-N	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	2	ccomp	_	IFD_tag=nveo
 5	tíðum	tíð	NOUN	NS-D	_	2	obl	_	IFD_tag=aa
 6	þar	þar	ADV	ADV	_	2	advmod	_	IFD_tag=aa
 7	norður	norður	ADV	ADV	_	6	advmod	_	IFD_tag=aa
@@ -3241,7 +3241,7 @@
 9	segir	segja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
 10	oft	oft	ADV	ADV	_	11	advmod	_	IFD_tag=aa
 11	kasti	kasta	VERB	VBPS	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	9	xcomp	_	IFD_tag=nheþ
-12	kraparegni	kraparegn	NOUN	N-D	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	11	obj	_	IFD_tag=nheo
+12	kraparegni	kraparegn	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	11	obj	_	IFD_tag=nhfþ
 13	með	með	ADP	P	_	15	case	_	IFD_tag=aþ
 14	þoku	þoka	NOUN	N-G	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	15	nmod:poss	_	IFD_tag=nveþ
 15	myrkri	myrkur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	11	obl	_	IFD_tag=nheþ
@@ -3257,7 +3257,7 @@
 25	víslega	víslega	ADV	ADV	_	26	advmod	_	IFD_tag=aa
 26	talað	tala	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	23	ccomp	_	IFD_tag=sþghen
 27	og	og	CCONJ	CONJ	_	26	cc	_	IFD_tag=c
-28	ráðið	ráða	VERB	VAN	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	26	ccomp	_	IFD_tag=nheng
+28	ráðið	ráða	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	26	ccomp	_	IFD_tag=sþghen
 29	að	að	PART	TO	_	30	mark	_	IFD_tag=c
 30	ríða	ríða	VERB	VB	VerbForm=Inf|Voice=Act	26	acl	_	IFD_tag=sng
 31	við	við	ADP	P	_	33	case	_	IFD_tag=ao
@@ -3271,7 +3271,7 @@
 39	væri	vera	AUX	BEDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	40	cop	_	IFD_tag=svg3eþ
 40	örvænt	örvæna	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	37	xcomp	_	IFD_tag=lhensf
 41	að	að	SCONJ	C	_	48	mark	_	IFD_tag=c
-42	soddan	sodda	PRON	SUCH-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	43	obl	_	IFD_tag=lhfnsf
+42	soddan	sodda	PRON	SUCH-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	43	obl	_	IFD_tag=lhensf
 43	stórhret	stórhret	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	48	nsubj	_	IFD_tag=nhen
 44	eður	eður	CCONJ	CONJ	_	45	cc	_	IFD_tag=c
 45	jafnstærri	jafnstór	ADJ	ADJR-N	Case=Nom|Definite=Def|Degree=Cmp|Gender=Neut|Number=Plur	43	conj	_	IFD_tag=lhfnvm
@@ -3300,7 +3300,7 @@
 15	síst	síður	ADV	ADVS	Degree=Sup	7	obl	_	IFD_tag=aae
 16	nokkru	nokkur	DET	Q-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Ind	17	amod	_	IFD_tag=foheþ
 17	enn	enn	ADV	ADV	_	7	obj	_	IFD_tag=aa
-18	þá	þá	ADV	ADV	Case=Acc|Gender=Masc|Number=Plur|PronType=Prs	17	advmod	_	IFD_tag=fpkfo
+18	þá	þá	ADV	ADV	_	17	advmod	_	IFD_tag=aa
 19	stærra	stór	ADJ	ADJR-D	Case=Acc|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	17	amod	_	IFD_tag=lheovm|SpaceAfter=No
 20	.	.	PUNCT	.	_	19	punct	_	IFD_tag=.
 
@@ -3339,7 +3339,7 @@
 30	sagt	segja	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	3	conj	_	OriginalHead=0
 31	að	að	SCONJ	C	_	33	mark	_	IFD_tag=c
 32	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	33	nsubj	_	IFD_tag=nken
-33	veitti	veita	VERB	VBDI	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	30	ccomp	_	IFD_tag=svg3eþ
+33	veitti	veita	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	30	ccomp	_	IFD_tag=sfg3eþ
 34	kappsamlega	kappsamlega	ADV	ADV	_	33	advmod	_	IFD_tag=aa
 35	og	og	CCONJ	CONJ	_	36	cc	_	IFD_tag=c
 36	jók	auka	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	33	conj	_	IFD_tag=sfg3eþ
@@ -3363,7 +3363,7 @@
 # text = Síðan skildu biskup og hann með góðum vinskap, og reið biskup heimleiðis og settist um kyrrt á stólnum að þeirri reisu afstaðinni.
 1	Síðan	síðan	ADV	ADV	_	2	advmod	_	IFD_tag=aa
 2	skildu	skilja	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ
-3	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	2	obj	_	IFD_tag=nkfn
+3	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	obj	_	IFD_tag=nken
 4	og	og	CCONJ	CONJ	_	3	cc	_	IFD_tag=c
 5	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	3	nmod	_	IFD_tag=fpken
 6	með	með	ADP	P	_	8	case	_	IFD_tag=aþ
@@ -3375,7 +3375,7 @@
 12	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	11	nsubj	_	IFD_tag=nken
 13	heimleiðis	heimleiðis	ADV	ADV	_	11	advmod	_	IFD_tag=aa
 14	og	og	CCONJ	CONJ	_	15	cc	_	IFD_tag=c
-15	settist	sitja	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Mid	2	conj	_	OriginalHead=0
+15	settist	sitja	VERB	VBDI	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Mid	2	conj	_	OriginalHead=0
 16	um	um	ADP	P	_	17	case	_	IFD_tag=ao
 17	kyrrt	kyrr	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	15	obl	_	IFD_tag=lheosf
 18	á	á	ADP	P	_	19	case	_	IFD_tag=aþ
@@ -3450,7 +3450,7 @@
 2	eftir	eftir	ADP	P	_	3	case	_	IFD_tag=ao
 3	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	6	obl	_	IFD_tag=fpheo
 4	Magnús	magnús	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	6	nsubj	_	IFD_tag=nken-s
-5	Jónsson	jónsson	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	4	flat:name	_	IFD_tag=nken-s
+5	Jónsson	jónsson	PROPN	NPR-N	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	4	flat:name	_	IFD_tag=nkeo-s
 6	kvongaðist	kvonga	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Mid	0	root	_	IFD_tag=sfm3eþ
 7	á	á	ADP	P	_	8	case	_	IFD_tag=aþ
 8	Vestfjörðum	vestfirðir	PROPN	NPRS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	6	obl	_	IFD_tag=nkfþ-s
@@ -3459,9 +3459,9 @@
 11	til	til	ADP	P	_	12	case	_	IFD_tag=ae
 12	ekta	ekta	NOUN	NS-G	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	10	obl	_	IFD_tag=lveoof
 13	þá	sá	DET	D-A	_	15	det	_	IFD_tag=aa
-14	ættgöfgu	ættgöfugur	ADJ	ADJ-A	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	IFD_tag=lveovf
+14	ættgöfgu	ættgöfugur	ADJ	ADJ-A	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	15	amod	_	IFD_tag=nvee
 15	jómfrú	jómfrú	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	10	obj	_	IFD_tag=nveo
-16	Ragnheiði	ragnheiður	PROPN	NPR-A	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	15	appos	_	IFD_tag=nvee-s
+16	Ragnheiði	ragnheiður	PROPN	NPR-A	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	15	appos	_	IFD_tag=nveþ-s
 17	Eggertsdóttur	eggertsdóttur	PROPN	NPR-A	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	16	flat:name	_	IFD_tag=nvee-s
 18	og	og	CCONJ	CONJ	_	20	cc	_	IFD_tag=c
 19	þau	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Plur|PronType=Prs	20	nsubj	_	IFD_tag=fphfn
@@ -3482,8 +3482,8 @@
 34	kölluð	kalla	VERB	VAN	Case=Nom|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Act	6	conj	_	OriginalHead=0
 35	síðan	síðan	ADV	ADV	_	34	advmod	_	IFD_tag=aa
 36	af	af	ADP	P	_	37	case	_	IFD_tag=aþ
-37	mörgum	margur	DET	Q-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	34	obl	_	IFD_tag=lkfþsf
-38	Magnúsarætt	magnúsarætt	PROPN	NPR-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	34	ccomp	_	IFD_tag=lhensf
+37	mörgum	margur	DET	Q-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	34	obl	_	IFD_tag=lvfþsf
+38	Magnúsarætt	magnúsarætt	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	34	ccomp	_	IFD_tag=nven-s
 39	og	og	CCONJ	CONJ	_	43	cc	_	IFD_tag=c
 40	þó	þó	ADV	ADV	_	43	advmod	_	IFD_tag=aa
 41	líka	líka	ADV	ALSO	_	43	advmod	_	IFD_tag=aa
