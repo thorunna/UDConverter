@@ -66,7 +66,10 @@ class IndexedCorpusTree(Tree):
         tree = super().fromstring(s)
         if trim_id_tag and tree._label == '' and len(tree) == 2:
             tree[0].corpus_id = str(tree[1]).strip('()ID ')
-            tree[0].corpus_id_num = str(tree[1]).strip('()ID ').split(',')[1]
+            try:
+                tree[0].corpus_id_num = str(tree[1]).strip('()ID ').split(',')[1]
+            except IndexError:
+                tree[0].corpus_id_num = None
             tree = tree[0]
         return tree
 
@@ -190,8 +193,9 @@ class IndexedCorpusTree(Tree):
 
         if tags:
             for child in self:
-                if child.label() in tags:
-                    self.remove(child)
+                if type(child) != str:
+                    if child.label() in tags:
+                        self.remove(child)
             for i in reversed(self.treepositions()):
                 # print(i)
                 if isinstance(self[i], Tree) and self[i].height() == 2 and len(self[i]) == 1:

@@ -356,7 +356,7 @@ class ICE_Features():
         if '-' in tag:
             case = tag.split('-')[1]
             tag = tag.split('-')[0]
-            if case not in {'1', '2', '3', '5', '10'}:
+            if case not in {'1', '2', '3', '5', '10', 'XXX'}:
                 try:
                     self.features['Case'] = Icepahc_feats['ADV']['Case'][case]
                 except KeyError:

@@ -70,6 +70,7 @@ def main():
     parser.add_argument('--output', '-o', help='path to output folder', action='store_true')
     parser.add_argument('--auto_tag', '-tag', help='flag for automatically tagging input text', action='store_true')
     parser.add_argument('--faroese', '-far', help='flag for converting a Faroese treebank', action='store_true')
+    parser.add_argument('--additions', '-add', help='flag for converting additions to IcePaHC', action='store_true')
 
     input_type = parser.add_mutually_exclusive_group(required=True)
     input_type.add_argument('--NO_CORPUS', '-N', help='no corpus, convert single file',action='store_true',)
@@ -118,6 +119,7 @@ def main():
 
                         dep = c.create_dependency_graph(psd)
                         sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
+                        sent_id = re.sub(r'/', '_', sent_id)
                         sent_id_line = '# sent_id = ' + sent_id + '\n'
 
                         outfile.write(sent_id_line)
@@ -206,6 +208,8 @@ def main():
         output_file = re.sub(r'\.psd', '.conllu', file_id) if args.output else None
         if args.faroese:
             output_path = os.path.join('../CoNLLU/farpahc/', output_file) if output_file else None
+        elif args.additions:
+            output_path = os.path.join('../CoNLLU/additions2019/', output_file) if output_file else None
         else:
             output_path = os.path.join('../CoNLLU/icepahc/', output_file) if output_file else None
 
@@ -237,6 +241,7 @@ def main():
 
                             # sentence ID saved as string using file_sent runner
                             sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
+                            sent_id = re.sub(r'\/', '_', sent_id)
                             sent_id_line = '# sent_id = ' + sent_id + '\n'
                             
                             # add NoSpaceAfter to misc column
@@ -269,6 +274,7 @@ def main():
                             
                             # sentence ID saved as string using file_sent runner
                             sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
+                            sent_id = re.sub(r'/', '_', sent_id)
                             sent_id_line = '# sent_id = ' + sent_id + '\n'
                             
                             # add NoSpaceAfter to misc column
@@ -335,6 +341,8 @@ def main():
             output_file = re.sub(r'\.psd', '.conllu', file_id) if args.output else None
             if args.faroese:
                 output_path = os.path.join('../CoNLLU/farpahc/', output_file) if output_file else None
+            elif args.additions:
+                output_path = os.path.join('../CoNLLU/additions2019/', output_file) if output_file else None
             else:
                 output_path = os.path.join('../CoNLLU/icepahc/', output_file) if output_file else None
 
@@ -357,6 +365,7 @@ def main():
                                 
                                 # sentence ID saved as string using file_sent runner
                                 sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
+                                sent_id = re.sub(r'/', '_', sent_id)
                                 sent_id_line = '# sent_id = ' + sent_id + '\n'
                                 
                                 # add NoSpaceAfter to misc column
@@ -383,6 +392,7 @@ def main():
       
                                 # sentence ID saved as string using file_sent runner
                                 sent_id = re.sub(r'\.psd', '', file_id).upper() + ',.' + str(file_sents+1)
+                                sent_id = re.sub(r'/', '_', sent_id)
                                 sent_id_line = '# sent_id = ' + sent_id + '\n'
                                 
                                 # add NoSpaceAfter to misc column
