@@ -753,6 +753,8 @@ class Converter():
                         #    self.dg.get_by_address(address).update({'head': address-1})
                         if address-1 in self.dg.nodes and self.dg.get_by_address(address-1)['head'] == address:
                             print(self.dg.get_by_address(address-1)['head'])
+                            if node['head'] == address-1:
+                                self.dg.get_by_address(address-1).update({'head': address-2})
                             self.dg.get_by_address(address-1).update({'head': node['head']})
                         elif address-1 in self.dg.nodes and self.dg.get_by_address(address-1)['head'] != '_' and node['head'] <= self.dg.get_by_address(address-1)['head']:
                             self.dg.get_by_address(address).update({'head': address-1})
