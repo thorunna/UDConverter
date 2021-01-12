@@ -75,3 +75,25 @@ sed -i "" 's/(IP-INF (TO \*)/(IP-INF (TO )/g' $dir/G-33-4916520.psd
 
 # althingi/sjs/2013/G-33-4736548
 sed -i "" 's/(IP-SUB-PRN=1 (NP-ADV (Q-A alla-allur) (NS-A vega-vegur))/(IP-SUB-PRN (NP-ADV (Q-A alla-allur) (NS-A vega-vegur))/g' $dir/G-33-4736548.psd
+
+# althingi/sjs/2013/G-33-4577317
+sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/G-33-4577317.psd
+
+# althingi/sjs/2013/G-33-4594976
+sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/G-33-4594976.psd
+
+# althingi/sjs/2013/G-33-4691402
+sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/G-33-4691402.psd
+
+# althingi/tkg/2011/G-33-4522153
+sed -i "" 's/(IP-SUB-PRN=2 (NEG ekki-ekki)/(IP-SUB-PRN (NEG ekki-ekki)/g' $dir/G-33-4522153.psd
+sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/G-33-4522153.psd
+
+# althingi/tkg/2011/G-33-4626061
+sed -i "" 's/(IP-INF (TO \*)/(IP-INF (TO )/g' $dir/G-33-4626061.psd
+
+# ruv/esp/2016/G-2-1033175
+sed -i "" 's/(IP-INF-SPE-1 (TO \*)/(IP-INF-SPE-1 (TO )/g' $dir/G-2-1033175.psd
+
+# ruv/tgs/2016/G-2-1031601
+sed -i "" 's/( (CODE *ZZZ_MISS_CP*)/(/g' $dir/G-2-1031601.psd
