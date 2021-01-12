@@ -1,0 +1,306 @@
+# sent_id = RUV_TGS_2016_G-2-1032793.SANITY,.1
+# X_ID = ID_MISSING
+# text = KR vann ákaflega mikilvægan sigur í Pepsi-deild karla í knattspyrnu í kvöld, þegar KR-ingar lögðu nágranna sína í Val að velli, 2 1 á Alvogen-vellinum í Frostaskjóli.
+1	KR	kr	PROPN	NPR-N	_	2	nsubj	_	_
+2	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	ákaflega	ákaflega	ADV	ADV	Degree=Pos	4	amod	_	_
+4	mikilvægan	mikilvægur	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
+5	sigur	sigur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	Pepsi-deild	pepsi-deild	PROPN	NPR-D	_	2	obl	_	_
+8	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	nmod:poss	_	_
+9	í	í	ADP	P	_	10	case	_	_
+10	knattspyrnu	knattspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	þegar	þegar	ADP	P	_	16	case	_	_
+15	KR-ingar	kr-ingur	PROPN	NPRS-N	_	16	nsubj	_	_
+16	lögðu	leggja	VERB	VBDI	Mood=Ind|Tense=Past	2	obl	_	_
+17	nágranna	nágranni	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obj	_	_
+18	sína	sinn	PRON	PRO-A	Case=Acc	17	nmod:poss	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	Val	valur	PROPN	NPR-A	_	17	obl	_	_
+21	að	að	ADP	P	_	22	case	_	_
+22	velli	völlur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	2	tveir	NUM	NUM-N	Case=Nom	16	obl	_	_
+25	1	einn	DET	ONE-N	Case=Nom|Number=Sing	24	conj	_	_
+26	á	á	ADP	P	_	27	case	_	_
+27	Alvogen-vellinum	alvogen-völlur	PROPN	NPR-D	_	16	obl	_	_
+28	í	í	ADP	P	_	29	case	_	_
+29	Frostaskjóli	frostaskjól	PROPN	NPR-D	_	27	obl	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	29	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032793.SANITY,.2
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Óskar Örn Hauksson kom KR yfir á 35. mínútu og Denis Fazalgic jók svo forystu KR-inga í 2 á 48. mínútu.
+1	Óskar	óskar	PROPN	NPR-N	_	4	nsubj	_	_
+2	Örn	örn	PROPN	NPR-N	_	1	flat:name	_	_
+3	Hauksson	hauksson	PROPN	NPR-N	_	1	dep	_	_
+4	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+5	KR	kr	PROPN	NPR-D	_	4	obj	_	_
+6	yfir	yfir	ADV	ADV	Degree=Pos	4	advmod	_	_
+7	á	á	ADP	P	_	9	case	_	_
+8	35.	35.	NUM	NUM-D	Case=Dat	9	nummod	_	_
+9	mínútu	mínúta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+10	og	og	CCONJ	CONJ	_	13	cc	_	_
+11	Denis	denis	PROPN	NPR-N	_	13	nsubj	_	_
+12	Fazalgic	fazalgic	PROPN	NPR-N	_	11	flat:name	_	_
+13	jók	auka	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
+14	svo	svo	ADV	ADV	Degree=Pos	13	advmod	_	_
+15	forystu	forysta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
+16	KR-inga	kr-ingur	PROPN	NPRS-G	_	15	nmod:poss	_	_
+17	í	í	ADP	P	_	18	case	_	_
+18	2	tveir	NUM	NUM-N	Case=Nom	13	obl	_	_
+19	á	á	ADP	P	_	21	case	_	_
+20	48.	48.	NUM	NUM-D	Case=Dat	21	nummod	_	_
+21	mínútu	mínúta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	21	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032793.SANITY,.3
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Haukur Páll Sigurðsson minnkaði muninn fyrir Valsmenn í uppbótartíma venjulegs leiktíma og þar við sat, 2 1.
+1	Haukur	haukur	PROPN	NPR-N	_	4	nsubj	_	_
+2	Páll	páll	PROPN	NPR-N	_	1	flat:name	_	_
+3	Sigurðsson	sigurðsson	PROPN	NPR-N	_	1	dep	_	_
+4	minnkaði	minnka	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+5	muninn	munur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
+6	fyrir	fyrir	ADP	P	_	7	case	_	_
+7	Valsmenn	valsmaður	PROPN	NPRS-A	_	4	obl	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	uppbótartíma	uppbótartími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+10	venjulegs	venjulegur	ADJ	ADJ-G	Case=Gen|Degree=Pos	11	amod	_	_
+11	leiktíma	leiktími	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	nmod:poss	_	_
+12	og	og	CCONJ	CONJ	_	15	cc	_	_
+13	þar	þar	ADV	ADV	Degree=Pos	15	obl	_	_
+14	við	við	ADP	P	_	13	case	_	_
+15	sat	sitja	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0|SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	2	tveir	NUM	NUM-N	Case=Nom	15	obl	_	_
+18	1	einn	DET	ONE-N	Case=Nom|Number=Sing	17	conj	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	18	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032793.SANITY,.4
+# X_ID = ID_MISSING
+# text = Sigurinn er kærkominn fyrir KR-inga og ekki síst þjálfarann, Bjarna Guðjónsson.
+1	Sigurinn	sigur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	kærkominn	kærkominn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+4	fyrir	fyrir	ADP	P	_	5	case	_	_
+5	KR-inga	kr-ingur	PROPN	NPRS-A	_	3	obl	_	_
+6	og	og	CCONJ	CONJ	_	9	cc	_	_
+7	ekki	ekki	ADV	NEG	_	8	advmod	_	_
+8	síst	varla	ADV	ADVS	Degree=Sup	9	advmod	_	_
+9	þjálfarann	þjálfari	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	conj	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	Bjarna	bjarni	PROPN	NPR-A	_	9	appos	_	_
+12	Guðjónsson	guðjónsson	PROPN	NPR-A	_	11	flat:name	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	12	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032793.SANITY,.5
+# X_ID = ID_MISSING
+# text = Bjarni og KR-ingar hafa verið undir mikilli pressu, því liðið hafði aðeins 6 stig eftir fyrstu 5 umferðirnar í Pepsi-deildinni og KR var svo í þokkabót slegið út úr 32-liða úrslitum bikarkeppninnar fyrir Selfossi í vikunni.
+1	Bjarni	bjarni	PROPN	NPR-N	_	4	nsubj	_	_
+2	og	og	CCONJ	CONJ	_	1	cc	_	_
+3	KR-ingar	kr-ingur	PROPN	NPRS-N	_	1	conj	_	_
+4	hafa	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+5	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	4	cop	_	_
+6	undir	undir	ADP	P	_	8	case	_	_
+7	mikilli	mikill	DET	Q-D	Case=Dat|Degree=Pos	8	amod	_	_
+8	pressu	pressa	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	því	það	PRON	PRO-D	Case=Dat	4	obl	_	_
+11	liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
+12	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	10	ccomp	_	_
+13	aðeins	aðeins	ADV	FP	Degree=Pos	12	advmod	_	_
+14	6	sex	NUM	NUM-A	Case=Acc	15	nummod	_	_
+15	stig	stig	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obj	_	_
+16	eftir	eftir	ADP	P	_	19	case	_	_
+17	fyrstu	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	19	amod	_	_
+18	5	fimm	NUM	NUM-A	Case=Acc	19	nummod	_	_
+19	umferðirnar	umferð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
+20	í	í	ADP	P	_	21	case	_	_
+21	Pepsi-deildinni	pepsi-deild	PROPN	NPR-D	_	19	obl	_	_
+22	og	og	CCONJ	CONJ	_	28	cc	_	_
+23	KR	kr	PROPN	NPR-N	_	28	nsubj	_	_
+24	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	28	cop	_	_
+25	svo	svo	ADV	ADV	Degree=Pos	28	advmod	_	_
+26	í	í	ADP	P	_	27	case	_	_
+27	þokkabót	þokkabót	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obl	_	_
+28	slegið	slá	VERB	VAN	Tense=Past|VerbForm=Part	12	conj	_	_
+29	út	út	ADP	RP	_	34	compound:prt	_	_
+30	úr	úr	ADP	P	_	34	case	_	_
+31	32	32	NUM	NUM-G	Case=Gen	34	dep	_	SpaceAfter=No
+32	-	-	PUNCT	,	_	33	punct	_	_|SpaceAfter=No
+33	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	31	conj	_	_
+34	úrslitum	úrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	28	obl	_	_
+35	bikarkeppninnar	bikarkeppni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	34	nmod:poss	_	_
+36	fyrir	fyrir	ADP	P	_	37	case	_	_
+37	Selfossi	selfoss	PROPN	NPR-D	_	28	obl	_	_
+38	í	í	ADP	P	_	39	case	_	_
+39	vikunni	vika	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	SpaceAfter=No
+40	.	.	PUNCT	.	_	39	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032793.SANITY,.6
+# X_ID = ID_MISSING
+# text = Sigur KR í kvöld var því einstaklega mikilvægur fyrir Bjarna og hans menn í KR.
+1	Sigur	sigur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+2	KR	kr	PROPN	NPR-G	_	1	nmod:poss	_	_
+3	í	í	ADP	P	_	4	case	_	_
+4	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
+5	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
+6	því	það	PRON	PRO-D	Case=Dat	0	root	_	_
+7	einstaklega	einstaklega	ADV	ADV	Degree=Pos	8	amod	_	_
+8	mikilvægur	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
+9	fyrir	fyrir	ADP	P	_	10	case	_	_
+10	Bjarna	bjarni	PROPN	NPR-A	_	8	amod	_	_
+11	og	og	CCONJ	CONJ	_	13	cc	_	_
+12	hans	hann	PRON	PRO-G	Case=Gen	13	nmod:poss	_	_
+13	menn	maður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	conj	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	KR	kr	PROPN	NPR-D	_	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032793.SANITY,.7
+# X_ID = ID_MISSING
+# text = Víkingur R. vann svo 3 2 sigur á ÍA í Fossvoginum.
+1	Víkingur	víkingur	PROPN	NPR-N	_	3	nsubj	_	_
+2	R.	r.	PROPN	NPR-D	_	1	flat:name	_	_
+3	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	3	þrír	NUM	NUM-N	Case=Nom	7	dep	_	_
+6	2	tveir	NUM	NUM-N	Case=Nom	5	conj	_	_
+7	sigur	sigur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	obl	_	_
+8	á	á	ADP	P	_	9	case	_	_
+9	ÍA	ía	PROPN	NPR-D	_	3	obl	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	Fossvoginum	fossvogur	PROPN	NPR-D	_	3	obl	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	11	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032793.SANITY,.8
+# X_ID = ID_MISSING
+# text = Leikurinn byrjaði afar fjörlega því Jón Vilhelm Ákason kom Skagamönnum yfir strax á 2. mínútu, Vladimir Tufegdzic jafnaði fyrir Víking á 4. mínútu og Garðar Gunnlaugsson hafði svo náð forystunni fyrir ÍA strax aftur á 5. mínútu.
+1	Leikurinn	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	byrjaði	byrja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	afar	afar	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	fjörlega	fjörlega	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
+6	Jón	jón	PROPN	NPR-N	_	9	nsubj	_	_
+7	Vilhelm	vilhelm	PROPN	NPR-N	_	6	flat:name	_	_
+8	Ákason	ákason	PROPN	NPR-N	_	6	dep	_	_
+9	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	5	ccomp	_	_
+10	Skagamönnum	skagamaður	PROPN	NPRS-D	_	9	obj	_	_
+11	yfir	yfir	ADV	ADV	Degree=Pos	9	advmod	_	_
+12	strax	strax	ADV	ADV	Degree=Pos	15	advmod	_	_
+13	á	á	ADP	P	_	15	case	_	_
+14	2.	annar	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	amod	_	_
+15	mínútu	mínúta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	Vladimir	vladimir	PROPN	NPR-N	_	19	nsubj	_	_
+18	Tufegdzic	tufegdzic	PROPN	NPR-N	_	17	flat:name	_	_
+19	jafnaði	jafna	VERB	VBDI	Mood=Ind|Tense=Past	9	conj	_	_
+20	fyrir	fyrir	ADP	P	_	21	case	_	_
+21	Víking	víkingur	PROPN	NPR-A	_	19	obl	_	_
+22	á	á	ADP	P	_	24	case	_	_
+23	4.	fjórði	ADJ	ADJ-D	Case=Dat|Degree=Pos	24	amod	_	_
+24	mínútu	mínúta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
+25	og	og	CCONJ	CONJ	_	30	cc	_	_
+26	Garðar	garðar	PROPN	NPR-N	_	30	nsubj	_	_
+27	Gunnlaugsson	gunnlaugsson	PROPN	NPR-N	_	26	flat:name	_	_
+28	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	30	aux	_	_
+29	svo	svo	ADV	ADV	Degree=Pos	30	advmod	_	_
+30	náð	ná	VERB	VBN	Tense=Past|VerbForm=Part	9	conj	_	_
+31	forystunni	forysta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obj	_	_
+32	fyrir	fyrir	ADP	P	_	33	case	_	_
+33	ÍA	ía	PROPN	NPR-A	_	30	obl	_	_
+34	strax	strax	ADV	ADV	Degree=Pos	30	advmod	_	_
+35	aftur	aftur	ADV	ADV	Degree=Pos	34	advmod	_	_
+36	á	á	ADP	P	_	38	case	_	_
+37	5.	fimmti	ADJ	ADJ-D	Case=Dat|Degree=Pos	38	amod	_	_
+38	mínútu	mínúta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obl	_	SpaceAfter=No
+39	.	.	PUNCT	.	_	38	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032793.SANITY,.9
+# X_ID = ID_MISSING
+# text = Víkingur gerði hins vegar út um leikinn í síðari hálfleik.
+1	Víkingur	víkingur	PROPN	NPR-N	_	2	nsubj	_	_
+2	gerði	gera	VERB	DODI	Mood=Ind|Tense=Past	0	root	_	_
+3	hins	hinn	DET	D-G	Case=Gen|PronType=Art	4	det	_	_
+4	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	_
+5	út	út	ADP	RP	_	7	compound:prt	_	_
+6	um	um	ADP	P	_	7	case	_	_
+7	leikinn	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+8	í	í	ADP	P	_	10	case	_	_
+9	síðari	síðari	ADJ	ADJR-D	Case=Dat|Degree=Cmp	10	amod	_	_
+10	hálfleik	hálfleikur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	10	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032793.SANITY,.10
+# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
+# text = Óttar Magnús Karlsson jafnaði fyrir Víking á 55. mínútu og það var svo ekki fyrr en á 90. mínútu sem Ívar Örn Jónsson skoraði sigurmarkið fyrir heimamenn, og Víkingur vann því leikinn 3 2.
+1	Óttar	óttar	PROPN	NPR-N	_	4	nsubj	_	_
+2	Magnús	magnús	PROPN	NPR-N	_	1	flat:name	_	_
+3	Karlsson	karlsson	PROPN	NPR-N	_	1	dep	_	_
+4	jafnaði	jafna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+5	fyrir	fyrir	ADP	P	_	6	case	_	_
+6	Víking	víkingur	PROPN	NPR-A	_	4	obl	_	_
+7	á	á	ADP	P	_	9	case	_	_
+8	55.	55.	NUM	NUM-D	Case=Dat	9	nummod	_	_
+9	mínútu	mínúta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+10	og	og	CCONJ	CONJ	_	11	cc	_	_
+11	það	það	PRON	PRO-N	Case=Nom	4	conj	_	OriginalHead=0
+12	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	11	cop	_	_
+13	svo	svo	ADV	ADV	Degree=Pos	11	advmod	_	_
+14	ekki	ekki	ADV	NEG	_	11	advmod	_	_
+15	fyrr	snemma	ADV	ADVR	Degree=Cmp	11	advmod	_	_
+16	en	en	ADP	P	_	17	case	_	_
+17	á	á	ADP	P	_	15	obl	_	_
+18	90.	90.	NUM	NUM-D	Case=Dat	19	nummod	_	_
+19	mínútu	mínúta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	conj	_	_
+20	sem	sem	SCONJ	C	_	24	mark	_	_
+21	Ívar	ívar	PROPN	NPR-N	_	24	nsubj	_	_
+22	Örn	örn	PROPN	NPR-N	_	21	flat:name	_	_
+23	Jónsson	jónsson	PROPN	NPR-N	_	21	dep	_	_
+24	skoraði	skora	VERB	VBDI	Mood=Ind|Tense=Past	11	acl:relcl	_	_
+25	sigurmarkið	sigurmark	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obj	_	_
+26	fyrir	fyrir	ADP	P	_	27	case	_	_
+27	heimamenn	heimamaður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	24	obl	_	SpaceAfter=No
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	og	og	CCONJ	CONJ	_	31	cc	_	_
+30	Víkingur	víkingur	PROPN	NPR-N	_	31	nsubj	_	_
+31	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
+32	því	það	PRON	PRO-D	Case=Dat	31	obl	_	_
+33	leikinn	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	31	obj	_	_
+34	3	þrír	NUM	NUM-N	Case=Nom	31	obl	_	_
+35	2	tveir	NUM	NUM-N	Case=Nom	34	conj	_	SpaceAfter=No
+36	.	.	PUNCT	.	_	35	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032793.SANITY,.11
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Víkingur R. hefur 8 stig í 8. sæti Pepsi-deildarinnar en Skagamenn eru tveimur sætum neðar með aðeins 4 stig eftir fyrstu sex umferðirnar.
+1	Víkingur	víkingur	PROPN	NPR-N	_	3	nsubj	_	_
+2	R.	r.	PROPN	NPR-D	_	1	flat:name	_	_
+3	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	8	átta	NUM	NUM-A	Case=Acc	5	nummod	_	_
+5	stig	stig	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	_
+6	í	í	ADP	P	_	8	case	_	_
+7	8.	áttundi	ADJ	ADJ-D	Case=Dat|Degree=Pos	8	amod	_	_
+8	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+9	Pepsi-deildarinnar	pepsi-deild	PROPN	NPR-G	_	8	nmod:poss	_	_
+10	en	en	CCONJ	CONJ	_	19	cc	_	_
+11	Skagamenn	skagamaður	PROPN	NPRS-N	_	19	nsubj	_	_
+12	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
+13	tveimur	tveir	NUM	NUM-D	Case=Dat	14	nummod	_	_
+14	sætum	sæti	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	_
+15	neðar	niðri	ADV	ADVR	Degree=Cmp	19	advmod	_	_
+16	með	með	ADP	P	_	19	case	_	_
+17	aðeins	aðeins	ADV	FP	Degree=Pos	19	advmod	_	_
+18	4	fjórir	NUM	NUM-A	Case=Acc	19	nummod	_	_
+19	stig	stig	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	conj	_	OriginalHead=0
+20	eftir	eftir	ADP	P	_	23	case	_	_
+21	fyrstu	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	23	amod	_	_
+22	sex	sex	NUM	NUM-A	Case=Acc	23	nummod	_	_
+23	umferðirnar	umferð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obl	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	_
+

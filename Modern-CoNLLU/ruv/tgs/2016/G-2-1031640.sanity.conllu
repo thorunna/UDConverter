@@ -1,0 +1,246 @@
+# sent_id = RUV_TGS_2016_G-2-1031640.SANITY,.1
+# X_ID = ID_MISSING
+# text = Ísland mætir Danmörku í vináttulandsleik í knattspyrnu í Herning í Danmörku annað kvöld.
+1	Ísland	ísland	PROPN	NPR-N	_	2	nsubj	_	_
+2	mætir	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	Danmörku	danmörk	PROPN	NPR-D	_	2	obj	_	_
+4	í	í	ADP	P	_	5	case	_	_
+5	vináttulandsleik	vináttulandsleikur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	knattspyrnu	knattspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	Herning	herning	PROPN	NPR-D	_	2	obl	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	Danmörku	danmörk	PROPN	NPR-D	_	9	obl	_	_
+12	annað	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	13	amod	_	_
+13	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	13	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031640.SANITY,.2
+# X_ID = ID_MISSING
+# text = Leikurinn verður fyrsti landsleikur Danmerkur undir stjórn nýs þjálfara því Morten Olsen hætti í haust eftir 16 ára starf.
+1	Leikurinn	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	fyrsti	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	4	amod	_	_
+4	landsleikur	landsleikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	_
+5	Danmerkur	danmörk	PROPN	NPR-G	_	4	nmod:poss	_	_
+6	undir	undir	ADP	P	_	7	case	_	_
+7	stjórn	stjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+8	nýs	nýr	ADJ	ADJ-G	Case=Gen|Degree=Pos	9	amod	_	_
+9	þjálfara	þjálfari	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
+10	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
+11	Morten	morten	PROPN	NPR-N	_	13	nsubj	_	_
+12	Olsen	olsen	PROPN	NPR-N	_	11	flat:name	_	_
+13	hætti	hætta	VERB	VBDI	Mood=Ind|Tense=Past	10	ccomp	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	haust	haust	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
+16	eftir	eftir	ADP	P	_	19	case	_	_
+17	16	sextán	NUM	NUM-G	Case=Gen	18	nummod	_	_
+18	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	nmod:poss	_	_
+19	starf	starf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031640.SANITY,.3
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Norðmaðurinn Åge Hareide stýrði sinni fyrstu æfingu hjá danska landsliðinu í gær og Danir velta því mikið fyrir sér hvort miklar breytingar muni strax sjást á spilamennsku landsliðsins undir hans stjórn.
+1	Norðmaðurinn	norðmaður	PROPN	NPR-N	_	4	nsubj	_	_
+2	Åge	Åge	PROPN	NPR-N	_	1	flat:name	_	_
+3	Hareide	Hareide	PROPN	NPR-N	_	2	flat:name	_	_
+4	stýrði	stýra	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+5	sinni	sinn	PRON	PRO-D	Case=Dat	7	nmod:poss	_	_
+6	fyrstu	fyrstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	7	amod	_	_
+7	æfingu	æfing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obj	_	_
+8	hjá	hjá	ADP	P	_	10	case	_	_
+9	danska	danskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	10	amod	_	_
+10	landsliðinu	landslið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	gær	gær	ADV	ADV	Degree=Pos	4	obl	_	_
+13	og	og	CCONJ	CONJ	_	15	cc	_	_
+14	Danir	dani	PROPN	NPRS-N	_	15	nsubj	_	_
+15	velta	velta	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+16	því	það	PRON	PRO-D	Case=Dat	15	obj	_	_
+17	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	15	obl	_	_
+18	fyrir	fyrir	ADP	P	_	19	case	_	_
+19	sér	sig	PRON	PRO-D	Case=Dat	15	obl	_	_
+20	hvort	hvort	SCONJ	WQ	_	25	mark	_	_
+21	miklar	mikill	DET	Q-N	Case=Nom|Degree=Pos	22	amod	_	_
+22	breytingar	breyting	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	25	nsubj	_	_
+23	muni	munu	AUX	MDPS	Mood=Sub|Tense=Pres	25	aux	_	_
+24	strax	strax	ADV	ADV	Degree=Pos	25	advmod	_	_
+25	sjást	sjá	VERB	VB	VerbForm=Inf	15	ccomp	_	_
+26	á	á	ADP	P	_	27	case	_	_
+27	spilamennsku	spilamennska	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
+28	landsliðsins	landslið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	27	nmod:poss	_	_
+29	undir	undir	ADP	P	_	31	case	_	_
+30	hans	hann	PRON	PRO-G	Case=Gen	31	nmod:poss	_	_
+31	stjórn	stjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
+32	.	.	PUNCT	.	_	31	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031640.SANITY,.4
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = „ Við erum að æfa og það tekur dálítinn tíma að sjá hlutina breytast.
+1	„	„	PUNCT	"	_	2	punct	_	_
+2	Við	ég	PRON	PRO-N	Case=Nom	0	root	_	_
+3	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	æfa	æfa	VERB	VB	VerbForm=Inf	2	acl	_	_
+6	og	og	CCONJ	CONJ	_	8	cc	_	_
+7	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	8	expl	_	_
+8	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+9	dálítinn	dálítill	DET	Q-A	Case=Acc|Degree=Pos	10	amod	_	_
+10	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	_
+11	að	að	PART	TO	_	12	mark	_	_
+12	sjá	sjá	VERB	VB	VerbForm=Inf	8	acl	_	_
+13	hlutina	hlutur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	nsubj	_	_
+14	breytast	breyta	VERB	VB	VerbForm=Inf	12	acl	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031640.SANITY,.5
+# X_ID = ID_MISSING
+# text = En ég held að við sjáum eldmóðinn og ánægjuna af því að spila fyrir Danmörki,“ sagði Hareide.
+1	En	en	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	að	að	SCONJ	C	_	6	mark	_	_
+5	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	sjáum	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	3	ccomp	_	_
+7	eldmóðinn	eldmóður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+8	og	og	CCONJ	CONJ	_	9	cc	_	_
+9	ánægjuna	ánægja	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+10	af	af	ADP	P	_	11	case	_	_
+11	því	það	PRON	PRO-D	Case=Dat	9	obl	_	_
+12	að	að	PART	TO	_	13	mark	_	_
+13	spila	spila	VERB	VB	VerbForm=Inf	11	acl	_	_
+14	fyrir	fyrir	ADP	P	_	15	dep	_	_
+15	Danmörki	danmörki	X	X	_	13	obl	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	SpaceAfter=No
+17	“	“	PUNCT	"	_	16	punct	_	_
+18	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	3	parataxis	_	_
+19	Hareide	hareide	PROPN	NPR-N	_	18	nsubj	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031640.SANITY,.6
+# X_ID = ID_MISSING
+# text = Heimir Hallgrímsson, landsliðsþjálfari Íslands, á von á breyttum leikstíl frá Dönum undir stjórn Hareide.
+1	Heimir	heimir	PROPN	NPR-N	_	7	nsubj	_	_
+2	Hallgrímsson	hallgrímsson	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	landsliðsþjálfari	landsliðsþjálfari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	_
+5	Íslands	ísland	PROPN	NPR-G	_	4	nmod:poss	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+8	von	von	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
+9	á	á	ADP	P	_	11	case	_	_
+10	breyttum	breyttur	ADJ	ADJ-D	Case=Dat|Degree=Pos	11	amod	_	_
+11	leikstíl	leikstíll	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+12	frá	frá	ADP	P	_	13	case	_	_
+13	Dönum	dani	PROPN	NPRS-D	_	11	obl	_	_
+14	undir	undir	ADP	P	_	15	case	_	_
+15	stjórn	stjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+16	Hareide	hareide	PROPN	NPR-G	_	15	nmod:poss	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031640.SANITY,.7
+# X_ID = ID_MISSING
+# text = „ Hann vill breytingar hjá danska liðinu, að þeir spili fótbolta, pressi meira og meiri hraða.
+1	„	„	PUNCT	"	_	2	punct	_	_
+2	Hann	hann	PRON	PRO-N	Case=Nom	0	root	_	_
+3	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	2	aux	_	_
+4	breytingar	breyting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
+5	hjá	hjá	ADP	P	_	7	case	_	_
+6	danska	danskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
+7	liðinu	lið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	að	að	SCONJ	C	_	11	mark	_	_
+10	þeir	hann	PRON	PRO-N	Case=Nom	11	nsubj	_	_
+11	spili	spila	VERB	VBPS	Mood=Sub|Tense=Pres	2	ccomp	_	_
+12	fótbolta	fótbolti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	14	punct	_	_
+14	pressi	pressa	VERB	VBPS	Mood=Sub|Tense=Pres	11	conj	_	_
+15	meira	mikill	DET	Q-A	Case=Acc|Degree=Pos	14	obl	_	_
+16	og	og	CCONJ	CONJ	_	18	cc	_	_
+17	meiri	mikill	DET	QR-A	Case=Acc|Degree=Pos	18	amod	_	_
+18	hraða	hraði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	conj	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	18	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031640.SANITY,.8
+# X_ID = ID_MISSING
+# text = Við búumst við því að leikmenn danska liðsins fari eftir því sem þjálfarinn vill og að það verði meiri læti í danska liðinu en hingað til.
+1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	búumst	búa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	við	við	ADP	P	_	4	case	_	_
+4	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
+5	að	að	SCONJ	C	_	9	mark	_	_
+6	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
+7	danska	danskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	8	amod	_	_
+8	liðsins	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	nmod:poss	_	_
+9	fari	fara	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
+10	eftir	eftir	ADP	P	_	11	case	_	_
+11	því	sá	DET	D-D	Case=Dat|PronType=Art	9	obl	_	_
+12	sem	sem	SCONJ	C	_	13	mark	_	_
+13	þjálfarinn	þjálfari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	acl:relcl	_	_
+14	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	13	aux	_	_
+15	og	og	CCONJ	CONJ	_	17	cc	_	_
+16	að	að	SCONJ	C	_	17	mark	_	_
+17	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	9	conj	_	_
+18	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	17	aux	_	_
+19	meiri	mikill	DET	QR-N	Case=Nom|Degree=Pos	20	amod	_	_
+20	læti	læti	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	obl	_	_
+21	í	í	ADP	P	_	23	case	_	_
+22	danska	danskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	23	amod	_	_
+23	liðinu	lið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
+24	en	en	ADP	P	_	25	case	_	_
+25	hingað	hingað	ADV	ADV	Degree=Pos	17	obl	_	_
+26	til	til	ADP	P	_	25	case	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	26	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031640.SANITY,.9
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Ég held að þeir verði beinskeyttari og búumst við pressu frá Dönunum, sagði Heimir Hallgrímsson.
+1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	að	að	SCONJ	C	_	6	mark	_	_
+4	þeir	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+5	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	6	aux	_	_
+6	beinskeyttari	beinskeyttur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	2	ccomp	_	_
+7	og	og	CCONJ	CONJ	_	8	cc	_	_
+8	búumst	búa	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+9	við	við	ADP	P	_	10	case	_	_
+10	pressu	pressa	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+11	frá	frá	ADP	P	_	12	case	_	_
+12	Dönunum	dani	PROPN	NPRS-D	_	10	obl	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	8	parataxis	_	_
+15	Heimir	heimir	PROPN	NPR-N	_	14	nsubj	_	_
+16	Hallgrímsson	hallgrímsson	PROPN	NPR-N	_	15	flat:name	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031640.SANITY,.10
+# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
+# text = Leikur Danmerkur og Íslands hefst klukkan sjö annað kvöld og verður sýndur beint á RÚV, upphitun fyrir leikinn hefst klukkan 18.35.
+1	Leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+2	Danmerkur	danmörk	PROPN	NPR-G	_	1	nmod:poss	_	_
+3	og	og	CCONJ	CONJ	_	2	cc	_	_
+4	Íslands	ísland	PROPN	NPR-G	_	2	dep	_	_
+5	hefst	hefja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+6	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	advcl	_	_
+7	sjö	sjö	NUM	NUM-N	Case=Nom	6	xcomp	_	_
+8	annað	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
+9	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
+10	og	og	CCONJ	CONJ	_	12	cc	_	_
+11	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	12	aux	_	_
+12	sýndur	sýna	VERB	VAN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
+13	beint	beint	ADV	ADV	Degree=Pos	12	advmod	_	_
+14	á	á	ADP	P	_	15	case	_	_
+15	RÚV	rúv	PROPN	NPR-D	_	12	obl	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	upphitun	upphitun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	_
+18	fyrir	fyrir	ADP	P	_	19	case	_	_
+19	leikinn	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
+20	hefst	hefja	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+21	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	advcl	_	_
+22	18	átján	NUM	NUM-N	Case=Nom	21	xcomp	_	SpaceAfter=No
+23	.	_	PUNCT	,	_	24	punct	_	_|SpaceAfter=No
+24	35	35	NUM	NUM-N	Case=Nom	22	conj	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	24	punct	_	_
+

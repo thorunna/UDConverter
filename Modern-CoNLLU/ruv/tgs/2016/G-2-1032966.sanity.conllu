@@ -1,0 +1,266 @@
+# sent_id = RUV_TGS_2016_G-2-1032966.SANITY,.1
+# X_ID = ID_MISSING
+# text = Fótfráasti maður heims, Jamaíkumaðurinn Usain Bolt hefur nú tekið af allan vafa um að hann verði meðal keppenda á Ólympíuleikunum í Tókýó 2020.
+1	Fótfráasti	fótfrár	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	amod	_	_
+2	maður	maður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+3	heims	heimur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	nmod:poss	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Jamaíkumaðurinn	jamaíkumaður	PROPN	NPR-N	_	2	appos	_	_
+6	Usain	usain	PROPN	NPR-N	_	5	flat:name	_	_
+7	Bolt	bolt	PROPN	NPR-N	_	6	flat:name	_	_
+8	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	10	aux	_	_
+9	nú	nú	ADV	ADV	Degree=Pos	10	advmod	_	_
+10	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+11	af	af	ADP	RP	_	10	compound:prt	_	_
+12	allan	allur	DET	Q-A	Case=Acc|Degree=Pos	13	amod	_	_
+13	vafa	vafi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
+14	um	um	ADP	P	_	17	case	_	_
+15	að	að	SCONJ	C	_	17	mark	_	_
+16	hann	hann	PRON	PRO-N	Case=Nom	17	nsubj	_	_
+17	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	13	obl	_	_
+18	meðal	meðal	ADP	P	_	19	case	_	_
+19	keppenda	keppandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	17	obl	_	_
+20	á	á	ADP	P	_	21	case	_	_
+21	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	17	obl	_	_
+22	í	í	ADP	P	_	23	case	_	_
+23	Tókýó	tókýó	PROPN	NPR-D	_	21	obl	_	_
+24	2020	2020	NUM	NUM-A	Case=Acc	21	obl	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	24	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032966.SANITY,.2
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Þjálfari hans hafði gefið það sterklega í skyn, en nú hefur Bolt komið fram og sagt afdráttarlaust að hans síðustu Ólympíuleikar verði leikarnir í Ríó de Janeiro í sumar.
+1	Þjálfari	þjálfari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+2	hans	hann	PRON	PRO-G	Case=Gen	1	nmod:poss	_	_
+3	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	4	aux	_	_
+4	gefið	gefa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	það	það	PRON	PRO-A	Case=Acc	4	obj	_	_
+6	sterklega	sterklega	ADV	ADV	Degree=Pos	4	advmod	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	skyn	skyn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	en	en	CCONJ	CONJ	_	14	cc	_	_
+11	nú	nú	ADV	ADV	Degree=Pos	14	advmod	_	_
+12	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	14	aux	_	_
+13	Bolt	bolt	PROPN	NPR-N	_	14	nsubj	_	_
+14	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
+15	fram	fram	ADP	RP	_	14	compound:prt	_	_
+16	og	og	CCONJ	CONJ	_	17	cc	_	_
+17	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	14	conj	_	_
+18	afdráttarlaust	afdráttarlaust	ADV	ADV	Degree=Pos	17	advmod	_	_
+19	að	að	SCONJ	C	_	23	mark	_	_
+20	hans	hann	PRON	PRO-G	Case=Gen	22	nmod:poss	_	_
+21	síðustu	síðari	ADJ	ADJS-N	Case=Nom|Degree=Sup	22	amod	_	_
+22	Ólympíuleikar	ólympíuleikar	PROPN	NPRS-N	_	23	nsubj	_	_
+23	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	17	ccomp	_	_
+24	leikarnir	leikur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	23	xcomp	_	_
+25	í	í	ADP	P	_	26	case	_	_
+26	Ríó	ríó	PROPN	NPR-D	_	24	obl	_	_
+27	de	de	PROPN	NPR-D	_	26	flat:name	_	_
+28	Janeiro	janeiro	PROPN	NPR-D	_	26	dep	_	_
+29	í	í	ADP	P	_	30	case	_	_
+30	sumar	sumar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	30	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032966.SANITY,.3
+# X_ID = ID_MISSING
+# text = „ Leikarnir í Ríó verða klárlega mínir síðustu Ólympíuleikar.
+1	„	„	PUNCT	"	_	5	punct	_	_
+2	Leikarnir	leikur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
+3	í	í	ADP	P	_	4	case	_	_
+4	Ríó	ríó	PROPN	NPR-D	_	2	obl	_	_
+5	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+6	klárlega	klárlega	ADV	ADV	Degree=Pos	5	advmod	_	_
+7	mínir	minn	PRON	PRO-N	Case=Nom	5	xcomp	_	_
+8	síðustu	síðari	ADJ	ADJS-N	Case=Nom|Degree=Sup	7	amod	_	_
+9	Ólympíuleikar	ólympíuleikar	PROPN	NPRS-N	_	7	conj	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032966.SANITY,.4
+# X_ID = ID_MISSING
+# text = Það yrði erfitt fyrir mig að halda mér á tánum og hafa hvatningu í fjögur ár í viðbót, þannig leikarnir í Ríó verða mínir síðustu,“ er haft eftir Bolt á AFP fréttaveitunni.
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
+2	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	0	root	_	_
+3	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+4	fyrir	fyrir	ADP	P	_	5	case	_	_
+5	mig	ég	PRON	PRO-A	Case=Acc	2	obl	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	halda	halda	VERB	VB	VerbForm=Inf	2	acl	_	_
+8	mér	ég	PRON	PRO-D	Case=Dat	7	obj	_	_
+9	á	á	ADP	P	_	10	case	_	_
+10	tánum	tá	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	_
+11	og	og	CCONJ	CONJ	_	12	cc	_	_
+12	hafa	hafa	AUX	HV	VerbForm=Inf	7	acl	_	_
+13	hvatningu	hvatning	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obj	_	_
+14	í	í	ADP	P	_	16	case	_	_
+15	fjögur	fjórir	NUM	NUM-A	Case=Acc	16	nummod	_	_
+16	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
+17	í	í	ADP	P	_	18	case	_	_
+18	viðbót	viðbót	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	þannig	þannig	ADV	ADV	Degree=Pos	2	advmod	_	_
+21	leikarnir	leikur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	20	advcl	_	_
+22	í	í	ADP	P	_	23	case	_	_
+23	Ríó	ríó	PROPN	NPR-D	_	21	obl	_	_
+24	verða	verða	AUX	RDPI	Mood=Ind|Tense=Pres	21	aux	_	_
+25	mínir	minn	PRON	PRO-N	Case=Nom	21	xcomp	_	_
+26	síðustu	síðari	ADJ	ADJS-N	Case=Nom|Degree=Sup	25	amod	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	26	punct	_	SpaceAfter=No
+28	“	“	PUNCT	"	_	27	punct	_	_
+29	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	32	cop	_	_
+30	haft	hafa	AUX	HAN	Tense=Past|VerbForm=Part	32	aux	_	_
+31	eftir	eftir	ADP	P	_	32	case	_	_
+32	Bolt	bolt	PROPN	NPR-D	_	2	parataxis	_	_
+33	á	á	ADP	P	_	35	case	_	_
+34	AFP	afp	PROPN	NPR-N	_	35	dep	_	_
+35	fréttaveitunni	fréttaveita	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	SpaceAfter=No
+36	.	.	PUNCT	.	_	35	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032966.SANITY,.5
+# X_ID = ID_MISSING
+# text = Usain Bolt er sexfaldur Ólympíumeistari.
+1	Usain	usain	PROPN	NPR-N	_	4	nsubj	_	_
+2	Bolt	bolt	PROPN	NPR-N	_	1	flat:name	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+4	sexfaldur	sexfaldur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+5	Ólympíumeistari	ólympíumeistari	PROPN	NPR-N	_	4	dep	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032966.SANITY,.6
+# X_ID = ID_MISSING
+# text = Hann vann gullverðlaun í 100, 200 og 4x100 m hlaupum á Ólympíuleikunum í Peking 2008 og svo aftur í London 2012.
+1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	gullverðlaun	gullverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
+4	í	í	ADP	P	_	13	case	_	_
+5	100	hundrað	NUM	NUM-G	Case=Gen	13	dep	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	7	punct	_	_
+7	200	200	NUM	NUM-G	Case=Gen	5	conj	_	_
+8	og	og	CCONJ	CONJ	_	11	cc	_	_
+9	4	fjórir	NUM	NUM-D	Case=Dat	10	nummod	_	SpaceAfter=No
+10	x	sinn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
+11	100	hundrað	NUM	NUM-G	Case=Gen	5	conj	_	_
+12	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	5	conj	_	_
+13	hlaupum	hlaup	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
+14	á	á	ADP	P	_	15	case	_	_
+15	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	2	obl	_	_
+16	í	í	ADP	P	_	17	case	_	_
+17	Peking	peking	PROPN	NPR-D	_	15	obl	_	_
+18	2008	2008	NUM	NUM-A	Case=Acc	17	obl	_	_
+19	og	og	CCONJ	CONJ	_	23	cc	_	_
+20	svo	svo	ADV	ADV	Degree=Pos	23	advmod	_	_
+21	aftur	aftur	ADV	ADV	Degree=Pos	23	advmod	_	_
+22	í	í	ADP	P	_	23	case	_	_
+23	London	london	PROPN	NPR-D	_	2	conj	_	_
+24	2012	2012	NUM	NUM-A	Case=Acc	23	obl	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	24	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032966.SANITY,.7
+# X_ID = ID_MISSING
+# text = Þá á Bolt heimsmetin í greinunum þremur.
+1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	Bolt	bolt	PROPN	NPR-N	_	2	nsubj	_	_
+4	heimsmetin	heimsmet	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	greinunum	grein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
+7	þremur	þrír	NUM	NUM-D	Case=Dat	6	nummod	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032966.SANITY,.8
+# X_ID = ID_MISSING
+# text = Heimsmet hans í 100 m hlaupi er 9,58 sekúndur, 19,19 sekúndur í 200 m hlaupi og 36,84 sekúndur í 4x100 m boðhlaupi með sveit Jamaíku.
+1	Heimsmet	heimsmet	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
+2	hans	hann	PRON	PRO-G	Case=Gen	1	nmod:poss	_	_
+3	í	í	ADP	P	_	6	case	_	_
+4	100	hundrað	NUM	NUM-G	Case=Gen	6	dep	_	_
+5	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	conj	_	_
+6	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
+7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
+8	9,58	9,58	NUM	NUM-N	Case=Nom	9	nummod	_	_
+9	sekúndur	sekúnda	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	19,19	19,19	NUM	NUM-N	Case=Nom	12	nummod	_	_
+12	sekúndur	sekúnda	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	16	xcomp	_	_
+13	í	í	ADP	P	_	16	case	_	_
+14	200	200	NUM	NUM-G	Case=Gen	16	dep	_	_
+15	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	conj	_	_
+16	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	conj	_	_
+17	og	og	CCONJ	CONJ	_	25	cc	_	_
+18	36,84	36,84	NUM	NUM-N	Case=Nom	19	nummod	_	_
+19	sekúndur	sekúnda	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	25	xcomp	_	_
+20	í	í	ADP	P	_	25	case	_	_
+21	4	fjórir	NUM	NUM-D	Case=Dat	22	nummod	_	SpaceAfter=No
+22	x	sinn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	23	obl	_	SpaceAfter=No
+23	100	hundrað	NUM	NUM-G	Case=Gen	25	dep	_	_
+24	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	23	conj	_	_
+25	boðhlaupi	boðhlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	conj	_	_
+26	með	með	ADP	P	_	27	case	_	_
+27	sveit	sveit	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
+28	Jamaíku	jamaíka	PROPN	NPR-G	_	27	nmod:poss	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	28	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032966.SANITY,.9
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Bolt hafði í raun sagt fyrir nokkrum árum að hann ætlaði sér að keppa á Ólympíuleikunum í Ríó í ár og hætta svo líklega eftir heimsmeistaramótið í London á næsta ári, en það hefur hann þó aldrei staðfest.
+1	Bolt	bolt	PROPN	NPR-N	_	5	nsubj	_	_
+2	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	5	aux	_	_
+3	í	í	ADP	P	_	4	case	_	_
+4	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+5	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	fyrir	fyrir	ADP	P	_	8	case	_	_
+7	nokkrum	nokkur	DET	Q-D	Case=Dat|Degree=Pos	8	amod	_	_
+8	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
+9	að	að	SCONJ	C	_	11	mark	_	_
+10	hann	hann	PRON	PRO-N	Case=Nom	11	nsubj	_	_
+11	ætlaði	ætla	VERB	VBDS	Mood=Sub|Tense=Past	5	ccomp	_	_
+12	sér	sig	PRON	PRO-D	Case=Dat	11	obj	_	_
+13	að	að	PART	TO	_	14	mark	_	_
+14	keppa	keppa	VERB	VB	VerbForm=Inf	11	acl	_	_
+15	á	á	ADP	P	_	16	case	_	_
+16	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	14	obl	_	_
+17	í	í	ADP	P	_	18	case	_	_
+18	Ríó	ríó	PROPN	NPR-D	_	16	obl	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	ár	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
+21	og	og	CCONJ	CONJ	_	22	cc	_	_
+22	hætta	hætta	VERB	VB	VerbForm=Inf	14	acl	_	_
+23	svo	svo	ADV	ADV	Degree=Pos	22	advmod	_	_
+24	líklega	líklega	ADV	ADV	Degree=Pos	22	advmod	_	_
+25	eftir	eftir	ADP	P	_	26	case	_	_
+26	heimsmeistaramótið	heimsmeistaramót	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
+27	í	í	ADP	P	_	28	case	_	_
+28	London	london	PROPN	NPR-D	_	26	obl	_	_
+29	á	á	ADP	P	_	31	case	_	_
+30	næsta	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	31	amod	_	_
+31	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	SpaceAfter=No
+32	,	,	PUNCT	,	_	31	punct	_	_
+33	en	en	CCONJ	CONJ	_	39	cc	_	_
+34	það	það	PRON	PRO-A	Case=Acc	39	obj	_	_
+35	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	39	aux	_	_
+36	hann	hann	PRON	PRO-N	Case=Nom	39	nsubj	_	_
+37	þó	þó	ADV	ADV	Degree=Pos	39	advmod	_	_
+38	aldrei	aldrei	ADV	ADV	Degree=Pos	39	advmod	_	_
+39	staðfest	staðfesta	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0|SpaceAfter=No
+40	.	.	PUNCT	.	_	39	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032966.SANITY,.10
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Bolt er fæddur 21. ágúst 1986 og verður því 30 ára síðar á þessu ári.
+1	Bolt	bolt	PROPN	NPR-N	_	3	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	fæddur	fæða	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+4	21.	21.	NUM	NUM-A	Case=Acc	3	obl	_	_
+5	ágúst	ágúst	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	nmod:poss	_	_
+6	1986	1986	NUM	NUM-A	Case=Acc	4	obl	_	_
+7	og	og	CCONJ	CONJ	_	8	cc	_	_
+8	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+9	því	það	PRON	PRO-D	Case=Dat	8	obl	_	_
+10	30	þrjátíu	NUM	NUM-G	Case=Gen	11	nummod	_	_
+11	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	amod	_	_
+12	síðar	síðar	ADV	ADVR	Degree=Cmp	8	advmod	_	_
+13	á	á	ADP	P	_	15	case	_	_
+14	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	15	det	_	_
+15	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	_
+

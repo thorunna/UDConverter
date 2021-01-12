@@ -1,0 +1,169 @@
+# sent_id = ALTHINGI_BO_2015_G-33-4821747,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti. Ég hef af því áhyggjur ef yfirvofandi lögsókn útgerðarfyrirtækja hafi áhrif á það hvað við teljum okkur geta gert hér í þessum sal.
+1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	_
+4	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+6	af	af	ADP	P	_	7	case	_	_
+7	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
+8	áhyggjur	áhyggja	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obj	_	_
+9	ef	ef	ADP	P	_	13	case	_	_
+10	yfirvofandi	yfirvofandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
+11	lögsókn	lögsókn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
+12	útgerðarfyrirtækja	útgerðarfyrirtæki	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	nmod:poss	_	_
+13	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	5	obl	_	_
+14	áhrif	áhrif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obj	_	_
+15	á	á	ADP	P	_	16	case	_	_
+16	það	það	PRON	PRO-A	Case=Acc	13	obl	_	_
+17	hvað	hver	PRON	WPRO-A	Case=Acc	19	obj	_	_
+18	við	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
+19	teljum	telja	VERB	VBPI	Mood=Ind|Tense=Pres	16	ccomp	_	_
+20	okkur	ég	PRON	PRO-A	Case=Acc	22	nsubj	_	_
+21	geta	geta	AUX	MD	VerbForm=Inf	22	aux	_	_
+22	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	19	acl	_	_
+23	hér	hér	ADV	ADV	Degree=Pos	26	advmod	_	_
+24	í	í	ADP	P	_	26	case	_	_
+25	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	26	det	_	_
+26	sal	salur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	26	punct	_	_
+
+# sent_id = ALTHINGI_BO_2015_G-33-4821747,.2
+# X_ID = ID_MISSING
+# text = Verður sú lögsókn þá ekki bara að koma fram?
+1	Verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	sú	sá	DET	D-N	Case=Nom|PronType=Art	3	det	_	_
+3	lögsókn	lögsókn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
+4	þá	þá	ADV	ADV	Degree=Pos	1	advmod	_	_
+5	ekki	ekki	ADV	NEG	_	1	advmod	_	_
+6	bara	bara	ADV	FP	Degree=Pos	1	advmod	_	_
+7	að	að	PART	TO	_	8	mark	_	_
+8	koma	koma	VERB	VB	VerbForm=Inf	1	acl	_	_
+9	fram	fram	ADP	RP	_	8	compound:prt	_	SpaceAfter=No
+10	?	?	PUNCT	.	_	9	punct	_	_
+
+# sent_id = ALTHINGI_BO_2015_G-33-4821747,.3
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Ráðherrar hafa tekið af kvóta útgerðarfyrirtækja, þeir hafa gert það, sett í byggðakvóta og ýmislegt annað.
+1	Ráðherrar	ráðherra	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
+2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	3	aux	_	_
+3	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+4	af	af	ADP	P	_	5	case	_	_
+5	kvóta	kvóti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+6	útgerðarfyrirtækja	útgerðarfyrirtæki	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	5	nmod:poss	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	þeir	hann	PRON	PRO-N	Case=Nom	10	nsubj	_	_
+9	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	10	aux	_	_
+10	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0
+11	það	það	PRON	PRO-A	Case=Acc	10	obj	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	sett	setja	VERB	VBN	Tense=Past|VerbForm=Part	10	parataxis	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	byggðakvóta	byggðakvóti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
+16	og	og	CCONJ	CONJ	_	18	cc	_	_
+17	ýmislegt	ýmislegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	18	amod	_	_
+18	annað	annar	PRON	OTHER-A	Case=Acc	15	conj	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	18	punct	_	_
+
+# sent_id = ALTHINGI_BO_2015_G-33-4821747,.4
+# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
+# text = Ég er ekkert endilega að tala fyrir þannig vinnubrögðum en þetta hefur verið gert og enginn dómur hefur fallið ríkinu í óhag varðandi þau mál.
+1	Ég	ég	PRON	PRO-N	Case=Nom	0	root	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	1	obl	_	_
+4	endilega	endilega	ADV	ADV	Degree=Pos	1	advmod	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	tala	tala	VERB	VB	VerbForm=Inf	1	acl	_	_
+7	fyrir	fyrir	ADP	P	_	9	case	_	_
+8	þannig	þannig	ADV	ADV	Degree=Pos	9	advmod	_	_
+9	vinnubrögðum	vinnubrögð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+10	en	en	CCONJ	CONJ	_	14	cc	_	_
+11	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	14	nsubj	_	_
+12	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	14	aux	_	_
+13	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	14	cop	_	_
+14	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	1	conj	_	OriginalHead=0
+15	og	og	CCONJ	CONJ	_	19	cc	_	_
+16	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	17	amod	_	_
+17	dómur	dómur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
+18	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	19	aux	_	_
+19	fallið	falla	VERB	VBN	Tense=Past|VerbForm=Part	1	conj	_	OriginalHead=0
+20	ríkinu	ríki	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
+21	í	í	ADP	P	_	20	case	_	_
+22	óhag	óhagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	_
+23	varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	19	advcl	_	_
+24	þau	sá	DET	D-A	Case=Acc|PronType=Art	25	det	_	_
+25	mál	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obj	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	25	punct	_	_
+
+# sent_id = ALTHINGI_BO_2015_G-33-4821747,.5
+# X_ID = ID_MISSING
+# text = Af hverju ber ráðherra fyrir sig þessa hræðslu núna?
+1	Af	af	ADP	P	_	2	case	_	_
+2	hverju	hver	PRON	WPRO-D	Case=Dat	3	obl	_	_
+3	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+5	fyrir	fyrir	ADP	P	_	6	case	_	_
+6	sig	sig	PRON	PRO-A	Case=Acc	3	obl	_	_
+7	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	8	det	_	_
+8	hræðslu	hræðsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
+9	núna	núna	ADV	ADV	Degree=Pos	3	advmod	_	SpaceAfter=No
+10	?	?	PUNCT	.	_	9	punct	_	_
+
+# sent_id = ALTHINGI_BO_2015_G-33-4821747,.6
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Eins og ráðherra segir eru þrjú atriði sem eru tiltekin sem ástæður þessarar lagasetningar og veigamesta atriðið þar er hræðsla við lögsókn.
+1	Eins	eins	ADV	ADV	Degree=Pos	7	advmod	_	_
+2	og	og	ADP	P	_	4	case	_	_
+3	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+4	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	1	obl	_	_
+5	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
+6	þrjú	þrír	NUM	NUM-N	Case=Nom	7	nummod	_	_
+7	atriði	atriði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
+8	sem	sem	SCONJ	C	_	10	mark	_	_
+9	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
+10	tiltekin	tiltaka	VERB	VAN	Tense=Past|VerbForm=Part	7	acl:relcl	_	_
+11	sem	sem	SCONJ	C	_	12	mark	_	_
+12	ástæður	ástæða	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	advcl	_	_
+13	þessarar	þessi	DET	D-G	Case=Gen|PronType=Art	14	det	_	_
+14	lagasetningar	lagasetning	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	nmod:poss	_	_
+15	og	og	CCONJ	CONJ	_	20	cc	_	_
+16	veigamesta	veigamikill	ADJ	ADJS-N	Case=Nom|Degree=Sup	17	amod	_	_
+17	atriðið	atriði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	_
+18	þar	þar	ADV	ADV	Degree=Pos	17	advmod	_	_
+19	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
+20	hræðsla	hræðsla	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	conj	_	OriginalHead=0
+21	við	við	ADP	P	_	22	case	_	_
+22	lögsókn	lögsókn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	22	punct	_	_
+
+# sent_id = ALTHINGI_BO_2015_G-33-4821747,.7
+# X_ID = ID_MISSING
+# text = Ef við trúum því Forseti hringir. statt og stöðugt að fiskurinn sé í eigu þjóðarinnar verðum við líka að meina það sem við segjum.
+1	Ef	ef	ADP	P	_	3	case	_	_
+2	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	trúum	trúa	VERB	VBPI	Mood=Ind|Tense=Pres	17	obl	_	_
+4	því	það	PRON	PRO-D	Case=Dat	3	obj	_	_
+5	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+6	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	3	dep	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	6	punct	_	_
+8	statt	statt	ADV	ADV	Degree=Pos	3	advmod	_	_
+9	og	og	CCONJ	CONJ	_	8	cc	_	_
+10	stöðugt	stöðugt	ADV	ADV	Degree=Pos	8	advmod	_	_
+11	að	að	SCONJ	C	_	15	mark	_	_
+12	fiskurinn	fiskur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
+13	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	15	cop	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	eigu	eiga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	ccomp	_	_
+16	þjóðarinnar	þjóð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	15	nmod:poss	_	_
+17	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+18	við	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
+19	líka	líka	ADV	ALSO	_	17	advmod	_	_
+20	að	að	PART	TO	_	21	mark	_	_
+21	meina	meina	VERB	VB	VerbForm=Inf	17	acl	_	_
+22	það	sá	DET	D-A	Case=Acc|PronType=Art	21	obj	_	_
+23	sem	sem	SCONJ	C	_	25	mark	_	_
+24	við	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
+25	segjum	segja	VERB	VBPI	Mood=Ind|Tense=Pres	22	acl:relcl	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	25	punct	_	_
+

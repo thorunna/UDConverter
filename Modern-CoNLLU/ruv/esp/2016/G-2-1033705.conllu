@@ -1,0 +1,660 @@
+# sent_id = RUV_ESP_2016_G-2-1033705,.1
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Evrópumótinu í sundi í 50 m laug lauk í gær og stóð íslenskt sundfólk sig með stakri prýði.
+1	Evrópumótinu	evrópumót	PROPN	NPR-D	_	8	nsubj	_	_
+2	í	í	ADP	P	_	3	case	_	_
+3	sundi	sund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
+4	í	í	ADP	P	_	7	case	_	_
+5	50	fimmtíu	NUM	NUM-G	Case=Gen	6	nummod	_	_
+6	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	nmod:poss	_	_
+7	laug	laug	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+8	lauk	ljúka	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+9	í	í	ADP	P	_	10	case	_	_
+10	gær	gær	ADV	ADV	Degree=Pos	8	obl	_	_
+11	og	og	CCONJ	CONJ	_	12	cc	_	_
+12	stóð	standa	VERB	VBDI	Mood=Ind|Tense=Past	8	conj	_	OriginalHead=0
+13	íslenskt	íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	14	amod	_	_
+14	sundfólk	sundfólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
+15	sig	sig	PRON	PRO-A	Case=Acc	12	obj	_	_
+16	með	með	ADP	P	_	18	case	_	_
+17	stakri	stakur	ADJ	ADJ-D	Case=Dat|Degree=Pos	18	amod	_	_
+18	prýði	prýði	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	18	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.2
+# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
+# text = Fimm Íslendingar kepptu á mótinu, þeir komust átta sinnum í úrslit og settu fjögur Íslandsmet.
+1	Fimm	fimm	NUM	NUM-N	Case=Nom	2	nummod	_	_
+2	Íslendingar	íslendingur	PROPN	NPRS-N	_	3	nsubj	_	_
+3	kepptu	keppa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	þeir	hann	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+8	komust	koma	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
+9	átta	átta	NUM	NUM-D	Case=Dat	10	nummod	_	_
+10	sinnum	sinn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	settu	setja	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
+15	fjögur	fjórir	NUM	NUM-A	Case=Acc	16	nummod	_	_
+16	Íslandsmet	íslandsmet	PROPN	NPRS-A	_	14	obj	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.3
+# X_ID = ID_MISSING
+# text = Þetta var besti árangur íslenskra sundmanna til þessa.
+1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+3	besti	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	4	amod	_	_
+4	árangur	árangur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+5	íslenskra	íslenskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	6	amod	_	_
+6	sundmanna	sundmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
+7	til	til	ADP	P	_	8	case	_	_
+8	þessa	þessi	DET	D-G	Case=Gen|PronType=Art	4	obl	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.4
+# X_ID = ID_MISSING
+# text = Hrafnhildur Lúthersdóttir var að öðrum ólöstuðum stjarna mótsins.
+1	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	6	nsubj	_	_
+2	Lúthersdóttir	lúthersdóttir	PROPN	NPR-N	_	1	flat:name	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
+4	að	að	ADP	P	_	6	case	_	_
+5	öðrum	annar	PRON	OTHER-D	Case=Dat	6	obl	_	_
+6	ólöstuðum	ólastaður	ADJ	ADJ-D	Case=Dat|Degree=Pos	0	root	_	_
+7	stjarna	stjarna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	xcomp	_	_
+8	mótsins	mót	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.5
+# X_ID = ID_MISSING
+# text = Hún vann til silfurverðlauna í 50 og 100 m bringusundi og bronsverðlauna í 200 m bringusundi.
+1	Hún	hún	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	til	til	ADP	P	_	4	case	_	_
+4	silfurverðlauna	silfurverðlaun	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	obl	_	_
+5	í	í	ADP	P	_	10	case	_	_
+6	50	fimmtíu	NUM	NUM-G	Case=Gen	9	nummod	_	_
+7	og	og	CCONJ	CONJ	_	6	cc	_	_
+8	100	hundrað	NUM	NUM-G	Case=Gen	6	nummod	_	_
+9	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	nmod:poss	_	_
+10	bringusundi	bringusund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+11	og	og	CCONJ	CONJ	_	12	cc	_	_
+12	bronsverðlauna	bronsverðlaun	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	conj	_	_
+13	í	í	ADP	P	_	16	case	_	_
+14	200	200	NUM	NUM-G	Case=Gen	15	nummod	_	_
+15	m	metri	PROPN	NPR-G	_	16	nmod:poss	_	_
+16	bringusundi	bringusund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.6
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Hrafnhildur var eini kvenkeppandinn á mótinu sem komst á verðlaunapall í öllum bringusundsgreinunum þremur og varð fyrsta íslenska sundkonan til að vinna til verðlauna á stórmóti í 50 m laug.
+1	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	4	nsubj	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+3	eini	einn	DET	ONE-N	Case=Nom|Number=Sing	4	det	_	_
+4	kvenkeppandinn	kvenkeppandi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+7	sem	sem	SCONJ	C	_	8	mark	_	_
+8	komst	koma	VERB	VBDI	Mood=Ind|Tense=Past	4	acl:relcl	_	_
+9	á	á	ADP	P	_	10	case	_	_
+10	verðlaunapall	verðlaunapallur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
+11	í	í	ADP	P	_	13	case	_	_
+12	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	13	amod	_	_
+13	bringusundsgreinunum	bringusundsgreinir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
+14	þremur	þrír	NUM	NUM-D	Case=Dat	13	nummod	_	_
+15	og	og	CCONJ	CONJ	_	16	cc	_	_
+16	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
+17	fyrsta	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	18	amod	_	_
+18	íslenska	íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	16	xcomp	_	_
+19	sundkonan	sundkona	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	conj	_	_
+20	til	til	ADP	P	_	22	case	_	_
+21	að	að	PART	TO	_	22	mark	_	_
+22	vinna	vinna	VERB	VB	VerbForm=Inf	18	obl	_	_
+23	til	til	ADP	P	_	24	case	_	_
+24	verðlauna	verðlaun	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	22	obl	_	_
+25	á	á	ADP	P	_	26	case	_	_
+26	stórmóti	stórmót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
+27	í	í	ADP	P	_	30	case	_	_
+28	50	fimmtíu	NUM	NUM-G	Case=Gen	29	nummod	_	_
+29	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	30	nmod:poss	_	_
+30	laug	laug	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	30	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.7
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Það er ekki algengt að sundfólk sé jafnvígt á allar vegalengdir og hefur þessi frammistaða Hrafnhildar vakið mikla athygli innan sundheimsins.
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
+4	algengt	algengur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+5	að	að	SCONJ	C	_	8	mark	_	_
+6	sundfólk	sundfólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+7	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	8	cop	_	_
+8	jafnvígt	jafnvígur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	ccomp	_	_
+9	á	á	ADP	P	_	11	case	_	_
+10	allar	allur	DET	Q-A	Case=Acc|Degree=Pos	11	amod	_	_
+11	vegalengdir	vegalengd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	amod	_	_
+12	og	og	CCONJ	CONJ	_	17	cc	_	_
+13	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	17	aux	_	_
+14	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	15	det	_	_
+15	frammistaða	frammistaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
+16	Hrafnhildar	hrafnhildur	PROPN	NPR-G	_	15	nmod:poss	_	_
+17	vakið	vekja	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
+18	mikla	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	19	amod	_	_
+19	athygli	athygli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
+20	innan	innan	ADP	P	_	21	case	_	_
+21	sundheimsins	sundheim	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	21	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.8
+# X_ID = ID_MISSING
+# text = Skemmst er að minnast góðs árangurs Eyglóar Óskar Gústafsdóttur á síðasta ári.
+1	Skemmst	skammur	ADJ	ADJS-N	Case=Nom|Degree=Sup	0	root	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
+3	að	að	PART	TO	_	4	mark	_	_
+4	minnast	minna	VERB	VB	VerbForm=Inf	1	xcomp	_	_
+5	góðs	góður	ADJ	ADJ-G	Case=Gen|Degree=Pos	6	amod	_	_
+6	árangurs	árangur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	obj	_	_
+7	Eyglóar	eygló	PROPN	NPR-G	_	6	appos	_	_
+8	Óskar	ósk	PROPN	NPR-G	_	7	flat:name	_	_
+9	Gústafsdóttur	gústafsdóttir	PROPN	NPR-G	_	7	dep	_	_
+10	á	á	ADP	P	_	12	case	_	_
+11	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	12	amod	_	_
+12	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	12	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.9
+# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
+# text = Helst ber að nefna tvenn bronsverðlaun á Evrópumótinu í 25 metra laug, í 100 og 200 m baksundi og þá hún komst einnig í úrslit í 200 m baksundi á heimsmeistaramótinu í 50 m laug og hafnaði í áttunda sæti.
+1	Helst	gjarna	ADV	ADVS	Degree=Sup	2	advmod	_	_
+2	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	að	að	PART	TO	_	4	mark	_	_
+4	nefna	nefna	VERB	VB	VerbForm=Inf	2	acl	_	_
+5	tvenn	tvennur	ADJ	ADJ-A	Case=Acc|Degree=Pos	6	amod	_	_
+6	bronsverðlaun	bronsverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obj	_	_
+7	á	á	ADP	P	_	8	case	_	_
+8	Evrópumótinu	evrópumót	PROPN	NPR-D	_	6	obl	_	_
+9	í	í	ADP	P	_	12	case	_	_
+10	25	25	NUM	NUM-G	Case=Gen	11	nummod	_	_
+11	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	nmod:poss	_	_
+12	laug	laug	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	í	í	ADP	P	_	19	case	_	_
+15	100	hundrað	NUM	NUM-G	Case=Gen	18	nummod	_	_
+16	og	og	CCONJ	CONJ	_	15	cc	_	_
+17	200	200	NUM	NUM-G	Case=Gen	15	nummod	_	_
+18	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	nmod:poss	_	_
+19	baksundi	baksund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+20	og	og	CCONJ	CONJ	_	23	cc	_	_
+21	þá	þá	ADV	ADV	Degree=Pos	23	advmod	_	_
+22	hún	hún	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+23	komst	koma	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+24	einnig	einnig	ADV	ALSO	_	23	advmod	_	_
+25	í	í	ADP	P	_	26	case	_	_
+26	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obl	_	_
+27	í	í	ADP	P	_	30	case	_	_
+28	200	200	NUM	NUM-G	Case=Gen	29	nummod	_	_
+29	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	30	nmod:poss	_	_
+30	baksundi	baksund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
+31	á	á	ADP	P	_	32	case	_	_
+32	heimsmeistaramótinu	heimsmeistaramót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obl	_	_
+33	í	í	ADP	P	_	36	case	_	_
+34	50	fimmtíu	NUM	NUM-G	Case=Gen	35	nummod	_	_
+35	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	36	nmod:poss	_	_
+36	laug	laug	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
+37	og	og	CCONJ	CONJ	_	38	cc	_	_
+38	hafnaði	hafna	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+39	í	í	ADP	P	_	41	case	_	_
+40	áttunda	áttundi	ADJ	ADJ-D	Case=Dat|Degree=Pos	41	amod	_	_
+41	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	38	obl	_	SpaceAfter=No
+42	.	.	PUNCT	.	_	41	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.10
+# X_ID = ID_MISSING
+# text = Fyrir vikið var hún valin íþróttamaður ársins.
+1	Fyrir	fyrir	ADP	P	_	2	case	_	_
+2	vikið	vik	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
+4	hún	hún	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	valin	velja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+6	íþróttamaður	íþróttamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	xcomp	_	_
+7	ársins	ár	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	nmod:poss	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.11
+# X_ID = ID_MISSING
+# text = Hörður J. Oddfríðarson, formaður Sundsambands Íslands, sagði í viðtali við RÚV í síðustu viku: „ Við erum komin lengra en við höfum áður náð í sundi“.
+1	Hörður	hörður	PROPN	NPR-N	_	9	nsubj	_	_
+2	J.	j.	PROPN	NPR-N	_	1	flat:name	_	_
+3	Oddfríðarson	oddfríðarson	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	formaður	formaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	_
+6	Sundsambands	sundsambandur	PROPN	NPR-G	_	5	nmod:poss	_	_
+7	Íslands	ísland	PROPN	NPR-G	_	6	flat:name	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	viðtali	viðtal	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+12	við	við	ADP	P	_	13	case	_	_
+13	RÚV	rúv	PROPN	NPR-A	_	11	obl	_	_
+14	í	í	ADP	P	_	16	case	_	_
+15	síðustu	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	16	amod	_	_
+16	viku	vika	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
+17	:	:	PUNCT	,	_	16	punct	_	_
+18	„	„	PUNCT	"	_	17	punct	_	_
+19	Við	ég	PRON	PRO-N	Case=Nom	21	nsubj	_	_
+20	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	21	cop	_	_
+21	komin	koma	VERB	VBN	Tense=Past|VerbForm=Part	9	ccomp	_	_
+22	lengra	langt	ADV	ADVR	Degree=Cmp	21	obl	_	_
+23	en	en	ADP	P	_	27	case	_	_
+24	við	ég	PRON	PRO-N	Case=Nom	27	nsubj	_	_
+25	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	27	aux	_	_
+26	áður	áður	ADV	ADVR	Degree=Cmp	27	advmod	_	_
+27	náð	ná	VERB	VBN	Tense=Past|VerbForm=Part	22	obl	_	_
+28	í	í	ADP	P	_	29	case	_	_
+29	sundi	sund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	SpaceAfter=No
+30	“	“	PUNCT	"	_	29	punct	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	30	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.12
+# X_ID = ID_MISSING
+# text = Og þá er spurningin; hvað hefur gerst?
+1	Og	og	CCONJ	CONJ	_	4	cc	_	_
+2	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+4	spurningin	spurning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+5	;	;	PUNCT	.	_	4	punct	_	_
+6	hvað	hver	PRON	WPRO-N	Case=Nom	7	obj	_	_
+7	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	xcomp	_	_
+8	gerst	gera	VERB	DON	Tense=Past|VerbForm=Part	7	xcomp	_	SpaceAfter=No
+9	?	?	PUNCT	.	_	8	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.13
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Ingibjörg Helga Arnardóttir, framkvæmdastjóri Sundsambands Íslands, segir aðstöðu fyrir sundfólk og þjálfara hér heima hafa batnið til muna og tiltekur sérstaklega innilaugarnar.
+1	Ingibjörg	ingibjörg	PROPN	NPR-N	_	9	nsubj	_	_
+2	Helga	helga	PROPN	NPR-N	_	1	flat:name	_	_
+3	Arnardóttir	arnardóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	framkvæmdastjóri	framkvæmdastjóri	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	_
+6	Sundsambands	sundsamband	PROPN	NPR-G	_	5	nmod:poss	_	_
+7	Íslands	ísland	PROPN	NPR-G	_	6	flat:name	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+10	aðstöðu	aðstaða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obj	_	_
+11	fyrir	fyrir	ADP	P	_	12	case	_	_
+12	sundfólk	sundfólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
+13	og	og	CCONJ	CONJ	_	12	cc	_	_
+14	þjálfara	þjálfari	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	conj	_	_
+15	hér	hér	ADV	ADV	Degree=Pos	10	advmod	_	_
+16	heima	heima	ADV	ADV	Degree=Pos	15	advmod	_	_
+17	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	18	aux	_	_
+18	batnið	batna	VERB	VBN	Tense=Past|VerbForm=Part	9	acl	_	_
+19	til	til	ADP	P	_	20	case	_	_
+20	muna	munur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	18	obl	_	_
+21	og	og	CCONJ	CONJ	_	22	cc	_	_
+22	tiltekur	tiltaka	VERB	VBPI	Mood=Ind|Tense=Pres	9	conj	_	OriginalHead=0
+23	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	22	advmod	_	_
+24	innilaugarnar	innilaug	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obj	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	24	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.14
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Hingað hafa verið ráðnir reynslumiklir erlendir þjálfarar og sundfólk fer í auknum mæli til útlanda að æfa og stunda nám samhliða.
+1	Hingað	hingað	ADV	ADV	Degree=Pos	4	advmod	_	_
+2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
+3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	4	cop	_	_
+4	ráðnir	ráðinn	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+5	reynslumiklir	reynslumikill	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
+6	erlendir	erlendur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
+7	þjálfarar	þjálfari	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
+8	og	og	CCONJ	CONJ	_	10	cc	_	_
+9	sundfólk	sundfólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+10	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+11	í	í	ADP	P	_	13	case	_	_
+12	auknum	aukinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	amod	_	_
+13	mæli	mælir	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
+14	til	til	ADP	P	_	15	case	_	_
+15	útlanda	útland	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	obl	_	_
+16	að	að	PART	TO	_	17	mark	_	_
+17	æfa	æfa	VERB	VB	VerbForm=Inf	10	advcl	_	_
+18	og	og	CCONJ	CONJ	_	19	cc	_	_
+19	stunda	stunda	VERB	VB	VerbForm=Inf	17	advcl	_	_
+20	nám	nám	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
+21	samhliða	samhliða	ADV	ADV	Degree=Pos	19	advmod	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	21	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.15
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Þar fær það tækifæri til að æfa með þeim bestu í heiminum og aðbúnaður er sömuleiðis eins og hann gerist bestur.
+1	Þar	þar	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	fær	fá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+4	tækifæri	tækifæri	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+5	til	til	ADP	P	_	7	case	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	æfa	æfa	VERB	VB	VerbForm=Inf	4	obl	_	_
+8	með	með	ADP	P	_	10	case	_	_
+9	þeim	sá	DET	D-D	Case=Dat|PronType=Art	10	det	_	_
+10	bestu	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	7	obl	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	heiminum	heimur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	aðbúnaður	aðbúnaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
+15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+16	sömuleiðis	sömuleiðis	ADV	ADV	Degree=Pos	14	advmod	_	_
+17	eins	_	ADV	ADVR	Degree=Cmp	14	advmod	_	_
+18	og	_	ADP	P	_	20	case	_	_
+19	hann	hann	PRON	PRO-N	Case=Nom	20	nsubj	_	_
+20	gerist	gera	VERB	DOPI	Mood=Ind|Tense=Pres	17	obl	_	_
+21	bestur	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	20	amod	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	21	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.16
+# X_ID = ID_MISSING
+# text = Æfingarnar hafa líka breyst.
+1	Æfingarnar	æfing	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
+2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
+3	líka	líka	ADV	ALSO	_	4	advmod	_	_
+4	breyst	breyta	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.17
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Sundfólk hefur bætt við styrktar- og jógaæfingum og teygjum og allt hefur þetta orðið til þess að við erum orðin betri en áður.
+1	Sundfólk	sundfólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	3	aux	_	_
+3	bætt	bæta	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+4	við	við	ADP	RP	_	3	compound:prt	_	_
+5	styrktar-	styrkt	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	dep	_	_
+6	og	og	CCONJ	CONJ	_	5	cc	_	_
+7	jóga	jóga	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	conj	_	SpaceAfter=No
+8	æfingum	æfing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
+9	og	og	CCONJ	CONJ	_	10	cc	_	_
+10	teygjum	teygja	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obj	_	_
+11	og	og	CCONJ	CONJ	_	15	cc	_	_
+12	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	15	amod	_	_
+13	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	15	aux	_	_
+14	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	15	nsubj	_	_
+15	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0
+16	til	til	ADP	P	_	17	case	_	_
+17	þess	það	PRON	PRO-G	Case=Gen	15	obl	_	_
+18	að	að	SCONJ	C	_	21	mark	_	_
+19	við	ég	PRON	PRO-N	Case=Nom	21	nsubj	_	_
+20	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	21	cop	_	_
+21	orðin	verða	VERB	RDN	Tense=Past|VerbForm=Part	17	ccomp	_	_
+22	betri	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	21	amod	_	_
+23	en	en	ADP	P	_	24	case	_	_
+24	áður	áður	ADV	ADVR	Degree=Cmp	22	amod	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	24	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.18
+# X_ID = ID_MISSING
+# text = „ Já, við getum sagt að árangur í afreksflokki, sérstaklega hjá konunum, sé umtalsvert betri en sá árangur sem við náðum áður.
+1	„	„	PUNCT	"	_	6	punct	_	_
+2	Já	já	INTJ	INTJ	_	6	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+5	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
+6	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	að	að	SCONJ	C	_	18	mark	_	_
+8	árangur	árangur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
+9	í	í	ADP	P	_	10	case	_	_
+10	afreksflokki	afreksflokkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	14	advmod	_	_
+13	hjá	hjá	ADP	P	_	14	case	_	_
+14	konunum	kona	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	18	cop	_	_
+17	umtalsvert	umtalsvert	ADV	ADV	Degree=Pos	18	amod	_	_
+18	betri	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	6	ccomp	_	_
+19	en	en	ADP	P	_	20	case	_	_
+20	sá	sá	DET	D-N	Case=Nom|PronType=Art	18	amod	_	_
+21	árangur	árangur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	_
+22	sem	sem	SCONJ	C	_	24	mark	_	_
+23	við	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+24	náðum	ná	VERB	VBDI	Mood=Ind|Tense=Past	21	acl:relcl	_	_
+25	áður	áður	ADV	ADVR	Degree=Cmp	24	advmod	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	25	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.19
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Sérstaklega ef við tökum tillit til þess að árangur í heiminum almennt hefur verið að batna.“ Markmið Sundsambandsins fyrir nýafstaðið Evrópumót var að komast í milliriðla og helst í úrslitariðla.
+1	Sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	4	advmod	_	_
+2	ef	ef	ADP	P	_	4	case	_	_
+3	við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+4	tökum	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+5	tillit	tillit	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
+6	til	til	ADP	P	_	7	case	_	_
+7	þess	það	PRON	PRO-G	Case=Gen	5	obl	_	_
+8	að	að	SCONJ	C	_	13	mark	_	_
+9	árangur	árangur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	heiminum	heimur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+12	almennt	almennt	ADV	ADV	Degree=Pos	9	advmod	_	_
+13	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	7	ccomp	_	_
+14	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	13	cop	_	_
+15	að	að	PART	TO	_	16	mark	_	_
+16	batna	batna	VERB	VB	VerbForm=Inf	13	acl	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	SpaceAfter=No
+18	“	“	PUNCT	"	_	17	punct	_	_
+19	Markmið	markmið	PROPN	NPR-N	_	4	conj	_	OriginalHead=0
+20	Sundsambandsins	sundsamband	PROPN	NPR-G	_	19	flat:name	_	_
+21	fyrir	fyrir	ADP	P	_	23	case	_	_
+22	nýafstaðið	nýafstaðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	23	amod	_	_
+23	Evrópumót	evrópumót	PROPN	NPR-A	_	19	obl	_	_
+24	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	19	cop	_	_
+25	að	að	PART	TO	_	26	mark	_	_
+26	komast	koma	VERB	VB	VerbForm=Inf	19	csubj	_	_
+27	í	í	ADP	P	_	28	case	_	_
+28	milliriðla	milliriðill	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	30	obl	_	_
+29	og	og	CCONJ	CONJ	_	30	cc	_	_
+30	helst	gjarna	ADV	ADVS	Degree=Sup	26	obl	_	_
+31	í	í	ADP	P	_	32	case	_	_
+32	úrslitariðla	úrslitariðill	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	30	obl	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	32	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.20
+# X_ID = ID_MISSING
+# text = Keppendurnir sjálfir hafa svo sín persónulegu markmið sem þeir ákveða með þjálfurum og landsliðsþjálfara.
+1	Keppendurnir	keppandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
+2	sjálfir	sjálfur	PRON	PRO-N	Case=Nom	1	appos	_	_
+3	hafa	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	sín	sinn	PRON	PRO-A	Case=Acc	7	nmod:poss	_	_
+6	persónulegu	persónulegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
+7	markmið	markmið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	_
+8	sem	sem	SCONJ	C	_	10	mark	_	_
+9	þeir	hann	PRON	PRO-N	Case=Nom	10	nsubj	_	_
+10	ákveða	ákveða	VERB	VBPI	Mood=Ind|Tense=Pres	7	acl:relcl	_	_
+11	með	með	ADP	P	_	12	case	_	_
+12	þjálfurum	þjálfari	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
+13	og	og	CCONJ	CONJ	_	12	cc	_	_
+14	landsliðsþjálfara	landsliðsþjálfari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	conj	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.21
+# X_ID = ID_MISSING
+# text = „ Það sem er núna að gerast er að bæði sundfólkið og SSÍ eru með áætlanir sem ná lengra fram í tímann.
+1	„	„	PUNCT	"	_	2	punct	_	_
+2	Það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+3	sem	sem	SCONJ	C	_	4	mark	_	_
+4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	acl:relcl	_	_
+5	núna	núna	ADV	ADV	Degree=Pos	4	advmod	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	gerast	gera	VERB	DO	VerbForm=Inf	4	acl	_	_
+8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
+9	að	að	SCONJ	C	_	11	mark	_	_
+10	bæði	bæði	CCONJ	CONJ	_	11	cc	_	_
+11	sundfólkið	sundfólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	SSÍ	ssí	PROPN	NPR-N	_	11	conj	_	_
+14	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
+15	með	með	ADP	P	_	16	case	_	_
+16	áætlanir	áætlun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obl	_	_
+17	sem	sem	SCONJ	C	_	18	mark	_	_
+18	ná	ná	VERB	VBPI	Mood=Ind|Tense=Pres	16	acl:relcl	_	_
+19	lengra	langt	ADV	ADVR	Degree=Cmp	18	obl	_	_
+20	fram	fram	ADP	RP	_	19	compound:prt	_	_
+21	í	í	ADP	P	_	19	case	_	_
+22	tímann	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	22	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.22
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Þau hafa fjögur náð lágmörkum fyrir Ólympíuleikana fyrir mörgum mánuðum og eru í æfingaferli sem nær hámarki á leikunum í ágúst.
+1	Þau	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
+3	fjögur	fjórir	NUM	NUM-N	Case=Nom	4	amod	_	_
+4	náð	ná	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	lágmörkum	lágmark	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obj	_	_
+6	fyrir	fyrir	ADP	P	_	7	case	_	_
+7	Ólympíuleikana	ólympíuleikar	PROPN	NPRS-A	_	5	obl	_	_
+8	fyrir	fyrir	ADP	P	_	10	case	_	_
+9	mörgum	margur	DET	Q-D	Case=Dat|Degree=Pos	10	amod	_	_
+10	mánuðum	mánuður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
+11	og	og	CCONJ	CONJ	_	14	cc	_	_
+12	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+13	í	í	ADP	P	_	14	case	_	_
+14	æfingaferli	æfingaferli	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	conj	_	OriginalHead=0
+15	sem	sem	SCONJ	C	_	16	mark	_	_
+16	nær	ná	VERB	VBPI	Mood=Ind|Tense=Pres	14	acl:relcl	_	_
+17	hámarki	hámark	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obj	_	_
+18	á	á	ADP	P	_	19	case	_	_
+19	leikunum	leikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	_
+20	í	í	ADP	P	_	21	case	_	_
+21	ágúst	ágúst	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	21	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.23
+# X_ID = ID_MISSING
+# text = En árangurinn er fyrst og fremst sundfólkinu sjálfu að þakka, ástundum þess og skuldbindingu, segir Ingibjörg.
+1	En	en	CCONJ	CONJ	_	17	cc	_	_
+2	árangurinn	árangur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
+4	fyrst	snemma	ADV	ADVS	Degree=Sup	17	advmod	_	_
+5	og	og	CCONJ	CONJ	_	4	cc	_	_
+6	fremst	harla	ADV	ADVS	Degree=Sup	4	advmod	_	_
+7	sundfólkinu	sundfólk	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	iobj	_	_
+8	sjálfu	sjálfur	PRON	PRO-D	Case=Dat	7	appos	_	_
+9	að	að	PART	TO	_	10	mark	_	_
+10	þakka	þakka	VERB	VB	VerbForm=Inf	17	amod	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	ástundum	ástunda	X	X	_	13	dep	_	_
+13	þess	það	PRON	PRO-G	Case=Gen	10	acl	_	_
+14	og	og	CCONJ	CONJ	_	15	cc	_	_
+15	skuldbindingu	skuldbinding	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	conj	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+18	Ingibjörg	ingibjörg	PROPN	NPR-N	_	17	obl	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	18	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.24
+# X_ID = ID_MISSING
+# text = Fjórir sundmenn kepptu í einstaklingsgreinum fyrir landslið Íslands á Evrópumótinu.
+1	Fjórir	fjórir	NUM	NUM-N	Case=Nom	2	nummod	_	_
+2	sundmenn	sundmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
+3	kepptu	keppa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	í	í	ADP	P	_	5	case	_	_
+5	einstaklingsgreinum	einstaklingsgrein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
+6	fyrir	fyrir	ADP	P	_	7	case	_	_
+7	landslið	landslið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
+8	Íslands	ísland	PROPN	NPR-G	_	7	nmod:poss	_	_
+9	á	á	ADP	P	_	10	case	_	_
+10	Evrópumótinu	evrópumót	PROPN	NPR-D	_	3	obl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	10	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.25
+# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
+# text = Þeir komust allir í milliriðla, þrír komust alla leið í úrslit og einn vann til verðlauna.
+1	Þeir	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	komust	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	2	amod	_	_
+4	í	í	ADP	P	_	5	case	_	_
+5	milliriðla	milliriðill	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	þrír	þrír	NUM	NUM-N	Case=Nom	8	nsubj	_	_
+8	komust	koma	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+9	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	10	amod	_	_
+10	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
+11	í	í	ADP	P	_	10	case	_	_
+12	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	_
+13	og	og	CCONJ	CONJ	_	15	cc	_	_
+14	einn	einn	DET	ONE-N	Case=Nom|Number=Sing	15	nsubj	_	_
+15	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+16	til	til	ADP	P	_	17	case	_	_
+17	verðlauna	verðlaun	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	17	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.26
+# X_ID = ID_MISSING
+# text = Ingibjörg segir liðið hafa fengið mjög jákvæð viðbrögð og hrós fyrir árangurinn og staðfestuna.
+1	Ingibjörg	ingibjörg	PROPN	NPR-N	_	2	nsubj	_	_
+2	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	liðið	lið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	nsubj	_	_
+4	hafa	hafa	AUX	HV	VerbForm=Inf	5	aux	_	_
+5	fengið	fá	VERB	VBN	Tense=Past|VerbForm=Part	2	acl	_	_
+6	mjög	mjög	ADV	ADV	Degree=Pos	7	amod	_	_
+7	jákvæð	jákvæður	ADJ	ADJ-A	Case=Acc|Degree=Pos	8	amod	_	_
+8	viðbrögð	viðbragð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	_
+9	og	og	CCONJ	CONJ	_	10	cc	_	_
+10	hrós	hrós	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
+11	fyrir	fyrir	ADP	P	_	12	case	_	_
+12	árangurinn	árangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	staðfestuna	staðfesta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	conj	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.27
+# X_ID = ID_MISSING
+# text = „ Svo má ekki gleyma því að það er mjög óvenjulegt að svo lítil þjóð mæti með lið í boðsund og enn óvenjulegra að það komist í úrslit á svona móti.
+1	„	„	PUNCT	"	_	5	punct	_	_
+2	Svo	svo	ADV	ADV	Degree=Pos	5	advmod	_	_
+3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
+4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
+5	gleyma	gleyma	VERB	VB	VerbForm=Inf	0	root	_	_
+6	því	það	PRON	PRO-D	Case=Dat	5	obj	_	_
+7	að	að	SCONJ	C	_	11	mark	_	_
+8	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	11	expl	_	_
+9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
+10	mjög	mjög	ADV	ADV	Degree=Pos	11	amod	_	_
+11	óvenjulegt	óvenjulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	xcomp	_	_
+12	að	að	SCONJ	C	_	16	mark	_	_
+13	svo	svo	ADV	ADV	Degree=Pos	14	amod	_	_
+14	lítil	lítill	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	amod	_	_
+15	þjóð	þjóð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
+16	mæti	mæta	VERB	VBPS	Mood=Sub|Tense=Pres	11	ccomp	_	_
+17	með	með	ADP	P	_	18	case	_	_
+18	lið	liður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	boðsund	boðsund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
+21	og	og	CCONJ	CONJ	_	23	cc	_	_
+22	enn	enn	ADV	ADV	Degree=Pos	23	amod	_	_
+23	óvenjulegra	óvenjulegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	11	conj	_	_
+24	að	að	SCONJ	C	_	26	mark	_	_
+25	það	það	PRON	PRO-N	Case=Nom	26	nsubj	_	_
+26	komist	koma	VERB	VBPS	Mood=Sub|Tense=Pres	23	ccomp	_	_
+27	í	í	ADP	P	_	28	case	_	_
+28	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obl	_	_
+29	á	á	ADP	P	_	31	case	_	_
+30	svona	svona	ADV	ADV	Degree=Pos	31	advmod	_	_
+31	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
+32	.	.	PUNCT	.	_	31	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033705,.28
+# X_ID = ID_MISSING
+# text = Þannig við erum að skrifa sundsöguna“.
+1	Þannig	þannig	ADV	ADV	Degree=Pos	0	root	_	_
+2	við	ég	PRON	PRO-N	Case=Nom	1	advcl	_	_
+3	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	skrifa	skrifa	VERB	VB	VerbForm=Inf	2	acl	_	_
+6	sundsöguna	sundsaga	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
+7	“	“	PUNCT	"	_	6	punct	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	_
+

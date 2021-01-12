@@ -1,0 +1,130 @@
+# sent_id = ALTHINGI_HHG_2013_G-33-4920264,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti. Ég þakka skýrt svar.
+1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	_
+4	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+6	skýrt	skýr	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
+7	svar	svar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4920264,.2
+# X_ID = ID_MISSING
+# text = Hvað varðar spurningarnar skil ég. hæstv. ráðherra þannig að það komi alveg til greina að styðja umbætur, væntanlega eftir meðferð hv.. allsherjar- og menntamálanefndar, til að skýra betur hvað eigi nákvæmlega að flytjast yfir.
+1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
+2	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	4	obl	_	_
+3	spurningarnar	spurning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
+4	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+5	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	5	punct	_	_
+7	hæstv.	háttvirtur	ADJ	ADJS-A	Case=Acc|Degree=Sup	8	amod	_	_
+8	ráðherra	ráðherra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
+9	þannig	þannig	ADP	P	_	12	case	_	_
+10	að	að	SCONJ	C	_	12	mark	_	_
+11	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	12	expl	_	_
+12	komi	koma	VERB	VBPS	Mood=Sub|Tense=Pres	4	obl	_	_
+13	alveg	alveg	ADV	ADV	Degree=Pos	12	advmod	_	_
+14	til	til	ADP	P	_	15	case	_	_
+15	greina	grein	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	obl	_	_
+16	að	að	PART	TO	_	17	mark	_	_
+17	styðja	styðja	VERB	VB	VerbForm=Inf	12	acl	_	_
+18	umbætur	umbót	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obj	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	væntanlega	væntanlega	ADV	ADV	Degree=Pos	17	advmod	_	_
+21	eftir	eftir	ADP	P	_	22	case	_	_
+22	meðferð	meðferð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
+23	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	25	amod	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	_
+25	allsherjar-	allsherjar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	dep	_	_
+26	og	og	CCONJ	CONJ	_	27	cc	_	_
+27	menntamálanefndar	menntamálanefnd	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	25	conj	_	SpaceAfter=No
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	til	til	ADP	P	_	31	case	_	_
+30	að	að	PART	TO	_	31	advcl	_	_
+31	skýra	skýra	VERB	VB	VerbForm=Inf	12	obl	_	_
+32	betur	vel	ADV	ADVR	Degree=Cmp	31	advmod	_	_
+33	hvað	hver	PRON	WPRO-N	Case=Nom	34	obj	_	_
+34	eigi	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	31	advcl	_	_
+35	nákvæmlega	nákvæmlega	ADV	ADV	Degree=Pos	34	advmod	_	_
+36	að	að	PART	TO	_	37	mark	_	_
+37	flytjast	flytja	VERB	VB	VerbForm=Inf	34	acl	_	_
+38	yfir	yfir	ADP	RP	_	37	compound:prt	_	SpaceAfter=No
+39	.	.	PUNCT	.	_	38	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4920264,.3
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Ég tek eftir því að hér er vissulega verið að styrkja neytendarétt og dreg ekki úr því.
+1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	eftir	eftir	ADP	P	_	4	case	_	_
+4	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
+5	að	að	SCONJ	C	_	9	mark	_	_
+6	hér	hér	ADV	ADV	Degree=Pos	9	advmod	_	_
+7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
+8	vissulega	vissulega	ADV	ADV	Degree=Pos	9	advmod	_	_
+9	verið	vera	VERB	VAN	Tense=Past|VerbForm=Part	4	ccomp	_	_
+10	að	að	PART	TO	_	11	mark	_	_
+11	styrkja	styrkja	VERB	VB	VerbForm=Inf	9	acl	_	_
+12	neytendarétt	neytendaréttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	dreg	draga	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+15	ekki	ekki	ADV	NEG	_	14	advmod	_	_
+16	úr	úr	ADP	P	_	17	case	_	_
+17	því	það	PRON	PRO-D	Case=Dat	14	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	17	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4920264,.4
+# X_ID = ID_MISSING
+# text = Ég er algjörlega hlynntur framtakinu í heild sinni þótt kannski sé eitthvað sem bæta mætti við.
+1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	algjörlega	algjörlega	ADV	ADV	Degree=Pos	4	amod	_	_
+4	hlynntur	hlynntur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+5	framtakinu	framtak	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	heild	heild	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+8	sinni	sinn	PRON	PRO-D	Case=Dat	7	nmod:poss	_	_
+9	þótt	þótt	ADP	P	_	12	case	_	_
+10	kannski	kannski	ADV	ADV	Degree=Pos	12	advmod	_	_
+11	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	12	cop	_	_
+12	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	4	obl	_	_
+13	sem	sem	SCONJ	C	_	14	mark	_	_
+14	bæta	bæta	VERB	VB	VerbForm=Inf	12	acl:relcl	_	_
+15	mætti	mega	AUX	MDDS	Mood=Sub|Tense=Past	14	aux	_	_
+16	við	við	ADP	RP	_	14	compound:prt	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4920264,.5
+# X_ID = ID_MISSING
+# text = Ég vona því að ég skilji hæstv. ráðherra rétt með það að kannski þurfi að bæta aðeins við og þá væntanlega eftir meðferð hv. allsherjar- og menntamálanefndar.
+1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
+4	að	að	SCONJ	C	_	6	mark	_	_
+5	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	skilji	skilja	VERB	VBPS	Mood=Sub|Tense=Pres	2	ccomp	_	_
+7	hæstv.	háttvirtur	ADJ	ADJS-A	Case=Acc|Degree=Sup	8	amod	_	_
+8	ráðherra	ráðherra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+9	rétt	rétt	ADV	ADV	Degree=Pos	6	advmod	_	_
+10	með	með	ADP	P	_	11	case	_	_
+11	það	það	PRON	PRO-A	Case=Acc	6	obl	_	_
+12	að	að	SCONJ	C	_	14	mark	_	_
+13	kannski	kannski	ADV	ADV	Degree=Pos	14	advmod	_	_
+14	þurfi	þurfa	VERB	VBPS	Mood=Sub|Tense=Pres	11	ccomp	_	_
+15	að	að	PART	TO	_	16	mark	_	_
+16	bæta	bæta	VERB	VB	VerbForm=Inf	14	acl	_	_
+17	aðeins	aðeins	ADV	ADV	Degree=Pos	16	advmod	_	_
+18	við	við	ADP	RP	_	16	compound:prt	_	_
+19	og	og	CCONJ	CONJ	_	16	cc	_	_
+20	þá	þá	ADV	ADV	Degree=Pos	16	advmod	_	_
+21	væntanlega	væntanlega	ADV	ADV	Degree=Pos	16	advmod	_	_
+22	eftir	eftir	ADP	P	_	23	case	_	_
+23	meðferð	meðferð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
+24	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	25	amod	_	_
+25	allsherjar-	allsherjar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	nmod:poss	_	_
+26	og	og	CCONJ	CONJ	_	27	cc	_	_
+27	menntamálanefndar	menntamálanefnd	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	25	conj	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	27	punct	_	_
+

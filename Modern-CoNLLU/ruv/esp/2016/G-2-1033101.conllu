@@ -1,0 +1,130 @@
+# sent_id = RUV_ESP_2016_G-2-1033101,.1
+# X_ID = ID_MISSING
+# text = Pólska liðið Kielce stóð uppi sem sigurvegari í Meistaradeild Evrópu í handbolta eftir sigur á Aroni Pálmarssyni og félögum hans í ungverska liðinu Veszprém í úrslitaleik á sunnudag.
+1	Pólska	pólskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+2	liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+3	Kielce	kielce	PROPN	NPR-N	_	2	appos	_	_
+4	stóð	standa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+5	uppi	uppi	ADV	ADV	Degree=Pos	4	advmod	_	_
+6	sem	sem	SCONJ	C	_	7	mark	_	_
+7	sigurvegari	sigurvegari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	advcl	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	Meistaradeild	meistaradeild	PROPN	NPR-D	_	7	obl	_	_
+10	Evrópu	evrópa	PROPN	NPR-G	_	9	flat:name	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	handbolta	handbolti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+13	eftir	eftir	ADP	P	_	14	case	_	_
+14	sigur	sigur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+15	á	á	ADP	P	_	16	case	_	_
+16	Aroni	aron	PROPN	NPR-D	_	14	obl	_	_
+17	Pálmarssyni	pálmarsson	PROPN	NPR-D	_	16	flat:name	_	_
+18	og	og	CCONJ	CONJ	_	19	cc	_	_
+19	félögum	félagi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	conj	_	_
+20	hans	hann	PRON	PRO-G	Case=Gen	19	nmod:poss	_	_
+21	í	í	ADP	P	_	23	case	_	_
+22	ungverska	ungverskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	23	amod	_	_
+23	liðinu	lið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
+24	Veszprém	veszprém	PROPN	NPR-D	_	23	appos	_	_
+25	í	í	ADP	P	_	26	case	_	_
+26	úrslitaleik	úrslitaleikur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
+27	á	á	ADP	P	_	28	case	_	_
+28	sunnudag	sunnudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	28	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033101,.2
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Dómararnir sem dæmdu úrslitaleikina fjóra voru allir með myndavélar á bringunni og því er nú hægt að sjá hvernig það er að dæma stærstu handboltaleiki í heimi.
+1	Dómararnir	dómari	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
+2	sem	sem	SCONJ	C	_	3	mark	_	_
+3	dæmdu	dæma	VERB	VBDI	Mood=Ind|Tense=Past	1	acl:relcl	_	_
+4	úrslitaleikina	úrslitaleikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	_
+5	fjóra	fjórir	NUM	NUM-A	Case=Acc	4	nummod	_	_
+6	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	9	cop	_	_
+7	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	9	amod	_	_
+8	með	með	ADP	P	_	9	case	_	_
+9	myndavélar	myndavél	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	0	root	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	bringunni	bringa	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	því	það	PRON	PRO-D	Case=Dat	9	conj	_	OriginalHead=0
+14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
+15	nú	nú	ADV	ADV	Degree=Pos	13	advmod	_	_
+16	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
+17	að	að	PART	TO	_	18	mark	_	_
+18	sjá	sjá	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+19	hvernig	hvernig	ADV	WADV	Degree=Pos	23	advmod	_	_
+20	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	23	expl	_	_
+21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
+22	að	að	PART	TO	_	23	mark	_	_
+23	dæma	dæma	VERB	VB	VerbForm=Inf	18	xcomp	_	_
+24	stærstu	stór	ADJ	ADJS-A	Case=Acc|Degree=Sup	25	amod	_	_
+25	handboltaleiki	handboltaleikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obj	_	_
+26	í	í	ADP	P	_	27	case	_	_
+27	heimi	heimur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	27	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033101,.3
+# X_ID = ID_MISSING
+# text = Íslenska dómaraparið Anton Gylfi Pálsson og Jónas Elíasson dæmdu leik Kiel og Paris Saint-Germain um þriðja sætið.
+1	Íslenska	íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+2	dómaraparið	dómarapar	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
+3	Anton	anton	PROPN	NPR-N	_	2	appos	_	_
+4	Gylfi	gylfi	PROPN	NPR-N	_	3	flat:name	_	_
+5	Pálsson	pálsson	PROPN	NPR-N	_	3	dep	_	_
+6	og	og	CCONJ	CONJ	_	7	cc	_	_
+7	Jónas	jónas	PROPN	NPR-N	_	3	conj	_	_
+8	Elíasson	elíasson	PROPN	NPR-N	_	7	flat:name	_	_
+9	dæmdu	dæma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+10	leik	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
+11	Kiel	kiel	PROPN	NPR-G	_	10	nmod:poss	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	Paris	paris	PROPN	NPR-G	_	11	conj	_	_
+14	Saint-Germain	saint-germain	PROPN	NPR-G	_	13	flat:name	_	_
+15	um	um	ADP	P	_	17	case	_	_
+16	þriðja	þriðji	ADJ	ADJ-A	Case=Acc|Degree=Pos	17	amod	_	_
+17	sætið	sæti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	17	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033101,.4
+# X_ID = ID_MISSING
+# text = Í spilaranum að ofan er myndband sem finna má á heimasíðu Evrópska handknattleikssambandsins þar sem búið er að taka saman brot úr undanúrslitaleikjunum tveimur, milli Kiel og Veszprém annars vegar og Kielce og Paris Saint-Germain hins vegar.
+1	Í	í	ADP	P	_	2	case	_	_
+2	spilaranum	spilari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
+3	að	að	ADP	P	_	4	case	_	_
+4	ofan	ofan	ADV	ADV	Degree=Pos	2	obl	_	_
+5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
+6	myndband	myndband	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+7	sem	sem	SCONJ	C	_	8	mark	_	_
+8	finna	finna	VERB	VB	VerbForm=Inf	6	acl:relcl	_	_
+9	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	8	aux	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	heimasíðu	heimasíða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+12	Evrópska	evrópskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	13	amod	_	_
+13	handknattleikssambandsins	handknattleikssamband	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	nmod:poss	_	_
+14	þar	þar	ADV	ADV	Degree=Pos	16	advmod	_	_
+15	sem	sem	SCONJ	C	_	16	mark	_	_
+16	búið	búa	VERB	VBN	Tense=Past|VerbForm=Part	6	acl:relcl	_	_
+17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
+18	að	að	PART	TO	_	19	mark	_	_
+19	taka	taka	VERB	VB	VerbForm=Inf	16	acl	_	_
+20	saman	saman	ADV	ADV	Degree=Pos	19	advmod	_	_
+21	brot	brot	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obj	_	_
+22	úr	úr	ADP	P	_	23	case	_	_
+23	undanúrslitaleikjunum	undanúrslitaleikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	21	obl	_	_
+24	tveimur	tveir	NUM	NUM-D	Case=Dat	23	nummod	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	milli	milli	ADP	P	_	27	case	_	_
+27	Kiel	kiel	PROPN	NPR-G	_	23	obl	_	_
+28	og	og	CCONJ	CONJ	_	27	cc	_	_
+29	Veszprém	veszprém	PROPN	NPR-G	_	27	dep	_	_
+30	annars	annar	PRON	OTHER-G	Case=Gen	31	det	_	_
+31	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	27	obl	_	_
+32	og	og	CCONJ	CONJ	_	33	cc	_	_
+33	Kielce	kielce	PROPN	NPR-G	_	27	conj	_	_
+34	og	og	CCONJ	CONJ	_	35	cc	_	_
+35	Paris	paris	PROPN	NPR-G	_	33	conj	_	_
+36	Saint-Germain	saint-germain	PROPN	NPR-G	_	35	flat:name	_	_
+37	hins	hinn	DET	D-G	Case=Gen|PronType=Art	38	det	_	_
+38	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	33	obl	_	SpaceAfter=No
+39	.	.	PUNCT	.	_	38	punct	_	_
+

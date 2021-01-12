@@ -1,0 +1,147 @@
+# sent_id = RUV_ESP_2016_G-2-1034247,.1
+# X_ID = ID_MISSING
+# text = Kylfingurinn Haraldur Franklín Magnús úr Golfklúbbi Reykjavíkur lék frábærlega á fyrsta hring Evrópumóts áhugamanna í golfi sem hófst í morgun og haldið er í Eistlandi.
+1	Kylfingurinn	kylfingur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+2	Haraldur	haraldur	PROPN	NPR-N	_	1	appos	_	_
+3	Franklín	franklín	PROPN	NPR-N	_	2	flat:name	_	_
+4	Magnús	magnús	PROPN	NPR-N	_	2	dep	_	_
+5	úr	úr	ADP	P	_	6	case	_	_
+6	Golfklúbbi	golfklúbb	PROPN	NPR-D	_	1	obl	_	_
+7	Reykjavíkur	reykjavík	PROPN	NPR-G	_	6	flat:name	_	_
+8	lék	leika	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+9	frábærlega	frábærlega	ADV	ADV	Degree=Pos	8	advmod	_	_
+10	á	á	ADP	P	_	12	case	_	_
+11	fyrsta	fyrstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	12	amod	_	_
+12	hring	hringur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+13	Evrópumóts	evrópumót	PROPN	NPR-G	_	12	nmod:poss	_	_
+14	áhugamanna	áhugamaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	13	nmod:poss	_	_
+15	í	í	ADP	P	_	16	case	_	_
+16	golfi	golf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+17	sem	sem	SCONJ	C	_	18	mark	_	_
+18	hófst	hefja	VERB	VBDI	Mood=Ind|Tense=Past	13	acl:relcl	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
+21	og	og	CCONJ	CONJ	_	22	cc	_	_
+22	haldið	halda	VERB	VAN	Tense=Past|VerbForm=Part	18	conj	_	_
+23	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
+24	í	í	ADP	P	_	25	case	_	_
+25	Eistlandi	eistland	PROPN	NPR-D	_	22	obl	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	25	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1034247,.2
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Haraldur Franklín fór fyrsta hringinn á 68 höggum eða fjórum undir pari og er sem stendur í fjórða sæti ásamt fjórum öðrum kylfingum.
+1	Haraldur	haraldur	PROPN	NPR-N	_	3	nsubj	_	_
+2	Franklín	franklín	PROPN	NPR-N	_	1	flat:name	_	_
+3	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	5	amod	_	_
+5	hringinn	hringur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
+6	á	á	ADP	P	_	8	case	_	_
+7	68	68	NUM	NUM-D	Case=Dat	8	nummod	_	_
+8	höggum	högg	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
+9	eða	eða	CCONJ	CONJ	_	10	cc	_	_
+10	fjórum	fjórir	NUM	NUM-D	Case=Dat	8	conj	_	_
+11	undir	undir	ADP	P	_	12	case	_	_
+12	pari	par	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
+13	og	og	CCONJ	CONJ	_	19	cc	_	_
+14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
+15	sem	sem	SCONJ	C	_	16	mark	_	_
+16	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	19	advcl	_	_
+17	í	í	ADP	P	_	19	case	_	_
+18	fjórða	fjórði	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
+19	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	conj	_	OriginalHead=0
+20	ásamt	ásamt	ADP	P	_	23	case	_	_
+21	fjórum	fjórir	NUM	NUM-D	Case=Dat	23	nummod	_	_
+22	öðrum	annar	PRON	OTHER-D	Case=Dat	23	det	_	_
+23	kylfingum	kylfingur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obl	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1034247,.3
+# X_ID = ID_MISSING
+# text = Enn eiga margir eftir að klára hringinn í dag.
+1	Enn	enn	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	2	nsubj	_	_
+4	eftir	eftir	ADV	ADV	Degree=Pos	2	advmod	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	klára	klára	VERB	VB	VerbForm=Inf	2	acl	_	_
+7	hringinn	hringur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1034247,.4
+# X_ID = ID_MISSING
+# text = Fjórir aðrir íslenskir kylfingar taka þátt í mótinu sem er eitt það sterkasta á árinu hjá áhugakylfingum.
+1	Fjórir	fjórir	NUM	NUM-N	Case=Nom	4	nummod	_	_
+2	aðrir	annar	PRON	OTHER-N	Case=Nom	4	det	_	_
+3	íslenskir	íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
+4	kylfingar	kylfingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
+5	taka	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+6	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+9	sem	sem	SCONJ	C	_	13	mark	_	_
+10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
+11	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	13	det	_	_
+12	það	sá	DET	D-N	Case=Nom|PronType=Art	13	det	_	_
+13	sterkasta	sterkur	ADJ	ADJS-N	Case=Nom|Degree=Sup	8	acl:relcl	_	_
+14	á	á	ADP	P	_	15	case	_	_
+15	árinu	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+16	hjá	hjá	ADP	P	_	17	case	_	_
+17	áhugakylfingum	áhugakylfing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	17	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1034247,.5
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Gísli Sveinbergsson úr Golfklúbbnum Keili fór hringinn á 72 höggum, eða á pari, en þeir Andri Þór Björnsson, Rúnar Arnórsson og Guðmundur Ágúst Kristjánsson hafa ekki lokið keppni í dag.
+1	Gísli	gísli	PROPN	NPR-N	_	6	nsubj	_	_
+2	Sveinbergsson	sveinbergsson	PROPN	NPR-N	_	1	flat:name	_	_
+3	úr	úr	ADP	P	_	4	case	_	_
+4	Golfklúbbnum	golfklúbbur	PROPN	NPRS-D	_	1	obl	_	_
+5	Keili	keilir	PROPN	NPR-D	_	4	flat:name	_	_
+6	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+7	hringinn	hringur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
+8	á	á	ADP	P	_	10	case	_	_
+9	72	72	NUM	NUM-D	Case=Dat	10	nummod	_	_
+10	höggum	högg	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	eða	eða	CCONJ	CONJ	_	14	cc	_	_
+13	á	á	ADP	P	_	14	case	_	_
+14	pari	par	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	en	en	CCONJ	CONJ	_	30	cc	_	_
+17	þeir	hann	PRON	PRO-N	Case=Nom	30	nsubj	_	_
+18	Andri	andri	PROPN	NPR-N	_	17	appos	_	_
+19	Þór	þór	PROPN	NPR-N	_	18	flat:name	_	_
+20	Björnsson	björnsson	PROPN	NPR-N	_	18	dep	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	22	punct	_	_
+22	Rúnar	rúnar	PROPN	NPR-N	_	18	conj	_	_
+23	Arnórsson	arnórsson	PROPN	NPR-N	_	22	flat:name	_	_
+24	og	og	CCONJ	CONJ	_	25	cc	_	_
+25	Guðmundur	guðmundur	PROPN	NPR-N	_	18	conj	_	_
+26	Ágúst	ágúst	PROPN	NPR-N	_	25	flat:name	_	_
+27	Kristjánsson	kristjánsson	PROPN	NPR-N	_	25	dep	_	_
+28	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	30	aux	_	_
+29	ekki	ekki	ADV	NEG	_	30	advmod	_	_
+30	lokið	ljúka	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	OriginalHead=0
+31	keppni	keppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obj	_	_
+32	í	í	ADP	P	_	33	case	_	_
+33	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	33	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1034247,.6
+# X_ID = ID_MISSING
+# text = Hér er hægt að fylgjast með framgöngu mála á mótinu.
+1	Hér	hér	ADV	ADV	Degree=Pos	3	advmod	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	fylgjast	fylgja	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	með	með	ADP	P	_	7	case	_	_
+7	framgöngu	framganga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+8	mála	mál	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	nmod:poss	_	_
+9	á	á	ADP	P	_	10	case	_	_
+10	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	10	punct	_	_
+
