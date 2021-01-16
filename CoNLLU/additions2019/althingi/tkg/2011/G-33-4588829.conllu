@@ -1,0 +1,200 @@
+# sent_id = ALTHINGI_TKG_2011_G-33-4588829,.1
+# X_ID = ID_MISSING
+# text = Frú forseti. Það er einmitt kjarni málsins að ekki sé alltaf verið með þennan hringlanda í kringum hverjar kosningar.
+1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	vocative	_	_
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	_
+4	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	7	expl	_	_
+5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
+6	einmitt	einmitt	ADV	ADV	Degree=Pos	7	advmod	_	_
+7	kjarni	kjarni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+8	málsins	mál	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
+9	að	að	SCONJ	C	_	13	mark	_	_
+10	ekki	ekki	ADV	NEG	_	13	advmod	_	_
+11	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	13	cop	_	_
+12	alltaf	alltaf	ADV	ADV	Degree=Pos	13	advmod	_	_
+13	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	7	xcomp	_	_
+14	með	með	ADP	P	_	16	case	_	_
+15	þennan	þessi	DET	D-A	Case=Acc|PronType=Art	16	det	_	_
+16	hringlanda	hringlandi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
+17	í	í	ADP	P	_	20	case	_	_
+18	kringum	kringum	ADP	P	_	20	case	_	_
+19	hverjar	hver	DET	Q-A	Case=Acc|Degree=Pos	20	amod	_	_
+20	kosningar	kosning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	20	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4588829,.2
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Það er ekkert óeðlilegt að ný ríkisstjórn hverju sinni vilji koma með sínar áherslur, hugsanlega að sameina ráðuneyti eða gera þetta með öðrum hætti, en þá verðum við að taka þá umræðu í þinginu.
+1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	4	amod	_	_
+4	óeðlilegt	óeðlilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+5	að	að	SCONJ	C	_	11	mark	_	_
+6	ný	nýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
+7	ríkisstjórn	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
+8	hverju	hver	DET	Q-D	Case=Dat|Degree=Pos	9	amod	_	_
+9	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
+10	vilji	vilja	AUX	MDPS	Mood=Sub|Tense=Pres	11	aux	_	_
+11	koma	koma	VERB	VB	VerbForm=Inf	4	ccomp	_	_
+12	með	með	ADP	P	_	14	case	_	_
+13	sínar	sinn	PRON	PRO-A	Case=Acc	14	nmod:poss	_	_
+14	áherslur	áhersla	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	hugsanlega	hugsanlega	ADV	ADV	Degree=Pos	14	acl	_	_
+17	að	að	PART	TO	_	18	mark	_	_
+18	sameina	sameina	VERB	VB	VerbForm=Inf	16	acl	_	_
+19	ráðuneyti	ráðuneyti	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	obj	_	_
+20	eða	eða	CCONJ	CONJ	_	21	cc	_	_
+21	gera	gera	VERB	DO	VerbForm=Inf	16	acl	_	_
+22	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	21	obj	_	_
+23	með	með	ADP	P	_	25	case	_	_
+24	öðrum	annar	PRON	OTHER-D	Case=Dat	25	det	_	_
+25	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	en	en	CCONJ	CONJ	_	29	cc	_	_
+28	þá	þá	ADV	ADV	Degree=Pos	29	advmod	_	_
+29	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+30	við	ég	PRON	PRO-N	Case=Nom	29	nsubj	_	_
+31	að	að	PART	TO	_	32	mark	_	_
+32	taka	taka	VERB	VB	VerbForm=Inf	29	acl	_	_
+33	þá	sá	DET	D-A	Case=Acc|PronType=Art	34	det	_	_
+34	umræðu	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	32	obj	_	_
+35	í	í	ADP	P	_	36	case	_	_
+36	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	36	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4588829,.3
+# X_ID = ID_MISSING
+# text = Það sem verið er að gera með þessum breytingum er að öll slík umræða, hvaða ráðuneyti verða starfandi, hvernig þau starfa og eru starfrækt, mun bara fara fram á flokksskrifstofum.
+1	Það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+2	sem	sem	SCONJ	C	_	3	mark	_	_
+3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	1	acl:relcl	_	_
+4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	gera	gera	VERB	DO	VerbForm=Inf	3	acl	_	_
+7	með	með	ADP	P	_	9	case	_	_
+8	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
+9	breytingum	breyting	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
+11	að	að	SCONJ	C	_	30	mark	_	_
+12	öll	allur	DET	Q-N	Case=Nom|Degree=Pos	14	amod	_	_
+13	slík	slíkur	PRON	SUCH-N	Case=Nom	14	det	_	_
+14	umræða	umræða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	30	nsubj	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	hvaða	hvaða	DET	WD-N	Case=Nom|Number=Sing	17	det	_	_
+17	ráðuneyti	ráðuneyti	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	18	obj	_	_
+18	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	14	ccomp	_	_
+19	starfandi	starfa	VERB	VAG	Tense=Pres|VerbForm=Part	18	amod	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	hvernig	hvernig	ADV	WADV	Degree=Pos	23	advmod	_	_
+22	þau	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+23	starfa	starfa	VERB	VBPI	Mood=Ind|Tense=Pres	18	conj	_	_
+24	og	og	CCONJ	CONJ	_	26	cc	_	_
+25	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	26	cop	_	_
+26	starfrækt	starfrækja	VERB	VAN	Tense=Past|VerbForm=Part	23	conj	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	26	punct	_	_
+28	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	30	aux	_	_
+29	bara	bara	ADV	FP	Degree=Pos	30	advmod	_	_
+30	fara	fara	VERB	VB	VerbForm=Inf	1	ccomp	_	_
+31	fram	fram	ADP	RP	_	30	compound:prt	_	_
+32	á	á	ADP	P	_	33	case	_	_
+33	flokksskrifstofum	flokksskrifstofa	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	30	obl	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	33	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4588829,.4
+# X_ID = ID_MISSING
+# text = Er það heilbrigt?
+1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	heilbrigt	heilbrigður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	.	_	3	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4588829,.5
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Ég segi nei, hún á að fara fram í þinginu.
+1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	segi	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	nei	nei	INTJ	INTJ	_	2	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	hún	hún	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+7	að	að	PART	TO	_	8	mark	_	_
+8	fara	fara	VERB	VB	VerbForm=Inf	6	acl	_	_
+9	fram	fram	ADP	RP	_	8	compound:prt	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	11	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4588829,.6
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Við þingmenn eigum að fá að koma að því að ræða hvernig ríkisstjórnin er byggð upp, ég sé ekkert hættulegt við slíka umræðu.
+1	Við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+2	þingmenn	þingmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	1	appos	_	_
+3	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	fá	fá	VERB	VB	VerbForm=Inf	3	acl	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	koma	koma	VERB	VB	VerbForm=Inf	5	acl	_	_
+8	að	að	ADP	P	_	9	case	_	_
+9	því	það	PRON	PRO-D	Case=Dat	7	obl	_	_
+10	að	að	PART	TO	_	11	mark	_	_
+11	ræða	ræða	VERB	VB	VerbForm=Inf	9	acl	_	_
+12	hvernig	hvernig	ADV	WADV	Degree=Pos	15	advmod	_	_
+13	ríkisstjórnin	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
+14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
+15	byggð	byggja	VERB	VAN	Tense=Past|VerbForm=Part	11	ccomp	_	_
+16	upp	upp	ADP	RP	_	15	compound:prt	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	ég	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+19	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	24	cop	_	_
+20	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	24	obj	_	_
+21	hættulegt	hættulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
+22	við	við	ADP	P	_	24	case	_	_
+23	slíka	slíkur	PRON	SUCH-A	Case=Acc	24	det	_	_
+24	umræðu	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	conj	_	OriginalHead=0|SpaceAfter=No
+25	.	.	PUNCT	.	_	24	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4588829,.7
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Miklu frekar eiga allir þingmenn, hvort heldur þeir eru almennir þingmenn eða ráðherrar í ríkisstjórn, að fagna slíkri umræðu, við eigum að vera óhrædd við að taka þá umræðu hvaða framtíðarsýn við sjáum fyrir ríkisstjórnina.
+1	Miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	2	obl	_	_
+2	frekar	frekar	ADV	ADVR	Degree=Cmp	3	advmod	_	_
+3	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	5	amod	_	_
+5	þingmenn	þingmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	hvort	hvort	SCONJ	WQ	_	12	mark	_	_
+8	heldur	heldur	ADV	ADVR	Degree=Cmp	12	advmod	_	_
+9	þeir	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+10	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
+11	almennir	almennur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
+12	þingmenn	þingmaður	ADV	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	advmod	_	_
+13	eða	eða	CCONJ	CONJ	_	14	cc	_	_
+14	ráðherrar	ráðherra	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	conj	_	_
+15	í	í	ADP	P	_	16	case	_	_
+16	ríkisstjórn	ríkisstjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	að	að	PART	TO	_	19	mark	_	_
+19	fagna	fagna	VERB	VB	VerbForm=Inf	3	acl	_	_
+20	slíkri	slíkur	PRON	SUCH-D	Case=Dat	21	det	_	_
+21	umræðu	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obj	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	við	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+24	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+25	að	að	PART	TO	_	27	mark	_	_
+26	vera	vera	AUX	BE	VerbForm=Inf	27	cop	_	_
+27	óhrædd	óhræddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	acl	_	_
+28	við	við	ADP	P	_	30	case	_	_
+29	að	að	PART	TO	_	30	mark	_	_
+30	taka	taka	VERB	VB	VerbForm=Inf	27	amod	_	_
+31	þá	sá	DET	D-A	Case=Acc|PronType=Art	32	det	_	_
+32	umræðu	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obj	_	_
+33	hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	34	det	_	_
+34	framtíðarsýn	framtíðarsýn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	36	obj	_	_
+35	við	ég	PRON	PRO-N	Case=Nom	36	nsubj	_	_
+36	sjáum	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	32	ccomp	_	_
+37	fyrir	fyrir	ADP	P	_	38	case	_	_
+38	ríkisstjórnina	ríkisstjórn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	36	obl	_	SpaceAfter=No
+39	.	.	PUNCT	.	_	38	punct	_	_
+

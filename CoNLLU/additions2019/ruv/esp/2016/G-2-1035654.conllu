@@ -1,0 +1,33 @@
+# sent_id = RUV_ESP_2016_G-2-1035654,.1
+# X_ID = ID_MISSING
+# text = Sænski knattspyrnumaðurinn Zlatan Ibrahimovic er genginn til liðs við Manchester United í ensku úrvalsdeildinni.
+1	Sænski	sænskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+2	knattspyrnumaðurinn	knattspyrnumaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+3	Zlatan	zlatan	ADV	ADV	Degree=Pos	6	advmod	_	_
+4	Ibrahimovic	ibrahimovic	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+6	genginn	ganga	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	til	til	ADP	P	_	8	case	_	_
+8	liðs	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
+9	við	við	ADP	P	_	10	case	_	_
+10	Manchester	manchester	PROPN	NPR-A	_	8	obl	_	_
+11	United	united	PROPN	NPR-A	_	10	flat:name	_	_
+12	í	í	ADP	P	_	14	case	_	_
+13	ensku	enskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
+14	úrvalsdeildinni	úrvalsdeild	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1035654,.2
+# X_ID = ID_MISSING
+# text = Þetta tilkynnti hann á Twitter-síðu sinni rétt í þessu.
+1	Þetta	þessi	DET	D-A	Case=Acc|PronType=Art	2	obj	_	_
+2	tilkynnti	tilkynna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	Twitter-síðu	twitter-síða	PROPN	NPR-D	_	2	obl	_	_
+6	sinni	sinn	PRON	PRO-D	Case=Dat	5	nmod:poss	_	_
+7	rétt	rétt	ADV	ADV	Degree=Pos	9	advmod	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	2	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	9	punct	_	_
+

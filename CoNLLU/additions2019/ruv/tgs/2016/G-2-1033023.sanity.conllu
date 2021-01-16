@@ -1,0 +1,213 @@
+# sent_id = RUV_TGS_2016_G-2-1033023.SANITY,.1
+# X_ID = ID_MISSING
+# text = Grótta hefur pálmann í höndunum í einvíginu gegn Fram í undanúrslitum Íslandsmóts kvenna í handbolta.
+1	Grótta	grótta	PROPN	NPR-N	_	2	nsubj	_	_
+2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	pálmann	pálmi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	ccomp	_	_
+4	í	í	ADP	P	_	5	case	_	_
+5	höndunum	hönd	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	einvíginu	einvígi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+8	gegn	gegn	ADP	P	_	9	case	_	_
+9	Fram	fram	PROPN	NPR-D	_	7	obl	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	undanúrslitum	undanúrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	_
+12	Íslandsmóts	íslandsmót	PROPN	NPR-G	_	11	nmod:poss	_	_
+13	kvenna	kona	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	nmod:poss	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	handbolta	handbolti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1033023.SANITY,.2
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Grótta hefur unnið tvo fyrstu leiki liðanna í undanúrslitunum en vinna þarf þrjá leiki til að komast í úrslit.
+1	Grótta	grótta	PROPN	NPR-N	_	3	nsubj	_	_
+2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	3	aux	_	_
+3	unnið	vinna	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+4	tvo	tveir	NUM	NUM-A	Case=Acc	6	nummod	_	_
+5	fyrstu	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	6	amod	_	_
+6	leiki	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	_
+7	liðanna	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	nmod:poss	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	undanúrslitunum	undanúrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+10	en	en	CCONJ	CONJ	_	11	cc	_	_
+11	vinna	vinna	VERB	VB-1	VerbForm=Inf	3	conj	_	OriginalHead=0
+12	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	11	dep	_	_
+13	þrjá	þrír	NUM	NUM-A	Case=Acc	11	acl	_	_
+14	leiki	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obj	_	_
+15	til	til	ADP	P	_	17	case	_	_
+16	að	að	PART	TO	_	17	advcl	_	_
+17	komast	koma	VERB	VB	VerbForm=Inf	11	obl	_	_
+18	í	í	ADP	P	_	19	case	_	_
+19	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1033023.SANITY,.3
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Næsti leikur er á heimavelli Gróttu á Seltjarnarnesi og því er útlitið dökkt fyrir Framkonur.
+1	Næsti	næstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	amod	_	_
+2	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	heimavelli	heimavöllur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
+6	Gróttu	grótta	PROPN	NPR-G	_	5	nmod:poss	_	_
+7	á	á	ADP	P	_	8	case	_	_
+8	Seltjarnarnesi	seltjarnarnes	PROPN	NPR-D	_	5	obl	_	_
+9	og	og	CCONJ	CONJ	_	5	cc	_	_
+10	því	það	PRON	PRO-D	Case=Dat	5	conj	_	OriginalHead=0
+11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
+12	útlitið	útlit	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+13	dökkt	dökkur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	_
+14	fyrir	fyrir	ADP	P	_	15	case	_	_
+15	Framkonur	framkona	PROPN	NPRS-A	_	10	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1033023.SANITY,.4
+# X_ID = ID_MISSING
+# text = Stefán Arnarson þjálfari Fram notaðist þó ekki við neina gamla frasa þegar hann tók saman stöðuna í viðtali eftir leikinn í gær.
+1	Stefán	stefán	PROPN	NPR-N	_	5	nsubj	_	_
+2	Arnarson	arnarson	PROPN	NPR-N	_	1	flat:name	_	_
+3	þjálfari	þjálfari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	_
+4	Fram	fram	PROPN	NPR-G	_	3	nmod:poss	_	_
+5	notaðist	nota	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+6	þó	þó	ADV	ADV	Degree=Pos	5	advmod	_	_
+7	ekki	ekki	ADV	NEG	_	5	advmod	_	_
+8	við	við	ADP	P	_	11	case	_	_
+9	neina	neinn	DET	Q-A	Case=Acc|Degree=Pos	11	amod	_	_
+10	gamla	gamall	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	amod	_	_
+11	frasa	frasi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
+12	þegar	þegar	ADP	P	_	14	case	_	_
+13	hann	hann	PRON	PRO-N	Case=Nom	14	nsubj	_	_
+14	tók	taka	VERB	VBDI	Mood=Ind|Tense=Past	5	obl	_	_
+15	saman	saman	ADV	ADV	Degree=Pos	14	advmod	_	_
+16	stöðuna	staða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
+17	í	í	ADP	P	_	18	case	_	_
+18	viðtali	viðtal	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
+19	eftir	eftir	ADP	P	_	20	case	_	_
+20	leikinn	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
+21	í	í	ADP	P	_	22	case	_	_
+22	gær	gær	ADV	ADV	Degree=Pos	20	obl	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	22	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1033023.SANITY,.5
+# X_ID = ID_MISSING
+# text = „ Þetta er núna bara eins og maður sé á Hlemmi og ætli í Kópavoginn og maður missi af strætó og Anna og Kári vinki manni bara.
+1	„	„	PUNCT	"	_	4	punct	_	_
+2	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+4	núna	núna	ADV	ADV	Degree=Pos	0	root	_	_
+5	bara	bara	ADV	FP	Degree=Pos	4	advmod	_	_
+6	eins	_	ADV	ADVR	Degree=Cmp	4	advmod	_	_
+7	og	_	ADP	P	_	8	case	_	_
+8	maður	maður	PRON	MAN-N	_	6	obl	_	_
+9	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	8	cop	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	Hlemmi	hlemmur	PROPN	NPR-D	_	8	obl	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	ætli	ætla	VERB	VBPS	Mood=Sub|Tense=Pres	8	conj	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	Kópavoginn	kópavogur	PROPN	NPR-A	_	13	obl	_	_
+16	og	og	CCONJ	CONJ	_	18	cc	_	_
+17	maður	maður	PRON	MAN-N	_	18	nsubj	_	_
+18	missi	missa	VERB	VBPS	Mood=Sub|Tense=Pres	8	conj	_	_
+19	af	af	ADP	P	_	20	case	_	_
+20	strætó	strætó	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
+21	og	og	CCONJ	CONJ	_	25	cc	_	_
+22	Anna	anna	PROPN	NPR-N	_	25	nsubj	_	_
+23	og	og	CCONJ	CONJ	_	22	cc	_	_
+24	Kári	kári	PROPN	NPR-N	_	22	dep	_	_
+25	vinki	vinka	VERB	VBPS	Mood=Sub|Tense=Pres	8	conj	_	_
+26	manni	maður	PRON	MAN-D	_	25	obj	_	_
+27	bara	bara	ADV	FP	Degree=Pos	25	advmod	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	27	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1033023.SANITY,.6
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Við þurfum að taka annan strætó en þau og svo er bara að sjá hvor vagninn kemur á undan á leiðarenda,“ sagði Stefán og átti þar við Kára Garðarsson þjálfara Gróttu og Önnu Úrsúlu Guðmundsdóttur leikmann liðsins.
+1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	að	að	PART	TO	_	4	mark	_	_
+4	taka	taka	VERB	VB	VerbForm=Inf	2	acl	_	_
+5	annan	annar	PRON	OTHER-A	Case=Acc	6	det	_	_
+6	strætó	strætó	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
+7	en	en	CCONJ	CONJ	_	6	obl	_	_
+8	þau	það	PRON	PRO-N	Case=Nom	7	advcl	_	_
+9	og	og	CCONJ	CONJ	_	24	cc	_	_
+10	svo	svo	ADV	ADV	Degree=Pos	24	advmod	_	_
+11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
+12	bara	bara	ADV	FP	Degree=Pos	24	advmod	_	_
+13	að	að	PART	TO	_	14	mark	_	_
+14	sjá	sjá	VERB	VB	VerbForm=Inf	24	acl	_	_
+15	hvor	hvor	SCONJ	WQ-N	_	16	mark	_	_
+16	vagninn	vagn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	obj	_	_
+17	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	14	ccomp	_	_
+18	á	á	ADP	P	_	19	case	_	_
+19	undan	undan	ADV	ADV	Degree=Pos	17	obl	_	_
+20	á	á	ADP	P	_	21	case	_	_
+21	leiðarenda	leiðarendi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	24	punct	_	SpaceAfter=No
+23	“	“	PUNCT	"	_	22	punct	_	_
+24	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+25	Stefán	stefán	PROPN	NPR-N	_	24	nsubj	_	_
+26	og	og	CCONJ	CONJ	_	27	cc	_	_
+27	átti	eiga	VERB	VBDI	Mood=Ind|Tense=Past	24	parataxis	_	_
+28	þar	þar	ADV	ADV	Degree=Pos	27	advmod	_	_
+29	við	við	ADP	P	_	30	case	_	_
+30	Kára	kári	PROPN	NPR-A	_	27	obl	_	_
+31	Garðarsson	garðarsson	PROPN	NPR-A	_	30	flat:name	_	_
+32	þjálfara	þjálfari	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	appos	_	_
+33	Gróttu	grótta	PROPN	NPR-G	_	32	nmod:poss	_	_
+34	og	og	CCONJ	CONJ	_	35	cc	_	_
+35	Önnu	anna	PROPN	NPR-A	_	30	conj	_	_
+36	Úrsúlu	úrsúla	PROPN	NPR-A	_	35	flat:name	_	_
+37	Guðmundsdóttur	guðmundsdóttir	PROPN	NPR-A	_	35	dep	_	_
+38	leikmann	leikmaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	35	appos	_	_
+39	liðsins	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	38	nmod:poss	_	SpaceAfter=No
+40	.	.	PUNCT	.	_	39	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1033023.SANITY,.7
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Grótta og Fram mætast næst á Seltjarnarnesi á miðvikudagskvöld klukkan 19.30 og verður leikurinn sýndur í beinni útsendingu á RÚV 2.
+1	Grótta	grótta	PROPN	NPR-N	_	4	nsubj	_	_
+2	og	og	CCONJ	CONJ	_	1	cc	_	_
+3	Fram	fram	PROPN	NPR-N	_	1	dep	_	_
+4	mætast	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+5	næst	nærri	ADV	ADVS	Degree=Sup	4	advmod	_	_
+6	á	á	ADP	P	_	7	case	_	_
+7	Seltjarnarnesi	seltjarnarnes	PROPN	NPR-D	_	4	obl	_	_
+8	á	á	ADP	P	_	9	case	_	_
+9	miðvikudagskvöld	miðvikudagskvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+10	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	advcl	_	_
+11	19	nítján	NUM	NUM-N	Case=Nom	10	xcomp	_	SpaceAfter=No
+12	.	.	PUNCT	,	_	13	punct	_	_|SpaceAfter=No
+13	30	þrjátíu	NUM	NUM-N	Case=Nom	11	conj	_	_
+14	og	og	CCONJ	CONJ	_	17	cc	_	_
+15	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	17	aux	_	_
+16	leikurinn	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
+17	sýndur	sýna	VERB	VAN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
+18	í	í	ADP	P	_	20	case	_	_
+19	beinni	beinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	20	amod	_	_
+20	útsendingu	útsending	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
+21	á	á	ADP	P	_	22	case	_	_
+22	RÚV	rúv	PROPN	NPR-D	_	17	obl	_	_
+23	2	tveir	NUM	NUM-N	Case=Nom	22	nmod:poss	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1033023.SANITY,.8
+# X_ID = ID_MISSING
+# text = Fjórði leikur Stjörnunnar og Hauka verður svo sýndur á RÚV 2 á föstudagskvöld.
+1	Fjórði	fjórði	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+2	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+3	Stjörnunnar	stjarna	PROPN	NPR-G	_	2	nmod:poss	_	_
+4	og	og	CCONJ	CONJ	_	5	cc	_	_
+5	Hauka	haukur	PROPN	NPRS-G	_	3	conj	_	_
+6	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	8	aux	_	_
+7	svo	svo	ADV	ADV	Degree=Pos	8	advmod	_	_
+8	sýndur	sýna	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+9	á	á	ADP	P	_	10	case	_	_
+10	RÚV	rúv	PROPN	NPR-D	_	8	obl	_	_
+11	2	tveir	NUM	NUM-N	Case=Nom	10	nmod:poss	_	_
+12	á	á	ADP	P	_	13	case	_	_
+13	föstudagskvöld	föstudagskvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	13	punct	_	_
+

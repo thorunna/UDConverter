@@ -1,0 +1,493 @@
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.1
+# X_ID = ID_MISSING
+# text = Herra forseti.
+1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.2
+# X_ID = ID_MISSING
+# text = Hef ég sex mínútur eða svo?
+1	Hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	1	nsubj	_	_
+3	sex	sex	NUM	NUM-A	Case=Acc	4	nummod	_	_
+4	mínútur	mínúta	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	_
+5	eða	eða	CCONJ	CONJ	_	6	cc	_	_
+6	svo	svo	ADV	ADV	Degree=Pos	1	obj	_	SpaceAfter=No
+7	?	?	PUNCT	.	_	6	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.3
+# X_ID = ID_MISSING
+# text = Hlátur í þingsal.
+1	Hlátur	hlátur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+2	í	í	ADP	P	_	3	case	_	_
+3	þingsal	þingsalur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	SpaceAfter=No
+4	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.4
+# X_ID = ID_MISSING
+# text = Sem sagt, örfáar spurningar.
+1	Sem	sem	SCONJ	C	_	2	mark	_	_
+2	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	örfáar	örfár	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
+5	spurningar	spurning	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.5
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Vandi Íbúðalánasjóðs var viðvarandi viðfangsefni og honum var lagt til fé, staða hans kortlögð og unnið mikið með mál hans, meira og minna allt kjörtímabilið. Gripið fram í: Lögum breytt.
+1	Vandi	vandi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+2	Íbúðalánasjóðs	íbúðalánasjóður	PROPN	NPR-G	_	1	nmod:poss	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+4	viðvarandi	viðvarandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+5	viðfangsefni	viðfangsefni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	conj	_	_
+6	og	og	CCONJ	CONJ	_	9	cc	_	_
+7	honum	hann	PRON	PRO-D	Case=Dat	9	nsubj	_	_
+8	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	9	cop	_	_
+9	lagt	leggja	VERB	VAN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
+10	til	til	ADP	RP	_	9	compound:prt	_	_
+11	fé	fé	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	obj	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	staða	staða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
+14	hans	hann	PRON	PRO-G	Case=Gen	13	nmod:poss	_	_
+15	kortlögð	kortleggja	VERB	VAN	Tense=Past|VerbForm=Part	9	conj	_	_
+16	og	og	CCONJ	CONJ	_	17	cc	_	_
+17	unnið	vinna	VERB	VAN	Tense=Past|VerbForm=Part	9	conj	_	_
+18	mikið	mikið	ADV	ADV	Degree=Pos	17	advmod	_	_
+19	með	með	ADP	P	_	20	case	_	_
+20	mál	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obl	_	_
+21	hans	hann	PRON	PRO-G	Case=Gen	20	nmod:poss	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	meira	mikið	ADV	ADVR	Degree=Cmp	26	advmod	_	_
+24	og	og	CCONJ	CONJ	_	23	cc	_	_
+25	minna	lítið	ADV	ADVR	Degree=Cmp	23	advmod	_	_
+26	allt	allur	ADV	Q-A	Case=Acc|Degree=Pos	27	advmod	_	_
+27	kjörtímabilið	kjörtímabil	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	27	punct	_	_
+29	Gripið	grípa	VERB	VAN	Tense=Past|VerbForm=Part	34	dep	_	_
+30	fram	fram	ADP	RP	_	31	compound:prt	_	_
+31	í	í	ADV	ADV	Degree=Pos	29	advmod	_	SpaceAfter=No
+32	:	:	PUNCT	,	_	34	punct	_	_
+33	Lögum	lög	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	34	nsubj	_	_
+34	breytt	breyta	VERB	VAN	Tense=Past|VerbForm=Part	9	conj	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	34	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.6
+# X_ID = ID_MISSING
+# text = Lögum var breytt og þar fram eftir götunum.
+1	Lögum	lög	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	nsubj	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
+3	breytt	breyta	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+4	og	og	CCONJ	CONJ	_	3	conj	_	_
+5	þar	þar	ADV	ADV	Degree=Pos	8	advmod	_	_
+6	fram	fram	ADP	RP	_	8	compound:prt	_	_
+7	eftir	eftir	ADP	P	_	8	case	_	_
+8	götunum	gata	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	xcomp	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.7
+# X_ID = ID_MISSING
+# text = Það var að mörgu að hyggja þar, m.a. að bjarga honum gagnvart áliti ESA og annað í þeim dúr.
+1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+3	að	að	ADP	P	_	4	case	_	_
+4	mörgu	margur	DET	Q-D	Case=Dat|Degree=Pos	0	root	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	hyggja	hyggja	VERB	VB	VerbForm=Inf	4	acl	_	_
+7	þar	þar	ADV	ADV	Degree=Pos	4	advmod	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	m.a.	m.a.	X	as	_	11	dep	_	_
+10	að	að	PART	TO	_	11	mark	_	_
+11	bjarga	bjarga	VERB	VB	VerbForm=Inf	4	acl	_	_
+12	honum	hann	PRON	PRO-D	Case=Dat	11	obj	_	_
+13	gagnvart	gagnvart	ADP	P	_	14	case	_	_
+14	áliti	álit	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+15	ESA	esa	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	nmod:poss	_	_
+16	og	og	CCONJ	CONJ	_	17	cc	_	_
+17	annað	annar	PRON	OTHER-N	Case=Nom	11	acl	_	_
+18	í	í	ADP	P	_	20	case	_	_
+19	þeim	sá	DET	D-D	Case=Dat|PronType=Art	20	det	_	_
+20	dúr	dúr	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	20	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.8
+# X_ID = ID_MISSING
+# text = Síðan var Íbúðalánasjóður auðvitað nýttur í aðgerðir eins og 110<percent/>leiðina og honum lagt til fé í því skyni.
+1	Síðan	síðan	ADV	ADV	Degree=Pos	5	advmod	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
+3	Íbúðalánasjóður	íbúðalánasjóður	PROPN	NPR-N	_	5	nsubj	_	_
+4	auðvitað	auðvitað	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	nýttur	nýta	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	aðgerðir	aðgerð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
+8	eins	_	ADV	ADVR	Degree=Cmp	7	advmod	_	_
+9	og	_	ADP	P	_	10	case	_	_
+10	110<percent/>leiðina	110<percent/>leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
+11	og	og	CCONJ	CONJ	_	13	cc	_	_
+12	honum	hann	PRON	PRO-D	Case=Dat	13	nsubj	_	_
+13	lagt	leggja	VERB	VAN	Tense=Past|VerbForm=Part	5	conj	_	_
+14	til	til	ADP	RP	_	13	compound:prt	_	_
+15	fé	fé	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	obj	_	_
+16	í	í	ADP	P	_	18	case	_	_
+17	því	sá	DET	D-D	Case=Dat|PronType=Art	18	det	_	_
+18	skyni	skyn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	18	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.9
+# X_ID = ID_MISSING
+# text = Það er því ekki eins og Íbúðalánasjóður hafi gleymst á þeim tíma.
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	því	það	PRON	PRO-D	Case=Dat	0	root	_	_
+4	ekki	ekki	ADV	NEG	_	3	advmod	_	_
+5	eins	_	ADV	ADVR	Degree=Cmp	3	advmod	_	_
+6	og	_	ADP	P	_	9	case	_	_
+7	Íbúðalánasjóður	íbúðalánasjóður	PROPN	NPR-N	_	9	nsubj	_	_
+8	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	9	aux	_	_
+9	gleymst	gleyma	VERB	VBN	Tense=Past|VerbForm=Part	5	obl	_	_
+10	á	á	ADP	P	_	12	case	_	_
+11	þeim	sá	DET	D-D	Case=Dat|PronType=Art	12	det	_	_
+12	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	12	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.10
+# X_ID = ID_MISSING
+# text = Ég var aðallega ræðu minni að velta því upp og eiginlega harma að það skyldi vera þannig hjá núverandi ríkisstjórn að henni kæmi aldrei til hugar sá möguleiki gagnvart vanda ríkisfjármálanna og því að afla fjár til að setja í brýn verkefni, eins og við erum sammála að þurfi að gera með heilbrigðiskerfið, að að einhverju leyti að minnsta kosti gæti tekjuöflun komið til greina.
+1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+3	aðallega	aðallega	ADV	ADV	Degree=Pos	4	advmod	_	_
+4	ræðu	ræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
+5	minni	minn	PRON	PRO-D	Case=Dat	4	nmod:poss	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	velta	velta	VERB	VB	VerbForm=Inf	4	acl	_	_
+8	því	það	PRON	PRO-D	Case=Dat	7	obj	_	_
+9	upp	upp	ADP	RP	_	7	compound:prt	_	_
+10	og	og	CCONJ	CONJ	_	12	cc	_	_
+11	eiginlega	eiginlega	ADV	ADV	Degree=Pos	12	advmod	_	_
+12	harma	harma	VERB	VB	VerbForm=Inf	7	acl	_	_
+13	að	að	SCONJ	C	_	15	mark	_	_
+14	það	það	PRON	PRO-N	Case=Nom	15	nsubj	_	_
+15	skyldi	skulu	AUX	MDDS	Mood=Sub|Tense=Past	7	ccomp	_	_
+16	vera	vera	AUX	BE	VerbForm=Inf	15	cop	_	_
+17	þannig	þannig	ADV	ADV	Degree=Pos	15	advmod	_	_
+18	hjá	hjá	ADP	P	_	20	case	_	_
+19	núverandi	núverandi	ADJ	ADJ-D	Case=Dat|Degree=Pos	20	amod	_	_
+20	ríkisstjórn	ríkisstjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
+21	að	að	SCONJ	C	_	23	mark	_	_
+22	henni	hún	PRON	PRO-D	Case=Dat	23	nsubj	_	_
+23	kæmi	koma	VERB	VBDS	Mood=Sub|Tense=Past	15	advcl	_	_
+24	aldrei	aldrei	ADV	ADV	Degree=Pos	23	advmod	_	_
+25	til	til	ADP	P	_	26	case	_	_
+26	hugar	hugur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	obl	_	_
+27	sá	sá	DET	D-N	Case=Nom|PronType=Art	28	det	_	_
+28	möguleiki	möguleiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	obj	_	_
+29	gagnvart	gagnvart	ADP	P	_	30	case	_	_
+30	vanda	vandi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	_
+31	ríkisfjármálanna	ríkisfjármál	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	30	nmod:poss	_	_
+32	og	og	CCONJ	CONJ	_	33	cc	_	_
+33	því	það	PRON	PRO-D	Case=Dat	30	conj	_	_
+34	að	að	PART	TO	_	35	mark	_	_
+35	afla	afla	VERB	VB	VerbForm=Inf	33	acl	_	_
+36	fjár	fé	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	35	obj	_	_
+37	til	til	ADP	P	_	39	case	_	_
+38	að	að	PART	TO	_	39	mark	_	_
+39	setja	setja	VERB	VB	VerbForm=Inf	36	obl	_	_
+40	í	í	ADP	P	_	42	case	_	_
+41	brýn	brýnn	ADJ	ADJ-A	Case=Acc|Degree=Pos	42	amod	_	_
+42	verkefni	verkefni	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	39	obl	_	SpaceAfter=No
+43	,	,	PUNCT	,	_	42	punct	_	_
+44	eins	_	ADV	ADVR	Degree=Cmp	35	advmod	_	_
+45	og	_	ADP	P	_	48	case	_	_
+46	við	ég	PRON	PRO-N	Case=Nom	48	nsubj	_	_
+47	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	48	cop	_	_
+48	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	44	obl	_	_
+49	að	að	SCONJ	C	_	50	mark	_	_
+50	þurfi	þurfa	VERB	VBPS	Mood=Sub|Tense=Pres	48	ccomp	_	_
+51	að	að	PART	TO	_	52	mark	_	_
+52	gera	gera	VERB	DO	VerbForm=Inf	50	acl	_	_
+53	með	með	ADP	P	_	54	case	_	_
+54	heilbrigðiskerfið	heilbrigðiskerfi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	52	obl	_	SpaceAfter=No
+55	,	,	PUNCT	,	_	54	punct	_	_
+56	að	að	SCONJ	C	_	65	mark	_	_
+57	að	að	ADP	P	_	59	case	_	_
+58	einhverju	einhver	DET	Q-D	Case=Dat|Degree=Pos	59	amod	_	_
+59	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	65	obl	_	_
+60	að	að	ADP	P	_	62	case	_	_
+61	minnsta	lítill	ADJ	ADJS-D	Case=Dat|Degree=Sup	62	amod	_	_
+62	kosti	kostur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	59	obl	_	_
+63	gæti	geta	AUX	MDDS	Mood=Sub|Tense=Past	65	aux	_	_
+64	tekjuöflun	tekjuöflun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	65	nsubj	_	_
+65	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	28	ccomp	_	_
+66	til	til	ADP	P	_	67	case	_	_
+67	greina	grein	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	65	obl	_	SpaceAfter=No
+68	.	.	PUNCT	.	_	67	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.11
+# X_ID = ID_MISSING
+# text = Það er orðin sú breyting á, klár pólitísk breyting á, að ríkisstjórnin það er bara tabú, það er bannað að ræða það í þessari ríkisstjórn.
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	orðin	verða	VERB	RDN	Tense=Past|VerbForm=Part	0	root	_	_
+4	sú	sá	DET	D-N	Case=Nom|PronType=Art	5	det	_	_
+5	breyting	breyting	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	obl	_	_
+6	á	á	ADP	RP	_	3	compound:prt	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	klár	klár	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	_
+9	pólitísk	pólitískur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	_
+10	breyting	breyting	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	parataxis	_	_
+11	á	á	ADP	RP	_	10	compound:prt	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	að	að	SCONJ	C	_	24	mark	_	_
+14	ríkisstjórnin	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	dep	_	_
+15	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	24	expl	_	_
+16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
+17	bara	bara	ADV	FP	Degree=Pos	24	advmod	_	_
+18	tabú	tabú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	xcomp	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	20	punct	_	_
+20	það	það	PRON	PRO-N	Case=Nom	24	conj	_	_
+21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
+22	bannað	bannaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
+23	að	að	PART	TO	_	24	mark	_	_
+24	ræða	ræða	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+25	það	það	PRON	PRO-A	Case=Acc	24	obj	_	_
+26	í	í	ADP	P	_	28	case	_	_
+27	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	28	det	_	_
+28	ríkisstjórn	ríkisstjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	28	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.12
+# X_ID = ID_MISSING
+# text = Ég kalla það hömlun og vona að það móðgist enginn úti í þjóðfélaginu þó að ég segi það að menn skuli ekki einu sinni geta velt því fyrir sér.
+1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	kalla	kalla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	það	það	PRON	PRO-A	Case=Acc	4	nsubj	_	_
+4	hömlun	hömlun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	ccomp	_	_
+5	og	og	CCONJ	CONJ	_	6	cc	_	_
+6	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	2	parataxis	_	_
+7	að	að	SCONJ	C	_	9	mark	_	_
+8	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	9	expl	_	_
+9	móðgist	móðga	VERB	VBPS	Mood=Sub|Tense=Pres	6	ccomp	_	_
+10	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	9	obl	_	_
+11	úti	úti	ADV	ADV	Degree=Pos	13	advmod	_	_
+12	í	í	ADP	P	_	13	case	_	_
+13	þjóðfélaginu	þjóðfélag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+14	þó	þó	ADP	P	_	17	case	_	_
+15	að	að	SCONJ	C	_	17	mark	_	_
+16	ég	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
+17	segi	segja	VERB	VBPI	Mood=Ind|Tense=Pres	9	obl	_	_
+18	það	það	PRON	PRO-A	Case=Acc	17	obj	_	_
+19	að	að	SCONJ	C	_	26	mark	_	_
+20	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	26	nsubj	_	_
+21	skuli	skulu	AUX	MDPS	Mood=Sub|Tense=Pres	26	aux	_	_
+22	ekki	ekki	ADV	NEG	_	26	advmod	_	_
+23	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	24	det	_	_
+24	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	_
+25	geta	geta	AUX	MD	VerbForm=Inf	26	aux	_	_
+26	velt	velta	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
+27	því	það	PRON	PRO-D	Case=Dat	26	obj	_	_
+28	fyrir	fyrir	ADP	P	_	29	case	_	_
+29	sér	sig	PRON	PRO-D	Case=Dat	26	obl	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	29	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.13
+# X_ID = ID_MISSING
+# text = Á fyrra kjörtímabili og í tíð fyrri ríkisstjórnar fóru menn það sem kölluð hefur verið blönduð leið, blönduð leið sparnaðar og tekjuöflunar.
+1	Á	á	ADP	P	_	3	case	_	_
+2	fyrra	fyrri	ADJ	ADJR-D	Case=Dat|Degree=Cmp	3	amod	_	_
+3	kjörtímabili	kjörtímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+4	og	og	CCONJ	CONJ	_	6	cc	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	tíð	tíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+7	fyrri	fyrri	ADJ	ADJR-G	Case=Gen|Degree=Cmp	8	amod	_	_
+8	ríkisstjórnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	nmod:poss	_	_
+9	fóru	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+10	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
+11	það	sá	DET	D-A	Case=Acc|PronType=Art	9	obl	_	_
+12	sem	sem	SCONJ	C	_	13	mark	_	_
+13	kölluð	kalla	VERB	VAN	Tense=Past|VerbForm=Part	11	acl:relcl	_	_
+14	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	13	aux	_	_
+15	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	13	cop	_	_
+16	blönduð	blandaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	xcomp	_	_
+17	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	conj	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	blönduð	blandaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
+20	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	appos	_	_
+21	sparnaðar	sparnaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	_
+22	og	og	CCONJ	CONJ	_	21	cc	_	_
+23	tekjuöflunar	tekjuöflun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	conj	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.14
+# X_ID = ID_MISSING
+# text = Menn fóru ekki blinda niðurskurðarstefnu, austerity-stefnu, sem sætir vaxandi gagnrýni núna í hagfræðilegri umræðu alls staðar á Vesturlöndum.
+1	Menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
+2	fóru	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
+4	blinda	blindur	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
+5	niðurskurðarstefnu	niðurskurðarstefna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	austerity-stefnu	austerity-stefna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	appos	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	sem	sem	SCONJ	C	_	10	mark	_	_
+10	sætir	sæta	VERB	VBPI	Mood=Ind|Tense=Pres	5	acl:relcl	_	_
+11	vaxandi	vaxandi	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
+12	gagnrýni	gagnrýni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obj	_	_
+13	núna	núna	ADV	ADV	Degree=Pos	10	advmod	_	_
+14	í	í	ADP	P	_	16	case	_	_
+15	hagfræðilegri	hagfræðilegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	16	amod	_	_
+16	umræðu	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
+17	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	18	amod	_	_
+18	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	obl	_	_
+19	á	á	ADP	P	_	18	case	_	_
+20	Vesturlöndum	vesturland	PROPN	NPRS-D	_	18	obl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	20	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.15
+# X_ID = ID_MISSING
+# text = Alþjóðagjaldeyrissjóðurinn gaf meira að segja út tímamótaskýrslu síðastliðið vor þar sem hann lagði til við lönd í efnahagsþrengingum að afla líka tekna við slíkar aðstæður og leggja þær byrðar á breiðustu bökin.
+1	Alþjóðagjaldeyrissjóðurinn	alþjóðagjaldeyrissjóður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	gaf	gefa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	5	obj	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	segja	segja	ADV	VB	VerbForm=Inf	2	advmod	_	_
+6	út	út	ADP	RP	_	2	compound:prt	_	_
+7	tímamótaskýrslu	tímamótaskýrsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+8	síðastliðið	síðastliðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
+9	vor	vor	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+10	þar	þar	ADV	ADV	Degree=Pos	13	advmod	_	_
+11	sem	sem	SCONJ	C	_	13	mark	_	_
+12	hann	hann	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+13	lagði	leggja	VERB	VBDI	Mood=Ind|Tense=Past	2	acl:relcl	_	_
+14	til	til	ADP	RP	_	13	compound:prt	_	_
+15	við	við	ADP	P	_	16	case	_	_
+16	lönd	land	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obl	_	_
+17	í	í	ADP	P	_	18	case	_	_
+18	efnahagsþrengingum	efnahagsþrengingar	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	_
+19	að	að	PART	TO	_	20	mark	_	_
+20	afla	afla	VERB	VB	VerbForm=Inf	13	acl	_	_
+21	líka	líka	ADV	ALSO	_	20	advmod	_	_
+22	tekna	tekja	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	20	obj	_	_
+23	við	við	ADP	P	_	25	case	_	_
+24	slíkar	slíkur	PRON	SUCH-A	Case=Acc	25	det	_	_
+25	aðstæður	aðstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	20	obl	_	_
+26	og	og	CCONJ	CONJ	_	27	cc	_	_
+27	leggja	leggja	VERB	VB	VerbForm=Inf	20	acl	_	_
+28	þær	sá	DET	D-A	Case=Acc|PronType=Art	29	det	_	_
+29	byrðar	byrði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	27	obj	_	_
+30	á	á	ADP	P	_	32	case	_	_
+31	breiðustu	breiður	ADJ	ADJS-A	Case=Acc|Degree=Sup	32	amod	_	_
+32	bökin	bak	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	27	obl	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	32	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.16
+# X_ID = ID_MISSING
+# text = Þar hefur kannski að einhverju leyti verið litið til þess að hin blandaða leið hafði skilað góðum árangri á Íslandi.
+1	Þar	þar	ADV	ADV	Degree=Pos	8	advmod	_	_
+2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	8	aux	_	_
+3	kannski	kannski	ADV	ADV	Degree=Pos	8	advmod	_	_
+4	að	að	ADP	P	_	6	case	_	_
+5	einhverju	einhver	DET	Q-D	Case=Dat|Degree=Pos	6	amod	_	_
+6	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+7	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	8	cop	_	_
+8	litið	líta	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+9	til	til	ADP	P	_	10	case	_	_
+10	þess	það	PRON	PRO-G	Case=Gen	8	obl	_	_
+11	að	að	SCONJ	C	_	16	mark	_	_
+12	hin	hinn	DET	D-N	Case=Nom|PronType=Art	14	det	_	_
+13	blandaða	blandaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	14	amod	_	_
+14	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
+15	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	16	aux	_	_
+16	skilað	skila	VERB	VBN	Tense=Past|VerbForm=Part	10	ccomp	_	_
+17	góðum	góður	ADJ	ADJ-D	Case=Dat|Degree=Pos	18	amod	_	_
+18	árangri	árangur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obj	_	_
+19	á	á	ADP	P	_	20	case	_	_
+20	Íslandi	ísland	PROPN	NPR-D	_	16	obl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	20	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.17
+# X_ID = ID_MISSING
+# text = Ég hef margtekið það fram úr þessum ræðustóli að ég fagnaði því að fjárlagafrumvarpið kom fram í haust og stefnt var að hallalausum fjárlögum.
+1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+2	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	3	aux	_	_
+3	margtekið	margtaka	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+4	það	það	PRON	PRO-A	Case=Acc	3	obj	_	_
+5	fram	fram	ADP	RP	_	3	compound:prt	_	_
+6	úr	úr	ADP	P	_	8	case	_	_
+7	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+8	ræðustóli	ræðustóll	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+9	að	að	SCONJ	C	_	11	mark	_	_
+10	ég	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
+11	fagnaði	fagna	VERB	VBDI	Mood=Ind|Tense=Past	3	ccomp	_	_
+12	því	það	PRON	PRO-D	Case=Dat	11	obj	_	_
+13	að	að	SCONJ	C	_	15	mark	_	_
+14	fjárlagafrumvarpið	fjárlagafrumvarp	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
+15	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	12	ccomp	_	_
+16	fram	fram	ADP	RP	_	15	compound:prt	_	_
+17	í	í	ADP	P	_	18	case	_	_
+18	haust	haust	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
+19	og	og	CCONJ	CONJ	_	20	cc	_	_
+20	stefnt	stefna	VERB	VAN	Tense=Past|VerbForm=Part	15	conj	_	_
+21	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	20	cop	_	_
+22	að	að	ADP	P	_	24	case	_	_
+23	hallalausum	hallalaus	ADJ	ADJ-D	Case=Dat|Degree=Pos	24	amod	_	_
+24	fjárlögum	fjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	20	obl	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	24	punct	_	_
+
+# sent_id = ALTHINGI_SJS_2013_G-33-4496710,.18
+# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
+# text = Að því höfum við unnið hörðum höndum undanfarin þrjú ár eða meira að segja fjögur og hálft en síðustu þrjú árin eftir að við endurskoðuðum Forseti hringir. ríkisfjármálaáætlun til meðallangs tíma hefur verið stefnt að því að ná hallalausum fjárlögum 2014 og ég er eindreginn stuðningsmaður þess að það sé gert.
+1	Að	að	ADP	P	_	2	case	_	_
+2	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
+3	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
+4	við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	unnið	vinna	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	hörðum	harður	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
+7	höndum	hönd	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
+8	undanfarin	undanfarinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	10	amod	_	_
+9	þrjú	þrír	NUM	NUM-A	Case=Acc	10	nummod	_	_
+10	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
+11	eða	eða	CCONJ	CONJ	_	15	cc	_	_
+12	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	14	obj	_	_
+13	að	að	PART	TO	_	14	mark	_	_
+14	segja	segja	ADV	VB	VerbForm=Inf	15	advmod	_	_
+15	fjögur	fjórir	NUM	NUM-A	Case=Acc	10	conj	_	_
+16	og	og	CCONJ	CONJ	_	15	cc	_	_
+17	hálft	hálfur	ADJ	ADJ-A	Case=Acc|Degree=Pos	15	amod	_	_
+18	en	en	CCONJ	CONJ	_	35	cc	_	_
+19	síðustu	síðari	ADJ	ADJS-A	Case=Acc|Degree=Sup	20	amod	_	_
+20	þrjú	þrír	NUM	NUM-A	Case=Acc	35	obl	_	_
+21	árin	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	20	conj	_	_
+22	eftir	eftir	ADP	P	_	25	case	_	_
+23	að	að	SCONJ	C	_	25	mark	_	_
+24	við	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
+25	endurskoðuðum	endurskoða	VERB	VBDI	Mood=Ind|Tense=Past	20	obl	_	_
+26	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
+27	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	25	dep	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	27	punct	_	_
+29	ríkisfjármálaáætlun	ríkisfjármálaáætlun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obj	_	_
+30	til	til	ADP	P	_	32	case	_	_
+31	meðallangs	meðallangur	ADJ	ADJ-G	Case=Gen|Degree=Pos	32	amod	_	_
+32	tíma	tími	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	25	obl	_	_
+33	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	35	aux	_	_
+34	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	35	cop	_	_
+35	stefnt	stefna	VERB	VAN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
+36	að	að	ADP	P	_	37	case	_	_
+37	því	það	PRON	PRO-D	Case=Dat	35	obl	_	_
+38	að	að	PART	TO	_	39	mark	_	_
+39	ná	ná	VERB	VB	VerbForm=Inf	37	acl	_	_
+40	hallalausum	hallalaus	ADJ	ADJ-D	Case=Dat|Degree=Pos	41	amod	_	_
+41	fjárlögum	fjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	39	obj	_	_
+42	2014	2014	NUM	NUM-A	Case=Acc	41	obl	_	_
+43	og	og	CCONJ	CONJ	_	46	cc	_	_
+44	ég	ég	PRON	PRO-N	Case=Nom	46	nsubj	_	_
+45	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	46	cop	_	_
+46	eindreginn	eindreginn	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	conj	_	OriginalHead=0
+47	stuðningsmaður	stuðningsmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	46	conj	_	_
+48	þess	það	PRON	PRO-G	Case=Gen	46	nmod:poss	_	_
+49	að	að	SCONJ	C	_	52	mark	_	_
+50	það	það	PRON	PRO-N	Case=Nom	52	nsubj	_	_
+51	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	52	cop	_	_
+52	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	48	ccomp	_	SpaceAfter=No
+53	.	.	PUNCT	.	_	52	punct	_	_
+

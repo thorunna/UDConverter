@@ -1,0 +1,329 @@
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti. Ég þakka spurninguna.
+1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	_
+4	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+6	spurninguna	spurning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.2
+# X_ID = ID_MISSING
+# text = Svarið er í stuttu máli: Nei, ég hef ekki skoðað það sérstaklega en ég vænti þess að upphæðin sem komi inn í ríkissjóð sé tiltölulega sambærileg því sem upprunalega var markmiðið að hala inn.
+1	Svarið	svar	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+3	í	í	ADP	P	_	5	case	_	_
+4	stuttu	stuttur	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
+5	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+6	:	:	PUNCT	,	_	5	punct	_	_
+7	Nei	nei	INTJ	INTJ	_	12	discourse	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+10	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	12	aux	_	_
+11	ekki	ekki	ADV	NEG	_	12	advmod	_	_
+12	skoðað	skoða	VERB	VBN	Tense=Past|VerbForm=Part	5	ccomp	_	_
+13	það	það	PRON	PRO-A	Case=Acc	12	obj	_	_
+14	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	12	advmod	_	_
+15	en	en	CCONJ	CONJ	_	17	cc	_	_
+16	ég	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
+17	vænti	vænta	VERB	VBPI	Mood=Ind|Tense=Pres	12	ccomp	_	_
+18	þess	það	PRON	PRO-G	Case=Gen	17	obj	_	_
+19	að	að	SCONJ	C	_	28	mark	_	_
+20	upphæðin	upphæð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	nsubj	_	_
+21	sem	sem	SCONJ	C	_	22	mark	_	_
+22	komi	koma	VERB	VBPS	Mood=Sub|Tense=Pres	20	acl:relcl	_	_
+23	inn	inn	ADP	RP	_	25	compound:prt	_	_
+24	í	í	ADP	P	_	25	case	_	_
+25	ríkissjóð	ríkissjóður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
+26	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	28	cop	_	_
+27	tiltölulega	tiltölulega	ADV	ADV	Degree=Pos	28	amod	_	_
+28	sambærileg	sambærilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	18	ccomp	_	_
+29	því	sá	DET	D-D	Case=Dat|PronType=Art	28	obl	_	_
+30	sem	sem	SCONJ	C	_	31	mark	_	_
+31	upprunalega	upprunalega	ADV	ADV	Degree=Pos	29	acl:relcl	_	_
+32	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	31	cop	_	_
+33	markmiðið	markmið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	31	nsubj	_	_
+34	að	að	PART	TO	_	31	dep	_	_
+35	hala	hala	VERB	VB	VerbForm=Inf	34	dep	_	_
+36	inn	inn	ADP	RP	_	34	compound:prt	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	36	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.3
+# X_ID = ID_MISSING
+# text = Ég geri ráð fyrir því.
+1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	geri	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	ráð	ráð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+4	fyrir	fyrir	ADP	P	_	5	case	_	_
+5	því	það	PRON	PRO-D	Case=Dat	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.4
+# X_ID = ID_MISSING
+# text = Eins og ég segi hef ég ekki rannsakað það sérstaklega.
+1	Eins	eins	ADV	ADVR	Degree=Cmp	8	advmod	_	_
+2	og	og	ADP	P	_	4	case	_	_
+3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+4	segi	segja	VERB	VBPI	Mood=Ind|Tense=Pres	1	obl	_	_
+5	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	8	aux	_	_
+6	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+7	ekki	ekki	ADV	NEG	_	8	advmod	_	_
+8	rannsakað	rannsaka	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+9	það	það	PRON	PRO-A	Case=Acc	8	obj	_	_
+10	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	8	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	10	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.5
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Svo erum við píratar þrír þingmenn að díla við níu nefndir þannig að maður kemst ekki alltaf í áheyrnina í fjárlaganefnd, því miður, sérstaklega þegar mál eru í hv. velferðarnefnd sem krefjast athygli út frá sjónarmiðum um friðhelgi einkalífs o.fl. Ég hef ekki getað lagst yfir þessi mál jafn mikið og ég hefði kannski viljað.
+1	Svo	svo	ADV	ADV	Degree=Pos	6	advmod	_	_
+2	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+3	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+4	píratar	pírati	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	appos	_	_
+5	þrír	þrír	NUM	NUM-N	Case=Nom	6	nummod	_	_
+6	þingmenn	þingmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
+7	að	að	PART	TO	_	8	mark	_	_
+8	díla	díla	VERB	VB	VerbForm=Inf	6	xcomp	_	_
+9	við	við	ADP	P	_	10	case	_	_
+10	níu	nía	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
+11	nefndir	nefna	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	conj	_	_
+12	þannig	þannig	ADV	ADV	Degree=Pos	6	advmod	_	_
+13	að	að	SCONJ	C	_	15	mark	_	_
+14	maður	maður	PRON	MAN-N	_	15	nsubj	_	_
+15	kemst	koma	VERB	VBPI	Mood=Ind|Tense=Pres	12	advcl	_	_
+16	ekki	ekki	ADV	NEG	_	15	advmod	_	_
+17	alltaf	alltaf	ADV	ADV	Degree=Pos	15	advmod	_	_
+18	í	í	ADP	P	_	19	case	_	_
+19	áheyrnina	áheyrn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
+20	í	í	ADP	P	_	21	case	_	_
+21	fjárlaganefnd	fjárlaganefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	því	það	PRON	PRO-D	Case=Dat	24	obl	_	_
+24	miður	lítt	ADV	ADVR	Degree=Cmp	15	advmod	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	15	advmod	_	_
+27	þegar	þegar	ADP	P	_	32	case	_	_
+28	mál	mál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	32	nsubj	_	_
+29	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	32	cop	_	_
+30	í	í	ADP	P	_	32	case	_	_
+31	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	32	amod	_	_
+32	velferðarnefnd	velferðarnefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
+33	sem	sem	SCONJ	C	_	34	mark	_	_
+34	krefjast	krefja	VERB	VBPI	Mood=Ind|Tense=Pres	32	acl:relcl	_	_
+35	athygli	athygli	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	34	obj	_	_
+36	út	út	ADP	RP	_	38	compound:prt	_	_
+37	frá	frá	ADP	P	_	38	case	_	_
+38	sjónarmiðum	sjónarmið	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	34	obl	_	_
+39	um	um	ADP	P	_	40	case	_	_
+40	friðhelgi	friðhelgi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	38	obl	_	_
+41	einkalífs	einkalíf	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	40	nmod:poss	_	_
+42	o.fl.	o.fl.	X	as	_	38	conj	_	_
+43	Ég	ég	PRON	PRO-N	Case=Nom	47	nsubj	_	_
+44	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	47	aux	_	_
+45	ekki	ekki	ADV	NEG	_	47	advmod	_	_
+46	getað	geta	AUX	MDN	Tense=Past|VerbForm=Part	47	aux	_	_
+47	lagst	leggja	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	OriginalHead=0
+48	yfir	yfir	ADP	P	_	50	case	_	_
+49	þessi	þessi	DET	D-A	Case=Acc|PronType=Art	50	det	_	_
+50	mál	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	47	obl	_	_
+51	jafn	jafn	ADV	ADV	Degree=Pos	52	advmod	_	_
+52	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	47	obl	_	_
+53	og	og	ADP	P	_	57	case	_	_
+54	ég	ég	PRON	PRO-N	Case=Nom	57	nsubj	_	_
+55	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	57	aux	_	_
+56	kannski	kannski	ADV	ADV	Degree=Pos	57	advmod	_	_
+57	viljað	vilja	VERB	VBN	Tense=Past|VerbForm=Part	52	obl	_	SpaceAfter=No
+58	.	.	PUNCT	.	_	57	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.6
+# X_ID = ID_MISSING
+# text = Svona almennt séð, hvað varðar sjónarmið mín gagnvart því að rukka sjúklinga, er ég á móti því.
+1	Svona	svona	ADV	ADV	Degree=Pos	3	advmod	_	_
+2	almennt	almennt	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	séð	sjá	VERB	VAN	Tense=Past|VerbForm=Part	18	acl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	hvað	hver	PRON	WPRO-N	Case=Nom	6	obj	_	_
+6	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	3	obl	_	_
+7	sjónarmið	sjónarmið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
+8	mín	minn	PRON	PRO-A	Case=Acc	7	nmod:poss	_	_
+9	gagnvart	gagnvart	ADP	P	_	10	case	_	_
+10	því	það	PRON	PRO-D	Case=Dat	7	obl	_	_
+11	að	að	PART	TO	_	12	mark	_	_
+12	rukka	rukka	VERB	VB	VerbForm=Inf	10	acl	_	_
+13	sjúklinga	sjúklingur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obj	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	18	punct	_	_
+15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
+16	ég	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+17	á	á	ADP	P	_	18	case	_	_
+18	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
+19	því	það	PRON	PRO-D	Case=Dat	18	nmod:poss	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.7
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Mér finnst það vægast sagt óþægilegt, mér finnst siðferðislega vafasamt að rukka eitthvað slíkt.
+1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
+2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+4	vægast	vægt	ADV	ADVS	Degree=Sup	5	advmod	_	_
+5	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	6	acl	_	_
+6	óþægilegt	óþægilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	mér	ég	PRON	PRO-D	Case=Dat	9	nsubj	_	_
+9	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+10	siðferðislega	siðferðislega	ADV	ADV	Degree=Pos	11	amod	_	_
+11	vafasamt	vafasamur	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
+12	að	að	PART	TO	_	13	mark	_	_
+13	rukka	rukka	VERB	VB	VerbForm=Inf	9	xcomp	_	_
+14	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	15	amod	_	_
+15	slíkt	slíkur	PRON	SUCH-A	Case=Acc	13	obj	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.8
+# X_ID = ID_MISSING
+# text = Ég er á móti því.
+1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	á	á	ADP	P	_	4	case	_	_
+4	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
+5	því	það	PRON	PRO-D	Case=Dat	4	nmod:poss	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.9
+# X_ID = ID_MISSING
+# text = Svo er hitt sem kemur alltaf í andlitið á manni, sem er bölvanleg staða ríkissjóðs.
+1	Svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	hitt	hinn	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+4	sem	sem	SCONJ	C	_	5	mark	_	_
+5	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	_
+6	alltaf	alltaf	ADV	ADV	Degree=Pos	5	advmod	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	andlitið	andlit	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+9	á	á	ADP	P	_	10	case	_	_
+10	manni	maður	PRON	MAN-D	_	8	obl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	sem	sem	SCONJ	C	_	14	mark	_	_
+13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+14	bölvanleg	bölvanlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	acl:relcl	_	_
+15	staða	staða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	conj	_	_
+16	ríkissjóðs	ríkissjóður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	nmod:poss	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.10
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Eins og ég nefndi í ræðu minni áðan hefur stærðfræðin ekki tilfinningar, tölurnar hafa ekki samkennd.
+1	Eins	eins	ADV	ADVR	Degree=Cmp	9	advmod	_	_
+2	og	og	ADP	P	_	4	case	_	_
+3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+4	nefndi	nefna	VERB	VBDI	Mood=Ind|Tense=Past	1	obl	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	ræðu	ræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+7	minni	minn	PRON	PRO-D	Case=Dat	6	nmod:poss	_	_
+8	áðan	áðan	ADV	ADV	Degree=Pos	4	advmod	_	_
+9	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+10	stærðfræðin	stærðfræði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
+11	ekki	ekki	ADV	NEG	_	9	advmod	_	_
+12	tilfinningar	tilfinning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obj	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	tölurnar	tala	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	15	nsubj	_	_
+15	hafa	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	9	conj	_	OriginalHead=0
+16	ekki	ekki	ADV	NEG	_	15	advmod	_	_
+17	samkennd	samkennd	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obj	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	17	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.11
+# X_ID = ID_MISSING
+# text = Þetta er nokkuð sem ég á stundum í vandræðum með að mynda mér skoðun á þegar kemur að fjárlögum.
+1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	nokkuð	nokkur	DET	Q-N	Case=Nom|Degree=Pos	0	root	_	_
+4	sem	sem	SCONJ	C	_	6	mark	_	_
+5	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	_
+7	stundum	stundum	ADV	ADV	Degree=Pos	6	advmod	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	vandræðum	vandræði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+10	með	með	ADP	P	_	12	case	_	_
+11	að	að	PART	TO	_	12	mark	_	_
+12	mynda	mynda	VERB	VB	VerbForm=Inf	9	obl	_	_
+13	mér	ég	PRON	PRO-D	Case=Dat	12	iobj	_	_
+14	skoðun	skoðun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obj	_	_
+15	á	á	ADP	P	_	14	obl	_	_
+16	þegar	þegar	ADP	P	_	17	case	_	_
+17	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	6	obl	_	_
+18	að	að	ADP	P	_	19	case	_	_
+19	fjárlögum	fjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	17	obl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.12
+# X_ID = ID_MISSING
+# text = En eins og ég nefndi þá er ég, þegar kemur að legugjaldinu og nýjum gjöldum og nýjum sköttum og því um líku, alltaf sérstaklega á varðbergi vegna þess að það er svo bölvanlega erfitt að losna við slíkt þegar því hefur verið komið á.
+1	En	en	CCONJ	CONJ	_	11	cc	_	_
+2	eins	_	ADV	ADVR	Degree=Cmp	11	advmod	_	_
+3	og	_	ADP	P	_	5	case	_	_
+4	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	nefndi	nefna	VERB	VBDI	Mood=Ind|Tense=Past	2	obl	_	_
+6	þá	þá	ADV	ADV	Degree=Pos	11	advmod	_	_
+7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
+8	ég	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	þegar	þegar	ADP	P	_	11	case	_	_
+11	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+12	að	að	ADP	P	_	13	case	_	_
+13	legugjaldinu	legugjald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+14	og	og	CCONJ	CONJ	_	16	cc	_	_
+15	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	16	amod	_	_
+16	gjöldum	gjald	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	conj	_	_
+17	og	og	CCONJ	CONJ	_	19	cc	_	_
+18	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
+19	sköttum	skattur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	conj	_	_
+20	og	og	CCONJ	CONJ	_	21	cc	_	_
+21	því	það	PRON	PRO-D	Case=Dat	13	conj	_	_
+22	um	um	ADP	RP	_	21	compound:prt	_	_
+23	líku	líkur	ADJ	ADJ-A	Case=Acc|Degree=Pos	21	amod	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	alltaf	alltaf	ADV	ADV	Degree=Pos	11	advmod	_	_
+26	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	11	advmod	_	_
+27	á	á	ADP	P	_	28	case	_	_
+28	varðbergi	varðberg	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+29	vegna	vegna	ADP	P	_	30	case	_	_
+30	þess	það	PRON	PRO-G	Case=Gen	11	obl	_	_
+31	að	að	SCONJ	C	_	38	mark	_	_
+32	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	38	expl	_	_
+33	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	38	cop	_	_
+34	svo	svo	ADV	ADV	Degree=Pos	38	advmod	_	_
+35	bölvanlega	bölvanlega	ADV	ADV	Degree=Pos	36	amod	_	_
+36	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	38	amod	_	_
+37	að	að	PART	TO	_	38	mark	_	_
+38	losna	losna	VERB	VB	VerbForm=Inf	30	ccomp	_	_
+39	við	við	ADP	P	_	40	case	_	_
+40	slíkt	slíkur	PRON	SUCH-A	Case=Acc	38	obl	_	_
+41	þegar	þegar	ADP	P	_	45	case	_	_
+42	því	það	PRON	PRO-D	Case=Dat	45	nsubj	_	_
+43	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	45	aux	_	_
+44	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	45	cop	_	_
+45	komið	koma	VERB	VAN	Tense=Past|VerbForm=Part	38	obl	_	_
+46	á	á	ADP	RP	_	45	compound:prt	_	SpaceAfter=No
+47	.	.	PUNCT	.	_	46	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4848116,.13
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Fé er jú fíkn, peningar eru vanabindandi hvernig sem þeir koma inn.
+1	Fé	fé	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	jú	jú	ADV	ADV	Degree=Pos	4	advmod	_	_
+4	fíkn	fíkn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	peningar	peningur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	nsubj	_	_
+7	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+8	vanabindandi	vanabindandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	conj	_	OriginalHead=0
+9	hvernig	hvernig	ADV	WADV	Degree=Pos	12	advmod	_	_
+10	sem	sem	SCONJ	C	_	12	mark	_	_
+11	þeir	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+12	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	8	obl	_	_
+13	inn	inn	ADP	RP	_	12	compound:prt	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	13	punct	_	_
+

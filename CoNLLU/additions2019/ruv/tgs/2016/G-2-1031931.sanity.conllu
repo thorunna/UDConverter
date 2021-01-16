@@ -1,0 +1,165 @@
+# sent_id = RUV_TGS_2016_G-2-1031931.SANITY,.1
+# X_ID = ID_MISSING
+# text = Bryndísi Rún Hansen tókst ekki að tryggja sér sæti í undanúrslitum 100 m skriðsunds kvenna.
+1	Bryndísi	bryndís	PROPN	NPR-D	_	4	nsubj	_	_
+2	Rún	rún	PROPN	NPR-D	_	1	flat:name	_	_
+3	Hansen	hansen	PROPN	NPR-D	_	1	dep	_	_
+4	tókst	taka	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+5	ekki	ekki	ADV	NEG	_	4	advmod	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	tryggja	tryggja	VERB	VB	VerbForm=Inf	4	acl	_	_
+8	sér	sig	PRON	PRO-D	Case=Dat	7	iobj	_	_
+9	sæti	sæti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	undanúrslitum	undanúrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	_
+12	100	hundrað	NUM	NUM-G	Case=Gen	14	dep	_	_
+13	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	conj	_	_
+14	skriðsunds	skriðsund	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	nmod:poss	_	_
+15	kvenna	kona	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	nmod:poss	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031931.SANITY,.2
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Bryndís synti í fimmta riðli af níu í undanrásunum í morgun og var tími hennar 56,98 sekúndur.
+1	Bryndís	bryndís	PROPN	NPR-N	_	2	nsubj	_	_
+2	synti	synda	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	í	í	ADP	P	_	5	case	_	_
+4	fimmta	fimmti	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
+5	riðli	riðill	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+6	af	af	ADP	P	_	7	case	_	_
+7	níu	níu	NUM	NUM-D	Case=Dat	5	obl	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	undanrásunum	undanrás	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+12	og	og	CCONJ	CONJ	_	17	cc	_	_
+13	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	17	cop	_	_
+14	tími	tími	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
+15	hennar	hún	PRON	PRO-G	Case=Gen	14	nmod:poss	_	_
+16	56,98	56,98	NUM	NUM-N	Case=Nom	17	nummod	_	_
+17	sekúndur	sekúnda	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	conj	_	OriginalHead=0|SpaceAfter=No
+18	.	.	PUNCT	.	_	17	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031931.SANITY,.3
+# X_ID = ID_MISSING
+# text = Bryndís Rún var síðust í sínum riðli.
+1	Bryndís	bryndís	PROPN	NPR-N	_	4	nsubj	_	_
+2	Rún	rún	PROPN	NPR-N	_	1	flat:name	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+4	síðust	síðari	ADJ	ADJS-N	Case=Nom|Degree=Sup	0	root	_	_
+5	í	í	ADP	P	_	7	case	_	_
+6	sínum	sinn	PRON	PRO-D	Case=Dat	7	nmod:poss	_	_
+7	riðli	riðill	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	amod	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031931.SANITY,.4
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Aðeins sextán komast áfram í undanúrslit og var Bryndís með 58. besta tímann í undanrásunum og því talsvert frá því að komast í undanúrslit.
+1	Aðeins	aðeins	ADV	ADV	Degree=Pos	3	nsubj	_	_
+2	sextán	sextán	NUM	NUM-N	Case=Nom	1	nummod	_	_
+3	komast	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	áfram	áfram	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	undanúrslit	undanúrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
+7	og	og	CCONJ	CONJ	_	13	cc	_	_
+8	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	13	cop	_	_
+9	Bryndís	bryndís	PROPN	NPR-N	_	13	nsubj	_	_
+10	með	með	ADP	P	_	13	case	_	_
+11	58.	58.	NUM	NUM-A	Case=Acc	13	nummod	_	_
+12	besta	góður	ADJ	ADJS-A	Case=Acc|Degree=Sup	13	amod	_	_
+13	tímann	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	conj	_	OriginalHead=0
+14	í	í	ADP	P	_	15	case	_	_
+15	undanrásunum	undanrás	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
+16	og	og	CCONJ	CONJ	_	17	cc	_	_
+17	því	það	PRON	PRO-D	Case=Dat	13	conj	_	_
+18	talsvert	talsvert	ADV	ADV	Degree=Pos	20	advmod	_	_
+19	frá	frá	ADP	P	_	20	case	_	_
+20	því	það	PRON	PRO-D	Case=Dat	17	obl	_	_
+21	að	að	PART	TO	_	22	mark	_	_
+22	komast	koma	VERB	VB	VerbForm=Inf	20	acl	_	_
+23	í	í	ADP	P	_	24	case	_	_
+24	undanúrslit	undanúrslit	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	24	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031931.SANITY,.5
+# X_ID = ID_MISSING
+# text = „ Þetta var allt í lagi.
+1	„	„	PUNCT	"	_	6	punct	_	_
+2	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
+4	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	6	amod	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031931.SANITY,.6
+# X_ID = ID_MISSING
+# text = Ég er eiginlega ekkert svo sátt því ég náði mér ekki á strik.
+1	Ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+3	eiginlega	eiginlega	ADV	ADV	Degree=Pos	6	advmod	_	_
+4	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	5	obl	_	_
+5	svo	svo	ADV	ADV	Degree=Pos	6	amod	_	_
+6	sátt	sáttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+7	því	það	PRON	PRO-D	Case=Dat	6	obl	_	_
+8	ég	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+9	náði	ná	VERB	VBDI	Mood=Ind|Tense=Past	7	ccomp	_	_
+10	mér	ég	PRON	PRO-D	Case=Dat	9	obj	_	_
+11	ekki	ekki	ADV	NEG	_	9	advmod	_	_
+12	á	á	ADP	P	_	13	case	_	_
+13	strik	strik	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	13	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031931.SANITY,.7
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Ég var eiginlega of æst í að ná árangri og hugsaði alltof mikið í sundinu, sagði Bryndís Rún þegar RÚV ræddi við hana eftir undanrásirnar í morgun.
+1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
+3	eiginlega	eiginlega	ADV	ADV	Degree=Pos	5	advmod	_	_
+4	of	of	ADV	ADV	Degree=Pos	5	amod	_	_
+5	æst	æstur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+6	í	í	ADP	P	_	8	case	_	_
+7	að	að	PART	TO	_	8	mark	_	_
+8	ná	ná	VERB	VB	VerbForm=Inf	5	amod	_	_
+9	árangri	árangur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obj	_	_
+10	og	og	CCONJ	CONJ	_	11	cc	_	_
+11	hugsaði	hugsa	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
+12	alltof	alltof	ADV	ADV	Degree=Pos	11	advmod	_	_
+13	mikið	mikið	ADV	ADV	Degree=Pos	12	advmod	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	sundinu	sund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	11	parataxis	_	_
+18	Bryndís	bryndís	PROPN	NPR-N	_	17	nsubj	_	_
+19	Rún	rún	PROPN	NPR-N	_	18	flat:name	_	_
+20	þegar	þegar	ADP	P	_	22	case	_	_
+21	RÚV	rúv	PROPN	NPR-N	_	22	nsubj	_	_
+22	ræddi	ræða	VERB	VBDI	Mood=Ind|Tense=Past	17	obl	_	_
+23	við	við	ADP	P	_	24	case	_	_
+24	hana	hún	PRON	PRO-A	Case=Acc	22	obl	_	_
+25	eftir	eftir	ADP	P	_	26	case	_	_
+26	undanrásirnar	undanrás	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obl	_	_
+27	í	í	ADP	P	_	28	case	_	_
+28	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	28	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1031931.SANITY,.8
+# X_ID = ID_MISSING
+# text = Nánar er rætt við Bryndísi í viðtali sem sjá má í spilaranum hér fyrir ofan.
+1	Nánar	náið	ADV	ADVR	Degree=Cmp	3	advmod	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	rætt	ræða	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+4	við	við	ADP	P	_	5	case	_	_
+5	Bryndísi	bryndís	PROPN	NPR-A	_	3	obl	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	viðtali	viðtal	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+8	sem	sem	SCONJ	C	_	9	mark	_	_
+9	sjá	sjá	VERB	VB	VerbForm=Inf	7	acl:relcl	_	_
+10	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	9	aux	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	spilaranum	spilari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+13	hér	hér	ADV	ADV	Degree=Pos	12	obl	_	_
+14	fyrir	fyrir	ADP	P	_	13	case	_	_
+15	ofan	ofan	ADP	P	_	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	_
+

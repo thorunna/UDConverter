@@ -1,0 +1,111 @@
+# sent_id = RUV_ESP_2016_G-2-1033697,.1
+# X_ID = ID_MISSING
+# text = Ólafur Kristjánsson hefur verið ráðinn þjálfari knattspyrnuliðs Randers í dönsku úrvalsdeildinni.
+1	Ólafur	ólafur	PROPN	NPR-N	_	5	nsubj	_	_
+2	Kristjánsson	kristjánsson	PROPN	NPR-N	_	1	flat:name	_	_
+3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
+4	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	5	cop	_	_
+5	ráðinn	ráða	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+6	þjálfari	þjálfari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	xcomp	_	_
+7	knattspyrnuliðs	knattspyrnulið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	nmod:poss	_	_
+8	Randers	rander	PROPN	NPR-G	_	7	nmod:poss	_	_
+9	í	í	ADP	P	_	11	case	_	_
+10	dönsku	danskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	11	amod	_	_
+11	úrvalsdeildinni	úrvalsdeild	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	11	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033697,.2
+# X_ID = ID_MISSING
+# text = Liðið situr í sjötta sæti deildarinnar þegar tvær umferðir eru eftir af mótinu.
+1	Liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	situr	sitja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	í	í	ADP	P	_	5	case	_	_
+4	sjötta	sjötti	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
+5	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+6	deildarinnar	deild	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
+7	þegar	þegar	ADP	P	_	13	case	_	_
+8	tvær	tveir	NUM	NUM-N	Case=Nom	9	nummod	_	_
+9	umferðir	umferð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	_
+10	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
+11	eftir	eftir	ADV	ADV	Degree=Pos	13	advmod	_	_
+12	af	af	ADP	P	_	13	case	_	_
+13	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	13	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033697,.3
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Ólafur hóf þjálfaraferilinn hjá Fram árið 2004 og gerði Breiðablik svo að bikarmeistara árið 2009 og Íslandsmeistara ári síðar.
+1	Ólafur	ólafur	PROPN	NPR-N	_	2	nsubj	_	_
+2	hóf	hefja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	þjálfaraferilinn	þjálfaraferill	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+4	hjá	hjá	ADP	P	_	5	case	_	_
+5	Fram	fram	PROPN	NPR-D	_	2	obl	_	_
+6	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+7	2004	2004	NUM	NUM-A	Case=Acc	6	appos	_	_
+8	og	og	CCONJ	CONJ	_	9	cc	_	_
+9	gerði	gera	VERB	DODI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+10	Breiðablik	breiðablik	PROPN	NPR-A	_	9	xcomp	_	_
+11	svo	svo	ADV	ADV	Degree=Pos	10	advmod	_	_
+12	að	að	ADP	P	_	13	case	_	_
+13	bikarmeistara	bikarmeistari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
+14	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+15	2009	2009	NUM	NUM-A	Case=Acc	14	appos	_	_
+16	og	og	CCONJ	CONJ	_	17	cc	_	_
+17	Íslandsmeistara	íslandsmeistari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	conj	_	_
+18	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
+19	síðar	síðar	ADV	ADVR	Degree=Cmp	17	advmod	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033697,.4
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Síðast þjálfaði hann Nordsjælland í Danmörku en lét af störfum í desember á síðasta ári.
+1	Síðast	síðar	ADV	ADVS	Degree=Sup	2	advmod	_	_
+2	þjálfaði	þjálfa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+4	Nordsjælland	nordsjælland	PROPN	NPR-A	_	2	obj	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	Danmörku	danmörk	PROPN	NPR-D	_	4	obl	_	_
+7	en	en	CCONJ	CONJ	_	2	cc	_	_
+8	lét	láta	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+9	af	af	ADP	P	_	10	case	_	_
+10	störfum	starf	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	desember	desember	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+13	á	á	ADP	P	_	15	case	_	_
+14	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	15	amod	_	_
+15	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1033697,.5
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Samningur Ólafs við Randers er til tveggja ára og kemur hann til með að stýra sinni fyrstu æfingu hjá félaginu 20. júní þegar undirbúningur hefst fyrir næsta tímabil.
+1	Samningur	samningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+2	Ólafs	ólafur	PROPN	NPR-G	_	1	nmod:poss	_	_
+3	við	við	ADP	P	_	4	case	_	_
+4	Randers	randers	PROPN	NPR-A	_	1	obl	_	_
+5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+6	til	til	ADP	P	_	8	case	_	_
+7	tveggja	tveir	NUM	NUM-G	Case=Gen	8	nummod	_	_
+8	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	0	root	_	_
+9	og	og	CCONJ	CONJ	_	10	cc	_	_
+10	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	8	conj	_	OriginalHead=0
+11	hann	hann	PRON	PRO-N	Case=Nom	10	nsubj	_	_
+12	til	til	ADP	RP	_	10	compound:prt	_	_
+13	með	með	ADP	P	_	15	case	_	_
+14	að	að	PART	TO	_	15	mark	_	_
+15	stýra	stýra	VERB	VB	VerbForm=Inf	10	obl	_	_
+16	sinni	sinn	PRON	PRO-D	Case=Dat	18	nmod:poss	_	_
+17	fyrstu	fyrstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	18	amod	_	_
+18	æfingu	æfing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obj	_	_
+19	hjá	hjá	ADP	P	_	20	case	_	_
+20	félaginu	félag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
+21	20.	tuttugasti	ADJ	ADJ-A	Case=Acc|Degree=Pos	22	amod	_	_
+22	júní	júní	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
+23	þegar	þegar	ADP	P	_	25	case	_	_
+24	undirbúningur	undirbúningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	nsubj	_	_
+25	hefst	hefja	VERB	VBPI	Mood=Ind|Tense=Pres	22	obl	_	_
+26	fyrir	fyrir	ADP	P	_	28	case	_	_
+27	næsta	næstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	28	amod	_	_
+28	tímabil	tímabil	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	28	punct	_	_
+
