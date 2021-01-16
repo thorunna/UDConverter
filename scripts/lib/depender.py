@@ -1087,6 +1087,8 @@ class Converter():
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'root' and node['ctag'] == 'AUX':
                 self.dg.get_by_address(address).update({'ctag': 'VERB'})
+#            elif address == 0 and node['rel'] != 'root' and self.dg.num_roots() == 0:
+#                self.dg.get_by_address(address).update({'rel': 'root'})
 
     def _fix_head_id_same(self):
         """
@@ -1218,23 +1220,6 @@ class Converter():
                         count += 1
                     elif count > 0:
                         self.dg.get_by_address(address).update({'rel': 'obl'})
-
-#        count = 0
-#        for address, node in self.dg.nodes.items():
-#            if self.dg.get_by_address(address)['rel'] == 'nsubj' and count == 0:
-#                count += 1
-#                head_verbs_head = self.dg.get_by_address(address)['head']
-#            if self.dg.get_by_address(address)['rel'] == 'nsubj' and count >= 1 \
-#                and self.dg.get_by_address(address-1)['ctag'] in {'PUNCT', 'CCONJ'} and self.dg.get_by_address(address)['head'] == head_verbs_head:
-#                self.dg.get_by_address(address).update({'rel': 'obl'})
-#                count += 1
-
-    #def _fix_det_mark(self):
-
-    #    for address, node in self.dg.nodes.items():
-    #        if node['ctag'] == 'DET' and node['rel'] == 'mark':
-    #            self.dg.get_by_address(address).update({'ctag':''})
-
 
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree.
@@ -1524,13 +1509,6 @@ class Converter():
         # self._features()
 
         # NOTE: Here call method to fix dependency graph if needed?
-        if self.dg.num_roots() != 1:
-
-            # # DEBUG:
-            # print(self.dg.to_conllU())
-            # input()
-
-            self._fix_root_relation()
 
         # for address, node in self.dg.nodes.items():
         #     if node['rel'] in {'aux', 'aux:pass'} and node['tag'] != 'AUX':
@@ -1587,6 +1565,14 @@ class Converter():
             self._fix_aclrelcl_rel()
         if rel_counts['punct'] > 0:
             self._fix_punct_heads()
+
+        if self.dg.num_roots() != 1:
+
+            # # DEBUG:
+            # print(self.dg.to_conllU())
+            # input()
+
+            self._fix_root_relation()
 
 
         # if self.dg.get_by_address(len(self.dg.nodes)-1)['word'] == None:
