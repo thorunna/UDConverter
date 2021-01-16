@@ -402,7 +402,7 @@ head_rules = {
             'IP-MAT-SUB-SPE': {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'NP', 'ADJP', 'VAN', 'VP', 'VAG', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT.*']},
             'IP-MAT-SMC'    : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'NP', 'VAG', 'VP', 'ADJP', 'NP-PRD', 'N.*', 'IP-SMC', 'IP-MAT']},
             #MD.* á eftir VB: ef VB er spor ruglast venslin en þá getur MD sem hjálparsögn líka verið haus. Ef MD er seinna er það seinna í lagi
-            'IP-SUB'        : {'dir':'r', 'rules':['VB|PP-BY', 'VP', 'VB.*', 'DO.*', 'VAN', 'RD.*', 'DAN', 'RAN', 'HAN', 'BAN', 'VAG', 'RAG', 'HAG', 'BAG', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'NP-PRN.*', 'IP-SUB.*|PP', 'PP-BY', 'NP.*', 'RD.*', 'ADVP', 'IP-SUB.*']},
+            'IP-SUB'        : {'dir':'r', 'rules':['VB|PP-BY', 'VP', 'VB.*', 'DO.*', 'VAN', 'RD.*', 'DAN', 'RAN', 'HAN', 'BAN', 'VAG', 'RAG', 'HAG', 'BAG', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'NP-PRD', 'IP-INF.*', 'ADJP', 'NP-PRD', 'NP-PRN.*', 'IP-SUB.*|PP', 'PP-BY', 'NP.*', 'RD.*', 'ADVP', 'IP-SUB.*']},
             'IP-SUB-2'        : {'dir':'r', 'rules':['VB|PP-BY', 'VP', 'VB.*', 'DO.*', 'VAN', 'RD.*', 'DAN', 'RAN', 'HAN', 'BAN', 'VAG', 'RAG', 'HAG', 'BAG', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'NP-PRN.*', 'IP-SUB.*|PP', 'PP-BY', 'NP.*', 'RD.*', 'ADVP', 'IP-SUB.*']},
             'IP-SUB=2'      : {'dir':'r', 'rules':['VB', 'VAN']},
             #'IP-SUB=2'      : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'VAN', 'RD.*', 'DAN', 'RAN', 'HAN', 'BAN', 'VAG', 'RAG', 'HAG', 'BAG', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'NP.*', 'RD.*', 'ADVP', 'IP-SUB']},
@@ -550,7 +550,7 @@ head_rules = {
             'ADJX'          : {'dir':'r', 'rules':['ADJ.*']},
             'WADJP'         : {'dir':'r', 'rules':['ADJ.*', 'ADV.*']},
             'WADJX'         : {'dir':'r', 'rules':['ADJ.*', 'ADV.*']},
-            'PP'            : {'dir':'r', 'rules':['CP-FRL', 'N-.|NPRS-.|NS-.|NPR-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP', 'NP-.+', 'FS', 'CP-ADV.*', 'IP-SMC', 'ADV.*|ADVP', 'ADJP', 'IP-MAT.*', 'CONJ.*', 'CP-.*|PP', 'IP-INF.*', 'IP-PPL', 'CP-CMP-XXX', 'P', 'PP']},
+            'PP'            : {'dir':'r', 'rules':['CP-FRL', 'N-.|NPRS-.|NS-.|NPR-.', 'NS-.', 'NPR-.', 'NPRS-.', 'NP', 'NP-.+', 'FS', 'CP-ADV.*', 'IP-SMC', 'ADV.*|ADVP', 'ADJP', 'IP-MAT.*', 'CP-CMP', 'CONJ.*', 'CP-.*|PP', 'IP-INF.*', 'IP-PPL', 'CP-CMP-XXX', 'P', 'PP']},
             'PX'            : {'dir':'r', 'rules':['CP-FRL', 'NP', 'NP-.+', 'FS', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
             'PP-BY'         : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},
             'PP-BY-RSP'     : {'dir':'r', 'rules':['NP', 'NP-.+', 'CP-ADV', 'IP-SMC', 'ADVP', 'ADJP', 'CP-.*', 'IP-INF.*', 'P']},

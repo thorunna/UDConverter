@@ -572,6 +572,9 @@ class Converter():
                         # print()
 
                         self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
+                    
+                    elif node['head'] == address-1 and self.dg.get_by_address(address-1)['head'] == address:
+                        self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
 
             # NOTE: when one verb in sent but no root
             elif self.dg.num_verbs() == 1:
@@ -582,6 +585,9 @@ class Converter():
                 for address, node in self.dg.nodes.items():
                     # print(address, node['head'])
                     if address == node['head']:
+                        self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
+
+                    elif node['head'] == address-1 and self.dg.get_by_address(address-1)['head'] == address:
                         self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
 
             # NOTE: when more than one verb in sent but no root
@@ -833,6 +839,8 @@ class Converter():
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'advmod' and node['ctag'] != 'ADV':
                 self.dg.get_by_address(address).update({'ctag': 'ADV'})
+            elif node['rel'] == 'det' and node['ctag'] == 'ADV':
+                self.dg.get_by_address(address).update({'rel': 'advmod'})
 
     def _fix_nummod_tag(self):
         """
@@ -886,6 +894,9 @@ class Converter():
 
         try:
             for address, node in self.dg.nodes.items():
+                if node['rel'] == 'conj' and node['head'] == address:
+                    self.dg.get_by_address(address).update({'head': self.dg.get_by_address(address-1)['head']})
+
                 if node['rel'] == 'conj' and node['head'] == address+1: 
                     if self.dg.get_by_address(address+1)['rel'] == 'obl': 
                         if node['ctag'] == 'NOUN':
@@ -969,6 +980,8 @@ class Converter():
                     elif self.dg.get_by_address(address+4)['rel'] == 'ccomp':
                         if self.dg.get_by_address(address-3)['rel'] == 'nsubj' and self.dg.get_by_address(address-3)['head'] == node['head']:
                             self.dg.get_by_address(address).update({'head': address-3})
+                    elif self.dg.get_by_address(address+4)['rel'] == 'conj':
+                        self.dg.get_by_address(address).update({'head': self.dg.get_by_address(address+4)['head']})
                 
                 elif node['rel'] == 'conj' and node['head'] == address+5:
                     if self.dg.get_by_address(address+5)['rel'] == 'obl' and self.dg.get_by_address(address-4)['rel'] == 'nsubj' and self.dg.get_by_address(address-4)['head'] == node['head']:
@@ -1220,6 +1233,20 @@ class Converter():
                         count += 1
                     elif count > 0:
                         self.dg.get_by_address(address).update({'rel': 'obl'})
+
+    def _fix_dep_rel(self):
+
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'dep' and node['head'] == address:
+                self.dg.get_by_address(address).update({'head': address-1})
+
+    def _fix_case_rel(self):
+
+        for address, node in self.dg.nodes.items():
+            if node['rel'] == 'case' and self.dg.get_by_address(address+1)['head'] == address and self.dg.get_by_address(address+2)['head'] == address:
+                #self.dg.get_by_address(address).update({'rel': 'fixed'})
+                self.dg.get_by_address(address+1).update({'rel': 'fixed'})
+                self.dg.get_by_address(address+2).update({'rel': 'fixed'})
 
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree.
@@ -1565,6 +1592,10 @@ class Converter():
             self._fix_aclrelcl_rel()
         if rel_counts['punct'] > 0:
             self._fix_punct_heads()
+        if rel_counts['dep'] > 0:
+            self._fix_dep_rel()
+        if rel_counts['case'] > 0:
+            self._fix_case_rel()
 
         if self.dg.num_roots() != 1:
 
