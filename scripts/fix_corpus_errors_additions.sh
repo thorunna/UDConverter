@@ -92,6 +92,12 @@ sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/G-33-452215
 # althingi/tkg/2011/G-33-4626061
 sed -i "" 's/(IP-INF (TO \*)/(IP-INF (TO )/g' $dir/G-33-4626061.psd
 
+# althingi/tkg/2011/G-33-4659893
+sed -i "" 's/									       (CP-THT (C (CODE {að}))//g' $dir/G-33-4659893.psd
+sed -i "" 's/										       (IP-SUB (ADJP *T*-2)//g' $dir/G-33-4659893.psd
+sed -i "" 's/											       (NP-SBJ *exp*)//g' $dir/G-33-4659893.psd
+sed -i "" 's/											       (BEPS (CODE {sé}))))//g' $dir/G-33-4659893.psd
+
 # ruv/esp/2016/G-2-1033175
 sed -i "" 's/(IP-INF-SPE-1 (TO \*)/(IP-INF-SPE-1 (TO )/g' $dir/G-2-1033175.psd
 
