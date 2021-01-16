@@ -46,6 +46,9 @@ sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/G-33-489359
 # althingi/bo/2015/G-33-4651739
 sed -i "" 's/(IP-INF-PRN=1 (CODE {COM:OB1})/(IP-INF-PRN (CODE {COM:OB1})/g' $dir/G-33-4651739.psd
 
+# althingi/hhg/2013/G-33-4496709
+sed -i "" 's/(IP-INF=1 (ADVP (CP-FRL (WQ hvort-hvort)/(IP-INF (ADVP (CP-FRL (WQ hvort-hvort)/g' $dir/G-33-4496709.psd
+
 # althingi/hhg/2013/G-33-4591478
 sed -i "" 's/(IP-SUB=1 (ADVP (ADV vissulega-vissulega))/(IP-SUB (ADVP (ADV vissulega-vissulega))/g' $dir/G-33-4591478.psd
 
@@ -67,6 +70,9 @@ sed -i "" 's/(IP-SUB-PRN=1 (IP-SUB (NP-ADV (OTHER-G annars-annar) (N-G vegar-veg
 # althingi/hhg/2013/G-33-4854491
 sed -i "" 's/(IP-SUB-PRN=3 (ADVP (ADV sérstaklega-sérstaklega))/(IP-SUB-PRN (ADVP (ADV sérstaklega-sérstaklega))/g' $dir/G-33-4854491.psd
 
+# althingi/hhg/2013/G-33-4916516
+sed -i "" 's/(IP-INF-2 (IP-SUB-PRN=2 (NP-SBJ (PRO-N ég-ég))/(IP-INF-2 (IP-SUB-PRN (NP-SBJ (PRO-N ég-ég))/g' $dir/G-33-4916516.psd
+
 # althingi/hhg/2013/G-33-4916517
 sed -i "" 's/(PP (P \*)/(PP (P )/g' $dir/G-33-4916517.psd
 
@@ -81,6 +87,9 @@ sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/G-33-457731
 
 # althingi/sjs/2013/G-33-4594976
 sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/G-33-4594976.psd
+
+# althingi/sjs/2013/G-33-4629755
+sed -i "" 's/(IP-INF (TO \*)/(IP-INF (TO )/g' $dir/G-33-4629755.psd
 
 # althingi/sjs/2013/G-33-4691402
 sed -i "" 's/(IP-INF-PRN-ELAB (TO \*)/(IP-INF-PRN-ELAB (TO )/g' $dir/G-33-4691402.psd
