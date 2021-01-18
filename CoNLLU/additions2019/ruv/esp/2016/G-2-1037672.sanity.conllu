@@ -12,8 +12,8 @@
 9	,	,	PUNCT	,	_	11	punct	_	_
 10	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	11	aux	_	_
 11	valið	velja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-12	19	nítján	NUM	NUM-G	Case=Gen	14	dep	_	_
-13	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	conj	_	_
+12	19	nítján	NUM	NUM-G	Case=Gen	13	nummod	_	_
+13	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	nmod:poss	_	_
 14	hóp	hópur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
 15	fyrir	fyrir	ADP	P	_	16	case	_	_
 16	leiki	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obl	_	_
@@ -143,7 +143,7 @@
 # sent_id = RUV_ESP_2016_G-2-1037672.SANITY,.8
 # X_ID = ID_MISSING
 # text = Hópurinn fyrir leikina tvo:
-1	Hópurinn	hópur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+1	Hópurinn	hópur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	_	conj	_	_
 2	fyrir	fyrir	ADP	P	_	3	case	_	_
 3	leikina	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obl	_	_
 4	tvo	tveir	NUM	NUM-A	Case=Acc	3	nummod	_	SpaceAfter=No

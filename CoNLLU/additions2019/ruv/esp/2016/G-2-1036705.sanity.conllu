@@ -9,8 +9,8 @@
 6	færa	færa	VERB	VB	VerbForm=Inf	4	acl	_	_
 7	leiki	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
 8	í	í	ADP	P	_	11	case	_	_
-9	8	átta	NUM	NUM-G	Case=Gen	11	dep	_	_
-10	liða	liða	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	conj	_	_
+9	8	átta	NUM	NUM-G	Case=Gen	10	nummod	_	_
+10	liða	liða	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	nmod:poss	_	_
 11	úrslitum	úrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	_
 12	bikarkeppni	bikarkeppni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	nmod:poss	_	_
 13	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	nmod:poss	_	_
@@ -30,8 +30,8 @@
 27	og	og	CCONJ	CONJ	_	26	cc	_	_
 28	Frakklands	frakkland	PROPN	NPR-G	_	26	dep	_	_
 29	í	í	ADP	P	_	32	case	_	_
-30	8	átta	NUM	NUM-G	Case=Gen	32	dep	_	_
-31	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	30	conj	_	_
+30	8	átta	NUM	NUM-G	Case=Gen	31	nummod	_	_
+31	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	32	nmod:poss	_	_
 32	úrslitum	úrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
 33	EM	em	PROPN	NPR-G	_	32	nmod:poss	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	33	punct	_	_
@@ -92,8 +92,8 @@
 # sent_id = RUV_ESP_2016_G-2-1036705.SANITY,.4
 # X_ID = ID_MISSING
 # text = 8 liða úrslitin líta þá svona út:
-1	8	átta	NUM	NUM-G	Case=Gen	3	dep	_	_
-2	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	1	conj	_	_
+1	8	átta	NUM	NUM-G	Case=Gen	2	nummod	_	_
+2	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	nmod:poss	_	_
 3	úrslitin	úrslit	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 4	líta	líta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 5	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_

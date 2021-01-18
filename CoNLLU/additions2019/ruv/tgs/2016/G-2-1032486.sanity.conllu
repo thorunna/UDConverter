@@ -13,13 +13,13 @@
 10	silfurverðlaunum	silfurverðlaun	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obj	_	_
 11	sínum	sinn	PRON	PRO-D	Case=Dat	10	nmod:poss	_	_
 12	í	í	ADP	P	_	15	case	_	_
-13	100	hundrað	NUM	NUM-G	Case=Gen	15	dep	_	_
-14	m	m	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	13	conj	_	_
+13	100	hundrað	NUM	NUM-G	Case=Gen	14	nummod	_	_
+14	m	m	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	nmod:poss	_	_
 15	bringusundi	bringusund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
 16	á	á	ADP	P	_	17	case	_	_
 17	EM	em	PROPN	NPR-D	_	10	obl	_	_
 18	í	í	ADP	P	_	20	case	_	_
-19	50	fimmtíu	NUM	NUM-N	Case=Nom	20	dep	_	_
+19	50	fimmtíu	NUM	NUM-N	Case=Nom	20	nmod:poss	_	_
 20	laug	laug	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	17	obl	_	_
 21	í	í	ADP	P	_	22	case	_	_
 22	London	london	PROPN	NPR-D	_	17	obl	_	_
@@ -46,8 +46,8 @@
 2	synti	synda	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	í	í	ADP	P	_	4	case	_	_
 4	undanrásum	undanrás	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
-5	200	200	NUM	NUM-G	Case=Gen	7	dep	_	_
-6	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	5	conj	_	_
+5	200	200	NUM	NUM-G	Case=Gen	6	nummod	_	_
+6	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	nmod:poss	_	_
 7	bringusunds	bringusund	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	nmod:poss	_	_
 8	og	og	CCONJ	CONJ	_	9	cc	_	_
 9	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
@@ -66,8 +66,8 @@
 # text = Hrafnhildur synti 200 m bringusundið í morgun á 2:25,99 mín. og átti fjórða besta tímann inn í undanúrslitin.
 1	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	2	nsubj	_	_
 2	synti	synda	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	200	200	NUM	NUM-G	Case=Gen	5	dep	_	_
-4	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	conj	_	_
+3	200	200	NUM	NUM-G	Case=Gen	4	nummod	_	_
+4	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	5	nmod:poss	_	_
 5	bringusundið	bringusund	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 6	í	í	ADP	P	_	7	case	_	_
 7	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
@@ -229,8 +229,8 @@
 16	unnið	vinna	VERB	VBN	Tense=Past|VerbForm=Part	6	obl	_	_
 17	silfurverðlaunin	silfurverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obj	_	_
 18	í	í	ADP	P	_	21	case	_	_
-19	100	hundrað	NUM	NUM-G	Case=Gen	21	dep	_	_
-20	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	conj	_	_
+19	100	hundrað	NUM	NUM-G	Case=Gen	20	nummod	_	_
+20	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	21	nmod:poss	_	_
 21	bringusundinu	bringusund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	21	punct	_	_
 
@@ -333,8 +333,8 @@
 3	til	til	ADP	P	_	4	case	_	_
 4	undanúrslita	undanúrslit	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	obl	_	_
 5	í	í	ADP	P	_	8	case	_	_
-6	200	200	NUM	NUM-G	Case=Gen	8	dep	_	_
-7	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	conj	_	_
+6	200	200	NUM	NUM-G	Case=Gen	7	nummod	_	_
+7	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	_
 8	bringusundi	bringusund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
 9	í	í	ADP	P	_	10	case	_	_
 10	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
@@ -360,8 +360,8 @@
 30	Sveins	sveinn	PROPN	NPR-G	_	29	flat:name	_	_
 31	McKee	mckee	PROPN	NPR-G	_	29	dep	_	_
 32	í	í	ADP	P	_	35	case	_	_
-33	200	200	NUM	NUM-G	Case=Gen	35	dep	_	_
-34	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	33	conj	_	_
+33	200	200	NUM	NUM-G	Case=Gen	34	nummod	_	_
+34	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	35	nmod:poss	_	_
 35	bringusundi	bringusund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	_
 36	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	acl	_	_
 37		hinn	DET	D-N	Case=Nom|PronType=Art	36	det	_	_
@@ -374,8 +374,8 @@
 44	Óskar	ósk	PROPN	NPR-G	_	43	flat:name	_	_
 45	Gústafsdóttur	gústafsdóttir	PROPN	NPR-G	_	43	dep	_	_
 46	í	í	ADP	P	_	49	case	_	_
-47	100	hundrað	NUM	NUM-G	Case=Gen	49	dep	_	_
-48	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	47	conj	_	_
+47	100	hundrað	NUM	NUM-G	Case=Gen	48	nummod	_	_
+48	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	49	nmod:poss	_	_
 49	baksundi	baksund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	42	obl	_	_
 50	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	42	acl	_	_
 51		hinn	DET	D-N	Case=Nom|PronType=Art	50	det	_	_
