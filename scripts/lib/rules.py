@@ -523,6 +523,7 @@ head_rules = {
             'NP-SPR'        : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.' 'NPRS-.',]},   #secondary predicate
             'NP-POS'        : {'dir':'r', 'rules':['N-.*|NS-.*|FW|NPR-.|NPRS-.|Q.*', 'N-.', 'NS-.', 'PRO-.', 'NP', 'NP-.+', 'MAN-.', 'OTHER-.']},
             'NP-POS-RSP'    : {'dir':'r', 'rules':['N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'PRO-.', 'NP-.+', 'MAN-.', 'OTHER-.']},
+            'NP-POS-CPD'    : {'dir':'r', 'rules':['N-.*|NS-.*|FW|NPR-.|NPRS-.|Q.*']},
             'NP-COM'        : {'dir':'r', 'rules':['N.*', 'NP.*', 'OTHER-.']},  #fylliliður N sem er ekki í ef.
             'NP-ADT'        : {'dir':'r', 'rules':['(N-.|NS-.)', 'NS-.', 'NPR-.', 'NPRS-.', 'MAN-.', 'OTHER-.']},    #clause-level dative adjuncts, e.g. instrumental datives
             'NP-TMP'        : {'dir':'r', 'rules':['N-.|NUM-.|FW', 'NS-.', 'NPR-.', 'NPRS-.', 'ADJ-.', 'OTHER-.']},    #temporal NP
@@ -647,6 +648,7 @@ relation_NP = {
       'SPR': 'xcomp',
       'POS': 'nmod:poss',      #Örvar: 'POS': 'case'
       'POS-RSP': 'nmod:poss',
+      'POS-CPD': 'nmod:poss',
       'COM': 'nmod:poss',
       'ADT': 'obl',    #ATH. rétt?
       'TMP': 'obl',

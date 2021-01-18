@@ -575,6 +575,9 @@ class Converter():
                     
                     elif node['head'] == address-1 and self.dg.get_by_address(address-1)['head'] == address:
                         self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
+                    
+                    elif node['head'] == address-3 and self.dg.get_by_address(address-3)['head'] == address:
+                        self.dg.get_by_address(address).update({'head': 0, 'rel': 'root'})
 
             # NOTE: when one verb in sent but no root
             elif self.dg.num_verbs() == 1:
@@ -751,12 +754,6 @@ class Converter():
                     elif address+1 not in self.dg.nodes and address-1 in self.dg.nodes and node['head'] != self.dg.get_by_address(address-1)['head']:
                         self.dg.get_by_address(address).update({'head':address-1})
                     elif address != 1:
-                        #if address-1 in self.dg.nodes and node['head'] == address-1:
-                        #    if self.dg.get_by_address(address-1)['head'] == address and address-2 in self.dg.nodes:
-                        #        print(self.dg.get_by_address(address-1)['head'])
-                        #        self.dg.get_by_address(address-1).update({'head': address-2})
-                        #elif self.dg.get_by_address(address+1)['head'] == address+2 and self.dg.get_by_address(address+2)['head'] == address-1 and node['head'] == self.dg.get_by_address(address-1)['head'] and self.dg.get_by_address(address-1)['rel'] == 'amod':
-                        #    self.dg.get_by_address(address).update({'head': address-1})
                         if address-1 in self.dg.nodes and self.dg.get_by_address(address-1)['head'] == address:
                             print(self.dg.get_by_address(address-1)['head'])
                             if node['head'] == address-1:
@@ -781,41 +778,12 @@ class Converter():
                             self.dg.get_by_address(address).update({'head': address-1})
                         elif address+1 in self.dg.nodes and address-1 in self.dg.nodes and node['head'] < address-1 and self.dg.get_by_address(address+1)['head'] == address-1:
                             self.dg.get_by_address(address).update({'head': address-1})
- 
-                #if node['head'] < int(self.dg.get_by_address(address+1)['head']) and self.dg.get_by_address(address+1)['ctag'] == 'ADV':
-                #    self.dg.get_by_address(address).update({'head': self.dg.get_by_address(address+1)['head']})
-                #else:
-                #    new_head = self.dg.get_by_address(address+1)['head']
-                #    self.dg.get_by_address(address).update({'head': new_head})
-                #elif not address+1 in self.dg.nodes:
-                #    new_head = self.dg.get_by_address(address-1)['head']
-                #    self.dg.get_by_address(address).update({'head': new_head})
-                #if node['head'] > address:
-                #    next_heads = []
-                #    for x in range(6):
-                #        next_heads.append(self.dg.get_by_address(address+x+1)['head'])
-                #    fix = False
-                #    for y in next_heads:
-                #        if y < address:
-                #            fix = True
-                #            break
-                #    if fix == True:
-                #        if self.dg.get_by_address(address+1)['head'] < address \
-                #            and self.dg.get_by_address(address+2)['head'] < address \
-                #                and self.dg.get_by_address(address+3)['head'] < address \
-                #                    and self.dg.get_by_address(address+6)['head'] < address:
-                #                    self.dg.get_by_address(address+1).update({'head': address+3})
-                #                    self.dg.get_by_address(address+2).update({'head': address+3})
-                #                    self.dg.get_by_address(address+3).update({'head': node['head']})
-                #                    self.dg.get_by_address(address+6).update({'head': address+3})
-                #                    if self.dg.get_by_address(address+1)['ctag'] == 'ADV':
-                #                        self.dg.get_by_address(address+1).update({'rel': 'advmod'})
-                #                    if self.dg.get_by_address(address+2)['ctag'] == 'DET':
-                #                        self.dg.get_by_address(address+1).update({'rel': 'obl'})
-                #                    if self.dg.get_by_address(address+3)['ctag'] == 'ADV':
-                #                        self.dg.get_by_address(address+1).update({'rel': 'advmod'})
-                #                    if self.dg.get_by_address(address+6)['ctag'] == 'N-D':
-                #                        self.dg.get_by_address(address+1).update({'rel': 'obl'})
+                    
+                    if node['head'] == 0:
+                        for otheraddress, othernode in self.dg.nodes.items():
+                            if othernode['head'] == address:
+                                self.dg.get_by_address(otheraddress).update({'head': address+1})
+                            self.dg.get_by_address(address).update({'head': address+1})
 
                     if node['rel'] != 'punct':
                         self.dg.get_by_address(address).update({'rel': 'punct'})
@@ -1051,6 +1019,11 @@ class Converter():
         for address, node in self.dg.nodes.items():
             if node['ctag'] == 'PUNCT' and node['rel'] != 'punct':
                 self.dg.get_by_address(address).update({'rel': 'punct'})
+            elif node['ctag'] == 'PUNCT' and node['rel'] == 'punct' and node['head'] == 0:
+                if self.dg.get_by_address(address+1)['head'] == address and self.dg.get_by_address(address+2)['head'] == address:
+                    self.dg.get_by_address(address).update({'head': address+2})
+                    self.dg.get_by_address(address+1).update({'head': address+2})
+                    self.dg.get_by_address(address+2).update({'head': 0, 'rel': 'root'})
 
     def _fix_flatname_dep(self):
         """
