@@ -1212,6 +1212,8 @@ class Converter():
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'dep' and node['head'] == address:
                 self.dg.get_by_address(address).update({'head': address-1})
+            elif node['rel'] == 'dep' and node['head'] == 0:
+                self.dg.get_by_address(address).update({'rel': 'root'})
 
     def _fix_case_rel(self):
 
