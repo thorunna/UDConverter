@@ -1,0 +1,175 @@
+# sent_id = RUV_ESP_2016_G-2-1039768.SANITY,.1
+# X_ID = ID_MISSING
+# text = Góðgerðarleikur knattspyrnumannsins Wayne Rooney milli Manchester United og Everton verður sýndur í beinni útsendingu á Facebook.
+1	Góðgerðarleikur	góðgerðarleikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
+2	knattspyrnumannsins	knattspyrnumaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	nmod:poss	_	_
+3	Wayne	wayne	PROPN	NPR-G	_	2	appos	_	_
+4	Rooney	rooney	PROPN	NPR-G	_	3	flat:name	_	_
+5	milli	milli	ADP	P	_	6	case	_	_
+6	Manchester	manchester	PROPN	NPR-D	_	1	obl	_	_
+7	United	united	PROPN	NPR-D	_	6	flat:name	_	_
+8	og	og	CCONJ	CONJ	_	9	cc	_	_
+9	Everton	everton	PROPN	NPR-D	_	6	conj	_	_
+10	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	11	aux	_	_
+11	sýndur	sýna	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+12	í	í	ADP	P	_	14	case	_	_
+13	beinni	beinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
+14	útsendingu	útsending	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+15	á	á	ADP	P	_	16	case	_	_
+16	Facebook	facebook	PROPN	NPR-D	_	11	obl	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1039768.SANITY,.2
+# X_ID = ID_MISSING
+# text = Þetta verður í fyrsta skipti sem leikur enskra úrvalsdeildarliða verður sendur út á samfélagsmiðlinum.
+1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	nsubj	_	_
+2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	í	í	ADP	P	_	5	case	_	_
+4	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	5	amod	_	_
+5	skipti	skipti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+6	sem	sem	SCONJ	C	_	11	mark	_	_
+7	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
+8	enskra	enskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	9	amod	_	_
+9	úrvalsdeildarliða	úrvalsdeildarlið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	nmod:poss	_	_
+10	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	11	aux	_	_
+11	sendur	senda	VERB	VAN	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
+12	út	út	ADP	RP	_	11	compound:prt	_	_
+13	á	á	ADP	P	_	14	case	_	_
+14	samfélagsmiðlinum	samfélagsmiðill	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1039768.SANITY,.3
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = 1,7 milljarðar manna munu hafa aðgang að leiknum á síðu Rooneys og Manchester United á Facebook og hefur leikmaðurinn valið fjóra málstaði til að styrkja.
+1	1,7	1,7	NUM	NUM-N	Case=Nom	2	nummod	_	_
+2	milljarðar	milljarður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
+3	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	nmod:poss	_	_
+4	munu	munu	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
+5	hafa	hafa	VERB	HV	VerbForm=Inf	0	root	_	_
+6	aðgang	aðgangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
+7	að	að	ADP	P	_	8	case	_	_
+8	leiknum	leikur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+9	á	á	ADP	P	_	10	case	_	_
+10	síðu	síða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+11	Rooneys	rooney	PROPN	NPR-G	_	10	nmod:poss	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	Manchester	manchester	PROPN	NPR-G	_	11	conj	_	_
+14	United	united	PROPN	NPR-G	_	13	flat:name	_	_
+15	á	á	ADP	P	_	16	case	_	_
+16	Facebook	facebook	PROPN	NPR-D	_	10	obl	_	_
+17	og	og	CCONJ	CONJ	_	20	cc	_	_
+18	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	20	aux	_	_
+19	leikmaðurinn	leikmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	_
+20	valið	velja	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
+21	fjóra	fjórir	NUM	NUM-A	Case=Acc	22	nummod	_	_
+22	málstaði	málstaður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	20	obj	_	_
+23	til	til	ADP	P	_	25	case	_	_
+24	að	að	PART	TO	_	25	mark	_	_
+25	styrkja	styrkja	VERB	VB	VerbForm=Inf	22	obl	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	25	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1039768.SANITY,.4
+# X_ID = ID_MISSING
+# text = Everton og Manchester United eru einu atvinnumannaliðin sem Rooney hefur spilað með.
+1	Everton	everton	PROPN	NPR-N	_	7	nsubj	_	_
+2	og	og	CCONJ	CONJ	_	3	cc	_	_
+3	Manchester	manchester	PROPN	NPR-N	_	1	conj	_	_
+4	United	united	PROPN	NPR-N	_	3	flat:name	_	_
+5	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
+6	einu	einn	DET	ONE-N	Case=Nom|Number=Sing	7	det	_	_
+7	atvinnumannaliðin	atvinnumannalið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
+8	sem	sem	SCONJ	C	_	11	mark	_	_
+9	Rooney	rooney	PROPN	NPR-N	_	11	nsubj	_	_
+10	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	11	aux	_	_
+11	spilað	spila	VERB	VBN	Tense=Past|VerbForm=Part	7	acl:relcl	_	_
+12	með	með	ADP	P	_	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	12	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1039768.SANITY,.5
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Hann lék með Everton á árunum 2002 2004 og gekk svo til liðs við United þar sem hann hefur spilað síðustu tólf ár.
+1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	lék	leika	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	með	með	ADP	P	_	4	case	_	_
+4	Everton	everton	PROPN	NPR-D	_	2	obl	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	árunum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
+7	2002	2002	NUM	NUM-D	Case=Dat	6	appos	_	_
+8	2004	2004	NUM	NUM-D	Case=Dat	7	nummod	_	_
+9	og	og	CCONJ	CONJ	_	10	cc	_	_
+10	gekk	ganga	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+11	svo	svo	ADV	ADV	Degree=Pos	10	advmod	_	_
+12	til	til	ADP	P	_	13	case	_	_
+13	liðs	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	obl	_	_
+14	við	við	ADP	P	_	15	case	_	_
+15	United	united	PROPN	NPR-A	_	13	obl	_	_
+16	þar	þar	ADV	ADV	Degree=Pos	20	advmod	_	_
+17	sem	sem	SCONJ	C	_	20	mark	_	_
+18	hann	hann	PRON	PRO-N	Case=Nom	20	nsubj	_	_
+19	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	20	aux	_	_
+20	spilað	spila	VERB	VBN	Tense=Past|VerbForm=Part	15	acl:relcl	_	_
+21	síðustu	síðari	ADJ	ADJS-A	Case=Acc|Degree=Sup	22	amod	_	_
+22	tólf	tólf	NUM	NUM-A	Case=Acc	20	obl	_	_
+23	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	conj	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1039768.SANITY,.6
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Leikið verður á heimavelli Manchester United, Old Trafford, og búist við að þetta verði fyrsti leikur Zlatans Ibrahimovic, Henrikhs Mkhitaryan og Erics Bailly fyrir United á heimavelli en þeir gengu allir til liðs við félagið í sumar.
+1	Leikið	leika	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+2	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	1	aux	_	_
+3	á	á	ADP	P	_	4	case	_	_
+4	heimavelli	heimavöllur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
+5	Manchester	manchester	PROPN	NPR-G	_	4	nmod:poss	_	_
+6	United	united	PROPN	NPR-G	_	5	flat:name	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	Old	old	PROPN	NPR-D	_	4	appos	_	_
+9	Trafford	trafford	PROPN	NPR-D	_	8	flat:name	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	og	og	CCONJ	CONJ	_	12	cc	_	_
+12	búist	búa	VERB	VAN	Tense=Past|VerbForm=Part	1	conj	_	_
+13	við	við	ADP	P	_	16	case	_	_
+14	að	að	SCONJ	C	_	16	mark	_	_
+15	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	16	nsubj	_	_
+16	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	12	obl	_	_
+17	fyrsti	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	18	amod	_	_
+18	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	xcomp	_	_
+19	Zlatans	zlatan	PROPN	NPR-G	_	18	nmod:poss	_	_
+20	Ibrahimovic	ibrahimovic	PROPN	NPR-G	_	19	flat:name	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	22	punct	_	_
+22	Henrikhs	henrikh	PROPN	NPR-G	_	19	conj	_	_
+23	Mkhitaryan	mkhitaryan	PROPN	NPR-G	_	22	flat:name	_	_
+24	og	og	CCONJ	CONJ	_	25	cc	_	_
+25	Erics	eric	PROPN	NPR-G	_	19	conj	_	_
+26	Bailly	bailly	PROPN	NPR-G	_	25	flat:name	_	_
+27	fyrir	fyrir	ADP	P	_	28	case	_	_
+28	United	united	PROPN	NPR-A	_	18	obl	_	_
+29	á	á	ADP	P	_	30	case	_	_
+30	heimavelli	heimavöllur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
+31	en	en	CCONJ	CONJ	_	33	cc	_	_
+32	þeir	hann	PRON	PRO-N	Case=Nom	33	nsubj	_	_
+33	gengu	ganga	VERB	VBDI	Mood=Ind|Tense=Past	1	conj	_	OriginalHead=0
+34	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	33	amod	_	_
+35	til	til	ADP	P	_	36	case	_	_
+36	liðs	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	33	obl	_	_
+37	við	við	ADP	P	_	38	case	_	_
+38	félagið	félag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	36	obl	_	_
+39	í	í	ADP	P	_	40	case	_	_
+40	sumar	sumar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obl	_	SpaceAfter=No
+41	.	.	PUNCT	.	_	40	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1039768.SANITY,.7
+# X_ID = ID_MISSING
+# text = Leikurinn hefst klukkan 19:00 að íslenskum tíma.
+1	Leikurinn	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	hefst	hefja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	advcl	_	_
+4	19	nítján	NUM	NUM-N	Case=Nom	3	xcomp	_	SpaceAfter=No
+5	:	:	PUNCT	,	_	6	punct	_	_|SpaceAfter=No
+6	0	núll	NUM	NUM-N	Case=Nom	4	conj	_	SpaceAfter=No
+7	0	núll	NUM	NUM-N	Case=Nom	4	conj	_	_
+8	að	að	ADP	P	_	10	case	_	_
+9	íslenskum	íslenskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	10	amod	_	_
+10	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	10	punct	_	_
+

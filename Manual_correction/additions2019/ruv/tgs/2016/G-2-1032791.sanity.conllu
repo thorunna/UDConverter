@@ -1,0 +1,403 @@
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.1
+# X_ID = ID_MISSING
+# text = Guðni Valur Guðnason kringlukastari úr ÍR náði sínum besta árangri á árinu þegar hann kastaði 60,72 m á Vormóti UFA á Þórsvelli á Akureyri í dag.
+1	Guðni	guðni	PROPN	NPR-N	_	7	nsubj	_	_
+2	Valur	valur	PROPN	NPR-N	_	1	flat:name	_	_
+3	Guðnason	guðnason	PROPN	NPR-N	_	1	dep	_	_
+4	kringlukastari	kringlukastari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	_
+5	úr	úr	ADP	P	_	6	case	_	_
+6	ÍR	ír	PROPN	NPR-D	_	1	obl	_	_
+7	náði	ná	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+8	sínum	sinn	PRON	PRO-D	Case=Dat	10	nmod:poss	_	_
+9	besta	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	10	amod	_	_
+10	árangri	árangur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obj	_	_
+11	á	á	ADP	P	_	12	case	_	_
+12	árinu	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
+13	þegar	þegar	ADP	P	_	15	case	_	_
+14	hann	hann	PRON	PRO-N	Case=Nom	15	nsubj	_	_
+15	kastaði	kasta	VERB	VBDI	Mood=Ind|Tense=Past	7	obl	_	_
+16	60,72	60,72	NUM	NUM-A	Case=Acc	17	nummod	_	_
+17	m	metri	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obl	_	_
+18	á	á	ADP	P	_	19	case	_	_
+19	Vormóti	vormótur	PROPN	NPR-D	_	15	obl	_	_
+20	UFA	ufa	PROPN	NPR-G	_	19	flat:name	_	_
+21	á	á	ADP	P	_	22	case	_	_
+22	Þórsvelli	þórsvöllur	PROPN	NPR-D	_	15	obl	_	_
+23	á	á	ADP	P	_	24	case	_	_
+24	Akureyri	akureyri	PROPN	NPR-D	_	22	obl	_	_
+25	í	í	ADP	P	_	26	case	_	_
+26	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	26	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.2
+# X_ID = ID_MISSING
+# text = Þetta er næstum einum metra lengra en lengsta kast Guðna Vals á JJ móti Ármanns á miðvikudag sem var 59,65 m.
+1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+3	næstum	næstum	ADV	ADV	Degree=Pos	5	advmod	_	_
+4	einum	einn	DET	ONE-D	Case=Dat|Number=Sing	5	det	_	_
+5	metra	metri	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+6	lengra	langur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	0	root	_	_
+7	en	en	ADP	P	_	9	case	_	_
+8	lengsta	langur	ADJ	ADJS-N	Case=Nom|Degree=Sup	9	amod	_	_
+9	kast	kast	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	amod	_	_
+10	Guðna	guðni	PROPN	NPR-G	_	9	nmod:poss	_	_
+11	Vals	valur	PROPN	NPR-G	_	10	flat:name	_	_
+12	á	á	ADP	P	_	14	case	_	_
+13	JJ	jj	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	dep	_	_
+14	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+15	Ármanns	ármann	PROPN	NPR-G	_	14	nmod:poss	_	_
+16	á	á	ADP	P	_	17	case	_	_
+17	miðvikudag	miðvikudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
+18	sem	sem	SCONJ	C	_	21	mark	_	_
+19	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	21	cop	_	_
+20	59,65	59,65	NUM	NUM-N	Case=Nom	21	nummod	_	_
+21	m	metri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	acl:relcl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	21	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.3
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Upphaf tímabilsins hjá Guðna Val lofar því góðu, en hann hefur þegar tryggt sér keppnisrétt á Evrópumótinu í frjálsíþróttum sem haldið verður í Amsterdam í byrjun júní.
+1	Upphaf	upphaf	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+2	tímabilsins	tímabil	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	nmod:poss	_	_
+3	hjá	hjá	ADP	P	_	4	case	_	_
+4	Guðna	guðni	PROPN	NPR-D	_	1	obl	_	_
+5	Val	valur	PROPN	NPR-D	_	4	flat:name	_	_
+6	lofar	lofa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+7	því	það	PRON	PRO-D	Case=Dat	6	obl	_	_
+8	góðu	góður	ADJ	ADJ-D	Case=Dat|Degree=Pos	6	obj	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	en	en	CCONJ	CONJ	_	14	cc	_	_
+11	hann	hann	PRON	PRO-N	Case=Nom	14	nsubj	_	_
+12	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	14	aux	_	_
+13	þegar	þegar	ADV	ADV	Degree=Pos	14	advmod	_	_
+14	tryggt	tryggja	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	OriginalHead=0
+15	sér	sig	PRON	PRO-D	Case=Dat	14	iobj	_	_
+16	keppnisrétt	keppnisréttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
+17	á	á	ADP	P	_	18	case	_	_
+18	Evrópumótinu	evrópumót	PROPN	NPR-D	_	16	obl	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	frjálsíþróttum	frjálsíþróttir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	_
+21	sem	sem	SCONJ	C	_	22	mark	_	_
+22	haldið	halda	VERB	VAN	Tense=Past|VerbForm=Part	18	acl:relcl	_	_
+23	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	22	aux	_	_
+24	í	í	ADP	P	_	25	case	_	_
+25	Amsterdam	amsterdam	PROPN	NPR-D	_	22	obl	_	_
+26	í	í	ADP	P	_	27	case	_	_
+27	byrjun	byrjun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
+28	júní	júní	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	27	nmod:poss	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	28	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.4
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Það gerði Guðni í fyrra, en hans lengsta kast var þá 63,50 m, sem er aðeins 1,50 m frá lágmarkinu inn á Ólympíuleikana í Ríó í ágúst.
+1	Það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
+2	gerði	gera	VERB	DODI	Mood=Ind|Tense=Past	0	root	_	_
+3	Guðni	guðni	PROPN	NPR-N	_	2	nsubj	_	_
+4	í	í	ADP	P	_	5	case	_	_
+5	fyrra	fyrri	ADJ	ADJR-A	Case=Acc|Degree=Cmp	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	en	en	CCONJ	CONJ	_	14	cc	_	_
+8	hans	hann	PRON	PRO-G	Case=Gen	10	nmod:poss	_	_
+9	lengsta	langur	ADJ	ADJS-N	Case=Nom|Degree=Sup	10	amod	_	_
+10	kast	kast	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
+11	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	14	cop	_	_
+12	þá	þá	ADV	ADV	Degree=Pos	14	advmod	_	_
+13	63,50	63,50	NUM	NUM-N	Case=Nom	14	nummod	_	_
+14	m	metri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	conj	_	OriginalHead=0|SpaceAfter=No
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	sem	sem	SCONJ	C	_	20	mark	_	_
+17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
+18	aðeins	aðeins	ADV	FP	Degree=Pos	20	advmod	_	_
+19	1,50	1,50	NUM	NUM-D	Case=Dat	20	nummod	_	_
+20	m	metri	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	acl:relcl	_	_
+21	frá	frá	ADP	P	_	20	case	_	_
+22	lágmarkinu	lágmark	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	_
+23	inn	inn	ADP	RP	_	25	compound:prt	_	_
+24	á	á	ADP	P	_	25	case	_	_
+25	Ólympíuleikana	ólympíuleikar	PROPN	NPRS-A	_	22	obl	_	_
+26	í	í	ADP	P	_	27	case	_	_
+27	Ríó	ríó	PROPN	NPR-D	_	25	obl	_	_
+28	í	í	ADP	P	_	29	case	_	_
+29	ágúst	ágúst	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	29	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.5
+# X_ID = ID_MISSING
+# text = Hafdís Sigurðardóttir stökk lengst 6,33 m meðvindur 3,4 m/s á mótinu í dag.
+1	Hafdís	hafdís	PROPN	NPR-N	_	3	nsubj	_	_
+2	Sigurðardóttir	sigurðardóttir	PROPN	NPR-N	_	1	flat:name	_	_
+3	stökk	stökkva	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	lengst	langt	ADV	ADVS	Degree=Sup	3	obl	_	_
+5	6,33	6,33	NUM	NUM-A	Case=Acc	6	nummod	_	_
+6	m	metri	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obl	_	_
+7	meðvindur	meðvindur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	advcl	_	_
+8	3,4	3,4	NUM	NUM-N	Case=Nom	9	nummod	_	_
+9	m	metri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	xcomp	_	SpaceAfter=No
+10	/	á	ADP	P	_	11	case	_	SpaceAfter=No
+11	s	sekúnda	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+12	á	á	ADP	P	_	13	case	_	_
+13	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.6
+# X_ID = ID_MISSING
+# text = Það er 5 sentimetrum lengra en hennar lengsta stökk á JJ móti Ármanns á miðvikudag.
+1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+3	5	fimm	NUM	NUM-N	Case=Nom	4	nummod	_	_
+4	sentimetrum	sentimetri	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
+5	lengra	langur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	0	root	_	_
+6	en	en	ADP	P	_	9	case	_	_
+7	hennar	hún	PRON	PRO-G	Case=Gen	9	nmod:poss	_	_
+8	lengsta	langur	ADJ	ADJS-N	Case=Nom|Degree=Sup	9	amod	_	_
+9	stökk	stökk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	amod	_	_
+10	á	á	ADP	P	_	12	case	_	_
+11	JJ	jj	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	dep	_	_
+12	móti	móti	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	obl	_	_
+13	Ármanns	ármann	PROPN	NPR-G	_	12	nmod:poss	_	_
+14	á	á	ADP	P	_	15	case	_	_
+15	miðvikudag	miðvikudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.7
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Hafdís hefur einnig náð lágmarkinu inn á Evrópumótið í Amsterdam eins og Guðni Valur, en lengsta stökk Hafdísar í fyrra sem jafnframt er Íslandsmet, var 6,56 m.
+1	Hafdís	hafdís	PROPN	NPR-N	_	4	nsubj	_	_
+2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
+3	einnig	einnig	ADV	ALSO	_	4	advmod	_	_
+4	náð	ná	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	lágmarkinu	lágmark	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obj	_	_
+6	inn	inn	ADP	RP	_	8	compound:prt	_	_
+7	á	á	ADP	P	_	8	case	_	_
+8	Evrópumótið	evrópumót	PROPN	NPR-A	_	5	obl	_	_
+9	í	í	ADP	P	_	10	case	_	_
+10	Amsterdam	amsterdam	PROPN	NPR-D	_	8	obl	_	_
+11	eins	_	ADV	ADVR	Degree=Cmp	4	advmod	_	_
+12	og	_	ADP	P	_	13	case	_	_
+13	Guðni	guðni	PROPN	NPR-N	_	11	obl	_	_
+14	Valur	valur	PROPN	NPR-N	_	13	flat:name	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	en	en	CCONJ	CONJ	_	29	cc	_	_
+17	lengsta	langur	ADJ	ADJS-N	Case=Nom|Degree=Sup	18	amod	_	_
+18	stökk	stökk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	29	nsubj	_	_
+19	Hafdísar	hafdís	PROPN	NPR-G	_	18	nmod:poss	_	_
+20	í	í	ADP	P	_	21	case	_	_
+21	fyrra	fyrri	ADJ	ADJR-A	Case=Acc|Degree=Cmp	18	obl	_	_
+22	sem	sem	SCONJ	C	_	25	mark	_	_
+23	jafnframt	jafnframt	ADV	ADV	Degree=Pos	25	advmod	_	_
+24	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
+25	Íslandsmet	íslandsmet	PROPN	NPR-N	_	18	acl:relcl	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	29	punct	_	_
+27	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	29	cop	_	_
+28	6,56	6,56	NUM	NUM-N	Case=Nom	29	nummod	_	_
+29	m	metri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	conj	_	OriginalHead=0|SpaceAfter=No
+30	.	.	PUNCT	.	_	29	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.8
+# X_ID = ID_MISSING
+# text = Ólympíulágmarkið í langstökki kvenna er 6,70 m.
+1	Ólympíulágmarkið	ólympíulágmark	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+2	í	í	ADP	P	_	3	case	_	_
+3	langstökki	langstökk	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
+4	kvenna	kona	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	nmod:poss	_	_
+5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+6	6,70	6,70	NUM	NUM-N	Case=Nom	7	nummod	_	_
+7	m	metri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.9
+# X_ID = ID_MISSING
+# text = Meðal annarra úrslita á mótinu í dag má nefna sigur Guðmundar Sverrissonar úr ÍR í spjótkasti.
+1	Meðal	meðal	ADP	P	_	3	case	_	_
+2	annarra	annar	PRON	OTHER-G	Case=Gen	3	det	_	_
+3	úrslita	úrslit	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	obl	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+8	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	9	aux	_	_
+9	nefna	nefna	VERB	VB	VerbForm=Inf	0	root	_	_
+10	sigur	sigur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
+11	Guðmundar	guðmundur	PROPN	NPR-G	_	10	nmod:poss	_	_
+12	Sverrissonar	sverrisson	PROPN	NPR-G	_	11	flat:name	_	_
+13	úr	úr	ADP	P	_	14	case	_	_
+14	ÍR	ír	PROPN	NPR-D	_	11	obl	_	_
+15	í	í	ADP	P	_	16	case	_	_
+16	spjótkasti	spjótkast	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.10
+# X_ID = ID_MISSING
+# text = Guðmundur kastaði lengst 71,39 m.
+1	Guðmundur	guðmundur	PROPN	NPR-N	_	2	nsubj	_	_
+2	kastaði	kasta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	lengst	langt	ADV	ADVS	Degree=Sup	2	advmod	_	_
+4	71,39	71,39	NUM	NUM-A	Case=Acc	5	nummod	_	_
+5	m	metri	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.11
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Guðmundur sem keppti á EM fyrir tveimur árum hefur ekki enn náð lágmarkinu fyrir EM í júlí, en það er 79,00 m.
+1	Guðmundur	guðmundur	PROPN	NPR-N	_	12	nsubj	_	_
+2	sem	sem	SCONJ	C	_	3	mark	_	_
+3	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	1	acl:relcl	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	EM	em	PROPN	NPR-D	_	3	obl	_	_
+6	fyrir	fyrir	ADP	P	_	8	case	_	_
+7	tveimur	tveir	NUM	NUM-D	Case=Dat	8	nummod	_	_
+8	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
+9	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	12	aux	_	_
+10	ekki	ekki	ADV	NEG	_	12	advmod	_	_
+11	enn	enn	ADV	ADV	Degree=Pos	12	advmod	_	_
+12	náð	ná	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+13	lágmarkinu	lágmark	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obj	_	_
+14	fyrir	fyrir	ADP	P	_	15	case	_	_
+15	EM	em	PROPN	NPR-A	_	12	obl	_	_
+16	í	í	ADP	P	_	17	case	_	_
+17	júlí	júlí	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	en	en	CCONJ	CONJ	_	23	cc	_	_
+20	það	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
+22	79,00	79,00	NUM	NUM-N	Case=Nom	23	nummod	_	_
+23	m	metri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	conj	_	OriginalHead=0|SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.12
+# X_ID = ID_MISSING
+# text = Ólympíulágmarkið í spjótkasti karla er svo 83,00 m.
+1	Ólympíulágmarkið	ólympíulágmark	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+2	í	í	ADP	P	_	3	case	_	_
+3	spjótkasti	spjótkast	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
+4	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	nmod:poss	_	_
+5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+6	svo	svo	ADV	ADV	Degree=Pos	8	advmod	_	_
+7	83,00	83,00	NUM	NUM-N	Case=Nom	8	nummod	_	_
+8	m	metri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.13
+# X_ID = ID_MISSING
+# text = Óðinn Björn Þorsteinsson, ÍR vann svo kúluvarpskeppni karla með lengsta kast upp á 18,72 m.
+1	Óðinn	óðinn	PROPN	NPR-N	_	6	nsubj	_	_
+2	Björn	björn	PROPN	NPR-N	_	1	flat:name	_	_
+3	Þorsteinsson	þorsteinsson	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	ÍR	ír	PROPN	NPR-D	_	1	dep	_	_
+6	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+7	svo	svo	ADV	ADV	Degree=Pos	6	advmod	_	_
+8	kúluvarpskeppni	kúluvarpskeppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+9	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	_
+10	með	með	ADP	P	_	12	case	_	_
+11	lengsta	langur	ADJ	ADJS-A	Case=Acc|Degree=Sup	12	amod	_	_
+12	kast	kast	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
+13	upp	upp	ADP	RP	_	16	compound:prt	_	_
+14	á	á	ADP	P	_	16	case	_	_
+15	18,72	18,72	NUM	NUM-A	Case=Acc	16	nummod	_	_
+16	m	metri	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.14
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Óðinn nálgast EM lágmarkið, sem er 19,75 m en lágmarkið fyrir Ólympíuleikana í kúluvarpi karla er 20,50 m.
+1	Óðinn	óðinn	PROPN	NPR-N	_	2	nsubj	_	_
+2	nálgast	nálgast	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	EM	em	PROPN	NPR-N	_	4	dep	_	_
+4	lágmarkið	lágmark	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	sem	sem	SCONJ	C	_	9	mark	_	_
+7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
+8	19,75	19,75	NUM	NUM-N	Case=Nom	9	nummod	_	_
+9	m	metri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	acl:relcl	_	_
+10	en	en	CCONJ	CONJ	_	19	cc	_	_
+11	lágmarkið	lágmark	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
+12	fyrir	fyrir	ADP	P	_	13	case	_	_
+13	Ólympíuleikana	ólympíuleikar	PROPN	NPRS-A	_	11	obl	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	kúluvarpi	kúluvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+16	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	nmod:poss	_	_
+17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
+18	20,50	20,50	NUM	NUM-N	Case=Nom	19	nummod	_	_
+19	m	metri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	conj	_	OriginalHead=0|SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.15
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Í 100 m hlaupi karla hafði heimamaðurinn Kolbeinn Höður Gunnarsson betur eftir harða keppni við Ara Braga Kárason, en báðir keppa þeir nú fyrir FH.
+1	Í	í	ADP	P	_	4	case	_	_
+2	100	hundrað	NUM	NUM-G	Case=Gen	3	nummod	_	_
+3	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
+4	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+5	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
+6	hafði	hafa	VERB	HVDI	Mood=Ind|Tense=Past	0	root	_	_
+7	heimamaðurinn	heimamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+8	Kolbeinn	kolbeinn	PROPN	NPR-N	_	7	appos	_	_
+9	Höður	höður	PROPN	NPR-N	_	8	flat:name	_	_
+10	Gunnarsson	gunnarsson	PROPN	NPR-N	_	8	dep	_	_
+11	betur	vel	ADV	ADVR	Degree=Cmp	6	advmod	_	_
+12	eftir	eftir	ADP	P	_	14	case	_	_
+13	harða	harður	ADJ	ADJ-A	Case=Acc|Degree=Pos	14	amod	_	_
+14	keppni	keppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
+15	við	við	ADP	P	_	16	case	_	_
+16	Ara	ari	PROPN	NPR-A	_	14	obl	_	_
+17	Braga	bragi	PROPN	NPR-A	_	16	flat:name	_	_
+18	Kárason	kárason	PROPN	NPR-A	_	16	dep	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	en	en	CCONJ	CONJ	_	22	cc	_	_
+21	báðir	báðir	DET	Q-N	Case=Nom|Degree=Pos	22	amod	_	_
+22	keppa	keppa	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
+23	þeir	hann	PRON	PRO-N	Case=Nom	22	nsubj	_	_
+24	nú	nú	ADV	ADV	Degree=Pos	22	advmod	_	_
+25	fyrir	fyrir	ADP	P	_	26	case	_	_
+26	FH	fh	PROPN	NPR-A	_	22	obl	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	26	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.16
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Kolbeinn Höður hljóp á tímanum 10,64 sek., en Ari Bragi á 10,71 sek. Báðir voru þeir að hlaupa á sínum besta tíma frá upphafi.
+1	Kolbeinn	kolbeinn	PROPN	NPR-N	_	3	nsubj	_	_
+2	Höður	höður	PROPN	NPR-N	_	1	flat:name	_	_
+3	hljóp	hlaupa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	tímanum	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+6	10,64	10,64	NUM	NUM-D	Case=Dat	7	nummod	_	_
+7	sek.	sekúnda	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	appos	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	en	en	CCONJ	CONJ	_	14	cc	_	_
+10	Ari	ari	PROPN	NPR-N	_	14	nsubj	_	_
+11	Bragi	bragi	PROPN	NPR-N	_	10	flat:name	_	_
+12	á	á	ADP	P	_	14	case	_	_
+13	10,71	10,71	NUM	NUM-D	Case=Dat	14	amod	_	_
+14	sek.	sekúnda	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	conj	_	_
+15	Báðir	báðir	DET	Q-N	Case=Nom|Degree=Pos	17	amod	_	_
+16	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	17	cop	_	_
+17	þeir	hann	PRON	PRO-N	Case=Nom	3	conj	_	OriginalHead=0
+18	að	að	PART	TO	_	19	mark	_	_
+19	hlaupa	hlaupa	VERB	VB	VerbForm=Inf	17	acl	_	_
+20	á	á	ADP	P	_	23	case	_	_
+21	sínum	sinn	PRON	PRO-D	Case=Dat	23	nmod:poss	_	_
+22	besta	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	23	amod	_	_
+23	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
+24	frá	frá	ADP	P	_	25	case	_	_
+25	upphafi	upphaf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	25	punct	_	_
+
+# sent_id = RUV_TGS_2016_G-2-1032791.SANITY,.17
+# X_ID = ID_MISSING
+# text = Nánari upplýsingar um úrslit frá Vormóti UFA má finna hér.
+1	Nánari	náinn	ADJ	ADJR-A	Case=Acc|Degree=Cmp	2	amod	_	_
+2	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obj	_	_
+3	um	um	ADP	P	_	4	case	_	_
+4	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
+5	frá	frá	ADP	P	_	6	case	_	_
+6	Vormóti	vormót	PROPN	NPR-D	_	2	obl	_	_
+7	UFA	ufa	PROPN	NPR-G	_	6	flat:name	_	_
+8	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	9	aux	_	_
+9	finna	finna	VERB	VB	VerbForm=Inf	0	root	_	_
+10	hér	hér	ADV	ADV	Degree=Pos	9	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	10	punct	_	_
+

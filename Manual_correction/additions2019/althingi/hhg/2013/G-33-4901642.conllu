@@ -1,0 +1,188 @@
+# sent_id = ALTHINGI_HHG_2013_G-33-4901642,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti. Ég þakka hv. þingmanni svarið.
+1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	_
+4	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+6	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
+7	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	iobj	_	_
+8	svarið	svar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4901642,.2
+# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING ; ID_MISSING
+# text = Nú geri ég mér grein fyrir að það eru mismunandi hópar, svo sem mismunandi tekjuhópar, sumt fólk er í skóla, annað fólk er í vinnu o.s.frv., mismunandi hópar eru í samfélaginu vissulega.
+1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	geri	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+4	mér	ég	PRON	PRO-D	Case=Dat	2	iobj	_	_
+5	grein	grein	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+6	fyrir	fyrir	ADP	P	_	8	case	_	_
+7	að	að	SCONJ	C	_	8	mark	_	_
+8	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	obl	_	_
+9	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+10	mismunandi	mismunandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
+11	hópar	hópur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	obl	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	svo	svo	ADV	ADV	Degree=Pos	8	dep	_	_
+14	sem	sem	SCONJ	C	_	13	fixed	_	_
+15	mismunandi	mismunandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	16	amod	_	_
+16	tekjuhópar	tekjuhópur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	advcl	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	sumt	sumur	DET	Q-N	Case=Nom|Degree=Pos	19	amod	_	_
+19	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	nsubj	_	_
+20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
+21	í	í	ADP	P	_	22	case	_	_
+22	skóla	skóli	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0|SpaceAfter=No
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	annað	annar	PRON	OTHER-N	Case=Nom	25	det	_	_
+25	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	nsubj	_	_
+26	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	28	cop	_	_
+27	í	í	ADP	P	_	28	case	_	_
+28	vinnu	vinna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
+29	o.	og	CCONJ	CONJ	_	28	conj	_	SpaceAfter=No
+30	s.	svo	ADV	ADV	Degree=Pos	29	xcomp	_	SpaceAfter=No
+31	frv.	framvegis	ADV	ADV	Degree=Pos	30	advmod	_	SpaceAfter=No
+32	,	,	PUNCT	,	_	31	punct	_	_
+33	mismunandi	mismunandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	34	amod	_	_
+34	hópar	hópur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	37	nsubj	_	_
+35	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	37	cop	_	_
+36	í	í	ADP	P	_	37	case	_	_
+37	samfélaginu	samfélag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
+38	vissulega	vissulega	ADV	ADV	Degree=Pos	37	advmod	_	SpaceAfter=No
+39	.	.	PUNCT	.	_	38	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4901642,.3
+# X_ID = ID_MISSING
+# text = En það sem ég skil ekki er hvers vegna við þurfum upplýsingar um fólk sem á ekki við neinn skuldavanda að stríða, eins og til dæmis um mig persónulega.
+1	En	en	CCONJ	CONJ	_	2	cc	_	_
+2	það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+3	sem	sem	SCONJ	C	_	5	mark	_	_
+4	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	2	acl:relcl	_	_
+6	ekki	ekki	ADV	NEG	_	5	advmod	_	_
+7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
+8	hvers	hver	PRON	WPRO-G	Case=Gen	11	obl	_	_
+9	vegna	vegna	ADP	P	_	8	case	_	_
+10	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
+11	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	2	ccomp	_	_
+12	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
+13	um	um	ADP	P	_	14	case	_	_
+14	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
+15	sem	sem	SCONJ	C	_	16	mark	_	_
+16	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	14	acl:relcl	_	_
+17	ekki	ekki	ADV	NEG	_	16	advmod	_	_
+18	við	við	ADP	P	_	20	case	_	_
+19	neinn	neinn	DET	Q-A	Case=Acc|Degree=Pos	20	amod	_	_
+20	skuldavanda	skuldavanda	PROPN	NPR-A	_	16	obl	_	_
+21	að	að	PART	TO	_	22	mark	_	_
+22	stríða	stríða	VERB	VB	VerbForm=Inf	16	acl	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	eins	_	ADV	ADVR	Degree=Cmp	12	advmod	_	_
+25	og	_	ADP	P	_	27	case	_	_
+26	til	til	ADP	P	_	27	case	_	_
+27	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	24	obl	_	_
+28	um	um	ADP	P	_	29	case	_	_
+29	mig	ég	PRON	PRO-A	Case=Acc	27	obl	_	_
+30	persónulega	persónulega	ADV	ADV	Degree=Pos	29	advmod	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	30	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4901642,.4
+# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING ; ID_MISSING ; ID_MISSING
+# text = Ég er með verðtryggt lán, ég á íbúð, ég er ekki í neinum vandræðum, sá mér ekki þörf á að kjósa Framsókn með fullri virðingu, og skil ekki hvers vegna þarf mínar upplýsingar til að laga skuldavanda annarra sem þó eiga um sárt að binda.
+1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+3	með	með	ADP	P	_	5	case	_	_
+4	verðtryggt	verðtryggður	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
+5	lán	lán	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+8	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+9	íbúð	íbúð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	ég	ég	PRON	PRO-N	Case=Nom	16	nsubj	_	_
+12	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
+13	ekki	ekki	ADV	NEG	_	16	advmod	_	_
+14	í	í	ADP	P	_	16	case	_	_
+15	neinum	neinn	DET	Q-D	Case=Dat|Degree=Pos	16	amod	_	_
+16	vandræðum	vandræði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	conj	_	OriginalHead=0|SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	sá	sjá	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
+19	mér	ég	PRON	PRO-D	Case=Dat	21	nsubj	_	_
+20	ekki	ekki	ADV	NEG	_	21	advmod	_	_
+21	þörf	þörf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	ccomp	_	_
+22	á	á	ADP	P	_	24	case	_	_
+23	að	að	PART	TO	_	24	mark	_	_
+24	kjósa	kjósa	VERB	VB	VerbForm=Inf	21	obl	_	_
+25	Framsókn	framsókn	PROPN	NPR-A	_	24	obj	_	_
+26	með	með	ADP	P	_	28	case	_	_
+27	fullri	fullur	ADJ	ADJ-D	Case=Dat|Degree=Pos	28	amod	_	_
+28	virðingu	virðing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
+29	,	,	PUNCT	,	_	28	punct	_	_
+30	og	og	CCONJ	CONJ	_	31	cc	_	_
+31	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+32	ekki	ekki	ADV	NEG	_	31	advmod	_	_
+33	hvers	hver	PRON	WPRO-G	Case=Gen	35	obl	_	_
+34	vegna	vegna	ADP	P	_	33	case	_	_
+35	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	31	xcomp	_	_
+36	mínar	minn	PRON	PRO-A	Case=Acc	37	nmod:poss	_	_
+37	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	35	obj	_	_
+38	til	til	ADP	P	_	40	case	_	_
+39	að	að	PART	TO	_	40	advcl	_	_
+40	laga	laga	VERB	VB	VerbForm=Inf	35	obl	_	_
+41	skuldavanda	skuldavandur	PROPN	NPRS-A	_	40	obj	_	_
+42	annarra	annar	PRON	OTHER-G	Case=Gen	41	nmod:poss	_	_
+43	sem	sem	SCONJ	C	_	45	mark	_	_
+44	þó	þó	ADV	ADV	Degree=Pos	45	advmod	_	_
+45	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	42	acl:relcl	_	_
+46	um	um	ADP	P	_	47	case	_	_
+47	sárt	sár	ADJ	ADJ-A	Case=Acc|Degree=Pos	45	obl	_	_
+48	að	að	PART	TO	_	49	mark	_	_
+49	binda	binda	VERB	VB	VerbForm=Inf	45	acl	_	SpaceAfter=No
+50	.	.	PUNCT	.	_	49	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4901642,.5
+# X_ID = ID_MISSING
+# text = Þá langar mig að spyrja: Það er ekkert sem bannar Hagstofunni að fara vægari leiðir.
+1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	spyrja	spyrja	VERB	VB	VerbForm=Inf	2	acl	_	SpaceAfter=No
+6	:	:	PUNCT	,	_	5	punct	_	_
+7	Það	það	PRON	PRO-N	Case=Nom	5	ccomp	_	_
+8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
+9	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	7	xcomp	_	_
+10	sem	sem	SCONJ	C	_	11	mark	_	_
+11	bannar	banna	VERB	VBPI	Mood=Ind|Tense=Pres	7	acl:relcl	_	_
+12	Hagstofunni	hagstofa	PROPN	NPR-D	_	11	iobj	_	_
+13	að	að	PART	TO	_	14	mark	_	_
+14	fara	fara	VERB	VB	VerbForm=Inf	11	acl	_	_
+15	vægari	vægur	ADJ	ADJR-A	Case=Acc|Degree=Cmp	16	amod	_	_
+16	leiðir	leið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obj	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4901642,.6
+# X_ID = ID_MISSING
+# text = Telur hv. þingmaður að Hagstofan muni fara vægari leiðir en að safna öllum upplýsingum sem Hagstofan getur?
+1	Telur	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
+3	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
+4	að	að	SCONJ	C	_	7	mark	_	_
+5	Hagstofan	hagstofa	PROPN	NPR-N	_	7	nsubj	_	_
+6	muni	munu	AUX	MDPS	Mood=Sub|Tense=Pres	7	aux	_	_
+7	fara	fara	VERB	VB	VerbForm=Inf	1	ccomp	_	_
+8	vægari	vægur	ADJ	ADJR-A	Case=Acc|Degree=Cmp	9	amod	_	_
+9	leiðir	leið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	_
+10	en	en	ADP	P	_	12	case	_	_
+11	að	að	PART	TO	_	12	mark	_	_
+12	safna	safna	VERB	VB	VerbForm=Inf	9	obl	_	_
+13	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	14	amod	_	_
+14	upplýsingum	upplýsing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obj	_	_
+15	sem	sem	SCONJ	C	_	17	mark	_	_
+16	Hagstofan	hagstofa	PROPN	NPR-N	_	17	nsubj	_	_
+17	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	14	acl:relcl	_	SpaceAfter=No
+18	?	?	PUNCT	.	_	17	punct	_	_
+

@@ -1,0 +1,103 @@
+# sent_id = RUV_ESP_2016_G-2-1036705.SANITY,.1
+# X_ID = ID_MISSING
+# text = Knattspyrnusamband Íslands hefur ákveðið að færa leiki í 8 liða úrslitum bikarkeppni karla í fótbolta sem átti að spila klukkan fjögur á sunnudag vegna leiks Íslands og Frakklands í 8 liða úrslitum EM.
+1	Knattspyrnusamband	knattspyrnusamband	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+2	Íslands	ísland	PROPN	NPR-G	_	1	nmod:poss	_	_
+3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
+4	ákveðið	ákveða	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	færa	færa	VERB	VB	VerbForm=Inf	4	acl	_	_
+7	leiki	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
+8	í	í	ADP	P	_	11	case	_	_
+9	8	átta	NUM	NUM-G	Case=Gen	10	nummod	_	_
+10	liða	liða	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	nmod:poss	_	_
+11	úrslitum	úrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	_
+12	bikarkeppni	bikarkeppni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	nmod:poss	_	_
+13	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	nmod:poss	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+16	sem	sem	SCONJ	C	_	17	mark	_	_
+17	átti	eiga	VERB	VBDI	Mood=Ind|Tense=Past	7	acl:relcl	_	_
+18	að	að	PART	TO	_	19	mark	_	_
+19	spila	spila	VERB	VB	VerbForm=Inf	17	acl	_	_
+20	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	acl	_	_
+21	fjögur	fjögur	NUM	NUM-N	Case=Nom	20	xcomp	_	_
+22	á	á	ADP	P	_	23	case	_	_
+23	sunnudag	sunnudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	_
+24	vegna	vegna	ADP	P	_	25	case	_	_
+25	leiks	leikur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	obl	_	_
+26	Íslands	ísland	PROPN	NPR-G	_	25	nmod:poss	_	_
+27	og	og	CCONJ	CONJ	_	26	cc	_	_
+28	Frakklands	frakkland	PROPN	NPR-G	_	26	dep	_	_
+29	í	í	ADP	P	_	32	case	_	_
+30	8	átta	NUM	NUM-G	Case=Gen	31	nummod	_	_
+31	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	32	nmod:poss	_	_
+32	úrslitum	úrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
+33	EM	em	PROPN	NPR-G	_	32	nmod:poss	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	33	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1036705.SANITY,.2
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Þrír leikir voru á dagskrá klukkan fjögur á sunnudaginn en þeir hafa allir verið færðir til vegna landsleiksins sem hefst klukkan sjö.
+1	Þrír	þrír	NUM	NUM-N	Case=Nom	2	nummod	_	_
+2	leikir	leikur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
+3	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	dagskrá	dagskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
+6	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	acl	_	_
+7	fjögur	fjögur	NUM	NUM-N	Case=Nom	6	xcomp	_	_
+8	á	á	ADP	P	_	9	case	_	_
+9	sunnudaginn	sunnudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+10	en	en	CCONJ	CONJ	_	15	cc	_	_
+11	þeir	hann	PRON	PRO-N	Case=Nom	15	nsubj	_	_
+12	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	15	aux	_	_
+13	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	15	amod	_	_
+14	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	15	cop	_	_
+15	færðir	færa	VERB	VAN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
+16	til	til	ADP	RP	_	15	compound:prt	_	_
+17	vegna	vegna	ADP	P	_	18	case	_	_
+18	landsleiksins	landsleikur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	15	obl	_	_
+19	sem	sem	SCONJ	C	_	20	mark	_	_
+20	hefst	hefja	VERB	VBPI	Mood=Ind|Tense=Pres	18	acl:relcl	_	_
+21	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	advcl	_	_
+22	sjö	sjö	NUM	NUM-N	Case=Nom	21	xcomp	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	22	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1036705.SANITY,.3
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Leikir Breiðabliks og ÍBV og Vals og Fylkis verða klukkan tvö og leikur Fram og Selfoss var færður fram á þriðjudag.
+1	Leikir	leikur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
+2	Breiðabliks	breiðablik	PROPN	NPR-G	_	1	nmod:poss	_	_
+3	og	og	CCONJ	CONJ	_	2	cc	_	_
+4	ÍBV	íbv	PROPN	NPR-G	_	2	dep	_	_
+5	og	og	CCONJ	CONJ	_	6	cc	_	_
+6	Vals	valur	PROPN	NPR-G	_	2	conj	_	_
+7	og	og	CCONJ	CONJ	_	6	cc	_	_
+8	Fylkis	fylkir	PROPN	NPR-G	_	6	dep	_	_
+9	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+10	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	advcl	_	_
+11	tvö	tvö	NUM	NUM-N	Case=Nom	10	xcomp	_	_
+12	og	og	CCONJ	CONJ	_	18	cc	_	_
+13	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
+14	Fram	fram	PROPN	NPR-G	_	13	nmod:poss	_	_
+15	og	og	CCONJ	CONJ	_	14	cc	_	_
+16	Selfoss	selfoss	PROPN	NPR-G	_	14	dep	_	_
+17	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	18	cop	_	_
+18	færður	færa	VERB	VAN	Tense=Past|VerbForm=Part	9	conj	_	OriginalHead=0
+19	fram	fram	ADP	RP	_	21	compound:prt	_	_
+20	á	á	ADP	P	_	21	case	_	_
+21	þriðjudag	þriðjudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	21	punct	_	_
+
+# sent_id = RUV_ESP_2016_G-2-1036705.SANITY,.4
+# X_ID = ID_MISSING
+# text = 8 liða úrslitin líta þá svona út:
+1	8	átta	NUM	NUM-G	Case=Gen	2	nummod	_	_
+2	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	nmod:poss	_	_
+3	úrslitin	úrslit	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
+4	líta	líta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+5	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
+6	svona	svona	ADV	ADV	Degree=Pos	4	advmod	_	_
+7	út	út	ADP	RP	_	4	compound:prt	_	SpaceAfter=No
+8	:	:	PUNCT	.	_	7	punct	_	_
+

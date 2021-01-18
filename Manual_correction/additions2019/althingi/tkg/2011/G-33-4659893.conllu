@@ -1,0 +1,204 @@
+# sent_id = ALTHINGI_TKG_2011_G-33-4659893,.1
+# X_ID = ID_MISSING
+# text = Herra forseti. Já, ég er sammála því sem hv. þm. Sigmundur Davíð Gunnlaugsson sagði í svari sínu.
+1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	vocative	_	_
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	_
+4	Já	já	INTJ	INTJ	_	8	discourse	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+8	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+9	því	sá	DET	D-D	Case=Dat|PronType=Art	8	obl	_	_
+10	sem	sem	SCONJ	C	_	16	mark	_	_
+11	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
+12	þm.	þingmaður	PROPN	NPR-N	_	16	nsubj	_	_
+13	Sigmundur	sigmundur	PROPN	NPR-N	_	12	flat:name	_	_
+14	Davíð	davíð	PROPN	NPR-N	_	12	dep	_	_
+15	Gunnlaugsson	gunnlaugsson	PROPN	NPR-N	_	12	dep	_	_
+16	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	9	acl:relcl	_	_
+17	í	í	ADP	P	_	18	case	_	_
+18	svari	svar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
+19	sínu	sinn	PRON	PRO-D	Case=Dat	18	nmod:poss	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4659893,.2
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Ég held nákvæmlega að þetta sé málið, ég held að það sé styttra á milli manna en menn halda eða reynt er að telja mönnum trú um.
+1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	nákvæmlega	nákvæmlega	ADV	ADV	Degree=Pos	7	advmod	_	_
+4	að	að	SCONJ	C	_	7	mark	_	_
+5	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	7	nsubj	_	_
+6	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	7	cop	_	_
+7	málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	ég	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
+10	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+11	að	að	SCONJ	C	_	14	mark	_	_
+12	það	það	PRON	PRO-N	Case=Nom	14	nsubj	_	_
+13	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	14	cop	_	_
+14	styttra	stuttur	ADJ	ADJS-N	Case=Nom|Degree=Sup	10	ccomp	_	_
+15	á	á	ADP	P	_	17	case	_	_
+16	milli	milli	ADP	P	_	17	case	_	_
+17	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	obl	_	_
+18	en	en	CCONJ	CONJ	_	20	cc	_	_
+19	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	20	nsubj	_	_
+20	halda	halda	VERB	VBPI	Mood=Ind|Tense=Pres	14	obl	_	_
+21	eða	eða	CCONJ	CONJ	_	22	cc	_	_
+22	reynt	reyna	VERB	VAN	Tense=Past|VerbForm=Part	20	conj	_	_
+23	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
+24	að	að	PART	TO	_	25	mark	_	_
+25	telja	telja	VERB	VB	VerbForm=Inf	22	xcomp	_	_
+26	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	25	iobj	_	_
+27	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obj	_	_
+28	um	um	ADP	P	_	25	obl	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	28	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4659893,.3
+# X_ID = ID_MISSING
+# text = Niðurstaða sáttanefndarinnar liggur alveg ljós fyrir.
+1	Niðurstaða	niðurstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+2	sáttanefndarinnar	sáttanefnd	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	nmod:poss	_	_
+3	liggur	liggja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	alveg	alveg	ADV	ADV	Degree=Pos	3	amod	_	_
+5	ljós	ljós	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	conj	_	_
+6	fyrir	fyrir	ADP	RP	_	3	compound:prt	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4659893,.4
+# X_ID = ID_MISSING
+# text = Ef menn hafa hlustað á ræður hv. þingmanna í stjórnarliðinu eins og hv. þm. Magnúsar Orra Schrams fyrr í dag held ég að það sé raunverulega möguleiki á að reyna að skapa þessa eftirsóknarverðu sátt ef menn leggja sig fram.
+1	Ef	ef	ADP	P	_	4	case	_	_
+2	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
+3	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
+4	hlustað	hlusta	VERB	VBN	Tense=Past|VerbForm=Part	21	obl	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	ræður	ræða	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
+7	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	8	amod	_	_
+8	þingmanna	þingmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	nmod:poss	_	_
+9	í	í	ADP	P	_	10	case	_	_
+10	stjórnarliðinu	stjórnarlið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+11	eins	_	ADV	ADVR	Degree=Cmp	4	advmod	_	_
+12	og	_	ADP	P	_	13	case	_	_
+13	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	11	obl	_	_
+14	þm.	þingmaður	PROPN	NPR-G	_	13	obl	_	_
+15	Magnúsar	magnús	PROPN	NPR-G	_	14	flat:name	_	_
+16	Orra	orri	PROPN	NPR-G	_	14	dep	_	_
+17	Schrams	schram	PROPN	NPR-G	_	14	dep	_	_
+18	fyrr	snemmt	ADV	ADVR	Degree=Cmp	20	advmod	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+21	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+22	ég	ég	PRON	PRO-N	Case=Nom	21	nsubj	_	_
+23	að	að	SCONJ	C	_	30	mark	_	_
+24	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	30	expl	_	_
+25	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	30	cop	_	_
+26	raunverulega	raunverulega	ADV	ADV	Degree=Pos	30	advmod	_	_
+27	möguleiki	möguleiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	30	obl	_	_
+28	á	á	ADP	P	_	30	case	_	_
+29	að	að	PART	TO	_	30	mark	_	_
+30	reyna	reyna	VERB	VB	VerbForm=Inf	21	ccomp	_	_
+31	að	að	PART	TO	_	32	mark	_	_
+32	skapa	skapa	VERB	VB	VerbForm=Inf	30	acl	_	_
+33	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	35	det	_	_
+34	eftirsóknarverðu	eftirsóknarverður	ADJ	ADJ-A	Case=Acc|Degree=Pos	35	amod	_	_
+35	sátt	sátt	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	32	obj	_	_
+36	ef	ef	ADP	P	_	38	case	_	_
+37	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	38	nsubj	_	_
+38	leggja	leggja	VERB	VBPI	Mood=Ind|Tense=Pres	30	obl	_	_
+39	sig	sig	PRON	PRO-A	Case=Acc	38	obj	_	_
+40	fram	fram	ADP	RP	_	38	compound:prt	_	SpaceAfter=No
+41	.	.	PUNCT	.	_	40	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4659893,.5
+# X_ID = ID_MISSING
+# text = Ég tel einfaldlega að ríkisstjórnin hafi með framlagningu þessara frumvarpa, þar sem hún setur allt upp í loft, ekki lagt sig nægilega fram, síst með tilliti til þess hver hinn raunverulegi vilji er innan stjórnarliðsins.
+1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	að	að	SCONJ	C	_	22	mark	_	_
+5	ríkisstjórnin	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	nsubj	_	_
+6	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	22	aux	_	_
+7	með	með	ADP	P	_	8	case	_	_
+8	framlagningu	framlagning	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
+9	þessara	þessi	DET	D-G	Case=Gen|PronType=Art	10	det	_	_
+10	frumvarpa	frumvarp	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	þar	þar	ADV	ADV	Degree=Pos	15	advmod	_	_
+13	sem	sem	SCONJ	C	_	15	mark	_	_
+14	hún	hún	PRON	PRO-N	Case=Nom	15	nsubj	_	_
+15	setur	setja	VERB	VBPI	Mood=Ind|Tense=Pres	10	acl:relcl	_	_
+16	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	15	obj	_	_
+17	upp	upp	ADP	RP	_	19	compound:prt	_	_
+18	í	í	ADP	P	_	19	case	_	_
+19	loft	loft	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	22	punct	_	_
+21	ekki	ekki	ADV	NEG	_	22	advmod	_	_
+22	lagt	leggja	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
+23	sig	sig	PRON	PRO-A	Case=Acc	22	obj	_	_
+24	nægilega	nægilega	ADV	ADV	Degree=Pos	22	advmod	_	_
+25	fram	fram	ADP	RP	_	22	compound:prt	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	síst	varla	ADV	ADVS	Degree=Sup	22	advmod	_	_
+28	með	með	ADP	P	_	29	case	_	_
+29	tilliti	tillit	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
+30	til	til	ADP	P	_	31	case	_	_
+31	þess	það	PRON	PRO-G	Case=Gen	29	obl	_	_
+32	hver	hver	PRON	WPRO-N	Case=Nom	38	obj	_	_
+33	hinn	hinn	DET	D-N	Case=Nom|PronType=Art	35	det	_	_
+34	raunverulegi	raunverulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	35	amod	_	_
+35	vilji	vilji	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	38	nsubj	_	_
+36	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	38	cop	_	_
+37	innan	innan	ADP	P	_	38	case	_	_
+38	stjórnarliðsins	stjórnarliður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	31	ccomp	_	SpaceAfter=No
+39	.	.	PUNCT	.	_	38	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4659893,.6
+# X_ID = ID_MISSING
+# text = Hinn raunverulegi vilji innan stjórnarliðsins er einfaldlega bara tvist og bast.
+1	Hinn	hinn	DET	D-N	Case=Nom|PronType=Art	3	det	_	_
+2	raunverulegi	raunverulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
+3	vilji	vilji	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+4	innan	innan	ADP	P	_	5	case	_	_
+5	stjórnarliðsins	stjórnarliður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	obl	_	_
+6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+7	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	3	advmod	_	_
+8	bara	bara	ADV	FP	Degree=Pos	3	advmod	_	_
+9	tvist	tvistur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
+10	og	og	CCONJ	CONJ	_	9	cc	_	_
+11	bast	bast	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	conj	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	11	punct	_	_
+
+# sent_id = ALTHINGI_TKG_2011_G-33-4659893,.7
+# X_ID = ID_MISSING
+# text = Það er engin eining um þessi mál Forseti hringir. sem við höfum hér til umræðu, hvort sem það er hið svokallaða litla eða stóra frumvarp.
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
+3	engin	enginn	DET	Q-N	Case=Nom|Degree=Pos	4	amod	_	_
+4	eining	eining	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	obl	_	_
+5	um	um	ADP	P	_	7	case	_	_
+6	þessi	þessi	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
+7	mál	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
+8	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
+9	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	7	dep	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	9	punct	_	_
+11	sem	sem	SCONJ	C	_	13	mark	_	_
+12	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+13	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	7	acl:relcl	_	_
+14	hér	hér	ADV	ADV	Degree=Pos	13	ccomp	_	_
+15	til	til	ADP	P	_	16	case	_	_
+16	umræðu	umræða	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	hvort	hvort	SCONJ	WQ	_	27	mark	_	_
+19	sem	sem	SCONJ	C	_	18	fixed	_	_
+20	það	það	PRON	PRO-N	Case=Nom	27	nsubj	_	_
+21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
+22	hið	hinn	DET	D-N	Case=Nom|PronType=Art	27	det	_	_
+23	svokallaða	svokalla	VERB	VAN	Tense=Past|VerbForm=Part	27	acl	_	_
+24	litla	lítill	ADJ	ADJ-N	Case=Nom|Degree=Pos	27	amod	_	_
+25	eða	eða	CCONJ	CONJ	_	24	amod	_	_
+26	stóra	stór	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	amod	_	_
+27	frumvarp	frumvarp	ADV	N-N	Case=Nom|Definite=Ind|Number=Sing	1	advmod	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	27	punct	_	_
+

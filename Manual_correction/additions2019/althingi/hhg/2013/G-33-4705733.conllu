@@ -1,0 +1,42 @@
+# sent_id = ALTHINGI_HHG_2013_G-33-4705733,.1
+# X_IDs = ID_MISSING ; ID_MISSING
+# text = Hv. þm. Össur Skarphéðinsson er mjög sannfærandi eins og venjulega og ég kýs að vera sammála honum.
+1	Hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+2	þm.	þingmaður	PROPN	NPR-N	_	7	nsubj	_	_
+3	Össur	össur	PROPN	NPR-N	_	2	flat:name	_	_
+4	Skarphéðinsson	skarphéðinsson	PROPN	NPR-N	_	2	dep	_	_
+5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
+6	mjög	mjög	ADV	ADV	Degree=Pos	7	amod	_	_
+7	sannfærandi	sannfærandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+8	eins	_	ADV	ADVR	Degree=Cmp	7	advmod	_	_
+9	og	_	ADP	P	_	10	case	_	_
+10	venjulega	venjulega	ADV	ADV	Degree=Pos	8	obl	_	_
+11	og	og	CCONJ	CONJ	_	13	cc	_	_
+12	ég	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+13	kýs	kjósa	VERB	VBPI	Mood=Ind|Tense=Pres	7	conj	_	OriginalHead=0
+14	að	að	PART	TO	_	16	mark	_	_
+15	vera	vera	AUX	BE	VerbForm=Inf	16	cop	_	_
+16	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	acl	_	_
+17	honum	hann	PRON	PRO-D	Case=Dat	16	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	17	punct	_	_
+
+# sent_id = ALTHINGI_HHG_2013_G-33-4705733,.2
+# X_ID = ID_MISSING
+# text = Ég biðst afsökunar á því að hafa vænt ríkisstjórnina um einhver óheilindi í þessum efnum.
+1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	biðst	biðja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	afsökunar	afsökun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obj	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
+6	að	að	PART	TO	_	8	mark	_	_
+7	hafa	hafa	AUX	HV	VerbForm=Inf	8	aux	_	_
+8	vænt	væna	VERB	VBN	Tense=Past|VerbForm=Part	5	acl	_	_
+9	ríkisstjórnina	ríkisstjórn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	_
+10	um	um	ADP	P	_	12	case	_	_
+11	einhver	einhver	DET	Q-A	Case=Acc|Degree=Pos	12	amod	_	_
+12	óheilindi	óheilindi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obl	_	_
+13	í	í	ADP	P	_	15	case	_	_
+14	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	15	det	_	_
+15	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	_
+
