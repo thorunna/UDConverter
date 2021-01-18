@@ -1219,9 +1219,11 @@ class Converter():
 
         for address, node in self.dg.nodes.items():
             if node['rel'] == 'case' and self.dg.get_by_address(address+1)['head'] == address and self.dg.get_by_address(address+2)['head'] == address:
-                #self.dg.get_by_address(address).update({'rel': 'fixed'})
-                self.dg.get_by_address(address+1).update({'rel': 'fixed'})
-                self.dg.get_by_address(address+2).update({'rel': 'fixed'})
+                if node['lemma'] == 'frá' and self.dg.get_by_address(address+2) == 'með':
+                    print('halló')
+                    #self.dg.get_by_address(address).update({'rel': 'fixed'})
+                    self.dg.get_by_address(address+1).update({'rel': 'fixed'})
+                    self.dg.get_by_address(address+2).update({'rel': 'fixed'})
 
     def create_dependency_graph(self, tree):
         """Create a dependency graph from a phrase structure tree.
@@ -1511,6 +1513,13 @@ class Converter():
         # self._features()
 
         # NOTE: Here call method to fix dependency graph if needed?
+        if self.dg.num_roots() != 1:
+
+            # # DEBUG:
+            # print(self.dg.to_conllU())
+            # input()
+
+            self._fix_root_relation()
 
         # for address, node in self.dg.nodes.items():
         #     if node['rel'] in {'aux', 'aux:pass'} and node['tag'] != 'AUX':
@@ -1569,8 +1578,8 @@ class Converter():
             self._fix_punct_heads()
         if rel_counts['dep'] > 0:
             self._fix_dep_rel()
-        if rel_counts['case'] > 0:
-            self._fix_case_rel()
+        #if rel_counts['case'] > 0:
+        #    self._fix_case_rel()
 
         if self.dg.num_roots() != 1:
 
