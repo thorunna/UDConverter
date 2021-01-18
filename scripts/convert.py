@@ -216,11 +216,21 @@ def main():
         with open(output_path, 'w') if args.output else stdout as outfile:
             # open file if writing to output, else to stdout, either way called
             # 'outfile' in below code
+            
+            # counter set for missing tree IDs in corpus  
+            missing_id_counter = 0
+            
             for tree in CORPUS.parsed_sents(file_id):
+                # counter for missing IDs incremented for every tree in corpus
+                missing_id_counter +=1
                 # Catch error in corpus where ? token is missing (IcePaHC specific)
                 tree = fix_IcePaHC_tree_errors(tree)
                 # Tree static variable defined, code nodes and some traces removed
                 TREE = tree.remove_nodes(tags=['CODE'], trace=True)
+                
+                # Tree ID created if missing
+                if not TREE.corpus_id:
+                    TREE.corpus_id = 'ID_missing_'+str(missing_id_counter)
 
                 dep = c.create_dependency_graph(TREE)
                 
@@ -347,11 +357,23 @@ def main():
                 output_path = os.path.join('../CoNLLU/icepahc/', output_file) if output_file else None
 
             with open(output_path, 'w') if args.output else stdout as outfile:
+
+                # counter set for missing tree IDs in corpus
+                missing_id_counter = 0
+
                 for tree in CORPUS.parsed_sents(file_id):
+
+                    # counter for missing IDs incremented for every tree in corpus
+                    missing_id_counter += 1
+                    
                     # Catch error in corpus where ? token is missing
                     tree = fix_IcePaHC_tree_errors(tree)
                     
                     TREE = tree.remove_nodes(tags=['CODE'], trace=True)
+
+                    # Tree ID created if missing
+                    if not TREE.corpus_id:
+                        TREE.corpus_id = 'ID_missing_'+str(missing_id_counter)
 
                     dep = c.create_dependency_graph(TREE)
 
