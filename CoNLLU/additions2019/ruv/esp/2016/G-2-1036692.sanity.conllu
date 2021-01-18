@@ -1,286 +1,286 @@
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.1
-# X_ID = ID_MISSING
+# X_ID = ID_missing_1
 # text = Magnús Sigurbjörnsson fylgdi íslenska karlalandsliðinu í fótbolta til Króatíu, Tékklands og Hollands í undankeppni Evrópumótsins.
-1	Magnús	magnús	PROPN	NPR-N	_	3	nsubj	_	_
-2	Sigurbjörnsson	sigurbjörnsson	PROPN	NPR-N	_	1	flat:name	_	_
-3	fylgdi	fylgja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	íslenska	íslenskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
-5	karlalandsliðinu	karlalandslið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obj	_	_
-6	í	í	ADP	P	_	7	case	_	_
-7	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
-8	til	til	ADP	P	_	9	case	_	_
-9	Króatíu	króatía	PROPN	NPR-G	_	3	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	Tékklands	tékkland	PROPN	NPR-G	_	9	dep	_	_
-12	og	og	CCONJ	CONJ	_	9	cc	_	_
-13	Hollands	holland	PROPN	NPR-G	_	9	dep	_	_
-14	í	í	ADP	P	_	15	case	_	_
-15	undankeppni	undankeppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
-16	Evrópumótsins	evrópumót	PROPN	NPR-G	_	15	nmod:poss	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	16	punct	_	_
+1	Magnús	magnús	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	3	nsubj	_	IFD_tag=nken-s
+2	Sigurbjörnsson	sigurbjörnsson	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	flat:name	_	IFD_tag=nken-s
+3	fylgdi	fylgja	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
+4	íslenska	íslenskur	ADJ	ADJ-D	Case=Dat|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	5	amod	_	IFD_tag=lheþvf
+5	karlalandsliðinu	karlalandslið	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	3	obj	_	IFD_tag=nheþg
+6	í	í	ADP	P	_	7	case	_	IFD_tag=aþ
+7	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	5	obl	_	IFD_tag=nkeþ
+8	til	til	ADP	P	_	9	case	_	IFD_tag=ae
+9	Króatíu	króatía	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	3	obl	_	IFD_tag=nvee-s|SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	IFD_tag=,
+11	Tékklands	tékkland	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	9	dep	_	IFD_tag=nhee-s
+12	og	og	CCONJ	CONJ	_	9	cc	_	IFD_tag=c
+13	Hollands	holland	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	9	dep	_	IFD_tag=nhee-s
+14	í	í	ADP	P	_	15	case	_	IFD_tag=aþ
+15	undankeppni	undankeppni	NOUN	N-A	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	3	obl	_	IFD_tag=nveþ
+16	Evrópumótsins	evrópumót	PROPN	NPR-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	15	nmod:poss	_	IFD_tag=nheegs|SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.2
-# X_ID = ID_MISSING
+# X_ID = ID_missing_2
 # text = Það kom því ekki annað til greina en að fylgja því áfram þegar sætið í lokamótinu var tryggt.
-1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
-2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
-4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
-5	annað	annar	PRON	OTHER-N	Case=Nom	2	obl	_	_
-6	til	til	ADP	P	_	7	case	_	_
-7	greina	grein	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	obl	_	_
-8	en	en	ADP	P	_	9	case	_	_
-9	að	að	PART	TO	_	2	obl	_	_
-10	fylgja	fylgja	VERB	VB	VerbForm=Inf	9	conj	_	_
-11	því	það	PRON	PRO-D	Case=Dat	10	obj	_	_
-12	áfram	áfram	ADV	ADV	Degree=Pos	10	advmod	_	_
-13	þegar	þegar	ADP	P	_	14	case	_	_
-14	sætið	sæti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	obl	_	_
-15	í	í	ADP	P	_	16	case	_	_
-16	lokamótinu	lokamót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
-17	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	14	cop	_	_
-18	tryggt	tryggja	VERB	VAN	Tense=Past|VerbForm=Part	14	acl	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	18	punct	_	_
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	2	expl	_	IFD_tag=fphen
+2	kom	koma	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
+3	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	2	obl	_	IFD_tag=fpheþ
+4	ekki	ekki	ADV	NEG	_	2	advmod	_	IFD_tag=aa
+5	annað	annar	PRON	OTHER-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	2	obl	_	IFD_tag=fohen
+6	til	til	ADP	P	_	7	case	_	IFD_tag=ae
+7	greina	grein	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Plur	2	obl	_	IFD_tag=nvfe
+8	en	en	ADP	P	_	9	case	_	IFD_tag=c
+9	að	að	PART	TO	_	2	obl	_	IFD_tag=cn
+10	fylgja	fylgja	VERB	VB	VerbForm=Inf|Voice=Act	9	conj	_	IFD_tag=sng
+11	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	10	obj	_	IFD_tag=fpheþ
+12	áfram	áfram	ADV	ADV	_	10	advmod	_	IFD_tag=aa
+13	þegar	þegar	ADP	P	_	14	case	_	IFD_tag=c
+14	sætið	sæti	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	2	obl	_	IFD_tag=nheng
+15	í	í	ADP	P	_	16	case	_	IFD_tag=aþ
+16	lokamótinu	lokamót	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	14	obl	_	IFD_tag=nheþg
+17	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	cop	_	IFD_tag=sfg3eþ
+18	tryggt	tryggja	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	14	acl	_	IFD_tag=sþghen|SpaceAfter=No
+19	.	.	PUNCT	.	_	18	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.3
-# X_ID = ID_MISSING
+# X_ID = ID_missing_3
 # text = Magnús ákvað að bóka aðeins flugið út og kaupa svokallaðan„ follow your team“ pakka sem inniheldur miða á alla leiki liðsins á mótinu, hversu margir sem þeir kunna að verða.
-1	Magnús	magnús	PROPN	NPR-N	_	2	nsubj	_	_
-2	ákvað	ákveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	að	að	PART	TO	_	4	mark	_	_
-4	bóka	bóka	VERB	VB	VerbForm=Inf	2	acl	_	_
-5	aðeins	aðeins	ADV	FP	Degree=Pos	4	advmod	_	_
-6	flugið	flug	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
-7	út	út	ADV	ADV	Degree=Pos	6	advmod	_	_
-8	og	og	CCONJ	CONJ	_	9	cc	_	_
-9	kaupa	kaupa	VERB	VB	VerbForm=Inf	4	acl	_	_
-10	svokallaðan	svokallaður	ADJ	ADJ-A	Case=Acc|Degree=Pos	16	amod	_	SpaceAfter=No
-11	„	„	PUNCT	"	_	10	punct	_	_
-12	follow	follow	X	FW	Foreign=Yes	16	dep	_	_
-13	your	your	X	FW	Foreign=Yes	12	flat:foreign	_	_
-14	team	team	X	FW	Foreign=Yes	12	flat:foreign	_	SpaceAfter=No
-15	“	“	PUNCT	"	_	14	punct	_	_
-16	pakka	pakki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
-17	sem	sem	SCONJ	C	_	18	mark	_	_
-18	inniheldur	innihalda	VERB	VBPI	Mood=Ind|Tense=Pres	16	acl:relcl	_	_
-19	miða	miði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	obj	_	_
-20	á	á	ADP	P	_	22	case	_	_
-21	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	22	amod	_	_
-22	leiki	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obl	_	_
-23	liðsins	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	nmod:poss	_	_
-24	á	á	ADP	P	_	25	case	_	_
-25	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	25	punct	_	_
-27	hversu	hversu	ADV	WADV	Degree=Pos	31	amod	_	_
-28	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	27	amod	_	_
-29	sem	sem	SCONJ	C	_	31	mark	_	_
-30	þeir	hann	PRON	PRO-N	Case=Nom	31	nsubj	_	_
-31	kunna	kunna	ADV	VBPI	Mood=Ind|Tense=Pres	18	advmod	_	_
-32	að	að	PART	TO	_	31	acl	_	_
-33	verða	verða	AUX	RD	VerbForm=Inf	32	aux	_	SpaceAfter=No
-34	.	.	PUNCT	.	_	33	punct	_	_
+1	Magnús	magnús	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nsubj	_	IFD_tag=nken-s
+2	ákvað	ákveða	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
+3	að	að	PART	TO	_	4	mark	_	IFD_tag=cn
+4	bóka	bóka	VERB	VB	VerbForm=Inf|Voice=Act	2	acl	_	IFD_tag=sng
+5	aðeins	aðeins	ADV	FP	_	4	advmod	_	IFD_tag=aa
+6	flugið	flug	NOUN	N-A	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	4	obj	_	IFD_tag=nheog
+7	út	út	ADV	ADV	_	6	advmod	_	IFD_tag=aa
+8	og	og	CCONJ	CONJ	_	9	cc	_	IFD_tag=c
+9	kaupa	kaupa	VERB	VB	VerbForm=Inf|Voice=Act	4	acl	_	IFD_tag=sng
+10	svokallaðan	svokallaður	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	16	amod	_	IFD_tag=lkeosf|SpaceAfter=No
+11	„	„	PUNCT	"	_	10	punct	_	IFD_tag=„
+12	follow	follow	X	FW	Foreign=Yes	16	dep	_	IFD_tag=e
+13	your	your	X	FW	Foreign=Yes	12	flat:foreign	_	IFD_tag=e
+14	team	team	X	FW	Foreign=Yes	12	flat:foreign	_	IFD_tag=e|SpaceAfter=No
+15	“	“	PUNCT	"	_	14	punct	_	IFD_tag=“
+16	pakka	pakki	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	9	obj	_	IFD_tag=nkeo
+17	sem	sem	SCONJ	C	_	18	mark	_	IFD_tag=ct
+18	inniheldur	innihalda	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	acl:relcl	_	IFD_tag=sfg3en
+19	miða	miði	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	18	obj	_	IFD_tag=nkfo
+20	á	á	ADP	P	_	22	case	_	IFD_tag=aþ
+21	alla	allur	DET	Q-A	Case=Acc|Gender=Masc|Number=Plur|PronType=Ind	22	amod	_	IFD_tag=fokfo
+22	leiki	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	19	obl	_	IFD_tag=nkfo
+23	liðsins	lið	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	22	nmod:poss	_	IFD_tag=nheeg
+24	á	á	ADP	P	_	25	case	_	IFD_tag=aþ
+25	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	22	obl	_	IFD_tag=nheþg|SpaceAfter=No
+26	,	,	PUNCT	,	_	25	punct	_	IFD_tag=,
+27	hversu	hversu	ADV	WADV	_	31	amod	_	IFD_tag=aa
+28	margir	margur	DET	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	27	amod	_	IFD_tag=lkfnsf
+29	sem	sem	SCONJ	C	_	31	mark	_	IFD_tag=ct
+30	þeir	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Prs	31	nsubj	_	IFD_tag=fpkfn
+31	kunna	kunna	ADV	VBPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	advmod	_	IFD_tag=sfg3fn
+32	að	að	PART	TO	_	31	acl	_	IFD_tag=cn
+33	verða	verða	AUX	RD	VerbForm=Inf|Voice=Act	32	aux	_	IFD_tag=sng|SpaceAfter=No
+34	.	.	PUNCT	.	_	33	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.4
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_4 ; ID_missing_5
 # text = Um þúsund Íslendingar höfðu nægilega mikla trú á liðinu eða voru það bjartsýnir að fara þá leið og lentu því ekki í vandræðum með að fá miða eftir riðlakeppnina.
-1	Um	um	ADV	ADV	Degree=Pos	3	advmod	_	_
-2	þúsund	þúsund	NUM	NUM-N	Case=Nom	3	nummod	_	_
-3	Íslendingar	íslendingur	PROPN	NPRS-N	_	4	nsubj	_	_
-4	höfðu	hafa	VERB	HVDI	Mood=Ind|Tense=Past	0	root	_	_
-5	nægilega	nægilega	ADV	ADV	Degree=Pos	6	amod	_	_
-6	mikla	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
-7	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
-8	á	á	ADP	P	_	9	case	_	_
-9	liðinu	lið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-10	eða	eða	CCONJ	CONJ	_	13	cc	_	_
-11	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	13	cop	_	_
-12	það	það	PRON	PRO-A	Case=Acc	13	obl	_	_
-13	bjartsýnir	bjartsýnn	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	conj	_	_
-14	að	að	PART	TO	_	15	mark	_	_
-15	fara	fara	VERB	VB	VerbForm=Inf	13	amod	_	_
-16	þá	sá	DET	D-A	Case=Acc|PronType=Art	17	det	_	_
-17	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
-18	og	og	CCONJ	CONJ	_	19	cc	_	_
-19	lentu	lenda	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
-20	því	það	PRON	PRO-D	Case=Dat	19	obl	_	_
-21	ekki	ekki	ADV	NEG	_	19	advmod	_	_
-22	í	í	ADP	P	_	23	case	_	_
-23	vandræðum	vandræði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obl	_	_
-24	með	með	ADP	P	_	26	case	_	_
-25	að	að	PART	TO	_	26	mark	_	_
-26	fá	fá	VERB	VB	VerbForm=Inf	23	obl	_	_
-27	miða	miði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obj	_	_
-28	eftir	eftir	ADP	P	_	29	case	_	_
-29	riðlakeppnina	riðlakeppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	29	punct	_	_
+1	Um	um	ADV	ADV	_	3	advmod	_	IFD_tag=aa
+2	þúsund	þúsund	NUM	NUM-N	Case=Nom|Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	IFD_tag=tfkfn
+3	Íslendingar	íslendingur	PROPN	NPRS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	4	nsubj	_	IFD_tag=nkfn-s
+4	höfðu	hafa	VERB	HVDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fþ
+5	nægilega	nægilega	ADV	ADV	_	6	amod	_	IFD_tag=aa
+6	mikla	mikill	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	IFD_tag=lveosf
+7	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	4	obj	_	IFD_tag=nveo
+8	á	á	ADP	P	_	9	case	_	IFD_tag=aþ
+9	liðinu	lið	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	7	obl	_	IFD_tag=nheþg
+10	eða	eða	CCONJ	CONJ	_	13	cc	_	IFD_tag=c
+11	voru	vera	AUX	BEDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	cop	_	IFD_tag=sfg3fþ
+12	það	það	PRON	PRO-A	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	13	obl	_	IFD_tag=fphen
+13	bjartsýnir	bjartsýnn	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	4	conj	_	IFD_tag=lkfnsf
+14	að	að	PART	TO	_	15	mark	_	IFD_tag=cn
+15	fara	fara	VERB	VB	VerbForm=Inf|Voice=Act	13	amod	_	IFD_tag=sng
+16	þá	sá	DET	D-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	17	det	_	IFD_tag=faveo
+17	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	15	obl	_	IFD_tag=nveo
+18	og	og	CCONJ	CONJ	_	19	cc	_	IFD_tag=c
+19	lentu	lenda	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	OriginalHead=0
+20	því	það	PRON	PRO-D	_	19	obl	_	IFD_tag=aa
+21	ekki	ekki	ADV	NEG	_	19	advmod	_	IFD_tag=aa
+22	í	í	ADP	P	_	23	case	_	IFD_tag=aþ
+23	vandræðum	vandræði	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	19	obl	_	IFD_tag=nhfþ
+24	með	með	ADP	P	_	26	case	_	IFD_tag=ao
+25	að	að	PART	TO	_	26	mark	_	IFD_tag=cn
+26	fá	fá	VERB	VB	VerbForm=Inf|Voice=Act	23	obl	_	IFD_tag=sng
+27	miða	miði	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	26	obj	_	IFD_tag=nkeo
+28	eftir	eftir	ADP	P	_	29	case	_	IFD_tag=ao
+29	riðlakeppnina	riðlakeppni	NOUN	N-A	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	26	obl	_	IFD_tag=nveog|SpaceAfter=No
+30	.	.	PUNCT	.	_	29	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.5
-# X_ID = ID_MISSING
+# X_ID = ID_missing_6
 # text = „ Ég keypti bara miða út og var búinn að gera ráðstafanir fyrir riðlakeppnina.
-1	„	„	PUNCT	"	_	3	punct	_	_
-2	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	keypti	kaupa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	bara	bara	ADV	FP	Degree=Pos	3	advmod	_	_
-5	miða	miði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
-6	út	út	ADP	RP	_	3	compound:prt	_	_
-7	og	og	CCONJ	CONJ	_	3	cc	_	_
-8	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
-9	búinn	búa	VERB	VBN	Tense=Past|VerbForm=Part	3	dep	_	_
-10	að	að	PART	TO	_	11	mark	_	_
-11	gera	gera	VERB	DO	VerbForm=Inf	3	acl	_	_
-12	ráðstafanir	ráðstöfun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
-13	fyrir	fyrir	ADP	P	_	14	case	_	_
-14	riðlakeppnina	riðlakeppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	14	punct	_	_
+1	„	„	PUNCT	"	_	3	punct	_	IFD_tag=„
+2	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	IFD_tag=fp1en
+3	keypti	kaupa	VERB	VBDI	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1eþ
+4	bara	bara	ADV	FP	_	3	advmod	_	IFD_tag=aa
+5	miða	miði	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	3	obj	_	IFD_tag=nkeo
+6	út	út	ADP	RP	_	3	compound:prt	_	IFD_tag=aa
+7	og	og	CCONJ	CONJ	_	3	cc	_	IFD_tag=c
+8	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg1eþ
+9	búinn	búa	VERB	VBN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	3	dep	_	IFD_tag=lkensf
+10	að	að	PART	TO	_	11	mark	_	IFD_tag=cn
+11	gera	gera	VERB	DO	VerbForm=Inf|Voice=Act	3	acl	_	IFD_tag=sng
+12	ráðstafanir	ráðstöfun	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	11	obj	_	IFD_tag=nvfo
+13	fyrir	fyrir	ADP	P	_	14	case	_	IFD_tag=ao
+14	riðlakeppnina	riðlakeppni	NOUN	N-A	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	12	obl	_	IFD_tag=nveog|SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.6
-# X_ID = ID_MISSING
+# X_ID = ID_missing_7
 # text = Mann óraði svo aldrei fyrir hvernig þetta myndi fara.
-1	Mann	maður	PRON	MAN-A	_	2	nsubj	_	_
-2	óraði	óra	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	aldrei	aldrei	ADV	ADV	Degree=Pos	2	advmod	_	_
-5	fyrir	fyrir	ADP	P	_	9	case	_	_
-6	hvernig	hvernig	ADV	WADV	Degree=Pos	9	advmod	_	_
-7	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	9	nsubj	_	_
-8	myndi	munu	AUX	MDDS	Mood=Sub|Tense=Past	9	aux	_	_
-9	fara	fara	VERB	VB	VerbForm=Inf	2	obl	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	9	punct	_	_
+1	Mann	maður	PRON	MAN-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	nsubj	_	IFD_tag=nkeo
+2	óraði	óra	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
+3	svo	svo	ADV	ADV	_	2	advmod	_	IFD_tag=aa
+4	aldrei	aldrei	ADV	ADV	_	2	advmod	_	IFD_tag=aa
+5	fyrir	fyrir	ADP	P	_	9	case	_	IFD_tag=aa
+6	hvernig	hvernig	ADV	WADV	_	9	advmod	_	IFD_tag=aa
+7	þetta	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	9	nsubj	_	IFD_tag=fahen
+8	myndi	munu	AUX	MDDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	aux	_	IFD_tag=svg3eþ
+9	fara	fara	VERB	VB	VerbForm=Inf|Voice=Act	2	obl	_	IFD_tag=sng|SpaceAfter=No
+10	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.7
-# X_ID = ID_MISSING
+# X_ID = ID_missing_8
 # text = Þetta er búið að vera mikið ævintýri,“ segir Magnús og bætir við að strákarnir séu hvergi nærri hættir, Frakkland sé aðeins ný keila í vegi þeirra.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	búið	búa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-4	að	að	PART	TO	_	3	acl	_	_
-5	vera	vera	AUX	BE	VerbForm=Inf	4	cop	_	_
-6	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	7	amod	_	_
-7	ævintýri	ævintýri	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	xcomp	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	7	punct	_	SpaceAfter=No
-9	“	“	PUNCT	"	_	8	punct	_	_
-10	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	3	parataxis	_	_
-11	Magnús	magnús	PROPN	NPR-N	_	10	nsubj	_	_
-12	og	og	CCONJ	CONJ	_	13	cc	_	_
-13	bætir	bæta	VERB	VBPI	Mood=Ind|Tense=Pres	10	parataxis	_	_
-14	við	við	ADP	RP	_	13	compound:prt	_	_
-15	að	að	SCONJ	C	_	20	mark	_	_
-16	strákarnir	strákur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	20	nsubj	_	_
-17	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	20	cop	_	_
-18	hvergi	hvergi	ADV	ADV	Degree=Pos	20	advmod	_	_
-19	nærri	nærri	ADV	ADV	Degree=Pos	18	advmod	_	_
-20	hættir	hætta	VERB	VBN	Tense=Past|VerbForm=Part	13	ccomp	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	20	punct	_	_
-22	Frakkland	frakkland	PROPN	NPR-N	_	25	nsubj	_	_
-23	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	25	cop	_	_
-24	aðeins	aðeins	ADV	FP	Degree=Pos	25	advmod	_	_
-25	ný	nýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	conj	_	_
-26	keila	keila	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	conj	_	_
-27	í	í	ADP	P	_	28	case	_	_
-28	vegi	vegur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
-29	þeirra	það	PRON	PRO-G	Case=Gen	28	nmod:poss	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	29	punct	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	3	nsubj	_	IFD_tag=fahen
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3en
+3	búið	búa	VERB	VBN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	IFD_tag=lhensf
+4	að	að	PART	TO	_	3	acl	_	IFD_tag=c
+5	vera	vera	AUX	BE	VerbForm=Inf|Voice=Act	4	cop	_	IFD_tag=sng
+6	mikið	mikill	DET	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	7	amod	_	IFD_tag=lhensf
+7	ævintýri	ævintýri	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	4	xcomp	_	IFD_tag=nhen|SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	IFD_tag=,|SpaceAfter=No
+9	“	“	PUNCT	"	_	8	punct	_	IFD_tag=“
+10	segir	segja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	IFD_tag=sfg3en
+11	Magnús	magnús	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	10	nsubj	_	IFD_tag=nken-s
+12	og	og	CCONJ	CONJ	_	13	cc	_	IFD_tag=c
+13	bætir	bæta	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	parataxis	_	IFD_tag=sfg3en
+14	við	við	ADP	RP	_	13	compound:prt	_	IFD_tag=aa
+15	að	að	SCONJ	C	_	20	mark	_	IFD_tag=c
+16	strákarnir	strákur	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Masc|Number=Plur	20	nsubj	_	IFD_tag=nkfng
+17	séu	vera	AUX	BEPS	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop	_	IFD_tag=svg3fn
+18	hvergi	hvergi	ADV	ADV	_	20	advmod	_	IFD_tag=aa
+19	nærri	nærri	ADV	ADV	_	18	advmod	_	IFD_tag=aa
+20	hættir	hætta	VERB	VBN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	13	ccomp	_	IFD_tag=lkfnsf|SpaceAfter=No
+21	,	,	PUNCT	,	_	20	punct	_	IFD_tag=,
+22	Frakkland	frakkland	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	25	nsubj	_	IFD_tag=nhen-s
+23	sé	vera	AUX	BEPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	25	cop	_	IFD_tag=svg3en
+24	aðeins	aðeins	ADV	FP	_	25	advmod	_	IFD_tag=aa
+25	ný	nýr	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	20	conj	_	IFD_tag=lvensf
+26	keila	keila	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	25	conj	_	IFD_tag=nven
+27	í	í	ADP	P	_	28	case	_	IFD_tag=aþ
+28	vegi	vegur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	25	obl	_	IFD_tag=nkeþ
+29	þeirra	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Plur|PronType=Prs	28	nmod:poss	_	IFD_tag=fphfe|SpaceAfter=No
+30	.	.	PUNCT	.	_	29	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.8
-# X_ID = ID_MISSING
+# X_ID = ID_missing_9
 # text = Eitt eftirminnilegasta augnablikið á mótinu til þessa var að mati Magnúsar seinna mark Íslands á móti Austurríki í síðasta leik riðlakeppninnar.
-1	Eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	3	det	_	_
-2	eftirminnilegasta	eftirminnilegur	ADJ	ADJS-N	Case=Nom|Degree=Sup	3	amod	_	_
-3	augnablikið	augnablik	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
-4	á	á	ADP	P	_	5	case	_	_
-5	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-6	til	til	ADP	P	_	7	case	_	_
-7	þessa	þessi	DET	D-G	Case=Gen|PronType=Art	3	obl	_	_
-8	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	10	cop	_	_
-9	að	að	ADP	P	_	10	case	_	_
-10	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
-11	Magnúsar	magnús	PROPN	NPR-G	_	10	nmod:poss	_	_
-12	seinna	seinn	ADJ	ADJR-N	Case=Nom|Degree=Cmp	13	amod	_	_
-13	mark	mark	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	xcomp	_	_
-14	Íslands	ísland	PROPN	NPR-G	_	13	nmod:poss	_	_
-15	á	á	ADP	P	_	16	case	_	_
-16	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
-17	Austurríki	austurríki	PROPN	NPR-D	_	16	nmod:poss	_	_
-18	í	í	ADP	P	_	20	case	_	_
-19	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	20	amod	_	_
-20	leik	leikur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
-21	riðlakeppninnar	riðlakeppni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	21	punct	_	_
+1	Eitt	einn	DET	ONE-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	3	det	_	IFD_tag=fohen
+2	eftirminnilegasta	eftirminnilegur	ADJ	ADJS-N	Case=Nom|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	3	amod	_	IFD_tag=lhenve
+3	augnablikið	augnablik	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	10	nsubj	_	IFD_tag=nheng
+4	á	á	ADP	P	_	5	case	_	IFD_tag=aa
+5	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	3	obl	_	IFD_tag=nheþg
+6	til	til	ADP	P	_	7	case	_	IFD_tag=ae
+7	þessa	þessi	DET	D-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	3	obl	_	IFD_tag=fahee
+8	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	IFD_tag=sfg3eþ
+9	að	að	ADP	P	_	10	case	_	IFD_tag=aþ
+10	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	IFD_tag=nheþ
+11	Magnúsar	magnús	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	10	nmod:poss	_	IFD_tag=nkee-s
+12	seinna	seinn	ADJ	ADJR-N	Case=Acc|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	13	amod	_	IFD_tag=lheovm
+13	mark	mark	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	10	xcomp	_	IFD_tag=nhen
+14	Íslands	ísland	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	13	nmod:poss	_	IFD_tag=nhee-s
+15	á	á	ADP	P	_	16	case	_	IFD_tag=aa
+16	móti	mót	NOUN	N-D	_	13	obl	_	IFD_tag=aþ
+17	Austurríki	austurríki	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	16	nmod:poss	_	IFD_tag=nheþ-s
+18	í	í	ADP	P	_	20	case	_	IFD_tag=aþ
+19	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	20	amod	_	IFD_tag=lkeþve
+20	leik	leikur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	13	obl	_	IFD_tag=nkeþ
+21	riðlakeppninnar	riðlakeppni	NOUN	N-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	20	nmod:poss	_	IFD_tag=nveeg|SpaceAfter=No
+22	.	.	PUNCT	.	_	21	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.9
-# X_ID = ID_MISSING
+# X_ID = ID_missing_10
 # text = „ Það var súrrealískt að vinna Austurríkismenn.
-1	„	„	PUNCT	"	_	4	punct	_	_
-2	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
-3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
-4	súrrealískt	súrrealískur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-5	að	að	PART	TO	_	6	mark	_	_
-6	vinna	vinna	VERB	VB	VerbForm=Inf	4	acl	_	_
-7	Austurríkismenn	austurríkismaður	PROPN	NPRS-A	_	6	obj	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	7	punct	_	_
+1	„	„	PUNCT	"	_	4	punct	_	IFD_tag=„
+2	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	4	expl	_	IFD_tag=fphen
+3	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3eþ
+4	súrrealískt	súrrealískur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	IFD_tag=lhensf
+5	að	að	PART	TO	_	6	mark	_	IFD_tag=cn
+6	vinna	vinna	VERB	VB	VerbForm=Inf|Voice=Act	4	acl	_	IFD_tag=sng
+7	Austurríkismenn	austurríkismaður	PROPN	NPRS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	6	obj	_	IFD_tag=nkfo-s|SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.10
-# X_ID = ID_MISSING
+# X_ID = ID_missing_11
 # text = Að skora á síðustu mínútunum þegar við vorum eiginlega búin að missa trúna var ótrúlegt.
-1	Að	að	PART	TO	_	2	mark	_	_
-2	skora	skora	VERB	VB	VerbForm=Inf	15	acl	_	_
-3	á	á	ADP	P	_	5	case	_	_
-4	síðustu	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	5	amod	_	_
-5	mínútunum	mínúta	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
-6	þegar	þegar	ADP	P	_	10	case	_	_
-7	við	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-8	vorum	vera	AUX	BEDI	Mood=Ind|Tense=Past	10	cop	_	_
-9	eiginlega	eiginlega	ADV	ADV	Degree=Pos	10	advmod	_	_
-10	búin	búa	VERB	VBN	Tense=Past|VerbForm=Part	2	obl	_	_
-11	að	að	PART	TO	_	12	mark	_	_
-12	missa	missa	VERB	VB	VerbForm=Inf	10	acl	_	_
-13	trúna	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obj	_	_
-14	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	15	cop	_	_
-15	ótrúlegt	ótrúlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	15	punct	_	_
+1	Að	að	PART	TO	_	2	mark	_	IFD_tag=cn
+2	skora	skora	VERB	VB	VerbForm=Inf|Voice=Act	15	acl	_	IFD_tag=sng
+3	á	á	ADP	P	_	5	case	_	IFD_tag=aþ
+4	síðustu	síðari	ADJ	ADJS-D	Case=Dat|Definite=Def|Degree=Sup|Gender=Fem|Number=Plur	5	amod	_	IFD_tag=lvfþve
+5	mínútunum	mínúta	NOUN	NS-D	Case=Dat|Definite=Def|Gender=Fem|Number=Plur	2	obl	_	IFD_tag=nvfþg
+6	þegar	þegar	ADP	P	_	10	case	_	IFD_tag=c
+7	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	10	nsubj	_	IFD_tag=fp1fn
+8	vorum	vera	AUX	BEDI	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	IFD_tag=sfg1fþ
+9	eiginlega	eiginlega	ADV	ADV	_	10	advmod	_	IFD_tag=aa
+10	búin	búa	VERB	VBN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	2	obl	_	IFD_tag=lhfnsf
+11	að	að	PART	TO	_	12	mark	_	IFD_tag=cn
+12	missa	missa	VERB	VB	VerbForm=Inf|Voice=Act	10	acl	_	IFD_tag=sng
+13	trúna	trú	NOUN	N-A	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	12	obj	_	IFD_tag=nveog
+14	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	cop	_	IFD_tag=sfg3eþ
+15	ótrúlegt	ótrúlegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	IFD_tag=lhensf|SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.11
-# X_ID = ID_MISSING
+# X_ID = ID_missing_12
 # text = Sá leikur var fyrir mér svakalegur rússíbani,“ segir Magnús.
-1	Sá	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
-2	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
-3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	10	cop	_	_
-4	fyrir	fyrir	ADP	P	_	5	case	_	_
-5	mér	ég	PRON	PRO-D	Case=Dat	10	obl	_	_
-6	svakalegur	svakalegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	xcomp	_	_
-7	rússíbani	rússíbani	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	7	punct	_	SpaceAfter=No
-9	“	“	PUNCT	"	_	8	punct	_	_
-10	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-11	Magnús	magnús	PROPN	NPR-N	_	10	obl	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	11	punct	_	_
+1	Sá	sá	DET	D-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	2	det	_	IFD_tag=faken
+2	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	10	nsubj	_	IFD_tag=nken
+3	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	IFD_tag=sfg3eþ
+4	fyrir	fyrir	ADP	P	_	5	case	_	IFD_tag=aþ
+5	mér	ég	PRON	PRO-D	Case=Dat|Number=Sing|Person=1|PronType=Prs	10	obl	_	IFD_tag=fp1eþ
+6	svakalegur	svakalegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	10	xcomp	_	IFD_tag=lkensf
+7	rússíbani	rússíbani	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	6	conj	_	IFD_tag=nken|SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	IFD_tag=,|SpaceAfter=No
+9	“	“	PUNCT	"	_	8	punct	_	IFD_tag=“
+10	segir	segja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+11	Magnús	magnús	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	10	obl	_	IFD_tag=nken-s|SpaceAfter=No
+12	.	.	PUNCT	.	_	11	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.12
-# X_ID = ID_MISSING
+# X_ID = ID_missing_13
 # text = „ Englandsleikurinn var náttúrulega sögulegur á marga vegu.
-1	„	„	PUNCT	"	_	5	punct	_	_
-2	Englandsleikurinn	englandsleikur	PROPN	NPR-N	_	5	nsubj	_	_
-3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
-4	náttúrulega	náttúrulega	ADV	ADV	Degree=Pos	5	advmod	_	_
-5	sögulegur	sögulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-6	á	á	ADP	P	_	8	case	_	_
-7	marga	margur	DET	Q-A	Case=Acc|Degree=Pos	8	amod	_	_
-8	vegu	vegur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	8	punct	_	_
+1	„	„	PUNCT	"	_	5	punct	_	IFD_tag=„
+2	Englandsleikurinn	englandsleikur	PROPN	NPR-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	5	nsubj	_	IFD_tag=nkeng
+3	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3eþ
+4	náttúrulega	náttúrulega	ADV	ADV	_	5	advmod	_	IFD_tag=aa
+5	sögulegur	sögulegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	IFD_tag=lkensf
+6	á	á	ADP	P	_	8	case	_	IFD_tag=ao
+7	marga	margur	DET	Q-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	8	amod	_	IFD_tag=lkfosf
+8	vegu	vegur	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	5	obl	_	IFD_tag=nkfo|SpaceAfter=No
+9	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.13
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_14 ; ID_missing_15
 # text = En Englendingarnir gátu ekkert og við vorum bara betra liðið“.
-1	En	en	CCONJ	CONJ	_	2	cc	_	_
-2	Englendingarnir	englendingur	PROPN	NPRS-N	_	0	root	_	_
-3	gátu	geta	AUX	MDDI	Mood=Ind|Tense=Past	2	aux	_	_
-4	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	2	obj	_	_
-5	og	og	CCONJ	CONJ	_	6	cc	_	_
-6	við	ég	PRON	PRO-N	Case=Nom	2	conj	_	OriginalHead=0
-7	vorum	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
-8	bara	bara	ADV	FP	Degree=Pos	6	advmod	_	_
-9	betra	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	10	amod	_	_
-10	liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	xcomp	_	SpaceAfter=No
-11	“	“	PUNCT	"	_	10	punct	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	11	punct	_	_
+1	En	en	CCONJ	CONJ	_	2	cc	_	IFD_tag=c
+2	Englendingarnir	englendingur	PROPN	NPRS-N	Case=Nom|Definite=Def|Gender=Masc|Number=Plur	0	root	_	IFD_tag=nkfngs
+3	gátu	geta	AUX	MDDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	aux	_	IFD_tag=sfg3fþ
+4	ekkert	enginn	DET	Q-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Ind	2	obj	_	IFD_tag=foheo
+5	og	og	CCONJ	CONJ	_	6	cc	_	IFD_tag=c
+6	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	conj	_	OriginalHead=0
+7	vorum	vera	AUX	BEDI	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	IFD_tag=sfg1fþ
+8	bara	bara	ADV	FP	_	6	advmod	_	IFD_tag=aa
+9	betra	góður	ADJ	ADJR-N	Case=Nom|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	10	amod	_	IFD_tag=lhenvm
+10	liðið	lið	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	6	xcomp	_	IFD_tag=nheng|SpaceAfter=No
+11	“	“	PUNCT	"	_	10	punct	_	IFD_tag=“|SpaceAfter=No
+12	.	.	PUNCT	.	_	11	punct	_	IFD_tag=.
 

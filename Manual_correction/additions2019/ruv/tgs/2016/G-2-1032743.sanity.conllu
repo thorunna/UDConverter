@@ -1,125 +1,125 @@
 # sent_id = RUV_TGS_2016_G-2-1032743.SANITY,.1
-# X_ID = ID_MISSING
+# X_ID = ID_missing_1
 # text = Axel Stefánsson sem ráðinn var landsliðsþjálfari Íslands í handbolta fyrr í sumar hefur valið sinn fyrsta landsliðshóp.
-1	Axel	axel	PROPN	NPR-N	_	14	nsubj	_	_
-2	Stefánsson	stefánsson	PROPN	NPR-N	_	1	flat:name	_	_
-3	sem	sem	SCONJ	C	_	4	mark	_	_
-4	ráðinn	ráða	VERB	VAN	Tense=Past|VerbForm=Part	1	acl:relcl	_	_
-5	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
-6	landsliðsþjálfari	landsliðsþjálfari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
-7	Íslands	ísland	PROPN	NPR-G	_	6	nmod:poss	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	handbolta	handbolti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-10	fyrr	snemma	ADV	ADVR	Degree=Cmp	4	advmod	_	_
-11	í	í	ADP	P	_	12	case	_	_
-12	sumar	sumar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
-13	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	14	aux	_	_
-14	valið	velja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-15	sinn	sinn	PRON	PRO-A	Case=Acc	17	nmod:poss	_	_
-16	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	17	amod	_	_
-17	landsliðshóp	landsliðshópur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	17	punct	_	_
+1	Axel	axel	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	14	nsubj	_	IFD_tag=nken-s
+2	Stefánsson	stefánsson	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	flat:name	_	IFD_tag=nken-s
+3	sem	sem	SCONJ	C	_	4	mark	_	IFD_tag=ct
+4	ráðinn	ráða	VERB	VAN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	1	acl:relcl	_	IFD_tag=sþgken
+5	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3eþ
+6	landsliðsþjálfari	landsliðsþjálfari	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	4	nsubj	_	IFD_tag=nken
+7	Íslands	ísland	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	6	nmod:poss	_	IFD_tag=nhee-s
+8	í	í	ADP	P	_	9	case	_	IFD_tag=ao
+9	handbolta	handbolti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	7	obl	_	IFD_tag=nkeþ
+10	fyrr	snemma	ADV	ADVR	Degree=Cmp	4	advmod	_	IFD_tag=aam
+11	í	í	ADP	P	_	12	case	_	IFD_tag=ao
+12	sumar	sumar	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	10	obl	_	IFD_tag=nheo
+13	hefur	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux	_	IFD_tag=sfg3en
+14	valið	velja	VERB	VBN	VerbForm=Sup|Voice=Act	0	root	_	IFD_tag=ssg
+15	sinn	sinn	PRON	PRO-A	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	17	nmod:poss	_	IFD_tag=fekeo
+16	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	17	amod	_	IFD_tag=lkeove
+17	landsliðshóp	landsliðshópur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	14	obj	_	IFD_tag=nkeo|SpaceAfter=No
+18	.	.	PUNCT	.	_	17	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1032743.SANITY,.2
-# X_ID = ID_MISSING
+# X_ID = ID_missing_2
 # text = Hópurinn mun koma saman í Reykjavík 7. ágúst og æfa til 12. ágúst.
-1	Hópurinn	hópur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
-2	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
-3	koma	koma	VERB	VB	VerbForm=Inf	0	root	_	_
-4	saman	saman	ADV	ADV	Degree=Pos	3	advmod	_	_
-5	í	í	ADP	P	_	6	case	_	_
-6	Reykjavík	reykjavík	PROPN	NPR-D	_	3	obl	_	_
-7	7.	sjöundi	ADJ	ADJ-A	Case=Acc|Degree=Pos	3	obl	_	_
-8	ágúst	ágúst	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
-9	og	og	CCONJ	CONJ	_	10	cc	_	_
-10	æfa	æfa	VERB	VB	VerbForm=Inf	3	conj	_	_
-11	til	til	ADP	P	_	13	case	_	_
-12	12.	tólfti	ADJ	ADJ-G	Case=Gen|Degree=Pos	13	amod	_	_
-13	ágúst	ágúst	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	13	punct	_	_
+1	Hópurinn	hópur	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	3	nsubj	_	IFD_tag=nkeng
+2	mun	munu	AUX	MDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	IFD_tag=sfg3en
+3	koma	koma	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
+4	saman	saman	ADV	ADV	_	3	advmod	_	IFD_tag=aa
+5	í	í	ADP	P	_	6	case	_	IFD_tag=aþ
+6	Reykjavík	reykjavík	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	3	obl	_	IFD_tag=nveþ-s
+7	7.	sjöundi	ADJ	ADJ-A	NumType=Card	3	obl	_	IFD_tag=ta
+8	ágúst	ágúst	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	7	nmod:poss	_	IFD_tag=nkee
+9	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
+10	æfa	æfa	VERB	VB	VerbForm=Inf|Voice=Act	3	conj	_	IFD_tag=sng
+11	til	til	ADP	P	_	13	case	_	IFD_tag=ae
+12	12.	tólfti	ADJ	ADJ-G	NumType=Card	13	amod	_	IFD_tag=ta
+13	ágúst	ágúst	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	10	obl	_	IFD_tag=nkee|SpaceAfter=No
+14	.	.	PUNCT	.	_	13	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1032743.SANITY,.3
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_3 ; ID_missing_4
 # text = Íslenska landsliðið undirbýr sig nú fyrir undankeppni HM 2017, en Ísland leikur í undankeppni HM í lok árs.
-1	Íslenska	íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
-2	landsliðið	landslið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
-3	undirbýr	undirbúa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	sig	sig	PRON	PRO-A	Case=Acc	3	obj	_	_
-5	nú	nú	ADV	ADV	Degree=Pos	3	advmod	_	_
-6	fyrir	fyrir	ADP	P	_	7	case	_	_
-7	undankeppni	undankeppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
-8	HM	hm	PROPN	NPR-G	_	7	nmod:poss	_	_
-9	2017	2017	NUM	NUM-A	Case=Acc	8	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	en	en	CCONJ	CONJ	_	13	cc	_	_
-12	Ísland	ísland	PROPN	NPR-N	_	13	nsubj	_	_
-13	leikur	leika	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-14	í	í	ADP	P	_	15	case	_	_
-15	undankeppni	undankeppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
-16	HM	hm	PROPN	NPR-G	_	15	nmod:poss	_	_
-17	í	í	ADP	P	_	18	case	_	_
-18	lok	lok	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obl	_	_
-19	árs	ár	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	19	punct	_	_
+1	Íslenska	íslenskur	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	IFD_tag=lhenvf
+2	landsliðið	landslið	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	3	nsubj	_	IFD_tag=nheng
+3	undirbýr	undirbúa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+4	sig	sig	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	3	obj	_	IFD_tag=fpheo
+5	nú	nú	ADV	ADV	_	3	advmod	_	IFD_tag=aa
+6	fyrir	fyrir	ADP	P	_	7	case	_	IFD_tag=ao
+7	undankeppni	undankeppni	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	3	obl	_	IFD_tag=nveo
+8	HM	hm	PROPN	NPR-G	_	7	nmod:poss	_	IFD_tag=as
+9	2017	2017	NUM	NUM-A	NumType=Card	8	obl	_	IFD_tag=ta|SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	IFD_tag=,
+11	en	en	CCONJ	CONJ	_	13	cc	_	IFD_tag=c
+12	Ísland	ísland	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	13	nsubj	_	IFD_tag=nhen-s
+13	leikur	leika	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
+14	í	í	ADP	P	_	15	case	_	IFD_tag=ao
+15	undankeppni	undankeppni	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	13	obl	_	IFD_tag=nveþ
+16	HM	hm	PROPN	NPR-G	_	15	nmod:poss	_	IFD_tag=as
+17	í	í	ADP	P	_	18	case	_	IFD_tag=ao
+18	lok	lok	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	13	obl	_	IFD_tag=nhfo
+19	árs	ár	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	18	nmod:poss	_	IFD_tag=nhee|SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1032743.SANITY,.4
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_5 ; ID_missing_6
 # text = Axel verður með 18 leikmenn á æfingunum, en sjö leikmenn gátu ekki gefið kost á sér vegna meiðsla, eða annarra verkefna.
-1	Axel	axel	PROPN	NPR-N	_	2	nsubj	_	_
-2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	með	með	ADP	P	_	5	case	_	_
-4	18	átján	NUM	NUM-A	Case=Acc	5	nummod	_	_
-5	leikmenn	leikmaður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
-6	á	á	ADP	P	_	7	case	_	_
-7	æfingunum	æfing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	7	punct	_	_
-9	en	en	CCONJ	CONJ	_	14	cc	_	_
-10	sjö	sjö	NUM	NUM-N	Case=Nom	11	nummod	_	_
-11	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	14	nsubj	_	_
-12	gátu	geta	AUX	MDDI	Mood=Ind|Tense=Past	14	aux	_	_
-13	ekki	ekki	ADV	NEG	_	14	advmod	_	_
-14	gefið	gefa	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-15	kost	kostur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
-16	á	á	ADP	P	_	17	case	_	_
-17	sér	sig	PRON	PRO-D	Case=Dat	15	obl	_	_
-18	vegna	vegna	ADP	P	_	19	case	_	_
-19	meiðsla	meiðsli	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	19	punct	_	_
-21	eða	eða	CCONJ	CONJ	_	23	cc	_	_
-22	annarra	annar	PRON	OTHER-G	Case=Gen	23	det	_	_
-23	verkefna	verkefni	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	conj	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	23	punct	_	_
+1	Axel	axel	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nsubj	_	IFD_tag=nken-s
+2	verður	verða	VERB	RDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+3	með	með	ADP	P	_	5	case	_	IFD_tag=ao
+4	18	átján	NUM	NUM-A	NumType=Card	5	nummod	_	IFD_tag=ta
+5	leikmenn	leikmaður	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	2	obl	_	IFD_tag=nkfo
+6	á	á	ADP	P	_	7	case	_	IFD_tag=aþ
+7	æfingunum	æfing	NOUN	NS-D	Case=Dat|Definite=Def|Gender=Fem|Number=Plur	5	obl	_	IFD_tag=nvfþg|SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	IFD_tag=,
+9	en	en	CCONJ	CONJ	_	14	cc	_	IFD_tag=c
+10	sjö	sjö	NUM	NUM-N	Case=Nom|Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	IFD_tag=tfkfn
+11	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	14	nsubj	_	IFD_tag=nkfn
+12	gátu	geta	AUX	MDDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	aux	_	IFD_tag=sfg3fþ
+13	ekki	ekki	ADV	NEG	_	14	advmod	_	IFD_tag=aa
+14	gefið	gefa	VERB	VBN	VerbForm=Sup|Voice=Act	2	conj	_	OriginalHead=0
+15	kost	kostur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	14	obj	_	IFD_tag=nkeo
+16	á	á	ADP	P	_	17	case	_	IFD_tag=aþ
+17	sér	sig	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Prs	15	obl	_	IFD_tag=fpkfþ
+18	vegna	vegna	ADP	P	_	19	case	_	IFD_tag=ae
+19	meiðsla	meiðsli	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	14	obl	_	IFD_tag=nhfe|SpaceAfter=No
+20	,	,	PUNCT	,	_	19	punct	_	IFD_tag=,
+21	eða	eða	CCONJ	CONJ	_	23	cc	_	IFD_tag=c
+22	annarra	annar	PRON	OTHER-G	Case=Gen|Gender=Neut|Number=Plur|PronType=Ind	23	det	_	IFD_tag=fohfe
+23	verkefna	verkefni	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	19	conj	_	IFD_tag=nhfe|SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1032743.SANITY,.5
-# X_ID = ID_MISSING
+# X_ID = ID_missing_7
 # text = Þeir leikmenn sem eru forfallaðir eru Birna Berg Haraldsdóttir, Hildigunnur Einarsdóttir, Hildur Þorgeirsdóttir, Ramune Pekarskyte, Ragnheiður Júlíusdóttir, Rut Jónsdóttir og Þórey Rósa Stefánsdóttir.
-1	Þeir	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
-2	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	nsubj	_	_
-3	sem	sem	SCONJ	C	_	5	mark	_	_
-4	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-5	forfallaðir	forfallaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	acl:relcl	_	_
-6	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
-7	Birna	birna	PROPN	NPR-N	_	0	root	_	_
-8	Berg	berg	PROPN	NPR-N	_	7	flat:name	_	_
-9	Haraldsdóttir	haraldsdóttir	PROPN	NPR-N	_	7	dep	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	11	punct	_	_
-11	Hildigunnur	hildigunnur	PROPN	NPR-N	_	7	conj	_	_
-12	Einarsdóttir	einarsdóttir	PROPN	NPR-N	_	11	flat:name	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	14	punct	_	_
-14	Hildur	hildur	PROPN	NPR-N	_	7	conj	_	_
-15	Þorgeirsdóttir	þorgeirsdóttir	PROPN	NPR-N	_	14	flat:name	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	17	punct	_	_
-17	Ramune	ramune	PROPN	NPR-N	_	7	conj	_	_
-18	Pekarskyte	pekarskyte	PROPN	NPR-N	_	17	flat:name	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	20	punct	_	_
-20	Ragnheiður	ragnheiður	PROPN	NPR-N	_	7	conj	_	_
-21	Júlíusdóttir	júlíusdóttir	PROPN	NPR-N	_	20	flat:name	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	23	punct	_	_
-23	Rut	rut	PROPN	NPR-N	_	7	conj	_	_
-24	Jónsdóttir	jónsdóttir	PROPN	NPR-N	_	23	flat:name	_	_
-25	og	og	CCONJ	CONJ	_	26	cc	_	_
-26	Þórey	þórey	PROPN	NPR-N	_	7	conj	_	_
-27	Rósa	rósa	PROPN	NPR-N	_	26	flat:name	_	_
-28	Stefánsdóttir	stefánsdóttir	PROPN	NPR-N	_	26	dep	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	28	punct	_	_
+1	Þeir	sá	DET	D-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Dem	2	det	_	IFD_tag=fakfn
+2	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	7	nsubj	_	IFD_tag=nkfn
+3	sem	sem	SCONJ	C	_	5	mark	_	IFD_tag=ct
+4	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3fn
+5	forfallaðir	forfallaður	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	2	acl:relcl	_	IFD_tag=lkfnsf
+6	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	IFD_tag=sfg3fn
+7	Birna	birna	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	0	root	_	IFD_tag=nven-s
+8	Berg	berg	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	7	flat:name	_	IFD_tag=nven-s
+9	Haraldsdóttir	haraldsdóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	7	dep	_	IFD_tag=nven-s|SpaceAfter=No
+10	,	,	PUNCT	,	_	11	punct	_	IFD_tag=,
+11	Hildigunnur	hildigunnur	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	7	conj	_	IFD_tag=nven-s
+12	Einarsdóttir	einarsdóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	11	flat:name	_	IFD_tag=nven-s|SpaceAfter=No
+13	,	,	PUNCT	,	_	14	punct	_	IFD_tag=,
+14	Hildur	hildur	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	7	conj	_	IFD_tag=nven-s
+15	Þorgeirsdóttir	þorgeirsdóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	14	flat:name	_	IFD_tag=nven-s|SpaceAfter=No
+16	,	,	PUNCT	,	_	17	punct	_	IFD_tag=,
+17	Ramune	ramune	PROPN	NPR-N	Foreign=Yes	7	conj	_	IFD_tag=e
+18	Pekarskyte	pekarskyte	PROPN	NPR-N	Foreign=Yes	17	flat:name	_	IFD_tag=e|SpaceAfter=No
+19	,	,	PUNCT	,	_	20	punct	_	IFD_tag=,
+20	Ragnheiður	ragnheiður	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	7	conj	_	IFD_tag=nven-s
+21	Júlíusdóttir	júlíusdóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	20	flat:name	_	IFD_tag=nven-s|SpaceAfter=No
+22	,	,	PUNCT	,	_	23	punct	_	IFD_tag=,
+23	Rut	rut	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	7	conj	_	IFD_tag=nven-s
+24	Jónsdóttir	jónsdóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	23	flat:name	_	IFD_tag=nven-s
+25	og	og	CCONJ	CONJ	_	26	cc	_	IFD_tag=c
+26	Þórey	þórey	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	7	conj	_	IFD_tag=nven-s
+27	Rósa	rósa	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	26	flat:name	_	IFD_tag=nven-s
+28	Stefánsdóttir	stefánsdóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	26	dep	_	IFD_tag=nven-s|SpaceAfter=No
+29	.	.	PUNCT	.	_	28	punct	_	IFD_tag=.
 

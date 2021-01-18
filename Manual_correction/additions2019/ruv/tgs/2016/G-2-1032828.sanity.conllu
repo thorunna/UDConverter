@@ -1,135 +1,135 @@
 # sent_id = RUV_TGS_2016_G-2-1032828.SANITY,.1
-# X_ID = ID_MISSING
+# X_ID = ID_missing_1
 # text = Evrópska knattspyrnusambandið, UEFA hefur látið útbúa sérstakt kerfi þar sem almenningur getur raðað liðum upp í riðla EM 2016 í knattspyrnu.
-1	Evrópska	evrópskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
-2	knattspyrnusambandið	knattspyrnusamband	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	SpaceAfter=No
-3	,	,	PUNCT	,	_	2	punct	_	_
-4	UEFA	uefa	PROPN	NPR-N	_	2	appos	_	_
-5	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
-6	látið	láta	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-7	útbúa	útbúa	VERB	VB	VerbForm=Inf	6	acl	_	_
-8	sérstakt	sérstakur	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
-9	kerfi	kerfi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
-10	þar	þar	ADV	ADV	Degree=Pos	14	advmod	_	_
-11	sem	sem	SCONJ	C	_	14	mark	_	_
-12	almenningur	almenningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
-13	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	14	aux	_	_
-14	raðað	raða	VERB	VBN	Tense=Past|VerbForm=Part	9	acl:relcl	_	_
-15	liðum	lið	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obj	_	_
-16	upp	upp	ADP	RP	_	14	compound:prt	_	_
-17	í	í	ADP	P	_	18	case	_	_
-18	riðla	riðill	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
-19	EM	em	PROPN	NPR-G	_	18	nmod:poss	_	_
-20	2016	2016	NUM	NUM-A	Case=Acc	19	obl	_	_
-21	í	í	ADP	P	_	22	case	_	_
-22	knattspyrnu	knattspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	22	punct	_	_
+1	Evrópska	evrópskur	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	IFD_tag=lhenvf
+2	knattspyrnusambandið	knattspyrnusamband	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	6	nsubj	_	IFD_tag=nheng|SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	IFD_tag=,
+4	UEFA	uefa	PROPN	NPR-N	_	2	appos	_	IFD_tag=as
+5	hefur	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	IFD_tag=sfg3en
+6	látið	láta	VERB	VBN	VerbForm=Sup|Voice=Act	0	root	_	IFD_tag=ssg
+7	útbúa	útbúa	VERB	VB	VerbForm=Inf|Voice=Act	6	acl	_	IFD_tag=sng
+8	sérstakt	sérstakur	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	9	amod	_	IFD_tag=lheosf
+9	kerfi	kerfi	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	7	obj	_	IFD_tag=nheo
+10	þar	þar	ADV	ADV	_	14	advmod	_	IFD_tag=aa
+11	sem	sem	SCONJ	C	_	14	mark	_	IFD_tag=c
+12	almenningur	almenningur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	14	nsubj	_	IFD_tag=nken
+13	getur	geta	AUX	MDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux	_	IFD_tag=sfg3en
+14	raðað	raða	VERB	VBN	VerbForm=Sup|Voice=Act	9	acl:relcl	_	IFD_tag=ssg
+15	liðum	lið	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	14	obj	_	IFD_tag=nhfþ
+16	upp	upp	ADP	RP	_	14	compound:prt	_	IFD_tag=aa
+17	í	í	ADP	P	_	18	case	_	IFD_tag=aþ
+18	riðla	riðill	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	14	obl	_	IFD_tag=nkfo
+19	EM	em	PROPN	NPR-G	_	18	nmod:poss	_	IFD_tag=as
+20	2016	2016	NUM	NUM-A	NumType=Card	19	obl	_	IFD_tag=ta
+21	í	í	ADP	P	_	22	case	_	IFD_tag=aþ
+22	knattspyrnu	knattspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	19	obl	_	IFD_tag=nveþ|SpaceAfter=No
+23	.	.	PUNCT	.	_	22	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1032828.SANITY,.2
-# X_ID = ID_MISSING
+# X_ID = ID_missing_2
 # text = Fólk raðar liðunum í þá röð eins og það telur að lokastaðan verði eftir riðlakeppnina.
-1	Fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
-2	raðar	raða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	liðunum	lið	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obj	_	_
-4	í	í	ADP	P	_	6	case	_	_
-5	þá	sá	DET	D-A	Case=Acc|PronType=Art	6	det	_	_
-6	röð	röð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
-7	eins	_	ADV	ADVR	Degree=Cmp	6	advmod	_	_
-8	og	_	ADP	P	_	10	case	_	_
-9	það	það	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-10	telur	telja	VERB	VBPI	Mood=Ind|Tense=Pres	7	obl	_	_
-11	að	að	SCONJ	C	_	13	mark	_	_
-12	lokastaðan	lokastaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
-13	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	10	ccomp	_	_
-14	eftir	eftir	ADP	P	_	15	case	_	_
-15	riðlakeppnina	riðlakeppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	15	punct	_	_
+1	Fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	2	nsubj	_	IFD_tag=nhen
+2	raðar	raða	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+3	liðunum	lið	NOUN	NS-D	Case=Dat|Definite=Def|Gender=Neut|Number=Plur	2	obj	_	IFD_tag=nhfþg
+4	í	í	ADP	P	_	6	case	_	IFD_tag=ao
+5	þá	sá	DET	D-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	6	det	_	IFD_tag=faveo
+6	röð	röð	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	2	obl	_	IFD_tag=nveo
+7	eins	_	ADV	ADVR	_	6	advmod	_	IFD_tag=x
+8	og	_	ADP	P	_	10	case	_	IFD_tag=x
+9	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	10	nsubj	_	IFD_tag=fphen
+10	telur	telja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	obl	_	IFD_tag=sfg3en
+11	að	að	SCONJ	C	_	13	mark	_	IFD_tag=c
+12	lokastaðan	lokastaða	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	13	nsubj	_	IFD_tag=nveng
+13	verði	verða	VERB	RDPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	ccomp	_	IFD_tag=svg3en
+14	eftir	eftir	ADP	P	_	15	case	_	IFD_tag=ao
+15	riðlakeppnina	riðlakeppni	NOUN	N-A	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	13	obl	_	IFD_tag=nveog|SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1032828.SANITY,.3
-# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5
 # text = Spákerfið vinnur svo úr upplýsingunum og raðar upp hvaða lið myndu þá mætast í 16 liða úrslitum mótsins og þá þarf í kjölfarið að gera upp við sig hvaða lið sé líklegra til að vinna hverja viðureign þar.
-1	Spákerfið	spákerfi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
-2	vinnur	vinna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	úr	úr	ADP	P	_	5	case	_	_
-5	upplýsingunum	upplýsing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
-6	og	og	CCONJ	CONJ	_	7	cc	_	_
-7	raðar	raða	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-8	upp	upp	ADP	RP	_	7	compound:prt	_	_
-9	hvaða	hvaða	DET	WD-N	Case=Nom|Number=Sing	10	det	_	_
-10	lið	lið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	obj	_	_
-11	myndu	munu	AUX	MDDS	Mood=Sub|Tense=Past	13	aux	_	_
-12	þá	þá	ADV	ADV	Degree=Pos	13	advmod	_	_
-13	mætast	mæta	VERB	VB	VerbForm=Inf	7	xcomp	_	_
-14	í	í	ADP	P	_	17	case	_	_
-15	16	sextán	NUM	NUM-G	Case=Gen	16	nummod	_	_
-16	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	17	nmod:poss	_	_
-17	úrslitum	úrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
-18	mótsins	mót	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	nmod:poss	_	_
-19	og	og	CCONJ	CONJ	_	21	cc	_	_
-20	þá	þá	ADV	ADV	Degree=Pos	21	advmod	_	_
-21	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-22	í	í	ADP	P	_	23	case	_	_
-23	kjölfarið	kjölfar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	_
-24	að	að	PART	TO	_	25	mark	_	_
-25	gera	gera	VERB	DO	VerbForm=Inf	21	acl	_	_
-26	upp	upp	ADP	RP	_	28	compound:prt	_	_
-27	við	við	ADP	P	_	28	case	_	_
-28	sig	sig	PRON	PRO-A	Case=Acc	25	obl	_	_
-29	hvaða	hvaða	DET	WD-N	Case=Nom|Number=Sing	30	det	_	_
-30	lið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	32	obj	_	_
-31	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	32	cop	_	_
-32	líklegra	líklegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	25	xcomp	_	_
-33	til	til	ADP	P	_	35	case	_	_
-34	að	að	PART	TO	_	35	mark	_	_
-35	vinna	vinna	VERB	VB	VerbForm=Inf	32	amod	_	_
-36	hverja	hver	DET	Q-A	Case=Acc|Degree=Pos	37	amod	_	_
-37	viðureign	viðureign	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	35	obj	_	_
-38	þar	þar	ADV	ADV	Degree=Pos	35	advmod	_	SpaceAfter=No
-39	.	.	PUNCT	.	_	38	punct	_	_
+1	Spákerfið	spákerfi	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	2	nsubj	_	IFD_tag=nheng
+2	vinnur	vinna	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+3	svo	svo	ADV	ADV	_	2	advmod	_	IFD_tag=aa
+4	úr	úr	ADP	P	_	5	case	_	IFD_tag=aþ
+5	upplýsingunum	upplýsing	NOUN	NS-D	Case=Dat|Definite=Def|Gender=Fem|Number=Plur	2	obl	_	IFD_tag=nvfþg
+6	og	og	CCONJ	CONJ	_	7	cc	_	IFD_tag=c
+7	raðar	raða	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
+8	upp	upp	ADP	RP	_	7	compound:prt	_	IFD_tag=aa
+9	hvaða	hvaða	DET	WD-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Int	10	det	_	IFD_tag=fshen
+10	lið	lið	NOUN	NS-N	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	13	obj	_	IFD_tag=nkfo
+11	myndu	munu	AUX	MDDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	aux	_	IFD_tag=svg3fþ
+12	þá	þá	ADV	ADV	_	13	advmod	_	IFD_tag=aa
+13	mætast	mæta	VERB	VB	VerbForm=Inf|Voice=Mid	7	xcomp	_	IFD_tag=snm
+14	í	í	ADP	P	_	17	case	_	IFD_tag=aþ
+15	16	sextán	NUM	NUM-G	NumType=Card	16	nummod	_	IFD_tag=ta
+16	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	17	nmod:poss	_	IFD_tag=nhfe
+17	úrslitum	úrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	13	obl	_	IFD_tag=nhfþ
+18	mótsins	mót	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	17	nmod:poss	_	IFD_tag=nheeg
+19	og	og	CCONJ	CONJ	_	21	cc	_	IFD_tag=c
+20	þá	þá	ADV	ADV	_	21	advmod	_	IFD_tag=aa
+21	þarf	þurfa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
+22	í	í	ADP	P	_	23	case	_	IFD_tag=ao
+23	kjölfarið	kjölfar	NOUN	N-A	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	21	obl	_	IFD_tag=nheog
+24	að	að	PART	TO	_	25	mark	_	IFD_tag=cn
+25	gera	gera	VERB	DO	VerbForm=Inf|Voice=Act	21	acl	_	IFD_tag=sng
+26	upp	upp	ADP	RP	_	28	compound:prt	_	IFD_tag=aa
+27	við	við	ADP	P	_	28	case	_	IFD_tag=ao
+28	sig	sig	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	25	obl	_	IFD_tag=fpheo
+29	hvaða	hvaða	DET	WD-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Int	30	det	_	IFD_tag=fshen
+30	lið	lið	NOUN	N-N	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	32	obj	_	IFD_tag=nkeþ
+31	sé	vera	AUX	BEPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	32	cop	_	IFD_tag=svg3en
+32	líklegra	líklegur	ADJ	ADJR-N	Case=Nom|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	25	xcomp	_	IFD_tag=lhenvm
+33	til	til	ADP	P	_	35	case	_	IFD_tag=ae
+34	að	að	PART	TO	_	35	mark	_	IFD_tag=cn
+35	vinna	vinna	VERB	VB	VerbForm=Inf|Voice=Act	32	amod	_	IFD_tag=sng
+36	hverja	hver	DET	Q-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Ind	37	amod	_	IFD_tag=foveo
+37	viðureign	viðureign	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	35	obj	_	IFD_tag=nveo
+38	þar	þar	ADV	ADV	_	35	advmod	_	IFD_tag=aa|SpaceAfter=No
+39	.	.	PUNCT	.	_	38	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1032828.SANITY,.4
-# X_ID = ID_MISSING
+# X_ID = ID_missing_6
 # text = Þetta er svo endurtekið þar til í ljós kemur spádómur viðkomandi spámanns um hvaða lið verði Evrópumeistari karla í knattspyrnu í Frakklandi í sumar.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	svo	svo	ADV	ADV	Degree=Pos	4	advmod	_	_
-4	endurtekið	endurtaka	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
-5	þar	þar	ADV	ADV	Degree=Pos	9	advmod	_	_
-6	til	til	ADP	P	_	9	case	_	_
-7	í	í	ADP	P	_	8	case	_	_
-8	ljós	ljós	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
-9	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	4	obl	_	_
-10	spádómur	spádómur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
-11	viðkomandi	viðkomandi	ADJ	ADJ-G	Case=Gen|Degree=Pos	12	amod	_	_
-12	spámanns	spámaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	nmod:poss	_	_
-13	um	um	ADP	P	_	16	case	_	_
-14	hvaða	hvaða	PRON	WPRO-N	Case=Nom	15	nmod	_	_
-15	lið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	obj	_	_
-16	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	10	obl	_	_
-17	Evrópumeistari	evrópumeistari	PROPN	NPR-N	_	16	xcomp	_	_
-18	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	17	nmod:poss	_	_
-19	í	í	ADP	P	_	20	case	_	_
-20	knattspyrnu	knattspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
-21	í	í	ADP	P	_	22	case	_	_
-22	Frakklandi	frakkland	PROPN	NPR-D	_	16	obl	_	_
-23	í	í	ADP	P	_	24	case	_	_
-24	sumar	sumar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	24	punct	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	4	nsubj	_	IFD_tag=fahen
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3en
+3	svo	svo	ADV	ADV	_	4	advmod	_	IFD_tag=aa
+4	endurtekið	endurtaka	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	IFD_tag=sþghen
+5	þar	þar	ADV	ADV	_	9	advmod	_	IFD_tag=aa
+6	til	til	ADP	P	_	9	case	_	IFD_tag=aa
+7	í	í	ADP	P	_	8	case	_	IFD_tag=ao
+8	ljós	ljós	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	9	obl	_	IFD_tag=nheo
+9	kemur	koma	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	obl	_	IFD_tag=sfg3en
+10	spádómur	spádómur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	9	nsubj	_	IFD_tag=nken
+11	viðkomandi	viðkomandi	ADJ	ADJ-G	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	12	amod	_	IFD_tag=lkeeof
+12	spámanns	spámaður	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	10	nmod:poss	_	IFD_tag=nkee
+13	um	um	ADP	P	_	16	case	_	IFD_tag=ao
+14	hvaða	hvaða	PRON	WPRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Int	15	nmod	_	IFD_tag=fshen
+15	lið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	16	obj	_	IFD_tag=nhen
+16	verði	verða	VERB	RDPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	obl	_	IFD_tag=svg3en
+17	Evrópumeistari	evrópumeistari	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	16	xcomp	_	IFD_tag=nken-s
+18	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	17	nmod:poss	_	IFD_tag=nkfe
+19	í	í	ADP	P	_	20	case	_	IFD_tag=ao
+20	knattspyrnu	knattspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	17	obl	_	IFD_tag=nveþ
+21	í	í	ADP	P	_	22	case	_	IFD_tag=ao
+22	Frakklandi	frakkland	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	16	obl	_	IFD_tag=nheþ-s
+23	í	í	ADP	P	_	24	case	_	IFD_tag=ao
+24	sumar	sumar	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	22	obl	_	IFD_tag=nheo|SpaceAfter=No
+25	.	.	PUNCT	.	_	24	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1032828.SANITY,.5
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_7 ; ID_missing_8
 # text = Spákerfi UEFA má finna hér og þar geta menn spreytt sig.
-1	Spákerfi	spákerfi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
-2	UEFA	uefa	PROPN	NPR-G	_	1	nmod:poss	_	_
-3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
-4	finna	finna	VERB	VB	VerbForm=Inf	0	root	_	_
-5	hér	hér	ADV	ADV	Degree=Pos	4	advmod	_	_
-6	og	og	CCONJ	CONJ	_	10	cc	_	_
-7	þar	þar	ADV	ADV	Degree=Pos	10	advmod	_	_
-8	geta	geta	AUX	MDPI	Mood=Ind|Tense=Pres	10	aux	_	_
-9	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
-10	spreytt	spreyta	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
-11	sig	sig	PRON	PRO-A	Case=Acc	10	obj	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	11	punct	_	_
+1	Spákerfi	spákerfi	NOUN	N-A	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	4	obj	_	IFD_tag=nhen
+2	UEFA	uefa	PROPN	NPR-G	_	1	nmod:poss	_	IFD_tag=as
+3	má	mega	AUX	MDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	IFD_tag=sfg3en
+4	finna	finna	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
+5	hér	hér	ADV	ADV	_	4	advmod	_	IFD_tag=aa
+6	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
+7	þar	þar	ADV	ADV	_	10	advmod	_	IFD_tag=aa
+8	geta	geta	AUX	MDPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	IFD_tag=sfg3fn
+9	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	10	nsubj	_	IFD_tag=nkfn
+10	spreytt	spreyta	VERB	VBN	VerbForm=Sup|Voice=Act	4	conj	_	OriginalHead=0
+11	sig	sig	PRON	PRO-A	Case=Acc|Gender=Masc|Number=Plur|PronType=Prs	10	obj	_	IFD_tag=fpkfo|SpaceAfter=No
+12	.	.	PUNCT	.	_	11	punct	_	IFD_tag=.
 

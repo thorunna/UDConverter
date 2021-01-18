@@ -1,382 +1,382 @@
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.1
-# X_ID = ID_MISSING
+# X_ID = ID_missing_1
 # text = Evrópumótið í frjálsum íþróttum hefst í Amsterdam í Hollandi á miðvikudag, 6. júlí.
-1	Evrópumótið	evrópumót	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
-2	í	í	ADP	P	_	4	case	_	_
-3	frjálsum	frjáls	ADJ	ADJ-D	Case=Dat|Degree=Pos	4	amod	_	_
-4	íþróttum	íþrótt	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	1	obl	_	_
-5	hefst	hefja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-6	í	í	ADP	P	_	7	case	_	_
-7	Amsterdam	amsterdam	PROPN	NPR-D	_	5	obl	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	Hollandi	holland	PROPN	NPR-D	_	7	obl	_	_
-10	á	á	ADP	P	_	11	case	_	_
-11	miðvikudag	miðvikudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	11	punct	_	_
-13	6.	sjötti	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	dep	_	_
-14	júlí	júlí	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	nmod:poss	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	14	punct	_	_
+1	Evrópumótið	evrópumót	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	5	nsubj	_	IFD_tag=nhengs
+2	í	í	ADP	P	_	4	case	_	IFD_tag=aþ
+3	frjálsum	frjáls	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	4	amod	_	IFD_tag=lvfþsf
+4	íþróttum	íþrótt	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	1	obl	_	IFD_tag=nvfþ
+5	hefst	hefja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	IFD_tag=sfm3en
+6	í	í	ADP	P	_	7	case	_	IFD_tag=aþ
+7	Amsterdam	amsterdam	PROPN	NPR-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	IFD_tag=nxeþ-s
+8	í	í	ADP	P	_	9	case	_	IFD_tag=aþ
+9	Hollandi	holland	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	7	obl	_	IFD_tag=nheþ-s
+10	á	á	ADP	P	_	11	case	_	IFD_tag=ao
+11	miðvikudag	miðvikudagur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	5	obl	_	IFD_tag=nkeo|SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	IFD_tag=,
+13	6.	sjötti	ADJ	ADJ-A	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	11	dep	_	IFD_tag=lkeovf
+14	júlí	júlí	NOUN	N-G	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	13	nmod:poss	_	IFD_tag=nkeo|SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.2
-# X_ID = ID_MISSING
+# X_ID = ID_missing_2
 # text = Allt besta frjálsíþróttafólk Evrópu verður meðal keppenda, þar á meðal fimm íslenskir íþróttamenn.
-1	Allt	allur	DET	Q-N	Case=Nom|Degree=Pos	3	amod	_	_
-2	besta	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	3	amod	_	_
-3	frjálsíþróttafólk	frjálsíþróttafólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
-4	Evrópu	evrópa	PROPN	NPR-G	_	3	nmod:poss	_	_
-5	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-6	meðal	meðal	ADP	P	_	7	case	_	_
-7	keppenda	keppandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	7	punct	_	_
-9	þar	þar	ADV	ADV	Degree=Pos	5	parataxis	_	_
-10	á	á	ADP	P	_	9	case	_	_
-11	meðal	meðal	ADP	P	_	9	obl	_	_
-12	fimm	fimm	NUM	NUM-N	Case=Nom	14	nummod	_	_
-13	íslenskir	íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	14	amod	_	_
-14	íþróttamenn	íþróttamaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	14	punct	_	_
+1	Allt	allur	DET	Q-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	3	amod	_	IFD_tag=fohen
+2	besta	góður	ADJ	ADJS-N	Case=Nom|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	3	amod	_	IFD_tag=lhenve
+3	frjálsíþróttafólk	frjálsíþróttafólk	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	nsubj	_	IFD_tag=nhen
+4	Evrópu	evrópa	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	3	nmod:poss	_	IFD_tag=nvee-s
+5	verður	verða	VERB	RDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+6	meðal	meðal	ADP	P	_	7	case	_	IFD_tag=aa
+7	keppenda	keppandi	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	5	obl	_	IFD_tag=nkfe|SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	IFD_tag=,
+9	þar	þar	ADV	ADV	_	5	parataxis	_	IFD_tag=aa
+10	á	á	ADP	P	_	9	case	_	IFD_tag=aa
+11	meðal	meðal	ADP	P	_	9	obl	_	IFD_tag=aa
+12	fimm	fimm	NUM	NUM-N	Case=Nom|Gender=Masc|Number=Plur|NumType=Card	14	nummod	_	IFD_tag=tfkfn
+13	íslenskir	íslenskur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	14	amod	_	IFD_tag=lkfnsf
+14	íþróttamenn	íþróttamaður	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	9	nsubj	_	IFD_tag=nkfn|SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.3
-# X_ID = ID_MISSING
+# X_ID = ID_missing_3
 # text = RÚV sýnir beint frá EM alla keppnisdagana.
-1	RÚV	rúv	PROPN	NPR-N	_	2	nsubj	_	_
-2	sýnir	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	beint	beint	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	frá	frá	ADP	P	_	5	case	_	_
-5	EM	em	PROPN	NPR-D	_	2	obl	_	_
-6	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	7	amod	_	_
-7	keppnisdagana	keppnisdagur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	7	punct	_	_
+1	RÚV	rúv	PROPN	NPR-N	_	2	nsubj	_	IFD_tag=as
+2	sýnir	sýna	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+3	beint	beint	ADV	ADV	_	2	advmod	_	IFD_tag=aa
+4	frá	frá	ADP	P	_	5	case	_	IFD_tag=aa
+5	EM	em	PROPN	NPR-D	_	2	obl	_	IFD_tag=as
+6	alla	allur	DET	Q-A	Case=Acc|Gender=Masc|Number=Plur|PronType=Ind	7	amod	_	IFD_tag=fokfo
+7	keppnisdagana	keppnisdagur	NOUN	NS-A	Case=Acc|Definite=Def|Gender=Masc|Number=Plur	2	obl	_	IFD_tag=nkfog|SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.4
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_4 ; ID_missing_5
 # text = Aníta Hinriksdóttir keppir í 800 metra hlaupi og hefur keppni í undanrásum á miðvikudag klukkan 16:25.
-1	Aníta	aníta	PROPN	NPR-N	_	3	nsubj	_	_
-2	Hinriksdóttir	hinriksdóttir	PROPN	NPR-N	_	1	flat:name	_	_
-3	keppir	keppa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	í	í	ADP	P	_	7	case	_	_
-5	800	800	NUM	NUM-G	Case=Gen	6	nummod	_	_
-6	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	nmod:poss	_	_
-7	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-8	og	og	CCONJ	CONJ	_	9	cc	_	_
-9	hefur	hefja	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-10	keppni	keppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
-11	í	í	ADP	P	_	12	case	_	_
-12	undanrásum	undanrás	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	_
-13	á	á	ADP	P	_	14	case	_	_
-14	miðvikudag	miðvikudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
-15	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	acl	_	_
-16	16	sextán	NUM	NUM-N	Case=Nom	15	xcomp	_	SpaceAfter=No
-17	:	:	PUNCT	,	_	18	punct	_	_|SpaceAfter=No
-18	25	25	NUM	NUM-N	Case=Nom	16	conj	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	18	punct	_	_
+1	Aníta	aníta	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	3	nsubj	_	IFD_tag=nven-s
+2	Hinriksdóttir	hinriksdóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	flat:name	_	IFD_tag=nven-s
+3	keppir	keppa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+4	í	í	ADP	P	_	7	case	_	IFD_tag=aþ
+5	800	800	NUM	NUM-G	NumType=Card	6	nummod	_	IFD_tag=ta
+6	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	7	nmod:poss	_	IFD_tag=nkfe
+7	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	3	obl	_	IFD_tag=nheþ
+8	og	og	CCONJ	CONJ	_	9	cc	_	IFD_tag=c
+9	hefur	hefja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
+10	keppni	keppni	NOUN	N-A	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	9	obj	_	IFD_tag=nven
+11	í	í	ADP	P	_	12	case	_	IFD_tag=aþ
+12	undanrásum	undanrás	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	9	obl	_	IFD_tag=nvfþ
+13	á	á	ADP	P	_	14	case	_	IFD_tag=ao
+14	miðvikudag	miðvikudagur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	9	obl	_	IFD_tag=nkeo
+15	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	14	acl	_	IFD_tag=nveng
+16	16	sextán	NUM	NUM-N	_	15	xcomp	_	IFD_tag=x|SpaceAfter=No
+17	:	:	PUNCT	,	_	18	punct	_	IFD_tag=x|SpaceAfter=No
+18	25	25	NUM	NUM-N	_	16	conj	_	IFD_tag=x|SpaceAfter=No
+19	.	.	PUNCT	.	_	18	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.5
-# X_ID = ID_MISSING
+# X_ID = ID_missing_6
 # text = Komist hún í undanúrslit keppir hún í þeim á fimmtudag klukkan 16:50.
-1	Komist	koma	VERB	VBPS	Mood=Sub|Tense=Pres	5	advcl	_	_
-2	hún	hún	PRON	PRO-N	Case=Nom	1	nsubj	_	_
-3	í	í	ADP	P	_	4	case	_	_
-4	undanúrslit	undanúrslit	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
-5	keppir	keppa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-6	hún	hún	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-7	í	í	ADP	P	_	8	case	_	_
-8	þeim	það	PRON	PRO-D	Case=Dat	5	obl	_	_
-9	á	á	ADP	P	_	10	case	_	_
-10	fimmtudag	fimmtudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
-11	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	acl	_	_
-12	16	sextán	NUM	NUM-N	Case=Nom	11	xcomp	_	SpaceAfter=No
-13	:	:	PUNCT	,	_	14	punct	_	_|SpaceAfter=No
-14	50	fimmtíu	NUM	NUM-N	Case=Nom	12	conj	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	14	punct	_	_
+1	Komist	koma	VERB	VBPS	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	5	advcl	_	IFD_tag=sfm3en
+2	hún	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Prs	1	nsubj	_	IFD_tag=fpven
+3	í	í	ADP	P	_	4	case	_	IFD_tag=aþ
+4	undanúrslit	undanúrslit	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	1	obl	_	IFD_tag=nhfo
+5	keppir	keppa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+6	hún	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Prs	5	nsubj	_	IFD_tag=fpven
+7	í	í	ADP	P	_	8	case	_	IFD_tag=aþ
+8	þeim	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Plur|PronType=Prs	5	obl	_	IFD_tag=fphfþ
+9	á	á	ADP	P	_	10	case	_	IFD_tag=ao
+10	fimmtudag	fimmtudagur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	5	obl	_	IFD_tag=nkeo
+11	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	10	acl	_	IFD_tag=nveng
+12	16	sextán	NUM	NUM-N	_	11	xcomp	_	IFD_tag=x|SpaceAfter=No
+13	:	:	PUNCT	,	_	14	punct	_	IFD_tag=x|SpaceAfter=No
+14	50	fimmtíu	NUM	NUM-N	_	12	conj	_	IFD_tag=x|SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.6
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_7 ; ID_missing_8
 # text = Úrslit 800 metra hlaups kvenna verða svo laugardaginn 9. júlí klukkan 19:40 Ásdís Hjálmsdóttir keppir í spjótkasti.
-1	Úrslit	úrslit	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
-2	800	800	NUM	NUM-G	Case=Gen	3	nummod	_	_
-3	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
-4	hlaups	hlaup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	nmod:poss	_	_
-5	kvenna	kona	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
-6	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-7	svo	svo	ADV	ADV	Degree=Pos	6	advmod	_	_
-8	laugardaginn	laugardagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
-9	9.	níundi	ADJ	ADJ-A	Case=Acc|Degree=Pos	10	amod	_	_
-10	júlí	júlí	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	appos	_	_
-11	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	acl	_	_
-12	19	nítján	NUM	NUM-N	Case=Nom	11	xcomp	_	SpaceAfter=No
-13	:	:	PUNCT	,	_	14	punct	_	_|SpaceAfter=No
-14	40	fjörutíu	NUM	NUM-N	Case=Nom	12	conj	_	_
-15	Ásdís	ásdís	PROPN	NPR-N	_	17	nsubj	_	_
-16	Hjálmsdóttir	hjálmsdóttir	PROPN	NPR-N	_	15	flat:name	_	_
-17	keppir	keppa	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
-18	í	í	ADP	P	_	19	case	_	_
-19	spjótkasti	spjótkast	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	19	punct	_	_
+1	Úrslit	úrslit	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	6	nsubj	_	IFD_tag=nhfn
+2	800	800	NUM	NUM-G	NumType=Card	3	nummod	_	IFD_tag=ta
+3	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	4	nmod:poss	_	IFD_tag=nkfe
+4	hlaups	hlaup	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	1	nmod:poss	_	IFD_tag=nhee
+5	kvenna	kona	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Plur	4	nmod:poss	_	IFD_tag=nvfe
+6	verða	verða	VERB	RDPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fn
+7	svo	svo	ADV	ADV	_	6	advmod	_	IFD_tag=aa
+8	laugardaginn	laugardagur	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	6	obl	_	IFD_tag=nkeog
+9	9.	níundi	ADJ	ADJ-A	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	IFD_tag=lkeovf
+10	júlí	júlí	NOUN	N-G	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	8	appos	_	IFD_tag=nkeo
+11	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	8	acl	_	IFD_tag=nveng
+12	19	nítján	NUM	NUM-N	_	11	xcomp	_	IFD_tag=x|SpaceAfter=No
+13	:	:	PUNCT	,	_	14	punct	_	IFD_tag=x|SpaceAfter=No
+14	40	fjörutíu	NUM	NUM-N	_	12	conj	_	IFD_tag=x
+15	Ásdís	ásdís	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	17	nsubj	_	IFD_tag=nven-s
+16	Hjálmsdóttir	hjálmsdóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	15	flat:name	_	IFD_tag=nven-s
+17	keppir	keppa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	OriginalHead=0
+18	í	í	ADP	P	_	19	case	_	IFD_tag=aþ
+19	spjótkasti	spjótkast	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	17	obl	_	IFD_tag=nheþ|SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.7
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_9 ; ID_missing_10
 # text = Forkeppnin verður klukkan 10:00 eða 11:25 á fimmtudag, en komist hún í úrslit keppir hún í þeim laugardaginn 9. júlí klukkan 16:45.
-1	Forkeppnin	forkeppni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
-2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	advcl	_	_
-4	10	tíu	NUM	NUM-N	Case=Nom	3	xcomp	_	SpaceAfter=No
-5	:	:	PUNCT	,	_	6	punct	_	_|SpaceAfter=No
-6	0	núll	NUM	NUM-N	Case=Nom	4	conj	_	SpaceAfter=No
-7	0	núll	NUM	NUM-N	Case=Nom	4	conj	_	_
-8	eða	eða	CCONJ	CONJ	_	9	cc	_	_
-9	11	ellefu	NUM	NUM-N	Case=Nom	4	conj	_	SpaceAfter=No
-10	:	:	PUNCT	,	_	11	punct	_	_|SpaceAfter=No
-11	25	25	NUM	NUM-N	Case=Nom	9	conj	_	_
-12	á	á	ADP	P	_	13	case	_	_
-13	fimmtudag	fimmtudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	13	punct	_	_
-15	en	en	CCONJ	CONJ	_	20	cc	_	_
-16	komist	koma	VERB	VBPS	Mood=Sub|Tense=Pres	20	advcl	_	_
-17	hún	hún	PRON	PRO-N	Case=Nom	16	nsubj	_	_
-18	í	í	ADP	P	_	19	case	_	_
-19	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obl	_	_
-20	keppir	keppa	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-21	hún	hún	PRON	PRO-N	Case=Nom	20	nsubj	_	_
-22	í	í	ADP	P	_	23	case	_	_
-23	þeim	hann	PRON	PRO-D	Case=Dat	20	obl	_	_
-24	laugardaginn	laugardagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	_
-25	9.	níundi	ADJ	ADJ-A	Case=Acc|Degree=Pos	26	amod	_	_
-26	júlí	júlí	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	appos	_	_
-27	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	acl	_	_
-28	16	sextán	NUM	NUM-N	Case=Nom	27	xcomp	_	SpaceAfter=No
-29	:	:	PUNCT	,	_	30	punct	_	_|SpaceAfter=No
-30	45	45	NUM	NUM-N	Case=Nom	28	conj	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	30	punct	_	_
+1	Forkeppnin	forkeppni	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	nsubj	_	IFD_tag=nveng
+2	verður	verða	VERB	RDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+3	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	advcl	_	IFD_tag=nveng
+4	10	tíu	NUM	NUM-N	_	3	xcomp	_	IFD_tag=x|SpaceAfter=No
+5	:	:	PUNCT	,	_	6	punct	_	IFD_tag=x|SpaceAfter=No
+6	0	núll	NUM	NUM-N	_	4	conj	_	IFD_tag=x|SpaceAfter=No
+7	0	núll	NUM	NUM-N	_	4	conj	_	IFD_tag=x
+8	eða	eða	CCONJ	CONJ	_	9	cc	_	IFD_tag=c
+9	11	ellefu	NUM	NUM-N	_	4	conj	_	IFD_tag=x|SpaceAfter=No
+10	:	:	PUNCT	,	_	11	punct	_	IFD_tag=x|SpaceAfter=No
+11	25	25	NUM	NUM-N	_	9	conj	_	IFD_tag=x
+12	á	á	ADP	P	_	13	case	_	IFD_tag=ao
+13	fimmtudag	fimmtudagur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	3	obl	_	IFD_tag=nkeo|SpaceAfter=No
+14	,	,	PUNCT	,	_	13	punct	_	IFD_tag=,
+15	en	en	CCONJ	CONJ	_	20	cc	_	IFD_tag=c
+16	komist	koma	VERB	VBPS	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	20	advcl	_	IFD_tag=sfm3en
+17	hún	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Prs	16	nsubj	_	IFD_tag=fpven
+18	í	í	ADP	P	_	19	case	_	IFD_tag=aþ
+19	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	16	obl	_	IFD_tag=nhfo
+20	keppir	keppa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	OriginalHead=0
+21	hún	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Prs	20	nsubj	_	IFD_tag=fpven
+22	í	í	ADP	P	_	23	case	_	IFD_tag=aþ
+23	þeim	hann	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Prs	20	obl	_	IFD_tag=fpkfþ
+24	laugardaginn	laugardagur	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	20	obl	_	IFD_tag=nkeog
+25	9.	níundi	ADJ	ADJ-A	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	26	amod	_	IFD_tag=lkeovf
+26	júlí	júlí	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	24	appos	_	IFD_tag=nkeo
+27	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	24	acl	_	IFD_tag=nveng
+28	16	sextán	NUM	NUM-N	_	27	xcomp	_	IFD_tag=x|SpaceAfter=No
+29	:	:	PUNCT	,	_	30	punct	_	IFD_tag=x|SpaceAfter=No
+30	45	45	NUM	NUM-N	_	28	conj	_	IFD_tag=x|SpaceAfter=No
+31	.	.	PUNCT	.	_	30	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.8
-# X_ID = ID_MISSING
+# X_ID = ID_missing_11
 # text = Arna Stefanía Guðmundsdóttir keppir í 400 metra grindahlaupi.
-1	Arna	arna	PROPN	NPR-N	_	4	nsubj	_	_
-2	Stefanía	stefanía	PROPN	NPR-N	_	1	flat:name	_	_
-3	Guðmundsdóttir	guðmundsdóttir	PROPN	NPR-N	_	1	dep	_	_
-4	keppir	keppa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-5	í	í	ADP	P	_	8	case	_	_
-6	400	400	NUM	NUM-G	Case=Gen	7	nummod	_	_
-7	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	_
-8	grindahlaupi	grindahlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	8	punct	_	_
+1	Arna	arna	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	4	nsubj	_	IFD_tag=nven-s
+2	Stefanía	stefanía	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	flat:name	_	IFD_tag=nven-s
+3	Guðmundsdóttir	guðmundsdóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	dep	_	IFD_tag=nven-s
+4	keppir	keppa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+5	í	í	ADP	P	_	8	case	_	IFD_tag=aþ
+6	400	400	NUM	NUM-G	NumType=Card	7	nummod	_	IFD_tag=ta
+7	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	8	nmod:poss	_	IFD_tag=nkfe
+8	grindahlaupi	grindahlaup	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	4	obl	_	IFD_tag=nheþ|SpaceAfter=No
+9	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.9
-# X_ID = ID_MISSING
+# X_ID = ID_missing_12
 # text = Undanrásirnar eru föstudaginn 8. júlí klukkan 12:15.
-1	Undanrásirnar	undanrás	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
-2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
-3	föstudaginn	föstudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
-4	8.	áttundi	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
-5	júlí	júlí	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	appos	_	_
-6	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	acl	_	_
-7	12	tólf	NUM	NUM-N	Case=Nom	6	xcomp	_	SpaceAfter=No
-8	:	:	PUNCT	,	_	9	punct	_	_|SpaceAfter=No
-9	15	fimmtán	NUM	NUM-N	Case=Nom	7	conj	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	9	punct	_	_
+1	Undanrásirnar	undanrás	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Fem|Number=Plur	0	root	_	IFD_tag=nvfng
+2	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	IFD_tag=sfg3fn
+3	föstudaginn	föstudagur	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	1	obl	_	IFD_tag=nkeog
+4	8.	áttundi	ADJ	ADJ-A	NumType=Card	5	amod	_	IFD_tag=ta
+5	júlí	júlí	NOUN	N-G	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	3	appos	_	IFD_tag=nkeo
+6	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	3	acl	_	IFD_tag=nveng
+7	12	tólf	NUM	NUM-N	_	6	xcomp	_	IFD_tag=x|SpaceAfter=No
+8	:	:	PUNCT	,	_	9	punct	_	IFD_tag=x|SpaceAfter=No
+9	15	fimmtán	NUM	NUM-N	_	7	conj	_	IFD_tag=x|SpaceAfter=No
+10	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.10
-# X_ID = ID_MISSING
+# X_ID = ID_missing_13
 # text = Undanúrslitin verða á laugardag klukkan 18:20 og úrslitin á sunnudag klukkan 15:05.
-1	Undanúrslitin	undanúrslit	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
-2	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	á	á	ADP	P	_	4	case	_	_
-4	laugardag	laugardagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
-5	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	acl	_	_
-6	18	átján	NUM	NUM-N	Case=Nom	5	xcomp	_	SpaceAfter=No
-7	:	:	PUNCT	,	_	8	punct	_	_|SpaceAfter=No
-8	20	tuttugu	NUM	NUM-N	Case=Nom	6	conj	_	_
-9	og	og	CCONJ	CONJ	_	12	cc	_	_
-10	úrslitin	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	nsubj	_	_
-11	á	á	ADP	P	_	12	case	_	_
-12	sunnudag	sunnudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	conj	_	_
-13	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	acl	_	_
-14	15	fimmtán	NUM	NUM-N	Case=Nom	13	xcomp	_	SpaceAfter=No
-15	:	:	PUNCT	,	_	16	punct	_	_|SpaceAfter=No
-16	0	núll	NUM	NUM-N	Case=Nom	14	conj	_	SpaceAfter=No
-17	5	fimm	NUM	NUM-N	Case=Nom	14	conj	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	17	punct	_	_
+1	Undanúrslitin	undanúrslit	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	2	nsubj	_	IFD_tag=nhfng
+2	verða	verða	VERB	RDPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fn
+3	á	á	ADP	P	_	4	case	_	IFD_tag=ao
+4	laugardag	laugardagur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	obl	_	IFD_tag=nkeo
+5	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	4	acl	_	IFD_tag=nveng
+6	18	átján	NUM	NUM-N	_	5	xcomp	_	IFD_tag=x|SpaceAfter=No
+7	:	:	PUNCT	,	_	8	punct	_	IFD_tag=x|SpaceAfter=No
+8	20	tuttugu	NUM	NUM-N	_	6	conj	_	IFD_tag=x
+9	og	og	CCONJ	CONJ	_	12	cc	_	IFD_tag=c
+10	úrslitin	úrslit	NOUN	NS-A	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	12	nsubj	_	IFD_tag=nhfng
+11	á	á	ADP	P	_	12	case	_	IFD_tag=ao
+12	sunnudag	sunnudagur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	conj	_	IFD_tag=nkeo
+13	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	12	acl	_	IFD_tag=nveng
+14	15	fimmtán	NUM	NUM-N	_	13	xcomp	_	IFD_tag=x|SpaceAfter=No
+15	:	:	PUNCT	,	_	16	punct	_	IFD_tag=x|SpaceAfter=No
+16	0	núll	NUM	NUM-N	_	14	conj	_	IFD_tag=x|SpaceAfter=No
+17	5	fimm	NUM	NUM-N	_	14	conj	_	IFD_tag=x|SpaceAfter=No
+18	.	.	PUNCT	.	_	17	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.11
-# X_ID = ID_MISSING
+# X_ID = ID_missing_14
 # text = Guðni Valur Guðnason keppir í kringlukasti.
-1	Guðni	guðni	PROPN	NPR-N	_	4	nsubj	_	_
-2	Valur	valur	PROPN	NPR-N	_	1	flat:name	_	_
-3	Guðnason	guðnason	PROPN	NPR-N	_	1	dep	_	_
-4	keppir	keppa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-5	í	í	ADP	P	_	6	case	_	_
-6	kringlukasti	kringlukast	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	6	punct	_	_
+1	Guðni	guðni	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	4	nsubj	_	IFD_tag=nken-s
+2	Valur	valur	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	flat:name	_	IFD_tag=nken-s
+3	Guðnason	guðnason	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	dep	_	IFD_tag=nken-s
+4	keppir	keppa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+5	í	í	ADP	P	_	6	case	_	IFD_tag=aþ
+6	kringlukasti	kringlukast	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	4	obl	_	IFD_tag=nheþ|SpaceAfter=No
+7	.	.	PUNCT	.	_	6	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.12
-# X_ID = ID_MISSING
+# X_ID = ID_missing_15
 # text = Forkeppnin verður á fimmtudag klukkan 14:35 eða 16:15 eftir því í hvorum riðlinum hann lendir.
-1	Forkeppnin	forkeppni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
-2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	á	á	ADP	P	_	4	case	_	_
-4	fimmtudag	fimmtudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
-5	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	acl	_	_
-6	14	fjórtán	NUM	NUM-N	Case=Nom	5	xcomp	_	SpaceAfter=No
-7	:	:	PUNCT	,	_	8	punct	_	_|SpaceAfter=No
-8	35	35	NUM	NUM-N	Case=Nom	6	conj	_	_
-9	eða	eða	CCONJ	CONJ	_	10	cc	_	_
-10	16	sextán	NUM	NUM-N	Case=Nom	6	conj	_	SpaceAfter=No
-11	:	:	PUNCT	,	_	12	punct	_	_|SpaceAfter=No
-12	15	fimmtán	NUM	NUM-N	Case=Nom	10	conj	_	_
-13	eftir	eftir	ADP	P	_	14	case	_	_
-14	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
-15	í	í	ADP	P	_	17	case	_	_
-16	hvorum	hvor	DET	WD-D	Case=Dat|Number=Sing	17	det	_	_
-17	riðlinum	riðill	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
-18	hann	hann	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-19	lendir	lenda	VERB	VBPI	Mood=Ind|Tense=Pres	14	ccomp	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	19	punct	_	_
+1	Forkeppnin	forkeppni	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	nsubj	_	IFD_tag=nveng
+2	verður	verða	VERB	RDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+3	á	á	ADP	P	_	4	case	_	IFD_tag=ao
+4	fimmtudag	fimmtudagur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	obl	_	IFD_tag=nkeo
+5	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	4	acl	_	IFD_tag=nveng
+6	14	fjórtán	NUM	NUM-N	_	5	xcomp	_	IFD_tag=x|SpaceAfter=No
+7	:	:	PUNCT	,	_	8	punct	_	IFD_tag=x|SpaceAfter=No
+8	35	35	NUM	NUM-N	_	6	conj	_	IFD_tag=x
+9	eða	eða	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
+10	16	sextán	NUM	NUM-N	_	6	conj	_	IFD_tag=x|SpaceAfter=No
+11	:	:	PUNCT	,	_	12	punct	_	IFD_tag=x|SpaceAfter=No
+12	15	fimmtán	NUM	NUM-N	_	10	conj	_	IFD_tag=x
+13	eftir	eftir	ADP	P	_	14	case	_	IFD_tag=aþ
+14	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	2	obl	_	IFD_tag=fpheþ
+15	í	í	ADP	P	_	17	case	_	IFD_tag=aþ
+16	hvorum	hvor	DET	WD-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Ind	17	det	_	IFD_tag=fokeþ
+17	riðlinum	riðill	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	19	obl	_	IFD_tag=nkeþg
+18	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	19	nsubj	_	IFD_tag=fpken
+19	lendir	lenda	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	ccomp	_	IFD_tag=sfg3en|SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.13
-# X_ID = ID_MISSING
+# X_ID = ID_missing_16
 # text = Komist Guðni Valur í úrslit verða þau laugardaginn 9. júlí klukkan 18:35.
-1	Komist	koma	VERB	VBPS	Mood=Sub|Tense=Pres	6	advcl	_	_
-2	Guðni	guðni	PROPN	NPR-N	_	1	nsubj	_	_
-3	Valur	valur	PROPN	NPR-N	_	2	flat:name	_	_
-4	í	í	ADP	P	_	5	case	_	_
-5	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obl	_	_
-6	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-7	þau	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
-8	laugardaginn	laugardagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
-9	9.	níundi	ADJ	ADJ-A	Case=Acc|Degree=Pos	10	amod	_	_
-10	júlí	júlí	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	appos	_	_
-11	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	acl	_	_
-12	18	átján	NUM	NUM-N	Case=Nom	11	xcomp	_	SpaceAfter=No
-13	:	:	PUNCT	,	_	14	punct	_	_|SpaceAfter=No
-14	35	35	NUM	NUM-N	Case=Nom	12	conj	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	14	punct	_	_
+1	Komist	koma	VERB	VBPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	6	advcl	_	IFD_tag=svm3en
+2	Guðni	guðni	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	nsubj	_	IFD_tag=nken-s
+3	Valur	valur	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	flat:name	_	IFD_tag=nken-s
+4	í	í	ADP	P	_	5	case	_	IFD_tag=ao
+5	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	1	obl	_	IFD_tag=nhfo
+6	verða	verða	VERB	RDPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fn
+7	þau	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Plur|PronType=Prs	6	nsubj	_	IFD_tag=fphfn
+8	laugardaginn	laugardagur	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	6	obl	_	IFD_tag=nkeog
+9	9.	níundi	ADJ	ADJ-A	NumType=Card	10	amod	_	IFD_tag=ta
+10	júlí	júlí	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	8	appos	_	IFD_tag=nkeo
+11	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	8	acl	_	IFD_tag=nveng
+12	18	átján	NUM	NUM-N	_	11	xcomp	_	IFD_tag=x|SpaceAfter=No
+13	:	:	PUNCT	,	_	14	punct	_	IFD_tag=x|SpaceAfter=No
+14	35	35	NUM	NUM-N	_	12	conj	_	IFD_tag=x|SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.14
-# X_ID = ID_MISSING
+# X_ID = ID_missing_17
 # text = Hafdís Sigurðardóttir keppir í langstökki.
-1	Hafdís	hafdís	PROPN	NPR-N	_	3	nsubj	_	_
-2	Sigurðardóttir	sigurðardóttir	PROPN	NPR-N	_	1	flat:name	_	_
-3	keppir	keppa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	í	í	ADP	P	_	5	case	_	_
-5	langstökki	langstökk	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-6	.	.	PUNCT	.	_	5	punct	_	_
+1	Hafdís	hafdís	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	3	nsubj	_	IFD_tag=nven-s
+2	Sigurðardóttir	sigurðardóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	flat:name	_	IFD_tag=nven-s
+3	keppir	keppa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+4	í	í	ADP	P	_	5	case	_	IFD_tag=aþ
+5	langstökki	langstökk	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	3	obl	_	IFD_tag=nheþ|SpaceAfter=No
+6	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.15
-# X_ID = ID_MISSING
+# X_ID = ID_missing_18
 # text = Forkeppnin verður á miðvikudag klukkan 16:40.
-1	Forkeppnin	forkeppni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
-2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	á	á	ADP	P	_	4	case	_	_
-4	miðvikudag	miðvikudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
-5	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	acl	_	_
-6	16	sextán	NUM	NUM-N	Case=Nom	5	xcomp	_	SpaceAfter=No
-7	:	:	PUNCT	,	_	8	punct	_	_|SpaceAfter=No
-8	40	fjörutíu	NUM	NUM-N	Case=Nom	6	conj	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	8	punct	_	_
+1	Forkeppnin	forkeppni	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	nsubj	_	IFD_tag=nveng
+2	verður	verða	VERB	RDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+3	á	á	ADP	P	_	4	case	_	IFD_tag=ao
+4	miðvikudag	miðvikudagur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	obl	_	IFD_tag=nkeo
+5	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	4	acl	_	IFD_tag=nveng
+6	16	sextán	NUM	NUM-N	_	5	xcomp	_	IFD_tag=x|SpaceAfter=No
+7	:	:	PUNCT	,	_	8	punct	_	IFD_tag=x|SpaceAfter=No
+8	40	fjörutíu	NUM	NUM-N	_	6	conj	_	IFD_tag=x|SpaceAfter=No
+9	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.16
-# X_ID = ID_MISSING
+# X_ID = ID_missing_19
 # text = Komist hún í úrslit verða þau föstudaginn 8. júlí klukkan 17:20.
-1	Komist	koma	VERB	VBPS	Mood=Sub|Tense=Pres	5	advcl	_	_
-2	hún	hún	PRON	PRO-N	Case=Nom	1	nsubj	_	_
-3	í	í	ADP	P	_	4	case	_	_
-4	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obl	_	_
-5	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-6	þau	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-7	föstudaginn	föstudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
-8	8.	áttundi	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
-9	júlí	júlí	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	appos	_	_
-10	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	acl	_	_
-11	17	sautján	NUM	NUM-N	Case=Nom	10	xcomp	_	SpaceAfter=No
-12	:	:	PUNCT	,	_	13	punct	_	_|SpaceAfter=No
-13	20	tuttugu	NUM	NUM-N	Case=Nom	11	conj	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	13	punct	_	_
+1	Komist	koma	VERB	VBPS	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	5	advcl	_	IFD_tag=sfm3en
+2	hún	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Prs	1	nsubj	_	IFD_tag=fpven
+3	í	í	ADP	P	_	4	case	_	IFD_tag=ao
+4	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	1	obl	_	IFD_tag=nhfo
+5	verða	verða	VERB	RDPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fn
+6	þau	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Plur|PronType=Prs	5	nsubj	_	IFD_tag=fphfn
+7	föstudaginn	föstudagur	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	5	obl	_	IFD_tag=nkeog
+8	8.	áttundi	ADJ	ADJ-A	NumType=Card	9	amod	_	IFD_tag=ta
+9	júlí	júlí	NOUN	N-G	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	7	appos	_	IFD_tag=nkeo
+10	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	7	acl	_	IFD_tag=nveng
+11	17	sautján	NUM	NUM-N	_	10	xcomp	_	IFD_tag=x|SpaceAfter=No
+12	:	:	PUNCT	,	_	13	punct	_	IFD_tag=x|SpaceAfter=No
+13	20	tuttugu	NUM	NUM-N	_	11	conj	_	IFD_tag=x|SpaceAfter=No
+14	.	.	PUNCT	.	_	13	punct	_	IFD_tag=.
 
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.17
-# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING ; ID_MISSING ; ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_20 ; ID_missing_21 ; ID_missing_22 ; ID_missing_23 ; ID_missing_24 ; ID_missing_25
 # text = miðvikudagurinn 6. júlí: Frá kl.  13:30 á RÚV fimmtudagurinn 7. júlí: Frá kl.  14:05 á RÚV föstudagurinn 8. júlí: Frá kl.  16:05 á RÚV og RÚV 2 laugardagurinn 9. júlí: Frá kl.  16:45 á RÚV og RÚV 2 sunnudagurinn 10. júlí: Frá kl.  15:00 á RÚV og RÚV 2 Sigurbjörn Árni Arngrímsson mun lýsa mótinu af sinni alkunnu snilld.
-1	miðvikudagurinn	miðvikudagur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-2	6.	sjötti	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
-3	júlí	júlí	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	appos	_	SpaceAfter=No
-4	:	:	PUNCT	,	_	3	punct	_	_
-5	Frá	frá	ADP	P	_	1	obl	_	_
-6	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	acl	_	_
-7		hinn	DET	D-N	Case=Nom|PronType=Art	6	det	_	_
-8	13	þrettán	NUM	NUM-N	Case=Nom	6	xcomp	_	SpaceAfter=No
-9	:	:	PUNCT	,	_	10	punct	_	_|SpaceAfter=No
-10	30	þrjátíu	NUM	NUM-N	Case=Nom	8	conj	_	_
-11	á	á	ADP	P	_	12	case	_	_
-12	RÚV	rúv	PROPN	NPR-D	_	1	obl	_	_
-13	fimmtudagurinn	fimmtudagur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	OriginalHead=0
-14	7.	sjöundi	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	amod	_	_
-15	júlí	júlí	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	appos	_	SpaceAfter=No
-16	:	:	PUNCT	,	_	15	punct	_	_
-17	Frá	frá	ADP	P	_	13	obl	_	_
-18	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	acl	_	_
-19		hinn	DET	D-N	Case=Nom|PronType=Art	18	det	_	_
-20	14	fjórtán	NUM	NUM-N	Case=Nom	18	xcomp	_	SpaceAfter=No
-21	:	:	PUNCT	,	_	22	punct	_	_|SpaceAfter=No
-22	0	núll	NUM	NUM-N	Case=Nom	20	conj	_	SpaceAfter=No
-23	5	fimm	NUM	NUM-N	Case=Nom	20	conj	_	_
-24	á	á	ADP	P	_	25	case	_	_
-25	RÚV	rúv	PROPN	NPR-D	_	13	obl	_	_
-26	föstudagurinn	föstudagur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	OriginalHead=0
-27	8.	áttundi	ADJ	ADJ-N	Case=Nom|Degree=Pos	28	amod	_	_
-28	júlí	júlí	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	26	appos	_	SpaceAfter=No
-29	:	:	PUNCT	,	_	28	punct	_	_
-30	Frá	frá	ADP	P	_	26	obl	_	_
-31	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	30	acl	_	_
-32		hinn	DET	D-N	Case=Nom|PronType=Art	31	det	_	_
-33	16	sextán	NUM	NUM-N	Case=Nom	31	xcomp	_	SpaceAfter=No
-34	:	:	PUNCT	,	_	35	punct	_	_|SpaceAfter=No
-35	0	núll	NUM	NUM-N	Case=Nom	33	conj	_	SpaceAfter=No
-36	5	fimm	NUM	NUM-N	Case=Nom	33	conj	_	_
-37	á	á	ADP	P	_	38	case	_	_
-38	RÚV	rúv	PROPN	NPR-D	_	26	obl	_	_
-39	og	og	CCONJ	CONJ	_	40	cc	_	_
-40	RÚV	rúv	PROPN	NPR-D	_	38	conj	_	_
-41	2	tveir	NUM	NUM-N	Case=Nom	40	nmod:poss	_	_
-42	laugardagurinn	laugardagur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	OriginalHead=0
-43	9.	níundi	ADJ	ADJ-N	Case=Nom|Degree=Pos	44	amod	_	_
-44	júlí	júlí	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	42	appos	_	SpaceAfter=No
-45	:	:	PUNCT	,	_	44	punct	_	_
-46	Frá	frá	ADP	P	_	42	obl	_	_
-47	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	46	acl	_	_
-48		hinn	DET	D-N	Case=Nom|PronType=Art	47	det	_	_
-49	16	sextán	NUM	NUM-N	Case=Nom	47	xcomp	_	SpaceAfter=No
-50	:	:	PUNCT	,	_	51	punct	_	_|SpaceAfter=No
-51	45	45	NUM	NUM-N	Case=Nom	49	conj	_	_
-52	á	á	ADP	P	_	53	case	_	_
-53	RÚV	rúv	PROPN	NPR-D	_	42	obl	_	_
-54	og	og	CCONJ	CONJ	_	55	cc	_	_
-55	RÚV	rúv	PROPN	NPR-D	_	53	conj	_	_
-56	2	tveir	NUM	NUM-N	Case=Nom	55	nmod:poss	_	_
-57	sunnudagurinn	sunnudagur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	OriginalHead=0
-58	10.	tíundi	ADJ	ADJ-N	Case=Nom|Degree=Pos	59	amod	_	_
-59	júlí	júlí	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	57	appos	_	SpaceAfter=No
-60	:	:	PUNCT	,	_	59	punct	_	_
-61	Frá	frá	ADP	P	_	57	obl	_	_
-62	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	61	acl	_	_
-63		hinn	DET	D-N	Case=Nom|PronType=Art	62	det	_	_
-64	15	sextán	NUM	NUM-N	Case=Nom	62	xcomp	_	SpaceAfter=No
-65	:	:	PUNCT	,	_	66	punct	_	_|SpaceAfter=No
-66	0	núll	NUM	NUM-N	Case=Nom	64	conj	_	SpaceAfter=No
-67	0	núll	NUM	NUM-N	Case=Nom	64	conj	_	_
-68	á	á	ADP	P	_	69	case	_	_
-69	RÚV	rúv	PROPN	NPR-D	_	57	obl	_	_
-70	og	og	CCONJ	CONJ	_	71	cc	_	_
-71	RÚV	rúv	PROPN	NPR-D	_	69	conj	_	_
-72	2	tveir	NUM	NUM-N	Case=Nom	71	nmod:poss	_	_
-73	Sigurbjörn	sigurbjörn	PROPN	NPR-N	_	77	nsubj	_	_
-74	Árni	árni	PROPN	NPR-N	_	73	flat:name	_	_
-75	Arngrímsson	arngrímsson	PROPN	NPR-N	_	73	dep	_	_
-76	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	77	aux	_	_
-77	lýsa	lýsa	VERB	VB	VerbForm=Inf	1	conj	_	OriginalHead=0
-78	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	77	obj	_	_
-79	af	af	ADP	P	_	82	case	_	_
-80	sinni	sinn	PRON	PRO-D	Case=Dat	82	nmod:poss	_	_
-81	alkunnu	alkunnur	ADJ	ADJ-D	Case=Dat|Degree=Pos	82	amod	_	_
-82	snilld	snilld	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	77	obl	_	SpaceAfter=No
-83	.	.	PUNCT	.	_	82	punct	_	_
+1	miðvikudagurinn	miðvikudagur	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	0	root	_	IFD_tag=nkeng
+2	6.	sjötti	ADJ	ADJ-N	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	IFD_tag=lkeovf
+3	júlí	júlí	NOUN	N-G	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	1	appos	_	IFD_tag=nkeo|SpaceAfter=No
+4	:	:	PUNCT	,	_	3	punct	_	IFD_tag=:
+5	Frá	frá	ADP	P	_	1	obl	_	IFD_tag=aa
+6	kl.	klukka	NOUN	N-N	_	5	acl	_	IFD_tag=as
+7		hinn	DET	D-N	_	6	det	_	IFD_tag=x
+8	13	þrettán	NUM	NUM-N	_	6	xcomp	_	IFD_tag=x|SpaceAfter=No
+9	:	:	PUNCT	,	_	10	punct	_	IFD_tag=x|SpaceAfter=No
+10	30	þrjátíu	NUM	NUM-N	_	8	conj	_	IFD_tag=x
+11	á	á	ADP	P	_	12	case	_	IFD_tag=aþ
+12	RÚV	rúv	PROPN	NPR-D	_	1	obl	_	IFD_tag=as
+13	fimmtudagurinn	fimmtudagur	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	conj	_	OriginalHead=0
+14	7.	sjöundi	ADJ	ADJ-N	NumType=Card	15	amod	_	IFD_tag=ta
+15	júlí	júlí	NOUN	N-G	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	13	appos	_	IFD_tag=nkeo|SpaceAfter=No
+16	:	:	PUNCT	,	_	15	punct	_	IFD_tag=:
+17	Frá	frá	ADP	P	_	13	obl	_	IFD_tag=aa
+18	kl.	klukka	NOUN	N-N	_	17	acl	_	IFD_tag=as
+19		hinn	DET	D-N	_	18	det	_	IFD_tag=x
+20	14	fjórtán	NUM	NUM-N	_	18	xcomp	_	IFD_tag=x|SpaceAfter=No
+21	:	:	PUNCT	,	_	22	punct	_	IFD_tag=x|SpaceAfter=No
+22	0	núll	NUM	NUM-N	_	20	conj	_	IFD_tag=x|SpaceAfter=No
+23	5	fimm	NUM	NUM-N	_	20	conj	_	IFD_tag=x
+24	á	á	ADP	P	_	25	case	_	IFD_tag=aþ
+25	RÚV	rúv	PROPN	NPR-D	_	13	obl	_	IFD_tag=as
+26	föstudagurinn	föstudagur	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	conj	_	OriginalHead=0
+27	8.	áttundi	ADJ	ADJ-N	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	28	amod	_	IFD_tag=lkeovf
+28	júlí	júlí	NOUN	N-G	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	26	appos	_	IFD_tag=nkeo|SpaceAfter=No
+29	:	:	PUNCT	,	_	28	punct	_	IFD_tag=:
+30	Frá	frá	ADP	P	_	26	obl	_	IFD_tag=aa
+31	kl.	klukka	NOUN	N-N	_	30	acl	_	IFD_tag=as
+32		hinn	DET	D-N	_	31	det	_	IFD_tag=x
+33	16	sextán	NUM	NUM-N	_	31	xcomp	_	IFD_tag=x|SpaceAfter=No
+34	:	:	PUNCT	,	_	35	punct	_	IFD_tag=x|SpaceAfter=No
+35	0	núll	NUM	NUM-N	_	33	conj	_	IFD_tag=x|SpaceAfter=No
+36	5	fimm	NUM	NUM-N	_	33	conj	_	IFD_tag=x
+37	á	á	ADP	P	_	38	case	_	IFD_tag=aþ
+38	RÚV	rúv	PROPN	NPR-D	_	26	obl	_	IFD_tag=as
+39	og	og	CCONJ	CONJ	_	40	cc	_	IFD_tag=c
+40	RÚV	rúv	PROPN	NPR-D	_	38	conj	_	IFD_tag=as
+41	2	tveir	NUM	NUM-N	NumType=Card	40	nmod:poss	_	IFD_tag=ta
+42	laugardagurinn	laugardagur	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	conj	_	OriginalHead=0
+43	9.	níundi	ADJ	ADJ-N	NumType=Card	44	amod	_	IFD_tag=ta
+44	júlí	júlí	NOUN	N-G	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	42	appos	_	IFD_tag=nkeo|SpaceAfter=No
+45	:	:	PUNCT	,	_	44	punct	_	IFD_tag=:
+46	Frá	frá	ADP	P	_	42	obl	_	IFD_tag=aa
+47	kl.	klukka	NOUN	N-N	_	46	acl	_	IFD_tag=as
+48		hinn	DET	D-N	_	47	det	_	IFD_tag=x
+49	16	sextán	NUM	NUM-N	_	47	xcomp	_	IFD_tag=x|SpaceAfter=No
+50	:	:	PUNCT	,	_	51	punct	_	IFD_tag=x|SpaceAfter=No
+51	45	45	NUM	NUM-N	_	49	conj	_	IFD_tag=x
+52	á	á	ADP	P	_	53	case	_	IFD_tag=aþ
+53	RÚV	rúv	PROPN	NPR-D	_	42	obl	_	IFD_tag=as
+54	og	og	CCONJ	CONJ	_	55	cc	_	IFD_tag=c
+55	RÚV	rúv	PROPN	NPR-D	_	53	conj	_	IFD_tag=as
+56	2	tveir	NUM	NUM-N	NumType=Card	55	nmod:poss	_	IFD_tag=ta
+57	sunnudagurinn	sunnudagur	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	1	conj	_	OriginalHead=0
+58	10.	tíundi	ADJ	ADJ-N	NumType=Card	59	amod	_	IFD_tag=ta
+59	júlí	júlí	NOUN	N-G	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	57	appos	_	IFD_tag=nkeo|SpaceAfter=No
+60	:	:	PUNCT	,	_	59	punct	_	IFD_tag=:
+61	Frá	frá	ADP	P	_	57	obl	_	IFD_tag=aa
+62	kl.	klukka	NOUN	N-N	_	61	acl	_	IFD_tag=as
+63		hinn	DET	D-N	_	62	det	_	IFD_tag=x
+64	15	sextán	NUM	NUM-N	_	62	xcomp	_	IFD_tag=x|SpaceAfter=No
+65	:	:	PUNCT	,	_	66	punct	_	IFD_tag=x|SpaceAfter=No
+66	0	núll	NUM	NUM-N	_	64	conj	_	IFD_tag=x|SpaceAfter=No
+67	0	núll	NUM	NUM-N	_	64	conj	_	IFD_tag=x
+68	á	á	ADP	P	_	69	case	_	IFD_tag=aþ
+69	RÚV	rúv	PROPN	NPR-D	_	57	obl	_	IFD_tag=as
+70	og	og	CCONJ	CONJ	_	71	cc	_	IFD_tag=c
+71	RÚV	rúv	PROPN	NPR-D	_	69	conj	_	IFD_tag=as
+72	2	tveir	NUM	NUM-N	NumType=Card	71	nmod:poss	_	IFD_tag=ta
+73	Sigurbjörn	sigurbjörn	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	77	nsubj	_	IFD_tag=nken-s
+74	Árni	árni	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	73	flat:name	_	IFD_tag=nken-s
+75	Arngrímsson	arngrímsson	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	73	dep	_	IFD_tag=nken-s
+76	mun	munu	AUX	MDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	77	aux	_	IFD_tag=sfg3en
+77	lýsa	lýsa	VERB	VB	VerbForm=Inf|Voice=Act	1	conj	_	OriginalHead=0
+78	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	77	obj	_	IFD_tag=nheþg
+79	af	af	ADP	P	_	82	case	_	IFD_tag=aþ
+80	sinni	sinn	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Prs	82	nmod:poss	_	IFD_tag=feveþ
+81	alkunnu	alkunnur	ADJ	ADJ-D	Case=Dat|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	82	amod	_	IFD_tag=lveþvf
+82	snilld	snilld	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	77	obl	_	IFD_tag=nveþ|SpaceAfter=No
+83	.	.	PUNCT	.	_	82	punct	_	IFD_tag=.
 

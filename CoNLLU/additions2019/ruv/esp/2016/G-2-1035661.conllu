@@ -1,167 +1,167 @@
 # sent_id = RUV_ESP_2016_G-2-1035661,.1
-# X_ID = ID_MISSING
+# X_ID = ID_missing_1
 # text = Alþjóðaknattspyrnusambandið, FIFA, ákvað í maí að samþykkja Kósovó og Gíbraltar sem 210. og 211. aðildarþjóðir sambandsins.
-1	Alþjóðaknattspyrnusambandið	alþjóðaknattspyrnusamband	PROPN	NPR-N	_	5	nsubj	_	SpaceAfter=No
-2	,	,	PUNCT	,	_	1	punct	_	_
-3	FIFA	fifa	PROPN	NPR-N	_	1	appos	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	3	punct	_	_
-5	ákvað	ákveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-6	í	í	ADP	P	_	7	case	_	_
-7	maí	maí	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
-8	að	að	PART	TO	_	9	mark	_	_
-9	samþykkja	samþykkja	VERB	VB	VerbForm=Inf	5	acl	_	_
-10	Kósovó	kósovó	PROPN	NPR-A	_	9	obj	_	_
-11	og	og	CCONJ	CONJ	_	10	cc	_	_
-12	Gíbraltar	gíbraltar	PROPN	NPR-A	_	10	dep	_	_
-13	sem	sem	SCONJ	C	_	17	mark	_	_
-14	210.	210.	NUM	NUM-A	Case=Acc	17	nummod	_	_
-15	og	og	CCONJ	CONJ	_	14	cc	_	_
-16	211.	211.	NUM	NUM-A	Case=Acc	14	nummod	_	_
-17	aðildarþjóðir	aðildarþjóð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	advcl	_	_
-18	sambandsins	samband	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	nmod:poss	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	18	punct	_	_
+1	Alþjóðaknattspyrnusambandið	alþjóðaknattspyrnusamband	PROPN	NPR-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	5	nsubj	_	IFD_tag=nhengs|SpaceAfter=No
+2	,	,	PUNCT	,	_	1	punct	_	IFD_tag=,
+3	FIFA	fifa	PROPN	NPR-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	IFD_tag=nxen-s|SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	IFD_tag=,
+5	ákvað	ákveða	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
+6	í	í	ADP	P	_	7	case	_	IFD_tag=aþ
+7	maí	maí	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	5	obl	_	IFD_tag=nkeþ
+8	að	að	PART	TO	_	9	mark	_	IFD_tag=cn
+9	samþykkja	samþykkja	VERB	VB	VerbForm=Inf|Voice=Act	5	acl	_	IFD_tag=sng
+10	Kósovó	kósovó	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	9	obj	_	IFD_tag=nveo-s
+11	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
+12	Gíbraltar	gíbraltar	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	10	dep	_	IFD_tag=nheo-s
+13	sem	sem	SCONJ	C	_	17	mark	_	IFD_tag=c
+14	210.	210.	NUM	NUM-A	NumType=Card	17	nummod	_	IFD_tag=ta
+15	og	og	CCONJ	CONJ	_	14	cc	_	IFD_tag=c
+16	211.	211.	NUM	NUM-A	NumType=Card	14	nummod	_	IFD_tag=ta
+17	aðildarþjóðir	aðildarþjóð	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	9	advcl	_	IFD_tag=nvfo
+18	sambandsins	samband	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	17	nmod:poss	_	IFD_tag=nheeg|SpaceAfter=No
+19	.	.	PUNCT	.	_	18	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1035661,.2
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_2 ; ID_missing_3
 # text = Þjóðirnar hafa því þátttökurétt í undankeppni HM 2018 sem hefst í september og í dag var ákveðið að Kósovó keppir í I-riðli, eins og Ísland, Króatía, Úkraína, Tyrkland og Finnland.
-1	Þjóðirnar	þjóð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
-2	hafa	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
-4	þátttökurétt	þátttökuréttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
-5	í	í	ADP	P	_	6	case	_	_
-6	undankeppni	undankeppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
-7	HM	hm	PROPN	NPR-G	_	6	nmod:poss	_	_
-8	2018	2018	NUM	NUM-A	Case=Acc	7	obl	_	_
-9	sem	sem	SCONJ	C	_	10	mark	_	_
-10	hefst	hefja	VERB	VBPI	Mood=Ind|Tense=Pres	6	acl:relcl	_	_
-11	í	í	ADP	P	_	12	case	_	_
-12	september	september	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
-13	og	og	CCONJ	CONJ	_	17	cc	_	_
-14	í	í	ADP	P	_	15	case	_	_
-15	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
-16	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	17	cop	_	_
-17	ákveðið	ákveða	VERB	VAN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-18	að	að	SCONJ	C	_	20	mark	_	_
-19	Kósovó	kósovó	PROPN	NPR-N	_	20	nsubj	_	_
-20	keppir	keppa	VERB	VBPI	Mood=Ind|Tense=Pres	17	ccomp	_	_
-21	í	í	ADP	P	_	22	case	_	_
-22	I-riðli	i-riðill	PROPN	NPR-D	_	20	obl	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	22	punct	_	_
-24	eins	_	ADV	ADVR	Degree=Cmp	20	advmod	_	_
-25	og	_	ADP	P	_	26	case	_	_
-26	Ísland	ísland	PROPN	NPR-N	_	24	obl	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	26	punct	_	_
-28	Króatía	króatía	PROPN	NPR-N	_	26	dep	_	SpaceAfter=No
-29	,	,	PUNCT	,	_	28	punct	_	_
-30	Úkraína	úkraína	PROPN	NPR-N	_	26	dep	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	30	punct	_	_
-32	Tyrkland	tyrkland	PROPN	NPR-N	_	26	dep	_	_
-33	og	og	CCONJ	CONJ	_	26	cc	_	_
-34	Finnland	finnland	PROPN	NPR-N	_	26	dep	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	34	punct	_	_
+1	Þjóðirnar	þjóð	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Fem|Number=Plur	2	nsubj	_	IFD_tag=nvfng
+2	hafa	hafa	VERB	HVPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fn
+3	því	það	PRON	PRO-D	_	2	obl	_	IFD_tag=aa
+4	þátttökurétt	þátttökuréttur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	obj	_	IFD_tag=nkeo
+5	í	í	ADP	P	_	6	case	_	IFD_tag=aþ
+6	undankeppni	undankeppni	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	4	obl	_	IFD_tag=nveþ
+7	HM	hm	PROPN	NPR-G	_	6	nmod:poss	_	IFD_tag=as
+8	2018	2018	NUM	NUM-A	NumType=Card	7	obl	_	IFD_tag=ta
+9	sem	sem	SCONJ	C	_	10	mark	_	IFD_tag=ct
+10	hefst	hefja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	6	acl:relcl	_	IFD_tag=sfm3en
+11	í	í	ADP	P	_	12	case	_	IFD_tag=aþ
+12	september	september	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	10	obl	_	IFD_tag=nkeþ
+13	og	og	CCONJ	CONJ	_	17	cc	_	IFD_tag=c
+14	í	í	ADP	P	_	15	case	_	IFD_tag=aþ
+15	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	17	obl	_	IFD_tag=nkeo
+16	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	cop	_	IFD_tag=sfg3eþ
+17	ákveðið	ákveða	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	2	conj	_	OriginalHead=0
+18	að	að	SCONJ	C	_	20	mark	_	IFD_tag=c
+19	Kósovó	kósovó	PROPN	NPR-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	IFD_tag=nxen-s
+20	keppir	keppa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	ccomp	_	IFD_tag=sfg3en
+21	í	í	ADP	P	_	22	case	_	IFD_tag=aþ
+22	I-riðli	i-riðill	PROPN	NPR-D	_	20	obl	_	IFD_tag=x|SpaceAfter=No
+23	,	,	PUNCT	,	_	22	punct	_	IFD_tag=,
+24	eins	_	ADV	ADVR	_	20	advmod	_	IFD_tag=x
+25	og	og	ADP	P	_	26	case	_	IFD_tag=c
+26	Ísland	ísland	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	24	obl	_	IFD_tag=nhen-s|SpaceAfter=No
+27	,	,	PUNCT	,	_	26	punct	_	IFD_tag=,
+28	Króatía	króatía	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	26	dep	_	IFD_tag=nven-s|SpaceAfter=No
+29	,	,	PUNCT	,	_	28	punct	_	IFD_tag=,
+30	Úkraína	úkraína	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	26	dep	_	IFD_tag=nven-s|SpaceAfter=No
+31	,	,	PUNCT	,	_	30	punct	_	IFD_tag=,
+32	Tyrkland	tyrkland	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	26	dep	_	IFD_tag=nhen-s
+33	og	og	CCONJ	CONJ	_	26	cc	_	IFD_tag=c
+34	Finnland	finnland	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	26	dep	_	IFD_tag=nhen-s|SpaceAfter=No
+35	.	.	PUNCT	.	_	34	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1035661,.3
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_4 ; ID_missing_5
 # text = Alls eru riðlarnir í undankeppninni níu talsins og áður en Gíbraltar og Kósovó voru tekin inn voru sex lið í öllum riðlum nema H og I sem innihéldu fimm lið.
-1	Alls	alls	DET	Q-G	Case=Gen|Degree=Pos	5	obl	_	_
-2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-3	riðlarnir	riðill	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
-4	í	í	ADP	P	_	5	case	_	_
-5	undankeppninni	undankeppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
-6	níu	níu	NUM	NUM-N	Case=Nom	7	amod	_	_
-7	talsins	tal	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	amod	_	_
-8	og	og	CCONJ	CONJ	_	22	cc	_	_
-9	áður	áður	ADV	ADVR	Degree=Cmp	22	advmod	_	_
-10	en	en	ADP	P	_	15	case	_	_
-11	Gíbraltar	gíbraltar	PROPN	NPR-N	_	15	nsubj	_	_
-12	og	og	CCONJ	CONJ	_	11	cc	_	_
-13	Kósovó	kósovó	PROPN	NPR-N	_	11	dep	_	_
-14	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	15	cop	_	_
-15	tekin	taka	VERB	VAN	Tense=Past|VerbForm=Part	9	obl	_	_
-16	inn	inn	ADP	RP	_	15	compound:prt	_	_
-17	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	22	cop	_	_
-18	sex	sex	NUM	NUM-N	Case=Nom	19	nummod	_	_
-19	lið	lið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	22	nsubj	_	_
-20	í	í	ADP	P	_	22	case	_	_
-21	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	22	amod	_	_
-22	riðlum	riðill	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	conj	_	OriginalHead=0
-23	nema	nema	ADP	P	_	24	case	_	_
-24	H	h	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	obl	_	_
-25	og	og	CCONJ	CONJ	_	24	cc	_	_
-26	I	i	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	conj	_	_
-27	sem	sem	SCONJ	C	_	28	mark	_	_
-28	innihéldu	innihalda	VERB	VBDI	Mood=Ind|Tense=Past	24	acl:relcl	_	_
-29	fimm	fimm	NUM	NUM-A	Case=Acc	30	nummod	_	_
-30	lið	lið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	28	obj	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	30	punct	_	_
+1	Alls	alls	DET	Q-G	_	5	obl	_	IFD_tag=aa
+2	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3fn
+3	riðlarnir	riðill	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Masc|Number=Plur	5	nsubj	_	IFD_tag=nkfng
+4	í	í	ADP	P	_	5	case	_	IFD_tag=aþ
+5	undankeppninni	undankeppni	NOUN	N-D	Case=Dat|Definite=Def|Gender=Fem|Number=Sing	0	root	_	IFD_tag=nveþg
+6	níu	níu	NUM	NUM-N	Case=Dat|Gender=Fem|Number=Plur|NumType=Card	7	amod	_	IFD_tag=tfvfþ
+7	talsins	tal	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	5	amod	_	IFD_tag=nheeg
+8	og	og	CCONJ	CONJ	_	22	cc	_	IFD_tag=c
+9	áður	áður	ADV	ADVR	_	22	advmod	_	IFD_tag=aa
+10	en	en	ADP	P	_	15	case	_	IFD_tag=c
+11	Gíbraltar	gíbraltar	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	15	nsubj	_	IFD_tag=nhen-s
+12	og	og	CCONJ	CONJ	_	11	cc	_	IFD_tag=c
+13	Kósovó	kósovó	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	11	dep	_	IFD_tag=nhfn-s
+14	voru	vera	AUX	BEDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	cop	_	IFD_tag=sfg3fþ
+15	tekin	taka	VERB	VAN	Case=Nom|Gender=Neut|Number=Plur|VerbForm=Part|Voice=Act	9	obl	_	IFD_tag=sþghfn
+16	inn	inn	ADP	RP	_	15	compound:prt	_	IFD_tag=aa
+17	voru	vera	AUX	BEDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	22	cop	_	IFD_tag=sfg3fþ
+18	sex	sex	NUM	NUM-N	Case=Nom|Gender=Neut|Number=Plur|NumType=Card	19	nummod	_	IFD_tag=tfhfn
+19	lið	lið	NOUN	NS-N	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	22	nsubj	_	IFD_tag=nkfo
+20	í	í	ADP	P	_	22	case	_	IFD_tag=aþ
+21	öllum	allur	DET	Q-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Ind	22	amod	_	IFD_tag=fokfþ
+22	riðlum	riðill	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	5	conj	_	OriginalHead=0
+23	nema	nema	ADP	P	_	24	case	_	IFD_tag=c
+24	H	h	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	obl	_	IFD_tag=nxen-s
+25	og	og	CCONJ	CONJ	_	24	cc	_	IFD_tag=c
+26	I	i	NOUN	N-N	NumType=Card	24	conj	_	IFD_tag=ta
+27	sem	sem	SCONJ	C	_	28	mark	_	IFD_tag=ct
+28	innihéldu	innihalda	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	acl:relcl	_	IFD_tag=sfg3fþ
+29	fimm	fimm	NUM	NUM-A	Case=Acc|Gender=Neut|Number=Plur|NumType=Card	30	nummod	_	IFD_tag=tfhfo
+30	lið	lið	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	28	obj	_	IFD_tag=nkfo|SpaceAfter=No
+31	.	.	PUNCT	.	_	30	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1035661,.4
-# X_ID = ID_MISSING
+# X_ID = ID_missing_6
 # text = Kósovó gat ekki farið í H-riðil af öryggisástæðum þar sem Bosnía og Serbía spila í þeim riðli.
-1	Kósovó	kósovó	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
-2	gat	geta	AUX	MDDI	Mood=Ind|Tense=Past	4	aux	_	_
-3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
-4	farið	fara	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-5	í	í	ADP	P	_	6	case	_	_
-6	H-riðil	h-riðill	PROPN	NPR-A	_	4	obl	_	_
-7	af	af	ADP	P	_	8	case	_	_
-8	öryggisástæðum	öryggisástæða	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
-9	þar	þar	ADV	ADV	Degree=Pos	4	advmod	_	_
-10	sem	sem	SCONJ	C	_	14	mark	_	_
-11	Bosnía	bosnía	PROPN	NPR-N	_	14	nsubj	_	_
-12	og	og	CCONJ	CONJ	_	11	cc	_	_
-13	Serbía	serbía	PROPN	NPR-N	_	11	dep	_	_
-14	spila	spila	VERB	VBPI	Mood=Ind|Tense=Pres	9	advcl	_	_
-15	í	í	ADP	P	_	17	case	_	_
-16	þeim	sá	DET	D-D	Case=Dat|PronType=Art	17	det	_	_
-17	riðli	riðl	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	17	punct	_	_
+1	Kósovó	kósovó	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	4	nsubj	_	IFD_tag=nken-s
+2	gat	geta	AUX	MDDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	IFD_tag=sfg3eþ
+3	ekki	ekki	ADV	NEG	_	4	advmod	_	IFD_tag=aa
+4	farið	fara	VERB	VBN	VerbForm=Sup|Voice=Act	0	root	_	IFD_tag=ssg
+5	í	í	ADP	P	_	6	case	_	IFD_tag=aþ
+6	H-riðil	h-riðill	PROPN	NPR-A	_	4	obl	_	IFD_tag=x
+7	af	af	ADP	P	_	8	case	_	IFD_tag=aþ
+8	öryggisástæðum	öryggisástæða	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	4	obl	_	IFD_tag=nvfþ
+9	þar	þar	ADV	ADV	_	4	advmod	_	IFD_tag=aa
+10	sem	sem	SCONJ	C	_	14	mark	_	IFD_tag=c
+11	Bosnía	bosnía	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	14	nsubj	_	IFD_tag=nven-s
+12	og	og	CCONJ	CONJ	_	11	cc	_	IFD_tag=c
+13	Serbía	serbía	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	11	dep	_	IFD_tag=nven-s
+14	spila	spila	VERB	VBPI	VerbForm=Inf|Voice=Act	9	advcl	_	IFD_tag=sng
+15	í	í	ADP	P	_	17	case	_	IFD_tag=aþ
+16	þeim	sá	DET	D-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Dem	17	det	_	IFD_tag=fakeþ
+17	riðli	riðl	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	14	obl	_	IFD_tag=nheþ|SpaceAfter=No
+18	.	.	PUNCT	.	_	17	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1035661,.5
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_7 ; ID_missing_8
 # text = Fyrirliði ÍBV í úrvalsdeild karla í knattspyrnu, Avni Pepa, spilar með landsliði Kósovó og mun því að öllum líkindum mæta íslenska liðinu í mars á næsta ári.
-1	Fyrirliði	fyrirliði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
-2	ÍBV	íbv	PROPN	NPR-G	_	1	nmod:poss	_	_
-3	í	í	ADP	P	_	4	case	_	_
-4	úrvalsdeild	úrvalsdeild	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
-5	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
-6	í	í	ADP	P	_	7	case	_	_
-7	knattspyrnu	knattspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	7	punct	_	_
-9	Avni	avni	PROPN	NPR-N	_	1	appos	_	_
-10	Pepa	pepa	PROPN	NPR-N	_	9	flat:name	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	10	punct	_	_
-12	spilar	spila	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-13	með	með	ADP	P	_	14	case	_	_
-14	landsliði	landslið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
-15	Kósovó	kósovó	PROPN	NPR-G	_	14	nmod:poss	_	_
-16	og	og	CCONJ	CONJ	_	22	cc	_	_
-17	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	22	aux	_	_
-18	því	það	PRON	PRO-D	Case=Dat	22	obl	_	_
-19	að	að	ADP	P	_	21	case	_	_
-20	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	21	amod	_	_
-21	líkindum	líkindi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	22	obl	_	_
-22	mæta	mæta	VERB	VB	VerbForm=Inf	12	conj	_	OriginalHead=0
-23	íslenska	íslenskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	24	amod	_	_
-24	liðinu	lið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obj	_	_
-25	í	í	ADP	P	_	26	case	_	_
-26	mars	mars	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
-27	á	á	ADP	P	_	29	case	_	_
-28	næsta	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	29	amod	_	_
-29	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	29	punct	_	_
+1	Fyrirliði	fyrirliði	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	12	nsubj	_	IFD_tag=nhen
+2	ÍBV	íbv	PROPN	NPR-G	_	1	nmod:poss	_	IFD_tag=as
+3	í	í	ADP	P	_	4	case	_	IFD_tag=aþ
+4	úrvalsdeild	úrvalsdeild	NOUN	N-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	1	obl	_	IFD_tag=lkeþsf
+5	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	4	nmod:poss	_	IFD_tag=nkfe
+6	í	í	ADP	P	_	7	case	_	IFD_tag=aþ
+7	knattspyrnu	knattspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	4	obl	_	IFD_tag=nveþ|SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	IFD_tag=,
+9	Avni	avni	PROPN	NPR-N	Foreign=Yes	1	appos	_	IFD_tag=e
+10	Pepa	pepa	PROPN	NPR-N	Foreign=Yes	9	flat:name	_	IFD_tag=e|SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	IFD_tag=,
+12	spilar	spila	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+13	með	með	ADP	P	_	14	case	_	IFD_tag=aþ
+14	landsliði	landslið	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	12	obl	_	IFD_tag=nheþ
+15	Kósovó	kósovó	PROPN	NPR-G	Case=Dat|Definite=Ind|Number=Sing	14	nmod:poss	_	IFD_tag=nxeþ-s
+16	og	og	CCONJ	CONJ	_	22	cc	_	IFD_tag=c
+17	mun	munu	AUX	MDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	aux	_	IFD_tag=sfg3en
+18	því	það	PRON	PRO-D	_	22	obl	_	IFD_tag=aa
+19	að	að	ADP	P	_	21	case	_	IFD_tag=c
+20	öllum	allur	DET	Q-D	Case=Dat|Gender=Neut|Number=Plur|PronType=Ind	21	amod	_	IFD_tag=fohfþ
+21	líkindum	líkindi	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	22	obl	_	IFD_tag=nhfþ
+22	mæta	mæta	VERB	VB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	conj	_	OriginalHead=0
+23	íslenska	íslenskur	ADJ	ADJ-D	Case=Dat|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	24	amod	_	IFD_tag=lheþvf
+24	liðinu	lið	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	22	obj	_	IFD_tag=nheþg
+25	í	í	ADP	P	_	26	case	_	IFD_tag=aþ
+26	mars	mars	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	22	obl	_	IFD_tag=nkeþ
+27	á	á	ADP	P	_	29	case	_	IFD_tag=aþ
+28	næsta	næstur	ADJ	ADJS-D	Case=Dat|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	29	amod	_	IFD_tag=lheþve
+29	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	26	obl	_	IFD_tag=nheþ|SpaceAfter=No
+30	.	.	PUNCT	.	_	29	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1035661,.6
-# X_ID = ID_MISSING
+# X_ID = ID_missing_9
 # text = Fyrsti leikur Íslands er gegn Úkraínu ytra 5. september.
-1	Fyrsti	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	amod	_	_
-2	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
-3	Íslands	ísland	PROPN	NPR-G	_	2	nmod:poss	_	_
-4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
-5	gegn	gegn	ADP	P	_	6	case	_	_
-6	Úkraínu	úkraína	PROPN	NPR-D	_	0	root	_	_
-7	ytra	ytra	ADV	ADV	Degree=Pos	6	advmod	_	_
-8	5.	fimmti	ADJ	ADJ-A	Case=Acc|Degree=Pos	6	obl	_	_
-9	september	september	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	nmod:poss	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	9	punct	_	_
+1	Fyrsti	fyrstur	ADJ	ADJS-N	Case=Nom|Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	2	amod	_	IFD_tag=lkenve
+2	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	6	nsubj	_	IFD_tag=nken
+3	Íslands	ísland	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	2	nmod:poss	_	IFD_tag=nhee-s
+4	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	IFD_tag=sfg3en
+5	gegn	gegn	ADP	P	_	6	case	_	IFD_tag=aþ
+6	Úkraínu	úkraína	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	0	root	_	IFD_tag=nveþ-s
+7	ytra	ytra	ADV	ADV	Case=Gen|Definite=Def|Degree=Cmp|Gender=Masc|Number=Sing	6	advmod	_	IFD_tag=lkeevm
+8	5.	fimmti	ADJ	ADJ-A	NumType=Card	6	obl	_	IFD_tag=ta
+9	september	september	NOUN	N-G	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	8	nmod:poss	_	IFD_tag=nkeþ|SpaceAfter=No
+10	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
 
