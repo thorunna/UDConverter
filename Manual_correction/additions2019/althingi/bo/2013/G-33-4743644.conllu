@@ -1,5 +1,5 @@
 # sent_id = ALTHINGI_BO_2013_G-33-4743644,.1
-# X_ID = ID_MISSING
+# X_ID = ID_missing_1
 # text = Hæstv. forseti. Já, takk fyrir andsvarið, fyrsta andsvarið sem ég fæ eftir að ég tók sæti á Alþingi.
 1	Hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	SpaceAfter=No
@@ -25,22 +25,22 @@
 22	.	.	PUNCT	.	_	21	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4743644,.2
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_2 ; ID_missing_3
 # text = Þetta var mjög pent og huggulegt, takk fyrir það.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
-2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
-3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
-4	pent	penn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-5	og	og	CCONJ	CONJ	_	6	cc	_	_
-6	huggulegt	huggulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	6	punct	_	_
-8	takk	takk	INTJ	INTJ	_	10	discourse	_	_
-9	fyrir	fyrir	ADP	P	_	10	case	_	_
-10	það	það	PRON	PRO-A	Case=Acc	4	conj	_	OriginalHead=0|SpaceAfter=No
-11	.	.	PUNCT	.	_	10	punct	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	4	nsubj	_	IFD_tag=fahen
+2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3eþ
+3	mjög	mjög	ADV	ADV	_	4	amod	_	IFD_tag=aa
+4	pent	penn	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	IFD_tag=lhensf
+5	og	og	CCONJ	CONJ	_	6	cc	_	IFD_tag=c
+6	huggulegt	huggulegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	4	amod	_	IFD_tag=lhensf|SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	IFD_tag=,
+8	takk	takk	INTJ	INTJ	_	10	discourse	_	IFD_tag=au
+9	fyrir	fyrir	ADP	P	_	10	case	_	IFD_tag=ao
+10	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	4	conj	_	OriginalHead=0|SpaceAfter=No
+11	.	.	PUNCT	.	_	10	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2013_G-33-4743644,.3
-# X_ID = ID_MISSING
+# X_ID = ID_missing_4
 # text = Ég er alls ekkert hrædd við að stíga upp í ræðustólinn.
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -56,7 +56,7 @@
 12	.	.	PUNCT	.	_	11	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4743644,.4
-# X_ID = ID_MISSING
+# X_ID = ID_missing_5
 # text = Ég get ekki tekið afstöðu til þess hvort ég sé sammála því eða ekki, Öryrkjabandalaginu, með þessa samningstaktík eða strategíu.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	get	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
@@ -83,7 +83,7 @@
 23	.	.	PUNCT	.	_	22	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4743644,.5
-# X_ID = ID_MISSING
+# X_ID = ID_missing_6
 # text = Ég veit ekki nákvæmlega hvað þeim gekk til þegar þau sögðu sig frá þessari vinnu.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -103,7 +103,7 @@
 16	.	.	PUNCT	.	_	15	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4743644,.6
-# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_7 ; ID_missing_8 ; ID_missing_9
 # text = Væntanlega voru þau bara alls kostar ósátt við hvert stefndi, mér heyrðist það þegar við í velferðarnefnd fórum og hittum Öryrkjabandalagið, þeim fannst ekki hlustað á sig.
 1	Væntanlega	væntanlega	ADV	ADV	Degree=Pos	7	advmod	_	_
 2	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
@@ -137,7 +137,7 @@
 30	.	.	PUNCT	.	_	29	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4743644,.7
-# X_ID = ID_MISSING
+# X_ID = ID_missing_10
 # text = Þá er kannski hreinlegra að vera ekki partur af samkomulaginu ef maður er ekki sáttur við það.
 1	Þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -159,16 +159,16 @@
 18	.	.	PUNCT	.	_	17	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4743644,.8
-# X_ID = ID_MISSING
+# X_ID = ID_missing_11
 # text = Ég veit það ekki.
-1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
-4	ekki	ekki	ADV	NEG	_	2	advmod	_	SpaceAfter=No
-5	.	.	PUNCT	.	_	4	punct	_	_
+1	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	IFD_tag=fp1en
+2	veit	vita	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1en
+3	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	2	obj	_	IFD_tag=fpheo
+4	ekki	ekki	ADV	NEG	_	2	advmod	_	IFD_tag=aa|SpaceAfter=No
+5	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2013_G-33-4743644,.9
-# X_ID = ID_MISSING
+# X_ID = ID_missing_12
 # text = Nú er ég bara með getgátur, er bara að hugsa þetta upphátt.
 1	Nú	nú	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_

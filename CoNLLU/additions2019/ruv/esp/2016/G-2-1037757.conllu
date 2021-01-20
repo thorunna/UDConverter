@@ -1,136 +1,136 @@
 # sent_id = RUV_ESP_2016_G-2-1037757,.1
-# X_ID = ID_MISSING
+# X_ID = ID_missing_1
 # text = Kylfingurinn Tiger Woods ætlar ekki að keppa á úrslitamóti PGA-mótaraðarinnar í golfi sem haldið verður aðra helgi í Bandaríkjunum.
-1	Kylfingurinn	kylfingur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
-2	Tiger	tiger	PROPN	NPR-N	_	1	appos	_	_
-3	Woods	woods	PROPN	NPR-N	_	2	flat:name	_	_
-4	ætlar	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-5	ekki	ekki	ADV	NEG	_	4	advmod	_	_
-6	að	að	PART	TO	_	7	mark	_	_
-7	keppa	keppa	VERB	VB	VerbForm=Inf	4	acl	_	_
-8	á	á	ADP	P	_	9	case	_	_
-9	úrslitamóti	úrslitamót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-10	PGA-mótaraðarinnar	pga-mótaröð	PROPN	NPR-G	_	9	nmod:poss	_	_
-11	í	í	ADP	P	_	12	case	_	_
-12	golfi	golf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
-13	sem	sem	SCONJ	C	_	14	mark	_	_
-14	haldið	halda	VERB	VAN	Tense=Past|VerbForm=Part	9	acl:relcl	_	_
-15	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	14	aux	_	_
-16	aðra	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	17	amod	_	_
-17	helgi	helgi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
-18	í	í	ADP	P	_	19	case	_	_
-19	Bandaríkjunum	bandaríki	PROPN	NPRS-D	_	14	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	19	punct	_	_
+1	Kylfingurinn	kylfingur	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	4	nsubj	_	IFD_tag=nkeng
+2	Tiger	tiger	PROPN	NPR-N	Foreign=Yes	1	appos	_	IFD_tag=e
+3	Woods	woods	PROPN	NPR-N	Foreign=Yes	2	flat:name	_	IFD_tag=e
+4	ætlar	ætla	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+5	ekki	ekki	ADV	NEG	_	4	advmod	_	IFD_tag=aa
+6	að	að	PART	TO	_	7	mark	_	IFD_tag=cn
+7	keppa	keppa	VERB	VB	VerbForm=Inf|Voice=Act	4	acl	_	IFD_tag=sng
+8	á	á	ADP	P	_	9	case	_	IFD_tag=aþ
+9	úrslitamóti	úrslitamót	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	7	obl	_	IFD_tag=nheþ
+10	PGA-mótaraðarinnar	pga-mótaröð	PROPN	NPR-G	_	9	nmod:poss	_	IFD_tag=x
+11	í	í	ADP	P	_	12	case	_	IFD_tag=aþ
+12	golfi	golf	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	10	obl	_	IFD_tag=nheþ
+13	sem	sem	SCONJ	C	_	14	mark	_	IFD_tag=ct
+14	haldið	halda	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	9	acl:relcl	_	IFD_tag=sþghen
+15	verður	verða	AUX	RDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux	_	IFD_tag=sfg3en
+16	aðra	annar	ADJ	ADJ-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Ind	17	amod	_	IFD_tag=foveo
+17	helgi	helgi	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	14	obl	_	IFD_tag=nveo
+18	í	í	ADP	P	_	19	case	_	IFD_tag=aþ
+19	Bandaríkjunum	bandaríki	PROPN	NPRS-D	Case=Dat|Definite=Def|Gender=Neut|Number=Plur	14	obl	_	IFD_tag=nhfþgs|SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1037757,.2
-# X_ID = ID_MISSING
+# X_ID = ID_missing_2
 # text = Hann missir því af öllum fjórum risamótum ársins í fyrsta skipti í 21 ár eða síðan hann byrjaði að keppa meðal þeirra bestu.
-1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	missir	missa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
-4	af	af	ADP	P	_	7	case	_	_
-5	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	7	amod	_	_
-6	fjórum	fjórir	NUM	NUM-D	Case=Dat	7	nummod	_	_
-7	risamótum	risamót	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
-8	ársins	ár	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
-9	í	í	ADP	P	_	11	case	_	_
-10	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	11	amod	_	_
-11	skipti	skipti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
-12	í	í	ADP	P	_	14	case	_	_
-13	21	21	NUM	NUM-A	Case=Acc	14	nummod	_	_
-14	ár	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
-15	eða	eða	CCONJ	CONJ	_	18	cc	_	_
-16	síðan	síðan	ADP	P	_	18	case	_	_
-17	hann	hann	PRON	PRO-N	Case=Nom	18	nsubj	_	_
-18	byrjaði	byrja	VERB	VBDI	Mood=Ind|Tense=Past	11	obl	_	_
-19	að	að	PART	TO	_	20	mark	_	_
-20	keppa	keppa	VERB	VB	VerbForm=Inf	18	acl	_	_
-21	meðal	meðal	ADP	P	_	23	case	_	_
-22	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	23	det	_	_
-23	bestu	góður	ADJ	ADJS-G	Case=Gen|Degree=Sup	20	obl	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	23	punct	_	_
+1	Hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	2	nsubj	_	IFD_tag=fpken
+2	missir	missa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+3	því	það	PRON	PRO-D	_	2	obl	_	IFD_tag=aa
+4	af	af	ADP	P	_	7	case	_	IFD_tag=aþ
+5	öllum	allur	DET	Q-D	Case=Dat|Gender=Neut|Number=Plur|PronType=Ind	7	amod	_	IFD_tag=fohfþ
+6	fjórum	fjórir	NUM	NUM-D	Case=Dat|Gender=Neut|Number=Plur|NumType=Card	7	nummod	_	IFD_tag=tfhfþ
+7	risamótum	risamót	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	2	obl	_	IFD_tag=nhfþ
+8	ársins	ár	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	7	nmod:poss	_	IFD_tag=nheeg
+9	í	í	ADP	P	_	11	case	_	IFD_tag=ao
+10	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	11	amod	_	IFD_tag=lheove
+11	skipti	skipti	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	2	obl	_	IFD_tag=nheo
+12	í	í	ADP	P	_	14	case	_	IFD_tag=ao
+13	21	21	NUM	NUM-A	NumType=Card	14	nummod	_	IFD_tag=ta
+14	ár	ár	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	18	obl	_	IFD_tag=nheo
+15	eða	eða	CCONJ	CONJ	_	18	cc	_	IFD_tag=c
+16	síðan	síðan	ADP	P	_	18	case	_	IFD_tag=c
+17	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	18	nsubj	_	IFD_tag=fpken
+18	byrjaði	byrja	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	obl	_	IFD_tag=sfg3eþ
+19	að	að	PART	TO	_	20	mark	_	IFD_tag=cn
+20	keppa	keppa	VERB	VB	VerbForm=Inf|Voice=Act	18	acl	_	IFD_tag=sng
+21	meðal	meðal	ADP	P	_	23	case	_	IFD_tag=ae
+22	þeirra	sá	DET	D-G	Case=Gen|Gender=Masc|Number=Plur|PronType=Dem	23	det	_	IFD_tag=fakfe
+23	bestu	góður	ADJ	ADJS-G	Case=Gen|Definite=Def|Degree=Sup|Gender=Masc|Number=Plur	20	obl	_	IFD_tag=lkfeve|SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1037757,.3
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_3 ; ID_missing_4
 # text = Næstum ár er liðið síðan hinn fertugi Woods keppti síðast en hann gekkst undir tvær aðgerðir vegna bakmeiðsla síðasta haust.
-1	Næstum	næstum	ADV	ADV	Degree=Pos	2	advmod	_	_
-2	ár	ár	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-4	liðið	líða	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-5	síðan	síðan	ADP	P	_	9	case	_	_
-6	hinn	hinn	DET	D-N	Case=Nom|PronType=Art	8	det	_	_
-7	fertugi	fertugur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
-8	Woods	woods	PROPN	NPR-N	_	9	nsubj	_	_
-9	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	4	obl	_	_
-10	síðast	síðar	ADV	ADVS	Degree=Sup	9	advmod	_	_
-11	en	en	CCONJ	CONJ	_	13	cc	_	_
-12	hann	hann	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-13	gekkst	ganga	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
-14	undir	undir	ADP	P	_	16	case	_	_
-15	tvær	tveir	NUM	NUM-A	Case=Acc	16	nummod	_	_
-16	aðgerðir	aðgerð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obl	_	_
-17	vegna	vegna	ADP	P	_	18	case	_	_
-18	bakmeiðsla	bakmeiðsli	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	13	obl	_	_
-19	síðasta	síðari	ADJ	ADJS-A	Case=Acc|Degree=Sup	20	amod	_	_
-20	haust	haust	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	20	punct	_	_
+1	Næstum	næstum	ADV	ADV	_	2	advmod	_	IFD_tag=aa
+2	ár	ár	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	4	nsubj	_	IFD_tag=nhen
+3	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3en
+4	liðið	líða	VERB	VBN	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	0	root	_	IFD_tag=nheng
+5	síðan	síðan	ADP	P	_	9	case	_	IFD_tag=c
+6	hinn	hinn	DET	D-N	Case=Nom|Gender=Masc|Number=Sing	8	det	_	IFD_tag=gken
+7	fertugi	fertugur	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	IFD_tag=lkenvf
+8	Woods	woods	PROPN	NPR-N	Foreign=Yes	9	nsubj	_	IFD_tag=e
+9	keppti	keppa	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	obl	_	IFD_tag=sfg3eþ
+10	síðast	síðar	ADV	ADVS	Degree=Sup	9	advmod	_	IFD_tag=aae
+11	en	en	CCONJ	CONJ	_	13	cc	_	IFD_tag=c
+12	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	13	nsubj	_	IFD_tag=fpken
+13	gekkst	ganga	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Mid	4	conj	_	OriginalHead=0
+14	undir	undir	ADP	P	_	16	case	_	IFD_tag=ao
+15	tvær	tveir	NUM	NUM-A	Case=Acc|Gender=Fem|Number=Plur|NumType=Card	16	nummod	_	IFD_tag=tfvfo
+16	aðgerðir	aðgerð	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	13	obl	_	IFD_tag=nvfo
+17	vegna	vegna	ADP	P	_	18	case	_	IFD_tag=ae
+18	bakmeiðsla	bakmeiðsli	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	13	obl	_	IFD_tag=nhfe
+19	síðasta	síðari	ADJ	ADJS-A	Case=Acc|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	20	amod	_	IFD_tag=lheove
+20	haust	haust	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	13	obl	_	IFD_tag=nheo|SpaceAfter=No
+21	.	.	PUNCT	.	_	20	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1037757,.4
-# X_ID = ID_MISSING
+# X_ID = ID_missing_5
 # text = Umboðsmaður hans hefur nú staðfest að hann muni ekki keppa á þessu tímabili vegna þess að hann sé ekki tilbúinn til þess.
-1	Umboðsmaður	umboðsmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
-2	hans	hann	PRON	PRO-G	Case=Gen	1	nmod:poss	_	_
-3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
-4	nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
-5	staðfest	staðfesta	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-6	að	að	SCONJ	C	_	10	mark	_	_
-7	hann	hann	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-8	muni	munu	AUX	MDPS	Mood=Sub|Tense=Pres	10	aux	_	_
-9	ekki	ekki	ADV	NEG	_	10	advmod	_	_
-10	keppa	keppa	VERB	VB	VerbForm=Inf	5	ccomp	_	_
-11	á	á	ADP	P	_	13	case	_	_
-12	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	13	det	_	_
-13	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
-14	vegna	vegna	ADP	P	_	15	case	_	_
-15	þess	það	PRON	PRO-G	Case=Gen	10	obl	_	_
-16	að	að	SCONJ	C	_	20	mark	_	_
-17	hann	hann	PRON	PRO-N	Case=Nom	20	nsubj	_	_
-18	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	20	cop	_	_
-19	ekki	ekki	ADV	NEG	_	20	advmod	_	_
-20	tilbúinn	tilbúinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	ccomp	_	_
-21	til	til	ADP	P	_	22	case	_	_
-22	þess	það	PRON	PRO-G	Case=Gen	20	amod	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	22	punct	_	_
+1	Umboðsmaður	umboðsmaður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	nsubj	_	IFD_tag=nken
+2	hans	hann	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	1	nmod:poss	_	IFD_tag=fpkee
+3	hefur	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	IFD_tag=sfg3en
+4	nú	nú	ADV	ADV	_	5	advmod	_	IFD_tag=aa
+5	staðfest	staðfesta	VERB	VBN	VerbForm=Sup|Voice=Act	0	root	_	IFD_tag=ssg
+6	að	að	SCONJ	C	_	10	mark	_	IFD_tag=c
+7	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	10	nsubj	_	IFD_tag=fpken
+8	muni	munu	AUX	MDPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	IFD_tag=svg3en
+9	ekki	ekki	ADV	NEG	_	10	advmod	_	IFD_tag=aa
+10	keppa	keppa	VERB	VB	VerbForm=Inf|Voice=Act	5	ccomp	_	IFD_tag=sng
+11	á	á	ADP	P	_	13	case	_	IFD_tag=aþ
+12	þessu	þessi	DET	D-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	13	det	_	IFD_tag=faheþ
+13	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	10	obl	_	IFD_tag=nheþ
+14	vegna	vegna	ADP	P	_	15	case	_	IFD_tag=ae
+15	þess	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Prs	10	obl	_	IFD_tag=fphee
+16	að	að	SCONJ	C	_	20	mark	_	IFD_tag=c
+17	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	20	nsubj	_	IFD_tag=fpken
+18	sé	vera	AUX	BEPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop	_	IFD_tag=svg3en
+19	ekki	ekki	ADV	NEG	_	20	advmod	_	IFD_tag=aa
+20	tilbúinn	tilbúinn	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	15	ccomp	_	IFD_tag=lkensf
+21	til	til	ADP	P	_	22	case	_	IFD_tag=ae
+22	þess	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Prs	20	amod	_	IFD_tag=fphee|SpaceAfter=No
+23	.	.	PUNCT	.	_	22	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1037757,.5
-# X_ID = ID_MISSING
+# X_ID = ID_missing_6
 # text = Woods hefur unnið fjórtán risamót á ferlinum og næstflest mót allra á PGA-mótaröðinni eða 79.
-1	Woods	woods	PROPN	NPR-N	_	3	nsubj	_	_
-2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	3	aux	_	_
-3	unnið	vinna	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-4	fjórtán	fjórtán	NUM	NUM-A	Case=Acc	5	nummod	_	_
-5	risamót	risamót	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
-6	á	á	ADP	P	_	7	case	_	_
-7	ferlinum	ferill	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-8	og	og	CCONJ	CONJ	_	10	cc	_	_
-9	næstflest	næstflestur	ADJ	ADJ-A	Case=Acc|Degree=Pos	10	amod	_	_
-10	mót	mót	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	conj	_	_
-11	allra	allur	DET	Q-G	Case=Gen|Degree=Pos	10	nmod:poss	_	_
-12	á	á	ADP	P	_	13	case	_	_
-13	PGA-mótaröðinni	pga-mótaröð	PROPN	NPR-D	_	10	obl	_	_
-14	eða	eða	CCONJ	CONJ	_	15	cc	_	_
-15	79	79	NUM	NUM-A	Case=Acc	10	conj	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	15	punct	_	_
+1	Woods	woods	PROPN	NPR-N	Foreign=Yes	3	nsubj	_	IFD_tag=e
+2	hefur	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	IFD_tag=sfg3en
+3	unnið	vinna	VERB	VBN	VerbForm=Sup|Voice=Act	0	root	_	IFD_tag=ssg
+4	fjórtán	fjórtán	NUM	NUM-A	Case=Acc|Gender=Neut|Number=Plur|NumType=Card	5	nummod	_	IFD_tag=tfhfo
+5	risamót	risamót	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	3	obj	_	IFD_tag=nheo
+6	á	á	ADP	P	_	7	case	_	IFD_tag=aþ
+7	ferlinum	ferill	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	3	obl	_	IFD_tag=nkeþg
+8	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
+9	næstflest	næstflestur	ADJ	ADJ-A	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	10	amod	_	IFD_tag=fohen
+10	mót	mót	NOUN	NS-A	_	3	conj	_	IFD_tag=aþ
+11	allra	allur	DET	Q-G	Case=Gen|Gender=Masc|Number=Plur|PronType=Ind	10	nmod:poss	_	IFD_tag=fokfe
+12	á	á	ADP	P	_	13	case	_	IFD_tag=aþ
+13	PGA-mótaröðinni	pga-mótaröð	PROPN	NPR-D	_	10	obl	_	IFD_tag=x
+14	eða	eða	CCONJ	CONJ	_	15	cc	_	IFD_tag=c
+15	79	79	NUM	NUM-A	NumType=Card	10	conj	_	IFD_tag=ta|SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1037757,.6
-# X_ID = ID_MISSING
+# X_ID = ID_missing_7
 # text = Hann situr nú í 628. sæti heimslistans.
-1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	situr	sitja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	í	í	ADP	P	_	6	case	_	_
-5	628.	628.	NUM	NUM-D	Case=Dat	6	nummod	_	_
-6	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
-7	heimslistans	heimslisti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	nmod:poss	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	7	punct	_	_
+1	Hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	2	nsubj	_	IFD_tag=fpken
+2	situr	sitja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+3	nú	nú	ADV	ADV	_	2	advmod	_	IFD_tag=aa
+4	í	í	ADP	P	_	6	case	_	IFD_tag=aþ
+5	628.	628.	NUM	NUM-D	NumType=Card	6	nummod	_	IFD_tag=ta
+6	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	2	obl	_	IFD_tag=nheþ
+7	heimslistans	heimslisti	NOUN	N-G	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	6	nmod:poss	_	IFD_tag=nkeeg|SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	IFD_tag=.
 

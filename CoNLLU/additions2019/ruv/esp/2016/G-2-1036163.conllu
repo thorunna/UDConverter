@@ -1,112 +1,112 @@
 # sent_id = RUV_ESP_2016_G-2-1036163,.1
-# X_ID = ID_MISSING
+# X_ID = ID_missing_1
 # text = Landsliðskonan Anna Björk Kristjánsdóttir er gengin á ný til liðs við Stjörnuna í úrvalsdeild kvenna í fótbolta, þó bara á tímabundnu láni.
-1	Landsliðskonan	landsliðskona	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
-2	Anna	anna	PROPN	NPR-N	_	1	appos	_	_
-3	Björk	björk	PROPN	NPR-N	_	2	flat:name	_	_
-4	Kristjánsdóttir	kristjánsdóttir	PROPN	NPR-N	_	2	dep	_	_
-5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
-6	gengin	ganga	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-7	á	á	ADP	P	_	8	case	_	_
-8	ný	ný	ADV	ADV	Degree=Pos	6	obl	_	_
-9	til	til	ADP	P	_	10	case	_	_
-10	liðs	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
-11	við	við	ADP	P	_	12	case	_	_
-12	Stjörnuna	stjarna	PROPN	NPR-A	_	10	obl	_	_
-13	í	í	ADP	P	_	14	case	_	_
-14	úrvalsdeild	úrvalsdeild	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
-15	kvenna	kona	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	nmod:poss	_	_
-16	í	í	ADP	P	_	17	case	_	_
-17	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	17	punct	_	_
-19	þó	þó	ADV	ADV	Degree=Pos	23	advmod	_	_
-20	bara	bara	ADV	FP	Degree=Pos	23	advmod	_	_
-21	á	á	ADP	P	_	23	case	_	_
-22	tímabundnu	tímabundinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	23	amod	_	_
-23	láni	lán	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	parataxis	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	23	punct	_	_
+1	Landsliðskonan	landsliðskona	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	6	nsubj	_	IFD_tag=nveng
+2	Anna	anna	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	appos	_	IFD_tag=nven-s
+3	Björk	björk	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	2	flat:name	_	IFD_tag=nven-s
+4	Kristjánsdóttir	kristjánsdóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	2	dep	_	IFD_tag=nven-s
+5	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	IFD_tag=sfg3en
+6	gengin	ganga	VERB	VBN	Case=Nom|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	IFD_tag=sþgven
+7	á	á	ADP	P	_	8	case	_	IFD_tag=aþ
+8	ný	ný	ADV	ADV	_	6	obl	_	IFD_tag=aa
+9	til	til	ADP	P	_	10	case	_	IFD_tag=ae
+10	liðs	lið	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	6	obl	_	IFD_tag=nhee
+11	við	við	ADP	P	_	12	case	_	IFD_tag=ao
+12	Stjörnuna	stjarna	PROPN	NPR-A	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	10	obl	_	IFD_tag=nveogs
+13	í	í	ADP	P	_	14	case	_	IFD_tag=aþ
+14	úrvalsdeild	úrvalsdeild	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	6	obl	_	IFD_tag=nveþ
+15	kvenna	kona	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Plur	14	nmod:poss	_	IFD_tag=nvfe
+16	í	í	ADP	P	_	17	case	_	IFD_tag=aþ
+17	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	14	obl	_	IFD_tag=nkeþ|SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	IFD_tag=,
+19	þó	þó	ADV	ADV	_	23	advmod	_	IFD_tag=aa
+20	bara	bara	ADV	FP	_	23	advmod	_	IFD_tag=aa
+21	á	á	ADP	P	_	23	case	_	IFD_tag=aþ
+22	tímabundnu	tímabundinn	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	23	amod	_	IFD_tag=lheþsf
+23	láni	lán	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	6	parataxis	_	IFD_tag=nheþ|SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036163,.2
-# X_ID = ID_MISSING
+# X_ID = ID_missing_2
 # text = Anna lék með Stjörnunni frá 2009 2015 þegar hún hélt til Örebro í sænsku úrvalsdeildinni þar sem hún hefur spilað síðasta hálfa árið.
-1	Anna	anna	PROPN	NPR-N	_	2	nsubj	_	_
-2	lék	leika	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	með	með	ADP	P	_	4	case	_	_
-4	Stjörnunni	stjarna	PROPN	NPR-D	_	2	obl	_	_
-5	frá	frá	ADP	P	_	6	case	_	_
-6	2009	2009	NUM	NUM-D	Case=Dat	7	obl	_	_
-7	2015	2015	NUM	NUM-G	Case=Gen	2	obl	_	_
-8	þegar	þegar	ADP	P	_	10	case	_	_
-9	hún	hún	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-10	hélt	halda	VERB	VBDI	Mood=Ind|Tense=Past	7	obl	_	_
-11	til	til	ADP	P	_	12	case	_	_
-12	Örebro	örebro	PROPN	NPR-G	_	10	obl	_	_
-13	í	í	ADP	P	_	15	case	_	_
-14	sænsku	sænskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	15	amod	_	_
-15	úrvalsdeildinni	úrvalsdeild	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
-16	þar	þar	ADV	ADV	Degree=Pos	20	advmod	_	_
-17	sem	sem	SCONJ	C	_	20	mark	_	_
-18	hún	hún	PRON	PRO-N	Case=Nom	20	nsubj	_	_
-19	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	20	aux	_	_
-20	spilað	spila	VERB	VBN	Tense=Past|VerbForm=Part	12	acl:relcl	_	_
-21	síðasta	síðari	ADJ	ADJS-A	Case=Acc|Degree=Sup	23	amod	_	_
-22	hálfa	hálfur	ADJ	ADJ-A	Case=Acc|Degree=Pos	23	amod	_	_
-23	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	23	punct	_	_
+1	Anna	anna	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	2	nsubj	_	IFD_tag=nven-s
+2	lék	leika	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
+3	með	með	ADP	P	_	4	case	_	IFD_tag=aþ
+4	Stjörnunni	stjarna	PROPN	NPR-D	Case=Dat|Definite=Def|Gender=Fem|Number=Sing	2	obl	_	IFD_tag=nveþgs
+5	frá	frá	ADP	P	_	6	case	_	IFD_tag=aþ
+6	2009	2009	NUM	NUM-D	NumType=Card	7	obl	_	IFD_tag=ta
+7	2015	2015	NUM	NUM-G	NumType=Card	2	obl	_	IFD_tag=ta
+8	þegar	þegar	ADP	P	_	10	case	_	IFD_tag=c
+9	hún	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Prs	10	nsubj	_	IFD_tag=fpven
+10	hélt	halda	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	obl	_	IFD_tag=sfg3eþ
+11	til	til	ADP	P	_	12	case	_	IFD_tag=ae
+12	Örebro	örebro	PROPN	NPR-G	Foreign=Yes	10	obl	_	IFD_tag=e
+13	í	í	ADP	P	_	15	case	_	IFD_tag=aþ
+14	sænsku	sænskur	ADJ	ADJ-D	Case=Dat|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	IFD_tag=lveþvf
+15	úrvalsdeildinni	úrvalsdeild	NOUN	N-D	Case=Dat|Definite=Def|Gender=Fem|Number=Sing	12	obl	_	IFD_tag=nveþg
+16	þar	þar	ADV	ADV	_	20	advmod	_	IFD_tag=aa
+17	sem	sem	SCONJ	C	_	20	mark	_	IFD_tag=c
+18	hún	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Prs	20	nsubj	_	IFD_tag=fpven
+19	hefur	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	aux	_	IFD_tag=sfg3en
+20	spilað	spila	VERB	VBN	VerbForm=Sup|Voice=Act	12	acl:relcl	_	IFD_tag=ssg
+21	síðasta	síðari	ADJ	ADJS-A	Case=Acc|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	23	amod	_	IFD_tag=lheove
+22	hálfa	hálfur	ADJ	ADJ-A	Case=Acc|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	23	amod	_	IFD_tag=lheovf
+23	árið	ár	NOUN	N-A	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	20	obl	_	IFD_tag=nheog|SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036163,.3
-# X_ID = ID_MISSING
+# X_ID = ID_missing_3
 # text = Anna sem er 27 ára hefur spilað 127 leiki í efstu deild auk þess að hafa verið fastamaður í vörn íslenska landsliðsins undanfarið.
-1	Anna	anna	PROPN	NPR-N	_	7	nsubj	_	_
-2	sem	sem	SCONJ	C	_	4	mark	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-4	27	27	NUM	NUM-G	Case=Gen	1	acl:relcl	_	_
-5	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	amod	_	_
-6	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	7	aux	_	_
-7	spilað	spila	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-8	127	127	NUM	NUM-A	Case=Acc	9	nummod	_	_
-9	leiki	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obj	_	_
-10	í	í	ADP	P	_	12	case	_	_
-11	efstu	efri	ADJ	ADJS-D	Case=Dat|Degree=Sup	12	amod	_	_
-12	deild	deild	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-13	auk	auk	ADP	P	_	14	case	_	_
-14	þess	það	PRON	PRO-G	Case=Gen	7	obl	_	_
-15	að	að	PART	TO	_	14	acl	_	_
-16	hafa	hafa	AUX	HV	VerbForm=Inf	15	aux	_	_
-17	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	15	cop	_	_
-18	fastamaður	fastamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	xcomp	_	_
-19	í	í	ADP	P	_	20	case	_	_
-20	vörn	vörn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
-21	íslenska	íslenskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	22	amod	_	_
-22	landsliðsins	landslið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	_
-23	undanfarið	undanfarið	ADV	ADV	Degree=Pos	15	advmod	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	23	punct	_	_
+1	Anna	anna	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	7	nsubj	_	IFD_tag=nven-s
+2	sem	sem	SCONJ	C	_	4	mark	_	IFD_tag=ct
+3	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3en
+4	27	27	NUM	NUM-G	NumType=Card	1	acl:relcl	_	IFD_tag=ta
+5	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	4	amod	_	IFD_tag=nhfe
+6	hefur	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	IFD_tag=sfg3en
+7	spilað	spila	VERB	VBN	VerbForm=Sup|Voice=Act	0	root	_	IFD_tag=ssg
+8	127	127	NUM	NUM-A	NumType=Card	9	nummod	_	IFD_tag=ta
+9	leiki	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	7	obj	_	IFD_tag=nkfo
+10	í	í	ADP	P	_	12	case	_	IFD_tag=aþ
+11	efstu	efri	ADJ	ADJS-D	Case=Dat|Definite=Def|Degree=Sup|Gender=Fem|Number=Sing	12	amod	_	IFD_tag=lveþve
+12	deild	deild	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	7	obl	_	IFD_tag=nveþ
+13	auk	auk	ADP	P	_	14	case	_	IFD_tag=ae
+14	þess	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Prs	7	obl	_	IFD_tag=fphee
+15	að	að	PART	TO	_	14	acl	_	IFD_tag=cn
+16	hafa	hafa	AUX	HV	VerbForm=Inf|Voice=Act	15	aux	_	IFD_tag=sng
+17	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	15	cop	_	IFD_tag=ssg
+18	fastamaður	fastamaður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	15	xcomp	_	IFD_tag=nken
+19	í	í	ADP	P	_	20	case	_	IFD_tag=aþ
+20	vörn	vörn	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	18	obl	_	IFD_tag=nveþ
+21	íslenska	íslenskur	ADJ	ADJ-G	Case=Gen|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	22	amod	_	IFD_tag=lheevf
+22	landsliðsins	landslið	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	20	nmod:poss	_	IFD_tag=nheeg
+23	undanfarið	undanfarið	ADV	ADV	_	15	advmod	_	IFD_tag=aa|SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1036163,.4
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_4 ; ID_missing_5
 # text = Stjarnan er í harðri toppbaráttu við Breiðablik í deildinni og situr í öðru sæti eftir átta umferðir, einu stigi á eftir Breiðabliki.
-1	Stjarnan	stjarna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-3	í	í	ADP	P	_	5	case	_	_
-4	harðri	harður	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
-5	toppbaráttu	toppbarátta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
-6	við	við	ADP	P	_	7	case	_	_
-7	Breiðablik	breiðablik	PROPN	NPR-A	_	5	obl	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	deildinni	deild	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
-10	og	og	CCONJ	CONJ	_	11	cc	_	_
-11	situr	sitja	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
-12	í	í	ADP	P	_	14	case	_	_
-13	öðru	annar	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
-14	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
-15	eftir	eftir	ADP	P	_	17	case	_	_
-16	átta	átta	NUM	NUM-A	Case=Acc	17	nummod	_	_
-17	umferðir	umferð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	17	punct	_	_
-19	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	20	det	_	_
-20	stigi	stig	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
-21	á	á	ADP	P	_	20	case	_	_
-22	eftir	eftir	ADP	P	_	23	case	_	_
-23	Breiðabliki	breiðablik	PROPN	NPR-D	_	20	obl	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	23	punct	_	_
+1	Stjarnan	stjarna	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	5	nsubj	_	IFD_tag=nveng
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3en
+3	í	í	ADP	P	_	5	case	_	IFD_tag=aþ
+4	harðri	harður	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	IFD_tag=lveþsf
+5	toppbaráttu	toppbarátta	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	0	root	_	IFD_tag=nveþ
+6	við	við	ADP	P	_	7	case	_	IFD_tag=ao
+7	Breiðablik	breiðablik	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	5	obl	_	IFD_tag=nheo-s
+8	í	í	ADP	P	_	9	case	_	IFD_tag=aþ
+9	deildinni	deild	NOUN	N-D	Case=Dat|Definite=Def|Gender=Fem|Number=Sing	5	obl	_	IFD_tag=nveþg
+10	og	og	CCONJ	CONJ	_	11	cc	_	IFD_tag=c
+11	situr	sitja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	OriginalHead=0
+12	í	í	ADP	P	_	14	case	_	IFD_tag=aþ
+13	öðru	annar	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	14	amod	_	IFD_tag=lheþsf
+14	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	11	obl	_	IFD_tag=nheþ
+15	eftir	eftir	ADP	P	_	17	case	_	IFD_tag=aþ
+16	átta	átta	NUM	NUM-A	Case=Acc|Gender=Fem|Number=Plur|NumType=Card	17	nummod	_	IFD_tag=tfvfo
+17	umferðir	umferð	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	11	obl	_	IFD_tag=nvfo|SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	IFD_tag=,
+19	einu	einn	DET	ONE-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Ind	20	det	_	IFD_tag=foheþ
+20	stigi	stig	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	11	obl	_	IFD_tag=nheþ
+21	á	á	ADP	P	_	20	case	_	IFD_tag=aa
+22	eftir	eftir	ADP	P	_	23	case	_	IFD_tag=aþ
+23	Breiðabliki	breiðablik	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	20	obl	_	IFD_tag=nheþ-s|SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	IFD_tag=.
 

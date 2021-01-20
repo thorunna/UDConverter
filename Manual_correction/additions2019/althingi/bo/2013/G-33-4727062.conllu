@@ -1,5 +1,5 @@
 # sent_id = ALTHINGI_BO_2013_G-33-4727062,.1
-# X_ID = ID_MISSING
+# X_ID = ID_missing_1
 # text = Virðulegi forseti. Mig langar að þakka hv. þingmanni fyrir ræðuna og fyrir að kippa okkur á Alþingi inn í raunveruleikann í vinnu okkar við fjárlagagerðina og hugsa um hana út frá manneskjunum á bak við þessar tölur sem við erum að fjalla um.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
@@ -48,7 +48,7 @@
 45	.	.	PUNCT	.	_	43	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4727062,.2
-# X_ID = ID_MISSING
+# X_ID = ID_missing_2
 # text = Mig langar að spyrja hv. þingmann um þetta sem hún nefndi með blekkingarskattheimtuna.
 1	Mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
 2	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -66,7 +66,7 @@
 14	.	.	PUNCT	.	_	13	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4727062,.3
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_3 ; ID_missing_4
 # text = Ég er sammála þingmanninum, það slær mig líka mjög skringilega hvernig þetta er sett fram í fjárlögum.
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
@@ -89,21 +89,21 @@
 19	.	.	PUNCT	.	_	18	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4727062,.4
-# X_ID = ID_MISSING
+# X_ID = ID_missing_5
 # text = Sveitarfélög mega til dæmis ekki útbúa fjárhagsáætlanir sínar svona.
-1	Sveitarfélög	sveitarfélag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
-2	mega	mega	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
-3	til	til	ADP	P	_	4	case	_	_
-4	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
-5	ekki	ekki	ADV	NEG	_	6	advmod	_	_
-6	útbúa	útbúa	VERB	VB	VerbForm=Inf	0	root	_	_
-7	fjárhagsáætlanir	fjárhagsáætlun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
-8	sínar	sinn	PRON	PRO-A	Case=Acc	7	nmod:poss	_	_
-9	svona	svona	ADV	ADV	Degree=Pos	6	advmod	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	9	punct	_	_
+1	Sveitarfélög	sveitarfélag	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	6	nsubj	_	IFD_tag=nhfn
+2	mega	mega	AUX	MDPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	IFD_tag=sfg3fn
+3	til	til	ADP	P	_	4	case	_	IFD_tag=ae
+4	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	6	obl	_	IFD_tag=nhee
+5	ekki	ekki	ADV	NEG	_	6	advmod	_	IFD_tag=aa
+6	útbúa	útbúa	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
+7	fjárhagsáætlanir	fjárhagsáætlun	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	6	obj	_	IFD_tag=nvfo
+8	sínar	sinn	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Plur|PronType=Prs	7	nmod:poss	_	IFD_tag=fevfo
+9	svona	svona	ADV	ADV	_	6	advmod	_	IFD_tag=aa|SpaceAfter=No
+10	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2013_G-33-4727062,.5
-# X_ID = ID_MISSING
+# X_ID = ID_missing_6
 # text = Þau gjöld sem eru tekin á ákveðnum stað eru mörkuð á þann stað aftur þannig að mér finnst líka skringilegt hvernig er hægt að setja allt saman í einn pott og svo bara einhvern veginn útdeila.
 1	Þau	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
 2	gjöld	gjald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
@@ -144,7 +144,7 @@
 37	.	.	PUNCT	.	_	36	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4727062,.6
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_7 ; ID_missing_8
 # text = Píratar eru með vettvang til að auka beint lýðræði og auka þátttöku til samfélagsins, Betra Ísland, og því langar mig að spyrja hvort þið sjáið fyrir ykkur eitthvert kerfi sem gerir skattheimtuna gagnsærri og jafnvel þá að fólk geti haft áhrif á hvernig skattpeningum þess er varið eins og fólk getur núna gert með sóknargjöldin, er það ekki?
 1	Píratar	pírati	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -210,7 +210,7 @@
 62	?	?	PUNCT	.	_	61	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4727062,.7
-# X_ID = ID_MISSING
+# X_ID = ID_missing_9
 # text = Svo kem ég með síðari spurninguna eða athugasemdir í næsta andsvari.
 1	Svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	kem	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_

@@ -1,5 +1,5 @@
 # sent_id = ALTHINGI_BO_2014_G-33-4587316,.1
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_1 ; ID_missing_2
 # text = Virðulegi forseti. Þetta er vissulega áhugavert sjónarmið hv. þingmanns og ég get skilið það sem hann segir hér.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	vocative	_	SpaceAfter=No
@@ -23,25 +23,25 @@
 20	.	.	PUNCT	.	_	18	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4587316,.2
-# X_ID = ID_MISSING
+# X_ID = ID_missing_3
 # text = Ég skil einfaldlega ekki að þessi boð til framkvæmdarvaldsins séu ekki nógu skýr.
-1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
-5	að	að	SCONJ	C	_	13	mark	_	_
-6	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	7	det	_	_
-7	boð	boð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	_
-8	til	til	ADP	P	_	9	case	_	_
-9	framkvæmdarvaldsins	framkvæmdarvald	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	obl	_	_
-10	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	13	cop	_	_
-11	ekki	ekki	ADV	NEG	_	13	advmod	_	_
-12	nógu	nógur	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	obl	_	_
-13	skýr	skýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	13	punct	_	_
+1	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	IFD_tag=fp1en
+2	skil	skilja	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1en
+3	einfaldlega	einfaldlega	ADV	ADV	_	2	advmod	_	IFD_tag=aa
+4	ekki	ekki	ADV	NEG	_	2	advmod	_	IFD_tag=aa
+5	að	að	SCONJ	C	_	13	mark	_	IFD_tag=c
+6	þessi	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Plur|PronType=Dem	7	det	_	IFD_tag=fahfn
+7	boð	boð	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	13	nsubj	_	IFD_tag=nhfn
+8	til	til	ADP	P	_	9	case	_	IFD_tag=ae
+9	framkvæmdarvaldsins	framkvæmdarvald	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	7	obl	_	IFD_tag=nheeg
+10	séu	vera	AUX	BEPS	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	IFD_tag=svg3fn
+11	ekki	ekki	ADV	NEG	_	13	advmod	_	IFD_tag=aa
+12	nógu	nógur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	13	obl	_	IFD_tag=lheþsf
+13	skýr	skýr	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	2	ccomp	_	IFD_tag=lhfnsf|SpaceAfter=No
+14	.	.	PUNCT	.	_	13	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4587316,.3
-# X_ID = ID_MISSING
+# X_ID = ID_missing_4
 # text = Ég er kannski eitthvað óþolinmóðari en hv. þingmaður út af því að þetta lá fyrir, þetta lá fyrir meira að segja vel fyrir kosningar.
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -71,7 +71,7 @@
 26	.	.	PUNCT	.	_	25	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4587316,.4
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_5 ; ID_missing_6
 # text = Fyrir kosningar voru allir flokkar sammála um þetta og við heyrðum ýmis falleg kosningaloforð um að bjarga Landspítalanum og fara að byggja nýjan Landspítala hjá öllum flokkum.
 1	Fyrir	fyrir	ADP	P	_	2	case	_	_
 2	kosningar	kosning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	0	root	_	_
@@ -103,7 +103,7 @@
 28	.	.	PUNCT	.	_	11	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4587316,.5
-# X_ID = ID_MISSING
+# X_ID = ID_missing_7
 # text = Þetta var frekar skýrt.
 1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
@@ -112,7 +112,7 @@
 5	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4587316,.6
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_8 ; ID_missing_9
 # text = Kannski voru einhverjir innan einhverra flokka ekki búnir að tala sig saman, en það hefur held ég gerst núna.
 1	Kannski	kannski	ADV	ADV	Degree=Pos	8	advmod	_	_
 2	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	8	cop	_	_
@@ -137,7 +137,7 @@
 21	.	.	PUNCT	.	_	19	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4587316,.7
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_10 ; ID_missing_11
 # text = Auðvitað þurfum við að eiga umræðuna til þess að það gerist, ég tek undir með þingmanninum með það.
 1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -161,7 +161,7 @@
 20	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4587316,.8
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_12 ; ID_missing_13
 # text = En ég er kannski bara óþolinmóðari en hv. þingmaður og get illa beðið því mér finnst skilaboðin hafa alltaf verið mjög skýr, ekki síst fyrir lok síðasta þings.
 1	En	en	CCONJ	CONJ	_	6	cc	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
@@ -195,7 +195,7 @@
 30	.	.	PUNCT	.	_	22	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4587316,.9
-# X_ID = ID_MISSING
+# X_ID = ID_missing_14
 # text = Ég skil ekki eftir hverju hæstv. fjármálaráðherra og hæstv. heilbrigðisráðherra eru að bíða.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_

@@ -1,326 +1,326 @@
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.1
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_1 ; ID_missing_2
 # text = Frú forseti. Ég hef rætt það margoft að við eigum að athuga þá þætti sem hafa verið hvað umdeildastir í tengslum við sjávarútveginn og það er meira annars að fólkið í landinu vill að greitt sé fyrir aðganginn að auðlindinni.
-1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	_
-2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
-3	.	.	PUNCT	.	_	2	punct	_	_
-4	Ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
-5	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
-6	rætt	ræða	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-7	það	það	PRON	PRO-A	Case=Acc	6	obj	_	_
-8	margoft	margoft	ADV	ADV	Degree=Pos	6	advmod	_	_
-9	að	að	SCONJ	C	_	11	mark	_	_
-10	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-11	eigum	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	6	ccomp	_	_
-12	að	að	PART	TO	_	13	mark	_	_
-13	athuga	athuga	VERB	VB	VerbForm=Inf	11	acl	_	_
-14	þá	sá	DET	D-A	Case=Acc|PronType=Art	15	det	_	_
-15	þætti	þáttur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obj	_	_
-16	sem	sem	SCONJ	C	_	18	mark	_	_
-17	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	18	aux	_	_
-18	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	15	acl:relcl	_	_
-19	hvað	hver	PRON	WPRO-A	Case=Acc	20	obj	_	_
-20	umdeildastir	umdeildur	ADJ	ADJS-N	Case=Nom|Degree=Sup	18	amod	_	_
-21	í	í	ADP	P	_	22	case	_	_
-22	tengslum	tengsl	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	_
-23	við	við	ADP	P	_	24	case	_	_
-24	sjávarútveginn	sjávarútvegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
-25	og	og	CCONJ	CONJ	_	26	cc	_	_
-26	það	það	PRON	PRO-N	Case=Nom	6	conj	_	OriginalHead=0
-27	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	26	cop	_	_
-28	meira	meðal	ADP	P	_	29	case	_	_
-29	annars	annar	ADV	OTHER-G	Case=Gen	26	advmod	_	_
-30	að	að	SCONJ	C	_	34	mark	_	_
-31	fólkið	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	34	nsubj	_	_
-32	í	í	ADP	P	_	33	case	_	_
-33	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	_
-34	vill	vilja	VERB	VBPI	Mood=Ind|Tense=Pres	26	ccomp	_	_
-35	að	að	SCONJ	C	_	36	mark	_	_
-36	greitt	greiða	VERB	VAN	Tense=Past|VerbForm=Part	34	ccomp	_	_
-37	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	36	cop	_	_
-38	fyrir	fyrir	ADP	P	_	39	case	_	_
-39	aðganginn	aðgangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	36	obl	_	_
-40	að	að	ADP	P	_	41	case	_	_
-41	auðlindinni	auðlind	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	39	obl	_	SpaceAfter=No
-42	.	.	PUNCT	.	_	41	punct	_	_
+1	Frú	frú	NOUN	N-N	_	6	vocative	_	IFD_tag=aa
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	conj	_	IFD_tag=nken|SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
+4	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	IFD_tag=fp1en
+5	hef	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	IFD_tag=sfg1en
+6	rætt	ræða	VERB	VBN	VerbForm=Sup|Voice=Act	0	root	_	IFD_tag=ssg
+7	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	6	obj	_	IFD_tag=fpheo
+8	margoft	margoft	ADV	ADV	_	6	advmod	_	IFD_tag=aa
+9	að	að	SCONJ	C	_	11	mark	_	IFD_tag=cn
+10	við	ég	PRON	PRO-N	_	11	nsubj	_	IFD_tag=ao
+11	eigum	eiga	VERB	VBPS	Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	ccomp	_	IFD_tag=svg1fn
+12	að	að	PART	TO	_	13	mark	_	IFD_tag=cn
+13	athuga	athuga	VERB	VB	VerbForm=Inf|Voice=Act	11	acl	_	IFD_tag=sng
+14	þá	sá	DET	D-A	Case=Acc|Gender=Masc|Number=Plur|PronType=Dem	15	det	_	IFD_tag=fakfo
+15	þætti	þáttur	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	13	obj	_	IFD_tag=nkfo
+16	sem	sem	SCONJ	C	_	18	mark	_	IFD_tag=ct
+17	hafa	hafa	AUX	HVPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	aux	_	IFD_tag=sfg3fn
+18	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	15	acl:relcl	_	IFD_tag=ssg
+19	hvað	hver	PRON	WPRO-A	Case=Nom|Gender=Neut|Number=Sing|PronType=Int	20	obj	_	IFD_tag=fshen
+20	umdeildastir	umdeildur	ADJ	ADJS-N	Case=Nom|Definite=Ind|Degree=Sup|Gender=Masc|Number=Plur	18	amod	_	IFD_tag=lkfnse
+21	í	í	ADP	P	_	22	case	_	IFD_tag=aþ
+22	tengslum	tengsl	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	18	obl	_	IFD_tag=nhfþ
+23	við	við	ADP	P	_	24	case	_	IFD_tag=ao
+24	sjávarútveginn	sjávarútvegur	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	22	obl	_	IFD_tag=nkeog
+25	og	og	CCONJ	CONJ	_	26	cc	_	IFD_tag=c
+26	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	6	conj	_	OriginalHead=0
+27	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	26	cop	_	IFD_tag=sfg3en
+28	meira	meðal	ADP	P	_	29	case	_	IFD_tag=x
+29	annars	annar	ADV	OTHER-G	_	26	advmod	_	IFD_tag=x
+30	að	að	SCONJ	C	_	34	mark	_	IFD_tag=aþ
+31	fólkið	fólk	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	34	nsubj	_	IFD_tag=nheng
+32	í	í	ADP	P	_	33	case	_	IFD_tag=aþ
+33	landinu	land	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	34	obl	_	IFD_tag=nheþg
+34	vill	vilja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	26	ccomp	_	IFD_tag=sfg3en
+35	að	að	SCONJ	C	_	36	mark	_	IFD_tag=aþ
+36	greitt	greiða	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	34	ccomp	_	IFD_tag=sþghen
+37	sé	vera	AUX	BEPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	36	cop	_	IFD_tag=svg3en
+38	fyrir	fyrir	ADP	P	_	39	case	_	IFD_tag=ao
+39	aðganginn	aðgangur	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	36	obl	_	IFD_tag=nkeog
+40	að	að	ADP	P	_	41	case	_	IFD_tag=aþ
+41	auðlindinni	auðlind	NOUN	N-D	Case=Dat|Definite=Def|Gender=Fem|Number=Sing	39	obl	_	IFD_tag=nveþg|SpaceAfter=No
+42	.	.	PUNCT	.	_	41	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.2
-# X_ID = ID_MISSING
+# X_ID = ID_missing_3
 # text = Það er það sem á að gera.
-1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
-4	sem	sem	SCONJ	C	_	5	mark	_	_
-5	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	_
-6	að	að	PART	TO	_	7	mark	_	_
-7	gera	gera	VERB	DO	VerbForm=Inf	5	acl	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	7	punct	_	_
+1	Það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	3	nsubj	_	IFD_tag=fphen
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3en
+3	það	sá	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	0	root	_	IFD_tag=fahen
+4	sem	sem	SCONJ	C	_	5	mark	_	IFD_tag=ct
+5	á	eiga	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	IFD_tag=sfg3en
+6	að	að	PART	TO	_	7	mark	_	IFD_tag=cn
+7	gera	gera	VERB	DO	VerbForm=Inf|Voice=Act	5	acl	_	IFD_tag=sng|SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.3
-# X_ID = ID_MISSING
+# X_ID = ID_missing_4
 # text = Það er það sem við verðum að gera.
-1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
-4	sem	sem	SCONJ	C	_	6	mark	_	_
-5	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
-6	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	_
-7	að	að	PART	TO	_	8	mark	_	_
-8	gera	gera	VERB	DO	VerbForm=Inf	6	acl	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	8	punct	_	_
+1	Það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	3	nsubj	_	IFD_tag=fphen
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3en
+3	það	sá	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	0	root	_	IFD_tag=fahen
+4	sem	sem	SCONJ	C	_	6	mark	_	IFD_tag=ct
+5	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	6	nsubj	_	IFD_tag=fp1fn
+6	verðum	verða	VERB	RDPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	IFD_tag=sfg1fn
+7	að	að	PART	TO	_	8	mark	_	IFD_tag=cn
+8	gera	gera	VERB	DO	VerbForm=Inf|Voice=Act	6	acl	_	IFD_tag=sng|SpaceAfter=No
+9	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.4
-# X_ID = ID_MISSING
+# X_ID = ID_missing_5
 # text = Og það sem við eigum meira annars að binda inn í stjórnarskrá er að auðlindirnar séu sameign íslensku þjóðarinnar, allar auðlindir og í sjónum.
-1	Og	og	CCONJ	CONJ	_	2	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
-3	sem	sem	SCONJ	C	_	5	mark	_	_
-4	við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-5	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	2	acl:relcl	_	_
-6	meira	meðal	ADP	P	_	7	case	_	_
-7	annars	annar	PRON	OTHER-G	Case=Gen	5	obl	_	_
-8	að	að	PART	TO	_	9	mark	_	_
-9	binda	binda	VERB	VB	VerbForm=Inf	5	acl	_	_
-10	inn	inn	ADP	RP	_	12	compound:prt	_	_
-11	í	í	ADP	P	_	12	case	_	_
-12	stjórnarskrá	stjórnarskrá	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
-13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
-14	að	að	SCONJ	C	_	17	mark	_	_
-15	auðlindirnar	auðlind	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	nsubj	_	_
-16	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	17	cop	_	_
-17	sameign	sameign	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	_
-18	íslensku	íslenskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	19	amod	_	_
-19	þjóðarinnar	þjóð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	nmod:poss	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	21	punct	_	_
-21	allar	allur	DET	Q-N	Case=Nom|Degree=Pos	17	conj	_	_
-22	auðlindir	auðlind	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	15	conj	_	_
-23	og	og	X	X	_	15	dep	_	_
-24	í	í	ADP	P	_	25	case	_	_
-25	sjónum	sjór	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	25	punct	_	_
+1	Og	og	CCONJ	CONJ	_	2	cc	_	IFD_tag=c
+2	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	0	root	_	IFD_tag=fahen
+3	sem	sem	SCONJ	C	_	5	mark	_	IFD_tag=ct
+4	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj	_	IFD_tag=fp1fn
+5	eigum	eiga	VERB	VBPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl:relcl	_	IFD_tag=sfg1fn
+6	meira	meðal	ADP	P	_	7	case	_	IFD_tag=x
+7	annars	annar	PRON	OTHER-G	_	5	obl	_	IFD_tag=x
+8	að	að	PART	TO	_	9	mark	_	IFD_tag=c
+9	binda	binda	VERB	VB	VerbForm=Inf|Voice=Act	5	acl	_	IFD_tag=sng
+10	inn	inn	ADP	RP	_	12	compound:prt	_	IFD_tag=aa
+11	í	í	ADP	P	_	12	case	_	IFD_tag=aþ
+12	stjórnarskrá	stjórnarskrá	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	9	obl	_	IFD_tag=nveo
+13	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	IFD_tag=sfg3en
+14	að	að	SCONJ	C	_	17	mark	_	IFD_tag=c
+15	auðlindirnar	auðlind	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Fem|Number=Plur	17	nsubj	_	IFD_tag=nvfng
+16	séu	vera	AUX	BEPS	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	IFD_tag=svg3fn
+17	sameign	sameign	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	2	ccomp	_	IFD_tag=nven
+18	íslensku	íslenskur	ADJ	ADJ-G	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	19	amod	_	IFD_tag=lveevf
+19	þjóðarinnar	þjóð	NOUN	N-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	17	nmod:poss	_	IFD_tag=nveeg|SpaceAfter=No
+20	,	,	PUNCT	,	_	21	punct	_	IFD_tag=,
+21	allar	allur	DET	Q-N	Case=Nom|Gender=Fem|Number=Plur|PronType=Ind	17	conj	_	IFD_tag=fovfn
+22	auðlindir	auðlind	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	15	conj	_	IFD_tag=nvfn
+23	og	og	X	X	_	15	dep	_	IFD_tag=c
+24	í	í	ADP	P	_	25	case	_	IFD_tag=aþ
+25	sjónum	sjór	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	15	obl	_	IFD_tag=nkeþg|SpaceAfter=No
+26	.	.	PUNCT	.	_	25	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.5
-# X_ID = ID_MISSING
+# X_ID = ID_missing_6
 # text = Það er einfaldlega þannig.
-1	Það	það	PRON	PRO-N	Case=Nom	0	root	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
-3	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	1	advmod	_	_
-4	þannig	þannig	ADV	ADV	Degree=Pos	1	advmod	_	SpaceAfter=No
-5	.	.	PUNCT	.	_	4	punct	_	_
+1	Það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	0	root	_	IFD_tag=fphen
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	IFD_tag=sfg3en
+3	einfaldlega	einfaldlega	ADV	ADV	_	1	advmod	_	IFD_tag=aa
+4	þannig	þannig	ADV	ADV	_	1	advmod	_	IFD_tag=aa|SpaceAfter=No
+5	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.6
-# X_ID = ID_MISSING
+# X_ID = ID_missing_7
 # text = Það er heldur ekki svo að við höfum ekki í gegnum tíðina breytt neinu í kerfinu.
-1	Það	það	PRON	PRO-N	Case=Nom	0	root	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
-3	heldur	gjarna	ADV	ADVR	Degree=Cmp	1	advmod	_	_
-4	ekki	ekki	ADV	NEG	_	1	advmod	_	_
-5	svo	svo	ADV	ADV	Degree=Pos	1	advmod	_	_
-6	að	að	SCONJ	C	_	13	mark	_	_
-7	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-8	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	13	aux	_	_
-9	ekki	ekki	ADV	NEG	_	13	advmod	_	_
-10	í	í	ADV	ADV	Degree=Pos	13	obl	_	_
-11	gegnum	gegnum	ADP	P	_	12	case	_	_
-12	tíðina	tíð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
-13	breytt	breyta	VERB	VBN	Tense=Past|VerbForm=Part	5	advcl	_	_
-14	neinu	neinn	DET	Q-D	Case=Dat|Degree=Pos	13	obj	_	_
-15	í	í	ADP	P	_	16	case	_	_
-16	kerfinu	kerfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	16	punct	_	_
+1	Það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	0	root	_	IFD_tag=fphen
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	IFD_tag=sfg3en
+3	heldur	gjarna	ADV	ADVR	Degree=Cmp	1	advmod	_	IFD_tag=aam
+4	ekki	ekki	ADV	NEG	_	1	advmod	_	IFD_tag=aa
+5	svo	svo	ADV	ADV	_	1	advmod	_	IFD_tag=aa
+6	að	að	SCONJ	C	_	13	mark	_	IFD_tag=c
+7	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	13	nsubj	_	IFD_tag=fp1fn
+8	höfum	hafa	AUX	HVPI	Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	IFD_tag=svg1fn
+9	ekki	ekki	ADV	NEG	_	13	advmod	_	IFD_tag=aa
+10	í	í	ADV	ADV	_	13	obl	_	IFD_tag=aþ
+11	gegnum	gegnum	ADP	P	_	12	case	_	IFD_tag=ao
+12	tíðina	tíð	NOUN	N-A	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	10	obl	_	IFD_tag=nveog
+13	breytt	breyta	VERB	VBN	VerbForm=Sup|Voice=Act	5	advcl	_	IFD_tag=ssg
+14	neinu	neinn	DET	Q-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Ind	13	obj	_	IFD_tag=foheþ
+15	í	í	ADP	P	_	16	case	_	IFD_tag=aþ
+16	kerfinu	kerfi	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	14	obl	_	IFD_tag=nheþg|SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.7
-# X_ID = ID_MISSING
+# X_ID = ID_missing_8
 # text = Við höfum einmitt reynt að koma til móts við þær óskir sem hafa verið settar fram í tengslum við landsbyggðina.
-1	Við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-2	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
-3	einmitt	einmitt	ADV	ADV	Degree=Pos	4	advmod	_	_
-4	reynt	reyna	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-5	að	að	PART	TO	_	6	mark	_	_
-6	koma	koma	VERB	VB	VerbForm=Inf	4	acl	_	_
-7	til	til	ADP	P	_	8	case	_	_
-8	móts	mót	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
-9	við	við	ADP	P	_	11	case	_	_
-10	þær	sá	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
-11	óskir	ósk	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	_
-12	sem	sem	SCONJ	C	_	15	mark	_	_
-13	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	15	aux	_	_
-14	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	15	cop	_	_
-15	settar	setja	VERB	VAN	Tense=Past|VerbForm=Part	11	acl:relcl	_	_
-16	fram	fram	ADP	RP	_	15	compound:prt	_	_
-17	í	í	ADP	P	_	18	case	_	_
-18	tengslum	tengsl	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	_
-19	við	við	ADP	P	_	20	case	_	_
-20	landsbyggðina	landsbyggð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	20	punct	_	_
+1	Við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	IFD_tag=fp1fn
+2	höfum	hafa	AUX	HVPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	IFD_tag=sfg1fn
+3	einmitt	einmitt	ADV	ADV	_	4	advmod	_	IFD_tag=aa
+4	reynt	reyna	VERB	VBN	VerbForm=Sup|Voice=Act	0	root	_	IFD_tag=ssg
+5	að	að	PART	TO	_	6	mark	_	IFD_tag=cn
+6	koma	koma	VERB	VB	VerbForm=Inf|Voice=Act	4	acl	_	IFD_tag=sng
+7	til	til	ADP	P	_	8	case	_	IFD_tag=ae
+8	móts	mót	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	6	obl	_	IFD_tag=nhee
+9	við	við	ADP	P	_	11	case	_	IFD_tag=ao
+10	þær	sá	DET	D-A	Case=Acc|Gender=Fem|Number=Plur|PronType=Dem	11	det	_	IFD_tag=favfo
+11	óskir	ósk	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	8	obl	_	IFD_tag=nvfo
+12	sem	sem	SCONJ	C	_	15	mark	_	IFD_tag=ct
+13	hafa	hafa	AUX	HVPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	aux	_	IFD_tag=sfg3fn
+14	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	15	cop	_	IFD_tag=ssg
+15	settar	setja	VERB	VAN	Case=Nom|Gender=Fem|Number=Plur|VerbForm=Part|Voice=Act	11	acl:relcl	_	IFD_tag=sþgvfn
+16	fram	fram	ADP	RP	_	15	compound:prt	_	IFD_tag=aa
+17	í	í	ADP	P	_	18	case	_	IFD_tag=aþ
+18	tengslum	tengsl	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	15	obl	_	IFD_tag=nhfþ
+19	við	við	ADP	P	_	20	case	_	IFD_tag=ao
+20	landsbyggðina	landsbyggð	NOUN	N-A	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	18	obl	_	IFD_tag=nveog|SpaceAfter=No
+21	.	.	PUNCT	.	_	20	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.8
-# X_ID = ID_MISSING
+# X_ID = ID_missing_9
 # text = Það hafa verið settir byggðakvótar.
-1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
-2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
-3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	4	cop	_	_
-4	settir	setja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
-5	byggðakvótar	byggðakvóti	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
-6	.	.	PUNCT	.	_	5	punct	_	_
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	4	expl	_	IFD_tag=fphen
+2	hafa	hafa	AUX	HVPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	IFD_tag=sfg3fn
+3	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	4	cop	_	IFD_tag=ssg
+4	settir	setja	VERB	VAN	Case=Nom|Gender=Masc|Number=Plur|VerbForm=Part|Voice=Act	0	root	_	IFD_tag=sþgkfn
+5	byggðakvótar	byggðakvóti	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	4	obl	_	IFD_tag=nkfn|SpaceAfter=No
+6	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.9
-# X_ID = ID_MISSING
+# X_ID = ID_missing_10
 # text = Við höfum verið að hrófla við línuívilnunarkerfinu í þágu landsbyggðarinnar, í þágu smærri bátanna, í þágu rómantíkurinnar sem margir hafa sagt að menn missi núna úr sjávarútveginum.
-1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	höfum	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	2	cop	_	_
-4	að	að	PART	TO	_	5	mark	_	_
-5	hrófla	hrófla	VERB	VB	VerbForm=Inf	2	acl	_	_
-6	við	við	ADP	P	_	7	case	_	_
-7	línuívilnunarkerfinu	línuívilnunarkerfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	þágu	þága	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
-10	landsbyggðarinnar	landsbyggð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	nmod:poss	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	10	punct	_	_
-12	í	í	ADP	P	_	5	obl	_	_
-13	þágu	þága	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	conj	_	_
-14	smærri	smár	ADJ	ADJR-G	Case=Gen|Degree=Cmp	15	amod	_	_
-15	bátanna	bátur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	13	nmod:poss	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	15	punct	_	_
-17	í	í	ADP	P	_	18	case	_	_
-18	þágu	þága	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	conj	_	_
-19	rómantíkurinnar	rómantík	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	_
-20	sem	sem	SCONJ	C	_	23	mark	_	_
-21	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	23	nsubj	_	_
-22	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	23	aux	_	_
-23	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	19	acl:relcl	_	_
-24	að	að	SCONJ	C	_	26	mark	_	_
-25	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	26	nsubj	_	_
-26	missi	missa	VERB	VBPS	Mood=Sub|Tense=Pres	23	ccomp	_	_
-27	núna	núna	ADV	ADV	Degree=Pos	26	advmod	_	_
-28	úr	úr	ADP	P	_	29	case	_	_
-29	sjávarútveginum	sjávarútvegur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	29	punct	_	_
+1	Við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	nsubj	_	IFD_tag=fp1fn
+2	höfum	hafa	VERB	HVPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1fn
+3	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	2	cop	_	IFD_tag=ssg
+4	að	að	PART	TO	_	5	mark	_	IFD_tag=c
+5	hrófla	hrófla	VERB	VB	VerbForm=Inf|Voice=Act	2	acl	_	IFD_tag=sng
+6	við	við	ADP	P	_	7	case	_	IFD_tag=aþ
+7	línuívilnunarkerfinu	línuívilnunarkerfi	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	5	obl	_	IFD_tag=nheþg
+8	í	í	ADP	P	_	9	case	_	IFD_tag=aþ
+9	þágu	þága	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	12	obl	_	IFD_tag=nveþ
+10	landsbyggðarinnar	landsbyggð	NOUN	N-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	9	nmod:poss	_	IFD_tag=nveeg|SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	IFD_tag=,
+12	í	í	ADP	P	_	5	obl	_	IFD_tag=aþ
+13	þágu	þága	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	12	conj	_	IFD_tag=nveþ
+14	smærri	smár	ADJ	ADJR-G	Case=Gen|Definite=Def|Degree=Cmp|Gender=Masc|Number=Plur	15	amod	_	IFD_tag=lkfevm
+15	bátanna	bátur	NOUN	NS-G	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	13	nmod:poss	_	IFD_tag=nkfeg|SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	IFD_tag=,
+17	í	í	ADP	P	_	18	case	_	IFD_tag=aþ
+18	þágu	þága	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	12	conj	_	IFD_tag=nveþ
+19	rómantíkurinnar	rómantík	NOUN	N-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	18	nmod:poss	_	IFD_tag=nveeg
+20	sem	sem	SCONJ	C	_	23	mark	_	IFD_tag=ct
+21	margir	margur	DET	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	23	nsubj	_	IFD_tag=lkfnsf
+22	hafa	hafa	AUX	HVPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	23	aux	_	IFD_tag=sfg3fn
+23	sagt	segja	VERB	VBN	VerbForm=Sup|Voice=Act	19	acl:relcl	_	IFD_tag=ssg
+24	að	að	SCONJ	C	_	26	mark	_	IFD_tag=c
+25	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	26	nsubj	_	IFD_tag=nkfn
+26	missi	missa	VERB	VBPS	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	23	ccomp	_	IFD_tag=svg3fn
+27	núna	núna	ADV	ADV	_	26	advmod	_	IFD_tag=aa
+28	úr	úr	ADP	P	_	29	case	_	IFD_tag=aþ
+29	sjávarútveginum	sjávarútvegur	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	26	obl	_	IFD_tag=nkeþg|SpaceAfter=No
+30	.	.	PUNCT	.	_	29	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.10
-# X_ID = ID_MISSING
+# X_ID = ID_missing_11
 # text = Það sem má ekki gerast er að menn haldi hér fram pólitískri stefnu á grundvelli skoðanakannana.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
-2	sem	sem	SCONJ	C	_	5	mark	_	_
-3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
-4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
-5	gerast	gera	VERB	DO	VerbForm=Inf	1	acl:relcl	_	_
-6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
-7	að	að	SCONJ	C	_	9	mark	_	_
-8	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
-9	haldi	halda	VERB	VBPS	Mood=Sub|Tense=Pres	1	ccomp	_	_
-10	hér	hér	ADV	ADV	Degree=Pos	9	advmod	_	_
-11	fram	fram	ADP	RP	_	9	compound:prt	_	_
-12	pólitískri	pólitískur	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	amod	_	_
-13	stefnu	stefna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obj	_	_
-14	á	á	ADP	P	_	15	case	_	_
-15	grundvelli	grundvöllur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
-16	skoðanakannana	skoðanakönnun	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	nmod:poss	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	16	punct	_	_
+1	Það	sá	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	0	root	_	IFD_tag=fahen
+2	sem	sem	SCONJ	C	_	5	mark	_	IFD_tag=ct
+3	má	mega	AUX	MDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	IFD_tag=sfg3en
+4	ekki	ekki	ADV	NEG	_	5	advmod	_	IFD_tag=aa
+5	gerast	gera	VERB	DO	VerbForm=Inf|Voice=Mid	1	acl:relcl	_	IFD_tag=snm
+6	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	IFD_tag=sfg3en
+7	að	að	SCONJ	C	_	9	mark	_	IFD_tag=c
+8	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	9	nsubj	_	IFD_tag=nkfn
+9	haldi	halda	VERB	VBPS	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	ccomp	_	IFD_tag=svg3fn
+10	hér	hér	ADV	ADV	_	9	advmod	_	IFD_tag=aa
+11	fram	fram	ADP	RP	_	9	compound:prt	_	IFD_tag=aa
+12	pólitískri	pólitískur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	13	amod	_	IFD_tag=lveþsf
+13	stefnu	stefna	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	9	obj	_	IFD_tag=nveþ
+14	á	á	ADP	P	_	15	case	_	IFD_tag=aþ
+15	grundvelli	grundvöllur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	9	obl	_	IFD_tag=nkeþ
+16	skoðanakannana	skoðanakönnun	NOUN	NS-G	Case=Gen|Definite=Def|Gender=Fem|Number=Plur	15	nmod:poss	_	IFD_tag=nvfeg|SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.11
-# X_ID = ID_MISSING
+# X_ID = ID_missing_12
 # text = Það er nákvæmlega það sem kom fram í andsvari í gær að Samfylkingin, og mér heyrist núna Vinstri grænir líka, er að setja þetta mál fram af því að skoðanakannanir nú um stundir eru andsnúnar Forseti hringir. kvótakerfinu.
-1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	nákvæmlega	nákvæmlega	ADV	ADV	Degree=Pos	0	root	_	_
-4	það	sá	DET	D-N	Case=Nom|PronType=Art	3	det	_	_
-5	sem	sem	SCONJ	C	_	6	mark	_	_
-6	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	3	acl:relcl	_	_
-7	fram	fram	ADP	RP	_	6	compound:prt	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	andsvari	andsvar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
-10	í	í	ADP	P	_	11	case	_	_
-11	gær	gær	ADV	ADV	Degree=Pos	6	obl	_	_
-12	að	að	SCONJ	C	_	25	mark	_	_
-13	Samfylkingin	samfylking	PROPN	NPR-N	_	25	nsubj	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	13	punct	_	_
-15	og	og	CCONJ	CONJ	_	17	cc	_	_
-16	mér	ég	PRON	PRO-D	Case=Dat	17	nsubj	_	_
-17	heyrist	heyra	VERB	VBPI	Mood=Ind|Tense=Pres	13	parataxis	_	_
-18	núna	núna	ADV	ADV	Degree=Pos	17	advmod	_	_
-19	Vinstri	vinstri	ADJ	ADJ-N	Case=Nom|Degree=Pos	17	dep	_	_
-20	grænir	grænn	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	amod	_	_
-21	líka	líka	ADV	ALSO	_	17	advmod	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	25	punct	_	_
-23	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
-24	að	að	PART	TO	_	25	mark	_	_
-25	setja	setja	VERB	VB	VerbForm=Inf	3	ccomp	_	_
-26	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	27	det	_	_
-27	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obj	_	_
-28	fram	fram	ADP	RP	_	25	compound:prt	_	_
-29	af	af	ADP	P	_	30	case	_	_
-30	því	það	PRON	PRO-D	Case=Dat	25	obl	_	_
-31	að	að	SCONJ	C	_	37	mark	_	_
-32	skoðanakannanir	skoðanakönnun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	37	nsubj	_	_
-33	nú	nú	ADV	ADV	Degree=Pos	35	advmod	_	_
-34	um	um	ADP	P	_	35	case	_	_
-35	stundir	stund	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	32	obl	_	_
-36	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	37	cop	_	_
-37	andsnúnar	andsnúinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	30	ccomp	_	_
-38	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	39	nsubj	_	_
-39	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	37	amod	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	39	punct	_	_
-41	kvótakerfinu	kvótakerfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	37	obl	_	SpaceAfter=No
-42	.	.	PUNCT	.	_	41	punct	_	_
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	3	expl	_	IFD_tag=fphen
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3en
+3	nákvæmlega	nákvæmlega	ADV	ADV	_	0	root	_	IFD_tag=aa
+4	það	sá	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	3	det	_	IFD_tag=fahen
+5	sem	sem	SCONJ	C	_	6	mark	_	IFD_tag=ct
+6	kom	koma	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	acl:relcl	_	IFD_tag=sfg3eþ
+7	fram	fram	ADP	RP	_	6	compound:prt	_	IFD_tag=aa
+8	í	í	ADP	P	_	9	case	_	IFD_tag=aa
+9	andsvari	andsvar	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	6	obl	_	IFD_tag=nheþ
+10	í	í	ADP	P	_	11	case	_	IFD_tag=aa
+11	gær	gær	ADV	ADV	_	6	obl	_	IFD_tag=aa
+12	að	að	SCONJ	C	_	25	mark	_	IFD_tag=c
+13	Samfylkingin	samfylking	PROPN	NPR-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	25	nsubj	_	IFD_tag=nvengs|SpaceAfter=No
+14	,	,	PUNCT	,	_	13	punct	_	IFD_tag=,
+15	og	og	CCONJ	CONJ	_	17	cc	_	IFD_tag=c
+16	mér	ég	PRON	PRO-D	Case=Dat|Number=Sing|Person=1|PronType=Prs	17	nsubj	_	IFD_tag=fp1eþ
+17	heyrist	heyra	VERB	VBPI	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	13	parataxis	_	IFD_tag=svm3en
+18	núna	núna	ADV	ADV	_	17	advmod	_	IFD_tag=aa
+19	Vinstri	vinstri	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	17	dep	_	IFD_tag=lkfnvf
+20	grænir	grænn	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	19	amod	_	IFD_tag=lkfnsf
+21	líka	líka	ADV	ALSO	_	17	advmod	_	IFD_tag=aa|SpaceAfter=No
+22	,	,	PUNCT	,	_	25	punct	_	IFD_tag=,
+23	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	25	cop	_	IFD_tag=sfg3en
+24	að	að	PART	TO	_	25	mark	_	IFD_tag=c
+25	setja	setja	VERB	VB	VerbForm=Inf|Voice=Act	3	ccomp	_	IFD_tag=sng
+26	þetta	þessi	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	27	det	_	IFD_tag=faheo
+27	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	25	obj	_	IFD_tag=nheo
+28	fram	fram	ADP	RP	_	25	compound:prt	_	IFD_tag=aa
+29	af	af	ADP	P	_	30	case	_	IFD_tag=aþ
+30	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	25	obl	_	IFD_tag=fpheþ
+31	að	að	SCONJ	C	_	37	mark	_	IFD_tag=c
+32	skoðanakannanir	skoðanakönnun	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	37	nsubj	_	IFD_tag=nvfn
+33	nú	nú	ADV	ADV	_	35	advmod	_	IFD_tag=aa
+34	um	um	ADP	P	_	35	case	_	IFD_tag=ao
+35	stundir	stund	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	32	obl	_	IFD_tag=nvfo
+36	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	37	cop	_	IFD_tag=sfg3fn
+37	andsnúnar	andsnúinn	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	30	ccomp	_	IFD_tag=lvfnsf
+38	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	39	nsubj	_	IFD_tag=nken
+39	hringir	hringja	VERB	VBPI	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	37	amod	_	IFD_tag=nkfn|SpaceAfter=No
+40	.	.	PUNCT	.	_	39	punct	_	IFD_tag=.
+41	kvótakerfinu	kvótakerfi	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	37	obl	_	IFD_tag=nheþg|SpaceAfter=No
+42	.	.	PUNCT	.	_	41	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.12
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_13 ; ID_missing_14
 # text = Þess vegna er málið sett fram, hugsjónirnar eru ekki meiri.
-1	Þess	það	PRON	PRO-G	Case=Gen	5	obl	_	_
-2	vegna	vegna	ADP	P	_	1	case	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-4	málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
-5	sett	setja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
-6	fram	fram	ADP	RP	_	5	compound:prt	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	6	punct	_	_
-8	hugsjónirnar	hugsjón	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	nsubj	_	_
-9	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
-10	ekki	ekki	ADV	NEG	_	11	advmod	_	_
-11	meiri	mikill	DET	QR-N	Case=Nom|Degree=Pos	5	conj	_	OriginalHead=0|SpaceAfter=No
-12	.	.	PUNCT	.	_	11	punct	_	_
+1	Þess	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Prs	5	obl	_	IFD_tag=fphee
+2	vegna	vegna	ADP	P	_	1	case	_	IFD_tag=ae
+3	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3en
+4	málið	mál	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	5	nsubj	_	IFD_tag=nheng
+5	sett	setja	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	IFD_tag=sþghen
+6	fram	fram	ADP	RP	_	5	compound:prt	_	IFD_tag=aa|SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	IFD_tag=,
+8	hugsjónirnar	hugsjón	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Fem|Number=Plur	11	nsubj	_	IFD_tag=nvfng
+9	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	IFD_tag=sfg3fn
+10	ekki	ekki	ADV	NEG	_	11	advmod	_	IFD_tag=aa
+11	meiri	mikill	DET	QR-N	Case=Nom|Definite=Def|Degree=Cmp|Gender=Fem|Number=Plur	5	conj	_	OriginalHead=0|SpaceAfter=No
+12	.	.	PUNCT	.	_	11	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.13
-# X_ID = ID_MISSING
+# X_ID = ID_missing_15
 # text = Ég vara við því að hrófla við þessu á meðan arðbærnin og hagkvæmnin Forseti hringir. er þetta mikil.
-1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	vara	vara	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	við	við	ADP	P	_	4	case	_	_
-4	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
-5	að	að	PART	TO	_	6	mark	_	_
-6	hrófla	hrófla	VERB	VB	VerbForm=Inf	4	acl	_	_
-7	við	við	ADP	P	_	8	case	_	_
-8	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	6	obl	_	_
-9	á	á	ADV	ADV	Degree=Pos	19	advmod	_	_
-10	meðan	meðan	ADP	P	_	19	case	_	_
-11	arðbærnin	arðbærni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
-12	og	og	CCONJ	CONJ	_	13	cc	_	_
-13	hagkvæmnin	hagkvæmni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	conj	_	_
-14	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
-15	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	19	dep	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	15	punct	_	_
-17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
-18	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	19	obl	_	_
-19	mikil	mikill	DET	Q-N	Case=Nom|Degree=Pos	6	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	19	punct	_	_
+1	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	IFD_tag=fp1en
+2	vara	vara	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1en
+3	við	við	ADP	P	_	4	case	_	IFD_tag=aþ
+4	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	2	obl	_	IFD_tag=fpheþ
+5	að	að	PART	TO	_	6	mark	_	IFD_tag=cn
+6	hrófla	hrófla	VERB	VB	VerbForm=Inf|Voice=Act	4	acl	_	IFD_tag=sng
+7	við	við	ADP	P	_	8	case	_	IFD_tag=aþ
+8	þessu	þessi	DET	D-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	6	obl	_	IFD_tag=faheþ
+9	á	á	ADV	ADV	_	19	advmod	_	IFD_tag=aa
+10	meðan	meðan	ADP	P	_	19	case	_	IFD_tag=c
+11	arðbærnin	arðbærni	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	19	nsubj	_	IFD_tag=nveng
+12	og	og	CCONJ	CONJ	_	13	cc	_	IFD_tag=c
+13	hagkvæmnin	hagkvæmni	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	11	conj	_	IFD_tag=nveng
+14	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	15	nsubj	_	IFD_tag=nken
+15	hringir	hringja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	dep	_	IFD_tag=sfg3en|SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	IFD_tag=.
+17	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	cop	_	IFD_tag=sfg3en
+18	þetta	þessi	DET	D-A	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	19	obl	_	IFD_tag=fahen
+19	mikil	mikill	DET	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	6	obl	_	IFD_tag=lvensf|SpaceAfter=No
+20	.	.	PUNCT	.	_	19	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4642190,.14
-# X_ID = ID_MISSING
+# X_ID = ID_missing_16
 # text = Við skulum laga það sem þarf að laga en ekki hrófla við öllu hinu.
-1	Við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-2	skulum	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
-3	laga	laga	VERB	VB	VerbForm=Inf	0	root	_	_
-4	það	sá	DET	D-A	Case=Acc|PronType=Art	3	obj	_	_
-5	sem	sem	SCONJ	C	_	6	mark	_	_
-6	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
-7	að	að	PART	TO	_	8	mark	_	_
-8	laga	laga	VERB	VB	VerbForm=Inf	6	acl	_	_
-9	en	en	CCONJ	CONJ	_	11	cc	_	_
-10	ekki	ekki	ADV	NEG	_	11	advmod	_	_
-11	hrófla	hrófla	VERB	VB	VerbForm=Inf	3	conj	_	_
-12	við	við	ADP	P	_	13	case	_	_
-13	öllu	allur	DET	Q-D	Case=Dat|Degree=Pos	11	obl	_	_
-14	hinu	hinn	DET	D-D	Case=Dat|PronType=Art	13	det	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	14	punct	_	_
+1	Við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	IFD_tag=fp1fn
+2	skulum	skulu	AUX	MDPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	IFD_tag=sfg1fn
+3	laga	laga	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
+4	það	sá	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	3	obj	_	IFD_tag=faheo
+5	sem	sem	SCONJ	C	_	6	mark	_	IFD_tag=ct
+6	þarf	þurfa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	acl:relcl	_	IFD_tag=sfg3en
+7	að	að	PART	TO	_	8	mark	_	IFD_tag=cn
+8	laga	laga	VERB	VB	VerbForm=Inf|Voice=Act	6	acl	_	IFD_tag=sng
+9	en	en	CCONJ	CONJ	_	11	cc	_	IFD_tag=c
+10	ekki	ekki	ADV	NEG	_	11	advmod	_	IFD_tag=aa
+11	hrófla	hrófla	VERB	VB	VerbForm=Inf|Voice=Act	3	conj	_	IFD_tag=sng
+12	við	við	ADP	P	_	13	case	_	IFD_tag=aþ
+13	öllu	allur	DET	Q-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Ind	11	obl	_	IFD_tag=foheþ
+14	hinu	hinn	DET	D-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	13	det	_	IFD_tag=faheþ|SpaceAfter=No
+15	.	.	PUNCT	.	_	14	punct	_	IFD_tag=.
 

@@ -1,5 +1,5 @@
 # sent_id = ALTHINGI_BO_2013_G-33-4656263,.1
-# X_ID = ID_MISSING
+# X_ID = ID_missing_1
 # text = Virðulegi forseti. Ég þakka fyrir svarið.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
@@ -11,27 +11,27 @@
 8	.	.	PUNCT	.	_	7	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4656263,.2
-# X_ID = ID_MISSING
+# X_ID = ID_missing_2
 # text = Ég held að margir vilji vinna að þessum málum með hv. þingmanni og flokknum hennar.
-1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	að	að	SCONJ	C	_	6	mark	_	_
-4	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	6	nsubj	_	_
-5	vilji	vilja	AUX	MDPS	Mood=Sub|Tense=Pres	6	aux	_	_
-6	vinna	vinna	VERB	VB	VerbForm=Inf	2	ccomp	_	_
-7	að	að	ADP	P	_	9	case	_	_
-8	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
-9	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
-10	með	með	ADP	P	_	12	case	_	_
-11	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
-12	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
-13	og	og	CCONJ	CONJ	_	14	cc	_	_
-14	flokknum	flokkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	conj	_	_
-15	hennar	hún	PRON	PRO-G	Case=Gen	14	nmod:poss	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	15	punct	_	_
+1	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	IFD_tag=fp1en
+2	held	halda	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1en
+3	að	að	SCONJ	C	_	6	mark	_	IFD_tag=aþ
+4	margir	margur	DET	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	6	nsubj	_	IFD_tag=lkfnsf
+5	vilji	vilja	AUX	MDPS	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	IFD_tag=svg3fn
+6	vinna	vinna	VERB	VB	VerbForm=Inf|Voice=Act	2	ccomp	_	IFD_tag=sng
+7	að	að	ADP	P	_	9	case	_	IFD_tag=aþ
+8	þessum	þessi	DET	D-D	Case=Dat|Gender=Neut|Number=Plur|PronType=Dem	9	det	_	IFD_tag=fahfþ
+9	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	6	obl	_	IFD_tag=nhfþ
+10	með	með	ADP	P	_	12	case	_	IFD_tag=aþ
+11	hv.	háttvirtur	ADJ	ADJ-D	_	12	amod	_	IFD_tag=as
+12	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	6	obl	_	IFD_tag=nkeþ
+13	og	og	CCONJ	CONJ	_	14	cc	_	IFD_tag=c
+14	flokknum	flokkur	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	12	conj	_	IFD_tag=nkeþg
+15	hennar	hún	PRON	PRO-G	Case=Gen|Gender=Fem|Number=Sing|PronType=Prs	14	nmod:poss	_	IFD_tag=fpvee|SpaceAfter=No
+16	.	.	PUNCT	.	_	15	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2013_G-33-4656263,.3
-# X_ID = ID_MISSING
+# X_ID = ID_missing_3
 # text = Við í Bjartri framtíð erum með svipað kerfi sem heitir heimasidan.is þar sem við leitum í grasrótina.
 1	Við	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 2	í	í	ADP	P	_	4	case	_	_
@@ -53,7 +53,7 @@
 18	.	.	PUNCT	.	_	17	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4656263,.4
-# X_ID = ID_MISSING
+# X_ID = ID_missing_4
 # text = Hver sem er getur komið með athugasemdir og pælingar sem fara svo í gegnum kosningakerfi og geta endað á Alþingi sem tillaga.
 1	Hver	hver	DET	Q-N	Case=Nom|Degree=Pos	5	nsubj	_	_
 2	sem	sem	SCONJ	C	_	1	fixed	_	_
@@ -80,25 +80,25 @@
 23	.	.	PUNCT	.	_	22	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4656263,.5
-# X_ID = ID_MISSING
+# X_ID = ID_missing_5
 # text = Þar er líka grundvöllur.
-1	Þar	þar	ADV	ADV	Degree=Pos	4	advmod	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	líka	líka	ADV	ALSO	_	4	advmod	_	_
-4	grundvöllur	grundvöllur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
-5	.	.	PUNCT	.	_	4	punct	_	_
+1	Þar	þar	ADV	ADV	_	4	advmod	_	IFD_tag=aa
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3en
+3	líka	líka	ADV	ALSO	_	4	advmod	_	IFD_tag=aa
+4	grundvöllur	grundvöllur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	0	root	_	IFD_tag=nken|SpaceAfter=No
+5	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2013_G-33-4656263,.6
-# X_ID = ID_MISSING
+# X_ID = ID_missing_6
 # text = Aðeins að þessari fátæktarskýrslu.
-1	Aðeins	aðeins	ADV	ADV	Degree=Pos	4	advmod	_	_
-2	að	að	ADP	P	_	4	case	_	_
-3	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	4	det	_	_
-4	fátæktarskýrslu	fátæktarskýrsla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
-5	.	.	PUNCT	.	_	4	punct	_	_
+1	Aðeins	aðeins	ADV	ADV	_	4	advmod	_	IFD_tag=aa
+2	að	að	ADP	P	_	4	case	_	IFD_tag=aþ
+3	þessari	þessi	DET	D-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Dem	4	det	_	IFD_tag=faveþ
+4	fátæktarskýrslu	fátæktarskýrsla	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	0	root	_	IFD_tag=nveþ|SpaceAfter=No
+5	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2013_G-33-4656263,.7
-# X_ID = ID_MISSING
+# X_ID = ID_missing_7
 # text = Mig langar að nefna hér að hv. velferðarnefnd hefur tekið vel í það, allir sem einn þar, að fjalla um hana.
 1	Mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
 2	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -126,7 +126,7 @@
 24	.	.	PUNCT	.	_	23	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4656263,.8
-# X_ID = ID_MISSING
+# X_ID = ID_missing_8
 # text = Þá sjáum við hvert framhald þeirrar vinnu getur orðið á Alþingi.
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	sjáum	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_

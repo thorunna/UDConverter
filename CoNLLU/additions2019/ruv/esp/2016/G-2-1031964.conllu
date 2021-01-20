@@ -1,137 +1,137 @@
 # sent_id = RUV_ESP_2016_G-2-1031964,.1
-# X_ID = ID_MISSING
+# X_ID = ID_missing_1
 # text = Hannes Þór Halldórsson, landsliðsmarkmaður Íslands í fótbolta, er genginn til liðs við danska úrvalsdeildarliðið Randers frá NEC Nijmegen í Hollandi.
-1	Hannes	hannes	PROPN	NPR-N	_	11	nsubj	_	_
-2	Þór	þór	PROPN	NPR-N	_	1	flat:name	_	_
-3	Halldórsson	halldórsson	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	3	punct	_	_
-5	landsliðsmarkmaður	landsliðsmarkmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	_
-6	Íslands	ísland	PROPN	NPR-G	_	5	nmod:poss	_	_
-7	í	í	ADP	P	_	8	case	_	_
-8	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	11	punct	_	_
-10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
-11	genginn	ganga	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-12	til	til	ADP	P	_	13	case	_	_
-13	liðs	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	obl	_	_
-14	við	við	ADP	P	_	16	case	_	_
-15	danska	danskur	ADJ	ADJ-A	Case=Acc|Degree=Pos	16	amod	_	_
-16	úrvalsdeildarliðið	úrvalsdeildarlið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
-17	Randers	randers	PROPN	NPR-A	_	16	appos	_	_
-18	frá	frá	ADP	P	_	19	case	_	_
-19	NEC	nec	PROPN	NPR-D	_	11	obl	_	_
-20	Nijmegen	nijmegen	PROPN	NPR-D	_	19	flat:name	_	_
-21	í	í	ADP	P	_	22	case	_	_
-22	Hollandi	holland	PROPN	NPR-D	_	19	obl	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	22	punct	_	_
+1	Hannes	hannes	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	11	nsubj	_	IFD_tag=nken-s
+2	Þór	þór	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	flat:name	_	IFD_tag=nken-s
+3	Halldórsson	halldórsson	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	dep	_	IFD_tag=nken-s|SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	IFD_tag=,
+5	landsliðsmarkmaður	landsliðsmarkmaður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	appos	_	IFD_tag=nken
+6	Íslands	ísland	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	5	nmod:poss	_	IFD_tag=nhee-s
+7	í	í	ADP	P	_	8	case	_	IFD_tag=aþ
+8	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	5	obl	_	IFD_tag=nkeþ|SpaceAfter=No
+9	,	,	PUNCT	,	_	11	punct	_	IFD_tag=,
+10	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	IFD_tag=sfg3en
+11	genginn	ganga	VERB	VBN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	IFD_tag=sþgken
+12	til	til	ADP	P	_	13	case	_	IFD_tag=ae
+13	liðs	lið	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	11	obl	_	IFD_tag=nhee
+14	við	við	ADP	P	_	16	case	_	IFD_tag=ao
+15	danska	danskur	ADJ	ADJ-A	Case=Acc|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	16	amod	_	IFD_tag=lheovf
+16	úrvalsdeildarliðið	úrvalsdeildarlið	NOUN	N-A	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	13	obl	_	IFD_tag=nheog
+17	Randers	randers	PROPN	NPR-A	Foreign=Yes	16	appos	_	IFD_tag=e
+18	frá	frá	ADP	P	_	19	case	_	IFD_tag=aþ
+19	NEC	nec	PROPN	NPR-D	Foreign=Yes	11	obl	_	IFD_tag=e
+20	Nijmegen	nijmegen	PROPN	NPR-D	Foreign=Yes	19	flat:name	_	IFD_tag=e
+21	í	í	ADP	P	_	22	case	_	IFD_tag=aþ
+22	Hollandi	holland	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	19	obl	_	IFD_tag=nheþ-s|SpaceAfter=No
+23	.	.	PUNCT	.	_	22	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1031964,.2
-# X_ID = ID_MISSING
+# X_ID = ID_missing_2
 # text = Þetta var staðfest á heimasíðu Randers nú í morgun.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
-2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
-3	staðfest	staðfesta	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
-4	á	á	ADP	P	_	5	case	_	_
-5	heimasíðu	heimasíða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-6	Randers	randers	PROPN	NPR-G	_	5	nmod:poss	_	_
-7	nú	nú	ADV	ADV	Degree=Pos	9	advmod	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	9	punct	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	3	nsubj	_	IFD_tag=fahen
+2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3eþ
+3	staðfest	staðfesta	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	IFD_tag=sþghen
+4	á	á	ADP	P	_	5	case	_	IFD_tag=aþ
+5	heimasíðu	heimasíða	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	3	obl	_	IFD_tag=nveþ
+6	Randers	randers	PROPN	NPR-G	Foreign=Yes	5	nmod:poss	_	IFD_tag=e
+7	nú	nú	ADV	ADV	_	9	advmod	_	IFD_tag=aa
+8	í	í	ADP	P	_	9	case	_	IFD_tag=ao
+9	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	3	obl	_	IFD_tag=nkeo|SpaceAfter=No
+10	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1031964,.3
-# X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5
 # text = Hannes Þór vakti mikla athygli á nýafstöðu Evrópumóti í Frakklandi, varði flest skot allra markmanna á mótinu og margir biðu spenntir að sjá hvert framhaldið yrði hjá þessum 32 ára gamla uppalda Leiknis-manni.
-1	Hannes	hannes	PROPN	NPR-N	_	3	nsubj	_	_
-2	Þór	þór	PROPN	NPR-N	_	1	flat:name	_	_
-3	vakti	vekja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	mikla	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
-5	athygli	athygli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
-6	á	á	ADP	P	_	8	case	_	_
-7	nýafstöðu	nýafstaður	X	X	_	8	dep	_	_
-8	Evrópumóti	evrópumót	PROPN	NPR-D	_	3	obl	_	_
-9	í	í	ADP	P	_	10	case	_	_
-10	Frakklandi	frakkland	PROPN	NPR-D	_	8	obl	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	10	punct	_	_
-12	varði	verja	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
-13	flest	margur	ADJ	ADJS-A	Case=Acc|Degree=Sup	14	amod	_	_
-14	skot	skot	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obj	_	_
-15	allra	allur	DET	Q-G	Case=Gen|Degree=Pos	14	nmod:poss	_	_
-16	markmanna	markmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	conj	_	_
-17	á	á	ADP	P	_	18	case	_	_
-18	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
-19	og	og	CCONJ	CONJ	_	21	cc	_	_
-20	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	21	nsubj	_	_
-21	biðu	bíða	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
-22	spenntir	spenntur	ADJ	ADJ-N	Case=Nom|Degree=Pos	21	amod	_	_
-23	að	að	PART	TO	_	24	mark	_	_
-24	sjá	sjá	VERB	VB	VerbForm=Inf	21	acl	_	_
-25	hvert	hver	PRON	WPRO-N	Case=Nom	27	obj	_	_
-26	framhaldið	framhald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
-27	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	24	ccomp	_	_
-28	hjá	hjá	ADP	P	_	34	case	_	_
-29	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	34	det	_	_
-30	32	32	NUM	NUM-G	Case=Gen	31	nummod	_	_
-31	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	32	nmod:poss	_	_
-32	gamla	gamall	ADJ	ADJ-D	Case=Dat|Degree=Pos	34	amod	_	_
-33	uppalda	uppalinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	34	amod	_	_
-34	Leiknis-manni	leiknis-maður	PROPN	NPR-D	_	27	obl	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	34	punct	_	_
+1	Hannes	hannes	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	3	nsubj	_	IFD_tag=nken-s
+2	Þór	þór	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	flat:name	_	IFD_tag=nken-s
+3	vakti	vekja	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
+4	mikla	mikill	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	IFD_tag=lveosf
+5	athygli	athygli	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	3	obj	_	IFD_tag=nveo
+6	á	á	ADP	P	_	8	case	_	IFD_tag=aþ
+7	nýafstöðu	nýafstaður	X	X	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	8	dep	_	IFD_tag=nveo
+8	Evrópumóti	evrópumót	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	3	obl	_	IFD_tag=nheþ-s
+9	í	í	ADP	P	_	10	case	_	IFD_tag=aþ
+10	Frakklandi	frakkland	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	8	obl	_	IFD_tag=nheþ-s|SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	IFD_tag=,
+12	varði	verja	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
+13	flest	margur	ADJ	ADJS-A	Case=Acc|Definite=Ind|Degree=Sup|Gender=Neut|Number=Sing	14	amod	_	IFD_tag=lheose
+14	skot	skot	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	12	obj	_	IFD_tag=nhfo
+15	allra	allur	DET	Q-G	Case=Gen|Gender=Masc|Number=Plur|PronType=Ind	14	nmod:poss	_	IFD_tag=fokfe
+16	markmanna	markmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	15	conj	_	IFD_tag=nkfe
+17	á	á	ADP	P	_	18	case	_	IFD_tag=aþ
+18	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	15	obl	_	IFD_tag=nheþg
+19	og	og	CCONJ	CONJ	_	21	cc	_	IFD_tag=c
+20	margir	margur	DET	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	21	nsubj	_	IFD_tag=lkfnsf
+21	biðu	bíða	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
+22	spenntir	spenntur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	21	amod	_	IFD_tag=lkfnsf
+23	að	að	PART	TO	_	24	mark	_	IFD_tag=cn
+24	sjá	sjá	VERB	VB	VerbForm=Inf|Voice=Act	21	acl	_	IFD_tag=sng
+25	hvert	hver	PRON	WPRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	27	obj	_	IFD_tag=fohen
+26	framhaldið	framhald	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	27	nsubj	_	IFD_tag=nheng
+27	yrði	verða	VERB	RDDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	ccomp	_	IFD_tag=svg3eþ
+28	hjá	hjá	ADP	P	_	34	case	_	IFD_tag=aþ
+29	þessum	þessi	DET	D-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Dem	34	det	_	IFD_tag=fakeþ
+30	32	32	NUM	NUM-G	NumType=Card	31	nummod	_	IFD_tag=ta
+31	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	32	nmod:poss	_	IFD_tag=nhfe
+32	gamla	gamall	ADJ	ADJ-D	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	34	amod	_	IFD_tag=lkeevf
+33	uppalda	uppalinn	ADJ	ADJ-D	Case=Gen|Degree=Pos|Gender=Masc|Number=Plur	34	amod	_	IFD_tag=lkfeof
+34	Leiknis-manni	leiknis-maður	PROPN	NPR-D	_	27	obl	_	IFD_tag=x|SpaceAfter=No
+35	.	.	PUNCT	.	_	34	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1031964,.4
-# X_ID = ID_MISSING
+# X_ID = ID_missing_6
 # text = Það hefur nú verið staðfest, þriggja ára samningur við Randers.
-1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
-3	nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
-4	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	5	cop	_	_
-5	staðfest	staðfesta	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	5	punct	_	_
-7	þriggja	þrír	NUM	NUM-G	Case=Gen	8	nummod	_	_
-8	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	nmod:poss	_	_
-9	samningur	samningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	obl	_	_
-10	við	við	ADP	P	_	11	case	_	_
-11	Randers	randers	PROPN	NPR-A	_	9	obl	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	11	punct	_	_
+1	Það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	5	nsubj	_	IFD_tag=fphen
+2	hefur	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	IFD_tag=sfg3en
+3	nú	nú	ADV	ADV	_	5	advmod	_	IFD_tag=aa
+4	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	5	cop	_	IFD_tag=ssg
+5	staðfest	staðfesta	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	IFD_tag=sþghen|SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	IFD_tag=,
+7	þriggja	þrír	NUM	NUM-G	Case=Gen|Gender=Neut|Number=Plur|NumType=Card	8	nummod	_	IFD_tag=tfhfe
+8	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	9	nmod:poss	_	IFD_tag=nhfe
+9	samningur	samningur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	obl	_	IFD_tag=nken
+10	við	við	ADP	P	_	11	case	_	IFD_tag=ao
+11	Randers	randers	PROPN	NPR-A	Foreign=Yes	9	obl	_	IFD_tag=e|SpaceAfter=No
+12	.	.	PUNCT	.	_	11	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1031964,.5
-# X_IDs = ID_MISSING ; ID_MISSING
+# X_IDs = ID_missing_7 ; ID_missing_8
 # text = Ólafur Kristjánsson er þjálfari Randers sem hefur leik á nýju tímabili á mánudag gegn Midtjylland og verður Hannes þá í hópnum.
-1	Ólafur	ólafur	PROPN	NPR-N	_	4	nsubj	_	_
-2	Kristjánsson	kristjánsson	PROPN	NPR-N	_	1	flat:name	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-4	þjálfari	þjálfari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-5	Randers	randers	PROPN	NPR-G	_	4	nmod:poss	_	_
-6	sem	sem	SCONJ	C	_	7	mark	_	_
-7	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	acl:relcl	_	_
-8	leik	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
-9	á	á	ADP	P	_	11	case	_	_
-10	nýju	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	11	amod	_	_
-11	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-12	á	á	ADP	P	_	13	case	_	_
-13	mánudag	mánudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
-14	gegn	gegn	ADP	P	_	15	case	_	_
-15	Midtjylland	midtjylland	PROPN	NPR-D	_	7	obl	_	_
-16	og	og	CCONJ	CONJ	_	17	cc	_	_
-17	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-18	Hannes	hannes	PROPN	NPR-N	_	17	nsubj	_	_
-19	þá	þá	ADV	ADV	Degree=Pos	17	advmod	_	_
-20	í	í	ADP	P	_	21	case	_	_
-21	hópnum	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	21	punct	_	_
+1	Ólafur	ólafur	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	4	nsubj	_	IFD_tag=nken-s
+2	Kristjánsson	kristjánsson	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	flat:name	_	IFD_tag=nken-s
+3	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3en
+4	þjálfari	þjálfari	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	0	root	_	IFD_tag=nken
+5	Randers	randers	PROPN	NPR-G	Foreign=Yes	4	nmod:poss	_	IFD_tag=e
+6	sem	sem	SCONJ	C	_	7	mark	_	IFD_tag=ct
+7	hefur	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	IFD_tag=sfg3en
+8	leik	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	7	obj	_	IFD_tag=nkeo
+9	á	á	ADP	P	_	11	case	_	IFD_tag=ao
+10	nýju	nýr	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	11	amod	_	IFD_tag=lheþsf
+11	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	7	obl	_	IFD_tag=nheþ
+12	á	á	ADP	P	_	13	case	_	IFD_tag=ao
+13	mánudag	mánudagur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	7	obl	_	IFD_tag=nkeo
+14	gegn	gegn	ADP	P	_	15	case	_	IFD_tag=aþ
+15	Midtjylland	midtjylland	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	7	obl	_	IFD_tag=nheþ-s
+16	og	og	CCONJ	CONJ	_	17	cc	_	IFD_tag=c
+17	verður	verða	VERB	RDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	OriginalHead=0
+18	Hannes	hannes	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	17	nsubj	_	IFD_tag=nken-s
+19	þá	þá	ADV	ADV	_	17	advmod	_	IFD_tag=aa
+20	í	í	ADP	P	_	21	case	_	IFD_tag=aþ
+21	hópnum	hópur	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	17	obl	_	IFD_tag=nkeþg|SpaceAfter=No
+22	.	.	PUNCT	.	_	21	punct	_	IFD_tag=.
 
 # sent_id = RUV_ESP_2016_G-2-1031964,.6
-# X_ID = ID_MISSING
+# X_ID = ID_missing_9
 # text = Randers hafnaði í sjötta sæti dönsku deildarinnar á síðasta tímabili.
-1	Randers	randers	PROPN	NPR-N	_	2	nsubj	_	_
-2	hafnaði	hafna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	í	í	ADP	P	_	5	case	_	_
-4	sjötta	sjötti	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
-5	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
-6	dönsku	danskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	7	amod	_	_
-7	deildarinnar	deild	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
-8	á	á	ADP	P	_	10	case	_	_
-9	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	10	amod	_	_
-10	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	10	punct	_	_
+1	Randers	randers	PROPN	NPR-N	Foreign=Yes	2	nsubj	_	IFD_tag=e
+2	hafnaði	hafna	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
+3	í	í	ADP	P	_	5	case	_	IFD_tag=aþ
+4	sjötta	sjötti	ADJ	ADJ-D	Case=Dat|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	5	amod	_	IFD_tag=lheþvf
+5	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	2	obl	_	IFD_tag=nheþ
+6	dönsku	danskur	ADJ	ADJ-G	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	IFD_tag=lveevf
+7	deildarinnar	deild	NOUN	N-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	5	nmod:poss	_	IFD_tag=nveeg
+8	á	á	ADP	P	_	10	case	_	IFD_tag=aþ
+9	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	10	amod	_	IFD_tag=lheþve
+10	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	2	obl	_	IFD_tag=nheþ|SpaceAfter=No
+11	.	.	PUNCT	.	_	10	punct	_	IFD_tag=.
 
