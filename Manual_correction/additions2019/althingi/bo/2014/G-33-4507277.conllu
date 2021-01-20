@@ -1,8 +1,8 @@
 # sent_id = ALTHINGI_BO_2014_G-33-4507277,.1
 # X_ID = ID_MISSING
 # text = Herra forseti. Ég þakka spurningarnar frá hv. þingmanni.
-1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
-2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
+1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nmod	_	_
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 4	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 5	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -15,14 +15,14 @@
 # sent_id = ALTHINGI_BO_2014_G-33-4507277,.2
 # X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
 # text = Hvað lýtur að hugmyndum mínum um hvar ætti að verja peningunum betur höfum við í Bjartri framtíð helst talað um að þeim yrði varið í að lækka vaxtakostnað ríkissjóðs, borga niður þær skuldir okkar úr því að við erum að tala um jöfnun fyrir fólk og það er sannarlega eitthvað sem nýtist öllum og þá helst til framtíðar og á það legg ég mikla áherslu.
-1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
-2	lýtur	lúta	ADV	VBPI	Mood=Ind|Tense=Pres	19	advmod	_	_
+1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	mark	_	_
+2	lýtur	lúta	ADV	VBPI	Mood=Ind|Tense=Pres	19	advcl	_	_
 3	að	að	ADP	P	_	4	case	_	_
 4	hugmyndum	hugmynd	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
 5	mínum	minn	PRON	PRO-D	Case=Dat	4	nmod:poss	_	_
-6	um	um	ADP	P	_	8	case	_	_
-7	hvar	hvar	ADV	WADV	Degree=Pos	8	advmod	_	_
-8	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	4	obl	_	_
+6	um	um	ADP	P	_	8	mark	_	_
+7	hvar	hvar	ADV	WADV	Degree=Pos	8	mark	_	_
+8	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	4	acl	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	verja	verja	VERB	VB	VerbForm=Inf	8	acl	_	_
 11	peningunum	peningur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obj	_	_
@@ -34,29 +34,29 @@
 17	framtíð	framtíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
 18	helst	gjarna	ADV	ADVS	Degree=Sup	19	advmod	_	_
 19	talað	tala	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-20	um	um	ADP	P	_	24	case	_	_
+20	um	um	ADP	P	_	19	compound:prt	_	_
 21	að	að	SCONJ	C	_	24	mark	_	_
 22	þeim	hún	PRON	PRO-D	Case=Dat	24	nsubj	_	_
 23	yrði	verða	AUX	RDDS	Mood=Sub|Tense=Past	24	aux	_	_
-24	varið	verja	VERB	VAN	Tense=Past|VerbForm=Part	19	obl	_	_
+24	varið	verja	VERB	VAN	Tense=Past|VerbForm=Part	19	ccomp	_	_
 25	í	í	ADP	P	_	27	case	_	_
 26	að	að	PART	TO	_	27	mark	_	_
-27	lækka	lækka	VERB	VB	VerbForm=Inf	24	obl	_	_
+27	lækka	lækka	VERB	VB	VerbForm=Inf	24	xcomp	_	_
 28	vaxtakostnað	vaxtakostnaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	27	obj	_	_
 29	ríkissjóðs	ríkissjóður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	28	nmod:poss	_	SpaceAfter=No
-30	,	,	PUNCT	,	_	29	punct	_	_
-31	borga	borga	VERB	VBPI	Mood=Ind|Tense=Pres	19	dep	_	_
+30	,	,	PUNCT	,	_	31	punct	_	_
+31	borga	borga	VERB	VBPI	Mood=Ind|Tense=Pres	24	conj	_	_
 32	niður	niður	ADP	RP	_	31	compound:prt	_	_
 33	þær	sá	DET	D-A	Case=Acc|PronType=Art	34	det	_	_
 34	skuldir	skuld	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	31	obj	_	_
 35	okkar	ég	PRON	PRO-G	Case=Gen	34	nmod:poss	_	_
-36	úr	úr	ADP	P	_	37	case	_	_
-37	því	það	PRON	PRO-D	Case=Dat	31	obl	_	_
-38	að	að	SCONJ	C	_	42	mark	_	_
+36	úr	úr	ADP	P	_	42	mark	_	_
+37	því	það	PRON	PRO-D	Case=Dat	36	fixed	_	_
+38	að	að	SCONJ	C	_	36	fixed	_	_
 39	við	ég	PRON	PRO-N	Case=Nom	42	nsubj	_	_
 40	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	42	cop	_	_
 41	að	að	PART	TO	_	42	mark	_	_
-42	tala	tala	VERB	VB	VerbForm=Inf	37	ccomp	_	_
+42	tala	tala	VERB	VB	VerbForm=Inf	31	advcl	_	_
 43	um	um	ADP	P	_	44	case	_	_
 44	jöfnun	jöfnun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	42	obl	_	_
 45	fyrir	fyrir	ADP	P	_	46	case	_	_
@@ -65,23 +65,23 @@
 48	það	það	PRON	PRO-N	Case=Nom	51	nsubj	_	_
 49	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	51	cop	_	_
 50	sannarlega	sannarlega	ADV	ADV	Degree=Pos	51	advmod	_	_
-51	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	19	conj	_	OriginalHead=0
+51	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	42	conj	_	OriginalHead=0
 52	sem	sem	SCONJ	C	_	53	mark	_	_
 53	nýtist	nýta	VERB	VBPI	Mood=Ind|Tense=Pres	51	acl:relcl	_	_
 54	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	53	obj	_	_
-55	og	og	CCONJ	CONJ	_	53	cc	_	_
-56	þá	þá	ADV	ADV	Degree=Pos	53	advmod	_	_
+55	og	og	CCONJ	CONJ	_	59	cc	_	_
+56	þá	þá	ADV	ADV	Degree=Pos	59	advmod	_	_
 57	helst	gjarna	ADV	ADVS	Degree=Sup	59	advmod	_	_
 58	til	til	ADP	P	_	59	case	_	_
-59	framtíðar	framtíð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	53	obl	_	_
+59	framtíðar	framtíð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	53	conj	_	_
 60	og	og	CCONJ	CONJ	_	63	cc	_	_
 61	á	á	ADP	P	_	62	case	_	_
 62	það	það	PRON	PRO-A	Case=Acc	63	obl	_	_
-63	legg	leggja	VERB	VBPI	Mood=Ind|Tense=Pres	19	conj	_	OriginalHead=0
+63	legg	leggja	VERB	VBPI	Mood=Ind|Tense=Pres	24	conj	_	OriginalHead=0
 64	ég	ég	PRON	PRO-N	Case=Nom	63	nsubj	_	_
 65	mikla	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	66	amod	_	_
 66	áherslu	áhersla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	63	obj	_	SpaceAfter=No
-67	.	.	PUNCT	.	_	66	punct	_	_
+67	.	.	PUNCT	.	_	63	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4507277,.3
 # X_ID = ID_MISSING
@@ -118,10 +118,10 @@
 2	þætti	þætta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
 4	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	xcomp	_	_
-5	ef	ef	ADP	P	_	7	case	_	_
-6	það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-7	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	4	obl	_	_
-8	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	7	ccomp	_	SpaceAfter=No
+5	ef	ef	ADP	P	_	8	mark	_	_
+6	það	það	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+7	yrði	verða	AUX	RDDS	Mood=Sub|Tense=Past	8	aux	_	_
+8	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	2	advcl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4507277,.5
@@ -131,14 +131,14 @@
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	raunar	raunar	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
-5	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	8	amod	_	_
-6	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	8	det	_	_
+5	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	6	det	_	_
+6	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
 7	gríðarlegu	gríðarlegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	8	amod	_	_
 8	áherslu	áhersla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
-9	á	á	ADP	P	_	12	case	_	_
+9	á	á	ADP	P	_	8	compound:prt	_	_
 10	að	að	SCONJ	C	_	12	mark	_	_
 11	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
-12	komi	koma	VERB	VBPS	Mood=Sub|Tense=Pres	8	obl	_	_
+12	komi	koma	VERB	VBPS	Mood=Sub|Tense=Pres	8	ccomp	_	_
 13	sér	sig	PRON	PRO-D	Case=Dat	12	iobj	_	_
 14	alltaf	alltaf	ADV	ADV	Degree=Pos	12	advmod	_	_
 15	upp	upp	ADP	RP	_	12	compound:prt	_	_
@@ -154,7 +154,7 @@
 25	snúist	snúa	VERB	VBPS	Mood=Sub|Tense=Pres	20	ccomp	_	_
 26	um	um	ADP	P	_	27	case	_	_
 27	það	það	PRON	PRO-A	Case=Acc	25	obl	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	27	punct	_	_
+28	.	.	PUNCT	.	_	25	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4507277,.6
 # X_ID = ID_MISSING
@@ -163,11 +163,11 @@
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 4	af	af	ADP	P	_	5	case	_	_
-5	hverju	hver	PRON	WPRO-D	Case=Dat	9	obl	_	_
+5	hverju	hver	PRON	WPRO-D	Case=Dat	2	obl:arg	_	_
 6	það	það	PRON	PRO-N	Case=Nom	9	nsubj	_	_
 7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 8	eitthvert	einhver	DET	Q-N	Case=Nom|Degree=Pos	9	amod	_	_
-9	takmark	takmark	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	_
+9	takmark	takmark	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	acl	_	_
 10	í	í	ADP	P	_	11	case	_	_
 11	sjálfu	sjálfur	PRON	PRO-D	Case=Dat	9	obl	_	_
 12	sér	sig	PRON	PRO-D	Case=Dat	11	nmod	_	SpaceAfter=No
@@ -182,12 +182,11 @@
 4	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 5	og	og	CCONJ	CONJ	_	7	cc	_	_
 6	vissulega	vissulega	ADV	ADV	Degree=Pos	7	amod	_	_
-7	þarft	þarfur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
-8	ef	ef	ADP	P	_	10	case	_	_
+7	þarft	þarfur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	conj	_	_
+8	ef	ef	ADP	P	_	10	mark	_	_
 9	nefndin	nefnd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
-10	skilaði	skila	VERB	VBDS	Mood=Sub|Tense=Past	4	obl	_	_
+10	skilaði	skila	VERB	VBDS	Mood=Sub|Tense=Past	4	advcl	_	_
 11	tillögum	tillaga	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obj	_	_
 12	þess	sá	DET	D-G	Case=Gen|PronType=Art	13	det	_	_
 13	efnis	efni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	nmod:poss	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	13	punct	_	_
-
+14	.	.	PUNCT	.	_	10	punct	_	_

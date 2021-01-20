@@ -1,8 +1,8 @@
 # sent_id = ALTHINGI_BO_2014_G-33-4569636,.1
 # X_ID = ID_MISSING
 # text = Herra forseti. Ég þakka andsvarið.
-1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
-2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
+1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nmod	_	_
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 4	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 5	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -14,24 +14,24 @@
 # text = Ég tek undir með hv. þingmanni að fórnfýsi lækna og annarra hjúkrunarstarfsmanna varðandi eftirfylgni er og hefur verið ofboðslega mikil.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	undir	undir	ADP	P	_	2	obl	_	_
+3	undir	undir	ADP	P	_	2	compound:prt	_	_
 4	með	með	ADP	P	_	6	case	_	_
 5	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	6	amod	_	_
 6	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 7	að	að	SCONJ	C	_	8	mark	_	_
-8	fórnfýsi	fórnfýsi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	ccomp	_	_
+8	fórnfýsi	fórnfýsi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	nsubj	_	_
 9	lækna	læknir	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	_
 10	og	og	CCONJ	CONJ	_	12	cc	_	_
 11	annarra	annar	PRON	OTHER-G	Case=Gen	12	det	_	_
-12	hjúkrunarstarfsmanna	hjúkrunarstarfsmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	conj	_	_
+12	hjúkrunarstarfsmanna	hjúkrunarstarfsmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	conj	_	_
 13	varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	8	acl	_	_
 14	eftirfylgni	eftirfylgni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
-15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
-16	og	og	CCONJ	CONJ	_	18	cc	_	_
-17	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	18	aux	_	_
-18	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	8	conj	_	_
+15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
+16	og	og	CCONJ	CONJ	_	20	cc	_	_
+17	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	20	aux	_	_
+18	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	20	cop	_	_
 19	ofboðslega	ofboðslega	ADV	ADV	Degree=Pos	20	amod	_	_
-20	mikil	mikill	DET	Q-N	Case=Nom|Degree=Pos	18	amod	_	SpaceAfter=No
+20	mikil	mikill	DET	Q-N	Case=Nom|Degree=Pos	2	ccomp	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	20	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4569636,.3
@@ -42,22 +42,22 @@
 3	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 5	ekki	ekki	ADV	NEG	_	3	advmod	_	_
-6	að	að	PART	TO	_	3	acl	_	_
-7	vera	vera	AUX	BE	VerbForm=Inf	6	cop	_	_
-8	þannig	þannig	ADV	ADV	Degree=Pos	6	advmod	_	_
+6	að	að	PART	TO	_	8	mark	_	_
+7	vera	vera	AUX	BE	VerbForm=Inf	8	cop	_	_
+8	þannig	þannig	ADV	ADV	Degree=Pos	3	xcomp	_	_
 9	að	að	SCONJ	C	_	15	mark	_	_
 10	læknar	læknir	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	15	nsubj	_	_
-11	og	og	CCONJ	CONJ	_	10	cc	_	_
+11	og	og	CCONJ	CONJ	_	12	cc	_	_
 12	hjúkrunarfræðingar	hjúkrunarfræðingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	conj	_	_
 13	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	15	cop	_	_
 14	að	að	PART	TO	_	15	mark	_	_
-15	gera	gera	VERB	DO	VerbForm=Inf	8	advcl	_	_
+15	gera	gera	VERB	DO	VerbForm=Inf	8	ccomp	_	_
 16	það	það	PRON	PRO-A	Case=Acc	15	obj	_	_
 17	á	á	ADP	P	_	20	case	_	_
 18	sinn	sinn	PRON	PRO-A	Case=Acc	20	nmod:poss	_	_
 19	eigin	eiginn	ADJ	ADJ-A	Case=Acc|Degree=Pos	20	amod	_	_
 20	kostnað	kostnaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	20	punct	_	_
+21	.	.	PUNCT	.	_	15	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4569636,.4
 # X_ID = ID_MISSING
@@ -68,32 +68,32 @@
 4	að	að	PART	TO	_	5	mark	_	_
 5	formgera	formgera	VERB	VB	VerbForm=Inf	3	acl	_	_
 6	það	það	PRON	PRO-A	Case=Acc	5	obj	_	_
-7	að	að	SCONJ	C	_	13	mark	_	_
-8	greining	greining	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	SpaceAfter=No
+7	að	að	SCONJ	C	_	8	mark	_	_
+8	greining	greining	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nmod	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	8	punct	_	_
-10	þó	þó	ADP	P	_	13	case	_	_
-11	að	að	SCONJ	C	_	13	mark	_	_
-12	hún	hún	PRON	PRO-N	Case=Nom	13	obl	_	_
-13	gerist	gera	VERB	DOPI	Mood=Ind|Tense=Pres	6	ccomp	_	_
-14	í	í	ADV	ADV	Degree=Pos	18	obl	_	_
-15	gegnum	gegnum	ADP	P	_	16	case	_	_
-16	Skype	skype	PROPN	NPR-A	_	14	obl	_	SpaceAfter=No
+10	þó	þó	ADP	P	_	13	mark	_	_
+11	að	að	SCONJ	C	_	10	fixed	_	_
+12	hún	hún	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+13	gerist	gera	VERB	DOPI	Mood=Ind|Tense=Pres	6	acl	_	_
+14	í	í	ADV	ADV	Degree=Pos	16	case	_	_
+15	gegnum	gegnum	ADP	P	_	14	fixed	_	_
+16	Skype	skype	PROPN	NPR-A	_	13	obl	_	SpaceAfter=No
 17	,	,	PUNCT	,	_	18	punct	_	_
-18	heima	heima	ADV	ADV	Degree=Pos	25	obl	_	_
+18	heima	heima	ADV	ADV	Degree=Pos	13	advmod	_	_
 19	hjá	hjá	ADP	P	_	21	case	_	_
 20	viðkomandi	viðkomandi	ADJ	ADJ-D	Case=Dat|Degree=Pos	21	amod	_	_
-21	lækni	læknir	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	conj	_	_
+21	lækni	læknir	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
 22	eða	eða	CCONJ	CONJ	_	24	cc	_	_
 23	á	á	ADP	P	_	24	case	_	_
-24	bakvakt	bakvakt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	conj	_	_
-25	eða	eða	CCONJ	CONJ	_	13	obl	_	_
-26	hvernig	hvernig	ADV	WADV	Degree=Pos	28	advmod	_	_
-27	sem	sem	SCONJ	C	_	28	mark	_	_
-28	það	það	PRON	PRO-N	Case=Nom	25	ccomp	_	_
-29	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	28	cop	_	SpaceAfter=No
-30	,	,	PUNCT	,	_	29	punct	_	_
-31	að	að	SCONJ	C	_	6	dep	_	_
-32	greitt	greiða	VERB	VAN	Tense=Past|VerbForm=Part	31	conj	_	_
+24	bakvakt	bakvakt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+25	eða	eða	CCONJ	CONJ	_	26	cc	_	_
+26	hvernig	hvernig	ADV	WADV	Degree=Pos	13	advmod	_	_
+27	sem	sem	SCONJ	C	_	26	mark	_	_
+28	það	það	PRON	PRO-N	Case=Nom	26	expl	_	_
+29	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	26	cop	_	SpaceAfter=No
+30	,	,	PUNCT	,	_	26	punct	_	_
+31	að	að	SCONJ	C	_	32	mark	_	_
+32	greitt	greiða	VERB	VAN	Tense=Past|VerbForm=Part	6	acl	_	_
 33	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	32	cop	_	_
 34	fyrir	fyrir	ADP	P	_	36	case	_	_
 35	þann	sá	DET	D-A	Case=Acc|PronType=Art	36	det	_	_
@@ -118,12 +118,12 @@
 7	væntanlega	væntanlega	ADV	ADV	Degree=Pos	6	advmod	_	_
 8	að	að	PART	TO	_	9	mark	_	_
 9	vinna	vinna	VERB	VB	VerbForm=Inf	6	acl	_	_
-10	með	með	ADP	P	_	9	obl	_	_
+10	með	með	ADP	P	_	9	compound:prt	_	_
 11	og	og	CCONJ	CONJ	_	12	cc	_	_
-12	finna	finna	VERB	VB	VerbForm=Inf	9	acl	_	_
+12	finna	finna	VERB	VB	VerbForm=Inf	9	conj	_	_
 13	lausn	lausn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obj	_	_
-14	á	á	ADP	P	_	13	obl	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	14	punct	_	_
+14	á	á	ADP	P	_	13	compound:prt	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	12	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4569636,.6
 # X_ID = ID_MISSING
@@ -138,38 +138,38 @@
 8	að	að	SCONJ	C	_	11	mark	_	_
 9	mun	munur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
 10	ódýrara	ódýr	ADJ	ADJR-N	Case=Nom|Degree=Cmp	11	amod	_	_
-11	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	7	ccomp	_	_
+11	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	7	acl	_	_
 12	að	að	PART	TO	_	13	mark	_	_
 13	þurfa	þurfa	VERB	VB	VerbForm=Inf	11	xcomp	_	_
 14	ekki	ekki	ADV	NEG	_	13	advmod	_	_
 15	að	að	PART	TO	_	16	mark	_	_
-16	borga	borga	VERB	VB	VerbForm=Inf	13	acl	_	_
+16	borga	borga	VERB	VB	VerbForm=Inf	13	xcomp	_	_
 17	fyrir	fyrir	ADP	P	_	18	case	_	_
-18	lækninn	læknir	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	_
+18	lækninn	læknir	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl:arg	_	_
 19	eða	eða	CCONJ	CONJ	_	20	cc	_	_
 20	sjúklinginn	sjúklingur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	conj	_	SpaceAfter=No
 21	,	,	PUNCT	,	_	20	punct	_	_
 22	flutning	flutningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	appos	_	_
 23	á	á	ADP	P	_	24	case	_	_
 24	honum	hann	PRON	PRO-D	Case=Dat	22	obl	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	24	punct	_	_
+25	.	.	PUNCT	.	_	22	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4569636,.7
 # X_ID = ID_MISSING
 # text = Það er mun ódýrara að borga þá bara fyrir viðtalið á greiningunni.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	mun	munur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+3	mun	munur	ADV	N-D	Case=Dat|Definite=Ind|Number=Sing	4	advmod	_	_
 4	ódýrara	ódýr	ADJ	ADJR-N	Case=Nom|Degree=Cmp	0	root	_	_
 5	að	að	PART	TO	_	6	mark	_	_
-6	borga	borga	VERB	VB	VerbForm=Inf	4	acl	_	_
+6	borga	borga	VERB	VB	VerbForm=Inf	4	xcomp	_	_
 7	þá	þá	ADV	ADV	Degree=Pos	6	advmod	_	_
 8	bara	bara	ADV	FP	Degree=Pos	6	advmod	_	_
 9	fyrir	fyrir	ADP	P	_	10	case	_	_
-10	viðtalið	viðtal	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
+10	viðtalið	viðtal	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl:arg	_	_
 11	á	á	ADP	P	_	12	case	_	_
 12	greiningunni	greining	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	12	punct	_	_
+13	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4569636,.8
 # X_IDs = ID_MISSING ; ID_MISSING
@@ -181,7 +181,7 @@
 5	hljótum	hljóta	VERB	VBPI	Mood=Ind|Tense=Pres	2	ccomp	_	_
 6	öll	allur	DET	Q-N	Case=Nom|Degree=Pos	5	amod	_	_
 7	að	að	PART	TO	_	8	mark	_	_
-8	sjá	sjá	VERB	VB	VerbForm=Inf	5	acl	_	_
+8	sjá	sjá	VERB	VB	VerbForm=Inf	5	xcomp	_	_
 9	það	það	PRON	PRO-A	Case=Acc	8	obj	_	_
 10	og	og	CCONJ	CONJ	_	12	cc	_	_
 11	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
@@ -198,12 +198,11 @@
 22	til	til	ADP	P	_	23	case	_	_
 23	þingsins	þing	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
 24	,	,	PUNCT	,	_	23	punct	_	_
-25	ef	ef	ADP	P	_	28	case	_	_
+25	ef	ef	ADP	P	_	28	mark	_	_
 26	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	27	det	_	_
 27	þingsályktunartillaga	þingsályktunartillaga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	nsubj	_	_
-28	nær	ná	VERB	VBPI	Mood=Ind|Tense=Pres	16	obl	_	_
+28	nær	ná	VERB	VBPI	Mood=Ind|Tense=Pres	16	advcl	_	_
 29	fram	fram	ADP	RP	_	31	compound:prt	_	_
 30	að	að	PART	TO	_	31	mark	_	_
-31	ganga	ganga	VERB	VB	VerbForm=Inf	28	acl	_	SpaceAfter=No
+31	ganga	ganga	VERB	VB	VerbForm=Inf	28	xcomp	_	SpaceAfter=No
 32	.	.	PUNCT	.	_	31	punct	_	_
-

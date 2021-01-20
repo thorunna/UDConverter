@@ -15,7 +15,7 @@
 12	gleði	gleði	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obj	_	_
 13	yfir	yfir	ADP	P	_	14	case	_	_
 14	því	það	PRON	PRO-D	Case=Dat	12	obl	_	_
-15	hvernig	hvernig	ADV	WADV	Degree=Pos	17	advmod	_	_
+15	hvernig	hvernig	ADV	WADV	Degree=Pos	17	mark	_	_
 16	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
 17	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	14	ccomp	_	_
 18	í	í	ADP	P	_	20	case	_	_
@@ -37,7 +37,7 @@
 9	,	,	PUNCT	,	_	8	punct	_	_
 10	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	11	det	_	_
 11	þingsályktunartillaga	þingsályktunartillaga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
-12	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+12	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	3	parataxis	_	OriginalHead=0
 13	ekki	ekki	ADV	NEG	_	12	advmod	_	_
 14	á	á	ADP	P	_	15	case	_	_
 15	óvart	óvar	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	obl	_	SpaceAfter=No
@@ -54,7 +54,7 @@
 6	og	og	CCONJ	CONJ	_	10	cc	_	_
 7	það	það	PRON	PRO-N	Case=Nom	10	nsubj	_	_
 8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
-9	mjög	mjög	ADV	ADV	Degree=Pos	10	amod	_	_
+9	mjög	mjög	ADV	ADV	Degree=Pos	10	advmod	_	_
 10	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0|SpaceAfter=No
 11	.	.	PUNCT	.	_	10	punct	_	_
 
@@ -74,17 +74,17 @@
 11	tillögunni	tillaga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
 12	að	að	SCONJ	C	_	14	mark	_	_
 13	sú	sá	DET	D-N	Case=Nom|PronType=Art	14	det	_	_
-14	kynslóð	kynslóð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	xcomp	_	_
+14	kynslóð	kynslóð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	ccomp	_	_
 15	sem	sem	SCONJ	C	_	19	mark	_	_
 16	meðal	meðal	ADP	P	_	17	case	_	_
 17	annars	annar	PRON	OTHER-G	Case=Gen	18	obl	_	_
 18	ég	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
 19	tilheyri	tilheyra	VERB	VBPI	Mood=Ind|Tense=Pres	14	acl:relcl	_	_
-20	það	það	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+20	það	það	PRON	PRO-N	Case=Nom	24	expl	_	_
 21	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
 22	kannski	kannski	ADV	ADV	Degree=Pos	24	advmod	_	_
 23	ekki	ekki	ADV	NEG	_	24	advmod	_	_
-24	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
+24	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	14	parataxis	_	OriginalHead=0
 25	af	af	ADP	P	_	27	case	_	_
 26	eldri	gamall	ADJ	ADJR-D	Case=Dat|Degree=Cmp	27	amod	_	_
 27	kynslóðinni	kynslóð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	_
@@ -92,19 +92,19 @@
 29	skilja	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	24	acl:relcl	_	_
 30	það	það	PRON	PRO-A	Case=Acc	29	obj	_	SpaceAfter=No
 31	,	,	PUNCT	,	_	30	punct	_	_
-32	þótt	þótt	ADP	P	_	38	case	_	_
-33	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	38	expl	_	_
-34	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	38	cop	_	_
+32	þótt	þótt	ADP	P	_	36	mark	_	_
+33	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	36	expl	_	_
+34	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	36	cop	_	_
 35	svolítið	svolítið	ADV	ADV	Degree=Pos	36	amod	_	_
-36	óþægilegt	óþægilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	38	amod	_	_
+36	óþægilegt	óþægilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	29	parataxis	_	_
 37	að	að	PART	TO	_	38	mark	_	_
-38	viðurkenna	viðurkenna	VERB	VB	VerbForm=Inf	29	obl	_	_
+38	viðurkenna	viðurkenna	VERB	VB	VerbForm=Inf	36	xcomp	_	_
 39	það	það	PRON	PRO-A	Case=Acc	38	obj	_	_
 40	hér	hér	ADV	ADV	Degree=Pos	42	advmod	_	_
 41	í	í	ADP	P	_	42	case	_	_
 42	ræðustól	ræðustóll	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	38	obl	_	SpaceAfter=No
 43	,	,	PUNCT	,	_	42	punct	_	_
-44	hvað	hvað	ADV	WADV	Degree=Pos	46	advmod	_	_
+44	hvað	hvað	ADV	WADV	Degree=Pos	46	mark	_	_
 45	Facebook	facebook	PROPN	NPR-N	_	46	nsubj	_	_
 46	spilar	spila	VERB	VBPI	Mood=Ind|Tense=Pres	29	ccomp	_	_
 47	stóran	stór	ADJ	ADJ-A	Case=Acc|Degree=Pos	48	amod	_	_
@@ -117,17 +117,17 @@
 54	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	57	nsubj	_	_
 55	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	57	cop	_	_
 56	fyrsti	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	57	amod	_	_
-57	staðurinn	staður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
+57	staðurinn	staður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	46	parataxis	_	OriginalHead=0
 58	sem	sem	SCONJ	C	_	60	mark	_	_
 59	maður	maður	PRON	MAN-N	_	60	nsubj	_	_
 60	dettur	detta	VERB	VBPI	Mood=Ind|Tense=Pres	57	acl:relcl	_	_
-61	inn	inn	ADP	RP	_	62	compound:prt	_	_
-62	á	á	ADP	P	_	60	obl	_	_
+61	inn	inn	ADP	RP	_	60	compound:prt	_	_
+62	á	á	ADP	P	_	61	fixed	_	_
 63	á	á	ADP	P	_	64	case	_	_
 64	netinu	net	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	60	obl	_	_
 65	og	og	CCONJ	CONJ	_	67	cc	_	_
 66	maður	maður	PRON	MAN-N	_	67	nsubj	_	_
-67	nær	ná	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+67	nær	ná	VERB	VBPI	Mood=Ind|Tense=Pres	57	conj	_	OriginalHead=0
 68	sér	sig	PRON	PRO-D	Case=Dat	67	iobj	_	_
 69	í	í	ADP	P	_	70	case	_	_
 70	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	67	obl	_	_
@@ -137,13 +137,13 @@
 # sent_id = ALTHINGI_BO_2013_G-33-4927514,.5
 # X_ID = ID_MISSING
 # text = Þetta er þægileg leið til að gera það.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	þægileg	þægilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-4	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	_
-5	til	til	ADP	P	_	7	case	_	_
-6	að	að	PART	TO	_	7	mark	_	_
-7	gera	gera	VERB	DO	VerbForm=Inf	3	obl	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	þægileg	þægilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
+4	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+5	til	til	ADP	P	_	7	mark	_	_
+6	að	að	PART	TO	_	5	fixed	_	_
+7	gera	gera	VERB	DO	VerbForm=Inf	4	obl	_	_
 8	það	það	PRON	PRO-A	Case=Acc	7	obj	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	8	punct	_	_
 
@@ -158,7 +158,7 @@
 6	veg	vegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
 7	að	að	SCONJ	C	_	9	mark	_	_
 8	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
-9	nenna	nenna	VERB	VBPI	Mood=Ind|Tense=Pres	6	advcl	_	_
+9	nenna	nenna	VERB	VBPI	Mood=Ind|Tense=Pres	6	ccomp	_	_
 10	ekki	ekki	ADV	NEG	_	9	advmod	_	_
 11	að	að	PART	TO	_	12	mark	_	_
 12	smella	smella	VERB	VB	VerbForm=Inf	9	acl	_	_
@@ -166,10 +166,10 @@
 14	sinnum	sinn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
 15	með	með	ADP	P	_	16	case	_	_
 16	músinni	mús	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
-17	þannig	þannig	ADV	ADV	Degree=Pos	3	advmod	_	_
-18	að	að	SCONJ	C	_	29	mark	_	_
+17	þannig	þannig	ADV	ADV	Degree=Pos	20	_	_	_
+18	að	að	SCONJ	C	_	17	fixed	_	_
 19	eftir	eftir	ADP	P	_	20	case	_	_
-20	því	sá	DET	D-D	Case=Dat|PronType=Art	29	obl	_	_
+20	því	sá	DET	D-D	Case=Dat|PronType=Art	12	_	_	_
 21	sem	sem	SCONJ	C	_	25	mark	_	_
 22	þægilegra	þægilegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	25	amod	_	_
 23	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
@@ -178,7 +178,7 @@
 26	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	25	obj	_	SpaceAfter=No
 27	,	,	PUNCT	,	_	29	punct	_	_
 28	því	það	PRON	PRO-D	Case=Dat	29	obl	_	_
-29	líklegra	líklegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	17	advcl	_	_
+29	líklegra	líklegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	20	_	_	_
 30	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	29	cop	_	_
 31	að	að	SCONJ	C	_	33	mark	_	_
 32	maður	maður	PRON	MAN-N	_	33	nsubj	_	_
@@ -198,39 +198,39 @@
 6	mörg	margur	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
 7	skref	skref	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obj	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	_
-9	eins	_	ADV	ADVR	Degree=Cmp	3	advmod	_	_
-10	og	_	ADP	P	_	14	case	_	_
+9	eins	_	ADV	ADVR	Degree=Cmp	14	mark	_	_
+10	og	_	ADP	P	_	9	fixed	_	_
 11	á	á	ADP	P	_	14	case	_	_
 12	hinni	hinn	DET	D-D	Case=Dat|PronType=Art	14	det	_	_
 13	ágætu	ágætur	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
-14	heimasíðu	heimasíða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+14	heimasíðu	heimasíða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
 15	Alþingis	alþingi	PROPN	NPR-G	_	14	nmod:poss	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	15	punct	_	_
-17	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+17	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
 18	meiri	mikill	DET	QR-N	Case=Nom|Degree=Pos	19	amod	_	_
-19	líkur	líkur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
-20	á	á	ADP	P	_	23	case	_	_
+19	líkur	líkur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	ccomp	_	_
+20	á	á	ADP	P	_	19	compound:prt	_	_
 21	að	að	SCONJ	C	_	23	mark	_	_
 22	maður	maður	PRON	MAN-N	_	23	nsubj	_	_
-23	hætti	hætta	VERB	VBPS	Mood=Sub|Tense=Pres	3	obl	_	_
+23	hætti	hætta	VERB	VBPS	Mood=Sub|Tense=Pres	19	ccomp	_	_
 24	og	og	CCONJ	CONJ	_	25	cc	_	_
 25	fari	fara	VERB	VBPS	Mood=Sub|Tense=Pres	23	conj	_	_
 26	að	að	PART	TO	_	27	mark	_	_
 27	gera	gera	VERB	DO	VerbForm=Inf	25	acl	_	_
 28	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	29	amod	_	_
-29	annað	annar	PRON	OTHER-A	Case=Acc	25	obj	_	SpaceAfter=No
+29	annað	annar	PRON	OTHER-A	Case=Acc	27	obj	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	29	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4927514,.8
 # X_IDs = ID_MISSING ; ID_MISSING
 # text = Þetta er mikilvæg leið til að komast í tengsl við fólkið og ég er ánægð með þessar undirtektir.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	mikilvæg	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-4	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	_
-5	til	til	ADP	P	_	7	case	_	_
-6	að	að	PART	TO	_	7	mark	_	_
-7	komast	koma	VERB	VB	VerbForm=Inf	3	obl	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	mikilvæg	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
+4	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+5	til	til	ADP	P	_	7	mark	_	_
+6	að	að	PART	TO	_	5	fixed	_	_
+7	komast	koma	VERB	VB	VerbForm=Inf	4	advcl	_	_
 8	í	í	ADP	P	_	9	case	_	_
 9	tengsl	tengsl	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	_
 10	við	við	ADP	P	_	11	case	_	_
@@ -238,9 +238,8 @@
 12	og	og	CCONJ	CONJ	_	15	cc	_	_
 13	ég	ég	PRON	PRO-N	Case=Nom	15	nsubj	_	_
 14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
-15	ánægð	ánægður	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0
+15	ánægð	ánægður	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	conj	_	OriginalHead=0
 16	með	með	ADP	P	_	18	case	_	_
 17	þessar	þessi	DET	D-A	Case=Acc|PronType=Art	18	det	_	_
-18	undirtektir	undirtekt	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	amod	_	SpaceAfter=No
+18	undirtektir	undirtekt	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	18	punct	_	_
-

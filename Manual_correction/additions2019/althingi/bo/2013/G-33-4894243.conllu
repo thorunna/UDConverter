@@ -17,9 +17,9 @@
 14	fyrir	fyrir	ADP	P	_	16	case	_	_
 15	nýjan	nýr	ADJ	ADJ-A	Case=Acc|Degree=Pos	16	amod	_	_
 16	þingmann	þingmaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
-17	eins	_	ADV	ADVR	Degree=Cmp	16	advmod	_	_
-18	og	_	ADP	P	_	19	case	_	_
-19	mig	ég	PRON	PRO-A	Case=Acc	17	obl	_	SpaceAfter=No
+17	eins	_	ADV	ADVR	Degree=Cmp	19	mark	_	_
+18	og	_	ADP	P	_	17	fixed	_	_
+19	mig	ég	PRON	PRO-A	Case=Acc	16	acl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	19	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4894243,.2
@@ -31,15 +31,15 @@
 4	upp	upp	ADP	RP	_	2	compound:prt	_	_
 5	í	í	ADP	P	_	6	case	_	_
 6	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
-7	til	til	ADP	P	_	8	case	_	_
-8	þess	það	PRON	PRO-G	Case=Gen	2	obl	_	_
-9	að	að	PART	TO	_	10	mark	_	_
-10	fá	fá	VERB	VB	VerbForm=Inf	8	advcl	_	_
+7	til	til	ADP	P	_	10	mark	_	_
+8	þess	það	PRON	PRO-G	Case=Gen	7	fixed	_	_
+9	að	að	PART	TO	_	7	fixed	_	_
+10	fá	fá	VERB	VB	VerbForm=Inf	2	advcl	_	_
 11	hv.	háttvirtur	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
 12	þingmann	þingmaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
-13	til	til	ADP	P	_	15	case	_	_
-14	að	að	PART	TO	_	15	mark	_	_
-15	fræða	fræða	VERB	VB	VerbForm=Inf	10	obl	_	_
+13	til	til	ADP	P	_	15	mark	_	_
+14	að	að	PART	TO	_	13	fixed	_	_
+15	fræða	fræða	VERB	VB	VerbForm=Inf	10	advcl	_	_
 16	mig	ég	PRON	PRO-A	Case=Acc	15	obj	_	_
 17	aðeins	aðeins	ADV	ADV	Degree=Pos	15	advmod	_	_
 18	betur	vel	ADV	ADVR	Degree=Cmp	17	advmod	_	SpaceAfter=No
@@ -64,7 +64,7 @@
 14	starfsendurhæfingarsjóður	starfsendurhæfingarsjóður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
 15	dettur	detta	VERB	VBPI	Mood=Ind|Tense=Pres	9	ccomp	_	_
 16	alveg	alveg	ADV	ADV	Degree=Pos	15	advmod	_	_
-17	út	út	ADP	RP	_	19	compound:prt	_	_
+17	út	út	ADP	RP	_	18	advmod	_	_
 18	úr	úr	ADP	P	_	19	case	_	_
 19	tryggingagjaldinu	tryggingagjald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	19	punct	_	_
@@ -105,7 +105,7 @@
 19	lækkað	lækka	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
 20	um	um	ADP	P	_	23	case	_	_
 21	næstum	næstum	ADV	ADV	Degree=Pos	23	advmod	_	_
-22	því	það	PRON	PRO-D	Case=Dat	21	obl	_	_
+22	því	það	PRON	PRO-D	Case=Dat	21	fixed	_	_
 23	helming	helmingur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	23	punct	_	_
 
@@ -118,25 +118,25 @@
 4	spyrja	spyrja	VERB	VB	VerbForm=Inf	2	acl	_	_
 5	svolítið	svolítill	DET	Q-A	Case=Acc|Degree=Pos	4	obl	_	_
 6	um	um	ADP	P	_	7	case	_	_
-7	reynslu	reynsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+7	reynslu	reynsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl:arg	_	_
 8	þingmannsins	þingmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
 9	í	í	ADP	P	_	11	case	_	_
 10	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	11	det	_	_
 11	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	11	punct	_	_
-13	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
-14	að	að	SCONJ	C	_	18	mark	_	_
+13	því	það	PRON	PRO-D	Case=Dat	18	mark	_	_
+14	að	að	SCONJ	C	_	13	fixed	_	_
 15	ég	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
 16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
 17	að	að	PART	TO	_	18	mark	_	_
-18	læra	læra	VERB	VB	VerbForm=Inf	13	ccomp	_	_
+18	læra	læra	VERB	VB	VerbForm=Inf	4	advcl	_	_
 19	það	það	PRON	PRO-A	Case=Acc	18	obj	_	_
 20	hér	hér	ADV	ADV	Degree=Pos	22	advmod	_	_
 21	á	á	ADP	P	_	22	case	_	_
-22	þingi	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
+22	þingi	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
 23	og	og	CCONJ	CONJ	_	25	cc	_	_
 24	í	í	ADP	P	_	25	case	_	_
-25	nefndarstörfum	nefndarstarf	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	_
+25	nefndarstörfum	nefndarstarf	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	22	conj	_	_
 26	að	að	SCONJ	C	_	30	mark	_	_
 27	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	30	nsubj	_	_
 28	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	30	cop	_	_
@@ -145,14 +145,14 @@
 31	án	án	ADP	P	_	33	case	_	_
 32	nokkurs	nokkur	DET	Q-G	Case=Gen|Degree=Pos	33	amod	_	_
 33	samráðs	samráð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	30	obl	_	_
-34	við	við	ADP	P	_	41	case	_	_
-35	þá	sá	DET	D-A	Case=Acc|PronType=Art	41	det	_	_
+34	við	við	ADP	P	_	35	case	_	_
+35	þá	sá	DET	D-A	Case=Acc|PronType=Art	33	obl	_	_
 36	er	er	SCONJ	C	_	37	mark	_	_
-37	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	41	acl:relcl	_	_
+37	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	35	acl:relcl	_	_
 38	í	í	ADP	P	_	39	case	_	_
 39	hlut	hlutur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	obl	_	SpaceAfter=No
-40	,	,	PUNCT	,	_	39	punct	_	_
-41	atvinnulífið	atvinnulíf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obl	_	_
+40	,	,	PUNCT	,	_	41	punct	_	_
+41	atvinnulífið	atvinnulíf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	conj	_	_
 42	og	og	CCONJ	CONJ	_	44	cc	_	_
 43	auðvitað	auðvitað	ADV	ADV	Degree=Pos	44	advmod	_	_
 44	launþegana	launþegi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	41	conj	_	_
@@ -167,8 +167,8 @@
 53	því	það	PRON	PRO-D	Case=Dat	51	obl	_	_
 54	eða	eða	CCONJ	CONJ	_	55	cc	_	_
 55	vinna	vinna	VERB	VBPI	Mood=Ind|Tense=Pres	46	conj	_	_
-56	upp	upp	ADP	RP	_	58	compound:prt	_	_
-57	í	í	ADP	P	_	58	case	_	_
+56	upp	upp	ADP	RP	_	58	mark	_	_
+57	í	í	ADP	P	_	56	fixed	_	_
 58	það	það	PRON	PRO-A	Case=Acc	55	obl	_	SpaceAfter=No
 59	.	.	PUNCT	.	_	58	punct	_	_
 
@@ -196,17 +196,17 @@
 19	af	af	ADP	RP	_	18	compound:prt	_	_
 20	hlutfall	hlutfall	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obj	_	_
 21	tryggingagjaldsins	tryggingagjald	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	_
-22	og	og	CCONJ	CONJ	_	18	cc	_	_
-23	þannig	þannig	ADV	ADV	Degree=Pos	18	advmod	_	_
-24	lækkað	lækka	VERB	VBN	Tense=Past|VerbForm=Part	18	dep	_	_
+22	og	og	CCONJ	CONJ	_	24	cc	_	_
+23	þannig	þannig	ADV	ADV	Degree=Pos	24	advmod	_	_
+24	lækkað	lækka	VERB	VBN	Tense=Past|VerbForm=Part	18	conj	_	_
 25	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	26	det	_	_
-26	sjóði	sjóður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	obj	_	_
+26	sjóði	sjóður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	24	obj	_	_
 27	án	án	ADP	P	_	28	case	_	_
-28	þess	það	PRON	PRO-G	Case=Gen	18	obl	_	_
+28	þess	það	PRON	PRO-G	Case=Gen	24	obl	_	_
 29	að	að	PART	TO	_	30	mark	_	_
 30	spyrja	spyrja	VERB	VB	VerbForm=Inf	28	acl	_	_
 31	kóng	kóngur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	iobj	_	_
-32	né	né	CCONJ	CONJ	_	31	cc	_	_
+32	né	né	CCONJ	CONJ	_	33	cc	_	_
 33	prest	prestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	31	conj	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	33	punct	_	_
 
@@ -217,9 +217,9 @@
 2	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	kannski	kannski	ADV	ADV	Degree=Pos	2	advmod	_	_
-5	aðeins	aðeins	ADV	ADV	Degree=Pos	2	advmod	_	_
-6	betur	vel	ADV	ADVR	Degree=Cmp	5	advmod	_	_
-7	inn	inn	ADP	RP	_	9	compound:prt	_	_
+5	aðeins	aðeins	ADV	ADV	Degree=Pos	6	advmod	_	_
+6	betur	vel	ADV	ADVR	Degree=Cmp	2	advmod	_	_
+7	inn	inn	ADP	RP	_	9	advmod	_	_
 8	á	á	ADP	P	_	9	case	_	_
 9	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	2	obl	_	_
 10	með	með	ADP	P	_	11	case	_	_
@@ -230,4 +230,3 @@
 15	seinna	seinn	ADJ	ADJR	Degree=Cmp	16	amod	_	_
 16	andsvari	andsvar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	16	punct	_	_
-

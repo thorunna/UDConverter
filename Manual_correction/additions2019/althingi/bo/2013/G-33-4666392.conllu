@@ -5,25 +5,25 @@
 2	langaði	langa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	líka	líka	ADV	ALSO	_	2	advmod	_	_
 4	að	að	PART	TO	_	5	mark	_	_
-5	koma	koma	VERB	VB	VerbForm=Inf	2	acl	_	_
+5	koma	koma	VERB	VB	VerbForm=Inf	2	xcomp	_	_
 6	að	að	ADP	P	_	19	case	_	SpaceAfter=No
 7	,	,	PUNCT	,	_	6	punct	_	_
 8	ég	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
-9	gleymdi	gleyma	VERB	VBDI	Mood=Ind|Tense=Past	19	parataxis	_	_
+9	gleymdi	gleyma	VERB	VBDI	Mood=Ind|Tense=Past	5	parataxis	_	_
 10	því	það	PRON	PRO-D	Case=Dat	9	obj	_	_
 11	áðan	áðan	ADV	ADV	Degree=Pos	9	advmod	_	_
 12	og	og	CCONJ	CONJ	_	13	cc	_	_
-13	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	9	parataxis	_	_
+13	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	9	conj	_	_
 14	því	það	PRON	PRO-D	Case=Dat	13	obj	_	_
 15	heldur	gjarna	ADV	ADVR	Degree=Cmp	13	advmod	_	_
 16	ekki	ekki	ADV	NEG	_	13	advmod	_	_
 17	að	að	ADP	RP	_	13	compound:prt	_	SpaceAfter=No
 18	,	,	PUNCT	,	_	17	punct	_	_
-19	komugjöldunum	komugjald	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
-20	eins	_	ADV	ADVR	Degree=Cmp	19	advmod	_	_
-21	og	_	ADP	P	_	23	case	_	_
+19	komugjöldunum	komugjald	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl:arg	_	_
+20	eins	_	ADV	ADVR	Degree=Cmp	23	mark	_	_
+21	og	_	ADP	P	_	20	fixed	_	_
 22	þau	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
-23	heita	heita	VERB	VBPI	Mood=Ind|Tense=Pres	20	obl	_	_
+23	heita	heita	VERB	VBPI	Mood=Ind|Tense=Pres	19	acl	_	_
 24	víst	víst	ADV	ADV	Degree=Pos	23	advmod	_	_
 25	núna	núna	ADV	ADV	Degree=Pos	23	advmod	_	SpaceAfter=No
 26	,	,	PUNCT	,	_	25	punct	_	_
@@ -39,7 +39,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 4	að	að	PART	TO	_	5	mark	_	_
-5	taka	taka	VERB	VB	VerbForm=Inf	3	acl	_	_
+5	taka	taka	VERB	VB	VerbForm=Inf	3	xcomp	_	_
 6	afstöðu	afstaða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
 7	til	til	ADP	P	_	8	case	_	_
 8	einhvers	einhver	DET	Q-G	Case=Gen|Degree=Pos	5	obl	_	_
@@ -55,14 +55,14 @@
 18	mér	ég	PRON	PRO-D	Case=Dat	19	nsubj	_	_
 19	heyrist	heyra	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
 20	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	21	nsubj	_	_
-21	vita	vita	VERB	VB	VerbForm=Inf	19	acl	_	_
-22	hvernig	hvernig	ADV	WADV	Degree=Pos	25	advmod	_	_
+21	vita	vita	VERB	VB	VerbForm=Inf	19	ccomp	_	_
+22	hvernig	hvernig	ADV	WADV	Degree=Pos	25	mark	_	_
 23	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	24	det	_	_
 24	komugjöld	komugjald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	25	nsubj	_	_
 25	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	21	ccomp	_	_
-26	að	að	PART	TO	_	25	acl	_	_
-27	vera	vera	AUX	BE	VerbForm=Inf	26	cop	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	27	punct	_	_
+26	að	að	PART	TO	_	25	mark	_	_
+27	vera	vera	AUX	BE	VerbForm=Inf	25	cop	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	25	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4666392,.3
 # X_ID = ID_MISSING
@@ -77,7 +77,7 @@
 8	í	í	ADP	P	_	9	case	_	_
 9	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
 10	að	að	PART	TO	_	11	mark	_	_
-11	fá	fá	VERB	VB	VerbForm=Inf	7	acl	_	_
+11	fá	fá	VERB	VB	VerbForm=Inf	7	xcomp	_	_
 12	einhverjar	einhver	DET	Q-A	Case=Acc|Degree=Pos	13	amod	_	_
 13	útskýringar	útskýring	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
 14	frá	frá	ADP	P	_	15	case	_	_
@@ -85,13 +85,13 @@
 16	um	um	ADP	P	_	19	case	_	_
 17	hvernig	hvernig	ADV	ADV	Degree=Pos	19	advmod	_	_
 18	þau	það	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-19	héldu	halda	VERB	VBDI	Mood=Ind|Tense=Past	11	obl	_	_
+19	héldu	halda	VERB	VBDI	Mood=Ind|Tense=Past	11	ccomp	_	_
 20	að	að	SCONJ	C	_	23	mark	_	_
 21	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	23	nsubj	_	_
 22	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	23	aux	_	_
 23	líta	líta	VERB	VB	VerbForm=Inf	19	ccomp	_	_
 24	út	út	ADP	RP	_	23	compound:prt	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	24	punct	_	_
+25	.	.	PUNCT	.	_	23	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4666392,.4
 # X_ID = ID_MISSING
@@ -101,27 +101,27 @@
 3	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	þær	sá	DET	D-A	Case=Acc|PronType=Art	5	det	_	_
 5	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
-6	að	að	SCONJ	C	_	24	mark	_	_
-7	miðað	miða	VERB	VAN	Tense=Past|VerbForm=Part	24	acl	_	_
-8	við	við	ADP	P	_	12	case	_	_
+6	að	að	SCONJ	C	_	7	mark	_	_
+7	miðað	miða	VERB	VAN	Tense=Past|VerbForm=Part	5	xcomp	_	_
+8	við	við	ADP	P	_	7	compound:prt	_	_
 9	um	um	ADV	ADV	Degree=Pos	12	advmod	_	_
 10	30	þrjátíu	NUM	NUM-A	Case=Acc	12	nummod	_	_
 11	þúsund	þúsund	NUM	NUM-A	Case=Acc	10	nummod	_	_
 12	komur	koma	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	_
 13	á	á	ADP	P	_	14	case	_	_
 14	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	24	punct	_	_
-16	þær	hún	PRON	PRO-N	Case=Nom	21	nsubj	_	_
-17	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	21	cop	_	_
-18	það	það	PRON	PRO-N	Case=Nom	21	xcomp	_	_
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	þær	hún	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+17	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	18	cop	_	_
+18	það	það	PRON	PRO-N	Case=Nom	12	parataxis	_	_
 19	á	á	ADP	P	_	21	case	_	_
 20	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	21	amod	_	_
-21	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	parataxis	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	21	punct	_	_
+21	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	18	punct	_	_
 23	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	24	cop	_	_
-24	líklegt	líklegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	ccomp	_	_
+24	líklegt	líklegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	ccomp	_	_
 25	að	að	SCONJ	C	_	30	mark	_	_
-26	um	um	ADV	ADV	Degree=Pos	28	advmod	_	_
+26	um	um	ADV	ADV	Degree=Pos	28	case	_	_
 27	1	einn	NUM	NUM-N	Case=Nom	28	nummod	_	SpaceAfter=No
 28	/3	þriðji	ADJ	ADJ-N	Case=Nom|Degree=Pos	30	nsubj	_	_
 29	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	30	aux	_	_
@@ -130,10 +130,10 @@
 32	komugjald	komugjald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obj	_	SpaceAfter=No
 33	,	,	PUNCT	,	_	32	punct	_	_
 34	2	tveir	NUM	NUM-N	Case=Nom	35	nummod	_	SpaceAfter=No
-35	/3	þriðji	ADJ	ADJ-N	Case=Nom|Degree=Pos	30	parataxis	_	_
-36	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
-37	börn	barn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	35	xcomp	_	_
-38	og	og	CCONJ	CONJ	_	37	cc	_	_
+35	/3	þriðji	ADJ	ADJ-N	Case=Nom|Degree=Pos	37	nsubj	_	_
+36	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	37	cop	_	_
+37	börn	barn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	30	parataxis	_	_
+38	og	og	CCONJ	CONJ	_	39	cc	_	_
 39	öryrkjar	öryrki	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	37	conj	_	SpaceAfter=No
 40	.	.	PUNCT	.	_	39	punct	_	_
 
@@ -146,7 +146,7 @@
 4	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
 5	áhyggjur	áhyggja	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
 6	af	af	ADP	P	_	7	case	_	_
-7	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
+7	því	það	PRON	PRO-D	Case=Dat	2	nmod	_	_
 8	að	að	PART	TO	_	11	mark	_	_
 9	geta	geta	AUX	MD	VerbForm=Inf	11	aux	_	_
 10	ekki	ekki	ADV	NEG	_	11	advmod	_	_
@@ -162,7 +162,7 @@
 3	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	0	root	_	_
 4	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	3	xcomp	_	_
 5	um	um	ADP	P	_	8	case	_	_
-6	18	átján	NUM	NUM-A	Case=Acc	8	nummod	_	_
+6	18	átján	NUM	NUM-A	Case=Acc	7	nummod	_	_
 7	þús.	þúsund	NUM	NUM-A	Case=Acc	8	nummod	_	_
 8	kr.	króna	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	8	punct	_	_
@@ -176,4 +176,3 @@
 17	kemst	koma	VERB	VBPI	Mood=Ind|Tense=Pres	14	acl:relcl	_	_
 18	næst	nærri	ADV	ADVS	Degree=Sup	17	advmod	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	18	punct	_	_
-
