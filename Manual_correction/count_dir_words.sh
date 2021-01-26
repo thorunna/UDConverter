@@ -7,5 +7,6 @@ directory=$1
 for file in $directory/*; do
   word_num=$(sed '/#/d' $file | sed '/^$/d' | wc -l)
   filename=${file##*/}
-  echo -e "${filename%.conllu}\t$word_num"
+  # echo -e "$filename\t$word_num"
+  echo $word_num
 done
