@@ -2,7 +2,7 @@
 # X_IDs = ID_missing_1 ; ID_missing_2
 # text = Herra forseti. Ég þakka hv. þingmanni fyrir spurningarnar og þakka þetta fjármálaráð sem hann veitti í upphafi ræðu sinnar.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nmod	_	IFD_tag=nken
-2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	_	_	IFD_tag=nken|SpaceAfter=No
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	vocative	_	IFD_tag=nken|SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 4	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	IFD_tag=fp1en
 5	þakka	þakka	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1en
@@ -54,8 +54,8 @@
 4	.	.	PUNCT	.	_	1	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4901583,.4
-# X_IDs = ID_missing_5 ; ID_missing_6
-# text = Varðandi það sem hv. þingmaður spurði um, áhyggjur hans ef ég skildi hann rétt að ef skattar væru lækkaðir nytu þeir sem væru tekjuhæstir FSigurj: mundi það ekki nýtast best þeim sem greiða mesta skatta?
+# X_ID = ID_missing_5
+# text = Varðandi það sem hv. þingmaður spurði um, áhyggjur hans ef ég skildi hann rétt að ef skattar væru lækkaðir nytu þeir sem væru tekjuhæstir
 1	Varðandi	varða	VERB	VAG	VerbForm=Part|Voice=Act	0	root	_	IFD_tag=slg
 2	það	sá	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	1	obj	_	IFD_tag=faheo
 3	sem	sem	SCONJ	C	_	6	mark	_	IFD_tag=ct
@@ -81,19 +81,23 @@
 23	sem	sem	SCONJ	C	_	25	mark	_	IFD_tag=ct
 24	væru	vera	AUX	BEDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	25	cop	_	IFD_tag=svg3fþ
 25	tekjuhæstir	tekjuhár	ADJ	ADJS-N	Case=Nom|Definite=Ind|Degree=Sup|Gender=Masc|Number=Plur	22	acl:relcl	_	IFD_tag=lkfnse
-26	FSigurj	fsigurj	PROPN	NPR-N	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	31	dep	_	IFD_tag=sfg3en|SpaceAfter=No
-27	:	:	PUNCT	,	_	26	punct	_	IFD_tag=:
-28	mundi	munu	AUX	MDDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	31	aux	_	IFD_tag=svg3eþ
-29	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	31	nsubj	_	IFD_tag=fphen
-30	ekki	ekki	ADV	NEG	_	31	advmod	_	IFD_tag=aa
-31	nýtast	nýta	VERB	VB	VerbForm=Inf|Voice=Mid	1	conj	_	OriginalHead=0
-32	best	vel	ADV	ADVS	Degree=Sup	31	advmod	_	IFD_tag=aae
-33	þeim	sá	DET	D-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Dem	31	obj	_	IFD_tag=fakfþ
-34	sem	sem	SCONJ	C	_	35	mark	_	IFD_tag=ct
-35	greiða	greiða	VERB	VBPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	33	acl:relcl	_	IFD_tag=sfg3fn
-36	mesta	mikill	DET	QS-A	Case=Acc|Definite=Def|Degree=Cmp|Gender=Masc|Number=Plur	37	amod	_	IFD_tag=lkfovm
-37	skatta	skattur	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	35	obj	_	IFD_tag=nkfo|SpaceAfter=No
-38	?	?	PUNCT	.	_	1	punct	_	IFD_tag=?
+
+# sent_id = ALTHINGI_BO_2014_G-33-4901583,.5
+# X_ID = ID_missing_6
+# text = FSigurj: mundi það ekki nýtast best þeim sem greiða mesta skatta?
+1	FSigurj	fsigurj	PROPN	NPR-N	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	parataxis	_	IFD_tag=sfg3en|SpaceAfter=No
+2	:	:	PUNCT	,	_	6	punct	_	IFD_tag=:
+3	mundi	munu	AUX	MDDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	IFD_tag=svg3eþ
+4	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	6	nsubj	_	IFD_tag=fphen
+5	ekki	ekki	ADV	NEG	_	6	advmod	_	IFD_tag=aa
+6	nýtast	nýta	VERB	VB	VerbForm=Inf|Voice=Mid	0	root	_	OriginalHead=0
+7	best	vel	ADV	ADVS	Degree=Sup	6	advmod	_	IFD_tag=aae
+8	þeim	sá	DET	D-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Dem	6	obj	_	IFD_tag=fakfþ
+9	sem	sem	SCONJ	C	_	10	mark	_	IFD_tag=ct
+10	greiða	greiða	VERB	VBPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	acl:relcl	_	IFD_tag=sfg3fn
+11	mesta	mikill	DET	QS-A	Case=Acc|Definite=Def|Degree=Cmp|Gender=Masc|Number=Plur	12	amod	_	IFD_tag=lkfovm
+12	skatta	skattur	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	10	obj	_	IFD_tag=nkfo|SpaceAfter=No
+13	?	?	PUNCT	.	_	6	punct	_	IFD_tag=?
 
 # sent_id = ALTHINGI_BO_2014_G-33-4901583,.5
 # X_ID = ID_missing_7
@@ -209,7 +213,7 @@
 31	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	27	obl	_	IFD_tag=nkeo|SpaceAfter=No
 32	.	.	PUNCT	.	_	7	punct	_	IFD_tag=.
 
-# sent_id = ALTHINGI_BO_2014_G-33-4901583,.9
+# sent_id = ALTHINGI_BO_2014_G-33-4901583,.10
 # X_ID = ID_missing_13
 # text = Svo vil ég aðeins minnast í lokin á það stef sem sérstaklega hv. þingmenn Framsóknarflokksins hafa verið að ræða um, að þetta sé svo flott fyrir þá efnaminnstu.
 1	Svo	svo	ADV	ADV	_	5	advmod	_	IFD_tag=aa
@@ -272,7 +276,7 @@
 2	hringir	hringja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en|SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
-# sent_id = ALTHINGI_BO_2014_G-33-4901583,.12
+# sent_id = ALTHINGI_BO_2014_G-33-4901583,.13
 # X_ID = ID_missing_16
 # text = Ég spyr: Hversu hratt er það að brenna upp í verðbólgu?
 1	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	IFD_tag=fp1en

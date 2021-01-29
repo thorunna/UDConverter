@@ -23,18 +23,18 @@
 9	vinna	vinna	VERB	VB	VerbForm=Inf|Voice=Act	7	xcomp	_	IFD_tag=sng
 10	á	á	ADP	P	_	11	case	_	IFD_tag=aþ
 11	þingi	þing	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	9	obl	_	IFD_tag=nheþ|SpaceAfter=No
-12	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
+12	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4644921,.3
 # X_IDs = ID_missing_3 ; ID_missing_4
 # text = En við í Bjartri framtíð höfum haft háleitt markmið og mörgum hefur kannski fundist það barnalegt markmið, það sé svo far out að reyna að bæta stjórnmálin.
 1	En	en	CCONJ	CONJ	_	7	cc	_	IFD_tag=c
-2	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	7	_	_	IFD_tag=fp1fn
+2	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	7	nsubj	_	IFD_tag=fp1fn
 3	í	í	ADP	P	_	5	case	_	IFD_tag=aþ
 4	Bjartri	bjartur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	IFD_tag=lveþsf
 5	framtíð	framtíð	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	2	obl	_	IFD_tag=nveþ
 6	höfum	hafa	AUX	HVPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	IFD_tag=sfg1fn
-7	haft	hafa	VERB	HVN	VerbForm=Sup|Voice=Act	_	_	_	IFD_tag=ssg
+7	haft	hafa	VERB	HVN	VerbForm=Sup|Voice=Act	0	root	_	IFD_tag=ssg
 8	háleitt	háleitur	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	9	amod	_	IFD_tag=lheosf
 9	markmið	markmið	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	7	obj	_	IFD_tag=nheo
 10	og	og	CCONJ	CONJ	_	14	cc	_	IFD_tag=c
@@ -56,7 +56,7 @@
 26	að	að	PART	TO	_	27	mark	_	IFD_tag=cn
 27	bæta	bæta	VERB	VB	VerbForm=Inf|Voice=Act	25	xcomp	_	IFD_tag=sng
 28	stjórnmálin	stjórnmál	NOUN	NS-A	Case=Acc|Definite=Def|Gender=Neut|Number=Plur	27	obj	_	IFD_tag=nhfog|SpaceAfter=No
-29	.	.	PUNCT	.	_	27	punct	_	IFD_tag=.
+29	.	.	PUNCT	.	_	7	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4644921,.4
 # X_ID = ID_missing_5
@@ -77,7 +77,7 @@
 14	,	,	PUNCT	,	_	15	punct	_	IFD_tag=,
 15	komist	koma	VERB	VBPS	VerbForm=Sup|Voice=Mid	10	conj	_	IFD_tag=ssm
 16	áfram	áfram	ADV	ADV	_	15	advmod	_	IFD_tag=aa|SpaceAfter=No
-17	.	.	PUNCT	.	_	15	punct	_	IFD_tag=.
+17	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4644921,.5
 # X_IDs = ID_missing_6 ; ID_missing_7
@@ -99,7 +99,7 @@
 15	í	í	ADP	P	_	16	case	_	IFD_tag=aþ
 16	fyrirtækjum	fyrirtæki	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	12	obl	_	IFD_tag=nhfþ
 17	landsins	land	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	16	nmod:poss	_	IFD_tag=nheeg|SpaceAfter=No
-18	.	.	PUNCT	.	_	12	punct	_	IFD_tag=.
+18	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4644921,.6
 # X_ID = ID_missing_8
@@ -133,7 +133,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3en
 3	vissulega	vissulega	ADV	ADV	_	5	advmod	_	IFD_tag=aa
 4	háleitt	háleitur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	5	amod	_	IFD_tag=lhensf
-5	markmið	markmið	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	_	_	_	IFD_tag=nhen
+5	markmið	markmið	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	IFD_tag=nhen
 6	að	að	PART	TO	_	7	mark	_	IFD_tag=cn
 7	reyna	reyna	VERB	VB	VerbForm=Inf|Voice=Act	5	xcomp	_	IFD_tag=sng
 8	að	að	PART	TO	_	9	mark	_	IFD_tag=cn
@@ -152,7 +152,7 @@
 21	farsæld	farsæld	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	14	obl	_	IFD_tag=nveþ
 22	íslenskrar	íslenskur	ADJ	ADJ-G	Case=Gen|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	23	amod	_	IFD_tag=lveesf
 23	þjóðar	þjóð	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	21	nmod:poss	_	IFD_tag=nvee|SpaceAfter=No
-24	.	.	PUNCT	.	_	14	punct	_	IFD_tag=.
+24	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4644921,.8
 # X_IDs = ID_missing_11 ; ID_missing_12
@@ -175,7 +175,7 @@
 16	að	að	PART	TO	_	17	mark	_	IFD_tag=cn
 17	tala	tala	VERB	VB	VerbForm=Inf|Voice=Act	11	xcomp	_	IFD_tag=sng
 18	saman	saman	ADV	ADV	_	17	advmod	_	IFD_tag=aa|SpaceAfter=No
-19	.	.	PUNCT	.	_	17	punct	_	IFD_tag=.
+19	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4644921,.9
 # X_ID = ID_missing_13
@@ -202,7 +202,7 @@
 20	hér	hér	ADV	ADV	_	22	advmod	_	IFD_tag=aa
 21	á	á	ADP	P	_	22	case	_	IFD_tag=aþ
 22	Alþingi	alþingi	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	19	obl	_	IFD_tag=nheþ-s|SpaceAfter=No
-23	.	.	PUNCT	.	_	19	punct	_	IFD_tag=.
+23	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4644921,.10
 # X_ID = ID_missing_14
@@ -246,7 +246,7 @@
 37	eitthvað	einhver	DET	Q-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Ind	36	obj	_	IFD_tag=foheo
 38	að	að	PART	TO	_	39	mark	_	IFD_tag=cn
 39	segja	segja	VERB	VB	VerbForm=Inf|Voice=Act	37	xcomp	_	IFD_tag=sng|SpaceAfter=No
-40	.	.	PUNCT	.	_	39	punct	_	IFD_tag=.
+40	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4644921,.11
 # X_ID = ID_missing_15

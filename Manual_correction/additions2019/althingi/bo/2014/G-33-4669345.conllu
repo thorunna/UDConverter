@@ -1,3 +1,26 @@
+# sent_id = ALTHINGI_BO_2014_G-33-4669345,.1
+# X_ID = ID_missing_1
+# text = Herra forseti. Ég þakka hv. þingmanni fyrir falleg orð varðandi frumvarpið sem við leggjum fram um hefndarklám.
+1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nmod	_	IFD_tag=nken
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	vocative	_	IFD_tag=nken|SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
+4	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	IFD_tag=fp1en
+5	þakka	þakka	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1en
+6	hv.	háttvirtur	ADJ	ADJ-D	_	7	amod	_	IFD_tag=as
+7	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	5	iobj	_	IFD_tag=nkeþ
+8	fyrir	fyrir	ADP	P	_	10	case	_	IFD_tag=ao
+9	falleg	fallegur	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	10	amod	_	IFD_tag=lhfosf
+10	orð	orð	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	5	obl:arg	_	IFD_tag=nhfo
+11	varðandi	varða	VERB	VAG	VerbForm=Part|Voice=Act	10	acl	_	IFD_tag=slg
+12	frumvarpið	frumvarp	NOUN	N-A	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	11	obj	_	IFD_tag=nheog
+13	sem	sem	SCONJ	C	_	15	mark	_	IFD_tag=ct
+14	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	15	nsubj	_	IFD_tag=fp1fn
+15	leggjum	leggja	VERB	VBPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	12	acl:relcl	_	IFD_tag=sfg1fn
+16	fram	fram	ADP	RP	_	15	compound:prt	_	IFD_tag=aa
+17	um	um	ADP	P	_	18	case	_	IFD_tag=ao
+18	hefndarklám	hefndarklám	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	15	obl	_	IFD_tag=nheo|SpaceAfter=No
+19	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
+
 # sent_id = ALTHINGI_BO_2014_G-33-4669345,.2
 # X_ID = ID_missing_2
 # text = Það er í raun birtingarmynd þess að við lifum í nýjum veruleika.
@@ -13,7 +36,7 @@
 10	í	í	ADP	P	_	12	case	_	IFD_tag=aþ
 11	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	12	amod	_	IFD_tag=lkeþsf
 12	veruleika	veruleiki	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	9	obl	_	IFD_tag=nkeþ|SpaceAfter=No
-13	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
+13	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4669345,.3
 # X_IDs = ID_missing_3 ; ID_missing_4
@@ -38,7 +61,7 @@
 18	góðir	góður	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	15	amod	_	IFD_tag=lkfnsf
 19	og	og	CCONJ	CONJ	_	20	cc	_	IFD_tag=c
 20	vondir	vondur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	18	conj	_	IFD_tag=lkfnsf|SpaceAfter=No
-21	.	.	PUNCT	.	_	13	punct	_	IFD_tag=.
+21	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4669345,.4
 # X_ID = ID_missing_5
@@ -66,7 +89,7 @@
 21	við	ég	PRON	PRO-N	_	22	nsubj	_	IFD_tag=aa
 22	búum	búa	VERB	VBPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	19	acl:relcl	_	IFD_tag=sfg1fn
 23	við	við	ADP	P	_	22	compound:prt	_	IFD_tag=aa|SpaceAfter=No
-24	.	.	PUNCT	.	_	22	punct	_	IFD_tag=.
+24	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4669345,.5
 # X_ID = ID_missing_6
@@ -87,7 +110,7 @@
 14	á	á	ADP	P	_	16	case	_	IFD_tag=aþ
 15	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	16	amod	_	IFD_tag=lheþve
 16	kjörtímabili	kjörtímabil	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	12	obl	_	IFD_tag=nheþ|SpaceAfter=No
-17	.	.	PUNCT	.	_	12	punct	_	IFD_tag=.
+17	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4669345,.6
 # X_ID = ID_missing_7
@@ -116,7 +139,7 @@
 22	snúa	snúa	VERB	VBPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	acl:relcl	_	IFD_tag=sfg3fn
 23	að	að	ADP	P	_	24	case	_	IFD_tag=aþ
 24	börnum	barn	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	22	obl	_	IFD_tag=nhfþ|SpaceAfter=No
-25	.	.	PUNCT	.	_	22	punct	_	IFD_tag=.
+25	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4669345,.7
 # X_ID = ID_missing_8
@@ -163,7 +186,7 @@
 24	druslugöngunnar	drusluganga	NOUN	N-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	23	nmod:poss	_	IFD_tag=nveeg
 25	í	í	ADP	P	_	26	case	_	IFD_tag=ao
 26	sumar	sumar	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	24	obl	_	IFD_tag=nheo|SpaceAfter=No
-27	.	.	PUNCT	.	_	12	punct	_	IFD_tag=.
+27	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4669345,.9
 # X_ID = ID_missing_10
@@ -196,7 +219,7 @@
 15	og	og	CCONJ	CONJ	_	16	cc	_	IFD_tag=c
 16	gera	gera	VERB	DO	VerbForm=Inf|Voice=Act	10	conj	_	IFD_tag=sng
 17	betur	vel	ADV	ADVR	Degree=Cmp	16	advmod	_	IFD_tag=aam|SpaceAfter=No
-18	.	.	PUNCT	.	_	16	punct	_	IFD_tag=.
+18	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4669345,.11
 # X_IDs = ID_missing_13 ; ID_missing_14
@@ -218,27 +241,4 @@
 15	skömm	skömm	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	6	conj	_	IFD_tag=nven
 16	að	að	ADP	P	_	17	case	_	IFD_tag=aþ
 17	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	15	obj	_	OriginalHead=0|SpaceAfter=No
-18	.	.	PUNCT	.	_	15	punct	_	IFD_tag=.
-
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Ég þakka hv. þingmanni fyrir falleg orð varðandi frumvarpið sem við leggjum fram um hefndarklám.
-1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nmod	_	IFD_tag=nken
-2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	vocative	_	IFD_tag=nken|SpaceAfter=No
-3	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
-4	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	IFD_tag=fp1en
-5	þakka	þakka	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1en
-6	hv.	háttvirtur	ADJ	ADJ-D	_	7	amod	_	IFD_tag=as
-7	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	5	iobj	_	IFD_tag=nkeþ
-8	fyrir	fyrir	ADP	P	_	10	case	_	IFD_tag=ao
-9	falleg	fallegur	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	10	amod	_	IFD_tag=lhfosf
-10	orð	orð	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	5	obl:arg	_	IFD_tag=nhfo
-11	varðandi	varða	VERB	VAG	VerbForm=Part|Voice=Act	10	acl	_	IFD_tag=slg
-12	frumvarpið	frumvarp	NOUN	N-A	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	11	obj	_	IFD_tag=nheog
-13	sem	sem	SCONJ	C	_	15	mark	_	IFD_tag=ct
-14	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	15	nsubj	_	IFD_tag=fp1fn
-15	leggjum	leggja	VERB	VBPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	12	acl:relcl	_	IFD_tag=sfg1fn
-16	fram	fram	ADP	RP	_	15	compound:prt	_	IFD_tag=aa
-17	um	um	ADP	P	_	18	case	_	IFD_tag=ao
-18	hefndarklám	hefndarklám	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	15	obl	_	IFD_tag=nheo|SpaceAfter=No
-19	.	.	PUNCT	.	_	15	punct	_	IFD_tag=.
+18	.	.	PUNCT	.	_	6	punct	_	IFD_tag=.
