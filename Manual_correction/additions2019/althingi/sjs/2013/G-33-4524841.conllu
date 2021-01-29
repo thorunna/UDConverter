@@ -64,7 +64,7 @@
 9	tekur	taka	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	acl:relcl	_	IFD_tag=sfg3en
 10	til	til	ADP	P	_	12	case	_	IFD_tag=ae
 11	allra	allur	DET	Q-G	Case=Gen|Gender=Neut|Number=Plur|PronType=Ind	12	amod	_	IFD_tag=fohfe
-12	heimila	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	9	obl	_	IFD_tag=nhfe
+12	heimila	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	9	obl:arg	_	IFD_tag=nhfe
 13	í	í	ADP	P	_	14	case	_	IFD_tag=aþ
 14	landinu	land	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	12	obl	_	IFD_tag=nheþg
 15	og	og	CCONJ	CONJ	_	18	cc	_	IFD_tag=c
@@ -123,7 +123,7 @@
 14	verulegum	verulegur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	IFD_tag=lkeþsf
 15	mæli	mælir	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	11	obl	_	IFD_tag=nkeþ
 16	til	til	ADP	P	_	17	case	_	IFD_tag=ae
-17	heimila	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	11	obl	_	IFD_tag=nhfe
+17	heimila	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	11	obl:arg	_	IFD_tag=nhfe
 18	sem	sem	SCONJ	C	_	22	mark	_	IFD_tag=ct
 19	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	cop	_	IFD_tag=sfg3fn
 20	í	í	ADP	P	_	22	case	_	IFD_tag=aþ
@@ -157,7 +157,7 @@
 2	gerir	gera	VERB	DOPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
 3	ekkert	enginn	DET	Q-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Ind	2	obj	_	IFD_tag=foheo
 4	fyrir	fyrir	ADP	P	_	5	case	_	IFD_tag=ao
-5	leigjendur	leigjandi	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	2	obl	_	IFD_tag=nkfo|SpaceAfter=No
+5	leigjendur	leigjandi	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	2	obl:arg	_	IFD_tag=nkfo|SpaceAfter=No
 6	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4524841,.8
@@ -165,17 +165,17 @@
 # text = Það er eins og hver annar brandari að tala um að þeir fái einhverja úrlausn þarna.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	0	root	_	IFD_tag=fphen
 2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	IFD_tag=sfg3en
-3	eins	_	ADV	ADVR	_	1	advmod	_	IFD_tag=x
-4	og	_	ADP	P	_	7	mark	_	IFD_tag=x
-5	hver	hver	DET	Q-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	4	fixed	_	IFD_tag=foken
+3	eins	_	ADV	ADVR	_	7	mark	_	IFD_tag=x
+4	og	_	ADP	P	_	3	fixed	_	IFD_tag=x
+5	hver	hver	DET	Q-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	7	det	_	IFD_tag=foken
 6	annar	annar	PRON	OTHER-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	7	det	_	IFD_tag=foken
-7	brandari	brandari	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	3	obl	_	IFD_tag=nken
+7	brandari	brandari	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	amod	_	IFD_tag=nken
 8	að	að	PART	TO	_	9	mark	_	IFD_tag=c
 9	tala	tala	VERB	VB	VerbForm=Inf|Voice=Act	1	xcomp	_	IFD_tag=sng
 10	um	um	ADP	P	_	13	case	_	IFD_tag=ao
 11	að	að	SCONJ	C	_	13	mark	_	IFD_tag=c
 12	þeir	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Prs	13	nsubj	_	IFD_tag=fpkfn
-13	fái	fá	VERB	VBPS	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	obl	_	IFD_tag=svg3fn
+13	fái	fá	VERB	VBPS	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	obl:arg	_	IFD_tag=svg3fn
 14	einhverja	einhver	DET	Q-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Ind	15	amod	_	IFD_tag=foveo
 15	úrlausn	úrlausn	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	13	obj	_	IFD_tag=nveo
 16	þarna	þarna	ADV	ADV	_	13	advmod	_	IFD_tag=aa|SpaceAfter=No
@@ -204,7 +204,7 @@
 18	tekna	tekjur	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Plur	17	nmod:poss	_	IFD_tag=nvfe
 19	sinna	sinn	PRON	PRO-G	Case=Gen|Gender=Fem|Number=Plur|PronType=Prs	18	nmod:poss	_	IFD_tag=fevfe
 20	til	til	ADP	P	_	21	case	_	IFD_tag=ae
-21	hliðar	hlið	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	15	obl	_	IFD_tag=nvee
+21	hliðar	hlið	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	15	obl:arg	_	IFD_tag=nvee
 22	í	í	ADP	P	_	23	case	_	IFD_tag=aþ
 23	séreignarsparnað	séreignarsparnaður	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	15	obl	_	IFD_tag=nkeo
 24	í	í	ADP	P	_	26	case	_	IFD_tag=aþ
@@ -230,7 +230,7 @@
 4	fyrir	fyrir	ADP	P	_	7	case	_	IFD_tag=ao
 5	þann	sá	DET	D-A	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	7	det	_	IFD_tag=fakeo
 6	stóra	stór	ADJ	ADJ-A	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	7	amod	_	IFD_tag=lkeovf
-7	hóp	hópur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	obl	_	IFD_tag=nkeo|SpaceAfter=No
+7	hóp	hópur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	2	obl:arg	_	IFD_tag=nkeo|SpaceAfter=No
 8	,	,	PUNCT	,	_	13	punct	_	IFD_tag=,
 9	sem	sem	SCONJ	C	_	13	mark	_	IFD_tag=ct
 10	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	IFD_tag=sfg3en
@@ -243,7 +243,7 @@
 17	ekki	ekki	ADV	NEG	_	16	advmod	_	IFD_tag=aa
 18	í	í	ADP	P	_	20	case	_	IFD_tag=aþ
 19	sínu	sinn	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	20	nmod:poss	_	IFD_tag=feheþ
-20	húsnæði	húsnæði	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	16	obl	_	IFD_tag=nheþ|SpaceAfter=No
+20	húsnæði	húsnæði	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	16	obl:arg	_	IFD_tag=nheþ|SpaceAfter=No
 21	,	,	PUNCT	,	_	26	punct	_	IFD_tag=,
 22	að	að	ADP	P	_	23	case	_	IFD_tag=cn
 23	uppistöðu	uppistaða	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	26	obl	_	IFD_tag=nveþ

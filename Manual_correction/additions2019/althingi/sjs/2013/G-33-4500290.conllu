@@ -1,3 +1,45 @@
+# sent_id = ALTHINGI_SJS_2013_G-33-4500290,.1
+# X_ID = ID_missing_1
+# text = Herra forseti. Það þarf alltaf að vega það og meta vel og vandlega hvort ríkið geri rétt í því að afsala sér eða selja þær eignir, losa þær eða láta þær skila af sér arði.
+1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nmod	_	IFD_tag=nken
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	vocative	_	IFD_tag=nken|SpaceAfter=No
+3	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
+4	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	5	expl	_	IFD_tag=fphen
+5	þarf	þurfa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+6	alltaf	alltaf	ADV	ADV	_	5	advmod	_	IFD_tag=aa
+7	að	að	PART	TO	_	8	mark	_	IFD_tag=cn
+8	vega	vega	VERB	VB	VerbForm=Inf|Voice=Act	5	xcomp	_	IFD_tag=sng
+9	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	8	obj	_	IFD_tag=fpheo
+10	og	og	CCONJ	CONJ	_	11	cc	_	IFD_tag=c
+11	meta	meta	VERB	VB	VerbForm=Inf|Voice=Act	8	conj	_	IFD_tag=sng
+12	vel	vel	ADV	ADV	_	8	advmod	_	IFD_tag=aa
+13	og	og	CCONJ	CONJ	_	14	cc	_	IFD_tag=c
+14	vandlega	vandlega	ADV	ADV	_	12	advmod	_	IFD_tag=aa
+15	hvort	hvort	SCONJ	WQ	_	17	mark	_	IFD_tag=c
+16	ríkið	ríki	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	17	nsubj	_	IFD_tag=nheng
+17	geri	gera	VERB	DOPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	ccomp	_	IFD_tag=svg3en
+18	rétt	réttur	ADJ	ADJ-A	_	17	obj	_	IFD_tag=aa
+19	í	í	ADP	P	_	20	case	_	IFD_tag=aþ
+20	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	17	obl:arg	_	IFD_tag=fpheþ
+21	að	að	PART	TO	_	22	mark	_	IFD_tag=cn
+22	afsala	afsala	VERB	VB	VerbForm=Inf|Voice=Act	20	xcomp	_	IFD_tag=sng
+23	sér	sig	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Plur|PronType=Prs	22	obj	_	IFD_tag=fpvfþ
+24	eða	eða	CCONJ	CONJ	_	25	cc	_	IFD_tag=c
+25	selja	selja	VERB	VB	VerbForm=Inf|Voice=Act	22	xcomp	_	IFD_tag=sng
+26	þær	sá	DET	D-A	Case=Acc|Gender=Fem|Number=Plur|PronType=Prs	27	det	_	IFD_tag=fpvfo
+27	eignir	eign	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	25	obj	_	IFD_tag=nvfo|SpaceAfter=No
+28	,	,	PUNCT	,	_	29	punct	_	IFD_tag=,
+29	losa	losa	VERB	VB	VerbForm=Inf|Voice=Act	22	conj	_	IFD_tag=sng
+30	þær	hún	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Plur|PronType=Prs	29	obj	_	IFD_tag=fpvfo
+31	eða	eða	CCONJ	CONJ	_	32	cc	_	IFD_tag=c
+32	láta	láta	VERB	VB	VerbForm=Inf|Voice=Act	29	conj	_	IFD_tag=sng
+33	þær	hún	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Plur|PronType=Prs	34	nsubj	_	IFD_tag=fpvfo
+34	skila	skila	VERB	VB	VerbForm=Inf|Voice=Act	32	xcomp	_	IFD_tag=sng
+35	af	af	ADP	P	_	36	case	_	IFD_tag=aþ
+36	sér	sig	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Plur|PronType=Prs	34	obl:arg	_	IFD_tag=fpvfþ
+37	arði	arður	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	34	obj	_	IFD_tag=nkeþ|SpaceAfter=No
+38	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
+
 # sent_id = ALTHINGI_SJS_2013_G-33-4500290,.2
 # X_ID = ID_missing_2
 # text = Ef við tökum Landsvirkjun sem dæmi þá væri það um það bil það síðasta undir sólinni sem ég teldi að íslenska ríkið og þjóðin ætti að láta frá sér.
@@ -27,9 +69,9 @@
 24	þjóðin	þjóð	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	22	conj	_	IFD_tag=nveng
 25	ætti	eiga	VERB	VBDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	19	ccomp	_	IFD_tag=svg3eþ
 26	að	að	PART	TO	_	27	mark	_	IFD_tag=cn
-27	láta	láta	VERB	VB	VerbForm=Inf|Voice=Act	25	acl	_	IFD_tag=sng
+27	láta	láta	VERB	VB	VerbForm=Inf|Voice=Act	25	xcomp	_	IFD_tag=sng
 28	frá	frá	ADP	P	_	29	case	_	IFD_tag=aþ
-29	sér	sig	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Prs	27	obl	_	IFD_tag=fpveþ|SpaceAfter=No
+29	sér	sig	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Prs	27	obl:arg	_	IFD_tag=fpveþ|SpaceAfter=No
 30	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4500290,.3
@@ -51,7 +93,7 @@
 14	komandi	komandi	ADJ	ADJ-D	Case=Dat|Degree=Pos|Gender=Neut|Number=Plur	15	amod	_	IFD_tag=lhfþof
 15	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	10	obl	_	IFD_tag=nhfþ
 16	til	til	ADP	P	_	17	case	_	IFD_tag=ae
-17	eiganda	eigandi	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	10	obl	_	IFD_tag=nkee
+17	eiganda	eigandi	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	10	obl:arg	_	IFD_tag=nkee
 18	síns	sinn	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Sing|PronType=Prs	17	nmod:poss	_	IFD_tag=fekee|SpaceAfter=No
 19	,	,	PUNCT	,	_	20	punct	_	IFD_tag=,
 20	þjóðarinnar	þjóð	NOUN	N-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	17	appos	_	IFD_tag=nveeg|SpaceAfter=No
@@ -73,10 +115,10 @@
 4	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	IFD_tag=fp1fn
 5	þá	þá	ADV	ADV	_	3	advmod	_	IFD_tag=aa
 6	að	að	PART	TO	_	7	mark	_	IFD_tag=cn
-7	láta	láta	VERB	VB	VerbForm=Inf|Voice=Act	3	acl	_	IFD_tag=sng
+7	láta	láta	VERB	VB	VerbForm=Inf|Voice=Act	3	xcomp	_	IFD_tag=sng
 8	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	7	obj	_	IFD_tag=fpheo
 9	frá	frá	ADP	P	_	10	case	_	IFD_tag=aþ
-10	okkur	ég	PRON	PRO-D	Case=Dat|Number=Plur|Person=1|PronType=Prs	7	obl	_	IFD_tag=fp1fþ|SpaceAfter=No
+10	okkur	ég	PRON	PRO-D	Case=Dat|Number=Plur|Person=1|PronType=Prs	7	obl:arg	_	IFD_tag=fp1fþ|SpaceAfter=No
 11	?	?	PUNCT	.	_	3	punct	_	IFD_tag=?
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4500290,.5
@@ -97,7 +139,7 @@
 13	meiri	mikill	DET	QR-A	Case=Acc|Definite=Def|Degree=Cmp|Gender=Masc|Number=Plur	14	amod	_	IFD_tag=lkfovm
 14	skatta	skattur	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	11	obj	_	IFD_tag=nkfo
 15	til	til	ADP	P	_	16	case	_	IFD_tag=ae
-16	ríkisins	ríki	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	11	obl	_	IFD_tag=nheeg
+16	ríkisins	ríki	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	11	obl:arg	_	IFD_tag=nheeg
 17	en	en	CCONJ	CONJ	_	18	cc	_	IFD_tag=c
 18	áður	áður	ADV	ADVR	_	11	obl	_	IFD_tag=aa|SpaceAfter=No
 19	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
@@ -115,7 +157,7 @@
 # text = Um 20 milljarða, hafa einhverjir sagt hér og ég dreg ekki úr því að það geti verið nærri lagi ef við tökum skattgreiðslur sjávarútvegsfyrirtækjanna.
 1	Um	um	ADV	ADV	_	2	advmod	_	IFD_tag=aa
 2	20	tuttugu	NUM	NUM-A	NumType=Card	3	nummod	_	IFD_tag=ta
-3	milljarða	milljarður	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	7	dep	_	IFD_tag=nkfo|SpaceAfter=No
+3	milljarða	milljarður	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	7	obj	_	IFD_tag=nkfo|SpaceAfter=No
 4	,	,	PUNCT	,	_	7	punct	_	IFD_tag=,
 5	hafa	hafa	AUX	HVPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	IFD_tag=sfg3fn
 6	einhverjir	einhver	DET	Q-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Ind	7	nsubj	_	IFD_tag=fokfn
@@ -224,7 +266,7 @@
 17	þarf	þurfa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	conj	_	IFD_tag=sfg3en
 18	að	að	PART	TO	_	20	mark	_	IFD_tag=cn
 19	geta	geta	AUX	MD	VerbForm=Inf|Voice=Act	20	aux	_	IFD_tag=sng
-20	fjárfest	fjárfesta	VERB	VBN	VerbForm=Sup|Voice=Act	17	acl	_	IFD_tag=ssg
+20	fjárfest	fjárfesta	VERB	VBN	VerbForm=Sup|Voice=Act	17	xcomp	_	IFD_tag=ssg
 21	og	og	CCONJ	CONJ	_	23	cc	_	IFD_tag=c
 22	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	23	nsubj	_	IFD_tag=fpken
 23	þarf	þurfa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	conj	_	IFD_tag=sfg3en
@@ -244,7 +286,7 @@
 5	bara	bara	ADV	FP	_	3	advmod	_	IFD_tag=aa
 6	peningar	peningur	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	3	nsubj	_	IFD_tag=nkfn
 7	í	í	ADP	P	_	8	case	_	IFD_tag=ao
-8	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	3	obl	_	IFD_tag=fpheo|SpaceAfter=No
+8	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	3	obl:arg	_	IFD_tag=fpheo|SpaceAfter=No
 9	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4500290,.13
@@ -256,25 +298,25 @@
 4	peningar	peningur	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	2	nsubj	_	IFD_tag=nkfn
 5	í	í	ADP	P	_	7	case	_	IFD_tag=ao
 6	hæstu	hár	ADJ	ADJS-A	Case=Nom|Definite=Def|Degree=Sup|Gender=Fem|Number=Plur	7	amod	_	IFD_tag=lvfnve
-7	arðgreiðslur	arðgreiðsla	NOUN	NS-A	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	2	obl	_	IFD_tag=nvfn|SpaceAfter=No
+7	arðgreiðslur	arðgreiðsla	NOUN	NS-A	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	2	obl:arg	_	IFD_tag=nvfn|SpaceAfter=No
 8	,	,	PUNCT	,	_	11	punct	_	IFD_tag=,
 9	einhverjar	einhver	DET	Q-A	Case=Nom|Gender=Fem|Number=Plur|PronType=Ind	11	amod	_	IFD_tag=fovfn
 10	hæstu	hár	ADJ	ADJS-A	Case=Nom|Definite=Def|Degree=Sup|Gender=Fem|Number=Plur	11	amod	_	IFD_tag=lvfnve
-11	arðgreiðslur	arðgreiðsla	NOUN	NS-A	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	7	appos	_	IFD_tag=nvfn
+11	arðgreiðslur	arðgreiðsla	NOUN	NS-A	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	7	conj	_	IFD_tag=nvfn
 12	sem	sem	SCONJ	C	_	15	mark	_	IFD_tag=ct
 13	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	15	nsubj	_	IFD_tag=fp1fn
 14	höfum	hafa	AUX	HVPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	15	aux	_	IFD_tag=sfg1fn
 15	séð	sjá	VERB	VBN	VerbForm=Sup|Voice=Act	11	acl:relcl	_	IFD_tag=ssg
-16	ganga	ganga	VERB	VB	VerbForm=Inf|Voice=Act	15	acl	_	IFD_tag=sng
+16	ganga	ganga	VERB	VB	VerbForm=Inf|Voice=Act	15	xcomp	_	IFD_tag=sng
 17	ár	ár	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	16	obl	_	IFD_tag=nheo
 18	eftir	eftir	ADP	P	_	19	case	_	IFD_tag=ao
 19	ár	ár	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	17	obl	_	IFD_tag=nheo
 20	út	út	ADP	RP	_	21	compound:prt	_	IFD_tag=aa
 21	úr	úr	ADP	P	_	23	case	_	IFD_tag=aþ
 22	einni	einn	DET	ONE-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Ind	23	det	_	IFD_tag=foveþ
-23	atvinnugrein	atvinnugrein	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	16	obl	_	IFD_tag=nveþ
+23	atvinnugrein	atvinnugrein	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	16	obl:arg	_	IFD_tag=nveþ
 24	til	til	ADP	P	_	25	case	_	IFD_tag=ae
-25	eigenda	eigandi	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	16	obl	_	IFD_tag=nkfe
+25	eigenda	eigandi	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	16	obl:arg	_	IFD_tag=nkfe
 26	sinna	sinn	PRON	PRO-G	Case=Gen|Gender=Masc|Number=Plur|PronType=Prs	25	nmod:poss	_	IFD_tag=fekfe|SpaceAfter=No
 27	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
@@ -286,7 +328,7 @@
 3	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3fn
 4	sprottnar	spretta	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	0	root	_	IFD_tag=lvfnsf
 5	af	af	ADP	P	_	6	case	_	IFD_tag=aþ
-6	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	4	obl	_	IFD_tag=fpheþ
+6	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	4	obl:arg	_	IFD_tag=fpheþ
 7	að	að	SCONJ	C	_	12	mark	_	IFD_tag=aþ
 8	sjávarútvegurinn	sjávarútvegur	NOUN	N-N	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	12	nsubj	_	IFD_tag=nkeng
 9	hefur	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	IFD_tag=sfg3en
@@ -295,7 +337,7 @@
 12	aðgang	aðgangur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	6	ccomp	_	IFD_tag=nkeo
 13	að	að	ADP	P	_	15	case	_	IFD_tag=aþ
 14	sameiginlegri	sameiginlegur	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	IFD_tag=lveþsf
-15	auðlind	auðlind	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	12	obl	_	IFD_tag=nveþ
+15	auðlind	auðlind	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	12	obl:arg	_	IFD_tag=nveþ
 16	sem	sem	SCONJ	C	_	21	mark	_	IFD_tag=ct
 17	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	cop	_	IFD_tag=sfg3en
 18	í	í	ADP	P	_	21	case	_	IFD_tag=aþ
@@ -308,7 +350,7 @@
 25	á	á	ADP	P	_	28	case	_	IFD_tag=aþ
 26	mjög	mjög	ADV	ADV	_	27	amod	_	IFD_tag=aa
 27	mikilli	mikill	DET	Q-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	28	amod	_	IFD_tag=lveþsf
-28	arðsemi	arðsemi	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	24	obl	_	IFD_tag=nveþ
+28	arðsemi	arðsemi	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	24	obl:arg	_	IFD_tag=nveþ
 29	eins	_	ADV	ADVR	_	32	mark	_	IFD_tag=x
 30	og	og	ADP	P	_	29	fixed	_	IFD_tag=c
 31	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	32	nsubj	_	IFD_tag=fp1fn
@@ -342,10 +384,10 @@
 9	vel	vel	ADV	ADV	_	7	advmod	_	IFD_tag=aa
 10	af	af	ADP	P	_	11	case	_	IFD_tag=aþ
 11	sér	sig	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Prs	7	obj	_	IFD_tag=fpveþ
-12	og	og	ADP	P	_	15	case	_	IFD_tag=c
+12	og	og	ADP	P	_	15	cc	_	IFD_tag=c
 13	til	til	ADP	P	_	14	case	_	IFD_tag=ae
 14	dæmis	dæmi	ADV	N-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	15	obl	_	IFD_tag=nhee
-15	rekstur	rekstur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	7	obl	_	IFD_tag=nken
+15	rekstur	rekstur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	7	conj	_	IFD_tag=nken
 16	Síldarvinnslunnar	síldarvinnsla	PROPN	NPR-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	15	nmod:poss	_	IFD_tag=nveegs
 17	í	í	ADP	P	_	18	case	_	IFD_tag=aþ
 18	Neskaupstað	neskaupstaður	PROPN	NPR-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	16	obl	_	IFD_tag=nkeþ-s
@@ -413,50 +455,9 @@
 12	burði	burður	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	9	obj	_	IFD_tag=nkfo
 13	til	til	ADP	P	_	15	case	_	IFD_tag=ae
 14	að	að	PART	TO	_	15	mark	_	IFD_tag=cn
-15	leggja	leggja	VERB	VB	VerbForm=Inf|Voice=Act	12	obl	_	IFD_tag=sng
+15	leggja	leggja	VERB	VB	VerbForm=Inf|Voice=Act	12	obl:arg	_	IFD_tag=sng
 16	líka	líka	ADV	ALSO	_	15	advmod	_	IFD_tag=aa
 17	af	af	ADP	P	_	18	case	_	IFD_tag=aþ
-18	mörkum	mark	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	15	obj	_	IFD_tag=nhfþ|SpaceAfter=No
+18	mörkum	mark	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	15	obl:arg	_	IFD_tag=nhfþ|SpaceAfter=No
 19	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4500290,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Það þarf alltaf að vega það og meta vel og vandlega hvort ríkið geri rétt í því að afsala sér eða selja þær eignir, losa þær eða láta þær skila af sér arði.
-1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nmod	_	IFD_tag=nken
-2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	vocative	_	IFD_tag=nken|SpaceAfter=No
-3	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
-4	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	5	expl	_	IFD_tag=fphen
-5	þarf	þurfa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
-6	alltaf	alltaf	ADV	ADV	_	5	advmod	_	IFD_tag=aa
-7	að	að	PART	TO	_	8	mark	_	IFD_tag=cn
-8	vega	vega	VERB	VB	VerbForm=Inf|Voice=Act	5	xcomp	_	IFD_tag=sng
-9	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	8	obj	_	IFD_tag=fpheo
-10	og	og	CCONJ	CONJ	_	11	cc	_	IFD_tag=c
-11	meta	meta	VERB	VB	VerbForm=Inf|Voice=Act	8	conj	_	IFD_tag=sng
-12	vel	vel	ADV	ADV	_	8	advmod	_	IFD_tag=aa
-13	og	og	CCONJ	CONJ	_	14	cc	_	IFD_tag=c
-14	vandlega	vandlega	ADV	ADV	_	12	advmod	_	IFD_tag=aa
-15	hvort	hvort	SCONJ	WQ	_	17	mark	_	IFD_tag=c
-16	ríkið	ríki	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	17	nsubj	_	IFD_tag=nheng
-17	geri	gera	VERB	DOPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	ccomp	_	IFD_tag=svg3en
-18	rétt	réttur	ADJ	ADJ-A	_	17	obj	_	IFD_tag=aa
-19	í	í	ADP	P	_	20	case	_	IFD_tag=aþ
-20	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	17	obl	_	IFD_tag=fpheþ
-21	að	að	PART	TO	_	22	mark	_	IFD_tag=cn
-22	afsala	afsala	VERB	VB	VerbForm=Inf|Voice=Act	20	acl	_	IFD_tag=sng
-23	sér	sig	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Plur|PronType=Prs	22	obj	_	IFD_tag=fpvfþ
-24	eða	eða	CCONJ	CONJ	_	25	cc	_	IFD_tag=c
-25	selja	selja	VERB	VB	VerbForm=Inf|Voice=Act	22	acl	_	IFD_tag=sng
-26	þær	sá	DET	D-A	Case=Acc|Gender=Fem|Number=Plur|PronType=Prs	27	det	_	IFD_tag=fpvfo
-27	eignir	eign	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	25	obj	_	IFD_tag=nvfo|SpaceAfter=No
-28	,	,	PUNCT	,	_	29	punct	_	IFD_tag=,
-29	losa	losa	VERB	VB	VerbForm=Inf|Voice=Act	22	acl	_	IFD_tag=sng
-30	þær	hún	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Plur|PronType=Prs	29	obj	_	IFD_tag=fpvfo
-31	eða	eða	CCONJ	CONJ	_	32	cc	_	IFD_tag=c
-32	láta	láta	VERB	VB	VerbForm=Inf|Voice=Act	29	conj	_	IFD_tag=sng
-33	þær	hún	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Plur|PronType=Prs	34	nsubj	_	IFD_tag=fpvfo
-34	skila	skila	VERB	VB	VerbForm=Inf|Voice=Act	32	xcomp	_	IFD_tag=sng
-35	af	af	ADP	P	_	36	case	_	IFD_tag=aþ
-36	sér	sig	PRON	PRO-D	Case=Dat|Gender=Fem|Number=Plur|PronType=Prs	34	obl	_	IFD_tag=fpvfþ
-37	arði	arður	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	34	obj	_	IFD_tag=nkeþ|SpaceAfter=No
-38	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.

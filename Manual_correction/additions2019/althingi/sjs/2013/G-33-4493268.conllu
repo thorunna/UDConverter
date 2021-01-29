@@ -11,7 +11,7 @@
 8	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	6	iobj	_	IFD_tag=nkeþ
 9	fyrir	fyrir	ADP	P	_	11	case	_	IFD_tag=ao
 10	ágæta	ágætur	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	11	amod	_	IFD_tag=lveosf
-11	ræðu	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	6	obl	_	IFD_tag=nveo
+11	ræðu	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	6	obl:arg	_	IFD_tag=nveo
 12	og	og	CCONJ	CONJ	_	16	cc	_	IFD_tag=c
 13	sérstaklega	sérstaklega	ADV	ADV	_	16	advmod	_	IFD_tag=aa
 14	fyrir	fyrir	ADP	P	_	16	case	_	IFD_tag=ao
@@ -20,7 +20,7 @@
 17	aðeins	aðeins	ADV	ADV	_	16	advmod	_	IFD_tag=aa
 18	við	við	ADP	P	_	20	case	_	IFD_tag=ao
 19	stóru	stór	ADJ	ADJ-A	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	20	amod	_	IFD_tag=lkfovf
-20	drættina	dráttur	NOUN	NS-A	Case=Acc|Definite=Def|Gender=Masc|Number=Plur	16	obl	_	IFD_tag=nkfog
+20	drættina	dráttur	NOUN	NS-A	Case=Acc|Definite=Def|Gender=Masc|Number=Plur	16	obl:arg	_	IFD_tag=nkfog
 21	í	í	ADP	P	_	23	case	_	IFD_tag=aþ
 22	þessari	þessi	DET	D-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Dem	23	det	_	IFD_tag=faveþ
 23	mynd	mynd	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	20	obl	_	IFD_tag=nveþ
@@ -28,14 +28,14 @@
 25	rifja	rifja	VERB	VB	VerbForm=Inf|Voice=Act	16	conj	_	IFD_tag=sng
 26	upp	upp	ADP	RP	_	25	compound:prt	_	IFD_tag=aa
 27	aðstæðurnar	aðstæður	NOUN	NS-A	Case=Acc|Definite=Def|Gender=Fem|Number=Plur	25	obj	_	IFD_tag=nvfog
-28	eins	_	ADV	ADVR	_	27	advmod	_	IFD_tag=x
-29	og	og	ADP	P	_	30	case	_	IFD_tag=c
-30	þær	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Plur|PronType=Prs	28	obl	_	IFD_tag=fpvfn
+28	eins	_	ADV	ADVR	_	30	mark	_	IFD_tag=x
+29	og	og	ADP	P	_	28	fixed	_	IFD_tag=c
+30	þær	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Plur|PronType=Prs	27	advcl	_	IFD_tag=fpvfn
 31	voru	vera	AUX	BEDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	30	cop	_	IFD_tag=sfg3fþ
 32	hér	hér	ADV	ADV	_	30	advmod	_	IFD_tag=aa
 33	2008	2008	NUM	NUM-A	NumType=Card	30	obl	_	IFD_tag=ta
 34	2009	2009	NUM	NUM-A	NumType=Card	33	nummod	_	IFD_tag=ta|SpaceAfter=No
-35	,	,	PUNCT	,	_	34	punct	_	IFD_tag=,
+35	,	,	PUNCT	,	_	37	punct	_	IFD_tag=,
 36	og	og	CCONJ	CONJ	_	37	cc	_	IFD_tag=c
 37	spurningu	spurning	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	6	conj	_	IFD_tag=nveþ
 38	um	um	ADP	P	_	39	case	_	IFD_tag=ao
@@ -50,7 +50,7 @@
 3	hjartanlega	hjartanlega	ADV	ADV	_	4	amod	_	IFD_tag=aa
 4	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	0	root	_	IFD_tag=lvenof
 5	hv.	háttvirtur	ADJ	ADJ-D	_	6	amod	_	IFD_tag=as
-6	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	4	obl	_	IFD_tag=nkeþ
+6	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	4	obl:arg	_	IFD_tag=nkeþ
 7	að	að	SCONJ	C	_	21	mark	_	IFD_tag=aþ
 8	jafn	jafn	ADV	ADV	_	9	amod	_	IFD_tag=aa
 9	göfugt	göfugur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	15	amod	_	IFD_tag=lhensf
@@ -64,7 +64,7 @@
 17	fyrst	snemma	ADV	ADVS	Degree=Sup	15	advmod	_	IFD_tag=aae
 18	að	að	ADP	P	_	20	case	_	IFD_tag=aþ
 19	hallalausum	hallalaus	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	20	amod	_	IFD_tag=lhfþsf
-20	fjárlögum	fjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	15	obl	_	IFD_tag=nhfþ
+20	fjárlögum	fjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	15	obl:arg	_	IFD_tag=nhfþ
 21	skiptir	skipta	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	IFD_tag=sfg3en
 22	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	21	obj	_	IFD_tag=nheþ
 23	hvernig	hvernig	ADV	WADV	_	26	advmod	_	IFD_tag=aa
@@ -77,7 +77,7 @@
 30	sá	sá	DET	D-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	31	det	_	IFD_tag=faken
 31	grunnur	grunnur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	26	conj	_	IFD_tag=nken
 32	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	31	cop	_	IFD_tag=sfg3en|SpaceAfter=No
-33	.	.	PUNCT	.	_	31	punct	_	IFD_tag=.
+33	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4493268,.3
 # X_IDs = ID_missing_3 ; ID_missing_4
@@ -87,17 +87,17 @@
 3	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	IFD_tag=fp1fn
 4	þekkjum	þekkja	VERB	VBPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	18	advcl	_	IFD_tag=sfg1fn
 5	bæði	báðir	DET	Q-N	Case=Nom|Gender=Neut|Number=Plur|PronType=Ind	4	amod	_	IFD_tag=fohfn|SpaceAfter=No
-6	,	,	PUNCT	,	_	4	punct	_	IFD_tag=,
+6	,	,	PUNCT	,	_	7	punct	_	IFD_tag=,
 7	geri	gera	VERB	DOPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	IFD_tag=sfg1en
 8	ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	IFD_tag=fp1en
 9	ráð	ráð	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	7	obj	_	IFD_tag=nhfo
 10	fyrir	fyrir	ADP	P	_	9	fixed	_	IFD_tag=aþ|SpaceAfter=No
-11	,	,	PUNCT	,	_	7	punct	_	IFD_tag=,
-12	ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	obl	_	IFD_tag=fp1en
+11	,	,	PUNCT	,	_	12	punct	_	IFD_tag=,
+12	ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	conj	_	IFD_tag=fp1en
 13	og	og	CCONJ	CONJ	_	15	cc	_	IFD_tag=c
 14	hv.	háttvirtur	ADJ	ADJ-N	_	15	amod	_	IFD_tag=as
 15	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	12	conj	_	IFD_tag=nken|SpaceAfter=No
-16	,	,	PUNCT	,	_	15	punct	_	IFD_tag=,
+16	,	,	PUNCT	,	_	18	punct	_	IFD_tag=,
 17	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	18	cop	_	IFD_tag=sfg1eþ
 18	valin	velja	VERB	VAN	Case=Nom|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	IFD_tag=sþgven
 19	svonefnd	svonefndur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	21	amod	_	IFD_tag=lvensf
@@ -117,7 +117,7 @@
 33	umtalsverð	umtalsverður	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	34	amod	_	IFD_tag=lvensf
 34	stefnubreyting	stefnubreyting	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	31	nsubj	_	IFD_tag=nven
 35	á	á	ADP	P	_	34	fixed	_	IFD_tag=aa|SpaceAfter=No
-36	.	.	PUNCT	.	_	34	punct	_	IFD_tag=.
+36	.	.	PUNCT	.	_	18	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4493268,.4
 # X_IDs = ID_missing_5 ; ID_missing_6 ; ID_missing_7
@@ -190,7 +190,7 @@
 66	boðaður	boða	VERB	VAN	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	58	conj	_	IFD_tag=sþgken
 67	umtalsverður	umtalsverður	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	68	amod	_	IFD_tag=lkensf
 68	niðurskurður	niðurskurður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	66	nsubj	_	IFD_tag=nken|SpaceAfter=No
-69	.	.	PUNCT	.	_	66	punct	_	IFD_tag=.
+69	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4493268,.5
 # X_ID = ID_missing_8
@@ -214,7 +214,7 @@
 17	fróðlegt	fróðlegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	19	amod	_	IFD_tag=lhensf
 18	að	að	PART	TO	_	19	mark	_	IFD_tag=cn
 19	ræða	ræða	VERB	VB	VerbForm=Inf|Voice=Act	5	acl:relcl	_	IFD_tag=sng|SpaceAfter=No
-20	.	.	PUNCT	.	_	19	punct	_	IFD_tag=.
+20	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4493268,.6
 # X_ID = ID_missing_9
@@ -239,7 +239,7 @@
 18	kæla	kæla	VERB	VB	VerbForm=Inf|Voice=Act	13	xcomp	_	IFD_tag=sng
 19	niður	niður	ADP	RP	_	18	compound:prt	_	IFD_tag=aa
 20	hagkerfið	hagkerfi	NOUN	N-A	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	18	obj	_	IFD_tag=nheog|SpaceAfter=No
-21	,	,	PUNCT	,	_	18	punct	_	IFD_tag=,
+21	,	,	PUNCT	,	_	22	punct	_	IFD_tag=,
 22	samanber	samanbera	VERB	VBI	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	13	advcl	_	IFD_tag=sbg2en
 23	þá	sá	DET	D-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	24	det	_	IFD_tag=faveo
 24	umræðu	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	22	obl:arg	_	IFD_tag=nveo
@@ -270,7 +270,7 @@
 49	við	við	ADP	P	_	51	case	_	IFD_tag=ao
 50	svona	svona	ADV	ADV	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur	51	advmod	_	IFD_tag=lvfoof
 51	aðstæður	aðstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	43	obl	_	IFD_tag=nvfo|SpaceAfter=No
-52	.	.	PUNCT	.	_	43	punct	_	IFD_tag=.
+52	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4493268,.7
 # X_ID = ID_missing_10
@@ -290,14 +290,14 @@
 13	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	14	nsubj	_	IFD_tag=fp1fn
 14	þurfum	þurfa	VERB	VBPS	Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	10	ccomp	_	IFD_tag=svg1fn
 15	að	að	PART	TO	_	16	mark	_	IFD_tag=cn
-16	fara	fara	VERB	VB	VerbForm=Inf|Voice=Act	14	advcl	_	IFD_tag=sng
+16	fara	fara	VERB	VB	VerbForm=Inf|Voice=Act	14	xcomp	_	IFD_tag=sng
 17	að	að	PART	TO	_	18	mark	_	IFD_tag=cn
 18	greina	greina	VERB	VB	VerbForm=Inf|Voice=Act	16	xcomp	_	IFD_tag=sng
 19	þetta	þessi	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	18	obj	_	IFD_tag=faheo
 20	vel	vel	ADV	ADV	_	18	advmod	_	IFD_tag=aa
 21	og	og	CCONJ	CONJ	_	20	cc	_	IFD_tag=c
 22	vandlega	vandlega	ADV	ADV	_	20	advmod	_	IFD_tag=aa|SpaceAfter=No
-23	.	.	PUNCT	.	_	14	punct	_	IFD_tag=.
+23	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4493268,.8
 # X_ID = ID_missing_11
@@ -305,7 +305,7 @@
 1	Í	í	ADP	P	_	3	case	_	IFD_tag=aþ
 2	öðru	öðr	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	3	amod	_	IFD_tag=lheþsf
 3	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	27	obl	_	IFD_tag=nheþ|SpaceAfter=No
-4	,	,	PUNCT	,	_	3	punct	_	IFD_tag=,
+4	,	,	PUNCT	,	_	10	punct	_	IFD_tag=,
 5	af	af	ADP	P	_	6	fixed	_	IFD_tag=aþ
 6	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	7	fixed	_	IFD_tag=fpheþ
 7	að	að	SCONJ	C	_	10	mark	_	IFD_tag=c
@@ -324,7 +324,7 @@
 20	ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	22	nsubj	_	IFD_tag=fp1en
 21	best	vel	ADV	ADVS	Degree=Sup	22	advmod	_	IFD_tag=aae
 22	veit	vita	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	19	acl:relcl	_	IFD_tag=sfg1en|SpaceAfter=No
-23	,	,	PUNCT	,	_	22	punct	_	IFD_tag=,
+23	,	,	PUNCT	,	_	27	punct	_	IFD_tag=,
 24	vildi	vilja	AUX	MDDI	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	27	aux	_	IFD_tag=sfg1eþ
 25	ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	27	nsubj	_	IFD_tag=fp1en
 26	gjarnan	gjarnan	ADV	ADV	_	27	advmod	_	IFD_tag=aa
@@ -336,7 +336,7 @@
 32	það	sá	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	33	det	_	IFD_tag=faheo
 33	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	31	obj	_	IFD_tag=nheo
 34	til	til	ADP	P	_	35	case	_	IFD_tag=ae
-35	umfjöllunar	umfjöllun	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	31	obl	_	IFD_tag=nvee
+35	umfjöllunar	umfjöllun	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	31	obl:arg	_	IFD_tag=nvee
 36	og	og	CCONJ	CONJ	_	39	cc	_	IFD_tag=c
 37	hvernig	hvernig	ADV	WADV	_	39	advmod	_	IFD_tag=aa
 38	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	39	nsubj	_	IFD_tag=nkfn
@@ -344,7 +344,7 @@
 40	aðstæður	aðstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	39	obj	_	IFD_tag=nvfo
 41	atvinnulausra	atvinnulaus	ADJ	ADJ-G	Case=Gen|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	40	nmod:poss	_	IFD_tag=lkfesf
 42	núna	núna	ADV	ADV	_	39	advmod	_	IFD_tag=aa|SpaceAfter=No
-43	.	.	PUNCT	.	_	39	punct	_	IFD_tag=.
+43	.	.	PUNCT	.	_	27	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4493268,.9
 # X_IDs = ID_missing_12 ; ID_missing_13
@@ -379,5 +379,5 @@
 28	í	í	ADP	P	_	30	case	_	IFD_tag=aþ
 29	þeim	sá	DET	D-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Dem	30	det	_	IFD_tag=fakeþ
 30	hópi	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	21	ccomp	_	IFD_tag=nkeþ|SpaceAfter=No
-31	.	.	PUNCT	.	_	30	punct	_	IFD_tag=.
+31	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
