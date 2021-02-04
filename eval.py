@@ -47,6 +47,7 @@ def get_results(diff_file):
 
 orig_filenames = collect_filenames(origdir)
 corr_filenames = collect_filenames(corrdir)
+full_filenames = collect_filenames('CoNLLU/additions2019')
 
 import pyconll
 import collections
@@ -76,7 +77,7 @@ for file in orig_filenames:
                 nl.append((token.id, token.form, token.head, token.deprel))
             sents_orig[sentence.id] = nl
 
-sents_orig_full = {}
+sents_orig_althingi = {}
 
 for file in orig_filenames:
     corpus = pyconll.load_from_file(file)
@@ -84,17 +85,40 @@ for file in orig_filenames:
         nl = []
         for token in sentence:
             nl.append((token.id, token.form, token.head, token.deprel))
+        sents_orig_althingi[sentence.id] = nl
+
+sents_orig_full = {}
+
+for file in full_filenames:
+    try:
+        corpus = pyconll.load_from_file(file)
+    except:
+        pass
+    for sentence in corpus:
+        nl = []
+        for token in sentence:
+            nl.append((token.id, token.form, token.head, token.deprel))
         sents_orig_full[sentence.id] = nl
 
 print('\n')
-print('Total no. of sentences: ', len(sents_orig_full))
+print('Total no. of sentences in additions2019: ', len(sents_orig_full))
 
 no_toks = 0
 
 for sent, toks in sents_orig_full.items():
     no_toks += len(toks)
 
-print('Total no. of tokens: ', no_toks)
+print('Total no. of tokens in additions2019: ', no_toks)
+
+print('\n')
+print('Total no. of sentences in althingi: ', len(sents_orig_althingi))
+
+no_toks = 0
+
+for sent, toks in sents_orig_althingi.items():
+    no_toks += len(toks)
+
+print('Total no. of tokens in althingi: ', no_toks)
 
 #print(sents_orig)
 
@@ -159,11 +183,11 @@ print('Percentage of both head and deprel wrong: ', (head_deprel/no_toks_corr)*1
 print('\n')
 
 print('Wrong deprel label used:')
-for k, v in deprel_info.items():
+for k, v in sorted(deprel_info.items(), key=lambda item: item[1], reverse=True):
     print(k, v)
 
 print('\n')
 
 print('Deprels connected to wrong heads:')
-for k, v in head_info.items():
+for k, v in sorted(head_info.items(), key=lambda item: item[1], reverse=True):
     print(k, v)
