@@ -182,13 +182,17 @@ for sent, zipped in comp.items():
             deprel += 1
             deprel_info[orig_deprel] += 1
 
+head_info_perc = {}
+
 for k, v in head_info.items():
     v_upd = (v / corr_deprels[k])*100
-    head_info[k] = v_upd
+    head_info_perc[k] = v_upd
+
+deprel_info_perc = {}
 
 for k, v in deprel_info.items():
     v_upd = (v / corr_deprels[k])*100
-    deprel_info[k] = v_upd
+    deprel_info_perc[k] = v_upd
 
 print('No. of manually-corrected sentences: ', len(sents))
 
@@ -217,11 +221,24 @@ for k, v in sorted(deprel_info.items(), key=lambda item: item[1], reverse=True):
 
 print('\n')
 
+print('Wrong deprel label used(%):')
+for k, v in sorted(deprel_info_perc.items(), key=lambda item: item[1], reverse=True):
+    print(k, v)
+
+print('\n')
+
 print('Deprels connected to wrong heads:')
 for k, v in sorted(head_info.items(), key=lambda item: item[1], reverse=True):
     print(k, v)
 
 print('\n')
+
+print('Deprels connected to wrong heads(%):')
+for k, v in sorted(head_info_perc.items(), key=lambda item: item[1], reverse=True):
+    print(k, v)
+
+print('\n')
+
 print('Frequency of all dependency relations:')
 for k, v in sorted(corr_deprels.items(), key=lambda item: item[1], reverse=True):
     print(k, v)
