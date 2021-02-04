@@ -138,6 +138,26 @@ head_info = collections.defaultdict(int)
 deprel = 0
 deprel_info = collections.defaultdict(int)
 
+obl = 0
+acl = 0
+case = 0
+amod = 0
+advmod = 0
+dep = 0
+ccomp = 0
+advcl = 0
+compound = 0
+conj = 0
+punct = 0
+cop = 0
+cc = 0
+nsubj = 0
+mark = 0
+aux = 0
+obj = 0
+
+corr_deprels = collections.defaultdict(int)
+
 for sent, zipped in comp.items():
     for el in zipped:
         corr = el[0]
@@ -146,6 +166,7 @@ for sent, zipped in comp.items():
         corr_deprel = corr[3]
         orig_head = orig[2]
         orig_deprel = orig[3]
+        corr_deprels[orig_deprel] += 1
         if corr_head != orig_head and corr_deprel != orig_deprel:
             #print('Hvorki haus né deprel eru eins')
             #if corr_deprel != 'punct':
@@ -160,6 +181,14 @@ for sent, zipped in comp.items():
             #if corr_deprel != 'obl:arg':
             deprel += 1
             deprel_info[orig_deprel] += 1
+
+for k, v in head_info.items():
+    v_upd = (v / corr_deprels[k])*100
+    head_info[k] = v_upd
+
+for k, v in deprel_info.items():
+    v_upd = (v / corr_deprels[k])*100
+    deprel_info[k] = v_upd
 
 print('No. of manually-corrected sentences: ', len(sents))
 
@@ -190,4 +219,9 @@ print('\n')
 
 print('Deprels connected to wrong heads:')
 for k, v in sorted(head_info.items(), key=lambda item: item[1], reverse=True):
+    print(k, v)
+
+print('\n')
+print('Frequency of all dependency relations:')
+for k, v in sorted(corr_deprels.items(), key=lambda item: item[1], reverse=True):
     print(k, v)
