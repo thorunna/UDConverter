@@ -127,7 +127,7 @@ comp = {}
 for sent, toks in sents.items():
     for orig_sent, orig_toks in sents_orig.items():
         if sent == orig_sent:
-            comp[sent] = zip(toks, orig_toks)
+            comp[sent] = list(zip(toks, orig_toks))
 
 #for x, y in comp.items():
 #    print(x, list(y))
@@ -137,6 +137,9 @@ head = 0
 head_info = collections.defaultdict(int)
 deprel = 0
 deprel_info = collections.defaultdict(int)
+total_count = 0
+las_count = 0
+uas_count = 0
 
 obl = 0
 acl = 0
@@ -157,8 +160,11 @@ aux = 0
 obj = 0
 
 corr_deprels = collections.defaultdict(int)
+err_per_sent = collections.defaultdict(tuple)
 
 for sent, zipped in comp.items():
+    sent_len = len(zipped)
+    sent_errors = 0
     for el in zipped:
         corr = el[0]
         orig = el[1]
@@ -171,16 +177,32 @@ for sent, zipped in comp.items():
             #print('Hvorki haus né deprel eru eins')
             #if corr_deprel != 'punct':
             head_deprel += 1
+            total_count += 1
+            las_count += 1
+            uas_count += 1
+            sent_errors += 1
         if corr_head != orig_head and corr_deprel == orig_deprel:
             #print('Haus er ekki sá sami')
             #if corr_deprel != 'punct':
             head += 1
             head_info[orig_deprel] += 1
+            total_count += 1
+            las_count += 1
+            uas_count += 1
+            sent_errors += 1
         if corr_deprel != orig_deprel and corr_head == orig_head:
             #print('Deprel er ekki það sama')
             #if corr_deprel != 'obl:arg':
             deprel += 1
             deprel_info[orig_deprel] += 1
+            total_count += 1
+            las_count += 1
+            sent_errors += 1
+
+    err_per_sent[sent] = (sent_len, sent_errors)
+
+for k, v in err_per_sent.items():
+    print(k, v)
 
 head_info_perc = {}
 
@@ -202,12 +224,16 @@ for sent, toks in sents.items():
     no_toks_corr += len(toks)
 
 print('Total no. of manually-corrected tokens: ', no_toks_corr)
+print('Total no. of corrections: ', total_count)
 
 print('\n')
 print('Both head and deprel wrong: ', head_deprel)
 print('Head wrong: ', head)
 print('Deprel wrong: ', deprel)
 print('\n')
+
+print('LAS: ', 100-((las_count/no_toks_corr)*100), '%')
+print('UAS: ', 100-((uas_count/no_toks_corr)*100), '%')
 
 print('Percentage of heads wrong: ', (head/no_toks_corr)*100, '%')
 print('Percentage of deprels wrong: ', (deprel/no_toks_corr)*100, '%')
