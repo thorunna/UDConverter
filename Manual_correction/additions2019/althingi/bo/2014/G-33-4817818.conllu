@@ -96,8 +96,8 @@
 35	.	.	PUNCT	.	_	26	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4817818,.6
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Það liggur fyrir, eins og kom fram í ræðu hv. þm. Árna Páls Árnasonar hér áðan, að til þess að fara í önnur úrræði, sem kosta, þurfi viðkomandi að afla sér tekna upp á 700 þús. kr. yfir árið, til að geta borgað skólagjöldin, sem eru um 400 þús. kr. Þetta er því til þess fallið að festa fólk áfram í fátæktargildru.
+# X_IDs = ID_missing_7
+# text = Það liggur fyrir, eins og kom fram í ræðu hv. þm. Árna Páls Árnasonar hér áðan, að til þess að fara í önnur úrræði, sem kosta, þurfi viðkomandi að afla sér tekna upp á 700 þús. kr. yfir árið, til að geta borgað skólagjöldin, sem eru um 400 þús. kr.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	2	expl	_	IFD_tag=fphen
 2	liggur	liggja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
 3	fyrir	fyrir	ADP	RP	_	2	compound:prt	_	IFD_tag=aa|SpaceAfter=No
@@ -155,6 +155,9 @@
 55	þús.	þúsund	NUM	NUM-N	_	56	nummod	_	IFD_tag=as
 56	kr.	króna	NOUN	NS-N	_	49	acl:relcl	_	IFD_tag=as
 
+# sent_id = ALTHINGI_BO_2014_G-33-4817818,.extra
+# X_IDs = ID_missing_8
+# text = Þetta er því til þess fallið að festa fólk áfram í fátæktargildru.
 1	Þetta	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	6	nsubj	_	IFD_tag=fahen
 2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	IFD_tag=sfg3en
 3	því	það	PRON	PRO-D	_	6	advmod	_	OriginalHead=0
