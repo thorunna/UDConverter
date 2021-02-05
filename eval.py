@@ -54,28 +54,35 @@ import collections
 
 sents = {}
 
+sent_count_corr = 0
 for file in corr_filenames:
     corpus = pyconll.load_from_file(file)
     for sentence in corpus:
+        sent_count_corr += 1
         nl = []
         for token in sentence:
             nl.append((token.id, token.form, token.head, token.deprel))
         sents[sentence.id] = nl
         
+print('Sent count corr: ', sent_count_corr)
 
 #print(sents)
 
 sents_orig = {}
 
+sent_count_orig = 0
 for file in orig_filenames:
     name = file.split('althingi/')[1]
     if name in file_names:
         corpus = pyconll.load_from_file(file)
         for sentence in corpus:
+            sent_count_orig += 1
             nl = []
             for token in sentence:
                 nl.append((token.id, token.form, token.head, token.deprel))
             sents_orig[sentence.id] = nl
+
+print('Sent count orig: ', sent_count_orig)
 
 sents_orig_althingi = {}
 
@@ -181,6 +188,10 @@ for sent, zipped in comp.items():
             las_count += 1
             uas_count += 1
             sent_errors += 1
+            deprel += 1
+            head += 1
+            #deprel_info[orig_deprel] += 1
+            #head_info[orig_deprel] += 1
         if corr_head != orig_head and corr_deprel == orig_deprel:
             #print('Haus er ekki sá sami')
             #if corr_deprel != 'punct':
@@ -201,8 +212,8 @@ for sent, zipped in comp.items():
 
     err_per_sent[sent] = (sent_len, sent_errors)
 
-for k, v in err_per_sent.items():
-    print(k, v)
+#for k, v in err_per_sent.items():
+#    print(k, v)
 
 head_info_perc = {}
 
@@ -236,7 +247,9 @@ print('LAS: ', 100-((las_count/no_toks_corr)*100), '%')
 print('UAS: ', 100-((uas_count/no_toks_corr)*100), '%')
 
 print('Percentage of heads wrong: ', (head/no_toks_corr)*100, '%')
+print('Percentage of heads correct: ', 100-((head/no_toks_corr)*100), '%')
 print('Percentage of deprels wrong: ', (deprel/no_toks_corr)*100, '%')
+print('Percentage of deprels correct: ', 100-((deprel/no_toks_corr)*100), '%')
 print('Percentage of both head and deprel wrong: ', (head_deprel/no_toks_corr)*100, '%')
 
 print('\n')
