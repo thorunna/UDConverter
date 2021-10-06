@@ -4,6 +4,10 @@ A Python module for converting bracket parsed [PPCHE-format](https://www.ling.up
 
 At the moment the module is specifically configured to convert treebanks in the [IcePaHC](https://linguist.is/icelandic_treebank/Icelandic_Parsed_Historical_Corpus_(IcePaHC)) format, which is based on PPCME.
 
+## Setup
+
+> `pip install -r requirements.txt`
+
 ## Usage
 
 Scripts to run are in the `scripts` folder.
