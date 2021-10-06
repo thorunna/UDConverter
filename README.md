@@ -6,7 +6,7 @@ At the moment the module is specifically configured to convert treebanks in the 
 
 ## Setup
 
-> `pip install -r requirements.txt`
+`pip install -r requirements.txt`
 
 ## Usage
 
