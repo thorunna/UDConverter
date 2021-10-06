@@ -2,7 +2,7 @@
 
 A Python module for converting bracket parsed [PPCHE-format](https://www.ling.upenn.edu/hist-corpora/) treebanks to the [Universal Dependencies](https://universaldependencies.org/) framework. It is heavily based on existing [NLTK](https://www.nltk.org/) packages.
 
-At the moment the module is specifically configured to convert treebanks in the [IcePaHC](https://linguist.is/icelandic_treebank/Icelandic_Parsed_Historical_Corpus_(IcePaHC) format, which is based on PPCME.
+At the moment the module is specifically configured to convert treebanks in the [IcePaHC](https://linguist.is/icelandic_treebank/Icelandic_Parsed_Historical_Corpus_(IcePaHC)) format, which is based on PPCME.
 
 ## Usage
 
