@@ -16,7 +16,7 @@ Scripts to run are in the `scripts` folder.
 
 _In all examples below, the_ `--output` _flag is used to write to files in the_ `/CoNNLU/` _output folder. Otherwise prints to standard output._
 
-> *Convert single file or directory of files:*
+*Convert single file or directory of files:*
 
 > `convert.py -N -i path/to/corpus/file.psd --output --post_process`
 
@@ -24,11 +24,11 @@ _In all examples below, the_ `--output` _flag is used to write to files in the_ 
 
 _For further usage, input files must be placed in a folder within the_ `corpora` _folde:r_
 
-> *Convert single tree in treebank using sentence ID (only prints to standard output):*
+*Convert single tree in treebank using sentence ID (only prints to standard output):*
 
 > `convert.py -C FOLDER_NAME -id SENTENCE_ID`
 
-> *Convert single file in treebank*
+*Convert single file in treebank*
 
 > `convert.py -C FOLDER_NAME -f FILE_NAME --output --post_process`
 
