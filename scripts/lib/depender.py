@@ -139,6 +139,17 @@ class UniversalDependencyGraph(DependencyGraph):
         '''
         return self.rels()['root']
 
+    def root_address(self):
+        '''
+        Method for finding the sentence root's address.
+
+        Returns:
+            int: Address of the sentence root.
+        '''
+        for address, node in self.nodes.items():
+            if node['rel'] == 'root':
+                return address
+
     def num_verbs(self):
         '''09.03.20
         Checks by POS (IcePaHC PoS tag) how many verbs are in sent. graph.
@@ -751,8 +762,8 @@ class Converter():
                     if address+1 in self.dg.nodes \
                     and self.dg.get_by_address(address+1)['rel'] == 'conj':
                         self.dg.get_by_address(address).update({'head': address+1})
-                    elif address+1 not in self.dg.nodes and address-1 in self.dg.nodes and node['head'] != self.dg.get_by_address(address-1)['head']:
-                        self.dg.get_by_address(address).update({'head':address-1})
+                    elif address+1 not in self.dg.nodes:
+                        self.dg.get_by_address(address).update({'head': self.dg.root_address()})
                     elif address != 1:
                         if address-1 in self.dg.nodes and self.dg.get_by_address(address-1)['head'] == address:
                             print(self.dg.get_by_address(address-1)['head'])
@@ -1566,7 +1577,7 @@ class Converter():
             self._fix_appos_lr()
         if rel_counts['cc'] > 0:
             self._fix_cc_tag()
-            #self._fix_cc_rel()
+            self._fix_cc_rel()
             self._fix_zero_dep()
         if rel_counts['conj'] > 0:
             self._fix_conj_rel()

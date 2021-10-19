@@ -668,34 +668,34 @@ relation_NP = {
 relation_IP = {
       # None: '?',
       None: 'dep',
-      'INF': 'acl',
-      'INF-ABS': 'acl',
-      'INF-ABS-PRN': 'acl',
+      'INF': 'xcomp',
+      'INF-ABS': 'xcomp',
+      'INF-ABS-PRN': 'xcomp',
       'INF-PRP': 'advcl',   #merkingin 'til þess að'
       'INF-PRP-PRN': 'advcl',
       'INF-PRP-PRN-SPE': 'advcl',
       'INF-PRP-SPE': 'advcl',
       'INF-PRP-SPE-PRN': 'advcl',
-      'INF-SPE': 'acl',
+      'INF-SPE': 'xcomp',
       'INF-SPE-ADT': 'advcl',      # ADT = clause-level dative adjunct
-      'INF-SPE-DEG': 'acl',
-      'INF-SPE-LFD': 'acl',
-      'INF-SPE-PRN': 'acl',
-      'INF-SPE-PRN-ELAB': 'acl',    #sama merki og INF-SPE-PRN
+      'INF-SPE-DEG': 'xcomp',
+      'INF-SPE-LFD': 'xcomp',
+      'INF-SPE-PRN': 'xcomp',
+      'INF-SPE-PRN-ELAB': 'xcomp',    #sama merki og INF-SPE-PRN
       'INF-SPE-PRP': 'advcl',   #merkingin 'til þess að'
       'INF-SPE-PRP-PRN': 'advcl',
-      'INF-SPE-SBJ': 'acl',
-      'INF-PRN': 'acl',
-      'INF-PRN-ELAB': 'acl',
+      'INF-SPE-SBJ': 'xcomp',
+      'INF-PRN': 'xcomp',
+      'INF-PRN-ELAB': 'xcomp',
       'INF-PRN-PRP': 'advcl',     #notað í til þess að
-      'INF-PRN-SPE': 'acl',
-      'INF-RSP': 'acl',      # RSP = resumptive
+      'INF-PRN-SPE': 'xcomp',
+      'INF-RSP': 'xcomp',      # RSP = resumptive
       'INF-SBJ': 'xcomp',
       'INF-SBJ-SPE': 'xcomp',
-      'INF-DEG': 'acl',
-      'INF-DEG-PRN': 'acl',
-      'INF-DEG-SPE': 'acl',
-      'INF-LFD': 'acl',
+      'INF-DEG': 'xcomp',
+      'INF-DEG-PRN': 'xcomp',
+      'INF-DEG-SPE': 'xcomp',
+      'INF-LFD': 'xcomp',
       'INF-PRD': 'csubj',
       'INF-ADT': 'advcl',   #clause-level modifier af því clause-level dative adjunct
       'INF-ADT-SPE': 'advcl',
