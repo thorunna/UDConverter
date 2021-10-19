@@ -14,7 +14,7 @@ Install all requirements by running:
 
 Scripts to run are in the `scripts` folder.
 
-_In all examples below, the_ `--output` _flag is used to write to files in the_ `/CoNNLU/` _output folder. Otherwise prints to standard output._
+_In all examples below, the_ `--output` _flag is used to write to files in the_ `/CoNLLU/` _output folder. Otherwise prints to standard output._
 
 *Convert single file or directory of files:*
 
