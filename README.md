@@ -6,6 +6,8 @@ At the moment the module is specifically configured to convert treebanks in the 
 
 ## Setup
 
+Install all requirements by running: 
+
 `pip install -r requirements.txt`
 
 ## Usage
