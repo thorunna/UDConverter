@@ -1,0 +1,194 @@
+# sent_id = ALTHINGI_BO_2014_G-33-4919596,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Ég þakka andsvarið og spurninguna.
+1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	IFD_tag=lkenvf
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	vocative	_	IFD_tag=nken|SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
+4	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	IFD_tag=fp1en
+5	þakka	þakka	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1en
+6	andsvarið	andsvar	NOUN	N-A	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	5	obj	_	IFD_tag=nheog
+7	og	og	CCONJ	CONJ	_	8	cc	_	IFD_tag=c
+8	spurninguna	spurning	NOUN	N-A	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	6	conj	_	IFD_tag=nveog|SpaceAfter=No
+9	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
+
+# sent_id = ALTHINGI_BO_2014_G-33-4919596,.2
+# X_ID = ID_missing_2
+# text = Mér heyrist við hv. þm. Árni Páll Árnason vera sammála um að það að setja í hendur lækna hvaða aðgerðir eigi að gera og eigi ekki að gera sé í raun ákveðinn pólitískur flótti sem gengur ekki upp.
+1	Mér	ég	PRON	PRO-D	Case=Dat|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	IFD_tag=fp1eþ
+2	heyrist	heyra	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	IFD_tag=sfm3en
+3	við	ég	PRON	PRO-N	_	10	nsubj	_	IFD_tag=ao
+4	hv.	háttvirtur	ADJ	ADJ-N	_	5	amod	_	IFD_tag=as
+5	þm.	þingmaður	PROPN	NPR-N	_	3	appos	_	IFD_tag=x
+6	Árni	árni	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	flat:name	_	IFD_tag=nken-s
+7	Páll	páll	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	flat:name	_	IFD_tag=nken-s
+8	Árnason	árnason	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	flat:name	_	IFD_tag=nken-s
+9	vera	vera	AUX	BE	VerbForm=Inf|Voice=Act	10	cop	_	IFD_tag=sng
+10	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	2	ccomp	_	IFD_tag=lkenof
+11	um	um	ADP	P	_	34	case	_	IFD_tag=ao
+12	að	að	SCONJ	C	_	34	mark	_	IFD_tag=cn
+13	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	34	nsubj	_	IFD_tag=fphen
+14	að	að	PART	TO	_	15	mark	_	IFD_tag=cn
+15	setja	setja	VERB	VB	VerbForm=Inf|Voice=Act	13	xcomp	_	IFD_tag=sng
+16	í	í	ADP	P	_	17	case	_	IFD_tag=aþ
+17	hendur	hönd	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	15	obl	_	IFD_tag=nvfo
+18	lækna	læknir	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	17	nmod:poss	_	IFD_tag=nkfe
+19	hvaða	hvaða	DET	WD-A	Case=Nom|Gender=Fem|Number=Plur|PronType=Int	20	det	_	IFD_tag=fsvfn
+20	aðgerðir	aðgerð	NOUN	NS-A	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	21	obj	_	IFD_tag=nvfn
+21	eigi	eiga	VERB	VBPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	xcomp	_	IFD_tag=svg3en
+22	að	að	PART	TO	_	23	mark	_	IFD_tag=cn
+23	gera	gera	VERB	DO	VerbForm=Inf|Voice=Act	21	xcomp	_	IFD_tag=sng
+24	og	og	CCONJ	CONJ	_	25	cc	_	IFD_tag=c
+25	eigi	eiga	VERB	VBPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	conj	_	IFD_tag=svg3en
+26	ekki	ekki	ADV	NEG	_	25	advmod	_	IFD_tag=aa
+27	að	að	PART	TO	_	28	mark	_	IFD_tag=cn
+28	gera	gera	VERB	DO	VerbForm=Inf|Voice=Act	25	xcomp	_	IFD_tag=sng
+29	sé	vera	AUX	BEPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	34	cop	_	IFD_tag=svg3en
+30	í	í	ADP	P	_	31	case	_	IFD_tag=aþ
+31	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	34	obl	_	IFD_tag=nveþ
+32	ákveðinn	ákveðinn	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	34	amod	_	IFD_tag=lkensf
+33	pólitískur	pólitískur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	34	amod	_	IFD_tag=lkensf
+34	flótti	flótti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	10	ccomp	_	IFD_tag=nken
+35	sem	sem	SCONJ	C	_	36	mark	_	IFD_tag=ct
+36	gengur	ganga	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	34	acl:relcl	_	IFD_tag=sfg3en
+37	ekki	ekki	ADV	NEG	_	36	advmod	_	IFD_tag=aa
+38	upp	upp	ADP	RP	_	36	compound:prt	_	IFD_tag=aa|SpaceAfter=No
+39	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
+
+# sent_id = ALTHINGI_BO_2014_G-33-4919596,.3
+# X_ID = ID_missing_3
+# text = Það þýðir ekkert að skýla sér á bak við það fólk sem maður réttir krónur og aura til þess að sinna þjónustu.
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	2	expl	_	IFD_tag=fphen
+2	þýðir	þýða	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+3	ekkert	enginn	DET	Q-A	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	2	obl	_	IFD_tag=fohen
+4	að	að	PART	TO	_	5	mark	_	IFD_tag=cn
+5	skýla	skýla	VERB	VB	VerbForm=Inf|Voice=Act	2	xcomp	_	IFD_tag=sng
+6	sér	sig	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Prs	5	obj	_	IFD_tag=fpkeþ
+7	á	á	ADP	P	_	8	case	_	IFD_tag=ao
+8	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	5	obl	_	IFD_tag=nheo
+9	við	við	ADP	P	_	11	case	_	IFD_tag=ao
+10	það	sá	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	11	det	_	IFD_tag=faheo
+11	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	8	obl	_	IFD_tag=nheo
+12	sem	sem	SCONJ	C	_	14	mark	_	IFD_tag=ct
+13	maður	maður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	14	nsubj	_	IFD_tag=nken
+14	réttir	rétta	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	acl:relcl	_	IFD_tag=sfg3en
+15	krónur	króna	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	14	obj	_	IFD_tag=nvfo
+16	og	og	CCONJ	CONJ	_	17	cc	_	IFD_tag=c
+17	aura	eyrir	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Plur	15	conj	_	IFD_tag=nkfo
+18	til	til	ADP	P	_	21	mark	_	IFD_tag=ae
+19	þess	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Prs	18	fixed	_	IFD_tag=fphee
+20	að	að	PART	TP	_	18	fixed	_	IFD_tag=cn
+21	sinna	sinna	VERB	VB	VerbForm=Inf|Voice=Act	5	advcl	_	IFD_tag=sng
+22	þjónustu	þjónusta	NOUN	N-A	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	21	obj	_	IFD_tag=nveþ|SpaceAfter=No
+23	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
+
+# sent_id = ALTHINGI_BO_2014_G-33-4919596,.4
+# X_ID = ID_missing_4
+# text = Varðandi aukna kostnaðarþátttöku sjúklinga líst mér að sjálfsögðu illa á hana.
+1	Varðandi	varða	VERB	VAG	VerbForm=Part|Voice=Act	5	xcomp	_	IFD_tag=slg
+2	aukna	aukinn	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	IFD_tag=lveosf
+3	kostnaðarþátttöku	kostnaðarþátttaka	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	1	obj	_	IFD_tag=nveo
+4	sjúklinga	sjúklingur	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	3	nmod:poss	_	IFD_tag=nkfe
+5	líst	líta	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	IFD_tag=sfm3en
+6	mér	ég	PRON	PRO-D	Case=Dat|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	IFD_tag=fp1eþ
+7	að	að	ADV	P	_	8	case	_	IFD_tag=aþ
+8	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	5	obl	_	IFD_tag=lheþsf
+9	illa	illa	ADV	ADV	_	5	advmod	_	IFD_tag=aa
+10	á	á	ADP	P	_	11	case	_	IFD_tag=ao
+11	hana	hún	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Prs	5	obl	_	IFD_tag=fpveo|SpaceAfter=No
+12	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
+
+# sent_id = ALTHINGI_BO_2014_G-33-4919596,.5
+# X_ID = ID_missing_5
+# text = Það er einfalt svar við því.
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	4	expl	_	IFD_tag=fphen
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3en
+3	einfalt	einfaldur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	4	amod	_	IFD_tag=lhensf
+4	svar	svar	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	IFD_tag=nhen
+5	við	við	ADP	P	_	6	case	_	IFD_tag=aþ
+6	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	4	obl	_	IFD_tag=fpheþ|SpaceAfter=No
+7	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
+
+# sent_id = ALTHINGI_BO_2014_G-33-4919596,.6
+# X_IDs = ID_missing_6 ; ID_missing_7 ; ID_missing_8
+# text = Ríkisstjórnin sýnir voðalega lítið á spilin en auðvitað eru farnar að renna á mann tvær grímur um að þetta geti verið eitthvað sem eigi að verða og það er til þess fallið, við vitum það, að auka stéttaskiptingu.
+1	Ríkisstjórnin	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	nsubj	_	IFD_tag=nveng
+2	sýnir	sýna	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
+3	voðalega	voðalega	ADV	ADV	_	4	advmod	_	IFD_tag=aa
+4	lítið	lítið	ADV	ADV	_	2	advmod	_	IFD_tag=aa
+5	á	á	ADP	P	_	6	case	_	IFD_tag=ao
+6	spilin	spil	NOUN	NS-A	Case=Acc|Definite=Def|Gender=Neut|Number=Plur	2	obl	_	IFD_tag=nhfog
+7	en	en	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
+8	auðvitað	auðvitað	ADV	ADV	_	10	advmod	_	IFD_tag=aa
+9	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	IFD_tag=sfg3fn
+10	farnar	fara	VERB	VBN	Case=Nom|Gender=Fem|Number=Plur|VerbForm=Part|Voice=Act	2	conj	_	OriginalHead=0
+11	að	að	PART	TO	_	12	mark	_	IFD_tag=cn
+12	renna	renna	VERB	VB	VerbForm=Inf|Voice=Act	10	xcomp	_	IFD_tag=sng
+13	á	á	ADP	P	_	14	case	_	IFD_tag=ao
+14	mann	maður	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	12	obl	_	IFD_tag=nkeo
+15	tvær	tveir	NUM	NUM-N	Case=Acc|Gender=Fem|Number=Plur|NumType=Card	16	nummod	_	IFD_tag=tfvfo
+16	grímur	gríma	NOUN	NS-N	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	10	nsubj	_	IFD_tag=nvfo
+17	um	um	ADP	P	_	22	case	_	IFD_tag=ao
+18	að	að	SCONJ	C	_	22	mark	_	IFD_tag=cn
+19	þetta	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	22	nsubj	_	IFD_tag=fahen
+20	geti	geta	AUX	MDPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	aux	_	IFD_tag=svg3en
+21	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	22	cop	_	IFD_tag=ssg
+22	eitthvað	einhver	DET	Q-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	10	obl	_	IFD_tag=fohen
+23	sem	sem	SCONJ	C	_	24	mark	_	IFD_tag=ct
+24	eigi	eiga	VERB	VBPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	acl:relcl	_	IFD_tag=svg3en
+25	að	að	PART	TO	_	26	mark	_	IFD_tag=cn
+26	verða	verða	VERB	RD	VerbForm=Inf|Voice=Act	24	xcomp	_	IFD_tag=sng
+27	og	og	CCONJ	CONJ	_	28	cc	_	IFD_tag=c
+28	það	það	PRON	PRO-N	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	2	conj	_	OriginalHead=0
+29	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28	cop	_	IFD_tag=sfg3en
+30	til	til	ADP	P	_	31	case	_	IFD_tag=ae
+31	þess	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Prs	32	obl	_	IFD_tag=fphee
+32	fallið	falla	VERB	VBN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	28	acl	_	IFD_tag=lhensf|SpaceAfter=No
+33	,	,	PUNCT	,	_	35	punct	_	IFD_tag=,
+34	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	35	nsubj	_	IFD_tag=fp1fn
+35	vitum	vita	VERB	VBPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	32	parataxis	_	IFD_tag=sfg1fn
+36	það	það	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	35	obj	_	IFD_tag=fpheo|SpaceAfter=No
+37	,	,	PUNCT	,	_	39	punct	_	IFD_tag=,
+38	að	að	PART	TO	_	39	mark	_	IFD_tag=cn
+39	auka	auka	VERB	VB	VerbForm=Inf|Voice=Act	32	xcomp	_	IFD_tag=sng
+40	stéttaskiptingu	stéttaskipting	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	39	obj	_	IFD_tag=nveo|SpaceAfter=No
+41	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
+
+# sent_id = ALTHINGI_BO_2014_G-33-4919596,.7
+# X_ID = ID_missing_9
+# text = Þeir fátækari kaupa sér ekki þjónustu inni á spítölum.
+1	Þeir	sá	DET	D-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Dem	2	det	_	IFD_tag=fakfn
+2	fátækari	fátækur	ADJ	ADJR-N	Case=Nom|Definite=Def|Degree=Cmp|Gender=Masc|Number=Plur	3	nsubj	_	IFD_tag=lkfnvm
+3	kaupa	kaupa	VERB	VBPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fn
+4	sér	sig	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Prs	3	iobj	_	IFD_tag=fpkfþ
+5	ekki	ekki	ADV	NEG	_	3	advmod	_	IFD_tag=aa
+6	þjónustu	þjónusta	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	3	obj	_	IFD_tag=nveo
+7	inni	inni	ADV	ADV	_	9	advmod	_	IFD_tag=aa
+8	á	á	ADP	P	_	9	case	_	IFD_tag=aþ
+9	spítölum	spítali	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	3	obl	_	IFD_tag=nkfþ|SpaceAfter=No
+10	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
+
+# sent_id = ALTHINGI_BO_2014_G-33-4919596,.8
+# X_ID = ID_missing_10
+# text = Ef það er samfélagið sem ríkisstjórnin vill leggja til hér þá held ég að við ættum að fara að forða okkur.
+1	Ef	ef	ADP	P	_	4	mark	_	IFD_tag=c
+2	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	4	nsubj	_	IFD_tag=fphen
+3	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3en
+4	samfélagið	samfélag	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	12	advcl	_	IFD_tag=nheng
+5	sem	sem	SCONJ	C	_	8	mark	_	IFD_tag=ct
+6	ríkisstjórnin	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	8	nsubj	_	IFD_tag=nveng
+7	vill	vilja	AUX	MDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	IFD_tag=sfg3en
+8	leggja	leggja	VERB	VB	VerbForm=Inf|Voice=Act	4	acl:relcl	_	IFD_tag=sng
+9	til	til	ADP	RP	_	8	compound:prt	_	IFD_tag=aa
+10	hér	hér	ADV	ADV	_	8	advmod	_	IFD_tag=aa
+11	þá	þá	ADV	ADV	_	12	advmod	_	IFD_tag=aa
+12	held	halda	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1en
+13	ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	12	nsubj	_	IFD_tag=fp1en
+14	að	að	SCONJ	C	_	16	mark	_	IFD_tag=cn
+15	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	16	nsubj	_	IFD_tag=fp1fn
+16	ættum	eiga	VERB	VBDS	Mood=Sub|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	12	ccomp	_	IFD_tag=svg1fþ
+17	að	að	PART	TO	_	18	mark	_	IFD_tag=cn
+18	fara	fara	VERB	VB	VerbForm=Inf|Voice=Act	16	xcomp	_	IFD_tag=sng
+19	að	að	PART	TO	_	20	mark	_	IFD_tag=cn
+20	forða	forða	VERB	VB	VerbForm=Inf|Voice=Act	18	xcomp	_	IFD_tag=sng
+21	okkur	ég	PRON	PRO-D	Case=Dat|Number=Plur|Person=1|PronType=Prs	20	obj	_	IFD_tag=fp1fþ|SpaceAfter=No
+22	.	.	PUNCT	.	_	12	punct	_	IFD_tag=.
