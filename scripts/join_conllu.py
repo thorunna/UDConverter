@@ -6,7 +6,7 @@ Hinrik Hafsteinsson
 Þórunn Arnardóttir
 2019
 
-Text preperation script for IcePaHC CoNLLU output file (.conllu). Not to be run
+Text preparation script for IcePaHC CoNLLU output file (.conllu). Not to be run
 by itself, part of postrocessing pipeline.
  - Joins various nodes in IcePaHC files that have been split with '$' character
  - Joins sentences that have been split into main clauses, based on punctuation
@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     # for file in os.listdir('testing/corpora/icecorpus/psd_orig'):
     IN_PATH = sys.argv[1]
-
+    
     file = open(IN_PATH, 'r')
 
     # NODES JOINED

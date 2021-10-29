@@ -70,6 +70,7 @@ class UniversalDependencyGraph(DependencyGraph):
             }
         )
         self.original_ID = None
+    #    self.original_phrase_tag = None
 
     #todo _parse for CoNLL-U
 
@@ -1368,6 +1369,8 @@ class Converter():
         for i in const:
             if re.match('(IP-MAT|IP-SUB-SPE|FRAG|QTP|IP-IMP|CONJP|META|LATIN)', t[i].label()):
                 self._select_head(t[i])
+                #if re.match('IP-MAT', t[i].label()):
+                #    self.dg.original_phrase_tag = 'IP-MAT'
 
         for i in list(set(t.treepositions()).difference(const)):
             if isinstance(t[i][0], Tree) and t[i].label() == 'CONJP':
@@ -1605,16 +1608,27 @@ class Converter():
         new_dg = to_join[0]
         # print('==NEW==')
         # print(new_dg.to_conllU())
-        new_dg.original_ID = [str(dg.original_ID) for dg  in to_join]
+        new_dg.original_ID = [str(dg.original_ID) for dg in to_join]
+    #    root_phrases = [dg for dg in to_join if dg.original_phrase_tag == 'IP-MAT']
+    #    if len(root_phrases) > 0:
+    #        new_dg = root_phrases[0]
+    #    if new_dg.original_phrase_tag == 'IP-MAT':
         for node in new_dg.nodes.values():
             if node['head'] == 0:
                 new_root = node['address']
+        # TODO: Don't think this method works
+    #    else:
+    #        for node in to_join[1].nodes.values():
+    #            if node['head'] == 0:
+    #                new_root = node['address']
         new_id = len(new_dg.nodes)
         for old_dg in to_join[1:]:
             # print('==OLD==')
             # print(old_dg.to_conllU())
             old_new_addresses = {}
             for node in old_dg.nodes.values():
+                if node['head'] == 0:
+                    old_root = node['address']
                 old_new_addresses[node['address']] = new_id
                 if node['address'] == None or node['word'] in {'None', None}:
                     continue
@@ -1629,6 +1643,9 @@ class Converter():
                     if node['ctag'] == 'PUNCT':
                         node.update({'rel' : 'punct'})
                     # TODO: fix misc, erases previous
+                # TODO: get the end-of-sentence punctuation to be dependent on the new root
+                elif node['head'] == old_root and node['ctag'] == 'PUNCT':
+                    node.update({'head': new_root})
                 else:
                     try:
                         node.update({'head' : old_new_addresses[node['head']]})

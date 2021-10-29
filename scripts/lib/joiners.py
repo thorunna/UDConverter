@@ -65,7 +65,11 @@ class NodeJoiner():
     def __init__(self, file):
         self.file = file
         self.lines = file #file.readlines()
+        #try:
         self.indexes = range(len(self.lines))
+        #except TypeError:
+        #    self.lines = file.readlines()
+        #    self.indexes = range(len(self.lines))
         # self.path = file.name
         # self.name = os.path.basename(file.name)
         # self.file_type = os.path.splitext(file.name)[1]
