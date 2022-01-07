@@ -461,6 +461,7 @@ class Converter:
         else:
             # print('\tNo head rule found\n')
             tree.set_id(
+                # tree[0].id()
                 tree[0].id()
             )  # first from left indicated or no head rule index found
             # TODO: frekar síðasta orð?
@@ -1002,7 +1003,7 @@ class Converter:
         A node with the deprel 'cc' between two other nodes should be dependent on the latter node.
         """
 
-        for address, node in self.dg.nodes.items():
+        for address, node in list(self.dg.nodes.items()):
             if (
                 node["rel"] == "cc"
                 and node["head"] == address - 1
@@ -1027,6 +1028,13 @@ class Converter:
                 and self.dg.get_by_address(address - 1)["rel"] == "amod"
             ):
                 self.dg.get_by_address(address + 1).update({"head": address - 1})
+            elif (
+                node["rel"] == "cc"
+                and node["head"] == self.dg.get_by_address(address + 1)["head"]
+                and self.dg.get_by_address(address + 1)["ctag"] == "NOUN"
+                and self.dg.get_by_address(address + 1)["rel"] == "conj"
+            ):
+                self.dg.get_by_address(address).update({"head": address + 1})
 
     def _fix_conj_rel(self):
         """
@@ -2020,7 +2028,7 @@ class Converter:
             self._fix_dep_rel()
         # if rel_counts['case'] > 0:
         #    self._fix_case_rel()
-
+        self._fix_cc_rel()
         if self.dg.num_roots() != 1:
 
             # # DEBUG:
