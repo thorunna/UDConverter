@@ -352,28 +352,28 @@
 49	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	50	cop	_	IFD_tag=ssg
 50	tímabundið	tímabundið	ADV	ADV	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	52	advcl	_	IFD_tag=lhensf|SpaceAfter=No
 51	,	,	PUNCT	,	_	50	punct	_	IFD_tag=,
-52	hefðu	hafa	VERB	HVDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=svg3fþ
-53	viðbrögðin	viðbragð	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	52	nsubj	_	IFD_tag=nhfng
+52	hefðu	hafa	VERB	HVDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	59	aux	_	IFD_tag=svg3fþ
+53	viðbrögðin	viðbragð	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	59	nsubj	_	IFD_tag=nhfng
 54	í	í	ADP	P	_	55	case	_	IFD_tag=aþ
-55	samfélaginu	samfélag	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	53	obl	_	IFD_tag=nheþg
-56	ekki	ekki	ADV	NEG	_	52	advmod	_	IFD_tag=aa
-57	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	52	cop	_	IFD_tag=ssg
+55	samfélaginu	samfélag	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	59	obl	_	IFD_tag=nheþg
+56	ekki	ekki	ADV	NEG	_	59	advmod	_	IFD_tag=aa
+57	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	59	cop	_	IFD_tag=ssg
 58	þau	sá	DET	D-N	Case=Nom|Gender=Neut|Number=Plur|PronType=Dem	59	det	_	IFD_tag=fahfn
-59	sömu	sami	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Plur|PronType=Dem	52	xcomp	_	IFD_tag=fbhfn|SpaceAfter=No
-60	.	.	PUNCT	.	_	52	punct	_	IFD_tag=.
+59	sömu	sami	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Plur|PronType=Dem	0	root	_	IFD_tag=fbhfn|SpaceAfter=No
+60	.	.	PUNCT	.	_	59	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4525575,.15
 # X_ID = ID_missing_19
 # text = Þá væru ekki 34 þúsund undirskriftir gegn þessu.
-1	Þá	þá	ADV	ADV	_	6	advmod	_	IFD_tag=aa
-2	væru	vera	AUX	BEDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	IFD_tag=svg3fþ
-3	ekki	ekki	ADV	NEG	_	6	advmod	_	IFD_tag=aa
+1	Þá	þá	ADV	ADV	_	8	advmod	_	IFD_tag=aa
+2	væru	vera	AUX	BEDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	IFD_tag=svg3fþ
+3	ekki	ekki	ADV	NEG	_	8	advmod	_	IFD_tag=aa
 4	34	34	NUM	NUM-N	NumType=Ord	6	nummod	_	IFD_tag=to
 5	þúsund	þúsund	NUM	NUM-N	Case=Nom|Gender=Fem|Number=Plur|NumType=Card	6	nummod	_	IFD_tag=tfvfn
-6	undirskriftir	undirskrift	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	0	root	_	IFD_tag=nvfn
+6	undirskriftir	undirskrift	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	8	nsubj	_	IFD_tag=nvfn
 7	gegn	gegn	ADP	P	_	8	case	_	IFD_tag=aþ
-8	þessu	þessi	DET	D-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	6	obl	_	IFD_tag=faheþ|SpaceAfter=No
-9	.	.	PUNCT	.	_	6	punct	_	IFD_tag=.
+8	þessu	þessi	DET	D-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	0	root	_	IFD_tag=faheþ|SpaceAfter=No
+9	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4525575,.16
 # X_ID = ID_missing_20

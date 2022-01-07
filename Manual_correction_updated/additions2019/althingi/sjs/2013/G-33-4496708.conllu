@@ -81,21 +81,21 @@
 # X_IDs = ID_missing_4 ; ID_missing_5
 # text = Að sjálfsögðu væri mikið fagnaðarefni ef það andrúmsloft gæti myndast, og ég hef nú reynt að tala svolítið inn í þann veruleika, meira annars beint máli mínu til stjórnarþingmanna, nefndarmanna í umhverfis- og skipulagsnefnd.
 1	Að	að	ADV	P	_	2	case	_	IFD_tag=aþ
-2	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	10	obl	_	IFD_tag=lheþsf
+2	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	5	obl	_	IFD_tag=lheþsf
 3	væri	vera	AUX	BEDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=svg3eþ
 4	mikið	mikill	DET	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	5	amod	_	IFD_tag=lhensf
-5	fagnaðarefni	fagnaðarefni	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	10	xcomp	_	IFD_tag=nhen
+5	fagnaðarefni	fagnaðarefni	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	0	root	_	IFD_tag=nhen
 6	ef	ef	ADP	P	_	10	case	_	IFD_tag=c
 7	það	sá	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	8	det	_	IFD_tag=fahen
 8	andrúmsloft	andrúmsloft	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	10	nsubj	_	IFD_tag=nhen
 9	gæti	geta	AUX	MDDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	IFD_tag=svg3eþ
-10	myndast	mynda	VERB	VBN	VerbForm=Sup|Voice=Mid	0	root	_	IFD_tag=ssm|SpaceAfter=No
+10	myndast	mynda	VERB	VBN	VerbForm=Sup|Voice=Mid	5	obl	_	IFD_tag=ssm|SpaceAfter=No
 11	,	,	PUNCT	,	_	16	punct	_	IFD_tag=,
 12	og	og	CCONJ	CONJ	_	16	cc	_	IFD_tag=c
 13	ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	IFD_tag=fp1en
 14	hef	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	16	aux	_	IFD_tag=sfg1en
 15	nú	nú	ADV	ADV	_	16	advmod	_	IFD_tag=aa
-16	reynt	reyna	VERB	VBN	VerbForm=Sup|Voice=Act	10	conj	_	OriginalHead=0
+16	reynt	reyna	VERB	VBN	VerbForm=Sup|Voice=Act	5	conj	_	OriginalHead=0
 17	að	að	PART	TO	_	18	mark	_	IFD_tag=cn
 18	tala	tala	VERB	VB	VerbForm=Inf|Voice=Act	16	acl	_	IFD_tag=sng
 19	svolítið	svolítið	ADV	ADV	_	18	advmod	_	IFD_tag=aa
@@ -115,10 +115,10 @@
 33	nefndarmanna	nefndarmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Plur	31	conj	_	IFD_tag=nkfe
 34	í	í	ADP	P	_	38	case	_	IFD_tag=ao
 35	umhverfis-	umhverfi	NOUN	N-G	_	38	nmod:poss	_	IFD_tag=x
-36	og	og	CCONJ	CONJ	_	35	cc	_	IFD_tag=c
+36	og	og	CCONJ	CONJ	_	37	cc	_	IFD_tag=c
 37	skipulags	skipulag	NOUN	N-G	_	35	conj	_	IFD_tag=x|SpaceAfter=No
 38	nefnd	nefnd	NOUN	N-D	_	33	nmod	_	IFD_tag=x|SpaceAfter=No
-39	.	.	PUNCT	.	_	10	punct	_	IFD_tag=.
+39	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4496708,.4
 # X_ID = ID_missing_6
@@ -197,13 +197,13 @@
 32	inni	inni	ADV	ADV	_	34	advmod	_	IFD_tag=aa
 33	í	í	ADP	P	_	34	case	_	IFD_tag=aþ
 34	löggjöf	löggjöf	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	31	obl	_	IFD_tag=nveþ|SpaceAfter=No
-35	,	,	PUNCT	,	_	41	punct	_	IFD_tag=,
-36	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	41	expl	_	IFD_tag=fphen
-37	væri	vera	AUX	BEDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	41	cop	_	IFD_tag=svg3eþ
+35	,	,	PUNCT	,	_	39	punct	_	IFD_tag=,
+36	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	39	expl	_	IFD_tag=fphen
+37	væri	vera	AUX	BEDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	39	cop	_	IFD_tag=svg3eþ
 38	verulegur	verulegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	39	amod	_	IFD_tag=lkensf
-39	ávinningur	ávinningur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	41	obl	_	IFD_tag=nken
+39	ávinningur	ávinningur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	3	obl	_	IFD_tag=nken
 40	í	í	ADP	P	_	41	case	_	IFD_tag=aþ
-41	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	3	conj	_	OriginalHead=0
+41	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	39	conj	_	OriginalHead=0
 42	einu	einn	DET	ONE-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	41	amod	_	IFD_tag=lheþsf
 43	og	og	CCONJ	CONJ	_	42	flat	_	IFD_tag=c
 44	sér	sér	ADJ	ADJ-D	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	42	flat	_	IFD_tag=lkenof|SpaceAfter=No
@@ -250,7 +250,7 @@
 17	böndum	band	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	16	obj	_	IFD_tag=nhfþ
 18	á	á	ADP	P	_	19	case	_	IFD_tag=ao
 19	vegamál	vegamál	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	16	obl:arg	_	IFD_tag=nhfo
-20	og	og	CCONJ	CONJ	_	19	cc	_	IFD_tag=c
+20	og	og	CCONJ	CONJ	_	21	cc	_	IFD_tag=c
 21	akstursmál	akstursmál	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	19	conj	_	IFD_tag=nhfo|SpaceAfter=No
 22	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
@@ -332,20 +332,20 @@
 # X_ID = ID_missing_17
 # text = Stutta svarið er auðvitað já, að sjálfsögðu, ef það andrúmsloft getur myndast.
 1	Stutta	stuttur	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	IFD_tag=lhenvf
-2	svarið	svar	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	0	root	_	IFD_tag=nheng
-3	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	IFD_tag=sfg3en
-4	auðvitað	auðvitað	ADV	ADV	_	2	advmod	_	IFD_tag=aa
-5	já	já	NOUN	INTJ	_	2	nsubj	_	IFD_tag=au|SpaceAfter=No
+2	svarið	svar	NOUN	N-N	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	5	nsubj	_	IFD_tag=nheng
+3	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3en
+4	auðvitað	auðvitað	ADV	ADV	_	5	advmod	_	IFD_tag=aa
+5	já	já	NOUN	INTJ	_	0	root	_	IFD_tag=au|SpaceAfter=No
 6	,	,	PUNCT	,	_	7	punct	_	IFD_tag=,
 7	að	að	ADP	P	_	8	case	_	IFD_tag=aþ
-8	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	2	advcl	_	IFD_tag=lheþsf|SpaceAfter=No
+8	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	5	advcl	_	IFD_tag=lheþsf|SpaceAfter=No
 9	,	,	PUNCT	,	_	10	punct	_	IFD_tag=,
 10	ef	ef	ADP	P	_	14	mark	_	IFD_tag=c
 11	það	sá	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	12	det	_	IFD_tag=fahen
 12	andrúmsloft	andrúmsloft	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	14	nsubj	_	IFD_tag=nhen
 13	getur	geta	AUX	MDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux	_	IFD_tag=sfg3en
-14	myndast	mynda	VERB	VBN	VerbForm=Sup|Voice=Mid	2	advcl	_	IFD_tag=ssm|SpaceAfter=No
-15	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
+14	myndast	mynda	VERB	VBN	VerbForm=Sup|Voice=Mid	5	advcl	_	IFD_tag=ssm|SpaceAfter=No
+15	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4496708,.13
 # X_IDs = ID_missing_18 ; ID_missing_19
