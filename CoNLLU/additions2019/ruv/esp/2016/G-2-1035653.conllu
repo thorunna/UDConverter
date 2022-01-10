@@ -1,160 +1,160 @@
 # sent_id = RUV_ESP_2016_G-2-1035653,.1
 # X_ID = ID_missing_1
 # text = Kári Árnason, varnarmaður í íslenska landsliðinu í fótbolta, nýtti frídaginn í gær meira annars í að spila golf þó að hann segist reyndar ekki vera neitt sérstaklega góður.
-1	Kári	kári	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	11	nsubj	_	IFD_tag=nken-s
-2	Árnason	árnason	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	flat:name	_	IFD_tag=nken-s|SpaceAfter=No
-3	,	,	PUNCT	,	_	2	punct	_	IFD_tag=,
-4	varnarmaður	varnarmaður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	appos	_	IFD_tag=nken
-5	í	í	ADP	P	_	7	case	_	IFD_tag=aþ
-6	íslenska	íslenskur	ADJ	ADJ-D	Case=Dat|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	7	amod	_	IFD_tag=lheþvf
-7	landsliðinu	landslið	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	4	obl	_	IFD_tag=nheþg
-8	í	í	ADP	P	_	9	case	_	IFD_tag=aþ
-9	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	7	obl	_	IFD_tag=nkeþ|SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	IFD_tag=,
-11	nýtti	nýta	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
-12	frídaginn	frídagur	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	11	obj	_	IFD_tag=nkeog
-13	í	í	ADP	P	_	14	case	_	IFD_tag=aþ
-14	gær	gær	ADV	ADV	_	12	obl	_	IFD_tag=aa
-15	meira	meðal	ADP	P	_	16	case	_	IFD_tag=x
-16	annars	annar	PRON	OTHER-G	_	11	obl	_	IFD_tag=x
-17	í	í	ADP	P	_	16	case	_	IFD_tag=aþ
-18	að	að	PART	TO	_	19	mark	_	IFD_tag=c
-19	spila	spila	VERB	VB	VerbForm=Inf|Voice=Act	16	acl	_	IFD_tag=sng
-20	golf	golf	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	19	obj	_	IFD_tag=nheo
-21	þó	þó	ADP	P	_	24	case	_	IFD_tag=aa
-22	að	að	SCONJ	C	_	24	mark	_	IFD_tag=c
-23	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	24	nsubj	_	IFD_tag=fpken
-24	segist	segja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	11	obl	_	IFD_tag=sfm3en
-25	reyndar	reyndar	ADV	ADV	_	24	advmod	_	IFD_tag=aa
-26	ekki	ekki	ADV	NEG	_	30	advmod	_	IFD_tag=aa
-27	vera	vera	AUX	BE	VerbForm=Inf|Voice=Act	30	cop	_	IFD_tag=sng
-28	neitt	neinn	DET	Q-A	Case=Nom|Gender=Neut|Number=Sing|PronType=Ind	29	obl	_	IFD_tag=fohen
-29	sérstaklega	sérstaklega	ADV	ADV	_	30	amod	_	IFD_tag=aa
-30	góður	góður	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	24	acl	_	IFD_tag=lkensf|SpaceAfter=No
-31	.	.	PUNCT	.	_	30	punct	_	IFD_tag=.
+1	Kári	kári	PROPN	NPR-N	_	11	nsubj	_	_
+2	Árnason	árnason	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	varnarmaður	varnarmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	_
+5	í	í	ADP	P	_	7	case	_	_
+6	íslenska	íslenskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
+7	landsliðinu	landslið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	nýtti	nýta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+12	frídaginn	frídagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
+13	í	í	ADP	P	_	14	case	_	_
+14	gær	gær	ADV	ADV	Degree=Pos	12	obl	_	_
+15	meira	meðal	ADP	P	_	16	case	_	_
+16	annars	annar	PRON	OTHER-G	Case=Gen	11	obl	_	_
+17	í	í	ADP	P	_	16	case	_	_
+18	að	að	PART	TO	_	19	mark	_	_
+19	spila	spila	VERB	VB	VerbForm=Inf	16	xcomp	_	_
+20	golf	golf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
+21	þó	þó	ADP	P	_	24	case	_	_
+22	að	að	SCONJ	C	_	24	mark	_	_
+23	hann	hann	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+24	segist	segja	VERB	VBPI	Mood=Ind|Tense=Pres	11	obl	_	_
+25	reyndar	reyndar	ADV	ADV	Degree=Pos	24	advmod	_	_
+26	ekki	ekki	ADV	NEG	_	30	advmod	_	_
+27	vera	vera	AUX	BE	VerbForm=Inf	30	cop	_	_
+28	neitt	neinn	DET	Q-A	Case=Acc|Degree=Pos	29	obl	_	_
+29	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	30	amod	_	_
+30	góður	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	xcomp	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	11	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1035653,.2
 # X_ID = ID_missing_2
 # text = Gylfi Þór Sigurðsson og Ögmundur Kristinsson séu líklega þeir bestu í hópnum.
-1	Gylfi	gylfi	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	10	nsubj	_	IFD_tag=nken-s
-2	Þór	þór	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	flat:name	_	IFD_tag=nken-s
-3	Sigurðsson	sigurðsson	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	dep	_	IFD_tag=nken-s
-4	og	og	CCONJ	CONJ	_	5	cc	_	IFD_tag=c
-5	Ögmundur	ögmundur	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	conj	_	IFD_tag=nken-s
-6	Kristinsson	kristinsson	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	flat:name	_	IFD_tag=nken-s
-7	séu	vera	AUX	BEPS	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	IFD_tag=svg3fn
-8	líklega	líklega	ADV	ADV	_	10	advmod	_	IFD_tag=aa
-9	þeir	sá	DET	D-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Dem	10	det	_	IFD_tag=fakfn
-10	bestu	góður	ADJ	ADJS-N	Case=Nom|Definite=Def|Degree=Sup|Gender=Masc|Number=Plur	0	root	_	IFD_tag=lkfnve
-11	í	í	ADP	P	_	12	case	_	IFD_tag=aþ
-12	hópnum	hópur	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	10	obl	_	IFD_tag=nkeþg|SpaceAfter=No
-13	.	.	PUNCT	.	_	12	punct	_	IFD_tag=.
+1	Gylfi	gylfi	PROPN	NPR-N	_	10	nsubj	_	_
+2	Þór	þór	PROPN	NPR-N	_	1	flat:name	_	_
+3	Sigurðsson	sigurðsson	PROPN	NPR-N	_	1	dep	_	_
+4	og	og	CCONJ	CONJ	_	5	cc	_	_
+5	Ögmundur	ögmundur	PROPN	NPR-N	_	1	conj	_	_
+6	Kristinsson	kristinsson	PROPN	NPR-N	_	5	flat:name	_	_
+7	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	10	cop	_	_
+8	líklega	líklega	ADV	ADV	Degree=Pos	10	advmod	_	_
+9	þeir	sá	DET	D-N	Case=Nom|PronType=Art	10	det	_	_
+10	bestu	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	0	root	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	hópnum	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1035653,.3
 # X_ID = ID_missing_3
 # text = Samspil Kára og Ragnars Sigurðssonar í íslensku vörninni hefur vakið mikla athygli þar sem þeir ná einstaklega vel saman.
-1	Samspil	samspil	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	10	nsubj	_	IFD_tag=nhen
-2	Kára	kári	PROPN	NPR-G	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	nmod:poss	_	IFD_tag=nven-s
-3	og	og	CCONJ	CONJ	_	4	cc	_	IFD_tag=c
-4	Ragnars	ragnar	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	2	conj	_	IFD_tag=nkee-s
-5	Sigurðssonar	sigurðsson	PROPN	NPR-G	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	4	flat:name	_	IFD_tag=nkee-s
-6	í	í	ADP	P	_	8	case	_	IFD_tag=aþ
-7	íslensku	íslenskur	ADJ	ADJ-D	Case=Dat|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	IFD_tag=lveþvf
-8	vörninni	vörn	NOUN	N-D	Case=Dat|Definite=Def|Gender=Fem|Number=Sing	1	obl	_	IFD_tag=nveþg
-9	hefur	hafa	AUX	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	IFD_tag=sfg3en
-10	vakið	vekja	VERB	VBN	VerbForm=Sup|Voice=Act	0	root	_	IFD_tag=ssg
-11	mikla	mikill	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	IFD_tag=lveosf
-12	athygli	athygli	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	10	obj	_	IFD_tag=nveo
-13	þar	þar	ADV	ADV	_	10	advmod	_	IFD_tag=aa
-14	sem	sem	SCONJ	C	_	16	mark	_	IFD_tag=c
-15	þeir	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Prs	16	nsubj	_	IFD_tag=fpkfn
-16	ná	ná	VERB	VBPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	advcl	_	IFD_tag=sfg3fn
-17	einstaklega	einstaklega	ADV	ADV	_	16	advmod	_	IFD_tag=aa
-18	vel	vel	ADV	ADV	_	17	advmod	_	IFD_tag=aa
-19	saman	saman	ADV	ADV	_	16	advmod	_	IFD_tag=aa|SpaceAfter=No
-20	.	.	PUNCT	.	_	19	punct	_	IFD_tag=.
+1	Samspil	samspil	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+2	Kára	kári	PROPN	NPR-G	_	1	nmod:poss	_	_
+3	og	og	CCONJ	CONJ	_	4	cc	_	_
+4	Ragnars	ragnar	PROPN	NPR-G	_	2	conj	_	_
+5	Sigurðssonar	sigurðsson	PROPN	NPR-G	_	4	flat:name	_	_
+6	í	í	ADP	P	_	8	case	_	_
+7	íslensku	íslenskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	8	amod	_	_
+8	vörninni	vörn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
+9	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	10	aux	_	_
+10	vakið	vekja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+11	mikla	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
+12	athygli	athygli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
+13	þar	þar	ADV	ADV	Degree=Pos	10	advmod	_	_
+14	sem	sem	SCONJ	C	_	16	mark	_	_
+15	þeir	hann	PRON	PRO-N	Case=Nom	16	nsubj	_	_
+16	ná	ná	VERB	VBPI	Mood=Ind|Tense=Pres	13	advcl	_	_
+17	einstaklega	einstaklega	ADV	ADV	Degree=Pos	16	advmod	_	_
+18	vel	vel	ADV	ADV	Degree=Pos	17	advmod	_	_
+19	saman	saman	ADV	ADV	Degree=Pos	16	advmod	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1035653,.4
 # X_ID = ID_missing_4
 # text = „ Bara frábærlega.
-1	„	„	PUNCT	"	_	2	punct	_	IFD_tag=„
-2	Bara	bara	ADV	FP	_	0	root	_	IFD_tag=aa
-3	frábærlega	frábærlega	ADV	ADV	_	2	advmod	_	IFD_tag=aa|SpaceAfter=No
-4	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
+1	„	„	PUNCT	"	_	2	punct	_	_
+2	Bara	bara	ADV	FP	Degree=Pos	0	root	_	_
+3	frábærlega	frábærlega	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	.	_	None	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1035653,.5
 # X_IDs = ID_missing_5 ; ID_missing_6
 # text = Og ég vildi að ég gæti spilað með honum fyrir félagslið líka en auðvitað er það ekki staðan þannig að við bara njótum þess að spila með hvor öðrum.
-1	Og	og	CCONJ	CONJ	_	3	cc	_	IFD_tag=c
-2	ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	IFD_tag=fp1en
-3	vildi	vilja	VERB	VBDS	Mood=Sub|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=svg1eþ
-4	að	að	SCONJ	C	_	7	mark	_	IFD_tag=c
-5	ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	IFD_tag=fp1en
-6	gæti	geta	AUX	MDDS	Mood=Sub|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	IFD_tag=svg1eþ
-7	spilað	spila	VERB	VBN	VerbForm=Sup|Voice=Act	3	ccomp	_	IFD_tag=ssg
-8	með	með	ADP	P	_	9	case	_	IFD_tag=aþ
-9	honum	hann	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Prs	7	obl	_	IFD_tag=fpkeþ
-10	fyrir	fyrir	ADP	P	_	11	case	_	IFD_tag=ao
-11	félagslið	félagslið	NOUN	N-A	Case=Acc|Definite=Def|Gender=Neut|Number=Sing	7	obl	_	IFD_tag=nheog
-12	líka	líka	ADV	ALSO	_	7	advmod	_	IFD_tag=aa
-13	en	en	CCONJ	CONJ	_	14	cc	_	IFD_tag=c
-14	auðvitað	auðvitað	ADV	ADV	_	3	conj	_	OriginalHead=0
-15	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	IFD_tag=sfg3en
-16	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	14	nsubj	_	IFD_tag=fphen
-17	ekki	ekki	ADV	NEG	_	14	advmod	_	IFD_tag=aa
-18	staðan	staða	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	14	xcomp	_	IFD_tag=nveng
-19	þannig	þannig	ADV	ADV	_	14	advmod	_	IFD_tag=aa
-20	að	að	SCONJ	C	_	23	mark	_	IFD_tag=cn
-21	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	23	nsubj	_	IFD_tag=fp1fn
-22	bara	bara	ADV	FP	_	23	advmod	_	IFD_tag=aa
-23	njótum	njóta	VERB	VBPS	Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	19	advcl	_	IFD_tag=svg1fn
-24	þess	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Prs	23	obj	_	IFD_tag=fphee
-25	að	að	PART	TO	_	26	mark	_	IFD_tag=cn
-26	spila	spila	VERB	VB	VerbForm=Inf|Voice=Act	24	acl	_	IFD_tag=sng
-27	með	með	ADP	P	_	28	case	_	IFD_tag=aa
-28	hvor	hvor	DET	Q-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	26	obl	_	IFD_tag=foken
-29	öðrum	annar	PRON	OTHER-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Ind	28	det	_	IFD_tag=fokeþ|SpaceAfter=No
-30	.	.	PUNCT	.	_	29	punct	_	IFD_tag=.
+1	Og	og	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	vildi	vilja	VERB	VBDS	Mood=Sub|Tense=Past	0	root	_	_
+4	að	að	SCONJ	C	_	7	mark	_	_
+5	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
+6	gæti	geta	AUX	MDDS	Mood=Sub|Tense=Past	7	aux	_	_
+7	spilað	spila	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	_
+8	með	með	ADP	P	_	9	case	_	_
+9	honum	hann	PRON	PRO-D	Case=Dat	7	obl	_	_
+10	fyrir	fyrir	ADP	P	_	11	case	_	_
+11	félagslið	félagslið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
+12	líka	líka	ADV	ALSO	_	7	advmod	_	_
+13	en	en	CCONJ	CONJ	_	14	cc	_	_
+14	auðvitað	auðvitað	ADV	ADV	Degree=Pos	3	conj	_	OriginalHead=0
+15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+16	það	það	PRON	PRO-N	Case=Nom	14	nsubj	_	_
+17	ekki	ekki	ADV	NEG	_	14	advmod	_	_
+18	staðan	staða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	xcomp	_	_
+19	þannig	þannig	ADV	ADV	Degree=Pos	14	advmod	_	_
+20	að	að	SCONJ	C	_	23	mark	_	_
+21	við	ég	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+22	bara	bara	ADV	FP	Degree=Pos	23	advmod	_	_
+23	njótum	njóta	VERB	VBPS	Mood=Sub|Tense=Pres	19	advcl	_	_
+24	þess	það	PRON	PRO-G	Case=Gen	23	obj	_	_
+25	að	að	PART	TO	_	26	mark	_	_
+26	spila	spila	VERB	VB	VerbForm=Inf	24	xcomp	_	_
+27	með	með	ADP	P	_	29	case	_	_
+28	hvor	hvor	DET	Q-N	Case=Nom|Degree=Pos	29	obl	_	_
+29	öðrum	annar	PRON	OTHER-D	Case=Dat	26	obl	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1035653,.6
 # X_IDs = ID_missing_7 ; ID_missing_8 ; ID_missing_9
 # text = Og það gengur rosa vel og samskiptin hjá okkur eru frábær og við bökkum hvor annan mjög vel upp,“ útskýrir Kári.
-1	Og	og	CCONJ	CONJ	_	3	cc	_	IFD_tag=c
-2	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	3	nsubj	_	IFD_tag=fphen
-3	gengur	ganga	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
-4	rosa	rosa	ADV	ADV	_	3	advmod	_	IFD_tag=aa
-5	vel	vel	ADV	ADV	_	4	advmod	_	IFD_tag=aa
-6	og	og	CCONJ	CONJ	_	11	cc	_	IFD_tag=c
-7	samskiptin	samskipti	NOUN	NS-N	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	11	nsubj	_	IFD_tag=nhfng
-8	hjá	hjá	ADP	P	_	9	case	_	IFD_tag=aþ
-9	okkur	ég	PRON	PRO-D	Case=Dat|Number=Plur|Person=1|PronType=Prs	7	obl	_	IFD_tag=fp1fþ
-10	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	IFD_tag=sfg3fn
-11	frábær	frábær	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	3	conj	_	OriginalHead=0
-12	og	og	CCONJ	CONJ	_	14	cc	_	IFD_tag=c
-13	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	14	nsubj	_	IFD_tag=fp1fn
-14	bökkum	bakka	VERB	VBPI	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
-15	hvor	hvor	DET	Q-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	14	obj	_	IFD_tag=foken
-16	annan	annar	PRON	OTHER-A	Case=Acc|Gender=Masc|Number=Sing|PronType=Ind	15	det	_	IFD_tag=fokeo
-17	mjög	mjög	ADV	ADV	_	14	advmod	_	IFD_tag=aa
-18	vel	vel	ADV	ADV	_	17	advmod	_	IFD_tag=aa
-19	upp	upp	ADP	RP	_	14	compound:prt	_	IFD_tag=aa|SpaceAfter=No
-20	,	,	PUNCT	,	_	19	punct	_	IFD_tag=,|SpaceAfter=No
-21	“	“	PUNCT	"	_	20	punct	_	IFD_tag=“
-22	útskýrir	útskýra	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	parataxis	_	IFD_tag=sfg3en
-23	Kári	kári	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	22	nsubj	_	IFD_tag=nken-s|SpaceAfter=No
-24	.	.	PUNCT	.	_	23	punct	_	IFD_tag=.
+1	Og	og	CCONJ	CONJ	_	3	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	rosa	rosa	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	vel	vel	ADV	ADV	Degree=Pos	4	advmod	_	_
+6	og	og	CCONJ	CONJ	_	11	cc	_	_
+7	samskiptin	samskipti	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	nsubj	_	_
+8	hjá	hjá	ADP	P	_	9	case	_	_
+9	okkur	ég	PRON	PRO-D	Case=Dat	7	obl	_	_
+10	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
+11	frábær	frábær	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0
+12	og	og	CCONJ	CONJ	_	14	cc	_	_
+13	við	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
+14	bökkum	bakka	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+15	hvor	hvor	DET	Q-N	Case=Nom|Degree=Pos	14	obj	_	_
+16	annan	annar	PRON	OTHER-A	Case=Acc	15	det	_	_
+17	mjög	mjög	ADV	ADV	Degree=Pos	14	advmod	_	_
+18	vel	vel	ADV	ADV	Degree=Pos	17	advmod	_	_
+19	upp	upp	ADP	RP	_	14	compound:prt	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	19	punct	_	SpaceAfter=No
+21	“	“	PUNCT	"	_	20	punct	_	_
+22	útskýrir	útskýra	VERB	VBPI	Mood=Ind|Tense=Pres	14	parataxis	_	_
+23	Kári	kári	PROPN	NPR-N	_	22	nsubj	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1035653,.7
 # X_ID = ID_missing_10
 # text = Viðtal við Kára má finna í spilaranum að ofan.
-1	Viðtal	viðtal	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	nsubj	_	IFD_tag=nhen
-2	við	við	ADP	P	_	3	case	_	IFD_tag=ao
-3	Kára	kári	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	1	obl	_	IFD_tag=nkeo-s
-4	má	mega	AUX	MDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	IFD_tag=sfg3en
-5	finna	finna	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
-6	í	í	ADP	P	_	7	case	_	IFD_tag=aþ
-7	spilaranum	spilari	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	5	obl	_	IFD_tag=nkeþg
-8	að	að	ADP	P	_	9	case	_	IFD_tag=aa
-9	ofan	ofan	ADV	ADV	_	7	obl	_	IFD_tag=aa|SpaceAfter=No
-10	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
+1	Viðtal	viðtal	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+2	við	við	ADP	P	_	3	case	_	_
+3	Kára	kári	PROPN	NPR-A	_	1	obl	_	_
+4	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
+5	finna	finna	VERB	VB	VerbForm=Inf	0	root	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	spilaranum	spilari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+8	að	að	ADP	P	_	9	case	_	_
+9	ofan	ofan	ADV	ADV	Degree=Pos	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	5	punct	_	_
 
