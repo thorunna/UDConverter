@@ -70,8 +70,6 @@ for file in corr_filenames:
 
 print("Sent count corr: ", sent_count_corr)
 
-# print(sents)
-
 sents_orig = {}
 
 sent_count_orig = 0
@@ -131,17 +129,12 @@ for sent, toks in sents_orig_althingi.items():
 
 print("Total no. of tokens in althingi: ", no_toks)
 
-# print(sents_orig)
-
 comp = {}
 
 for sent, toks in sents.items():
     for orig_sent, orig_toks in sents_orig.items():
         if sent == orig_sent:
             comp[sent] = list(zip(toks, orig_toks))
-
-# for x, y in comp.items():
-#    print(x, list(y))
 
 head_deprel = 0
 head = 0
@@ -188,8 +181,6 @@ for sent, zipped in comp.items():
         orig_deprel = orig[3]
         corr_deprels[orig_deprel] += 1
         if corr_head != orig_head and corr_deprel != orig_deprel:
-            # print('Hvorki haus né deprel eru eins')
-            # if corr_deprel != 'punct':
             head_deprel += 1
             total_count += 1
             las_count += 1
@@ -197,20 +188,7 @@ for sent, zipped in comp.items():
             sent_errors += 1
             deprel += 1
             head += 1
-            # deprel_info[orig_deprel] += 1
-            # head_info[orig_deprel] += 1
         if corr_head != orig_head and corr_deprel == orig_deprel:
-            # print('Haus er ekki sá sami')
-            # if corr_deprel != 'punct':
-            if orig_deprel == "cop":
-                # print(sent, corr_head, orig_head)
-                wrong_cops.append(
-                    (sent, corr[0], "=", corr_head, orig[0], "=", orig_head)
-                )
-            if orig_deprel == "cc":
-                wrong_cc.append(
-                    (sent, corr[0], "=", corr_head, orig[0], "=", orig_head)
-                )
             head += 1
             head_info[orig_deprel] += 1
             total_count += 1
@@ -218,8 +196,6 @@ for sent, zipped in comp.items():
             uas_count += 1
             sent_errors += 1
         if corr_deprel != orig_deprel and corr_head == orig_head:
-            # print('Deprel er ekki það sama')
-            # if corr_deprel != 'obl:arg':
             deprel += 1
             deprel_info[orig_deprel] += 1
             total_count += 1
@@ -227,9 +203,6 @@ for sent, zipped in comp.items():
             sent_errors += 1
 
     err_per_sent[sent] = (sent_len, sent_errors)
-
-# for k, v in err_per_sent.items():
-#    print(k, v)
 
 head_info_perc = {}
 
@@ -243,12 +216,39 @@ for k, v in deprel_info.items():
     v_upd = (v / corr_deprels[k]) * 100
     deprel_info_perc[k] = v_upd
 
-print("No. of manually-corrected sentences: ", len(sents))
-
 no_toks_corr = 0
 
 for sent, toks in sents.items():
     no_toks_corr += len(toks)
+
+
+def print_wrong_deprel(deprel_info):
+    print("\nWrong deprel label used:")
+    for k, v in sorted(deprel_info.items(), key=lambda item: item[1], reverse=True):
+        print(k, v)
+    print("\nWrong deprel label used(%):")
+    for k, v in sorted(
+        deprel_info_perc.items(), key=lambda item: item[1], reverse=True
+    ):
+        print(k, v)
+
+
+def print_wrong_heads(head_info):
+    print("\nDeprels connected to wrong heads:")
+    for k, v in sorted(head_info.items(), key=lambda item: item[1], reverse=True):
+        print(k, v)
+    print("\nDeprels connected to wrong heads(%):")
+    for k, v in sorted(head_info_perc.items(), key=lambda item: item[1], reverse=True):
+        print(k, v)
+
+
+def print_deprels(corr_deprels):
+    print("\nFrequency of all dependency relations:")
+    for k, v in sorted(corr_deprels.items(), key=lambda item: item[1], reverse=True):
+        print(k, v)
+
+
+print("No. of manually-corrected sentences: ", len(sents))
 
 print("Total no. of manually-corrected tokens: ", no_toks_corr)
 print("Total no. of corrections: ", total_count)
@@ -271,51 +271,3 @@ print(
     (head_deprel / no_toks_corr) * 100,
     "%",
 )
-
-print("\n")
-
-print("Wrong deprel label used:")
-for k, v in sorted(deprel_info.items(), key=lambda item: item[1], reverse=True):
-    print(k, v)
-
-print("\n")
-
-print("Wrong deprel label used(%):")
-for k, v in sorted(deprel_info_perc.items(), key=lambda item: item[1], reverse=True):
-    print(k, v)
-
-print("\n")
-
-print("Deprels connected to wrong heads:")
-for k, v in sorted(head_info.items(), key=lambda item: item[1], reverse=True):
-    print(k, v)
-
-print("\n")
-
-print("Deprels connected to wrong heads(%):")
-for k, v in sorted(head_info_perc.items(), key=lambda item: item[1], reverse=True):
-    print(k, v)
-
-print("\n")
-
-print("Frequency of all dependency relations:")
-for k, v in sorted(corr_deprels.items(), key=lambda item: item[1], reverse=True):
-    print(k, v)
-
-print("\n")
-
-print("LAS: ", 100 - ((las_count / no_toks_corr) * 100), "%")
-
-file = open("UDConverter/wrong_cops", "w")
-for x in wrong_cops:
-    x = str(x)
-    file.write(x)
-    file.write("\n")
-file.close()
-
-file = open("UDConverter/wrong_cc.txt", "w")
-for x in wrong_cc:
-    x = str(x)
-    file.write(x)
-    file.write("\n")
-file.close()
