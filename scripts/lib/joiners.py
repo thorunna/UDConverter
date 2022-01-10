@@ -10,7 +10,6 @@ import pyconll
 # TODO:
     FINISH IMPLEMENTING join_various_nodes() method
 
-2019
 Hinrik Hafsteinsson
 Þórunn Arnardóttir
 Part of UniTree project for IcePaHC

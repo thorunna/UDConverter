@@ -314,7 +314,7 @@ head_rules = {
     },
     "IP-INF-ABS": {"dir": "r", "rules": ["VB"]},
     "IP-INF-ABS-PRN": {"dir": "r", "rules": ["VB"]},
-    "IP-INF-PRP": {"dir": "r", "rules": ["VB", "IP-INF"]},  # tilgangsnafnháttur
+    "IP-INF-PRP": {"dir": "r", "rules": ["VB", "IP-INF"]},  # purpose infinitive
     "IP-INF-PRP-PRN-SPE": {"dir": "r", "rules": ["VB"]},
     "IP-INF-PRP-PRN": {"dir": "r", "rules": ["VB"]},
     "IP-INF-PRP-SPE": {"dir": "r", "rules": ["VB"]},
@@ -358,7 +358,6 @@ head_rules = {
             "DO.*",
             "DAN",
             "HVN",
-            # "HV.*",
             "VAG",
             "DAG",
             "HAG",
@@ -409,9 +408,6 @@ head_rules = {
             "IP-MAT-*",
         ],
     },
-    #'IP-MAT-1'       : {'dir':'r', 'rules':['NP-MSR']},
-    #'IP-MAT=1'      : {'dir':'r', 'rules':['VB', 'VB.*','RD.*', 'DO.*', 'DAN', 'VAN', 'HV.*', 'VAG', 'DAG', 'HAG', 'VP', 'PP', 'ADJP', 'NP-PRD', 'NP', 'N.*', 'IP-SMC', 'IP-MAT']},
-    #'IP-MAT=1'      : {'dir':'r', 'rules':['NP-SBJ']},
     "IP-MAT-DIR": {
         "dir": "r",
         "rules": [
@@ -719,7 +715,6 @@ head_rules = {
             "HV.*",
             "MD.*",
             "NP-PRD",
-            # "IP-INF.*",
             "IP-INF",
             "ADJP",
             "IP-INF.*",
@@ -773,7 +768,6 @@ head_rules = {
         ],
     },
     "IP-SUB=2": {"dir": "r", "rules": ["VB", "VAN", "IP-SMC"]},
-    #'IP-SUB=2'      : {'dir':'r', 'rules':['VP', 'VB', 'VB.*', 'DO.*', 'VAN', 'RD.*', 'DAN', 'RAN', 'HAN', 'BAN', 'VAG', 'RAG', 'HAG', 'BAG', 'RDN', 'BEN', 'HVN', 'HV.*', 'MD.*', 'IP-INF.*', 'ADJP', 'NP-PRD', 'NP.*', 'RD.*', 'ADVP', 'IP-SUB']},
     "IP-SUB=1": {"dir": "r", "rules": ["VAN", "DO.*", "VBN"]},
     "IP-SUB=5": {"dir": "r", "rules": ["PP-BY"]},
     "IP-SUB-INF": {"dir": "r", "rules": ["VB"]},
@@ -861,7 +855,6 @@ head_rules = {
             "PP",
         ],
     },
-    #            'IP-SUB-SPE=1'  : {'dir':'r', 'rules':['CP-ADV-SPE']},
     "IP-SUB-SPE-PRN": {"dir": "r", "rules": ["VB.*", "HV.*"]},
     "IP-SUB-SPE-PRN-ELAB": {"dir": "r", "rules": ["VB.*", "HV.*"]},
     "IP-IMP": {"dir": "r", "rules": ["VB.", "HV."]},  # imperative
@@ -904,7 +897,7 @@ head_rules = {
             "RDN",
             "BEN",
         ],
-    },  # lýsingarháttarsetning
+    },  # participle phrase
     "IP-PPL-ABS": {
         "dir": "r",
         "rules": [
@@ -1311,7 +1304,6 @@ head_rules = {
     "CP-TMC": {"dir": "r", "rules": ["IP-INF.*"]},  # tough-movement
     "CP-TMC-SPE": {"dir": "r", "rules": ["IP-INF.*"]},
     "CP-TMP": {"dir": "r", "rules": ["IP-INF.*"]},
-    #'NP'            : {'dir':'r', 'rules':['CP-FRL', 'N-.', 'NS-.', 'NPR-.', 'NPRS-.', 'RRC', 'PRO-.', 'MAN-.', 'NP.*', 'Q.*', 'OTHER-.']},
     "NP": {
         "dir": "r",
         "rules": [
@@ -1323,7 +1315,6 @@ head_rules = {
             "RRC",
             "IP-INF-PRP",
             "PRO-N",
-            # "CP-THT-PRN",
             "PRO-.",
             "MAN-.",
             "NP.*",
@@ -1410,14 +1401,13 @@ head_rules = {
             "INTJ",
             "RRC",
         ],
-    },  # viðurlag, appositive
+    },  # appositive
     "NP-PRN-ELAB": {
         "dir": "r",
         "rules": [("N-.|NS-."), "NPR-.", "NPRS-.", "PRO-.", "MAN-.", "OTHER-."],
     },
     "NP-PRN-REP": {"dir": "r", "rules": ["N-.", "NS.*", "NP.*", "OTHER-."]},
     "NP-RSP": {"dir": "r", "rules": ["N-.", "NS.*", "NP.*", "OTHER-."]},
-    # NP-SBJ: 'NP.*' var á undan 'PRO', búið að víxla til að NP-PRN verði appos og PRO nsubj
     "NP-SBJ": {
         "dir": "r",
         "rules": [
@@ -1547,7 +1537,7 @@ head_rules = {
             "MAN-.",
             "OTHER-.",
         ],
-    },  # MEIRA?
+    },
     "NP-OB2-RSP": {
         "dir": "r",
         "rules": [
@@ -1578,7 +1568,7 @@ head_rules = {
             "D-.",
             "NUM",
         ],
-    },  # sagnfylling copulu
+    },  # predicate
     "NP-SPR": {
         "dir": "r",
         "rules": [
@@ -1617,7 +1607,7 @@ head_rules = {
     "NP-COM": {
         "dir": "r",
         "rules": ["N.*", "NP.*", "OTHER-."],
-    },  # fylliliður N sem er ekki í ef.
+    },  # complement of N, not in dative case
     "NP-ADT": {
         "dir": "r",
         "rules": [("N-.|NS-."), "NS-.", "NPR-.", "NPRS-.", "MAN-.", "OTHER-."],
@@ -1711,7 +1701,7 @@ head_rules = {
             "IP-SUB",
         ],
     },
-    #'ADJP-SPR'      : {'dir':'r', 'rules':['ADJ-.', 'ADJS-N']},     #SPR = secondary predicate
+    "ADJP-SPR": {"dir": "r", "rules": ["ADJ-.", "ADJS-N"]},  # SPR = secondary predicate
     "ADJP-SPR-LFD": {"dir": "r", "rules": ["ADJ-.", "ADJS-N"]},
     "ADJP-DIR": {
         "dir": "r",
@@ -1724,7 +1714,7 @@ head_rules = {
     "ADJP-LOC": {
         "dir": "r",
         "rules": ["ADJ-.", "ADJR-.", "ADJS-.", "ADVR", "ONE", "ONES", "CP-TMP", "Q.*"],
-    },  # eitt dæmi um ADJP-OC
+    },  # one occurrence of ADJP-OC
     "ADJP-PRN": {
         "dir": "r",
         "rules": [
@@ -1738,7 +1728,7 @@ head_rules = {
             "CP-TMP",
             "Q.*",
         ],
-    },  # ADJP bætt við útaf 1902.FOSSAR.NAR-FIC,.542, villa í ADJP-PRN hausavali
+    },
     "ADJP-PRN-ELAB": {
         "dir": "r",
         "rules": ["ADJ-.", "ADJR-.", "ADJS-.", "ADVR", "ONE", "ONES", "CP-TMP", "Q.*"],
@@ -1767,7 +1757,6 @@ head_rules = {
             "FS",
             "CP-ADV.*",
             "IP-SMC",
-            # ("ADV.*|ADVP"),
             "ADJP",
             ("ADV.*|ADVP"),
             "IP-MAT.*",
@@ -2059,7 +2048,7 @@ head_rules = {
             "NP.*",
             "WNP.*",
         ],
-    },  # MEIRA?
+    },
     "WNP-COM": {
         "dir": "r",
         "rules": [
@@ -2199,7 +2188,7 @@ relation_NP = {
     "ADV-LFD": "obl",
     "ADV-RSP": "obl",
     "CMP": "obl",
-    "PRN": "appos",  # viðurlag, appositive
+    "PRN": "appos",  # appositive
     "PRNL": "appos",
     "PRN-ELAB": "appos",
     "PRN-REP": "appos",
@@ -2215,18 +2204,18 @@ relation_NP = {
     "OB2": "iobj",
     "OB2-RSP": "iobj",
     "OB3": "iobj",
-    "PRD": "xcomp",  # sagnfylling, predicate
+    "PRD": "xcomp",  # predicate
     "SPR": "xcomp",
-    "POS": "nmod:poss",  # Örvar: 'POS': 'case'
+    "POS": "nmod:poss",
     "POS-RSP": "nmod:poss",
     "POS-CPD": "nmod:poss",
     "COM": "nmod:poss",
-    "ADT": "obl",  # ATH. rétt?
+    "ADT": "obl",
     "TMP": "obl",
     "TMP-LFD": "obl",
     "TMP-RSP": "obl",
     "NUM": "nummod",
-    "MSR": "obl",  # measure phrase, frekar obl?
+    "MSR": "obl",
     "MSR-LFD": "obl",
     "MSR-RSP": "obl",
     "VOC": "vocative",
@@ -2237,12 +2226,11 @@ relation_NP = {
 }
 
 relation_IP = {
-    # None: '?',
     None: "dep",
     "INF": "xcomp",
     "INF-ABS": "xcomp",
     "INF-ABS-PRN": "xcomp",
-    "INF-PRP": "advcl",  # merkingin 'til þess að'
+    "INF-PRP": "advcl",  # purpose
     "INF-PRP-PRN": "advcl",
     "INF-PRP-PRN-SPE": "advcl",
     "INF-PRP-SPE": "advcl",
@@ -2252,13 +2240,13 @@ relation_IP = {
     "INF-SPE-DEG": "xcomp",
     "INF-SPE-LFD": "xcomp",
     "INF-SPE-PRN": "xcomp",
-    "INF-SPE-PRN-ELAB": "xcomp",  # sama merki og INF-SPE-PRN
-    "INF-SPE-PRP": "advcl",  # merkingin 'til þess að'
+    "INF-SPE-PRN-ELAB": "xcomp",  # same as INF-SPE-PRN
+    "INF-SPE-PRP": "advcl",  # purpose
     "INF-SPE-PRP-PRN": "advcl",
     "INF-SPE-SBJ": "xcomp",
     "INF-PRN": "xcomp",
     "INF-PRN-ELAB": "xcomp",
-    "INF-PRN-PRP": "advcl",  # notað í til þess að
+    "INF-PRN-PRP": "advcl",  # pronoun-purpose
     "INF-PRN-SPE": "xcomp",
     "INF-RSP": "xcomp",  # RSP = resumptive
     "INF-SBJ": "xcomp",
@@ -2268,15 +2256,15 @@ relation_IP = {
     "INF-DEG-SPE": "xcomp",
     "INF-LFD": "xcomp",
     "INF-PRD": "csubj",
-    "INF-ADT": "advcl",  # clause-level modifier af því clause-level dative adjunct
+    "INF-ADT": "advcl",  # clause-level modifier because clause-level dative adjunct
     "INF-ADT-SPE": "advcl",
     "INF-ADT-SPE-LFD": "advcl",
     "INF-ADT-LFD": "advcl",
     "INF-ADT-PRN": "advcl",
-    "MAT": "conj",  # þarf ekki að hafa merkimiða því sögnin er alltaf rót? - conj þegar búið er að gera punkt til punkts
-    "MAT-DIR": "conj",  # sama og MAT
-    "MAT-LFD": "conj",  # sama og MAT
-    "MAT-OB1": "advcl",  # kemur einu sinni fyrir, haus á eftir nær(þegar), jonsteingrims
+    "MAT": "conj",
+    "MAT-DIR": "conj",  # same as MAT
+    "MAT-LFD": "conj",  # same as MAT
+    "MAT-OB1": "advcl",  # occurs once
     "MAT-PRN": "parataxis",
     "MAT-PRN-ELAB": "parataxis",
     "MAT-PRN-LFD": "parataxis",
@@ -2288,17 +2276,17 @@ relation_IP = {
     "MAT-SPE-PRN-LFD": "ccomp/xcomp",
     "MAT-SPE-SBJ": "ccomp/xcomp",
     "MAT-SUB-SPE": "ccomp/xcomp",
-    "MAT-SMC": "conj",  # sama og MAT, kemur einu sinni fyrir og hausinn er rót
+    "MAT-SMC": "conj",  # same as MAT, occurs once
     "SUB": "conj",
     "SUB-INF": "xcomp",
-    "SUB-LFD": "conj",  # skiptir ekki máli, kemur einu sinni fyrir og CP-liðurinn trompar
+    "SUB-LFD": "conj",
     "SUB-PRN": "conj",
     "SUB-PRN-ELAB": "conj",
     "SUB-REP": "conj",  # REP = repetition
     "SUB-SPE": "conj",
     "SUB-SPE-PRN": "conj",
     "SUB-SPE-PRN-ELAB": "conj",  # ELAB = elaborations
-    "IMP": "ccomp",  # frl. en innifalið í sögninni, þá ccomp eða xcomp?
+    "IMP": "ccomp",
     "IMP-PRN": "ccomp",
     "IMP-SPE": "ccomp",
     "IMP-SPE-PRN": "ccomp",
@@ -2306,25 +2294,24 @@ relation_IP = {
     "SMC": "ccomp/xcomp",
     "SMC-SBJ": "ccomp/xcomp",
     "SMC-SPE": "ccomp/xcomp",
-    "PPL": "acl/advcl",  # ?
-    "PPL-ABS": "acl/advcl",  # ?
-    "PPL-ABS-SPE": "acl/advcl",  # ?
-    "PPL-OB1": "acl/advcl",  # ?
-    "PPL-OB1-SPE": "acl/advcl",  # ?
-    "PPL-OB2": "acl/advcl",  # ?
-    "PPL-PRD": "acl/advcl",  # ?
-    "PPL-PRN": "acl/advcl",  # ?
-    "PPL-SBJ": "acl/advcl",  # ?
-    "PPL-SPE": "acl/advcl",  # ?
-    "PPL-SPE-OB1": "acl/advcl",  # ?
-    "PPL-SPE-PRD": "acl/advcl",  # ?
+    "PPL": "acl/advcl",
+    "PPL-ABS": "acl/advcl",
+    "PPL-ABS-SPE": "acl/advcl",
+    "PPL-OB1": "acl/advcl",
+    "PPL-OB1-SPE": "acl/advcl",
+    "PPL-OB2": "acl/advcl",
+    "PPL-PRD": "acl/advcl",
+    "PPL-PRN": "acl/advcl",
+    "PPL-SBJ": "acl/advcl",
+    "PPL-SPE": "acl/advcl",
+    "PPL-SPE-OB1": "acl/advcl",
+    "PPL-SPE-PRD": "acl/advcl",
     "ABS": "acl/advcl",  # absolutus
     "ABS-PRN": "acl/advcl",
     "ABS-SBJ": "acl/advcl",
 }
 
 relation_CP = {
-    # None: '?',
     None: "dep",
     "THT": "ccomp/xcomp",
     "THT-SBJ": "ccomp/xcomp",
@@ -2341,12 +2328,12 @@ relation_CP = {
     "CAR-SPE": "acl:relcl",
     "CLF": "acl:relcl",
     "CLF-SPE": "acl:relcl",
-    "CMP": "advcl",  # ATH. acl í enska bankanum á eftir 'than', advcl í sænska og norska
+    "CMP": "advcl",
     "CMP-LFD": "advcl",
     "CMP-SPE": "advcl",
     "DEG": "advcl",
     "DEG-SPE": "advcl",
-    "FRL": "ccomp/xcomp",  # ccomp?, free relative
+    "FRL": "ccomp/xcomp",  # free relative
     "FRL-SPE": "ccomp/xcomp",
     "REL": "acl:relcl",
     "REL-SPE": "acl:relcl",
@@ -2375,14 +2362,14 @@ relation_CP = {
     "ADV-SPE": "advcl",
     "ADV-SPE-LFD": "advcl",
     "ADV-SPE-PRN": "advcl",
-    "EOP": "xcomp",  # so. í nh. fylgir alltaf, ekkert frl.
+    "EOP": "xcomp",  # infinitival verb always follows, no sbj.
     "EOP-SPE": "xcomp",
     "EOP-SPE-PRN": "xcomp",
     "EXL": "ccomp/xcomp",  # exclamative, same parse as QUE
     "EXL-SPE": "ccomp/xcomp",
-    "TMC": "xcomp",  # so. í nh. fylgir alltaf, ekkert frl.
+    "TMC": "xcomp",  # infinitival verb always follows, no sbj.
     "TMC-SPE": "xcomp",
-    "TMP": "xcomp",  # so. í nh fylgir alltaf, ekkert frl.
+    "TMP": "xcomp",  # infinitival verb always follows, no sbj.
 }
 
 
@@ -2460,7 +2447,7 @@ mwes = [
     "hvernig sem",
     "hvert er",
     "hvert sem",
-    "í sjálfu sér",  # Á þetta við
+    "í sjálfu sér",
     "jafnskjótt og",
     "jafnskjótt sem",
     "jafnvel þótt",
