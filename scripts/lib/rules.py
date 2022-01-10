@@ -2193,7 +2193,7 @@ head_rules = {
 }
 
 relation_NP = {
-    None: "obl:arg",
+    None: "obl",
     "LFD": "obl",
     "ADV": "obl",
     "ADV-LFD": "obl",
