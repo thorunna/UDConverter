@@ -1,101 +1,101 @@
 # sent_id = RUV_ESP_2016_G-2-1037663.SANITY,.1
 # X_ID = ID_missing_1
 # text = Ríkjandi bikarmeistarar Stjörnunnar mæta FH í 16-liða úrslitum bikarkeppni kvenna í fótbolta.
-1	Ríkjandi	ríkjandi	ADJ	ADJ-N	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	2	amod	_	IFD_tag=lkfnof
-2	bikarmeistarar	bikarmeistari	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	4	nsubj	_	IFD_tag=nkfn
-3	Stjörnunnar	stjarna	PROPN	NPR-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	2	nmod:poss	_	IFD_tag=nveegs
-4	mæta	mæta	VERB	VBPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3fn
-5	FH	fh	PROPN	NPR-D	_	4	obj	_	IFD_tag=as
-6	í	í	ADP	P	_	10	case	_	IFD_tag=aþ
-7	16	sextán	NUM	NUM-G	_	9	nummod	_	IFD_tag=x|SpaceAfter=No
-8	-	-	PUNCT	,	_	7	punct	_	IFD_tag=x|SpaceAfter=No
-9	liða	lið	NOUN	NS-G	_	10	nmod:poss	_	IFD_tag=x
-10	úrslitum	úrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	4	obl	_	IFD_tag=nhfþ
-11	bikarkeppni	bikarkeppni	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	10	nmod:poss	_	IFD_tag=nvee
-12	kvenna	kona	NOUN	NS-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Plur	11	nmod:poss	_	IFD_tag=nvfe
-13	í	í	ADP	P	_	14	case	_	IFD_tag=aþ
-14	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	11	obl	_	IFD_tag=nkeþ|SpaceAfter=No
-15	.	.	PUNCT	.	_	14	punct	_	IFD_tag=.
+1	Ríkjandi	ríkjandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+2	bikarmeistarar	bikarmeistari	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
+3	Stjörnunnar	stjarna	PROPN	NPR-G	_	2	nmod:poss	_	_
+4	mæta	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+5	FH	fh	PROPN	NPR-D	_	4	obj	_	_
+6	í	í	ADP	P	_	10	case	_	_
+7	16	sextán	NUM	NUM-G	Case=Gen	9	nummod	_	SpaceAfter=No
+8	-	-	PUNCT	,	_	7	punct	_	_|SpaceAfter=No
+9	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	nmod:poss	_	_
+10	úrslitum	úrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
+11	bikarkeppni	bikarkeppni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	nmod:poss	_	_
+12	kvenna	kona	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	nmod:poss	_	_
+13	í	í	ADP	P	_	14	case	_	_
+14	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1037663.SANITY,.2
 # X_ID = ID_missing_2
 # text = Dregið var í hádeginu í dag.
-1	Dregið	draga	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	IFD_tag=sþghen
-2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	IFD_tag=sfg3eþ
-3	í	í	ADP	P	_	4	case	_	IFD_tag=ao
-4	hádeginu	hádegi	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	1	obl	_	IFD_tag=nheþg
-5	í	í	ADP	P	_	6	case	_	IFD_tag=ao
-6	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	1	obl	_	IFD_tag=nkeo|SpaceAfter=No
-7	.	.	PUNCT	.	_	6	punct	_	IFD_tag=.
+1	Dregið	draga	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	1	cop	_	_
+3	í	í	ADP	P	_	4	case	_	_
+4	hádeginu	hádegi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	1	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1037663.SANITY,.3
 # X_ID = ID_missing_3
 # text = Ásgerður Stefanía Baldursdóttir, fyrirliði Stjörnunnar, segir liðið hafa fengið einn af erfiðari útileikjunum í drættinum.
-1	Ásgerður	ásgerður	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	8	nsubj	_	IFD_tag=nven-s
-2	Stefanía	stefanía	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	flat:name	_	IFD_tag=nven-s
-3	Baldursdóttir	baldursdóttir	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	1	dep	_	IFD_tag=nven-s|SpaceAfter=No
-4	,	,	PUNCT	,	_	3	punct	_	IFD_tag=,
-5	fyrirliði	fyrirliði	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	appos	_	IFD_tag=nken
-6	Stjörnunnar	stjarna	PROPN	NPR-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	5	nmod:poss	_	IFD_tag=nveegs|SpaceAfter=No
-7	,	,	PUNCT	,	_	6	punct	_	IFD_tag=,
-8	segir	segja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
-9	liðið	lið	NOUN	N-A	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	11	nsubj	_	IFD_tag=nheng
-10	hafa	hafa	AUX	HV	VerbForm=Inf|Voice=Act	11	aux	_	IFD_tag=sng
-11	fengið	fá	VERB	VBN	VerbForm=Sup|Voice=Act	8	acl	_	IFD_tag=ssg
-12	einn	einn	DET	ONE-A	Case=Acc|Gender=Masc|Number=Sing|NumType=Card	11	obj	_	IFD_tag=tfkeo
-13	af	af	ADP	P	_	15	case	_	IFD_tag=aþ
-14	erfiðari	erfiður	ADJ	ADJR-D	Case=Dat|Definite=Def|Degree=Cmp|Gender=Masc|Number=Plur	15	amod	_	IFD_tag=lkfþvm
-15	útileikjunum	útileikur	NOUN	NS-D	Case=Dat|Definite=Def|Gender=Masc|Number=Plur	12	obl	_	IFD_tag=nkfþg
-16	í	í	ADP	P	_	17	case	_	IFD_tag=aþ
-17	drættinum	dráttur	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	15	obl	_	IFD_tag=nkeþg|SpaceAfter=No
-18	.	.	PUNCT	.	_	17	punct	_	IFD_tag=.
+1	Ásgerður	ásgerður	PROPN	NPR-N	_	8	nsubj	_	_
+2	Stefanía	stefanía	PROPN	NPR-N	_	1	flat:name	_	_
+3	Baldursdóttir	baldursdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	fyrirliði	fyrirliði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	_
+6	Stjörnunnar	stjarna	PROPN	NPR-G	_	5	nmod:poss	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+9	liðið	lið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	nsubj	_	_
+10	hafa	hafa	AUX	HV	VerbForm=Inf	11	aux	_	_
+11	fengið	fá	VERB	VBN	Tense=Past|VerbForm=Part	8	xcomp	_	_
+12	einn	einn	DET	ONE-A	Case=Acc|Number=Sing	11	obj	_	_
+13	af	af	ADP	P	_	15	case	_	_
+14	erfiðari	erfiður	ADJ	ADJR-D	Case=Dat|Degree=Cmp	15	amod	_	_
+15	útileikjunum	útileikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
+16	í	í	ADP	P	_	17	case	_	_
+17	drættinum	dráttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1037663.SANITY,.4
 # X_IDs = ID_missing_4 ; ID_missing_5
 # text = „ Mér finnst erfitt að fara í Krikann að spila, þetta er örugglega einn af betri grasvöllum landsins þannig ég held að þetta verði hörkuleikur,“ segir Adda.
-1	„	„	PUNCT	"	_	3	punct	_	IFD_tag=„
-2	Mér	ég	PRON	PRO-D	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	IFD_tag=fp1eþ
-3	finnst	finna	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	IFD_tag=sfm3en
-4	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	3	xcomp	_	IFD_tag=lhensf
-5	að	að	PART	TO	_	6	mark	_	IFD_tag=cn
-6	fara	fara	VERB	VB	VerbForm=Inf|Voice=Act	4	acl	_	IFD_tag=sng
-7	í	í	ADP	P	_	8	case	_	IFD_tag=ao
-8	Krikann	kriki	PROPN	NPR-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	6	obl	_	IFD_tag=nkeogs
-9	að	að	PART	TO	_	10	mark	_	IFD_tag=cn
-10	spila	spila	VERB	VB	VerbForm=Inf|Voice=Act	6	advcl	_	IFD_tag=sng|SpaceAfter=No
-11	,	,	PUNCT	,	_	10	punct	_	IFD_tag=,
-12	þetta	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	29	nsubj	_	IFD_tag=fahen
-13	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	29	cop	_	IFD_tag=sfg3en
-14	örugglega	örugglega	ADV	ADV	_	29	advmod	_	IFD_tag=aa
-15	einn	einn	DET	ONE-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	29	xcomp	_	IFD_tag=foken
-16	af	af	ADP	P	_	18	case	_	IFD_tag=aþ
-17	betri	góður	ADJ	ADJR-D	Case=Dat|Definite=Def|Degree=Cmp|Gender=Masc|Number=Plur	18	amod	_	IFD_tag=lkfþvm
-18	grasvöllum	grasvöllur	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	15	obl	_	IFD_tag=nkfþ
-19	landsins	land	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	18	nmod:poss	_	IFD_tag=nheeg
-20	þannig	þannig	ADV	ADV	_	29	advmod	_	IFD_tag=aa
-21	ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	22	nsubj	_	IFD_tag=fp1en
-22	held	halda	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	20	advcl	_	IFD_tag=sfg1en
-23	að	að	SCONJ	C	_	24	mark	_	IFD_tag=c
-24	þetta	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	22	obl	_	IFD_tag=fahen
-25	verði	verða	AUX	RDPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	24	aux	_	IFD_tag=svg3en
-26	hörkuleikur	hörkuleikur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	24	xcomp	_	IFD_tag=nken|SpaceAfter=No
-27	,	,	PUNCT	,	_	29	punct	_	IFD_tag=,|SpaceAfter=No
-28	“	“	PUNCT	"	_	27	punct	_	IFD_tag=“
-29	segir	segja	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
-30	Adda	adda	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	29	obl	_	IFD_tag=nven-s|SpaceAfter=No
-31	.	.	PUNCT	.	_	30	punct	_	IFD_tag=.
+1	„	„	PUNCT	"	_	3	punct	_	_
+2	Mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
+3	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	xcomp	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	fara	fara	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	Krikann	kriki	PROPN	NPR-A	_	6	obl	_	_
+9	að	að	PART	TO	_	10	mark	_	_
+10	spila	spila	VERB	VB	VerbForm=Inf	6	advcl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	3	punct	_	_
+12	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	29	nsubj	_	_
+13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	29	cop	_	_
+14	örugglega	örugglega	ADV	ADV	Degree=Pos	29	advmod	_	_
+15	einn	einn	DET	ONE-N	Case=Nom|Number=Sing	29	xcomp	_	_
+16	af	af	ADP	P	_	18	case	_	_
+17	betri	góður	ADJ	ADJR-D	Case=Dat|Degree=Cmp	18	amod	_	_
+18	grasvöllum	grasvöllur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	_
+19	landsins	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	_
+20	þannig	þannig	ADV	ADV	Degree=Pos	29	advmod	_	_
+21	ég	ég	PRON	PRO-N	Case=Nom	22	nsubj	_	_
+22	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	20	advcl	_	_
+23	að	að	SCONJ	C	_	24	mark	_	_
+24	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	22	obl	_	_
+25	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	24	aux	_	_
+26	hörkuleikur	hörkuleikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	xcomp	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	3	punct	_	SpaceAfter=No
+28	“	“	PUNCT	"	_	27	punct	_	_
+29	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+30	Adda	adda	PROPN	NPR-N	_	29	obl	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1037663.SANITY,.5
 # X_ID = ID_missing_6
 # text = Viðtal við fyrirliðann má finna í spilaranum að ofan.
-1	Viðtal	viðtal	NOUN	N-A	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	obj	_	IFD_tag=nhen
-2	við	við	ADP	P	_	3	case	_	IFD_tag=ao
-3	fyrirliðann	fyrirliði	NOUN	N-A	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	1	obl	_	IFD_tag=nkeog
-4	má	mega	AUX	MDPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	IFD_tag=sfg3en
-5	finna	finna	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
-6	í	í	ADP	P	_	7	case	_	IFD_tag=aþ
-7	spilaranum	spilari	NOUN	N-D	Case=Dat|Definite=Def|Gender=Masc|Number=Sing	5	obl	_	IFD_tag=nkeþg
-8	að	að	ADP	P	_	9	case	_	IFD_tag=aa
-9	ofan	ofan	ADV	ADV	_	7	obl	_	IFD_tag=aa|SpaceAfter=No
-10	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
+1	Viðtal	viðtal	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
+2	við	við	ADP	P	_	3	case	_	_
+3	fyrirliðann	fyrirliði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
+4	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
+5	finna	finna	VERB	VB	VerbForm=Inf	0	root	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	spilaranum	spilari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+8	að	að	ADP	P	_	9	case	_	_
+9	ofan	ofan	ADV	ADV	Degree=Pos	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	5	punct	_	_
 
