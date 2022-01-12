@@ -55,16 +55,16 @@
 # sent_id = ALTHINGI_BO_2014_G-33-4893594,.3
 # X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5 ; ID_missing_6
 # text = Hér er formaður velferðarnefndar að ræða fjárlög ríkisstjórnarinnar og hefur sérstaklega þungar áhyggjur af heilbrigðismálunum, lífeyrisskuldbindingum og öðru og enginn er til þess að hlusta á hana úr stjórnarliðinu nema hæstv. forseti og það er engin svör að fá.
-1	Hér	hér	ADV	ADV	_	3	advmod	_	IFD_tag=aa
-2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3en
-3	formaður	formaður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	0	root	_	IFD_tag=nken
+1	Hér	hér	ADV	ADV	_	6	advmod	_	IFD_tag=aa
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	IFD_tag=sfg3en
+3	formaður	formaður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	6	nsubj	_	IFD_tag=nken
 4	velferðarnefndar	velferðarnefnd	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing	3	nmod:poss	_	IFD_tag=nvee
 5	að	að	PART	TO	_	6	mark	_	IFD_tag=cn
-6	ræða	ræða	VERB	VB	VerbForm=Inf|Voice=Act	3	acl	_	IFD_tag=sng
+6	ræða	ræða	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
 7	fjárlög	fjárlag	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	6	obj	_	IFD_tag=nhfo
 8	ríkisstjórnarinnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	7	nmod:poss	_	IFD_tag=nveeg
 9	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
-10	hefur	hafa	VERB	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
+10	hefur	hafa	VERB	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	OriginalHead=0
 11	sérstaklega	sérstaklega	ADV	ADV	_	12	amod	_	IFD_tag=aa
 12	þungar	þungur	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	13	amod	_	IFD_tag=lvfosf
 13	áhyggjur	áhyggja	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	10	obj	_	IFD_tag=nvfo
@@ -74,13 +74,13 @@
 17	lífeyrisskuldbindingum	lífeyrisskuldbinding	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	15	conj	_	IFD_tag=nvfþ
 18	og	og	CCONJ	CONJ	_	19	cc	_	IFD_tag=c
 19	öðru	annar	PRON	OTHER-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Ind	15	conj	_	IFD_tag=foheþ
-20	og	og	CCONJ	CONJ	_	21	cc	_	IFD_tag=c
-21	enginn	enginn	DET	Q-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	3	conj	_	IFD_tag=foken
-22	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	cop	_	IFD_tag=sfg3en
+20	og	og	CCONJ	CONJ	_	26	cc	_	IFD_tag=c
+21	enginn	enginn	DET	Q-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	26	nsubj	_	IFD_tag=foken
+22	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	26	cop	_	IFD_tag=sfg3en
 23	til	til	ADP	P	_	26	mark	_	IFD_tag=ae
 24	þess	það	PRON	PRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Prs	23	fixed	_	OriginalHead=0
-25	að	að	PART	TO	_	23	fixed	_	IFD_tag=cn
-26	hlusta	hlusta	VERB	VB	VerbForm=Inf|Voice=Act	21	advcl	_	IFD_tag=sng
+25	að	að	PART	TO	_	26	fixed	_	IFD_tag=cn
+26	hlusta	hlusta	VERB	VB	VerbForm=Inf|Voice=Act	6	conj	_	IFD_tag=sng
 27	á	á	ADP	P	_	28	case	_	IFD_tag=ao
 28	hana	hún	PRON	PRO-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Prs	26	obl	_	IFD_tag=fpveo
 29	úr	úr	ADP	P	_	30	case	_	IFD_tag=aþ
@@ -94,8 +94,8 @@
 37	engin	enginn	DET	Q-A	Case=Nom|Gender=Neut|Number=Plur|PronType=Ind	38	amod	_	IFD_tag=fohfn
 38	svör	svar	NOUN	NS-A	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	40	obj	_	IFD_tag=nhfn
 39	að	að	PART	TO	_	40	mark	_	IFD_tag=cn
-40	fá	fá	VERB	VB	VerbForm=Inf|Voice=Act	3	conj	_	OriginalHead=0|SpaceAfter=No
-41	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
+40	fá	fá	VERB	VB	VerbForm=Inf|Voice=Act	6	conj	_	OriginalHead=0|SpaceAfter=No
+41	.	.	PUNCT	.	_	6	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4893594,.4
 # X_ID = ID_missing_7

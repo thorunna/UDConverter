@@ -2,14 +2,14 @@
 # X_ID = ID_missing_1
 # text = Herra forseti. Það er að sjálfsögðu rétt og skylt að greiða götu þessa máls úr því það er komið af stað á annað borð og mikilvægt að það bíði ekki lengi eitthvert réttaróvissuástand eftir að væntingar eru komnar um að fullnustuaðgerðir verði stöðvaðar eða frystar tímabundið.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	2	nmod	_	IFD_tag=nken
-2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	7	vocative	_	IFD_tag=nken|SpaceAfter=No
-3	.	.	PUNCT	.	_	7	punct	_	IFD_tag=.
-4	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	7	expl	_	IFD_tag=fphen
-5	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	IFD_tag=sfg3en
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	8	vocative	_	IFD_tag=nken|SpaceAfter=No
+3	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
+4	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	8	expl	_	IFD_tag=fphen
+5	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	IFD_tag=sfg3en
 6	að	að	ADP	P	_	7	case	_	IFD_tag=c
-7	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	IFD_tag=lheþsf
-8	rétt	réttur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	7	amod	_	IFD_tag=lhensf
-9	og	og	CCONJ	CONJ	_	8	cc	_	IFD_tag=c
+7	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	8	obl	_	IFD_tag=lheþsf
+8	rétt	réttur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	IFD_tag=lhensf
+9	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
 10	skylt	skyldur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	8	conj	_	IFD_tag=lhensf
 11	að	að	PART	TO	_	12	mark	_	IFD_tag=c
 12	greiða	greiða	VERB	VB	VerbForm=Inf|Voice=Act	10	xcomp	_	IFD_tag=sng
@@ -17,7 +17,7 @@
 14	þessa	þessi	DET	D-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	15	det	_	IFD_tag=fahee
 15	máls	mál	NOUN	N-G	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	13	nmod:poss	_	IFD_tag=nhee
 16	úr	úr	ADP	P	_	17	case	_	IFD_tag=aþ
-17	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	7	obl	_	IFD_tag=fpheþ
+17	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	8	obl	_	IFD_tag=fpheþ
 18	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	20	nsubj	_	IFD_tag=fphen
 19	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop	_	IFD_tag=sfg3en
 20	komið	koma	VERB	VBN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	17	ccomp	_	IFD_tag=sþghen
@@ -27,7 +27,7 @@
 24	annað	annar	PRON	OTHER-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Ind	25	det	_	IFD_tag=foheo
 25	borð	borð	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	20	obl	_	IFD_tag=nheo
 26	og	og	CCONJ	CONJ	_	27	cc	_	IFD_tag=c
-27	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	7	conj	_	IFD_tag=lhensf
+27	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	8	conj	_	IFD_tag=lhensf
 28	að	að	SCONJ	C	_	30	mark	_	IFD_tag=c
 29	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	30	nsubj	_	IFD_tag=fphen
 30	bíði	bíða	VERB	VBPS	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	27	ccomp	_	IFD_tag=svg3en
@@ -48,7 +48,7 @@
 45	eða	eða	CCONJ	CONJ	_	46	cc	_	IFD_tag=c
 46	frystar	frysta	VERB	VAN	Case=Nom|Gender=Fem|Number=Plur|VerbForm=Part|Voice=Act	44	conj	_	IFD_tag=sþgvfn
 47	tímabundið	tímabundið	ADV	ADV	_	44	advmod	_	IFD_tag=aa|SpaceAfter=No
-48	.	.	PUNCT	.	_	7	punct	_	IFD_tag=.
+48	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4542313,.2
 # X_IDs = ID_missing_2 ; ID_missing_3
@@ -353,9 +353,9 @@
 8	aðgerðir	aðgerð	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	26	nsubj	_	IFD_tag=nvfn
 9	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
 10	rómaðar	rómaður	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Plur	8	conj	_	IFD_tag=lvfnsf
-11	sem	sem	SCONJ	C	_	12	mark	_	IFD_tag=ct
-12	þær	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Plur|PronType=Prs	10	acl:relcl	_	IFD_tag=fpvfn
-13	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	IFD_tag=sfg3fn|SpaceAfter=No
+11	sem	sem	SCONJ	C	_	22	mark	_	IFD_tag=ct
+12	þær	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Plur|PronType=Prs	22	nsubj	_	IFD_tag=fpvfn
+13	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	cop	_	IFD_tag=sfg3fn|SpaceAfter=No
 14	,	,	PUNCT	,	_	22	punct	_	IFD_tag=,
 15	að	að	ADP	P	_	17	case	_	IFD_tag=aþ
 16	minnsta	lítill	ADJ	ADJS-D	Case=Dat|Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	17	amod	_	IFD_tag=lkeþve
@@ -364,7 +364,7 @@
 19	hringir	hringja	VERB	VBPI	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	22	dep	_	IFD_tag=nkfn|SpaceAfter=No
 20	.	.	PUNCT	.	_	19	punct	_	IFD_tag=.
 21	af	af	ADP	P	_	22	case	_	IFD_tag=aþ
-22	aðstandendum	aðstandandi	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	10	advmod	_	IFD_tag=nkfþ|SpaceAfter=No
+22	aðstandendum	aðstandandi	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	10	obl	_	IFD_tag=nkfþ|SpaceAfter=No
 23	,	,	PUNCT	,	_	26	punct	_	IFD_tag=,
 24	munu	munu	AUX	MDPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	26	aux	_	IFD_tag=sfg3fn
 25	ekki	ekki	ADV	NEG	_	26	advmod	_	IFD_tag=aa

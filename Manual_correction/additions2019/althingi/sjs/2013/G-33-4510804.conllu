@@ -62,7 +62,7 @@
 16	að	að	PART	TO	_	17	mark	_	IFD_tag=cn
 17	lenda	lenda	VERB	VB	VerbForm=Inf|Voice=Act	12	xcomp	_	IFD_tag=sng
 18	stórum	stór	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	21	amod	_	IFD_tag=lhfþsf
-19	og	og	CCONJ	CONJ	_	18	cc	_	IFD_tag=c
+19	og	og	CCONJ	CONJ	_	20	cc	_	IFD_tag=c
 20	flóknum	flókinn	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	18	amod	_	IFD_tag=lhfþsf
 21	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	17	obj	_	IFD_tag=nhfþ
 22	af	af	ADP	P	_	24	case	_	IFD_tag=aþ
@@ -76,7 +76,7 @@
 1	Þetta	þessi	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	2	nsubj	_	IFD_tag=fahen
 2	snýst	snúa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	IFD_tag=sfm3en
 3	vissulega	vissulega	ADV	ADV	_	2	advmod	_	IFD_tag=aa
-4	og	og	CCONJ	CONJ	_	3	cc	_	IFD_tag=c
+4	og	og	CCONJ	CONJ	_	5	cc	_	IFD_tag=c
 5	réttilega	réttilega	ADV	ADV	_	3	advmod	_	IFD_tag=aa|SpaceAfter=No
 6	,	,	PUNCT	,	_	13	punct	_	IFD_tag=,
 7	eins	_	ADV	ADVR	_	13	mark	_	IFD_tag=x
@@ -278,14 +278,14 @@
 8	sögðust	segja	VERB	VBDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Mid	0	root	_	IFD_tag=sfm3fþ
 9	í	í	ADP	P	_	10	case	_	IFD_tag=aþ
 10	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	8	obl	_	IFD_tag=nveþ
-11	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
+11	og	og	CCONJ	CONJ	_	12	cc	_	IFD_tag=c
 12	veru	vera	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	10	conj	_	IFD_tag=nveþ
 13	vera	vera	AUX	BE	VerbForm=Inf|Voice=Act	14	cop	_	IFD_tag=sng
 14	ánægðir	ánægður	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	8	xcomp	_	IFD_tag=lkfnsf
 15	með	með	ADP	P	_	20	case	_	IFD_tag=ao
 16	þessa	þessi	DET	D-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	20	det	_	IFD_tag=faveo
 17	nýju	nýr	ADJ	ADJ-A	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	20	amod	_	IFD_tag=lveovf
-18	og	og	CCONJ	CONJ	_	17	cc	_	IFD_tag=c
+18	og	og	CCONJ	CONJ	_	19	cc	_	IFD_tag=c
 19	metnaðarfullu	metnaðarfullur	ADJ	ADJ-A	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	17	amod	_	IFD_tag=lveovf
 20	löggjöf	löggjöf	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	14	amod	_	IFD_tag=nveo
 21	að	að	ADP	P	_	23	case	_	IFD_tag=aþ
@@ -293,7 +293,7 @@
 23	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	14	obl	_	IFD_tag=nheþ
 24	nema	nema	ADP	P	_	28	mark	_	IFD_tag=c
 25	einu	einn	DET	ONE-D	Case=Dat|Gender=Neut|Number=Sing|NumType=Card	28	nummod	_	IFD_tag=tfheþ
-26	eða	eða	CCONJ	CONJ	_	25	cc	_	IFD_tag=c
+26	eða	eða	CCONJ	CONJ	_	27	cc	_	IFD_tag=c
 27	tveimur	tveir	NUM	NUM-D	Case=Dat|Gender=Neut|Number=Plur|NumType=Card	25	nummod	_	IFD_tag=tfhfþ
 28	atriðum	atriði	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	23	obl	_	IFD_tag=nhfþ|SpaceAfter=No
 29	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
@@ -338,10 +338,10 @@
 25	eða	eða	CCONJ	CONJ	_	26	cc	_	IFD_tag=c
 26	loka	loka	VERB	VB	VerbForm=Inf|Voice=Act	22	conj	_	IFD_tag=sng
 27	akstursleiðum	akstursleið	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	26	obj	_	IFD_tag=nvfþ
-28	sem	sem	SCONJ	C	_	30	mark	_	IFD_tag=ct
-29	væru	vera	AUX	BEDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	30	cop	_	IFD_tag=svg3fþ
-30	raunverulegir	raunverulegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	27	acl:relcl	_	IFD_tag=lkfnsf
-31	vegir	vegur	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	30	conj	_	IFD_tag=nkfn
+28	sem	sem	SCONJ	C	_	31	mark	_	IFD_tag=ct
+29	væru	vera	AUX	BEDS	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	31	cop	_	IFD_tag=svg3fþ
+30	raunverulegir	raunverulegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	31	amod	_	IFD_tag=lkfnsf
+31	vegir	vegur	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	27	acl:relcl	_	IFD_tag=nkfn
 32	í	í	ADP	P	_	34	case	_	IFD_tag=aþ
 33	stórum	stór	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	34	amod	_	IFD_tag=lkeþsf
 34	stíl	stíll	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	26	obl	_	IFD_tag=nkeþ|SpaceAfter=No
@@ -366,16 +366,16 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4510804,.11
 # X_ID = ID_missing_12
 # text = Það var hvort leyfa ætti akstur í gegnum Vonarskarð.
-1	Það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	0	root	_	IFD_tag=fphen
-2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	IFD_tag=sfg3eþ
+1	Það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	4	nsubj	_	IFD_tag=fphen
+2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3eþ
 3	hvort	hvort	SCONJ	WQ	_	4	mark	_	IFD_tag=c
-4	leyfa	leyfa	VERB	VB-1	VerbForm=Inf|Voice=Act	5	xcomp	_	IFD_tag=sng
-5	ætti	eiga	VERB	VBDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	xcomp	_	IFD_tag=svg3eþ
+4	leyfa	leyfa	VERB	VB-1	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
+5	ætti	eiga	VERB	VBDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	IFD_tag=svg3eþ
 6	akstur	akstur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	4	obj	_	IFD_tag=nkeo
 7	í	í	ADP	P	_	9	case	_	IFD_tag=aa
 8	gegnum	gegnum	ADP	P	_	7	case	_	IFD_tag=ao
 9	Vonarskarð	vonarskarð	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	6	obl	_	IFD_tag=nheo-s|SpaceAfter=No
-10	.	.	PUNCT	.	_	1	punct	_	IFD_tag=.
+10	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4510804,.12
 # X_ID = ID_missing_13

@@ -170,7 +170,7 @@
 2	endurtók	endurtaka	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
 3	sig	sig	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Prs	2	obj	_	IFD_tag=fpheo
 4	aftur	aftur	ADV	ADV	_	2	advmod	_	IFD_tag=aa
-5	og	og	CCONJ	CONJ	_	4	cc	_	IFD_tag=c
+5	og	og	CCONJ	CONJ	_	6	cc	_	IFD_tag=c
 6	aftur	aftur	ADV	ADV	_	4	advmod	_	IFD_tag=aa
 7	og	og	CCONJ	CONJ	_	10	cc	_	IFD_tag=c
 8	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	IFD_tag=sfg3en
@@ -255,10 +255,10 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4496709,.9
 # X_IDs = ID_missing_13 ; ID_missing_14 ; ID_missing_15
 # text = Það er tiltekinn réttur sem þingmenn hafa, þeir geta fullnýtt hann ef þeir telja ástæðu til og svo er það búið.
-1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	0	root	_	IFD_tag=fphen
-2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	IFD_tag=sfg3en
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	4	expl	_	IFD_tag=fphen
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3en
 3	tiltekinn	tiltaka	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	IFD_tag=lkensf
-4	réttur	réttur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	obl	_	IFD_tag=nken
+4	réttur	réttur	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	0	root	_	IFD_tag=nken
 5	sem	sem	SCONJ	C	_	6	mark	_	IFD_tag=ct
 6	þingmenn	þingmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	4	acl:relcl	_	IFD_tag=nkfn
 7	hafa	hafa	AUX	HVPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	IFD_tag=sfg3fn|SpaceAfter=No
@@ -276,8 +276,8 @@
 19	svo	svo	ADV	ADV	_	22	advmod	_	IFD_tag=aa
 20	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	cop	_	IFD_tag=sfg3en
 21	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	22	nsubj	_	IFD_tag=fphen
-22	búið	búa	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	1	conj	_	OriginalHead=0|SpaceAfter=No
-23	.	.	PUNCT	.	_	1	punct	_	IFD_tag=.
+22	búið	búa	VERB	VAN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	4	conj	_	OriginalHead=0|SpaceAfter=No
+23	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4496709,.10
 # X_ID = ID_missing_16
@@ -310,7 +310,7 @@
 # text = Varðandi umsagnir og athugasemdir, nei, ég nálgast það ekki þannig að þær vegi misþungt.
 1	Varðandi	varða	VERB	VAG	VerbForm=Part|Voice=Act	9	advcl	_	IFD_tag=slg
 2	umsagnir	umsögn	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	1	obj	_	IFD_tag=nvfo
-3	og	og	CCONJ	CONJ	_	2	cc	_	IFD_tag=c
+3	og	og	CCONJ	CONJ	_	4	cc	_	IFD_tag=c
 4	athugasemdir	athugasemd	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	2	conj	_	IFD_tag=nvfo|SpaceAfter=No
 5	,	,	PUNCT	,	_	9	punct	_	IFD_tag=,
 6	nei	nei	INTJ	INTJ	_	9	discourse	_	IFD_tag=au|SpaceAfter=No
@@ -340,12 +340,12 @@
 9	að	að	ADP	P	_	8	compound:prt	_	IFD_tag=aþ
 10	mismunandi	mismunandi	ADJ	ADJ-D	Case=Dat|Degree=Pos|Gender=Masc|Number=Plur	11	amod	_	IFD_tag=lkfþof
 11	þáttum	þáttur	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Masc|Number=Plur	8	obj	_	IFD_tag=nkfþ|SpaceAfter=No
-12	,	,	PUNCT	,	_	14	punct	_	IFD_tag=,
+12	,	,	PUNCT	,	_	17	punct	_	IFD_tag=,
 13	fyrir	fyrir	ADP	P	_	14	case	_	IFD_tag=aþ
-14	sumum	sumur	DET	Q-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Ind	4	conj	_	OriginalHead=0
-15	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	IFD_tag=sfg3en
-16	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	14	nsubj	_	IFD_tag=fphen
-17	meira	mjög	DET	QR-N	Case=Nom|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	14	advmod	_	IFD_tag=lhenvm
+14	sumum	sumur	DET	Q-D	Case=Dat|Gender=Masc|Number=Plur|PronType=Ind	obl	conj	_	OriginalHead=0
+15	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	IFD_tag=sfg3en
+16	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	17	nsubj	_	IFD_tag=fphen
+17	meira	mjög	DET	QR-N	Case=Nom|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	4	conj	_	IFD_tag=lhenvm
 18	eða	eða	CCONJ	CONJ	_	20	cc	_	IFD_tag=c
 19	þá	þá	ADV	ADV	_	20	advmod	_	IFD_tag=aa
 20	minna	lítill	DET	QR-N	Case=Nom|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	17	conj	_	IFD_tag=lhenvm|SpaceAfter=No
