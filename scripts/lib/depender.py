@@ -801,7 +801,10 @@ class Converter:
             for address, node in self.dg.nodes.items():
                 if node["ctag"] == "PUNCT":
                     if address + 1 not in self.dg.nodes:
-                        if self.dg.root_address() != None:
+                        if (
+                            self.dg.root_address() != None
+                            and address > self.dg.root_address()
+                        ):
                             self.dg.get_by_address(address).update(
                                 {"head": self.dg.root_address()}
                             )
@@ -2293,10 +2296,19 @@ class Converter:
                         node.update({"rel": "punct"})
                     # TODO: fix misc, erases previous
                 # TODO: get the end-of-sentence punctuation to be dependent on the new root
-                elif node["head"] == old_root and node["ctag"] == "PUNCT":
+                elif (
+                    node["head"] == old_root
+                    #    and node["address"] < node["head"]
+                    and node["ctag"] == "PUNCT"
+                    and node["address"] + 1 not in old_dg.nodes
+                    # and node["address"] + 2 not in old_dg.nodes
+                    # and old_dg.get_by_address(node["address"] + 1)["address"] != None
+                ):
                     # if node["address"] + 1 in old_dg.nodes:
                     #    node.update({"head": node["address"] - 1})
                     # else:
+                    # print(old_dg.get_by_address(node["address"] + 1))
+                    # print("node[address]:", node["address"])
                     node.update({"head": new_root})
                 else:
                     try:
@@ -2322,35 +2334,36 @@ class Converter:
         #    if node['ctag'] == 'PUNCT' and node['rel'] == 'punct' and
 
         for address, node in new_dg.nodes.items():
-            if (
-                node["ctag"] == "PUNCT"
-                and node["rel"] == "punct"
-                and node["head"] == new_dg.get_by_address(address - 1)["head"]
-                and address + 1 in new_dg.nodes
-            ):
-                new_dg.get_by_address(address).update({"head": address - 1})
-        #    elif (
-        #        node["ctag"] == "PUNCT"
-        #        and node["rel"] == "punct"
-        #        and address + 1 in new_dg.nodes
-        #        and address - 1 in new_dg.nodes
-        #        and new_dg.get_by_address(address - 1)["head"] != "_"
-        # and node["head"] <= new_dg.get_by_address(address - 1)["head"]
-        #    ):
-        #        if (
-        #            node["head"] < new_dg.get_by_address(address - 3)["head"]
-        #            and new_dg.get_by_address(address - 1)["head"] == address - 3
-        #        ):
-        #            new_dg.get_by_address(address).update(
-        #                {"head": new_dg.get_by_address(address - 1)["head"]}
-        #            )
-        # elif (
-        #    node["head"] < new_dg.get_by_address(address - 1)["head"]
-        #    and new_dg.get_by_address(address - 1)["ctag"] == "VERB"
-        # ):
-        #    new_dg.get_by_address(address).update({"head": address - 1})
-
-        # new_dg.nodes.pop(-2, None)
+            if node["ctag"] == "PUNCT" and node["rel"] == "punct":
+                if (
+                    node["head"] == new_dg.get_by_address(address - 1)["head"]
+                    and address + 1 in new_dg.nodes
+                ):
+                    new_dg.get_by_address(address).update({"head": address - 1})
+                elif (
+                    type(
+                        new_dg.get_by_address(
+                            new_dg.get_by_address(address - 1)["head"]
+                        )["head"]
+                    )
+                    == int
+                    and address + 1 in new_dg.nodes
+                    and node["head"]
+                    < new_dg.get_by_address(new_dg.get_by_address(address - 1)["head"])[
+                        "head"
+                    ]
+                    and node["head"]
+                    < new_dg.get_by_address(new_dg.get_by_address(address - 1)["head"])[
+                        "address"
+                    ]
+                ):
+                    new_dg.get_by_address(address).update(
+                        {
+                            "head": new_dg.get_by_address(
+                                new_dg.get_by_address(address - 1)["head"]
+                            )["address"]
+                        }
+                    )
 
         return new_dg
 

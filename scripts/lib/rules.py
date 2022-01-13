@@ -365,7 +365,7 @@ head_rules = {
             ("NP-PRD|IP-MAT|IP-MAT-\d"),
             "MD.*",
             "HAN",
-            # "NP-PRD",
+            "NP-PRD",
             "ADJP",
             "HV.*",
             "NP-PRD",
