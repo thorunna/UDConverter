@@ -72,17 +72,17 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4517845,.3
 # X_ID = ID_missing_3
 # text = Það fyrsta sem var gert var að lækka tekjur ríkisins.
-1	Það	sá	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	0	root	_	IFD_tag=fahen
-2	fyrsta	fyrstur	ADJ	ADJS-N	Case=Nom|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	1	amod	_	IFD_tag=lhenve
+1	Það	sá	DET	D-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	2	det	_	IFD_tag=fahen
+2	fyrsta	fyrstur	ADJ	ADJS-N	Case=Nom|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	8	nsubj	_	IFD_tag=lhenve
 3	sem	sem	SCONJ	C	_	5	mark	_	IFD_tag=ct
 4	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3eþ
-5	gert	gera	VERB	DAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	1	acl:relcl	_	IFD_tag=sþghen
-6	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	IFD_tag=sfg3eþ
+5	gert	gera	VERB	DAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	2	acl:relcl	_	IFD_tag=sþghen
+6	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	IFD_tag=sfg3eþ
 7	að	að	PART	TO	_	8	mark	_	IFD_tag=cn
-8	lækka	lækka	VERB	VB	VerbForm=Inf|Voice=Act	1	xcomp	_	IFD_tag=sng
+8	lækka	lækka	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
 9	tekjur	tekja	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	8	obj	_	IFD_tag=nvfo
 10	ríkisins	ríki	NOUN	N-G	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	9	nmod:poss	_	IFD_tag=nheeg|SpaceAfter=No
-11	.	.	PUNCT	.	_	1	punct	_	IFD_tag=.
+11	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4517845,.4
 # X_ID = ID_missing_4

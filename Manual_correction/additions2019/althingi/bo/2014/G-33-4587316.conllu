@@ -74,16 +74,16 @@
 # X_IDs = ID_MISSING ; ID_MISSING
 # text = Fyrir kosningar voru allir flokkar sammála um þetta og við heyrðum ýmis falleg kosningaloforð um að bjarga Landspítalanum og fara að byggja nýjan Landspítala hjá öllum flokkum.
 1	Fyrir	fyrir	ADP	P	_	2	case	_	_
-2	kosningar	kosning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	0	root	_	_
-3	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	2	cop	_	_
+2	kosningar	kosning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	_
+3	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
 4	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	5	amod	_	_
-5	flokkar	flokkur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
-6	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+5	flokkar	flokkur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
+6	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 7	um	um	ADP	P	_	8	case	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	2	obl	_	_
+8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	6	obl	_	_
 9	og	og	CCONJ	CONJ	_	11	cc	_	_
 10	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-11	heyrðum	heyra	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+11	heyrðum	heyra	VERB	VBDI	Mood=Ind|Tense=Past	6	conj	_	OriginalHead=0
 12	ýmis	ýmis	DET	Q-A	Case=Acc|Degree=Pos	14	amod	_	_
 13	falleg	fallegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	14	amod	_	_
 14	kosningaloforð	kosningaloforð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
@@ -100,7 +100,7 @@
 25	hjá	hjá	ADP	P	_	27	case	_	_
 26	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	27	amod	_	_
 27	flokkum	flokkur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	2	punct	_	_
+28	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4587316,.5
 # X_ID = ID_MISSING

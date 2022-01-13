@@ -19,13 +19,13 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4524841,.2
 # X_ID = ID_missing_2
 # text = Eitt er fyrir heimilin í landinu.
-1	Eitt	einn	DET	ONE-N	Case=Nom|Gender=Neut|Number=Sing|NumType=Card	0	root	_	IFD_tag=tfhen
-2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	IFD_tag=sfg3en
+1	Eitt	einn	DET	ONE-N	Case=Nom|Gender=Neut|Number=Sing|NumType=Card	4	nsubj	_	IFD_tag=tfhen
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3en
 3	fyrir	fyrir	ADP	P	_	4	case	_	IFD_tag=ao
-4	heimilin	heimili	NOUN	NS-A	Case=Acc|Definite=Def|Gender=Neut|Number=Plur	1	parataxis	_	IFD_tag=nhfog
+4	heimilin	heimili	NOUN	NS-A	Case=Acc|Definite=Def|Gender=Neut|Number=Plur	0	root	_	IFD_tag=nhfog
 5	í	í	ADP	P	_	6	case	_	IFD_tag=aþ
 6	landinu	land	NOUN	N-D	Case=Dat|Definite=Def|Gender=Neut|Number=Sing	4	obl	_	IFD_tag=nheþg|SpaceAfter=No
-7	.	.	PUNCT	.	_	1	punct	_	IFD_tag=.
+7	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4524841,.3
 # X_ID = ID_missing_3
@@ -163,15 +163,15 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4524841,.8
 # X_ID = ID_missing_10
 # text = Það er eins og hver annar brandari að tala um að þeir fái einhverja úrlausn þarna.
-1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	0	root	_	IFD_tag=fphen
-2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	IFD_tag=sfg3en
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	7	nsubj	_	IFD_tag=fphen
+2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	IFD_tag=sfg3en
 3	eins	_	ADV	ADVR	_	7	mark	_	IFD_tag=x
 4	og	_	ADP	P	_	3	fixed	_	IFD_tag=x
 5	hver	hver	DET	Q-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	7	det	_	IFD_tag=foken
 6	annar	annar	PRON	OTHER-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	7	det	_	IFD_tag=foken
-7	brandari	brandari	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	amod	_	IFD_tag=nken
+7	brandari	brandari	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	0	root	_	IFD_tag=nken
 8	að	að	PART	TO	_	9	mark	_	IFD_tag=c
-9	tala	tala	VERB	VB	VerbForm=Inf|Voice=Act	1	xcomp	_	IFD_tag=sng
+9	tala	tala	VERB	VB	VerbForm=Inf|Voice=Act	7	xcomp	_	IFD_tag=sng
 10	um	um	ADP	P	_	13	case	_	IFD_tag=ao
 11	að	að	SCONJ	C	_	13	mark	_	IFD_tag=c
 12	þeir	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Prs	13	nsubj	_	IFD_tag=fpkfn
@@ -179,7 +179,7 @@
 14	einhverja	einhver	DET	Q-A	Case=Acc|Gender=Fem|Number=Sing|PronType=Ind	15	amod	_	IFD_tag=foveo
 15	úrlausn	úrlausn	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	13	obj	_	IFD_tag=nveo
 16	þarna	þarna	ADV	ADV	_	13	advmod	_	IFD_tag=aa|SpaceAfter=No
-17	.	.	PUNCT	.	_	1	punct	_	IFD_tag=.
+17	.	.	PUNCT	.	_	7	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4524841,.9
 # X_ID = ID_missing_11
@@ -324,7 +324,7 @@
 22	þar	þar	ADV	ADV	_	24	advmod	_	IFD_tag=aa
 23	miklu	mikill	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	24	advmod	_	IFD_tag=lheþsf
 24	lægra	lágur	ADJ	ADJR-N	Case=Nom|Definite=Def|Degree=Cmp|Gender=Neut|Number=Sing	18	ccomp	_	IFD_tag=lhenvm
-25	og	og	CCONJ	CONJ	_	24	cc	_	IFD_tag=c
+25	og	og	CCONJ	CONJ	_	26	cc	_	IFD_tag=c
 26	skuldir	skuld	NOUN	NS-A	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	24	conj	_	IFD_tag=nvfn
 27	fylgjandi	fylgjandi	ADV	ADV	VerbForm=Part|Voice=Act	28	advmod	_	IFD_tag=slg
 28	miklu	mikill	ADJ	ADJ-D	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	29	obl	_	IFD_tag=lheþsf
@@ -397,18 +397,18 @@
 6	þetta	þessi	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	8	det	_	IFD_tag=faheo
 7	þrönga	þröngur	ADJ	ADJ-A	Case=Acc|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	8	amod	_	IFD_tag=lheovf
 8	tímabil	tímabil	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	4	obl:arg	_	IFD_tag=nheo|SpaceAfter=No
-9	.	.	PUNCT	.	_	8	punct	_	IFD_tag=.
+9	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4524841,.20
 # X_ID = ID_missing_24
 # text = En það voru ekki allir að taka sín lán eða byggja sín hús á því tímabili.
-1	En	en	CCONJ	CONJ	_	5	cc	_	IFD_tag=c
-2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	5	expl	_	IFD_tag=fphen
-3	voru	vera	AUX	BEDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3fþ
-4	ekki	ekki	ADV	NEG	_	5	advmod	_	IFD_tag=aa
-5	allir	allur	DET	Q-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Ind	0	root	_	IFD_tag=fokfn
+1	En	en	CCONJ	CONJ	_	7	cc	_	IFD_tag=c
+2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	7	expl	_	IFD_tag=fphen
+3	voru	vera	AUX	BEDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	IFD_tag=sfg3fþ
+4	ekki	ekki	ADV	NEG	_	7	advmod	_	IFD_tag=aa
+5	allir	allur	DET	Q-N	Case=Nom|Gender=Masc|Number=Plur|PronType=Ind	7	nsubj	_	IFD_tag=fokfn
 6	að	að	PART	TO	_	7	mark	_	IFD_tag=cn
-7	taka	taka	VERB	VB	VerbForm=Inf|Voice=Act	5	xcomp	_	IFD_tag=sng
+7	taka	taka	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
 8	sín	sinn	PRON	PRO-A	Case=Acc|Gender=Neut|Number=Plur|PronType=Prs	9	nmod:poss	_	IFD_tag=fehfo
 9	lán	lán	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	7	obj	_	IFD_tag=nhfo
 10	eða	eða	CCONJ	CONJ	_	11	cc	_	IFD_tag=c
@@ -417,8 +417,8 @@
 13	hús	hús	NOUN	NS-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	11	obj	_	IFD_tag=nhfo
 14	á	á	ADP	P	_	16	case	_	IFD_tag=aþ
 15	því	sá	DET	D-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	16	det	_	IFD_tag=faheþ
-16	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	5	obl	_	IFD_tag=nheþ|SpaceAfter=No
-17	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
+16	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	7	obl	_	IFD_tag=nheþ|SpaceAfter=No
+17	.	.	PUNCT	.	_	7	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4524841,.21
 # X_ID = ID_missing_25
@@ -487,19 +487,19 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4524841,.23
 # X_ID = ID_missing_27
 # text = Nei, hann er að ráðstafa lægra Forseti hringir. hlutfalli teknanna.
-1	Nei	nei	INTJ	INTJ	_	3	discourse	_	IFD_tag=au|SpaceAfter=No
-2	,	,	PUNCT	,	_	3	punct	_	IFD_tag=,
-3	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	0	root	_	IFD_tag=fpken
-4	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	IFD_tag=sfg3en
+1	Nei	nei	INTJ	INTJ	_	6	discourse	_	IFD_tag=au|SpaceAfter=No
+2	,	,	PUNCT	,	_	6	punct	_	IFD_tag=,
+3	hann	hann	PRON	PRO-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	6	nsubj	_	IFD_tag=fpken
+4	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	IFD_tag=sfg3en
 5	að	að	PART	TO	_	6	mark	_	IFD_tag=cn
-6	ráðstafa	ráðstafa	VERB	VB	VerbForm=Inf|Voice=Act	3	xcomp	_	IFD_tag=sng
+6	ráðstafa	ráðstafa	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
 7	lægra	lágur	ADJ	ADJR-D	Degree=Cmp	11	amod	_	IFD_tag=aam
 8	Forseti	forseti	NOUN	N-N	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	9	nsubj	_	IFD_tag=nkeþ-s
 9	hringir	hringja	VERB	VBPI	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur	11	dep	_	IFD_tag=nkfn|SpaceAfter=No
 10	.	.	PUNCT	.	_	9	punct	_	IFD_tag=.
 11	hlutfalli	hlutfall	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	6	obj	_	IFD_tag=nheþ
 12	teknanna	tekja	NOUN	NS-G	Case=Gen|Definite=Def|Gender=Fem|Number=Plur	11	nmod:poss	_	IFD_tag=nvfeg|SpaceAfter=No
-13	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
+13	.	.	PUNCT	.	_	6	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4524841,.24
 # X_ID = ID_missing_28

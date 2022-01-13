@@ -257,8 +257,8 @@ class ICE_Features:
             tag, case = tag.split("-")
             if case != "ADV":
                 self.features["Case"] = Icepahc_feats["Case"][case]
-            if tag == "D":
-                self.features["PronType"] = "Art"
+            # if tag == "D":
+            #    self.features["PronType"] = "Art"
             elif tag == "ONES":
                 self.features["Number"] = Icepahc_feats["DET"]["Number"]["S"]
             elif tag.startswith("Q"):
@@ -269,9 +269,9 @@ class ICE_Features:
             else:
                 self.features["Number"] = Icepahc_feats["DET"]["Number"][""]
         else:
-            if tag == "D":
-                self.features["PronType"] = "Art"
-            elif tag == "ONES":
+            # if tag == "D":
+            #    self.features["PronType"] = "Art"
+            if tag == "ONES":
                 self.features["Number"] = Icepahc_feats["DET"]["Number"]["S"]
             elif tag.startswith("Q"):
                 if tag.startswith("Q"):
@@ -433,8 +433,8 @@ class FO_Features:
             return self.features
 
     def _determiner_features(self, tag):
-        if tag == "D":
-            self.features["PronType"] = "Art"
+        # if tag == "D":
+        #    self.features["PronType"] = "Art"
         if "-" in tag:
             case = tag.split("-")[1]
             self.features["Case"] = fo_rules.feats["Case"][case]
