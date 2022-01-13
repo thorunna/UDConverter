@@ -3,7 +3,7 @@ import glob
 import re
 
 origdir = "CoNLLU/additions2019/althingi"
-corrdir = "Manual_correction_updated/additions2019/althingi"
+corrdir = "Manual_correction/additions2019/althingi"
 
 
 def collect_filenames(directory, abspath=True):
@@ -259,8 +259,8 @@ print("Head wrong: ", head)
 print("Deprel wrong: ", deprel)
 print("\n")
 
-print("LAS: ", 100 - ((las_count / no_toks_corr) * 100), "%")
-print("UAS: ", 100 - ((uas_count / no_toks_corr) * 100), "%")
+print("LAS: ", 100 - ((las_count / no_toks_corr) * 100))
+print("UAS: ", 100 - ((uas_count / no_toks_corr) * 100))
 
 print("Percentage of heads wrong: ", (head / no_toks_corr) * 100, "%")
 print("Percentage of heads correct: ", 100 - ((head / no_toks_corr) * 100), "%")
