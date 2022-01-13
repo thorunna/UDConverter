@@ -2333,7 +2333,7 @@ class Converter:
         # for address, node in new_dg.nodes.items():
         #    if node['ctag'] == 'PUNCT' and node['rel'] == 'punct' and
 
-        for address, node in new_dg.nodes.items():
+        for address, node in list(new_dg.nodes.items()):
             if node["ctag"] == "PUNCT" and node["rel"] == "punct":
                 if (
                     node["head"] == new_dg.get_by_address(address - 1)["head"]
