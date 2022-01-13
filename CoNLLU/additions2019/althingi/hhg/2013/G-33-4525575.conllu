@@ -11,7 +11,7 @@
 8	að	að	PART	TO	_	9	mark	_	_
 9	fylgjast	fylgja	VERB	VB	VerbForm=Inf	7	xcomp	_	_
 10	með	með	ADP	P	_	12	case	_	_
-11	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	12	det	_	_
+11	þessum	þessi	DET	D-D	Case=Dat	12	det	_	_
 12	umræðum	umræða	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	7	punct	_	_
 
@@ -41,22 +41,22 @@
 5	á	á	ADP	P	_	11	case	_	_
 6	að	að	SCONJ	C	_	11	mark	_	_
 7	gegnsæið	gegnsæi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
-8	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	7	amod	_	_
+8	eitt	einn	DET	ONE-N	Case=Nom	7	amod	_	_
 9	og	og	CCONJ	CONJ	_	10	cc	_	_
 10	sér	sér	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	conj	_	_
 11	réttlætir	réttlæta	VERB	VBPI	Mood=Ind|Tense=Pres	4	obl	_	_
 12	ekki	ekki	ADV	NEG	_	11	advmod	_	_
-13	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	11	obj	_	_
+13	allt	allur	DET	Q-A	Case=Acc	11	obj	_	_
 14	sem	sem	SCONJ	C	_	15	mark	_	_
 15	sést	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	4	punct	_	_
+16	,	,	PUNCT	,	_	13	punct	_	_
 17	en	en	CCONJ	CONJ	_	19	cc	_	_
 18	ég	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
 19	ætla	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
 20	ekki	ekki	ADV	NEG	_	19	advmod	_	_
 21	að	að	PART	TO	_	22	mark	_	_
 22	segja	segja	VERB	VB	VerbForm=Inf	19	xcomp	_	_
-23	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	22	obj	_	_
+23	meira	mikill	DET	QR-A	Case=Acc	22	obj	_	_
 24	um	um	ADP	P	_	25	case	_	_
 25	það	það	PRON	PRO-A	Case=Acc	22	obl	_	_
 26	að	að	ADP	P	_	28	case	_	_
@@ -94,20 +94,20 @@
 25	mikið	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	27	amod	_	_
 26	útgerðin	útgerð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
 27	þoli	þola	VERB	VBPS	Mood=Sub|Tense=Pres	22	conj	_	_
-28	að	að	SCONJ	C	_	37	mark	_	_
-29	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	37	expl	_	_
-30	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	37	cop	_	_
+28	að	að	SCONJ	C	_	32	mark	_	_
+29	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	32	expl	_	_
+30	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	32	cop	_	_
 31	í	í	ADP	P	_	32	case	_	_
-32	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	37	obl	_	_
+32	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	xcomp	_	_
 33	og	og	CCONJ	CONJ	_	34	cc	_	_
 34	veru	vera	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	conj	_	_
-35	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	37	amod	_	_
+35	enginn	enginn	DET	Q-N	Case=Nom	37	amod	_	_
 36	sérstakur	sérstakur	ADJ	ADJ-N	Case=Nom|Degree=Pos	37	amod	_	_
-37	ágreiningur	ágreiningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	xcomp	_	_
+37	ágreiningur	ágreiningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	32	obl	_	_
 38	um	um	ADP	P	_	39	case	_	_
-39	það	það	PRON	PRO-A	Case=Acc	37	obl	_	_
+39	það	það	PRON	PRO-A	Case=Acc	32	obl	_	_
 40	í	í	ADP	P	_	41	case	_	_
-41	þjóðfélaginu	þjóðfélag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	37	obl	_	SpaceAfter=No
+41	þjóðfélaginu	þjóðfélag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	SpaceAfter=No
 42	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4525575,.5
@@ -119,7 +119,7 @@
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 5	út	út	ADP	RP	_	9	compound:prt	_	_
 6	af	af	ADP	P	_	9	case	_	_
-7	þeim	sá	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
+7	þeim	sá	DET	D-D	Case=Dat	9	det	_	_
 8	6,4	_	NUM	NUM-D	Case=Dat	9	nummod	_	_
 9	milljörðum	milljarður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	0	root	_	_
 10	sem	sem	SCONJ	C	_	11	mark	_	_
@@ -145,7 +145,7 @@
 30	að	að	ADP	P	_	31	case	_	_
 31	láni	lán	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	_
 32	á	á	ADP	P	_	35	case	_	_
-33	hverju	hver	DET	Q-D	Case=Dat|Degree=Pos	35	amod	_	_
+33	hverju	hver	DET	Q-D	Case=Dat	35	amod	_	_
 34	einasta	einasti	ADJ	ADJ-D	Case=Dat|Degree=Pos	35	amod	_	_
 35	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	9	punct	_	_
@@ -172,11 +172,11 @@
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	búum	búa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	við	við	ADP	P	_	5	case	_	_
-4	þær	sá	DET	D-A	Case=Acc|PronType=Art	5	det	_	_
+4	þær	sá	DET	D-A	Case=Acc	5	det	_	_
 5	kringumstæðum	kringumstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
 6	núna	núna	ADV	ADV	Degree=Pos	2	advmod	_	_
 7	að	að	SCONJ	C	_	13	mark	_	_
-8	engin	enginn	DET	Q-N	Case=Nom|Degree=Pos	9	amod	_	_
+8	engin	enginn	DET	Q-N	Case=Nom	9	amod	_	_
 9	skattlagning	skattlagning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
 10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
 11	í	í	ADP	P	_	12	case	_	_
@@ -192,7 +192,7 @@
 3	virðisaukaskatt	virðisaukaskattur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	0	root	_	_
 4	á	á	ADP	P	_	5	case	_	_
 5	mat	matur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	3	punct	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
 7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
 8	sanngjarnt	sanngjarn	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0
 9	að	að	PART	TO	_	12	mark	_	_
@@ -243,12 +243,12 @@
 11	af	af	ADP	P	_	12	case	_	_
 12	tekjum	tekja	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	_
 13	fólks	fólk	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	nmod:poss	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	5	punct	_	_
+14	,	,	PUNCT	,	_	12	punct	_	_
 15	en	en	CCONJ	CONJ	_	17	cc	_	_
 16	við	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
 17	búum	búa	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
 18	við	við	ADP	P	_	20	case	_	_
-19	þann	sá	DET	D-A	Case=Acc|PronType=Art	20	det	_	_
+19	þann	sá	DET	D-A	Case=Acc	20	det	_	_
 20	ríkisrekstur	ríkisrekstur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
 21	að	að	PART	TO	_	22	mark	_	_
 22	þurfa	þurfa	VERB	VB	VerbForm=Inf	20	xcomp	_	_
@@ -258,7 +258,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4525575,.11
 # X_ID = ID_missing_15
 # text = Þá peninga sem við fáum ekki fáum við sjálfkrafa að láni.
-1	Þá	sá	DET	D-A	Case=Acc|PronType=Art	2	det	_	_
+1	Þá	sá	DET	D-A	Case=Acc	2	det	_	_
 2	peninga	peningur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obj	_	_
 3	sem	sem	SCONJ	C	_	5	mark	_	_
 4	við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -290,7 +290,7 @@
 # text = Það er það sem fólk er ósátt við.
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+3	það	sá	DET	D-N	Case=Nom	0	root	_	_
 4	sem	sem	SCONJ	C	_	7	mark	_	_
 5	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
@@ -312,7 +312,7 @@
 9	ekki	ekki	ADV	NEG	_	11	advmod	_	_
 10	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	11	aux	_	_
 11	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	6	acl:relcl	_	_
-12	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	13	det	_	_
+12	þetta	þessi	DET	D-N	Case=Nom	13	det	_	_
 13	tekjutap	tekjutap	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
 14	fyrir	fyrir	ADP	P	_	15	case	_	_
 15	ríkið	ríki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
@@ -337,7 +337,7 @@
 34	það	það	PRON	PRO-A	Case=Acc	33	ccomp	_	SpaceAfter=No
 35	,	,	PUNCT	,	_	59	punct	_	_
 36	ef	ef	ADP	P	_	39	case	_	_
-37	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	39	nsubj	_	_
+37	eitthvað	einhver	DET	Q-N	Case=Nom	39	nsubj	_	_
 38	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	39	aux	_	_
 39	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	59	obl	_	_
 40	til	til	ADP	P	_	41	case	_	_
@@ -358,7 +358,7 @@
 55	samfélaginu	samfélag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	53	obl	_	_
 56	ekki	ekki	ADV	NEG	_	59	advmod	_	_
 57	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	59	cop	_	_
-58	þau	sá	DET	D-N	Case=Nom|PronType=Art	59	det	_	_
+58	þau	sá	DET	D-N	Case=Nom	59	det	_	_
 59	sömu	sami	PRON	PRO-N	Case=Nom	0	root	_	SpaceAfter=No
 60	.	.	PUNCT	.	_	59	punct	_	_
 
@@ -372,7 +372,7 @@
 5	þúsund	þúsund	NUM	NUM-N	Case=Nom	6	nummod	_	_
 6	undirskriftir	undirskrift	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	nsubj	_	_
 7	gegn	gegn	ADP	P	_	8	case	_	_
-8	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	0	root	_	SpaceAfter=No
+8	þessu	þessi	DET	D-D	Case=Dat	0	root	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4525575,.16
@@ -405,9 +405,9 @@
 11	gera	gera	VERB	DO	VerbForm=Inf	9	xcomp	_	_
 12	það	það	PRON	PRO-A	Case=Acc	11	obj	_	_
 13	með	með	ADP	P	_	15	case	_	_
-14	meiri	mikill	DET	QR-D	Case=Dat|Degree=Pos	15	amod	_	_
+14	meiri	mikill	DET	QR-D	Case=Dat	15	amod	_	_
 15	sátt	sátt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	4	punct	_	_
+16	,	,	PUNCT	,	_	11	punct	_	_
 17	en	en	CCONJ	CONJ	_	22	cc	_	_
 18	það	það	PRON	PRO-N	Case=Nom	22	nsubj	_	_
 19	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	22	cop	_	_

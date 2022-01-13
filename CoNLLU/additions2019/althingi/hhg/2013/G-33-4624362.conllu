@@ -9,7 +9,7 @@
 6	svo	svo	ADV	ADVR	Degree=Cmp	12	advmod	_	_
 7	sem	sem	ADV	ADV	Degree=Pos	6	advmod	_	_
 8	ekki	ekki	ADV	NEG	_	12	advmod	_	_
-9	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	12	obl	_	_
+9	mikið	mikill	DET	Q-N	Case=Nom	12	obl	_	_
 10	eftir	eftir	ADV	ADV	Degree=Pos	12	advmod	_	_
 11	að	að	PART	TO	_	12	mark	_	_
 12	ræða	ræða	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -18,7 +18,7 @@
 15	sér	sig	PRON	PRO-D	Case=Dat	14	nmod	_	_
 16	hvað	hver	PRON	WPRO-N	Case=Nom	17	obj	_	_
 17	viðkemur	viðkoma	ADV	VBPI	Mood=Ind|Tense=Pres	12	advmod	_	_
-18	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	20	det	_	_
+18	þessu	þessi	DET	D-D	Case=Dat	20	det	_	_
 19	tiltekna	tiltekinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	20	amod	_	_
 20	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obj	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	12	punct	_	_
@@ -87,7 +87,7 @@
 17	,	,	PUNCT	,	_	16	punct	_	_
 18	eins	_	ADV	ADVR	Degree=Cmp	28	advmod	_	_
 19	og	_	ADP	P	_	23	case	_	_
-20	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	22	amod	_	_
+20	margir	margur	DET	Q-N	Case=Nom	22	amod	_	_
 21	hægri	hægri	ADJ	ADJ-N	Case=Nom|Degree=Pos	22	amod	_	_
 22	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	23	nsubj	_	_
 23	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	18	obl	_	_
@@ -105,7 +105,7 @@
 35	sömuleiðis	sömuleiðis	ADV	ADV	Degree=Pos	37	advmod	_	_
 36	mætti	mega	AUX	MDDS	Mood=Sub|Tense=Past	37	aux	_	_
 37	saka	saka	VERB	VB	VerbForm=Inf	5	conj	_	OriginalHead=0
-38	hið	hinn	DET	D-A	Case=Acc|PronType=Art	40	det	_	_
+38	hið	hinn	DET	D-A	Case=Acc	40	det	_	_
 39	klassíska	klassískur	ADJ	ADJ-A	Case=Acc|Degree=Pos	40	amod	_	_
 40	vinstri	vinstri	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	obj	_	_
 41	um	um	ADP	P	_	43	case	_	_
@@ -132,7 +132,7 @@
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	kannski	kannski	ADV	ADV	Degree=Pos	4	advmod	_	_
-4	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	0	root	_	_
+4	eitthvað	einhver	DET	Q-N	Case=Nom	0	root	_	_
 5	sem	sem	SCONJ	C	_	7	mark	_	_
 6	við	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 7	ættum	eiga	VERB	VBDS	Mood=Sub|Tense=Past	4	acl:relcl	_	_
@@ -142,7 +142,7 @@
 11	yfir	yfir	ADP	P	_	12	case	_	_
 12	kaffibolla	kaffibolli	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
 13	eða	eða	CCONJ	CONJ	_	15	cc	_	_
-14	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	15	amod	_	_
+14	eitthvað	einhver	DET	Q-A	Case=Acc	15	amod	_	_
 15	svoleiðis	svoleiðis	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	xcomp	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -175,7 +175,7 @@
 24	að	að	PART	TO	_	25	mark	_	_
 25	tala	tala	VERB	VB	VerbForm=Inf	20	obl	_	_
 26	um	um	ADP	P	_	29	case	_	_
-27	einhverja	einhver	DET	Q-A	Case=Acc|Degree=Pos	29	amod	_	_
+27	einhverja	einhver	DET	Q-A	Case=Acc	29	amod	_	_
 28	sérstaka	sérstakur	ADJ	ADJ-A	Case=Acc|Degree=Pos	29	amod	_	_
 29	sátt	sátt	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obl	_	_
 30	þegar	þegar	ADP	P	_	31	case	_	_
@@ -183,7 +183,7 @@
 32	að	að	ADP	P	_	33	case	_	_
 33	kvótakerfinu	kvótakerfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	_
 34	eða	eða	CCONJ	CONJ	_	37	cc	_	_
-35	öllu	allur	DET	Q-D	Case=Dat|Degree=Pos	36	obl	_	_
+35	öllu	allur	DET	Q-D	Case=Dat	36	obl	_	_
 36	heldur	gjarna	ADV	ADVR	Degree=Cmp	37	advmod	_	_
 37	veiðiheimildum	veiðiheimild	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	31	conj	_	SpaceAfter=No
 38	.	.	PUNCT	.	_	2	punct	_	_
@@ -247,7 +247,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4624362,.9
 # X_ID = ID_missing_10
 # text = Það sem ég meina með því og ég þakka undirtektir hv. þingmanns um að frekar beri að kalla þetta auðlindagjald en veiðigjald er að mér finnst að það ætti kannski að endurspeglast meira í nefndarstörfum og þegar við tölum um það almennt, vegna þess að eignarréttur hlýtur að eiga við þar og er enginn ágreiningur um það eftir því sem ég best fæ séð.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+1	Það	sá	DET	D-N	Case=Nom	9	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 4	meina	meina	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
@@ -255,7 +255,7 @@
 6	því	það	PRON	PRO-D	Case=Dat	4	obl	_	_
 7	og	og	CCONJ	CONJ	_	9	cc	_	_
 8	ég	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
-9	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	1	parataxis	_	_
+9	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 10	undirtektir	undirtekt	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obj	_	_
 11	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	12	amod	_	_
 12	þingmanns	þingmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	nmod:poss	_	_
@@ -265,14 +265,14 @@
 16	beri	bera	VERB	VBPS	Mood=Sub|Tense=Pres	10	obl	_	_
 17	að	að	PART	TO	_	18	mark	_	_
 18	kalla	kalla	VERB	VB	VerbForm=Inf	16	xcomp	_	_
-19	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	20	nsubj	_	_
+19	þetta	þessi	DET	D-A	Case=Acc	20	nsubj	_	_
 20	auðlindagjald	auðlindagjald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	ccomp	_	_
 21	en	en	ADP	P	_	22	case	_	_
 22	veiðigjald	veiðigjald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	_
-23	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
+23	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 24	að	að	SCONJ	C	_	26	mark	_	_
 25	mér	ég	PRON	PRO-D	Case=Dat	26	nsubj	_	_
-26	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	1	ccomp	_	_
+26	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	9	ccomp	_	_
 27	að	að	SCONJ	C	_	29	mark	_	_
 28	það	það	PRON	PRO-N	Case=Nom	29	nsubj	_	_
 29	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	26	ccomp	_	_
@@ -281,11 +281,11 @@
 32	endurspeglast	endurspegla	VERB	VB	VerbForm=Inf	29	xcomp	_	_
 33	meira	mjög	ADV	ADVR	Degree=Cmp	32	advmod	_	_
 34	í	í	ADP	P	_	35	case	_	_
-35	nefndarstörfum	nefndarstarf	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	39	obl	_	_
+35	nefndarstörfum	nefndarstarf	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	32	obl	_	_
 36	og	og	CCONJ	CONJ	_	39	cc	_	_
 37	þegar	þegar	ADP	P	_	39	case	_	_
 38	við	ég	PRON	PRO-N	Case=Nom	39	nsubj	_	_
-39	tölum	tala	VERB	VBPI	Mood=Ind|Tense=Pres	32	obl	_	_
+39	tölum	tala	VERB	VBPI	Mood=Ind|Tense=Pres	35	conj	_	_
 40	um	um	ADP	P	_	41	case	_	_
 41	það	það	PRON	PRO-A	Case=Acc	39	obl	_	_
 42	almennt	almennt	ADV	ADV	Degree=Pos	39	advmod	_	SpaceAfter=No
@@ -301,18 +301,18 @@
 52	þar	þar	ADV	ADV	Degree=Pos	50	advmod	_	_
 53	og	og	CCONJ	CONJ	_	58	cc	_	_
 54	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	58	cop	_	_
-55	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	56	amod	_	_
+55	enginn	enginn	DET	Q-N	Case=Nom	56	amod	_	_
 56	ágreiningur	ágreiningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	58	nsubj	_	_
 57	um	um	ADP	P	_	58	case	_	_
 58	það	það	PRON	PRO-A	Case=Acc	48	conj	_	_
 59	eftir	eftir	ADP	P	_	60	case	_	_
-60	því	sá	DET	D-D	Case=Dat|PronType=Art	58	obl	_	_
+60	því	sá	DET	D-D	Case=Dat	58	obl	_	_
 61	sem	sem	SCONJ	C	_	64	mark	_	_
 62	ég	ég	PRON	PRO-N	Case=Nom	64	nsubj	_	_
 63	best	vel	ADV	ADVS	Degree=Sup	64	advmod	_	_
 64	fæ	fá	VERB	VBPI	Mood=Ind|Tense=Pres	60	acl:relcl	_	_
 65	séð	sjá	VERB	VBN	Tense=Past|VerbForm=Part	64	advcl	_	SpaceAfter=No
-66	.	.	PUNCT	.	_	1	punct	_	_
+66	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4624362,.10
 # X_ID = ID_missing_11

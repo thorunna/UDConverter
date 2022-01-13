@@ -30,7 +30,7 @@
 27	við	við	ADP	P	_	29	case	_	_
 28	að	að	PART	TO	_	29	mark	_	_
 29	lýðræðisvæða	lýðræðisvæða	VERB	VB	VerbForm=Inf	25	obl	_	_
-30	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	31	det	_	_
+30	þetta	þessi	DET	D-A	Case=Acc	31	det	_	_
 31	ferli	ferli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	29	obj	_	_
 32	eftir	eftir	ADP	P	_	34	case	_	_
 33	bestu	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	34	amod	_	_
@@ -47,11 +47,11 @@
 5	menntamálaráðherra	menntamálaráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
 6	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	2	ccomp	_	_
 7	ekki	ekki	ADV	NEG	_	6	advmod	_	_
-8	mikla	mikill	ADV	Q-A	Case=Acc|Degree=Pos	9	advmod	_	_
+8	mikla	mikill	ADV	Q-A	Case=Acc	9	advmod	_	_
 9	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	9	punct	_	_
 11	eða	eða	CCONJ	CONJ	_	12	cc	_	_
-12	nokkra	nokkur	DET	Q-A	Case=Acc|Degree=Pos	9	conj	_	SpaceAfter=No
+12	nokkra	nokkur	DET	Q-A	Case=Acc	9	conj	_	SpaceAfter=No
 13	,	,	PUNCT	,	_	12	punct	_	_
 14	á	á	ADP	P	_	15	case	_	_
 15	því	það	PRON	PRO-D	Case=Dat	9	obl	_	_
@@ -62,7 +62,7 @@
 20	lýðræðisvæða	lýðræðisvæða	VERB	VB	VerbForm=Inf	21	nmod:poss	_	_
 21	ferlið	ferli	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	nsubj	_	_
 22	á	á	ADP	P	_	24	case	_	_
-23	nokkurn	nokkur	DET	Q-A	Case=Acc|Degree=Pos	24	amod	_	_
+23	nokkurn	nokkur	DET	Q-A	Case=Acc	24	amod	_	_
 24	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	ccomp	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -70,7 +70,7 @@
 # X_IDs = ID_missing_3 ; ID_missing_4
 # text = Eftir því sem ég best fæ skilið telur hæstv. menntamálaráðherra það í reynd vonlaust að lýðræðisvæða ferlið og segir það með þeim orðum að alveg sama hætta sé á pólitík með valnefnd.
 1	Eftir	eftir	ADP	P	_	2	case	_	_
-2	því	sá	DET	D-D	Case=Dat|PronType=Art	8	obl	_	_
+2	því	sá	DET	D-D	Case=Dat	8	obl	_	_
 3	sem	sem	SCONJ	C	_	7	mark	_	_
 4	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 5	best	vel	ADV	ADVS	Degree=Sup	7	advmod	_	_
@@ -90,7 +90,7 @@
 19	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	8	conj	_	OriginalHead=0
 20	það	það	PRON	PRO-A	Case=Acc	19	obj	_	_
 21	með	með	ADP	P	_	23	case	_	_
-22	þeim	sá	DET	D-D	Case=Dat|PronType=Art	23	det	_	_
+22	þeim	sá	DET	D-D	Case=Dat	23	det	_	_
 23	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obl	_	_
 24	að	að	SCONJ	C	_	30	mark	_	_
 25	alveg	alveg	ADV	ADV	Degree=Pos	27	advmod	_	_
@@ -127,7 +127,7 @@
 19	alltaf	alltaf	ADV	ADV	Degree=Pos	17	advmod	_	_
 20	pólitískt	pólitískur	ADJ	ADJ-N	Case=Nom|Degree=Pos	21	amod	_	_
 21	fyrirbæri	fyrirbæri	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	xcomp	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	2	punct	_	_
+22	,	,	PUNCT	,	_	17	punct	_	_
 23	enda	enda	ADV	ADV	Degree=Pos	24	advmod	_	_
 24	undirstrikar	undirstrika	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 25	það	það	PRON	PRO-N	Case=Nom	24	nsubj	_	_
@@ -168,7 +168,7 @@
 10	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
 11	að	að	PART	TO	_	12	mark	_	_
 12	gera	gera	VERB	DO	VerbForm=Inf	10	xcomp	_	_
-13	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	12	nsubj	_	_
+13	þetta	þessi	DET	D-A	Case=Acc	12	nsubj	_	_
 14	eins	eins	ADV	ADVR	Degree=Cmp	15	amod	_	_
 15	lýðræðislegt	lýðræðislegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
 16	og	og	CCONJ	CONJ	_	17	cc	_	_
@@ -180,7 +180,7 @@
 22	til	til	ADP	P	_	23	case	_	_
 23	þess	það	PRON	PRO-G	Case=Gen	5	conj	_	OriginalHead=0
 24	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
-25	margar	margur	DET	Q-N	Case=Nom|Degree=Pos	26	amod	_	_
+25	margar	margur	DET	Q-N	Case=Nom	26	amod	_	_
 26	leiðir	leið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	23	nsubj	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -200,7 +200,7 @@
 11	í	í	ADP	P	_	12	case	_	_
 12	átt	átt	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
 13	að	að	ADP	P	_	15	case	_	_
-14	meira	mikill	DET	QR-D	Case=Dat|Degree=Pos	15	amod	_	_
+14	meira	mikill	DET	QR-D	Case=Dat	15	amod	_	_
 15	lýðræði	lýðræði	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -218,7 +218,7 @@
 9	af	af	ADP	P	_	10	case	_	_
 10	því	það	PRON	PRO-D	Case=Dat	7	obl	_	_
 11	ef	ef	ADP	P	_	12	case	_	_
-12	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	7	obl	_	_
+12	eitthvað	einhver	DET	Q-N	Case=Nom	7	obl	_	_
 13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -253,7 +253,7 @@
 2	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
 4	minna	minna	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-5	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	4	obj	_	_
+5	alla	allur	DET	Q-A	Case=Acc	4	obj	_	_
 6	á	á	ADP	P	_	10	case	_	_
 7	að	að	SCONJ	C	_	10	mark	_	_
 8	samsæri	samsæri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
@@ -327,7 +327,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4892260,.13
 # X_ID = ID_missing_19
 # text = Þetta er hugsunarhátturinn.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	hugsunarhátturinn	hugsunarháttur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	3	punct	_	_
@@ -335,7 +335,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4892260,.14
 # X_ID = ID_missing_20
 # text = Þetta er pólitík.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	pólitík	pólitík	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	3	punct	_	_

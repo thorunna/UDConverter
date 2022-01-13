@@ -46,9 +46,9 @@
 43	vegna	vegna	ADP	P	_	42	case	_	SpaceAfter=No
 44	,	,	PUNCT	,	_	43	punct	_	_
 45	til	til	ADP	P	_	46	case	_	_
-46	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	conj	_	OriginalHead=0
+46	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	28	conj	_	_
 47	þegar	þegar	ADP	P	_	48	case	_	_
-48	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+48	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	46	obl	_	_
 49	að	að	ADP	P	_	50	case	_	_
 50	rétti	réttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	48	obl	_	_
 51	fólks	fólk	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	50	nmod:poss	_	_
@@ -57,7 +57,7 @@
 54	að	að	PART	TO	_	55	mark	_	_
 55	sækja	sækja	VERB	VB	VerbForm=Inf	53	xcomp	_	_
 56	þjónustu	þjónusta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	55	obj	_	SpaceAfter=No
-57	.	.	PUNCT	.	_	20	punct	_	_
+57	.	.	PUNCT	.	_	5	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4737686,.2
 # X_ID = ID_missing_3
@@ -70,10 +70,10 @@
 6	gegn	gegn	ADP	P	_	7	case	_	_
 7	mismunun	mismunun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 8	á	á	ADP	P	_	10	case	_	_
-9	þeim	sá	DET	D-D	Case=Dat|PronType=Art	10	det	_	_
+9	þeim	sá	DET	D-D	Case=Dat	10	det	_	_
 10	vettvangi	vettvangur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 11	og	og	CCONJ	CONJ	_	14	cc	_	_
-12	ýmsum	ýmis	DET	Q-D	Case=Dat|Degree=Pos	14	amod	_	_
+12	ýmsum	ýmis	DET	Q-D	Case=Dat	14	amod	_	_
 13	öðrum	annar	PRON	OTHER-D	Case=Dat	14	det	_	_
 14	lögum	lag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	conj	_	_
 15	þar	þar	ADV	ADV	Degree=Pos	17	obl	_	_
@@ -96,7 +96,7 @@
 10	að	að	PART	TO	_	11	mark	_	_
 11	grínast	grína	VERB	VB	VerbForm=Inf	9	xcomp	_	_
 12	með	með	ADP	P	_	13	case	_	_
-13	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	11	obl	_	_
+13	eitthvað	einhver	DET	Q-A	Case=Acc	11	obl	_	_
 14	eða	eða	CCONJ	CONJ	_	15	cc	_	_
 15	hæðast	hæða	VERB	VB	VerbForm=Inf	11	xcomp	_	_
 16	að	að	ADP	P	_	17	case	_	_
@@ -108,7 +108,7 @@
 22	svo	svo	ADV	ADV	Degree=Pos	20	advmod	_	_
 23	ekki	ekki	ADV	NEG	_	26	advmod	_	_
 24	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	26	cop	_	_
-25	meira	mikill	DET	QR-N	Case=Nom|Degree=Pos	26	nsubj	_	_
+25	meira	mikill	DET	QR-N	Case=Nom	26	nsubj	_	_
 26	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	22	advcl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	20	punct	_	_
 
@@ -172,7 +172,7 @@
 12	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
 13	mjög	mjög	ADV	ADV	Degree=Pos	14	amod	_	_
 14	sambærileg	sambærilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	acl:relcl	_	_
-15	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	14	obl	_	SpaceAfter=No
+15	þessum	þessi	DET	D-D	Case=Dat	14	obl	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	15	punct	_	_
 17	það	það	PRON	PRO-N	Case=Nom	10	parataxis	_	_
 18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
@@ -198,7 +198,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4737686,.7
 # X_ID = ID_missing_8
 # text = Hver, sem opinberlega dregur dár að eða smánar trúarkenningar eða guðsdýrkun löglegs trúarbragðafélags, sem er hér á landi, skal sæta sektum eða fangelsi allt að 3 mánuðum.
-1	Hver	hver	DET	Q-N	Case=Nom|Degree=Pos	23	nsubj	_	SpaceAfter=No
+1	Hver	hver	DET	Q-N	Case=Nom	23	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	sem	sem	SCONJ	C	_	5	mark	_	_
 4	opinberlega	opinberlega	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -224,7 +224,7 @@
 24	sektum	sekt	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	26	obl	_	_
 25	eða	eða	CCONJ	CONJ	_	26	cc	_	_
 26	fangelsi	fangelsi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obj	_	_
-27	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	26	obl	_	_
+27	allt	allur	DET	Q-A	Case=Acc	26	obl	_	_
 28	að	að	ADP	P	_	30	case	_	_
 29	3	þrír	NUM	NUM-D	Case=Dat	30	nummod	_	_
 30	mánuðum	mánuður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	obl	_	SpaceAfter=No
@@ -247,13 +247,13 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4737686,.9
 # X_ID = ID_missing_10
 # text = Þetta eru mjög sambærileg lög að því leyti að þarna er bannað að gera grín.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	5	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	5	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
 4	sambærileg	sambærilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
 5	lög	lag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 6	að	að	ADP	P	_	8	case	_	_
-7	því	sá	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+7	því	sá	DET	D-D	Case=Dat	8	det	_	_
 8	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 9	að	að	SCONJ	C	_	12	mark	_	_
 10	þarna	þarna	ADV	ADV	Degree=Pos	12	advmod	_	_
@@ -292,8 +292,8 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4737686,.12
 # X_ID = ID_missing_13
 # text = Það eina sem gerðist var að kristnir í landinu og saksóknari sem væntanlega hefur verið kristinn varð móðgaður, svo hann kærði og hann vann.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
-2	eina	einn	DET	ONE-N	Case=Nom|Number=Sing	1	det	_	_
+1	Það	sá	DET	D-N	Case=Nom	0	root	_	_
+2	eina	einn	DET	ONE-N	Case=Nom	1	det	_	_
 3	sem	sem	SCONJ	C	_	4	mark	_	_
 4	gerðist	gera	VERB	DODI	Mood=Ind|Tense=Past	1	acl:relcl	_	_
 5	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	1	cop	_	_
@@ -355,7 +355,7 @@
 # X_ID = ID_missing_18
 # text = Ef þessi lög eiga að standast lög um tjáningarfrelsi vil ég velta því upp, virðulegi forseti, að það sé eitthvað mikið að því hvernig við lítum á tjáningarfrelsið.
 1	Ef	ef	ADP	P	_	4	case	_	_
-2	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	3	det	_	_
+2	þessi	þessi	DET	D-N	Case=Nom	3	det	_	_
 3	lög	lag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 4	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	12	obl	_	_
 5	að	að	PART	TO	_	6	mark	_	_
@@ -375,8 +375,8 @@
 19	að	að	SCONJ	C	_	25	mark	_	_
 20	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	25	expl	_	_
 21	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	25	cop	_	_
-22	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	25	obl	_	_
-23	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	22	amod	_	_
+22	eitthvað	einhver	DET	Q-N	Case=Nom	25	obl	_	_
+23	mikið	mikill	DET	Q-N	Case=Nom	22	amod	_	_
 24	að	að	ADP	P	_	25	case	_	_
 25	því	það	PRON	PRO-D	Case=Dat	12	ccomp	_	_
 26	hvernig	hvernig	ADV	WADV	Degree=Pos	28	advmod	_	_

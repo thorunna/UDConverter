@@ -4,7 +4,7 @@
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
-4	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	10	nsubj	_	_
+4	Þetta	þessi	DET	D-N	Case=Nom	10	nsubj	_	_
 5	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	10	cop	_	_
 6	stutt	stuttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	_
 7	en	en	CCONJ	CONJ	_	9	cc	_	_
@@ -18,14 +18,14 @@
 # text = Það þarf ekkert að lesa á milli línanna með þetta andsvar.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	2	obl	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	2	obl	_	_
 4	að	að	PART	TO	_	5	mark	_	_
 5	lesa	lesa	VERB	VB	VerbForm=Inf	2	xcomp	_	_
 6	á	á	ADP	P	_	8	case	_	_
 7	milli	milli	ADP	P	_	8	case	_	_
 8	línanna	lína	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	5	obl	_	_
 9	með	með	ADP	P	_	11	case	_	_
-10	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+10	þetta	þessi	DET	D-A	Case=Acc	11	det	_	_
 11	andsvar	andsvar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -41,7 +41,7 @@
 7	að	að	PART	TO	_	8	mark	_	_
 8	taka	taka	VERB	VB	VerbForm=Inf	0	root	_	_
 9	undir	undir	ADP	P	_	11	case	_	_
-10	þá	sá	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+10	þá	sá	DET	D-A	Case=Acc	11	det	_	_
 11	gagnrýni	gagnrýni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
 12	sem	sem	SCONJ	C	_	17	mark	_	_
 13	við	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
@@ -79,11 +79,11 @@
 7	ekki	ekki	ADV	NEG	_	12	advmod	_	_
 8	bara	bara	ADV	FP	Degree=Pos	12	advmod	_	_
 9	mjög	mjög	ADV	ADV	Degree=Pos	10	advmod	_	_
-10	mikil	mikill	ADV	Q-A	Case=Acc|Degree=Pos	11	advmod	_	_
+10	mikil	mikill	ADV	Q-A	Case=Acc	11	advmod	_	_
 11	völd	vald	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
 12	heldur	heldur	ADV	ADVR	Degree=Cmp	5	obj	_	_
 13	gríðarlega	gríðarlega	ADV	ADV	Degree=Pos	14	advmod	_	_
-14	mikil	mikill	ADV	Q-A	Case=Acc|Degree=Pos	15	advmod	_	_
+14	mikil	mikill	ADV	Q-A	Case=Acc	15	advmod	_	_
 15	völd	vald	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	conj	_	_
 16	Gripið	grípa	VERB	VAN	Tense=Past|VerbForm=Part	15	dep	_	_
 17	fram	fram	ADP	RP	_	18	compound:prt	_	_
@@ -106,10 +106,10 @@
 6	færa	færa	VERB	VB	VerbForm=Inf	4	xcomp	_	_
 7	vald	vald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
 8	frá	frá	ADP	P	_	9	case	_	_
-9	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
-10	yfir	yfir	ADV	ADV	Degree=Pos	6	obl	_	_
+9	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+10	yfir	yfir	ADV	ADV	Degree=Pos	12	advmod	_	_
 11	til	til	ADP	P	_	12	case	_	_
-12	forsætisráðuneytisins	forsætisráðuneyti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	conj	_	SpaceAfter=No
+12	forsætisráðuneytisins	forsætisráðuneyti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	conj	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4649268,.6
@@ -136,8 +136,8 @@
 6	að	að	SCONJ	C	_	34	mark	_	_
 7	miðað	miða	VERB	VAN	Tense=Past|VerbForm=Part	34	advcl	_	_
 8	við	við	ADP	P	_	9	case	_	_
-9	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	7	obl	_	_
-10	það	sá	DET	D-A	Case=Acc|PronType=Art	9	det	_	_
+9	allt	allur	DET	Q-A	Case=Acc	7	obl	_	_
+10	það	sá	DET	D-A	Case=Acc	9	det	_	_
 11	sem	sem	SCONJ	C	_	14	mark	_	_
 12	við	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
 13	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	14	aux	_	_
@@ -153,8 +153,8 @@
 23	koma	koma	VERB	VB	VerbForm=Inf	34	obl	_	_
 24	og	og	CCONJ	CONJ	_	25	cc	_	_
 25	segja	segja	VERB	VB	VerbForm=Inf	23	conj	_	_
-26	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	27	amod	_	_
-27	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	25	obj	_	_
+26	eitthvað	einhver	DET	Q-A	Case=Acc	27	amod	_	_
+27	allt	allur	DET	Q-A	Case=Acc	25	obj	_	_
 28	annað	annar	PRON	OTHER-A	Case=Acc	27	det	_	SpaceAfter=No
 29	,	,	PUNCT	,	_	34	punct	_	_
 30	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	34	cop	_	_
@@ -217,7 +217,7 @@
 3	ljóst	ljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 4	að	að	SCONJ	C	_	8	mark	_	_
 5	fyrirvarar	fyrirvari	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	nsubj	_	_
-6	þessara	þessi	DET	D-G	Case=Gen|PronType=Art	7	det	_	_
+6	þessara	þessi	DET	D-G	Case=Gen	7	det	_	_
 7	ráðherra	ráðherra	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	5	nmod:poss	_	_
 8	standa	standa	VERB	VBPI	Mood=Ind|Tense=Pres	3	ccomp	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	3	punct	_	_
@@ -229,7 +229,7 @@
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	á	á	ADP	P	_	4	case	_	_
 4	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
-5	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	6	det	_	_
+5	þessari	þessi	DET	D-D	Case=Dat	6	det	_	_
 6	miðstýringaráráttu	miðstýringarárátta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	nmod:poss	_	_
 7	sem	sem	SCONJ	C	_	12	mark	_	_
 8	ríkisstjórnin	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
@@ -238,15 +238,15 @@
 11	.	.	PUNCT	.	_	10	punct	_	_
 12	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	6	acl:relcl	_	_
 13	fyrir	fyrir	ADP	P	_	12	obl	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	4	punct	_	_
+14	,	,	PUNCT	,	_	12	punct	_	_
 15	þeir	hann	PRON	PRO-N	Case=Nom	18	nsubj	_	_
 16	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
 17	á	á	ADP	P	_	18	case	_	_
 18	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	conj	_	OriginalHead=0
 19	valdaframsali	valdaframsal	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	nmod:poss	_	_
 20	frá	frá	ADP	P	_	21	case	_	_
-21	þingi	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
-22	til	til	ADP	P	_	19	obl	_	_
-23	ríkisstjórnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	conj	_	SpaceAfter=No
+21	þingi	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
+22	til	til	ADP	P	_	23	case	_	_
+23	ríkisstjórnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	conj	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	4	punct	_	_
 

@@ -25,9 +25,9 @@
 22	viss	viss	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 23	um	um	ADP	P	_	26	case	_	_
 24	að	að	SCONJ	C	_	26	mark	_	_
-25	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	26	nsubj	_	_
+25	þetta	þessi	DET	D-N	Case=Nom	26	nsubj	_	_
 26	liðki	liðka	VERB	VBPS	Mood=Sub|Tense=Pres	22	amod	_	_
-27	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	26	obj	_	_
+27	allt	allur	DET	Q-A	Case=Acc	26	obj	_	_
 28	til	til	ADP	RP	_	26	compound:prt	_	_
 29	fyrir	fyrir	ADP	P	_	30	case	_	_
 30	umræðunni	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
@@ -72,13 +72,13 @@
 9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
 10	galin	galinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	ccomp	_	_
 11	að	að	ADP	P	_	13	case	_	_
-12	því	sá	DET	D-D	Case=Dat|PronType=Art	13	det	_	_
+12	því	sá	DET	D-D	Case=Dat	13	det	_	_
 13	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
 14	hvernig	hvernig	ADV	WADV	Degree=Pos	16	advmod	_	_
 15	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	16	nsubj	_	_
 16	nálguðust	nálgast	VERB	VBDI	Mood=Ind|Tense=Past	13	ccomp	_	_
 17	suðvesturhornið	suðvesturhorn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obj	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	5	punct	_	_
+18	,	,	PUNCT	,	_	16	punct	_	_
 19	mér	ég	PRON	PRO-D	Case=Dat	20	nsubj	_	_
 20	fannst	finna	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
 21	það	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
@@ -115,8 +115,8 @@
 24	hér	hér	ADV	ADV	Degree=Pos	20	obl	_	_
 25	fyrir	fyrir	ADP	P	_	24	case	_	_
 26	sunnan	sunnan	ADV	ADV	Degree=Pos	24	advmod	_	SpaceAfter=No
-27	;	;	PUNCT	.	_	4	punct	_	_
-28	eina	einn	DET	ONE-A	Case=Acc|Number=Sing	29	det	_	_
+27	;	;	PUNCT	.	_	24	punct	_	_
+28	eina	einn	DET	ONE-A	Case=Acc	29	det	_	_
 29	útgönguleið	útgönguleið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	nsubj	_	_
 30	okkar	ég	PRON	PRO-G	Case=Gen	29	nmod:poss	_	_
 31	sem	sem	SCONJ	C	_	32	mark	_	_
@@ -125,7 +125,7 @@
 34	suðvesturhorninu	suðvesturhorn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
 35	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	37	cop	_	_
 36	einmitt	einmitt	ADV	ADV	Degree=Pos	37	advmod	_	_
-37	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	4	conj	_	OriginalHead=0|SpaceAfter=No
+37	þessi	þessi	DET	D-N	Case=Nom	4	conj	_	OriginalHead=0|SpaceAfter=No
 38	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4557046,.6
@@ -142,11 +142,11 @@
 9	búinn	búa	VERB	VBN	Tense=Past|VerbForm=Part	3	parataxis	_	_
 10	að	að	PART	TO	_	11	mark	_	_
 11	svara	svara	VERB	VB	VerbForm=Inf	9	xcomp	_	_
-12	einni	einn	DET	ONE-D	Case=Dat|Number=Sing	13	amod	_	_
+12	einni	einn	DET	ONE-D	Case=Dat	13	amod	_	_
 13	spurningu	spurning	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obj	_	SpaceAfter=No
 14	:	:	PUNCT	,	_	13	punct	_	_
 15	Hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	28	aux	_	_
-16	sá	sá	DET	D-N	Case=Nom|PronType=Art	17	det	_	_
+16	sá	sá	DET	D-N	Case=Nom	17	det	_	_
 17	hópur	hópur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	nsubj	_	_
 18	sem	sem	SCONJ	C	_	19	mark	_	_
 19	átti	eiga	VERB	VBDI	Mood=Ind|Tense=Past	17	acl:relcl	_	_
@@ -191,7 +191,7 @@
 1	Mínar	minn	PRON	PRO-N	Case=Nom	2	nmod:poss	_	_
 2	heimildir	heimild	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-4	þær	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+4	þær	sá	DET	D-N	Case=Nom	0	root	_	_
 5	að	að	SCONJ	C	_	9	mark	_	_
 6	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
 7	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	9	cop	_	_
@@ -215,7 +215,7 @@
 3	vel	vel	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	2	cop	_	_
 5	að	að	SCONJ	C	_	9	mark	_	_
-6	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	9	nsubj	_	_
+6	eitthvað	einhver	DET	Q-N	Case=Nom	9	nsubj	_	_
 7	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	9	cop	_	_
 8	að	að	PART	TO	_	9	mark	_	_
 9	fara	fara	VERB	VB	VerbForm=Inf	2	ccomp	_	_
@@ -230,13 +230,13 @@
 18	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	19	nsubj	_	_
 19	vilja	vilja	VERB	MDPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 20	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	19	advmod	_	_
-21	fleiri	margur	DET	QR-A	Case=Acc|Degree=Pos	22	amod	_	_
+21	fleiri	margur	DET	QR-A	Case=Acc	22	amod	_	_
 22	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obl	_	_
 23	og	og	CCONJ	CONJ	_	26	cc	_	_
 24	að	að	SCONJ	C	_	26	mark	_	_
 25	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	26	nsubj	_	_
 26	nýti	nýta	VERB	VBPS	Mood=Sub|Tense=Pres	19	obj	_	_
-27	það	sá	DET	D-A	Case=Acc|PronType=Art	28	det	_	_
+27	það	sá	DET	D-A	Case=Acc	28	det	_	_
 28	svigrúm	svigrúm	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obj	_	_
 29	sem	sem	SCONJ	C	_	31	mark	_	_
 30	til	til	ADP	P	_	31	case	_	_
@@ -254,7 +254,7 @@
 3	síðan	síðan	ADV	ADV	Degree=Pos	4	advmod	_	_
 4	ræða	ræða	VERB	VB	VerbForm=Inf	0	root	_	_
 5	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	4	advmod	_	_
-6	þann	sá	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
+6	þann	sá	DET	D-A	Case=Acc	7	det	_	_
 7	fund	fundur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
 8	sem	sem	SCONJ	C	_	10	mark	_	_
 9	ég	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
@@ -262,7 +262,7 @@
 11	með	með	ADP	P	_	12	case	_	_
 12	sveitarstjórnarmönnum	sveitarstjórnarmaður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
 13	og	og	CCONJ	CONJ	_	14	cc	_	_
-14	fleirum	margur	DET	QR-D	Case=Dat|Degree=Pos	12	conj	_	_
+14	fleirum	margur	DET	QR-D	Case=Dat	12	conj	_	_
 15	af	af	ADP	P	_	16	case	_	_
 16	suðvesturhorninu	suðvesturhorn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
 17	,	,	PUNCT	,	_	16	punct	_	_
@@ -285,7 +285,7 @@
 1	Það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	vel	vel	ADV	ADV	Degree=Pos	1	advmod	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	1	punct	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
 5	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 6	fagna	fagna	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
 7	því	það	PRON	PRO-D	Case=Dat	6	obj	_	SpaceAfter=No
@@ -308,7 +308,7 @@
 # sent_id = ALTHINGI_TKG_2011_G-33-4557046,.14
 # X_ID = ID_missing_19
 # text = Þeir sveitarstjórnarmenn sem komu að austan, frá Hveragerði, frá Selfossi, og fleiri bentu á að menn þurfi ekki að bíða eftir því hvort 2+2 eða 2+1 leiðin verði farin, menn geti farið af stað með ýmsar úrbætur nú þegar á Suðurlandsveginum.
-1	Þeir	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Þeir	sá	DET	D-N	Case=Nom	2	det	_	_
 2	sveitarstjórnarmenn	sveitarstjórnarmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	16	nsubj	_	_
 3	sem	sem	SCONJ	C	_	4	mark	_	_
 4	komu	koma	VERB	VBDI	Mood=Ind|Tense=Past	2	acl:relcl	_	_
@@ -322,7 +322,7 @@
 12	Selfossi	selfoss	PROPN	NPR-D	_	9	conj	_	SpaceAfter=No
 13	,	,	PUNCT	,	_	12	punct	_	_
 14	og	og	CCONJ	CONJ	_	15	cc	_	_
-15	fleiri	margur	DET	QR-N	Case=Nom|Degree=Pos	2	conj	_	_
+15	fleiri	margur	DET	QR-N	Case=Nom	2	conj	_	_
 16	bentu	benda	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 17	á	á	ADP	P	_	20	case	_	_
 18	að	að	SCONJ	C	_	20	mark	_	_
@@ -351,7 +351,7 @@
 41	af	af	ADP	P	_	42	case	_	_
 42	stað	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	40	obl	_	_
 43	með	með	ADP	P	_	45	case	_	_
-44	ýmsar	ýmis	DET	Q-A	Case=Acc|Degree=Pos	45	amod	_	_
+44	ýmsar	ýmis	DET	Q-A	Case=Acc	45	amod	_	_
 45	úrbætur	úrbót	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	40	obl	_	_
 46	nú	nú	ADV	ADV	Degree=Pos	40	advmod	_	_
 47	þegar	þegar	ADV	ADV	Degree=Pos	46	advmod	_	_
@@ -398,13 +398,13 @@
 3	að	að	PART	TO	_	4	mark	_	_
 4	ræða	ræða	VERB	VB	VerbForm=Inf	0	root	_	_
 5	um	um	ADP	P	_	7	case	_	_
-6	fleiri	margur	DET	QR-A	Case=Acc|Degree=Pos	7	amod	_	_
+6	fleiri	margur	DET	QR-A	Case=Acc	7	amod	_	_
 7	þætti	þáttur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
 8	og	og	CCONJ	CONJ	_	10	cc	_	_
-9	fleiri	margur	DET	QR-A	Case=Acc|Degree=Pos	10	amod	_	_
+9	fleiri	margur	DET	QR-A	Case=Acc	10	amod	_	_
 10	úrbætur	úrbót	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	conj	_	_
 11	á	á	ADP	P	_	13	case	_	_
-12	þeim	sá	DET	D-D	Case=Dat|PronType=Art	13	det	_	_
+12	þeim	sá	DET	D-D	Case=Dat	13	det	_	_
 13	vegi	vegur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
 14	sem	sem	SCONJ	C	_	16	mark	_	_
 15	mér	ég	PRON	PRO-D	Case=Dat	16	nsubj	_	_

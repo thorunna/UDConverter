@@ -42,7 +42,7 @@
 5	taka	taka	VERB	VB	VerbForm=Inf	3	xcomp	_	_
 6	afstöðu	afstaða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
 7	til	til	ADP	P	_	8	case	_	_
-8	einhvers	einhver	DET	Q-G	Case=Gen|Degree=Pos	5	obl	_	_
+8	einhvers	einhver	DET	Q-G	Case=Gen	5	obl	_	_
 9	í	í	ADP	P	_	10	case	_	_
 10	fjárlagafrumvarpi	fjárlagafrumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
 11	sem	sem	SCONJ	C	_	13	mark	_	_
@@ -54,10 +54,10 @@
 17	og	og	CCONJ	CONJ	_	19	cc	_	_
 18	mér	ég	PRON	PRO-D	Case=Dat	19	nsubj	_	_
 19	heyrist	heyra	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-20	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	21	nsubj	_	_
+20	enginn	enginn	DET	Q-N	Case=Nom	21	nsubj	_	_
 21	vita	vita	VERB	VB	VerbForm=Inf	19	xcomp	_	_
 22	hvernig	hvernig	ADV	WADV	Degree=Pos	25	advmod	_	_
-23	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	24	det	_	_
+23	þessi	þessi	DET	D-N	Case=Nom	24	det	_	_
 24	komugjöld	komugjald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	25	nsubj	_	_
 25	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	21	ccomp	_	_
 26	að	að	PART	TO	_	27	mark	_	_
@@ -78,7 +78,7 @@
 9	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
 10	að	að	PART	TO	_	11	mark	_	_
 11	fá	fá	VERB	VB	VerbForm=Inf	7	xcomp	_	_
-12	einhverjar	einhver	DET	Q-A	Case=Acc|Degree=Pos	13	amod	_	_
+12	einhverjar	einhver	DET	Q-A	Case=Acc	13	amod	_	_
 13	útskýringar	útskýring	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
 14	frá	frá	ADP	P	_	15	case	_	_
 15	Landspítalanum	landspítali	PROPN	NPR-D	_	11	obl	_	_
@@ -87,7 +87,7 @@
 18	þau	það	PRON	PRO-N	Case=Nom	19	nsubj	_	_
 19	héldu	halda	VERB	VBDI	Mood=Ind|Tense=Past	11	obl	_	_
 20	að	að	SCONJ	C	_	23	mark	_	_
-21	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	23	nsubj	_	_
+21	þetta	þessi	DET	D-N	Case=Nom	23	nsubj	_	_
 22	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	23	aux	_	_
 23	líta	líta	VERB	VB	VerbForm=Inf	19	ccomp	_	_
 24	út	út	ADP	RP	_	23	compound:prt	_	SpaceAfter=No
@@ -99,7 +99,7 @@
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	fengum	fá	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-4	þær	sá	DET	D-A	Case=Acc|PronType=Art	5	det	_	_
+4	þær	sá	DET	D-A	Case=Acc	5	det	_	_
 5	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
 6	að	að	SCONJ	C	_	24	mark	_	_
 7	miðað	miða	VERB	VAN	Tense=Past|VerbForm=Part	24	acl	_	_
@@ -126,7 +126,7 @@
 28	/3	þriðji	ADJ	ADJ-N	Case=Nom|Degree=Pos	30	nsubj	_	_
 29	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	30	aux	_	_
 30	borga	borga	VERB	VB	VerbForm=Inf	24	ccomp	_	_
-31	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	32	det	_	_
+31	þetta	þessi	DET	D-A	Case=Acc	32	det	_	_
 32	komugjald	komugjald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obj	_	SpaceAfter=No
 33	,	,	PUNCT	,	_	32	punct	_	_
 34	2	tveir	NUM	NUM-N	Case=Nom	35	nummod	_	SpaceAfter=No
@@ -151,7 +151,7 @@
 9	geta	geta	AUX	MD	VerbForm=Inf	11	aux	_	_
 10	ekki	ekki	ADV	NEG	_	11	advmod	_	_
 11	innheimt	innheimta	VERB	VBN	Tense=Past|VerbForm=Part	7	xcomp	_	_
-12	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	11	obj	_	SpaceAfter=No
+12	þetta	þessi	DET	D-A	Case=Acc	11	obj	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_BO_2013_G-33-4666392,.6
@@ -160,7 +160,7 @@
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	komugjaldið	komugjald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	0	root	_	_
-4	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	3	xcomp	_	_
+4	eitthvað	einhver	DET	Q-N	Case=Nom	3	xcomp	_	_
 5	um	um	ADP	P	_	8	case	_	_
 6	18	átján	NUM	NUM-A	Case=Acc	8	nummod	_	_
 7	þús.	þúsund	NUM	NUM-A	Case=Acc	8	nummod	_	_
@@ -170,7 +170,7 @@
 11	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	3	dep	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	11	punct	_	_
 13	eftir	eftir	ADP	P	_	14	case	_	_
-14	því	sá	DET	D-D	Case=Dat|PronType=Art	3	obl	_	_
+14	því	sá	DET	D-D	Case=Dat	3	obl	_	_
 15	sem	sem	SCONJ	C	_	17	mark	_	_
 16	ég	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
 17	kemst	koma	VERB	VBPI	Mood=Ind|Tense=Pres	14	acl:relcl	_	_

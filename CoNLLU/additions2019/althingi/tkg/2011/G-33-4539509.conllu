@@ -30,7 +30,7 @@
 5	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 6	skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 7	ekki	ekki	ADV	NEG	_	6	advmod	_	_
-8	öllu	allur	DET	Q-D	Case=Dat|Degree=Pos	9	amod	_	_
+8	öllu	allur	DET	Q-D	Case=Dat	9	amod	_	_
 9	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obj	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	6	punct	_	_
 
@@ -39,7 +39,7 @@
 # text = Mér finnst þetta vera sama málið, bara með nýju nafni.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	5	nsubj	_	_
+3	þetta	þessi	DET	D-N	Case=Nom	5	nsubj	_	_
 4	vera	vera	AUX	BE	VerbForm=Inf	5	cop	_	_
 5	sama	sami	PRON	PRO-N	Case=Nom	2	xcomp	_	_
 6	málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	conj	_	SpaceAfter=No
@@ -96,7 +96,7 @@
 8	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	6	cop	_	_
 9	á	á	ADP	P	_	13	case	_	_
 10	mjög	mjög	ADV	ADV	Degree=Pos	11	advmod	_	_
-11	mörgum	margur	ADV	Q-D	Case=Dat|Degree=Pos	13	advmod	_	_
+11	mörgum	margur	ADV	Q-D	Case=Dat	13	advmod	_	_
 12	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	amod	_	_
 13	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	3	punct	_	_
@@ -110,7 +110,7 @@
 4	stoð	stoð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 5	fyrir	fyrir	ADP	P	_	9	case	_	_
 6	svo	svo	ADV	ADV	Degree=Pos	7	advmod	_	_
-7	mörgum	margur	ADV	Q-D	Case=Dat|Degree=Pos	9	advmod	_	_
+7	mörgum	margur	ADV	Q-D	Case=Dat	9	advmod	_	_
 8	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
 9	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
@@ -138,7 +138,7 @@
 18	í	í	ADP	P	_	19	case	_	_
 19	ljósi	ljós	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
 20	hrunsins	hrun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	nmod:poss	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	3	punct	_	_
+21	,	,	PUNCT	,	_	19	punct	_	_
 22	en	en	CCONJ	CONJ	_	27	cc	_	_
 23	það	það	PRON	PRO-N	Case=Nom	27	nsubj	_	_
 24	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
@@ -146,7 +146,7 @@
 26	örlítil	örlítill	ADJ	ADJ-N	Case=Nom|Degree=Pos	27	amod	_	_
 27	viðbót	viðbót	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	OriginalHead=0
 28	við	við	ADP	P	_	29	case	_	_
-29	það	sá	DET	D-A	Case=Acc|PronType=Art	27	obl	_	_
+29	það	sá	DET	D-A	Case=Acc	27	obl	_	_
 30	sem	sem	SCONJ	C	_	31	mark	_	_
 31	lá	liggja	VERB	VBDI	Mood=Ind|Tense=Past	29	acl:relcl	_	_
 32	fyrir	fyrir	ADP	RP	_	31	compound:prt	_	SpaceAfter=No
@@ -232,10 +232,10 @@
 # sent_id = ALTHINGI_TKG_2011_G-33-4539509,.17
 # X_ID = ID_missing_18
 # text = Allt hitt var nokkurn veginn tilbúið.
-1	Allt	allur	DET	Q-N	Case=Nom|Degree=Pos	6	nsubj	_	_
-2	hitt	hinn	DET	D-N	Case=Nom|PronType=Art	1	det	_	_
+1	Allt	allur	DET	Q-N	Case=Nom	6	nsubj	_	_
+2	hitt	hinn	DET	D-N	Case=Nom	1	det	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
-4	nokkurn	nokkur	DET	Q-A	Case=Acc|Degree=Pos	5	amod	_	_
+4	nokkurn	nokkur	DET	Q-A	Case=Acc	5	amod	_	_
 5	veginn	vegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 6	tilbúið	tilbúinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	6	punct	_	_
@@ -256,13 +256,13 @@
 11	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	9	cop	_	_
 12	að	að	PART	TO	_	13	mark	_	_
 13	gera	gera	VERB	DO	VerbForm=Inf	9	xcomp	_	_
-14	þessi	þessi	DET	D-A	Case=Acc|PronType=Art	15	det	_	_
+14	þessi	þessi	DET	D-A	Case=Acc	15	det	_	_
 15	tvö	tveir	NUM	NUM-A	Case=Acc	9	obl	_	_
 16	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	conj	_	_
 17	ef	ef	SCONJ	C	_	23	mark	_	_
 18	ekki	ekki	ADV	NEG	_	23	advmod	_	_
 19	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
-20	meira	mikill	DET	QR-N	Case=Nom|Degree=Pos	21	amod	_	_
+20	meira	mikill	DET	QR-N	Case=Nom	21	amod	_	_
 21	kjöt	kjöt	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	nsubj	_	_
 22	á	á	ADP	P	_	23	case	_	_
 23	beinunum	bein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	advcl	_	_

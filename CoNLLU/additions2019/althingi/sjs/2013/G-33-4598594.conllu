@@ -44,13 +44,13 @@
 3	hann	hann	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
 5	heyrt	heyra	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-6	þann	sá	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
+6	þann	sá	DET	D-A	Case=Acc	7	det	_	_
 7	kafla	kafli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
 8	ræðu	ræða	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
 9	minnar	minn	PRON	PRO-G	Case=Gen	8	nmod:poss	_	_
 10	eða	eða	CCONJ	CONJ	_	12	cc	_	_
 11	ekki	ekki	ADV	NEG	_	12	advmod	_	_
-12	neitt	neinn	DET	Q-A	Case=Acc|Degree=Pos	5	conj	_	_
+12	neitt	neinn	DET	Q-A	Case=Acc	5	conj	_	_
 13	af	af	ADP	P	_	14	case	_	_
 14	henni	hún	PRON	PRO-D	Case=Dat	12	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	5	punct	_	_
@@ -86,7 +86,7 @@
 26	taka	taka	VERB	VBPI	Mood=Ind|Tense=Pres	22	xcomp	_	_
 27	afstöðu	afstaða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obj	_	_
 28	til	til	ADP	P	_	29	case	_	_
-29	þessa	þessi	DET	D-G	Case=Gen|PronType=Art	26	obl	_	SpaceAfter=No
+29	þessa	þessi	DET	D-G	Case=Gen	26	obl	_	SpaceAfter=No
 30	:	:	PUNCT	,	_	29	punct	_	_
 31	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
 32	þá	þá	ADV	ADV	Degree=Pos	35	advmod	_	_
@@ -145,14 +145,14 @@
 85	eða	eða	CCONJ	CONJ	_	86	cc	_	_
 86	hagnaði	hagnaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	84	conj	_	_
 87	undan	undan	ADP	P	_	88	case	_	_
-88	skattarétti	skattaréttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	95	obl	_	_
+88	skattarétti	skattaréttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	82	obl	_	_
 89	á	á	ADP	P	_	90	case	_	_
 90	Íslandi	ísland	PROPN	NPR-D	_	88	obl	_	_
 91	og	og	CCONJ	CONJ	_	95	cc	_	_
 92	yfir	yfir	ADV	ADV	Degree=Pos	95	advmod	_	_
 93	í	í	ADP	P	_	95	case	_	_
 94	erlend	erlendur	ADJ	ADJ-A	Case=Acc|Degree=Pos	95	amod	_	_
-95	móðurfélög	móðurfélag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	82	obl	_	SpaceAfter=No
+95	móðurfélög	móðurfélag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	88	conj	_	SpaceAfter=No
 96	?	?	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4598594,.4
@@ -184,7 +184,7 @@
 3	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 5	það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-6	sú	sá	DET	D-N	Case=Nom|PronType=Art	7	det	_	_
+6	sú	sá	DET	D-N	Case=Nom	7	det	_	_
 7	brotalöm	brotalöm	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 8	sem	sem	SCONJ	C	_	10	mark	_	_
 9	enn	enn	ADV	ADV	Degree=Pos	10	advmod	_	_
@@ -217,7 +217,7 @@
 16	því	það	PRON	PRO-D	Case=Dat	17	obl	_	_
 17	séð	sjá	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 18	í	í	ADP	P	_	20	case	_	_
-19	þeim	sá	DET	D-D	Case=Dat|PronType=Art	20	det	_	_
+19	þeim	sá	DET	D-D	Case=Dat	20	det	_	_
 20	tilvikum	tilvik	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	17	obl	_	_
 21	varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	17	advcl	_	_
 22	rétt	réttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obj	_	_
@@ -255,7 +255,7 @@
 54	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	56	nsubj	_	_
 55	hefðu	hafa	AUX	HVDS	Mood=Sub|Tense=Past	56	aux	_	_
 56	haft	hafa	AUX	HVN	Tense=Past|VerbForm=Part	50	obl	_	_
-57	þau	sá	DET	D-A	Case=Acc|PronType=Art	58	det	_	_
+57	þau	sá	DET	D-A	Case=Acc	58	det	_	_
 58	ákvæði	ákvæði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	56	obj	_	_
 59	í	í	ADP	P	_	60	case	_	_
 60	lögum	lag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	56	obl	_	_
@@ -269,7 +269,7 @@
 # X_ID = ID_missing_10
 # text = Í þessu tilviki er að mínu mati enn eftir að botna málið.
 1	Í	í	ADP	P	_	3	case	_	_
-2	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	3	det	_	_
+2	þessu	þessi	DET	D-D	Case=Dat	3	det	_	_
 3	tilviki	tilvik	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 5	að	að	ADP	P	_	7	case	_	_
@@ -317,7 +317,7 @@
 30	til	til	ADP	P	_	31	case	_	_
 31	umfjöllunar	umfjöllun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	28	obl	_	_
 32	tengt	tengja	VERB	VAN	Tense=Past|VerbForm=Part	28	advcl	_	_
-33	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	34	det	_	_
+33	þessum	þessi	DET	D-D	Case=Dat	34	det	_	_
 34	breytingum	breyting	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	32	obj	_	_
 35	á	á	ADP	P	_	36	case	_	_
 36	milliverðlagningarreglunum	milliverðlagningarregla	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	34	obl	_	_
@@ -336,7 +336,7 @@
 49	við	við	ADP	RP	_	47	compound:prt	_	_
 50	að	að	PART	TO	_	51	mark	_	_
 51	skoða	skoða	VERB	VB	VerbForm=Inf	47	xcomp	_	_
-52	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	51	obj	_	_
+52	þetta	þessi	DET	D-A	Case=Acc	51	obj	_	_
 53	saman	saman	ADV	ADV	Degree=Pos	51	advmod	_	SpaceAfter=No
 54	.	.	PUNCT	.	_	5	punct	_	_
 

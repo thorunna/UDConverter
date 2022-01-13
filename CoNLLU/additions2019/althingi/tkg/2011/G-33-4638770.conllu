@@ -8,7 +8,7 @@
 5	skulum	skulu	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
 6	bara	bara	ADV	ADV	Degree=Pos	5	advmod	_	_
 7	hafa	hafa	AUX	HV	VerbForm=Inf	5	aux	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	5	obj	_	_
+8	þetta	þessi	DET	D-A	Case=Acc	5	obj	_	_
 9	alveg	alveg	ADV	ADV	Degree=Pos	5	advmod	_	_
 10	á	á	ADP	P	_	11	case	_	_
 11	hreinu	hreinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	obl	_	SpaceAfter=No
@@ -18,7 +18,7 @@
 # X_ID = ID_missing_2
 # text = Er meiri hluti fyrir málinu á þingi?
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-2	meiri	mikill	DET	QR-N	Case=Nom|Degree=Pos	3	amod	_	_
+2	meiri	mikill	DET	QR-N	Case=Nom	3	amod	_	_
 3	hluti	hluti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 4	fyrir	fyrir	ADP	P	_	5	case	_	_
 5	málinu	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
@@ -65,7 +65,7 @@
 9	að	að	PART	TO	_	10	mark	_	_
 10	fara	fara	VERB	VB	VerbForm=Inf	2	xcomp	_	_
 11	í	í	ADP	P	_	13	case	_	_
-12	þá	sá	DET	D-A	Case=Acc|PronType=Art	13	det	_	_
+12	þá	sá	DET	D-A	Case=Acc	13	det	_	_
 13	vinnu	vinna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 14	að	að	PART	TO	_	15	mark	_	_
 15	reyna	reyna	VERB	VB	VerbForm=Inf	13	xcomp	_	_
@@ -76,7 +76,7 @@
 20	að	að	SCONJ	C	_	22	mark	_	_
 21	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	22	expl	_	_
 22	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	19	advcl	_	_
-23	meiri	mikill	DET	QR-N	Case=Nom|Degree=Pos	24	amod	_	_
+23	meiri	mikill	DET	QR-N	Case=Nom	24	amod	_	_
 24	hluti	hluti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	obl	_	_
 25	fyrir	fyrir	ADP	P	_	26	case	_	_
 26	því	það	PRON	PRO-D	Case=Dat	22	obl	_	SpaceAfter=No
@@ -114,7 +114,7 @@
 # text = Þá þarf einhvern veginn að koma því í gegn.
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	einhvern	einhver	DET	Q-A	Case=Acc|Degree=Pos	4	amod	_	_
+3	einhvern	einhver	DET	Q-A	Case=Acc	4	amod	_	_
 4	veginn	vegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	koma	koma	VERB	VB	VerbForm=Inf	2	xcomp	_	_
@@ -175,7 +175,7 @@
 5	reyna	reyna	VERB	VB	VerbForm=Inf	4	xcomp	_	_
 6	á	á	ADP	P	_	7	case	_	_
 7	samstöðu	samstaða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
-8	allra	allur	DET	Q-G	Case=Gen|Degree=Pos	7	nmod:poss	_	_
+8	allra	allur	DET	Q-G	Case=Gen	7	nmod:poss	_	_
 9	flokka	flokkur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	conj	_	_
 10	heldur	heldur	ADV	ADVR	Degree=Cmp	12	advmod	_	_
 11	eingöngu	eingöngu	ADV	ADV	Degree=Pos	12	advmod	_	_
@@ -232,7 +232,7 @@
 16	auka	auka	VERB	VB	VerbForm=Inf	15	dep	_	_
 17	fjárfestingar	fjárfesting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obj	_	SpaceAfter=No
 18	,	,	PUNCT	,	_	17	punct	_	_
-19	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	13	appos	_	_
+19	eitthvað	einhver	DET	Q-N	Case=Nom	13	appos	_	_
 20	sem	sem	SCONJ	C	_	22	mark	_	_
 21	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	22	nsubj	_	_
 22	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	19	acl:relcl	_	_

@@ -59,11 +59,11 @@
 10	starfsmönnum	starfsmaður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obj	_	_
 11	Orkustofnunar	orkustofnun	PROPN	NPR-G	_	10	nmod:poss	_	_
 12	á	á	ADP	P	_	14	case	_	_
-13	neinn	neinn	DET	Q-A	Case=Acc|Degree=Pos	14	amod	_	_
+13	neinn	neinn	DET	Q-A	Case=Acc	14	amod	_	_
 14	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
 15	,	,	PUNCT	,	_	6	punct	_	_
 16	en	en	CCONJ	CONJ	_	22	cc	_	_
-17	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	22	nsubj	_	_
+17	þetta	þessi	DET	D-N	Case=Nom	22	nsubj	_	_
 18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
 19	óþægileg	óþægilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	22	amod	_	_
 20	og	og	CCONJ	CONJ	_	21	cc	_	_
@@ -85,10 +85,10 @@
 4	vera	vera	AUX	BE	VerbForm=Inf	5	cop	_	_
 5	hafið	hefja	VERB	VAN	Tense=Past|VerbForm=Part	2	xcomp	_	_
 6	yfir	yfir	ADP	P	_	8	case	_	_
-7	allan	allur	DET	Q-A	Case=Acc|Degree=Pos	8	amod	_	_
+7	allan	allur	DET	Q-A	Case=Acc	8	amod	_	_
 8	vafa	vafi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	amod	_	_
 9	hvernig	hvernig	ADV	WADV	Degree=Pos	13	advmod	_	_
-10	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	11	det	_	_
+10	þessi	þessi	DET	D-N	Case=Nom	11	det	_	_
 11	mál	mál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	_
 12	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
 13	afgreidd	afgreiða	VERB	VAN	Tense=Past|VerbForm=Part	2	ccomp	_	SpaceAfter=No
@@ -105,7 +105,7 @@
 6	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	8	aux	_	_
 7	alltaf	alltaf	ADV	ADV	Degree=Pos	8	advmod	_	_
 8	séð	sjá	VERB	VBN	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0
-9	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	8	ccomp	_	_
+9	þetta	þessi	DET	D-A	Case=Acc	8	ccomp	_	_
 10	fyrir	fyrir	ADP	P	_	11	case	_	_
 11	mér	ég	PRON	PRO-D	Case=Dat	9	obl	_	_
 12	saman	saman	ADV	ADV	Degree=Pos	9	advmod	_	SpaceAfter=No
@@ -119,12 +119,12 @@
 20	öðrum	annar	PRON	OTHER-D	Case=Dat	21	det	_	_
 21	sviðum	svið	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	_
 22	að	að	ADP	P	_	25	case	_	_
-23	ýmiss	ýmis	DET	Q-G	Case=Gen|Degree=Pos	25	nmod:poss	_	_
+23	ýmiss	ýmis	DET	Q-G	Case=Gen	25	nmod:poss	_	_
 24	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	conj	_	_
 25	uppbyggingu	uppbygging	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
 26	eftir	eftir	ADP	P	_	27	case	_	_
 27	heildarplani	heildarplan	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	3	punct	_	_
+28	,	,	PUNCT	,	_	18	punct	_	_
 29	og	og	CCONJ	CONJ	_	31	cc	_	_
 30	ég	ég	PRON	PRO-N	Case=Nom	31	nsubj	_	_
 31	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
@@ -136,7 +136,7 @@
 37	ættum	eiga	VERB	VBDS	Mood=Sub|Tense=Past	31	ccomp	_	_
 38	að	að	PART	TO	_	39	mark	_	_
 39	gera	gera	VERB	DO	VerbForm=Inf	37	xcomp	_	_
-40	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	39	obj	_	_
+40	þetta	þessi	DET	D-A	Case=Acc	39	obj	_	_
 41	samhliða	samhliða	ADV	ADV	Degree=Pos	39	advmod	_	SpaceAfter=No
 42	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -175,7 +175,7 @@
 # text = Það er mikið atriði.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	4	amod	_	_
+3	mikið	mikill	DET	Q-N	Case=Nom	4	amod	_	_
 4	atriði	atriði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -187,7 +187,7 @@
 3	setjum	setja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 5	auðvitað	auðvitað	ADV	ADV	Degree=Pos	3	advmod	_	_
-6	þá	sá	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
+6	þá	sá	DET	D-A	Case=Acc	7	det	_	_
 7	mælistiku	mælistika	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
 8	sem	sem	SCONJ	C	_	9	mark	_	_
 9	búið	búa	VERB	VBN	Tense=Past|VerbForm=Part	7	acl:relcl	_	_
@@ -209,10 +209,10 @@
 25	ákveðnar	ákveða	VERB	VAN	Tense=Past|VerbForm=Part	22	acl:relcl	_	_
 26	á	á	ADP	P	_	28	case	_	_
 27	pólitískan	pólitískur	ADJ	ADJ-A	Case=Acc|Degree=Pos	28	amod	_	_
-28	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	31	obl	_	_
+28	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obl	_	_
 29	og	og	CCONJ	CONJ	_	31	cc	_	_
 30	með	með	ADP	P	_	31	case	_	_
-31	aðkomu	aðkoma	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
+31	aðkomu	aðkoma	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	conj	_	_
 32	fagaðila	fagaðili	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	31	nmod:poss	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	3	punct	_	_
 

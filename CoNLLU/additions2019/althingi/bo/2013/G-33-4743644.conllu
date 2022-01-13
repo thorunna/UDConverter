@@ -27,13 +27,13 @@
 # sent_id = ALTHINGI_BO_2013_G-33-4743644,.2
 # X_IDs = ID_missing_2 ; ID_missing_3
 # text = Þetta var mjög pent og huggulegt, takk fyrir það.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
 4	pent	penn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 5	og	og	CCONJ	CONJ	_	6	cc	_	_
 6	huggulegt	huggulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	4	punct	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
 8	takk	takk	INTJ	INTJ	_	10	discourse	_	_
 9	fyrir	fyrir	ADP	P	_	10	case	_	_
 10	það	það	PRON	PRO-A	Case=Acc	4	conj	_	OriginalHead=0|SpaceAfter=No
@@ -44,8 +44,8 @@
 # text = Ég er alls ekkert hrædd við að stíga upp í ræðustólinn.
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-3	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	4	obl	_	_
-4	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	5	obl	_	_
+3	alls	allur	DET	Q-G	Case=Gen	4	obl	_	_
+4	ekkert	enginn	DET	Q-A	Case=Acc	5	obl	_	_
 5	hrædd	hræddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	við	við	ADP	P	_	8	case	_	_
 7	að	að	PART	TO	_	8	mark	_	_
@@ -76,7 +76,7 @@
 16	Öryrkjabandalaginu	öryrkjabandalag	PROPN	NPR-D	_	10	obl	_	SpaceAfter=No
 17	,	,	PUNCT	,	_	16	punct	_	_
 18	með	með	ADP	P	_	20	case	_	_
-19	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	20	det	_	_
+19	þessa	þessi	DET	D-A	Case=Acc	20	det	_	_
 20	samningstaktík	samningstaktík	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 21	eða	eða	CCONJ	CONJ	_	22	cc	_	_
 22	strategíu	strategía	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	conj	_	SpaceAfter=No
@@ -98,7 +98,7 @@
 11	sögðu	segja	VERB	VBDI	Mood=Ind|Tense=Past	7	obl	_	_
 12	sig	sig	PRON	PRO-A	Case=Acc	11	obj	_	_
 13	frá	frá	ADP	P	_	15	case	_	_
-14	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	15	det	_	_
+14	þessari	þessi	DET	D-D	Case=Dat	15	det	_	_
 15	vinnu	vinna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -109,13 +109,13 @@
 2	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
 3	þau	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 4	bara	bara	ADV	FP	Degree=Pos	7	advmod	_	_
-5	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	6	amod	_	_
+5	alls	allur	DET	Q-G	Case=Gen	6	amod	_	_
 6	kostar	kostur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	obl	_	_
 7	ósátt	ósáttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 8	við	við	ADP	P	_	10	case	_	_
 9	hvert	hvert	ADV	WADV	Degree=Pos	10	advmod	_	_
 10	stefndi	stefna	VERB	VBDI	Mood=Ind|Tense=Past	7	amod	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	7	punct	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
 12	mér	ég	PRON	PRO-D	Case=Dat	13	nsubj	_	_
 13	heyrðist	heyra	VERB	VBDI	Mood=Ind|Tense=Past	7	conj	_	OriginalHead=0
 14	það	það	PRON	PRO-N	Case=Nom	13	obj	_	_
@@ -127,7 +127,7 @@
 20	og	og	CCONJ	CONJ	_	21	cc	_	_
 21	hittum	hitta	VERB	VBDI	Mood=Ind|Tense=Past	19	conj	_	_
 22	Öryrkjabandalagið	öryrkjabandalag	PROPN	NPR-A	_	21	obj	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	7	punct	_	_
+23	,	,	PUNCT	,	_	21	punct	_	_
 24	þeim	það	PRON	PRO-D	Case=Dat	25	nsubj	_	_
 25	fannst	finna	VERB	VBDI	Mood=Ind|Tense=Past	7	conj	_	OriginalHead=0
 26	ekki	ekki	ADV	NEG	_	25	advmod	_	_
@@ -181,7 +181,7 @@
 9	bara	bara	ADV	FP	Degree=Pos	11	advmod	_	_
 10	að	að	PART	TO	_	11	mark	_	_
 11	hugsa	hugsa	VERB	VB	VerbForm=Inf	6	conj	_	_
-12	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	11	obj	_	_
+12	þetta	þessi	DET	D-A	Case=Acc	11	obj	_	_
 13	upphátt	upphátt	ADV	ADV	Degree=Pos	11	advmod	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	6	punct	_	_
 

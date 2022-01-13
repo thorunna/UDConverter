@@ -26,7 +26,7 @@
 23	sér	sig	PRON	PRO-D	Case=Dat	22	obj	_	_
 24	eða	eða	CCONJ	CONJ	_	25	cc	_	_
 25	selja	selja	VERB	VB	VerbForm=Inf	22	xcomp	_	_
-26	þær	sá	DET	D-A	Case=Acc|PronType=Art	27	det	_	_
+26	þær	sá	DET	D-A	Case=Acc	27	det	_	_
 27	eignir	eign	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	25	obj	_	SpaceAfter=No
 28	,	,	PUNCT	,	_	27	punct	_	_
 29	losa	losa	VERB	VB	VerbForm=Inf	22	xcomp	_	_
@@ -53,9 +53,9 @@
 8	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	14	cop	_	_
 9	það	það	PRON	PRO-N	Case=Nom	14	nsubj	_	_
 10	um	um	ADP	P	_	12	case	_	_
-11	það	sá	DET	D-A	Case=Acc|PronType=Art	12	det	_	_
+11	það	sá	DET	D-A	Case=Acc	12	det	_	_
 12	bil	bil	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
-13	það	sá	DET	D-N	Case=Nom|PronType=Art	14	det	_	_
+13	það	sá	DET	D-N	Case=Nom	14	det	_	_
 14	síðasta	síðari	ADJ	ADJS-N	Case=Nom|Degree=Sup	0	root	_	_
 15	undir	undir	ADP	P	_	16	case	_	_
 16	sólinni	sól	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
@@ -82,7 +82,7 @@
 3	augljóst	augljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
 4	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 5	að	að	SCONJ	C	_	10	mark	_	_
-6	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	7	det	_	_
+6	þessi	þessi	DET	D-N	Case=Nom	7	det	_	_
 7	sameign	sameign	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 8	okkar	ég	PRON	PRO-G	Case=Gen	7	nmod:poss	_	_
 9	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	10	aux	_	_
@@ -136,7 +136,7 @@
 10	hann	hann	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 11	borgi	borga	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
 12	núna	núna	ADV	ADV	Degree=Pos	11	advmod	_	_
-13	meiri	mikill	DET	QR-A	Case=Acc|Degree=Pos	14	amod	_	_
+13	meiri	mikill	DET	QR-A	Case=Acc	14	amod	_	_
 14	skatta	skattur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
 15	til	til	ADP	P	_	16	case	_	_
 16	ríkisins	ríki	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	obl	_	_
@@ -160,7 +160,7 @@
 3	milljarða	milljarður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	dep	_	SpaceAfter=No
 4	,	,	PUNCT	,	_	3	punct	_	_
 5	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	7	aux	_	_
-6	einhverjir	einhver	DET	Q-N	Case=Nom|Degree=Pos	7	nsubj	_	_
+6	einhverjir	einhver	DET	Q-N	Case=Nom	7	nsubj	_	_
 7	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 8	hér	hér	ADV	ADV	Degree=Pos	7	advmod	_	_
 9	og	og	CCONJ	CONJ	_	11	cc	_	_
@@ -223,11 +223,11 @@
 7	að	að	PART	TO	_	8	mark	_	_
 8	vinna	vinna	VERB	VB	VerbForm=Inf	6	xcomp	_	_
 9	upp	upp	ADP	RP	_	8	compound:prt	_	_
-10	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	12	amod	_	_
+10	allt	allur	DET	Q-A	Case=Acc	12	amod	_	_
 11	uppsafnað	uppsafnaður	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
 12	tap	tap	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	SpaceAfter=No
 13	,	,	PUNCT	,	_	6	punct	_	_
-14	sum	sumur	DET	Q-N	Case=Nom|Degree=Pos	15	amod	_	_
+14	sum	sumur	DET	Q-N	Case=Nom	15	amod	_	_
 15	þeirra	það	PRON	PRO-G	Case=Gen	17	nsubj	_	_
 16	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
 17	orðin	verða	VERB	RDN	Tense=Past|VerbForm=Part	6	conj	_	OriginalHead=0
@@ -300,7 +300,7 @@
 6	hæstu	hár	ADJ	ADJS-A	Case=Acc|Degree=Sup	7	amod	_	_
 7	arðgreiðslur	arðgreiðsla	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	_
-9	einhverjar	einhver	DET	Q-A	Case=Acc|Degree=Pos	11	amod	_	_
+9	einhverjar	einhver	DET	Q-A	Case=Acc	11	amod	_	_
 10	hæstu	hár	ADJ	ADJS-A	Case=Acc|Degree=Sup	11	amod	_	_
 11	arðgreiðslur	arðgreiðsla	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	appos	_	_
 12	sem	sem	SCONJ	C	_	15	mark	_	_
@@ -313,7 +313,7 @@
 19	ár	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
 20	út	út	ADP	RP	_	23	compound:prt	_	_
 21	úr	úr	ADP	P	_	23	case	_	_
-22	einni	einn	DET	ONE-D	Case=Dat|Number=Sing	23	det	_	_
+22	einni	einn	DET	ONE-D	Case=Dat	23	det	_	_
 23	atvinnugrein	atvinnugrein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
 24	til	til	ADP	P	_	25	case	_	_
 25	eigenda	eigandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	16	obl	_	_
@@ -323,7 +323,7 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4500290,.14
 # X_ID = ID_missing_18
 # text = Þær arðgreiðslur eru sprottnar af því að sjávarútvegurinn hefur þennan verðmæta aðgang að sameiginlegri auðlind sem er í óvenjulega góðu ástandi og gefur færi á mjög mikilli arðsemi eins og við sjáum á stóru fyrirtækjunum til dæmis sem hafa sterka stöðu í veiðiheimildum í uppsjávartegundum.
-1	Þær	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Þær	sá	DET	D-N	Case=Nom	2	det	_	_
 2	arðgreiðslur	arðgreiðsla	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 4	sprottnar	spretta	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -332,7 +332,7 @@
 7	að	að	SCONJ	C	_	9	mark	_	_
 8	sjávarútvegurinn	sjávarútvegur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
 9	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	ccomp	_	_
-10	þennan	þessi	DET	D-A	Case=Acc|PronType=Art	12	det	_	_
+10	þennan	þessi	DET	D-A	Case=Acc	12	det	_	_
 11	verðmæta	verðmætur	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
 12	aðgang	aðgangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
 13	að	að	ADP	P	_	15	case	_	_
@@ -349,7 +349,7 @@
 24	færi	færi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obj	_	_
 25	á	á	ADP	P	_	28	case	_	_
 26	mjög	mjög	ADV	ADV	Degree=Pos	27	amod	_	_
-27	mikilli	mikill	DET	Q-D	Case=Dat|Degree=Pos	28	amod	_	_
+27	mikilli	mikill	DET	Q-D	Case=Dat	28	amod	_	_
 28	arðsemi	arðsemi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	_
 29	eins	_	ADV	ADVR	Degree=Cmp	23	advmod	_	_
 30	og	_	ADP	P	_	32	case	_	_
@@ -391,7 +391,7 @@
 16	Síldarvinnslunnar	síldarvinnsla	PROPN	NPR-G	_	15	nmod:poss	_	_
 17	í	í	ADP	P	_	18	case	_	_
 18	Neskaupstað	neskaupstaður	PROPN	NPR-D	_	16	obl	_	_
-19	þessi	þessi	DET	D-A	Case=Acc|PronType=Art	20	det	_	_
+19	þessi	þessi	DET	D-A	Case=Acc	20	det	_	_
 20	missirin	missiri	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -404,7 +404,7 @@
 4	á	á	ADP	P	_	8	case	_	_
 5	þó	þó	ADV	ADV	Degree=Pos	7	amod	_	_
 6	ekki	ekki	ADV	NEG	_	7	amod	_	_
-7	meiri	mikill	DET	QR-D	Case=Dat|Degree=Pos	8	amod	_	_
+7	meiri	mikill	DET	QR-D	Case=Dat	8	amod	_	_
 8	veltu	velta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
 9	en	en	CCONJ	CONJ	_	15	cc	_	_
 10	þar	þar	ADV	ADV	Degree=Pos	15	advmod	_	_
@@ -413,7 +413,7 @@
 13	fádæma	fádæmi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	nmod:poss	_	_
 14	góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	amod	_	_
 15	afkoma	afkoma	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	OriginalHead=0|SpaceAfter=No
-16	,	,	PUNCT	,	_	3	punct	_	_
+16	,	,	PUNCT	,	_	15	punct	_	_
 17	fádæma	fádæmi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	18	nmod:poss	_	_
 18	góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	amod	_	_
 19	afkoma	afkoma	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	dep	_	_
@@ -421,7 +421,7 @@
 21	það	það	PRON	PRO-N	Case=Nom	24	nsubj	_	_
 22	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
 23	í	í	ADP	P	_	24	case	_	_
-24	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	3	conj	_	OriginalHead=0
+24	þetta	þessi	DET	D-A	Case=Acc	3	conj	_	OriginalHead=0
 25	sem	sem	SCONJ	C	_	31	mark	_	_
 26	við	ég	PRON	PRO-N	Case=Nom	31	nsubj	_	_
 27	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_

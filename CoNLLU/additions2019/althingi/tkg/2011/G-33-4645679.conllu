@@ -51,7 +51,7 @@
 6	hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
 7	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 8	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	4	punct	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
 10	okkur	ég	PRON	PRO-D	Case=Dat	12	nsubj	_	_
 11	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	12	aux	_	_
 12	miðað	miða	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
@@ -65,7 +65,7 @@
 20	rauninni	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	_
 21	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	24	cop	_	_
 22	ekki	ekki	ADV	NEG	_	24	advmod	_	_
-23	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	24	nsubj	_	_
+23	mikið	mikill	DET	Q-N	Case=Nom	24	nsubj	_	_
 24	upp	upp	ADP	RP	_	17	ccomp	_	_
 25	á	á	ADP	P	_	26	case	_	_
 26	lagaverk	lagaverk	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	30	obl	_	_
@@ -75,7 +75,7 @@
 30	klaga	klaga	VERB	VB	VerbForm=Inf	24	amod	_	_
 31	og	og	CCONJ	CONJ	_	35	cc	_	_
 32	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
-33	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	35	det	_	_
+33	eitt	einn	DET	ONE-N	Case=Nom	35	det	_	_
 34	og	og	CCONJ	CONJ	_	35	cc	_	_
 35	annað	annar	PRON	OTHER-N	Case=Nom	4	conj	_	OriginalHead=0
 36	sem	sem	SCONJ	C	_	38	mark	_	_
@@ -102,7 +102,7 @@
 1	En	en	CCONJ	CONJ	_	4	cc	_	_
 2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-4	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	0	root	_	_
+4	eitt	einn	DET	ONE-N	Case=Nom	0	root	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	tala	tala	VERB	VB	VerbForm=Inf	4	xcomp	_	_
 7	um	um	ADP	P	_	8	case	_	_
@@ -156,7 +156,7 @@
 31	og	og	CCONJ	CONJ	_	32	cc	_	_
 32	stjórnarandstæðinga	stjórnarandstæðingur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	30	conj	_	_
 33	að	að	SCONJ	C	_	43	mark	_	_
-34	þær	sá	DET	D-N	Case=Nom|PronType=Art	35	det	_	_
+34	þær	sá	DET	D-N	Case=Nom	35	det	_	_
 35	tillögur	tillaga	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	43	nsubj	_	_
 36	sem	sem	SCONJ	C	_	39	mark	_	_
 37	þá	þá	ADV	ADV	Degree=Pos	39	advmod	_	_
@@ -164,7 +164,7 @@
 39	lagðar	leggja	VERB	VAN	Tense=Past|VerbForm=Part	35	acl:relcl	_	_
 40	fram	fram	ADP	RP	_	39	compound:prt	_	_
 41	væru	vera	AUX	BEDS	Mood=Sub|Tense=Past	43	cop	_	_
-42	mikil	mikill	DET	Q-N	Case=Nom|Degree=Pos	43	amod	_	_
+42	mikil	mikill	DET	Q-N	Case=Nom	43	amod	_	_
 43	atlaga	atlaga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	ccomp	_	_
 44	að	að	ADP	P	_	45	case	_	_
 45	konum	kona	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	43	obl	_	SpaceAfter=No
@@ -180,7 +180,7 @@
 5	ráðherra	ráðherra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	iobj	_	SpaceAfter=No
 6	:	:	PUNCT	,	_	5	punct	_	_
 7	Með	með	ADP	P	_	9	case	_	_
-8	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
+8	þeirri	sá	DET	D-D	Case=Dat	9	det	_	_
 9	jafnréttistillögu	jafnréttistillaga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	_
 10	sem	sem	SCONJ	C	_	12	mark	_	_
 11	hann	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
@@ -204,7 +204,7 @@
 29	í	í	ADP	P	_	30	case	_	_
 30	veg	vegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obl	_	_
 31	fyrir	fyrir	ADP	P	_	33	case	_	_
-32	þær	sá	DET	D-A	Case=Acc|PronType=Art	33	det	_	_
+32	þær	sá	DET	D-A	Case=Acc	33	det	_	_
 33	dómadagstillögur	dómadagstillaga	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	28	obl	_	_
 34	í	í	ADP	P	_	35	case	_	_
 35	garð	garður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obl	_	_
@@ -231,7 +231,7 @@
 11	í	í	ADP	P	_	12	case	_	_
 12	veg	vegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 13	fyrir	fyrir	ADP	P	_	15	case	_	_
-14	þær	sá	DET	D-A	Case=Acc|PronType=Art	15	det	_	_
+14	þær	sá	DET	D-A	Case=Acc	15	det	_	_
 15	tillögur	tillaga	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	_
 16	sem	sem	SCONJ	C	_	19	mark	_	_
 17	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	19	cop	_	_
@@ -256,7 +256,7 @@
 6	að	að	ADP	P	_	7	case	_	_
 7	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
 8	og	og	CCONJ	CONJ	_	13	cc	_	_
-9	hins	hinn	DET	D-G	Case=Gen|PronType=Art	10	det	_	_
+9	hins	hinn	DET	D-G	Case=Gen	10	det	_	_
 10	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	obl	_	_
 11	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	13	aux	_	_
 12	ég	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
@@ -277,9 +277,9 @@
 27	að	að	ADP	P	_	29	case	_	_
 28	mínu	minn	PRON	PRO-D	Case=Dat	29	nmod:poss	_	_
 29	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	35	obl	_	_
-30	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	35	det	_	_
-31	það	sá	DET	D-N	Case=Nom|PronType=Art	35	det	_	_
-32	mesta	mikill	DET	QS-N	Case=Nom|Degree=Pos	35	amod	_	_
+30	eitt	einn	DET	ONE-N	Case=Nom	35	det	_	_
+31	það	sá	DET	D-N	Case=Nom	35	det	_	_
+32	mesta	mikill	DET	QS-N	Case=Nom	35	amod	_	_
 33	og	og	CCONJ	CONJ	_	34	cc	_	_
 34	stærsta	stór	ADJ	ADJS-N	Case=Nom|Degree=Sup	32	conj	_	_
 35	skref	skref	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	acl:relcl	_	_
@@ -307,7 +307,7 @@
 57	sínum	sinn	PRON	PRO-D	Case=Dat	58	nmod:poss	_	_
 58	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	55	obl	_	SpaceAfter=No
 59	,	,	PUNCT	,	_	5	punct	_	_
-60	einhverjir	einhver	DET	Q-N	Case=Nom|Degree=Pos	63	nsubj	_	_
+60	einhverjir	einhver	DET	Q-N	Case=Nom	63	nsubj	_	_
 61	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	63	cop	_	_
 62	á	á	ADP	P	_	63	case	_	_
 63	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	conj	_	OriginalHead=0
@@ -319,7 +319,7 @@
 69	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	70	acl:relcl	_	_
 70	náði	ná	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
 71	þingheimur	þingheimur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	70	nsubj	_	_
-72	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	74	det	_	_
+72	þeirri	sá	DET	D-D	Case=Dat	74	det	_	_
 73	farsælu	farsæll	ADJ	ADJ-D	Case=Dat|Degree=Pos	74	amod	_	_
 74	niðurstöðu	niðurstaða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	70	obj	_	_
 75	að	að	PART	TO	_	76	mark	_	_
@@ -356,7 +356,7 @@
 6	að	að	SCONJ	C	_	8	mark	_	_
 7	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	8	expl	_	_
 8	komi	koma	VERB	VBPS	Mood=Sub|Tense=Pres	5	ccomp	_	_
-9	fleiri	margur	DET	QR-N	Case=Nom|Degree=Pos	10	amod	_	_
+9	fleiri	margur	DET	QR-N	Case=Nom	10	amod	_	_
 10	tillögur	tillaga	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	obl	_	_
 11	af	af	ADP	P	_	12	case	_	_
 12	hálfu	hálfa	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_

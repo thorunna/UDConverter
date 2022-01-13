@@ -11,7 +11,7 @@
 8	fyrir	fyrir	ADP	P	_	10	case	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	staðfesta	staðfesta	VERB	VB	VerbForm=Inf	5	obl	_	_
-11	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	10	obj	_	_
+11	þetta	þessi	DET	D-A	Case=Acc	10	obj	_	_
 12	með	með	ADP	P	_	13	case	_	_
 13	tengingu	tenging	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 14	þróunaraðstoðarinnar	þróunaraðstoð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	nmod:poss	_	_
@@ -20,14 +20,14 @@
 17	af	af	ADP	P	_	19	case	_	_
 18	sérstökum	sérstakur	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
 19	veiðigjöldum	veiðigjald	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	5	punct	_	_
+20	,	,	PUNCT	,	_	16	punct	_	_
 21	þá	þá	ADV	ADV	Degree=Pos	22	advmod	_	_
 22	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
 23	okkur	ég	PRON	PRO-D	Case=Dat	22	nsubj	_	_
 24	algjörlega	algjörlega	ADV	ADV	Degree=Pos	22	advmod	_	_
 25	saman	saman	ADV	ADV	Degree=Pos	22	advmod	_	_
 26	um	um	ADP	P	_	28	case	_	_
-27	það	sá	DET	D-A	Case=Acc|PronType=Art	28	det	_	_
+27	það	sá	DET	D-A	Case=Acc	28	det	_	_
 28	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -45,7 +45,7 @@
 9	einmitt	einmitt	ADV	ADV	Degree=Pos	10	advmod	_	_
 10	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	4	ccomp	_	_
 11	að	að	SCONJ	C	_	14	mark	_	_
-12	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	14	nsubj	_	_
+12	þetta	þessi	DET	D-N	Case=Nom	14	nsubj	_	_
 13	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	14	cop	_	_
 14	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	10	ccomp	_	_
 15	vel	vel	ADV	ADV	Degree=Pos	14	advmod	_	_
@@ -98,7 +98,7 @@
 15	ef	ef	ADP	P	_	17	case	_	_
 16	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	nsubj	_	_
 17	halda	halda	VERB	VBPI	Mood=Ind|Tense=Pres	4	obl	_	_
-18	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	20	det	_	_
+18	þessari	þessi	DET	D-D	Case=Dat	20	det	_	_
 19	óbreyttu	óbreyttur	ADJ	ADJ-D	Case=Dat|Degree=Pos	20	amod	_	_
 20	siglingu	sigling	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obj	_	SpaceAfter=No
 21	,	,	PUNCT	,	_	20	punct	_	_
@@ -114,12 +114,12 @@
 # text = Hvað þarf mikinn hagvöxt til að vinna þetta upp?
 1	Hvað	hvað	ADV	WADV	Degree=Pos	2	advmod	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	mikinn	mikill	ADV	Q-A	Case=Acc|Degree=Pos	4	advmod	_	_
+3	mikinn	mikill	ADV	Q-A	Case=Acc	4	advmod	_	_
 4	hagvöxt	hagvöxtur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 5	til	til	ADP	P	_	7	case	_	_
 6	að	að	PART	TO	_	7	advcl	_	_
 7	vinna	vinna	VERB	VB	VerbForm=Inf	2	obl	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	7	obj	_	_
+8	þetta	þessi	DET	D-A	Case=Acc	7	obj	_	_
 9	upp	upp	ADP	RP	_	7	compound:prt	_	SpaceAfter=No
 10	?	?	PUNCT	.	_	2	punct	_	_
 
@@ -148,7 +148,7 @@
 6	viðbótarhagvöxt	viðbótarhagvöxtur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
 7	upp	upp	ADP	RP	_	12	compound:prt	_	_
 8	á	á	ADP	P	_	12	case	_	_
-9	1	einn	NUM	ONE-A	Case=Acc|Number=Sing	12	nummod	_	_
+9	1	einn	NUM	ONE-A	Case=Acc	12	nummod	_	_
 10	til	til	CCONJ	CONJ	_	11	cc	_	_
 11	2	tveir	NUM	NUM-A	Case=Acc	9	conj	_	SpaceAfter=No
 12	<percent/>	prósent	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
@@ -162,7 +162,7 @@
 20	í	í	ADP	P	_	21	case	_	_
 21	slaka	slaki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
 22	af	af	ADP	P	_	24	case	_	_
-23	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	24	det	_	_
+23	þessari	þessi	DET	D-D	Case=Dat	24	det	_	_
 24	stærðargráðu	stærðargráða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -170,16 +170,16 @@
 # X_IDs = ID_missing_9 ; ID_missing_10
 # text = En sá hagvöxtur verður einhvern veginn að verða til og það sem ég hef miklar áhyggjur af er að þessar áherslur núna, þar sem menn hverfa frá hinni blönduðu leið og fara meira í niðurskurðarleiðina, leggja enga áherslu á tekjuöflun, muni setja okkur í neikvæðan spíral sem skrúfar niður umsvifin í samfélaginu. Það sé farið út af jafnvæginu, Forseti hringir. sem allir eru að keppa að í vestrænum hagkerfum að finna, milli blandaðra aðgerða tekjuöflunar og niðurskurðar.
 1	En	en	CCONJ	CONJ	_	4	cc	_	_
-2	sá	sá	DET	D-N	Case=Nom|PronType=Art	3	det	_	_
+2	sá	sá	DET	D-N	Case=Nom	3	det	_	_
 3	hagvöxtur	hagvöxtur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 4	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-5	einhvern	einhver	DET	Q-A	Case=Acc|Degree=Pos	6	amod	_	_
+5	einhvern	einhver	DET	Q-A	Case=Acc	6	amod	_	_
 6	veginn	vegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
 7	að	að	PART	TO	_	4	xcomp	_	_
 8	verða	verða	AUX	RD	VerbForm=Inf	7	aux	_	_
 9	til	til	ADP	RP	_	7	compound:prt	_	_
 10	og	og	CCONJ	CONJ	_	11	cc	_	_
-11	það	sá	DET	D-N	Case=Nom|PronType=Art	4	conj	_	OriginalHead=0
+11	það	sá	DET	D-N	Case=Nom	4	conj	_	OriginalHead=0
 12	sem	sem	SCONJ	C	_	14	mark	_	_
 13	ég	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
 14	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	11	acl:relcl	_	_
@@ -188,7 +188,7 @@
 17	af	af	ADP	P	_	16	obl	_	_
 18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 19	að	að	SCONJ	C	_	45	mark	_	_
-20	þessar	þessi	DET	D-N	Case=Nom|PronType=Art	21	det	_	_
+20	þessar	þessi	DET	D-N	Case=Nom	21	det	_	_
 21	áherslur	áhersla	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	45	nsubj	_	_
 22	núna	núna	ADV	ADV	Degree=Pos	21	advmod	_	SpaceAfter=No
 23	,	,	PUNCT	,	_	22	punct	_	_
@@ -197,17 +197,17 @@
 26	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	27	nsubj	_	_
 27	hverfa	hverfa	VERB	VBPI	Mood=Ind|Tense=Pres	21	acl:relcl	_	_
 28	frá	frá	ADP	P	_	31	case	_	_
-29	hinni	hinn	DET	D-D	Case=Dat|PronType=Art	31	det	_	_
+29	hinni	hinn	DET	D-D	Case=Dat	31	det	_	_
 30	blönduðu	blandaður	ADJ	ADJ-D	Case=Dat|Degree=Pos	31	amod	_	_
 31	leið	leið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	27	obl	_	_
 32	og	og	CCONJ	CONJ	_	33	cc	_	_
 33	fara	fara	VERB	VBPI	Mood=Ind|Tense=Pres	27	conj	_	_
-34	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	33	obl	_	_
+34	meira	mikill	DET	QR-A	Case=Acc	33	obl	_	_
 35	í	í	ADP	P	_	36	case	_	_
 36	niðurskurðarleiðina	niðurskurðarleið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obl	_	SpaceAfter=No
 37	,	,	PUNCT	,	_	38	punct	_	_
 38	leggja	leggja	VERB	VBPI	Mood=Ind|Tense=Pres	33	conj	_	_
-39	enga	enginn	DET	Q-A	Case=Acc|Degree=Pos	40	amod	_	_
+39	enga	enginn	DET	Q-A	Case=Acc	40	amod	_	_
 40	áherslu	áhersla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	38	obj	_	_
 41	á	á	ADP	P	_	42	case	_	_
 42	tekjuöflun	tekjuöflun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	38	obl	_	SpaceAfter=No
@@ -236,7 +236,7 @@
 65	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	62	dep	_	SpaceAfter=No
 66	.	.	PUNCT	.	_	65	punct	_	_
 67	sem	sem	SCONJ	C	_	71	mark	_	_
-68	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	71	nsubj	_	_
+68	allir	allur	DET	Q-N	Case=Nom	71	nsubj	_	_
 69	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	71	cop	_	_
 70	að	að	PART	TO	_	71	mark	_	_
 71	keppa	keppa	VERB	VB	VerbForm=Inf	62	acl:relcl	_	_

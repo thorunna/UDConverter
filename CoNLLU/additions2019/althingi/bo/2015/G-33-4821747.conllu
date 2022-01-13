@@ -25,7 +25,7 @@
 22	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	19	xcomp	_	_
 23	hér	hér	ADV	ADV	Degree=Pos	26	advmod	_	_
 24	í	í	ADP	P	_	26	case	_	_
-25	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	26	det	_	_
+25	þessum	þessi	DET	D-D	Case=Dat	26	det	_	_
 26	sal	salur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -33,7 +33,7 @@
 # X_ID = ID_missing_2
 # text = Verður sú lögsókn þá ekki bara að koma fram?
 1	Verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-2	sú	sá	DET	D-N	Case=Nom|PronType=Art	3	det	_	_
+2	sú	sá	DET	D-N	Case=Nom	3	det	_	_
 3	lögsókn	lögsókn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
 4	þá	þá	ADV	ADV	Degree=Pos	1	advmod	_	_
 5	ekki	ekki	ADV	NEG	_	1	advmod	_	_
@@ -71,7 +71,7 @@
 # text = Ég er ekkert endilega að tala fyrir þannig vinnubrögðum en þetta hefur verið gert og enginn dómur hefur fallið ríkinu í óhag varðandi þau mál.
 1	Ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
-3	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	6	obl	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	6	obl	_	_
 4	endilega	endilega	ADV	ADV	Degree=Pos	6	advmod	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	tala	tala	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -79,12 +79,12 @@
 8	þannig	þannig	ADV	ADV	Degree=Pos	9	advmod	_	_
 9	vinnubrögðum	vinnubrögð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
 10	en	en	CCONJ	CONJ	_	14	cc	_	_
-11	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	14	nsubj	_	_
+11	þetta	þessi	DET	D-N	Case=Nom	14	nsubj	_	_
 12	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	14	aux	_	_
 13	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	14	cop	_	_
 14	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	6	conj	_	OriginalHead=0
 15	og	og	CCONJ	CONJ	_	19	cc	_	_
-16	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	17	amod	_	_
+16	enginn	enginn	DET	Q-N	Case=Nom	17	amod	_	_
 17	dómur	dómur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
 18	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	19	aux	_	_
 19	fallið	falla	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	OriginalHead=0
@@ -92,7 +92,7 @@
 21	í	í	ADP	P	_	20	case	_	_
 22	óhag	óhagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	_
 23	varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	19	advcl	_	_
-24	þau	sá	DET	D-A	Case=Acc|PronType=Art	25	det	_	_
+24	þau	sá	DET	D-A	Case=Acc	25	det	_	_
 25	mál	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obj	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	6	punct	_	_
 
@@ -105,7 +105,7 @@
 4	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 5	fyrir	fyrir	ADP	P	_	6	case	_	_
 6	sig	sig	PRON	PRO-A	Case=Acc	3	obl	_	_
-7	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	8	det	_	_
+7	þessa	þessi	DET	D-A	Case=Acc	8	det	_	_
 8	hræðslu	hræðsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
 9	núna	núna	ADV	ADV	Degree=Pos	3	advmod	_	SpaceAfter=No
 10	?	?	PUNCT	.	_	3	punct	_	_
@@ -125,7 +125,7 @@
 10	tiltekin	tiltaka	VERB	VAN	Tense=Past|VerbForm=Part	7	acl:relcl	_	_
 11	sem	sem	SCONJ	C	_	12	mark	_	_
 12	ástæður	ástæða	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	advcl	_	_
-13	þessarar	þessi	DET	D-G	Case=Gen|PronType=Art	14	det	_	_
+13	þessarar	þessi	DET	D-G	Case=Gen	14	det	_	_
 14	lagasetningar	lagasetning	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	nmod:poss	_	_
 15	og	og	CCONJ	CONJ	_	20	cc	_	_
 16	veigamesta	veigamikill	ADJ	ADJS-N	Case=Nom|Degree=Sup	17	amod	_	_
@@ -161,7 +161,7 @@
 19	líka	líka	ADV	ALSO	_	17	advmod	_	_
 20	að	að	PART	TO	_	21	mark	_	_
 21	meina	meina	VERB	VB	VerbForm=Inf	17	xcomp	_	_
-22	það	sá	DET	D-A	Case=Acc|PronType=Art	21	obj	_	_
+22	það	sá	DET	D-A	Case=Acc	21	obj	_	_
 23	sem	sem	SCONJ	C	_	25	mark	_	_
 24	við	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
 25	segjum	segja	VERB	VBPI	Mood=Ind|Tense=Pres	22	acl:relcl	_	SpaceAfter=No

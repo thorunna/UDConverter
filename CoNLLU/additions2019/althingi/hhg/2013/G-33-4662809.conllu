@@ -16,16 +16,16 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4662809,.2
 # X_IDs = ID_missing_2 ; ID_missing_3 ; ID_missing_4
 # text = Sá sem hér stendur hefur viðrað hugmyndir bæði á fundum hv. allsherjar- og menntamálanefndar og hér í pontu á hinu háa Alþingi og hefur talað um það í fjölmiðlum en enginn hefur enn þá sagt honum að það virki ekki.
-1	Sá	sá	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
+1	Sá	sá	DET	D-N	Case=Nom	6	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	hér	hér	ADV	ADV	Degree=Pos	4	advmod	_	_
 4	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
 5	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
 6	viðrað	viðra	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 7	hugmyndir	hugmynd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
-8	bæði	bæði	CCONJ	CONJ	_	6	obl	_	_
+8	bæði	bæði	CCONJ	CONJ	_	10	cc	_	_
 9	á	á	ADP	P	_	10	case	_	_
-10	fundum	fundur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
+10	fundum	fundur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
 11	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	15	amod	_	_
 12	allsherjar-	allsherjar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	15	nmod:poss	_	_
 13	og	og	CCONJ	CONJ	_	14	cc	_	_
@@ -34,9 +34,9 @@
 16	og	og	CCONJ	CONJ	_	19	cc	_	_
 17	hér	hér	ADV	ADV	Degree=Pos	19	advmod	_	_
 18	í	í	ADP	P	_	19	case	_	_
-19	pontu	ponta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	conj	_	_
+19	pontu	ponta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	conj	_	_
 20	á	á	ADP	P	_	23	case	_	_
-21	hinu	hinn	DET	D-D	Case=Dat|PronType=Art	23	det	_	_
+21	hinu	hinn	DET	D-D	Case=Dat	23	det	_	_
 22	háa	hár	ADJ	ADJ-D	Case=Dat|Degree=Pos	23	amod	_	_
 23	Alþingi	alþingi	PROPN	NPR-D	_	19	obl	_	_
 24	og	og	CCONJ	CONJ	_	26	cc	_	_
@@ -47,7 +47,7 @@
 29	í	í	ADP	P	_	30	case	_	_
 30	fjölmiðlum	fjölmiðill	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	26	obl	_	_
 31	en	en	CCONJ	CONJ	_	36	cc	_	_
-32	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	36	nsubj	_	_
+32	enginn	enginn	DET	Q-N	Case=Nom	36	nsubj	_	_
 33	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	36	aux	_	_
 34	enn	enn	ADV	ADV	Degree=Pos	36	advmod	_	_
 35	þá	þá	ADV	ADV	Degree=Pos	34	advmod	_	_
@@ -73,7 +73,7 @@
 9	sannfærður	sannfærður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 10	um	um	ADP	P	_	13	case	_	_
 11	að	að	SCONJ	C	_	13	mark	_	_
-12	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	13	nsubj	_	_
+12	allir	allur	DET	Q-N	Case=Nom	13	nsubj	_	_
 13	skilji	skilja	VERB	VBPS	Mood=Sub|Tense=Pres	9	amod	_	_
 14	nákvæmlega	nákvæmlega	ADV	ADV	Degree=Pos	15	advmod	_	_
 15	hvað	hver	PRON	WPRO-N	Case=Nom	19	obj	_	_
@@ -82,18 +82,18 @@
 18	að	að	PART	TO	_	19	mark	_	_
 19	segja	segja	VERB	VB	VerbForm=Inf	13	ccomp	_	_
 20	stundum	stundum	ADV	ADV	Degree=Pos	9	advmod	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	9	punct	_	_
+21	,	,	PUNCT	,	_	20	punct	_	_
 22	það	það	PRON	PRO-N	Case=Nom	25	nsubj	_	_
 23	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
 24	náttúrlega	náttúrlega	ADV	ADV	Degree=Pos	25	advmod	_	_
-25	það	sá	DET	D-N	Case=Nom|PronType=Art	9	conj	_	OriginalHead=0
+25	það	sá	DET	D-N	Case=Nom	9	conj	_	OriginalHead=0
 26	sem	sem	SCONJ	C	_	27	mark	_	_
 27	fylgir	fylgja	VERB	VBPI	Mood=Ind|Tense=Pres	25	acl:relcl	_	_
 28	því	það	PRON	PRO-D	Case=Dat	27	obj	_	_
 29	að	að	PART	TO	_	28	xcomp	_	_
 30	vera	vera	AUX	BE	VerbForm=Inf	29	cop	_	_
 31	tölvunörd	tölvunörd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	29	xcomp	_	SpaceAfter=No
-32	,	,	PUNCT	,	_	9	punct	_	_
+32	,	,	PUNCT	,	_	29	punct	_	_
 33	en	en	CCONJ	CONJ	_	56	cc	_	_
 34	með	með	ADP	P	_	35	case	_	_
 35	hliðsjón	hliðsjón	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	56	obl	_	_
@@ -122,7 +122,7 @@
 58	hvort	hvort	SCONJ	WQ	_	60	mark	_	_
 59	það	það	PRON	PRO-N	Case=Nom	60	nsubj	_	_
 60	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	56	ccomp	_	_
-61	einhver	einhver	DET	Q-A	Case=Acc|Degree=Pos	62	amod	_	_
+61	einhver	einhver	DET	Q-A	Case=Acc	62	amod	_	_
 62	áhrif	áhrif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	60	obj	_	_
 63	á	á	ADP	P	_	64	case	_	_
 64	afstöðu	afstaða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	60	obl	_	_
@@ -133,7 +133,7 @@
 69	gagnvart	gagnvart	ADP	P	_	70	case	_	_
 70	meðalhófi	meðalhóf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	64	obl	_	_
 71	í	í	ADP	P	_	73	case	_	_
-72	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	73	det	_	_
+72	þessu	þessi	DET	D-D	Case=Dat	73	det	_	_
 73	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	64	obl	_	SpaceAfter=No
 74	.	.	PUNCT	.	_	9	punct	_	_
 

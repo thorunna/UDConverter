@@ -12,7 +12,7 @@
 9	það	það	PRON	PRO-N	Case=Nom	13	nsubj	_	_
 10	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	13	cop	_	_
 11	svo	svo	ADV	ADV	Degree=Pos	12	amod	_	_
-12	mikil	mikill	DET	Q-N	Case=Nom|Degree=Pos	13	amod	_	_
+12	mikil	mikill	DET	Q-N	Case=Nom	13	amod	_	_
 13	vonbrigði	vonbrigði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	ccomp	_	_
 14	af	af	ADP	P	_	15	case	_	_
 15	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
@@ -44,12 +44,12 @@
 8	stjórnarmeirihlutinn	stjórnarmeirihluti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
 9	geri	gera	VERB	DOPS	Mood=Sub|Tense=Pres	6	advcl	_	_
 10	þá	þá	ADV	ADV	Degree=Pos	9	advmod	_	_
-11	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	12	amod	_	_
+11	eitthvað	einhver	DET	Q-A	Case=Acc	12	amod	_	_
 12	annað	annar	PRON	OTHER-A	Case=Acc	9	obj	_	_
 13	í	í	ADP	P	_	14	case	_	_
 14	staðinn	staður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
 15	í	í	ADP	P	_	17	case	_	_
-16	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	17	det	_	_
+16	þessum	þessi	DET	D-D	Case=Dat	17	det	_	_
 17	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	1	punct	_	_
 
@@ -71,7 +71,7 @@
 13	að	að	PART	TO	_	14	mark	_	_
 14	leggja	leggja	VERB	VB	VerbForm=Inf	2	conj	_	OriginalHead=0
 15	niður	niður	ADP	RP	_	14	compound:prt	_	_
-16	ýmsa	ýmis	DET	Q-A	Case=Acc|Degree=Pos	17	amod	_	_
+16	ýmsa	ýmis	DET	Q-A	Case=Acc	17	amod	_	_
 17	þjónustu	þjónusta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
 18	á	á	ADP	P	_	19	case	_	_
 19	sjúkrahúsum	sjúkrahús	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	_
@@ -83,18 +83,18 @@
 
 # sent_id = ALTHINGI_BO_2014_G-33-4850283,.4
 # X_IDs = ID_missing_5 ; ID_missing_6
-# text = Við vitum ekkert hvernig það kemur niður á börnum,neyðarmóttaka vegna kynferðisofbeldis er í lamasessi.
+# text = Við vitum ekkert hvernig það kemur niður á börnum, neyðarmóttaka vegna kynferðisofbeldis er í lamasessi.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	vitum	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	2	obl	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	2	obl	_	_
 4	hvernig	hvernig	ADV	WADV	Degree=Pos	6	advmod	_	_
 5	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 6	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	2	ccomp	_	_
 7	niður	niður	ADP	RP	_	9	compound:prt	_	_
 8	á	á	ADP	P	_	9	case	_	_
 9	börnum	barn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	2	punct	_	SpaceAfter=No
-11	neyðarmóttaka	neyðarmóttaka	PUNCT	N-N	Case=Nom|Definite=Ind|Number=Sing	2	punct	_	_
+10	,	,	PUNCT	,	_	2	punct	_	_
+11	neyðarmóttaka	neyðarmóttaka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
 12	vegna	vegna	ADP	P	_	13	case	_	_
 13	kynferðisofbeldis	kynferðisofbeldi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	obl	_	_
 14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_

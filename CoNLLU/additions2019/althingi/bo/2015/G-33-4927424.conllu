@@ -21,7 +21,7 @@
 7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 8	algjörlega	algjörlega	ADV	ADV	Degree=Pos	9	amod	_	_
 9	ósammála	ósammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	ccomp	_	_
-10	þeim	sá	DET	D-D	Case=Dat|PronType=Art	11	det	_	_
+10	þeim	sá	DET	D-D	Case=Dat	11	det	_	_
 11	forsendum	forsenda	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	_
 12	sem	sem	SCONJ	C	_	14	mark	_	_
 13	þingmaðurinn	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
@@ -51,7 +51,7 @@
 4	hans	hann	PRON	PRO-G	Case=Gen	3	nmod:poss	_	_
 5	eða	eða	CCONJ	CONJ	_	8	cc	_	_
 6	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
-7	einhver	einhver	DET	Q-N	Case=Nom|Degree=Pos	8	amod	_	_
+7	einhver	einhver	DET	Q-N	Case=Nom	8	amod	_	_
 8	gögn	gagn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	conj	_	OriginalHead=0
 9	sem	sem	SCONJ	C	_	10	mark	_	_
 10	styðja	styðja	VERB	VBPI	Mood=Ind|Tense=Pres	8	acl:relcl	_	_
@@ -79,7 +79,7 @@
 2	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 4	upp	upp	ADP	RP	_	2	compound:prt	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	2	punct	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
 6	þá	þá	ADV	ADV	Degree=Pos	11	advmod	_	_
 7	hefðu	hafa	AUX	HVDS	Mood=Sub|Tense=Past	11	aux	_	_
 8	ekki	ekki	ADV	NEG	_	11	advmod	_	_
@@ -120,7 +120,7 @@
 5	værum	vera	AUX	BEDS	Mood=Sub|Tense=Past	2	cop	_	_
 6	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 7	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
-8	öll	allur	DET	Q-N	Case=Nom|Degree=Pos	2	amod	_	_
+8	öll	allur	DET	Q-N	Case=Nom	2	amod	_	_
 9	á	á	ADP	P	_	10	case	_	_
 10	Benidorm	benidorm	ADV	ADV	Degree=Pos	2	obl	_	_
 11	til	til	ADP	P	_	13	case	_	_
@@ -129,9 +129,9 @@
 14	sól	sól	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	xcomp	_	_
 15	í	í	ADP	P	_	16	case	_	_
 16	andlitið	andlit	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	2	punct	_	_
+17	,	,	PUNCT	,	_	14	punct	_	_
 18	en	en	CCONJ	CONJ	_	20	cc	_	_
-19	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	20	nsubj	_	_
+19	enginn	enginn	DET	Q-N	Case=Nom	20	nsubj	_	_
 20	færi	fara	VERB	VBDS	Mood=Sub|Tense=Past	2	conj	_	OriginalHead=0
 21	til	til	ADP	P	_	22	case	_	_
 22	Balí	balí	PROPN	NPR-G	_	20	obl	_	SpaceAfter=No
@@ -147,7 +147,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
 4	bara	bara	ADV	FP	Degree=Pos	5	advmod	_	_
-5	það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+5	það	sá	DET	D-N	Case=Nom	0	root	_	_
 6	sem	sem	SCONJ	C	_	7	mark	_	_
 7	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
 8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
@@ -167,7 +167,7 @@
 3	upplifunin	upplifun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 4	af	af	ADP	P	_	5	case	_	_
 5	staðnum	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	3	punct	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
 7	það	það	PRON	PRO-N	Case=Nom	9	nsubj	_	_
 8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 9	upplifunin	upplifun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	OriginalHead=0
@@ -184,7 +184,7 @@
 20	ekki	ekki	ADV	NEG	_	19	advmod	_	_
 21	náttúruna	náttúra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obl	_	_
 22	og	og	CCONJ	CONJ	_	24	cc	_	_
-23	þá	sá	DET	D-A	Case=Acc|PronType=Art	24	det	_	_
+23	þá	sá	DET	D-A	Case=Acc	24	det	_	_
 24	upplifun	upplifun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
 25	og	og	CCONJ	CONJ	_	26	cc	_	_
 26	sérstöðu	sérstaða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	conj	_	_
@@ -194,7 +194,7 @@
 30	með	með	ADP	RP	_	19	compound:prt	_	_
 31	inn	inn	ADP	RP	_	34	compound:prt	_	_
 32	í	í	ADP	P	_	34	case	_	_
-33	þennan	þessi	DET	D-A	Case=Acc|PronType=Art	34	det	_	_
+33	þennan	þessi	DET	D-A	Case=Acc	34	det	_	_
 34	reikning	reikningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -231,8 +231,8 @@
 11	Íslands	ísland	PROPN	NPR-G	_	9	obl	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	11	punct	_	_
 13	eða	eða	CCONJ	CONJ	_	14	cc	_	_
-14	flestir	margur	DET	QS-N	Case=Nom|Degree=Pos	2	conj	_	_
-15	hverjir	hver	DET	Q-N	Case=Nom|Degree=Pos	1	appos	_	SpaceAfter=No
+14	flestir	margur	DET	QS-N	Case=Nom	2	conj	_	_
+15	hverjir	hver	DET	Q-N	Case=Nom	1	appos	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_BO_2015_G-33-4927424,.12
@@ -258,7 +258,7 @@
 7	hvort	hvort	SCONJ	WQ	_	9	mark	_	_
 8	þingmaðurinn	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
 9	beindi	beina	VERB	VBDS	Mood=Sub|Tense=Past	6	ccomp	_	_
-10	einhverri	einhver	DET	Q-D	Case=Dat|Degree=Pos	12	amod	_	_
+10	einhverri	einhver	DET	Q-D	Case=Dat	12	amod	_	_
 11	sérstakri	sérstakur	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
 12	spurningu	spurning	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obj	_	_
 13	til	til	ADP	P	_	14	case	_	_

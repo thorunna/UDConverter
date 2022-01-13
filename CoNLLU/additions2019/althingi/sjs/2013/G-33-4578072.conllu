@@ -10,7 +10,7 @@
 7	tillagna	tillaga	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	5	obj	_	_
 8	um	um	ADP	P	_	21	case	_	_
 9	að	að	SCONJ	C	_	21	mark	_	_
-10	þessir	þessi	DET	D-N	Case=Nom|PronType=Art	11	det	_	_
+10	þessir	þessi	DET	D-N	Case=Nom	11	det	_	_
 11	fjármunir	fjármunir	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	21	nsubj	_	_
 12	sem	sem	SCONJ	C	_	13	mark	_	_
 13	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	11	acl:relcl	_	_
@@ -31,10 +31,10 @@
 28	að	að	PART	TO	_	29	mark	_	_
 29	ganga	ganga	VERB	VB	VerbForm=Inf	27	xcomp	_	_
 30	í	í	ADP	P	_	32	case	_	_
-31	einhvern	einhver	DET	Q-A	Case=Acc|Degree=Pos	32	amod	_	_
+31	einhvern	einhver	DET	Q-A	Case=Acc	32	amod	_	_
 32	alþjónustusjóð	alþjónustusjóður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	29	obl	_	_
 33	eða	eða	CCONJ	CONJ	_	34	cc	_	_
-34	hvað	hver	DET	Q-A	Case=Acc|Degree=Pos	32	conj	_	_
+34	hvað	hver	DET	Q-A	Case=Acc	32	conj	_	_
 35	það	það	PRON	PRO-N	Case=Nom	34	acl:relcl	_	_
 36	nú	nú	ADV	ADV	Degree=Pos	35	advmod	_	_
 37	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	SpaceAfter=No
@@ -55,7 +55,7 @@
 52	þess	það	PRON	PRO-G	Case=Gen	50	obl	_	_
 53	að	að	PART	TO	_	54	mark	_	_
 54	koma	koma	VERB	VB	VerbForm=Inf	52	xcomp	_	_
-55	þeim	sá	DET	D-D	Case=Dat|PronType=Art	56	det	_	_
+55	þeim	sá	DET	D-D	Case=Dat	56	det	_	_
 56	fjármunum	fjármunir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	54	obj	_	_
 57	í	í	ADP	P	_	58	case	_	_
 58	gagnið	gagn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	54	obl	_	_
@@ -70,7 +70,7 @@
 67	því	það	PRON	PRO-D	Case=Dat	62	obl	_	_
 68	að	að	PART	TO	_	69	mark	_	_
 69	bæta	bæta	VERB	VB	VerbForm=Inf	67	xcomp	_	_
-70	þessi	þessi	DET	D-A	Case=Acc|PronType=Art	71	det	_	_
+70	þessi	þessi	DET	D-A	Case=Acc	71	det	_	_
 71	fjarskiptasambönd	fjarskiptasamband	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	69	obj	_	SpaceAfter=No
 72	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -89,7 +89,7 @@
 10	að	að	SCONJ	C	_	16	mark	_	_
 11	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	16	expl	_	_
 12	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	16	cop	_	_
-13	neinar	neinn	DET	Q-N	Case=Nom|Degree=Pos	14	amod	_	_
+13	neinar	neinn	DET	Q-N	Case=Nom	14	amod	_	_
 14	takmarkanir	takmörkun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	16	obl	_	_
 15	á	á	ADP	P	_	16	case	_	_
 16	því	það	PRON	PRO-D	Case=Dat	6	obl	_	_
@@ -101,7 +101,7 @@
 22	og	og	CCONJ	CONJ	_	23	cc	_	_
 23	gjalda	gjald	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	21	conj	_	_
 24	á	á	ADP	P	_	26	case	_	_
-25	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	26	det	_	_
+25	þessu	þessi	DET	D-D	Case=Dat	26	det	_	_
 26	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
 27	úr	úr	ADP	P	_	28	case	_	_
 28	ríkissjóði	ríkissjóður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
@@ -129,14 +129,14 @@
 7	alveg	alveg	ADV	ADV	Degree=Pos	3	advmod	_	_
 8	á	á	ADP	P	_	9	case	_	_
 9	vandamálinu	vandamál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	3	punct	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
 11	af	af	ADP	P	_	12	case	_	_
 12	hverju	hver	PRON	WPRO-D	Case=Dat	13	obl	_	_
 13	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
 14	að	að	PART	TO	_	15	mark	_	_
 15	taka	taka	VERB	VB	VerbForm=Inf	13	xcomp	_	_
 16	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	15	advmod	_	_
-17	þessar	þessi	DET	D-A	Case=Acc|PronType=Art	18	det	_	_
+17	þessar	þessi	DET	D-A	Case=Acc	18	det	_	_
 18	tekjur	tekja	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obj	_	_
 19	fjarskiptasjóðs	fjarskiptasjóður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	_
 20	út	út	ADP	RP	_	22	compound:prt	_	_
@@ -153,7 +153,7 @@
 31	bara	bara	ADV	FP	Degree=Pos	30	advmod	_	_
 32	í	í	ADP	P	_	33	case	_	_
 33	fjárveitingu	fjárveiting	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obl	_	_
-34	það	sá	DET	D-A	Case=Acc|PronType=Art	30	obj	_	_
+34	það	sá	DET	D-A	Case=Acc	30	obj	_	_
 35	sem	sem	SCONJ	C	_	36	mark	_	_
 36	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	34	acl:relcl	_	_
 37	að	að	PART	TO	_	38	mark	_	_
@@ -173,7 +173,7 @@
 2	til	til	ADP	RP	_	3	compound:prt	_	_
 3	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	9	obl	_	_
 4	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
-5	einhver	einhver	DET	Q-N	Case=Nom|Degree=Pos	7	amod	_	_
+5	einhver	einhver	DET	Q-N	Case=Nom	7	amod	_	_
 6	lagatæknileg	lagatæknilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
 7	álitamál	álitamál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
 8	að	að	PART	TO	_	9	mark	_	_
@@ -181,7 +181,7 @@
 10	þarna	þarna	ADV	ADV	Degree=Pos	9	advmod	_	_
 11	fyrir	fyrir	ADP	P	_	12	case	_	_
 12	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	9	punct	_	_
+13	,	,	PUNCT	,	_	12	punct	_	_
 14	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
 15	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	9	conj	_	OriginalHead=0|SpaceAfter=No
 16	.	.	PUNCT	.	_	9	punct	_	_
@@ -204,7 +204,7 @@
 5	peningarnir	peningur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
 6	fari	fara	VERB	VBPS	Mood=Sub|Tense=Pres	2	ccomp	_	_
 7	í	í	ADP	P	_	8	case	_	_
-8	það	sá	DET	D-A	Case=Acc|PronType=Art	6	obl	_	_
+8	það	sá	DET	D-A	Case=Acc	6	obl	_	_
 9	sem	sem	SCONJ	C	_	11	mark	_	_
 10	þeir	hann	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 11	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	8	acl:relcl	_	_

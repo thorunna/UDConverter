@@ -21,7 +21,7 @@
 18	sem	sem	SCONJ	C	_	19	mark	_	_
 19	fylgir	fylgja	VERB	VBPI	Mood=Ind|Tense=Pres	17	acl:relcl	_	_
 20	í	í	ADP	P	_	22	case	_	_
-21	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	22	det	_	_
+21	þessu	þessi	DET	D-D	Case=Dat	22	det	_	_
 22	frumvarpi	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	6	punct	_	_
 
@@ -42,7 +42,7 @@
 12	sjálfur	sjálfur	PRON	PRO-N	Case=Nom	11	appos	_	_
 13	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	6	ccomp	_	_
 14	með	með	ADP	P	_	15	case	_	_
-15	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	13	obl	_	_
+15	allt	allur	DET	Q-A	Case=Acc	13	obl	_	_
 16	að	að	ADP	P	_	19	case	_	_
 17	100	hundrað	NUM	NUM-D	Case=Dat	19	nummod	_	_
 18	þús.	þúsund	NUM	NUM-D	Case=Dat	17	nummod	_	_
@@ -57,7 +57,7 @@
 27	og	og	CCONJ	CONJ	_	28	cc	_	_
 28	dílað	díla	VERB	VBN	Tense=Past|VerbForm=Part	26	conj	_	_
 29	með	með	ADP	P	_	26	obl	_	_
-30	hverju	hver	DET	Q-D	Case=Dat|Degree=Pos	31	amod	_	_
+30	hverju	hver	DET	Q-D	Case=Dat	31	amod	_	_
 31	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
 32	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -66,20 +66,20 @@
 # text = Ég tel þetta bagalegt og miklu meira en það, ég held að þetta sé mikil skammsýni og síst til þess fallið að stuðla að því að við fjarlægjumst hokur landbúnaðarkerfisins.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	4	nsubj	_	_
+3	þetta	þessi	DET	D-A	Case=Acc	4	nsubj	_	_
 4	bagalegt	bagalegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	2	ccomp	_	_
 5	og	og	CCONJ	CONJ	_	7	cc	_	_
 6	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	obl	_	_
-7	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	4	amod	_	_
+7	meira	mikill	DET	QR-A	Case=Acc	4	amod	_	_
 8	en	en	ADP	P	_	9	case	_	_
 9	það	það	PRON	PRO-A	Case=Acc	7	amod	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	2	punct	_	_
+10	,	,	PUNCT	,	_	7	punct	_	_
 11	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
 12	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 13	að	að	SCONJ	C	_	17	mark	_	_
-14	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	17	nsubj	_	_
+14	þetta	þessi	DET	D-N	Case=Nom	17	nsubj	_	_
 15	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	17	cop	_	_
-16	mikil	mikill	DET	Q-N	Case=Nom|Degree=Pos	17	amod	_	_
+16	mikil	mikill	DET	Q-N	Case=Nom	17	amod	_	_
 17	skammsýni	skammsýni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	ccomp	_	_
 18	og	og	CCONJ	CONJ	_	22	cc	_	_
 19	síst	varla	ADV	ADVS	Degree=Sup	22	advmod	_	_
@@ -100,14 +100,14 @@
 # sent_id = ALTHINGI_TKG_2011_G-33-4595716,.4
 # X_ID = ID_missing_5
 # text = Þetta stuðlar miklu frekar að því að allt verði eins og landbúnaðarkerfið er, þunglamalegt og svifaseint, í stað þess að vera núna með ákveðna reglufestu og markaðsdrifið eins og sjávarútvegurinn er rekinn í dag.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	stuðlar	stuðla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	4	obl	_	_
 4	frekar	frekar	ADV	ADVR	Degree=Cmp	2	advmod	_	_
 5	að	að	ADP	P	_	6	case	_	_
 6	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 7	að	að	SCONJ	C	_	9	mark	_	_
-8	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	9	nsubj	_	_
+8	allt	allur	DET	Q-N	Case=Nom	9	nsubj	_	_
 9	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	6	ccomp	_	_
 10	eins	_	ADV	ADVR	Degree=Cmp	9	advmod	_	_
 11	og	_	ADP	P	_	12	case	_	_
@@ -121,15 +121,15 @@
 19	í	í	ADP	P	_	20	case	_	_
 20	stað	staður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
 21	þess	það	PRON	PRO-G	Case=Gen	20	nmod:poss	_	_
-22	að	að	PART	TO	_	30	mark	_	_
-23	vera	vera	AUX	BE	VerbForm=Inf	30	cop	_	_
-24	núna	núna	ADV	ADV	Degree=Pos	30	advmod	_	_
+22	að	að	PART	TO	_	27	mark	_	_
+23	vera	vera	AUX	BE	VerbForm=Inf	27	cop	_	_
+24	núna	núna	ADV	ADV	Degree=Pos	27	advmod	_	_
 25	með	með	ADP	P	_	27	case	_	_
 26	ákveðna	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	27	amod	_	_
-27	reglufestu	reglufesta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	_
+27	reglufestu	reglufesta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	xcomp	_	_
 28	og	og	CCONJ	CONJ	_	29	cc	_	_
-29	markaðsdrifið	markaðsdrifinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	30	conj	_	_
-30	eins	_	ADV	ADVR	Degree=Cmp	21	xcomp	_	_
+29	markaðsdrifið	markaðsdrifinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	27	conj	_	_
+30	eins	_	ADV	ADVR	Degree=Cmp	27	advmod	_	_
 31	og	_	ADP	P	_	34	case	_	_
 32	sjávarútvegurinn	sjávarútvegur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	34	nsubj	_	_
 33	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	34	cop	_	_
@@ -151,7 +151,7 @@
 8	íslenski	íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
 9	sjávarútvegurinn	sjávarútvegur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
 10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
-11	eini	einn	DET	ONE-N	Case=Nom|Number=Sing	12	det	_	_
+11	eini	einn	DET	ONE-N	Case=Nom	12	det	_	_
 12	sjávarútvegurinn	sjávarútvegur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	acl:relcl	_	_
 13	sem	sem	SCONJ	C	_	15	mark	_	_
 14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
@@ -165,7 +165,7 @@
 22	vitni	vitni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obj	_	SpaceAfter=No
 23	,	,	PUNCT	,	_	22	punct	_	_
 24	og	og	CCONJ	CONJ	_	26	cc	_	_
-25	eini	einn	DET	ONE-N	Case=Nom|Number=Sing	26	det	_	_
+25	eini	einn	DET	ONE-N	Case=Nom	26	det	_	_
 26	sjávarútvegurinn	sjávarútvegur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	conj	_	_
 27	í	í	ADP	P	_	28	case	_	_
 28	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obl	_	_
@@ -184,7 +184,7 @@
 4	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	7	expl	_	_
 5	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	7	cop	_	_
 6	til	til	ADP	P	_	7	case	_	_
-7	mikils	mikill	DET	Q-G	Case=Gen|Degree=Pos	2	ccomp	_	_
+7	mikils	mikill	DET	Q-G	Case=Gen	2	ccomp	_	_
 8	að	að	PART	TO	_	9	mark	_	_
 9	vinna	vinna	VERB	VB	VerbForm=Inf	7	xcomp	_	_
 10	að	að	SCONJ	C	_	12	mark	_	_
@@ -250,17 +250,17 @@
 2	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	að	að	PART	TO	_	4	mark	_	_
 4	fara	fara	VERB	VB	VerbForm=Inf	0	root	_	_
-5	þá	sá	DET	D-A	Case=Acc|PronType=Art	6	det	_	_
+5	þá	sá	DET	D-A	Case=Acc	6	det	_	_
 6	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
 7	með	með	ADP	P	_	9	case	_	_
-8	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
+8	þessu	þessi	DET	D-D	Case=Dat	9	det	_	_
 9	frumvarpi	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
 10	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
 11	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	9	dep	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	11	punct	_	_
 13	og	og	CCONJ	CONJ	_	14	cc	_	_
 14	líka	líka	ADV	ALSO	_	9	conj	_	_
-15	hinu	hinn	DET	D-D	Case=Dat|PronType=Art	14	det	_	_
+15	hinu	hinn	DET	D-D	Case=Dat	14	det	_	_
 16	sem	sem	SCONJ	C	_	18	mark	_	_
 17	vonandi	vonandi	ADV	ADV	Degree=Pos	18	advmod	_	_
 18	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	14	acl:relcl	_	_

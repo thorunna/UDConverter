@@ -11,7 +11,7 @@
 8	það	það	PRON	PRO-A	Case=Acc	7	obj	_	_
 9	upp	upp	ADP	RP	_	7	compound:prt	_	_
 10	hvernig	hvernig	ADV	WADV	Degree=Pos	14	advmod	_	_
-11	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	12	det	_	_
+11	þessi	þessi	DET	D-N	Case=Nom	12	det	_	_
 12	pottur	pottur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
 13	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	14	aux	_	_
 14	nýst	nýta	VERB	VBN	Tense=Past|VerbForm=Part	7	ccomp	_	SpaceAfter=No
@@ -35,17 +35,17 @@
 32	því	það	PRON	PRO-D	Case=Dat	33	iobj	_	_
 33	tengdar	tengja	VERB	VAN	Tense=Past|VerbForm=Part	31	acl:relcl	_	_
 34	og	og	CCONJ	CONJ	_	36	cc	_	_
-35	umtalsvert	umtalsverður	DET	Q-N	Case=Nom|Degree=Pos	36	amod	_	_
+35	umtalsvert	umtalsverður	DET	Q-N	Case=Nom	36	amod	_	_
 36	tjón	tjón	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	26	conj	_	_
 37	á	á	ADP	P	_	38	case	_	_
 38	mannvirkjum	mannvirki	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	36	obl	_	_
 39	sem	sem	SCONJ	C	_	42	mark	_	_
-40	sumt	sumur	DET	Q-N	Case=Nom|Degree=Pos	42	amod	_	_
+40	sumt	sumur	DET	Q-N	Case=Nom	42	amod	_	_
 41	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	42	cop	_	_
 42	bætt	bæta	VERB	VAN	Tense=Past|VerbForm=Part	36	acl:relcl	_	_
 43	af	af	ADP	P	_	44	case	_	_
 44	viðlagatryggingu	viðlagatrygging	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	42	obl	_	SpaceAfter=No
-45	,	,	PUNCT	,	_	22	punct	_	_
+45	,	,	PUNCT	,	_	42	punct	_	_
 46	annað	annar	PRON	OTHER-N	Case=Nom	47	nsubj	_	_
 47	lenti	lenda	VERB	VBDI	Mood=Ind|Tense=Past	22	conj	_	OriginalHead=0
 48	á	á	ADP	P	_	49	case	_	_
@@ -70,7 +70,7 @@
 6	og	og	CCONJ	CONJ	_	8	cc	_	_
 7	aftur	aftur	ADV	ADV	Degree=Pos	8	advmod	_	_
 8	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-9	umtalsvert	umtalsverður	DET	Q-N	Case=Nom|Degree=Pos	10	amod	_	_
+9	umtalsvert	umtalsverður	DET	Q-N	Case=Nom	10	amod	_	_
 10	tjón	tjón	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 11	og	og	CCONJ	CONJ	_	13	cc	_	_
 12	aftur	aftur	ADV	ADV	Degree=Pos	13	advmod	_	_
@@ -98,8 +98,8 @@
 1	Þannig	þannig	ADV	ADV	Degree=Pos	0	root	_	_
 2	að	að	SCONJ	C	_	8	mark	_	_
 3	í	í	ADP	P	_	7	case	_	_
-4	öll	allur	DET	Q-A	Case=Acc|Degree=Pos	7	amod	_	_
-5	þau	sá	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
+4	öll	allur	DET	Q-A	Case=Acc	7	amod	_	_
+5	þau	sá	DET	D-A	Case=Acc	7	det	_	_
 6	þrjú	þrír	NUM	NUM-A	Case=Acc	7	nummod	_	_
 7	skipti	skipti	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	_
 8	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	1	advcl	_	_
@@ -107,7 +107,7 @@
 10	vel	vel	ADV	ADV	Degree=Pos	8	advmod	_	_
 11	að	að	PART	TO	_	8	xcomp	_	_
 12	hafa	hafa	AUX	HV	VerbForm=Inf	11	aux	_	_
-13	þennan	þessi	DET	D-A	Case=Acc|PronType=Art	14	det	_	_
+13	þennan	þessi	DET	D-A	Case=Acc	14	det	_	_
 14	pott	pottur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
 15	og	og	CCONJ	CONJ	_	17	cc	_	_
 16	þá	þá	ADV	ADV	Degree=Pos	17	advmod	_	_
@@ -190,7 +190,7 @@
 20	í	í	ADP	P	_	21	case	_	_
 21	lokafjárlögum	lokafjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obl	_	_
 22	og	og	CCONJ	CONJ	_	23	cc	_	_
-23	fleira	margur	DET	QR-N	Case=Nom|Degree=Pos	8	conj	_	_
+23	fleira	margur	DET	QR-N	Case=Nom	8	conj	_	_
 24	því	það	PRON	PRO-D	Case=Dat	26	obl	_	_
 25	um	um	ADP	RP	_	26	amod	_	_
 26	líkt	líkur	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	amod	_	SpaceAfter=No
@@ -199,7 +199,7 @@
 29	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
 30	að	að	PART	TO	_	31	mark	_	_
 31	taka	taka	VERB	VB	VerbForm=Inf	29	xcomp	_	_
-32	miklu	mikill	DET	Q-D	Case=Dat|Degree=Pos	33	obl	_	_
+32	miklu	mikill	DET	Q-D	Case=Dat	33	obl	_	_
 33	fastari	fastur	ADJ	ADJR-D	Case=Dat|Degree=Cmp	34	amod	_	_
 34	tökum	taka	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	31	obl	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	4	punct	_	_

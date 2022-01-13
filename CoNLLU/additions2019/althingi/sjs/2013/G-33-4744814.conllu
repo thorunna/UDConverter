@@ -9,7 +9,7 @@
 6	þá	þá	ADV	ADV	Degree=Pos	7	advmod	_	_
 7	deili	deila	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 8	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-9	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	10	det	_	_
+9	þeirri	sá	DET	D-D	Case=Dat	10	det	_	_
 10	skoðun	skoðun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obj	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	7	punct	_	_
 
@@ -53,7 +53,7 @@
 8	í	í	ADP	P	_	10	case	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	byggja	byggja	VERB	VB	VerbForm=Inf	5	obl	_	_
-11	það	sá	DET	D-A	Case=Acc|PronType=Art	10	obj	_	_
+11	það	sá	DET	D-A	Case=Acc	10	obj	_	_
 12	sem	sem	SCONJ	C	_	15	mark	_	_
 13	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	15	aux	_	_
 14	alltaf	alltaf	ADV	ADV	Degree=Pos	15	advmod	_	_
@@ -84,9 +84,9 @@
 8	í	í	ADP	P	_	9	case	_	_
 9	Vatnsmýrinni	vatnsmýrin	PROPN	NPR-D	_	7	obl	_	_
 10	nálægt	nálægt	ADP	P	_	11	case	_	_
-11	jarðvísindahúsinu	jarðvísindahús	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+11	jarðvísindahúsinu	jarðvísindahús	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
 12	og	og	CCONJ	CONJ	_	13	cc	_	_
-13	þar	þar	ADV	ADV	Degree=Pos	7	obl	_	SpaceAfter=No
+13	þar	þar	ADV	ADV	Degree=Pos	11	conj	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4744814,.5
@@ -108,7 +108,7 @@
 14	þáverandi	þáverandi	ADJ	ADJ-A	Case=Acc|Degree=Pos	15	amod	_	_
 15	ráðamenn	ráðamaður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
 16	landsins	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	15	nmod:poss	_	_
-17	mesta	mikill	DET	QS-A	Case=Acc|Degree=Pos	15	amod	_	SpaceAfter=No
+17	mesta	mikill	DET	QS-A	Case=Acc	15	amod	_	SpaceAfter=No
 18	,	,	PUNCT	,	_	17	punct	_	_
 19	Davíð	davíð	PROPN	NPR-A	_	15	appos	_	_
 20	Oddsson	oddsson	PROPN	NPR-A	_	19	flat:name	_	_
@@ -122,10 +122,10 @@
 28	við	við	ADP	P	_	29	case	_	_
 29	þá	hann	PRON	PRO-A	Case=Acc	26	obl	_	_
 30	að	að	SCONJ	C	_	36	mark	_	_
-31	einhver	einhver	DET	Q-N	Case=Nom|Degree=Pos	32	amod	_	_
+31	einhver	einhver	DET	Q-N	Case=Nom	32	amod	_	_
 32	hluti	hluti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	36	nsubj	_	_
 33	af	af	ADP	P	_	35	case	_	_
-34	því	sá	DET	D-D	Case=Dat|PronType=Art	35	det	_	_
+34	því	sá	DET	D-D	Case=Dat	35	det	_	_
 35	fé	fé	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
 36	færi	fara	VERB	VBDS	Mood=Sub|Tense=Past	26	ccomp	_	_
 37	í	í	ADP	P	_	39	case	_	_
@@ -133,7 +133,7 @@
 39	byggja	byggja	VERB	VB	VerbForm=Inf	36	obl	_	_
 40	náttúrugripasafn	náttúrugripasafn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	39	obj	_	_
 41	en	en	CCONJ	CONJ	_	44	cc	_	_
-42	sú	sá	DET	D-N	Case=Nom|PronType=Art	43	det	_	_
+42	sú	sá	DET	D-N	Case=Nom	43	det	_	_
 43	hugmynd	hugmynd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	44	nsubj	_	_
 44	hlaut	hljóta	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
 45	ekki	ekki	ADV	NEG	_	44	advmod	_	_
@@ -174,7 +174,7 @@
 29	þar	þar	ADV	ADV	Degree=Pos	30	advmod	_	_
 30	gjaldeyrishöftin	gjaldeyrishaft	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	21	advcl	_	_
 31	og	og	CCONJ	CONJ	_	34	cc	_	_
-32	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	34	det	_	_
+32	þessi	þessi	DET	D-N	Case=Nom	34	det	_	_
 33	geysilega	geysilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	34	amod	_	_
 34	krónustaða	krónustaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	30	conj	_	_
 35	útlendinga	útlendingur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	34	nmod:poss	_	_
@@ -230,7 +230,7 @@
 7	síður	varla	ADV	ADVR	Degree=Cmp	6	advmod	_	_
 8	en	en	ADP	P	_	9	case	_	_
 9	ella	ella	ADV	ADV	Degree=Pos	6	obl	_	_
-10	nokkurt	nokkur	DET	Q-A	Case=Acc|Degree=Pos	14	amod	_	_
+10	nokkurt	nokkur	DET	Q-A	Case=Acc	14	amod	_	_
 11	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
 12	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	14	dep	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	12	punct	_	_

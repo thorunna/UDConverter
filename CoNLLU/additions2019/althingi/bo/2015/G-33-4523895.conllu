@@ -20,11 +20,11 @@
 4	að	að	PART	TO	_	5	mark	_	_
 5	spyrja	spyrja	VERB	VB	VerbForm=Inf	2	xcomp	_	_
 6	um	um	ADP	P	_	9	case	_	_
-7	þær	sá	DET	D-A	Case=Acc|PronType=Art	9	det	_	_
+7	þær	sá	DET	D-A	Case=Acc	9	det	_	_
 8	75	75	NUM	NUM-A	Case=Acc	9	nummod	_	_
 9	milljónir	milljón	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
 10	sem	sem	SCONJ	C	_	14	mark	_	_
-11	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	14	nsubj	_	_
+11	margir	margur	DET	Q-N	Case=Nom	14	nsubj	_	_
 12	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	14	aux	_	_
 13	algjörlega	algjörlega	ADV	ADV	Degree=Pos	14	advmod	_	_
 14	gapað	gapa	VERB	VBN	Tense=Past|VerbForm=Part	9	acl:relcl	_	_
@@ -34,7 +34,7 @@
 18	skilyrtar	skilyrða	VERB	VAN	Tense=Past|VerbForm=Part	9	acl:relcl	_	_
 19	út	út	ADP	RP	_	23	compound:prt	_	_
 20	frá	frá	ADP	P	_	23	case	_	_
-21	einhverjum	einhver	DET	Q-D	Case=Dat|Degree=Pos	23	amod	_	_
+21	einhverjum	einhver	DET	Q-D	Case=Dat	23	amod	_	_
 22	ákveðnum	ákveðinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	23	amod	_	_
 23	húsbyggingarstíl	húsbyggingarstíll	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
 24	í	í	ADP	P	_	25	case	_	_
@@ -64,7 +64,7 @@
 16	skilyrtir	skilyrða	VERB	VAN	Tense=Past|VerbForm=Part	10	ccomp	_	_
 17	út	út	ADP	RP	_	21	compound:prt	_	_
 18	frá	frá	ADP	P	_	21	case	_	_
-19	einhverju	einhver	DET	Q-D	Case=Dat|Degree=Pos	21	amod	_	_
+19	einhverju	einhver	DET	Q-D	Case=Dat	21	amod	_	_
 20	fagurfræðilegu	fagurfræðilegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	21	amod	_	_
 21	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
 22	einstakra	einstakur	ADJ	ADJ-G	Case=Gen|Degree=Pos	23	amod	_	_
@@ -74,7 +74,7 @@
 26	hæstv.	hæstvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	27	amod	_	_
 27	forsætisráðherra	forsætisráðherra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	24	obl	_	_
 28	í	í	ADP	P	_	30	case	_	_
-29	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	30	det	_	_
+29	þessu	þessi	DET	D-D	Case=Dat	30	det	_	_
 30	tilfelli	tilfelli	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	27	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -82,14 +82,14 @@
 # X_ID = ID_missing_4
 # text = Ef þetta verður ekki samþykkt, verður þá engin bygging byggð hér?
 1	Ef	ef	ADP	P	_	5	case	_	_
-2	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	5	nsubj	_	_
+2	þetta	þessi	DET	D-N	Case=Nom	5	nsubj	_	_
 3	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	5	aux	_	_
 4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
 5	samþykkt	samþykkja	VERB	VAN	Tense=Past|VerbForm=Part	11	obl	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	5	punct	_	_
 7	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	11	aux	_	_
 8	þá	þá	ADV	ADV	Degree=Pos	11	advmod	_	_
-9	engin	enginn	DET	Q-N	Case=Nom|Degree=Pos	10	amod	_	_
+9	engin	enginn	DET	Q-N	Case=Nom	10	amod	_	_
 10	bygging	bygging	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
 11	byggð	byggja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 12	hér	hér	ADV	ADV	Degree=Pos	11	advmod	_	SpaceAfter=No
@@ -107,19 +107,19 @@
 7	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
 8	fjárlagaliði	fjárlagaliður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
 9	við	við	ADP	P	_	10	case	_	_
-10	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	6	obl	_	_
+10	eitthvað	einhver	DET	Q-A	Case=Acc	6	obl	_	_
 11	tiltekið	tiltekinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	10	amod	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	11	punct	_	_
 13	eins	_	ADV	ADVR	Degree=Cmp	10	advmod	_	_
 14	og	_	ADP	P	_	17	case	_	_
 15	í	í	ADP	P	_	17	case	_	_
-16	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	17	det	_	_
+16	þessu	þessi	DET	D-D	Case=Dat	17	det	_	_
 17	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
 18	tiltekna	tiltekinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	19	amod	_	_
 19	teikningu	teikning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
 20	sem	sem	SCONJ	C	_	24	mark	_	_
 21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
-22	margra	margur	DET	Q-G	Case=Gen|Degree=Pos	23	amod	_	_
+22	margra	margur	DET	Q-G	Case=Gen	23	amod	_	_
 23	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	24	obl	_	_
 24	gömul	gamall	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	acl:relcl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
@@ -147,7 +147,7 @@
 8	Landspítalinn	landspítali	PROPN	NPR-N	_	9	nsubj	_	_
 9	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	6	ccomp	_	_
 10	enn	enn	ADV	ADV	Degree=Pos	11	amod	_	_
-11	eina	einn	DET	ONE-A	Case=Acc|Number=Sing	12	amod	_	_
+11	eina	einn	DET	ONE-A	Case=Acc	12	amod	_	_
 12	ferðina	ferð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
 13	að	að	PART	TO	_	15	mark	_	_
 14	geta	geta	AUX	MD	VerbForm=Inf	15	aux	_	_
@@ -160,7 +160,7 @@
 21	skyldum	skylda	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obj	_	_
 22	við	við	ADP	P	_	23	case	_	_
 23	borgara	borgari	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	21	obl	_	_
-24	þessa	þessi	DET	D-G	Case=Gen|PronType=Art	25	det	_	_
+24	þessa	þessi	DET	D-G	Case=Gen	25	det	_	_
 25	lands	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	nmod:poss	_	_
 26	þegar	þegar	ADP	P	_	29	case	_	_
 27	upp	upp	ADP	RP	_	28	compound:prt	_	_
@@ -207,7 +207,7 @@
 7	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	9	cop	_	_
 8	ekki	ekki	ADV	NEG	_	9	advmod	_	_
 9	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	ccomp	_	_
-10	því	sá	DET	D-D	Case=Dat|PronType=Art	11	det	_	_
+10	því	sá	DET	D-D	Case=Dat	11	det	_	_
 11	kerfi	kerfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
 12	sem	sem	SCONJ	C	_	15	mark	_	_
 13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
@@ -223,14 +223,14 @@
 23	þar	þar	ADV	ADV	Degree=Pos	26	advmod	_	_
 24	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	26	cop	_	_
 25	samningurinn	samningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	26	nsubj	_	_
-26	sá	sá	DET	D-N	Case=Nom|PronType=Art	11	parataxis	_	_
+26	sá	sá	DET	D-N	Case=Nom	11	parataxis	_	_
 27	að	að	SCONJ	C	_	29	mark	_	_
 28	það	það	PRON	PRO-N	Case=Nom	29	nsubj	_	_
 29	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	26	ccomp	_	_
 30	að	að	PART	TO	_	31	mark	_	_
 31	borga	borga	VERB	VB	VerbForm=Inf	29	xcomp	_	_
 32	fyrir	fyrir	ADP	P	_	34	case	_	_
-33	hvern	hver	DET	Q-A	Case=Acc|Degree=Pos	34	amod	_	_
+33	hvern	hver	DET	Q-A	Case=Acc	34	amod	_	_
 34	sjúkling	sjúklingur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	29	obl	_	_
 35	alveg	alveg	ADV	ADV	Degree=Pos	29	advmod	_	_
 36	klárt	klárt	ADV	ADV	Degree=Pos	35	advmod	_	_
@@ -240,7 +240,7 @@
 40	ef	ef	ADP	P	_	42	case	_	_
 41	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	42	expl	_	_
 42	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	51	obl	_	_
-43	fleiri	margur	DET	QR-N	Case=Nom|Degree=Pos	44	amod	_	_
+43	fleiri	margur	DET	QR-N	Case=Nom	44	amod	_	_
 44	sjúklingar	sjúklingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	42	obl	_	_
 45	en	en	CCONJ	CONJ	_	44	conj	_	_
 46	samningurinn	samningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	47	nsubj	_	_
@@ -282,7 +282,7 @@
 2	hverju	hver	PRON	WPRO-D	Case=Dat	3	obl	_	_
 3	gerum	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-5	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	3	obj	_	_
+5	þetta	þessi	DET	D-A	Case=Acc	3	obj	_	_
 6	fyrir	fyrir	ADP	P	_	7	case	_	_
 7	einkaaðila	einkaaðili	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obl	_	_
 8	en	en	CCONJ	CONJ	_	12	cc	_	_

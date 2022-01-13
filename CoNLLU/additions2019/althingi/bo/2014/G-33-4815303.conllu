@@ -71,12 +71,12 @@
 57	ekki	ekki	ADV	NEG	_	56	advmod	_	_
 58	áfram	áfram	ADV	ADV	Degree=Pos	56	advmod	_	SpaceAfter=No
 59	,	,	PUNCT	,	_	60	punct	_	_
-60	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	49	conj	_	_
+60	þetta	þessi	DET	D-N	Case=Nom	49	conj	_	_
 61	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	60	cop	_	_
 62	of	of	ADV	ADV	Degree=Pos	63	amod	_	_
 63	góður	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	64	amod	_	_
 64	díll	díll	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	60	xcomp	_	SpaceAfter=No
-65	,	,	PUNCT	,	_	4	punct	_	_
+65	,	,	PUNCT	,	_	60	punct	_	_
 66	ég	ég	PRON	PRO-N	Case=Nom	67	nsubj	_	_
 67	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
 68	það	það	PRON	PRO-A	Case=Acc	67	obj	_	_
@@ -92,19 +92,19 @@
 # sent_id = ALTHINGI_BO_2014_G-33-4815303,.3
 # X_ID = ID_missing_5
 # text = Það sem ég átel eru þessi vinnubrögð því að ég ætlast til meira af þinginu.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	7	nsubj	_	_
+1	Það	sá	DET	D-N	Case=Nom	7	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 4	átel	átelja	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
 5	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
-6	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	7	det	_	_
+6	þessi	þessi	DET	D-N	Case=Nom	7	det	_	_
 7	vinnubrögð	vinnubrögð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 8	því	það	PRON	PRO-D	Case=Dat	7	obl	_	_
 9	að	að	SCONJ	C	_	11	mark	_	_
 10	ég	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 11	ætlast	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	8	ccomp	_	_
 12	til	til	ADP	P	_	13	case	_	_
-13	meira	mikill	DET	QR-G	Case=Gen|Degree=Pos	11	obl	_	_
+13	meira	mikill	DET	QR-G	Case=Gen	11	obl	_	_
 14	af	af	ADP	P	_	15	case	_	_
 15	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	7	punct	_	_
@@ -114,7 +114,7 @@
 # text = Við eigum öll að gera það.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	öll	allur	DET	Q-N	Case=Nom|Degree=Pos	2	amod	_	_
+3	öll	allur	DET	Q-N	Case=Nom	2	amod	_	_
 4	að	að	PART	TO	_	5	mark	_	_
 5	gera	gera	VERB	DO	VerbForm=Inf	2	xcomp	_	_
 6	það	það	PRON	PRO-A	Case=Acc	5	obj	_	SpaceAfter=No
@@ -175,7 +175,7 @@
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	2	cop	_	_
-4	einhver	einhver	DET	Q-N	Case=Nom|Degree=Pos	6	amod	_	_
+4	einhver	einhver	DET	Q-N	Case=Nom	6	amod	_	_
 5	góður	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
 6	biti	biti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	obl	_	_
 7	sem	sem	SCONJ	C	_	10	mark	_	_

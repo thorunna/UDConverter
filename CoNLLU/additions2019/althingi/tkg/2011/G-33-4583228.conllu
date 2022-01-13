@@ -4,7 +4,7 @@
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
-4	Það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+4	Það	sá	DET	D-N	Case=Nom	0	root	_	_
 5	sem	sem	SCONJ	C	_	7	mark	_	_
 6	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 7	vil	vilja	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
@@ -30,11 +30,11 @@
 9	í	í	ADP	P	_	10	case	_	_
 10	áfengismálum	áfengismál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
 11	og	og	CCONJ	CONJ	_	13	cc	_	_
-12	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	13	amod	_	_
+12	allir	allur	DET	Q-N	Case=Nom	13	amod	_	_
 13	flokkar	flokkur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	conj	_	_
 14	komast	koma	VERB	VBPI	Mood=Ind|Tense=Pres	5	ccomp	_	_
 15	að	að	ADP	P	_	17	case	_	_
-16	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	17	det	_	_
+16	þeirri	sá	DET	D-D	Case=Dat	17	det	_	_
 17	niðurstöðu	niðurstaða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
 18	að	að	SCONJ	C	_	23	mark	_	_
 19	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	23	expl	_	_
@@ -63,7 +63,7 @@
 5	standa	standa	VERB	VB	VerbForm=Inf	2	xcomp	_	_
 6	hér	hér	ADV	ADV	Degree=Pos	9	advmod	_	_
 7	í	í	ADP	P	_	9	case	_	_
-8	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
+8	þessum	þessi	DET	D-D	Case=Dat	9	det	_	_
 9	þingsal	þingsalur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 10	og	og	CCONJ	CONJ	_	11	cc	_	_
 11	segja	segja	VERB	VB	VerbForm=Inf	5	xcomp	_	_
@@ -131,7 +131,7 @@
 18	heitan	heitur	ADJ	ADJ-A	Case=Acc|Degree=Pos	19	amod	_	_
 19	graut	grautur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	_
 20	í	í	ADP	P	_	22	case	_	_
-21	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	22	det	_	_
+21	þessu	þessi	DET	D-D	Case=Dat	22	det	_	_
 22	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
 23	þýðir	þýða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 24	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	23	advmod	_	_
@@ -205,7 +205,7 @@
 15	stjórnarmeirihluta	stjórnarmeirihluti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
 16	að	að	PART	TO	_	17	mark	_	_
 17	breyta	breyta	VERB	VB	VerbForm=Inf	5	xcomp	_	_
-18	þeim	sá	DET	D-D	Case=Dat|PronType=Art	19	det	_	_
+18	þeim	sá	DET	D-D	Case=Dat	19	det	_	_
 19	vinnubrögðum	vinnubrögð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	17	obj	_	SpaceAfter=No
 20	?	?	PUNCT	.	_	5	punct	_	_
 
@@ -218,7 +218,7 @@
 4	ætlar	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	viðhalda	viðhalda	VERB	VB	VerbForm=Inf	4	xcomp	_	_
-7	þeim	sá	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+7	þeim	sá	DET	D-D	Case=Dat	8	det	_	_
 8	vinnubrögðum	vinnubrögð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obj	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -288,7 +288,7 @@
 9	fordómalaust	fordómalaust	ADV	ADV	Degree=Pos	8	advmod	_	_
 10	saman	saman	ADV	ADV	Degree=Pos	8	advmod	_	_
 11	að	að	ADP	P	_	13	case	_	_
-12	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	13	det	_	_
+12	þessu	þessi	DET	D-D	Case=Dat	13	det	_	_
 13	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 14	?	?	PUNCT	.	_	1	punct	_	_
 
@@ -312,7 +312,7 @@
 15	betra	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	17	amod	_	_
 16	að	að	PART	TO	_	17	mark	_	_
 17	fara	fara	VERB	VB	VerbForm=Inf	9	ccomp	_	_
-18	einhverjar	einhver	DET	Q-A	Case=Acc|Degree=Pos	20	amod	_	_
+18	einhverjar	einhver	DET	Q-A	Case=Acc	20	amod	_	_
 19	svipaðar	svipaður	ADJ	ADJ-A	Case=Acc|Degree=Pos	20	amod	_	_
 20	leiðir	leið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obl	_	_
 21	og	og	ADP	P	_	23	case	_	_
@@ -363,10 +363,10 @@
 22	á	á	ADP	P	_	24	case	_	_
 23	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	24	amod	_	_
 24	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
-25	,	,	PUNCT	,	_	2	punct	_	_
+25	,	,	PUNCT	,	_	17	punct	_	_
 26	en	en	CCONJ	CONJ	_	31	cc	_	_
 27	á	á	ADP	P	_	28	case	_	_
-28	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	31	obl	_	_
+28	þetta	þessi	DET	D-A	Case=Acc	31	obl	_	_
 29	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	31	aux	_	_
 30	ekki	ekki	ADV	NEG	_	31	advmod	_	_
 31	reynt	reyna	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0|SpaceAfter=No
@@ -385,17 +385,17 @@
 8	reyna	reyna	VERB	VB	VerbForm=Inf	5	acl:relcl	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	ná	ná	VERB	VB	VerbForm=Inf	8	xcomp	_	_
-11	einhverri	einhver	DET	Q-D	Case=Dat|Degree=Pos	12	amod	_	_
+11	einhverri	einhver	DET	Q-D	Case=Dat	12	amod	_	_
 12	samstöðu	samstaða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obj	_	_
 13	í	í	ADP	P	_	15	case	_	_
-14	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	15	det	_	_
+14	þessu	þessi	DET	D-D	Case=Dat	15	det	_	_
 15	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4583228,.18
 # X_ID = ID_missing_20
 # text = Þetta er ekki mál sem við eigum að karpa hér um endalaust.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
 4	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
@@ -416,7 +416,7 @@
 2	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
 4	vinna	vinna	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-5	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	4	obj	_	_
+5	þetta	þessi	DET	D-A	Case=Acc	4	obj	_	_
 6	saman	saman	ADV	ADV	Degree=Pos	4	advmod	_	SpaceAfter=No
 7	,	,	PUNCT	,	_	2	punct	_	_
 8	ég	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_

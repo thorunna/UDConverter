@@ -43,13 +43,13 @@
 4	átti	eiga	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	skoða	skoða	VERB	VB	VerbForm=Inf	4	xcomp	_	_
-7	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	6	obj	_	SpaceAfter=No
+7	allt	allur	DET	Q-A	Case=Acc	6	obj	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	4	punct	_	_
 9	en	en	CCONJ	CONJ	_	15	cc	_	_
 10	það	það	PRON	PRO-N	Case=Nom	15	nsubj	_	_
 11	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	15	cop	_	_
 12	bara	bara	ADV	FP	Degree=Pos	15	advmod	_	_
-13	þessir	þessi	DET	D-N	Case=Nom|PronType=Art	15	det	_	_
+13	þessir	þessi	DET	D-N	Case=Nom	15	det	_	_
 14	átta	átta	NUM	NUM-N	Case=Nom	15	nummod	_	_
 15	virkjunarkostir	virkjunarkostur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	conj	_	OriginalHead=0
 16	sem	sem	SCONJ	C	_	21	mark	_	_
@@ -95,11 +95,11 @@
 1	Í	í	ADP	P	_	2	case	_	_
 2	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
 3	felst	fela	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	3	obl	_	_
+4	ekkert	enginn	DET	Q-A	Case=Acc	3	obl	_	_
 5	endilega	endilega	ADV	ADV	Degree=Pos	3	advmod	_	_
 6	að	að	PART	TO	_	7	mark	_	_
 7	virkja	virkja	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-8	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	7	obl	_	SpaceAfter=No
+8	meira	mikill	DET	QR-A	Case=Acc	7	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = ALTHINGI_BO_2015_G-33-4786349,.6
@@ -141,21 +141,21 @@
 1	Sæstrengur	sæstrengur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	mögulega	mögulega	ADV	ADV	Degree=Pos	5	advmod	_	_
-4	ein	einn	DET	ONE-N	Case=Nom|Number=Sing	5	det	_	_
+4	ein	einn	DET	ONE-N	Case=Nom	5	det	_	_
 5	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 6	til	til	ADP	P	_	7	case	_	_
 7	þess	það	PRON	PRO-G	Case=Gen	5	obl	_	_
 8	að	að	PART	TO	_	9	mark	_	_
 9	nýta	nýta	VERB	VB	VerbForm=Inf	7	xcomp	_	_
-10	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+10	þessa	þessi	DET	D-A	Case=Acc	11	det	_	_
 11	virkjun	virkjun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	5	punct	_	_
+12	,	,	PUNCT	,	_	9	punct	_	_
 13	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	14	expl	_	_
 14	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
 15	að	að	PART	TO	_	16	mark	_	_
 16	skoða	skoða	VERB	VB	VerbForm=Inf	14	xcomp	_	_
 17	það	það	PRON	PRO-A	Case=Acc	16	obj	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	5	punct	_	_
+18	,	,	PUNCT	,	_	16	punct	_	_
 19	og	og	CCONJ	CONJ	_	21	cc	_	_
 20	við	ég	PRON	PRO-N	Case=Nom	21	nsubj	_	_
 21	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
@@ -182,12 +182,12 @@
 5	að	að	SCONJ	C	_	7	mark	_	_
 6	þjóðin	þjóð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 7	fái	fá	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
-8	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	7	obj	_	_
+8	meira	mikill	DET	QR-A	Case=Acc	7	obj	_	_
 9	Forseti	forseti	PROPN	NPR-N	_	10	nsubj	_	_
 10	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	7	dep	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	10	punct	_	_
 12	fyrir	fyrir	ADP	P	_	14	case	_	_
-13	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	14	det	_	_
+13	þessa	þessi	DET	D-A	Case=Acc	14	det	_	_
 14	auðlind	auðlind	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	3	punct	_	_
 

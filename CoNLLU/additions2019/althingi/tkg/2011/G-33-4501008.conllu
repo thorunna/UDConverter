@@ -9,7 +9,7 @@
 6	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 7	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	8	amod	_	_
 8	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	6	punct	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
 10	stjórnarskráin	stjórnarskrá	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
 11	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
 12	að	að	PART	TO	_	13	mark	_	_
@@ -26,18 +26,18 @@
 23	o.	og	CCONJ	CONJ	_	24	cc	_	SpaceAfter=No
 24	s.	svo	ADV	ADV	Degree=Pos	18	conj	_	SpaceAfter=No
 25	frv.	framvegis	ADV	ADV	Degree=Pos	24	advmod	_	_
-26	En	en	CCONJ	CONJ	_	28	cc	_	_
-27	hún	hún	PRON	PRO-N	Case=Nom	28	nsubj	_	_
-28	má	mega	VERB	MDPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
-29	ekki	ekki	ADV	NEG	_	28	advmod	_	_
-30	vera	vera	AUX	BE	VerbForm=Inf	28	cop	_	_
-31	tískuplagg	tískuplaggur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	xcomp	_	SpaceAfter=No
+26	En	en	CCONJ	CONJ	_	31	cc	_	_
+27	hún	hún	PRON	PRO-N	Case=Nom	31	nsubj	_	_
+28	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	31	aux	_	_
+29	ekki	ekki	ADV	NEG	_	31	advmod	_	_
+30	vera	vera	AUX	BE	VerbForm=Inf	31	cop	_	_
+31	tískuplagg	tískuplaggur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	OriginalHead=0|SpaceAfter=No
 32	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4501008,.2
 # X_ID = ID_missing_4
 # text = Þetta er sígilt plagg sem verður, að mínu mati, að standast tímans tönn.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	sígilt	sígildur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
 4	plagg	plagg	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
@@ -65,7 +65,7 @@
 6	vanda	vanda	VERB	VB	VerbForm=Inf	3	xcomp	_	_
 7	okkur	ég	PRON	PRO-A	Case=Acc	6	obj	_	_
 8	við	við	ADP	P	_	10	case	_	_
-9	það	sá	DET	D-A	Case=Acc|PronType=Art	10	det	_	_
+9	það	sá	DET	D-A	Case=Acc	10	det	_	_
 10	verk	verk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 11	að	að	PART	TO	_	12	mark	_	_
 12	breyta	breyta	VERB	VB	VerbForm=Inf	10	xcomp	_	_
@@ -77,7 +77,7 @@
 # text = Hvað ef þessi tillaga nær ekki fram að ganga?
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	0	root	_	_
 2	ef	ef	ADP	P	_	5	case	_	_
-3	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	4	det	_	_
+3	þessi	þessi	DET	D-N	Case=Nom	4	det	_	_
 4	tillaga	tillaga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 5	nær	ná	VERB	VBPI	Mood=Ind|Tense=Pres	1	xcomp	_	_
 6	ekki	ekki	ADV	NEG	_	5	advmod	_	_
@@ -105,7 +105,7 @@
 # text = Þá hvílir mikil ábyrgð á okkur sem höfum talað um að við viljum breytingar að sýna fram á að hægt sé að fara aðra leið.
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	hvílir	hvíla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	mikil	mikill	DET	Q-N	Case=Nom|Degree=Pos	4	amod	_	_
+3	mikil	mikill	DET	Q-N	Case=Nom	4	amod	_	_
 4	ábyrgð	ábyrgð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 5	á	á	ADP	P	_	6	case	_	_
 6	okkur	ég	PRON	PRO-D	Case=Dat	2	obl	_	_
@@ -133,7 +133,7 @@
 # sent_id = ALTHINGI_TKG_2011_G-33-4501008,.7
 # X_ID = ID_missing_9
 # text = Þær leiðir höfum við sjálfstæðismenn meðal annars dregið fram.
-1	Þær	sá	DET	D-A	Case=Acc|PronType=Art	2	det	_	_
+1	Þær	sá	DET	D-A	Case=Acc	2	det	_	_
 2	leiðir	leið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obj	_	_
 3	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	8	aux	_	_
 4	við	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
@@ -151,7 +151,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	til	til	ADP	RP	_	0	root	_	_
 4	svo	svo	ADV	ADV	Degree=Pos	5	advmod	_	_
-5	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	3	obl	_	_
+5	mikið	mikill	DET	Q-N	Case=Nom	3	obl	_	_
 6	af	af	ADP	P	_	7	case	_	_
 7	gögnum	gagn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	_
@@ -162,16 +162,16 @@
 13	bent	benda	VERB	VBN	Tense=Past|VerbForm=Part	9	obl	_	_
 14	á	á	ADP	P	_	13	obl	_	SpaceAfter=No
 15	,	,	PUNCT	,	_	14	punct	_	_
-16	ekki	ekki	ADV	NEG	_	24	advmod	_	_
-17	bara	bara	ADV	FP	Degree=Pos	24	advmod	_	_
+16	ekki	ekki	ADV	NEG	_	19	advmod	_	_
+17	bara	bara	ADV	FP	Degree=Pos	19	advmod	_	_
 18	frá	frá	ADP	P	_	19	case	_	_
-19	þjóðfundinum	þjóðfundur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	_
+19	þjóðfundinum	þjóðfundur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
 20	og	og	CCONJ	CONJ	_	24	cc	_	_
 21	ekki	ekki	ADV	NEG	_	24	advmod	_	_
 22	bara	bara	ADV	FP	Degree=Pos	24	advmod	_	_
 23	frá	frá	ADP	P	_	24	case	_	_
-24	stjórnlaganefndinni	stjórnlaganefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-25	heldur	heldur	ADV	ADVR	Degree=Cmp	24	conj	_	_
+24	stjórnlaganefndinni	stjórnlaganefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	conj	_	_
+25	heldur	heldur	ADV	ADVR	Degree=Cmp	19	conj	_	_
 26	líka	líka	ADV	ALSO	_	25	advmod	_	_
 27	frá	frá	ADP	P	_	28	case	_	_
 28	stjórnarskrárnefndinni	stjórnarskrárnefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
@@ -190,7 +190,7 @@
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	6	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	gríðarlega	gríðarlega	ADV	ADV	Degree=Pos	4	amod	_	_
-4	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	5	amod	_	_
+4	mikið	mikill	DET	Q-N	Case=Nom	5	amod	_	_
 5	magn	magn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	obl	_	_
 6	til	til	ADP	RP	_	0	root	_	_
 7	af	af	ADP	P	_	8	case	_	_
@@ -214,10 +214,10 @@
 4	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	2	advmod	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	grípa	grípa	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-7	þann	sá	DET	D-A	Case=Acc|PronType=Art	8	det	_	_
+7	þann	sá	DET	D-A	Case=Acc	8	det	_	_
 8	bolta	bolti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
 9	ef	ef	ADP	P	_	11	case	_	_
-10	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	11	nsubj	_	_
+10	þetta	þessi	DET	D-N	Case=Nom	11	nsubj	_	_
 11	fellur	falla	VERB	VBPI	Mood=Ind|Tense=Pres	2	obl	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	11	punct	_	_
 13	og	og	CCONJ	CONJ	_	16	cc	_	_
@@ -225,26 +225,26 @@
 15	skulum	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	16	aux	_	_
 16	vona	vona	VERB	VB	VerbForm=Inf	11	parataxis	_	_
 17	að	að	SCONJ	C	_	19	mark	_	_
-18	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	19	nsubj	_	_
+18	þetta	þessi	DET	D-N	Case=Nom	19	nsubj	_	_
 19	falli	falla	VERB	VBPS	Mood=Sub|Tense=Pres	16	ccomp	_	SpaceAfter=No
 20	,	,	PUNCT	,	_	19	punct	_	_
 21	og	og	CCONJ	CONJ	_	22	cc	_	_
 22	fara	fara	VERB	VB	VerbForm=Inf	2	conj	_	_
 23	frekar	frekar	ADV	ADVR	Degree=Cmp	22	advmod	_	_
 24	í	í	ADP	P	_	26	case	_	_
-25	þann	sá	DET	D-A	Case=Acc|PronType=Art	26	det	_	_
+25	þann	sá	DET	D-A	Case=Acc	26	det	_	_
 26	farveg	farvegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
 27	sem	sem	SCONJ	C	_	29	mark	_	_
 28	mér	ég	PRON	PRO-D	Case=Dat	29	nsubj	_	_
 29	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	26	acl:relcl	_	_
 30	heppilegri	heppilegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	29	xcomp	_	_
 31	og	og	CCONJ	CONJ	_	33	cc	_	_
-32	ýmsum	ýmis	DET	Q-D	Case=Dat|Degree=Pos	33	amod	_	_
+32	ýmsum	ýmis	DET	Q-D	Case=Dat	33	amod	_	_
 33	öðrum	annar	PRON	OTHER-D	Case=Dat	29	conj	_	SpaceAfter=No
 34	,	,	PUNCT	,	_	33	punct	_	_
 35	sem	sem	SCONJ	C	_	40	mark	_	_
 36	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	40	cop	_	_
-37	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	40	det	_	_
+37	þessi	þessi	DET	D-N	Case=Nom	40	det	_	_
 38	hefðbundni	hefðbundinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	40	amod	_	_
 39	stjórnarskrárbundni	stjórnarskrárbundinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	40	amod	_	_
 40	farvegur	farvegur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	26	acl:relcl	_	_
@@ -257,21 +257,21 @@
 47	það	það	PRON	PRO-N	Case=Nom	40	parataxis	_	_
 48	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	47	cop	_	_
 49	að	að	SCONJ	C	_	52	mark	_	_
-50	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	51	amod	_	_
+50	allir	allur	DET	Q-N	Case=Nom	51	amod	_	_
 51	flokkar	flokkur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	52	nsubj	_	_
 52	setjist	setja	VERB	VBPS	Mood=Sub|Tense=Pres	47	dep	_	_
 53	niður	niður	ADP	RP	_	52	compound:prt	_	_
 54	og	og	CCONJ	CONJ	_	55	cc	_	_
 55	noti	nota	VERB	VBPS	Mood=Sub|Tense=Pres	52	conj	_	_
-56	þann	sá	DET	D-A	Case=Acc|PronType=Art	57	det	_	_
+56	þann	sá	DET	D-A	Case=Acc	57	det	_	_
 57	vilja	vilji	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	62	obl	_	_
 58	og	og	CCONJ	CONJ	_	59	cc	_	_
 59	kraft	kraftur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	57	conj	_	_
 60	og	og	CCONJ	CONJ	_	62	cc	_	_
-61	þá	sá	DET	D-A	Case=Acc|PronType=Art	62	det	_	_
+61	þá	sá	DET	D-A	Case=Acc	62	det	_	_
 62	þekkingu	þekking	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	55	obj	_	_
 63	og	og	CCONJ	CONJ	_	65	cc	_	_
-64	þær	sá	DET	D-A	Case=Acc|PronType=Art	65	det	_	_
+64	þær	sá	DET	D-A	Case=Acc	65	det	_	_
 65	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	62	conj	_	_
 66	sem	sem	SCONJ	C	_	68	mark	_	_
 67	til	til	ADP	P	_	68	case	_	_
@@ -301,10 +301,10 @@
 13	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	9	obl	_	_
 14	viljum	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	8	ccomp	_	_
 15	við	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-16	bæði	báðir	DET	Q-N	Case=Nom|Degree=Pos	14	amod	_	_
+16	bæði	báðir	DET	Q-N	Case=Nom	14	amod	_	_
 17	kosningar	kosning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obj	_	_
 18	sem	sem	SCONJ	C	_	20	mark	_	_
-19	allra	allur	DET	Q-G	Case=Gen|Degree=Pos	20	nmod:poss	_	_
+19	allra	allur	DET	Q-G	Case=Gen	20	nmod:poss	_	_
 20	fyrst	snemma	ADV	ADVS	Degree=Sup	14	advmod	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	2	punct	_	_
 

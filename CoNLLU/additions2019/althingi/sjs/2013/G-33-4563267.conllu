@@ -34,7 +34,7 @@
 31	ræða	ræða	VERB	VB	VerbForm=Inf	23	ccomp	_	_
 32	fjáraukalögin	fjáraukalög	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	31	obj	_	_
 33	þegar	þegar	ADP	P	_	46	case	_	_
-34	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	46	nsubj	_	_
+34	allt	allur	DET	Q-N	Case=Nom	46	nsubj	_	_
 35	sem	sem	SCONJ	C	_	36	mark	_	_
 36	snýr	snúa	VERB	VBPI	Mood=Ind|Tense=Pres	34	acl:relcl	_	_
 37	að	að	ADP	P	_	38	case	_	_
@@ -68,7 +68,7 @@
 10	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	9	cop	_	_
 11	að	að	PART	TO	_	12	mark	_	_
 12	kynna	kynna	VERB	VB	VerbForm=Inf	9	xcomp	_	_
-13	einhverjar	einhver	DET	Q-A	Case=Acc|Degree=Pos	14	amod	_	_
+13	einhverjar	einhver	DET	Q-A	Case=Acc	14	amod	_	_
 14	tillögur	tillaga	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obj	_	_
 15	og	og	CCONJ	CONJ	_	19	cc	_	_
 16	svo	svo	ADV	ADV	Degree=Pos	19	advmod	_	_
@@ -142,7 +142,7 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4563267,.7
 # X_ID = ID_missing_9
 # text = Þetta eru mjög tengd mál.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	5	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	5	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
 4	tengd	tengdur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
@@ -164,7 +164,7 @@
 10	og	og	CCONJ	CONJ	_	11	cc	_	_
 11	mætast	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	9	conj	_	_
 12	á	á	ADP	P	_	14	case	_	_
-13	einum	einn	DET	ONE-D	Case=Dat|Number=Sing	14	det	_	_
+13	einum	einn	DET	ONE-D	Case=Dat	14	det	_	_
 14	tímapunkti	tímapunktur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 15	alveg	alveg	ADV	ADV	Degree=Pos	11	advmod	_	_
 16	undir	undir	ADP	P	_	17	case	_	_
@@ -186,7 +186,7 @@
 # X_ID = ID_missing_12
 # text = Varðandi það sem hv. þingmaður spurði um og ég nefndi sem dæmi um nokkra hluti sem eru mikið á skjön við annað og andann í þessu frumvarpi sem er ekki upplífgandi að stærstum hluta til nema í einstökum tilvikum.
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	0	root	_	_
-2	það	sá	DET	D-A	Case=Acc|PronType=Art	1	obj	_	_
+2	það	sá	DET	D-A	Case=Acc	1	obj	_	_
 3	sem	sem	SCONJ	C	_	6	mark	_	_
 4	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
 5	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
@@ -198,7 +198,7 @@
 11	sem	sem	SCONJ	C	_	12	mark	_	_
 12	dæmi	dæmi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	advcl	_	_
 13	um	um	ADP	P	_	15	case	_	_
-14	nokkra	nokkur	DET	Q-A	Case=Acc|Degree=Pos	15	amod	_	_
+14	nokkra	nokkur	DET	Q-A	Case=Acc	15	amod	_	_
 15	hluti	hlutur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
 16	sem	sem	SCONJ	C	_	20	mark	_	_
 17	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
@@ -210,7 +210,7 @@
 23	og	og	CCONJ	CONJ	_	24	cc	_	_
 24	andann	andi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	conj	_	_
 25	í	í	ADP	P	_	27	case	_	_
-26	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	27	det	_	_
+26	þessu	þessi	DET	D-D	Case=Dat	27	det	_	_
 27	frumvarpi	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	_
 28	sem	sem	SCONJ	C	_	31	mark	_	_
 29	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
@@ -233,7 +233,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	ekki	ekki	ADV	NEG	_	6	advmod	_	_
 4	af	af	ADP	P	_	6	case	_	_
-5	neinni	neinn	DET	Q-D	Case=Dat|Degree=Pos	6	amod	_	_
+5	neinni	neinn	DET	Q-D	Case=Dat	6	amod	_	_
 6	meinbægni	meinbægni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
 7	út	út	ADP	RP	_	9	compound:prt	_	_
 8	í	í	ADP	P	_	9	case	_	_
@@ -311,7 +311,7 @@
 8	að	að	SCONJ	C	_	25	mark	_	_
 9	einmitt	einmitt	ADV	ADV	Degree=Pos	12	advmod	_	_
 10	á	á	ADP	P	_	12	case	_	_
-11	því	sá	DET	D-D	Case=Dat|PronType=Art	12	det	_	_
+11	því	sá	DET	D-D	Case=Dat	12	det	_	_
 12	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
 13	sem	sem	SCONJ	C	_	21	mark	_	_
 14	hækkun	hækkun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	_
@@ -332,7 +332,7 @@
 29	viðbót	viðbót	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	27	obl	_	_
 30	undir	undir	ADP	P	_	31	case	_	_
 31	lok	lok	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	25	obl	_	_
-32	þessa	þessi	DET	D-G	Case=Gen|PronType=Art	33	det	_	_
+32	þessa	þessi	DET	D-G	Case=Gen	33	det	_	_
 33	árs	ár	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	31	nmod:poss	_	_
 34	í	í	ADP	P	_	35	case	_	_
 35	fjáraukalögum	fjáraukalög	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	25	obl	_	SpaceAfter=No
@@ -366,7 +366,7 @@
 12	að	að	PART	TO	_	13	mark	_	_
 13	búa	búa	VERB	VB	VerbForm=Inf	10	xcomp	_	_
 14	til	til	ADP	RP	_	13	compound:prt	_	_
-15	einhverja	einhver	DET	Q-A	Case=Acc|Degree=Pos	16	amod	_	_
+15	einhverja	einhver	DET	Q-A	Case=Acc	16	amod	_	_
 16	potta	pottur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obj	_	_
 17	og	og	CCONJ	CONJ	_	18	cc	_	_
 18	sjóði	sjóður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	conj	_	_
@@ -374,15 +374,15 @@
 20	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	13	dep	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	20	punct	_	_
 22	undir	undir	ADP	P	_	24	case	_	_
-23	því	sá	DET	D-D	Case=Dat|PronType=Art	24	det	_	_
+23	því	sá	DET	D-D	Case=Dat	24	det	_	_
 24	ráðuneyti	ráðuneyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
 25	eins	_	ADV	ADVR	Degree=Cmp	13	advmod	_	_
 26	og	_	ADP	P	_	29	case	_	_
-27	eitthvert	einhver	DET	Q-A	Case=Acc|Degree=Pos	29	amod	_	_
+27	eitthvert	einhver	DET	Q-A	Case=Acc	29	amod	_	_
 28	risavaxið	risavaxinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	29	amod	_	_
 29	skúffufé	skúffufé	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obl	_	_
 30	fyrir	fyrir	ADP	P	_	32	case	_	_
-31	einn	einn	DET	ONE-A	Case=Acc|Number=Sing	32	det	_	_
+31	einn	einn	DET	ONE-A	Case=Acc	32	det	_	_
 32	ráðherra	ráðherra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	29	obl	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	3	punct	_	_
 

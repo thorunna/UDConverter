@@ -8,7 +8,7 @@
 5	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
 6	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 7	eftir	eftir	ADP	P	_	8	case	_	_
-8	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	6	obl	_	_
+8	þessu	þessi	DET	D-D	Case=Dat	6	obl	_	_
 9	líka	líka	ADV	ALSO	_	6	advmod	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	6	punct	_	_
 
@@ -34,7 +34,7 @@
 17	það	það	PRON	PRO-A	Case=Acc	11	obl	_	_
 18	og	og	CCONJ	CONJ	_	19	cc	_	_
 19	virðast	virða	VERB	VBPI	Mood=Ind|Tense=Pres	11	conj	_	_
-20	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	19	ccomp	_	_
+20	allir	allur	DET	Q-N	Case=Nom	19	ccomp	_	_
 21	af	af	ADP	P	_	22	case	_	_
 22	vilja	vilji	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	_
 23	gerðir	gera	VERB	DAN	Tense=Past|VerbForm=Part	20	xcomp	_	_
@@ -55,7 +55,7 @@
 4	og	_	ADP	P	_	5	case	_	_
 5	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	obl	_	_
 6	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	5	cop	_	_
-7	engin	enginn	DET	Q-N	Case=Nom|Degree=Pos	8	amod	_	_
+7	engin	enginn	DET	Q-N	Case=Nom	8	amod	_	_
 8	tenging	tenging	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	obl	_	_
 9	inn	inn	ADP	RP	_	11	compound:prt	_	_
 10	á	á	ADP	P	_	11	case	_	_
@@ -123,7 +123,7 @@
 7	við	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 8	sjáum	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
 9	það	það	PRON	PRO-A	Case=Acc	8	obj	_	_
-10	öll	allur	DET	Q-N	Case=Nom|Degree=Pos	8	amod	_	_
+10	öll	allur	DET	Q-N	Case=Nom	8	amod	_	_
 11	að	að	SCONJ	C	_	12	mark	_	_
 12	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	8	ccomp	_	_
 13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
@@ -140,18 +140,18 @@
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	hreinlega	hreinlega	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
-5	þá	sá	DET	D-A	Case=Acc|PronType=Art	6	det	_	_
+5	þá	sá	DET	D-A	Case=Acc	6	det	_	_
 6	pólitík	pólitík	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 7	þegar	þegar	ADP	P	_	11	case	_	_
 8	90	níutíu	NUM	NUM-N	Case=Nom	9	nummod	_	SpaceAfter=No
 9	<percent/>	prósent	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	nsubj	_	_
 10	þjóðarinnar	þjóð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	nmod:poss	_	_
 11	vilja	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	6	obl	_	_
-12	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	11	obj	_	_
+12	eitthvað	einhver	DET	Q-A	Case=Acc	11	obj	_	_
 13	ákveðið	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
 14	og	og	CCONJ	CONJ	_	17	cc	_	_
 15	það	það	PRON	PRO-N	Case=Nom	17	nsubj	_	SpaceAfter=No
-16	„	„	PUNCT	"	_	17	punct	_	_
+16	„	„	PUNCT	"	_	15	punct	_	_
 17	meikar	meika	VERB	VBPI	Mood=Ind|Tense=Pres	11	conj	_	_
 18	sens	sens	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	SpaceAfter=No
 19	“	“	PUNCT	"	_	18	punct	_	SpaceAfter=No
@@ -162,7 +162,7 @@
 23	,	,	PUNCT	,	_	22	punct	_	_
 24	hæstv.	hæstvirtur	ADV	ADJ-N	Case=Nom|Degree=Pos	25	advmod	_	_
 25	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	vocative	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	2	punct	_	_
+26	,	,	PUNCT	,	_	21	punct	_	_
 27	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
 28	þá	þá	ADV	ADV	Degree=Pos	31	advmod	_	_
 29	ekki	ekki	ADV	NEG	_	31	advmod	_	_
@@ -198,7 +198,7 @@
 7	næstu	næstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	8	amod	_	_
 8	ríkisstjórn	ríkisstjórn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
 9	ef	ef	ADP	P	_	13	case	_	_
-10	þessir	þessi	DET	D-N	Case=Nom|PronType=Art	12	det	_	_
+10	þessir	þessi	DET	D-N	Case=Nom	12	det	_	_
 11	ágætu	ágætur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
 12	ráðherrar	ráðherra	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	_
 13	ákveða	ákveða	VERB	VBPI	Mood=Ind|Tense=Pres	4	obl	_	_
@@ -212,7 +212,7 @@
 21	eða	eða	CCONJ	CONJ	_	22	cc	_	_
 22	80	áttatíu	NUM	NUM-A	Case=Acc	20	conj	_	_
 23	eða	eða	CCONJ	CONJ	_	24	cc	_	_
-24	hvað	hver	DET	Q-A	Case=Acc|Degree=Pos	20	conj	_	_
+24	hvað	hver	DET	Q-A	Case=Acc	20	conj	_	_
 25	það	það	PRON	PRO-N	Case=Nom	24	acl:relcl	_	_
 26	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
 27	sem	sem	SCONJ	C	_	28	mark	_	_

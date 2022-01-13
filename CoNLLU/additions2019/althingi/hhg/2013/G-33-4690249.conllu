@@ -8,27 +8,27 @@
 5	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
 6	lægja	lægja	VERB	VB	VerbForm=Inf	0	root	_	_
 7	áhyggjur	áhyggja	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
-8	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	7	nmod:poss	_	_
+8	þeirra	sá	DET	D-G	Case=Gen	7	nmod:poss	_	_
 9	sem	sem	SCONJ	C	_	10	mark	_	_
 10	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	8	acl:relcl	_	_
 11	áhyggjur	áhyggja	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	_
 12	af	af	ADP	P	_	13	case	_	_
 13	því	það	PRON	PRO-D	Case=Dat	10	obl	_	_
 14	að	að	SCONJ	C	_	16	mark	_	_
-15	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	16	nsubj	_	_
+15	allt	allur	DET	Q-N	Case=Nom	16	nsubj	_	_
 16	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	13	ccomp	_	_
 17	vaðandi	vaða	VERB	VAG	Tense=Pres|VerbForm=Part	16	amod	_	_
 18	í	í	ADP	P	_	19	case	_	_
 19	stjórnarskrárbreytingum	stjórnarskrárbreyting	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	_
 20	vegna	vegna	ADP	P	_	22	case	_	_
-21	þessara	þessi	DET	D-G	Case=Gen|PronType=Art	22	det	_	_
+21	þessara	þessi	DET	D-G	Case=Gen	22	det	_	_
 22	breytinga	breyting	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	16	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4690249,.2
 # X_ID = ID_missing_2
 # text = Þessi gríðarhái stuðull þarna, kosningarbærs fólks sem þurfi að segja já við breytingum, gerir það í raun óhugsandi að stjórnarskránni verði breytt með þessum breytingum.
-1	Þessi	þessi	DET	D-N	Case=Nom|PronType=Art	3	det	_	_
+1	Þessi	þessi	DET	D-N	Case=Nom	3	det	_	_
 2	gríðarhái	gríðarhár	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
 3	stuðull	stuðull	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
 4	þarna	þarna	ADV	ADV	Degree=Pos	3	advmod	_	SpaceAfter=No
@@ -53,7 +53,7 @@
 23	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	24	aux	_	_
 24	breytt	breyta	VERB	VAN	Tense=Past|VerbForm=Part	16	ccomp	_	_
 25	með	með	ADP	P	_	27	case	_	_
-26	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	27	det	_	_
+26	þessum	þessi	DET	D-D	Case=Dat	27	det	_	_
 27	breytingum	breyting	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	16	punct	_	_
 
@@ -196,24 +196,24 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4690249,.11
 # X_IDs = ID_missing_11 ; ID_missing_12 ; ID_missing_13
 # text = Þetta er ekki út af tíðaranda, ekki bara út af bankahruninu, það var ekki bara þess vegna sem til stóð að koma með nýja stjórnarskrá heldur var löngu kominn tími til.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
-3	ekki	ekki	ADV	NEG	_	6	advmod	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	8	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+3	ekki	ekki	ADV	NEG	_	8	advmod	_	_
 4	út	út	ADP	RP	_	6	compound:prt	_	_
 5	af	af	ADP	P	_	6	case	_	_
-6	tíðaranda	tíðarandi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+6	tíðaranda	tíðarandi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 7	,	,	PUNCT	,	_	6	punct	_	_
-8	ekki	ekki	ADV	NEG	_	6	parataxis	_	_
+8	ekki	ekki	ADV	NEG	_	0	root	_	_
 9	bara	bara	ADV	FP	Degree=Pos	8	advmod	_	_
 10	út	út	ADP	RP	_	12	compound:prt	_	_
 11	af	af	ADP	P	_	12	case	_	_
 12	bankahruninu	bankahrun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	6	punct	_	_
+13	,	,	PUNCT	,	_	12	punct	_	_
 14	það	það	PRON	PRO-N	Case=Nom	18	nsubj	_	_
 15	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	18	cop	_	_
 16	ekki	ekki	ADV	NEG	_	18	advmod	_	_
 17	bara	bara	ADV	FP	Degree=Pos	18	advmod	_	_
-18	þess	það	PRON	PRO-G	Case=Gen	6	conj	_	OriginalHead=0
+18	þess	það	PRON	PRO-G	Case=Gen	8	conj	_	OriginalHead=0
 19	vegna	vegna	ADP	P	_	18	case	_	_
 20	sem	sem	SCONJ	C	_	22	mark	_	_
 21	til	til	ADP	RP	_	22	compound:prt	_	_
@@ -226,10 +226,10 @@
 28	heldur	heldur	ADV	ADVR	Degree=Cmp	31	advmod	_	_
 29	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	31	cop	_	_
 30	löngu	langur	ADJ	ADJ-D	Case=Dat|Degree=Pos	31	obl	_	_
-31	kominn	koma	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	OriginalHead=0
+31	kominn	koma	VERB	VBN	Tense=Past|VerbForm=Part	8	conj	_	OriginalHead=0
 32	tími	tími	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	31	nsubj	_	_
 33	til	til	ADP	RP	_	31	compound:prt	_	SpaceAfter=No
-34	.	.	PUNCT	.	_	6	punct	_	_
+34	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4690249,.12
 # X_ID = ID_missing_14
@@ -240,7 +240,7 @@
 4	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 5	ekki	ekki	ADV	NEG	_	11	advmod	_	_
 6	mikið	mikið	ADV	ADV	Degree=Pos	11	obj	_	_
-7	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	6	amod	_	_
+7	meira	mikill	DET	QR-A	Case=Acc	6	amod	_	_
 8	um	um	ADP	P	_	9	case	_	_
 9	það	það	PRON	PRO-A	Case=Acc	11	obl	_	_
 10	að	að	PART	TO	_	11	mark	_	_

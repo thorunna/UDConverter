@@ -43,7 +43,7 @@
 12	ég	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 13	að	að	PART	TO	_	14	mark	_	_
 14	skoða	skoða	VERB	VB	VerbForm=Inf	11	xcomp	_	_
-15	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	14	obj	_	_
+15	þetta	þessi	DET	D-A	Case=Acc	14	obj	_	_
 16	betur	vel	ADV	ADVR	Degree=Cmp	14	advmod	_	_
 17	í	í	ADP	P	_	22	case	_	_
 18	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	22	amod	_	_
@@ -75,7 +75,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4748259,.4
 # X_ID = ID_missing_5
 # text = Það sem fer í taugarnar á mér við bæði þetta frumvarp og lögin sem það á að breyta er að þar er bannað að hæðast að, það er bannað að gera grín.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+1	Það	sá	DET	D-N	Case=Nom	0	root	_	_
 2	sem	sem	SCONJ	C	_	3	mark	_	_
 3	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
 4	í	í	ADP	P	_	5	case	_	_
@@ -84,7 +84,7 @@
 7	mér	ég	PRON	PRO-D	Case=Dat	5	obl	_	_
 8	við	við	ADP	P	_	11	case	_	_
 9	bæði	bæði	CCONJ	CONJ	_	11	cc	_	_
-10	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+10	þetta	þessi	DET	D-A	Case=Acc	11	det	_	_
 11	frumvarp	frumvarp	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
 12	og	og	CCONJ	CONJ	_	13	cc	_	_
 13	lögin	lag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	conj	_	_
@@ -166,7 +166,7 @@
 2	125.	125.	ADJ	ADJ-D	Case=Dat|Degree=Pos	3	amod	_	_
 3	gr.	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
 4	skal	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	23	aux	_	_
-5	hver	hver	DET	Q-N	Case=Nom|Degree=Pos	23	nsubj	_	_
+5	hver	hver	DET	Q-N	Case=Nom	23	nsubj	_	_
 6	sem	sem	SCONJ	C	_	8	mark	_	_
 7	opinberlega	opinberlega	ADV	ADV	Degree=Pos	8	advmod	_	_
 8	dregur	draga	VERB	VBPI	Mood=Ind|Tense=Pres	5	acl:relcl	_	_
@@ -188,7 +188,7 @@
 24	sektum	sekt	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	26	obl	_	_
 25	eða	eða	CCONJ	CONJ	_	26	cc	_	_
 26	fangelsi	fangelsi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obj	_	_
-27	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	26	obl	_	_
+27	allt	allur	DET	Q-A	Case=Acc	26	obl	_	_
 28	að	að	ADP	P	_	30	case	_	_
 29	þremur	þrír	NUM	NUM-D	Case=Dat	30	nummod	_	_
 30	mánuðum	mánuður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	obl	_	SpaceAfter=No
@@ -236,7 +236,7 @@
 24	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	46	cop	_	_
 25	um	um	ADP	P	_	46	case	_	_
 26	að	að	SCONJ	C	_	46	mark	_	_
-27	hver	hver	DET	Q-N	Case=Nom|Degree=Pos	46	nsubj	_	_
+27	hver	hver	DET	Q-N	Case=Nom	46	nsubj	_	_
 28	sem	sem	SCONJ	C	_	29	mark	_	_
 29	meiðir	meiða	VERB	VBPI	Mood=Ind|Tense=Pres	27	acl:relcl	_	_
 30	æru	æra	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obj	_	_
@@ -249,7 +249,7 @@
 37	eða	eða	CCONJ	CONJ	_	38	cc	_	_
 38	athöfnum	athöfn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	36	conj	_	_
 39	og	og	CCONJ	CONJ	_	40	cc	_	_
-40	hver	hver	DET	Q-N	Case=Nom|Degree=Pos	27	conj	_	_
+40	hver	hver	DET	Q-N	Case=Nom	27	conj	_	_
 41	sem	sem	SCONJ	C	_	42	mark	_	_
 42	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	40	acl:relcl	_	_
 43	slíkt	slíkur	PRON	SUCH-A	Case=Acc	42	obj	_	_
@@ -271,7 +271,7 @@
 59	að	að	ADP	P	_	61	case	_	_
 60	öðrum	annar	PRON	OTHER-D	Case=Dat	61	det	_	_
 61	manni	maður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	58	obl	_	_
-62	einhverju	einhver	DET	Q-D	Case=Dat|Degree=Pos	63	amod	_	_
+62	einhverju	einhver	DET	Q-D	Case=Dat	63	amod	_	_
 63	því	það	PRON	PRO-D	Case=Dat	58	obj	_	_
 64	er	er	SCONJ	C	_	65	mark	_	_
 65	verða	verða	VERB	RD	VerbForm=Inf	63	acl:relcl	_	_
@@ -290,9 +290,9 @@
 78	sektum	sekt	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	80	obl	_	_
 79	eða	eða	CCONJ	CONJ	_	80	cc	_	_
 80	fangelsi	fangelsi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	76	obj	_	_
-81	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	80	obl	_	_
+81	allt	allur	DET	Q-A	Case=Acc	80	obl	_	_
 82	að	að	ADP	P	_	84	case	_	_
-83	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	84	det	_	_
+83	einu	einn	DET	ONE-D	Case=Dat	84	det	_	_
 84	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	81	obl	_	SpaceAfter=No
 85	.	.	PUNCT	.	_	6	punct	_	_
 
@@ -312,7 +312,7 @@
 11	manni	maður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	iobj	_	_
 12	brigslum	brigsl	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obj	_	_
 13	án	án	ADP	P	_	15	case	_	_
-14	nokkurs	nokkur	DET	Q-G	Case=Gen|Degree=Pos	15	amod	_	_
+14	nokkurs	nokkur	DET	Q-G	Case=Gen	15	amod	_	_
 15	tilefnis	tilefni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	obl	_	_
 16	varði	verja	VERB	VBDI	Mood=Ind|Tense=Past	6	ccomp	_	_
 17	það	það	PRON	PRO-N	Case=Nom	16	nsubj	_	_
@@ -342,9 +342,9 @@
 14	sektum	sekt	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	_
 15	eða	eða	CCONJ	CONJ	_	16	cc	_	_
 16	fangelsi	fangelsi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obj	_	_
-17	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	16	obl	_	_
+17	allt	allur	DET	Q-A	Case=Acc	16	obl	_	_
 18	að	að	ADP	P	_	20	case	_	_
-19	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	20	det	_	_
+19	einu	einn	DET	ONE-D	Case=Dat	20	det	_	_
 20	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
 21	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	23	expl	_	_
 22	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
@@ -361,14 +361,14 @@
 33	þess	það	PRON	PRO-G	Case=Gen	31	obl	_	_
 34	að	að	PART	TO	_	35	mark	_	_
 35	vernda	vernda	VERB	VB	VerbForm=Inf	33	xcomp	_	_
-36	allar	allur	DET	Q-A	Case=Acc|Degree=Pos	38	amod	_	_
+36	allar	allur	DET	Q-A	Case=Acc	38	amod	_	_
 37	hugsanlegar	hugsanlegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	38	amod	_	_
 38	útfærslur	útfærsla	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	35	obj	_	_
 39	á	á	ADP	P	_	42	case	_	_
-40	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	42	amod	_	_
+40	öllum	allur	DET	Q-D	Case=Dat	42	amod	_	_
 41	hugsanlegum	hugsanlegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	42	amod	_	_
 42	orðstír	orðstír	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	38	obl	_	_
-43	allra	allur	DET	Q-G	Case=Gen|Degree=Pos	42	nmod:poss	_	_
+43	allra	allur	DET	Q-G	Case=Gen	42	nmod:poss	_	_
 44	í	í	ADP	P	_	45	case	_	_
 45	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	43	obl	_	SpaceAfter=No
 46	.	.	PUNCT	.	_	4	punct	_	_
@@ -384,7 +384,7 @@
 6	ekki	ekki	ADV	NEG	_	5	advmod	_	_
 7	markmiðið	markmið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 8	að	að	SCONJ	C	_	10	mark	_	_
-9	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	10	nsubj	_	_
+9	allir	allur	DET	Q-N	Case=Nom	10	nsubj	_	_
 10	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	5	ccomp	_	_
 11	sömu	sami	PRON	PRO-A	Case=Acc	12	nmod	_	_
 12	réttindin	réttindi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	SpaceAfter=No
@@ -399,7 +399,7 @@
 4	við	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 5	þá	þá	ADV	ADV	Degree=Pos	8	advmod	_	_
 6	með	með	ADP	P	_	8	case	_	_
-7	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	8	det	_	_
+7	þessa	þessi	DET	D-A	Case=Acc	8	det	_	_
 8	upptalningu	upptalning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 9	?	?	PUNCT	.	_	8	punct	_	_
 
@@ -415,7 +415,7 @@
 7	lögin	lag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	0	root	_	_
 8	þannig	þannig	ADV	ADV	Degree=Pos	7	advmod	_	_
 9	að	að	SCONJ	C	_	34	mark	_	_
-10	hver	hver	DET	Q-N	Case=Nom|Degree=Pos	34	nsubj	_	_
+10	hver	hver	DET	Q-N	Case=Nom	34	nsubj	_	_
 11	sem	sem	SCONJ	C	_	13	mark	_	_
 12	opinberlega	opinberlega	ADV	ADV	Degree=Pos	13	advmod	_	_
 13	hæðist	hæða	VERB	VBPI	Mood=Ind|Tense=Pres	10	acl:relcl	_	_
@@ -436,7 +436,7 @@
 28	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	26	dep	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	28	punct	_	_
 30	til	til	ADP	P	_	33	case	_	_
-31	nokkurs	nokkur	DET	Q-G	Case=Gen|Degree=Pos	33	amod	_	_
+31	nokkurs	nokkur	DET	Q-G	Case=Gen	33	amod	_	_
 32	skapaðar	skapa	VERB	VAN-G	Case=Gen|Tense=Past|VerbForm=Part	33	amod	_	_
 33	hlutar	hlutur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	26	obl	_	_
 34	sæti	sæta	VERB	VBPS	Mood=Sub|Tense=Pres	8	advcl	_	_

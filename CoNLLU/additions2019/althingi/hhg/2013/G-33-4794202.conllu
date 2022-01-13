@@ -8,7 +8,7 @@
 5	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 6	einnig	einnig	ADV	ALSO	_	5	advmod	_	_
 7	undir	undir	ADP	P	_	9	case	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	9	det	_	_
+8	þetta	þessi	DET	D-A	Case=Acc	9	det	_	_
 9	sjónarmið	sjónarmið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
 10	en	en	CCONJ	CONJ	_	13	cc	_	_
 11	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	13	aux	_	_
@@ -16,7 +16,7 @@
 13	undirstrika	undirstrika	VERB	VB	VerbForm=Inf	5	conj	_	OriginalHead=0
 14	það	það	PRON	PRO-A	Case=Acc	13	obj	_	_
 15	með	með	ADP	P	_	17	case	_	_
-16	þeim	sá	DET	D-D	Case=Dat|PronType=Art	17	det	_	_
+16	þeim	sá	DET	D-D	Case=Dat	17	det	_	_
 17	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
 18	að	að	SCONJ	C	_	25	mark	_	_
 19	náttúruvernd	náttúruvernd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	nsubj	_	_
@@ -48,7 +48,7 @@
 15	fjöll	fjall	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obj	_	_
 16	eða	eða	CCONJ	CONJ	_	17	cc	_	_
 17	ekki	ekki	ADV	NEG	_	13	conj	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	4	punct	_	_
+18	,	,	PUNCT	,	_	13	punct	_	_
 19	hún	hún	PRON	PRO-N	Case=Nom	22	nsubj	_	_
 20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
 21	beinlínis	beinlínis	ADV	ADV	Degree=Pos	22	advmod	_	_
@@ -96,7 +96,7 @@
 35	vernda	vernda	VERB	VB	VerbForm=Inf	2	obl	_	_
 36	umhverfið	umhverfi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	35	obj	_	_
 37	á	á	ADP	P	_	40	case	_	_
-38	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	40	amod	_	_
+38	öllum	allur	DET	Q-D	Case=Dat	40	amod	_	_
 39	slíkum	slíkur	PRON	SUCH-D	Case=Dat	40	det	_	_
 40	forsendum	forsenda	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	35	obl	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	2	punct	_	_
@@ -110,13 +110,13 @@
 4	sjálfsagt	sjálfsagður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 5	að	að	SCONJ	C	_	17	mark	_	_
 6	þjóðin	þjóð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
-7	öll	allur	DET	Q-N	Case=Nom|Degree=Pos	6	amod	_	SpaceAfter=No
+7	öll	allur	DET	Q-N	Case=Nom	6	amod	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	9	punct	_	_
 9	ríkið	ríki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	11	punct	_	_
 11	sveitarfélög	sveitarfélag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	conj	_	_
 12	og	og	CCONJ	CONJ	_	14	cc	_	_
-13	hver	hver	DET	Q-N	Case=Nom|Degree=Pos	14	amod	_	_
+13	hver	hver	DET	Q-N	Case=Nom	14	amod	_	_
 14	einstaklingur	einstaklingur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	_
 15	sjálfur	sjálfur	PRON	PRO-N	Case=Nom	14	appos	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	15	punct	_	_
@@ -134,11 +134,11 @@
 # text = Það skiptir engu máli út frá hvaða heildarhagsmunum við reynum að nálgast málið, hvort sem það er frá fagurfræðilegum, hugmyndafræðilegum eða hreinlega viðskiptafræðilegum sjónarmiðum, okkur ber að vernda náttúruna.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	engu	enginn	DET	Q-D	Case=Dat|Degree=Pos	4	amod	_	_
+3	engu	enginn	DET	Q-D	Case=Dat	4	amod	_	_
 4	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	_
 5	út	út	ADP	RP	_	8	compound:prt	_	_
 6	frá	frá	ADP	P	_	8	case	_	_
-7	hvaða	hvaða	DET	WD-D	Case=Dat|Number=Sing	8	det	_	_
+7	hvaða	hvaða	DET	WD-D	Case=Dat	8	det	_	_
 8	heildarhagsmunum	heildarhagsmunir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
 9	við	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
 10	reynum	reyna	VERB	VBPI	Mood=Ind|Tense=Pres	2	ccomp	_	_
@@ -158,7 +158,7 @@
 24	hreinlega	hreinlega	ADV	ADV	Degree=Pos	25	advmod	_	_
 25	viðskiptafræðilegum	viðskiptafræðilegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	20	amod	_	_
 26	sjónarmiðum	sjónarmið	ADV	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	advmod	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	2	punct	_	_
+27	,	,	PUNCT	,	_	26	punct	_	_
 28	okkur	ég	PRON	PRO-D	Case=Dat	29	nsubj	_	_
 29	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 30	að	að	PART	TO	_	31	mark	_	_
@@ -178,7 +178,7 @@
 7	,	,	PUNCT	,	_	8	punct	_	_
 8	ríki	ríki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	_
 9	og	og	CCONJ	CONJ	_	12	cc	_	_
-10	hver	hver	DET	Q-N	Case=Nom|Degree=Pos	12	amod	_	_
+10	hver	hver	DET	Q-N	Case=Nom	12	amod	_	_
 11	einasti	einasti	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
 12	Íslendingur	íslendingur	PROPN	NPR-N	_	6	conj	_	_
 13	leggi	leggja	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_

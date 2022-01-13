@@ -15,15 +15,15 @@
 12	meginatriðum	meginatriði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
 13	valið	velja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 14	okkur	ég	PRON	PRO-D	Case=Dat	13	iobj	_	_
-15	þá	sá	DET	D-A	Case=Acc|PronType=Art	16	det	_	_
+15	þá	sá	DET	D-A	Case=Acc	16	det	_	_
 16	lífsskoðun	lífsskoðun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
 17	og	og	CCONJ	CONJ	_	19	cc	_	_
-18	þann	sá	DET	D-A	Case=Acc|PronType=Art	19	det	_	_
+18	þann	sá	DET	D-A	Case=Acc	19	det	_	_
 19	flokk	flokkur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	conj	_	_
 20	sem	sem	SCONJ	C	_	22	mark	_	_
 21	við	ég	PRON	PRO-N	Case=Nom	22	nsubj	_	_
 22	tilheyrum	tilheyra	VERB	VBPI	Mood=Ind|Tense=Pres	16	acl:relcl	_	_
-23	bæði	báðir	DET	Q-N	Case=Nom|Degree=Pos	22	amod	_	_
+23	bæði	báðir	DET	Q-N	Case=Nom	22	amod	_	_
 24	út	út	ADP	RP	_	26	compound:prt	_	_
 25	frá	frá	ADP	P	_	26	case	_	_
 26	því	það	PRON	PRO-D	Case=Dat	13	obl	_	_
@@ -47,7 +47,7 @@
 44	og	og	CCONJ	CONJ	_	45	cc	_	_
 45	fyrirtækjum	fyrirtæki	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	43	conj	_	_
 46	sem	sem	SCONJ	C	_	47	mark	_	_
-47	mest	mikið	DET	Q-A	Case=Acc|Degree=Pos	48	amod	_	_
+47	mest	mikið	DET	Q-A	Case=Acc	48	amod	_	_
 48	svigrúm	svigrúm	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	42	obj	_	_
 49	og	og	CCONJ	CONJ	_	50	cc	_	_
 50	möguleika	möguleiki	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	48	conj	_	_
@@ -69,14 +69,13 @@
 3	skila	skila	VERB	VB	VerbForm=Inf	0	root	_	_
 4	arði	arður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obj	_	_
 5	og	og	CCONJ	CONJ	_	3	cc	_	_
-6	None	_	None	None	_	_	None	_	_
-7	skilar	skila	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-8	þegar	þegar	ADV	ADV	Degree=Pos	7	advmod	_	_
-9	arði	arður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obj	_	_
-10	fyrir	fyrir	ADP	P	_	12	case	_	_
-11	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	12	amod	_	_
-12	samfélagið	samfélag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	3	punct	_	_
+6	skilar	skila	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+7	þegar	þegar	ADV	ADV	Degree=Pos	6	advmod	_	_
+8	arði	arður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obj	_	_
+9	fyrir	fyrir	ADP	P	_	11	case	_	_
+10	allt	allur	DET	Q-A	Case=Acc	11	amod	_	_
+11	samfélagið	samfélag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4515035,.3
 # X_ID = ID_missing_4
@@ -95,7 +94,7 @@
 12	fara	fara	VERB	VB	VerbForm=Inf	10	xcomp	_	_
 13	alltaf	alltaf	ADV	ADV	Degree=Pos	12	advmod	_	_
 14	í	í	ADP	P	_	15	case	_	_
-15	það	sá	DET	D-A	Case=Acc|PronType=Art	12	obl	_	_
+15	það	sá	DET	D-A	Case=Acc	12	obl	_	_
 16	sem	sem	SCONJ	C	_	19	mark	_	_
 17	ég	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
 18	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	19	aux	_	_
@@ -113,7 +112,7 @@
 4	að	að	PART	TO	_	5	mark	_	_
 5	sitja	sitja	VERB	VB	VerbForm=Inf	3	xcomp	_	_
 6	undir	undir	ADP	P	_	8	case	_	_
-7	þeim	sá	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+7	þeim	sá	DET	D-D	Case=Dat	8	det	_	_
 8	ásökunum	ásökun	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
 9	að	að	SCONJ	C	_	13	mark	_	_
 10	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
@@ -166,7 +165,7 @@
 19	og	og	CCONJ	CONJ	_	20	cc	_	_
 20	sátt	sátt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	conj	_	_
 21	við	við	ADP	P	_	22	case	_	_
-22	þá	sá	DET	D-A	Case=Acc|PronType=Art	18	obl	_	_
+22	þá	sá	DET	D-A	Case=Acc	18	obl	_	_
 23	sem	sem	SCONJ	C	_	25	mark	_	_
 24	þá	þá	ADV	ADV	Degree=Pos	25	advmod	_	_
 25	áttu	eiga	VERB	VBDI	Mood=Ind|Tense=Past	22	acl:relcl	_	_
@@ -266,7 +265,7 @@
 3	reyna	reyna	VERB	VB	VerbForm=Inf	0	root	_	_
 4	að	að	PART	TO	_	5	mark	_	_
 5	veiða	veiða	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-6	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	5	obj	_	_
+6	meira	mikill	DET	QR-A	Case=Acc	5	obj	_	_
 7	á	á	ADP	P	_	10	case	_	_
 8	sem	sem	SCONJ	C	_	9	mark	_	_
 9	skemmstum	skammur	ADJ	ADJS-D	Case=Dat|Degree=Sup	10	amod	_	_
@@ -275,7 +274,7 @@
 12	það	það	PRON	PRO-N	Case=Nom	14	nsubj	_	_
 13	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	14	aux	_	_
 14	farið	fara	VERB	VBN	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0
-15	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	14	obl	_	_
+15	allt	allur	DET	Q-A	Case=Acc	14	obl	_	_
 16	niður	niður	ADP	RP	_	15	compound:prt	_	_
 17	í	í	ADP	P	_	15	case	_	_
 18	tvo	tveir	NUM	NUM-A	Case=Acc	19	nummod	_	_
@@ -283,7 +282,7 @@
 20	eða	eða	CCONJ	CONJ	_	22	cc	_	_
 21	tvo	tveir	NUM	NUM-A	Case=Acc	22	nummod	_	_
 22	daga	dagur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	conj	_	_
-23	hverju	hver	DET	Q-D	Case=Dat|Degree=Pos	24	amod	_	_
+23	hverju	hver	DET	Q-D	Case=Dat	24	amod	_	_
 24	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -312,7 +311,7 @@
 3	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	tekið	taka	VERB	VAN	Tense=Past|VerbForm=Part	2	ccomp	_	_
 5	af	af	ADP	P	_	7	case	_	_
-6	einhverjum	einhver	DET	Q-D	Case=Dat|Degree=Pos	7	amod	_	_
+6	einhverjum	einhver	DET	Q-D	Case=Dat	7	amod	_	_
 7	öðrum	annar	PRON	OTHER-D	Case=Dat	2	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -361,7 +360,7 @@
 11	og	og	CCONJ	CONJ	_	12	cc	_	_
 12	fara	fara	VERB	VB	VerbForm=Inf	3	conj	_	_
 13	yfir	yfir	ADP	P	_	14	case	_	_
-14	það	sá	DET	D-A	Case=Acc|PronType=Art	12	obl	_	_
+14	það	sá	DET	D-A	Case=Acc	12	obl	_	_
 15	sem	sem	SCONJ	C	_	18	mark	_	_
 16	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	17	amod	_	_
 17	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
@@ -382,7 +381,7 @@
 9	gegn	gegn	ADP	P	_	10	case	_	_
 10	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
 11	að	að	SCONJ	C	_	14	mark	_	_
-12	allur	allur	DET	Q-N	Case=Nom|Degree=Pos	13	amod	_	_
+12	allur	allur	DET	Q-N	Case=Nom	13	amod	_	_
 13	fiskur	fiskur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
 14	fari	fara	VERB	VBPS	Mood=Sub|Tense=Pres	10	ccomp	_	_
 15	á	á	ADP	P	_	16	case	_	_

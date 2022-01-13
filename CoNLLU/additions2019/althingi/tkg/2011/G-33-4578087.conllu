@@ -53,7 +53,7 @@
 4	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Degree=Pos	3	amod	_	_
 5	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	fyrir	fyrir	ADP	P	_	9	case	_	_
-7	margra	margur	DET	Q-G	Case=Gen|Degree=Pos	9	nmod:poss	_	_
+7	margra	margur	DET	Q-G	Case=Gen	9	nmod:poss	_	_
 8	hluta	hlutur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	conj	_	_
 9	sakir	sök	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
 10	og	og	CCONJ	CONJ	_	12	cc	_	_
@@ -74,7 +74,7 @@
 # sent_id = ALTHINGI_TKG_2011_G-33-4578087,.3
 # X_ID = ID_missing_4
 # text = Þeir sem höfðu stundað útgerð lengi vel áttuðu sig ekki síst á því að þeir gátu ekki fiskað lengur.
-1	Þeir	sá	DET	D-N	Case=Nom|PronType=Art	8	nsubj	_	_
+1	Þeir	sá	DET	D-N	Case=Nom	8	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	höfðu	hafa	AUX	HVDI	Mood=Ind|Tense=Past	4	aux	_	_
 4	stundað	stunda	VERB	VBN	Tense=Past|VerbForm=Part	1	acl:relcl	_	_
@@ -112,9 +112,9 @@
 12	sem	sem	SCONJ	C	_	14	mark	_	_
 13	mér	ég	PRON	PRO-D	Case=Dat	14	nsubj	_	_
 14	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	9	acl:relcl	_	_
-15	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	19	nsubj	_	_
+15	allt	allur	DET	Q-N	Case=Nom	19	nsubj	_	_
 16	of	of	ADV	ADV	Degree=Pos	17	amod	_	_
-17	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	15	amod	_	_
+17	margir	margur	DET	Q-N	Case=Nom	15	amod	_	_
 18	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	19	aux	_	_
 19	gleymt	gleyma	VERB	VBN	Tense=Past|VerbForm=Part	14	xcomp	_	_
 20	í	í	ADP	P	_	21	case	_	_
@@ -147,7 +147,7 @@
 21	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	23	cop	_	_
 22	þær	hún	PRON	PRO-N	Case=Nom	23	nsubj	_	_
 23	nauðsynlegar	nauðsynlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0|SpaceAfter=No
-24	,	,	PUNCT	,	_	2	punct	_	_
+24	,	,	PUNCT	,	_	23	punct	_	_
 25	ekki	ekki	ADV	NEG	_	26	advmod	_	_
 26	síst	varla	ADV	ADVS	Degree=Sup	28	advmod	_	_
 27	vegna	vegna	ADP	P	_	28	case	_	_
@@ -162,7 +162,7 @@
 # sent_id = ALTHINGI_TKG_2011_G-33-4578087,.6
 # X_ID = ID_missing_8
 # text = Sumir segja að þeir hafi verið að hruni komnir þannig að það þurfti að taka ákvörðun um framtíð fiskveiða.
-1	Sumir	sumur	DET	Q-N	Case=Nom|Degree=Pos	2	nsubj	_	_
+1	Sumir	sumur	DET	Q-N	Case=Nom	2	nsubj	_	_
 2	segja	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
 4	þeir	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
@@ -191,7 +191,7 @@
 3	tekin	taka	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 4	ákvörðun	ákvörðun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	obl	_	_
 5	um	um	ADP	P	_	7	case	_	_
-6	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
+6	þetta	þessi	DET	D-A	Case=Acc	7	det	_	_
 7	kerfi	kerfi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
 8	sem	sem	SCONJ	C	_	10	mark	_	_
 9	við	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_

@@ -66,7 +66,7 @@
 19	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	20	aux	_	_
 20	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	17	conj	_	_
 21	að	að	ADP	P	_	23	case	_	_
-22	mestu	mikill	DET	QS-D	Case=Dat|Degree=Pos	23	amod	_	_
+22	mestu	mikill	DET	QS-D	Case=Dat	23	amod	_	_
 23	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	_
 24	án	án	ADP	P	_	25	case	_	_
 25	vegaslóða	vegaslóði	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	obl	_	_
@@ -96,7 +96,7 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4577317,.4
 # X_IDs = ID_missing_5 ; ID_missing_6
 # text = Þetta er þurrt land en mjög viðkvæmt og það sýnir sig að freistingin, bara til að keyra af augum í átt að hreindýrahjörðunum, er mikil.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	þurrt	þurr	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
 4	land	land	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
@@ -122,7 +122,7 @@
 24	hreindýrahjörðunum	hreindýrahjörð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	22	obl	_	SpaceAfter=No
 25	,	,	PUNCT	,	_	27	punct	_	_
 26	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
-27	mikil	mikill	DET	Q-N	Case=Nom|Degree=Pos	10	ccomp	_	SpaceAfter=No
+27	mikil	mikill	DET	Q-N	Case=Nom	10	ccomp	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4577317,.5
@@ -133,11 +133,11 @@
 3	slá	slá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	inn	inn	ADP	RP	_	3	compound:prt	_	_
 5	slóðirnar	slóð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	3	punct	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
 7	það	það	PRON	PRO-N	Case=Nom	9	nsubj	_	_
 8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 9	rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0|SpaceAfter=No
-10	,	,	PUNCT	,	_	3	punct	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
 11	og	og	CCONJ	CONJ	_	14	cc	_	_
 12	næsti	næstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	13	amod	_	_
 13	veiðimannahópur	veiðimannahópur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
@@ -157,14 +157,14 @@
 27	þarna	þarna	ADV	ADV	Degree=Pos	30	advmod	_	_
 28	norðan	norðan	ADV	ADV	Degree=Pos	30	advmod	_	_
 29	við	við	ADP	P	_	30	case	_	_
-30	hornið	horn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	obl	_	_
+30	hornið	horn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obl	_	_
 31	á	á	ADP	P	_	33	case	_	_
-32	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	33	det	_	_
+32	þessu	þessi	DET	D-D	Case=Dat	33	det	_	_
 33	felli	fell	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obl	_	_
 34	og	og	CCONJ	CONJ	_	37	cc	_	_
 35	austan	austan	ADV	ADV	Degree=Pos	37	advmod	_	_
 36	við	við	ADP	P	_	37	case	_	_
-37	hitt	hinn	DET	D-A	Case=Acc|PronType=Art	26	obl	_	SpaceAfter=No
+37	hitt	hinn	DET	D-A	Case=Acc	30	conj	_	SpaceAfter=No
 38	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4577317,.6
@@ -173,13 +173,13 @@
 1	Og	og	CCONJ	CONJ	_	3	cc	_	_
 2	þannig	þannig	ADV	ADV	Degree=Pos	3	advmod	_	_
 3	gerist	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	SpaceAfter=No
+4	þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4577317,.7
 # X_ID = ID_missing_11
 # text = Þetta er að gerast svona.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	að	að	PART	TO	_	4	mark	_	_
 4	gerast	gera	VERB	DO	VerbForm=Inf	0	root	_	_
@@ -222,7 +222,7 @@
 4	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	ýta	ýta	VERB	VB	VerbForm=Inf	4	xcomp	_	_
-7	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+7	þessum	þessi	DET	D-D	Case=Dat	8	det	_	_
 8	veruleika	veruleiki	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obj	_	_
 9	til	til	ADP	P	_	10	case	_	_
 10	hliðar	hlið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
@@ -233,11 +233,11 @@
 15	af	af	ADP	P	_	16	case	_	_
 16	borðinu	borð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
 17	með	með	ADP	P	_	19	case	_	_
-18	einhverju	einhver	DET	Q-D	Case=Dat|Degree=Pos	19	amod	_	_
+18	einhverju	einhver	DET	Q-D	Case=Dat	19	amod	_	_
 19	blaðri	blaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
 20	um	um	ADP	P	_	23	case	_	_
 21	að	að	SCONJ	C	_	23	mark	_	_
-22	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	23	nsubj	_	_
+22	eitthvað	einhver	DET	Q-N	Case=Nom	23	nsubj	_	_
 23	lykti	lykta	VERB	VBPS	Mood=Sub|Tense=Pres	19	obl	_	_
 24	af	af	ADP	P	_	25	case	_	_
 25	boðum	boð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	23	obl	_	_

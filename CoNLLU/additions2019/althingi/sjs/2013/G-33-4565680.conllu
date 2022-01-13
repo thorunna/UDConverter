@@ -95,7 +95,7 @@
 42	hún	hún	PRON	PRO-N	Case=Nom	44	nsubj	_	_
 43	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	44	aux	_	_
 44	hafa	hafa	AUX	HV	VerbForm=Inf	36	ccomp	_	_
-45	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	44	obj	_	SpaceAfter=No
+45	þetta	þessi	DET	D-A	Case=Acc	44	obj	_	SpaceAfter=No
 46	,	,	PUNCT	,	_	45	punct	_	_
 47	samanber	samanbera	VERB	VBI	Mood=Imp|VerbForm=Inf	32	ccomp	_	_
 48	vandræðaganginn	vandræðagangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	47	obj	_	_
@@ -109,7 +109,7 @@
 56	komu	koma	VERB	VBDI	Mood=Ind|Tense=Past	32	conj	_	_
 57	fram	fram	ADP	RP	_	56	compound:prt	_	_
 58	á	á	ADP	P	_	60	case	_	_
-59	þeim	sá	DET	D-D	Case=Dat|PronType=Art	60	det	_	_
+59	þeim	sá	DET	D-D	Case=Dat	60	det	_	_
 60	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	56	obl	_	SpaceAfter=No
 61	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -129,7 +129,7 @@
 11	að	að	PART	TO	_	12	mark	_	_
 12	veita	veita	VERB	VB	VerbForm=Inf	10	xcomp	_	_
 13	ríkisstjórninni	ríkisstjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	iobj	_	_
-14	þennan	þessi	DET	D-A	Case=Acc|PronType=Art	15	det	_	_
+14	þennan	þessi	DET	D-A	Case=Acc	15	det	_	_
 15	viðbótartíma	viðbótartími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obj	_	_
 16	næði	ná	VERB	VBDS	Mood=Sub|Tense=Past	6	ccomp	_	_
 17	hún	hún	PRON	PRO-N	Case=Nom	16	nsubj	_	_
@@ -207,7 +207,7 @@
 12	að	að	SCONJ	C	_	14	mark	_	_
 13	þingið	þing	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
 14	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	11	ccomp	_	_
-15	meiri	mikill	DET	QR-A	Case=Acc|Degree=Pos	16	amod	_	_
+15	meiri	mikill	DET	QR-A	Case=Acc	16	amod	_	_
 16	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
 17	til	til	ADP	P	_	19	case	_	_
 18	að	að	PART	TO	_	19	mark	_	_
@@ -232,7 +232,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	hluti	hluti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 4	af	af	ADP	P	_	6	case	_	_
-5	ýmsum	ýmis	DET	Q-D	Case=Dat|Degree=Pos	6	amod	_	_
+5	ýmsum	ýmis	DET	Q-D	Case=Dat	6	amod	_	_
 6	umbótum	umbót	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
 7	sem	sem	SCONJ	C	_	10	mark	_	_
 8	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
@@ -278,7 +278,7 @@
 8	á	á	ADP	P	_	9	case	_	_
 9	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 10	í	í	ADP	P	_	12	case	_	_
-11	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	12	det	_	_
+11	þessu	þessi	DET	D-D	Case=Dat	12	det	_	_
 12	ferli	ferill	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 13	með	með	ADP	P	_	14	case	_	_
 14	því	það	PRON	PRO-D	Case=Dat	6	obl	_	_
@@ -287,7 +287,7 @@
 17	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	14	ccomp	_	_
 18	að	að	PART	TO	_	19	mark	_	_
 19	fá	fá	VERB	VB	VerbForm=Inf	17	xcomp	_	_
-20	þennan	þessi	DET	D-A	Case=Acc|PronType=Art	21	det	_	_
+20	þennan	þessi	DET	D-A	Case=Acc	21	det	_	_
 21	viðbótarfrest	viðbótarfrestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
 22	þarna	þarna	ADV	ADV	Degree=Pos	19	advmod	_	_
 23	í	í	ADP	P	_	24	case	_	_
@@ -303,7 +303,7 @@
 4	hvað	hver	PRON	WPRO-N	Case=Nom	9	obj	_	_
 5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 6	í	í	ADP	P	_	9	case	_	_
-7	þeim	sá	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
+7	þeim	sá	DET	D-D	Case=Dat	9	det	_	_
 8	nýju	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
 9	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	xcomp	_	_
 10	sem	sem	SCONJ	C	_	11	mark	_	_
@@ -319,8 +319,8 @@
 20	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	21	amod	_	_
 21	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	nsubj	_	_
 22	virðist	virða	VERB	VBPI	Mood=Ind|Tense=Pres	16	ccomp	_	_
-23	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	26	nsubj	_	_
-24	hið	hinn	DET	D-N	Case=Nom|PronType=Art	26	det	_	_
+23	þetta	þessi	DET	D-N	Case=Nom	26	nsubj	_	_
+24	hið	hinn	DET	D-N	Case=Nom	26	det	_	_
 25	besta	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	26	amod	_	_
 26	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	ccomp	_	_
 27	að	að	PART	TO	_	28	mark	_	_
@@ -329,7 +329,7 @@
 30	sjúklingaskatta	sjúklingaskattur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	28	obj	_	_
 31	á	á	ADP	P	_	32	case	_	_
 32	spítölum	spítali	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	28	obl	_	SpaceAfter=No
-33	,	,	PUNCT	,	_	16	punct	_	_
+33	,	,	PUNCT	,	_	28	punct	_	_
 34	en	en	CCONJ	CONJ	_	42	cc	_	_
 35	það	það	PRON	PRO-N	Case=Nom	42	nsubj	_	_
 36	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	42	cop	_	_
@@ -414,9 +414,9 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4565680,.13
 # X_ID = ID_missing_16
 # text = Eitt af því sem á að taka svona inn núna eru innritunargjöld á sjúkrahús.
-1	Eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	12	nsubj	_	_
+1	Eitt	einn	DET	ONE-N	Case=Nom	12	nsubj	_	_
 2	af	af	ADP	P	_	3	case	_	_
-3	því	sá	DET	D-D	Case=Dat|PronType=Art	1	obl	_	_
+3	því	sá	DET	D-D	Case=Dat	1	obl	_	_
 4	sem	sem	SCONJ	C	_	5	mark	_	_
 5	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	_
 6	að	að	PART	TO	_	7	mark	_	_

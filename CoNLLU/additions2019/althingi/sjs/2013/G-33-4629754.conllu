@@ -21,7 +21,7 @@
 18	í	í	ADP	P	_	19	case	_	_
 19	gær	gær	ADV	ADV	Degree=Pos	16	obl	_	SpaceAfter=No
 20	,	,	PUNCT	,	_	19	punct	_	_
-21	nokkuð	nokkur	DET	Q-A	Case=Acc|Degree=Pos	22	obl	_	_
+21	nokkuð	nokkur	DET	Q-A	Case=Acc	22	obl	_	_
 22	spaklegar	spaklegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	14	amod	_	SpaceAfter=No
 23	,	,	PUNCT	,	_	22	punct	_	_
 24	um	um	ADP	P	_	25	case	_	_
@@ -60,7 +60,7 @@
 # text = Þeir nota það sem kölluð er rammaaðferðafræði og hefur í raun verið í undirbúningi hér um nokkurra ára skeið, tveggja til þriggja ára skeið, að taka upp á Íslandi; var liður í ráðgjöf Alþjóðagjaldeyrissjóðsins þegar hann kom hér í árdögum og leit á þessi mál, mælti eindregið með því.
 1	Þeir	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	nota	nota	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	það	sá	DET	D-A	Case=Acc|PronType=Art	2	obj	_	_
+3	það	sá	DET	D-A	Case=Acc	2	obj	_	_
 4	sem	sem	SCONJ	C	_	5	mark	_	_
 5	kölluð	kalla	VERB	VAN	Tense=Past|VerbForm=Part	3	acl:relcl	_	_
 6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -74,7 +74,7 @@
 14	undirbúningi	undirbúningur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
 15	hér	hér	ADV	ADV	Degree=Pos	12	advmod	_	_
 16	um	um	ADP	P	_	19	case	_	_
-17	nokkurra	nokkur	DET	Q-G	Case=Gen|Degree=Pos	19	nmod:poss	_	_
+17	nokkurra	nokkur	DET	Q-G	Case=Gen	19	nmod:poss	_	_
 18	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	17	conj	_	_
 19	skeið	skeið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
 20	,	,	PUNCT	,	_	19	punct	_	_
@@ -104,7 +104,7 @@
 44	og	og	CCONJ	CONJ	_	45	cc	_	_
 45	leit	líta	VERB	VBDI	Mood=Ind|Tense=Past	40	conj	_	_
 46	á	á	ADP	P	_	48	case	_	_
-47	þessi	þessi	DET	D-A	Case=Acc|PronType=Art	48	det	_	_
+47	þessi	þessi	DET	D-A	Case=Acc	48	det	_	_
 48	mál	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	45	obl	_	SpaceAfter=No
 49	,	,	PUNCT	,	_	50	punct	_	_
 50	mælti	mæla	VERB	VBDI	Mood=Ind|Tense=Past	40	conj	_	_
@@ -119,7 +119,7 @@
 1	Í	í	ADP	P	_	2	case	_	_
 2	grunninn	grunnur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
 3	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	sú	sá	DET	D-N	Case=Nom|PronType=Art	5	det	_	_
+4	sú	sá	DET	D-N	Case=Nom	5	det	_	_
 5	aðferðafræði	aðferðafræði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 6	út	út	ADP	RP	_	9	compound:prt	_	_
 7	á	á	ADP	P	_	9	case	_	_
@@ -146,7 +146,7 @@
 7	fylla	fylla	VERB	VB	VerbForm=Inf	4	obl	_	_
 8	út	út	ADP	RP	_	11	compound:prt	_	_
 9	í	í	ADP	P	_	11	case	_	_
-10	þá	sá	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+10	þá	sá	DET	D-A	Case=Acc	11	det	_	_
 11	ramma	rammi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	_
 12	en	en	CCONJ	CONJ	_	13	cc	_	_
 13	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
@@ -176,7 +176,7 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4629754,.6
 # X_ID = ID_missing_7
 # text = Hins vegar er þar síðan pottur til að ráðstafa í ófyrirséð útgjöld, nákvæmlega eins og við tókum upp hér strax á árinu 2009.
-1	Hins	hinn	DET	D-G	Case=Gen|PronType=Art	2	det	_	_
+1	Hins	hinn	DET	D-G	Case=Gen	2	det	_	_
 2	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 4	þar	þar	ADV	ADV	Degree=Pos	6	advmod	_	_
@@ -207,16 +207,16 @@
 # text = Í fyrsta sinn var í fjárlögum á Íslandi stór, óskiptur varasjóður upp á milli 4 og 5 milljarða kr. lagt upp með 5 milljarða, lækkaði reyndar nokkuð í meðförum þingsins þannig að hann var eitthvað um 4 milljarðar og það kom sér vel strax á næsta ári þar á eftir því að náttúruhamfarirnar á Íslandi í apríl og í framhaldinu 2010 ætli þær hafi ekki endað með því að kosta ríkissjóð eða hið opinbera eitthvað á annan milljarð króna og það fé kom allt úr þessum potti.
 1	Í	í	ADP	P	_	3	case	_	_
 2	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	3	amod	_	_
-3	sinn	sinn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	0	root	_	_
-4	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
+3	sinn	sinn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	27	obl	_	_
+4	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	27	cop	_	_
 5	í	í	ADP	P	_	6	case	_	_
-6	fjárlögum	fjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
+6	fjárlögum	fjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	obl	_	_
 7	á	á	ADP	P	_	8	case	_	_
-8	Íslandi	ísland	PROPN	NPR-D	_	3	obl	_	_
+8	Íslandi	ísland	PROPN	NPR-D	_	27	obl	_	_
 9	stór	stór	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
 11	óskiptur	óskiptur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
-12	varasjóður	varasjóður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+12	varasjóður	varasjóður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
 13	upp	upp	ADP	RP	_	19	compound:prt	_	_
 14	á	á	ADV	ADV	Degree=Pos	19	advmod	_	_
 15	milli	milli	CCONJ	CONJ	_	16	cc	_	_
@@ -225,15 +225,15 @@
 18	5	fimm	NUM	NUM-A	Case=Acc	16	conj	_	_
 19	milljarða	milljarður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
 20	kr.	króna	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	nmod:poss	_	_
-21	lagt	leggja	VERB	VAN	Tense=Past|VerbForm=Part	3	xcomp	_	_
+21	lagt	leggja	VERB	VAN	Tense=Past|VerbForm=Part	27	xcomp	_	_
 22	upp	upp	ADP	RP	_	21	compound:prt	_	_
 23	með	með	ADP	P	_	25	case	_	_
 24	5	fimm	NUM	NUM-A	Case=Acc	25	nummod	_	_
 25	milljarða	milljarður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	21	obl	_	SpaceAfter=No
 26	,	,	PUNCT	,	_	25	punct	_	_
-27	lækkaði	lækka	VERB	VBDI	Mood=Ind|Tense=Past	3	parataxis	_	_
+27	lækkaði	lækka	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 28	reyndar	reyndar	ADV	ADV	Degree=Pos	27	advmod	_	_
-29	nokkuð	nokkur	DET	Q-A	Case=Acc|Degree=Pos	27	obl	_	_
+29	nokkuð	nokkur	DET	Q-A	Case=Acc	27	obl	_	_
 30	í	í	ADP	P	_	31	case	_	_
 31	meðförum	meðför	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	obl	_	_
 32	þingsins	þing	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	31	nmod:poss	_	_
@@ -241,13 +241,13 @@
 34	að	að	SCONJ	C	_	40	mark	_	_
 35	hann	hann	PRON	PRO-N	Case=Nom	40	nsubj	_	_
 36	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	40	cop	_	_
-37	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	40	xcomp	_	_
+37	eitthvað	einhver	DET	Q-N	Case=Nom	40	xcomp	_	_
 38	um	um	ADV	ADV	Degree=Pos	40	advmod	_	_
 39	4	fjórir	NUM	NUM-N	Case=Nom	40	nummod	_	_
 40	milljarðar	milljarður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	33	advcl	_	_
 41	og	og	CCONJ	CONJ	_	43	cc	_	_
 42	það	það	PRON	PRO-N	Case=Nom	43	nsubj	_	_
-43	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
+43	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	27	conj	_	OriginalHead=0
 44	sér	sig	PRON	PRO-D	Case=Dat	43	obj	_	_
 45	vel	vel	ADV	ADV	Degree=Pos	43	advmod	_	_
 46	strax	strax	ADV	ADV	Degree=Pos	49	advmod	_	_
@@ -263,12 +263,12 @@
 56	á	á	ADP	P	_	57	case	_	_
 57	Íslandi	ísland	PROPN	NPR-D	_	55	obl	_	_
 58	í	í	ADP	P	_	59	case	_	_
-59	apríl	apríl	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	60	obl	_	_
-60	og	og	CCONJ	CONJ	_	55	obl	_	_
+59	apríl	apríl	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	55	obl	_	_
+60	og	og	CCONJ	CONJ	_	59	cc	_	_
 61	í	í	ADP	P	_	62	case	_	_
-62	framhaldinu	framhald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	60	obl	_	_
+62	framhaldinu	framhald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	59	obl	_	_
 63	2010	2010	NUM	NUM-A	Case=Acc	62	obl	_	_
-64	ætli	ætla	VERB	VBPS	Mood=Sub|Tense=Pres	3	conj	_	OriginalHead=0
+64	ætli	ætla	VERB	VBPS	Mood=Sub|Tense=Pres	27	conj	_	OriginalHead=0
 65	þær	hún	PRON	PRO-N	Case=Nom	68	nsubj	_	_
 66	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	68	aux	_	_
 67	ekki	ekki	ADV	NEG	_	68	advmod	_	_
@@ -279,22 +279,22 @@
 72	kosta	kosta	VERB	VB	VerbForm=Inf	70	xcomp	_	_
 73	ríkissjóð	ríkissjóður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	72	iobj	_	_
 74	eða	eða	CCONJ	CONJ	_	76	cc	_	_
-75	hið	hinn	DET	D-A	Case=Acc|PronType=Art	76	det	_	_
+75	hið	hinn	DET	D-A	Case=Acc	76	det	_	_
 76	opinbera	opinber	ADJ	ADJ-A	Case=Acc|Degree=Pos	73	conj	_	_
-77	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	72	obj	_	_
+77	eitthvað	einhver	DET	Q-A	Case=Acc	72	obj	_	_
 78	á	á	ADP	P	_	80	case	_	_
 79	annan	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	80	amod	_	_
 80	milljarð	milljarður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	77	obl	_	_
 81	króna	króna	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	80	nmod:poss	_	_
 82	og	og	CCONJ	CONJ	_	85	cc	_	_
-83	það	sá	DET	D-A	Case=Acc|PronType=Art	84	det	_	_
+83	það	sá	DET	D-A	Case=Acc	84	det	_	_
 84	fé	fé	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	85	nsubj	_	_
-85	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
-86	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	85	amod	_	_
+85	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	27	conj	_	OriginalHead=0
+86	allt	allur	DET	Q-N	Case=Nom	85	amod	_	_
 87	úr	úr	ADP	P	_	89	case	_	_
-88	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	89	det	_	_
+88	þessum	þessi	DET	D-D	Case=Dat	89	det	_	_
 89	potti	pottur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	85	obl	_	SpaceAfter=No
-90	.	.	PUNCT	.	_	3	punct	_	_
+90	.	.	PUNCT	.	_	27	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4629754,.8
 # X_ID = ID_missing_12
@@ -323,7 +323,7 @@
 22	Alþingis	alþingi	PROPN	NPR-G	_	21	nmod:poss	_	_
 23	yfir	yfir	ADV	ADV	Degree=Pos	26	advmod	_	_
 24	í	í	ADP	P	_	26	case	_	_
-25	þau	sá	DET	D-A	Case=Acc|PronType=Art	26	det	_	_
+25	þau	sá	DET	D-A	Case=Acc	26	det	_	_
 26	verkefni	verkefni	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obl	_	_
 27	sem	sem	SCONJ	C	_	28	mark	_	_
 28	komu	koma	VERB	VBDI	Mood=Ind|Tense=Past	26	acl:relcl	_	_
@@ -362,23 +362,23 @@
 6	að	að	PART	TO	_	7	mark	_	_
 7	útiloka	útiloka	VERB	VB	VerbForm=Inf	3	xcomp	_	_
 8	þau	það	PRON	PRO-A	Case=Acc	7	obj	_	_
-9	og	og	CCONJ	CONJ	_	25	cc	_	_
-10	það	sá	DET	D-N	Case=Nom|PronType=Art	25	nsubj	_	_
+9	og	og	CCONJ	CONJ	_	17	cc	_	_
+10	það	sá	DET	D-N	Case=Nom	17	nsubj	_	_
 11	sem	sem	SCONJ	C	_	12	mark	_	_
 12	skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	10	acl:relcl	_	_
-13	mestu	mikill	DET	QS-D	Case=Dat|Degree=Pos	14	amod	_	_
+13	mestu	mikill	DET	QS-D	Case=Dat	14	amod	_	_
 14	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obj	_	_
-15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	SpaceAfter=No
+15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	15	punct	_	_
-17	og	og	CCONJ	CONJ	_	25	parataxis	_	_
-18	mesta	mikill	DET	QS-N	Case=Nom|Degree=Pos	19	amod	_	_
-19	agaleysið	agaleysi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
+17	og	og	CCONJ	CONJ	_	3	conj	_	OriginalHead=0
+18	mesta	mikill	DET	QS-N	Case=Nom	19	amod	_	_
+19	agaleysið	agaleysi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	obl	_	_
 20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	3	punct	_	_
+21	,	,	PUNCT	,	_	20	punct	_	_
 22	þegar	þegar	ADP	P	_	25	case	_	_
-23	smyglgóss	smyglgóss	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	obl	_	_
+23	smyglgóss	smyglgóss	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	nsubj	_	_
 24	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
-25	tekið	taka	VERB	VAN	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0
+25	tekið	taka	VERB	VAN	Tense=Past|VerbForm=Part	17	obl	_	_
 26	inn	inn	ADP	RP	_	28	compound:prt	_	_
 27	í	í	ADP	P	_	28	case	_	_
 28	fjáraukalög	fjáraukalög	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	25	obl	_	_
@@ -388,7 +388,7 @@
 32	sem	sem	SCONJ	C	_	33	mark	_	_
 33	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	25	acl:relcl	_	_
 34	þar	þar	ADV	ADV	Degree=Pos	33	advmod	_	_
-35	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	36	amod	_	_
+35	ekkert	enginn	DET	Q-A	Case=Acc	36	amod	_	_
 36	erindi	erindi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obj	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	3	punct	_	_
 

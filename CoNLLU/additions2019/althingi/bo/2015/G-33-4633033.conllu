@@ -61,10 +61,10 @@
 39	mjög	mjög	ADV	ADV	Degree=Pos	40	amod	_	_
 40	góðri	góður	ADJ	ADJ-D	Case=Dat|Degree=Pos	41	amod	_	_
 41	umsögn	umsögn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	36	obl	_	_
-42	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	41	nmod:poss	_	_
+42	þeirra	sá	DET	D-G	Case=Gen	41	nmod:poss	_	_
 43	sem	sem	SCONJ	C	_	48	mark	_	_
 44	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	48	cop	_	_
-45	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	48	obl	_	_
+45	allt	allur	DET	Q-A	Case=Acc	48	obl	_	_
 46	í	í	ADP	P	_	45	case	_	_
 47	senn	senn	ADV	ADV	Degree=Pos	45	advmod	_	_
 48	uppbyggileg	uppbyggilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	41	acl:relcl	_	SpaceAfter=No
@@ -111,7 +111,7 @@
 15	þess	það	PRON	PRO-G	Case=Gen	13	obl	_	_
 16	að	að	PART	TO	_	17	mark	_	_
 17	laga	laga	VERB	VB	VerbForm=Inf	15	xcomp	_	_
-18	þá	sá	DET	D-A	Case=Acc|PronType=Art	19	det	_	_
+18	þá	sá	DET	D-A	Case=Acc	19	det	_	_
 19	galla	galli	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obj	_	_
 20	sem	sem	SCONJ	C	_	25	mark	_	_
 21	því	það	PRON	PRO-D	Case=Dat	22	obl	_	_
@@ -126,7 +126,7 @@
 # text = Það efast enginn um mikilvægi þess að leggja fram kerfisáætlun en það er ekki sama hvernig það er gert og við þurfum að vanda okkur betur.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	efast	efa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	2	obl	_	_
+3	enginn	enginn	DET	Q-N	Case=Nom	2	obl	_	_
 4	um	um	ADP	P	_	5	case	_	_
 5	mikilvægi	mikilvægi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 6	þess	það	PRON	PRO-G	Case=Gen	5	nmod:poss	_	_

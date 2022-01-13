@@ -11,8 +11,8 @@
 8	ekki	ekki	ADV	NEG	_	7	advmod	_	_
 9	utan	utan	ADV	ADV	Degree=Pos	11	advmod	_	_
 10	um	um	ADP	P	_	11	case	_	_
-11	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	7	obl	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	7	punct	_	_
+11	þetta	þessi	DET	D-A	Case=Acc	7	obl	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
 13	ég	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
 14	verð	verða	VERB	RDPI	Mood=Ind|Tense=Pres	7	conj	_	OriginalHead=0
 15	að	að	PART	TO	_	16	mark	_	_
@@ -47,7 +47,7 @@
 5	taka	taka	VERB	VB	VerbForm=Inf	28	dep	_	_
 6	út	út	ADP	RP	_	5	compound:prt	_	_
 7	Hagavatn	hagavatn	PROPN	NPR-A	_	5	obj	_	_
-8	eitt	einn	DET	ONE-A	Case=Acc|Number=Sing	7	amod	_	_
+8	eitt	einn	DET	ONE-A	Case=Acc	7	amod	_	_
 9	og	og	CCONJ	CONJ	_	10	cc	_	_
 10	sér	sér	ADJ	ADJ-A	Case=Acc|Degree=Pos	8	conj	_	_
 11	en	en	CCONJ	CONJ	_	5	parataxis	_	_
@@ -68,9 +68,9 @@
 26	ég	ég	PRON	PRO-N	Case=Nom	28	nsubj	_	_
 27	bara	bara	ADV	FP	Degree=Pos	28	advmod	_	_
 28	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-29	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	28	obj	_	_
+29	þetta	þessi	DET	D-A	Case=Acc	28	obj	_	_
 30	ekki	ekki	ADV	NEG	_	28	advmod	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	28	punct	_	_
+31	,	,	PUNCT	,	_	30	punct	_	_
 32	fyrirgefið	fyrirgefa	VERB	VBI	Mood=Imp|VerbForm=Inf	28	conj	_	OriginalHead=0|SpaceAfter=No
 33	.	.	PUNCT	.	_	28	punct	_	_
 
@@ -85,7 +85,7 @@
 6	ráðherra	ráðherra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	iobj	_	_
 7	að	að	PART	TO	_	8	mark	_	_
 8	útskýra	útskýra	VERB	VB	VerbForm=Inf	4	xcomp	_	_
-9	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	8	obj	_	_
+9	þetta	þessi	DET	D-A	Case=Acc	8	obj	_	_
 10	betur	vel	ADV	ADVR	Degree=Cmp	8	advmod	_	_
 11	fyrir	fyrir	ADP	P	_	12	case	_	_
 12	mér	ég	PRON	PRO-D	Case=Dat	8	obl	_	_
@@ -114,7 +114,7 @@
 8	hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
 9	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 10	ekki	ekki	ADV	NEG	_	7	advmod	_	_
-11	þá	sá	DET	D-A	Case=Acc|PronType=Art	12	det	_	_
+11	þá	sá	DET	D-A	Case=Acc	12	det	_	_
 12	vinnu	vinna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
 13	sem	sem	SCONJ	C	_	24	mark	_	_
 14	núverandi	núverandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	amod	_	_
@@ -159,13 +159,13 @@
 7	að	að	PART	TO	_	8	mark	_	_
 8	ræða	ræða	VERB	VB	VerbForm=Inf	6	xcomp	_	_
 9	hérna	hérna	ADV	ADV	Degree=Pos	8	advmod	_	_
-10	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	8	obl	_	_
+10	allt	allur	DET	Q-A	Case=Acc	8	obl	_	_
 11	í	í	ADP	P	_	10	case	_	_
-12	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	10	obl	_	_
+12	einu	einn	DET	ONE-D	Case=Dat	10	obl	_	_
 13	atvinnuveganefnd	atvinnuveganefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obj	_	_
 14	Alþingis	alþingi	PROPN	NPR-G	_	13	nmod:poss	_	_
 15	sem	sem	SCONJ	C	_	17	mark	_	_
-16	eitthvert	einhver	DET	Q-A	Case=Acc|Degree=Pos	17	amod	_	_
+16	eitthvert	einhver	DET	Q-A	Case=Acc	17	amod	_	_
 17	ígildi	ígildi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	advcl	_	_
 18	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
 19	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	17	dep	_	SpaceAfter=No

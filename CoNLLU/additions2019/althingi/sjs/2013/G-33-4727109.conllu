@@ -22,8 +22,8 @@
 19	virkilega	virkilega	ADV	ADV	Degree=Pos	17	advmod	_	_
 20	þannig	þannig	ADV	ADV	Degree=Pos	17	advmod	_	_
 21	að	að	SCONJ	C	_	33	mark	_	_
-22	þau	sá	DET	D-N	Case=Nom|PronType=Art	25	det	_	_
-23	mörgu	margur	DET	Q-N	Case=Nom|Degree=Pos	25	amod	_	_
+22	þau	sá	DET	D-N	Case=Nom	25	det	_	_
+23	mörgu	margur	DET	Q-N	Case=Nom	25	amod	_	_
 24	góðu	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	25	amod	_	_
 25	verkefni	verkefni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	33	nsubj	_	_
 26	sem	sem	SCONJ	C	_	27	mark	_	_
@@ -46,7 +46,7 @@
 3	að	að	SCONJ	C	_	7	mark	_	_
 4	það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 5	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	7	cop	_	_
-6	eitthvert	einhver	DET	Q-N	Case=Nom|Degree=Pos	7	amod	_	_
+6	eitthvert	einhver	DET	Q-N	Case=Nom	7	amod	_	_
 7	þroskaleysi	þroskaleysi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	_
 9	eða	eða	CCONJ	CONJ	_	11	cc	_	_
@@ -77,11 +77,11 @@
 5	fyrrverandi	fyrrverandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	5	punct	_	_
 7	núverandi	núverandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
-8	meiri	mikill	DET	QR-N	Case=Nom|Degree=Pos	9	amod	_	_
+8	meiri	mikill	DET	QR-N	Case=Nom	9	amod	_	_
 9	hluti	hlutur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	appos	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	14	punct	_	_
 11	að	að	ADP	P	_	13	case	_	_
-12	einhverju	einhver	DET	Q-D	Case=Dat|Degree=Pos	13	amod	_	_
+12	einhverju	einhver	DET	Q-D	Case=Dat	13	amod	_	_
 13	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
 14	fangi	fangi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 15	síns	sinn	PRON	PRO-G	Case=Gen	17	nmod:poss	_	_
@@ -99,7 +99,7 @@
 27	íþrótt	íþrótt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	_
 28	að	að	PART	TO	_	29	mark	_	_
 29	tala	tala	VERB	VB	VerbForm=Inf	24	xcomp	_	_
-30	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	32	amod	_	_
+30	alla	allur	DET	Q-A	Case=Acc	32	amod	_	_
 31	skapaða	skapaður	ADJ	ADJ-A	Case=Acc|Degree=Pos	32	amod	_	_
 32	hluti	hlutur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	29	obj	_	_
 33	niður	niður	ADP	RP	_	29	compound:prt	_	_
@@ -114,7 +114,7 @@
 42	þar	þar	ADV	ADV	Degree=Pos	46	obl	_	_
 43	á	á	ADP	P	_	42	case	_	_
 44	meðal	meðal	ADP	P	_	42	obl	_	_
-45	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	46	det	_	_
+45	þessa	þessi	DET	D-A	Case=Acc	46	det	_	_
 46	fjárfestingaráætlun	fjárfestingaráætlun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	29	xcomp	_	SpaceAfter=No
 47	,	,	PUNCT	,	_	46	punct	_	_
 48	sem	sem	SCONJ	C	_	50	mark	_	_
@@ -133,7 +133,7 @@
 5	menntun	menntun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	7	punct	_	_
 7	rannsóknir	rannsókn	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	conj	_	_
-8	og	og	CCONJ	CONJ	_	9	cc	_	_
+8	og	og	CCONJ	CONJ	_	5	cc	_	_
 9	þróun	þróun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	conj	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	9	punct	_	_
 11	fjárfestingu	fjárfesting	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
@@ -157,7 +157,7 @@
 29	við	við	ADP	P	_	31	case	_	_
 30	litla	lítill	ADJ	ADJ-A	Case=Acc|Degree=Pos	31	amod	_	_
 31	útflutningssjóði	útflutningssjóður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	28	obl	_	_
-32	margra	margur	DET	Q-G	Case=Gen|Degree=Pos	31	nmod:poss	_	_
+32	margra	margur	DET	Q-G	Case=Gen	31	nmod:poss	_	_
 33	skapandi	skapandi	ADJ	ADJ-G	Case=Gen|Degree=Pos	32	amod	_	_
 34	greina	grein	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	32	conj	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	2	punct	_	_
@@ -168,7 +168,7 @@
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	4	obj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	það	það	PRON	PRO-N	Case=Nom	4	dep	_	_
-4	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	0	root	_	SpaceAfter=No
+4	þessu	þessi	DET	D-D	Case=Dat	0	root	_	SpaceAfter=No
 5	?	?	PUNCT	.	_	4	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4727109,.6
@@ -180,11 +180,11 @@
 4	málefnalega	málefnalega	ADV	ADV	Degree=Pos	3	advmod	_	_
 5	á	á	ADP	P	_	3	xcomp	_	_
 6	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
-7	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	6	nmod:poss	_	_
+7	þessu	þessi	DET	D-D	Case=Dat	6	nmod:poss	_	_
 8	en	en	CCONJ	CONJ	_	10	cc	_	_
 9	samt	samt	ADV	ADV	Degree=Pos	10	advmod	_	_
 10	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-11	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	10	nsubj	_	_
+11	þetta	þessi	DET	D-N	Case=Nom	10	nsubj	_	_
 12	fórnarlamb	fórnarlamb	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	xcomp	_	_
 13	niðurskurðar	niðurskurður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	nmod:poss	_	_
 14	hjá	hjá	ADP	P	_	16	case	_	_
@@ -199,7 +199,7 @@
 2	læðist	læða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	ADP	P	_	4	case	_	_
 4	mér	ég	PRON	PRO-D	Case=Dat	2	obl	_	_
-5	sá	sá	DET	D-N	Case=Nom|PronType=Art	6	det	_	_
+5	sá	sá	DET	D-N	Case=Nom	6	det	_	_
 6	grunur	grunur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	obl	_	_
 7	að	að	SCONJ	C	_	12	mark	_	_
 8	þarna	þarna	ADV	ADV	Degree=Pos	12	advmod	_	_
@@ -208,7 +208,7 @@
 11	á	á	ADP	P	_	12	case	_	_
 12	ferð	ferð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	ccomp	_	_
 13	og	og	CCONJ	CONJ	_	15	cc	_	_
-14	það	sá	DET	D-N	Case=Nom|PronType=Art	15	det	_	_
+14	það	sá	DET	D-N	Case=Nom	15	det	_	_
 15	vandamál	vandamál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	conj	_	_
 16	að	að	SCONJ	C	_	21	mark	_	_
 17	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	21	nsubj	_	_
@@ -246,7 +246,7 @@
 6	stuðningur	stuðningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
 7	við	við	ADP	P	_	8	case	_	_
 8	útflutning	útflutningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
-9	hinna	hinn	DET	D-G	Case=Gen|PronType=Art	11	det	_	_
+9	hinna	hinn	DET	D-G	Case=Gen	11	det	_	_
 10	skapandi	skapandi	ADJ	ADJ-G	Case=Gen|Degree=Pos	11	amod	_	_
 11	greina	grein	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	_
 12	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	14	cop	_	_
@@ -326,7 +326,7 @@
 18	tvímælalaust	tvímælalaust	ADV	ADV	Degree=Pos	14	advmod	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	18	punct	_	_
 20	Að	að	ADP	P	_	22	case	_	_
-21	einhverju	einhver	DET	Q-D	Case=Dat|Degree=Pos	22	amod	_	_
+21	einhverju	einhver	DET	Q-D	Case=Dat	22	amod	_	_
 22	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	_
 23	kannski	kannski	ADV	ADV	Degree=Pos	22	advmod	_	_
 24	byggingarframkvæmdir	byggingarframkvæmd	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	conj	_	SpaceAfter=No
@@ -381,7 +381,7 @@
 73	hluta	hluti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	71	obj	_	_
 74	byggingarkostnaðarins	byggingarkostnaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	73	nmod:poss	_	_
 75	fyrstu	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	79	amod	_	_
-76	eitt	einn	NUM	ONE-A	Case=Acc|Number=Sing	79	nummod	_	SpaceAfter=No
+76	eitt	einn	NUM	ONE-A	Case=Acc	79	nummod	_	SpaceAfter=No
 77	,	,	PUNCT	,	_	78	punct	_	_
 78	tvö	tveir	NUM	NUM-A	Case=Acc	76	conj	_	_
 79	árin	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	71	obl	_	SpaceAfter=No

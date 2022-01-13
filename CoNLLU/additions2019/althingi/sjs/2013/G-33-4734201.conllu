@@ -19,7 +19,7 @@
 16	,	,	PUNCT	,	_	15	punct	_	_
 17	út	út	ADP	RP	_	25	compound:prt	_	_
 18	í	í	ADP	P	_	25	case	_	_
-19	eitt	einn	DET	ONE-A	Case=Acc|Number=Sing	25	det	_	_
+19	eitt	einn	DET	ONE-A	Case=Acc	25	det	_	_
 20	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	21	aux	_	_
 21	segja	segja	VERB	VB	VerbForm=Inf	25	amod	_	_
 22	lagatæknilegt	lagatæknilegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	21	dep	_	_
@@ -29,17 +29,17 @@
 26	sem	sem	SCONJ	C	_	27	mark	_	_
 27	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	25	acl:relcl	_	_
 28	atriði	atriði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	27	obj	_	_
-29	þessa	þessi	DET	D-G	Case=Gen|PronType=Art	30	det	_	_
+29	þessa	þessi	DET	D-G	Case=Gen	30	det	_	_
 30	máls	mál	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	28	nmod:poss	_	_
 31	og	og	CCONJ	CONJ	_	35	cc	_	_
 32	það	það	PRON	PRO-N	Case=Nom	35	nsubj	_	_
 33	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
-34	sú	sá	DET	D-N	Case=Nom|PronType=Art	35	det	_	_
+34	sú	sá	DET	D-N	Case=Nom	35	det	_	_
 35	staðreynd	staðreynd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	OriginalHead=0
 36	að	að	SCONJ	C	_	41	mark	_	_
 37	inn	inn	ADP	RP	_	40	compound:prt	_	_
 38	í	í	ADP	P	_	40	case	_	_
-39	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	40	det	_	_
+39	þetta	þessi	DET	D-A	Case=Acc	40	det	_	_
 40	frumvarp	frumvarp	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	41	obl	_	_
 41	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	35	ccomp	_	_
 42	nú	nú	ADV	ADV	Degree=Pos	41	advmod	_	_
@@ -47,7 +47,7 @@
 44	bætast	bæta	VERB	VB	VerbForm=Inf	41	xcomp	_	_
 45	samkvæmt	samkvæmt	ADP	P	_	46	case	_	_
 46	breytingartillögum	breytingartillaga	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	41	obl	_	_
-47	meiri	mikill	DET	QR-G	Case=Gen|Degree=Pos	46	nmod:poss	_	_
+47	meiri	mikill	DET	QR-G	Case=Gen	46	nmod:poss	_	_
 48	hlutans	hluti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	47	conj	_	_
 49	þrír	þrír	NUM	NUM-N	Case=Nom	51	nummod	_	_
 50	nýir	nýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	51	amod	_	_
@@ -83,23 +83,23 @@
 8	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	10	aux	_	_
 9	oft	oft	ADV	ADV	Degree=Pos	10	advmod	_	_
 10	lagt	leggja	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
-11	margt	margur	DET	Q-A	Case=Acc|Degree=Pos	12	amod	_	_
+11	margt	margur	DET	Q-A	Case=Acc	12	amod	_	_
 12	gott	gott	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
 13	til	til	ADP	P	_	14	case	_	_
 14	mála	mál	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	obl	_	_
 15	í	í	ADP	P	_	16	case	_	_
-16	sambandi	samband	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	27	obl	_	_
+16	sambandi	samband	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
 17	við	við	ADP	P	_	19	case	_	_
 18	bætt	bættur	ADJ	ADJ-A	Case=Acc|Degree=Pos	19	amod	_	_
 19	vinnubrögð	vinnubrögð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obl	_	_
 20	hér	hér	ADV	ADV	Degree=Pos	22	advmod	_	_
 21	á	á	ADP	P	_	22	case	_	_
 22	þingi	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	27	punct	_	_
+23	,	,	PUNCT	,	_	22	punct	_	_
 24	og	og	CCONJ	CONJ	_	27	cc	_	_
 25	ekki	ekki	ADV	NEG	_	26	advmod	_	_
 26	síst	varla	ADV	ADVS	Degree=Sup	27	advmod	_	_
-27	varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	10	obl	_	_
+27	varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	16	conj	_	_
 28	sjálfstæði	sjálfstæði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	35	obl	_	_
 29	Alþingis	alþingi	PROPN	NPR-G	_	28	nmod:poss	_	_
 30	og	og	CCONJ	CONJ	_	31	cc	_	_
@@ -109,7 +109,7 @@
 34	og	og	CCONJ	CONJ	_	35	cc	_	_
 35	annað	annar	PRON	OTHER-A	Case=Acc	27	obj	_	_
 36	í	í	ADP	P	_	38	case	_	_
-37	þeim	sá	DET	D-D	Case=Dat|PronType=Art	38	det	_	_
+37	þeim	sá	DET	D-D	Case=Dat	38	det	_	_
 38	dúr	dúr	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	35	obl	_	SpaceAfter=No
 39	,	,	PUNCT	,	_	38	punct	_	_
 40	læt	láta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -122,11 +122,11 @@
 47	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	48	amod	_	_
 48	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	52	nsubj	_	_
 49	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	52	cop	_	_
-50	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	52	obl	_	_
+50	ekkert	enginn	DET	Q-A	Case=Acc	52	obl	_	_
 51	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	52	amod	_	_
 52	ánægður	ánægður	ADJ	ADJ-N	Case=Nom|Degree=Pos	43	ccomp	_	_
 53	með	með	ADP	P	_	55	case	_	_
-54	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	55	det	_	_
+54	þetta	þessi	DET	D-A	Case=Acc	55	det	_	_
 55	ráðslag	ráðslag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	52	obl	_	SpaceAfter=No
 56	.	.	PUNCT	.	_	40	punct	_	_
 
@@ -155,7 +155,7 @@
 20	ráðuneyti	ráðuneyti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	conj	_	_
 21	að	að	PART	TO	_	12	ccomp	_	_
 22	sakast	saka	VERB	VB	VerbForm=Inf	21	amod	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	6	punct	_	_
+23	,	,	PUNCT	,	_	21	punct	_	_
 24	frumvarpið	frumvarp	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
 25	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
 26	auðvitað	auðvitað	ADV	ADV	Degree=Pos	27	advmod	_	_
@@ -183,7 +183,7 @@
 8	tilteknum	tiltekinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
 9	lögum	lag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
 10	sem	sem	SCONJ	C	_	14	mark	_	_
-11	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	14	obl	_	_
+11	alls	allur	DET	Q-G	Case=Gen	14	obl	_	_
 12	ekki	ekki	ADV	NEG	_	14	advmod	_	_
 13	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
 14	opnaðar	opna	VERB	VAN	Tense=Past|VerbForm=Part	6	acl:relcl	_	_
@@ -206,7 +206,7 @@
 4	eins	eins	ADV	ADVR	Degree=Cmp	3	advmod	_	_
 5	gerst	gera	VERB	DON	Tense=Past|VerbForm=Part	0	root	_	_
 6	áður	áður	ADV	ADVR	Degree=Cmp	5	advmod	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	5	punct	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
 8	það	það	PRON	PRO-A	Case=Acc	9	obj	_	_
 9	viðurkenni	viðurkenna	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
 10	ég	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
@@ -215,7 +215,7 @@
 13	en	en	CCONJ	CONJ	_	18	cc	_	_
 14	aldrei	aldrei	ADV	ADV	Degree=Pos	18	advmod	_	_
 15	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	18	aux	_	_
-16	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	18	nsubj	_	_
+16	þetta	þessi	DET	D-N	Case=Nom	18	nsubj	_	_
 17	samt	samt	ADV	ADV	Degree=Pos	18	advmod	_	_
 18	þótt	þótt	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
 19	góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
@@ -228,12 +228,12 @@
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	leiðir	leiða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	til	til	ADP	P	_	5	case	_	_
-4	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	5	det	_	_
+4	þeirra	sá	DET	D-G	Case=Gen	5	det	_	_
 5	vandkvæða	vandkvæði	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	obl	_	_
 6	meðal	meðal	ADP	P	_	7	case	_	_
 7	annars	annar	PRON	OTHER-G	Case=Gen	2	obl	_	_
 8	að	að	SCONJ	C	_	15	mark	_	_
-9	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	10	det	_	_
+9	þessi	þessi	DET	D-N	Case=Nom	10	det	_	_
 10	efnisatriði	efnisatriði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	15	nsubj	_	_
 11	frumvarpsins	frumvarp	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	nmod:poss	_	_
 12	eða	eða	CCONJ	CONJ	_	14	cc	_	_
@@ -265,7 +265,7 @@
 6	að	að	SCONJ	C	_	8	mark	_	_
 7	þingnefndin	þingnefnd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 8	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	ccomp	_	_
-9	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	8	obj	_	_
+9	þetta	þessi	DET	D-A	Case=Acc	8	obj	_	_
 10	ekki	ekki	ADV	NEG	_	8	advmod	_	_
 11	í	í	ADP	P	_	13	case	_	_
 12	sínum	sinn	PRON	PRO-D	Case=Dat	13	nmod:poss	_	_
@@ -298,7 +298,7 @@
 6	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	7	amod	_	_
 7	þingmanns	þingmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
 8	í	í	ADP	P	_	10	case	_	_
-9	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	10	det	_	_
+9	þessum	þessi	DET	D-D	Case=Dat	10	det	_	_
 10	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
 11	án	án	ADP	P	_	12	case	_	_
 12	þess	það	PRON	PRO-G	Case=Gen	4	obl	_	_
@@ -306,7 +306,7 @@
 14	ætla	ætla	VERB	VB	VerbForm=Inf	12	xcomp	_	_
 15	að	að	PART	TO	_	16	mark	_	_
 16	gera	gera	VERB	DO	VerbForm=Inf	14	xcomp	_	_
-17	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	16	obj	_	_
+17	þetta	þessi	DET	D-A	Case=Acc	16	obj	_	_
 18	að	að	ADP	P	_	20	case	_	_
 19	stóru	stór	ADJ	ADJ-D	Case=Dat|Degree=Pos	20	amod	_	_
 20	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
@@ -322,7 +322,7 @@
 30	til	til	ADP	P	_	32	case	_	_
 31	að	að	PART	TO	_	32	mark	_	_
 32	taka	taka	VERB	VB	VerbForm=Inf	26	obl	_	_
-33	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	34	det	_	_
+33	þetta	þessi	DET	D-A	Case=Acc	34	det	_	_
 34	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	32	obj	_	_
 35	upp	upp	ADP	RP	_	32	compound:prt	_	_
 36	og	og	CCONJ	CONJ	_	37	cc	_	_
@@ -342,7 +342,7 @@
 50	miðað	miða	VERB	VAN	Tense=Past|VerbForm=Part	47	acl	_	_
 51	við	við	ADP	P	_	52	case	_	_
 52	breytingartillögur	breytingartillaga	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	50	obl	_	_
-53	meiri	mikill	DET	QR-G	Case=Gen|Degree=Pos	52	nmod:poss	_	_
+53	meiri	mikill	DET	QR-G	Case=Gen	52	nmod:poss	_	_
 54	hlutans	hluti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	53	conj	_	SpaceAfter=No
 55	.	.	PUNCT	.	_	4	punct	_	_
 

@@ -4,11 +4,11 @@
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
-4	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
+4	Þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
 5	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
 6	dæmi	dæmi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 7	um	um	ADP	P	_	10	case	_	_
-8	hina	hinn	DET	D-A	Case=Acc|PronType=Art	10	det	_	_
+8	hina	hinn	DET	D-A	Case=Acc	10	det	_	_
 9	frábæru	frábær	ADJ	ADJ-A	Case=Acc|Degree=Pos	10	amod	_	_
 10	umræðuhefð	umræðuhefð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 11	hér	hér	ADV	ADV	Degree=Pos	13	advmod	_	_
@@ -29,7 +29,7 @@
 8	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	9	aux	_	_
 9	hlustað	hlusta	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	_
 10	á	á	ADP	P	_	11	case	_	_
-11	það	sá	DET	D-A	Case=Acc|PronType=Art	9	obl	_	_
+11	það	sá	DET	D-A	Case=Acc	9	obl	_	_
 12	sem	sem	SCONJ	C	_	16	mark	_	_
 13	ég	ég	PRON	PRO-N	Case=Nom	16	nsubj	_	_
 14	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	16	cop	_	_
@@ -50,7 +50,7 @@
 8	lögð	leggja	VERB	VAN	Tense=Past|VerbForm=Part	6	ccomp	_	_
 9	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	8	aux	_	_
 10	fram	fram	ADP	RP	_	8	compound:prt	_	_
-11	sú	sá	DET	D-N	Case=Nom|PronType=Art	12	det	_	_
+11	sú	sá	DET	D-N	Case=Nom	12	det	_	_
 12	áfengisvarnastefna	áfengisvarnastefna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 13	sem	sem	SCONJ	C	_	15	mark	_	_
 14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
@@ -82,22 +82,22 @@
 # X_ID = ID_missing_5
 # text = Mín eina ósk var í rauninni í þá veru að menn biðu með þetta mál uns þessi áfengisvarnastefna lægi fyrir þannig að hægt væri að taka heildstætt á málum.
 1	Mín	minn	PRON	PRO-N	Case=Nom	3	nmod:poss	_	_
-2	eina	einn	DET	ONE-N	Case=Nom|Number=Sing	3	det	_	_
+2	eina	einn	DET	ONE-N	Case=Nom	3	det	_	_
 3	ósk	ósk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
 4	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
 5	í	í	ADP	P	_	6	case	_	_
 6	rauninni	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
 7	í	í	ADP	P	_	9	case	_	_
-8	þá	sá	DET	D-A	Case=Acc|PronType=Art	9	det	_	_
+8	þá	sá	DET	D-A	Case=Acc	9	det	_	_
 9	veru	vera	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 10	að	að	SCONJ	C	_	12	mark	_	_
 11	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	nsubj	_	_
 12	biðu	bíða	VERB	VBDS	Mood=Sub|Tense=Past	9	ccomp	_	_
 13	með	með	ADP	P	_	15	case	_	_
-14	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	15	det	_	_
+14	þetta	þessi	DET	D-A	Case=Acc	15	det	_	_
 15	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
 16	uns	uns	ADP	P	_	19	case	_	_
-17	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	18	det	_	_
+17	þessi	þessi	DET	D-N	Case=Nom	18	det	_	_
 18	áfengisvarnastefna	áfengisvarnastefna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
 19	lægi	liggja	VERB	VBDS	Mood=Sub|Tense=Past	12	obl	_	_
 20	fyrir	fyrir	ADP	RP	_	19	compound:prt	_	_
@@ -129,7 +129,7 @@
 3	að	að	PART	TO	_	7	mark	_	_
 4	vera	vera	AUX	BE	VerbForm=Inf	7	cop	_	_
 5	í	í	ADP	P	_	7	case	_	_
-6	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	7	det	_	_
+6	þessum	þessi	DET	D-D	Case=Dat	7	det	_	_
 7	bútasaumi	bútasaumur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	xcomp	_	_
 8	eins	_	ADV	ADVR	Degree=Cmp	7	advmod	_	_
 9	og	_	ADP	P	_	11	case	_	_
@@ -154,7 +154,7 @@
 # text = Talandi um það sem við gerðum í ríkisstjórn.
 1	Talandi	tala	VERB	VAG	Tense=Pres|VerbForm=Part	0	root	_	_
 2	um	um	ADP	P	_	3	case	_	_
-3	það	sá	DET	D-A	Case=Acc|PronType=Art	1	obl	_	_
+3	það	sá	DET	D-A	Case=Acc	1	obl	_	_
 4	sem	sem	SCONJ	C	_	6	mark	_	_
 5	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 6	gerðum	gera	VERB	DODI	Mood=Ind|Tense=Past	3	acl:relcl	_	_
@@ -167,14 +167,14 @@
 # text = Það er margt vont en eitt og annað heppnaðist, meira annars forvarnir í grunnskólum sem var markvisst tekið á.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	margt	margur	DET	Q-N	Case=Nom|Degree=Pos	4	obl	_	_
+3	margt	margur	DET	Q-N	Case=Nom	4	obl	_	_
 4	vont	vondur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 5	en	en	CCONJ	CONJ	_	9	cc	_	_
-6	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	8	det	_	_
+6	eitt	einn	DET	ONE-N	Case=Nom	8	det	_	_
 7	og	og	CCONJ	CONJ	_	8	cc	_	_
 8	annað	annar	PRON	OTHER-N	Case=Nom	9	nsubj	_	_
 9	heppnaðist	heppnast	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0|SpaceAfter=No
-10	,	,	PUNCT	,	_	4	punct	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
 11	meira	meðal	ADP	P	_	12	case	_	_
 12	annars	annar	ADV	OTHER-G	Case=Gen	13	advmod	_	_
 13	forvarnir	forvörn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	obl	_	_
@@ -263,10 +263,10 @@
 5	að	að	PART	TO	_	6	mark	_	_
 6	halda	halda	VERB	VB	VerbForm=Inf	3	xcomp	_	_
 7	áfram	áfram	ADV	ADV	Degree=Pos	6	advmod	_	_
-8	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
+8	þessum	þessi	DET	D-D	Case=Dat	9	det	_	_
 9	forvörnum	forvörn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
 10	og	og	CCONJ	CONJ	_	12	cc	_	_
-11	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	12	det	_	_
+11	þessum	þessi	DET	D-D	Case=Dat	12	det	_	_
 12	upplýsingum	upplýsing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obj	_	_
 13	alveg	alveg	ADV	ADV	Degree=Pos	16	advmod	_	_
 14	upp	upp	ADP	RP	_	16	compound:prt	_	_
@@ -282,7 +282,7 @@
 3	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	að	að	PART	TO	_	5	mark	_	_
 5	vinna	vinna	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-6	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	5	obj	_	_
+6	þetta	þessi	DET	D-A	Case=Acc	5	obj	_	_
 7	og	og	CCONJ	CONJ	_	8	cc	_	_
 8	vinna	vinna	VERB	VB	VerbForm=Inf	5	xcomp	_	_
 9	betur	vel	ADV	ADVR	Degree=Cmp	8	advmod	_	_
@@ -296,7 +296,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	alveg	alveg	ADV	ADV	Degree=Pos	4	advmod	_	_
 4	sama	samur	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	xcomp	_	_
-5	hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	6	det	_	_
+5	hvaða	hvaða	DET	WD-A	Case=Acc	6	det	_	_
 6	málalengingar	málalenging	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obj	_	_
 7	og	og	CCONJ	CONJ	_	9	cc	_	_
 8	hugsanlegan	hugsanlegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
@@ -311,12 +311,12 @@
 17	upp	upp	ADP	RP	_	19	compound:prt	_	_
 18	í	í	ADP	P	_	19	case	_	_
 19	ræðustól	ræðustóll	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	1	punct	_	_
+20	,	,	PUNCT	,	_	14	punct	_	_
 21	við	ég	PRON	PRO-N	Case=Nom	23	nsubj	_	_
 22	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
 23	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	conj	_	OriginalHead=0
 24	um	um	ADP	P	_	25	case	_	_
-25	eitt	einn	DET	ONE-A	Case=Acc|Number=Sing	23	amod	_	SpaceAfter=No
+25	eitt	einn	DET	ONE-A	Case=Acc	23	amod	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	1	punct	_	_
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4626061,.17
@@ -326,7 +326,7 @@
 2	að	að	PART	TO	_	3	mark	_	_
 3	hugsa	hugsa	VERB	VB	VerbForm=Inf	1	xcomp	_	_
 4	um	um	ADP	P	_	5	case	_	_
-5	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	3	obl	_	_
+5	eitthvað	einhver	DET	Q-A	Case=Acc	3	obl	_	_
 6	sem	sem	SCONJ	C	_	7	mark	_	_
 7	sameinar	sameina	VERB	VBPI	Mood=Ind|Tense=Pres	5	acl:relcl	_	_
 8	okkur	ég	PRON	PRO-A	Case=Acc	7	obj	_	SpaceAfter=No
@@ -335,7 +335,7 @@
 # sent_id = ALTHINGI_TKG_2011_G-33-4626061,.18
 # X_ID = ID_missing_20
 # text = Það sem sameinar okkur hv. þm. Mörð Árnason er að við viljum bæði vinna gegn óheilbrigðri áfengisneyslu í landinu.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+1	Það	sá	DET	D-N	Case=Nom	0	root	_	_
 2	sem	sem	SCONJ	C	_	3	mark	_	_
 3	sameinar	sameina	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
 4	okkur	ég	PRON	PRO-A	Case=Acc	6	nmod	_	_
@@ -347,7 +347,7 @@
 10	að	að	SCONJ	C	_	14	mark	_	_
 11	við	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
 12	viljum	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	14	aux	_	_
-13	bæði	báðir	DET	Q-N	Case=Nom|Degree=Pos	14	amod	_	_
+13	bæði	báðir	DET	Q-N	Case=Nom	14	amod	_	_
 14	vinna	vinna	VERB	VB	VerbForm=Inf	1	ccomp	_	_
 15	gegn	gegn	ADP	P	_	17	case	_	_
 16	óheilbrigðri	óheilbrigður	ADJ	ADJ-D	Case=Dat|Degree=Pos	17	amod	_	_
@@ -371,7 +371,7 @@
 # text = Á viðleitni alls þingheims til að vinna í slíka veru hefur ekki reynt af því menn hafa einfaldlega ekki haft viljann til þess að vinna saman.
 1	Á	á	ADP	P	_	2	case	_	_
 2	viðleitni	viðleitni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
-3	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	2	nmod:poss	_	_
+3	alls	allur	DET	Q-G	Case=Gen	2	nmod:poss	_	_
 4	þingheims	þingheimur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	conj	_	_
 5	til	til	ADP	P	_	7	case	_	_
 6	að	að	PART	TO	_	7	mark	_	_

@@ -1,28 +1,28 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4717034,.1
 # X_IDs = ID_missing_1 ; ID_missing_2
 # text = Herra forseti. Hv. þingmaður er afar varkár, finnst mér, í hugleiðingum sínum í þessum efnum og vill ekki ganga svo langt að gefa sér að beinlínis andstaða við varúðarregluna og aðrar slíkar grundvallarreglur sé hérna á ferðinni, hugsanlega frekar að einhverjir telji þetta leiðina í mark hjá þeim með einhverjar framkvæmdir.
-1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	vocative	_	_
+1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 4	Hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
-5	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
-6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+5	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
 7	afar	afar	ADV	ADV	Degree=Pos	8	amod	_	_
-8	varkár	varkár	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
+8	varkár	varkár	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	8	punct	_	_
-10	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	8	parataxis	_	_
-11	mér	ég	PRON	PRO-D	Case=Dat	10	nsubj	_	SpaceAfter=No
+10	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+11	mér	ég	PRON	PRO-D	Case=Dat	10	obl	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	11	punct	_	_
 13	í	í	ADP	P	_	14	case	_	_
-14	hugleiðingum	hugleiðing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
+14	hugleiðingum	hugleiðing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
 15	sínum	sinn	PRON	PRO-D	Case=Dat	14	nmod:poss	_	_
 16	í	í	ADP	P	_	18	case	_	_
-17	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	18	det	_	_
-18	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
+17	þessum	þessi	DET	D-D	Case=Dat	18	det	_	_
+18	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
 19	og	og	CCONJ	CONJ	_	22	cc	_	_
 20	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	22	aux	_	_
 21	ekki	ekki	ADV	NEG	_	22	advmod	_	_
-22	ganga	ganga	VERB	VB	VerbForm=Inf	8	conj	_	OriginalHead=0
+22	ganga	ganga	VERB	VB	VerbForm=Inf	10	conj	_	OriginalHead=0
 23	svo	svo	ADV	ADV	Degree=Pos	24	advmod	_	_
 24	langt	langur	ADJ	ADJ-A	Case=Acc|Degree=Pos	22	obl	_	_
 25	að	að	PART	TO	_	26	mark	_	_
@@ -45,18 +45,18 @@
 42	hugsanlega	hugsanlega	ADV	ADV	Degree=Pos	22	conj	_	_
 43	frekar	frekar	ADV	ADVR	Degree=Cmp	42	advmod	_	_
 44	að	að	SCONJ	C	_	46	mark	_	_
-45	einhverjir	einhver	DET	Q-N	Case=Nom|Degree=Pos	46	nsubj	_	_
+45	einhverjir	einhver	DET	Q-N	Case=Nom	46	nsubj	_	_
 46	telji	telja	VERB	VBPS	Mood=Sub|Tense=Pres	42	ccomp	_	_
-47	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	48	nsubj	_	_
+47	þetta	þessi	DET	D-A	Case=Acc	48	nsubj	_	_
 48	leiðina	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	46	ccomp	_	_
 49	í	í	ADP	P	_	50	case	_	_
 50	mark	mark	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	48	obl	_	_
 51	hjá	hjá	ADP	P	_	52	case	_	_
 52	þeim	hann	PRON	PRO-D	Case=Dat	48	obl	_	_
 53	með	með	ADP	P	_	55	case	_	_
-54	einhverjar	einhver	DET	Q-A	Case=Acc|Degree=Pos	55	amod	_	_
+54	einhverjar	einhver	DET	Q-A	Case=Acc	55	amod	_	_
 55	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	48	obl	_	SpaceAfter=No
-56	.	.	PUNCT	.	_	8	punct	_	_
+56	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4717034,.2
 # X_ID = ID_missing_3
@@ -104,7 +104,7 @@
 41	bara	bara	ADV	FP	Degree=Pos	40	advmod	_	_
 42	áfram	áfram	ADV	ADV	Degree=Pos	40	advmod	_	_
 43	með	með	ADP	P	_	44	case	_	_
-44	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	40	obl	_	_
+44	eitthvað	einhver	DET	Q-A	Case=Acc	40	obl	_	_
 45	slíkt	slíkur	PRON	SUCH-A	Case=Acc	44	amod	_	SpaceAfter=No
 46	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -118,7 +118,7 @@
 5	senda	senda	VERB	VB	VerbForm=Inf	0	root	_	_
 6	Landsvirkjun	landsvirkjun	PROPN	NPR-D	_	5	iobj	_	_
 7	tóninn	tónn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
-8	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	9	det	_	_
+8	þessa	þessi	DET	D-A	Case=Acc	9	det	_	_
 9	dagana	dagur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
 10	eins	_	ADV	ADVR	Degree=Cmp	5	advmod	_	_
 11	og	_	ADP	P	_	13	case	_	_
@@ -131,7 +131,7 @@
 # text = Mér finnst þetta umhverfi ískyggilegt, ég verð að segja alveg eins og er.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	det	_	_
+3	þetta	þessi	DET	D-N	Case=Nom	4	det	_	_
 4	umhverfi	umhverfi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 5	ískyggilegt	ískyggilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	5	punct	_	_
@@ -161,26 +161,26 @@
 # text = Ég er ekkert endilega viss um að við séum einu sinni að fara bara einn og hálfan áratug aftur í tímann, mér finnst glitta í viðhorf sem eru jafnvel enn eldri þegar stóriðjubrjálæðið var enn blindara.
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-3	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	5	obl	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	5	obl	_	_
 4	endilega	endilega	ADV	ADV	Degree=Pos	5	advmod	_	_
 5	viss	viss	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	um	um	ADP	P	_	13	case	_	_
 7	að	að	SCONJ	C	_	13	mark	_	_
 8	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
 9	séum	vera	AUX	BEPS	Mood=Sub|Tense=Pres	13	cop	_	_
-10	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	11	det	_	_
+10	einu	einn	DET	ONE-D	Case=Dat	11	det	_	_
 11	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
 12	að	að	PART	TO	_	13	mark	_	_
 13	fara	fara	VERB	VB	VerbForm=Inf	5	amod	_	_
 14	bara	bara	ADV	FP	Degree=Pos	13	advmod	_	_
-15	einn	einn	NUM	ONE-A	Case=Acc|Number=Sing	18	nummod	_	_
+15	einn	einn	NUM	ONE-A	Case=Acc	18	nummod	_	_
 16	og	og	CCONJ	CONJ	_	17	cc	_	_
 17	hálfan	hálfur	ADJ	ADJ-A	Case=Acc|Degree=Pos	15	conj	_	_
 18	áratug	áratugur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
 19	aftur	aftur	ADV	ADV	Degree=Pos	18	advmod	_	_
 20	í	í	ADP	P	_	18	case	_	_
 21	tímann	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	5	punct	_	_
+22	,	,	PUNCT	,	_	18	punct	_	_
 23	mér	ég	PRON	PRO-D	Case=Dat	24	nsubj	_	_
 24	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
 25	glitta	glitta	VERB	VB	VerbForm=Inf	24	xcomp	_	_

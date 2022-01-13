@@ -8,7 +8,7 @@
 5	líst	líta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 6	vel	vel	ADV	ADV	Degree=Pos	5	advmod	_	_
 7	á	á	ADP	P	_	8	case	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	5	obl	_	_
+8	þetta	þessi	DET	D-A	Case=Acc	5	obl	_	_
 9	almennt	almennt	ADV	ADV	Degree=Pos	5	advmod	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -20,9 +20,9 @@
 3	reyndar	reyndar	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 5	alveg	alveg	ADV	ADV	Degree=Pos	2	advmod	_	_
-6	hvers	hver	DET	Q-G	Case=Gen|Degree=Pos	9	obl	_	_
+6	hvers	hver	DET	Q-G	Case=Gen	9	obl	_	_
 7	vegna	vegna	ADP	P	_	6	case	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	9	nsubj	_	_
+8	þetta	þessi	DET	D-A	Case=Acc	9	nsubj	_	_
 9	ættu	eiga	VERB	VBDS	Mood=Sub|Tense=Past	2	ccomp	_	_
 10	að	að	PART	TO	_	13	mark	_	_
 11	vera	vera	AUX	BE	VerbForm=Inf	13	cop	_	_
@@ -30,7 +30,7 @@
 13	stofnanir	stofnun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	xcomp	_	_
 14	en	en	CCONJ	CONJ	_	15	cc	_	_
 15	þykir	þykja	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-16	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	15	xcomp	_	_
+16	þetta	þessi	DET	D-N	Case=Nom	15	xcomp	_	_
 17	almennt	almennt	ADV	ADV	Degree=Pos	16	advmod	_	_
 18	til	til	ADP	P	_	19	case	_	_
 19	bóta	bót	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	16	obl	_	SpaceAfter=No
@@ -60,7 +60,7 @@
 4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
 5	taka	taka	VERB	VB	VerbForm=Inf	2	xcomp	_	_
 6	við	við	ADP	P	_	8	case	_	_
-7	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	8	amod	_	_
+7	öllum	allur	DET	Q-D	Case=Dat	8	amod	_	_
 8	réttindum	réttindi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
 9	eða	eða	CCONJ	CONJ	_	10	cc	_	_
 10	störfum	starf	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	conj	_	_
@@ -104,9 +104,9 @@
 # text = Það er ein af þeim greinum sem eru felldar út með frumvarpinu.
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	ein	einn	DET	ONE-N	Case=Nom|Number=Sing	0	root	_	_
+3	ein	einn	DET	ONE-N	Case=Nom	0	root	_	_
 4	af	af	ADP	P	_	6	case	_	_
-5	þeim	sá	DET	D-D	Case=Dat|PronType=Art	6	det	_	_
+5	þeim	sá	DET	D-D	Case=Dat	6	det	_	_
 6	greinum	grein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
 7	sem	sem	SCONJ	C	_	9	mark	_	_
 8	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
@@ -129,7 +129,7 @@
 8	að	að	SCONJ	C	_	10	mark	_	_
 9	Neytendastofa	neytendastofa	PROPN	NPR-N	_	10	nsubj	_	_
 10	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	7	ccomp	_	_
-11	einhverjar	einhver	DET	Q-A	Case=Acc|Degree=Pos	13	amod	_	_
+11	einhverjar	einhver	DET	Q-A	Case=Acc	13	amod	_	_
 12	slíkar	slíkur	PRON	SUCH-A	Case=Acc	13	det	_	_
 13	heimildir	heimild	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
@@ -146,7 +146,7 @@
 7	Neytendastofa	neytendastofa	PROPN	NPR-N	_	12	nsubj	_	_
 8	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	12	aux	_	_
 9	með	með	ADP	P	_	11	case	_	_
-10	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	11	det	_	_
+10	þessum	þessi	DET	D-D	Case=Dat	11	det	_	_
 11	breytingum	breyting	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
 12	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
 13	við	við	ADP	P	_	14	case	_	_
@@ -201,13 +201,13 @@
 5	fyrir	fyrir	ADP	P	_	6	case	_	_
 6	mér	ég	PRON	PRO-D	Case=Dat	4	obl	_	_
 7	hvort	hvort	SCONJ	WQ	_	16	mark	_	_
-8	einhver	einhver	DET	Q-N	Case=Nom|Degree=Pos	9	amod	_	_
+8	einhver	einhver	DET	Q-N	Case=Nom	9	amod	_	_
 9	prósess	prósess	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
 10	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	16	cop	_	_
 11	annaðhvort	annaðhvort	PRON	WPRO	_	16	amod	_	_
 12	innbyggður	innbyggja	VERB	VAN	Tense=Past|VerbForm=Part	16	amod	_	_
 13	í	í	ADP	P	_	14	case	_	_
-14	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	12	obl	_	_
+14	þetta	þessi	DET	D-A	Case=Acc	12	obl	_	_
 15	eða	eða	CCONJ	CONJ	_	16	cc	_	_
 16	ætlaður	ætla	VERB	VAN	Tense=Past|VerbForm=Part	4	ccomp	_	_
 17	til	til	ADP	P	_	19	case	_	_
@@ -288,7 +288,7 @@
 6	hæstv.	hæstvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	7	amod	_	_
 7	ráðherra	ráðherra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
 8	við	við	ADP	P	_	10	case	_	_
-9	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	10	det	_	_
+9	þessum	þessi	DET	D-D	Case=Dat	10	det	_	_
 10	spurningum	spurning	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	2	punct	_	_
 

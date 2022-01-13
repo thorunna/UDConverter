@@ -18,7 +18,7 @@
 15	taka	taka	VERB	VB	VerbForm=Inf	6	obl	_	_
 16	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obj	_	_
 17	í	í	ADP	P	_	19	case	_	_
-18	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	19	det	_	_
+18	þessari	þessi	DET	D-D	Case=Dat	19	det	_	_
 19	umræðu	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
 20	því	það	PRON	PRO-D	Case=Dat	6	obl	_	_
 21	að	að	SCONJ	C	_	24	mark	_	_
@@ -34,7 +34,7 @@
 31	umræðu	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	29	obj	_	_
 32	einmitt	einmitt	ADV	ADV	Degree=Pos	35	advmod	_	_
 33	um	um	ADP	P	_	35	case	_	_
-34	þessi	þessi	DET	D-A	Case=Acc|PronType=Art	35	det	_	_
+34	þessi	þessi	DET	D-A	Case=Acc	35	det	_	_
 35	málefni	málefni	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	29	obl	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	6	punct	_	_
 
@@ -43,7 +43,7 @@
 # text = Það eru fá málefni sem standa nær hjörtum okkar pírata en friðhelgi einkalífsins og tjáningarfrelsi, þessi gömlu góðu borgararéttindi sem við tökum sem sjálfsögðum hlut.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	fá	fár	DET	Q-N	Case=Nom|Degree=Pos	4	amod	_	_
+3	fá	fár	DET	Q-N	Case=Nom	4	amod	_	_
 4	málefni	málefni	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 5	sem	sem	SCONJ	C	_	6	mark	_	_
 6	standa	standa	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
@@ -57,7 +57,7 @@
 14	og	og	CCONJ	CONJ	_	15	cc	_	_
 15	tjáningarfrelsi	tjáningarfrelsi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	conj	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	15	punct	_	_
-17	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	20	det	_	_
+17	þessi	þessi	DET	D-N	Case=Nom	20	det	_	_
 18	gömlu	gamall	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
 19	góðu	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
 20	borgararéttindi	borgararéttindi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	appos	_	_
@@ -111,7 +111,7 @@
 1	Hún	hún	PRON	PRO-N	Case=Nom	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	hérna	hérna	ADV	ADV	Degree=Pos	1	advmod	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	1	punct	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
 5	hún	hún	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 7	hérna	hérna	ADV	ADV	Degree=Pos	11	advmod	_	_
@@ -165,7 +165,7 @@
 24	minnar	minn	PRON	PRO-G	Case=Gen	23	nmod:poss	_	SpaceAfter=No
 25	,	,	PUNCT	,	_	24	punct	_	_
 26	hvar	hvar	ADV	WADV	Degree=Pos	28	advmod	_	_
-27	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	28	nsubj	_	_
+27	þetta	þessi	DET	D-N	Case=Nom	28	nsubj	_	_
 28	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	15	ccomp	_	_
 29	að	að	PART	TO	_	30	mark	_	_
 30	enda	enda	VERB	VB	VerbForm=Inf	28	xcomp	_	SpaceAfter=No

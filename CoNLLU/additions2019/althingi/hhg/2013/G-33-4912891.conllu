@@ -2,27 +2,27 @@
 # X_ID = ID_missing_1
 # text = Virðulegi forseti. Það er ekki mikið þarna sem ég er ósammála, reyndar ekki neitt sem ég tók eftir sérstaklega.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
-2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	vocative	_	SpaceAfter=No
+2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
-4	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-6	ekki	ekki	ADV	NEG	_	4	advmod	_	_
-7	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	4	obl	_	_
-8	þarna	þarna	ADV	ADV	Degree=Pos	4	advmod	_	_
+4	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	14	expl	_	_
+5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+6	ekki	ekki	ADV	NEG	_	14	advmod	_	_
+7	mikið	mikill	DET	Q-N	Case=Nom	14	obl	_	_
+8	þarna	þarna	ADV	ADV	Degree=Pos	14	advmod	_	_
 9	sem	sem	SCONJ	C	_	12	mark	_	_
 10	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
 11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
-12	ósammála	ósammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	acl:relcl	_	SpaceAfter=No
+12	ósammála	ósammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	14	acl:relcl	_	SpaceAfter=No
 13	,	,	PUNCT	,	_	12	punct	_	_
-14	reyndar	reyndar	ADV	ADV	Degree=Pos	4	parataxis	_	_
+14	reyndar	reyndar	ADV	ADV	Degree=Pos	0	root	_	_
 15	ekki	ekki	ADV	NEG	_	14	advmod	_	_
-16	neitt	neinn	DET	Q-A	Case=Acc|Degree=Pos	14	nsubj	_	_
+16	neitt	neinn	DET	Q-A	Case=Acc	14	nsubj	_	_
 17	sem	sem	SCONJ	C	_	19	mark	_	_
 18	ég	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
 19	tók	taka	VERB	VBDI	Mood=Ind|Tense=Past	16	acl:relcl	_	_
 20	eftir	eftir	ADP	P	_	19	obl	_	_
 21	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	19	advmod	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	4	punct	_	_
+22	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4912891,.2
 # X_ID = ID_missing_2
@@ -34,7 +34,7 @@
 5	aðeins	aðeins	ADV	ADV	Degree=Pos	6	amod	_	_
 6	vægari	vægur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	3	amod	_	_
 7	á	á	ADP	P	_	8	case	_	_
-8	því	sá	DET	D-D	Case=Dat|PronType=Art	6	amod	_	_
+8	því	sá	DET	D-D	Case=Dat	6	amod	_	_
 9	sem	sem	SCONJ	C	_	10	mark	_	_
 10	virðist	virða	VERB	VBPI	Mood=Ind|Tense=Pres	8	acl:relcl	_	_
 11	sjálfsagt	sjálfsagt	ADV	ADV	Degree=Pos	10	advmod	_	_
@@ -66,7 +66,7 @@
 15	ekki	ekki	ADV	NEG	_	14	advmod	_	_
 16	að	að	ADP	P	_	17	case	_	_
 17	mér	ég	PRON	PRO-D	Case=Dat	14	obl	_	_
-18	eina	einn	DET	ONE-A	Case=Acc|Number=Sing	19	det	_	_
+18	eina	einn	DET	ONE-A	Case=Acc	19	det	_	_
 19	sekúndu	sekúnda	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
 20	að	að	SCONJ	C	_	23	mark	_	_
 21	við	ég	PRON	PRO-N	Case=Nom	23	nsubj	_	_
@@ -88,7 +88,7 @@
 9	trúi	trúa	VERB	VBPI	Mood=Ind|Tense=Pres	6	ccomp	_	_
 10	á	á	ADP	P	_	11	case	_	_
 11	bjartsýni	bjartsýni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	2	punct	_	_
+12	,	,	PUNCT	,	_	9	punct	_	_
 13	ég	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
 14	trúi	trúa	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 15	á	á	ADP	P	_	16	case	_	_
@@ -118,7 +118,7 @@
 18	halda	halda	VERB	VB	VerbForm=Inf	14	xcomp	_	_
 19	áfram	áfram	ADV	ADV	Degree=Pos	18	advmod	_	_
 20	með	með	ADP	P	_	23	case	_	_
-21	þá	sá	DET	D-A	Case=Acc|PronType=Art	23	det	_	_
+21	þá	sá	DET	D-A	Case=Acc	23	det	_	_
 22	litlu	lítill	ADJ	ADJ-A	Case=Acc|Degree=Pos	23	amod	_	_
 23	von	von	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
 24	sem	sem	SCONJ	C	_	26	mark	_	_
@@ -144,7 +144,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 4	þar	þar	ADV	ADV	Degree=Pos	3	advmod	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	3	punct	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
 6	við	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 7	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
 8	bjartsýni	bjartsýni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	SpaceAfter=No
@@ -161,7 +161,7 @@
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	okkur	ég	PRON	PRO-A	Case=Acc	6	nsubj	_	_
 4	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
-5	hvort	hvor	DET	Q-A	Case=Acc|Degree=Pos	6	amod	_	_
+5	hvort	hvor	DET	Q-A	Case=Acc	6	amod	_	_
 6	tveggja	tveir	NUM	NUM-G	Case=Gen	2	xcomp	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -190,7 +190,7 @@
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	eiginlega	eiginlega	ADV	ADV	Degree=Pos	4	advmod	_	_
-4	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	0	root	_	_
+4	ekkert	enginn	DET	Q-N	Case=Nom	0	root	_	_
 5	sem	sem	SCONJ	C	_	8	mark	_	_
 6	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
@@ -203,7 +203,7 @@
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	hlynntur	hlynntur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-4	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	5	det	_	_
+4	þessari	þessi	DET	D-D	Case=Dat	5	det	_	_
 5	tillögu	tillaga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -218,7 +218,7 @@
 6	ríkið	ríki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 7	fari	fara	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
 8	í	í	ADP	P	_	10	case	_	_
-9	þá	sá	DET	D-A	Case=Acc|PronType=Art	10	det	_	_
+9	þá	sá	DET	D-A	Case=Acc	10	det	_	_
 10	vinnu	vinna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
 11	að	að	PART	TO	_	12	mark	_	_
 12	reyna	reyna	VERB	VB	VerbForm=Inf	10	xcomp	_	_
@@ -230,7 +230,7 @@
 18	hvernig	hvernig	ADV	WADV	Degree=Pos	23	advmod	_	_
 19	í	í	ADP	P	_	20	case	_	_
 20	ósköpunum	ósköp	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	_
-21	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	22	det	_	_
+21	þessi	þessi	DET	D-N	Case=Nom	22	det	_	_
 22	króna	króna	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	23	nsubj	_	_
 23	eigi	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	17	ccomp	_	_
 24	að	að	PART	TO	_	25	mark	_	_
@@ -246,9 +246,9 @@
 34	með	með	ADP	P	_	36	case	_	_
 35	klassískum	klassískur	ADJ	ADJ-D	Case=Dat|Degree=Pos	36	amod	_	_
 36	kenningum	kenning	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	31	obl	_	SpaceAfter=No
-37	,	,	PUNCT	,	_	3	punct	_	_
+37	,	,	PUNCT	,	_	31	punct	_	_
 38	svo	svo	ADV	ADV	Degree=Pos	39	advmod	_	_
-39	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	41	nsubj	_	_
+39	mikið	mikill	DET	Q-N	Case=Nom	41	nsubj	_	_
 40	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	41	cop	_	_
 41	víst	vís	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0|SpaceAfter=No
 42	.	.	PUNCT	.	_	3	punct	_	_

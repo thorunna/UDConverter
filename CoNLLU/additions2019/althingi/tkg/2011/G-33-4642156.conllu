@@ -30,12 +30,12 @@
 16	alfarið	alfarið	ADV	ADV	Degree=Pos	18	advmod	_	_
 17	á	á	ADP	P	_	18	case	_	_
 18	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
-19	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	18	nmod:poss	_	_
+19	þessu	þessi	DET	D-D	Case=Dat	18	nmod:poss	_	_
 20	og	og	CCONJ	CONJ	_	27	cc	_	_
 21	ég	ég	PRON	PRO-N	Case=Nom	27	nsubj	_	_
 22	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	27	aux	_	_
 23	á	á	ADP	P	_	25	case	_	_
-24	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	25	amod	_	_
+24	öllum	allur	DET	Q-D	Case=Dat	25	amod	_	_
 25	stigum	stig	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	obl	_	_
 26	málsins	mál	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	25	nmod:poss	_	_
 27	draga	draga	VERB	VB	VerbForm=Inf	14	ccomp	_	_
@@ -54,7 +54,7 @@
 5	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	26	obl	_	_
 6	mér	ég	PRON	PRO-D	Case=Dat	5	iobj	_	_
 7	hvort	hvort	SCONJ	WQ	_	10	mark	_	_
-8	einhvern	einhver	DET	Q-A	Case=Acc|Degree=Pos	9	amod	_	_
+8	einhvern	einhver	DET	Q-A	Case=Acc	9	amod	_	_
 9	tímann	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 10	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	5	ccomp	_	_
 11	möguleiki	möguleiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
@@ -85,7 +85,7 @@
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	22	mark	_	_
-4	þeir	sá	DET	D-N	Case=Nom|PronType=Art	22	nsubj	_	_
+4	þeir	sá	DET	D-N	Case=Nom	22	nsubj	_	_
 5	sem	sem	SCONJ	C	_	7	mark	_	_
 6	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	7	aux	_	_
 7	talað	tala	VERB	VBN	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
@@ -93,7 +93,7 @@
 9	og	og	CCONJ	CONJ	_	11	cc	_	_
 10	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 11	andsnúnir	andsnúinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	conj	_	_
-12	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	13	det	_	_
+12	þessu	þessi	DET	D-D	Case=Dat	13	det	_	_
 13	ferli	ferill	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 14	og	og	CCONJ	CONJ	_	16	cc	_	_
 15	vilja	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	16	aux	_	_
@@ -102,7 +102,7 @@
 18	vilji	vilja	AUX	MDPS	Mood=Sub|Tense=Pres	22	aux	_	_
 19	yfir	yfir	ADP	P	_	20	case	_	_
 20	höfuð	höfuð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
-21	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	22	obj	_	_
+21	ekkert	enginn	DET	Q-A	Case=Acc	22	obj	_	_
 22	gera	gera	VERB	DO	VerbForm=Inf	2	ccomp	_	_
 23	með	með	ADP	P	_	24	case	_	_
 24	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
@@ -125,12 +125,12 @@
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 4	deilum	deila	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-5	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	6	det	_	_
+5	þeirri	sá	DET	D-D	Case=Dat	6	det	_	_
 6	draumsýn	draumsýn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obj	_	_
 7	að	að	PART	TO	_	9	mark	_	_
 8	vilja	vilja	AUX	MD	VerbForm=Inf	9	aux	_	_
 9	fella	fella	VERB	VB	VerbForm=Inf	6	xcomp	_	_
-10	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+10	þessa	þessi	DET	D-A	Case=Acc	11	det	_	_
 11	stjórn	stjórn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
 12	sem	sem	SCONJ	C	_	13	mark	_	_
 13	fyrst	snemma	ADV	ADVS	Degree=Sup	9	advmod	_	_
@@ -142,7 +142,7 @@
 19	til	til	ADP	P	_	20	case	_	_
 20	kosninga	kosning	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	18	obl	_	_
 21	sem	sem	SCONJ	C	_	23	mark	_	_
-22	allra	allur	DET	Q-G	Case=Gen|Degree=Pos	23	nmod:poss	_	_
+22	allra	allur	DET	Q-G	Case=Gen	23	nmod:poss	_	_
 23	fyrst	snemma	ADV	ADVS	Degree=Sup	18	advmod	_	_
 24	til	til	ADP	P	_	26	case	_	_
 25	að	að	PART	TO	_	26	advcl	_	_
@@ -164,7 +164,7 @@
 9	þau	það	PRON	PRO-N	Case=Nom	10	nsubj	_	_
 10	hangi	hanga	VERB	VBPS	Mood=Sub|Tense=Pres	7	ccomp	_	_
 11	á	á	ADP	P	_	13	case	_	_
-12	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	13	det	_	_
+12	þessum	þessi	DET	D-D	Case=Dat	13	det	_	_
 13	völdum	vald	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
 14	eins	_	ADV	ADVR	Degree=Cmp	10	advmod	_	_
 15	og	_	ADP	P	_	18	case	_	_
@@ -184,7 +184,7 @@
 29	ríkisstjórnina	ríkisstjórn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	nsubj	_	_
 30	standa	standa	VERB	VBPI	Mood=Ind|Tense=Pres	28	xcomp	_	_
 31	í	í	ADP	P	_	35	case	_	_
-32	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	35	nmod:poss	_	_
+32	alls	allur	DET	Q-G	Case=Gen	35	nmod:poss	_	_
 33	kyns	kyn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	32	conj	_	_
 34	öðrum	annar	PRON	OTHER-D	Case=Dat	35	det	_	_
 35	málamiðlunum	málamiðlun	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	30	obl	_	_
@@ -215,7 +215,7 @@
 8	atvinnumálanna	atvinnumál	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	obl	_	_
 9	og	og	CCONJ	CONJ	_	14	cc	_	_
 10	hversu	hversu	ADV	WADV	Degree=Pos	11	advmod	_	_
-11	lítil	lítill	DET	Q-N	Case=Nom|Degree=Pos	13	amod	_	_
+11	lítil	lítill	DET	Q-N	Case=Nom	13	amod	_	_
 12	raunveruleg	raunverulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
 13	atvinnuuppbygging	atvinnuuppbygging	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	obj	_	_
 14	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	8	conj	_	_

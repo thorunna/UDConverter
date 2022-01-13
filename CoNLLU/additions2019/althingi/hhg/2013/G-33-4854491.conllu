@@ -21,7 +21,7 @@
 3	til	til	ADP	P	_	5	case	_	_
 4	að	að	PART	TO	_	5	mark	_	_
 5	skoða	skoða	VERB	VB	VerbForm=Inf	2	obl	_	_
-6	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	5	obj	_	_
+6	þetta	þessi	DET	D-A	Case=Acc	5	obj	_	_
 7	aðeins	aðeins	ADV	ADV	Degree=Pos	5	advmod	_	_
 8	betur	vel	ADV	ADVR	Degree=Cmp	7	advmod	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
@@ -59,7 +59,7 @@
 28	að	að	PART	TO	_	29	advcl	_	_
 29	borga	borga	VERB	VB	VerbForm=Inf	18	obl	_	_
 30	reikningana	reikningur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	29	obj	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	13	punct	_	_
+31	,	,	PUNCT	,	_	29	punct	_	_
 32	það	það	PRON	PRO-N	Case=Nom	35	nsubj	_	_
 33	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
 34	ekki	ekki	ADV	NEG	_	35	advmod	_	_
@@ -87,7 +87,7 @@
 56	taka	taka	VERB	VB	VerbForm=Inf	48	xcomp	_	_
 57	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	56	obj	_	_
 58	í	í	ADP	P	_	61	case	_	_
-59	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	61	det	_	_
+59	þessari	þessi	DET	D-D	Case=Dat	61	det	_	_
 60	trylltu	trylltur	ADJ	ADJ-D	Case=Dat|Degree=Pos	61	amod	_	_
 61	góðmennsku	góðmennska	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	56	obl	_	_
 62	sem	sem	SCONJ	C	_	64	mark	_	_
@@ -116,15 +116,15 @@
 # X_ID = ID_missing_6
 # text = Því meira sem ég skoða þetta fjárlagafrumvarp, því meira undrandi verð ég á því að það hafi tekist að skera þó þetta mikið á hallann sem myndaðist í kjölfar hrunsins.
 1	Því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
-2	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	12	obl	_	_
+2	meira	mikill	DET	QR-A	Case=Acc	12	obl	_	_
 3	sem	sem	SCONJ	C	_	5	mark	_	_
 4	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 5	skoða	skoða	VERB	VBPI	Mood=Ind|Tense=Pres	2	advcl	_	_
-6	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
+6	þetta	þessi	DET	D-A	Case=Acc	7	det	_	_
 7	fjárlagafrumvarp	fjárlagafrumvarp	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	_
 9	því	það	PRON	PRO-D	Case=Dat	10	obl	_	_
-10	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	11	obl	_	_
+10	meira	mikill	DET	QR-A	Case=Acc	11	obl	_	_
 11	undrandi	undrandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
 12	verð	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 13	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
@@ -137,8 +137,8 @@
 20	að	að	PART	TO	_	21	mark	_	_
 21	skera	skera	VERB	VB	VerbForm=Inf	19	xcomp	_	_
 22	þó	þó	ADV	ADV	Degree=Pos	21	advmod	_	_
-23	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	24	obl	_	_
-24	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	21	obl	_	_
+23	þetta	þessi	DET	D-A	Case=Acc	24	obl	_	_
+24	mikið	mikill	DET	Q-A	Case=Acc	21	obl	_	_
 25	á	á	ADP	P	_	26	case	_	_
 26	hallann	halli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	_
 27	sem	sem	SCONJ	C	_	28	mark	_	_
@@ -202,7 +202,7 @@
 14	takast	taka	VERB	VB	VerbForm=Inf	11	obl	_	_
 15	á	á	ADP	RP	_	14	compound:prt	_	_
 16	við	við	ADP	P	_	18	case	_	_
-17	þau	sá	DET	D-A	Case=Acc|PronType=Art	18	det	_	_
+17	þau	sá	DET	D-A	Case=Acc	18	det	_	_
 18	verkefni	verkefni	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
 19	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
 20	að	að	SCONJ	C	_	34	mark	_	_
@@ -216,13 +216,13 @@
 28	og	og	CCONJ	CONJ	_	29	cc	_	_
 29	Samfylkinguna	samfylking	PROPN	NPR-A	_	26	conj	_	_
 30	af	af	ADP	P	_	32	case	_	_
-31	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	32	amod	_	_
+31	öllum	allur	DET	Q-D	Case=Dat	32	amod	_	_
 32	flokkum	flokkur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	26	obl	_	_
 33	að	að	PART	TO	_	34	mark	_	_
 34	þurfa	þurfa	VERB	VB	VerbForm=Inf	19	ccomp	_	_
 35	að	að	PART	TO	_	36	mark	_	_
 36	gera	gera	VERB	DO	VerbForm=Inf	34	xcomp	_	_
-37	það	sá	DET	D-A	Case=Acc|PronType=Art	36	obj	_	_
+37	það	sá	DET	D-A	Case=Acc	36	obj	_	_
 38	sem	sem	SCONJ	C	_	39	mark	_	_
 39	þurfti	þurfa	VERB	VBDI	Mood=Ind|Tense=Past	37	acl:relcl	_	_
 40	að	að	PART	TO	_	41	mark	_	_
@@ -239,7 +239,7 @@
 5	hvort	hvort	SCONJ	WQ	_	12	mark	_	_
 6	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	12	expl	_	_
 7	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	12	cop	_	_
-8	einhver	einhver	DET	Q-N	Case=Nom|Degree=Pos	10	amod	_	_
+8	einhver	einhver	DET	Q-N	Case=Nom	10	amod	_	_
 9	nánari	náinn	ADJ	ADJR-N	Case=Nom|Degree=Cmp	10	amod	_	_
 10	fræði	fræði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	obl	_	_
 11	á	á	ADP	P	_	12	case	_	_
@@ -247,7 +247,7 @@
 13	við	við	ADP	P	_	14	case	_	_
 14	það	það	PRON	PRO-A	Case=Acc	12	obl	_	_
 15	hvernig	hvernig	ADV	WADV	Degree=Pos	18	advmod	_	_
-16	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	18	nsubj	_	_
+16	þetta	þessi	DET	D-N	Case=Nom	18	nsubj	_	_
 17	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	18	cop	_	_
 18	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	14	ccomp	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
@@ -257,7 +257,7 @@
 # text = Þrátt fyrir þau vandamál sem að okkur steðja núna finnst mér árangurinn ótrúlegur miðað við það sem við horfðum framan í á sínum tíma.
 1	Þrátt	þrátt	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	fyrir	fyrir	ADP	P	_	4	case	_	_
-3	þau	sá	DET	D-A	Case=Acc|PronType=Art	4	det	_	_
+3	þau	sá	DET	D-A	Case=Acc	4	det	_	_
 4	vandamál	vandamál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	_
 5	sem	sem	SCONJ	C	_	8	mark	_	_
 6	að	að	ADP	P	_	7	case	_	_
@@ -270,7 +270,7 @@
 13	ótrúlegur	ótrúlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	ccomp	_	_
 14	miðað	miða	VERB	VAN	Tense=Past|VerbForm=Part	13	acl	_	_
 15	við	við	ADP	P	_	16	case	_	_
-16	það	sá	DET	D-A	Case=Acc|PronType=Art	14	obl	_	_
+16	það	sá	DET	D-A	Case=Acc	14	obl	_	_
 17	sem	sem	SCONJ	C	_	19	mark	_	_
 18	við	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
 19	horfðum	horfa	VERB	VBDI	Mood=Ind|Tense=Past	16	acl:relcl	_	_
@@ -293,7 +293,7 @@
 7	námi	nám	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 8	hér	hér	ADV	ADV	Degree=Pos	7	advmod	_	_
 9	að	að	SCONJ	C	_	12	mark	_	_
-10	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	12	nsubj	_	_
+10	þetta	þessi	DET	D-N	Case=Nom	12	nsubj	_	_
 11	gæti	geta	AUX	MDDS	Mood=Sub|Tense=Past	12	aux	_	_
 12	borgað	borga	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	_
 13	sig	sig	PRON	PRO-A	Case=Acc	12	obj	_	_
@@ -324,7 +324,7 @@
 # X_ID = ID_missing_14
 # text = Af hvaða helstu aðferðum tekur hv. þingmaður mið þegar taka þarf ákvarðanir um fjárútlát til langtímafjárfestinga á borð við nám eða eins og ég mundi segja lýðræðisumbætur sem ég tel svolítið áhugaverðan vinkil?
 1	Af	af	ADP	P	_	4	case	_	_
-2	hvaða	hvaða	DET	WD-D	Case=Dat|Number=Sing	4	det	_	_
+2	hvaða	hvaða	DET	WD-D	Case=Dat	4	det	_	_
 3	helstu	heldri	ADJ	ADJS-D	Case=Dat|Degree=Sup	4	amod	_	_
 4	aðferðum	aðferð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
 5	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -365,11 +365,11 @@
 2	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
-5	meiri	mikill	DET	QR-A	Case=Acc|Degree=Pos	6	amod	_	_
+5	meiri	mikill	DET	QR-A	Case=Acc	6	amod	_	_
 6	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	2	punct	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
 8	en	en	CCONJ	CONJ	_	12	cc	_	_
-9	hvaða	hvaða	DET	WD-N	Case=Nom|Number=Sing	10	det	_	_
+9	hvaða	hvaða	DET	WD-N	Case=Nom	10	det	_	_
 10	fræði	fræði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	obj	_	_
 11	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
 12	það	það	PRON	PRO-N	Case=Nom	2	conj	_	OriginalHead=0

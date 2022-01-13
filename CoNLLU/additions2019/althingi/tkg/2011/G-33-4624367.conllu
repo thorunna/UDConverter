@@ -23,7 +23,7 @@
 6	með	með	ADP	P	_	7	case	_	_
 7	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
 8	og	og	CCONJ	CONJ	_	11	cc	_	_
-9	hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	10	det	_	_
+9	hvaða	hvaða	DET	WD-A	Case=Acc	10	det	_	_
 10	reglur	regla	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
 11	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 12	ÁTVR	átvr	PROPN	NPR-N	_	11	nsubj	_	_
@@ -73,7 +73,7 @@
 2	geld	gjalda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	varhuga	varhugi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 4	við	við	ADP	P	_	6	case	_	_
-5	þeim	sá	DET	D-D	Case=Dat|PronType=Art	6	det	_	_
+5	þeim	sá	DET	D-D	Case=Dat	6	det	_	_
 6	breytingum	breyting	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
 7	sem	sem	SCONJ	C	_	9	mark	_	_
 8	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
@@ -84,7 +84,7 @@
 13	líka	líka	ADV	ALSO	_	14	advmod	_	_
 14	draga	draga	VERB	VB	VerbForm=Inf	2	conj	_	OriginalHead=0
 15	fram	fram	ADP	RP	_	14	compound:prt	_	_
-16	þau	sá	DET	D-A	Case=Acc|PronType=Art	17	det	_	_
+16	þau	sá	DET	D-A	Case=Acc	17	det	_	_
 17	sjónarmið	sjónarmið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obj	_	_
 18	sem	sem	SCONJ	C	_	21	mark	_	_
 19	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	21	aux	_	_
@@ -148,7 +148,7 @@
 # text = Er það sú þróun sem menn vilja sjá?
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 2	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-3	sú	sá	DET	D-N	Case=Nom|PronType=Art	4	det	_	_
+3	sú	sá	DET	D-N	Case=Nom	4	det	_	_
 4	þróun	þróun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 5	sem	sem	SCONJ	C	_	8	mark	_	_
 6	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	nsubj	_	_
@@ -170,7 +170,7 @@
 9	og	og	CCONJ	CONJ	_	10	cc	_	_
 10	samræmi	samræmi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	conj	_	_
 11	við	við	ADP	P	_	14	case	_	_
-12	þá	sá	DET	D-A	Case=Acc|PronType=Art	14	det	_	_
+12	þá	sá	DET	D-A	Case=Acc	14	det	_	_
 13	samfélagslegu	samfélagslegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	14	amod	_	_
 14	ábyrgð	ábyrgð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
 15	sem	sem	SCONJ	C	_	19	mark	_	_
@@ -241,7 +241,7 @@
 4	ákveðna	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
 5	heildaryfirsýn	heildaryfirsýn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	nsubj	_	_
 6	yfir	yfir	ADP	P	_	7	case	_	_
-7	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	5	obl	_	_
+7	þetta	þessi	DET	D-A	Case=Acc	5	obl	_	_
 8	og	og	CCONJ	CONJ	_	11	cc	_	_
 9	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	11	advmod	_	_
 10	ákveðið	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	amod	_	_
@@ -253,13 +253,13 @@
 16	sem	sem	SCONJ	C	_	17	mark	_	_
 17	ríkir	ríkja	VERB	VBPI	Mood=Ind|Tense=Pres	15	acl:relcl	_	_
 18	á	á	ADP	P	_	20	case	_	_
-19	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	20	det	_	_
+19	þessu	þessi	DET	D-D	Case=Dat	20	det	_	_
 20	sviði	svið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
 21	sem	sem	SCONJ	C	_	22	mark	_	_
 22	svo	svo	ADV	ADV	Degree=Pos	17	advcl	_	_
-23	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	22	obl	_	_
+23	allt	allur	DET	Q-A	Case=Acc	22	obl	_	_
 24	of	of	ADV	ADV	Degree=Pos	22	advmod	_	_
-25	mörgum	margur	DET	Q-D	Case=Dat|Degree=Pos	22	obl	_	_
+25	mörgum	margur	DET	Q-D	Case=Dat	22	obl	_	_
 26	í	í	ADP	P	_	27	case	_	_
 27	samfélaginu	samfélag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	2	punct	_	_
@@ -269,7 +269,7 @@
 # text = Það eru ýmis málefni sem má bara ekki snerta af því þá fær maður yfir sig þá holskeflu að maður sé, í þessu tilviki, að stuðla að því að hér verði aukin neysla áfengis.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	ýmis	ýmis	DET	Q-N	Case=Nom|Degree=Pos	4	amod	_	_
+3	ýmis	ýmis	DET	Q-N	Case=Nom	4	amod	_	_
 4	málefni	málefni	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 5	sem	sem	SCONJ	C	_	9	mark	_	_
 6	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	9	aux	_	_
@@ -283,14 +283,14 @@
 14	maður	maður	PRON	MAN-N	_	13	nsubj	_	_
 15	yfir	yfir	ADP	P	_	16	case	_	_
 16	sig	sig	PRON	PRO-A	Case=Acc	13	obl	_	_
-17	þá	sá	DET	D-A	Case=Acc|PronType=Art	18	det	_	_
+17	þá	sá	DET	D-A	Case=Acc	18	det	_	_
 18	holskeflu	holskefla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
 19	að	að	SCONJ	C	_	28	mark	_	_
 20	maður	maður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	nsubj	_	_
 21	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	28	cop	_	SpaceAfter=No
 22	,	,	PUNCT	,	_	21	punct	_	_
 23	í	í	ADP	P	_	25	case	_	_
-24	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	25	det	_	_
+24	þessu	þessi	DET	D-D	Case=Dat	25	det	_	_
 25	tilviki	tilvik	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	SpaceAfter=No
 26	,	,	PUNCT	,	_	25	punct	_	_
 27	að	að	PART	TO	_	28	mark	_	_
@@ -338,7 +338,7 @@
 19	vínmenningu	vínmenning	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
 20	í	í	ADP	P	_	21	case	_	_
 21	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	16	punct	_	_
+22	,	,	PUNCT	,	_	21	punct	_	_
 23	sem	sem	SCONJ	C	_	25	mark	_	_
 24	ég	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
 25	trúi	trúa	VERB	VBPI	Mood=Ind|Tense=Pres	16	advcl	_	_
@@ -353,9 +353,9 @@
 34	samsinni	samsinna	VERB	VBPS	Mood=Sub|Tense=Pres	32	conj	_	_
 35	mér	ég	PRON	PRO-D	Case=Dat	34	obj	_	_
 36	í	í	ADP	P	_	38	case	_	_
-37	því	sá	DET	D-D	Case=Dat|PronType=Art	38	det	_	_
+37	því	sá	DET	D-D	Case=Dat	38	det	_	_
 38	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
-39	,	,	PUNCT	,	_	4	punct	_	_
+39	,	,	PUNCT	,	_	34	punct	_	_
 40	að	að	SCONJ	C	_	43	mark	_	_
 41	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	43	expl	_	_
 42	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	43	cop	_	_
@@ -373,7 +373,7 @@
 54	að	að	PART	TO	_	55	mark	_	_
 55	draga	draga	VERB	VB	VerbForm=Inf	53	xcomp	_	_
 56	úr	úr	ADP	P	_	58	case	_	_
-57	þeim	sá	DET	D-D	Case=Dat|PronType=Art	58	det	_	_
+57	þeim	sá	DET	D-D	Case=Dat	58	det	_	_
 58	hvötum	hvati	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	55	obl	_	_
 59	að	að	SCONJ	C	_	61	mark	_	_
 60	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	61	nsubj	_	_
@@ -392,7 +392,7 @@
 # sent_id = ALTHINGI_TKG_2011_G-33-4624367,.13
 # X_ID = ID_missing_16
 # text = Þetta eru sjónarmið mín varðandi málið.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	sjónarmið	sjónarmið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 4	mín	minn	PRON	PRO-N	Case=Nom	3	nmod:poss	_	_
@@ -419,7 +419,7 @@
 7	af	af	ADP	P	_	8	case	_	_
 8	stað	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 9	í	í	ADP	P	_	11	case	_	_
-10	einhverjar	einhver	DET	Q-A	Case=Acc|Degree=Pos	11	amod	_	_
+10	einhverjar	einhver	DET	Q-A	Case=Acc	11	amod	_	_
 11	breytingar	breyting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	_
 12	án	án	ADP	P	_	13	case	_	_
 13	þess	það	PRON	PRO-G	Case=Gen	6	obl	_	_
