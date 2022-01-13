@@ -26,7 +26,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 3	væntanlega	væntanlega	ADV	ADV	Degree=Pos	7	advmod	_	_
 4	í	í	ADP	P	_	7	case	_	_
-5	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	7	obl	_	_
+5	allt	allur	DET	Q-A	Case=Acc	7	obl	_	_
 6	annarri	annar	PRON	OTHER-D	Case=Dat	7	det	_	_
 7	stöðu	staða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
 8	en	en	CCONJ	CONJ	_	9	cc	_	_
@@ -75,7 +75,7 @@
 6	hún	hún	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 7	telji	telja	ADV	VBPS	Mood=Sub|Tense=Pres	1	advmod	_	_
 8	að	að	SCONJ	C	_	11	mark	_	_
-9	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	11	nsubj	_	_
+9	þetta	þessi	DET	D-N	Case=Nom	11	nsubj	_	_
 10	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	11	aux	_	_
 11	haldið	halda	VERB	VBN	Tense=Past|VerbForm=Part	7	ccomp	_	_
 12	svona	svona	ADV	ADV	Degree=Pos	11	advmod	_	_
@@ -83,21 +83,21 @@
 14	um	um	ADP	P	_	17	case	_	_
 15	X	x	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
 16	langa	langur	ADJ	ADJ-A	Case=Acc|Degree=Pos	17	amod	_	_
-17	tíð	tíð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
+17	tíð	tíð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
 18	eða	eða	CCONJ	CONJ	_	22	cc	_	_
-19	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	20	amod	_	_
+19	alla	allur	DET	Q-A	Case=Acc	20	amod	_	_
 20	vega	vegi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obl	_	_
-21	þau	sá	DET	D-A	Case=Acc|PronType=Art	22	det	_	_
-22	þrjú	þrír	NUM	NUM-A	Case=Acc	11	obl	_	_
+21	þau	sá	DET	D-A	Case=Acc	22	det	_	_
+22	þrjú	þrír	NUM	NUM-A	Case=Acc	17	conj	_	_
 23	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	conj	_	_
 24	sem	sem	SCONJ	C	_	27	mark	_	_
-25	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	26	det	_	_
+25	þessi	þessi	DET	D-N	Case=Nom	26	det	_	_
 26	ríkisstjórn	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
 27	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	22	acl:relcl	_	_
 28	að	að	PART	TO	_	29	mark	_	_
 29	eiga	eiga	VERB	VB	VerbForm=Inf	27	xcomp	_	_
 30	eftir	eftir	ADV	ADV	Degree=Pos	29	ccomp	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	1	punct	_	_
+31	,	,	PUNCT	,	_	29	punct	_	_
 32	eða	eða	CCONJ	CONJ	_	34	cc	_	_
 33	hvað	hver	PRON	WPRO-A	Case=Acc	34	obj	_	_
 34	sér	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
@@ -105,7 +105,7 @@
 36	fyrir	fyrir	ADP	P	_	37	case	_	_
 37	sér	sig	PRON	PRO-D	Case=Dat	34	obl	_	_
 38	með	með	ADP	P	_	40	case	_	_
-39	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	40	det	_	_
+39	þetta	þessi	DET	D-A	Case=Acc	40	det	_	_
 40	hlé	hlé	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
 41	?	?	PUNCT	.	_	1	punct	_	_
 

@@ -19,7 +19,7 @@
 16	ég	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
 17	muni	munu	AUX	MDPS	Mood=Sub|Tense=Pres	18	aux	_	_
 18	styðja	styðja	VERB	VB	VerbForm=Inf	13	ccomp	_	_
-19	það	sá	DET	D-A	Case=Acc|PronType=Art	20	det	_	_
+19	það	sá	DET	D-A	Case=Acc	20	det	_	_
 20	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obj	_	_
 21	eða	eða	CCONJ	CONJ	_	22	cc	_	_
 22	ekki	ekki	ADV	NEG	_	18	conj	_	SpaceAfter=No
@@ -101,10 +101,10 @@
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	vilja	vilja	AUX	MD	VerbForm=Inf	2	aux	_	_
 5	hafa	hafa	AUX	HV	VerbForm=Inf	2	aux	_	_
-6	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	2	obj	_	_
+6	þetta	þessi	DET	D-A	Case=Acc	2	obj	_	_
 7	þannig	þannig	ADV	ADV	Degree=Pos	2	advmod	_	_
 8	að	að	SCONJ	C	_	11	mark	_	_
-9	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	11	nsubj	_	_
+9	þessu	þessi	DET	D-D	Case=Dat	11	nsubj	_	_
 10	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	11	cop	_	_
 11	stillt	stilla	VERB	VAN	Tense=Past|VerbForm=Part	7	advcl	_	_
 12	upp	upp	ADP	RP	_	11	compound:prt	_	_
@@ -131,7 +131,7 @@
 33	best	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	35	amod	_	_
 34	að	að	PART	TO	_	35	mark	_	_
 35	gera	gera	VERB	DO	VerbForm=Inf	29	ccomp	_	_
-36	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	35	obj	_	SpaceAfter=No
+36	þetta	þessi	DET	D-A	Case=Acc	35	obj	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4833012,.6
@@ -156,7 +156,7 @@
 17	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 18	að	að	SCONJ	C	_	22	mark	_	_
 19	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	22	nsubj	_	_
-20	fleiri	margur	DET	QR-N	Case=Nom|Degree=Pos	19	amod	_	_
+20	fleiri	margur	DET	QR-N	Case=Nom	19	amod	_	_
 21	mundu	munu	AUX	MDDS	Mood=Sub|Tense=Past	22	aux	_	_
 22	taka	taka	VERB	VB	VerbForm=Inf	17	ccomp	_	_
 23	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obj	_	_
@@ -183,26 +183,26 @@
 1	Í	í	ADP	P	_	2	case	_	_
 2	tölvuleikjum	tölvuleikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
-4	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	7	nsubj	_	_
+4	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
 5	voða	voða	ADV	ADV	Degree=Pos	6	amod	_	_
 6	lítið	lítill	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
 7	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-8	en	en	CCONJ	CONJ	_	16	cc	_	_
-9	þar	þar	ADV	ADV	Degree=Pos	16	advmod	_	_
-10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
-11	líka	líka	ADV	ALSO	_	16	advmod	_	_
-12	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	16	nsubj	_	_
+8	en	en	CCONJ	CONJ	_	14	cc	_	_
+9	þar	þar	ADV	ADV	Degree=Pos	14	advmod	_	_
+10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+11	líka	líka	ADV	ALSO	_	14	advmod	_	_
+12	allt	allur	DET	Q-N	Case=Nom	14	nsubj	_	_
 13	í	í	ADP	P	_	14	case	_	_
-14	litum	litur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	_
+14	litum	litur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	conj	_	OriginalHead=0
 15	og	og	CCONJ	CONJ	_	16	cc	_	_
-16	skemmtilegra	skemmtilegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	7	conj	_	OriginalHead=0|SpaceAfter=No
+16	skemmtilegra	skemmtilegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	14	conj	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	7	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4833012,.8
 # X_ID = ID_missing_11
 # text = Ef þessu væri frekar þannig háttaði að fólk gæti nálgast fjárlögin og stillt liði eftir eigin höfði held ég að hægt væri að ná lýðræðislegri umræðu um fjárlögin.
 1	Ef	ef	ADP	P	_	6	case	_	_
-2	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	6	nsubj	_	_
+2	þessu	þessi	DET	D-D	Case=Dat	6	nsubj	_	_
 3	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	6	cop	_	_
 4	frekar	frekar	ADV	ADVR	Degree=Cmp	6	advmod	_	_
 5	þannig	þannig	ADV	ADV	Degree=Pos	6	advmod	_	_
@@ -245,13 +245,13 @@
 7	hér	hér	ADV	ADV	Degree=Pos	6	advmod	_	_
 8	og	og	CCONJ	CONJ	_	9	cc	_	_
 9	útskýra	útskýra	VERB	VB	VerbForm=Inf	6	xcomp	_	_
-10	hvort	hvort	SCONJ	WQ	_	15	mark	_	_
-11	ég	ég	PRON	PRO-N	Case=Nom	15	nsubj	_	_
-12	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	15	cop	_	_
-13	með	með	ADP	P	_	15	obl	_	_
+10	hvort	hvort	SCONJ	WQ	_	13	mark	_	_
+11	ég	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+12	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	13	cop	_	_
+13	með	með	ADP	P	_	9	ccomp	_	_
 14	eða	eða	CCONJ	CONJ	_	15	cc	_	_
-15	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	ccomp	_	_
-16	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	19	det	_	_
+15	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	conj	_	_
+16	þessari	þessi	DET	D-D	Case=Dat	19	det	_	_
 17	annars	annars	PRON	OTHER-G	Case=Gen	18	obl	_	_
 18	góðu	góður	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
 19	hugmynd	hugmynd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	nmod:poss	_	SpaceAfter=No

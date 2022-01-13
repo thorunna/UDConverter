@@ -8,9 +8,9 @@
 5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
 6	nákvæmlega	nákvæmlega	ADV	ADV	Degree=Pos	7	amod	_	_
 7	sama	sami	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	ccomp	_	_
-8	hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	9	det	_	_
+8	hvaða	hvaða	DET	WD-A	Case=Acc	9	det	_	_
 9	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obj	_	_
-10	þessir	þessi	DET	D-N	Case=Nom|PronType=Art	11	det	_	_
+10	þessir	þessi	DET	D-N	Case=Nom	11	det	_	_
 11	fjármunir	fjármunir	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	nsubj	_	_
 12	fara	fara	VERB	VBPI	Mood=Ind|Tense=Pres	7	ccomp	_	_
 13	ef	ef	ADP	P	_	15	case	_	_
@@ -22,7 +22,7 @@
 19	stað	staður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
 20	og	og	CCONJ	CONJ	_	21	cc	_	_
 21	gagnast	gagna	VERB	VBPI	Mood=Ind|Tense=Pres	15	conj	_	_
-22	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	23	det	_	_
+22	þessu	þessi	DET	D-D	Case=Dat	23	det	_	_
 23	verkefni	verkefni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obj	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	15	punct	_	_
 
@@ -52,7 +52,7 @@
 6	stöðu	staða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
 7	fjarskiptasjóðs	fjarskiptasjóður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	nmod:poss	_	_
 8	að	að	ADP	P	_	10	case	_	_
-9	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	10	det	_	_
+9	þessu	þessi	DET	D-D	Case=Dat	10	det	_	_
 10	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 11	þá	þá	ADV	ADV	Degree=Pos	15	advmod	_	_
 12	skulum	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	15	aux	_	_
@@ -78,7 +78,7 @@
 6	að	að	PART	TO	_	7	mark	_	_
 7	styðja	styðja	VERB	VB	VerbForm=Inf	0	root	_	_
 8	við	við	ADP	P	_	10	case	_	_
-9	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	10	det	_	_
+9	þetta	þessi	DET	D-A	Case=Acc	10	det	_	_
 10	fjarskiptafyrirtæki	fjarskiptafyrirtæki	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	_
 11	á	á	ADP	P	_	13	case	_	_
 12	ákveðnum	ákveðinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	amod	_	_
@@ -101,7 +101,7 @@
 11	með	með	ADP	P	_	12	case	_	_
 12	því	það	PRON	PRO-D	Case=Dat	10	obl	_	_
 13	að	að	SCONJ	C	_	17	mark	_	_
-14	þeir	sá	DET	D-N	Case=Nom|PronType=Art	15	det	_	_
+14	þeir	sá	DET	D-N	Case=Nom	15	det	_	_
 15	almannaþjónustuhagsmunir	almannaþjónustuhagsmunir	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	nsubj	_	_
 16	yrðu	verða	AUX	RDDS	Mood=Sub|Tense=Past	17	aux	_	_
 17	skilgreindir	skilgreina	VERB	VAN	Tense=Past|VerbForm=Part	12	ccomp	_	_
@@ -121,7 +121,7 @@
 31	á	á	ADP	P	_	32	case	_	_
 32	floti	flot	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obl	_	_
 33	og	og	CCONJ	CONJ	_	36	cc	_	_
-34	sú	sá	DET	D-N	Case=Nom|PronType=Art	35	det	_	_
+34	sú	sá	DET	D-N	Case=Nom	35	det	_	_
 35	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	36	nsubj	_	_
 36	farin	fara	VERB	VAN	Tense=Past|VerbForm=Part	17	conj	_	_
 37	með	með	ADP	P	_	39	case	_	_
@@ -149,8 +149,8 @@
 1	En	en	CCONJ	CONJ	_	6	cc	_	_
 2	auðvitað	auðvitað	ADV	ADV	Degree=Pos	6	advmod	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
-4	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
-5	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	6	amod	_	_
+4	þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
+5	ekkert	enginn	DET	Q-N	Case=Nom	6	amod	_	_
 6	annað	annar	PRON	OTHER-N	Case=Nom	0	root	_	_
 7	en	en	ADP	P	_	8	case	_	_
 8	ríkisaðstoð	ríkisaðstoð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	amod	_	_
@@ -166,7 +166,7 @@
 3	frá	frá	ADP	P	_	4	case	_	_
 4	því	það	PRON	PRO-D	Case=Dat	1	obl	_	_
 5	hvernig	hvernig	ADV	WADV	Degree=Pos	9	advmod	_	_
-6	þeir	sá	DET	D-N	Case=Nom|PronType=Art	7	det	_	_
+6	þeir	sá	DET	D-N	Case=Nom	7	det	_	_
 7	fjármunir	fjármunir	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
 8	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 9	merktir	merkja	VERB	VAN	Tense=Past|VerbForm=Part	4	ccomp	_	_
@@ -180,7 +180,7 @@
 17	bara	bara	ADV	FP	Degree=Pos	18	advmod	_	_
 18	sendiboði	sendiboði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 19	með	með	ADP	P	_	21	case	_	_
-20	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	21	det	_	_
+20	þessa	þessi	DET	D-A	Case=Acc	21	det	_	_
 21	fjármuni	fjármunir	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	obl	_	_
 22	inn	inn	ADP	RP	_	24	compound:prt	_	_
 23	í	í	ADP	P	_	24	case	_	_
@@ -200,10 +200,10 @@
 6	þurfa	þurfa	VERB	VB	VerbForm=Inf	3	xcomp	_	_
 7	að	að	PART	TO	_	8	mark	_	_
 8	trufla	trufla	VERB	VB	VerbForm=Inf	6	xcomp	_	_
-9	hitt	hinn	DET	D-A	Case=Acc|PronType=Art	8	obj	_	_
-10	eitt	einn	DET	ONE-A	Case=Acc|Number=Sing	12	det	_	_
+9	hitt	hinn	DET	D-A	Case=Acc	8	obj	_	_
+10	eitt	einn	DET	ONE-A	Case=Acc	12	det	_	_
 11	eða	eða	CCONJ	CONJ	_	12	cc	_	_
-12	neitt	neinn	DET	Q-A	Case=Acc|Degree=Pos	8	obl	_	SpaceAfter=No
+12	neitt	neinn	DET	Q-A	Case=Acc	8	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4677109,.9

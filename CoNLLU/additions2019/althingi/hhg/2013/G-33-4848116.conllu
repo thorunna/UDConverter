@@ -12,18 +12,18 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4848116,.2
 # X_ID = ID_missing_2
 # text = Svarið er í stuttu máli: Nei, ég hef ekki skoðað það sérstaklega en ég vænti þess að upphæðin sem komi inn í ríkissjóð sé tiltölulega sambærileg því sem upprunalega var markmiðið að hala inn.
-1	Svarið	svar	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+1	Svarið	svar	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
 3	í	í	ADP	P	_	5	case	_	_
 4	stuttu	stuttur	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
-5	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+5	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
 6	:	:	PUNCT	,	_	5	punct	_	_
 7	Nei	nei	INTJ	INTJ	_	12	discourse	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	_
 9	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
 10	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	12	aux	_	_
 11	ekki	ekki	ADV	NEG	_	12	advmod	_	_
-12	skoðað	skoða	VERB	VBN	Tense=Past|VerbForm=Part	5	ccomp	_	_
+12	skoðað	skoða	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 13	það	það	PRON	PRO-A	Case=Acc	12	obj	_	_
 14	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	12	advmod	_	_
 15	en	en	CCONJ	CONJ	_	17	cc	_	_
@@ -40,7 +40,7 @@
 26	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	28	cop	_	_
 27	tiltölulega	tiltölulega	ADV	ADV	Degree=Pos	28	amod	_	_
 28	sambærileg	sambærilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	18	ccomp	_	_
-29	því	sá	DET	D-D	Case=Dat|PronType=Art	28	obl	_	_
+29	því	sá	DET	D-D	Case=Dat	28	obl	_	_
 30	sem	sem	SCONJ	C	_	31	mark	_	_
 31	upprunalega	upprunalega	ADV	ADV	Degree=Pos	29	acl:relcl	_	_
 32	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	31	cop	_	_
@@ -48,7 +48,7 @@
 34	að	að	PART	TO	_	31	dep	_	_
 35	hala	hala	VERB	VB	VerbForm=Inf	34	dep	_	_
 36	inn	inn	ADP	RP	_	34	compound:prt	_	SpaceAfter=No
-37	.	.	PUNCT	.	_	5	punct	_	_
+37	.	.	PUNCT	.	_	12	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4848116,.3
 # X_ID = ID_missing_3
@@ -126,10 +126,10 @@
 46	getað	geta	AUX	MDN	Tense=Past|VerbForm=Part	47	aux	_	_
 47	lagst	leggja	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	OriginalHead=0
 48	yfir	yfir	ADP	P	_	50	case	_	_
-49	þessi	þessi	DET	D-A	Case=Acc|PronType=Art	50	det	_	_
+49	þessi	þessi	DET	D-A	Case=Acc	50	det	_	_
 50	mál	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	47	obl	_	_
 51	jafn	jafn	ADV	ADV	Degree=Pos	52	advmod	_	_
-52	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	47	obl	_	_
+52	mikið	mikill	DET	Q-A	Case=Acc	47	obl	_	_
 53	og	og	ADP	P	_	57	case	_	_
 54	ég	ég	PRON	PRO-N	Case=Nom	57	nsubj	_	_
 55	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	57	aux	_	_
@@ -170,14 +170,14 @@
 4	vægast	vægt	ADV	ADVS	Degree=Sup	5	advmod	_	_
 5	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	6	acl	_	_
 6	óþægilegt	óþægilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	2	punct	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
 8	mér	ég	PRON	PRO-D	Case=Dat	9	nsubj	_	_
 9	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 10	siðferðislega	siðferðislega	ADV	ADV	Degree=Pos	11	amod	_	_
 11	vafasamt	vafasamur	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
 12	að	að	PART	TO	_	13	mark	_	_
 13	rukka	rukka	VERB	VB	VerbForm=Inf	9	xcomp	_	_
-14	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	15	amod	_	_
+14	eitthvað	einhver	DET	Q-A	Case=Acc	15	amod	_	_
 15	slíkt	slíkur	PRON	SUCH-A	Case=Acc	13	obj	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -196,7 +196,7 @@
 # text = Svo er hitt sem kemur alltaf í andlitið á manni, sem er bölvanleg staða ríkissjóðs.
 1	Svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	hitt	hinn	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+3	hitt	hinn	DET	D-N	Case=Nom	0	root	_	_
 4	sem	sem	SCONJ	C	_	5	mark	_	_
 5	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	_
 6	alltaf	alltaf	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -227,7 +227,7 @@
 10	stærðfræðin	stærðfræði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
 11	ekki	ekki	ADV	NEG	_	9	advmod	_	_
 12	tilfinningar	tilfinning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obj	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	9	punct	_	_
+13	,	,	PUNCT	,	_	12	punct	_	_
 14	tölurnar	tala	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	15	nsubj	_	_
 15	hafa	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	9	conj	_	OriginalHead=0
 16	ekki	ekki	ADV	NEG	_	15	advmod	_	_
@@ -237,9 +237,9 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4848116,.11
 # X_ID = ID_missing_14
 # text = Þetta er nokkuð sem ég á stundum í vandræðum með að mynda mér skoðun á þegar kemur að fjárlögum.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	nokkuð	nokkur	DET	Q-N	Case=Nom|Degree=Pos	0	root	_	_
+3	nokkuð	nokkur	DET	Q-N	Case=Nom	0	root	_	_
 4	sem	sem	SCONJ	C	_	6	mark	_	_
 5	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 6	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	_

@@ -8,7 +8,7 @@
 5	skal	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	7	aux	_	_
 6	aðeins	aðeins	ADV	ADV	Degree=Pos	7	advmod	_	_
 7	útskýra	útskýra	VERB	VB	VerbForm=Inf	0	root	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	7	obj	_	_
+8	þetta	þessi	DET	D-A	Case=Acc	7	obj	_	_
 9	með	með	ADP	P	_	10	case	_	_
 10	sjávarútveginn	sjávarútvegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	7	punct	_	_
@@ -175,7 +175,7 @@
 10	og	og	CCONJ	CONJ	_	11	cc	_	_
 11	taka	taka	VERB	VB	VerbForm=Inf	4	conj	_	_
 12	undir	undir	ADP	P	_	13	case	_	_
-13	það	sá	DET	D-A	Case=Acc|PronType=Art	11	obl	_	_
+13	það	sá	DET	D-A	Case=Acc	11	obl	_	_
 14	sem	sem	SCONJ	C	_	17	mark	_	_
 15	hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	16	amod	_	_
 16	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
@@ -220,7 +220,7 @@
 13	að	að	PART	TO	_	14	mark	_	_
 14	fara	fara	VERB	VB	VerbForm=Inf	10	ccomp	_	_
 15	eftir	eftir	ADP	P	_	17	case	_	_
-16	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	17	det	_	_
+16	þeirri	sá	DET	D-D	Case=Dat	17	det	_	_
 17	skýrslu	skýrsla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
 18	sem	sem	SCONJ	C	_	20	mark	_	_
 19	utanríkismálanefnd	utanríkismálanefnd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	_
@@ -240,7 +240,7 @@
 33	til	til	ADP	P	_	35	case	_	_
 34	að	að	PART	TO	_	35	mark	_	_
 35	nýta	nýta	VERB	VB	VerbForm=Inf	26	obl	_	_
-36	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	37	amod	_	_
+36	alla	allur	DET	Q-A	Case=Acc	37	amod	_	_
 37	kosti	kostur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	35	obj	_	_
 38	EES-samningsins	ees-samningur	PROPN	NPR-G	_	37	nmod:poss	_	SpaceAfter=No
 39	,	,	PUNCT	,	_	38	punct	_	_
@@ -249,13 +249,13 @@
 42	vinna	vinna	VERB	VB	VerbForm=Inf	40	xcomp	_	_
 43	líka	líka	ADV	ALSO	_	42	advmod	_	_
 44	á	á	ADP	P	_	46	case	_	_
-45	þeim	sá	DET	D-D	Case=Dat|PronType=Art	46	det	_	_
+45	þeim	sá	DET	D-D	Case=Dat	46	det	_	_
 46	vettvangi	vettvangur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	42	obl	_	_
 47	en	en	CCONJ	CONJ	_	42	cc	_	_
 48	ekki	ekki	ADV	NEG	_	42	advmod	_	_
 49	bara	bara	ADV	FP	Degree=Pos	42	advmod	_	_
 50	á	á	ADP	P	_	52	case	_	_
-51	þeim	sá	DET	D-D	Case=Dat|PronType=Art	52	det	_	_
+51	þeim	sá	DET	D-D	Case=Dat	52	det	_	_
 52	vettvangi	vettvangur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	42	obl	_	_
 53	sem	sem	SCONJ	C	_	54	mark	_	_
 54	snertir	snerta	VERB	VBPI	Mood=Ind|Tense=Pres	52	acl:relcl	_	_
@@ -303,10 +303,10 @@
 11	um	um	ADP	P	_	13	case	_	_
 12	að	að	PART	TO	_	13	mark	_	_
 13	nýta	nýta	VERB	VB	VerbForm=Inf	9	obl	_	_
-14	það	sá	DET	D-A	Case=Acc|PronType=Art	15	det	_	_
+14	það	sá	DET	D-A	Case=Acc	15	det	_	_
 15	regluverk	regluverk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
 16	og	og	CCONJ	CONJ	_	18	cc	_	_
-17	þau	sá	DET	D-A	Case=Acc|PronType=Art	18	det	_	_
+17	þau	sá	DET	D-A	Case=Acc	18	det	_	_
 18	tæki	tæki	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obj	_	_
 19	og	og	CCONJ	CONJ	_	20	cc	_	_
 20	tól	tól	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	conj	_	_

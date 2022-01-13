@@ -58,14 +58,14 @@
 # text = Ég held hins vegar ef menn ætla að nota þetta mikilvæga mál um nálgunarbann sem réttlætingu á því að afgreiða frumvarpið sem hæstv. innanríkisráðherra mælti fyrir varðandi takmarkanir á auglýsingum á áfengi þá sé það ekki rétt leið.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	hins	hinn	DET	D-G	Case=Gen|PronType=Art	4	det	_	_
+3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
 4	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	_
 5	ef	ef	ADP	P	_	7	case	_	_
 6	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	nsubj	_	_
 7	ætla	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	2	obl	_	_
 8	að	að	PART	TO	_	9	mark	_	_
 9	nota	nota	VERB	VB	VerbForm=Inf	7	xcomp	_	_
-10	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	12	det	_	_
+10	þetta	þessi	DET	D-A	Case=Acc	12	det	_	_
 11	mikilvæga	mikilvægur	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
 12	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
 13	um	um	ADP	P	_	14	case	_	_
@@ -99,14 +99,14 @@
 # sent_id = ALTHINGI_TKG_2011_G-33-4557047,.5
 # X_ID = ID_missing_5
 # text = Sú leið sem hæstv. innanríkisráðherra fer í því máli lýsir ekki bara vantrú á samfélaginu heldur einnig vantrú á að einstaklingar geti tekið ákvörðun fyrir sjálfa sig.
-1	Sú	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Sú	sá	DET	D-N	Case=Nom	2	det	_	_
 2	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 3	sem	sem	SCONJ	C	_	6	mark	_	_
 4	hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
 5	innanríkisráðherra	innanríkisráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
 6	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	2	acl:relcl	_	_
 7	í	í	ADP	P	_	9	case	_	_
-8	því	sá	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
+8	því	sá	DET	D-D	Case=Dat	9	det	_	_
 9	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 10	lýsir	lýsa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 11	ekki	ekki	ADV	NEG	_	13	advmod	_	_
@@ -149,7 +149,7 @@
 16	að	að	SCONJ	C	_	18	mark	_	_
 17	við	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
 18	eigum	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	14	ccomp	_	_
-19	miklu	mikill	DET	Q-D	Case=Dat|Degree=Pos	20	obl	_	_
+19	miklu	mikill	DET	Q-D	Case=Dat	20	obl	_	_
 20	frekar	frekar	ADV	ADVR	Degree=Cmp	18	advmod	_	_
 21	að	að	PART	TO	_	22	mark	_	_
 22	líta	líta	VERB	VB	VerbForm=Inf	18	xcomp	_	_
@@ -160,7 +160,7 @@
 27	áfengisauglýsingar	áfengisauglýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obl	_	_
 28	og	og	CCONJ	CONJ	_	29	cc	_	_
 29	vinna	vinna	VERB	VB	VerbForm=Inf	22	xcomp	_	_
-30	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	29	obj	_	_
+30	þetta	þessi	DET	D-A	Case=Acc	29	obj	_	_
 31	frekar	frekar	ADV	ADVR	Degree=Cmp	29	advmod	_	_
 32	með	með	ADP	P	_	33	case	_	_
 33	fyrirtækjum	fyrirtæki	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	29	obl	_	SpaceAfter=No
@@ -177,7 +177,7 @@
 44	en	en	ADP	P	_	46	case	_	_
 45	að	að	PART	TO	_	46	mark	_	_
 46	fara	fara	VERB	VB	VerbForm=Inf	43	obl	_	_
-47	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	50	det	_	_
+47	þessa	þessi	DET	D-A	Case=Acc	50	det	_	_
 48	dæmigerðu	dæmigerður	ADJ	ADJ-A	Case=Acc|Degree=Pos	50	amod	_	_
 49	vinstri	vinstri	ADJ	ADJ-A	Case=Acc|Degree=Pos	50	amod	_	_
 50	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	46	obj	_	_
@@ -201,7 +201,7 @@
 9	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	10	aux	_	_
 10	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	7	acl:relcl	_	_
 11	á	á	ADP	P	_	14	case	_	_
-12	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	14	det	_	_
+12	þessari	þessi	DET	D-D	Case=Dat	14	det	_	_
 13	sérstöku	sérstakur	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
 14	tillögu	tillaga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
 15	um	um	ADP	P	_	16	case	_	_
@@ -229,7 +229,7 @@
 5	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 6	að	að	PART	TO	_	7	mark	_	_
 7	fara	fara	VERB	VB	VerbForm=Inf	5	xcomp	_	_
-8	þá	sá	DET	D-A	Case=Acc|PronType=Art	9	det	_	_
+8	þá	sá	DET	D-A	Case=Acc	9	det	_	_
 9	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
 10	að	að	PART	TO	_	11	mark	_	_
 11	segja	segja	VERB	VB	VerbForm=Inf	9	xcomp	_	_
@@ -238,12 +238,12 @@
 14	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	16	aux	_	_
 15	ekki	ekki	ADV	NEG	_	16	advmod	_	_
 16	gera	gera	VERB	DO	VerbForm=Inf	11	xcomp	_	_
-17	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	16	obj	_	_
+17	þetta	þessi	DET	D-A	Case=Acc	16	obj	_	_
 18	og	og	CCONJ	CONJ	_	21	cc	_	_
 19	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	21	aux	_	_
 20	ekki	ekki	ADV	NEG	_	21	advmod	_	_
 21	gera	gera	VERB	DO	VerbForm=Inf	16	xcomp	_	_
-22	hitt	hinn	DET	D-A	Case=Acc|PronType=Art	21	obj	_	_
+22	hitt	hinn	DET	D-A	Case=Acc	21	obj	_	_
 23	til	til	ADP	P	_	25	case	_	_
 24	að	að	PART	TO	_	25	advcl	_	_
 25	koma	koma	VERB	VB	VerbForm=Inf	2	obl	_	_
@@ -258,7 +258,7 @@
 # text = Höfum aðeins meiri trú á samfélaginu og einstaklingunum en það og reynum frekar að gera þetta í samvinnu við heimilin og líka fyrirtækin, meira annars íslenska framleiðendur sem munu að öllu óbreyttu verða sérstaklega og miklu frekar en erlendir framleiðendur fyrir tjóni af þessari tillögu sem menn ætla sér hugsanlega að afgreiða.
 1	Höfum	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	aðeins	aðeins	PART	FP	Degree=Pos	3	amod	_	_
-3	meiri	mikill	DET	QR-A	Case=Acc|Degree=Pos	4	amod	_	_
+3	meiri	mikill	DET	QR-A	Case=Acc	4	amod	_	_
 4	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
 5	á	á	ADP	P	_	6	case	_	_
 6	samfélaginu	samfélag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
@@ -271,7 +271,7 @@
 13	frekar	frekar	ADV	ADVR	Degree=Cmp	12	advmod	_	_
 14	að	að	PART	TO	_	15	mark	_	_
 15	gera	gera	VERB	DO	VerbForm=Inf	12	xcomp	_	_
-16	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	15	obj	_	_
+16	þetta	þessi	DET	D-A	Case=Acc	15	obj	_	_
 17	í	í	ADP	P	_	18	case	_	_
 18	samvinnu	samvinna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
 19	við	við	ADP	P	_	20	case	_	_
@@ -287,12 +287,12 @@
 29	sem	sem	SCONJ	C	_	34	mark	_	_
 30	munu	munu	AUX	MDPI	Mood=Ind|Tense=Pres	34	aux	_	_
 31	að	að	ADP	P	_	32	case	_	_
-32	öllu	allur	DET	Q-D	Case=Dat|Degree=Pos	34	obl	_	_
+32	öllu	allur	DET	Q-D	Case=Dat	34	obl	_	_
 33	óbreyttu	óbreyttur	ADJ	ADJ-D	Case=Dat|Degree=Pos	32	amod	_	_
 34	verða	verða	VERB	RD	VerbForm=Inf	28	acl:relcl	_	_
 35	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	34	advmod	_	_
 36	og	og	CCONJ	CONJ	_	38	cc	_	_
-37	miklu	mikill	DET	Q-D	Case=Dat|Degree=Pos	38	obl	_	_
+37	miklu	mikill	DET	Q-D	Case=Dat	38	obl	_	_
 38	frekar	frekar	ADV	ADVR	Degree=Cmp	35	conj	_	_
 39	en	en	ADP	P	_	41	case	_	_
 40	erlendir	erlendur	ADJ	ADJ-N	Case=Nom|Degree=Pos	41	amod	_	_
@@ -300,7 +300,7 @@
 42	fyrir	fyrir	ADP	P	_	43	case	_	_
 43	tjóni	tjón	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	_
 44	af	af	ADP	P	_	46	case	_	_
-45	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	46	det	_	_
+45	þessari	þessi	DET	D-D	Case=Dat	46	det	_	_
 46	tillögu	tillaga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	_
 47	sem	sem	SCONJ	C	_	49	mark	_	_
 48	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	49	nsubj	_	_
@@ -315,7 +315,7 @@
 # X_IDs = ID_missing_12 ; ID_missing_13
 # text = Hugsum þetta því aðeins stærra og öndum aðeins rólegar.
 1	Hugsum	hugsa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-2	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	1	obj	_	_
+2	þetta	þessi	DET	D-A	Case=Acc	1	obj	_	_
 3	því	það	PRON	PRO-D	Case=Dat	1	obl	_	_
 4	aðeins	aðeins	ADV	ADV	Degree=Pos	1	advmod	_	_
 5	stærra	stórt	ADV	ADVR	Degree=Cmp	4	advmod	_	_
@@ -386,7 +386,7 @@
 11	fyrsta	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	12	amod	_	_
 12	val	val	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	xcomp	_	_
 13	í	í	ADP	P	_	15	case	_	_
-14	hvert	hver	DET	Q-A	Case=Acc|Degree=Pos	15	amod	_	_
+14	hvert	hver	DET	Q-A	Case=Acc	15	amod	_	_
 15	sinn	sinn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
 16	sem	sem	SCONJ	C	_	17	mark	_	_
 17	farið	fara	VERB	VBN	Tense=Past|VerbForm=Part	15	acl:relcl	_	_

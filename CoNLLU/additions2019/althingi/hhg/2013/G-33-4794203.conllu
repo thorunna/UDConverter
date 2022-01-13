@@ -18,7 +18,7 @@
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	heyrt	heyra	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-4	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	3	obj	_	_
+4	þetta	þessi	DET	D-A	Case=Acc	3	obj	_	_
 5	líka	líka	ADV	ALSO	_	3	advmod	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	5	punct	_	_
 7	að	að	SCONJ	C	_	9	mark	_	_
@@ -48,7 +48,7 @@
 11	bara	bara	ADV	FP	Degree=Pos	17	advmod	_	_
 12	ekki	ekki	ADV	NEG	_	17	advmod	_	_
 13	nógu	nógur	ADJ	ADJ-D	Case=Dat|Degree=Pos	15	obl	_	_
-14	margt	margur	DET	Q-N	Case=Nom|Degree=Pos	15	amod	_	_
+14	margt	margur	DET	Q-N	Case=Nom	15	amod	_	_
 15	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	obl	_	_
 16	að	að	PART	TO	_	17	mark	_	_
 17	krukka	krukka	VERB	VB	VerbForm=Inf	7	ccomp	_	_
@@ -142,12 +142,12 @@
 7	og	og	CCONJ	CONJ	_	14	cc	_	_
 8	þarna	þarna	ADV	ADV	Degree=Pos	14	advmod	_	_
 9	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	14	cop	_	_
-10	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	14	amod	_	_
+10	margir	margur	DET	Q-N	Case=Nom	14	amod	_	_
 11	ungir	ungur	ADJ	ADJ-N	Case=Nom|Degree=Pos	14	amod	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	11	punct	_	_
 13	snjallir	snjall	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
 14	krakkar	krakki	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	conj	_	OriginalHead=0|SpaceAfter=No
-15	,	,	PUNCT	,	_	3	punct	_	_
+15	,	,	PUNCT	,	_	14	punct	_	_
 16	ég	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
 17	get	geta	AUX	MDPI	Mood=Ind|Tense=Pres	18	aux	_	_
 18	lofað	lofa	VERB	VBN	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0
@@ -185,7 +185,7 @@
 50	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	47	obl	_	SpaceAfter=No
 51	,	,	PUNCT	,	_	52	punct	_	_
 52	áhuga	áhugi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	50	conj	_	_
-53	og	og	CCONJ	CONJ	_	54	cc	_	_
+53	og	og	CCONJ	CONJ	_	50	cc	_	_
 54	ástæðu	ástæða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	50	conj	_	SpaceAfter=No
 55	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -238,7 +238,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4794203,.9
 # X_IDs = ID_missing_13 ; ID_missing_14
 # text = Þetta eru jú vélheilar í raun og veru og koma ekki í stað gildismats, koma ekki í stað dómgreindar manneskju.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	jú	jú	ADV	ADV	Degree=Pos	4	advmod	_	_
 4	vélheilar	vélheili	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
@@ -305,28 +305,28 @@
 2	þau	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 4	bara	bara	ADV	FP	Degree=Pos	5	advmod	_	_
-5	aðgengileg	aðgengilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	14	obl	_	_
-6	þeim	sá	DET	D-D	Case=Dat|PronType=Art	5	obl	_	_
+5	aðgengileg	aðgengilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	21	obl	_	_
+6	þeim	sá	DET	D-D	Case=Dat	5	obl	_	_
 7	sem	sem	SCONJ	C	_	8	mark	_	_
 8	vinna	vinna	VERB	VBPI	Mood=Ind|Tense=Pres	6	acl:relcl	_	_
 9	með	með	ADP	P	_	10	case	_	_
 10	þau	það	PRON	PRO-A	Case=Acc	8	obl	_	_
-11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
-12	næstum	næstum	ADV	ADV	Degree=Pos	14	advmod	_	_
+11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	21	cop	_	_
+12	næstum	næstum	ADV	ADV	Degree=Pos	21	advmod	_	_
 13	því	það	PRON	PRO-D	Case=Dat	12	obl	_	_
-14	öruggt	öruggur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+14	öruggt	öruggur	ADJ	ADJ-N	Case=Nom|Degree=Pos	21	amod	_	_
 15	að	að	ADP	P	_	17	case	_	_
 16	mínu	minn	PRON	PRO-D	Case=Dat	17	nmod:poss	_	_
-17	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
+17	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	SpaceAfter=No
 18	,	,	PUNCT	,	_	17	punct	_	_
 19	jafnvel	jafnvel	ADV	ADV	Degree=Pos	21	advmod	_	_
 20	hjá	hjá	ADP	P	_	21	case	_	_
-21	einkaaðilum	einkaaðili	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	parataxis	_	_
+21	einkaaðilum	einkaaðili	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	0	root	_	_
 22	hugsanlega	hugsanlega	ADV	ADV	Degree=Pos	21	advmod	_	SpaceAfter=No
 23	,	,	PUNCT	,	_	22	punct	_	_
 24	að	að	SCONJ	C	_	26	mark	_	_
 25	þau	það	PRON	PRO-N	Case=Nom	26	nsubj	_	_
-26	sitji	sitja	VERB	VBPS	Mood=Sub|Tense=Pres	14	ccomp	_	_
+26	sitji	sitja	VERB	VBPS	Mood=Sub|Tense=Pres	21	ccomp	_	_
 27	bara	bara	ADV	FP	Degree=Pos	26	advmod	_	_
 28	eftir	eftir	ADV	ADV	Degree=Pos	26	advmod	_	_
 29	og	og	CCONJ	CONJ	_	30	cc	_	_
@@ -336,7 +336,7 @@
 33	takt	taktur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	_
 34	við	við	ADP	P	_	35	case	_	_
 35	tímann	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obl	_	SpaceAfter=No
-36	.	.	PUNCT	.	_	14	punct	_	_
+36	.	.	PUNCT	.	_	21	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4794203,.13
 # X_ID = ID_missing_18
@@ -368,7 +368,7 @@
 # text = Það er einn lokapunktur um gegnsæi sem mig langar að benda á sem er sá að gegnsæi kemur ekki sjálfkrafa.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	einn	einn	DET	ONE-N	Case=Nom|Number=Sing	4	det	_	_
+3	einn	einn	DET	ONE-N	Case=Nom	4	det	_	_
 4	lokapunktur	lokapunktur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 5	um	um	ADP	P	_	6	case	_	_
 6	gegnsæi	gegnsæi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
@@ -380,7 +380,7 @@
 12	á	á	ADP	P	_	11	obl	_	_
 13	sem	sem	SCONJ	C	_	15	mark	_	_
 14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
-15	sá	sá	DET	D-N	Case=Nom|PronType=Art	4	acl:relcl	_	_
+15	sá	sá	DET	D-N	Case=Nom	4	acl:relcl	_	_
 16	að	að	SCONJ	C	_	18	mark	_	_
 17	gegnsæi	gegnsæi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
 18	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	15	ccomp	_	_
@@ -403,7 +403,7 @@
 10	að	að	PART	TO	_	11	mark	_	_
 11	fela	fela	VERB	VB	VerbForm=Inf	9	xcomp	_	_
 12	gögnin	gagn	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	1	punct	_	_
+13	,	,	PUNCT	,	_	11	punct	_	_
 14	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	15	expl	_	_
 15	kostar	kosta	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
 16	vinnu	vinna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obj	_	_
@@ -413,7 +413,7 @@
 20	gera	gera	VERB	DO	VerbForm=Inf	15	xcomp	_	_
 21	hlutina	hlutur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	nsubj	_	_
 22	gegnsæja	gegnsær	ADJ	ADJ-A	Case=Acc|Degree=Pos	20	ccomp	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	1	punct	_	_
+23	,	,	PUNCT	,	_	20	punct	_	_
 24	þess	það	PRON	PRO-G	Case=Gen	26	obl	_	_
 25	vegna	vegna	ADP	P	_	24	case	_	_
 26	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
@@ -436,15 +436,15 @@
 # text = Það þarf enga spillingu, það er nóg að gera ekki neitt.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	enga	enginn	DET	Q-A	Case=Acc|Degree=Pos	4	amod	_	_
+3	enga	enginn	DET	Q-A	Case=Acc	4	amod	_	_
 4	spillingu	spilling	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	2	punct	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
 6	það	það	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
 8	nóg	nógur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
 9	að	að	PART	TO	_	10	mark	_	_
 10	gera	gera	VERB	DO	VerbForm=Inf	8	xcomp	_	_
 11	ekki	ekki	ADV	NEG	_	10	advmod	_	_
-12	neitt	neinn	DET	Q-A	Case=Acc|Degree=Pos	10	obj	_	SpaceAfter=No
+12	neitt	neinn	DET	Q-A	Case=Acc	10	obj	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 

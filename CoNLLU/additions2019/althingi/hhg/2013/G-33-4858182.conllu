@@ -12,7 +12,7 @@
 9	fyrir	fyrir	ADP	P	_	10	case	_	_
 10	mig	ég	PRON	PRO-A	Case=Acc	8	obl	_	_
 11	í	í	ADP	P	_	13	case	_	_
-12	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	13	det	_	_
+12	þessu	þessi	DET	D-D	Case=Dat	13	det	_	_
 13	efni	efni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
 14	en	en	CCONJ	CONJ	_	17	cc	_	_
 15	fyrir	fyrir	ADP	P	_	16	case	_	_
@@ -23,13 +23,13 @@
 20	fremst	harla	ADV	ADVS	Degree=Sup	18	conj	_	_
 21	að	að	PART	TO	_	22	mark	_	_
 22	sannfæra	sannfæra	VERB	VB	VerbForm=Inf	17	xcomp	_	_
-23	hið	hinn	DET	D-A	Case=Acc|PronType=Art	25	det	_	_
+23	hið	hinn	DET	D-A	Case=Acc	25	det	_	_
 24	háa	hár	ADJ	ADJ-A	Case=Acc|Degree=Pos	25	amod	_	_
 25	Alþingi	alþingi	PROPN	NPR-A	_	22	obj	_	_
 26	um	um	ADP	P	_	28	case	_	_
 27	að	að	PART	TO	_	28	mark	_	_
 28	leggja	leggja	VERB	VB	VerbForm=Inf	22	obl	_	_
-29	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	30	det	_	_
+29	þetta	þessi	DET	D-A	Case=Acc	30	det	_	_
 30	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obj	_	_
 31	til	til	ADP	P	_	32	case	_	_
 32	hliðar	hlið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	28	obl	_	_
@@ -62,7 +62,7 @@
 3	sögðu	segja	VERB	VAN-D	Case=Dat|Tense=Past|VerbForm=Part	12	obl	_	SpaceAfter=No
 4	,	,	PUNCT	,	_	3	punct	_	_
 5	ef	ef	ADP	P	_	8	case	_	_
-6	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	7	det	_	_
+6	þetta	þessi	DET	D-N	Case=Nom	7	det	_	_
 7	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 8	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	12	obl	_	_
 9	að	að	PART	TO	_	10	mark	_	_
@@ -87,7 +87,7 @@
 # X_ID = ID_missing_4
 # text = Í því ljósi er alveg sjálfsagt að ræða það aftur og áfram í nefnd til að reyna að finna þá eitthvað til að gera það skárra.
 1	Í	í	ADP	P	_	3	case	_	_
-2	því	sá	DET	D-D	Case=Dat|PronType=Art	3	det	_	_
+2	því	sá	DET	D-D	Case=Dat	3	det	_	_
 3	ljósi	ljós	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 5	alveg	alveg	ADV	ADV	Degree=Pos	6	amod	_	_
@@ -106,7 +106,7 @@
 18	að	að	PART	TO	_	19	mark	_	_
 19	finna	finna	VERB	VB	VerbForm=Inf	17	xcomp	_	_
 20	þá	þá	ADV	ADV	Degree=Pos	19	advmod	_	_
-21	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	19	obj	_	_
+21	eitthvað	einhver	DET	Q-A	Case=Acc	19	obj	_	_
 22	til	til	ADP	P	_	24	case	_	_
 23	að	að	PART	TO	_	24	mark	_	_
 24	gera	gera	VERB	DO	VerbForm=Inf	21	obl	_	_
@@ -120,7 +120,7 @@
 1	Persónulega	persónulega	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-4	enga	enginn	DET	Q-A	Case=Acc|Degree=Pos	5	amod	_	_
+4	enga	enginn	DET	Q-A	Case=Acc	5	amod	_	_
 5	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 6	á	á	ADP	P	_	7	case	_	_
 7	því	það	PRON	PRO-D	Case=Dat	5	obl	_	SpaceAfter=No
@@ -135,7 +135,7 @@
 4	hvíla	hvíla	VERB	VB-1	VerbForm=Inf	2	ccomp	_	_
 5	þurfi	þurfa	VERB	VBPS	Mood=Sub|Tense=Pres	4	dep	_	_
 6	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	2	punct	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
 8	við	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
 9	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 10	að	að	PART	TO	_	11	mark	_	_
@@ -160,7 +160,7 @@
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 4	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 5	á	á	ADP	P	_	7	case	_	_
-6	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	7	det	_	_
+6	þessu	þessi	DET	D-D	Case=Dat	7	det	_	_
 7	frumvarpi	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 

@@ -35,7 +35,7 @@
 # X_ID = ID_missing_2
 # text = Á hinn bóginn vil ég undirstrika varðandi veiðileyfagjaldið að við tengjum nýtingarsamninga.
 1	Á	á	ADP	P	_	3	case	_	_
-2	hinn	hinn	DET	D-A	Case=Acc|PronType=Art	3	det	_	_
+2	hinn	hinn	DET	D-A	Case=Acc	3	det	_	_
 3	bóginn	bógur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 4	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
 5	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
@@ -72,10 +72,10 @@
 19	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	18	cop	_	_
 20	upp	upp	ADP	RP	_	18	compound:prt	_	_
 21	í	í	ADP	P	_	23	case	_	_
-22	báðum	báðir	DET	Q-D	Case=Dat|Degree=Pos	23	amod	_	_
+22	báðum	báðir	DET	Q-D	Case=Dat	23	amod	_	_
 23	frumvörpunum	frumvarp	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	_
 24	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	27	cop	_	_
-25	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	26	obl	_	_
+25	allt	allur	DET	Q-A	Case=Acc	26	obl	_	_
 26	of	of	ADV	ADV	Degree=Pos	27	amod	_	_
 27	skammur	skammur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	ccomp	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	2	punct	_	_
@@ -85,7 +85,7 @@
 # text = Hann er allt of skammur og ef við tengjum hann til dæmis við orkuna erum við kannski að tala um 30 40 ár, jafnvel 60 ár.
 1	Hann	hann	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-3	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	4	obl	_	_
+3	allt	allur	DET	Q-A	Case=Acc	4	obl	_	_
 4	of	of	ADV	ADV	Degree=Pos	5	amod	_	_
 5	skammur	skammur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	og	og	CCONJ	CONJ	_	19	cc	_	_
@@ -193,7 +193,7 @@
 2	málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	15	obl	_	_
 4	með	með	ADP	P	_	6	case	_	_
-5	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	6	det	_	_
+5	þessum	þessi	DET	D-D	Case=Dat	6	det	_	_
 6	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
 7	í	í	ADP	P	_	9	case	_	_
 8	gegnum	gegnum	ADP	P	_	9	case	_	_
@@ -211,7 +211,7 @@
 20	gagnvart	gagnvart	ADP	P	_	21	case	_	_
 21	þingnefndinni	þingnefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
 22	í	í	ADP	P	_	24	case	_	_
-23	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	24	det	_	_
+23	þessu	þessi	DET	D-D	Case=Dat	24	det	_	_
 24	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
 25	?	?	PUNCT	.	_	15	punct	_	_
 

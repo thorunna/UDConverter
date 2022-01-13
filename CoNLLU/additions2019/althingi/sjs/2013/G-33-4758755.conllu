@@ -8,7 +8,7 @@
 5	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 6	við	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 7	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	5	ccomp	_	_
-8	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	7	obj	_	_
+8	meira	mikill	DET	QR-A	Case=Acc	7	obj	_	_
 9	en	en	ADP	P	_	14	case	_	_
 10	andsvör	andsvar	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
 11	og	og	CCONJ	CONJ	_	14	cc	_	_
@@ -50,8 +50,8 @@
 4	á	á	ADP	P	_	6	case	_	_
 5	sínum	sinn	PRON	PRO-D	Case=Dat	6	nmod:poss	_	_
 6	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
-7	hinar	hinn	DET	D-N	Case=Nom|PronType=Art	9	det	_	_
-8	miklu	mikill	DET	Q-N	Case=Nom|Degree=Pos	9	amod	_	_
+7	hinar	hinn	DET	D-N	Case=Nom	9	det	_	_
+8	miklu	mikill	DET	Q-N	Case=Nom	9	amod	_	_
 9	sveiflur	sveifla	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 10	í	í	ADP	P	_	15	case	_	_
 11	okkar	ég	PRON	PRO-G	Case=Gen	15	nmod:poss	_	_
@@ -113,7 +113,7 @@
 18	stórum	stór	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
 19	þætti	þáttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
 20	eftir	eftir	ADP	P	_	21	case	_	_
-21	því	sá	DET	D-D	Case=Dat|PronType=Art	15	obl	_	_
+21	því	sá	DET	D-D	Case=Dat	15	obl	_	_
 22	sem	sem	SCONJ	C	_	24	mark	_	_
 23	á	á	ADP	RP	_	24	compound:prt	_	_
 24	leið	líða	VERB	VBDI	Mood=Ind|Tense=Past	21	acl:relcl	_	SpaceAfter=No
@@ -126,7 +126,7 @@
 2	grunninn	grunnur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
 3	aftengir	aftengja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	hún	hún	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-5	eitt	einn	DET	ONE-A	Case=Acc|Number=Sing	6	det	_	_
+5	eitt	einn	DET	ONE-A	Case=Acc	6	det	_	_
 6	element	element	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
 7	sem	sem	SCONJ	C	_	8	mark	_	_
 8	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	6	acl:relcl	_	_
@@ -138,7 +138,7 @@
 14	að	að	ADP	P	_	16	case	_	_
 15	vissu	viss	ADJ	ADJ-D	Case=Dat|Degree=Pos	16	amod	_	_
 16	marki	mark	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	3	punct	_	_
+17	,	,	PUNCT	,	_	8	punct	_	_
 18	það	það	PRON	PRO-N	Case=Nom	20	nsubj	_	_
 19	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
 20	það	það	PRON	PRO-N	Case=Nom	3	conj	_	OriginalHead=0
@@ -167,12 +167,12 @@
 9	verðtrygging	verðtrygging	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	acl:relcl	_	_
 10	eða	eða	CCONJ	CONJ	_	13	cc	_	_
 11	a.	að	ADP	P	_	13	case	_	SpaceAfter=No
-12	m.	lítill	DET	Q-D	Case=Dat|Degree=Pos	13	amod	_	SpaceAfter=No
+12	m.	lítill	DET	Q-D	Case=Dat	13	amod	_	SpaceAfter=No
 13	k.	kostur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	conj	_	_
 14	ekki	ekki	ADV	NEG	_	13	advmod	_	_
 15	umfangsmikil	umfangsmikill	ADJ	ADJ-N	Case=Nom|Degree=Pos	16	amod	_	_
 16	verðtrygging	verðtrygging	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	2	punct	_	_
+17	,	,	PUNCT	,	_	13	punct	_	_
 18	dæmi	dæmi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	_
 19	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
 20	Bretland	bretland	PROPN	NPR-N	_	2	conj	_	OriginalHead=0
@@ -183,10 +183,10 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4758755,.6
 # X_ID = ID_missing_10
 # text = Þar hefur verið verðbólga sem hefur bitið dálítið í í Bretlandi enda hafa Bretar verið í miklum erfiðleikum.
-1	Þar	þar	ADV	ADV	Degree=Pos	2	advmod	_	_
-2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	2	cop	_	_
-4	verðbólga	verðbólga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+1	Þar	þar	ADV	ADV	Degree=Pos	18	advmod	_	_
+2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	18	aux	_	_
+3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	18	cop	_	_
+4	verðbólga	verðbólga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
 5	sem	sem	SCONJ	C	_	7	mark	_	_
 6	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	7	aux	_	_
 7	bitið	bíta	VERB	VBN	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
@@ -196,12 +196,12 @@
 11	Bretlandi	bretland	PROPN	NPR-D	_	7	obl	_	_
 12	enda	enda	ADV	ADV	Degree=Pos	18	advmod	_	_
 13	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	18	aux	_	_
-14	Bretar	breti	PROPN	NPRS-N	_	18	nsubj	_	_
+14	Bretar	breti	PROPN	NPRS-N	_	18	obl	_	_
 15	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	18	cop	_	_
 16	í	í	ADP	P	_	18	case	_	_
 17	miklum	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	18	amod	_	_
-18	erfiðleikum	erfiðleiki	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	parataxis	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	2	punct	_	_
+18	erfiðleikum	erfiðleiki	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	18	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4758755,.7
 # X_ID = ID_missing_11
@@ -224,7 +224,7 @@
 8	í	í	ADP	P	_	9	case	_	_
 9	Bretlandi	bretland	PROPN	NPR-D	_	7	obl	_	_
 10	við	við	ADP	P	_	12	case	_	_
-11	þær	sá	DET	D-A	Case=Acc|PronType=Art	12	det	_	_
+11	þær	sá	DET	D-A	Case=Acc	12	det	_	_
 12	aðstæður	aðstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	7	punct	_	_
 
@@ -243,42 +243,42 @@
 10	til	til	ADP	P	_	11	case	_	_
 11	hliðar	hlið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	obl	_	_
 12	í	í	ADP	P	_	14	case	_	_
-13	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	14	det	_	_
+13	þessum	þessi	DET	D-D	Case=Dat	14	det	_	_
 14	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4758755,.10
 # X_ID = ID_missing_14
 # text = Það er ekki aðeins þannig að verðgildið haldist heldur oftryggir verðtryggingin í raun fjármuni.
-1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
-4	aðeins	aðeins	PART	FP	Degree=Pos	0	root	_	_
-5	þannig	þannig	ADV	ADV	Degree=Pos	4	advmod	_	_
+1	Það	það	PRON	PRO-N	Case=Nom	10	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
+3	ekki	ekki	ADV	NEG	_	10	advmod	_	_
+4	aðeins	aðeins	ADV	FP	Degree=Pos	10	advmod	_	_
+5	þannig	þannig	ADV	ADV	Degree=Pos	10	advmod	_	_
 6	að	að	SCONJ	C	_	8	mark	_	_
 7	verðgildið	verðgildi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 8	haldist	halda	VERB	VBPS	Mood=Sub|Tense=Pres	5	advcl	_	_
 9	heldur	heldur	ADV	ADVR	Degree=Cmp	10	advmod	_	_
-10	oftryggir	oftryggja	VERB	VBPI	Mood=Ind|Tense=Pres	4	parataxis	_	_
-11	verðtryggingin	verðtrygging	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+10	oftryggir	oftryggja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+11	verðtryggingin	verðtrygging	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	obl	_	_
 12	í	í	ADP	P	_	13	case	_	_
 13	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
 14	fjármuni	fjármunir	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	4	punct	_	_
+15	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4758755,.11
 # X_ID = ID_missing_15
 # text = Þetta skekkir margt sem við er að eiga í þessu efni.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	skekkir	skekkja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	margt	margur	DET	Q-A	Case=Acc|Degree=Pos	2	obj	_	_
+3	margt	margur	DET	Q-A	Case=Acc	2	obj	_	_
 4	sem	sem	SCONJ	C	_	7	mark	_	_
 5	við	við	ADP	P	_	7	obl	_	_
 6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 7	að	að	PART	TO	_	3	acl:relcl	_	_
 8	eiga	eiga	VERB	VB	VerbForm=Inf	7	amod	_	_
 9	í	í	ADP	P	_	11	case	_	_
-10	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	11	det	_	_
+10	þessu	þessi	DET	D-D	Case=Dat	11	det	_	_
 11	efni	efni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -288,12 +288,12 @@
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
-4	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
+4	þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
 5	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	6	cop	_	_
 6	sambland	sambland	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	_
 7	af	af	ADP	P	_	9	case	_	_
 8	svo	svo	ADV	ADV	Degree=Pos	9	advmod	_	_
-9	mörgu	margur	DET	Q-D	Case=Dat|Degree=Pos	6	obl	_	_
+9	mörgu	margur	DET	Q-D	Case=Dat	6	obl	_	_
 10	á	á	ADP	P	_	11	case	_	_
 11	Íslandi	ísland	PROPN	NPR-D	_	6	obl	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	2	punct	_	_
@@ -302,8 +302,8 @@
 15	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
 16	að	að	PART	TO	_	17	mark	_	_
 17	tilgreina	tilgreina	VERB	VB	VerbForm=Inf	15	xcomp	_	_
-18	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	17	obj	_	_
-19	eitt	einn	DET	ONE-A	Case=Acc|Number=Sing	18	amod	_	SpaceAfter=No
+18	eitthvað	einhver	DET	Q-A	Case=Acc	17	obj	_	_
+19	eitt	einn	DET	ONE-A	Case=Acc	18	amod	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4758755,.13
@@ -327,7 +327,7 @@
 16	þróað	þróa	VERB	VAN	Tense=Past|VerbForm=Part	17	acl	_	_
 17	ríki	ríki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	advcl	_	_
 18	með	með	ADP	P	_	21	case	_	_
-19	einhvern	einhver	DET	Q-A	Case=Acc|Degree=Pos	21	amod	_	_
+19	einhvern	einhver	DET	Q-A	Case=Acc	21	amod	_	_
 20	umtalsverðan	umtalsverður	ADJ	ADJ-A	Case=Acc|Degree=Pos	21	amod	_	_
 21	hagvöxt	hagvöxtur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
 22	og	og	CCONJ	CONJ	_	24	cc	_	_
@@ -365,7 +365,7 @@
 6	eðlilega	eðlilega	ADV	ADV	Degree=Pos	7	advmod	_	_
 7	ungæðisbragur	ungæðisbragur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 8	á	á	ADP	P	_	9	case	_	_
-9	ýmsu	ýmis	DET	Q-D	Case=Dat|Degree=Pos	7	obl	_	_
+9	ýmsu	ýmis	DET	Q-D	Case=Dat	7	obl	_	_
 10	hjá	hjá	ADP	P	_	11	case	_	_
 11	okkur	ég	PRON	PRO-D	Case=Dat	7	obl	_	_
 12	þegar	þegar	ADP	P	_	17	case	_	_

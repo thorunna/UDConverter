@@ -21,7 +21,7 @@
 18	að	að	PART	TO	_	19	mark	_	_
 19	bjóða	bjóða	VERB	VB	VerbForm=Inf	7	obl	_	_
 20	út	út	ADP	RP	_	19	compound:prt	_	_
-21	þessar	þessi	DET	D-A	Case=Acc|PronType=Art	19	obj	_	_
+21	þessar	þessi	DET	D-A	Case=Acc	19	obj	_	_
 22	hlutdeildir	hlutdeildur	ADJ	ADJ-A	Case=Acc|Degree=Pos	21	amod	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	7	punct	_	_
 
@@ -42,11 +42,11 @@
 # sent_id = ALTHINGI_BO_2015_G-33-4594314,.3
 # X_IDs = ID_missing_3 ; ID_missing_4
 # text = Við viljum ekki hafa þetta 100<percent> á algjörlega opnum markaði, ekki enn sem komið er, og þá tala ég fyrir sjálfa mig.
-1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	viljum	vilja	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
-4	hafa	hafa	AUX	HV	VerbForm=Inf	2	aux	_	_
-5	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	2	ccomp	_	_
+1	Við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+2	viljum	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	13	aux	_	_
+3	ekki	ekki	ADV	NEG	_	13	advmod	_	_
+4	hafa	hafa	AUX	HV	VerbForm=Inf	13	aux	_	_
+5	þetta	þessi	DET	D-A	Case=Acc	13	ccomp	_	_
 6	100	hundrað	NUM	NUM-A	Case=Acc	7	nummod	_	SpaceAfter=No
 7	<percent>	prósent	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
 8	á	á	ADP	P	_	7	case	_	_
@@ -54,20 +54,20 @@
 10	opnum	opinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	11	amod	_	_
 11	markaði	markaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	11	punct	_	_
-13	ekki	ekki	ADV	NEG	_	2	parataxis	_	_
+13	ekki	ekki	ADV	NEG	_	0	root	_	_
 14	enn	enn	ADV	ADV	Degree=Pos	13	advmod	_	_
 15	sem	sem	SCONJ	C	_	16	mark	_	_
 16	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	14	advcl	_	_
 17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	2	punct	_	_
+18	,	,	PUNCT	,	_	16	punct	_	_
 19	og	og	CCONJ	CONJ	_	21	cc	_	_
 20	þá	þá	ADV	ADV	Degree=Pos	21	advmod	_	_
-21	tala	tala	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+21	tala	tala	VERB	VBPI	Mood=Ind|Tense=Pres	13	conj	_	OriginalHead=0
 22	ég	ég	PRON	PRO-N	Case=Nom	21	nsubj	_	_
 23	fyrir	fyrir	ADP	P	_	24	case	_	_
 24	sjálfa	sjálfur	PRON	PRO-A	Case=Acc	21	obl	_	_
 25	mig	ég	PRON	PRO-A	Case=Acc	24	nmod	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	2	punct	_	_
+26	.	.	PUNCT	.	_	13	punct	_	_
 
 # sent_id = ALTHINGI_BO_2015_G-33-4594314,.4
 # X_ID = ID_missing_5
@@ -79,7 +79,7 @@
 5	að	að	PART	TO	_	6	mark	_	_
 6	skipta	skipta	VERB	VB	VerbForm=Inf	4	xcomp	_	_
 7	því	það	PRON	PRO-D	Case=Dat	6	obj	_	_
-8	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	6	obl	_	_
+8	eitthvað	einhver	DET	Q-A	Case=Acc	6	obl	_	_
 9	upp	upp	ADP	RP	_	6	compound:prt	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -96,7 +96,7 @@
 8	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
 9	mismunandi	mismunandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	_
 10	útgerðaraðilar	útgerðaraðili	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	conj	_	OriginalHead=0|SpaceAfter=No
-11	,	,	PUNCT	,	_	3	punct	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
 12	mismunandi	mismunandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
 13	útgerðarform	útgerðarform	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	conj	_	_
 14	sem	sem	SCONJ	C	_	15	mark	_	_
@@ -114,7 +114,7 @@
 2	varðar	varða	ADV	VBPI	Mood=Ind|Tense=Pres	14	advmod	_	_
 3	leigukvóta	leigukvóti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 4	eða	eða	CCONJ	CONJ	_	6	cc	_	_
-5	þá	sá	DET	D-A	Case=Acc|PronType=Art	6	det	_	_
+5	þá	sá	DET	D-A	Case=Acc	6	det	_	_
 6	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 7	sem	sem	SCONJ	C	_	10	mark	_	_
 8	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
@@ -143,7 +143,7 @@
 31	hlutanum	hluti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obj	_	_
 32	upp	upp	ADP	RP	_	30	compound:prt	_	_
 33	á	á	ADP	P	_	36	case	_	_
-34	einhvern	einhver	DET	Q-A	Case=Acc|Degree=Pos	36	amod	_	_
+34	einhvern	einhver	DET	Q-A	Case=Acc	36	amod	_	_
 35	ákveðinn	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	36	amod	_	_
 36	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	14	punct	_	_

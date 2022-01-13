@@ -36,7 +36,7 @@
 7	vera	vera	AUX	BE	VerbForm=Inf	8	cop	_	_
 8	meðflutningsmenn	meðflutningsmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	xcomp	_	_
 9	á	á	ADP	P	_	11	case	_	_
-10	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	11	det	_	_
+10	þessu	þessi	DET	D-D	Case=Dat	11	det	_	_
 11	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -57,7 +57,7 @@
 12	skýrt	skýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	ccomp	_	_
 13	að	að	SCONJ	C	_	20	mark	_	_
 14	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	16	cop	_	_
-15	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	16	nsubj	_	_
+15	þetta	þessi	DET	D-N	Case=Nom	16	nsubj	_	_
 16	fært	færa	VERB	VAN	Tense=Past|VerbForm=Part	20	advcl	_	_
 17	í	í	ADP	P	_	19	case	_	_
 18	annað	annar	PRON	OTHER-A	Case=Acc	19	det	_	_
@@ -87,7 +87,7 @@
 # text = Það er nokkuð sem þarf að ræða og finna út úr.
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	nokkuð	nokkur	DET	Q-N	Case=Nom|Degree=Pos	0	root	_	_
+3	nokkuð	nokkur	DET	Q-N	Case=Nom	0	root	_	_
 4	sem	sem	SCONJ	C	_	5	mark	_	_
 5	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	_
 6	að	að	PART	TO	_	7	mark	_	_
@@ -104,7 +104,7 @@
 1	Mergur	mergur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 2	málsins	mál	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	nmod:poss	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-4	sá	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+4	sá	sá	DET	D-N	Case=Nom	0	root	_	_
 5	að	að	SCONJ	C	_	7	mark	_	_
 6	mér	ég	PRON	PRO-D	Case=Dat	7	nsubj	_	_
 7	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	4	ccomp	_	_
@@ -118,11 +118,11 @@
 15	ríkið	ríki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	xcomp	_	_
 16	sem	sem	SCONJ	C	_	17	mark	_	_
 17	selji	selja	VERB	VBPS	Mood=Sub|Tense=Pres	11	acl:relcl	_	_
-18	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	19	det	_	_
+18	þessa	þessi	DET	D-A	Case=Acc	19	det	_	_
 19	vöru	vara	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
 20	frekar	frekar	ADV	ADVR	Degree=Cmp	17	advmod	_	_
 21	en	en	ADP	P	_	23	case	_	_
-22	einhverja	einhver	DET	Q-A	Case=Acc|Degree=Pos	23	amod	_	_
+22	einhverja	einhver	DET	Q-A	Case=Acc	23	amod	_	_
 23	aðra	annar	PRON	OTHER-A	Case=Acc	20	obl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -160,14 +160,14 @@
 6	að	að	SCONJ	C	_	8	mark	_	_
 7	það	það	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 8	breytist	breyta	VERB	VBPS	Mood=Sub|Tense=Pres	4	amod	_	_
-9	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	8	obl	_	_
+9	mikið	mikill	DET	Q-A	Case=Acc	8	obl	_	_
 10	eða	eða	CCONJ	CONJ	_	13	cc	_	_
 11	að	að	SCONJ	C	_	13	mark	_	_
 12	salan	sala	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
 13	aukist	auka	VERB	VBPS	Mood=Sub|Tense=Pres	8	conj	_	_
-14	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	13	obl	_	_
+14	mikið	mikill	DET	Q-A	Case=Acc	13	obl	_	_
 15	við	við	ADP	P	_	17	case	_	_
-16	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	17	det	_	_
+16	þessa	þessi	DET	D-A	Case=Acc	17	det	_	_
 17	breytingu	breyting	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	4	punct	_	_
 

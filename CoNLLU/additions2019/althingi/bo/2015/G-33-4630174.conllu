@@ -32,9 +32,9 @@
 14	ferli	ferli	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	nsubj	_	SpaceAfter=No
 15	,	,	PUNCT	,	_	14	punct	_	_
 16	sem	sem	SCONJ	C	_	24	mark	_	_
-17	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	18	amod	_	_
+17	allir	allur	DET	Q-N	Case=Nom	18	amod	_	_
 18	þingmenn	þingmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	24	nsubj	_	_
-19	þess	sá	DET	D-G	Case=Gen|PronType=Art	20	det	_	_
+19	þess	sá	DET	D-G	Case=Gen	20	det	_	_
 20	þings	þing	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	_
 21	sem	sem	SCONJ	C	_	23	mark	_	_
 22	þá	þá	ADV	ADV	Degree=Pos	23	advmod	_	_
@@ -42,8 +42,8 @@
 24	kusu	kjósa	VERB	VBDI	Mood=Ind|Tense=Past	14	acl:relcl	_	_
 25	með	með	ADP	P	_	24	obl	_	SpaceAfter=No
 26	,	,	PUNCT	,	_	25	punct	_	_
-27	hver	hver	DET	Q-N	Case=Nom|Degree=Pos	31	amod	_	_
-28	einn	einn	DET	ONE-N	Case=Nom|Number=Sing	31	amod	_	_
+27	hver	hver	DET	Q-N	Case=Nom	31	amod	_	_
+28	einn	einn	DET	ONE-N	Case=Nom	31	amod	_	_
 29	og	og	CCONJ	CONJ	_	30	cc	_	_
 30	einasti	einasti	ADJ	ADJ-N	Case=Nom|Degree=Pos	28	conj	_	_
 31	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	obl	_	SpaceAfter=No
@@ -60,9 +60,9 @@
 1	Við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	viljum	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	láta	láta	VERB	VB	VerbForm=Inf	0	root	_	_
-4	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	5	nsubj	_	_
+4	þetta	þessi	DET	D-A	Case=Acc	5	nsubj	_	_
 5	þýða	þýða	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-6	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	5	obj	_	SpaceAfter=No
+6	eitthvað	einhver	DET	Q-A	Case=Acc	5	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = ALTHINGI_BO_2015_G-33-4630174,.4
@@ -79,7 +79,7 @@
 9	að	að	SCONJ	C	_	13	mark	_	_
 10	það	það	PRON	PRO-N	Case=Nom	13	nsubj	_	_
 11	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	13	cop	_	_
-12	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	13	amod	_	_
+12	eitthvað	einhver	DET	Q-N	Case=Nom	13	amod	_	_
 13	annað	annar	PRON	OTHER-N	Case=Nom	8	ccomp	_	_
 14	en	en	ADP	P	_	15	case	_	_
 15	það	það	PRON	PRO-N	Case=Nom	13	obl	_	_
@@ -103,13 +103,13 @@
 11	freka	frekur	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
 12	kallinn	kall	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
 13	á	á	ADP	P	_	14	case	_	_
-14	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	10	obl	_	_
+14	þetta	þessi	DET	D-A	Case=Acc	10	obl	_	_
 15	þá	þá	ADV	ADV	Degree=Pos	18	advmod	_	_
 16	geta	geta	AUX	MDPI	Mood=Ind|Tense=Pres	18	aux	_	_
 17	þeir	hann	PRON	PRO-N	Case=Nom	18	nsubj	_	_
 18	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	0	root	_	_
 19	það	það	PRON	PRO-A	Case=Acc	18	obj	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	18	punct	_	_
+20	,	,	PUNCT	,	_	19	punct	_	_
 21	en	en	CCONJ	CONJ	_	23	cc	_	_
 22	þeir	hann	PRON	PRO-N	Case=Nom	23	nsubj	_	_
 23	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	18	conj	_	OriginalHead=0
@@ -118,11 +118,11 @@
 26	það	það	PRON	PRO-A	Case=Acc	25	obj	_	_
 27	í	í	ADP	P	_	29	case	_	_
 28	eigin	eiginn	ADJ	ADJ-D	Case=Dat|Degree=Pos	29	amod	_	_
-29	nafni	nafn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	SpaceAfter=No
+29	nafni	nafn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
 30	,	,	PUNCT	,	_	29	punct	_	_
-31	ekki	ekki	ADV	NEG	_	25	obl	_	_
+31	ekki	ekki	ADV	NEG	_	33	advmod	_	_
 32	í	í	ADP	P	_	33	case	_	_
-33	nafni	nafn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	conj	_	_
+33	nafni	nafn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	conj	_	_
 34	rammaáætlunar	rammaáætlun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	33	nmod:poss	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	18	punct	_	_
 

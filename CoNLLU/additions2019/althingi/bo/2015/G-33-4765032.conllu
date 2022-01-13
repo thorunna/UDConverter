@@ -4,11 +4,11 @@
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
-4	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	5	det	_	_
+4	Þetta	þessi	DET	D-N	Case=Nom	5	det	_	_
 5	frumvarp	frumvarp	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
 7	sannarlega	sannarlega	ADV	ADV	Degree=Pos	10	advmod	_	_
-8	allrar	allur	DET	Q-G	Case=Gen|Degree=Pos	9	amod	_	_
+8	allrar	allur	DET	Q-G	Case=Gen	9	amod	_	_
 9	athygli	athygli	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	obl	_	_
 10	vert	verður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	10	punct	_	_
@@ -23,7 +23,7 @@
 5	hæstv.	hæstvirtur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	iobj	_	_
 6	ráðherra	ráðherra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	conj	_	_
 7	um	um	ADP	P	_	9	case	_	_
-8	það	sá	DET	D-A	Case=Acc|PronType=Art	9	det	_	_
+8	það	sá	DET	D-A	Case=Acc	9	det	_	_
 9	fyrirkomulag	fyrirkomulag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
 10	sem	sem	SCONJ	C	_	12	mark	_	_
 11	hann	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
@@ -35,7 +35,7 @@
 # sent_id = ALTHINGI_BO_2015_G-33-4765032,.3
 # X_ID = ID_missing_3
 # text = Þetta er eins, og hv. þm. Jón Þór Ólafsson benti á, einhvers konar míní-samningaleið sem hann er að færa okkur hér.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	16	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	16	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
 3	eins	eins	ADV	ADVR	Degree=Cmp	16	advmod	_	SpaceAfter=No
 4	,	,	PUNCT	,	_	3	punct	_	_
@@ -48,7 +48,7 @@
 11	benti	benda	VERB	VBDI	Mood=Ind|Tense=Past	3	obl	_	_
 12	á	á	ADP	P	_	11	obl	_	SpaceAfter=No
 13	,	,	PUNCT	,	_	16	punct	_	_
-14	einhvers	einhver	DET	Q-G	Case=Gen|Degree=Pos	15	amod	_	_
+14	einhvers	einhver	DET	Q-G	Case=Gen	15	amod	_	_
 15	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	16	nmod:poss	_	_
 16	míní-samningaleið	míní-samningaleið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 17	sem	sem	SCONJ	C	_	21	mark	_	_
@@ -101,7 +101,7 @@
 12	í	í	ADP	P	_	13	case	_	_
 13	sjávarútvegi	sjávarútvegur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 14	með	með	ADP	P	_	17	case	_	_
-15	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	17	det	_	_
+15	þessa	þessi	DET	D-A	Case=Acc	17	det	_	_
 16	ákveðnu	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	17	amod	_	_
 17	tegund	tegund	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 18	af	af	ADP	P	_	19	case	_	_
@@ -126,7 +126,7 @@
 37	tækifæri	tækifæri	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	35	nsubj	_	_
 38	til	til	ADP	P	_	43	case	_	_
 39	að	að	SCONJ	C	_	43	mark	_	_
-40	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	42	det	_	_
+40	þessi	þessi	DET	D-N	Case=Nom	42	det	_	_
 41	stöndugu	stöndugur	ADJ	ADJ-N	Case=Nom|Degree=Pos	42	amod	_	_
 42	fyrirtæki	fyrirtæki	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	43	nsubj	_	_
 43	færu	fara	VERB	VBDS	Mood=Sub|Tense=Past	37	obl	_	_

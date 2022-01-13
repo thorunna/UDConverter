@@ -7,7 +7,7 @@
 4	Það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 6	nákvæmlega	nákvæmlega	ADV	ADV	Degree=Pos	7	advmod	_	_
-7	það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+7	það	sá	DET	D-N	Case=Nom	0	root	_	_
 8	sem	sem	SCONJ	C	_	11	mark	_	_
 9	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 10	skulum	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	11	aux	_	_
@@ -36,7 +36,7 @@
 17	?	?	PUNCT	.	_	16	punct	_	_
 18	að	að	PART	TO	_	19	mark	_	_
 19	leggja	leggja	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-20	hinn	hinn	DET	D-A	Case=Acc|PronType=Art	24	det	_	_
+20	hinn	hinn	DET	D-A	Case=Acc	24	det	_	_
 21	afkastamikla	afkastamikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	24	amod	_	_
 22	og	og	CCONJ	CONJ	_	23	cc	_	_
 23	dýra	dýr	ADJ	ADJ-A	Case=Acc|Degree=Pos	21	conj	_	_
@@ -61,10 +61,10 @@
 1	Það	það	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	8	cop	_	_
 3	meðal	meðal	ADP	P	_	4	case	_	_
-4	annars	annar	PRON	OTHER-G	Case=Gen	7	obl	_	_
+4	annars	annar	PRON	OTHER-G	Case=Gen	8	obl	_	_
 5	og	og	CCONJ	CONJ	_	7	cc	_	_
 6	ekki	ekki	ADV	NEG	_	7	advmod	_	_
-7	síst	varla	ADV	ADVS	Degree=Sup	8	obl	_	_
+7	síst	varla	ADV	ADVS	Degree=Sup	4	conj	_	_
 8	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	0	root	_	_
 9	vegna	vegna	ADP	P	_	10	case	_	_
 10	þess	það	PRON	PRO-G	Case=Gen	8	obl	_	_
@@ -89,7 +89,7 @@
 29	í	í	ADV	ADV	Degree=Pos	27	advmod	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	29	punct	_	_
 31	sem	sem	SCONJ	C	_	33	mark	_	_
-32	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	33	nsubj	_	_
+32	margir	margur	DET	Q-N	Case=Nom	33	nsubj	_	_
 33	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	25	acl:relcl	_	_
 34	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obj	_	_
 35	á	á	ADP	P	_	34	obl	_	_
@@ -113,7 +113,7 @@
 1	Síðan	síðan	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
 3	hér	hér	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	5	det	_	_
+4	eitt	einn	DET	ONE-N	Case=Nom	5	det	_	_
 5	stykki	stykki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 6	hrun	hrun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	appos	_	SpaceAfter=No
 7	,	,	PUNCT	,	_	2	punct	_	_
@@ -169,7 +169,7 @@
 7	að	að	PART	TO	_	8	mark	_	_
 8	svara	svara	VERB	VB	VerbForm=Inf	6	xcomp	_	_
 9	því	það	PRON	PRO-D	Case=Dat	8	obj	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	3	punct	_	_
+10	,	,	PUNCT	,	_	8	punct	_	_
 11	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
 12	bara	bara	ADV	FP	Degree=Pos	11	advmod	_	_
 13	stór	stór	ADJ	ADJ-A	Case=Acc|Degree=Pos	14	amod	_	_
@@ -253,7 +253,7 @@
 4	í	í	ADP	P	_	6	case	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	leysa	leysa	VERB	VB	VerbForm=Inf	2	obl	_	_
-7	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	8	det	_	_
+7	þetta	þessi	DET	D-A	Case=Acc	8	det	_	_
 8	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -262,7 +262,7 @@
 # text = Það var ekkert annað að gera og hv. þingmaður ætti að venja sig af því að vera með stóryrði um hluti sem hún ætti kannski aðeins að hugsa um áður en hún tjáir sig.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	6	expl	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
-3	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	4	amod	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	4	amod	_	_
 4	annað	annar	PRON	OTHER-A	Case=Acc	6	obl	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	gera	gera	VERB	DO	VerbForm=Inf	0	root	_	_

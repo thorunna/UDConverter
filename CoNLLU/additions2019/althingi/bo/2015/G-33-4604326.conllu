@@ -58,7 +58,7 @@
 22	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	obl	_	_
 23	veik	veikur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	ccomp	_	_
 24	á	á	ADP	P	_	26	case	_	_
-25	þeim	sá	DET	D-D	Case=Dat|PronType=Art	26	det	_	_
+25	þeim	sá	DET	D-D	Case=Dat	26	det	_	_
 26	fundi	fundur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
 27	sem	sem	SCONJ	C	_	30	mark	_	_
 28	málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	30	nsubj	_	_
@@ -83,21 +83,21 @@
 # sent_id = ALTHINGI_BO_2015_G-33-4604326,.3
 # X_IDs = ID_missing_4 ; ID_missing_5
 # text = Þetta er stórt og mikið mál og mikilvægt að það fari í gegn, mikilvægt að það sé vel unnið og þá skil ég ekki þann asa sem er hér á síðustu metrunum.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	stórt	stór	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
 4	og	og	CCONJ	CONJ	_	5	cc	_	_
-5	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	3	conj	_	_
+5	mikið	mikill	DET	Q-N	Case=Nom	3	conj	_	_
 6	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-7	og	og	CCONJ	CONJ	_	8	cc	_	_
-8	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	conj	_	_
+7	og	og	CCONJ	CONJ	_	15	cc	_	_
+8	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	amod	_	_
 9	að	að	SCONJ	C	_	11	mark	_	_
 10	það	það	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-11	fari	fara	VERB	VBPS	Mood=Sub|Tense=Pres	8	ccomp	_	_
+11	fari	fara	VERB	VBPS	Mood=Sub|Tense=Pres	15	ccomp	_	_
 12	í	í	ADP	P	_	13	case	_	_
 13	gegn	gegn	ADV	ADV	Degree=Pos	11	obl	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	13	punct	_	_
-15	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	parataxis	_	_
+14	,	,	PUNCT	,	_	15	punct	_	_
+15	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	conj	_	_
 16	að	að	SCONJ	C	_	20	mark	_	_
 17	það	það	PRON	PRO-N	Case=Nom	20	nsubj	_	_
 18	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	20	cop	_	_
@@ -108,7 +108,7 @@
 23	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
 24	ég	ég	PRON	PRO-N	Case=Nom	23	nsubj	_	_
 25	ekki	ekki	ADV	NEG	_	23	advmod	_	_
-26	þann	sá	DET	D-A	Case=Acc|PronType=Art	27	det	_	_
+26	þann	sá	DET	D-A	Case=Acc	27	det	_	_
 27	asa	asi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obj	_	_
 28	sem	sem	SCONJ	C	_	33	mark	_	_
 29	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	33	cop	_	_

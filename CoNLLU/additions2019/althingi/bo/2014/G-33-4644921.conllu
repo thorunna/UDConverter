@@ -38,7 +38,7 @@
 8	háleitt	háleitur	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
 9	markmið	markmið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
 10	og	og	CCONJ	CONJ	_	14	cc	_	_
-11	mörgum	margur	DET	Q-D	Case=Dat|Degree=Pos	14	nsubj	_	_
+11	mörgum	margur	DET	Q-D	Case=Dat	14	nsubj	_	_
 12	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	14	aux	_	_
 13	kannski	kannski	ADV	ADV	Degree=Pos	14	advmod	_	_
 14	fundist	finna	VERB	VBN	Tense=Past|VerbForm=Part	7	conj	_	OriginalHead=0
@@ -86,15 +86,15 @@
 2	sjáum	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	að	að	SCONJ	C	_	9	mark	_	_
-5	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	9	nsubj	_	_
+5	þetta	þessi	DET	D-N	Case=Nom	9	nsubj	_	_
 6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
-7	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	8	obl	_	_
+7	ekkert	enginn	DET	Q-A	Case=Acc	8	obl	_	_
 8	eðlilegt	eðlilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
 9	umhverfi	umhverfi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	_
 10	og	og	CCONJ	CONJ	_	12	cc	_	_
 11	svona	svona	ADV	ADV	Degree=Pos	12	advmod	_	_
 12	virkar	virka	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-13	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	12	nsubj	_	_
+13	þetta	þessi	DET	D-N	Case=Nom	12	nsubj	_	_
 14	ekki	ekki	ADV	NEG	_	12	advmod	_	_
 15	í	í	ADP	P	_	16	case	_	_
 16	fyrirtækjum	fyrirtæki	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
@@ -105,7 +105,7 @@
 # X_ID = ID_missing_8
 # text = Ef hver höndin er upp á móti annarri og fólk hlustar ekki hvert á annað kemst enginn lönd né strönd.
 1	Ef	ef	ADP	P	_	7	case	_	_
-2	hver	hver	DET	Q-N	Case=Nom|Degree=Pos	3	amod	_	_
+2	hver	hver	DET	Q-N	Case=Nom	3	amod	_	_
 3	höndin	hönd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 5	upp	upp	ADP	RP	_	7	compound:prt	_	_
@@ -116,11 +116,11 @@
 10	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
 11	hlustar	hlusta	VERB	VBPI	Mood=Ind|Tense=Pres	7	conj	_	_
 12	ekki	ekki	ADV	NEG	_	11	advmod	_	_
-13	hvert	hver	DET	Q-N	Case=Nom|Degree=Pos	11	amod	_	_
+13	hvert	hver	DET	Q-N	Case=Nom	11	amod	_	_
 14	á	á	ADP	P	_	15	case	_	_
 15	annað	annar	PRON	OTHER-A	Case=Acc	11	obl	_	_
 16	kemst	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-17	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	16	nsubj	_	_
+17	enginn	enginn	DET	Q-N	Case=Nom	16	nsubj	_	_
 18	lönd	land	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obl	_	_
 19	né	né	CCONJ	CONJ	_	20	cc	_	_
 20	strönd	strönd	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	conj	_	SpaceAfter=No
@@ -138,12 +138,12 @@
 7	reyna	reyna	VERB	VB	VerbForm=Inf	5	xcomp	_	_
 8	að	að	PART	TO	_	9	mark	_	_
 9	breyta	breyta	VERB	VB	VerbForm=Inf	7	xcomp	_	_
-10	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	9	obj	_	_
+10	þessu	þessi	DET	D-D	Case=Dat	9	obj	_	_
 11	en	en	CCONJ	CONJ	_	14	cc	_	_
-12	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	14	nsubj	_	_
+12	þetta	þessi	DET	D-N	Case=Nom	14	nsubj	_	_
 13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
 14	grundvallaratriði	grundvallaratriði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	conj	_	OriginalHead=0|SpaceAfter=No
-15	,	,	PUNCT	,	_	5	punct	_	_
+15	,	,	PUNCT	,	_	14	punct	_	_
 16	að	að	ADP	P	_	17	case	_	_
 17	ég	ég	PRON	PRO-N	Case=Nom	14	obl	_	_
 18	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	17	obl	_	SpaceAfter=No
@@ -159,13 +159,13 @@
 # text = Hér stoppar allt of margt og við erum ekkert ofboðslega klár enn sem komið er að tala saman.
 1	Hér	hér	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	stoppar	stoppa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	4	obl	_	_
+3	allt	allur	DET	Q-A	Case=Acc	4	obl	_	_
 4	of	of	ADV	ADV	Degree=Pos	5	advmod	_	_
-5	margt	margur	DET	Q-N	Case=Nom|Degree=Pos	2	nsubj	_	_
+5	margt	margur	DET	Q-N	Case=Nom	2	nsubj	_	_
 6	og	og	CCONJ	CONJ	_	11	cc	_	_
 7	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 8	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
-9	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	10	obl	_	_
+9	ekkert	enginn	DET	Q-A	Case=Acc	10	obl	_	_
 10	ofboðslega	ofboðslega	ADV	ADV	Degree=Pos	11	amod	_	_
 11	klár	klár	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
 12	enn	enn	ADV	ADV	Degree=Pos	11	advmod	_	_
@@ -191,7 +191,7 @@
 9	að	að	PART	TO	_	10	mark	_	_
 10	fjalla	fjalla	VERB	VB	VerbForm=Inf	8	xcomp	_	_
 11	um	um	ADP	P	_	13	case	_	_
-12	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	13	det	_	_
+12	þessa	þessi	DET	D-A	Case=Acc	13	det	_	_
 13	skýrslu	skýrsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 14	og	og	CCONJ	CONJ	_	15	cc	_	_
 15	gera	gera	VERB	DO	VerbForm=Inf	8	xcomp	_	_
@@ -227,7 +227,7 @@
 18	heilindum	heilindi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	_
 19	og	og	CCONJ	CONJ	_	20	cc	_	_
 20	meini	meina	VERB	VBPS	Mood=Sub|Tense=Pres	16	conj	_	_
-21	það	sá	DET	D-A	Case=Acc|PronType=Art	20	obj	_	_
+21	það	sá	DET	D-A	Case=Acc	20	obj	_	_
 22	sem	sem	SCONJ	C	_	24	mark	_	_
 23	það	það	PRON	PRO-N	Case=Nom	24	nsubj	_	_
 24	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	21	acl:relcl	_	SpaceAfter=No
@@ -237,13 +237,13 @@
 28	vilji	vilja	AUX	MDPS	Mood=Sub|Tense=Pres	29	aux	_	_
 29	hlusta	hlusta	VERB	VB	VerbForm=Inf	26	conj	_	_
 30	á	á	ADP	P	_	33	case	_	_
-31	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	33	nmod:poss	_	_
+31	alls	allur	DET	Q-G	Case=Gen	33	nmod:poss	_	_
 32	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	31	conj	_	_
 33	sjónarmið	sjónarmið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	29	obl	_	_
 34	og	og	CCONJ	CONJ	_	36	cc	_	_
 35	það	það	PRON	PRO-N	Case=Nom	36	nsubj	_	_
 36	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	29	conj	_	_
-37	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	36	obj	_	_
+37	eitthvað	einhver	DET	Q-A	Case=Acc	36	obj	_	_
 38	að	að	PART	TO	_	39	mark	_	_
 39	segja	segja	VERB	VB	VerbForm=Inf	37	xcomp	_	SpaceAfter=No
 40	.	.	PUNCT	.	_	3	punct	_	_

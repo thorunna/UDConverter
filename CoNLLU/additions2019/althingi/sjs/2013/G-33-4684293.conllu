@@ -13,14 +13,14 @@
 10	ágætlega	ágætlega	ADV	ADV	Degree=Pos	9	advmod	_	_
 11	athyglina	athygli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
 12	að	að	ADP	P	_	13	case	_	_
-13	því	sá	DET	D-D	Case=Dat|PronType=Art	9	obl	_	_
+13	því	sá	DET	D-D	Case=Dat	9	obl	_	_
 14	sem	sem	SCONJ	C	_	21	mark	_	_
 15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	21	cop	_	_
 16	í	í	ADP	P	_	17	case	_	_
 17	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
 18	og	og	CCONJ	CONJ	_	19	cc	_	_
 19	veru	vera	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	conj	_	_
-20	það	sá	DET	D-N	Case=Nom|PronType=Art	21	det	_	_
+20	það	sá	DET	D-N	Case=Nom	21	det	_	_
 21	furðulega	furðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	acl:relcl	_	_
 22	við	við	ADP	P	_	23	case	_	_
 23	framgönguna	framganga	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	_
@@ -60,7 +60,7 @@
 # X_ID = ID_missing_2
 # text = Eða hitt sem hefði verið betra að segja, að þrátt fyrir gildistöku laganna skulu þessi tilteknu ákvæði frestast eða eitthvað í þeim dúr.
 1	Eða	eða	CCONJ	CONJ	_	2	cc	_	_
-2	hitt	hinn	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+2	hitt	hinn	DET	D-N	Case=Nom	0	root	_	_
 3	sem	sem	SCONJ	C	_	5	mark	_	_
 4	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	5	aux	_	_
 5	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	2	acl:relcl	_	_
@@ -74,14 +74,14 @@
 13	gildistöku	gildistaka	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	_
 14	laganna	lag	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	13	nmod:poss	_	_
 15	skulu	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	19	aux	_	_
-16	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	18	det	_	_
+16	þessi	þessi	DET	D-N	Case=Nom	18	det	_	_
 17	tilteknu	tiltekinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	18	amod	_	_
 18	ákvæði	ákvæði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	19	nsubj	_	_
 19	frestast	fresta	VERB	VB	VerbForm=Inf	2	ccomp	_	_
 20	eða	eða	CCONJ	CONJ	_	21	cc	_	_
-21	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	19	conj	_	_
+21	eitthvað	einhver	DET	Q-N	Case=Nom	19	conj	_	_
 22	í	í	ADP	P	_	24	case	_	_
-23	þeim	sá	DET	D-D	Case=Dat|PronType=Art	24	det	_	_
+23	þeim	sá	DET	D-D	Case=Dat	24	det	_	_
 24	dúr	dúr	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -109,7 +109,7 @@
 19	leggur	leggja	VERB	VBPI	Mood=Ind|Tense=Pres	16	obl	_	_
 20	sig	sig	PRON	PRO-A	Case=Acc	19	obj	_	_
 21	á	á	ADP	P	_	23	case	_	_
-22	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	23	det	_	_
+22	einu	einn	DET	ONE-D	Case=Dat	23	det	_	_
 23	bretti	bretti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -118,7 +118,7 @@
 # text = Það er það ævintýralega sem er lagt til við Alþingi eftir heildarendurskoðun á afar mikilvægum málaflokki með margra ára aðdraganda.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	það	sá	DET	D-N	Case=Nom|PronType=Art	4	det	_	_
+3	það	sá	DET	D-N	Case=Nom	4	det	_	_
 4	ævintýralega	ævintýralegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 5	sem	sem	SCONJ	C	_	7	mark	_	_
 6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
@@ -133,7 +133,7 @@
 15	mikilvægum	mikilvægur	ADJ	ADJ-D	Case=Dat|Degree=Pos	16	amod	_	_
 16	málaflokki	málaflokkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
 17	með	með	ADP	P	_	20	case	_	_
-18	margra	margur	DET	Q-G	Case=Gen|Degree=Pos	20	nmod:poss	_	_
+18	margra	margur	DET	Q-G	Case=Gen	20	nmod:poss	_	_
 19	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	18	conj	_	_
 20	aðdraganda	aðdragandi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	4	punct	_	_
@@ -144,7 +144,7 @@
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	ADP	P	_	4	case	_	_
-4	því	sá	DET	D-D	Case=Dat|PronType=Art	2	obl	_	_
+4	því	sá	DET	D-D	Case=Dat	2	obl	_	_
 5	sem	sem	SCONJ	C	_	7	mark	_	_
 6	mig	ég	PRON	PRO-A	Case=Acc	7	nsubj	_	_
 7	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
@@ -165,7 +165,7 @@
 3	þingið	þing	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 4	næsta	næstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	5	amod	_	_
 5	leik	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	2	punct	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
 7	nú	nú	ADV	ADV	Degree=Pos	11	advmod	_	_
 8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 9	málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
@@ -182,7 +182,7 @@
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	4	advmod	_	_
-4	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	0	root	_	_
+4	ekkert	enginn	DET	Q-N	Case=Nom	0	root	_	_
 5	sem	sem	SCONJ	C	_	6	mark	_	_
 6	stöðvar	stöðva	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
 7	umhverfis-	umhverfi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	nmod:poss	_	_
@@ -204,7 +204,7 @@
 23	,	,	PUNCT	,	_	22	punct	_	_
 24	fara	fara	VERB	VB	VerbForm=Inf	14	xcomp	_	_
 25	í	í	ADP	P	_	27	case	_	_
-26	þá	sá	DET	D-A	Case=Acc|PronType=Art	27	det	_	_
+26	þá	sá	DET	D-A	Case=Acc	27	det	_	_
 27	vinnu	vinna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obl	_	_
 28	sem	sem	SCONJ	C	_	33	mark	_	_
 29	þarna	þarna	ADV	ADV	Degree=Pos	33	advmod	_	_
@@ -229,11 +229,11 @@
 48	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	49	cop	_	_
 49	ósátt	ósáttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	39	obl	_	_
 50	við	við	ADP	P	_	53	case	_	_
-51	einhverja	einhver	DET	Q-A	Case=Acc|Degree=Pos	53	amod	_	_
+51	einhverja	einhver	DET	Q-A	Case=Acc	53	amod	_	_
 52	tiltekna	tiltekinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	53	amod	_	_
 53	hluti	hlutur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	49	amod	_	_
 54	í	í	ADP	P	_	56	case	_	_
-55	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	56	det	_	_
+55	þessari	þessi	DET	D-D	Case=Dat	56	det	_	_
 56	löggjöf	löggjöf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	53	obl	_	SpaceAfter=No
 57	,	,	PUNCT	,	_	56	punct	_	_
 58	að	að	PART	TO	_	59	mark	_	_
@@ -266,7 +266,7 @@
 18	þingið	þing	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
 19	frestun	frestun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obj	_	_
 20	gildistöku	gildistaka	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	nmod:poss	_	_
-21	einhverra	einhver	DET	Q-G	Case=Gen|Degree=Pos	23	amod	_	_
+21	einhverra	einhver	DET	Q-G	Case=Gen	23	amod	_	_
 22	tiltekinna	tiltekinn	ADJ	ADJ-G	Case=Gen|Degree=Pos	23	amod	_	_
 23	ákvæða	ákvæði	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	20	nmod:poss	_	SpaceAfter=No
 24	?	?	PUNCT	.	_	2	punct	_	_
@@ -286,7 +286,7 @@
 10	til	til	ADP	P	_	12	case	_	_
 11	18.	átjándi	ADJ	ADJ-G	Case=Gen|Degree=Pos	12	amod	_	_
 12	nóvember	nóvember	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	parataxis	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	6	punct	_	_
+13	,	,	PUNCT	,	_	12	punct	_	_
 14	þá	þá	ADV	ADV	Degree=Pos	15	advmod	_	_
 15	kemst	koma	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
 16	málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
@@ -303,7 +303,7 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4684293,.10
 # X_ID = ID_missing_14
 # text = Engu að síður er það þannig að fordæmi eru fyrir því, ekki síst í umhverfisnefnd Alþingis, að menn hafi sýnt sjálfstæði í vinnubrögðum.
-1	Engu	enginn	DET	Q-D	Case=Dat|Degree=Pos	3	obl	_	_
+1	Engu	enginn	DET	Q-D	Case=Dat	3	obl	_	_
 2	að	að	ADP	P	_	1	case	_	_
 3	síður	varla	ADV	ADVR	Degree=Cmp	5	advmod	_	_
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -335,7 +335,7 @@
 # text = Ég minnist þeirra tíma þegar þar voru menn eins og Hjörleifur Guttormsson og Ólafur Örn Haraldsson sem tóku stundum frumvörp úr umhverfisráðuneytinu og eiginlega stútuðu þeim gjörsamlega og skrifuðu ný og höfðu fullan kjark.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	minnist	minna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	4	det	_	_
+3	þeirra	sá	DET	D-G	Case=Gen	4	det	_	_
 4	tíma	tími	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	obj	_	_
 5	þegar	þegar	ADP	P	_	8	case	_	_
 6	þar	þar	ADV	ADV	Degree=Pos	8	advmod	_	_
@@ -388,7 +388,7 @@
 14	Alþingi	alþingi	PROPN	NPR-N	_	15	nsubj	_	_
 15	taki	taka	VERB	VBPS	Mood=Sub|Tense=Pres	12	ccomp	_	_
 16	sjálft	sjálfur	PRON	PRO-N	Case=Nom	15	amod	_	_
-17	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	18	amod	_	_
+17	meira	mikill	DET	QR-A	Case=Acc	18	amod	_	_
 18	frumkvæði	frumkvæði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obj	_	_
 19	í	í	ADP	P	_	20	case	_	_
 20	lagasmíð	lagasmíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
@@ -412,7 +412,7 @@
 13	.	.	PUNCT	.	_	12	punct	_	_
 14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
 15	meðflutningsmaður	meðflutningsmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	2	punct	_	_
+16	,	,	PUNCT	,	_	15	punct	_	_
 17	en	en	CCONJ	CONJ	_	18	cc	_	_
 18	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 19	við	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_

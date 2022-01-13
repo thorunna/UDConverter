@@ -9,7 +9,7 @@
 6	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 7	hnykki	hnykkja	VERB	VBPI	Mood=Ind|Tense=Pres	4	advcl	_	_
 8	á	á	ADP	P	_	9	case	_	_
-9	því	sá	DET	D-D	Case=Dat|PronType=Art	7	obl	_	_
+9	því	sá	DET	D-D	Case=Dat	7	obl	_	_
 10	sem	sem	SCONJ	C	_	11	mark	_	_
 11	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	9	acl:relcl	_	_
 12	í	í	ADP	P	_	13	case	_	_
@@ -26,14 +26,14 @@
 23	um	um	ADP	P	_	38	case	_	_
 24	að	að	SCONJ	C	_	38	mark	_	_
 25	vegna	vegna	ADP	P	_	27	case	_	_
-26	þeirrar	sá	DET	D-G	Case=Gen|PronType=Art	27	det	_	_
+26	þeirrar	sá	DET	D-G	Case=Gen	27	det	_	_
 27	óvissu	óvissa	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	38	obl	_	_
 28	sem	sem	SCONJ	C	_	31	mark	_	_
 29	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	31	cop	_	_
 30	um	um	ADP	P	_	31	case	_	_
 31	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	27	acl:relcl	_	_
 32	á	á	ADP	P	_	34	case	_	_
-33	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	34	det	_	_
+33	þessu	þessi	DET	D-D	Case=Dat	34	det	_	_
 34	stigi	stig	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	_
 35	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	38	cop	_	_
 36	nauðsynlegt	nauðsynlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	38	amod	_	_
@@ -49,7 +49,7 @@
 46	verkefninu	verkefni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	44	obl	_	_
 47	á	á	ADP	P	_	48	case	_	_
 48	grundvelli	grundvöllur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	38	obl	_	_
-49	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	50	det	_	_
+49	þeirra	sá	DET	D-G	Case=Gen	50	det	_	_
 50	atriða	atriði	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	48	nmod:poss	_	_
 51	sem	sem	SCONJ	C	_	53	mark	_	_
 52	fram	fram	ADP	RP	_	53	compound:prt	_	_
@@ -80,7 +80,7 @@
 8	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	gera	gera	VERB	DO	VerbForm=Inf	8	xcomp	_	_
-11	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	10	obj	_	_
+11	eitthvað	einhver	DET	Q-A	Case=Acc	10	obj	_	_
 12	annað	annar	PRON	OTHER-A	Case=Acc	11	amod	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	8	punct	_	_
 
@@ -116,7 +116,7 @@
 27	áfram	áfram	ADV	ADV	Degree=Pos	26	advmod	_	_
 28	að	að	PART	TO	_	29	mark	_	_
 29	safna	safna	VERB	VB	VerbForm=Inf	26	xcomp	_	_
-30	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	31	det	_	_
+30	þessum	þessi	DET	D-D	Case=Dat	31	det	_	_
 31	upplýsingum	upplýsing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	29	obj	_	SpaceAfter=No
 32	,	,	PUNCT	,	_	31	punct	_	_
 33	eins	_	ADV	ADVR	Degree=Cmp	26	advmod	_	_
@@ -129,7 +129,7 @@
 40	skýrslunni	skýrsla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	36	obl	_	SpaceAfter=No
 41	,	,	PUNCT	,	_	40	punct	_	_
 42	og	og	CCONJ	CONJ	_	43	cc	_	_
-43	sú	sá	DET	D-N	Case=Nom|PronType=Art	26	parataxis	_	_
+43	sú	sá	DET	D-N	Case=Nom	26	parataxis	_	_
 44	varð	verða	AUX	RDDI	Mood=Ind|Tense=Past	43	aux	_	_
 45	niðurstaðan	niðurstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	43	nsubj	_	SpaceAfter=No
 46	.	.	PUNCT	.	_	2	punct	_	_

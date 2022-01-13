@@ -14,7 +14,7 @@
 11	og	og	CCONJ	CONJ	_	15	cc	_	_
 12	sömuleiðis	sömuleiðis	ADV	ADV	Degree=Pos	15	advmod	_	_
 13	fyrir	fyrir	ADP	P	_	15	case	_	_
-14	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	15	amod	_	_
+14	alla	allur	DET	Q-A	Case=Acc	15	amod	_	_
 15	umræðuna	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	conj	_	_
 16	í	í	ADP	P	_	17	case	_	_
 17	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
@@ -38,10 +38,10 @@
 8	skilningur	skilningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
 9	hennar	hún	PRON	PRO-G	Case=Gen	8	nmod:poss	_	_
 10	á	á	ADP	P	_	11	case	_	_
-11	vinnu	vinna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
+11	vinnu	vinna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
 12	og	og	CCONJ	CONJ	_	14	cc	_	_
 13	á	á	ADP	P	_	14	case	_	_
-14	áliti	álit	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+14	áliti	álit	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	conj	_	_
 15	atvinnuveganefndar	atvinnuveganefnd	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	nmod:poss	_	_
 16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
 17	réttur	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	ccomp	_	SpaceAfter=No
@@ -82,7 +82,7 @@
 13	þarna	þarna	ADV	ADV	Degree=Pos	11	advmod	_	_
 14	fylgiskjöl	fylgiskjal	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	nsubj	_	_
 15	frá	frá	ADP	P	_	17	case	_	_
-16	fleiri	margur	DET	QR-D	Case=Dat|Degree=Pos	17	amod	_	_
+16	fleiri	margur	DET	QR-D	Case=Dat	17	amod	_	_
 17	þingmönnum	þingmaður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	_
 18	sem	sem	SCONJ	C	_	19	mark	_	_
 19	sitja	sitja	VERB	VBPI	Mood=Ind|Tense=Pres	17	acl:relcl	_	_
@@ -109,7 +109,7 @@
 2	sýnist	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 4	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
-5	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	9	amod	_	_
+5	allt	allur	DET	Q-N	Case=Nom	9	amod	_	_
 6	vera	vera	AUX	BE	VerbForm=Inf	9	cop	_	_
 7	á	á	ADP	P	_	9	case	_	_
 8	sama	sami	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
@@ -123,7 +123,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	kallað	kalla	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 4	eftir	eftir	ADP	P	_	6	case	_	_
-5	meiri	mikill	DET	QR-D	Case=Dat|Degree=Pos	6	amod	_	_
+5	meiri	mikill	DET	QR-D	Case=Dat	6	amod	_	_
 6	upplýsingum	upplýsing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -140,11 +140,11 @@
 8	áfram	áfram	ADV	ADV	Degree=Pos	6	advmod	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	8	punct	_	_
 10	vinna	vinna	VERB	VB	VerbForm=Inf	6	dep	_	_
-11	þessar	þessi	DET	D-A	Case=Acc|PronType=Art	12	det	_	_
+11	þessar	þessi	DET	D-A	Case=Acc	12	det	_	_
 12	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	_
 13	á	á	ADP	P	_	14	case	_	_
 14	grundvelli	grundvöllur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
-15	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	16	det	_	_
+15	þeirra	sá	DET	D-G	Case=Gen	16	det	_	_
 16	atriða	atriði	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	nmod:poss	_	_
 17	sem	sem	SCONJ	C	_	19	mark	_	_
 18	fram	fram	ADP	RP	_	19	compound:prt	_	_
@@ -160,13 +160,13 @@
 # sent_id = ALTHINGI_BO_2014_G-33-4931970,.8
 # X_ID = ID_missing_9
 # text = Margir vildu ef til vill að þetta mál ynnist hraðar.
-1	Margir	margur	DET	Q-N	Case=Nom|Degree=Pos	2	nsubj	_	_
+1	Margir	margur	DET	Q-N	Case=Nom	2	nsubj	_	_
 2	vildu	vilja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	ef	ef	ADP	P	_	5	case	_	_
 4	til	til	ADP	RP	_	5	compound:prt	_	_
 5	vill	vilja	VERB	VBPI	Mood=Ind|Tense=Pres	2	obl	_	_
 6	að	að	SCONJ	C	_	9	mark	_	_
-7	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	8	det	_	_
+7	þetta	þessi	DET	D-N	Case=Nom	8	det	_	_
 8	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
 9	ynnist	vinna	VERB	VBDS	Mood=Sub|Tense=Past	2	ccomp	_	_
 10	hraðar	hratt	ADV	ADVR	Degree=Cmp	9	advmod	_	SpaceAfter=No
@@ -191,7 +191,7 @@
 14	færi	fara	VERB	VBDS	Mood=Sub|Tense=Past	11	ccomp	_	_
 15	strax	strax	ADV	ADV	Degree=Pos	14	advmod	_	_
 16	í	í	ADP	P	_	18	case	_	_
-17	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	18	det	_	_
+17	þessa	þessi	DET	D-A	Case=Acc	18	det	_	_
 18	vinnu	vinna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
 19	á	á	ADP	P	_	20	case	_	_
 20	grundvelli	grundvöllur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
@@ -205,7 +205,7 @@
 # text = Ég var ekkert endilega á því fyrst að við ættum að vera að tefja tímann, ef svo má segja, og ræða þetta hér, en ég held að það hafi verið mjög gott fyrir okkur.
 1	Ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
-3	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	4	obl	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	4	obl	_	_
 4	endilega	endilega	ADV	ADV	Degree=Pos	6	advmod	_	_
 5	á	á	ADP	P	_	6	case	_	_
 6	því	það	PRON	PRO-D	Case=Dat	0	root	_	_
@@ -226,9 +226,9 @@
 21	,	,	PUNCT	,	_	20	punct	_	_
 22	og	og	CCONJ	CONJ	_	23	cc	_	_
 23	ræða	ræða	VERB	VB	VerbForm=Inf	14	xcomp	_	_
-24	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	23	obj	_	_
+24	þetta	þessi	DET	D-A	Case=Acc	23	obj	_	_
 25	hér	hér	ADV	ADV	Degree=Pos	23	advmod	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	6	punct	_	_
+26	,	,	PUNCT	,	_	23	punct	_	_
 27	en	en	CCONJ	CONJ	_	29	cc	_	_
 28	ég	ég	PRON	PRO-N	Case=Nom	29	nsubj	_	_
 29	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
@@ -258,11 +258,11 @@
 11	förum	fara	VERB	VBPS	Mood=Sub|Tense=Pres	8	ccomp	_	_
 12	í	í	ADP	P	_	14	case	_	_
 13	gegnum	gegnum	ADP	P	_	14	case	_	_
-14	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	11	obl	_	_
+14	þetta	þessi	DET	D-A	Case=Acc	11	obl	_	_
 15	og	og	CCONJ	CONJ	_	17	cc	_	_
 16	það	það	PRON	PRO-N	Case=Nom	17	nsubj	_	_
 17	tók	taka	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
-18	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	19	obl	_	_
+18	ekkert	enginn	DET	Q-A	Case=Acc	19	obl	_	_
 19	langan	langur	ADJ	ADJ-A	Case=Acc|Degree=Pos	20	amod	_	_
 20	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
 21	í	í	ADP	P	_	22	case	_	_

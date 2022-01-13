@@ -7,7 +7,7 @@
 4	Ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 5	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
 6	ræða	ræða	VERB	VB	VerbForm=Inf	0	root	_	_
-7	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	6	obj	_	_
+7	þetta	þessi	DET	D-A	Case=Acc	6	obj	_	_
 8	tvískipt	tvískiptur	ADJ	ADJ-A	Case=Acc|Degree=Pos	6	amod	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	8	punct	_	_
 10	annars	annar	PRON	OTHER-G	Case=Gen	11	det	_	_
@@ -36,7 +36,7 @@
 3	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
 4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 5	í	í	ADP	P	_	6	case	_	_
-6	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	2	obl	_	_
+6	allt	allur	DET	Q-A	Case=Acc	2	obl	_	_
 7	hér	hér	ADV	ADV	Degree=Pos	9	advmod	_	_
 8	á	á	ADP	P	_	9	case	_	_
 9	árunum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
@@ -61,7 +61,7 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4528340,.3
 # X_ID = ID_missing_4
 # text = Þetta er ómögulegt ástand í dag þegar menn skila reikningum þar sem þrjú virðisaukaskattsþrep koma við sögu.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ómögulegt	ómögulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
 4	ástand	ástand	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
@@ -123,7 +123,7 @@
 9	og	og	CCONJ	CONJ	_	16	cc	_	_
 10	svo	svo	ADV	ADV	Degree=Pos	16	advmod	_	_
 11	kannski	kannski	ADV	ADV	Degree=Pos	16	advmod	_	_
-12	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	13	amod	_	_
+12	eitthvað	einhver	DET	Q-N	Case=Nom	13	amod	_	_
 13	annað	annar	PRON	OTHER-N	Case=Nom	16	nsubj	_	_
 14	með	með	ADP	P	_	16	case	_	_
 15	25,5	25,5	NUM	NUM-A	Case=Acc	16	nummod	_	SpaceAfter=No
@@ -138,7 +138,7 @@
 3	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
 4	samsettum	samsettur	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
 5	reikningi	reikningur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	2	punct	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
 7	og	og	CCONJ	CONJ	_	9	cc	_	_
 8	hvar	hvar	ADV	WADV	Degree=Pos	9	advmod	_	_
 9	ímyndið	ímynda	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
@@ -164,7 +164,7 @@
 4	vandamál	vandamál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	obl	_	_
 5	þarna	þarna	ADV	ADV	Degree=Pos	3	advmod	_	_
 6	og	og	CCONJ	CONJ	_	8	cc	_	_
-7	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	8	obl	_	_
+7	þetta	þessi	DET	D-A	Case=Acc	8	obl	_	_
 8	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
 9	að	að	PART	TO	_	10	mark	_	_
 10	stokka	stokka	VERB	VB	VerbForm=Inf	8	xcomp	_	_
@@ -178,7 +178,7 @@
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	að	að	SCONJ	C	_	6	mark	_	_
-5	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	6	nsubj	_	_
+5	allir	allur	DET	Q-N	Case=Nom	6	nsubj	_	_
 6	viðurkenni	viðurkenna	VERB	VBPS	Mood=Sub|Tense=Pres	2	ccomp	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -198,14 +198,14 @@
 1	Já	já	INTJ	INTJ	_	7	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	að	að	ADP	P	_	5	case	_	_
-4	mörgu	margur	DET	Q-D	Case=Dat|Degree=Pos	5	amod	_	_
+4	mörgu	margur	DET	Q-D	Case=Dat	5	amod	_	_
 5	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
 6	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	7	cop	_	_
 7	æskilegt	æskilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 8	að	að	PART	TO	_	9	mark	_	_
 9	komast	koma	VERB	VB	VerbForm=Inf	7	xcomp	_	_
 10	í	í	ADP	P	_	12	case	_	_
-11	eitt	einn	DET	ONE-A	Case=Acc|Number=Sing	12	det	_	_
+11	eitt	einn	DET	ONE-A	Case=Acc	12	det	_	_
 12	þrep	þrep	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	7	punct	_	_
 
@@ -225,13 +225,13 @@
 11	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	13	cop	_	_
 12	með	með	ADP	P	_	13	case	_	_
 13	hann	hann	PRON	PRO-A	Case=Acc	4	conj	_	_
-14	um	um	ADP	P	_	19	obl	_	_
+14	um	um	ADP	P	_	13	obl	_	_
 15	eða	eða	CCONJ	CONJ	_	19	cc	_	_
 16	rétt	rétt	ADV	ADV	Degree=Pos	19	advmod	_	_
 17	við	við	ADP	P	_	19	case	_	_
 18	20	tuttugu	NUM	NUM-A	Case=Acc	19	nummod	_	SpaceAfter=No
-19	<percent/>	prósent	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	4	punct	_	_
+19	<percent/>	prósent	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	conj	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	14	punct	_	_
 21	en	en	CCONJ	CONJ	_	24	cc	_	_
 22	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	24	expl	_	_
 23	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
@@ -250,7 +250,7 @@
 36	hækkunar	hækkun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	26	obl	_	_
 37	matvæla	matvæli	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	36	conj	_	_
 38	og	og	CCONJ	CONJ	_	40	cc	_	_
-39	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	40	det	_	_
+39	þeirra	sá	DET	D-G	Case=Gen	40	det	_	_
 40	hluta	hluti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	36	conj	_	_
 41	til	til	ADP	P	_	44	case	_	_
 42	að	að	SCONJ	C	_	44	mark	_	_

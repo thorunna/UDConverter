@@ -12,7 +12,7 @@
 # sent_id = ALTHINGI_BO_2015_G-33-4549104,.2
 # X_ID = ID_missing_2
 # text = Eins og ég fór yfir í ræðu minni hv. þingmaður hefur kannski brugðið sér aðeins frá þá var þetta misræmi einmitt ein meginstoð þess sem ég fjallaði um.
-1	Eins	eins	ADV	ADV	Degree=Pos	23	advmod	_	_
+1	Eins	eins	ADV	ADV	Degree=Pos	13	advmod	_	_
 2	og	og	ADP	P	_	4	case	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 4	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	1	obl	_	_
@@ -24,28 +24,28 @@
 10	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
 11	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	13	aux	_	_
 12	kannski	kannski	ADV	ADV	Degree=Pos	13	advmod	_	_
-13	brugðið	bregða	VERB	VBN	Tense=Past|VerbForm=Part	23	parataxis	_	_
+13	brugðið	bregða	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 14	sér	sig	PRON	PRO-D	Case=Dat	13	obj	_	_
 15	aðeins	aðeins	ADV	ADV	Degree=Pos	13	advmod	_	_
 16	frá	frá	ADP	RP	_	13	compound:prt	_	_
-17	þá	þá	ADV	ADV	Degree=Pos	23	advmod	_	_
-18	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	23	cop	_	_
-19	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	20	det	_	_
-20	misræmi	misræmi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	nsubj	_	_
-21	einmitt	einmitt	ADV	ADV	Degree=Pos	23	advmod	_	_
-22	ein	einn	DET	ONE-N	Case=Nom|Number=Sing	23	det	_	_
-23	meginstoð	meginstoð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-24	þess	sá	DET	D-G	Case=Gen|PronType=Art	23	nmod:poss	_	_
+17	þá	þá	ADV	ADV	Degree=Pos	13	advmod	_	_
+18	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	13	cop	_	_
+19	þetta	þessi	DET	D-N	Case=Nom	20	det	_	_
+20	misræmi	misræmi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	obl	_	_
+21	einmitt	einmitt	ADV	ADV	Degree=Pos	13	advmod	_	_
+22	ein	einn	DET	ONE-N	Case=Nom	23	det	_	_
+23	meginstoð	meginstoð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	xcomp	_	_
+24	þess	sá	DET	D-G	Case=Gen	23	nmod:poss	_	_
 25	sem	sem	SCONJ	C	_	27	mark	_	_
 26	ég	ég	PRON	PRO-N	Case=Nom	27	nsubj	_	_
 27	fjallaði	fjalla	VERB	VBDI	Mood=Ind|Tense=Past	24	acl:relcl	_	_
 28	um	um	ADP	P	_	27	obl	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	23	punct	_	_
+29	.	.	PUNCT	.	_	13	punct	_	_
 
 # sent_id = ALTHINGI_BO_2015_G-33-4549104,.3
 # X_ID = ID_missing_3
 # text = Þetta kom mér í sjálfu sér rosalega á óvart.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	mér	ég	PRON	PRO-D	Case=Dat	2	obj	_	_
 4	í	í	ADP	P	_	5	case	_	_
@@ -66,9 +66,9 @@
 5	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	2	ccomp	_	_
 6	að	að	PART	TO	_	7	mark	_	_
 7	leysa	leysa	VERB	VB	VerbForm=Inf	5	xcomp	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	9	det	_	_
+8	þetta	þessi	DET	D-A	Case=Acc	9	det	_	_
 9	aðgangsvesen	aðgangsvesen	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
-10	allt	allur	ADV	Q-A	Case=Acc|Degree=Pos	9	advmod	_	_
+10	allt	allur	ADV	Q-A	Case=Acc	9	advmod	_	_
 11	með	með	ADP	P	_	12	case	_	_
 12	náttúrupassa	náttúrupassi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
@@ -94,7 +94,7 @@
 # sent_id = ALTHINGI_BO_2015_G-33-4549104,.7
 # X_ID = ID_missing_7
 # text = Þetta frumvarp gerir það því miður ekki.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	2	det	_	_
 2	frumvarp	frumvarp	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	það	það	PRON	PRO-A	Case=Acc	3	obj	_	_
@@ -153,7 +153,7 @@
 # sent_id = ALTHINGI_BO_2015_G-33-4549104,.10
 # X_ID = ID_missing_11
 # text = Hvaða hag hafa landeigendur af því?
-1	Hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	2	det	_	_
+1	Hvaða	hvaða	DET	WD-A	Case=Acc	2	det	_	_
 2	hag	hagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
 3	hafa	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	landeigendur	landeigandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
@@ -165,7 +165,7 @@
 # X_ID = ID_missing_12
 # text = Ekki neinn.
 1	Ekki	ekki	ADV	NEG	_	2	advmod	_	_
-2	neinn	neinn	DET	Q-A	Case=Acc|Degree=Pos	0	root	_	SpaceAfter=No
+2	neinn	neinn	DET	Q-A	Case=Acc	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_BO_2015_G-33-4549104,.12
@@ -190,12 +190,12 @@
 9	minni	minn	PRON	PRO-D	Case=Dat	8	nmod:poss	_	_
 10	rétt	rétt	ADV	ADV	Degree=Pos	4	advmod	_	_
 11	áðan	áðan	ADV	ADV	Degree=Pos	10	advmod	_	_
-12	það	það	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-13	gæti	geta	VERB	MDDS	Mood=Sub|Tense=Past	4	conj	_	OriginalHead=0
-14	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	13	cop	_	_
-15	eini	einn	DET	ONE-N	Case=Nom|Number=Sing	16	det	_	_
-16	kosturinn	kostur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	xcomp	_	SpaceAfter=No
-17	;	;	PUNCT	.	_	4	punct	_	_
+12	það	það	PRON	PRO-N	Case=Nom	16	nsubj	_	_
+13	gæti	geta	AUX	MDDS	Mood=Sub|Tense=Past	16	aux	_	_
+14	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	16	cop	_	_
+15	eini	einn	DET	ONE-N	Case=Nom	16	det	_	_
+16	kosturinn	kostur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	conj	_	OriginalHead=0|SpaceAfter=No
+17	;	;	PUNCT	.	_	16	punct	_	_
 18	það	það	PRON	PRO-N	Case=Nom	21	nsubj	_	_
 19	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	21	cop	_	_
 20	alveg	alveg	ADV	ADV	Degree=Pos	21	amod	_	_
@@ -217,25 +217,25 @@
 # text = Landeigendur hafa enga tryggingu fyrir því að fá eitthvað út úr þessum sjóði, enga tryggingu fyrir því að fá eitthvað út úr náttúrupassanum.
 1	Landeigendur	landeigandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
 2	hafa	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	enga	enginn	DET	Q-A	Case=Acc|Degree=Pos	4	amod	_	_
+3	enga	enginn	DET	Q-A	Case=Acc	4	amod	_	_
 4	tryggingu	trygging	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 5	fyrir	fyrir	ADP	P	_	6	case	_	_
 6	því	það	PRON	PRO-D	Case=Dat	4	obl	_	_
 7	að	að	PART	TO	_	8	mark	_	_
 8	fá	fá	VERB	VB	VerbForm=Inf	6	xcomp	_	_
-9	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	8	obj	_	_
+9	eitthvað	einhver	DET	Q-A	Case=Acc	8	obj	_	_
 10	út	út	ADP	RP	_	13	compound:prt	_	_
 11	úr	úr	ADP	P	_	13	case	_	_
-12	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	13	det	_	_
+12	þessum	þessi	DET	D-D	Case=Dat	13	det	_	_
 13	sjóði	sjóður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	13	punct	_	_
-15	enga	enginn	DET	Q-A	Case=Acc|Degree=Pos	16	amod	_	_
+15	enga	enginn	DET	Q-A	Case=Acc	16	amod	_	_
 16	tryggingu	trygging	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	appos	_	_
 17	fyrir	fyrir	ADP	P	_	18	case	_	_
 18	því	það	PRON	PRO-D	Case=Dat	16	obl	_	_
 19	að	að	PART	TO	_	20	mark	_	_
 20	fá	fá	VERB	VB	VerbForm=Inf	18	xcomp	_	_
-21	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	20	obj	_	_
+21	eitthvað	einhver	DET	Q-A	Case=Acc	20	obj	_	_
 22	út	út	ADP	RP	_	24	compound:prt	_	_
 23	úr	úr	ADP	P	_	24	case	_	_
 24	náttúrupassanum	náttúrupassi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
@@ -271,7 +271,7 @@
 11	eigin	eiginn	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
 12	stöðumælaverði	stöðumælavörður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 13	um	um	ADP	P	_	14	case	_	_
-14	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	12	obl	_	SpaceAfter=No
+14	allt	allur	DET	Q-A	Case=Acc	12	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_BO_2015_G-33-4549104,.17
@@ -314,7 +314,7 @@
 13	fyrir	fyrir	ADP	P	_	14	case	_	_
 14	slíkt	slíkur	PRON	SUCH-A	Case=Acc	10	obl	_	_
 15	en	en	CCONJ	CONJ	_	18	cc	_	_
-16	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	17	det	_	_
+16	þessi	þessi	DET	D-N	Case=Nom	17	det	_	_
 17	útfærsla	útfærsla	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
 18	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	7	conj	_	OriginalHead=0
 19	það	það	PRON	PRO-A	Case=Acc	18	obj	_	_

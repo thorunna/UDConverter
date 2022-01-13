@@ -27,7 +27,7 @@
 24	þóknast	þóknast	VERB	VBPI	Mood=Ind|Tense=Pres	7	obl	_	_
 25	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obj	_	_
 26	í	í	ADP	P	_	28	case	_	_
-27	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	28	det	_	_
+27	þessari	þessi	DET	D-D	Case=Dat	28	det	_	_
 28	ræðu	ræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	7	punct	_	_
 
@@ -39,7 +39,7 @@
 3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 4	kalla	kalla	VERB	VB	VerbForm=Inf	0	root	_	_
 5	mig	ég	PRON	PRO-A	Case=Acc	6	nsubj	_	_
-6	það	sá	DET	D-A	Case=Acc|PronType=Art	4	ccomp	_	_
+6	það	sá	DET	D-A	Case=Acc	4	ccomp	_	_
 7	sem	sem	SCONJ	C	_	9	mark	_	_
 8	fólki	fólk	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	nsubj	_	_
 9	sýnist	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	6	acl:relcl	_	SpaceAfter=No
@@ -61,10 +61,10 @@
 5	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
 6	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 7	nefnir	nefna	VERB	VBPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	3	punct	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
 9	það	það	PRON	PRO-N	Case=Nom	12	nsubj	_	_
 10	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
-11	fleiri	margur	DET	QR-N	Case=Nom|Degree=Pos	12	amod	_	_
+11	fleiri	margur	DET	QR-N	Case=Nom	12	amod	_	_
 12	stofnanir	stofnun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	conj	_	OriginalHead=0
 13	en	en	ADP	P	_	12	case	_	_
 14	Persónuvernd	persónuvernd	PROPN	NPR-N	_	12	advcl	_	_
@@ -88,7 +88,7 @@
 # text = Það er alla vega brýnt að mínu mati að skera ekki niður í þeim stofnunum sem eru til þess fallnar að veita bankakerfinu svolítið aðhald, vegna þess að það er jú sennilega það eftirlitshlutverk sem hefur klikkað hvað mest, þori ég næstum því að fullyrða, í íslenskri sögu, og vissulega á 21. öldinni, það er engin spurning.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-3	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	4	amod	_	_
+3	alla	allur	DET	Q-A	Case=Acc	4	amod	_	_
 4	vega	vegi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
 5	brýnt	brýnn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	að	að	ADP	P	_	8	case	_	_
@@ -99,7 +99,7 @@
 11	ekki	ekki	ADV	NEG	_	10	advmod	_	_
 12	niður	niður	ADP	RP	_	10	compound:prt	_	_
 13	í	í	ADP	P	_	15	case	_	_
-14	þeim	sá	DET	D-D	Case=Dat|PronType=Art	15	det	_	_
+14	þeim	sá	DET	D-D	Case=Dat	15	det	_	_
 15	stofnunum	stofnun	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
 16	sem	sem	SCONJ	C	_	22	mark	_	_
 17	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
@@ -109,7 +109,7 @@
 21	að	að	PART	TO	_	22	mark	_	_
 22	veita	veita	VERB	VB	VerbForm=Inf	15	acl:relcl	_	_
 23	bankakerfinu	bankakerfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	iobj	_	_
-24	svolítið	svolítill	DET	Q-A	Case=Acc|Degree=Pos	25	amod	_	_
+24	svolítið	svolítill	DET	Q-A	Case=Acc	25	amod	_	_
 25	aðhald	aðhald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obj	_	SpaceAfter=No
 26	,	,	PUNCT	,	_	25	punct	_	_
 27	vegna	vegna	ADP	P	_	28	case	_	_
@@ -119,7 +119,7 @@
 31	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
 32	jú	jú	ADV	ADV	Degree=Pos	35	advmod	_	_
 33	sennilega	sennilega	ADV	ADV	Degree=Pos	35	advmod	_	_
-34	það	sá	DET	D-N	Case=Nom|PronType=Art	35	det	_	_
+34	það	sá	DET	D-N	Case=Nom	35	det	_	_
 35	eftirlitshlutverk	eftirlitshlutverk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	ccomp	_	_
 36	sem	sem	SCONJ	C	_	38	mark	_	_
 37	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	38	aux	_	_
@@ -146,7 +146,7 @@
 58	,	,	PUNCT	,	_	57	punct	_	_
 59	það	það	PRON	PRO-N	Case=Nom	62	nsubj	_	_
 60	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	62	cop	_	_
-61	engin	enginn	DET	Q-N	Case=Nom|Degree=Pos	62	amod	_	_
+61	engin	enginn	DET	Q-N	Case=Nom	62	amod	_	_
 62	spurning	spurning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	57	parataxis	_	SpaceAfter=No
 63	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -176,7 +176,7 @@
 21	en	en	CCONJ	CONJ	_	23	cc	_	_
 22	vissulega	vissulega	ADV	ADV	Degree=Pos	23	advmod	_	_
 23	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-24	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	23	nsubj	_	_
+24	þetta	þessi	DET	D-N	Case=Nom	23	nsubj	_	_
 25	í	í	ADP	P	_	26	case	_	_
 26	sögubækur	sögubók	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obl	_	_
 27	og	og	CCONJ	CONJ	_	29	cc	_	_
@@ -217,7 +217,7 @@
 2	kannast	kanna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	svolítið	svolítið	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	við	við	ADP	P	_	5	case	_	_
-5	eitt	einn	DET	ONE-A	Case=Acc|Number=Sing	2	obl	_	_
+5	eitt	einn	DET	ONE-A	Case=Acc	2	obl	_	_
 6	úr	úr	ADP	P	_	7	case	_	_
 7	hugbúnaðargerðinni	hugbúnaðargerð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 8	sem	sem	SCONJ	C	_	11	mark	_	_
@@ -230,7 +230,7 @@
 15	að	að	SCONJ	C	_	17	mark	_	_
 16	okkur	ég	PRON	PRO-A	Case=Acc	17	nsubj	_	_
 17	vantar	vanta	VERB	VBPI	Mood=Ind|Tense=Pres	13	ccomp	_	_
-18	meiri	mikill	DET	QR-A	Case=Acc|Degree=Pos	19	amod	_	_
+18	meiri	mikill	DET	QR-A	Case=Acc	19	amod	_	_
 19	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
 20	til	til	ADP	P	_	21	case	_	_
 21	þess	það	PRON	PRO-G	Case=Gen	19	obl	_	_
@@ -250,14 +250,14 @@
 5	hann	hann	PRON	PRO-N	Case=Nom	11	nmod	_	_
 6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 7	með	með	ADP	P	_	11	case	_	_
-8	hina	hinn	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+8	hina	hinn	DET	D-A	Case=Acc	11	det	_	_
 9	og	og	CCONJ	CONJ	_	10	cc	_	_
-10	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	8	conj	_	_
+10	þessa	þessi	DET	D-A	Case=Acc	8	conj	_	_
 11	kröfuna	krafa	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0|SpaceAfter=No
-12	,	,	PUNCT	,	_	2	punct	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
 13	við	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
 14	uppfyllum	uppfylla	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-15	þær	sá	DET	D-A	Case=Acc|PronType=Art	16	det	_	_
+15	þær	sá	DET	D-A	Case=Acc	16	det	_	_
 16	kröfur	krafa	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obj	_	_
 17	en	en	CCONJ	CONJ	_	18	cc	_	_
 18	tökum	taka	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
@@ -266,7 +266,7 @@
 21	að	að	SCONJ	C	_	25	mark	_	_
 22	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	25	expl	_	_
 23	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
-24	eitthvert	einhver	DET	Q-N	Case=Nom|Degree=Pos	25	amod	_	_
+24	eitthvert	einhver	DET	Q-N	Case=Nom	25	amod	_	_
 25	öryggisvandamál	öryggisvandamál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	xcomp	_	_
 26	sem	sem	SCONJ	C	_	28	mark	_	_
 27	við	ég	PRON	PRO-N	Case=Nom	28	nsubj	_	_
@@ -282,11 +282,11 @@
 1	En	en	CCONJ	CONJ	_	5	cc	_	_
 2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-4	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	5	obl	_	_
+4	ekkert	enginn	DET	Q-A	Case=Acc	5	obl	_	_
 5	búið	búa	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 6	að	að	PART	TO	_	7	mark	_	_
 7	setja	setja	VERB	VB	VerbForm=Inf	5	xcomp	_	_
-8	neina	neinn	DET	Q-A	Case=Acc|Degree=Pos	9	amod	_	_
+8	neina	neinn	DET	Q-A	Case=Acc	9	amod	_	_
 9	tíma	tími	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obj	_	_
 10	á	á	ADP	P	_	11	case	_	_
 11	það	það	PRON	PRO-A	Case=Acc	7	obl	_	_
@@ -307,13 +307,13 @@
 26	ekki	ekki	ADV	NEG	_	25	advmod	_	_
 27	fyrir	fyrir	ADV	ADV	Degree=Pos	25	obl	_	_
 28	fram	fram	ADP	RP	_	27	compound:prt	_	_
-29	hvaða	hvaða	DET	WD-N	Case=Nom|Number=Sing	30	det	_	_
+29	hvaða	hvaða	DET	WD-N	Case=Nom	30	det	_	_
 30	peningar	peningur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	31	obj	_	_
 31	fari	fara	VERB	VBPS	Mood=Sub|Tense=Pres	25	ccomp	_	_
 32	í	í	ADP	P	_	34	case	_	_
 33	að	að	PART	TO	_	34	mark	_	_
 34	leysa	leysa	VERB	VB	VerbForm=Inf	31	obl	_	_
-35	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	34	obj	_	SpaceAfter=No
+35	þetta	þessi	DET	D-A	Case=Acc	34	obj	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	5	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4776350,.9
@@ -345,7 +345,7 @@
 24	:	:	PUNCT	,	_	23	punct	_	_
 25	Hvað	hver	PRON	WPRO-N	Case=Nom	26	obj	_	_
 26	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	23	ccomp	_	_
-27	það	sá	DET	D-N	Case=Nom|PronType=Art	28	det	_	_
+27	það	sá	DET	D-N	Case=Nom	28	det	_	_
 28	versta	illur	ADJ	ADJS-N	Case=Nom|Degree=Sup	26	xcomp	_	_
 29	sem	sem	SCONJ	C	_	31	mark	_	_
 30	gæti	geta	AUX	MDDS	Mood=Sub|Tense=Past	31	aux	_	_
@@ -404,7 +404,7 @@
 18	fara	fara	VERB	VB	VerbForm=Inf	13	xcomp	_	SpaceAfter=No
 19	?	?	PUNCT	.	_	18	punct	_	_
 20	Og	og	CCONJ	CONJ	_	23	cc	_	_
-21	einhver	einhver	DET	Q-N	Case=Nom|Degree=Pos	23	nsubj	_	_
+21	einhver	einhver	DET	Q-N	Case=Nom	23	nsubj	_	_
 22	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	23	aux	_	_
 23	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	SpaceAfter=No
 24	:	:	PUNCT	,	_	23	punct	_	_
@@ -426,7 +426,7 @@
 40	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	41	amod	_	_
 41	trúverðugt	trúverðugur	ADJ	ADJ-N	Case=Nom|Degree=Pos	39	ccomp	_	_
 42	í	í	ADP	P	_	44	case	_	_
-43	þá	sá	DET	D-A	Case=Acc|PronType=Art	44	det	_	_
+43	þá	sá	DET	D-A	Case=Acc	44	det	_	_
 44	daga	dagur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	39	obl	_	SpaceAfter=No
 45	,	,	PUNCT	,	_	44	punct	_	_
 46	vegna	vegna	ADP	P	_	47	case	_	_

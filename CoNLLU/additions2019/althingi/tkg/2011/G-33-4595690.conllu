@@ -8,7 +8,7 @@
 5	út	út	ADP	RP	_	7	compound:prt	_	_
 6	af	af	ADP	P	_	7	case	_	_
 7	Jóel	jóel	PROPN	NPR-D	_	1	obl	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	1	punct	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
 9	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	12	expl	_	_
 10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
 11	ósköp	ósköp	ADV	ADV	Degree=Pos	12	amod	_	_
@@ -18,7 +18,7 @@
 15	sjálfa	sjálfur	PRON	PRO-A	Case=Acc	14	appos	_	_
 16	að	að	PART	TO	_	17	mark	_	_
 17	gera	gera	VERB	DO	VerbForm=Inf	12	xcomp	_	_
-18	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	19	amod	_	_
+18	alla	allur	DET	Q-A	Case=Acc	19	amod	_	_
 19	hluti	hlutur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	21	nsubj	_	_
 20	það	það	PRON	PRO-A	Case=Acc	21	obl	_	_
 21	flókna	flókinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	17	ccomp	_	_
@@ -48,11 +48,11 @@
 # text = Ég hvet þann ráðherra ríkisstjórnarinnar sem þetta mál snertir og málið er hjá að leysa og höggva á þann hnút sem allra fyrst.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hvet	hvetja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	þann	sá	DET	D-A	Case=Acc|PronType=Art	4	det	_	_
+3	þann	sá	DET	D-A	Case=Acc	4	det	_	_
 4	ráðherra	ráðherra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 5	ríkisstjórnarinnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	nmod:poss	_	_
 6	sem	sem	SCONJ	C	_	9	mark	_	_
-7	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	8	det	_	_
+7	þetta	þessi	DET	D-N	Case=Nom	8	det	_	_
 8	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
 9	snertir	snerta	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
 10	og	og	CCONJ	CONJ	_	13	cc	_	_
@@ -64,17 +64,17 @@
 16	og	og	CCONJ	CONJ	_	17	cc	_	_
 17	höggva	höggva	VERB	VB	VerbForm=Inf	15	advcl	_	_
 18	á	á	ADP	P	_	20	case	_	_
-19	þann	sá	DET	D-A	Case=Acc|PronType=Art	20	det	_	_
+19	þann	sá	DET	D-A	Case=Acc	20	det	_	_
 20	hnút	hnútur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
 21	sem	sem	SCONJ	C	_	23	mark	_	_
-22	allra	allur	DET	Q-G	Case=Gen|Degree=Pos	23	nmod:poss	_	_
+22	allra	allur	DET	Q-G	Case=Gen	23	nmod:poss	_	_
 23	fyrst	snemma	ADV	ADVS	Degree=Sup	17	advmod	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4595690,.3
 # X_ID = ID_missing_5
 # text = Þetta snýst um þrjá einstaklinga sem eru fastir í útlöndum og komast ekki heim til okkar ástkæra lands.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	snýst	snúa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	um	um	ADP	P	_	5	case	_	_
 4	þrjá	þrír	NUM	NUM-A	Case=Acc	5	nummod	_	_
@@ -99,7 +99,7 @@
 # text = Ég bið þá menn sem hér eru inni að huga að því.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	bið	biðja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	þá	sá	DET	D-A	Case=Acc|PronType=Art	4	det	_	_
+3	þá	sá	DET	D-A	Case=Acc	4	det	_	_
 4	menn	maður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
 5	sem	sem	SCONJ	C	_	6	mark	_	_
 6	hér	hér	ADV	ADV	Degree=Pos	4	acl:relcl	_	_
@@ -115,7 +115,7 @@
 # X_IDs = ID_missing_7 ; ID_missing_8
 # text = Varðandi hitt vonast ég til þess, og vil segja það fyrir framan þingheim, að við tökum þá nálgun sem hv. þm. Ragnheiður Elín Árnadóttir hefur lagt áherslu á, að hér verði þverpólitísk samstaða í þessu máli, að við vinnum málið vel og fáum fólk til að skilja af hverju við viljum vera forgöngumenn í þessu máli þannig að aðrar Norðurlandaþjóðir verði síðan sporgöngumenn hvað þetta mál varðar.
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	3	advcl	_	_
-2	hitt	hinn	DET	D-A	Case=Acc|PronType=Art	1	obj	_	_
+2	hitt	hinn	DET	D-A	Case=Acc	1	obj	_	_
 3	vonast	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 5	til	til	ADP	P	_	6	case	_	_
@@ -132,7 +132,7 @@
 16	að	að	SCONJ	C	_	18	mark	_	_
 17	við	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
 18	tökum	taka	VERB	VBPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
-19	þá	sá	DET	D-A	Case=Acc|PronType=Art	20	det	_	_
+19	þá	sá	DET	D-A	Case=Acc	20	det	_	_
 20	nálgun	nálgun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obj	_	_
 21	sem	sem	SCONJ	C	_	28	mark	_	_
 22	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	amod	_	_
@@ -144,14 +144,14 @@
 28	lagt	leggja	VERB	VBN	Tense=Past|VerbForm=Part	20	acl:relcl	_	_
 29	áherslu	áhersla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obj	_	_
 30	á	á	ADP	P	_	28	obl	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	3	punct	_	_
+31	,	,	PUNCT	,	_	34	punct	_	_
 32	að	að	SCONJ	C	_	34	mark	_	_
 33	hér	hér	ADV	ADV	Degree=Pos	34	advmod	_	_
 34	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	3	conj	_	OriginalHead=0
 35	þverpólitísk	þverpólitískur	ADJ	ADJ-N	Case=Nom|Degree=Pos	36	amod	_	_
 36	samstaða	samstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	34	nsubj	_	_
 37	í	í	ADP	P	_	39	case	_	_
-38	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	39	det	_	_
+38	þessu	þessi	DET	D-D	Case=Dat	39	det	_	_
 39	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
 40	,	,	PUNCT	,	_	39	punct	_	_
 41	að	að	SCONJ	C	_	43	mark	_	_
@@ -172,7 +172,7 @@
 56	vera	vera	AUX	BE	VerbForm=Inf	55	cop	_	_
 57	forgöngumenn	forgöngumaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	55	xcomp	_	_
 58	í	í	ADP	P	_	60	case	_	_
-59	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	60	det	_	_
+59	þessu	þessi	DET	D-D	Case=Dat	60	det	_	_
 60	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	55	obl	_	_
 61	þannig	þannig	ADV	ADV	Degree=Pos	47	advmod	_	_
 62	að	að	SCONJ	C	_	65	mark	_	_
@@ -181,8 +181,8 @@
 65	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	61	advcl	_	_
 66	síðan	síðan	ADV	ADV	Degree=Pos	65	advmod	_	_
 67	sporgöngumenn	sporgöngumaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	65	xcomp	_	_
-68	hvað	hver	DET	Q-A	Case=Acc|Degree=Pos	65	obl	_	_
-69	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	70	det	_	_
+68	hvað	hver	DET	Q-A	Case=Acc	65	obl	_	_
+69	þetta	þessi	DET	D-A	Case=Acc	70	det	_	_
 70	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	71	obj	_	_
 71	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	68	acl:relcl	_	SpaceAfter=No
 72	.	.	PUNCT	.	_	3	punct	_	_
@@ -225,7 +225,7 @@
 5	mjög	mjög	ADV	ADV	Degree=Pos	2	advmod	_	_
 6	á	á	ADP	P	_	10	case	_	_
 7	að	að	SCONJ	C	_	10	mark	_	_
-8	það	sá	DET	D-N	Case=Nom|PronType=Art	9	det	_	_
+8	það	sá	DET	D-N	Case=Nom	9	det	_	_
 9	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 10	færi	færa	VERB	VBPS	Mood=Sub|Tense=Pres	2	obl	_	_
 11	ekki	ekki	ADV	NEG	_	10	advmod	_	_
@@ -257,12 +257,12 @@
 9	staðið	standa	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
 10	saman	saman	ADV	ADV	Degree=Pos	9	advmod	_	_
 11	í	í	ADP	P	_	13	case	_	_
-12	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	13	det	_	_
+12	þessu	þessi	DET	D-D	Case=Dat	13	det	_	_
 13	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
 14	af	af	ADP	P	_	15	case	_	_
 15	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 16	að	að	SCONJ	C	_	19	mark	_	_
-17	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	19	nsubj	_	_
+17	þetta	þessi	DET	D-N	Case=Nom	19	nsubj	_	_
 18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
 19	réttlætismál	réttlætismál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	ccomp	_	SpaceAfter=No
 20	,	,	PUNCT	,	_	19	punct	_	_
@@ -271,7 +271,7 @@
 23	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	21	acl:relcl	_	_
 24	tillit	tillit	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obj	_	_
 25	til	til	ADP	P	_	27	case	_	_
-26	þess	sá	DET	D-G	Case=Gen|PronType=Art	27	det	_	_
+26	þess	sá	DET	D-G	Case=Gen	27	det	_	_
 27	samfélags	samfélag	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	24	obl	_	_
 28	sem	sem	SCONJ	C	_	30	mark	_	_
 29	við	ég	PRON	PRO-N	Case=Nom	30	nsubj	_	_
@@ -309,7 +309,7 @@
 23	móts	mót	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	obl	_	_
 24	við	við	ADP	P	_	25	case	_	_
 25	þarfir	þörf	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obl	_	_
-26	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	27	det	_	_
+26	þeirra	sá	DET	D-G	Case=Gen	27	det	_	_
 27	einstaklinga	einstaklingur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	25	nmod:poss	_	_
 28	sem	sem	SCONJ	C	_	29	mark	_	_
 29	fyrir	fyrir	ADP	RP	_	27	acl:relcl	_	_
@@ -324,7 +324,7 @@
 3	að	að	SCONJ	C	_	7	mark	_	_
 4	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	7	expl	_	_
 5	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	7	aux	_	_
-6	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	7	obl	_	_
+6	enginn	enginn	DET	Q-N	Case=Nom	7	obl	_	_
 7	sett	setja	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
 8	sig	sig	PRON	PRO-A	Case=Acc	7	obj	_	_
 9	í	í	ADP	P	_	10	case	_	_
@@ -346,15 +346,15 @@
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
-4	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	6	nsubj	_	_
+4	enginn	enginn	DET	Q-N	Case=Nom	6	nsubj	_	_
 5	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	6	aux	_	_
 6	sett	setja	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
 7	sig	sig	PRON	PRO-A	Case=Acc	6	obj	_	_
 8	í	í	ADP	P	_	10	case	_	_
-9	þau	sá	DET	D-A	Case=Acc|PronType=Art	10	det	_	_
+9	þau	sá	DET	D-A	Case=Acc	10	det	_	_
 10	spor	spor	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	_
 11	nema	nema	ADP	P	_	12	case	_	_
-12	þeir	sá	DET	D-N	Case=Nom|PronType=Art	6	obl	_	_
+12	þeir	sá	DET	D-N	Case=Nom	6	obl	_	_
 13	sem	sem	SCONJ	C	_	15	mark	_	_
 14	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	15	aux	_	_
 15	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	12	acl:relcl	_	_
@@ -367,7 +367,7 @@
 22	samfélagið	samfélag	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	_
 23	að	að	PART	TO	_	24	mark	_	_
 24	gera	gera	VERB	DO	VerbForm=Inf	21	xcomp	_	_
-25	hvað	hver	DET	Q-A	Case=Acc|Degree=Pos	24	obj	_	_
+25	hvað	hver	DET	Q-A	Case=Acc	24	obj	_	_
 26	það	það	PRON	PRO-N	Case=Nom	27	nsubj	_	_
 27	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	25	acl:relcl	_	_
 28	til	til	ADP	P	_	30	case	_	_

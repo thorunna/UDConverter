@@ -13,7 +13,7 @@
 10	áðan	áðan	ADV	ADV	Degree=Pos	8	advmod	_	_
 11	framtíðina	framtíð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
 12	og	og	CCONJ	CONJ	_	15	cc	_	_
-13	nokkur	nokkur	DET	Q-A	Case=Acc|Degree=Pos	15	amod	_	_
+13	nokkur	nokkur	DET	Q-A	Case=Acc	15	amod	_	_
 14	næstu	næstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	15	amod	_	_
 15	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obj	_	_
 16	sem	sem	SCONJ	C	_	21	mark	_	_
@@ -127,7 +127,7 @@
 2	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	gæti	geta	AUX	MDDS	Mood=Sub|Tense=Past	4	aux	_	_
 4	haft	hafa	VERB	HVN	Tense=Past|VerbForm=Part	0	root	_	_
-5	einhvern	einhver	DET	Q-A	Case=Acc|Degree=Pos	6	amod	_	_
+5	einhvern	einhver	DET	Q-A	Case=Acc	6	amod	_	_
 6	hólinn	hóll	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
 7	við	við	ADP	P	_	8	case	_	_
 8	Garðabæ	garðabær	PROPN	NPR-A	_	6	obl	_	_
@@ -177,7 +177,7 @@
 4	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	10	aux	_	_
 5	ég	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
 6	að	að	ADP	P	_	8	case	_	_
-7	mörgu	margur	DET	Q-D	Case=Dat|Degree=Pos	8	amod	_	_
+7	mörgu	margur	DET	Q-D	Case=Dat	8	amod	_	_
 8	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
 9	alveg	alveg	ADV	ADV	Degree=Pos	10	advmod	_	_
 10	skilja	skilja	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -187,7 +187,7 @@
 14	hæstv.	hæstvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	15	amod	_	_
 15	ráðherra	ráðherra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	nmod:poss	_	_
 16	ef	ef	ADP	P	_	19	case	_	_
-17	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	19	nsubj	_	_
+17	þetta	þessi	DET	D-N	Case=Nom	19	nsubj	_	_
 18	hefðu	hafa	AUX	HVDS	Mood=Sub|Tense=Past	19	aux	_	_
 19	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	10	obl	_	_
 20	útgjöld	útgjöld	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	19	xcomp	_	_
@@ -207,7 +207,7 @@
 34	árinu	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	_
 35	fyrir	fyrir	ADP	P	_	36	case	_	_
 36	kosningar	kosning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	34	obl	_	SpaceAfter=No
-37	,	,	PUNCT	,	_	10	punct	_	_
+37	,	,	PUNCT	,	_	34	punct	_	_
 38	en	en	CCONJ	CONJ	_	39	cc	_	_
 39	það	það	PRON	PRO-N	Case=Nom	10	conj	_	OriginalHead=0
 40	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	39	cop	_	_
@@ -224,13 +224,13 @@
 4	,	,	PUNCT	,	_	5	punct	_	_
 5	skýrslugerð	skýrslugerð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	_
 6	og	og	CCONJ	CONJ	_	8	cc	_	_
-7	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	8	amod	_	_
+7	mikið	mikill	DET	Q-N	Case=Nom	8	amod	_	_
 8	samráð	samráð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	_
 9	fæddist	fæða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-10	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	11	det	_	_
+10	þessi	þessi	DET	D-N	Case=Nom	11	det	_	_
 11	fjárfestingaráætlun	fjárfestingaráætlun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
 12	og	og	CCONJ	CONJ	_	19	cc	_	_
-13	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	19	nsubj	_	_
+13	þetta	þessi	DET	D-N	Case=Nom	19	nsubj	_	_
 14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	SpaceAfter=No
 15	,	,	PUNCT	,	_	14	punct	_	_
 16	herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	vocative	_	_
@@ -251,21 +251,21 @@
 # X_ID = ID_missing_12
 # text = Í rannsóknum, í þróun, í tækni, í nýsköpun, skapandi greinum og þeim sprotum sem við vonuðumst til að við værum að hjálpa af stað og mundu síðan hjálpa okkur á komandi árum í gegnum aukna verðmætasköpun og umsvif.
 1	Í	í	ADP	P	_	2	case	_	_
-2	rannsóknum	rannsókn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
+2	rannsóknum	rannsókn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	2	punct	_	_
-4	í	í	ADP	P	_	0	root	_	_
-5	þróun	þróun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	conj	_	SpaceAfter=No
+4	í	í	ADP	P	_	5	case	_	_
+5	þróun	þróun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	conj	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	5	punct	_	_
 7	í	í	ADP	P	_	8	case	_	_
-8	tækni	tækni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	conj	_	SpaceAfter=No
+8	tækni	tækni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	conj	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	8	punct	_	_
 10	í	í	ADP	P	_	11	case	_	_
-11	nýsköpun	nýsköpun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	conj	_	SpaceAfter=No
+11	nýsköpun	nýsköpun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	conj	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	11	punct	_	_
 13	skapandi	skapandi	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
 14	greinum	grein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	conj	_	_
 15	og	og	CCONJ	CONJ	_	17	cc	_	_
-16	þeim	sá	DET	D-D	Case=Dat|PronType=Art	17	det	_	_
+16	þeim	sá	DET	D-D	Case=Dat	17	det	_	_
 17	sprotum	sproti	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	conj	_	_
 18	sem	sem	SCONJ	C	_	20	mark	_	_
 19	við	ég	PRON	PRO-N	Case=Nom	20	nsubj	_	_
@@ -292,7 +292,7 @@
 40	verðmætasköpun	verðmætasköpun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	32	obl	_	_
 41	og	og	CCONJ	CONJ	_	42	cc	_	_
 42	umsvif	umsvif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	40	conj	_	SpaceAfter=No
-43	.	.	PUNCT	.	_	4	punct	_	_
+43	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4772703,.9
 # X_ID = ID_missing_13
@@ -314,10 +314,10 @@
 4	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	nsubj	_	_
 5	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	12	cop	_	_
 6	fyrir	fyrir	ADP	P	_	7	case	_	_
-7	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	12	obl	_	_
+7	ekkert	enginn	DET	Q-A	Case=Acc	12	obl	_	_
 8	löngu	langur	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
 9	kannski	kannski	ADV	ADV	Degree=Pos	12	advmod	_	_
-10	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	12	obl	_	_
+10	ekkert	enginn	DET	Q-A	Case=Acc	12	obl	_	_
 11	að	að	PART	TO	_	12	mark	_	_
 12	flokka	flokka	VERB	VB	VerbForm=Inf	2	acl:relcl	_	_
 13	sem	sem	SCONJ	C	_	15	mark	_	_

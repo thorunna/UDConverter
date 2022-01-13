@@ -30,7 +30,7 @@
 27	fyrir	fyrir	ADP	P	_	28	case	_	_
 28	því	það	PRON	PRO-D	Case=Dat	24	obl	_	_
 29	að	að	SCONJ	C	_	34	mark	_	_
-30	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	31	det	_	_
+30	þessi	þessi	DET	D-N	Case=Nom	31	det	_	_
 31	mál	mál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	34	nsubj	_	_
 32	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	34	cop	_	_
 33	mjög	mjög	ADV	ADV	Degree=Pos	34	amod	_	_
@@ -78,10 +78,10 @@
 3	mikla	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	4	amod	_	_
 4	virðingu	virðing	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 5	fyrir	fyrir	ADP	P	_	7	case	_	_
-6	því	sá	DET	D-D	Case=Dat|PronType=Art	7	det	_	_
+6	því	sá	DET	D-D	Case=Dat	7	det	_	_
 7	vandamáli	vandamál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 8	en	en	CCONJ	CONJ	_	12	cc	_	_
-9	þeim	sá	DET	D-D	Case=Dat|PronType=Art	10	det	_	_
+9	þeim	sá	DET	D-D	Case=Dat	10	det	_	_
 10	mun	munur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 11	frekar	frekar	ADV	ADVR	Degree=Cmp	12	advmod	_	_
 12	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
@@ -92,7 +92,7 @@
 17	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	16	cop	_	_
 18	handa	hönd	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	16	obl	_	_
 19	sem	sem	SCONJ	C	_	21	mark	_	_
-20	allra	allur	DET	Q-G	Case=Gen|Degree=Pos	21	nmod:poss	_	_
+20	allra	allur	DET	Q-G	Case=Gen	21	nmod:poss	_	_
 21	fyrst	snemma	ADV	ADVS	Degree=Sup	16	advmod	_	_
 22	við	við	ADP	P	_	24	case	_	_
 23	að	að	PART	TO	_	24	mark	_	_
@@ -125,7 +125,7 @@
 18	ekki	ekki	ADV	NEG	_	19	amod	_	_
 19	augljóst	augljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	conj	_	_
 20	undir	undir	ADP	P	_	22	case	_	_
-21	hvaða	hvaða	DET	WD-D	Case=Dat|Number=Sing	22	det	_	_
+21	hvaða	hvaða	DET	WD-D	Case=Dat	22	det	_	_
 22	kringumstæðum	kringumstæður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	24	obl	_	_
 23	maður	maður	PRON	MAN-N	_	24	nsubj	_	_
 24	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	19	ccomp	_	_
@@ -136,7 +136,7 @@
 29	í	í	ADP	P	_	30	case	_	_
 30	hugbúnaðargerð	hugbúnaðargerð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obl	_	_
 31	eða	eða	CCONJ	CONJ	_	33	cc	_	_
-32	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	33	amod	_	_
+32	eitthvað	einhver	DET	Q-A	Case=Acc	33	amod	_	_
 33	því	það	PRON	PRO-D	Case=Dat	26	xcomp	_	_
 34	um	um	ADP	RP	_	33	compound:prt	_	_
 35	líkt	líkur	ADJ	ADJ-A	Case=Acc|Degree=Pos	33	amod	_	SpaceAfter=No
@@ -151,7 +151,7 @@
 4	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	halda	halda	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-7	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+7	þeirri	sá	DET	D-D	Case=Dat	8	det	_	_
 8	umræðu	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	ccomp	_	_
 9	á	á	ADP	P	_	10	case	_	_
 10	lofti	loft	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
@@ -164,13 +164,13 @@
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	xcomp	_	_
 4	að	að	SCONJ	C	_	23	mark	_	_
-5	hvert	hver	DET	Q-N	Case=Nom|Degree=Pos	23	dep	_	_
+5	hvert	hver	DET	Q-N	Case=Nom	23	dep	_	_
 6	skref	skref	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	conj	_	_
 7	sem	sem	SCONJ	C	_	9	mark	_	_
 8	við	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
 9	stígum	stíga	VERB	VBPI	Mood=Ind|Tense=Pres	6	acl:relcl	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	23	punct	_	_
-11	hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	12	det	_	_
+11	hvaða	hvaða	DET	WD-A	Case=Acc	12	det	_	_
 12	ákvörðun	ákvörðun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obj	_	_
 13	svo	svo	ADV	ADV	Degree=Pos	16	advmod	_	_
 14	sem	sem	SCONJ	C	_	13	fixed	_	_
@@ -192,7 +192,7 @@
 30	taka	taka	VERB	VB	VerbForm=Inf	28	xcomp	_	_
 31	ákvörðun	ákvörðun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obj	_	_
 32	um	um	ADP	P	_	33	case	_	_
-33	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	30	obl	_	SpaceAfter=No
+33	þetta	þessi	DET	D-A	Case=Acc	30	obl	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4727073,.7
@@ -220,7 +220,7 @@
 20	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	18	advmod	_	_
 21	inn	inn	ADP	RP	_	24	compound:prt	_	_
 22	í	í	ADP	P	_	24	case	_	_
-23	þá	sá	DET	D-A	Case=Acc|PronType=Art	24	det	_	_
+23	þá	sá	DET	D-A	Case=Acc	24	det	_	_
 24	umræðu	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
 

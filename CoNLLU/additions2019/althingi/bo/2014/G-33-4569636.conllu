@@ -31,7 +31,7 @@
 17	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	18	aux	_	_
 18	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	8	conj	_	_
 19	ofboðslega	ofboðslega	ADV	ADV	Degree=Pos	20	amod	_	_
-20	mikil	mikill	DET	Q-N	Case=Nom|Degree=Pos	18	amod	_	SpaceAfter=No
+20	mikil	mikill	DET	Q-N	Case=Nom	18	amod	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4569636,.3
@@ -75,43 +75,43 @@
 11	að	að	SCONJ	C	_	13	mark	_	_
 12	hún	hún	PRON	PRO-N	Case=Nom	13	obl	_	_
 13	gerist	gera	VERB	DOPI	Mood=Ind|Tense=Pres	6	ccomp	_	_
-14	í	í	ADV	ADV	Degree=Pos	18	obl	_	_
+14	í	í	ADV	ADV	Degree=Pos	13	obl	_	_
 15	gegnum	gegnum	ADP	P	_	16	case	_	_
 16	Skype	skype	PROPN	NPR-A	_	14	obl	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	18	punct	_	_
-18	heima	heima	ADV	ADV	Degree=Pos	25	obl	_	_
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	heima	heima	ADV	ADV	Degree=Pos	21	advmod	_	_
 19	hjá	hjá	ADP	P	_	21	case	_	_
 20	viðkomandi	viðkomandi	ADJ	ADJ-D	Case=Dat|Degree=Pos	21	amod	_	_
-21	lækni	læknir	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	conj	_	_
+21	lækni	læknir	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	conj	_	_
 22	eða	eða	CCONJ	CONJ	_	24	cc	_	_
 23	á	á	ADP	P	_	24	case	_	_
-24	bakvakt	bakvakt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	conj	_	_
-25	eða	eða	CCONJ	CONJ	_	13	obl	_	_
+24	bakvakt	bakvakt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	conj	_	_
+25	eða	eða	CCONJ	CONJ	_	14	conj	_	_
 26	hvernig	hvernig	ADV	WADV	Degree=Pos	28	advmod	_	_
 27	sem	sem	SCONJ	C	_	28	mark	_	_
-28	það	það	PRON	PRO-N	Case=Nom	25	ccomp	_	_
+28	það	það	PRON	PRO-N	Case=Nom	25	xcomp	_	_
 29	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	28	cop	_	SpaceAfter=No
 30	,	,	PUNCT	,	_	29	punct	_	_
 31	að	að	SCONJ	C	_	6	dep	_	_
 32	greitt	greiða	VERB	VAN	Tense=Past|VerbForm=Part	31	conj	_	_
 33	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	32	cop	_	_
 34	fyrir	fyrir	ADP	P	_	36	case	_	_
-35	þann	sá	DET	D-A	Case=Acc|PronType=Art	36	det	_	_
+35	þann	sá	DET	D-A	Case=Acc	36	det	_	_
 36	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	32	obl	_	_
 37	eða	eða	CCONJ	CONJ	_	39	cc	_	_
-38	það	sá	DET	D-N	Case=Nom|PronType=Art	39	det	_	_
+38	það	sá	DET	D-N	Case=Nom	39	det	_	_
 39	viðtal	viðtal	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	36	conj	_	SpaceAfter=No
 40	,	,	PUNCT	,	_	39	punct	_	_
-41	þá	sá	DET	D-A	Case=Acc|PronType=Art	42	det	_	_
+41	þá	sá	DET	D-A	Case=Acc	42	det	_	_
 42	vinnu	vinna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	36	appos	_	SpaceAfter=No
 43	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4569636,.5
 # X_ID = ID_missing_5
 # text = Þetta er eitthvað sem við þurfum væntanlega að vinna með og finna lausn á.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	0	root	_	_
+3	eitthvað	einhver	DET	Q-N	Case=Nom	0	root	_	_
 4	sem	sem	SCONJ	C	_	6	mark	_	_
 5	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 6	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	_
@@ -134,7 +134,7 @@
 4	samt	samt	ADV	ADV	Degree=Pos	2	advmod	_	_
 5	sem	sem	SCONJ	C	_	6	mark	_	_
 6	áður	áður	ADV	ADVR	Degree=Cmp	4	advcl	_	_
-7	sú	sá	DET	D-N	Case=Nom|PronType=Art	2	xcomp	_	_
+7	sú	sá	DET	D-N	Case=Nom	2	xcomp	_	_
 8	að	að	SCONJ	C	_	11	mark	_	_
 9	mun	munur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
 10	ódýrara	ódýr	ADJ	ADJR-N	Case=Nom|Degree=Cmp	11	amod	_	_
@@ -179,7 +179,7 @@
 3	að	að	SCONJ	C	_	5	mark	_	_
 4	við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 5	hljótum	hljóta	VERB	VBPI	Mood=Ind|Tense=Pres	2	ccomp	_	_
-6	öll	allur	DET	Q-N	Case=Nom|Degree=Pos	5	amod	_	_
+6	öll	allur	DET	Q-N	Case=Nom	5	amod	_	_
 7	að	að	PART	TO	_	8	mark	_	_
 8	sjá	sjá	VERB	VB	VerbForm=Inf	5	xcomp	_	_
 9	það	það	PRON	PRO-A	Case=Acc	8	obj	_	_
@@ -199,7 +199,7 @@
 23	þingsins	þing	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
 24	,	,	PUNCT	,	_	23	punct	_	_
 25	ef	ef	ADP	P	_	28	case	_	_
-26	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	27	det	_	_
+26	þessi	þessi	DET	D-N	Case=Nom	27	det	_	_
 27	þingsályktunartillaga	þingsályktunartillaga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	nsubj	_	_
 28	nær	ná	VERB	VBPI	Mood=Ind|Tense=Pres	16	obl	_	_
 29	fram	fram	ADP	RP	_	31	compound:prt	_	_

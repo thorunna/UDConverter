@@ -54,10 +54,10 @@
 7	og	og	CCONJ	CONJ	_	11	cc	_	_
 8	það	það	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
-10	það	sá	DET	D-N	Case=Nom|PronType=Art	11	det	_	_
+10	það	sá	DET	D-N	Case=Nom	11	det	_	_
 11	vonda	vondur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
 12	við	við	ADP	P	_	13	case	_	_
-13	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	11	obl	_	SpaceAfter=No
+13	þetta	þessi	DET	D-A	Case=Acc	11	obl	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	2	punct	_	_
 15	við	ég	PRON	PRO-N	Case=Nom	16	nsubj	_	_
 16	höfum	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
@@ -79,7 +79,7 @@
 7	fyrirhyggju	fyrirhyggja	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
 8	og	og	CCONJ	CONJ	_	9	cc	_	_
 9	gera	gera	VERB	DO	VerbForm=Inf	6	xcomp	_	_
-10	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	9	obj	_	_
+10	þetta	þessi	DET	D-A	Case=Acc	9	obj	_	_
 11	samhliða	samhliða	ADV	ADV	Degree=Pos	9	advmod	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -115,7 +115,7 @@
 27	lína	lína	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	nsubj	_	_
 28	yfir	yfir	ADP	P	_	29	case	_	_
 29	Sprengisand	sprengisandur	PROPN	NPR-A	_	25	obl	_	SpaceAfter=No
-30	,	,	PUNCT	,	_	2	punct	_	_
+30	,	,	PUNCT	,	_	25	punct	_	_
 31	og	og	CCONJ	CONJ	_	36	cc	_	_
 32	þá	þá	ADV	ADV	Degree=Pos	36	advmod	_	_
 33	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	36	cop	_	_
@@ -134,7 +134,7 @@
 3	rætt	ræða	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 4	í	í	ADP	P	_	5	case	_	_
 5	nefndinni	nefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-6	hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	7	det	_	_
+6	hvaða	hvaða	DET	WD-A	Case=Acc	7	det	_	_
 7	málamiðlun	málamiðlun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
 8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 9	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
@@ -162,17 +162,17 @@
 10	með	með	ADP	P	_	12	case	_	_
 11	lengri	langur	ADJ	ADJR-A	Case=Acc|Degree=Cmp	12	amod	_	_
 12	jarðstreng	jarðstrengur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
-13	en	en	ADP	P	_	14	case	_	_
-14	um	um	ADV	ADV	Degree=Pos	12	obl	_	_
+13	en	en	ADP	P	_	16	case	_	_
+14	um	um	ADV	ADV	Degree=Pos	16	obl	_	_
 15	50	fimmtíu	NUM	NUM-G	Case=Gen	16	nummod	_	_
-16	km	kílómetri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	16	conj	_	_
+16	km	kílómetri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	conj	_	_
 17	yfir	yfir	ADP	P	_	18	case	_	_
 18	Sprengisand	sprengisandur	PROPN	NPR-A	_	9	obl	_	SpaceAfter=No
 19	,	,	PUNCT	,	_	18	punct	_	_
 20	sem	sem	SCONJ	C	_	24	mark	_	_
 21	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
 22	auðvitað	auðvitað	ADV	ADV	Degree=Pos	24	advmod	_	_
-23	mikil	mikill	DET	Q-N	Case=Nom|Degree=Pos	24	amod	_	_
+23	mikil	mikill	DET	Q-N	Case=Nom	24	amod	_	_
 24	vonbrigði	vonbrigði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	acl:relcl	_	SpaceAfter=No
 25	,	,	PUNCT	,	_	2	punct	_	_
 26	en	en	CCONJ	CONJ	_	30	cc	_	_
@@ -195,7 +195,7 @@
 8	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	lengja	lengja	VERB	VB	VerbForm=Inf	8	xcomp	_	_
-11	þá	sá	DET	D-A	Case=Acc|PronType=Art	12	det	_	_
+11	þá	sá	DET	D-A	Case=Acc	12	det	_	_
 12	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
 13	upp	upp	ADP	RP	_	18	compound:prt	_	_
 14	í	í	ADP	P	_	18	case	_	_
@@ -216,7 +216,7 @@
 29	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	32	cop	_	_
 30	ekki	ekki	ADV	NEG	_	32	advmod	_	_
 31	jafn	jafn	ADV	ADV	Degree=Pos	32	amod	_	_
-32	mikil	mikill	DET	Q-N	Case=Nom|Degree=Pos	24	conj	_	SpaceAfter=No
+32	mikil	mikill	DET	Q-N	Case=Nom	24	conj	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = ALTHINGI_BO_2015_G-33-4894126,.9
@@ -230,14 +230,14 @@
 6	þurfum	þurfa	VERB	VBPS	Mood=Sub|Tense=Pres	2	ccomp	_	_
 7	að	að	PART	TO	_	8	mark	_	_
 8	skoða	skoða	VERB	VB	VerbForm=Inf	6	xcomp	_	_
-9	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	8	obj	_	_
+9	þetta	þessi	DET	D-A	Case=Acc	8	obj	_	_
 10	í	í	ADP	P	_	15	case	_	_
-11	miklu	mikill	DET	Q-D	Case=Dat|Degree=Pos	14	obl	_	SpaceAfter=No
+11	miklu	mikill	DET	Q-D	Case=Dat	14	obl	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	11	punct	_	_
-13	miklu	mikill	DET	Q-D	Case=Dat|Degree=Pos	11	dep	_	_
+13	miklu	mikill	DET	Q-D	Case=Dat	11	dep	_	_
 14	betra	góður	ADJ	ADJR-A	Case=Acc|Degree=Cmp	15	amod	_	_
 15	samhengi	samhengi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
-16	hvort	hvor	DET	Q-N	Case=Nom|Degree=Pos	15	obl	_	_
+16	hvort	hvor	DET	Q-N	Case=Nom	15	obl	_	_
 17	við	við	ADP	P	_	18	case	_	_
 18	annað	annar	PRON	OTHER-A	Case=Acc	16	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
@@ -249,7 +249,7 @@
 2	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	undir	undir	ADP	P	_	5	case	_	_
-5	það	sá	DET	D-A	Case=Acc|PronType=Art	2	obl	_	_
+5	það	sá	DET	D-A	Case=Acc	2	obl	_	_
 6	sem	sem	SCONJ	C	_	8	mark	_	_
 7	þingmaðurinn	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 8	nefndi	nefna	VERB	VBDI	Mood=Ind|Tense=Past	5	acl:relcl	_	_

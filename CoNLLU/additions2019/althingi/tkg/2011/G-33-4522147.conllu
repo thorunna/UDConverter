@@ -19,7 +19,7 @@
 16	heiðarlega	heiðarlegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	14	conj	_	_
 17	ræðu	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
 18	og	og	CCONJ	CONJ	_	21	cc	_	_
-19	nokkuð	nokkur	DET	Q-A	Case=Acc|Degree=Pos	21	obl	_	_
+19	nokkuð	nokkur	DET	Q-A	Case=Acc	21	obl	_	_
 20	aðra	annar	PRON	OTHER-A	Case=Acc	21	det	_	_
 21	ræðu	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	conj	_	_
 22	en	en	CCONJ	CONJ	_	25	cc	_	_
@@ -61,7 +61,7 @@
 21	eigum	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	19	conj	_	_
 22	að	að	PART	TO	_	23	mark	_	_
 23	virða	virða	VERB	VB	VerbForm=Inf	21	xcomp	_	_
-24	það	sá	DET	D-A	Case=Acc|PronType=Art	23	obj	_	_
+24	það	sá	DET	D-A	Case=Acc	23	obj	_	_
 25	sem	sem	SCONJ	C	_	28	mark	_	_
 26	frá	frá	ADP	P	_	27	case	_	_
 27	honum	hann	PRON	PRO-D	Case=Dat	28	obl	_	_
@@ -77,7 +77,7 @@
 4	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	5	advmod	_	_
 5	taka	taka	VERB	VB	VerbForm=Inf	0	root	_	_
 6	undir	undir	ADP	P	_	7	case	_	_
-7	það	sá	DET	D-A	Case=Acc|PronType=Art	5	obl	_	_
+7	það	sá	DET	D-A	Case=Acc	5	obl	_	_
 8	sem	sem	SCONJ	C	_	10	mark	_	_
 9	hann	hann	PRON	PRO-N	Case=Nom	10	nsubj	_	_
 10	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	7	acl:relcl	_	_
@@ -115,14 +115,14 @@
 10	greiða	greiða	VERB	VB	VerbForm=Inf	2	ccomp	_	_
 11	atkvæði	atkvæði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	_
 12	gegn	gegn	ADP	P	_	13	case	_	_
-13	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	10	obl	_	SpaceAfter=No
+13	þessu	þessi	DET	D-D	Case=Dat	10	obl	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	13	punct	_	_
 15	eða	eða	CCONJ	CONJ	_	17	cc	_	_
 16	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	17	aux	_	_
 17	lýst	lýsa	VERB	VBN	Tense=Past|VerbForm=Part	10	conj	_	_
 18	sig	sig	PRON	PRO-A	Case=Acc	19	nsubj	_	_
 19	andsnúna	andsnúinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	17	ccomp	_	_
-20	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	19	obl	_	SpaceAfter=No
+20	þessu	þessi	DET	D-D	Case=Dat	19	obl	_	SpaceAfter=No
 21	,	,	PUNCT	,	_	20	punct	_	_
 22	auk	auk	ADP	P	_	24	case	_	_
 23	hæstv.	hæstvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	24	amod	_	_
@@ -136,7 +136,7 @@
 31	lýst	lýsa	VERB	VBN	Tense=Past|VerbForm=Part	24	acl:relcl	_	_
 32	sig	sig	PRON	PRO-A	Case=Acc	33	obj	_	_
 33	andsnúinn	andsnúinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	31	xcomp	_	_
-34	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	35	det	_	_
+34	þessari	þessi	DET	D-D	Case=Dat	35	det	_	_
 35	leið	leið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	33	obl	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -157,7 +157,7 @@
 12	að	að	PART	TO	_	13	mark	_	_
 13	tryggja	tryggja	VERB	VB	VerbForm=Inf	11	xcomp	_	_
 14	framgang	framgangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
-15	þessa	þessi	DET	D-G	Case=Gen|PronType=Art	16	det	_	_
+15	þessa	þessi	DET	D-G	Case=Gen	16	det	_	_
 16	máls	mál	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	nmod:poss	_	_
 17	og	og	CCONJ	CONJ	_	21	cc	_	_
 18	því	það	PRON	PRO-D	Case=Dat	21	obl	_	_
@@ -175,12 +175,12 @@
 30	sig	sig	PRON	PRO-A	Case=Acc	29	ccomp	_	_
 31	bundinn	binda	VERB	VAN	Tense=Past|VerbForm=Part	30	acl	_	_
 32	af	af	ADP	P	_	33	case	_	_
-33	því	sá	DET	D-D	Case=Dat|PronType=Art	31	obl	_	_
+33	því	sá	DET	D-D	Case=Dat	31	obl	_	_
 34	sem	sem	SCONJ	C	_	40	mark	_	_
 35	frá	frá	ADP	P	_	39	case	_	_
 36	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	37	nsubj	_	_
 37	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	39	dep	_	SpaceAfter=No
-38	.	.	PUNCT	.	_	37	punct	_	_
+38	.	.	PUNCT	.	_	39	punct	_	_
 39	stjórnlagaráðinu	stjórnlagaráð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	40	obl	_	_
 40	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	33	acl:relcl	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	5	punct	_	_

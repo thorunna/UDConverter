@@ -50,7 +50,7 @@
 36	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	32	acl:relcl	_	_
 37	að	að	PART	TO	_	38	mark	_	_
 38	tryggja	tryggja	VERB	VB	VerbForm=Inf	36	xcomp	_	_
-39	einhvern	einhver	DET	Q-A	Case=Acc|Degree=Pos	40	amod	_	_
+39	einhvern	einhver	DET	Q-A	Case=Acc	40	amod	_	_
 40	árangur	árangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	38	obj	_	_
 41	í	í	ADP	P	_	42	case	_	_
 42	efnahagsmálum	efnahagsmál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	38	obl	_	SpaceAfter=No
@@ -75,12 +75,12 @@
 6	ræðu	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
 7	um	um	ADP	P	_	8	case	_	_
 8	það	það	PRON	PRO-A	Case=Acc	4	obl	_	_
-9	einhvern	einhver	DET	Q-A	Case=Acc|Degree=Pos	10	amod	_	_
+9	einhvern	einhver	DET	Q-A	Case=Acc	10	amod	_	_
 10	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
 11	að	að	SCONJ	C	_	13	mark	_	_
 12	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	13	expl	_	_
 13	þurfi	þurfa	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
-14	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	13	obj	_	_
+14	meira	mikill	DET	QR-A	Case=Acc	13	obj	_	_
 15	en	en	ADP	P	_	17	case	_	_
 16	að	að	PART	TO	_	17	mark	_	_
 17	hafa	hafa	AUX	HV	VerbForm=Inf	14	obl	_	_
@@ -106,7 +106,7 @@
 12	þurfa	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
 13	að	að	PART	TO	_	15	mark	_	_
 14	hafa	hafa	AUX	HV	VerbForm=Inf	15	aux	_	_
-15	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	12	xcomp	_	_
+15	eitthvað	einhver	DET	Q-A	Case=Acc	12	xcomp	_	_
 16	á	á	ADP	P	_	17	case	_	_
 17	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
 18	við	við	ADP	P	_	19	case	_	_
@@ -126,11 +126,11 @@
 8	að	að	SCONJ	C	_	10	mark	_	_
 9	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	10	expl	_	_
 10	vantaði	vanta	VERB	VBDI	Mood=Ind|Tense=Past	5	ccomp	_	_
-11	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	10	obj	_	_
+11	mikið	mikill	DET	Q-A	Case=Acc	10	obj	_	_
 12	á	á	ADP	P	_	13	case	_	_
 13	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 14	við	við	ADP	RP	_	13	compound:prt	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	2	punct	_	_
+15	,	,	PUNCT	,	_	13	punct	_	_
 16	enda	enda	ADV	ADV	Degree=Pos	17	advmod	_	_
 17	bjóst	búa	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
 18	ég	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
@@ -141,13 +141,13 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4694998,.6
 # X_IDs = ID_missing_8 ; ID_missing_9
 # text = Margir aðrir bjuggust líka við hruninu, það er ekki alveg satt sem er sagt, að enginn hafi séð það fyrir.
-1	Margir	margur	DET	Q-N	Case=Nom|Degree=Pos	2	amod	_	_
+1	Margir	margur	DET	Q-N	Case=Nom	2	amod	_	_
 2	aðrir	annar	PRON	OTHER-N	Case=Nom	3	nsubj	_	_
 3	bjuggust	búa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 4	líka	líka	ADV	ALSO	_	3	advmod	_	_
 5	við	við	ADP	P	_	6	case	_	_
 6	hruninu	hrun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	3	punct	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
 8	það	það	PRON	PRO-N	Case=Nom	12	nsubj	_	_
 9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
 10	ekki	ekki	ADV	NEG	_	12	advmod	_	_
@@ -158,7 +158,7 @@
 15	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	12	acl:relcl	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	15	punct	_	_
 17	að	að	SCONJ	C	_	20	mark	_	_
-18	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	20	nsubj	_	_
+18	enginn	enginn	DET	Q-N	Case=Nom	20	nsubj	_	_
 19	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	20	aux	_	_
 20	séð	sjá	VERB	VBN	Tense=Past|VerbForm=Part	12	ccomp	_	_
 21	það	það	PRON	PRO-A	Case=Acc	20	obj	_	_
@@ -173,7 +173,7 @@
 3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
 4	fyrir	fyrir	ADP	RP	_	2	compound:prt	_	_
 5	og	og	CCONJ	CONJ	_	8	cc	_	_
-6	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	8	amod	_	_
+6	margir	margur	DET	Q-N	Case=Nom	8	amod	_	_
 7	aðrir	annar	PRON	OTHER-N	Case=Nom	8	nsubj	_	_
 8	sáu	sjá	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
 9	það	það	PRON	PRO-A	Case=Acc	8	obj	_	_
@@ -205,14 +205,14 @@
 13	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	15	aux	_	_
 14	bara	bara	ADV	FP	Degree=Pos	15	advmod	_	_
 15	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	10	obl	_	_
-16	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	15	obl	_	_
+16	allt	allur	DET	Q-A	Case=Acc	15	obl	_	_
 17	í	í	ADP	P	_	16	case	_	_
-18	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	16	obl	_	_
+18	einu	einn	DET	ONE-D	Case=Dat	16	obl	_	_
 19	og	og	CCONJ	CONJ	_	22	cc	_	_
-20	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	22	nsubj	_	_
+20	enginn	enginn	DET	Q-N	Case=Nom	22	nsubj	_	_
 21	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	22	aux	_	_
 22	vitað	vita	VERB	VBN	Tense=Past|VerbForm=Part	15	conj	_	_
-23	neitt	neinn	DET	Q-A	Case=Acc|Degree=Pos	22	obj	_	SpaceAfter=No
+23	neitt	neinn	DET	Q-A	Case=Acc	22	obj	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4694998,.9
@@ -247,7 +247,7 @@
 3	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	fyrir	fyrir	ADP	P	_	5	case	_	_
 5	mér	ég	PRON	PRO-D	Case=Dat	2	obl	_	_
-6	hvaða	hvaða	DET	WD-N	Case=Nom|Number=Sing	7	det	_	_
+6	hvaða	hvaða	DET	WD-N	Case=Nom	7	det	_	_
 7	lexíur	lexía	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	_
 8	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
 9	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	nsubj	_	_

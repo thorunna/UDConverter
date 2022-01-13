@@ -19,7 +19,7 @@
 16	koma	koma	VERB	VB	VerbForm=Inf	5	ccomp	_	_
 17	fram	fram	ADP	RP	_	16	compound:prt	_	_
 18	með	með	ADP	P	_	20	case	_	_
-19	einhverjum	einhver	DET	Q-D	Case=Dat|Degree=Pos	20	amod	_	_
+19	einhverjum	einhver	DET	Q-D	Case=Dat	20	amod	_	_
 20	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
 21	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
 22	að	að	SCONJ	C	_	25	mark	_	_
@@ -102,7 +102,7 @@
 9	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 10	á	á	ADV	ADV	Degree=Pos	11	advmod	_	_
 11	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	ccomp	_	_
-12	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	13	det	_	_
+12	þeirri	sá	DET	D-D	Case=Dat	13	det	_	_
 13	aðferð	aðferð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	nmod:poss	_	_
 14	af	af	ADP	P	_	15	case	_	_
 15	því	það	PRON	PRO-D	Case=Dat	11	obl	_	_
@@ -138,7 +138,7 @@
 19	samvinnu	samvinna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
 20	við	við	ADP	P	_	21	case	_	_
 21	Framsóknarflokkinn	framsóknarflokkur	PROPN	NPR-A	_	19	obl	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	5	punct	_	_
+22	,	,	PUNCT	,	_	19	punct	_	_
 23	við	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
 24	breyttum	breyta	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
 25	stjórnarskránni	stjórnarskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obj	_	_
@@ -204,7 +204,7 @@
 # text = Ég vil hins vegar spyrja hv. þingmann Forseti hringir. um orð Sigurðar Líndals prófessors af því að honum verður Forseti hringir. tíðrætt um Forseti hringir. að við séum Forseti hringir. Forseti hringir. að fara Forseti hringir. á svig við dómsvaldið.
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
-3	hins	hinn	DET	D-G	Case=Gen|PronType=Art	4	det	_	_
+3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
 4	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
 5	spyrja	spyrja	VERB	VB	VerbForm=Inf	0	root	_	_
 6	hv.	háttvirtur	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_

@@ -27,7 +27,7 @@
 12	því	það	PRON	PRO-D	Case=Dat	10	obj	_	_
 13	að	að	PART	TO	_	14	mark	_	_
 14	lækka	lækka	VERB	VB	VerbForm=Inf	12	xcomp	_	_
-15	örlítið	örlítill	DET	Q-A	Case=Acc|Degree=Pos	14	obl	_	_
+15	örlítið	örlítill	DET	Q-A	Case=Acc	14	obl	_	_
 16	prósentuna	prósenta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
 17	á	á	ADP	P	_	19	case	_	_
 18	lægstu	lágur	ADJ	ADJS-A	Case=Acc|Degree=Sup	19	amod	_	_
@@ -43,7 +43,7 @@
 4	að	að	PART	TO	_	5	mark	_	_
 5	lækka	lækka	VERB	VB	VerbForm=Inf	2	obl	_	_
 6	hana	hún	PRON	PRO-A	Case=Acc	5	obj	_	_
-7	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	5	obl	_	SpaceAfter=No
+7	meira	mikill	DET	QR-A	Case=Acc	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4545749,.4
@@ -63,7 +63,7 @@
 12	þess	það	PRON	PRO-G	Case=Gen	2	obl	_	_
 13	að	að	SCONJ	C	_	20	mark	_	_
 14	markmið	markmið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	_
-15	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	16	det	_	_
+15	þeirra	sá	DET	D-G	Case=Gen	16	det	_	_
 16	breytinga	breyting	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	nmod:poss	_	_
 17	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	20	cop	_	_
 18	meira	meðal	ADP	P	_	19	case	_	_
@@ -154,7 +154,7 @@
 9	sökkvi	sökkva	VERB	VBPS	Mood=Sub|Tense=Pres	5	amod	_	_
 10	ekki	ekki	ADV	NEG	_	9	advmod	_	_
 11	í	í	ADP	P	_	14	case	_	_
-12	einhverjum	einhver	DET	Q-D	Case=Dat|Degree=Pos	14	amod	_	_
+12	einhverjum	einhver	DET	Q-D	Case=Dat	14	amod	_	_
 13	svona	svona	ADV	ADV	Degree=Pos	14	advmod	_	_
 14	breytingum	breyting	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	5	punct	_	_
@@ -172,7 +172,7 @@
 8	við	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
 9	séum	vera	AUX	BEPS	Mood=Sub|Tense=Pres	12	cop	_	_
 10	í	í	ADP	P	_	12	case	_	_
-11	einhverjum	einhver	DET	Q-D	Case=Dat|Degree=Pos	12	amod	_	_
+11	einhverjum	einhver	DET	Q-D	Case=Dat	12	amod	_	_
 12	vandræðum	vandræði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	ccomp	_	_
 13	með	með	ADP	P	_	14	case	_	_
 14	endaprósenturnar	endaprósenta	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
@@ -223,13 +223,13 @@
 10	hærra	hátt	ADV	ADVR	Degree=Cmp	2	advmod	_	_
 11	í	í	ADP	P	_	14	case	_	_
 12	mjög	mjög	ADV	ADV	Degree=Pos	13	advmod	_	_
-13	mörgum	margur	ADV	Q-D	Case=Dat|Degree=Pos	14	advmod	_	_
+13	mörgum	margur	ADV	Q-D	Case=Dat	14	advmod	_	_
 14	löndum	land	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
 15	í	í	ADP	P	_	17	case	_	_
 16	kringum	kringum	ADP	P	_	17	case	_	_
 17	okkur	ég	PRON	PRO-A	Case=Acc	14	obl	_	_
 18	en	en	ADP	P	_	19	case	_	_
-19	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	2	obl	_	SpaceAfter=No
+19	þetta	þessi	DET	D-A	Case=Acc	2	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4545749,.13
@@ -237,7 +237,7 @@
 # text = Þannig að allt bull um að við séum komin þarna í ófærur á ekki stoð.
 1	Þannig	þannig	ADV	ADV	Degree=Pos	0	root	_	_
 2	að	að	SCONJ	C	_	13	mark	_	_
-3	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	4	amod	_	_
+3	allt	allur	DET	Q-N	Case=Nom	4	amod	_	_
 4	bull	bull	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
 5	um	um	ADP	P	_	9	case	_	_
 6	að	að	SCONJ	C	_	9	mark	_	_
@@ -260,7 +260,7 @@
 3	hefðum	hafa	AUX	HVDS	Mood=Sub|Tense=Past	5	aux	_	_
 4	viljað	vilja	AUX	MDN	Tense=Past|VerbForm=Part	5	aux	_	_
 5	láta	láta	VERB	VB	VerbForm=Inf	39	obl	_	_
-6	allan	allur	DET	Q-A	Case=Acc|Degree=Pos	8	amod	_	_
+6	allan	allur	DET	Q-A	Case=Acc	8	amod	_	_
 7	neðri	neðri	ADJ	ADJR-A	Case=Acc|Degree=Cmp	8	amod	_	_
 8	hluta	hluti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	nsubj	_	_
 9	skalans	skali	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	nmod:poss	_	_
@@ -277,7 +277,7 @@
 20	millitekjur	millitekjur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	conj	_	_
 21	njóta	njóta	VERB	VBPI	Mood=Ind|Tense=Pres	5	xcomp	_	_
 22	að	að	ADP	P	_	24	case	_	_
-23	einhverju	einhver	DET	Q-D	Case=Dat|Degree=Pos	24	amod	_	_
+23	einhverju	einhver	DET	Q-D	Case=Dat	24	amod	_	_
 24	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
 25	góðs	góður	ADJ	ADJ-G	Case=Gen|Degree=Pos	21	obj	_	_
 26	af	af	ADP	P	_	27	case	_	_
@@ -288,7 +288,7 @@
 31	kostuðu	kosta	VERB	VBDI	Mood=Ind|Tense=Past	21	acl:relcl	_	_
 32	ríkið	ríki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	31	iobj	_	_
 33	um	um	ADP	P	_	35	case	_	_
-34	það	sá	DET	D-A	Case=Acc|PronType=Art	35	det	_	_
+34	það	sá	DET	D-A	Case=Acc	35	det	_	_
 35	bil	bil	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	obl	_	_
 36	5	5	NUM	NUM-A	Case=Acc	37	nummod	_	_
 37	milljarða	milljarður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	31	obj	_	SpaceAfter=No
@@ -321,14 +321,14 @@
 5	miðjuhópnum	miðjuhópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	_
 6	til	til	ADP	P	_	7	case	_	_
 7	góða	góði	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	2	punct	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
 9	en	en	CCONJ	CONJ	_	11	cc	_	_
 10	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	11	expl	_	_
 11	dofnar	dofna	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 12	yfir	yfir	ADP	P	_	13	case	_	_
 13	ávinningnum	ávinningur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 14	eftir	eftir	ADP	P	_	15	case	_	_
-15	því	sá	DET	D-D	Case=Dat|PronType=Art	11	obl	_	_
+15	því	sá	DET	D-D	Case=Dat	11	obl	_	_
 16	sem	sem	SCONJ	C	_	18	mark	_	_
 17	ofar	uppi	ADV	ADVR	Degree=Cmp	18	advmod	_	_
 18	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	15	acl:relcl	_	SpaceAfter=No
@@ -345,7 +345,7 @@
 6	á	á	ADP	P	_	7	case	_	_
 7	prósentum	prósent	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
 8	á	á	ADP	P	_	10	case	_	_
-9	báðum	báðir	DET	Q-D	Case=Dat|Degree=Pos	10	amod	_	_
+9	báðum	báðir	DET	Q-D	Case=Dat	10	amod	_	_
 10	þrepum	þrep	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
 11	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	1	advcl	_	_
 12	mér	ég	PRON	PRO-D	Case=Dat	11	nsubj	_	_

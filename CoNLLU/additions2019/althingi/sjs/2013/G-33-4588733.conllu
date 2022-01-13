@@ -26,7 +26,7 @@
 23	niðurskurð	niðurskurður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	_
 24	í	í	ADP	P	_	25	case	_	_
 25	heilbrigðiskerfinu	heilbrigðiskerfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	6	punct	_	_
+26	,	,	PUNCT	,	_	23	punct	_	_
 27	það	það	PRON	PRO-N	Case=Nom	6	conj	_	OriginalHead=0
 28	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	27	cop	_	_
 29	hann	hann	PRON	PRO-N	Case=Nom	27	nsubj	_	_
@@ -79,7 +79,7 @@
 15	fjársýsluskatti	fjársýsluskattur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obj	_	_
 16	2011	2011	NUM	NUM-A	Case=Acc	13	obl	_	_
 17	og	og	CCONJ	CONJ	_	19	cc	_	_
-18	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	19	obl	_	_
+18	eitthvað	einhver	DET	Q-A	Case=Acc	19	obl	_	_
 19	kvörtuðu	kvarta	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
 20	og	og	CCONJ	CONJ	_	21	cc	_	_
 21	kveinuðu	kveina	VERB	VBDI	Mood=Ind|Tense=Past	19	conj	_	_
@@ -106,7 +106,7 @@
 13	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	10	acl:relcl	_	_
 14	umfangsmikið	umfangsmikill	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
 15	á	á	ADP	P	_	17	case	_	_
-16	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	17	det	_	_
+16	þessum	þessi	DET	D-D	Case=Dat	17	det	_	_
 17	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -138,15 +138,15 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4588733,.6
 # X_ID = ID_missing_9
 # text = Ýmsum þótti nú nokkuð vel að gert með þeim byrðum sem lagðar voru á fjármálafyrirtækin.
-1	Ýmsum	ýmis	DET	Q-D	Case=Dat|Degree=Pos	2	nsubj	_	_
+1	Ýmsum	ýmis	DET	Q-D	Case=Dat	2	nsubj	_	_
 2	þótti	þykja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	nokkuð	nokkur	DET	Q-A	Case=Acc|Degree=Pos	2	ccomp	_	_
+4	nokkuð	nokkur	DET	Q-A	Case=Acc	2	ccomp	_	_
 5	vel	vel	ADV	ADV	Degree=Pos	4	advmod	_	_
 6	að	að	ADP	RP	_	4	compound:prt	_	_
 7	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	4	ccomp	_	_
 8	með	með	ADP	P	_	10	case	_	_
-9	þeim	sá	DET	D-D	Case=Dat|PronType=Art	10	det	_	_
+9	þeim	sá	DET	D-D	Case=Dat	10	det	_	_
 10	byrðum	byrði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
 11	sem	sem	SCONJ	C	_	12	mark	_	_
 12	lagðar	leggja	VERB	VAN	Tense=Past|VerbForm=Part	10	acl:relcl	_	_
@@ -169,7 +169,7 @@
 9	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	11	cop	_	_
 10	að	að	PART	TO	_	11	mark	_	_
 11	auka	auka	VERB	VB	VerbForm=Inf	6	advcl	_	_
-12	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	11	obj	_	_
+12	þetta	þessi	DET	D-A	Case=Acc	11	obj	_	_
 13	enn	enn	ADV	ADV	Degree=Pos	11	advmod	_	_
 14	umtalsvert	umtalsvert	ADV	ADV	Degree=Pos	11	advmod	_	_
 15	með	með	ADP	P	_	16	case	_	_
@@ -202,7 +202,7 @@
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
-4	Hitt	hinn	DET	D-A	Case=Acc|PronType=Art	5	obl	_	_
+4	Hitt	hinn	DET	D-A	Case=Acc	5	obl	_	_
 5	ætla	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 6	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 7	að	að	PART	TO	_	8	mark	_	_
@@ -211,7 +211,7 @@
 10	,	,	PUNCT	,	_	9	punct	_	_
 11	ómagaorð	ómagaorð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
 12	af	af	ADP	P	_	14	case	_	_
-13	því	sá	DET	D-D	Case=Dat|PronType=Art	14	det	_	_
+13	því	sá	DET	D-D	Case=Dat	14	det	_	_
 14	tagi	tag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 15	frá	frá	ADP	P	_	17	case	_	_
 16	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	17	amod	_	_
@@ -228,7 +228,7 @@
 27	við	við	ADP	P	_	29	case	_	_
 28	erlenda	erlendur	ADJ	ADJ-A	Case=Acc|Degree=Pos	29	amod	_	_
 29	kröfuhafa	kröfuhafi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obl	_	_
-30	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	32	amod	_	_
+30	allt	allur	DET	Q-A	Case=Acc	32	amod	_	_
 31	síðastliðið	síðastliðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	32	amod	_	_
 32	kjörtímabil	kjörtímabil	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	5	punct	_	_
@@ -236,19 +236,19 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4588733,.9
 # X_IDs = ID_missing_13 ; ID_missing_14 ; ID_missing_15 ; ID_missing_16
 # text = Þetta eru ómagaorð, þetta er ómaklegt, þetta er órökstutt og þetta er rangt.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	ómagaorð	ómagaorð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
 4	,	,	PUNCT	,	_	3	punct	_	_
-5	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	7	nsubj	_	_
+5	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
 6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 7	ómaklegt	ómaklegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0|SpaceAfter=No
-8	,	,	PUNCT	,	_	3	punct	_	_
-9	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	11	nsubj	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	þetta	þessi	DET	D-N	Case=Nom	11	nsubj	_	_
 10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 11	órökstutt	órökstuddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0
 12	og	og	CCONJ	CONJ	_	15	cc	_	_
-13	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	15	nsubj	_	_
+13	þetta	þessi	DET	D-N	Case=Nom	15	nsubj	_	_
 14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
 15	rangt	rangur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0|SpaceAfter=No
 16	.	.	PUNCT	.	_	3	punct	_	_
@@ -274,7 +274,7 @@
 16	gripið	grípa	VERB	VAN	Tense=Past|VerbForm=Part	8	ccomp	_	_
 17	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	16	cop	_	_
 18	til	til	ADP	P	_	20	case	_	_
-19	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	20	det	_	_
+19	þeirra	sá	DET	D-G	Case=Gen	20	det	_	_
 20	ráðstafana	ráðstöfun	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	16	obl	_	_
 21	sem	sem	SCONJ	C	_	22	mark	_	_
 22	þurfti	þurfa	VERB	VBDI	Mood=Ind|Tense=Past	20	acl:relcl	_	_
@@ -312,19 +312,18 @@
 17	fyrir	fyrir	ADP	P	_	18	case	_	_
 18	gjaldeyrishöftin	gjaldeyrishaft	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
 19	og	og	CCONJ	CONJ	_	3	cc	_	_
-20	None	_	None	None	_	_	None	_	_
-21	það	það	PRON	PRO-N	Case=Nom	24	nsubj	_	_
-22	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
-23	vegna	vegna	ADP	P	_	24	case	_	_
-24	þess	það	PRON	PRO-G	Case=Gen	3	conj	_	OriginalHead=0
-25	sem	sem	SCONJ	C	_	27	mark	_	_
-26	við	ég	PRON	PRO-N	Case=Nom	27	nsubj	_	_
-27	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	24	acl:relcl	_	_
-28	tök	tak	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	27	obj	_	_
-29	á	á	ADP	P	_	31	case	_	_
-30	þeim	sá	DET	D-D	Case=Dat|PronType=Art	31	det	_	_
-31	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	28	obl	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	3	punct	_	_
+20	það	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
+22	vegna	vegna	ADP	P	_	23	case	_	_
+23	þess	það	PRON	PRO-G	Case=Gen	3	conj	_	OriginalHead=0
+24	sem	sem	SCONJ	C	_	26	mark	_	_
+25	við	ég	PRON	PRO-N	Case=Nom	26	nsubj	_	_
+26	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	23	acl:relcl	_	_
+27	tök	tak	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obj	_	_
+28	á	á	ADP	P	_	30	case	_	_
+29	þeim	sá	DET	D-D	Case=Dat	30	det	_	_
+30	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	obl	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4588733,.12
 # X_ID = ID_missing_20
@@ -341,7 +340,7 @@
 10	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
 11	út	út	ADP	RP	_	14	compound:prt	_	_
 12	á	á	ADP	P	_	14	case	_	_
-13	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	14	det	_	_
+13	þetta	þessi	DET	D-A	Case=Acc	14	det	_	_
 14	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 15	í	í	ADP	P	_	16	case	_	_
 16	kosningabaráttunni	kosningabarátta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
@@ -360,7 +359,7 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4588733,.13
 # X_ID = ID_missing_21
 # text = Þetta er sagan eins og hún er rétt.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	sagan	saga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 4	eins	_	ADV	ADVR	Degree=Cmp	3	advmod	_	_
@@ -386,11 +385,11 @@
 1	og	og	CCONJ	CONJ	_	6	cc	_	_
 2	sjálfstæðismenn	sjálfstæðismaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
 3	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
-4	sumir	sumur	DET	Q-N	Case=Nom|Degree=Pos	6	amod	_	_
+4	sumir	sumur	DET	Q-N	Case=Nom	6	amod	_	_
 5	á	á	ADP	P	_	6	case	_	_
 6	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
 7	þegar	þegar	ADP	P	_	10	case	_	_
-8	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	9	det	_	_
+8	þetta	þessi	DET	D-N	Case=Nom	9	det	_	_
 9	tímamótamál	tímamótamál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 10	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	6	obl	_	_
 11	í	í	ADP	P	_	12	case	_	_

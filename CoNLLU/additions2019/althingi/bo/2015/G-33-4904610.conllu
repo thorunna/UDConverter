@@ -12,7 +12,7 @@
 9	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 10	gefur	gefa	VERB	VBPI	Mood=Ind|Tense=Pres	25	obl	_	_
 11	sér	sig	PRON	PRO-D	Case=Dat	10	iobj	_	_
-12	þær	sá	DET	D-A	Case=Acc|PronType=Art	13	det	_	_
+12	þær	sá	DET	D-A	Case=Acc	13	det	_	_
 13	forsendur	forsenda	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	_
 14	sem	sem	SCONJ	C	_	21	mark	_	_
 15	hann	hann	PRON	PRO-N	Case=Nom	21	nsubj	_	_
@@ -26,7 +26,7 @@
 23	það	það	PRON	PRO-N	Case=Nom	25	nsubj	_	_
 24	sjálfsögð	sjálfsagður	ADJ	ADJ-N	Case=Nom|Degree=Pos	25	amod	_	_
 25	niðurstaða	niðurstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	2	punct	_	_
+26	,	,	PUNCT	,	_	25	punct	_	_
 27	ef	ef	ADP	P	_	29	case	_	_
 28	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	29	expl	_	_
 29	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	43	obl	_	_
@@ -55,42 +55,42 @@
 # sent_id = ALTHINGI_BO_2015_G-33-4904610,.2
 # X_ID = ID_missing_3
 # text = Ég er bara að segja að ég tel þetta heila plagg ekki vera málið, ÖS: Telur það vera drasl. tel það vera drasl að ýmsu leyti.
-1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-3	bara	bara	ADV	FP	Degree=Pos	5	advmod	_	_
+1	Ég	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
+3	bara	bara	ADV	FP	Degree=Pos	18	advmod	_	_
 4	að	að	PART	TO	_	5	mark	_	_
-5	segja	segja	VERB	VB	VerbForm=Inf	0	root	_	_
+5	segja	segja	VERB	VB	VerbForm=Inf	18	xcomp	_	_
 6	að	að	SCONJ	C	_	8	mark	_	_
 7	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 8	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	5	ccomp	_	_
-9	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+9	þetta	þessi	DET	D-A	Case=Acc	11	det	_	_
 10	heila	heill	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	amod	_	_
 11	plagg	plagg	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	nsubj	_	_
 12	ekki	ekki	ADV	NEG	_	14	advmod	_	_
 13	vera	vera	AUX	BE	VerbForm=Inf	14	cop	_	_
 14	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	xcomp	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	14	punct	_	_
+15	,	,	PUNCT	,	_	18	punct	_	_
 16	ÖS	ös	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	dep	_	SpaceAfter=No
 17	:	:	PUNCT	,	_	16	punct	_	_
-18	Telur	telja	VERB	VBPI	Mood=Ind|Tense=Pres	5	parataxis	_	_
+18	Telur	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 19	það	það	PRON	PRO-A	Case=Acc	21	nsubj	_	_
 20	vera	vera	AUX	BE	VerbForm=Inf	21	cop	_	_
 21	drasl	drasl	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	xcomp	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	21	punct	_	_
-23	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	5	parataxis	_	_
+23	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	18	parataxis	_	_
 24	það	það	PRON	PRO-A	Case=Acc	26	nsubj	_	_
 25	vera	vera	AUX	BE	VerbForm=Inf	26	cop	_	_
 26	drasl	drasl	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	xcomp	_	_
 27	að	að	ADP	P	_	29	case	_	_
-28	ýmsu	ýmis	DET	Q-D	Case=Dat|Degree=Pos	29	amod	_	_
+28	ýmsu	ýmis	DET	Q-D	Case=Dat	29	amod	_	_
 29	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	5	punct	_	_
+30	.	.	PUNCT	.	_	18	punct	_	_
 
 # sent_id = ALTHINGI_BO_2015_G-33-4904610,.3
 # X_ID = ID_missing_4
 # text = Tökum þessa 90<percent/> úthlutun.
 1	Tökum	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-2	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	5	det	_	_
+2	þessa	þessi	DET	D-A	Case=Acc	5	det	_	_
 3	90	níutíu	NUM	NUM-N	Case=Nom	4	nummod	_	SpaceAfter=No
 4	<percent/>	prósent	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nmod:poss	_	_
 5	úthlutun	úthlutun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	SpaceAfter=No
@@ -155,7 +155,7 @@
 25	gera	gera	VERB	DO	VerbForm=Inf	22	xcomp	_	_
 26	það	það	PRON	PRO-A	Case=Acc	25	obj	_	_
 27	líka	líka	ADV	ALSO	_	25	advmod	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	2	punct	_	_
+28	,	,	PUNCT	,	_	25	punct	_	_
 29	tökum	taka	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 30	þá	hann	PRON	PRO-A	Case=Acc	29	obj	_	_
 31	algjörlega	algjörlega	ADV	ADV	Degree=Pos	29	advmod	_	_

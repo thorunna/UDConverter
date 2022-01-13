@@ -17,7 +17,7 @@
 # text = Nú er þetta að teiknast mjög skýrt upp.
 1	Nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-3	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	5	nsubj	_	_
+3	þetta	þessi	DET	D-N	Case=Nom	5	nsubj	_	_
 4	að	að	PART	TO	_	5	mark	_	_
 5	teiknast	teikna	VERB	VB	VerbForm=Inf	0	root	_	_
 6	mjög	mjög	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -50,7 +50,7 @@
 20	en	en	CCONJ	CONJ	_	21	cc	_	_
 21	gleyma	gleyma	VERB	VB	VerbForm=Inf	9	xcomp	_	_
 22	svo	svo	ADV	ADV	Degree=Pos	21	advmod	_	_
-23	öllu	allur	DET	Q-D	Case=Dat|Degree=Pos	21	obj	_	_
+23	öllu	allur	DET	Q-D	Case=Dat	21	obj	_	_
 24	sem	sem	SCONJ	C	_	27	mark	_	_
 25	á	á	ADP	P	_	26	case	_	_
 26	eftir	eftir	ADV	ADV	Degree=Pos	27	obl	_	_
@@ -89,7 +89,7 @@
 # text = Það eru margar verkefnisstjórnir sem bíða þess að vinna áframhald og sigta úr bið í virkjun og vernd.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	margar	margur	DET	Q-N	Case=Nom|Degree=Pos	4	amod	_	_
+3	margar	margur	DET	Q-N	Case=Nom	4	amod	_	_
 4	verkefnisstjórnir	verkefnisstjórn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 5	sem	sem	SCONJ	C	_	6	mark	_	_
 6	bíða	bíða	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
@@ -138,7 +138,7 @@
 17	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	_
 18	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	6	advcl	_	_
 19	kannski	kannski	ADV	ADV	Degree=Pos	18	advmod	_	_
-20	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	18	obj	_	_
+20	ekkert	enginn	DET	Q-A	Case=Acc	18	obj	_	_
 21	um	um	ADP	P	_	22	case	_	_
 22	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obl	_	_
 23	að	að	PART	TO	_	24	mark	_	_
@@ -169,11 +169,11 @@
 10	láta	láta	VERB	VB	VerbForm=Inf	6	obl	_	_
 11	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	nsubj	_	_
 12	vinna	vinna	VERB	VB	VerbForm=Inf	10	xcomp	_	_
-13	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	12	obj	_	_
+13	eitthvað	einhver	DET	Q-A	Case=Acc	12	obj	_	_
 14	sem	sem	SCONJ	C	_	15	mark	_	_
 15	skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	_
 16	svo	svo	ADV	ADV	Degree=Pos	15	advmod	_	_
-17	engu	enginn	DET	Q-D	Case=Dat|Degree=Pos	18	amod	_	_
+17	engu	enginn	DET	Q-D	Case=Dat	18	amod	_	_
 18	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obj	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -198,13 +198,13 @@
 6	samflokksmaður	samflokksmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	conj	_	_
 7	fyrr	snemma	ADV	ADVR	Degree=Cmp	11	advmod	_	_
 8	í	í	ADP	P	_	11	case	_	_
-9	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	11	det	_	_
+9	þessu	þessi	DET	D-D	Case=Dat	11	det	_	_
 10	sama	sami	ADJ	ADJ-D	Case=Dat|Degree=Pos	11	amod	_	_
 11	ráðuneyti	ráðuneyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 12	sem	sem	SCONJ	C	_	13	mark	_	_
 13	komust	koma	VERB	VBDI	Mood=Ind|Tense=Past	4	acl:relcl	_	_
 14	að	að	ADP	P	_	16	case	_	_
-15	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	16	det	_	_
+15	þeirri	sá	DET	D-D	Case=Dat	16	det	_	_
 16	niðurstöðu	niðurstaða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
 17	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
 18	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	16	dep	_	SpaceAfter=No
@@ -212,8 +212,8 @@
 20	að	að	SCONJ	C	_	23	mark	_	_
 21	Hvammsvirkjun	hvammsvirkjun	PROPN	NPR-N	_	23	nsubj	_	_
 22	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	23	cop	_	_
-23	sú	sá	DET	D-N	Case=Nom|PronType=Art	16	ccomp	_	_
-24	eina	einn	DET	ONE-N	Case=Nom|Number=Sing	23	det	_	_
+23	sú	sá	DET	D-N	Case=Nom	16	ccomp	_	_
+24	eina	einn	DET	ONE-N	Case=Nom	23	det	_	_
 25	sem	sem	SCONJ	C	_	27	mark	_	_
 26	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	27	cop	_	_
 27	lögleg	löglegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	acl:relcl	_	_
@@ -225,7 +225,7 @@
 33	og	og	CCONJ	CONJ	_	35	cc	_	_
 34	ég	ég	PRON	PRO-N	Case=Nom	35	nsubj	_	_
 35	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0|SpaceAfter=No
-36	:	:	PUNCT	,	_	4	punct	_	_
+36	:	:	PUNCT	,	_	35	punct	_	_
 37	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	40	cop	_	_
 38	hún	hún	PRON	PRO-N	Case=Nom	40	nsubj	_	_
 39	sem	sem	SCONJ	C	_	40	mark	_	_

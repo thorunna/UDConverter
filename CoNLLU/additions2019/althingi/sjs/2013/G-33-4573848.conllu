@@ -33,7 +33,7 @@
 30	eðlilegt	eðlilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	xcomp	_	SpaceAfter=No
 31	,	,	PUNCT	,	_	30	punct	_	_
 32	og	og	CCONJ	CONJ	_	33	cc	_	_
-33	það	sá	DET	D-N	Case=Nom|PronType=Art	30	amod	_	_
+33	það	sá	DET	D-N	Case=Nom	30	amod	_	_
 34	sem	sem	SCONJ	C	_	36	mark	_	_
 35	maður	maður	PRON	MAN-N	_	36	nsubj	_	_
 36	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	33	acl:relcl	_	_
@@ -90,7 +90,7 @@
 15	mjög	mjög	ADV	ADV	Degree=Pos	14	advmod	_	_
 16	dyggilega	dyggilega	ADV	ADV	Degree=Pos	15	advmod	_	_
 17	í	í	ADP	P	_	19	case	_	_
-18	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	19	det	_	_
+18	þessari	þessi	DET	D-D	Case=Dat	19	det	_	_
 19	umræðu	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -148,12 +148,12 @@
 7	að	að	SCONJ	C	_	12	mark	_	_
 8	þeir	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
 9	muni	munu	AUX	MDPS	Mood=Sub|Tense=Pres	12	aux	_	_
-10	engar	enginn	DET	Q-A	Case=Acc|Degree=Pos	11	amod	_	_
+10	engar	enginn	DET	Q-A	Case=Acc	11	amod	_	_
 11	athugasemdir	athugasemd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obj	_	_
 12	gera	gera	VERB	DO	VerbForm=Inf	6	ccomp	_	_
 13	við	við	ADP	P	_	14	case	_	_
 14	framlag	framlag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
-15	hins	hinn	DET	D-G	Case=Gen|PronType=Art	14	nmod:poss	_	_
+15	hins	hinn	DET	D-G	Case=Gen	14	nmod:poss	_	_
 16	opinbera	opinber	ADJ	ADJ-G	Case=Gen|Degree=Pos	15	amod	_	_
 17	inn	inn	ADP	RP	_	19	compound:prt	_	_
 18	í	í	ADP	P	_	19	case	_	_
@@ -200,7 +200,7 @@
 19	en	en	CCONJ	CONJ	_	21	cc	_	_
 20	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	21	expl	_	_
 21	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-22	hver	hver	DET	Q-N	Case=Nom|Degree=Pos	21	obl	_	_
+22	hver	hver	DET	Q-N	Case=Nom	21	obl	_	_
 23	að	að	PART	TO	_	25	mark	_	_
 24	verða	verða	AUX	RD	VerbForm=Inf	25	aux	_	_
 25	síðastur	síðari	ADJ	ADJS-N	Case=Nom|Degree=Sup	21	xcomp	_	_
@@ -218,7 +218,7 @@
 5	,	,	PUNCT	,	_	4	punct	_	_
 6	miðað	miða	VERB	VAN	Tense=Past|VerbForm=Part	13	advcl	_	_
 7	við	við	ADP	P	_	8	case	_	_
-8	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	6	obl	_	_
+8	allt	allur	DET	Q-A	Case=Acc	6	obl	_	_
 9	sem	sem	SCONJ	C	_	11	mark	_	_
 10	ég	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 11	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	8	acl:relcl	_	SpaceAfter=No
@@ -247,7 +247,7 @@
 34	og	og	CCONJ	CONJ	_	35	cc	_	_
 35	annað	annar	PRON	OTHER-A	Case=Acc	27	conj	_	_
 36	í	í	ADP	P	_	38	case	_	_
-37	þeim	sá	DET	D-D	Case=Dat|PronType=Art	38	det	_	_
+37	þeim	sá	DET	D-D	Case=Dat	38	det	_	_
 38	dúr	dúr	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	35	obl	_	SpaceAfter=No
 39	.	.	PUNCT	.	_	13	punct	_	_
 
@@ -276,7 +276,7 @@
 20	og	og	CCONJ	CONJ	_	24	cc	_	_
 21	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	24	expl	_	_
 22	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
-23	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	24	amod	_	_
+23	ekkert	enginn	DET	Q-N	Case=Nom	24	amod	_	_
 24	annað	annar	PRON	OTHER-N	Case=Nom	9	conj	_	OriginalHead=0
 25	sem	sem	SCONJ	C	_	27	mark	_	_
 26	ég	ég	PRON	PRO-N	Case=Nom	27	nsubj	_	_
@@ -291,7 +291,7 @@
 35	þó	þó	ADP	P	_	51	case	_	_
 36	svo	svo	ADP	P	_	51	case	_	_
 37	að	að	SCONJ	C	_	51	mark	_	_
-38	nokkrar	nokkur	DET	Q-N	Case=Nom|Degree=Pos	40	amod	_	_
+38	nokkrar	nokkur	DET	Q-N	Case=Nom	40	amod	_	_
 39	millistórar	millistór	ADJ	ADJ-N	Case=Nom|Degree=Pos	40	amod	_	_
 40	fjárfestingar	fjárfesting	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	51	nsubj	_	_
 41	í	í	ADP	P	_	42	case	_	_
@@ -351,7 +351,7 @@
 21	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	obl	_	_
 22	fjárfestingaráætlunina	fjárfestingaráætlun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
 23	í	í	ADP	P	_	26	case	_	_
-24	einhverjum	einhver	DET	Q-D	Case=Dat|Degree=Pos	26	amod	_	_
+24	einhverjum	einhver	DET	Q-D	Case=Dat	26	amod	_	_
 25	pólitískum	pólitískur	ADJ	ADJ-D	Case=Dat|Degree=Pos	26	amod	_	_
 26	ónotum	ónot	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	SpaceAfter=No
 27	,	,	PUNCT	,	_	26	punct	_	_
@@ -378,9 +378,9 @@
 8	óskynsamlegt	óskynsamlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	_
 9	og	og	CCONJ	CONJ	_	27	cc	_	_
 10	um	um	ADP	P	_	27	nsubj	_	_
-11	það	sá	DET	D-A	Case=Acc|PronType=Art	12	det	_	_
+11	það	sá	DET	D-A	Case=Acc	12	det	_	_
 12	bil	bil	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
-13	það	sá	DET	D-N	Case=Nom|PronType=Art	10	det	_	_
+13	það	sá	DET	D-N	Case=Nom	10	det	_	_
 14	skynsamlegasta	skynsamlegur	ADJ	ADJS-N	Case=Nom|Degree=Sup	10	amod	_	_
 15	sem	sem	SCONJ	C	_	19	mark	_	_
 16	núverandi	núverandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	17	amod	_	_

@@ -9,7 +9,7 @@
 6	að	að	PART	TO	_	7	mark	_	_
 7	taka	taka	VERB	VB	VerbForm=Inf	5	xcomp	_	_
 8	af	af	ADP	P	_	7	obl	_	_
-9	allan	allur	DET	Q-A	Case=Acc|Degree=Pos	10	amod	_	_
+9	allan	allur	DET	Q-A	Case=Acc	10	amod	_	_
 10	vafa	vafi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
 11	þá	þá	ADV	ADV	Degree=Pos	12	advmod	_	_
 12	vil	vilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -51,7 +51,7 @@
 4	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	eiga	eiga	VERB	VB	VerbForm=Inf	4	xcomp	_	_
-7	þessar	þessi	DET	D-A	Case=Acc|PronType=Art	8	det	_	_
+7	þessar	þessi	DET	D-A	Case=Acc	8	det	_	_
 8	samræður	samræða	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
 9	við	við	ADP	P	_	11	case	_	_
 10	hv.	háttvirtur	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	amod	_	_
@@ -104,7 +104,7 @@
 20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
 21	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	advcl	_	_
 22	ekki	ekki	ADV	NEG	_	21	advmod	_	_
-23	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	21	obj	_	_
+23	mikið	mikill	DET	Q-A	Case=Acc	21	obj	_	_
 24	um	um	ADP	P	_	25	case	_	_
 25	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	27	obl	_	_
 26	að	að	PART	TO	_	27	mark	_	_
@@ -124,7 +124,7 @@
 8	,	,	PUNCT	,	_	7	punct	_	_
 9	þrátt	þrátt	ADV	ADV	Degree=Pos	12	advmod	_	_
 10	fyrir	fyrir	ADP	P	_	12	case	_	_
-11	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	12	amod	_	_
+11	allt	allur	DET	Q-A	Case=Acc	12	amod	_	_
 12	tal	tal	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
 13	um	um	ADP	P	_	14	case	_	_
 14	mikilvægi	mikilvægi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
@@ -168,7 +168,7 @@
 3	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	0	root	_	_
 4	ósátt	ósáttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
 5	við	við	ADP	P	_	10	case	_	_
-6	hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	7	det	_	_
+6	hvaða	hvaða	DET	WD-A	Case=Acc	7	det	_	_
 7	leiðir	leið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	_
 8	ríkisstjórnin	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 9	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	10	aux	_	_
@@ -200,7 +200,7 @@
 15	Landspítalinn	landspítali	PROPN	NPR-N	_	16	nsubj	_	_
 16	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	13	ccomp	_	_
 17	á	á	ADP	P	_	19	case	_	_
-18	einhverjum	einhver	DET	Q-D	Case=Dat|Degree=Pos	19	amod	_	_
+18	einhverjum	einhver	DET	Q-D	Case=Dat	19	amod	_	_
 19	tímapunkti	tímapunktur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
 20	eign	eign	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	xcomp	_	_
 21	þjóðarinnar	þjóð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	SpaceAfter=No
@@ -231,7 +231,7 @@
 8	svolítið	svolítið	ADV	ADV	Degree=Pos	9	amod	_	_
 9	hrædd	hræddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
 10	í	í	ADP	P	_	12	case	_	_
-11	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	12	det	_	_
+11	þeirri	sá	DET	D-D	Case=Dat	12	det	_	_
 12	umræðu	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
 13	sem	sem	SCONJ	C	_	15	mark	_	_
 14	ég	ég	PRON	PRO-N	Case=Nom	15	nsubj	_	_
@@ -243,7 +243,7 @@
 20	þegar	þegar	ADP	P	_	22	case	_	_
 21	ég	ég	PRON	PRO-N	Case=Nom	22	nsubj	_	_
 22	ræddi	ræða	VERB	VBDI	Mood=Ind|Tense=Past	15	obl	_	_
-23	þessar	þessi	DET	D-A	Case=Acc|PronType=Art	24	det	_	_
+23	þessar	þessi	DET	D-A	Case=Acc	24	det	_	_
 24	leiðir	leið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obj	_	_
 25	við	við	ADP	P	_	26	case	_	_
 26	hann	hann	PRON	PRO-A	Case=Acc	22	obl	_	SpaceAfter=No
@@ -281,7 +281,7 @@
 16	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	12	ccomp	_	_
 17	að	að	PART	TO	_	18	mark	_	_
 18	segja	segja	VERB	VB	VerbForm=Inf	16	xcomp	_	_
-19	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	18	obj	_	_
+19	þetta	þessi	DET	D-A	Case=Acc	18	obj	_	_
 20	að	að	PART	TO	_	21	mark	_	_
 21	láta	láta	VERB	VB	VerbForm=Inf	10	xcomp	_	_
 22	kyrrt	kyrr	ADJ	ADJ-A	Case=Acc|Degree=Pos	23	amod	_	_
@@ -296,7 +296,7 @@
 3	vissulega	vissulega	ADV	ADV	Degree=Pos	4	advmod	_	_
 4	mikilvægast	mikilvægur	ADJ	ADJS-N	Case=Nom|Degree=Sup	0	root	_	_
 5	í	í	ADP	P	_	8	case	_	_
-6	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+6	þessu	þessi	DET	D-D	Case=Dat	8	det	_	_
 7	stóra	stór	ADJ	ADJ-D	Case=Dat|Degree=Pos	8	amod	_	_
 8	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
 9	að	að	SCONJ	C	_	14	mark	_	_
@@ -308,7 +308,7 @@
 15	að	að	ADP	P	_	16	case	_	_
 16	samkomulagi	samkomulag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
 17	og	og	CCONJ	CONJ	_	20	cc	_	_
-18	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	20	nsubj	_	_
+18	þetta	þessi	DET	D-N	Case=Nom	20	nsubj	_	_
 19	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	20	cop	_	_
 20	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	14	conj	_	_
 21	í	í	ADP	P	_	22	case	_	_

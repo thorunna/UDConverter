@@ -43,18 +43,18 @@
 # text = Við lifum allmikið í netheimum, á hverjum degi, og þar gerast ýmsir hlutir, bæði góðir og vondir.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	lifum	lifa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	allmikið	allmikill	DET	Q-A	Case=Acc|Degree=Pos	2	obl	_	_
+3	allmikið	allmikill	DET	Q-A	Case=Acc	2	obl	_	_
 4	í	í	ADP	P	_	5	case	_	_
 5	netheimum	netheimur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	5	punct	_	_
 7	á	á	ADP	P	_	9	case	_	_
-8	hverjum	hver	DET	Q-D	Case=Dat|Degree=Pos	9	amod	_	_
+8	hverjum	hver	DET	Q-D	Case=Dat	9	amod	_	_
 9	degi	dagur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	2	punct	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
 11	og	og	CCONJ	CONJ	_	13	cc	_	_
 12	þar	þar	ADV	ADV	Degree=Pos	13	advmod	_	_
 13	gerast	gera	VERB	DOPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-14	ýmsir	ýmis	DET	Q-N	Case=Nom|Degree=Pos	15	amod	_	_
+14	ýmsir	ýmis	DET	Q-N	Case=Nom	15	amod	_	_
 15	hlutir	hlutur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	15	punct	_	_
 17	bæði	bæði	CCONJ	CONJ	_	18	amod	_	_
@@ -83,7 +83,7 @@
 15	í	í	ADP	P	_	16	case	_	_
 16	takt	taktur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	xcomp	_	_
 17	við	við	ADP	P	_	19	case	_	_
-18	þann	sá	DET	D-A	Case=Acc|PronType=Art	19	det	_	_
+18	þann	sá	DET	D-A	Case=Acc	19	det	_	_
 19	veruleika	veruleiki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	_
 20	sem	sem	SCONJ	C	_	22	mark	_	_
 21	við	ég	PRON	PRO-N	Case=Nom	22	nsubj	_	_
@@ -100,7 +100,7 @@
 4	um	um	ADP	P	_	5	case	_	_
 5	vitundarvakninguna	vitundarvakning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
 6	og	og	CCONJ	CONJ	_	9	cc	_	_
-7	þá	sá	DET	D-A	Case=Acc|PronType=Art	9	det	_	_
+7	þá	sá	DET	D-A	Case=Acc	9	det	_	_
 8	miklu	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
 9	samvinnu	samvinna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	conj	_	_
 10	sem	sem	SCONJ	C	_	12	mark	_	_
@@ -117,10 +117,10 @@
 # text = Stjórnvöld á þeim tíma eiga mikið hrós skilið fyrir að hafa farið fram með vitundarvakningu varðandi kynferðisbrot, einkum brot er snúa að börnum.
 1	Stjórnvöld	stjórnvald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
 2	á	á	ADP	P	_	4	case	_	_
-3	þeim	sá	DET	D-D	Case=Dat|PronType=Art	4	det	_	_
+3	þeim	sá	DET	D-D	Case=Dat	4	det	_	_
 4	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
 5	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-6	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	7	amod	_	_
+6	mikið	mikill	DET	Q-A	Case=Acc	7	amod	_	_
 7	hrós	hrós	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	nsubj	_	_
 8	skilið	skilja	VERB	VAN	Tense=Past|VerbForm=Part	5	ccomp	_	_
 9	fyrir	fyrir	ADP	P	_	12	case	_	_
@@ -148,10 +148,10 @@
 2	gerðu	gera	VERB	DODI	Mood=Ind|Tense=Past	0	root	_	_
 3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
 4	í	í	ADP	P	_	6	case	_	_
-5	miklu	mikill	DET	Q-D	Case=Dat|Degree=Pos	6	amod	_	_
+5	miklu	mikill	DET	Q-D	Case=Dat	6	amod	_	_
 6	samstarfi	samstarf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 7	við	við	ADP	P	_	9	case	_	_
-8	ýmis	ýmis	DET	Q-A	Case=Acc|Degree=Pos	9	amod	_	_
+8	ýmis	ýmis	DET	Q-A	Case=Acc	9	amod	_	_
 9	félagasamtök	félagasamtök	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	_
 10	og	og	CCONJ	CONJ	_	11	cc	_	_
 11	hagsmunaaðila	hagsmunaaðili	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	conj	_	SpaceAfter=No
@@ -169,17 +169,17 @@
 7	taki	taka	VERB	VBPS	Mood=Sub|Tense=Pres	4	obl	_	_
 8	að	að	PART	TO	_	9	mark	_	_
 9	sjá	sjá	VERB	VB	VerbForm=Inf	0	root	_	_
-10	þá	sá	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+10	þá	sá	DET	D-A	Case=Acc	11	det	_	_
 11	vinnu	vinna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	nsubj	_	_
 12	verða	verða	AUX	RDPI	Mood=Ind|Tense=Pres	14	aux	_	_
 13	að	að	ADP	P	_	14	case	_	_
-14	engu	enginn	DET	Q-D	Case=Dat|Degree=Pos	9	xcomp	_	_
+14	engu	enginn	DET	Q-D	Case=Dat	9	xcomp	_	_
 15	þrátt	þrátt	ADV	ADV	Degree=Pos	17	advmod	_	_
 16	fyrir	fyrir	ADP	P	_	17	case	_	_
 17	fyrirheit	fyrirheit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
 18	þingmanna	þingmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	17	nmod:poss	_	_
 19	úr	úr	ADP	P	_	21	case	_	_
-20	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	21	amod	_	_
+20	öllum	allur	DET	Q-D	Case=Dat	21	amod	_	_
 21	flokkum	flokkur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	_
 22	í	í	ADP	P	_	23	case	_	_
 23	kjölfar	kjölfar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
@@ -193,9 +193,9 @@
 # text = Þá vildi enginn skera neitt niður.
 1	Þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	vildi	vilja	AUX	MDDI	Mood=Ind|Tense=Past	4	aux	_	_
-3	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	4	nsubj	_	_
+3	enginn	enginn	DET	Q-N	Case=Nom	4	nsubj	_	_
 4	skera	skera	VERB	VB	VerbForm=Inf	0	root	_	_
-5	neitt	neinn	DET	Q-A	Case=Acc|Degree=Pos	4	obj	_	_
+5	neitt	neinn	DET	Q-A	Case=Acc	4	obj	_	_
 6	niður	niður	ADP	RP	_	4	compound:prt	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -204,13 +204,13 @@
 # text = Þá vildu allir bæta í, þá vildu allir halda áfram sama flotta starfinu og gera betur.
 1	Þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	vildu	vilja	AUX	MDDI	Mood=Ind|Tense=Past	4	aux	_	_
-3	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	4	nsubj	_	_
+3	allir	allur	DET	Q-N	Case=Nom	4	nsubj	_	_
 4	bæta	bæta	VERB	VB	VerbForm=Inf	0	root	_	_
 5	í	í	ADP	RP	_	4	compound:prt	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	4	punct	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
 7	þá	þá	ADV	ADV	Degree=Pos	10	advmod	_	_
 8	vildu	vilja	AUX	MDDI	Mood=Ind|Tense=Past	10	aux	_	_
-9	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	10	nsubj	_	_
+9	allir	allur	DET	Q-N	Case=Nom	10	nsubj	_	_
 10	halda	halda	VERB	VB	VerbForm=Inf	4	conj	_	OriginalHead=0
 11	áfram	áfram	ADV	ADV	Degree=Pos	10	advmod	_	_
 12	sama	sami	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
@@ -233,7 +233,7 @@
 7	að	að	PART	TO	_	8	mark	_	_
 8	sjá	sjá	VERB	VB	VerbForm=Inf	0	root	_	_
 9	í	í	ADP	P	_	11	case	_	_
-10	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	11	det	_	_
+10	þessu	þessi	DET	D-D	Case=Dat	11	det	_	_
 11	fjárlagafrumvarpi	fjárlagafrumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
 12	og	og	CCONJ	CONJ	_	15	cc	_	_
 13	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	15	expl	_	_

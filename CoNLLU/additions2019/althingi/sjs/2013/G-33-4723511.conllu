@@ -40,8 +40,8 @@
 37	sömu	sami	ADJ	ADJ-A	Case=Acc|Degree=Pos	38	amod	_	_
 38	fjárhæð	fjárhæð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obl	_	SpaceAfter=No
 39	.	.	PUNCT	.	_	38	punct	_	SpaceAfter=No
-40	“	“	PUNCT	"	_	7	punct	_	_
-41	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	7	conj	_	OriginalHead=0
+40	“	“	PUNCT	"	_	38	punct	_	_
+41	Þetta	þessi	DET	D-N	Case=Nom	7	conj	_	OriginalHead=0
 42	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	41	cop	_	_
 43	í	í	ADP	P	_	44	case	_	_
 44	samræmi	samræmi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	41	obl	_	_
@@ -66,10 +66,10 @@
 63	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	conj	_	OriginalHead=0
 64	að	að	PART	TO	_	65	mark	_	_
 65	skilja	skilja	VERB	VB	VerbForm=Inf	63	xcomp	_	_
-66	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	65	obj	_	_
+66	þetta	þessi	DET	D-A	Case=Acc	65	obj	_	_
 67	öðruvísi	öðruvísi	ADV	ADV	Degree=Pos	65	advmod	_	_
 68	en	en	ADP	P	_	69	case	_	_
-69	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	67	obl	_	_
+69	þetta	þessi	DET	D-N	Case=Nom	67	obl	_	_
 70	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	69	cop	_	_
 71	algerlega	algerlega	ADV	ADV	Degree=Pos	69	advmod	_	_
 72	króna	króna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	69	obl	_	_
@@ -90,7 +90,7 @@
 8	fróðleg	fróðlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
 9	umfjöllun	umfjöllun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
 10	um	um	ADP	P	_	11	case	_	_
-11	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	9	obl	_	_
+11	þetta	þessi	DET	D-A	Case=Acc	9	obl	_	_
 12	í	í	ADP	P	_	13	case	_	_
 13	greinargerð	greinargerð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
 14	bandormsfrumvarpsins	bandormsfrumvarp	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	nmod:poss	_	SpaceAfter=No
@@ -125,7 +125,7 @@
 21	þús.	þúsund	NUM	NUM-A	Case=Acc	22	nummod	_	_
 22	kr.	króna	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obl	_	SpaceAfter=No
 23	,	,	PUNCT	,	_	22	punct	_	_
-24	hvort	hvor	DET	Q-N	Case=Nom|Degree=Pos	25	amod	_	_
+24	hvort	hvor	DET	Q-N	Case=Nom	25	amod	_	_
 25	tveggja	tveir	NUM	NUM-G	Case=Gen	27	nsubj	_	_
 26	á	á	ADP	P	_	27	case	_	_
 27	árinu	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	conj	_	_
@@ -159,7 +159,7 @@
 22	<percent/>	prósent	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obl	_	_
 23	verðhækkun	verðhækkun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
 24	á	á	ADP	P	_	25	case	_	_
-25	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	19	obl	_	_
+25	þetta	þessi	DET	D-A	Case=Acc	19	obl	_	_
 26	umfram	umfram	ADP	P	_	27	case	_	_
 27	verðuppreikning	verðuppreikningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	_
 28	annarra	annar	PRON	OTHER-G	Case=Gen	29	det	_	_
@@ -216,7 +216,7 @@
 18	hún	hún	PRON	PRO-N	Case=Nom	19	nsubj	_	_
 19	fari	fara	VERB	VBPS	Mood=Sub|Tense=Pres	17	ccomp	_	_
 20	umfram	umfram	ADP	P	_	21	case	_	_
-21	það	sá	DET	D-A	Case=Acc|PronType=Art	19	obl	_	_
+21	það	sá	DET	D-A	Case=Acc	19	obl	_	_
 22	sem	sem	SCONJ	C	_	26	mark	_	_
 23	bókhaldsgögn	bókhaldsgögn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	26	nsubj	_	_
 24	opinberu	opinber	ADJ	ADJ-G	Case=Gen|Degree=Pos	25	amod	_	_

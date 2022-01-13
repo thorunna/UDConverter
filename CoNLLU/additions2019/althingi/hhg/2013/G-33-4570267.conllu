@@ -47,7 +47,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4570267,.3
 # X_ID = ID_missing_3
 # text = Hins vegar hefði ég nú haldið að fólk gæti alla vega valið um það.
-1	Hins	hinn	DET	D-G	Case=Gen|PronType=Art	2	det	_	_
+1	Hins	hinn	DET	D-G	Case=Gen	2	det	_	_
 2	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
 3	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	6	aux	_	_
 4	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
@@ -56,7 +56,7 @@
 7	að	að	SCONJ	C	_	12	mark	_	_
 8	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
 9	gæti	geta	AUX	MDDS	Mood=Sub|Tense=Past	12	aux	_	_
-10	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	11	amod	_	_
+10	alla	allur	DET	Q-A	Case=Acc	11	amod	_	_
 11	vega	vegi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
 12	valið	velja	VERB	VBN	Tense=Past|VerbForm=Part	6	ccomp	_	_
 13	um	um	ADP	P	_	14	case	_	_
@@ -84,7 +84,7 @@
 16	það	það	PRON	PRO-N	Case=Nom	17	nsubj	_	_
 17	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	0	root	_	_
 18	það	það	PRON	PRO-A	Case=Acc	17	obj	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	17	punct	_	_
+19	,	,	PUNCT	,	_	18	punct	_	_
 20	en	en	CCONJ	CONJ	_	31	cc	_	_
 21	ef	ef	ADP	P	_	24	case	_	_
 22	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	nsubj	_	_
@@ -116,7 +116,7 @@
 11	hæstv.	hæstvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	12	amod	_	_
 12	ríkisstjórnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	nmod:poss	_	_
 13	gagnvart	gagnvart	ADP	P	_	16	case	_	_
-14	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	16	det	_	_
+14	þessum	þessi	DET	D-D	Case=Dat	16	det	_	_
 15	skuldugu	skuldugur	ADJ	ADJ-D	Case=Dat|Degree=Pos	16	amod	_	_
 16	aðilum	aðili	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
 17	heldur	gjarna	ADV	ADVR	Degree=Cmp	18	advmod	_	_
@@ -217,9 +217,9 @@
 15	peninga	peningur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obj	_	_
 16	eða	eða	CCONJ	CONJ	_	17	cc	_	_
 17	leysa	leysa	VERB	VB	VerbForm=Inf	13	xcomp	_	_
-18	öll	allur	DET	Q-A	Case=Acc|Degree=Pos	19	amod	_	_
+18	öll	allur	DET	Q-A	Case=Acc	19	amod	_	_
 19	vandamál	vandamál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obj	_	_
-20	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	19	nmod:poss	_	_
+20	alls	allur	DET	Q-G	Case=Gen	19	nmod:poss	_	_
 21	fólks	fólk	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	conj	_	_
 22	í	í	ADP	P	_	23	case	_	_
 23	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	_
@@ -236,7 +236,7 @@
 2	sem	sem	SCONJ	C	_	7	mark	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 4	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	7	aux	_	_
-5	hins	hinn	DET	D-G	Case=Gen|PronType=Art	6	det	_	_
+5	hins	hinn	DET	D-G	Case=Gen	6	det	_	_
 6	vegar	vegur	ADV	N-G	Case=Gen|Definite=Ind|Number=Sing	7	advmod	_	_
 7	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	1	acl:relcl	_	_
 8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
@@ -262,7 +262,7 @@
 5	á	á	ADP	P	_	6	case	_	_
 6	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 7	að	að	SCONJ	C	_	10	mark	_	_
-8	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	9	det	_	_
+8	þetta	þessi	DET	D-N	Case=Nom	9	det	_	_
 9	frumvarp	frumvarp	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 10	gangi	ganga	VERB	VBPS	Mood=Sub|Tense=Pres	6	ccomp	_	_
 11	of	of	ADV	ADV	Degree=Pos	10	advmod	_	_
@@ -289,7 +289,7 @@
 32	gera	gera	VERB	DO	VerbForm=Inf	30	xcomp	_	_
 33	yfir	yfir	ADP	P	_	34	case	_	_
 34	höfuð	höfuð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	32	obl	_	_
-35	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	32	obj	_	SpaceAfter=No
+35	eitthvað	einhver	DET	Q-A	Case=Acc	32	obj	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4570267,.11
@@ -309,10 +309,10 @@
 12	ríkinu	ríki	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
 13	og	og	CCONJ	CONJ	_	19	cc	_	_
 14	þegar	þegar	ADP	P	_	16	case	_	_
-15	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	16	nsubj	_	_
+15	allt	allur	DET	Q-N	Case=Nom	16	nsubj	_	_
 16	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	19	obl	_	_
 17	til	til	ADP	P	_	18	case	_	_
-18	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	16	obl	_	_
+18	alls	allur	DET	Q-G	Case=Gen	16	obl	_	_
 19	Alþingi	alþingi	PROPN	NPR-D	_	11	obj	_	_
 20	og	og	CCONJ	CONJ	_	21	cc	_	_
 21	þjóðinni	þjóð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	conj	_	_
@@ -344,7 +344,7 @@
 20	fara	fara	VERB	VB	VerbForm=Inf	14	xcomp	_	_
 21	út	út	ADP	RP	_	24	compound:prt	_	_
 22	í	í	ADP	P	_	24	case	_	_
-23	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	24	det	_	_
+23	þessa	þessi	DET	D-A	Case=Acc	24	det	_	_
 24	aðgerð	aðgerð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -356,7 +356,7 @@
 3	mig	ég	PRON	PRO-A	Case=Acc	2	obj	_	_
 4	svolítið	svolítið	ADV	ADV	Degree=Pos	2	advmod	_	_
 5	á	á	ADP	P	_	7	case	_	_
-6	þeim	sá	DET	D-D	Case=Dat|PronType=Art	7	det	_	_
+6	þeim	sá	DET	D-D	Case=Dat	7	det	_	_
 7	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
 8	en	en	CCONJ	CONJ	_	9	cc	_	_
 9	viðurkenni	viðurkenna	VERB	VBPS	Mood=Sub|Tense=Pres	2	conj	_	OriginalHead=0
@@ -370,13 +370,13 @@
 # X_ID = ID_missing_18
 # text = Þegar allt kemur til alls þá snýst þetta ekki um skuldaleiðréttingar hæstv. ríkisstjórnar, ekki aðallega Forseti hringir. heldur um lögmæti samninga.
 1	Þegar	þegar	ADP	P	_	3	case	_	_
-2	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	3	nsubj	_	_
+2	allt	allur	DET	Q-N	Case=Nom	3	nsubj	_	_
 3	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	7	obl	_	_
 4	til	til	ADP	P	_	5	case	_	_
-5	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	3	obl	_	_
+5	alls	allur	DET	Q-G	Case=Gen	3	obl	_	_
 6	þá	þá	ADV	ADV	Degree=Pos	7	advmod	_	_
 7	snýst	snúa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-8	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	7	nsubj	_	_
+8	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
 9	ekki	ekki	ADV	NEG	_	7	advmod	_	_
 10	um	um	ADP	P	_	11	case	_	_
 11	skuldaleiðréttingar	skuldaleiðrétting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	_

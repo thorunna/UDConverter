@@ -33,14 +33,14 @@
 3	að	að	SCONJ	C	_	7	mark	_	_
 4	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	7	expl	_	_
 5	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	7	cop	_	_
-6	margt	margur	DET	Q-N	Case=Nom|Degree=Pos	7	obl	_	_
+6	margt	margur	DET	Q-N	Case=Nom	7	obl	_	_
 7	ágætt	ágætur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	_
 8	þar	þar	ADV	ADV	Degree=Pos	7	advmod	_	_
 9	en	en	CCONJ	CONJ	_	13	cc	_	_
 10	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	13	expl	_	_
 11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
 12	líka	líka	ADV	ALSO	_	13	advmod	_	_
-13	margt	margur	DET	Q-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
+13	margt	margur	DET	Q-N	Case=Nom	2	conj	_	OriginalHead=0
 14	þar	þar	ADV	ADV	Degree=Pos	13	advmod	_	_
 15	sem	sem	SCONJ	C	_	18	mark	_	_
 16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
@@ -57,7 +57,7 @@
 4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 5	eins	_	ADV	ADVR	Degree=Cmp	2	advmod	_	_
 6	og	_	ADP	P	_	10	case	_	_
-7	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	10	nsubj	_	_
+7	þetta	þessi	DET	D-N	Case=Nom	10	nsubj	_	_
 8	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	10	cop	_	_
 9	einsleit	einsleitur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	_
 10	mynd	mynd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
@@ -106,14 +106,14 @@
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	misjafnlega	misjafnlega	ADV	ADV	Degree=Pos	4	advmod	_	_
-4	mikið	mikill	ADV	Q-N	Case=Nom|Degree=Pos	5	advmod	_	_
+4	mikið	mikill	ADV	Q-N	Case=Nom	5	advmod	_	_
 5	atvinnuleysi	atvinnuleysi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 6	eftir	eftir	ADP	P	_	7	case	_	_
 7	landshlutum	landshluti	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	5	punct	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
 9	það	það	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
-11	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	5	conj	_	OriginalHead=0
+11	mikið	mikill	DET	Q-N	Case=Nom	5	conj	_	OriginalHead=0
 12	á	á	ADP	P	_	13	case	_	_
 13	Suðurnesjum	suðurnes	PROPN	NPRS-D	_	11	obl	_	_
 14	en	en	CCONJ	CONJ	_	15	cc	_	_
@@ -135,9 +135,9 @@
 30	setja	setja	VERB	VB	VerbForm=Inf	28	xcomp	_	_
 31	ekki	ekki	ADV	NEG	_	30	advmod	_	_
 32	alltaf	alltaf	ADV	ADV	Degree=Pos	30	advmod	_	_
-33	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	30	obj	_	_
+33	allt	allur	DET	Q-A	Case=Acc	30	obj	_	_
 34	undir	undir	ADP	P	_	36	case	_	_
-35	einn	einn	DET	ONE-A	Case=Acc|Number=Sing	36	det	_	_
+35	einn	einn	DET	ONE-A	Case=Acc	36	det	_	_
 36	hatt	hattur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	_
 37	þegar	þegar	ADP	P	_	39	case	_	_
 38	við	ég	PRON	PRO-N	Case=Nom	39	nsubj	_	_
@@ -157,7 +157,7 @@
 6	það	það	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 7	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	8	cop	_	_
 8	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	4	obl	_	_
-9	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	10	det	_	_
+9	eitt	einn	DET	ONE-N	Case=Nom	10	det	_	_
 10	land	land	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	xcomp	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	1	punct	_	_
 
@@ -175,7 +175,7 @@
 # sent_id = ALTHINGI_BO_2014_G-33-4521344,.10
 # X_IDs = ID_missing_12 ; ID_missing_13
 # text = Það sem ég held að Evrópusambandið geti hjálpað okkur með er að ná stöðugleika og eins og ég talaði um í ræðu minni tel ég að pólitískur stöðugleiki og fjárhagslegur stöðugleiki haldist algerlega í hendur.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	13	nsubj	_	_
+1	Það	sá	DET	D-N	Case=Nom	13	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 4	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
@@ -225,7 +225,7 @@
 8	sýnist	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	2	parataxis	_	_
 9	mér	ég	PRON	PRO-D	Case=Dat	8	nsubj	_	_
 10	á	á	ADP	P	_	11	case	_	_
-11	öllu	allur	DET	Q-D	Case=Dat|Degree=Pos	8	obl	_	SpaceAfter=No
+11	öllu	allur	DET	Q-D	Case=Dat	8	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4521344,.12
@@ -248,7 +248,7 @@
 6	ræðu	ræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
 7	minni	minn	PRON	PRO-D	Case=Dat	6	nmod:poss	_	_
 8	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-9	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	8	nsubj	_	_
+9	þetta	þessi	DET	D-N	Case=Nom	8	nsubj	_	_
 10	alltaf	alltaf	ADV	ADV	Degree=Pos	8	advmod	_	_
 11	spekúlatíft	spekúlatífur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
 12	og	og	CCONJ	CONJ	_	16	cc	_	_
@@ -262,7 +262,7 @@
 20	Svona	svona	ADV	ADV	Degree=Pos	21	advmod	_	_
 21	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	18	ccomp	_	_
 22	framtíðin	framtíð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	8	punct	_	_
+23	,	,	PUNCT	,	_	21	punct	_	_
 24	ég	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
 25	ætla	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	8	conj	_	OriginalHead=0
 26	að	að	PART	TO	_	27	mark	_	_

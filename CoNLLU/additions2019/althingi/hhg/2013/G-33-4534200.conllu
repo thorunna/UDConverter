@@ -12,7 +12,7 @@
 9	heils	heill	ADJ	ADJ-G	Case=Gen|Degree=Pos	10	amod	_	_
 10	hugar	hugur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	obl	_	_
 11	undir	undir	ADP	P	_	13	case	_	_
-12	þau	sá	DET	D-A	Case=Acc|PronType=Art	13	det	_	_
+12	þau	sá	DET	D-A	Case=Acc	13	det	_	_
 13	sjónarmið	sjónarmið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	_
 14	sem	sem	SCONJ	C	_	17	mark	_	_
 15	hér	hér	ADV	ADV	Degree=Pos	17	advmod	_	_
@@ -41,7 +41,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4534200,.2
 # X_ID = ID_missing_3
 # text = Sú umræða er óneitanlega af skornum skammti því að þrátt fyrir að þessar upplýsingar séu í raun allar opinberar er kannski ekki svo auðvelt að nýta þær.
-1	Sú	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Sú	sá	DET	D-N	Case=Nom	2	det	_	_
 2	umræða	umræða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 4	óneitanlega	óneitanlega	ADV	ADV	Degree=Pos	7	advmod	_	_
@@ -53,12 +53,12 @@
 10	þrátt	þrátt	ADV	ADV	Degree=Pos	26	obl	_	_
 11	fyrir	fyrir	ADP	P	_	19	case	_	_
 12	að	að	SCONJ	C	_	19	mark	_	_
-13	þessar	þessi	DET	D-N	Case=Nom|PronType=Art	14	det	_	_
+13	þessar	þessi	DET	D-N	Case=Nom	14	det	_	_
 14	upplýsingar	upplýsing	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	19	nsubj	_	_
 15	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	19	cop	_	_
 16	í	í	ADP	P	_	17	case	_	_
 17	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
-18	allar	allur	DET	Q-N	Case=Nom|Degree=Pos	19	amod	_	_
+18	allar	allur	DET	Q-N	Case=Nom	19	amod	_	_
 19	opinberar	opinber	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	obl	_	_
 20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	26	cop	_	_
 21	kannski	kannski	ADV	ADV	Degree=Pos	26	advmod	_	_
@@ -106,7 +106,7 @@
 31	mun	munur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
 32	lengra	langt	ADV	ADVR	Degree=Cmp	29	advmod	_	_
 33	í	í	ADP	P	_	35	case	_	_
-34	þeim	sá	DET	D-D	Case=Dat|PronType=Art	35	det	_	_
+34	þeim	sá	DET	D-D	Case=Dat	35	det	_	_
 35	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	29	obl	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -130,7 +130,7 @@
 15	og	og	CCONJ	CONJ	_	19	cc	_	_
 16	þá	þá	ADV	ADV	Degree=Pos	19	advmod	_	_
 17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
-18	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	19	nsubj	_	_
+18	mikið	mikill	DET	Q-N	Case=Nom	19	nsubj	_	_
 19	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
 20	fyrir	fyrir	ADP	P	_	21	case	_	_
 21	mann	maður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	_
@@ -140,7 +140,7 @@
 25	sem	sem	SCONJ	C	_	26	mark	_	_
 26	telur	telja	VERB	VBPI	Mood=Ind|Tense=Pres	21	acl:relcl	_	_
 27	að	að	SCONJ	C	_	30	mark	_	_
-28	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	30	nsubj	_	_
+28	allt	allur	DET	Q-N	Case=Nom	30	nsubj	_	_
 29	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	30	aux	_	_
 30	gengið	ganga	VERB	VBN	Tense=Past|VerbForm=Part	26	ccomp	_	_
 31	of	of	ADV	ADV	Degree=Pos	30	advmod	_	_
@@ -172,14 +172,14 @@
 15	mætti	mega	AUX	MDDS	Mood=Sub|Tense=Past	16	aux	_	_
 16	opna	opna	VERB	VB	VerbForm=Inf	12	xcomp	_	SpaceAfter=No
 17	,	,	PUNCT	,	_	16	punct	_	_
-18	eitthvert	einhver	DET	Q-A	Case=Acc|Degree=Pos	19	amod	_	_
+18	eitthvert	einhver	DET	Q-A	Case=Acc	19	amod	_	_
 19	heilræði	heilræði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	appos	_	_
 20	til	til	ADP	P	_	23	case	_	_
 21	nýrrar	nýr	ADJ	ADJ-G	Case=Gen|Degree=Pos	23	amod	_	_
 22	hæstv.	hæstvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	23	amod	_	_
 23	ríkisstjórnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	obl	_	_
 24	í	í	ADP	P	_	26	case	_	_
-25	þeim	sá	DET	D-D	Case=Dat|PronType=Art	26	det	_	_
+25	þeim	sá	DET	D-D	Case=Dat	26	det	_	_
 26	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	2	punct	_	_
 

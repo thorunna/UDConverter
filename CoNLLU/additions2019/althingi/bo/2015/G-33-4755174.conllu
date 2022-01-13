@@ -6,7 +6,7 @@
 3	með	með	ADP	P	_	4	case	_	_
 4	lausn	lausn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	0	root	_	_
 5	á	á	ADP	P	_	6	case	_	_
-6	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	4	obl	_	_
+6	þessu	þessi	DET	D-D	Case=Dat	4	obl	_	_
 7	með	með	ADP	P	_	8	case	_	_
 8	gistináttagjaldið	gistináttagjald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
 9	:	:	PUNCT	,	_	4	punct	_	_
@@ -49,7 +49,7 @@
 6	nefndi	nefna	VERB	VBDI	Mood=Ind|Tense=Past	2	acl:relcl	_	SpaceAfter=No
 7	:	:	PUNCT	,	_	12	punct	_	_
 8	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
-9	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	10	det	_	_
+9	þetta	þessi	DET	D-N	Case=Nom	10	det	_	_
 10	frumvarp	frumvarp	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
 11	ekki	ekki	ADV	NEG	_	12	advmod	_	_
 12	flókið	flókinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
@@ -116,13 +116,13 @@
 3	umsýsla	umsýsla	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 4	kosta	kosta	VERB	VB	VerbForm=Inf	0	root	_	_
 5	hjá	hjá	ADP	P	_	7	case	_	_
-6	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	7	det	_	_
+6	þeirri	sá	DET	D-D	Case=Dat	7	det	_	_
 7	stofnun	stofnun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
 8	sem	sem	SCONJ	C	_	10	mark	_	_
 9	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	10	aux	_	_
 10	sjá	sjá	VERB	VB	VerbForm=Inf	7	acl:relcl	_	_
 11	um	um	ADP	P	_	12	case	_	_
-12	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	10	obl	_	SpaceAfter=No
+12	þetta	þessi	DET	D-A	Case=Acc	10	obl	_	SpaceAfter=No
 13	?	?	PUNCT	.	_	4	punct	_	_
 
 # sent_id = ALTHINGI_BO_2015_G-33-4755174,.10
@@ -130,7 +130,7 @@
 # text = Hvað þarf margar manneskjur í það?
 1	Hvað	hvað	ADV	WADV-N	Case=Nom|Degree=Pos	2	advmod	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	margar	margur	ADV	Q-A	Case=Acc|Degree=Pos	4	advmod	_	_
+3	margar	margur	ADV	Q-A	Case=Acc	4	advmod	_	_
 4	manneskjur	manneskja	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
 5	í	í	ADP	P	_	6	case	_	_
 6	það	það	PRON	PRO-A	Case=Acc	2	obl	_	SpaceAfter=No
@@ -143,7 +143,7 @@
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
 4	manna	manna	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-5	marga	margur	ADV	Q-A	Case=Acc|Degree=Pos	6	advmod	_	_
+5	marga	margur	ADV	Q-A	Case=Acc	6	advmod	_	_
 6	ferðamannastaði	ferðamannastaður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obj	_	SpaceAfter=No
 7	?	?	PUNCT	.	_	2	punct	_	_
 
@@ -160,7 +160,7 @@
 8	almennilega	almennilega	ADV	ADV	Degree=Pos	7	advmod	_	_
 9	ofan	ofan	ADV	ADV	Degree=Pos	11	advmod	_	_
 10	í	í	ADP	P	_	11	case	_	_
-11	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	7	obl	_	_
+11	þetta	þessi	DET	D-A	Case=Acc	7	obl	_	_
 12	og	og	CCONJ	CONJ	_	13	cc	_	_
 13	gagnrýna	gagnrýna	VERB	VB	VerbForm=Inf	7	xcomp	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	13	punct	_	_
@@ -172,7 +172,7 @@
 20	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
 21	að	að	SCONJ	C	_	26	mark	_	_
 22	of	of	ADV	ADV	Degree=Pos	23	advmod	_	_
-23	mörgum	margur	ADV	Q-D	Case=Dat|Degree=Pos	24	advmod	_	_
+23	mörgum	margur	ADV	Q-D	Case=Dat	24	advmod	_	_
 24	spurningum	spurning	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	26	nsubj	_	_
 25	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	26	cop	_	_
 26	ósvarað	ósvaraður	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	ccomp	_	SpaceAfter=No
@@ -182,7 +182,7 @@
 # X_ID = ID_missing_14
 # text = Varðandi það sem hæstv. ráðherra nefndi með úthlutanir úr Framkvæmdasjóði ferðamannastaða þá rekur mig minni til þess að vandamálið þar, til dæmis í fyrra, hafi verið að úthlutanirnar hafi ekki einu sinni verið nýttar alls staðar.
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	13	dep	_	_
-2	það	sá	DET	D-A	Case=Acc|PronType=Art	1	obj	_	_
+2	það	sá	DET	D-A	Case=Acc	1	obj	_	_
 3	sem	sem	SCONJ	C	_	6	mark	_	_
 4	hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
 5	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
@@ -213,11 +213,11 @@
 30	úthlutanirnar	úthlutun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	36	nsubj	_	_
 31	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	36	aux	_	_
 32	ekki	ekki	ADV	NEG	_	34	advmod	_	_
-33	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	34	det	_	_
+33	einu	einn	DET	ONE-D	Case=Dat	34	det	_	_
 34	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	36	obl	_	_
 35	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	36	cop	_	_
 36	nýttar	nýta	VERB	VAN	Tense=Past|VerbForm=Part	28	ccomp	_	_
-37	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	38	amod	_	_
+37	alls	allur	DET	Q-G	Case=Gen	38	amod	_	_
 38	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	36	obl	_	SpaceAfter=No
 39	.	.	PUNCT	.	_	13	punct	_	_
 
@@ -236,7 +236,7 @@
 10	eða	eða	CCONJ	CONJ	_	11	cc	_	_
 11	landeigendur	landeigandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	conj	_	_
 12	eða	eða	CCONJ	CONJ	_	13	cc	_	_
-13	hverjir	hver	DET	Q-N	Case=Nom|Degree=Pos	9	conj	_	_
+13	hverjir	hver	DET	Q-N	Case=Nom	9	conj	_	_
 14	sem	sem	SCONJ	C	_	15	mark	_	_
 15	það	það	PRON	PRO-N	Case=Nom	13	acl:relcl	_	_
 16	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
@@ -245,7 +245,7 @@
 19	að	að	PART	TO	_	20	mark	_	_
 20	koma	koma	VERB	VB	VerbForm=Inf	18	xcomp	_	_
 21	að	að	ADP	P	_	22	case	_	_
-22	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	20	obl	_	_
+22	þessu	þessi	DET	D-D	Case=Dat	20	obl	_	_
 23	þurftu	þurfa	VERB	VBDI	Mood=Ind|Tense=Past	7	ccomp	_	_
 24	að	að	PART	TO	_	25	mark	_	_
 25	koma	koma	VERB	VB	VerbForm=Inf	23	xcomp	_	_
@@ -261,7 +261,7 @@
 35	ekki	ekki	ADV	NEG	_	37	advmod	_	_
 36	í	í	ADP	P	_	37	case	_	_
 37	boði	boð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	conj	_	OriginalHead=0
-38	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	39	amod	_	_
+38	alls	allur	DET	Q-G	Case=Gen	39	amod	_	_
 39	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	37	obl	_	SpaceAfter=No
 40	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -282,7 +282,7 @@
 # sent_id = ALTHINGI_BO_2015_G-33-4755174,.16
 # X_ID = ID_missing_18
 # text = Það fyrirkomulag gengur ekki upp.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Það	sá	DET	D-N	Case=Nom	2	det	_	_
 2	fyrirkomulag	fyrirkomulag	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	ekki	ekki	ADV	NEG	_	3	advmod	_	_

@@ -12,7 +12,7 @@
 9	því	það	PRON	PRO-D	Case=Dat	7	obl	_	_
 10	að	að	PART	TO	_	11	mark	_	_
 11	leiðrétta	leiðrétta	VERB	VB	VerbForm=Inf	9	xcomp	_	_
-12	einn	einn	DET	ONE-A	Case=Acc|Number=Sing	13	det	_	_
+12	einn	einn	DET	ONE-A	Case=Acc	13	det	_	_
 13	smámisskilning	smámisskilningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -62,14 +62,14 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4723524,.3
 # X_IDs = ID_missing_4 ; ID_missing_5
 # text = Það var ekkert því til fyrirstöðu, og ekki geð okkar þingmanna í hv. allsherjar- og menntamálanefnd um að vinna að þessu um helgina eða á hverjum einasta degi fram að þingi í október, það hefði verið algjörlega sjálfsagt.
-1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
-2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
-3	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	4	obl	_	_
-4	því	það	PRON	PRO-D	Case=Dat	0	root	_	_
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	8	expl	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	8	cop	_	_
+3	ekkert	enginn	DET	Q-N	Case=Nom	8	obl	_	_
+4	því	það	PRON	PRO-D	Case=Dat	8	obl	_	_
 5	til	til	ADP	P	_	4	case	_	_
 6	fyrirstöðu	fyrirstaða	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 7	,	,	PUNCT	,	_	6	punct	_	_
-8	og	og	CCONJ	CONJ	_	4	parataxis	_	_
+8	og	og	CCONJ	CONJ	_	0	root	_	_
 9	ekki	ekki	ADV	NEG	_	8	advmod	_	_
 10	geð	geð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 11	okkar	ég	PRON	PRO-G	Case=Gen	10	nmod:poss	_	_
@@ -82,28 +82,28 @@
 18	nefnd	nefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
 19	um	um	ADP	P	_	21	case	_	_
 20	að	að	PART	TO	_	21	mark	_	_
-21	vinna	vinna	VERB	VB	VerbForm=Inf	4	obl	_	_
+21	vinna	vinna	VERB	VB	VerbForm=Inf	8	obl	_	_
 22	að	að	ADP	P	_	23	case	_	_
-23	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	21	obl	_	_
+23	þessu	þessi	DET	D-D	Case=Dat	21	obl	_	_
 24	um	um	ADP	P	_	25	case	_	_
-25	helgina	helgi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	_
+25	helgina	helgi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	_
 26	eða	eða	CCONJ	CONJ	_	30	cc	_	_
 27	á	á	ADP	P	_	30	case	_	_
-28	hverjum	hver	DET	Q-D	Case=Dat|Degree=Pos	30	amod	_	_
+28	hverjum	hver	DET	Q-D	Case=Dat	30	amod	_	_
 29	einasta	einasti	ADJ	ADJ-D	Case=Dat|Degree=Pos	30	amod	_	_
-30	degi	dagur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
+30	degi	dagur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	conj	_	_
 31	fram	fram	ADP	RP	_	33	compound:prt	_	_
 32	að	að	ADP	P	_	33	case	_	_
 33	þingi	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obl	_	_
 34	í	í	ADP	P	_	35	case	_	_
 35	október	október	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	33	obl	_	SpaceAfter=No
-36	,	,	PUNCT	,	_	4	punct	_	_
+36	,	,	PUNCT	,	_	33	punct	_	_
 37	það	það	PRON	PRO-N	Case=Nom	41	nsubj	_	_
 38	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	41	aux	_	_
 39	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	41	cop	_	_
 40	algjörlega	algjörlega	ADV	ADV	Degree=Pos	41	amod	_	_
-41	sjálfsagt	sjálfsagður	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	conj	_	OriginalHead=0|SpaceAfter=No
-42	.	.	PUNCT	.	_	4	punct	_	_
+41	sjálfsagt	sjálfsagður	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	conj	_	OriginalHead=0|SpaceAfter=No
+42	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4723524,.4
 # X_ID = ID_missing_6
@@ -120,7 +120,7 @@
 # text = Vandinn er sá að við þyrftum að ræða annað mál.
 1	Vandinn	vandi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	sá	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+3	sá	sá	DET	D-N	Case=Nom	0	root	_	_
 4	að	að	SCONJ	C	_	6	mark	_	_
 5	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 6	þyrftum	þurfa	VERB	VBDS	Mood=Sub|Tense=Past	3	ccomp	_	_
@@ -133,7 +133,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4723524,.6
 # X_ID = ID_missing_8
 # text = Þetta frumvarp er að mínum dómi ónýtt.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	2	det	_	_
 2	frumvarp	frumvarp	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 4	að	að	ADP	P	_	6	case	_	_
@@ -166,7 +166,7 @@
 3	ætlum	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	24	obl	_	_
 4	að	að	PART	TO	_	5	mark	_	_
 5	skoða	skoða	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-6	þá	sá	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
+6	þá	sá	DET	D-A	Case=Acc	7	det	_	_
 7	aðferð	aðferð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
 8	sem	sem	SCONJ	C	_	11	mark	_	_
 9	ég	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
@@ -200,7 +200,7 @@
 # text = Að vinna þá vinnu milli dagsins í dag og 1. október er sjálfsagt mál, ég er alveg til í það, ekkert mál.
 1	Að	að	PART	TO	_	2	mark	_	_
 2	vinna	vinna	VERB	VB	VerbForm=Inf	14	xcomp	_	_
-3	þá	sá	DET	D-A	Case=Acc|PronType=Art	4	det	_	_
+3	þá	sá	DET	D-A	Case=Acc	4	det	_	_
 4	vinnu	vinna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 5	milli	milli	ADP	P	_	6	case	_	_
 6	dagsins	dagur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	_
@@ -220,7 +220,7 @@
 20	í	í	ADP	P	_	21	case	_	_
 21	það	það	PRON	PRO-A	Case=Acc	19	obl	_	SpaceAfter=No
 22	,	,	PUNCT	,	_	14	punct	_	_
-23	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	24	amod	_	_
+23	ekkert	enginn	DET	Q-N	Case=Nom	24	amod	_	_
 24	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	conj	_	OriginalHead=0|SpaceAfter=No
 25	.	.	PUNCT	.	_	14	punct	_	_
 
@@ -229,7 +229,7 @@
 # text = Mér liggur ekkert á að fara í frí, virðulegur forseti.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	liggur	liggja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	2	obl	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	2	obl	_	_
 4	á	á	ADP	P	_	6	case	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	fara	fara	VERB	VB	VerbForm=Inf	2	obl	_	_
@@ -283,7 +283,7 @@
 8	því	það	PRON	PRO-D	Case=Dat	6	obl	_	_
 9	áðan	áðan	ADV	ADV	Degree=Pos	6	advmod	_	_
 10	að	að	SCONJ	C	_	12	mark	_	_
-11	sumir	sumur	DET	Q-N	Case=Nom|Degree=Pos	12	nsubj	_	_
+11	sumir	sumur	DET	Q-N	Case=Nom	12	nsubj	_	_
 12	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	ccomp	_	_
 13	kannski	kannski	ADV	ADV	Degree=Pos	12	advmod	_	_
 14	ekki	ekki	ADV	NEG	_	12	advmod	_	_
@@ -344,7 +344,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4723524,.14
 # X_IDs = ID_missing_19 ; ID_missing_20
 # text = Þessir lyklar eru notaðir til að skila inn skattskýrslum, þeir eru notaðir til að skipta um trúfélög og gera alls konar hluti í stjórnsýslunni.
-1	Þessir	þessi	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Þessir	þessi	DET	D-N	Case=Nom	2	det	_	_
 2	lyklar	lykill	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 4	notaðir	nota	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -364,7 +364,7 @@
 18	trúfélög	trúfélag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obl	_	_
 19	og	og	CCONJ	CONJ	_	20	cc	_	_
 20	gera	gera	VERB	DO	VerbForm=Inf	16	advcl	_	_
-21	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	23	nmod:poss	_	_
+21	alls	allur	DET	Q-G	Case=Gen	23	nmod:poss	_	_
 22	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	conj	_	_
 23	hluti	hlutur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	20	obj	_	_
 24	í	í	ADP	P	_	25	case	_	_
@@ -374,9 +374,9 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4723524,.15
 # X_IDs = ID_missing_21 ; ID_missing_22
 # text = Þetta er ekkert mál, tekur örfáar mínútur, ég gerði þetta sjálfur um daginn.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	4	amod	_	_
+3	ekkert	enginn	DET	Q-N	Case=Nom	4	amod	_	_
 4	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 5	,	,	PUNCT	,	_	4	punct	_	_
 6	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	4	parataxis	_	_
@@ -385,7 +385,7 @@
 9	,	,	PUNCT	,	_	4	punct	_	_
 10	ég	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 11	gerði	gera	VERB	DODI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
-12	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	11	obj	_	_
+12	þetta	þessi	DET	D-A	Case=Acc	11	obj	_	_
 13	sjálfur	sjálfur	PRON	PRO-N	Case=Nom	11	amod	_	_
 14	um	um	ADP	P	_	15	case	_	_
 15	daginn	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No

@@ -17,13 +17,13 @@
 14	álagið	álag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
 15	á	á	ADP	P	_	16	case	_	_
 16	uppsjávarveiðarnar	uppsjávarveiði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
-17	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	13	obl	_	_
+17	meira	mikill	DET	QR-A	Case=Acc	13	obl	_	_
 18	en	en	ADP	P	_	19	case	_	_
-19	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	17	obl	_	_
+19	þetta	þessi	DET	D-A	Case=Acc	17	obl	_	_
 20	borið	bera	VERB	VAN	Tense=Past|VerbForm=Part	10	acl	_	_
 21	saman	saman	ADV	ADV	Degree=Pos	20	advmod	_	_
 22	við	við	ADP	P	_	25	case	_	_
-23	hina	hinn	DET	D-A	Case=Acc|PronType=Art	25	det	_	_
+23	hina	hinn	DET	D-A	Case=Acc	25	det	_	_
 24	miklu	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	25	amod	_	_
 25	lækkun	lækkun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	_
 26	sem	sem	SCONJ	C	_	27	mark	_	_
@@ -42,16 +42,16 @@
 5	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	6	aux	_	_
 6	skekkt	skekkja	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
 7	dæmið	dæmi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
-8	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	9	obl	_	_
+8	allt	allur	DET	Q-A	Case=Acc	9	obl	_	_
 9	of	of	ADV	ADV	Degree=Pos	6	advmod	_	_
 10	mikið	mikið	ADV	ADV	Degree=Pos	9	advmod	_	_
 11	í	í	ADP	P	_	13	case	_	_
-12	þá	sá	DET	D-A	Case=Acc|PronType=Art	13	det	_	_
+12	þá	sá	DET	D-A	Case=Acc	13	det	_	_
 13	átt	átt	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	13	punct	_	_
 15	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	2	advmod	_	_
 16	vegna	vegna	ADP	P	_	17	case	_	_
-17	þess	sá	DET	D-G	Case=Gen|PronType=Art	2	obl	_	_
+17	þess	sá	DET	D-G	Case=Gen	2	obl	_	_
 18	sem	sem	SCONJ	C	_	20	mark	_	_
 19	ég	ég	PRON	PRO-N	Case=Nom	20	nsubj	_	_
 20	nefndi	nefna	VERB	VBDI	Mood=Ind|Tense=Past	17	acl:relcl	_	_
@@ -61,7 +61,7 @@
 24	,	,	PUNCT	,	_	23	punct	_	_
 25	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	31	expl	_	_
 26	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
-27	mörg	margur	DET	Q-N	Case=Nom|Degree=Pos	31	amod	_	_
+27	mörg	margur	DET	Q-N	Case=Nom	31	amod	_	_
 28	stór	stór	ADJ	ADJ-N	Case=Nom|Degree=Pos	31	amod	_	_
 29	og	og	CCONJ	CONJ	_	30	cc	_	_
 30	öflug	öflugur	ADJ	ADJ-N	Case=Nom|Degree=Pos	28	conj	_	_
@@ -70,7 +70,7 @@
 33	verulegan	verulegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	34	amod	_	_
 34	hluta	hluti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	31	obl	_	_
 35	eða	eða	CCONJ	CONJ	_	37	cc	_	_
-36	mestan	mikill	DET	QS-A	Case=Acc|Degree=Pos	37	amod	_	_
+36	mestan	mikill	DET	QS-A	Case=Acc	37	amod	_	_
 37	hluta	hluti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	conj	_	_
 38	veiðiheimilda	veiðiheimild	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	34	nmod:poss	_	_
 39	sinna	sinn	PRON	PRO-G	Case=Gen	38	nmod	_	_
@@ -101,7 +101,7 @@
 13	vægari	vægur	ADJ	ADJR-A	Case=Acc|Degree=Cmp	14	amod	_	_
 14	meðhöndlun	meðhöndlun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
 15	en	en	ADP	P	_	16	case	_	_
-16	hin	hinn	DET	D-N	Case=Nom|PronType=Art	14	obl	_	SpaceAfter=No
+16	hin	hinn	DET	D-N	Case=Nom	14	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4663510,.4
@@ -109,7 +109,7 @@
 # text = Ég staðfesti hins vegar að uppsjávarfyrirtækin búa við geysilega góða afkomu og ráða vel við þetta gjald.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	staðfesti	staðfesta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	hins	hinn	DET	D-G	Case=Gen|PronType=Art	4	det	_	_
+3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
 4	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	_
 5	að	að	SCONJ	C	_	7	mark	_	_
 6	uppsjávarfyrirtækin	uppsjávarfyrirtæki	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	nsubj	_	_
@@ -122,7 +122,7 @@
 13	ráða	ráða	VERB	VBPI	Mood=Ind|Tense=Pres	7	conj	_	_
 14	vel	vel	ADV	ADV	Degree=Pos	13	advmod	_	_
 15	við	við	ADP	P	_	17	case	_	_
-16	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	17	det	_	_
+16	þetta	þessi	DET	D-A	Case=Acc	17	det	_	_
 17	gjald	gjald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -160,7 +160,7 @@
 2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vonandi	vonandi	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	aldrei	aldrei	ADV	ADV	Degree=Pos	2	advmod	_	_
-5	minni	lítill	DET	QR-N	Case=Nom|Degree=Pos	2	amod	_	_
+5	minni	lítill	DET	QR-N	Case=Nom	2	amod	_	_
 6	en	en	ADP	P	_	9	case	_	_
 7	hann	hann	PRON	PRO-N	Case=Nom	9	nsubj	_	_
 8	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	9	aux	_	_
@@ -170,13 +170,13 @@
 12	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	conj	_	SpaceAfter=No
 13	,	,	PUNCT	,	_	12	punct	_	_
 14	kannski	kannski	ADV	ADV	Degree=Pos	15	advmod	_	_
-15	meiri	mikill	DET	QR-N	Case=Nom|Degree=Pos	2	parataxis	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	2	punct	_	_
+15	meiri	mikill	DET	QR-N	Case=Nom	2	parataxis	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
 17	en	en	CCONJ	CONJ	_	20	cc	_	_
 18	norsk-íslenska	norsk-íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	amod	_	_
 19	síldin	síld	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	_
 20	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-21	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	20	obl	_	_
+21	eitthvað	einhver	DET	Q-A	Case=Acc	20	obl	_	_
 22	niður	niður	ADP	RP	_	20	compound:prt	_	_
 23	og	og	CCONJ	CONJ	_	25	cc	_	_
 24	við	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
@@ -191,7 +191,7 @@
 # text = Þannig standa þau mál í grófum dráttum í bili.
 1	Þannig	þannig	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	standa	standa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	þau	sá	DET	D-N	Case=Nom|PronType=Art	4	det	_	_
+3	þau	sá	DET	D-N	Case=Nom	4	det	_	_
 4	mál	mál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
 5	í	í	ADP	P	_	7	case	_	_
 6	grófum	grófur	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
@@ -222,7 +222,7 @@
 17	í	í	ADP	P	_	18	case	_	_
 18	þorski	þorskur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
 19	og	og	CCONJ	CONJ	_	23	cc	_	_
-20	allan	allur	DET	Q-A	Case=Acc|Degree=Pos	22	amod	_	_
+20	allan	allur	DET	Q-A	Case=Acc	22	amod	_	_
 21	fastan	fastur	ADJ	ADJ-A	Case=Acc|Degree=Pos	22	amod	_	_
 22	kostnað	kostnaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	nsubj	_	_
 23	dekkaðan	dekka	VERB	VAN	Tense=Past|VerbForm=Part	16	conj	_	_
@@ -240,7 +240,7 @@
 35	20	tuttugu	NUM	NUM-D	Case=Dat	37	nummod	_	_
 36	þús.	þúsund	NUM	NUM-D	Case=Dat	37	nummod	_	_
 37	tonnum	tonn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	30	obj	_	_
-38	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	37	amod	_	_
+38	meira	mikill	DET	QR-A	Case=Acc	37	amod	_	_
 39	á	á	ADP	P	_	40	case	_	_
 40	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	37	obl	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	5	punct	_	_
@@ -273,8 +273,8 @@
 15	þeir	hann	PRON	PRO-N	Case=Nom	20	nsubj	_	_
 16	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	20	cop	_	_
 17	með	með	ADP	P	_	20	case	_	_
-18	þennan	þessi	DET	D-A	Case=Acc|PronType=Art	20	det	_	_
-19	mikla	mikill	DET	Q-A	Case=Acc|Degree=Pos	20	amod	_	_
+18	þennan	þessi	DET	D-A	Case=Acc	20	det	_	_
+19	mikla	mikill	DET	Q-A	Case=Acc	20	amod	_	_
 20	afslátt	afsláttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 21	af	af	ADP	P	_	22	case	_	_
 22	veiðigjaldinu	veiðigjald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	_

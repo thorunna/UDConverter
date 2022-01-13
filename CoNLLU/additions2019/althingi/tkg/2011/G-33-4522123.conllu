@@ -13,7 +13,7 @@
 10	að	að	PART	TO	_	11	mark	_	_
 11	brosa	brosa	VERB	VB	VerbForm=Inf	8	obl	_	_
 12	þegar	þegar	ADP	P	_	17	case	_	_
-13	einn	einn	DET	ONE-N	Case=Nom|Number=Sing	17	nsubj	_	_
+13	einn	einn	DET	ONE-N	Case=Nom	17	nsubj	_	_
 14	af	af	ADP	P	_	15	case	_	_
 15	framámönnum	framámaður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
 16	Framsóknarflokksins	framsóknarflokkur	PROPN	NPR-G	_	15	nmod:poss	_	_
@@ -34,7 +34,7 @@
 # text = Hver á þessa ríkisstjórn með húð og hári?
 1	Hver	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	4	det	_	_
+3	þessa	þessi	DET	D-A	Case=Acc	4	det	_	_
 4	ríkisstjórn	ríkisstjórn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 5	með	með	ADP	P	_	6	case	_	_
 6	húð	húð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
@@ -50,7 +50,7 @@
 3	í	í	ADV	ADV	Degree=Pos	1	advmod	_	SpaceAfter=No
 4	:	:	PUNCT	,	_	6	punct	_	_
 5	Ekki	ekki	ADV	NEG	_	6	advmod	_	_
-6	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	0	root	_	SpaceAfter=No
+6	þessa	þessi	DET	D-A	Case=Acc	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	6	punct	_	_
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4522123,.4
@@ -108,7 +108,7 @@
 9	um	um	ADP	P	_	10	case	_	_
 10	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
 11	í	í	ADP	P	_	13	case	_	_
-12	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	13	det	_	_
+12	þessu	þessi	DET	D-D	Case=Dat	13	det	_	_
 13	kompaníi	kompaní	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
 14	að	að	SCONJ	C	_	17	mark	_	_
 15	ekki	ekki	ADV	NEG	_	17	advmod	_	_
@@ -150,8 +150,8 @@
 1	Framsókn	framsókn	PROPN	NPR-N	_	2	nsubj	_	_
 2	kokgleypti	kokgleypa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	náttúrlega	náttúrlega	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	2	obj	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	2	punct	_	_
+4	allt	allur	DET	Q-A	Case=Acc	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
 6	átti	eiga	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
 7	að	að	PART	TO	_	8	mark	_	_
 8	fá	fá	VERB	VB	VerbForm=Inf	6	xcomp	_	_
@@ -173,7 +173,7 @@
 # text = Þeir hafa ekkert fengið.
 1	Þeir	hann	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
-3	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	4	obj	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	4	obj	_	_
 4	fengið	fá	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -184,7 +184,7 @@
 2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
 4	fengið	fá	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-5	neitt	neinn	DET	Q-A	Case=Acc|Degree=Pos	4	obj	_	SpaceAfter=No
+5	neitt	neinn	DET	Q-A	Case=Acc	4	obj	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4522123,.11
@@ -217,8 +217,8 @@
 # sent_id = ALTHINGI_TKG_2011_G-33-4522123,.14
 # X_ID = ID_missing_17
 # text = Það eina sem við getum gert er að koma ríkisstjórninni út úr sjálfheldunni sem hún er í og reyna að nálgast hvert mál málefnalega.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	9	nsubj	_	_
-2	eina	einn	DET	ONE-N	Case=Nom|Number=Sing	1	det	_	_
+1	Það	sá	DET	D-N	Case=Nom	9	nsubj	_	_
+2	eina	einn	DET	ONE-N	Case=Nom	1	det	_	_
 3	sem	sem	SCONJ	C	_	6	mark	_	_
 4	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 5	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
@@ -238,7 +238,7 @@
 19	reyna	reyna	VERB	VB	VerbForm=Inf	9	csubj	_	_
 20	að	að	PART	TO	_	21	mark	_	_
 21	nálgast	nálgast	VERB	VB	VerbForm=Inf	19	xcomp	_	_
-22	hvert	hver	DET	Q-A	Case=Acc|Degree=Pos	23	amod	_	_
+22	hvert	hver	DET	Q-A	Case=Acc	23	amod	_	_
 23	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obj	_	_
 24	málefnalega	málefnalega	ADV	ADV	Degree=Pos	21	advmod	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	9	punct	_	_
@@ -249,13 +249,13 @@
 1	Ekki	ekki	ADV	NEG	_	18	advmod	_	_
 2	út	út	ADP	RP	_	6	compound:prt	_	_
 3	frá	frá	ADP	P	_	6	case	_	_
-4	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	6	det	_	_
+4	þessum	þessi	DET	D-D	Case=Dat	6	det	_	_
 5	klassísku	klassískur	ADJ	ADJ-D	Case=Dat|Degree=Pos	6	amod	_	_
 6	skotgröfum	skotgröf	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	_
 7	sem	sem	SCONJ	C	_	13	mark	_	_
 8	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
 9	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	13	aux	_	_
-10	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	11	obl	_	_
+10	allt	allur	DET	Q-A	Case=Acc	11	obl	_	_
 11	of	of	ADV	ADV	Degree=Pos	13	advmod	_	_
 12	lengi	lengi	ADV	ADV	Degree=Pos	11	advmod	_	_
 13	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	6	acl:relcl	_	_
@@ -266,11 +266,11 @@
 18	reyna	reyna	VERB	VB	VerbForm=Inf	0	root	_	_
 19	að	að	PART	TO	_	20	mark	_	_
 20	taka	taka	VERB	VB	VerbForm=Inf	18	xcomp	_	_
-21	hvert	hver	DET	Q-A	Case=Acc|Degree=Pos	22	amod	_	_
+21	hvert	hver	DET	Q-A	Case=Acc	22	amod	_	_
 22	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obj	_	_
 23	fyrir	fyrir	ADP	RP	_	20	compound:prt	_	_
 24	í	í	ADP	P	_	25	case	_	_
-25	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	20	obl	_	SpaceAfter=No
+25	einu	einn	DET	ONE-D	Case=Dat	20	obl	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	18	punct	_	_
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4522123,.16
@@ -303,7 +303,7 @@
 13	minnt	minna	VERB	VAN	Tense=Past|VerbForm=Part	9	acl:relcl	_	_
 14	á	á	ADP	P	_	13	obl	_	_
 15	áðan	áðan	ADV	ADV	Degree=Pos	13	advmod	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	2	punct	_	_
+16	,	,	PUNCT	,	_	13	punct	_	_
 17	Framsóknarflokkurinn	framsóknarflokkur	PROPN	NPR-N	_	18	nsubj	_	_
 18	lyfti	lyfta	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
 19	ekki	ekki	ADV	NEG	_	18	advmod	_	_
@@ -329,7 +329,7 @@
 39	í	í	ADP	P	_	40	case	_	_
 40	gegn	gegn	ADV	ADV	Degree=Pos	37	obl	_	_
 41	og	og	CCONJ	CONJ	_	45	cc	_	_
-42	nokkrir	nokkur	DET	Q-N	Case=Nom|Degree=Pos	43	amod	_	_
+42	nokkrir	nokkur	DET	Q-N	Case=Nom	43	amod	_	_
 43	Vinstri	vinstri	ADJ	ADJ-N	Case=Nom|Degree=Pos	45	nsubj	_	_
 44	grænir	grænn	ADJ	ADJ-N	Case=Nom|Degree=Pos	43	amod	_	_
 45	fengu	fá	VERB	VBDI	Mood=Ind|Tense=Past	30	parataxis	_	_
@@ -362,7 +362,7 @@
 4	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	_
 5	sem	sem	SCONJ	C	_	6	mark	_	_
 6	heitir	heita	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
-7	því	sá	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
+7	því	sá	DET	D-D	Case=Dat	9	det	_	_
 8	fallega	fallegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
 9	nafni	nafn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 10	Gunnar	gunnar	PROPN	NPR-N	_	9	appos	_	_
@@ -387,7 +387,7 @@
 29	koma	koma	VERB	VB	VerbForm=Inf	25	xcomp	_	_
 30	ríkisstjórninni	ríkisstjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obj	_	_
 31	frá	frá	ADP	RP	_	29	compound:prt	_	_
-32	hið	hinn	DET	D-A	Case=Acc|PronType=Art	29	obl	_	_
+32	hið	hinn	DET	D-A	Case=Acc	29	obl	_	_
 33	snarasta	snar	ADJ	ADJS-A	Case=Acc|Degree=Sup	32	amod	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	23	punct	_	_
 

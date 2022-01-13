@@ -14,8 +14,8 @@
 11	hans	hann	PRON	PRO-G	Case=Gen	12	nmod:poss	_	_
 12	yfirferð	yfirferð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
 13	á	á	ADP	P	_	16	case	_	_
-14	nokkrum	nokkur	DET	Q-D	Case=Dat|Degree=Pos	16	amod	_	_
-15	þeim	sá	DET	D-D	Case=Dat|PronType=Art	16	det	_	_
+14	nokkrum	nokkur	DET	Q-D	Case=Dat	16	amod	_	_
+15	þeim	sá	DET	D-D	Case=Dat	16	det	_	_
 16	atriðum	atriði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
 17	sem	sem	SCONJ	C	_	22	mark	_	_
 18	í	í	ADP	P	_	19	case	_	_
@@ -28,7 +28,7 @@
 25	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	26	cop	_	_
 26	óljós	óljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	22	obl	_	_
 27	eða	eða	CCONJ	CONJ	_	29	cc	_	_
-28	einhver	einhver	DET	Q-N	Case=Nom|Degree=Pos	29	amod	_	_
+28	einhver	einhver	DET	Q-N	Case=Nom	29	amod	_	_
 29	vandamál	vandamál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	26	amod	_	_
 30	í	í	ADP	P	_	31	case	_	_
 31	sambandi	samband	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obl	_	_
@@ -43,7 +43,7 @@
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	undir	undir	ADP	P	_	5	case	_	_
-4	þá	sá	DET	D-A	Case=Acc|PronType=Art	5	det	_	_
+4	þá	sá	DET	D-A	Case=Acc	5	det	_	_
 5	kröfu	krafa	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 6	að	að	SCONJ	C	_	9	mark	_	_
 7	hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
@@ -77,10 +77,10 @@
 10	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
 11	,	,	PUNCT	,	_	10	punct	_	_
 12	að	að	SCONJ	C	_	14	mark	_	_
-13	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	14	nsubj	_	_
+13	þetta	þessi	DET	D-N	Case=Nom	14	nsubj	_	_
 14	lykti	lykta	VERB	VBPS	Mood=Sub|Tense=Pres	6	advcl	_	_
 15	of	of	ADV	ADV	Degree=Pos	16	advmod	_	_
-16	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	14	obl	_	_
+16	mikið	mikill	DET	Q-A	Case=Acc	14	obl	_	_
 17	af	af	ADP	P	_	18	case	_	_
 18	boðum	boð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	_
 19	og	og	CCONJ	CONJ	_	20	cc	_	_
@@ -95,7 +95,7 @@
 # X_ID = ID_missing_5
 # text = Ekki nokkurn skapaðan hlut.
 1	Ekki	ekki	ADV	NEG	_	4	advmod	_	_
-2	nokkurn	nokkur	DET	Q-A	Case=Acc|Degree=Pos	4	amod	_	_
+2	nokkurn	nokkur	DET	Q-A	Case=Acc	4	amod	_	_
 3	skapaðan	skapaður	ADJ	ADJ-A	Case=Acc|Degree=Pos	4	amod	_	_
 4	hlut	hlutur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
@@ -124,7 +124,7 @@
 10	á	á	ADP	P	_	11	case	_	_
 11	hlutina	hlutur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	_
 12	og	og	CCONJ	CONJ	_	18	cc	_	_
-13	hvaða	hvaða	DET	WD-N	Case=Nom|Number=Sing	14	det	_	_
+13	hvaða	hvaða	DET	WD-N	Case=Nom	14	det	_	_
 14	boð	boð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	18	obj	_	_
 15	og	og	CCONJ	CONJ	_	16	cc	_	_
 16	bönn	bann	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	14	conj	_	_
@@ -161,7 +161,7 @@
 24	vega	vegur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	23	nmod:poss	_	_
 25	á	á	ADP	P	_	26	case	_	_
 26	hálendinu	hálendi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	7	punct	_	_
+27	,	,	PUNCT	,	_	23	punct	_	_
 28	og	og	CCONJ	CONJ	_	29	cc	_	_
 29	ræddum	ræða	VERB	VBDI	Mood=Ind|Tense=Past	7	conj	_	OriginalHead=0
 30	þar	þar	ADV	ADV	Degree=Pos	29	advmod	_	_
@@ -174,7 +174,7 @@
 1	Þrátt	þrátt	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	fyrir	fyrir	ADP	P	_	6	case	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
-4	ýmis	ýmis	DET	Q-N	Case=Nom|Degree=Pos	5	amod	_	_
+4	ýmis	ýmis	DET	Q-N	Case=Nom	5	amod	_	_
 5	sjónarmið	sjónarmið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
 6	kæmu	koma	VERB	VBDS	Mood=Sub|Tense=Past	12	obl	_	_
 7	fram	fram	ADP	RP	_	6	compound:prt	_	_
@@ -187,11 +187,11 @@
 14	mér	ég	PRON	PRO-D	Case=Dat	12	iobj	_	_
 15	að	að	PART	TO	_	16	mark	_	_
 16	túlka	túlka	VERB	VB	VerbForm=Inf	12	xcomp	_	_
-17	þá	sá	DET	D-A	Case=Acc|PronType=Art	18	det	_	_
+17	þá	sá	DET	D-A	Case=Acc	18	det	_	_
 18	umræðu	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obj	_	_
 19	þannig	þannig	ADV	ADV	Degree=Pos	16	advmod	_	_
 20	að	að	SCONJ	C	_	23	mark	_	_
-21	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	23	nsubj	_	_
+21	allir	allur	DET	Q-N	Case=Nom	23	nsubj	_	_
 22	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	23	aux	_	_
 23	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	19	advcl	_	_
 24	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	amod	_	_
@@ -211,7 +211,7 @@
 # text = Það væri allt of tilviljunarkennt hvar slóðir væru að myndast sem síðan væri farið að líta á sem vegi og leyfilegar leiðir til aksturs.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	5	cop	_	_
-3	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	4	obl	_	_
+3	allt	allur	DET	Q-A	Case=Acc	4	obl	_	_
 4	of	of	ADV	ADV	Degree=Pos	5	amod	_	_
 5	tilviljunarkennt	tilviljunarkenndur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	hvar	hvar	ADV	WADV	Degree=Pos	10	advmod	_	_
@@ -244,7 +244,7 @@
 4	,	,	PUNCT	,	_	3	punct	_	_
 5	út	út	ADP	RP	_	8	compound:prt	_	_
 6	frá	frá	ADP	P	_	8	case	_	_
-7	þeim	sá	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+7	þeim	sá	DET	D-D	Case=Dat	8	det	_	_
 8	dæmum	dæmi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
 9	sem	sem	SCONJ	C	_	15	mark	_	_
 10	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
@@ -254,10 +254,10 @@
 14	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	15	cop	_	_
 15	með	með	ADP	P	_	8	acl:relcl	_	_
 16	í	í	ADP	P	_	18	case	_	_
-17	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	18	det	_	_
+17	þeirri	sá	DET	D-D	Case=Dat	18	det	_	_
 18	umræðu	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
 19	,	,	PUNCT	,	_	18	punct	_	_
-20	hvaða	hvaða	DET	WD-N	Case=Nom|Number=Sing	21	det	_	_
+20	hvaða	hvaða	DET	WD-N	Case=Nom	21	det	_	_
 21	skilaboð	skilaboð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	27	obj	_	_
 22	verða	verða	AUX	RDPI	Mood=Ind|Tense=Pres	27	aux	_	_
 23	það	það	PRON	PRO-N	Case=Nom	27	nsubj	_	_
@@ -274,7 +274,7 @@
 34	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	35	aux	_	_
 35	slegið	slá	VERB	VAN	Tense=Past|VerbForm=Part	27	obl	_	_
 36	af	af	ADP	RP	_	35	compound:prt	_	_
-37	það	sá	DET	D-A	Case=Acc|PronType=Art	35	obl	_	_
+37	það	sá	DET	D-A	Case=Acc	35	obl	_	_
 38	sem	sem	SCONJ	C	_	42	mark	_	_
 39	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	42	nsubj	_	_
 40	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	42	aux	_	_
@@ -294,14 +294,14 @@
 54	ná	ná	VERB	VB	VerbForm=Inf	52	xcomp	_	_
 55	tökum	tak	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	54	obj	_	_
 56	á	á	ADP	P	_	58	case	_	_
-57	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	58	det	_	_
+57	þessum	þessi	DET	D-D	Case=Dat	58	det	_	_
 58	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	55	obl	_	SpaceAfter=No
 59	?	?	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4503791,.11
 # X_IDs = ID_missing_13 ; ID_missing_14 ; ID_missing_15
 # text = Hvaða skilaboð erum við að senda inn í þennan málaflokk ef lögin í heild sinni verða ekki látin taka gildi, ef engin vinna er að hefjast við kortagrunn eða afmörkun vega og vegslóða, hvar má þá keyra og hvar ekki, ef engin varúðarregla kemur í lög, hvaða skilaboð erum við að senda?
-1	Hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	2	det	_	_
+1	Hvaða	hvaða	DET	WD-A	Case=Acc	2	det	_	_
 2	skilaboð	skilaboð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
 3	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 4	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
@@ -309,7 +309,7 @@
 6	senda	senda	VERB	VB	VerbForm=Inf	0	root	_	_
 7	inn	inn	ADP	RP	_	10	compound:prt	_	_
 8	í	í	ADP	P	_	10	case	_	_
-9	þennan	þessi	DET	D-A	Case=Acc|PronType=Art	10	det	_	_
+9	þennan	þessi	DET	D-A	Case=Acc	10	det	_	_
 10	málaflokk	málaflokkur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 11	ef	ef	ADP	P	_	18	case	_	_
 12	lögin	lag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	18	nsubj	_	_
@@ -321,9 +321,9 @@
 18	látin	láta	VERB	VAN	Tense=Past|VerbForm=Part	6	obl	_	_
 19	taka	taka	VERB	VB	VerbForm=Inf	18	xcomp	_	_
 20	gildi	gildi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	6	punct	_	_
+21	,	,	PUNCT	,	_	19	punct	_	_
 22	ef	ef	ADP	P	_	27	case	_	_
-23	engin	enginn	DET	Q-N	Case=Nom|Degree=Pos	24	amod	_	_
+23	engin	enginn	DET	Q-N	Case=Nom	24	amod	_	_
 24	vinna	vinna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
 25	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
 26	að	að	PART	TO	_	27	mark	_	_
@@ -345,13 +345,13 @@
 42	ekki	ekki	ADV	NEG	_	39	conj	_	SpaceAfter=No
 43	,	,	PUNCT	,	_	6	punct	_	_
 44	ef	ef	ADP	P	_	47	case	_	_
-45	engin	enginn	DET	Q-N	Case=Nom|Degree=Pos	46	amod	_	_
+45	engin	enginn	DET	Q-N	Case=Nom	46	amod	_	_
 46	varúðarregla	varúðarregla	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	47	nsubj	_	_
 47	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	56	obl	_	_
 48	í	í	ADP	P	_	49	case	_	_
 49	lög	lag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	47	obl	_	SpaceAfter=No
-50	,	,	PUNCT	,	_	6	punct	_	_
-51	hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	52	det	_	_
+50	,	,	PUNCT	,	_	47	punct	_	_
+51	hvaða	hvaða	DET	WD-A	Case=Acc	52	det	_	_
 52	skilaboð	skilaboð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	56	obj	_	_
 53	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	56	cop	_	_
 54	við	ég	PRON	PRO-N	Case=Nom	56	nsubj	_	_

@@ -35,7 +35,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	7	advmod	_	_
 4	sem	sem	ADV	ADV	Degree=Pos	3	advmod	_	_
-5	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	7	amod	_	_
+5	allt	allur	DET	Q-N	Case=Nom	7	amod	_	_
 6	í	í	ADP	P	_	7	case	_	_
 7	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	7	punct	_	_
@@ -45,7 +45,7 @@
 # text = Ég hef þá trú að með samræðu og mýkt megi finna lausnir á hinum ýmsu málum.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	þá	sá	DET	D-A	Case=Acc|PronType=Art	4	det	_	_
+3	þá	sá	DET	D-A	Case=Acc	4	det	_	_
 4	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 5	að	að	SCONJ	C	_	11	mark	_	_
 6	með	með	ADP	P	_	7	case	_	_
@@ -56,8 +56,8 @@
 11	finna	finna	VERB	VB	VerbForm=Inf	4	ccomp	_	_
 12	lausnir	lausn	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
 13	á	á	ADP	P	_	16	case	_	_
-14	hinum	hinn	DET	D-D	Case=Dat|PronType=Art	16	det	_	_
-15	ýmsu	ýmis	DET	Q-D	Case=Dat|Degree=Pos	16	amod	_	_
+14	hinum	hinn	DET	D-D	Case=Dat	16	det	_	_
+15	ýmsu	ýmis	DET	Q-D	Case=Dat	16	amod	_	_
 16	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -124,7 +124,7 @@
 # sent_id = ALTHINGI_BO_2015_G-33-4934628,.8
 # X_ID = ID_missing_9
 # text = Hins vegar þykir mér málið ekki vera tilbúið fyrir meðferðina sem við þurfum að gefa því þar því að það eru svo margir lausir endar.
-1	Hins	hinn	DET	D-G	Case=Gen|PronType=Art	2	det	_	_
+1	Hins	hinn	DET	D-G	Case=Gen	2	det	_	_
 2	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	obl	_	_
 3	þykir	þykja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
@@ -146,7 +146,7 @@
 20	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	18	ccomp	_	_
 21	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
 22	svo	svo	ADV	ADV	Degree=Pos	23	advmod	_	_
-23	margir	margur	ADV	Q-N	Case=Nom|Degree=Pos	25	advmod	_	_
+23	margir	margur	ADV	Q-N	Case=Nom	25	advmod	_	_
 24	lausir	laus	ADJ	ADJ-N	Case=Nom|Degree=Pos	25	amod	_	_
 25	endar	endi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	20	obl	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	3	punct	_	_
@@ -180,7 +180,7 @@
 # text = Er það eitthvað sem maður bara gerir, kollvarpar hlutunum Gripið fram í: Í atvinnuveganefnd. svona svakalega?
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	0	root	_	_
+3	eitthvað	einhver	DET	Q-N	Case=Nom	0	root	_	_
 4	sem	sem	SCONJ	C	_	7	mark	_	_
 5	maður	maður	PRON	MAN-N	_	7	nsubj	_	_
 6	bara	bara	ADV	FP	Degree=Pos	7	advmod	_	_

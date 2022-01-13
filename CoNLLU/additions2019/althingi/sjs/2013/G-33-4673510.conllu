@@ -6,7 +6,7 @@
 3	.	.	PUNCT	.	_	2	punct	_	_
 4	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 5	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-6	þeim	sá	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+6	þeim	sá	DET	D-D	Case=Dat	8	det	_	_
 7	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	8	amod	_	_
 8	þingmönnum	þingmaður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	iobj	_	_
 9	sem	sem	SCONJ	C	_	10	mark	_	_
@@ -35,7 +35,7 @@
 4	eða	eða	CCONJ	CONJ	_	5	cc	_	_
 5	greiningu	greining	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	conj	_	_
 6	á	á	ADP	P	_	8	case	_	_
-7	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+7	þessum	þessi	DET	D-D	Case=Dat	8	det	_	_
 8	hópi	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
 9	get	geta	AUX	MDPI	Mood=Ind|Tense=Pres	12	aux	_	_
 10	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
@@ -60,7 +60,7 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4673510,.3
 # X_ID = ID_missing_4
 # text = Það sem er hægt að draga í sundur er hver hluti lánanna var til að fjármagna íbúðakaup.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	16	nsubj	_	_
+1	Það	sá	DET	D-N	Case=Nom	16	nsubj	_	_
 2	sem	sem	SCONJ	C	_	6	mark	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 4	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
@@ -87,7 +87,7 @@
 3	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	4	advmod	_	_
 4	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	0	root	_	_
 5	á	á	ADP	P	_	7	case	_	_
-6	þeim	sá	DET	D-D	Case=Dat|PronType=Art	7	det	_	_
+6	þeim	sá	DET	D-D	Case=Dat	7	det	_	_
 7	grunni	grunnur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	_
 9	geri	gera	VERB	DOPI	Mood=Ind|Tense=Pres	12	ccomp	_	_
@@ -122,11 +122,11 @@
 11	til	til	ADP	P	_	13	case	_	_
 12	að	að	PART	TO	_	13	mark	_	_
 13	aðgreina	aðgreina	VERB	VB	VerbForm=Inf	10	obl	_	_
-14	þann	sá	DET	D-A	Case=Acc|PronType=Art	15	det	_	_
+14	þann	sá	DET	D-A	Case=Acc	15	det	_	_
 15	hluta	hluti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
 16	lánanna	lán	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	nmod:poss	_	_
 17	frá	frá	ADP	P	_	18	case	_	_
-18	hinum	hinn	DET	D-D	Case=Dat|PronType=Art	13	obl	_	SpaceAfter=No
+18	hinum	hinn	DET	D-D	Case=Dat	13	obl	_	SpaceAfter=No
 19	,	,	PUNCT	,	_	18	punct	_	_
 20	því	það	PRON	PRO-D	Case=Dat	10	obl	_	_
 21	þarna	þarna	ADV	ADV	Degree=Pos	25	advmod	_	_
@@ -155,7 +155,7 @@
 44	til	til	ADP	P	_	45	case	_	_
 45	bílakaupa	bílakaup	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	43	obl	_	_
 46	eða	eða	CCONJ	CONJ	_	49	cc	_	_
-47	einhverra	einhver	DET	Q-G	Case=Gen|Degree=Pos	49	amod	_	_
+47	einhverra	einhver	DET	Q-G	Case=Gen	49	amod	_	_
 48	annarra	annar	PRON	OTHER-G	Case=Gen	49	det	_	_
 49	hluta	hlutur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	45	conj	_	SpaceAfter=No
 50	.	.	PUNCT	.	_	3	punct	_	_
@@ -164,7 +164,7 @@
 # X_ID = ID_missing_7
 # text = Í þeim tilvikum sem íbúðakaup hafa farið fram innan tilskilinna tímamarka sem skilgreind eru í lögum og gilda um það hvaða lán stofna rétt til greiðslu vaxtabóta, flokkast þau þar með.
 1	Í	í	ADP	P	_	3	case	_	_
-2	þeim	sá	DET	D-D	Case=Dat|PronType=Art	3	det	_	_
+2	þeim	sá	DET	D-D	Case=Dat	3	det	_	_
 3	tilvikum	tilvik	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	29	obl	_	_
 4	sem	sem	SCONJ	C	_	7	mark	_	_
 5	íbúðakaup	íbúðakaup	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	nsubj	_	_
@@ -183,7 +183,7 @@
 18	gilda	gilda	VERB	VBPI	Mood=Ind|Tense=Pres	13	conj	_	_
 19	um	um	ADP	P	_	20	case	_	_
 20	það	það	PRON	PRO-A	Case=Acc	18	obl	_	_
-21	hvaða	hvaða	DET	WD-N	Case=Nom|Number=Sing	22	det	_	_
+21	hvaða	hvaða	DET	WD-N	Case=Nom	22	det	_	_
 22	lán	lán	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	23	obj	_	_
 23	stofna	stofna	VERB	VBPI	Mood=Ind|Tense=Pres	20	xcomp	_	_
 24	rétt	réttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obj	_	_
@@ -220,13 +220,13 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4673510,.8
 # X_ID = ID_missing_9
 # text = Það sem hins vegar liggur nokkuð ljóst fyrir er að hér er yfirleitt um yngra fólk að ræða.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+1	Það	sá	DET	D-N	Case=Nom	0	root	_	_
 2	sem	sem	SCONJ	C	_	5	mark	_	_
-3	hins	hinn	DET	D-G	Case=Gen|PronType=Art	4	det	_	_
+3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
 4	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
 5	liggur	liggja	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
-6	nokkuð	nokkur	DET	Q-A	Case=Acc|Degree=Pos	5	amod	_	_
-7	ljóst	ljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
+6	nokkuð	nokkur	DET	Q-A	Case=Acc	7	obl	_	_
+7	ljóst	ljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
 8	fyrir	fyrir	ADP	RP	_	5	compound:prt	_	_
 9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 10	að	að	SCONJ	C	_	17	mark	_	_
@@ -262,7 +262,7 @@
 6	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	5	parataxis	_	_
 7	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 8	með	með	ADP	P	_	11	case	_	_
-9	nokkuð	nokkur	DET	Q-A	Case=Acc|Degree=Pos	10	obl	_	_
+9	nokkuð	nokkur	DET	Q-A	Case=Acc	10	obl	_	_
 10	óyggjandi	óyggjandi	ADJ	ADJ-D	Case=Dat|Degree=Pos	11	amod	_	_
 11	vissu	vissa	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 12	að	að	SCONJ	C	_	14	mark	_	_

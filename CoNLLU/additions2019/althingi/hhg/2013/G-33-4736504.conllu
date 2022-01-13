@@ -9,7 +9,7 @@
 6	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
 7	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	iobj	_	_
 8	fyrir	fyrir	ADP	P	_	11	case	_	_
-9	þessi	þessi	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+9	þessi	þessi	DET	D-A	Case=Acc	11	det	_	_
 10	góðu	góður	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	amod	_	_
 11	viðbrögð	viðbragð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	5	punct	_	_
@@ -21,7 +21,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
 4	bara	bara	ADV	FP	Degree=Pos	5	advmod	_	_
-5	það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+5	það	sá	DET	D-N	Case=Nom	0	root	_	_
 6	sem	sem	SCONJ	C	_	9	mark	_	_
 7	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
 8	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
@@ -91,7 +91,7 @@
 11	málin	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obj	_	_
 12	kannski	kannski	ADV	ADV	Degree=Pos	9	advmod	_	_
 13	með	með	ADP	P	_	15	case	_	_
-14	þeim	sá	DET	D-D	Case=Dat|PronType=Art	15	det	_	_
+14	þeim	sá	DET	D-D	Case=Dat	15	det	_	_
 15	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
 16	að	að	SCONJ	C	_	19	mark	_	_
 17	þau	það	PRON	PRO-N	Case=Nom	19	nsubj	_	_
@@ -110,7 +110,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4736504,.4
 # X_ID = ID_missing_5
 # text = Sú leið sem við neyðumst til að fara undir núverandi stjórnarskrá er afleit.
-1	Sú	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Sú	sá	DET	D-N	Case=Nom	2	det	_	_
 2	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
 3	sem	sem	SCONJ	C	_	5	mark	_	_
 4	við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -133,7 +133,7 @@
 3	í	í	ADP	P	_	4	case	_	_
 4	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 5	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
-6	eina	einn	DET	ONE-A	Case=Acc|Number=Sing	7	det	_	_
+6	eina	einn	DET	ONE-A	Case=Acc	7	det	_	_
 7	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 8	til	til	ADP	P	_	10	case	_	_
 9	að	að	PART	TO	_	10	mark	_	_
@@ -161,7 +161,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4736504,.6
 # X_ID = ID_missing_8
 # text = Þetta þykir mér og okkar flokki mjög óeðlilegt fyrirkomulag en því miður það eina sem við höfum.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	obl	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	2	obl	_	_
 2	þykir	þykja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 4	og	og	CCONJ	CONJ	_	6	cc	_	_
@@ -173,8 +173,8 @@
 10	en	en	CCONJ	CONJ	_	13	cc	_	_
 11	því	það	PRON	PRO-D	Case=Dat	12	obl	_	_
 12	miður	lítt	ADV	ADVR	Degree=Cmp	13	advmod	_	_
-13	það	sá	DET	D-N	Case=Nom|PronType=Art	9	ccomp	_	_
-14	eina	einn	DET	ONE-N	Case=Nom|Number=Sing	13	det	_	_
+13	það	sá	DET	D-N	Case=Nom	9	ccomp	_	_
+14	eina	einn	DET	ONE-N	Case=Nom	13	det	_	_
 15	sem	sem	SCONJ	C	_	17	mark	_	_
 16	við	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
 17	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	SpaceAfter=No
@@ -183,7 +183,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4736504,.7
 # X_IDs = ID_missing_9 ; ID_missing_10
 # text = Allar leiðir til að koma svona málum í þjóðaratkvæðagreiðslu með skilvirkari hætti, svo sem við mótmæli einhverrar prósentu kjósenda gegn lögum til að knýja fram þjóðaratkvæðagreiðslu, eru akkúrat það sem við mundum helst vilja og það væri mun eðlilegri farvegur.
-1	Allar	allur	DET	Q-N	Case=Nom|Degree=Pos	2	amod	_	_
+1	Allar	allur	DET	Q-N	Case=Nom	2	amod	_	_
 2	leiðir	leið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	31	nsubj	_	_
 3	til	til	ADP	P	_	5	case	_	_
 4	að	að	PART	TO	_	5	mark	_	_
@@ -200,7 +200,7 @@
 15	sem	sem	SCONJ	C	_	14	fixed	_	_
 16	við	við	ADP	P	_	17	case	_	_
 17	mótmæli	mótmæli	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	advcl	_	_
-18	einhverrar	einhver	DET	Q-G	Case=Gen|Degree=Pos	19	amod	_	_
+18	einhverrar	einhver	DET	Q-G	Case=Gen	19	amod	_	_
 19	prósentu	prósenta	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	nmod:poss	_	_
 20	kjósenda	kjósandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	nmod:poss	_	_
 21	gegn	gegn	ADP	P	_	22	case	_	_
@@ -213,7 +213,7 @@
 28	,	,	PUNCT	,	_	31	punct	_	_
 29	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
 30	akkúrat	akkúrat	ADV	ADV	Degree=Pos	31	advmod	_	_
-31	það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+31	það	sá	DET	D-N	Case=Nom	0	root	_	_
 32	sem	sem	SCONJ	C	_	36	mark	_	_
 33	við	ég	PRON	PRO-N	Case=Nom	36	nsubj	_	_
 34	mundum	munu	AUX	MDDS	Mood=Sub|Tense=Past	36	aux	_	_
@@ -242,10 +242,10 @@
 10	þús.	þúsund	NUM	NUM-N	Case=Nom	11	nummod	_	_
 11	undirskriftir	undirskrift	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	nsubj	_	_
 12	gegn	gegn	ADP	P	_	14	case	_	_
-13	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	14	det	_	_
+13	þessu	þessi	DET	D-D	Case=Dat	14	det	_	_
 14	frumvarpi	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 15	af	af	ADP	P	_	19	case	_	_
-16	einni	einn	DET	ONE-D	Case=Dat|Number=Sing	19	amod	_	_
+16	einni	einn	DET	ONE-D	Case=Dat	19	amod	_	_
 17	eða	eða	CCONJ	CONJ	_	16	amod	_	_
 18	annarri	annar	PRON	OTHER-D	Case=Dat	16	amod	_	_
 19	ástæðu	ástæða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
@@ -254,7 +254,7 @@
 22	augum	auga	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	20	obl	_	_
 23	uppi	uppi	ADV	ADV	Degree=Pos	20	advmod	_	_
 24	að	að	SCONJ	C	_	28	mark	_	_
-25	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	26	det	_	_
+25	þetta	þessi	DET	D-N	Case=Nom	26	det	_	_
 26	frumvarp	frumvarp	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	nsubj	_	_
 27	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	28	aux	_	_
 28	farið	fara	VERB	VBN	Tense=Past|VerbForm=Part	20	ccomp	_	_
@@ -283,17 +283,17 @@
 13	því	það	PRON	PRO-D	Case=Dat	10	obl	_	_
 14	að	að	PART	TO	_	15	mark	_	_
 15	lýðræðisvæða	lýðræðisvæða	VERB	VB	VerbForm=Inf	13	xcomp	_	_
-16	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	17	det	_	_
+16	þetta	þessi	DET	D-A	Case=Acc	17	det	_	_
 17	frumvarp	frumvarp	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obj	_	SpaceAfter=No
 18	,	,	PUNCT	,	_	17	punct	_	_
 19	að	að	ADV	P	_	5	advmod	_	_
 20	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	SpaceAfter=No
 21	,	,	PUNCT	,	_	20	punct	_	_
 22	með	með	ADP	P	_	24	case	_	_
-23	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	24	det	_	_
+23	þetta	þessi	DET	D-A	Case=Acc	24	det	_	_
 24	frumvarp	frumvarp	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
 25	og	og	CCONJ	CONJ	_	27	cc	_	_
-26	öll	allur	DET	Q-N	Case=Nom|Degree=Pos	27	amod	_	_
+26	öll	allur	DET	Q-N	Case=Nom	27	amod	_	_
 27	frumvörp	frumvarp	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	24	conj	_	SpaceAfter=No
 28	,	,	PUNCT	,	_	5	punct	_	_
 29	það	það	PRON	PRO-N	Case=Nom	30	nsubj	_	_
@@ -309,7 +309,7 @@
 1	Ef	ef	ADP	P	_	3	case	_	_
 2	þjóðaratkvæðagreiðsla	þjóðaratkvæðagreiðsla	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	17	obl	_	_
-4	einhver	einhver	DET	Q-A	Case=Acc|Degree=Pos	7	amod	_	_
+4	einhver	einhver	DET	Q-A	Case=Acc	7	amod	_	_
 5	meint	meina	VERB	VAN	Tense=Past|VerbForm=Part	7	amod	_	_
 6	neikvæð	neikvæður	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
 7	áhrif	áhrif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	SpaceAfter=No
@@ -324,7 +324,7 @@
 16	samt	samt	ADV	ADV	Degree=Pos	17	advmod	_	_
 17	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 18	að	að	SCONJ	C	_	23	mark	_	_
-19	sá	sá	DET	D-N	Case=Nom|PronType=Art	20	det	_	_
+19	sá	sá	DET	D-N	Case=Nom	20	det	_	_
 20	þrýstingur	þrýstingur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	nsubj	_	_
 21	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	23	cop	_	_
 22	til	til	ADP	P	_	23	case	_	_

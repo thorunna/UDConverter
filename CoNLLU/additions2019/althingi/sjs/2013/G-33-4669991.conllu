@@ -16,7 +16,7 @@
 13	blanda	blanda	VERB	VB	VerbForm=Inf	5	ccomp	_	_
 14	mér	ég	PRON	PRO-D	Case=Dat	13	obj	_	_
 15	í	í	ADP	P	_	16	case	_	_
-16	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	13	obl	_	_
+16	þetta	þessi	DET	D-A	Case=Acc	13	obl	_	_
 17	til	til	ADP	P	_	20	case	_	_
 18	þess	það	PRON	PRO-G	Case=Gen	20	nmod	_	_
 19	að	að	PART	TO	_	20	mark	_	_
@@ -52,7 +52,7 @@
 49	og	og	CCONJ	CONJ	_	50	cc	_	_
 50	lánasjóðnum	lánasjóður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	48	conj	_	_
 51	að	að	SCONJ	C	_	61	mark	_	_
-52	það	sá	DET	D-N	Case=Nom|PronType=Art	53	det	_	_
+52	það	sá	DET	D-N	Case=Nom	53	det	_	_
 53	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	61	nsubj	_	_
 54	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	61	cop	_	_
 55	alveg	alveg	ADV	ADV	Degree=Pos	56	amod	_	_
@@ -79,7 +79,7 @@
 76	segja	segja	VERB	VB	VerbForm=Inf	74	amod	_	SpaceAfter=No
 77	,	,	PUNCT	,	_	76	punct	_	_
 78	þegar	þegar	ADP	P	_	85	case	_	_
-79	sá	sá	DET	D-N	Case=Nom|PronType=Art	85	nsubj	_	_
+79	sá	sá	DET	D-N	Case=Nom	85	nsubj	_	_
 80	sem	sem	SCONJ	C	_	82	mark	_	_
 81	hér	hér	ADV	ADV	Degree=Pos	82	advmod	_	_
 82	talar	tala	VERB	VBPI	Mood=Ind|Tense=Pres	79	acl:relcl	_	_
@@ -91,10 +91,10 @@
 88	stóðum	standa	VERB	VBDI	Mood=Ind|Tense=Past	85	conj	_	_
 89	stundum	stund	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	88	obl	_	_
 90	í	í	ADP	P	_	92	case	_	_
-91	ýmsum	ýmis	DET	Q-D	Case=Dat|Degree=Pos	92	amod	_	_
+91	ýmsum	ýmis	DET	Q-D	Case=Dat	92	amod	_	_
 92	slagsmálum	slagsmál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	88	obl	_	_
 93	af	af	ADP	P	_	95	case	_	_
-94	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	95	det	_	_
+94	þessu	þessi	DET	D-D	Case=Dat	95	det	_	_
 95	tagi	tag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	92	obl	_	SpaceAfter=No
 96	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -108,7 +108,7 @@
 5	fremst	harla	ADV	ADVS	Degree=Sup	3	conj	_	_
 6	að	að	PART	TO	_	7	mark	_	_
 7	draga	draga	VERB	VB	VerbForm=Inf	0	root	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	7	obj	_	_
+8	þetta	þessi	DET	D-A	Case=Acc	7	obj	_	_
 9	hér	hér	ADV	ADV	Degree=Pos	7	advmod	_	_
 10	fram	fram	ADP	RP	_	7	compound:prt	_	_
 11	af	af	ADP	P	_	12	case	_	_
@@ -139,7 +139,7 @@
 36	í	í	ADP	P	_	37	case	_	_
 37	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	28	obl	_	_
 38	af	af	ADP	P	_	40	case	_	_
-39	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	40	det	_	_
+39	þessu	þessi	DET	D-D	Case=Dat	40	det	_	_
 40	tagi	tag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	7	punct	_	_
 
@@ -149,7 +149,7 @@
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	7	mark	_	_
-4	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	7	nsubj	_	_
+4	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
 5	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	7	cop	_	_
 6	mjög	mjög	ADV	ADV	Degree=Pos	7	amod	_	_
 7	tæpt	tæpur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	SpaceAfter=No
@@ -161,8 +161,8 @@
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	á	á	ADP	P	_	4	case	_	_
-4	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	0	root	_	_
-5	sá	sá	DET	D-N	Case=Nom|PronType=Art	6	det	_	_
+4	þessu	þessi	DET	D-D	Case=Dat	0	root	_	_
+5	sá	sá	DET	D-N	Case=Nom	6	det	_	_
 6	ljóður	ljóður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -171,7 +171,7 @@
 # text = Sennilega hefði meiri hlutinn ekki þurft að sætta sig við minna en kannski 2 þús. kr. lækkun á þessu innritunargjaldi, ekki fara alveg svona langt í hækkuninni, þá hefði málið sloppið.
 1	Sennilega	sennilega	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	6	aux	_	_
-3	meiri	mikill	DET	QR-N	Case=Nom|Degree=Pos	4	amod	_	_
+3	meiri	mikill	DET	QR-N	Case=Nom	4	amod	_	_
 4	hlutinn	hluti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
 5	ekki	ekki	ADV	NEG	_	6	advmod	_	_
 6	þurft	þurfa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -187,7 +187,7 @@
 16	kr.	króna	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	17	nmod:poss	_	_
 17	lækkun	lækkun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
 18	á	á	ADP	P	_	20	case	_	_
-19	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	20	det	_	_
+19	þessu	þessi	DET	D-D	Case=Dat	20	det	_	_
 20	innritunargjaldi	innritunargjald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
 21	,	,	PUNCT	,	_	20	punct	_	_
 22	ekki	ekki	ADV	NEG	_	23	advmod	_	_
@@ -197,7 +197,7 @@
 26	langt	langt	ADV	ADV	Degree=Pos	24	advmod	_	_
 27	í	í	ADP	P	_	28	case	_	_
 28	hækkuninni	hækkun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
-29	,	,	PUNCT	,	_	6	punct	_	_
+29	,	,	PUNCT	,	_	23	punct	_	_
 30	þá	þá	ADV	ADV	Degree=Pos	33	advmod	_	_
 31	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	33	aux	_	_
 32	málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	33	nsubj	_	_
@@ -214,7 +214,7 @@
 5	það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 6	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	7	aux	_	_
 7	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	2	ccomp	_	_
-8	nokkurn	nokkur	DET	Q-A	Case=Acc|Degree=Pos	9	amod	_	_
+8	nokkurn	nokkur	DET	Q-A	Case=Acc	9	amod	_	_
 9	veginn	vegur	ADV	N-A	Case=Acc|Definite=Ind|Number=Sing	7	advmod	_	_
 10	fyrir	fyrir	ADP	P	_	11	case	_	_
 11	vind	vindur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
@@ -228,7 +228,7 @@
 19	þús.	þúsund	NUM	NUM-N	Case=Nom	20	nummod	_	_
 20	kr.	króna	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	18	conj	_	_
 21	eða	eða	CCONJ	CONJ	_	22	cc	_	_
-22	eitthvað	einhver	DET	Q-N	Case=Nom|Degree=Pos	20	conj	_	_
+22	eitthvað	einhver	DET	Q-N	Case=Nom	20	conj	_	_
 23	svoleiðis	svoleiðis	ADJ	ADJ-N	Case=Nom|Degree=Pos	22	amod	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -240,20 +240,20 @@
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	4	advmod	_	_
 4	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 5	að	að	SCONJ	C	_	9	mark	_	_
-6	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	9	nsubj	_	_
+6	þetta	þessi	DET	D-N	Case=Nom	9	nsubj	_	_
 7	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	9	cop	_	_
 8	hreinir	hreinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
 9	smámunir	smámunir	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	ccomp	_	_
 10	og	og	CCONJ	CONJ	_	13	cc	_	_
-11	þessar	þessi	DET	D-N	Case=Nom|PronType=Art	12	det	_	_
+11	þessar	þessi	DET	D-N	Case=Nom	12	det	_	_
 12	fjárhæðir	fjárhæð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	_
 13	skipti	skipta	VERB	VBPS	Mood=Sub|Tense=Pres	9	conj	_	_
 14	ekki	ekki	ADV	NEG	_	13	advmod	_	_
-15	miklu	mikill	DET	Q-D	Case=Dat|Degree=Pos	13	obj	_	_
+15	miklu	mikill	DET	Q-D	Case=Dat	13	obj	_	_
 16	til	til	ADP	RP	_	13	compound:prt	_	_
 17	eða	eða	CCONJ	CONJ	_	18	cc	_	_
 18	frá	frá	ADP	RP	_	16	conj	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	4	punct	_	_
+19	,	,	PUNCT	,	_	16	punct	_	_
 20	en	en	CCONJ	CONJ	_	22	cc	_	_
 21	rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	22	nsubj	_	_
 22	skal	skulu	VERB	MDPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
@@ -285,10 +285,10 @@
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
 4	upp	upp	ADP	RP	_	7	compound:prt	_	_
 5	fyrir	fyrir	ADP	P	_	7	case	_	_
-6	þau	sá	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
+6	þau	sá	DET	D-A	Case=Acc	7	det	_	_
 7	mörk	mark	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
 8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
-9	sú	sá	DET	D-N	Case=Nom|PronType=Art	10	det	_	_
+9	sú	sá	DET	D-N	Case=Nom	10	det	_	_
 10	gjaldtaka	gjaldtaka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
 11	í	í	ADP	P	_	13	case	_	_
 12	fyrsta	fyrstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	13	amod	_	_
@@ -311,14 +311,14 @@
 29	lengur	lengi	ADV	ADVR	Degree=Cmp	30	advmod	_	_
 30	innheimta	innheimta	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	ccomp	_	_
 31	á	á	ADP	P	_	33	case	_	_
-32	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	33	det	_	_
+32	þessum	þessi	DET	D-D	Case=Dat	33	det	_	_
 33	kostnaði	kostnaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obl	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4669991,.10
 # X_ID = ID_missing_14
 # text = Þessu tvennu má ekki blanda saman.
-1	Þessu	þessi	DET	D-D	Case=Dat|PronType=Art	5	obj	_	_
+1	Þessu	þessi	DET	D-D	Case=Dat	5	obj	_	_
 2	tvennu	tvennur	ADJ	ADJ-D	Case=Dat|Degree=Pos	1	amod	_	_
 3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
 4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
@@ -333,7 +333,7 @@
 2	glímum	glíma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	oft	oft	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	við	við	ADP	P	_	6	case	_	_
-5	þessi	þessi	DET	D-A	Case=Acc|PronType=Art	6	det	_	_
+5	þessi	þessi	DET	D-A	Case=Acc	6	det	_	_
 6	landamæri	landamæri	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
 7	annars	annar	PRON	OTHER-G	Case=Gen	8	det	_	_
 8	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
@@ -351,16 +351,16 @@
 7	ýki	ýkja	VERB	VBPS	Mood=Sub|Tense=Pres	2	obl	_	_
 8	heldur	heldur	ADV	ADVR	Degree=Cmp	7	advmod	_	_
 9	upp	upp	ADP	RP	_	7	compound:prt	_	_
-10	ýmsan	ýmis	DET	Q-A	Case=Acc|Degree=Pos	11	amod	_	_
+10	ýmsan	ýmis	DET	Q-A	Case=Acc	11	amod	_	_
 11	kostnað	kostnaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
 12	sem	sem	SCONJ	C	_	14	mark	_	_
 13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
 14	settur	setja	VERB	VAN	Tense=Past|VerbForm=Part	11	acl:relcl	_	_
 15	inn	inn	ADP	RP	_	17	compound:prt	_	_
 16	í	í	ADP	P	_	17	case	_	_
-17	þjónustugjöld	þjónustugjald	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	obl	_	_
-18	o.s.frv.	o.s.frv.	CCONJ	CONJ	_	14	obl	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	2	punct	_	_
+17	þjónustugjöld	þjónustugjald	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
+18	o.s.frv.	o.s.frv.	CCONJ	CONJ	_	17	conj	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	17	punct	_	_
 20	en	en	CCONJ	CONJ	_	22	cc	_	_
 21	það	það	PRON	PRO-A	Case=Acc	22	obl	_	_
 22	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
@@ -372,14 +372,14 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4669991,.13
 # X_IDs = ID_missing_18 ; ID_missing_19
 # text = Þetta á að endurspegla raunkostnað því að allt sem ekki gerir það og er umfram það hvar sem það er í gjaldtöku af þessu tagi er undir fölsku flaggi, þá er það Forseti hringir. skattur en ekki þjónustugjöld eða kostnaðargjöld.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
 4	endurspegla	endurspegla	VERB	VB	VerbForm=Inf	2	xcomp	_	_
 5	raunkostnað	raunkostnaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
 6	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 7	að	að	SCONJ	C	_	29	mark	_	_
-8	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	29	nsubj	_	_
+8	allt	allur	DET	Q-N	Case=Nom	29	nsubj	_	_
 9	sem	sem	SCONJ	C	_	11	mark	_	_
 10	ekki	ekki	ADV	NEG	_	11	advmod	_	_
 11	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	8	acl:relcl	_	_
@@ -395,7 +395,7 @@
 21	í	í	ADV	P	_	19	advmod	_	_
 22	gjaldtöku	gjaldtaka	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
 23	af	af	ADP	P	_	25	case	_	_
-24	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	25	det	_	_
+24	þessu	þessi	DET	D-D	Case=Dat	25	det	_	_
 25	tagi	tag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
 26	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	29	cop	_	_
 27	undir	undir	ADP	P	_	29	case	_	_

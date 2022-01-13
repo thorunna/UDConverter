@@ -4,7 +4,7 @@
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
-4	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	7	nsubj	_	_
+4	Þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
 5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 6	góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
 7	spurning	spurning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
@@ -85,7 +85,7 @@
 3	að	að	PART	TO	_	4	mark	_	_
 4	tala	tala	VERB	VB	VerbForm=Inf	0	root	_	_
 5	um	um	ADP	P	_	8	case	_	_
-6	þær	sá	DET	D-A	Case=Acc|PronType=Art	8	det	_	_
+6	þær	sá	DET	D-A	Case=Acc	8	det	_	_
 7	opinberu	opinber	ADJ	ADJ-A	Case=Acc|Degree=Pos	8	amod	_	_
 8	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	8	punct	_	_
@@ -123,7 +123,7 @@
 11	nú	nú	ADV	ADV	Degree=Pos	8	advmod	_	_
 12	þegar	þegar	ADV	ADV	Degree=Pos	11	advmod	_	_
 13	með	með	ADP	P	_	15	case	_	_
-14	þær	sá	DET	D-A	Case=Acc|PronType=Art	15	det	_	_
+14	þær	sá	DET	D-A	Case=Acc	15	det	_	_
 15	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	SpaceAfter=No
 16	?	?	PUNCT	.	_	2	punct	_	_
 
@@ -150,7 +150,7 @@
 3	síðan	síðan	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	að	að	PART	TO	_	5	mark	_	_
 5	gera	gera	VERB	DO	VerbForm=Inf	2	xcomp	_	_
-6	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	5	obj	_	_
+6	allt	allur	DET	Q-A	Case=Acc	5	obj	_	_
 7	til	til	ADP	P	_	9	case	_	_
 8	að	að	PART	TO	_	9	advcl	_	_
 9	örva	örva	VERB	VB	VerbForm=Inf	5	obl	_	_
@@ -165,7 +165,7 @@
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 4	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	2	ccomp	_	_
 5	með	með	ADP	P	_	7	case	_	_
-6	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	7	det	_	_
+6	þeirri	sá	DET	D-D	Case=Dat	7	det	_	_
 7	stjórnarstefnu	stjórnarstefna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 8	sem	sem	SCONJ	C	_	10	mark	_	_
 9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
@@ -181,7 +181,7 @@
 19	heimilin	heimili	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obl	_	_
 20	í	í	ADP	P	_	21	case	_	_
 21	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	2	punct	_	_
+22	,	,	PUNCT	,	_	19	punct	_	_
 23	það	það	PRON	PRO-N	Case=Nom	24	nsubj	_	_
 24	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 25	ekki	ekki	ADV	NEG	_	24	advmod	_	_
@@ -227,7 +227,7 @@
 5	að	að	PART	TO	_	6	mark	_	_
 6	breyta	breyta	VERB	VB	VerbForm=Inf	4	xcomp	_	_
 7	frá	frá	ADP	P	_	9	case	_	_
-8	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
+8	þeirri	sá	DET	D-D	Case=Dat	9	det	_	_
 9	stjórnarstefnu	stjórnarstefna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 10	sem	sem	SCONJ	C	_	11	mark	_	_
 11	nú	nú	ADV	ADV	Degree=Pos	9	acl:relcl	_	_
@@ -390,11 +390,11 @@
 1	Mín	minn	PRON	PRO-N	Case=Nom	2	nmod:poss	_	_
 2	ósk	ósk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-4	sú	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+4	sú	sá	DET	D-N	Case=Nom	0	root	_	_
 5	að	að	SCONJ	C	_	7	mark	_	_
 6	við	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 7	notum	nota	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
-8	þær	sá	DET	D-A	Case=Acc|PronType=Art	9	det	_	_
+8	þær	sá	DET	D-A	Case=Acc	9	det	_	_
 9	heimildir	heimild	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obj	_	_
 10	sem	sem	SCONJ	C	_	12	mark	_	_
 11	við	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
@@ -407,13 +407,13 @@
 18	að	að	PART	TO	_	19	mark	_	_
 19	fara	fara	VERB	VB	VerbForm=Inf	7	obl	_	_
 20	í	í	ADP	P	_	21	case	_	_
-21	einkaframkvæmdir	einkaframkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	27	obl	_	_
+21	einkaframkvæmdir	einkaframkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obl	_	_
 22	og	og	CCONJ	CONJ	_	27	cc	_	_
 23	ekki	ekki	ADV	NEG	_	24	advmod	_	_
 24	síður	varla	ADV	ADVR	Degree=Cmp	27	advmod	_	_
 25	í	í	ADP	P	_	27	case	_	_
 26	opinberar	opinber	ADJ	ADJ-A	Case=Acc|Degree=Pos	27	amod	_	_
-27	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obl	_	SpaceAfter=No
+27	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	21	conj	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = ALTHINGI_TKG_2011_G-33-4539510,.16
@@ -433,7 +433,7 @@
 2	þurfa	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
 4	fá	fá	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-5	eitthvert	einhver	DET	Q-A	Case=Acc|Degree=Pos	6	amod	_	_
+5	eitthvert	einhver	DET	Q-A	Case=Acc	6	amod	_	_
 6	svar	svar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	2	punct	_	_
 

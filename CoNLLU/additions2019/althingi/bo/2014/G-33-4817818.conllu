@@ -20,7 +20,7 @@
 6	átt	átt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 7	en	en	CCONJ	CONJ	_	13	cc	_	_
 8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-9	engu	enginn	DET	Q-D	Case=Dat|Degree=Pos	11	obl	_	_
+9	engu	enginn	DET	Q-D	Case=Dat	11	obl	_	_
 10	að	að	ADP	P	_	9	case	_	_
 11	síður	varla	ADV	ADVR	Degree=Cmp	13	advmod	_	_
 12	mjög	mjög	ADV	ADV	Degree=Pos	13	amod	_	_
@@ -47,7 +47,7 @@
 # text = Ég kom ekkert inn á menntamálin í ræðu minni.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	2	obl	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	2	obl	_	_
 4	inn	inn	ADP	RP	_	6	compound:prt	_	_
 5	á	á	ADP	P	_	6	case	_	_
 6	menntamálin	menntamál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
@@ -59,12 +59,12 @@
 # sent_id = ALTHINGI_BO_2014_G-33-4817818,.5
 # X_ID = ID_missing_6
 # text = Þetta með að hleypa ekki þessum elstu nemendum, eða ungmennum eða hvað þau hafa verið kölluð, inn í framhaldsskólana lengur ég hef ekki séð neinar greiningar á því að það sé óskynsamlegt.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	26	dep	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	26	dep	_	_
 2	með	með	ADP	P	_	4	case	_	_
 3	að	að	PART	TO	_	4	mark	_	_
 4	hleypa	hleypa	VERB	VB	VerbForm=Inf	1	obl	_	_
 5	ekki	ekki	ADV	NEG	_	4	advmod	_	_
-6	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+6	þessum	þessi	DET	D-D	Case=Dat	8	det	_	_
 7	elstu	gamall	ADJ	ADJS-D	Case=Dat|Degree=Sup	8	amod	_	_
 8	nemendum	nemandi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	8	punct	_	_
@@ -85,7 +85,7 @@
 24	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	26	aux	_	_
 25	ekki	ekki	ADV	NEG	_	26	advmod	_	_
 26	séð	sjá	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-27	neinar	neinn	DET	Q-A	Case=Acc|Degree=Pos	28	amod	_	_
+27	neinar	neinn	DET	Q-A	Case=Acc	28	amod	_	_
 28	greiningar	greining	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obj	_	_
 29	á	á	ADP	P	_	30	case	_	_
 30	því	það	PRON	PRO-D	Case=Dat	28	obl	_	_
@@ -154,7 +154,7 @@
 54	400	400	NUM	NUM-N	Case=Nom	56	nummod	_	_
 55	þús.	þúsund	NUM	NUM-N	Case=Nom	56	nummod	_	_
 56	kr.	króna	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	49	acl:relcl	_	_
-57	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	59	nsubj	_	_
+57	Þetta	þessi	DET	D-N	Case=Nom	59	nsubj	_	_
 58	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	59	cop	_	_
 59	því	það	PRON	PRO-D	Case=Dat	2	conj	_	OriginalHead=0
 60	til	til	ADP	P	_	61	case	_	_

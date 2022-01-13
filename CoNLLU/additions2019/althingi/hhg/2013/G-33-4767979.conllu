@@ -22,7 +22,7 @@
 5	þús.	þúsund	NUM	NUM-A	Case=Acc	4	nummod	_	_
 6	undirskrifara	undirskrifari	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	conj	_	_
 7	hvort	hvort	SCONJ	WQ	_	9	mark	_	_
-8	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	9	nsubj	_	_
+8	þetta	þessi	DET	D-N	Case=Nom	9	nsubj	_	_
 9	eigi	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
 10	heima	heima	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
 11	í	í	ADP	P	_	12	case	_	_
@@ -73,7 +73,7 @@
 37	að	að	SCONJ	C	_	39	mark	_	_
 38	það	það	PRON	PRO-N	Case=Nom	39	nsubj	_	_
 39	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	34	ccomp	_	_
-40	eitthvað	einhver	DET	Q-A	Case=Acc|Degree=Pos	39	ccomp	_	_
+40	eitthvað	einhver	DET	Q-A	Case=Acc	39	ccomp	_	_
 41	að	að	PART	TO	_	42	mark	_	_
 42	segja	segja	VERB	VB	VerbForm=Inf	40	xcomp	_	_
 43	um	um	ADP	P	_	44	case	_	_
@@ -92,13 +92,13 @@
 7	að	að	PART	TO	_	8	mark	_	_
 8	skrifa	skrifa	VERB	VB	VerbForm=Inf	6	xcomp	_	_
 9	undir	undir	ADP	RP	_	8	compound:prt	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	1	punct	_	_
+10	,	,	PUNCT	,	_	8	punct	_	_
 11	þá	þá	ADV	ADV	Degree=Pos	12	advmod	_	_
 12	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	1	conj	_	OriginalHead=0
 13	fréttin	frétt	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
-14	sú	sá	DET	D-N	Case=Nom|PronType=Art	12	xcomp	_	_
+14	sú	sá	DET	D-N	Case=Nom	12	xcomp	_	_
 15	að	að	SCONJ	C	_	17	mark	_	_
-16	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	17	nsubj	_	_
+16	þetta	þessi	DET	D-N	Case=Nom	17	nsubj	_	_
 17	færi	fara	VERB	VBDS	Mood=Sub|Tense=Past	14	ccomp	_	_
 18	í	í	ADP	P	_	19	case	_	_
 19	þjóðaratkvæðagreiðslu	þjóðaratkvæðagreiðsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
@@ -111,7 +111,7 @@
 2	fyrst	snemmt	ADV	ADVS	Degree=Sup	1	advmod	_	_
 3	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	4	aux	_	_
 4	myndast	mynda	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-5	sá	sá	DET	D-N	Case=Nom|PronType=Art	6	det	_	_
+5	sá	sá	DET	D-N	Case=Nom	6	det	_	_
 6	þrýstingur	þrýstingur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 7	sem	sem	SCONJ	C	_	8	mark	_	_
 8	þyrfti	þurfa	VERB	VBDS	Mood=Sub|Tense=Past	6	acl:relcl	_	_
@@ -128,7 +128,7 @@
 19	að	að	PART	TO	_	20	mark	_	_
 20	tala	tala	VERB	VB	VerbForm=Inf	15	ccomp	_	_
 21	um	um	ADP	P	_	22	case	_	_
-22	það	sá	DET	D-A	Case=Acc|PronType=Art	20	obl	_	_
+22	það	sá	DET	D-A	Case=Acc	20	obl	_	_
 23	sem	sem	SCONJ	C	_	25	mark	_	_
 24	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
 25	kallað	kalla	VERB	VAN	Tense=Past|VerbForm=Part	22	acl:relcl	_	_
@@ -164,18 +164,18 @@
 20	vegna	vegna	ADP	P	_	21	case	_	_
 21	þess	það	PRON	PRO-G	Case=Gen	17	obl	_	_
 22	að	að	SCONJ	C	_	25	mark	_	_
-23	enginn	enginn	DET	Q-N	Case=Nom|Degree=Pos	25	nsubj	_	_
+23	enginn	enginn	DET	Q-N	Case=Nom	25	nsubj	_	_
 24	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	25	aux	_	_
 25	séð	sjá	VERB	VBN	Tense=Past|VerbForm=Part	21	ccomp	_	_
 26	sér	sig	PRON	PRO-D	Case=Dat	28	nsubj	_	_
-27	neinn	neinn	DET	Q-A	Case=Acc|Degree=Pos	28	amod	_	_
+27	neinn	neinn	DET	Q-A	Case=Acc	28	amod	_	_
 28	hag	hagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	ccomp	_	_
 29	í	í	ADP	P	_	30	case	_	_
 30	því	það	PRON	PRO-D	Case=Dat	28	obl	_	_
 31	að	að	PART	TO	_	32	mark	_	_
 32	kynna	kynna	VERB	VB	VerbForm=Inf	30	xcomp	_	_
 33	sér	sig	PRON	PRO-D	Case=Dat	32	iobj	_	_
-34	þessi	þessi	DET	D-A	Case=Acc|PronType=Art	36	det	_	_
+34	þessi	þessi	DET	D-A	Case=Acc	36	det	_	_
 35	tæknilegu	tæknilegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	36	amod	_	_
 36	atriði	atriði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	32	obj	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	6	punct	_	_
@@ -190,12 +190,12 @@
 5	að	að	SCONJ	C	_	7	mark	_	_
 6	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 7	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	ccomp	_	_
-8	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	9	amod	_	_
+8	ekkert	enginn	DET	Q-A	Case=Acc	9	amod	_	_
 9	val	val	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	4	punct	_	_
 11	það	það	PRON	PRO-N	Case=Nom	12	nsubj	_	_
 12	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-13	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	12	obj	_	_
+13	ekkert	enginn	DET	Q-A	Case=Acc	12	obj	_	_
 14	um	um	ADP	P	_	15	case	_	_
 15	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
 16	að	að	PART	TO	_	17	mark	_	_
@@ -208,8 +208,8 @@
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
-4	þennan	þessi	DET	D-A	Case=Acc|PronType=Art	6	det	_	_
-5	eina	einn	DET	ONE-A	Case=Acc|Number=Sing	6	det	_	_
+4	þennan	þessi	DET	D-A	Case=Acc	6	det	_	_
+5	eina	einn	DET	ONE-A	Case=Acc	6	det	_	_
 6	bókstaf	bókstafur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 7	eftir	eftir	ADP	P	_	9	case	_	_
 8	fjögur	fjórir	NUM	NUM-A	Case=Acc	9	nummod	_	_
@@ -242,8 +242,8 @@
 18	og	og	CCONJ	CONJ	_	19	cc	_	_
 19	uppsjávarfiskum	uppsjávarfiskur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	17	conj	_	_
 20	og	og	CCONJ	CONJ	_	21	cc	_	_
-21	öllu	allur	DET	Q-D	Case=Dat|Degree=Pos	17	conj	_	_
-22	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	21	det	_	SpaceAfter=No
+21	öllu	allur	DET	Q-D	Case=Dat	17	conj	_	_
+22	þessu	þessi	DET	D-D	Case=Dat	21	det	_	SpaceAfter=No
 23	?	?	PUNCT	.	_	3	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4767979,.10
@@ -251,7 +251,7 @@
 # text = Hann hefur enga ástæðu til þess.
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	enga	enginn	DET	Q-A	Case=Acc|Degree=Pos	4	amod	_	_
+3	enga	enginn	DET	Q-A	Case=Acc	4	amod	_	_
 4	ástæðu	ástæða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 5	til	til	ADP	P	_	6	case	_	_
 6	þess	það	PRON	PRO-G	Case=Gen	4	obl	_	SpaceAfter=No
@@ -289,7 +289,7 @@
 27	og	og	CCONJ	CONJ	_	32	cc	_	_
 28	umræðan	umræða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	32	nsubj	_	_
 29	að	að	ADP	P	_	31	case	_	_
-30	öllu	allur	DET	Q-D	Case=Dat|Degree=Pos	31	amod	_	_
+30	öllu	allur	DET	Q-D	Case=Dat	31	amod	_	_
 31	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
 32	betri	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	25	conj	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	1	punct	_	_

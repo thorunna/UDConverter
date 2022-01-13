@@ -25,8 +25,8 @@
 9	ef	ef	ADP	P	_	11	case	_	_
 10	búin	bú	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	nsubj	_	_
 11	standa	standa	VERB	VBPI	Mood=Ind|Tense=Pres	19	obl	_	_
-12	alveg	alveg	ADV	ADV	Degree=Pos	11	amod	_	_
-13	kyrr	kyrr	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
+12	alveg	alveg	ADV	ADV	Degree=Pos	13	amod	_	_
+13	kyrr	kyrr	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
 14	á	á	ADP	P	_	16	case	_	_
 15	heilu	heill	ADJ	ADJ-D	Case=Dat|Degree=Pos	16	amod	_	_
 16	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
@@ -36,13 +36,13 @@
 20	sem	sem	SCONJ	C	_	21	mark	_	_
 21	kostnaður	kostnaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	advcl	_	_
 22	á	á	ADP	P	_	24	case	_	_
-23	því	sá	DET	D-D	Case=Dat|PronType=Art	24	det	_	_
+23	því	sá	DET	D-D	Case=Dat	24	det	_	_
 24	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
 25	og	og	CCONJ	CONJ	_	26	cc	_	_
 26	greidd	greiða	VERB	VAN	Tense=Past|VerbForm=Part	19	conj	_	_
 27	út	út	ADP	RP	_	26	compound:prt	_	_
 28	og	og	CCONJ	CONJ	_	30	cc	_	_
-29	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	30	nsubj	_	_
+29	allt	allur	DET	Q-N	Case=Nom	30	nsubj	_	_
 30	bíður	bíða	VERB	VBPI	Mood=Ind|Tense=Pres	19	conj	_	_
 31	eins	_	ADV	ADVR	Degree=Cmp	30	advmod	_	_
 32	og	_	ADP	P	_	33	case	_	_
@@ -63,7 +63,7 @@
 9	fær	fá	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	_
 10	að	að	PART	TO	_	11	mark	_	_
 11	greiða	greiða	VERB	VB	VerbForm=Inf	9	xcomp	_	_
-12	einhvern	einhver	DET	Q-A	Case=Acc|Degree=Pos	13	amod	_	_
+12	einhvern	einhver	DET	Q-A	Case=Acc	13	amod	_	_
 13	hluta	hluti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
 14	upp	upp	ADP	RP	_	18	compound:prt	_	_
 15	í	í	ADV	ADV	Degree=Pos	18	advmod	_	_
@@ -83,7 +83,7 @@
 29	þær	hún	PRON	PRO-N	Case=Nom	30	nsubj	_	_
 30	standa	standa	VERB	VBPI	Mood=Ind|Tense=Pres	27	ccomp	_	_
 31	í	í	ADP	P	_	33	case	_	_
-32	þeim	sá	DET	D-D	Case=Dat|PronType=Art	33	det	_	_
+32	þeim	sá	DET	D-D	Case=Dat	33	det	_	_
 33	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	30	obl	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	19	punct	_	_
 
@@ -150,12 +150,12 @@
 5	viss	viss	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	um	um	ADP	P	_	11	case	_	_
 7	að	að	SCONJ	C	_	11	mark	_	_
-8	allar	allur	DET	Q-N	Case=Nom|Degree=Pos	9	amod	_	_
+8	allar	allur	DET	Q-N	Case=Nom	9	amod	_	_
 9	flækjur	flækja	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	nsubj	_	_
 10	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	11	cop	_	_
 11	leystar	leysa	VERB	VAN	Tense=Past|VerbForm=Part	5	amod	_	_
 12	með	með	ADP	P	_	13	case	_	_
-13	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	11	obl	_	SpaceAfter=No
+13	þessu	þessi	DET	D-D	Case=Dat	11	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	5	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4611638,.7
@@ -164,7 +164,7 @@
 1	Að	að	ADV	P	_	7	advmod	_	_
 2	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Degree=Pos	1	amod	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
-4	það	sá	DET	D-N	Case=Nom|PronType=Art	5	det	_	_
+4	það	sá	DET	D-N	Case=Nom	5	det	_	_
 5	sjónarmið	sjónarmið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 6	mjög	mjög	ADV	ADV	Degree=Pos	7	amod	_	_
 7	ríkt	ríkur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -175,7 +175,7 @@
 12	fjármálakreppuna	fjármálakreppa	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
 13	um	um	ADP	P	_	14	case	_	_
 14	heim	heimur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
-15	allan	allur	ADV	Q-A	Case=Acc|Degree=Pos	14	advmod	_	_
+15	allan	allur	ADV	Q-A	Case=Acc	14	advmod	_	_
 16	að	að	SCONJ	C	_	17	mark	_	_
 17	taka	taka	VERB	VB-3	VerbForm=Inf	7	ccomp	_	_
 18	eigi	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	17	dep	_	_
@@ -196,16 +196,16 @@
 6	fjármálaráðherra	fjármálaráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 7	talar	tala	VERB	VBPI	Mood=Ind|Tense=Pres	3	ccomp	_	_
 8	í	í	ADP	P	_	10	case	_	_
-9	þá	sá	DET	D-A	Case=Acc|PronType=Art	10	det	_	_
+9	þá	sá	DET	D-A	Case=Acc	10	det	_	_
 10	veru	vera	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4611638,.9
 # X_ID = ID_missing_9
 # text = Eitt það allra galnasta sem menn gerðu í rugli sínu á árunum 2003 2007 var að fella niður hátekjuskattsþrepið.
-1	Eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	3	det	_	_
-2	það	sá	DET	D-N	Case=Nom|PronType=Art	3	det	_	_
-3	allra	allur	DET	Q-G	Case=Gen|Degree=Pos	17	nsubj	_	_
+1	Eitt	einn	DET	ONE-N	Case=Nom	3	det	_	_
+2	það	sá	DET	D-N	Case=Nom	3	det	_	_
+3	allra	allur	DET	Q-G	Case=Gen	17	nsubj	_	_
 4	galnasta	galinn	ADJ	ADJS-N	Case=Nom|Degree=Sup	3	amod	_	_
 5	sem	sem	SCONJ	C	_	7	mark	_	_
 6	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	nsubj	_	_
@@ -275,7 +275,7 @@
 11	borgaði	borga	VERB	VBDI	Mood=Ind|Tense=Past	2	ccomp	_	_
 12	70	sjötíu	NUM	NUM-D	Case=Dat	13	nummod	_	_
 13	milljónum	milljón	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obj	_	_
-14	minna	lítill	DET	QR-A	Case=Acc|Degree=Pos	13	amod	_	_
+14	minna	lítill	DET	QR-A	Case=Acc	13	amod	_	_
 15	í	í	ADP	P	_	16	case	_	_
 16	tekjuskatt	tekjuskattur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
 17	vegna	vegna	ADP	P	_	18	case	_	_
@@ -315,7 +315,7 @@
 18	framtíðarsýn	framtíðarsýn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
 19	á	á	ADP	P	_	20	case	_	_
 20	skattkerfið	skattkerfi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
-21	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	16	xcomp	_	_
+21	eitt	einn	DET	ONE-N	Case=Nom	16	xcomp	_	_
 22	eða	eða	CCONJ	CONJ	_	23	cc	_	_
 23	tvö	tveir	NUM	NUM-N	Case=Nom	16	conj	_	_
 24	skattþrep	skattþrep	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	16	conj	_	SpaceAfter=No
@@ -328,7 +328,7 @@
 2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
 4	lesa	lesa	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-5	það	sá	DET	D-A	Case=Acc|PronType=Art	4	obj	_	_
+5	það	sá	DET	D-A	Case=Acc	4	obj	_	_
 6	sem	sem	SCONJ	C	_	7	mark	_	_
 7	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	5	acl:relcl	_	_
 8	í	í	ADP	P	_	9	case	_	_
@@ -345,7 +345,7 @@
 3	leggja	leggja	VERB	VB	VerbForm=Inf	0	root	_	_
 4	í	í	ADP	P	_	5	case	_	_
 5	það	það	PRON	PRO-A	Case=Acc	3	obl	_	_
-6	þann	sá	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
+6	þann	sá	DET	D-A	Case=Acc	7	det	_	_
 7	skilning	skilningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
 8	að	að	SCONJ	C	_	12	mark	_	_
 9	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	nsubj	_	_
@@ -389,7 +389,7 @@
 8	um	um	ADP	P	_	10	case	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	fara	fara	VERB	VB	VerbForm=Inf	7	obl	_	_
-11	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	12	amod	_	_
+11	alla	allur	DET	Q-A	Case=Acc	12	amod	_	_
 12	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	_
 13	til	til	ADP	P	_	12	case	_	_
 14	baka	bak	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	obl	_	_
@@ -397,10 +397,10 @@
 16	frjálshyggjuna	frjálshyggja	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 17	og	og	CCONJ	CONJ	_	18	cc	_	_
 18	fletja	fletja	VERB	VB	VerbForm=Inf	10	xcomp	_	_
-19	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	18	obj	_	_
+19	þetta	þessi	DET	D-A	Case=Acc	18	obj	_	_
 20	út	út	ADP	RP	_	22	compound:prt	_	_
 21	í	í	ADP	P	_	22	case	_	_
 22	ekki	ekki	ADV	NEG	_	18	obl	_	_
-23	neitt	neinn	DET	Q-A	Case=Acc|Degree=Pos	22	amod	_	SpaceAfter=No
+23	neitt	neinn	DET	Q-A	Case=Acc	22	amod	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	7	punct	_	_
 

@@ -12,7 +12,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4836659,.2
 # X_ID = ID_missing_2
 # text = Þetta er spurning sem við hefðum jafnvel átt að spyrja okkur að strax í vor þótt ég geri mér grein fyrir því að aðstæður hafi kannski ekki endilega leyft það.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	spurning	spurning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 4	sem	sem	SCONJ	C	_	8	mark	_	_
@@ -86,26 +86,26 @@
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
 5	til	til	ADP	P	_	6	case	_	_
 6	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	obl	_	_
-7	sú	sá	DET	D-N	Case=Nom|PronType=Art	8	det	_	_
+7	sú	sá	DET	D-N	Case=Nom	8	det	_	_
 8	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	leita	leita	VERB	VB	VerbForm=Inf	8	xcomp	_	_
 11	að	að	ADP	P	_	13	case	_	_
 12	upplýstu	upplýstur	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	amod	_	_
 13	samþykki	samþykki	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
-14	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	13	nmod:poss	_	_
+14	þeirra	sá	DET	D-G	Case=Gen	13	nmod:poss	_	_
 15	sem	sem	SCONJ	C	_	16	mark	_	_
 16	taka	taka	VERB	VBPI	Mood=Ind|Tense=Pres	14	acl:relcl	_	_
 17	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obj	_	_
 18	í	í	ADP	P	_	20	case	_	_
-19	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	20	det	_	_
+19	þessari	þessi	DET	D-D	Case=Dat	20	det	_	_
 20	gagnasöfnun	gagnasöfnun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	8	punct	_	_
 
 # sent_id = ALTHINGI_HHG_2013_G-33-4836659,.6
 # X_ID = ID_missing_6
 # text = Eitt af vandamálunum við frumvarpið er það að markmiðið er í það minnsta tvíþætt, annars vegar það að afla upplýsinga um skuldara til að hjálpa þeim að leysa sín vandamál og hins vegar almennt til hagskýrslugerðar til að yfirvöld viti hvað þau eru að gera í stuttu máli.
-1	Eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	7	nsubj	_	_
+1	Eitt	einn	DET	ONE-N	Case=Nom	7	nsubj	_	_
 2	af	af	ADP	P	_	3	case	_	_
 3	vandamálunum	vandamál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	1	obl	_	_
 4	við	við	ADP	P	_	5	case	_	_
@@ -116,7 +116,7 @@
 9	markmiðið	markmið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
 10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
 11	í	í	ADP	P	_	13	case	_	_
-12	það	sá	DET	D-A	Case=Acc|PronType=Art	13	det	_	_
+12	það	sá	DET	D-A	Case=Acc	13	det	_	_
 13	minnsta	lítill	ADJ	ADJS-A	Case=Acc|Degree=Sup	14	obl	_	_
 14	tvíþætt	tvíþættur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	ccomp	_	SpaceAfter=No
 15	,	,	PUNCT	,	_	14	punct	_	_
@@ -137,7 +137,7 @@
 30	sín	sinn	PRON	PRO-A	Case=Acc	31	nmod:poss	_	_
 31	vandamál	vandamál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	29	obj	_	_
 32	og	og	CCONJ	CONJ	_	37	cc	_	_
-33	hins	hinn	DET	D-G	Case=Gen|PronType=Art	34	det	_	_
+33	hins	hinn	DET	D-G	Case=Gen	34	det	_	_
 34	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	37	obl	_	_
 35	almennt	almennt	ADV	ADV	Degree=Pos	37	advmod	_	_
 36	til	til	ADP	P	_	37	case	_	_
@@ -159,7 +159,7 @@
 # sent_id = ALTHINGI_HHG_2013_G-33-4836659,.7
 # X_IDs = ID_missing_7 ; ID_missing_8
 # text = Bæði markmiðin eru mjög göfug en það eru mismunandi aðferðir sem samkvæmt stjórnarskrá er leyfilegt að fara.
-1	Bæði	báðir	DET	Q-N	Case=Nom|Degree=Pos	2	amod	_	_
+1	Bæði	báðir	DET	Q-N	Case=Nom	2	amod	_	_
 2	markmiðin	markmið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
 3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 4	mjög	mjög	ADV	ADV	Degree=Pos	5	amod	_	_
@@ -186,7 +186,7 @@
 3	ætlum	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	15	obl	_	_
 4	að	að	PART	TO	_	5	mark	_	_
 5	leysa	leysa	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-6	þann	sá	DET	D-A	Case=Acc|PronType=Art	7	det	_	_
+6	þann	sá	DET	D-A	Case=Acc	7	det	_	_
 7	vanda	vandi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
 8	að	að	SCONJ	C	_	14	mark	_	_
 9	hagskýrslurnar	hagskýrsla	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	14	nsubj	_	_
@@ -200,7 +200,7 @@
 17	í	í	ADP	P	_	18	case	_	_
 18	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
 19	ekki	ekki	ADV	NEG	_	15	advmod	_	_
-20	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	21	det	_	_
+20	einu	einn	DET	ONE-D	Case=Dat	21	det	_	_
 21	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
 22	að	að	PART	TO	_	23	mark	_	_
 23	tala	tala	VERB	VB	VerbForm=Inf	15	xcomp	_	_
@@ -230,7 +230,7 @@
 12	skuldavanda	skuldavandi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 13	heimilanna	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	nmod:poss	_	_
 14	og	og	CCONJ	CONJ	_	16	cc	_	_
-15	þá	sá	DET	D-A	Case=Acc|PronType=Art	16	det	_	_
+15	þá	sá	DET	D-A	Case=Acc	16	det	_	_
 16	neyð	neyð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	conj	_	_
 17	sem	sem	SCONJ	C	_	18	mark	_	_
 18	krefst	krefja	VERB	VBPI	Mood=Ind|Tense=Pres	16	acl:relcl	_	_
@@ -253,7 +253,7 @@
 6	tvö	tveir	NUM	NUM-N	Case=Nom	7	nummod	_	_
 7	upplýsingasöfnunarmál	upplýsingasöfnunarmál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
 8	í	í	ADP	P	_	10	case	_	_
-9	einum	einn	DET	ONE-D	Case=Dat|Number=Sing	10	det	_	_
+9	einum	einn	DET	ONE-D	Case=Dat	10	det	_	_
 10	pakka	pakki	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -282,7 +282,7 @@
 19	skattframtölin	skattframtal	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	20	nsubj	_	_
 20	nægi	nægja	VERB	VBPS	Mood=Sub|Tense=Pres	6	ccomp	_	_
 21	plús	plús	CCONJ	CONJ	_	23	cc	_	_
-22	einhverjar	einhver	DET	Q-N	Case=Nom|Degree=Pos	23	amod	_	_
+22	einhverjar	einhver	DET	Q-N	Case=Nom	23	amod	_	_
 23	upplýsingar	upplýsing	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	20	conj	_	_
 24	aðrar	annar	PRON	OTHER-N	Case=Nom	23	appos	_	_
 25	sem	sem	SCONJ	C	_	27	mark	_	_
@@ -306,17 +306,17 @@
 11	það	það	PRON	PRO-N	Case=Nom	15	nsubj	_	_
 12	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
 13	bara	bara	ADV	FP	Degree=Pos	15	advmod	_	_
-14	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	15	det	_	_
+14	eitt	einn	DET	ONE-N	Case=Nom	15	det	_	_
 15	dæmi	dæmi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
 16	um	um	ADP	P	_	19	case	_	_
 17	að	að	SCONJ	C	_	19	mark	_	_
 18	við	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
 19	vitum	vita	VERB	VBPI	Mood=Ind|Tense=Pres	15	obl	_	_
 20	ekki	ekki	ADV	NEG	_	19	advmod	_	_
-21	einu	einn	DET	ONE-D	Case=Dat|Number=Sing	22	det	_	_
+21	einu	einn	DET	ONE-D	Case=Dat	22	det	_	_
 22	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
 23	nákvæmlega	nákvæmlega	ADV	ADV	Degree=Pos	19	advmod	_	_
-24	hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	25	det	_	_
+24	hvaða	hvaða	DET	WD-A	Case=Acc	25	det	_	_
 25	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	27	obj	_	_
 26	við	ég	PRON	PRO-N	Case=Nom	27	nsubj	_	_
 27	viljum	vilja	VERB	VBPI	Mood=Ind|Tense=Pres	19	ccomp	_	_
@@ -324,14 +324,14 @@
 29	að	að	PART	TO	_	30	advcl	_	_
 30	leysa	leysa	VERB	VB	VerbForm=Inf	27	obl	_	_
 31	nákvæmlega	nákvæmlega	ADV	ADV	Degree=Pos	33	advmod	_	_
-32	hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	31	det	_	_
+32	hvaða	hvaða	DET	WD-A	Case=Acc	31	det	_	_
 33	markmið	markmið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obj	_	_
 34	en	en	CCONJ	CONJ	_	36	cc	_	_
 35	ég	ég	PRON	PRO-N	Case=Nom	36	nsubj	_	_
 36	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 37	það	það	PRON	PRO-A	Case=Acc	36	obj	_	_
 38	eftir	eftir	ADP	P	_	40	case	_	_
-39	þeirri	sá	DET	D-D	Case=Dat|PronType=Art	40	det	_	_
+39	þeirri	sá	DET	D-D	Case=Dat	40	det	_	_
 40	nefnd	nefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	36	obl	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	2	punct	_	_
 

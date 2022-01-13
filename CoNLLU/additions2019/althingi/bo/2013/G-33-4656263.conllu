@@ -16,11 +16,11 @@
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
-4	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	6	nsubj	_	_
+4	margir	margur	DET	Q-N	Case=Nom	6	nsubj	_	_
 5	vilji	vilja	AUX	MDPS	Mood=Sub|Tense=Pres	6	aux	_	_
 6	vinna	vinna	VERB	VB	VerbForm=Inf	2	ccomp	_	_
 7	að	að	ADP	P	_	9	case	_	_
-8	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	9	det	_	_
+8	þessum	þessi	DET	D-D	Case=Dat	9	det	_	_
 9	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
 10	með	með	ADP	P	_	12	case	_	_
 11	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
@@ -55,7 +55,7 @@
 # sent_id = ALTHINGI_BO_2013_G-33-4656263,.4
 # X_ID = ID_missing_4
 # text = Hver sem er getur komið með athugasemdir og pælingar sem fara svo í gegnum kosningakerfi og geta endað á Alþingi sem tillaga.
-1	Hver	hver	DET	Q-N	Case=Nom|Degree=Pos	5	nsubj	_	_
+1	Hver	hver	DET	Q-N	Case=Nom	5	nsubj	_	_
 2	sem	sem	SCONJ	C	_	3	mark	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
 4	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
@@ -93,7 +93,7 @@
 # text = Aðeins að þessari fátæktarskýrslu.
 1	Aðeins	aðeins	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	að	að	ADP	P	_	4	case	_	_
-3	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	4	det	_	_
+3	þessari	þessi	DET	D-D	Case=Dat	4	det	_	_
 4	fátæktarskýrslu	fátæktarskýrsla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -114,9 +114,9 @@
 12	í	í	ADP	P	_	13	case	_	_
 13	það	það	PRON	PRO-A	Case=Acc	10	obl	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	13	punct	_	_
-15	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	10	obl	_	_
+15	allir	allur	DET	Q-N	Case=Nom	10	obl	_	_
 16	sem	sem	SCONJ	C	_	17	mark	_	_
-17	einn	einn	DET	ONE-N	Case=Nom|Number=Sing	15	advcl	_	_
+17	einn	einn	DET	ONE-N	Case=Nom	15	advcl	_	_
 18	þar	þar	ADV	ADV	Degree=Pos	15	advmod	_	SpaceAfter=No
 19	,	,	PUNCT	,	_	18	punct	_	_
 20	að	að	PART	TO	_	21	mark	_	_
@@ -133,7 +133,7 @@
 3	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	hvert	hver	PRON	WPRO-N	Case=Nom	9	obj	_	_
 5	framhald	framhald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	nsubj	_	_
-6	þeirrar	sá	DET	D-G	Case=Gen|PronType=Art	7	det	_	_
+6	þeirrar	sá	DET	D-G	Case=Gen	7	det	_	_
 7	vinnu	vinna	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
 8	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	9	aux	_	_
 9	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	2	ccomp	_	_

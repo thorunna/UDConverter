@@ -14,7 +14,7 @@
 # text = Ég velti þessu líka fyrir mér.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	2	obj	_	_
+3	þessu	þessi	DET	D-D	Case=Dat	2	obj	_	_
 4	líka	líka	ADV	ALSO	_	2	advmod	_	_
 5	fyrir	fyrir	ADP	P	_	6	case	_	_
 6	mér	ég	PRON	PRO-D	Case=Dat	2	obl	_	SpaceAfter=No
@@ -27,7 +27,7 @@
 2	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 4	á	á	ADP	P	_	6	case	_	_
-5	hvaða	hvaða	DET	WD-A	Case=Acc|Number=Sing	6	det	_	_
+5	hvaða	hvaða	DET	WD-A	Case=Acc	6	det	_	_
 6	stað	staður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
 7	við	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
 8	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
@@ -41,7 +41,7 @@
 16	eins	_	ADV	ADVR	Degree=Cmp	14	advmod	_	_
 17	og	_	ADP	P	_	21	case	_	_
 18	breytingartillaga	breytingartillaga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	_
-19	meiri	mikill	DET	QR-G	Case=Gen|Degree=Pos	18	nmod:poss	_	_
+19	meiri	mikill	DET	QR-G	Case=Gen	18	nmod:poss	_	_
 20	hlutans	hluti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	conj	_	_
 21	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	16	obl	_	_
 22	ráð	ráð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obj	_	_
@@ -64,7 +64,7 @@
 11	að	að	PART	TO	_	12	mark	_	_
 12	henda	henda	VERB	VB	VerbForm=Inf	10	xcomp	_	_
 13	tækinu	tæki	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obj	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	5	punct	_	_
+14	,	,	PUNCT	,	_	12	punct	_	_
 15	og	og	CCONJ	CONJ	_	18	cc	_	_
 16	við	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
 17	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
@@ -98,7 +98,7 @@
 17	,	,	PUNCT	,	_	16	punct	_	_
 18	með	með	ADP	P	_	21	case	_	_
 19	sinn	sinn	PRON	PRO-A	Case=Acc	21	nmod:poss	_	_
-20	meiri	mikill	DET	QR-A	Case=Acc|Degree=Pos	21	amod	_	_
+20	meiri	mikill	DET	QR-A	Case=Acc	21	amod	_	_
 21	hluta	hluti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
 22	á	á	ADP	P	_	23	case	_	_
 23	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	_
@@ -121,7 +121,7 @@
 40	treður	troða	VERB	VBPI	Mood=Ind|Tense=Pres	31	conj	_	_
 41	í	í	ADP	P	_	42	case	_	_
 42	gegn	gegn	ADV	ADV	Degree=Pos	40	obl	_	_
-43	þeim	sá	DET	D-D	Case=Dat|PronType=Art	44	det	_	_
+43	þeim	sá	DET	D-D	Case=Dat	44	det	_	_
 44	virkjunarkostum	virkjunarkostur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	40	obj	_	_
 45	eða	eða	CCONJ	CONJ	_	46	cc	_	_
 46	verndarkostum	verndarkostur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	44	conj	_	_
@@ -205,7 +205,7 @@
 # text = Maður er ekkert alltaf sáttur við Forseti hringir. niðurstöðuna, hvorki náttúruverndarsinnar né virkjunarsinnar, en þarna er verið að finna málamiðlanir.
 1	Maður	maður	PRON	MAN-N	_	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-3	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	5	obl	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	5	obl	_	_
 4	alltaf	alltaf	ADV	ADV	Degree=Pos	5	advmod	_	_
 5	sáttur	sáttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	við	við	ADP	P	_	10	case	_	_
