@@ -4,6 +4,8 @@ A Python module for converting bracket-parsed [PPCHE-format](https://www.ling.up
 
 The module is specifically configured to convert treebanks in the [IcePaHC](https://linguist.is/icelandic_treebank/Icelandic_Parsed_Historical_Corpus_(IcePaHC)) format, which is based on PPCME.
 
+The converter has been used to create two Icelandic UD treebanks: [UD_Icelandic-IcePaHC](https://github.com/UniversalDependencies/UD_Icelandic-IcePaHC/tree/master) and [UD_Icelandic-Modern](https://github.com/UniversalDependencies/UD_Icelandic-Modern/tree/master), and one Faroese: [UD_Faroese-FarPaHC](https://github.com/UniversalDependencies/UD_Faroese-FarPaHC/tree/master).
+
 ## Setup
 
 Install all requirements by running: 
