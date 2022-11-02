@@ -25,11 +25,11 @@
 # text = Það gæti hins vegar fjölgað í þeim hópi verði Rússum alfarið meinuð þátttaka í leikunum.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 2	gæti	geta	AUX	MDDS	Mood=Sub|Tense=Past	5	aux	_	_
-3	hins	hinn	DET	D-G	Case=Gen|PronType=Art	4	det	_	_
+3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
 4	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
 5	fjölgað	fjölga	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 6	í	í	ADP	P	_	8	case	_	_
-7	þeim	sá	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+7	þeim	sá	DET	D-D	Case=Dat	8	det	_	_
 8	hópi	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 9	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	12	aux	_	_
 10	Rússum	rússi	PROPN	NPRS-D	_	12	nsubj	_	_
@@ -59,25 +59,25 @@
 14	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	12	obl	_	_
 15	nema	nema	ADP	P	_	16	case	_	_
 16	í	í	ADP	P	_	10	obl	_	_
-17	undantekningartilfellum	undantekningartilfelli	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	29	obl	_	_
+17	undantekningartilfellum	undantekningartilfelli	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	conj	_	_
 18	með	með	ADP	P	_	20	case	_	_
 19	sérstöku	sérstakur	ADJ	ADJ-D	Case=Dat|Degree=Pos	20	amod	_	_
 20	leyfi	leyfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	29	punct	_	_
-22	og	og	CCONJ	CONJ	_	29	cc	_	_
-23	þá	þá	ADV	ADV	Degree=Pos	29	advmod	_	_
+21	,	,	PUNCT	,	_	20	punct	_	_
+22	og	og	CCONJ	CONJ	_	25	cc	_	_
+23	þá	þá	ADV	ADV	Degree=Pos	25	advmod	_	_
 24	undir	undir	ADP	P	_	25	case	_	_
-25	Ólympíufánanum	ólympíufáni	PROPN	NPR-D	_	29	obl	_	_
+25	Ólympíufánanum	ólympíufáni	PROPN	NPR-D	_	17	conj	_	_
 26	en	en	CCONJ	CONJ	_	29	cc	_	_
 27	ekki	ekki	ADV	NEG	_	29	advmod	_	_
-28	þeim	sá	DET	D-D	Case=Dat|PronType=Art	29	det	_	_
-29	rússneska	rússneskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	16	conj	_	SpaceAfter=No
+28	þeim	sá	DET	D-D	Case=Dat	29	det	_	_
+29	rússneska	rússneskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	25	conj	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	1	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033281,.4
 # X_ID = ID_missing_4
 # text = Þessi ákvörðun var tekin í kjölfar víðfeðms lyfjamisferlis í landinu.
-1	Þessi	þessi	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Þessi	þessi	DET	D-N	Case=Nom	2	det	_	_
 2	ákvörðun	ákvörðun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 4	tekin	taka	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -102,7 +102,7 @@
 8	skoðunar	skoðun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	meina	meina	VERB	VB	VerbForm=Inf	5	xcomp	_	_
-11	öllu	allur	DET	Q-D	Case=Dat|Degree=Pos	13	amod	_	_
+11	öllu	allur	DET	Q-D	Case=Dat	13	amod	_	_
 12	rússnesku	rússneskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	amod	_	_
 13	íþróttafólki	íþróttafólk	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	iobj	_	_
 14	sem	sem	SCONJ	C	_	16	mark	_	_
@@ -142,9 +142,9 @@
 6	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	5	aux	_	_
 7	á	á	ADP	P	_	8	case	_	_
 8	sunnudag	sunnudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
-9	sú	sá	DET	D-N	Case=Nom|PronType=Art	1	xcomp	_	_
+9	sú	sá	DET	D-N	Case=Nom	1	xcomp	_	_
 10	að	að	SCONJ	C	_	14	mark	_	_
-11	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	12	amod	_	_
+11	allir	allur	DET	Q-N	Case=Nom	12	amod	_	_
 12	Rússar	rússi	PROPN	NPRS-N	_	14	nsubj	_	_
 13	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	14	aux	_	_
 14	dæmdir	dæma	VERB	VAN	Tense=Past|VerbForm=Part	9	ccomp	_	_
@@ -185,14 +185,14 @@
 # sent_id = RUV_ESP_2016_G-2-1033281,.9
 # X_IDs = ID_missing_9 ; ID_missing_10 ; ID_missing_11
 # text = 1<closeparen/> Sætum Rússa verður ekki úthlutað og ekkert breytist fyrir utan það að rússneskir íþróttamenn verða ekki á leikunum.
-1	1<closeparen/>	einn	DET	ONE-N	Case=Nom|Number=Sing	0	root	_	_
+1	1<closeparen/>	einn	DET	ONE-N	Case=Nom	0	root	_	_
 2	Sætum	sæti	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	nsubj	_	_
 3	Rússa	rússi	PROPN	NPRS-G	_	2	nmod:poss	_	_
 4	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
 5	ekki	ekki	ADV	NEG	_	4	advmod	_	_
 6	úthlutað	úthluta	VERB	VAN	Tense=Past|VerbForm=Part	4	ccomp	_	_
 7	og	og	CCONJ	CONJ	_	9	cc	_	_
-8	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	9	nsubj	_	_
+8	ekkert	enginn	DET	Q-N	Case=Nom	9	nsubj	_	_
 9	breytist	breyta	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
 10	fyrir	fyrir	ADP	P	_	12	case	_	_
 11	utan	utan	ADP	P	_	12	case	_	_
@@ -204,12 +204,12 @@
 17	ekki	ekki	ADV	NEG	_	16	advmod	_	_
 18	á	á	ADP	P	_	19	case	_	_
 19	leikunum	leika	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	1	punct	_	_
+20	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033281,.10
 # X_ID = ID_missing_12
 # text = Þessi möguleiki er frekar ólíklegur, sérstaklega í ljósi þess að erfitt er að vera með mismörg lið í riðlum í hópíþróttunum.
-1	Þessi	þessi	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Þessi	þessi	DET	D-N	Case=Nom	2	det	_	_
 2	möguleiki	möguleiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 4	frekar	frekar	ADV	ADVR	Degree=Cmp	5	amod	_	_
@@ -241,9 +241,9 @@
 3	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
 4	endurúthlutað	endurúthluta	VERB	VAN	Tense=Past|VerbForm=Part	3	ccomp	_	_
 5	í	í	ADP	P	_	7	case	_	_
-6	einhverjum	einhver	DET	Q-D	Case=Dat|Degree=Pos	7	amod	_	_
+6	einhverjum	einhver	DET	Q-D	Case=Dat	7	amod	_	_
 7	greinum	grein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	1	punct	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033281,.12
 # X_IDs = ID_missing_15 ; ID_missing_16
@@ -253,9 +253,9 @@
 3	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
 4	endurúthlutað	endurúthluta	VERB	VAN	Tense=Past|VerbForm=Part	3	ccomp	_	_
 5	í	í	ADP	P	_	7	case	_	_
-6	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	7	amod	_	_
+6	öllum	allur	DET	Q-D	Case=Dat	7	amod	_	_
 7	greinum	grein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	1	punct	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033281,.13
 # X_ID = ID_missing_17
@@ -270,7 +270,7 @@
 8	opnast	opna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 9	tækifæri	tækifæri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	nsubj	_	_
 10	fyrir	fyrir	ADP	P	_	12	case	_	_
-11	fleiri	margur	DET	QR-A	Case=Acc|Degree=Pos	12	amod	_	_
+11	fleiri	margur	DET	QR-A	Case=Acc	12	amod	_	_
 12	Íslendinga	íslendingur	PROPN	NPRS-A	_	8	obl	_	_
 13	eins	_	ADV	ADVR	Degree=Cmp	12	advmod	_	_
 14	og	_	ADP	P	_	15	case	_	_
@@ -304,7 +304,7 @@
 18	um	um	ADP	P	_	19	case	_	_
 19	það	það	PRON	PRO-A	Case=Acc	17	amod	_	_
 20	enn	enn	ADV	ADV	Degree=Pos	17	advmod	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	7	punct	_	_
+21	.	.	PUNCT	.	_	17	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033281,.15
 # X_ID = ID_missing_20
@@ -312,7 +312,7 @@
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	bíða	bíða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
-4	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	2	obl	_	_
+4	margir	margur	DET	Q-N	Case=Nom	2	obl	_	_
 5	í	í	ADP	P	_	6	case	_	_
 6	ofvæni	ofvæni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 7	eftir	eftir	ADP	P	_	8	case	_	_
@@ -325,15 +325,15 @@
 14	síður	varla	ADV	ADVR	Degree=Cmp	23	advmod	_	_
 15	skipuleggjendur	skipuleggjandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	23	nsubj	_	_
 16	í	í	ADP	P	_	17	case	_	_
-17	Ólympíuþorpinu	ólympíuþorp	PROPN	NPR-D	_	21	obl	_	_
+17	Ólympíuþorpinu	ólympíuþorp	PROPN	NPR-D	_	15	obl	_	_
 18	og	og	CCONJ	CONJ	_	21	cc	_	_
 19	í	í	ADP	P	_	21	case	_	_
 20	kringum	kringum	ADP	P	_	21	case	_	_
-21	leikana	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obl	_	_
+21	leikana	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	conj	_	_
 22	en	en	ADP	P	_	23	case	_	_
 23	íþróttamenn	íþróttamaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	conj	_	_
 24	um	um	ADP	P	_	26	case	_	_
-25	allan	allur	DET	Q-A	Case=Acc|Degree=Pos	26	amod	_	_
+25	allan	allur	DET	Q-A	Case=Acc	26	amod	_	_
 26	heim	heimur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	2	punct	_	_
 

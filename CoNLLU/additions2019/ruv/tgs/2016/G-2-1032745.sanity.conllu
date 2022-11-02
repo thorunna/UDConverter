@@ -70,10 +70,10 @@
 # X_ID = ID_missing_6
 # text = En þetta eru ekki einu tímamótin á knattspyrnuferli Schweinsteiger, því José Mourinho nýráðinn stjóri Manchester United hefur greint Þjóðverjanum frá því að hann sé ekki inn í hans plönum og megi leita sér að öðru liði.
 1	En	en	CCONJ	CONJ	_	6	cc	_	_
-2	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
+2	þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
 3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 4	ekki	ekki	ADV	NEG	_	6	advmod	_	_
-5	einu	einn	DET	ONE-N	Case=Nom|Number=Sing	6	det	_	_
+5	einu	einn	DET	ONE-N	Case=Nom	6	det	_	_
 6	tímamótin	tímamót	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 7	á	á	ADP	P	_	8	case	_	_
 8	knattspyrnuferli	knattspyrnuferill	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
@@ -113,7 +113,7 @@
 # text = Schweinsteiger mun meira að segja æfa með unglingaliði United þar til hann finnur sér nýtt lið.
 1	Schweinsteiger	schweinsteiger	PROPN	NPR-N	_	6	nsubj	_	_
 2	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
-3	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	5	obj	_	_
+3	meira	mikill	DET	QR-A	Case=Acc	5	obj	_	_
 4	að	að	PART	TO	_	5	advcl	_	_
 5	segja	segja	VERB	VB	VerbForm=Inf	6	advcl	_	_
 6	æfa	æfa	VERB	VB	VerbForm=Inf	0	root	_	_

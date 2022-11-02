@@ -76,7 +76,7 @@
 23	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
 24	ánægð	ánægður	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
 25	með	með	ADP	P	_	27	case	_	_
-26	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	27	det	_	_
+26	þetta	þessi	DET	D-A	Case=Acc	27	det	_	_
 27	sund	sund	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	amod	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -96,7 +96,7 @@
 11	og	og	CCONJ	CONJ	_	13	cc	_	_
 12	ég	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
 13	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
-14	meira	mikill	DET	Q-A	Case=Acc|Degree=Pos	13	ccomp	_	_
+14	meira	mikill	DET	Q-A	Case=Acc	13	ccomp	_	_
 15	inni	inni	ADV	ADV	Degree=Pos	14	advmod	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	15	punct	_	SpaceAfter=No
 17	“	“	PUNCT	"	_	16	punct	_	_
@@ -121,7 +121,7 @@
 36	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	37	nmod:poss	_	_
 37	bringusundi	bringusund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	33	obl	_	_
 38	af	af	ADP	P	_	40	case	_	_
-39	þeim	sá	DET	D-D	Case=Dat|PronType=Art	40	det	_	_
+39	þeim	sá	DET	D-D	Case=Dat	40	det	_	_
 40	keppendum	keppandi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	33	obl	_	_
 41	sem	sem	SCONJ	C	_	42	mark	_	_
 42	þar	þar	ADV	ADV	Degree=Pos	40	acl:relcl	_	_
@@ -168,7 +168,7 @@
 5	hafa	hafa	AUX	HV	VerbForm=Inf	4	aux	_	_
 6	gaman	gaman	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
 7	að	að	ADP	P	_	8	case	_	_
-8	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	6	obl	_	SpaceAfter=No
+8	þessu	þessi	DET	D-D	Case=Dat	6	obl	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	11	punct	_	SpaceAfter=No
 10	“	“	PUNCT	"	_	9	punct	_	_
 11	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -190,7 +190,7 @@
 5	ofan	ofan	ADP	P	_	3	obl	_	_
 6	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	7	aux	_	_
 7	sjá	sjá	VERB	VB	VerbForm=Inf	0	root	_	_
-8	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	9	amod	_	_
+8	allt	allur	DET	Q-A	Case=Acc	9	amod	_	_
 9	viðtalið	viðtal	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
 10	sem	sem	SCONJ	C	_	11	mark	_	_
 11	tekið	taka	VERB	VAN	Tense=Past|VerbForm=Part	9	acl:relcl	_	_
@@ -253,7 +253,7 @@
 # sent_id = RUV_TGS_2016_G-2-1031922.SANITY,.11
 # X_ID = ID_missing_17
 # text = Öll sund kvöldsins verða sýnd í beinni útsendingu á RÚV sem hefst klukkan 17:00.
-1	Öll	allur	DET	Q-N	Case=Nom|Degree=Pos	2	amod	_	_
+1	Öll	allur	DET	Q-N	Case=Nom	2	amod	_	_
 2	sund	sund	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 3	kvöldsins	kvöld	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	nmod:poss	_	_
 4	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -400,7 +400,7 @@
 123	enn	enn	ADV	ADV	Degree=Pos	124	advmod	_	_
 124	fjölgað	fjölga	VERB	VBN	Tense=Past|VerbForm=Part	1	conj	_	OriginalHead=0
 125	um	um	ADP	P	_	126	case	_	_
-126	einn	einn	DET	ONE-A	Case=Acc|Number=Sing	124	obl	_	SpaceAfter=No
+126	einn	einn	DET	ONE-A	Case=Acc	124	obl	_	SpaceAfter=No
 127	,	,	PUNCT	,	_	126	punct	_	_
 128	því	það	PRON	PRO-D	Case=Dat	124	obl	_	_
 129	Bryndís	bryndís	PROPN	NPR-N	_	132	nsubj	_	_
@@ -414,7 +414,7 @@
 137	skriðsunds	skriðsund	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	134	nmod:poss	_	_
 138	um	um	ADP	P	_	132	obl	_	_
 139	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	138	acl	_	_
-140		hinn	DET	D-N	Case=Nom|PronType=Art	139	det	_	_
+140		hinn	DET	D-N	Case=Nom	139	det	_	_
 141	10	tíu	NUM	NUM-N	Case=Nom	139	xcomp	_	SpaceAfter=No
 142	.	.	PUNCT	.	_	1	punct	_	_
 
@@ -461,7 +461,7 @@
 # sent_id = RUV_TGS_2016_G-2-1031922.SANITY,.14
 # X_IDs = ID_missing_30 ; ID_missing_31 ; ID_missing_32
 # text = Mikill fjöldi keppenda er í 100 m skriðsundinu og er því keppt í níu riðlum, og er Bryndís Rún skráð í fimmta riðil í undanrásunum.
-1	Mikill	mikill	DET	Q-N	Case=Nom|Degree=Pos	2	amod	_	_
+1	Mikill	mikill	DET	Q-N	Case=Nom	2	amod	_	_
 2	fjöldi	fjöldi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 3	keppenda	keppandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	nmod:poss	_	_
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_

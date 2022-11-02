@@ -16,11 +16,11 @@
 13	ágúst	ágúst	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 14	og	og	CCONJ	CONJ	_	18	cc	_	_
 15	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	18	aux	_	_
-16	öll	allur	DET	Q-N	Case=Nom|Degree=Pos	17	amod	_	_
+16	öll	allur	DET	Q-N	Case=Nom	17	amod	_	_
 17	heimsbyggðin	heimsbyggð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
 18	fylgjast	fylgja	VERB	VB	VerbForm=Inf	6	conj	_	OriginalHead=0
 19	með	með	ADP	P	_	22	case	_	_
-20	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	22	det	_	_
+20	þessari	þessi	DET	D-D	Case=Dat	22	det	_	_
 21	stærstu	stór	ADJ	ADJS-D	Case=Dat|Degree=Sup	22	amod	_	_
 22	íþróttahátíð	íþróttahátíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
 23	heims	heimur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	nmod:poss	_	SpaceAfter=No
@@ -45,7 +45,7 @@
 14	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
 15	upp	upp	ADP	RP	_	13	compound:prt	_	_
 16	með	með	ADP	P	_	18	case	_	_
-17	ýmsum	ýmis	DET	Q-D	Case=Dat|Degree=Pos	18	amod	_	_
+17	ýmsum	ýmis	DET	Q-D	Case=Dat	18	amod	_	_
 18	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -57,7 +57,7 @@
 3	birtast	birta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	pistlar	pistill	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
 5	í	í	ADP	P	_	7	case	_	_
-6	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	7	amod	_	_
+6	öllum	allur	DET	Q-D	Case=Dat	7	amod	_	_
 7	þáttum	þáttur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
 8	Sportrásarinnar	sportrás	PROPN	NPR-G	_	7	nmod:poss	_	_
 9	á	á	ADP	P	_	10	case	_	_
@@ -83,7 +83,7 @@
 10	talsvert	talsvert	ADV	ADV	Degree=Pos	11	amod	_	_
 11	eldri	gamall	ADJ	ADJR-N	Case=Nom|Degree=Cmp	9	amod	_	_
 12	en	en	ADP	P	_	13	case	_	_
-13	flestir	margur	DET	QS-N	Case=Nom|Degree=Pos	11	amod	_	_
+13	flestir	margur	DET	QS-N	Case=Nom	11	amod	_	_
 14	aðrir	annar	PRON	OTHER-N	Case=Nom	13	amod	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -108,8 +108,8 @@
 2	Oksana	oksana	PROPN	NPR-N	_	1	appos	_	_
 3	Chusovitina	chusovitina	PROPN	NPR-N	_	2	flat:name	_	_
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
-5	ein	einn	DET	ONE-N	Case=Nom|Number=Sing	6	det	_	_
-6	þeirra	sá	DET	D-G	Case=Gen|PronType=Art	1	nsubj	_	_
+5	ein	einn	DET	ONE-N	Case=Nom	6	det	_	_
+6	þeirra	sá	DET	D-G	Case=Gen	1	nsubj	_	_
 7	sem	sem	SCONJ	C	_	9	mark	_	_
 8	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	9	aux	_	_
 9	keppa	keppa	VERB	VB	VerbForm=Inf	6	acl:relcl	_	_
@@ -137,7 +137,7 @@
 # sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.8
 # X_ID = ID_missing_10
 # text = Þetta væri svosem ekki í frásögu færandi nema fyrir þær sakir að Chusovitina verður 41 árs þegar Ólympíuleikarnir í Ríó hefjast og þetta verða sjöundu Ólympíuleikar hennar í röð.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	9	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	9	nsubj	_	_
 2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	9	cop	_	_
 3	svosem	svosem	ADV	ADV	Degree=Pos	9	advmod	_	_
 4	ekki	ekki	ADV	NEG	_	9	advmod	_	_
@@ -146,7 +146,7 @@
 7	færandi	færa	VERB	VAG	Tense=Pres|VerbForm=Part	9	acl	_	_
 8	nema	nema	ADP	P	_	9	case	_	_
 9	fyrir	fyrir	ADP	P	_	0	root	_	_
-10	þær	sá	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+10	þær	sá	DET	D-A	Case=Acc	11	det	_	_
 11	sakir	sök	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	conj	_	_
 12	að	að	SCONJ	C	_	14	mark	_	_
 13	Chusovitina	chusovitina	PROPN	NPR-N	_	14	nsubj	_	_
@@ -159,7 +159,7 @@
 20	Ríó	ríó	PROPN	NPR-D	_	21	obl	_	_
 21	hefjast	hefja	VERB	VBPI	Mood=Ind|Tense=Pres	14	obl	_	_
 22	og	og	CCONJ	CONJ	_	24	cc	_	_
-23	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	24	nsubj	_	_
+23	þetta	þessi	DET	D-N	Case=Nom	24	nsubj	_	_
 24	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	14	conj	_	_
 25	sjöundu	sjöundi	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	xcomp	_	_
 26	Ólympíuleikar	ólympíuleikar	PROPN	NPRS-N	_	25	conj	_	_
@@ -203,7 +203,7 @@
 3	þó	þó	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 5	undir	undir	ADP	P	_	7	case	_	_
-6	neinum	neinn	DET	Q-D	Case=Dat|Degree=Pos	7	amod	_	_
+6	neinum	neinn	DET	Q-D	Case=Dat	7	amod	_	_
 7	þjóðfána	þjóðfáni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 8	heldur	heldur	ADV	ADVR	Degree=Cmp	23	advmod	_	_
 9	fyrir	fyrir	ADP	P	_	11	case	_	_
@@ -305,7 +305,7 @@
 10	hún	hún	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 11	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	8	conj	_	OriginalHead=0
 12	ríkisborgari	ríkisborgari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	xcomp	_	_
-13	þess	sá	DET	D-G	Case=Gen|PronType=Art	14	det	_	_
+13	þess	sá	DET	D-G	Case=Gen	14	det	_	_
 14	lands	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	nmod:poss	_	_
 15	og	og	CCONJ	CONJ	_	16	cc	_	_
 16	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	8	conj	_	OriginalHead=0
@@ -566,7 +566,7 @@
 18	þá	þá	ADV	ADV	Degree=Pos	23	advmod	_	_
 19	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	23	aux	_	_
 20	heldur	gjarna	ADV	ADVR	Degree=Cmp	23	advmod	_	_
-21	engin	enginn	DET	Q-N	Case=Nom|Degree=Pos	22	amod	_	_
+21	engin	enginn	DET	Q-N	Case=Nom	22	amod	_	_
 22	fimleikakona	fimleikakona	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	nsubj	_	_
 23	keppt	keppa	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
 24	jafn	jafn	ADV	ADV	Degree=Pos	23	advmod	_	_
@@ -644,7 +644,7 @@
 2	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	á	á	ADP	P	_	6	case	_	_
-5	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	6	amod	_	_
+5	öllum	allur	DET	Q-D	Case=Dat	6	amod	_	_
 6	leikum	leik	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
 7	frá	frá	ADP	P	_	10	case	_	_
 8	og	og	CCONJ	CONJ	_	10	cc	_	_
@@ -703,7 +703,7 @@
 34	eftir	eftir	ADP	P	_	35	case	_	_
 35	aðgerð	aðgerð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
 36	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	8	conj	_	OriginalHead=0
-37	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	36	nsubj	_	_
+37	ekkert	enginn	DET	Q-N	Case=Nom	36	nsubj	_	_
 38	af	af	ADP	P	_	39	case	_	_
 39	þátttöku	þátttaka	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	36	obl	_	_
 40	hans	hann	PRON	PRO-G	Case=Gen	39	nmod:poss	_	SpaceAfter=No
@@ -759,7 +759,7 @@
 # sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.29
 # X_ID = ID_missing_50
 # text = Það met er í eigu sænsku skyttunar Oscars Swahn sem var 72 ára og 281 dags gamall þegar hann keppti í skotfimi á Ólympíuleikunum í Antwerpen árið 1920.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Það	sá	DET	D-N	Case=Nom	2	det	_	_
 2	met	met	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 4	í	í	ADP	P	_	5	case	_	_
@@ -967,7 +967,7 @@
 4	elsti	gamall	ADJ	ADJS-N	Case=Nom|Degree=Sup	5	amod	_	_
 5	keppandinn	keppandi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 6	af	af	ADP	P	_	8	case	_	_
-7	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	8	amod	_	_
+7	öllum	allur	DET	Q-D	Case=Dat	8	amod	_	_
 8	íþróttamönnunum	íþróttamaður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
 9	sem	sem	SCONJ	C	_	10	mark	_	_
 10	kepptu	keppa	VERB	VBDI	Mood=Ind|Tense=Past	8	acl:relcl	_	_
@@ -1017,9 +1017,9 @@
 12	í	í	ADP	P	_	13	case	_	_
 13	ágúst	ágúst	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 14	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
-15	hins	hinn	DET	D-G	Case=Gen|PronType=Art	16	det	_	_
+15	hins	hinn	DET	D-G	Case=Gen	16	det	_	_
 16	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	obl	_	_
-17	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	19	amod	_	_
+17	allir	allur	DET	Q-N	Case=Nom	19	amod	_	_
 18	talsvert	talsvert	ADV	ADV	Degree=Pos	19	amod	_	_
 19	yngri	ungur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	0	root	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	19	punct	_	_

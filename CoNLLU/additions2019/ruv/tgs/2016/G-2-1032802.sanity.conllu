@@ -36,7 +36,7 @@
 # sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.2
 # X_ID = ID_missing_2
 # text = Þetta er persónulegt met hjá Collins.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	persónulegt	persónulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
 4	met	met	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
@@ -68,7 +68,7 @@
 19	að	að	SCONJ	C	_	23	mark	_	_
 20	aldurinn	aldur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	nsubj	_	_
 21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
-22	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	23	amod	_	_
+22	ekkert	enginn	DET	Q-N	Case=Nom	23	amod	_	_
 23	annað	annar	PRON	OTHER-N	Case=Nom	18	ccomp	_	_
 24	en	en	ADP	P	_	25	case	_	_
 25	tala	tala	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
@@ -205,7 +205,7 @@
 18	en	en	CCONJ	CONJ	_	20	cc	_	_
 19	hann	hann	PRON	PRO-N	Case=Nom	20	nsubj	_	_
 20	má	mega	VERB	MDPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
-21	mest	mikill	DET	QS-A	Case=Acc|Degree=Pos	20	obl	_	_
+21	mest	mikill	DET	QS-A	Case=Acc	20	obl	_	_
 22	vera	vera	AUX	BE	VerbForm=Inf	20	cop	_	_
 23	+	plús	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	xcomp	_	SpaceAfter=No
 24	2,0	2,0	NUM	NUM-N	Case=Nom	23	nummod	_	SpaceAfter=No
@@ -365,7 +365,7 @@
 12	nú	nú	ADV	ADV	Degree=Pos	11	advmod	_	_
 13	sterkari	sterkur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	11	amod	_	_
 14	en	en	ADP	P	_	16	case	_	_
-15	nokkru	nokkur	DET	Q-D	Case=Dat|Degree=Pos	16	amod	_	_
+15	nokkru	nokkur	DET	Q-D	Case=Dat	16	amod	_	_
 16	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	amod	_	_
 17	fyrr	snemma	ADV	ADVR	Degree=Cmp	16	advmod	_	_
 18	til	til	ADP	P	_	19	case	_	_

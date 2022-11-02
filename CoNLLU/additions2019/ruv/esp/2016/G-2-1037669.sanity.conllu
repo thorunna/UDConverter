@@ -44,13 +44,13 @@
 4	að	að	SCONJ	C	_	5	mark	_	_
 5	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	ccomp	_	_
 6	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	5	cop	_	_
-7	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	8	amod	_	_
+7	ekkert	enginn	DET	Q-N	Case=Nom	8	amod	_	_
 8	lið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	obl	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	fara	fara	VERB	VB	VerbForm=Inf	5	xcomp	_	_
 11	í	í	ADP	P	_	14	case	_	_
 12	gegnum	gegnum	ADP	P	_	14	case	_	_
-13	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	14	det	_	_
+13	þessa	þessi	DET	D-A	Case=Acc	14	det	_	_
 14	deild	deild	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 15	án	án	ADP	P	_	16	case	_	_
 16	þess	það	PRON	PRO-G	Case=Gen	10	obl	_	_
@@ -76,7 +76,7 @@
 # sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.3
 # X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5
 # text = Meiri umfjöllun Vefsíðan fotbolti.net og AZAZO tókum höndum saman og bjuggu til svokallaða draumaliðsdeild eins og hefur tíðkast í kringum úrvalsdeild karla frá 2012.
-1	Meiri	mikill	DET	QR-N	Case=Nom|Degree=Pos	2	amod	_	_
+1	Meiri	mikill	DET	QR-N	Case=Nom	2	amod	_	_
 2	umfjöllun	umfjöllun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 3	Vefsíðan	vefsíða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
 4	fotbolti.net	fotbolti.net	PRON	PRO-N	Case=Nom	3	appos	_	_
@@ -110,7 +110,7 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	þannig	þannig	ADV	ADV	Degree=Pos	1	advmod	_	_
 4	að	að	SCONJ	C	_	7	mark	_	_
-5	hver	hver	DET	Q-N	Case=Nom|Degree=Pos	6	amod	_	_
+5	hver	hver	DET	Q-N	Case=Nom	6	amod	_	_
 6	þátttakandi	þátttakandi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 7	fær	fá	VERB	VBPI	Mood=Ind|Tense=Pres	3	advcl	_	_
 8	100	hundrað	NUM	NUM-A	Case=Acc	9	nummod	_	_
@@ -167,13 +167,13 @@
 1	„	„	PUNCT	"	_	2	punct	_	_
 2	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
-4	miklu	mikill	DET	Q-D	Case=Dat|Degree=Pos	5	obl	_	_
-5	meiri	mikill	ADV	QR-N	Case=Nom|Degree=Pos	6	advmod	_	_
+4	miklu	mikill	DET	Q-D	Case=Dat	5	obl	_	_
+5	meiri	mikill	ADV	QR-N	Case=Nom	6	advmod	_	_
 6	áhugi	áhugi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	obl	_	_
 7	og	og	CCONJ	CONJ	_	9	cc	_	_
 8	fjölmiðlar	fjölmiðill	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
 9	sýna	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-10	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	9	iobj	_	_
+10	þessu	þessi	DET	D-D	Case=Dat	9	iobj	_	_
 11	rosalegan	rosalegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
 12	áhuga	áhugi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
 13	og	og	CCONJ	CONJ	_	18	cc	_	_
@@ -196,7 +196,7 @@
 7	út	út	ADP	RP	_	8	compound:prt	_	_
 8	af	af	ADV	ADV	Degree=Pos	5	advmod	_	_
 9	ef	ef	ADP	P	_	12	case	_	_
-10	einhver	einhver	DET	Q-N	Case=Nom|Degree=Pos	12	nsubj	_	_
+10	einhver	einhver	DET	Q-N	Case=Nom	12	nsubj	_	_
 11	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	12	aux	_	_
 12	keypt	kaupa	VERB	VBN	Tense=Past|VerbForm=Part	3	obl	_	_
 13	mann	maður	PRON	MAN-A	_	12	obj	_	_
@@ -220,7 +220,7 @@
 # X_IDs = ID_missing_13 ; ID_missing_14
 # text = Skiptir miklu máli Stuðningur við knattspyrnufólk er góður á Selfossi að mati Guðmundu Brynju sem viðurkennir þó að sér sárni þegar færri mæta á kvennaleiki en karlaleiki.
 1	Skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-2	miklu	mikill	DET	Q-D	Case=Dat|Degree=Pos	3	amod	_	_
+2	miklu	mikill	DET	Q-D	Case=Dat	3	amod	_	_
 3	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obj	_	_
 4	Stuðningur	stuðningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 5	við	við	ADP	P	_	6	case	_	_
@@ -240,7 +240,7 @@
 19	sér	sig	PRON	PRO-D	Case=Dat	20	nsubj	_	_
 20	sárni	sárna	VERB	VBPS	Mood=Sub|Tense=Pres	16	ccomp	_	_
 21	þegar	þegar	ADP	P	_	23	case	_	_
-22	færri	fár	DET	Q-N	Case=Nom|Degree=Pos	23	nsubj	_	_
+22	færri	fár	DET	Q-N	Case=Nom	23	nsubj	_	_
 23	mæta	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	20	obl	_	_
 24	á	á	ADP	P	_	25	case	_	_
 25	kvennaleiki	kvennaleikur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
@@ -269,7 +269,7 @@
 # X_ID = ID_missing_16
 # text = „ Þetta skiptir okkur gríðarlega miklu máli.
 1	„	„	PUNCT	"	_	3	punct	_	_
-2	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+2	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 3	skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	okkur	ég	PRON	PRO-A	Case=Acc	3	iobj	_	_
 5	gríðarlega	gríðarlega	ADV	ADV	Degree=Pos	6	amod	_	_
@@ -282,7 +282,7 @@
 # text = Að finna þessa miklu umfjöllun sem er í gangi og þetta gefur manni byr undir báða vængi að halda áfram,“ segir Ásgerður.
 1	Að	að	PART	TO	_	2	mark	_	_
 2	finna	finna	VERB	VB	VerbForm=Inf	0	root	_	_
-3	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	5	det	_	_
+3	þessa	þessi	DET	D-A	Case=Acc	5	det	_	_
 4	miklu	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
 5	umfjöllun	umfjöllun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 6	sem	sem	SCONJ	C	_	9	mark	_	_
@@ -290,12 +290,12 @@
 8	í	í	ADP	P	_	9	case	_	_
 9	gangi	gangur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	acl:relcl	_	_
 10	og	og	CCONJ	CONJ	_	12	cc	_	_
-11	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	12	nsubj	_	_
+11	þetta	þessi	DET	D-N	Case=Nom	12	nsubj	_	_
 12	gefur	gefa	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
 13	manni	maður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	iobj	_	_
 14	byr	byr	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obj	_	_
 15	undir	undir	ADP	P	_	17	case	_	_
-16	báða	báðir	DET	Q-A	Case=Acc|Degree=Pos	17	amod	_	_
+16	báða	báðir	DET	Q-A	Case=Acc	17	amod	_	_
 17	vængi	vængur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
 18	að	að	PART	TO	_	19	mark	_	_
 19	halda	halda	VERB	VB	VerbForm=Inf	12	advcl	_	_

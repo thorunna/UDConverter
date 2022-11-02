@@ -3,7 +3,7 @@
 # text = ÍBV vann 1 útisigur á Þrótti R. í fyrsta leik 6. umferðar Pepsi-deildar karla í knattspyrnu í dag.
 1	ÍBV	íbv	PROPN	NPR-N	_	2	nsubj	_	_
 2	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	1	einn	DET	ONE-N	Case=Nom|Number=Sing	4	dep	_	_
+3	1	einn	DET	ONE-N	Case=Nom	4	dep	_	_
 4	útisigur	útisigur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 5	á	á	ADP	P	_	6	case	_	_
 6	Þrótti	þróttur	PROPN	NPR-D	_	4	obl	_	_
@@ -45,14 +45,14 @@
 2	léku	leika	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	manni	maður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	amod	_	_
 4	færri	fár	ADJ	ADJR-A	Case=Acc|Degree=Cmp	3	amod	_	_
-5	allan	allur	DET	Q-A	Case=Acc|Degree=Pos	7	amod	_	_
+5	allan	allur	DET	Q-A	Case=Acc	7	amod	_	_
 6	síðari	síðari	ADJ	ADJR-A	Case=Acc|Degree=Cmp	7	amod	_	_
 7	hálfleik	hálfleikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 8	og	og	CCONJ	CONJ	_	11	cc	_	_
 9	síðustu	síðari	ADJ	ADJS-A	Case=Acc|Degree=Sup	11	amod	_	_
 10	sjö	sjö	NUM	NUM-A	Case=Acc	11	nummod	_	_
 11	mínútur	mínúta	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	conj	_	_
-12	þess	sá	DET	D-G	Case=Gen|PronType=Art	11	nmod:poss	_	_
+12	þess	sá	DET	D-G	Case=Gen	11	nmod:poss	_	_
 13	fyrri	fyrri	ADJ	ADJR-G	Case=Gen|Degree=Cmp	12	amod	_	_
 14	að	að	ADP	P	_	15	case	_	_
 15	auki	auki	ADV	ADV	Degree=Pos	11	obl	_	SpaceAfter=No
@@ -89,7 +89,7 @@
 12	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
 13	þar	þar	ADV	ADV	Degree=Pos	17	advmod	_	_
 14	til	til	ADP	P	_	17	case	_	_
-15	fleiri	margur	DET	QR-N	Case=Nom|Degree=Pos	16	amod	_	_
+15	fleiri	margur	DET	QR-N	Case=Nom	16	amod	_	_
 16	úrslit	úrslit	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	nsubj	_	_
 17	líta	líta	VERB	VBPI	Mood=Ind|Tense=Pres	12	obl	_	_
 18	dagsins	dagur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	nmod:poss	_	_
@@ -108,7 +108,7 @@
 4	11.	ellefti	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
 5	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
 6	eða	eða	CCONJ	CONJ	_	8	cc	_	_
-7	því	sá	DET	D-D	Case=Dat|PronType=Art	8	det	_	_
+7	því	sá	DET	D-D	Case=Dat	8	det	_	_
 8	næstneðsta	næstneðstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	5	conj	_	_
 9	með	með	ADP	P	_	11	case	_	_
 10	4	fjórir	NUM	NUM-A	Case=Acc	11	nummod	_	_

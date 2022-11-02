@@ -115,7 +115,7 @@
 # sent_id = RUV_TGS_2016_G-2-1032486.SANITY,.5
 # X_ID = ID_missing_8
 # text = Sú danska var aðeins 9/100 úr sekúndu á undan Hrafnhildi í morgun.
-1	Sú	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Sú	sá	DET	D-N	Case=Nom	2	det	_	_
 2	danska	danskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	nsubj	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
 4	aðeins	aðeins	ADV	FP	Degree=Pos	6	advmod	_	_
@@ -137,7 +137,7 @@
 2	Ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
 4	nú	nú	ADV	ADV	Degree=Pos	6	advmod	_	_
-5	svolítið	svolítill	DET	Q-A	Case=Acc|Degree=Pos	6	obl	_	_
+5	svolítið	svolítill	DET	Q-A	Case=Acc	6	obl	_	_
 6	þreytt	þreyttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 7	þó	þó	ADV	ADV	Degree=Pos	6	advmod	_	_
 8	það	það	PRON	PRO-N	Case=Nom	11	nsubj	_	_
@@ -151,7 +151,7 @@
 # sent_id = RUV_TGS_2016_G-2-1032486.SANITY,.7
 # X_ID = ID_missing_10
 # text = Þetta var kannski ekki eins auðvelt og í gær.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
 3	kannski	kannski	ADV	ADV	Degree=Pos	6	advmod	_	_
 4	ekki	ekki	ADV	NEG	_	6	advmod	_	_
@@ -171,7 +171,7 @@
 4	bara	bara	ADV	FP	Degree=Pos	5	advmod	_	_
 5	ánægð	ánægður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	með	með	ADP	P	_	7	case	_	_
-7	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	5	obl	_	SpaceAfter=No
+7	þetta	þessi	DET	D-A	Case=Acc	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	5	punct	_	_
 
 # sent_id = RUV_TGS_2016_G-2-1032486.SANITY,.9
@@ -339,7 +339,7 @@
 9	í	í	ADP	P	_	10	case	_	_
 10	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 11	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	acl	_	_
-12		hinn	DET	D-N	Case=Nom|PronType=Art	11	det	_	_
+12		hinn	DET	D-N	Case=Nom	11	det	_	_
 13	18	átján	NUM	NUM-N	Case=Nom	11	xcomp	_	SpaceAfter=No
 14	:	:	PUNCT	,	_	15	punct	_	_|SpaceAfter=No
 15	21	21	NUM	NUM-N	Case=Nom	13	conj	_	_
@@ -364,7 +364,7 @@
 34	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	35	nmod:poss	_	_
 35	bringusundi	bringusund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	_
 36	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	acl	_	_
-37		hinn	DET	D-N	Case=Nom|PronType=Art	36	det	_	_
+37		hinn	DET	D-N	Case=Nom	36	det	_	_
 38	18	átján	NOUN	NP	_	36	xcomp	_	SpaceAfter=No
 39	:	:	PUNCT	,	_	40	punct	_	_|SpaceAfter=No
 40	13	þrettán	NUM	NUM-N	Case=Nom	38	conj	_	_
@@ -378,7 +378,7 @@
 48	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	49	nmod:poss	_	_
 49	baksundi	baksund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	42	obl	_	_
 50	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	42	acl	_	_
-51		hinn	DET	D-N	Case=Nom|PronType=Art	50	det	_	_
+51		hinn	DET	D-N	Case=Nom	50	det	_	_
 52	18	átján	NUM	NUM-N	Case=Nom	50	xcomp	_	SpaceAfter=No
 53	:	:	PUNCT	,	_	54	punct	_	_|SpaceAfter=No
 54	37	37	NUM	NUM-N	Case=Nom	52	conj	_	SpaceAfter=No

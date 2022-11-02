@@ -42,7 +42,7 @@
 24	enn	enn	ADV	ADV	Degree=Pos	23	advmod	_	_
 25	golf	golf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obj	_	_
 26	á	á	ADP	P	_	28	case	_	_
-27	hverjum	hver	DET	Q-D	Case=Dat|Degree=Pos	28	amod	_	_
+27	hverjum	hver	DET	Q-D	Case=Dat	28	amod	_	_
 28	degi	dagur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
 29	þegar	þegar	ADP	P	_	31	case	_	_
 30	veður	veður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	31	nsubj	_	_
@@ -119,7 +119,7 @@
 10	nýbúið	nýbúinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	obl	_	_
 11	að	að	PART	TO	_	12	mark	_	_
 12	stofna	stofna	VERB	VB	VerbForm=Inf	10	xcomp	_	_
-13	þennan	þessi	DET	D-A	Case=Acc|PronType=Art	14	det	_	_
+13	þennan	þessi	DET	D-A	Case=Acc	14	det	_	_
 14	golfklúbb	golfklúbbur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obj	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -156,13 +156,13 @@
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	nefnilega	nefnilega	ADV	ADV	Degree=Pos	1	advmod	_	_
 4	fyrir	fyrir	ADP	P	_	5	case	_	_
-5	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
+5	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
 6	á	á	ADP	P	_	8	case	_	_
-7	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	8	amod	_	_
+7	öllum	allur	DET	Q-D	Case=Dat	8	amod	_	_
 8	aldri	aldur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	11	punct	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
 10	ekki	ekki	ADV	NEG	_	11	advmod	_	_
-11	síst	varla	ADV	ADVS	Degree=Sup	1	obl	_	_
+11	síst	varla	ADV	ADVS	Degree=Sup	5	conj	_	_
 12	fyrir	fyrir	ADP	P	_	14	case	_	_
 13	gamalt	gamall	ADJ	ADJ-A	Case=Acc|Degree=Pos	14	amod	_	_
 14	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
@@ -174,16 +174,16 @@
 1	Maður	maður	PRON	MAN-N	_	3	nsubj	_	_
 2	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	stundað	stunda	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-4	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	5	det	_	_
+4	þessa	þessi	DET	D-A	Case=Acc	5	det	_	_
 5	íþrótt	íþrótt	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
 6	meðan	meðan	ADP	P	_	9	case	_	_
 7	maður	maður	PRON	MAN-N	_	9	nsubj	_	_
 8	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	9	aux	_	_
 9	gengið	ganga	VERB	VBN	Tense=Past|VerbForm=Part	3	obl	_	_
-10	sæmilega	sæmilega	ADV	ADV	Degree=Pos	9	amod	_	_
-11	uppréttur	uppréttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	SpaceAfter=No
+10	sæmilega	sæmilega	ADV	ADV	Degree=Pos	11	amod	_	_
+11	uppréttur	uppréttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	11	punct	_	SpaceAfter=No
-13	“	“	PUNCT	"	_	3	punct	_	_
+13	“	“	PUNCT	"	_	11	punct	_	_
 14	Stefán	stefán	PROPN	NPR-N	_	20	nsubj	_	_
 15	sem	sem	SCONJ	C	_	16	mark	_	_
 16	fæddist	fæða	VERB	VBDI	Mood=Ind|Tense=Past	14	acl:relcl	_	_
@@ -197,7 +197,7 @@
 24	í	í	ADP	P	_	25	case	_	_
 25	sund	sund	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obl	_	_
 26	á	á	ADP	P	_	28	case	_	_
-27	hverjum	hver	DET	Q-D	Case=Dat|Degree=Pos	28	amod	_	_
+27	hverjum	hver	DET	Q-D	Case=Dat	28	amod	_	_
 28	degi	dagur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
 29	yfir	yfir	ADP	P	_	30	case	_	_
 30	sumarið	sumar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obl	_	_
@@ -238,7 +238,7 @@
 1	„	„	PUNCT	"	_	2	punct	_	_
 2	Svo	svo	ADV	ADV	Degree=Pos	0	root	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
-4	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	nsubj	_	_
+4	þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 5	þannig	þannig	ADV	ADV	Degree=Pos	2	advmod	_	_
 6	að	að	SCONJ	C	_	7	mark	_	_
 7	maður	maður	PRON	MAN-N	_	5	advcl	_	_

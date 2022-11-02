@@ -54,14 +54,14 @@
 21	fjórum	fjórir	NUM	NUM-D	Case=Dat	23	nummod	_	_
 22	öðrum	annar	PRON	OTHER-D	Case=Dat	23	det	_	_
 23	kylfingum	kylfingur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obl	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	3	punct	_	_
+24	.	.	PUNCT	.	_	19	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1034247,.3
 # X_ID = ID_missing_4
 # text = Enn eiga margir eftir að klára hringinn í dag.
 1	Enn	enn	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	2	nsubj	_	_
+3	margir	margur	DET	Q-N	Case=Nom	2	nsubj	_	_
 4	eftir	eftir	ADV	ADV	Degree=Pos	2	advmod	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	klára	klára	VERB	VB	VerbForm=Inf	2	xcomp	_	_
@@ -83,8 +83,8 @@
 8	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 9	sem	sem	SCONJ	C	_	13	mark	_	_
 10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-11	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	13	det	_	_
-12	það	sá	DET	D-N	Case=Nom|PronType=Art	13	det	_	_
+11	eitt	einn	DET	ONE-N	Case=Nom	13	det	_	_
+12	það	sá	DET	D-N	Case=Nom	13	det	_	_
 13	sterkasta	sterkur	ADJ	ADJS-N	Case=Nom|Degree=Sup	8	acl:relcl	_	_
 14	á	á	ADP	P	_	15	case	_	_
 15	árinu	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
@@ -104,11 +104,11 @@
 7	hringinn	hringur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 8	á	á	ADP	P	_	10	case	_	_
 9	72	72	NUM	NUM-D	Case=Dat	10	nummod	_	_
-10	höggum	högg	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	SpaceAfter=No
+10	höggum	högg	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
 11	,	,	PUNCT	,	_	10	punct	_	_
 12	eða	eða	CCONJ	CONJ	_	14	cc	_	_
 13	á	á	ADP	P	_	14	case	_	_
-14	pari	par	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
+14	pari	par	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	conj	_	SpaceAfter=No
 15	,	,	PUNCT	,	_	6	punct	_	_
 16	en	en	CCONJ	CONJ	_	30	cc	_	_
 17	þeir	hann	PRON	PRO-N	Case=Nom	30	nsubj	_	_
@@ -128,7 +128,7 @@
 31	keppni	keppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obj	_	_
 32	í	í	ADP	P	_	33	case	_	_
 33	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	SpaceAfter=No
-34	.	.	PUNCT	.	_	6	punct	_	_
+34	.	.	PUNCT	.	_	30	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1034247,.6
 # X_ID = ID_missing_8

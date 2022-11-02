@@ -424,6 +424,7 @@ class Converter:
 
         for rule in rules:
             for child in main_clause:
+                print("child:", child, type(child))
                 try:
                     if child.height() == 2 and child[0][0] == "*":
                         continue
@@ -437,7 +438,7 @@ class Converter:
                         # # DEBUG:
                         # print('Head rules:', rules)
                         # input()
-
+                        print("CHILD ID: ", child.id())
                         tree.set_id(child.id())
 
                         # # DEBUG

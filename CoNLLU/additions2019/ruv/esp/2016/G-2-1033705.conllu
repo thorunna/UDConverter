@@ -19,7 +19,7 @@
 16	með	með	ADP	P	_	18	case	_	_
 17	stakri	stakur	ADJ	ADJ-D	Case=Dat|Degree=Pos	18	amod	_	_
 18	prýði	prýði	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	8	punct	_	_
+19	.	.	PUNCT	.	_	12	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.2
 # X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5
@@ -29,7 +29,7 @@
 3	kepptu	keppa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 4	á	á	ADP	P	_	5	case	_	_
 5	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	3	punct	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
 7	þeir	hann	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 8	komust	koma	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
 9	átta	átta	NUM	NUM-D	Case=Dat	10	nummod	_	_
@@ -40,19 +40,19 @@
 14	settu	setja	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
 15	fjögur	fjórir	NUM	NUM-A	Case=Acc	16	nummod	_	_
 16	Íslandsmet	íslandsmet	PROPN	NPRS-A	_	14	obj	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	3	punct	_	_
+17	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.3
 # X_ID = ID_missing_6
 # text = Þetta var besti árangur íslenskra sundmanna til þessa.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 3	besti	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	4	amod	_	_
 4	árangur	árangur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 5	íslenskra	íslenskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	6	amod	_	_
 6	sundmanna	sundmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
 7	til	til	ADP	P	_	8	case	_	_
-8	þessa	þessi	DET	D-G	Case=Gen|PronType=Art	4	obl	_	SpaceAfter=No
+8	þessa	þessi	DET	D-G	Case=Gen	4	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.4
@@ -94,7 +94,7 @@
 # text = Hrafnhildur var eini kvenkeppandinn á mótinu sem komst á verðlaunapall í öllum bringusundsgreinunum þremur og varð fyrsta íslenska sundkonan til að vinna til verðlauna á stórmóti í 50 m laug.
 1	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	4	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
-3	eini	einn	DET	ONE-N	Case=Nom|Number=Sing	4	det	_	_
+3	eini	einn	DET	ONE-N	Case=Nom	4	det	_	_
 4	kvenkeppandinn	kvenkeppandi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 5	á	á	ADP	P	_	6	case	_	_
 6	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
@@ -103,7 +103,7 @@
 9	á	á	ADP	P	_	10	case	_	_
 10	verðlaunapall	verðlaunapallur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
 11	í	í	ADP	P	_	13	case	_	_
-12	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	13	amod	_	_
+12	öllum	allur	DET	Q-D	Case=Dat	13	amod	_	_
 13	bringusundsgreinunum	bringusundsgreinir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
 14	þremur	þrír	NUM	NUM-D	Case=Dat	13	nummod	_	_
 15	og	og	CCONJ	CONJ	_	16	cc	_	_
@@ -122,7 +122,7 @@
 28	50	fimmtíu	NUM	NUM-G	Case=Gen	29	nummod	_	_
 29	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	30	nmod:poss	_	_
 30	laug	laug	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	4	punct	_	_
+31	.	.	PUNCT	.	_	16	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.7
 # X_IDs = ID_missing_11 ; ID_missing_12
@@ -136,11 +136,11 @@
 7	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	8	cop	_	_
 8	jafnvígt	jafnvígur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	ccomp	_	_
 9	á	á	ADP	P	_	11	case	_	_
-10	allar	allur	DET	Q-A	Case=Acc|Degree=Pos	11	amod	_	_
+10	allar	allur	DET	Q-A	Case=Acc	11	amod	_	_
 11	vegalengdir	vegalengd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	amod	_	_
 12	og	og	CCONJ	CONJ	_	17	cc	_	_
 13	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	17	aux	_	_
-14	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	15	det	_	_
+14	þessi	þessi	DET	D-N	Case=Nom	15	det	_	_
 15	frammistaða	frammistaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
 16	Hrafnhildar	hrafnhildur	PROPN	NPR-G	_	15	nmod:poss	_	_
 17	vakið	vekja	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
@@ -148,7 +148,7 @@
 19	athygli	athygli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
 20	innan	innan	ADP	P	_	21	case	_	_
 21	sundheimsins	sundheim	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	4	punct	_	_
+22	.	.	PUNCT	.	_	17	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.8
 # X_ID = ID_missing_13
@@ -211,7 +211,7 @@
 39	í	í	ADP	P	_	41	case	_	_
 40	áttunda	áttundi	ADJ	ADJ-D	Case=Dat|Degree=Pos	41	amod	_	_
 41	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	38	obl	_	SpaceAfter=No
-42	.	.	PUNCT	.	_	2	punct	_	_
+42	.	.	PUNCT	.	_	38	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.10
 # X_ID = ID_missing_17
@@ -300,7 +300,7 @@
 22	tiltekur	tiltaka	VERB	VBPI	Mood=Ind|Tense=Pres	9	conj	_	OriginalHead=0
 23	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	22	advmod	_	_
 24	innilaugarnar	innilaug	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obj	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	9	punct	_	_
+25	.	.	PUNCT	.	_	22	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.14
 # X_IDs = ID_missing_22 ; ID_missing_23
@@ -326,7 +326,7 @@
 19	stunda	stunda	VERB	VB	VerbForm=Inf	17	advcl	_	_
 20	nám	nám	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
 21	samhliða	samhliða	ADV	ADV	Degree=Pos	19	advmod	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	4	punct	_	_
+22	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.15
 # X_IDs = ID_missing_24 ; ID_missing_25
@@ -339,7 +339,7 @@
 6	að	að	PART	TO	_	7	mark	_	_
 7	æfa	æfa	VERB	VB	VerbForm=Inf	4	obl	_	_
 8	með	með	ADP	P	_	10	case	_	_
-9	þeim	sá	DET	D-D	Case=Dat|PronType=Art	10	det	_	_
+9	þeim	sá	DET	D-D	Case=Dat	10	det	_	_
 10	bestu	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	7	obl	_	_
 11	í	í	ADP	P	_	12	case	_	_
 12	heiminum	heimur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
@@ -352,7 +352,7 @@
 19	hann	hann	PRON	PRO-N	Case=Nom	20	nsubj	_	_
 20	gerist	gera	VERB	DOPI	Mood=Ind|Tense=Pres	17	obl	_	_
 21	bestur	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	20	amod	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	2	punct	_	_
+22	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.16
 # X_ID = ID_missing_26
@@ -377,9 +377,9 @@
 9	og	og	CCONJ	CONJ	_	10	cc	_	_
 10	teygjum	teygja	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obj	_	_
 11	og	og	CCONJ	CONJ	_	15	cc	_	_
-12	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	15	amod	_	_
+12	allt	allur	DET	Q-N	Case=Nom	15	amod	_	_
 13	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	15	aux	_	_
-14	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	15	nsubj	_	_
+14	þetta	þessi	DET	D-N	Case=Nom	15	nsubj	_	_
 15	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0
 16	til	til	ADP	P	_	17	case	_	_
 17	þess	það	PRON	PRO-G	Case=Gen	15	obl	_	_
@@ -390,7 +390,7 @@
 22	betri	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	21	amod	_	_
 23	en	en	ADP	P	_	24	case	_	_
 24	áður	áður	ADV	ADVR	Degree=Cmp	22	amod	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	3	punct	_	_
+25	.	.	PUNCT	.	_	15	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.18
 # X_ID = ID_missing_29
@@ -414,7 +414,7 @@
 17	umtalsvert	umtalsvert	ADV	ADV	Degree=Pos	18	amod	_	_
 18	betri	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	6	ccomp	_	_
 19	en	en	ADP	P	_	20	case	_	_
-20	sá	sá	DET	D-N	Case=Nom|PronType=Art	18	amod	_	_
+20	sá	sá	DET	D-N	Case=Nom	18	amod	_	_
 21	árangur	árangur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	_
 22	sem	sem	SCONJ	C	_	24	mark	_	_
 23	við	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
@@ -452,12 +452,12 @@
 25	að	að	PART	TO	_	26	mark	_	_
 26	komast	koma	VERB	VB	VerbForm=Inf	4	conj	_	OriginalHead=0
 27	í	í	ADP	P	_	28	case	_	_
-28	milliriðla	milliriðill	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	30	obl	_	_
+28	milliriðla	milliriðill	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obl	_	_
 29	og	og	CCONJ	CONJ	_	30	cc	_	_
-30	helst	gjarna	ADV	ADVS	Degree=Sup	26	obl	_	_
+30	helst	gjarna	ADV	ADVS	Degree=Sup	28	conj	_	_
 31	í	í	ADP	P	_	32	case	_	_
 32	úrslitariðla	úrslitariðill	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	30	obl	_	SpaceAfter=No
-33	.	.	PUNCT	.	_	4	punct	_	_
+33	.	.	PUNCT	.	_	26	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.20
 # X_ID = ID_missing_32
@@ -482,7 +482,7 @@
 # X_ID = ID_missing_33
 # text = „ Það sem er núna að gerast er að bæði sundfólkið og SSÍ eru með áætlanir sem ná lengra fram í tímann.
 1	„	„	PUNCT	"	_	2	punct	_	_
-2	Það	sá	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+2	Það	sá	DET	D-N	Case=Nom	0	root	_	_
 3	sem	sem	SCONJ	C	_	4	mark	_	_
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	acl:relcl	_	_
 5	núna	núna	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -516,7 +516,7 @@
 6	fyrir	fyrir	ADP	P	_	7	case	_	_
 7	Ólympíuleikana	ólympíuleikar	PROPN	NPRS-A	_	5	obl	_	_
 8	fyrir	fyrir	ADP	P	_	10	case	_	_
-9	mörgum	margur	DET	Q-D	Case=Dat|Degree=Pos	10	amod	_	_
+9	mörgum	margur	DET	Q-D	Case=Dat	10	amod	_	_
 10	mánuðum	mánuður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
 11	og	og	CCONJ	CONJ	_	14	cc	_	_
 12	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
@@ -529,7 +529,7 @@
 19	leikunum	leikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	_
 20	í	í	ADP	P	_	21	case	_	_
 21	ágúst	ágúst	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	4	punct	_	_
+22	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.23
 # X_ID = ID_missing_36
@@ -574,22 +574,22 @@
 # text = Þeir komust allir í milliriðla, þrír komust alla leið í úrslit og einn vann til verðlauna.
 1	Þeir	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	komust	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	2	amod	_	_
+3	allir	allur	DET	Q-N	Case=Nom	2	amod	_	_
 4	í	í	ADP	P	_	5	case	_	_
 5	milliriðla	milliriðill	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	2	punct	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
 7	þrír	þrír	NUM	NUM-N	Case=Nom	8	nsubj	_	_
 8	komust	koma	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-9	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	10	amod	_	_
+9	alla	allur	DET	Q-A	Case=Acc	10	amod	_	_
 10	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
 11	í	í	ADP	P	_	10	case	_	_
 12	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	_
 13	og	og	CCONJ	CONJ	_	15	cc	_	_
-14	einn	einn	DET	ONE-N	Case=Nom|Number=Sing	15	nsubj	_	_
+14	einn	einn	DET	ONE-N	Case=Nom	15	nsubj	_	_
 15	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
 16	til	til	ADP	P	_	17	case	_	_
 17	verðlauna	verðlaun	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	obl	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	2	punct	_	_
+18	.	.	PUNCT	.	_	15	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033705,.26
 # X_ID = ID_missing_41

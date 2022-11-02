@@ -172,8 +172,8 @@
 4	rosalega	rosalega	ADV	ADV	Degree=Pos	5	amod	_	_
 5	sátt	sáttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	með	með	ADP	P	_	8	case	_	_
-7	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	8	det	_	_
-8	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	5	amod	_	_
+7	þetta	þessi	DET	D-A	Case=Acc	8	det	_	_
+8	allt	allur	DET	Q-A	Case=Acc	5	amod	_	_
 9	saman	saman	ADV	ADV	Degree=Pos	8	advmod	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -204,7 +204,7 @@
 4	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	5	cop	_	_
 5	ósátt	ósáttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	við	við	ADP	P	_	7	case	_	_
-7	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	5	amod	_	SpaceAfter=No
+7	þetta	þessi	DET	D-A	Case=Acc	5	amod	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	SpaceAfter=No
 9	“	“	PUNCT	"	_	8	punct	_	_
 10	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	5	parataxis	_	_
@@ -224,7 +224,7 @@
 4	kannski	kannski	ADV	ADV	Degree=Pos	6	advmod	_	_
 5	viljað	vilja	AUX	MDN	Tense=Past|VerbForm=Part	6	aux	_	_
 6	synda	synda	VERB	VB	VerbForm=Inf	0	root	_	_
-7	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	6	obj	_	_
+7	þetta	þessi	DET	D-A	Case=Acc	6	obj	_	_
 8	betur	vel	ADV	ADVR	Degree=Cmp	6	advmod	_	_
 9	og	og	CCONJ	CONJ	_	10	cc	_	_
 10	fara	fara	VERB	VB	VerbForm=Inf	6	ccomp	_	_
@@ -240,9 +240,9 @@
 2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	gaf	gefa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 4	mig	ég	PRON	PRO-A	Case=Acc	3	obj	_	_
-5	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	3	amod	_	_
+5	alla	allur	DET	Q-A	Case=Acc	3	amod	_	_
 6	í	í	ADP	P	_	7	case	_	_
-7	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	3	obl	_	_
+7	þetta	þessi	DET	D-A	Case=Acc	3	obl	_	_
 8	og	og	CCONJ	CONJ	_	9	cc	_	_
 9	gerði	gera	VERB	DODI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
 10	mitt	minn	PRON	PRO-A	Case=Acc	9	obj	_	_
@@ -289,7 +289,7 @@
 18	tvenn	tvennur	NUM	NUM-A	Case=Acc	19	nummod	_	_
 19	silfurverðlaun	silfurverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obl	_	_
 20	og	og	CCONJ	CONJ	_	22	cc	_	_
-21	ein	einn	DET	ONE-N	Case=Nom|Number=Sing	22	det	_	_
+21	ein	einn	DET	ONE-N	Case=Nom	22	det	_	_
 22	bronsverðlaun	bronsverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obj	_	_
 23	á	á	ADP	P	_	24	case	_	_
 24	Evrópumótinu	evrópumót	PROPN	NPR-D	_	17	obl	_	_
@@ -318,7 +318,7 @@
 1	Keppinautar	keppinautur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
 2	hennar	hún	PRON	PRO-G	Case=Gen	1	nmod:poss	_	_
 3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-4	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	5	amod	_	_
+4	allir	allur	DET	Q-N	Case=Nom	5	amod	_	_
 5	atvinnumenn	atvinnumaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	5	punct	_	_
 7	en	en	CCONJ	CONJ	_	12	cc	_	_
@@ -355,7 +355,7 @@
 # X_ID = ID_missing_22
 # text = „ Þetta er náttúrulega svolítið erfitt.
 1	„	„	PUNCT	"	_	6	punct	_	_
-2	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
+2	Þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 4	náttúrulega	náttúrulega	ADV	ADV	Degree=Pos	6	advmod	_	_
 5	svolítið	svolítið	ADV	ADV	Degree=Pos	6	amod	_	_
@@ -374,7 +374,7 @@
 7	fá	fá	VERB	VB	VerbForm=Inf	5	amod	_	_
 8	sérstakan	sérstakur	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
 9	Ólympíustyrk	ólympíustyrk	PROPN	NPR-A	_	7	obj	_	_
-10	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+10	þetta	þessi	DET	D-A	Case=Acc	11	det	_	_
 11	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	5	punct	_	_
 
