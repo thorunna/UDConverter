@@ -20,7 +20,7 @@
 # sent_id = RUV_TGS_2016_G-2-1031626.SANITY,.2
 # X_ID = ID_missing_2
 # text = Allt besta frjálsíþróttafólk Evrópu verður meðal keppenda, þar á meðal fimm íslenskir íþróttamenn.
-1	Allt	allur	DET	Q-N	Case=Nom|Degree=Pos	3	amod	_	_
+1	Allt	allur	DET	Q-N	Case=Nom	3	amod	_	_
 2	besta	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	3	amod	_	_
 3	frjálsíþróttafólk	frjálsíþróttafólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 4	Evrópu	evrópa	PROPN	NPR-G	_	3	nmod:poss	_	_
@@ -44,7 +44,7 @@
 3	beint	beint	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	frá	frá	ADP	P	_	5	case	_	_
 5	EM	em	PROPN	NPR-D	_	2	obl	_	_
-6	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	7	amod	_	_
+6	alla	allur	DET	Q-A	Case=Acc	7	amod	_	_
 7	keppnisdagana	keppnisdagur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
@@ -227,7 +227,7 @@
 13	eftir	eftir	ADP	P	_	14	case	_	_
 14	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 15	í	í	ADP	P	_	17	case	_	_
-16	hvorum	hvor	DET	WD-D	Case=Dat|Number=Sing	17	det	_	_
+16	hvorum	hvor	DET	WD-D	Case=Dat	17	det	_	_
 17	riðlinum	riðill	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
 18	hann	hann	PRON	PRO-N	Case=Nom	19	nsubj	_	_
 19	lendir	lenda	VERB	VBPI	Mood=Ind|Tense=Pres	14	ccomp	_	SpaceAfter=No
@@ -302,7 +302,7 @@
 4	:	:	PUNCT	,	_	3	punct	_	_
 5	Frá	frá	ADP	P	_	1	obl	_	_
 6	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	acl	_	_
-7		hinn	DET	D-N	Case=Nom|PronType=Art	6	det	_	_
+7		hinn	DET	D-N	Case=Nom	6	det	_	_
 8	13	þrettán	NUM	NUM-N	Case=Nom	6	xcomp	_	SpaceAfter=No
 9	:	:	PUNCT	,	_	10	punct	_	_|SpaceAfter=No
 10	30	þrjátíu	NUM	NUM-N	Case=Nom	8	conj	_	_
@@ -314,7 +314,7 @@
 16	:	:	PUNCT	,	_	15	punct	_	_
 17	Frá	frá	ADP	P	_	13	obl	_	_
 18	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	acl	_	_
-19		hinn	DET	D-N	Case=Nom|PronType=Art	18	det	_	_
+19		hinn	DET	D-N	Case=Nom	18	det	_	_
 20	14	fjórtán	NUM	NUM-N	Case=Nom	18	xcomp	_	SpaceAfter=No
 21	:	:	PUNCT	,	_	22	punct	_	_|SpaceAfter=No
 22	0	núll	NUM	NUM-N	Case=Nom	20	conj	_	SpaceAfter=No
@@ -327,7 +327,7 @@
 29	:	:	PUNCT	,	_	28	punct	_	_
 30	Frá	frá	ADP	P	_	26	obl	_	_
 31	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	30	acl	_	_
-32		hinn	DET	D-N	Case=Nom|PronType=Art	31	det	_	_
+32		hinn	DET	D-N	Case=Nom	31	det	_	_
 33	16	sextán	NUM	NUM-N	Case=Nom	31	xcomp	_	SpaceAfter=No
 34	:	:	PUNCT	,	_	35	punct	_	_|SpaceAfter=No
 35	0	núll	NUM	NUM-N	Case=Nom	33	conj	_	SpaceAfter=No
@@ -343,7 +343,7 @@
 45	:	:	PUNCT	,	_	44	punct	_	_
 46	Frá	frá	ADP	P	_	42	obl	_	_
 47	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	46	acl	_	_
-48		hinn	DET	D-N	Case=Nom|PronType=Art	47	det	_	_
+48		hinn	DET	D-N	Case=Nom	47	det	_	_
 49	16	sextán	NUM	NUM-N	Case=Nom	47	xcomp	_	SpaceAfter=No
 50	:	:	PUNCT	,	_	51	punct	_	_|SpaceAfter=No
 51	45	45	NUM	NUM-N	Case=Nom	49	conj	_	_
@@ -358,7 +358,7 @@
 60	:	:	PUNCT	,	_	59	punct	_	_
 61	Frá	frá	ADP	P	_	57	obl	_	_
 62	kl.	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	61	acl	_	_
-63		hinn	DET	D-N	Case=Nom|PronType=Art	62	det	_	_
+63		hinn	DET	D-N	Case=Nom	62	det	_	_
 64	15	sextán	NUM	NUM-N	Case=Nom	62	xcomp	_	SpaceAfter=No
 65	:	:	PUNCT	,	_	66	punct	_	_|SpaceAfter=No
 66	0	núll	NUM	NUM-N	Case=Nom	64	conj	_	SpaceAfter=No

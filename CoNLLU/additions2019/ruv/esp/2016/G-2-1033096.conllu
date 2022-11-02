@@ -49,13 +49,13 @@
 9	rosa	rosa	ADV	ADV	Degree=Pos	10	amod	_	_
 10	skemmtileg	skemmtilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	ccomp	_	_
 11	og	og	CCONJ	CONJ	_	12	cc	_	_
-12	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	10	amod	_	_
-13	það	sá	DET	D-N	Case=Nom|PronType=Art	12	det	_	_
+12	allt	allur	DET	Q-N	Case=Nom	10	amod	_	_
+13	það	sá	DET	D-N	Case=Nom	12	det	_	_
 14	en	en	CCONJ	CONJ	_	16	cc	_	_
 15	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	16	expl	_	_
 16	vantar	vanta	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
 17	bara	bara	ADV	FP	Degree=Pos	16	advmod	_	_
-18	meiri	mikill	DET	QR-A	Case=Acc|Degree=Pos	19	amod	_	_
+18	meiri	mikill	DET	QR-A	Case=Acc	19	amod	_	_
 19	gæði	gæði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obj	_	_
 20	og	og	CCONJ	CONJ	_	21	cc	_	_
 21	hraða	hraði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	conj	_	_
@@ -73,7 +73,7 @@
 33	í	í	ADP	P	_	35	case	_	_
 34	frönsku	franskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	35	amod	_	_
 35	úrvalsdeildinni	úrvalsdeild	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obl	_	SpaceAfter=No
-36	.	.	PUNCT	.	_	3	punct	_	_
+36	.	.	PUNCT	.	_	16	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033096,.3
 # X_IDs = ID_missing_4 ; ID_missing_5
@@ -100,14 +100,14 @@
 20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
 21	nánast	náið	ADV	ADVS	Degree=Sup	10	advmod	_	_
 22	úti	úti	ADV	ADV	Degree=Pos	21	advmod	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	2	punct	_	_
+23	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033096,.4
 # X_IDs = ID_missing_6 ; ID_missing_7
 # text = Þó er einn leikur eftir í undankeppninni, gegn Þjóðverjum á sunnudag, og náist stór sigur er enn möguleiki.
 1	Þó	þó	ADV	ADV	Degree=Pos	7	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
-3	einn	einn	DET	ONE-N	Case=Nom|Number=Sing	4	det	_	_
+3	einn	einn	DET	ONE-N	Case=Nom	4	det	_	_
 4	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 5	eftir	eftir	ADV	ADV	Degree=Pos	7	advmod	_	_
 6	í	í	ADP	P	_	7	case	_	_
@@ -125,7 +125,7 @@
 18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
 19	enn	enn	ADV	ADV	Degree=Pos	20	advmod	_	_
 20	möguleiki	möguleiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	conj	_	OriginalHead=0|SpaceAfter=No
-21	.	.	PUNCT	.	_	7	punct	_	_
+21	.	.	PUNCT	.	_	20	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033096,.5
 # X_ID = ID_missing_8
@@ -135,7 +135,7 @@
 3	eftir	eftir	ADP	P	_	4	case	_	_
 4	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 5	að	að	SCONJ	C	_	8	mark	_	_
-6	fleiri	margur	DET	QR-N	Case=Nom|Degree=Pos	7	amod	_	_
+6	fleiri	margur	DET	QR-N	Case=Nom	7	amod	_	_
 7	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	nsubj	_	_
 8	æfðu	æfa	VERB	VBDI	Mood=Ind|Tense=Past	4	ccomp	_	_
 9	betur	vel	ADV	ADVR	Degree=Cmp	8	advmod	_	_

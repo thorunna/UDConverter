@@ -22,7 +22,7 @@
 # sent_id = RUV_ESP_2016_G-2-1039768.SANITY,.2
 # X_ID = ID_missing_2
 # text = Þetta verður í fyrsta skipti sem leikur enskra úrvalsdeildarliða verður sendur út á samfélagsmiðlinum.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	í	í	ADP	P	_	5	case	_	_
 4	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	5	amod	_	_
@@ -76,7 +76,7 @@
 3	Manchester	manchester	PROPN	NPR-N	_	1	conj	_	_
 4	United	united	PROPN	NPR-N	_	3	flat:name	_	_
 5	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
-6	einu	einn	DET	ONE-N	Case=Nom|Number=Sing	7	det	_	_
+6	einu	einn	DET	ONE-N	Case=Nom	7	det	_	_
 7	atvinnumannaliðin	atvinnumannalið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 8	sem	sem	SCONJ	C	_	11	mark	_	_
 9	Rooney	rooney	PROPN	NPR-N	_	11	nsubj	_	_
@@ -130,7 +130,7 @@
 12	búist	búa	VERB	VAN	Tense=Past|VerbForm=Part	2	conj	_	_
 13	við	við	ADP	P	_	16	case	_	_
 14	að	að	SCONJ	C	_	16	mark	_	_
-15	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	16	nsubj	_	_
+15	þetta	þessi	DET	D-N	Case=Nom	16	nsubj	_	_
 16	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	12	obl	_	_
 17	fyrsti	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	18	amod	_	_
 18	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	xcomp	_	_
@@ -149,7 +149,7 @@
 31	en	en	CCONJ	CONJ	_	33	cc	_	_
 32	þeir	hann	PRON	PRO-N	Case=Nom	33	nsubj	_	_
 33	gengu	ganga	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-34	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	33	amod	_	_
+34	allir	allur	DET	Q-N	Case=Nom	33	amod	_	_
 35	til	til	ADP	P	_	36	case	_	_
 36	liðs	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	33	obl	_	_
 37	við	við	ADP	P	_	38	case	_	_

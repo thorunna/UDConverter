@@ -31,14 +31,14 @@
 # sent_id = RUV_TGS_2016_G-2-1032490.SANITY,.2
 # X_ID = ID_missing_2
 # text = Þetta er besti tími sem Bryndís hefur nokkurn tímann synt á í greininni.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	besti	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	4	amod	_	_
 4	tími	tími	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 5	sem	sem	SCONJ	C	_	10	mark	_	_
 6	Bryndís	bryndís	PROPN	NPR-N	_	10	nsubj	_	_
 7	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	10	aux	_	_
-8	nokkurn	nokkur	DET	Q-A	Case=Acc|Degree=Pos	9	amod	_	_
+8	nokkurn	nokkur	DET	Q-A	Case=Acc	9	amod	_	_
 9	tímann	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 10	synt	synda	VERB	VBN	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
 11	á	á	ADP	P	_	10	obl	_	_
@@ -136,7 +136,7 @@
 6	meira	mjög	ADV	ADVR	Degree=Cmp	7	amod	_	_
 7	ánægðari	ánægður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	0	root	_	_
 8	með	með	ADP	P	_	10	case	_	_
-9	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	10	det	_	_
+9	þetta	þessi	DET	D-A	Case=Acc	10	det	_	_
 10	sund	sund	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	amod	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	7	punct	_	_
 
@@ -145,14 +145,14 @@
 # text = Ég var meira svona að sigra sjálfa mig í þessari grein.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
-3	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	4	obl	_	_
+3	meira	mikill	DET	QR-A	Case=Acc	4	obl	_	_
 4	svona	svona	ADV	ADV	Degree=Pos	0	root	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	sigra	sigra	VERB	VB	VerbForm=Inf	4	xcomp	_	_
 7	sjálfa	sjálfur	PRON	PRO-A	Case=Acc	6	obj	_	_
 8	mig	ég	PRON	PRO-A	Case=Acc	7	nmod	_	_
 9	í	í	ADP	P	_	11	case	_	_
-10	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	11	det	_	_
+10	þessari	þessi	DET	D-D	Case=Dat	11	det	_	_
 11	grein	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	4	punct	_	_
 
@@ -166,14 +166,14 @@
 5	pínu	pínu	ADV	ADV	Degree=Pos	6	amod	_	_
 6	hrædd	hræddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 7	við	við	ADP	P	_	8	case	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	6	amod	_	SpaceAfter=No
+8	þetta	þessi	DET	D-A	Case=Acc	6	amod	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = RUV_TGS_2016_G-2-1032490.SANITY,.9
 # X_ID = ID_missing_11
 # text = En þetta er í fyrsta sinn sem ég syndi þessa grein á stórmóti og bætti mig.
 1	En	en	CCONJ	CONJ	_	2	cc	_	_
-2	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+2	þetta	þessi	DET	D-N	Case=Nom	0	root	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
 4	í	í	ADP	P	_	6	case	_	_
 5	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	6	amod	_	_
@@ -181,7 +181,7 @@
 7	sem	sem	SCONJ	C	_	9	mark	_	_
 8	ég	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
 9	syndi	synda	VERB	VBPI	Mood=Ind|Tense=Pres	6	acl:relcl	_	_
-10	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	11	det	_	_
+10	þessa	þessi	DET	D-A	Case=Acc	11	det	_	_
 11	grein	grein	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
 12	á	á	ADP	P	_	13	case	_	_
 13	stórmóti	stórmót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_

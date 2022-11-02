@@ -59,10 +59,10 @@
 18	Morten	morten	ADV	ADV	Degree=Pos	7	conj	_	_
 19	Beck	beck	ADV	ADV	Degree=Pos	18	advmod	_	_
 20	Andersen	andersen	ADV	ADV	Degree=Pos	18	advmod	_	_
-21	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	7	amod	_	_
-22	eitt	einn	DET	ONE-A	Case=Acc|Number=Sing	23	det	_	_
+21	allir	allur	DET	Q-N	Case=Nom	7	amod	_	_
+22	eitt	einn	DET	ONE-A	Case=Acc	23	det	_	_
 23	mark	mark	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
-24	hver	hver	DET	Q-N	Case=Nom|Degree=Pos	7	amod	_	SpaceAfter=No
+24	hver	hver	DET	Q-N	Case=Nom	7	amod	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	3	punct	_	_
 
 # sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.4
@@ -75,13 +75,13 @@
 5	fyrri	fyrri	ADJ	ADJR-A	Case=Acc|Degree=Cmp	6	amod	_	_
 6	leikinn	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
 7	2	tveir	NUM	NUM-N	Case=Nom	4	obl	_	_
-8	1	einn	DET	ONE-N	Case=Nom|Number=Sing	7	conj	_	_
+8	1	einn	DET	ONE-N	Case=Nom	7	conj	_	_
 9	unnu	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 10	KR-inga	kr-ingur	PROPN	NPRS-N	_	9	nsubj	_	_
 11	einvígið	einvígi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
 12	samanlagt	samanlagt	ADV	ADV	Degree=Pos	9	advmod	_	_
 13	8	átta	NUM	NUM-N	Case=Nom	9	obl	_	_
-14	1	einn	DET	ONE-N	Case=Nom|Number=Sing	13	conj	_	_
+14	1	einn	DET	ONE-N	Case=Nom	13	conj	_	_
 15	og	og	CCONJ	CONJ	_	17	cc	_	_
 16	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
 17	komnir	koma	VERB	VBN	Tense=Past|VerbForm=Part	9	conj	_	OriginalHead=0
@@ -156,7 +156,7 @@
 # sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.9
 # X_ID = ID_missing_10
 # text = Þau úrslit nægðu Blikum ekki sem töpuðu fyrri leiknum 3 2.
-1	Þau	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Þau	sá	DET	D-N	Case=Nom	2	det	_	_
 2	úrslit	úrslit	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
 3	nægðu	nægja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 4	Blikum	bliki	PROPN	NPRS-D	_	3	obj	_	_

@@ -33,7 +33,7 @@
 # sent_id = RUV_TGS_2016_G-2-1032815.SANITY,.2
 # X_ID = ID_missing_2
 # text = Þetta kemur fram á heimasíðu danska félagsins.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	fram	fram	ADP	RP	_	5	compound:prt	_	_
 4	á	á	ADP	P	_	5	case	_	_
@@ -84,11 +84,11 @@
 15	spilar	spila	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
 16	reyndar	reyndar	ADV	ADV	Degree=Pos	15	advmod	_	_
 17	ekki	ekki	ADV	NEG	_	15	advmod	_	_
-18	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	15	obl	_	_
+18	meira	mikill	DET	QR-A	Case=Acc	15	obl	_	_
 19	með	með	ADP	P	_	20	case	_	_
 20	Valsmönnum	valsmaður	PROPN	NPRS-D	_	15	obl	_	_
 21	á	á	ADP	P	_	23	case	_	_
-22	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	23	det	_	_
+22	þessari	þessi	DET	D-D	Case=Dat	23	det	_	_
 23	leiktíð	leiktíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
 24	vegna	vegna	ADP	P	_	25	case	_	_
 25	meiðsla	meiðsli	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	obl	_	SpaceAfter=No
@@ -119,10 +119,10 @@
 20	að	að	SCONJ	C	_	22	mark	_	_
 21	hann	hann	PRON	PRO-N	Case=Nom	22	nsubj	_	_
 22	geri	gera	VERB	DOPS	Mood=Sub|Tense=Pres	14	ccomp	_	_
-23	mikla	mikill	DET	Q-A	Case=Acc|Degree=Pos	24	amod	_	_
+23	mikla	mikill	DET	Q-A	Case=Acc	24	amod	_	_
 24	væntingar	vænting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obj	_	_
 25	til	til	ADP	P	_	28	case	_	_
-26	þessa	þessi	DET	D-G	Case=Gen|PronType=Art	28	det	_	_
+26	þessa	þessi	DET	D-G	Case=Gen	28	det	_	_
 27	nýja	nýr	ADJ	ADJ-G	Case=Gen|Degree=Pos	28	amod	_	_
 28	liðsmanns	liðsmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	8	punct	_	_
@@ -130,7 +130,7 @@
 # sent_id = RUV_TGS_2016_G-2-1032815.SANITY,.6
 # X_ID = ID_missing_10
 # text = Minnst þrír Íslendingar ættu að vera í herbúðum Århus á næstu leiktíð.
-1	Minnst	lítill	DET	QS-A	Case=Acc|Degree=Pos	3	obl	_	_
+1	Minnst	lítill	DET	QS-A	Case=Acc	3	obl	_	_
 2	þrír	þrír	NUM	NUM-N	Case=Nom	3	nummod	_	_
 3	Íslendingar	íslendingur	PROPN	NPRS-N	_	4	nsubj	_	_
 4	ættu	eiga	VERB	VBDS	Mood=Sub|Tense=Past	0	root	_	_

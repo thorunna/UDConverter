@@ -34,7 +34,7 @@
 4	eftir	eftir	ADP	P	_	5	case	_	_
 5	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 6	að	að	SCONJ	C	_	12	mark	_	_
-7	fleiri	margur	DET	QR-N	Case=Nom|Degree=Pos	12	nsubj	_	_
+7	fleiri	margur	DET	QR-N	Case=Nom	12	nsubj	_	_
 8	af	af	ADP	P	_	9	case	_	_
 9	metum	met	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	_
 10	sínum	sinn	PRON	PRO-D	Case=Dat	9	nmod:poss	_	_
@@ -85,7 +85,7 @@
 13	metrana	metri	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
 14	á	á	ADP	P	_	15	case	_	_
 15	10,52	10,52	NUM	NUM-D	Case=Dat	11	obl	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	2	punct	_	_
+16	.	.	PUNCT	.	_	11	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033175,.5
 # X_ID = ID_missing_6
@@ -135,7 +135,7 @@
 32	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	34	cop	_	_
 33	nú	nú	ADV	ADV	Degree=Pos	34	advmod	_	_
 34	fallið	falla	VERB	VBN	Tense=Past|VerbForm=Part	24	ccomp	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	3	punct	_	_
+35	.	.	PUNCT	.	_	15	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033175,.7
 # X_IDs = ID_missing_9 ; ID_missing_10
@@ -159,7 +159,7 @@
 17	með	með	ADP	P	_	19	case	_	_
 18	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
 19	methafa	methafi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	3	punct	_	_
+20	.	.	PUNCT	.	_	10	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033175,.8
 # X_ID = ID_missing_11
@@ -179,7 +179,7 @@
 # X_ID = ID_missing_12
 # text = „ Þetta heppnaðist rosalega vel.
 1	„	„	PUNCT	"	_	3	punct	_	_
-2	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+2	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 3	heppnaðist	heppnast	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 4	rosalega	rosalega	ADV	ADV	Degree=Pos	3	advmod	_	_
 5	vel	vel	ADV	ADV	Degree=Pos	4	advmod	_	SpaceAfter=No
@@ -246,7 +246,7 @@
 2	Hún	hún	PRON	PRO-N	Case=Nom	0	root	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	2	cop	_	_
 4	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
-5	allt	allur	DET	Q-N	Case=Nom|Degree=Pos	2	obl	_	_
+5	allt	allur	DET	Q-N	Case=Nom	2	obl	_	_
 6	í	í	ADP	P	_	5	case	_	_
 7	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
@@ -259,7 +259,7 @@
 3	svosem	svosem	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	alltaf	alltaf	ADV	ADV	Degree=Pos	2	advmod	_	_
 5	að	að	SCONJ	C	_	8	mark	_	_
-6	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	8	nsubj	_	_
+6	þetta	þessi	DET	D-N	Case=Nom	8	nsubj	_	_
 7	myndi	munu	AUX	MDDS	Mood=Sub|Tense=Past	8	aux	_	_
 8	fara	fara	VERB	VB	VerbForm=Inf	2	ccomp	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
@@ -276,7 +276,7 @@
 7	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 8	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	2	cop	_	_
 9	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-10	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	12	obl	_	_
+10	ekkert	enginn	DET	Q-A	Case=Acc	12	obl	_	_
 11	sérstakur	sérstakur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
 12	spretthlaupari	spretthlaupari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
@@ -304,17 +304,17 @@
 18	löndin	land	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
 19	í	í	ADP	P	_	20	case	_	_
 20	kring	kring	ADP	P	_	18	obl	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	3	punct	_	_
+21	,	,	PUNCT	,	_	26	punct	_	_
 22	þá	þá	ADV	ADV	Degree=Pos	26	advmod	_	_
 23	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	26	aux	_	_
 24	maður	maður	PRON	MAN-N	_	26	nsubj	_	_
 25	ekki	ekki	ADV	NEG	_	26	advmod	_	_
 26	átt	eiga	VERB	VBN	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0
-27	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	26	obj	_	_
+27	mikið	mikill	DET	Q-A	Case=Acc	26	obj	_	_
 28	í	í	ADP	P	_	29	case	_	_
 29	þá	hann	PRON	PRO-A	Case=Acc	27	obl	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	29	punct	_	SpaceAfter=No
-31	“	“	PUNCT	"	_	3	punct	_	_
+31	“	“	PUNCT	"	_	26	punct	_	_
 32	Jón	jón	PROPN	NPR-N	_	34	nsubj	_	_
 33	Arnar	arnar	PROPN	NPR-N	_	32	flat:name	_	_
 34	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
@@ -323,7 +323,7 @@
 37	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	39	aux	_	_
 38	ekki	ekki	ADV	NEG	_	39	advmod	_	_
 39	þótt	þykja	VERB	VBN	Tense=Past|VerbForm=Part	34	ccomp	_	_
-40	neitt	neinn	DET	Q-A	Case=Acc|Degree=Pos	42	obl	_	_
+40	neitt	neinn	DET	Q-A	Case=Acc	42	obl	_	_
 41	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	42	amod	_	_
 42	fínt	fínn	ADJ	ADJ-N	Case=Nom|Degree=Pos	39	ccomp	_	_
 43	að	að	SCONJ	C	_	45	mark	_	_
@@ -334,7 +334,7 @@
 48	100	hundrað	NUM	NUM-G	Case=Gen	49	nummod	_	_
 49	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	50	nmod:poss	_	_
 50	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	46	obl	_	SpaceAfter=No
-51	.	.	PUNCT	.	_	3	punct	_	_
+51	.	.	PUNCT	.	_	34	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033175,.17
 # X_ID = ID_missing_22
@@ -342,7 +342,7 @@
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
-4	svolítið	svolítill	DET	Q-A	Case=Acc|Degree=Pos	5	obl	_	_
+4	svolítið	svolítill	DET	Q-A	Case=Acc	5	obl	_	_
 5	fyndið	fyndinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	að	að	SCONJ	C	_	11	mark	_	_
 7	metið	met	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
@@ -378,7 +378,7 @@
 2	Já	já	INTJ	INTJ	_	6	discourse	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
-5	svolítið	svolítill	DET	Q-A	Case=Acc|Degree=Pos	6	obl	_	_
+5	svolítið	svolítill	DET	Q-A	Case=Acc	6	obl	_	_
 6	ánægður	ánægður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 7	með	með	ADP	P	_	8	case	_	_
 8	Bæjarlistamann	bæjarlistamaður	PROPN	NPR-A	_	6	amod	_	_
@@ -391,18 +391,18 @@
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-4	svolítið	svolítill	DET	Q-A	Case=Acc|Degree=Pos	5	obl	_	_
+4	svolítið	svolítill	DET	Q-A	Case=Acc	5	obl	_	_
 5	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	2	punct	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
 7	það	það	PRON	PRO-N	Case=Nom	9	nsubj	_	_
 8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 9	ágætt	ágætur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0|SpaceAfter=No
-10	,	,	PUNCT	,	_	2	punct	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	SpaceAfter=No
 11	“	“	PUNCT	"	_	10	punct	_	_
 12	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	9	parataxis	_	_
 13	Jón	jón	PROPN	NPR-N	_	12	nsubj	_	_
 14	Arnar	arnar	PROPN	NPR-N	_	13	flat:name	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	2	punct	_	_
+15	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033175,.20
 # X_ID = ID_missing_26
@@ -411,7 +411,7 @@
 2	af	af	ADP	P	_	3	case	_	_
 3	hverju	hver	PRON	WPRO-D	Case=Dat	7	obl	_	_
 4	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	7	aux	_	_
-5	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	7	nsubj	_	_
+5	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
 6	ekki	ekki	ADV	NEG	_	7	advmod	_	_
 7	gerst	gera	VERB	DON	Tense=Past|VerbForm=Part	0	root	_	_
 8	á	á	ADP	P	_	11	case	_	_
@@ -438,7 +438,7 @@
 2	hvort	hvort	SCONJ	WQ	_	4	mark	_	_
 3	frjálsarnar	frjálsar	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 4	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	1	ccomp	_	_
-5	nokkuð	nokkur	DET	Q-A	Case=Acc|Degree=Pos	4	obl	_	_
+5	nokkuð	nokkur	DET	Q-A	Case=Acc	4	obl	_	_
 6	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	4	cop	_	_
 7	IN	in	ADV	ADV	Degree=Pos	4	advmod	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	1	punct	_	_
@@ -462,7 +462,7 @@
 # text = Samt er þetta nú einfaldasta greinin, hlaupa bara hratt.
 1	Samt	samt	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+3	þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 4	nú	nú	ADV	ADV	Degree=Pos	0	root	_	_
 5	einfaldasta	einfaldur	ADJ	ADJS-N	Case=Nom|Degree=Sup	6	amod	_	_
 6	greinin	grein	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	xcomp	_	SpaceAfter=No
@@ -480,13 +480,13 @@
 3	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	það	það	PRON	PRO-A	Case=Acc	3	obj	_	_
 5	ekki	ekki	ADV	NEG	_	3	advmod	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	3	punct	_	_
-7	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	8	nsubj	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	þetta	þessi	DET	D-N	Case=Nom	8	nsubj	_	_
 8	virðist	virða	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
 9	vera	vera	AUX	BE	VerbForm=Inf	11	cop	_	_
 10	að	að	PART	TO	_	11	mark	_	_
 11	koma	koma	VERB	VB	VerbForm=Inf	8	xcomp	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	3	punct	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
 13	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	conj	_	OriginalHead=0
 14	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
 15	fullt	fullur	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	obl	_	_
@@ -499,14 +499,14 @@
 22	hlaupa	hlaupa	VERB	VBPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	_
 23	hratt	hratt	ADV	ADV	Degree=Pos	22	advmod	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	23	punct	_	SpaceAfter=No
-25	“	“	PUNCT	"	_	3	punct	_	_
+25	“	“	PUNCT	"	_	13	punct	_	_
 26	Jón	jón	PROPN	NPR-N	_	28	nsubj	_	_
 27	Arnar	arnar	PROPN	NPR-N	_	26	flat:name	_	_
 28	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
 29	enn	enn	ADV	ADV	Degree=Pos	28	advmod	_	_
-30	nokkur	nokkur	DET	Q-A	Case=Acc|Degree=Pos	31	amod	_	_
+30	nokkur	nokkur	DET	Q-A	Case=Acc	31	amod	_	_
 31	met	met	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	28	obj	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	3	punct	_	_
+32	.	.	PUNCT	.	_	28	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033175,.26
 # X_ID = ID_missing_35
@@ -562,7 +562,7 @@
 13	alveg	alveg	ADV	ADV	Degree=Pos	14	advmod	_	_
 14	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
 15	200	200	NUM	NUM-A	Case=Acc	14	obj	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	5	punct	_	_
+16	,	,	PUNCT	,	_	15	punct	_	_
 17	svo	svo	ADV	ADV	Degree=Pos	5	conj	_	OriginalHead=0
 18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
 19	annar	annar	PRON	OTHER-N	Case=Nom	20	det	_	_
@@ -576,7 +576,7 @@
 27	að	að	PART	TO	_	28	mark	_	_
 28	höggva	höggva	VERB	VB	VerbForm=Inf	26	xcomp	_	_
 29	nærri	nærri	ADV	ADV	Degree=Pos	28	advmod	_	SpaceAfter=No
-30	,	,	PUNCT	,	_	5	punct	_	_
+30	,	,	PUNCT	,	_	17	punct	_	_
 31	mér	ég	PRON	PRO-D	Case=Dat	33	nsubj	_	_
 32	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	33	cop	_	_
 33	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
@@ -587,7 +587,7 @@
 38	og	_	ADP	P	_	40	case	_	_
 39	ég	ég	PRON	PRO-N	Case=Nom	40	nsubj	_	_
 40	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	37	obl	_	SpaceAfter=No
-41	.	.	PUNCT	.	_	5	punct	_	_
+41	.	.	PUNCT	.	_	33	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033175,.29
 # X_IDs = ID_missing_41 ; ID_missing_42
@@ -598,15 +598,15 @@
 4	bara	bara	ADV	FP	Degree=Pos	3	advmod	_	_
 5	að	að	PART	TO	_	6	mark	_	_
 6	taka	taka	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-7	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	6	obj	_	SpaceAfter=No
+7	þetta	þessi	DET	D-A	Case=Acc	6	obj	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	3	punct	_	_
 9	það	það	PRON	PRO-N	Case=Nom	3	conj	_	OriginalHead=0
 10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
-11	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	12	amod	_	_
+11	ekkert	enginn	DET	Q-N	Case=Nom	12	amod	_	_
 12	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	xcomp	_	_
 13	fyrir	fyrir	ADP	P	_	14	case	_	_
 14	þá	hann	PRON	PRO-A	Case=Acc	9	obl	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	3	punct	_	_
+15	.	.	PUNCT	.	_	9	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1033175,.30
 # X_ID = ID_missing_43

@@ -16,11 +16,11 @@
 13	ágúst	ágúst	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	nmod:poss	_	_
 14	og	og	CCONJ	CONJ	_	18	cc	_	_
 15	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	18	aux	_	_
-16	öll	allur	DET	Q-N	Case=Nom|Degree=Pos	17	amod	_	_
+16	öll	allur	DET	Q-N	Case=Nom	17	amod	_	_
 17	heimsbyggðin	heimsbyggð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
 18	fylgjast	fylgja	VERB	VB	VerbForm=Inf	6	conj	_	OriginalHead=0
 19	með	með	ADP	P	_	22	case	_	_
-20	þessari	þessi	DET	D-D	Case=Dat|PronType=Art	22	det	_	_
+20	þessari	þessi	DET	D-D	Case=Dat	22	det	_	_
 21	stærstu	stór	ADJ	ADJS-D	Case=Dat|Degree=Sup	22	amod	_	_
 22	íþróttahátíð	íþróttahátíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
 23	heims	heimur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	nmod:poss	_	SpaceAfter=No
@@ -45,7 +45,7 @@
 14	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
 15	upp	upp	ADP	RP	_	13	compound:prt	_	_
 16	með	með	ADP	P	_	18	case	_	_
-17	ýmsum	ýmis	DET	Q-D	Case=Dat|Degree=Pos	18	amod	_	_
+17	ýmsum	ýmis	DET	Q-D	Case=Dat	18	amod	_	_
 18	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -57,7 +57,7 @@
 3	birtast	birta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	pistlar	pistill	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
 5	í	í	ADP	P	_	7	case	_	_
-6	öllum	allur	DET	Q-D	Case=Dat|Degree=Pos	7	amod	_	_
+6	öllum	allur	DET	Q-D	Case=Dat	7	amod	_	_
 7	þáttum	þáttur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
 8	Sportrásarinnar	sportrás	PROPN	NPR-G	_	7	nmod:poss	_	_
 9	á	á	ADP	P	_	10	case	_	_
@@ -119,7 +119,7 @@
 14	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
 15	um	um	ADV	ADV	Degree=Pos	17	advmod	_	_
 16	þrefalt	þrefalt	ADV	ADV	Degree=Pos	17	advmod	_	_
-17	fleiri	margur	ADV	QR-A	Case=Acc|Degree=Pos	18	advmod	_	_
+17	fleiri	margur	ADV	QR-A	Case=Acc	18	advmod	_	_
 18	greinar	grein	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	acl:relcl	_	_
 19	en	en	ADP	P	_	23	case	_	_
 20	á	á	ADP	P	_	23	case	_	_
@@ -185,7 +185,7 @@
 # sent_id = RUV_TGS_2016_G-2-1032764.SANITY,.9
 # X_ID = ID_missing_12
 # text = Þetta eru frjálsar íþróttir, sund, fimleikar, hjólreiðar, skylmingar, glíma, lyftingar, siglingar, skotfimi og tennis.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	4	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	frjálsar	frjáls	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
 4	íþróttir	íþrótt	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
@@ -254,7 +254,7 @@
 9	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	10	aux	_	_
 10	keppt	keppa	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	OriginalHead=0
 11	í	í	ADP	P	_	14	case	_	_
-12	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	14	nmod:poss	_	_
+12	alls	allur	DET	Q-G	Case=Gen	14	nmod:poss	_	_
 13	kyns	kyn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	conj	_	_
 14	íþróttagreinum	íþróttagrein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
 15	í	í	ADP	P	_	17	case	_	_
@@ -307,7 +307,7 @@
 5	frá	frá	ADP	P	_	6	case	_	_
 6	Frakklandi	frakkland	PROPN	NPR-D	_	4	obl	_	_
 7	og	og	CCONJ	CONJ	_	9	cc	_	_
-8	hins	hinn	DET	D-G	Case=Gen|PronType=Art	9	det	_	_
+8	hins	hinn	DET	D-G	Case=Gen	9	det	_	_
 9	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	conj	_	_
 10	sameiginlegt	sameiginlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
 11	lið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	obl	_	_
@@ -322,7 +322,7 @@
 1	Sex	sex	NUM	NUM-N	Case=Nom	2	nummod	_	_
 2	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
 3	skipuðu	skipa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	hvort	hvor	DET	Q-A	Case=Acc|Degree=Pos	5	amod	_	_
+4	hvort	hvor	DET	Q-A	Case=Acc	5	amod	_	_
 5	lið	lið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
 6	og	og	CCONJ	CONJ	_	9	cc	_	_
 7	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	9	cop	_	_
@@ -355,7 +355,7 @@
 14	og	og	CCONJ	CONJ	_	15	cc	_	_
 15	Suður-Afríkumenn	suður-afríkumaður	PROPN	NPRS-N	_	13	conj	_	_
 16	sitt	sinn	PRON	PRO-N	Case=Nom	13	obl	_	_
-17	hvoru	hvor	DET	Q-D	Case=Dat|Degree=Pos	18	amod	_	_
+17	hvoru	hvor	DET	Q-D	Case=Dat	18	amod	_	_
 18	liðinu	lið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	nmod:poss	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	7	punct	_	_
 
@@ -383,7 +383,7 @@
 19	í	í	ADP	P	_	20	case	_	_
 20	greininni	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
 21	á	á	ADP	P	_	24	case	_	_
-22	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	24	obl	_	_
+22	alls	allur	DET	Q-G	Case=Gen	24	obl	_	_
 23	fimm	fimm	NUM	NUM-D	Case=Dat	24	nummod	_	_
 24	Ólympíuleikum	ólympíuleikar	PROPN	NPRS-D	_	18	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	1	punct	_	_
@@ -423,7 +423,7 @@
 2	pelóta	pelóta	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 3	sem	sem	SCONJ	C	_	7	mark	_	_
 4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
-5	nokkurs	nokkur	DET	Q-G	Case=Gen|Degree=Pos	7	nmod:poss	_	_
+5	nokkurs	nokkur	DET	Q-G	Case=Gen	7	nmod:poss	_	_
 6	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	conj	_	_
 7	handboltaleikur	handboltaleikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	acl:relcl	_	_
 8	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -497,10 +497,10 @@
 # X_IDs = ID_missing_30 ; ID_missing_31
 # text = Af þeim sökum kunnu engir aðrir en Bandaríkjamenn á íþróttagreinina, og aðeins kepptu bandarískir keppendur í roque í St. Louis.
 1	Af	af	ADP	P	_	3	case	_	_
-2	þeim	sá	DET	D-D	Case=Dat|PronType=Art	3	det	_	_
+2	þeim	sá	DET	D-D	Case=Dat	3	det	_	_
 3	sökum	sök	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
 4	kunnu	kunna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-5	engir	enginn	DET	Q-N	Case=Nom|Degree=Pos	6	amod	_	_
+5	engir	enginn	DET	Q-N	Case=Nom	6	amod	_	_
 6	aðrir	annar	PRON	OTHER-N	Case=Nom	4	nsubj	_	_
 7	en	en	ADP	P	_	8	case	_	_
 8	Bandaríkjamenn	bandaríkjamaður	PROPN	NPRS-N	_	6	obl	_	_
@@ -562,7 +562,7 @@
 # text = Svona var þetta á fyrstu Ólympíuleikunum.
 1	Svona	svona	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
-3	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
+3	þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
 4	á	á	ADP	P	_	6	case	_	_
 5	fyrstu	fyrstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	6	amod	_	_
 6	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	0	root	_	SpaceAfter=No
@@ -616,7 +616,7 @@
 # text = Eru það einu sumarólympíuleikarnir sem keppt var í vetraríþrótt, en reyndar var komið fram í lok október þegar skautakeppnin fór fram, og því tæplega sumar.
 1	Eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 2	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-3	einu	einn	DET	ONE-N	Case=Nom|Number=Sing	4	det	_	_
+3	einu	einn	DET	ONE-N	Case=Nom	4	det	_	_
 4	sumarólympíuleikarnir	sumarólympíuleiki	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 5	sem	sem	SCONJ	C	_	6	mark	_	_
 6	keppt	keppa	VERB	VAN	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
@@ -649,7 +649,7 @@
 1	Raunar	raunar	ADV	ADV	Degree=Pos	5	advmod	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
 3	heldur	gjarna	ADV	ADVR	Degree=Cmp	5	advmod	_	_
-4	ekkert	enginn	DET	Q-N	Case=Nom|Degree=Pos	5	nsubj	_	_
+4	ekkert	enginn	DET	Q-N	Case=Nom	5	nsubj	_	_
 5	farið	fara	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 6	að	að	PART	TO	_	7	mark	_	_
 7	tala	tala	VERB	VB	VerbForm=Inf	5	xcomp	_	_
@@ -769,7 +769,7 @@
 14	í	í	ADP	P	_	15	case	_	_
 15	átt	átt	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
 16	að	að	ADP	P	_	17	case	_	_
-17	því	sá	DET	D-D	Case=Dat|PronType=Art	15	obl	_	_
+17	því	sá	DET	D-D	Case=Dat	15	obl	_	_
 18	sem	sem	SCONJ	C	_	20	mark	_	_
 19	við	ég	PRON	PRO-N	Case=Nom	20	nsubj	_	_
 20	þekkjum	þekkja	VERB	VBPI	Mood=Ind|Tense=Pres	17	acl:relcl	_	_
@@ -783,7 +783,7 @@
 1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	5	advmod	_	_
 2	þó	þó	ADV	ADV	Degree=Pos	5	advmod	_	_
 3	með	með	ADP	P	_	5	case	_	_
-4	nokkrum	nokkur	DET	Q-D	Case=Dat|Degree=Pos	5	amod	_	_
+4	nokkrum	nokkur	DET	Q-D	Case=Dat	5	amod	_	_
 5	undantekningum	undantekning	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -925,7 +925,7 @@
 8	28	28	NUM	NUM-D	Case=Dat	9	nummod	_	_
 9	alþjóðaíþróttasamböndum	alþjóðaíþróttasamband	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
 10	og	og	CCONJ	CONJ	_	12	cc	_	_
-11	alls	allur	DET	Q-G	Case=Gen|Degree=Pos	12	obl	_	_
+11	alls	allur	DET	Q-G	Case=Gen	12	obl	_	_
 12	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
 13	keppt	keppa	VERB	VAN	Tense=Past|VerbForm=Part	12	xcomp	_	_
 14	til	til	ADP	P	_	15	case	_	_

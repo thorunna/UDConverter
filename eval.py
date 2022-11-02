@@ -271,3 +271,6 @@ print(
     (head_deprel / no_toks_corr) * 100,
     "%",
 )
+
+print_wrong_heads(head_info)
+print_wrong_deprel(deprel_info)

@@ -65,14 +65,14 @@
 18	inniheldur	innihalda	VERB	VBPI	Mood=Ind|Tense=Pres	16	acl:relcl	_	_
 19	miða	miði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	obj	_	_
 20	á	á	ADP	P	_	22	case	_	_
-21	alla	allur	DET	Q-A	Case=Acc|Degree=Pos	22	amod	_	_
+21	alla	allur	DET	Q-A	Case=Acc	22	amod	_	_
 22	leiki	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obl	_	_
 23	liðsins	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	nmod:poss	_	_
 24	á	á	ADP	P	_	25	case	_	_
 25	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
 26	,	,	PUNCT	,	_	25	punct	_	_
 27	hversu	hversu	ADV	WADV	Degree=Pos	31	amod	_	_
-28	margir	margur	DET	Q-N	Case=Nom|Degree=Pos	27	amod	_	_
+28	margir	margur	DET	Q-N	Case=Nom	27	amod	_	_
 29	sem	sem	SCONJ	C	_	31	mark	_	_
 30	þeir	hann	PRON	PRO-N	Case=Nom	31	nsubj	_	_
 31	kunna	kunna	ADV	VBPI	Mood=Ind|Tense=Pres	18	advmod	_	_
@@ -98,7 +98,7 @@
 13	bjartsýnir	bjartsýnn	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	conj	_	_
 14	að	að	PART	TO	_	15	mark	_	_
 15	fara	fara	VERB	VB	VerbForm=Inf	13	amod	_	_
-16	þá	sá	DET	D-A	Case=Acc|PronType=Art	17	det	_	_
+16	þá	sá	DET	D-A	Case=Acc	17	det	_	_
 17	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
 18	og	og	CCONJ	CONJ	_	19	cc	_	_
 19	lentu	lenda	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
@@ -142,7 +142,7 @@
 4	aldrei	aldrei	ADV	ADV	Degree=Pos	2	advmod	_	_
 5	fyrir	fyrir	ADP	P	_	9	case	_	_
 6	hvernig	hvernig	ADV	WADV	Degree=Pos	9	advmod	_	_
-7	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	9	nsubj	_	_
+7	þetta	þessi	DET	D-N	Case=Nom	9	nsubj	_	_
 8	myndi	munu	AUX	MDDS	Mood=Sub|Tense=Past	9	aux	_	_
 9	fara	fara	VERB	VB	VerbForm=Inf	2	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
@@ -150,12 +150,12 @@
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.7
 # X_ID = ID_missing_8
 # text = Þetta er búið að vera mikið ævintýri,“ segir Magnús og bætir við að strákarnir séu hvergi nærri hættir, Frakkland sé aðeins ný keila í vegi þeirra.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	búið	búa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 4	að	að	PART	TO	_	3	xcomp	_	_
 5	vera	vera	AUX	BE	VerbForm=Inf	4	cop	_	_
-6	mikið	mikill	DET	Q-N	Case=Nom|Degree=Pos	7	amod	_	_
+6	mikið	mikill	DET	Q-N	Case=Nom	7	amod	_	_
 7	ævintýri	ævintýri	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	xcomp	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	SpaceAfter=No
 9	“	“	PUNCT	"	_	8	punct	_	_
@@ -184,13 +184,13 @@
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.8
 # X_ID = ID_missing_9
 # text = Eitt eftirminnilegasta augnablikið á mótinu til þessa var að mati Magnúsar seinna mark Íslands á móti Austurríki í síðasta leik riðlakeppninnar.
-1	Eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	3	det	_	_
+1	Eitt	einn	DET	ONE-N	Case=Nom	3	det	_	_
 2	eftirminnilegasta	eftirminnilegur	ADJ	ADJS-N	Case=Nom|Degree=Sup	3	amod	_	_
 3	augnablikið	augnablik	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
 4	á	á	ADP	P	_	5	case	_	_
 5	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
 6	til	til	ADP	P	_	7	case	_	_
-7	þessa	þessi	DET	D-G	Case=Gen|PronType=Art	3	obl	_	_
+7	þessa	þessi	DET	D-G	Case=Gen	3	obl	_	_
 8	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	13	cop	_	_
 9	að	að	ADP	P	_	10	case	_	_
 10	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
@@ -242,7 +242,7 @@
 # sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.11
 # X_ID = ID_missing_12
 # text = Sá leikur var fyrir mér svakalegur rússíbani,“ segir Magnús.
-1	Sá	sá	DET	D-N	Case=Nom|PronType=Art	2	det	_	_
+1	Sá	sá	DET	D-N	Case=Nom	2	det	_	_
 2	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	10	cop	_	_
 4	fyrir	fyrir	ADP	P	_	5	case	_	_
@@ -264,7 +264,7 @@
 4	náttúrulega	náttúrulega	ADV	ADV	Degree=Pos	5	advmod	_	_
 5	sögulegur	sögulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 6	á	á	ADP	P	_	8	case	_	_
-7	marga	margur	DET	Q-A	Case=Acc|Degree=Pos	8	amod	_	_
+7	marga	margur	DET	Q-A	Case=Acc	8	amod	_	_
 8	vegu	vegur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	5	punct	_	_
 
@@ -274,7 +274,7 @@
 1	En	en	CCONJ	CONJ	_	2	cc	_	_
 2	Englendingarnir	englendingur	PROPN	NPRS-N	_	0	root	_	_
 3	gátu	geta	AUX	MDDI	Mood=Ind|Tense=Past	2	aux	_	_
-4	ekkert	enginn	DET	Q-A	Case=Acc|Degree=Pos	2	obj	_	_
+4	ekkert	enginn	DET	Q-A	Case=Acc	2	obj	_	_
 5	og	og	CCONJ	CONJ	_	6	cc	_	_
 6	við	ég	PRON	PRO-N	Case=Nom	2	conj	_	OriginalHead=0
 7	vorum	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_

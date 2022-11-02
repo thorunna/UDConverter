@@ -28,7 +28,7 @@
 25	reyndar	reyndar	ADV	ADV	Degree=Pos	24	advmod	_	_
 26	ekki	ekki	ADV	NEG	_	30	advmod	_	_
 27	vera	vera	AUX	BE	VerbForm=Inf	30	cop	_	_
-28	neitt	neinn	DET	Q-A	Case=Acc|Degree=Pos	29	obl	_	_
+28	neitt	neinn	DET	Q-A	Case=Acc	29	obl	_	_
 29	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	30	amod	_	_
 30	góður	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	xcomp	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	11	punct	_	_
@@ -44,7 +44,7 @@
 6	Kristinsson	kristinsson	PROPN	NPR-N	_	5	flat:name	_	_
 7	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	10	cop	_	_
 8	líklega	líklega	ADV	ADV	Degree=Pos	10	advmod	_	_
-9	þeir	sá	DET	D-N	Case=Nom|PronType=Art	10	det	_	_
+9	þeir	sá	DET	D-N	Case=Nom	10	det	_	_
 10	bestu	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	0	root	_	_
 11	í	í	ADP	P	_	12	case	_	_
 12	hópnum	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
@@ -80,7 +80,7 @@
 1	„	„	PUNCT	"	_	2	punct	_	_
 2	Bara	bara	ADV	FP	Degree=Pos	0	root	_	_
 3	frábærlega	frábærlega	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
-4	.	.	PUNCT	.	_	None	punct	_	_
+4	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1035653,.5
 # X_IDs = ID_missing_5 ; ID_missing_6
@@ -112,9 +112,9 @@
 25	að	að	PART	TO	_	26	mark	_	_
 26	spila	spila	VERB	VB	VerbForm=Inf	24	xcomp	_	_
 27	með	með	ADP	P	_	29	case	_	_
-28	hvor	hvor	DET	Q-N	Case=Nom|Degree=Pos	29	obl	_	_
+28	hvor	hvor	DET	Q-N	Case=Nom	29	obl	_	_
 29	öðrum	annar	PRON	OTHER-D	Case=Dat	26	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	3	punct	_	_
+30	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1035653,.6
 # X_IDs = ID_missing_7 ; ID_missing_8 ; ID_missing_9
@@ -133,7 +133,7 @@
 12	og	og	CCONJ	CONJ	_	14	cc	_	_
 13	við	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
 14	bökkum	bakka	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-15	hvor	hvor	DET	Q-N	Case=Nom|Degree=Pos	14	obj	_	_
+15	hvor	hvor	DET	Q-N	Case=Nom	14	obj	_	_
 16	annan	annar	PRON	OTHER-A	Case=Acc	15	det	_	_
 17	mjög	mjög	ADV	ADV	Degree=Pos	14	advmod	_	_
 18	vel	vel	ADV	ADV	Degree=Pos	17	advmod	_	_
@@ -142,7 +142,7 @@
 21	“	“	PUNCT	"	_	20	punct	_	_
 22	útskýrir	útskýra	VERB	VBPI	Mood=Ind|Tense=Pres	14	parataxis	_	_
 23	Kári	kári	PROPN	NPR-N	_	22	nsubj	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	3	punct	_	_
+24	.	.	PUNCT	.	_	14	punct	_	_
 
 # sent_id = RUV_ESP_2016_G-2-1035653,.7
 # X_ID = ID_missing_10

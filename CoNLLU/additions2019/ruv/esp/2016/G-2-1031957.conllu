@@ -1,7 +1,7 @@
 # sent_id = RUV_ESP_2016_G-2-1031957,.1
 # X_ID = ID_missing_1
 # text = Margir sterkustu kylfingar landsins eru mættir til leiks á Borgunarmótið á Eimskipsmótaröðinni í golfi sem hófst í morgun og er haldið á Hvaleyrarvelli.
-1	Margir	margur	DET	Q-N	Case=Nom|Degree=Pos	3	amod	_	_
+1	Margir	margur	DET	Q-N	Case=Nom	3	amod	_	_
 2	sterkustu	sterkur	ADJ	ADJS-N	Case=Nom|Degree=Sup	3	amod	_	_
 3	kylfingar	kylfingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
 4	landsins	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	nmod:poss	_	_
@@ -34,7 +34,7 @@
 3	um	um	ADP	P	_	4	case	_	_
 4	Hvaleyrarbikarinn	hvaleyrarbikar	PROPN	NPR-A	_	2	obl	_	_
 5	en	en	CCONJ	CONJ	_	10	cc	_	_
-6	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	10	nsubj	_	_
+6	þetta	þessi	DET	D-N	Case=Nom	10	nsubj	_	_
 7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
 8	í	í	ADP	P	_	10	case	_	_
 9	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	10	amod	_	_
@@ -47,7 +47,7 @@
 16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
 17	það	það	PRON	PRO-N	Case=Nom	20	nsubj	_	_
 18	jafnframt	jafnframt	ADV	ADV	Degree=Pos	20	advmod	_	_
-19	það	sá	DET	D-N	Case=Nom|PronType=Art	20	det	_	_
+19	það	sá	DET	D-N	Case=Nom	20	det	_	_
 20	fyrsta	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	conj	_	OriginalHead=0
 21	í	í	ADP	P	_	26	case	_	_
 22	nýju	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	26	amod	_	SpaceAfter=No
@@ -95,7 +95,7 @@
 # text = Fimm af þeim karlkylfingum sem sigruðu í 2. deild Evrópumótsins í síðustu viku eru með og sömuleiðis kvennalandsliðið sem lék á Evrópumótinu á Urriðavelli í síðustu viku.
 1	Fimm	fimm	NUM	NUM-N	Case=Nom	15	nsubj	_	_
 2	af	af	ADP	P	_	4	case	_	_
-3	þeim	sá	DET	D-D	Case=Dat|PronType=Art	4	det	_	_
+3	þeim	sá	DET	D-D	Case=Dat	4	det	_	_
 4	karlkylfingum	karlkylfing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	1	obl	_	_
 5	sem	sem	SCONJ	C	_	6	mark	_	_
 6	sigruðu	sigra	VERB	VBDI	Mood=Ind|Tense=Past	4	acl:relcl	_	_
@@ -131,7 +131,7 @@
 4	skarta	skarta	VERB	VB	VerbForm=Inf	3	xcomp	_	_
 5	sínu	sinn	PRON	PRO-D	Case=Dat	4	obj	_	_
 6	fegursta	fagur	ADJ	ADJS-D	Case=Dat|Degree=Sup	5	amod	_	_
-7	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	8	det	_	_
+7	þessa	þessi	DET	D-A	Case=Acc	8	det	_	_
 8	dagana	dagur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
 9	og	og	CCONJ	CONJ	_	16	cc	_	_
 10	keppnisaðstæður	keppnisaðstæður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_

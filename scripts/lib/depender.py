@@ -424,6 +424,7 @@ class Converter:
 
         for rule in rules:
             for child in main_clause:
+
                 try:
                     if child.height() == 2 and child[0][0] == "*":
                         continue

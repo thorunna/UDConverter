@@ -2,7 +2,7 @@
 # X_ID = ID_missing_1
 # text = „ Þetta var alveg jafn æðislegt að standa á pallinum eins og í fyrsta skiptið.
 1	„	„	PUNCT	"	_	6	punct	_	_
-2	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	6	nsubj	_	_
+2	Þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
 4	alveg	alveg	ADV	ADV	Degree=Pos	6	amod	_	_
 5	jafn	jafn	ADV	ADV	Degree=Pos	6	amod	_	_
@@ -23,7 +23,7 @@
 # text = Að fá þessar auka fimm mínútur á pallinum var bara frábært,“ sagði Hrafnhildur Lúthersdóttir við RÚV eftir að hún var komin með bronsverðlaunapeninginn um hálsinn fyrir frammistöðu sína í 200 m bringusundi á EM í 50 m laug í London í kvöld.
 1	Að	að	PART	TO	_	2	mark	_	_
 2	fá	fá	VERB	VB	VerbForm=Inf	11	xcomp	_	_
-3	þessar	þessi	DET	D-A	Case=Acc|PronType=Art	4	det	_	_
+3	þessar	þessi	DET	D-A	Case=Acc	4	det	_	_
 4	auka	auki	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	obj	_	_
 5	fimm	fimm	NUM	NUM-A	Case=Acc	4	nummod	_	_
 6	mínútur	mínúta	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	conj	_	_
@@ -96,7 +96,7 @@
 # X_ID = ID_missing_5
 # text = „ Þetta er aðeins raunverulegra en þegar ég stóð á pallinum síðast.
 1	„	„	PUNCT	"	_	5	punct	_	_
-2	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	5	nsubj	_	_
+2	Þetta	þessi	DET	D-N	Case=Nom	5	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 4	aðeins	aðeins	ADV	ADV	Degree=Pos	5	amod	_	_
 5	raunverulegra	raunverulegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	0	root	_	_
@@ -121,7 +121,7 @@
 # sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.6
 # X_ID = ID_missing_7
 # text = Þetta er eins og í draumi.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	3	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	eins	_	ADV	ADVR	Degree=Cmp	0	root	_	_
 4	og	_	ADP	P	_	5	case	_	_
@@ -149,7 +149,7 @@
 # sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.8
 # X_ID = ID_missing_9
 # text = Þetta er svo erfitt sund.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	4	amod	_	_
 4	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
@@ -186,7 +186,7 @@
 16	það	það	PRON	PRO-N	Case=Nom	9	conj	_	_
 17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
 18	bara	bara	ADV	FP	Degree=Pos	20	advmod	_	_
-19	ein	einn	DET	ONE-N	Case=Nom|Number=Sing	20	det	_	_
+19	ein	einn	DET	ONE-N	Case=Nom	20	det	_	_
 20	ferð	ferð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	xcomp	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	1	punct	_	_
 
@@ -200,8 +200,8 @@
 5	rosalega	rosalega	ADV	ADV	Degree=Pos	4	advmod	_	_
 6	ánægð	ánægður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 7	með	með	ADP	P	_	9	case	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	9	det	_	_
-9	allt	allur	DET	Q-A	Case=Acc|Degree=Pos	6	amod	_	SpaceAfter=No
+8	þetta	þessi	DET	D-A	Case=Acc	9	det	_	_
+9	allt	allur	DET	Q-A	Case=Acc	6	amod	_	SpaceAfter=No
 10	“	“	PUNCT	"	_	9	punct	_	_
 11	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	6	parataxis	_	_
 12	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	11	nsubj	_	_
@@ -212,7 +212,7 @@
 # X_ID = ID_missing_13
 # text = „ Þetta er frábær reynsla fyrir Ólympíuleikana í Ríó.
 1	„	„	PUNCT	"	_	2	punct	_	_
-2	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	0	root	_	_
+2	Þetta	þessi	DET	D-N	Case=Nom	0	root	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
 4	frábær	frábær	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
 5	reynsla	reynsla	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	_
@@ -240,16 +240,16 @@
 13	til	til	ADP	P	_	11	obl	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	13	punct	_	_
 15	og	og	CCONJ	CONJ	_	19	cc	_	_
-16	meira	mikill	DET	QR-A	Case=Acc|Degree=Pos	18	obj	_	_
+16	meira	mikill	DET	QR-A	Case=Acc	18	obj	_	_
 17	að	að	PART	TO	_	18	mark	_	_
 18	segja	segja	VERB	VB	VerbForm=Inf	19	advcl	_	_
 19	vinna	vinna	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-20	sumar	sumur	DET	Q-A	Case=Acc|Degree=Pos	19	obj	_	_
+20	sumar	sumur	DET	Q-A	Case=Acc	19	obj	_	_
 21	af	af	ADP	P	_	22	case	_	_
 22	þeim	hún	PRON	PRO-D	Case=Dat	20	obl	_	_
 23	sendir	senda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 24	mig	ég	PRON	PRO-A	Case=Acc	23	obj	_	_
-25	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	23	amod	_	_
+25	mikið	mikill	DET	Q-A	Case=Acc	23	amod	_	_
 26	sjálfsöruggari	sjálfsöruggur	ADJ	ADJR-A	Case=Acc|Degree=Cmp	25	amod	_	_
 27	til	til	ADP	P	_	28	case	_	_
 28	Ríó	ríó	PROPN	NPR-G	_	23	obl	_	_
@@ -291,7 +291,7 @@
 14	úr	úr	ADP	P	_	15	case	_	_
 15	undanrásum	undanrás	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obl	_	_
 16	í	í	ADP	P	_	18	case	_	_
-17	neinni	neinn	DET	Q-D	Case=Dat|Degree=Pos	18	amod	_	_
+17	neinni	neinn	DET	Q-D	Case=Dat	18	amod	_	_
 18	grein	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 19	þar	þar	ADV	ADV	Degree=Pos	18	advmod	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	5	punct	_	_
@@ -312,7 +312,7 @@
 11	bringusundið	bringusund	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	5	punct	_	_
 13	en	en	CCONJ	CONJ	_	17	cc	_	_
-14	allir	allur	DET	Q-N	Case=Nom|Degree=Pos	15	amod	_	_
+14	allir	allur	DET	Q-N	Case=Nom	15	amod	_	_
 15	þjálfarar	þjálfari	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	nsubj	_	_
 16	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	17	aux	_	_
 17	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
@@ -358,10 +358,10 @@
 4	að	að	SCONJ	C	_	8	mark	_	_
 5	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 6	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	8	cop	_	_
-7	nokkuð	nokkur	DET	Q-A	Case=Acc|Degree=Pos	8	obl	_	_
+7	nokkuð	nokkur	DET	Q-A	Case=Acc	8	obl	_	_
 8	jöfn	jafn	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	ccomp	_	_
 9	í	í	ADP	P	_	11	case	_	_
-10	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	11	det	_	_
+10	þessum	þessi	DET	D-D	Case=Dat	11	det	_	_
 11	greinum	grein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
 12	og	og	CCONJ	CONJ	_	16	cc	_	_
 13	það	það	PRON	PRO-N	Case=Nom	16	nsubj	_	_
@@ -380,12 +380,12 @@
 3	ég	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
 4	kannski	kannski	ADV	ADV	Degree=Pos	19	advmod	_	_
 5	bara	bara	ADV	FP	Degree=Pos	19	advmod	_	_
-6	nokkuð	nokkur	DET	Q-A	Case=Acc|Degree=Pos	7	obl	_	_
+6	nokkuð	nokkur	DET	Q-A	Case=Acc	7	obl	_	_
 7	jafna	jafn	ADJ	ADJ-A	Case=Acc|Degree=Pos	8	amod	_	_
 8	möguleika	möguleiki	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obj	_	_
 9	í	í	ADP	P	_	12	case	_	_
-10	báðum	báðir	DET	Q-D	Case=Dat|Degree=Pos	12	amod	_	_
-11	þessum	þessi	DET	D-D	Case=Dat|PronType=Art	12	det	_	_
+10	báðum	báðir	DET	Q-D	Case=Dat	12	amod	_	_
+11	þessum	þessi	DET	D-D	Case=Dat	12	det	_	_
 12	greinum	grein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obl	_	_
 13	þegar	þegar	ADP	P	_	15	case	_	_
 14	ég	ég	PRON	PRO-N	Case=Nom	15	nsubj	_	_
@@ -433,7 +433,7 @@
 4	þær	hún	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 5	bara	bara	ADV	FP	Degree=Pos	3	advmod	_	_
 6	jafn	jafn	ADV	ADV	Degree=Pos	7	amod	_	_
-7	margar	margur	DET	Q-N	Case=Nom|Degree=Pos	3	amod	_	_
+7	margar	margur	DET	Q-N	Case=Nom	3	amod	_	_
 8	núna	núna	ADV	ADV	Degree=Pos	3	advmod	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	3	punct	_	_
 
@@ -467,7 +467,7 @@
 2	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
 4	að	að	SCONJ	C	_	8	mark	_	_
-5	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	8	nsubj	_	_
+5	þetta	þessi	DET	D-N	Case=Nom	8	nsubj	_	_
 6	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	8	aux	_	_
 7	til	til	ADP	P	_	8	case	_	_
 8	þess	það	PRON	PRO-G	Case=Gen	2	ccomp	_	_
@@ -488,14 +488,14 @@
 # sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.23
 # X_ID = ID_missing_29
 # text = Þetta sýnir bara að við Íslendingar getum þetta alveg,“ sagði Hrafnhildur.
-1	Þetta	þessi	DET	D-N	Case=Nom|PronType=Art	2	nsubj	_	_
+1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	sýnir	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
 4	að	að	SCONJ	C	_	5	mark	_	_
 5	við	ég	PRON	PRO-N	Case=Nom	2	ccomp	_	_
 6	Íslendingar	íslendingur	PROPN	NPRS-N	_	5	appos	_	_
 7	getum	geta	AUX	MDPS	Mood=Sub|Tense=Pres	5	aux	_	_
-8	þetta	þessi	DET	D-A	Case=Acc|PronType=Art	5	obj	_	_
+8	þetta	þessi	DET	D-A	Case=Acc	5	obj	_	_
 9	alveg	alveg	ADV	ADV	Degree=Pos	5	advmod	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	9	punct	_	SpaceAfter=No
 11	“	“	PUNCT	"	_	10	punct	_	_
@@ -531,7 +531,7 @@
 # X_ID = ID_missing_31
 # text = „ Þessi verðlaun í kvöld staðfesta að ég er komin til að vera að þetta hafi ekki bara verið eitt gott sund sem ég náði í fyrrakvöld.
 1	„	„	PUNCT	"	_	6	punct	_	_
-2	Þessi	þessi	DET	D-N	Case=Nom|PronType=Art	3	det	_	_
+2	Þessi	þessi	DET	D-N	Case=Nom	3	det	_	_
 3	verðlaun	verðlaun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
 4	í	í	ADP	P	_	5	case	_	_
 5	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
@@ -544,12 +544,12 @@
 12	að	að	PART	TO	_	10	obl	_	_
 13	vera	vera	AUX	BE	VerbForm=Inf	12	cop	_	_
 14	að	að	SCONJ	C	_	10	dep	_	_
-15	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	16	nsubj	_	_
+15	þetta	þessi	DET	D-N	Case=Nom	16	nsubj	_	_
 16	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	14	conj	_	_
 17	ekki	ekki	ADV	NEG	_	16	advmod	_	_
 18	bara	bara	ADV	FP	Degree=Pos	16	advmod	_	_
 19	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	16	cop	_	_
-20	eitt	einn	DET	ONE-N	Case=Nom|Number=Sing	22	det	_	_
+20	eitt	einn	DET	ONE-N	Case=Nom	22	det	_	_
 21	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	22	amod	_	_
 22	sund	sund	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	xcomp	_	_
 23	sem	sem	SCONJ	C	_	25	mark	_	_
