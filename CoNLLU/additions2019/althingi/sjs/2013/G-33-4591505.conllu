@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4591505,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Ég man ekki eftir því að ég hafi nokkurn tíma greitt atkvæði gegn fjárlögum vegna þess að að lokum, þegar menn standa frammi fyrir því rétt fyrir jól eða áramót að taka afstöðu til fjárlaga, þá þarf ríkið fjárlög.
+# sent_id = G-33-4591505,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Ég man ekki eftir því að ég hafi nokkurn tíma greitt atkvæði gegn fjárlögum vegna þess að að lokum, þegar menn standa frammi fyrir því rétt fyrir jól eða áramót að taka afstöðu til fjárlaga, þá þarf ríkið fjárlög .
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -47,9 +47,9 @@
 44	fjárlög	fjárlag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	42	obj	_	SpaceAfter=No
 45	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4591505,.2
-# X_ID = ID_missing_2
-# text = Og það liggur í eðli máls að meiri hlutinn sem það ber fram og afgreiðir á sinn hátt ber ábyrgð á því að lokum.
+# sent_id = G-33-4591505,.2
+# X_ID = ID_MISSING
+# text = Og það liggur í eðli máls að meiri hlutinn sem það ber fram og afgreiðir á sinn hátt ber ábyrgð á því að lokum .
 1	Og	og	CCONJ	CONJ	_	3	cc	_	_
 2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 3	liggur	liggja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -76,9 +76,9 @@
 24	lokum	lok	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4591505,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Ég hef aldrei fundið mig í því, jafnvel þó að það væri ýmislegt í fjárlagafrumvarpi frá fyrri ríkisstjórnum, að fara að greiða atkvæði gegn því, vegna þess að ríkið þarf einfaldlega fjárlög eða fjárheimildir til að hægt sé að borga út laun 1. janúar o.s.frv. Varðandi auðlegðarskattinn þá er því til að svara að við tókum hann upp á sínum tíma og gerðum síðan, líklega frekar í tvígang en einu sinni, nokkrar breytingar á honum, reyndar til nokkurrar hækkunar.
+# sent_id = G-33-4591505,.3
+# X_ID = ID_MISSING
+# text = Ég hef aldrei fundið mig í því, jafnvel þó að það væri ýmislegt í fjárlagafrumvarpi frá fyrri ríkisstjórnum, að fara að greiða atkvæði gegn því, vegna þess að ríkið þarf einfaldlega fjárlög eða fjárheimildir til að hægt sé að borga út laun 1. janúar o.s.frv.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	aldrei	aldrei	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -129,48 +129,52 @@
 48	o.	og	CCONJ	CONJ	_	43	xcomp	_	SpaceAfter=No
 49	s.	svo	ADV	ADV	Degree=Pos	48	xcomp	_	SpaceAfter=No
 50	frv.	framvegis	ADV	ADV	Degree=Pos	49	advmod	_	_
-51	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	58	dep	_	_
-52	auðlegðarskattinn	auðlegðarskattur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	51	obj	_	_
-53	þá	þá	ADV	ADV	Degree=Pos	58	advmod	_	_
-54	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	58	cop	_	_
-55	því	það	PRON	PRO-D	Case=Dat	58	nsubj	_	_
-56	til	til	ADP	RP	_	58	compound:prt	_	_
-57	að	að	PART	TO	_	58	mark	_	_
-58	svara	svara	VERB	VB	VerbForm=Inf	4	conj	_	OriginalHead=0
-59	að	að	SCONJ	C	_	61	mark	_	_
-60	við	ég	PRON	PRO-N	Case=Nom	61	nsubj	_	_
-61	tókum	taka	VERB	VBDI	Mood=Ind|Tense=Past	58	ccomp	_	_
-62	hann	hann	PRON	PRO-A	Case=Acc	61	obj	_	_
-63	upp	upp	ADP	RP	_	61	compound:prt	_	_
-64	á	á	ADP	P	_	66	case	_	_
-65	sínum	sinn	PRON	PRO-D	Case=Dat	66	nmod:poss	_	_
-66	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	61	obl	_	_
-67	og	og	CCONJ	CONJ	_	68	cc	_	_
-68	gerðum	gera	VERB	VBDI	Mood=Ind|Tense=Past	61	conj	_	_
-69	síðan	síðan	ADV	ADV	Degree=Pos	68	advmod	_	SpaceAfter=No
-70	,	,	PUNCT	,	_	69	punct	_	_
-71	líklega	líklega	ADV	ADV	Degree=Pos	74	advmod	_	_
-72	frekar	frekar	ADV	ADVR	Degree=Cmp	74	advmod	_	_
-73	í	í	ADP	P	_	74	case	_	_
-74	tvígang	tvígangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	68	obl	_	_
-75	en	en	ADP	P	_	77	case	_	_
-76	einu	einn	DET	ONE-D	Case=Dat	77	det	_	_
-77	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	74	obl	_	SpaceAfter=No
-78	,	,	PUNCT	,	_	77	punct	_	_
-79	nokkrar	nokkur	DET	Q-A	Case=Acc	80	amod	_	_
-80	breytingar	breyting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	68	obj	_	_
-81	á	á	ADP	P	_	82	case	_	_
-82	honum	hann	PRON	PRO-D	Case=Dat	68	obl	_	SpaceAfter=No
-83	,	,	PUNCT	,	_	82	punct	_	_
-84	reyndar	reyndar	ADV	ADV	Degree=Pos	87	advmod	_	_
-85	til	til	ADP	P	_	87	case	_	_
-86	nokkurrar	nokkur	DET	Q-G	Case=Gen	87	amod	_	_
-87	hækkunar	hækkun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	68	obl	_	SpaceAfter=No
-88	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4591505,.4
-# X_ID = ID_missing_5
-# text = Við þrepaskiptum honum í reynd til þess að geta haft rýmri frítekjumörk og leggja þyngsta hluta byrðanna á verulega mikinn auð, það er sem kominn er í 200 milljónir hreinar skuldlausar eignir eða þar yfir.
+# sent_id = G-33-4591505,.4
+# X_ID = ID_MISSING
+# text = Varðandi auðlegðarskattinn þá er því til að svara að við tókum hann upp á sínum tíma og gerðum síðan, líklega frekar í tvígang en einu sinni, nokkrar breytingar á honum, reyndar til nokkurrar hækkunar .
+1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	8	dep	_	_
+2	auðlegðarskattinn	auðlegðarskattur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
+3	þá	þá	ADV	ADV	Degree=Pos	8	advmod	_	_
+4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+5	því	það	PRON	PRO-D	Case=Dat	8	nsubj	_	_
+6	til	til	ADP	RP	_	8	compound:prt	_	_
+7	að	að	PART	TO	_	8	mark	_	_
+8	svara	svara	VERB	VB	VerbForm=Inf	0	root	_	_
+9	að	að	SCONJ	C	_	11	mark	_	_
+10	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
+11	tókum	taka	VERB	VBDI	Mood=Ind|Tense=Past	8	ccomp	_	_
+12	hann	hann	PRON	PRO-A	Case=Acc	11	obj	_	_
+13	upp	upp	ADP	RP	_	11	compound:prt	_	_
+14	á	á	ADP	P	_	16	case	_	_
+15	sínum	sinn	PRON	PRO-D	Case=Dat	16	nmod:poss	_	_
+16	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+17	og	og	CCONJ	CONJ	_	18	cc	_	_
+18	gerðum	gera	VERB	VBDI	Mood=Ind|Tense=Past	11	conj	_	_
+19	síðan	síðan	ADV	ADV	Degree=Pos	18	advmod	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	líklega	líklega	ADV	ADV	Degree=Pos	24	advmod	_	_
+22	frekar	frekar	ADV	ADVR	Degree=Cmp	24	advmod	_	_
+23	í	í	ADP	P	_	24	case	_	_
+24	tvígang	tvígangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
+25	en	en	ADP	P	_	27	case	_	_
+26	einu	einn	DET	ONE-D	Case=Dat	27	det	_	_
+27	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	SpaceAfter=No
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	nokkrar	nokkur	DET	Q-A	Case=Acc	30	amod	_	_
+30	breytingar	breyting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	obj	_	_
+31	á	á	ADP	P	_	32	case	_	_
+32	honum	hann	PRON	PRO-D	Case=Dat	18	obl	_	SpaceAfter=No
+33	,	,	PUNCT	,	_	32	punct	_	_
+34	reyndar	reyndar	ADV	ADV	Degree=Pos	37	advmod	_	_
+35	til	til	ADP	P	_	37	case	_	_
+36	nokkurrar	nokkur	DET	Q-G	Case=Gen	37	amod	_	_
+37	hækkunar	hækkun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
+38	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = G-33-4591505,.5
+# X_ID = ID_MISSING
+# text = Við þrepaskiptum honum í reynd til þess að geta haft rýmri frítekjumörk og leggja þyngsta hluta byrðanna á verulega mikinn auð, það er sem kominn er í 200 milljónir hreinar skuldlausar eignir eða þar yfir .
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þrepaskiptum	þrepaskipta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	honum	hann	PRON	PRO-D	Case=Dat	2	obj	_	_
@@ -209,9 +213,9 @@
 36	yfir	yfir	ADP	P	_	35	case	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4591505,.5
-# X_ID = ID_missing_6
-# text = Við vorum þar svolítið að fara að norskri fyrirmynd þar sem Norðmenn eru með sinn Forseti hringir.„ formueskat“.
+# sent_id = G-33-4591505,.6
+# X_ID = ID_MISSING
+# text = Við vorum þar svolítið að fara að norskri fyrirmynd þar sem Norðmenn eru með sinn Forseti hringir . „ formueskat “ .
 1	Við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 2	vorum	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
 3	þar	þar	ADV	ADV	Degree=Pos	6	advmod	_	_
@@ -235,9 +239,9 @@
 21	“	“	PUNCT	"	_	20	punct	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4591505,.6
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = En auðvitað má alltaf endurskoða og betrumbæta hluti af þessu tagi og það er meira annars það Forseti hringir. sem ég mun leggja til í breytingartillögum við annað þingmál.
+# sent_id = G-33-4591505,.7
+# X_ID = ID_MISSING
+# text = En auðvitað má alltaf endurskoða og betrumbæta hluti af þessu tagi
 1	En	en	CCONJ	CONJ	_	5	cc	_	_
 2	auðvitað	auðvitað	ADV	ADV	Degree=Pos	5	advmod	_	_
 3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
@@ -249,24 +253,25 @@
 9	af	af	ADP	P	_	11	case	_	_
 10	þessu	þessi	DET	D-D	Case=Dat	11	det	_	_
 11	tagi	tag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
-12	og	og	CCONJ	CONJ	_	17	cc	_	_
-13	það	það	PRON	PRO-N	Case=Nom	17	nsubj	_	_
-14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
-15	meira	meðal	ADP	P	_	16	case	_	_
-16	annars	annar	PRON	OTHER-G	Case=Gen	17	obl	_	_
-17	það	það	PRON	PRO-N	Case=Nom	5	conj	_	OriginalHead=0
-18	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
-19	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	17	dep	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	19	punct	_	_
-21	sem	sem	SCONJ	C	_	24	mark	_	_
-22	ég	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
-23	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	24	aux	_	_
-24	leggja	leggja	VERB	VB	VerbForm=Inf	17	acl:relcl	_	_
-25	til	til	ADP	RP	_	24	compound:prt	_	_
-26	í	í	ADP	P	_	27	case	_	_
-27	breytingartillögum	breytingartillaga	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	24	obl	_	_
-28	við	við	ADP	P	_	30	case	_	_
-29	annað	annar	PRON	OTHER-A	Case=Acc	30	det	_	_
-30	þingmál	þingmál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obl	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	5	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+4	meira	meðal	ADP	P	_	5	case	_	_
+5	annars	annar	PRON	OTHER-G	Case=Gen	6	obl	_	_
+6	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
+7	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+8	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	6	dep	_	_
+9	.	.	PUNCT	.	_	8	punct	_	_
+10	sem	sem	SCONJ	C	_	13	mark	_	_
+11	ég	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+12	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	13	aux	_	_
+13	leggja	leggja	VERB	VB	VerbForm=Inf	6	acl:relcl	_	_
+14	til	til	ADP	RP	_	13	compound:prt	_	_
+15	í	í	ADP	P	_	16	case	_	_
+16	breytingartillögum	breytingartillaga	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
+17	við	við	ADP	P	_	19	case	_	_
+18	annað	annar	PRON	OTHER-A	Case=Acc	19	det	_	_
+19	þingmál	þingmál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
+20	.	.	PUNCT	.	_	6	punct	_	_
 

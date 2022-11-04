@@ -1,42 +1,50 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4751826,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti.
+# sent_id = G-33-4751826,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4751826,.2
-# X_IDs = ID_missing_2 ; ID_missing_3 ; ID_missing_4
-# text = Það er rétt, við eigum eftir að fjalla um málin seinna, þar á meðal stöðu leigjenda, ég hlakka svolítið til þess.
+# sent_id = G-33-4751826,.2
+# X_ID = ID_MISSING
+# text = Það er rétt,
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 4	,	,	PUNCT	,	_	3	punct	_	_
-5	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
-6	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-7	eftir	eftir	ADV	ADV	Degree=Pos	9	advmod	_	_
-8	að	að	PART	TO	_	9	mark	_	_
-9	fjalla	fjalla	VERB	VB	VerbForm=Inf	6	ccomp	_	_
-10	um	um	ADP	P	_	11	case	_	_
-11	málin	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obl	_	_
-12	seinna	seint	ADV	ADVR	Degree=Cmp	9	advmod	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	12	punct	_	_
-14	þar	þar	ADV	ADV	Degree=Pos	6	parataxis	_	_
-15	á	á	ADP	P	_	14	case	_	_
-16	meðal	meðal	ADP	P	_	14	obl	_	_
-17	stöðu	staða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
-18	leigjenda	leigjandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	17	nmod:poss	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	17	punct	_	_
-20	ég	ég	PRON	PRO-N	Case=Nom	21	nsubj	_	_
-21	hlakka	hlakka	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-22	svolítið	svolítið	ADV	ADV	Degree=Pos	21	advmod	_	_
-23	til	til	ADP	P	_	24	case	_	_
-24	þess	það	PRON	PRO-G	Case=Gen	21	obl	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4751826,.3
-# X_ID = ID_missing_5
-# text = Hvað varðar orðin um fyrrverandi ríkisstjórn og áætlun hennar um að stíga þetta skref vil ég nefna að þótt ég hafi ekki kosið Framsókn kaus ég ekki heldur neinn annan flokk en minn eiginn, svo að því sé haldið til haga.
+# sent_id = G-33-4751826,.3
+# X_ID = ID_MISSING
+# text = við eigum eftir að fjalla um málin seinna, þar á meðal stöðu leigjenda,
+1	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	eftir	eftir	ADV	ADV	Degree=Pos	5	advmod	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	fjalla	fjalla	VERB	VB	VerbForm=Inf	2	ccomp	_	_
+6	um	um	ADP	P	_	7	case	_	_
+7	málin	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
+8	seinna	seint	ADV	ADVR	Degree=Cmp	5	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	þar	þar	ADV	ADV	Degree=Pos	2	parataxis	_	_
+11	á	á	ADP	P	_	10	case	_	_
+12	meðal	meðal	ADP	P	_	10	obl	_	_
+13	stöðu	staða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
+14	leigjenda	leigjandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	13	nmod:poss	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	2	punct	_	_
+
+# sent_id = G-33-4751826,.4
+# X_ID = ID_MISSING
+# text = ég hlakka svolítið til þess .
+1	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	hlakka	hlakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	svolítið	svolítið	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	til	til	ADP	P	_	5	case	_	_
+5	þess	það	PRON	PRO-G	Case=Gen	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4751826,.5
+# X_ID = ID_MISSING
+# text = Hvað varðar orðin um fyrrverandi ríkisstjórn og áætlun hennar um að stíga þetta skref vil ég nefna að þótt ég hafi ekki kosið Framsókn kaus ég ekki heldur neinn annan flokk en minn eiginn, svo að því sé haldið til haga .
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	17	obl	_	_
 3	orðin	orð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
@@ -81,9 +89,9 @@
 42	haga	hagi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	41	obl	_	SpaceAfter=No
 43	.	.	PUNCT	.	_	17	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4751826,.4
-# X_ID = ID_missing_6
-# text = Því ætla ég að reyna að forðast það eftir bestu getu að verja verk einnar eða annarrar ríkisstjórnar.
+# sent_id = G-33-4751826,.6
+# X_ID = ID_MISSING
+# text = Því ætla ég að reyna að forðast það eftir bestu getu að verja verk einnar eða annarrar ríkisstjórnar .
 1	Því	það	PRON	PRO-D	Case=Dat	2	obj	_	_
 2	ætla	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -104,9 +112,9 @@
 18	ríkisstjórnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	nmod:poss	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4751826,.5
-# X_ID = ID_missing_7
-# text = Ég skal leyfa þeim að verja sig sjálf ef þau svo kjósa.
+# sent_id = G-33-4751826,.7
+# X_ID = ID_MISSING
+# text = Ég skal leyfa þeim að verja sig sjálf ef þau svo kjósa .
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	skal	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	leyfa	leyfa	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -121,9 +129,9 @@
 12	kjósa	kjósa	VERB	VBPI	Mood=Ind|Tense=Pres	6	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4751826,.6
-# X_ID = ID_missing_8
-# text = Aðalatriðið er þó þegar kemur að þessu frumvarpi að það er ekki í verkahring ríkisstjórnar að takmarka valdsvið Alþingis.
+# sent_id = G-33-4751826,.8
+# X_ID = ID_MISSING
+# text = Aðalatriðið er þó þegar kemur að þessu frumvarpi að það er ekki í verkahring ríkisstjórnar að takmarka valdsvið Alþingis .
 1	Aðalatriðið	aðalatriði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	þó	þó	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -145,9 +153,9 @@
 19	Alþingis	alþingi	PROPN	NPR-G	_	18	nmod:poss	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4751826,.7
-# X_ID = ID_missing_9
-# text = Það er í verkahring stjórnarskrár lýðveldisins Íslands.
+# sent_id = G-33-4751826,.9
+# X_ID = ID_MISSING
+# text = Það er í verkahring stjórnarskrár lýðveldisins Íslands .
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -157,9 +165,9 @@
 7	Íslands	ísland	PROPN	NPR-G	_	6	appos	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4751826,.8
-# X_IDs = ID_missing_10 ; ID_missing_11 ; ID_missing_12
-# text = Í henni er ein grein, 71. gr., sem fjallar um friðhelgi einkalífsins og á henni erum við ótvírætt að brjóta hér og rökræðum eingöngu hvort við gerum það með réttu eða ekki.
+# sent_id = G-33-4751826,.10
+# X_ID = ID_MISSING
+# text = Í henni er ein grein, 71. gr., sem fjallar um friðhelgi einkalífsins
 1	Í	í	ADP	P	_	2	case	_	_
 2	henni	hún	PRON	PRO-D	Case=Dat	0	root	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
@@ -174,31 +182,36 @@
 12	um	um	ADP	P	_	13	case	_	_
 13	friðhelgi	friðhelgi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
 14	einkalífsins	einkalíf	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	nmod:poss	_	_
-15	og	og	CCONJ	CONJ	_	22	cc	_	_
-16	á	á	ADP	P	_	17	case	_	_
-17	henni	hún	PRON	PRO-D	Case=Dat	22	obl	_	_
-18	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
-19	við	ég	PRON	PRO-N	Case=Nom	22	nsubj	_	_
-20	ótvírætt	ótvírætt	ADV	ADV	Degree=Pos	22	advmod	_	_
-21	að	að	PART	TO	_	22	mark	_	_
-22	brjóta	brjóta	VERB	VB	VerbForm=Inf	2	conj	_	OriginalHead=0
-23	hér	hér	ADV	ADV	Degree=Pos	22	advmod	_	_
-24	og	og	CCONJ	CONJ	_	25	cc	_	_
-25	rökræðum	rökræða	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-26	eingöngu	eingöngu	ADV	ADV	Degree=Pos	25	advmod	_	_
-27	hvort	hvort	SCONJ	WQ	_	29	mark	_	_
-28	við	ég	PRON	PRO-N	Case=Nom	29	nsubj	_	_
-29	gerum	gera	VERB	DOPI	Mood=Ind|Tense=Pres	25	ccomp	_	_
-30	það	það	PRON	PRO-A	Case=Acc	29	obj	_	_
-31	með	með	ADP	P	_	32	case	_	_
-32	réttu	réttur	ADJ	ADJ-D	Case=Dat|Degree=Pos	29	obl	_	_
-33	eða	eða	CCONJ	CONJ	_	34	cc	_	_
-34	ekki	ekki	ADV	NEG	_	29	conj	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4751826,.9
-# X_ID = ID_missing_13
-# text = Það er ekki miklu við það að bæta öðru en því að ef við ætlum að halda stjórnarskrána og ef við ætlum að halda friðhelgi einkalífsins ættum við kannski frekar að líta til þess hvernig við getum bætt stjórnarskrána heldur en að ræða það hvernig við getum gengið aðeins skemur en að taka kostinn sem er aðeins verri.
+# sent_id = G-33-4751826,.11
+# X_ID = ID_MISSING
+# text = og á henni erum við ótvírætt að brjóta hér
+1	og	og	CCONJ	CONJ	_	8	cc	_	_
+2	á	á	ADP	P	_	3	case	_	_
+3	henni	hún	PRON	PRO-D	Case=Dat	8	obl	_	_
+4	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+5	við	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+6	ótvírætt	ótvírætt	ADV	ADV	Degree=Pos	8	advmod	_	_
+7	að	að	PART	TO	_	8	mark	_	_
+8	brjóta	brjóta	VERB	VB	VerbForm=Inf	0	root	_	_
+9	hér	hér	ADV	ADV	Degree=Pos	8	advmod	_	_
+
+# sent_id = G-33-4751826,.12
+# X_ID = ID_MISSING
+# text = og rökræðum eingöngu hvort við gerum það með réttu eða ekki .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	rökræðum	rökræða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	eingöngu	eingöngu	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	hvort	hvort	SCONJ	WQ	_	6	mark	_	_
+5	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	gerum	gera	VERB	DOPI	Mood=Ind|Tense=Pres	2	ccomp	_	_
+7	það	það	PRON	PRO-A	Case=Acc	6	obj	_	_
+8	með	með	ADP	P	_	9	case	_	_
+9	réttu	réttur	ADJ	ADJ-D	Case=Dat|Degree=Pos	6	obl	_	_
+10	eða	eða	CCONJ	CONJ	_	11	cc	_	_
+11	ekki	ekki	ADV	NEG	_	6	conj	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	2	punct	_	_
+
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	ekki	ekki	ADV	NEG	_	0	root	_	_
@@ -256,6 +269,6 @@
 55	sem	sem	SCONJ	C	_	58	mark	_	_
 56	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	58	cop	_	_
 57	aðeins	aðeins	PART	FP	Degree=Pos	58	amod	_	_
-58	verri	illur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	54	acl:relcl	_	SpaceAfter=No
+58	verri	illur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	54	acl:relcl	_	_
 59	.	.	PUNCT	.	_	3	punct	_	_
 

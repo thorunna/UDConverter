@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Ég þakka hv. þingmanni fyrir falleg orð varðandi frumvarpið sem við leggjum fram um hefndarklám.
+# sent_id = G-33-4669345,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Ég þakka hv. þingmanni fyrir falleg orð varðandi frumvarpið sem við leggjum fram um hefndarklám .
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -21,9 +21,9 @@
 18	hefndarklám	hefndarklám	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.2
-# X_ID = ID_missing_2
-# text = Það er í raun birtingarmynd þess að við lifum í nýjum veruleika.
+# sent_id = G-33-4669345,.2
+# X_ID = ID_MISSING
+# text = Það er í raun birtingarmynd þess að við lifum í nýjum veruleika .
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -38,9 +38,9 @@
 12	veruleika	veruleiki	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Við lifum allmikið í netheimum, á hverjum degi, og þar gerast ýmsir hlutir, bæði góðir og vondir.
+# sent_id = G-33-4669345,.3
+# X_ID = ID_MISSING
+# text = Við lifum allmikið í netheimum, á hverjum degi,
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	lifum	lifa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	allmikið	allmikill	DET	Q-A	Case=Acc	2	obl	_	_
@@ -50,22 +50,26 @@
 7	á	á	ADP	P	_	9	case	_	_
 8	hverjum	hver	DET	Q-D	Case=Dat	9	amod	_	_
 9	degi	dagur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	og	og	CCONJ	CONJ	_	13	cc	_	_
-12	þar	þar	ADV	ADV	Degree=Pos	13	advmod	_	_
-13	gerast	gera	VERB	DOPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-14	ýmsir	ýmis	DET	Q-N	Case=Nom	15	amod	_	_
-15	hlutir	hlutur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	15	punct	_	_
-17	bæði	bæði	CCONJ	CONJ	_	18	amod	_	_
-18	góðir	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	amod	_	_
-19	og	og	CCONJ	CONJ	_	20	cc	_	_
-20	vondir	vondur	ADJ	ADJ-N	Case=Nom|Degree=Pos	18	conj	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	2	punct	_	_
+10	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.4
-# X_ID = ID_missing_5
-# text = Við verðum að vakna og vera í takt við það, láta lögin vera í takt við þann veruleika sem við búum við.
+# sent_id = G-33-4669345,.4
+# X_ID = ID_MISSING
+# text = og þar gerast ýmsir hlutir, bæði góðir og vondir .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	þar	þar	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	gerast	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	ýmsir	ýmis	DET	Q-N	Case=Nom	5	amod	_	_
+5	hlutir	hlutur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	bæði	bæði	CCONJ	CONJ	_	8	amod	_	_
+8	góðir	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
+9	og	og	CCONJ	CONJ	_	10	cc	_	_
+10	vondir	vondur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	conj	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4669345,.5
+# X_ID = ID_MISSING
+# text = Við verðum að vakna og vera í takt við það, láta lögin vera í takt við þann veruleika sem við búum við .
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -91,9 +95,9 @@
 23	við	við	ADP	P	_	22	obl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.5
-# X_ID = ID_missing_6
-# text = Hv. þingmaður talaði um vitundarvakninguna og þá miklu samvinnu sem stjórnvöld fóru í á síðasta kjörtímabili.
+# sent_id = G-33-4669345,.6
+# X_ID = ID_MISSING
+# text = Hv. þingmaður talaði um vitundarvakninguna og þá miklu samvinnu sem stjórnvöld fóru í á síðasta kjörtímabili .
 1	Hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	talaði	tala	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -112,9 +116,9 @@
 16	kjörtímabili	kjörtímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.6
-# X_ID = ID_missing_7
-# text = Stjórnvöld á þeim tíma eiga mikið hrós skilið fyrir að hafa farið fram með vitundarvakningu varðandi kynferðisbrot, einkum brot er snúa að börnum.
+# sent_id = G-33-4669345,.7
+# X_ID = ID_MISSING
+# text = Stjórnvöld á þeim tíma eiga mikið hrós skilið fyrir að hafa farið fram með vitundarvakningu varðandi kynferðisbrot, einkum brot er snúa að börnum .
 1	Stjórnvöld	stjórnvald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
 2	á	á	ADP	P	_	4	case	_	_
 3	þeim	sá	DET	D-D	Case=Dat	4	det	_	_
@@ -141,9 +145,9 @@
 24	börnum	barn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	22	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.7
-# X_ID = ID_missing_8
-# text = Þau gerðu það í miklu samstarfi við ýmis félagasamtök og hagsmunaaðila.
+# sent_id = G-33-4669345,.8
+# X_ID = ID_MISSING
+# text = Þau gerðu það í miklu samstarfi við ýmis félagasamtök og hagsmunaaðila .
 1	Þau	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	gerðu	gera	VERB	DODI	Mood=Ind|Tense=Past	0	root	_	_
 3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
@@ -157,9 +161,9 @@
 11	hagsmunaaðila	hagsmunaaðili	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	conj	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.8
-# X_ID = ID_missing_9
-# text = Það er auðvitað þyngra en tárum taki að sjá þá vinnu verða að engu þrátt fyrir fyrirheit þingmanna úr öllum flokkum í kjölfar druslugöngunnar í sumar.
+# sent_id = G-33-4669345,.9
+# X_ID = ID_MISSING
+# text = Það er auðvitað þyngra en tárum taki að sjá þá vinnu verða að engu þrátt fyrir fyrirheit þingmanna úr öllum flokkum í kjölfar druslugöngunnar í sumar .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	9	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	9	advmod	_	_
@@ -188,9 +192,9 @@
 26	sumar	sumar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.9
-# X_ID = ID_missing_10
-# text = Þá vildi enginn skera neitt niður.
+# sent_id = G-33-4669345,.10
+# X_ID = ID_MISSING
+# text = Þá vildi enginn skera neitt niður .
 1	Þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	vildi	vilja	AUX	MDDI	Mood=Ind|Tense=Past	4	aux	_	_
 3	enginn	enginn	DET	Q-N	Case=Nom	4	nsubj	_	_
@@ -199,31 +203,35 @@
 6	niður	niður	ADP	RP	_	4	compound:prt	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.10
-# X_IDs = ID_missing_11 ; ID_missing_12
-# text = Þá vildu allir bæta í, þá vildu allir halda áfram sama flotta starfinu og gera betur.
+# sent_id = G-33-4669345,.11
+# X_ID = ID_MISSING
+# text = Þá vildu allir bæta í,
 1	Þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	vildu	vilja	AUX	MDDI	Mood=Ind|Tense=Past	4	aux	_	_
 3	allir	allur	DET	Q-N	Case=Nom	4	nsubj	_	_
 4	bæta	bæta	VERB	VB	VerbForm=Inf	0	root	_	_
 5	í	í	ADP	RP	_	4	compound:prt	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	5	punct	_	_
-7	þá	þá	ADV	ADV	Degree=Pos	10	advmod	_	_
-8	vildu	vilja	AUX	MDDI	Mood=Ind|Tense=Past	10	aux	_	_
-9	allir	allur	DET	Q-N	Case=Nom	10	nsubj	_	_
-10	halda	halda	VERB	VB	VerbForm=Inf	4	conj	_	OriginalHead=0
-11	áfram	áfram	ADV	ADV	Degree=Pos	10	advmod	_	_
-12	sama	sami	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
-13	flotta	flottur	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
-14	starfinu	starf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obj	_	_
-15	og	og	CCONJ	CONJ	_	16	cc	_	_
-16	gera	gera	VERB	DO	VerbForm=Inf	10	conj	_	_
-17	betur	vel	ADV	ADVR	Degree=Cmp	16	advmod	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	4	punct	_	_
+6	,	,	PUNCT	,	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4669345,.11
-# X_IDs = ID_missing_13 ; ID_missing_14
-# text = En það er nú aldeilis ekki að sjá í þessu fjárlagafrumvarpi og það er skömm að því.
+# sent_id = G-33-4669345,.12
+# X_ID = ID_MISSING
+# text = þá vildu allir halda áfram sama flotta starfinu og gera betur .
+1	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
+2	vildu	vilja	AUX	MDDI	Mood=Ind|Tense=Past	4	aux	_	_
+3	allir	allur	DET	Q-N	Case=Nom	4	nsubj	_	_
+4	halda	halda	VERB	VB	VerbForm=Inf	0	root	_	_
+5	áfram	áfram	ADV	ADV	Degree=Pos	4	advmod	_	_
+6	sama	sami	ADJ	ADJ-D	Case=Dat|Degree=Pos	8	amod	_	_
+7	flotta	flottur	ADJ	ADJ-D	Case=Dat|Degree=Pos	8	amod	_	_
+8	starfinu	starf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obj	_	_
+9	og	og	CCONJ	CONJ	_	10	cc	_	_
+10	gera	gera	VERB	DO	VerbForm=Inf	4	conj	_	_
+11	betur	vel	ADV	ADVR	Degree=Cmp	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4669345,.13
+# X_ID = ID_MISSING
+# text = En það er nú aldeilis ekki að sjá í þessu fjárlagafrumvarpi
 1	En	en	CCONJ	CONJ	_	8	cc	_	_
 2	það	það	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
@@ -235,11 +243,12 @@
 9	í	í	ADP	P	_	11	case	_	_
 10	þessu	þessi	DET	D-D	Case=Dat	11	det	_	_
 11	fjárlagafrumvarpi	fjárlagafrumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
-12	og	og	CCONJ	CONJ	_	15	cc	_	_
-13	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	15	expl	_	_
-14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
-15	skömm	skömm	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	conj	_	OriginalHead=0
-16	að	að	ADP	P	_	17	case	_	_
-17	því	það	PRON	PRO-D	Case=Dat	15	obl	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	8	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+4	skömm	skömm	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+5	að	að	ADP	P	_	6	case	_	_
+6	því	það	PRON	PRO-D	Case=Dat	4	obl	_	_
+7	.	.	PUNCT	.	_	4	punct	_	_
 

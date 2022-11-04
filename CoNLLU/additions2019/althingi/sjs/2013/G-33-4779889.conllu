@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4779889,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Við reyndum að beita mjög öguðum vinnubrögðum í síðustu ríkisstjórn við meðferð mála af þessu tagi, enda tóku allir það alvarlega að við þyrftum að taka okkur á, meira annars í kjölfar niðurstaðna úr skýrslu rannsóknarnefndar Alþingis.
+# sent_id = G-33-4779889,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Við reyndum að beita mjög öguðum vinnubrögðum í síðustu ríkisstjórn við meðferð mála af þessu tagi, enda tóku allir það alvarlega að við þyrftum að taka okkur á, meira annars í kjölfar niðurstaðna úr skýrslu rannsóknarnefndar Alþingis .
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -45,9 +45,9 @@
 42	Alþingis	alþingi	PROPN	NPR-G	_	41	nmod:poss	_	SpaceAfter=No
 43	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4779889,.2
-# X_ID = ID_missing_2
-# text = Ég vil að minnsta kosti meina að við höfum reynt að sýna alla þá formfestu sem ber að gera þegar ákvarðanir eru rétt teknar af þessu tagi.
+# sent_id = G-33-4779889,.2
+# X_ID = ID_MISSING
+# text = Ég vil að minnsta kosti meina að við höfum reynt að sýna alla þá formfestu sem ber að gera þegar ákvarðanir eru rétt teknar af þessu tagi .
 1	Ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
 3	að	að	ADP	P	_	5	case	_	_
@@ -77,9 +77,9 @@
 27	tagi	tag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4779889,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Oftast komu beiðnir frá ráðuneytum eða ráðherrum um aukafjárveitingar og þá fóru þær í ráðherranefnd um ríkisfjármál sem fór yfir þær og gerði svo eftir atvikum tillögur í ríkisstjórn eða tók undir eða andmælti tillögu viðkomandi ráðherra.
+# sent_id = G-33-4779889,.3
+# X_ID = ID_MISSING
+# text = Oftast komu beiðnir frá ráðuneytum eða ráðherrum um aukafjárveitingar
 1	Oftast	oft	ADV	ADVS	Degree=Sup	2	advmod	_	_
 2	komu	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	beiðnir	beiðni	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
@@ -89,70 +89,78 @@
 7	ráðherrum	ráðherra	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	conj	_	_
 8	um	um	ADP	P	_	9	case	_	_
 9	aukafjárveitingar	aukafjárveiting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
-10	og	og	CCONJ	CONJ	_	12	cc	_	_
-11	þá	þá	ADV	ADV	Degree=Pos	12	advmod	_	_
-12	fóru	fara	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-13	þær	hún	PRON	PRO-N	Case=Nom	12	nsubj	_	_
-14	í	í	ADP	P	_	15	case	_	_
-15	ráðherranefnd	ráðherranefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
-16	um	um	ADP	P	_	17	case	_	_
-17	ríkisfjármál	ríkisfjármál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obl	_	_
-18	sem	sem	SCONJ	C	_	19	mark	_	_
-19	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	15	acl:relcl	_	_
-20	yfir	yfir	ADP	P	_	21	case	_	_
-21	þær	hún	PRON	PRO-A	Case=Acc	19	obl	_	_
-22	og	og	CCONJ	CONJ	_	23	cc	_	_
-23	gerði	gera	VERB	DODI	Mood=Ind|Tense=Past	19	conj	_	_
-24	svo	svo	ADV	ADV	Degree=Pos	23	advmod	_	_
-25	eftir	eftir	ADP	P	_	26	case	_	_
-26	atvikum	atvik	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	23	obl	_	_
-27	tillögur	tillaga	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obj	_	_
-28	í	í	ADP	P	_	29	case	_	_
-29	ríkisstjórn	ríkisstjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
-30	eða	eða	CCONJ	CONJ	_	31	cc	_	_
-31	tók	taka	VERB	VBDI	Mood=Ind|Tense=Past	23	conj	_	_
-32	undir	undir	ADP	P	_	31	obl	_	_
-33	eða	eða	CCONJ	CONJ	_	34	cc	_	_
-34	andmælti	andmæla	VERB	VBDI	Mood=Ind|Tense=Past	31	conj	_	_
-35	tillögu	tillaga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obj	_	_
-36	viðkomandi	viðkomandi	ADJ	ADJ-G	Case=Gen|Degree=Pos	37	amod	_	_
-37	ráðherra	ráðherra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	35	nmod:poss	_	SpaceAfter=No
-38	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4779889,.4
-# X_IDs = ID_missing_5 ; ID_missing_6
-# text = Það var ráðherranefnd um ríkisfjármál og það var ríkisstjórnin sjálf sem samþykkti og færði til bókar að þar hefði verið tekin stjórnskipulega gild ákvörðun um aukafjárveitingu.
+# sent_id = G-33-4779889,.4
+# X_ID = ID_MISSING
+# text = og þá fóru þær í ráðherranefnd um ríkisfjármál sem fór yfir þær og gerði svo eftir atvikum tillögur í ríkisstjórn eða tók undir eða andmælti tillögu viðkomandi ráðherra .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	fóru	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	þær	hún	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	ráðherranefnd	ráðherranefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+7	um	um	ADP	P	_	8	case	_	_
+8	ríkisfjármál	ríkisfjármál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	_
+9	sem	sem	SCONJ	C	_	10	mark	_	_
+10	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	6	acl:relcl	_	_
+11	yfir	yfir	ADP	P	_	12	case	_	_
+12	þær	hún	PRON	PRO-A	Case=Acc	10	obl	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	gerði	gera	VERB	DODI	Mood=Ind|Tense=Past	10	conj	_	_
+15	svo	svo	ADV	ADV	Degree=Pos	14	advmod	_	_
+16	eftir	eftir	ADP	P	_	17	case	_	_
+17	atvikum	atvik	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	_
+18	tillögur	tillaga	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obj	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	ríkisstjórn	ríkisstjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
+21	eða	eða	CCONJ	CONJ	_	22	cc	_	_
+22	tók	taka	VERB	VBDI	Mood=Ind|Tense=Past	14	conj	_	_
+23	undir	undir	ADP	P	_	22	obl	_	_
+24	eða	eða	CCONJ	CONJ	_	25	cc	_	_
+25	andmælti	andmæla	VERB	VBDI	Mood=Ind|Tense=Past	22	conj	_	_
+26	tillögu	tillaga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obj	_	_
+27	viðkomandi	viðkomandi	ADJ	ADJ-G	Case=Gen|Degree=Pos	28	amod	_	_
+28	ráðherra	ráðherra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	26	nmod:poss	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4779889,.5
+# X_ID = ID_MISSING
+# text = Það var ráðherranefnd um ríkisfjármál
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
 3	ráðherranefnd	ráðherranefnd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 4	um	um	ADP	P	_	5	case	_	_
 5	ríkisfjármál	ríkisfjármál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obl	_	_
-6	og	og	CCONJ	CONJ	_	9	cc	_	_
-7	það	það	PRON	PRO-N	Case=Nom	9	nsubj	_	_
-8	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	9	cop	_	_
-9	ríkisstjórnin	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	OriginalHead=0
-10	sjálf	sjálfur	PRON	PRO-N	Case=Nom	9	appos	_	_
-11	sem	sem	SCONJ	C	_	12	mark	_	_
-12	samþykkti	samþykkja	VERB	VBDI	Mood=Ind|Tense=Past	9	acl:relcl	_	_
-13	og	og	CCONJ	CONJ	_	14	cc	_	_
-14	færði	færa	VERB	VBDI	Mood=Ind|Tense=Past	12	conj	_	_
-15	til	til	ADP	P	_	16	case	_	_
-16	bókar	bók	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	obl	_	_
-17	að	að	SCONJ	C	_	21	mark	_	_
-18	þar	þar	ADV	ADV	Degree=Pos	21	advmod	_	_
-19	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	21	aux	_	_
-20	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	21	cop	_	_
-21	tekin	taka	VERB	VAN	Tense=Past|VerbForm=Part	14	ccomp	_	_
-22	stjórnskipulega	stjórnskipulega	ADV	ADV	Degree=Pos	23	amod	_	_
-23	gild	gildur	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	amod	_	_
-24	ákvörðun	ákvörðun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	_
-25	um	um	ADP	P	_	26	case	_	_
-26	aukafjárveitingu	aukafjárveiting	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obl	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4779889,.5
-# X_ID = ID_missing_7
-# text = Góð venja er þá að upplýsa fjárlaganefnd um að til standi að sækja um fjáraukalagaheimild vegna aðstæðna sem komið hafa upp.
+# sent_id = G-33-4779889,.6
+# X_ID = ID_MISSING
+# text = og það var ríkisstjórnin sjálf sem samþykkti og færði til bókar að þar hefði verið tekin stjórnskipulega gild ákvörðun um aukafjárveitingu .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+4	ríkisstjórnin	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+5	sjálf	sjálfur	PRON	PRO-N	Case=Nom	4	appos	_	_
+6	sem	sem	SCONJ	C	_	7	mark	_	_
+7	samþykkti	samþykkja	VERB	VBDI	Mood=Ind|Tense=Past	4	acl:relcl	_	_
+8	og	og	CCONJ	CONJ	_	9	cc	_	_
+9	færði	færa	VERB	VBDI	Mood=Ind|Tense=Past	7	conj	_	_
+10	til	til	ADP	P	_	11	case	_	_
+11	bókar	bók	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	obl	_	_
+12	að	að	SCONJ	C	_	16	mark	_	_
+13	þar	þar	ADV	ADV	Degree=Pos	16	advmod	_	_
+14	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	16	aux	_	_
+15	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	16	cop	_	_
+16	tekin	taka	VERB	VAN	Tense=Past|VerbForm=Part	9	ccomp	_	_
+17	stjórnskipulega	stjórnskipulega	ADV	ADV	Degree=Pos	18	amod	_	_
+18	gild	gildur	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	amod	_	_
+19	ákvörðun	ákvörðun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
+20	um	um	ADP	P	_	21	case	_	_
+21	aukafjárveitingu	aukafjárveiting	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4779889,.7
+# X_ID = ID_MISSING
+# text = Góð venja er þá að upplýsa fjárlaganefnd um að til standi að sækja um fjáraukalagaheimild vegna aðstæðna sem komið hafa upp .
 1	Góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	venja	venja	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
@@ -176,9 +184,9 @@
 21	upp	upp	ADP	RP	_	19	compound:prt	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4779889,.6
-# X_IDs = ID_missing_8 ; ID_missing_9 ; ID_missing_10
-# text = Ég sagði hér í gær og get endurtekið það að ég lít svo á og hef þannig lært réttinn í þessum efnum að þar með sé það orðin embættisskylda þess fjármálaráðherra sem leggur fram fjáraukalagafrumvarp næsta haust Forseti hringir. að leggja aukafjárveitinguna til við Alþingi, en Alþingi getur eftir atvikum hafnað henni Forseti hringir.
+# sent_id = G-33-4779889,.8
+# X_ID = ID_MISSING
+# text = Ég sagði hér í gær og get endurtekið það að ég lít svo á og hef þannig lært réttinn í þessum efnum að þar með sé það orðin embættisskylda þess fjármálaráðherra sem leggur fram fjáraukalagafrumvarp næsta haust Forseti hringir . að leggja aukafjárveitinguna til við Alþingi,
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	hér	hér	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -225,21 +233,29 @@
 44	til	til	ADP	RP	_	42	compound:prt	_	_
 45	við	við	ADP	P	_	46	case	_	_
 46	Alþingi	alþingi	PROPN	NPR-A	_	42	obl	_	SpaceAfter=No
-47	,	,	PUNCT	,	_	42	punct	_	_
-48	en	en	CCONJ	CONJ	_	53	cc	_	_
-49	Alþingi	alþingi	PROPN	NPR-N	_	53	nsubj	_	_
-50	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	53	aux	_	_
-51	eftir	eftir	ADP	P	_	52	case	_	_
-52	atvikum	atvik	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	53	obl	_	_
-53	hafnað	hafna	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-54	henni	hún	PRON	PRO-D	Case=Dat	53	obj	_	_
-55	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	56	nsubj	_	_
-56	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0|SpaceAfter=No
-57	.	.	PUNCT	.	_	2	punct	_	_
+47	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4779889,.7
-# X_ID = ID_missing_11
-# text = og ráðherrann getur sjálfur mælt gegn því að hún verði samþykkt.
+# sent_id = G-33-4779889,.9
+# X_ID = ID_MISSING
+# text = en Alþingi getur eftir atvikum hafnað henni
+1	en	en	CCONJ	CONJ	_	6	cc	_	_
+2	Alþingi	alþingi	PROPN	NPR-N	_	6	nsubj	_	_
+3	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
+4	eftir	eftir	ADP	P	_	5	case	_	_
+5	atvikum	atvik	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+6	hafnað	hafna	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	henni	hún	PRON	PRO-D	Case=Dat	6	obj	_	_
+
+# sent_id = G-33-4779889,.10
+# X_ID = ID_MISSING
+# text = Forseti hringir .
+1	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4779889,.11
+# X_ID = ID_MISSING
+# text = og ráðherrann getur sjálfur mælt gegn því að hún verði samþykkt .
 1	og	og	CCONJ	CONJ	_	5	cc	_	_
 2	ráðherrann	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 3	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
@@ -253,16 +269,13 @@
 11	samþykkt	samþykkja	VERB	VAN	Tense=Past|VerbForm=Part	7	ccomp	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4779889,.8
-# X_ID = ID_missing_12
-# text = Forseti hringir.
+# sent_id = G-33-4779889,.12
+# X_ID = ID_MISSING
+# text = Forseti hringir .
 1	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4779889,.9
-# X_ID = ID_missing_13
-# text = En það er hluti af embættisskyldum hans að sjá um að rétt tekin ákvörðun berist Alþingi.
 1	En	en	CCONJ	CONJ	_	4	cc	_	_
 2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -278,6 +291,6 @@
 13	tekin	taka	VERB	VAN	Tense=Past|VerbForm=Part	14	amod	_	_
 14	ákvörðun	ákvörðun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
 15	berist	bera	VERB	VBPS	Mood=Sub|Tense=Pres	9	obl	_	_
-16	Alþingi	alþingi	PROPN	NPR-D	_	15	iobj	_	SpaceAfter=No
+16	Alþingi	alþingi	PROPN	NPR-D	_	15	iobj	_	_
 17	.	.	PUNCT	.	_	4	punct	_	_
 

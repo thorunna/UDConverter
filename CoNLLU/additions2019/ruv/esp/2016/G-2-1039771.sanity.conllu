@@ -1,6 +1,6 @@
-# sent_id = RUV_ESP_2016_G-2-1039771.SANITY,.1
-# X_ID = ID_missing_1
-# text = Eiður Smári Guðjohnsen, landsliðsmaður í fótbolta, er hættur hjá norska úrvalsdeildarliðinu Molde þar sem hann hefur verið á mála frá því í febrúar á þessu ári.
+# sent_id = G-2-1039771.SANITY,.1
+# X_ID = ID_MISSING
+# text = Eiður Smári Guðjohnsen, landsliðsmaður í fótbolta, er hættur hjá norska úrvalsdeildarliðinu Molde þar sem hann hefur verið á mála frá því í febrúar á þessu ári .
 1	Eiður	eiður	PROPN	NPR-N	_	10	nsubj	_	_
 2	Smári	smári	PROPN	NPR-N	_	1	flat:name	_	_
 3	Guðjohnsen	guðjohnsen	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
@@ -31,9 +31,9 @@
 28	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1039771.SANITY,.2
-# X_ID = ID_missing_2
-# text = Þetta var staðfest á Twitter-síðu félagsins.
+# sent_id = G-2-1039771.SANITY,.2
+# X_ID = ID_MISSING
+# text = Þetta var staðfest á Twitter-síðu félagsins .
 1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
 3	staðfest	staðfesta	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -42,9 +42,9 @@
 6	félagsins	félag	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1039771.SANITY,.3
-# X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5
-# text = Eidur Gudjohnsen gir seg i Molde FK. Se hele intervjuet med Eidur straks på vår Facebook-side hjemmesiden er nede. pic.twitter.com QGL 9 I41 mD 8 Molde Fotballklubb Molde FK August 3, 2016 Eiður sem er 37 ára gerði í febrúar samning við Molde til tveggja ára en nú er óljóst hvað tekur við.
+# sent_id = G-2-1039771.SANITY,.3
+# X_ID = ID_MISSING
+# text = Eidur Gudjohnsen gir seg i Molde FK . Se hele intervjuet med Eidur straks på vår Facebook-side hjemmesiden er nede . pic.twitter.com QGL 9 I41 mD 8 Molde Fotballklubb Molde FK August 3, 2016
 1	Eidur	eidur	X	FW	Foreign=Yes	0	root	_	_
 2	Gudjohnsen	gudjohnsen	X	FW	Foreign=Yes	1	flat:foreign	_	_
 3	gir	gi	X	FW	Foreign=Yes	1	flat:foreign	_	_
@@ -80,32 +80,40 @@
 33	3	third	X	FW	Foreign=Yes	32	flat:foreign	_	SpaceAfter=No
 34	,	,	PUNCT	,	_	33	punct	_	_
 35	2016	2016	X	FW	Foreign=Yes	32	flat:foreign	_	_
-36	Eiður	eiður	PROPN	NPR-N	_	41	nsubj	_	_
-37	sem	sem	SCONJ	C	_	39	mark	_	_
-38	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	39	cop	_	_
-39	37	37	NUM	NUM-G	Case=Gen	36	acl:relcl	_	_
-40	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	39	amod	_	_
-41	gerði	gera	VERB	DODI	Mood=Ind|Tense=Past	1	conj	_	OriginalHead=0
-42	í	í	ADP	P	_	43	case	_	_
-43	febrúar	febrúar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	41	obl	_	_
-44	samning	samningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	41	obj	_	_
-45	við	við	ADP	P	_	46	case	_	_
-46	Molde	molde	PROPN	NPR-A	_	44	obl	_	_
-47	til	til	ADP	P	_	49	case	_	_
-48	tveggja	tveir	NUM	NUM-G	Case=Gen	49	nummod	_	_
-49	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	44	obl	_	_
-50	en	en	CCONJ	CONJ	_	53	cc	_	_
-51	nú	nú	ADV	ADV	Degree=Pos	53	advmod	_	_
-52	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	53	cop	_	_
-53	óljóst	óljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	conj	_	OriginalHead=0
-54	hvað	hver	PRON	WPRO-N	Case=Nom	55	obj	_	_
-55	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	53	xcomp	_	_
-56	við	við	ADP	RP	_	55	compound:prt	_	SpaceAfter=No
-57	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1039771.SANITY,.4
-# X_IDs = ID_missing_6 ; ID_missing_7
-# text = Hann spilaði síðast með norska liðinu í 3 tapi fyrir Vålerenga í fyrrakvöld og kom þá inn á á 61. mínútu.
+# sent_id = G-2-1039771.SANITY,.4
+# X_ID = ID_MISSING
+# text = Eiður sem er 37 ára gerði í febrúar samning við Molde til tveggja ára
+1	Eiður	eiður	PROPN	NPR-N	_	6	nsubj	_	_
+2	sem	sem	SCONJ	C	_	4	mark	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+4	37	37	NUM	NUM-G	Case=Gen	1	acl:relcl	_	_
+5	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	amod	_	_
+6	gerði	gera	VERB	DODI	Mood=Ind|Tense=Past	0	root	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	febrúar	febrúar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+9	samning	samningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+10	við	við	ADP	P	_	11	case	_	_
+11	Molde	molde	PROPN	NPR-A	_	9	obl	_	_
+12	til	til	ADP	P	_	14	case	_	_
+13	tveggja	tveir	NUM	NUM-G	Case=Gen	14	nummod	_	_
+14	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	obl	_	_
+
+# sent_id = G-2-1039771.SANITY,.5
+# X_ID = ID_MISSING
+# text = en nú er óljóst hvað tekur við .
+1	en	en	CCONJ	CONJ	_	4	cc	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	4	advmod	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+4	óljóst	óljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+5	hvað	hver	PRON	WPRO-N	Case=Nom	6	obj	_	_
+6	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	4	xcomp	_	_
+7	við	við	ADP	RP	_	6	compound:prt	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-2-1039771.SANITY,.6
+# X_ID = ID_MISSING
+# text = Hann spilaði síðast með norska liðinu í 3 tapi fyrir Vålerenga í fyrrakvöld
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	spilaði	spila	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	síðast	síðar	ADV	ADVS	Degree=Sup	2	advmod	_	_
@@ -119,19 +127,23 @@
 11	Vålerenga	Vålerenga	PROPN	NPR-D	_	9	obl	_	_
 12	í	í	ADP	P	_	13	case	_	_
 13	fyrrakvöld	fyrrakvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
-14	og	og	CCONJ	CONJ	_	15	cc	_	_
-15	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-16	þá	þá	ADV	ADV	Degree=Pos	15	advmod	_	_
-17	inn	inn	ADP	RP	_	18	compound:prt	_	_
-18	á	á	ADV	ADV	Degree=Pos	15	advmod	_	_
-19	á	á	ADP	P	_	21	case	_	_
-20	61.	61.	NUM	NUM-D	Case=Dat	21	nummod	_	_
-21	mínútu	mínúta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1039771.SANITY,.5
-# X_IDs = ID_missing_8 ; ID_missing_9
-# text = Molde er sem stendur í níunda sæti norsku deildarinnar og Eiður er búinn að skora eitt mark í þrettán leikjum á tímabilinu.
+# sent_id = G-2-1039771.SANITY,.7
+# X_ID = ID_MISSING
+# text = og kom þá inn á á 61. mínútu .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	inn	inn	ADP	RP	_	5	compound:prt	_	_
+5	á	á	ADV	ADV	Degree=Pos	2	advmod	_	_
+6	á	á	ADP	P	_	8	case	_	_
+7	61.	61.	NUM	NUM-D	Case=Dat	8	nummod	_	_
+8	mínútu	mínúta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1039771.SANITY,.8
+# X_ID = ID_MISSING
+# text = Molde er sem stendur í níunda sæti norsku deildarinnar
 1	Molde	molde	PROPN	NPR-N	_	7	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 3	sem	sem	SCONJ	C	_	4	mark	_	_
@@ -141,18 +153,19 @@
 7	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
 8	norsku	norskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	9	amod	_	_
 9	deildarinnar	deild	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
-10	og	og	CCONJ	CONJ	_	13	cc	_	_
-11	Eiður	eiður	PROPN	NPR-N	_	13	nsubj	_	_
-12	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-13	búinn	búa	VERB	VBN	Tense=Past|VerbForm=Part	7	conj	_	OriginalHead=0
-14	að	að	PART	TO	_	15	mark	_	_
-15	skora	skora	VERB	VB	VerbForm=Inf	13	xcomp	_	_
-16	eitt	einn	DET	ONE-A	Case=Acc	17	det	_	_
-17	mark	mark	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obj	_	_
-18	í	í	ADP	P	_	20	case	_	_
-19	þrettán	þrettán	NUM	NUM-D	Case=Dat	20	nummod	_	_
-20	leikjum	leikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	_
-21	á	á	ADP	P	_	22	case	_	_
-22	tímabilinu	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	7	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	Eiður	eiður	PROPN	NPR-N	_	4	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+4	búinn	búa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	skora	skora	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	eitt	einn	DET	ONE-A	Case=Acc	8	det	_	_
+8	mark	mark	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+9	í	í	ADP	P	_	11	case	_	_
+10	þrettán	þrettán	NUM	NUM-D	Case=Dat	11	nummod	_	_
+11	leikjum	leikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+12	á	á	ADP	P	_	13	case	_	_
+13	tímabilinu	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+14	.	.	PUNCT	.	_	4	punct	_	_
 

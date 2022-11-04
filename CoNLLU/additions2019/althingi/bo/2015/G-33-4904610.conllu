@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2015_G-33-4904610,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Ég tek undir með hv. þingmanni að ef fólk gefur sér þær forsendur sem hann og hv. þm. Jón Gunnarsson gera sé það sjálfsögð niðurstaða, ef það á að fara eftir veiðireynslu og ef hlutfallið þar er hærra hjá smábátum þá eiga þeir auðvitað að fá hærra hlutfall.
+# sent_id = G-33-4904610,.1
+# X_ID = ID_MISSING
+# text = Ég tek undir með hv. þingmanni að ef fólk gefur sér þær forsendur sem hann og hv. þm. Jón Gunnarsson gera sé það sjálfsögð niðurstaða,
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	undir	undir	ADP	P	_	2	obl	_	_
@@ -26,35 +26,39 @@
 23	það	það	PRON	PRO-N	Case=Nom	25	nsubj	_	_
 24	sjálfsögð	sjálfsagður	ADJ	ADJ-N	Case=Nom|Degree=Pos	25	amod	_	_
 25	niðurstaða	niðurstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	25	punct	_	_
-27	ef	ef	ADP	P	_	29	case	_	_
-28	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	29	expl	_	_
-29	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	43	obl	_	_
-30	að	að	PART	TO	_	31	mark	_	_
-31	fara	fara	VERB	VB	VerbForm=Inf	29	xcomp	_	_
-32	eftir	eftir	ADP	P	_	33	case	_	_
-33	veiðireynslu	veiðireynsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	31	obl	_	_
-34	og	og	CCONJ	CONJ	_	39	cc	_	_
-35	ef	ef	ADP	P	_	39	case	_	_
-36	hlutfallið	hlutfall	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	39	nsubj	_	_
-37	þar	þar	ADV	ADV	Degree=Pos	39	advmod	_	_
-38	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	39	cop	_	_
-39	hærra	hár	ADJ	ADJR-N	Case=Nom|Degree=Cmp	29	conj	_	_
-40	hjá	hjá	ADP	P	_	41	case	_	_
-41	smábátum	smábátur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	39	obl	_	_
-42	þá	þá	ADV	ADV	Degree=Pos	43	advmod	_	_
-43	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-44	þeir	hann	PRON	PRO-N	Case=Nom	43	nsubj	_	_
-45	auðvitað	auðvitað	ADV	ADV	Degree=Pos	43	advmod	_	_
-46	að	að	PART	TO	_	47	mark	_	_
-47	fá	fá	VERB	VB	VerbForm=Inf	43	xcomp	_	_
-48	hærra	hár	ADJ	ADJR-A	Case=Acc|Degree=Cmp	49	amod	_	_
-49	hlutfall	hlutfall	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	47	obj	_	SpaceAfter=No
-50	.	.	PUNCT	.	_	2	punct	_	_
+26	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4904610,.2
-# X_ID = ID_missing_3
-# text = Ég er bara að segja að ég tel þetta heila plagg ekki vera málið, ÖS: Telur það vera drasl. tel það vera drasl að ýmsu leyti.
+# sent_id = G-33-4904610,.2
+# X_ID = ID_MISSING
+# text = ef það á að fara eftir veiðireynslu og ef hlutfallið þar er hærra hjá smábátum þá eiga þeir auðvitað að fá hærra hlutfall .
+1	ef	ef	ADP	P	_	3	case	_	_
+2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
+3	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	17	obl	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	fara	fara	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	eftir	eftir	ADP	P	_	7	case	_	_
+7	veiðireynslu	veiðireynsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+8	og	og	CCONJ	CONJ	_	13	cc	_	_
+9	ef	ef	ADP	P	_	13	case	_	_
+10	hlutfallið	hlutfall	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
+11	þar	þar	ADV	ADV	Degree=Pos	13	advmod	_	_
+12	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
+13	hærra	hár	ADJ	ADJR-N	Case=Nom|Degree=Cmp	3	conj	_	_
+14	hjá	hjá	ADP	P	_	15	case	_	_
+15	smábátum	smábátur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
+16	þá	þá	ADV	ADV	Degree=Pos	17	advmod	_	_
+17	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+18	þeir	hann	PRON	PRO-N	Case=Nom	17	nsubj	_	_
+19	auðvitað	auðvitað	ADV	ADV	Degree=Pos	17	advmod	_	_
+20	að	að	PART	TO	_	21	mark	_	_
+21	fá	fá	VERB	VB	VerbForm=Inf	17	xcomp	_	_
+22	hærra	hár	ADJ	ADJR-A	Case=Acc|Degree=Cmp	23	amod	_	_
+23	hlutfall	hlutfall	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obj	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	17	punct	_	_
+
+# sent_id = G-33-4904610,.3
+# X_ID = ID_MISSING
+# text = Ég er bara að segja að ég tel þetta heila plagg ekki vera málið, ÖS : Telur það vera drasl . tel það vera drasl að ýmsu leyti .
 1	Ég	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
 3	bara	bara	ADV	FP	Degree=Pos	18	advmod	_	_
@@ -86,9 +90,9 @@
 29	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	18	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4904610,.3
-# X_ID = ID_missing_4
-# text = Tökum þessa 90<percent/> úthlutun.
+# sent_id = G-33-4904610,.4
+# X_ID = ID_MISSING
+# text = Tökum þessa 90<percent/> úthlutun .
 1	Tökum	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	þessa	þessi	DET	D-A	Case=Acc	5	det	_	_
 3	90	níutíu	NUM	NUM-N	Case=Nom	4	nummod	_	SpaceAfter=No
@@ -96,9 +100,9 @@
 5	úthlutun	úthlutun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4904610,.4
-# X_ID = ID_missing_5
-# text = Til þess að finna rétt verð á því, verð til þjóðarinnar, er þá ekki langbest að láta stóru aðilana keppa á samkeppnismarkaði?
+# sent_id = G-33-4904610,.5
+# X_ID = ID_MISSING
+# text = Til þess að finna rétt verð á því, verð til þjóðarinnar, er þá ekki langbest að láta stóru aðilana keppa á samkeppnismarkaði ?
 1	Til	til	ADP	P	_	2	case	_	_
 2	þess	það	PRON	PRO-G	Case=Gen	19	obl	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -125,9 +129,9 @@
 24	samkeppnismarkaði	samkeppnismarkaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
 25	?	?	PUNCT	.	_	19	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4904610,.5
-# X_IDs = ID_missing_6 ; ID_missing_7
-# text = Ég geri mér grein fyrir því að það er ekki besta leiðin ef maður er að vinna að byggðasjónarmiðum, að láta þá smábátana gera það líka, tökum þá algjörlega út fyrir sviga.
+# sent_id = G-33-4904610,.6
+# X_ID = ID_MISSING
+# text = Ég geri mér grein fyrir því að það er ekki besta leiðin ef maður er að vinna að byggðasjónarmiðum, að láta þá smábátana gera það líka,
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	geri	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mér	ég	PRON	PRO-D	Case=Dat	2	iobj	_	_
@@ -155,31 +159,32 @@
 25	gera	gera	VERB	DO	VerbForm=Inf	22	xcomp	_	_
 26	það	það	PRON	PRO-A	Case=Acc	25	obj	_	_
 27	líka	líka	ADV	ALSO	_	25	advmod	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	25	punct	_	_
-29	tökum	taka	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-30	þá	hann	PRON	PRO-A	Case=Acc	29	obj	_	_
-31	algjörlega	algjörlega	ADV	ADV	Degree=Pos	29	advmod	_	_
-32	út	út	ADP	RP	_	34	compound:prt	_	_
-33	fyrir	fyrir	ADP	P	_	34	case	_	_
-34	sviga	svigi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	29	obl	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	2	punct	_	_
+28	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4904610,.6
-# X_ID = ID_missing_8
-# text = En af hverju eru 90<percent/> aflaheimildanna ekki Forseti hringir. verðmetin á samkeppnismarkaði?
+# sent_id = G-33-4904610,.7
+# X_ID = ID_MISSING
+# text = tökum þá algjörlega út fyrir sviga .
+1	tökum	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	þá	hann	PRON	PRO-A	Case=Acc	1	obj	_	_
+3	algjörlega	algjörlega	ADV	ADV	Degree=Pos	1	advmod	_	_
+4	út	út	ADP	RP	_	6	compound:prt	_	_
+5	fyrir	fyrir	ADP	P	_	6	case	_	_
+6	sviga	svigi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	1	punct	_	_
+
 1	En	en	CCONJ	CONJ	_	12	cc	_	_
 2	af	af	ADP	P	_	3	case	_	_
 3	hverju	hver	PRON	WPRO-D	Case=Dat	12	obl	_	_
 4	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
-5	90	níutíu	NUM	NUM-N	Case=Nom	6	nummod	_	SpaceAfter=No
+5	90	níutíu	NUM	NUM-N	Case=Nom	6	nummod	_	_|SpaceAfter=No
 6	<percent/>	prósent	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	nsubj	_	_
 7	aflaheimildanna	aflaheimild	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	nmod:poss	_	_
 8	ekki	ekki	ADV	NEG	_	12	advmod	_	_
 9	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
-10	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	12	dep	_	SpaceAfter=No
+10	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	12	dep	_	_
 11	.	.	PUNCT	.	_	10	punct	_	_
 12	verðmetin	verðmetinn	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 13	á	á	ADP	P	_	14	case	_	_
-14	samkeppnismarkaði	samkeppnismarkaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+14	samkeppnismarkaði	samkeppnismarkaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
 15	?	?	PUNCT	.	_	12	punct	_	_
 

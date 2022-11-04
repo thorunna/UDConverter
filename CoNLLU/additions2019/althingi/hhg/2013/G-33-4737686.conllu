@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Virðulegi forseti. Mig langar að leiðrétta tvennt, eða kannski ekki leiðrétta annað þeirra, en ég vil nefna það sérstaklega að ég er ekki á móti lögum sem eiga að jafna rétt fólks og þar mega jafnvel vera upptalningar mín vegna, til dæmis þegar kemur að rétti fólks til þess að sækja þjónustu.
+# sent_id = G-33-4737686,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Mig langar að leiðrétta tvennt, eða kannski ekki leiðrétta annað þeirra,
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -17,51 +17,55 @@
 14	annað	annar	PRON	OTHER-A	Case=Acc	15	det	_	_
 15	þeirra	það	PRON	PRO-G	Case=Gen	13	obj	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	5	punct	_	_
-17	en	en	CCONJ	CONJ	_	20	cc	_	_
-18	ég	ég	PRON	PRO-N	Case=Nom	20	nsubj	_	_
-19	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	20	aux	_	_
-20	nefna	nefna	VERB	VB	VerbForm=Inf	5	conj	_	OriginalHead=0
-21	það	það	PRON	PRO-A	Case=Acc	20	obj	_	_
-22	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	20	advmod	_	_
-23	að	að	SCONJ	C	_	28	mark	_	_
-24	ég	ég	PRON	PRO-N	Case=Nom	28	nsubj	_	_
-25	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	28	cop	_	_
-26	ekki	ekki	ADV	NEG	_	28	advmod	_	_
-27	á	á	ADP	P	_	28	case	_	_
-28	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	ccomp	_	_
-29	lögum	lag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	28	nmod:poss	_	_
-30	sem	sem	SCONJ	C	_	31	mark	_	_
-31	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	28	acl:relcl	_	_
-32	að	að	PART	TO	_	33	mark	_	_
-33	jafna	jafna	VERB	VB	VerbForm=Inf	31	xcomp	_	_
-34	rétt	réttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obj	_	_
-35	fólks	fólk	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	34	nmod:poss	_	_
-36	og	og	CCONJ	CONJ	_	42	cc	_	_
-37	þar	þar	ADV	ADV	Degree=Pos	42	advmod	_	_
-38	mega	mega	AUX	MDPI	Mood=Ind|Tense=Pres	42	aux	_	_
-39	jafnvel	jafnvel	ADV	ADV	Degree=Pos	42	advmod	_	_
-40	vera	vera	AUX	BE	VerbForm=Inf	42	cop	_	_
-41	upptalningar	upptalning	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	42	nsubj	_	_
-42	mín	ég	PRON	PRO-G	Case=Gen	28	parataxis	_	_
-43	vegna	vegna	ADP	P	_	42	case	_	SpaceAfter=No
-44	,	,	PUNCT	,	_	43	punct	_	_
-45	til	til	ADP	P	_	46	case	_	_
-46	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	28	conj	_	_
-47	þegar	þegar	ADP	P	_	48	case	_	_
-48	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	46	obl	_	_
-49	að	að	ADP	P	_	50	case	_	_
-50	rétti	réttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	48	obl	_	_
-51	fólks	fólk	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	50	nmod:poss	_	_
-52	til	til	ADP	P	_	53	case	_	_
-53	þess	það	PRON	PRO-G	Case=Gen	50	obl	_	_
-54	að	að	PART	TO	_	55	mark	_	_
-55	sækja	sækja	VERB	VB	VerbForm=Inf	53	xcomp	_	_
-56	þjónustu	þjónusta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	55	obj	_	SpaceAfter=No
-57	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.2
-# X_ID = ID_missing_3
-# text = Ég er algjörlega hlynntur banni gegn mismunun á þeim vettvangi og ýmsum öðrum lögum þar að lútandi.
+# sent_id = G-33-4737686,.2
+# X_ID = ID_MISSING
+# text = en ég vil nefna það sérstaklega að ég er ekki á móti lögum sem eiga að jafna rétt fólks og þar mega jafnvel vera upptalningar mín vegna, til dæmis þegar kemur að rétti fólks til þess að sækja þjónustu .
+1	en	en	CCONJ	CONJ	_	4	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+3	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
+4	nefna	nefna	VERB	VB	VerbForm=Inf	0	root	_	_
+5	það	það	PRON	PRO-A	Case=Acc	4	obj	_	_
+6	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	4	advmod	_	_
+7	að	að	SCONJ	C	_	12	mark	_	_
+8	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
+10	ekki	ekki	ADV	NEG	_	12	advmod	_	_
+11	á	á	ADP	P	_	12	case	_	_
+12	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	ccomp	_	_
+13	lögum	lag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	nmod:poss	_	_
+14	sem	sem	SCONJ	C	_	15	mark	_	_
+15	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	12	acl:relcl	_	_
+16	að	að	PART	TO	_	17	mark	_	_
+17	jafna	jafna	VERB	VB	VerbForm=Inf	15	xcomp	_	_
+18	rétt	réttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
+19	fólks	fólk	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	_
+20	og	og	CCONJ	CONJ	_	26	cc	_	_
+21	þar	þar	ADV	ADV	Degree=Pos	26	advmod	_	_
+22	mega	mega	AUX	MDPI	Mood=Ind|Tense=Pres	26	aux	_	_
+23	jafnvel	jafnvel	ADV	ADV	Degree=Pos	26	advmod	_	_
+24	vera	vera	AUX	BE	VerbForm=Inf	26	cop	_	_
+25	upptalningar	upptalning	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	26	nsubj	_	_
+26	mín	ég	PRON	PRO-G	Case=Gen	12	parataxis	_	_
+27	vegna	vegna	ADP	P	_	26	case	_	SpaceAfter=No
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	til	til	ADP	P	_	30	case	_	_
+30	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	conj	_	_
+31	þegar	þegar	ADP	P	_	32	case	_	_
+32	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	30	obl	_	_
+33	að	að	ADP	P	_	34	case	_	_
+34	rétti	réttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
+35	fólks	fólk	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	34	nmod:poss	_	_
+36	til	til	ADP	P	_	37	case	_	_
+37	þess	það	PRON	PRO-G	Case=Gen	34	obl	_	_
+38	að	að	PART	TO	_	39	mark	_	_
+39	sækja	sækja	VERB	VB	VerbForm=Inf	37	xcomp	_	_
+40	þjónustu	þjónusta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	39	obj	_	SpaceAfter=No
+41	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4737686,.3
+# X_ID = ID_MISSING
+# text = Ég er algjörlega hlynntur banni gegn mismunun á þeim vettvangi og ýmsum öðrum lögum þar að lútandi .
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	algjörlega	algjörlega	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -81,9 +85,9 @@
 17	lútandi	lúta	VERB	VAG	Tense=Pres|VerbForm=Part	14	acl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.3
-# X_ID = ID_missing_4
-# text = En þegar kemur að lögum sem beinlínis banna það að grínast með eitthvað eða hæðast að því er ég efins, svo ekki sé meira sagt.
+# sent_id = G-33-4737686,.4
+# X_ID = ID_MISSING
+# text = En þegar kemur að lögum sem beinlínis banna það að grínast með eitthvað eða hæðast að því er ég efins, svo ekki sé meira sagt .
 1	En	en	CCONJ	CONJ	_	20	cc	_	_
 2	þegar	þegar	ADP	P	_	3	case	_	_
 3	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	20	obl	_	_
@@ -112,9 +116,9 @@
 26	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	22	advcl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	20	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.4
-# X_ID = ID_missing_5
-# text = Hvað varðar orð hæstv. ráðherra um að hér sé ekki ráðist á tjáningarfrelsið er það rétt.
+# sent_id = G-33-4737686,.5
+# X_ID = ID_MISSING
+# text = Hvað varðar orð hæstv. ráðherra um að hér sé ekki ráðist á tjáningarfrelsið er það rétt .
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	16	obl	_	_
 3	orð	orð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
@@ -133,9 +137,9 @@
 16	rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	16	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.5
-# X_ID = ID_missing_6
-# text = Við gætum og ættum að hafa hér langa umræðu um það því það er kominn tími til.
+# sent_id = G-33-4737686,.6
+# X_ID = ID_MISSING
+# text = Við gætum og ættum að hafa hér langa umræðu um það því það er kominn tími til .
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	gætum	geta	VERB	MDDS	Mood=Sub|Tense=Past	0	root	_	_
 3	og	og	CCONJ	CONJ	_	4	cc	_	_
@@ -155,9 +159,9 @@
 17	til	til	ADP	RP	_	15	compound:prt	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.6
-# X_ID = ID_missing_7
-# text = Með hæstaréttardómi í máli nr. 16/1983 var staðfest gildi laga sem eru mjög sambærileg þessum, það er 125. gr. almennra hegningarlaga sem ég þuldi hérna upp áðan og geri aftur, með leyfi forseta:
+# sent_id = G-33-4737686,.7
+# X_ID = ID_MISSING
+# text = Með hæstaréttardómi í máli nr. 16/1983 var staðfest gildi laga sem eru mjög sambærileg þessum, það er 125. gr. almennra hegningarlaga sem ég þuldi hérna upp áðan og geri aftur, með leyfi forseta :
 1	Með	með	ADP	P	_	2	case	_	_
 2	hæstaréttardómi	hæstaréttardómur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -195,9 +199,9 @@
 35	forseta	forseti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	34	nmod:poss	_	SpaceAfter=No
 36	:	:	PUNCT	.	_	8	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.7
-# X_ID = ID_missing_8
-# text = Hver, sem opinberlega dregur dár að eða smánar trúarkenningar eða guðsdýrkun löglegs trúarbragðafélags, sem er hér á landi, skal sæta sektum eða fangelsi allt að 3 mánuðum.
+# sent_id = G-33-4737686,.8
+# X_ID = ID_MISSING
+# text = Hver, sem opinberlega dregur dár að eða smánar trúarkenningar eða guðsdýrkun löglegs trúarbragðafélags, sem er hér á landi, skal sæta sektum eða fangelsi allt að 3 mánuðum .
 1	Hver	hver	DET	Q-N	Case=Nom	23	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	sem	sem	SCONJ	C	_	5	mark	_	_
@@ -230,9 +234,9 @@
 30	mánuðum	mánuður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	23	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.8
-# X_ID = ID_missing_9
-# text = Mál skal ekki höfða, nema að fyrirlagi saksóknara.
+# sent_id = G-33-4737686,.9
+# X_ID = ID_MISSING
+# text = Mál skal ekki höfða, nema að fyrirlagi saksóknara .
 1	Mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	obj	_	_
 2	skal	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -244,9 +248,9 @@
 9	saksóknara	saksóknari	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	nmod:poss	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.9
-# X_ID = ID_missing_10
-# text = Þetta eru mjög sambærileg lög að því leyti að þarna er bannað að gera grín.
+# sent_id = G-33-4737686,.10
+# X_ID = ID_MISSING
+# text = Þetta eru mjög sambærileg lög að því leyti að þarna er bannað að gera grín .
 1	Þetta	þessi	DET	D-N	Case=Nom	5	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -264,9 +268,9 @@
 15	grín	grín	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.10
-# X_ID = ID_missing_11
-# text = Mál nr. 16/1983, Spegilsmálið svokallaða, snerist um grín.
+# sent_id = G-33-4737686,.11
+# X_ID = ID_MISSING
+# text = Mál nr. 16/1983, Spegilsmálið svokallaða, snerist um grín .
 1	Mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 2	nr.	númer	NOUN	N	Definite=Ind|Number=Sing	1	nmod:poss	_	_
 3	16/1983	16/1983	NUM	NUM	_	2	nmod:poss	_	SpaceAfter=No
@@ -279,9 +283,9 @@
 10	grín	grín	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.11
-# X_ID = ID_missing_12
-# text = Það var mjög greinilega grín.
+# sent_id = G-33-4737686,.12
+# X_ID = ID_MISSING
+# text = Það var mjög greinilega grín .
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -289,9 +293,9 @@
 5	grín	grín	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.12
-# X_ID = ID_missing_13
-# text = Það eina sem gerðist var að kristnir í landinu og saksóknari sem væntanlega hefur verið kristinn varð móðgaður, svo hann kærði og hann vann.
+# sent_id = G-33-4737686,.13
+# X_ID = ID_MISSING
+# text = Það eina sem gerðist var að kristnir í landinu og saksóknari sem væntanlega hefur verið kristinn varð móðgaður, svo hann kærði og hann vann .
 1	Það	sá	DET	D-N	Case=Nom	0	root	_	_
 2	eina	einn	DET	ONE-N	Case=Nom	1	det	_	_
 3	sem	sem	SCONJ	C	_	4	mark	_	_
@@ -319,29 +323,33 @@
 25	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	22	conj	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.13
-# X_IDs = ID_missing_14 ; ID_missing_15
-# text = Málið fór fyrir Hæstarétt og hann vann.
+# sent_id = G-33-4737686,.14
+# X_ID = ID_MISSING
+# text = Málið fór fyrir Hæstarétt
 1	Málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
 4	Hæstarétt	hæstiréttur	PROPN	NPR-A	_	2	obl	_	_
-5	og	og	CCONJ	CONJ	_	7	cc	_	_
-6	hann	hann	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-7	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0|SpaceAfter=No
-8	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.14
-# X_ID = ID_missing_16
-# text = Það stóðst stjórnarskrá.
+# sent_id = G-33-4737686,.15
+# X_ID = ID_MISSING
+# text = og hann vann .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	hann	hann	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4737686,.16
+# X_ID = ID_MISSING
+# text = Það stóðst stjórnarskrá .
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	stóðst	standa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	stjórnarskrá	stjórnarskrá	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.15
-# X_ID = ID_missing_17
-# text = Gripið fram í: Húrra fyrir þeim.
+# sent_id = G-33-4737686,.17
+# X_ID = ID_MISSING
+# text = Gripið fram í : Húrra fyrir þeim .
 1	Gripið	grípa	VERB	VAN	Tense=Past|VerbForm=Part	7	dep	_	_
 2	fram	fram	ADV	RP	_	1	advmod	_	_
 3	í	í	ADP	RP	_	2	compound:prt	_	SpaceAfter=No
@@ -351,9 +359,6 @@
 7	þeim	hann	PRON	PRO-D	Case=Dat	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4737686,.16
-# X_ID = ID_missing_18
-# text = Ef þessi lög eiga að standast lög um tjáningarfrelsi vil ég velta því upp, virðulegi forseti, að það sé eitthvað mikið að því hvernig við lítum á tjáningarfrelsið.
 1	Ef	ef	ADP	P	_	4	case	_	_
 2	þessi	þessi	DET	D-N	Case=Nom	3	det	_	_
 3	lög	lag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
@@ -367,10 +372,10 @@
 11	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
 12	velta	velta	VERB	VB	VerbForm=Inf	0	root	_	_
 13	því	það	PRON	PRO-D	Case=Dat	12	obj	_	_
-14	upp	upp	ADP	RP	_	12	compound:prt	_	SpaceAfter=No
+14	upp	upp	ADP	RP	_	12	compound:prt	_	_
 15	,	,	PUNCT	,	_	14	punct	_	_
 16	virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	17	amod	_	_
-17	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	vocative	_	SpaceAfter=No
+17	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	vocative	_	_
 18	,	,	PUNCT	,	_	17	punct	_	_
 19	að	að	SCONJ	C	_	25	mark	_	_
 20	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	25	expl	_	_
@@ -383,6 +388,6 @@
 27	við	ég	PRON	PRO-N	Case=Nom	28	nsubj	_	_
 28	lítum	líta	VERB	VBPI	Mood=Ind|Tense=Pres	25	ccomp	_	_
 29	á	á	ADP	P	_	30	case	_	_
-30	tjáningarfrelsið	tjáningarfrelsi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obl	_	SpaceAfter=No
+30	tjáningarfrelsið	tjáningarfrelsi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obl	_	_
 31	.	.	PUNCT	.	_	12	punct	_	_
 

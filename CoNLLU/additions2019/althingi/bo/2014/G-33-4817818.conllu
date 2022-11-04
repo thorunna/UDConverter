@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2014_G-33-4817818,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Ég þakka spurninguna.
+# sent_id = G-33-4817818,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég þakka spurninguna .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -9,27 +9,31 @@
 6	spurninguna	spurning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4817818,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Hún kemur vissulega úr annarri átt en er engu að síður mjög mikilvæg.
+# sent_id = G-33-4817818,.2
+# X_ID = ID_MISSING
+# text = Hún kemur vissulega úr annarri átt
 1	Hún	hún	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vissulega	vissulega	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	úr	úr	ADP	P	_	6	case	_	_
 5	annarri	annar	PRON	OTHER-D	Case=Dat	6	det	_	_
 6	átt	átt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
-7	en	en	CCONJ	CONJ	_	13	cc	_	_
-8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-9	engu	enginn	DET	Q-D	Case=Dat	11	obl	_	_
-10	að	að	ADP	P	_	9	case	_	_
-11	síður	varla	ADV	ADVR	Degree=Cmp	13	advmod	_	_
-12	mjög	mjög	ADV	ADV	Degree=Pos	13	amod	_	_
-13	mikilvæg	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0|SpaceAfter=No
-14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4817818,.3
-# X_ID = ID_missing_4
-# text = Ég þakka fyrir tækifærið til að fá að ræða hana.
+# sent_id = G-33-4817818,.3
+# X_ID = ID_MISSING
+# text = en er engu að síður mjög mikilvæg .
+1	en	en	CCONJ	CONJ	_	7	cc	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
+3	engu	enginn	DET	Q-D	Case=Dat	5	obl	_	_
+4	að	að	ADP	P	_	3	case	_	_
+5	síður	varla	ADV	ADVR	Degree=Cmp	7	advmod	_	_
+6	mjög	mjög	ADV	ADV	Degree=Pos	7	amod	_	_
+7	mikilvæg	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = G-33-4817818,.4
+# X_ID = ID_MISSING
+# text = Ég þakka fyrir tækifærið til að fá að ræða hana .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -42,9 +46,9 @@
 10	hana	hún	PRON	PRO-A	Case=Acc	9	obj	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4817818,.4
-# X_ID = ID_missing_5
-# text = Ég kom ekkert inn á menntamálin í ræðu minni.
+# sent_id = G-33-4817818,.5
+# X_ID = ID_MISSING
+# text = Ég kom ekkert inn á menntamálin í ræðu minni .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	ekkert	enginn	DET	Q-A	Case=Acc	2	obl	_	_
@@ -56,9 +60,9 @@
 9	minni	minn	PRON	PRO-D	Case=Dat	8	nmod:poss	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4817818,.5
-# X_ID = ID_missing_6
-# text = Þetta með að hleypa ekki þessum elstu nemendum, eða ungmennum eða hvað þau hafa verið kölluð, inn í framhaldsskólana lengur ég hef ekki séð neinar greiningar á því að það sé óskynsamlegt.
+# sent_id = G-33-4817818,.6
+# X_ID = ID_MISSING
+# text = Þetta með að hleypa ekki þessum elstu nemendum, eða ungmennum eða hvað þau hafa verið kölluð, inn í framhaldsskólana lengur ég hef ekki séð neinar greiningar á því að það sé óskynsamlegt .
 1	Þetta	þessi	DET	D-N	Case=Nom	26	dep	_	_
 2	með	með	ADP	P	_	4	case	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -95,9 +99,9 @@
 34	óskynsamlegt	óskynsamlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	30	ccomp	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	26	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4817818,.6
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Það liggur fyrir, eins og kom fram í ræðu hv. þm. Árna Páls Árnasonar hér áðan, að til þess að fara í önnur úrræði, sem kosta, þurfi viðkomandi að afla sér tekna upp á 700 þús. kr. yfir árið, til að geta borgað skólagjöldin, sem eru um 400 þús. kr. Þetta er því til þess fallið að festa fólk áfram í fátæktargildru.
+# sent_id = G-33-4817818,.7
+# X_ID = ID_MISSING
+# text = Það liggur fyrir, eins og kom fram í ræðu hv. þm. Árna Páls Árnasonar hér áðan, að til þess að fara í önnur úrræði, sem kosta, þurfi viðkomandi að afla sér tekna upp á 700 þús. kr. yfir árið, til að geta borgað skólagjöldin, sem eru um 400 þús. kr.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	liggur	liggja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	fyrir	fyrir	ADP	RP	_	2	compound:prt	_	SpaceAfter=No
@@ -154,17 +158,18 @@
 54	400	400	NUM	NUM-N	Case=Nom	56	nummod	_	_
 55	þús.	þúsund	NUM	NUM-N	Case=Nom	56	nummod	_	_
 56	kr.	króna	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	49	acl:relcl	_	_
-57	Þetta	þessi	DET	D-N	Case=Nom	59	nsubj	_	_
-58	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	59	cop	_	_
-59	því	það	PRON	PRO-D	Case=Dat	2	conj	_	OriginalHead=0
-60	til	til	ADP	P	_	61	case	_	_
-61	þess	það	PRON	PRO-G	Case=Gen	62	obl	_	_
-62	fallið	falla	VERB	VAN	Tense=Past|VerbForm=Part	59	acl	_	_
-63	að	að	PART	TO	_	64	mark	_	_
-64	festa	festa	VERB	VB	VerbForm=Inf	62	xcomp	_	_
-65	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	64	obj	_	_
-66	áfram	áfram	ADV	ADV	Degree=Pos	64	advmod	_	_
-67	í	í	ADP	P	_	68	case	_	_
-68	fátæktargildru	fátæktargildra	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	64	obl	_	SpaceAfter=No
-69	.	.	PUNCT	.	_	2	punct	_	_
+
+1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	því	það	PRON	PRO-D	Case=Dat	0	root	_	_
+4	til	til	ADP	P	_	5	case	_	_
+5	þess	það	PRON	PRO-G	Case=Gen	6	obl	_	_
+6	fallið	falla	VERB	VAN	Tense=Past|VerbForm=Part	3	acl	_	_
+7	að	að	PART	TO	_	8	mark	_	_
+8	festa	festa	VERB	VB	VerbForm=Inf	6	xcomp	_	_
+9	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	_
+10	áfram	áfram	ADV	ADV	Degree=Pos	8	advmod	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	fátæktargildru	fátæktargildra	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+13	.	.	PUNCT	.	_	3	punct	_	_
 

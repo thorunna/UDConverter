@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.1
-# X_ID = ID_missing_1
-# text = Frú forseti. Ef hv. þingmaður á við klárað í skilningnum að öðlast þegar gildi er svarið ljóst.
+# sent_id = G-33-4545751,.1
+# X_ID = ID_MISSING
+# text = Frú forseti . Ef hv. þingmaður á við klárað í skilningnum að öðlast þegar gildi er svarið ljóst .
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -21,9 +21,9 @@
 18	ljóst	ljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	18	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.2
-# X_ID = ID_missing_2
-# text = Það var einfaldlega þannig að við bjuggum hér á síðasta kjörtímabili, einkum þegar á leið, við stjórnarandstöðu sem á sér ekki fordæmi í þingsögunni.
+# sent_id = G-33-4545751,.2
+# X_ID = ID_MISSING
+# text = Það var einfaldlega þannig að við bjuggum hér á síðasta kjörtímabili, einkum þegar á leið, við stjórnarandstöðu sem á sér ekki fordæmi í þingsögunni .
 1	Það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	1	cop	_	_
 3	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	1	advmod	_	_
@@ -52,9 +52,9 @@
 26	þingsögunni	þingsaga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Ég held hún hafi verið ef eitthvað er verri en stjórnarandstaða Sjálfstæðisflokksins gegn ríkisstjórn Gunnars Thoroddsens, og ég hef nokkra yfirsýn yfir þetta.
+# sent_id = G-33-4545751,.3
+# X_ID = ID_MISSING
+# text = Ég held hún hafi verið ef eitthvað er verri en stjórnarandstaða Sjálfstæðisflokksins gegn ríkisstjórn Gunnars Thoroddsens,
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	hún	hún	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -71,19 +71,23 @@
 14	ríkisstjórn	ríkisstjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 15	Gunnars	gunnar	PROPN	NPR-G	_	14	nmod:poss	_	_
 16	Thoroddsens	thoroddsen	PROPN	NPR-G	_	15	flat:name	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	15	punct	_	_
-18	og	og	CCONJ	CONJ	_	20	cc	_	_
-19	ég	ég	PRON	PRO-N	Case=Nom	20	nsubj	_	_
-20	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-21	nokkra	nokkur	DET	Q-A	Case=Acc	22	amod	_	_
-22	yfirsýn	yfirsýn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obj	_	_
-23	yfir	yfir	ADP	P	_	24	case	_	_
-24	þetta	þessi	DET	D-A	Case=Acc	22	obl	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	2	punct	_	_
+17	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.4
-# X_ID = ID_missing_5
-# text = En það væri þá eina hliðstæðan sem kæmist eitthvað nálægt því að vera lík þeirri stjórnarandstöðu sem var hér á síðasta kjörtímabili.
+# sent_id = G-33-4545751,.4
+# X_ID = ID_MISSING
+# text = og ég hef nokkra yfirsýn yfir þetta .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	nokkra	nokkur	DET	Q-A	Case=Acc	5	amod	_	_
+5	yfirsýn	yfirsýn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
+6	yfir	yfir	ADP	P	_	7	case	_	_
+7	þetta	þessi	DET	D-A	Case=Acc	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4545751,.5
+# X_ID = ID_MISSING
+# text = En það væri þá eina hliðstæðan sem kæmist eitthvað nálægt því að vera lík þeirri stjórnarandstöðu sem var hér á síðasta kjörtímabili .
 1	En	en	CCONJ	CONJ	_	6	cc	_	_
 2	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 3	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	6	cop	_	_
@@ -108,9 +112,9 @@
 22	kjörtímabili	kjörtímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	acl:relcl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.5
-# X_IDs = ID_missing_6 ; ID_missing_7
-# text = Það var reyndar ekki stjórnarandstaða í hefðbundnum skilningi, það var skipulagt eyðileggingarstarf.
+# sent_id = G-33-4545751,.6
+# X_ID = ID_MISSING
+# text = Það var reyndar ekki stjórnarandstaða í hefðbundnum skilningi,
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
 3	reyndar	reyndar	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -119,16 +123,20 @@
 6	í	í	ADP	P	_	8	case	_	_
 7	hefðbundnum	hefðbundinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	8	amod	_	_
 8	skilningi	skilningur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	8	punct	_	_
-10	það	það	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-11	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	13	cop	_	_
-12	skipulagt	skipulagður	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
-13	eyðileggingarstarf	eyðileggingarstarf	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	conj	_	OriginalHead=0|SpaceAfter=No
-14	.	.	PUNCT	.	_	5	punct	_	_
+9	,	,	PUNCT	,	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.6
-# X_ID = ID_missing_8
-# text = Þetta þróaðist þannig, því miður, í einhverju mjög súru andrúmslofti hér sem þjóðin horfði upp á agndofa að stjórnarandstaðan lagði metnað sinn í að meira og minna eyðileggja öll þingstörfin.
+# sent_id = G-33-4545751,.7
+# X_ID = ID_MISSING
+# text = það var skipulagt eyðileggingarstarf .
+1	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+3	skipulagt	skipulagður	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
+4	eyðileggingarstarf	eyðileggingarstarf	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4545751,.8
+# X_ID = ID_MISSING
+# text = Þetta þróaðist þannig, því miður, í einhverju mjög súru andrúmslofti hér sem þjóðin horfði upp á agndofa að stjórnarandstaðan lagði metnað sinn í að meira og minna eyðileggja öll þingstörfin .
 1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	þróaðist	þróa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	þannig	þannig	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
@@ -163,9 +171,9 @@
 32	þingstörfin	þingstarf	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	30	obj	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.7
-# X_ID = ID_missing_9
-# text = Það leiðir aftur til þess, eins og hér hefur orðið að aðhlátursefni, að núna sitja ráðherrarnir uppi með að endurflytja fullt af málum sem þeir drápu hér í stjórnarandstöðu af meinbægni einni saman, alls konar innleiðingarmál og eitthvert dót sem reynist núna embættisskylda ráðherranna að reyna að koma fram.
+# sent_id = G-33-4545751,.9
+# X_ID = ID_MISSING
+# text = Það leiðir aftur til þess, eins og hér hefur orðið að aðhlátursefni, að núna sitja ráðherrarnir uppi með að endurflytja fullt af málum sem þeir drápu hér í stjórnarandstöðu af meinbægni einni saman, alls konar innleiðingarmál og eitthvert dót sem reynist núna embættisskylda ráðherranna að reyna að koma fram .
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	leiðir	leiða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	aftur	aftur	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -220,9 +228,9 @@
 52	fram	fram	ADP	RP	_	51	compound:prt	_	SpaceAfter=No
 53	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.8
-# X_ID = ID_missing_10
-# text = Þeir endurflytja nú helling af málum frá fyrri ríkisstjórn sem þeir stöðvuðu og sum algerlega óbreytt vegna þess að innleiðingarfrumvörpum er ekki auðvelt að breyta mikið vegna þess að tilskipanirnar eru eins og þær eru.
+# sent_id = G-33-4545751,.10
+# X_ID = ID_MISSING
+# text = Þeir endurflytja nú helling af málum frá fyrri ríkisstjórn sem þeir stöðvuðu og sum algerlega óbreytt vegna þess að innleiðingarfrumvörpum er ekki auðvelt að breyta mikið vegna þess að tilskipanirnar eru eins og þær eru .
 1	Þeir	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	endurflytja	endurflytja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -260,17 +268,17 @@
 35	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	34	cop	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.9
-# X_ID = ID_missing_11
-# text = Þetta er svarið.
+# sent_id = G-33-4545751,.11
+# X_ID = ID_MISSING
+# text = Þetta er svarið .
 1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	svarið	svar	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.10
-# X_ID = ID_missing_12
-# text = Varðandi það af hverju málið var ekki klárað að öðru leyti þá tel ég að það hafi verið mjög vel klárað.
+# sent_id = G-33-4545751,.12
+# X_ID = ID_MISSING
+# text = Varðandi það af hverju málið var ekki klárað að öðru leyti þá tel ég að það hafi verið mjög vel klárað .
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	13	dep	_	_
 2	það	það	PRON	PRO-A	Case=Acc	1	obj	_	_
 3	af	af	ADP	P	_	4	case	_	_
@@ -294,9 +302,9 @@
 21	klárað	klára	VERB	VAN	Tense=Past|VerbForm=Part	13	ccomp	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.11
-# X_ID = ID_missing_13
-# text = Umhverfis- og samgöngunefnd lagði gríðarlega vinnu í málið.
+# sent_id = G-33-4545751,.13
+# X_ID = ID_MISSING
+# text = Umhverfis- og samgöngunefnd lagði gríðarlega vinnu í málið .
 1	Umhverfis-	umhverfi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
 2	og	og	CCONJ	CONJ	_	3	cc	_	_
 3	samgöngu	samgöngur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
@@ -308,9 +316,9 @@
 9	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.12
-# X_ID = ID_missing_14
-# text = Það sést til dæmis á yfir 50 breytingartillögum og því hvernig unnið var úr umsögnum og hvernig reynt var að mæta málefnalegum gagnrýnisatriðum sem fram komu þar.
+# sent_id = G-33-4545751,.14
+# X_ID = ID_MISSING
+# text = Það sést til dæmis á yfir 50 breytingartillögum og því hvernig unnið var úr umsögnum og hvernig reynt var að mæta málefnalegum gagnrýnisatriðum sem fram komu þar .
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	sést	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	til	til	ADP	P	_	4	case	_	_
@@ -340,9 +348,9 @@
 27	þar	þar	ADV	ADV	Degree=Pos	26	advmod	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4545751,.13
-# X_IDs = ID_missing_15 ; ID_missing_16
-# text = Ég tel því að málið hafi verið fullklárað efnislega eða mjög vel, en því miður leyfðu aðstæður í þinginu ekki að það öðlaðist fyrr gildi einfaldlega vegna þess að stjórnarandstaðan tók þingstörfin kverkataki í málþófi og það varð til þess að Forseti hringir. meiri hlutinn neyddist til þess að semja við hana um framgang ýmissa mála.
+# sent_id = G-33-4545751,.15
+# X_ID = ID_MISSING
+# text = Ég tel því að málið hafi verið fullklárað efnislega eða mjög vel,
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
@@ -355,51 +363,52 @@
 10	eða	eða	CCONJ	CONJ	_	11	cc	_	_
 11	mjög	mjög	ADV	ADV	Degree=Pos	8	conj	_	_
 12	vel	vel	ADV	ADV	Degree=Pos	11	advmod	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	11	punct	_	_
-14	en	en	CCONJ	CONJ	_	17	cc	_	_
-15	því	það	PRON	PRO-D	Case=Dat	16	obl	_	_
-16	miður	lítt	ADV	ADVR	Degree=Cmp	17	advmod	_	_
-17	leyfðu	leyfa	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-18	aðstæður	aðstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	nsubj	_	_
-19	í	í	ADP	P	_	20	case	_	_
-20	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
-21	ekki	ekki	ADV	NEG	_	17	advmod	_	_
-22	að	að	SCONJ	C	_	24	mark	_	_
-23	það	það	PRON	PRO-N	Case=Nom	24	nsubj	_	_
-24	öðlaðist	öðlast	VERB	VBDI	Mood=Ind|Tense=Past	17	ccomp	_	_
-25	fyrr	snemma	ADV	ADVR	Degree=Cmp	24	advmod	_	_
-26	gildi	gildi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obj	_	_
-27	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	29	advmod	_	_
-28	vegna	vegna	ADP	P	_	29	case	_	_
-29	þess	það	PRON	PRO-G	Case=Gen	17	obl	_	_
-30	að	að	SCONJ	C	_	32	mark	_	_
-31	stjórnarandstaðan	stjórnarandstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	32	nsubj	_	_
-32	tók	taka	VERB	VBDI	Mood=Ind|Tense=Past	29	ccomp	_	_
-33	þingstörfin	þingstarf	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	32	obj	_	_
-34	kverkataki	kverkatak	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
-35	í	í	ADP	P	_	36	case	_	_
-36	málþófi	málþóf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
-37	og	og	CCONJ	CONJ	_	39	cc	_	_
-38	það	það	PRON	PRO-N	Case=Nom	39	nsubj	_	_
-39	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	32	conj	_	_
-40	til	til	ADP	P	_	41	case	_	_
-41	þess	það	PRON	PRO-G	Case=Gen	39	obl	_	_
-42	að	að	SCONJ	C	_	48	mark	_	_
-43	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	44	nsubj	_	_
-44	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	48	dep	_	SpaceAfter=No
-45	.	.	PUNCT	.	_	44	punct	_	_
-46	meiri	mikill	DET	QR-N	Case=Nom	47	amod	_	_
-47	hlutinn	hluti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	48	nsubj	_	_
-48	neyddist	neyða	VERB	VBDI	Mood=Ind|Tense=Past	41	ccomp	_	_
-49	til	til	ADP	P	_	50	case	_	_
-50	þess	það	PRON	PRO-G	Case=Gen	48	obl	_	_
-51	að	að	PART	TO	_	52	mark	_	_
-52	semja	semja	VERB	VB	VerbForm=Inf	50	xcomp	_	_
-53	við	við	ADP	P	_	54	case	_	_
-54	hana	hún	PRON	PRO-A	Case=Acc	52	obl	_	_
-55	um	um	ADP	P	_	56	case	_	_
-56	framgang	framgangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	52	obl	_	_
-57	ýmissa	ýmis	DET	Q-G	Case=Gen	56	nmod:poss	_	_
-58	mála	mál	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	57	conj	_	SpaceAfter=No
-59	.	.	PUNCT	.	_	2	punct	_	_
+13	,	,	PUNCT	,	_	2	punct	_	_
+
+1	en	en	CCONJ	CONJ	_	4	cc	_	_
+2	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
+3	miður	lítt	ADV	ADVR	Degree=Cmp	4	advmod	_	_
+4	leyfðu	leyfa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+5	aðstæður	aðstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	nsubj	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+8	ekki	ekki	ADV	NEG	_	4	advmod	_	_
+9	að	að	SCONJ	C	_	11	mark	_	_
+10	það	það	PRON	PRO-N	Case=Nom	11	nsubj	_	_
+11	öðlaðist	öðlast	VERB	VBDI	Mood=Ind|Tense=Past	4	ccomp	_	_
+12	fyrr	snemma	ADV	ADVR	Degree=Cmp	11	advmod	_	_
+13	gildi	gildi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
+14	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	16	advmod	_	_
+15	vegna	vegna	ADP	P	_	16	case	_	_
+16	þess	það	PRON	PRO-G	Case=Gen	4	obl	_	_
+17	að	að	SCONJ	C	_	19	mark	_	_
+18	stjórnarandstaðan	stjórnarandstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
+19	tók	taka	VERB	VBDI	Mood=Ind|Tense=Past	16	ccomp	_	_
+20	þingstörfin	þingstarf	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obj	_	_
+21	kverkataki	kverkatak	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
+22	í	í	ADP	P	_	23	case	_	_
+23	málþófi	málþóf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
+24	og	og	CCONJ	CONJ	_	26	cc	_	_
+25	það	það	PRON	PRO-N	Case=Nom	26	nsubj	_	_
+26	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	19	conj	_	_
+27	til	til	ADP	P	_	28	case	_	_
+28	þess	það	PRON	PRO-G	Case=Gen	26	obl	_	_
+29	að	að	SCONJ	C	_	35	mark	_	_
+30	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	31	nsubj	_	_
+31	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	35	dep	_	_
+32	.	.	PUNCT	.	_	31	punct	_	_
+33	meiri	mikill	DET	QR-N	Case=Nom	34	amod	_	_
+34	hlutinn	hluti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	35	nsubj	_	_
+35	neyddist	neyða	VERB	VBDI	Mood=Ind|Tense=Past	28	ccomp	_	_
+36	til	til	ADP	P	_	37	case	_	_
+37	þess	það	PRON	PRO-G	Case=Gen	35	obl	_	_
+38	að	að	PART	TO	_	39	mark	_	_
+39	semja	semja	VERB	VB	VerbForm=Inf	37	xcomp	_	_
+40	við	við	ADP	P	_	41	case	_	_
+41	hana	hún	PRON	PRO-A	Case=Acc	39	obl	_	_
+42	um	um	ADP	P	_	43	case	_	_
+43	framgang	framgangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	39	obl	_	_
+44	ýmissa	ýmis	DET	Q-G	Case=Gen	43	nmod:poss	_	_
+45	mála	mál	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	44	conj	_	_
+46	.	.	PUNCT	.	_	4	punct	_	_
 

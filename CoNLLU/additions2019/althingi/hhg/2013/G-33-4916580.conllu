@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4916580,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Afsakaðu að ég skuli stíga hér upp í pontu óvelkominn.
+# sent_id = G-33-4916580,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Afsakaðu að ég skuli stíga hér upp í pontu óvelkominn .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -18,9 +18,9 @@
 14	óvelkominn	óvelkominn	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4916580,.2
-# X_ID = ID_missing_2
-# text = Eins og ég segi eru ýmsar leiðir til að tryggja hlutleysi, alla vega reyna að tryggja hlutleysi.
+# sent_id = G-33-4916580,.2
+# X_ID = ID_MISSING
+# text = Eins og ég segi eru ýmsar leiðir til að tryggja hlutleysi, alla vega reyna að tryggja hlutleysi .
 1	Eins	eins	ADV	ADVR	Degree=Cmp	10	advmod	_	_
 2	og	og	ADP	P	_	4	case	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -41,9 +41,9 @@
 18	hlutleysi	hlutleysi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4916580,.3
-# X_ID = ID_missing_3
-# text = Líkt og. menntamálaráðherra benti réttilega á hefði mátt taka Íþróttasambandið með inn í þetta.
+# sent_id = G-33-4916580,.3
+# X_ID = ID_MISSING
+# text = Líkt og . menntamálaráðherra benti réttilega á hefði mátt taka Íþróttasambandið með inn í þetta .
 1	Líkt	líkt	ADV	ADV	Degree=Pos	10	advmod	_	_
 2	og	og	ADP	P	_	5	case	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -61,9 +61,9 @@
 15	þetta	þessi	DET	D-A	Case=Acc	10	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4916580,.4
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Önnur hugmynd er að taka Blaðamannafélagið inn í það og hafa kannski svolítið stóra valnefnd, útvarpa fundunum, það væri sérdeilis gegnsætt.
+# sent_id = G-33-4916580,.4
+# X_ID = ID_MISSING
+# text = Önnur hugmynd er að taka Blaðamannafélagið inn í það og hafa kannski svolítið stóra valnefnd, útvarpa fundunum,
 1	Önnur	annar	PRON	OTHER-N	Case=Nom	2	det	_	_
 2	hugmynd	hugmynd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -83,15 +83,16 @@
 17	útvarpa	útvarpa	VERB	VB	VerbForm=Inf	5	xcomp	_	_
 18	fundunum	fundur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	17	obj	_	SpaceAfter=No
 19	,	,	PUNCT	,	_	5	punct	_	_
-20	það	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
-21	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	23	cop	_	_
-22	sérdeilis	sérdeilis	ADV	ADV	Degree=Pos	23	amod	_	_
-23	gegnsætt	gegnsær	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	conj	_	OriginalHead=0|SpaceAfter=No
-24	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4916580,.5
-# X_ID = ID_missing_6
-# text = Ég held að þá ætti ekki að vefjast fyrir neinum hvernig ferlið er nákvæmlega og á hvaða forsendum fólk er ráðið í stjórn Ríkisútvarpsins.
+# sent_id = G-33-4916580,.5
+# X_ID = ID_MISSING
+# text = það væri sérdeilis gegnsætt .
+1	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	4	cop	_	_
+3	sérdeilis	sérdeilis	ADV	ADV	Degree=Pos	4	amod	_	_
+4	gegnsætt	gegnsær	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	4	punct	_	_
+
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	5	mark	_	_
@@ -115,6 +116,6 @@
 21	ráðið	ráða	VERB	VAN	Tense=Past|VerbForm=Part	12	conj	_	_
 22	í	í	ADP	P	_	23	case	_	_
 23	stjórn	stjórn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	_
-24	Ríkisútvarpsins	ríkisútvarp	PROPN	NPR-G	_	23	nmod:poss	_	SpaceAfter=No
+24	Ríkisútvarpsins	ríkisútvarp	PROPN	NPR-G	_	23	nmod:poss	_	_
 25	.	.	PUNCT	.	_	2	punct	_	_
 

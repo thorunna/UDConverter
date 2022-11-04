@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.1
-# X_ID = ID_missing_1
-# text = Frú forseti. Ég hnýt meira annars um vöruvalsreglur.
+# sent_id = G-33-4624367,.1
+# X_ID = ID_MISSING
+# text = Frú forseti . Ég hnýt meira annars um vöruvalsreglur .
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -12,9 +12,9 @@
 9	vöruvalsreglur	vöruvalsregla	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Hver á að hafa eftirlit með því og hvaða reglur kemur ÁTVR til með að setja í vöruvali?
+# sent_id = G-33-4624367,.2
+# X_ID = ID_MISSING
+# text = Hver á að hafa eftirlit með því
 1	Hver	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	5	mark	_	_
@@ -22,22 +22,26 @@
 5	eftirlit	eftirlit	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	xcomp	_	_
 6	með	með	ADP	P	_	7	case	_	_
 7	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
-8	og	og	CCONJ	CONJ	_	11	cc	_	_
-9	hvaða	hvaða	DET	WD-A	Case=Acc	10	det	_	_
-10	reglur	regla	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
-11	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-12	ÁTVR	átvr	PROPN	NPR-N	_	11	nsubj	_	_
-13	til	til	ADP	RP	_	11	compound:prt	_	_
-14	með	með	ADP	P	_	16	case	_	_
-15	að	að	PART	TO	_	16	mark	_	_
-16	setja	setja	VERB	VB	VerbForm=Inf	11	obl	_	_
-17	í	í	ADP	P	_	18	case	_	_
-18	vöruvali	vöruval	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
-19	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.3
-# X_ID = ID_missing_4
-# text = Ég skil vel að menn, innflytjendur til að mynda, velti því fyrir sér hvernig það muni þróast, hverjir eru innundir hjá viðkomandi stjórnum.
+# sent_id = G-33-4624367,.3
+# X_ID = ID_MISSING
+# text = og hvaða reglur kemur ÁTVR til með að setja í vöruvali ?
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	hvaða	hvaða	DET	WD-A	Case=Acc	3	det	_	_
+3	reglur	regla	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obj	_	_
+4	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+5	ÁTVR	átvr	PROPN	NPR-N	_	4	nsubj	_	_
+6	til	til	ADP	RP	_	4	compound:prt	_	_
+7	með	með	ADP	P	_	9	case	_	_
+8	að	að	PART	TO	_	9	mark	_	_
+9	setja	setja	VERB	VB	VerbForm=Inf	4	obl	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	vöruvali	vöruval	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
+12	?	?	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4624367,.4
+# X_ID = ID_MISSING
+# text = Ég skil vel að menn, innflytjendur til að mynda, velti því fyrir sér hvernig það muni þróast, hverjir eru innundir hjá viðkomandi stjórnum .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vel	vel	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -66,9 +70,9 @@
 26	stjórnum	stjórn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	ccomp	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.4
-# X_IDs = ID_missing_5 ; ID_missing_6
-# text = Ég geld varhuga við þeim breytingum sem eru settar fram og vil líka draga fram þau sjónarmið sem hafa verið sett fram af umsagnaraðilum, hvort sem það er Viðskiptaráð Íslands eða aðrir, þar sem menn benda á að endurskoða þurfi skattaleg markmið ríkisstjórnarinnar í tengslum við sölu áfengis í verslunum ÁTVR.
+# sent_id = G-33-4624367,.5
+# X_ID = ID_MISSING
+# text = Ég geld varhuga við þeim breytingum sem eru settar fram
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	geld	gjalda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	varhuga	varhugi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
@@ -79,54 +83,58 @@
 8	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 9	settar	setja	VERB	VAN	Tense=Past|VerbForm=Part	6	acl:relcl	_	_
 10	fram	fram	ADP	RP	_	9	compound:prt	_	_
-11	og	og	CCONJ	CONJ	_	14	cc	_	_
-12	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	14	aux	_	_
-13	líka	líka	ADV	ALSO	_	14	advmod	_	_
-14	draga	draga	VERB	VB	VerbForm=Inf	2	conj	_	OriginalHead=0
-15	fram	fram	ADP	RP	_	14	compound:prt	_	_
-16	þau	sá	DET	D-A	Case=Acc	17	det	_	_
-17	sjónarmið	sjónarmið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obj	_	_
-18	sem	sem	SCONJ	C	_	21	mark	_	_
-19	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	21	aux	_	_
-20	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	21	cop	_	_
-21	sett	setja	VERB	VAN	Tense=Past|VerbForm=Part	17	acl:relcl	_	_
-22	fram	fram	ADP	RP	_	21	compound:prt	_	_
-23	af	af	ADP	P	_	24	case	_	_
-24	umsagnaraðilum	umsagnaraðili	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	21	obl	_	SpaceAfter=No
-25	,	,	PUNCT	,	_	24	punct	_	_
-26	hvort	hvort	SCONJ	WQ	_	30	mark	_	_
-27	sem	sem	SCONJ	C	_	26	fixed	_	_
-28	það	það	PRON	PRO-N	Case=Nom	30	nsubj	_	_
-29	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	30	cop	_	_
-30	Viðskiptaráð	viðskiptaráð	ADV	NPR-N	_	21	advmod	_	_
-31	Íslands	ísland	PROPN	NPR-G	_	30	nmod:poss	_	_
-32	eða	eða	CCONJ	CONJ	_	33	cc	_	_
-33	aðrir	annar	PRON	OTHER-N	Case=Nom	30	conj	_	SpaceAfter=No
-34	,	,	PUNCT	,	_	33	punct	_	_
-35	þar	þar	ADV	ADV	Degree=Pos	38	advmod	_	_
-36	sem	sem	SCONJ	C	_	38	mark	_	_
-37	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	38	nsubj	_	_
-38	benda	benda	VERB	VBPI	Mood=Ind|Tense=Pres	17	acl:relcl	_	_
-39	á	á	ADP	P	_	41	case	_	_
-40	að	að	PART	TO	_	41	mark	_	_
-41	endurskoða	endurskoða	VERB	VB-3	VerbForm=Inf	38	obl	_	_
-42	þurfi	þurfa	VERB	VBPS	Mood=Sub|Tense=Pres	41	dep	_	_
-43	skattaleg	skattalegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	44	amod	_	_
-44	markmið	markmið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	41	obj	_	_
-45	ríkisstjórnarinnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	44	nmod:poss	_	_
-46	í	í	ADP	P	_	47	case	_	_
-47	tengslum	tengsl	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	44	obl	_	_
-48	við	við	ADP	P	_	49	case	_	_
-49	sölu	sala	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	47	obl	_	_
-50	áfengis	áfengi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	49	nmod:poss	_	_
-51	í	í	ADP	P	_	52	case	_	_
-52	verslunum	verslun	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	49	obl	_	_
-53	ÁTVR	átvr	PROPN	NPR-G	_	52	nmod:poss	_	SpaceAfter=No
-54	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.5
-# X_ID = ID_missing_7
-# text = Menn verða að horfast í augu við að bruggstarfsemi hefur aukist hér á landi.
+# sent_id = G-33-4624367,.6
+# X_ID = ID_MISSING
+# text = og vil líka draga fram þau sjónarmið sem hafa verið sett fram af umsagnaraðilum, hvort sem það er Viðskiptaráð Íslands eða aðrir, þar sem menn benda á að endurskoða þurfi skattaleg markmið ríkisstjórnarinnar í tengslum við sölu áfengis í verslunum ÁTVR .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
+3	líka	líka	ADV	ALSO	_	4	advmod	_	_
+4	draga	draga	VERB	VB	VerbForm=Inf	0	root	_	_
+5	fram	fram	ADP	RP	_	4	compound:prt	_	_
+6	þau	sá	DET	D-A	Case=Acc	7	det	_	_
+7	sjónarmið	sjónarmið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obj	_	_
+8	sem	sem	SCONJ	C	_	11	mark	_	_
+9	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	11	aux	_	_
+10	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	11	cop	_	_
+11	sett	setja	VERB	VAN	Tense=Past|VerbForm=Part	7	acl:relcl	_	_
+12	fram	fram	ADP	RP	_	11	compound:prt	_	_
+13	af	af	ADP	P	_	14	case	_	_
+14	umsagnaraðilum	umsagnaraðili	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	hvort	hvort	SCONJ	WQ	_	20	mark	_	_
+17	sem	sem	SCONJ	C	_	16	fixed	_	_
+18	það	það	PRON	PRO-N	Case=Nom	20	nsubj	_	_
+19	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
+20	Viðskiptaráð	viðskiptaráð	ADV	NPR-N	_	11	advmod	_	_
+21	Íslands	ísland	PROPN	NPR-G	_	20	nmod:poss	_	_
+22	eða	eða	CCONJ	CONJ	_	23	cc	_	_
+23	aðrir	annar	PRON	OTHER-N	Case=Nom	20	conj	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	þar	þar	ADV	ADV	Degree=Pos	28	advmod	_	_
+26	sem	sem	SCONJ	C	_	28	mark	_	_
+27	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	28	nsubj	_	_
+28	benda	benda	VERB	VBPI	Mood=Ind|Tense=Pres	7	acl:relcl	_	_
+29	á	á	ADP	P	_	31	case	_	_
+30	að	að	PART	TO	_	31	mark	_	_
+31	endurskoða	endurskoða	VERB	VB-3	VerbForm=Inf	28	obl	_	_
+32	þurfi	þurfa	VERB	VBPS	Mood=Sub|Tense=Pres	31	dep	_	_
+33	skattaleg	skattalegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	34	amod	_	_
+34	markmið	markmið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	31	obj	_	_
+35	ríkisstjórnarinnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	34	nmod:poss	_	_
+36	í	í	ADP	P	_	37	case	_	_
+37	tengslum	tengsl	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	34	obl	_	_
+38	við	við	ADP	P	_	39	case	_	_
+39	sölu	sala	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	obl	_	_
+40	áfengis	áfengi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	39	nmod:poss	_	_
+41	í	í	ADP	P	_	42	case	_	_
+42	verslunum	verslun	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	39	obl	_	_
+43	ÁTVR	átvr	PROPN	NPR-G	_	42	nmod:poss	_	SpaceAfter=No
+44	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4624367,.7
+# X_ID = ID_MISSING
+# text = Menn verða að horfast í augu við að bruggstarfsemi hefur aukist hér á landi .
 1	Menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
 2	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -143,9 +151,9 @@
 14	landi	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.6
-# X_ID = ID_missing_8
-# text = Er það sú þróun sem menn vilja sjá?
+# sent_id = G-33-4624367,.8
+# X_ID = ID_MISSING
+# text = Er það sú þróun sem menn vilja sjá ?
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 2	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 3	sú	sá	DET	D-N	Case=Nom	4	det	_	_
@@ -156,9 +164,9 @@
 8	sjá	sjá	VERB	VB	VerbForm=Inf	4	acl:relcl	_	SpaceAfter=No
 9	?	?	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.7
-# X_ID = ID_missing_9
-# text = Ég held að það sé ekki í samhengi og samræmi við þá samfélagslegu ábyrgð sem er meira annars talað um í frumvarpinu.
+# sent_id = G-33-4624367,.9
+# X_ID = ID_MISSING
+# text = Ég held að það sé ekki í samhengi og samræmi við þá samfélagslegu ábyrgð sem er meira annars talað um í frumvarpinu .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	8	mark	_	_
@@ -183,9 +191,9 @@
 22	frumvarpinu	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.8
-# X_ID = ID_missing_10
-# text = Ég held líka að það sé hvergi verið að taka á því í frumvarpinu að menn reyni markvisst að draga úr neyslu sterkari drykkja og reyni að beina neyslunni, ef hún á annað borð á að vera til staðar, til léttari veiga.
+# sent_id = G-33-4624367,.10
+# X_ID = ID_MISSING
+# text = Ég held líka að það sé hvergi verið að taka á því í frumvarpinu að menn reyni markvisst að draga úr neyslu sterkari drykkja og reyni að beina neyslunni, ef hún á annað borð á að vera til staðar, til léttari veiga .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	líka	líka	ADV	ALSO	_	2	advmod	_	_
@@ -232,9 +240,9 @@
 44	veiga	veig	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	28	obl	_	SpaceAfter=No
 45	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.9
-# X_ID = ID_missing_11
-# text = Mér finnst vanta ákveðna heildaryfirsýn yfir þetta og einfaldlega ákveðið þor að fara gegn rétttrúnaði sem ríkir á þessu sviði sem svo allt of mörgum í samfélaginu.
+# sent_id = G-33-4624367,.11
+# X_ID = ID_MISSING
+# text = Mér finnst vanta ákveðna heildaryfirsýn yfir þetta og einfaldlega ákveðið þor að fara gegn rétttrúnaði sem ríkir á þessu sviði sem svo allt of mörgum í samfélaginu .
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vanta	vanta	VERB	VB	VerbForm=Inf	2	xcomp	_	_
@@ -264,9 +272,9 @@
 27	samfélaginu	samfélag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.10
-# X_ID = ID_missing_12
-# text = Það eru ýmis málefni sem má bara ekki snerta af því þá fær maður yfir sig þá holskeflu að maður sé, í þessu tilviki, að stuðla að því að hér verði aukin neysla áfengis.
+# sent_id = G-33-4624367,.12
+# X_ID = ID_MISSING
+# text = Það eru ýmis málefni sem má bara ekki snerta af því þá fær maður yfir sig þá holskeflu að maður sé, í þessu tilviki, að stuðla að því að hér verði aukin neysla áfengis .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ýmis	ýmis	DET	Q-N	Case=Nom	4	amod	_	_
@@ -305,18 +313,18 @@
 36	áfengis	áfengi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	35	nmod:poss	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.11
-# X_ID = ID_missing_13
-# text = Það er ekki þannig.
+# sent_id = G-33-4624367,.13
+# X_ID = ID_MISSING
+# text = Það er ekki þannig .
 1	Það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	ekki	ekki	ADV	NEG	_	1	advmod	_	_
 4	þannig	þannig	ADV	ADV	Degree=Pos	1	advmod	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.12
-# X_IDs = ID_missing_14 ; ID_missing_15
-# text = Það eru aðrar leiðir sem eru réttari og skynsamlegri að mínu mati til þess að stuðla að betri vínmenningu í landinu, sem ég trúi ekki öðru en hv. þingmaður sé samþykkur og samsinni mér í því máli, að það er eitthvað sem er eftirsóknarvert að við bætum vínmenninguna hérna og reynum að draga úr þeim hvötum að menn drekki sterkt vín og fari frekar í neyslu hófsamari drykkja.
+# sent_id = G-33-4624367,.14
+# X_ID = ID_MISSING
+# text = Það eru aðrar leiðir sem eru réttari og skynsamlegri að mínu mati til þess að stuðla að betri vínmenningu í landinu, sem ég trúi ekki öðru en hv. þingmaður sé samþykkur og samsinni mér í því máli
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	aðrar	annar	PRON	OTHER-N	Case=Nom	4	det	_	_
@@ -338,7 +346,7 @@
 19	vínmenningu	vínmenning	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
 20	í	í	ADP	P	_	21	case	_	_
 21	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	21	punct	_	_
+22	,	,	PUNCT	,	_	16	punct	_	_
 23	sem	sem	SCONJ	C	_	25	mark	_	_
 24	ég	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
 25	trúi	trúa	VERB	VBPI	Mood=Ind|Tense=Pres	16	advcl	_	_
@@ -354,44 +362,48 @@
 35	mér	ég	PRON	PRO-D	Case=Dat	34	obj	_	_
 36	í	í	ADP	P	_	38	case	_	_
 37	því	sá	DET	D-D	Case=Dat	38	det	_	_
-38	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
-39	,	,	PUNCT	,	_	34	punct	_	_
-40	að	að	SCONJ	C	_	43	mark	_	_
-41	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	43	expl	_	_
-42	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	43	cop	_	_
-43	eitthvað	einhver	DET	Q	Degree=Pos	4	conj	_	OriginalHead=0
-44	sem	sem	SCONJ	C	_	46	mark	_	_
-45	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	46	cop	_	_
-46	eftirsóknarvert	eftirsóknarverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	43	acl:relcl	_	_
-47	að	að	SCONJ	C	_	49	mark	_	_
-48	við	ég	PRON	PRO-N	Case=Nom	49	nsubj	_	_
-49	bætum	bæta	VERB	VBPI	Mood=Ind|Tense=Pres	43	ccomp	_	_
-50	vínmenninguna	vínmenning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	49	obj	_	_
-51	hérna	hérna	ADV	ADV	Degree=Pos	50	advmod	_	_
-52	og	og	CCONJ	CONJ	_	53	cc	_	_
-53	reynum	reyna	VERB	VBPI	Mood=Ind|Tense=Pres	49	conj	_	_
-54	að	að	PART	TO	_	55	mark	_	_
-55	draga	draga	VERB	VB	VerbForm=Inf	53	xcomp	_	_
-56	úr	úr	ADP	P	_	58	case	_	_
-57	þeim	sá	DET	D-D	Case=Dat	58	det	_	_
-58	hvötum	hvati	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	55	obl	_	_
-59	að	að	SCONJ	C	_	61	mark	_	_
-60	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	61	nsubj	_	_
-61	drekki	drekka	VERB	VBPS	Mood=Sub|Tense=Pres	58	advcl	_	_
-62	sterkt	sterkur	ADJ	ADJ-A	Case=Acc|Degree=Pos	63	amod	_	_
-63	vín	vín	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	61	obj	_	_
-64	og	og	CCONJ	CONJ	_	65	cc	_	_
-65	fari	fara	VERB	VBPS	Mood=Sub|Tense=Pres	61	conj	_	_
-66	frekar	frekar	ADV	ADVR	Degree=Cmp	65	advmod	_	_
-67	í	í	ADP	P	_	68	case	_	_
-68	neyslu	neysla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	65	obl	_	_
-69	hófsamari	hófsamur	ADJ	ADJR-G	Case=Gen|Degree=Cmp	70	amod	_	_
-70	drykkja	drykkur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	68	nmod:poss	_	SpaceAfter=No
-71	.	.	PUNCT	.	_	4	punct	_	_
+38	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.13
-# X_ID = ID_missing_16
-# text = Þetta eru sjónarmið mín varðandi málið.
+# sent_id = G-33-4624367,.15
+# X_ID = ID_MISSING
+# text = , að það er eitthvað sem er eftirsóknarvert að við bætum vínmenninguna hérna og reynum að draga úr þeim hvötum að menn drekki sterkt vín og fari frekar í neyslu hófsamari drykkja .
+1	,	,	PUNCT	,	_	5	punct	_	_
+2	að	að	SCONJ	C	_	5	mark	_	_
+3	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
+4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+5	eitthvað	einhver	DET	Q	Degree=Pos	0	root	_	_
+6	sem	sem	SCONJ	C	_	8	mark	_	_
+7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+8	eftirsóknarvert	eftirsóknarverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	acl:relcl	_	_
+9	að	að	SCONJ	C	_	11	mark	_	_
+10	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
+11	bætum	bæta	VERB	VBPI	Mood=Ind|Tense=Pres	5	ccomp	_	_
+12	vínmenninguna	vínmenning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
+13	hérna	hérna	ADV	ADV	Degree=Pos	12	advmod	_	_
+14	og	og	CCONJ	CONJ	_	15	cc	_	_
+15	reynum	reyna	VERB	VBPI	Mood=Ind|Tense=Pres	11	conj	_	_
+16	að	að	PART	TO	_	17	mark	_	_
+17	draga	draga	VERB	VB	VerbForm=Inf	15	xcomp	_	_
+18	úr	úr	ADP	P	_	20	case	_	_
+19	þeim	sá	DET	D-D	Case=Dat	20	det	_	_
+20	hvötum	hvati	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	17	obl	_	_
+21	að	að	SCONJ	C	_	23	mark	_	_
+22	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	23	nsubj	_	_
+23	drekki	drekka	VERB	VBPS	Mood=Sub|Tense=Pres	20	advcl	_	_
+24	sterkt	sterkur	ADJ	ADJ-A	Case=Acc|Degree=Pos	25	amod	_	_
+25	vín	vín	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obj	_	_
+26	og	og	CCONJ	CONJ	_	27	cc	_	_
+27	fari	fara	VERB	VBPS	Mood=Sub|Tense=Pres	23	conj	_	_
+28	frekar	frekar	ADV	ADVR	Degree=Cmp	27	advmod	_	_
+29	í	í	ADP	P	_	30	case	_	_
+30	neyslu	neysla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	27	obl	_	_
+31	hófsamari	hófsamur	ADJ	ADJR-G	Case=Gen|Degree=Cmp	32	amod	_	_
+32	drykkja	drykkur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	30	nmod:poss	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4624367,.16
+# X_ID = ID_MISSING
+# text = Þetta eru sjónarmið mín varðandi málið .
 1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	sjónarmið	sjónarmið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
@@ -400,16 +412,13 @@
 6	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.14
-# X_ID = ID_missing_17
-# text = Forseti hringir.
+# sent_id = G-33-4624367,.17
+# X_ID = ID_MISSING
+# text = Forseti hringir .
 1	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4624367,.15
-# X_ID = ID_missing_18
-# text = Mér finnst menn vera að hlaupa af stað í einhverjar breytingar án þess endilega að vera búnir að sjá Forseti hringir. að markmiðin náist í sjálfu sér.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
@@ -430,13 +439,13 @@
 18	að	að	PART	TO	_	19	mark	_	_
 19	sjá	sjá	VERB	VB	VerbForm=Inf	17	xcomp	_	_
 20	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	_
-21	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	19	dep	_	SpaceAfter=No
+21	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	19	dep	_	_
 22	.	.	PUNCT	.	_	21	punct	_	_
 23	að	að	SCONJ	C	_	25	mark	_	_
 24	markmiðin	markmið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	25	nsubj	_	_
 25	náist	ná	VERB	VBPS	Mood=Sub|Tense=Pres	19	ccomp	_	_
 26	í	í	ADP	P	_	27	case	_	_
 27	sjálfu	sjálfur	PRON	PRO-D	Case=Dat	19	obl	_	_
-28	sér	sig	PRON	PRO-D	Case=Dat	27	nmod	_	SpaceAfter=No
+28	sér	sig	PRON	PRO-D	Case=Dat	27	nmod	_	_
 29	.	.	PUNCT	.	_	2	punct	_	_
 

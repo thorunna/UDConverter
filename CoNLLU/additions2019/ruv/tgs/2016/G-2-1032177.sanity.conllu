@@ -1,6 +1,6 @@
-# sent_id = RUV_TGS_2016_G-2-1032177.SANITY,.1
-# X_ID = ID_missing_1
-# text = Frakkland komst í kvöld í úrslitaleik Evrópumóts karlalandsliða í knattspyrnu eftir 2 sigur á heimsmeisturum, Þýskalands þegar liðin mættust í undanúrslitum EM á Stade Véladrome í Marseille í kvöld.
+# sent_id = G-2-1032177.SANITY,.1
+# X_ID = ID_MISSING
+# text = Frakkland komst í kvöld í úrslitaleik Evrópumóts karlalandsliða í knattspyrnu eftir 2 sigur á heimsmeisturum, Þýskalands þegar liðin mættust í undanúrslitum EM á Stade Véladrome í Marseille í kvöld .
 1	Frakkland	frakkland	PROPN	NPR-N	_	2	nsubj	_	_
 2	komst	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -33,9 +33,9 @@
 30	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032177.SANITY,.2
-# X_ID = ID_missing_2
-# text = Frakkland mætir því Portúgal í úrslitum mótsins.
+# sent_id = G-2-1032177.SANITY,.2
+# X_ID = ID_MISSING
+# text = Frakkland mætir því Portúgal í úrslitum mótsins .
 1	Frakkland	frakkland	PROPN	NPR-N	_	2	nsubj	_	_
 2	mætir	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
@@ -45,8 +45,25 @@
 7	mótsins	mót	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	nmod:poss	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032177.SANITY,.3
-# X_IDs = ID_missing_3 ; P-MAT
+# sent_id = G-2-1032177.SANITY,.3
+# X_ID = ID_MISSING
+# text = Antoine Griezmann kom Frökkum yfir með marki úr vítaspyrnu á 45. mínútu,
+1	Antoine	antoine	PROPN	NPR-N	_	3	nsubj	_	_
+2	Griezmann	griezmann	PROPN	NPR-N	_	1	flat:name	_	_
+3	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	Frökkum	frakki	PROPN	NPRS-D	_	3	obj	_	_
+5	yfir	yfir	ADV	ADV	Degree=Pos	3	advmod	_	_
+6	með	með	ADP	P	_	7	case	_	_
+7	marki	mark	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+8	úr	úr	ADP	P	_	9	case	_	_
+9	vítaspyrnu	vítaspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
+10	á	á	ADP	P	_	12	case	_	_
+11	45.	45.	NUM	NUM-D	Case=Dat	12	nummod	_	_
+12	mínútu	mínúta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	3	punct	_	_
+
+# sent_id = G-2-1032177.SANITY,.4
+# X_ID = P-MAT
   (CONJ en-en)
   (NP-SBJ (N-N vítið-víti))
   (BEDI var-vera)
@@ -63,24 +80,11 @@
   (NP-OB1 (N-A knöttinn-knöttur))
   (PP (P innan-innan) (NP (N-G vítateigs-vítateigur)))
   (. .-.
-# text = Antoine Griezmann kom Frökkum yfir með marki úr vítaspyrnu á 45. mínútu,
-1	Antoine	antoine	PROPN	NPR-N	_	3	nsubj	_	_
-2	Griezmann	griezmann	PROPN	NPR-N	_	1	flat:name	_	_
-3	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	Frökkum	frakki	PROPN	NPRS-D	_	3	obj	_	_
-5	yfir	yfir	ADV	ADV	Degree=Pos	3	advmod	_	_
-6	með	með	ADP	P	_	7	case	_	_
-7	marki	mark	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-8	úr	úr	ADP	P	_	9	case	_	_
-9	vítaspyrnu	vítaspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-10	á	á	ADP	P	_	12	case	_	_
-11	45.	45.	NUM	NUM-D	Case=Dat	12	nummod	_	_
-12	mínútu	mínúta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	3	punct	_	_
+# text = 
 
-# sent_id = RUV_TGS_2016_G-2-1032177.SANITY,.4
-# X_IDs = ID_missing_5 ; ID_missing_6
-# text = Griezmann var aftur á ferðinni á 72. mínútu þegar hann skoraði eftir undirbúning Paul Pogba og 2 urðu úrslit leiksins.
+# sent_id = G-2-1032177.SANITY,.5
+# X_ID = ID_MISSING
+# text = Griezmann var aftur á ferðinni á 72. mínútu þegar hann skoraði eftir undirbúning Paul Pogba
 1	Griezmann	griezmann	PROPN	NPR-N	_	5	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
 3	aftur	aftur	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -96,16 +100,20 @@
 13	undirbúning	undirbúningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
 14	Paul	paul	PROPN	NPR-G	_	13	nmod:poss	_	_
 15	Pogba	pogba	PROPN	NPR-G	_	14	flat:name	_	_
-16	og	og	CCONJ	CONJ	_	18	cc	_	_
-17	2	tveir	NUM	NUM-N	Case=Nom	18	nsubj	_	_
-18	urðu	verða	VERB	RDDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
-19	úrslit	úrslit	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	18	obl	_	_
-20	leiksins	leikur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	nmod:poss	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032177.SANITY,.5
-# X_ID = ID_missing_7
-# text = Frakkar mæta Portúgal í úrslitaleik EM sem fer fram á Stade de France í Saint-Denis í París á sunnudaginn.
+# sent_id = G-2-1032177.SANITY,.6
+# X_ID = ID_MISSING
+# text = og 2 urðu úrslit leiksins .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	2	tveir	NUM	NUM-N	Case=Nom	3	nsubj	_	_
+3	urðu	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
+4	úrslit	úrslit	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	obl	_	_
+5	leiksins	leikur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	nmod:poss	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-2-1032177.SANITY,.7
+# X_ID = ID_MISSING
+# text = Frakkar mæta Portúgal í úrslitaleik EM sem fer fram á Stade de France í Saint-Denis í París á sunnudaginn .
 1	Frakkar	frakki	PROPN	NPRS-N	_	2	nsubj	_	_
 2	mæta	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	Portúgal	portúgal	PROPN	NPR-D	_	2	obj	_	_
@@ -127,9 +135,9 @@
 19	sunnudaginn	sunnudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032177.SANITY,.6
-# X_ID = ID_missing_8
-# text = Leikurinn hefst klukkan 19:00.
+# sent_id = G-2-1032177.SANITY,.8
+# X_ID = ID_MISSING
+# text = Leikurinn hefst klukkan 19:00 .
 1	Leikurinn	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	hefst	hefja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	klukkan	klukka	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	advcl	_	_
@@ -139,9 +147,9 @@
 7	0	núll	NUM	NUM-N	Case=Nom	4	conj	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032177.SANITY,.7
-# X_ID = ID_missing_9
-# text = Frakkar hafa tvívegis orðið Evrópumeistarar, 1984 og árið 2000.
+# sent_id = G-2-1032177.SANITY,.9
+# X_ID = ID_MISSING
+# text = Frakkar hafa tvívegis orðið Evrópumeistarar, 1984 og árið 2000 .
 1	Frakkar	frakki	PROPN	NPRS-N	_	4	nsubj	_	_
 2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	tvívegis	tvívegis	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -154,7 +162,7 @@
 10	2000	2000	NUM	NUM-A	Case=Acc	9	appos	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032177.SANITY,.8
+# sent_id = G-2-1032177.SANITY,.10
 # X_ID = P-MAT
   (CP-ADV
     (IP-SUB
@@ -178,9 +186,9 @@
   (. .-.
 # text = 
 
-# sent_id = RUV_TGS_2016_G-2-1032177.SANITY,.9
-# X_ID = ID_missing_11
-# text = Portúgal hefur hins vegar aldrei orðið Evrópumeistari.
+# sent_id = G-2-1032177.SANITY,.11
+# X_ID = ID_MISSING
+# text = Portúgal hefur hins vegar aldrei orðið Evrópumeistari .
 1	Portúgal	portúgal	PROPN	NPR-N	_	6	nsubj	_	_
 2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
 3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
@@ -190,19 +198,20 @@
 7	Evrópumeistari	evrópumeistari	PROPN	NPR-N	_	6	xcomp	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032177.SANITY,.10
-# X_IDs = ID_missing_12 ; ID_missing_13
-# text = Liðið komst í úrslit árið 2004 en tapaði þá fyrir Grikklandi.
+# sent_id = G-2-1032177.SANITY,.12
+# X_ID = ID_MISSING
+# text = Liðið komst í úrslit árið 2004
 1	Liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	komst	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	í	í	ADP	P	_	4	case	_	_
 4	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
 5	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 6	2004	2004	NUM	NUM-A	Case=Acc	5	appos	_	_
-7	en	en	CCONJ	CONJ	_	8	cc	_	_
-8	tapaði	tapa	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-9	þá	þá	ADV	ADV	Degree=Pos	8	advmod	_	_
-10	fyrir	fyrir	ADP	P	_	11	case	_	_
-11	Grikklandi	grikkland	PROPN	NPR-D	_	8	obl	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	2	punct	_	_
+
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	tapaði	tapa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	fyrir	fyrir	ADP	P	_	5	case	_	_
+5	Grikklandi	grikkland	PROPN	NPR-D	_	2	obl	_	_
+6	.	.	PUNCT	.	_	2	punct	_	_
 

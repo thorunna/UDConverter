@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Herra forseti. Hv. þingmaður velti því aðeins fyrir sér hvað byggi að baki þessari framgöngu hér og mér fundust það áhugaverðar hugleiðingar.
+# sent_id = G-33-4716305,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Hv. þingmaður velti því aðeins fyrir sér hvað byggi að baki þessari framgöngu hér
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -18,17 +18,21 @@
 15	þessari	þessi	DET	D-D	Case=Dat	16	det	_	_
 16	framgöngu	framganga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	nmod:poss	_	_
 17	hér	hér	ADV	ADV	Degree=Pos	16	advmod	_	_
-18	og	og	CCONJ	CONJ	_	20	cc	_	_
-19	mér	ég	PRON	PRO-D	Case=Dat	20	nsubj	_	_
-20	fundust	finna	VERB	VBDI	Mood=Ind|Tense=Past	6	conj	_	OriginalHead=0
-21	það	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
-22	áhugaverðar	áhugaverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	amod	_	_
-23	hugleiðingar	hugleiðing	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	20	ccomp	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.2
-# X_ID = ID_missing_3
-# text = Það má auðvitað spyrja sig: Sátt við hverja er meiningin að ná með þessum vinnubrögðum?
+# sent_id = G-33-4716305,.2
+# X_ID = ID_MISSING
+# text = og mér fundust það áhugaverðar hugleiðingar .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
+3	fundust	finna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+5	áhugaverðar	áhugaverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
+6	hugleiðingar	hugleiðing	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	ccomp	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4716305,.3
+# X_ID = ID_MISSING
+# text = Það má auðvitað spyrja sig : Sátt við hverja er meiningin að ná með þessum vinnubrögðum ?
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -47,17 +51,17 @@
 16	vinnubrögðum	vinnubrögð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	SpaceAfter=No
 17	?	?	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.3
-# X_ID = ID_missing_4
-# text = Sátt við hverja?
+# sent_id = G-33-4716305,.4
+# X_ID = ID_MISSING
+# text = Sátt við hverja ?
 1	Sátt	sátt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
 2	við	við	ADP	P	_	3	case	_	_
 3	hverja	hver	PRON	WPRO-A	Case=Acc	1	obl	_	SpaceAfter=No
 4	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.4
-# X_ID = ID_missing_5
-# text = Maður veltir stundum fyrir sér hvort þetta sé orðið skylt umræðu skyld umræða við sjávarútvegsumræðuna, að allir tali um sáttina, hina miklu sátt, en hún virðist eiga að vera við tiltekna aðila en ekki aðra.
+# sent_id = G-33-4716305,.5
+# X_ID = ID_MISSING
+# text = Maður veltir stundum fyrir sér hvort þetta sé orðið skylt umræðu skyld umræða við sjávarútvegsumræðuna, að allir tali um sáttina, hina miklu sátt, en hún virðist eiga að vera við tiltekna aðila en ekki aðra .
 1	Maður	maður	PRON	MAN-N	_	2	nsubj	_	_
 2	veltir	velta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	stundum	stund	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
@@ -98,9 +102,9 @@
 38	aðra	annar	PRON	OTHER-A	Case=Acc	35	conj	_	SpaceAfter=No
 39	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.5
-# X_ID = ID_missing_6
-# text = Af því hv. þingmaður spurði spurningarinnar, hvort jafnvel væri verið að ganga einhverra sérhagsmuna veltir maður því fyrir sér og tengir til dæmis við þá staðreynd að hér átti loksins að lögfesta varúðarregluna.
+# sent_id = G-33-4716305,.6
+# X_ID = ID_MISSING
+# text = Af því hv. þingmaður spurði spurningarinnar, hvort jafnvel væri verið að ganga einhverra sérhagsmuna veltir maður því fyrir sér og tengir til dæmis við þá staðreynd að hér átti loksins að lögfesta varúðarregluna .
 1	Af	af	ADP	P	_	2	case	_	_
 2	því	það	PRON	PRO-D	Case=Dat	16	obl	_	_
 3	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -137,9 +141,9 @@
 34	varúðarregluna	varúðarregla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obj	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	16	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.6
-# X_ID = ID_missing_7
-# text = Getur verið að þar sé sáttin, að sáttin eigi að felast í því að það verði ekki gert?
+# sent_id = G-33-4716305,.7
+# X_ID = ID_MISSING
+# text = Getur verið að þar sé sáttin, að sáttin eigi að felast í því að það verði ekki gert ?
 1	Getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	2	aux	_	_
 2	verið	vera	VERB	BEN	Tense=Past|VerbForm=Part	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -161,9 +165,9 @@
 19	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	17	ccomp	_	SpaceAfter=No
 20	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.7
-# X_ID = ID_missing_8
-# text = Ég geri ráð fyrir því að við getum giskað á hverjir væru ósköp sáttir við að varúðarreglan kæmist ekkert inn í lög á Íslandi þó seint sé.
+# sent_id = G-33-4716305,.8
+# X_ID = ID_MISSING
+# text = Ég geri ráð fyrir því að við getum giskað á hverjir væru ósköp sáttir við að varúðarreglan kæmist ekkert inn í lög á Íslandi þó seint sé .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	geri	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ráð	ráð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
@@ -193,9 +197,9 @@
 27	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	26	cop	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.8
-# X_ID = ID_missing_9
-# text = Treystir hv. þm. Helgi Hjörvar sér til að vera aðeins beinskeyttari í umfjöllun um þessi efni, svo að við tölum nú ekki tæpitungu mikla, meira en þarf?
+# sent_id = G-33-4716305,.9
+# X_ID = ID_MISSING
+# text = Treystir hv. þm. Helgi Hjörvar sér til að vera aðeins beinskeyttari í umfjöllun um þessi efni, svo að við tölum nú ekki tæpitungu mikla, meira en þarf ?
 1	Treystir	treysta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
 3	þm.	þingmaður	PROPN	NPR-N	_	1	nsubj	_	_
@@ -227,18 +231,18 @@
 29	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	27	obl	_	SpaceAfter=No
 30	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.9
-# X_ID = ID_missing_10
-# text = Auðvitað er staðan grafalvarleg.
+# sent_id = G-33-4716305,.10
+# X_ID = ID_MISSING
+# text = Auðvitað er staðan grafalvarleg .
 1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	staðan	staða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 4	grafalvarleg	grafalvarlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.10
-# X_ID = ID_missing_11
-# text = Hvað vorum við að ræða hér fyrir ári eða innan við það?
+# sent_id = G-33-4716305,.11
+# X_ID = ID_MISSING
+# text = Hvað vorum við að ræða hér fyrir ári eða innan við það ?
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	5	obj	_	_
 2	vorum	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -253,9 +257,9 @@
 12	það	það	PRON	PRO-A	Case=Acc	8	conj	_	SpaceAfter=No
 13	?	?	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.11
-# X_ID = ID_missing_12
-# text = Við vorum að ræða um hvort við fengjum inn í stjórnarskrána þessar mikilvægustu grundvallarreglur umhverfismálanna, meginprinsipp og grundvallarreglur umhverfisréttarins.
+# sent_id = G-33-4716305,.12
+# X_ID = ID_MISSING
+# text = Við vorum að ræða um hvort við fengjum inn í stjórnarskrána þessar mikilvægustu grundvallarreglur umhverfismálanna, meginprinsipp og grundvallarreglur umhverfisréttarins .
 1	Við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	vorum	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -278,9 +282,9 @@
 20	umhverfisréttarins	umhverfisréttur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	nmod:poss	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.12
-# X_ID = ID_missing_13
-# text = Þá voru menn að gera sér vonir um það.
+# sent_id = G-33-4716305,.13
+# X_ID = ID_MISSING
+# text = Þá voru menn að gera sér vonir um það .
 1	Þá	þá	ADV	ADV	Degree=Pos	5	advmod	_	_
 2	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
 3	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
@@ -292,9 +296,9 @@
 9	það	það	PRON	PRO-A	Case=Acc	7	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.13
-# X_ID = ID_missing_14
-# text = En hvað er hér á dagskrá?
+# sent_id = G-33-4716305,.14
+# X_ID = ID_MISSING
+# text = En hvað er hér á dagskrá ?
 1	En	en	CCONJ	CONJ	_	6	cc	_	_
 2	hvað	hver	PRON	WPRO-N	Case=Nom	6	obj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
@@ -303,9 +307,9 @@
 6	dagskrá	dagskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 7	?	?	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.14
-# X_ID = ID_missing_15
-# text = Nei, það er nú ekki að þetta sé á leiðinni inn í stjórnarskrána.
+# sent_id = G-33-4716305,.15
+# X_ID = ID_MISSING
+# text = Nei, það er nú ekki að þetta sé á leiðinni inn í stjórnarskrána .
 1	Nei	nei	INTJ	INTJ	_	3	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
@@ -322,9 +326,9 @@
 14	stjórnarskrána	stjórnarskrá	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.15
-# X_ID = ID_missing_16
-# text = Nei, að þetta fari út úr lögum eða komist ekki inn í lög.
+# sent_id = G-33-4716305,.16
+# X_ID = ID_MISSING
+# text = Nei, að þetta fari út úr lögum eða komist ekki inn í lög .
 1	Nei	nei	INTJ	INTJ	_	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	að	að	SCONJ	C	_	5	mark	_	_
@@ -341,9 +345,9 @@
 14	lög	lag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.16
-# X_ID = ID_missing_17
-# text = Ég hefði áhuga á að heyra mat hv. þingmanns á þessu út frá þeim hugleiðingum sem hann var hér með um þennan bakgrunn málsins:
+# sent_id = G-33-4716305,.17
+# X_ID = ID_MISSING
+# text = Ég hefði áhuga á að heyra mat hv. þingmanns á þessu út frá þeim hugleiðingum sem hann var hér með um þennan bakgrunn málsins :
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hefði	hafa	VERB	HVDS	Mood=Sub|Tense=Past	0	root	_	_
 3	áhuga	áhugi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
@@ -370,22 +374,19 @@
 24	málsins	mál	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	nmod:poss	_	SpaceAfter=No
 25	:	:	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.17
-# X_ID = ID_missing_18
-# text = Hvað gengur mönnum til?
+# sent_id = G-33-4716305,.18
+# X_ID = ID_MISSING
+# text = Hvað gengur mönnum til ?
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	nsubj	_	_
 4	til	til	ADP	RP	_	2	compound:prt	_	SpaceAfter=No
 5	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4716305,.18
-# X_ID = ID_missing_19
-# text = Hvað er þarna á ferðinni?
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	5	obj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	þarna	þarna	ADV	ADV	Degree=Pos	5	advmod	_	_
 4	á	á	ADP	P	_	5	case	_	_
-5	ferðinni	ferð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+5	ferðinni	ferð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
 6	?	?	PUNCT	.	_	5	punct	_	_
 

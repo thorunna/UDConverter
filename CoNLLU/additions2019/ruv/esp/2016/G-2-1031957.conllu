@@ -1,6 +1,6 @@
-# sent_id = RUV_ESP_2016_G-2-1031957,.1
-# X_ID = ID_missing_1
-# text = Margir sterkustu kylfingar landsins eru mættir til leiks á Borgunarmótið á Eimskipsmótaröðinni í golfi sem hófst í morgun og er haldið á Hvaleyrarvelli.
+# sent_id = G-2-1031957,.1
+# X_ID = ID_MISSING
+# text = Margir sterkustu kylfingar landsins eru mættir til leiks á Borgunarmótið á Eimskipsmótaröðinni í golfi sem hófst í morgun og er haldið á Hvaleyrarvelli .
 1	Margir	margur	DET	Q-N	Case=Nom	3	amod	_	_
 2	sterkustu	sterkur	ADJ	ADJS-N	Case=Nom|Degree=Sup	3	amod	_	_
 3	kylfingar	kylfingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
@@ -26,52 +26,60 @@
 23	Hvaleyrarvelli	hvaleyrarvelli	PROPN	NPR-D	_	21	obl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1031957,.2
-# X_IDs = ID_missing_2 ; ID_missing_3 ; ID_missing_4
-# text = Keppt verður um Hvaleyrarbikarinn en þetta er í fyrsta skipti sem mótið er haldið og er það jafnframt það fyrsta í nýju„ final-four“ fyrirkomulagi í úrslitakeppni Eimskipsmótaraðarinnar.
+# sent_id = G-2-1031957,.2
+# X_ID = ID_MISSING
+# text = Keppt verður um Hvaleyrarbikarinn
 1	Keppt	keppa	VERB	VAN	Tense=Past|VerbForm=Part	2	xcomp	_	_
 2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	um	um	ADP	P	_	4	case	_	_
 4	Hvaleyrarbikarinn	hvaleyrarbikar	PROPN	NPR-A	_	2	obl	_	_
-5	en	en	CCONJ	CONJ	_	10	cc	_	_
-6	þetta	þessi	DET	D-N	Case=Nom	10	nsubj	_	_
-7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
-8	í	í	ADP	P	_	10	case	_	_
-9	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	10	amod	_	_
-10	skipti	skipti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
-11	sem	sem	SCONJ	C	_	14	mark	_	_
-12	mótið	mót	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
-13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
-14	haldið	halda	VERB	VAN	Tense=Past|VerbForm=Part	10	acl:relcl	_	_
-15	og	og	CCONJ	CONJ	_	20	cc	_	_
-16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
-17	það	það	PRON	PRO-N	Case=Nom	20	nsubj	_	_
-18	jafnframt	jafnframt	ADV	ADV	Degree=Pos	20	advmod	_	_
-19	það	sá	DET	D-N	Case=Nom	20	det	_	_
-20	fyrsta	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	conj	_	OriginalHead=0
-21	í	í	ADP	P	_	26	case	_	_
-22	nýju	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	26	amod	_	SpaceAfter=No
-23	„	„	PUNCT	"	_	22	punct	_	_
-24	final-four	final-four	X	FW	Foreign=Yes	26	dep	_	SpaceAfter=No
-25	“	“	PUNCT	"	_	24	punct	_	_
-26	fyrirkomulagi	fyrirkomulag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	_
-27	í	í	ADP	P	_	28	case	_	_
-28	úrslitakeppni	úrslitakeppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	_
-29	Eimskipsmótaraðarinnar	eimskipsmótaröð	PROPN	NPR-G	_	28	nmod:poss	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1031957,.3
-# X_ID = ID_missing_5
-# text = Mótinu lýkur á sunnudag.
+# sent_id = G-2-1031957,.3
+# X_ID = ID_MISSING
+# text = en þetta er í fyrsta skipti sem mótið er haldið
+1	en	en	CCONJ	CONJ	_	6	cc	_	_
+2	þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+4	í	í	ADP	P	_	6	case	_	_
+5	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	6	amod	_	_
+6	skipti	skipti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	0	root	_	_
+7	sem	sem	SCONJ	C	_	10	mark	_	_
+8	mótið	mót	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
+10	haldið	halda	VERB	VAN	Tense=Past|VerbForm=Part	6	acl:relcl	_	_
+
+# sent_id = G-2-1031957,.4
+# X_ID = ID_MISSING
+# text = og er það jafnframt það fyrsta í nýju „ final-four “ fyrirkomulagi í úrslitakeppni Eimskipsmótaraðarinnar .
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+3	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+4	jafnframt	jafnframt	ADV	ADV	Degree=Pos	6	advmod	_	_
+5	það	sá	DET	D-N	Case=Nom	6	det	_	_
+6	fyrsta	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	0	root	_	_
+7	í	í	ADP	P	_	12	case	_	_
+8	nýju	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	SpaceAfter=No
+9	„	„	PUNCT	"	_	8	punct	_	_
+10	final-four	final-four	X	FW	Foreign=Yes	12	dep	_	SpaceAfter=No
+11	“	“	PUNCT	"	_	10	punct	_	_
+12	fyrirkomulagi	fyrirkomulag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+13	í	í	ADP	P	_	14	case	_	_
+14	úrslitakeppni	úrslitakeppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+15	Eimskipsmótaraðarinnar	eimskipsmótaröð	PROPN	NPR-G	_	14	nmod:poss	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-2-1031957,.5
+# X_ID = ID_MISSING
+# text = Mótinu lýkur á sunnudag .
 1	Mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	lýkur	ljúka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	á	á	ADP	P	_	4	case	_	_
 4	sunnudag	sunnudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1031957,.4
-# X_ID = ID_missing_6
-# text = Sex fyrrverandi Íslandsmeistarar í karlaflokki eru á meðal keppenda og Íslandsmeistari kvenna frá því í fyrra.
+# sent_id = G-2-1031957,.6
+# X_ID = ID_MISSING
+# text = Sex fyrrverandi Íslandsmeistarar í karlaflokki eru á meðal keppenda og Íslandsmeistari kvenna frá því í fyrra .
 1	Sex	sex	NUM	NUM-N	Case=Nom	3	nummod	_	_
 2	fyrrverandi	fyrrverandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
 3	Íslandsmeistarar	íslandsmeistari	PROPN	NPRS-N	_	9	nsubj	_	_
@@ -90,9 +98,9 @@
 16	fyrra	fyrri	ADJ	ADJR-A	Case=Acc|Degree=Cmp	14	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1031957,.5
-# X_ID = ID_missing_7
-# text = Fimm af þeim karlkylfingum sem sigruðu í 2. deild Evrópumótsins í síðustu viku eru með og sömuleiðis kvennalandsliðið sem lék á Evrópumótinu á Urriðavelli í síðustu viku.
+# sent_id = G-2-1031957,.7
+# X_ID = ID_MISSING
+# text = Fimm af þeim karlkylfingum sem sigruðu í 2. deild Evrópumótsins í síðustu viku eru með og sömuleiðis kvennalandsliðið sem lék á Evrópumótinu á Urriðavelli í síðustu viku .
 1	Fimm	fimm	NUM	NUM-N	Case=Nom	15	nsubj	_	_
 2	af	af	ADP	P	_	4	case	_	_
 3	þeim	sá	DET	D-D	Case=Dat	4	det	_	_
@@ -122,9 +130,6 @@
 27	viku	vika	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	15	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1031957,.6
-# X_ID = ID_missing_8
-# text = Hvaleyrarvöllur er sagður skarta sínu fegursta þessa dagana og keppnisaðstæður með besta móti, að því er fram kemur á heimasíðu Golfsambands Íslands þar sem einnig er hægt að fylgjast með framvindu mótsins.
 1	Hvaleyrarvöllur	hvaleyrarvöllur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	sagður	segja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -137,7 +142,7 @@
 10	keppnisaðstæður	keppnisaðstæður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
 11	með	með	ADP	P	_	16	ccomp	_	_
 12	besta	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	13	amod	_	_
-13	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
+13	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
 14	,	,	PUNCT	,	_	16	punct	_	_
 15	að	að	ADP	P	_	16	case	_	_
 16	því	það	PRON	PRO-D	Case=Dat	3	conj	_	_
@@ -157,6 +162,6 @@
 30	fylgjast	fylgja	VERB	VB	VerbForm=Inf	21	acl:relcl	_	_
 31	með	með	ADP	P	_	32	case	_	_
 32	framvindu	framvinda	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obl	_	_
-33	mótsins	mót	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	32	nmod:poss	_	SpaceAfter=No
+33	mótsins	mót	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	32	nmod:poss	_	_
 34	.	.	PUNCT	.	_	3	punct	_	_
 

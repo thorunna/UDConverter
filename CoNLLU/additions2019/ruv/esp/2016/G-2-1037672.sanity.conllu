@@ -1,6 +1,6 @@
-# sent_id = RUV_ESP_2016_G-2-1037672.SANITY,.1
-# X_ID = ID_missing_1
-# text = Ágúst Þór Jóhannsson, landsliðsþjálfari kvenna í handbolta, hefur valið 19 manna hóp fyrir leiki gegn Frakklandi og Þýskalandi í þriðju umferð riðlakeppni EM.
+# sent_id = G-2-1037672.SANITY,.1
+# X_ID = ID_MISSING
+# text = Ágúst Þór Jóhannsson, landsliðsþjálfari kvenna í handbolta, hefur valið 19 manna hóp fyrir leiki gegn Frakklandi og Þýskalandi í þriðju umferð riðlakeppni EM .
 1	Ágúst	ágúst	PROPN	NPR-N	_	11	nsubj	_	_
 2	Þór	þór	PROPN	NPR-N	_	1	flat:name	_	_
 3	Jóhannsson	jóhannsson	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
@@ -28,9 +28,9 @@
 25	EM	em	PROPN	NPR-G	_	24	nmod:poss	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1037672.SANITY,.2
-# X_ID = ID_missing_2
-# text = Mótið verður haldið í Svíþjóð í desember.
+# sent_id = G-2-1037672.SANITY,.2
+# X_ID = ID_MISSING
+# text = Mótið verður haldið í Svíþjóð í desember .
 1	Mótið	mót	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	haldið	halda	VERB	VAN	Tense=Past|VerbForm=Part	2	ccomp	_	_
@@ -40,9 +40,9 @@
 7	desember	desember	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1037672.SANITY,.3
-# X_ID = ID_missing_3
-# text = Ísland er sem stendur í þriðja sæti í sínum riðli með tvö stig eftir fjóra leiki.
+# sent_id = G-2-1037672.SANITY,.3
+# X_ID = ID_MISSING
+# text = Ísland er sem stendur í þriðja sæti í sínum riðli með tvö stig eftir fjóra leiki .
 1	Ísland	ísland	PROPN	NPR-N	_	7	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 3	sem	sem	SCONJ	C	_	4	mark	_	_
@@ -61,29 +61,33 @@
 16	leiki	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1037672.SANITY,.4
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Efstir sitja Frakkar með átta stig og Þjóðverjar eru í öðru sæti með fjögur stig.
+# sent_id = G-2-1037672.SANITY,.4
+# X_ID = ID_MISSING
+# text = Efstir sitja Frakkar með átta stig
 1	Efstir	efri	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	amod	_	_
 2	sitja	sitja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	Frakkar	frakki	PROPN	NPRS-N	_	2	nsubj	_	_
 4	með	með	ADP	P	_	6	case	_	_
 5	átta	átta	NUM	NUM-A	Case=Acc	6	nummod	_	_
 6	stig	stig	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
-7	og	og	CCONJ	CONJ	_	12	cc	_	_
-8	Þjóðverjar	þjóðverji	PROPN	NPRS-N	_	12	nsubj	_	_
-9	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
-10	í	í	ADP	P	_	12	case	_	_
-11	öðru	annar	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
-12	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
-13	með	með	ADP	P	_	15	case	_	_
-14	fjögur	fjórir	NUM	NUM-A	Case=Acc	15	nummod	_	_
-15	stig	stig	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1037672.SANITY,.5
-# X_ID = ID_missing_6
-# text = Efstu þjóðirnar tvær í hverjum riðli komast á mótið og liðið með bestan árangur í þriðja sæti í sjö riðlum.
+# sent_id = G-2-1037672.SANITY,.5
+# X_ID = ID_MISSING
+# text = og Þjóðverjar eru í öðru sæti með fjögur stig .
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	Þjóðverjar	þjóðverji	PROPN	NPRS-N	_	6	nsubj	_	_
+3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+4	í	í	ADP	P	_	6	case	_	_
+5	öðru	annar	ADJ	ADJ-D	Case=Dat|Degree=Pos	6	amod	_	_
+6	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
+7	með	með	ADP	P	_	9	case	_	_
+8	fjögur	fjórir	NUM	NUM-A	Case=Acc	9	nummod	_	_
+9	stig	stig	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-2-1037672.SANITY,.6
+# X_ID = ID_MISSING
+# text = Efstu þjóðirnar tvær í hverjum riðli komast á mótið og liðið með bestan árangur í þriðja sæti í sjö riðlum .
 1	Efstu	efri	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	amod	_	_
 2	þjóðirnar	þjóð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	nsubj	_	_
 3	tvær	tveir	NUM	NUM-N	Case=Nom	2	nummod	_	_
@@ -106,9 +110,9 @@
 20	riðlum	riðill	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	17	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1037672.SANITY,.6
-# X_ID = ID_missing_7
-# text = Íslenska liðið mætir Frakklandi hér heima þann 1. júní og Þýskalandi ytra 5. júní.
+# sent_id = G-2-1037672.SANITY,.7
+# X_ID = ID_MISSING
+# text = Íslenska liðið mætir Frakklandi hér heima þann 1. júní og Þýskalandi ytra 5. júní .
 1	Íslenska	íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	mætir	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -125,9 +129,9 @@
 14	júní	júní	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	nmod:poss	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1037672.SANITY,.7
-# X_ID = ID_missing_8
-# text = Báðir leikirnir verða sýndir í beinni útsendingu á RÚV 2.
+# sent_id = G-2-1037672.SANITY,.8
+# X_ID = ID_MISSING
+# text = Báðir leikirnir verða sýndir í beinni útsendingu á RÚV 2 .
 1	Báðir	báðir	DET	Q-N	Case=Nom	2	amod	_	_
 2	leikirnir	leikur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
 3	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -140,18 +144,18 @@
 10	2	tveir	NUM	NUM-N	Case=Nom	9	nmod:poss	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1037672.SANITY,.8
-# X_ID = ID_missing_9
-# text = Hópurinn fyrir leikina tvo:
+# sent_id = G-2-1037672.SANITY,.9
+# X_ID = ID_MISSING
+# text = Hópurinn fyrir leikina tvo :
 1	Hópurinn	hópur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 2	fyrir	fyrir	ADP	P	_	3	case	_	_
 3	leikina	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obl	_	_
 4	tvo	tveir	NUM	NUM-A	Case=Acc	3	nummod	_	SpaceAfter=No
 5	:	:	PUNCT	.	_	1	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1037672.SANITY,.9
-# X_IDs = ID_missing_10 ; ID_missing_11 ; ID_missing_12
-# text = Markmenn: Elín Jóna Þorsteinsdóttir, Haukar Florentina Stanciu, Stjarnan Íris Björk Símonardóttir, Grótta Aðrir leikmenn: Arna Sif Pálsdóttir, Nice Birna Berg Haraldsdóttir, Savehof Hildigunnur Einarsdóttir, Koblenz Hrafnhildur Hanna Þrastardóttir, Selfoss Karen Knútsdóttir, Nice Kristín Guðmundsdóttir, Valur Lovísa Thompson, Grótta Ramune Pekarskyte, Haukar Rut Arnfjörð Jónsdóttir, Randers Sólveig Lára Kjærnested, Stjarnan Steinunn Björnsdóttir, Fram Steinunn Hansdóttir, Skandeborg Sunna Jónsdóttir, Skrim Thea Imani Sturludóttir, Fylkir Unnur Ómarsdóttir, Grótta Þórey Anna Ásgeirsdóttir, Grótta Lovísa Thompson, 16 ára Gróttukona, er eini nýliðinn í hópnum.
+# sent_id = G-2-1037672.SANITY,.10
+# X_ID = ID_MISSING
+# text = Markmenn : Elín Jóna Þorsteinsdóttir, Haukar Florentina Stanciu, Stjarnan Íris Björk Símonardóttir, Grótta
 1	Markmenn	markmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	.	_	1	punct	_	_
 3	Elín	elín	PROPN	NPR-N	_	1	xcomp	_	_
@@ -168,97 +172,102 @@
 14	Símonardóttir	símonardóttir	PROPN	NPR-N	_	12	dep	_	SpaceAfter=No
 15	,	,	PUNCT	,	_	14	punct	_	_
 16	Grótta	grótta	PROPN	NPR-N	_	12	nmod:poss	_	_
-17	Aðrir	annar	PRON	OTHER-N	Case=Nom	18	det	_	_
-18	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	1	conj	_	OriginalHead=0|SpaceAfter=No
-19	:	:	PUNCT	.	_	1	punct	_	_
-20	Arna	arna	PROPN	NPR-N	_	18	xcomp	_	_
-21	Sif	sif	PROPN	NPR-N	_	20	flat:name	_	_
-22	Pálsdóttir	pálsdóttir	PROPN	NPR-N	_	20	dep	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	22	punct	_	_
-24	Nice	nice	PROPN	NPR-N	_	20	nmod:poss	_	_
-25	Birna	birna	PROPN	NPR-N	_	20	conj	_	_
-26	Berg	berg	PROPN	NPR-N	_	25	flat:name	_	_
-27	Haraldsdóttir	haraldsdóttir	PROPN	NPR-N	_	25	dep	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	27	punct	_	_
-29	Savehof	savehof	PROPN	NPR-N	_	25	nmod:poss	_	_
-30	Hildigunnur	hildigunnur	PROPN	NPR-N	_	20	conj	_	_
-31	Einarsdóttir	einarsdóttir	PROPN	NPR-N	_	30	flat:name	_	SpaceAfter=No
-32	,	,	PUNCT	,	_	31	punct	_	_
-33	Koblenz	koblenz	PROPN	NPR-N	_	30	nmod:poss	_	_
-34	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	20	conj	_	_
-35	Hanna	hanna	PROPN	NPR-N	_	34	flat:name	_	_
-36	Þrastardóttir	þrastardóttir	PROPN	NPR-N	_	34	dep	_	SpaceAfter=No
-37	,	,	PUNCT	,	_	36	punct	_	_
-38	Selfoss	selfoss	PROPN	NPR-N	_	34	nmod:poss	_	_
-39	Karen	karen	PROPN	NPR-N	_	20	conj	_	_
-40	Knútsdóttir	knútsdóttir	PROPN	NPR-N	_	39	flat:name	_	SpaceAfter=No
-41	,	,	PUNCT	,	_	40	punct	_	_
-42	Nice	nice	ADV	ADV	Degree=Pos	39	nmod:poss	_	_
-43	Kristín	kristín	PROPN	NPR-N	_	20	conj	_	_
-44	Guðmundsdóttir	guðmundsdóttir	PROPN	NPR-N	_	43	flat:name	_	SpaceAfter=No
-45	,	,	PUNCT	,	_	44	punct	_	_
-46	Valur	valur	PROPN	NPR-N	_	43	nmod:poss	_	_
-47	Lovísa	lovísa	PROPN	NPR-N	_	20	conj	_	_
-48	Thompson	thompson	PROPN	NPR-N	_	47	flat:name	_	SpaceAfter=No
-49	,	,	PUNCT	,	_	48	punct	_	_
-50	Grótta	grótta	PROPN	NPR-N	_	47	nmod:poss	_	_
-51	Ramune	ramune	PROPN	NPR-N	_	20	conj	_	_
-52	Pekarskyte	pekarskyte	PROPN	NPR-N	_	51	flat:name	_	SpaceAfter=No
-53	,	,	PUNCT	,	_	52	punct	_	_
-54	Haukar	haukur	PROPN	NPRS-N	_	51	nmod:poss	_	_
-55	Rut	rut	PROPN	NPR-N	_	20	conj	_	_
-56	Arnfjörð	arnfjörð	PROPN	NPR-N	_	55	flat:name	_	_
-57	Jónsdóttir	jónsdóttir	PROPN	NPR-N	_	55	dep	_	SpaceAfter=No
-58	,	,	PUNCT	,	_	57	punct	_	_
-59	Randers	randers	PROPN	NPR-N	_	55	nmod:poss	_	_
-60	Sólveig	sólveig	PROPN	NPR-N	_	20	conj	_	_
-61	Lára	lára	PROPN	NPR-N	_	60	flat:name	_	_
-62	Kjærnested	kjærnested	PROPN	NPR-N	_	60	dep	_	SpaceAfter=No
-63	,	,	PUNCT	,	_	62	punct	_	_
-64	Stjarnan	stjarna	PROPN	NPR-N	_	60	nmod:poss	_	_
-65	Steinunn	steinunn	PROPN	NPR-N	_	20	conj	_	_
-66	Björnsdóttir	björnsdóttir	PROPN	NPR-N	_	65	flat:name	_	SpaceAfter=No
-67	,	,	PUNCT	,	_	66	punct	_	_
-68	Fram	fram	PROPN	NPR-N	_	65	nmod:poss	_	_
-69	Steinunn	steinunn	PROPN	NPR-N	_	20	conj	_	_
-70	Hansdóttir	hansdóttir	PROPN	NPR-N	_	69	flat:name	_	SpaceAfter=No
-71	,	,	PUNCT	,	_	70	punct	_	_
-72	Skandeborg	skandeborg	PROPN	NPR-N	_	69	nmod:poss	_	_
-73	Sunna	sunna	PROPN	NPR-N	_	20	conj	_	_
-74	Jónsdóttir	jónsdóttir	PROPN	NPR-N	_	73	flat:name	_	SpaceAfter=No
-75	,	,	PUNCT	,	_	74	punct	_	_
-76	Skrim	skrim	PROPN	NPR-N	_	73	nmod:poss	_	_
-77	Thea	thea	PROPN	NPR-N	_	20	conj	_	_
-78	Imani	imani	PROPN	NPR-N	_	77	flat:name	_	_
-79	Sturludóttir	sturludóttir	PROPN	NPR-N	_	77	dep	_	SpaceAfter=No
-80	,	,	PUNCT	,	_	79	punct	_	_
-81	Fylkir	fylkur	PROPN	NPRS-N	_	77	nmod:poss	_	_
-82	Unnur	unnur	PROPN	NPR-N	_	20	conj	_	_
-83	Ómarsdóttir	ómarsdóttir	PROPN	NPR-N	_	82	flat:name	_	SpaceAfter=No
-84	,	,	PUNCT	,	_	83	punct	_	_
-85	Grótta	grótta	PROPN	NPR-N	_	82	nmod:poss	_	_
-86	Þórey	þórey	PROPN	NPR-N	_	20	conj	_	_
-87	Anna	anna	PROPN	NPR-N	_	86	flat:name	_	_
-88	Ásgeirsdóttir	ásgeirsdóttir	PROPN	NPR-N	_	86	dep	_	SpaceAfter=No
-89	,	,	PUNCT	,	_	88	punct	_	_
-90	Grótta	grótta	PROPN	NPR-N	_	86	nmod:poss	_	_
-91	Lovísa	lovísa	PROPN	NPR-N	_	100	nsubj	_	_
-92	Thompson	thompson	PROPN	NPR-N	_	91	flat:name	_	SpaceAfter=No
-93	,	,	PUNCT	,	_	92	punct	_	_
-94	16	sextán	NUM	NUM-G	Case=Gen	95	nummod	_	_
-95	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	96	nmod:poss	_	_
-96	Gróttukona	gróttukona	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	91	appos	_	SpaceAfter=No
-97	,	,	PUNCT	,	_	1	punct	_	_
-98	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	100	cop	_	_
-99	eini	einn	DET	ONE-N	Case=Nom	100	det	_	_
-100	nýliðinn	nýliði	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	conj	_	OriginalHead=0
-101	í	í	ADP	P	_	102	case	_	_
-102	hópnum	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	100	obl	_	SpaceAfter=No
-103	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1037672.SANITY,.10
-# X_ID = ID_missing_13
-# text = Anna Úrsúla Guðmundsdóttir og Guðrún Ósk Maríasdóttir gáfu ekki kost á sér að þessu sinni vegna meiðsla.
+# sent_id = G-2-1037672.SANITY,.11
+# X_ID = ID_MISSING
+# text = Aðrir leikmenn : Arna Sif Pálsdóttir, Nice Birna Berg Haraldsdóttir, Savehof Hildigunnur Einarsdóttir, Koblenz Hrafnhildur Hanna Þrastardóttir, Selfoss Karen Knútsdóttir, Nice Kristín Guðmundsdóttir, Valur Lovísa Thompson, Grótta Ramune Pekarskyte, Haukar Rut Arnfjörð Jónsdóttir, Randers Sólveig Lára Kjærnested, Stjarnan Steinunn Björnsdóttir, Fram Steinunn Hansdóttir, Skandeborg Sunna Jónsdóttir, Skrim Thea Imani Sturludóttir, Fylkir Unnur Ómarsdóttir, Grótta Þórey Anna Ásgeirsdóttir, Grótta
+1	Aðrir	annar	PRON	OTHER-N	Case=Nom	2	det	_	_
+2	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	.	_	2	punct	_	_
+4	Arna	arna	PROPN	NPR-N	_	2	xcomp	_	_
+5	Sif	sif	PROPN	NPR-N	_	4	flat:name	_	_
+6	Pálsdóttir	pálsdóttir	PROPN	NPR-N	_	4	dep	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	Nice	nice	PROPN	NPR-N	_	4	nmod:poss	_	_
+9	Birna	birna	PROPN	NPR-N	_	4	conj	_	_
+10	Berg	berg	PROPN	NPR-N	_	9	flat:name	_	_
+11	Haraldsdóttir	haraldsdóttir	PROPN	NPR-N	_	9	dep	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	Savehof	savehof	PROPN	NPR-N	_	9	nmod:poss	_	_
+14	Hildigunnur	hildigunnur	PROPN	NPR-N	_	4	conj	_	_
+15	Einarsdóttir	einarsdóttir	PROPN	NPR-N	_	14	flat:name	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	Koblenz	koblenz	PROPN	NPR-N	_	14	nmod:poss	_	_
+18	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	4	conj	_	_
+19	Hanna	hanna	PROPN	NPR-N	_	18	flat:name	_	_
+20	Þrastardóttir	þrastardóttir	PROPN	NPR-N	_	18	dep	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	20	punct	_	_
+22	Selfoss	selfoss	PROPN	NPR-N	_	18	nmod:poss	_	_
+23	Karen	karen	PROPN	NPR-N	_	4	conj	_	_
+24	Knútsdóttir	knútsdóttir	PROPN	NPR-N	_	23	flat:name	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	Nice	nice	ADV	ADV	Degree=Pos	23	nmod:poss	_	_
+27	Kristín	kristín	PROPN	NPR-N	_	4	conj	_	_
+28	Guðmundsdóttir	guðmundsdóttir	PROPN	NPR-N	_	27	flat:name	_	SpaceAfter=No
+29	,	,	PUNCT	,	_	28	punct	_	_
+30	Valur	valur	PROPN	NPR-N	_	27	nmod:poss	_	_
+31	Lovísa	lovísa	PROPN	NPR-N	_	4	conj	_	_
+32	Thompson	thompson	PROPN	NPR-N	_	31	flat:name	_	SpaceAfter=No
+33	,	,	PUNCT	,	_	32	punct	_	_
+34	Grótta	grótta	PROPN	NPR-N	_	31	nmod:poss	_	_
+35	Ramune	ramune	PROPN	NPR-N	_	4	conj	_	_
+36	Pekarskyte	pekarskyte	PROPN	NPR-N	_	35	flat:name	_	SpaceAfter=No
+37	,	,	PUNCT	,	_	36	punct	_	_
+38	Haukar	haukur	PROPN	NPRS-N	_	35	nmod:poss	_	_
+39	Rut	rut	PROPN	NPR-N	_	4	conj	_	_
+40	Arnfjörð	arnfjörð	PROPN	NPR-N	_	39	flat:name	_	_
+41	Jónsdóttir	jónsdóttir	PROPN	NPR-N	_	39	dep	_	SpaceAfter=No
+42	,	,	PUNCT	,	_	41	punct	_	_
+43	Randers	randers	PROPN	NPR-N	_	39	nmod:poss	_	_
+44	Sólveig	sólveig	PROPN	NPR-N	_	4	conj	_	_
+45	Lára	lára	PROPN	NPR-N	_	44	flat:name	_	_
+46	Kjærnested	kjærnested	PROPN	NPR-N	_	44	dep	_	SpaceAfter=No
+47	,	,	PUNCT	,	_	46	punct	_	_
+48	Stjarnan	stjarna	PROPN	NPR-N	_	44	nmod:poss	_	_
+49	Steinunn	steinunn	PROPN	NPR-N	_	4	conj	_	_
+50	Björnsdóttir	björnsdóttir	PROPN	NPR-N	_	49	flat:name	_	SpaceAfter=No
+51	,	,	PUNCT	,	_	50	punct	_	_
+52	Fram	fram	PROPN	NPR-N	_	49	nmod:poss	_	_
+53	Steinunn	steinunn	PROPN	NPR-N	_	4	conj	_	_
+54	Hansdóttir	hansdóttir	PROPN	NPR-N	_	53	flat:name	_	SpaceAfter=No
+55	,	,	PUNCT	,	_	54	punct	_	_
+56	Skandeborg	skandeborg	PROPN	NPR-N	_	53	nmod:poss	_	_
+57	Sunna	sunna	PROPN	NPR-N	_	4	conj	_	_
+58	Jónsdóttir	jónsdóttir	PROPN	NPR-N	_	57	flat:name	_	SpaceAfter=No
+59	,	,	PUNCT	,	_	58	punct	_	_
+60	Skrim	skrim	PROPN	NPR-N	_	57	nmod:poss	_	_
+61	Thea	thea	PROPN	NPR-N	_	4	conj	_	_
+62	Imani	imani	PROPN	NPR-N	_	61	flat:name	_	_
+63	Sturludóttir	sturludóttir	PROPN	NPR-N	_	61	dep	_	SpaceAfter=No
+64	,	,	PUNCT	,	_	63	punct	_	_
+65	Fylkir	fylkur	PROPN	NPRS-N	_	61	nmod:poss	_	_
+66	Unnur	unnur	PROPN	NPR-N	_	4	conj	_	_
+67	Ómarsdóttir	ómarsdóttir	PROPN	NPR-N	_	66	flat:name	_	SpaceAfter=No
+68	,	,	PUNCT	,	_	67	punct	_	_
+69	Grótta	grótta	PROPN	NPR-N	_	66	nmod:poss	_	_
+70	Þórey	þórey	PROPN	NPR-N	_	4	conj	_	_
+71	Anna	anna	PROPN	NPR-N	_	70	flat:name	_	_
+72	Ásgeirsdóttir	ásgeirsdóttir	PROPN	NPR-N	_	70	dep	_	SpaceAfter=No
+73	,	,	PUNCT	,	_	72	punct	_	_
+74	Grótta	grótta	PROPN	NPR-N	_	70	nmod:poss	_	_
+
+# sent_id = G-2-1037672.SANITY,.12
+# X_ID = ID_MISSING
+# text = Lovísa Thompson, 16 ára Gróttukona, er eini nýliðinn í hópnum .
+1	Lovísa	lovísa	PROPN	NPR-N	_	10	nsubj	_	_
+2	Thompson	thompson	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	16	sextán	NUM	NUM-G	Case=Gen	5	nummod	_	_
+5	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	nmod:poss	_	_
+6	Gróttukona	gróttukona	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	10	punct	_	_
+8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
+9	eini	einn	DET	ONE-N	Case=Nom	10	det	_	_
+10	nýliðinn	nýliði	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	hópnum	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	10	punct	_	_
+
 1	Anna	anna	PROPN	NPR-N	_	8	nsubj	_	_
 2	Úrsúla	úrsúla	PROPN	NPR-N	_	1	flat:name	_	_
 3	Guðmundsdóttir	guðmundsdóttir	PROPN	NPR-N	_	1	dep	_	_
@@ -275,6 +284,6 @@
 14	þessu	þessi	DET	D-D	Case=Dat	15	det	_	_
 15	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
 16	vegna	vegna	ADP	P	_	17	case	_	_
-17	meiðsla	meiðsli	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	obl	_	SpaceAfter=No
+17	meiðsla	meiðsli	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	obl	_	_
 18	.	.	PUNCT	.	_	8	punct	_	_
 

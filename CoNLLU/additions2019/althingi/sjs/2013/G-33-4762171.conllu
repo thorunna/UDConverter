@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4762171,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Ég þakka hæstv. ráðherra fyrir svörin.
+# sent_id = G-33-4762171,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Ég þakka hæstv. ráðherra fyrir svörin .
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -12,42 +12,46 @@
 9	svörin	svar	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4762171,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Þetta skýrði bakgrunn málsins og að sjálfsögðu tekur maður mark á því ef Samband íslenskra sveitarfélaga ber fram slíka ósk og hefur haft um það samráð við eftirlitsnefndina.
+# sent_id = G-33-4762171,.2
+# X_ID = ID_MISSING
+# text = Þetta skýrði bakgrunn málsins
 1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	skýrði	skýra	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	bakgrunn	bakgrunnur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 4	málsins	mál	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	nmod:poss	_	_
-5	og	og	CCONJ	CONJ	_	8	cc	_	_
-6	að	að	ADV	P	_	8	advmod	_	_
-7	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Degree=Pos	6	amod	_	_
-8	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-9	maður	maður	PRON	MAN-N	_	8	nsubj	_	_
-10	mark	mark	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	_
-11	á	á	ADP	P	_	12	case	_	_
-12	því	það	PRON	PRO-D	Case=Dat	8	obl	_	_
-13	ef	ef	ADP	P	_	17	case	_	_
-14	Samband	samband	PROPN	NPR-N	_	17	nsubj	_	_
-15	íslenskra	íslenskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	16	amod	_	_
-16	sveitarfélaga	sveitarfélag	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	nmod:poss	_	_
-17	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	12	obl	_	_
-18	fram	fram	ADP	RP	_	17	compound:prt	_	_
-19	slíka	slíkur	PRON	SUCH-A	Case=Acc	20	det	_	_
-20	ósk	ósk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
-21	og	og	CCONJ	CONJ	_	23	cc	_	_
-22	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	23	aux	_	_
-23	haft	hafa	AUX	HVN	Tense=Past|VerbForm=Part	17	conj	_	_
-24	um	um	ADP	P	_	25	case	_	_
-25	það	það	PRON	PRO-A	Case=Acc	23	obl	_	_
-26	samráð	samráð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obj	_	_
-27	við	við	ADP	P	_	28	case	_	_
-28	eftirlitsnefndina	eftirlitsnefnd	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4762171,.3
-# X_ID = ID_missing_4
-# text = Ég áskil mér engu að síður rétt til þess eða fyrir hönd vina og vandamanna að fara ofan í saumana á því hvort til dæmis er endilega skynsamlegast að orða þetta svona frá byrjun, að þetta skuli veitt og það sé skylt í allt að tíu ár frá gildistöku laganna.
+# sent_id = G-33-4762171,.3
+# X_ID = ID_MISSING
+# text = og að sjálfsögðu tekur maður mark á því ef Samband íslenskra sveitarfélaga ber fram slíka ósk og hefur haft um það samráð við eftirlitsnefndina .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	að	að	ADV	P	_	4	advmod	_	_
+3	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Degree=Pos	2	amod	_	_
+4	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+5	maður	maður	PRON	MAN-N	_	4	nsubj	_	_
+6	mark	mark	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
+7	á	á	ADP	P	_	8	case	_	_
+8	því	það	PRON	PRO-D	Case=Dat	4	obl	_	_
+9	ef	ef	ADP	P	_	13	case	_	_
+10	Samband	samband	PROPN	NPR-N	_	13	nsubj	_	_
+11	íslenskra	íslenskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	12	amod	_	_
+12	sveitarfélaga	sveitarfélag	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	nmod:poss	_	_
+13	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	8	obl	_	_
+14	fram	fram	ADP	RP	_	13	compound:prt	_	_
+15	slíka	slíkur	PRON	SUCH-A	Case=Acc	16	det	_	_
+16	ósk	ósk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
+17	og	og	CCONJ	CONJ	_	19	cc	_	_
+18	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	19	aux	_	_
+19	haft	hafa	AUX	HVN	Tense=Past|VerbForm=Part	13	conj	_	_
+20	um	um	ADP	P	_	21	case	_	_
+21	það	það	PRON	PRO-A	Case=Acc	19	obl	_	_
+22	samráð	samráð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
+23	við	við	ADP	P	_	24	case	_	_
+24	eftirlitsnefndina	eftirlitsnefnd	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4762171,.4
+# X_ID = ID_MISSING
+# text = Ég áskil mér engu að síður rétt til þess eða fyrir hönd vina og vandamanna að fara ofan í saumana á því hvort til dæmis er endilega skynsamlegast að orða þetta svona frá byrjun, að þetta skuli veitt og það sé skylt í allt að tíu ár frá gildistöku laganna .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	áskil	áskilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mér	ég	PRON	PRO-D	Case=Dat	2	iobj	_	_
@@ -101,9 +105,9 @@
 51	laganna	lag	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	50	nmod:poss	_	SpaceAfter=No
 52	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4762171,.4
-# X_ID = ID_missing_5
-# text = Mér hefði fundist alveg koma til greina að skoða hvort þarna væri búið til eitthvað styttra aðlögunartímabil innan tímans.
+# sent_id = G-33-4762171,.5
+# X_ID = ID_MISSING
+# text = Mér hefði fundist alveg koma til greina að skoða hvort þarna væri búið til eitthvað styttra aðlögunartímabil innan tímans .
 1	Mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
 2	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	3	aux	_	_
 3	fundist	finna	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -125,9 +129,9 @@
 19	tímans	tími	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4762171,.5
-# X_ID = ID_missing_6
-# text = Það gefur augaleið að þetta mun þýða að samanburður á stöðu sveitarfélaganna verður ekki alveg jafn gagnsær og einfaldur þegar sum þeirra taka þetta með, þeim sem er það hagstætt eða þau sem eru hlutlaus af áhrifum fyrirtækja af þessu tagi, en hin gera það ekki.
+# sent_id = G-33-4762171,.6
+# X_ID = ID_MISSING
+# text = Það gefur augaleið að þetta mun þýða að samanburður á stöðu sveitarfélaganna verður ekki alveg jafn gagnsær og einfaldur þegar sum þeirra taka þetta með, þeim sem er það hagstætt eða þau sem eru hlutlaus af áhrifum fyrirtækja af þessu tagi, en hin gera það ekki .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	gefur	gefa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	augaleið	augaleið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
@@ -178,9 +182,9 @@
 48	ekki	ekki	ADV	NEG	_	46	advmod	_	SpaceAfter=No
 49	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4762171,.6
-# X_ID = ID_missing_7
-# text = Að sjálfsögðu getur verið viðkvæmt að fjalla um það hér úr ræðustóli Alþingis nákvæmlega hvaða sveitarfélög þetta hefur mest áhrif á.
+# sent_id = G-33-4762171,.7
+# X_ID = ID_MISSING
+# text = Að sjálfsögðu getur verið viðkvæmt að fjalla um það hér úr ræðustóli Alþingis nákvæmlega hvaða sveitarfélög þetta hefur mest áhrif á .
 1	Að	að	ADV	P	_	3	advmod	_	_
 2	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Degree=Pos	1	amod	_	_
 3	getur	geta	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -204,9 +208,9 @@
 21	á	á	ADP	P	_	18	obl	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4762171,.7
-# X_ID = ID_missing_8
-# text = Ég beini því til hv. nefndar að hún fái þá frekari upplýsingar um það og fari yfir það til að öllu sé til haga haldið og ekki sé verið að fara í breytingar af þessu tagi vegna óska frá einu eða tveimur sveitarfélögum heldur sé þetta sæmilega almenns eðlis.
+# sent_id = G-33-4762171,.8
+# X_ID = ID_MISSING
+# text = Ég beini því til hv. nefndar að hún fái þá frekari upplýsingar um það og fari yfir það til að öllu sé til haga haldið og ekki sé verið að fara í breytingar af þessu tagi vegna óska frá einu eða tveimur sveitarfélögum heldur sé þetta sæmilega almenns eðlis .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	beini	beina	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	því	það	PRON	PRO-D	Case=Dat	2	obj	_	_
@@ -258,9 +262,9 @@
 49	eðlis	eðli	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	46	xcomp	_	SpaceAfter=No
 50	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4762171,.8
-# X_IDs = ID_missing_9 ; ID_missing_10 ; ID_missing_11
-# text = Við fjárhagsvanda einstakra sveitarfélaga, sem er orðinn mikill og illviðráðanlegur af einhverjum sökum, verður að glíma á vettvangi þess sveitarfélags auðvitað en að mínu mati á einnig Samband íslenskra sveitarfélaga og sveitarfélögin að sýna samábyrgð við slíkar aðstæður og hefðu jafnvel mátt gera það betur þegar einn af litlu bræðrum sveitarfélaganna á höfuðborgarsvæðinu lenti í miklum hremmingum.
+# sent_id = G-33-4762171,.9
+# X_ID = ID_MISSING
+# text = Við fjárhagsvanda einstakra sveitarfélaga, sem er orðinn mikill og illviðráðanlegur af einhverjum sökum, verður að glíma á vettvangi þess sveitarfélags auðvitað
 1	Við	við	ADP	P	_	2	case	_	_
 2	fjárhagsvanda	fjárhagsvandi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	16	obl	_	_
 3	einstakra	einstakur	ADJ	ADJ-G	Case=Gen|Degree=Pos	4	amod	_	_
@@ -284,47 +288,52 @@
 21	þess	sá	DET	D-G	Case=Gen	22	det	_	_
 22	sveitarfélags	sveitarfélag	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	_
 23	auðvitað	auðvitað	ADV	ADV	Degree=Pos	16	advmod	_	_
-24	en	en	CCONJ	CONJ	_	28	cc	_	_
-25	að	að	ADP	P	_	27	case	_	_
-26	mínu	minn	PRON	PRO-D	Case=Dat	27	nmod:poss	_	_
-27	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	_
-28	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	16	conj	_	OriginalHead=0
-29	einnig	einnig	ADV	ALSO	_	28	advmod	_	_
-30	Samband	samband	PROPN	NPR-N	_	28	nsubj	_	_
-31	íslenskra	íslenskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	32	amod	_	_
-32	sveitarfélaga	sveitarfélag	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	30	nmod:poss	_	_
-33	og	og	CCONJ	CONJ	_	34	cc	_	_
-34	sveitarfélögin	sveitarfélag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	30	conj	_	_
-35	að	að	PART	TO	_	36	mark	_	_
-36	sýna	sýna	VERB	VB	VerbForm=Inf	28	xcomp	_	_
-37	samábyrgð	samábyrgð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	36	obj	_	_
-38	við	við	ADP	P	_	40	case	_	_
-39	slíkar	slíkur	PRON	SUCH-A	Case=Acc	40	det	_	_
-40	aðstæður	aðstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	28	obl	_	_
-41	og	og	CCONJ	CONJ	_	44	cc	_	_
-42	hefðu	hafa	AUX	HVDS	Mood=Sub|Tense=Past	44	aux	_	_
-43	jafnvel	jafnvel	ADV	ADV	Degree=Pos	44	advmod	_	_
-44	mátt	mega	VERB	VBN	Tense=Past|VerbForm=Part	16	conj	_	OriginalHead=0
-45	gera	gera	VERB	DO	VerbForm=Inf	44	xcomp	_	_
-46	það	það	PRON	PRO-A	Case=Acc	45	obj	_	_
-47	betur	vel	ADV	ADVR	Degree=Cmp	45	advmod	_	_
-48	þegar	þegar	ADP	P	_	56	case	_	_
-49	einn	einn	DET	ONE-N	Case=Nom	56	nsubj	_	_
-50	af	af	ADP	P	_	52	case	_	_
-51	litlu	lítill	ADJ	ADJ-D	Case=Dat|Degree=Pos	52	amod	_	_
-52	bræðrum	bróðir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	49	obl	_	_
-53	sveitarfélaganna	sveitarfélag	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	52	nmod:poss	_	_
-54	á	á	ADP	P	_	55	case	_	_
-55	höfuðborgarsvæðinu	höfuðborgarsvæði	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	53	obl	_	_
-56	lenti	lenda	VERB	VBDI	Mood=Ind|Tense=Past	44	obl	_	_
-57	í	í	ADP	P	_	59	case	_	_
-58	miklum	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	59	amod	_	_
-59	hremmingum	hremming	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	56	obl	_	SpaceAfter=No
-60	.	.	PUNCT	.	_	16	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4762171,.9
-# X_ID = ID_missing_12
-# text = Það þýðir ekki að ýta slíku Forseti hringir. inn í framtíðina með því að gefa eftir reglur sem eru almennt skynsamlegar og Forseti hringir. menn ættu að standa saman um að koma á.
+# sent_id = G-33-4762171,.10
+# X_ID = ID_MISSING
+# text = en að mínu mati á einnig Samband íslenskra sveitarfélaga og sveitarfélögin að sýna samábyrgð við slíkar aðstæður
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	að	að	ADP	P	_	4	case	_	_
+3	mínu	minn	PRON	PRO-D	Case=Dat	4	nmod:poss	_	_
+4	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+5	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+6	einnig	einnig	ADV	ALSO	_	5	advmod	_	_
+7	Samband	samband	PROPN	NPR-N	_	5	nsubj	_	_
+8	íslenskra	íslenskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	9	amod	_	_
+9	sveitarfélaga	sveitarfélag	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	nmod:poss	_	_
+10	og	og	CCONJ	CONJ	_	11	cc	_	_
+11	sveitarfélögin	sveitarfélag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	conj	_	_
+12	að	að	PART	TO	_	13	mark	_	_
+13	sýna	sýna	VERB	VB	VerbForm=Inf	5	xcomp	_	_
+14	samábyrgð	samábyrgð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
+15	við	við	ADP	P	_	17	case	_	_
+16	slíkar	slíkur	PRON	SUCH-A	Case=Acc	17	det	_	_
+17	aðstæður	aðstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
+
+# sent_id = G-33-4762171,.11
+# X_ID = ID_MISSING
+# text = og hefðu jafnvel mátt gera það betur þegar einn af litlu bræðrum sveitarfélaganna á höfuðborgarsvæðinu lenti í miklum hremmingum .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	hefðu	hafa	AUX	HVDS	Mood=Sub|Tense=Past	4	aux	_	_
+3	jafnvel	jafnvel	ADV	ADV	Degree=Pos	4	advmod	_	_
+4	mátt	mega	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	gera	gera	VERB	DO	VerbForm=Inf	4	xcomp	_	_
+6	það	það	PRON	PRO-A	Case=Acc	5	obj	_	_
+7	betur	vel	ADV	ADVR	Degree=Cmp	5	advmod	_	_
+8	þegar	þegar	ADP	P	_	16	case	_	_
+9	einn	einn	DET	ONE-N	Case=Nom	16	nsubj	_	_
+10	af	af	ADP	P	_	12	case	_	_
+11	litlu	lítill	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
+12	bræðrum	bróðir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	_
+13	sveitarfélaganna	sveitarfélag	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	nmod:poss	_	_
+14	á	á	ADP	P	_	15	case	_	_
+15	höfuðborgarsvæðinu	höfuðborgarsvæði	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+16	lenti	lenda	VERB	VBDI	Mood=Ind|Tense=Past	4	obl	_	_
+17	í	í	ADP	P	_	19	case	_	_
+18	miklum	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
+19	hremmingum	hremming	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	4	punct	_	_
+
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	þýðir	þýða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -332,7 +341,7 @@
 5	ýta	ýta	VERB	VB	VerbForm=Inf	2	xcomp	_	_
 6	slíku	slíkur	PRON	SUCH-D	Case=Dat	5	obj	_	_
 7	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
-8	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	5	dep	_	SpaceAfter=No
+8	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	5	dep	_	_
 9	.	.	PUNCT	.	_	8	punct	_	_
 10	inn	inn	ADP	RP	_	12	compound:prt	_	_
 11	í	í	ADP	P	_	12	case	_	_
@@ -349,7 +358,7 @@
 22	skynsamlegar	skynsamlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	18	acl:relcl	_	_
 23	og	og	CCONJ	CONJ	_	28	cc	_	_
 24	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	nsubj	_	_
-25	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	28	dep	_	SpaceAfter=No
+25	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	28	dep	_	_
 26	.	.	PUNCT	.	_	25	punct	_	_
 27	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	28	nsubj	_	_
 28	ættu	eiga	VERB	VBDS	Mood=Sub|Tense=Past	22	conj	_	_
@@ -359,6 +368,6 @@
 32	um	um	ADP	P	_	34	case	_	_
 33	að	að	PART	TO	_	34	mark	_	_
 34	koma	koma	VERB	VB	VerbForm=Inf	30	obl	_	_
-35	á	á	ADP	RP	_	34	compound:prt	_	SpaceAfter=No
+35	á	á	ADP	RP	_	34	compound:prt	_	_
 36	.	.	PUNCT	.	_	2	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2014_G-33-4587316,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Virðulegi forseti. Þetta er vissulega áhugavert sjónarmið hv. þingmanns og ég get skilið það sem hann segir hér.
+# sent_id = G-33-4587316,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Þetta er vissulega áhugavert sjónarmið hv. þingmanns
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -11,20 +11,24 @@
 8	sjónarmið	sjónarmið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 9	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	10	amod	_	_
 10	þingmanns	þingmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	nmod:poss	_	_
-11	og	og	CCONJ	CONJ	_	14	cc	_	_
-12	ég	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-13	get	geta	AUX	MDPI	Mood=Ind|Tense=Pres	14	aux	_	_
-14	skilið	skilja	VERB	VBN	Tense=Past|VerbForm=Part	8	conj	_	OriginalHead=0
-15	það	sá	DET	D-A	Case=Acc	14	obj	_	_
-16	sem	sem	SCONJ	C	_	18	mark	_	_
-17	hann	hann	PRON	PRO-N	Case=Nom	18	nsubj	_	_
-18	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	15	acl:relcl	_	_
-19	hér	hér	ADV	ADV	Degree=Pos	18	advmod	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4587316,.2
-# X_ID = ID_missing_3
-# text = Ég skil einfaldlega ekki að þessi boð til framkvæmdarvaldsins séu ekki nógu skýr.
+# sent_id = G-33-4587316,.2
+# X_ID = ID_MISSING
+# text = og ég get skilið það sem hann segir hér .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+3	get	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
+4	skilið	skilja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	það	sá	DET	D-A	Case=Acc	4	obj	_	_
+6	sem	sem	SCONJ	C	_	8	mark	_	_
+7	hann	hann	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+8	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	5	acl:relcl	_	_
+9	hér	hér	ADV	ADV	Degree=Pos	8	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4587316,.3
+# X_ID = ID_MISSING
+# text = Ég skil einfaldlega ekki að þessi boð til framkvæmdarvaldsins séu ekki nógu skýr .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -40,9 +44,9 @@
 13	skýr	skýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4587316,.3
-# X_ID = ID_missing_4
-# text = Ég er kannski eitthvað óþolinmóðari en hv. þingmaður út af því að þetta lá fyrir, þetta lá fyrir meira að segja vel fyrir kosningar.
+# sent_id = G-33-4587316,.4
+# X_ID = ID_MISSING
+# text = Ég er kannski eitthvað óþolinmóðari en hv. þingmaður út af því að þetta lá fyrir, þetta lá fyrir meira að segja vel fyrir kosningar .
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	kannski	kannski	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -70,9 +74,9 @@
 25	kosningar	kosning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	obl	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4587316,.4
-# X_IDs = ID_missing_5 ; ID_missing_6
-# text = Fyrir kosningar voru allir flokkar sammála um þetta og við heyrðum ýmis falleg kosningaloforð um að bjarga Landspítalanum og fara að byggja nýjan Landspítala hjá öllum flokkum.
+# sent_id = G-33-4587316,.5
+# X_ID = ID_MISSING
+# text = Fyrir kosningar voru allir flokkar sammála um þetta
 1	Fyrir	fyrir	ADP	P	_	2	case	_	_
 2	kosningar	kosning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	_
 3	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
@@ -81,39 +85,43 @@
 6	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 7	um	um	ADP	P	_	8	case	_	_
 8	þetta	þessi	DET	D-A	Case=Acc	6	obl	_	_
-9	og	og	CCONJ	CONJ	_	11	cc	_	_
-10	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-11	heyrðum	heyra	VERB	VBDI	Mood=Ind|Tense=Past	6	conj	_	OriginalHead=0
-12	ýmis	ýmis	DET	Q-A	Case=Acc	14	amod	_	_
-13	falleg	fallegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	14	amod	_	_
-14	kosningaloforð	kosningaloforð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
-15	um	um	ADP	P	_	17	case	_	_
-16	að	að	PART	TO	_	17	mark	_	_
-17	bjarga	bjarga	VERB	VB	VerbForm=Inf	14	obl	_	_
-18	Landspítalanum	landspítali	PROPN	NPR-D	_	17	obj	_	_
-19	og	og	CCONJ	CONJ	_	20	cc	_	_
-20	fara	fara	VERB	VB	VerbForm=Inf	17	xcomp	_	_
-21	að	að	PART	TO	_	22	mark	_	_
-22	byggja	byggja	VERB	VB	VerbForm=Inf	20	xcomp	_	_
-23	nýjan	nýr	ADJ	ADJ-A	Case=Acc|Degree=Pos	24	amod	_	_
-24	Landspítala	landspítali	PROPN	NPR-A	_	22	obj	_	_
-25	hjá	hjá	ADP	P	_	27	case	_	_
-26	öllum	allur	DET	Q-D	Case=Dat	27	amod	_	_
-27	flokkum	flokkur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4587316,.5
-# X_ID = ID_missing_7
-# text = Þetta var frekar skýrt.
+# sent_id = G-33-4587316,.6
+# X_ID = ID_MISSING
+# text = og við heyrðum ýmis falleg kosningaloforð um að bjarga Landspítalanum og fara að byggja nýjan Landspítala hjá öllum flokkum .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	heyrðum	heyra	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	ýmis	ýmis	DET	Q-A	Case=Acc	6	amod	_	_
+5	falleg	fallegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	6	amod	_	_
+6	kosningaloforð	kosningaloforð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	_
+7	um	um	ADP	P	_	9	case	_	_
+8	að	að	PART	TO	_	9	mark	_	_
+9	bjarga	bjarga	VERB	VB	VerbForm=Inf	6	obl	_	_
+10	Landspítalanum	landspítali	PROPN	NPR-D	_	9	obj	_	_
+11	og	og	CCONJ	CONJ	_	12	cc	_	_
+12	fara	fara	VERB	VB	VerbForm=Inf	9	xcomp	_	_
+13	að	að	PART	TO	_	14	mark	_	_
+14	byggja	byggja	VERB	VB	VerbForm=Inf	12	xcomp	_	_
+15	nýjan	nýr	ADJ	ADJ-A	Case=Acc|Degree=Pos	16	amod	_	_
+16	Landspítala	landspítali	PROPN	NPR-A	_	14	obj	_	_
+17	hjá	hjá	ADP	P	_	19	case	_	_
+18	öllum	allur	DET	Q-D	Case=Dat	19	amod	_	_
+19	flokkum	flokkur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4587316,.7
+# X_ID = ID_MISSING
+# text = Þetta var frekar skýrt .
 1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 3	frekar	frekar	ADV	ADVR	Degree=Cmp	4	amod	_	_
 4	skýrt	skýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4587316,.6
-# X_IDs = ID_missing_8 ; ID_missing_9
-# text = Kannski voru einhverjir innan einhverra flokka ekki búnir að tala sig saman, en það hefur held ég gerst núna.
+# sent_id = G-33-4587316,.8
+# X_ID = ID_MISSING
+# text = Kannski voru einhverjir innan einhverra flokka ekki búnir að tala sig saman,
 1	Kannski	kannski	ADV	ADV	Degree=Pos	8	advmod	_	_
 2	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	8	cop	_	_
 3	einhverjir	einhver	DET	Q-N	Case=Nom	8	nsubj	_	_
@@ -127,18 +135,22 @@
 11	sig	sig	PRON	PRO-A	Case=Acc	10	obj	_	_
 12	saman	saman	ADV	ADV	Degree=Pos	10	advmod	_	SpaceAfter=No
 13	,	,	PUNCT	,	_	8	punct	_	_
-14	en	en	CCONJ	CONJ	_	19	cc	_	_
-15	það	það	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-16	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	19	aux	_	_
-17	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	19	parataxis	_	_
-18	ég	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
-19	gerst	gera	VERB	DON	Tense=Past|VerbForm=Part	8	conj	_	OriginalHead=0
-20	núna	núna	ADV	ADV	Degree=Pos	19	advmod	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4587316,.7
-# X_IDs = ID_missing_10 ; ID_missing_11
-# text = Auðvitað þurfum við að eiga umræðuna til þess að það gerist, ég tek undir með þingmanninum með það.
+# sent_id = G-33-4587316,.9
+# X_ID = ID_MISSING
+# text = en það hefur held ég gerst núna .
+1	en	en	CCONJ	CONJ	_	6	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
+4	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	6	parataxis	_	_
+5	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+6	gerst	gera	VERB	DON	Tense=Past|VerbForm=Part	0	root	_	_
+7	núna	núna	ADV	ADV	Degree=Pos	6	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-33-4587316,.10
+# X_ID = ID_MISSING
+# text = Auðvitað þurfum við að eiga umræðuna til þess að það gerist,
 1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -151,18 +163,22 @@
 10	það	það	PRON	PRO-N	Case=Nom	11	nsubj	_	_
 11	gerist	gera	VERB	DOPS	Mood=Sub|Tense=Pres	8	ccomp	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	2	punct	_	_
-13	ég	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-14	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-15	undir	undir	ADP	RP	_	14	compound:prt	_	_
-16	með	með	ADP	P	_	17	case	_	_
-17	þingmanninum	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
-18	með	með	ADP	P	_	19	case	_	_
-19	það	það	PRON	PRO-A	Case=Acc	14	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4587316,.8
-# X_IDs = ID_missing_12 ; ID_missing_13
-# text = En ég er kannski bara óþolinmóðari en hv. þingmaður og get illa beðið því mér finnst skilaboðin hafa alltaf verið mjög skýr, ekki síst fyrir lok síðasta þings.
+# sent_id = G-33-4587316,.11
+# X_ID = ID_MISSING
+# text = ég tek undir með þingmanninum með það .
+1	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	undir	undir	ADP	RP	_	2	compound:prt	_	_
+4	með	með	ADP	P	_	5	case	_	_
+5	þingmanninum	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+6	með	með	ADP	P	_	7	case	_	_
+7	það	það	PRON	PRO-A	Case=Acc	2	obl	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4587316,.12
+# X_ID = ID_MISSING
+# text = En ég er kannski bara óþolinmóðari en hv. þingmaður
 1	En	en	CCONJ	CONJ	_	6	cc	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
@@ -172,31 +188,32 @@
 7	en	en	ADP	P	_	9	case	_	_
 8	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
 9	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	amod	_	_
-10	og	og	CCONJ	CONJ	_	13	cc	_	_
-11	get	geta	AUX	MDPI	Mood=Ind|Tense=Pres	13	aux	_	_
-12	illa	illa	ADV	ADV	Degree=Pos	13	advmod	_	_
-13	beðið	bíða	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	OriginalHead=0
-14	því	það	PRON	PRO-D	Case=Dat	13	obl	_	_
-15	mér	ég	PRON	PRO-D	Case=Dat	16	nsubj	_	_
-16	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	14	ccomp	_	_
-17	skilaboðin	skilaboð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	22	nsubj	_	_
-18	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	22	aux	_	_
-19	alltaf	alltaf	ADV	ADV	Degree=Pos	22	advmod	_	_
-20	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	22	cop	_	_
-21	mjög	mjög	ADV	ADV	Degree=Pos	22	amod	_	_
-22	skýr	skýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	16	xcomp	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	22	punct	_	_
-24	ekki	ekki	ADV	NEG	_	25	advmod	_	_
-25	síst	varla	ADV	ADVS	Degree=Sup	27	advmod	_	_
-26	fyrir	fyrir	ADP	P	_	27	case	_	_
-27	lok	lok	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obl	_	_
-28	síðasta	síðari	ADJ	ADJS-G	Case=Gen|Degree=Sup	29	amod	_	_
-29	þings	þing	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	27	nmod:poss	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4587316,.9
-# X_ID = ID_missing_14
-# text = Ég skil ekki eftir hverju hæstv. fjármálaráðherra og hæstv. heilbrigðisráðherra eru að bíða.
+# sent_id = G-33-4587316,.13
+# X_ID = ID_MISSING
+# text = og get illa beðið því mér finnst skilaboðin hafa alltaf verið mjög skýr, ekki síst fyrir lok síðasta þings .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	get	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
+3	illa	illa	ADV	ADV	Degree=Pos	4	advmod	_	_
+4	beðið	bíða	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	því	það	PRON	PRO-D	Case=Dat	4	obl	_	_
+6	mér	ég	PRON	PRO-D	Case=Dat	7	nsubj	_	_
+7	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	5	ccomp	_	_
+8	skilaboðin	skilaboð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	_
+9	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	13	aux	_	_
+10	alltaf	alltaf	ADV	ADV	Degree=Pos	13	advmod	_	_
+11	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	13	cop	_	_
+12	mjög	mjög	ADV	ADV	Degree=Pos	13	amod	_	_
+13	skýr	skýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	xcomp	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	ekki	ekki	ADV	NEG	_	16	advmod	_	_
+16	síst	varla	ADV	ADVS	Degree=Sup	18	advmod	_	_
+17	fyrir	fyrir	ADP	P	_	18	case	_	_
+18	lok	lok	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obl	_	_
+19	síðasta	síðari	ADJ	ADJS-G	Case=Gen|Degree=Sup	20	amod	_	_
+20	þings	þing	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	4	punct	_	_
+
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -209,6 +226,6 @@
 10	heilbrigðisráðherra	heilbrigðisráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	conj	_	_
 11	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
 12	að	að	PART	TO	_	13	mark	_	_
-13	bíða	bíða	VERB	VB	VerbForm=Inf	2	ccomp	_	SpaceAfter=No
+13	bíða	bíða	VERB	VB	VerbForm=Inf	2	ccomp	_	_
 14	.	.	PUNCT	.	_	2	punct	_	_
 

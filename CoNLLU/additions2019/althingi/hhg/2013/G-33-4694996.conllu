@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4694996,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Mér líst vel á þetta almennt.
+# sent_id = G-33-4694996,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Mér líst vel á þetta almennt .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -12,9 +12,9 @@
 9	almennt	almennt	ADV	ADV	Degree=Pos	5	advmod	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4694996,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Ég skil reyndar ekki alveg hvers vegna þetta ættu að vera aðskildar stofnanir en þykir þetta almennt til bóta.
+# sent_id = G-33-4694996,.2
+# X_ID = ID_MISSING
+# text = Ég skil reyndar ekki alveg hvers vegna þetta ættu að vera aðskildar stofnanir
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	reyndar	reyndar	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -28,17 +28,21 @@
 11	vera	vera	AUX	BE	VerbForm=Inf	13	cop	_	_
 12	aðskildar	aðskilinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	13	amod	_	_
 13	stofnanir	stofnun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	xcomp	_	_
-14	en	en	CCONJ	CONJ	_	15	cc	_	_
-15	þykir	þykja	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-16	þetta	þessi	DET	D-N	Case=Nom	15	xcomp	_	_
-17	almennt	almennt	ADV	ADV	Degree=Pos	16	advmod	_	_
-18	til	til	ADP	P	_	19	case	_	_
-19	bóta	bót	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	16	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4694996,.3
-# X_ID = ID_missing_4
-# text = En ég er með þrjár spurningar frekar en kannski gagnrýni.
+# sent_id = G-33-4694996,.3
+# X_ID = ID_MISSING
+# text = en þykir þetta almennt til bóta .
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	þykir	þykja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	þetta	þessi	DET	D-N	Case=Nom	2	xcomp	_	_
+4	almennt	almennt	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	til	til	ADP	P	_	6	case	_	_
+6	bóta	bót	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4694996,.4
+# X_ID = ID_MISSING
+# text = En ég er með þrjár spurningar frekar en kannski gagnrýni .
 1	En	en	CCONJ	CONJ	_	6	cc	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
@@ -51,9 +55,9 @@
 10	gagnrýni	gagnrýni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4694996,.4
-# X_ID = ID_missing_5
-# text = Mér sýnist Neytendastofa ekki taka við öllum réttindum eða störfum talsmanns neytenda.
+# sent_id = G-33-4694996,.5
+# X_ID = ID_MISSING
+# text = Mér sýnist Neytendastofa ekki taka við öllum réttindum eða störfum talsmanns neytenda .
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	obj	_	_
 2	sýnist	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	Neytendastofa	neytendastofa	PROPN	NPR-N	_	5	nsubj	_	_
@@ -68,9 +72,9 @@
 12	neytenda	neytandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	nmod:poss	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4694996,.5
-# X_ID = ID_missing_6
-# text = Þá sé ég ekki að Neytendastofa geti kallað eftir sömu gögnum og talsmanni neytenda er sérstaklega gert kleift að kalla eftir samkvæmt 8. gr. laga 63/2005.
+# sent_id = G-33-4694996,.6
+# X_ID = ID_MISSING
+# text = Þá sé ég ekki að Neytendastofa geti kallað eftir sömu gögnum og talsmanni neytenda er sérstaklega gert kleift að kalla eftir samkvæmt 8. gr. laga 63/2005 .
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	sé	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -99,9 +103,9 @@
 26	63/2005	63/2005	NUM	NUM	_	25	nmod:poss	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4694996,.6
-# X_ID = ID_missing_7
-# text = Það er ein af þeim greinum sem eru felldar út með frumvarpinu.
+# sent_id = G-33-4694996,.7
+# X_ID = ID_MISSING
+# text = Það er ein af þeim greinum sem eru felldar út með frumvarpinu .
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	ein	einn	DET	ONE-N	Case=Nom	0	root	_	_
@@ -116,9 +120,9 @@
 12	frumvarpinu	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4694996,.7
-# X_ID = ID_missing_8
-# text = Mig langar að vita hvort til komi að Neytendastofa hafi einhverjar slíkar heimildir.
+# sent_id = G-33-4694996,.8
+# X_ID = ID_MISSING
+# text = Mig langar að vita hvort til komi að Neytendastofa hafi einhverjar slíkar heimildir .
 1	Mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
 2	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -134,9 +138,9 @@
 13	heimildir	heimild	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4694996,.8
-# X_ID = ID_missing_9
-# text = Ég sé ekki heldur skýrt að Neytendastofa geti með þessum breytingum tekið við kvörtunum á sama hátt og talsmanni neytenda er ætlað að gera samkvæmt gömlu lögunum þótt vissulega sé í 4. gr. gömlu laganna svokölluð áfrýjunarnefnd neytendamála en hún virðist bara taka á stjórnvaldsákvörðunum en ekki taka við kvörtun frá neytendum.
+# sent_id = G-33-4694996,.9
+# X_ID = ID_MISSING
+# text = Ég sé ekki heldur skýrt að Neytendastofa geti með þessum breytingum tekið við kvörtunum á sama hátt og talsmanni neytenda er ætlað að gera samkvæmt gömlu lögunum þótt vissulega sé í 4. gr. gömlu laganna svokölluð áfrýjunarnefnd neytendamála en hún virðist bara taka á stjórnvaldsákvörðunum en ekki taka við kvörtun frá neytendum .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	sé	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -191,9 +195,9 @@
 52	neytendum	neytandi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	50	obl	_	SpaceAfter=No
 53	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4694996,.9
-# X_ID = ID_missing_10
-# text = Þannig að ég velti fyrir mér hvort einhver prósess sé annaðhvort innbyggður í þetta eða ætlaður til að meðhöndla það.
+# sent_id = G-33-4694996,.10
+# X_ID = ID_MISSING
+# text = Þannig að ég velti fyrir mér hvort einhver prósess sé annaðhvort innbyggður í þetta eða ætlaður til að meðhöndla það .
 1	Þannig	þannig	ADV	ADV	Degree=Pos	0	root	_	_
 2	að	að	SCONJ	C	_	4	mark	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -216,9 +220,9 @@
 20	það	það	PRON	PRO-A	Case=Acc	19	obj	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4694996,.10
-# X_ID = ID_missing_11
-# text = Í þriðja lagi tek ég eftir því að talsmanni neytenda er ætlað sjálfstæði alveg sérstaklega samkvæmt 10. gr. gömlu laganna sem er felld út samkvæmt 3. gr. nýju tillögunnar á meðan í 2. gr. að nýju lögunum stendur sérstaklega að forstjóri beri ábyrgð á að starfsemi og rekstur stofnunarinnar sé í samræmi við lög og stjórnvaldsfyrirmæli.
+# sent_id = G-33-4694996,.11
+# X_ID = ID_MISSING
+# text = Í þriðja lagi tek ég eftir því að talsmanni neytenda er ætlað sjálfstæði alveg sérstaklega samkvæmt 10. gr. gömlu laganna sem er felld út samkvæmt 3. gr. nýju tillögunnar á meðan í 2. gr. að nýju lögunum stendur sérstaklega að forstjóri beri ábyrgð á að starfsemi og rekstur stofnunarinnar sé í samræmi við lög og stjórnvaldsfyrirmæli .
 1	Í	í	ADP	P	_	3	case	_	_
 2	þriðja	þriðji	ADJ	ADJ-D	Case=Dat|Degree=Pos	3	amod	_	_
 3	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
@@ -277,9 +281,6 @@
 56	stjórnvaldsfyrirmæli	stjórnvaldsfyrirmæli	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	54	conj	_	SpaceAfter=No
 57	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4694996,.11
-# X_ID = ID_missing_12
-# text = Ég velti fyrir mér viðbrögðum hæstv. ráðherra við þessum spurningum.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -289,6 +290,6 @@
 7	ráðherra	ráðherra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
 8	við	við	ADP	P	_	10	case	_	_
 9	þessum	þessi	DET	D-D	Case=Dat	10	det	_	_
-10	spurningum	spurning	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
+10	spurningum	spurning	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
 11	.	.	PUNCT	.	_	2	punct	_	_
 

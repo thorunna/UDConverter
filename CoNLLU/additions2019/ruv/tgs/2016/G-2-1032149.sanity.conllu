@@ -1,6 +1,6 @@
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.1
-# X_ID = ID_missing_1
-# text = „ Þetta var alveg jafn æðislegt að standa á pallinum eins og í fyrsta skiptið.
+# sent_id = G-2-1032149.SANITY,.1
+# X_ID = ID_MISSING
+# text = „ Þetta var alveg jafn æðislegt að standa á pallinum eins og í fyrsta skiptið .
 1	„	„	PUNCT	"	_	6	punct	_	_
 2	Þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
@@ -18,9 +18,9 @@
 15	skiptið	skipti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.2
-# X_ID = ID_missing_2
-# text = Að fá þessar auka fimm mínútur á pallinum var bara frábært,“ sagði Hrafnhildur Lúthersdóttir við RÚV eftir að hún var komin með bronsverðlaunapeninginn um hálsinn fyrir frammistöðu sína í 200 m bringusundi á EM í 50 m laug í London í kvöld.
+# sent_id = G-2-1032149.SANITY,.2
+# X_ID = ID_MISSING
+# text = Að fá þessar auka fimm mínútur á pallinum var bara frábært, “ sagði Hrafnhildur Lúthersdóttir við RÚV eftir að hún var komin með bronsverðlaunapeninginn um hálsinn fyrir frammistöðu sína í 200 m bringusundi á EM í 50 m laug í London í kvöld .
 1	Að	að	PART	TO	_	2	mark	_	_
 2	fá	fá	VERB	VB	VerbForm=Inf	11	xcomp	_	_
 3	þessar	þessi	DET	D-A	Case=Acc	4	det	_	_
@@ -67,9 +67,9 @@
 44	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	42	obl	_	SpaceAfter=No
 45	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Hrafnhildur bætti bronsinu í verðlaunasafn sitt, en hún vann til silfurverðlauna í 100 m bringusundi á EM í fyrrakvöld.
+# sent_id = G-2-1032149.SANITY,.3
+# X_ID = ID_MISSING
+# text = Hrafnhildur bætti bronsinu í verðlaunasafn sitt,
 1	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	2	nsubj	_	_
 2	bætti	bæta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	bronsinu	brons	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	_
@@ -77,24 +77,28 @@
 5	verðlaunasafn	verðlaunasafn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 6	sitt	sinn	PRON	PRO-A	Case=Acc	5	nmod:poss	_	SpaceAfter=No
 7	,	,	PUNCT	,	_	2	punct	_	_
-8	en	en	CCONJ	CONJ	_	10	cc	_	_
-9	hún	hún	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-10	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-11	til	til	ADP	P	_	12	case	_	_
-12	silfurverðlauna	silfurverðlaun	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	obl	_	_
-13	í	í	ADP	P	_	16	case	_	_
-14	100	hundrað	NUM	NUM-G	Case=Gen	15	nummod	_	_
-15	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	16	nmod:poss	_	_
-16	bringusundi	bringusund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
-17	á	á	ADP	P	_	18	case	_	_
-18	EM	em	PROPN	NPR-D	_	10	obl	_	_
-19	í	í	ADP	P	_	20	case	_	_
-20	fyrrakvöld	fyrrakvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.4
-# X_ID = ID_missing_5
-# text = „ Þetta er aðeins raunverulegra en þegar ég stóð á pallinum síðast.
+# sent_id = G-2-1032149.SANITY,.4
+# X_ID = ID_MISSING
+# text = en hún vann til silfurverðlauna í 100 m bringusundi á EM í fyrrakvöld .
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	hún	hún	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	til	til	ADP	P	_	5	case	_	_
+5	silfurverðlauna	silfurverðlaun	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	obl	_	_
+6	í	í	ADP	P	_	9	case	_	_
+7	100	hundrað	NUM	NUM-G	Case=Gen	8	nummod	_	_
+8	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	nmod:poss	_	_
+9	bringusundi	bringusund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	EM	em	PROPN	NPR-D	_	3	obl	_	_
+12	í	í	ADP	P	_	13	case	_	_
+13	fyrrakvöld	fyrrakvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-2-1032149.SANITY,.5
+# X_ID = ID_MISSING
+# text = „ Þetta er aðeins raunverulegra en þegar ég stóð á pallinum síðast .
 1	„	„	PUNCT	"	_	5	punct	_	_
 2	Þetta	þessi	DET	D-N	Case=Nom	5	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -109,18 +113,18 @@
 12	síðast	síðar	ADV	ADVS	Degree=Sup	9	advmod	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.5
-# X_ID = ID_missing_6
-# text = En samt eiginlega ekki.
+# sent_id = G-2-1032149.SANITY,.6
+# X_ID = ID_MISSING
+# text = En samt eiginlega ekki .
 1	En	en	CCONJ	CONJ	_	2	cc	_	_
 2	samt	samt	ADV	ADV	Degree=Pos	0	root	_	_
 3	eiginlega	eiginlega	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	ekki	ekki	ADV	NEG	_	2	advmod	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.6
-# X_ID = ID_missing_7
-# text = Þetta er eins og í draumi.
+# sent_id = G-2-1032149.SANITY,.7
+# X_ID = ID_MISSING
+# text = Þetta er eins og í draumi .
 1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	eins	_	ADV	ADVR	Degree=Cmp	0	root	_	_
@@ -129,9 +133,9 @@
 6	draumi	draumur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	conj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.7
-# X_ID = ID_missing_8
-# text = Ég er samt svo fegin að vera búin með 200 m bringusundið.
+# sent_id = G-2-1032149.SANITY,.8
+# X_ID = ID_MISSING
+# text = Ég er samt svo fegin að vera búin með 200 m bringusundið .
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	samt	samt	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -146,9 +150,9 @@
 12	bringusundið	bringusund	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.8
-# X_ID = ID_missing_9
-# text = Þetta er svo erfitt sund.
+# sent_id = G-2-1032149.SANITY,.9
+# X_ID = ID_MISSING
+# text = Þetta er svo erfitt sund .
 1	Þetta	þessi	DET	D-N	Case=Nom	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -156,18 +160,18 @@
 5	sund	sund	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	xcomp	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.9
-# X_ID = ID_missing_10
-# text = Ég er bara dauð.
+# sent_id = G-2-1032149.SANITY,.10
+# X_ID = ID_MISSING
+# text = Ég er bara dauð .
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	bara	bara	ADV	FP	Degree=Pos	4	advmod	_	_
 4	dauð	dauður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.10
-# X_ID = ID_missing_11
-# text = Þannig núna er bara gaman, því ég á bara 50 m bringusund eftir og það er bara ein ferð.
+# sent_id = G-2-1032149.SANITY,.11
+# X_ID = ID_MISSING
+# text = Þannig núna er bara gaman, því ég á bara 50 m bringusund eftir og það er bara ein ferð .
 1	Þannig	þannig	ADV	ADV	Degree=Pos	0	root	_	_
 2	núna	núna	ADV	ADV	Degree=Pos	5	advmod	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -190,9 +194,9 @@
 20	ferð	ferð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	xcomp	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.11
-# X_ID = ID_missing_12
-# text = En ég er alveg rosalega ánægð með þetta allt“ sagði Hrafnhildur Lúthersdóttir.
+# sent_id = G-2-1032149.SANITY,.12
+# X_ID = ID_MISSING
+# text = En ég er alveg rosalega ánægð með þetta allt “ sagði Hrafnhildur Lúthersdóttir .
 1	En	en	CCONJ	CONJ	_	6	cc	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
@@ -208,9 +212,9 @@
 13	Lúthersdóttir	lúthersdóttir	PROPN	NPR-N	_	12	flat:name	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.12
-# X_ID = ID_missing_13
-# text = „ Þetta er frábær reynsla fyrir Ólympíuleikana í Ríó.
+# sent_id = G-2-1032149.SANITY,.13
+# X_ID = ID_MISSING
+# text = „ Þetta er frábær reynsla fyrir Ólympíuleikana í Ríó .
 1	„	„	PUNCT	"	_	2	punct	_	_
 2	Þetta	þessi	DET	D-N	Case=Nom	0	root	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
@@ -222,9 +226,9 @@
 9	Ríó	ríó	PROPN	NPR-D	_	7	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.13
-# X_IDs = ID_missing_14 ; ID_missing_15
-# text = Og að synda með stærstu nöfnunum sem ég hef alltaf litið upp til, og meira að segja vinna sumar af þeim sendir mig mikið sjálfsöruggari til Ríó og ég bara get ekki beðið“ sagði Hrafnhildur sem er á leið á sína aðra Ólympíuleika.
+# sent_id = G-2-1032149.SANITY,.14
+# X_ID = ID_MISSING
+# text = Og að synda með stærstu nöfnunum sem ég hef alltaf litið upp til, og meira að segja vinna sumar af þeim sendir mig mikið sjálfsöruggari til Ríó
 1	Og	og	CCONJ	CONJ	_	23	cc	_	_
 2	að	að	PART	TO	_	3	mark	_	_
 3	synda	synda	VERB	VB	VerbForm=Inf	23	xcomp	_	_
@@ -253,28 +257,32 @@
 26	sjálfsöruggari	sjálfsöruggur	ADJ	ADJR-A	Case=Acc|Degree=Cmp	25	amod	_	_
 27	til	til	ADP	P	_	28	case	_	_
 28	Ríó	ríó	PROPN	NPR-G	_	23	obl	_	_
-29	og	og	CCONJ	CONJ	_	34	cc	_	_
-30	ég	ég	PRON	PRO-N	Case=Nom	34	nsubj	_	_
-31	bara	bara	ADV	FP	Degree=Pos	34	advmod	_	_
-32	get	geta	AUX	MDPI	Mood=Ind|Tense=Pres	34	aux	_	_
-33	ekki	ekki	ADV	NEG	_	34	advmod	_	_
-34	beðið	bíða	VERB	VBN	Tense=Past|VerbForm=Part	23	conj	_	OriginalHead=0|SpaceAfter=No
-35	“	“	PUNCT	"	_	23	punct	_	_
-36	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	34	parataxis	_	_
-37	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	36	nsubj	_	_
-38	sem	sem	SCONJ	C	_	41	mark	_	_
-39	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	41	cop	_	_
-40	á	á	ADP	P	_	41	case	_	_
-41	leið	leið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	37	acl:relcl	_	_
-42	á	á	ADP	P	_	45	case	_	_
-43	sína	sinn	PRON	PRO-A	Case=Acc	45	nmod:poss	_	_
-44	aðra	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	45	amod	_	_
-45	Ólympíuleika	ólympíuleikar	PROPN	NPRS-A	_	41	obl	_	SpaceAfter=No
-46	.	.	PUNCT	.	_	23	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.14
-# X_IDs = ID_missing_16 ; ID_missing_17
-# text = Hún keppt fyrst á Ólympíuleikunum í London 2012, en komst ekki upp úr undanrásum í neinni grein þar.
+# sent_id = G-2-1032149.SANITY,.15
+# X_ID = ID_MISSING
+# text = og ég bara get ekki beðið “ sagði Hrafnhildur sem er á leið á sína aðra Ólympíuleika .
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+3	bara	bara	ADV	FP	Degree=Pos	6	advmod	_	_
+4	get	geta	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
+5	ekki	ekki	ADV	NEG	_	6	advmod	_	_
+6	beðið	bíða	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+7	“	“	PUNCT	"	_	6	punct	_	_
+8	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	6	parataxis	_	_
+9	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	8	nsubj	_	_
+10	sem	sem	SCONJ	C	_	13	mark	_	_
+11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
+12	á	á	ADP	P	_	13	case	_	_
+13	leið	leið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	acl:relcl	_	_
+14	á	á	ADP	P	_	17	case	_	_
+15	sína	sinn	PRON	PRO-A	Case=Acc	17	nmod:poss	_	_
+16	aðra	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	17	amod	_	_
+17	Ólympíuleika	ólympíuleikar	PROPN	NPRS-A	_	13	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-2-1032149.SANITY,.16
+# X_ID = ID_MISSING
+# text = Hún keppt fyrst á Ólympíuleikunum í London 2012,
 1	Hún	hún	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	keppt	keppa	X	X	_	5	dep	_	_
 3	fyrst	snemma	ADV	ADVS	Degree=Sup	5	advmod	_	_
@@ -284,21 +292,25 @@
 7	London	london	ADV	ADV	Degree=Pos	8	advmod	_	_
 8	2012	2012	NUM	NUM-A	Case=Acc	5	obl	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	5	punct	_	_
-10	en	en	CCONJ	CONJ	_	11	cc	_	_
-11	komst	koma	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
-12	ekki	ekki	ADV	NEG	_	11	advmod	_	_
-13	upp	upp	ADP	RP	_	15	compound:prt	_	_
-14	úr	úr	ADP	P	_	15	case	_	_
-15	undanrásum	undanrás	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obl	_	_
-16	í	í	ADP	P	_	18	case	_	_
-17	neinni	neinn	DET	Q-D	Case=Dat	18	amod	_	_
-18	grein	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
-19	þar	þar	ADV	ADV	Degree=Pos	18	advmod	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.15
-# X_IDs = ID_missing_18 ; ID_missing_19
-# text = „ Mér hefur alltaf fundist skemmtilegra að synda 100 m bringusundið, en allir þjálfarar hafa sagt að 200 m bringusundið eigi betur við mig af því ég renn svo vel.
+# sent_id = G-2-1032149.SANITY,.17
+# X_ID = ID_MISSING
+# text = en komst ekki upp úr undanrásum í neinni grein þar .
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	komst	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
+4	upp	upp	ADP	RP	_	6	compound:prt	_	_
+5	úr	úr	ADP	P	_	6	case	_	_
+6	undanrásum	undanrás	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
+7	í	í	ADP	P	_	9	case	_	_
+8	neinni	neinn	DET	Q-D	Case=Dat	9	amod	_	_
+9	grein	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+10	þar	þar	ADV	ADV	Degree=Pos	9	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1032149.SANITY,.18
+# X_ID = ID_MISSING
+# text = „ Mér hefur alltaf fundist skemmtilegra að synda 100 m bringusundið,
 1	„	„	PUNCT	"	_	5	punct	_	_
 2	Mér	ég	PRON	PRO-D	Case=Dat	5	nsubj	_	_
 3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
@@ -311,30 +323,34 @@
 10	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	nmod:poss	_	_
 11	bringusundið	bringusund	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	5	punct	_	_
-13	en	en	CCONJ	CONJ	_	17	cc	_	_
-14	allir	allur	DET	Q-N	Case=Nom	15	amod	_	_
-15	þjálfarar	þjálfari	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	nsubj	_	_
-16	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	17	aux	_	_
-17	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
-18	að	að	SCONJ	C	_	22	mark	_	_
-19	200	200	NUM	NUM-G	Case=Gen	20	nummod	_	_
-20	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	21	nmod:poss	_	_
-21	bringusundið	bringusund	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	nsubj	_	_
-22	eigi	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	17	ccomp	_	_
-23	betur	vel	ADV	ADVR	Degree=Cmp	22	advmod	_	_
-24	við	við	ADP	P	_	25	case	_	_
-25	mig	ég	PRON	PRO-A	Case=Acc	22	obl	_	_
-26	af	af	ADP	P	_	27	case	_	_
-27	því	það	PRON	PRO-D	Case=Dat	22	obl	_	_
-28	ég	ég	PRON	PRO-N	Case=Nom	29	nsubj	_	_
-29	renn	renna	VERB	VBPI	Mood=Ind|Tense=Pres	27	ccomp	_	_
-30	svo	svo	ADV	ADV	Degree=Pos	29	advmod	_	_
-31	vel	vel	ADV	ADV	Degree=Pos	30	advmod	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.16
-# X_ID = ID_missing_20
-# text = En mér þykir 100 m bringusundið skemmtilegra af því það er styttra.
+# sent_id = G-2-1032149.SANITY,.19
+# X_ID = ID_MISSING
+# text = en allir þjálfarar hafa sagt að 200 m bringusundið eigi betur við mig af því ég renn svo vel .
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	allir	allur	DET	Q-N	Case=Nom	3	amod	_	_
+3	þjálfarar	þjálfari	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
+4	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
+5	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	að	að	SCONJ	C	_	10	mark	_	_
+7	200	200	NUM	NUM-G	Case=Gen	8	nummod	_	_
+8	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	nmod:poss	_	_
+9	bringusundið	bringusund	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+10	eigi	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	5	ccomp	_	_
+11	betur	vel	ADV	ADVR	Degree=Cmp	10	advmod	_	_
+12	við	við	ADP	P	_	13	case	_	_
+13	mig	ég	PRON	PRO-A	Case=Acc	10	obl	_	_
+14	af	af	ADP	P	_	15	case	_	_
+15	því	það	PRON	PRO-D	Case=Dat	10	obl	_	_
+16	ég	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
+17	renn	renna	VERB	VBPI	Mood=Ind|Tense=Pres	15	ccomp	_	_
+18	svo	svo	ADV	ADV	Degree=Pos	17	advmod	_	_
+19	vel	vel	ADV	ADV	Degree=Pos	18	advmod	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-2-1032149.SANITY,.20
+# X_ID = ID_MISSING
+# text = En mér þykir 100 m bringusundið skemmtilegra af því það er styttra .
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
 3	þykir	þykja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -349,9 +365,9 @@
 12	styttra	stuttur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	9	ccomp	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.17
-# X_IDs = ID_missing_21 ; ID_missing_22
-# text = En ég held að ég sé nokkuð jöfn í þessum greinum og það er mjög gott að vita.
+# sent_id = G-2-1032149.SANITY,.21
+# X_ID = ID_MISSING
+# text = En ég held að ég sé nokkuð jöfn í þessum greinum
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -363,18 +379,22 @@
 9	í	í	ADP	P	_	11	case	_	_
 10	þessum	þessi	DET	D-D	Case=Dat	11	det	_	_
 11	greinum	grein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
-12	og	og	CCONJ	CONJ	_	16	cc	_	_
-13	það	það	PRON	PRO-N	Case=Nom	16	nsubj	_	_
-14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
-15	mjög	mjög	ADV	ADV	Degree=Pos	16	amod	_	_
-16	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0
-17	að	að	PART	TO	_	18	mark	_	_
-18	vita	vita	VERB	VB	VerbForm=Inf	16	amod	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.18
-# X_ID = ID_missing_23
-# text = Þá ég ég kannski bara nokkuð jafna möguleika í báðum þessum greinum þegar ég fer til Ríó“ sagði Hrafnhildur.
+# sent_id = G-2-1032149.SANITY,.22
+# X_ID = ID_MISSING
+# text = og það er mjög gott að vita .
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	mjög	mjög	ADV	ADV	Degree=Pos	5	amod	_	_
+5	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	vita	vita	VERB	VB	VerbForm=Inf	5	amod	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-2-1032149.SANITY,.23
+# X_ID = ID_MISSING
+# text = Þá ég ég kannski bara nokkuð jafna möguleika í báðum þessum greinum þegar ég fer til Ríó “ sagði Hrafnhildur .
 1	Þá	þá	ADV	ADV	Degree=Pos	19	advmod	_	_
 2	ég	ég	X	X	_	19	dep	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
@@ -397,9 +417,9 @@
 20	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	19	nsubj	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	19	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.19
-# X_IDs = ID_missing_24 ; ID_missing_25
-# text = Heillaóskum rigndi yfir Hrafnhildi á samfélagsmiðlum þegar hún vann silfurverðlaunin í 100 m bringusundinu í fyrrakvöld og hún er þakklát fyrir heillaóskirnar.
+# sent_id = G-2-1032149.SANITY,.24
+# X_ID = ID_MISSING
+# text = Heillaóskum rigndi yfir Hrafnhildi á samfélagsmiðlum þegar hún vann silfurverðlaunin í 100 m bringusundinu í fyrrakvöld
 1	Heillaóskum	heillaósk	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	nsubj	_	_
 2	rigndi	rigna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	yfir	yfir	ADP	P	_	4	case	_	_
@@ -416,17 +436,21 @@
 14	bringusundinu	bringusund	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
 15	í	í	ADP	P	_	16	case	_	_
 16	fyrrakvöld	fyrrakvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
-17	og	og	CCONJ	CONJ	_	20	cc	_	_
-18	hún	hún	PRON	PRO-N	Case=Nom	20	nsubj	_	_
-19	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
-20	þakklát	þakklátur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
-21	fyrir	fyrir	ADP	P	_	22	case	_	_
-22	heillaóskirnar	heillaósk	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	20	amod	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.20
-# X_ID = ID_missing_26
-# text = „ Vonandi verða þær bara jafn margar núna.
+# sent_id = G-2-1032149.SANITY,.25
+# X_ID = ID_MISSING
+# text = og hún er þakklát fyrir heillaóskirnar .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	hún	hún	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+4	þakklát	þakklátur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+5	fyrir	fyrir	ADP	P	_	6	case	_	_
+6	heillaóskirnar	heillaósk	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	amod	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-2-1032149.SANITY,.26
+# X_ID = ID_MISSING
+# text = „ Vonandi verða þær bara jafn margar núna .
 1	„	„	PUNCT	"	_	3	punct	_	_
 2	Vonandi	vonandi	ADV	ADV	Degree=Pos	3	advmod	_	_
 3	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -437,9 +461,9 @@
 8	núna	núna	ADV	ADV	Degree=Pos	3	advmod	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.21
-# X_ID = ID_missing_27
-# text = Það er æðislegt að finna stuðninginn frá Íslandi og svo gaman að sjá hvað fólk fylgist vel með.
+# sent_id = G-2-1032149.SANITY,.27
+# X_ID = ID_MISSING
+# text = Það er æðislegt að finna stuðninginn frá Íslandi og svo gaman að sjá hvað fólk fylgist vel með .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	æðislegt	æðislegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -460,9 +484,9 @@
 18	með	með	ADP	RP	_	16	compound:prt	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.22
-# X_ID = ID_missing_28
-# text = Ég vona bara að þetta verði til þess að lyfta upp sundmenninguni á Íslandi og hvetji aðra sundmenn til dáða.
+# sent_id = G-2-1032149.SANITY,.28
+# X_ID = ID_MISSING
+# text = Ég vona bara að þetta verði til þess að lyfta upp sundmenninguni á Íslandi og hvetji aðra sundmenn til dáða .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
@@ -485,9 +509,9 @@
 20	dáða	dáð	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	16	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.23
-# X_ID = ID_missing_29
-# text = Þetta sýnir bara að við Íslendingar getum þetta alveg,“ sagði Hrafnhildur.
+# sent_id = G-2-1032149.SANITY,.29
+# X_ID = ID_MISSING
+# text = Þetta sýnir bara að við Íslendingar getum þetta alveg, “ sagði Hrafnhildur .
 1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	sýnir	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
@@ -503,9 +527,9 @@
 13	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	12	nsubj	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.24
-# X_ID = ID_missing_30
-# text = Hrafnhildur segir mjög mikilvægt fyrir sig að hafa endurtekið leikinn frá því í fyrrakvöld og komist aftur á verðlaunapall.
+# sent_id = G-2-1032149.SANITY,.30
+# X_ID = ID_MISSING
+# text = Hrafnhildur segir mjög mikilvægt fyrir sig að hafa endurtekið leikinn frá því í fyrrakvöld og komist aftur á verðlaunapall .
 1	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	2	nsubj	_	_
 2	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -527,9 +551,9 @@
 19	verðlaunapall	verðlaunapallur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.25
-# X_ID = ID_missing_31
-# text = „ Þessi verðlaun í kvöld staðfesta að ég er komin til að vera að þetta hafi ekki bara verið eitt gott sund sem ég náði í fyrrakvöld.
+# sent_id = G-2-1032149.SANITY,.31
+# X_ID = ID_MISSING
+# text = „ Þessi verðlaun í kvöld staðfesta að ég er komin til að vera að þetta hafi ekki bara verið eitt gott sund sem ég náði í fyrrakvöld .
 1	„	„	PUNCT	"	_	6	punct	_	_
 2	Þessi	þessi	DET	D-N	Case=Nom	3	det	_	_
 3	verðlaun	verðlaun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
@@ -559,9 +583,9 @@
 27	fyrrakvöld	fyrrakvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.26
-# X_IDs = ID_missing_32 ; ID_missing_33
-# text = Ég er greinilega í mjög góðu formi og er að sýna það,“ sagði Hrafnhildur sem segir bronsverðlaunin í kvöld skipta sig jafn miklu máli og silfurverðlaunin á miðvikudagskvöld.
+# sent_id = G-2-1032149.SANITY,.32
+# X_ID = ID_MISSING
+# text = Ég er greinilega í mjög góðu formi
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	greinilega	greinilega	ADV	ADV	Degree=Pos	0	root	_	_
@@ -569,34 +593,35 @@
 5	mjög	mjög	ADV	ADV	Degree=Pos	6	amod	_	_
 6	góðu	góður	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
 7	formi	form	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-8	og	og	CCONJ	CONJ	_	15	cc	_	_
-9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
-10	að	að	PART	TO	_	11	mark	_	_
-11	sýna	sýna	VERB	VB	VerbForm=Inf	15	xcomp	_	_
-12	það	það	PRON	PRO-A	Case=Acc	11	obj	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	3	punct	_	SpaceAfter=No
-14	“	“	PUNCT	"	_	13	punct	_	_
-15	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
-16	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	15	nsubj	_	_
-17	sem	sem	SCONJ	C	_	18	mark	_	_
-18	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	16	acl:relcl	_	_
-19	bronsverðlaunin	bronsverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	nsubj	_	_
-20	í	í	ADP	P	_	21	case	_	_
-21	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	_
-22	skipta	skipta	VERB	VB	VerbForm=Inf	18	xcomp	_	_
-23	sig	sig	PRON	PRO-A	Case=Acc	22	iobj	_	_
-24	jafn	jafn	ADV	ADV	Degree=Pos	25	amod	_	_
-25	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	26	amod	_	_
-26	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obj	_	_
-27	og	og	ADP	P	_	28	case	_	_
-28	silfurverðlaunin	silfurverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obl	_	_
-29	á	á	ADP	P	_	30	case	_	_
-30	miðvikudagskvöld	miðvikudagskvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obl	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032149.SANITY,.27
-# X_ID = ID_missing_34
-# text = Viðtalið við Hrafnhildi Lúthersdóttur má sjá í heild sinni í spilaranum hér fyrir ofan.
+# sent_id = G-2-1032149.SANITY,.33
+# X_ID = ID_MISSING
+# text = og er að sýna það, “ sagði Hrafnhildur sem segir bronsverðlaunin í kvöld skipta sig jafn miklu máli og silfurverðlaunin á miðvikudagskvöld .
+1	og	og	CCONJ	CONJ	_	8	cc	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+3	að	að	PART	TO	_	4	mark	_	_
+4	sýna	sýna	VERB	VB	VerbForm=Inf	8	xcomp	_	_
+5	það	það	PRON	PRO-A	Case=Acc	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	8	punct	_	SpaceAfter=No
+7	“	“	PUNCT	"	_	6	punct	_	_
+8	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+9	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	8	nsubj	_	_
+10	sem	sem	SCONJ	C	_	11	mark	_	_
+11	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	9	acl:relcl	_	_
+12	bronsverðlaunin	bronsverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	nsubj	_	_
+13	í	í	ADP	P	_	14	case	_	_
+14	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
+15	skipta	skipta	VERB	VB	VerbForm=Inf	11	xcomp	_	_
+16	sig	sig	PRON	PRO-A	Case=Acc	15	iobj	_	_
+17	jafn	jafn	ADV	ADV	Degree=Pos	18	amod	_	_
+18	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
+19	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obj	_	_
+20	og	og	ADP	P	_	21	case	_	_
+21	silfurverðlaunin	silfurverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obl	_	_
+22	á	á	ADP	P	_	23	case	_	_
+23	miðvikudagskvöld	miðvikudagskvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	8	punct	_	_
+
 1	Viðtalið	viðtal	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
 2	við	við	ADP	P	_	3	case	_	_
 3	Hrafnhildi	hrafnhildur	PROPN	NPR-A	_	1	obl	_	_
@@ -610,6 +635,6 @@
 11	spilaranum	spilari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 12	hér	hér	ADV	ADV	Degree=Pos	11	obl	_	_
 13	fyrir	fyrir	ADP	P	_	12	case	_	_
-14	ofan	ofan	ADP	P	_	12	obl	_	SpaceAfter=No
+14	ofan	ofan	ADP	P	_	12	obl	_	_
 15	.	.	PUNCT	.	_	6	punct	_	_
 

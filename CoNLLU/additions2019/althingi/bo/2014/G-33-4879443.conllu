@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.1
-# X_ID = ID_missing_1
-# text = Ég þakka hv. þm. Pétri H. Blöndal fyrir að árétta fyrri spurningu.
+# sent_id = G-33-4879443,.1
+# X_ID = ID_MISSING
+# text = Ég þakka hv. þm. Pétri H. Blöndal fyrir að árétta fyrri spurningu .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	4	amod	_	_
@@ -15,9 +15,9 @@
 12	spurningu	spurning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.2
-# X_ID = ID_missing_2
-# text = Svo að ég segi það alveg skýrt: Nei, mér finnst það ekki réttlátt að þeir sem keyptu kvóta fyrir lán standi í raun betur að vígi nú en hinir sem keyptu fyrir eigið fé.
+# sent_id = G-33-4879443,.2
+# X_ID = ID_MISSING
+# text = Svo að ég segi það alveg skýrt : Nei, mér finnst það ekki réttlátt að þeir sem keyptu kvóta fyrir lán standi í raun betur að vígi nú en hinir sem keyptu fyrir eigið fé .
 1	Svo	svo	ADV	ADV	Degree=Pos	12	advmod	_	_
 2	að	að	SCONJ	C	_	4	mark	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -56,9 +56,9 @@
 36	fé	fé	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obl	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.3
-# X_ID = ID_missing_3
-# text = Það er ekki réttlátt að mínu mati, enda er ég ekki fylgjandi skuldaniðurfellingum yfir höfuð.
+# sent_id = G-33-4879443,.3
+# X_ID = ID_MISSING
+# text = Það er ekki réttlátt að mínu mati, enda er ég ekki fylgjandi skuldaniðurfellingum yfir höfuð .
 1	Það	það	PRON	PRO-N	Case=Nom	13	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
 3	ekki	ekki	ADV	NEG	_	13	advmod	_	_
@@ -77,9 +77,9 @@
 16	höfuð	höfuð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.4
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Hvað varðar lækkun gjalda með þeirri forsendu sem þingmaðurinn nefnir réttilega, ef ég skil meirihlutaálitið rétt, að treysta á auknar veiðar, þá er það mikil spámennska, það er það.
+# sent_id = G-33-4879443,.4
+# X_ID = ID_MISSING
+# text = Hvað varðar lækkun gjalda með þeirri forsendu sem þingmaðurinn nefnir réttilega, ef ég skil meirihlutaálitið rétt, að treysta á auknar veiðar, þá er það mikil spámennska,
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	varðar	varða	ADV	VBPI	Mood=Ind|Tense=Pres	29	advmod	_	_
 3	lækkun	lækkun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
@@ -110,14 +110,18 @@
 28	mikil	mikill	DET	Q-N	Case=Nom	29	amod	_	_
 29	spámennska	spámennska	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 30	,	,	PUNCT	,	_	29	punct	_	_
-31	það	það	PRON	PRO-N	Case=Nom	33	nsubj	_	_
-32	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	33	cop	_	_
-33	það	það	PRON	PRO-N	Case=Nom	29	conj	_	OriginalHead=0|SpaceAfter=No
-34	.	.	PUNCT	.	_	29	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.5
-# X_ID = ID_missing_6
-# text = Við höfum ekkert fast í hendi með það, að sjálfsögðu ekki.
+# sent_id = G-33-4879443,.5
+# X_ID = ID_MISSING
+# text = það er það .
+1	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	það	það	PRON	PRO-N	Case=Nom	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4879443,.6
+# X_ID = ID_MISSING
+# text = Við höfum ekkert fast í hendi með það, að sjálfsögðu ekki .
 1	Við	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
 2	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	10	aux	_	_
 3	ekkert	enginn	DET	Q-A	Case=Acc	10	obj	_	_
@@ -132,9 +136,9 @@
 12	ekki	ekki	ADV	NEG	_	10	advmod	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.6
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Ég vil bara árétta, eins og ég sagði í ræðu minni, að ég held að þessi aðferðafræði sé ekki góð, að áætla eitthvað fram í framtíðina, út frá, eins og við höfum verið að gera, gömlum gögnum, það segir kannski eitthvað.
+# sent_id = G-33-4879443,.7
+# X_ID = ID_MISSING
+# text = Ég vil bara árétta, eins og ég sagði í ræðu minni, að ég held að þessi aðferðafræði sé ekki góð, að áætla eitthvað fram í framtíðina, út frá, eins og við höfum verið að gera, gömlum gögnum,
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	bara	bara	ADV	FP	Degree=Pos	4	advmod	_	_
@@ -178,16 +182,20 @@
 41	,	,	PUNCT	,	_	43	punct	_	_
 42	gömlum	gamall	ADJ	ADJ-D	Case=Dat|Degree=Pos	43	amod	_	_
 43	gögnum	gagn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	25	obl	_	SpaceAfter=No
-44	,	,	PUNCT	,	_	25	punct	_	_
-45	það	það	PRON	PRO-N	Case=Nom	46	nsubj	_	_
-46	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-47	kannski	kannski	ADV	ADV	Degree=Pos	46	advmod	_	_
-48	eitthvað	einhver	DET	Q-A	Case=Acc	46	obj	_	SpaceAfter=No
-49	.	.	PUNCT	.	_	4	punct	_	_
+44	,	,	PUNCT	,	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.7
-# X_IDs = ID_missing_9 ; ID_missing_10 ; ID_missing_11
-# text = Við vitum hverju Hafró mælir með eða leyfir að veiða, en við vitum ekki hvað kemur samt upp úr sjónum, við getum ekki vitað það.
+# sent_id = G-33-4879443,.8
+# X_ID = ID_MISSING
+# text = það segir kannski eitthvað .
+1	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	kannski	kannski	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	eitthvað	einhver	DET	Q-A	Case=Acc	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4879443,.9
+# X_ID = ID_MISSING
+# text = Við vitum hverju Hafró mælir með eða leyfir að veiða,
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	vitum	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	hverju	hver	DET	Q-D	Case=Dat	5	obj	_	_
@@ -198,28 +206,36 @@
 8	leyfir	leyfa	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	veiða	veiða	VERB	VB	VerbForm=Inf	8	xcomp	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	8	punct	_	_
-12	en	en	CCONJ	CONJ	_	14	cc	_	_
-13	við	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-14	vitum	vita	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-15	ekki	ekki	ADV	NEG	_	14	advmod	_	_
-16	hvað	hver	PRON	WPRO-N	Case=Nom	17	obj	_	_
-17	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	14	ccomp	_	_
-18	samt	samt	ADV	ADV	Degree=Pos	17	advmod	_	_
-19	upp	upp	ADP	RP	_	21	compound:prt	_	_
-20	úr	úr	ADP	P	_	21	case	_	_
-21	sjónum	sjór	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	17	punct	_	_
-23	við	ég	PRON	PRO-N	Case=Nom	26	nsubj	_	_
-24	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	26	aux	_	_
-25	ekki	ekki	ADV	NEG	_	26	advmod	_	_
-26	vitað	vita	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-27	það	það	PRON	PRO-A	Case=Acc	26	obj	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	2	punct	_	_
+11	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.8
-# X_ID = ID_missing_12
-# text = Ég held að þessi gjaldtaka byrji á öfugum enda.
+# sent_id = G-33-4879443,.10
+# X_ID = ID_MISSING
+# text = en við vitum ekki hvað kemur samt upp úr sjónum,
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	vitum	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	ekki	ekki	ADV	NEG	_	3	advmod	_	_
+5	hvað	hver	PRON	WPRO-N	Case=Nom	6	obj	_	_
+6	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	3	ccomp	_	_
+7	samt	samt	ADV	ADV	Degree=Pos	6	advmod	_	_
+8	upp	upp	ADP	RP	_	10	compound:prt	_	_
+9	úr	úr	ADP	P	_	10	case	_	_
+10	sjónum	sjór	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	3	punct	_	_
+
+# sent_id = G-33-4879443,.11
+# X_ID = ID_MISSING
+# text = við getum ekki vitað það .
+1	við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
+3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
+4	vitað	vita	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	það	það	PRON	PRO-A	Case=Acc	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4879443,.12
+# X_ID = ID_MISSING
+# text = Ég held að þessi gjaldtaka byrji á öfugum enda .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -231,9 +247,9 @@
 9	enda	endi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.9
-# X_ID = ID_missing_13
-# text = Ég held við eigum að snúa henni á hvolf og bara hafa þetta eins og hjá öðrum fyrirtækjum.
+# sent_id = G-33-4879443,.13
+# X_ID = ID_MISSING
+# text = Ég held við eigum að snúa henni á hvolf og bara hafa þetta eins og hjá öðrum fyrirtækjum .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -254,9 +270,9 @@
 18	fyrirtækjum	fyrirtæki	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.10
-# X_ID = ID_missing_14
-# text = Mig langar að skoða það betur að láta þessa gjaldtöku koma í gegnum skattkerfið.
+# sent_id = G-33-4879443,.14
+# X_ID = ID_MISSING
+# text = Mig langar að skoða það betur að láta þessa gjaldtöku koma í gegnum skattkerfið .
 1	Mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
 2	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -273,9 +289,9 @@
 14	skattkerfið	skattkerfi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.11
-# X_ID = ID_missing_15
-# text = Ég verð að segja það alveg eins og er.
+# sent_id = G-33-4879443,.15
+# X_ID = ID_MISSING
+# text = Ég verð að segja það alveg eins og er .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	verð	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -287,9 +303,6 @@
 9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4879443,.12
-# X_ID = ID_missing_16
-# text = Mér finnst það hljóma betur en þó að óskoðuðu máli.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -299,6 +312,6 @@
 7	þó	þó	ADV	ADV	Degree=Pos	9	advmod	_	_
 8	að	að	ADP	P	_	9	case	_	_
 9	óskoðuðu	óskoðaður	ADJ	ADJ-D	Case=Dat|Degree=Pos	2	conj	_	_
-10	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	nsubj	_	SpaceAfter=No
+10	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	nsubj	_	_
 11	.	.	PUNCT	.	_	2	punct	_	_
 

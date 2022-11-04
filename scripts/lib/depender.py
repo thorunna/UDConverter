@@ -1017,38 +1017,38 @@ class Converter:
         A node with the deprel 'cc' between two other nodes should be dependent on the latter node.
         """
 
-        for address, node in self.dg.nodes.items():
-            if (
-                node["rel"] == "cc"
-                and node["head"] == address - 1
-                and self.dg.get_by_address(address + 1)["head"] == address - 1
-            ):
-                self.dg.get_by_address(address).update({"head": address + 1})
-                # The latter node should have the deprel 'conj'
-                if self.dg.get_by_address(address + 1)["rel"] != "conj":
-                    self.dg.get_by_address(address + 1).update({"rel": "conj"})
-                # If the former node is tagged 'ADJ', it should have the deprel 'amod'
-                if (
-                    self.dg.get_by_address(address - 1)["rel"] == "conj"
-                    and self.dg.get_by_address(address - 1)["ctag"] == "ADJ"
-                ):
-                    self.dg.get_by_address(address - 1).update({"rel": "amod"})
+        try:
 
-            # The latter node should be dependent on the former node if the former node has the deprel 'amod'
-            elif (
-                node["rel"] == "cc"
-                and node["head"] == address + 1
-                and self.dg.get_by_address(address + 1)["head"] > address + 1
-                and self.dg.get_by_address(address - 1)["rel"] == "amod"
-            ):
-                self.dg.get_by_address(address + 1).update({"head": address - 1})
-            # elif (
-            #    node["rel"] == "cc"
-            #    and node["head"] == self.dg.get_by_address(address + 1)["head"]
-            #    and self.dg.get_by_address(address + 1)["ctag"] == "NOUN"
-            #    and self.dg.get_by_address(address + 1)["rel"] == "conj"
-            # ):
-            #    self.dg.get_by_address(address).update({"head": address + 1})
+            for address, node in self.dg.nodes.items():
+                if (
+                    node["rel"] == "cc"
+                    and node["head"] == address - 1
+                    and self.dg.get_by_address(address + 1)["head"] == address - 1
+                ):
+                    self.dg.get_by_address(address).update({"head": address + 1})
+                    # The latter node should have the deprel 'conj'
+                    if self.dg.get_by_address(address + 1)["rel"] != "conj":
+                        self.dg.get_by_address(address + 1).update({"rel": "conj"})
+                    # If the former node is tagged 'ADJ', it should have the deprel 'amod'
+                    if (
+                        self.dg.get_by_address(address - 1)["rel"] == "conj"
+                        and self.dg.get_by_address(address - 1)["ctag"] == "ADJ"
+                    ):
+                        self.dg.get_by_address(address - 1).update({"rel": "amod"})
+
+                # The latter node should be dependent on the former node if the former node has the deprel 'amod'
+                elif (
+                    node["rel"] == "cc"
+                    and node["head"] == address + 1
+                    and self.dg.get_by_address(address + 1)["head"] > address + 1
+                    and self.dg.get_by_address(address - 1)["rel"] == "amod"
+                ):
+                    self.dg.get_by_address(address + 1).update({"head": address - 1})
+
+        except RuntimeError:
+            print(node)
+            pass
+            # raise
 
     def _fix_conj_rel(self):
         """
@@ -1323,29 +1323,40 @@ class Converter:
         A word with the tag PUNCT must have the deprel 'punct'
         """
 
-        for address, node in self.dg.nodes.items():
-            if node["ctag"] == "PUNCT" and node["rel"] != "punct":
-                self.dg.get_by_address(address).update({"rel": "punct"})
+        try:
 
-            # A 'punct' node should never be the root and shouldn't have any dependents
-            elif (
-                node["ctag"] == "PUNCT" and node["rel"] == "punct" and node["head"] == 0
-            ):
-                if (
-                    self.dg.get_by_address(address + 1)["head"] == address
-                    and self.dg.get_by_address(address + 2)["head"] == address
+            for address, node in self.dg.nodes.items():
+                if node["ctag"] == "PUNCT" and node["rel"] != "punct":
+                    self.dg.get_by_address(address).update({"rel": "punct"})
+
+                # A 'punct' node should never be the root and shouldn't have any dependents
+                elif (
+                    node["ctag"] == "PUNCT"
+                    and node["rel"] == "punct"
+                    and node["head"] == 0
                 ):
-                    self.dg.get_by_address(address).update({"head": address + 2})
-                    self.dg.get_by_address(address + 1).update({"head": address + 2})
-                    self.dg.get_by_address(address + 2).update(
-                        {"head": 0, "rel": "root"}
-                    )
-            elif (
-                node["rel"] == "punct"
-                and node["ctag"] != "NOUN"
-                and self.dg.get_by_address(node["head"])["rel"] == "conj"
-            ):
-                self.dg.get_by_address(address).update({"rel": "obl"})
+                    if (
+                        self.dg.get_by_address(address + 1)["head"] == address
+                        and self.dg.get_by_address(address + 2)["head"] == address
+                    ):
+                        self.dg.get_by_address(address).update({"head": address + 2})
+                        self.dg.get_by_address(address + 1).update(
+                            {"head": address + 2}
+                        )
+                        self.dg.get_by_address(address + 2).update(
+                            {"head": 0, "rel": "root"}
+                        )
+                elif (
+                    node["rel"] == "punct"
+                    and node["ctag"] != "NOUN"
+                    and self.dg.get_by_address(node["head"])["rel"] == "conj"
+                ):
+                    self.dg.get_by_address(address).update({"rel": "obl"})
+
+        except RuntimeError:
+            print(node)
+            pass
+            # raise
 
     def _fix_flatname_dep(self):
         """

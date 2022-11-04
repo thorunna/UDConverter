@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4578072,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Ef vænta er tillagna um að þessir fjármunir sem verða í ríkissjóði upp á 195 milljónir verði merktir upp á nýtt og merktir því að ganga í einhvern alþjónustusjóð eða hvað það nú er, þá er það í fínu lagi, ef það er skilvirk leið til þess að koma þeim fjármunum í gagnið og að þeir vinni á næsta ári að því að bæta þessi fjarskiptasambönd.
+# sent_id = G-33-4578072,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Ef vænta er tillagna um að þessir fjármunir sem verða í ríkissjóði upp á 195 milljónir verði merktir upp á nýtt og merktir því að ganga í einhvern alþjónustusjóð eða hvað það nú er, þá er það í fínu lagi, ef það er skilvirk leið til þess að koma þeim fjármunum í gagnið og að þeir vinni á næsta ári að því að bæta þessi fjarskiptasambönd .
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -74,9 +74,9 @@
 71	fjarskiptasambönd	fjarskiptasamband	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	69	obj	_	SpaceAfter=No
 72	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4578072,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Varðandi samninginn við Farice þá veit ég ekki til að það séu neinar takmarkanir á því að greiða megi mismun tekna og gjalda á þessu tímabili úr ríkissjóði gegnum samninginn og þá þarf auðvitað bara að gera það.
+# sent_id = G-33-4578072,.2
+# X_ID = ID_MISSING
+# text = Varðandi samninginn við Farice þá veit ég ekki til að það séu neinar takmarkanir á því að greiða megi mismun tekna og gjalda á þessu tímabili úr ríkissjóði gegnum samninginn
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	6	dep	_	_
 2	samninginn	samningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
 3	við	við	ADP	P	_	4	case	_	_
@@ -107,19 +107,23 @@
 28	ríkissjóði	ríkissjóður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
 29	gegnum	gegnum	ADP	P	_	30	case	_	_
 30	samninginn	samningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
-31	og	og	CCONJ	CONJ	_	33	cc	_	_
-32	þá	þá	ADV	ADV	Degree=Pos	33	advmod	_	_
-33	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
-34	auðvitað	auðvitað	ADV	ADV	Degree=Pos	33	advmod	_	_
-35	bara	bara	ADV	FP	Degree=Pos	33	advmod	_	_
-36	að	að	PART	TO	_	37	mark	_	_
-37	gera	gera	VERB	DO	VerbForm=Inf	33	xcomp	_	_
-38	það	það	PRON	PRO-A	Case=Acc	37	obj	_	SpaceAfter=No
-39	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4578072,.3
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Þess vegna átta ég mig ekki alveg á vandamálinu, af hverju þarf að taka sérstaklega þessar tekjur fjarskiptasjóðs út úr honum, VigH: samninginn. ef fjarskiptasjóður fengi bara í fjárveitingu það sem verður að greiða árlega inn á samninginn við Farice.
+# sent_id = G-33-4578072,.3
+# X_ID = ID_MISSING
+# text = og þá þarf auðvitað bara að gera það .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	auðvitað	auðvitað	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	bara	bara	ADV	FP	Degree=Pos	3	advmod	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	gera	gera	VERB	DO	VerbForm=Inf	3	xcomp	_	_
+8	það	það	PRON	PRO-A	Case=Acc	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4578072,.4
+# X_ID = ID_MISSING
+# text = Þess vegna átta ég mig ekki alveg á vandamálinu,
 1	Þess	það	PRON	PRO-G	Case=Gen	3	obl	_	_
 2	vegna	vegna	ADP	P	_	1	case	_	_
 3	átta	átta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -129,46 +133,50 @@
 7	alveg	alveg	ADV	ADV	Degree=Pos	3	advmod	_	_
 8	á	á	ADP	P	_	9	case	_	_
 9	vandamálinu	vandamál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	af	af	ADP	P	_	12	case	_	_
-12	hverju	hver	PRON	WPRO-D	Case=Dat	13	obl	_	_
-13	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-14	að	að	PART	TO	_	15	mark	_	_
-15	taka	taka	VERB	VB	VerbForm=Inf	13	xcomp	_	_
-16	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	15	advmod	_	_
-17	þessar	þessi	DET	D-A	Case=Acc	18	det	_	_
-18	tekjur	tekja	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obj	_	_
-19	fjarskiptasjóðs	fjarskiptasjóður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	_
-20	út	út	ADP	RP	_	22	compound:prt	_	_
-21	úr	úr	ADP	P	_	22	case	_	_
-22	honum	hann	PRON	PRO-D	Case=Dat	15	obl	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	22	punct	_	_
-24	VigH	vigh	PROPN	NPR-N	_	13	xcomp	_	SpaceAfter=No
-25	:	:	PUNCT	,	_	24	punct	_	_
-26	samninginn	samningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obl	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	26	punct	_	_
-28	ef	ef	ADP	P	_	30	case	_	_
-29	fjarskiptasjóður	fjarskiptasjóður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	30	nsubj	_	_
-30	fengi	fá	VERB	VBDS	Mood=Sub|Tense=Past	13	obl	_	_
-31	bara	bara	ADV	FP	Degree=Pos	30	advmod	_	_
-32	í	í	ADP	P	_	33	case	_	_
-33	fjárveitingu	fjárveiting	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obl	_	_
-34	það	sá	DET	D-A	Case=Acc	30	obj	_	_
-35	sem	sem	SCONJ	C	_	36	mark	_	_
-36	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	34	acl:relcl	_	_
-37	að	að	PART	TO	_	38	mark	_	_
-38	greiða	greiða	VERB	VB	VerbForm=Inf	36	xcomp	_	_
-39	árlega	árlega	ADV	ADV	Degree=Pos	38	advmod	_	_
-40	inn	inn	ADP	RP	_	42	compound:prt	_	_
-41	á	á	ADP	P	_	42	case	_	_
-42	samninginn	samningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	38	obl	_	_
-43	við	við	ADP	P	_	44	case	_	_
-44	Farice	farice	PROPN	NPR-A	_	42	obl	_	SpaceAfter=No
-45	.	.	PUNCT	.	_	3	punct	_	_
+10	,	,	PUNCT	,	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4578072,.4
-# X_IDs = ID_missing_6 ; ID_missing_7
-# text = Ef til vill eru einhver lagatæknileg álitamál að þvælast þarna fyrir mönnum, Forseti hringir.
+# sent_id = G-33-4578072,.5
+# X_ID = ID_MISSING
+# text = af hverju þarf að taka sérstaklega þessar tekjur fjarskiptasjóðs út úr honum, VigH : samninginn . ef fjarskiptasjóður fengi bara í fjárveitingu það sem verður að greiða árlega inn á samninginn við Farice .
+1	af	af	ADP	P	_	2	case	_	_
+2	hverju	hver	PRON	WPRO-D	Case=Dat	3	obl	_	_
+3	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	taka	taka	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	5	advmod	_	_
+7	þessar	þessi	DET	D-A	Case=Acc	8	det	_	_
+8	tekjur	tekja	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obj	_	_
+9	fjarskiptasjóðs	fjarskiptasjóður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	nmod:poss	_	_
+10	út	út	ADP	RP	_	12	compound:prt	_	_
+11	úr	úr	ADP	P	_	12	case	_	_
+12	honum	hann	PRON	PRO-D	Case=Dat	5	obl	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	VigH	vigh	PROPN	NPR-N	_	3	xcomp	_	SpaceAfter=No
+15	:	:	PUNCT	,	_	14	punct	_	_
+16	samninginn	samningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	16	punct	_	_
+18	ef	ef	ADP	P	_	20	case	_	_
+19	fjarskiptasjóður	fjarskiptasjóður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	_
+20	fengi	fá	VERB	VBDS	Mood=Sub|Tense=Past	3	obl	_	_
+21	bara	bara	ADV	FP	Degree=Pos	20	advmod	_	_
+22	í	í	ADP	P	_	23	case	_	_
+23	fjárveitingu	fjárveiting	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	_
+24	það	sá	DET	D-A	Case=Acc	20	obj	_	_
+25	sem	sem	SCONJ	C	_	26	mark	_	_
+26	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	24	acl:relcl	_	_
+27	að	að	PART	TO	_	28	mark	_	_
+28	greiða	greiða	VERB	VB	VerbForm=Inf	26	xcomp	_	_
+29	árlega	árlega	ADV	ADV	Degree=Pos	28	advmod	_	_
+30	inn	inn	ADP	RP	_	32	compound:prt	_	_
+31	á	á	ADP	P	_	32	case	_	_
+32	samninginn	samningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obl	_	_
+33	við	við	ADP	P	_	34	case	_	_
+34	Farice	farice	PROPN	NPR-A	_	32	obl	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4578072,.6
+# X_ID = ID_MISSING
+# text = Ef til vill eru einhver lagatæknileg álitamál að þvælast þarna fyrir mönnum,
 1	Ef	ef	ADP	P	_	3	case	_	_
 2	til	til	ADP	RP	_	3	compound:prt	_	_
 3	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	9	obl	_	_
@@ -181,22 +189,26 @@
 10	þarna	þarna	ADV	ADV	Degree=Pos	9	advmod	_	_
 11	fyrir	fyrir	ADP	P	_	12	case	_	_
 12	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	12	punct	_	_
-14	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
-15	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	9	conj	_	OriginalHead=0|SpaceAfter=No
-16	.	.	PUNCT	.	_	9	punct	_	_
+13	,	,	PUNCT	,	_	9	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4578072,.5
-# X_ID = ID_missing_8
-# text = kann að vera.
+# sent_id = G-33-4578072,.7
+# X_ID = ID_MISSING
+# text = Forseti hringir .
+1	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4578072,.8
+# X_ID = ID_MISSING
+# text = kann að vera .
 1	kann	kunna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	að	að	PART	TO	_	3	mark	_	_
 3	vera	vera	AUX	BE	VerbForm=Inf	1	xcomp	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4578072,.6
-# X_IDs = ID_missing_9 ; ID_missing_10
-# text = En aðalatriðið er að peningarnir fari í það sem þeir eiga að fara í og það er að bæta fjarskiptasamböndin á landsbyggðinni.
+# sent_id = G-33-4578072,.9
+# X_ID = ID_MISSING
+# text = En aðalatriðið er að peningarnir fari í það sem þeir eiga að fara í
 1	En	en	CCONJ	CONJ	_	2	cc	_	_
 2	aðalatriðið	aðalatriði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
@@ -211,13 +223,14 @@
 12	að	að	PART	TO	_	13	mark	_	_
 13	fara	fara	VERB	VB	VerbForm=Inf	11	xcomp	_	_
 14	í	í	ADP	P	_	13	obl	_	_
-15	og	og	CCONJ	CONJ	_	19	cc	_	_
-16	það	það	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
-18	að	að	PART	TO	_	19	mark	_	_
-19	bæta	bæta	VERB	VB	VerbForm=Inf	2	conj	_	OriginalHead=0
-20	fjarskiptasamböndin	fjarskiptasamband	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obj	_	_
-21	á	á	ADP	P	_	22	case	_	_
-22	landsbyggðinni	landsbyggð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	2	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	bæta	bæta	VERB	VB	VerbForm=Inf	0	root	_	_
+6	fjarskiptasamböndin	fjarskiptasamband	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obj	_	_
+7	á	á	ADP	P	_	8	case	_	_
+8	landsbyggðinni	landsbyggð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+9	.	.	PUNCT	.	_	5	punct	_	_
 

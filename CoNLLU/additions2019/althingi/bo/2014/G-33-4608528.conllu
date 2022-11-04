@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2014_G-33-4608528,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Ég þakka andsvarið og stuðninginn.
+# sent_id = G-33-4608528,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Ég þakka andsvarið og stuðninginn .
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -11,9 +11,9 @@
 8	stuðninginn	stuðningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4608528,.2
-# X_IDs = ID_missing_2 ; ID_missing_3 ; ID_missing_4
-# text = Varðandi rafrænu sjúkraskrána mætti auðvitað flokka hana sem fjarheilbrigðisþjónustu en kannski fyrst og fremst styður þetta hvert annað, þetta yrði þá samþætt þjónusta sem allir fagaðilar geta nýtt sér til heilla fyrir þann sem verið er að þjónusta.
+# sent_id = G-33-4608528,.2
+# X_ID = ID_MISSING
+# text = Varðandi rafrænu sjúkraskrána mætti auðvitað flokka hana sem fjarheilbrigðisþjónustu
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	6	advcl	_	_
 2	rafrænu	rafrænn	ADJ	ADJ-A	Case=Acc|Degree=Pos	3	amod	_	_
 3	sjúkraskrána	sjúkraskrá	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
@@ -23,41 +23,49 @@
 7	hana	hún	PRON	PRO-A	Case=Acc	6	obj	_	_
 8	sem	sem	SCONJ	C	_	9	mark	_	_
 9	fjarheilbrigðisþjónustu	fjarheilbrigðisþjóinn	ADJ	ADJS-A	Case=Acc|Degree=Sup	6	advcl	_	_
-10	en	en	CCONJ	CONJ	_	15	cc	_	_
-11	kannski	kannski	ADV	ADV	Degree=Pos	15	advmod	_	_
-12	fyrst	snemmt	ADV	ADVS	Degree=Sup	11	advmod	_	_
-13	og	og	CCONJ	CONJ	_	11	cc	_	_
-14	fremst	harla	ADV	ADVS	Degree=Sup	11	advmod	_	_
-15	styður	styðja	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
-16	þetta	þessi	DET	D-N	Case=Nom	15	nsubj	_	_
-17	hvert	hver	DET	Q-N	Case=Nom	15	amod	_	_
-18	annað	annar	PRON	OTHER-A	Case=Acc	15	obj	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	6	punct	_	_
-20	þetta	þessi	DET	D-N	Case=Nom	21	nsubj	_	_
-21	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	6	conj	_	OriginalHead=0
-22	þá	þá	ADV	ADV	Degree=Pos	21	advmod	_	_
-23	samþætt	samþættur	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	amod	_	_
-24	þjónusta	þjónusta	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	xcomp	_	_
-25	sem	sem	SCONJ	C	_	29	mark	_	_
-26	allir	allur	DET	Q-N	Case=Nom	27	amod	_	_
-27	fagaðilar	fagaðili	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	29	nsubj	_	_
-28	geta	geta	AUX	MDPI	Mood=Ind|Tense=Pres	29	aux	_	_
-29	nýtt	nýta	VERB	VBN	Tense=Past|VerbForm=Part	24	acl:relcl	_	_
-30	sér	sig	PRON	PRO-D	Case=Dat	29	iobj	_	_
-31	til	til	ADP	P	_	32	case	_	_
-32	heilla	heill	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	29	obl	_	_
-33	fyrir	fyrir	ADP	P	_	34	case	_	_
-34	þann	sá	DET	D-A	Case=Acc	32	obl	_	_
-35	sem	sem	SCONJ	C	_	39	mark	_	_
-36	verið	vera	AUX	BAN	Tense=Past|VerbForm=Part	39	aux	_	_
-37	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	39	cop	_	_
-38	að	að	PART	TO	_	39	mark	_	_
-39	þjónusta	þjónusta	VERB	VB	VerbForm=Inf	34	acl:relcl	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4608528,.3
-# X_ID = ID_missing_5
-# text = Þetta talar auðvitað mikið saman.
+# sent_id = G-33-4608528,.3
+# X_ID = ID_MISSING
+# text = en kannski fyrst og fremst styður þetta hvert annað,
+1	en	en	CCONJ	CONJ	_	6	cc	_	_
+2	kannski	kannski	ADV	ADV	Degree=Pos	6	advmod	_	_
+3	fyrst	snemmt	ADV	ADVS	Degree=Sup	2	advmod	_	_
+4	og	og	CCONJ	CONJ	_	2	cc	_	_
+5	fremst	harla	ADV	ADVS	Degree=Sup	2	advmod	_	_
+6	styður	styðja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+7	þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
+8	hvert	hver	DET	Q-N	Case=Nom	6	amod	_	_
+9	annað	annar	PRON	OTHER-A	Case=Acc	6	obj	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	6	punct	_	_
+
+# sent_id = G-33-4608528,.4
+# X_ID = ID_MISSING
+# text = þetta yrði þá samþætt þjónusta sem allir fagaðilar geta nýtt sér til heilla fyrir þann sem verið er að þjónusta .
+1	þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
+2	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	0	root	_	_
+3	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	samþætt	samþættur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
+5	þjónusta	þjónusta	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	_
+6	sem	sem	SCONJ	C	_	10	mark	_	_
+7	allir	allur	DET	Q-N	Case=Nom	8	amod	_	_
+8	fagaðilar	fagaðili	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
+9	geta	geta	AUX	MDPI	Mood=Ind|Tense=Pres	10	aux	_	_
+10	nýtt	nýta	VERB	VBN	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
+11	sér	sig	PRON	PRO-D	Case=Dat	10	iobj	_	_
+12	til	til	ADP	P	_	13	case	_	_
+13	heilla	heill	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	obl	_	_
+14	fyrir	fyrir	ADP	P	_	15	case	_	_
+15	þann	sá	DET	D-A	Case=Acc	13	obl	_	_
+16	sem	sem	SCONJ	C	_	20	mark	_	_
+17	verið	vera	AUX	BAN	Tense=Past|VerbForm=Part	20	aux	_	_
+18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
+19	að	að	PART	TO	_	20	mark	_	_
+20	þjónusta	þjónusta	VERB	VB	VerbForm=Inf	15	acl:relcl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4608528,.5
+# X_ID = ID_MISSING
+# text = Þetta talar auðvitað mikið saman .
 1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	talar	tala	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -65,9 +73,9 @@
 5	saman	saman	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4608528,.4
-# X_ID = ID_missing_6
-# text = Annað sem talar mikið saman og styður hvort annað er það sem hv. þingmaður nefndi, það er að til að nýta fjarheilbrigðisþjónustu sem best þarf auðvitað netsamband að vera í lagi alls staðar á landinu.
+# sent_id = G-33-4608528,.6
+# X_ID = ID_MISSING
+# text = Annað sem talar mikið saman og styður hvort annað er það sem hv. þingmaður nefndi, það er að til að nýta fjarheilbrigðisþjónustu sem best þarf auðvitað netsamband að vera í lagi alls staðar á landinu .
 1	Annað	annar	PRON	OTHER-N	Case=Nom	11	nsubj	_	_
 2	sem	sem	SCONJ	C	_	3	mark	_	_
 3	talar	tala	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
@@ -106,9 +114,6 @@
 36	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4608528,.5
-# X_ID = ID_missing_7
-# text = Ég held að þetta tvennt ætti að geta stutt mjög vel hvort við annað.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -122,6 +127,6 @@
 11	vel	vel	ADV	ADV	Degree=Pos	10	advmod	_	_
 12	hvort	hvort	DET	Q-N	Case=Nom	9	amod	_	_
 13	við	við	ADP	P	_	14	case	_	_
-14	annað	annar	PRON	OTHER-A	Case=Acc	9	obl	_	SpaceAfter=No
+14	annað	annar	PRON	OTHER-A	Case=Acc	9	obl	_	_
 15	.	.	PUNCT	.	_	2	punct	_	_
 

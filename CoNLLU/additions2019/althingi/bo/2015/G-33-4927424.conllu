@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Ég þakka spurninguna.
+# sent_id = G-33-4927424,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég þakka spurninguna .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -9,9 +9,9 @@
 6	spurninguna	spurning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.2
-# X_ID = ID_missing_2
-# text = Ég verð að segja að ég er algjörlega ósammála þeim forsendum sem þingmaðurinn dregur hér upp.
+# sent_id = G-33-4927424,.2
+# X_ID = ID_MISSING
+# text = Ég verð að segja að ég er algjörlega ósammála þeim forsendum sem þingmaðurinn dregur hér upp .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	verð	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -30,9 +30,9 @@
 16	upp	upp	ADP	RP	_	14	compound:prt	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.3
-# X_ID = ID_missing_3
-# text = Ég spyr, hvaðan hefur hann þær?
+# sent_id = G-33-4927424,.3
+# X_ID = ID_MISSING
+# text = Ég spyr, hvaðan hefur hann þær ?
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	2	punct	_	_
@@ -42,77 +42,85 @@
 7	þær	hún	PRON	PRO-A	Case=Acc	5	obj	_	SpaceAfter=No
 8	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.4
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Er það tilfinning hans eða eru einhver gögn sem styðja það að fólk velji sér endilega land bara út frá kostnaði á fari og gistingu?
+# sent_id = G-33-4927424,.4
+# X_ID = ID_MISSING
+# text = Er það tilfinning hans
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	tilfinning	tilfinning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 4	hans	hann	PRON	PRO-G	Case=Gen	3	nmod:poss	_	_
-5	eða	eða	CCONJ	CONJ	_	8	cc	_	_
-6	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
-7	einhver	einhver	DET	Q-N	Case=Nom	8	amod	_	_
-8	gögn	gagn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	conj	_	OriginalHead=0
-9	sem	sem	SCONJ	C	_	10	mark	_	_
-10	styðja	styðja	VERB	VBPI	Mood=Ind|Tense=Pres	8	acl:relcl	_	_
-11	það	það	PRON	PRO-A	Case=Acc	10	obj	_	_
-12	að	að	SCONJ	C	_	14	mark	_	_
-13	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
-14	velji	velja	VERB	VBPS	Mood=Sub|Tense=Pres	11	ccomp	_	_
-15	sér	sig	PRON	PRO-D	Case=Dat	14	iobj	_	_
-16	endilega	endilega	ADV	ADV	Degree=Pos	14	advmod	_	_
-17	land	land	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
-18	bara	bara	ADV	FP	Degree=Pos	21	advmod	_	_
-19	út	út	ADP	RP	_	21	compound:prt	_	_
-20	frá	frá	ADP	P	_	21	case	_	_
-21	kostnaði	kostnaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
-22	á	á	ADP	P	_	23	case	_	_
-23	fari	far	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
-24	og	og	CCONJ	CONJ	_	25	cc	_	_
-25	gistingu	gisting	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	conj	_	SpaceAfter=No
-26	?	?	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.5
-# X_IDs = ID_missing_6 ; ID_missing_7
-# text = Það gengur ekki upp, þá hefðu ekki milljón ferðamenn komið til Íslands í fyrra, því að það er dýrt að koma til Íslands.
+# sent_id = G-33-4927424,.5
+# X_ID = ID_MISSING
+# text = eða eru einhver gögn sem styðja það að fólk velji sér endilega land bara út frá kostnaði á fari og gistingu ?
+1	eða	eða	CCONJ	CONJ	_	4	cc	_	_
+2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	einhver	einhver	DET	Q-N	Case=Nom	4	amod	_	_
+4	gögn	gagn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
+5	sem	sem	SCONJ	C	_	6	mark	_	_
+6	styðja	styðja	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
+7	það	það	PRON	PRO-A	Case=Acc	6	obj	_	_
+8	að	að	SCONJ	C	_	10	mark	_	_
+9	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+10	velji	velja	VERB	VBPS	Mood=Sub|Tense=Pres	7	ccomp	_	_
+11	sér	sig	PRON	PRO-D	Case=Dat	10	iobj	_	_
+12	endilega	endilega	ADV	ADV	Degree=Pos	10	advmod	_	_
+13	land	land	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
+14	bara	bara	ADV	FP	Degree=Pos	17	advmod	_	_
+15	út	út	ADP	RP	_	17	compound:prt	_	_
+16	frá	frá	ADP	P	_	17	case	_	_
+17	kostnaði	kostnaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
+18	á	á	ADP	P	_	19	case	_	_
+19	fari	far	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
+20	og	og	CCONJ	CONJ	_	21	cc	_	_
+21	gistingu	gisting	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	conj	_	SpaceAfter=No
+22	?	?	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4927424,.6
+# X_ID = ID_MISSING
+# text = Það gengur ekki upp,
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 4	upp	upp	ADP	RP	_	2	compound:prt	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
-6	þá	þá	ADV	ADV	Degree=Pos	11	advmod	_	_
-7	hefðu	hafa	AUX	HVDS	Mood=Sub|Tense=Past	11	aux	_	_
-8	ekki	ekki	ADV	NEG	_	11	advmod	_	_
-9	milljón	milljón	NUM	NUM-N	Case=Nom	10	nummod	_	_
-10	ferðamenn	ferðamaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	nsubj	_	_
-11	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-12	til	til	ADP	P	_	13	case	_	_
-13	Íslands	ísland	PROPN	NPR-G	_	11	obl	_	_
-14	í	í	ADP	P	_	15	case	_	_
-15	fyrra	fyrri	ADJ	ADJR-A	Case=Acc|Degree=Cmp	11	obl	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	15	punct	_	_
-17	því	það	PRON	PRO-D	Case=Dat	11	obl	_	_
-18	að	að	SCONJ	C	_	23	mark	_	_
-19	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	23	expl	_	_
-20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
-21	dýrt	dýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	amod	_	_
-22	að	að	PART	TO	_	23	mark	_	_
-23	koma	koma	VERB	VB	VerbForm=Inf	17	ccomp	_	_
-24	til	til	ADP	P	_	25	case	_	_
-25	Íslands	ísland	PROPN	NPR-G	_	23	obl	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	2	punct	_	_
+5	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.6
-# X_ID = ID_missing_8
-# text = Það er það.
+# sent_id = G-33-4927424,.7
+# X_ID = ID_MISSING
+# text = þá hefðu ekki milljón ferðamenn komið til Íslands í fyrra, því að það er dýrt að koma til Íslands .
+1	þá	þá	ADV	ADV	Degree=Pos	6	advmod	_	_
+2	hefðu	hafa	AUX	HVDS	Mood=Sub|Tense=Past	6	aux	_	_
+3	ekki	ekki	ADV	NEG	_	6	advmod	_	_
+4	milljón	milljón	NUM	NUM-N	Case=Nom	5	nummod	_	_
+5	ferðamenn	ferðamaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
+6	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	til	til	ADP	P	_	8	case	_	_
+8	Íslands	ísland	PROPN	NPR-G	_	6	obl	_	_
+9	í	í	ADP	P	_	10	case	_	_
+10	fyrra	fyrri	ADJ	ADJR-A	Case=Acc|Degree=Cmp	6	obl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	því	það	PRON	PRO-D	Case=Dat	6	obl	_	_
+13	að	að	SCONJ	C	_	18	mark	_	_
+14	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	18	expl	_	_
+15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
+16	dýrt	dýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	18	amod	_	_
+17	að	að	PART	TO	_	18	mark	_	_
+18	koma	koma	VERB	VB	VerbForm=Inf	12	ccomp	_	_
+19	til	til	ADP	P	_	20	case	_	_
+20	Íslands	ísland	PROPN	NPR-G	_	18	obl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-33-4927424,.8
+# X_ID = ID_MISSING
+# text = Það er það .
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	það	það	PRON	PRO-N	Case=Nom	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.7
-# X_IDs = ID_missing_9 ; ID_missing_10
-# text = Ef það væri þannig værum við bara öll á Benidorm til að fá sól í andlitið, en enginn færi til Balí, skiljið þið.
+# sent_id = G-33-4927424,.9
+# X_ID = ID_MISSING
+# text = Ef það væri þannig værum við bara öll á Benidorm til að fá sól í andlitið,
 1	Ef	ef	ADP	P	_	2	case	_	_
 2	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 3	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	2	cop	_	_
@@ -129,20 +137,24 @@
 14	sól	sól	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	xcomp	_	_
 15	í	í	ADP	P	_	16	case	_	_
 16	andlitið	andlit	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	14	punct	_	_
-18	en	en	CCONJ	CONJ	_	20	cc	_	_
-19	enginn	enginn	DET	Q-N	Case=Nom	20	nsubj	_	_
-20	færi	fara	VERB	VBDS	Mood=Sub|Tense=Past	2	conj	_	OriginalHead=0
-21	til	til	ADP	P	_	22	case	_	_
-22	Balí	balí	PROPN	NPR-G	_	20	obl	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	22	punct	_	_
-24	skiljið	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	20	dep	_	_
-25	þið	þú	PRON	PRO-N	Case=Nom	24	nsubj	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	2	punct	_	_
+17	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.8
-# X_ID = ID_missing_11
-# text = Það er ekki bara það sem verið er að sækjast eftir þegar maður ferðast.
+# sent_id = G-33-4927424,.10
+# X_ID = ID_MISSING
+# text = en enginn færi til Balí, skiljið þið .
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	enginn	enginn	DET	Q-N	Case=Nom	3	nsubj	_	_
+3	færi	fara	VERB	VBDS	Mood=Sub|Tense=Past	0	root	_	_
+4	til	til	ADP	P	_	5	case	_	_
+5	Balí	balí	PROPN	NPR-G	_	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	skiljið	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	3	dep	_	_
+8	þið	þú	PRON	PRO-N	Case=Nom	7	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4927424,.11
+# X_ID = ID_MISSING
+# text = Það er ekki bara það sem verið er að sækjast eftir þegar maður ferðast .
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
@@ -159,48 +171,56 @@
 14	ferðast	ferðast	VERB	VBPI	Mood=Ind|Tense=Pres	7	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.9
-# X_IDs = ID_missing_12 ; ID_missing_13 ; ID_missing_14
-# text = Það er upplifunin af staðnum, það er upplifunin af náttúrunni og mig furðar mjög að hv. þingmaður taki ekki náttúruna og þá upplifun og sérstöðu sem Ísland hefur með inn í þennan reikning.
+# sent_id = G-33-4927424,.12
+# X_ID = ID_MISSING
+# text = Það er upplifunin af staðnum,
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	upplifunin	upplifun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 4	af	af	ADP	P	_	5	case	_	_
 5	staðnum	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	5	punct	_	_
-7	það	það	PRON	PRO-N	Case=Nom	9	nsubj	_	_
-8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
-9	upplifunin	upplifun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	OriginalHead=0
-10	af	af	ADP	P	_	11	case	_	_
-11	náttúrunni	náttúra	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
-12	og	og	CCONJ	CONJ	_	14	cc	_	_
-13	mig	ég	PRON	PRO-A	Case=Acc	14	nsubj	_	_
-14	furðar	furða	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-15	mjög	mjög	ADV	ADV	Degree=Pos	14	advmod	_	_
-16	að	að	SCONJ	C	_	19	mark	_	_
-17	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	18	amod	_	_
-18	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
-19	taki	taka	VERB	VBPS	Mood=Sub|Tense=Pres	14	ccomp	_	_
-20	ekki	ekki	ADV	NEG	_	19	advmod	_	_
-21	náttúruna	náttúra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obl	_	_
-22	og	og	CCONJ	CONJ	_	24	cc	_	_
-23	þá	sá	DET	D-A	Case=Acc	24	det	_	_
-24	upplifun	upplifun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
-25	og	og	CCONJ	CONJ	_	26	cc	_	_
-26	sérstöðu	sérstaða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	conj	_	_
-27	sem	sem	SCONJ	C	_	29	mark	_	_
-28	Ísland	ísland	PROPN	NPR-N	_	29	nsubj	_	_
-29	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	24	acl:relcl	_	_
-30	með	með	ADP	RP	_	19	compound:prt	_	_
-31	inn	inn	ADP	RP	_	34	compound:prt	_	_
-32	í	í	ADP	P	_	34	case	_	_
-33	þennan	þessi	DET	D-A	Case=Acc	34	det	_	_
-34	reikning	reikningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	3	punct	_	_
+6	,	,	PUNCT	,	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.10
-# X_ID = ID_missing_15
-# text = Ég held að það skipti mjög miklu máli og örugglega bara meginmáli.
+# sent_id = G-33-4927424,.13
+# X_ID = ID_MISSING
+# text = það er upplifunin af náttúrunni
+1	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	upplifunin	upplifun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+4	af	af	ADP	P	_	5	case	_	_
+5	náttúrunni	náttúra	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+
+# sent_id = G-33-4927424,.14
+# X_ID = ID_MISSING
+# text = og mig furðar mjög að hv. þingmaður taki ekki náttúruna og þá upplifun og sérstöðu sem Ísland hefur með inn í þennan reikning .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	mig	ég	PRON	PRO-A	Case=Acc	3	nsubj	_	_
+3	furðar	furða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	mjög	mjög	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	að	að	SCONJ	C	_	8	mark	_	_
+6	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
+7	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+8	taki	taka	VERB	VBPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
+9	ekki	ekki	ADV	NEG	_	8	advmod	_	_
+10	náttúruna	náttúra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
+11	og	og	CCONJ	CONJ	_	13	cc	_	_
+12	þá	sá	DET	D-A	Case=Acc	13	det	_	_
+13	upplifun	upplifun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	_
+14	og	og	CCONJ	CONJ	_	15	cc	_	_
+15	sérstöðu	sérstaða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	conj	_	_
+16	sem	sem	SCONJ	C	_	18	mark	_	_
+17	Ísland	ísland	PROPN	NPR-N	_	18	nsubj	_	_
+18	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	_
+19	með	með	ADP	RP	_	8	compound:prt	_	_
+20	inn	inn	ADP	RP	_	23	compound:prt	_	_
+21	í	í	ADP	P	_	23	case	_	_
+22	þennan	þessi	DET	D-A	Case=Acc	23	det	_	_
+23	reikning	reikningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4927424,.15
+# X_ID = ID_MISSING
+# text = Ég held að það skipti mjög miklu máli og örugglega bara meginmáli .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	5	mark	_	_
@@ -215,9 +235,9 @@
 12	meginmáli	meginmál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	conj	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.11
-# X_ID = ID_missing_16
-# text = Fólk safnar fyrir svona ferðum eins og að koma til Íslands, eða flestir hverjir.
+# sent_id = G-33-4927424,.16
+# X_ID = ID_MISSING
+# text = Fólk safnar fyrir svona ferðum eins og að koma til Íslands, eða flestir hverjir .
 1	Fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	safnar	safna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	5	case	_	_
@@ -235,9 +255,9 @@
 15	hverjir	hver	DET	Q-N	Case=Nom	1	appos	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.12
-# X_ID = ID_missing_17
-# text = Hér erum við ekki alveg sammála.
+# sent_id = G-33-4927424,.17
+# X_ID = ID_MISSING
+# text = Hér erum við ekki alveg sammála .
 1	Hér	hér	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
@@ -246,9 +266,9 @@
 6	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.13
-# X_ID = ID_missing_18
-# text = Ég tók eiginlega ekki eftir því hvort þingmaðurinn beindi einhverri sérstakri spurningu til mín.
+# sent_id = G-33-4927424,.18
+# X_ID = ID_MISSING
+# text = Ég tók eiginlega ekki eftir því hvort þingmaðurinn beindi einhverri sérstakri spurningu til mín .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tók	taka	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	eiginlega	eiginlega	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -265,9 +285,9 @@
 14	mín	ég	PRON	PRO-G	Case=Gen	9	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.14
-# X_ID = ID_missing_19
-# text = Mér fannst hann meira vera að lýsa sinni skoðun.
+# sent_id = G-33-4927424,.19
+# X_ID = ID_MISSING
+# text = Mér fannst hann meira vera að lýsa sinni skoðun .
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	fannst	finna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	hann	hann	PRON	PRO-N	Case=Nom	7	nsubj	_	_
@@ -279,9 +299,6 @@
 9	skoðun	skoðun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obj	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4927424,.15
-# X_ID = ID_missing_20
-# text = Hann hefur þá tækifæri til að gera það núna í seinna andsvari.
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -293,6 +310,6 @@
 9	núna	núna	ADV	ADV	Degree=Pos	7	advmod	_	_
 10	í	í	ADP	P	_	12	case	_	_
 11	seinna	seinn	ADJ	ADJR-D	Case=Dat|Degree=Cmp	12	amod	_	_
-12	andsvari	andsvar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
+12	andsvari	andsvar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
 13	.	.	PUNCT	.	_	2	punct	_	_
 

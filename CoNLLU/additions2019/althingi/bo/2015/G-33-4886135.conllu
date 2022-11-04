@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2015_G-33-4886135,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Virðulegi forseti. Það liggur fyrir að í rammaáætlun 3 komu fram gögn, komu fram upplýsingar, sem ekki lágu fyrir í rammaáætlun 2 og ég er þannig gerð að mér þykir betra að taka upplýstar ákvarðanir en ekki þannig að ég mundi alltaf miða við það.
+# sent_id = G-33-4886135,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Það liggur fyrir að í rammaáætlun 3 komu fram gögn, komu fram upplýsingar, sem ekki lágu fyrir í rammaáætlun 2
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -26,34 +26,38 @@
 23	í	í	ADP	P	_	24	case	_	_
 24	rammaáætlun	rammaáætlun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
 25	2	tveir	NUM	NUM	_	24	nmod:poss	_	_
-26	og	og	CCONJ	CONJ	_	27	cc	_	_
-27	ég	ég	PRON	PRO-N	Case=Nom	5	conj	_	OriginalHead=0
-28	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
-29	þannig	þannig	ADV	ADV	Degree=Pos	30	advmod	_	_
-30	gerð	gera	VERB	DAN	Tense=Past|VerbForm=Part	27	acl	_	_
-31	að	að	SCONJ	C	_	33	mark	_	_
-32	mér	ég	PRON	PRO-D	Case=Dat	33	nsubj	_	_
-33	þykir	þykja	VERB	VBPI	Mood=Ind|Tense=Pres	30	advcl	_	_
-34	betra	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	36	amod	_	_
-35	að	að	PART	TO	_	36	mark	_	_
-36	taka	taka	VERB	VB	VerbForm=Inf	33	xcomp	_	_
-37	upplýstar	upplýstur	ADJ	ADJ-A	Case=Acc|Degree=Pos	38	amod	_	_
-38	ákvarðanir	ákvörðun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	36	obj	_	_
-39	en	en	CCONJ	CONJ	_	27	cc	_	_
-40	ekki	ekki	ADV	NEG	_	27	advmod	_	_
-41	þannig	þannig	ADV	ADV	Degree=Pos	27	advmod	_	_
-42	að	að	SCONJ	C	_	44	mark	_	_
-43	ég	ég	PRON	PRO-N	Case=Nom	44	nsubj	_	_
-44	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	27	ccomp	_	_
-45	alltaf	alltaf	ADV	ADV	Degree=Pos	44	advmod	_	_
-46	miða	miða	VERB	VB	VerbForm=Inf	44	xcomp	_	_
-47	við	við	ADP	P	_	48	case	_	_
-48	það	það	PRON	PRO-A	Case=Acc	44	obl	_	SpaceAfter=No
-49	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4886135,.2
-# X_ID = ID_missing_3
-# text = Það er ekki gott að fara til baka og segja, með rammaáætlun 2, hvernig hlutirnir hefðu verið hefði ég vitað minna.
+# sent_id = G-33-4886135,.2
+# X_ID = ID_MISSING
+# text = og ég er þannig gerð að mér þykir betra að taka upplýstar ákvarðanir en ekki þannig að ég mundi alltaf miða við það .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	0	root	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
+4	þannig	þannig	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	gerð	gera	VERB	DAN	Tense=Past|VerbForm=Part	2	acl	_	_
+6	að	að	SCONJ	C	_	8	mark	_	_
+7	mér	ég	PRON	PRO-D	Case=Dat	8	nsubj	_	_
+8	þykir	þykja	VERB	VBPI	Mood=Ind|Tense=Pres	5	advcl	_	_
+9	betra	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	11	amod	_	_
+10	að	að	PART	TO	_	11	mark	_	_
+11	taka	taka	VERB	VB	VerbForm=Inf	8	xcomp	_	_
+12	upplýstar	upplýstur	ADJ	ADJ-A	Case=Acc|Degree=Pos	13	amod	_	_
+13	ákvarðanir	ákvörðun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
+14	en	en	CCONJ	CONJ	_	2	cc	_	_
+15	ekki	ekki	ADV	NEG	_	2	advmod	_	_
+16	þannig	þannig	ADV	ADV	Degree=Pos	2	advmod	_	_
+17	að	að	SCONJ	C	_	19	mark	_	_
+18	ég	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
+19	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	2	ccomp	_	_
+20	alltaf	alltaf	ADV	ADV	Degree=Pos	19	advmod	_	_
+21	miða	miða	VERB	VB	VerbForm=Inf	19	xcomp	_	_
+22	við	við	ADP	P	_	23	case	_	_
+23	það	það	PRON	PRO-A	Case=Acc	19	obl	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4886135,.3
+# X_ID = ID_MISSING
+# text = Það er ekki gott að fara til baka og segja, með rammaáætlun 2, hvernig hlutirnir hefðu verið hefði ég vitað minna .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -79,9 +83,9 @@
 23	minna	lítill	DET	QR-A	Case=Acc	22	obj	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4886135,.3
-# X_ID = ID_missing_4
-# text = Ég veit ekki af hverju maður ætti að vilja það.
+# sent_id = G-33-4886135,.4
+# X_ID = ID_MISSING
+# text = Ég veit ekki af hverju maður ætti að vilja það .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -94,9 +98,9 @@
 10	það	það	PRON	PRO-A	Case=Acc	7	xcomp	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4886135,.4
-# X_ID = ID_missing_5
-# text = En ég hef það að leiðarljósi að hlíta þeim úrskurði sem verkefnisstjórn rammaáætlunar kveður upp og mælir með til ráðherra.
+# sent_id = G-33-4886135,.5
+# X_ID = ID_MISSING
+# text = En ég hef það að leiðarljósi að hlíta þeim úrskurði sem verkefnisstjórn rammaáætlunar kveður upp og mælir með til ráðherra .
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -119,9 +123,9 @@
 20	ráðherra	ráðherra	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	17	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4886135,.5
-# X_ID = ID_missing_6
-# text = Ég hef trú á ferlinu.
+# sent_id = G-33-4886135,.6
+# X_ID = ID_MISSING
+# text = Ég hef trú á ferlinu .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
@@ -129,9 +133,9 @@
 5	ferlinu	ferli	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4886135,.6
-# X_ID = ID_missing_7
-# text = Ég hef séð sjálf hvernig verkefnisstjórn vinnur.
+# sent_id = G-33-4886135,.7
+# X_ID = ID_MISSING
+# text = Ég hef séð sjálf hvernig verkefnisstjórn vinnur .
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	séð	sjá	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -141,9 +145,9 @@
 7	vinnur	vinna	VERB	VBPI	Mood=Ind|Tense=Pres	3	ccomp	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4886135,.7
-# X_ID = ID_missing_8
-# text = Mér finnst það faglegt ferli.
+# sent_id = G-33-4886135,.8
+# X_ID = ID_MISSING
+# text = Mér finnst það faglegt ferli .
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -151,24 +155,25 @@
 5	ferli	ferli	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4886135,.8
-# X_IDs = ID_missing_9 ; ID_missing_10
-# text = Mér finnst það heiðarlegt og ég hef trú á því.
+# sent_id = G-33-4886135,.9
+# X_ID = ID_MISSING
+# text = Mér finnst það heiðarlegt
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 4	heiðarlegt	heiðarlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	_
-5	og	og	CCONJ	CONJ	_	7	cc	_	_
-6	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-7	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-8	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
-9	á	á	ADP	P	_	10	case	_	_
-10	því	það	PRON	PRO-D	Case=Dat	8	obl	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4886135,.9
-# X_ID = ID_missing_11
-# text = Ég hef trú á því að verkefnisstjórnin sé til þess bær, og þetta skapalón sé þannig sniðið, að geta fært okkur bestu niðurstöðu.
+# sent_id = G-33-4886135,.10
+# X_ID = ID_MISSING
+# text = og ég hef trú á því .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	því	það	PRON	PRO-D	Case=Dat	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	3	punct	_	_
+
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	trú	trú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
@@ -179,20 +184,20 @@
 8	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	11	cop	_	_
 9	til	til	ADP	P	_	10	case	_	_
 10	þess	það	PRON	PRO-G	Case=Gen	11	amod	_	_
-11	bær	bær	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	ccomp	_	SpaceAfter=No
+11	bær	bær	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	ccomp	_	_
 12	,	,	PUNCT	,	_	11	punct	_	_
 13	og	og	CCONJ	CONJ	_	18	cc	_	_
 14	þetta	þessi	DET	D-N	Case=Nom	15	det	_	_
 15	skapalón	skapalón	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
 16	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	18	cop	_	_
 17	þannig	þannig	ADV	ADV	Degree=Pos	18	amod	_	_
-18	sniðið	sníða	VERB	VAN	Tense=Past|VerbForm=Part	11	conj	_	SpaceAfter=No
+18	sniðið	sníða	VERB	VAN	Tense=Past|VerbForm=Part	11	conj	_	_
 19	,	,	PUNCT	,	_	18	punct	_	_
 20	að	að	PART	TO	_	22	mark	_	_
 21	geta	geta	AUX	MD	VerbForm=Inf	22	aux	_	_
 22	fært	færa	VERB	VBN	Tense=Past|VerbForm=Part	18	amod	_	_
 23	okkur	ég	PRON	PRO-D	Case=Dat	22	iobj	_	_
 24	bestu	góður	ADJ	ADJS-A	Case=Acc|Degree=Sup	25	amod	_	_
-25	niðurstöðu	niðurstaða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obj	_	SpaceAfter=No
+25	niðurstöðu	niðurstaða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obj	_	_
 26	.	.	PUNCT	.	_	2	punct	_	_
 

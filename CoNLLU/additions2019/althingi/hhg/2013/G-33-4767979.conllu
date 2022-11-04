@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4767979,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Ég þakka hv. þingmanni fyrir spurninguna.
+# sent_id = G-33-4767979,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég þakka hv. þingmanni fyrir spurninguna .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -12,9 +12,9 @@
 9	spurninguna	spurning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4767979,.2
-# X_ID = ID_missing_2
-# text = Það má spyrja 34 þús. undirskrifara hvort þetta eigi heima í þjóðaratkvæðagreiðslu eða ekki.
+# sent_id = G-33-4767979,.2
+# X_ID = ID_MISSING
+# text = Það má spyrja 34 þús. undirskrifara hvort þetta eigi heima í þjóðaratkvæðagreiðslu eða ekki .
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	spyrja	spyrja	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -31,9 +31,9 @@
 14	ekki	ekki	ADV	NEG	_	9	conj	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4767979,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Fyrir mig persónulega er það í reynd nóg en úr því að hv. þingmaður víkur að tæknilegu atriðunum er í raun og veru lítið að segja um tæknilegu útfærsluna fyrr en fólk hefur fundið með sér að það hafi eitthvað að segja um málið.
+# sent_id = G-33-4767979,.3
+# X_ID = ID_MISSING
+# text = Fyrir mig persónulega er það í reynd nóg
 1	Fyrir	fyrir	ADP	P	_	2	case	_	_
 2	mig	ég	PRON	PRO-A	Case=Acc	8	obl	_	_
 3	persónulega	persónulega	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -42,47 +42,51 @@
 6	í	í	ADP	P	_	7	case	_	_
 7	reynd	reynd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
 8	nóg	nógur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-9	en	en	CCONJ	CONJ	_	11	cc	_	_
-10	úr	úr	ADP	P	_	11	case	_	_
-11	því	það	PRON	PRO-D	Case=Dat	8	conj	_	OriginalHead=0
-12	að	að	SCONJ	C	_	15	mark	_	_
-13	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	14	amod	_	_
-14	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
-15	víkur	víkja	VERB	VBPI	Mood=Ind|Tense=Pres	11	ccomp	_	_
-16	að	að	ADP	P	_	18	case	_	_
-17	tæknilegu	tæknilegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	18	amod	_	_
-18	atriðunum	atriði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	_
-19	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
-20	í	í	ADP	P	_	21	case	_	_
-21	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
-22	og	og	CCONJ	CONJ	_	23	cc	_	_
-23	veru	vera	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	conj	_	_
-24	lítið	lítill	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	nsubj	_	_
-25	að	að	PART	TO	_	26	mark	_	_
-26	segja	segja	VERB	VB	VerbForm=Inf	11	xcomp	_	_
-27	um	um	ADP	P	_	29	case	_	_
-28	tæknilegu	tæknilegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	29	amod	_	_
-29	útfærsluna	útfærsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obl	_	_
-30	fyrr	snemmt	ADV	ADVR	Degree=Cmp	11	advmod	_	_
-31	en	en	ADP	P	_	34	case	_	_
-32	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	34	nsubj	_	_
-33	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	34	aux	_	_
-34	fundið	finna	VERB	VBN	Tense=Past|VerbForm=Part	30	obl	_	_
-35	með	með	ADP	P	_	36	case	_	_
-36	sér	sig	PRON	PRO-D	Case=Dat	34	obl	_	_
-37	að	að	SCONJ	C	_	39	mark	_	_
-38	það	það	PRON	PRO-N	Case=Nom	39	nsubj	_	_
-39	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	34	ccomp	_	_
-40	eitthvað	einhver	DET	Q-A	Case=Acc	39	ccomp	_	_
-41	að	að	PART	TO	_	42	mark	_	_
-42	segja	segja	VERB	VB	VerbForm=Inf	40	xcomp	_	_
-43	um	um	ADP	P	_	44	case	_	_
-44	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	42	obl	_	SpaceAfter=No
-45	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4767979,.4
-# X_IDs = ID_missing_5 ; ID_missing_6
-# text = Segjum að forseti lýðveldisins mundi neita að skrifa undir, þá yrði fréttin sú að þetta færi í þjóðaratkvæðagreiðslu.
+# sent_id = G-33-4767979,.4
+# X_ID = ID_MISSING
+# text = en úr því að hv. þingmaður víkur að tæknilegu atriðunum er í raun og veru lítið að segja um tæknilegu útfærsluna fyrr en fólk hefur fundið með sér að það hafi eitthvað að segja um málið .
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	úr	úr	ADP	P	_	3	case	_	_
+3	því	það	PRON	PRO-D	Case=Dat	0	root	_	_
+4	að	að	SCONJ	C	_	7	mark	_	_
+5	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
+6	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
+7	víkur	víkja	VERB	VBPI	Mood=Ind|Tense=Pres	3	ccomp	_	_
+8	að	að	ADP	P	_	10	case	_	_
+9	tæknilegu	tæknilegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	10	amod	_	_
+10	atriðunum	atriði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	_
+11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+12	í	í	ADP	P	_	13	case	_	_
+13	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+14	og	og	CCONJ	CONJ	_	15	cc	_	_
+15	veru	vera	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	conj	_	_
+16	lítið	lítill	ADJ	ADJ-A	Case=Acc|Degree=Pos	3	nsubj	_	_
+17	að	að	PART	TO	_	18	mark	_	_
+18	segja	segja	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+19	um	um	ADP	P	_	21	case	_	_
+20	tæknilegu	tæknilegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	21	amod	_	_
+21	útfærsluna	útfærsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
+22	fyrr	snemmt	ADV	ADVR	Degree=Cmp	3	advmod	_	_
+23	en	en	ADP	P	_	26	case	_	_
+24	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	26	nsubj	_	_
+25	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	26	aux	_	_
+26	fundið	finna	VERB	VBN	Tense=Past|VerbForm=Part	22	obl	_	_
+27	með	með	ADP	P	_	28	case	_	_
+28	sér	sig	PRON	PRO-D	Case=Dat	26	obl	_	_
+29	að	að	SCONJ	C	_	31	mark	_	_
+30	það	það	PRON	PRO-N	Case=Nom	31	nsubj	_	_
+31	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	26	ccomp	_	_
+32	eitthvað	einhver	DET	Q-A	Case=Acc	31	ccomp	_	_
+33	að	að	PART	TO	_	34	mark	_	_
+34	segja	segja	VERB	VB	VerbForm=Inf	32	xcomp	_	_
+35	um	um	ADP	P	_	36	case	_	_
+36	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4767979,.5
+# X_ID = ID_MISSING
+# text = Segjum að forseti lýðveldisins mundi neita að skrifa undir,
 1	Segjum	segja	VERB	VBPS	Mood=Sub|Tense=Pres	0	root	_	_
 2	að	að	SCONJ	C	_	6	mark	_	_
 3	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
@@ -92,21 +96,25 @@
 7	að	að	PART	TO	_	8	mark	_	_
 8	skrifa	skrifa	VERB	VB	VerbForm=Inf	6	xcomp	_	_
 9	undir	undir	ADP	RP	_	8	compound:prt	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	8	punct	_	_
-11	þá	þá	ADV	ADV	Degree=Pos	12	advmod	_	_
-12	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	1	conj	_	OriginalHead=0
-13	fréttin	frétt	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
-14	sú	sá	DET	D-N	Case=Nom	12	xcomp	_	_
-15	að	að	SCONJ	C	_	17	mark	_	_
-16	þetta	þessi	DET	D-N	Case=Nom	17	nsubj	_	_
-17	færi	fara	VERB	VBDS	Mood=Sub|Tense=Past	14	ccomp	_	_
-18	í	í	ADP	P	_	19	case	_	_
-19	þjóðaratkvæðagreiðslu	þjóðaratkvæðagreiðsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	1	punct	_	_
+10	,	,	PUNCT	,	_	1	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4767979,.5
-# X_ID = ID_missing_7
-# text = Þá fyrst mundi myndast sá þrýstingur sem þyrfti til til að umræðan næði því stigi að hægt væri að tala um það sem er kallað tæknileg atriði með viðunandi hætti.
+# sent_id = G-33-4767979,.6
+# X_ID = ID_MISSING
+# text = þá yrði fréttin sú að þetta færi í þjóðaratkvæðagreiðslu .
+1	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	0	root	_	_
+3	fréttin	frétt	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+4	sú	sá	DET	D-N	Case=Nom	2	xcomp	_	_
+5	að	að	SCONJ	C	_	7	mark	_	_
+6	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
+7	færi	fara	VERB	VBDS	Mood=Sub|Tense=Past	4	ccomp	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	þjóðaratkvæðagreiðslu	þjóðaratkvæðagreiðsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4767979,.7
+# X_ID = ID_MISSING
+# text = Þá fyrst mundi myndast sá þrýstingur sem þyrfti til til að umræðan næði því stigi að hægt væri að tala um það sem er kallað tæknileg atriði með viðunandi hætti .
 1	Þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	fyrst	snemmt	ADV	ADVS	Degree=Sup	1	advmod	_	_
 3	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	4	aux	_	_
@@ -139,9 +147,9 @@
 30	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4767979,.6
-# X_ID = ID_missing_8
-# text = Að því sögðu skal ég viðurkenna að eins og það er núna er það ekki mjög heppilegt til umræðu vegna þess að enginn hefur séð sér neinn hag í því að kynna sér þessi tæknilegu atriði.
+# sent_id = G-33-4767979,.8
+# X_ID = ID_MISSING
+# text = Að því sögðu skal ég viðurkenna að eins og það er núna er það ekki mjög heppilegt til umræðu vegna þess að enginn hefur séð sér neinn hag í því að kynna sér þessi tæknilegu atriði .
 1	Að	að	ADP	P	_	3	case	_	_
 2	því	það	PRON	PRO-D	Case=Dat	3	nsubj	_	_
 3	sögðu	segja	VERB	VAN-D	Case=Dat|Tense=Past|VerbForm=Part	6	obl	_	_
@@ -180,9 +188,9 @@
 36	atriði	atriði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	32	obj	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4767979,.7
-# X_IDs = ID_missing_9 ; ID_missing_10
-# text = Það er vegna þess að fólk hefur ekkert val, það hefur ekkert um málið að segja.
+# sent_id = G-33-4767979,.9
+# X_ID = ID_MISSING
+# text = Það er vegna þess að fólk hefur ekkert val,
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	vegna	vegna	ADP	P	_	4	case	_	_
@@ -193,18 +201,22 @@
 8	ekkert	enginn	DET	Q-A	Case=Acc	9	amod	_	_
 9	val	val	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	4	punct	_	_
-11	það	það	PRON	PRO-N	Case=Nom	12	nsubj	_	_
-12	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-13	ekkert	enginn	DET	Q-A	Case=Acc	12	obj	_	_
-14	um	um	ADP	P	_	15	case	_	_
-15	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
-16	að	að	PART	TO	_	17	mark	_	_
-17	segja	segja	VERB	VB	VerbForm=Inf	12	xcomp	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4767979,.8
-# X_IDs = ID_missing_11 ; ID_missing_12
-# text = Það hefur bara þennan eina bókstaf eftir fjögur ár og til hvers?
+# sent_id = G-33-4767979,.10
+# X_ID = ID_MISSING
+# text = það hefur ekkert um málið að segja .
+1	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	2	obj	_	_
+4	um	um	ADP	P	_	5	case	_	_
+5	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	segja	segja	VERB	VB	VerbForm=Inf	2	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4767979,.11
+# X_ID = ID_MISSING
+# text = Það hefur bara þennan eina bókstaf eftir fjögur ár
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
@@ -214,14 +226,18 @@
 7	eftir	eftir	ADP	P	_	9	case	_	_
 8	fjögur	fjórir	NUM	NUM-A	Case=Acc	9	nummod	_	_
 9	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
-10	og	og	CCONJ	CONJ	_	2	conj	_	OriginalHead=0
-11	til	til	ADP	P	_	12	case	_	_
-12	hvers	hver	PRON	WPRO-G	Case=Gen	10	obl	_	SpaceAfter=No
-13	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4767979,.9
-# X_ID = ID_missing_13
-# text = Til hvers ætti venjulegur maður úti í bæ núna að fara að kynna sér muninn á botnsjávarfiskum og uppsjávarfiskum og öllu þessu?
+# sent_id = G-33-4767979,.12
+# X_ID = ID_MISSING
+# text = og til hvers ?
+1	og	og	CCONJ	CONJ	_	0	root	_	_
+2	til	til	ADP	P	_	3	case	_	_
+3	hvers	hver	PRON	WPRO-G	Case=Gen	1	obl	_	SpaceAfter=No
+4	?	?	PUNCT	.	_	1	punct	_	_
+
+# sent_id = G-33-4767979,.13
+# X_ID = ID_MISSING
+# text = Til hvers ætti venjulegur maður úti í bæ núna að fara að kynna sér muninn á botnsjávarfiskum og uppsjávarfiskum og öllu þessu ?
 1	Til	til	ADP	P	_	2	case	_	_
 2	hvers	hver	PRON	WPRO-G	Case=Gen	3	obl	_	_
 3	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	0	root	_	_
@@ -246,9 +262,9 @@
 22	þessu	þessi	DET	D-D	Case=Dat	21	det	_	SpaceAfter=No
 23	?	?	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4767979,.10
-# X_ID = ID_missing_14
-# text = Hann hefur enga ástæðu til þess.
+# sent_id = G-33-4767979,.14
+# X_ID = ID_MISSING
+# text = Hann hefur enga ástæðu til þess .
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	enga	enginn	DET	Q-A	Case=Acc	4	amod	_	_
@@ -257,9 +273,6 @@
 6	þess	það	PRON	PRO-G	Case=Gen	4	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4767979,.11
-# X_ID = ID_missing_15
-# text = Það er ekki fyrr en ákvörðunin er lögð í hendur þjóðarinnar sem þjóðin fær raunverulega ástæðu til að kynna sér málin þannig að lýðræðið verði virkara og umræðan að öllu leyti betri.
 1	Það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	ekki	ekki	ADV	NEG	_	1	advmod	_	_
@@ -291,6 +304,6 @@
 29	að	að	ADP	P	_	31	case	_	_
 30	öllu	allur	DET	Q-D	Case=Dat	31	amod	_	_
 31	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
-32	betri	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	25	conj	_	SpaceAfter=No
+32	betri	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	25	conj	_	_
 33	.	.	PUNCT	.	_	1	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_TKG_2011_G-33-4595689,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Frú forseti. Ég fagna sérstaklega skilningi og í rauninni velvilja hæstv. velferðarráðherra gagnvart fæðingarorlofinu og ég vona að hann eigi sér bandamenn innan ríkisstjórnar Íslands.
+# sent_id = G-33-4595689,.1
+# X_ID = ID_MISSING
+# text = Frú forseti . Ég fagna sérstaklega skilningi og í rauninni velvilja hæstv. velferðarráðherra gagnvart fæðingarorlofinu
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -16,54 +16,62 @@
 13	velferðarráðherra	velferðarráðherra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
 14	gagnvart	gagnvart	ADP	P	_	15	case	_	_
 15	fæðingarorlofinu	fæðingarorlof	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-16	og	og	CCONJ	CONJ	_	18	cc	_	_
-17	ég	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
-18	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
-19	að	að	SCONJ	C	_	21	mark	_	_
-20	hann	hann	PRON	PRO-N	Case=Nom	21	nsubj	_	_
-21	eigi	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	18	ccomp	_	_
-22	sér	sig	PRON	PRO-D	Case=Dat	21	iobj	_	_
-23	bandamenn	bandamaður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	21	obj	_	_
-24	innan	innan	ADP	P	_	25	case	_	_
-25	ríkisstjórnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	obl	_	_
-26	Íslands	ísland	PROPN	NPR-G	_	25	nmod:poss	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4595689,.2
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Það var ekki þannig síðast en ég vona að við eigum ekki eftir að sjá vanhugsaðar breytingar á fæðingarorlofinu eins og voru settar fram á sínum tíma.
+# sent_id = G-33-4595689,.2
+# X_ID = ID_MISSING
+# text = og ég vona að hann eigi sér bandamenn innan ríkisstjórnar Íslands .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	að	að	SCONJ	C	_	6	mark	_	_
+5	hann	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	eigi	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
+7	sér	sig	PRON	PRO-D	Case=Dat	6	iobj	_	_
+8	bandamenn	bandamaður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
+9	innan	innan	ADP	P	_	10	case	_	_
+10	ríkisstjórnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
+11	Íslands	ísland	PROPN	NPR-G	_	10	nmod:poss	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4595689,.3
+# X_ID = ID_MISSING
+# text = Það var ekki þannig síðast
 1	Það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	1	cop	_	_
 3	ekki	ekki	ADV	NEG	_	1	advmod	_	_
 4	þannig	þannig	ADV	ADV	Degree=Pos	1	advmod	_	_
 5	síðast	síðar	ADV	ADVS	Degree=Sup	1	advmod	_	_
-6	en	en	CCONJ	CONJ	_	8	cc	_	_
-7	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
-8	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
-9	að	að	SCONJ	C	_	11	mark	_	_
-10	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-11	eigum	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	8	ccomp	_	_
-12	ekki	ekki	ADV	NEG	_	11	advmod	_	_
-13	eftir	eftir	ADV	ADV	Degree=Pos	15	advmod	_	_
-14	að	að	PART	TO	_	15	mark	_	_
-15	sjá	sjá	VERB	VB	VerbForm=Inf	11	ccomp	_	_
-16	vanhugsaðar	vanhugsaður	ADJ	ADJ-A	Case=Acc|Degree=Pos	17	amod	_	_
-17	breytingar	breyting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obj	_	_
-18	á	á	ADP	P	_	19	case	_	_
-19	fæðingarorlofinu	fæðingarorlof	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
-20	eins	_	ADV	ADVR	Degree=Cmp	17	advmod	_	_
-21	og	_	ADP	P	_	23	case	_	_
-22	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	23	cop	_	_
-23	settar	setja	VERB	VAN	Tense=Past|VerbForm=Part	20	obl	_	_
-24	fram	fram	ADP	RP	_	23	compound:prt	_	_
-25	á	á	ADP	P	_	27	case	_	_
-26	sínum	sinn	PRON	PRO-D	Case=Dat	27	nmod:poss	_	_
-27	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4595689,.3
-# X_ID = ID_missing_5
-# text = Varðandi hitt, að kynjuð fjárlagagerð eða kynjuð hagstjórn hefði hugsanlega komið í veg fyrir þær tillögur sem beindust sérstaklega eins og ég talaði um áðan að konum, ekki síst á landsbyggðinni, þá er það oft bara spurning um fyrirgefið, frú forseti, þó að ég sletti kommon sens í svona máli.
+# sent_id = G-33-4595689,.4
+# X_ID = ID_MISSING
+# text = en ég vona að við eigum ekki eftir að sjá vanhugsaðar breytingar á fæðingarorlofinu eins og voru settar fram á sínum tíma .
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	að	að	SCONJ	C	_	6	mark	_	_
+5	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	eigum	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
+7	ekki	ekki	ADV	NEG	_	6	advmod	_	_
+8	eftir	eftir	ADV	ADV	Degree=Pos	10	advmod	_	_
+9	að	að	PART	TO	_	10	mark	_	_
+10	sjá	sjá	VERB	VB	VerbForm=Inf	6	ccomp	_	_
+11	vanhugsaðar	vanhugsaður	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
+12	breytingar	breyting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	_
+13	á	á	ADP	P	_	14	case	_	_
+14	fæðingarorlofinu	fæðingarorlof	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+15	eins	_	ADV	ADVR	Degree=Cmp	12	advmod	_	_
+16	og	_	ADP	P	_	18	case	_	_
+17	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	18	cop	_	_
+18	settar	setja	VERB	VAN	Tense=Past|VerbForm=Part	15	obl	_	_
+19	fram	fram	ADP	RP	_	18	compound:prt	_	_
+20	á	á	ADP	P	_	22	case	_	_
+21	sínum	sinn	PRON	PRO-D	Case=Dat	22	nmod:poss	_	_
+22	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4595689,.5
+# X_ID = ID_MISSING
+# text = Varðandi hitt, að kynjuð fjárlagagerð eða kynjuð hagstjórn hefði hugsanlega komið í veg fyrir þær tillögur sem beindust sérstaklega eins og ég talaði um áðan að konum, ekki síst á landsbyggðinni, þá er það oft bara spurning um fyrirgefið, frú forseti, þó að ég sletti kommon sens í svona máli .
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	40	dep	_	_
 2	hitt	hinn	DET	D-A	Case=Acc	1	obj	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	2	punct	_	_
@@ -121,9 +129,9 @@
 55	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	40	obl	_	SpaceAfter=No
 56	.	.	PUNCT	.	_	40	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4595689,.4
-# X_ID = ID_missing_6
-# text = Það þarf ekki alltaf greiningartæki til þess að sjá hvað er helsta vinnuafl ríkisins, til að mynda á landsbyggðinni eða innan heilbrigðiskerfisins eða menntakerfisins.
+# sent_id = G-33-4595689,.6
+# X_ID = ID_MISSING
+# text = Það þarf ekki alltaf greiningartæki til þess að sjá hvað er helsta vinnuafl ríkisins, til að mynda á landsbyggðinni eða innan heilbrigðiskerfisins eða menntakerfisins .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -151,9 +159,9 @@
 25	menntakerfisins	menntakerfi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	conj	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4595689,.5
-# X_ID = ID_missing_7
-# text = Það eru konur að meginhluta.
+# sent_id = G-33-4595689,.7
+# X_ID = ID_MISSING
+# text = Það eru konur að meginhluta .
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	konur	kona	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
@@ -161,9 +169,9 @@
 5	meginhluta	meginhluti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4595689,.6
-# X_ID = ID_missing_8
-# text = Ef tillögurnar beinast nákvæmlega að þeim geirum munu þær bitna á konum.
+# sent_id = G-33-4595689,.8
+# X_ID = ID_MISSING
+# text = Ef tillögurnar beinast nákvæmlega að þeim geirum munu þær bitna á konum .
 1	Ef	ef	ADP	P	_	3	case	_	_
 2	tillögurnar	tillaga	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
 3	beinast	beina	VERB	VBPI	Mood=Ind|Tense=Pres	10	obl	_	_
@@ -178,9 +186,9 @@
 12	konum	kona	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4595689,.7
-# X_ID = ID_missing_9
-# text = Það þarf enga sérstaka kynjaða fjárlagagerð til að sjá það.
+# sent_id = G-33-4595689,.9
+# X_ID = ID_MISSING
+# text = Það þarf enga sérstaka kynjaða fjárlagagerð til að sjá það .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	enga	enginn	DET	Q-A	Case=Acc	6	amod	_	_
@@ -193,9 +201,9 @@
 10	það	það	PRON	PRO-A	Case=Acc	9	obj	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4595689,.8
-# X_ID = ID_missing_10
-# text = Ég vil hins vegar hvetja hæstv. velferðarráðherra til dáða í þessu máli.
+# sent_id = G-33-4595689,.10
+# X_ID = ID_MISSING
+# text = Ég vil hins vegar hvetja hæstv. velferðarráðherra til dáða í þessu máli .
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
 3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
@@ -210,9 +218,6 @@
 12	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4595689,.9
-# X_ID = ID_missing_11
-# text = Ég tel að það sé mikilvægt að farið verði gaumgæfilega yfir þá jafnréttisáætlun sem byggir á lögunum frá 2008 þannig að við getum sameinast um það, þingheimur, að stuðla áfram að viðgangi og eflingu jafnréttismála hér á landi.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -238,9 +243,9 @@
 23	getum	geta	AUX	MDPS	Mood=Sub|Tense=Pres	24	aux	_	_
 24	sameinast	sameina	VERB	VBN	Tense=Past|VerbForm=Part	20	advcl	_	_
 25	um	um	ADP	P	_	26	case	_	_
-26	það	það	PRON	PRO-A	Case=Acc	24	obl	_	SpaceAfter=No
+26	það	það	PRON	PRO-A	Case=Acc	24	obl	_	_
 27	,	,	PUNCT	,	_	26	punct	_	_
-28	þingheimur	þingheimur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	obl	_	SpaceAfter=No
+28	þingheimur	þingheimur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	obl	_	_
 29	,	,	PUNCT	,	_	28	punct	_	_
 30	að	að	PART	TO	_	31	mark	_	_
 31	stuðla	stuðla	VERB	VB	VerbForm=Inf	24	xcomp	_	_
@@ -252,6 +257,6 @@
 37	jafnréttismála	jafnréttismál	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	34	nmod:poss	_	_
 38	hér	hér	ADV	ADV	Degree=Pos	40	advmod	_	_
 39	á	á	ADP	P	_	40	case	_	_
-40	landi	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	SpaceAfter=No
+40	landi	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	_
 41	.	.	PUNCT	.	_	2	punct	_	_
 

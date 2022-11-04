@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2013_G-33-4666392,.1
-# X_ID = ID_missing_1
-# text = Mig langaði líka að koma að, ég gleymdi því áðan og kom því heldur ekki að, komugjöldunum eins og þau heita víst núna, ekki legugjöld lengur.
+# sent_id = G-33-4666392,.1
+# X_ID = ID_MISSING
+# text = Mig langaði líka að koma að, ég gleymdi því áðan og kom því heldur ekki að, komugjöldunum eins og þau heita víst núna, ekki legugjöld lengur .
 1	Mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
 2	langaði	langa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	líka	líka	ADV	ALSO	_	2	advmod	_	_
@@ -32,9 +32,9 @@
 29	lengur	lengi	ADV	ADVR	Degree=Cmp	28	obl	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2013_G-33-4666392,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Það er erfitt að taka afstöðu til einhvers í fjárlagafrumvarpi sem maður veit ekki hvað er og mér heyrist enginn vita hvernig þessi komugjöld eiga að vera.
+# sent_id = G-33-4666392,.2
+# X_ID = ID_MISSING
+# text = Það er erfitt að taka afstöðu til einhvers í fjárlagafrumvarpi sem maður veit ekki hvað er
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -51,22 +51,26 @@
 14	ekki	ekki	ADV	NEG	_	13	advmod	_	_
 15	hvað	hver	PRON	WPRO-N	Case=Nom	16	obj	_	_
 16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	ccomp	_	_
-17	og	og	CCONJ	CONJ	_	19	cc	_	_
-18	mér	ég	PRON	PRO-D	Case=Dat	19	nsubj	_	_
-19	heyrist	heyra	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-20	enginn	enginn	DET	Q-N	Case=Nom	21	nsubj	_	_
-21	vita	vita	VERB	VB	VerbForm=Inf	19	xcomp	_	_
-22	hvernig	hvernig	ADV	WADV	Degree=Pos	25	advmod	_	_
-23	þessi	þessi	DET	D-N	Case=Nom	24	det	_	_
-24	komugjöld	komugjald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	25	nsubj	_	_
-25	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	21	ccomp	_	_
-26	að	að	PART	TO	_	27	mark	_	_
-27	vera	vera	AUX	BE	VerbForm=Inf	25	xcomp	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2013_G-33-4666392,.3
-# X_ID = ID_missing_4
-# text = Við í velferðarnefnd vorum þó svo lánsöm í morgun að fá einhverjar útskýringar frá Landspítalanum um hvernig þau héldu að þetta mundi líta út.
+# sent_id = G-33-4666392,.3
+# X_ID = ID_MISSING
+# text = og mér heyrist enginn vita hvernig þessi komugjöld eiga að vera .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
+3	heyrist	heyra	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	enginn	enginn	DET	Q-N	Case=Nom	5	nsubj	_	_
+5	vita	vita	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	hvernig	hvernig	ADV	WADV	Degree=Pos	9	advmod	_	_
+7	þessi	þessi	DET	D-N	Case=Nom	8	det	_	_
+8	komugjöld	komugjald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
+9	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	5	ccomp	_	_
+10	að	að	PART	TO	_	11	mark	_	_
+11	vera	vera	AUX	BE	VerbForm=Inf	9	xcomp	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4666392,.4
+# X_ID = ID_MISSING
+# text = Við í velferðarnefnd vorum þó svo lánsöm í morgun að fá einhverjar útskýringar frá Landspítalanum um hvernig þau héldu að þetta mundi líta út .
 1	Við	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 2	í	í	ADP	P	_	3	case	_	_
 3	velferðarnefnd	velferðarnefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
@@ -93,9 +97,9 @@
 24	út	út	ADP	RP	_	23	compound:prt	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = ALTHINGI_BO_2013_G-33-4666392,.4
-# X_ID = ID_missing_5
-# text = Þá fengum við þær upplýsingar að miðað við um 30 þúsund komur á ári, þær voru það á síðasta ári, væri líklegt að um 1/3 mundi borga þetta komugjald, 2/3 eru börn og öryrkjar.
+# sent_id = G-33-4666392,.5
+# X_ID = ID_MISSING
+# text = Þá fengum við þær upplýsingar að miðað við um 30 þúsund komur á ári, þær voru það á síðasta ári, væri líklegt að um 1/3 mundi borga þetta komugjald, 2/3 eru börn og öryrkjar .
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	fengum	fá	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -137,9 +141,9 @@
 39	öryrkjar	öryrki	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	37	conj	_	SpaceAfter=No
 40	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2013_G-33-4666392,.5
-# X_ID = ID_missing_6
-# text = Þau höfðu auðvitað bara áhyggjur af því að geta ekki innheimt þetta.
+# sent_id = G-33-4666392,.6
+# X_ID = ID_MISSING
+# text = Þau höfðu auðvitað bara áhyggjur af því að geta ekki innheimt þetta .
 1	Þau	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	höfðu	hafa	VERB	HVDI	Mood=Ind|Tense=Past	0	root	_	_
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -154,9 +158,6 @@
 12	þetta	þessi	DET	D-A	Case=Acc	11	obj	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2013_G-33-4666392,.6
-# X_ID = ID_missing_7
-# text = En komugjaldið yrði eitthvað um 18 þús. kr., Forseti hringir. eftir því sem ég kemst næst.
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	komugjaldið	komugjald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	0	root	_	_
@@ -164,16 +165,16 @@
 5	um	um	ADP	P	_	8	case	_	_
 6	18	átján	NUM	NUM-A	Case=Acc	8	nummod	_	_
 7	þús.	þúsund	NUM	NUM-A	Case=Acc	8	nummod	_	_
-8	kr.	króna	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
+8	kr.	króna	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
 9	,	,	PUNCT	,	_	8	punct	_	_
 10	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
-11	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	3	dep	_	SpaceAfter=No
+11	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	3	dep	_	_
 12	.	.	PUNCT	.	_	11	punct	_	_
 13	eftir	eftir	ADP	P	_	14	case	_	_
 14	því	sá	DET	D-D	Case=Dat	3	obl	_	_
 15	sem	sem	SCONJ	C	_	17	mark	_	_
 16	ég	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
 17	kemst	koma	VERB	VBPI	Mood=Ind|Tense=Pres	14	acl:relcl	_	_
-18	næst	nærri	ADV	ADVS	Degree=Sup	17	advmod	_	SpaceAfter=No
+18	næst	nærri	ADV	ADVS	Degree=Sup	17	advmod	_	_
 19	.	.	PUNCT	.	_	3	punct	_	_
 

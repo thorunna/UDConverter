@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4794202,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Virðulegi forseti. Ég tek einnig undir þetta sjónarmið en vil líka undirstrika það með þeim orðum að náttúruvernd er ekki lengur bara hugmyndafræðilegt bitbein.
+# sent_id = G-33-4794202,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég tek einnig undir þetta sjónarmið
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -10,27 +10,31 @@
 7	undir	undir	ADP	P	_	9	case	_	_
 8	þetta	þessi	DET	D-A	Case=Acc	9	det	_	_
 9	sjónarmið	sjónarmið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
-10	en	en	CCONJ	CONJ	_	13	cc	_	_
-11	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	13	aux	_	_
-12	líka	líka	ADV	ALSO	_	13	advmod	_	_
-13	undirstrika	undirstrika	VERB	VB	VerbForm=Inf	5	conj	_	OriginalHead=0
-14	það	það	PRON	PRO-A	Case=Acc	13	obj	_	_
-15	með	með	ADP	P	_	17	case	_	_
-16	þeim	sá	DET	D-D	Case=Dat	17	det	_	_
-17	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
-18	að	að	SCONJ	C	_	25	mark	_	_
-19	náttúruvernd	náttúruvernd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	nsubj	_	_
-20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
-21	ekki	ekki	ADV	NEG	_	25	advmod	_	_
-22	lengur	lengi	ADV	ADVR	Degree=Cmp	25	advmod	_	_
-23	bara	bara	ADV	FP	Degree=Pos	25	advmod	_	_
-24	hugmyndafræðilegt	hugmyndafræðilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	25	amod	_	_
-25	bitbein	bitbein	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	ccomp	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4794202,.2
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Hún er ekki spurning um vinstri og hægri eða hvort við viljum sjá falleg fjöll eða ekki, hún er beinlínis orðin útflutningsvara.
+# sent_id = G-33-4794202,.2
+# X_ID = ID_MISSING
+# text = en vil líka undirstrika það með þeim orðum að náttúruvernd er ekki lengur bara hugmyndafræðilegt bitbein .
+1	en	en	CCONJ	CONJ	_	4	cc	_	_
+2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
+3	líka	líka	ADV	ALSO	_	4	advmod	_	_
+4	undirstrika	undirstrika	VERB	VB	VerbForm=Inf	0	root	_	_
+5	það	það	PRON	PRO-A	Case=Acc	4	obj	_	_
+6	með	með	ADP	P	_	8	case	_	_
+7	þeim	sá	DET	D-D	Case=Dat	8	det	_	_
+8	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
+9	að	að	SCONJ	C	_	16	mark	_	_
+10	náttúruvernd	náttúruvernd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
+11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
+12	ekki	ekki	ADV	NEG	_	16	advmod	_	_
+13	lengur	lengi	ADV	ADVR	Degree=Cmp	16	advmod	_	_
+14	bara	bara	ADV	FP	Degree=Pos	16	advmod	_	_
+15	hugmyndafræðilegt	hugmyndafræðilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	16	amod	_	_
+16	bitbein	bitbein	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	ccomp	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4794202,.3
+# X_ID = ID_MISSING
+# text = Hún er ekki spurning um vinstri og hægri eða hvort við viljum sjá falleg fjöll eða ekki,
 1	Hún	hún	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -48,17 +52,21 @@
 15	fjöll	fjall	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obj	_	_
 16	eða	eða	CCONJ	CONJ	_	17	cc	_	_
 17	ekki	ekki	ADV	NEG	_	13	conj	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	13	punct	_	_
-19	hún	hún	PRON	PRO-N	Case=Nom	22	nsubj	_	_
-20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
-21	beinlínis	beinlínis	ADV	ADV	Degree=Pos	22	advmod	_	_
-22	orðin	verða	VERB	RDN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
-23	útflutningsvara	útflutningsvara	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	xcomp	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	4	punct	_	_
+18	,	,	PUNCT	,	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4794202,.3
-# X_ID = ID_missing_5
-# text = Okkur ber skylda, jafnvel út frá hörðustu sjálfselskusjónarmiðum, jafnvel ef við viljum fara þangað sem ég er ekki að segja að við eigum að gera, Gripið fram í. til að vernda umhverfið á öllum slíkum forsendum.
+# sent_id = G-33-4794202,.4
+# X_ID = ID_MISSING
+# text = hún er beinlínis orðin útflutningsvara .
+1	hún	hún	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	beinlínis	beinlínis	ADV	ADV	Degree=Pos	4	advmod	_	_
+4	orðin	verða	VERB	RDN	Tense=Past|VerbForm=Part	0	root	_	_
+5	útflutningsvara	útflutningsvara	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4794202,.5
+# X_ID = ID_MISSING
+# text = Okkur ber skylda, jafnvel út frá hörðustu sjálfselskusjónarmiðum, jafnvel ef við viljum fara þangað sem ég er ekki að segja að við eigum að gera, Gripið fram í . til að vernda umhverfið á öllum slíkum forsendum .
 1	Okkur	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	skylda	skylda	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
@@ -101,9 +109,9 @@
 40	forsendum	forsenda	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	35	obl	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4794202,.4
-# X_ID = ID_missing_6
-# text = Því er algjörlega sjálfsagt að þjóðin öll, ríkið, sveitarfélög og hver einstaklingur sjálfur, beri ábyrgð á því að vernda náttúruna.
+# sent_id = G-33-4794202,.6
+# X_ID = ID_MISSING
+# text = Því er algjörlega sjálfsagt að þjóðin öll, ríkið, sveitarfélög og hver einstaklingur sjálfur, beri ábyrgð á því að vernda náttúruna .
 1	Því	það	PRON	PRO-D	Case=Dat	4	obl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	algjörlega	algjörlega	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -129,9 +137,9 @@
 23	náttúruna	náttúra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obj	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4794202,.5
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Það skiptir engu máli út frá hvaða heildarhagsmunum við reynum að nálgast málið, hvort sem það er frá fagurfræðilegum, hugmyndafræðilegum eða hreinlega viðskiptafræðilegum sjónarmiðum, okkur ber að vernda náttúruna.
+# sent_id = G-33-4794202,.7
+# X_ID = ID_MISSING
+# text = Það skiptir engu máli út frá hvaða heildarhagsmunum við reynum að nálgast málið, hvort sem það er frá fagurfræðilegum, hugmyndafræðilegum eða hreinlega viðskiptafræðilegum sjónarmiðum,
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	engu	enginn	DET	Q-D	Case=Dat	4	amod	_	_
@@ -158,23 +166,24 @@
 24	hreinlega	hreinlega	ADV	ADV	Degree=Pos	25	advmod	_	_
 25	viðskiptafræðilegum	viðskiptafræðilegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	20	amod	_	_
 26	sjónarmiðum	sjónarmið	ADV	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	advmod	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	26	punct	_	_
-28	okkur	ég	PRON	PRO-D	Case=Dat	29	nsubj	_	_
-29	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-30	að	að	PART	TO	_	31	mark	_	_
-31	vernda	vernda	VERB	VB	VerbForm=Inf	29	xcomp	_	_
-32	náttúruna	náttúra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	31	obj	_	SpaceAfter=No
-33	.	.	PUNCT	.	_	2	punct	_	_
+27	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4794202,.6
-# X_ID = ID_missing_9
-# text = Það er algjörlega sjálfsagt að sveitarfélög, ríki og hver einasti Íslendingur leggi sitt af mörkum til að tryggja að það geti gerst.
+# sent_id = G-33-4794202,.8
+# X_ID = ID_MISSING
+# text = okkur ber að vernda náttúruna .
+1	okkur	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
+2	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	að	að	PART	TO	_	4	mark	_	_
+4	vernda	vernda	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+5	náttúruna	náttúra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	algjörlega	algjörlega	ADV	ADV	Degree=Pos	4	amod	_	_
 4	sjálfsagt	sjálfsagður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 5	að	að	SCONJ	C	_	13	mark	_	_
-6	sveitarfélög	sveitarfélag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	SpaceAfter=No
+6	sveitarfélög	sveitarfélag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	_
 7	,	,	PUNCT	,	_	8	punct	_	_
 8	ríki	ríki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	_
 9	og	og	CCONJ	CONJ	_	12	cc	_	_
@@ -191,6 +200,6 @@
 20	að	að	SCONJ	C	_	23	mark	_	_
 21	það	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
 22	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	23	aux	_	_
-23	gerst	gera	VERB	DON	Tense=Past|VerbForm=Part	19	advcl	_	SpaceAfter=No
+23	gerst	gera	VERB	DON	Tense=Past|VerbForm=Part	19	advcl	_	_
 24	.	.	PUNCT	.	_	4	punct	_	_
 

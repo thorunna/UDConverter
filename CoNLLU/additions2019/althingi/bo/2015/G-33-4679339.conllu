@@ -1,14 +1,14 @@
-# sent_id = ALTHINGI_BO_2015_G-33-4679339,.1
-# X_ID = ID_missing_1
-# text = Ég þakka andsvarið.
+# sent_id = G-33-4679339,.1
+# X_ID = ID_MISSING
+# text = Ég þakka andsvarið .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	andsvarið	andsvar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4679339,.2
-# X_ID = ID_missing_2
-# text = Ég hvet ráðherra til þess að sýna þinginu eða atvinnuveganefnd þau gögn sem fullvissa hana um að þessi leið hennar muni ekki auka flækjustigið og sé skilvirkt.
+# sent_id = G-33-4679339,.2
+# X_ID = ID_MISSING
+# text = Ég hvet ráðherra til þess að sýna þinginu eða atvinnuveganefnd þau gögn sem fullvissa hana um að þessi leið hennar muni ekki auka flækjustigið og sé skilvirkt .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hvet	hvetja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ráðherra	ráðherra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obj	_	_
@@ -38,9 +38,9 @@
 27	skilvirkt	skilvirkur	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	conj	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4679339,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Ég segi það enn og aftur að þetta frumvarp gerir mér það ekki bersýnilega ljóst, það gerir það ekki.
+# sent_id = G-33-4679339,.3
+# X_ID = ID_MISSING
+# text = Ég segi það enn og aftur að þetta frumvarp gerir mér það ekki bersýnilega ljóst,
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	segi	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
@@ -57,15 +57,19 @@
 14	bersýnilega	bersýnilega	ADV	ADV	Degree=Pos	15	amod	_	_
 15	ljóst	ljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	ccomp	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	2	punct	_	_
-17	það	það	PRON	PRO-N	Case=Nom	18	nsubj	_	_
-18	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-19	það	það	PRON	PRO-A	Case=Acc	18	obj	_	_
-20	ekki	ekki	ADV	NEG	_	18	advmod	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4679339,.4
-# X_ID = ID_missing_5
-# text = Ég heyri það í máli annarra þingmanna líka að fólki er það ekki morgunljóst.
+# sent_id = G-33-4679339,.4
+# X_ID = ID_MISSING
+# text = það gerir það ekki .
+1	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
+4	ekki	ekki	ADV	NEG	_	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4679339,.5
+# X_ID = ID_MISSING
+# text = Ég heyri það í máli annarra þingmanna líka að fólki er það ekki morgunljóst .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	heyri	heyra	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
@@ -82,9 +86,9 @@
 14	morgunljóst	morgunljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	ccomp	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4679339,.5
-# X_ID = ID_missing_6
-# text = Ég hvet ráðherrann til þess að koma með gögn sem sýna það.
+# sent_id = G-33-4679339,.6
+# X_ID = ID_MISSING
+# text = Ég hvet ráðherrann til þess að koma með gögn sem sýna það .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hvet	hvetja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ráðherrann	ráðherra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
@@ -99,9 +103,6 @@
 12	það	það	PRON	PRO-A	Case=Acc	11	obj	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4679339,.6
-# X_ID = ID_missing_7
-# text = Annars ég er eiginlega búin að svara ráðherra því sem ég vildi svara.
 1	Annars	annars	ADV	ADV	Degree=Pos	5	advmod	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -114,6 +115,6 @@
 10	sem	sem	SCONJ	C	_	13	mark	_	_
 11	ég	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
 12	vildi	vilja	AUX	MDDI	Mood=Ind|Tense=Past	13	aux	_	_
-13	svara	svara	VERB	VB	VerbForm=Inf	9	acl:relcl	_	SpaceAfter=No
+13	svara	svara	VERB	VB	VerbForm=Inf	9	acl:relcl	_	_
 14	.	.	PUNCT	.	_	5	punct	_	_
 

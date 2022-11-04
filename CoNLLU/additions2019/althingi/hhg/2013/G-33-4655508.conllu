@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Ég er meira með fyrirspurn en beinlínis andsvar.
+# sent_id = G-33-4655508,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég er meira með fyrirspurn en beinlínis andsvar .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -14,42 +14,46 @@
 11	andsvar	andsvar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Ég velti fyrir 5. gr. Nú hef ég verið einn af þeim tæknimönnum í um 14 ár sem sinna alls kyns uppfærslum, sérstaklega á ýmiss konar hugbúnaði.
+# sent_id = G-33-4655508,.2
+# X_ID = ID_MISSING
+# text = Ég velti fyrir 5. gr.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
 4	5.	fimmti	ADJ	ADJ-D	Case=Dat|Degree=Pos	2	obl	_	_
 5	gr.	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	_
-6	Nú	nú	ADV	ADV	Degree=Pos	10	advmod	_	_
-7	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	10	aux	_	_
-8	ég	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-9	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	10	cop	_	_
-10	einn	einn	DET	ONE-N	Case=Nom	2	conj	_	OriginalHead=0
-11	af	af	ADP	P	_	13	case	_	_
-12	þeim	sá	DET	D-D	Case=Dat	13	det	_	_
-13	tæknimönnum	tæknimaður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
-14	í	í	ADP	P	_	17	case	_	_
-15	um	um	ADP	RP	_	17	compound:prt	_	_
-16	14	14	NUM	NUM-A	Case=Acc	17	nummod	_	_
-17	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	_
-18	sem	sem	SCONJ	C	_	19	mark	_	_
-19	sinna	sinna	VERB	VBPI	Mood=Ind|Tense=Pres	10	acl:relcl	_	_
-20	alls	allur	DET	Q-G	Case=Gen	22	nmod:poss	_	_
-21	kyns	kyn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	conj	_	_
-22	uppfærslum	uppfærsla	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obj	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	22	punct	_	_
-24	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	19	advmod	_	_
-25	á	á	ADP	P	_	28	case	_	_
-26	ýmiss	ýmis	DET	Q-G	Case=Gen	28	nmod:poss	_	_
-27	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	26	conj	_	_
-28	hugbúnaði	hugbúnaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obj	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.3
-# X_ID = ID_missing_4
-# text = Ég velti fyrir mér hvort þetta teljist nóg til að tryggja að tæknimenn hafi ekki óþarfan aðgang.
+# sent_id = G-33-4655508,.3
+# X_ID = ID_MISSING
+# text = Nú hef ég verið einn af þeim tæknimönnum í um 14 ár sem sinna alls kyns uppfærslum, sérstaklega á ýmiss konar hugbúnaði .
+1	Nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
+2	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
+3	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+4	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	5	cop	_	_
+5	einn	einn	DET	ONE-N	Case=Nom	0	root	_	_
+6	af	af	ADP	P	_	8	case	_	_
+7	þeim	sá	DET	D-D	Case=Dat	8	det	_	_
+8	tæknimönnum	tæknimaður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
+9	í	í	ADP	P	_	12	case	_	_
+10	um	um	ADP	RP	_	12	compound:prt	_	_
+11	14	14	NUM	NUM-A	Case=Acc	12	nummod	_	_
+12	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
+13	sem	sem	SCONJ	C	_	14	mark	_	_
+14	sinna	sinna	VERB	VBPI	Mood=Ind|Tense=Pres	5	acl:relcl	_	_
+15	alls	allur	DET	Q-G	Case=Gen	17	nmod:poss	_	_
+16	kyns	kyn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	15	conj	_	_
+17	uppfærslum	uppfærsla	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obj	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	14	advmod	_	_
+20	á	á	ADP	P	_	23	case	_	_
+21	ýmiss	ýmis	DET	Q-G	Case=Gen	23	nmod:poss	_	_
+22	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	conj	_	_
+23	hugbúnaði	hugbúnaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obj	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4655508,.4
+# X_ID = ID_MISSING
+# text = Ég velti fyrir mér hvort þetta teljist nóg til að tryggja að tæknimenn hafi ekki óþarfan aðgang .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -69,9 +73,9 @@
 17	aðgang	aðgangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.4
-# X_ID = ID_missing_5
-# text = Ég skil þetta mætavel, maður þarf oft aðgang að gögnum, það er hluti af starfinu, en það hefur í gegnum tíðina verið borin frekar lítil virðing fyrir þeirri staðreynd að tæknimenn hafa almennt gríðarlegan aðgang.
+# sent_id = G-33-4655508,.5
+# X_ID = ID_MISSING
+# text = Ég skil þetta mætavel, maður þarf oft aðgang að gögnum, það er hluti af starfinu, en það hefur í gegnum tíðina verið borin frekar lítil virðing fyrir þeirri staðreynd að tæknimenn hafa almennt gríðarlegan aðgang .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þetta	þessi	DET	D-A	Case=Acc	2	obj	_	_
@@ -112,9 +116,9 @@
 38	aðgang	aðgangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	35	obj	_	SpaceAfter=No
 39	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.5
-# X_ID = ID_missing_6
-# text = Í gamla daga gengum við í bol sem á stóð, með leyfi forseta: „ I read your email“ á íslensku: Ég les póstinn þinn.
+# sent_id = G-33-4655508,.6
+# X_ID = ID_MISSING
+# text = Í gamla daga gengum við í bol sem á stóð, með leyfi forseta : „ I read your email “ á íslensku : Ég les póstinn þinn .
 1	Í	í	ADP	P	_	3	case	_	_
 2	gamla	gamall	ADJ	ADJ-A	Case=Acc|Degree=Pos	3	amod	_	_
 3	daga	dagur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
@@ -145,9 +149,9 @@
 28	þinn	þinn	PRON	PRO-A	Case=Acc	27	nmod:poss	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.6
-# X_ID = ID_missing_7
-# text = Það er vegna þess að margir tæknimenn geta það.
+# sent_id = G-33-4655508,.7
+# X_ID = ID_MISSING
+# text = Það er vegna þess að margir tæknimenn geta það .
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	vegna	vegna	ADP	P	_	4	case	_	_
@@ -159,9 +163,9 @@
 9	það	það	PRON	PRO-A	Case=Acc	8	obj	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.7
-# X_ID = ID_missing_8
-# text = Þetta er hvimleitt vandamál sem hefur komið með tækniþróuninni.
+# sent_id = G-33-4655508,.8
+# X_ID = ID_MISSING
+# text = Þetta er hvimleitt vandamál sem hefur komið með tækniþróuninni .
 1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	hvimleitt	hvimleiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -173,9 +177,9 @@
 9	tækniþróuninni	tækniþróun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.8
-# X_ID = ID_missing_9
-# text = Ég sé að í frumvarpinu stendur, með leyfi forseta, að umsjónaraðila sjúkraskrár sé heimilt„ að veita starfsmönnum sem vinna að þjónustu við tölvu- og upplýsingakerfi nauðsynlegan aðgang að sjúkraskrárkerfum í þeim tilgangi að sinna vinnslu, uppfærslu og viðhaldi kerfisins“.
+# sent_id = G-33-4655508,.9
+# X_ID = ID_MISSING
+# text = Ég sé að í frumvarpinu stendur, með leyfi forseta, að umsjónaraðila sjúkraskrár sé heimilt „ að veita starfsmönnum sem vinna að þjónustu við tölvu- og upplýsingakerfi nauðsynlegan aðgang að sjúkraskrárkerfum í þeim tilgangi að sinna vinnslu, uppfærslu og viðhaldi kerfisins “ .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	sé	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -223,17 +227,17 @@
 45	“	“	PUNCT	"	_	44	punct	_	SpaceAfter=No
 46	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.9
-# X_ID = ID_missing_10
-# text = Gott og blessað.
+# sent_id = G-33-4655508,.10
+# X_ID = ID_MISSING
+# text = Gott og blessað .
 1	Gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 2	og	og	CCONJ	CONJ	_	3	cc	_	_
 3	blessað	blessaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	conj	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.10
-# X_ID = ID_missing_11
-# text = Ég velti fyrir mér hvort það hafi verið rætt, hvort það standi til eða komi til greina að setja inn smá aukaklausu sem væri eitthvað á þá leið að meta skuli sérstaklega hvaða aðgang að gögnum tæknimenn þurfa raunverulega.
+# sent_id = G-33-4655508,.11
+# X_ID = ID_MISSING
+# text = Ég velti fyrir mér hvort það hafi verið rætt, hvort það standi til eða komi til greina að setja inn smá aukaklausu sem væri eitthvað á þá leið að meta skuli sérstaklega hvaða aðgang að gögnum tæknimenn þurfa raunverulega .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -276,9 +280,9 @@
 40	raunverulega	raunverulega	ADV	ADV	Degree=Pos	39	advmod	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.11
-# X_ID = ID_missing_12
-# text = Yfirleitt er hægt að vinna þessa vinnu án þess að hafa gögnin sjálf.
+# sent_id = G-33-4655508,.12
+# X_ID = ID_MISSING
+# text = Yfirleitt er hægt að vinna þessa vinnu án þess að hafa gögnin sjálf .
 1	Yfirleitt	yfirleitt	ADV	ADV	Degree=Pos	3	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -294,9 +298,9 @@
 13	sjálf	sjálfur	PRON	PRO-A	Case=Acc	12	appos	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.12
-# X_ID = ID_missing_13
-# text = Yfirleitt dugar að hafa bara einhver dæmagögn, gervigögn sem líkja eftir alvörugögnum.
+# sent_id = G-33-4655508,.13
+# X_ID = ID_MISSING
+# text = Yfirleitt dugar að hafa bara einhver dæmagögn, gervigögn sem líkja eftir alvörugögnum .
 1	Yfirleitt	yfirleitt	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	dugar	duga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	2	xcomp	_	_
@@ -312,9 +316,6 @@
 13	alvörugögnum	alvörugögn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4655508,.13
-# X_ID = ID_missing_14
-# text = Ég velti fyrir mér afstöðu hæstv. ráðherra til slíkrar breytingar.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -324,6 +325,6 @@
 7	ráðherra	ráðherra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
 8	til	til	ADP	P	_	10	case	_	_
 9	slíkrar	slíkur	PRON	SUCH-G	Case=Gen	10	det	_	_
-10	breytingar	breyting	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
+10	breytingar	breyting	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
 11	.	.	PUNCT	.	_	2	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4772705,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Frú forseti. Bara til að rifja það upp hvernig þessi pottur hefur nýst, eins og ég minnti á þá verður strax árið 2010 eldgosið í Eyjafjallajökli og miklar hamfarir því tengdar og umtalsvert tjón á mannvirkjum sem sumt var bætt af viðlagatryggingu, annað lenti á ríkissjóði.
+# sent_id = G-33-4772705,.1
+# X_ID = ID_MISSING
+# text = Frú forseti . Bara til að rifja það upp hvernig þessi pottur hefur nýst, eins og ég minnti á þá verður strax árið 2010 eldgosið í Eyjafjallajökli og miklar hamfarir því tengdar og umtalsvert tjón á mannvirkjum sem sumt var bætt af viðlagatryggingu,
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -45,56 +45,72 @@
 42	bætt	bæta	VERB	VAN	Tense=Past|VerbForm=Part	36	acl:relcl	_	_
 43	af	af	ADP	P	_	44	case	_	_
 44	viðlagatryggingu	viðlagatrygging	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	42	obl	_	SpaceAfter=No
-45	,	,	PUNCT	,	_	42	punct	_	_
-46	annað	annar	PRON	OTHER-N	Case=Nom	47	nsubj	_	_
-47	lenti	lenda	VERB	VBDI	Mood=Ind|Tense=Past	22	conj	_	OriginalHead=0
-48	á	á	ADP	P	_	49	case	_	_
-49	ríkissjóði	ríkissjóður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	47	obl	_	SpaceAfter=No
-50	.	.	PUNCT	.	_	22	punct	_	_
+45	,	,	PUNCT	,	_	22	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772705,.2
-# X_ID = ID_missing_3
-# text = Verulegur kostnaður.
+# sent_id = G-33-4772705,.2
+# X_ID = ID_MISSING
+# text = annað lenti á ríkissjóði .
+1	annað	annar	PRON	OTHER-N	Case=Nom	2	nsubj	_	_
+2	lenti	lenda	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	á	á	ADP	P	_	4	case	_	_
+4	ríkissjóði	ríkissjóður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4772705,.3
+# X_ID = ID_MISSING
+# text = Verulegur kostnaður .
 1	Verulegur	verulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	kostnaður	kostnaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772705,.3
-# X_IDs = ID_missing_4 ; ID_missing_5 ; ID_missing_6 ; ID_missing_7
-# text = Árið eftir gýs í Grímsvötnum og aftur verður umtalsvert tjón og aftur reynir á pottinn og árið 2012 gerir mannskaðaveður um norðanvert landið með verulegu fjártjóni og útgjöldum.
+# sent_id = G-33-4772705,.4
+# X_ID = ID_MISSING
+# text = Árið eftir gýs í Grímsvötnum
 1	Árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
 2	eftir	eftir	ADV	ADV	Degree=Pos	1	advmod	_	_
 3	gýs	gjósa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	í	í	ADP	P	_	5	case	_	_
 5	Grímsvötnum	grímsvötn	PROPN	NPRS-D	_	3	obl	_	_
-6	og	og	CCONJ	CONJ	_	8	cc	_	_
-7	aftur	aftur	ADV	ADV	Degree=Pos	8	advmod	_	_
-8	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-9	umtalsvert	umtalsverður	DET	Q-N	Case=Nom	10	amod	_	_
-10	tjón	tjón	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
-11	og	og	CCONJ	CONJ	_	13	cc	_	_
-12	aftur	aftur	ADV	ADV	Degree=Pos	13	advmod	_	_
-13	reynir	reyna	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-14	á	á	ADP	P	_	15	case	_	_
-15	pottinn	pottur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
-16	og	og	CCONJ	CONJ	_	19	cc	_	_
-17	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	_
-18	2012	2012	NUM	NUM-A	Case=Acc	17	appos	_	_
-19	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-20	mannskaðaveður	mannskaðaveður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
-21	um	um	ADP	P	_	23	case	_	_
-22	norðanvert	norðanverður	ADJ	ADJ-A	Case=Acc|Degree=Pos	23	amod	_	_
-23	landið	land	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	_
-24	með	með	ADP	P	_	26	case	_	_
-25	verulegu	verulegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	26	amod	_	_
-26	fjártjóni	fjártjón	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
-27	og	og	CCONJ	CONJ	_	28	cc	_	_
-28	útgjöldum	útgjöld	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	26	conj	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772705,.4
-# X_ID = ID_missing_8
-# text = Þannig að í öll þau þrjú skipti kom sér vel að hafa þennan pott og þá leiðir það til þess að halli á fjárlögum vex ekki þó að fjárheimildirnar séu síðan samþykktar í fjáraukalögum undir lok ársins.
+# sent_id = G-33-4772705,.5
+# X_ID = ID_MISSING
+# text = og aftur verður umtalsvert tjón
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	aftur	aftur	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	umtalsvert	umtalsverður	DET	Q-N	Case=Nom	5	amod	_	_
+5	tjón	tjón	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+
+# sent_id = G-33-4772705,.6
+# X_ID = ID_MISSING
+# text = og aftur reynir á pottinn
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	aftur	aftur	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	reynir	reyna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	pottinn	pottur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
+
+# sent_id = G-33-4772705,.7
+# X_ID = ID_MISSING
+# text = og árið 2012 gerir mannskaðaveður um norðanvert landið með verulegu fjártjóni og útgjöldum .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+3	2012	2012	NUM	NUM-A	Case=Acc	2	appos	_	_
+4	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
+5	mannskaðaveður	mannskaðaveður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
+6	um	um	ADP	P	_	8	case	_	_
+7	norðanvert	norðanverður	ADJ	ADJ-A	Case=Acc|Degree=Pos	8	amod	_	_
+8	landið	land	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+9	með	með	ADP	P	_	11	case	_	_
+10	verulegu	verulegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	11	amod	_	_
+11	fjártjóni	fjártjón	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	útgjöldum	útgjöld	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	conj	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4772705,.8
+# X_ID = ID_MISSING
+# text = Þannig að í öll þau þrjú skipti kom sér vel að hafa þennan pott og þá leiðir það til þess að halli á fjárlögum vex ekki þó að fjárheimildirnar séu síðan samþykktar í fjáraukalögum undir lok ársins .
 1	Þannig	þannig	ADV	ADV	Degree=Pos	0	root	_	_
 2	að	að	SCONJ	C	_	8	mark	_	_
 3	í	í	ADP	P	_	7	case	_	_
@@ -134,9 +150,9 @@
 37	ársins	ár	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	36	nmod:poss	_	SpaceAfter=No
 38	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772705,.5
-# X_ID = ID_missing_9
-# text = Í öðru lagi þá er það þannig að menn eru held ég of uppteknir hér kannski af því að agaleysi felist fyrst og fremst í fjáraukalagafrumvarpi.
+# sent_id = G-33-4772705,.9
+# X_ID = ID_MISSING
+# text = Í öðru lagi þá er það þannig að menn eru held ég of uppteknir hér kannski af því að agaleysi felist fyrst og fremst í fjáraukalagafrumvarpi .
 1	Í	í	ADP	P	_	3	case	_	_
 2	öðru	annar	ADJ	ADJ-D	Case=Dat|Degree=Pos	3	amod	_	_
 3	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
@@ -165,13 +181,10 @@
 26	fjáraukalagafrumvarpi	fjáraukalagafrumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772705,.6
-# X_ID = ID_missing_10
-# text = Það eru líka hlutir, eins og reglur um yfirfærslu ónýttra fjárheimilda, meðferð á uppsöfnuðum skuldahalla, afskriftir í lokafjárlögum og fleira því um líkt, sem þarf að taka miklu fastari tökum.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	líka	líka	ADV	ALSO	_	4	advmod	_	_
-4	hlutir	hlutur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
+4	hlutir	hlutur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 5	,	,	PUNCT	,	_	4	punct	_	_
 6	eins	_	ADV	ADVR	Degree=Cmp	4	advmod	_	_
 7	og	_	ADP	P	_	8	case	_	_
@@ -179,12 +192,12 @@
 9	um	um	ADP	P	_	10	case	_	_
 10	yfirfærslu	yfirfærsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
 11	ónýttra	ónýttur	ADJ	ADJ-G	Case=Gen|Degree=Pos	12	amod	_	_
-12	fjárheimilda	fjárheimild	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	nmod:poss	_	SpaceAfter=No
+12	fjárheimilda	fjárheimild	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	nmod:poss	_	_
 13	,	,	PUNCT	,	_	14	punct	_	_
 14	meðferð	meðferð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	conj	_	_
 15	á	á	ADP	P	_	17	case	_	_
 16	uppsöfnuðum	uppsafnaður	ADJ	ADJ-D	Case=Dat|Degree=Pos	17	amod	_	_
-17	skuldahalla	skuldahalli	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
+17	skuldahalla	skuldahalli	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
 18	,	,	PUNCT	,	_	19	punct	_	_
 19	afskriftir	afskrift	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	conj	_	_
 20	í	í	ADP	P	_	21	case	_	_
@@ -193,7 +206,7 @@
 23	fleira	margur	DET	QR-N	Case=Nom	8	conj	_	_
 24	því	það	PRON	PRO-D	Case=Dat	26	obl	_	_
 25	um	um	ADP	RP	_	26	amod	_	_
-26	líkt	líkur	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	amod	_	SpaceAfter=No
+26	líkt	líkur	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	amod	_	_
 27	,	,	PUNCT	,	_	26	punct	_	_
 28	sem	sem	SCONJ	C	_	29	mark	_	_
 29	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
@@ -201,6 +214,6 @@
 31	taka	taka	VERB	VB	VerbForm=Inf	29	xcomp	_	_
 32	miklu	mikill	DET	Q-D	Case=Dat	33	obl	_	_
 33	fastari	fastur	ADJ	ADJR-D	Case=Dat|Degree=Cmp	34	amod	_	_
-34	tökum	taka	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	31	obl	_	SpaceAfter=No
+34	tökum	taka	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	31	obl	_	_
 35	.	.	PUNCT	.	_	4	punct	_	_
 

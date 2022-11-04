@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4920265,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Virðulegi forseti. Ég fagna líka umræðunni en eftir ágæta ræðu hv. þingmanns þá er ég ekki alveg viss um hvort hv. þingmaður vill raunverulega styðja frumvarpið eða er á móti því.
+# sent_id = G-33-4920265,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég fagna líka umræðunni
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -8,36 +8,40 @@
 5	fagna	fagna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 6	líka	líka	ADV	ALSO	_	5	advmod	_	_
 7	umræðunni	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obj	_	_
-8	en	en	CCONJ	CONJ	_	19	cc	_	_
-9	eftir	eftir	ADP	P	_	11	case	_	_
-10	ágæta	ágætur	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	amod	_	_
-11	ræðu	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	_
-12	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	13	amod	_	_
-13	þingmanns	þingmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	nmod:poss	_	_
-14	þá	þá	ADV	ADV	Degree=Pos	19	advmod	_	_
-15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
-16	ég	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-17	ekki	ekki	ADV	NEG	_	19	advmod	_	_
-18	alveg	alveg	ADV	ADV	Degree=Pos	19	amod	_	_
-19	viss	viss	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	conj	_	OriginalHead=0
-20	um	um	ADP	P	_	26	case	_	_
-21	hvort	hvort	SCONJ	WQ	_	26	mark	_	_
-22	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	amod	_	_
-23	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	26	nsubj	_	_
-24	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	26	aux	_	_
-25	raunverulega	raunverulega	ADV	ADV	Degree=Pos	26	advmod	_	_
-26	styðja	styðja	VERB	VB	VerbForm=Inf	19	amod	_	_
-27	frumvarpið	frumvarp	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obj	_	_
-28	eða	eða	CCONJ	CONJ	_	31	cc	_	_
-29	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
-30	á	á	ADP	P	_	31	case	_	_
-31	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	conj	_	_
-32	því	það	PRON	PRO-D	Case=Dat	31	nmod:poss	_	SpaceAfter=No
-33	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4920265,.2
-# X_ID = ID_missing_3
-# text = Ef ég skil hann rétt, eða samkvæmt tilfinningunni sem ég fæ, að hann mundi ekki greiða atkvæði með því, þá velti ég fyrir mér nákvæmlega hvers vegna.
+# sent_id = G-33-4920265,.2
+# X_ID = ID_MISSING
+# text = en eftir ágæta ræðu hv. þingmanns þá er ég ekki alveg viss um hvort hv. þingmaður vill raunverulega styðja frumvarpið eða er á móti því .
+1	en	en	CCONJ	CONJ	_	12	cc	_	_
+2	eftir	eftir	ADP	P	_	4	case	_	_
+3	ágæta	ágætur	ADJ	ADJ-A	Case=Acc|Degree=Pos	4	amod	_	_
+4	ræðu	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
+5	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	6	amod	_	_
+6	þingmanns	þingmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	nmod:poss	_	_
+7	þá	þá	ADV	ADV	Degree=Pos	12	advmod	_	_
+8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
+9	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+10	ekki	ekki	ADV	NEG	_	12	advmod	_	_
+11	alveg	alveg	ADV	ADV	Degree=Pos	12	amod	_	_
+12	viss	viss	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+13	um	um	ADP	P	_	19	case	_	_
+14	hvort	hvort	SCONJ	WQ	_	19	mark	_	_
+15	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	16	amod	_	_
+16	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
+17	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	19	aux	_	_
+18	raunverulega	raunverulega	ADV	ADV	Degree=Pos	19	advmod	_	_
+19	styðja	styðja	VERB	VB	VerbForm=Inf	12	amod	_	_
+20	frumvarpið	frumvarp	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
+21	eða	eða	CCONJ	CONJ	_	24	cc	_	_
+22	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
+23	á	á	ADP	P	_	24	case	_	_
+24	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	conj	_	_
+25	því	það	PRON	PRO-D	Case=Dat	24	nmod:poss	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	12	punct	_	_
+
+# sent_id = G-33-4920265,.3
+# X_ID = ID_MISSING
+# text = Ef ég skil hann rétt, eða samkvæmt tilfinningunni sem ég fæ, að hann mundi ekki greiða atkvæði með því, þá velti ég fyrir mér nákvæmlega hvers vegna .
 1	Ef	ef	ADP	P	_	3	case	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	24	obl	_	_
@@ -70,9 +74,9 @@
 30	vegna	vegna	ADP	P	_	29	case	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	24	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4920265,.3
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Til að útskýra hvers vegna þá minnist hv. þingmaður réttilega á að þessi nálgun varðar bara Íbúðalánasjóð og lagalegar ástæður eru fyrir því.
+# sent_id = G-33-4920265,.4
+# X_ID = ID_MISSING
+# text = Til að útskýra hvers vegna þá minnist hv. þingmaður réttilega á að þessi nálgun varðar bara Íbúðalánasjóð
 1	Til	til	ADP	P	_	7	obl	_	_
 2	að	að	PART	TO	_	3	advcl	_	_
 3	útskýra	útskýra	VERB	VB	VerbForm=Inf	1	advcl	_	_
@@ -90,17 +94,21 @@
 15	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	7	obl	_	_
 16	bara	bara	ADV	FP	Degree=Pos	15	advmod	_	_
 17	Íbúðalánasjóð	íbúðalánasjóður	PROPN	NPR-A	_	15	obj	_	_
-18	og	og	CCONJ	CONJ	_	23	cc	_	_
-19	lagalegar	lagalegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
-20	ástæður	ástæða	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	23	nsubj	_	_
-21	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
-22	fyrir	fyrir	ADP	P	_	23	case	_	_
-23	því	það	PRON	PRO-D	Case=Dat	7	conj	_	OriginalHead=0|SpaceAfter=No
-24	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4920265,.4
-# X_ID = ID_missing_6
-# text = Enn fremur minnist hv. þingmaður á að hjálpa þurfi öllum en með misjöfnum hætti, sem er hárrétt, vegna þess að ástandið er orðið mjög flókið og ekki auðséð nákvæmlega hvernig hægt er að hanna lausn sem virkar fyrir alla.
+# sent_id = G-33-4920265,.5
+# X_ID = ID_MISSING
+# text = og lagalegar ástæður eru fyrir því .
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	lagalegar	lagalegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
+3	ástæður	ástæða	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
+4	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+5	fyrir	fyrir	ADP	P	_	6	case	_	_
+6	því	það	PRON	PRO-D	Case=Dat	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-33-4920265,.6
+# X_ID = ID_MISSING
+# text = Enn fremur minnist hv. þingmaður á að hjálpa þurfi öllum en með misjöfnum hætti, sem er hárrétt, vegna þess að ástandið er orðið mjög flókið og ekki auðséð nákvæmlega hvernig hægt er að hanna lausn sem virkar fyrir alla .
 1	Enn	enn	ADV	ADV	Degree=Pos	3	advmod	_	_
 2	fremur	harla	ADV	ADVR	Degree=Cmp	1	advmod	_	_
 3	minnist	minna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -144,9 +152,9 @@
 41	alla	allur	DET	Q-A	Case=Acc	39	obl	_	SpaceAfter=No
 42	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4920265,.5
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Þvert á móti er eiginlega auðséð að svo er ekki og því þarf augljóslega mismunandi leiðir fyrir mismunandi aðstæður.
+# sent_id = G-33-4920265,.7
+# X_ID = ID_MISSING
+# text = Þvert á móti er eiginlega auðséð að svo er ekki
 1	Þvert	þvert	ADV	ADV	Degree=Pos	3	advmod	_	_
 2	á	á	ADP	P	_	3	case	_	_
 3	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
@@ -157,20 +165,24 @@
 8	svo	svo	ADV	ADV	Degree=Pos	6	xcomp	_	_
 9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
 10	ekki	ekki	ADV	NEG	_	8	advmod	_	_
-11	og	og	CCONJ	CONJ	_	13	cc	_	_
-12	því	því	PRON	PRO-D	Case=Dat	13	obl	_	_
-13	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
-14	augljóslega	augljóslega	ADV	ADV	Degree=Pos	13	advmod	_	_
-15	mismunandi	mismunandi	ADJ	ADJ-A	Case=Acc|Degree=Pos	16	amod	_	_
-16	leiðir	leið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obj	_	_
-17	fyrir	fyrir	ADP	P	_	19	case	_	_
-18	mismunandi	mismunandi	ADJ	ADJ-A	Case=Acc|Degree=Pos	19	amod	_	_
-19	aðstæður	aðstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4920265,.6
-# X_IDs = ID_missing_9 ; ID_missing_10
-# text = Þetta er ein leið fyrir fólk í ákveðnum aðstæðum, nefnilega fólk sem er með lán hjá Íbúðalánasjóði og bíður úrskurðar um lögmæti lánanna. Því að mér sýnist gæta örlítils misskilnings um að þetta sé spurning um að bíða eftir þessari margumtöluðu lækkun frá Framsóknarflokknum og ríkisstjórninni en þetta snýst aðallega um lögmæti lánanna sem enn sem komið er er oft og tíðum óskýrt.
+# sent_id = G-33-4920265,.8
+# X_ID = ID_MISSING
+# text = og því þarf augljóslega mismunandi leiðir fyrir mismunandi aðstæður .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	því	því	PRON	PRO-D	Case=Dat	3	obl	_	_
+3	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	augljóslega	augljóslega	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	mismunandi	mismunandi	ADJ	ADJ-A	Case=Acc|Degree=Pos	6	amod	_	_
+6	leiðir	leið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	_
+7	fyrir	fyrir	ADP	P	_	9	case	_	_
+8	mismunandi	mismunandi	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
+9	aðstæður	aðstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4920265,.9
+# X_ID = ID_MISSING
+# text = Þetta er ein leið fyrir fólk í ákveðnum aðstæðum, nefnilega fólk sem er með lán hjá Íbúðalánasjóði og bíður úrskurðar um lögmæti lánanna . Því að mér sýnist gæta örlítils misskilnings um að þetta sé spurning um að bíða eftir þessari margumtöluðu lækkun frá Framsóknarflokknum og ríkisstjórninni
 1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ein	einn	DET	ONE-N	Case=Nom	4	det	_	_
@@ -219,28 +231,32 @@
 46	Framsóknarflokknum	framsóknarflokkur	PROPN	NPR-D	_	44	obl	_	_
 47	og	og	CCONJ	CONJ	_	48	cc	_	_
 48	ríkisstjórninni	ríkisstjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	46	conj	_	_
-49	en	en	CCONJ	CONJ	_	51	cc	_	_
-50	þetta	þessi	DET	D-N	Case=Nom	51	nsubj	_	_
-51	snýst	snúa	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-52	aðallega	aðallega	ADV	ADV	Degree=Pos	51	advmod	_	_
-53	um	um	ADP	P	_	54	case	_	_
-54	lögmæti	lögmæti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	51	obl	_	_
-55	lánanna	lán	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	54	nmod:poss	_	_
-56	sem	sem	SCONJ	C	_	65	mark	_	_
-57	enn	enn	ADV	ADV	Degree=Pos	65	advmod	_	_
-58	sem	sem	SCONJ	C	_	57	dep	_	_
-59	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	58	conj	_	_
-60	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	59	cop	_	_
-61	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	65	cop	_	_
-62	oft	oft	ADV	ADV	Degree=Pos	65	advmod	_	_
-63	og	og	CCONJ	CONJ	_	64	cc	_	_
-64	tíðum	tíðum	ADV	ADV	Degree=Pos	62	conj	_	_
-65	óskýrt	óskýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	54	acl:relcl	_	SpaceAfter=No
-66	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4920265,.7
-# X_ID = ID_missing_11
-# text = Það er á þeim forsendum og af þeim ástæðum sem hér er lagt til að fresta nauðungarsölum; á meðan lagaleg óvissa er til staðar.
+# sent_id = G-33-4920265,.10
+# X_ID = ID_MISSING
+# text = en þetta snýst aðallega um lögmæti lánanna sem enn sem komið er er oft og tíðum óskýrt .
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
+3	snýst	snúa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	aðallega	aðallega	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	um	um	ADP	P	_	6	case	_	_
+6	lögmæti	lögmæti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
+7	lánanna	lán	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	nmod:poss	_	_
+8	sem	sem	SCONJ	C	_	17	mark	_	_
+9	enn	enn	ADV	ADV	Degree=Pos	17	advmod	_	_
+10	sem	sem	SCONJ	C	_	9	dep	_	_
+11	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	10	conj	_	_
+12	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
+13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
+14	oft	oft	ADV	ADV	Degree=Pos	17	advmod	_	_
+15	og	og	CCONJ	CONJ	_	16	cc	_	_
+16	tíðum	tíðum	ADV	ADV	Degree=Pos	14	conj	_	_
+17	óskýrt	óskýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	acl:relcl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4920265,.11
+# X_ID = ID_MISSING
+# text = Það er á þeim forsendum og af þeim ástæðum sem hér er lagt til að fresta nauðungarsölum ; á meðan lagaleg óvissa er til staðar .
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	á	á	ADP	P	_	5	case	_	_
@@ -268,9 +284,9 @@
 25	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4920265,.8
-# X_ID = ID_missing_12
-# text = Um leið og henni er lokið þá taka nauðungarsölur sjálfsagt við algjörlega burt séð frá aðgerðum ríkisstjórnarinnar.
+# sent_id = G-33-4920265,.12
+# X_ID = ID_MISSING
+# text = Um leið og henni er lokið þá taka nauðungarsölur sjálfsagt við algjörlega burt séð frá aðgerðum ríkisstjórnarinnar .
 1	Um	um	ADP	P	_	2	case	_	_
 2	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
 3	og	og	ADP	P	_	6	case	_	_
@@ -290,9 +306,6 @@
 17	ríkisstjórnarinnar	ríkisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	16	nmod:poss	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4920265,.9
-# X_ID = ID_missing_13
-# text = Í ljósi þessa velti ég fyrir mér hvort, og þá hvers vegna, hv. þingmaður er á móti eða með frumvarpinu.
 1	Í	í	ADP	P	_	2	case	_	_
 2	ljósi	ljós	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
 3	þessa	þessi	DET	D-G	Case=Gen	2	nmod:poss	_	_
@@ -300,12 +313,12 @@
 5	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 6	fyrir	fyrir	ADP	P	_	7	case	_	_
 7	mér	ég	PRON	PRO-D	Case=Dat	4	obl	_	_
-8	hvort	hvort	SCONJ	WQ	_	4	dep	_	SpaceAfter=No
+8	hvort	hvort	SCONJ	WQ	_	4	dep	_	_
 9	,	,	PUNCT	,	_	8	punct	_	_
 10	og	og	CCONJ	CONJ	_	12	cc	_	_
 11	þá	þá	ADV	ADV	Degree=Pos	12	advmod	_	_
 12	hvers	hver	PRON	WPRO-G	Case=Gen	8	ccomp	_	_
-13	vegna	vegna	ADP	P	_	12	case	_	SpaceAfter=No
+13	vegna	vegna	ADP	P	_	12	case	_	_
 14	,	,	PUNCT	,	_	13	punct	_	_
 15	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	16	amod	_	_
 16	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
@@ -314,6 +327,6 @@
 19	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	conj	_	_
 20	eða	eða	CCONJ	CONJ	_	22	cc	_	_
 21	með	með	ADP	P	_	22	case	_	_
-22	frumvarpinu	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	conj	_	SpaceAfter=No
+22	frumvarpinu	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	conj	_	_
 23	.	.	PUNCT	.	_	4	punct	_	_
 
