@@ -5272,10 +5272,10 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4556344,.EXTRA
 # text = Ég tel það í sjálfu sér ekki vera nein rök, þó að rétt sé, að ríkið fái ekki út úr tekjuskatti manna fyrr en launin eru komin yfir 230 þúsund vegna fyrirkomulags sem hefur verið langalengi við lýði, að ríkið bæti sveitarfélögunum upp það sem á vantar í fullt útsvar af launum þar fyrir neðan.
 1	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	IFD_tag=fp1en
-2	tel	telja	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	OriginalHead=0
-3	það	það	PRON	ES	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	10	expl	_	IFD_tag=faheo
+2	tel	telja	VERB	VBPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	OriginalHead=0
+3	það	það	PRON	ES	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	2	expl	_	IFD_tag=faheo
 4	í	í	ADP	P	_	5	case	_	IFD_tag=ao
-5	sjálfu	sjálfur	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	10	obl	_	IFD_tag=fbheþ
+5	sjálfu	sjálfur	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	7	obl	_	IFD_tag=fbheþ
 6	sér	sig	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	5	nmod	_	IFD_tag=fpheþ
 7	ekki	ekki	ADV	NEG	_	10	advmod	_	IFD_tag=aa
 8	vera	vera	AUX	BE	VerbForm=Inf|Voice=Act	10	cop	_	IFD_tag=sng
@@ -5329,7 +5329,7 @@
 56	þar	þar	ADV	ADV	_	55	obl	_	IFD_tag=aa
 57	fyrir	fyrir	ADP	P	_	58	case	_	IFD_tag=aa
 58	neðan	neðan	ADV	ADV	_	56	advmod	_	IFD_tag=aa|SpaceAfter=No
-59	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
+59	.	.	PUNCT	.	_	2	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4556344,.2
 # X_IDs = ID_missing_3 ; ID_missing_4
@@ -13435,7 +13435,7 @@
 # X_ID = ID_missing_2
 # text = Og úr því hún nefndi skuldaleiðréttingarnar og önnur mál sem eiga að fara í gegnum þingið þá er í því tiltekna máli engin launung á, og ég hef sagt það áður í þessum ræðustól, að ég er ekki hrifin af þeim áformum ríkisstjórnarinnar að demba inn í framtíðina 80 milljörðum.
 1	Og	og	CCONJ	CONJ	_	5	cc	_	IFD_tag=c
-2	úr	úr	ADP	P	_	_	_	_	IFD_tag=aþ
+2	úr	úr	ADP	P	_	4	advmod	_	IFD_tag=aþ
 3	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	2	fixed	_	IFD_tag=faheþ
 4	hún	hún	PRON	PRO-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Prs	5	nsubj	_	IFD_tag=fpven
 5	nefndi	nefna	VERB	VBDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3eþ
@@ -13609,7 +13609,7 @@
 25	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	27	cop	_	IFD_tag=sfg3en
 26	enginn	enginn	DET	Q-N	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	27	amod	_	IFD_tag=foken
 27	stjórnarþingmaður	stjórnarþingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	16	acl	_	IFD_tag=nken|SpaceAfter=No
-28	.	.	PUNCT	.	_	11	_	_	IFD_tag=.
+28	.	.	PUNCT	.	_	11	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4893594,.3
 # X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5 ; ID_missing_6
@@ -17755,3 +17755,4 @@
 27	um	um	ADP	P	_	28	case	_	IFD_tag=ao
 28	þetta	þessi	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	26	obl	_	IFD_tag=faheo|SpaceAfter=No
 29	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
+
