@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2015_G-33-4583710,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Virðulegi forseti. Ég er alin upp fyrir neðan Hagavatn og ég man vel eftir sandfoki í miðjum heyskap, beinlínis moldroki.
+# sent_id = G-33-4583710,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég er alin upp fyrir neðan Hagavatn
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -11,23 +11,27 @@
 8	fyrir	fyrir	ADP	P	_	10	case	_	_
 9	neðan	neðan	ADP	P	_	10	case	_	_
 10	Hagavatn	hagavatn	PROPN	NPR-A	_	6	obl	_	_
-11	og	og	CCONJ	CONJ	_	13	cc	_	_
-12	ég	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-13	man	muna	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
-14	vel	vel	ADV	ADV	Degree=Pos	13	advmod	_	_
-15	eftir	eftir	ADP	P	_	16	case	_	_
-16	sandfoki	sandfok	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
-17	í	í	ADP	P	_	19	case	_	_
-18	miðjum	miður	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
-19	heyskap	heyskapur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	19	punct	_	_
-21	beinlínis	beinlínis	ADV	ADV	Degree=Pos	22	advmod	_	_
-22	moldroki	moldrok	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4583710,.2
-# X_ID = ID_missing_3
-# text = En því hefur aðeins linnt á síðustu árum.
+# sent_id = G-33-4583710,.2
+# X_ID = ID_MISSING
+# text = og ég man vel eftir sandfoki í miðjum heyskap, beinlínis moldroki .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	man	muna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	vel	vel	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	eftir	eftir	ADP	P	_	6	case	_	_
+6	sandfoki	sandfok	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+7	í	í	ADP	P	_	9	case	_	_
+8	miðjum	miður	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
+9	heyskap	heyskapur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	beinlínis	beinlínis	ADV	ADV	Degree=Pos	12	advmod	_	_
+12	moldroki	moldrok	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4583710,.3
+# X_ID = ID_MISSING
+# text = En því hefur aðeins linnt á síðustu árum .
 1	En	en	CCONJ	CONJ	_	5	cc	_	_
 2	því	það	PRON	PRO-D	Case=Dat	5	nsubj	_	_
 3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
@@ -38,9 +42,9 @@
 8	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4583710,.3
-# X_ID = ID_missing_4
-# text = Þar eru ekki lengur þessir sandstormar sem voru í mínum uppvexti, sem ég man eftir á heitum sumardögum í júní, júlí, ágúst.
+# sent_id = G-33-4583710,.4
+# X_ID = ID_MISSING
+# text = Þar eru ekki lengur þessir sandstormar sem voru í mínum uppvexti, sem ég man eftir á heitum sumardögum í júní, júlí, ágúst .
 1	Þar	þar	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	ekki	ekki	ADV	NEG	_	6	advmod	_	_
@@ -68,9 +72,9 @@
 25	ágúst	ágúst	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	conj	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4583710,.4
-# X_ID = ID_missing_5
-# text = Það gefur okkur tilefni til að velta því fyrir okkur hvort jarðvegurinn eða aurinn sé bara farinn og hvort meiri aur komi og þetta byrji allt upp að nýju ef við stækkum lónið.
+# sent_id = G-33-4583710,.5
+# X_ID = ID_MISSING
+# text = Það gefur okkur tilefni til að velta því fyrir okkur hvort jarðvegurinn eða aurinn sé bara farinn og hvort meiri aur komi og þetta byrji allt upp að nýju ef við stækkum lónið .
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	gefur	gefa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	okkur	ég	PRON	PRO-D	Case=Dat	2	iobj	_	_
@@ -106,9 +110,9 @@
 33	lónið	lón	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	32	obj	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4583710,.5
-# X_ID = ID_missing_6
-# text = Ég get ekki metið það.
+# sent_id = G-33-4583710,.6
+# X_ID = ID_MISSING
+# text = Ég get ekki metið það .
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	get	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -116,9 +120,9 @@
 5	það	það	PRON	PRO-A	Case=Acc	4	obj	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4583710,.6
-# X_ID = ID_missing_7
-# text = Það eru jarðfræðingar, jöklafræðingar og aðrir sem þurfa að gera það fyrir okkur alþingismenn.
+# sent_id = G-33-4583710,.7
+# X_ID = ID_MISSING
+# text = Það eru jarðfræðingar, jöklafræðingar og aðrir sem þurfa að gera það fyrir okkur alþingismenn .
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	jarðfræðingar	jarðfræðingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
@@ -136,16 +140,13 @@
 15	alþingismenn	alþingismaður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4583710,.7
-# X_ID = ID_missing_8
-# text = Ég tel mjög varhugavert að Forseti hringir. við leyfum okkur að setja okkur í þessi spor án þess að hafa faglega hæfni til þess.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
 4	varhugavert	varhugaverður	ADJ	ADJ-A	Case=Acc|Degree=Pos	2	ccomp	_	_
 5	að	að	SCONJ	C	_	10	mark	_	_
 6	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
-7	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	10	dep	_	SpaceAfter=No
+7	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	10	dep	_	_
 8	.	.	PUNCT	.	_	7	punct	_	_
 9	við	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
 10	leyfum	leyfa	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
@@ -163,6 +164,6 @@
 22	faglega	faglegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	23	amod	_	_
 23	hæfni	hæfni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obj	_	_
 24	til	til	ADP	P	_	25	case	_	_
-25	þess	það	PRON	PRO-G	Case=Gen	19	xcomp	_	SpaceAfter=No
+25	þess	það	PRON	PRO-G	Case=Gen	19	xcomp	_	_
 26	.	.	PUNCT	.	_	2	punct	_	_
 

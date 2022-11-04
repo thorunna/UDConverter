@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4493268,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Ég vil þakka hv. þingmanni fyrir ágæta ræðu og sérstaklega fyrir að glíma aðeins við stóru drættina í þessari mynd og rifja upp aðstæðurnar eins og þær voru hér 2008 2009, og spurningu um aðferðafræði.
+# sent_id = G-33-4493268,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Ég vil þakka hv. þingmanni fyrir ágæta ræðu og sérstaklega fyrir að glíma aðeins við stóru drættina í þessari mynd og rifja upp aðstæðurnar eins og þær voru hér 2008 2009, og spurningu um aðferðafræði .
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -42,9 +42,9 @@
 39	aðferðafræði	aðferðafræði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	obl	_	SpaceAfter=No
 40	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4493268,.2
-# X_ID = ID_missing_2
-# text = Ég er hjartanlega sammála hv. þingmanni að jafn göfugt og það markmið er að stefna sem fyrst að hallalausum fjárlögum skiptir máli hvernig því er náð og hversu traustur sá grunnur er.
+# sent_id = G-33-4493268,.2
+# X_ID = ID_MISSING
+# text = Ég er hjartanlega sammála hv. þingmanni að jafn göfugt og það markmið er að stefna sem fyrst að hallalausum fjárlögum skiptir máli hvernig því er náð og hversu traustur sá grunnur er .
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	hjartanlega	hjartanlega	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -79,9 +79,9 @@
 32	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4493268,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Eins og við þekkjum bæði, geri ég ráð fyrir, ég og hv. þingmaður, var valin svonefnd blönduð leið tekjuöflunar og sparnaðar í útgjöldum en nú er greinilega orðin þar umtalsverð stefnubreyting á.
+# sent_id = G-33-4493268,.3
+# X_ID = ID_MISSING
+# text = Eins og við þekkjum bæði, geri ég ráð fyrir, ég og hv. þingmaður, var valin svonefnd blönduð leið tekjuöflunar og sparnaðar í útgjöldum
 1	Eins	eins	ADV	ADV	Degree=Pos	18	advmod	_	_
 2	og	og	ADP	P	_	4	case	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -108,20 +108,24 @@
 24	sparnaðar	sparnaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	conj	_	_
 25	í	í	ADP	P	_	26	case	_	_
 26	útgjöldum	útgjöld	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	24	obl	_	_
-27	en	en	CCONJ	CONJ	_	31	cc	_	_
-28	nú	nú	ADV	ADV	Degree=Pos	31	advmod	_	_
-29	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
-30	greinilega	greinilega	ADV	ADV	Degree=Pos	31	advmod	_	_
-31	orðin	verða	VERB	RDN	Tense=Past|VerbForm=Part	18	conj	_	OriginalHead=0
-32	þar	þar	ADV	ADV	Degree=Pos	31	advmod	_	_
-33	umtalsverð	umtalsverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	34	amod	_	_
-34	stefnubreyting	stefnubreyting	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	31	nsubj	_	_
-35	á	á	ADP	P	_	31	obl	_	SpaceAfter=No
-36	.	.	PUNCT	.	_	18	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4493268,.4
-# X_IDs = ID_missing_5 ; ID_missing_6 ; ID_missing_7
-# text = Ég var aðeins að horfa á að tæplega er hægt að segja að nokkur áhersla sé á tekjuöflun vegna þess að í einu einasta tilviki virðist hæstv. ríkisstjórn ætla að afla tekna á næsta ári með hækkuðum bankaskatti en skattahækkanirnar á móti vega það upp og rúmlega það þannig að í reynd mun hinn stabíli tekjugrunnur ríkisins lækka á næsta ári en í staðinn er boðaður umtalsverður niðurskurður.
+# sent_id = G-33-4493268,.4
+# X_ID = ID_MISSING
+# text = en nú er greinilega orðin þar umtalsverð stefnubreyting á .
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	greinilega	greinilega	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	orðin	verða	VERB	RDN	Tense=Past|VerbForm=Part	0	root	_	_
+6	þar	þar	ADV	ADV	Degree=Pos	5	advmod	_	_
+7	umtalsverð	umtalsverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
+8	stefnubreyting	stefnubreyting	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+9	á	á	ADP	P	_	5	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4493268,.5
+# X_ID = ID_MISSING
+# text = Ég var aðeins að horfa á að tæplega er hægt að segja að nokkur áhersla sé á tekjuöflun vegna þess að í einu einasta tilviki virðist hæstv. ríkisstjórn ætla að afla tekna á næsta ári með hækkuðum bankaskatti
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
 3	aðeins	aðeins	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -160,41 +164,49 @@
 36	með	með	ADP	P	_	38	case	_	_
 37	hækkuðum	hækkaður	ADJ	ADJ-D	Case=Dat|Degree=Pos	38	amod	_	_
 38	bankaskatti	bankaskattur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	_
-39	en	en	CCONJ	CONJ	_	43	cc	_	_
-40	skattahækkanirnar	skattahækkun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	43	nsubj	_	_
-41	á	á	ADP	P	_	42	case	_	_
-42	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	40	obl	_	_
-43	vega	vega	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
-44	það	það	PRON	PRO-A	Case=Acc	43	obj	_	_
-45	upp	upp	ADP	RP	_	43	compound:prt	_	_
-46	og	og	CCONJ	CONJ	_	5	conj	_	OriginalHead=0
-47	rúmlega	rúmlega	ADV	ADV	Degree=Pos	48	advmod	_	_
-48	það	það	PRON	PRO-N	Case=Nom	46	xcomp	_	_
-49	þannig	þannig	ADV	ADV	Degree=Pos	48	advmod	_	_
-50	að	að	SCONJ	C	_	58	mark	_	_
-51	í	í	ADP	P	_	52	case	_	_
-52	reynd	reynd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	58	obl	_	_
-53	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	58	aux	_	_
-54	hinn	hinn	DET	D-N	Case=Nom	56	det	_	_
-55	stabíli	stabíll	ADJ	ADJ-N	Case=Nom|Degree=Pos	56	amod	_	_
-56	tekjugrunnur	tekjugrunnur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	58	nsubj	_	_
-57	ríkisins	ríki	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	56	nmod:poss	_	_
-58	lækka	lækka	VERB	VB	VerbForm=Inf	49	advcl	_	_
-59	á	á	ADP	P	_	61	case	_	_
-60	næsta	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	61	amod	_	_
-61	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	58	obl	_	_
-62	en	en	CCONJ	CONJ	_	66	cc	_	_
-63	í	í	ADP	P	_	64	case	_	_
-64	staðinn	staður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	66	obl	_	_
-65	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	66	cop	_	_
-66	boðaður	boða	VERB	VAN	Tense=Past|VerbForm=Part	58	conj	_	_
-67	umtalsverður	umtalsverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	68	amod	_	_
-68	niðurskurður	niðurskurður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	66	nsubj	_	SpaceAfter=No
-69	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4493268,.5
-# X_ID = ID_missing_8
-# text = Þá kemur upp áhugaverð spurning um þjóðhagsleg og hagvaxtarleg áhrif slíkrar stefnubreytingar í ríkisfjármálum sem væri fróðlegt að ræða.
+# sent_id = G-33-4493268,.6
+# X_ID = ID_MISSING
+# text = en skattahækkanirnar á móti vega það upp
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	skattahækkanirnar	skattahækkun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
+3	á	á	ADP	P	_	4	case	_	_
+4	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+5	vega	vega	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+6	það	það	PRON	PRO-A	Case=Acc	5	obj	_	_
+7	upp	upp	ADP	RP	_	5	compound:prt	_	_
+
+# sent_id = G-33-4493268,.7
+# X_ID = ID_MISSING
+# text = og rúmlega það þannig að í reynd mun hinn stabíli tekjugrunnur ríkisins lækka á næsta ári en í staðinn er boðaður umtalsverður niðurskurður .
+1	og	og	CCONJ	CONJ	_	0	root	_	_
+2	rúmlega	rúmlega	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	það	það	PRON	PRO-N	Case=Nom	1	xcomp	_	_
+4	þannig	þannig	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	að	að	SCONJ	C	_	13	mark	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	reynd	reynd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+8	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	13	aux	_	_
+9	hinn	hinn	DET	D-N	Case=Nom	11	det	_	_
+10	stabíli	stabíll	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
+11	tekjugrunnur	tekjugrunnur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
+12	ríkisins	ríki	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	nmod:poss	_	_
+13	lækka	lækka	VERB	VB	VerbForm=Inf	4	advcl	_	_
+14	á	á	ADP	P	_	16	case	_	_
+15	næsta	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	16	amod	_	_
+16	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+17	en	en	CCONJ	CONJ	_	21	cc	_	_
+18	í	í	ADP	P	_	19	case	_	_
+19	staðinn	staður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	_
+20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	21	cop	_	_
+21	boðaður	boða	VERB	VAN	Tense=Past|VerbForm=Part	13	conj	_	_
+22	umtalsverður	umtalsverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	amod	_	_
+23	niðurskurður	niðurskurður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = G-33-4493268,.8
+# X_ID = ID_MISSING
+# text = Þá kemur upp áhugaverð spurning um þjóðhagsleg og hagvaxtarleg áhrif slíkrar stefnubreytingar í ríkisfjármálum sem væri fróðlegt að ræða .
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	upp	upp	ADP	RP	_	2	compound:prt	_	_
@@ -216,9 +228,9 @@
 19	ræða	ræða	VERB	VB	VerbForm=Inf	5	acl:relcl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4493268,.6
-# X_ID = ID_missing_9
-# text = Ég vil spyrja hv. þingmann: Óttast hv. þingmaður að með þessu kunni menn að vera að kæla niður hagkerfið, samanber þá umræðu sem fer núna víða fram og var síðast í útvarpinu í morgun um vaxandi efasemdir manna um að beita niðurskurðar- eða aðhaldsaðgerðum einum við svona aðstæður.
+# sent_id = G-33-4493268,.9
+# X_ID = ID_MISSING
+# text = Ég vil spyrja hv. þingmann : Óttast hv. þingmaður að með þessu kunni menn að vera að kæla niður hagkerfið, samanber þá umræðu sem fer núna víða fram og var síðast í útvarpinu í morgun um vaxandi efasemdir manna um að beita niðurskurðar- eða aðhaldsaðgerðum einum við svona aðstæður .
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	spyrja	spyrja	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -272,9 +284,9 @@
 51	aðstæður	aðstæður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	43	obl	_	SpaceAfter=No
 52	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4493268,.7
-# X_ID = ID_missing_10
-# text = Ég held að á Íslandi séu þeir tímar að renna upp að við þurfum að fara að greina þetta vel og vandlega.
+# sent_id = G-33-4493268,.10
+# X_ID = ID_MISSING
+# text = Ég held að á Íslandi séu þeir tímar að renna upp að við þurfum að fara að greina þetta vel og vandlega .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	10	mark	_	_
@@ -299,9 +311,9 @@
 22	vandlega	vandlega	ADV	ADV	Degree=Pos	20	conj	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4493268,.8
-# X_ID = ID_missing_11
-# text = Í öðru lagi, af því að hv. þingmaður nefndi desemberuppbæturnar og hv. þingmaður er formaður velferðarnefndar Alþingis það ég best veit, vildi ég gjarnan spyrja hvort velferðarnefnd hafi tekið það mál til umfjöllunar og hvernig menn meta aðstæður atvinnulausra núna.
+# sent_id = G-33-4493268,.11
+# X_ID = ID_MISSING
+# text = Í öðru lagi, af því að hv. þingmaður nefndi desemberuppbæturnar og hv. þingmaður er formaður velferðarnefndar Alþingis það ég best veit, vildi ég gjarnan spyrja hvort velferðarnefnd hafi tekið það mál til umfjöllunar og hvernig menn meta aðstæður atvinnulausra núna .
 1	Í	í	ADP	P	_	3	case	_	_
 2	öðru	öðr	ADJ	ADJ-D	Case=Dat|Degree=Pos	3	amod	_	_
 3	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	27	obl	_	SpaceAfter=No
@@ -346,9 +358,9 @@
 42	núna	núna	ADV	ADV	Degree=Pos	39	advmod	_	SpaceAfter=No
 43	.	.	PUNCT	.	_	27	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4493268,.9
-# X_IDs = ID_missing_12 ; ID_missing_13
-# text = Við heyrum ekki skemmtilegar fréttir af Forseti hringir. ásókn í fjárhagsaðstoð fyrir jólin og ugglaust má gera ráð fyrir því að einhverjir illa settir atvinnuleitendur séu í þeim hópi.
+# sent_id = G-33-4493268,.12
+# X_ID = ID_MISSING
+# text = Við heyrum ekki skemmtilegar fréttir af Forseti hringir . ásókn í fjárhagsaðstoð fyrir jólin
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	heyrum	heyra	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -363,21 +375,22 @@
 12	fjárhagsaðstoð	fjárhagsaðstoð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 13	fyrir	fyrir	ADP	P	_	14	case	_	_
 14	jólin	jól	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	_
-15	og	og	CCONJ	CONJ	_	18	cc	_	_
-16	ugglaust	ugglaust	ADV	ADV	Degree=Pos	18	advmod	_	_
-17	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	18	aux	_	_
-18	gera	gera	VERB	DO	VerbForm=Inf	2	conj	_	OriginalHead=0
-19	ráð	ráð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obj	_	_
-20	fyrir	fyrir	ADP	P	_	21	case	_	_
-21	því	það	PRON	PRO-D	Case=Dat	18	obl	_	_
-22	að	að	SCONJ	C	_	30	mark	_	_
-23	einhverjir	einhver	DET	Q-N	Case=Nom	26	amod	_	_
-24	illa	illa	ADV	ADV	Degree=Pos	25	amod	_	_
-25	settir	settur	ADJ	ADJ-N	Case=Nom|Degree=Pos	26	amod	_	_
-26	atvinnuleitendur	atvinnuleitandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	30	nsubj	_	_
-27	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	30	cop	_	_
-28	í	í	ADP	P	_	30	case	_	_
-29	þeim	sá	DET	D-D	Case=Dat	30	det	_	_
-30	hópi	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	ccomp	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	2	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	ugglaust	ugglaust	ADV	ADV	Degree=Pos	4	advmod	_	_
+3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
+4	gera	gera	VERB	DO	VerbForm=Inf	0	root	_	_
+5	ráð	ráð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
+6	fyrir	fyrir	ADP	P	_	7	case	_	_
+7	því	það	PRON	PRO-D	Case=Dat	4	obl	_	_
+8	að	að	SCONJ	C	_	16	mark	_	_
+9	einhverjir	einhver	DET	Q-N	Case=Nom	12	amod	_	_
+10	illa	illa	ADV	ADV	Degree=Pos	11	amod	_	_
+11	settir	settur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
+12	atvinnuleitendur	atvinnuleitandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	16	nsubj	_	_
+13	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	16	cop	_	_
+14	í	í	ADP	P	_	16	case	_	_
+15	þeim	sá	DET	D-D	Case=Dat	16	det	_	_
+16	hópi	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	ccomp	_	_
+17	.	.	PUNCT	.	_	4	punct	_	_
 

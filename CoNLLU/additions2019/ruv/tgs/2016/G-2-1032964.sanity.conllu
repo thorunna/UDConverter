@@ -1,6 +1,6 @@
-# sent_id = RUV_TGS_2016_G-2-1032964.SANITY,.1
-# X_ID = ID_missing_1
-# text = Belgíska knattspyrnusambandið hefur aflýst æfingu A-landsliðs karla sem fyrirhuguð var í dag vegna hryðjuverkaárásana í Brüssel.
+# sent_id = G-2-1032964.SANITY,.1
+# X_ID = ID_MISSING
+# text = Belgíska knattspyrnusambandið hefur aflýst æfingu A-landsliðs karla sem fyrirhuguð var í dag vegna hryðjuverkaárásana í Brüssel .
 1	Belgíska	belgískur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	knattspyrnusambandið	knattspyrnusamband	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
@@ -19,9 +19,9 @@
 16	Brüssel	Brüssel	PROPN	NPR-D	_	4	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032964.SANITY,.2
-# X_ID = ID_missing_2
-# text = Belgíska landsliðið undirbýr sig nú fyrir vináttulandsleik gegn Portúgal sem á að vera á næsta þriðjudag á Stade Roi Baudouin í Brüssel.
+# sent_id = G-2-1032964.SANITY,.2
+# X_ID = ID_MISSING
+# text = Belgíska landsliðið undirbýr sig nú fyrir vináttulandsleik gegn Portúgal sem á að vera á næsta þriðjudag á Stade Roi Baudouin í Brüssel .
 1	Belgíska	belgískur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	landsliðið	landslið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	undirbýr	undirbúa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -46,9 +46,9 @@
 22	Brüssel	Brüssel	PROPN	NPR-D	_	18	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032964.SANITY,.3
-# X_ID = ID_missing_3
-# text = „ Hugur okkar er hjá fórnarlömbum árásarinnar.
+# sent_id = G-2-1032964.SANITY,.3
+# X_ID = ID_MISSING
+# text = „ Hugur okkar er hjá fórnarlömbum árásarinnar .
 1	„	„	PUNCT	"	_	2	punct	_	_
 2	Hugur	hugur	PROPN	NPR-N	_	0	root	_	_
 3	okkar	ég	PRON	PRO-G	Case=Gen	2	nmod:poss	_	_
@@ -58,9 +58,9 @@
 7	árásarinnar	árás	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	nmod:poss	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032964.SANITY,.4
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Knattspyrnan skiptir ekki mestu máli í dag og þess vegna höfum við aflýst æfingunni“ kemur fram í tilkynningu frá Belgíska knattspyrnusambandinu á Twitter.
+# sent_id = G-2-1032964.SANITY,.4
+# X_ID = ID_MISSING
+# text = Knattspyrnan skiptir ekki mestu máli í dag
 1	Knattspyrnan	knattspyrna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -68,28 +68,32 @@
 5	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	_
 6	í	í	ADP	P	_	7	case	_	_
 7	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
-8	og	og	CCONJ	CONJ	_	13	cc	_	_
-9	þess	það	PRON	PRO-G	Case=Gen	13	obl	_	_
-10	vegna	vegna	ADP	P	_	9	case	_	_
-11	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	13	aux	_	_
-12	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-13	aflýst	aflýsa	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-14	æfingunni	æfing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obj	_	SpaceAfter=No
-15	“	“	PUNCT	"	_	14	punct	_	_
-16	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	13	parataxis	_	_
-17	fram	fram	ADP	RP	_	16	compound:prt	_	_
-18	í	í	ADP	P	_	19	case	_	_
-19	tilkynningu	tilkynning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	_
-20	frá	frá	ADP	P	_	22	case	_	_
-21	Belgíska	belgískur	ADJ	ADJ-D	Case=Dat|Degree=Pos	22	amod	_	_
-22	knattspyrnusambandinu	knattspyrnusamband	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
-23	á	á	ADP	P	_	24	case	_	_
-24	Twitter	twitter	PROPN	NPR-D	_	19	obl	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032964.SANITY,.5
-# X_ID = ID_missing_6
-# text = We zijn tousensemble bij de slachtoffers. Voetbal is onbelangrijk vandaag. Training geannuleerd.
+# sent_id = G-2-1032964.SANITY,.5
+# X_ID = ID_MISSING
+# text = og þess vegna höfum við aflýst æfingunni “ kemur fram í tilkynningu frá Belgíska knattspyrnusambandinu á Twitter .
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	þess	það	PRON	PRO-G	Case=Gen	6	obl	_	_
+3	vegna	vegna	ADP	P	_	2	case	_	_
+4	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
+5	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	aflýst	aflýsa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	æfingunni	æfing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obj	_	SpaceAfter=No
+8	“	“	PUNCT	"	_	7	punct	_	_
+9	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	6	parataxis	_	_
+10	fram	fram	ADP	RP	_	9	compound:prt	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	tilkynningu	tilkynning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+13	frá	frá	ADP	P	_	15	case	_	_
+14	Belgíska	belgískur	ADJ	ADJ-D	Case=Dat|Degree=Pos	15	amod	_	_
+15	knattspyrnusambandinu	knattspyrnusamband	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+16	á	á	ADP	P	_	17	case	_	_
+17	Twitter	twitter	PROPN	NPR-D	_	12	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-2-1032964.SANITY,.6
+# X_ID = ID_MISSING
+# text = We zijn tousensemble bij de slachtoffers . Voetbal is onbelangrijk vandaag . Training geannuleerd .
 1	We	we	X	FW	Foreign=Yes	0	root	_	_
 2	zijn	zijn	X	FW	Foreign=Yes	1	flat:foreign	_	_
 3	tous	tous	X	FW	Foreign=Yes	1	dep	_	SpaceAfter=No
@@ -107,47 +111,55 @@
 15	geannuleerd	annuleren	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	flat:foreign	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032964.SANITY,.6
-# X_IDs = ID_missing_7 ; ID_missing_8 ; ID_missing_9
-# text = BelgianRedDevils March 22, 2016 Óvíst er í ljósi tíðinda dagsins hvort landsleikur Belgíu og Portúgal verði háður, en verður nú skoðað með öryggissjónarmið í huga hvort betra sé að aflýsa leiknum.
+# sent_id = G-2-1032964.SANITY,.7
+# X_ID = ID_MISSING
+# text = BelgianRedDevils March 22, 2016
 1	BelgianRedDevils	belgianreddevils	X	FW	Foreign=Yes	0	root	_	_
 2	March	march	X	FW	Foreign=Yes	1	flat:foreign	_	_
 3	22	22	X	FW	Foreign=Yes	1	flat:foreign	_	SpaceAfter=No
 4	,	,	PUNCT	,	_	3	punct	_	_
 5	2016	2016	X	FW	Foreign=Yes	1	flat:foreign	_	_
-6	Óvíst	óvís	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	conj	_	OriginalHead=0
-7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	ljósi	ljós	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
-10	tíðinda	tíðindi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	nmod:poss	_	_
-11	dagsins	dagur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	nmod:poss	_	_
-12	hvort	hvort	SCONJ	WQ	_	18	mark	_	_
-13	landsleikur	landsleikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
-14	Belgíu	belgía	PROPN	NPR-G	_	13	nmod:poss	_	_
-15	og	og	CCONJ	CONJ	_	16	cc	_	_
-16	Portúgal	portúgal	PROPN	NPR-G	_	14	conj	_	_
-17	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	18	aux	_	_
-18	háður	heyja	VERB	VAN	Tense=Past|VerbForm=Part	6	ccomp	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	1	punct	_	_
-20	en	en	CCONJ	CONJ	_	21	cc	_	_
-21	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
-22	nú	nú	ADV	ADV	Degree=Pos	21	advmod	_	_
-23	skoðað	skoða	VERB	VAN	Tense=Past|VerbForm=Part	21	xcomp	_	_
-24	með	með	ADP	P	_	25	case	_	_
-25	öryggissjónarmið	öryggissjónarmið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	_
-26	í	í	ADP	P	_	27	case	_	_
-27	huga	hugi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
-28	hvort	hvort	SCONJ	WQ	_	32	mark	_	_
-29	betra	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	32	amod	_	_
-30	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	32	cop	_	_
-31	að	að	PART	TO	_	32	mark	_	_
-32	aflýsa	aflýsa	VERB	VB	VerbForm=Inf	21	xcomp	_	_
-33	leiknum	leikur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obj	_	SpaceAfter=No
-34	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032964.SANITY,.7
-# X_ID = ID_missing_10
-# text = Belgíska karlalandsliðið er það besta í heimi í dag ef marka má styrkleikalista Alþjóða knattspyrnusambandsins, FIFA.
+# sent_id = G-2-1032964.SANITY,.8
+# X_ID = ID_MISSING
+# text = Óvíst er í ljósi tíðinda dagsins hvort landsleikur Belgíu og Portúgal verði háður,
+1	Óvíst	óvís	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
+3	í	í	ADP	P	_	4	case	_	_
+4	ljósi	ljós	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
+5	tíðinda	tíðindi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
+6	dagsins	dagur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
+7	hvort	hvort	SCONJ	WQ	_	13	mark	_	_
+8	landsleikur	landsleikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
+9	Belgíu	belgía	PROPN	NPR-G	_	8	nmod:poss	_	_
+10	og	og	CCONJ	CONJ	_	11	cc	_	_
+11	Portúgal	portúgal	PROPN	NPR-G	_	9	conj	_	_
+12	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	13	aux	_	_
+13	háður	heyja	VERB	VAN	Tense=Past|VerbForm=Part	1	ccomp	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	1	punct	_	_
+
+# sent_id = G-2-1032964.SANITY,.9
+# X_ID = ID_MISSING
+# text = en verður nú skoðað með öryggissjónarmið í huga hvort betra sé að aflýsa leiknum .
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	skoðað	skoða	VERB	VAN	Tense=Past|VerbForm=Part	2	xcomp	_	_
+5	með	með	ADP	P	_	6	case	_	_
+6	öryggissjónarmið	öryggissjónarmið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	huga	hugi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+9	hvort	hvort	SCONJ	WQ	_	13	mark	_	_
+10	betra	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	13	amod	_	_
+11	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	13	cop	_	_
+12	að	að	PART	TO	_	13	mark	_	_
+13	aflýsa	aflýsa	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+14	leiknum	leikur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obj	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1032964.SANITY,.10
+# X_ID = ID_MISSING
+# text = Belgíska karlalandsliðið er það besta í heimi í dag ef marka má styrkleikalista Alþjóða knattspyrnusambandsins, FIFA .
 1	Belgíska	belgískur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	karlalandsliðið	karlalandslið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -167,9 +179,9 @@
 17	FIFA	fifa	PROPN	NPR-G	_	15	appos	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032964.SANITY,.8
-# X_IDs = ID_missing_11 ; ID_missing_12
-# text = Belgar tróna á toppi þess lista, en hann var síðast gefinn út 3. mars.
+# sent_id = G-2-1032964.SANITY,.11
+# X_ID = ID_MISSING
+# text = Belgar tróna á toppi þess lista,
 1	Belgar	belgi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
 2	tróna	tróna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	á	á	ADP	P	_	4	case	_	_
@@ -177,13 +189,14 @@
 5	þess	sá	DET	D-G	Case=Gen	6	det	_	_
 6	lista	listi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	nmod:poss	_	SpaceAfter=No
 7	,	,	PUNCT	,	_	2	punct	_	_
-8	en	en	CCONJ	CONJ	_	12	cc	_	_
-9	hann	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
-10	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	12	cop	_	_
-11	síðast	síðar	ADV	ADVS	Degree=Sup	12	advmod	_	_
-12	gefinn	gefa	VERB	VAN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-13	út	út	ADP	RP	_	12	compound:prt	_	_
-14	3.	þriðji	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	obl	_	_
-15	mars	mars	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	nmod:poss	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	2	punct	_	_
+
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	hann	hann	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
+4	síðast	síðar	ADV	ADVS	Degree=Sup	5	advmod	_	_
+5	gefinn	gefa	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+6	út	út	ADP	RP	_	5	compound:prt	_	_
+7	3.	þriðji	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	obl	_	_
+8	mars	mars	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
+9	.	.	PUNCT	.	_	5	punct	_	_
 

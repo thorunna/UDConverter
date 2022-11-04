@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2014_G-33-4507277,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Ég þakka spurningarnar frá hv. þingmanni.
+# sent_id = G-33-4507277,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Ég þakka spurningarnar frá hv. þingmanni .
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -12,9 +12,9 @@
 9	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4507277,.2
-# X_IDs = ID_missing_2 ; ID_missing_3 ; ID_missing_4
-# text = Hvað lýtur að hugmyndum mínum um hvar ætti að verja peningunum betur höfum við í Bjartri framtíð helst talað um að þeim yrði varið í að lækka vaxtakostnað ríkissjóðs, borga niður þær skuldir okkar úr því að við erum að tala um jöfnun fyrir fólk og það er sannarlega eitthvað sem nýtist öllum og þá helst til framtíðar og á það legg ég mikla áherslu.
+# sent_id = G-33-4507277,.2
+# X_ID = ID_MISSING
+# text = Hvað lýtur að hugmyndum mínum um hvar ætti að verja peningunum betur höfum við í Bjartri framtíð helst talað um að þeim yrði varið í að lækka vaxtakostnað ríkissjóðs, borga niður þær skuldir okkar úr því að við erum að tala um jöfnun fyrir fólk
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	lýtur	lúta	ADV	VBPI	Mood=Ind|Tense=Pres	19	advmod	_	_
 3	að	að	ADP	P	_	4	case	_	_
@@ -61,31 +61,39 @@
 44	jöfnun	jöfnun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	42	obl	_	_
 45	fyrir	fyrir	ADP	P	_	46	case	_	_
 46	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	44	obl	_	_
-47	og	og	CCONJ	CONJ	_	51	cc	_	_
-48	það	það	PRON	PRO-N	Case=Nom	51	nsubj	_	_
-49	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	51	cop	_	_
-50	sannarlega	sannarlega	ADV	ADV	Degree=Pos	51	advmod	_	_
-51	eitthvað	einhver	DET	Q-N	Case=Nom	19	conj	_	OriginalHead=0
-52	sem	sem	SCONJ	C	_	53	mark	_	_
-53	nýtist	nýta	VERB	VBPI	Mood=Ind|Tense=Pres	51	acl:relcl	_	_
-54	öllum	allur	DET	Q-D	Case=Dat	53	obj	_	_
-55	og	og	CCONJ	CONJ	_	59	cc	_	_
-56	þá	þá	ADV	ADV	Degree=Pos	59	advmod	_	_
-57	helst	gjarna	ADV	ADVS	Degree=Sup	59	advmod	_	_
-58	til	til	ADP	P	_	59	case	_	_
-59	framtíðar	framtíð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	53	conj	_	_
-60	og	og	CCONJ	CONJ	_	63	cc	_	_
-61	á	á	ADP	P	_	62	case	_	_
-62	það	það	PRON	PRO-A	Case=Acc	63	obl	_	_
-63	legg	leggja	VERB	VBPI	Mood=Ind|Tense=Pres	19	conj	_	OriginalHead=0
-64	ég	ég	PRON	PRO-N	Case=Nom	63	nsubj	_	_
-65	mikla	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	66	amod	_	_
-66	áherslu	áhersla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	63	obj	_	SpaceAfter=No
-67	.	.	PUNCT	.	_	19	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4507277,.3
-# X_ID = ID_missing_5
-# text = Þingmaðurinn spurði um leiguhúsnæðið, hvort mér fyndist koma til greina að nefndin ynni einhverjar tillögur til handa þeim sem eru á leigumarkaði.
+# sent_id = G-33-4507277,.3
+# X_ID = ID_MISSING
+# text = og það er sannarlega eitthvað sem nýtist öllum og þá helst til framtíðar
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	sannarlega	sannarlega	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	eitthvað	einhver	DET	Q-N	Case=Nom	0	root	_	_
+6	sem	sem	SCONJ	C	_	7	mark	_	_
+7	nýtist	nýta	VERB	VBPI	Mood=Ind|Tense=Pres	5	acl:relcl	_	_
+8	öllum	allur	DET	Q-D	Case=Dat	7	obj	_	_
+9	og	og	CCONJ	CONJ	_	13	cc	_	_
+10	þá	þá	ADV	ADV	Degree=Pos	13	advmod	_	_
+11	helst	gjarna	ADV	ADVS	Degree=Sup	13	advmod	_	_
+12	til	til	ADP	P	_	13	case	_	_
+13	framtíðar	framtíð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	conj	_	_
+
+# sent_id = G-33-4507277,.4
+# X_ID = ID_MISSING
+# text = og á það legg ég mikla áherslu .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	á	á	ADP	P	_	3	case	_	_
+3	það	það	PRON	PRO-A	Case=Acc	4	obl	_	_
+4	legg	leggja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+5	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+6	mikla	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
+7	áherslu	áhersla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4507277,.5
+# X_ID = ID_MISSING
+# text = Þingmaðurinn spurði um leiguhúsnæðið, hvort mér fyndist koma til greina að nefndin ynni einhverjar tillögur til handa þeim sem eru á leigumarkaði .
 1	Þingmaðurinn	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	spurði	spyrja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	um	um	ADP	P	_	4	case	_	_
@@ -111,9 +119,9 @@
 23	leigumarkaði	leigumarkaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	acl:relcl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4507277,.4
-# X_ID = ID_missing_6
-# text = Mér þætti mjög gott ef það yrði gert.
+# sent_id = G-33-4507277,.6
+# X_ID = ID_MISSING
+# text = Mér þætti mjög gott ef það yrði gert .
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	þætti	þætta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -124,9 +132,9 @@
 8	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	7	ccomp	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4507277,.5
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Ég skil raunar ekki alla þessa gríðarlegu áherslu á að fólk komi sér alltaf upp eigin húsnæði og mér finnst svolítið að þessar aðgerðir snúist um það.
+# sent_id = G-33-4507277,.7
+# X_ID = ID_MISSING
+# text = Ég skil raunar ekki alla þessa gríðarlegu áherslu á að fólk komi sér alltaf upp eigin húsnæði
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	raunar	raunar	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -144,21 +152,25 @@
 15	upp	upp	ADP	RP	_	12	compound:prt	_	_
 16	eigin	eiginn	ADJ	ADJ-D	Case=Dat|Degree=Pos	17	amod	_	_
 17	húsnæði	húsnæði	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obj	_	_
-18	og	og	CCONJ	CONJ	_	20	cc	_	_
-19	mér	ég	PRON	PRO-D	Case=Dat	20	nsubj	_	_
-20	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-21	svolítið	svolítið	ADV	ADV	Degree=Pos	20	advmod	_	_
-22	að	að	SCONJ	C	_	25	mark	_	_
-23	þessar	þessi	DET	D-N	Case=Nom	24	det	_	_
-24	aðgerðir	aðgerð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	25	nsubj	_	_
-25	snúist	snúa	VERB	VBPS	Mood=Sub|Tense=Pres	20	ccomp	_	_
-26	um	um	ADP	P	_	27	case	_	_
-27	það	það	PRON	PRO-A	Case=Acc	25	obl	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4507277,.6
-# X_ID = ID_missing_9
-# text = Ég skil ekki af hverju það er eitthvert takmark í sjálfu sér.
+# sent_id = G-33-4507277,.8
+# X_ID = ID_MISSING
+# text = og mér finnst svolítið að þessar aðgerðir snúist um það .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
+3	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	svolítið	svolítið	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	að	að	SCONJ	C	_	8	mark	_	_
+6	þessar	þessi	DET	D-N	Case=Nom	7	det	_	_
+7	aðgerðir	aðgerð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	nsubj	_	_
+8	snúist	snúa	VERB	VBPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
+9	um	um	ADP	P	_	10	case	_	_
+10	það	það	PRON	PRO-A	Case=Acc	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4507277,.9
+# X_ID = ID_MISSING
+# text = Ég skil ekki af hverju það er eitthvert takmark í sjálfu sér .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -173,9 +185,6 @@
 12	sér	sig	PRON	PRO-D	Case=Dat	11	nmod	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4507277,.7
-# X_ID = ID_missing_10
-# text = Það væri mjög gott og vissulega þarft ef nefndin skilaði tillögum þess efnis.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	4	cop	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -188,6 +197,6 @@
 10	skilaði	skila	VERB	VBDS	Mood=Sub|Tense=Past	4	obl	_	_
 11	tillögum	tillaga	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obj	_	_
 12	þess	sá	DET	D-G	Case=Gen	13	det	_	_
-13	efnis	efni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	nmod:poss	_	SpaceAfter=No
+13	efnis	efni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	nmod:poss	_	_
 14	.	.	PUNCT	.	_	4	punct	_	_
 

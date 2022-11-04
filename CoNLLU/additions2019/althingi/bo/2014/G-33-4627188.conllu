@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2014_G-33-4627188,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Eins og ég rakti í ræðu minni biðlaði ég í raun til margra góðra þingmanna sem eru í stjórnarmeirihluta, sem ég þekki af góðu og hef átt gott samstarf við í nefndum þingsins.
+# sent_id = G-33-4627188,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Eins og ég rakti í ræðu minni biðlaði ég í raun til margra góðra þingmanna sem eru í stjórnarmeirihluta, sem ég þekki af góðu og hef átt gott samstarf við í nefndum þingsins .
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -40,9 +40,9 @@
 37	þingsins	þing	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	36	nmod:poss	_	SpaceAfter=No
 38	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4627188,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Það er skynsamt fólk í öllum flokkum og ég vona að það búi við það frelsi í flokkum sínum að fá að taka sjálfstæðar ákvarðanir og að það geti hreinlega fylgt sannfæringu sinni.
+# sent_id = G-33-4627188,.2
+# X_ID = ID_MISSING
+# text = Það er skynsamt fólk í öllum flokkum
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	skynsamt	skynsamur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -50,37 +50,38 @@
 5	í	í	ADP	P	_	7	case	_	_
 6	öllum	allur	DET	Q-D	Case=Dat	7	amod	_	_
 7	flokkum	flokkur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
-8	og	og	CCONJ	CONJ	_	10	cc	_	_
-9	ég	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-10	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-11	að	að	SCONJ	C	_	13	mark	_	_
-12	það	það	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-13	búi	búa	VERB	VBPS	Mood=Sub|Tense=Pres	10	ccomp	_	_
-14	við	við	ADP	P	_	16	case	_	_
-15	það	sá	DET	D-A	Case=Acc	16	det	_	_
-16	frelsi	frelsi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
-17	í	í	ADP	P	_	18	case	_	_
-18	flokkum	flokkur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
-19	sínum	sinn	PRON	PRO-D	Case=Dat	18	nmod:poss	_	_
-20	að	að	PART	TO	_	21	mark	_	_
-21	fá	fá	VERB	VB	VerbForm=Inf	13	xcomp	_	_
-22	að	að	PART	TO	_	23	mark	_	_
-23	taka	taka	VERB	VB	VerbForm=Inf	21	xcomp	_	_
-24	sjálfstæðar	sjálfstæður	ADJ	ADJ-A	Case=Acc|Degree=Pos	25	amod	_	_
-25	ákvarðanir	ákvörðun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obj	_	_
-26	og	og	CCONJ	CONJ	_	31	cc	_	_
-27	að	að	SCONJ	C	_	31	mark	_	_
-28	það	það	PRON	PRO-N	Case=Nom	31	nsubj	_	_
-29	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	31	aux	_	_
-30	hreinlega	hreinlega	ADV	ADV	Degree=Pos	31	advmod	_	_
-31	fylgt	fylgja	VERB	VBN	Tense=Past|VerbForm=Part	13	conj	_	_
-32	sannfæringu	sannfæring	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obj	_	_
-33	sinni	sinn	PRON	PRO-D	Case=Dat	32	nmod:poss	_	SpaceAfter=No
-34	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4627188,.3
-# X_ID = ID_missing_4
-# text = Ég vona að því sé þannig farið í öllum flokkum og það sé ekki einhver lúxus sem við búum við í Bjartri framtíð.
+# sent_id = G-33-4627188,.3
+# X_ID = ID_MISSING
+# text = og ég vona að það búi við það frelsi í flokkum sínum að fá að taka sjálfstæðar ákvarðanir og að það geti hreinlega fylgt sannfæringu sinni .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	að	að	SCONJ	C	_	6	mark	_	_
+5	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	búi	búa	VERB	VBPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
+7	við	við	ADP	P	_	9	case	_	_
+8	það	sá	DET	D-A	Case=Acc	9	det	_	_
+9	frelsi	frelsi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	flokkum	flokkur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+12	sínum	sinn	PRON	PRO-D	Case=Dat	11	nmod:poss	_	_
+13	að	að	PART	TO	_	14	mark	_	_
+14	fá	fá	VERB	VB	VerbForm=Inf	6	xcomp	_	_
+15	að	að	PART	TO	_	16	mark	_	_
+16	taka	taka	VERB	VB	VerbForm=Inf	14	xcomp	_	_
+17	sjálfstæðar	sjálfstæður	ADJ	ADJ-A	Case=Acc|Degree=Pos	18	amod	_	_
+18	ákvarðanir	ákvörðun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obj	_	_
+19	og	og	CCONJ	CONJ	_	24	cc	_	_
+20	að	að	SCONJ	C	_	24	mark	_	_
+21	það	það	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+22	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	24	aux	_	_
+23	hreinlega	hreinlega	ADV	ADV	Degree=Pos	24	advmod	_	_
+24	fylgt	fylgja	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	_
+25	sannfæringu	sannfæring	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obj	_	_
+26	sinni	sinn	PRON	PRO-D	Case=Dat	25	nmod:poss	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	3	punct	_	_
+
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	7	mark	_	_
@@ -103,6 +104,6 @@
 20	við	við	ADP	P	_	19	obl	_	_
 21	í	í	ADP	P	_	23	case	_	_
 22	Bjartri	bjartur	ADJ	ADJ-D	Case=Dat|Degree=Pos	23	amod	_	_
-23	framtíð	framtíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
+23	framtíð	framtíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
 24	.	.	PUNCT	.	_	2	punct	_	_
 

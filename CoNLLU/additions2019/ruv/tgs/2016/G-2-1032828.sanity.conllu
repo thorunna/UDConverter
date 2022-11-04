@@ -1,6 +1,6 @@
-# sent_id = RUV_TGS_2016_G-2-1032828.SANITY,.1
-# X_ID = ID_missing_1
-# text = Evrópska knattspyrnusambandið, UEFA hefur látið útbúa sérstakt kerfi þar sem almenningur getur raðað liðum upp í riðla EM 2016 í knattspyrnu.
+# sent_id = G-2-1032828.SANITY,.1
+# X_ID = ID_MISSING
+# text = Evrópska knattspyrnusambandið, UEFA hefur látið útbúa sérstakt kerfi þar sem almenningur getur raðað liðum upp í riðla EM 2016 í knattspyrnu .
 1	Evrópska	evrópskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	knattspyrnusambandið	knattspyrnusamband	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	2	punct	_	_
@@ -25,9 +25,9 @@
 22	knattspyrnu	knattspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032828.SANITY,.2
-# X_ID = ID_missing_2
-# text = Fólk raðar liðunum í þá röð eins og það telur að lokastaðan verði eftir riðlakeppnina.
+# sent_id = G-2-1032828.SANITY,.2
+# X_ID = ID_MISSING
+# text = Fólk raðar liðunum í þá röð eins og það telur að lokastaðan verði eftir riðlakeppnina .
 1	Fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	raðar	raða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	liðunum	lið	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obj	_	_
@@ -45,52 +45,60 @@
 15	riðlakeppnina	riðlakeppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032828.SANITY,.3
-# X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5
-# text = Spákerfið vinnur svo úr upplýsingunum og raðar upp hvaða lið myndu þá mætast í 16 liða úrslitum mótsins og þá þarf í kjölfarið að gera upp við sig hvaða lið sé líklegra til að vinna hverja viðureign þar.
+# sent_id = G-2-1032828.SANITY,.3
+# X_ID = ID_MISSING
+# text = Spákerfið vinnur svo úr upplýsingunum
 1	Spákerfið	spákerfi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	vinnur	vinna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	úr	úr	ADP	P	_	5	case	_	_
 5	upplýsingunum	upplýsing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
-6	og	og	CCONJ	CONJ	_	7	cc	_	_
-7	raðar	raða	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-8	upp	upp	ADP	RP	_	7	compound:prt	_	_
-9	hvaða	hvaða	DET	WD-N	Case=Nom	10	det	_	_
-10	lið	lið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	obj	_	_
-11	myndu	munu	AUX	MDDS	Mood=Sub|Tense=Past	13	aux	_	_
-12	þá	þá	ADV	ADV	Degree=Pos	13	advmod	_	_
-13	mætast	mæta	VERB	VB	VerbForm=Inf	7	xcomp	_	_
-14	í	í	ADP	P	_	17	case	_	_
-15	16	sextán	NUM	NUM-G	Case=Gen	16	nummod	_	_
-16	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	17	nmod:poss	_	_
-17	úrslitum	úrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
-18	mótsins	mót	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	nmod:poss	_	_
-19	og	og	CCONJ	CONJ	_	21	cc	_	_
-20	þá	þá	ADV	ADV	Degree=Pos	21	advmod	_	_
-21	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-22	í	í	ADP	P	_	23	case	_	_
-23	kjölfarið	kjölfar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	_
-24	að	að	PART	TO	_	25	mark	_	_
-25	gera	gera	VERB	DO	VerbForm=Inf	21	xcomp	_	_
-26	upp	upp	ADP	RP	_	28	compound:prt	_	_
-27	við	við	ADP	P	_	28	case	_	_
-28	sig	sig	PRON	PRO-A	Case=Acc	25	obl	_	_
-29	hvaða	hvaða	DET	WD-N	Case=Nom	30	det	_	_
-30	lið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	32	obj	_	_
-31	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	32	cop	_	_
-32	líklegra	líklegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	25	xcomp	_	_
-33	til	til	ADP	P	_	35	case	_	_
-34	að	að	PART	TO	_	35	mark	_	_
-35	vinna	vinna	VERB	VB	VerbForm=Inf	32	amod	_	_
-36	hverja	hver	DET	Q-A	Case=Acc	37	amod	_	_
-37	viðureign	viðureign	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	35	obj	_	_
-38	þar	þar	ADV	ADV	Degree=Pos	35	advmod	_	SpaceAfter=No
-39	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032828.SANITY,.4
-# X_ID = ID_missing_6
-# text = Þetta er svo endurtekið þar til í ljós kemur spádómur viðkomandi spámanns um hvaða lið verði Evrópumeistari karla í knattspyrnu í Frakklandi í sumar.
+# sent_id = G-2-1032828.SANITY,.4
+# X_ID = ID_MISSING
+# text = og raðar upp hvaða lið myndu þá mætast í 16 liða úrslitum mótsins
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	raðar	raða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	upp	upp	ADP	RP	_	2	compound:prt	_	_
+4	hvaða	hvaða	DET	WD-N	Case=Nom	5	det	_	_
+5	lið	lið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	obj	_	_
+6	myndu	munu	AUX	MDDS	Mood=Sub|Tense=Past	8	aux	_	_
+7	þá	þá	ADV	ADV	Degree=Pos	8	advmod	_	_
+8	mætast	mæta	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+9	í	í	ADP	P	_	12	case	_	_
+10	16	sextán	NUM	NUM-G	Case=Gen	11	nummod	_	_
+11	liða	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	nmod:poss	_	_
+12	úrslitum	úrslit	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
+13	mótsins	mót	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	nmod:poss	_	_
+
+# sent_id = G-2-1032828.SANITY,.5
+# X_ID = ID_MISSING
+# text = og þá þarf í kjölfarið að gera upp við sig hvaða lið sé líklegra til að vinna hverja viðureign þar .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	í	í	ADP	P	_	5	case	_	_
+5	kjölfarið	kjölfar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	gera	gera	VERB	DO	VerbForm=Inf	3	xcomp	_	_
+8	upp	upp	ADP	RP	_	10	compound:prt	_	_
+9	við	við	ADP	P	_	10	case	_	_
+10	sig	sig	PRON	PRO-A	Case=Acc	7	obl	_	_
+11	hvaða	hvaða	DET	WD-N	Case=Nom	12	det	_	_
+12	lið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	obj	_	_
+13	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	14	cop	_	_
+14	líklegra	líklegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	7	xcomp	_	_
+15	til	til	ADP	P	_	17	case	_	_
+16	að	að	PART	TO	_	17	mark	_	_
+17	vinna	vinna	VERB	VB	VerbForm=Inf	14	amod	_	_
+18	hverja	hver	DET	Q-A	Case=Acc	19	amod	_	_
+19	viðureign	viðureign	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
+20	þar	þar	ADV	ADV	Degree=Pos	17	advmod	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-2-1032828.SANITY,.6
+# X_ID = ID_MISSING
+# text = Þetta er svo endurtekið þar til í ljós kemur spádómur viðkomandi spámanns um hvaða lið verði Evrópumeistari karla í knattspyrnu í Frakklandi í sumar .
 1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -117,19 +125,20 @@
 24	sumar	sumar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032828.SANITY,.5
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Spákerfi UEFA má finna hér og þar geta menn spreytt sig.
+# sent_id = G-2-1032828.SANITY,.7
+# X_ID = ID_MISSING
+# text = Spákerfi UEFA má finna hér
 1	Spákerfi	spákerfi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
 2	UEFA	uefa	PROPN	NPR-G	_	1	nmod:poss	_	_
 3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 4	finna	finna	VERB	VB	VerbForm=Inf	0	root	_	_
 5	hér	hér	ADV	ADV	Degree=Pos	4	advmod	_	_
-6	og	og	CCONJ	CONJ	_	10	cc	_	_
-7	þar	þar	ADV	ADV	Degree=Pos	10	advmod	_	_
-8	geta	geta	AUX	MDPI	Mood=Ind|Tense=Pres	10	aux	_	_
-9	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
-10	spreytt	spreyta	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
-11	sig	sig	PRON	PRO-A	Case=Acc	10	obj	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	4	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	þar	þar	ADV	ADV	Degree=Pos	5	advmod	_	_
+3	geta	geta	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
+4	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
+5	spreytt	spreyta	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	sig	sig	PRON	PRO-A	Case=Acc	5	obj	_	_
+7	.	.	PUNCT	.	_	5	punct	_	_
 

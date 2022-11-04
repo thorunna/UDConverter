@@ -1,6 +1,6 @@
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Ólympíuleikarnir í Ríó í Brasilíu verða settir með pompi og prakt 5. ágúst og mun öll heimsbyggðin fylgjast með þessari stærstu íþróttahátíð heims.
+# sent_id = G-2-1031601.SANITY,.1
+# X_ID = ID_MISSING
+# text = Ólympíuleikarnir í Ríó í Brasilíu verða settir með pompi og prakt 5. ágúst
 1	Ólympíuleikarnir	ólympíuleikar	PROPN	NPRS-N	_	6	nsubj	_	_
 2	í	í	ADP	P	_	3	case	_	_
 3	Ríó	ríó	PROPN	NPR-D	_	1	obl	_	_
@@ -14,21 +14,25 @@
 11	prakt	prakt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	conj	_	_
 12	5.	fimmti	ADJ	ADJ-A	Case=Acc|Degree=Pos	13	amod	_	_
 13	ágúst	ágúst	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
-14	og	og	CCONJ	CONJ	_	18	cc	_	_
-15	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	18	aux	_	_
-16	öll	allur	DET	Q-N	Case=Nom	17	amod	_	_
-17	heimsbyggðin	heimsbyggð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
-18	fylgjast	fylgja	VERB	VB	VerbForm=Inf	6	conj	_	OriginalHead=0
-19	með	með	ADP	P	_	22	case	_	_
-20	þessari	þessi	DET	D-D	Case=Dat	22	det	_	_
-21	stærstu	stór	ADJ	ADJS-D	Case=Dat|Degree=Sup	22	amod	_	_
-22	íþróttahátíð	íþróttahátíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
-23	heims	heimur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	nmod:poss	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.2
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = RÚV mun sýna beint frá leikunum í Ríó og fram að þeim hitum við upp með ýmsum hætti.
+# sent_id = G-2-1031601.SANITY,.2
+# X_ID = ID_MISSING
+# text = og mun öll heimsbyggðin fylgjast með þessari stærstu íþróttahátíð heims .
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
+3	öll	allur	DET	Q-N	Case=Nom	4	amod	_	_
+4	heimsbyggðin	heimsbyggð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+5	fylgjast	fylgja	VERB	VB	VerbForm=Inf	0	root	_	_
+6	með	með	ADP	P	_	9	case	_	_
+7	þessari	þessi	DET	D-D	Case=Dat	9	det	_	_
+8	stærstu	stór	ADJ	ADJS-D	Case=Dat|Degree=Sup	9	amod	_	_
+9	íþróttahátíð	íþróttahátíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+10	heims	heimur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	nmod:poss	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.3
+# X_ID = ID_MISSING
+# text = RÚV mun sýna beint frá leikunum í Ríó
 1	RÚV	rúv	PROPN	NPR-N	_	3	nsubj	_	_
 2	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	sýna	sýna	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -37,21 +41,25 @@
 6	leikunum	leikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
 7	í	í	ADP	P	_	8	case	_	_
 8	Ríó	ríó	PROPN	NPR-D	_	6	obl	_	_
-9	og	og	CCONJ	CONJ	_	13	cc	_	_
-10	fram	fram	ADP	RP	_	12	compound:prt	_	_
-11	að	að	ADP	P	_	12	case	_	_
-12	þeim	hún	PRON	PRO-D	Case=Dat	13	obl	_	_
-13	hitum	hita	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-14	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-15	upp	upp	ADP	RP	_	13	compound:prt	_	_
-16	með	með	ADP	P	_	18	case	_	_
-17	ýmsum	ýmis	DET	Q-D	Case=Dat	18	amod	_	_
-18	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.3
-# X_ID = ID_missing_5
-# text = Meðal annars birtast pistlar í öllum þáttum Sportrásarinnar á Rás 2 fram að leikum.
+# sent_id = G-2-1031601.SANITY,.4
+# X_ID = ID_MISSING
+# text = og fram að þeim hitum við upp með ýmsum hætti .
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	fram	fram	ADP	RP	_	4	compound:prt	_	_
+3	að	að	ADP	P	_	4	case	_	_
+4	þeim	hún	PRON	PRO-D	Case=Dat	5	obl	_	_
+5	hitum	hita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+6	við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+7	upp	upp	ADP	RP	_	5	compound:prt	_	_
+8	með	með	ADP	P	_	10	case	_	_
+9	ýmsum	ýmis	DET	Q-D	Case=Dat	10	amod	_	_
+10	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.5
+# X_ID = ID_MISSING
+# text = Meðal annars birtast pistlar í öllum þáttum Sportrásarinnar á Rás 2 fram að leikum .
 1	Meðal	meðal	ADP	P	_	2	case	_	_
 2	annars	annar	PRON	OTHER-G	Case=Gen	3	obl	_	_
 3	birtast	birta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -68,9 +76,9 @@
 14	leikum	leikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.4
-# X_ID = ID_missing_6
-# text = Í gærkvöld voru teknir fyrir Ólympíufarar sem hafa verið talsvert eldri en flestir aðrir.
+# sent_id = G-2-1031601.SANITY,.6
+# X_ID = ID_MISSING
+# text = Í gærkvöld voru teknir fyrir Ólympíufarar sem hafa verið talsvert eldri en flestir aðrir .
 1	Í	í	ADP	P	_	2	case	_	_
 2	gærkvöld	gærkvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
 3	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
@@ -87,9 +95,9 @@
 14	aðrir	annar	PRON	OTHER-N	Case=Nom	13	amod	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.5
-# X_ID = ID_missing_7
-# text = Hlusta má á pistilinn í spilaranum hér fyrir ofan.
+# sent_id = G-2-1031601.SANITY,.7
+# X_ID = ID_MISSING
+# text = Hlusta má á pistilinn í spilaranum hér fyrir ofan .
 1	Hlusta	hlusta	VERB	VB	VerbForm=Inf	0	root	_	_
 2	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	1	aux	_	_
 3	á	á	ADP	P	_	4	case	_	_
@@ -101,9 +109,9 @@
 9	ofan	ofan	ADV	ADV	Degree=Pos	7	advmod	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.6
-# X_ID = ID_missing_8
-# text = Fimleikakonan Oksana Chusovitina er ein þeirra sem mun keppa í áhaldafimleikakeppni Ólympíuleikanna í Ríó de Janeiro í Brasilíu.
+# sent_id = G-2-1031601.SANITY,.8
+# X_ID = ID_MISSING
+# text = Fimleikakonan Oksana Chusovitina er ein þeirra sem mun keppa í áhaldafimleikakeppni Ólympíuleikanna í Ríó de Janeiro í Brasilíu .
 1	Fimleikakonan	fimleikakona	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 2	Oksana	oksana	PROPN	NPR-N	_	1	appos	_	_
 3	Chusovitina	chusovitina	PROPN	NPR-N	_	2	flat:name	_	_
@@ -124,9 +132,9 @@
 18	Brasilíu	brasilía	PROPN	NPR-D	_	14	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.7
-# X_ID = ID_missing_9
-# text = Hún mun keppa fyrir Úsbekistan.
+# sent_id = G-2-1031601.SANITY,.9
+# X_ID = ID_MISSING
+# text = Hún mun keppa fyrir Úsbekistan .
 1	Hún	hún	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	keppa	keppa	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -134,9 +142,9 @@
 5	Úsbekistan	úsbekistan	PROPN	NPR-A	_	3	obl	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.8
-# X_ID = ID_missing_10
-# text = Þetta væri svosem ekki í frásögu færandi nema fyrir þær sakir að Chusovitina verður 41 árs þegar Ólympíuleikarnir í Ríó hefjast og þetta verða sjöundu Ólympíuleikar hennar í röð.
+# sent_id = G-2-1031601.SANITY,.10
+# X_ID = ID_MISSING
+# text = Þetta væri svosem ekki í frásögu færandi nema fyrir þær sakir að Chusovitina verður 41 árs þegar Ólympíuleikarnir í Ríó hefjast og þetta verða sjöundu Ólympíuleikar hennar í röð .
 1	Þetta	þessi	DET	D-N	Case=Nom	9	nsubj	_	_
 2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	9	cop	_	_
 3	svosem	svosem	ADV	ADV	Degree=Pos	9	advmod	_	_
@@ -168,9 +176,9 @@
 29	röð	röð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.9
-# X_ID = ID_missing_11
-# text = Chusovitina er fyrrverandi Ólympíumeistari, því hún vann til gullverðlauna í liðakeppni í fimleikum á leikunum í Barcelona á Spáni árið 1992.
+# sent_id = G-2-1031601.SANITY,.11
+# X_ID = ID_MISSING
+# text = Chusovitina er fyrrverandi Ólympíumeistari, því hún vann til gullverðlauna í liðakeppni í fimleikum á leikunum í Barcelona á Spáni árið 1992 .
 1	Chusovitina	chusovitina	PROPN	NPR-N	_	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	fyrrverandi	fyrrverandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -195,9 +203,9 @@
 22	1992	1992	NUM	NUM-A	Case=Acc	21	appos	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.10
-# X_ID = ID_missing_12
-# text = Þá keppti þó ekki undir neinum þjóðfána heldur fyrir sameinað lið fólks íþróttamanna frá löndum þar sem óvissuástand var og þá undir merkjum Ólympíufánans.
+# sent_id = G-2-1031601.SANITY,.12
+# X_ID = ID_MISSING
+# text = Þá keppti þó ekki undir neinum þjóðfána heldur fyrir sameinað lið fólks íþróttamanna frá löndum þar sem óvissuástand var og þá undir merkjum Ólympíufánans .
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	þó	þó	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -205,10 +213,10 @@
 5	undir	undir	ADP	P	_	7	case	_	_
 6	neinum	neinn	DET	Q-D	Case=Dat	7	amod	_	_
 7	þjóðfána	þjóðfáni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
-8	heldur	heldur	ADV	ADVR	Degree=Cmp	23	advmod	_	_
+8	heldur	heldur	ADV	ADVR	Degree=Cmp	11	advmod	_	_
 9	fyrir	fyrir	ADP	P	_	11	case	_	_
 10	sameinað	sameina	VERB	VAN-A	Case=Acc|Tense=Past|VerbForm=Part	11	amod	_	_
-11	lið	lið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obl	_	_
+11	lið	lið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	conj	_	_
 12	fólks	fólk	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	dep	_	_
 13	íþróttamanna	íþróttamaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	nmod:poss	_	_
 14	frá	frá	ADP	P	_	15	case	_	_
@@ -220,13 +228,13 @@
 20	og	og	CCONJ	CONJ	_	23	cc	_	_
 21	þá	þá	ADV	ADV	Degree=Pos	23	advmod	_	_
 22	undir	undir	ADP	P	_	23	case	_	_
-23	merkjum	merki	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	conj	_	_
+23	merkjum	merki	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	conj	_	_
 24	Ólympíufánans	ólympíufáni	PROPN	NPR-G	_	23	nmod:poss	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.11
-# X_IDs = ID_missing_13 ; ID_missing_14
-# text = Oksana Chusovitina er fædd 19. júní 1975 í Buchara í Sovétríkjunum borgin er nú hluti af Úsbekistan og hóf ung að æfa fimleika.
+# sent_id = G-2-1031601.SANITY,.13
+# X_ID = ID_MISSING
+# text = Oksana Chusovitina er fædd 19. júní 1975 í Buchara í Sovétríkjunum borgin er nú hluti af Úsbekistan
 1	Oksana	oksana	PROPN	NPR-N	_	4	nsubj	_	_
 2	Chusovitina	chusovitina	PROPN	NPR-N	_	1	flat:name	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -244,17 +252,21 @@
 15	hluti	hluti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	parataxis	_	_
 16	af	af	ADP	P	_	17	case	_	_
 17	Úsbekistan	úsbekistan	PROPN	NPR-D	_	15	obl	_	_
-18	og	og	CCONJ	CONJ	_	19	cc	_	_
-19	hóf	hefja	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
-20	ung	ungur	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	amod	_	_
-21	að	að	PART	TO	_	22	mark	_	_
-22	æfa	æfa	VERB	VB	VerbForm=Inf	19	xcomp	_	_
-23	fimleika	fimleiki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obj	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.12
-# X_IDs = ID_missing_15 ; ID_missing_16 ; ID_missing_17 ; ID_missing_18
-# text = Hún vann sér fyrst inn þátttökurétt á Ólympíuleikunum í Barcelona árið 1992 en þá höfðu Sovétríkin liðast í sundur og Chusovitina keppti með sameinuðu liði íþróttafólks á hrakhólum og vann gullverðlaun í liðakeppni.
+# sent_id = G-2-1031601.SANITY,.14
+# X_ID = ID_MISSING
+# text = og hóf ung að æfa fimleika .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	hóf	hefja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	ung	ungur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	æfa	æfa	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+6	fimleika	fimleiki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.15
+# X_ID = ID_MISSING
+# text = Hún vann sér fyrst inn þátttökurétt á Ólympíuleikunum í Barcelona árið 1992
 1	Hún	hún	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	sér	sig	PRON	PRO-D	Case=Dat	2	iobj	_	_
@@ -267,32 +279,44 @@
 10	Barcelona	barcelona	PROPN	NPR-D	_	8	obl	_	_
 11	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
 12	1992	1992	NUM	NUM-A	Case=Acc	11	appos	_	_
-13	en	en	CCONJ	CONJ	_	17	cc	_	_
-14	þá	þá	ADV	ADV	Degree=Pos	17	advmod	_	_
-15	höfðu	hafa	AUX	HVDI	Mood=Ind|Tense=Past	17	aux	_	_
-16	Sovétríkin	sovétríkin	PROPN	NPRS-N	_	17	nsubj	_	_
-17	liðast	liða	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-18	í	í	ADP	P	_	19	case	_	_
-19	sundur	sundur	ADV	ADV	Degree=Pos	17	obl	_	_
-20	og	og	CCONJ	CONJ	_	22	cc	_	_
-21	Chusovitina	chusovitina	PROPN	NPR-A	_	22	nsubj	_	_
-22	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-23	með	með	ADP	P	_	25	case	_	_
-24	sameinuðu	sameinaður	ADJ	ADJ-D	Case=Dat|Degree=Pos	25	amod	_	_
-25	liði	lið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
-26	íþróttafólks	íþróttafólk	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	25	nmod:poss	_	_
-27	á	á	ADP	P	_	28	case	_	_
-28	hrakhólum	hrakhólar	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	26	obl	_	_
-29	og	og	CCONJ	CONJ	_	30	cc	_	_
-30	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-31	gullverðlaun	gullverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	30	obj	_	_
-32	í	í	ADP	P	_	33	case	_	_
-33	liðakeppni	liðakeppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obl	_	SpaceAfter=No
-34	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.13
-# X_IDs = ID_missing_19 ; ID_missing_20 ; ID_missing_21
-# text = Eftir leikana í Barcelona var tilveruréttur Úsbekistan viðurkenndur og hún varð ríkisborgari þess lands og keppti fyrir Úsbeka á Ólympíuleikunum í Atlanta 1996, Sydney 2000 og Aþenu 2004.
+# sent_id = G-2-1031601.SANITY,.16
+# X_ID = ID_MISSING
+# text = en þá höfðu Sovétríkin liðast í sundur
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	þá	þá	ADV	ADV	Degree=Pos	5	advmod	_	_
+3	höfðu	hafa	AUX	HVDI	Mood=Ind|Tense=Past	5	aux	_	_
+4	Sovétríkin	sovétríkin	PROPN	NPRS-N	_	5	nsubj	_	_
+5	liðast	liða	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	sundur	sundur	ADV	ADV	Degree=Pos	5	obl	_	_
+
+# sent_id = G-2-1031601.SANITY,.17
+# X_ID = ID_MISSING
+# text = og Chusovitina keppti með sameinuðu liði íþróttafólks á hrakhólum
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	Chusovitina	chusovitina	PROPN	NPR-A	_	3	nsubj	_	_
+3	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	með	með	ADP	P	_	6	case	_	_
+5	sameinuðu	sameinaður	ADJ	ADJ-D	Case=Dat|Degree=Pos	6	amod	_	_
+6	liði	lið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+7	íþróttafólks	íþróttafólk	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	nmod:poss	_	_
+8	á	á	ADP	P	_	9	case	_	_
+9	hrakhólum	hrakhólar	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	_
+
+# sent_id = G-2-1031601.SANITY,.18
+# X_ID = ID_MISSING
+# text = og vann gullverðlaun í liðakeppni .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	gullverðlaun	gullverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
+4	í	í	ADP	P	_	5	case	_	_
+5	liðakeppni	liðakeppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.19
+# X_ID = ID_MISSING
+# text = Eftir leikana í Barcelona var tilveruréttur Úsbekistan viðurkenndur
 1	Eftir	eftir	ADP	P	_	2	case	_	_
 2	leikana	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -301,32 +325,40 @@
 6	tilveruréttur	tilveruréttur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 7	Úsbekistan	úsbekistan	PROPN	NPR-G	_	6	nmod:poss	_	_
 8	viðurkenndur	viðurkenna	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
-9	og	og	CCONJ	CONJ	_	11	cc	_	_
-10	hún	hún	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-11	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	8	conj	_	OriginalHead=0
-12	ríkisborgari	ríkisborgari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	xcomp	_	_
-13	þess	sá	DET	D-G	Case=Gen	14	det	_	_
-14	lands	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	nmod:poss	_	_
-15	og	og	CCONJ	CONJ	_	16	cc	_	_
-16	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	8	conj	_	OriginalHead=0
-17	fyrir	fyrir	ADP	P	_	18	case	_	_
-18	Úsbeka	úsbeki	PROPN	NPR-A	_	16	obl	_	_
-19	á	á	ADP	P	_	20	case	_	_
-20	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	16	obl	_	_
-21	í	í	ADP	P	_	22	case	_	_
-22	Atlanta	atlanta	PROPN	NPR-D	_	20	obl	_	_
-23	1996	1996	NUM	NUM-A	Case=Acc	22	obl	_	SpaceAfter=No
-24	,	,	PUNCT	,	_	25	punct	_	_
-25	Sydney	sydney	PROPN	NPR-D	_	22	conj	_	_
-26	2000	2000	NUM	NUM-A	Case=Acc	25	obl	_	_
-27	og	og	CCONJ	CONJ	_	28	cc	_	_
-28	Aþenu	aþena	PROPN	NPR-D	_	22	conj	_	_
-29	2004	2004	NUM	NUM-A	Case=Acc	28	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.14
-# X_IDs = ID_missing_22 ; ID_missing_23
-# text = Hún giftist fimleikamanninum Bakhodir Kurbanov sem einnig er Úsbeki árið 1997 og tveimur árum síðar eignuðust þau soninn Alisher.
+# sent_id = G-2-1031601.SANITY,.20
+# X_ID = ID_MISSING
+# text = og hún varð ríkisborgari þess lands
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	hún	hún	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
+4	ríkisborgari	ríkisborgari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	xcomp	_	_
+5	þess	sá	DET	D-G	Case=Gen	6	det	_	_
+6	lands	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	nmod:poss	_	_
+
+# sent_id = G-2-1031601.SANITY,.21
+# X_ID = ID_MISSING
+# text = og keppti fyrir Úsbeka á Ólympíuleikunum í Atlanta 1996, Sydney 2000 og Aþenu 2004 .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	fyrir	fyrir	ADP	P	_	4	case	_	_
+4	Úsbeka	úsbeki	PROPN	NPR-A	_	2	obl	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	2	obl	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	Atlanta	atlanta	PROPN	NPR-D	_	6	obl	_	_
+9	1996	1996	NUM	NUM-A	Case=Acc	8	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	11	punct	_	_
+11	Sydney	sydney	PROPN	NPR-D	_	8	conj	_	_
+12	2000	2000	NUM	NUM-A	Case=Acc	11	obl	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	Aþenu	aþena	PROPN	NPR-D	_	8	conj	_	_
+15	2004	2004	NUM	NUM-A	Case=Acc	14	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.22
+# X_ID = ID_MISSING
+# text = Hún giftist fimleikamanninum Bakhodir Kurbanov sem einnig er Úsbeki árið 1997
 1	Hún	hún	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	giftist	gifta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fimleikamanninum	fimleikamaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	_
@@ -338,45 +370,53 @@
 9	Úsbeki	úsbeki	PROPN	NPR-N	_	3	acl:relcl	_	_
 10	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 11	1997	1997	NUM	NUM-A	Case=Acc	10	appos	_	_
-12	og	og	CCONJ	CONJ	_	16	cc	_	_
-13	tveimur	tveir	NUM	NUM-D	Case=Dat	14	nummod	_	_
-14	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	_
-15	síðar	síðar	ADV	ADVR	Degree=Cmp	16	advmod	_	_
-16	eignuðust	eigna	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-17	þau	það	PRON	PRO-N	Case=Nom	16	nsubj	_	_
-18	soninn	sonur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obj	_	_
-19	Alisher	alisher	PROPN	NPR-A	_	18	appos	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.15
-# X_IDs = ID_missing_24 ; ID_missing_25
-# text = Alisher greindist með hvítblæði árið 2002 og til að leita lækninga fluttust Chusovitina og Kurbanov með Alisher til Kölnar í Þýskalandi.
+# sent_id = G-2-1031601.SANITY,.23
+# X_ID = ID_MISSING
+# text = og tveimur árum síðar eignuðust þau soninn Alisher .
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	tveimur	tveir	NUM	NUM-D	Case=Dat	3	nummod	_	_
+3	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
+4	síðar	síðar	ADV	ADVR	Degree=Cmp	5	advmod	_	_
+5	eignuðust	eigna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+6	þau	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+7	soninn	sonur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
+8	Alisher	alisher	PROPN	NPR-A	_	7	appos	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.24
+# X_ID = ID_MISSING
+# text = Alisher greindist með hvítblæði árið 2002
 1	Alisher	alisher	PROPN	NPR-N	_	2	nsubj	_	_
 2	greindist	greina	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	með	með	ADP	P	_	4	case	_	_
 4	hvítblæði	hvítblæði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 5	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 6	2002	2002	NUM	NUM-A	Case=Acc	5	appos	_	_
-7	og	og	CCONJ	CONJ	_	12	cc	_	_
-8	til	til	ADP	P	_	10	case	_	_
-9	að	að	PART	TO	_	10	advcl	_	_
-10	leita	leita	VERB	VB	VerbForm=Inf	12	obl	_	_
-11	lækninga	lækning	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	obj	_	_
-12	fluttust	flytja	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-13	Chusovitina	chusovitina	PROPN	NPR-A	_	15	dep	_	_
-14	og	og	CCONJ	CONJ	_	15	cc	_	_
-15	Kurbanov	kurbanov	PROPN	NPR-N	_	12	nsubj	_	_
-16	með	með	ADP	P	_	17	case	_	_
-17	Alisher	alisher	PROPN	NPR-A	_	12	obl	_	_
-18	til	til	ADP	P	_	19	case	_	_
-19	Kölnar	köln	PROPN	NPR-G	_	12	obl	_	_
-20	í	í	ADP	P	_	21	case	_	_
-21	Þýskalandi	þýskaland	PROPN	NPR-D	_	19	obl	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.16
-# X_IDs = ID_missing_26 ; ID_missing_27
-# text = Á meðan Alisher gekkst undir meðferð í Köln æfði Chusovitina í Þýskalandi og árið 2006 gerðist hún þýskur ríkisborgari.
+# sent_id = G-2-1031601.SANITY,.25
+# X_ID = ID_MISSING
+# text = og til að leita lækninga fluttust Chusovitina og Kurbanov með Alisher til Kölnar í Þýskalandi .
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	til	til	ADP	P	_	4	case	_	_
+3	að	að	PART	TO	_	4	advcl	_	_
+4	leita	leita	VERB	VB	VerbForm=Inf	6	obl	_	_
+5	lækninga	lækning	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	obj	_	_
+6	fluttust	flytja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+7	Chusovitina	chusovitina	PROPN	NPR-A	_	9	dep	_	_
+8	og	og	CCONJ	CONJ	_	9	cc	_	_
+9	Kurbanov	kurbanov	PROPN	NPR-N	_	6	nsubj	_	_
+10	með	með	ADP	P	_	11	case	_	_
+11	Alisher	alisher	PROPN	NPR-A	_	6	obl	_	_
+12	til	til	ADP	P	_	13	case	_	_
+13	Kölnar	köln	PROPN	NPR-G	_	6	obl	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	Þýskalandi	þýskaland	PROPN	NPR-D	_	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.26
+# X_ID = ID_MISSING
+# text = Á meðan Alisher gekkst undir meðferð í Köln æfði Chusovitina í Þýskalandi
 1	Á	á	ADP	P	_	4	case	_	_
 2	meðan	meðan	ADP	P	_	4	case	_	_
 3	Alisher	alisher	PROPN	NPR-N	_	4	nsubj	_	_
@@ -389,18 +429,22 @@
 10	Chusovitina	chusovitina	PROPN	NPR-N	_	9	nsubj	_	_
 11	í	í	ADP	P	_	12	case	_	_
 12	Þýskalandi	þýskaland	PROPN	NPR-D	_	9	obl	_	_
-13	og	og	CCONJ	CONJ	_	16	cc	_	_
-14	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	_
-15	2006	2006	NUM	NUM-A	Case=Acc	14	appos	_	_
-16	gerðist	gera	VERB	DODI	Mood=Ind|Tense=Past	9	conj	_	OriginalHead=0
-17	hún	hún	PRON	PRO-N	Case=Nom	16	nsubj	_	_
-18	þýskur	þýskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	amod	_	_
-19	ríkisborgari	ríkisborgari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	xcomp	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.17
-# X_ID = ID_missing_28
-# text = Hún keppti því fyrir Þýskaland í fimleikakeppni Ólympíuleikanna í Peking árið 2008.
+# sent_id = G-2-1031601.SANITY,.27
+# X_ID = ID_MISSING
+# text = og árið 2006 gerðist hún þýskur ríkisborgari .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+3	2006	2006	NUM	NUM-A	Case=Acc	2	appos	_	_
+4	gerðist	gera	VERB	DODI	Mood=Ind|Tense=Past	0	root	_	_
+5	hún	hún	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+6	þýskur	þýskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
+7	ríkisborgari	ríkisborgari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.28
+# X_ID = ID_MISSING
+# text = Hún keppti því fyrir Þýskaland í fimleikakeppni Ólympíuleikanna í Peking árið 2008 .
 1	Hún	hún	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
@@ -415,9 +459,9 @@
 12	2008	2008	NUM	NUM-A	Case=Acc	11	appos	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.18
-# X_ID = ID_missing_29
-# text = Þar vann hún sín önnur Ólympíuverðlaun þegar hún hlaut silfur fyrir stökk.
+# sent_id = G-2-1031601.SANITY,.29
+# X_ID = ID_MISSING
+# text = Þar vann hún sín önnur Ólympíuverðlaun þegar hún hlaut silfur fyrir stökk .
 1	Þar	þar	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	hún	hún	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -432,9 +476,9 @@
 12	stökk	stökk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.19
-# X_IDs = ID_missing_30 ; ID_missing_31 ; ID_missing_32
-# text = Chusovitina keppti svo á sínum sjöttu Ólympíuleikum þegar hún mætti til London 2012 fyrir hönd Þjóðverja þá 37 ára og komst meðal annars í úrslit í stökki og endaði í fimmta sæti.
+# sent_id = G-2-1031601.SANITY,.30
+# X_ID = ID_MISSING
+# text = Chusovitina keppti svo á sínum sjöttu Ólympíuleikum þegar hún mætti til London 2012 fyrir hönd Þjóðverja þá 37 ára
 1	Chusovitina	chusovitina	PROPN	NPR-N	_	2	nsubj	_	_
 2	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -454,24 +498,32 @@
 17	þá	þá	ADV	ADV	Degree=Pos	10	amod	_	_
 18	37	37	NUM	NUM-N	Case=Nom	19	nummod	_	_
 19	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	17	nmod:poss	_	_
-20	og	og	CCONJ	CONJ	_	21	cc	_	_
-21	komst	koma	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-22	meðal	meðal	ADP	P	_	23	case	_	_
-23	annars	annar	PRON	OTHER-G	Case=Gen	21	obl	_	_
-24	í	í	ADP	P	_	25	case	_	_
-25	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	21	obl	_	_
-26	í	í	ADP	P	_	27	case	_	_
-27	stökki	stökk	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
-28	og	og	CCONJ	CONJ	_	29	cc	_	_
-29	endaði	enda	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-30	í	í	ADP	P	_	32	case	_	_
-31	fimmta	fimmti	ADJ	ADJ-D	Case=Dat|Degree=Pos	32	amod	_	_
-32	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obl	_	SpaceAfter=No
-33	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.20
-# X_IDs = ID_missing_33 ; ID_missing_34 ; ID_missing_35
-# text = Nú er hún farin að keppa aftur fyrir hönd Úsbekstan og tókst í vor að vinna sér inn þátttökurétt á sjöundu Ólympíuleikunum í röð og verður því væntanlega í eldlínunni í Ríó í ágúst, þá orðin 41 árs.
+# sent_id = G-2-1031601.SANITY,.31
+# X_ID = ID_MISSING
+# text = og komst meðal annars í úrslit í stökki
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	komst	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	meðal	meðal	ADP	P	_	4	case	_	_
+4	annars	annar	PRON	OTHER-G	Case=Gen	2	obl	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	úrslit	úrslit	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	stökki	stökk	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+
+# sent_id = G-2-1031601.SANITY,.32
+# X_ID = ID_MISSING
+# text = og endaði í fimmta sæti .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	endaði	enda	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	í	í	ADP	P	_	5	case	_	_
+4	fimmta	fimmti	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
+5	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.33
+# X_ID = ID_MISSING
+# text = Nú er hún farin að keppa aftur fyrir hönd Úsbekstan
 1	Nú	nú	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	hún	hún	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -482,40 +534,48 @@
 8	fyrir	fyrir	ADP	P	_	9	case	_	_
 9	hönd	hönd	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
 10	Úsbekstan	úsbekstan	PROPN	NPR-G	_	9	nmod:poss	_	_
-11	og	og	CCONJ	CONJ	_	12	cc	_	_
-12	tókst	taka	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
-13	í	í	ADP	P	_	14	case	_	_
-14	vor	vor	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
-15	að	að	PART	TO	_	16	mark	_	_
-16	vinna	vinna	VERB	VB	VerbForm=Inf	12	xcomp	_	_
-17	sér	sig	PRON	PRO-D	Case=Dat	16	iobj	_	_
-18	inn	inn	ADP	RP	_	16	compound:prt	_	_
-19	þátttökurétt	þátttökuréttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obj	_	_
-20	á	á	ADP	P	_	22	case	_	_
-21	sjöundu	sjöundi	ADJ	ADJ-D	Case=Dat|Degree=Pos	22	amod	_	_
-22	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	19	obl	_	_
-23	í	í	ADP	P	_	24	case	_	_
-24	röð	röð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
-25	og	og	CCONJ	CONJ	_	26	cc	_	_
-26	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-27	því	það	PRON	PRO-D	Case=Dat	26	obl	_	_
-28	væntanlega	væntanlega	ADV	ADV	Degree=Pos	26	advmod	_	_
-29	í	í	ADP	P	_	30	case	_	_
-30	eldlínunni	eldlína	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	_
-31	í	í	ADP	P	_	32	case	_	_
-32	Ríó	ríó	PROPN	NPR-D	_	26	obl	_	_
-33	í	í	ADP	P	_	34	case	_	_
-34	ágúst	ágúst	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
-35	,	,	PUNCT	,	_	34	punct	_	_
-36	þá	þá	ADV	ADV	Degree=Pos	26	dep	_	_
-37	orðin	verða	VERB	RDN	Tense=Past|VerbForm=Part	36	dep	_	_
-38	41	41	NUM	NUM-G	Case=Gen	39	nummod	_	_
-39	árs	ár	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	36	amod	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.21
-# X_IDs = ID_missing_36 ; ID_missing_37
-# text = Oksana Chusovitina er í miklum metum í heimalandi sínu og ber meðal annars titilinn heiðursíþróttamaður Úsbekistan fyrir framlag sitt í þágu íþrótta í gegnum tíðina.
+# sent_id = G-2-1031601.SANITY,.34
+# X_ID = ID_MISSING
+# text = og tókst í vor að vinna sér inn þátttökurétt á sjöundu Ólympíuleikunum í röð
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	tókst	taka	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	í	í	ADP	P	_	4	case	_	_
+4	vor	vor	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	vinna	vinna	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+7	sér	sig	PRON	PRO-D	Case=Dat	6	iobj	_	_
+8	inn	inn	ADP	RP	_	6	compound:prt	_	_
+9	þátttökurétt	þátttökuréttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+10	á	á	ADP	P	_	12	case	_	_
+11	sjöundu	sjöundi	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
+12	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	9	obl	_	_
+13	í	í	ADP	P	_	14	case	_	_
+14	röð	röð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+
+# sent_id = G-2-1031601.SANITY,.35
+# X_ID = ID_MISSING
+# text = og verður því væntanlega í eldlínunni í Ríó í ágúst, þá orðin 41 árs .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
+4	væntanlega	væntanlega	ADV	ADV	Degree=Pos	2	advmod	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	eldlínunni	eldlína	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	Ríó	ríó	PROPN	NPR-D	_	2	obl	_	_
+9	í	í	ADP	P	_	10	case	_	_
+10	ágúst	ágúst	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	þá	þá	ADV	ADV	Degree=Pos	2	dep	_	_
+13	orðin	verða	VERB	RDN	Tense=Past|VerbForm=Part	12	dep	_	_
+14	41	41	NUM	NUM-G	Case=Gen	15	nummod	_	_
+15	árs	ár	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	amod	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.36
+# X_ID = ID_MISSING
+# text = Oksana Chusovitina er í miklum metum í heimalandi sínu
 1	Oksana	oksun	PROPN	NPR-N	_	6	nsubj	_	_
 2	Chusovitina	chusovitina	PROPN	NPR-N	_	1	flat:name	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
@@ -525,27 +585,31 @@
 7	í	í	ADP	P	_	8	case	_	_
 8	heimalandi	heimaland	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 9	sínu	sinn	PRON	PRO-D	Case=Dat	8	nmod:poss	_	_
-10	og	og	CCONJ	CONJ	_	11	cc	_	_
-11	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
-12	meðal	meðal	ADP	P	_	13	case	_	_
-13	annars	annar	PRON	OTHER-G	Case=Gen	11	obl	_	_
-14	titilinn	titill	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
-15	heiðursíþróttamaður	heiðursíþróttamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	appos	_	_
-16	Úsbekistan	úsbekistan	PROPN	NPR-G	_	15	nmod:poss	_	_
-17	fyrir	fyrir	ADP	P	_	18	case	_	_
-18	framlag	framlag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
-19	sitt	sinn	PRON	PRO-A	Case=Acc	18	nmod:poss	_	_
-20	í	í	ADP	P	_	21	case	_	_
-21	þágu	þága	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
-22	íþrótta	íþrótt	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	21	nmod:poss	_	_
-23	í	í	ADP	P	_	25	case	_	_
-24	gegnum	gegnum	ADP	P	_	25	case	_	_
-25	tíðina	tíð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.22
-# X_IDs = ID_missing_38 ; ID_missing_39
-# text = Chusovitina verður elsta fimleikakonan til að keppa á Ólympíuleikum þegar hún mætir til leiks í Ríó og þá hefur heldur engin fimleikakona keppt jafn oft á Ólympíuleikum og hún.
+# sent_id = G-2-1031601.SANITY,.37
+# X_ID = ID_MISSING
+# text = og ber meðal annars titilinn heiðursíþróttamaður Úsbekistan fyrir framlag sitt í þágu íþrótta í gegnum tíðina .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	meðal	meðal	ADP	P	_	4	case	_	_
+4	annars	annar	PRON	OTHER-G	Case=Gen	2	obl	_	_
+5	titilinn	titill	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+6	heiðursíþróttamaður	heiðursíþróttamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	appos	_	_
+7	Úsbekistan	úsbekistan	PROPN	NPR-G	_	6	nmod:poss	_	_
+8	fyrir	fyrir	ADP	P	_	9	case	_	_
+9	framlag	framlag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+10	sitt	sinn	PRON	PRO-A	Case=Acc	9	nmod:poss	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	þágu	þága	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+13	íþrótta	íþrótt	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	nmod:poss	_	_
+14	í	í	ADP	P	_	16	case	_	_
+15	gegnum	gegnum	ADP	P	_	16	case	_	_
+16	tíðina	tíð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.38
+# X_ID = ID_MISSING
+# text = Chusovitina verður elsta fimleikakonan til að keppa á Ólympíuleikum þegar hún mætir til leiks í Ríó
 1	Chusovitina	chusovitina	PROPN	NPR-N	_	2	nsubj	_	_
 2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	elsta	gamall	ADJ	ADJS-N	Case=Nom|Degree=Sup	4	amod	_	_
@@ -562,24 +626,28 @@
 14	leiks	leikur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	obl	_	_
 15	í	í	ADP	P	_	16	case	_	_
 16	Ríó	ríó	PROPN	NPR-D	_	12	obl	_	_
-17	og	og	CCONJ	CONJ	_	23	cc	_	_
-18	þá	þá	ADV	ADV	Degree=Pos	23	advmod	_	_
-19	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	23	aux	_	_
-20	heldur	gjarna	ADV	ADVR	Degree=Cmp	23	advmod	_	_
-21	engin	enginn	DET	Q-N	Case=Nom	22	amod	_	_
-22	fimleikakona	fimleikakona	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	nsubj	_	_
-23	keppt	keppa	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-24	jafn	jafn	ADV	ADV	Degree=Pos	23	advmod	_	_
-25	oft	oft	ADV	ADV	Degree=Pos	24	advmod	_	_
-26	á	á	ADP	P	_	27	case	_	_
-27	Ólympíuleikum	ólympíuleikar	PROPN	NPRS-D	_	23	obl	_	_
-28	og	og	ADP	P	_	29	case	_	_
-29	hún	hún	PRON	PRO-N	Case=Nom	23	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.23
-# X_ID = ID_missing_40
-# text = Chusovitina á þó talsvert langt í að ná meti kanadíska knapans Ian Millar sem keppt hefur á 10 Ólympíuleikum.
+# sent_id = G-2-1031601.SANITY,.39
+# X_ID = ID_MISSING
+# text = og þá hefur heldur engin fimleikakona keppt jafn oft á Ólympíuleikum og hún .
+1	og	og	CCONJ	CONJ	_	7	cc	_	_
+2	þá	þá	ADV	ADV	Degree=Pos	7	advmod	_	_
+3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	7	aux	_	_
+4	heldur	gjarna	ADV	ADVR	Degree=Cmp	7	advmod	_	_
+5	engin	enginn	DET	Q-N	Case=Nom	6	amod	_	_
+6	fimleikakona	fimleikakona	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
+7	keppt	keppa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+8	jafn	jafn	ADV	ADV	Degree=Pos	7	advmod	_	_
+9	oft	oft	ADV	ADV	Degree=Pos	8	advmod	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	Ólympíuleikum	ólympíuleikar	PROPN	NPRS-D	_	7	obl	_	_
+12	og	og	ADP	P	_	13	case	_	_
+13	hún	hún	PRON	PRO-N	Case=Nom	7	obl	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.40
+# X_ID = ID_MISSING
+# text = Chusovitina á þó talsvert langt í að ná meti kanadíska knapans Ian Millar sem keppt hefur á 10 Ólympíuleikum .
 1	Chusovitina	chusovitina	PROPN	NPR-N	_	2	nsubj	_	_
 2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þó	þó	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -601,9 +669,9 @@
 19	Ólympíuleikum	ólympíuleikar	PROPN	NPRS-D	_	15	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.24
-# X_IDs = ID_missing_41 ; ID_missing_42
-# text = Millar sem keppti í hestaíþróttum keppti fyrst á leikunum í München árið 1972 þá 25 ára og svo aftur fjórum árum síðan í Montreal en missti af leikunum í Moskvu 1980.
+# sent_id = G-2-1031601.SANITY,.41
+# X_ID = ID_MISSING
+# text = Millar sem keppti í hestaíþróttum keppti fyrst á leikunum í München árið 1972 þá 25 ára og svo aftur fjórum árum síðan í Montreal
 1	Millar	millar	PROPN	NPR-N	_	6	nsubj	_	_
 2	sem	sem	SCONJ	C	_	3	mark	_	_
 3	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	1	acl:relcl	_	_
@@ -628,18 +696,22 @@
 22	síðan	síðan	X	X	_	21	dep	_	_
 23	í	í	ADP	P	_	24	case	_	_
 24	Montreal	montreal	PROPN	NPR-D	_	6	conj	_	_
-25	en	en	CCONJ	CONJ	_	26	cc	_	_
-26	missti	missa	VERB	VBDI	Mood=Ind|Tense=Past	6	conj	_	OriginalHead=0
-27	af	af	ADP	P	_	28	case	_	_
-28	leikunum	leikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	26	obl	_	_
-29	í	í	ADP	P	_	30	case	_	_
-30	Moskvu	moskva	PROPN	NPR-D	_	28	obl	_	_
-31	1980	1980	NUM	NUM-A	Case=Acc	28	obl	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.25
-# X_IDs = ID_missing_43 ; ID_missing_44
-# text = Hann keppti svo á öllum leikum frá og með 1984 til leikanna í London 2012 en þá var Millar orðinn 65 ára.
+# sent_id = G-2-1031601.SANITY,.42
+# X_ID = ID_MISSING
+# text = en missti af leikunum í Moskvu 1980 .
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	missti	missa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	af	af	ADP	P	_	4	case	_	_
+4	leikunum	leikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	Moskvu	moskva	PROPN	NPR-D	_	4	obl	_	_
+7	1980	1980	NUM	NUM-A	Case=Acc	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.43
+# X_ID = ID_MISSING
+# text = Hann keppti svo á öllum leikum frá og með 1984 til leikanna í London 2012
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	keppti	keppa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -649,24 +721,28 @@
 7	frá	frá	ADP	P	_	10	case	_	_
 8	og	og	CCONJ	CONJ	_	10	cc	_	_
 9	með	með	ADP	P	_	10	case	_	_
-10	1984	1984	NUM	NUM-D	Case=Dat	11	obl	_	_
-11	til	til	ADP	P	_	6	obl	_	_
-12	leikanna	leikur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	conj	_	_
+10	1984	1984	NUM	NUM-D	Case=Dat	6	obl	_	_
+11	til	til	ADP	P	_	12	case	_	_
+12	leikanna	leikur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	conj	_	_
 13	í	í	ADP	P	_	14	case	_	_
 14	London	london	PROPN	NPR-D	_	12	obl	_	_
 15	2012	2012	NUM	NUM-A	Case=Acc	12	obl	_	_
-16	en	en	CCONJ	CONJ	_	20	cc	_	_
-17	þá	þá	ADV	ADV	Degree=Pos	20	advmod	_	_
-18	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	20	cop	_	_
-19	Millar	millar	PROPN	NPRS-N	_	20	nsubj	_	_
-20	orðinn	verða	VERB	RDN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-21	65	65	NUM	NUM-G	Case=Gen	22	nummod	_	_
-22	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	20	amod	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.26
-# X_IDs = ID_missing_45 ; ID_missing_46
-# text = Lengi vel var útlit fyrir að Millar færi á sína elleftu Ólympíuleika og yrði með á leikunum í Ríó, en þar sem hans besta hross, hesturinn Dixon er að jafna sig eftir aðgerð verður ekkert af þátttöku hans.
+# sent_id = G-2-1031601.SANITY,.44
+# X_ID = ID_MISSING
+# text = en þá var Millar orðinn 65 ára .
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	þá	þá	ADV	ADV	Degree=Pos	5	advmod	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
+4	Millar	millar	PROPN	NPRS-N	_	5	nsubj	_	_
+5	orðinn	verða	VERB	RDN	Tense=Past|VerbForm=Part	0	root	_	_
+6	65	65	NUM	NUM-G	Case=Gen	7	nummod	_	_
+7	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	5	amod	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.45
+# X_ID = ID_MISSING
+# text = Lengi vel var útlit fyrir að Millar færi á sína elleftu Ólympíuleika og yrði með á leikunum í Ríó,
 1	Lengi	lengi	ADV	ADV	Degree=Pos	8	obl	_	_
 2	vel	vel	ADV	ADV	Degree=Pos	1	advmod	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	8	cop	_	_
@@ -687,31 +763,35 @@
 18	í	í	ADP	P	_	19	case	_	_
 19	Ríó	ríó	PROPN	NPR-D	_	17	obl	_	SpaceAfter=No
 20	,	,	PUNCT	,	_	8	punct	_	_
-21	en	en	CCONJ	CONJ	_	36	cc	_	_
-22	þar	þar	ADV	ADV	Degree=Pos	36	advmod	_	_
-23	sem	sem	SCONJ	C	_	32	mark	_	_
-24	hans	hann	PRON	PRO-G	Case=Gen	26	nmod:poss	_	_
-25	besta	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	26	amod	_	_
-26	hross	hross	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	32	nsubj	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	26	punct	_	_
-28	hesturinn	hestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	26	appos	_	_
-29	Dixon	dixon	PROPN	NPR-N	_	28	appos	_	_
-30	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	32	cop	_	_
-31	að	að	PART	TO	_	32	mark	_	_
-32	jafna	jafna	VERB	VB	VerbForm=Inf	22	advcl	_	_
-33	sig	sig	PRON	PRO-A	Case=Acc	32	obj	_	_
-34	eftir	eftir	ADP	P	_	35	case	_	_
-35	aðgerð	aðgerð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
-36	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	8	conj	_	OriginalHead=0
-37	ekkert	enginn	DET	Q-N	Case=Nom	36	nsubj	_	_
-38	af	af	ADP	P	_	39	case	_	_
-39	þátttöku	þátttaka	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	36	obl	_	_
-40	hans	hann	PRON	PRO-G	Case=Gen	39	nmod:poss	_	SpaceAfter=No
-41	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.27
-# X_IDs = ID_missing_47 ; ID_missing_48
-# text = En Millar verður þó í Ólympíuliði Kanada, það er að segja Amy Millar, dóttir Ians og hún mun að sjálfsögðu keppa í hestaíþróttum á leikunum.
+# sent_id = G-2-1031601.SANITY,.46
+# X_ID = ID_MISSING
+# text = en þar sem hans besta hross, hesturinn Dixon er að jafna sig eftir aðgerð verður ekkert af þátttöku hans .
+1	en	en	CCONJ	CONJ	_	16	cc	_	_
+2	þar	þar	ADV	ADV	Degree=Pos	16	advmod	_	_
+3	sem	sem	SCONJ	C	_	12	mark	_	_
+4	hans	hann	PRON	PRO-G	Case=Gen	6	nmod:poss	_	_
+5	besta	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	6	amod	_	_
+6	hross	hross	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	hesturinn	hestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	appos	_	_
+9	Dixon	dixon	PROPN	NPR-N	_	8	appos	_	_
+10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
+11	að	að	PART	TO	_	12	mark	_	_
+12	jafna	jafna	VERB	VB	VerbForm=Inf	2	advcl	_	_
+13	sig	sig	PRON	PRO-A	Case=Acc	12	obj	_	_
+14	eftir	eftir	ADP	P	_	15	case	_	_
+15	aðgerð	aðgerð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+16	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+17	ekkert	enginn	DET	Q-N	Case=Nom	16	nsubj	_	_
+18	af	af	ADP	P	_	19	case	_	_
+19	þátttöku	þátttaka	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
+20	hans	hann	PRON	PRO-G	Case=Gen	19	nmod:poss	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	16	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.47
+# X_ID = ID_MISSING
+# text = En Millar verður þó í Ólympíuliði Kanada, það er að segja Amy Millar, dóttir Ians
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	Millar	millar	PROPN	NPR-N	_	3	nsubj	_	_
 3	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -729,21 +809,25 @@
 15	,	,	PUNCT	,	_	14	punct	_	_
 16	dóttir	dóttir	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	appos	_	_
 17	Ians	ian	PROPN	NPR-G	_	16	nmod:poss	_	_
-18	og	og	CCONJ	CONJ	_	23	cc	_	_
-19	hún	hún	PRON	PRO-N	Case=Nom	23	nsubj	_	_
-20	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	23	aux	_	_
-21	að	að	ADP	P	_	22	case	_	_
-22	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Degree=Pos	23	obl	_	_
-23	keppa	keppa	VERB	VB	VerbForm=Inf	3	conj	_	OriginalHead=0
-24	í	í	ADP	P	_	25	case	_	_
-25	hestaíþróttum	hestaíþrótt	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	23	obl	_	_
-26	á	á	ADP	P	_	27	case	_	_
-27	leikunum	leikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	23	obl	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.28
-# X_ID = ID_missing_49
-# text = Millar er þó ekki elstur til að keppa á Ólympíuleikum.
+# sent_id = G-2-1031601.SANITY,.48
+# X_ID = ID_MISSING
+# text = og hún mun að sjálfsögðu keppa í hestaíþróttum á leikunum .
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	hún	hún	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+3	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
+4	að	að	ADP	P	_	5	case	_	_
+5	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Degree=Pos	6	obl	_	_
+6	keppa	keppa	VERB	VB	VerbForm=Inf	0	root	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	hestaíþróttum	hestaíþrótt	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+9	á	á	ADP	P	_	10	case	_	_
+10	leikunum	leikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.49
+# X_ID = ID_MISSING
+# text = Millar er þó ekki elstur til að keppa á Ólympíuleikum .
 1	Millar	millar	PROPN	NPR-N	_	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	þó	þó	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -756,9 +840,9 @@
 10	Ólympíuleikum	ólympíuleikar	PROPN	NPRS-D	_	8	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.29
-# X_ID = ID_missing_50
-# text = Það met er í eigu sænsku skyttunar Oscars Swahn sem var 72 ára og 281 dags gamall þegar hann keppti í skotfimi á Ólympíuleikunum í Antwerpen árið 1920.
+# sent_id = G-2-1031601.SANITY,.50
+# X_ID = ID_MISSING
+# text = Það met er í eigu sænsku skyttunar Oscars Swahn sem var 72 ára og 281 dags gamall þegar hann keppti í skotfimi á Ólympíuleikunum í Antwerpen árið 1920 .
 1	Það	sá	DET	D-N	Case=Nom	2	det	_	_
 2	met	met	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -789,9 +873,9 @@
 28	1920	1920	NUM	NUM-A	Case=Acc	27	appos	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.30
-# X_IDs = ID_missing_51 ; ID_missing_52 ; ID_missing_53
-# text = Swahn náði reyndar lágmarki inn á leikana í París fjórum árum síðar, dró þátttöku sína til baka og mætti ekki til keppni.
+# sent_id = G-2-1031601.SANITY,.51
+# X_ID = ID_MISSING
+# text = Swahn náði reyndar lágmarki inn á leikana í París fjórum árum síðar,
 1	Swahn	swahn	PROPN	NPR-N	_	2	nsubj	_	_
 2	náði	ná	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	reyndar	reyndar	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -805,21 +889,29 @@
 11	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
 12	síðar	síðar	ADV	ADVR	Degree=Cmp	2	advmod	_	SpaceAfter=No
 13	,	,	PUNCT	,	_	2	punct	_	_
-14	dró	draga	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-15	þátttöku	þátttaka	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
-16	sína	sinn	PRON	PRO-A	Case=Acc	15	nmod:poss	_	_
-17	til	til	ADP	P	_	18	case	_	_
-18	baka	bak	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	obl	_	_
-19	og	og	CCONJ	CONJ	_	20	cc	_	_
-20	mætti	mæta	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-21	ekki	ekki	ADV	NEG	_	20	advmod	_	_
-22	til	til	ADP	P	_	23	case	_	_
-23	keppni	keppni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.31
-# X_ID = ID_missing_54
-# text = Swahn á líka metið yfir elstu íþróttamenn til að vinna gullverðlaun á Ólympíuleikum.
+# sent_id = G-2-1031601.SANITY,.52
+# X_ID = ID_MISSING
+# text = dró þátttöku sína til baka
+1	dró	draga	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	þátttöku	þátttaka	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
+3	sína	sinn	PRON	PRO-A	Case=Acc	2	nmod:poss	_	_
+4	til	til	ADP	P	_	5	case	_	_
+5	baka	bak	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	1	obl	_	_
+
+# sent_id = G-2-1031601.SANITY,.53
+# X_ID = ID_MISSING
+# text = og mætti ekki til keppni .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	mætti	mæta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
+4	til	til	ADP	P	_	5	case	_	_
+5	keppni	keppni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.54
+# X_ID = ID_MISSING
+# text = Swahn á líka metið yfir elstu íþróttamenn til að vinna gullverðlaun á Ólympíuleikum .
 1	Swahn	swahn	PROPN	NPR-N	_	2	nsubj	_	_
 2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	líka	líka	ADV	ALSO	_	2	advmod	_	_
@@ -835,9 +927,9 @@
 13	Ólympíuleikum	ólympíuleikar	PROPN	NPRS-D	_	10	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.32
-# X_ID = ID_missing_55
-# text = Hann var 64 ára og 280 daga gamall þegar hann vann gullið í skotfimikeppni á leikunum í Stokkhólmi árið 1912. Ekki nóg með það, þá á Swahn líka metið sem elsti verðlaunahafi á Ólympíuleikum frá uppafi.
+# sent_id = G-2-1031601.SANITY,.55
+# X_ID = ID_MISSING
+# text = Hann var 64 ára og 280 daga gamall þegar hann vann gullið í skotfimikeppni á leikunum í Stokkhólmi árið 1912 . Ekki nóg með það, þá á Swahn líka metið sem elsti verðlaunahafi á Ólympíuleikum frá uppafi .
 1	Hann	hann	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	8	cop	_	_
 3	64	64	NUM	NUM-G	Case=Gen	4	nummod	_	_
@@ -878,9 +970,9 @@
 38	uppafi	uppaf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
 39	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.33
-# X_ID = ID_missing_56
-# text = Hann vann nefnilega silfurverðlaun á leikunum í Antwerpen 1920 þá á sjötugastaogþriðja aldursári.
+# sent_id = G-2-1031601.SANITY,.56
+# X_ID = ID_MISSING
+# text = Hann vann nefnilega silfurverðlaun á leikunum í Antwerpen 1920 þá á sjötugastaogþriðja aldursári .
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	nefnilega	nefnilega	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -896,9 +988,9 @@
 13	aldursári	aldursár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.34
-# X_ID = ID_missing_57
-# text = Elsta konan til að vinna verðlauna á Ólympíuleikum er Lida Peyton Pollock frá Bandaríkjunum sem vann gull í bogfimi í St. Louis 1904, þá 44 ára.
+# sent_id = G-2-1031601.SANITY,.57
+# X_ID = ID_MISSING
+# text = Elsta konan til að vinna verðlauna á Ólympíuleikum er Lida Peyton Pollock frá Bandaríkjunum sem vann gull í bogfimi í St. Louis 1904, þá 44 ára .
 1	Elsta	gamall	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	amod	_	_
 2	konan	kona	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 3	til	til	ADP	P	_	5	case	_	_
@@ -928,9 +1020,9 @@
 27	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	25	nmod:poss	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.35
-# X_ID = ID_missing_58
-# text = Elsti Íslendingurinn til að keppa á Ólympíuleikum var Carl J. Eiríksson sem var 62 ára þegar hann keppti í skotfimi á leikunum í Barcelona 1992.
+# sent_id = G-2-1031601.SANITY,.58
+# X_ID = ID_MISSING
+# text = Elsti Íslendingurinn til að keppa á Ólympíuleikum var Carl J. Eiríksson sem var 62 ára þegar hann keppti í skotfimi á leikunum í Barcelona 1992 .
 1	Elsti	elsa	VERB	VBDI	Mood=Ind|Tense=Past	2	dep	_	_
 2	Íslendingurinn	íslendingur	PROPN	NPR-N	_	9	nsubj	_	_
 3	til	til	ADP	P	_	5	case	_	_
@@ -958,9 +1050,9 @@
 25	1992	1992	NUM	NUM-A	Case=Acc	18	obl	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.36
-# X_ID = ID_missing_59
-# text = Hann var raunar elsti keppandinn af öllum íþróttamönnunum sem kepptu á Ólympíuleikunum í Barcelona.
+# sent_id = G-2-1031601.SANITY,.59
+# X_ID = ID_MISSING
+# text = Hann var raunar elsti keppandinn af öllum íþróttamönnunum sem kepptu á Ólympíuleikunum í Barcelona .
 1	Hann	hann	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
 3	raunar	raunar	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -977,9 +1069,9 @@
 14	Barcelona	barcelona	PROPN	NPR-D	_	12	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.37
-# X_IDs = ID_missing_60 ; ID_missing_61
-# text = Carl náði sér þó ekki á strik og endaði í 50. sæti af 52 keppendum í sinni grein.
+# sent_id = G-2-1031601.SANITY,.60
+# X_ID = ID_MISSING
+# text = Carl náði sér þó ekki á strik
 1	Carl	carl	PROPN	NPR-N	_	2	nsubj	_	_
 2	náði	ná	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	sér	sig	PRON	PRO-D	Case=Dat	2	obj	_	_
@@ -987,22 +1079,26 @@
 5	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 6	á	á	ADP	P	_	7	case	_	_
 7	strik	strik	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
-8	og	og	CCONJ	CONJ	_	9	cc	_	_
-9	endaði	enda	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-10	í	í	ADP	P	_	12	case	_	_
-11	50.	50.	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
-12	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
-13	af	af	ADP	P	_	15	case	_	_
-14	52	52	NUM	NUM-D	Case=Dat	15	nummod	_	_
-15	keppendum	keppandi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
-16	í	í	ADP	P	_	18	case	_	_
-17	sinni	sinn	PRON	PRO-D	Case=Dat	18	nmod:poss	_	_
-18	grein	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.38
-# X_ID = ID_missing_62
-# text = Íslensku keppendurnir átta sem mæta til leiks í Ríó í Brasilíu í ágúst eru hins vegar allir talsvert yngri.
+# sent_id = G-2-1031601.SANITY,.61
+# X_ID = ID_MISSING
+# text = og endaði í 50. sæti af 52 keppendum í sinni grein .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	endaði	enda	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	í	í	ADP	P	_	5	case	_	_
+4	50.	50.	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
+5	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+6	af	af	ADP	P	_	8	case	_	_
+7	52	52	NUM	NUM-D	Case=Dat	8	nummod	_	_
+8	keppendum	keppandi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
+9	í	í	ADP	P	_	11	case	_	_
+10	sinni	sinn	PRON	PRO-D	Case=Dat	11	nmod:poss	_	_
+11	grein	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1031601.SANITY,.62
+# X_ID = ID_MISSING
+# text = Íslensku keppendurnir átta sem mæta til leiks í Ríó í Brasilíu í ágúst eru hins vegar allir talsvert yngri .
 1	Íslensku	íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	keppendurnir	keppandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	19	nsubj	_	_
 3	átta	átta	NUM	NUM-N	Case=Nom	2	nummod	_	_
@@ -1024,9 +1120,9 @@
 19	yngri	ungur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	0	root	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	19	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.39
-# X_IDs = ID_missing_63 ; ID_missing_64
-# text = Júdókappinn Þormóður Árni Jónsson er þeirra elstur, en hann er þó ekki nema 33 ára, sem telst nú ekki hár aldur í hæsta gæðaflokki í júdó.
+# sent_id = G-2-1031601.SANITY,.63
+# X_ID = ID_MISSING
+# text = Júdókappinn Þormóður Árni Jónsson er þeirra elstur,
 1	Júdókappinn	júdókappi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 2	Þormóður	þormóður	PROPN	NPR-N	_	1	appos	_	_
 3	Árni	árni	PROPN	NPR-N	_	2	flat:name	_	_
@@ -1035,31 +1131,32 @@
 6	þeirra	hann	PRON	PRO-G	Case=Gen	7	nmod:poss	_	_
 7	elstur	gamall	ADJ	ADJS-N	Case=Nom|Degree=Sup	0	root	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	_
-9	en	en	CCONJ	CONJ	_	15	cc	_	_
-10	hann	hann	PRON	PRO-N	Case=Nom	15	nsubj	_	_
-11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
-12	þó	þó	ADV	ADV	Degree=Pos	15	advmod	_	_
-13	ekki	ekki	ADV	NEG	_	15	advmod	_	_
-14	nema	nema	ADP	P	_	15	case	_	_
-15	33	33	NUM	NUM-N	Case=Nom	7	conj	_	OriginalHead=0
-16	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	conj	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	16	punct	_	_
-18	sem	sem	SCONJ	C	_	19	mark	_	_
-19	telst	telja	VERB	VBPI	Mood=Ind|Tense=Pres	16	amod	_	_
-20	nú	nú	ADV	ADV	Degree=Pos	19	advmod	_	_
-21	ekki	ekki	ADV	NEG	_	19	advmod	_	_
-22	hár	hár	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	amod	_	_
-23	aldur	aldur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	xcomp	_	_
-24	í	í	ADP	P	_	26	case	_	_
-25	hæsta	hár	ADJ	ADJS-D	Case=Dat|Degree=Sup	26	amod	_	_
-26	gæðaflokki	gæðaflokkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
-27	í	í	ADP	P	_	28	case	_	_
-28	júdó	júdó	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1031601.SANITY,.40
-# X_ID = ID_missing_65
-# text = Pistillinn var fyrst fluttur á Sportrásinni á Rás 2, mánudagskvöldið 25. júlí 2016.
+# sent_id = G-2-1031601.SANITY,.64
+# X_ID = ID_MISSING
+# text = en hann er þó ekki nema 33 ára, sem telst nú ekki hár aldur í hæsta gæðaflokki í júdó .
+1	en	en	CCONJ	CONJ	_	7	cc	_	_
+2	hann	hann	PRON	PRO-N	Case=Nom	7	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
+4	þó	þó	ADV	ADV	Degree=Pos	7	advmod	_	_
+5	ekki	ekki	ADV	NEG	_	7	advmod	_	_
+6	nema	nema	ADP	P	_	7	case	_	_
+7	33	33	NUM	NUM-N	Case=Nom	0	root	_	_
+8	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	conj	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	sem	sem	SCONJ	C	_	11	mark	_	_
+11	telst	telja	VERB	VBPI	Mood=Ind|Tense=Pres	8	amod	_	_
+12	nú	nú	ADV	ADV	Degree=Pos	11	advmod	_	_
+13	ekki	ekki	ADV	NEG	_	11	advmod	_	_
+14	hár	hár	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	amod	_	_
+15	aldur	aldur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	xcomp	_	_
+16	í	í	ADP	P	_	18	case	_	_
+17	hæsta	hár	ADJ	ADJS-D	Case=Dat|Degree=Sup	18	amod	_	_
+18	gæðaflokki	gæðaflokkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	júdó	júdó	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	7	punct	_	_
+
 1	Pistillinn	pistill	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 3	fyrst	snemma	ADV	ADVS	Degree=Sup	4	advmod	_	_
@@ -1068,11 +1165,11 @@
 6	Sportrásinni	sportrás	PROPN	NPR-D	_	4	obl	_	_
 7	á	á	ADP	P	_	8	case	_	_
 8	Rás	rás	PROPN	NPR-D	_	6	obl	_	_
-9	2	tveir	NUM	NUM-N	Case=Nom	8	nmod:poss	_	SpaceAfter=No
+9	2	tveir	NUM	NUM-N	Case=Nom	8	nmod:poss	_	_
 10	,	,	PUNCT	,	_	9	punct	_	_
 11	mánudagskvöldið	mánudagskvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
 12	25.	25.	NUM	NUM-A	Case=Acc	13	nummod	_	_
 13	júlí	júlí	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	appos	_	_
-14	2016	2016	NUM	NUM-A	Case=Acc	13	obl	_	SpaceAfter=No
+14	2016	2016	NUM	NUM-A	Case=Acc	13	obl	_	_
 15	.	.	PUNCT	.	_	4	punct	_	_
 

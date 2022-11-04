@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Ég þakka spurningarnar.
+# sent_id = G-33-4521344,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Ég þakka spurningarnar .
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -9,9 +9,9 @@
 6	spurningarnar	spurning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.2
-# X_ID = ID_missing_2
-# text = Nei, ég vil ekki endilega draga upp glansmynd af Evrópusambandinu.
+# sent_id = G-33-4521344,.2
+# X_ID = ID_MISSING
+# text = Nei, ég vil ekki endilega draga upp glansmynd af Evrópusambandinu .
 1	Nei	nei	INTJ	INTJ	_	7	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
@@ -25,9 +25,9 @@
 11	Evrópusambandinu	evrópusamband	PROPN	NPR-D	_	9	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Ég tel að það sé margt ágætt þar en það er líka margt þar sem er ekki gott.
+# sent_id = G-33-4521344,.3
+# X_ID = ID_MISSING
+# text = Ég tel að það sé margt ágætt þar
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	7	mark	_	_
@@ -36,21 +36,25 @@
 6	margt	margur	DET	Q-N	Case=Nom	7	obl	_	_
 7	ágætt	ágætur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	_
 8	þar	þar	ADV	ADV	Degree=Pos	7	advmod	_	_
-9	en	en	CCONJ	CONJ	_	13	cc	_	_
-10	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	13	expl	_	_
-11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-12	líka	líka	ADV	ALSO	_	13	advmod	_	_
-13	margt	margur	DET	Q-N	Case=Nom	2	conj	_	OriginalHead=0
-14	þar	þar	ADV	ADV	Degree=Pos	13	advmod	_	_
-15	sem	sem	SCONJ	C	_	18	mark	_	_
-16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
-17	ekki	ekki	ADV	NEG	_	18	advmod	_	_
-18	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	acl:relcl	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.4
-# X_ID = ID_missing_5
-# text = En það er ekki eins og þetta sé einsleit mynd.
+# sent_id = G-33-4521344,.4
+# X_ID = ID_MISSING
+# text = en það er líka margt þar sem er ekki gott .
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	líka	líka	ADV	ALSO	_	5	advmod	_	_
+5	margt	margur	DET	Q-N	Case=Nom	0	root	_	_
+6	þar	þar	ADV	ADV	Degree=Pos	5	advmod	_	_
+7	sem	sem	SCONJ	C	_	10	mark	_	_
+8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
+9	ekki	ekki	ADV	NEG	_	10	advmod	_	_
+10	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	acl:relcl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4521344,.5
+# X_ID = ID_MISSING
+# text = En það er ekki eins og þetta sé einsleit mynd .
 1	En	en	CCONJ	CONJ	_	2	cc	_	_
 2	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
@@ -63,9 +67,9 @@
 10	mynd	mynd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.5
-# X_ID = ID_missing_6
-# text = Hv. þingmaður talaði um atvinnuleysi í Evrópusambandinu.
+# sent_id = G-33-4521344,.6
+# X_ID = ID_MISSING
+# text = Hv. þingmaður talaði um atvinnuleysi í Evrópusambandinu .
 1	Hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	talaði	tala	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -75,9 +79,9 @@
 7	Evrópusambandinu	evrópusamband	PROPN	NPR-D	_	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.6
-# X_ID = ID_missing_7
-# text = Atvinnuleysi í Evrópusambandinu er mjög misjafnt eftir löndum, alveg eins og á Íslandi, það er misjafnt eftir landshlutum.
+# sent_id = G-33-4521344,.7
+# X_ID = ID_MISSING
+# text = Atvinnuleysi í Evrópusambandinu er mjög misjafnt eftir löndum, alveg eins og á Íslandi, það er misjafnt eftir landshlutum .
 1	Atvinnuleysi	atvinnuleysi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
 2	í	í	ADP	P	_	3	case	_	_
 3	Evrópusambandinu	evrópusamband	PROPN	NPR-D	_	1	obl	_	_
@@ -100,9 +104,9 @@
 20	landshlutum	landshluti	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.7
-# X_IDs = ID_missing_8 ; ID_missing_9
-# text = Það er misjafnlega mikið atvinnuleysi eftir landshlutum, það er mikið á Suðurnesjum en lítið í til dæmis Norðausturkjördæmi, þannig að ég held við verðum að passa að setja ekki alltaf allt undir einn hatt þegar við ræðum um Evrópusambandið.
+# sent_id = G-33-4521344,.8
+# X_ID = ID_MISSING
+# text = Það er misjafnlega mikið atvinnuleysi eftir landshlutum,
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	misjafnlega	misjafnlega	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -110,45 +114,49 @@
 5	atvinnuleysi	atvinnuleysi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 6	eftir	eftir	ADP	P	_	7	case	_	_
 7	landshlutum	landshluti	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	7	punct	_	_
-9	það	það	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
-11	mikið	mikill	DET	Q-N	Case=Nom	5	conj	_	OriginalHead=0
-12	á	á	ADP	P	_	13	case	_	_
-13	Suðurnesjum	suðurnes	PROPN	NPRS-D	_	11	obl	_	_
-14	en	en	CCONJ	CONJ	_	15	cc	_	_
-15	lítið	lítill	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	conj	_	_
-16	í	í	ADP	P	_	19	case	_	_
-17	til	til	ADP	P	_	18	case	_	_
-18	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	obl	_	_
-19	Norðausturkjördæmi	norðausturkjördæmi	PROPN	NPR-D	_	15	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	19	punct	_	_
-21	þannig	þannig	ADV	ADV	Degree=Pos	15	advmod	_	_
-22	að	að	SCONJ	C	_	24	mark	_	_
-23	ég	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
-24	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	21	advcl	_	_
-25	við	ég	PRON	PRO-N	Case=Nom	26	nsubj	_	_
-26	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	24	ccomp	_	_
-27	að	að	PART	TO	_	28	mark	_	_
-28	passa	passa	VERB	VB	VerbForm=Inf	26	xcomp	_	_
-29	að	að	PART	TO	_	30	mark	_	_
-30	setja	setja	VERB	VB	VerbForm=Inf	28	xcomp	_	_
-31	ekki	ekki	ADV	NEG	_	30	advmod	_	_
-32	alltaf	alltaf	ADV	ADV	Degree=Pos	30	advmod	_	_
-33	allt	allur	DET	Q-A	Case=Acc	30	obj	_	_
-34	undir	undir	ADP	P	_	36	case	_	_
-35	einn	einn	DET	ONE-A	Case=Acc	36	det	_	_
-36	hatt	hattur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	_
-37	þegar	þegar	ADP	P	_	39	case	_	_
-38	við	ég	PRON	PRO-N	Case=Nom	39	nsubj	_	_
-39	ræðum	ræða	VERB	VBPI	Mood=Ind|Tense=Pres	30	obl	_	_
-40	um	um	ADP	P	_	41	case	_	_
-41	Evrópusambandið	evrópusamband	PROPN	NPR-A	_	39	obl	_	SpaceAfter=No
-42	.	.	PUNCT	.	_	5	punct	_	_
+8	,	,	PUNCT	,	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.8
-# X_ID = ID_missing_10
-# text = Það er ekki eins og það sé orðið eitt land.
+# sent_id = G-33-4521344,.9
+# X_ID = ID_MISSING
+# text = það er mikið á Suðurnesjum en lítið í til dæmis Norðausturkjördæmi, þannig að ég held við verðum að passa að setja ekki alltaf allt undir einn hatt þegar við ræðum um Evrópusambandið .
+1	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	mikið	mikill	DET	Q-N	Case=Nom	0	root	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	Suðurnesjum	suðurnes	PROPN	NPRS-D	_	3	obl	_	_
+6	en	en	CCONJ	CONJ	_	7	cc	_	_
+7	lítið	lítill	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	_
+8	í	í	ADP	P	_	11	case	_	_
+9	til	til	ADP	P	_	10	case	_	_
+10	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	obl	_	_
+11	Norðausturkjördæmi	norðausturkjördæmi	PROPN	NPR-D	_	7	obl	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	þannig	þannig	ADV	ADV	Degree=Pos	7	advmod	_	_
+14	að	að	SCONJ	C	_	16	mark	_	_
+15	ég	ég	PRON	PRO-N	Case=Nom	16	nsubj	_	_
+16	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	13	advcl	_	_
+17	við	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+18	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	16	ccomp	_	_
+19	að	að	PART	TO	_	20	mark	_	_
+20	passa	passa	VERB	VB	VerbForm=Inf	18	xcomp	_	_
+21	að	að	PART	TO	_	22	mark	_	_
+22	setja	setja	VERB	VB	VerbForm=Inf	20	xcomp	_	_
+23	ekki	ekki	ADV	NEG	_	22	advmod	_	_
+24	alltaf	alltaf	ADV	ADV	Degree=Pos	22	advmod	_	_
+25	allt	allur	DET	Q-A	Case=Acc	22	obj	_	_
+26	undir	undir	ADP	P	_	28	case	_	_
+27	einn	einn	DET	ONE-A	Case=Acc	28	det	_	_
+28	hatt	hattur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
+29	þegar	þegar	ADP	P	_	31	case	_	_
+30	við	ég	PRON	PRO-N	Case=Nom	31	nsubj	_	_
+31	ræðum	ræða	VERB	VBPI	Mood=Ind|Tense=Pres	22	obl	_	_
+32	um	um	ADP	P	_	33	case	_	_
+33	Evrópusambandið	evrópusamband	PROPN	NPR-A	_	31	obl	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4521344,.10
+# X_ID = ID_MISSING
+# text = Það er ekki eins og það sé orðið eitt land .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	ekki	ekki	ADV	NEG	_	1	advmod	_	_
@@ -161,9 +169,9 @@
 10	land	land	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	xcomp	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.9
-# X_ID = ID_missing_11
-# text = Það eru mörg lönd innan Evrópusambandsins.
+# sent_id = G-33-4521344,.11
+# X_ID = ID_MISSING
+# text = Það eru mörg lönd innan Evrópusambandsins .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	mörg	margur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -172,9 +180,9 @@
 6	Evrópusambandsins	evrópusamband	PROPN	NPR-G	_	4	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.10
-# X_IDs = ID_missing_12 ; ID_missing_13
-# text = Það sem ég held að Evrópusambandið geti hjálpað okkur með er að ná stöðugleika og eins og ég talaði um í ræðu minni tel ég að pólitískur stöðugleiki og fjárhagslegur stöðugleiki haldist algerlega í hendur.
+# sent_id = G-33-4521344,.12
+# X_ID = ID_MISSING
+# text = Það sem ég held að Evrópusambandið geti hjálpað okkur með er að ná stöðugleika
 1	Það	sá	DET	D-N	Case=Nom	13	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -189,32 +197,36 @@
 12	að	að	PART	TO	_	13	mark	_	_
 13	ná	ná	VERB	VB	VerbForm=Inf	0	root	_	_
 14	stöðugleika	stöðugleiki	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obj	_	_
-15	og	og	CCONJ	CONJ	_	24	cc	_	_
-16	eins	_	ADV	ADVR	Degree=Cmp	24	advmod	_	_
-17	og	_	ADP	P	_	19	case	_	_
-18	ég	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-19	talaði	tala	VERB	VBDI	Mood=Ind|Tense=Past	16	obl	_	_
-20	um	um	ADP	P	_	19	obl	_	_
-21	í	í	ADP	P	_	22	case	_	_
-22	ræðu	ræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
-23	minni	minn	PRON	PRO-D	Case=Dat	22	nmod:poss	_	_
-24	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	13	conj	_	OriginalHead=0
-25	ég	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
-26	að	að	SCONJ	C	_	32	mark	_	_
-27	pólitískur	pólitískur	ADJ	ADJ-N	Case=Nom|Degree=Pos	28	amod	_	_
-28	stöðugleiki	stöðugleiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	32	nsubj	_	_
-29	og	og	CCONJ	CONJ	_	31	cc	_	_
-30	fjárhagslegur	fjárhagslegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	31	amod	_	_
-31	stöðugleiki	stöðugleiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	conj	_	_
-32	haldist	halda	VERB	VBPS	Mood=Sub|Tense=Pres	24	ccomp	_	_
-33	algerlega	algerlega	ADV	ADV	Degree=Pos	32	advmod	_	_
-34	í	í	ADP	P	_	35	case	_	_
-35	hendur	hönd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	32	obl	_	SpaceAfter=No
-36	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.11
-# X_ID = ID_missing_14
-# text = Við þurfum svolitla aðstoð við það, sýnist mér á öllu.
+# sent_id = G-33-4521344,.13
+# X_ID = ID_MISSING
+# text = og eins og ég talaði um í ræðu minni tel ég að pólitískur stöðugleiki og fjárhagslegur stöðugleiki haldist algerlega í hendur .
+1	og	og	CCONJ	CONJ	_	10	cc	_	_
+2	eins	_	ADV	ADVR	Degree=Cmp	10	advmod	_	_
+3	og	_	ADP	P	_	5	case	_	_
+4	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	talaði	tala	VERB	VBDI	Mood=Ind|Tense=Past	2	obl	_	_
+6	um	um	ADP	P	_	5	obl	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	ræðu	ræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+9	minni	minn	PRON	PRO-D	Case=Dat	8	nmod:poss	_	_
+10	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+11	ég	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
+12	að	að	SCONJ	C	_	18	mark	_	_
+13	pólitískur	pólitískur	ADJ	ADJ-N	Case=Nom|Degree=Pos	14	amod	_	_
+14	stöðugleiki	stöðugleiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
+15	og	og	CCONJ	CONJ	_	17	cc	_	_
+16	fjárhagslegur	fjárhagslegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	17	amod	_	_
+17	stöðugleiki	stöðugleiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	conj	_	_
+18	haldist	halda	VERB	VBPS	Mood=Sub|Tense=Pres	10	ccomp	_	_
+19	algerlega	algerlega	ADV	ADV	Degree=Pos	18	advmod	_	_
+20	í	í	ADP	P	_	21	case	_	_
+21	hendur	hönd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	obl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	10	punct	_	_
+
+# sent_id = G-33-4521344,.14
+# X_ID = ID_MISSING
+# text = Við þurfum svolitla aðstoð við það, sýnist mér á öllu .
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	svolitla	svolítill	ADJ	ADJ-A	Case=Acc|Degree=Pos	4	amod	_	_
@@ -228,18 +240,18 @@
 11	öllu	allur	DET	Q-D	Case=Dat	8	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.12
-# X_ID = ID_missing_15
-# text = Ég vil sjá samninginn.
+# sent_id = G-33-4521344,.15
+# X_ID = ID_MISSING
+# text = Ég vil sjá samninginn .
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	sjá	sjá	VERB	VB	VerbForm=Inf	0	root	_	_
 4	samninginn	samningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.13
-# X_IDs = ID_missing_16 ; ID_missing_17 ; ID_missing_18
-# text = Eins og ég sagði í ræðu minni verður þetta alltaf spekúlatíft og auðvitað er ekki hægt að segja: Svona verður framtíðin, ég ætla að sýna þér hana hérna á blaði.
+# sent_id = G-33-4521344,.16
+# X_ID = ID_MISSING
+# text = Eins og ég sagði í ræðu minni verður þetta alltaf spekúlatíft
 1	Eins	eins	ADV	ADV	Degree=Pos	8	advmod	_	_
 2	og	og	ADP	P	_	4	case	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -251,32 +263,40 @@
 9	þetta	þessi	DET	D-N	Case=Nom	8	nsubj	_	_
 10	alltaf	alltaf	ADV	ADV	Degree=Pos	8	advmod	_	_
 11	spekúlatíft	spekúlatífur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
-12	og	og	CCONJ	CONJ	_	16	cc	_	_
-13	auðvitað	auðvitað	ADV	ADV	Degree=Pos	16	advmod	_	_
-14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
-15	ekki	ekki	ADV	NEG	_	16	advmod	_	_
-16	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	conj	_	OriginalHead=0
-17	að	að	PART	TO	_	18	mark	_	_
-18	segja	segja	VERB	VB	VerbForm=Inf	16	xcomp	_	SpaceAfter=No
-19	:	:	PUNCT	,	_	18	punct	_	_
-20	Svona	svona	ADV	ADV	Degree=Pos	21	advmod	_	_
-21	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	18	ccomp	_	_
-22	framtíðin	framtíð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	21	punct	_	_
-24	ég	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
-25	ætla	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	8	conj	_	OriginalHead=0
-26	að	að	PART	TO	_	27	mark	_	_
-27	sýna	sýna	VERB	VB	VerbForm=Inf	25	xcomp	_	_
-28	þér	þú	PRON	PRO-D	Case=Dat	27	iobj	_	_
-29	hana	hún	PRON	PRO-A	Case=Acc	27	obj	_	_
-30	hérna	hérna	ADV	ADV	Degree=Pos	27	advmod	_	_
-31	á	á	ADP	P	_	32	case	_	_
-32	blaði	blað	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	27	obl	_	SpaceAfter=No
-33	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.14
-# X_IDs = ID_missing_19 ; ID_missing_20 ; ID_missing_21
-# text = Við getum aldrei vitað hvernig framtíðin verður en við getum reynt að koma með bestu ágiskun út frá bestu mögulegu gögnum Forseti hringir.
+# sent_id = G-33-4521344,.17
+# X_ID = ID_MISSING
+# text = og auðvitað er ekki hægt að segja : Svona verður framtíðin,
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	auðvitað	auðvitað	ADV	ADV	Degree=Pos	5	advmod	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
+5	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	segja	segja	VERB	VB	VerbForm=Inf	5	xcomp	_	SpaceAfter=No
+8	:	:	PUNCT	,	_	7	punct	_	_
+9	Svona	svona	ADV	ADV	Degree=Pos	10	advmod	_	_
+10	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	7	ccomp	_	_
+11	framtíðin	framtíð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	5	punct	_	_
+
+# sent_id = G-33-4521344,.18
+# X_ID = ID_MISSING
+# text = ég ætla að sýna þér hana hérna á blaði .
+1	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	ætla	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	að	að	PART	TO	_	4	mark	_	_
+4	sýna	sýna	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+5	þér	þú	PRON	PRO-D	Case=Dat	4	iobj	_	_
+6	hana	hún	PRON	PRO-A	Case=Acc	4	obj	_	_
+7	hérna	hérna	ADV	ADV	Degree=Pos	4	advmod	_	_
+8	á	á	ADP	P	_	9	case	_	_
+9	blaði	blað	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4521344,.19
+# X_ID = ID_MISSING
+# text = Við getum aldrei vitað hvernig framtíðin verður
 1	Við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	aldrei	aldrei	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -284,27 +304,32 @@
 5	hvernig	hvernig	ADV	WADV	Degree=Pos	7	advmod	_	_
 6	framtíðin	framtíð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 7	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	4	ccomp	_	_
-8	en	en	CCONJ	CONJ	_	11	cc	_	_
-9	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-10	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	11	aux	_	_
-11	reynt	reyna	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
-12	að	að	PART	TO	_	13	mark	_	_
-13	koma	koma	VERB	VB	VerbForm=Inf	11	xcomp	_	_
-14	með	með	ADP	P	_	16	case	_	_
-15	bestu	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	16	amod	_	_
-16	ágiskun	ágiskun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
-17	út	út	ADP	RP	_	21	compound:prt	_	_
-18	frá	frá	ADP	P	_	21	case	_	_
-19	bestu	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	21	amod	_	_
-20	mögulegu	mögulegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	21	amod	_	_
-21	gögnum	gagn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
-22	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	nsubj	_	_
-23	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0|SpaceAfter=No
-24	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4521344,.15
-# X_ID = ID_missing_22
-# text = og ég tel að við eigum vinna jafnt að því að ná í þau.
+# sent_id = G-33-4521344,.20
+# X_ID = ID_MISSING
+# text = en við getum reynt að koma með bestu ágiskun út frá bestu mögulegu gögnum
+1	en	en	CCONJ	CONJ	_	4	cc	_	_
+2	við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+3	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
+4	reynt	reyna	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	koma	koma	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	með	með	ADP	P	_	9	case	_	_
+8	bestu	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	9	amod	_	_
+9	ágiskun	ágiskun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+10	út	út	ADP	RP	_	14	compound:prt	_	_
+11	frá	frá	ADP	P	_	14	case	_	_
+12	bestu	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	14	amod	_	_
+13	mögulegu	mögulegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
+14	gögnum	gagn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+
+# sent_id = G-33-4521344,.21
+# X_ID = ID_MISSING
+# text = Forseti hringir .
+1	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	_
+
 1	og	og	CCONJ	CONJ	_	3	cc	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -318,6 +343,6 @@
 11	að	að	PART	TO	_	12	mark	_	_
 12	ná	ná	VERB	VB	VerbForm=Inf	10	xcomp	_	_
 13	í	í	ADP	P	_	14	case	_	_
-14	þau	það	PRON	PRO-A	Case=Acc	12	obl	_	SpaceAfter=No
+14	þau	það	PRON	PRO-A	Case=Acc	12	obl	_	_
 15	.	.	PUNCT	.	_	3	punct	_	_
 

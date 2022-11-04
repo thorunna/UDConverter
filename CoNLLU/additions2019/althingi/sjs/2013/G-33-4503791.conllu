@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.1
-# X_ID = ID_missing_1
-# text = Frú forseti. Ég þakka hv. þm. Róberti Marshall fyrir hans yfirferð á nokkrum þeim atriðum sem í greinargerð frumvarpsins er talað um að séu óljós eða einhver vandamál í sambandi við gildandi lög.
+# sent_id = G-33-4503791,.1
+# X_ID = ID_MISSING
+# text = Frú forseti . Ég þakka hv. þm. Róberti Marshall fyrir hans yfirferð á nokkrum þeim atriðum sem í greinargerð frumvarpsins er talað um að séu óljós eða einhver vandamál í sambandi við gildandi lög .
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -37,9 +37,9 @@
 34	lög	lag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	31	obl	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.2
-# X_ID = ID_missing_2
-# text = Ég tek undir þá kröfu að hæstv. ráðherra geri efnislega grein fyrir því hverju í væntanlegri löggjöf hann telur áfátt.
+# sent_id = G-33-4503791,.2
+# X_ID = ID_MISSING
+# text = Ég tek undir þá kröfu að hæstv. ráðherra geri efnislega grein fyrir því hverju í væntanlegri löggjöf hann telur áfátt .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	undir	undir	ADP	P	_	5	case	_	_
@@ -62,9 +62,9 @@
 20	áfátt	áfátt	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	ccomp	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Það er ekki hægt að tala svona í almennum orðum, að þetta lykti of mikið af boðum og bönnum hvað segir það okkur?
+# sent_id = G-33-4503791,.3
+# X_ID = ID_MISSING
+# text = Það er ekki hægt að tala svona í almennum orðum, að þetta lykti of mikið af boðum og bönnum
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -85,33 +85,37 @@
 18	boðum	boð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	_
 19	og	og	CCONJ	CONJ	_	20	cc	_	_
 20	bönnum	bann	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	conj	_	_
-21	hvað	hver	PRON	WPRO-N	Case=Nom	22	obj	_	_
-22	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-23	það	það	PRON	PRO-N	Case=Nom	22	nsubj	_	_
-24	okkur	ég	PRON	PRO-D	Case=Dat	22	iobj	_	SpaceAfter=No
-25	?	?	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.4
-# X_ID = ID_missing_5
-# text = Ekki nokkurn skapaðan hlut.
+# sent_id = G-33-4503791,.4
+# X_ID = ID_MISSING
+# text = hvað segir það okkur ?
+1	hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
+2	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+4	okkur	ég	PRON	PRO-D	Case=Dat	2	iobj	_	SpaceAfter=No
+5	?	?	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4503791,.5
+# X_ID = ID_MISSING
+# text = Ekki nokkurn skapaðan hlut .
 1	Ekki	ekki	ADV	NEG	_	4	advmod	_	_
 2	nokkurn	nokkur	DET	Q-A	Case=Acc	4	amod	_	_
 3	skapaðan	skapaður	ADJ	ADJ-A	Case=Acc|Degree=Pos	4	amod	_	_
 4	hlut	hlutur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.5
-# X_ID = ID_missing_6
-# text = Hvar er farið offari?
+# sent_id = G-33-4503791,.6
+# X_ID = ID_MISSING
+# text = Hvar er farið offari ?
 1	Hvar	hvar	ADV	WADV	Degree=Pos	3	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	farið	fara	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 4	offari	offari	ADV	ADV	Degree=Pos	3	advmod	_	SpaceAfter=No
 5	?	?	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.6
-# X_ID = ID_missing_7
-# text = Hvar fara menn offari í því að leggja hömlur á hlutina og hvaða boð og bönn eru það?
+# sent_id = G-33-4503791,.7
+# X_ID = ID_MISSING
+# text = Hvar fara menn offari í því að leggja hömlur á hlutina og hvaða boð og bönn eru það ?
 1	Hvar	hvar	ADV	WADV	Degree=Pos	2	advmod	_	_
 2	fara	fara	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
@@ -132,9 +136,9 @@
 18	það	það	PRON	PRO-N	Case=Nom	2	conj	_	SpaceAfter=No
 19	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.7
-# X_IDs = ID_missing_8 ; ID_missing_9
-# text = Ég og hv. þm. Róbert Marshall áttum hér ágæta umræðu fyrir tveimur eða þremur dögum, eða svo, um tillögu um uppbyggingu vega á hálendinu, og ræddum þar ástandið.
+# sent_id = G-33-4503791,.8
+# X_ID = ID_MISSING
+# text = Ég og hv. þm. Róbert Marshall áttum hér ágæta umræðu fyrir tveimur eða þremur dögum, eða svo, um tillögu um uppbyggingu vega á hálendinu,
 1	Ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 2	og	og	CCONJ	CONJ	_	4	cc	_	_
 3	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -161,16 +165,20 @@
 24	vega	vegur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	23	nmod:poss	_	_
 25	á	á	ADP	P	_	26	case	_	_
 26	hálendinu	hálendi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	23	punct	_	_
-28	og	og	CCONJ	CONJ	_	29	cc	_	_
-29	ræddum	ræða	VERB	VBDI	Mood=Ind|Tense=Past	7	conj	_	OriginalHead=0
-30	þar	þar	ADV	ADV	Degree=Pos	29	advmod	_	_
-31	ástandið	ástand	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	29	obj	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	7	punct	_	_
+27	,	,	PUNCT	,	_	7	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.8
-# X_ID = ID_missing_10
-# text = Þrátt fyrir að ýmis sjónarmið kæmu fram um slíka vegauppbyggingu þá leyfi ég mér að túlka þá umræðu þannig að allir hafi verið sammála um að hlutirnir væru ekki í nógu góðu horfi.
+# sent_id = G-33-4503791,.9
+# X_ID = ID_MISSING
+# text = og ræddum þar ástandið .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	ræddum	ræða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	þar	þar	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	ástandið	ástand	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4503791,.10
+# X_ID = ID_MISSING
+# text = Þrátt fyrir að ýmis sjónarmið kæmu fram um slíka vegauppbyggingu þá leyfi ég mér að túlka þá umræðu þannig að allir hafi verið sammála um að hlutirnir væru ekki í nógu góðu horfi .
 1	Þrátt	þrátt	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	fyrir	fyrir	ADP	P	_	6	case	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -206,9 +214,9 @@
 33	horfi	horf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.9
-# X_ID = ID_missing_11
-# text = Það væri allt of tilviljunarkennt hvar slóðir væru að myndast sem síðan væri farið að líta á sem vegi og leyfilegar leiðir til aksturs.
+# sent_id = G-33-4503791,.11
+# X_ID = ID_MISSING
+# text = Það væri allt of tilviljunarkennt hvar slóðir væru að myndast sem síðan væri farið að líta á sem vegi og leyfilegar leiðir til aksturs .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	5	cop	_	_
 3	allt	allur	DET	Q-A	Case=Acc	4	obl	_	_
@@ -235,9 +243,9 @@
 24	aksturs	akstur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.10
-# X_ID = ID_missing_12
-# text = Þá vaknar spurningin, út frá þeim dæmum sem hv. þm. Róbert Marshall var með í þeirri umræðu, hvaða skilaboð verða það ef hæstv. ráðherra hefur vilja sinn fram, ef það verður slegið af það sem menn hafa þó bundið vonir við að væri að komast af stað varðandi það að ná tökum á þessum máli?
+# sent_id = G-33-4503791,.12
+# X_ID = ID_MISSING
+# text = Þá vaknar spurningin, út frá þeim dæmum sem hv. þm. Róbert Marshall var með í þeirri umræðu, hvaða skilaboð verða það ef hæstv. ráðherra hefur vilja sinn fram, ef það verður slegið af það sem menn hafa þó bundið vonir við að væri að komast af stað varðandi það að ná tökum á þessum máli ?
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	vaknar	vakna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	spurningin	spurning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	SpaceAfter=No
@@ -298,9 +306,9 @@
 58	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	55	obl	_	SpaceAfter=No
 59	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.11
-# X_IDs = ID_missing_13 ; ID_missing_14 ; ID_missing_15
-# text = Hvaða skilaboð erum við að senda inn í þennan málaflokk ef lögin í heild sinni verða ekki látin taka gildi, ef engin vinna er að hefjast við kortagrunn eða afmörkun vega og vegslóða, hvar má þá keyra og hvar ekki, ef engin varúðarregla kemur í lög, hvaða skilaboð erum við að senda?
+# sent_id = G-33-4503791,.13
+# X_ID = ID_MISSING
+# text = Hvaða skilaboð erum við að senda inn í þennan málaflokk ef lögin í heild sinni verða ekki látin taka gildi,
 1	Hvaða	hvaða	DET	WD-A	Case=Acc	2	det	_	_
 2	skilaboð	skilaboð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
 3	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
@@ -321,51 +329,56 @@
 18	látin	láta	VERB	VAN	Tense=Past|VerbForm=Part	6	obl	_	_
 19	taka	taka	VERB	VB	VerbForm=Inf	18	xcomp	_	_
 20	gildi	gildi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	19	punct	_	_
-22	ef	ef	ADP	P	_	27	case	_	_
-23	engin	enginn	DET	Q-N	Case=Nom	24	amod	_	_
-24	vinna	vinna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
-25	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
-26	að	að	PART	TO	_	27	mark	_	_
-27	hefjast	hefja	VERB	VB	VerbForm=Inf	39	obl	_	_
-28	við	við	ADP	P	_	29	case	_	_
-29	kortagrunn	kortagrunnur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	27	obl	_	_
-30	eða	eða	CCONJ	CONJ	_	31	cc	_	_
-31	afmörkun	afmörkun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	29	conj	_	_
-32	vega	vegur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	31	nmod:poss	_	_
-33	og	og	CCONJ	CONJ	_	34	cc	_	_
-34	vegslóða	vegslóð	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	32	conj	_	SpaceAfter=No
-35	,	,	PUNCT	,	_	34	punct	_	_
-36	hvar	hvar	ADV	WADV	Degree=Pos	39	advmod	_	_
-37	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	39	aux	_	_
-38	þá	þá	ADV	ADV	Degree=Pos	39	advmod	_	_
-39	keyra	keyra	VERB	VB	VerbForm=Inf	6	conj	_	OriginalHead=0
-40	og	og	CCONJ	CONJ	_	42	cc	_	_
-41	hvar	hvar	ADV	WADV	Degree=Pos	42	advmod	_	_
-42	ekki	ekki	ADV	NEG	_	39	conj	_	SpaceAfter=No
-43	,	,	PUNCT	,	_	6	punct	_	_
-44	ef	ef	ADP	P	_	47	case	_	_
-45	engin	enginn	DET	Q-N	Case=Nom	46	amod	_	_
-46	varúðarregla	varúðarregla	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	47	nsubj	_	_
-47	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	56	obl	_	_
-48	í	í	ADP	P	_	49	case	_	_
-49	lög	lag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	47	obl	_	SpaceAfter=No
-50	,	,	PUNCT	,	_	47	punct	_	_
-51	hvaða	hvaða	DET	WD-A	Case=Acc	52	det	_	_
-52	skilaboð	skilaboð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	56	obj	_	_
-53	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	56	cop	_	_
-54	við	ég	PRON	PRO-N	Case=Nom	56	nsubj	_	_
-55	að	að	PART	TO	_	56	mark	_	_
-56	senda	senda	VERB	VB	VerbForm=Inf	6	conj	_	OriginalHead=0|SpaceAfter=No
-57	?	?	PUNCT	.	_	6	punct	_	_
+21	,	,	PUNCT	,	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4503791,.12
-# X_ID = ID_missing_16
-# text = Hvað mundi hv. þingmaður, út frá sinni þekkingu sem Forseti hringir. leiðsögumaður farandi mikið um hálendið hvernig mundi hann meta ástandið?
+# sent_id = G-33-4503791,.14
+# X_ID = ID_MISSING
+# text = ef engin vinna er að hefjast við kortagrunn eða afmörkun vega og vegslóða, hvar má þá keyra og hvar ekki,
+1	ef	ef	ADP	P	_	6	case	_	_
+2	engin	enginn	DET	Q-N	Case=Nom	3	amod	_	_
+3	vinna	vinna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	hefjast	hefja	VERB	VB	VerbForm=Inf	18	obl	_	_
+7	við	við	ADP	P	_	8	case	_	_
+8	kortagrunn	kortagrunnur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
+9	eða	eða	CCONJ	CONJ	_	10	cc	_	_
+10	afmörkun	afmörkun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	conj	_	_
+11	vega	vegur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	nmod:poss	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	vegslóða	vegslóð	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	conj	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	hvar	hvar	ADV	WADV	Degree=Pos	18	advmod	_	_
+16	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	18	aux	_	_
+17	þá	þá	ADV	ADV	Degree=Pos	18	advmod	_	_
+18	keyra	keyra	VERB	VB	VerbForm=Inf	0	root	_	_
+19	og	og	CCONJ	CONJ	_	21	cc	_	_
+20	hvar	hvar	ADV	WADV	Degree=Pos	21	advmod	_	_
+21	ekki	ekki	ADV	NEG	_	18	conj	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	18	punct	_	_
+
+# sent_id = G-33-4503791,.15
+# X_ID = ID_MISSING
+# text = ef engin varúðarregla kemur í lög, hvaða skilaboð erum við að senda ?
+1	ef	ef	ADP	P	_	4	case	_	_
+2	engin	enginn	DET	Q-N	Case=Nom	3	amod	_	_
+3	varúðarregla	varúðarregla	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+4	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	13	obl	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	lög	lag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	13	punct	_	_
+8	hvaða	hvaða	DET	WD-A	Case=Acc	9	det	_	_
+9	skilaboð	skilaboð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obj	_	_
+10	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
+11	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+12	að	að	PART	TO	_	13	mark	_	_
+13	senda	senda	VERB	VB	VerbForm=Inf	0	root	_	SpaceAfter=No
+14	?	?	PUNCT	.	_	13	punct	_	_
+
 1	Hvað	hver	PRON	WPRO-A	Case=Acc	2	obj	_	_
 2	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	22	dep	_	_
 3	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
-4	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 5	,	,	PUNCT	,	_	4	punct	_	_
 6	út	út	ADP	RP	_	9	compound:prt	_	_
 7	frá	frá	ADP	P	_	9	case	_	_
@@ -373,7 +386,7 @@
 9	þekkingu	þekking	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 10	sem	sem	SCONJ	C	_	14	mark	_	_
 11	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
-12	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	14	dep	_	SpaceAfter=No
+12	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	14	dep	_	_
 13	.	.	PUNCT	.	_	12	punct	_	_
 14	leiðsögumaður	leiðsögumaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	advcl	_	_
 15	farandi	fara	VERB	VAG	Tense=Pres|VerbForm=Part	2	acl	_	_
@@ -384,6 +397,6 @@
 20	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	22	aux	_	_
 21	hann	hann	PRON	PRO-N	Case=Nom	22	nsubj	_	_
 22	meta	meta	VERB	VB	VerbForm=Inf	0	root	_	_
-23	ástandið	ástand	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obj	_	SpaceAfter=No
+23	ástandið	ástand	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obj	_	_
 24	?	?	PUNCT	.	_	22	punct	_	_
 

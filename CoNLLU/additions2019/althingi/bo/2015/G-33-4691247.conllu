@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2015_G-33-4691247,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Já, ég tek undir með þingmanninum og fagna þeirri hugmynd að umhverfis- og skipulagsnefnd og atvinnuveganefnd fundi saman um málið.
+# sent_id = G-33-4691247,.1
+# X_ID = ID_MISSING
+# text = Já, ég tek undir með þingmanninum
 1	Já	já	INTJ	INTJ	_	4	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -8,26 +8,30 @@
 5	undir	undir	ADP	RP	_	4	compound:prt	_	_
 6	með	með	ADP	P	_	7	case	_	_
 7	þingmanninum	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
-8	og	og	CCONJ	CONJ	_	9	cc	_	_
-9	fagna	fagna	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-10	þeirri	sá	DET	D-D	Case=Dat	11	det	_	_
-11	hugmynd	hugmynd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obj	_	_
-12	að	að	SCONJ	C	_	19	mark	_	_
-13	umhverfis-	umhverfi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	16	nmod:poss	_	_
-14	og	og	CCONJ	CONJ	_	15	cc	_	_
-15	skipulags	skipulag	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	conj	_	SpaceAfter=No
-16	nefnd	nefnd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
-17	og	og	CCONJ	CONJ	_	18	cc	_	_
-18	atvinnuveganefnd	atvinnuveganefnd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	conj	_	_
-19	fundi	funda	VERB	VBPS	Mood=Sub|Tense=Pres	11	ccomp	_	_
-20	saman	saman	ADV	ADV	Degree=Pos	19	advmod	_	_
-21	um	um	ADP	P	_	22	case	_	_
-22	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4691247,.2
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Það er ástæðulaust að vera að kalla sömu aðila inn á fundi beggja nefndanna, það væri algjört rugl.
+# sent_id = G-33-4691247,.2
+# X_ID = ID_MISSING
+# text = og fagna þeirri hugmynd að umhverfis- og skipulagsnefnd og atvinnuveganefnd fundi saman um málið .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	fagna	fagna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	þeirri	sá	DET	D-D	Case=Dat	4	det	_	_
+4	hugmynd	hugmynd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	_
+5	að	að	SCONJ	C	_	12	mark	_	_
+6	umhverfis-	umhverfi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	nmod:poss	_	_
+7	og	og	CCONJ	CONJ	_	8	cc	_	_
+8	skipulags	skipulag	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	conj	_	SpaceAfter=No
+9	nefnd	nefnd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
+10	og	og	CCONJ	CONJ	_	11	cc	_	_
+11	atvinnuveganefnd	atvinnuveganefnd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	conj	_	_
+12	fundi	funda	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
+13	saman	saman	ADV	ADV	Degree=Pos	12	advmod	_	_
+14	um	um	ADP	P	_	15	case	_	_
+15	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4691247,.3
+# X_ID = ID_MISSING
+# text = Það er ástæðulaust að vera að kalla sömu aðila inn á fundi beggja nefndanna,
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	ástæðulaust	ástæðulaus	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -42,16 +46,20 @@
 12	fundi	fundur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	_
 13	beggja	báðir	DET	Q-G	Case=Gen	12	nmod:poss	_	_
 14	nefndanna	nefnd	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	13	conj	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	13	punct	_	_
-16	það	það	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-17	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	19	cop	_	_
-18	algjört	algjör	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	amod	_	_
-19	rugl	rugl	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	OriginalHead=0|SpaceAfter=No
-20	.	.	PUNCT	.	_	3	punct	_	_
+15	,	,	PUNCT	,	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4691247,.3
-# X_ID = ID_missing_5
-# text = Svo er það alltaf þannig að ef fólk talar saman er líklegra að það fáist einhver niðurstaða og betri niðurstaða en ef ekki.
+# sent_id = G-33-4691247,.4
+# X_ID = ID_MISSING
+# text = það væri algjört rugl .
+1	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	4	cop	_	_
+3	algjört	algjör	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
+4	rugl	rugl	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4691247,.5
+# X_ID = ID_MISSING
+# text = Svo er það alltaf þannig að ef fólk talar saman er líklegra að það fáist einhver niðurstaða og betri niðurstaða en ef ekki .
 1	Svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
@@ -77,22 +85,26 @@
 23	ekki	ekki	ADV	NEG	_	22	advcl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4691247,.4
-# X_IDs = ID_missing_6 ; ID_missing_7
-# text = Það er góð hugmynd og ég fagna henni.
+# sent_id = G-33-4691247,.6
+# X_ID = ID_MISSING
+# text = Það er góð hugmynd
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
 4	hugmynd	hugmynd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-5	og	og	CCONJ	CONJ	_	7	cc	_	_
-6	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-7	fagna	fagna	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-8	henni	hún	PRON	PRO-D	Case=Dat	7	obj	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4691247,.5
-# X_ID = ID_missing_8
-# text = Annað er að ef aðili eins og Samband íslenskra sveitarfélaga skilur ekki, þrátt fyrir alla sína lögfræðinga og miklu vitneskju, atriði í frumvarpinu eða hvernig það eigi fram að ganga, þá erum við svolítið illa sett.
+# sent_id = G-33-4691247,.7
+# X_ID = ID_MISSING
+# text = og ég fagna henni .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	fagna	fagna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	henni	hún	PRON	PRO-D	Case=Dat	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4691247,.8
+# X_ID = ID_MISSING
+# text = Annað er að ef aðili eins og Samband íslenskra sveitarfélaga skilur ekki, þrátt fyrir alla sína lögfræðinga og miklu vitneskju, atriði í frumvarpinu eða hvernig það eigi fram að ganga, þá erum við svolítið illa sett .
 1	Annað	annar	PRON	OTHER-N	Case=Nom	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	að	að	SCONJ	C	_	11	mark	_	_
@@ -134,9 +146,9 @@
 39	sett	setja	VERB	VAN	Tense=Past|VerbForm=Part	11	advcl	_	SpaceAfter=No
 40	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4691247,.6
-# X_ID = ID_missing_9
-# text = Auðvitað verðum við að hlusta á það.
+# sent_id = G-33-4691247,.9
+# X_ID = ID_MISSING
+# text = Auðvitað verðum við að hlusta á það .
 1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -146,9 +158,9 @@
 7	það	það	PRON	PRO-A	Case=Acc	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4691247,.7
-# X_ID = ID_missing_10
-# text = Þá höfum við ekki unnið vinnuna nógu vel.
+# sent_id = G-33-4691247,.10
+# X_ID = ID_MISSING
+# text = Þá höfum við ekki unnið vinnuna nógu vel .
 1	Þá	þá	ADV	ADV	Degree=Pos	5	advmod	_	_
 2	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -159,9 +171,9 @@
 8	vel	vel	ADV	ADV	Degree=Pos	5	advmod	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4691247,.8
-# X_ID = ID_missing_11
-# text = Það þýðir ekki að henda þessu í fólk og segja: Þið finnið bara út úr þessu.
+# sent_id = G-33-4691247,.11
+# X_ID = ID_MISSING
+# text = Það þýðir ekki að henda þessu í fólk og segja : Þið finnið bara út úr þessu .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	þýðir	þýða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -181,32 +193,33 @@
 17	þessu	þessi	DET	D-D	Case=Dat	13	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4691247,.9
-# X_IDs = ID_missing_12 ; ID_missing_13
-# text = Það mun ekki enda vel og er ekki, vænti ég, áhugi fyrir því hjá meiri hluta nefndarinnar að skilja við málið þannig.
+# sent_id = G-33-4691247,.12
+# X_ID = ID_MISSING
+# text = Það mun ekki enda vel
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
 4	enda	enda	VERB	VB	VerbForm=Inf	0	root	_	_
 5	vel	vel	ADV	ADV	Degree=Pos	4	advmod	_	_
-6	og	og	CCONJ	CONJ	_	10	cc	_	_
-7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
-8	ekki	ekki	ADV	NEG	_	10	advmod	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	8	punct	_	_
-10	vænti	vænta	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
-11	ég	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	11	punct	_	_
-13	áhugi	áhugi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	obl	_	_
-14	fyrir	fyrir	ADP	P	_	15	case	_	_
-15	því	það	PRON	PRO-D	Case=Dat	13	obl	_	_
-16	hjá	hjá	ADP	P	_	18	case	_	_
-17	meiri	mikill	DET	QR-D	Case=Dat	18	amod	_	_
-18	hluta	hluti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
-19	nefndarinnar	nefnd	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	_
-20	að	að	PART	TO	_	21	mark	_	_
-21	skilja	skilja	VERB	VB	VerbForm=Inf	10	xcomp	_	_
-22	við	við	ADP	P	_	23	case	_	_
-23	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	_
-24	þannig	þannig	ADV	ADV	Degree=Pos	21	advmod	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	4	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	vænti	vænta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+6	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	áhugi	áhugi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	obl	_	_
+9	fyrir	fyrir	ADP	P	_	10	case	_	_
+10	því	það	PRON	PRO-D	Case=Dat	8	obl	_	_
+11	hjá	hjá	ADP	P	_	13	case	_	_
+12	meiri	mikill	DET	QR-D	Case=Dat	13	amod	_	_
+13	hluta	hluti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+14	nefndarinnar	nefnd	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	nmod:poss	_	_
+15	að	að	PART	TO	_	16	mark	_	_
+16	skilja	skilja	VERB	VB	VerbForm=Inf	5	xcomp	_	_
+17	við	við	ADP	P	_	18	case	_	_
+18	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	_
+19	þannig	þannig	ADV	ADV	Degree=Pos	16	advmod	_	_
+20	.	.	PUNCT	.	_	5	punct	_	_
 

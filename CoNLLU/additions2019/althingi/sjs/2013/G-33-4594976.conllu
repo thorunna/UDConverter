@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4594976,.1
-# X_ID = ID_missing_1
-# text = Frú forseti. Ég fagna þessu svari.
+# sent_id = G-33-4594976,.1
+# X_ID = ID_MISSING
+# text = Frú forseti . Ég fagna þessu svari .
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -10,9 +10,9 @@
 7	svari	svar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4594976,.2
-# X_ID = ID_missing_2
-# text = Ég hefði jafnvel viljað sjá hv. þingmann vera skeleggari í anda þess að vera hér nýr þingmaður Pírata sem ég hélt að væru uppreisnargjarnir og ófeimnir við að brjóta hefðir.
+# sent_id = G-33-4594976,.2
+# X_ID = ID_MISSING
+# text = Ég hefði jafnvel viljað sjá hv. þingmann vera skeleggari í anda þess að vera hér nýr þingmaður Pírata sem ég hélt að væru uppreisnargjarnir og ófeimnir við að brjóta hefðir .
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	5	aux	_	_
 3	jafnvel	jafnvel	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -45,17 +45,17 @@
 30	hefðir	hefð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	29	obj	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4594976,.3
-# X_ID = ID_missing_3
-# text = Gripið fram í.
+# sent_id = G-33-4594976,.3
+# X_ID = ID_MISSING
+# text = Gripið fram í .
 1	Gripið	grípa	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 2	fram	fram	ADP	RP	_	3	compound:prt	_	_
 3	í	í	ADV	ADV	Degree=Pos	1	advmod	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4594976,.4
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Það er vissulega rétt að oft hefur meiri hlutinn keyrt sína hluti fram hér, en það eru engin lögmál í þeim efnum.
+# sent_id = G-33-4594976,.4
+# X_ID = ID_MISSING
+# text = Það er vissulega rétt að oft hefur meiri hlutinn keyrt sína hluti fram hér,
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	vissulega	vissulega	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -71,19 +71,23 @@
 13	fram	fram	ADP	RP	_	10	compound:prt	_	_
 14	hér	hér	ADV	ADV	Degree=Pos	10	advmod	_	SpaceAfter=No
 15	,	,	PUNCT	,	_	4	punct	_	_
-16	en	en	CCONJ	CONJ	_	20	cc	_	_
-17	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	20	expl	_	_
-18	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
-19	engin	enginn	DET	Q-N	Case=Nom	20	amod	_	_
-20	lögmál	lögmál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	conj	_	OriginalHead=0
-21	í	í	ADP	P	_	23	case	_	_
-22	þeim	sá	DET	D-D	Case=Dat	23	det	_	_
-23	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	20	obl	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4594976,.5
-# X_ID = ID_missing_6
-# text = Ég nefndi dæmi frá fyrri tíð þegar meðal annars umhverfisnefnd var mjög sjálfstæð í störfum og ekkert endilega mikil landamæri meiri hluta og minni hluta á þeim tímum.
+# sent_id = G-33-4594976,.5
+# X_ID = ID_MISSING
+# text = en það eru engin lögmál í þeim efnum .
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
+3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	engin	enginn	DET	Q-N	Case=Nom	5	amod	_	_
+5	lögmál	lögmál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
+6	í	í	ADP	P	_	8	case	_	_
+7	þeim	sá	DET	D-D	Case=Dat	8	det	_	_
+8	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4594976,.6
+# X_ID = ID_MISSING
+# text = Ég nefndi dæmi frá fyrri tíð þegar meðal annars umhverfisnefnd var mjög sjálfstæð í störfum og ekkert endilega mikil landamæri meiri hluta og minni hluta á þeim tímum .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	nefndi	nefna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	dæmi	dæmi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
@@ -114,9 +118,9 @@
 28	tímum	tími	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	conj	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4594976,.6
-# X_ID = ID_missing_7
-# text = Ég gef mér að það hljóti að vera margir umhverfisþenkjandi þingmenn innan meiri hlutans líka sem líður ekki allt of vel með þetta.
+# sent_id = G-33-4594976,.7
+# X_ID = ID_MISSING
+# text = Ég gef mér að það hljóti að vera margir umhverfisþenkjandi þingmenn innan meiri hlutans líka sem líður ekki allt of vel með þetta .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	gef	gefa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mér	ég	PRON	PRO-D	Case=Dat	2	obj	_	_
@@ -142,9 +146,9 @@
 23	þetta	þessi	DET	D-A	Case=Acc	17	obl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4594976,.7
-# X_ID = ID_missing_8
-# text = Það bara getur ekki verið að öllum meiri hlutanum finnist þægilegt að eiga að fara að standa að því með ráðherra sínum að stúta nýju náttúruverndarlöggjöfinni.
+# sent_id = G-33-4594976,.8
+# X_ID = ID_MISSING
+# text = Það bara getur ekki verið að öllum meiri hlutanum finnist þægilegt að eiga að fara að standa að því með ráðherra sínum að stúta nýju náttúruverndarlöggjöfinni .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	bara	bara	ADV	FP	Degree=Pos	3	advmod	_	_
 3	getur	geta	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -173,9 +177,9 @@
 26	náttúruverndarlöggjöfinni	náttúruverndarlöggjöf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obj	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4594976,.8
-# X_ID = ID_missing_9
-# text = Eigum við ekki að láta á það reyna, láta menn njóta vafans?
+# sent_id = G-33-4594976,.9
+# X_ID = ID_MISSING
+# text = Eigum við ekki að láta á það reyna, láta menn njóta vafans ?
 1	Eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	við	ég	PRON	PRO-N	Case=Nom	1	nsubj	_	_
 3	ekki	ekki	ADV	NEG	_	1	advmod	_	_
@@ -191,9 +195,6 @@
 13	vafans	vafi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	obj	_	SpaceAfter=No
 14	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4594976,.9
-# X_ID = ID_missing_10
-# text = Þingið hefur öll úrræði í höndum sínum ef það kýs að færa vinnuna inn á það spor að skoða og afmarka þá þætti sem raunveruleg ástæða er til að skoða í þessum lögum, Forseti hringir. eftir atvikum leggja til frestun á gildistöku einhverra þátta, kaupa sér aðeins meiri tíma Forseti hringir. og leysa málið sjálft.
 1	Þingið	þing	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	öll	allur	DET	Q-A	Case=Acc	4	amod	_	_
@@ -226,10 +227,10 @@
 30	skoða	skoða	VERB	VB	VerbForm=Inf	23	acl:relcl	_	_
 31	í	í	ADP	P	_	33	case	_	_
 32	þessum	þessi	DET	D-D	Case=Dat	33	det	_	_
-33	lögum	lag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	30	obl	_	SpaceAfter=No
+33	lögum	lag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	30	obl	_	_
 34	,	,	PUNCT	,	_	33	punct	_	_
 35	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	36	nsubj	_	_
-36	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	19	dep	_	SpaceAfter=No
+36	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	19	dep	_	_
 37	.	.	PUNCT	.	_	36	punct	_	_
 38	eftir	eftir	ADP	P	_	39	case	_	_
 39	atvikum	atvik	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	xcomp	_	_
@@ -239,7 +240,7 @@
 43	á	á	ADP	P	_	44	case	_	_
 44	gildistöku	gildistaka	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	42	obl	_	_
 45	einhverra	einhver	DET	Q-G	Case=Gen	46	amod	_	_
-46	þátta	þáttur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	44	nmod:poss	_	SpaceAfter=No
+46	þátta	þáttur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	44	nmod:poss	_	_
 47	,	,	PUNCT	,	_	46	punct	_	_
 48	kaupa	kaupa	VERB	VB	VerbForm=Inf	39	xcomp	_	_
 49	sér	sig	PRON	PRO-D	Case=Dat	48	iobj	_	_
@@ -247,11 +248,11 @@
 51	meiri	mikill	ADV	QR-A	Case=Acc	52	advmod	_	_
 52	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	48	obj	_	_
 53	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	54	nsubj	_	_
-54	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	39	dep	_	SpaceAfter=No
+54	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	39	dep	_	_
 55	.	.	PUNCT	.	_	54	punct	_	_
 56	og	og	CCONJ	CONJ	_	57	cc	_	_
 57	leysa	leysa	VERB	VB	VerbForm=Inf	39	xcomp	_	_
 58	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	57	obj	_	_
-59	sjálft	sjálfur	PRON	PRO-A	Case=Acc	58	appos	_	SpaceAfter=No
+59	sjálft	sjálfur	PRON	PRO-A	Case=Acc	58	appos	_	_
 60	.	.	PUNCT	.	_	2	punct	_	_
 

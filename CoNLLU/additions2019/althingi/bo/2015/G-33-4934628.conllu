@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.1
-# X_ID = ID_missing_1
-# text = Já, við erum alveg sammála þó að hv. þingmaður kveði oftast fastar að orði en ég.
+# sent_id = G-33-4934628,.1
+# X_ID = ID_MISSING
+# text = Já, við erum alveg sammála þó að hv. þingmaður kveði oftast fastar að orði en ég .
 1	Já	já	INTJ	INTJ	_	6	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
@@ -20,17 +20,17 @@
 17	ég	ég	PRON	PRO-N	Case=Nom	11	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.2
-# X_ID = ID_missing_2
-# text = Gripið fram í.
+# sent_id = G-33-4934628,.2
+# X_ID = ID_MISSING
+# text = Gripið fram í .
 1	Gripið	grípa	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 2	fram	fram	ADP	RP	_	3	compound:prt	_	_
 3	í	í	ADV	ADV	Degree=Pos	1	advmod	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.3
-# X_ID = ID_missing_3
-# text = Það er svo sem allt í lagi.
+# sent_id = G-33-4934628,.3
+# X_ID = ID_MISSING
+# text = Það er svo sem allt í lagi .
 1	Það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	7	advmod	_	_
@@ -40,9 +40,9 @@
 7	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.4
-# X_ID = ID_missing_4
-# text = Ég hef þá trú að með samræðu og mýkt megi finna lausnir á hinum ýmsu málum.
+# sent_id = G-33-4934628,.4
+# X_ID = ID_MISSING
+# text = Ég hef þá trú að með samræðu og mýkt megi finna lausnir á hinum ýmsu málum .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þá	sá	DET	D-A	Case=Acc	4	det	_	_
@@ -61,9 +61,9 @@
 16	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.5
-# X_IDs = ID_missing_5 ; ID_missing_6
-# text = Ég legg mig sannarlega fram um að gera það hér í dag, en þar með er ég ekki að segja að þingmaðurinn sé ekki að því.
+# sent_id = G-33-4934628,.5
+# X_ID = ID_MISSING
+# text = Ég legg mig sannarlega fram um að gera það hér í dag,
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	legg	leggja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mig	ég	PRON	PRO-A	Case=Acc	2	obj	_	_
@@ -77,25 +77,29 @@
 11	í	í	ADP	P	_	12	case	_	_
 12	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 13	,	,	PUNCT	,	_	2	punct	_	_
-14	en	en	CCONJ	CONJ	_	21	cc	_	_
-15	þar	þar	ADV	ADV	Degree=Pos	21	obl	_	_
-16	með	með	ADP	P	_	15	case	_	_
-17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	21	cop	_	_
-18	ég	ég	PRON	PRO-N	Case=Nom	21	nsubj	_	_
-19	ekki	ekki	ADV	NEG	_	21	advmod	_	_
-20	að	að	PART	TO	_	21	mark	_	_
-21	segja	segja	VERB	VB	VerbForm=Inf	2	conj	_	OriginalHead=0
-22	að	að	SCONJ	C	_	27	mark	_	_
-23	þingmaðurinn	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
-24	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	27	cop	_	_
-25	ekki	ekki	ADV	NEG	_	27	advmod	_	_
-26	að	að	ADP	P	_	27	case	_	_
-27	því	það	PRON	PRO-D	Case=Dat	21	ccomp	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.6
-# X_ID = ID_missing_7
-# text = Ég undirstrika að málið fer fyrir nefnd sem ég sit í.
+# sent_id = G-33-4934628,.6
+# X_ID = ID_MISSING
+# text = en þar með er ég ekki að segja að þingmaðurinn sé ekki að því .
+1	en	en	CCONJ	CONJ	_	8	cc	_	_
+2	þar	þar	ADV	ADV	Degree=Pos	8	obl	_	_
+3	með	með	ADP	P	_	2	case	_	_
+4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+5	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+6	ekki	ekki	ADV	NEG	_	8	advmod	_	_
+7	að	að	PART	TO	_	8	mark	_	_
+8	segja	segja	VERB	VB	VerbForm=Inf	0	root	_	_
+9	að	að	SCONJ	C	_	14	mark	_	_
+10	þingmaðurinn	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
+11	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	14	cop	_	_
+12	ekki	ekki	ADV	NEG	_	14	advmod	_	_
+13	að	að	ADP	P	_	14	case	_	_
+14	því	það	PRON	PRO-D	Case=Dat	8	ccomp	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = G-33-4934628,.7
+# X_ID = ID_MISSING
+# text = Ég undirstrika að málið fer fyrir nefnd sem ég sit í .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	undirstrika	undirstrika	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	5	mark	_	_
@@ -109,9 +113,9 @@
 11	í	í	ADP	P	_	10	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.7
-# X_ID = ID_missing_8
-# text = Ég vil gjarnan finna lausn á málinu.
+# sent_id = G-33-4934628,.8
+# X_ID = ID_MISSING
+# text = Ég vil gjarnan finna lausn á málinu .
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	gjarnan	gjarnan	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -121,9 +125,9 @@
 7	málinu	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.8
-# X_ID = ID_missing_9
-# text = Hins vegar þykir mér málið ekki vera tilbúið fyrir meðferðina sem við þurfum að gefa því þar því að það eru svo margir lausir endar.
+# sent_id = G-33-4934628,.9
+# X_ID = ID_MISSING
+# text = Hins vegar þykir mér málið ekki vera tilbúið fyrir meðferðina sem við þurfum að gefa því þar því að það eru svo margir lausir endar .
 1	Hins	hinn	DET	D-G	Case=Gen	2	det	_	_
 2	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	obl	_	_
 3	þykir	þykja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -151,17 +155,17 @@
 25	endar	endi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	20	obl	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.9
-# X_ID = ID_missing_10
-# text = Ég óttast það.
+# sent_id = G-33-4934628,.10
+# X_ID = ID_MISSING
+# text = Ég óttast það .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	óttast	óttast	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.10
-# X_ID = ID_missing_11
-# text = Hvernig getum við tekið náttúrupassafrumvarp og breytt því í blandaða leið?
+# sent_id = G-33-4934628,.11
+# X_ID = ID_MISSING
+# text = Hvernig getum við tekið náttúrupassafrumvarp og breytt því í blandaða leið ?
 1	Hvernig	hvernig	ADV	WADV	Degree=Pos	4	advmod	_	_
 2	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -175,9 +179,9 @@
 11	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 12	?	?	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.11
-# X_ID = ID_missing_12
-# text = Er það eitthvað sem maður bara gerir, kollvarpar hlutunum Gripið fram í: Í atvinnuveganefnd. svona svakalega?
+# sent_id = G-33-4934628,.12
+# X_ID = ID_MISSING
+# text = Er það eitthvað sem maður bara gerir, kollvarpar hlutunum Gripið fram í : Í atvinnuveganefnd . svona svakalega ?
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	eitthvað	einhver	DET	Q-N	Case=Nom	0	root	_	_
@@ -199,9 +203,9 @@
 19	svakalega	svakalega	ADV	ADV	Degree=Pos	18	advmod	_	SpaceAfter=No
 20	?	?	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4934628,.12
-# X_IDs = ID_missing_13 ; ID_missing_14
-# text = Ja, atvinnuveganefnd gerir það ótt og títt, það er reyndar rétt.
+# sent_id = G-33-4934628,.13
+# X_ID = ID_MISSING
+# text = Ja, atvinnuveganefnd gerir það ótt og títt,
 1	Ja	ja	INTJ	INTJ	_	4	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	atvinnuveganefnd	atvinnuveganefnd	PROPN	NPR-N	_	4	nsubj	_	_
@@ -211,9 +215,10 @@
 7	og	og	CCONJ	CONJ	_	8	cc	_	_
 8	títt	títt	ADV	ADV	Degree=Pos	6	conj	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	4	punct	_	_
-10	það	það	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-12	reyndar	reyndar	ADV	ADV	Degree=Pos	13	advmod	_	_
-13	rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	conj	_	OriginalHead=0|SpaceAfter=No
-14	.	.	PUNCT	.	_	4	punct	_	_
+
+1	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	reyndar	reyndar	ADV	ADV	Degree=Pos	4	advmod	_	_
+4	rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+5	.	.	PUNCT	.	_	4	punct	_	_
 

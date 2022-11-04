@@ -1,6 +1,6 @@
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.1
-# X_ID = ID_missing_1
-# text = Magnús Sigurbjörnsson fylgdi íslenska karlalandsliðinu í fótbolta til Króatíu, Tékklands og Hollands í undankeppni Evrópumótsins.
+# sent_id = G-2-1036692.SANITY,.1
+# X_ID = ID_MISSING
+# text = Magnús Sigurbjörnsson fylgdi íslenska karlalandsliðinu í fótbolta til Króatíu, Tékklands og Hollands í undankeppni Evrópumótsins .
 1	Magnús	magnús	PROPN	NPR-N	_	3	nsubj	_	_
 2	Sigurbjörnsson	sigurbjörnsson	PROPN	NPR-N	_	1	flat:name	_	_
 3	fylgdi	fylgja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -19,9 +19,9 @@
 16	Evrópumótsins	evrópumót	PROPN	NPR-G	_	15	nmod:poss	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.2
-# X_ID = ID_missing_2
-# text = Það kom því ekki annað til greina en að fylgja því áfram þegar sætið í lokamótinu var tryggt.
+# sent_id = G-2-1036692.SANITY,.2
+# X_ID = ID_MISSING
+# text = Það kom því ekki annað til greina en að fylgja því áfram þegar sætið í lokamótinu var tryggt .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
@@ -42,9 +42,9 @@
 18	tryggt	tryggja	VERB	VAN	Tense=Past|VerbForm=Part	14	acl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.3
-# X_ID = ID_missing_3
-# text = Magnús ákvað að bóka aðeins flugið út og kaupa svokallaðan„ follow your team“ pakka sem inniheldur miða á alla leiki liðsins á mótinu, hversu margir sem þeir kunna að verða.
+# sent_id = G-2-1036692.SANITY,.3
+# X_ID = ID_MISSING
+# text = Magnús ákvað að bóka aðeins flugið út og kaupa svokallaðan „ follow your team “ pakka sem inniheldur miða á alla leiki liðsins á mótinu, hversu margir sem þeir kunna að verða .
 1	Magnús	magnús	PROPN	NPR-N	_	2	nsubj	_	_
 2	ákvað	ákveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -80,9 +80,9 @@
 33	verða	verða	AUX	RD	VerbForm=Inf	32	aux	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.4
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Um þúsund Íslendingar höfðu nægilega mikla trú á liðinu eða voru það bjartsýnir að fara þá leið og lentu því ekki í vandræðum með að fá miða eftir riðlakeppnina.
+# sent_id = G-2-1036692.SANITY,.4
+# X_ID = ID_MISSING
+# text = Um þúsund Íslendingar höfðu nægilega mikla trú á liðinu eða voru það bjartsýnir að fara þá leið
 1	Um	um	ADV	ADV	Degree=Pos	3	advmod	_	_
 2	þúsund	þúsund	NUM	NUM-N	Case=Nom	3	nummod	_	_
 3	Íslendingar	íslendingur	PROPN	NPRS-N	_	4	nsubj	_	_
@@ -100,23 +100,27 @@
 15	fara	fara	VERB	VB	VerbForm=Inf	13	amod	_	_
 16	þá	sá	DET	D-A	Case=Acc	17	det	_	_
 17	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
-18	og	og	CCONJ	CONJ	_	19	cc	_	_
-19	lentu	lenda	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
-20	því	það	PRON	PRO-D	Case=Dat	19	obl	_	_
-21	ekki	ekki	ADV	NEG	_	19	advmod	_	_
-22	í	í	ADP	P	_	23	case	_	_
-23	vandræðum	vandræði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obl	_	_
-24	með	með	ADP	P	_	26	case	_	_
-25	að	að	PART	TO	_	26	mark	_	_
-26	fá	fá	VERB	VB	VerbForm=Inf	23	obl	_	_
-27	miða	miði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obj	_	_
-28	eftir	eftir	ADP	P	_	29	case	_	_
-29	riðlakeppnina	riðlakeppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.5
-# X_ID = ID_missing_6
-# text = „ Ég keypti bara miða út og var búinn að gera ráðstafanir fyrir riðlakeppnina.
+# sent_id = G-2-1036692.SANITY,.5
+# X_ID = ID_MISSING
+# text = og lentu því ekki í vandræðum með að fá miða eftir riðlakeppnina .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	lentu	lenda	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
+4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	vandræðum	vandræði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
+7	með	með	ADP	P	_	9	case	_	_
+8	að	að	PART	TO	_	9	mark	_	_
+9	fá	fá	VERB	VB	VerbForm=Inf	6	obl	_	_
+10	miða	miði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obj	_	_
+11	eftir	eftir	ADP	P	_	12	case	_	_
+12	riðlakeppnina	riðlakeppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1036692.SANITY,.6
+# X_ID = ID_MISSING
+# text = „ Ég keypti bara miða út og var búinn að gera ráðstafanir fyrir riðlakeppnina .
 1	„	„	PUNCT	"	_	3	punct	_	_
 2	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	keypti	kaupa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -133,9 +137,9 @@
 14	riðlakeppnina	riðlakeppni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.6
-# X_ID = ID_missing_7
-# text = Mann óraði svo aldrei fyrir hvernig þetta myndi fara.
+# sent_id = G-2-1036692.SANITY,.7
+# X_ID = ID_MISSING
+# text = Mann óraði svo aldrei fyrir hvernig þetta myndi fara .
 1	Mann	maður	PRON	MAN-A	_	2	nsubj	_	_
 2	óraði	óra	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -147,9 +151,9 @@
 9	fara	fara	VERB	VB	VerbForm=Inf	2	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.7
-# X_ID = ID_missing_8
-# text = Þetta er búið að vera mikið ævintýri,“ segir Magnús og bætir við að strákarnir séu hvergi nærri hættir, Frakkland sé aðeins ný keila í vegi þeirra.
+# sent_id = G-2-1036692.SANITY,.8
+# X_ID = ID_MISSING
+# text = Þetta er búið að vera mikið ævintýri, “ segir Magnús og bætir við að strákarnir séu hvergi nærri hættir, Frakkland sé aðeins ný keila í vegi þeirra .
 1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	búið	búa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -181,9 +185,9 @@
 29	þeirra	það	PRON	PRO-G	Case=Gen	28	nmod:poss	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.8
-# X_ID = ID_missing_9
-# text = Eitt eftirminnilegasta augnablikið á mótinu til þessa var að mati Magnúsar seinna mark Íslands á móti Austurríki í síðasta leik riðlakeppninnar.
+# sent_id = G-2-1036692.SANITY,.9
+# X_ID = ID_MISSING
+# text = Eitt eftirminnilegasta augnablikið á mótinu til þessa var að mati Magnúsar seinna mark Íslands á móti Austurríki í síðasta leik riðlakeppninnar .
 1	Eitt	einn	DET	ONE-N	Case=Nom	3	det	_	_
 2	eftirminnilegasta	eftirminnilegur	ADJ	ADJS-N	Case=Nom|Degree=Sup	3	amod	_	_
 3	augnablikið	augnablik	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
@@ -207,9 +211,9 @@
 21	riðlakeppninnar	riðlakeppni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.9
-# X_ID = ID_missing_10
-# text = „ Það var súrrealískt að vinna Austurríkismenn.
+# sent_id = G-2-1036692.SANITY,.10
+# X_ID = ID_MISSING
+# text = „ Það var súrrealískt að vinna Austurríkismenn .
 1	„	„	PUNCT	"	_	4	punct	_	_
 2	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
@@ -219,9 +223,9 @@
 7	Austurríkismenn	austurríkismaður	PROPN	NPRS-A	_	6	obj	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.10
-# X_ID = ID_missing_11
-# text = Að skora á síðustu mínútunum þegar við vorum eiginlega búin að missa trúna var ótrúlegt.
+# sent_id = G-2-1036692.SANITY,.11
+# X_ID = ID_MISSING
+# text = Að skora á síðustu mínútunum þegar við vorum eiginlega búin að missa trúna var ótrúlegt .
 1	Að	að	PART	TO	_	2	mark	_	_
 2	skora	skora	VERB	VB	VerbForm=Inf	15	xcomp	_	_
 3	á	á	ADP	P	_	5	case	_	_
@@ -239,9 +243,9 @@
 15	ótrúlegt	ótrúlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	15	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.11
-# X_ID = ID_missing_12
-# text = Sá leikur var fyrir mér svakalegur rússíbani,“ segir Magnús.
+# sent_id = G-2-1036692.SANITY,.12
+# X_ID = ID_MISSING
+# text = Sá leikur var fyrir mér svakalegur rússíbani, “ segir Magnús .
 1	Sá	sá	DET	D-N	Case=Nom	2	det	_	_
 2	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	10	cop	_	_
@@ -255,9 +259,9 @@
 11	Magnús	magnús	PROPN	NPR-N	_	10	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.12
-# X_ID = ID_missing_13
-# text = „ Englandsleikurinn var náttúrulega sögulegur á marga vegu.
+# sent_id = G-2-1036692.SANITY,.13
+# X_ID = ID_MISSING
+# text = „ Englandsleikurinn var náttúrulega sögulegur á marga vegu .
 1	„	„	PUNCT	"	_	5	punct	_	_
 2	Englandsleikurinn	englandsleikur	PROPN	NPR-N	_	5	nsubj	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
@@ -268,19 +272,20 @@
 8	vegu	vegur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036692.SANITY,.13
-# X_IDs = ID_missing_14 ; ID_missing_15
-# text = En Englendingarnir gátu ekkert og við vorum bara betra liðið“.
+# sent_id = G-2-1036692.SANITY,.14
+# X_ID = ID_MISSING
+# text = En Englendingarnir gátu ekkert
 1	En	en	CCONJ	CONJ	_	2	cc	_	_
 2	Englendingarnir	englendingur	PROPN	NPRS-N	_	0	root	_	_
 3	gátu	geta	AUX	MDDI	Mood=Ind|Tense=Past	2	aux	_	_
 4	ekkert	enginn	DET	Q-A	Case=Acc	2	obj	_	_
-5	og	og	CCONJ	CONJ	_	6	cc	_	_
-6	við	ég	PRON	PRO-N	Case=Nom	2	conj	_	OriginalHead=0
-7	vorum	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
-8	bara	bara	ADV	FP	Degree=Pos	6	advmod	_	_
-9	betra	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	10	amod	_	_
-10	liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	xcomp	_	SpaceAfter=No
-11	“	“	PUNCT	"	_	10	punct	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	2	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	við	ég	PRON	PRO-N	Case=Nom	0	root	_	_
+3	vorum	vera	AUX	BEDI	Mood=Ind|Tense=Past	2	cop	_	_
+4	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
+5	betra	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	6	amod	_	_
+6	liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	_
+7	“	“	PUNCT	"	_	6	punct	_	_
+8	.	.	PUNCT	.	_	2	punct	_	_
 

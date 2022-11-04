@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2015_G-33-4758602,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Ég þakka andsvarið.
+# sent_id = G-33-4758602,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég þakka andsvarið .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -9,9 +9,9 @@
 6	andsvarið	andsvar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4758602,.2
-# X_ID = ID_missing_2
-# text = Varðandi raforkutilskipun ESB þá get ég tekið undir að það er óheppilegt, eins og uppleggið er hér, að eftirlitið sé í höndum þess sama og fer með leyfisveitingar.
+# sent_id = G-33-4758602,.2
+# X_ID = ID_MISSING
+# text = Varðandi raforkutilskipun ESB þá get ég tekið undir að það er óheppilegt, eins og uppleggið er hér, að eftirlitið sé í höndum þess sama og fer með leyfisveitingar .
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	7	dep	_	_
 2	raforkutilskipun	raforkutilskipun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
 3	ESB	esb	PROPN	NPR-G	_	2	nmod:poss	_	_
@@ -44,9 +44,9 @@
 30	leyfisveitingar	leyfisveiting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	28	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4758602,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Það er ekki út af því að ég vantreysti starfsmönnum Orkustofnunar á neinn hátt, en þetta er óþægileg og óheppileg staða sem þeir eru settir í.
+# sent_id = G-33-4758602,.3
+# X_ID = ID_MISSING
+# text = Það er ekki út af því að ég vantreysti starfsmönnum Orkustofnunar á neinn hátt,
 1	Það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	ekki	ekki	ADV	NEG	_	6	advmod	_	_
@@ -62,23 +62,27 @@
 13	neinn	neinn	DET	Q-A	Case=Acc	14	amod	_	_
 14	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
 15	,	,	PUNCT	,	_	6	punct	_	_
-16	en	en	CCONJ	CONJ	_	22	cc	_	_
-17	þetta	þessi	DET	D-N	Case=Nom	22	nsubj	_	_
-18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
-19	óþægileg	óþægilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	22	amod	_	_
-20	og	og	CCONJ	CONJ	_	21	cc	_	_
-21	óheppileg	óheppilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	conj	_	_
-22	staða	staða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	OriginalHead=0
-23	sem	sem	SCONJ	C	_	26	mark	_	_
-24	þeir	hann	PRON	PRO-N	Case=Nom	26	nsubj	_	_
-25	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	26	cop	_	_
-26	settir	setja	VERB	VAN	Tense=Past|VerbForm=Part	22	acl:relcl	_	_
-27	í	í	ADP	P	_	26	obl	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4758602,.4
-# X_ID = ID_missing_5
-# text = Það þarf að vera hafið yfir allan vafa hvernig þessi mál eru afgreidd.
+# sent_id = G-33-4758602,.4
+# X_ID = ID_MISSING
+# text = en þetta er óþægileg og óheppileg staða sem þeir eru settir í .
+1	en	en	CCONJ	CONJ	_	7	cc	_	_
+2	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
+4	óþægileg	óþægilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
+5	og	og	CCONJ	CONJ	_	6	cc	_	_
+6	óheppileg	óheppilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	conj	_	_
+7	staða	staða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+8	sem	sem	SCONJ	C	_	11	mark	_	_
+9	þeir	hann	PRON	PRO-N	Case=Nom	11	nsubj	_	_
+10	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
+11	settir	setja	VERB	VAN	Tense=Past|VerbForm=Part	7	acl:relcl	_	_
+12	í	í	ADP	P	_	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = G-33-4758602,.5
+# X_ID = ID_MISSING
+# text = Það þarf að vera hafið yfir allan vafa hvernig þessi mál eru afgreidd .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	5	mark	_	_
@@ -94,55 +98,63 @@
 13	afgreidd	afgreiða	VERB	VAN	Tense=Past|VerbForm=Part	2	ccomp	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4758602,.5
-# X_IDs = ID_missing_6 ; ID_missing_7 ; ID_missing_8
-# text = Landsskipulagsstefna er væntanleg og ég hafði alltaf séð þetta fyrir mér saman, af því að við vinnum á öðrum sviðum að ýmiss konar uppbyggingu eftir heildarplani, og ég tek undir með þingmanninum að við ættum að gera þetta samhliða.
+# sent_id = G-33-4758602,.6
+# X_ID = ID_MISSING
+# text = Landsskipulagsstefna er væntanleg
 1	Landsskipulagsstefna	landsskipulagsstefna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	væntanleg	væntanlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-4	og	og	CCONJ	CONJ	_	8	cc	_	_
-5	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
-6	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	8	aux	_	_
-7	alltaf	alltaf	ADV	ADV	Degree=Pos	8	advmod	_	_
-8	séð	sjá	VERB	VBN	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0
-9	þetta	þessi	DET	D-A	Case=Acc	8	ccomp	_	_
-10	fyrir	fyrir	ADP	P	_	11	case	_	_
-11	mér	ég	PRON	PRO-D	Case=Dat	9	obl	_	_
-12	saman	saman	ADV	ADV	Degree=Pos	9	advmod	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	12	punct	_	_
-14	af	af	ADP	P	_	15	case	_	_
-15	því	það	PRON	PRO-D	Case=Dat	8	obl	_	_
-16	að	að	SCONJ	C	_	18	mark	_	_
-17	við	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
-18	vinnum	vinna	VERB	VBPS	Mood=Sub|Tense=Pres	15	ccomp	_	_
-19	á	á	ADP	P	_	21	case	_	_
-20	öðrum	annar	PRON	OTHER-D	Case=Dat	21	det	_	_
-21	sviðum	svið	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	_
-22	að	að	ADP	P	_	25	case	_	_
-23	ýmiss	ýmis	DET	Q-G	Case=Gen	25	nmod:poss	_	_
-24	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	conj	_	_
-25	uppbyggingu	uppbygging	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
-26	eftir	eftir	ADP	P	_	27	case	_	_
-27	heildarplani	heildarplan	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	18	punct	_	_
-29	og	og	CCONJ	CONJ	_	31	cc	_	_
-30	ég	ég	PRON	PRO-N	Case=Nom	31	nsubj	_	_
-31	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-32	undir	undir	ADP	RP	_	31	compound:prt	_	_
-33	með	með	ADP	P	_	34	case	_	_
-34	þingmanninum	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	_
-35	að	að	SCONJ	C	_	37	mark	_	_
-36	við	ég	PRON	PRO-N	Case=Nom	37	nsubj	_	_
-37	ættum	eiga	VERB	VBDS	Mood=Sub|Tense=Past	31	ccomp	_	_
-38	að	að	PART	TO	_	39	mark	_	_
-39	gera	gera	VERB	DO	VerbForm=Inf	37	xcomp	_	_
-40	þetta	þessi	DET	D-A	Case=Acc	39	obj	_	_
-41	samhliða	samhliða	ADV	ADV	Degree=Pos	39	advmod	_	SpaceAfter=No
-42	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4758602,.6
-# X_ID = ID_missing_9
-# text = Kerfisáætlun þarf að koma samhliða landsskipulagi því að við þurfum að vita til dæmis hver stefnan er um aðalatriðið: Hvar eiga línurnar að liggja?
+# sent_id = G-33-4758602,.7
+# X_ID = ID_MISSING
+# text = og ég hafði alltaf séð þetta fyrir mér saman, af því að við vinnum á öðrum sviðum að ýmiss konar uppbyggingu eftir heildarplani,
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+3	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	5	aux	_	_
+4	alltaf	alltaf	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	séð	sjá	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	þetta	þessi	DET	D-A	Case=Acc	5	ccomp	_	_
+7	fyrir	fyrir	ADP	P	_	8	case	_	_
+8	mér	ég	PRON	PRO-D	Case=Dat	6	obl	_	_
+9	saman	saman	ADV	ADV	Degree=Pos	6	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	af	af	ADP	P	_	12	case	_	_
+12	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
+13	að	að	SCONJ	C	_	15	mark	_	_
+14	við	ég	PRON	PRO-N	Case=Nom	15	nsubj	_	_
+15	vinnum	vinna	VERB	VBPS	Mood=Sub|Tense=Pres	12	ccomp	_	_
+16	á	á	ADP	P	_	18	case	_	_
+17	öðrum	annar	PRON	OTHER-D	Case=Dat	18	det	_	_
+18	sviðum	svið	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	_
+19	að	að	ADP	P	_	22	case	_	_
+20	ýmiss	ýmis	DET	Q-G	Case=Gen	22	nmod:poss	_	_
+21	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	conj	_	_
+22	uppbyggingu	uppbygging	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
+23	eftir	eftir	ADP	P	_	24	case	_	_
+24	heildarplani	heildarplan	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	5	punct	_	_
+
+# sent_id = G-33-4758602,.8
+# X_ID = ID_MISSING
+# text = og ég tek undir með þingmanninum að við ættum að gera þetta samhliða .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	undir	undir	ADP	RP	_	3	compound:prt	_	_
+5	með	með	ADP	P	_	6	case	_	_
+6	þingmanninum	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+7	að	að	SCONJ	C	_	9	mark	_	_
+8	við	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+9	ættum	eiga	VERB	VBDS	Mood=Sub|Tense=Past	3	ccomp	_	_
+10	að	að	PART	TO	_	11	mark	_	_
+11	gera	gera	VERB	DO	VerbForm=Inf	9	xcomp	_	_
+12	þetta	þessi	DET	D-A	Case=Acc	11	obj	_	_
+13	samhliða	samhliða	ADV	ADV	Degree=Pos	11	advmod	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4758602,.9
+# X_ID = ID_MISSING
+# text = Kerfisáætlun þarf að koma samhliða landsskipulagi því að við þurfum að vita til dæmis hver stefnan er um aðalatriðið : Hvar eiga línurnar að liggja ?
 1	Kerfisáætlun	kerfisáætlun	PROPN	NPR-N	_	2	nsubj	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -170,18 +182,15 @@
 25	liggja	liggja	VERB	VB	VerbForm=Inf	22	xcomp	_	SpaceAfter=No
 26	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4758602,.7
-# X_ID = ID_missing_10
-# text = Það er mikið atriði.
+# sent_id = G-33-4758602,.10
+# X_ID = ID_MISSING
+# text = Það er mikið atriði .
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	mikið	mikill	DET	Q-N	Case=Nom	4	amod	_	_
 4	atriði	atriði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4758602,.8
-# X_ID = ID_missing_11
-# text = Og svo setjum við auðvitað þá mælistiku sem búið er að vinna og er ágæt til slíkra nota á kostnaðinn eftir línuleiðum sem eru ákveðnar á pólitískan hátt og með aðkomu fagaðila.
 1	Og	og	CCONJ	CONJ	_	3	cc	_	_
 2	svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
 3	setjum	setja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -213,6 +222,6 @@
 29	og	og	CCONJ	CONJ	_	31	cc	_	_
 30	með	með	ADP	P	_	31	case	_	_
 31	aðkomu	aðkoma	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	conj	_	_
-32	fagaðila	fagaðili	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	31	nmod:poss	_	SpaceAfter=No
+32	fagaðila	fagaðili	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	31	nmod:poss	_	_
 33	.	.	PUNCT	.	_	3	punct	_	_
 

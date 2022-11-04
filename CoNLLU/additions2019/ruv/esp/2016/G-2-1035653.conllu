@@ -1,6 +1,6 @@
-# sent_id = RUV_ESP_2016_G-2-1035653,.1
-# X_ID = ID_missing_1
-# text = Kári Árnason, varnarmaður í íslenska landsliðinu í fótbolta, nýtti frídaginn í gær meira annars í að spila golf þó að hann segist reyndar ekki vera neitt sérstaklega góður.
+# sent_id = G-2-1035653,.1
+# X_ID = ID_MISSING
+# text = Kári Árnason, varnarmaður í íslenska landsliðinu í fótbolta, nýtti frídaginn í gær meira annars í að spila golf þó að hann segist reyndar ekki vera neitt sérstaklega góður .
 1	Kári	kári	PROPN	NPR-N	_	11	nsubj	_	_
 2	Árnason	árnason	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	2	punct	_	_
@@ -33,9 +33,9 @@
 30	góður	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	xcomp	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1035653,.2
-# X_ID = ID_missing_2
-# text = Gylfi Þór Sigurðsson og Ögmundur Kristinsson séu líklega þeir bestu í hópnum.
+# sent_id = G-2-1035653,.2
+# X_ID = ID_MISSING
+# text = Gylfi Þór Sigurðsson og Ögmundur Kristinsson séu líklega þeir bestu í hópnum .
 1	Gylfi	gylfi	PROPN	NPR-N	_	10	nsubj	_	_
 2	Þór	þór	PROPN	NPR-N	_	1	flat:name	_	_
 3	Sigurðsson	sigurðsson	PROPN	NPR-N	_	1	dep	_	_
@@ -50,9 +50,9 @@
 12	hópnum	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1035653,.3
-# X_ID = ID_missing_3
-# text = Samspil Kára og Ragnars Sigurðssonar í íslensku vörninni hefur vakið mikla athygli þar sem þeir ná einstaklega vel saman.
+# sent_id = G-2-1035653,.3
+# X_ID = ID_MISSING
+# text = Samspil Kára og Ragnars Sigurðssonar í íslensku vörninni hefur vakið mikla athygli þar sem þeir ná einstaklega vel saman .
 1	Samspil	samspil	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 2	Kára	kári	PROPN	NPR-G	_	1	nmod:poss	_	_
 3	og	og	CCONJ	CONJ	_	4	cc	_	_
@@ -74,17 +74,17 @@
 19	saman	saman	ADV	ADV	Degree=Pos	16	advmod	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1035653,.4
-# X_ID = ID_missing_4
-# text = „ Bara frábærlega.
+# sent_id = G-2-1035653,.4
+# X_ID = ID_MISSING
+# text = „ Bara frábærlega .
 1	„	„	PUNCT	"	_	2	punct	_	_
 2	Bara	bara	ADV	FP	Degree=Pos	0	root	_	_
 3	frábærlega	frábærlega	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1035653,.5
-# X_IDs = ID_missing_5 ; ID_missing_6
-# text = Og ég vildi að ég gæti spilað með honum fyrir félagslið líka en auðvitað er það ekki staðan þannig að við bara njótum þess að spila með hvor öðrum.
+# sent_id = G-2-1035653,.5
+# X_ID = ID_MISSING
+# text = Og ég vildi að ég gæti spilað með honum fyrir félagslið líka
 1	Og	og	CCONJ	CONJ	_	3	cc	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	vildi	vilja	VERB	VBDS	Mood=Sub|Tense=Past	0	root	_	_
@@ -97,56 +97,65 @@
 10	fyrir	fyrir	ADP	P	_	11	case	_	_
 11	félagslið	félagslið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
 12	líka	líka	ADV	ALSO	_	7	advmod	_	_
-13	en	en	CCONJ	CONJ	_	14	cc	_	_
-14	auðvitað	auðvitað	ADV	ADV	Degree=Pos	3	conj	_	OriginalHead=0
-15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
-16	það	það	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-17	ekki	ekki	ADV	NEG	_	14	advmod	_	_
-18	staðan	staða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	xcomp	_	_
-19	þannig	þannig	ADV	ADV	Degree=Pos	14	advmod	_	_
-20	að	að	SCONJ	C	_	23	mark	_	_
-21	við	ég	PRON	PRO-N	Case=Nom	23	nsubj	_	_
-22	bara	bara	ADV	FP	Degree=Pos	23	advmod	_	_
-23	njótum	njóta	VERB	VBPS	Mood=Sub|Tense=Pres	19	advcl	_	_
-24	þess	það	PRON	PRO-G	Case=Gen	23	obj	_	_
-25	að	að	PART	TO	_	26	mark	_	_
-26	spila	spila	VERB	VB	VerbForm=Inf	24	xcomp	_	_
-27	með	með	ADP	P	_	29	case	_	_
-28	hvor	hvor	DET	Q-N	Case=Nom	29	obl	_	_
-29	öðrum	annar	PRON	OTHER-D	Case=Dat	26	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	14	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1035653,.6
-# X_IDs = ID_missing_7 ; ID_missing_8 ; ID_missing_9
-# text = Og það gengur rosa vel og samskiptin hjá okkur eru frábær og við bökkum hvor annan mjög vel upp,“ útskýrir Kári.
+# sent_id = G-2-1035653,.6
+# X_ID = ID_MISSING
+# text = en auðvitað er það ekki staðan þannig að við bara njótum þess að spila með hvor öðrum .
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	auðvitað	auðvitað	ADV	ADV	Degree=Pos	0	root	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
+4	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+5	ekki	ekki	ADV	NEG	_	2	advmod	_	_
+6	staðan	staða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	_
+7	þannig	þannig	ADV	ADV	Degree=Pos	2	advmod	_	_
+8	að	að	SCONJ	C	_	11	mark	_	_
+9	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
+10	bara	bara	ADV	FP	Degree=Pos	11	advmod	_	_
+11	njótum	njóta	VERB	VBPS	Mood=Sub|Tense=Pres	7	advcl	_	_
+12	þess	það	PRON	PRO-G	Case=Gen	11	obj	_	_
+13	að	að	PART	TO	_	14	mark	_	_
+14	spila	spila	VERB	VB	VerbForm=Inf	12	xcomp	_	_
+15	með	með	ADP	P	_	17	case	_	_
+16	hvor	hvor	DET	Q-N	Case=Nom	17	obl	_	_
+17	öðrum	annar	PRON	OTHER-D	Case=Dat	14	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1035653,.7
+# X_ID = ID_MISSING
+# text = Og það gengur rosa vel
 1	Og	og	CCONJ	CONJ	_	3	cc	_	_
 2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	rosa	rosa	ADV	ADV	Degree=Pos	3	advmod	_	_
 5	vel	vel	ADV	ADV	Degree=Pos	4	advmod	_	_
-6	og	og	CCONJ	CONJ	_	11	cc	_	_
-7	samskiptin	samskipti	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	nsubj	_	_
-8	hjá	hjá	ADP	P	_	9	case	_	_
-9	okkur	ég	PRON	PRO-D	Case=Dat	7	obl	_	_
-10	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
-11	frábær	frábær	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0
-12	og	og	CCONJ	CONJ	_	14	cc	_	_
-13	við	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-14	bökkum	bakka	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-15	hvor	hvor	DET	Q-N	Case=Nom	14	obj	_	_
-16	annan	annar	PRON	OTHER-A	Case=Acc	15	det	_	_
-17	mjög	mjög	ADV	ADV	Degree=Pos	14	advmod	_	_
-18	vel	vel	ADV	ADV	Degree=Pos	17	advmod	_	_
-19	upp	upp	ADP	RP	_	14	compound:prt	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	19	punct	_	SpaceAfter=No
-21	“	“	PUNCT	"	_	20	punct	_	_
-22	útskýrir	útskýra	VERB	VBPI	Mood=Ind|Tense=Pres	14	parataxis	_	_
-23	Kári	kári	PROPN	NPR-N	_	22	nsubj	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	14	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1035653,.7
-# X_ID = ID_missing_10
-# text = Viðtal við Kára má finna í spilaranum að ofan.
+# sent_id = G-2-1035653,.8
+# X_ID = ID_MISSING
+# text = og samskiptin hjá okkur eru frábær
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	samskiptin	samskipti	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
+3	hjá	hjá	ADP	P	_	4	case	_	_
+4	okkur	ég	PRON	PRO-D	Case=Dat	2	obl	_	_
+5	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+6	frábær	frábær	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+
+# sent_id = G-2-1035653,.9
+# X_ID = ID_MISSING
+# text = og við bökkum hvor annan mjög vel upp, “ útskýrir Kári .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	bökkum	bakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	hvor	hvor	DET	Q-N	Case=Nom	3	obj	_	_
+5	annan	annar	PRON	OTHER-A	Case=Acc	4	det	_	_
+6	mjög	mjög	ADV	ADV	Degree=Pos	3	advmod	_	_
+7	vel	vel	ADV	ADV	Degree=Pos	6	advmod	_	_
+8	upp	upp	ADP	RP	_	3	compound:prt	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	SpaceAfter=No
+10	“	“	PUNCT	"	_	9	punct	_	_
+11	útskýrir	útskýra	VERB	VBPI	Mood=Ind|Tense=Pres	3	parataxis	_	_
+12	Kári	kári	PROPN	NPR-N	_	11	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	3	punct	_	_
+
 1	Viðtal	viðtal	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 2	við	við	ADP	P	_	3	case	_	_
 3	Kára	kári	PROPN	NPR-A	_	1	obl	_	_
@@ -155,6 +164,6 @@
 6	í	í	ADP	P	_	7	case	_	_
 7	spilaranum	spilari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 8	að	að	ADP	P	_	9	case	_	_
-9	ofan	ofan	ADV	ADV	Degree=Pos	7	obl	_	SpaceAfter=No
+9	ofan	ofan	ADV	ADV	Degree=Pos	7	obl	_	_
 10	.	.	PUNCT	.	_	5	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2013_G-33-4727062,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Mig langar að þakka hv. þingmanni fyrir ræðuna og fyrir að kippa okkur á Alþingi inn í raunveruleikann í vinnu okkar við fjárlagagerðina og hugsa um hana út frá manneskjunum á bak við þessar tölur sem við erum að fjalla um.
+# sent_id = G-33-4727062,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Mig langar að þakka hv. þingmanni fyrir ræðuna og fyrir að kippa okkur á Alþingi inn í raunveruleikann í vinnu okkar við fjárlagagerðina og hugsa um hana út frá manneskjunum á bak við þessar tölur sem við erum að fjalla um .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -47,9 +47,9 @@
 44	um	um	ADP	P	_	43	obl	_	SpaceAfter=No
 45	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2013_G-33-4727062,.2
-# X_ID = ID_missing_2
-# text = Mig langar að spyrja hv. þingmann um þetta sem hún nefndi með blekkingarskattheimtuna.
+# sent_id = G-33-4727062,.2
+# X_ID = ID_MISSING
+# text = Mig langar að spyrja hv. þingmann um þetta sem hún nefndi með blekkingarskattheimtuna .
 1	Mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
 2	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -65,32 +65,36 @@
 13	blekkingarskattheimtuna	blekkingarskattheimta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2013_G-33-4727062,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Ég er sammála þingmanninum, það slær mig líka mjög skringilega hvernig þetta er sett fram í fjárlögum.
+# sent_id = G-33-4727062,.3
+# X_ID = ID_MISSING
+# text = Ég er sammála þingmanninum,
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 4	þingmanninum	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
-6	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	7	expl	_	_
-7	slær	slá	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-8	mig	ég	PRON	PRO-A	Case=Acc	7	obj	_	_
-9	líka	líka	ADV	ALSO	_	7	advmod	_	_
-10	mjög	mjög	ADV	ADV	Degree=Pos	7	advmod	_	_
-11	skringilega	skringilega	ADV	ADV	Degree=Pos	10	advmod	_	_
-12	hvernig	hvernig	ADV	WADV	Degree=Pos	15	advmod	_	_
-13	þetta	þessi	DET	D-N	Case=Nom	15	nsubj	_	_
-14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
-15	sett	setja	VERB	VAN	Tense=Past|VerbForm=Part	7	ccomp	_	_
-16	fram	fram	ADP	RP	_	15	compound:prt	_	_
-17	í	í	ADP	P	_	18	case	_	_
-18	fjárlögum	fjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	3	punct	_	_
+5	,	,	PUNCT	,	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2013_G-33-4727062,.4
-# X_ID = ID_missing_5
-# text = Sveitarfélög mega til dæmis ekki útbúa fjárhagsáætlanir sínar svona.
+# sent_id = G-33-4727062,.4
+# X_ID = ID_MISSING
+# text = það slær mig líka mjög skringilega hvernig þetta er sett fram í fjárlögum .
+1	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
+2	slær	slá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	mig	ég	PRON	PRO-A	Case=Acc	2	obj	_	_
+4	líka	líka	ADV	ALSO	_	2	advmod	_	_
+5	mjög	mjög	ADV	ADV	Degree=Pos	2	advmod	_	_
+6	skringilega	skringilega	ADV	ADV	Degree=Pos	5	advmod	_	_
+7	hvernig	hvernig	ADV	WADV	Degree=Pos	10	advmod	_	_
+8	þetta	þessi	DET	D-N	Case=Nom	10	nsubj	_	_
+9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
+10	sett	setja	VERB	VAN	Tense=Past|VerbForm=Part	2	ccomp	_	_
+11	fram	fram	ADP	RP	_	10	compound:prt	_	_
+12	í	í	ADP	P	_	13	case	_	_
+13	fjárlögum	fjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4727062,.5
+# X_ID = ID_MISSING
+# text = Sveitarfélög mega til dæmis ekki útbúa fjárhagsáætlanir sínar svona .
 1	Sveitarfélög	sveitarfélag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
 2	mega	mega	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
 3	til	til	ADP	P	_	4	case	_	_
@@ -102,9 +106,9 @@
 9	svona	svona	ADV	ADV	Degree=Pos	6	advmod	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_BO_2013_G-33-4727062,.5
-# X_ID = ID_missing_6
-# text = Þau gjöld sem eru tekin á ákveðnum stað eru mörkuð á þann stað aftur þannig að mér finnst líka skringilegt hvernig er hægt að setja allt saman í einn pott og svo bara einhvern veginn útdeila.
+# sent_id = G-33-4727062,.6
+# X_ID = ID_MISSING
+# text = Þau gjöld sem eru tekin á ákveðnum stað eru mörkuð á þann stað aftur þannig að mér finnst líka skringilegt hvernig er hægt að setja allt saman í einn pott og svo bara einhvern veginn útdeila .
 1	Þau	sá	DET	D-N	Case=Nom	2	det	_	_
 2	gjöld	gjald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
 3	sem	sem	SCONJ	C	_	5	mark	_	_
@@ -143,9 +147,9 @@
 36	útdeila	útdeila	VERB	VB	VerbForm=Inf	25	xcomp	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = ALTHINGI_BO_2013_G-33-4727062,.6
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Píratar eru með vettvang til að auka beint lýðræði og auka þátttöku til samfélagsins, Betra Ísland, og því langar mig að spyrja hvort þið sjáið fyrir ykkur eitthvert kerfi sem gerir skattheimtuna gagnsærri og jafnvel þá að fólk geti haft áhrif á hvernig skattpeningum þess er varið eins og fólk getur núna gert með sóknargjöldin, er það ekki?
+# sent_id = G-33-4727062,.7
+# X_ID = ID_MISSING
+# text = Píratar eru með vettvang til að auka beint lýðræði og auka þátttöku til samfélagsins, Betra Ísland,
 1	Píratar	pírati	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	með	með	ADP	P	_	4	case	_	_
@@ -163,55 +167,56 @@
 15	,	,	PUNCT	,	_	14	punct	_	_
 16	Betra	góður	ADJ	ADJR-A	Case=Acc|Degree=Cmp	17	amod	_	_
 17	Ísland	ísland	PROPN	NPR-A	_	4	appos	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	17	punct	_	_
-19	og	og	CCONJ	CONJ	_	21	cc	_	_
-20	því	það	PRON	PRO-D	Case=Dat	21	obl	_	_
-21	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-22	mig	ég	PRON	PRO-A	Case=Acc	21	nsubj	_	_
-23	að	að	PART	TO	_	24	mark	_	_
-24	spyrja	spyrja	VERB	VB	VerbForm=Inf	21	xcomp	_	_
-25	hvort	hvort	SCONJ	WQ	_	27	mark	_	_
-26	þið	þú	PRON	PRO-N	Case=Nom	27	nsubj	_	_
-27	sjáið	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	24	ccomp	_	_
-28	fyrir	fyrir	ADP	P	_	29	case	_	_
-29	ykkur	þú	PRON	PRO-D	Case=Dat	27	obl	_	_
-30	eitthvert	einhver	DET	Q-A	Case=Acc	31	amod	_	_
-31	kerfi	kerfi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	42	obl	_	_
-32	sem	sem	SCONJ	C	_	33	mark	_	_
-33	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	31	acl:relcl	_	_
-34	skattheimtuna	skattheimta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	35	nsubj	_	_
-35	gagnsærri	gagnsær	ADJ	ADJR-A	Case=Acc|Degree=Cmp	33	ccomp	_	_
-36	og	og	CCONJ	CONJ	_	42	cc	_	_
-37	jafnvel	jafnvel	ADV	ADV	Degree=Pos	42	advmod	_	_
-38	þá	þá	ADV	ADV	Degree=Pos	42	advmod	_	_
-39	að	að	SCONJ	C	_	42	mark	_	_
-40	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	42	nsubj	_	_
-41	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	42	aux	_	_
-42	haft	hafa	AUX	HVN	Tense=Past|VerbForm=Part	27	obj	_	_
-43	áhrif	áhrif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	42	obj	_	_
-44	á	á	ADP	P	_	49	case	_	_
-45	hvernig	hvernig	ADV	WADV	Degree=Pos	49	advmod	_	_
-46	skattpeningum	skattpeningur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	49	nsubj	_	_
-47	þess	það	PRON	PRO-G	Case=Gen	46	nmod:poss	_	_
-48	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	49	cop	_	_
-49	varið	verja	VERB	VAN	Tense=Past|VerbForm=Part	42	obl	_	_
-50	eins	_	ADV	ADVR	Degree=Cmp	42	advmod	_	_
-51	og	_	ADP	P	_	55	case	_	_
-52	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	55	nsubj	_	_
-53	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	55	aux	_	_
-54	núna	núna	ADV	ADV	Degree=Pos	55	advmod	_	_
-55	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	50	obl	_	_
-56	með	með	ADP	P	_	57	case	_	_
-57	sóknargjöldin	sóknargjald	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	55	obl	_	SpaceAfter=No
-58	,	,	PUNCT	,	_	57	punct	_	_
-59	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	60	cop	_	_
-60	það	það	PRON	PRO-N	Case=Nom	55	dep	_	_
-61	ekki	ekki	ADV	NEG	_	60	advmod	_	SpaceAfter=No
-62	?	?	PUNCT	.	_	4	punct	_	_
+18	,	,	PUNCT	,	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2013_G-33-4727062,.7
-# X_ID = ID_missing_9
-# text = Svo kem ég með síðari spurninguna eða athugasemdir í næsta andsvari.
+# sent_id = G-33-4727062,.8
+# X_ID = ID_MISSING
+# text = og því langar mig að spyrja hvort þið sjáið fyrir ykkur eitthvert kerfi sem gerir skattheimtuna gagnsærri og jafnvel þá að fólk geti haft áhrif á hvernig skattpeningum þess er varið eins og fólk getur núna gert með sóknargjöldin, er það ekki ?
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
+3	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	mig	ég	PRON	PRO-A	Case=Acc	3	nsubj	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	spyrja	spyrja	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+7	hvort	hvort	SCONJ	WQ	_	9	mark	_	_
+8	þið	þú	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+9	sjáið	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	6	ccomp	_	_
+10	fyrir	fyrir	ADP	P	_	11	case	_	_
+11	ykkur	þú	PRON	PRO-D	Case=Dat	9	obl	_	_
+12	eitthvert	einhver	DET	Q-A	Case=Acc	13	amod	_	_
+13	kerfi	kerfi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obl	_	_
+14	sem	sem	SCONJ	C	_	15	mark	_	_
+15	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	_
+16	skattheimtuna	skattheimta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	nsubj	_	_
+17	gagnsærri	gagnsær	ADJ	ADJR-A	Case=Acc|Degree=Cmp	15	ccomp	_	_
+18	og	og	CCONJ	CONJ	_	24	cc	_	_
+19	jafnvel	jafnvel	ADV	ADV	Degree=Pos	24	advmod	_	_
+20	þá	þá	ADV	ADV	Degree=Pos	24	advmod	_	_
+21	að	að	SCONJ	C	_	24	mark	_	_
+22	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	nsubj	_	_
+23	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	24	aux	_	_
+24	haft	hafa	AUX	HVN	Tense=Past|VerbForm=Part	9	obj	_	_
+25	áhrif	áhrif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	24	obj	_	_
+26	á	á	ADP	P	_	31	case	_	_
+27	hvernig	hvernig	ADV	WADV	Degree=Pos	31	advmod	_	_
+28	skattpeningum	skattpeningur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	31	nsubj	_	_
+29	þess	það	PRON	PRO-G	Case=Gen	28	nmod:poss	_	_
+30	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
+31	varið	verja	VERB	VAN	Tense=Past|VerbForm=Part	24	obl	_	_
+32	eins	_	ADV	ADVR	Degree=Cmp	24	advmod	_	_
+33	og	_	ADP	P	_	37	case	_	_
+34	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	37	nsubj	_	_
+35	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	37	aux	_	_
+36	núna	núna	ADV	ADV	Degree=Pos	37	advmod	_	_
+37	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	32	obl	_	_
+38	með	með	ADP	P	_	39	case	_	_
+39	sóknargjöldin	sóknargjald	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	37	obl	_	SpaceAfter=No
+40	,	,	PUNCT	,	_	39	punct	_	_
+41	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	42	cop	_	_
+42	það	það	PRON	PRO-N	Case=Nom	37	dep	_	_
+43	ekki	ekki	ADV	NEG	_	42	advmod	_	SpaceAfter=No
+44	?	?	PUNCT	.	_	3	punct	_	_
+
 1	Svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	kem	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -222,6 +227,6 @@
 8	athugasemdir	athugasemd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	conj	_	_
 9	í	í	ADP	P	_	11	case	_	_
 10	næsta	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	11	amod	_	_
-11	andsvari	andsvar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+11	andsvari	andsvar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 12	.	.	PUNCT	.	_	2	punct	_	_
 

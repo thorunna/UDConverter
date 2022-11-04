@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.1
-# X_ID = ID_missing_1
-# text = Frú forseti. Eftir að hafa hlustað á ræður þingmanna úr stjórnarflokkunum held ég að öllum sé ljóst að málið er að verða svolítið vandræðalegt fyrir þá.
+# sent_id = G-33-4645702,.1
+# X_ID = ID_MISSING
+# text = Frú forseti . Eftir að hafa hlustað á ræður þingmanna úr stjórnarflokkunum held ég að öllum sé ljóst að málið er að verða svolítið vandræðalegt fyrir þá .
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -30,18 +30,18 @@
 27	þá	hann	PRON	PRO-A	Case=Acc	25	amod	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.2
-# X_ID = ID_missing_2
-# text = Og ekki bara svolítið.
+# sent_id = G-33-4645702,.2
+# X_ID = ID_MISSING
+# text = Og ekki bara svolítið .
 1	Og	og	CCONJ	CONJ	_	3	cc	_	_
 2	ekki	ekki	ADV	NEG	_	3	advmod	_	_
 3	bara	bara	PART	FP	Degree=Pos	0	root	_	_
 4	svolítið	svolítill	DET	Q-A	Case=Acc	3	obl	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.3
-# X_ID = ID_missing_3
-# text = Það er ekki bara vandræðalegt fyrir stjórnarflokkana heldur er það líka vanbúið.
+# sent_id = G-33-4645702,.3
+# X_ID = ID_MISSING
+# text = Það er ekki bara vandræðalegt fyrir stjórnarflokkana heldur er það líka vanbúið .
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
@@ -56,9 +56,9 @@
 12	vanbúið	vanbúinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	conj	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.4
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Tíu dagar eru síðan þessi stóru mál, risastóru mál sem snerta sjávarútveginn, komu inn í þingið og nú er eiginlega verið að taka annað þeirra út úr þinginu með töngum.
+# sent_id = G-33-4645702,.4
+# X_ID = ID_MISSING
+# text = Tíu dagar eru síðan þessi stóru mál, risastóru mál sem snerta sjávarútveginn, komu inn í þingið
 1	Tíu	tíu	NUM	NUM-N	Case=Nom	2	nummod	_	_
 2	dagar	dagur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	15	nsubj	_	_
 3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
@@ -77,25 +77,29 @@
 16	inn	inn	ADP	RP	_	18	compound:prt	_	_
 17	í	í	ADP	P	_	18	case	_	_
 18	þingið	þing	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
-19	og	og	CCONJ	CONJ	_	23	cc	_	_
-20	nú	nú	ADV	ADV	Degree=Pos	23	advmod	_	_
-21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
-22	eiginlega	eiginlega	ADV	ADV	Degree=Pos	23	advmod	_	_
-23	verið	vera	VERB	VAN	Tense=Past|VerbForm=Part	15	conj	_	OriginalHead=0
-24	að	að	PART	TO	_	25	mark	_	_
-25	taka	taka	VERB	VB	VerbForm=Inf	23	xcomp	_	_
-26	annað	annar	PRON	OTHER-A	Case=Acc	27	det	_	_
-27	þeirra	það	PRON	PRO-G	Case=Gen	25	obj	_	_
-28	út	út	ADP	RP	_	30	compound:prt	_	_
-29	úr	úr	ADP	P	_	30	case	_	_
-30	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
-31	með	með	ADP	P	_	32	case	_	_
-32	töngum	töng	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	25	obl	_	SpaceAfter=No
-33	.	.	PUNCT	.	_	15	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.5
-# X_ID = ID_missing_6
-# text = Eftir að hafa hlustað á ræðu hv. þm. Sigmundar Ernis Rúnarssonar er alveg ljóst að hann setur fram ákveðna og mjög skiljanlega fyrirvara í máli sínu.
+# sent_id = G-33-4645702,.5
+# X_ID = ID_MISSING
+# text = og nú er eiginlega verið að taka annað þeirra út úr þinginu með töngum .
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	eiginlega	eiginlega	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	verið	vera	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	taka	taka	VERB	VB	VerbForm=Inf	5	xcomp	_	_
+8	annað	annar	PRON	OTHER-A	Case=Acc	9	det	_	_
+9	þeirra	það	PRON	PRO-G	Case=Gen	7	obj	_	_
+10	út	út	ADP	RP	_	12	compound:prt	_	_
+11	úr	úr	ADP	P	_	12	case	_	_
+12	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
+13	með	með	ADP	P	_	14	case	_	_
+14	töngum	töng	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4645702,.6
+# X_ID = ID_MISSING
+# text = Eftir að hafa hlustað á ræðu hv. þm. Sigmundar Ernis Rúnarssonar er alveg ljóst að hann setur fram ákveðna og mjög skiljanlega fyrirvara í máli sínu .
 1	Eftir	eftir	ADP	P	_	4	case	_	_
 2	að	að	PART	TO	_	4	mark	_	_
 3	hafa	hafa	AUX	HV	VerbForm=Inf	4	aux	_	_
@@ -124,9 +128,9 @@
 26	sínu	sinn	PRON	PRO-D	Case=Dat	25	nmod:poss	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	14	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.6
-# X_ID = ID_missing_7
-# text = Augljóst er að það er ekki bara áherslumunur á milli stjórnarflokkanna og innan þeirra um sjávarútvegsmálin heldur líka gríðarlegur ágreiningur.
+# sent_id = G-33-4645702,.7
+# X_ID = ID_MISSING
+# text = Augljóst er að það er ekki bara áherslumunur á milli stjórnarflokkanna og innan þeirra um sjávarútvegsmálin heldur líka gríðarlegur ágreiningur .
 1	Augljóst	augljós	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	að	að	SCONJ	C	_	11	mark	_	_
@@ -149,9 +153,9 @@
 20	ágreiningur	ágreiningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	conj	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.7
-# X_ID = ID_missing_8
-# text = Mín tilfinning er sú að í þessu máli sé bara verið að ýta tveimur atriðum áfram, það er annars vegar pottunum til að fullnægja kröfum frá sjávarútvegsráðherra svo hann geti farið í einhverja pottagaldra í haust og hins vegar veiðileyfagjaldinu því að Samfylkingin verði að fá eitthvað táknrænt út úr þinginu á þessu þingi í staðinn fyrir að bíða með breytingarnar sem væri það eina skynsamlega.
+# sent_id = G-33-4645702,.8
+# X_ID = ID_MISSING
+# text = Mín tilfinning er sú að í þessu máli sé bara verið að ýta tveimur atriðum áfram, það er annars vegar pottunum til að fullnægja kröfum frá sjávarútvegsráðherra svo hann geti farið í einhverja pottagaldra í haust og hins vegar veiðileyfagjaldinu því að Samfylkingin verði að fá eitthvað táknrænt út úr þinginu á þessu þingi í staðinn fyrir að bíða með breytingarnar sem væri það eina skynsamlega .
 1	Mín	minn	PRON	PRO-N	Case=Nom	2	nmod:poss	_	_
 2	tilfinning	tilfinning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -221,9 +225,9 @@
 67	skynsamlega	skynsamlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	60	acl:relcl	_	SpaceAfter=No
 68	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.8
-# X_ID = ID_missing_9
-# text = Spurning mín til hv. þm. Sigmundar Ernis Rúnarssonar snertir einmitt það:
+# sent_id = G-33-4645702,.9
+# X_ID = ID_MISSING
+# text = Spurning mín til hv. þm. Sigmundar Ernis Rúnarssonar snertir einmitt það :
 1	Spurning	spurning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
 2	mín	minn	PRON	PRO-N	Case=Nom	1	nmod:poss	_	_
 3	til	til	ADP	P	_	5	case	_	_
@@ -237,9 +241,9 @@
 11	það	það	PRON	PRO-A	Case=Acc	9	obj	_	SpaceAfter=No
 12	:	:	PUNCT	,	_	9	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.9
-# X_ID = ID_missing_10
-# text = Tekur hann undir það með mér að réttara hefði verið að bíða með málið sem við ræðum núna, ekki bara af því að efnahagslegur ávinningur þess liggur ekki fyrir né kostir og gallar heldur líka vegna þess að gríðarlegur meiningarmunur er á milli svo margra innan þingsins um útfærslu á frumvarpinu?
+# sent_id = G-33-4645702,.10
+# X_ID = ID_MISSING
+# text = Tekur hann undir það með mér að réttara hefði verið að bíða með málið sem við ræðum núna, ekki bara af því að efnahagslegur ávinningur þess liggur ekki fyrir né kostir og gallar heldur líka vegna þess að gríðarlegur meiningarmunur er á milli svo margra innan þingsins um útfærslu á frumvarpinu ?
 1	Tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	hann	hann	PRON	PRO-N	Case=Nom	1	nsubj	_	_
 3	undir	undir	ADP	P	_	4	case	_	_
@@ -294,9 +298,9 @@
 52	frumvarpinu	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	50	obl	_	SpaceAfter=No
 53	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.10
-# X_ID = ID_missing_11
-# text = Það birtist best í því að ekki er einu sinni meiri hluti í sjávarútvegsnefnd fyrir málinu heldur getur aðeins einn þingmaður úr stjórnarliðinu stutt það fyrirvaralaust.
+# sent_id = G-33-4645702,.11
+# X_ID = ID_MISSING
+# text = Það birtist best í því að ekki er einu sinni meiri hluti í sjávarútvegsnefnd fyrir málinu heldur getur aðeins einn þingmaður úr stjórnarliðinu stutt það fyrirvaralaust .
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	birtist	birta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	best	vel	ADV	ADVS	Degree=Sup	2	advmod	_	_
@@ -325,9 +329,9 @@
 26	fyrirvaralaust	fyrirvaralaust	ADV	ADV	Degree=Pos	24	advmod	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.11
-# X_ID = ID_missing_12
-# text = Ber þetta ekki vott um að við hefðum átt að flýta okkur aðeins hægar og taka málið allt saman til endurskoðunar í haust?
+# sent_id = G-33-4645702,.12
+# X_ID = ID_MISSING
+# text = Ber þetta ekki vott um að við hefðum átt að flýta okkur aðeins hægar og taka málið allt saman til endurskoðunar í haust ?
 1	Ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	þetta	þessi	DET	D-N	Case=Nom	1	nsubj	_	_
 3	ekki	ekki	ADV	NEG	_	1	advmod	_	_
@@ -353,16 +357,13 @@
 23	haust	haust	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
 24	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.12
-# X_ID = ID_missing_13
-# text = Forseti hringir.
+# sent_id = G-33-4645702,.13
+# X_ID = ID_MISSING
+# text = Forseti hringir .
 1	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4645702,.13
-# X_ID = ID_missing_14
-# text = Ég held að styttra sé á milli manna en menn halda eftir allar þessar umræður, frú forseti.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	4	mark	_	_
@@ -377,9 +378,9 @@
 12	eftir	eftir	ADP	P	_	15	case	_	_
 13	allar	allur	DET	Q-A	Case=Acc	15	amod	_	_
 14	þessar	þessi	DET	D-A	Case=Acc	15	det	_	_
-15	umræður	umræða	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
+15	umræður	umræða	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
 16	,	,	PUNCT	,	_	15	punct	_	_
 17	frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	vocative	_	_
-18	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	conj	_	SpaceAfter=No
+18	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	conj	_	_
 19	.	.	PUNCT	.	_	2	punct	_	_
 

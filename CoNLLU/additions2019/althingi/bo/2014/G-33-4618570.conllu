@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2014_G-33-4618570,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Ég tek undir með hv. þm. Katrínu Júlíusdóttur.
+# sent_id = G-33-4618570,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Ég tek undir með hv. þm. Katrínu Júlíusdóttur .
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -14,9 +14,9 @@
 11	Júlíusdóttur	júlíusdóttir	PROPN	NPR-D	_	9	dep	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4618570,.2
-# X_ID = ID_missing_2
-# text = Og úr því hún nefndi skuldaleiðréttingarnar og önnur mál sem eiga að fara í gegnum þingið þá er í því tiltekna máli engin launung á, og ég hef sagt það áður í þessum ræðustól, að ég er ekki hrifin af þeim áformum ríkisstjórnarinnar að demba inn í framtíðina 80 milljörðum.
+# sent_id = G-33-4618570,.2
+# X_ID = ID_MISSING
+# text = Og úr því hún nefndi skuldaleiðréttingarnar og önnur mál sem eiga að fara í gegnum þingið þá er í því tiltekna máli engin launung á, og ég hef sagt það áður í þessum ræðustól, að ég er ekki hrifin af þeim áformum ríkisstjórnarinnar að demba inn í framtíðina 80 milljörðum .
 1	Og	og	CCONJ	CONJ	_	3	cc	_	_
 2	úr	úr	ADP	P	_	3	case	_	_
 3	því	það	PRON	PRO-D	Case=Dat	0	root	_	_
@@ -71,9 +71,9 @@
 52	milljörðum	milljarður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	47	obj	_	SpaceAfter=No
 53	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4618570,.3
-# X_ID = ID_missing_3
-# text = Ég mun ekki styðja það.
+# sent_id = G-33-4618570,.3
+# X_ID = ID_MISSING
+# text = Ég mun ekki styðja það .
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -81,9 +81,9 @@
 5	það	það	PRON	PRO-A	Case=Acc	4	obj	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2014_G-33-4618570,.4
-# X_IDs = ID_missing_4 ; ID_missing_5 ; ID_missing_6 ; ID_missing_7 ; ID_missing_8
-# text = Ég sakna svo sem ekki þeirra tillagna en auðvitað er það óþolandi fyrir það fólk sem það gerir, að fólk fái ekki svör því að óvissan er miklu verri, það er miklu verra ástand en að fá bara skellinn, þá getur maður haldið áfram, en hitt er miklu verri staða.
+# sent_id = G-33-4618570,.4
+# X_ID = ID_MISSING
+# text = Ég sakna svo sem ekki þeirra tillagna
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	sakna	sakna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	svo	svo	ADV	ADVR	Degree=Cmp	2	advmod	_	_
@@ -91,52 +91,65 @@
 5	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 6	þeirra	sá	DET	D-G	Case=Gen	7	det	_	_
 7	tillagna	tillaga	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	obj	_	_
-8	en	en	CCONJ	CONJ	_	12	cc	_	_
-9	auðvitað	auðvitað	ADV	ADV	Degree=Pos	12	advmod	_	_
-10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
-11	það	það	PRON	PRO-N	Case=Nom	12	nsubj	_	_
-12	óþolandi	óþolandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
-13	fyrir	fyrir	ADP	P	_	15	case	_	_
-14	það	sá	DET	D-A	Case=Acc	15	det	_	_
-15	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
-16	sem	sem	SCONJ	C	_	18	mark	_	_
-17	það	það	PRON	PRO-A	Case=Acc	18	obj	_	_
-18	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	15	acl:relcl	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	18	punct	_	_
-20	að	að	SCONJ	C	_	22	mark	_	_
-21	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	nsubj	_	_
-22	fái	fá	VERB	VBPS	Mood=Sub|Tense=Pres	12	ccomp	_	_
-23	ekki	ekki	ADV	NEG	_	22	advmod	_	_
-24	svör	svar	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obj	_	_
-25	því	það	PRON	PRO-D	Case=Dat	12	obl	_	_
-26	að	að	SCONJ	C	_	30	mark	_	_
-27	óvissan	óvissa	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	30	nsubj	_	_
-28	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	30	cop	_	_
-29	miklu	mikill	DET	Q-D	Case=Dat	30	obl	_	_
-30	verri	illur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	25	ccomp	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	25	punct	_	_
-32	það	það	PRON	PRO-N	Case=Nom	36	nsubj	_	_
-33	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	36	cop	_	_
-34	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	36	amod	_	_
-35	verra	illur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	36	amod	_	_
-36	ástand	ástand	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
-37	en	en	ADP	P	_	39	case	_	_
-38	að	að	PART	TO	_	39	mark	_	_
-39	fá	fá	VERB	VB	VerbForm=Inf	36	obl	_	_
-40	bara	bara	ADV	FP	Degree=Pos	39	advmod	_	_
-41	skellinn	skellur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	39	obj	_	SpaceAfter=No
-42	,	,	PUNCT	,	_	39	punct	_	_
-43	þá	þá	ADV	ADV	Degree=Pos	46	advmod	_	_
-44	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	46	aux	_	_
-45	maður	maður	PRON	MAN-N	_	46	nsubj	_	_
-46	haldið	halda	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-47	áfram	áfram	ADV	ADV	Degree=Pos	46	advmod	_	SpaceAfter=No
-48	,	,	PUNCT	,	_	2	punct	_	_
-49	en	en	CCONJ	CONJ	_	54	cc	_	_
-50	hitt	hinn	DET	D-N	Case=Nom	54	nsubj	_	_
-51	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	54	cop	_	_
-52	miklu	mikill	DET	Q-D	Case=Dat	53	obl	_	_
-53	verri	illur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	54	amod	_	_
-54	staða	staða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0|SpaceAfter=No
-55	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4618570,.5
+# X_ID = ID_MISSING
+# text = en auðvitað er það óþolandi fyrir það fólk sem það gerir, að fólk fái ekki svör því að óvissan er miklu verri,
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	auðvitað	auðvitað	ADV	ADV	Degree=Pos	5	advmod	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	óþolandi	óþolandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+6	fyrir	fyrir	ADP	P	_	8	case	_	_
+7	það	sá	DET	D-A	Case=Acc	8	det	_	_
+8	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+9	sem	sem	SCONJ	C	_	11	mark	_	_
+10	það	það	PRON	PRO-A	Case=Acc	11	obj	_	_
+11	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	8	acl:relcl	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	að	að	SCONJ	C	_	15	mark	_	_
+14	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
+15	fái	fá	VERB	VBPS	Mood=Sub|Tense=Pres	5	ccomp	_	_
+16	ekki	ekki	ADV	NEG	_	15	advmod	_	_
+17	svör	svar	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obj	_	_
+18	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
+19	að	að	SCONJ	C	_	23	mark	_	_
+20	óvissan	óvissa	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	nsubj	_	_
+21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
+22	miklu	mikill	DET	Q-D	Case=Dat	23	obl	_	_
+23	verri	illur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	18	ccomp	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	5	punct	_	_
+
+# sent_id = G-33-4618570,.6
+# X_ID = ID_MISSING
+# text = það er miklu verra ástand en að fá bara skellinn,
+1	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+3	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
+4	verra	illur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	5	amod	_	_
+5	ástand	ástand	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+6	en	en	ADP	P	_	8	case	_	_
+7	að	að	PART	TO	_	8	mark	_	_
+8	fá	fá	VERB	VB	VerbForm=Inf	5	obl	_	_
+9	bara	bara	ADV	FP	Degree=Pos	8	advmod	_	_
+10	skellinn	skellur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	5	punct	_	_
+
+# sent_id = G-33-4618570,.7
+# X_ID = ID_MISSING
+# text = þá getur maður haldið áfram,
+1	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
+2	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
+3	maður	maður	PRON	MAN-N	_	4	nsubj	_	_
+4	haldið	halda	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	áfram	áfram	ADV	ADV	Degree=Pos	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	4	punct	_	_
+
+1	en	en	CCONJ	CONJ	_	6	cc	_	_
+2	hitt	hinn	DET	D-N	Case=Nom	6	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+4	miklu	mikill	DET	Q-D	Case=Dat	5	obl	_	_
+5	verri	illur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	6	amod	_	_
+6	staða	staða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+7	.	.	PUNCT	.	_	6	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4916517,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Virðulegi forseti. Ég þakka hv. þingmanni fyrir ítarlega og ágæta ræðu sem ég náði reyndar ekki að fylgjast með allri en þó nokkru af henni og tók ekki eftir að hv. þingmaður talaði um sýn sína á menntamál.
+# sent_id = G-33-4916517,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég þakka hv. þingmanni fyrir ítarlega og ágæta ræðu sem ég náði reyndar ekki að fylgjast með allri en þó nokkru af henni
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -27,24 +27,28 @@
 24	nokkru	nokkur	DET	Q-D	Case=Dat	19	xcomp	_	_
 25	af	af	ADP	P	_	26	case	_	_
 26	henni	hún	PRON	PRO-D	Case=Dat	24	obl	_	_
-27	og	og	CCONJ	CONJ	_	28	cc	_	_
-28	tók	taka	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
-29	ekki	ekki	ADV	NEG	_	28	advmod	_	_
-30	eftir	eftir	ADP	P	_	34	case	_	_
-31	að	að	SCONJ	C	_	34	mark	_	_
-32	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	33	amod	_	_
-33	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	34	nsubj	_	_
-34	talaði	tala	VERB	VBDS	Mood=Sub|Tense=Past	28	obl	_	_
-35	um	um	ADP	P	_	36	case	_	_
-36	sýn	sýn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	obl	_	_
-37	sína	sinn	PRON	PRO-A	Case=Acc	36	nmod:poss	_	_
-38	á	á	ADP	P	_	39	case	_	_
-39	menntamál	menntamál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	36	obl	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4916517,.2
-# X_ID = ID_missing_3
-# text = Drengir standa sig víst ekki jafn vel í skólakerfinu og maður mundi ætla.
+# sent_id = G-33-4916517,.2
+# X_ID = ID_MISSING
+# text = og tók ekki eftir að hv. þingmaður talaði um sýn sína á menntamál .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	tók	taka	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
+4	eftir	eftir	ADP	P	_	8	case	_	_
+5	að	að	SCONJ	C	_	8	mark	_	_
+6	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
+7	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+8	talaði	tala	VERB	VBDS	Mood=Sub|Tense=Past	2	obl	_	_
+9	um	um	ADP	P	_	10	case	_	_
+10	sýn	sýn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
+11	sína	sinn	PRON	PRO-A	Case=Acc	10	nmod:poss	_	_
+12	á	á	ADP	P	_	13	case	_	_
+13	menntamál	menntamál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4916517,.3
+# X_ID = ID_MISSING
+# text = Drengir standa sig víst ekki jafn vel í skólakerfinu og maður mundi ætla .
 1	Drengir	drengur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
 2	standa	standa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	sig	sig	PRON	PRO-A	Case=Acc	2	obj	_	_
@@ -60,29 +64,33 @@
 13	ætla	ætla	VERB	VB	VerbForm=Inf	2	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4916517,.3
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Það virðast ýmsar breytingar á lofti og sitt sýnist hverjum um hvers vegna það er.
+# sent_id = G-33-4916517,.4
+# X_ID = ID_MISSING
+# text = Það virðast ýmsar breytingar á lofti
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	virðast	virða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ýmsar	ýmis	DET	Q-N	Case=Nom	4	amod	_	_
 4	breytingar	breyting	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	obl	_	_
 5	á	á	ADP	P	_	6	case	_	_
 6	lofti	loft	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
-7	og	og	CCONJ	CONJ	_	9	cc	_	_
-8	sitt	sinn	PRON	PRO-N	Case=Nom	9	obj	_	_
-9	sýnist	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-10	hverjum	hver	DET	Q-D	Case=Dat	9	nsubj	_	_
-11	um	um	ADP	P	_	14	case	_	_
-12	hvers	hver	DET	Q-G	Case=Gen	14	obl	_	_
-13	vegna	vegna	ADP	P	_	12	case	_	_
-14	það	það	PRON	PRO-N	Case=Nom	9	obl	_	_
-15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4916517,.4
-# X_ID = ID_missing_6
-# text = Mín persónulega skoðun er sú að það hljóti að hafa eitthvað að gera með breytt neyslumynstur á upplýsingum, þ. e. að krakkar og unglingar leita kannski meira að upplýsingum upp á eigin spýtur og leita því kannski ekki endilega mikið í skólann.
+# sent_id = G-33-4916517,.5
+# X_ID = ID_MISSING
+# text = og sitt sýnist hverjum um hvers vegna það er .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	sitt	sinn	PRON	PRO-N	Case=Nom	3	obj	_	_
+3	sýnist	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	hverjum	hver	DET	Q-D	Case=Dat	3	nsubj	_	_
+5	um	um	ADP	P	_	8	case	_	_
+6	hvers	hver	DET	Q-G	Case=Gen	8	obl	_	_
+7	vegna	vegna	ADP	P	_	6	case	_	_
+8	það	það	PRON	PRO-N	Case=Nom	3	obl	_	_
+9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4916517,.6
+# X_ID = ID_MISSING
+# text = Mín persónulega skoðun er sú að það hljóti að hafa eitthvað að gera með breytt neyslumynstur á upplýsingum, þ. e. að krakkar og unglingar leita kannski meira að upplýsingum upp á eigin spýtur og leita því kannski ekki endilega mikið í skólann .
 1	Mín	minn	PRON	PRO-N	Case=Nom	3	nmod:poss	_	_
 2	persónulega	persónulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
 3	skoðun	skoðun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
@@ -128,9 +136,9 @@
 43	skólann	skóli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	36	obl	_	SpaceAfter=No
 44	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4916517,.5
-# X_ID = ID_missing_7
-# text = Þess vegna langaði mig að spyrja almennt um menntamálin og sérstaklega um grunnskólamenntamálin.
+# sent_id = G-33-4916517,.7
+# X_ID = ID_MISSING
+# text = Þess vegna langaði mig að spyrja almennt um menntamálin og sérstaklega um grunnskólamenntamálin .
 1	Þess	það	PRON	PRO-G	Case=Gen	3	obl	_	_
 2	vegna	vegna	ADP	P	_	1	case	_	_
 3	langaði	langa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -146,9 +154,9 @@
 13	grunnskólamenntamálin	grunnskólamenntamál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	xcomp	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4916517,.6
-# X_IDs = ID_missing_8 ; ID_missing_9
-# text = Hefur hv. þingmaður einhverja skýra sýn í þeim efnum og vill hann þá kannski deila þeirri sýn með okkur?
+# sent_id = G-33-4916517,.8
+# X_ID = ID_MISSING
+# text = Hefur hv. þingmaður einhverja skýra sýn í þeim efnum
 1	Hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
 3	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
@@ -158,15 +166,16 @@
 7	í	í	ADP	P	_	9	case	_	_
 8	þeim	sá	DET	D-D	Case=Dat	9	det	_	_
 9	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	1	obl	_	_
-10	og	og	CCONJ	CONJ	_	15	cc	_	_
-11	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	15	aux	_	_
-12	hann	hann	PRON	PRO-N	Case=Nom	15	nsubj	_	_
-13	þá	þá	ADV	ADV	Degree=Pos	15	advmod	_	_
-14	kannski	kannski	ADV	ADV	Degree=Pos	15	advmod	_	_
-15	deila	deila	VERB	VB	VerbForm=Inf	1	conj	_	OriginalHead=0
-16	þeirri	sá	DET	D-D	Case=Dat	17	det	_	_
-17	sýn	sýn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obj	_	_
-18	með	með	ADP	P	_	19	case	_	_
-19	okkur	ég	PRON	PRO-D	Case=Dat	15	obl	_	SpaceAfter=No
-20	?	?	PUNCT	.	_	1	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
+3	hann	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+4	þá	þá	ADV	ADV	Degree=Pos	6	advmod	_	_
+5	kannski	kannski	ADV	ADV	Degree=Pos	6	advmod	_	_
+6	deila	deila	VERB	VB	VerbForm=Inf	0	root	_	_
+7	þeirri	sá	DET	D-D	Case=Dat	8	det	_	_
+8	sýn	sýn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obj	_	_
+9	með	með	ADP	P	_	10	case	_	_
+10	okkur	ég	PRON	PRO-D	Case=Dat	6	obl	_	_
+11	?	?	PUNCT	.	_	6	punct	_	_
 

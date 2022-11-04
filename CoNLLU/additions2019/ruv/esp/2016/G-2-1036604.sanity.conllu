@@ -1,6 +1,6 @@
-# sent_id = RUV_ESP_2016_G-2-1036604.SANITY,.1
-# X_ID = ID_missing_1
-# text = Körfuknattleikssamband Íslands kynnti í morgun 16 manna lokaæfingahóp sem tekur þátt í sex landsleikjum sem framundan eru í undankeppni EM 2017.
+# sent_id = G-2-1036604.SANITY,.1
+# X_ID = ID_MISSING
+# text = Körfuknattleikssamband Íslands kynnti í morgun 16 manna lokaæfingahóp sem tekur þátt í sex landsleikjum sem framundan eru í undankeppni EM 2017 .
 1	Körfuknattleikssamband	körfuknattleikssamband	PROPN	NPR-N	_	3	nsubj	_	_
 2	Íslands	ísland	PROPN	NPR-G	_	1	flat:name	_	_
 3	kynnti	kynna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -24,9 +24,9 @@
 21	2017	2017	NUM	NUM-A	Case=Acc	20	obl	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036604.SANITY,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Jakob Örn Sigurðarson gaf ekki kost á sér að þessu sinni og Pavel Ermolinskij er meiddur.
+# sent_id = G-2-1036604.SANITY,.2
+# X_ID = ID_MISSING
+# text = Jakob Örn Sigurðarson gaf ekki kost á sér að þessu sinni
 1	Jakob	jakob	PROPN	NPR-N	_	4	nsubj	_	_
 2	Örn	örn	PROPN	NPR-N	_	1	flat:name	_	_
 3	Sigurðarson	sigurðarson	PROPN	NPR-N	_	1	dep	_	_
@@ -38,16 +38,20 @@
 9	að	að	ADP	P	_	11	case	_	_
 10	þessu	þessi	DET	D-D	Case=Dat	11	det	_	_
 11	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
-12	og	og	CCONJ	CONJ	_	13	cc	_	_
-13	Pavel	pavel	PROPN	NPR-N	_	4	conj	_	OriginalHead=0
-14	Ermolinskij	ermolinskij	PROPN	NPR-N	_	13	flat:name	_	_
-15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-16	meiddur	meiða	VERB	VAN	Tense=Past|VerbForm=Part	13	acl	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036604.SANITY,.3
-# X_ID = ID_missing_4
-# text = Þetta er hópurinn sem landsliðsþjálfarinn Craig Pedersen og aðstoðarmenn hans Arnar Guðjónsson og Finnur Freyr Stefánsson kynntu í morgun.
+# sent_id = G-2-1036604.SANITY,.3
+# X_ID = ID_MISSING
+# text = og Pavel Ermolinskij er meiddur .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	Pavel	pavel	PROPN	NPR-N	_	0	root	_	_
+3	Ermolinskij	ermolinskij	PROPN	NPR-N	_	2	flat:name	_	_
+4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
+5	meiddur	meiða	VERB	VAN	Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1036604.SANITY,.4
+# X_ID = ID_MISSING
+# text = Þetta er hópurinn sem landsliðsþjálfarinn Craig Pedersen og aðstoðarmenn hans Arnar Guðjónsson og Finnur Freyr Stefánsson kynntu í morgun .
 1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	hópurinn	hópur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
@@ -69,11 +73,164 @@
 19	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1036604.SANITY,.4
-# X_ID = ID_missing_5
-# text = 16 manna leikmannahópur:
+# sent_id = G-2-1036604.SANITY,.5
+# X_ID = ID_MISSING
+# text = 16 manna leikmannahópur :
 1	16	sextán	NUM	NUM-G	Case=Gen	2	nummod	_	_
 2	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	nmod:poss	_	_
 3	leikmannahópur	leikmannahópur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 4	:	:	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-2-1036604.SANITY,.6
+# X_ID = ID_MISSING
+# text = Axel Kárason Svendborg Rabbits, Danmörk
+1	Axel	axel	PROPN	NPR-N	_	0	root	_	_
+2	Kárason	kárason	PROPN	NPR-N	_	1	flat:name	_	_
+3	Svendborg	svendborg	PROPN	NPR-N	_	1	obl	_	_
+4	Rabbits	rabbits	PROPN	NPR-N	_	3	flat:name	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	Danmörk	danmörk	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.7
+# X_ID = ID_MISSING
+# text = Brynjar Þór Björnsson KR
+1	Brynjar	brynjar	PROPN	NPR-N	_	0	root	_	_
+2	Þór	þór	PROPN	NPR-N	_	1	flat:name	_	_
+3	Björnsson	björnsson	PROPN	NPR-N	_	1	dep	_	_
+4	KR	kr	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.8
+# X_ID = ID_MISSING
+# text = Darri Hilmarsson KR
+1	Darri	darri	PROPN	NPR-N	_	0	root	_	_
+2	Hilmarsson	hilmarsson	PROPN	NPR-N	_	1	flat:name	_	_
+3	KR	kr	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.9
+# X_ID = ID_MISSING
+# text = Elvar Már Friðriksson Barry University Njarðvík
+1	Elvar	elvar	PROPN	NPR-N	_	0	root	_	_
+2	Már	már	PROPN	NPR-N	_	1	flat:name	_	_
+3	Friðriksson	friðriksson	PROPN	NPR-N	_	1	dep	_	_
+4	Barry	barry	PROPN	NPR-N	_	1	obl	_	_
+5	University	university	PROPN	NPR-N	_	4	flat:name	_	_
+6	Njarðvík	njarðvík	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.10
+# X_ID = ID_MISSING
+# text = Haukur Helgi Pálsson Rouen Metropole Basket, Frakkland
+1	Haukur	haukur	PROPN	NPR-N	_	0	root	_	_
+2	Helgi	helgi	PROPN	NPR-N	_	1	flat:name	_	_
+3	Pálsson	pálsson	PROPN	NPR-N	_	1	dep	_	_
+4	Rouen	rouen	PROPN	NPR-N	_	1	obl	_	_
+5	Metropole	metropole	PROPN	NPR-N	_	4	flat:name	_	_
+6	Basket	basket	PROPN	NPR-N	_	4	dep	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	Frakkland	frakkland	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.11
+# X_ID = ID_MISSING
+# text = Hlynur Bæringsson Sundsvall Dragons, Svíþjóð
+1	Hlynur	hlynur	PROPN	NPR-N	_	0	root	_	_
+2	Bæringsson	bæringsson	PROPN	NPR-N	_	1	flat:name	_	_
+3	Sundsvall	sundsvall	PROPN	NPR-N	_	1	obl	_	_
+4	Dragons	dragons	PROPN	NPR-N	_	3	flat:name	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	Svíþjóð	svíþjóð	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.12
+# X_ID = ID_MISSING
+# text = Hörður Axel Vilhjálmsson Rythmos BC, Grikkland
+1	Hörður	hörður	PROPN	NPR-N	_	0	root	_	_
+2	Axel	axel	PROPN	NPR-N	_	1	flat:name	_	_
+3	Vilhjálmsson	vilhjálmsson	PROPN	NPR-N	_	1	dep	_	_
+4	Rythmos	rythmos	PROPN	NPR-N	_	1	obl	_	_
+5	BC	bc	PROPN	NPR-N	_	4	flat:name	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	Grikkland	grikkland	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.13
+# X_ID = ID_MISSING
+# text = Jón Arnór Stefánsson Valencia, Spánn
+1	Jón	jón	PROPN	NPR-N	_	0	root	_	_
+2	Arnór	arnór	PROPN	NPR-N	_	1	flat:name	_	_
+3	Stefánsson	stefánsson	PROPN	NPR-N	_	1	dep	_	_
+4	Valencia	valencia	PROPN	NPR-N	_	1	obl	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	Spánn	spánn	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.14
+# X_ID = ID_MISSING
+# text = Kristófer Acox Furman University KR
+1	Kristófer	kristófer	PROPN	NPR-N	_	0	root	_	_
+2	Acox	acox	PROPN	NPR-N	_	1	flat:name	_	_
+3	Furman	furman	PROPN	NPR-N	_	1	obl	_	_
+4	University	university	PROPN	NPR-N	_	3	flat:name	_	_
+5	KR	kr	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.15
+# X_ID = ID_MISSING
+# text = Logi Gunnarsson Njarðvík
+1	Logi	logi	PROPN	NPR-N	_	0	root	_	_
+2	Gunnarsson	gunnarsson	PROPN	NPR-N	_	1	flat:name	_	_
+3	Njarðvík	njarðvík	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.16
+# X_ID = ID_MISSING
+# text = Martin Hermannsson Étoile de Charleville-Mézéres, Frakkland
+1	Martin	martin	PROPN	NPR-N	_	0	root	_	_
+2	Hermannsson	hermannsson	PROPN	NPR-N	_	1	flat:name	_	_
+3	Étoile	étoile	PROPN	NPR-N	_	1	obl	_	_
+4	de	de	PROPN	NPR-N	_	3	flat:name	_	_
+5	Charleville-Mézéres	charleville-mézéres	PROPN	NPR-N	_	3	dep	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	Frakkland	frakkland	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.17
+# X_ID = ID_MISSING
+# text = Ólafur Ólafsson St. Clement, Frakkland
+1	Ólafur	ólafur	PROPN	NPR-N	_	0	root	_	_
+2	Ólafsson	ólafsson	PROPN	NPR-N	_	1	flat:name	_	_
+3	St.	st.	PROPN	NPR-N	_	1	obl	_	_
+4	Clement	clement	PROPN	NPR-N	_	3	flat:name	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	Frakkland	frakkland	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.18
+# X_ID = ID_MISSING
+# text = Ragnar Ágúst Nathanaelsson Þór Þorlákshöfn
+1	Ragnar	ragnar	PROPN	NPR-N	_	0	root	_	_
+2	Ágúst	ágúst	PROPN	NPR-N	_	1	flat:name	_	_
+3	Nathanaelsson	nathanaelsson	PROPN	NPR-N	_	1	dep	_	_
+4	Þór	þór	PROPN	NPR-N	_	1	obl	_	_
+5	Þorlákshöfn	þorlákshöfn	PROPN	NPR-D	_	4	flat:name	_	_
+
+# sent_id = G-2-1036604.SANITY,.19
+# X_ID = ID_MISSING
+# text = Sigurður Gunnar Þorsteinsson Doxa Pefkon, Grikkland
+1	Sigurður	sigurður	PROPN	NPR-N	_	0	root	_	_
+2	Gunnar	gunnar	PROPN	NPR-N	_	1	flat:name	_	_
+3	Þorsteinsson	þorsteinsson	PROPN	NPR-N	_	1	dep	_	_
+4	Doxa	doxa	PROPN	NPR-N	_	1	obl	_	_
+5	Pefkon	pefkon	PROPN	NPR-N	_	4	flat:name	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	Grikkland	grikkland	PROPN	NPR-N	_	1	obl	_	_
+
+# sent_id = G-2-1036604.SANITY,.20
+# X_ID = ID_MISSING
+# text = Tryggvi Þór Hlinason Þór Akureyri
+1	Tryggvi	tryggvi	PROPN	NPR-N	_	0	root	_	_
+2	Þór	þór	PROPN	NPR-N	_	1	flat:name	_	_
+3	Hlinason	hlinason	PROPN	NPR-N	_	1	dep	_	_
+4	Þór	þór	PROPN	NPR-N	_	1	obl	_	_
+5	Akureyri	akureyri	PROPN	NPR-D	_	4	flat:name	_	_
+
+1	Ægir	ægir	PROPN	NPR-N	_	0	root	_	_
+2	Þór	þór	PROPN	NPR-N	_	1	flat:name	_	_
+3	Steinarsson	steinarsson	PROPN	NPR-N	_	1	dep	_	_
+4	San	san	PROPN	NPR-N	_	1	obl	_	_
+5	Pablo	pablo	PROPN	NPR-N	_	4	flat:name	_	_
+6	Inmobiliaria	inmobiliaria	PROPN	NPR-N	_	4	dep	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	Spánn	spánn	PROPN	NPR-N	_	1	obl	_	_
 

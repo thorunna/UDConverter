@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4808308,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Virðulegi forseti. Mér líst vel á þetta almennt, ég er almennt ekki hrifinn af tollum.
+# sent_id = G-33-4808308,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Mér líst vel á þetta almennt,
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -10,19 +10,23 @@
 7	á	á	ADP	P	_	8	case	_	_
 8	þetta	þessi	DET	D-A	Case=Acc	5	obl	_	_
 9	almennt	almennt	ADV	ADV	Degree=Pos	5	advmod	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	ég	ég	PRON	PRO-N	Case=Nom	15	nsubj	_	_
-12	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
-13	almennt	almennt	ADV	ADV	Degree=Pos	15	advmod	_	_
-14	ekki	ekki	ADV	NEG	_	15	advmod	_	_
-15	hrifinn	hrifinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	conj	_	OriginalHead=0
-16	af	af	ADP	P	_	17	case	_	_
-17	tollum	tollur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	amod	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	5	punct	_	_
+10	,	,	PUNCT	,	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4808308,.2
-# X_ID = ID_missing_3
-# text = Mér finnst málflutningur hv. þm. Guðlaugs Þórs Þórðarsonar mjög sannfærandi af öllum þeim rökum sem hér voru tíunduð.
+# sent_id = G-33-4808308,.2
+# X_ID = ID_MISSING
+# text = ég er almennt ekki hrifinn af tollum .
+1	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+3	almennt	almennt	ADV	ADV	Degree=Pos	5	advmod	_	_
+4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
+5	hrifinn	hrifinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+6	af	af	ADP	P	_	7	case	_	_
+7	tollum	tollur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	amod	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4808308,.3
+# X_ID = ID_MISSING
+# text = Mér finnst málflutningur hv. þm. Guðlaugs Þórs Þórðarsonar mjög sannfærandi af öllum þeim rökum sem hér voru tíunduð .
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	málflutningur	málflutningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
@@ -43,9 +47,9 @@
 18	tíunduð	tíunda	VERB	VAN	Tense=Past|VerbForm=Part	14	acl:relcl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4808308,.3
-# X_ID = ID_missing_4
-# text = Ég velti hins vegar fyrir mér hagfræðilegri spurningu sem varðar viðskiptajöfnuð.
+# sent_id = G-33-4808308,.4
+# X_ID = ID_MISSING
+# text = Ég velti hins vegar fyrir mér hagfræðilegri spurningu sem varðar viðskiptajöfnuð .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
@@ -59,9 +63,9 @@
 11	viðskiptajöfnuð	viðskiptajöfnuður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4808308,.4
-# X_ID = ID_missing_5
-# text = Ég óttast að með þessu versni viðskiptajöfnuðurinn enn þá meira.
+# sent_id = G-33-4808308,.5
+# X_ID = ID_MISSING
+# text = Ég óttast að með þessu versni viðskiptajöfnuðurinn enn þá meira .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	óttast	óttast	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -74,9 +78,9 @@
 10	meira	mjög	ADV	ADVR	Degree=Cmp	8	advmod	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4808308,.5
-# X_IDs = ID_missing_6 ; ID_missing_7 ; ID_missing_8
-# text = Hann er núna jákvæður, skilst mér, en stefnir í að hann verði fyrr eða síðar aftur neikvæður og ég óttast að þetta annars fína framtak geri einhvern usla í þeim efnum.
+# sent_id = G-33-4808308,.6
+# X_ID = ID_MISSING
+# text = Hann er núna jákvæður, skilst mér,
 1	Hann	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	núna	núna	ADV	ADV	Degree=Pos	6	advmod	_	_
@@ -84,37 +88,42 @@
 5	,	,	PUNCT	,	_	4	punct	_	_
 6	skilst	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 7	mér	ég	PRON	PRO-D	Case=Dat	6	obl	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	7	punct	_	_
-9	en	en	CCONJ	CONJ	_	10	cc	_	_
-10	stefnir	stefna	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
-11	í	í	ADP	P	_	14	case	_	_
-12	að	að	SCONJ	C	_	14	mark	_	_
-13	hann	hann	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-14	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	10	obl	_	_
-15	fyrr	snemma	ADV	ADVR	Degree=Cmp	14	advmod	_	_
-16	eða	eða	CCONJ	CONJ	_	17	cc	_	_
-17	síðar	síðar	ADV	ADVR	Degree=Cmp	15	conj	_	_
-18	aftur	aftur	ADV	ADV	Degree=Pos	14	advmod	_	_
-19	neikvæður	neikvæður	ADJ	ADJ-N	Case=Nom|Degree=Pos	14	amod	_	_
-20	og	og	CCONJ	CONJ	_	22	cc	_	_
-21	ég	ég	PRON	PRO-N	Case=Nom	22	nsubj	_	_
-22	óttast	óttast	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
-23	að	að	SCONJ	C	_	28	mark	_	_
-24	þetta	þessi	DET	D-N	Case=Nom	27	det	_	_
-25	annars	annar	PRON	OTHER-G	Case=Gen	26	obl	_	_
-26	fína	fínn	ADJ	ADJ-N	Case=Nom|Degree=Pos	27	amod	_	_
-27	framtak	framtak	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	nsubj	_	_
-28	geri	gera	VERB	DOPS	Mood=Sub|Tense=Pres	22	ccomp	_	_
-29	einhvern	einhver	DET	Q-A	Case=Acc	30	amod	_	_
-30	usla	usli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obj	_	_
-31	í	í	ADP	P	_	33	case	_	_
-32	þeim	sá	DET	D-D	Case=Dat	33	det	_	_
-33	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	28	obl	_	SpaceAfter=No
-34	.	.	PUNCT	.	_	6	punct	_	_
+8	,	,	PUNCT	,	_	6	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4808308,.6
-# X_ID = ID_missing_9
-# text = Ég velti fyrir mér viðbrögðum hv. þingmanns við því.
+# sent_id = G-33-4808308,.7
+# X_ID = ID_MISSING
+# text = en stefnir í að hann verði fyrr eða síðar aftur neikvæður
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	stefnir	stefna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	í	í	ADP	P	_	6	case	_	_
+4	að	að	SCONJ	C	_	6	mark	_	_
+5	hann	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	2	obl	_	_
+7	fyrr	snemma	ADV	ADVR	Degree=Cmp	6	advmod	_	_
+8	eða	eða	CCONJ	CONJ	_	9	cc	_	_
+9	síðar	síðar	ADV	ADVR	Degree=Cmp	7	conj	_	_
+10	aftur	aftur	ADV	ADV	Degree=Pos	6	advmod	_	_
+11	neikvæður	neikvæður	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
+
+# sent_id = G-33-4808308,.8
+# X_ID = ID_MISSING
+# text = og ég óttast að þetta annars fína framtak geri einhvern usla í þeim efnum .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	óttast	óttast	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	að	að	SCONJ	C	_	9	mark	_	_
+5	þetta	þessi	DET	D-N	Case=Nom	8	det	_	_
+6	annars	annar	PRON	OTHER-G	Case=Gen	7	obl	_	_
+7	fína	fínn	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
+8	framtak	framtak	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
+9	geri	gera	VERB	DOPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
+10	einhvern	einhver	DET	Q-A	Case=Acc	11	amod	_	_
+11	usla	usli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
+12	í	í	ADP	P	_	14	case	_	_
+13	þeim	sá	DET	D-D	Case=Dat	14	det	_	_
+14	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	3	punct	_	_
+
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -123,6 +132,6 @@
 6	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	7	amod	_	_
 7	þingmanns	þingmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
 8	við	við	ADP	P	_	9	case	_	_
-9	því	það	PRON	PRO-D	Case=Dat	2	obl	_	SpaceAfter=No
+9	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 10	.	.	PUNCT	.	_	2	punct	_	_
 

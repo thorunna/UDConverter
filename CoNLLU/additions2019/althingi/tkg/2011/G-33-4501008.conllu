@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.1
-# X_IDs = ID_missing_1 ; ID_missing_2 ; ID_missing_3
-# text = Frú forseti. Ég er sammála hv. þingmanni, stjórnarskráin verður að vera þannig að hún geti tekið á móti nýjum straumum o.s.frv. En hún má ekki vera tískuplagg.
+# sent_id = G-33-4501008,.1
+# X_ID = ID_MISSING
+# text = Frú forseti . Ég er sammála hv. þingmanni,
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -9,34 +9,42 @@
 6	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 7	hv.	háttvirtur	ADJ	ADJ-D	Case=Dat|Degree=Pos	8	amod	_	_
 8	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	8	punct	_	_
-10	stjórnarskráin	stjórnarskrá	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
-11	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
-12	að	að	PART	TO	_	13	mark	_	_
-13	vera	vera	AUX	BE	VerbForm=Inf	11	xcomp	_	_
-14	þannig	þannig	ADV	ADV	Degree=Pos	13	advmod	_	_
-15	að	að	SCONJ	C	_	18	mark	_	_
-16	hún	hún	PRON	PRO-N	Case=Nom	18	nsubj	_	_
-17	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	18	aux	_	_
-18	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	14	advcl	_	_
-19	á	á	ADP	P	_	20	case	_	_
-20	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
-21	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	22	amod	_	_
-22	straumum	straumur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	20	nmod:poss	_	_
-23	o.	og	CCONJ	CONJ	_	24	cc	_	SpaceAfter=No
-24	s.	svo	ADV	ADV	Degree=Pos	18	conj	_	SpaceAfter=No
-25	frv.	framvegis	ADV	ADV	Degree=Pos	24	advmod	_	_
-26	En	en	CCONJ	CONJ	_	31	cc	_	_
-27	hún	hún	PRON	PRO-N	Case=Nom	31	nsubj	_	_
-28	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	31	aux	_	_
-29	ekki	ekki	ADV	NEG	_	31	advmod	_	_
-30	vera	vera	AUX	BE	VerbForm=Inf	31	cop	_	_
-31	tískuplagg	tískuplaggur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	OriginalHead=0|SpaceAfter=No
-32	.	.	PUNCT	.	_	6	punct	_	_
+9	,	,	PUNCT	,	_	6	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.2
-# X_ID = ID_missing_4
-# text = Þetta er sígilt plagg sem verður, að mínu mati, að standast tímans tönn.
+# sent_id = G-33-4501008,.2
+# X_ID = ID_MISSING
+# text = stjórnarskráin verður að vera þannig að hún geti tekið á móti nýjum straumum o.s.frv.
+1	stjórnarskráin	stjórnarskrá	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	að	að	PART	TO	_	4	mark	_	_
+4	vera	vera	AUX	BE	VerbForm=Inf	2	xcomp	_	_
+5	þannig	þannig	ADV	ADV	Degree=Pos	4	advmod	_	_
+6	að	að	SCONJ	C	_	9	mark	_	_
+7	hún	hún	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+8	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	9	aux	_	_
+9	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	5	advcl	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+12	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	amod	_	_
+13	straumum	straumur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	nmod:poss	_	_
+14	o.	og	CCONJ	CONJ	_	15	cc	_	SpaceAfter=No
+15	s.	svo	ADV	ADV	Degree=Pos	9	conj	_	SpaceAfter=No
+16	frv.	framvegis	ADV	ADV	Degree=Pos	15	advmod	_	_
+
+# sent_id = G-33-4501008,.3
+# X_ID = ID_MISSING
+# text = En hún má ekki vera tískuplagg .
+1	En	en	CCONJ	CONJ	_	6	cc	_	_
+2	hún	hún	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
+4	ekki	ekki	ADV	NEG	_	6	advmod	_	_
+5	vera	vera	AUX	BE	VerbForm=Inf	6	cop	_	_
+6	tískuplagg	tískuplaggur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-33-4501008,.4
+# X_ID = ID_MISSING
+# text = Þetta er sígilt plagg sem verður, að mínu mati, að standast tímans tönn .
 1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	sígilt	sígildur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -54,9 +62,9 @@
 15	tönn	tönn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.3
-# X_ID = ID_missing_5
-# text = Þess vegna verðum við að vanda okkur við það verk að breyta henni.
+# sent_id = G-33-4501008,.5
+# X_ID = ID_MISSING
+# text = Þess vegna verðum við að vanda okkur við það verk að breyta henni .
 1	Þess	það	PRON	PRO-G	Case=Gen	3	obl	_	_
 2	vegna	vegna	ADP	P	_	1	case	_	_
 3	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -72,9 +80,9 @@
 13	henni	hún	PRON	PRO-D	Case=Dat	12	obj	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.4
-# X_ID = ID_missing_6
-# text = Hvað ef þessi tillaga nær ekki fram að ganga?
+# sent_id = G-33-4501008,.6
+# X_ID = ID_MISSING
+# text = Hvað ef þessi tillaga nær ekki fram að ganga ?
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	0	root	_	_
 2	ef	ef	ADP	P	_	5	case	_	_
 3	þessi	þessi	DET	D-N	Case=Nom	4	det	_	_
@@ -86,9 +94,9 @@
 9	ganga	ganga	VERB	VB	VerbForm=Inf	5	xcomp	_	SpaceAfter=No
 10	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.5
-# X_ID = ID_missing_7
-# text = Það getur vel verið að hún geri það ekki.
+# sent_id = G-33-4501008,.7
+# X_ID = ID_MISSING
+# text = Það getur vel verið að hún geri það ekki .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	getur	geta	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vel	vel	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -100,9 +108,9 @@
 9	ekki	ekki	ADV	NEG	_	7	advmod	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.6
-# X_ID = ID_missing_8
-# text = Þá hvílir mikil ábyrgð á okkur sem höfum talað um að við viljum breytingar að sýna fram á að hægt sé að fara aðra leið.
+# sent_id = G-33-4501008,.8
+# X_ID = ID_MISSING
+# text = Þá hvílir mikil ábyrgð á okkur sem höfum talað um að við viljum breytingar að sýna fram á að hægt sé að fara aðra leið .
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	hvílir	hvíla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mikil	mikill	DET	Q-N	Case=Nom	4	amod	_	_
@@ -130,9 +138,9 @@
 25	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.7
-# X_ID = ID_missing_9
-# text = Þær leiðir höfum við sjálfstæðismenn meðal annars dregið fram.
+# sent_id = G-33-4501008,.9
+# X_ID = ID_MISSING
+# text = Þær leiðir höfum við sjálfstæðismenn meðal annars dregið fram .
 1	Þær	sá	DET	D-A	Case=Acc	2	det	_	_
 2	leiðir	leið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obj	_	_
 3	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	8	aux	_	_
@@ -144,9 +152,9 @@
 9	fram	fram	ADP	RP	_	8	compound:prt	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.8
-# X_ID = ID_missing_10
-# text = Það er til svo mikið af gögnum, eins og við höfum bent á, ekki bara frá þjóðfundinum og ekki bara frá stjórnlaganefndinni heldur líka frá stjórnarskrárnefndinni sem Jón Kristjánsson leiddi á sínum tíma.
+# sent_id = G-33-4501008,.10
+# X_ID = ID_MISSING
+# text = Það er til svo mikið af gögnum, eins og við höfum bent á, ekki bara frá þjóðfundinum og ekki bara frá stjórnlaganefndinni heldur líka frá stjórnarskrárnefndinni sem Jón Kristjánsson leiddi á sínum tíma .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	til	til	ADP	RP	_	0	root	_	_
@@ -184,9 +192,9 @@
 35	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.9
-# X_IDs = ID_missing_11 ; ID_missing_12
-# text = Það er gríðarlega mikið magn til af efni og það er gríðarlegur vilji til að breyta.
+# sent_id = G-33-4501008,.11
+# X_ID = ID_MISSING
+# text = Það er gríðarlega mikið magn til af efni
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	6	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	gríðarlega	gríðarlega	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -195,19 +203,23 @@
 6	til	til	ADP	RP	_	0	root	_	_
 7	af	af	ADP	P	_	8	case	_	_
 8	efni	efni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
-9	og	og	CCONJ	CONJ	_	13	cc	_	_
-10	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	13	expl	_	_
-11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-12	gríðarlegur	gríðarlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
-13	vilji	vilji	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	OriginalHead=0
-14	til	til	ADP	P	_	16	case	_	_
-15	að	að	PART	TO	_	16	mark	_	_
-16	breyta	breyta	VERB	VB	VerbForm=Inf	13	obl	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.10
-# X_ID = ID_missing_13
-# text = Þá verða menn einfaldlega að grípa þann bolta ef þetta fellur, og við skulum vona að þetta falli, og fara frekar í þann farveg sem mér finnst heppilegri og ýmsum öðrum, sem er þessi hefðbundni stjórnarskrárbundni farvegur miðað við daginn í dag, það er að allir flokkar setjist niður og noti þann vilja og kraft og þá þekkingu og þær upplýsingar sem til staðar eru til að breyta stjórnarskránni.
+# sent_id = G-33-4501008,.12
+# X_ID = ID_MISSING
+# text = og það er gríðarlegur vilji til að breyta .
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	gríðarlegur	gríðarlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
+5	vilji	vilji	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+6	til	til	ADP	P	_	8	case	_	_
+7	að	að	PART	TO	_	8	mark	_	_
+8	breyta	breyta	VERB	VB	VerbForm=Inf	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4501008,.13
+# X_ID = ID_MISSING
+# text = Þá verða menn einfaldlega að grípa þann bolta ef þetta fellur, og við skulum vona að þetta falli, og fara frekar í þann farveg sem mér finnst heppilegri og ýmsum öðrum, sem er þessi hefðbundni stjórnarskrárbundni farvegur miðað við daginn í dag, það er að allir flokkar setjist niður og noti þann vilja og kraft og þá þekkingu og þær upplýsingar sem til staðar eru til að breyta stjórnarskránni .
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
@@ -283,9 +295,9 @@
 73	stjórnarskránni	stjórnarskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	72	obj	_	SpaceAfter=No
 74	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.11
-# X_ID = ID_missing_14
-# text = Við þurfum þá að hafa hraðar hendur því eins og hv. þingmaður veit viljum við bæði kosningar sem allra fyrst.
+# sent_id = G-33-4501008,.14
+# X_ID = ID_MISSING
+# text = Við þurfum þá að hafa hraðar hendur því eins og hv. þingmaður veit viljum við bæði kosningar sem allra fyrst .
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -308,9 +320,9 @@
 20	fyrst	snemma	ADV	ADVS	Degree=Sup	14	advmod	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.12
-# X_ID = ID_missing_15
-# text = Nýtum þá tímann fram að næstu þingkosningum, sem verða vonandi fyrr en síðar.
+# sent_id = G-33-4501008,.15
+# X_ID = ID_MISSING
+# text = Nýtum þá tímann fram að næstu þingkosningum, sem verða vonandi fyrr en síðar .
 1	Nýtum	nýta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	þá	þá	ADV	ADV	Degree=Pos	1	advmod	_	_
 3	tímann	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
@@ -327,9 +339,9 @@
 14	síðar	síðar	ADV	ADVR	Degree=Cmp	12	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4501008,.13
-# X_IDs = ID_missing_16 ; ID_missing_17
-# text = Þá getum við kosið um nýja stjórnarskrá og þá verðum við kannski komin með nýja stjórnarskrá innan árs.
+# sent_id = G-33-4501008,.16
+# X_ID = ID_MISSING
+# text = Þá getum við kosið um nýja stjórnarskrá
 1	Þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -337,16 +349,17 @@
 5	um	um	ADP	P	_	7	case	_	_
 6	nýja	nýr	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
 7	stjórnarskrá	stjórnarskrá	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
-8	og	og	CCONJ	CONJ	_	10	cc	_	_
-9	þá	þá	ADV	ADV	Degree=Pos	10	advmod	_	_
-10	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-11	við	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-12	kannski	kannski	ADV	ADV	Degree=Pos	10	advmod	_	_
-13	komin	koma	VERB	VBN	Tense=Past|VerbForm=Part	10	dep	_	_
-14	með	með	ADP	P	_	16	case	_	_
-15	nýja	nýr	ADJ	ADJ-A	Case=Acc|Degree=Pos	16	amod	_	_
-16	stjórnarskrá	stjórnarskrá	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
-17	innan	innan	ADP	P	_	18	case	_	_
-18	árs	ár	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	4	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+5	kannski	kannski	ADV	ADV	Degree=Pos	3	advmod	_	_
+6	komin	koma	VERB	VBN	Tense=Past|VerbForm=Part	3	dep	_	_
+7	með	með	ADP	P	_	9	case	_	_
+8	nýja	nýr	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
+9	stjórnarskrá	stjórnarskrá	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
+10	innan	innan	ADP	P	_	11	case	_	_
+11	árs	ár	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	obl	_	_
+12	.	.	PUNCT	.	_	3	punct	_	_
 

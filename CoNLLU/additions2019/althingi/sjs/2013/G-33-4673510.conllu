@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4673510,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Herra forseti. Ég þakka þeim hv. þingmönnum sem tekið hafa þátt í umræðum og skal reyna að svara spurningum hv. síðasta ræðumanns.
+# sent_id = G-33-4673510,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Ég þakka þeim hv. þingmönnum sem tekið hafa þátt í umræðum
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -15,20 +15,24 @@
 12	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
 13	í	í	ADP	P	_	14	case	_	_
 14	umræðum	umræða	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	_
-15	og	og	CCONJ	CONJ	_	17	cc	_	_
-16	skal	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	17	aux	_	_
-17	reyna	reyna	VERB	VB	VerbForm=Inf	5	conj	_	OriginalHead=0
-18	að	að	PART	TO	_	19	mark	_	_
-19	svara	svara	VERB	VB	VerbForm=Inf	17	xcomp	_	_
-20	spurningum	spurning	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obj	_	_
-21	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	23	amod	_	_
-22	síðasta	síðari	ADJ	ADJS-G	Case=Gen|Degree=Sup	23	amod	_	_
-23	ræðumanns	ræðumaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4673510,.2
-# X_ID = ID_missing_3
-# text = Varðandi frekari rannsóknir eða greiningu á þessum hópi get ég ekki sagt að það liggi fyrir mjög skýr mynd af því hvernig hann er nákvæmlega samansettur.
+# sent_id = G-33-4673510,.2
+# X_ID = ID_MISSING
+# text = og skal reyna að svara spurningum hv. síðasta ræðumanns .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	skal	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
+3	reyna	reyna	VERB	VB	VerbForm=Inf	0	root	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	svara	svara	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	spurningum	spurning	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obj	_	_
+7	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	9	amod	_	_
+8	síðasta	síðari	ADJ	ADJS-G	Case=Gen|Degree=Sup	9	amod	_	_
+9	ræðumanns	ræðumaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	nmod:poss	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4673510,.3
+# X_ID = ID_MISSING
+# text = Varðandi frekari rannsóknir eða greiningu á þessum hópi get ég ekki sagt að það liggi fyrir mjög skýr mynd af því hvernig hann er nákvæmlega samansettur .
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	12	advcl	_	_
 2	frekari	frekur	ADJ	ADJR-A	Case=Acc|Degree=Cmp	3	amod	_	_
 3	rannsóknir	rannsókn	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obj	_	_
@@ -57,9 +61,9 @@
 26	samansettur	samansettur	ADJ	ADJ-N	Case=Nom|Degree=Pos	21	ccomp	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4673510,.3
-# X_ID = ID_missing_4
-# text = Það sem er hægt að draga í sundur er hver hluti lánanna var til að fjármagna íbúðakaup.
+# sent_id = G-33-4673510,.4
+# X_ID = ID_MISSING
+# text = Það sem er hægt að draga í sundur er hver hluti lánanna var til að fjármagna íbúðakaup .
 1	Það	sá	DET	D-N	Case=Nom	16	nsubj	_	_
 2	sem	sem	SCONJ	C	_	6	mark	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
@@ -79,9 +83,9 @@
 17	íbúðakaup	íbúðakaup	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obj	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	16	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4673510,.4
-# X_ID = ID_missing_5
-# text = Það er einfaldlega gert á þeim grunni, geri ég ráð fyrir, að það eru lán sem stofna rétt til vaxtabóta.
+# sent_id = G-33-4673510,.5
+# X_ID = ID_MISSING
+# text = Það er einfaldlega gert á þeim grunni, geri ég ráð fyrir, að það eru lán sem stofna rétt til vaxtabóta .
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -106,9 +110,9 @@
 22	vaxtabóta	vaxtabætur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	20	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4673510,.5
-# X_ID = ID_missing_6
-# text = Það eru gögn frá skattinum sem hægt er að nota til að aðgreina þann hluta lánanna frá hinum, því þarna eru menn að nýta sér lántökurétt sinn hjá lífeyrissjóðum og þeir verða sér út um veð jafnvel þó að lánið sé notað til bílakaupa eða einhverra annarra hluta.
+# sent_id = G-33-4673510,.6
+# X_ID = ID_MISSING
+# text = Það eru gögn frá skattinum sem hægt er að nota til að aðgreina þann hluta lánanna frá hinum, því þarna eru menn að nýta sér lántökurétt sinn hjá lífeyrissjóðum og þeir verða sér út um veð jafnvel þó að lánið sé notað til bílakaupa eða einhverra annarra hluta .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	gögn	gagn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
@@ -160,9 +164,9 @@
 49	hluta	hlutur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	45	conj	_	SpaceAfter=No
 50	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4673510,.6
-# X_ID = ID_missing_7
-# text = Í þeim tilvikum sem íbúðakaup hafa farið fram innan tilskilinna tímamarka sem skilgreind eru í lögum og gilda um það hvaða lán stofna rétt til greiðslu vaxtabóta, flokkast þau þar með.
+# sent_id = G-33-4673510,.7
+# X_ID = ID_MISSING
+# text = Í þeim tilvikum sem íbúðakaup hafa farið fram innan tilskilinna tímamarka sem skilgreind eru í lögum og gilda um það hvaða lán stofna rétt til greiðslu vaxtabóta, flokkast þau þar með .
 1	Í	í	ADP	P	_	3	case	_	_
 2	þeim	sá	DET	D-D	Case=Dat	3	det	_	_
 3	tilvikum	tilvik	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	29	obl	_	_
@@ -197,9 +201,9 @@
 32	með	með	ADP	P	_	31	case	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	29	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4673510,.7
-# X_ID = ID_missing_8
-# text = Það er eins og þarna kemur fram tæp 60<percent/> lánanna sem fóru í slíkt.
+# sent_id = G-33-4673510,.8
+# X_ID = ID_MISSING
+# text = Það er eins og þarna kemur fram tæp 60<percent/> lánanna sem fóru í slíkt .
 1	Það	það	PRON	PRO-N	Case=Nom	10	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
 3	eins	_	ADV	ADVR	Degree=Cmp	10	advmod	_	_
@@ -217,9 +221,9 @@
 15	slíkt	slíkur	PRON	SUCH-A	Case=Acc	13	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4673510,.8
-# X_ID = ID_missing_9
-# text = Það sem hins vegar liggur nokkuð ljóst fyrir er að hér er yfirleitt um yngra fólk að ræða.
+# sent_id = G-33-4673510,.9
+# X_ID = ID_MISSING
+# text = Það sem hins vegar liggur nokkuð ljóst fyrir er að hér er yfirleitt um yngra fólk að ræða .
 1	Það	sá	DET	D-N	Case=Nom	0	root	_	_
 2	sem	sem	SCONJ	C	_	5	mark	_	_
 3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
@@ -240,9 +244,9 @@
 18	ræða	ræða	VERB	VB	VerbForm=Inf	17	amod	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4673510,.9
-# X_ID = ID_missing_10
-# text = Hér er hlutfall fyrstu íbúðakaupa hátt.
+# sent_id = G-33-4673510,.10
+# X_ID = ID_MISSING
+# text = Hér er hlutfall fyrstu íbúðakaupa hátt .
 1	Hér	hér	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	hlutfall	hlutfall	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
@@ -251,9 +255,6 @@
 6	hátt	hár	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4673510,.10
-# X_ID = ID_missing_11
-# text = Það er hægt að fullyrða held ég með nokkuð óyggjandi vissu að það á við um hópinn að hann er almennt ungur og það er almennt hærra hlutfall fyrstu íbúðakaupa heldur en á við á lánamarkaðnum eða fasteignamarkaðnum almennt.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -292,6 +293,6 @@
 36	lánamarkaðnum	lánamarkaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	33	obl	_	_
 37	eða	eða	CCONJ	CONJ	_	38	cc	_	_
 38	fasteignamarkaðnum	fasteignamarkaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	36	conj	_	_
-39	almennt	almennt	ADV	ADV	Degree=Pos	33	advmod	_	SpaceAfter=No
+39	almennt	almennt	ADV	ADV	Degree=Pos	33	advmod	_	_
 40	.	.	PUNCT	.	_	3	punct	_	_
 

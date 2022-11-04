@@ -1,6 +1,6 @@
-# sent_id = RUV_TGS_2016_G-2-1032743.SANITY,.1
-# X_ID = ID_missing_1
-# text = Axel Stefánsson sem ráðinn var landsliðsþjálfari Íslands í handbolta fyrr í sumar hefur valið sinn fyrsta landsliðshóp.
+# sent_id = G-2-1032743.SANITY,.1
+# X_ID = ID_MISSING
+# text = Axel Stefánsson sem ráðinn var landsliðsþjálfari Íslands í handbolta fyrr í sumar hefur valið sinn fyrsta landsliðshóp .
 1	Axel	axel	PROPN	NPR-N	_	14	nsubj	_	_
 2	Stefánsson	stefánsson	PROPN	NPR-N	_	1	flat:name	_	_
 3	sem	sem	SCONJ	C	_	4	mark	_	_
@@ -20,9 +20,9 @@
 17	landsliðshóp	landsliðshópur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	14	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032743.SANITY,.2
-# X_ID = ID_missing_2
-# text = Hópurinn mun koma saman í Reykjavík 7. ágúst og æfa til 12. ágúst.
+# sent_id = G-2-1032743.SANITY,.2
+# X_ID = ID_MISSING
+# text = Hópurinn mun koma saman í Reykjavík 7. ágúst og æfa til 12. ágúst .
 1	Hópurinn	hópur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 2	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	koma	koma	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -38,9 +38,9 @@
 13	ágúst	ágúst	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032743.SANITY,.3
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Íslenska landsliðið undirbýr sig nú fyrir undankeppni HM 2017, en Ísland leikur í undankeppni HM í lok árs.
+# sent_id = G-2-1032743.SANITY,.3
+# X_ID = ID_MISSING
+# text = Íslenska landsliðið undirbýr sig nú fyrir undankeppni HM 2017,
 1	Íslenska	íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	landsliðið	landslið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	undirbýr	undirbúa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -51,20 +51,24 @@
 8	HM	hm	PROPN	NPR-G	_	7	nmod:poss	_	_
 9	2017	2017	NUM	NUM-A	Case=Acc	8	obl	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	3	punct	_	_
-11	en	en	CCONJ	CONJ	_	13	cc	_	_
-12	Ísland	ísland	PROPN	NPR-N	_	13	nsubj	_	_
-13	leikur	leika	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-14	í	í	ADP	P	_	15	case	_	_
-15	undankeppni	undankeppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
-16	HM	hm	PROPN	NPR-G	_	15	nmod:poss	_	_
-17	í	í	ADP	P	_	18	case	_	_
-18	lok	lok	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obl	_	_
-19	árs	ár	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032743.SANITY,.4
-# X_IDs = ID_missing_5 ; ID_missing_6
-# text = Axel verður með 18 leikmenn á æfingunum, en sjö leikmenn gátu ekki gefið kost á sér vegna meiðsla, eða annarra verkefna.
+# sent_id = G-2-1032743.SANITY,.4
+# X_ID = ID_MISSING
+# text = en Ísland leikur í undankeppni HM í lok árs .
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	Ísland	ísland	PROPN	NPR-N	_	3	nsubj	_	_
+3	leikur	leika	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	í	í	ADP	P	_	5	case	_	_
+5	undankeppni	undankeppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+6	HM	hm	PROPN	NPR-G	_	5	nmod:poss	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	lok	lok	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obl	_	_
+9	árs	ár	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	nmod:poss	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-2-1032743.SANITY,.5
+# X_ID = ID_MISSING
+# text = Axel verður með 18 leikmenn á æfingunum,
 1	Axel	axel	PROPN	NPR-N	_	2	nsubj	_	_
 2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	með	með	ADP	P	_	5	case	_	_
@@ -73,26 +77,30 @@
 6	á	á	ADP	P	_	7	case	_	_
 7	æfingunum	æfing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	2	punct	_	_
-9	en	en	CCONJ	CONJ	_	14	cc	_	_
-10	sjö	sjö	NUM	NUM-N	Case=Nom	11	nummod	_	_
-11	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	14	nsubj	_	_
-12	gátu	geta	AUX	MDDI	Mood=Ind|Tense=Past	14	aux	_	_
-13	ekki	ekki	ADV	NEG	_	14	advmod	_	_
-14	gefið	gefa	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-15	kost	kostur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
-16	á	á	ADP	P	_	17	case	_	_
-17	sér	sig	PRON	PRO-D	Case=Dat	15	obl	_	_
-18	vegna	vegna	ADP	P	_	19	case	_	_
-19	meiðsla	meiðsli	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	19	punct	_	_
-21	eða	eða	CCONJ	CONJ	_	23	cc	_	_
-22	annarra	annar	PRON	OTHER-G	Case=Gen	23	det	_	_
-23	verkefna	verkefni	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	conj	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_TGS_2016_G-2-1032743.SANITY,.5
-# X_ID = ID_missing_7
-# text = Þeir leikmenn sem eru forfallaðir eru Birna Berg Haraldsdóttir, Hildigunnur Einarsdóttir, Hildur Þorgeirsdóttir, Ramune Pekarskyte, Ragnheiður Júlíusdóttir, Rut Jónsdóttir og Þórey Rósa Stefánsdóttir.
+# sent_id = G-2-1032743.SANITY,.6
+# X_ID = ID_MISSING
+# text = en sjö leikmenn gátu ekki gefið kost á sér vegna meiðsla, eða annarra verkefna .
+1	en	en	CCONJ	CONJ	_	6	cc	_	_
+2	sjö	sjö	NUM	NUM-N	Case=Nom	3	nummod	_	_
+3	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
+4	gátu	geta	AUX	MDDI	Mood=Ind|Tense=Past	6	aux	_	_
+5	ekki	ekki	ADV	NEG	_	6	advmod	_	_
+6	gefið	gefa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	kost	kostur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+8	á	á	ADP	P	_	9	case	_	_
+9	sér	sig	PRON	PRO-D	Case=Dat	7	obl	_	_
+10	vegna	vegna	ADP	P	_	11	case	_	_
+11	meiðsla	meiðsli	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	eða	eða	CCONJ	CONJ	_	15	cc	_	_
+14	annarra	annar	PRON	OTHER-G	Case=Gen	15	det	_	_
+15	verkefna	verkefni	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	conj	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-2-1032743.SANITY,.7
+# X_ID = ID_MISSING
+# text = Þeir leikmenn sem eru forfallaðir eru Birna Berg Haraldsdóttir, Hildigunnur Einarsdóttir, Hildur Þorgeirsdóttir, Ramune Pekarskyte, Ragnheiður Júlíusdóttir, Rut Jónsdóttir og Þórey Rósa Stefánsdóttir .
 1	Þeir	sá	DET	D-N	Case=Nom	2	det	_	_
 2	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	nsubj	_	_
 3	sem	sem	SCONJ	C	_	5	mark	_	_
@@ -122,4 +130,292 @@
 27	Rósa	rósa	PROPN	NPR-N	_	26	flat:name	_	_
 28	Stefánsdóttir	stefánsdóttir	PROPN	NPR-N	_	26	dep	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = G-2-1032743.SANITY,.8
+# X_ID = ID_MISSING
+# text = Markmenn
+1	Markmenn	markmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
+
+# sent_id = G-2-1032743.SANITY,.9
+# X_ID = ID_MISSING
+# text = Elín Jóna Þorsteinsdóttir, Grótta 6 /
+1	Elín	elín	PROPN	NPR-N	_	0	root	_	_
+2	Jóna	jóna	PROPN	NPR-N	_	1	flat:name	_	_
+3	Þorsteinsdóttir	þorsteinsdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Grótta	grótta	PROPN	NPR-N	_	1	obl	_	_
+6	6	sex	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+7	/	/	PUNCT	,	_	8	punct	_	_
+8	None	_	None	None	_	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.10
+# X_ID = ID_MISSING
+# text = Guðrún Ósk Maríasdóttir, Fram 29 / 1
+1	Guðrún	guðrún	PROPN	NPR-N	_	0	root	_	_
+2	Ósk	ósk	PROPN	NPR-N	_	1	flat:name	_	_
+3	Maríasdóttir	maríasdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Fram	fram	PROPN	NPR-N	_	1	obl	_	_
+6	29	29	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+7	/	/	PUNCT	,	_	8	punct	_	_
+8	1	einn	DET	ONE-N	Case=Nom	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.11
+# X_ID = ID_MISSING
+# text = Katrín Ósk Magnúsdóttir, Selfoss /
+1	Katrín	katrín	PROPN	NPR-N	_	0	root	_	_
+2	Ósk	ósk	PROPN	NPR-N	_	1	flat:name	_	_
+3	Magnúsdóttir	magnúsdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Selfoss	selfoss	PROPN	NPR-N	_	1	obl	_	SpaceAfter=No
+6	/	/	PUNCT	,	_	7	punct	_	_
+7	None	_	None	None	_	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.12
+# X_ID = ID_MISSING
+# text = Aðrir leikmenn
+1	Aðrir	annar	PRON	OTHER-N	Case=Nom	2	det	_	_
+2	leikmenn	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
+
+# sent_id = G-2-1032743.SANITY,.13
+# X_ID = ID_MISSING
+# text = Anna Úrsúla Guðmundsdóttir, Grótta 101 / 221
+1	Anna	anna	PROPN	NPR-N	_	0	root	_	_
+2	Úrsúla	úrsúla	PROPN	NPR-N	_	1	flat:name	_	_
+3	Guðmundsdóttir	guðmundsdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Grótta	grótta	PROPN	NPR-N	_	1	obl	_	_
+6	101	101	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+7	/	/	PUNCT	,	_	8	punct	_	_
+8	221	221	NUM	NUM-N	Case=Nom	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.14
+# X_ID = ID_MISSING
+# text = Arna Sif Pálsdóttir, Nice 121 / 185
+1	Arna	arna	PROPN	NPR-N	_	0	root	_	_
+2	Sif	sif	PROPN	NPR-N	_	1	flat:name	_	_
+3	Pálsdóttir	pálsdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Nice	nice	PROPN	NPR-N	_	1	obl	_	_
+6	121	121	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+7	/	/	PUNCT	,	_	8	punct	_	_
+8	185	185	NUM	NUM-N	Case=Nom	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.15
+# X_ID = ID_MISSING
+# text = Ester Óskarsdóttir, ÍBV, 5 /
+1	Ester	ester	PROPN	NPR-N	_	0	root	_	_
+2	Óskarsdóttir	óskarsdóttir	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	ÍBV	íbv	PROPN	NPR-N	_	1	obl	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	5	fimm	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+7	/	/	PUNCT	,	_	8	punct	_	_
+8	None	_	None	None	_	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.16
+# X_ID = ID_MISSING
+# text = Hrafnhildur Hanna Þrastardóttir, Selfoss 15 / 34
+1	Hrafnhildur	hrafnhildur	PROPN	NPR-N	_	0	root	_	_
+2	Hanna	hanna	PROPN	NPR-N	_	1	flat:name	_	_
+3	Þrastardóttir	þrastardóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Selfoss	selfoss	PROPN	NPR-N	_	1	obl	_	_
+6	15	fimmtán	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+7	/	/	PUNCT	,	_	8	punct	_	_
+8	34	34	NUM	NUM-N	Case=Nom	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.17
+# X_ID = ID_MISSING
+# text = Hulda Dagsdóttir, /
+1	Hulda	hulda	PROPN	NPR-N	_	0	root	_	_
+2	Dagsdóttir	dagsdóttir	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	SpaceAfter=No
+4	/	/	PUNCT	,	_	5	punct	_	_
+5	None	_	None	None	_	4	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.18
+# X_ID = ID_MISSING
+# text = Íris Ásta Pétursdóttir, Valur 8 / 12
+1	Íris	íris	PROPN	NPR-N	_	0	root	_	_
+2	Ásta	ásta	PROPN	NPR-N	_	1	flat:name	_	_
+3	Pétursdóttir	pétursdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Valur	valur	PROPN	NPR-N	_	1	obl	_	_
+6	8	átta	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+7	/	/	PUNCT	,	_	8	punct	_	_
+8	12	tólf	NUM	NUM-N	Case=Nom	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.19
+# X_ID = ID_MISSING
+# text = Karen Knútsdóttir, Nice 80 / 290
+1	Karen	karen	PROPN	NPR-N	_	0	root	_	_
+2	Knútsdóttir	knútsdóttir	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	Nice	nice	PROPN	NPR-N	_	1	obl	_	_
+5	80	áttatíu	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+6	/	/	PUNCT	,	_	7	punct	_	_
+7	290	290	NUM	NUM-N	Case=Nom	5	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.20
+# X_ID = ID_MISSING
+# text = Kristín Guðmundsdóttir, Valur 47 / 68
+1	Kristín	kristín	PROPN	NPR-N	_	0	root	_	_
+2	Guðmundsdóttir	guðmundsdóttir	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	Valur	valur	PROPN	NPR-N	_	1	obl	_	_
+5	47	47	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+6	/	/	PUNCT	,	_	7	punct	_	_
+7	68	68	NUM	NUM-N	Case=Nom	5	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.21
+# X_ID = ID_MISSING
+# text = Lovísa Thompson, Grótta /
+1	Lovísa	lovísa	PROPN	NPR-N	_	0	root	_	_
+2	Thompson	thompson	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	Grótta	grótta	PROPN	NPR-N	_	1	obl	_	SpaceAfter=No
+5	/	/	PUNCT	,	_	6	punct	_	_
+6	None	_	None	None	_	5	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.22
+# X_ID = ID_MISSING
+# text = Steinunn Björnsdóttir, Fram 19 / 1
+1	Steinunn	steinunn	PROPN	NPR-N	_	0	root	_	_
+2	Björnsdóttir	björnsdóttir	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	Fram	fram	ADV	ADV	Degree=Pos	1	obl	_	_
+5	19	nítján	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+6	/	/	PUNCT	,	_	7	punct	_	_
+7	1	einn	DET	ONE-N	Case=Nom	5	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.23
+# X_ID = ID_MISSING
+# text = Steinunn Hansdóttir, Skandeborg 17 / 25
+1	Steinunn	steinunn	PROPN	NPR-N	_	0	root	_	_
+2	Hansdóttir	hansdóttir	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	Skandeborg	skandeborg	PROPN	NPR-N	_	1	obl	_	_
+5	17	sautján	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+6	/	/	PUNCT	,	_	7	punct	_	_
+7	25	25	NUM	NUM-N	Case=Nom	5	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.24
+# X_ID = ID_MISSING
+# text = Sunna Jónsdóttir, Halden HK 51 / 36
+1	Sunna	sunna	PROPN	NPR-N	_	0	root	_	_
+2	Jónsdóttir	jónsdóttir	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	Halden	halden	PROPN	NPR-N	_	1	obl	_	_
+5	HK	hk	PROPN	NPR-N	_	4	flat:name	_	_
+6	51	51	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+7	/	/	PUNCT	,	_	8	punct	_	_
+8	36	36	NUM	NUM-N	Case=Nom	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.25
+# X_ID = ID_MISSING
+# text = Thea Imani Sturludóttir, Fylkir 7 / 8
+1	Thea	thea	PROPN	NPR-N	_	0	root	_	_
+2	Imani	imani	PROPN	NPR-N	_	1	flat:name	_	_
+3	Sturludóttir	sturludóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Fylkir	fylkir	PROPN	NPR-N	_	1	obl	_	_
+6	7	sjö	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+7	/	/	PUNCT	,	_	8	punct	_	_
+8	8	átta	NUM	NUM-N	Case=Nom	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.26
+# X_ID = ID_MISSING
+# text = Unnur Ómarsdóttir, Grótta 26 / 28
+1	Unnur	unnur	PROPN	NPR-N	_	0	root	_	_
+2	Ómarsdóttir	ómarsdóttir	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	Grótta	grótta	PROPN	NPR-N	_	1	obl	_	_
+5	26	26	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+6	/	/	PUNCT	,	_	7	punct	_	_
+7	28	28	NUM	NUM-N	Case=Nom	5	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.27
+# X_ID = ID_MISSING
+# text = Þórey Anna Ásgeirsdóttir, Grótta 16 / 10
+1	Þórey	þórey	PROPN	NPR-N	_	0	root	_	_
+2	Anna	anna	PROPN	NPR-N	_	1	flat:name	_	_
+3	Ásgeirsdóttir	ásgeirsdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Grótta	grótta	PROPN	NPR-N	_	1	obl	_	_
+6	16	sextán	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+7	/	/	PUNCT	,	_	8	punct	_	_
+8	10	tíu	NUM	NUM-N	Case=Nom	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.28
+# X_ID = ID_MISSING
+# text = Til vara ef forföll koma upp
+1	Til	til	ADP	P	_	2	case	_	_
+2	vara	vari	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	0	root	_	_
+3	ef	ef	ADP	P	_	5	case	_	_
+4	forföll	forföll	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
+5	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	2	obl	_	_
+6	upp	upp	ADP	RP	_	5	compound:prt	_	_
+
+# sent_id = G-2-1032743.SANITY,.29
+# X_ID = ID_MISSING
+# text = Andrea Jacobsen, Fjölnir /
+1	Andrea	andrea	PROPN	NPR-N	_	0	root	_	_
+2	Jacobsen	jacobsen	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	Fjölnir	fjölnir	PROPN	NPR-N	_	1	obl	_	SpaceAfter=No
+5	/	/	PUNCT	,	_	6	punct	_	_
+6	None	_	None	None	_	5	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.30
+# X_ID = ID_MISSING
+# text = Díana Dögg Magnúsdóttir, Valur /
+1	Díana	díana	PROPN	NPR-N	_	0	root	_	_
+2	Dögg	dögg	PROPN	NPR-N	_	1	flat:name	_	_
+3	Magnúsdóttir	magnúsdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Valur	valur	PROPN	NPR-N	_	1	obl	_	SpaceAfter=No
+6	/	/	PUNCT	,	_	7	punct	_	_
+7	None	_	None	None	_	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.31
+# X_ID = ID_MISSING
+# text = Erla Rós Sigmarsdóttir, ÍBV /
+1	Erla	erla	PROPN	NPR-N	_	0	root	_	_
+2	Rós	rós	PROPN	NPR-N	_	1	flat:name	_	_
+3	Sigmarsdóttir	sigmarsdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	ÍBV	íbv	PROPN	NPR-N	_	1	obl	_	SpaceAfter=No
+6	/	/	PUNCT	,	_	7	punct	_	_
+7	None	_	None	None	_	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.32
+# X_ID = ID_MISSING
+# text = Jóna Sigríður Halldórsdóttir, Haukar 2 / 1
+1	Jóna	jóna	PROPN	NPR-N	_	0	root	_	_
+2	Sigríður	sigríður	PROPN	NPR-N	_	1	flat:name	_	_
+3	Halldórsdóttir	halldórsdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Haukar	haukar	PROPN	NPRS-N	_	1	obl	_	_
+6	2	tveir	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+7	/	/	PUNCT	,	_	8	punct	_	_
+8	1	einn	DET	ONE-N	Case=Nom	6	conj	_	_
+
+# sent_id = G-2-1032743.SANITY,.33
+# X_ID = ID_MISSING
+# text = Karólína Bæhrenz, ÍBV 21 / 13
+1	Karólína	karólína	PROPN	NPR-N	_	0	root	_	_
+2	Bæhrenz	bæhrenz	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	ÍBV	íbv	PROPN	NPR-N	_	1	obl	_	_
+5	21	21	NUM	NUM-N	Case=Nom	1	obl	_	SpaceAfter=No
+6	/	/	PUNCT	,	_	7	punct	_	_
+7	13	þrettán	NUM	NUM-N	Case=Nom	5	conj	_	_
+
+1	Sandra	sandra	PROPN	NPR-N	_	0	root	_	_
+2	Erlingsdóttir	erlingsdóttir	PROPN	NPR-N	_	1	flat:name	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	ÍBV	íbv	PROPN	NPR-N	_	1	obl	_	_
+5	/	/	PUNCT	,	_	6	punct	_	_
+6	None	_	None	None	_	5	conj	_	_
 

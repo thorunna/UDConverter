@@ -1,6 +1,6 @@
-# sent_id = RUV_ESP_2016_G-2-1033175,.1
-# X_ID = ID_missing_1
-# text = Jón Arnar Magnússon horfði á Ara Braga Kárason slá nítján ára gamalt met sitt í 100 metra hlaupi í sjónvarpinu á laugardag.
+# sent_id = G-2-1033175,.1
+# X_ID = ID_MISSING
+# text = Jón Arnar Magnússon horfði á Ara Braga Kárason slá nítján ára gamalt met sitt í 100 metra hlaupi í sjónvarpinu á laugardag .
 1	Jón	jón	PROPN	NPR-N	_	4	nsubj	_	_
 2	Arnar	arnar	PROPN	NPR-N	_	1	flat:name	_	_
 3	Magnússon	magnússon	PROPN	NPR-N	_	1	dep	_	_
@@ -25,9 +25,9 @@
 22	laugardag	laugardagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.2
-# X_ID = ID_missing_2
-# text = Hann bíður nú eftir því að fleiri af metum sínum verði slegin.
+# sent_id = G-2-1033175,.2
+# X_ID = ID_MISSING
+# text = Hann bíður nú eftir því að fleiri af metum sínum verði slegin .
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	bíður	bíða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -42,9 +42,9 @@
 12	slegin	slá	VERB	VAN	Tense=Past|VerbForm=Part	5	ccomp	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.3
-# X_ID = ID_missing_3
-# text = Spretthörðustu menn landsins mættust á sérstöku hlaupamóti í Kaplakrika í gær til að reyna við met Jóns Arnars, 10,56.
+# sent_id = G-2-1033175,.3
+# X_ID = ID_MISSING
+# text = Spretthörðustu menn landsins mættust á sérstöku hlaupamóti í Kaplakrika í gær til að reyna við met Jóns Arnars, 10,56 .
 1	Spretthörðustu	sprettharður	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	amod	_	_
 2	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 3	landsins	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	nmod:poss	_	_
@@ -67,9 +67,9 @@
 20	10,56	10,56	NUM	NUM-A	Case=Acc	16	appos	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.4
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Svo fór að Ara Braga Kárasyni tókst ætlunarverkið, hann hljóp 100 metrana á 10,52.
+# sent_id = G-2-1033175,.4
+# X_ID = ID_MISSING
+# text = Svo fór að Ara Braga Kárasyni tókst ætlunarverkið,
 1	Svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	að	að	SCONJ	C	_	7	mark	_	_
@@ -79,17 +79,21 @@
 7	tókst	taka	VERB	VBDI	Mood=Ind|Tense=Past	2	advcl	_	_
 8	ætlunarverkið	ætlunarverk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	obj	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	2	punct	_	_
-10	hann	hann	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-11	hljóp	hlaupa	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-12	100	hundrað	NUM	NUM-A	Case=Acc	13	nummod	_	_
-13	metrana	metri	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
-14	á	á	ADP	P	_	15	case	_	_
-15	10,52	10,52	NUM	NUM-D	Case=Dat	11	obl	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.5
-# X_ID = ID_missing_6
-# text = „ Sem betur fer, loksins.
+# sent_id = G-2-1033175,.5
+# X_ID = ID_MISSING
+# text = hann hljóp 100 metrana á 10,52 .
+1	hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	hljóp	hlaupa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	100	hundrað	NUM	NUM-A	Case=Acc	4	nummod	_	_
+4	metrana	metri	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	10,52	10,52	NUM	NUM-D	Case=Dat	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-2-1033175,.6
+# X_ID = ID_MISSING
+# text = „ Sem betur fer, loksins .
 1	„	„	PUNCT	"	_	6	punct	_	_
 2	Sem	sem	SCONJ	C	_	4	mark	_	_
 3	betur	vel	ADV	ADVR	Degree=Cmp	4	advmod	_	_
@@ -98,9 +102,9 @@
 6	loksins	loksins	ADV	ADV	Degree=Pos	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.6
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Ég er búinn að bíða í 19 ár eftir að það færi og loksins fór það,“ voru viðbrögð Jóns Arnars við því að Íslandsmet hans í 100 metra hlaupi væri nú fallið.
+# sent_id = G-2-1033175,.7
+# X_ID = ID_MISSING
+# text = Ég er búinn að bíða í 19 ár eftir að það færi
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	búinn	búa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -113,33 +117,37 @@
 10	að	að	SCONJ	C	_	12	mark	_	_
 11	það	það	PRON	PRO-N	Case=Nom	12	nsubj	_	_
 12	færi	fara	VERB	VBDS	Mood=Sub|Tense=Past	5	obl	_	_
-13	og	og	CCONJ	CONJ	_	15	cc	_	_
-14	loksins	loksins	ADV	ADV	Degree=Pos	15	advmod	_	_
-15	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
-16	það	það	PRON	PRO-N	Case=Nom	15	nsubj	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	16	punct	_	SpaceAfter=No
-18	“	“	PUNCT	"	_	17	punct	_	_
-19	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	20	cop	_	_
-20	viðbrögð	viðbragð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	15	parataxis	_	_
-21	Jóns	jón	PROPN	NPR-G	_	20	nmod:poss	_	_
-22	Arnars	arnar	PROPN	NPR-G	_	21	flat:name	_	_
-23	við	við	ADP	P	_	24	case	_	_
-24	því	það	PRON	PRO-D	Case=Dat	20	obl	_	_
-25	að	að	SCONJ	C	_	34	mark	_	_
-26	Íslandsmet	íslandsmet	PROPN	NPR-N	_	34	nsubj	_	_
-27	hans	hann	PRON	PRO-G	Case=Gen	26	nmod:poss	_	_
-28	í	í	ADP	P	_	31	case	_	_
-29	100	hundrað	NUM	NUM-G	Case=Gen	30	nummod	_	_
-30	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	31	nmod:poss	_	_
-31	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	_
-32	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	34	cop	_	_
-33	nú	nú	ADV	ADV	Degree=Pos	34	advmod	_	_
-34	fallið	falla	VERB	VBN	Tense=Past|VerbForm=Part	24	ccomp	_	SpaceAfter=No
-35	.	.	PUNCT	.	_	15	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.7
-# X_IDs = ID_missing_9 ; ID_missing_10
-# text = Jón Arnar sá metið slegið í sjónvarpsfréttum en hefði viljað vera á staðnum til að fagna með nýjum methafa.
+# sent_id = G-2-1033175,.8
+# X_ID = ID_MISSING
+# text = og loksins fór það, “ voru viðbrögð Jóns Arnars við því að Íslandsmet hans í 100 metra hlaupi væri nú fallið .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	loksins	loksins	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	SpaceAfter=No
+6	“	“	PUNCT	"	_	5	punct	_	_
+7	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	8	cop	_	_
+8	viðbrögð	viðbragð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	parataxis	_	_
+9	Jóns	jón	PROPN	NPR-G	_	8	nmod:poss	_	_
+10	Arnars	arnar	PROPN	NPR-G	_	9	flat:name	_	_
+11	við	við	ADP	P	_	12	case	_	_
+12	því	það	PRON	PRO-D	Case=Dat	8	obl	_	_
+13	að	að	SCONJ	C	_	22	mark	_	_
+14	Íslandsmet	íslandsmet	PROPN	NPR-N	_	22	nsubj	_	_
+15	hans	hann	PRON	PRO-G	Case=Gen	14	nmod:poss	_	_
+16	í	í	ADP	P	_	19	case	_	_
+17	100	hundrað	NUM	NUM-G	Case=Gen	18	nummod	_	_
+18	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	nmod:poss	_	_
+19	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
+20	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	22	cop	_	_
+21	nú	nú	ADV	ADV	Degree=Pos	22	advmod	_	_
+22	fallið	falla	VERB	VBN	Tense=Past|VerbForm=Part	12	ccomp	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-2-1033175,.9
+# X_ID = ID_MISSING
+# text = Jón Arnar sá metið slegið í sjónvarpsfréttum
 1	Jón	jón	PROPN	NPR-N	_	3	nsubj	_	_
 2	Arnar	arnar	PROPN	NPR-N	_	1	flat:name	_	_
 3	sá	sjá	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -147,23 +155,27 @@
 5	slegið	slá	VERB	VAN	Tense=Past|VerbForm=Part	3	ccomp	_	_
 6	í	í	ADP	P	_	7	case	_	_
 7	sjónvarpsfréttum	sjónvarpsfrétt	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
-8	en	en	CCONJ	CONJ	_	10	cc	_	_
-9	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	10	aux	_	_
-10	viljað	vilja	VERB	MDN	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0
-11	vera	vera	AUX	BE	VerbForm=Inf	10	cop	_	_
-12	á	á	ADP	P	_	13	case	_	_
-13	staðnum	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
-14	til	til	ADP	P	_	16	case	_	_
-15	að	að	PART	TO	_	16	advcl	_	_
-16	fagna	fagna	VERB	VB	VerbForm=Inf	10	obl	_	_
-17	með	með	ADP	P	_	19	case	_	_
-18	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
-19	methafa	methafi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.8
-# X_ID = ID_missing_11
-# text = Hann er ánægður með hlaup Ara Braga í gær.
+# sent_id = G-2-1033175,.10
+# X_ID = ID_MISSING
+# text = en hefði viljað vera á staðnum til að fagna með nýjum methafa .
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	3	aux	_	_
+3	viljað	vilja	VERB	MDN	Tense=Past|VerbForm=Part	0	root	_	_
+4	vera	vera	AUX	BE	VerbForm=Inf	3	cop	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	staðnum	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+7	til	til	ADP	P	_	9	case	_	_
+8	að	að	PART	TO	_	9	advcl	_	_
+9	fagna	fagna	VERB	VB	VerbForm=Inf	3	obl	_	_
+10	með	með	ADP	P	_	12	case	_	_
+11	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
+12	methafa	methafi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-2-1033175,.11
+# X_ID = ID_MISSING
+# text = Hann er ánægður með hlaup Ara Braga í gær .
 1	Hann	hann	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	ánægður	ánægður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -175,9 +187,9 @@
 9	gær	gær	ADV	ADV	Degree=Pos	5	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.9
-# X_ID = ID_missing_12
-# text = „ Þetta heppnaðist rosalega vel.
+# sent_id = G-2-1033175,.12
+# X_ID = ID_MISSING
+# text = „ Þetta heppnaðist rosalega vel .
 1	„	„	PUNCT	"	_	3	punct	_	_
 2	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 3	heppnaðist	heppnast	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -185,9 +197,9 @@
 5	vel	vel	ADV	ADV	Degree=Pos	4	advmod	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.10
-# X_ID = ID_missing_13
-# text = Ég bíð bara eftir að hann fari niður fyrir 10,50, jafnvel 10,40.
+# sent_id = G-2-1033175,.13
+# X_ID = ID_MISSING
+# text = Ég bíð bara eftir að hann fari niður fyrir 10,50, jafnvel 10,40 .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	bíð	bíða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
@@ -203,9 +215,9 @@
 13	10,40	10,40	NUM	NUM-A	Case=Acc	10	conj	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.11
-# X_ID = ID_missing_14
-# text = Hann á alveg það inni sko,“ sagði Jón Arnar við RÚV.
+# sent_id = G-2-1033175,.14
+# X_ID = ID_MISSING
+# text = Hann á alveg það inni sko, “ sagði Jón Arnar við RÚV .
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	alveg	alveg	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -221,9 +233,9 @@
 13	RÚV	rúv	PROPN	NPR-A	_	9	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.12
-# X_ID = ID_missing_15
-# text = En hvernig var tilfinningin að sitja í sófanum heima og sjá metið fara?
+# sent_id = G-2-1033175,.15
+# X_ID = ID_MISSING
+# text = En hvernig var tilfinningin að sitja í sófanum heima og sjá metið fara ?
 1	En	en	CCONJ	CONJ	_	4	cc	_	_
 2	hvernig	hvernig	ADV	WADV	Degree=Pos	4	advmod	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
@@ -239,9 +251,9 @@
 13	fara	fara	VERB	VB	VerbForm=Inf	11	xcomp	_	SpaceAfter=No
 14	?	?	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.13
-# X_ID = ID_missing_16
-# text = „ Hún var bara allt í lagi.
+# sent_id = G-2-1033175,.16
+# X_ID = ID_MISSING
+# text = „ Hún var bara allt í lagi .
 1	„	„	PUNCT	"	_	2	punct	_	_
 2	Hún	hún	PRON	PRO-N	Case=Nom	0	root	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	2	cop	_	_
@@ -251,9 +263,9 @@
 7	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.14
-# X_ID = ID_missing_17
-# text = Ég vissi svosem alltaf að þetta myndi fara.
+# sent_id = G-2-1033175,.17
+# X_ID = ID_MISSING
+# text = Ég vissi svosem alltaf að þetta myndi fara .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	vissi	vita	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	svosem	svosem	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -264,9 +276,9 @@
 8	fara	fara	VERB	VB	VerbForm=Inf	2	ccomp	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.15
-# X_ID = ID_missing_18
-# text = Og eins og ég sagði oft þá var ég ekkert sérstakur spretthlaupari.
+# sent_id = G-2-1033175,.18
+# X_ID = ID_MISSING
+# text = Og eins og ég sagði oft þá var ég ekkert sérstakur spretthlaupari .
 1	Og	og	CCONJ	CONJ	_	2	cc	_	_
 2	eins	_	ADV	ADVR	Degree=Cmp	0	root	_	_
 3	og	_	ADP	P	_	5	case	_	_
@@ -281,64 +293,72 @@
 12	spretthlaupari	spretthlaupari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.16
-# X_IDs = ID_missing_19 ; ID_missing_20 ; ID_missing_21
-# text = Ég var fínn í tugþraut en sem spretthlaupari, ef maður fer að bera sig saman við löndin í kring, þá hefði maður ekki átt mikið í þá.“ Jón Arnar segir að það hafi ekki þótt neitt sérstaklega fínt að tugþrautamaður ætti metið í 100 metra hlaupi.
+# sent_id = G-2-1033175,.19
+# X_ID = ID_MISSING
+# text = Ég var fínn í tugþraut
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
 3	fínn	fínn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 4	í	í	ADP	P	_	5	case	_	_
 5	tugþraut	tugþraut	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	amod	_	_
-6	en	en	CCONJ	CONJ	_	26	cc	_	_
-7	sem	sem	SCONJ	C	_	8	mark	_	_
-8	spretthlaupari	spretthlaupari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	26	advcl	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	8	punct	_	_
-10	ef	ef	ADP	P	_	12	case	_	_
-11	maður	maður	PRON	MAN-N	_	12	nsubj	_	_
-12	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	8	conj	_	_
-13	að	að	PART	TO	_	14	mark	_	_
-14	bera	bera	VERB	VB	VerbForm=Inf	12	xcomp	_	_
-15	sig	sig	PRON	PRO-A	Case=Acc	14	obj	_	_
-16	saman	saman	ADV	ADV	Degree=Pos	14	advmod	_	_
-17	við	við	ADP	P	_	18	case	_	_
-18	löndin	land	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
-19	í	í	ADP	P	_	20	case	_	_
-20	kring	kring	ADP	P	_	18	obl	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	26	punct	_	_
-22	þá	þá	ADV	ADV	Degree=Pos	26	advmod	_	_
-23	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	26	aux	_	_
-24	maður	maður	PRON	MAN-N	_	26	nsubj	_	_
-25	ekki	ekki	ADV	NEG	_	26	advmod	_	_
-26	átt	eiga	VERB	VBN	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0
-27	mikið	mikill	DET	Q-A	Case=Acc	26	obj	_	_
-28	í	í	ADP	P	_	29	case	_	_
-29	þá	hann	PRON	PRO-A	Case=Acc	27	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	29	punct	_	SpaceAfter=No
-31	“	“	PUNCT	"	_	26	punct	_	_
-32	Jón	jón	PROPN	NPR-N	_	34	nsubj	_	_
-33	Arnar	arnar	PROPN	NPR-N	_	32	flat:name	_	_
-34	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-35	að	að	SCONJ	C	_	39	mark	_	_
-36	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	39	expl	_	_
-37	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	39	aux	_	_
-38	ekki	ekki	ADV	NEG	_	39	advmod	_	_
-39	þótt	þykja	VERB	VBN	Tense=Past|VerbForm=Part	34	ccomp	_	_
-40	neitt	neinn	DET	Q-A	Case=Acc	42	obl	_	_
-41	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	42	amod	_	_
-42	fínt	fínn	ADJ	ADJ-N	Case=Nom|Degree=Pos	39	ccomp	_	_
-43	að	að	SCONJ	C	_	45	mark	_	_
-44	tugþrautamaður	tugþrautamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	45	nsubj	_	_
-45	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	39	ccomp	_	_
-46	metið	met	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	45	obj	_	_
-47	í	í	ADP	P	_	50	case	_	_
-48	100	hundrað	NUM	NUM-G	Case=Gen	49	nummod	_	_
-49	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	50	nmod:poss	_	_
-50	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	46	obl	_	SpaceAfter=No
-51	.	.	PUNCT	.	_	34	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.17
-# X_ID = ID_missing_22
-# text = Það er því svolítið fyndið að metið sé nú í höndum manns sem er jafnþekktur fyrir trompetleik og íþróttahæfileika og spilaði á tónleikum langt fram á nótt daginn fyrir hlaupið.
+# sent_id = G-2-1033175,.20
+# X_ID = ID_MISSING
+# text = en sem spretthlaupari, ef maður fer að bera sig saman við löndin í kring, þá hefði maður ekki átt mikið í þá . “
+1	en	en	CCONJ	CONJ	_	21	cc	_	_
+2	sem	sem	SCONJ	C	_	3	mark	_	_
+3	spretthlaupari	spretthlaupari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	ef	ef	ADP	P	_	7	case	_	_
+6	maður	maður	PRON	MAN-N	_	7	nsubj	_	_
+7	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	_
+8	að	að	PART	TO	_	9	mark	_	_
+9	bera	bera	VERB	VB	VerbForm=Inf	7	xcomp	_	_
+10	sig	sig	PRON	PRO-A	Case=Acc	9	obj	_	_
+11	saman	saman	ADV	ADV	Degree=Pos	9	advmod	_	_
+12	við	við	ADP	P	_	13	case	_	_
+13	löndin	land	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obl	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	kring	kring	ADP	P	_	13	obl	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	21	punct	_	_
+17	þá	þá	ADV	ADV	Degree=Pos	21	advmod	_	_
+18	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	21	aux	_	_
+19	maður	maður	PRON	MAN-N	_	21	nsubj	_	_
+20	ekki	ekki	ADV	NEG	_	21	advmod	_	_
+21	átt	eiga	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+22	mikið	mikill	DET	Q-A	Case=Acc	21	obj	_	_
+23	í	í	ADP	P	_	24	case	_	_
+24	þá	hann	PRON	PRO-A	Case=Acc	22	obl	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	24	punct	_	SpaceAfter=No
+26	“	“	PUNCT	"	_	21	punct	_	_
+
+# sent_id = G-2-1033175,.21
+# X_ID = ID_MISSING
+# text = Jón Arnar segir að það hafi ekki þótt neitt sérstaklega fínt að tugþrautamaður ætti metið í 100 metra hlaupi .
+1	Jón	jón	PROPN	NPR-N	_	3	nsubj	_	_
+2	Arnar	arnar	PROPN	NPR-N	_	1	flat:name	_	_
+3	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	að	að	SCONJ	C	_	8	mark	_	_
+5	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	8	expl	_	_
+6	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	8	aux	_	_
+7	ekki	ekki	ADV	NEG	_	8	advmod	_	_
+8	þótt	þykja	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	_
+9	neitt	neinn	DET	Q-A	Case=Acc	11	obl	_	_
+10	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	11	amod	_	_
+11	fínt	fínn	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	ccomp	_	_
+12	að	að	SCONJ	C	_	14	mark	_	_
+13	tugþrautamaður	tugþrautamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
+14	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	8	ccomp	_	_
+15	metið	met	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
+16	í	í	ADP	P	_	19	case	_	_
+17	100	hundrað	NUM	NUM-G	Case=Gen	18	nummod	_	_
+18	metra	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	nmod:poss	_	_
+19	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-2-1033175,.22
+# X_ID = ID_MISSING
+# text = Það er því svolítið fyndið að metið sé nú í höndum manns sem er jafnþekktur fyrir trompetleik og íþróttahæfileika og spilaði á tónleikum langt fram á nótt daginn fyrir hlaupið .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
@@ -371,9 +391,9 @@
 30	hlaupið	hlaup	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.18
-# X_ID = ID_missing_23
-# text = „ Já ég er svolítið ánægður með Bæjarlistamann Seltjarnarness.
+# sent_id = G-2-1033175,.23
+# X_ID = ID_MISSING
+# text = „ Já ég er svolítið ánægður með Bæjarlistamann Seltjarnarness .
 1	„	„	PUNCT	"	_	6	punct	_	_
 2	Já	já	INTJ	INTJ	_	6	discourse	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
@@ -385,28 +405,32 @@
 9	Seltjarnarness	seltjarnarnes	PROPN	NPR-G	_	8	flat:name	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.19
-# X_IDs = ID_missing_24 ; ID_missing_25
-# text = Mér finnst það svolítið gott, það er ágætt,“ sagði Jón Arnar.
+# sent_id = G-2-1033175,.24
+# X_ID = ID_MISSING
+# text = Mér finnst það svolítið gott,
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 4	svolítið	svolítill	DET	Q-A	Case=Acc	5	obl	_	_
 5	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	5	punct	_	_
-7	það	það	PRON	PRO-N	Case=Nom	9	nsubj	_	_
-8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
-9	ágætt	ágætur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0|SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	SpaceAfter=No
-11	“	“	PUNCT	"	_	10	punct	_	_
-12	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	9	parataxis	_	_
-13	Jón	jón	PROPN	NPR-N	_	12	nsubj	_	_
-14	Arnar	arnar	PROPN	NPR-N	_	13	flat:name	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	9	punct	_	_
+6	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.20
-# X_ID = ID_missing_26
-# text = En af hverju hefur þetta ekki gerst á síðustu 20 árum?
+# sent_id = G-2-1033175,.25
+# X_ID = ID_MISSING
+# text = það er ágætt, “ sagði Jón Arnar .
+1	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	ágætt	ágætur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	SpaceAfter=No
+5	“	“	PUNCT	"	_	4	punct	_	_
+6	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	3	parataxis	_	_
+7	Jón	jón	PROPN	NPR-N	_	6	nsubj	_	_
+8	Arnar	arnar	PROPN	NPR-N	_	7	flat:name	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-2-1033175,.26
+# X_ID = ID_MISSING
+# text = En af hverju hefur þetta ekki gerst á síðustu 20 árum ?
 1	En	en	CCONJ	CONJ	_	7	cc	_	_
 2	af	af	ADP	P	_	3	case	_	_
 3	hverju	hver	PRON	WPRO-D	Case=Dat	7	obl	_	_
@@ -420,9 +444,9 @@
 11	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	SpaceAfter=No
 12	?	?	PUNCT	.	_	7	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.21
-# X_ID = ID_missing_27
-# text = „ Ég bara veit það ekki.
+# sent_id = G-2-1033175,.27
+# X_ID = ID_MISSING
+# text = „ Ég bara veit það ekki .
 1	„	„	PUNCT	"	_	4	punct	_	_
 2	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 3	bara	bara	ADV	FP	Degree=Pos	4	advmod	_	_
@@ -431,9 +455,9 @@
 6	ekki	ekki	ADV	NEG	_	4	advmod	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.22
-# X_ID = ID_missing_28
-# text = Spurning hvort frjálsarnar hafi nokkuð verið IN.
+# sent_id = G-2-1033175,.28
+# X_ID = ID_MISSING
+# text = Spurning hvort frjálsarnar hafi nokkuð verið IN .
 1	Spurning	spurning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 2	hvort	hvort	SCONJ	WQ	_	4	mark	_	_
 3	frjálsarnar	frjálsar	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
@@ -443,9 +467,9 @@
 7	IN	in	ADV	ADV	Degree=Pos	4	advmod	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.23
-# X_ID = ID_missing_29
-# text = Krakkarnir hafa kannski farið í annað, eða strákarnir.
+# sent_id = G-2-1033175,.29
+# X_ID = ID_MISSING
+# text = Krakkarnir hafa kannski farið í annað, eða strákarnir .
 1	Krakkarnir	krakki	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	kannski	kannski	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -457,9 +481,9 @@
 9	strákarnir	strákur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	ccomp	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.24
-# X_ID = ID_missing_30
-# text = Samt er þetta nú einfaldasta greinin, hlaupa bara hratt.
+# sent_id = G-2-1033175,.30
+# X_ID = ID_MISSING
+# text = Samt er þetta nú einfaldasta greinin, hlaupa bara hratt .
 1	Samt	samt	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
@@ -472,45 +496,57 @@
 10	hratt	hratt	ADV	ADV	Degree=Pos	8	advmod	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.25
-# X_IDs = ID_missing_31 ; ID_missing_32 ; ID_missing_33 ; ID_missing_34
-# text = En ég veit það ekki, þetta virðist vera að koma, það eru fullt af strákum að koma núna sem hlaupa hratt.“ Jón Arnar á enn nokkur met.
+# sent_id = G-2-1033175,.31
+# X_ID = ID_MISSING
+# text = En ég veit það ekki,
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	það	það	PRON	PRO-A	Case=Acc	3	obj	_	_
 5	ekki	ekki	ADV	NEG	_	3	advmod	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	5	punct	_	_
-7	þetta	þessi	DET	D-N	Case=Nom	8	nsubj	_	_
-8	virðist	virða	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-9	vera	vera	AUX	BE	VerbForm=Inf	11	cop	_	_
-10	að	að	PART	TO	_	11	mark	_	_
-11	koma	koma	VERB	VB	VerbForm=Inf	8	xcomp	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	11	punct	_	_
-13	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	conj	_	OriginalHead=0
-14	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-15	fullt	fullur	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	obl	_	_
-16	af	af	ADP	P	_	17	case	_	_
-17	strákum	strákur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	_
-18	að	að	PART	TO	_	19	mark	_	_
-19	koma	koma	VERB	VB	VerbForm=Inf	13	xcomp	_	_
-20	núna	núna	ADV	ADV	Degree=Pos	19	advmod	_	_
-21	sem	sem	SCONJ	C	_	22	mark	_	_
-22	hlaupa	hlaupa	VERB	VBPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	_
-23	hratt	hratt	ADV	ADV	Degree=Pos	22	advmod	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	23	punct	_	SpaceAfter=No
-25	“	“	PUNCT	"	_	13	punct	_	_
-26	Jón	jón	PROPN	NPR-N	_	28	nsubj	_	_
-27	Arnar	arnar	PROPN	NPR-N	_	26	flat:name	_	_
-28	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-29	enn	enn	ADV	ADV	Degree=Pos	28	advmod	_	_
-30	nokkur	nokkur	DET	Q-A	Case=Acc	31	amod	_	_
-31	met	met	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	28	obj	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	28	punct	_	_
+6	,	,	PUNCT	,	_	3	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.26
-# X_ID = ID_missing_35
-# text = Í 200 m hlaupi, 110 metra grindahlaupi, langstökki og tugþraut utanhúss og önnur þrjú innanhúss.
+# sent_id = G-2-1033175,.32
+# X_ID = ID_MISSING
+# text = þetta virðist vera að koma,
+1	þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
+2	virðist	virða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	vera	vera	AUX	BE	VerbForm=Inf	5	cop	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	koma	koma	VERB	VB	VerbForm=Inf	2	xcomp	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	2	punct	_	_
+
+# sent_id = G-2-1033175,.33
+# X_ID = ID_MISSING
+# text = það eru fullt af strákum að koma núna sem hlaupa hratt . “
+1	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
+3	fullt	fullur	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	obl	_	_
+4	af	af	ADP	P	_	5	case	_	_
+5	strákum	strákur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	koma	koma	VERB	VB	VerbForm=Inf	1	xcomp	_	_
+8	núna	núna	ADV	ADV	Degree=Pos	7	advmod	_	_
+9	sem	sem	SCONJ	C	_	10	mark	_	_
+10	hlaupa	hlaupa	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
+11	hratt	hratt	ADV	ADV	Degree=Pos	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	11	punct	_	SpaceAfter=No
+13	“	“	PUNCT	"	_	1	punct	_	_
+
+# sent_id = G-2-1033175,.34
+# X_ID = ID_MISSING
+# text = Jón Arnar á enn nokkur met .
+1	Jón	jón	PROPN	NPR-N	_	3	nsubj	_	_
+2	Arnar	arnar	PROPN	NPR-N	_	1	flat:name	_	_
+3	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	enn	enn	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	nokkur	nokkur	DET	Q-A	Case=Acc	6	amod	_	_
+6	met	met	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-2-1033175,.35
+# X_ID = ID_MISSING
+# text = Í 200 m hlaupi, 110 metra grindahlaupi, langstökki og tugþraut utanhúss og önnur þrjú innanhúss .
 1	Í	í	ADP	P	_	4	case	_	_
 2	200	200	NUM	NUM-G	Case=Gen	3	nummod	_	_
 3	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
@@ -530,9 +566,9 @@
 17	innanhúss	innanhúss	ADV	ADV	Degree=Pos	15	advmod	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.27
-# X_ID = ID_missing_36
-# text = Hann býst við að þau fjúki á næstu árum.
+# sent_id = G-2-1033175,.36
+# X_ID = ID_MISSING
+# text = Hann býst við að þau fjúki á næstu árum .
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	býst	búa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	við	við	ADP	P	_	6	case	_	_
@@ -544,9 +580,9 @@
 9	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.28
-# X_IDs = ID_missing_37 ; ID_missing_38 ; ID_missing_39 ; ID_missing_40
-# text = „ Já ég er nú að vona það, Ari getur nú alveg tekið 200, svo er annar strákur, Kolbeinn, sem er farinn að höggva nærri, mér er orðið illt í hælunum eins og ég sagði.
+# sent_id = G-2-1033175,.37
+# X_ID = ID_MISSING
+# text = „ Já ég er nú að vona það,
 1	„	„	PUNCT	"	_	5	punct	_	_
 2	Já	já	INTJ	INTJ	_	5	discourse	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -556,42 +592,54 @@
 7	vona	vona	VERB	VB	VerbForm=Inf	5	xcomp	_	_
 8	það	það	PRON	PRO-A	Case=Acc	7	obj	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	5	punct	_	_
-10	Ari	ari	PROPN	NPR-N	_	14	nsubj	_	_
-11	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	14	aux	_	_
-12	nú	nú	ADV	ADV	Degree=Pos	14	advmod	_	_
-13	alveg	alveg	ADV	ADV	Degree=Pos	14	advmod	_	_
-14	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
-15	200	200	NUM	NUM-A	Case=Acc	14	obj	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	15	punct	_	_
-17	svo	svo	ADV	ADV	Degree=Pos	5	conj	_	OriginalHead=0
-18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
-19	annar	annar	PRON	OTHER-N	Case=Nom	20	det	_	_
-20	strákur	strákur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	20	punct	_	_
-22	Kolbeinn	kolbeinn	PROPN	NPR-N	_	20	appos	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	22	punct	_	_
-24	sem	sem	SCONJ	C	_	26	mark	_	_
-25	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	26	cop	_	_
-26	farinn	fara	VERB	VBN	Tense=Past|VerbForm=Part	20	acl:relcl	_	_
-27	að	að	PART	TO	_	28	mark	_	_
-28	höggva	höggva	VERB	VB	VerbForm=Inf	26	xcomp	_	_
-29	nærri	nærri	ADV	ADV	Degree=Pos	28	advmod	_	SpaceAfter=No
-30	,	,	PUNCT	,	_	17	punct	_	_
-31	mér	ég	PRON	PRO-D	Case=Dat	33	nsubj	_	_
-32	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	33	cop	_	_
-33	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
-34	illt	illur	ADJ	ADJ-N	Case=Nom|Degree=Pos	33	amod	_	_
-35	í	í	ADP	P	_	36	case	_	_
-36	hælunum	hæll	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	34	amod	_	_
-37	eins	_	ADV	ADVR	Degree=Cmp	33	advmod	_	_
-38	og	_	ADP	P	_	40	case	_	_
-39	ég	ég	PRON	PRO-N	Case=Nom	40	nsubj	_	_
-40	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	37	obl	_	SpaceAfter=No
-41	.	.	PUNCT	.	_	33	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.29
-# X_IDs = ID_missing_41 ; ID_missing_42
-# text = En þeir eiga bara að taka þetta, það er ekkert mál fyrir þá.
+# sent_id = G-2-1033175,.38
+# X_ID = ID_MISSING
+# text = Ari getur nú alveg tekið 200,
+1	Ari	ari	PROPN	NPR-N	_	5	nsubj	_	_
+2	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
+3	nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
+4	alveg	alveg	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	200	200	NUM	NUM-A	Case=Acc	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	5	punct	_	_
+
+# sent_id = G-2-1033175,.39
+# X_ID = ID_MISSING
+# text = svo er annar strákur, Kolbeinn, sem er farinn að höggva nærri,
+1	svo	svo	ADV	ADV	Degree=Pos	0	root	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
+3	annar	annar	PRON	OTHER-N	Case=Nom	4	det	_	_
+4	strákur	strákur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	Kolbeinn	kolbeinn	PROPN	NPR-N	_	4	appos	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	sem	sem	SCONJ	C	_	10	mark	_	_
+9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
+10	farinn	fara	VERB	VBN	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
+11	að	að	PART	TO	_	12	mark	_	_
+12	höggva	höggva	VERB	VB	VerbForm=Inf	10	xcomp	_	_
+13	nærri	nærri	ADV	ADV	Degree=Pos	12	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	1	punct	_	_
+
+# sent_id = G-2-1033175,.40
+# X_ID = ID_MISSING
+# text = mér er orðið illt í hælunum eins og ég sagði .
+1	mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	0	root	_	_
+4	illt	illur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	hælunum	hæll	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	amod	_	_
+7	eins	_	ADV	ADVR	Degree=Cmp	3	advmod	_	_
+8	og	_	ADP	P	_	10	case	_	_
+9	ég	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
+10	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	7	obl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-2-1033175,.41
+# X_ID = ID_MISSING
+# text = En þeir eiga bara að taka þetta,
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	þeir	hann	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -600,25 +648,26 @@
 6	taka	taka	VERB	VB	VerbForm=Inf	3	xcomp	_	_
 7	þetta	þessi	DET	D-A	Case=Acc	6	obj	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	3	punct	_	_
-9	það	það	PRON	PRO-N	Case=Nom	3	conj	_	OriginalHead=0
-10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
-11	ekkert	enginn	DET	Q-N	Case=Nom	12	amod	_	_
-12	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	xcomp	_	_
-13	fyrir	fyrir	ADP	P	_	14	case	_	_
-14	þá	hann	PRON	PRO-A	Case=Acc	9	obl	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = RUV_ESP_2016_G-2-1033175,.30
-# X_ID = ID_missing_43
-# text = Ég bíð bara,“ sagði Jón Arnar Magnússon.
+# sent_id = G-2-1033175,.42
+# X_ID = ID_MISSING
+# text = það er ekkert mál fyrir þá .
+1	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
+3	ekkert	enginn	DET	Q-N	Case=Nom	4	amod	_	_
+4	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	xcomp	_	_
+5	fyrir	fyrir	ADP	P	_	6	case	_	_
+6	þá	hann	PRON	PRO-A	Case=Acc	1	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	1	punct	_	_
+
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	bíð	bíða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	3	punct	_	SpaceAfter=No
+3	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
 5	“	“	PUNCT	"	_	4	punct	_	_
 6	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	2	parataxis	_	_
 7	Jón	jón	PROPN	NPR-N	_	6	nsubj	_	_
 8	Arnar	arnar	PROPN	NPR-N	_	7	flat:name	_	_
-9	Magnússon	magnússon	PROPN	NPR-N	_	7	dep	_	SpaceAfter=No
+9	Magnússon	magnússon	PROPN	NPR-N	_	7	dep	_	_
 10	.	.	PUNCT	.	_	2	punct	_	_
 

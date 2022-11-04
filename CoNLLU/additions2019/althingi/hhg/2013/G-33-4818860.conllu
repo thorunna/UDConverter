@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4818860,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Ég tek bara undir með hv. þingmanni.
+# sent_id = G-33-4818860,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég tek bara undir með hv. þingmanni .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -13,9 +13,9 @@
 10	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4818860,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Þessar tölur stungu líka svolítið í augu þegar ég renndi yfir þetta á sínum tíma 20-50 milljónir, mér finnst þetta ekki neitt óskapleg upphæð.
+# sent_id = G-33-4818860,.2
+# X_ID = ID_MISSING
+# text = Þessar tölur stungu líka svolítið í augu þegar ég renndi yfir þetta á sínum tíma 20-50 milljónir,
 1	Þessar	þessi	DET	D-N	Case=Nom	2	det	_	_
 2	tölur	tala	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
 3	stungu	stinga	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -35,19 +35,23 @@
 17	-	til	CCONJ	CONJ	_	18	cc	_	SpaceAfter=No
 18	50	fimmtíu	NUM	NUM-N	Case=Nom	16	conj	_	_
 19	milljónir	milljón	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	19	punct	_	_
-21	mér	ég	PRON	PRO-D	Case=Dat	22	nsubj	_	_
-22	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-23	þetta	þessi	DET	D-N	Case=Nom	27	nsubj	_	_
-24	ekki	ekki	ADV	NEG	_	27	advmod	_	_
-25	neitt	neinn	DET	Q-A	Case=Acc	27	obl	_	_
-26	óskapleg	óskaplegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	27	amod	_	_
-27	upphæð	upphæð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	ccomp	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	3	punct	_	_
+20	,	,	PUNCT	,	_	3	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4818860,.3
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Þetta er hús, ekki einu sinni stórt hús, í Gerðunum, þetta er ekki mikill peningur fyrir sveitarfélög landsins, hvað þá ríkið.
+# sent_id = G-33-4818860,.3
+# X_ID = ID_MISSING
+# text = mér finnst þetta ekki neitt óskapleg upphæð .
+1	mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
+2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
+4	ekki	ekki	ADV	NEG	_	7	advmod	_	_
+5	neitt	neinn	DET	Q-A	Case=Acc	7	obl	_	_
+6	óskapleg	óskaplegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
+7	upphæð	upphæð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4818860,.4
+# X_ID = ID_MISSING
+# text = Þetta er hús, ekki einu sinni stórt hús, í Gerðunum,
 1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	hús	hús	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
@@ -60,24 +64,28 @@
 10	,	,	PUNCT	,	_	9	punct	_	_
 11	í	í	ADP	P	_	12	case	_	_
 12	Gerðunum	gerði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	12	punct	_	_
-14	þetta	þessi	DET	D-N	Case=Nom	18	nsubj	_	_
-15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
-16	ekki	ekki	ADV	NEG	_	18	advmod	_	_
-17	mikill	mikill	DET	Q-N	Case=Nom	18	amod	_	_
-18	peningur	peningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	OriginalHead=0
-19	fyrir	fyrir	ADP	P	_	20	case	_	_
-20	sveitarfélög	sveitarfélag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	obl	_	_
-21	landsins	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	21	punct	_	_
-23	hvað	hver	PRON	WPRO-N	Case=Nom	24	obj	_	_
-24	þá	þá	ADV	ADV	Degree=Pos	25	obl	_	_
-25	ríkið	ríki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	parataxis	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	3	punct	_	_
+13	,	,	PUNCT	,	_	3	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4818860,.4
-# X_ID = ID_missing_6
-# text = Ef sveitarfélögin gætu ekki borið þennan kostnað mætti alveg leggja til að ríkið borgaði þetta bara sjálft eins og ég segi.
+# sent_id = G-33-4818860,.5
+# X_ID = ID_MISSING
+# text = þetta er ekki mikill peningur fyrir sveitarfélög landsins, hvað þá ríkið .
+1	þetta	þessi	DET	D-N	Case=Nom	5	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
+4	mikill	mikill	DET	Q-N	Case=Nom	5	amod	_	_
+5	peningur	peningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+6	fyrir	fyrir	ADP	P	_	7	case	_	_
+7	sveitarfélög	sveitarfélag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
+8	landsins	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	hvað	hver	PRON	WPRO-N	Case=Nom	11	obj	_	_
+11	þá	þá	ADV	ADV	Degree=Pos	12	obl	_	_
+12	ríkið	ríki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	parataxis	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4818860,.6
+# X_ID = ID_MISSING
+# text = Ef sveitarfélögin gætu ekki borið þennan kostnað mætti alveg leggja til að ríkið borgaði þetta bara sjálft eins og ég segi .
 1	Ef	ef	ADP	P	_	5	case	_	_
 2	sveitarfélögin	sveitarfélag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
 3	gætu	geta	AUX	MDDS	Mood=Sub|Tense=Past	5	aux	_	_
@@ -101,9 +109,9 @@
 21	segi	segja	VERB	VBPI	Mood=Ind|Tense=Pres	18	obl	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4818860,.5
-# X_ID = ID_missing_7
-# text = Þetta er ekki há upphæð þegar kemur að ríkisrekstrinum.
+# sent_id = G-33-4818860,.7
+# X_ID = ID_MISSING
+# text = Þetta er ekki há upphæð þegar kemur að ríkisrekstrinum .
 1	Þetta	þessi	DET	D-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
@@ -115,9 +123,9 @@
 9	ríkisrekstrinum	ríkisrekstur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4818860,.6
-# X_ID = ID_missing_8
-# text = Það er reyndar erfitt að finna lægri upphæðir, verð ég að segja.
+# sent_id = G-33-4818860,.8
+# X_ID = ID_MISSING
+# text = Það er reyndar erfitt að finna lægri upphæðir, verð ég að segja .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	10	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
 3	reyndar	reyndar	ADV	ADV	Degree=Pos	10	advmod	_	_
@@ -133,9 +141,9 @@
 13	segja	segja	VERB	VB	VerbForm=Inf	10	xcomp	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4818860,.7
-# X_IDs = ID_missing_9 ; ID_missing_10 ; ID_missing_11
-# text = Ef maður lítur yfir fjárlög eru þau talin í milljónum, það er ekki talin 1,1 milljón eða 1,9 milljónir, það eru bara 1 milljón eða 2 milljónir vegna þess að það tekur því ekki að brjóta tölurnar meira niður.
+# sent_id = G-33-4818860,.9
+# X_ID = ID_MISSING
+# text = Ef maður lítur yfir fjárlög eru þau talin í milljónum,
 1	Ef	ef	ADP	P	_	3	case	_	_
 2	maður	maður	PRON	MAN-N	_	3	nsubj	_	_
 3	lítur	líta	VERB	VBPI	Mood=Ind|Tense=Pres	8	obl	_	_
@@ -146,47 +154,52 @@
 8	talin	telja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 9	í	í	ADP	P	_	10	case	_	_
 10	milljónum	milljón	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	10	punct	_	_
-12	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	15	expl	_	_
-13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
-14	ekki	ekki	ADV	NEG	_	15	advmod	_	_
-15	talin	telja	VERB	VAN	Tense=Past|VerbForm=Part	8	conj	_	OriginalHead=0
-16	1,1	1,1	NUM	NUM-N	Case=Nom	17	nummod	_	_
-17	milljón	milljón	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	obl	_	_
-18	eða	eða	CCONJ	CONJ	_	20	cc	_	_
-19	1,9	1,9	NUM	NUM-N	Case=Nom	20	nummod	_	_
-20	milljónir	milljón	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	conj	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	17	punct	_	_
-22	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	26	expl	_	_
-23	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	26	cop	_	_
-24	bara	bara	ADV	FP	Degree=Pos	26	advmod	_	_
-25	1	einn	NUM	NUM-N	Case=Nom	26	nummod	_	_
-26	milljón	milljón	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	conj	_	OriginalHead=0
-27	eða	eða	CCONJ	CONJ	_	29	cc	_	_
-28	2	tveir	NUM	NUM-N	Case=Nom	29	nummod	_	_
-29	milljónir	milljón	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	26	conj	_	_
-30	vegna	vegna	ADP	P	_	31	case	_	_
-31	þess	það	PRON	PRO-G	Case=Gen	26	obl	_	_
-32	að	að	SCONJ	C	_	34	mark	_	_
-33	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	34	expl	_	_
-34	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	31	xcomp	_	_
-35	því	það	PRON	PRO-D	Case=Dat	34	obj	_	_
-36	ekki	ekki	ADV	NEG	_	34	advmod	_	_
-37	að	að	PART	TO	_	38	mark	_	_
-38	brjóta	brjóta	VERB	VB	VerbForm=Inf	34	xcomp	_	_
-39	tölurnar	tala	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	38	obj	_	_
-40	meira	mikill	DET	QR-A	Case=Acc	38	obl	_	_
-41	niður	niður	ADP	RP	_	38	compound:prt	_	SpaceAfter=No
-42	.	.	PUNCT	.	_	8	punct	_	_
+11	,	,	PUNCT	,	_	8	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4818860,.8
-# X_ID = ID_missing_12
-# text = Að tala um 20-50 milljónir sem einhver rök gegn þessum gömlu lögum er hlægilegt með fullri virðingu fyrir þingheimi öllum.
+# sent_id = G-33-4818860,.10
+# X_ID = ID_MISSING
+# text = það er ekki talin 1,1 milljón eða 1,9 milljónir,
+1	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
+4	talin	telja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+5	1,1	1,1	NUM	NUM-N	Case=Nom	6	nummod	_	_
+6	milljón	milljón	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	obl	_	_
+7	eða	eða	CCONJ	CONJ	_	9	cc	_	_
+8	1,9	1,9	NUM	NUM-N	Case=Nom	9	nummod	_	_
+9	milljónir	milljón	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	conj	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	4	punct	_	_
+
+# sent_id = G-33-4818860,.11
+# X_ID = ID_MISSING
+# text = það eru bara 1 milljón eða 2 milljónir vegna þess að það tekur því ekki að brjóta tölurnar meira niður .
+1	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
+2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+3	bara	bara	ADV	FP	Degree=Pos	5	advmod	_	_
+4	1	einn	NUM	NUM-N	Case=Nom	5	nummod	_	_
+5	milljón	milljón	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+6	eða	eða	CCONJ	CONJ	_	8	cc	_	_
+7	2	tveir	NUM	NUM-N	Case=Nom	8	nummod	_	_
+8	milljónir	milljón	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	conj	_	_
+9	vegna	vegna	ADP	P	_	10	case	_	_
+10	þess	það	PRON	PRO-G	Case=Gen	5	obl	_	_
+11	að	að	SCONJ	C	_	13	mark	_	_
+12	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	13	expl	_	_
+13	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	10	xcomp	_	_
+14	því	það	PRON	PRO-D	Case=Dat	13	obj	_	_
+15	ekki	ekki	ADV	NEG	_	13	advmod	_	_
+16	að	að	PART	TO	_	17	mark	_	_
+17	brjóta	brjóta	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+18	tölurnar	tala	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obj	_	_
+19	meira	mikill	DET	QR-A	Case=Acc	17	obl	_	_
+20	niður	niður	ADP	RP	_	17	compound:prt	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	5	punct	_	_
+
 1	Að	að	PART	TO	_	2	mark	_	_
 2	tala	tala	VERB	VB	VerbForm=Inf	16	xcomp	_	_
 3	um	um	ADP	P	_	7	case	_	_
-4	20	tuttugu	NUM	NUM-N	Case=Nom	7	nummod	_	SpaceAfter=No
-5	-	til	CCONJ	CONJ	_	6	cc	_	SpaceAfter=No
+4	20	tuttugu	NUM	NUM-N	Case=Nom	7	nummod	_	_|SpaceAfter=No
+5	-	til	CCONJ	CONJ	_	6	cc	_	_|SpaceAfter=No
 6	50	fimmtíu	NUM	NUM-N	Case=Nom	4	conj	_	_
 7	milljónir	milljón	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
 8	sem	sem	SCONJ	C	_	9	mark	_	_
@@ -203,6 +216,6 @@
 19	virðingu	virðing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
 20	fyrir	fyrir	ADP	P	_	21	case	_	_
 21	þingheimi	þingheimur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
-22	öllum	allur	ADV	Q-D	Case=Dat	21	advmod	_	SpaceAfter=No
+22	öllum	allur	ADV	Q-D	Case=Dat	21	advmod	_	_
 23	.	.	PUNCT	.	_	16	punct	_	_
 

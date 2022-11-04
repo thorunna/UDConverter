@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4734201,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Herra forseti. Ég vil spyrja hv. 4. þm. Reykv. svo, Pétur H. Blöndal, út í eitt má segja lagatæknilegt eða þinglegt atriði sem varðar atriði þessa máls og það er sú staðreynd að inn í þetta frumvarp eiga nú að bætast samkvæmt breytingartillögum meiri hlutans þrír nýir kaflar eða það á að opna upp löggjöf á þremur nýjum sviðum hér við 2. umr. málsins.
+# sent_id = G-33-4734201,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Ég vil spyrja hv. 4. þm. Reykv. svo, Pétur H. Blöndal, út í eitt má segja lagatæknilegt eða þinglegt atriði sem varðar atriði þessa máls
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -31,48 +31,52 @@
 28	atriði	atriði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	27	obj	_	_
 29	þessa	þessi	DET	D-G	Case=Gen	30	det	_	_
 30	máls	mál	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	28	nmod:poss	_	_
-31	og	og	CCONJ	CONJ	_	35	cc	_	_
-32	það	það	PRON	PRO-N	Case=Nom	35	nsubj	_	_
-33	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
-34	sú	sá	DET	D-N	Case=Nom	35	det	_	_
-35	staðreynd	staðreynd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	OriginalHead=0
-36	að	að	SCONJ	C	_	41	mark	_	_
-37	inn	inn	ADP	RP	_	40	compound:prt	_	_
-38	í	í	ADP	P	_	40	case	_	_
-39	þetta	þessi	DET	D-A	Case=Acc	40	det	_	_
-40	frumvarp	frumvarp	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	41	obl	_	_
-41	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	35	ccomp	_	_
-42	nú	nú	ADV	ADV	Degree=Pos	41	advmod	_	_
-43	að	að	PART	TO	_	44	mark	_	_
-44	bætast	bæta	VERB	VB	VerbForm=Inf	41	xcomp	_	_
-45	samkvæmt	samkvæmt	ADP	P	_	46	case	_	_
-46	breytingartillögum	breytingartillaga	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	41	obl	_	_
-47	meiri	mikill	DET	QR-G	Case=Gen	46	nmod:poss	_	_
-48	hlutans	hluti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	47	conj	_	_
-49	þrír	þrír	NUM	NUM-N	Case=Nom	51	nummod	_	_
-50	nýir	nýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	51	amod	_	_
-51	kaflar	kafli	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	41	nsubj	_	_
-52	eða	eða	CCONJ	CONJ	_	54	cc	_	_
-53	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	54	expl	_	_
-54	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	41	conj	_	_
-55	að	að	PART	TO	_	56	mark	_	_
-56	opna	opna	VERB	VB	VerbForm=Inf	54	xcomp	_	_
-57	upp	upp	ADP	RP	_	56	compound:prt	_	_
-58	löggjöf	löggjöf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	56	obj	_	_
-59	á	á	ADP	P	_	62	case	_	_
-60	þremur	þrír	NUM	NUM-D	Case=Dat	62	nummod	_	_
-61	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	62	amod	_	_
-62	sviðum	svið	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	56	obl	_	_
-63	hér	hér	ADV	ADV	Degree=Pos	56	advmod	_	_
-64	við	við	ADP	P	_	66	case	_	_
-65	2.	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	66	amod	_	_
-66	umr.	umr.	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	56	obl	_	_
-67	málsins	mál	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	66	nmod:poss	_	SpaceAfter=No
-68	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4734201,.2
-# X_ID = ID_missing_3
-# text = Af því hv. þm. Pétur H. Blöndal hefur oft lagt margt gott til mála í sambandi við bætt vinnubrögð hér á þingi, og ekki síst varðandi sjálfstæði Alþingis og frumkvæði við lagasetningu og annað í þeim dúr, læt ég mér detta í hug að hv. þingmaður sé ekkert sérstaklega ánægður með þetta ráðslag.
+# sent_id = G-33-4734201,.2
+# X_ID = ID_MISSING
+# text = og það er sú staðreynd að inn í þetta frumvarp eiga nú að bætast samkvæmt breytingartillögum meiri hlutans þrír nýir kaflar eða það á að opna upp löggjöf á þremur nýjum sviðum hér við 2. umr. málsins .
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	sú	sá	DET	D-N	Case=Nom	5	det	_	_
+5	staðreynd	staðreynd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+6	að	að	SCONJ	C	_	11	mark	_	_
+7	inn	inn	ADP	RP	_	10	compound:prt	_	_
+8	í	í	ADP	P	_	10	case	_	_
+9	þetta	þessi	DET	D-A	Case=Acc	10	det	_	_
+10	frumvarp	frumvarp	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
+11	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	5	ccomp	_	_
+12	nú	nú	ADV	ADV	Degree=Pos	11	advmod	_	_
+13	að	að	PART	TO	_	14	mark	_	_
+14	bætast	bæta	VERB	VB	VerbForm=Inf	11	xcomp	_	_
+15	samkvæmt	samkvæmt	ADP	P	_	16	case	_	_
+16	breytingartillögum	breytingartillaga	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obl	_	_
+17	meiri	mikill	DET	QR-G	Case=Gen	16	nmod:poss	_	_
+18	hlutans	hluti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	conj	_	_
+19	þrír	þrír	NUM	NUM-N	Case=Nom	21	nummod	_	_
+20	nýir	nýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	21	amod	_	_
+21	kaflar	kafli	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	nsubj	_	_
+22	eða	eða	CCONJ	CONJ	_	24	cc	_	_
+23	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	24	expl	_	_
+24	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	11	conj	_	_
+25	að	að	PART	TO	_	26	mark	_	_
+26	opna	opna	VERB	VB	VerbForm=Inf	24	xcomp	_	_
+27	upp	upp	ADP	RP	_	26	compound:prt	_	_
+28	löggjöf	löggjöf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obj	_	_
+29	á	á	ADP	P	_	32	case	_	_
+30	þremur	þrír	NUM	NUM-D	Case=Dat	32	nummod	_	_
+31	nýjum	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	32	amod	_	_
+32	sviðum	svið	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	26	obl	_	_
+33	hér	hér	ADV	ADV	Degree=Pos	26	advmod	_	_
+34	við	við	ADP	P	_	36	case	_	_
+35	2.	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	36	amod	_	_
+36	umr.	umr.	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obl	_	_
+37	málsins	mál	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	36	nmod:poss	_	SpaceAfter=No
+38	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4734201,.3
+# X_ID = ID_MISSING
+# text = Af því hv. þm. Pétur H. Blöndal hefur oft lagt margt gott til mála í sambandi við bætt vinnubrögð hér á þingi, og ekki síst varðandi sjálfstæði Alþingis og frumkvæði við lagasetningu og annað í þeim dúr, læt ég mér detta í hug að hv. þingmaður sé ekkert sérstaklega ánægður með þetta ráðslag .
 1	Af	af	ADP	P	_	2	case	_	_
 2	því	það	PRON	PRO-D	Case=Dat	40	obl	_	_
 3	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -130,9 +134,9 @@
 55	ráðslag	ráðslag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	52	obl	_	SpaceAfter=No
 56	.	.	PUNCT	.	_	40	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4734201,.3
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Auðvitað er sökin ekki hv. þingmanns eða efnahags- og viðskiptanefndar því það er augljóslega hér við ríkisstjórn og ráðuneyti að sakast, frumvarpið er auðvitað vanbúið þegar það kemur til okkar hér í haust.
+# sent_id = G-33-4734201,.4
+# X_ID = ID_MISSING
+# text = Auðvitað er sökin ekki hv. þingmanns eða efnahags- og viðskiptanefndar því það er augljóslega hér við ríkisstjórn og ráðuneyti að sakast,
 1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	sökin	sök	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
@@ -155,24 +159,28 @@
 20	ráðuneyti	ráðuneyti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	conj	_	_
 21	að	að	PART	TO	_	12	ccomp	_	_
 22	sakast	saka	VERB	VB	VerbForm=Inf	21	amod	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	21	punct	_	_
-24	frumvarpið	frumvarp	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
-25	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
-26	auðvitað	auðvitað	ADV	ADV	Degree=Pos	27	advmod	_	_
-27	vanbúið	vanbúinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	conj	_	OriginalHead=0
-28	þegar	þegar	ADP	P	_	30	case	_	_
-29	það	það	PRON	PRO-N	Case=Nom	30	nsubj	_	_
-30	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	27	obl	_	_
-31	til	til	ADP	P	_	32	case	_	_
-32	okkar	ég	PRON	PRO-G	Case=Gen	30	obl	_	_
-33	hér	hér	ADV	ADV	Degree=Pos	32	advmod	_	_
-34	í	í	ADP	P	_	35	case	_	_
-35	haust	haust	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	SpaceAfter=No
-36	.	.	PUNCT	.	_	6	punct	_	_
+23	,	,	PUNCT	,	_	6	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4734201,.4
-# X_ID = ID_missing_6
-# text = Það vantar inn í það breytingar á tilteknum lögum sem alls ekki eru opnaðar upp með frumvarpinu þegar það er lagt fram.
+# sent_id = G-33-4734201,.5
+# X_ID = ID_MISSING
+# text = frumvarpið er auðvitað vanbúið þegar það kemur til okkar hér í haust .
+1	frumvarpið	frumvarp	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	4	advmod	_	_
+4	vanbúið	vanbúinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+5	þegar	þegar	ADP	P	_	7	case	_	_
+6	það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
+7	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	4	obl	_	_
+8	til	til	ADP	P	_	9	case	_	_
+9	okkar	ég	PRON	PRO-G	Case=Gen	7	obl	_	_
+10	hér	hér	ADV	ADV	Degree=Pos	9	advmod	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	haust	haust	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4734201,.6
+# X_ID = ID_MISSING
+# text = Það vantar inn í það breytingar á tilteknum lögum sem alls ekki eru opnaðar upp með frumvarpinu þegar það er lagt fram .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	vantar	vanta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	inn	inn	ADP	RP	_	5	compound:prt	_	_
@@ -197,34 +205,42 @@
 22	fram	fram	ADP	RP	_	21	compound:prt	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4734201,.5
-# X_IDs = ID_missing_7 ; ID_missing_8 ; ID_missing_9
-# text = Auðvitað hefur annað eins gerst áður, það viðurkenni ég fúslega, en aldrei hefur þetta samt þótt góð latína.
+# sent_id = G-33-4734201,.7
+# X_ID = ID_MISSING
+# text = Auðvitað hefur annað eins gerst áður,
 1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	5	advmod	_	_
 2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
 3	annað	annar	PRON	OTHER-N	Case=Nom	5	nsubj	_	_
 4	eins	eins	ADV	ADVR	Degree=Cmp	3	advmod	_	_
 5	gerst	gera	VERB	DON	Tense=Past|VerbForm=Part	0	root	_	_
 6	áður	áður	ADV	ADVR	Degree=Cmp	5	advmod	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	6	punct	_	_
-8	það	það	PRON	PRO-A	Case=Acc	9	obj	_	_
-9	viðurkenni	viðurkenna	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
-10	ég	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
-11	fúslega	fúslega	ADV	ADV	Degree=Pos	9	advmod	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	5	punct	_	_
-13	en	en	CCONJ	CONJ	_	18	cc	_	_
-14	aldrei	aldrei	ADV	ADV	Degree=Pos	18	advmod	_	_
-15	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	18	aux	_	_
-16	þetta	þessi	DET	D-N	Case=Nom	18	nsubj	_	_
-17	samt	samt	ADV	ADV	Degree=Pos	18	advmod	_	_
-18	þótt	þótt	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
-19	góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
-20	latína	latína	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	ccomp	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	5	punct	_	_
+7	,	,	PUNCT	,	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4734201,.6
-# X_ID = ID_missing_10
-# text = Það leiðir til þeirra vandkvæða meðal annars að þessi efnisatriði frumvarpsins eða væntanlegra laga fá aldrei hér þrjár umræður eins og stjórnarskrá og þingsköp gera ráð fyrir.
+# sent_id = G-33-4734201,.8
+# X_ID = ID_MISSING
+# text = það viðurkenni ég fúslega,
+1	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
+2	viðurkenni	viðurkenna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+4	fúslega	fúslega	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	2	punct	_	_
+
+# sent_id = G-33-4734201,.9
+# X_ID = ID_MISSING
+# text = en aldrei hefur þetta samt þótt góð latína .
+1	en	en	CCONJ	CONJ	_	6	cc	_	_
+2	aldrei	aldrei	ADV	ADV	Degree=Pos	6	advmod	_	_
+3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
+4	þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
+5	samt	samt	ADV	ADV	Degree=Pos	6	advmod	_	_
+6	þótt	þótt	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
+8	latína	latína	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-33-4734201,.10
+# X_ID = ID_MISSING
+# text = Það leiðir til þeirra vandkvæða meðal annars að þessi efnisatriði frumvarpsins eða væntanlegra laga fá aldrei hér þrjár umræður eins og stjórnarskrá og þingsköp gera ráð fyrir .
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	leiðir	leiða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	til	til	ADP	P	_	5	case	_	_
@@ -254,9 +270,9 @@
 27	fyrir	fyrir	ADP	P	_	25	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4734201,.7
-# X_ID = ID_missing_11
-# text = Það leiðir líka til þess að þingnefndin hefur þetta ekki í sínum höndum til að senda út til umsagnar með sama hætti og efnisatriði frumvarpsins að öðru leyti.
+# sent_id = G-33-4734201,.11
+# X_ID = ID_MISSING
+# text = Það leiðir líka til þess að þingnefndin hefur þetta ekki í sínum höndum til að senda út til umsagnar með sama hætti og efnisatriði frumvarpsins að öðru leyti .
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	leiðir	leiða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	líka	líka	ADV	ALSO	_	2	advmod	_	_
@@ -287,9 +303,6 @@
 28	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4734201,.8
-# X_ID = ID_missing_12
-# text = Ég vil aðeins heyra sjónarmið hv. þingmanns í þessum efnum án þess að ætla að gera þetta að stóru máli, þannig að ég vil nota fyrra andsvar mitt til að taka þetta mál upp og vekja athygli á því að við erum því miður með svona í farteskinu miðað við breytingartillögur meiri hlutans.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	aðeins	aðeins	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -309,7 +322,7 @@
 17	þetta	þessi	DET	D-A	Case=Acc	16	obj	_	_
 18	að	að	ADP	P	_	20	case	_	_
 19	stóru	stór	ADJ	ADJ-D	Case=Dat|Degree=Pos	20	amod	_	_
-20	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
+20	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
 21	,	,	PUNCT	,	_	20	punct	_	_
 22	þannig	þannig	ADV	ADV	Degree=Pos	4	advmod	_	_
 23	að	að	SCONJ	C	_	26	mark	_	_
@@ -343,6 +356,6 @@
 51	við	við	ADP	P	_	52	case	_	_
 52	breytingartillögur	breytingartillaga	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	50	obl	_	_
 53	meiri	mikill	DET	QR-G	Case=Gen	52	nmod:poss	_	_
-54	hlutans	hluti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	53	conj	_	SpaceAfter=No
+54	hlutans	hluti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	53	conj	_	_
 55	.	.	PUNCT	.	_	4	punct	_	_
 

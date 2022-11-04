@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_SJS_2013_G-33-4772703,.1
-# X_ID = ID_missing_1
-# text = Herra forseti. Af því að við ræddum aðeins áðan framtíðina og nokkur næstu ár sem við erum greinilega hjartanlega sammála um, ég og hæstv. fjármálaráðherra, að er okkur áhyggjuefni vil ég spyrja hæstv. ráðherra: Er þess að vænta að fram komi sjálfstæð og ítarleg ríkisfjármálaáætlun í sjálfstæðri skýrslu?
+# sent_id = G-33-4772703,.1
+# X_ID = ID_MISSING
+# text = Herra forseti . Af því að við ræddum aðeins áðan framtíðina og nokkur næstu ár sem við erum greinilega hjartanlega sammála um, ég og hæstv. fjármálaráðherra, að er okkur áhyggjuefni vil ég spyrja hæstv. ráðherra : Er þess að vænta að fram komi sjálfstæð og ítarleg ríkisfjármálaáætlun í sjálfstæðri skýrslu ?
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	35	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -55,9 +55,9 @@
 52	skýrslu	skýrsla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	45	obl	_	SpaceAfter=No
 53	?	?	PUNCT	.	_	35	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772703,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Nú veit ég að líta má á fyrra heftið, litla hefti fjárlagafrumvarpsins, sem vísi að slíku en það er ekki sett fram sem sjálfstæð áætlun og ekki með jafn ítarlegum rökstuðningi og textum og við reyndum að gera 2009, 2011 og 2012 höfðum myndir af fallegum fjöllum í ónefndum kjördæmum framan á heftunum, Herðubreið og Keili.
+# sent_id = G-33-4772703,.2
+# X_ID = ID_MISSING
+# text = Nú veit ég að líta má á fyrra heftið, litla hefti fjárlagafrumvarpsins, sem vísi að slíku
 1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -76,53 +76,57 @@
 16	vísi	vísir	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	advcl	_	_
 17	að	að	ADP	P	_	18	case	_	_
 18	slíku	slíkur	PRON	SUCH-D	Case=Dat	16	obl	_	_
-19	en	en	CCONJ	CONJ	_	23	cc	_	_
-20	það	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
-21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
-22	ekki	ekki	ADV	NEG	_	23	advmod	_	_
-23	sett	setja	VERB	VAN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-24	fram	fram	ADP	RP	_	23	compound:prt	_	_
-25	sem	sem	SCONJ	C	_	27	mark	_	_
-26	sjálfstæð	sjálfstæður	ADJ	ADJ-N	Case=Nom|Degree=Pos	27	amod	_	_
-27	áætlun	áætlun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	advcl	_	_
-28	og	og	CCONJ	CONJ	_	33	cc	_	_
-29	ekki	ekki	ADV	NEG	_	33	advmod	_	_
-30	með	með	ADP	P	_	33	case	_	_
-31	jafn	jafn	ADV	ADV	Degree=Pos	32	amod	_	_
-32	ítarlegum	ítarlegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	33	amod	_	_
-33	rökstuðningi	rökstuðningur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	conj	_	_
-34	og	og	CCONJ	CONJ	_	35	cc	_	_
-35	textum	texti	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	33	conj	_	_
-36	og	og	ADP	P	_	38	case	_	_
-37	við	ég	PRON	PRO-N	Case=Nom	38	nsubj	_	_
-38	reyndum	reyna	VERB	VBDI	Mood=Ind|Tense=Past	33	obl	_	_
-39	að	að	PART	TO	_	40	mark	_	_
-40	gera	gera	VERB	DO	VerbForm=Inf	38	xcomp	_	_
-41	2009	2009	NUM	NUM-A	Case=Acc	40	obl	_	SpaceAfter=No
-42	,	,	PUNCT	,	_	43	punct	_	_
-43	2011	2011	NUM	NUM-A	Case=Acc	41	conj	_	_
-44	og	og	CCONJ	CONJ	_	45	cc	_	_
-45	2012	2012	NUM	NUM-A	Case=Acc	41	conj	_	_
-46	höfðum	hafa	AUX	HVDI	Mood=Ind|Tense=Past	38	parataxis	_	_
-47	myndir	mynd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	46	ccomp	_	_
-48	af	af	ADP	P	_	50	case	_	_
-49	fallegum	fallegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	50	amod	_	_
-50	fjöllum	fjall	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	47	obl	_	_
-51	í	í	ADP	P	_	53	case	_	_
-52	ónefndum	ónefndur	ADJ	ADJ-D	Case=Dat|Degree=Pos	53	amod	_	_
-53	kjördæmum	kjördæmi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	50	obl	_	_
-54	framan	framan	ADV	ADV	Degree=Pos	56	advmod	_	_
-55	á	á	ADP	P	_	56	case	_	_
-56	heftunum	heftir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	47	obl	_	SpaceAfter=No
-57	,	,	PUNCT	,	_	56	punct	_	_
-58	Herðubreið	herðubreið	PROPN	NPR-A	_	47	obl	_	_
-59	og	og	CCONJ	CONJ	_	60	cc	_	_
-60	Keili	keilir	PROPN	NPR-A	_	58	conj	_	SpaceAfter=No
-61	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772703,.3
-# X_ID = ID_missing_4
-# text = Hæstv. ráðherra gæti haft einhvern hólinn við Garðabæ sem mundi prýða ritið.
+# sent_id = G-33-4772703,.3
+# X_ID = ID_MISSING
+# text = en það er ekki sett fram sem sjálfstæð áætlun og ekki með jafn ítarlegum rökstuðningi og textum og við reyndum að gera 2009, 2011 og 2012 höfðum myndir af fallegum fjöllum í ónefndum kjördæmum framan á heftunum, Herðubreið og Keili .
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
+5	sett	setja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+6	fram	fram	ADP	RP	_	5	compound:prt	_	_
+7	sem	sem	SCONJ	C	_	9	mark	_	_
+8	sjálfstæð	sjálfstæður	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
+9	áætlun	áætlun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	advcl	_	_
+10	og	og	CCONJ	CONJ	_	15	cc	_	_
+11	ekki	ekki	ADV	NEG	_	15	advmod	_	_
+12	með	með	ADP	P	_	15	case	_	_
+13	jafn	jafn	ADV	ADV	Degree=Pos	14	amod	_	_
+14	ítarlegum	ítarlegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	15	amod	_	_
+15	rökstuðningi	rökstuðningur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	conj	_	_
+16	og	og	CCONJ	CONJ	_	17	cc	_	_
+17	textum	texti	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	conj	_	_
+18	og	og	ADP	P	_	20	case	_	_
+19	við	ég	PRON	PRO-N	Case=Nom	20	nsubj	_	_
+20	reyndum	reyna	VERB	VBDI	Mood=Ind|Tense=Past	15	obl	_	_
+21	að	að	PART	TO	_	22	mark	_	_
+22	gera	gera	VERB	DO	VerbForm=Inf	20	xcomp	_	_
+23	2009	2009	NUM	NUM-A	Case=Acc	22	obl	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	25	punct	_	_
+25	2011	2011	NUM	NUM-A	Case=Acc	23	conj	_	_
+26	og	og	CCONJ	CONJ	_	27	cc	_	_
+27	2012	2012	NUM	NUM-A	Case=Acc	23	conj	_	_
+28	höfðum	hafa	AUX	HVDI	Mood=Ind|Tense=Past	20	parataxis	_	_
+29	myndir	mynd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	28	ccomp	_	_
+30	af	af	ADP	P	_	32	case	_	_
+31	fallegum	fallegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	32	amod	_	_
+32	fjöllum	fjall	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	29	obl	_	_
+33	í	í	ADP	P	_	35	case	_	_
+34	ónefndum	ónefndur	ADJ	ADJ-D	Case=Dat|Degree=Pos	35	amod	_	_
+35	kjördæmum	kjördæmi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	32	obl	_	_
+36	framan	framan	ADV	ADV	Degree=Pos	38	advmod	_	_
+37	á	á	ADP	P	_	38	case	_	_
+38	heftunum	heftir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	29	obl	_	SpaceAfter=No
+39	,	,	PUNCT	,	_	38	punct	_	_
+40	Herðubreið	herðubreið	PROPN	NPR-A	_	29	obl	_	_
+41	og	og	CCONJ	CONJ	_	42	cc	_	_
+42	Keili	keilir	PROPN	NPR-A	_	40	conj	_	SpaceAfter=No
+43	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4772703,.4
+# X_ID = ID_MISSING
+# text = Hæstv. ráðherra gæti haft einhvern hólinn við Garðabæ sem mundi prýða ritið .
 1	Hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	gæti	geta	AUX	MDDS	Mood=Sub|Tense=Past	4	aux	_	_
@@ -137,40 +141,44 @@
 12	ritið	rit	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772703,.4
-# X_IDs = ID_missing_5 ; ID_missing_6
-# text = Ég mundi fagna því og ég vonast til að svo verði því að það er gott að fá slíkt plagg með ítarlegum tölugögnum og öðru slíku.
+# sent_id = G-33-4772703,.5
+# X_ID = ID_MISSING
+# text = Ég mundi fagna því
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	3	aux	_	_
 3	fagna	fagna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	því	það	PRON	PRO-D	Case=Dat	3	obj	_	_
-5	og	og	CCONJ	CONJ	_	7	cc	_	_
-6	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-7	vonast	vona	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-8	til	til	ADP	P	_	11	case	_	_
-9	að	að	SCONJ	C	_	11	mark	_	_
-10	svo	svo	ADV	ADV	Degree=Pos	11	advmod	_	_
-11	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	7	obl	_	_
-12	því	það	PRON	PRO-D	Case=Dat	7	obl	_	_
-13	að	að	SCONJ	C	_	18	mark	_	_
-14	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	18	expl	_	_
-15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
-16	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	18	amod	_	_
-17	að	að	PART	TO	_	18	mark	_	_
-18	fá	fá	VERB	VB	VerbForm=Inf	12	ccomp	_	_
-19	slíkt	slíkur	PRON	SUCH-A	Case=Acc	20	det	_	_
-20	plagg	plagg	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obj	_	_
-21	með	með	ADP	P	_	23	case	_	_
-22	ítarlegum	ítarlegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	23	amod	_	_
-23	tölugögnum	tölugögn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	20	obl	_	_
-24	og	og	CCONJ	CONJ	_	25	cc	_	_
-25	öðru	annar	PRON	OTHER-D	Case=Dat	23	conj	_	_
-26	slíku	slíkur	PRON	SUCH-D	Case=Dat	25	appos	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772703,.5
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Varðandi fjárfestingaráætlunina þá mundi ég að mörgu leyti alveg skilja og kaupa rök hæstv. ráðherra ef þetta hefðu verið útgjöld í rekstur eða eiginlega svona illa ígrunduð innspýting í útgjöld ríkisins bara á árinu fyrir kosningar, en það var ekki svoleiðis.
+# sent_id = G-33-4772703,.6
+# X_ID = ID_MISSING
+# text = og ég vonast til að svo verði því að það er gott að fá slíkt plagg með ítarlegum tölugögnum og öðru slíku .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	vonast	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	til	til	ADP	P	_	7	case	_	_
+5	að	að	SCONJ	C	_	7	mark	_	_
+6	svo	svo	ADV	ADV	Degree=Pos	7	advmod	_	_
+7	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	3	obl	_	_
+8	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
+9	að	að	SCONJ	C	_	14	mark	_	_
+10	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	14	expl	_	_
+11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+12	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	14	amod	_	_
+13	að	að	PART	TO	_	14	mark	_	_
+14	fá	fá	VERB	VB	VerbForm=Inf	8	ccomp	_	_
+15	slíkt	slíkur	PRON	SUCH-A	Case=Acc	16	det	_	_
+16	plagg	plagg	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
+17	með	með	ADP	P	_	19	case	_	_
+18	ítarlegum	ítarlegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
+19	tölugögnum	tölugögn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	_
+20	og	og	CCONJ	CONJ	_	21	cc	_	_
+21	öðru	annar	PRON	OTHER-D	Case=Dat	19	conj	_	_
+22	slíku	slíkur	PRON	SUCH-D	Case=Dat	21	appos	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4772703,.7
+# X_ID = ID_MISSING
+# text = Varðandi fjárfestingaráætlunina þá mundi ég að mörgu leyti alveg skilja og kaupa rök hæstv. ráðherra ef þetta hefðu verið útgjöld í rekstur eða eiginlega svona illa ígrunduð innspýting í útgjöld ríkisins bara á árinu fyrir kosningar,
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	10	dep	_	_
 2	fjárfestingaráætlunina	fjárfestingaráætlun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
 3	þá	þá	ADV	ADV	Degree=Pos	10	advmod	_	_
@@ -207,17 +215,21 @@
 34	árinu	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	_
 35	fyrir	fyrir	ADP	P	_	36	case	_	_
 36	kosningar	kosning	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	34	obl	_	SpaceAfter=No
-37	,	,	PUNCT	,	_	34	punct	_	_
-38	en	en	CCONJ	CONJ	_	39	cc	_	_
-39	það	það	PRON	PRO-N	Case=Nom	10	conj	_	OriginalHead=0
-40	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	39	cop	_	_
-41	ekki	ekki	ADV	NEG	_	39	advmod	_	_
-42	svoleiðis	svoleiðis	ADV	ADV	Degree=Pos	39	advmod	_	SpaceAfter=No
-43	.	.	PUNCT	.	_	10	punct	_	_
+37	,	,	PUNCT	,	_	10	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772703,.6
-# X_IDs = ID_missing_9 ; ID_missing_10
-# text = Eftir vandlegan undirbúning, skýrslugerð og mikið samráð fæddist þessi fjárfestingaráætlun og þetta er, herra forseti, fjárfestingaráætlun.
+# sent_id = G-33-4772703,.8
+# X_ID = ID_MISSING
+# text = en það var ekki svoleiðis .
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	2	cop	_	_
+4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
+5	svoleiðis	svoleiðis	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4772703,.9
+# X_ID = ID_MISSING
+# text = Eftir vandlegan undirbúning, skýrslugerð og mikið samráð fæddist þessi fjárfestingaráætlun
 1	Eftir	eftir	ADP	P	_	3	case	_	_
 2	vandlegan	vandlegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	3	amod	_	_
 3	undirbúning	undirbúningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
@@ -229,27 +241,31 @@
 9	fæddist	fæða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 10	þessi	þessi	DET	D-N	Case=Nom	11	det	_	_
 11	fjárfestingaráætlun	fjárfestingaráætlun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
-12	og	og	CCONJ	CONJ	_	19	cc	_	_
-13	þetta	þessi	DET	D-N	Case=Nom	19	nsubj	_	_
-14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	14	punct	_	_
-16	herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	vocative	_	_
-17	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	conj	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	17	punct	_	_
-19	fjárfestingaráætlun	fjárfestingaráætlun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	conj	_	OriginalHead=0|SpaceAfter=No
-20	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772703,.7
-# X_ID = ID_missing_11
-# text = Og í hverju?
+# sent_id = G-33-4772703,.10
+# X_ID = ID_MISSING
+# text = og þetta er, herra forseti, fjárfestingaráætlun .
+1	og	og	CCONJ	CONJ	_	8	cc	_	_
+2	þetta	þessi	DET	D-N	Case=Nom	8	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	vocative	_	_
+6	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	conj	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	fjárfestingaráætlun	fjárfestingaráætlun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = G-33-4772703,.11
+# X_ID = ID_MISSING
+# text = Og í hverju ?
 1	Og	og	CCONJ	CONJ	_	0	root	_	_
 2	í	í	ADP	P	_	3	case	_	_
 3	hverju	hver	PRON	WPRO-D	Case=Dat	1	obl	_	SpaceAfter=No
 4	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772703,.8
-# X_ID = ID_missing_12
-# text = Í rannsóknum, í þróun, í tækni, í nýsköpun, skapandi greinum og þeim sprotum sem við vonuðumst til að við værum að hjálpa af stað og mundu síðan hjálpa okkur á komandi árum í gegnum aukna verðmætasköpun og umsvif.
+# sent_id = G-33-4772703,.12
+# X_ID = ID_MISSING
+# text = Í rannsóknum, í þróun, í tækni, í nýsköpun, skapandi greinum og þeim sprotum sem við vonuðumst til að við værum að hjálpa af stað og mundu síðan hjálpa okkur á komandi árum í gegnum aukna verðmætasköpun og umsvif .
 1	Í	í	ADP	P	_	2	case	_	_
 2	rannsóknum	rannsókn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	2	punct	_	_
@@ -294,9 +310,9 @@
 42	umsvif	umsvif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	40	conj	_	SpaceAfter=No
 43	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772703,.9
-# X_ID = ID_missing_13
-# text = Og það eru gríðarlegir möguleikar þarna.
+# sent_id = G-33-4772703,.13
+# X_ID = ID_MISSING
+# text = Og það eru gríðarlegir möguleikar þarna .
 1	Og	og	CCONJ	CONJ	_	5	cc	_	_
 2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -305,9 +321,9 @@
 6	þarna	þarna	ADV	ADV	Degree=Pos	5	advmod	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772703,.10
-# X_ID = ID_missing_14
-# text = Tökum hönnun sem menn voru fyrir ekkert löngu kannski ekkert að flokka sem mikilvægan þátt í atvinnulífi og þróun.
+# sent_id = G-33-4772703,.14
+# X_ID = ID_MISSING
+# text = Tökum hönnun sem menn voru fyrir ekkert löngu kannski ekkert að flokka sem mikilvægan þátt í atvinnulífi og þróun .
 1	Tökum	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	hönnun	hönnun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
 3	sem	sem	SCONJ	C	_	12	mark	_	_
@@ -329,9 +345,9 @@
 19	þróun	þróun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	conj	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_SJS_2013_G-33-4772703,.11
-# X_IDs = ID_missing_15 ; ID_missing_16
-# text = 45 milljóna sjóður í að hlúa að hönnun og koma henni betur Forseti hringir. á framfæri sem mikilvægum þætti nýsköpunar og þróunar höfum við virkilega ekki efni á því að halda honum áfram?
+# sent_id = G-33-4772703,.15
+# X_ID = ID_MISSING
+# text = 45 milljóna sjóður í að hlúa að hönnun og koma henni betur Forseti hringir . á framfæri sem mikilvægum þætti nýsköpunar og þróunar
 1	45	45	NUM	NUM-G	Case=Gen	2	nummod	_	_
 2	milljóna	milljón	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	nmod:poss	_	_
 3	sjóður	sjóður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
@@ -355,16 +371,17 @@
 21	nýsköpunar	nýsköpun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	_
 22	og	og	CCONJ	CONJ	_	23	cc	_	_
 23	þróunar	þróun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	conj	_	_
-24	höfum	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-25	við	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
-26	virkilega	virkilega	ADV	ADV	Degree=Pos	24	advmod	_	_
-27	ekki	ekki	ADV	NEG	_	24	advmod	_	_
-28	efni	efni	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	24	obj	_	_
-29	á	á	ADP	P	_	30	case	_	_
-30	því	það	PRON	PRO-D	Case=Dat	28	obl	_	_
-31	að	að	PART	TO	_	32	mark	_	_
-32	halda	halda	VERB	VB	VerbForm=Inf	30	xcomp	_	_
-33	honum	hann	PRON	PRO-D	Case=Dat	32	obj	_	_
-34	áfram	áfram	ADV	ADV	Degree=Pos	32	advmod	_	SpaceAfter=No
-35	?	?	PUNCT	.	_	3	punct	_	_
+
+1	höfum	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	við	ég	PRON	PRO-N	Case=Nom	1	nsubj	_	_
+3	virkilega	virkilega	ADV	ADV	Degree=Pos	1	advmod	_	_
+4	ekki	ekki	ADV	NEG	_	1	advmod	_	_
+5	efni	efni	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obj	_	_
+6	á	á	ADP	P	_	7	case	_	_
+7	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
+8	að	að	PART	TO	_	9	mark	_	_
+9	halda	halda	VERB	VB	VerbForm=Inf	7	xcomp	_	_
+10	honum	hann	PRON	PRO-D	Case=Dat	9	obj	_	_
+11	áfram	áfram	ADV	ADV	Degree=Pos	9	advmod	_	_
+12	?	?	PUNCT	.	_	1	punct	_	_
 

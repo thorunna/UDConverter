@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4808309,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Virðulegi forseti. Ég biðst forláts á því að hafa ekki verið mjög nákvæmur en það var vegna þess að mig langaði til að leiða umræðuna yfir í eitthvað aðeins lausnamiðaðra, með fullri virðingu og þótt ég taki undir ræðu hv. þingmanns sem hann hélt áðan, a.m.k. það sem ég man eftir.
+# sent_id = G-33-4808309,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég biðst forláts á því að hafa ekki verið mjög nákvæmur
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -15,51 +15,55 @@
 12	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	9	cop	_	_
 13	mjög	mjög	ADV	ADV	Degree=Pos	14	amod	_	_
 14	nákvæmur	nákvæmur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
-15	en	en	CCONJ	CONJ	_	19	cc	_	_
-16	það	það	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-17	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	19	cop	_	_
-18	vegna	vegna	ADP	P	_	19	case	_	_
-19	þess	það	PRON	PRO-G	Case=Gen	5	conj	_	OriginalHead=0
-20	að	að	SCONJ	C	_	22	mark	_	_
-21	mig	ég	PRON	PRO-A	Case=Acc	22	nsubj	_	_
-22	langaði	langa	VERB	VBDI	Mood=Ind|Tense=Past	19	ccomp	_	_
-23	til	til	ADP	P	_	25	case	_	_
-24	að	að	PART	TO	_	25	mark	_	_
-25	leiða	leiða	VERB	VB	VerbForm=Inf	22	obl	_	_
-26	umræðuna	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obj	_	_
-27	yfir	yfir	ADV	ADV	Degree=Pos	29	advmod	_	_
-28	í	í	ADP	P	_	29	case	_	_
-29	eitthvað	einhver	DET	Q-A	Case=Acc	25	obl	_	_
-30	aðeins	aðeins	ADV	ADV	Degree=Pos	31	amod	_	_
-31	lausnamiðaðra	lausnamiðaður	ADJ	ADJ-A	Case=Acc|Degree=Pos	29	amod	_	SpaceAfter=No
-32	,	,	PUNCT	,	_	31	punct	_	_
-33	með	með	ADP	P	_	35	case	_	_
-34	fullri	fullur	ADJ	ADJ-D	Case=Dat|Degree=Pos	35	amod	_	_
-35	virðingu	virðing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
-36	og	og	CCONJ	CONJ	_	19	cc	_	_
-37	þótt	þótt	ADP	P	_	39	case	_	_
-38	ég	ég	PRON	PRO-N	Case=Nom	39	nsubj	_	_
-39	taki	taka	VERB	VBPS	Mood=Sub|Tense=Pres	19	obl	_	_
-40	undir	undir	ADP	P	_	41	case	_	_
-41	ræðu	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	39	obl	_	_
-42	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	43	amod	_	_
-43	þingmanns	þingmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	41	nmod:poss	_	_
-44	sem	sem	SCONJ	C	_	46	mark	_	_
-45	hann	hann	PRON	PRO-N	Case=Nom	46	nsubj	_	_
-46	hélt	halda	VERB	VBDI	Mood=Ind|Tense=Past	41	acl:relcl	_	_
-47	áðan	áðan	ADV	ADV	Degree=Pos	46	advmod	_	SpaceAfter=No
-48	,	,	PUNCT	,	_	47	punct	_	_
-49	a.m.k.	a.m.k.	X	as	_	19	obl	_	_
-50	það	sá	DET	D-A	Case=Acc	19	obl	_	_
-51	sem	sem	SCONJ	C	_	53	mark	_	_
-52	ég	ég	PRON	PRO-N	Case=Nom	53	nsubj	_	_
-53	man	muna	VERB	VBPI	Mood=Ind|Tense=Pres	50	acl:relcl	_	_
-54	eftir	eftir	ADP	P	_	53	obl	_	SpaceAfter=No
-55	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4808309,.2
-# X_IDs = ID_missing_3 ; ID_missing_4
-# text = Ég var sérstaklega sammála hv. þm. Ragnheiði Ríkharðsdóttur um umræðuformið, þá stöðu við erum hér í og hvers vegna við erum að funda langt fram á kvöld í gær, hvers vegna við erum að karpa um það hver sé í þingsal og hver sé að hlusta á það sem heyrist í sjónvarpinu eða á netinu eða hvaðeina, en ítreka að það var ekki þangað sem mig langaði að leiða umræðuna.
+# sent_id = G-33-4808309,.2
+# X_ID = ID_MISSING
+# text = en það var vegna þess að mig langaði til að leiða umræðuna yfir í eitthvað aðeins lausnamiðaðra, með fullri virðingu og þótt ég taki undir ræðu hv. þingmanns sem hann hélt áðan, a.m.k. það sem ég man eftir .
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
+4	vegna	vegna	ADP	P	_	5	case	_	_
+5	þess	það	PRON	PRO-G	Case=Gen	0	root	_	_
+6	að	að	SCONJ	C	_	8	mark	_	_
+7	mig	ég	PRON	PRO-A	Case=Acc	8	nsubj	_	_
+8	langaði	langa	VERB	VBDI	Mood=Ind|Tense=Past	5	ccomp	_	_
+9	til	til	ADP	P	_	11	case	_	_
+10	að	að	PART	TO	_	11	mark	_	_
+11	leiða	leiða	VERB	VB	VerbForm=Inf	8	obl	_	_
+12	umræðuna	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
+13	yfir	yfir	ADV	ADV	Degree=Pos	15	advmod	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	eitthvað	einhver	DET	Q-A	Case=Acc	11	obl	_	_
+16	aðeins	aðeins	ADV	ADV	Degree=Pos	17	amod	_	_
+17	lausnamiðaðra	lausnamiðaður	ADJ	ADJ-A	Case=Acc|Degree=Pos	15	amod	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	með	með	ADP	P	_	21	case	_	_
+20	fullri	fullur	ADJ	ADJ-D	Case=Dat|Degree=Pos	21	amod	_	_
+21	virðingu	virðing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+22	og	og	CCONJ	CONJ	_	5	cc	_	_
+23	þótt	þótt	ADP	P	_	25	case	_	_
+24	ég	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
+25	taki	taka	VERB	VBPS	Mood=Sub|Tense=Pres	5	obl	_	_
+26	undir	undir	ADP	P	_	27	case	_	_
+27	ræðu	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obl	_	_
+28	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	29	amod	_	_
+29	þingmanns	þingmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	27	nmod:poss	_	_
+30	sem	sem	SCONJ	C	_	32	mark	_	_
+31	hann	hann	PRON	PRO-N	Case=Nom	32	nsubj	_	_
+32	hélt	halda	VERB	VBDI	Mood=Ind|Tense=Past	27	acl:relcl	_	_
+33	áðan	áðan	ADV	ADV	Degree=Pos	32	advmod	_	SpaceAfter=No
+34	,	,	PUNCT	,	_	33	punct	_	_
+35	a.m.k.	a.m.k.	X	as	_	5	obl	_	_
+36	það	sá	DET	D-A	Case=Acc	5	obl	_	_
+37	sem	sem	SCONJ	C	_	39	mark	_	_
+38	ég	ég	PRON	PRO-N	Case=Nom	39	nsubj	_	_
+39	man	muna	VERB	VBPI	Mood=Ind|Tense=Pres	36	acl:relcl	_	_
+40	eftir	eftir	ADP	P	_	39	obl	_	SpaceAfter=No
+41	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4808309,.3
+# X_ID = ID_MISSING
+# text = Ég var sérstaklega sammála hv. þm. Ragnheiði Ríkharðsdóttur um umræðuformið, þá stöðu við erum hér í og hvers vegna við erum að funda langt fram á kvöld í gær, hvers vegna við erum að karpa um það hver sé í þingsal og hver sé að hlusta á það sem heyrist í sjónvarpinu eða á netinu eða hvaðeina,
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 3	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -119,25 +123,26 @@
 57	netinu	net	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	54	conj	_	_
 58	eða	eða	CCONJ	CONJ	_	59	cc	_	_
 59	hvaðeina	hvaðeina	PRON	PRO-A	Case=Acc	43	conj	_	SpaceAfter=No
-60	,	,	PUNCT	,	_	43	punct	_	_
-61	en	en	CCONJ	CONJ	_	62	cc	_	_
-62	ítreka	ítreka	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-63	að	að	SCONJ	C	_	64	mark	_	_
-64	það	það	PRON	PRO-N	Case=Nom	62	xcomp	_	_
-65	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	64	cop	_	_
-66	ekki	ekki	ADV	NEG	_	64	advmod	_	_
-67	þangað	þangað	ADV	ADV	Degree=Pos	64	advmod	_	_
-68	sem	sem	SCONJ	C	_	70	mark	_	_
-69	mig	ég	PRON	PRO-A	Case=Acc	70	nsubj	_	_
-70	langaði	langa	VERB	VBDI	Mood=Ind|Tense=Past	64	acl:relcl	_	_
-71	að	að	PART	TO	_	72	mark	_	_
-72	leiða	leiða	VERB	VB	VerbForm=Inf	70	xcomp	_	_
-73	umræðuna	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	72	obj	_	SpaceAfter=No
-74	.	.	PUNCT	.	_	4	punct	_	_
+60	,	,	PUNCT	,	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4808309,.3
-# X_ID = ID_missing_5
-# text = Ég vildi bara nefna það til að það væri einhvers staðar staðfest á netinu.
+# sent_id = G-33-4808309,.4
+# X_ID = ID_MISSING
+# text = en ítreka að það var ekki þangað sem mig langaði að leiða umræðuna .
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	ítreka	ítreka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	að	að	SCONJ	C	_	4	mark	_	_
+4	það	það	PRON	PRO-N	Case=Nom	2	xcomp	_	_
+5	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+6	ekki	ekki	ADV	NEG	_	4	advmod	_	_
+7	þangað	þangað	ADV	ADV	Degree=Pos	4	advmod	_	_
+8	sem	sem	SCONJ	C	_	10	mark	_	_
+9	mig	ég	PRON	PRO-A	Case=Acc	10	nsubj	_	_
+10	langaði	langa	VERB	VBDI	Mood=Ind|Tense=Past	4	acl:relcl	_	_
+11	að	að	PART	TO	_	12	mark	_	_
+12	leiða	leiða	VERB	VB	VerbForm=Inf	10	xcomp	_	_
+13	umræðuna	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	2	punct	_	_
+
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	vildi	vilja	AUX	MDDI	Mood=Ind|Tense=Past	4	aux	_	_
 3	bara	bara	ADV	FP	Degree=Pos	4	advmod	_	_
@@ -151,6 +156,6 @@
 11	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	obl	_	_
 12	staðfest	staðfesta	VERB	VAN	Tense=Past|VerbForm=Part	4	obl	_	_
 13	á	á	ADP	P	_	14	case	_	_
-14	netinu	net	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+14	netinu	net	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
 15	.	.	PUNCT	.	_	4	punct	_	_
 

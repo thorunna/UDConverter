@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4584345,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Ég vil þakka hæstv. ráðherra fyrir mjög jákvæð svör.
+# sent_id = G-33-4584345,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég vil þakka hæstv. ráðherra fyrir mjög jákvæð svör .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -15,29 +15,33 @@
 12	svör	svar	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4584345,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Ég er mjög ánægður með þau og sjálfsagt mun hv. nefnd taka þetta til greina.
+# sent_id = G-33-4584345,.2
+# X_ID = ID_MISSING
+# text = Ég er mjög ánægður með þau
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
 4	ánægður	ánægður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 5	með	með	ADP	P	_	6	case	_	_
 6	þau	það	PRON	PRO-A	Case=Acc	4	amod	_	_
-7	og	og	CCONJ	CONJ	_	12	cc	_	_
-8	sjálfsagt	sjálfsagt	ADV	ADV	Degree=Pos	12	advmod	_	_
-9	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	12	aux	_	_
-10	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
-11	nefnd	nefnd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
-12	taka	taka	VERB	VB	VerbForm=Inf	4	conj	_	OriginalHead=0
-13	þetta	þessi	DET	D-A	Case=Acc	12	obj	_	_
-14	til	til	ADP	P	_	15	case	_	_
-15	greina	grein	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	obl	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4584345,.3
-# X_ID = ID_missing_4
-# text = Mig langar að nefna til skýringar að það sem oft vefst fyrir fólki þegar kemur að þessu er munurinn á gögnum og kerfinu sem sér um gögnin.
+# sent_id = G-33-4584345,.3
+# X_ID = ID_MISSING
+# text = og sjálfsagt mun hv. nefnd taka þetta til greina .
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	sjálfsagt	sjálfsagt	ADV	ADV	Degree=Pos	6	advmod	_	_
+3	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
+4	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
+5	nefnd	nefnd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+6	taka	taka	VERB	VB	VerbForm=Inf	0	root	_	_
+7	þetta	þessi	DET	D-A	Case=Acc	6	obj	_	_
+8	til	til	ADP	P	_	9	case	_	_
+9	greina	grein	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = G-33-4584345,.4
+# X_ID = ID_MISSING
+# text = Mig langar að nefna til skýringar að það sem oft vefst fyrir fólki þegar kemur að þessu er munurinn á gögnum og kerfinu sem sér um gögnin .
 1	Mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
 2	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -67,9 +71,9 @@
 27	gögnin	gagn	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	25	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4584345,.4
-# X_ID = ID_missing_5
-# text = Ég skil vel að það hafi verið einhverjar lagalegar hindranir fyrir því að menn hafi getað unnið við kerfin sjálf.
+# sent_id = G-33-4584345,.5
+# X_ID = ID_MISSING
+# text = Ég skil vel að það hafi verið einhverjar lagalegar hindranir fyrir því að menn hafi getað unnið við kerfin sjálf .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vel	vel	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -92,9 +96,9 @@
 20	sjálf	sjálfur	PRON	PRO-A	Case=Acc	19	appos	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4584345,.5
-# X_ID = ID_missing_6
-# text = Það er náttúrlega kjánalegt svo ekki verði meira sagt.
+# sent_id = G-33-4584345,.6
+# X_ID = ID_MISSING
+# text = Það er náttúrlega kjánalegt svo ekki verði meira sagt .
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	náttúrlega	náttúrlega	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -106,9 +110,9 @@
 9	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	4	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4584345,.6
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Ég hlakka til að koma ábendingum á framfæri við nefndina og treysti því að þetta verði ekkert mál.
+# sent_id = G-33-4584345,.7
+# X_ID = ID_MISSING
+# text = Ég hlakka til að koma ábendingum á framfæri við nefndina
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hlakka	hlakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	til	til	ADP	P	_	5	case	_	_
@@ -119,13 +123,14 @@
 8	framfæri	framfæri	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
 9	við	við	ADP	P	_	10	case	_	_
 10	nefndina	nefnd	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
-11	og	og	CCONJ	CONJ	_	12	cc	_	_
-12	treysti	treysta	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-13	því	það	PRON	PRO-D	Case=Dat	12	obj	_	_
-14	að	að	SCONJ	C	_	16	mark	_	_
-15	þetta	þessi	DET	D-N	Case=Nom	16	nsubj	_	_
-16	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	13	ccomp	_	_
-17	ekkert	enginn	DET	Q-N	Case=Nom	18	amod	_	_
-18	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	xcomp	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	2	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	treysti	treysta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	því	það	PRON	PRO-D	Case=Dat	2	obj	_	_
+4	að	að	SCONJ	C	_	6	mark	_	_
+5	þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
+6	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
+7	ekkert	enginn	DET	Q-N	Case=Nom	8	amod	_	_
+8	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	xcomp	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
 

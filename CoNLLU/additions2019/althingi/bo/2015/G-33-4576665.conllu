@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2015_G-33-4576665,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Ég þakka spurninguna.
+# sent_id = G-33-4576665,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég þakka spurninguna .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -9,9 +9,9 @@
 6	spurninguna	spurning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4576665,.2
-# X_ID = ID_missing_2
-# text = Ég velti þessu líka fyrir mér.
+# sent_id = G-33-4576665,.2
+# X_ID = ID_MISSING
+# text = Ég velti þessu líka fyrir mér .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	þessu	þessi	DET	D-D	Case=Dat	2	obj	_	_
@@ -20,9 +20,9 @@
 6	mér	ég	PRON	PRO-D	Case=Dat	2	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4576665,.3
-# X_ID = ID_missing_3
-# text = Ég veit ekki á hvaða stað við erum komin ef við ætlum að sniðganga rammaáætlun eins og breytingartillaga meiri hlutans gerir ráð fyrir.
+# sent_id = G-33-4576665,.3
+# X_ID = ID_MISSING
+# text = Ég veit ekki á hvaða stað við erum komin ef við ætlum að sniðganga rammaáætlun eins og breytingartillaga meiri hlutans gerir ráð fyrir .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -48,9 +48,9 @@
 23	fyrir	fyrir	ADP	P	_	21	obl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4576665,.4
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Þá er ég ansi hrædd um að við séum búin að henda tækinu, og við erum búin að gera það með því.
+# sent_id = G-33-4576665,.4
+# X_ID = ID_MISSING
+# text = Þá er ég ansi hrædd um að við séum búin að henda tækinu,
 1	Þá	þá	ADV	ADV	Degree=Pos	5	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -64,21 +64,25 @@
 11	að	að	PART	TO	_	12	mark	_	_
 12	henda	henda	VERB	VB	VerbForm=Inf	10	xcomp	_	_
 13	tækinu	tæki	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obj	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	12	punct	_	_
-15	og	og	CCONJ	CONJ	_	18	cc	_	_
-16	við	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
-17	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
-18	búin	búa	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
-19	að	að	PART	TO	_	20	mark	_	_
-20	gera	gera	VERB	DO	VerbForm=Inf	18	xcomp	_	_
-21	það	það	PRON	PRO-A	Case=Acc	20	obj	_	_
-22	með	með	ADP	P	_	23	case	_	_
-23	því	það	PRON	PRO-D	Case=Dat	20	obl	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	5	punct	_	_
+14	,	,	PUNCT	,	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4576665,.5
-# X_ID = ID_missing_6
-# text = Ég vil þá að það liggi alveg ljóst fyrir að hér verði stjórnmálamenn uppi í pontu, með sinn meiri hluta á bak við sig, eða sitt fólk sem situr hér daglangt og fram á nætur, og treður í gegn þeim virkjunarkostum eða verndarkostum sem þeim sýnist.
+# sent_id = G-33-4576665,.5
+# X_ID = ID_MISSING
+# text = og við erum búin að gera það með því .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+3	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+4	búin	búa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	gera	gera	VERB	DO	VerbForm=Inf	4	xcomp	_	_
+7	það	það	PRON	PRO-A	Case=Acc	6	obj	_	_
+8	með	með	ADP	P	_	9	case	_	_
+9	því	það	PRON	PRO-D	Case=Dat	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4576665,.6
+# X_ID = ID_MISSING
+# text = Ég vil þá að það liggi alveg ljóst fyrir að hér verði stjórnmálamenn uppi í pontu, með sinn meiri hluta á bak við sig, eða sitt fólk sem situr hér daglangt og fram á nætur, og treður í gegn þeim virkjunarkostum eða verndarkostum sem þeim sýnist .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	vil	vilja	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -130,27 +134,27 @@
 49	sýnist	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	44	acl:relcl	_	SpaceAfter=No
 50	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4576665,.6
-# X_ID = ID_missing_7
-# text = Þá verður það þannig.
+# sent_id = G-33-4576665,.7
+# X_ID = ID_MISSING
+# text = Þá verður það þannig .
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	þannig	þannig	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4576665,.7
-# X_ID = ID_missing_8
-# text = Mér finnst það ömurlegt.
+# sent_id = G-33-4576665,.8
+# X_ID = ID_MISSING
+# text = Mér finnst það ömurlegt .
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 4	ömurlegt	ömurlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4576665,.8
-# X_ID = ID_missing_9
-# text = Þess vegna spyrnir maður við fótum.
+# sent_id = G-33-4576665,.9
+# X_ID = ID_MISSING
+# text = Þess vegna spyrnir maður við fótum .
 1	Þess	það	PRON	PRO-G	Case=Gen	3	obl	_	_
 2	vegna	vegna	ADP	P	_	1	case	_	_
 3	spyrnir	spyrna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -159,9 +163,9 @@
 6	fótum	fótur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4576665,.9
-# X_ID = ID_missing_10
-# text = Það þarf að vera rosalega skýrt að það er verið að spyrna við fótum út af því að það er verið að eyðileggja svo gott verkfæri, faglegt verkfæri sem við getum verið svo stolt af.
+# sent_id = G-33-4576665,.10
+# X_ID = ID_MISSING
+# text = Það þarf að vera rosalega skýrt að það er verið að spyrna við fótum út af því að það er verið að eyðileggja svo gott verkfæri, faglegt verkfæri sem við getum verið svo stolt af .
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -200,9 +204,9 @@
 36	af	af	ADP	P	_	35	amod	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4576665,.10
-# X_IDs = ID_missing_11 ; ID_missing_12
-# text = Maður er ekkert alltaf sáttur við Forseti hringir. niðurstöðuna, hvorki náttúruverndarsinnar né virkjunarsinnar, en þarna er verið að finna málamiðlanir.
+# sent_id = G-33-4576665,.11
+# X_ID = ID_MISSING
+# text = Maður er ekkert alltaf sáttur við Forseti hringir . niðurstöðuna, hvorki náttúruverndarsinnar né virkjunarsinnar,
 1	Maður	maður	PRON	MAN-N	_	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	ekkert	enginn	DET	Q-A	Case=Acc	5	obl	_	_
@@ -219,12 +223,13 @@
 14	né	né	CCONJ	CONJ	_	15	cc	_	_
 15	virkjunarsinnar	virkjunarsinni	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	conj	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	5	punct	_	_
-17	en	en	CCONJ	CONJ	_	22	cc	_	_
-18	þarna	þarna	ADV	ADV	Degree=Pos	22	advmod	_	_
-19	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
-20	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	22	cop	_	_
-21	að	að	PART	TO	_	22	mark	_	_
-22	finna	finna	VERB	VB	VerbForm=Inf	5	conj	_	OriginalHead=0
-23	málamiðlanir	málamiðlun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obj	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	5	punct	_	_
+
+1	en	en	CCONJ	CONJ	_	6	cc	_	_
+2	þarna	þarna	ADV	ADV	Degree=Pos	6	advmod	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+4	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	6	cop	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	finna	finna	VERB	VB	VerbForm=Inf	0	root	_	_
+7	málamiðlanir	málamiðlun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
+8	.	.	PUNCT	.	_	6	punct	_	_
 

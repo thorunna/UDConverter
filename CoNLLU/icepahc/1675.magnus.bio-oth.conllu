@@ -1,0 +1,4008 @@
+# sent_id = 1675.MAGNUS.BIO-OTH,.1
+# X_ID = 1675.MAGNUS.BIO-OTH,.1
+# text = Magnús Jónsson ektamaður Ragnheiðar Eggertsdóttur, var sonur Jóns bónda Magnússonar á Svalbarði norður á Svalbarðsströnd, er þar bjó lengi, mikill höfðingi, vitur og hugspár af mörgum haldinn
+1	Magnús	magnús	PROPN	NPR-N	_	8	nsubj	_	_
+2	Jónsson	jónsson	PROPN	NPR-N	_	1	flat:name	_	_
+3	ektamaður	ektamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	_
+4	Ragnheiðar	ragnheiður	PROPN	NPR-G	_	3	nmod:poss	_	_
+5	Eggertsdóttur	eggertsdóttir	PROPN	NPR-G	_	4	flat:name	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	8	cop	_	_
+8	sonur	sonur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+9	Jóns	jón	PROPN	NPR-G	_	8	nmod:poss	_	_
+10	bónda	bóndi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	appos	_	_
+11	Magnússonar	magnússon	PROPN	NPR-G	_	9	dep	_	_
+12	á	á	ADP	P	_	13	case	_	_
+13	Svalbarði	svalbarð	PROPN	NPR-D	_	9	obl	_	_
+14	norður	norður	ADV	ADV	Degree=Pos	16	advmod	_	_
+15	á	á	ADP	P	_	16	case	_	_
+16	Svalbarðsströnd	svalbarðsströnd	PROPN	NPR-D	_	13	obl	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	er	er	SCONJ	C	_	20	mark	_	_
+19	þar	þar	ADV	ADV	Degree=Pos	20	advmod	_	_
+20	bjó	búa	VERB	VBDI	Mood=Ind|Tense=Past	9	acl:relcl	_	_
+21	lengi	lengi	ADV	ADV	Degree=Pos	20	obl	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	mikill	mikill	DET	Q-N	Case=Nom	24	amod	_	_
+24	höfðingi	höfðingi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	appos	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	vitur	vitur	ADJ	ADJ-N	Case=Nom|Degree=Pos	31	xcomp	_	_
+27	og	og	CCONJ	CONJ	_	28	cc	_	_
+28	hugspár	hugspár	ADJ	ADJ-N	Case=Nom|Degree=Pos	26	conj	_	_
+29	af	af	ADP	P	_	30	case	_	_
+30	mörgum	margur	DET	Q-D	Case=Dat	31	obl	_	_
+31	haldinn	halda	VERB	VAN	Tense=Past|VerbForm=Part	24	acl:relcl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.2
+# X_ID = 1675.MAGNUS.BIO-OTH,.2
+# text = sú ætt þaðan komin er kölluð síðan Svalbarðsætt .
+1	sú	sá	DET	D-N	Case=Nom	2	det	_	_
+2	ætt	ætt	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+3	þaðan	þaðan	ADV	ADV	Degree=Pos	4	advmod	_	_
+4	komin	koma	VERB	VBN	Tense=Past|VerbForm=Part	2	acl:relcl	_	_
+5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
+6	kölluð	kalla	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+7	síðan	síðan	ADV	ADV	Degree=Pos	6	advmod	_	_
+8	Svalbarðsætt	svalbarðsætt	PROPN	NPR-N	_	6	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.3
+# X_ID = 1675.MAGNUS.BIO-OTH,.3
+# text = Hans faðir Jón var Magnússon ;
+1	Hans	hann	PRON	PRO-G	Case=Gen	2	nmod:poss	_	_
+2	faðir	faðir	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+3	Jón	jón	PROPN	NPR-N	_	2	appos	_	_
+4	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
+5	Magnússon	magnússon	PROPN	NPR-N	_	0	root	_	SpaceAfter=No
+6	;	;	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.4
+# X_ID = 1675.MAGNUS.BIO-OTH,.4
+# text = sá Magnús var son Þorkels prests Guðbjartssonar, sem lengi hélt Laufásstað í áðurnefndri sveit .
+1	sá	sá	DET	D-N	Case=Nom	2	det	_	_
+2	Magnús	magnús	PROPN	NPR-N	_	4	nsubj	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+4	son	son	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+5	Þorkels	þorkell	PROPN	NPR-G	_	4	nmod:poss	_	_
+6	prests	prestur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	appos	_	_
+7	Guðbjartssonar	guðbjartsson	PROPN	NPR-G	_	5	dep	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	sem	sem	SCONJ	C	_	11	mark	_	_
+10	lengi	lengi	ADV	ADV	Degree=Pos	11	obl	_	_
+11	hélt	halda	VERB	VBDI	Mood=Ind|Tense=Past	5	acl:relcl	_	_
+12	Laufásstað	laufásstaður	PROPN	NPR-A	_	11	obj	_	_
+13	í	í	ADP	P	_	15	case	_	_
+14	áðurnefndri	áðurnefndur	ADJ	ADJ-D	Case=Dat|Degree=Pos	15	amod	_	_
+15	sveit	sveit	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.5
+# X_ID = 1675.MAGNUS.BIO-OTH,.5
+# text = Hann hafði stúderað úti í Þýskalandi
+1	Hann	hann	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+2	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	3	aux	_	_
+3	stúderað	stúdera	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+4	úti	úti	ADV	ADV	Degree=Pos	6	advmod	_	_
+5	í	í	ADP	P	_	6	case	_	_
+6	Þýskalandi	þýskaland	PROPN	NPR-D	_	3	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.6
+# X_ID = 1675.MAGNUS.BIO-OTH,.6
+# text = og var haldinn margkunnandi og fróður .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
+3	haldinn	halda	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+4	margkunnandi	margkunnandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	xcomp	_	_
+5	og	og	CCONJ	CONJ	_	6	cc	_	_
+6	fróður	fróður	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.7
+# X_ID = 1675.MAGNUS.BIO-OTH,.7
+# text = Mælt hefur verið að síra Þorkell hafi átt eina bók sem hann hélt mikið af og lagði á miklar mætur ;
+1	Mælt	mæla	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	1	aux	_	_
+3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	1	cop	_	_
+4	að	að	SCONJ	C	_	8	mark	_	_
+5	síra	síra	PROPN	NPR-N	_	8	nsubj	_	_
+6	Þorkell	þorkell	PROPN	NPR-N	_	5	flat:name	_	_
+7	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	8	aux	_	_
+8	átt	eiga	VERB	VBN	Tense=Past|VerbForm=Part	1	ccomp	_	_
+9	eina	einn	DET	ONE-A	Case=Acc	10	det	_	_
+10	bók	bók	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	_
+11	sem	sem	SCONJ	C	_	13	mark	_	_
+12	hann	hann	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+13	hélt	halda	VERB	VBDI	Mood=Ind|Tense=Past	10	acl:relcl	_	_
+14	mikið	mikill	DET	Q-A	Case=Acc	13	obl	_	_
+15	af	af	ADP	P	_	13	obl	_	_
+16	og	og	CCONJ	CONJ	_	17	cc	_	_
+17	lagði	leggja	VERB	VBDI	Mood=Ind|Tense=Past	13	conj	_	_
+18	á	á	ADP	P	_	17	obl	_	_
+19	miklar	mikill	DET	Q-A	Case=Acc	20	amod	_	_
+20	mætur	mætur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obj	_	SpaceAfter=No
+21	;	;	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.8
+# X_ID = 1675.MAGNUS.BIO-OTH,.8
+# text = sú bók lá inní altari jafnan ;
+1	sú	sá	DET	D-N	Case=Nom	2	det	_	_
+2	bók	bók	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+3	lá	liggja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	inn	inni	ADV	ADV	Degree=Pos	6	advmod	_	SpaceAfter=No
+5	í	í	ADP	P	_	6	case	_	_
+6	altari	altari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+7	jafnan	jafnan	ADV	ADV	Degree=Pos	3	advmod	_	SpaceAfter=No
+8	;	;	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.9
+# X_ID = 1675.MAGNUS.BIO-OTH,.9
+# text = og það var siðvenja presta í þær mundir að geyma í altari kirkjunnar sínar aðkvæðabækur .
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+4	siðvenja	siðvenja	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+5	presta	prestur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
+6	í	í	ADP	P	_	8	case	_	_
+7	þær	sá	DET	D-A	Case=Acc	8	det	_	_
+8	mundir	mund	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
+9	að	að	PART	TO	_	10	mark	_	_
+10	geyma	geyma	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	altari	altari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
+13	kirkjunnar	kirkja	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	nmod:poss	_	_
+14	sínar	sinn	PRON	PRO-A	Case=Acc	15	nmod:poss	_	_
+15	aðkvæðabækur	aðkvæðabók	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.10
+# X_ID = 1675.MAGNUS.BIO-OTH,.10
+# text = Á þeim tíðum var haldið mikið af fróðum mönnum, og ef vel rýndur var, til kunnáttu talið og lagt við tuttugu hundruð til kaups og konumundar .
+1	Á	á	ADP	P	_	3	case	_	_
+2	þeim	það	DET	D-D	Case=Dat	3	det	_	_
+3	tíðum	tíð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
+4	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
+5	haldið	halda	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+6	mikið	mikill	DET	Q-N	Case=Nom	5	nsubj	_	_
+7	af	af	ADP	P	_	9	case	_	_
+8	fróðum	fróður	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
+9	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	og	og	CCONJ	CONJ	_	19	cc	_	_
+12	ef	ef	ADP	P	_	14	case	_	_
+13	vel	vel	ADV	ADV	Degree=Pos	14	advmod	_	_
+14	rýndur	rýna	VERB	VAN	Tense=Past|VerbForm=Part	19	obl	_	_
+15	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	14	cop	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	19	punct	_	_
+17	til	til	ADP	P	_	18	case	_	_
+18	kunnáttu	kunnátta	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	obl	_	_
+19	talið	telja	VERB	VAN	Tense=Past|VerbForm=Part	5	conj	_	_
+20	og	og	CCONJ	CONJ	_	21	cc	_	_
+21	lagt	leggja	VERB	VAN	Tense=Past|VerbForm=Part	5	conj	_	_
+22	við	við	ADP	P	_	24	case	_	_
+23	tuttugu	tuttugu	NUM	NUM-A	Case=Acc	24	nummod	_	_
+24	hundruð	hundrað	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	21	obl	_	_
+25	til	til	ADP	P	_	26	case	_	_
+26	kaups	kaup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	obl	_	_
+27	og	og	CCONJ	CONJ	_	28	cc	_	_
+28	konumundar	konumundur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	26	conj	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.11
+# X_ID = 1675.MAGNUS.BIO-OTH,.11
+# text = En þá þess háttar prestum var sendibréf til skrifað, var utan á bréfið settur virðingatitill sá : frómum og velrýndum etc.
+1	En	en	CCONJ	CONJ	_	15	cc	_	_
+2	þá	þá	ADV	ADV	Degree=Pos	15	advmod	_	_
+3	þess	sá	DET	D-G	Case=Gen	4	det	_	_
+4	háttar	háttur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
+5	prestum	prestur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	nsubj	_	_
+6	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	9	cop	_	_
+7	sendibréf	sendibréf	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	obj	_	_
+8	til	til	ADP	RP	_	9	compound:prt	_	_
+9	skrifað	skrifa	VERB	VAN	Tense=Past|VerbForm=Part	2	advcl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	15	punct	_	_
+11	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	15	cop	_	_
+12	utan	utan	ADV	ADV	Degree=Pos	14	advmod	_	_
+13	á	á	ADP	P	_	14	case	_	_
+14	bréfið	bréf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
+15	settur	setja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+16	virðingatitill	virðingatitill	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
+17	sá	sá	DET	D-N	Case=Nom	16	det	_	SpaceAfter=No
+18	:	:	PUNCT	,	_	17	punct	_	_
+19	frómum	frómur	ADJ	ADJ-D	Case=Dat|Degree=Pos	22	amod	_	_
+20	og	og	CCONJ	CONJ	_	22	cc	_	_
+21	velrýndum	velrýndur	ADJ	ADJ-D	Case=Dat|Degree=Pos	22	amod	_	_
+22	etc.	etc.	X	FW	Foreign=Yes	16	appos	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.12
+# X_ID = 1675.MAGNUS.BIO-OTH,.12
+# text = En þó var svo einn póstur þeirra kirkjulaga sem þá tíðkuðust, að hver sá prestur sem opinberlega frá kirkjunnar söfnuði vísaði aftur burtgripnu fé, þá skyldi hann ei mega embættisgjörð fremja í þrjá sunnudaga .
+1	En	en	CCONJ	CONJ	_	6	cc	_	_
+2	þó	þó	ADV	ADV	Degree=Pos	6	advmod	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
+4	svo	svo	ADV	ADV	Degree=Pos	6	advmod	_	_
+5	einn	einn	DET	ONE-N	Case=Nom	6	det	_	_
+6	póstur	póstur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+7	þeirra	sá	DET	D-G	Case=Gen	8	det	_	_
+8	kirkjulaga	kirkjulög	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	nmod:poss	_	_
+9	sem	sem	SCONJ	C	_	11	mark	_	_
+10	þá	þá	ADV	ADV	Degree=Pos	11	advmod	_	_
+11	tíðkuðust	tíðkast	VERB	VBDI	Mood=Ind|Tense=Past	8	acl:relcl	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	að	að	SCONJ	C	_	33	mark	_	_
+14	hver	hver	DET	WD-N	Case=Nom	16	det	_	_
+15	sá	sá	DET	D-N	Case=Nom	16	det	_	_
+16	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	obj	_	_
+17	sem	sem	SCONJ	C	_	22	mark	_	_
+18	opinberlega	opinberlega	ADV	ADV	Degree=Pos	22	advmod	_	_
+19	frá	frá	ADP	P	_	21	case	_	_
+20	kirkjunnar	kirkja	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	nmod:poss	_	_
+21	söfnuði	söfnuður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
+22	vísaði	vísa	VERB	VBDI	Mood=Ind|Tense=Past	33	obl	_	_
+23	aftur	aftur	ADV	ADV	Degree=Pos	22	advmod	_	_
+24	burtgripnu	burtgrípa	VERB	VAN-D	Case=Dat|Tense=Past|VerbForm=Part	25	amod	_	_
+25	fé	fé	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obj	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	33	punct	_	_
+27	þá	þá	ADV	ADV	Degree=Pos	33	advmod	_	_
+28	skyldi	skulu	AUX	MDDS	Mood=Sub|Tense=Past	33	aux	_	_
+29	hann	hann	PRON	PRO-N	Case=Nom	33	nsubj	_	_
+30	ei	ei	ADV	NEG	_	33	advmod	_	_
+31	mega	mega	AUX	MD	VerbForm=Inf	33	aux	_	_
+32	embættisgjörð	embættisgjörð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obj	_	_
+33	fremja	fremja	VERB	VB	VerbForm=Inf	6	ccomp	_	_
+34	í	í	ADP	P	_	36	case	_	_
+35	þrjá	þrír	NUM	NUM-A	Case=Acc	36	nummod	_	_
+36	sunnudaga	sunnudagur	PROPN	NPRS-A	_	33	obl	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.13
+# X_ID = 1675.MAGNUS.BIO-OTH,.13
+# text = Áður nefndur síra Þorkell Guðbjartsson var mikið afhaldinn af sínu sóknarfólki ásamt öðrum mönnum .
+1	Áður	áður	ADV	ADV	Degree=Pos	2	amod	_	_
+2	nefndur	nefna	VERB	VAN	Tense=Past|VerbForm=Part	3	amod	_	_
+3	síra	síra	PROPN	NPR-N	_	8	nsubj	_	_
+4	Þorkell	þorkell	PROPN	NPR-N	_	3	flat:name	_	_
+5	Guðbjartsson	guðbjartsson	PROPN	NPR-N	_	3	dep	_	_
+6	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	8	cop	_	_
+7	mikið	mikið	DET	Q-N	Case=Nom	8	obl	_	_
+8	afhaldinn	afhalda	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+9	af	af	ADP	P	_	11	case	_	_
+10	sínu	sinn	PRON	PRO-D	Case=Dat	11	nmod:poss	_	_
+11	sóknarfólki	sóknarfólk	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+12	ásamt	ásamt	ADP	P	_	14	case	_	_
+13	öðrum	annar	PRON	OTHERS-D	Case=Dat	14	det	_	_
+14	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.14
+# X_ID = 1675.MAGNUS.BIO-OTH,.14
+# text = Hann var glaðlyndur, gæfur, spakur, örlátur, gestrisinn og lítillátur og ljúfur við hvern mann .
+1	Hann	hann	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
+3	glaðlyndur	glaðlyndur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	gæfur	gæfa	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	spakur	spakur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	örlátur	örlátur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	gestrisinn	gestrisinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
+12	og	og	CCONJ	CONJ	_	3	cc	_	_
+13	lítillátur	lítillátur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
+14	og	og	CCONJ	CONJ	_	3	cc	_	_
+15	ljúfur	ljúfur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
+16	við	við	ADP	P	_	18	case	_	_
+17	hvern	hver	DET	Q-A	Case=Acc	18	amod	_	_
+18	mann	maður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.15
+# X_ID = 1675.MAGNUS.BIO-OTH,.15
+# text = En það orð fór frá honum að hann væri vel rýndur í fyrnsku nokkri sem þá var tíðska víða í þeirri tíð páfadómsins .
+1	En	en	CCONJ	CONJ	_	4	cc	_	_
+2	það	sá	DET	D-N	Case=Nom	3	det	_	_
+3	orð	orð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+4	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+5	frá	frá	ADP	P	_	6	case	_	_
+6	honum	hann	PRON	PRO-D	Case=Dat	4	obl	_	_
+7	að	að	SCONJ	C	_	11	mark	_	_
+8	hann	hann	PRON	PRO-N	Case=Nom	11	nsubj	_	_
+9	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	11	cop	_	_
+10	vel	vel	ADV	ADV	Degree=Pos	11	advmod	_	_
+11	rýndur	rýna	VERB	VAN	Tense=Past|VerbForm=Part	4	ccomp	_	_
+12	í	í	ADP	P	_	13	case	_	_
+13	fyrnsku	fyrnska	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+14	nokkri	nokkur	DET	Q-D	Case=Dat	13	amod	_	_
+15	sem	sem	SCONJ	C	_	18	mark	_	_
+16	þá	þá	ADV	ADV	Degree=Pos	18	advmod	_	_
+17	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	18	cop	_	_
+18	tíðska	tíðska	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	acl:relcl	_	_
+19	víða	víða	ADV	ADV	Degree=Pos	18	advmod	_	_
+20	í	í	ADP	P	_	22	case	_	_
+21	þeirri	sá	DET	D-D	Case=Dat	22	det	_	_
+22	tíð	tíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
+23	páfadómsins	páfadómur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	nmod:poss	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.16
+# X_ID = 1675.MAGNUS.BIO-OTH,.16
+# text = Ei var haldið gott að glettast við hann, því riði nokkur hestum þeim sem hann lagði mætur á, leynilega án hans leyfis, urðu þeir fastir á hestbaki,
+1	Ei	ei	ADV	NEG	_	3	advmod	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
+3	haldið	halda	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+4	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	xcomp	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	glettast	glettast	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+7	við	við	ADP	P	_	8	case	_	_
+8	hann	hann	PRON	PRO-A	Case=Acc	6	obl	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
+11	riði	ríða	VERB	VBDS	Mood=Sub|Tense=Past	26	advcl	_	_
+12	nokkur	nokkur	DET	Q-N	Case=Nom	11	nsubj	_	_
+13	hestum	hestur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obj	_	_
+14	þeim	hann	DET	D-D	Case=Dat	13	det	_	_
+15	sem	sem	SCONJ	C	_	17	mark	_	_
+16	hann	hann	PRON	PRO-N	Case=Nom	17	nsubj	_	_
+17	lagði	leggja	VERB	VBDI	Mood=Ind|Tense=Past	13	acl:relcl	_	_
+18	mætur	mætur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obj	_	_
+19	á	á	ADP	P	_	17	obl	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	leynilega	leynilega	ADV	ADV	Degree=Pos	17	advmod	_	_
+22	án	án	ADP	P	_	24	case	_	_
+23	hans	hann	PRON	PRO-G	Case=Gen	24	nmod:poss	_	_
+24	leyfis	leyfi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	urðu	verða	VERB	RDDI	Mood=Ind|Tense=Past	10	ccomp	_	_
+27	þeir	hann	PRON	PRO-N	Case=Nom	26	nsubj	_	_
+28	fastir	fastur	ADJ	ADJ-N	Case=Nom|Degree=Pos	26	amod	_	_
+29	á	á	ADP	P	_	30	case	_	_
+30	hestbaki	hestbak	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
+31	,	,	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.17
+# X_ID = 1675.MAGNUS.BIO-OTH,.17
+# text = en hesturinn hljóp til bæjardyra á heimili prestsins,
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	hesturinn	hestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+3	hljóp	hlaupa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	til	til	ADP	P	_	5	case	_	_
+5	bæjardyra	bæjardyr	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	obl	_	_
+6	á	á	ADP	P	_	7	case	_	_
+7	heimili	heimili	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+8	prestsins	prestur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	SpaceAfter=No
+9	,	,	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.18
+# X_ID = 1675.MAGNUS.BIO-OTH,.18
+# text = og þar mátti maður á hesti bíða þar til prestur skriftaði og lausan gaf manninn .
+1	og	og	CCONJ	CONJ	_	7	cc	_	_
+2	þar	þar	ADV	ADV	Degree=Pos	7	advmod	_	_
+3	mátti	mega	AUX	MDDI	Mood=Ind|Tense=Past	7	aux	_	_
+4	maður	maður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	hesti	hestur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
+7	bíða	bíða	VERB	VB	VerbForm=Inf	0	root	_	_
+8	þar	þar	ADV	ADV	Degree=Pos	11	advmod	_	_
+9	til	til	ADP	P	_	11	case	_	_
+10	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
+11	skriftaði	skrifta	VERB	VBDI	Mood=Ind|Tense=Past	7	obl	_	_
+12	og	og	CCONJ	CONJ	_	14	cc	_	_
+13	lausan	laus	ADJ	ADJ-A	Case=Acc|Degree=Pos	14	amod	_	_
+14	gaf	gefa	VERB	VBDI	Mood=Ind|Tense=Past	11	conj	_	_
+15	manninn	maður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.19
+# X_ID = 1675.MAGNUS.BIO-OTH,.19
+# text = Einnig væri nokkuð frá honum launstolið, kom þjófurinn til hans aftur með það
+1	Einnig	einnig	ADV	ALSO	_	8	advmod	_	_
+2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	6	cop	_	_
+3	nokkuð	nokkur	DET	Q-N	Case=Nom	6	nsubj	_	_
+4	frá	frá	ADP	P	_	5	case	_	_
+5	honum	hann	PRON	PRO-D	Case=Dat	6	obl	_	_
+6	launstolið	launstela	VERB	VAN	Tense=Past|VerbForm=Part	8	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+9	þjófurinn	þjófur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+10	til	til	ADP	P	_	11	case	_	_
+11	hans	hann	PRON	PRO-G	Case=Gen	8	obl	_	_
+12	aftur	aftur	ADV	ADV	Degree=Pos	8	advmod	_	_
+13	með	með	ADP	P	_	14	case	_	_
+14	það	það	PRON	PRO-A	Case=Acc	8	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.20
+# X_ID = 1675.MAGNUS.BIO-OTH,.20
+# text = og sagði upp alla sögu,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	upp	upp	ADP	RP	_	2	compound:prt	_	_
+4	alla	allur	DET	Q-A	Case=Acc	5	amod	_	_
+5	sögu	saga	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
+6	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.21
+# X_ID = 1675.MAGNUS.BIO-OTH,.21
+# text = en hann varaði hann við að gjöra slíkt ei oftar
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	hann	hann	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	varaði	vara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	hann	hann	PRON	PRO-A	Case=Acc	3	obj	_	_
+5	við	við	ADP	P	_	7	case	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	gjöra	gera	VERB	DO	VerbForm=Inf	3	obl	_	_
+8	slíkt	slíkur	PRON	SUCH-A	Case=Acc	7	obj	_	_
+9	ei	ei	ADV	NEG	_	7	advmod	_	_
+10	oftar	oft	ADV	ADVR	Degree=Cmp	7	advmod	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.22
+# X_ID = 1675.MAGNUS.BIO-OTH,.22
+# text = og lét hann bíhalda því sem hann tekið hafði .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	lét	láta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	hann	hann	PRON	PRO-A	Case=Acc	4	nsubj	_	_
+4	bíhalda	bíhalda	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+5	því	sá	DET	D-D	Case=Dat	4	obj	_	_
+6	sem	sem	SCONJ	C	_	8	mark	_	_
+7	hann	hann	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+8	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
+9	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	8	aux	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.23
+# X_ID = 1675.MAGNUS.BIO-OTH,.23
+# text = Að slíku forðaðist hann öngva menn .
+1	Að	að	ADP	P	_	2	case	_	_
+2	slíku	slíkur	PRON	PRO-D	Case=Dat	3	obl	_	_
+3	forðaðist	forðast	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	hann	hann	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+5	öngva	enginn	DET	Q-A	Case=Acc	6	amod	_	_
+6	menn	maður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.24
+# X_ID = 1675.MAGNUS.BIO-OTH,.24
+# text = Biskup á Hólum sem var hans yfirmaður, heyrði mikið talað um prestsins fróðleik
+1	Biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
+2	á	á	ADP	P	_	3	case	_	_
+3	Hólum	hólar	PROPN	NPRS-D	_	1	obl	_	_
+4	sem	sem	SCONJ	C	_	7	mark	_	_
+5	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
+6	hans	hann	PRON	PRO-G	Case=Gen	7	nmod:poss	_	_
+7	yfirmaður	yfirmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	acl:relcl	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	heyrði	heyra	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+10	mikið	mikið	DET	Q-A	Case=Acc	11	obl	_	_
+11	talað	tala	VERB	VAN	Tense=Past|VerbForm=Part	9	ccomp	_	_
+12	um	um	ADP	P	_	14	case	_	_
+13	prestsins	prestur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	nmod:poss	_	_
+14	fróðleik	fróðleikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.25
+# X_ID = 1675.MAGNUS.BIO-OTH,.25
+# text = og kallaði þetta forneskju að vera,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kallaði	kalla	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
+4	forneskju	forneskja	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	ccomp	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	vera	vera	AUX	BE	VerbForm=Inf	2	xcomp	_	SpaceAfter=No
+7	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.26
+# X_ID = 1675.MAGNUS.BIO-OTH,.26
+# text = boðaði því síra Þorkel fyrir sig heim til Hólastaðar .
+1	boðaði	boða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	því	það	PRON	PRO-D	Case=Dat	1	obl	_	_
+3	síra	síra	PROPN	NPR-A	_	1	obj	_	_
+4	Þorkel	þorkel	PROPN	NPR-A	_	3	flat:name	_	_
+5	fyrir	fyrir	ADP	P	_	6	case	_	_
+6	sig	sig	PRON	PRO-A	Case=Acc	1	obl	_	_
+7	heim	heim	ADV	ADV	Degree=Pos	9	advmod	_	_
+8	til	til	ADP	P	_	9	case	_	_
+9	Hólastaðar	hólastaður	PROPN	NPR-G	_	1	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.27
+# X_ID = 1675.MAGNUS.BIO-OTH,.27
+# text = Presturinn sýndi sig í sannri hlýðni við biskup
+1	Presturinn	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	sýndi	sýna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	sig	sig	PRON	PRO-A	Case=Acc	2	obj	_	_
+4	í	í	ADP	P	_	6	case	_	_
+5	sannri	sannur	ADJ	ADJ-D	Case=Dat|Degree=Pos	6	amod	_	_
+6	hlýðni	hlýðni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+7	við	við	ADP	P	_	8	case	_	_
+8	biskup	biskup	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.28
+# X_ID = 1675.MAGNUS.BIO-OTH,.28
+# text = og kom til hans heim á stólinn .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	til	til	ADP	P	_	4	case	_	_
+4	hans	hann	PRON	PRO-G	Case=Gen	2	obl	_	_
+5	heim	heim	ADV	ADV	Degree=Pos	7	advmod	_	_
+6	á	á	ADP	P	_	7	case	_	_
+7	stólinn	stóll	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.29
+# X_ID = 1675.MAGNUS.BIO-OTH,.29
+# text = Þegar biskupinn heyrði að hann var kominn, kallaði hann prest fyrir sig ;
+1	Þegar	þegar	ADP	P	_	3	case	_	_
+2	biskupinn	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+3	heyrði	heyra	VERB	VBDI	Mood=Ind|Tense=Past	9	obl	_	_
+4	að	að	SCONJ	C	_	7	mark	_	_
+5	hann	hann	PRON	PRO-N	Case=Nom	7	nsubj	_	_
+6	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
+7	kominn	koma	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	kallaði	kalla	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+10	hann	hann	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+11	prest	prestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
+12	fyrir	fyrir	ADP	P	_	13	case	_	_
+13	sig	sig	PRON	PRO-A	Case=Acc	9	obl	_	SpaceAfter=No
+14	;	;	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.30
+# X_ID = 1675.MAGNUS.BIO-OTH,.30
+# text = hann sat í sínum biskupsstól og nokkrir klerkar hjá honum ;
+1	hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	sat	sitja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	í	í	ADP	P	_	5	case	_	_
+4	sínum	sinn	PRON	PRO-D	Case=Dat	5	nmod:poss	_	_
+5	biskupsstól	biskupsstóll	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+6	og	og	CCONJ	CONJ	_	10	cc	_	_
+7	nokkrir	nokkur	DET	Q-N	Case=Nom	8	amod	_	_
+8	klerkar	klerkur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
+9	hjá	hjá	ADP	P	_	10	case	_	_
+10	honum	hann	PRON	PRO-D	Case=Dat	2	conj	_	SpaceAfter=No
+11	;	;	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.31
+# X_ID = 1675.MAGNUS.BIO-OTH,.31
+# text = heilsaði prestur biskupi
+1	heilsaði	heilsa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
+3	biskupi	biskup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.32
+# X_ID = 1675.MAGNUS.BIO-OTH,.32
+# text = og hneigði auðmjúklega .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	hneigði	hneigja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	auðmjúklega	auðmjúklega	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.33
+# X_ID = 1675.MAGNUS.BIO-OTH,.33
+# text = Biskup spyr hvort satt sé um hans forneskju sem út bærist,
+1	Biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	hvort	hvort	SCONJ	WQ	_	4	mark	_	_
+4	satt	sannur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	_
+5	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	4	cop	_	_
+6	um	um	ADP	P	_	8	case	_	_
+7	hans	hann	PRON	PRO-G	Case=Gen	8	nmod:poss	_	_
+8	forneskju	forneskja	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+9	sem	sem	SCONJ	C	_	11	mark	_	_
+10	út	út	ADP	RP	_	11	compound:prt	_	_
+11	bærist	berast	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	SpaceAfter=No
+12	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.34
+# X_ID = 1675.MAGNUS.BIO-OTH,.34
+# text = straffaði hann með mörgum hótunarorðum,
+1	straffaði	straffa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	hann	hann	PRON	PRO-A	Case=Acc	1	obj	_	_
+3	með	með	ADP	P	_	5	case	_	_
+4	mörgum	margur	DET	Q-D	Case=Dat	5	amod	_	_
+5	hótunarorðum	hótunarorð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	1	obl	_	SpaceAfter=No
+6	,	,	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.35
+# X_ID = 1675.MAGNUS.BIO-OTH,.35
+# text = en presturinn afsakaði sig
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	presturinn	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+3	afsakaði	afsaka	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	sig	sig	PRON	PRO-A	Case=Acc	3	obj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.36
+# X_ID = 1675.MAGNUS.BIO-OTH,.36
+# text = og kvað með orðum aukið,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kvað	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	með	með	ADP	P	_	4	case	_	_
+4	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
+5	aukið	auka	VERB	VAN	Tense=Past|VerbForm=Part	2	xcomp	_	SpaceAfter=No
+6	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.37
+# X_ID = 1675.MAGNUS.BIO-OTH,.37
+# text = en það gilti lítið,
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	gilti	gilda	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	lítið	lítill	DET	Q-N	Case=Nom	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.38
+# X_ID = 1675.MAGNUS.BIO-OTH,.38
+# text = og kvað biskup að hann vildi hann af setja .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kvað	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+4	að	að	SCONJ	C	_	9	mark	_	_
+5	hann	hann	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+6	vildi	vilja	AUX	MDDI	Mood=Ind|Tense=Past	9	aux	_	_
+7	hann	hann	PRON	PRO-A	Case=Acc	9	obj	_	_
+8	af	af	ADP	RP	_	9	compound:prt	_	_
+9	setja	setja	VERB	VB	VerbForm=Inf	2	ccomp	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.39
+# X_ID = 1675.MAGNUS.BIO-OTH,.39
+# text = Gekk þetta lengi, þar til leið að miðdagsmáltíðartíma ;
+1	Gekk	ganga	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	þetta	þessi	DET	D-N	Case=Nom	1	nsubj	_	_
+3	lengi	lengi	ADV	ADV	Degree=Pos	1	obl	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	þar	þar	ADV	ADV	Degree=Pos	7	advmod	_	_
+6	til	til	ADP	P	_	7	case	_	_
+7	leið	líða	VERB	VBDI	Mood=Ind|Tense=Past	1	obl	_	_
+8	að	að	ADP	P	_	9	case	_	_
+9	miðdagsmáltíðartíma	miðdagsmáltíðartími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
+10	;	;	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.40
+# X_ID = 1675.MAGNUS.BIO-OTH,.40
+# text = þá kom bryti
+1	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	bryti	bryti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.41
+# X_ID = 1675.MAGNUS.BIO-OTH,.41
+# text = og sagði að dúkur væri breiddur og matur á borð kominn .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	að	að	SCONJ	C	_	6	mark	_	_
+4	dúkur	dúkur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+5	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	6	cop	_	_
+6	breiddur	breiða	VERB	VAN	Tense=Past|VerbForm=Part	2	ccomp	_	_
+7	og	og	CCONJ	CONJ	_	8	cc	_	_
+8	matur	matur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	_
+9	á	á	ADP	P	_	10	case	_	_
+10	borð	borð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
+11	kominn	koma	VERB	VBN	Tense=Past|VerbForm=Part	6	dep	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.42
+# X_ID = 1675.MAGNUS.BIO-OTH,.42
+# text = En nú drægðist ræðan við prest
+1	En	en	CCONJ	CONJ	_	3	cc	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	drægðist	drægjast	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	ræðan	ræða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+5	við	við	ADP	P	_	6	case	_	_
+6	prest	prestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.43
+# X_ID = 1675.MAGNUS.BIO-OTH,.43
+# text = og kom brytinn í annað sinn
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	brytinn	bryti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+4	í	í	ADP	P	_	6	case	_	_
+5	annað	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	6	amod	_	_
+6	sinn	sinn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.44
+# X_ID = 1675.MAGNUS.BIO-OTH,.44
+# text = og kallaði til borðs
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kallaði	kalla	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	til	til	ADP	P	_	4	case	_	_
+4	borðs	borð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.45
+# X_ID = 1675.MAGNUS.BIO-OTH,.45
+# text = og kvað Þorkel klerk þess ei verðugan að biskupinn spjallaði svo lengi við hann eður missti máltíðar þar fyrir,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kvað	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	Þorkel	þorkell	PROPN	NPR-A	_	7	nsubj	_	_
+4	klerk	klerkur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	appos	_	_
+5	þess	það	PRON	PRO-G	Case=Gen	7	obl	_	_
+6	ei	ei	ADV	NEG	_	7	advmod	_	_
+7	verðugan	verðugur	ADJ	ADJ-A	Case=Acc|Degree=Pos	2	ccomp	_	_
+8	að	að	SCONJ	C	_	10	mark	_	_
+9	biskupinn	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+10	spjallaði	spjalla	VERB	VBDS	Mood=Sub|Tense=Past	7	ccomp	_	_
+11	svo	svo	ADV	ADVR	Degree=Cmp	10	obl	_	_
+12	lengi	lengi	ADV	ADV	Degree=Pos	11	advmod	_	_
+13	við	við	ADP	P	_	14	case	_	_
+14	hann	hann	PRON	PRO-A	Case=Acc	10	obl	_	_
+15	eður	eður	CCONJ	CONJ	_	10	cc	_	_
+16	missti	missa	VERB	VBDS	Mood=Sub|Tense=Past	10	dep	_	_
+17	máltíðar	máltíð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	obj	_	_
+18	þar	þar	ADV	ADV	Degree=Pos	10	obl	_	_
+19	fyrir	fyrir	ADP	P	_	18	case	_	SpaceAfter=No
+20	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.46
+# X_ID = 1675.MAGNUS.BIO-OTH,.46
+# text = og hreytti að presti nokkrum orðum slæmum og ógeðfelldum .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	hreytti	hreyta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	að	að	ADP	P	_	4	case	_	_
+4	presti	prestur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+5	nokkrum	nokkur	DET	Q-D	Case=Dat	6	amod	_	_
+6	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obj	_	_
+7	slæmum	slæmur	ADJ	ADJ-D	Case=Dat|Degree=Pos	6	amod	_	_
+8	og	og	CCONJ	CONJ	_	9	cc	_	_
+9	ógeðfelldum	ógeðfelldur	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	conj	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.47
+# X_ID = 1675.MAGNUS.BIO-OTH,.47
+# text = Þorkell prestur þykktist við bryta
+1	Þorkell	þorkell	PROPN	NPR-N	_	3	nsubj	_	_
+2	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	appos	_	_
+3	þykktist	þykkjast	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	við	við	ADP	P	_	5	case	_	_
+5	bryta	bryti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.48
+# X_ID = 1675.MAGNUS.BIO-OTH,.48
+# text = og svaraði svo : " Taktu hann, smellilegur ! "
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	svaraði	svara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
+4	:	:	PUNCT	,	_	3	punct	_	_
+5	"	"	PUNCT	"	_	4	punct	_	_
+6-7	Taktu	_	_	_	_	_	_	_	_
+6	Tak	taka	VERB	VBI	Mood=Imp|VerbForm=Inf	2	ccomp	_	_
+7	þú	þú	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+8	hann	hann	PRON	PRO-A	Case=Acc	6	obj	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	smellilegur	smellilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	vocative	_	SpaceAfter=No
+11	!	!	PUNCT	.	_	10	punct	_	SpaceAfter=No
+12	"	"	PUNCT	"	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.49
+# X_ID = 1675.MAGNUS.BIO-OTH,.49
+# text = Við þau orð skyldi brytinn sökkva niður í gólfið, allt að höndum .
+1	Við	við	ADP	P	_	3	case	_	_
+2	þau	sá	DET	D-A	Case=Acc	3	det	_	_
+3	orð	orð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	_
+4	skyldi	skulu	AUX	MDDS	Mood=Sub|Tense=Past	6	aux	_	_
+5	brytinn	bryti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+6	sökkva	sökkva	VERB	VB	VerbForm=Inf	0	root	_	_
+7	niður	niður	ADP	RP	_	9	compound:prt	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	gólfið	gólf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	allt	allur	DET	Q-N	Case=Nom	6	obl	_	_
+12	að	að	ADP	P	_	11	case	_	_
+13	höndum	hönd	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.50
+# X_ID = 1675.MAGNUS.BIO-OTH,.50
+# text = Þá kom stans á biskup
+1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	stans	stans	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	biskup	biskup	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.51
+# X_ID = 1675.MAGNUS.BIO-OTH,.51
+# text = og bað klerk leysa bryta og losa .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	bað	biðja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	klerk	klerkur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	nsubj	_	_
+4	leysa	leysa	VERB	VBPI	Mood=Ind|Tense=Pres	2	xcomp	_	_
+5	bryta	bryti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
+6	og	og	CCONJ	CONJ	_	7	cc	_	_
+7	losa	losa	VERB	VB	VerbForm=Inf	4	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.52
+# X_ID = 1675.MAGNUS.BIO-OTH,.52
+# text = En klerkur kvað svo mikla vera mundu biskups andagift og andlegt vald hans biskupslegrar tignar, að við hans blessunarorð myndi brytinn laus verða ;
+1	En	en	CCONJ	CONJ	_	3	cc	_	_
+2	klerkur	klerkur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+3	kvað	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	svo	svo	ADV	ADVR	Degree=Cmp	3	xcomp	_	_
+5	mikla	mikill	DET	Q-A	Case=Acc	4	amod	_	_
+6	vera	vera	AUX	BE	VerbForm=Inf	4	cop	_	_
+7	mundu	munu	AUX	MD	VerbForm=Inf	4	aux	_	_
+8	biskups	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	nmod:poss	_	_
+9	andagift	andagift	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	nsubj	_	_
+10	og	og	CCONJ	CONJ	_	12	cc	_	_
+11	andlegt	andlegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
+12	vald	vald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	conj	_	_
+13	hans	hann	PRON	PRO-G	Case=Gen	15	nmod:poss	_	_
+14	biskupslegrar	biskupslegur	ADJ	ADJ-G	Case=Gen|Degree=Pos	15	amod	_	_
+15	tignar	tign	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	nmod:poss	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	að	að	SCONJ	C	_	24	mark	_	_
+18	við	við	ADP	P	_	20	case	_	_
+19	hans	hann	PRON	PRO-G	Case=Gen	20	nmod:poss	_	_
+20	blessunarorð	blessunarorð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	24	obl	_	_
+21	myndi	munu	AUX	MDDS	Mood=Sub|Tense=Past	24	aux	_	_
+22	brytinn	bryti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	nsubj	_	_
+23	laus	laus	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	amod	_	_
+24	verða	verða	VERB	RD	VerbForm=Inf	4	advcl	_	SpaceAfter=No
+25	;	;	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.53
+# X_ID = 1675.MAGNUS.BIO-OTH,.53
+# text = kvað sjálfa þá til vitnis að ei væri hann orsök til þessa, heldur mundi því valda brytans slæm orð og breytni,
+1	kvað	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	sjálfa	sjálfur	PRON	PRO-A	Case=Acc	1	obj	_	_
+3	þá	hann	PRON	PRO-A	Case=Acc	2	nmod	_	_
+4	til	til	ADP	P	_	5	case	_	_
+5	vitnis	vitni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	obl	_	_
+6	að	að	SCONJ	C	_	10	mark	_	_
+7	ei	ei	ADV	NEG	_	10	advmod	_	_
+8	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	10	cop	_	_
+9	hann	hann	PRON	PRO-N	Case=Nom	10	nsubj	_	_
+10	orsök	orsök	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	ccomp	_	_
+11	til	til	ADP	P	_	12	case	_	_
+12	þessa	þessi	DET	D-G	Case=Gen	10	obl	_	SpaceAfter=No
+13	,	,	PUNCT	.	_	12	punct	_	_
+14	heldur	heldur	ADV	ADVR	Degree=Cmp	17	advmod	_	_
+15	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	17	aux	_	_
+16	því	það	PRON	PRO-D	Case=Dat	17	obj	_	_
+17	valda	valda	VERB	VB	VerbForm=Inf	10	conj	_	_
+18	brytans	bryti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	_
+19	slæm	slæmur	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
+20	orð	orð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	nsubj	_	_
+21	og	og	CCONJ	CONJ	_	22	cc	_	_
+22	breytni	breytni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	conj	_	SpaceAfter=No
+23	,	,	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.54
+# X_ID = 1675.MAGNUS.BIO-OTH,.54
+# text = og guð mundi vilja þetta sýna öðrum til viðvörunar, að vilja ei láta lasta sinn fátækan prest og guðs orðs þénara, því það sem auðvirðilegt væri fyrir mönnum, hefði oft reynst að guð hefði kært .
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	guð	guð	PROPN	NPR-N	_	6	nsubj	_	_
+3	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	6	aux	_	_
+4	vilja	vilja	AUX	MD	VerbForm=Inf	6	aux	_	_
+5	þetta	þessi	DET	D-A	Case=Acc	6	obj	_	_
+6	sýna	sýna	VERB	VB	VerbForm=Inf	0	root	_	_
+7	öðrum	annar	PRON	OTHERS-D	Case=Dat	6	obl	_	_
+8	til	til	ADP	P	_	7	case	_	_
+9	viðvörunar	viðvörun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	að	að	PART	TO	_	14	mark	_	_
+12	vilja	vilja	AUX	MD	VerbForm=Inf	14	aux	_	_
+13	ei	ei	ADV	NEG	_	14	advmod	_	_
+14	láta	láta	VERB	VB	VerbForm=Inf	9	xcomp	_	_
+15	lasta	lasta	VERB	VB	VerbForm=Inf	14	xcomp	_	_
+16	sinn	sinn	PRON	PRO-A	Case=Acc	18	nmod:poss	_	_
+17	fátækan	fátækur	ADJ	ADJ-A	Case=Acc|Degree=Pos	18	amod	_	_
+18	prest	prestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
+19	og	og	CCONJ	CONJ	_	22	cc	_	_
+20	guðs	guð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	nmod:poss	_	_
+21	orðs	orð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	nmod:poss	_	_
+22	þénara	þénari	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obj	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	því	það	PRON	PRO-D	Case=Dat	14	obl	_	_
+25	það	það	PRON	PRO-N	Case=Nom	34	nsubj	_	_
+26	sem	sem	SCONJ	C	_	27	mark	_	_
+27	auðvirðilegt	auðvirðilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	25	acl:relcl	_	_
+28	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	27	cop	_	_
+29	fyrir	fyrir	ADP	P	_	30	case	_	_
+30	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	obl	_	SpaceAfter=No
+31	,	,	PUNCT	,	_	34	punct	_	_
+32	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	34	aux	_	_
+33	oft	oft	ADV	ADV	Degree=Pos	34	advmod	_	_
+34	reynst	reynast	VERB	VBN	Tense=Past|VerbForm=Part	24	ccomp	_	_
+35	að	að	SCONJ	C	_	37	mark	_	_
+36	guð	guð	PROPN	NPR-N	_	37	nsubj	_	_
+37	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	34	ccomp	_	_
+38	kært	kær	ADJ	ADJ-A	Case=Acc|Degree=Pos	37	obj	_	SpaceAfter=No
+39	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.55
+# X_ID = 1675.MAGNUS.BIO-OTH,.55
+# text = Biskup mátti upp standa því brytinn veinaði og kvaðst meir og meir sökkva og biðja klerk með alúð að losa brytann, lofandi honum frí fararleyfi heim aftur .
+1	Biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+2	mátti	mega	AUX	MDDI	Mood=Ind|Tense=Past	4	aux	_	_
+3	upp	upp	ADP	RP	_	4	compound:prt	_	_
+4	standa	standa	VERB	VB	VerbForm=Inf	0	root	_	_
+5	því	það	PRON	PRO-D	Case=Dat	4	obl	_	_
+6	brytinn	bryti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
+7	veinaði	veina	VERB	VBDI	Mood=Ind|Tense=Past	5	ccomp	_	_
+8	og	og	CCONJ	CONJ	_	9	cc	_	_
+9	kvaðst	kveðast	VERB	VBDI	Mood=Ind|Tense=Past	7	conj	_	_
+10	meir	mikill	DET	QR-N	Case=Nom	13	obl	_	_
+11	og	og	CCONJ	CONJ	_	12	cc	_	_
+12	meir	mikill	DET	QR-N	Case=Nom	10	conj	_	_
+13	sökkva	sökkva	VERB	VB	VerbForm=Inf	9	xcomp	_	_
+14	og	og	CCONJ	CONJ	_	15	cc	_	_
+15	biðja	biðja	VERB	VB	VerbForm=Inf	4	conj	_	_
+16	klerk	klerkur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	nsubj	_	_
+17	með	með	ADP	P	_	18	case	_	_
+18	alúð	alúð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	_
+19	að	að	PART	TO	_	20	mark	_	_
+20	losa	losa	VERB	VB	VerbForm=Inf	15	xcomp	_	_
+21	brytann	bryti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obj	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	lofandi	lofa	VERB	VAG	Tense=Pres|VerbForm=Part	15	advcl	_	_
+24	honum	hann	PRON	PRO-D	Case=Dat	23	iobj	_	_
+25	frí	frí	ADJ	ADJ-D	Case=Dat|Degree=Pos	26	amod	_	_
+26	fararleyfi	fararleyfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obj	_	_
+27	heim	heim	ADV	ADV	Degree=Pos	23	advmod	_	_
+28	aftur	aftur	ADV	ADV	Degree=Pos	23	advmod	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.56
+# X_ID = 1675.MAGNUS.BIO-OTH,.56
+# text = Þá sagði klerkur : " Slepptu honum, smellilegur ! "
+1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	klerkur	klerkur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	:	:	PUNCT	,	_	3	punct	_	_
+5	"	"	PUNCT	"	_	4	punct	_	_
+6-7	Slepptu	_	_	_	_	_	_	_	_
+6	Slepp	sleppa	VERB	VBI	Mood=Imp|VerbForm=Inf	2	ccomp	_	_
+7	þú	þú	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+8	honum	hann	PRON	PRO-D	Case=Dat	6	obj	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	smellilegur	smellilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	SpaceAfter=No
+11	!	!	PUNCT	.	_	10	punct	_	SpaceAfter=No
+12	"	"	PUNCT	"	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.57
+# X_ID = 1675.MAGNUS.BIO-OTH,.57
+# text = Við það varð brytinn laus .
+1	Við	við	ADP	P	_	2	case	_	_
+2	það	það	PRON	PRO-A	Case=Acc	3	obl	_	_
+3	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
+4	brytinn	bryti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+5	laus	laus	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.58
+# X_ID = 1675.MAGNUS.BIO-OTH,.58
+# text = Biskup forærti klerk góðan hest og silfurstaup,
+1	Biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	forærti	foræra	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	klerk	klerkur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	iobj	_	_
+4	góðan	góður	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
+5	hest	hestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+6	og	og	CCONJ	CONJ	_	7	cc	_	_
+7	silfurstaup	silfurstaup	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.59
+# X_ID = 1675.MAGNUS.BIO-OTH,.59
+# text = og skildu að svo mæltu .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	skildu	skilja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	að	að	ADP	P	_	5	case	_	_
+4	svo	svo	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	mæltu	mæla	VERB	VAN-D	Case=Dat|Tense=Past|VerbForm=Part	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.60
+# X_ID = 1675.MAGNUS.BIO-OTH,.60
+# text = Nú reið Þorkell prestur leið sína burt af stólnum
+1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	reið	ríða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	Þorkell	þorkell	PROPN	NPR-N	_	2	nsubj	_	_
+4	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	appos	_	_
+5	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+6	sína	sinn	PRON	PRO-A	Case=Acc	5	nmod:poss	_	_
+7	burt	burt	ADV	ADV	Degree=Pos	2	advmod	_	_
+8	af	af	ADP	P	_	9	case	_	_
+9	stólnum	stóll	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.61
+# X_ID = 1675.MAGNUS.BIO-OTH,.61
+# text = og kom svo síðan heim til Laufáss, síns heimilis,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	síðan	síðan	ADV	ADV	Degree=Pos	2	advmod	_	_
+5	heim	heim	ADV	ADV	Degree=Pos	2	advmod	_	_
+6	til	til	ADP	P	_	7	case	_	_
+7	Laufáss	laufás	PROPN	NPR-G	_	2	obl	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	síns	sinn	PRON	PRO-G	Case=Gen	10	nmod:poss	_	_
+10	heimilis	heimili	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	appos	_	SpaceAfter=No
+11	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.62
+# X_ID = 1675.MAGNUS.BIO-OTH,.62
+# text = og sat um kyrrt í góðum náðum .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	sat	sitja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	um	um	ADP	P	_	4	case	_	_
+4	kyrrt	kyrr	ADJ	ADJ-A	Case=Acc|Degree=Pos	2	obl	_	_
+5	í	í	ADP	P	_	7	case	_	_
+6	góðum	góður	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
+7	náðum	náð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.63
+# X_ID = 1675.MAGNUS.BIO-OTH,.63
+# text = Þótti nú mörgum sem þetta fréttu, hann hnálega hafa leikið á biskupinn
+1	Þótti	þóta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	_
+3	mörgum	margur	DET	Q-D	Case=Dat	1	nsubj	_	_
+4	sem	sem	SCONJ	C	_	6	mark	_	_
+5	þetta	þessi	DET	D-A	Case=Acc	6	obj	_	_
+6	fréttu	frétta	VERB	VBDI	Mood=Ind|Tense=Past	1	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	hann	hann	PRON	PRO-N	Case=Nom	1	obj	_	_
+9	hnálega	hnálega	ADV	ADV	Degree=Pos	11	advmod	_	_
+10	hafa	hafa	AUX	HV	VerbForm=Inf	11	aux	_	_
+11	leikið	leika	VERB	VBN	Tense=Past|VerbForm=Part	1	xcomp	_	_
+12	á	á	ADP	P	_	13	case	_	_
+13	biskupinn	biskup	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.64
+# X_ID = 1675.MAGNUS.BIO-OTH,.64
+# text = og gjörðu sér kátt að því .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	gjörðu	gera	VERB	DODI	Mood=Ind|Tense=Past	0	root	_	_
+3	sér	sig	PRON	PRO-D	Case=Dat	2	iobj	_	_
+4	kátt	kátur	ADJ	ADJ-A	Case=Acc|Degree=Pos	2	obj	_	_
+5	að	að	ADP	P	_	6	case	_	_
+6	því	það	PRON	PRO-D	Case=Dat	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.65
+# X_ID = 1675.MAGNUS.BIO-OTH,.65
+# text = Nú fregnar biskup umræður manna um viðskifti þeirra Þorkels prests og þar til með að hann svo sem til forna forðaðist öngva að gamanleikum sínum, nær það sig svo henti hann nokkur konststykki orsakaðist til að sýna . Hvar af nýju biskup uppfylltist heiftar og bræði við áður téðan Þorkel prest,
+1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	fregnar	fregna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+4	umræður	umræða	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
+5	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
+6	um	um	ADP	P	_	7	case	_	_
+7	viðskifti	viðskipti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+8	þeirra	hún	PRON	PRO-G	Case=Gen	7	nmod:poss	_	_
+9	Þorkels	þorkelur	PROPN	NPR-G	_	8	appos	_	_
+10	prests	prestur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	appos	_	_
+11	og	og	CCONJ	CONJ	_	12	cc	_	_
+12	þar	þar	ADV	ADV	Degree=Pos	7	conj	_	_
+13	til	til	ADP	P	_	12	case	_	_
+14	með	með	ADP	P	_	12	case	_	_
+15	að	að	SCONJ	C	_	21	mark	_	_
+16	hann	hann	PRON	PRO-N	Case=Nom	21	nsubj	_	_
+17	svo	svo	ADV	ADVR	Degree=Cmp	21	advmod	_	_
+18	sem	sem	SCONJ	C	_	17	fixed	_	_
+19	til	til	ADP	P	_	20	case	_	_
+20	forna	forn	ADJ	ADJ-G	Case=Gen|Degree=Pos	17	advcl	_	_
+21	forðaðist	forða	VERB	VBDI	Mood=Ind|Tense=Past	12	ccomp	_	_
+22	öngva	enginn	DET	Q-A	Case=Acc	21	obj	_	_
+23	að	að	ADP	P	_	24	case	_	_
+24	gamanleikum	gamanleikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	21	obl	_	_
+25	sínum	sinn	PRON	PRO-D	Case=Dat	24	nmod:poss	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	nær	nær	ADV	ADV	Degree=Pos	2	advmod	_	_
+28	það	það	PRON	PRO-N	Case=Nom	31	nsubj	_	_
+29	sig	sig	PRON	PRO-A	Case=Acc	31	obj	_	_
+30	svo	svo	ADV	ADV	Degree=Pos	31	advmod	_	_
+31	henti	henda	VERB	VBDI	Mood=Ind|Tense=Past	27	advcl	_	_
+32	hann	hann	PRON	PRO-N	Case=Nom	35	nsubj	_	_
+33	nokkur	nokkur	DET	Q-A	Case=Acc	34	amod	_	_
+34	konststykki	konststykki	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	35	obj	_	_
+35	orsakaðist	orsaka	VERB	VBDI	Mood=Ind|Tense=Past	31	ccomp	_	_
+36	til	til	ADP	P	_	38	case	_	_
+37	að	að	PART	TO	_	38	mark	_	_
+38	sýna	sýna	VERB	VB	VerbForm=Inf	35	obl	_	SpaceAfter=No
+39	.	.	PUNCT	,	_	38	punct	_	_
+40	Hvar	hvar	ADV	WADV	Degree=Pos	44	advmod	_	_
+41	af	af	ADP	P	_	42	case	_	_
+42	nýju	nýr	ADJ	ADJ-D	Case=Dat|Degree=Pos	44	obl	_	_
+43	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	44	nsubj	_	_
+44	uppfylltist	uppfylla	VERB	VBDI	Mood=Ind|Tense=Past	31	acl:relcl	_	_
+45	heiftar	heift	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	44	obl	_	_
+46	og	og	CCONJ	CONJ	_	47	cc	_	_
+47	bræði	bræði	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	45	conj	_	_
+48	við	við	ADP	P	_	51	case	_	_
+49	áður	áður	ADV	ADVR	Degree=Cmp	50	advmod	_	_
+50	téðan	tjá	VERB	VAN-A	Case=Acc|Tense=Past|VerbForm=Part	51	acl:relcl	_	_
+51	Þorkel	þorkel	PROPN	NPR-A	_	44	obl	_	_
+52	prest	prestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	51	appos	_	SpaceAfter=No
+53	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.66
+# X_ID = 1675.MAGNUS.BIO-OTH,.66
+# text = og þar til með þóttist sjálfur biskup af þeirra viðskiftum vera vanhaldinn og hafa undir orðið ;
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	þar	þar	ADV	ADV	Degree=Pos	5	obl	_	_
+3	til	til	ADP	P	_	2	case	_	_
+4	með	með	ADP	P	_	2	case	_	_
+5	þóttist	þykja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+6	sjálfur	sjálfur	PRON	PRO-N	Case=Nom	7	nmod	_	_
+7	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+8	af	af	ADP	P	_	10	case	_	_
+9	þeirra	hann	PRON	PRO-G	Case=Gen	10	nmod:poss	_	_
+10	viðskiftum	viðskifti	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
+11	vera	vera	AUX	BE	VerbForm=Inf	12	cop	_	_
+12	vanhaldinn	vanhaldinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	xcomp	_	_
+13	og	og	CCONJ	CONJ	_	16	cc	_	_
+14	hafa	hafa	AUX	HV	VerbForm=Inf	16	aux	_	_
+15	undir	undir	ADP	P	_	16	case	_	_
+16	orðið	orð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	xcomp	_	SpaceAfter=No
+17	;	;	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.67
+# X_ID = 1675.MAGNUS.BIO-OTH,.67
+# text = þenkir nú með sér að hann vilji nú taka til sinnar biskuplegrar maktar og hegna klerki fyrir þessa sína dirfsku að réttum dómi biskups, honum á hendur sögðum .
+1	þenkir	þenkja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	_
+3	með	með	ADP	P	_	4	case	_	_
+4	sér	sig	PRON	PRO-D	Case=Dat	1	obl	_	_
+5	að	að	SCONJ	C	_	9	mark	_	_
+6	hann	hann	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+7	vilji	vilja	AUX	MDPS	Mood=Sub|Tense=Pres	9	aux	_	_
+8	nú	nú	ADV	ADV	Degree=Pos	9	advmod	_	_
+9	taka	taka	VERB	VB	VerbForm=Inf	1	ccomp	_	_
+10	til	til	ADP	P	_	13	case	_	_
+11	sinnar	sinn	PRON	PRO-G	Case=Gen	13	nmod:poss	_	_
+12	biskuplegrar	biskuplegur	ADJ	ADJ-G	Case=Gen|Degree=Pos	13	amod	_	_
+13	maktar	makt	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	obl	_	_
+14	og	og	CCONJ	CONJ	_	9	cc	_	_
+15	hegna	hegna	VERB	VB	VerbForm=Inf	9	dep	_	_
+16	klerki	klerkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obj	_	_
+17	fyrir	fyrir	ADP	P	_	20	case	_	_
+18	þessa	þessi	DET	D-A	Case=Acc	20	det	_	_
+19	sína	sinn	PRON	PRO-A	Case=Acc	20	nmod:poss	_	_
+20	dirfsku	dirfska	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+21	að	að	ADP	P	_	23	case	_	_
+22	réttum	réttur	ADJ	ADJ-D	Case=Dat|Degree=Pos	23	amod	_	_
+23	dómi	dómur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+24	biskups	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	nmod:poss	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	honum	hann	PRON	PRO-D	Case=Dat	29	obl	_	_
+27	á	á	ADP	P	_	26	case	_	_
+28	hendur	hönd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obl	_	_
+29	sögðum	segja	VERB	VAN-D	Case=Dat|Tense=Past|VerbForm=Part	23	acl:relcl	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.68
+# X_ID = 1675.MAGNUS.BIO-OTH,.68
+# text = Býr biskup sig nú til reisu með fjölda sveina og stóran selskap
+1	Býr	býra	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
+3	sig	sig	PRON	PRO-A	Case=Acc	1	obj	_	_
+4	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	_
+5	til	til	ADP	P	_	6	case	_	_
+6	reisu	reisa	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	obl	_	_
+7	með	með	ADP	P	_	8	case	_	_
+8	fjölda	fjöldi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
+9	sveina	sveinur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	_
+10	og	og	CCONJ	CONJ	_	12	cc	_	_
+11	stóran	stór	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
+12	selskap	selskapur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	conj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.69
+# X_ID = 1675.MAGNUS.BIO-OTH,.69
+# text = og ríður heiman frá Hólum sem kappsamlegast, svo engin fregn færi af honum undan heim til Laufás, því að ásetningur biskups var og ráðagjörð við hans vini, að taka með makt og valdi og setja fastan og flytja með sér prestinn síra Þorkel Guðbjartsson, hvað sem hann segði, og launa honum svo alla hans ofdirfð .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	ríður	ríða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	heiman	heiman	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	frá	frá	ADP	P	_	5	case	_	_
+5	Hólum	hólar	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
+6	sem	sem	SCONJ	C	_	7	mark	_	_
+7	kappsamlegast	kappsamlega	ADV	ADVS	Degree=Sup	2	advmod	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	svo	svo	ADP	P	_	12	case	_	_
+10	engin	enginn	DET	Q-N	Case=Nom	11	amod	_	_
+11	fregn	fregn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
+12	færi	fara	VERB	VBDS	Mood=Sub|Tense=Past	2	obl	_	_
+13	af	af	ADP	P	_	14	case	_	_
+14	honum	hann	PRON	PRO-D	Case=Dat	12	obl	_	_
+15	undan	undan	ADV	ADV	Degree=Pos	12	advmod	_	_
+16	heim	heim	ADV	ADV	Degree=Pos	18	advmod	_	_
+17	til	til	ADP	P	_	18	case	_	_
+18	Laufás	laufáur	PROPN	NPR-G	_	12	obl	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
+21	að	að	SCONJ	C	_	26	mark	_	_
+22	ásetningur	ásetningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	26	nsubj	_	_
+23	biskups	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	nmod:poss	_	_
+24	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	26	cop	_	_
+25	og	og	ADV	ALSO	_	26	advmod	_	_
+26	ráðagjörð	ráðagjörð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	ccomp	_	_
+27	við	við	ADP	P	_	29	case	_	_
+28	hans	hann	PRON	PRO-G	Case=Gen	29	nmod:poss	_	_
+29	vini	vinur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obl	_	SpaceAfter=No
+30	,	,	PUNCT	,	_	29	punct	_	_
+31	að	að	PART	TO	_	32	mark	_	_
+32	taka	taka	VERB	VB	VerbForm=Inf	26	xcomp	_	_
+33	með	með	ADP	P	_	34	case	_	_
+34	makt	makt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
+35	og	og	CCONJ	CONJ	_	36	cc	_	_
+36	valdi	vald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	conj	_	_
+37	og	og	CCONJ	CONJ	_	38	cc	_	_
+38	setja	setja	VERB	VB	VerbForm=Inf	32	xcomp	_	_
+39	fastan	fastur	ADJ	ADJ-A	Case=Acc|Degree=Pos	38	xcomp	_	_
+40	og	og	CCONJ	CONJ	_	41	cc	_	_
+41	flytja	flytja	VERB	VB	VerbForm=Inf	32	xcomp	_	_
+42	með	með	ADP	P	_	43	case	_	_
+43	sér	sig	PRON	PRO-D	Case=Dat	41	obl	_	_
+44	prestinn	prestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	41	obj	_	_
+45	síra	síra	PROPN	NPR-A	_	44	appos	_	_
+46	Þorkel	þorkel	PROPN	NPR-A	_	45	flat:name	_	_
+47	Guðbjartsson	guðbjartsson	PROPN	NPR-A	_	45	dep	_	SpaceAfter=No
+48	,	,	PUNCT	,	_	47	punct	_	_
+49	hvað	hver	PRON	WPRO-A	Case=Acc	52	obj	_	_
+50	sem	sem	SCONJ	C	_	52	mark	_	_
+51	hann	hann	PRON	PRO-N	Case=Nom	52	nsubj	_	_
+52	segði	segja	VERB	VBDS	Mood=Sub|Tense=Past	41	acl:relcl	_	SpaceAfter=No
+53	,	,	PUNCT	,	_	52	punct	_	_
+54	og	og	CCONJ	CONJ	_	55	cc	_	_
+55	launa	launa	VERB	VB	VerbForm=Inf	32	xcomp	_	_
+56	honum	hann	PRON	PRO-D	Case=Dat	55	iobj	_	_
+57	svo	svo	ADV	ADV	Degree=Pos	55	advmod	_	_
+58	alla	allur	DET	Q-A	Case=Acc	60	amod	_	_
+59	hans	hann	PRON	PRO-G	Case=Gen	60	nmod:poss	_	_
+60	ofdirfð	ofdirfð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	55	obj	_	SpaceAfter=No
+61	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.70
+# X_ID = 1675.MAGNUS.BIO-OTH,.70
+# text = Biskup ríður nú fram um Eyjafjörð, síðan út á Svalbarðsströnd
+1	Biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	ríður	ríða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	fram	fram	ADP	RP	_	2	compound:prt	_	_
+5	um	um	ADP	P	_	6	case	_	_
+6	Eyjafjörð	eyjafjörður	PROPN	NPR-A	_	2	obl	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	síðan	síðan	ADV	ADV	Degree=Pos	11	advmod	_	_
+9	út	út	ADP	RP	_	11	compound:prt	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	Svalbarðsströnd	svalbarðsströnd	PROPN	NPR-A	_	2	conj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.71
+# X_ID = 1675.MAGNUS.BIO-OTH,.71
+# text = og koma nú hartnær Laufási og í þann skóg sem þar liggur nær við staðinn .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	hartnær	hartnær	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
+5	Laufási	laufás	PROPN	NPR-D	_	2	amod	_	_
+6	og	og	CCONJ	CONJ	_	9	cc	_	_
+7	í	í	ADP	P	_	9	case	_	_
+8	þann	sá	DET	D-A	Case=Acc	9	det	_	_
+9	skóg	skógur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	amod	_	_
+10	sem	sem	SCONJ	C	_	12	mark	_	_
+11	þar	þar	ADV	ADV	Degree=Pos	12	advmod	_	_
+12	liggur	liggja	VERB	VBPI	Mood=Ind|Tense=Pres	9	acl:relcl	_	_
+13	nær	nær	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
+14	við	við	ADP	P	_	15	case	_	_
+15	staðinn	staður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	amod	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.72
+# X_ID = 1675.MAGNUS.BIO-OTH,.72
+# text = Það er mál manna að Þorkel prest muni grunað hafa um þarkomu biskups, því hann hafði skipað að kynda baðstofu vel heita og spara ei til eldivið, því hrís væri nóg, og taka svo í móti gestum og komendum .
+1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+4	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	nmod:poss	_	_
+5	að	að	SCONJ	C	_	9	mark	_	_
+6	Þorkel	þorkel	PROPN	NPR-A	_	9	nsubj	_	_
+7	prest	prestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	appos	_	_
+8	muni	munu	AUX	MDPS	Mood=Sub|Tense=Pres	9	aux	_	_
+9	grunað	gruna	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	_
+10	hafa	hafa	AUX	HV	VerbForm=Inf	9	aux	_	_
+11	um	um	ADP	P	_	12	case	_	_
+12	þarkomu	þarkoma	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+13	biskups	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	nmod:poss	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	því	það	PRON	PRO-D	Case=Dat	9	obl	_	_
+16	hann	hann	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+17	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	18	aux	_	_
+18	skipað	skipa	VERB	VBN	Tense=Past|VerbForm=Part	15	ccomp	_	_
+19	að	að	PART	TO	_	20	mark	_	_
+20	kynda	kynda	VERB	VB	VerbForm=Inf	18	xcomp	_	_
+21	baðstofu	baðstofa	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obj	_	_
+22	vel	vel	ADV	ADV	Degree=Pos	20	advmod	_	_
+23	heita	heitur	ADJ	ADJ-A	Case=Acc|Degree=Pos	20	amod	_	_
+24	og	og	CCONJ	CONJ	_	25	cc	_	_
+25	spara	spara	VERB	VB	VerbForm=Inf	20	xcomp	_	_
+26	ei	ei	ADV	NEG	_	25	advmod	_	_
+27	til	til	ADP	RP	_	25	compound:prt	_	_
+28	eldivið	eldiviður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obj	_	SpaceAfter=No
+29	,	,	PUNCT	,	_	28	punct	_	_
+30	því	það	PRON	PRO-D	Case=Dat	25	obl	_	_
+31	hrís	hrís	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	30	xcomp	_	_
+32	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	31	cop	_	_
+33	nóg	nógur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	31	obl	_	SpaceAfter=No
+34	,	,	PUNCT	,	_	33	punct	_	_
+35	og	og	CCONJ	CONJ	_	36	cc	_	_
+36	taka	taka	VERB	VB	VerbForm=Inf	20	xcomp	_	_
+37	svo	svo	ADV	ADV	Degree=Pos	36	advmod	_	_
+38	í	í	ADP	P	_	39	case	_	_
+39	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	36	obl	_	_
+40	gestum	gestur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	39	nmod:poss	_	_
+41	og	og	CCONJ	CONJ	_	42	cc	_	_
+42	komendum	komendi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	40	conj	_	SpaceAfter=No
+43	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.73
+# X_ID = 1675.MAGNUS.BIO-OTH,.73
+# text = Svo er sagt hann hafi lagt eld í baðstofu ón sinn og kynt þar hríslum nokkrum,
+1	Svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+4	hann	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+5	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	6	aux	_	_
+6	lagt	leggja	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	_
+7	eld	eldur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+8	í	í	ADP	P	_	10	case	_	_
+9	baðstofu	baðstofa	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	nmod:poss	_	_
+10	ón	ón	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
+11	sinn	sinn	PRON	PRO-A	Case=Acc	10	nmod:poss	_	_
+12	og	og	CCONJ	CONJ	_	6	cc	_	_
+13	kynt	kynda	VERB	VAN	Tense=Past|VerbForm=Part	6	ccomp	_	_
+14	þar	þar	ADV	ADV	Degree=Pos	6	advmod	_	_
+15	hríslum	hrísla	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obj	_	_
+16	nokkrum	nokkur	DET	Q-D	Case=Dat	15	amod	_	SpaceAfter=No
+17	,	,	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.74
+# X_ID = 1675.MAGNUS.BIO-OTH,.74
+# text = en reykur og eldgneistar flugu út um gluggana .
+1	en	en	CCONJ	CONJ	_	5	cc	_	_
+2	reykur	reykur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+3	og	og	CCONJ	CONJ	_	4	cc	_	_
+4	eldgneistar	eldgneisti	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	conj	_	_
+5	flugu	fljúga	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+6	út	út	ADP	RP	_	5	compound:prt	_	_
+7	um	um	ADP	P	_	8	case	_	_
+8	gluggana	gluggi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.75
+# X_ID = 1675.MAGNUS.BIO-OTH,.75
+# text = Stóð þá vindur svo hentuglega sem presti þóknaðist, að þennan reyk lagði með gnístaflugi á veg fyrir biskup með svörtu myrkri
+1	Stóð	standa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	þá	þá	ADV	ADV	Degree=Pos	1	advmod	_	_
+3	vindur	vindur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
+4	svo	svo	ADV	ADVR	Degree=Cmp	1	advmod	_	_
+5	hentuglega	hentuglega	ADV	ADV	Degree=Pos	4	advmod	_	_
+6	sem	sem	SCONJ	C	_	8	mark	_	_
+7	presti	prestur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	nsubj	_	_
+8	þóknaðist	þóknast	VERB	VBDI	Mood=Ind|Tense=Past	4	advcl	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	að	að	SCONJ	C	_	13	mark	_	_
+11	þennan	þessi	DET	D-A	Case=Acc	12	det	_	_
+12	reyk	reykur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	nsubj	_	_
+13	lagði	leggja	VERB	VBDI	Mood=Ind|Tense=Past	1	advcl	_	_
+14	með	með	ADP	P	_	15	case	_	_
+15	gnístaflugi	gnístaflug	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+16	á	á	ADP	P	_	17	case	_	_
+17	veg	vegur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+18	fyrir	fyrir	ADP	P	_	19	case	_	_
+19	biskup	biskup	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	_
+20	með	með	ADP	P	_	22	case	_	_
+21	svörtu	svartur	ADJ	ADJ-D	Case=Dat|Degree=Pos	22	amod	_	_
+22	myrkri	myrkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.76
+# X_ID = 1675.MAGNUS.BIO-OTH,.76
+# text = og var það tíðlega dags .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
+3	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+4	tíðlega	tíðlegur	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	dags	dagur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	nmod:poss	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.77
+# X_ID = 1675.MAGNUS.BIO-OTH,.77
+# text = Reykurinn jókst
+1	Reykurinn	reykur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	jókst	auka	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.78
+# X_ID = 1675.MAGNUS.BIO-OTH,.78
+# text = og gnístaflugið magnaðist svo úr æði, að gaus í fang og ásjónu biskupi og hans manna, svo þeim þótti hár og skegg sviðna af sér og klæðin brenna,
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	gnístaflugið	gnístaflug	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+3	magnaðist	magna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	svo	svo	ADV	ADVR	Degree=Cmp	3	advmod	_	_
+5	úr	úr	ADP	P	_	6	case	_	_
+6	æði	æði	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	að	að	SCONJ	C	_	9	mark	_	_
+9	gaus	gjósa	VERB	VBDI	Mood=Ind|Tense=Past	3	advcl	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	fang	fang	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	ásjónu	ásjóna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	conj	_	_
+14	biskupi	biskup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	nmod:poss	_	_
+15	og	og	CCONJ	CONJ	_	17	cc	_	_
+16	hans	hann	PRON	PRO-G	Case=Gen	17	nmod:poss	_	_
+17	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	conj	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	svo	svo	ADP	P	_	21	case	_	_
+20	þeim	það	PRON	PRO-D	Case=Dat	21	nsubj	_	_
+21	þótti	þykja	VERB	VBDI	Mood=Ind|Tense=Past	3	obl	_	_
+22	hár	hár	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	nsubj	_	_
+23	og	og	CCONJ	CONJ	_	24	cc	_	_
+24	skegg	skegg	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	conj	_	_
+25	sviðna	sviðna	VERB	VB	VerbForm=Inf	21	xcomp	_	_
+26	af	af	ADP	P	_	27	case	_	_
+27	sér	sig	PRON	PRO-D	Case=Dat	25	obl	_	_
+28	og	og	CCONJ	CONJ	_	30	cc	_	_
+29	klæðin	klæði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	30	nsubj	_	_
+30	brenna	brenna	VERB	VB	VerbForm=Inf	25	xcomp	_	SpaceAfter=No
+31	,	,	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.79
+# X_ID = 1675.MAGNUS.BIO-OTH,.79
+# text = hestarnir fældust
+1	hestarnir	hestur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
+2	fældust	fælda	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.80
+# X_ID = 1675.MAGNUS.BIO-OTH,.80
+# text = og vildu ei áfram ganga,
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	vildu	vilja	AUX	MDDI	Mood=Ind|Tense=Past	5	aux	_	_
+3	ei	ei	ADV	NEG	_	5	advmod	_	_
+4	áfram	áfram	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	ganga	ganga	VERB	VB	VerbForm=Inf	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.81
+# X_ID = 1675.MAGNUS.BIO-OTH,.81
+# text = hlupu hingað og þangað undir mönnunum og útí myrkviðarskóginn, svo að þeirra klæði rifnuðu öll í sundur,
+1	hlupu	hlaupa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	hingað	hingað	ADV	ADV	Degree=Pos	1	advmod	_	_
+3	og	og	CCONJ	CONJ	_	4	cc	_	_
+4	þangað	þangað	ADV	ADV	Degree=Pos	2	conj	_	_
+5	undir	undir	ADP	P	_	6	case	_	_
+6	mönnunum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	1	obl	_	_
+7	og	og	CCONJ	CONJ	_	9	cc	_	_
+8	útí	útí	ADP	P	_	9	case	_	_
+9	myrkviðarskóginn	myrkviðarskógur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	conj	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	svo	svo	ADP	P	_	15	case	_	_
+12	að	að	SCONJ	C	_	15	mark	_	_
+13	þeirra	hann	PRON	PRO-G	Case=Gen	14	nmod:poss	_	_
+14	klæði	klæði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	15	nsubj	_	_
+15	rifnuðu	rifna	VERB	VBDI	Mood=Ind|Tense=Past	1	obl	_	_
+16	öll	allur	DET	Q-N	Case=Nom	15	amod	_	_
+17	í	í	ADP	P	_	18	case	_	_
+18	sundur	sundur	ADV	ADV	Degree=Pos	15	obl	_	SpaceAfter=No
+19	,	,	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.82
+# X_ID = 1675.MAGNUS.BIO-OTH,.82
+# text = og féllu menn af baki,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	féllu	falla	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
+4	af	af	ADP	P	_	5	case	_	_
+5	baki	bak	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.83
+# X_ID = 1675.MAGNUS.BIO-OTH,.83
+# text = sumir urðu fastir á skógarkvistum og greinum,
+1	sumir	sumur	DET	Q-N	Case=Nom	2	nsubj	_	_
+2	urðu	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
+3	fastir	fastur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
+4	á	á	ADP	P	_	5	case	_	_
+5	skógarkvistum	skógarkvistur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
+6	og	og	CCONJ	CONJ	_	7	cc	_	_
+7	greinum	grein	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.84
+# X_ID = 1675.MAGNUS.BIO-OTH,.84
+# text = urðu nú viðskila hverjir við aðra
+1	urðu	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	_
+3	viðskila	viðskila	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	amod	_	_
+4	hverjir	hver	DET	Q-N	Case=Nom	1	obl	_	_
+5	við	við	ADP	P	_	6	case	_	_
+6	aðra	annar	PRON	OTHERS-A	Case=Acc	4	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.85
+# X_ID = 1675.MAGNUS.BIO-OTH,.85
+# text = og villtust um skóginn í þessu þoku- og reykjarmyrkri, svo enginn vissi af öðrum að segja .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	villtust	villa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	um	um	ADP	P	_	4	case	_	_
+4	skóginn	skógur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+5	í	í	ADP	P	_	7	case	_	_
+6	þessu	þessi	DET	D-D	Case=Dat	7	det	_	_
+7	þoku-	þoka	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+8	og	og	CCONJ	CONJ	_	9	cc	_	_
+9	reykjarmyrkri	reykjarmyrkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	conj	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	svo	svo	ADP	P	_	13	case	_	_
+12	enginn	enginn	DET	Q-N	Case=Nom	13	nsubj	_	_
+13	vissi	vita	VERB	VBDI	Mood=Ind|Tense=Past	2	obl	_	_
+14	af	af	ADP	P	_	15	case	_	_
+15	öðrum	annar	PRON	OTHERS-D	Case=Dat	13	obl	_	_
+16	að	að	PART	TO	_	17	mark	_	_
+17	segja	segja	VERB	VB	VerbForm=Inf	15	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.86
+# X_ID = 1675.MAGNUS.BIO-OTH,.86
+# text = Þeim þótti og þessu myrkri fylgja svo sterkur ódaunn að þeir urðu fyrir munn og vit að halda að þeir kafna .
+1	Þeim	það	PRON	PRO-D	Case=Dat	2	nsubj	_	_
+2	þótti	þykja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	og	og	ADV	ALSO	_	2	advmod	_	_
+4	þessu	þessi	DET	D-D	Case=Dat	5	det	_	_
+5	myrkri	myrkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obj	_	_
+6	fylgja	fylgja	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+7	svo	svo	ADV	ADVR	Degree=Cmp	8	amod	_	_
+8	sterkur	sterkur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
+9	ódaunn	ódaunn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+10	að	að	SCONJ	C	_	12	mark	_	_
+11	þeir	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+12	urðu	verða	VERB	RDDI	Mood=Ind|Tense=Past	9	advcl	_	_
+13	fyrir	fyrir	ADP	P	_	14	case	_	_
+14	munn	munnur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+15	og	og	CCONJ	CONJ	_	16	cc	_	_
+16	vit	vit	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	conj	_	_
+17	að	að	PART	TO	_	18	mark	_	_
+18	halda	halda	VERB	VB	VerbForm=Inf	12	xcomp	_	_
+19	að	að	SCONJ	C	_	21	mark	_	_
+20	þeir	hann	PRON	PRO-N	Case=Nom	21	nsubj	_	_
+21	kafna	kafna	VERB	VBPI	Mood=Ind|Tense=Pres	18	ccomp	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.87
+# X_ID = 1675.MAGNUS.BIO-OTH,.87
+# text = Þá þetta hafði nú lengi varað, gaus á yfirmáta miklu regni og krapahríð,
+1	Þá	þá	ADV	ADV	Degree=Pos	8	advmod	_	_
+2	þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
+3	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	6	aux	_	_
+4	nú	nú	ADV	ADV	Degree=Pos	6	advmod	_	_
+5	lengi	lengi	ADV	ADV	Degree=Pos	6	obl	_	_
+6	varað	vara	VERB	VBN	Tense=Past|VerbForm=Part	1	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	gaus	gjósa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+9	á	á	ADP	P	_	12	case	_	_
+10	yfirmáta	yfirmáta	ADV	ADV	Degree=Pos	11	advmod	_	_
+11	miklu	mikill	ADV	Q-D	Case=Dat	12	advmod	_	_
+12	regni	regn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	krapahríð	krapahríð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	conj	_	SpaceAfter=No
+15	,	,	PUNCT	.	_	8	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.88
+# X_ID = 1675.MAGNUS.BIO-OTH,.88
+# text = og það gekk lengi dags og fram á nótt .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	gekk	ganga	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	lengi	lengi	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	dags	dagur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	obl	_	_
+6	og	og	CCONJ	CONJ	_	9	cc	_	_
+7	fram	fram	ADP	RP	_	9	compound:prt	_	_
+8	á	á	ADP	P	_	9	case	_	_
+9	nótt	nótt	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	conj	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.89
+# X_ID = 1675.MAGNUS.BIO-OTH,.89
+# text = Varð nú biskup holdvotur
+1	Varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	_
+3	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
+4	holdvotur	holdvotur	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	amod	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.90
+# X_ID = 1675.MAGNUS.BIO-OTH,.90
+# text = og sérhver þeirra, þar sem komnir voru, grófu sig inn undir viðarrætur sem best þeir gátu .
+1	og	og	CCONJ	CONJ	_	10	cc	_	_
+2	sérhver	sérhver	DET	Q-N	Case=Nom	3	amod	_	_
+3	þeirra	hann	PRON	PRO-G	Case=Gen	10	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	þar	þar	ADV	ADV	Degree=Pos	3	advmod	_	_
+6	sem	sem	SCONJ	C	_	7	mark	_	_
+7	komnir	koma	VERB	VBN	Tense=Past|VerbForm=Part	3	acl:relcl	_	_
+8	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	grófu	grafa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+11	sig	sig	PRON	PRO-A	Case=Acc	10	obj	_	_
+12	inn	inn	ADP	RP	_	10	compound:prt	_	_
+13	undir	undir	ADP	P	_	14	case	_	_
+14	viðarrætur	viðarrót	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	_
+15	sem	sem	SCONJ	C	_	16	mark	_	_
+16	best	vel	ADV	ADVS	Degree=Sup	10	advmod	_	_
+17	þeir	hann	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+18	gátu	geta	AUX	MDDI	Mood=Ind|Tense=Past	16	advcl	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	10	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.91
+# X_ID = 1675.MAGNUS.BIO-OTH,.91
+# text = Þegar dagaði, létti hríðinni
+1	Þegar	þegar	ADP	P	_	2	case	_	_
+2	dagaði	daga	VERB	VBDI	Mood=Ind|Tense=Past	4	obl	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	létti	létta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+5	hríðinni	hríð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	nsubj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.92
+# X_ID = 1675.MAGNUS.BIO-OTH,.92
+# text = og blés mjög kaldur gustur eftir, svo biskup og hans mönnum kólnaði mjög .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	blés	blása	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
+4	kaldur	kaldur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
+5	gustur	gustur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+6	eftir	eftir	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	svo	svo	ADP	P	_	13	case	_	_
+9	biskup	biskup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	nsubj	_	_
+10	og	og	CCONJ	CONJ	_	12	cc	_	_
+11	hans	hann	PRON	PRO-G	Case=Gen	12	nmod:poss	_	_
+12	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	conj	_	_
+13	kólnaði	kólna	VERB	VBDI	Mood=Ind|Tense=Past	2	obl	_	_
+14	mjög	mjög	ADV	ADV	Degree=Pos	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.93
+# X_ID = 1675.MAGNUS.BIO-OTH,.93
+# text = Nú ber svo við að smalamaður úr Laufási fer útí skóginn að hyggja að hjörð sinni .
+1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	svo	svo	ADV	ADVR	Degree=Cmp	2	advmod	_	_
+4	við	við	ADP	RP	_	2	compound:prt	_	_
+5	að	að	SCONJ	C	_	9	mark	_	_
+6	smalamaður	smalamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
+7	úr	úr	ADP	P	_	8	case	_	_
+8	Laufási	laufás	PROPN	NPR-D	_	6	obl	_	_
+9	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	2	advcl	_	_
+10	út	út	ADP	RP	_	12	compound:prt	_	SpaceAfter=No
+11	í	í	ADP	P	_	12	case	_	_
+12	skóginn	skógur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+13	að	að	PART	TO	_	14	advcl	_	_
+14	hyggja	hyggja	VERB	VB	VerbForm=Inf	9	advcl	_	_
+15	að	að	ADP	P	_	16	case	_	_
+16	hjörð	hjörð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
+17	sinni	sinn	PRON	PRO-D	Case=Dat	16	nmod:poss	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.94
+# X_ID = 1675.MAGNUS.BIO-OTH,.94
+# text = Hann sér nú og finnur hesta með söðlum ráfandi um skóginn hingað og þangað
+1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	sér	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	og	og	CCONJ	CONJ	_	5	cc	_	_
+5	finnur	finna	VERB	VBPI	Mood=Ind|Tense=Pres	2	parataxis	_	_
+6	hesta	hestur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	nsubj	_	_
+7	með	með	ADP	P	_	8	case	_	_
+8	söðlum	söðlur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+9	ráfandi	ráfa	VERB	VAG	Tense=Pres|VerbForm=Part	2	advcl	_	_
+10	um	um	ADP	P	_	11	case	_	_
+11	skóginn	skógur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+12	hingað	hingað	ADV	ADV	Degree=Pos	9	advmod	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	þangað	þangað	ADV	ADV	Degree=Pos	12	conj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.95
+# X_ID = 1675.MAGNUS.BIO-OTH,.95
+# text = og veit eigi hverjir vera muni eður hverju soddan gegni, þar til hann finnur nokkra menn einn og einn hver sér kúra við viðarrætur, allir af sér komnir af kulda og máttleysi og mjög illa til fara .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	eigi	ekki	ADV	NEG	_	2	advmod	_	_
+4	hverjir	hver	PRON	WPRO-N	Case=Nom	6	obj	_	_
+5	vera	vera	AUX	BE	VerbForm=Inf	6	cop	_	_
+6	muni	munu	AUX	MDPS	Mood=Sub|Tense=Pres	2	xcomp	_	_
+7	eður	eður	CCONJ	CONJ	_	10	cc	_	_
+8	hverju	hver	PRON	WPRO-D	Case=Dat	10	obj	_	_
+9	soddan	soddan	PRON	SUCH-N	Case=Nom	10	nsubj	_	_
+10	gegni	gegna	VERB	VBPS	Mood=Sub|Tense=Pres	6	conj	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	þar	þar	ADV	ADV	Degree=Pos	15	advmod	_	_
+13	til	til	ADP	P	_	15	case	_	_
+14	hann	hann	PRON	PRO-N	Case=Nom	15	nsubj	_	_
+15	finnur	finna	VERB	VBPI	Mood=Ind|Tense=Pres	10	obl	_	_
+16	nokkra	nokkur	DET	Q-A	Case=Acc	17	amod	_	_
+17	menn	maður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obj	_	_
+18	einn	einn	DET	ONE-A	Case=Acc	17	appos	_	_
+19	og	og	CCONJ	CONJ	_	20	cc	_	_
+20	einn	einn	DET	ONE-A	Case=Acc	18	conj	_	_
+21	hver	hver	PRON	WPRO-N	Case=Nom	23	obj	_	_
+22	sér	sig	PRON	PRO-D	Case=Dat	23	obj	_	_
+23	kúra	kúra	VERB	VBPI	Mood=Ind|Tense=Pres	18	acl:relcl	_	_
+24	við	við	ADP	P	_	25	case	_	_
+25	viðarrætur	viðarrót	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obl	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	allir	allur	DET	Q-N	Case=Nom	30	amod	_	_
+28	af	af	ADP	P	_	29	case	_	_
+29	sér	sig	PRON	PRO-D	Case=Dat	30	obl	_	_
+30	komnir	koma	VERB	VBN	Tense=Past|VerbForm=Part	17	acl:relcl	_	_
+31	af	af	ADP	P	_	32	case	_	_
+32	kulda	kuldi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obl	_	_
+33	og	og	CCONJ	CONJ	_	34	cc	_	_
+34	máttleysi	máttleysi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	conj	_	_
+35	og	og	CCONJ	CONJ	_	37	cc	_	_
+36	mjög	mjög	ADV	ADV	Degree=Pos	37	amod	_	_
+37	illa	illur	ADJ	ADJ-A	Case=Acc|Degree=Pos	30	conj	_	_
+38	til	til	ADP	P	_	39	case	_	_
+39	fara	för	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	37	amod	_	SpaceAfter=No
+40	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.96
+# X_ID = 1675.MAGNUS.BIO-OTH,.96
+# text = Hann spyr hverjir þeir séu eða hverju sæti þeir liggi þar .
+1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	hverjir	hver	PRON	WPRO-N	Case=Nom	4	obj	_	_
+4	þeir	hann	PRON	PRO-N	Case=Nom	2	ccomp	_	_
+5	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	4	cop	_	_
+6	eða	eða	CCONJ	CONJ	_	10	cc	_	_
+7	hverju	hver	DET	WD-D	Case=Dat	8	det	_	_
+8	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obj	_	_
+9	þeir	hann	PRON	PRO-N	Case=Nom	10	nsubj	_	_
+10	liggi	liggja	VERB	VBPS	Mood=Sub|Tense=Pres	4	conj	_	_
+11	þar	þar	ADV	ADV	Degree=Pos	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.97
+# X_ID = 1675.MAGNUS.BIO-OTH,.97
+# text = Þeir segja honum allt af létta, þó naumlega fyrir kulda talað gætu,
+1	Þeir	þeir	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	segja	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	honum	hann	PRON	PRO-D	Case=Dat	2	iobj	_	_
+4	allt	allur	DET	Q-A	Case=Acc	2	obj	_	_
+5	af	af	ADP	P	_	6	case	_	_
+6	létta	létti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	þó	þó	ADP	P	_	12	case	_	_
+9	naumlega	naumlega	ADV	ADV	Degree=Pos	12	advmod	_	_
+10	fyrir	fyrir	ADP	P	_	11	case	_	_
+11	kulda	kuldi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
+12	talað	tala	VERB	VBN	Tense=Past|VerbForm=Part	2	obl	_	_
+13	gætu	geta	AUX	MDDS	Mood=Sub|Tense=Past	12	aux	_	SpaceAfter=No
+14	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.98
+# X_ID = 1675.MAGNUS.BIO-OTH,.98
+# text = og sögðust vera þénarar biskupsins og með honum verið á reið þar til í gær tíðlega það ókera óveður hefði ádynjað með þokureyk og eldglæringum, svo þeir höfðu villst .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	sögðust	segja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	vera	vera	AUX	BE	VerbForm=Inf	4	cop	_	_
+4	þénarar	þénari	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	xcomp	_	_
+5	biskupsins	biskupur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	nmod:poss	_	_
+6	og	og	CCONJ	CONJ	_	4	cc	_	_
+7	með	með	ADP	P	_	8	case	_	_
+8	honum	hann	PRON	PRO-D	Case=Dat	4	obl	_	_
+9	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	4	cop	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	reið	reið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+12	þar	þar	ADV	ADV	Degree=Pos	21	advmod	_	_
+13	til	til	ADP	P	_	21	case	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	gær	gær	ADV	ADV	Degree=Pos	21	obl	_	_
+16	tíðlega	tíðlega	ADV	ADV	Degree=Pos	21	advmod	_	_
+17	það	það	DET	D-N	Case=Nom	19	det	_	_
+18	ókera	ókera	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	amod	_	_
+19	óveður	óveður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	_
+20	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	21	aux	_	_
+21	ádynjað	ádynja	VERB	VBN	Tense=Past|VerbForm=Part	2	obl	_	_
+22	með	með	ADP	P	_	23	case	_	_
+23	þokureyk	þokureykur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
+24	og	og	CCONJ	CONJ	_	25	cc	_	_
+25	eldglæringum	eldglæringa	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	23	conj	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	svo	svo	ADP	P	_	30	case	_	_
+28	þeir	hann	PRON	PRO-N	Case=Nom	30	nsubj	_	_
+29	höfðu	hafa	AUX	HVDI	Mood=Ind|Tense=Past	30	aux	_	_
+30	villst	villa	VERB	VBN	Tense=Past|VerbForm=Part	21	obl	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.99
+# X_ID = 1675.MAGNUS.BIO-OTH,.99
+# text = Síðan þar á ofan hefði komið krepjuhríð úr öllum máta, svo þeir væru holdvotir og nær af kulda króknaðir .
+1	Síðan	síðan	ADV	ADV	Degree=Pos	6	advmod	_	_
+2	þar	þar	ADV	ADV	Degree=Pos	6	obl	_	_
+3	á	á	ADP	P	_	2	case	_	_
+4	ofan	ofan	ADV	ADV	Degree=Pos	2	advmod	_	_
+5	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	6	aux	_	_
+6	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	krepjuhríð	krepjuhríð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+8	úr	úr	ADP	P	_	10	case	_	_
+9	öllum	allur	DET	Q-D	Case=Dat	10	amod	_	_
+10	máta	máti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	svo	svo	ADP	P	_	15	case	_	_
+13	þeir	hann	PRON	PRO-N	Case=Nom	15	nsubj	_	_
+14	væru	vera	AUX	BEDS	Mood=Sub|Tense=Past	15	cop	_	_
+15	holdvotir	holdvotur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	obl	_	_
+16	og	og	CCONJ	CONJ	_	17	cc	_	_
+17	nær	nær	ADV	ADV	Degree=Pos	15	conj	_	_
+18	af	af	ADP	P	_	19	case	_	_
+19	kulda	kuldi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
+20	króknaðir	krókna	VERB	VAN	Tense=Past|VerbForm=Part	15	ccomp	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.100
+# X_ID = 1675.MAGNUS.BIO-OTH,.100
+# text = Smalamaður kvað gott veður og glaða sólskin hafa verið allan gærdag heim um Laufás, en ei utan lítið döggfall í nótt .
+1	Smalamaður	smalamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	kvað	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
+4	veður	veður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
+5	og	og	CCONJ	CONJ	_	7	cc	_	_
+6	glaða	glaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
+7	sólskin	sólskin	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	conj	_	_
+8	hafa	hafa	AUX	HV	VerbForm=Inf	14	aux	_	_
+9	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	14	cop	_	_
+10	allan	allur	DET	Q-A	Case=Acc	11	amod	_	_
+11	gærdag	gærdagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
+12	heim	heim	ADV	ADV	Degree=Pos	14	advmod	_	_
+13	um	um	ADP	P	_	14	case	_	_
+14	Laufás	laufás	PROPN	NPR-A	_	2	xcomp	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	en	en	CCONJ	CONJ	_	14	cc	_	_
+17	ei	ei	ADV	NEG	_	14	advmod	_	_
+18	utan	utan	ADV	ADV	Degree=Pos	14	advmod	_	_
+19	lítið	lítill	DET	Q-N	Case=Nom	20	amod	_	_
+20	döggfall	döggfall	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	obl	_	_
+21	í	í	ADP	P	_	22	case	_	_
+22	nótt	nótt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.101
+# X_ID = 1675.MAGNUS.BIO-OTH,.101
+# text = Þeir kváðu það miklu skipta ekki lengra í millum .
+1	Þeir	þeir	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	kváðu	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+4	miklu	mikill	DET	Q-D	Case=Dat	5	obj	_	_
+5	skipta	skipta	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+6	ekki	ekki	ADV	NEG	_	5	advmod	_	_
+7	lengra	langt	ADV	ADVR	Degree=Cmp	5	obl	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	millum	millum	ADP	P	_	5	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.102
+# X_ID = 1675.MAGNUS.BIO-OTH,.102
+# text = Smalamaður spyr hvar biskup sé,
+1	Smalamaður	smalamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	hvar	hvar	ADV	WADV	Degree=Pos	4	advmod	_	_
+4	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	_
+5	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	4	cop	_	SpaceAfter=No
+6	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.103
+# X_ID = 1675.MAGNUS.BIO-OTH,.103
+# text = en þeir kváðust eigi vita hvað af honum væri orðið, því myrkrið og ofmikið óveður hefði þá aðskilið .
+1	en	en	CCONJ	CONJ	_	3	cc	_	_
+2	þeir	hann	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	kváðust	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	eigi	ekki	ADV	NEG	_	3	advmod	_	_
+5	vita	vita	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	hvað	hver	PRON	WPRO-N	Case=Nom	10	obj	_	_
+7	af	af	ADP	P	_	8	case	_	_
+8	honum	hann	PRON	PRO-D	Case=Dat	6	obl	_	_
+9	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	10	cop	_	_
+10	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	5	ccomp	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	því	það	PRON	PRO-D	Case=Dat	10	obl	_	_
+13	myrkrið	myrkur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
+14	og	og	CCONJ	CONJ	_	16	cc	_	_
+15	ofmikið	ofmikill	DET	Q	Degree=Pos	16	amod	_	_
+16	óveður	óveður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	conj	_	_
+17	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	19	aux	_	_
+18	þá	hann	PRON	PRO-A	Case=Acc	19	obj	_	_
+19	aðskilið	aðskilja	VERB	VBN	Tense=Past|VerbForm=Part	12	ccomp	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.104
+# X_ID = 1675.MAGNUS.BIO-OTH,.104
+# text = Þá svaraði smalamaður að ei mundi óráðlegt að fara heim til Laufáss og láta Þorkel prest vita þarkomu biskups, svo þeir mættu leita hann upp og vísa honum heim til staðarins ;
+1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	svaraði	svara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	smalamaður	smalamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+4	að	að	SCONJ	C	_	6	mark	_	_
+5	ei	ei	ADV	NEG	_	6	advmod	_	_
+6	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	2	ccomp	_	_
+7	óráðlegt	óráðlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
+8	að	að	PART	TO	_	9	mark	_	_
+9	fara	fara	VERB	VB	VerbForm=Inf	6	xcomp	_	_
+10	heim	heim	ADV	ADV	Degree=Pos	9	advmod	_	_
+11	til	til	ADP	P	_	12	case	_	_
+12	Laufáss	laufás	PROPN	NPR-G	_	9	obl	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	láta	láta	VERB	VB	VerbForm=Inf	9	xcomp	_	_
+15	Þorkel	þorkel	PROPN	NPR-A	_	17	nsubj	_	_
+16	prest	prestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	appos	_	_
+17	vita	vita	VERB	VB	VerbForm=Inf	14	xcomp	_	_
+18	þarkomu	þarkoma	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
+19	biskups	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	svo	svo	ADP	P	_	24	case	_	_
+22	þeir	hann	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+23	mættu	mega	AUX	MDDS	Mood=Sub|Tense=Past	24	aux	_	_
+24	leita	leita	VERB	VB	VerbForm=Inf	2	obl	_	_
+25	hann	hann	PRON	PRO-A	Case=Acc	24	obj	_	_
+26	upp	upp	ADP	RP	_	24	compound:prt	_	_
+27	og	og	CCONJ	CONJ	_	24	cc	_	_
+28	vísa	vísa	VERB	VB	VerbForm=Inf	24	dep	_	_
+29	honum	hann	PRON	PRO-D	Case=Dat	24	iobj	_	_
+30	heim	heim	ADV	ADV	Degree=Pos	24	advmod	_	_
+31	til	til	ADP	P	_	32	case	_	_
+32	staðarins	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	24	obl	_	SpaceAfter=No
+33	;	;	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.105
+# X_ID = 1675.MAGNUS.BIO-OTH,.105
+# text = plagar Þorkell prestur að auðsýna góðan beinleika þeim mönnum sem hann plöguðu að heimsækja þó ótignari menn væru en sjálfur biskup .
+1	plagar	plaga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	Þorkell	þorkell	PROPN	NPR-N	_	1	nsubj	_	_
+3	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	appos	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	auðsýna	auðsýna	VERB	VB	VerbForm=Inf	1	xcomp	_	_
+6	góðan	góður	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
+7	beinleika	beinleiki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
+8	þeim	sá	DET	D-D	Case=Dat	9	det	_	_
+9	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	iobj	_	_
+10	sem	sem	SCONJ	C	_	12	mark	_	_
+11	hann	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+12	plöguðu	plaga	VERB	VBDI	Mood=Ind|Tense=Past	9	acl:relcl	_	_
+13	að	að	PART	TO	_	14	mark	_	_
+14	heimsækja	heimsækja	VERB	VB	VerbForm=Inf	12	xcomp	_	_
+15	þó	þó	ADP	P	_	17	case	_	_
+16	ótignari	ótignur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	17	amod	_	_
+17	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	obl	_	_
+18	væru	vera	AUX	BEDS	Mood=Sub|Tense=Past	17	cop	_	_
+19	en	en	ADP	P	_	21	case	_	_
+20	sjálfur	sjálfur	PRON	PRO-N	Case=Nom	21	nmod	_	_
+21	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.106
+# X_ID = 1675.MAGNUS.BIO-OTH,.106
+# text = Nú skundar smalamaður heim til staðarins
+1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	skundar	skunda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	smalamaður	smalamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+4	heim	heim	ADV	ADV	Degree=Pos	2	advmod	_	_
+5	til	til	ADP	P	_	6	case	_	_
+6	staðarins	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.107
+# X_ID = 1675.MAGNUS.BIO-OTH,.107
+# text = en lætur búsmala bíða úti á meðan,
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	lætur	láta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	búsmala	búsmali	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	nsubj	_	_
+4	bíða	bíða	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+5	úti	úti	ADV	ADV	Degree=Pos	4	advmod	_	_
+6	á	á	ADP	P	_	7	case	_	_
+7	meðan	meðan	ADV	ADV	Degree=Pos	4	obl	_	SpaceAfter=No
+8	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.108
+# X_ID = 1675.MAGNUS.BIO-OTH,.108
+# text = og tilkynnir Þorkeli presti húsbónda sínum, hvers hann hafi vís orðið í skóginum af sveinum biskups,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	tilkynnir	tilkynna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	Þorkeli	þorkelur	PROPN	NPR-D	_	2	iobj	_	_
+4	presti	prestur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	appos	_	_
+5	húsbónda	húsbóndi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	appos	_	_
+6	sínum	sinn	PRON	PRO-D	Case=Dat	5	nmod:poss	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	hvers	hver	PRON	WPRO-G	Case=Gen	12	obj	_	_
+9	hann	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+10	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	12	aux	_	_
+11	vís	vís	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
+12	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	2	ccomp	_	_
+13	í	í	ADP	P	_	14	case	_	_
+14	skóginum	skógur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+15	af	af	ADP	P	_	16	case	_	_
+16	sveinum	sveinur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
+17	biskups	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	16	nmod:poss	_	SpaceAfter=No
+18	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.109
+# X_ID = 1675.MAGNUS.BIO-OTH,.109
+# text = og kvað þá hjúkrunar mundu við þurfa, biskup og menn hans, mjög bráðlega, ef ei skyldi krókna úr þeim lífið .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kvað	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	þá	hann	PRON	PRO-A	Case=Acc	2	obj	_	_
+4	hjúkrunar	hjúkrun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	obj	_	_
+5	mundu	munu	AUX	MD	VerbForm=Inf	7	aux	_	_
+6	við	við	ADP	RP	_	7	compound:prt	_	_
+7	þurfa	þurfa	VERB	VB	VerbForm=Inf	2	xcomp	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	appos	_	_
+10	og	og	CCONJ	CONJ	_	11	cc	_	_
+11	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	conj	_	_
+12	hans	hann	PRON	PRO-G	Case=Gen	9	nmod:poss	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	mjög	mjög	ADV	ADV	Degree=Pos	7	advmod	_	_
+15	bráðlega	bráðlega	ADV	ADV	Degree=Pos	14	advmod	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	ef	ef	ADP	P	_	20	case	_	_
+18	ei	ei	ADV	NEG	_	20	advmod	_	_
+19	skyldi	skulu	AUX	MDDS	Mood=Sub|Tense=Past	20	aux	_	_
+20	krókna	krókna	VERB	VB	VerbForm=Inf	7	obl	_	_
+21	úr	úr	ADP	P	_	22	case	_	_
+22	þeim	það	PRON	PRO-D	Case=Dat	20	obl	_	_
+23	lífið	líf	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.110
+# X_ID = 1675.MAGNUS.BIO-OTH,.110
+# text = Prestur lætur sig nú mjög forundra þessa sögu
+1	Prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	lætur	láta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	sig	sig	PRON	PRO-A	Case=Acc	6	nsubj	_	_
+4	nú	nú	ADV	ADV	Degree=Pos	6	advmod	_	_
+5	mjög	mjög	ADV	ADV	Degree=Pos	6	obl	_	_
+6	forundra	forundra	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+7	þessa	þessi	DET	D-A	Case=Acc	8	det	_	_
+8	sögu	saga	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.111
+# X_ID = 1675.MAGNUS.BIO-OTH,.111
+# text = og hraðar ferðinni,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	hraðar	hraða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	ferðinni	ferð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.112
+# X_ID = 1675.MAGNUS.BIO-OTH,.112
+# text = gengur af stað með nokkrum mönnum útí skóginn að leita biskups og hans manna .
+1	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	af	af	ADP	P	_	3	case	_	_
+3	stað	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
+4	með	með	ADP	P	_	6	case	_	_
+5	nokkrum	nokkur	DET	Q-D	Case=Dat	6	amod	_	_
+6	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	1	obl	_	_
+7	út	út	ADP	RP	_	9	compound:prt	_	SpaceAfter=No
+8	í	í	ADP	P	_	9	case	_	_
+9	skóginn	skógur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
+10	að	að	PART	TO	_	11	advcl	_	_
+11	leita	leita	VERB	VB	VerbForm=Inf	1	advcl	_	_
+12	biskups	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	15	obl	_	_
+13	og	og	CCONJ	CONJ	_	15	cc	_	_
+14	hans	hann	PRON	PRO-G	Case=Gen	15	nmod:poss	_	_
+15	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	obj	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.113
+# X_ID = 1675.MAGNUS.BIO-OTH,.113
+# text = Sáu þeir nú líkindi til alls þessa sem smalamaður hafði áður sagt,
+1	Sáu	sjá	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	þeir	hann	PRON	PRO-N	Case=Nom	1	nsubj	_	_
+3	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	_
+4	líkindi	líkindi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obj	_	_
+5	til	til	ADP	P	_	6	case	_	_
+6	alls	allur	DET	Q-G	Case=Gen	1	obl	_	_
+7	þessa	þessi	DET	D-G	Case=Gen	6	det	_	_
+8	sem	sem	SCONJ	C	_	12	mark	_	_
+9	smalamaður	smalamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
+10	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	12	aux	_	_
+11	áður	áður	ADV	ADV	Degree=Pos	12	advmod	_	_
+12	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	6	acl:relcl	_	SpaceAfter=No
+13	,	,	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.114
+# X_ID = 1675.MAGNUS.BIO-OTH,.114
+# text = fundu hesta með söðlum & um skóginn röltandi, vopn og verjur hingað og þangað liggja, hverju þeir nú samansöfnuðu .
+1	fundu	finna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	hesta	hestur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	nsubj	_	_
+3	með	með	ADP	P	_	4	case	_	_
+4	söðlum	söðlur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
+5	&	og	CCONJ	CONJ	_	7	cc	_	_
+6	um	um	ADP	P	_	7	case	_	_
+7	skóginn	skógur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	conj	_	_
+8	röltandi	rölta	VERB	VAG	Tense=Pres|VerbForm=Part	1	advcl	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	vopn	vopn	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	nsubj	_	_
+11	og	og	CCONJ	CONJ	_	12	cc	_	_
+12	verjur	verjur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	conj	_	_
+13	hingað	hingað	ADV	ADV	Degree=Pos	16	advmod	_	_
+14	og	og	CCONJ	CONJ	_	15	cc	_	_
+15	þangað	þangað	ADV	ADV	Degree=Pos	13	conj	_	_
+16	liggja	liggja	VERB	VB	VerbForm=Inf	8	advcl	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	hverju	hver	PRON	WPRO-D	Case=Dat	21	obj	_	_
+19	þeir	hann	PRON	PRO-N	Case=Nom	21	nsubj	_	_
+20	nú	nú	ADV	ADV	Degree=Pos	21	advmod	_	_
+21	samansöfnuðu	samansafna	VERB	VBDI	Mood=Ind|Tense=Past	16	acl:relcl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.115
+# X_ID = 1675.MAGNUS.BIO-OTH,.115
+# text = Prestur fann og biskups sveina klæðafáa og af kulda nær króknaða, svo þeir voru eigi færir til að ganga eður á sína hesta í söðlana komast .
+1	Prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	fann	finna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	og	og	ADV	ALSO	_	2	advmod	_	_
+4	biskups	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
+5	sveina	sveinn	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
+6	klæðafáa	klæðafár	ADJ	ADJ-A	Case=Acc|Degree=Pos	2	amod	_	_
+7	og	og	CCONJ	CONJ	_	10	cc	_	_
+8	af	af	ADP	P	_	9	case	_	_
+9	kulda	kuldi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	amod	_	_
+10	nær	nærri	ADV	ADV	Degree=Pos	6	amod	_	_
+11	króknaða	krókna	VERB	VBN	Tense=Past|VerbForm=Part	10	amod	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	svo	svo	ADP	P	_	17	case	_	_
+14	þeir	hann	PRON	PRO-N	Case=Nom	17	nsubj	_	_
+15	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	17	cop	_	_
+16	eigi	ekki	ADV	NEG	_	17	advmod	_	_
+17	færir	fær	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	obl	_	_
+18	til	til	ADP	P	_	20	case	_	_
+19	að	að	PART	TO	_	20	mark	_	_
+20	ganga	ganga	VERB	VB	VerbForm=Inf	17	obl	_	_
+21	eður	eður	CCONJ	CONJ	_	27	cc	_	_
+22	á	á	ADP	P	_	24	case	_	_
+23	sína	sinn	PRON	PRO-A	Case=Acc	24	nmod:poss	_	_
+24	hesta	hestur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	27	obl	_	_
+25	í	í	ADP	P	_	26	case	_	_
+26	söðlana	söðull	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	27	obl	_	_
+27	komast	komast	VERB	VB	VerbForm=Inf	20	xcomp	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.116
+# X_ID = 1675.MAGNUS.BIO-OTH,.116
+# text = Urðu menn prestsins að lyfta þeim á hestbak og flytja þá svo heim til staðarins, hvar þeir fengu góðar viðtökur og í heita baðstofu færðir og ágæt aðhjúkrun veitt eftir skipan prestsins .
+1	Urðu	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
+2	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	1	nsubj	_	_
+3	prestsins	prestur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	nmod:poss	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	lyfta	lyfta	VERB	VB	VerbForm=Inf	1	xcomp	_	_
+6	þeim	það	PRON	PRO-D	Case=Dat	5	obj	_	_
+7	á	á	ADP	P	_	8	case	_	_
+8	hestbak	hestbak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+9	og	og	CCONJ	CONJ	_	10	cc	_	_
+10	flytja	flytja	VERB	VBPI	Mood=Ind|Tense=Pres	5	xcomp	_	_
+11	þá	hann	PRON	PRO-A	Case=Acc	10	obj	_	_
+12	svo	svo	ADV	ADV	Degree=Pos	10	advmod	_	_
+13	heim	heim	ADV	ADV	Degree=Pos	15	advmod	_	_
+14	til	til	ADP	P	_	15	case	_	_
+15	staðarins	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	hvar	hvar	ADV	WADV	Degree=Pos	19	advmod	_	_
+18	þeir	hann	PRON	PRO-N	Case=Nom	19	nsubj	_	_
+19	fengu	fá	VERB	VBDI	Mood=Ind|Tense=Past	15	acl:relcl	_	_
+20	góðar	góður	ADJ	ADJ-A	Case=Acc|Degree=Pos	21	amod	_	_
+21	viðtökur	viðtökur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obj	_	_
+22	og	og	CCONJ	CONJ	_	19	cc	_	_
+23	í	í	ADP	P	_	25	case	_	_
+24	heita	heitur	ADJ	ADJ-A	Case=Acc|Degree=Pos	25	amod	_	_
+25	baðstofu	baðstofa	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	_
+26	færðir	færa	VERB	VAN	Tense=Past|VerbForm=Part	19	ccomp	_	_
+27	og	og	CCONJ	CONJ	_	19	cc	_	_
+28	ágæt	ágætur	ADJ	ADJ-N	Case=Nom|Degree=Pos	29	amod	_	_
+29	aðhjúkrun	aðhjúkrun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	obj	_	_
+30	veitt	veita	VERB	VAN	Tense=Past|VerbForm=Part	19	ccomp	_	_
+31	eftir	eftir	ADP	P	_	32	case	_	_
+32	skipan	skipan	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
+33	prestsins	prestur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	32	nmod:poss	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.117
+# X_ID = 1675.MAGNUS.BIO-OTH,.117
+# text = Nú leitar Þorkell prestur biskups við annan mann .
+1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	leitar	leita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	Þorkell	þorkell	PROPN	NPR-N	_	2	nsubj	_	_
+4	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	appos	_	_
+5	biskups	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	nmod:poss	_	_
+6	við	við	ADP	P	_	8	case	_	_
+7	annan	annar	PRON	OTHER-A	Case=Acc	8	det	_	_
+8	mann	maður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.118
+# X_ID = 1675.MAGNUS.BIO-OTH,.118
+# text = Hann finnur einn hest með söðli og reiðtygjum
+1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+2	finnur	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	einn	einn	DET	ONE-A	Case=Acc	4	det	_	_
+4	hest	hestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+5	með	með	ADP	P	_	6	case	_	_
+6	söðli	söðull	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+7	og	og	CCONJ	CONJ	_	8	cc	_	_
+8	reiðtygjum	reiðtygi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	conj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.119
+# X_ID = 1675.MAGNUS.BIO-OTH,.119
+# text = og sýnist atkvæði að kost og gæðum,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	sýnist	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	atkvæði	atkvæði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	obj	_	_
+4	að	að	ADP	P	_	5	case	_	_
+5	kost	kostur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+6	og	og	CCONJ	CONJ	_	7	cc	_	_
+7	gæðum	gæði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.120
+# X_ID = 1675.MAGNUS.BIO-OTH,.120
+# text = þar fyrir getur hann til að það muni vera sá sami hestur sem herra biskupinn hafi riðið,
+1	þar	þar	ADV	ADV	Degree=Pos	3	obl	_	_
+2	fyrir	fyrir	ADP	P	_	1	case	_	_
+3	getur	geta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	hann	hann	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+5	til	til	ADP	RP	_	3	compound:prt	_	_
+6	að	að	SCONJ	C	_	8	mark	_	_
+7	það	það	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+8	muni	munu	AUX	MDPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
+9	vera	vera	AUX	BE	VerbForm=Inf	8	cop	_	_
+10	sá	sá	DET	D-N	Case=Nom	12	det	_	_
+11	sami	samur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
+12	hestur	hestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	xcomp	_	_
+13	sem	sem	SCONJ	C	_	17	mark	_	_
+14	herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
+15	biskupinn	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	conj	_	_
+16	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	17	aux	_	_
+17	riðið	ríða	VERB	VBN	Tense=Past|VerbForm=Part	12	advcl	_	SpaceAfter=No
+18	,	,	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.121
+# X_ID = 1675.MAGNUS.BIO-OTH,.121
+# text = lætur því sinn fylgdarmann taka hestinn og leiða með .
+1	lætur	láta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	því	það	PRON	PRO-D	Case=Dat	1	obl	_	_
+3	sinn	sinn	PRON	PRO-A	Case=Acc	4	nmod:poss	_	_
+4	fylgdarmann	fylgdarmaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	nsubj	_	_
+5	taka	taka	VERB	VB	VerbForm=Inf	1	xcomp	_	_
+6	hestinn	hestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
+7	og	og	CCONJ	CONJ	_	8	cc	_	_
+8	leiða	leiða	VERB	VB	VerbForm=Inf	5	xcomp	_	_
+9	með	með	ADP	RPX	_	8	compound:prt	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.122
+# X_ID = 1675.MAGNUS.BIO-OTH,.122
+# text = Ganga nú við skamma stund áður þeir heyra í skóginum sem ýlfur eða vein nokkuð,
+1	Ganga	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	_
+3	við	við	ADP	P	_	5	case	_	_
+4	skamma	skammur	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
+5	stund	stund	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
+6	áður	áður	ADV	ADV	Degree=Pos	1	advmod	_	_
+7	þeir	hann	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+8	heyra	heyra	VERB	VBPI	Mood=Ind|Tense=Pres	6	advcl	_	_
+9	í	í	ADP	P	_	10	case	_	_
+10	skóginum	skógur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+11	sem	sem	SCONJ	C	_	12	mark	_	_
+12	ýlfur	ýlfur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	_
+13	eða	eða	CCONJ	CONJ	_	14	cc	_	_
+14	vein	vein	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	conj	_	_
+15	nokkuð	nokkur	DET	Q-A	Case=Acc	14	amod	_	SpaceAfter=No
+16	,	,	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.123
+# X_ID = 1675.MAGNUS.BIO-OTH,.123
+# text = ganga þeir nú eftir því hljóði sem þeir heyrðu, þar til þeir heyrðu undir einni eik einhvern mann sig aumlega klaga, hvað ólukkusamur maður hann væri orðinn ;
+1	ganga	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	þeir	hann	PRON	PRO-N	Case=Nom	1	nsubj	_	_
+3	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	_
+4	eftir	eftir	ADP	P	_	6	case	_	_
+5	því	sá	DET	D-D	Case=Dat	6	det	_	_
+6	hljóði	hljóð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
+7	sem	sem	SCONJ	C	_	9	mark	_	_
+8	þeir	hann	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+9	heyrðu	heyra	VERB	VBDI	Mood=Ind|Tense=Past	6	acl:relcl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	þar	þar	ADV	ADV	Degree=Pos	14	advmod	_	_
+12	til	til	ADP	P	_	14	case	_	_
+13	þeir	hann	PRON	PRO-N	Case=Nom	14	nsubj	_	_
+14	heyrðu	heyra	VERB	VBDI	Mood=Ind|Tense=Past	1	obl	_	_
+15	undir	undir	ADP	P	_	17	case	_	_
+16	einni	einn	DET	ONE-D	Case=Dat	17	det	_	_
+17	eik	eik	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
+18	einhvern	einhver	DET	Q-A	Case=Acc	19	amod	_	_
+19	mann	maður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	nsubj	_	_
+20	sig	sig	PRON	PRO-A	Case=Acc	22	iobj	_	_
+21	aumlega	aumlega	ADV	ADV	Degree=Pos	22	advmod	_	_
+22	klaga	klaga	VERB	VB	VerbForm=Inf	14	xcomp	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	hvað	hvað	ADV	WADV	Degree=Pos	25	advmod	_	_
+25	ólukkusamur	ólukkusamur	ADJ	ADJ-N	Case=Nom|Degree=Pos	26	amod	_	_
+26	maður	maður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	29	obj	_	_
+27	hann	hann	PRON	PRO-N	Case=Nom	29	nsubj	_	_
+28	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	29	cop	_	_
+29	orðinn	verða	VERB	RDN	Tense=Past|VerbForm=Part	22	ccomp	_	SpaceAfter=No
+30	;	;	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.124
+# X_ID = 1675.MAGNUS.BIO-OTH,.124
+# text = fyrir einum degi hefði hann riðið með sveinamakt af öllum velaktaður, svo sem einum biskup hefði sómað,
+1	fyrir	fyrir	ADP	P	_	3	case	_	_
+2	einum	einn	DET	ONE-D	Case=Dat	3	det	_	_
+3	degi	dagur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+4	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	6	aux	_	_
+5	hann	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	riðið	ríða	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	með	með	ADP	P	_	8	case	_	_
+8	sveinamakt	sveinamakt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+9	af	af	ADP	P	_	10	case	_	_
+10	öllum	allur	DET	Q-D	Case=Dat	11	obl	_	_
+11	velaktaður	velakta	VERB	VAN	Tense=Past|VerbForm=Part	6	advcl	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	svo	svo	ADV	ADVR	Degree=Cmp	11	advmod	_	_
+14	sem	sem	SCONJ	C	_	13	fixed	_	_
+15	einum	einn	DET	ONE-D	Case=Dat	16	det	_	_
+16	biskup	biskup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	nsubj	_	_
+17	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	18	aux	_	_
+18	sómað	sóma	VERB	VBN	Tense=Past|VerbForm=Part	13	advcl	_	SpaceAfter=No
+19	,	,	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.125
+# X_ID = 1675.MAGNUS.BIO-OTH,.125
+# text = en nú væri hann þar í eyðiskógi aleinn, yfirgefinn af öllum og kominn að þrotum af kulda, hungri og vesöld,
+1	en	en	CCONJ	CONJ	_	8	cc	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	8	advmod	_	_
+3	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	8	cop	_	_
+4	hann	hann	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+5	þar	þar	ADV	ADV	Degree=Pos	8	advmod	_	_
+6	í	í	ADP	P	_	7	case	_	_
+7	eyðiskógi	eyðiskógur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+8	aleinn	aleinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	yfirgefinn	yfirgefa	VERB	VAN	Tense=Past|VerbForm=Part	8	amod	_	_
+11	af	af	ADP	P	_	12	case	_	_
+12	öllum	allur	DET	Q-D	Case=Dat	10	obl	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	kominn	koma	VERB	VBN	Tense=Past|VerbForm=Part	8	amod	_	_
+15	að	að	ADP	P	_	16	case	_	_
+16	þrotum	þrot	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	_
+17	af	af	ADP	P	_	18	case	_	_
+18	kulda	kuldi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	20	punct	_	_
+20	hungri	hungur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	conj	_	_
+21	og	og	CCONJ	CONJ	_	18	cc	_	_
+22	vesöld	vesöld	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	conj	_	SpaceAfter=No
+23	,	,	PUNCT	.	_	8	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.126
+# X_ID = 1675.MAGNUS.BIO-OTH,.126
+# text = og kvaðst ei annað vissara sjá fyrir sínum augum ;
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kvaðst	kveðast	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	ei	ei	ADV	NEG	_	6	advmod	_	_
+4	annað	annar	PRON	OTHER-A	Case=Acc	6	obj	_	_
+5	vissara	viss	ADJ	ADJR-A	Case=Acc|Degree=Cmp	4	amod	_	_
+6	sjá	sjá	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+7	fyrir	fyrir	ADP	P	_	9	case	_	_
+8	sínum	sinn	PRON	PRO-D	Case=Dat	9	nmod:poss	_	_
+9	augum	auga	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
+10	;	;	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.127
+# X_ID = 1675.MAGNUS.BIO-OTH,.127
+# text = vildi nú þar fyrir búa sig til sálugrar burtferðar af þessum heimi, uppreiknandi sínar syndir, í bland hverra hann framtaldi
+1	vildi	vilja	AUX	MDDS	Mood=Sub|Tense=Past	5	aux	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
+3	þar	þar	ADV	ADV	Degree=Pos	5	obl	_	_
+4	fyrir	fyrir	ADP	P	_	3	case	_	_
+5	búa	búa	VERB	VB	VerbForm=Inf	0	root	_	_
+6	sig	sig	PRON	PRO-A	Case=Acc	5	obj	_	_
+7	til	til	ADP	P	_	9	case	_	_
+8	sálugrar	sálugur	ADJ	ADJ-G	Case=Gen|Degree=Pos	9	amod	_	_
+9	burtferðar	burtferð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
+10	af	af	ADP	P	_	12	case	_	_
+11	þessum	þessi	DET	D-D	Case=Dat	12	det	_	_
+12	heimi	heimur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	uppreiknandi	uppreikna	VERB	VAG	Tense=Pres|VerbForm=Part	5	advcl	_	_
+15	sínar	sinn	PRON	PRO-A	Case=Acc	16	nmod:poss	_	_
+16	syndir	synd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obj	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	í	í	ADP	P	_	19	case	_	_
+19	bland	bland	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
+20	hverra	hver	PRON	WPRO-G	Case=Gen	19	obj	_	_
+21	hann	hann	PRON	PRO-N	Case=Nom	22	nsubj	_	_
+22	framtaldi	framtelja	VERB	VBDI	Mood=Ind|Tense=Past	16	acl:relcl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.128
+# X_ID = 1675.MAGNUS.BIO-OTH,.128
+# text = og meðkenndi sig að hafa drýgt stóra synd í því hann hefði riðið með grimmum hug heiman frá Hólastað með fullum ásetningi að yfirfalla þann útvalda guðs ástvin og þénara, síra Þorkel Guðbjartsson, því hann sagðist nú í sannri raun fullkomlega merkja að hann væri verkfæri herrans,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	meðkenndi	meðkenna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	sig	sig	PRON	PRO-A	Case=Acc	2	obj	_	_
+4	að	að	PART	TO	_	6	mark	_	_
+5	hafa	hafa	AUX	HV	VerbForm=Inf	6	aux	_	_
+6	drýgt	drýga	VERB	VBN	Tense=Past|VerbForm=Part	2	xcomp	_	_
+7	stóra	stór	ADJ	ADJ-A	Case=Acc|Degree=Pos	8	amod	_	_
+8	synd	synd	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
+9	í	í	ADP	P	_	10	case	_	_
+10	því	það	PRON	PRO-D	Case=Dat	6	obl	_	_
+11	hann	hann	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+12	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	13	aux	_	_
+13	riðið	ríða	VERB	VBN	Tense=Past|VerbForm=Part	10	ccomp	_	_
+14	með	með	ADP	P	_	16	case	_	_
+15	grimmum	grimmur	ADJ	ADJ-D	Case=Dat|Degree=Pos	16	amod	_	_
+16	hug	hugur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+17	heiman	heiman	ADV	ADV	Degree=Pos	19	advmod	_	_
+18	frá	frá	ADP	P	_	19	case	_	_
+19	Hólastað	hólastaður	PROPN	NPR-D	_	13	obl	_	_
+20	með	með	ADP	P	_	22	case	_	_
+21	fullum	fullur	ADJ	ADJ-D	Case=Dat|Degree=Pos	22	amod	_	_
+22	ásetningi	ásetningur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
+23	að	að	PART	TO	_	24	advcl	_	_
+24	yfirfalla	yfirfalla	VERB	VB	VerbForm=Inf	13	advcl	_	_
+25	þann	sá	DET	D-A	Case=Acc	28	det	_	_
+26	útvalda	útvalinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	28	amod	_	_
+27	guðs	guð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	28	nmod:poss	_	_
+28	ástvin	ástvinur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obj	_	_
+29	og	og	CCONJ	CONJ	_	30	cc	_	_
+30	þénara	þénari	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	conj	_	SpaceAfter=No
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	síra	síra	PROPN	NPR-A	_	28	appos	_	_
+33	Þorkel	þorkel	PROPN	NPR-A	_	32	flat:name	_	_
+34	Guðbjartsson	guðbjartsson	PROPN	NPR-A	_	32	dep	_	SpaceAfter=No
+35	,	,	PUNCT	,	_	34	punct	_	_
+36	því	það	PRON	PRO-D	Case=Dat	13	obl	_	_
+37	hann	hann	PRON	PRO-N	Case=Nom	38	nsubj	_	_
+38	sagðist	segjast	VERB	VBDI	Mood=Ind|Tense=Past	36	ccomp	_	_
+39	nú	nú	ADV	ADV	Degree=Pos	38	advmod	_	_
+40	í	í	ADP	P	_	42	case	_	_
+41	sannri	sannur	ADJ	ADJ-D	Case=Dat|Degree=Pos	42	amod	_	_
+42	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	44	obl	_	_
+43	fullkomlega	fullkomlega	ADV	ADV	Degree=Pos	44	advmod	_	_
+44	merkja	merkja	VERB	VB	VerbForm=Inf	38	xcomp	_	_
+45	að	að	SCONJ	C	_	48	mark	_	_
+46	hann	hann	PRON	PRO-N	Case=Nom	48	nsubj	_	_
+47	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	48	cop	_	_
+48	verkfæri	verkfæri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	44	ccomp	_	_
+49	herrans	herra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	48	nmod:poss	_	SpaceAfter=No
+50	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.129
+# X_ID = 1675.MAGNUS.BIO-OTH,.129
+# text = og þar um væri vitni þau auðkenningar teikn sem á honum sæist,
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	þar	þar	ADV	ADV	Degree=Pos	5	obl	_	_
+3	um	um	ADP	P	_	2	case	_	_
+4	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	5	cop	_	_
+5	vitni	vitni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+6	þau	það	DET	D-N	Case=Nom	8	det	_	_
+7	auðkenningar	auðkenning	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	nmod:poss	_	_
+8	teikn	teikn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
+9	sem	sem	SCONJ	C	_	12	mark	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	honum	hann	PRON	PRO-D	Case=Dat	12	obl	_	_
+12	sæist	sjá	VERB	VBDS	Mood=Sub|Tense=Past	8	acl:relcl	_	SpaceAfter=No
+13	,	,	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.130
+# X_ID = 1675.MAGNUS.BIO-OTH,.130
+# text = fyrst, að hann væri hataður, ofsóttur og baktalaður af veraldarinnar börnum án orsaka,
+1	fyrst	fyrstur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	SpaceAfter=No
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	að	að	SCONJ	C	_	6	mark	_	_
+4	hann	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+5	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	6	cop	_	_
+6	hataður	hata	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	ofsóttur	ofsækja	VERB	VAN	Tense=Past|VerbForm=Part	6	ccomp	_	_
+9	og	og	CCONJ	CONJ	_	6	cc	_	_
+10	baktalaður	baktala	VERB	VAN	Tense=Past|VerbForm=Part	6	ccomp	_	_
+11	af	af	ADP	P	_	13	case	_	_
+12	veraldarinnar	veröld	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	nmod:poss	_	_
+13	börnum	barn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obl	_	_
+14	án	án	ADP	P	_	15	case	_	_
+15	orsaka	orsök	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
+16	,	,	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.131
+# X_ID = 1675.MAGNUS.BIO-OTH,.131
+# text = þar enginn kynni þó með nokkrum sanni á hann bevísa að hann gjörði neinum manni nokkuð mein .
+1	þar	þar	ADV	ADV	Degree=Pos	10	advmod	_	_
+2	enginn	enginn	DET	Q-N	Case=Nom	10	nsubj	_	_
+3	kynni	kunna	AUX	MDDS	Mood=Sub|Tense=Past	10	aux	_	_
+4	þó	þó	ADV	ADV	Degree=Pos	10	advmod	_	_
+5	með	með	ADP	P	_	7	case	_	_
+6	nokkrum	nokkur	DET	Q-D	Case=Dat	7	amod	_	_
+7	sanni	sannur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
+8	á	á	ADP	P	_	9	case	_	_
+9	hann	hann	PRON	PRO-A	Case=Acc	10	obl	_	_
+10	bevísa	bevísa	VERB	VB	VerbForm=Inf	0	root	_	_
+11	að	að	SCONJ	C	_	13	mark	_	_
+12	hann	hann	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+13	gjörði	gera	VERB	DODI	Mood=Ind|Tense=Past	10	ccomp	_	_
+14	neinum	neinn	DET	Q-D	Case=Dat	15	amod	_	_
+15	manni	maður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	iobj	_	_
+16	nokkuð	nokkur	DET	Q-A	Case=Acc	17	amod	_	_
+17	mein	mein	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	10	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.132
+# X_ID = 1675.MAGNUS.BIO-OTH,.132
+# text = Það annað teikn að vera sagði biskup, að guð hefði prestinn kæran,
+1	Það	það	DET	D-A	Case=Acc	3	det	_	_
+2	annað	annar	PRON	OTHER-A	Case=Acc	3	det	_	_
+3	teikn	teikn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	nsubj	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	vera	vera	AUX	BE	VerbForm=Inf	6	xcomp	_	_
+6	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+7	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	að	að	SCONJ	C	_	11	mark	_	_
+10	guð	guð	PROPN	NPR-N	_	11	nsubj	_	_
+11	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	6	ccomp	_	_
+12	prestinn	prestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	nsubj	_	_
+13	kæran	kær	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	ccomp	_	SpaceAfter=No
+14	,	,	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.133
+# X_ID = 1675.MAGNUS.BIO-OTH,.133
+# text = væri sá tilburður er skeð hefði heim á Hólastað, þá síra Þorkell þangað kom eftir biskupsins befalningu
+1	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	3	cop	_	_
+2	sá	sá	DET	D-N	Case=Nom	3	det	_	_
+3	tilburður	tilburður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+4	er	er	SCONJ	C	_	5	mark	_	_
+5	skeð	ske	VERB	VBN	Tense=Past|VerbForm=Part	3	acl:relcl	_	_
+6	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	5	aux	_	_
+7	heim	heim	ADV	ADV	Degree=Pos	9	advmod	_	_
+8	á	á	ADP	P	_	9	case	_	_
+9	Hólastað	hólastaður	PROPN	NPR-D	_	5	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
+12	síra	síra	PROPN	NPR-N	_	15	nsubj	_	_
+13	Þorkell	þorkell	PROPN	NPR-N	_	12	flat:name	_	_
+14	þangað	þangað	ADV	ADV	Degree=Pos	15	advmod	_	_
+15	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	11	advcl	_	_
+16	eftir	eftir	ADP	P	_	18	case	_	_
+17	biskupsins	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	_
+18	befalningu	befalning	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.134
+# X_ID = 1675.MAGNUS.BIO-OTH,.134
+# text = og í þann tíð kveðst hann með hörðum orðum saklausan straffað hafa,
+1	og	og	CCONJ	CONJ	_	5	cc	_	_
+2	í	í	ADP	P	_	4	case	_	_
+3	þann	sá	DET	D-A	Case=Acc	4	det	_	_
+4	tíð	tíð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+5	kveðst	kveðast	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+6	hann	hann	PRON	PRO-A	Case=Acc	11	obj	_	_
+7	með	með	ADP	P	_	9	case	_	_
+8	hörðum	harður	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
+9	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obl	_	_
+10	saklausan	saklaus	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	amod	_	_
+11	straffað	straffa	VERB	VBN	Tense=Past|VerbForm=Part	5	xcomp	_	_
+12	hafa	hafa	AUX	HV	VerbForm=Inf	11	aux	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	5	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.135
+# X_ID = 1675.MAGNUS.BIO-OTH,.135
+# text = en hann með hógværð svarað og afsakað, svo sem guðs píslarvotta og krossvera tíska jafnan væri,
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	hann	hann	PRON	PRO-N	Case=Nom	0	root	_	_
+3	með	með	ADP	P	_	4	case	_	_
+4	hógværð	hógværð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+5	svarað	svara	VERB	VBN	Tense=Past|VerbForm=Part	2	dep	_	_
+6	og	og	CCONJ	CONJ	_	7	cc	_	_
+7	afsakað	afsaka	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	svo	svo	ADV	ADVR	Degree=Cmp	2	advmod	_	_
+10	sem	sem	SCONJ	C	_	9	fixed	_	_
+11	guðs	guð	PROPN	NPR-G	_	12	nmod:poss	_	_
+12	píslarvotta	píslarvottur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	nmod:poss	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	krossvera	krossveri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	conj	_	_
+15	tíska	tíska	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	advcl	_	_
+16	jafnan	jafnan	ADV	ADV	Degree=Pos	15	advmod	_	_
+17	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	15	cop	_	SpaceAfter=No
+18	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.136
+# X_ID = 1675.MAGNUS.BIO-OTH,.136
+# text = síðan hefði sinn bryti ávarpað prestinn með mjög slæmum og ótilheyrilegum orðum, hvar fyrir guð hefði rétt samstundis straffað brytann í sinni nærveru, svo jörðin hefði gleypt hann í sig allt upp undir hendur,
+1	síðan	síðan	ADV	ADV	Degree=Pos	5	advmod	_	_
+2	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	5	aux	_	_
+3	sinn	sinn	PRON	PRO-N	Case=Nom	4	nmod:poss	_	_
+4	bryti	bryti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+5	ávarpað	ávarpa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	prestinn	prestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
+7	með	með	ADP	P	_	12	case	_	_
+8	mjög	mjög	ADV	ADV	Degree=Pos	9	amod	_	_
+9	slæmum	slæmur	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
+10	og	og	CCONJ	CONJ	_	11	cc	_	_
+11	ótilheyrilegum	ótilheyrilegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
+12	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	hvar	hvar	ADV	WADV	Degree=Pos	20	obl	_	_
+15	fyrir	fyrir	ADP	P	_	14	case	_	_
+16	guð	guð	PROPN	NPR-A	_	20	nsubj	_	_
+17	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	20	aux	_	_
+18	rétt	rétt	ADV	ADV	Degree=Pos	20	advmod	_	_
+19	samstundis	samstundis	ADV	ADV	Degree=Pos	18	advmod	_	_
+20	straffað	straffa	VERB	VBN	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
+21	brytann	bryti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obj	_	_
+22	í	í	ADP	P	_	24	case	_	_
+23	sinni	sinn	PRON	PRO-D	Case=Dat	24	nmod:poss	_	_
+24	nærveru	nærvera	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	svo	svo	ADP	P	_	29	case	_	_
+27	jörðin	jörð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	29	nsubj	_	_
+28	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	29	aux	_	_
+29	gleypt	gleypa	VERB	VBN	Tense=Past|VerbForm=Part	20	obl	_	_
+30	hann	hann	PRON	PRO-A	Case=Acc	29	obj	_	_
+31	í	í	ADP	P	_	32	case	_	_
+32	sig	sig	PRON	PRO-A	Case=Acc	29	obl	_	_
+33	allt	allur	DET	Q-N	Case=Nom	29	obl	_	_
+34	upp	upp	ADP	RP	_	33	compound:prt	_	_
+35	undir	undir	ADP	P	_	33	case	_	_
+36	hendur	hönd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	33	obl	_	SpaceAfter=No
+37	,	,	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.137
+# X_ID = 1675.MAGNUS.BIO-OTH,.137
+# text = Í þriðja máta játar nú biskupinn með grátandi tárum að guð hafi sig nú með þessu óveðri, villu og myrkri maklega að verðugleikum straffað, fyrir það hann hafi hugað að hafa hönd á téðum presti,
+1	Í	í	ADP	P	_	3	case	_	_
+2	þriðja	þriðji	ADJ	ADJ-D	Case=Dat|Degree=Pos	3	amod	_	_
+3	máta	máti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+4	játar	játa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+5	nú	nú	ADV	ADV	Degree=Pos	4	advmod	_	_
+6	biskupinn	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+7	með	með	ADP	P	_	9	case	_	_
+8	grátandi	gráta	VERB	VAG	Tense=Pres|VerbForm=Part	9	amod	_	_
+9	tárum	tár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
+10	að	að	SCONJ	C	_	25	mark	_	_
+11	guð	guð	PROPN	NPR-N	_	25	nsubj	_	_
+12	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	25	aux	_	_
+13	sig	sig	PRON	PRO-A	Case=Acc	25	obj	_	_
+14	nú	nú	ADV	ADV	Degree=Pos	25	advmod	_	_
+15	með	með	ADP	P	_	17	case	_	_
+16	þessu	þessi	DET	D-D	Case=Dat	17	det	_	_
+17	óveðri	óveður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	19	punct	_	_
+19	villu	villa	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	conj	_	_
+20	og	og	CCONJ	CONJ	_	21	cc	_	_
+21	myrkri	myrkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	conj	_	_
+22	maklega	maklega	ADV	ADV	Degree=Pos	25	advmod	_	_
+23	að	að	ADP	P	_	24	case	_	_
+24	verðugleikum	verðugleikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	25	obl	_	_
+25	straffað	straffa	VERB	VBN	Tense=Past|VerbForm=Part	4	ccomp	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	fyrir	fyrir	ADP	P	_	28	case	_	_
+28	það	það	PRON	PRO-A	Case=Acc	25	obl	_	_
+29	hann	hann	PRON	PRO-A	Case=Acc	31	nsubj	_	_
+30	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	31	aux	_	_
+31	hugað	huga	VERB	VBN	Tense=Past|VerbForm=Part	28	ccomp	_	_
+32	að	að	PART	TO	_	34	mark	_	_
+33	hafa	hafa	AUX	HV	VerbForm=Inf	34	aux	_	_
+34	hönd	hönd	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	31	xcomp	_	_
+35	á	á	ADP	P	_	37	case	_	_
+36	téðum	téður	ADJ	ADJ-D	Case=Dat|Degree=Pos	37	amod	_	_
+37	presti	prestur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
+38	,	,	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.138
+# X_ID = 1675.MAGNUS.BIO-OTH,.138
+# text = biður nú guð innilega fyrirgefningar,
+1	biður	biðja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	_
+3	guð	guð	PROPN	NPR-A	_	1	iobj	_	_
+4	innilega	innilega	ADV	ADV	Degree=Pos	1	advmod	_	_
+5	fyrirgefningar	fyrirgefning	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	nmod:poss	_	SpaceAfter=No
+6	,	,	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.139
+# X_ID = 1675.MAGNUS.BIO-OTH,.139
+# text = les síðan sínar bænir
+1	les	lesa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	síðan	síðan	ADV	ADV	Degree=Pos	1	advmod	_	_
+3	sínar	sinn	PRON	PRO-A	Case=Acc	4	nmod:poss	_	_
+4	bænir	bæn	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.140
+# X_ID = 1675.MAGNUS.BIO-OTH,.140
+# text = og befalar sinn anda guði,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	befalar	befala	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	sinn	sinn	PRON	PRO-A	Case=Acc	4	nmod:poss	_	_
+4	anda	anda	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+5	guði	guð	PROPN	NPR-D	_	2	iobj	_	SpaceAfter=No
+6	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.141
+# X_ID = 1675.MAGNUS.BIO-OTH,.141
+# text = og kveðst viljugur nú líða dauðann etc. .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kveðst	kveða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	viljugur	viljugur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
+4	nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	líða	líða	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+6	dauðann	dauði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
+7	etc.	etc.	X	FW	Foreign=Yes	2	flat:foreign	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.142
+# X_ID = 1675.MAGNUS.BIO-OTH,.142
+# text = Sem nú Þorkell prestur heyrir þetta, gengur hann þar að sem biskupinn liggur undir einni eik í einu moldarflagi, allur rifinn í andliti af eikanna kvistum, þar hann hafði sér í gegnum þrengt, og klæðin öll í sundur rifin á hans líkama .
+1	Sem	sem	SCONJ	C	_	5	mark	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
+3	Þorkell	þorkell	PROPN	NPR-N	_	5	nsubj	_	_
+4	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	appos	_	_
+5	heyrir	heyra	VERB	VBPI	Mood=Ind|Tense=Pres	8	advcl	_	_
+6	þetta	þessi	DET	D-A	Case=Acc	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+9	hann	hann	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+10	þar	þar	ADV	ADV	Degree=Pos	8	obl	_	_
+11	að	að	ADP	P	_	10	case	_	_
+12	sem	sem	SCONJ	C	_	14	mark	_	_
+13	biskupinn	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
+14	liggur	liggja	VERB	VBPI	Mood=Ind|Tense=Pres	10	acl:relcl	_	_
+15	undir	undir	ADP	P	_	17	case	_	_
+16	einni	einn	DET	ONE-D	Case=Dat	17	det	_	_
+17	eik	eik	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
+18	í	í	ADP	P	_	20	case	_	_
+19	einu	einn	DET	ONE-D	Case=Dat	20	det	_	_
+20	moldarflagi	moldarflag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	20	punct	_	_
+22	allur	allur	DET	Q-N	Case=Nom	23	nsubj	_	_
+23	rifinn	rífa	VERB	VAN	Tense=Past|VerbForm=Part	14	advcl	_	_
+24	í	í	ADP	P	_	25	case	_	_
+25	andliti	andlit	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
+26	af	af	ADP	P	_	28	case	_	_
+27	eikanna	eik	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	28	nmod:poss	_	_
+28	kvistum	kvistur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	23	obl	_	SpaceAfter=No
+29	,	,	PUNCT	,	_	28	punct	_	_
+30	þar	þar	ADV	WADV	Degree=Pos	36	advmod	_	_
+31	hann	hann	PRON	PRO-N	Case=Nom	36	nsubj	_	_
+32	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	36	aux	_	_
+33	sér	sig	PRON	PRO-D	Case=Dat	36	obj	_	_
+34	í	í	ADP	P	_	35	case	_	_
+35	gegnum	gegnum	ADP	P	_	36	obl	_	_
+36	þrengt	þrengja	VERB	VBN	Tense=Past|VerbForm=Part	28	acl:relcl	_	SpaceAfter=No
+37	,	,	PUNCT	,	_	36	punct	_	_
+38	og	og	CCONJ	CONJ	_	43	cc	_	_
+39	klæðin	klæði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	43	nsubj	_	_
+40	öll	allur	DET	Q-N	Case=Nom	39	amod	_	_
+41	í	í	ADP	P	_	42	case	_	_
+42	sundur	sundur	ADV	ADV	Degree=Pos	43	obl	_	_
+43	rifin	rífa	VERB	VAN	Tense=Past|VerbForm=Part	23	advcl	_	_
+44	á	á	ADP	P	_	46	case	_	_
+45	hans	hann	PRON	PRO-G	Case=Gen	46	nmod:poss	_	_
+46	líkama	líkami	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	43	obl	_	SpaceAfter=No
+47	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.143
+# X_ID = 1675.MAGNUS.BIO-OTH,.143
+# text = Sínu biskupslegu tignarklæði hafði hann tapað,
+1	Sínu	sinn	PRON	PRO-D	Case=Dat	3	nmod:poss	_	_
+2	biskupslegu	biskupslegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	3	amod	_	_
+3	tignarklæði	tignarklæði	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obj	_	_
+4	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	6	aux	_	_
+5	hann	hann	PRON	PRO-N	Case=Nom	6	obj	_	_
+6	tapað	tapa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.144
+# X_ID = 1675.MAGNUS.BIO-OTH,.144
+# text = skalf nú á honum hver leggur og liður, og allur í saur kvolaður, svo varla sást manns mynd á honum .
+1	skalf	skjálfa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	_
+3	á	á	ADP	P	_	4	case	_	_
+4	honum	hann	PRON	PRO-D	Case=Dat	1	obl	_	_
+5	hver	hver	DET	Q-N	Case=Nom	6	amod	_	_
+6	leggur	leggja	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
+7	og	og	CCONJ	CONJ	_	8	cc	_	_
+8	liður	liður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	og	og	CCONJ	CONJ	_	14	cc	_	_
+11	allur	allur	DET	Q-N	Case=Nom	14	nsubj	_	_
+12	í	í	ADP	P	_	13	case	_	_
+13	saur	saur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
+14	kvolaður	kvola	VERB	VAN	Tense=Past|VerbForm=Part	1	conj	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	svo	svo	ADP	P	_	18	case	_	_
+17	varla	varla	ADV	ADV	Degree=Pos	18	advmod	_	_
+18	sást	sjá	VERB	VBDI	Mood=Ind|Tense=Past	14	obl	_	_
+19	manns	maður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	_
+20	mynd	mynd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
+21	á	á	ADP	P	_	22	case	_	_
+22	honum	hann	PRON	PRO-D	Case=Dat	18	obl	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.145
+# X_ID = 1675.MAGNUS.BIO-OTH,.145
+# text = Síra Þorkell heilsar upp á hann
+1	Síra	síra	PROPN	NPR-N	_	3	nsubj	_	_
+2	Þorkell	þorkell	PROPN	NPR-N	_	1	flat:name	_	_
+3	heilsar	heilsa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	upp	upp	ADP	RP	_	6	compound:prt	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	hann	hann	PRON	PRO-A	Case=Acc	3	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.146
+# X_ID = 1675.MAGNUS.BIO-OTH,.146
+# text = og spyr hvort þetta væri nokkuð sinn herra biskupinn og andlegi faðir .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	hvort	hvort	SCONJ	WQ	_	8	mark	_	_
+4	þetta	þessi	DET	D-N	Case=Nom	8	nsubj	_	_
+5	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	8	cop	_	_
+6	nokkuð	nokkuð	ADV	ADV	Degree=Pos	8	advmod	_	_
+7	sinn	sinn	PRON	PRO-N	Case=Nom	8	nmod:poss	_	_
+8	herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	_
+9	biskupinn	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	appos	_	_
+10	og	og	CCONJ	CONJ	_	12	cc	_	_
+11	andlegi	andlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
+12	faðir	faðir	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	conj	_	SpaceAfter=No
+13	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.147
+# X_ID = 1675.MAGNUS.BIO-OTH,.147
+# text = Biskup svarar að svo hafi um stundir hann verið kallaður, þó nú sé biskupstignin nokkuð lægð .
+1	Biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	svarar	svara	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	að	að	SCONJ	C	_	10	mark	_	_
+4	svo	svo	ADV	ADV	Degree=Pos	10	advmod	_	_
+5	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	10	aux	_	_
+6	um	um	ADP	P	_	7	case	_	_
+7	stundir	stund	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	_
+8	hann	hann	PRON	PRO-N	Case=Nom	10	nsubj	_	_
+9	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	10	cop	_	_
+10	kallaður	kalla	VERB	VAN	Tense=Past|VerbForm=Part	2	ccomp	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	þó	þó	ADP	P	_	17	case	_	_
+13	nú	nú	ADV	ADV	Degree=Pos	17	advmod	_	_
+14	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	17	cop	_	_
+15	biskupstignin	biskupstign	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
+16	nokkuð	nokkur	DET	Q-N	Case=Nom	17	obl	_	_
+17	lægð	lægja	VERB	VAN	Tense=Past|VerbForm=Part	10	obl	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.148
+# X_ID = 1675.MAGNUS.BIO-OTH,.148
+# text = Síra Þorkell spyr hverju sæti að sinn andlegi faðir skuli þar nú liggja svo á sig kominn, klagandi meðaukunarlega yfir óstöðugu lukkunnar fallvöltu hjóli og þess hlaupi, gjörandi öngvan greinarmun á millum ríkra og snauðra, ungra eður gamalla, ríkra og fátækra, andlegra eður veraldlegra .
+1	Síra	síra	PROPN	NPR-N	_	3	nsubj	_	_
+2	Þorkell	þorkell	PROPN	NPR-N	_	1	flat:name	_	_
+3	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	hverju	hver	PRON	WPRO-N	Case=Nom	5	obj	_	_
+5	sæti	sæta	VERB	VBPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
+6	að	að	SCONJ	C	_	13	mark	_	_
+7	sinn	sinn	PRON	PRO-N	Case=Nom	9	nmod:poss	_	_
+8	andlegi	andlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
+9	faðir	faðir	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
+10	skuli	skulu	AUX	MDPS	Mood=Sub|Tense=Pres	13	aux	_	_
+11	þar	þar	ADV	ADV	Degree=Pos	13	advmod	_	_
+12	nú	nú	ADV	ADV	Degree=Pos	13	advmod	_	_
+13	liggja	liggja	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+14	svo	svo	ADV	ADV	Degree=Pos	17	advmod	_	_
+15	á	á	ADP	P	_	16	case	_	_
+16	sig	sig	PRON	PRO-A	Case=Acc	17	obl	_	_
+17	kominn	koma	VERB	VBN	Tense=Past|VerbForm=Part	13	advcl	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	klagandi	klaga	VERB	VAG	Tense=Pres|VerbForm=Part	17	advcl	_	_
+20	meðaukunarlega	meðaukunarlega	ADV	ADV	Degree=Pos	19	advmod	_	_
+21	yfir	yfir	ADP	P	_	25	case	_	_
+22	óstöðugu	óstöðugur	ADJ	ADJ-D	Case=Dat|Degree=Pos	25	amod	_	_
+23	lukkunnar	lukka	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	25	nmod:poss	_	_
+24	fallvöltu	fallvaltur	ADJ	ADJ-D	Case=Dat|Degree=Pos	25	amod	_	_
+25	hjóli	hjól	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
+26	og	og	CCONJ	CONJ	_	28	cc	_	_
+27	þess	það	PRON	PRO-G	Case=Gen	28	nmod:poss	_	_
+28	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	conj	_	SpaceAfter=No
+29	,	,	PUNCT	,	_	28	punct	_	_
+30	gjörandi	gjöra	VERB	DAG	Tense=Pres|VerbForm=Part	17	advcl	_	_
+31	öngvan	enginn	DET	Q-A	Case=Acc	32	amod	_	_
+32	greinarmun	greinarmunur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obj	_	_
+33	á	á	ADP	P	_	35	case	_	_
+34	millum	millum	ADP	P	_	35	case	_	_
+35	ríkra	ríkur	ADJ	ADJ-G	Case=Gen|Degree=Pos	30	obl	_	_
+36	og	og	CCONJ	CONJ	_	37	cc	_	_
+37	snauðra	snauður	ADJ	ADJ-G	Case=Gen|Degree=Pos	35	conj	_	SpaceAfter=No
+38	,	,	PUNCT	,	_	37	punct	_	_
+39	ungra	ungur	ADJ	ADJ-G	Case=Gen|Degree=Pos	35	amod	_	_
+40	eður	eður	CCONJ	CONJ	_	41	cc	_	_
+41	gamalla	gamall	ADJ	ADJ-G	Case=Gen|Degree=Pos	39	conj	_	SpaceAfter=No
+42	,	,	PUNCT	,	_	41	punct	_	_
+43	ríkra	ríkur	ADJ	ADJ-G	Case=Gen|Degree=Pos	35	amod	_	_
+44	og	og	CCONJ	CONJ	_	45	cc	_	_
+45	fátækra	fátækur	ADJ	ADJ-G	Case=Gen|Degree=Pos	43	conj	_	SpaceAfter=No
+46	,	,	PUNCT	,	_	45	punct	_	_
+47	andlegra	andlegur	ADJ	ADJ-G	Case=Gen|Degree=Pos	35	amod	_	_
+48	eður	eður	CCONJ	CONJ	_	49	cc	_	_
+49	veraldlegra	veraldlegur	ADJ	ADJ-G	Case=Gen|Degree=Pos	47	conj	_	SpaceAfter=No
+50	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.149
+# X_ID = 1675.MAGNUS.BIO-OTH,.149
+# text = Já það sem forundrunarlegast væri,
+1	Já	já	INTJ	INTJ	_	2	discourse	_	_
+2	það	sá	DET	D-N	Case=Nom	0	root	_	_
+3	sem	sem	SCONJ	C	_	4	mark	_	_
+4	forundrunarlegast	forundrunarlegur	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	acl:relcl	_	_
+5	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	4	cop	_	SpaceAfter=No
+6	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.150
+# X_ID = 1675.MAGNUS.BIO-OTH,.150
+# text = kirkjunnar formenn og andlegir feður yrðu soddan hörmungum að mæta, " svo sem hér má sjá á mínum ástúðlega herra bikupinum " segir hann ;
+1	kirkjunnar	kirkja	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	nmod:poss	_	_
+2	formenn	formaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
+3	og	og	CCONJ	CONJ	_	5	cc	_	_
+4	andlegir	andlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
+5	feður	faðir	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	conj	_	_
+6	yrðu	verða	VERB	RDDS	Mood=Sub|Tense=Past	0	root	_	_
+7	soddan	soddan	PRON	SUCH	_	8	det	_	_
+8	hörmungum	hörmung	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obj	_	_
+9	að	að	PART	TO	_	10	mark	_	_
+10	mæta	mæta	VERB	VB	VerbForm=Inf	6	xcomp	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	SpaceAfter=No
+12	"	"	PUNCT	"	_	11	punct	_	_
+13	svo	svo	ADV	ADVR	Degree=Cmp	6	advmod	_	_
+14	sem	sem	SCONJ	C	_	13	fixed	_	_
+15	hér	hér	ADV	ADV	Degree=Pos	17	advmod	_	_
+16	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	17	aux	_	_
+17	sjá	sjá	VERB	VB	VerbForm=Inf	13	advcl	_	_
+18	á	á	ADP	P	_	21	case	_	_
+19	mínum	minn	PRON	PRO-D	Case=Dat	21	nmod:poss	_	_
+20	ástúðlega	ástúðlega	ADJ	ADJ-D	Case=Dat|Degree=Pos	21	amod	_	_
+21	herra	herra	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
+22	bikupinum	biskup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	appos	_	SpaceAfter=No
+23	"	"	PUNCT	"	_	22	punct	_	_
+24	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	6	parataxis	_	_
+25	hann	hann	PRON	PRO-N	Case=Nom	24	nsubj	_	SpaceAfter=No
+26	;	;	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.151
+# X_ID = 1675.MAGNUS.BIO-OTH,.151
+# text = tekur biskupinn svo upp úr saurnum með stórri harmaklögun, þakkandi guði þá náð að hann hefði virt sinn fyrirlitnasta þénara þess að njóta þeirrar æru og mega þéna sínum herra biskupinum í þessari hans þrengjandi nauðsyn, hefjandi síðan bikupinn hófsamlega frá jörðinni
+1	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	biskupinn	biskup	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
+3	svo	svo	ADV	ADV	Degree=Pos	1	advmod	_	_
+4	upp	upp	ADP	RP	_	6	compound:prt	_	_
+5	úr	úr	ADP	P	_	6	case	_	_
+6	saurnum	saur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	1	obl	_	_
+7	með	með	ADP	P	_	9	case	_	_
+8	stórri	stór	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
+9	harmaklögun	harmaklögun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	þakkandi	þakka	VERB	VAG	Tense=Pres|VerbForm=Part	1	advcl	_	_
+12	guði	guð	PROPN	NPR-D	_	11	iobj	_	_
+13	þá	þá	DET	D-A	Case=Acc	14	det	_	_
+14	náð	náð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
+15	að	að	SCONJ	C	_	18	mark	_	_
+16	hann	hann	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+17	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	18	aux	_	_
+18	virt	virða	VERB	VBN	Tense=Past|VerbForm=Part	14	ccomp	_	_
+19	sinn	sinn	PRON	PRO-A	Case=Acc	18	iobj	_	_
+20	fyrirlitnasta	fyrirlitinn	ADJ	ADJS-A	Case=Acc|Degree=Sup	19	amod	_	_
+21	þénara	þénari	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	conj	_	_
+22	þess	það	PRON	PRO-G	Case=Gen	18	obj	_	_
+23	að	að	PART	TO	_	24	mark	_	_
+24	njóta	njóta	VERB	VB	VerbForm=Inf	22	xcomp	_	_
+25	þeirrar	sá	DET	D-G	Case=Gen	26	det	_	_
+26	æru	æra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	24	obj	_	_
+27	og	og	CCONJ	CONJ	_	29	cc	_	_
+28	mega	mega	AUX	MD	VerbForm=Inf	29	aux	_	_
+29	þéna	þéna	VERB	VB	VerbForm=Inf	24	xcomp	_	_
+30	sínum	sinn	PRON	PRO-D	Case=Dat	31	nmod:poss	_	_
+31	herra	herra	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obj	_	_
+32	biskupinum	biskup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	appos	_	_
+33	í	í	ADP	P	_	37	case	_	_
+34	þessari	þessi	DET	D-D	Case=Dat	37	det	_	_
+35	hans	hann	PRON	PRO-G	Case=Gen	37	nmod:poss	_	_
+36	þrengjandi	þrengja	VERB	VAG	Tense=Pres|VerbForm=Part	37	amod	_	_
+37	nauðsyn	nauðsyn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obl	_	SpaceAfter=No
+38	,	,	PUNCT	,	_	37	punct	_	_
+39	hefjandi	hefja	VERB	VAG	Tense=Pres|VerbForm=Part	11	advcl	_	_
+40	síðan	síðan	ADV	ADV	Degree=Pos	39	advmod	_	_
+41	bikupinn	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	39	obj	_	_
+42	hófsamlega	hófsamlega	ADV	ADV	Degree=Pos	39	advmod	_	_
+43	frá	frá	ADP	P	_	44	case	_	_
+44	jörðinni	jörð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	39	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.152
+# X_ID = 1675.MAGNUS.BIO-OTH,.152
+# text = og setti hann í söðulinn .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	setti	setja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	hann	hann	PRON	PRO-A	Case=Acc	2	obj	_	_
+4	í	í	ADP	P	_	5	case	_	_
+5	söðulinn	söðull	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.153
+# X_ID = 1675.MAGNUS.BIO-OTH,.153
+# text = Fylgdarmaðurinn teymdi hestinn undir biskupi,
+1	Fylgdarmaðurinn	fylgdarmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	teymdi	teyma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	hestinn	hestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+4	undir	undir	ADP	P	_	5	case	_	_
+5	biskupi	biskup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.154
+# X_ID = 1675.MAGNUS.BIO-OTH,.154
+# text = en Þorkell prestur reið á baki
+1	en	en	CCONJ	CONJ	_	4	cc	_	_
+2	Þorkell	þorkell	PROPN	NPR-N	_	4	nsubj	_	_
+3	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	appos	_	_
+4	reið	ríða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	baki	bak	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.155
+# X_ID = 1675.MAGNUS.BIO-OTH,.155
+# text = og studdi biskup, svo hann skyldi ekki falla .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	studdi	styðja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	biskup	biskup	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	svo	svo	ADP	P	_	9	case	_	_
+6	hann	hann	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+7	skyldi	skulu	AUX	MDDS	Mood=Sub|Tense=Past	9	aux	_	_
+8	ekki	ekki	ADV	NEG	_	9	advmod	_	_
+9	falla	falla	VERB	VB	VerbForm=Inf	2	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.156
+# X_ID = 1675.MAGNUS.BIO-OTH,.156
+# text = Nú sem þeir koma heim að staðnum, biður prestur biskupinn að misvirða ekki fyrir sér þó hann léti ei hringja fyrir honum,
+1	Nú	nú	INTJ	INTJ	_	9	discourse	_	_
+2	sem	sem	SCONJ	C	_	4	mark	_	_
+3	þeir	hann	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+4	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	9	advcl	_	_
+5	heim	heim	ADV	ADV	Degree=Pos	7	advmod	_	_
+6	að	að	ADP	P	_	7	case	_	_
+7	staðnum	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	biður	biðja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+10	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
+11	biskupinn	biskup	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	nsubj	_	_
+12	að	að	PART	TO	_	13	mark	_	_
+13	misvirða	misvirða	VERB	VB	VerbForm=Inf	9	xcomp	_	_
+14	ekki	ekki	ADV	NEG	_	13	advmod	_	_
+15	fyrir	fyrir	ADP	P	_	16	case	_	_
+16	sér	sig	PRON	PRO-D	Case=Dat	13	obl	_	_
+17	þó	þó	ADP	P	_	19	case	_	_
+18	hann	hann	PRON	PRO-N	Case=Nom	19	nsubj	_	_
+19	léti	láta	VERB	VBDS	Mood=Sub|Tense=Past	13	obl	_	_
+20	ei	ei	ADV	NEG	_	19	advmod	_	_
+21	hringja	hringja	VERB	VB	VerbForm=Inf	19	xcomp	_	_
+22	fyrir	fyrir	ADP	P	_	23	case	_	_
+23	honum	hann	PRON	PRO-D	Case=Dat	21	obl	_	SpaceAfter=No
+24	,	,	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.157
+# X_ID = 1675.MAGNUS.BIO-OTH,.157
+# text = kvað þetta svo skyndilega hafa að höndum borið,
+1	kvað	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	þetta	þessi	DET	D-A	Case=Acc	8	nsubj	_	_
+3	svo	svo	ADV	ADVR	Degree=Cmp	8	advmod	_	_
+4	skyndilega	skyndilega	ADV	ADV	Degree=Pos	3	advmod	_	_
+5	hafa	hafa	AUX	HV	VerbForm=Inf	8	aux	_	_
+6	að	að	ADP	P	_	7	case	_	_
+7	höndum	hönd	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
+8	borið	bera	VERB	VBN	Tense=Past|VerbForm=Part	1	xcomp	_	SpaceAfter=No
+9	,	,	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.158
+# X_ID = 1675.MAGNUS.BIO-OTH,.158
+# text = og í annan stað ef nú væri hringt mætt fólkið meina að þeir færu þar með lík biskupsins, spyrjandi biskup þó að, hvort hann vildi heldur láta sér vísa fyrst í kirkju eður í heita baðstofu, þar hann mætti bakast .
+1	og	og	CCONJ	CONJ	_	11	cc	_	_
+2	í	í	ADP	P	_	4	case	_	_
+3	annan	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	4	amod	_	_
+4	stað	staður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
+5	ef	ef	ADP	P	_	8	case	_	_
+6	nú	nú	ADV	ADV	Degree=Pos	8	advmod	_	_
+7	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	8	cop	_	_
+8	hringt	hringja	VERB	VAN	Tense=Past|VerbForm=Part	11	obl	_	_
+9	mætt	mega	AUX	MDDS	Mood=Sub|Tense=Past	11	aux	_	_
+10	fólkið	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
+11	meina	meina	VERB	VB	VerbForm=Inf	0	root	_	_
+12	að	að	SCONJ	C	_	14	mark	_	_
+13	þeir	hann	PRON	PRO-N	Case=Nom	14	nsubj	_	_
+14	færu	fara	VERB	VBDS	Mood=Sub|Tense=Past	11	ccomp	_	_
+15	þar	þar	ADV	ADV	Degree=Pos	14	advmod	_	_
+16	með	með	ADP	P	_	17	case	_	_
+17	lík	lík	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
+18	biskupsins	biskup	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	nmod:poss	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	spyrjandi	spyrja	VERB	VAG	Tense=Pres|VerbForm=Part	11	advcl	_	_
+21	biskup	biskup	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	iobj	_	_
+22	þó	þó	ADV	ADV	Degree=Pos	20	advmod	_	_
+23	að	að	ADP	RP	_	20	compound:prt	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	hvort	hvort	SCONJ	WQ	_	29	mark	_	_
+26	hann	hann	PRON	PRO-N	Case=Nom	29	nsubj	_	_
+27	vildi	vilja	AUX	MDDS	Mood=Sub|Tense=Past	29	aux	_	_
+28	heldur	heldur	ADV	ADVR	Degree=Cmp	29	advmod	_	_
+29	láta	láta	VERB	VB	VerbForm=Inf	20	ccomp	_	_
+30	sér	sig	PRON	PRO-D	Case=Dat	31	obj	_	_
+31	vísa	vísa	VERB	VB	VerbForm=Inf	29	xcomp	_	_
+32	fyrst	fyrr	ADV	ADVS	Degree=Sup	31	advmod	_	_
+33	í	í	ADP	P	_	34	case	_	_
+34	kirkju	kirkja	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	_
+35	eður	eður	CCONJ	CONJ	_	38	cc	_	_
+36	í	í	ADP	P	_	38	case	_	_
+37	heita	heitur	ADJ	ADJ-A	Case=Acc|Degree=Pos	38	amod	_	_
+38	baðstofu	baðstofa	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	conj	_	SpaceAfter=No
+39	,	,	PUNCT	,	_	38	punct	_	_
+40	þar	þar	ADV	WADV	Degree=Pos	43	advmod	_	_
+41	hann	hann	PRON	PRO-N	Case=Nom	43	nsubj	_	_
+42	mætti	mega	AUX	MDDS	Mood=Sub|Tense=Past	43	aux	_	_
+43	bakast	baka	VERB	VB	VerbForm=Inf	38	acl:relcl	_	SpaceAfter=No
+44	.	.	PUNCT	.	_	11	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.159
+# X_ID = 1675.MAGNUS.BIO-OTH,.159
+# text = Biskup kvaðst mundu verða láta hjá líða kirkjugönguna og lestra í þetta sinn,
+1	Biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	kvaðst	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	mundu	munu	AUX	MD	VerbForm=Inf	5	aux	_	_
+4	verða	verða	AUX	RD	VerbForm=Inf	5	aux	_	_
+5	láta	láta	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+6	hjá	hjá	ADP	RP	_	7	compound:prt	_	_
+7	líða	líða	VERB	VB	VerbForm=Inf	5	xcomp	_	_
+8	kirkju	kirkja	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	nmod:poss	_	SpaceAfter=No
+9	gönguna	kirkjuganga	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	nsubj	_	_
+10	og	og	CCONJ	CONJ	_	11	cc	_	_
+11	lestra	lestur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	conj	_	_
+12	í	í	ADP	P	_	14	case	_	_
+13	þetta	þessi	DET	D-A	Case=Acc	14	det	_	_
+14	sinn	sinn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
+15	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.160
+# X_ID = 1675.MAGNUS.BIO-OTH,.160
+# text = en lést með þökkum taka mundi í móti baðstofuhitanum .
+1	en	en	CCONJ	CONJ	_	2	cc	_	_
+2	lést	láta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	með	með	ADP	P	_	4	case	_	_
+4	þökkum	þökk	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
+5	taka	taka	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+6	mundi	munu	AUX	MD	VerbForm=Inf	5	aux	_	_
+7	í	í	ADP	P	_	8	case	_	_
+8	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
+9	baðstofuhitanum	baðstofuhiti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	nmod:poss	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.161
+# X_ID = 1675.MAGNUS.BIO-OTH,.161
+# text = Prestur sagði sér sýndist hann ekki fær til langra bænagjörða í kirkjunni þetta sinn eður klerklegra söngva,
+1	Prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	sér	sig	PRON	PRO-D	Case=Dat	4	nsubj	_	_
+4	sýndist	sýnast	VERB	VBDI	Mood=Ind|Tense=Past	2	ccomp	_	_
+5	hann	hann	PRON	PRO-N	Case=Nom	7	nsubj	_	_
+6	ekki	ekki	ADV	NEG	_	7	advmod	_	_
+7	fær	fá	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	ccomp	_	_
+8	til	til	ADP	P	_	10	case	_	_
+9	langra	langur	ADJ	ADJ-G	Case=Gen|Degree=Pos	10	amod	_	_
+10	bænagjörða	bænagjörð	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	obl	_	_
+11	í	í	ADP	P	_	12	case	_	_
+12	kirkjunni	kirkja	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
+13	þetta	þessi	DET	D-A	Case=Acc	14	det	_	_
+14	sinn	sinn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
+15	eður	eður	CCONJ	CONJ	_	17	cc	_	_
+16	klerklegra	klerklegur	ADJ	ADJ-G	Case=Gen|Degree=Pos	17	amod	_	_
+17	söngva	söngur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	ccomp	_	SpaceAfter=No
+18	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.162
+# X_ID = 1675.MAGNUS.BIO-OTH,.162
+# text = kvaðst mundu heldur honum strax hæginda leita .
+1	kvaðst	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	mundu	munu	AUX	MD	VerbForm=Inf	7	aux	_	_
+3	heldur	heldur	ADV	ADVR	Degree=Cmp	7	advmod	_	_
+4	honum	hann	PRON	PRO-D	Case=Dat	7	iobj	_	_
+5	strax	strax	ADV	ADV	Degree=Pos	7	advmod	_	_
+6	hæginda	hægindi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	obj	_	_
+7	leita	leita	VERB	VB	VerbForm=Inf	1	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.163
+# X_ID = 1675.MAGNUS.BIO-OTH,.163
+# text = Þar eftir leiðsagði hann honum til vel heitrar baðstofu .
+1	Þar	þar	ADV	ADV	Degree=Pos	3	obl	_	_
+2	eftir	eftir	ADP	P	_	1	case	_	_
+3	leiðsagði	leiðsegja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	hann	hann	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+5	honum	hann	PRON	PRO-D	Case=Dat	3	obj	_	_
+6	til	til	ADP	P	_	9	case	_	_
+7	vel	vel	ADV	ADV	Degree=Pos	8	amod	_	_
+8	heitrar	heitur	ADJ	ADJ-G	Case=Gen|Degree=Pos	9	amod	_	_
+9	baðstofu	baðstofa	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.164
+# X_ID = 1675.MAGNUS.BIO-OTH,.164
+# text = Var þá biskup afklæddur og honum kerlaug búin, þvegin saurinn af honum,
+1	Var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+2	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
+3	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+4	afklæddur	afklæða	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+5	og	og	CCONJ	CONJ	_	8	cc	_	_
+6	honum	hann	PRON	PRO-D	Case=Dat	8	nsubj	_	_
+7	kerlaug	kerlaug	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	obj	_	_
+8	búin	búa	VERB	VAN	Tense=Past|VerbForm=Part	4	conj	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	þvegin	þvo	VERB	VAN	Tense=Past|VerbForm=Part	4	conj	_	_
+11	saurinn	saur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+12	af	af	ADP	P	_	13	case	_	_
+13	honum	hann	PRON	PRO-D	Case=Dat	10	obl	_	SpaceAfter=No
+14	,	,	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.165
+# X_ID = 1675.MAGNUS.BIO-OTH,.165
+# text = tók hann þá skjótt að hýrna,
+1	tók	taka	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	hann	hann	PRON	PRO-N	Case=Nom	1	nsubj	_	_
+3	þá	þá	ADV	ADV	Degree=Pos	1	advmod	_	_
+4	skjótt	skjótt	ADV	ADV	Degree=Pos	1	advmod	_	_
+5	að	að	PART	TO	_	6	mark	_	_
+6	hýrna	hýrna	VERB	VB	VerbForm=Inf	1	xcomp	_	SpaceAfter=No
+7	,	,	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.166
+# X_ID = 1675.MAGNUS.BIO-OTH,.166
+# text = og þar eftir var hann lagður í hæga hvílu
+1	og	og	CCONJ	CONJ	_	6	cc	_	_
+2	þar	þar	ADV	ADV	Degree=Pos	6	obl	_	_
+3	eftir	eftir	ADP	P	_	2	case	_	_
+4	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
+5	hann	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	lagður	leggja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+7	í	í	ADP	P	_	9	case	_	_
+8	hæga	hægur	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
+9	hvílu	hvíla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.167
+# X_ID = 1675.MAGNUS.BIO-OTH,.167
+# text = og svaf svo af þá nótt .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	svaf	sofa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	af	af	ADP	RP	_	2	compound:prt	_	_
+5	þá	þá	DET	D-A	Case=Acc	6	det	_	_
+6	nótt	nótt	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.168
+# X_ID = 1675.MAGNUS.BIO-OTH,.168
+# text = Svo er sagt af biskupi og hans mönnum að þeir máttu liggja í þrjár nætur og daga, svo þeir stóðu eigi upp, af þeim hrakningi þeir höfðu mætt .
+1	Svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+4	af	af	ADP	P	_	5	case	_	_
+5	biskupi	biskup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+6	og	og	CCONJ	CONJ	_	8	cc	_	_
+7	hans	hann	PRON	PRO-G	Case=Gen	8	nmod:poss	_	_
+8	mönnum	maður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	conj	_	_
+9	að	að	SCONJ	C	_	12	mark	_	_
+10	þeir	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+11	máttu	mega	AUX	MDDI	Mood=Ind|Tense=Past	12	aux	_	_
+12	liggja	liggja	VERB	VB	VerbForm=Inf	3	ccomp	_	_
+13	í	í	ADP	P	_	15	case	_	_
+14	þrjár	þrír	NUM	NUM-A	Case=Acc	15	nummod	_	_
+15	nætur	nótt	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
+16	og	og	CCONJ	CONJ	_	17	cc	_	_
+17	daga	dagur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	conj	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	svo	svo	ADP	P	_	21	case	_	_
+20	þeir	hann	PRON	PRO-N	Case=Nom	21	nsubj	_	_
+21	stóðu	standa	VERB	VBDI	Mood=Ind|Tense=Past	12	obl	_	_
+22	eigi	ekki	ADV	NEG	_	21	advmod	_	_
+23	upp	upp	ADP	RP	_	21	compound:prt	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	af	af	ADP	P	_	27	case	_	_
+26	þeim	sá	DET	D-D	Case=Dat	27	det	_	_
+27	hrakningi	hrakningur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
+28	þeir	hann	PRON	PRO-N	Case=Nom	30	nsubj	_	_
+29	höfðu	hafa	AUX	HVDI	Mood=Ind|Tense=Past	30	aux	_	_
+30	mætt	mæta	VERB	VBN	Tense=Past|VerbForm=Part	27	acl:relcl	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.169
+# X_ID = 1675.MAGNUS.BIO-OTH,.169
+# text = En að yfirstaðinni hvíld og hressingu tekinni, stóðu þeir upp á sínar fætur .
+1	En	en	CCONJ	CONJ	_	9	cc	_	_
+2	að	að	ADP	P	_	3	case	_	_
+3	yfirstaðinni	yfirstanda	VERB	VAN-D	Case=Dat|Tense=Past|VerbForm=Part	9	obl	_	_
+4	hvíld	hvíld	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	nsubj	_	_
+5	og	og	CCONJ	CONJ	_	7	cc	_	_
+6	hressingu	hressing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	nsubj	_	_
+7	tekinni	taka	VERB	VAN-D	Case=Dat|Tense=Past|VerbForm=Part	3	ccomp	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	stóðu	standa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+10	þeir	hann	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+11	upp	upp	ADP	RP	_	9	compound:prt	_	_
+12	á	á	ADP	P	_	14	case	_	_
+13	sínar	sinn	PRON	PRO-A	Case=Acc	14	nmod:poss	_	_
+14	fætur	fótur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.170
+# X_ID = 1675.MAGNUS.BIO-OTH,.170
+# text = Biskupinn gekk til kirkju með síra Þorkeli,
+1	Biskupinn	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	gekk	ganga	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	til	til	ADP	P	_	4	case	_	_
+4	kirkju	kirkja	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	_
+5	með	með	ADP	P	_	6	case	_	_
+6	síra	síra	PROPN	NPR-D	_	2	obl	_	_
+7	Þorkeli	þorkell	PROPN	NPR-D	_	6	flat:name	_	SpaceAfter=No
+8	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.171
+# X_ID = 1675.MAGNUS.BIO-OTH,.171
+# text = byrjaði söngva með alúðar þakkargjörð fyrir þá hressing sem hann hafði fengið og frelsun af þeim hrakningi, með mörgum fögrum þakklætis orðum við prestinn .
+1	byrjaði	byrja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	söngva	söngur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obj	_	_
+3	með	með	ADP	P	_	5	case	_	_
+4	alúðar	alúð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
+5	þakkargjörð	þakkargjörð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
+6	fyrir	fyrir	ADP	P	_	8	case	_	_
+7	þá	sá	DET	D-A	Case=Acc	8	det	_	_
+8	hressing	hressing	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+9	sem	sem	SCONJ	C	_	12	mark	_	_
+10	hann	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+11	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	12	aux	_	_
+12	fengið	fá	VERB	VBN	Tense=Past|VerbForm=Part	8	acl:relcl	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	frelsun	frelsun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	conj	_	_
+15	af	af	ADP	P	_	17	case	_	_
+16	þeim	sá	DET	D-D	Case=Dat	17	det	_	_
+17	hrakningi	hrakningur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	með	með	ADP	P	_	23	case	_	_
+20	mörgum	margur	DET	Q-D	Case=Dat	23	amod	_	_
+21	fögrum	fagur	ADJ	ADJ-D	Case=Dat|Degree=Pos	23	amod	_	_
+22	þakklætis	þakklæti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	nmod:poss	_	_
+23	orðum	orð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
+24	við	við	ADP	P	_	25	case	_	_
+25	prestinn	prestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.172
+# X_ID = 1675.MAGNUS.BIO-OTH,.172
+# text = Þar eftir var gengið til borðs .
+1	Þar	þar	ADV	ADV	Degree=Pos	4	obl	_	_
+2	eftir	eftir	ADP	P	_	1	case	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
+4	gengið	ganga	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+5	til	til	ADP	P	_	6	case	_	_
+6	borðs	borð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.173
+# X_ID = 1675.MAGNUS.BIO-OTH,.173
+# text = Er svo sagt að síra Þorkell veitti biskup af öllu kappi og alvöru
+1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+2	svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
+3	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+4	að	að	SCONJ	C	_	7	mark	_	_
+5	síra	síra	PROPN	NPR-N	_	7	nsubj	_	_
+6	Þorkell	þorkell	PROPN	NPR-N	_	5	flat:name	_	_
+7	veitti	veita	VERB	VBDI	Mood=Ind|Tense=Past	3	ccomp	_	_
+8	biskup	biskup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	iobj	_	_
+9	af	af	ADP	P	_	11	case	_	_
+10	öllu	allur	DET	Q-D	Case=Dat	11	amod	_	_
+11	kappi	kapp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	alvöru	alvara	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	conj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.174
+# X_ID = 1675.MAGNUS.BIO-OTH,.174
+# text = og skorti ekkert til þeirrar veislu .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	skorti	skorta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	2	nsubj	_	_
+4	til	til	ADP	P	_	6	case	_	_
+5	þeirrar	sá	DET	D-G	Case=Gen	6	det	_	_
+6	veislu	veisla	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.175
+# X_ID = 1675.MAGNUS.BIO-OTH,.175
+# text = Einn dag er þeir sátu til borðs, spyr síra Þorkell biskupinn hvað langt hann hafi ásett sér að reisa,
+1	Einn	einn	DET	ONE-A	Case=Acc	2	det	_	_
+2	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+3	er	er	SCONJ	C	_	5	mark	_	_
+4	þeir	hann	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	sátu	sitja	VERB	VBDI	Mood=Ind|Tense=Past	2	acl:relcl	_	_
+6	til	til	ADP	P	_	7	case	_	_
+7	borðs	borð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+10	síra	síra	PROPN	NPR-N	_	9	nsubj	_	_
+11	Þorkell	þorkell	PROPN	NPR-N	_	10	flat:name	_	_
+12	biskupinn	biskup	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	iobj	_	_
+13	hvað	hver	PRON	WPRO-N	Case=Nom	17	obj	_	_
+14	langt	langt	ADV	ADV	Degree=Pos	13	advmod	_	_
+15	hann	hann	PRON	PRO-N	Case=Nom	17	nsubj	_	_
+16	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	17	aux	_	_
+17	ásett	ásetja	VERB	VBN	Tense=Past|VerbForm=Part	9	ccomp	_	_
+18	sér	sig	PRON	PRO-D	Case=Dat	17	iobj	_	_
+19	að	að	PART	TO	_	20	mark	_	_
+20	reisa	reisa	VERB	VB	VerbForm=Inf	17	xcomp	_	SpaceAfter=No
+21	,	,	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.176
+# X_ID = 1675.MAGNUS.BIO-OTH,.176
+# text = segist vita að nauðsynja erindi muni honum á hendi legið hafa, þar hann svo hastarlega heiman riðið hafi .
+1	segist	segjast	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	vita	vita	VERB	VB	VerbForm=Inf	1	xcomp	_	_
+3	að	að	SCONJ	C	_	10	mark	_	_
+4	nauðsynja	nauðsyn	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	5	nmod:poss	_	_
+5	erindi	erindi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
+6	muni	munu	AUX	MDPS	Mood=Sub|Tense=Pres	10	aux	_	_
+7	honum	hann	PRON	PRO-D	Case=Dat	10	obl	_	_
+8	á	á	ADP	P	_	7	case	_	_
+9	hendi	hönd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
+10	legið	liggja	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
+11	hafa	hafa	AUX	HV	VerbForm=Inf	10	aux	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	þar	þar	ADV	ADV	Degree=Pos	2	advmod	_	_
+14	hann	hann	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+15	svo	svo	ADV	ADVR	Degree=Cmp	18	advmod	_	_
+16	hastarlega	hastarlega	ADV	ADV	Degree=Pos	15	advmod	_	_
+17	heiman	heiman	ADV	ADV	Degree=Pos	18	advmod	_	_
+18	riðið	ríða	VERB	VBN	Tense=Past|VerbForm=Part	13	advcl	_	_
+19	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	18	aux	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.177
+# X_ID = 1675.MAGNUS.BIO-OTH,.177
+# text = Biskupinn þagði nokkra stund
+1	Biskupinn	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	þagði	þegja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	nokkra	nokkur	DET	Q-A	Case=Acc	4	amod	_	_
+4	stund	stund	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.178
+# X_ID = 1675.MAGNUS.BIO-OTH,.178
+# text = og svarar síðan : " Ég hafði ásett að heimsækja mína presta og eftirgrennslast þeirra kenningu, siðum og lifnaði, hvernig háttað væri, því að oss hefur margt undarlegt hér norðan að hermt verið,
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	svarar	svara	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	síðan	síðan	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
+4	:	:	PUNCT	,	_	3	punct	_	_
+5	"	"	PUNCT	"	_	4	punct	_	_
+6	Ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+7	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	8	aux	_	_
+8	ásett	ásetja	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
+9	að	að	PART	TO	_	10	mark	_	_
+10	heimsækja	heimsækja	VERB	VB	VerbForm=Inf	8	xcomp	_	_
+11	mína	minn	PRON	PRO-A	Case=Acc	12	nmod:poss	_	_
+12	presta	prestur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	eftirgrennslast	eftirgrennslast	VERB	VB	VerbForm=Inf	10	xcomp	_	_
+15	þeirra	hann	PRON	PRO-G	Case=Gen	16	nmod:poss	_	_
+16	kenningu	kenning	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obj	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	18	punct	_	_
+18	siðum	siður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	conj	_	_
+19	og	og	CCONJ	CONJ	_	20	cc	_	_
+20	lifnaði	lifnaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	conj	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	20	punct	_	_
+22	hvernig	hvernig	ADV	WADV	Degree=Pos	23	advmod	_	_
+23	háttað	hátta	ADV	VAN	Tense=Past|VerbForm=Part	14	advmod	_	_
+24	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	23	cop	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	því	það	PRON	PRO-D	Case=Dat	8	obl	_	_
+27	að	að	SCONJ	C	_	29	mark	_	_
+28	oss	ég	PRON	PRO-D	Case=Dat	29	nsubj	_	_
+29	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	26	ccomp	_	_
+30	margt	margur	DET	Q-N	Case=Nom	29	obj	_	_
+31	undarlegt	undarlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	30	amod	_	_
+32	hér	hér	ADV	ADV	Degree=Pos	29	obl	_	_
+33	norðan	norðan	ADV	ADV	Degree=Pos	32	advmod	_	_
+34	að	að	ADP	P	_	32	case	_	_
+35	hermt	herma	VERB	VAN	Tense=Past|VerbForm=Part	29	xcomp	_	_
+36	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	29	cop	_	SpaceAfter=No
+37	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.179
+# X_ID = 1675.MAGNUS.BIO-OTH,.179
+# text = höfum yður nú og heimsótt í vorum þrengingum og fundið yður í allan sannleika einn ypparlegan klerk og sannreyndan guðs ástvin
+1	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
+2	yður	þú	PRON	PRO-A	Case=Acc	5	obj	_	_
+3	nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
+4	og	og	ADV	ALSO	_	5	advmod	_	_
+5	heimsótt	heimsækja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	í	í	ADP	P	_	8	case	_	_
+7	vorum	vor	PRON	PRO-D	Case=Dat	8	nmod:poss	_	_
+8	þrengingum	þrenging	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
+9	og	og	CCONJ	CONJ	_	10	cc	_	_
+10	fundið	finna	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	_
+11	yður	þú	PRON	PRO-A	Case=Acc	17	nsubj	_	_
+12	í	í	ADP	P	_	14	case	_	_
+13	allan	allur	DET	Q-A	Case=Acc	14	amod	_	_
+14	sannleika	sannleikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
+15	einn	einn	DET	ONE-A	Case=Acc	17	det	_	_
+16	ypparlegan	ypparlegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	17	amod	_	_
+17	klerk	klerkur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	ccomp	_	_
+18	og	og	CCONJ	CONJ	_	21	cc	_	_
+19	sannreyndan	sannreyndur	ADJ	ADJ-A	Case=Acc|Degree=Pos	21	amod	_	_
+20	guðs	guð	PROPN	NPR-G	_	21	nmod:poss	_	_
+21	ástvin	ástvinur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	conj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.180
+# X_ID = 1675.MAGNUS.BIO-OTH,.180
+# text = og kunnum yður mikla þökk fyrir yðar velgerninga, sem oss auðsýnt hafið .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	kunnum	kunna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	yður	þú	PRON	PRO-D	Case=Dat	2	iobj	_	_
+4	mikla	mikill	DET	Q-A	Case=Acc	5	amod	_	_
+5	þökk	þökk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+6	fyrir	fyrir	ADP	P	_	8	case	_	_
+7	yðar	þú	PRON	PRO-G	Case=Gen	8	nmod:poss	_	_
+8	velgerninga	velgerningur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	sem	sem	SCONJ	C	_	12	mark	_	_
+11	oss	ég	PRON	PRO-D	Case=Dat	12	iobj	_	_
+12	auðsýnt	auðsýna	VERB	VBN	Tense=Past|VerbForm=Part	8	acl:relcl	_	_
+13	hafið	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	12	aux	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.181
+# X_ID = 1675.MAGNUS.BIO-OTH,.181
+# text = Vil ég nú upp héðan heita yður minni fullri og fastri vináttu meðan lifum " .
+1	Vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
+2	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+3	nú	nú	ADV	ADV	Degree=Pos	6	advmod	_	_
+4	upp	upp	ADP	P	_	5	case	_	_
+5	héðan	héðan	ADV	ADV	Degree=Pos	6	obl	_	_
+6	heita	heita	VERB	VB	VerbForm=Inf	0	root	_	_
+7	yður	þú	PRON	PRO-D	Case=Dat	6	iobj	_	_
+8	minni	minn	PRON	PRO-D	Case=Dat	12	nmod:poss	_	_
+9	fullri	fullur	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
+10	og	og	CCONJ	CONJ	_	11	cc	_	_
+11	fastri	fastur	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	conj	_	_
+12	vináttu	vinátta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obj	_	_
+13	meðan	meðan	ADP	P	_	14	case	_	_
+14	lifum	lifa	VERB	VBPI	Mood=Ind|Tense=Pres	6	obl	_	SpaceAfter=No
+15	"	"	PUNCT	"	_	14	punct	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.182
+# X_ID = 1675.MAGNUS.BIO-OTH,.182
+# text = Presturinn þakkar biskupi hans góð orð
+1	Presturinn	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	þakkar	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	biskupi	biskup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	iobj	_	_
+4	hans	hann	PRON	PRO-G	Case=Gen	6	nmod:poss	_	_
+5	góð	góður	ADJ	ADJ-A	Case=Acc|Degree=Pos	6	amod	_	_
+6	orð	orð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.183
+# X_ID = 1675.MAGNUS.BIO-OTH,.183
+# text = og býður honum þar dveljast, þar til hann og hans menn eru fullhressir og algjört er að þeirra klæðum, þar þau hafi slitist á skógarhríslum .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	býður	bjóða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	honum	hann	PRON	PRO-D	Case=Dat	2	iobj	_	_
+4	þar	þar	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	dveljast	dvelja	VERB	VB	VerbForm=Inf	2	xcomp	_	SpaceAfter=No
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	þar	þar	ADV	ADV	Degree=Pos	14	advmod	_	_
+8	til	til	ADP	P	_	14	case	_	_
+9	hann	hann	PRON	PRO-N	Case=Nom	14	nsubj	_	_
+10	og	og	CCONJ	CONJ	_	12	cc	_	_
+11	hans	hann	PRON	PRO-G	Case=Gen	12	nmod:poss	_	_
+12	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	conj	_	_
+13	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+14	fullhressir	fullhress	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	obl	_	_
+15	og	og	CCONJ	CONJ	_	16	cc	_	_
+16	algjört	algera	VERB	VAN	Tense=Past|VerbForm=Part	14	conj	_	_
+17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
+18	að	að	ADP	P	_	20	case	_	_
+19	þeirra	hann	PRON	PRO-G	Case=Gen	20	nmod:poss	_	_
+20	klæðum	klæði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obl	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	20	punct	_	_
+22	þar	þar	ADV	ADV	Degree=Pos	16	advmod	_	_
+23	þau	það	PRON	PRO-N	Case=Nom	25	nsubj	_	_
+24	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	25	aux	_	_
+25	slitist	slíta	VERB	VBN	Tense=Past|VerbForm=Part	22	advcl	_	_
+26	á	á	ADP	P	_	27	case	_	_
+27	skógarhríslum	skógarhrísla	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	25	obl	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.184
+# X_ID = 1675.MAGNUS.BIO-OTH,.184
+# text = Biskup lést mundu þar þá aftur hverfa og heim ríða til stólsins,
+1	Biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	lést	láta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	mundu	munu	AUX	MD	VerbForm=Inf	7	aux	_	_
+4	þar	þar	ADV	ADV	Degree=Pos	7	advmod	_	_
+5	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
+6	aftur	aftur	ADV	ADV	Degree=Pos	4	advmod	_	_
+7	hverfa	hverfa	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+8	og	og	CCONJ	CONJ	_	10	cc	_	_
+9	heim	heim	ADV	ADV	Degree=Pos	10	advmod	_	_
+10	ríða	ríða	VERB	VB	VerbForm=Inf	7	xcomp	_	_
+11	til	til	ADP	P	_	12	case	_	_
+12	stólsins	stólur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
+13	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.185
+# X_ID = 1675.MAGNUS.BIO-OTH,.185
+# text = kvað sér mundi ei snemma úr minni líða sú hríðar veðrátta sem hann þar mætt hefði .
+1	kvað	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+2	sér	sig	PRON	PRO-D	Case=Dat	1	obj	_	_
+3	mundi	munu	AUX	MD	VerbForm=Inf	8	aux	_	_
+4	ei	ei	ADV	NEG	_	8	advmod	_	_
+5	snemma	snemma	ADV	ADV	Degree=Pos	8	advmod	_	_
+6	úr	úr	ADP	P	_	7	case	_	_
+7	minni	minn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+8	líða	líða	VERB	VB	VerbForm=Inf	1	xcomp	_	_
+9	sú	sá	DET	D-N	Case=Nom	11	det	_	_
+10	hríðar	hríðar	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	nmod:poss	_	_
+11	veðrátta	veðrátta	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	obj	_	_
+12	sem	sem	SCONJ	C	_	15	mark	_	_
+13	hann	hann	PRON	PRO-N	Case=Nom	15	nsubj	_	_
+14	þar	þar	ADV	ADV	Degree=Pos	15	advmod	_	_
+15	mætt	mæta	VERB	VBN	Tense=Past|VerbForm=Part	11	acl:relcl	_	_
+16	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	15	aux	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.186
+# X_ID = 1675.MAGNUS.BIO-OTH,.186
+# text = Prestur kvað mjög hretviðrasamt tíðum þar norður
+1	Prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+2	kvað	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
+4	hretviðrasamt	hretviðrasamur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	ccomp	_	_
+5	tíðum	tíð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
+6	þar	þar	ADV	ADV	Degree=Pos	2	advmod	_	_
+7	norður	norður	ADV	ADV	Degree=Pos	6	advmod	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.187
+# X_ID = 1675.MAGNUS.BIO-OTH,.187
+# text = og segir oft kasti kraparegni með þoku myrkri þar ofan af hálsinum ;
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	oft	oft	ADV	ADV	Degree=Pos	4	advmod	_	_
+4	kasti	kasta	VERB	VBPS	Mood=Sub|Tense=Pres	2	xcomp	_	_
+5	kraparegni	kraparegn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obj	_	_
+6	með	með	ADP	P	_	8	case	_	_
+7	þoku	þoka	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	nmod:poss	_	_
+8	myrkri	myrkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+9	þar	þar	ADV	ADV	Degree=Pos	4	advmod	_	_
+10	ofan	ofan	ADV	ADV	Degree=Pos	12	advmod	_	_
+11	af	af	ADP	P	_	12	case	_	_
+12	hálsinum	háls	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
+13	;	;	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.188
+# X_ID = 1675.MAGNUS.BIO-OTH,.188
+# text = segir sér þyki það víslega talað og ráðið að ríða við svo búið heim aftur, því ei væri örvænt að soddan stórhret eður jafnstærri kynni oftar koma .
+1	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	sér	sig	PRON	PRO-D	Case=Dat	3	nsubj	_	_
+3	þyki	þykja	VERB	VBPS	Mood=Sub|Tense=Pres	1	ccomp	_	_
+4	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+5	víslega	víslega	ADV	ADV	Degree=Pos	6	advmod	_	_
+6	talað	tala	VERB	VAN	Tense=Past|VerbForm=Part	3	ccomp	_	_
+7	og	og	CCONJ	CONJ	_	8	cc	_	_
+8	ráðið	ráða	VERB	VAN	Tense=Past|VerbForm=Part	6	conj	_	_
+9	að	að	PART	TO	_	10	mark	_	_
+10	ríða	ríða	VERB	VB	VerbForm=Inf	6	xcomp	_	_
+11	við	við	ADP	P	_	13	case	_	_
+12	svo	svo	ADV	ADV	Degree=Pos	13	advmod	_	_
+13	búið	búa	VERB	VAN-A	Case=Acc|Tense=Past|VerbForm=Part	10	obl	_	_
+14	heim	heim	ADV	ADV	Degree=Pos	10	advmod	_	_
+15	aftur	aftur	ADV	ADV	Degree=Pos	10	advmod	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	því	það	PRON	PRO-D	Case=Dat	1	obl	_	_
+18	ei	ei	ADV	NEG	_	20	advmod	_	_
+19	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	20	cop	_	_
+20	örvænt	örvæna	VERB	VAN	Tense=Past|VerbForm=Part	17	xcomp	_	_
+21	að	að	SCONJ	C	_	28	mark	_	_
+22	soddan	sodda	PRON	SUCH-N	Case=Nom	23	obl	_	_
+23	stórhret	stórhret	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	28	nsubj	_	_
+24	eður	eður	CCONJ	CONJ	_	25	cc	_	_
+25	jafnstærri	jafnstór	ADJ	ADJR-N	Case=Nom|Degree=Cmp	23	conj	_	_
+26	kynni	kunna	AUX	MDDS	Mood=Sub|Tense=Past	28	aux	_	_
+27	oftar	oft	ADV	ADVR	Degree=Cmp	28	advmod	_	_
+28	koma	koma	VERB	VB	VerbForm=Inf	20	ccomp	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.189
+# X_ID = 1675.MAGNUS.BIO-OTH,.189
+# text = En biskup kvaðst eigi girnast að mæta í annað sinn þvílíku óviðri, allra síst nokkru enn þá stærra .
+1	En	en	CCONJ	CONJ	_	3	cc	_	_
+2	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
+3	kvaðst	kveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	eigi	ekki	ADV	NEG	_	3	advmod	_	_
+5	girnast	girnast	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	að	að	PART	TO	_	7	mark	_	_
+7	mæta	mæta	VERB	VB	VerbForm=Inf	5	xcomp	_	_
+8	í	í	ADP	P	_	10	case	_	_
+9	annað	annar	PRON	OTHER-A	Case=Acc	10	det	_	_
+10	sinn	sinn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
+11	þvílíku	þvílíkur	PRON	SUCH-D	Case=Dat	12	det	_	_
+12	óviðri	óviðri	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obj	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	allra	allur	DET	Q-G	Case=Gen	15	nmod:poss	_	_
+15	síst	síður	ADV	ADVS	Degree=Sup	7	obl	_	_
+16	nokkru	nokkur	DET	Q-D	Case=Dat	17	amod	_	_
+17	enn	enn	ADV	ADV	Degree=Pos	7	obj	_	_
+18	þá	þá	ADV	ADV	Degree=Pos	17	advmod	_	_
+19	stærra	stór	ADJ	ADJR-D	Case=Dat|Degree=Cmp	17	amod	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.190
+# X_ID = 1675.MAGNUS.BIO-OTH,.190
+# text = Svo er mælt að biskup sat þar í viku með sína menn,
+1	Svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	mælt	mæla	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+4	að	að	SCONJ	C	_	6	mark	_	_
+5	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+6	sat	sitja	VERB	VBDI	Mood=Ind|Tense=Past	3	ccomp	_	_
+7	þar	þar	ADV	ADV	Degree=Pos	6	advmod	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	viku	vika	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+10	með	með	ADP	P	_	12	case	_	_
+11	sína	sinn	PRON	PRO-A	Case=Acc	12	nmod:poss	_	_
+12	menn	maður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	SpaceAfter=No
+13	,	,	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.191
+# X_ID = 1675.MAGNUS.BIO-OTH,.191
+# text = en ei er getið hvað margmenntur hann hafi í það sinn verið,
+1	en	en	CCONJ	CONJ	_	4	cc	_	_
+2	ei	ei	ADV	NEG	_	4	advmod	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+4	getið	geta	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+5	hvað	hvað	ADV	WADV	Degree=Pos	6	advmod	_	_
+6	margmenntur	margmenntur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
+7	hann	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+8	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	12	aux	_	_
+9	í	í	ADP	P	_	11	case	_	_
+10	það	sá	DET	D-A	Case=Acc	11	det	_	_
+11	sinn	sinn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
+12	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	4	ccomp	_	SpaceAfter=No
+13	,	,	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.192
+# X_ID = 1675.MAGNUS.BIO-OTH,.192
+# text = og er svo sagt að prestur veitti kappsamlega og jók veisluna því meir sem á leið,
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	svo	svo	ADV	ADV	Degree=Pos	4	advmod	_	_
+4	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+5	að	að	SCONJ	C	_	7	mark	_	_
+6	prestur	prestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
+7	veitti	veita	VERB	VBDI	Mood=Ind|Tense=Past	4	ccomp	_	_
+8	kappsamlega	kappsamlega	ADV	ADV	Degree=Pos	7	advmod	_	_
+9	og	og	CCONJ	CONJ	_	10	cc	_	_
+10	jók	auka	VERB	VBDI	Mood=Ind|Tense=Past	7	conj	_	_
+11	veisluna	veisla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
+12	því	það	PRON	PRO-D	Case=Dat	13	obl	_	_
+13	meir	mikill	DET	QR-N	Case=Nom	10	obl	_	_
+14	sem	sem	SCONJ	C	_	16	mark	_	_
+15	á	á	ADP	P	_	16	case	_	_
+16	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	advcl	_	SpaceAfter=No
+17	,	,	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.193
+# X_ID = 1675.MAGNUS.BIO-OTH,.193
+# text = og skorti ekkert hvað hafa þurfti .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	skorti	skorta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	ekkert	enginn	DET	Q-A	Case=Acc	2	nsubj	_	_
+4	hvað	hver	PRON	WPRO-N	Case=Nom	6	obj	_	_
+5	hafa	hafa	AUX	HV	VerbForm=Inf	6	xcomp	_	_
+6	þurfti	þurfa	VERB	VBDI	Mood=Ind|Tense=Past	3	acl:relcl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.194
+# X_ID = 1675.MAGNUS.BIO-OTH,.194
+# text = Síðan skildu biskup og hann með góðum vinskap,
+1	Síðan	síðan	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	skildu	skilja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	obj	_	_
+4	og	og	CCONJ	CONJ	_	5	cc	_	_
+5	hann	hann	PRON	PRO-N	Case=Nom	3	conj	_	_
+6	með	með	ADP	P	_	8	case	_	_
+7	góðum	góður	ADJ	ADJ-D	Case=Dat|Degree=Pos	8	amod	_	_
+8	vinskap	vinskapur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+9	,	,	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.195
+# X_ID = 1675.MAGNUS.BIO-OTH,.195
+# text = og reið biskup heimleiðis
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	reið	ríða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	biskup	biskup	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+4	heimleiðis	heimleiðis	ADV	ADV	Degree=Pos	2	advmod	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.196
+# X_ID = 1675.MAGNUS.BIO-OTH,.196
+# text = og settist um kyrrt á stólnum að þeirri reisu afstaðinni .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	settist	sitja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	um	um	ADP	P	_	4	case	_	_
+4	kyrrt	kyrr	ADJ	ADJ-A	Case=Acc|Degree=Pos	2	obl	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	stólnum	stóll	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+7	að	að	ADP	P	_	10	case	_	_
+8	þeirri	sá	DET	D-D	Case=Dat	9	det	_	_
+9	reisu	reisa	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	nsubj	_	_
+10	afstaðinni	afstanda	VERB	VAN	Tense=Past|VerbForm=Part	2	obl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.197
+# X_ID = 1675.MAGNUS.BIO-OTH,.197
+# text = Mikil ættkvísl er komin frá fyrrnefndum síra Þorkeli
+1	Mikil	mikill	DET	Q-N	Case=Nom	2	amod	_	_
+2	ættkvísl	ættkvísl	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+4	komin	koma	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	frá	frá	ADP	P	_	7	case	_	_
+6	fyrrnefndum	fyrrnefndur	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
+7	síra	síra	PROPN	NPR-D	_	4	obl	_	_
+8	Þorkeli	þorkell	PROPN	NPR-D	_	7	flat:name	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.198
+# X_ID = 1675.MAGNUS.BIO-OTH,.198
+# text = þykja og margir hans afkomendur verið hafa atkvæðamenn að vitsmunum og annari atgjörvi, svo sem mörgum er kunnugt .
+1	þykja	þykja	VERB	VB	VerbForm=Inf	0	root	_	_
+2	og	og	ADV	ALSO	_	1	advmod	_	_
+3	margir	margur	DET	Q-N	Case=Nom	5	amod	_	_
+4	hans	hann	PRON	PRO-G	Case=Gen	5	nmod:poss	_	_
+5	afkomendur	afkomandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	1	nsubj	_	_
+6	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	8	cop	_	_
+7	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	8	aux	_	_
+8	atkvæðamenn	atkvæðamaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	1	xcomp	_	_
+9	að	að	ADP	P	_	10	case	_	_
+10	vitsmunum	vitsmunir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	_
+11	og	og	CCONJ	CONJ	_	13	cc	_	_
+12	annari	annari	ADJ	ADJR-D	Case=Dat|Degree=Cmp	13	amod	_	_
+13	atgjörvi	atgjörvi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	conj	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	svo	svo	ADV	ADVR	Degree=Cmp	8	advmod	_	_
+16	sem	sem	SCONJ	C	_	15	fixed	_	_
+17	mörgum	margur	DET	Q-D	Case=Dat	19	nsubj	_	_
+18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
+19	kunnugt	kunnugur	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	advcl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	1	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.199
+# X_ID = 1675.MAGNUS.BIO-OTH,.199
+# text = Sú ætt var síðan kölluð Svalbarðsætt, því afkomendur síra Þorkels bjuggu og sátu að sínum garði Svalbarði á Svalbarðsströnd .
+1	Sú	sá	DET	D-N	Case=Nom	2	det	_	_
+2	ætt	ætt	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
+4	síðan	síðan	ADV	ADV	Degree=Pos	5	advmod	_	_
+5	kölluð	kalla	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+6	Svalbarðsætt	svalbarðsætt	PROPN	NPR-D	_	5	ccomp	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
+9	afkomendur	afkomandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	nsubj	_	_
+10	síra	síra	PROPN	NPR-G	_	9	nmod:poss	_	_
+11	Þorkels	þorkelur	PROPN	NPR-G	_	10	flat:name	_	_
+12	bjuggu	búa	VERB	VBDI	Mood=Ind|Tense=Past	8	ccomp	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	sátu	sitja	VERB	VBDI	Mood=Ind|Tense=Past	12	conj	_	_
+15	að	að	ADP	P	_	17	case	_	_
+16	sínum	sinn	PRON	PRO-D	Case=Dat	17	nmod:poss	_	_
+17	garði	garður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+18	Svalbarði	svalbarð	PROPN	NPR-D	_	17	appos	_	_
+19	á	á	ADP	P	_	20	case	_	_
+20	Svalbarðsströnd	svalbarðsströnd	PROPN	NPR-D	_	18	obl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.200
+# X_ID = 1675.MAGNUS.BIO-OTH,.200
+# text = En eftir það Magnús Jónsson kvongaðist á Vestfjörðum
+1	En	en	CCONJ	CONJ	_	6	cc	_	_
+2	eftir	eftir	ADP	P	_	3	case	_	_
+3	það	það	PRON	PRO-A	Case=Acc	6	obl	_	_
+4	Magnús	magnús	PROPN	NPR-N	_	6	nsubj	_	_
+5	Jónsson	jónsson	PROPN	NPR-N	_	4	flat:name	_	_
+6	kvongaðist	kvonga	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+7	á	á	ADP	P	_	8	case	_	_
+8	Vestfjörðum	vestfirðir	PROPN	NPRS-D	_	6	obl	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.201
+# X_ID = 1675.MAGNUS.BIO-OTH,.201
+# text = og fékk til ekta þá ættgöfgu jómfrú Ragnheiði Eggertsdóttur
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	fékk	fá	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	til	til	ADP	P	_	4	case	_	_
+4	ekta	ekta	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	obl	_	_
+5	þá	sá	DET	D-A	Case=Acc	7	det	_	_
+6	ættgöfgu	ættgöfugur	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
+7	jómfrú	jómfrú	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
+8	Ragnheiði	ragnheiður	PROPN	NPR-A	_	7	appos	_	_
+9	Eggertsdóttur	eggertsdóttur	PROPN	NPR-A	_	8	flat:name	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.202
+# X_ID = 1675.MAGNUS.BIO-OTH,.202
+# text = og þau öfluðu börn til samans sem áður er umskrifað,
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	þau	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+3	öfluðu	öfla	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+4	börn	barn	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	_
+5	til	til	ADP	P	_	6	case	_	_
+6	samans	sami	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	obl	_	_
+7	sem	sem	SCONJ	C	_	11	mark	_	_
+8	áður	áður	ADV	ADV	Degree=Pos	11	advmod	_	_
+9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
+10	um	um	ADP	P	_	11	obl	_	SpaceAfter=No
+11	skrifað	skrifa	VERB	VAN	Tense=Past|VerbForm=Part	3	advcl	_	SpaceAfter=No
+12	,	,	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 1675.MAGNUS.BIO-OTH,.203
+# X_ID = 1675.MAGNUS.BIO-OTH,.203
+# text = var sú ætt og kölluð síðan af mörgum Magnúsarætt og þó líka vel Svalbarðsætt .
+1	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
+2	sú	sá	DET	D-N	Case=Nom	3	det	_	_
+3	ætt	ætt	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+4	og	og	ADV	ALSO	_	5	advmod	_	_
+5	kölluð	kalla	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
+6	síðan	síðan	ADV	ADV	Degree=Pos	5	advmod	_	_
+7	af	af	ADP	P	_	8	case	_	_
+8	mörgum	margur	DET	Q-D	Case=Dat	5	obl	_	_
+9	Magnúsarætt	magnúsarætt	PROPN	NPR-N	_	5	ccomp	_	_
+10	og	og	CCONJ	CONJ	_	14	cc	_	_
+11	þó	þó	ADV	ADV	Degree=Pos	14	advmod	_	_
+12	líka	líka	ADV	ALSO	_	14	advmod	_	_
+13	vel	vel	ADV	ADV	Degree=Pos	14	advmod	_	_
+14	Svalbarðsætt	svalbarðsætt	PROPN	NPR-N	_	9	conj	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	5	punct	_	_
+
+1	Þykir	þyka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	sú	sá	DET	D-N	Case=Nom	3	det	_	_
+3	ætt	ætt	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
+4	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	_
+5	um	um	ADP	P	_	6	case	_	_
+6	stundir	stund	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obl	_	_
+7	hafa	hafa	AUX	HV	VerbForm=Inf	8	aux	_	_
+8	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	1	xcomp	_	_
+9	og	og	CCONJ	CONJ	_	13	cc	_	_
+10	vera	vera	AUX	BE	VerbForm=Inf	13	cop	_	_
+11	enn	enn	ADV	ADV	Degree=Pos	13	advmod	_	_
+12	nú	nú	ADV	ADV	Degree=Pos	13	advmod	_	_
+13	ein	einn	DET	ONE-N	Case=Nom	8	xcomp	_	_
+14	af	af	ADP	P	_	19	case	_	_
+15	þeim	sá	DET	D-D	Case=Dat	19	det	_	_
+16	bestu	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	19	amod	_	_
+17	og	og	CCONJ	CONJ	_	18	cc	_	_
+18	fornemustu	fornemur	ADJ	ADJS-D	Case=Dat|Degree=Sup	16	conj	_	_
+19	ættum	ætt	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	_
+20	og	og	CCONJ	CONJ	_	21	cc	_	_
+21	slekti	slekt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	conj	_	_
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	því	það	PRON	PRO-D	Case=Dat	1	obl	_	_
+24	sú	sá	DET	D-N	Case=Nom	25	det	_	_
+25	ættarlína	ættarlína	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	26	nsubj	_	_
+26	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	23	ccomp	_	_
+27	sitt	sinn	PRON	PRO-A	Case=Acc	28	nmod:poss	_	_
+28	útsprung	útsprung	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obj	_	_
+29	og	og	CCONJ	CONJ	_	30	cc	_	_
+30	rennsli	rennsli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	conj	_	_
+31	frá	frá	ADP	P	_	33	case	_	_
+32	aðallegri	aðallegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	33	amod	_	_
+33	stamm	stamm	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	26	obl	_	_
+34	og	og	CCONJ	CONJ	_	36	cc	_	_
+35	riddara	riddari	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	36	nmod:poss	_	_
+36	slekti	sleka	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	33	conj	_	_
+37	,	,	PUNCT	,	_	36	punct	_	_
+38	sem	sem	SCONJ	C	_	45	mark	_	_
+39	hér	hér	ADV	ADV	Degree=Pos	45	advmod	_	_
+40	næst	nærri	ADV	ADVS	Degree=Sup	39	advmod	_	_
+41	eftirfylgjandi	eftirfylgjandi	ADJ	ADJ-G	Case=Gen|Degree=Pos	42	amod	_	_
+42	kongs	kongur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	43	nmod:poss	_	_
+43	bréf	bréf	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	45	nsubj	_	_
+44	um	um	ADP	P	_	45	obl	_	_
+45	vitna	vitna	VERB	VBPI	Mood=Ind|Tense=Pres	26	acl:relcl	_	_
+46	.	.	PUNCT	.	_	1	punct	_	_
+

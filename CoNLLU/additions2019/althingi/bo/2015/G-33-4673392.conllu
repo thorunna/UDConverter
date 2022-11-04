@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2015_G-33-4673392,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Ég vil lýsa ánægju minni með þetta frumvarp.
+# sent_id = G-33-4673392,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég vil lýsa ánægju minni með þetta frumvarp .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -14,9 +14,9 @@
 11	frumvarp	frumvarp	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4673392,.2
-# X_IDs = ID_missing_2 ; ID_missing_3
-# text = Það er virkilega þarft og mikilvægt að við ræðum þessi mál raunar erum við búin að vera að ræða þessi mál sl. tíu ár að minnsta kosti, auðvitað lengur með einhverjum skipulegum hætti eins og þingmaðurinn fór hér í gegnum.
+# sent_id = G-33-4673392,.2
+# X_ID = ID_MISSING
+# text = Það er virkilega þarft og mikilvægt að við ræðum þessi mál
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	virkilega	virkilega	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -28,41 +28,45 @@
 9	ræðum	ræða	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
 10	þessi	þessi	DET	D-A	Case=Acc	11	det	_	_
 11	mál	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obj	_	_
-12	raunar	raunar	ADV	ADV	Degree=Pos	15	advmod	_	_
-13	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
-14	við	ég	PRON	PRO-N	Case=Nom	15	nsubj	_	_
-15	búin	búinn	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
-16	að	að	PART	TO	_	19	mark	_	_
-17	vera	vera	AUX	BE	VerbForm=Inf	19	cop	_	_
-18	að	að	PART	TO	_	19	mark	_	_
-19	ræða	ræða	VERB	VB	VerbForm=Inf	15	xcomp	_	_
-20	þessi	þessi	DET	D-A	Case=Acc	21	det	_	_
-21	mál	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obj	_	_
-22	sl.	síðastliðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	23	amod	_	_
-23	tíu	tíu	NUM	NUM-A	Case=Acc	19	obl	_	_
-24	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	conj	_	_
-25	að	að	ADP	P	_	27	case	_	_
-26	minnsta	lítill	ADJ	ADJS-D	Case=Dat|Degree=Sup	27	amod	_	_
-27	kosti	kostur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
-28	,	,	PUNCT	,	_	27	punct	_	_
-29	auðvitað	auðvitað	ADV	ADV	Degree=Pos	23	advmod	_	_
-30	lengur	lengi	ADV	ADVR	Degree=Cmp	29	advmod	_	_
-31	með	með	ADP	P	_	34	case	_	_
-32	einhverjum	einhver	DET	Q-D	Case=Dat	34	amod	_	_
-33	skipulegum	skipulegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	34	amod	_	_
-34	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
-35	eins	_	ADV	ADVR	Degree=Cmp	15	advmod	_	_
-36	og	_	ADP	P	_	38	case	_	_
-37	þingmaðurinn	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	38	nsubj	_	_
-38	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	35	obl	_	_
-39	hér	hér	ADV	ADV	Degree=Pos	38	advmod	_	_
-40	í	í	ADP	P	_	41	case	_	_
-41	gegnum	gegnum	ADP	P	_	38	obl	_	SpaceAfter=No
-42	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4673392,.3
-# X_IDs = ID_missing_4 ; ID_missing_5
-# text = Við getum ekki verið að bíða endalaust og ræða sömu hlutina aftur og aftur, það þarf að koma til aðgerða.
+# sent_id = G-33-4673392,.3
+# X_ID = ID_MISSING
+# text = raunar erum við búin að vera að ræða þessi mál sl. tíu ár að minnsta kosti, auðvitað lengur með einhverjum skipulegum hætti eins og þingmaðurinn fór hér í gegnum .
+1	raunar	raunar	ADV	ADV	Degree=Pos	4	advmod	_	_
+2	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
+3	við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
+4	búin	búinn	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	að	að	PART	TO	_	8	mark	_	_
+6	vera	vera	AUX	BE	VerbForm=Inf	8	cop	_	_
+7	að	að	PART	TO	_	8	mark	_	_
+8	ræða	ræða	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+9	þessi	þessi	DET	D-A	Case=Acc	10	det	_	_
+10	mál	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obj	_	_
+11	sl.	síðastliðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
+12	tíu	tíu	NUM	NUM-A	Case=Acc	8	obl	_	_
+13	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	conj	_	_
+14	að	að	ADP	P	_	16	case	_	_
+15	minnsta	lítill	ADJ	ADJS-D	Case=Dat|Degree=Sup	16	amod	_	_
+16	kosti	kostur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	auðvitað	auðvitað	ADV	ADV	Degree=Pos	12	advmod	_	_
+19	lengur	lengi	ADV	ADVR	Degree=Cmp	18	advmod	_	_
+20	með	með	ADP	P	_	23	case	_	_
+21	einhverjum	einhver	DET	Q-D	Case=Dat	23	amod	_	_
+22	skipulegum	skipulegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	23	amod	_	_
+23	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+24	eins	_	ADV	ADVR	Degree=Cmp	4	advmod	_	_
+25	og	_	ADP	P	_	27	case	_	_
+26	þingmaðurinn	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
+27	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	24	obl	_	_
+28	hér	hér	ADV	ADV	Degree=Pos	27	advmod	_	_
+29	í	í	ADP	P	_	30	case	_	_
+30	gegnum	gegnum	ADP	P	_	27	obl	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4673392,.4
+# X_ID = ID_MISSING
+# text = Við getum ekki verið að bíða endalaust og ræða sömu hlutina aftur og aftur,
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	getum	geta	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -77,18 +81,22 @@
 12	aftur	aftur	ADV	ADV	Degree=Pos	9	advmod	_	_
 13	og	og	CCONJ	CONJ	_	14	cc	_	_
 14	aftur	aftur	ADV	ADV	Degree=Pos	12	conj	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	12	punct	_	_
-16	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	17	expl	_	_
-17	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-18	að	að	PART	TO	_	19	mark	_	_
-19	koma	koma	VERB	VB	VerbForm=Inf	17	xcomp	_	_
-20	til	til	ADP	P	_	21	case	_	_
-21	aðgerða	aðgerð	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	obl	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	2	punct	_	_
+15	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4673392,.4
-# X_ID = ID_missing_6
-# text = Mér sýnist þingmaðurinn og þeir sem að málinu standa hafa unnið sína heimavinnu vel.
+# sent_id = G-33-4673392,.5
+# X_ID = ID_MISSING
+# text = það þarf að koma til aðgerða .
+1	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
+2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	að	að	PART	TO	_	4	mark	_	_
+4	koma	koma	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+5	til	til	ADP	P	_	6	case	_	_
+6	aðgerða	aðgerð	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4673392,.6
+# X_ID = ID_MISSING
+# text = Mér sýnist þingmaðurinn og þeir sem að málinu standa hafa unnið sína heimavinnu vel .
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	sýnist	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þingmaðurinn	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
@@ -105,9 +113,9 @@
 14	vel	vel	ADV	ADV	Degree=Pos	11	advmod	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4673392,.5
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Við þurfum að fara í gegnum þetta og taka betur á heimilisofbeldi og auðvitað nálgunarbanni sem við höfum verið að sjá að virkar ekki nægilega vel, samræming lögreglu og dómstóla er ekki nægilega mikil.
+# sent_id = G-33-4673392,.7
+# X_ID = ID_MISSING
+# text = Við þurfum að fara í gegnum þetta og taka betur á heimilisofbeldi og auðvitað nálgunarbanni sem við höfum verið að sjá að virkar ekki nægilega vel
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -133,21 +141,25 @@
 23	virkar	virka	VERB	VBPI	Mood=Ind|Tense=Pres	21	ccomp	_	_
 24	ekki	ekki	ADV	NEG	_	23	advmod	_	_
 25	nægilega	nægilega	ADV	ADV	Degree=Pos	23	advmod	_	_
-26	vel	vel	ADV	ADV	Degree=Pos	25	advmod	_	SpaceAfter=No
-27	,	,	PUNCT	,	_	25	punct	_	_
-28	samræming	samræming	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	35	nsubj	_	_
-29	lögreglu	lögregla	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	28	nmod:poss	_	_
-30	og	og	CCONJ	CONJ	_	31	cc	_	_
-31	dómstóla	dómstóll	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	29	conj	_	_
-32	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
-33	ekki	ekki	ADV	NEG	_	35	advmod	_	_
-34	nægilega	nægilega	ADV	ADV	Degree=Pos	35	amod	_	_
-35	mikil	mikill	DET	Q-N	Case=Nom	2	conj	_	OriginalHead=0|SpaceAfter=No
-36	.	.	PUNCT	.	_	2	punct	_	_
+26	vel	vel	ADV	ADV	Degree=Pos	25	advmod	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4673392,.6
-# X_ID = ID_missing_9
-# text = Væntanlega skortir á að þau lagaákvæði séu skýr.
+# sent_id = G-33-4673392,.8
+# X_ID = ID_MISSING
+# text = , samræming lögreglu og dómstóla er ekki nægilega mikil .
+1	,	,	PUNCT	,	_	9	punct	_	_
+2	samræming	samræming	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
+3	lögreglu	lögregla	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	nmod:poss	_	_
+4	og	og	CCONJ	CONJ	_	5	cc	_	_
+5	dómstóla	dómstóll	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	conj	_	_
+6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
+7	ekki	ekki	ADV	NEG	_	9	advmod	_	_
+8	nægilega	nægilega	ADV	ADV	Degree=Pos	9	amod	_	_
+9	mikil	mikill	DET	Q-N	Case=Nom	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	9	punct	_	_
+
+# sent_id = G-33-4673392,.9
+# X_ID = ID_MISSING
+# text = Væntanlega skortir á að þau lagaákvæði séu skýr .
 1	Væntanlega	væntanlega	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	skortir	skorta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	á	á	ADP	P	_	8	case	_	_
@@ -158,9 +170,9 @@
 8	skýr	skýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4673392,.7
-# X_ID = ID_missing_10
-# text = Við sem störfum hér vitum alveg að oft fara mál með hraði til nefnda, það er mikið um að vera og okkur yfirsést ýmislegt og við þurfum að geta lagað það.
+# sent_id = G-33-4673392,.10
+# X_ID = ID_MISSING
+# text = Við sem störfum hér vitum alveg að oft fara mál með hraði til nefnda, það er mikið um að vera og okkur yfirsést ýmislegt og við þurfum að geta lagað það .
 1	Við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	sem	sem	SCONJ	C	_	3	mark	_	_
 3	störfum	starfa	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
@@ -195,9 +207,9 @@
 32	það	það	PRON	PRO-A	Case=Acc	31	obj	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4673392,.8
-# X_ID = ID_missing_11
-# text = Ég vil aðeins spyrja þingmanninn um þetta frumvarp og svo austurrísku leiðina svokölluðu, sem hefur verið farin á Suðurnesjum ef ég veit rétt.
+# sent_id = G-33-4673392,.11
+# X_ID = ID_MISSING
+# text = Ég vil aðeins spyrja þingmanninn um þetta frumvarp og svo austurrísku leiðina svokölluðu, sem hefur verið farin á Suðurnesjum ef ég veit rétt .
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	aðeins	aðeins	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -224,9 +236,6 @@
 24	rétt	rétt	ADV	ADV	Degree=Pos	23	advmod	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4673392,.9
-# X_ID = ID_missing_12
-# text = Kemur hún eitthvað sérstaklega inn í þetta mál, inn í hegningarlögin eða er hún til hliðar, svo að ég hafi yfirsýn yfir málið?
 1	Kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	hún	hún	PRON	PRO-N	Case=Nom	1	nsubj	_	_
 3	eitthvað	einhver	DET	Q-A	Case=Acc	1	obl	_	_
@@ -234,7 +243,7 @@
 5	inn	inn	ADP	RP	_	8	compound:prt	_	_
 6	í	í	ADP	P	_	8	case	_	_
 7	þetta	þessi	DET	D-A	Case=Acc	8	det	_	_
-8	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	SpaceAfter=No
+8	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
 9	,	,	PUNCT	,	_	8	punct	_	_
 10	inn	inn	ADP	RP	_	12	compound:prt	_	_
 11	í	í	ADP	P	_	12	case	_	_
@@ -243,7 +252,7 @@
 14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
 15	hún	hún	PRON	PRO-N	Case=Nom	17	nsubj	_	_
 16	til	til	ADP	P	_	17	case	_	_
-17	hliðar	hlið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
+17	hliðar	hlið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	1	conj	_	_
 18	,	,	PUNCT	,	_	17	punct	_	_
 19	svo	svo	ADP	P	_	22	case	_	_
 20	að	að	SCONJ	C	_	22	mark	_	_
@@ -251,6 +260,6 @@
 22	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	17	obl	_	_
 23	yfirsýn	yfirsýn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obj	_	_
 24	yfir	yfir	ADP	P	_	25	case	_	_
-25	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
+25	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
 26	?	?	PUNCT	.	_	1	punct	_	_
 

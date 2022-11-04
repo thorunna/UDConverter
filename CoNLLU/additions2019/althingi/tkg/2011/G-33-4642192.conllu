@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.1
-# X_ID = ID_missing_1
-# text = Frú forseti. Ég þakka hv. þm. Birni Vali Gíslasyni fyrir þessa framsögu.
+# sent_id = G-33-4642192,.1
+# X_ID = ID_MISSING
+# text = Frú forseti . Ég þakka hv. þm. Birni Vali Gíslasyni fyrir þessa framsögu .
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -16,9 +16,9 @@
 13	framsögu	framsaga	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.2
-# X_IDs = ID_missing_2 ; ID_missing_3 ; ID_missing_4
-# text = Af því að ég sit ekki í samgöngunefnd langar mig að spyrja hvort hv. þingmaður meti það sem svo að sú þróun sem verður varðandi allar meiri háttar samgönguframkvæmdir ég er svolítið að fara út á hálan ís, ég er hrædd um að ef ég fer að ræða þetta mál og Vaðlaheiðargöng verði ég strax stimpluð þannig að ég sé á móti þeirri framkvæmd.
+# sent_id = G-33-4642192,.2
+# X_ID = ID_MISSING
+# text = Af því að ég sit ekki í samgöngunefnd langar mig að spyrja hvort hv. þingmaður meti það sem svo að sú þróun sem verður varðandi allar meiri háttar samgönguframkvæmdir
 1	Af	af	ADP	P	_	2	case	_	_
 2	því	það	PRON	PRO-D	Case=Dat	9	obl	_	_
 3	að	að	SCONJ	C	_	5	mark	_	_
@@ -48,47 +48,55 @@
 27	meiri	mikill	DET	QR-G	Case=Gen	29	nmod:poss	_	_
 28	háttar	háttur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	27	conj	_	_
 29	samgönguframkvæmdir	samgönguframkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	25	obj	_	_
-30	ég	ég	PRON	PRO-N	Case=Nom	34	nsubj	_	_
-31	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	34	cop	_	_
-32	svolítið	svolítið	ADV	ADV	Degree=Pos	34	advmod	_	_
-33	að	að	PART	TO	_	34	mark	_	_
-34	fara	fara	VERB	VB	VerbForm=Inf	9	conj	_	OriginalHead=0
-35	út	út	ADP	RP	_	38	compound:prt	_	_
-36	á	á	ADP	P	_	38	case	_	_
-37	hálan	háll	ADJ	ADJ-A	Case=Acc|Degree=Pos	38	amod	_	_
-38	ís	ís	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
-39	,	,	PUNCT	,	_	9	punct	_	_
-40	ég	ég	PRON	PRO-N	Case=Nom	42	nsubj	_	_
-41	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	42	cop	_	_
-42	hrædd	hræddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	conj	_	OriginalHead=0
-43	um	um	ADP	P	_	57	case	_	_
-44	að	að	SCONJ	C	_	57	mark	_	_
-45	ef	ef	ADP	P	_	47	case	_	_
-46	ég	ég	PRON	PRO-N	Case=Nom	47	nsubj	_	_
-47	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	57	obl	_	_
-48	að	að	PART	TO	_	49	mark	_	_
-49	ræða	ræða	VERB	VB	VerbForm=Inf	47	xcomp	_	_
-50	þetta	þessi	DET	D-A	Case=Acc	51	det	_	_
-51	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	53	obl	_	_
-52	og	og	CCONJ	CONJ	_	53	cc	_	_
-53	Vaðlaheiðargöng	vaðlaheiðargöng	PROPN	NPRS-A	_	49	obj	_	_
-54	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	57	aux	_	_
-55	ég	ég	PRON	PRO-N	Case=Nom	57	nsubj	_	_
-56	strax	strax	ADV	ADV	Degree=Pos	57	advmod	_	_
-57	stimpluð	stimpla	VERB	VAN	Tense=Past|VerbForm=Part	42	amod	_	_
-58	þannig	þannig	ADV	ADV	Degree=Pos	57	advmod	_	_
-59	að	að	SCONJ	C	_	63	mark	_	_
-60	ég	ég	PRON	PRO-N	Case=Nom	63	nsubj	_	_
-61	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	63	cop	_	_
-62	á	á	ADP	P	_	63	case	_	_
-63	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	58	advcl	_	_
-64	þeirri	sá	DET	D-D	Case=Dat	65	det	_	_
-65	framkvæmd	framkvæmd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	63	nmod:poss	_	SpaceAfter=No
-66	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.3
-# X_ID = ID_missing_5
-# text = Ég vil taka fram að svo er alls ekki.
+# sent_id = G-33-4642192,.3
+# X_ID = ID_MISSING
+# text = ég er svolítið að fara út á hálan ís,
+1	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
+3	svolítið	svolítið	ADV	ADV	Degree=Pos	5	advmod	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	fara	fara	VERB	VB	VerbForm=Inf	0	root	_	_
+6	út	út	ADP	RP	_	9	compound:prt	_	_
+7	á	á	ADP	P	_	9	case	_	_
+8	hálan	háll	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
+9	ís	ís	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	5	punct	_	_
+
+# sent_id = G-33-4642192,.4
+# X_ID = ID_MISSING
+# text = ég er hrædd um að ef ég fer að ræða þetta mál og Vaðlaheiðargöng verði ég strax stimpluð þannig að ég sé á móti þeirri framkvæmd .
+1	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
+2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
+3	hrædd	hræddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+4	um	um	ADP	P	_	18	case	_	_
+5	að	að	SCONJ	C	_	18	mark	_	_
+6	ef	ef	ADP	P	_	8	case	_	_
+7	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+8	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	18	obl	_	_
+9	að	að	PART	TO	_	10	mark	_	_
+10	ræða	ræða	VERB	VB	VerbForm=Inf	8	xcomp	_	_
+11	þetta	þessi	DET	D-A	Case=Acc	12	det	_	_
+12	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	Vaðlaheiðargöng	vaðlaheiðargöng	PROPN	NPRS-A	_	10	obj	_	_
+15	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	18	aux	_	_
+16	ég	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+17	strax	strax	ADV	ADV	Degree=Pos	18	advmod	_	_
+18	stimpluð	stimpla	VERB	VAN	Tense=Past|VerbForm=Part	3	amod	_	_
+19	þannig	þannig	ADV	ADV	Degree=Pos	18	advmod	_	_
+20	að	að	SCONJ	C	_	24	mark	_	_
+21	ég	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+22	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	24	cop	_	_
+23	á	á	ADP	P	_	24	case	_	_
+24	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	advcl	_	_
+25	þeirri	sá	DET	D-D	Case=Dat	26	det	_	_
+26	framkvæmd	framkvæmd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	nmod:poss	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4642192,.5
+# X_ID = ID_MISSING
+# text = Ég vil taka fram að svo er alls ekki .
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	taka	taka	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -100,9 +108,9 @@
 9	ekki	ekki	ADV	NEG	_	8	advmod	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.4
-# X_IDs = ID_missing_6 ; ID_missing_7
-# text = Mér þykir mikilvægt að fara af stað með framkvæmdastigið í landinu og þar höfum við allt of mikið dregið lappirnar.
+# sent_id = G-33-4642192,.6
+# X_ID = ID_MISSING
+# text = Mér þykir mikilvægt að fara af stað með framkvæmdastigið í landinu
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	þykir	þykja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
@@ -114,20 +122,24 @@
 9	framkvæmdastigið	framkvæmdastig	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
 10	í	í	ADP	P	_	11	case	_	_
 11	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
-12	og	og	CCONJ	CONJ	_	19	cc	_	_
-13	þar	þar	ADV	ADV	Degree=Pos	19	advmod	_	_
-14	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	19	aux	_	_
-15	við	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-16	allt	allur	DET	Q-A	Case=Acc	17	obl	_	_
-17	of	of	ADV	ADV	Degree=Pos	18	advmod	_	_
-18	mikið	mikill	DET	Q-A	Case=Acc	19	obl	_	_
-19	dregið	draga	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-20	lappirnar	löpp	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obj	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.5
-# X_ID = ID_missing_8
-# text = Ég spyr hins vegar hv. þingmann hvort hann meti það sem svo að við séum að varða leið til nýs fyrirkomulags.
+# sent_id = G-33-4642192,.7
+# X_ID = ID_MISSING
+# text = og þar höfum við allt of mikið dregið lappirnar .
+1	og	og	CCONJ	CONJ	_	8	cc	_	_
+2	þar	þar	ADV	ADV	Degree=Pos	8	advmod	_	_
+3	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	8	aux	_	_
+4	við	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+5	allt	allur	DET	Q-A	Case=Acc	6	obl	_	_
+6	of	of	ADV	ADV	Degree=Pos	7	advmod	_	_
+7	mikið	mikill	DET	Q-A	Case=Acc	8	obl	_	_
+8	dregið	draga	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+9	lappirnar	löpp	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	8	punct	_	_
+
+# sent_id = G-33-4642192,.8
+# X_ID = ID_MISSING
+# text = Ég spyr hins vegar hv. þingmann hvort hann meti það sem svo að við séum að varða leið til nýs fyrirkomulags .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
@@ -151,9 +163,9 @@
 21	fyrirkomulags	fyrirkomulag	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.6
-# X_ID = ID_missing_9
-# text = Er það þannig að Vegagerðin fer af stað og stofnar hlutafélag um allar helstu vegaframkvæmdir, kannski til þess að sneiða fram hjá þunglamalegum reglum annars staðar?
+# sent_id = G-33-4642192,.9
+# X_ID = ID_MISSING
+# text = Er það þannig að Vegagerðin fer af stað og stofnar hlutafélag um allar helstu vegaframkvæmdir, kannski til þess að sneiða fram hjá þunglamalegum reglum annars staðar ?
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
 2	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 3	þannig	þannig	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -183,9 +195,9 @@
 27	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	obl	_	SpaceAfter=No
 28	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.7
-# X_ID = ID_missing_10
-# text = Hvernig sér hv. þingmaður þróunina hvað þetta varðar?
+# sent_id = G-33-4642192,.10
+# X_ID = ID_MISSING
+# text = Hvernig sér hv. þingmaður þróunina hvað þetta varðar ?
 1	Hvernig	hvernig	ADV	WADV	Degree=Pos	2	advmod	_	_
 2	sér	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -196,9 +208,9 @@
 8	varðar	varða	ADV	VBPI	Mood=Ind|Tense=Pres	2	advmod	_	SpaceAfter=No
 9	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.8
-# X_ID = ID_missing_11
-# text = Er þetta þá það fyrirkomulag sem við munum sjá í auknum mæli til að ýta af stað öðrum framkvæmdum?
+# sent_id = G-33-4642192,.11
+# X_ID = ID_MISSING
+# text = Er þetta þá það fyrirkomulag sem við munum sjá í auknum mæli til að ýta af stað öðrum framkvæmdum ?
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 2	þetta	þessi	DET	D-N	Case=Nom	5	nsubj	_	_
 3	þá	þá	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -220,9 +232,9 @@
 19	framkvæmdum	framkvæmd	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obj	_	SpaceAfter=No
 20	?	?	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.9
-# X_ID = ID_missing_12
-# text = Í öðru lagi langar mig að forvitnast um það hvort nefndin hafi sent þetta mál til umfjöllunar og leitað eftir umsögnum hjá öðrum aðilum en eingöngu Vegagerðinni.
+# sent_id = G-33-4642192,.12
+# X_ID = ID_MISSING
+# text = Í öðru lagi langar mig að forvitnast um það hvort nefndin hafi sent þetta mál til umfjöllunar og leitað eftir umsögnum hjá öðrum aðilum en eingöngu Vegagerðinni .
 1	Í	í	ADP	P	_	3	case	_	_
 2	öðru	annar	ADJ	ADJ-D	Case=Dat|Degree=Pos	3	amod	_	_
 3	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
@@ -252,9 +264,9 @@
 27	Vegagerðinni	vegagerð	PROPN	NPR-D	_	24	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.10
-# X_ID = ID_missing_13
-# text = Hvaða álit voru það þá?
+# sent_id = G-33-4642192,.13
+# X_ID = ID_MISSING
+# text = Hvaða álit voru það þá ?
 1	Hvaða	hvaða	DET	WD-N	Case=Nom	2	det	_	_
 2	álit	álit	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	obj	_	_
 3	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
@@ -262,9 +274,9 @@
 5	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	SpaceAfter=No
 6	?	?	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.11
-# X_ID = ID_missing_14
-# text = Ekki síst er ég með í huga hvort það sé rétt leið að koma inn svona eignarnámsheimild með tilliti til eignarréttar og réttar landeigenda.
+# sent_id = G-33-4642192,.14
+# X_ID = ID_MISSING
+# text = Ekki síst er ég með í huga hvort það sé rétt leið að koma inn svona eignarnámsheimild með tilliti til eignarréttar og réttar landeigenda .
 1	Ekki	ekki	ADV	NEG	_	2	advmod	_	_
 2	síst	varla	ADV	ADVS	Degree=Sup	6	advmod	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
@@ -291,9 +303,9 @@
 24	landeigenda	landeigandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	23	nmod:poss	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = ALTHINGI_TKG_2011_G-33-4642192,.12
-# X_IDs = ID_missing_15 ; ID_missing_16
-# text = Fjölluðu aðrir aðilar um þetta en Vegagerðin og hvaða einstaklingar mættu þá á fund nefndarinnar út af þessu máli?
+# sent_id = G-33-4642192,.15
+# X_ID = ID_MISSING
+# text = Fjölluðu aðrir aðilar um þetta en Vegagerðin
 1	Fjölluðu	fjalla	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 2	aðrir	annar	PRON	OTHER-N	Case=Nom	3	det	_	_
 3	aðilar	aðili	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	1	nsubj	_	_
@@ -301,17 +313,18 @@
 5	þetta	þessi	DET	D-A	Case=Acc	1	obl	_	_
 6	en	en	ADP	P	_	7	case	_	_
 7	Vegagerðin	vegagerð	PROPN	NPR-N	_	1	obl	_	_
-8	og	og	CCONJ	CONJ	_	11	cc	_	_
-9	hvaða	hvaða	DET	WD-N	Case=Nom	10	det	_	_
-10	einstaklingar	einstaklingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	obj	_	_
-11	mættu	mæta	VERB	VBDS	Mood=Sub|Tense=Past	1	conj	_	OriginalHead=0
-12	þá	þá	ADV	ADV	Degree=Pos	11	advmod	_	_
-13	á	á	ADP	P	_	14	case	_	_
-14	fund	fundur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
-15	nefndarinnar	nefnd	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	nmod:poss	_	_
-16	út	út	ADP	RP	_	19	compound:prt	_	_
-17	af	af	ADP	P	_	19	case	_	_
-18	þessu	þessi	DET	D-D	Case=Dat	19	det	_	_
-19	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
-20	?	?	PUNCT	.	_	1	punct	_	_
+
+1	og	og	CCONJ	CONJ	_	4	cc	_	_
+2	hvaða	hvaða	DET	WD-N	Case=Nom	3	det	_	_
+3	einstaklingar	einstaklingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	obj	_	_
+4	mættu	mæta	VERB	VBDS	Mood=Sub|Tense=Past	0	root	_	_
+5	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
+6	á	á	ADP	P	_	7	case	_	_
+7	fund	fundur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+8	nefndarinnar	nefnd	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
+9	út	út	ADP	RP	_	12	compound:prt	_	_
+10	af	af	ADP	P	_	12	case	_	_
+11	þessu	þessi	DET	D-D	Case=Dat	12	det	_	_
+12	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
+13	?	?	PUNCT	.	_	4	punct	_	_
 

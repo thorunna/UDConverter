@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_BO_2015_G-33-4825748,.1
-# X_ID = ID_missing_1
-# text = Virðulegi forseti. Ég þakka ræðuna.
+# sent_id = G-33-4825748,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég þakka ræðuna .
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -9,9 +9,9 @@
 6	ræðuna	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4825748,.2
-# X_ID = ID_missing_2
-# text = Hér kom fram hjá hv. þingmanni og formanni atvinnuveganefndar, Jóni Gunnarssyni, að mikil gagnrýni hefði komið frá þingmönnum um að frumvarpið væri illa unnið.
+# sent_id = G-33-4825748,.2
+# X_ID = ID_MISSING
+# text = Hér kom fram hjá hv. þingmanni og formanni atvinnuveganefndar, Jóni Gunnarssyni, að mikil gagnrýni hefði komið frá þingmönnum um að frumvarpið væri illa unnið .
 1	Hér	hér	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fram	fram	ADP	RP	_	2	compound:prt	_	_
@@ -40,9 +40,9 @@
 26	unnið	vinna	VERB	VAN	Tense=Past|VerbForm=Part	23	acl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4825748,.3
-# X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5
-# text = Ég vil segja um það að ágætlega var unnið í atvinnuveganefnd Alþingis, en það er þó margt enn óunnið í málinu, þar stendur hnífurinn í kúnni.
+# sent_id = G-33-4825748,.3
+# X_ID = ID_MISSING
+# text = Ég vil segja um það að ágætlega var unnið í atvinnuveganefnd Alþingis,
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	segja	segja	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -55,27 +55,35 @@
 10	í	í	ADP	P	_	11	case	_	_
 11	atvinnuveganefnd	atvinnuveganefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
 12	Alþingis	alþingi	PROPN	NPR-G	_	11	nmod:poss	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	11	punct	_	_
-14	en	en	CCONJ	CONJ	_	20	cc	_	_
-15	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	20	expl	_	_
-16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
-17	þó	þó	ADV	ADV	Degree=Pos	20	advmod	_	_
-18	margt	margur	DET	Q-N	Case=Nom	20	obl	_	_
-19	enn	enn	ADV	ADV	Degree=Pos	20	advmod	_	_
-20	óunnið	óunninn	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0
-21	í	í	ADP	P	_	22	case	_	_
-22	málinu	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	3	punct	_	_
-24	þar	þar	ADV	ADV	Degree=Pos	25	advmod	_	_
-25	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
-26	hnífurinn	hnífur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	nsubj	_	_
-27	í	í	ADP	P	_	28	case	_	_
-28	kúnni	kýr	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	3	punct	_	_
+13	,	,	PUNCT	,	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4825748,.4
-# X_IDs = ID_missing_6 ; ID_missing_7
-# text = Það sem stendur út af að mínu mati er þrennt og mig langar að bera undir þingmanninn hvort hann sé sammála mér um það og hvað við gerum þá í því.
+# sent_id = G-33-4825748,.4
+# X_ID = ID_MISSING
+# text = en það er þó margt enn óunnið í málinu,
+1	en	en	CCONJ	CONJ	_	7	cc	_	_
+2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	7	expl	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
+4	þó	þó	ADV	ADV	Degree=Pos	7	advmod	_	_
+5	margt	margur	DET	Q-N	Case=Nom	7	obl	_	_
+6	enn	enn	ADV	ADV	Degree=Pos	7	advmod	_	_
+7	óunnið	óunninn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	málinu	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	7	punct	_	_
+
+# sent_id = G-33-4825748,.5
+# X_ID = ID_MISSING
+# text = þar stendur hnífurinn í kúnni .
+1	þar	þar	ADV	ADV	Degree=Pos	2	advmod	_	_
+2	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	hnífurinn	hnífur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
+4	í	í	ADP	P	_	5	case	_	_
+5	kúnni	kýr	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4825748,.6
+# X_ID = ID_MISSING
+# text = Það sem stendur út af að mínu mati er þrennt
 1	Það	sá	DET	D-N	Case=Nom	10	nsubj	_	_
 2	sem	sem	SCONJ	C	_	3	mark	_	_
 3	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
@@ -86,32 +94,36 @@
 8	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
 9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
 10	þrennt	þrennur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-11	og	og	CCONJ	CONJ	_	13	cc	_	_
-12	mig	ég	PRON	PRO-A	Case=Acc	13	nsubj	_	_
-13	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	10	conj	_	OriginalHead=0
-14	að	að	PART	TO	_	15	mark	_	_
-15	bera	bera	VERB	VB	VerbForm=Inf	13	xcomp	_	_
-16	undir	undir	ADP	P	_	17	case	_	_
-17	þingmanninn	þingmaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
-18	hvort	hvort	SCONJ	WQ	_	21	mark	_	_
-19	hann	hann	PRON	PRO-N	Case=Nom	21	nsubj	_	_
-20	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	21	cop	_	_
-21	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	ccomp	_	_
-22	mér	ég	PRON	PRO-D	Case=Dat	21	obl	_	_
-23	um	um	ADP	P	_	24	case	_	_
-24	það	það	PRON	PRO-A	Case=Acc	21	amod	_	_
-25	og	og	CCONJ	CONJ	_	28	cc	_	_
-26	hvað	hver	PRON	WPRO-A	Case=Acc	28	obj	_	_
-27	við	ég	PRON	PRO-N	Case=Nom	28	nsubj	_	_
-28	gerum	gera	VERB	DOPS	Mood=Sub|Tense=Pres	21	conj	_	_
-29	þá	þá	ADV	ADV	Degree=Pos	28	advmod	_	_
-30	í	í	ADP	P	_	31	case	_	_
-31	því	það	PRON	PRO-D	Case=Dat	28	obl	_	SpaceAfter=No
-32	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4825748,.5
-# X_ID = ID_missing_8
-# text = Það er að rýna betur í umsagnir frá Sambandi íslenskra sveitarfélaga og Skipulagsstofnun, sem er stofnun sem þarf að vinna með þessi lög og skilur hvorki upp né niður í þeim.
+# sent_id = G-33-4825748,.7
+# X_ID = ID_MISSING
+# text = og mig langar að bera undir þingmanninn hvort hann sé sammála mér um það og hvað við gerum þá í því .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	mig	ég	PRON	PRO-A	Case=Acc	3	nsubj	_	_
+3	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	að	að	PART	TO	_	5	mark	_	_
+5	bera	bera	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	undir	undir	ADP	P	_	7	case	_	_
+7	þingmanninn	þingmaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+8	hvort	hvort	SCONJ	WQ	_	11	mark	_	_
+9	hann	hann	PRON	PRO-N	Case=Nom	11	nsubj	_	_
+10	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	11	cop	_	_
+11	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	ccomp	_	_
+12	mér	ég	PRON	PRO-D	Case=Dat	11	obl	_	_
+13	um	um	ADP	P	_	14	case	_	_
+14	það	það	PRON	PRO-A	Case=Acc	11	amod	_	_
+15	og	og	CCONJ	CONJ	_	18	cc	_	_
+16	hvað	hver	PRON	WPRO-A	Case=Acc	18	obj	_	_
+17	við	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+18	gerum	gera	VERB	DOPS	Mood=Sub|Tense=Pres	11	conj	_	_
+19	þá	þá	ADV	ADV	Degree=Pos	18	advmod	_	_
+20	í	í	ADP	P	_	21	case	_	_
+21	því	það	PRON	PRO-D	Case=Dat	18	obl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4825748,.8
+# X_ID = ID_MISSING
+# text = Það er að rýna betur í umsagnir frá Sambandi íslenskra sveitarfélaga og Skipulagsstofnun, sem er stofnun sem þarf að vinna með þessi lög og skilur hvorki upp né niður í þeim .
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -146,9 +158,9 @@
 32	þeim	það	PRON	PRO-D	Case=Dat	26	obl	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4825748,.6
-# X_ID = ID_missing_9
-# text = Það er kerfisáætlun sem að mínu mati þarf að koma til endurskoðunar og vera hjá þinginu í meira mæli en nú liggur fyrir.
+# sent_id = G-33-4825748,.9
+# X_ID = ID_MISSING
+# text = Það er kerfisáætlun sem að mínu mati þarf að koma til endurskoðunar og vera hjá þinginu í meira mæli en nú liggur fyrir .
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	kerfisáætlun	kerfisáætlun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
@@ -174,28 +186,25 @@
 23	fyrir	fyrir	ADP	RP	_	22	compound:prt	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4825748,.7
-# X_ID = ID_missing_10
-# text = Forseti hringir.
+# sent_id = G-33-4825748,.10
+# X_ID = ID_MISSING
+# text = Forseti hringir .
 1	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_BO_2015_G-33-4825748,.8
-# X_ID = ID_missing_11
-# text = Síðan er það valkostagreining ráðherra, sem mun ráða einn Forseti hringir. og sér samkvæmt reglugerð hvar línustæði munu liggja.
 1	Síðan	síðan	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 4	valkostagreining	valkostagreining	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-5	ráðherra	ráðherra	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	SpaceAfter=No
+5	ráðherra	ráðherra	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	nmod:poss	_	_
 6	,	,	PUNCT	,	_	5	punct	_	_
 7	sem	sem	SCONJ	C	_	9	mark	_	_
 8	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	9	aux	_	_
 9	ráða	ráða	VERB	VB	VerbForm=Inf	5	acl:relcl	_	_
 10	einn	einn	DET	ONE-N	Case=Nom	15	amod	_	_
 11	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
-12	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	15	amod	_	SpaceAfter=No
+12	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	15	amod	_	_
 13	.	.	PUNCT	.	_	12	punct	_	_
 14	og	og	CCONJ	CONJ	_	15	cc	_	_
 15	sér	sér	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
@@ -204,6 +213,6 @@
 18	hvar	hvar	ADV	WADV	Degree=Pos	21	advmod	_	_
 19	línustæði	línustæði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	21	nsubj	_	_
 20	munu	munu	AUX	MDPI	Mood=Ind|Tense=Pres	21	aux	_	_
-21	liggja	liggja	VERB	VB	VerbForm=Inf	9	ccomp	_	SpaceAfter=No
+21	liggja	liggja	VERB	VB	VerbForm=Inf	9	ccomp	_	_
 22	.	.	PUNCT	.	_	4	punct	_	_
 

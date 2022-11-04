@@ -1,6 +1,6 @@
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.1
-# X_IDs = ID_missing_1 ; ID_missing_2
-# text = Virðulegi forseti. Ég þakka fyrir þessa ágætu umræðu, hún hefur verið mjög áhugaverð.
+# sent_id = G-33-4715181,.1
+# X_ID = ID_MISSING
+# text = Virðulegi forseti . Ég þakka fyrir þessa ágætu umræðu,
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -10,17 +10,21 @@
 7	þessa	þessi	DET	D-A	Case=Acc	9	det	_	_
 8	ágætu	ágætur	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
 9	umræðu	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	hún	hún	PRON	PRO-N	Case=Nom	15	nsubj	_	_
-12	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	15	aux	_	_
-13	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	15	cop	_	_
-14	mjög	mjög	ADV	ADV	Degree=Pos	15	amod	_	_
-15	áhugaverð	áhugaverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	conj	_	OriginalHead=0|SpaceAfter=No
-16	.	.	PUNCT	.	_	5	punct	_	_
+10	,	,	PUNCT	,	_	5	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.2
-# X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5
-# text = Mig langaði að spyrja hv. þm. Steingrím J. Sigfússon ég trúi því að hann viti mjög mikið um þetta, hefur bæði verið hér á þingi síðan sá var á barnsaldri sem hér stendur, og maður heyrir að menn hafa pælt mikið í þessu.
+# sent_id = G-33-4715181,.2
+# X_ID = ID_MISSING
+# text = hún hefur verið mjög áhugaverð .
+1	hún	hún	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
+3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	5	cop	_	_
+4	mjög	mjög	ADV	ADV	Degree=Pos	5	amod	_	_
+5	áhugaverð	áhugaverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = G-33-4715181,.3
+# X_ID = ID_MISSING
+# text = Mig langaði að spyrja hv. þm. Steingrím J. Sigfússon ég trúi því að hann viti mjög mikið um þetta,
 1	Mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
 2	langaði	langa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -40,37 +44,45 @@
 17	mikið	mikill	DET	Q-A	Case=Acc	16	amod	_	_
 18	um	um	ADP	P	_	19	case	_	_
 19	þetta	þessi	DET	D-A	Case=Acc	15	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	15	punct	_	_
-21	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-22	bæði	bæði	CCONJ	CONJ	_	23	cc	_	_
-23	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	21	conj	_	_
-24	hér	hér	ADV	ADV	Degree=Pos	26	advmod	_	_
-25	á	á	ADP	P	_	26	case	_	_
-26	þingi	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
-27	síðan	síðan	ADP	P	_	31	case	_	_
-28	sá	sá	DET	D-N	Case=Nom	31	nsubj	_	_
-29	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	31	cop	_	_
-30	á	á	ADP	P	_	31	case	_	_
-31	barnsaldri	barnsaldur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
-32	sem	sem	SCONJ	C	_	34	mark	_	_
-33	hér	hér	ADV	ADV	Degree=Pos	34	advmod	_	_
-34	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	31	acl:relcl	_	SpaceAfter=No
-35	,	,	PUNCT	,	_	31	punct	_	_
-36	og	og	CCONJ	CONJ	_	38	cc	_	_
-37	maður	maður	PRON	MAN-N	_	38	nsubj	_	_
-38	heyrir	heyra	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
-39	að	að	SCONJ	C	_	42	mark	_	_
-40	menn	maður	PRON	MANS-N	_	42	nsubj	_	_
-41	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	42	aux	_	_
-42	pælt	pæla	VERB	VBN	Tense=Past|VerbForm=Part	38	ccomp	_	_
-43	mikið	mikið	ADV	ADV	Degree=Pos	42	advmod	_	_
-44	í	í	ADP	P	_	45	case	_	_
-45	þessu	þessi	DET	D-D	Case=Dat	42	obl	_	SpaceAfter=No
-46	.	.	PUNCT	.	_	2	punct	_	_
+20	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.3
-# X_ID = ID_missing_6
-# text = Það sem ég sé sem aðalvandamálið við íslenska krónu er tilhneiging hennar til að leiða til verðbólgu.
+# sent_id = G-33-4715181,.4
+# X_ID = ID_MISSING
+# text = hefur bæði verið hér á þingi síðan sá var á barnsaldri sem hér stendur,
+1	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
+2	bæði	bæði	CCONJ	CONJ	_	3	cc	_	_
+3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	1	conj	_	_
+4	hér	hér	ADV	ADV	Degree=Pos	6	advmod	_	_
+5	á	á	ADP	P	_	6	case	_	_
+6	þingi	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
+7	síðan	síðan	ADP	P	_	11	case	_	_
+8	sá	sá	DET	D-N	Case=Nom	11	nsubj	_	_
+9	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	11	cop	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	barnsaldri	barnsaldur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
+12	sem	sem	SCONJ	C	_	14	mark	_	_
+13	hér	hér	ADV	ADV	Degree=Pos	14	advmod	_	_
+14	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	11	acl:relcl	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	1	punct	_	_
+
+# sent_id = G-33-4715181,.5
+# X_ID = ID_MISSING
+# text = og maður heyrir að menn hafa pælt mikið í þessu .
+1	og	og	CCONJ	CONJ	_	3	cc	_	_
+2	maður	maður	PRON	MAN-N	_	3	nsubj	_	_
+3	heyrir	heyra	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	að	að	SCONJ	C	_	7	mark	_	_
+5	menn	maður	PRON	MANS-N	_	7	nsubj	_	_
+6	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	7	aux	_	_
+7	pælt	pæla	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	_
+8	mikið	mikið	ADV	ADV	Degree=Pos	7	advmod	_	_
+9	í	í	ADP	P	_	10	case	_	_
+10	þessu	þessi	DET	D-D	Case=Dat	7	obl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = G-33-4715181,.6
+# X_ID = ID_MISSING
+# text = Það sem ég sé sem aðalvandamálið við íslenska krónu er tilhneiging hennar til að leiða til verðbólgu .
 1	Það	sá	DET	D-N	Case=Nom	11	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -90,9 +102,9 @@
 17	verðbólgu	verðbólga	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.4
-# X_IDs = ID_missing_7 ; ID_missing_8
-# text = Ég átta mig á því að sögulega hafa verið nokkrar misjafnar ástæður fyrir verðbólgunni, en hún er einhvern veginn alls staðar og í öllu sem varðar íslenskt efnahagslíf til lengri tíma, ekki bara í verðtryggingunni, heldur virðist hún vera einhvers konar hluti af því að búa á Íslandi.
+# sent_id = G-33-4715181,.7
+# X_ID = ID_MISSING
+# text = Ég átta mig á því að sögulega hafa verið nokkrar misjafnar ástæður fyrir verðbólgunni,
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	átta	átta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mig	ég	PRON	PRO-A	Case=Acc	2	obj	_	_
@@ -107,63 +119,71 @@
 12	ástæður	ástæða	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	nsubj	_	_
 13	fyrir	fyrir	ADP	P	_	14	case	_	_
 14	verðbólgunni	verðbólga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	9	punct	_	_
-16	en	en	CCONJ	CONJ	_	37	cc	_	_
-17	hún	hún	PRON	PRO-N	Case=Nom	37	nsubj	_	_
-18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	37	cop	_	_
-19	einhvern	einhver	DET	Q-A	Case=Acc	20	amod	_	_
-20	veginn	vegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	obl	_	_
-21	alls	allur	DET	Q-G	Case=Gen	22	amod	_	_
-22	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	37	obl	_	_
-23	og	og	CCONJ	CONJ	_	25	cc	_	_
-24	í	í	ADP	P	_	25	case	_	_
-25	öllu	allur	DET	Q-D	Case=Dat	22	conj	_	_
-26	sem	sem	SCONJ	C	_	27	mark	_	_
-27	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	25	acl:relcl	_	_
-28	íslenskt	íslenskur	ADJ	ADJ-A	Case=Acc|Degree=Pos	29	amod	_	_
-29	efnahagslíf	efnahagslíf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	27	obj	_	_
-30	til	til	ADP	P	_	32	case	_	_
-31	lengri	langur	ADJ	ADJR-G	Case=Gen|Degree=Cmp	32	amod	_	_
-32	tíma	tími	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	27	obl	_	SpaceAfter=No
-33	,	,	PUNCT	,	_	32	punct	_	_
-34	ekki	ekki	ADV	NEG	_	37	advmod	_	_
-35	bara	bara	ADV	FP	Degree=Pos	37	advmod	_	_
-36	í	í	ADP	P	_	37	case	_	_
-37	verðtryggingunni	verðtrygging	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0|SpaceAfter=No
-38	,	,	PUNCT	,	_	37	punct	_	_
-39	heldur	heldur	ADV	ADVR	Degree=Cmp	40	advmod	_	_
-40	virðist	virða	VERB	VBPI	Mood=Ind|Tense=Pres	37	parataxis	_	_
-41	hún	hún	PRON	PRO-N	Case=Nom	40	nsubj	_	_
-42	vera	vera	AUX	BE	VerbForm=Inf	45	cop	_	_
-43	einhvers	einhver	DET	Q-G	Case=Gen	44	amod	_	_
-44	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	45	nmod:poss	_	_
-45	hluti	hluti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	40	xcomp	_	_
-46	af	af	ADP	P	_	47	case	_	_
-47	því	það	PRON	PRO-D	Case=Dat	45	obl	_	_
-48	að	að	PART	TO	_	49	mark	_	_
-49	búa	búa	VERB	VB	VerbForm=Inf	47	xcomp	_	_
-50	á	á	ADP	P	_	51	case	_	_
-51	Íslandi	ísland	PROPN	NPR-D	_	49	obl	_	SpaceAfter=No
-52	.	.	PUNCT	.	_	2	punct	_	_
+15	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.5
-# X_IDs = ID_missing_9 ; ID_missing_10
-# text = Maður býr við verðbólgu, maður einhvern veginn venst því.
+# sent_id = G-33-4715181,.8
+# X_ID = ID_MISSING
+# text = en hún er einhvern veginn alls staðar og í öllu sem varðar íslenskt efnahagslíf til lengri tíma, ekki bara í verðtryggingunni, heldur virðist hún vera einhvers konar hluti af því að búa á Íslandi .
+1	en	en	CCONJ	CONJ	_	22	cc	_	_
+2	hún	hún	PRON	PRO-N	Case=Nom	22	nsubj	_	_
+3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
+4	einhvern	einhver	DET	Q-A	Case=Acc	5	amod	_	_
+5	veginn	vegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
+6	alls	allur	DET	Q-G	Case=Gen	7	amod	_	_
+7	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	obl	_	_
+8	og	og	CCONJ	CONJ	_	10	cc	_	_
+9	í	í	ADP	P	_	10	case	_	_
+10	öllu	allur	DET	Q-D	Case=Dat	7	conj	_	_
+11	sem	sem	SCONJ	C	_	12	mark	_	_
+12	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	10	acl:relcl	_	_
+13	íslenskt	íslenskur	ADJ	ADJ-A	Case=Acc|Degree=Pos	14	amod	_	_
+14	efnahagslíf	efnahagslíf	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obj	_	_
+15	til	til	ADP	P	_	17	case	_	_
+16	lengri	langur	ADJ	ADJR-G	Case=Gen|Degree=Cmp	17	amod	_	_
+17	tíma	tími	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	ekki	ekki	ADV	NEG	_	22	advmod	_	_
+20	bara	bara	ADV	FP	Degree=Pos	22	advmod	_	_
+21	í	í	ADP	P	_	22	case	_	_
+22	verðtryggingunni	verðtrygging	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	heldur	heldur	ADV	ADVR	Degree=Cmp	25	advmod	_	_
+25	virðist	virða	VERB	VBPI	Mood=Ind|Tense=Pres	22	parataxis	_	_
+26	hún	hún	PRON	PRO-N	Case=Nom	25	nsubj	_	_
+27	vera	vera	AUX	BE	VerbForm=Inf	30	cop	_	_
+28	einhvers	einhver	DET	Q-G	Case=Gen	29	amod	_	_
+29	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	30	nmod:poss	_	_
+30	hluti	hluti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	xcomp	_	_
+31	af	af	ADP	P	_	32	case	_	_
+32	því	það	PRON	PRO-D	Case=Dat	30	obl	_	_
+33	að	að	PART	TO	_	34	mark	_	_
+34	búa	búa	VERB	VB	VerbForm=Inf	32	xcomp	_	_
+35	á	á	ADP	P	_	36	case	_	_
+36	Íslandi	ísland	PROPN	NPR-D	_	34	obl	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	22	punct	_	_
+
+# sent_id = G-33-4715181,.9
+# X_ID = ID_MISSING
+# text = Maður býr við verðbólgu,
 1	Maður	maður	PRON	MAN-N	_	2	nsubj	_	_
 2	býr	búa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	við	við	ADP	P	_	4	case	_	_
 4	verðbólgu	verðbólga	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
-6	maður	maður	PRON	MAN-N	_	9	nsubj	_	_
-7	einhvern	einhver	DET	Q-A	Case=Acc	8	amod	_	_
-8	veginn	vegur	ADV	N-A	Case=Acc|Definite=Ind|Number=Sing	9	advmod	_	_
-9	venst	venda	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
-10	því	það	PRON	PRO-D	Case=Dat	9	obj	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	2	punct	_	_
+5	,	,	PUNCT	,	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.6
-# X_ID = ID_missing_11
-# text = Svo missir þjóðin verðskynið í þokkabót sem ég held að hjálpi ekki mjög mikið.
+# sent_id = G-33-4715181,.10
+# X_ID = ID_MISSING
+# text = maður einhvern veginn venst því .
+1	maður	maður	PRON	MAN-N	_	4	nsubj	_	_
+2	einhvern	einhver	DET	Q-A	Case=Acc	3	amod	_	_
+3	veginn	vegur	ADV	N-A	Case=Acc|Definite=Ind|Number=Sing	4	advmod	_	_
+4	venst	venda	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	því	það	PRON	PRO-D	Case=Dat	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = G-33-4715181,.11
+# X_ID = ID_MISSING
+# text = Svo missir þjóðin verðskynið í þokkabót sem ég held að hjálpi ekki mjög mikið .
 1	Svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	missir	missa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þjóðin	þjóð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
@@ -180,9 +200,9 @@
 14	mikið	mikill	DET	Q-N	Case=Nom	11	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.7
-# X_ID = ID_missing_12
-# text = Góð vinkona mín spurði um daginn: Hvers vegna er alltaf svona mikil verðbólga hérna?
+# sent_id = G-33-4715181,.12
+# X_ID = ID_MISSING
+# text = Góð vinkona mín spurði um daginn : Hvers vegna er alltaf svona mikil verðbólga hérna ?
 1	Góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	vinkona	vinkona	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	mín	minn	PRON	PRO-N	Case=Nom	2	nmod:poss	_	_
@@ -200,34 +220,34 @@
 15	hérna	hérna	ADV	ADV	Degree=Pos	10	advmod	_	SpaceAfter=No
 16	?	?	PUNCT	.	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.8
-# X_ID = ID_missing_13
-# text = Hvað er málið?
+# sent_id = G-33-4715181,.13
+# X_ID = ID_MISSING
+# text = Hvað er málið ?
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	er	vera	VERB	BEPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	SpaceAfter=No
 4	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.9
-# X_ID = ID_missing_14
-# text = Hvaðan kemur þetta?
+# sent_id = G-33-4715181,.14
+# X_ID = ID_MISSING
+# text = Hvaðan kemur þetta ?
 1	Hvaðan	hvaðan	ADV	WADV	Degree=Pos	2	advmod	_	_
 2	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	SpaceAfter=No
 4	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.10
-# X_ID = ID_missing_15
-# text = Eru þetta gömlu gengisfellingarnar?
+# sent_id = G-33-4715181,.15
+# X_ID = ID_MISSING
+# text = Eru þetta gömlu gengisfellingarnar ?
 1	Eru	vera	VERB	BEPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	þetta	þessi	DET	D-N	Case=Nom	1	nsubj	_	_
 3	gömlu	gamall	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
 4	gengisfellingarnar	gengisfelling	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	1	xcomp	_	SpaceAfter=No
 5	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.11
-# X_ID = ID_missing_16
-# text = Er það bara þetta hrun?
+# sent_id = G-33-4715181,.16
+# X_ID = ID_MISSING
+# text = Er það bara þetta hrun ?
 1	Er	vera	VERB	BEPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	það	það	PRON	PRO-N	Case=Nom	1	nsubj	_	_
 3	bara	bara	ADV	FP	Degree=Pos	1	advmod	_	_
@@ -235,9 +255,9 @@
 5	hrun	hrun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	xcomp	_	SpaceAfter=No
 6	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.12
-# X_ID = ID_missing_17
-# text = Vissulega var það ekki bara þetta hrun.
+# sent_id = G-33-4715181,.17
+# X_ID = ID_MISSING
+# text = Vissulega var það ekki bara þetta hrun .
 1	Vissulega	vissulega	ADV	ADV	Degree=Pos	7	advmod	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
 3	það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
@@ -247,25 +267,29 @@
 7	hrun	hrun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.13
-# X_IDs = ID_missing_18 ; ID_missing_19
-# text = Ég velti þessu svolítið fyrir mér og gaf þessar klassísku útskýringar.
+# sent_id = G-33-4715181,.18
+# X_ID = ID_MISSING
+# text = Ég velti þessu svolítið fyrir mér
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	þessu	þessi	DET	D-D	Case=Dat	2	obj	_	_
 4	svolítið	svolítið	ADV	ADV	Degree=Pos	2	advmod	_	_
 5	fyrir	fyrir	ADP	P	_	6	case	_	_
 6	mér	ég	PRON	PRO-D	Case=Dat	2	obl	_	_
-7	og	og	CCONJ	CONJ	_	8	cc	_	_
-8	gaf	gefa	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
-9	þessar	þessi	DET	D-A	Case=Acc	11	det	_	_
-10	klassísku	klassískur	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	amod	_	_
-11	útskýringar	útskýring	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obj	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.14
-# X_ID = ID_missing_20
-# text = Kenndi þjóðinni aðeins um að hafa ekkert verðskyn og vera mjög agalaus þegar kemur að því að velja og hafna, ekki bara hvort eigi að kaupa heldur hvar og hvers vegna.
+# sent_id = G-33-4715181,.19
+# X_ID = ID_MISSING
+# text = og gaf þessar klassísku útskýringar .
+1	og	og	CCONJ	CONJ	_	2	cc	_	_
+2	gaf	gefa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
+3	þessar	þessi	DET	D-A	Case=Acc	5	det	_	_
+4	klassísku	klassískur	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
+5	útskýringar	útskýring	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4715181,.20
+# X_ID = ID_MISSING
+# text = Kenndi þjóðinni aðeins um að hafa ekkert verðskyn og vera mjög agalaus þegar kemur að því að velja og hafna, ekki bara hvort eigi að kaupa heldur hvar og hvers vegna .
 1	Kenndi	kenna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 2	þjóðinni	þjóð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obj	_	_
 3	aðeins	aðeins	ADV	ADV	Degree=Pos	1	advmod	_	_
@@ -300,9 +324,9 @@
 32	vegna	vegna	ADP	P	_	31	case	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.15
-# X_ID = ID_missing_21
-# text = Við þorum ekki að segja nei þegar okkur blöskrar verðið o.s.frv.; fullt af svona alls konar þáttum.
+# sent_id = G-33-4715181,.21
+# X_ID = ID_MISSING
+# text = Við þorum ekki að segja nei þegar okkur blöskrar verðið o.s.frv. ; fullt af svona alls konar þáttum .
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þorum	þora	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -325,9 +349,9 @@
 20	þáttum	þáttur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.16
-# X_IDs = ID_missing_22 ; ID_missing_23 ; ID_missing_24
-# text = En það er sama hvað ég reyni að útskýra þetta, einhvern veginn finnst mér ég aldrei hafa komist að niðurstöðu, mér finnst ég aldrei hafa svarið.
+# sent_id = G-33-4715181,.22
+# X_ID = ID_MISSING
+# text = En það er sama hvað ég reyni að útskýra þetta,
 1	En	en	CCONJ	CONJ	_	4	cc	_	_
 2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -338,29 +362,37 @@
 8	að	að	PART	TO	_	9	mark	_	_
 9	útskýra	útskýra	VERB	VB	VerbForm=Inf	7	xcomp	_	_
 10	þetta	þessi	DET	D-A	Case=Acc	9	obj	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	9	punct	_	_
-12	einhvern	einhver	DET	Q-A	Case=Acc	13	amod	_	_
-13	veginn	vegur	ADV	N-A	Case=Acc|Definite=Ind|Number=Sing	14	advmod	_	_
-14	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-15	mér	ég	PRON	PRO-D	Case=Dat	14	nsubj	_	_
-16	ég	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-17	aldrei	aldrei	ADV	ADV	Degree=Pos	19	advmod	_	_
-18	hafa	hafa	AUX	HV	VerbForm=Inf	19	aux	_	_
-19	komist	koma	VERB	VBN	Tense=Past|VerbForm=Part	14	xcomp	_	_
-20	að	að	ADP	P	_	21	case	_	_
-21	niðurstöðu	niðurstaða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	19	punct	_	_
-23	mér	ég	PRON	PRO-D	Case=Dat	24	nsubj	_	_
-24	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
-25	ég	ég	PRON	PRO-N	Case=Nom	28	nsubj	_	_
-26	aldrei	aldrei	ADV	ADV	Degree=Pos	28	advmod	_	_
-27	hafa	hafa	AUX	HV	VerbForm=Inf	28	aux	_	_
-28	svarið	svar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	xcomp	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	4	punct	_	_
+11	,	,	PUNCT	,	_	4	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.17
-# X_ID = ID_missing_25
-# text = Ég velti fyrir mér hvort hv. þingmaður hafi einhverjar hugmyndir, einhvern fróðleik, um það annaðhvort hvaðan verðbólgan komi eða hvernig við getum stöðvað hana í því að verða til, því hún gengur ekki með klassískri aðferð.
+# sent_id = G-33-4715181,.23
+# X_ID = ID_MISSING
+# text = einhvern veginn finnst mér ég aldrei hafa komist að niðurstöðu,
+1	einhvern	einhver	DET	Q-A	Case=Acc	2	amod	_	_
+2	veginn	vegur	ADV	N-A	Case=Acc|Definite=Ind|Number=Sing	3	advmod	_	_
+3	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+4	mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
+5	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+6	aldrei	aldrei	ADV	ADV	Degree=Pos	8	advmod	_	_
+7	hafa	hafa	AUX	HV	VerbForm=Inf	8	aux	_	_
+8	komist	koma	VERB	VBN	Tense=Past|VerbForm=Part	3	xcomp	_	_
+9	að	að	ADP	P	_	10	case	_	_
+10	niðurstöðu	niðurstaða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	3	punct	_	_
+
+# sent_id = G-33-4715181,.24
+# X_ID = ID_MISSING
+# text = mér finnst ég aldrei hafa svarið .
+1	mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
+2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+4	aldrei	aldrei	ADV	ADV	Degree=Pos	6	advmod	_	_
+5	hafa	hafa	AUX	HV	VerbForm=Inf	6	aux	_	_
+6	svarið	svar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = G-33-4715181,.25
+# X_ID = ID_MISSING
+# text = Ég velti fyrir mér hvort hv. þingmaður hafi einhverjar hugmyndir, einhvern fróðleik, um það annaðhvort hvaðan verðbólgan komi eða hvernig við getum stöðvað hana í því að verða til, því hún gengur ekki með klassískri aðferð .
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -402,19 +434,20 @@
 39	aðferð	aðferð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	35	obl	_	SpaceAfter=No
 40	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = ALTHINGI_HHG_2013_G-33-4715181,.18
-# X_IDs = ID_missing_26 ; ID_missing_27
-# text = Hún bara mun ekki ganga, það verður hávaxtastefna og leiðindi.
+# sent_id = G-33-4715181,.26
+# X_ID = ID_MISSING
+# text = Hún bara mun ekki ganga,
 1	Hún	hún	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	bara	bara	ADV	FP	Degree=Pos	5	advmod	_	_
 3	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
 4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
 5	ganga	ganga	VERB	VB	VerbForm=Inf	0	root	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	5	punct	_	_
-7	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	8	expl	_	_
-8	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
-9	hávaxtastefna	hávaxtastefna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	obl	_	_
-10	og	og	CCONJ	CONJ	_	11	cc	_	_
-11	leiðindi	leiðindi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	conj	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	5	punct	_	_
+
+1	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
+2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
+3	hávaxtastefna	hávaxtastefna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	obl	_	_
+4	og	og	CCONJ	CONJ	_	5	cc	_	_
+5	leiðindi	leiðindi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	conj	_	_
+6	.	.	PUNCT	.	_	2	punct	_	_
 
