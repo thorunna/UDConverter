@@ -240,7 +240,7 @@ class ICE_Features:
     def _pronoun_features(self, tag):
         if "-" in tag:
             case = tag.split("-")[1]
-            if case not in {"1", "2", "3", "4", "5", "6", "TTT"}:
+            if case not in {"1", "2", "3", "4", "5", "6", "TTT", "WPRO", "CASE"}:
                 try:
                     self.features["Case"] = Icepahc_feats["Case"][case]
                 except KeyError:
@@ -254,8 +254,10 @@ class ICE_Features:
 
     def _determiner_features(self, tag):
         if "-" in tag:
-            tag, case = tag.split("-")
-            if case != "ADV":
+            tag, case = tag.split("-", 1)
+            if "-" in case:
+                case = case.split("-")[1]
+            if case not in {"ADV", "NSNSP", "MSA"}:
                 self.features["Case"] = Icepahc_feats["Case"][case]
             # if tag == "D":
             #    self.features["PronType"] = "Art"
@@ -324,7 +326,7 @@ class ICE_Features:
         if "-" in tag:
             case = tag.split("-")[1]
             tag = tag.split("-")[0]
-            if case not in {"1", "2", "3", "5", "10", "XXX"}:
+            if case not in {"1", "2", "3", "5", "10", "XXX", "Q"}:
                 try:
                     self.features["Case"] = Icepahc_feats["ADV"]["Case"][case]
                 except KeyError:
@@ -339,7 +341,7 @@ class ICE_Features:
             else:
                 self.features["Degree"] = Icepahc_feats["ADV"]["Degree"]["P"]
         else:
-            if len(tag) > 3 and tag not in {"ALSO", "WADV"}:
+            if len(tag) > 3 and tag not in {"ALSO", "WADV", "WADVP"}:
                 try:
                     self.features["Degree"] = Icepahc_feats["ADV"]["Degree"][tag[3]]
                 except KeyError:

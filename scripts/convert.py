@@ -152,9 +152,22 @@ def main():
                 if args.output
                 else None
             )
-            output_path = (
-                os.path.join("../CoNLLU", output_file) if output_file else None
-            )
+
+            if args.additions:
+                middle_path = input_path.split("../corpora/additions2019/psd/")[1]
+                output_file = re.sub(r"\.psd", ".conllu", middle_path)
+                output_path = (
+                    os.path.join("../CoNLLU/additions2019/", output_file)
+                    if output_file
+                    else None
+                )
+            else:
+                output_path = (
+                    os.path.join("../CoNLLU/icepahc/", output_file)
+                    if output_file
+                    else None
+                )
+
             file_id = re.sub(r"\.psd", "", os.path.basename(input_path))
 
             with open(input_path) if input_path else stdin as infile, open(
