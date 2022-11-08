@@ -15,7 +15,7 @@
 1	Fyrst	snemmt	ADV	ADVS	Degree=Sup	6	advmod	_	_
 2	aðeins	aðeins	ADV	ADV	Degree=Pos	6	advmod	_	_
 3	með	með	ADP	P	_	6	case	_	_
-4	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	6	det	_	_
+4	þessa	þessi	DET	D-A	Case=Acc	6	det	_	_
 5	fallegu	fallegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	6	amod	_	_
 6	hugmyndafræði	hugmyndafræði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	6	punct	_	_
@@ -40,7 +40,7 @@
 15	einmitt	einmitt	ADV	ADV	Degree=Pos	17	advmod	_	_
 16	að	að	PART	TO	_	17	mark	_	_
 17	gagnrýna	gagnrýna	VERB	VB	VerbForm=Inf	11	ccomp	_	_
-18	þessa	þessi	DET	D-A	Case=Acc|PronType=Art	19	det	_	_
+18	þessa	þessi	DET	D-A	Case=Acc	19	det	_	_
 19	hugmyndafræði	hugmyndafræði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
 20	þó	þó	ADP	P	_	23	mark	_	_
 21	að	að	SCONJ	C	_	20	fixed	_	_
@@ -153,7 +153,7 @@
 1	Einmitt	einmitt	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	út	út	ADP	RP	_	4	case	_	_
 3	af	af	ADP	P	_	2	fixed	_	_
-4	þessu	þessi	DET	D-D	Case=Dat|PronType=Art	0	root	_	SpaceAfter=No
+4	þessu	þessi	DET	D-D	Case=Dat	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4598544,.10
@@ -222,13 +222,13 @@
 16	lög	lag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obj	_	SpaceAfter=No
 17	,	,	PUNCT	,	_	16	punct	_	_
 18	og	og	CCONJ	CONJ	_	21	cc	_	_
-19	þessar	þessi	DET	D-N	Case=Nom|PronType=Art	20	det	_	_
+19	þessar	þessi	DET	D-N	Case=Nom	20	det	_	_
 20	skuldir	skuld	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	21	nsubj	_	_
 21	liggja	liggja	VERB	VBPI	Mood=Ind|Tense=Pres	15	parataxis	_	_
 22	þarna	þarna	ADV	ADV	Degree=Pos	21	advmod	_	_
 23	undir	undir	ADV	ADV	Degree=Pos	22	advmod	_	_
 24	og	og	CCONJ	CONJ	_	26	cc	_	_
-25	þessi	þessi	DET	D-N	Case=Nom|PronType=Art	26	det	_	_
+25	þessi	þessi	DET	D-N	Case=Nom	26	det	_	_
 26	gjöld	gjald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	21	conj	_	SpaceAfter=No
 27	,	,	PUNCT	,	_	26	punct	_	_
 28	að	að	SCONJ	C	_	30	mark	_	_

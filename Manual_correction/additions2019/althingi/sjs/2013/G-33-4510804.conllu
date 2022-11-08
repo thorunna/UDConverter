@@ -114,8 +114,8 @@
 3	oft	oft	ADV	ADV	_	4	advmod	_	IFD_tag=aa
 4	mikil	mikill	ADJ	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	0	root	_	IFD_tag=lvensf
 5	þegar	þegar	ADP	P	_	6	mark	_	IFD_tag=c
-6	komast	koma	VERB	VB-1	VerbForm=Inf|Voice=Mid	4	obl	_	IFD_tag=snm
-7	á	eiga	AUX	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	IFD_tag=sfg3en
+6	komast	koma	VERB	VB-1	VerbForm=Inf|Voice=Mid	7	xcomp	_	IFD_tag=snm
+7	á	eiga	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	advcl	_	IFD_tag=sfg3en
 8	áfram	áfram	ADV	ADV	_	6	advmod	_	IFD_tag=aa
 9	með	með	ADP	P	_	11	case	_	IFD_tag=ao
 10	framsækna	framsækinn	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	11	amod	_	IFD_tag=lveosf
@@ -366,16 +366,16 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4510804,.11
 # X_ID = ID_missing_12
 # text = Það var hvort leyfa ætti akstur í gegnum Vonarskarð.
-1	Það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	4	nsubj	_	IFD_tag=fphen
-2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3eþ
-3	hvort	hvort	SCONJ	WQ	_	4	mark	_	IFD_tag=c
-4	leyfa	leyfa	VERB	VB-1	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
-5	ætti	eiga	AUX	VBDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	IFD_tag=svg3eþ
+1	Það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	5	nsubj	_	IFD_tag=fphen
+2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3eþ
+3	hvort	hvort	SCONJ	WQ	_	5	mark	_	IFD_tag=c
+4	leyfa	leyfa	VERB	VB-1	VerbForm=Inf|Voice=Act	5	xcomp	_	IFD_tag=sng
+5	ætti	eiga	VERB	VBDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=svg3eþ
 6	akstur	akstur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	4	obj	_	IFD_tag=nkeo
 7	í	í	ADP	P	_	9	case	_	IFD_tag=aa
 8	gegnum	gegnum	ADP	P	_	9	case	_	IFD_tag=ao
 9	Vonarskarð	vonarskarð	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	6	obl	_	IFD_tag=nheo-s|SpaceAfter=No
-10	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
+10	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4510804,.12
 # X_ID = ID_missing_13

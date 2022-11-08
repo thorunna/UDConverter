@@ -57,7 +57,7 @@
 4	ekki	ekki	ADV	NEG	_	10	advmod	_	_
 5	eins	_	ADV	ADVR	Degree=Cmp	10	mark	_	_
 6	og	_	ADP	P	_	5	fixed	_	_
-7	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	10	nsubj	_	_
+7	þetta	þessi	DET	D-N	Case=Nom	10	nsubj	_	_
 8	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	10	cop	_	_
 9	einsleit	einsleitur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	_
 10	mynd	mynd	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
@@ -175,7 +175,7 @@
 # sent_id = ALTHINGI_BO_2014_G-33-4521344,.10
 # X_IDs = ID_MISSING ; ID_MISSING
 # text = Það sem ég held að Evrópusambandið geti hjálpað okkur með er að ná stöðugleika og eins og ég talaði um í ræðu minni tel ég að pólitískur stöðugleiki og fjárhagslegur stöðugleiki haldist algerlega í hendur.
-1	Það	sá	DET	D-N	Case=Nom|PronType=Art	13	expl	_	_
+1	Það	sá	DET	D-N	Case=Nom	13	expl	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 4	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
@@ -248,7 +248,7 @@
 6	ræðu	ræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
 7	minni	minn	PRON	PRO-D	Case=Dat	6	nmod:poss	_	_
 8	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-9	þetta	þessi	DET	D-N	Case=Nom|PronType=Art	8	nsubj	_	_
+9	þetta	þessi	DET	D-N	Case=Nom	8	nsubj	_	_
 10	alltaf	alltaf	ADV	ADV	Degree=Pos	8	advmod	_	_
 11	spekúlatíft	spekúlatífur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
 12	og	og	CCONJ	CONJ	_	16	cc	_	_
@@ -306,8 +306,8 @@
 27	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	_
 28	að	að	SCONJ	C	_	31	mark	_	_
 29	við	ég	PRON	PRO-N	Case=Nom	31	nsubj	_	_
-30	eigum	eiga	AUX	VBPS	Mood=Sub|Tense=Pres	31	aux	_	_
-31	vinna	vinna	VERB	VB	VerbForm=Inf	27	ccomp	_	_
+30	eigum	eiga	VERB	VBPS	Mood=Sub|Tense=Pres	27	ccomp	_	_
+31	vinna	vinna	VERB	VB	VerbForm=Inf	30	xcomp	_	_
 32	jafnt	jafnt	ADV	ADV	Degree=Pos	31	advmod	_	_
 33	að	að	ADP	P	_	34	case	_	_
 34	því	það	PRON	PRO-D	Case=Dat	31	obl:arg	_	_
