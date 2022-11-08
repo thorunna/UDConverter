@@ -70,7 +70,7 @@
 31	í	í	ADV	ADV	_	29	advmod	_	IFD_tag=aa|SpaceAfter=No
 32	:	:	PUNCT	,	_	34	punct	_	IFD_tag=:
 33	Lögum	lög	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	34	nsubj	_	IFD_tag=nhfþ
-34	breytt	breyta	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	9	conj	_	IFD_tag=sþghen|SpaceAfter=No
+34	breytt	breyta	VERB	VAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	5	conj	_	IFD_tag=sþghen|SpaceAfter=No
 35	.	.	PUNCT	.	_	5	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_SJS_2013_G-33-4496710,.6
@@ -97,7 +97,7 @@
 6	hyggja	hyggja	VERB	VB	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
 7	þar	þar	ADV	ADV	_	6	advmod	_	IFD_tag=aa|SpaceAfter=No
 8	,	,	PUNCT	,	_	11	punct	_	IFD_tag=,
-9	m.a.	m.a.	X	as	_	11	advmod	_	IFD_tag=as
+9	m.a.	m.a.	ADV	as	_	11	advmod	_	IFD_tag=as
 10	að	að	PART	TO	_	11	mark	_	IFD_tag=cn
 11	bjarga	bjarga	VERB	VB	VerbForm=Inf|Voice=Act	6	xcomp	_	IFD_tag=sng
 12	honum	hann	PRON	PRO-D	Case=Dat|Gender=Masc|Number=Sing|PronType=Prs	11	obj	_	IFD_tag=fpkeþ
@@ -139,8 +139,8 @@
 # text = Það er því ekki eins og Íbúðalánasjóður hafi gleymst á þeim tíma.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	9	expl	_	IFD_tag=fphen
 2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	IFD_tag=sfg3en
-3	því	það	PRON	PRO-D	_	9	mark	_	IFD_tag=aa
-4	ekki	ekki	ADV	NEG	_	9	mark	_	IFD_tag=aa
+3	því	það	ADV	PRO-D	_	9	advmod	_	IFD_tag=aa
+4	ekki	ekki	ADV	NEG	_	9	advmod	_	IFD_tag=aa
 5	eins	_	ADV	ADVR	_	9	mark	_	IFD_tag=x
 6	og	_	ADP	P	_	5	fixed	_	IFD_tag=x
 7	Íbúðalánasjóður	íbúðalánasjóður	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	9	nsubj	_	IFD_tag=nken-s

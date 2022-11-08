@@ -14,12 +14,12 @@
 # sent_id = ALTHINGI_BO_2014_G-33-4608528,.2
 # X_IDs = ID_MISSING ; ID_MISSING ; ID_MISSING
 # text = Varðandi rafrænu sjúkraskrána mætti auðvitað flokka hana sem fjarheilbrigðisþjónustu en kannski fyrst og fremst styður þetta hvert annað, þetta yrði þá samþætt þjónusta sem allir fagaðilar geta nýtt sér til heilla fyrir þann sem verið er að þjónusta.
-1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	6	advmod	_	_
+1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	0	root	_	_
 2	rafrænu	rafrænn	ADJ	ADJ-A	Case=Acc|Degree=Pos	3	amod	_	_
 3	sjúkraskrána	sjúkraskrá	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
 4	mætti	mega	AUX	MDDS	Mood=Sub|Tense=Past	6	aux	_	_
 5	auðvitað	auðvitað	ADV	ADV	Degree=Pos	6	advmod	_	_
-6	flokka	flokka	VERB	VB	VerbForm=Inf	0	root	_	_
+6	flokka	flokka	VERB	VB	VerbForm=Inf	1	xcomp	_	_
 7	hana	hún	PRON	PRO-A	Case=Acc	6	obj	_	_
 8	sem	sem	SCONJ	C	_	9	mark	_	_
 9	fjarheilbrigðisþjónustu	fjarheilbrigðisþjóinn	ADJ	ADJS-A	Case=Acc|Degree=Sup	6	advmod	_	_
@@ -49,11 +49,11 @@
 33	fyrir	fyrir	ADP	P	_	34	case	_	_
 34	þann	sá	DET	D-A	Case=Acc|PronType=Art	32	obl	_	_
 35	sem	sem	SCONJ	C	_	39	mark	_	_
-36	verið	vera	VERB	BAN	Tense=Past|VerbForm=Part	39	aux	_	_
-37	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	39	cop	_	_
+36	verið	vera	VERB	BAN	Tense=Past|VerbForm=Part	34	acl:relcl	_	_
+37	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	36	cop	_	_
 38	að	að	PART	TO	_	39	mark	_	_
-39	þjónusta	þjónusta	VERB	VB	VerbForm=Inf	34	acl:relcl	_	SpaceAfter=No
-40	.	.	PUNCT	.	_	6	punct	_	_
+39	þjónusta	þjónusta	VERB	VB	VerbForm=Inf	36	xcomp	_	SpaceAfter=No
+40	.	.	PUNCT	.	_	1	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4608528,.3
 # X_ID = ID_MISSING
@@ -63,7 +63,7 @@
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	mikið	mikill	DET	Q-A	Case=Acc|Degree=Pos	2	amod	_	_
 5	saman	saman	ADV	ADV	Degree=Pos	2	compound:prt	_	SpaceAfter=No
-6	.	.	PUNCT	.	_	2	parataxis	_	_
+6	.	.	PUNCT	.	_	2	punct	_	_
 
 # sent_id = ALTHINGI_BO_2014_G-33-4608528,.4
 # X_ID = ID_MISSING

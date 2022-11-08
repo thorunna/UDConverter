@@ -52,9 +52,9 @@
 7	þá	þá	ADV	ADV	_	3	advmod	_	IFD_tag=aa
 8	væri	vera	AUX	BEDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	cop	_	IFD_tag=svg3eþ
 9	það	það	PRON	PRO-N	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	14	nsubj	_	IFD_tag=faheo
-10	um	um	ADP	P	_	12	case	_	IFD_tag=ao
-11	það	sá	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	12	det	_	IFD_tag=faheo
-12	bil	bil	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	14	advmod	_	IFD_tag=nheo
+10	um	um	ADV	P	_	14	advmod	_	IFD_tag=ao
+11	það	sá	DET	D-A	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	10	fixed	_	IFD_tag=faheo
+12	bil	bil	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	10	fixed	_	IFD_tag=nheo
 13	það	sá	DET	D-N	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	14	det	_	IFD_tag=faheo
 14	síðasta	síðari	ADJ	ADJS-N	Case=Nom|Definite=Def|Degree=Sup|Gender=Neut|Number=Sing	3	xcomp	_	IFD_tag=lhenve
 15	undir	undir	ADP	P	_	16	case	_	IFD_tag=aþ
@@ -109,8 +109,8 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4500290,.4
 # X_ID = ID_missing_4
 # text = Hvers vegna ættum við þá að láta það frá okkur?
-1	Hvers	hver	PRON	WPRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Int	3	advmod	_	IFD_tag=fshee
-2	vegna	vegna	ADP	P	_	1	case	_	IFD_tag=ae
+1	Hvers	hver	ADV	WPRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Int	3	advmod	_	IFD_tag=fshee
+2	vegna	vegna	ADP	P	_	1	fixed	_	IFD_tag=ae
 3	ættum	eiga	VERB	VBDS	Mood=Sub|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=svg1fþ
 4	við	ég	PRON	PRO-N	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	IFD_tag=fp1fn
 5	þá	þá	ADV	ADV	_	3	advmod	_	IFD_tag=aa
@@ -186,8 +186,8 @@
 # X_ID = ID_missing_9
 # text = En hvers vegna er það?
 1	En	en	CCONJ	CONJ	_	5	cc	_	IFD_tag=c
-2	hvers	hver	PRON	WPRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Int	5	advmod	_	IFD_tag=fshee
-3	vegna	vegna	ADP	P	_	2	case	_	IFD_tag=ae
+2	hvers	hver	ADV	WPRO-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Int	5	advmod	_	IFD_tag=fshee
+3	vegna	vegna	ADP	P	_	2	fixed	_	IFD_tag=ae
 4	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3en
 5	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	0	root	_	IFD_tag=fphen|SpaceAfter=No
 6	?	?	PUNCT	.	_	5	punct	_	IFD_tag=?
@@ -311,7 +311,7 @@
 17	ár	ár	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	16	obl	_	IFD_tag=nheo
 18	eftir	eftir	ADP	P	_	19	case	_	IFD_tag=ao
 19	ár	ár	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	17	obl	_	IFD_tag=nheo
-20	út	út	ADP	RP	_	21	compound:prt	_	IFD_tag=aa
+20	út	út	ADP	RP	_	16	compound:prt	_	IFD_tag=aa
 21	úr	úr	ADP	P	_	23	case	_	IFD_tag=aþ
 22	einni	einn	DET	ONE-D	Case=Dat|Gender=Fem|Number=Sing|PronType=Ind	23	det	_	IFD_tag=foveþ
 23	atvinnugrein	atvinnugrein	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	16	obl:arg	_	IFD_tag=nveþ

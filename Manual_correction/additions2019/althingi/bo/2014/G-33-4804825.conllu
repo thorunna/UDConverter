@@ -242,11 +242,11 @@
 # X_IDs = ID_missing_11 ; ID_missing_12
 # text = Önnur leið hefði verið að hætta og draga úr þessu verkefni en það varð ekki niðurstaðan.
 1	Önnur	annar	PRON	OTHER-N	Case=Nom|Gender=Fem|Number=Sing|PronType=Ind	2	det	_	IFD_tag=foven
-2	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	3	nsubj	_	IFD_tag=nven
-3	hefði	hafa	VERB	HVDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=svg3eþ
-4	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	3	cop	_	IFD_tag=ssg
+2	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	6	nsubj	_	IFD_tag=nven
+3	hefði	hafa	AUX	HVDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	IFD_tag=svg3eþ
+4	verið	vera	AUX	BEN	VerbForm=Sup|Voice=Act	6	cop	_	IFD_tag=ssg
 5	að	að	PART	TO	_	6	mark	_	IFD_tag=c
-6	hætta	hætta	VERB	VB	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	3	csubj	_	IFD_tag=nven
+6	hætta	hætta	VERB	VB	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	0	root	_	IFD_tag=nven
 7	og	og	CCONJ	CONJ	_	8	cc	_	IFD_tag=c
 8	draga	draga	VERB	VB	VerbForm=Inf|Voice=Act	6	conj	_	IFD_tag=sng
 9	úr	úr	ADP	P	_	11	case	_	IFD_tag=aþ
@@ -254,10 +254,10 @@
 11	verkefni	verkefni	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	8	obl	_	IFD_tag=nheþ
 12	en	en	CCONJ	CONJ	_	14	cc	_	IFD_tag=c
 13	það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	14	nsubj	_	IFD_tag=fphen
-14	varð	verða	VERB	RDDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
+14	varð	verða	VERB	RDDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	OriginalHead=0
 15	ekki	ekki	ADV	NEG	_	14	advmod	_	IFD_tag=aa
 16	niðurstaðan	niðurstaða	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	14	xcomp	_	IFD_tag=nveng|SpaceAfter=No
-17	.	.	PUNCT	.	_	3	punct	_	IFD_tag=.
+17	.	.	PUNCT	.	_	6	punct	_	IFD_tag=.
 
 # sent_id = ALTHINGI_BO_2014_G-33-4804825,.11
 # X_IDs = ID_missing_13 ; ID_missing_14
