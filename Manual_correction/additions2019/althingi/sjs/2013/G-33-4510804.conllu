@@ -56,7 +56,7 @@
 10	ágreining	ágreiningur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	8	conj	_	IFD_tag=nkeo
 11	sem	sem	SCONJ	C	_	12	mark	_	IFD_tag=ct
 12	rís	rísa	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	acl:relcl	_	IFD_tag=sfg3en
-13	þegar	þegar	ADP	P	_	17	advmod	_	IFD_tag=c
+13	þegar	þegar	SCONJ	P	_	17	mark	_	IFD_tag=c
 14	verið	vera	AUX	BAN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	17	aux	_	IFD_tag=sþghen
 15	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	IFD_tag=sfg3en
 16	að	að	PART	TO	_	17	mark	_	IFD_tag=cn
@@ -115,7 +115,7 @@
 4	mikil	mikill	ADJ	Q-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	0	root	_	IFD_tag=lvensf
 5	þegar	þegar	ADP	P	_	6	mark	_	IFD_tag=c
 6	komast	koma	VERB	VB-1	VerbForm=Inf|Voice=Mid	4	obl	_	IFD_tag=snm
-7	á	eiga	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	IFD_tag=sfg3en
+7	á	eiga	AUX	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	IFD_tag=sfg3en
 8	áfram	áfram	ADV	ADV	_	6	advmod	_	IFD_tag=aa
 9	með	með	ADP	P	_	11	case	_	IFD_tag=ao
 10	framsækna	framsækinn	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing	11	amod	_	IFD_tag=lveosf
@@ -130,7 +130,7 @@
 # text = Varðandi andstöðuupptalningu þá hina miklu sem hér kom fram í ræðu ráðherrans nei, ræðu hv. þingmanns, tilvonandi ráðherra hugsanlega einhvern tímann síðar á öldinni, þá bið ég hv. þingmann aðeins að gæta sín.
 1	Varðandi	varða	VERB	VAG	VerbForm=Part|Voice=Act	29	xcomp	_	IFD_tag=slg
 2	andstöðuupptalningu	andstöðuupptalning	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	1	obj	_	IFD_tag=nveo
-3	þá	sá	DET	D-A	_	5	mark	_	IFD_tag=aa
+3	þá	sá	DET	D-A	_	2	det	_	IFD_tag=aa
 4	hina	hinn	DET	D-A	Case=Acc|Gender=Fem|Number=Sing	5	det	_	IFD_tag=gveo
 5	miklu	mikill	DET	Q-A	Case=Dat|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	IFD_tag=lheþsf
 6	sem	sem	SCONJ	C	_	8	mark	_	IFD_tag=ct
@@ -229,8 +229,8 @@
 31	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	37	expl	_	IFD_tag=fphen
 32	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	37	cop	_	IFD_tag=sfg3eþ
 33	kannski	kannski	ADV	ADV	_	37	advmod	_	IFD_tag=aa
-34	eitt	einn	DET	ONE-N	Case=Nom|Gender=Neut|Number=Sing|NumType=Card	37	nummod	_	IFD_tag=tfhen
-35	einasta	einasti	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	37	nummod	_	IFD_tag=lhenvf
+34	eitt	einn	NUM	ONE-N	Case=Nom|Gender=Neut|Number=Sing|NumType=Card	37	nummod	_	IFD_tag=tfhen
+35	einasta	einasti	ADJ	ADJ-N	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	37	amod	_	IFD_tag=lhenvf
 36	efnislegt	efnislegur	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	37	amod	_	IFD_tag=lhensf
 37	atriði	atriði	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	18	xcomp	_	IFD_tag=nhen
 38	sem	sem	SCONJ	C	_	40	mark	_	IFD_tag=c
@@ -244,7 +244,7 @@
 46	,	,	PUNCT	,	_	50	punct	_	IFD_tag=,
 47	ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	50	nsubj	_	IFD_tag=fp1en
 48	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	50	cop	_	IFD_tag=sfg3en
-49	ekki	ekki	ADV	NEG	_	50	appos	_	IFD_tag=aa
+49	ekki	ekki	ADV	NEG	_	50	advmod	_	IFD_tag=aa
 50	viss	viss	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	43	parataxis	_	IFD_tag=lkensf
 51	um	um	ADP	P	_	55	case	_	IFD_tag=ao
 52	að	að	SCONJ	C	_	55	mark	_	IFD_tag=c
@@ -292,7 +292,7 @@
 22	öllu	allur	DET	Q-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Ind	23	amod	_	IFD_tag=foheþ
 23	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	14	obl	_	IFD_tag=nheþ
 24	nema	nema	ADP	P	_	28	mark	_	IFD_tag=c
-25	einu	einn	DET	ONE-D	Case=Dat|Gender=Neut|Number=Sing|NumType=Card	28	nummod	_	IFD_tag=tfheþ
+25	einu	einn	NUM	ONE-D	Case=Dat|Gender=Neut|Number=Sing|NumType=Card	28	nummod	_	IFD_tag=tfheþ
 26	eða	eða	CCONJ	CONJ	_	27	cc	_	IFD_tag=c
 27	tveimur	tveir	NUM	NUM-D	Case=Dat|Gender=Neut|Number=Plur|NumType=Card	25	nummod	_	IFD_tag=tfhfþ
 28	atriðum	atriði	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	23	obl	_	IFD_tag=nhfþ|SpaceAfter=No
@@ -311,7 +311,7 @@
 # sent_id = ALTHINGI_SJS_2013_G-33-4510804,.10
 # X_ID = ID_missing_11
 # text = Þegar maður var búinn að fara yfir það og búið var að eyða þeim misskilningi að það ætti að fara að hefta ferðafrelsi fatlaðra eða loka akstursleiðum sem væru raunverulegir vegir í stórum stíl, stóð eftir ágreiningur um eitt atriði við einn af þessum aðilum sem ég ræddi við.
-1	Þegar	þegar	ADP	P	_	4	advmod	_	IFD_tag=c
+1	Þegar	þegar	SCONJ	P	_	4	mark	_	IFD_tag=c
 2	maður	maður	PRON	MAN-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	4	nsubj	_	IFD_tag=nken
 3	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3eþ
 4	búinn	búa	VERB	VBN	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	36	obl	_	IFD_tag=lkensf
@@ -370,10 +370,10 @@
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	IFD_tag=sfg3eþ
 3	hvort	hvort	SCONJ	WQ	_	4	mark	_	IFD_tag=c
 4	leyfa	leyfa	VERB	VB-1	VerbForm=Inf|Voice=Act	0	root	_	IFD_tag=sng
-5	ætti	eiga	VERB	VBDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	IFD_tag=svg3eþ
+5	ætti	eiga	AUX	VBDS	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	IFD_tag=svg3eþ
 6	akstur	akstur	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	4	obj	_	IFD_tag=nkeo
 7	í	í	ADP	P	_	9	case	_	IFD_tag=aa
-8	gegnum	gegnum	ADP	P	_	7	case	_	IFD_tag=ao
+8	gegnum	gegnum	ADP	P	_	9	case	_	IFD_tag=ao
 9	Vonarskarð	vonarskarð	PROPN	NPR-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	6	obl	_	IFD_tag=nheo-s|SpaceAfter=No
 10	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
@@ -419,7 +419,7 @@
 21	að	að	PART	TO	_	22	mark	_	IFD_tag=cn
 22	aka	aka	VERB	VB	VerbForm=Inf|Voice=Act	19	xcomp	_	IFD_tag=sng
 23	þar	þar	ADV	ADV	_	22	obl	_	IFD_tag=aa
-24	í	í	ADP	P	_	25	fixed	_	IFD_tag=aa
+24	í	í	ADP	P	_	25	case	_	IFD_tag=aa
 25	gegn	gegn	ADV	ADV	_	23	advmod	_	IFD_tag=aa|SpaceAfter=No
 26	,	,	PUNCT	,	_	31	punct	_	IFD_tag=,
 27	en	en	CCONJ	CONJ	_	31	cc	_	IFD_tag=c

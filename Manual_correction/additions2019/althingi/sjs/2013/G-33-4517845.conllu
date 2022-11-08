@@ -159,11 +159,11 @@
 7	á	á	ADP	P	_	8	case	_	IFD_tag=aþ
 8	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	5	obl:arg	_	IFD_tag=fpheþ
 9	að	að	SCONJ	C	_	16	mark	_	IFD_tag=cn
-10	þegar	þegar	ADP	P	_	16	advmod	_	IFD_tag=c
+10	þegar	þegar	SCONJ	P	_	16	mark	_	IFD_tag=c
 11	tekjur	tekja	NOUN	NS-N	Case=Nom|Definite=Ind|Gender=Fem|Number=Plur	16	nsubj	_	IFD_tag=nvfn
 12	af	af	ADP	P	_	14	case	_	IFD_tag=aþ
 13	þessu	þessi	DET	D-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	14	det	_	IFD_tag=faheþ
-14	tagi	tag	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	11	advmod	_	IFD_tag=nheþ
+14	tagi	tag	NOUN	N-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	11	obl	_	IFD_tag=nheþ
 15	eru	vera	AUX	BEPI	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	cop	_	IFD_tag=sfg3fn
 16	teknar	taka	VERB	VAN	Case=Nom|Gender=Fem|Number=Plur|VerbForm=Part|Voice=Act	34	obl	_	IFD_tag=sþgvfn
 17	út	út	ADP	RP	_	16	compound:prt	_	IFD_tag=aa
@@ -190,7 +190,7 @@
 38	eitt	einn	DET	ONE-A	Case=Acc|Gender=Neut|Number=Sing|NumType=Card	39	det	_	IFD_tag=tfheo
 39	skipti	skipti	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	34	obl	_	IFD_tag=nheo|SpaceAfter=No
 40	,	,	PUNCT	,	_	46	punct	_	IFD_tag=,
-41	heldur	heldur	ADV	ADVR	_	46	conj	_	IFD_tag=c
+41	heldur	heldur	SCONJ	ADVR	_	46	mark	_	IFD_tag=c
 42	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	46	cop	_	IFD_tag=sfg3en
 43	líka	líka	ADV	ALSO	_	46	advmod	_	IFD_tag=aa
 44	verið	vera	AUX	BAN	VerbForm=Sup|Voice=Act	46	aux	_	IFD_tag=ssg
@@ -205,7 +205,7 @@
 # text = Það er því óskaplega skammsýnt að rjúka af stað með eitthvað áður en menn hafa séð myndina fyrir sér og horft til framtíðar og áttað sig á því hvernig eigi að takast á við vandann í heild.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	5	expl	_	IFD_tag=fphen
 2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg3en
-3	því	því	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	5	advmod	_	IFD_tag=fpheþ
+3	því	því	ADV	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	5	advmod	_	IFD_tag=fpheþ
 4	óskaplega	óskaplega	ADV	ADV	_	5	amod	_	IFD_tag=aa
 5	skammsýnt	skammsýnn	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	IFD_tag=lhensf
 6	að	að	PART	TO	_	7	mark	_	IFD_tag=cn
@@ -297,7 +297,7 @@
 14	að	að	SCONJ	C	_	15	mark	_	IFD_tag=c
 15	komið	koma	VERB	VBN	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act	11	obl	_	IFD_tag=sþghen
 16	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	cop	_	IFD_tag=sfg3eþ
-17	inn	inn	ADP	RP	_	20	advmod	_	IFD_tag=aa
+17	inn	inn	ADP	RP	_	20	case	_	IFD_tag=aa
 18	á	á	ADP	P	_	20	case	_	IFD_tag=ao
 19	mitt	miður	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing	20	amod	_	IFD_tag=lheosf
 20	ár	ár	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	15	obl:arg	_	IFD_tag=nheo|SpaceAfter=No
@@ -363,7 +363,7 @@
 18	að	að	PART	TO	_	19	mark	_	IFD_tag=cn
 19	fara	fara	VERB	VB	VerbForm=Inf|Voice=Act	4	xcomp	_	IFD_tag=sng
 20	í	í	ADP	P	_	19	compound:prt	_	IFD_tag=aa
-21	út	út	ADP	RP	_	23	advmod	_	IFD_tag=aa
+21	út	út	ADP	RP	_	23	case	_	IFD_tag=aa
 22	frá	frá	ADP	P	_	23	case	_	IFD_tag=aþ
 23	hagvaxtarhorfum	hagvaxtarhorfur	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Fem|Number=Plur	19	obl:arg	_	IFD_tag=nvfþ
 24	einfaldlega	einfaldlega	ADV	ADV	_	23	advmod	_	IFD_tag=aa
@@ -391,7 +391,7 @@
 14	átt	eiga	VERB	VBN	VerbForm=Sup|Voice=Act	8	conj	_	IFD_tag=ssg
 15	við	við	ADP	RP	_	14	compound:prt	_	IFD_tag=ao
 16	2009	2009	NUM	NUM-A	NumType=Card	14	obl	_	IFD_tag=ta
-17	eða	eða	CCONJ	CONJ	_	18	conj	_	IFD_tag=c
+17	eða	eða	CCONJ	CONJ	_	18	cc	_	IFD_tag=c
 18	2010	2010	NUM	NUM-A	NumType=Card	16	conj	_	IFD_tag=ta|SpaceAfter=No
 19	.	.	PUNCT	.	_	4	punct	_	IFD_tag=.
 
@@ -449,7 +449,7 @@
 # text = Ég er því ekki viss um að maður hefði talið skynsamlegt efnahagslega að fara í stórfelldar ráðstafanir, enda ætti þess ekki að þurfa að því tilskildu að menn nái markinu um hallalaus fjárlög á næsta ári sem ég tel enn að sé afar mikilvægt að stefna að og ná fram.
 1	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	IFD_tag=fp1en
 2	er	vera	AUX	BEPI	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	IFD_tag=sfg1en
-3	því	það	PRON	PRO-D	_	5	advmod	_	IFD_tag=aa
+3	því	það	ADV	PRO-D	_	5	advmod	_	IFD_tag=aa
 4	ekki	ekki	ADV	NEG	_	5	advmod	_	IFD_tag=aa
 5	viss	viss	ADJ	ADJ-N	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	IFD_tag=lkensf
 6	um	um	ADP	P	_	10	mark	_	IFD_tag=ao

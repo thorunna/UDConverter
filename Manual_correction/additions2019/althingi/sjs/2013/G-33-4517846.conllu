@@ -61,7 +61,7 @@
 1	Það	það	PRON	PRO-N	Case=Nom|Gender=Neut|Number=Sing|PronType=Prs	8	nsubj	_	IFD_tag=fphen
 2	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	IFD_tag=sfg3eþ
 3	meðal	meðal	ADP	P	_	4	case	_	IFD_tag=ae
-4	annars	annar	PRON	OTHER-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Ind	8	advmod	_	IFD_tag=fohee
+4	annars	annar	PRON	OTHER-G	Case=Gen|Gender=Neut|Number=Sing|PronType=Ind	8	obl	_	IFD_tag=fohee
 5	og	og	CCONJ	CONJ	_	7	cc	_	IFD_tag=c
 6	ekki	ekki	ADV	NEG	_	7	advmod	_	IFD_tag=aa
 7	síst	varla	ADV	ADVS	Degree=Sup	4	conj	_	IFD_tag=aae
@@ -83,7 +83,7 @@
 23	risið	rísa	VERB	VBN	VerbForm=Sup|Voice=Act	19	xcomp	_	IFD_tag=ssg
 24	upp	upp	ADP	RP	_	23	compound:prt	_	IFD_tag=aa
 25	gagnaveraiðnaður	gagnaveraiðnaður	NOUN	N-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	23	nsubj	_	IFD_tag=nken|SpaceAfter=No
-26	,	,	PUNCT	,	_	33	punct	_	IFD_tag=,
+26	,	,	PUNCT	,	_	27	punct	_	IFD_tag=,
 27	Gripið	grípa	VERB	VAN	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	25	dep	_	IFD_tag=nhengs
 28	fram	fram	ADP	RP	_	29	compound:prt	_	IFD_tag=aa
 29	í	í	ADV	ADV	_	27	advmod	_	IFD_tag=aa|SpaceAfter=No
@@ -141,7 +141,7 @@
 29	höfðu	hafa	AUX	HVDI	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	30	aux	_	IFD_tag=sfg3fþ
 30	vonast	vona	VERB	VBN	VerbForm=Sup|Voice=Mid	24	advcl	_	IFD_tag=ssm
 31	til	til	ADP	P	_	30	compound:prt	_	IFD_tag=aa
-32	og	og	CCONJ	CONJ	_	33	conj	_	IFD_tag=c
+32	og	og	CCONJ	CONJ	_	33	cc	_	IFD_tag=c
 33	gert	gera	VERB	DON	VerbForm=Sup|Voice=Act	30	conj	_	IFD_tag=ssg
 34	ráð	ráð	NOUN	N-A	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	33	obj	_	IFD_tag=nheo
 35	fyrir	fyrir	ADP	P	_	33	compound:prt	_	IFD_tag=aþ|SpaceAfter=No
@@ -169,7 +169,7 @@
 7	að	að	PART	TO	_	8	mark	_	IFD_tag=cn
 8	svara	svara	VERB	VB	VerbForm=Inf|Voice=Act	6	xcomp	_	IFD_tag=sng
 9	því	það	PRON	PRO-D	Case=Dat|Gender=Neut|Number=Sing|PronType=Prs	8	obj	_	IFD_tag=fpheþ|SpaceAfter=No
-10	,	,	PUNCT	,	_	11	cc	_	IFD_tag=,
+10	,	,	PUNCT	,	_	11	punct	_	IFD_tag=,
 11	hefur	hafa	VERB	HVPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	OriginalHead=0
 12	bara	bara	ADV	FP	_	11	advmod	_	IFD_tag=aa
 13	stór	stór	ADJ	ADJ-A	Case=Acc|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur	14	amod	_	IFD_tag=lhfosf

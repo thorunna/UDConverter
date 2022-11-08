@@ -136,10 +136,10 @@
 # X_IDs = ID_missing_8 ; ID_missing_9
 # text = Ég og hv. þm. Róbert Marshall áttum hér ágæta umræðu fyrir tveimur eða þremur dögum, eða svo, um tillögu um uppbyggingu vega á hálendinu, og ræddum þar ástandið.
 1	Ég	ég	PRON	PRO-N	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	IFD_tag=fp1en
-2	og	og	CCONJ	CONJ	_	5	conj	_	IFD_tag=c
+2	og	og	CCONJ	CONJ	_	5	cc	_	IFD_tag=c
 3	hv.	háttvirtur	ADJ	ADJ-N	_	4	amod	_	IFD_tag=as
-4	þm.	þingmaður	PROPN	NPR-N	_	5	appos	_	IFD_tag=x
-5	Róbert	róbert	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	1	conj	_	IFD_tag=nken-s
+4	þm.	þingmaður	PROPN	NPR-N	_	1	conj	_	IFD_tag=x
+5	Róbert	róbert	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	4	appos	_	IFD_tag=nken-s
 6	Marshall	marshall	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	5	flat:name	_	IFD_tag=nken-s
 7	áttum	eiga	VERB	VBDI	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg1fþ
 8	hér	hér	ADV	ADV	_	7	advmod	_	IFD_tag=aa
@@ -242,14 +242,14 @@
 2	vaknar	vakna	VERB	VBPI	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	IFD_tag=sfg3en
 3	spurningin	spurning	NOUN	N-N	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	nsubj	_	IFD_tag=nveng|SpaceAfter=No
 4	,	,	PUNCT	,	_	8	punct	_	IFD_tag=,
-5	út	út	ADP	RP	_	8	advmod	_	IFD_tag=aa
+5	út	út	ADP	RP	_	8	case	_	IFD_tag=aa
 6	frá	frá	ADP	P	_	8	case	_	IFD_tag=aþ
 7	þeim	sá	DET	D-D	Case=Dat|Gender=Neut|Number=Plur|PronType=Dem	8	det	_	IFD_tag=fahfþ
 8	dæmum	dæmi	NOUN	NS-D	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	2	obl	_	IFD_tag=nhfþ
 9	sem	sem	SCONJ	C	_	15	mark	_	IFD_tag=ct
 10	hv.	háttvirtur	ADJ	ADJ-N	_	11	amod	_	IFD_tag=as
-11	þm.	þingmaður	PROPN	NPR-N	_	12	appos	_	IFD_tag=x
-12	Róbert	róbert	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	15	nsubj	_	IFD_tag=nken-s
+11	þm.	þingmaður	PROPN	NPR-N	_	15	nsubj	_	IFD_tag=x
+12	Róbert	róbert	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	11	appos	_	IFD_tag=nken-s
 13	Marshall	marshall	PROPN	NPR-N	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	12	flat:name	_	IFD_tag=nken-s
 14	var	vera	AUX	BEDI	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	cop	_	IFD_tag=sfg3eþ
 15	með	með	ADP	P	_	8	acl:relcl	_	IFD_tag=aa
