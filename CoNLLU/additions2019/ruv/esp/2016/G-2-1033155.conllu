@@ -1,6 +1,6 @@
-# sent_id = G-2-1033155,.1
-# X_ID = ID_MISSING
-# text = Axel Stefánsson hefur verið ráðinn þjálfari íslenska kvennalandsliðsins í handbolta .
+# sent_id = RUV_ESP_2016_G-2-1033155,.1
+# X_ID = ID_missing_1
+# text = Axel Stefánsson hefur verið ráðinn þjálfari íslenska kvennalandsliðsins í handbolta.
 1	Axel	axel	PROPN	NPR-N	_	5	nsubj	_	_
 2	Stefánsson	stefánsson	PROPN	NPR-N	_	1	flat:name	_	_
 3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
@@ -13,9 +13,9 @@
 10	handbolta	handbolti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1033155,.2
-# X_ID = ID_MISSING
-# text = Hann tekur við liðinu af Ágústi Þór Jóhannssyni sem hefur stýrt því frá því snemma árs 2011 en gaf ekki kost á sér áfram .
+# sent_id = RUV_ESP_2016_G-2-1033155,.2
+# X_ID = ID_missing_2
+# text = Hann tekur við liðinu af Ágústi Þór Jóhannssyni sem hefur stýrt því frá því snemma árs 2011 en gaf ekki kost á sér áfram.
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tekur	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	við	við	ADP	P	_	4	case	_	_
@@ -42,9 +42,9 @@
 24	áfram	áfram	ADV	ADV	Degree=Pos	19	advmod	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1033155,.3
-# X_ID = ID_MISSING
-# text = Tilkynnt var um ráðningu Axels á blaðamannafundi sem HSÍ hélt nú rétt fyrir hádegi .
+# sent_id = RUV_ESP_2016_G-2-1033155,.3
+# X_ID = ID_missing_3
+# text = Tilkynnt var um ráðningu Axels á blaðamannafundi sem HSÍ hélt nú rétt fyrir hádegi.
 1	Tilkynnt	tilkynna	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	1	cop	_	_
 3	um	um	ADP	P	_	4	case	_	_
@@ -61,9 +61,9 @@
 14	hádegi	hádegi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-2-1033155,.4
-# X_ID = ID_MISSING
-# text = Hann hefur verið búsettur í Noregi lengi og starfað þar fyrir norska handknattleikssambandið .
+# sent_id = RUV_ESP_2016_G-2-1033155,.4
+# X_ID = ID_missing_4
+# text = Hann hefur verið búsettur í Noregi lengi og starfað þar fyrir norska handknattleikssambandið.
 1	Hann	hann	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	4	cop	_	_
@@ -79,9 +79,9 @@
 13	handknattleikssambandið	handknattleikssamband	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1033155,.5
-# X_ID = ID_MISSING
-# text = Hann spilaði sem markmaður á árum áður, bæði með Þór og KA, og einnig með Val .
+# sent_id = RUV_ESP_2016_G-2-1033155,.5
+# X_ID = ID_missing_5
+# text = Hann spilaði sem markmaður á árum áður, bæði með Þór og KA, og einnig með Val.
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	spilaði	spila	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	sem	sem	SCONJ	C	_	4	mark	_	_
@@ -102,48 +102,44 @@
 18	Val	valur	PROPN	NPR-D	_	11	conj	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1033155,.6
-# X_ID = ID_MISSING
-# text = Síðar lék hann
+# sent_id = RUV_ESP_2016_G-2-1033155,.6
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Síðar lék hann og þjálfaði í Noregi, meira annars við hlið Þóris Hergeirssonar hjá norska kvennalandsliðinu, sem er sem stendur handhafi allra stærstu titlanna sem í boði eru.
 1	Síðar	síðar	ADV	ADVR	Degree=Cmp	2	advmod	_	_
 2	lék	leika	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+4	og	og	CCONJ	CONJ	_	5	cc	_	_
+5	þjálfaði	þjálfa	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+6	í	í	ADP	P	_	7	case	_	_
+7	Noregi	noregur	PROPN	NPR-D	_	5	obl	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	meira	meðal	ADP	P	_	10	case	_	_
+10	annars	annar	PRON	OTHER-G	Case=Gen	12	obl	_	_
+11	við	við	ADP	P	_	12	case	_	_
+12	hlið	hlið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+13	Þóris	þórir	PROPN	NPR-G	_	12	nmod:poss	_	_
+14	Hergeirssonar	hergeirsson	PROPN	NPR-G	_	13	flat:name	_	_
+15	hjá	hjá	ADP	P	_	17	case	_	_
+16	norska	norskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	17	amod	_	_
+17	kvennalandsliðinu	kvennalandslið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	sem	sem	SCONJ	C	_	23	mark	_	_
+20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
+21	sem	sem	SCONJ	C	_	22	mark	_	_
+22	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	23	advcl	_	_
+23	handhafi	handhafi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	acl:relcl	_	_
+24	allra	allur	DET	Q-G	Case=Gen	23	nmod:poss	_	_
+25	stærstu	stór	ADJ	ADJS-G	Case=Gen|Degree=Sup	24	amod	_	_
+26	titlanna	titill	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	24	conj	_	_
+27	sem	sem	SCONJ	C	_	29	mark	_	_
+28	í	í	ADP	P	_	29	case	_	_
+29	boði	boð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	acl:relcl	_	_
+30	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	29	cop	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1033155,.7
-# X_ID = ID_MISSING
-# text = og þjálfaði í Noregi, meira annars við hlið Þóris Hergeirssonar hjá norska kvennalandsliðinu, sem er sem stendur handhafi allra stærstu titlanna sem í boði eru .
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	þjálfaði	þjálfa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	í	í	ADP	P	_	4	case	_	_
-4	Noregi	noregur	PROPN	NPR-D	_	2	obl	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
-6	meira	meðal	ADP	P	_	7	case	_	_
-7	annars	annar	PRON	OTHER-G	Case=Gen	9	obl	_	_
-8	við	við	ADP	P	_	9	case	_	_
-9	hlið	hlið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
-10	Þóris	þórir	PROPN	NPR-G	_	9	nmod:poss	_	_
-11	Hergeirssonar	hergeirsson	PROPN	NPR-G	_	10	flat:name	_	_
-12	hjá	hjá	ADP	P	_	14	case	_	_
-13	norska	norskur	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
-14	kvennalandsliðinu	kvennalandslið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	14	punct	_	_
-16	sem	sem	SCONJ	C	_	20	mark	_	_
-17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
-18	sem	sem	SCONJ	C	_	19	mark	_	_
-19	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	20	advcl	_	_
-20	handhafi	handhafi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	acl:relcl	_	_
-21	allra	allur	DET	Q-G	Case=Gen	20	nmod:poss	_	_
-22	stærstu	stór	ADJ	ADJS-G	Case=Gen|Degree=Sup	21	amod	_	_
-23	titlanna	titill	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	21	conj	_	_
-24	sem	sem	SCONJ	C	_	26	mark	_	_
-25	í	í	ADP	P	_	26	case	_	_
-26	boði	boð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	acl:relcl	_	_
-27	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	26	cop	_	SpaceAfter=No
-28	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1033155,.8
-# X_ID = ID_MISSING
-# text = Samningur Axels við HSÍ er til þriggja ára
+# sent_id = RUV_ESP_2016_G-2-1033155,.7
+# X_IDs = ID_missing_8 ; ID_missing_9
+# text = Samningur Axels við HSÍ er til þriggja ára og samkvæmt formanni sambandsins, Guðmundi B. Ólafssyni, er mikil uppbygging framundan hjá liðinu sem tókst ekki að tryggja sér sæti á EM í Svíþjóð í desember.
 1	Samningur	samningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
 2	Axels	axel	PROPN	NPR-G	_	1	nmod:poss	_	_
 3	við	við	ADP	P	_	4	case	_	_
@@ -152,43 +148,39 @@
 6	til	til	ADP	P	_	8	case	_	_
 7	þriggja	þrír	NUM	NUM-G	Case=Gen	8	nummod	_	_
 8	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	0	root	_	_
+9	og	og	CCONJ	CONJ	_	11	cc	_	_
+10	samkvæmt	samkvæmt	ADP	P	_	11	case	_	_
+11	formanni	formaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	conj	_	OriginalHead=0
+12	sambandsins	samband	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	nmod:poss	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	Guðmundi	guðmundur	PROPN	NPR-D	_	12	appos	_	_
+15	B.	b.	PROPN	NPR-D	_	14	flat:name	_	_
+16	Ólafssyni	ólafsson	PROPN	NPR-D	_	14	dep	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
+19	mikil	mikill	DET	Q-N	Case=Nom	20	amod	_	_
+20	uppbygging	uppbygging	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
+21	framundan	framundan	ADV	ADV	Degree=Pos	11	advmod	_	_
+22	hjá	hjá	ADP	P	_	23	case	_	_
+23	liðinu	lið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+24	sem	sem	SCONJ	C	_	25	mark	_	_
+25	tókst	taka	VERB	VBDI	Mood=Ind|Tense=Past	23	acl:relcl	_	_
+26	ekki	ekki	ADV	NEG	_	25	advmod	_	_
+27	að	að	PART	TO	_	28	mark	_	_
+28	tryggja	tryggja	VERB	VB	VerbForm=Inf	25	xcomp	_	_
+29	sér	sig	PRON	PRO-D	Case=Dat	28	iobj	_	_
+30	sæti	sæti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obj	_	_
+31	á	á	ADP	P	_	32	case	_	_
+32	EM	em	PROPN	NPR-D	_	28	obl	_	_
+33	í	í	ADP	P	_	34	case	_	_
+34	Svíþjóð	svíþjóð	PROPN	NPR-D	_	32	obl	_	_
+35	í	í	ADP	P	_	36	case	_	_
+36	desember	desember	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-2-1033155,.9
-# X_ID = ID_MISSING
-# text = og samkvæmt formanni sambandsins, Guðmundi B. Ólafssyni, er mikil uppbygging framundan hjá liðinu sem tókst ekki að tryggja sér sæti á EM í Svíþjóð í desember .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	samkvæmt	samkvæmt	ADP	P	_	3	case	_	_
-3	formanni	formaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
-4	sambandsins	samband	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	nmod:poss	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
-6	Guðmundi	guðmundur	PROPN	NPR-D	_	4	appos	_	_
-7	B.	b.	PROPN	NPR-D	_	6	flat:name	_	_
-8	Ólafssyni	ólafsson	PROPN	NPR-D	_	6	dep	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	8	punct	_	_
-10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-11	mikil	mikill	DET	Q-N	Case=Nom	12	amod	_	_
-12	uppbygging	uppbygging	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
-13	framundan	framundan	ADV	ADV	Degree=Pos	3	advmod	_	_
-14	hjá	hjá	ADP	P	_	15	case	_	_
-15	liðinu	lið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-16	sem	sem	SCONJ	C	_	17	mark	_	_
-17	tókst	taka	VERB	VBDI	Mood=Ind|Tense=Past	15	acl:relcl	_	_
-18	ekki	ekki	ADV	NEG	_	17	advmod	_	_
-19	að	að	PART	TO	_	20	mark	_	_
-20	tryggja	tryggja	VERB	VB	VerbForm=Inf	17	xcomp	_	_
-21	sér	sig	PRON	PRO-D	Case=Dat	20	iobj	_	_
-22	sæti	sæti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obj	_	_
-23	á	á	ADP	P	_	24	case	_	_
-24	EM	em	PROPN	NPR-D	_	20	obl	_	_
-25	í	í	ADP	P	_	26	case	_	_
-26	Svíþjóð	svíþjóð	PROPN	NPR-D	_	24	obl	_	_
-27	í	í	ADP	P	_	28	case	_	_
-28	desember	desember	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-2-1033155,.10
-# X_ID = ID_MISSING
-# text = Nánara yfirlit yfir feril Axels má sjá hér .
+# sent_id = RUV_ESP_2016_G-2-1033155,.8
+# X_ID = ID_missing_10
+# text = Nánara yfirlit yfir feril Axels má sjá hér.
 1	Nánara	náinn	ADJ	ADJR-A	Case=Acc|Degree=Cmp	2	amod	_	_
 2	yfirlit	yfirlit	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	_
 3	yfir	yfir	ADP	P	_	4	case	_	_
@@ -198,34 +190,4 @@
 7	sjá	sjá	VERB	VB	VerbForm=Inf	0	root	_	_
 8	hér	hér	ADV	ADV	Degree=Pos	7	advmod	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	7	punct	_	_
-
-# sent_id = G-2-1033155,.11
-# X_ID = ID_MISSING
-# text = Axel Stefánsson hefur verið ráðinn þjálfari A landsliðs kvenna
-1	Axel	axel	PROPN	NPR-N	_	5	nsubj	_	_
-2	Stefánsson	stefánsson	PROPN	NPR-N	_	1	flat:name	_	_
-3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
-4	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	5	cop	_	_
-5	ráðinn	ráða	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
-6	þjálfari	þjálfari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	xcomp	_	_
-7	A	a	NOUN	N	Definite=Ind|Number=Sing	6	nmod:poss	_	_
-8	landsliðs	landslið	NOUN	N	Definite=Ind|Number=Sing	7	conj	_	_
-9	kvenna	kona	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	nmod:poss	_	_
-
-1	A	a	X	FW	Foreign=Yes	0	root	_	_
-2	photo	photo	X	FW	Foreign=Yes	1	flat:foreign	_	_
-3	posted	post	X	FW	Foreign=Yes	1	flat:foreign	_	_
-4	by	by	X	FW	Foreign=Yes	1	flat:foreign	_	_
-5	Handknattleikssamband	handknattleikssamband	PROPN	NPR-N	_	1	obl	_	_
-6	Íslands	ísland	PROPN	NPR-G	_	5	flat:name	_	_
-7	@hsi_iceland	_	X	X	_	1	flat:foreign	_	_
-8	on	on	X	FW	Foreign=Yes	1	flat:foreign	_	_
-9	June	june	X	FW	Foreign=Yes	1	flat:foreign	_	_
-10	8	eight	X	FW	Foreign=Yes	1	flat:foreign	_	_
-11	,	,	PUNCT	,	_	10	punct	_	_
-12	2016	2016	X	FW	Foreign=Yes	1	flat:foreign	_	_
-13	at	at	X	FW	Foreign=Yes	1	flat:foreign	_	_
-14	4:39	4:39	X	FW	Foreign=Yes	1	flat:foreign	_	_
-15	am	am	X	FW	Foreign=Yes	1	flat:foreign	_	_
-16	PDT	pdt	X	FW	Foreign=Yes	1	flat:foreign	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = G-33-4595690,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Aðeins út af Jóel,
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.1
+# X_IDs = ID_missing_1 ; ID_missing_2 ; ID_missing_3
+# text = Frú forseti. Aðeins út af Jóel, það er ósköp einfalt fyrir stjórnsýsluna sjálfa að gera alla hluti það flókna að kerfið fer að þvælast um fyrir sjálfu sér en þegar upp er staðið getur ráðherra hoggið á hnútinn.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -8,52 +8,44 @@
 5	út	út	ADP	RP	_	7	compound:prt	_	_
 6	af	af	ADP	P	_	7	case	_	_
 7	Jóel	jóel	PROPN	NPR-D	_	1	obl	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	1	punct	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	12	expl	_	_
+10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
+11	ósköp	ósköp	ADV	ADV	Degree=Pos	12	amod	_	_
+12	einfalt	einfaldur	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	conj	_	OriginalHead=0
+13	fyrir	fyrir	ADP	P	_	14	case	_	_
+14	stjórnsýsluna	stjórnsýsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
+15	sjálfa	sjálfur	PRON	PRO-A	Case=Acc	14	appos	_	_
+16	að	að	PART	TO	_	17	mark	_	_
+17	gera	gera	VERB	DO	VerbForm=Inf	12	xcomp	_	_
+18	alla	allur	DET	Q-A	Case=Acc	19	amod	_	_
+19	hluti	hlutur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	21	nsubj	_	_
+20	það	það	PRON	PRO-A	Case=Acc	21	obl	_	_
+21	flókna	flókinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	17	ccomp	_	_
+22	að	að	SCONJ	C	_	24	mark	_	_
+23	kerfið	kerfi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	nsubj	_	_
+24	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	21	amod	_	_
+25	að	að	PART	TO	_	26	mark	_	_
+26	þvælast	þvæla	VERB	VB	VerbForm=Inf	24	xcomp	_	_
+27	um	um	ADP	RP	_	26	compound:prt	_	_
+28	fyrir	fyrir	ADP	P	_	29	case	_	_
+29	sjálfu	sjálfur	PRON	PRO-D	Case=Dat	26	obl	_	_
+30	sér	sig	PRON	PRO-D	Case=Dat	29	nmod	_	_
+31	en	en	CCONJ	CONJ	_	38	cc	_	_
+32	þegar	þegar	ADP	P	_	35	case	_	_
+33	upp	upp	ADP	RP	_	35	compound:prt	_	_
+34	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
+35	staðið	standa	VERB	VBN	Tense=Past|VerbForm=Part	38	obl	_	_
+36	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	38	aux	_	_
+37	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	38	nsubj	_	_
+38	hoggið	höggva	VERB	VBN	Tense=Past|VerbForm=Part	1	conj	_	OriginalHead=0
+39	á	á	ADP	P	_	40	case	_	_
+40	hnútinn	hnútur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	38	obl	_	SpaceAfter=No
+41	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4595690,.2
-# X_ID = ID_MISSING
-# text = það er ósköp einfalt fyrir stjórnsýsluna sjálfa að gera alla hluti það flókna að kerfið fer að þvælast um fyrir sjálfu sér
-1	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	ósköp	ósköp	ADV	ADV	Degree=Pos	4	amod	_	_
-4	einfalt	einfaldur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-5	fyrir	fyrir	ADP	P	_	6	case	_	_
-6	stjórnsýsluna	stjórnsýsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
-7	sjálfa	sjálfur	PRON	PRO-A	Case=Acc	6	appos	_	_
-8	að	að	PART	TO	_	9	mark	_	_
-9	gera	gera	VERB	DO	VerbForm=Inf	4	xcomp	_	_
-10	alla	allur	DET	Q-A	Case=Acc	11	amod	_	_
-11	hluti	hlutur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	nsubj	_	_
-12	það	það	PRON	PRO-A	Case=Acc	13	obl	_	_
-13	flókna	flókinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	ccomp	_	_
-14	að	að	SCONJ	C	_	16	mark	_	_
-15	kerfið	kerfi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
-16	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	13	amod	_	_
-17	að	að	PART	TO	_	18	mark	_	_
-18	þvælast	þvæla	VERB	VB	VerbForm=Inf	16	xcomp	_	_
-19	um	um	ADP	RP	_	18	compound:prt	_	_
-20	fyrir	fyrir	ADP	P	_	21	case	_	_
-21	sjálfu	sjálfur	PRON	PRO-D	Case=Dat	18	obl	_	_
-22	sér	sig	PRON	PRO-D	Case=Dat	21	nmod	_	_
-
-# sent_id = G-33-4595690,.3
-# X_ID = ID_MISSING
-# text = en þegar upp er staðið getur ráðherra hoggið á hnútinn .
-1	en	en	CCONJ	CONJ	_	8	cc	_	_
-2	þegar	þegar	ADP	P	_	5	case	_	_
-3	upp	upp	ADP	RP	_	5	compound:prt	_	_
-4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-5	staðið	standa	VERB	VBN	Tense=Past|VerbForm=Part	8	obl	_	_
-6	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	8	aux	_	_
-7	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
-8	hoggið	höggva	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-9	á	á	ADP	P	_	10	case	_	_
-10	hnútinn	hnútur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	8	punct	_	_
-
-# sent_id = G-33-4595690,.4
-# X_ID = ID_MISSING
-# text = Ég hvet þann ráðherra ríkisstjórnarinnar sem þetta mál snertir og málið er hjá að leysa og höggva á þann hnút sem allra fyrst .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.2
+# X_ID = ID_missing_4
+# text = Ég hvet þann ráðherra ríkisstjórnarinnar sem þetta mál snertir og málið er hjá að leysa og höggva á þann hnút sem allra fyrst.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hvet	hvetja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þann	sá	DET	D-A	Case=Acc	4	det	_	_
@@ -79,9 +71,9 @@
 23	fyrst	snemma	ADV	ADVS	Degree=Sup	17	advmod	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4595690,.5
-# X_ID = ID_MISSING
-# text = Þetta snýst um þrjá einstaklinga sem eru fastir í útlöndum og komast ekki heim til okkar ástkæra lands .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.3
+# X_ID = ID_missing_5
+# text = Þetta snýst um þrjá einstaklinga sem eru fastir í útlöndum og komast ekki heim til okkar ástkæra lands.
 1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	snýst	snúa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	um	um	ADP	P	_	5	case	_	_
@@ -102,9 +94,9 @@
 18	lands	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4595690,.6
-# X_ID = ID_MISSING
-# text = Ég bið þá menn sem hér eru inni að huga að því .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.4
+# X_ID = ID_missing_6
+# text = Ég bið þá menn sem hér eru inni að huga að því.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	bið	biðja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þá	sá	DET	D-A	Case=Acc	4	det	_	_
@@ -119,9 +111,9 @@
 12	því	það	PRON	PRO-D	Case=Dat	10	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4595690,.7
-# X_ID = ID_MISSING
-# text = Varðandi hitt vonast ég til þess, og vil segja það fyrir framan þingheim, að við tökum þá nálgun sem hv. þm. Ragnheiður Elín Árnadóttir hefur lagt áherslu á
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.5
+# X_IDs = ID_missing_7 ; ID_missing_8
+# text = Varðandi hitt vonast ég til þess, og vil segja það fyrir framan þingheim, að við tökum þá nálgun sem hv. þm. Ragnheiður Elín Árnadóttir hefur lagt áherslu á, að hér verði þverpólitísk samstaða í þessu máli, að við vinnum málið vel og fáum fólk til að skilja af hverju við viljum vera forgöngumenn í þessu máli þannig að aðrar Norðurlandaþjóðir verði síðan sporgöngumenn hvað þetta mál varðar.
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	3	advcl	_	_
 2	hitt	hinn	DET	D-A	Case=Acc	1	obj	_	_
 3	vonast	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -151,89 +143,81 @@
 27	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	28	aux	_	_
 28	lagt	leggja	VERB	VBN	Tense=Past|VerbForm=Part	20	acl:relcl	_	_
 29	áherslu	áhersla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obj	_	_
-30	á	á	ADP	P	_	28	obl	_	_
+30	á	á	ADP	P	_	28	obl	_	SpaceAfter=No
+31	,	,	PUNCT	,	_	34	punct	_	_
+32	að	að	SCONJ	C	_	34	mark	_	_
+33	hér	hér	ADV	ADV	Degree=Pos	34	advmod	_	_
+34	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	3	conj	_	OriginalHead=0
+35	þverpólitísk	þverpólitískur	ADJ	ADJ-N	Case=Nom|Degree=Pos	36	amod	_	_
+36	samstaða	samstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	34	nsubj	_	_
+37	í	í	ADP	P	_	39	case	_	_
+38	þessu	þessi	DET	D-D	Case=Dat	39	det	_	_
+39	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
+40	,	,	PUNCT	,	_	39	punct	_	_
+41	að	að	SCONJ	C	_	43	mark	_	_
+42	við	ég	PRON	PRO-N	Case=Nom	43	nsubj	_	_
+43	vinnum	vinna	VERB	VBPS	Mood=Sub|Tense=Pres	34	ccomp	_	_
+44	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	43	obj	_	_
+45	vel	vel	ADV	ADV	Degree=Pos	43	advmod	_	_
+46	og	og	CCONJ	CONJ	_	47	cc	_	_
+47	fáum	fá	VERB	VBPS	Mood=Sub|Tense=Pres	43	conj	_	_
+48	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	47	obj	_	_
+49	til	til	ADP	P	_	51	case	_	_
+50	að	að	PART	TO	_	51	mark	_	_
+51	skilja	skilja	VERB	VB	VerbForm=Inf	47	obl	_	_
+52	af	af	ADP	P	_	53	case	_	_
+53	hverju	hver	PRON	WPRO-D	Case=Dat	55	obl	_	_
+54	við	ég	PRON	PRO-N	Case=Nom	55	nsubj	_	_
+55	viljum	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	51	ccomp	_	_
+56	vera	vera	AUX	BE	VerbForm=Inf	55	cop	_	_
+57	forgöngumenn	forgöngumaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	55	xcomp	_	_
+58	í	í	ADP	P	_	60	case	_	_
+59	þessu	þessi	DET	D-D	Case=Dat	60	det	_	_
+60	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	55	obl	_	_
+61	þannig	þannig	ADV	ADV	Degree=Pos	47	advmod	_	_
+62	að	að	SCONJ	C	_	65	mark	_	_
+63	aðrar	annar	PRON	OTHER-N	Case=Nom	64	det	_	_
+64	Norðurlandaþjóðir	norðurlandaþjóð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	65	nsubj	_	_
+65	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	61	advcl	_	_
+66	síðan	síðan	ADV	ADV	Degree=Pos	65	advmod	_	_
+67	sporgöngumenn	sporgöngumaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	65	xcomp	_	_
+68	hvað	hver	DET	Q-A	Case=Acc	65	obl	_	_
+69	þetta	þessi	DET	D-A	Case=Acc	70	det	_	_
+70	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	71	obj	_	_
+71	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	68	acl:relcl	_	SpaceAfter=No
+72	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4595690,.8
-# X_ID = ID_MISSING
-# text = , að hér verði þverpólitísk samstaða í þessu máli, að við vinnum málið vel og fáum fólk til að skilja af hverju við viljum vera forgöngumenn í þessu máli þannig að aðrar Norðurlandaþjóðir verði síðan sporgöngumenn hvað þetta mál varðar .
-1	,	,	PUNCT	,	_	4	punct	_	_
-2	að	að	SCONJ	C	_	4	mark	_	_
-3	hér	hér	ADV	ADV	Degree=Pos	4	advmod	_	_
-4	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	0	root	_	_
-5	þverpólitísk	þverpólitískur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
-6	samstaða	samstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
-7	í	í	ADP	P	_	9	case	_	_
-8	þessu	þessi	DET	D-D	Case=Dat	9	det	_	_
-9	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	að	að	SCONJ	C	_	13	mark	_	_
-12	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-13	vinnum	vinna	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
-14	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
-15	vel	vel	ADV	ADV	Degree=Pos	13	advmod	_	_
-16	og	og	CCONJ	CONJ	_	17	cc	_	_
-17	fáum	fá	VERB	VBPS	Mood=Sub|Tense=Pres	13	conj	_	_
-18	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obj	_	_
-19	til	til	ADP	P	_	21	case	_	_
-20	að	að	PART	TO	_	21	mark	_	_
-21	skilja	skilja	VERB	VB	VerbForm=Inf	17	obl	_	_
-22	af	af	ADP	P	_	23	case	_	_
-23	hverju	hver	PRON	WPRO-D	Case=Dat	25	obl	_	_
-24	við	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
-25	viljum	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	21	ccomp	_	_
-26	vera	vera	AUX	BE	VerbForm=Inf	25	cop	_	_
-27	forgöngumenn	forgöngumaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	25	xcomp	_	_
-28	í	í	ADP	P	_	30	case	_	_
-29	þessu	þessi	DET	D-D	Case=Dat	30	det	_	_
-30	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
-31	þannig	þannig	ADV	ADV	Degree=Pos	17	advmod	_	_
-32	að	að	SCONJ	C	_	35	mark	_	_
-33	aðrar	annar	PRON	OTHER-N	Case=Nom	34	det	_	_
-34	Norðurlandaþjóðir	norðurlandaþjóð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	35	nsubj	_	_
-35	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	31	advcl	_	_
-36	síðan	síðan	ADV	ADV	Degree=Pos	35	advmod	_	_
-37	sporgöngumenn	sporgöngumaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	35	xcomp	_	_
-38	hvað	hver	DET	Q-A	Case=Acc	35	obl	_	_
-39	þetta	þessi	DET	D-A	Case=Acc	40	det	_	_
-40	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	41	obj	_	_
-41	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	38	acl:relcl	_	SpaceAfter=No
-42	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4595690,.9
-# X_ID = ID_MISSING
-# text = Það er alveg hárrétt,
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.6
+# X_IDs = ID_missing_9 ; ID_missing_10
+# text = Það er alveg hárrétt, ég man vel þegar ég var formaður allsherjarnefndar á sínum tíma og við ræddum meira annars stjúpættleiðingar samkynhneigðra.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	alveg	alveg	ADV	ADV	Degree=Pos	4	amod	_	_
 4	hárrétt	hárréttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 5	,	,	PUNCT	,	_	4	punct	_	_
+6	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
+7	man	muna	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+8	vel	vel	ADV	ADV	Degree=Pos	7	advmod	_	_
+9	þegar	þegar	ADP	P	_	12	case	_	_
+10	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+11	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	12	cop	_	_
+12	formaður	formaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	obl	_	_
+13	allsherjarnefndar	allsherjarnefnd	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	nmod:poss	_	_
+14	á	á	ADP	P	_	16	case	_	_
+15	sínum	sinn	PRON	PRO-D	Case=Dat	16	nmod:poss	_	_
+16	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+17	og	og	CCONJ	CONJ	_	19	cc	_	_
+18	við	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
+19	ræddum	ræða	VERB	VBDI	Mood=Ind|Tense=Past	12	conj	_	_
+20	meira	meðal	ADP	P	_	21	case	_	_
+21	annars	annar	PRON	OTHER-G	Case=Gen	19	obl	_	_
+22	stjúpættleiðingar	stjúpættleiðing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obj	_	_
+23	samkynhneigðra	samkynhneigður	ADJ	ADJ-G	Case=Gen|Degree=Pos	22	nmod:poss	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4595690,.10
-# X_ID = ID_MISSING
-# text = ég man vel þegar ég var formaður allsherjarnefndar á sínum tíma og við ræddum meira annars stjúpættleiðingar samkynhneigðra .
-1	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	man	muna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	vel	vel	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	þegar	þegar	ADP	P	_	7	case	_	_
-5	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-6	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
-7	formaður	formaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	obl	_	_
-8	allsherjarnefndar	allsherjarnefnd	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
-9	á	á	ADP	P	_	11	case	_	_
-10	sínum	sinn	PRON	PRO-D	Case=Dat	11	nmod:poss	_	_
-11	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-12	og	og	CCONJ	CONJ	_	14	cc	_	_
-13	við	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-14	ræddum	ræða	VERB	VBDI	Mood=Ind|Tense=Past	7	conj	_	_
-15	meira	meðal	ADP	P	_	16	case	_	_
-16	annars	annar	PRON	OTHER-G	Case=Gen	14	obl	_	_
-17	stjúpættleiðingar	stjúpættleiðing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obj	_	_
-18	samkynhneigðra	samkynhneigður	ADJ	ADJ-G	Case=Gen|Degree=Pos	17	nmod:poss	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4595690,.11
-# X_ID = ID_MISSING
-# text = Þá þrýstu ákveðnir hópar mjög á að það mál færi ekki í gegn .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.7
+# X_ID = ID_missing_11
+# text = Þá þrýstu ákveðnir hópar mjög á að það mál færi ekki í gegn.
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	þrýstu	þrýsta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	ákveðnir	ákveðinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -249,9 +233,9 @@
 13	gegn	gegn	ADV	ADV	Degree=Pos	10	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4595690,.12
-# X_ID = ID_MISSING
-# text = Við þekkjum það í sögunni .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.8
+# X_ID = ID_missing_12
+# text = Við þekkjum það í sögunni.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þekkjum	þekkja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
@@ -259,9 +243,9 @@
 5	sögunni	saga	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4595690,.13
-# X_ID = ID_MISSING
-# text = Ég trúi því og treysti að þingið geti staðið saman í þessu máli af því að þetta er réttlætismál, mál sem tekur tillit til þess samfélags sem við búum í í dag .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.9
+# X_ID = ID_missing_13
+# text = Ég trúi því og treysti að þingið geti staðið saman í þessu máli af því að þetta er réttlætismál, mál sem tekur tillit til þess samfélags sem við búum í í dag.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	trúi	trúa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	því	það	PRON	PRO-D	Case=Dat	2	obj	_	_
@@ -297,9 +281,9 @@
 33	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4595690,.14
-# X_ID = ID_MISSING
-# text = Við eigum ekki að loka á að við erum með mismunandi samfélags- og fjölskyldumunstur
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.10
+# X_IDs = ID_missing_14 ; ID_missing_15
+# text = Við eigum ekki að loka á að við erum með mismunandi samfélags- og fjölskyldumunstur og við verðum einfaldlega að koma til móts við þarfir þeirra einstaklinga sem fyrir eru.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -315,30 +299,26 @@
 13	og	og	CCONJ	CONJ	_	14	cc	_	_
 14	fjölskyldu	fjölskylda	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	12	conj	_	SpaceAfter=No
 15	munstur	munstur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
+16	og	og	CCONJ	CONJ	_	18	cc	_	_
+17	við	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+18	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+19	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	18	advmod	_	_
+20	að	að	PART	TO	_	21	mark	_	_
+21	koma	koma	VERB	VB	VerbForm=Inf	18	xcomp	_	_
+22	til	til	ADP	P	_	23	case	_	_
+23	móts	mót	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	obl	_	_
+24	við	við	ADP	P	_	25	case	_	_
+25	þarfir	þörf	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obl	_	_
+26	þeirra	sá	DET	D-G	Case=Gen	27	det	_	_
+27	einstaklinga	einstaklingur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	25	nmod:poss	_	_
+28	sem	sem	SCONJ	C	_	29	mark	_	_
+29	fyrir	fyrir	ADP	RP	_	27	acl:relcl	_	_
+30	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	29	cop	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4595690,.15
-# X_ID = ID_MISSING
-# text = og við verðum einfaldlega að koma til móts við þarfir þeirra einstaklinga sem fyrir eru .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	3	advmod	_	_
-5	að	að	PART	TO	_	6	mark	_	_
-6	koma	koma	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-7	til	til	ADP	P	_	8	case	_	_
-8	móts	mót	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
-9	við	við	ADP	P	_	10	case	_	_
-10	þarfir	þörf	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	_
-11	þeirra	sá	DET	D-G	Case=Gen	12	det	_	_
-12	einstaklinga	einstaklingur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	nmod:poss	_	_
-13	sem	sem	SCONJ	C	_	14	mark	_	_
-14	fyrir	fyrir	ADP	RP	_	12	acl:relcl	_	_
-15	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4595690,.16
-# X_ID = ID_MISSING
-# text = Ég held að það geti enginn sett sig í spor pars sem vill eignast börn en getur það ekki .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.11
+# X_ID = ID_missing_16
+# text = Ég held að það geti enginn sett sig í spor pars sem vill eignast börn en getur það ekki.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	7	mark	_	_
@@ -360,9 +340,9 @@
 19	ekki	ekki	ADV	NEG	_	17	advmod	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4595690,.17
-# X_ID = ID_MISSING
-# text = Ég held að enginn geti sett sig í þau spor nema þeir sem hafa verið í þeim sjálfir
+# sent_id = ALTHINGI_TKG_2011_G-33-4595690,.12
+# X_IDs = ID_missing_17 ; ID_missing_18
+# text = Ég held að enginn geti sett sig í þau spor nema þeir sem hafa verið í þeim sjálfir og þá á samfélagið að gera hvað það getur til að styðja fólk í slíkum erfiðum raunum sem það er að hafa ekki möguleika á því að eignast barn.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -381,35 +361,34 @@
 16	í	í	ADP	P	_	17	case	_	_
 17	þeim	hann	PRON	PRO-D	Case=Dat	15	obl	_	_
 18	sjálfir	sjálfur	PRON	PRO-N	Case=Nom	15	amod	_	_
-
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
-3	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	samfélagið	samfélag	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
-5	að	að	PART	TO	_	6	mark	_	_
-6	gera	gera	VERB	DO	VerbForm=Inf	3	xcomp	_	_
-7	hvað	hver	DET	Q-A	Case=Acc	6	obj	_	_
-8	það	það	PRON	PRO-N	Case=Nom	9	nsubj	_	_
-9	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	7	acl:relcl	_	_
-10	til	til	ADP	P	_	12	case	_	_
-11	að	að	PART	TO	_	12	advcl	_	_
-12	styðja	styðja	VERB	VB	VerbForm=Inf	6	obl	_	_
-13	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obj	_	_
-14	í	í	ADP	P	_	17	case	_	_
-15	slíkum	slíkur	PRON	SUCH-D	Case=Dat	17	det	_	_
-16	erfiðum	erfiður	ADJ	ADJ-D	Case=Dat|Degree=Pos	17	amod	_	_
-17	raunum	raun	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
-18	sem	sem	SCONJ	C	_	24	mark	_	_
-19	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	24	expl	_	_
-20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
-21	að	að	PART	TO	_	24	mark	_	_
-22	hafa	hafa	AUX	HV	VerbForm=Inf	24	aux	_	_
-23	ekki	ekki	ADV	NEG	_	24	advmod	_	_
-24	möguleika	möguleiki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	acl:relcl	_	_
-25	á	á	ADP	P	_	26	case	_	_
-26	því	það	PRON	PRO-D	Case=Dat	24	obl	_	_
-27	að	að	PART	TO	_	28	mark	_	_
-28	eignast	eigna	VERB	VB	VerbForm=Inf	26	xcomp	_	_
-29	barn	barn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obj	_	_
-30	.	.	PUNCT	.	_	3	punct	_	_
+19	og	og	CCONJ	CONJ	_	21	cc	_	_
+20	þá	þá	ADV	ADV	Degree=Pos	21	advmod	_	_
+21	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+22	samfélagið	samfélag	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	_
+23	að	að	PART	TO	_	24	mark	_	_
+24	gera	gera	VERB	DO	VerbForm=Inf	21	xcomp	_	_
+25	hvað	hver	DET	Q-A	Case=Acc	24	obj	_	_
+26	það	það	PRON	PRO-N	Case=Nom	27	nsubj	_	_
+27	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	25	acl:relcl	_	_
+28	til	til	ADP	P	_	30	case	_	_
+29	að	að	PART	TO	_	30	advcl	_	_
+30	styðja	styðja	VERB	VB	VerbForm=Inf	24	obl	_	_
+31	fólk	fólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obj	_	_
+32	í	í	ADP	P	_	35	case	_	_
+33	slíkum	slíkur	PRON	SUCH-D	Case=Dat	35	det	_	_
+34	erfiðum	erfiður	ADJ	ADJ-D	Case=Dat|Degree=Pos	35	amod	_	_
+35	raunum	raun	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	30	obl	_	_
+36	sem	sem	SCONJ	C	_	42	mark	_	_
+37	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	42	expl	_	_
+38	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	42	cop	_	_
+39	að	að	PART	TO	_	42	mark	_	_
+40	hafa	hafa	AUX	HV	VerbForm=Inf	42	aux	_	_
+41	ekki	ekki	ADV	NEG	_	42	advmod	_	_
+42	möguleika	möguleiki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	35	acl:relcl	_	_
+43	á	á	ADP	P	_	44	case	_	_
+44	því	það	PRON	PRO-D	Case=Dat	42	obl	_	_
+45	að	að	PART	TO	_	46	mark	_	_
+46	eignast	eigna	VERB	VB	VerbForm=Inf	44	xcomp	_	_
+47	barn	barn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	46	obj	_	SpaceAfter=No
+48	.	.	PUNCT	.	_	2	punct	_	_
 

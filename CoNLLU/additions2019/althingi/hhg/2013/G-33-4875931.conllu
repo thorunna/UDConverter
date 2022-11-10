@@ -1,6 +1,6 @@
-# sent_id = G-33-4875931,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Ég vil þakka hv. þm. Pétri H. Blöndal fyrir afskaplega skemmtilega spurningu .
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Ég vil þakka hv. þm. Pétri H. Blöndal fyrir afskaplega skemmtilega spurningu.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -18,9 +18,9 @@
 15	spurningu	spurning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4875931,.2
-# X_ID = ID_MISSING
-# text = Það sem gerðist í nefndinni þá vænti ég þess fastlega að hv. þingmaður meini nefndarfundinn sem haldinn var eftir þingfund á fimmtudag var að við í minni hlutanum stungum upp á því að málið yrði tekið upp á haustþingi og við mundum frekar ræða aðrar útfærslur, svo sem þær sem hv. þingmaður spyr út í .
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.2
+# X_ID = ID_missing_2
+# text = Það sem gerðist í nefndinni þá vænti ég þess fastlega að hv. þingmaður meini nefndarfundinn sem haldinn var eftir þingfund á fimmtudag var að við í minni hlutanum stungum upp á því að málið yrði tekið upp á haustþingi og við mundum frekar ræða aðrar útfærslur, svo sem þær sem hv. þingmaður spyr út í.
 1	Það	sá	DET	D-N	Case=Nom	7	nsubj	_	_
 2	sem	sem	SCONJ	C	_	3	mark	_	_
 3	gerðist	gera	VERB	DODI	Mood=Ind|Tense=Past	1	acl:relcl	_	_
@@ -79,9 +79,9 @@
 56	í	í	ADP	P	_	54	obl	_	SpaceAfter=No
 57	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4875931,.3
-# X_ID = ID_MISSING
-# text = Við gætum þá átt það starf sem virðist ætla að eiga sér stað hér og sem ég vil þakka hv. þm. Pétri H. Blöndal kærlega fyrir að taka þátt í .
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.3
+# X_ID = ID_missing_3
+# text = Við gætum þá átt það starf sem virðist ætla að eiga sér stað hér og sem ég vil þakka hv. þm. Pétri H. Blöndal kærlega fyrir að taka þátt í.
 1	Við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	gætum	geta	AUX	MDDS	Mood=Sub|Tense=Past	4	aux	_	_
 3	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -114,30 +114,26 @@
 30	í	í	ADP	P	_	28	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4875931,.4
-# X_ID = ID_MISSING
-# text = Það var fellt með meiri hluta
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Það var fellt með meiri hluta og þar með var fundinum lokið.
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
 3	fellt	fella	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 4	með	með	ADP	P	_	6	case	_	_
 5	meiri	mikill	DET	QR-D	Case=Dat	6	amod	_	_
 6	hluta	hluti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
+7	og	og	CCONJ	CONJ	_	12	cc	_	_
+8	þar	þar	ADV	ADV	Degree=Pos	12	obl	_	_
+9	með	með	ADP	P	_	8	case	_	_
+10	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	12	cop	_	_
+11	fundinum	fundur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	nsubj	_	_
+12	lokið	ljúka	VERB	VAN	Tense=Past|VerbForm=Part	3	conj	_	OriginalHead=0|SpaceAfter=No
+13	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4875931,.5
-# X_ID = ID_MISSING
-# text = og þar með var fundinum lokið .
-1	og	og	CCONJ	CONJ	_	6	cc	_	_
-2	þar	þar	ADV	ADV	Degree=Pos	6	obl	_	_
-3	með	með	ADP	P	_	2	case	_	_
-4	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
-5	fundinum	fundur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	nsubj	_	_
-6	lokið	ljúka	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	6	punct	_	_
-
-# sent_id = G-33-4875931,.6
-# X_ID = ID_MISSING
-# text = Það er það sem gerðist í nefndinni .
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.5
+# X_ID = ID_missing_6
+# text = Það er það sem gerðist í nefndinni.
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	það	sá	DET	D-N	Case=Nom	0	root	_	_
@@ -147,9 +143,9 @@
 7	nefndinni	nefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4875931,.7
-# X_ID = ID_MISSING
-# text = Hvort það heitir að tefja eða ekki þá finnst mér verið að rugla aftur saman þessu tvennu, hvenær verði lagt í aðgerðir hæstv. ríkisstjórnar annars vegar og hins vegar hvenær athugaðar verða einhverjar niðurstöður þannig að hægt sé að breyta ferlinu, væntanlega eftir á .
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.6
+# X_ID = ID_missing_7
+# text = Hvort það heitir að tefja eða ekki þá finnst mér verið að rugla aftur saman þessu tvennu, hvenær verði lagt í aðgerðir hæstv. ríkisstjórnar annars vegar og hins vegar hvenær athugaðar verða einhverjar niðurstöður þannig að hægt sé að breyta ferlinu, væntanlega eftir á.
 1	Hvort	hvort	SCONJ	WQ	_	3	mark	_	_
 2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	heitir	heita	VERB	VBPI	Mood=Ind|Tense=Pres	9	dep	_	_
@@ -198,39 +194,35 @@
 46	á	á	ADP	P	_	44	case	_	SpaceAfter=No
 47	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = G-33-4875931,.8
-# X_ID = ID_MISSING
-# text = Það er einfaldlega ekkert neyðartilfelli
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.7
+# X_IDs = ID_missing_8 ; ID_missing_9
+# text = Það er einfaldlega ekkert neyðartilfelli og það er allt í lagi að þær tölur komi fram aðeins seinna en aðgerðir stjórnvalda.
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	5	advmod	_	_
 4	ekkert	enginn	DET	Q-N	Case=Nom	5	amod	_	_
 5	neyðartilfelli	neyðartilfelli	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+6	og	og	CCONJ	CONJ	_	11	cc	_	_
+7	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	11	expl	_	_
+8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
+9	allt	allur	DET	Q-N	Case=Nom	11	amod	_	_
+10	í	í	ADP	P	_	11	case	_	_
+11	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	conj	_	OriginalHead=0
+12	að	að	SCONJ	C	_	15	mark	_	_
+13	þær	sá	DET	D-N	Case=Nom	14	det	_	_
+14	tölur	tala	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	15	nsubj	_	_
+15	komi	koma	VERB	VBPS	Mood=Sub|Tense=Pres	11	ccomp	_	_
+16	fram	fram	ADP	RP	_	15	compound:prt	_	_
+17	aðeins	aðeins	ADV	ADV	Degree=Pos	15	advmod	_	_
+18	seinna	seint	ADV	ADVR	Degree=Cmp	17	advmod	_	_
+19	en	en	ADP	P	_	20	case	_	_
+20	aðgerðir	aðgerð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	obl	_	_
+21	stjórnvalda	stjórnvald	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	20	nmod:poss	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4875931,.9
-# X_ID = ID_MISSING
-# text = og það er allt í lagi að þær tölur komi fram aðeins seinna en aðgerðir stjórnvalda .
-1	og	og	CCONJ	CONJ	_	6	cc	_	_
-2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	6	expl	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
-4	allt	allur	DET	Q-N	Case=Nom	6	amod	_	_
-5	í	í	ADP	P	_	6	case	_	_
-6	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
-7	að	að	SCONJ	C	_	10	mark	_	_
-8	þær	sá	DET	D-N	Case=Nom	9	det	_	_
-9	tölur	tala	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
-10	komi	koma	VERB	VBPS	Mood=Sub|Tense=Pres	6	ccomp	_	_
-11	fram	fram	ADP	RP	_	10	compound:prt	_	_
-12	aðeins	aðeins	ADV	ADV	Degree=Pos	10	advmod	_	_
-13	seinna	seint	ADV	ADVR	Degree=Cmp	12	advmod	_	_
-14	en	en	ADP	P	_	15	case	_	_
-15	aðgerðir	aðgerð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	obl	_	_
-16	stjórnvalda	stjórnvald	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	nmod:poss	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	6	punct	_	_
-
-# sent_id = G-33-4875931,.10
-# X_ID = ID_MISSING
-# text = Þannig er planið ef maður skilur þetta rétt .
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.8
+# X_ID = ID_missing_10
+# text = Þannig er planið ef maður skilur þetta rétt.
 1	Þannig	þannig	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	planið	plan	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
@@ -241,9 +233,9 @@
 8	rétt	rétt	ADV	ADV	Degree=Pos	6	advmod	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4875931,.11
-# X_ID = ID_MISSING
-# text = Hvað varðar svarhlutfallið er ég sammála hv. þm. Pétri H. Blöndal ef um er að ræða almenna hagskýrslugerð .
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.9
+# X_ID = ID_missing_11
+# text = Hvað varðar svarhlutfallið er ég sammála hv. þm. Pétri H. Blöndal ef um er að ræða almenna hagskýrslugerð.
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	6	obl	_	_
 3	svarhlutfallið	svarhlutfall	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
@@ -264,9 +256,9 @@
 18	hagskýrslugerð	hagskýrslugerð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4875931,.12
-# X_ID = ID_MISSING
-# text = Þá er ég algerlega sammála því að svarhlutfallið skipti verulegu máli sem og hvaða hópar hafa tilhneigingu til þess að svara .
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.10
+# X_ID = ID_missing_12
+# text = Þá er ég algerlega sammála því að svarhlutfallið skipti verulegu máli sem og hvaða hópar hafa tilhneigingu til þess að svara.
 1	Þá	þá	ADV	ADV	Degree=Pos	5	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -290,9 +282,9 @@
 21	svara	svara	VERB	VB	VerbForm=Inf	19	xcomp	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4875931,.13
-# X_ID = ID_MISSING
-# text = En þegar kemur að markvissum aðgerðum sem eru ætlaðar hópi sem á við ákveðið tiltekið vandamál að stríða sé ég ekki þörf á því að hafa þessar tölur yfir allan hópinn .
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.11
+# X_ID = ID_missing_13
+# text = En þegar kemur að markvissum aðgerðum sem eru ætlaðar hópi sem á við ákveðið tiltekið vandamál að stríða sé ég ekki þörf á því að hafa þessar tölur yfir allan hópinn.
 1	En	en	CCONJ	CONJ	_	19	cc	_	_
 2	þegar	þegar	ADP	P	_	3	case	_	_
 3	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	19	obl	_	_
@@ -326,9 +318,9 @@
 31	hópinn	hópur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	xcomp	_	SpaceAfter=No
 32	.	.	PUNCT	.	_	19	punct	_	_
 
-# sent_id = G-33-4875931,.14
-# X_ID = ID_MISSING
-# text = Það er það sem ég skil ekki .
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.12
+# X_ID = ID_missing_14
+# text = Það er það sem ég skil ekki.
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	það	sá	DET	D-N	Case=Nom	0	root	_	_
@@ -338,6 +330,9 @@
 7	ekki	ekki	ADV	NEG	_	6	advmod	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	3	punct	_	_
 
+# sent_id = ALTHINGI_HHG_2013_G-33-4875931,.13
+# X_ID = ID_missing_15
+# text = Ef við ætlum að ráðast á þetta eina vandamál, þetta neyðarástand, skuldavanda heimilanna, skil ég ekki alveg hvernig upplýsingar um mig, þann sem hér stendur, koma þeirri tölfræði við.
 1	Ef	ef	ADP	P	_	3	case	_	_
 2	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	ætlum	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	17	obl	_	_
@@ -346,13 +341,13 @@
 6	á	á	ADP	P	_	9	case	_	_
 7	þetta	þessi	DET	D-A	Case=Acc	9	det	_	_
 8	eina	einn	DET	ONE-A	Case=Acc	9	det	_	_
-9	vandamál	vandamál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
+9	vandamál	vandamál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	9	punct	_	_
 11	þetta	þessi	DET	D-A	Case=Acc	12	det	_	_
-12	neyðarástand	neyðarástand	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	appos	_	_
+12	neyðarástand	neyðarástand	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	appos	_	SpaceAfter=No
 13	,	,	PUNCT	,	_	12	punct	_	_
 14	skuldavanda	skuldavandi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	appos	_	_
-15	heimilanna	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	nmod:poss	_	_
+15	heimilanna	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	nmod:poss	_	SpaceAfter=No
 16	,	,	PUNCT	,	_	15	punct	_	_
 17	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 18	ég	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
@@ -361,16 +356,16 @@
 21	hvernig	hvernig	ADV	WADV	Degree=Pos	31	advmod	_	_
 22	upplýsingar	upplýsing	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	31	nsubj	_	_
 23	um	um	ADP	P	_	26	case	_	_
-24	mig	ég	PRON	PRO-A	Case=Acc	26	nmod	_	_
+24	mig	ég	PRON	PRO-A	Case=Acc	26	nmod	_	SpaceAfter=No
 25	,	,	PUNCT	,	_	24	punct	_	_
 26	þann	sá	DET	D-A	Case=Acc	22	obl	_	_
 27	sem	sem	SCONJ	C	_	29	mark	_	_
 28	hér	hér	ADV	ADV	Degree=Pos	29	advmod	_	_
-29	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	26	acl:relcl	_	_
+29	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	26	acl:relcl	_	SpaceAfter=No
 30	,	,	PUNCT	,	_	29	punct	_	_
 31	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	17	ccomp	_	_
 32	þeirri	sá	DET	D-D	Case=Dat	33	det	_	_
 33	tölfræði	tölfræði	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obj	_	_
-34	við	við	ADP	RP	_	31	compound:prt	_	_
+34	við	við	ADP	RP	_	31	compound:prt	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	17	punct	_	_
 

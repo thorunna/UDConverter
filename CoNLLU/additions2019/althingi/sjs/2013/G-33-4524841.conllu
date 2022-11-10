@@ -1,6 +1,6 @@
-# sent_id = G-33-4524841,.1
-# X_ID = ID_MISSING
-# text = Herra forseti . Það eru mörg slagorðin búin að vera í þessari umræðu .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.1
+# X_ID = ID_missing_1
+# text = Herra forseti. Það eru mörg slagorðin búin að vera í þessari umræðu.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -16,9 +16,9 @@
 13	umræðu	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	xcomp	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-33-4524841,.2
-# X_ID = ID_MISSING
-# text = Eitt er fyrir heimilin í landinu .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.2
+# X_ID = ID_missing_2
+# text = Eitt er fyrir heimilin í landinu.
 1	Eitt	einn	DET	ONE-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -27,9 +27,9 @@
 6	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4524841,.3
-# X_ID = ID_MISSING
-# text = Það þarf miklu meiri tíma ef á að reyna að ræða það málefnalega en gefst í stuttu andsvari .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.3
+# X_ID = ID_missing_3
+# text = Það þarf miklu meiri tíma ef á að reyna að ræða það málefnalega en gefst í stuttu andsvari.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	4	obl	_	_
@@ -50,9 +50,9 @@
 18	andsvari	andsvar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4524841,.4
-# X_ID = ID_MISSING
-# text = Í fyrsta lagi er þetta ekki aðgerð sem tekur til allra heimila í landinu
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Í fyrsta lagi er þetta ekki aðgerð sem tekur til allra heimila í landinu og er órafjarri því.
 1	Í	í	ADP	P	_	3	case	_	_
 2	fyrsta	fyrstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	3	amod	_	_
 3	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
@@ -67,19 +67,15 @@
 12	heimila	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	obl	_	_
 13	í	í	ADP	P	_	14	case	_	_
 14	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+15	og	og	CCONJ	CONJ	_	18	cc	_	_
+16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
+17	órafjarri	órafjarri	ADP	P	_	18	case	_	_
+18	því	það	PRON	PRO-D	Case=Dat	7	conj	_	OriginalHead=0|SpaceAfter=No
+19	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4524841,.5
-# X_ID = ID_MISSING
-# text = og er órafjarri því .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	órafjarri	órafjarri	ADP	P	_	4	case	_	_
-4	því	það	PRON	PRO-D	Case=Dat	0	root	_	SpaceAfter=No
-5	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4524841,.6
-# X_ID = ID_MISSING
-# text = Þegar upp verður staðið gagnast hún tiltölulega þröngum hópi heimila, þeirra sem eru með verðtryggð lán, þeirra sem ekki höfðu fengið neina úrlausn áður .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.5
+# X_ID = ID_missing_6
+# text = Þegar upp verður staðið gagnast hún tiltölulega þröngum hópi heimila, þeirra sem eru með verðtryggð lán, þeirra sem ekki höfðu fengið neina úrlausn áður.
 1	Þegar	þegar	ADP	P	_	4	case	_	_
 2	upp	upp	ADP	RP	_	4	compound:prt	_	_
 3	verður	verða	AUX	RDPI	Mood=Ind|Tense=Pres	4	aux	_	_
@@ -108,9 +104,9 @@
 26	áður	áður	ADV	ADVR	Degree=Cmp	23	advmod	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4524841,.7
-# X_ID = ID_MISSING
-# text = Við getum sagt að það sé sanngjarnt,
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.6
+# X_IDs = ID_missing_7 ; ID_missing_8
+# text = Við getum sagt að það sé sanngjarnt, en þetta gengur líka í verulegum mæli til heimila sem eru í ágætri stöðu, eiga ágætar eignir, eru með háar tekjur, en vissulega með einhver verðtryggð lán á þeim eignum.
 1	Við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	sagt	segja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -118,49 +114,45 @@
 5	það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 6	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	7	cop	_	_
 7	sanngjarnt	sanngjarn	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	ccomp	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	3	punct	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	en	en	CCONJ	CONJ	_	11	cc	_	_
+10	þetta	þessi	DET	D-N	Case=Nom	11	nsubj	_	_
+11	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+12	líka	líka	ADV	ALSO	_	11	advmod	_	_
+13	í	í	ADP	P	_	15	case	_	_
+14	verulegum	verulegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	15	amod	_	_
+15	mæli	mælir	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+16	til	til	ADP	P	_	17	case	_	_
+17	heimila	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	obl	_	_
+18	sem	sem	SCONJ	C	_	22	mark	_	_
+19	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
+20	í	í	ADP	P	_	22	case	_	_
+21	ágætri	ágætur	ADJ	ADJ-D	Case=Dat|Degree=Pos	22	amod	_	_
+22	stöðu	staða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	acl:relcl	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	24	punct	_	_
+24	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	22	conj	_	_
+25	ágætar	ágætur	ADJ	ADJ-A	Case=Acc|Degree=Pos	26	amod	_	_
+26	eignir	eign	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	24	obj	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	26	punct	_	_
+28	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
+29	með	með	ADP	P	_	31	case	_	_
+30	háar	hár	ADJ	ADJ-A	Case=Acc|Degree=Pos	31	amod	_	_
+31	tekjur	tekja	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	conj	_	SpaceAfter=No
+32	,	,	PUNCT	,	_	31	punct	_	_
+33	en	en	CCONJ	CONJ	_	38	cc	_	_
+34	vissulega	vissulega	ADV	ADV	Degree=Pos	38	advmod	_	_
+35	með	með	ADP	P	_	38	case	_	_
+36	einhver	einhver	DET	Q-A	Case=Acc	38	amod	_	_
+37	verðtryggð	verðtryggður	ADJ	ADJ-A	Case=Acc|Degree=Pos	38	amod	_	_
+38	lán	lán	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	31	conj	_	_
+39	á	á	ADP	P	_	41	case	_	_
+40	þeim	sá	DET	D-D	Case=Dat	41	det	_	_
+41	eignum	eign	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	38	obl	_	SpaceAfter=No
+42	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4524841,.8
-# X_ID = ID_MISSING
-# text = en þetta gengur líka í verulegum mæli til heimila sem eru í ágætri stöðu, eiga ágætar eignir, eru með háar tekjur, en vissulega með einhver verðtryggð lán á þeim eignum .
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
-3	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	líka	líka	ADV	ALSO	_	3	advmod	_	_
-5	í	í	ADP	P	_	7	case	_	_
-6	verulegum	verulegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
-7	mæli	mælir	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-8	til	til	ADP	P	_	9	case	_	_
-9	heimila	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	obl	_	_
-10	sem	sem	SCONJ	C	_	14	mark	_	_
-11	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
-12	í	í	ADP	P	_	14	case	_	_
-13	ágætri	ágætur	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
-14	stöðu	staða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	acl:relcl	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	16	punct	_	_
-16	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	14	conj	_	_
-17	ágætar	ágætur	ADJ	ADJ-A	Case=Acc|Degree=Pos	18	amod	_	_
-18	eignir	eign	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obj	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	18	punct	_	_
-20	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
-21	með	með	ADP	P	_	23	case	_	_
-22	háar	hár	ADJ	ADJ-A	Case=Acc|Degree=Pos	23	amod	_	_
-23	tekjur	tekja	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	conj	_	SpaceAfter=No
-24	,	,	PUNCT	,	_	23	punct	_	_
-25	en	en	CCONJ	CONJ	_	30	cc	_	_
-26	vissulega	vissulega	ADV	ADV	Degree=Pos	30	advmod	_	_
-27	með	með	ADP	P	_	30	case	_	_
-28	einhver	einhver	DET	Q-A	Case=Acc	30	amod	_	_
-29	verðtryggð	verðtryggður	ADJ	ADJ-A	Case=Acc|Degree=Pos	30	amod	_	_
-30	lán	lán	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	conj	_	_
-31	á	á	ADP	P	_	33	case	_	_
-32	þeim	sá	DET	D-D	Case=Dat	33	det	_	_
-33	eignum	eign	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	30	obl	_	SpaceAfter=No
-34	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4524841,.9
-# X_ID = ID_MISSING
-# text = Þetta gerir ekkert fyrir leigjendur .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.7
+# X_ID = ID_missing_9
+# text = Þetta gerir ekkert fyrir leigjendur.
 1	Þetta	þessi	DET	D-A	Case=Acc	2	nsubj	_	_
 2	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekkert	enginn	DET	Q-A	Case=Acc	2	obj	_	_
@@ -168,9 +160,9 @@
 5	leigjendur	leigjandi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4524841,.10
-# X_ID = ID_MISSING
-# text = Það er eins og hver annar brandari að tala um að þeir fái einhverja úrlausn þarna .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.8
+# X_ID = ID_missing_10
+# text = Það er eins og hver annar brandari að tala um að þeir fái einhverja úrlausn þarna.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	9	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 3	eins	_	ADV	ADVR	Degree=Cmp	9	advmod	_	_
@@ -189,9 +181,9 @@
 16	þarna	þarna	ADV	ADV	Degree=Pos	13	advmod	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = G-33-4524841,.11
-# X_ID = ID_MISSING
-# text = Halda menn að fólk í Félagsbústöðum sé almennt líklegt til þess að fara að leggja 4<percent/> tekna sinna til hliðar í séreignarsparnað í því skyni að reyna að komast yfir húsnæði einhvern tímann seinna ?
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.9
+# X_ID = ID_missing_11
+# text = Halda menn að fólk í Félagsbústöðum sé almennt líklegt til þess að fara að leggja 4<percent/> tekna sinna til hliðar í séreignarsparnað í því skyni að reyna að komast yfir húsnæði einhvern tímann seinna?
 1	Halda	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	1	nsubj	_	_
 3	að	að	SCONJ	C	_	9	mark	_	_
@@ -229,9 +221,9 @@
 35	seinna	seint	ADV	ADVR	Degree=Cmp	28	advmod	_	SpaceAfter=No
 36	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4524841,.12
-# X_ID = ID_MISSING
-# text = Þetta gerir ekkert fyrir þann stóra hóp, sem er hátt í fjórðungur, sem skuldar ekki í sínu húsnæði, að uppistöðu til eldra fólkið sem er búið að borga skuldir sínar,
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.10
+# X_IDs = ID_missing_12 ; ID_missing_13
+# text = Þetta gerir ekkert fyrir þann stóra hóp, sem er hátt í fjórðungur, sem skuldar ekki í sínu húsnæði, að uppistöðu til eldra fólkið sem er búið að borga skuldir sínar, það fær ekkert út úr þessum aðgerðum.
 1	Þetta	þessi	DET	D-A	Case=Acc	2	nsubj	_	_
 2	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekkert	enginn	DET	Q-A	Case=Acc	2	obj	_	_
@@ -265,32 +257,28 @@
 31	borga	borga	VERB	VB	VerbForm=Inf	29	xcomp	_	_
 32	skuldir	skuld	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	31	obj	_	_
 33	sínar	sinn	PRON	PRO-A	Case=Acc	32	nmod:poss	_	SpaceAfter=No
-34	,	,	PUNCT	,	_	2	punct	_	_
+34	,	,	PUNCT	,	_	32	punct	_	_
+35	það	það	PRON	PRO-N	Case=Nom	36	nsubj	_	_
+36	fær	fá	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+37	ekkert	enginn	DET	Q-N	Case=Nom	36	xcomp	_	_
+38	út	út	ADP	RP	_	41	compound:prt	_	_
+39	úr	úr	ADP	P	_	41	case	_	_
+40	þessum	þessi	DET	D-D	Case=Dat	41	det	_	_
+41	aðgerðum	aðgerð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	36	obl	_	SpaceAfter=No
+42	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4524841,.13
-# X_ID = ID_MISSING
-# text = það fær ekkert út úr þessum aðgerðum .
-1	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	fær	fá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	ekkert	enginn	DET	Q-N	Case=Nom	2	xcomp	_	_
-4	út	út	ADP	RP	_	7	compound:prt	_	_
-5	úr	úr	ADP	P	_	7	case	_	_
-6	þessum	þessi	DET	D-D	Case=Dat	7	det	_	_
-7	aðgerðum	aðgerð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4524841,.14
-# X_ID = ID_MISSING
-# text = Það eru líka heimili .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.11
+# X_ID = ID_missing_14
+# text = Það eru líka heimili.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	líka	líka	ADV	ALSO	_	4	advmod	_	_
 4	heimili	heimili	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4524841,.15
-# X_ID = ID_MISSING
-# text = Leigjendur búa líka á heimilum .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.12
+# X_ID = ID_missing_15
+# text = Leigjendur búa líka á heimilum.
 1	Leigjendur	leigjandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
 2	búa	búa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	líka	líka	ADV	ALSO	_	2	advmod	_	_
@@ -298,9 +286,9 @@
 5	heimilum	heimili	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4524841,.16
-# X_ID = ID_MISSING
-# text = Eldra fólk býr líka á heimilum .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.13
+# X_ID = ID_missing_16
+# text = Eldra fólk býr líka á heimilum.
 1	Eldra	gamall	ADJ	ADJR-N	Case=Nom|Degree=Cmp	2	amod	_	_
 2	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	býr	búa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -309,47 +297,43 @@
 6	heimilum	heimili	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4524841,.17
-# X_ID = ID_MISSING
-# text = Landsbyggðin býr á heimilum
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.14
+# X_IDs = ID_missing_17 ; ID_missing_18
+# text = Landsbyggðin býr á heimilum og fólk þar fær sáralítið út úr þessari aðgerð, ósköp einfaldlega vegna þess að fasteignaverð er þar miklu lægra og skuldir fylgjandi miklu lægri.
 1	Landsbyggðin	landsbyggð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	býr	búa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	á	á	ADP	P	_	4	case	_	_
 4	heimilum	heimili	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
+5	og	og	CCONJ	CONJ	_	8	cc	_	_
+6	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+7	þar	þar	ADV	ADV	Degree=Pos	6	advmod	_	_
+8	fær	fá	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+9	sáralítið	sáralítill	ADJ	ADJ-A	Case=Acc|Degree=Pos	8	obj	_	_
+10	út	út	ADP	RP	_	13	compound:prt	_	_
+11	úr	úr	ADP	P	_	13	case	_	_
+12	þessari	þessi	DET	D-D	Case=Dat	13	det	_	_
+13	aðgerð	aðgerð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	ósköp	ósköp	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obl	_	_
+16	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	18	advmod	_	_
+17	vegna	vegna	ADP	P	_	18	case	_	_
+18	þess	það	PRON	PRO-G	Case=Gen	8	obl	_	_
+19	að	að	SCONJ	C	_	24	mark	_	_
+20	fasteignaverð	fasteignaverð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	nsubj	_	_
+21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
+22	þar	þar	ADV	ADV	Degree=Pos	24	advmod	_	_
+23	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	24	obl	_	_
+24	lægra	lágur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	18	ccomp	_	_
+25	og	og	CCONJ	CONJ	_	29	cc	_	_
+26	skuldir	skuld	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	29	nsubj	_	_
+27	fylgjandi	fylgjandi	ADV	ADV	Degree=Pos	28	advmod	_	_
+28	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	29	obl	_	_
+29	lægri	lágur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	24	conj	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4524841,.18
-# X_ID = ID_MISSING
-# text = og fólk þar fær sáralítið út úr þessari aðgerð, ósköp einfaldlega vegna þess að fasteignaverð er þar miklu lægra og skuldir fylgjandi miklu lægri .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
-3	þar	þar	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	fær	fá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-5	sáralítið	sáralítill	ADJ	ADJ-A	Case=Acc|Degree=Pos	4	obj	_	_
-6	út	út	ADP	RP	_	9	compound:prt	_	_
-7	úr	úr	ADP	P	_	9	case	_	_
-8	þessari	þessi	DET	D-D	Case=Dat	9	det	_	_
-9	aðgerð	aðgerð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	ósköp	ósköp	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
-12	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	14	advmod	_	_
-13	vegna	vegna	ADP	P	_	14	case	_	_
-14	þess	það	PRON	PRO-G	Case=Gen	4	obl	_	_
-15	að	að	SCONJ	C	_	20	mark	_	_
-16	fasteignaverð	fasteignaverð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	nsubj	_	_
-17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
-18	þar	þar	ADV	ADV	Degree=Pos	20	advmod	_	_
-19	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	20	obl	_	_
-20	lægra	lágur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	14	ccomp	_	_
-21	og	og	CCONJ	CONJ	_	25	cc	_	_
-22	skuldir	skuld	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	25	nsubj	_	_
-23	fylgjandi	fylgjandi	ADV	ADV	Degree=Pos	24	advmod	_	_
-24	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	25	obl	_	_
-25	lægri	lágur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	20	conj	_	SpaceAfter=No
-26	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4524841,.19
-# X_ID = ID_MISSING
-# text = Þetta er fyrsta klisjan sem þarf að koma í burtu, að þetta snúist um öll heimilin í landinu .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.15
+# X_ID = ID_missing_19
+# text = Þetta er fyrsta klisjan sem þarf að koma í burtu, að þetta snúist um öll heimilin í landinu.
 1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	fyrsta	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	4	amod	_	_
@@ -371,18 +355,18 @@
 19	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4524841,.20
-# X_ID = ID_MISSING
-# text = Það gerir það ekki .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.16
+# X_ID = ID_missing_20
+# text = Það gerir það ekki.
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	gerir	gera	VERB	DOPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
 4	ekki	ekki	ADV	NEG	_	2	advmod	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4524841,.21
-# X_ID = ID_MISSING
-# text = Var ekki forsendubresturinn jafn fyrir alla ?
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.17
+# X_ID = ID_missing_21
+# text = Var ekki forsendubresturinn jafn fyrir alla?
 1	Var	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
 2	ekki	ekki	ADV	NEG	_	6	advmod	_	_
 3	forsendubresturinn	forsendubrestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
@@ -391,9 +375,9 @@
 6	alla	allur	DET	Q-A	Case=Acc	0	root	_	SpaceAfter=No
 7	?	?	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4524841,.22
-# X_ID = ID_MISSING
-# text = Nei, hann var það ekki .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.18
+# X_ID = ID_missing_22
+# text = Nei, hann var það ekki.
 1	Nei	nei	INTJ	INTJ	_	5	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	hann	hann	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -402,9 +386,9 @@
 6	ekki	ekki	ADV	NEG	_	5	advmod	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4524841,.23
-# X_ID = ID_MISSING
-# text = Eingöngu ef þú horfir á þetta þrönga tímabil .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.19
+# X_ID = ID_missing_23
+# text = Eingöngu ef þú horfir á þetta þrönga tímabil.
 1	Eingöngu	eingöngu	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	ef	ef	ADP	P	_	4	case	_	_
 3	þú	þú	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -415,9 +399,9 @@
 8	tímabil	tímabil	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4524841,.24
-# X_ID = ID_MISSING
-# text = En það voru ekki allir að taka sín lán eða byggja sín hús á því tímabili .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.20
+# X_ID = ID_missing_24
+# text = En það voru ekki allir að taka sín lán eða byggja sín hús á því tímabili.
 1	En	en	CCONJ	CONJ	_	7	cc	_	_
 2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	7	expl	_	_
 3	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
@@ -436,9 +420,9 @@
 16	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4524841,.25
-# X_ID = ID_MISSING
-# text = Ég held að eðlilegra sé að líta yfir líftíma lána og horfa til þess hvort eitthvað hafi gerst sem hefur breytt stöðunni fyrir mann sem tók verðtryggt lán 1995 .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.21
+# X_ID = ID_missing_25
+# text = Ég held að eðlilegra sé að líta yfir líftíma lána og horfa til þess hvort eitthvað hafi gerst sem hefur breytt stöðunni fyrir mann sem tók verðtryggt lán 1995.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	7	mark	_	_
@@ -470,9 +454,9 @@
 29	1995	1995	NUM	NUM-A	Case=Acc	26	obl	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4524841,.26
-# X_ID = ID_MISSING
-# text = Er hann að ráðstafa eftir þetta hærra hlutfalli tekna sinna, ef hann er með meðaltekjur, í afborganir af láninu en hann gerði áður ?
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.22
+# X_ID = ID_missing_26
+# text = Er hann að ráðstafa eftir þetta hærra hlutfalli tekna sinna, ef hann er með meðaltekjur, í afborganir af láninu en hann gerði áður?
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 2	hann	hann	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -500,9 +484,9 @@
 25	áður	áður	ADV	ADVR	Degree=Cmp	24	advmod	_	SpaceAfter=No
 26	?	?	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4524841,.27
-# X_ID = ID_MISSING
-# text = Nei, hann er að ráðstafa lægra Forseti hringir . hlutfalli teknanna .
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.23
+# X_ID = ID_missing_27
+# text = Nei, hann er að ráðstafa lægra Forseti hringir. hlutfalli teknanna.
 1	Nei	nei	INTJ	INTJ	_	6	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	hann	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
@@ -517,12 +501,15 @@
 12	teknanna	tekja	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	nmod:poss	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	6	punct	_	_
 
+# sent_id = ALTHINGI_SJS_2013_G-33-4524841,.24
+# X_ID = ID_missing_28
+# text = Þar er enginn forsendubrestur í þeim skilningi.
 1	Þar	þar	ADV	ADV	Degree=Pos	7	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 3	enginn	enginn	DET	Q-N	Case=Nom	4	amod	_	_
 4	forsendubrestur	forsendubrestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 5	í	í	ADP	P	_	7	case	_	_
 6	þeim	sá	DET	D-D	Case=Dat	7	det	_	_
-7	skilningi	skilningur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
+7	skilningi	skilningur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	7	punct	_	_
 

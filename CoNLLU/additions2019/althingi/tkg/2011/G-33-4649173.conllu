@@ -1,6 +1,6 @@
-# sent_id = G-33-4649173,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Ég ætla ekki að fara í efnislega umræðu um umsóknarferlið .
+# sent_id = ALTHINGI_TKG_2011_G-33-4649173,.1
+# X_ID = ID_missing_1
+# text = Frú forseti. Ég ætla ekki að fara í efnislega umræðu um umsóknarferlið.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -16,9 +16,9 @@
 13	umsóknarferlið	umsóknarferli	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4649173,.2
-# X_ID = ID_MISSING
-# text = Sú ákvörðun var tekin af lýðræðislega kjörnu þingi .
+# sent_id = ALTHINGI_TKG_2011_G-33-4649173,.2
+# X_ID = ID_missing_2
+# text = Sú ákvörðun var tekin af lýðræðislega kjörnu þingi.
 1	Sú	sá	DET	D-N	Case=Nom	2	det	_	_
 2	ákvörðun	ákvörðun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
@@ -29,33 +29,29 @@
 8	þingi	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4649173,.3
-# X_ID = ID_MISSING
-# text = Við sjálfstæðismenn vildum fara aðra leið
+# sent_id = ALTHINGI_TKG_2011_G-33-4649173,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Við sjálfstæðismenn vildum fara aðra leið en vorum ekki studd til þess af öðrum flokkum.
 1	Við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	sjálfstæðismenn	sjálfstæðismaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	1	appos	_	_
 3	vildum	vilja	AUX	MDDI	Mood=Ind|Tense=Past	4	aux	_	_
 4	fara	fara	VERB	VB	VerbForm=Inf	0	root	_	_
 5	aðra	annar	PRON	OTHER-A	Case=Acc	6	det	_	_
 6	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+7	en	en	CCONJ	CONJ	_	10	cc	_	_
+8	vorum	vera	AUX	BEDI	Mood=Ind|Tense=Past	10	cop	_	_
+9	ekki	ekki	ADV	NEG	_	10	advmod	_	_
+10	studd	styðja	VERB	VAN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
+11	til	til	ADP	P	_	12	case	_	_
+12	þess	það	PRON	PRO-G	Case=Gen	10	obl	_	_
+13	af	af	ADP	P	_	15	case	_	_
+14	öðrum	annar	PRON	OTHER-D	Case=Dat	15	det	_	_
+15	flokkum	flokkur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4649173,.4
-# X_ID = ID_MISSING
-# text = en vorum ekki studd til þess af öðrum flokkum .
-1	en	en	CCONJ	CONJ	_	4	cc	_	_
-2	vorum	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
-3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
-4	studd	styðja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
-5	til	til	ADP	P	_	6	case	_	_
-6	þess	það	PRON	PRO-G	Case=Gen	4	obl	_	_
-7	af	af	ADP	P	_	9	case	_	_
-8	öðrum	annar	PRON	OTHER-D	Case=Dat	9	det	_	_
-9	flokkum	flokkur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4649173,.5
-# X_ID = ID_MISSING
-# text = Sú tillaga okkar, um þjóðaratkvæðagreiðslu, var felld hér á þingi strax í upphafi, það er að þjóðin hefði bæði upphafs- og lokaorðið .
+# sent_id = ALTHINGI_TKG_2011_G-33-4649173,.4
+# X_ID = ID_missing_5
+# text = Sú tillaga okkar, um þjóðaratkvæðagreiðslu, var felld hér á þingi strax í upphafi, það er að þjóðin hefði bæði upphafs- og lokaorðið.
 1	Sú	sá	DET	D-N	Case=Nom	2	det	_	_
 2	tillaga	tillaga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
 3	okkar	ég	PRON	PRO-G	Case=Gen	2	nmod:poss	_	SpaceAfter=No
@@ -84,18 +80,18 @@
 26	orðið	lokaorð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obj	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = G-33-4649173,.6
-# X_ID = ID_MISSING
-# text = Sú tillaga var felld .
+# sent_id = ALTHINGI_TKG_2011_G-33-4649173,.5
+# X_ID = ID_missing_6
+# text = Sú tillaga var felld.
 1	Sú	sá	DET	D-N	Case=Nom	2	det	_	_
 2	tillaga	tillaga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 4	felld	fella	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4649173,.7
-# X_ID = ID_MISSING
-# text = Við verðum því einfaldlega að vinna eftir þeirri tillögu og niðurstöðu sem liggur fyrir þinginu, það er að við erum í þessu aðildarferli .
+# sent_id = ALTHINGI_TKG_2011_G-33-4649173,.6
+# X_ID = ID_missing_7
+# text = Við verðum því einfaldlega að vinna eftir þeirri tillögu og niðurstöðu sem liggur fyrir þinginu, það er að við erum í þessu aðildarferli.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
@@ -122,9 +118,9 @@
 24	aðildarferli	aðildarferli	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	dep	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4649173,.8
-# X_ID = ID_MISSING
-# text = Stjórnmálaöflin eiga því að sameinast um að ná sem hagfelldustum samningi þannig að Íslendingar geti kosið um raunverulegan valkost þegar þar að kemur .
+# sent_id = ALTHINGI_TKG_2011_G-33-4649173,.7
+# X_ID = ID_missing_8
+# text = Stjórnmálaöflin eiga því að sameinast um að ná sem hagfelldustum samningi þannig að Íslendingar geti kosið um raunverulegan valkost þegar þar að kemur.
 1	Stjórnmálaöflin	stjórnmálaafl	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
 2	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	því	því	PRON	PRO-D	Case=Dat	2	obl	_	_
@@ -150,9 +146,9 @@
 23	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	16	obl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4649173,.9
-# X_ID = ID_MISSING
-# text = Ég vil hins vegar koma aftur að EES-samningnum og þeirri dínamík sem enn er í honum þó að hann hafi að einhverju leyti veikst, meðal annars vegna þess að við höfum ekki sinnt hlutverki okkar nægilega vel .
+# sent_id = ALTHINGI_TKG_2011_G-33-4649173,.8
+# X_ID = ID_missing_9
+# text = Ég vil hins vegar koma aftur að EES-samningnum og þeirri dínamík sem enn er í honum þó að hann hafi að einhverju leyti veikst, meðal annars vegna þess að við höfum ekki sinnt hlutverki okkar nægilega vel.
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
 3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
@@ -193,9 +189,9 @@
 38	vel	vel	ADV	ADV	Degree=Pos	37	advmod	_	SpaceAfter=No
 39	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4649173,.10
-# X_ID = ID_MISSING
-# text = Ég hef hins vegar miklar áhyggjur af því hvernig gjaldeyrishöftunum vindur fram .
+# sent_id = ALTHINGI_TKG_2011_G-33-4649173,.9
+# X_ID = ID_missing_10
+# text = Ég hef hins vegar miklar áhyggjur af því hvernig gjaldeyrishöftunum vindur fram.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
@@ -210,9 +206,9 @@
 12	fram	fram	ADP	RP	_	11	compound:prt	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4649173,.11
-# X_ID = ID_MISSING
-# text = Nú ákváðum við á sínum tíma að vera með gjaldeyrishöft í skamman tíma,
+# sent_id = ALTHINGI_TKG_2011_G-33-4649173,.10
+# X_IDs = ID_missing_11 ; ID_missing_12
+# text = Nú ákváðum við á sínum tíma að vera með gjaldeyrishöft í skamman tíma, en eins og fram hefur komið er ríkisstjórn vinstri manna að festa þau til lengri tíma sem er að mínu mati í Forseti hringir. algerri andstöðu við EES-samninginn.
 1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	ákváðum	ákveða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -227,47 +223,46 @@
 12	skamman	skammur	ADJ	ADJ-A	Case=Acc|Degree=Pos	13	amod	_	_
 13	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	2	punct	_	_
+15	en	en	CCONJ	CONJ	_	26	cc	_	_
+16	eins	_	ADV	ADVR	Degree=Cmp	26	advmod	_	_
+17	og	_	ADP	P	_	20	case	_	_
+18	fram	fram	ADP	RP	_	20	compound:prt	_	_
+19	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	20	aux	_	_
+20	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	16	obl	_	_
+21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	26	cop	_	_
+22	ríkisstjórn	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	26	nsubj	_	_
+23	vinstri	vinstri	ADJ	ADJ-G	Case=Gen|Degree=Pos	24	amod	_	_
+24	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	22	nmod:poss	_	_
+25	að	að	PART	TO	_	26	mark	_	_
+26	festa	festa	VERB	VB	VerbForm=Inf	2	conj	_	OriginalHead=0
+27	þau	það	PRON	PRO-A	Case=Acc	26	obj	_	_
+28	til	til	ADP	P	_	30	case	_	_
+29	lengri	langur	ADJ	ADJR-G	Case=Gen|Degree=Cmp	30	amod	_	_
+30	tíma	tími	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	26	obl	_	_
+31	sem	sem	SCONJ	C	_	35	mark	_	_
+32	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
+33	að	að	ADP	P	_	35	case	_	_
+34	mínu	minn	PRON	PRO-D	Case=Dat	35	nmod:poss	_	_
+35	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	acl:relcl	_	_
+36	í	í	ADP	P	_	41	case	_	_
+37	Forseti	forseti	PROPN	NPR-N	_	38	nsubj	_	_
+38	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	41	dep	_	SpaceAfter=No
+39	.	.	PUNCT	.	_	38	punct	_	_
+40	algerri	alger	ADJ	ADJ-D	Case=Dat|Degree=Pos	41	amod	_	_
+41	andstöðu	andstaða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	35	obl	_	_
+42	við	við	ADP	P	_	43	case	_	_
+43	EES-samninginn	ees-samningur	PROPN	NPR-A	_	41	obl	_	SpaceAfter=No
+44	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4649173,.12
-# X_ID = ID_MISSING
-# text = en eins og fram hefur komið er ríkisstjórn vinstri manna að festa þau til lengri tíma sem er að mínu mati í Forseti hringir . algerri andstöðu við EES-samninginn .
-1	en	en	CCONJ	CONJ	_	12	cc	_	_
-2	eins	_	ADV	ADVR	Degree=Cmp	12	advmod	_	_
-3	og	_	ADP	P	_	6	case	_	_
-4	fram	fram	ADP	RP	_	6	compound:prt	_	_
-5	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
-6	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	2	obl	_	_
-7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
-8	ríkisstjórn	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
-9	vinstri	vinstri	ADJ	ADJ-G	Case=Gen|Degree=Pos	10	amod	_	_
-10	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	_
-11	að	að	PART	TO	_	12	mark	_	_
-12	festa	festa	VERB	VB	VerbForm=Inf	0	root	_	_
-13	þau	það	PRON	PRO-A	Case=Acc	12	obj	_	_
-14	til	til	ADP	P	_	16	case	_	_
-15	lengri	langur	ADJ	ADJR-G	Case=Gen|Degree=Cmp	16	amod	_	_
-16	tíma	tími	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	obl	_	_
-17	sem	sem	SCONJ	C	_	21	mark	_	_
-18	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	21	cop	_	_
-19	að	að	ADP	P	_	21	case	_	_
-20	mínu	minn	PRON	PRO-D	Case=Dat	21	nmod:poss	_	_
-21	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	acl:relcl	_	_
-22	í	í	ADP	P	_	27	case	_	_
-23	Forseti	forseti	PROPN	NPR-N	_	24	nsubj	_	_
-24	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	27	dep	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	24	punct	_	_
-26	algerri	alger	ADJ	ADJ-D	Case=Dat|Degree=Pos	27	amod	_	_
-27	andstöðu	andstaða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
-28	við	við	ADP	P	_	29	case	_	_
-29	EES-samninginn	ees-samningur	PROPN	NPR-A	_	27	obl	_	SpaceAfter=No
-30	.	.	PUNCT	.	_	12	punct	_	_
-
+# sent_id = ALTHINGI_TKG_2011_G-33-4649173,.11
+# X_ID = ID_missing_13
+# text = Hver er skoðun hv. þingmanns á gjaldeyrishöftunum?
 1	Hver	hver	PRON	WPRO-N	Case=Nom	3	obj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	skoðun	skoðun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 4	hv.	háttvirtur	ADJ	ADJ-G	Case=Gen|Degree=Pos	5	amod	_	_
 5	þingmanns	þingmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	nmod:poss	_	_
 6	á	á	ADP	P	_	7	case	_	_
-7	gjaldeyrishöftunum	gjaldeyrishaft	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	_
+7	gjaldeyrishöftunum	gjaldeyrishaft	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
 8	?	?	PUNCT	.	_	3	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = G-33-4743644,.1
-# X_ID = ID_MISSING
-# text = Hæstv. forseti . Já, takk fyrir andsvarið, fyrsta andsvarið sem ég fæ eftir að ég tók sæti á Alþingi .
+# sent_id = ALTHINGI_BO_2013_G-33-4743644,.1
+# X_ID = ID_missing_1
+# text = Hæstv. forseti. Já, takk fyrir andsvarið, fyrsta andsvarið sem ég fæ eftir að ég tók sæti á Alþingi.
 1	Hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -24,28 +24,24 @@
 21	Alþingi	alþingi	PROPN	NPR-D	_	18	obl	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4743644,.2
-# X_ID = ID_MISSING
-# text = Þetta var mjög pent og huggulegt,
+# sent_id = ALTHINGI_BO_2013_G-33-4743644,.2
+# X_IDs = ID_missing_2 ; ID_missing_3
+# text = Þetta var mjög pent og huggulegt, takk fyrir það.
 1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
 4	pent	penn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 5	og	og	CCONJ	CONJ	_	6	cc	_	_
 6	huggulegt	huggulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	4	punct	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	takk	takk	INTJ	INTJ	_	10	discourse	_	_
+9	fyrir	fyrir	ADP	P	_	10	case	_	_
+10	það	það	PRON	PRO-A	Case=Acc	4	conj	_	OriginalHead=0|SpaceAfter=No
+11	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4743644,.3
-# X_ID = ID_MISSING
-# text = takk fyrir það .
-1	takk	takk	INTJ	INTJ	_	3	discourse	_	_
-2	fyrir	fyrir	ADP	P	_	3	case	_	_
-3	það	það	PRON	PRO-A	Case=Acc	0	root	_	SpaceAfter=No
-4	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4743644,.4
-# X_ID = ID_MISSING
-# text = Ég er alls ekkert hrædd við að stíga upp í ræðustólinn .
+# sent_id = ALTHINGI_BO_2013_G-33-4743644,.3
+# X_ID = ID_missing_4
+# text = Ég er alls ekkert hrædd við að stíga upp í ræðustólinn.
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	alls	allur	DET	Q-G	Case=Gen	4	obl	_	_
@@ -59,9 +55,9 @@
 11	ræðustólinn	ræðustóll	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4743644,.5
-# X_ID = ID_MISSING
-# text = Ég get ekki tekið afstöðu til þess hvort ég sé sammála því eða ekki, Öryrkjabandalaginu, með þessa samningstaktík eða strategíu .
+# sent_id = ALTHINGI_BO_2013_G-33-4743644,.4
+# X_ID = ID_missing_5
+# text = Ég get ekki tekið afstöðu til þess hvort ég sé sammála því eða ekki, Öryrkjabandalaginu, með þessa samningstaktík eða strategíu.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	get	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -86,9 +82,9 @@
 22	strategíu	strategía	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	conj	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4743644,.6
-# X_ID = ID_MISSING
-# text = Ég veit ekki nákvæmlega hvað þeim gekk til þegar þau sögðu sig frá þessari vinnu .
+# sent_id = ALTHINGI_BO_2013_G-33-4743644,.5
+# X_ID = ID_missing_6
+# text = Ég veit ekki nákvæmlega hvað þeim gekk til þegar þau sögðu sig frá þessari vinnu.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -106,9 +102,9 @@
 15	vinnu	vinna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4743644,.7
-# X_ID = ID_MISSING
-# text = Væntanlega voru þau bara alls kostar ósátt við hvert stefndi,
+# sent_id = ALTHINGI_BO_2013_G-33-4743644,.6
+# X_IDs = ID_missing_7 ; ID_missing_8 ; ID_missing_9
+# text = Væntanlega voru þau bara alls kostar ósátt við hvert stefndi, mér heyrðist það þegar við í velferðarnefnd fórum og hittum Öryrkjabandalagið, þeim fannst ekki hlustað á sig.
 1	Væntanlega	væntanlega	ADV	ADV	Degree=Pos	7	advmod	_	_
 2	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
 3	þau	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
@@ -119,38 +115,30 @@
 8	við	við	ADP	P	_	10	case	_	_
 9	hvert	hvert	ADV	WADV	Degree=Pos	10	advmod	_	_
 10	stefndi	stefna	VERB	VBDI	Mood=Ind|Tense=Past	7	amod	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	7	punct	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	mér	ég	PRON	PRO-D	Case=Dat	13	nsubj	_	_
+13	heyrðist	heyra	VERB	VBDI	Mood=Ind|Tense=Past	7	conj	_	OriginalHead=0
+14	það	það	PRON	PRO-N	Case=Nom	13	obj	_	_
+15	þegar	þegar	ADP	P	_	19	case	_	_
+16	við	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
+17	í	í	ADP	P	_	18	case	_	_
+18	velferðarnefnd	velferðarnefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
+19	fórum	fara	VERB	VBDI	Mood=Ind|Tense=Past	13	obl	_	_
+20	og	og	CCONJ	CONJ	_	21	cc	_	_
+21	hittum	hitta	VERB	VBDI	Mood=Ind|Tense=Past	19	conj	_	_
+22	Öryrkjabandalagið	öryrkjabandalag	PROPN	NPR-A	_	21	obj	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	21	punct	_	_
+24	þeim	það	PRON	PRO-D	Case=Dat	25	nsubj	_	_
+25	fannst	finna	VERB	VBDI	Mood=Ind|Tense=Past	7	conj	_	OriginalHead=0
+26	ekki	ekki	ADV	NEG	_	25	advmod	_	_
+27	hlustað	hlusta	VERB	VAN	Tense=Past|VerbForm=Part	25	xcomp	_	_
+28	á	á	ADP	P	_	29	case	_	_
+29	sig	sig	PRON	PRO-A	Case=Acc	27	obl	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4743644,.8
-# X_ID = ID_MISSING
-# text = mér heyrðist það þegar við í velferðarnefnd fórum og hittum Öryrkjabandalagið,
-1	mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
-2	heyrðist	heyra	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	það	það	PRON	PRO-N	Case=Nom	2	obj	_	_
-4	þegar	þegar	ADP	P	_	8	case	_	_
-5	við	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
-6	í	í	ADP	P	_	7	case	_	_
-7	velferðarnefnd	velferðarnefnd	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
-8	fórum	fara	VERB	VBDI	Mood=Ind|Tense=Past	2	obl	_	_
-9	og	og	CCONJ	CONJ	_	10	cc	_	_
-10	hittum	hitta	VERB	VBDI	Mood=Ind|Tense=Past	8	conj	_	_
-11	Öryrkjabandalagið	öryrkjabandalag	PROPN	NPR-A	_	10	obj	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	2	punct	_	_
-
-# sent_id = G-33-4743644,.9
-# X_ID = ID_MISSING
-# text = þeim fannst ekki hlustað á sig .
-1	þeim	það	PRON	PRO-D	Case=Dat	2	nsubj	_	_
-2	fannst	finna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
-4	hlustað	hlusta	VERB	VAN	Tense=Past|VerbForm=Part	2	xcomp	_	_
-5	á	á	ADP	P	_	6	case	_	_
-6	sig	sig	PRON	PRO-A	Case=Acc	4	obl	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4743644,.10
-# X_ID = ID_MISSING
-# text = Þá er kannski hreinlegra að vera ekki partur af samkomulaginu ef maður er ekki sáttur við það .
+# sent_id = ALTHINGI_BO_2013_G-33-4743644,.7
+# X_ID = ID_missing_10
+# text = Þá er kannski hreinlegra að vera ekki partur af samkomulaginu ef maður er ekki sáttur við það.
 1	Þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	kannski	kannski	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -170,27 +158,30 @@
 17	það	það	PRON	PRO-A	Case=Acc	15	amod	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4743644,.11
-# X_ID = ID_MISSING
-# text = Ég veit það ekki .
+# sent_id = ALTHINGI_BO_2013_G-33-4743644,.8
+# X_ID = ID_missing_11
+# text = Ég veit það ekki.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
 4	ekki	ekki	ADV	NEG	_	2	advmod	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_BO_2013_G-33-4743644,.9
+# X_ID = ID_missing_12
+# text = Nú er ég bara með getgátur, er bara að hugsa þetta upphátt.
 1	Nú	nú	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 4	bara	bara	ADV	FP	Degree=Pos	6	advmod	_	_
 5	með	með	ADP	P	_	6	case	_	_
-6	getgátur	getgáta	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	0	root	_	_
+6	getgátur	getgáta	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
 7	,	,	PUNCT	,	_	6	punct	_	_
 8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 9	bara	bara	ADV	FP	Degree=Pos	11	advmod	_	_
 10	að	að	PART	TO	_	11	mark	_	_
 11	hugsa	hugsa	VERB	VB	VerbForm=Inf	6	conj	_	_
 12	þetta	þessi	DET	D-A	Case=Acc	11	obj	_	_
-13	upphátt	upphátt	ADV	ADV	Degree=Pos	11	advmod	_	_
+13	upphátt	upphátt	ADV	ADV	Degree=Pos	11	advmod	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	6	punct	_	_
 

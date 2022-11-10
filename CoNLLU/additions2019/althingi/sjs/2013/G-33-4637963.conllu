@@ -1,6 +1,6 @@
-# sent_id = G-33-4637963,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Hæstv. ráðherra má treysta því að efnahags- og viðskiptanefnd mun ekki draga af sér við að skoða þessi mál .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.1
+# X_ID = ID_missing_1
+# text = Frú forseti. Hæstv. ráðherra má treysta því að efnahags- og viðskiptanefnd mun ekki draga af sér við að skoða þessi mál.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -26,9 +26,9 @@
 23	mál	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	21	obj	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4637963,.2
-# X_ID = ID_MISSING
-# text = Ég skal vera með í þeim hópi varðandi bankaskattinn .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.2
+# X_ID = ID_missing_2
+# text = Ég skal vera með í þeim hópi varðandi bankaskattinn.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	skal	skulu	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vera	vera	AUX	BE	VerbForm=Inf	2	cop	_	_
@@ -40,9 +40,9 @@
 9	bankaskattinn	bankaskattur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4637963,.3
-# X_ID = ID_MISSING
-# text = Ég er mjög áhugasamur um það mál .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.3
+# X_ID = ID_missing_3
+# text = Ég er mjög áhugasamur um það mál.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -52,9 +52,9 @@
 7	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	amod	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4637963,.4
-# X_ID = ID_MISSING
-# text = Til að það misskiljist ekki er ég hlynntur því að við reynum að ná þessum skatti, þessum tekjum,
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.4
+# X_IDs = ID_missing_4 ; ID_missing_5 ; ID_missing_6
+# text = Til að það misskiljist ekki er ég hlynntur því að við reynum að ná þessum skatti, þessum tekjum, skárra væri það nú, ég hef nú yfirleitt verið frekar þekktur fyrir eitthvað annað.
 1	Til	til	ADP	P	_	4	case	_	_
 2	að	að	SCONJ	C	_	4	mark	_	_
 3	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -74,35 +74,27 @@
 17	,	,	PUNCT	,	_	16	punct	_	_
 18	þessum	þessi	DET	D-D	Case=Dat	19	det	_	_
 19	tekjum	tekja	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	appos	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	8	punct	_	_
+20	,	,	PUNCT	,	_	16	punct	_	_
+21	skárra	skárri	ADJ	ADJR-N	Case=Nom|Degree=Cmp	8	conj	_	OriginalHead=0
+22	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	21	cop	_	_
+23	það	það	PRON	PRO-N	Case=Nom	21	nsubj	_	_
+24	nú	nú	ADV	ADV	Degree=Pos	21	advmod	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	8	punct	_	_
+26	ég	ég	PRON	PRO-N	Case=Nom	32	nsubj	_	_
+27	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	32	aux	_	_
+28	nú	nú	ADV	ADV	Degree=Pos	32	advmod	_	_
+29	yfirleitt	yfirleitt	ADV	ADV	Degree=Pos	32	advmod	_	_
+30	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	32	cop	_	_
+31	frekar	frekar	ADV	ADVR	Degree=Cmp	32	advmod	_	_
+32	þekktur	þekktur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	conj	_	OriginalHead=0
+33	fyrir	fyrir	ADP	P	_	35	case	_	_
+34	eitthvað	einhver	DET	Q-A	Case=Acc	35	amod	_	_
+35	annað	annar	PRON	OTHER-A	Case=Acc	32	obl	_	SpaceAfter=No
+36	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-33-4637963,.5
-# X_ID = ID_MISSING
-# text = skárra væri það nú,
-1	skárra	skárri	ADJ	ADJR-N	Case=Nom|Degree=Cmp	0	root	_	_
-2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	1	cop	_	_
-3	það	það	PRON	PRO-N	Case=Nom	1	nsubj	_	_
-4	nú	nú	ADV	ADV	Degree=Pos	1	advmod	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	1	punct	_	_
-
-# sent_id = G-33-4637963,.6
-# X_ID = ID_MISSING
-# text = ég hef nú yfirleitt verið frekar þekktur fyrir eitthvað annað .
-1	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-2	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	7	aux	_	_
-3	nú	nú	ADV	ADV	Degree=Pos	7	advmod	_	_
-4	yfirleitt	yfirleitt	ADV	ADV	Degree=Pos	7	advmod	_	_
-5	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	7	cop	_	_
-6	frekar	frekar	ADV	ADVR	Degree=Cmp	7	advmod	_	_
-7	þekktur	þekktur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-8	fyrir	fyrir	ADP	P	_	10	case	_	_
-9	eitthvað	einhver	DET	Q-A	Case=Acc	10	amod	_	_
-10	annað	annar	PRON	OTHER-A	Case=Acc	7	obl	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	7	punct	_	_
-
-# sent_id = G-33-4637963,.7
-# X_ID = ID_MISSING
-# text = Það eru einfaldlega þeir fyrirvarar á af minni hálfu að þetta reynist lagalega og tæknilega mögulegt og við komumst upp með þetta .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.5
+# X_ID = ID_missing_7
+# text = Það eru einfaldlega þeir fyrirvarar á af minni hálfu að þetta reynist lagalega og tæknilega mögulegt og við komumst upp með þetta.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	6	expl	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	6	advmod	_	_
@@ -127,9 +119,9 @@
 22	þetta	þessi	DET	D-A	Case=Acc	19	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4637963,.8
-# X_ID = ID_MISSING
-# text = Auðvitað getur maður varla setið á sér með að nefna að ef við náum þarna kannski 22 milljörðum á tveimur árum út úr búunum í skattgreiðslur á kostnað kröfuhafanna, sem eiga svo það sem eftir stendur, eru þeir 22 milljarðar ekki að fara í að lækka skuldir heimilanna eins og talað var einhvern tímann um að ávinningur úr þessari átt ætti að ganga til .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.6
+# X_ID = ID_missing_8
+# text = Auðvitað getur maður varla setið á sér með að nefna að ef við náum þarna kannski 22 milljörðum á tveimur árum út úr búunum í skattgreiðslur á kostnað kröfuhafanna, sem eiga svo það sem eftir stendur, eru þeir 22 milljarðar ekki að fara í að lækka skuldir heimilanna eins og talað var einhvern tímann um að ávinningur úr þessari átt ætti að ganga til.
 1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	5	advmod	_	_
 2	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
 3	maður	maður	PRON	MAN-N	_	5	nsubj	_	_
@@ -198,9 +190,9 @@
 66	til	til	ADP	P	_	65	obl	_	SpaceAfter=No
 67	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4637963,.9
-# X_ID = ID_MISSING
-# text = Varðandi skattprósenturnar og hvernig við stöndum vörð um hina tekjulægstu er þetta eins og ráðherra kom réttilega inn á í sínu máli, það þarf alltaf að skoða heildarmyndina .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.7
+# X_ID = ID_missing_9
+# text = Varðandi skattprósenturnar og hvernig við stöndum vörð um hina tekjulægstu er þetta eins og ráðherra kom réttilega inn á í sínu máli, það þarf alltaf að skoða heildarmyndina.
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	12	acl	_	_
 2	skattprósenturnar	skattprósenta	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obl	_	_
 3	og	og	CCONJ	CONJ	_	6	cc	_	_
@@ -232,9 +224,9 @@
 29	heildarmyndina	heildarmynd	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	28	obj	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	25	punct	_	_
 
-# sent_id = G-33-4637963,.10
-# X_ID = ID_MISSING
-# text = Við þurfum að skoða tilfærslukerfin og vaxtabæturnar og barnabæturnar, skattleysismörkin og allt þetta .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.8
+# X_ID = ID_missing_10
+# text = Við þurfum að skoða tilfærslukerfin og vaxtabæturnar og barnabæturnar, skattleysismörkin og allt þetta.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -251,9 +243,9 @@
 14	þetta	þessi	DET	D-A	Case=Acc	13	det	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4637963,.11
-# X_ID = ID_MISSING
-# text = Það er ekki bara ein prósenta eða því um líkt .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.9
+# X_ID = ID_missing_11
+# text = Það er ekki bara ein prósenta eða því um líkt.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	6	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	ekki	ekki	ADV	NEG	_	6	advmod	_	_
@@ -266,9 +258,9 @@
 10	líkt	líkur	ADJ	ADJ-A	Case=Acc|Degree=Pos	8	amod	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4637963,.12
-# X_ID = ID_MISSING
-# text = Það var auðvitað allt sett í samhengi .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.10
+# X_ID = ID_missing_12
+# text = Það var auðvitað allt sett í samhengi.
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -278,9 +270,9 @@
 7	samhengi	samhengi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4637963,.13
-# X_ID = ID_MISSING
-# text = Við lágtekjutengdum meira í meira mæli stuðningsaðgerðirnar í kerfinu líka til að hjálpa tekjulægstu hópunum á þessum erfiðustu árum .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.11
+# X_ID = ID_missing_13
+# text = Við lágtekjutengdum meira í meira mæli stuðningsaðgerðirnar í kerfinu líka til að hjálpa tekjulægstu hópunum á þessum erfiðustu árum.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	lágtekjutengdum	lágtekjutengdur	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	meira	mikill	DET	QR-A	Case=Acc	2	obl	_	_
@@ -302,9 +294,9 @@
 19	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4637963,.14
-# X_ID = ID_MISSING
-# text = Ég er hins vegar ekki alveg sammála þeim samanburði og aðferðafræði við að leggja saman lífeyrisskuldbindingarnar og skatttekjurnar sem koma svo við útgreiðslur frá þeim og kalla það allt saman skattprósentu á einstaklinga .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.12
+# X_ID = ID_missing_14
+# text = Ég er hins vegar ekki alveg sammála þeim samanburði og aðferðafræði við að leggja saman lífeyrisskuldbindingarnar og skatttekjurnar sem koma svo við útgreiðslur frá þeim og kalla það allt saman skattprósentu á einstaklinga.
 1	Ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
@@ -340,9 +332,9 @@
 33	einstaklinga	einstaklingur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	31	obl	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4637963,.15
-# X_ID = ID_MISSING
-# text = Þegar lífeyrir kemur til útgreiðslu er verið að taka í raun og veru, sem er umdeilanlegt mál að sjálfsögðu, fullan tekjuskatt af ávöxtuninni sem margir hafa sagt að ætti frekar að meðhöndlast eins og fjármagnstekjur og sæta fjármagnstekjuskattlagningu .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.13
+# X_ID = ID_missing_15
+# text = Þegar lífeyrir kemur til útgreiðslu er verið að taka í raun og veru, sem er umdeilanlegt mál að sjálfsögðu, fullan tekjuskatt af ávöxtuninni sem margir hafa sagt að ætti frekar að meðhöndlast eins og fjármagnstekjur og sæta fjármagnstekjuskattlagningu.
 1	Þegar	þegar	ADP	P	_	3	case	_	_
 2	lífeyrir	lífeyrir	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	9	obl	_	_
@@ -385,9 +377,9 @@
 40	fjármagnstekjuskattlagningu	fjármagnstekjuskattlagning	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	39	obj	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = G-33-4637963,.16
-# X_ID = ID_MISSING
-# text = Þá hækkar prósentan vissulega dálítið mikið ef maður tekur með í reikninginn að maður tekur allar útgreiðslurnar, bæði lífeyririnn eins og hann var borgaður inn á sínum tíma, skattfrjáls, og þá ávöxtun sem hann hefur tekið á sig og lætur borga af því fullan tekjuskatt þegar greitt er út .
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.14
+# X_ID = ID_missing_16
+# text = Þá hækkar prósentan vissulega dálítið mikið ef maður tekur með í reikninginn að maður tekur allar útgreiðslurnar, bæði lífeyririnn eins og hann var borgaður inn á sínum tíma, skattfrjáls, og þá ávöxtun sem hann hefur tekið á sig og lætur borga af því fullan tekjuskatt þegar greitt er út.
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	hækkar	hækka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	prósentan	prósenta	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
@@ -443,9 +435,9 @@
 53	út	út	ADP	RP	_	51	compound:prt	_	SpaceAfter=No
 54	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4637963,.17
-# X_ID = ID_MISSING
-# text = Það kemur sér vel fyrir ríki og sveitarfélög,
+# sent_id = ALTHINGI_SJS_2013_G-33-4637963,.15
+# X_IDs = ID_missing_17 ; ID_missing_18
+# text = Það kemur sér vel fyrir ríki og sveitarfélög, en það má auðvitað segja að sé dálítið harkaleg skattlagning.
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	sér	sig	PRON	PRO-D	Case=Dat	2	obj	_	_
@@ -455,16 +447,15 @@
 7	og	og	CCONJ	CONJ	_	8	cc	_	_
 8	sveitarfélög	sveitarfélag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	conj	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	2	punct	_	_
-
-1	en	en	CCONJ	CONJ	_	5	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	5	obl	_	_
-3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
-4	auðvitað	auðvitað	ADV	ADV	Degree=Pos	5	advmod	_	_
-5	segja	segja	VERB	VB	VerbForm=Inf	0	root	_	_
-6	að	að	SCONJ	C	_	10	mark	_	_
-7	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	10	cop	_	_
-8	dálítið	dálítið	ADV	ADV	Degree=Pos	9	amod	_	_
-9	harkaleg	harkalegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	_
-10	skattlagning	skattlagning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	xcomp	_	_
-11	.	.	PUNCT	.	_	5	punct	_	_
+10	en	en	CCONJ	CONJ	_	14	cc	_	_
+11	það	það	PRON	PRO-N	Case=Nom	14	obl	_	_
+12	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	14	aux	_	_
+13	auðvitað	auðvitað	ADV	ADV	Degree=Pos	14	advmod	_	_
+14	segja	segja	VERB	VB	VerbForm=Inf	2	conj	_	OriginalHead=0
+15	að	að	SCONJ	C	_	19	mark	_	_
+16	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	19	cop	_	_
+17	dálítið	dálítið	ADV	ADV	Degree=Pos	18	amod	_	_
+18	harkaleg	harkalegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	amod	_	_
+19	skattlagning	skattlagning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	xcomp	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	2	punct	_	_
 

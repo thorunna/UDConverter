@@ -1,6 +1,6 @@
-# sent_id = G-2-1036615.SANITY,.1
-# X_ID = ID_MISSING
-# text = Íslensku keppendurnir átta á Ólympíuleikunum í Ríó tínast nú til Brasilíu þar sem sundmaðurinn Anton Sveinn McKee mun ríða á vaðið fyrir hönd Íslands á laugardag .
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.1
+# X_ID = ID_missing_1
+# text = Íslensku keppendurnir átta á Ólympíuleikunum í Ríó tínast nú til Brasilíu þar sem sundmaðurinn Anton Sveinn McKee mun ríða á vaðið fyrir hönd Íslands á laugardag.
 1	Íslensku	íslenskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	keppendurnir	keppandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	nsubj	_	_
 3	átta	átta	NUM	NUM-N	Case=Nom	2	amod	_	_
@@ -29,9 +29,9 @@
 26	laugardag	laugardagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-2-1036615.SANITY,.2
-# X_ID = ID_MISSING
-# text = Andri Stefánsson, aðalfararstjóri hópsins, segir mikinn spenning og gleði í hópnum og hann verði ekki var við óeirðir og leiðindi sem fréttir berist af frá Brasilíu .
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.2
+# X_ID = ID_missing_2
+# text = Andri Stefánsson, aðalfararstjóri hópsins, segir mikinn spenning og gleði í hópnum og hann verði ekki var við óeirðir og leiðindi sem fréttir berist af frá Brasilíu.
 1	Andri	andri	PROPN	NPR-N	_	7	nsubj	_	_
 2	Stefánsson	stefánsson	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	2	punct	_	_
@@ -62,9 +62,9 @@
 28	Brasilíu	brasilía	PROPN	NPR-D	_	25	obl	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-2-1036615.SANITY,.3
-# X_ID = ID_MISSING
-# text = „ Mér finnst vera fínt ástand á fólkinu,
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = „ Mér finnst vera fínt ástand á fólkinu, það er góð stemning og allir glaðir að koma í hús.
 1	„	„	PUNCT	"	_	3	punct	_	_
 2	Mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
 3	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -74,26 +74,22 @@
 7	á	á	ADP	P	_	8	case	_	_
 8	fólkinu	fólk	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	3	punct	_	_
+10	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	conj	_	OriginalHead=0
+11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
+12	góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
+13	stemning	stemning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	obl	_	_
+14	og	og	CCONJ	CONJ	_	16	cc	_	_
+15	allir	allur	DET	Q-N	Case=Nom	16	nsubj	_	_
+16	glaðir	glaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	ccomp	_	_
+17	að	að	PART	TO	_	18	mark	_	_
+18	koma	koma	VERB	VB	VerbForm=Inf	16	advcl	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	hús	hús	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	obl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1036615.SANITY,.4
-# X_ID = ID_MISSING
-# text = það er góð stemning og allir glaðir að koma í hús .
-1	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
-3	góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
-4	stemning	stemning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	obl	_	_
-5	og	og	CCONJ	CONJ	_	7	cc	_	_
-6	allir	allur	DET	Q-N	Case=Nom	7	nsubj	_	_
-7	glaðir	glaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	ccomp	_	_
-8	að	að	PART	TO	_	9	mark	_	_
-9	koma	koma	VERB	VB	VerbForm=Inf	7	advcl	_	_
-10	í	í	ADP	P	_	11	case	_	_
-11	hús	hús	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	1	punct	_	_
-
-# sent_id = G-2-1036615.SANITY,.5
-# X_ID = ID_MISSING
-# text = Þetta er búið að vera langt ferðalag
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.4
+# X_IDs = ID_missing_5 ; ID_missing_6 ; ID_missing_7
+# text = Þetta er búið að vera langt ferðalag en það eru allir spenntir og síðan bara er þetta alltaf stór upplifun að koma inn í Ólympíuþorp og inn á Ólympíuleika.
 1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	búið	búa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -101,41 +97,33 @@
 5	vera	vera	AUX	BE	VerbForm=Inf	4	cop	_	_
 6	langt	langur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
 7	ferðalag	ferðalag	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	xcomp	_	_
+8	en	en	CCONJ	CONJ	_	12	cc	_	_
+9	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	12	expl	_	_
+10	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
+11	allir	allur	DET	Q-N	Case=Nom	12	obl	_	_
+12	spenntir	spenntur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	síðan	síðan	ADV	ADV	Degree=Pos	3	conj	_	OriginalHead=0
+15	bara	bara	ADV	FP	Degree=Pos	14	advmod	_	_
+16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+17	þetta	þessi	DET	D-N	Case=Nom	14	nsubj	_	_
+18	alltaf	alltaf	ADV	ADV	Degree=Pos	14	advmod	_	_
+19	stór	stór	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
+20	upplifun	upplifun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	xcomp	_	_
+21	að	að	PART	TO	_	22	mark	_	_
+22	koma	koma	VERB	VB	VerbForm=Inf	14	xcomp	_	_
+23	inn	inn	ADP	RP	_	25	compound:prt	_	_
+24	í	í	ADP	P	_	25	case	_	_
+25	Ólympíuþorp	ólympíuþorpur	PROPN	NPR-A	_	22	obl	_	_
+26	og	og	CCONJ	CONJ	_	29	cc	_	_
+27	inn	inn	ADP	RP	_	29	compound:prt	_	_
+28	á	á	ADP	P	_	29	case	_	_
+29	Ólympíuleika	ólympíuleikar	PROPN	NPRS-A	_	25	conj	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1036615.SANITY,.6
-# X_ID = ID_MISSING
-# text = en það eru allir spenntir
-1	en	en	CCONJ	CONJ	_	5	cc	_	_
-2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
-3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-4	allir	allur	DET	Q-N	Case=Nom	5	obl	_	_
-5	spenntir	spenntur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-
-# sent_id = G-2-1036615.SANITY,.7
-# X_ID = ID_MISSING
-# text = og síðan bara er þetta alltaf stór upplifun að koma inn í Ólympíuþorp og inn á Ólympíuleika .
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	síðan	síðan	ADV	ADV	Degree=Pos	0	root	_	_
-3	bara	bara	ADV	FP	Degree=Pos	2	advmod	_	_
-4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
-5	þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
-6	alltaf	alltaf	ADV	ADV	Degree=Pos	2	advmod	_	_
-7	stór	stór	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
-8	upplifun	upplifun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	_
-9	að	að	PART	TO	_	10	mark	_	_
-10	koma	koma	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-11	inn	inn	ADP	RP	_	13	compound:prt	_	_
-12	í	í	ADP	P	_	13	case	_	_
-13	Ólympíuþorp	ólympíuþorpur	PROPN	NPR-A	_	10	obl	_	_
-14	og	og	CCONJ	CONJ	_	17	cc	_	_
-15	inn	inn	ADP	RP	_	17	compound:prt	_	_
-16	á	á	ADP	P	_	17	case	_	_
-17	Ólympíuleika	ólympíuleikar	PROPN	NPRS-A	_	13	conj	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1036615.SANITY,.8
-# X_ID = ID_MISSING
-# text = Þetta er með því stærsta ef ekki það stærsta sem íþróttamenn upplifa á sínum ferli svo ég sé bara gleði og spenning í fólki, „ segir Andri .
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.5
+# X_ID = ID_missing_8
+# text = Þetta er með því stærsta ef ekki það stærsta sem íþróttamenn upplifa á sínum ferli svo ég sé bara gleði og spenning í fólki,„ segir Andri.
 1	Þetta	þessi	DET	D-N	Case=Nom	27	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
 3	með	með	ADP	P	_	5	case	_	_
@@ -166,9 +154,9 @@
 28	Andri	andri	PROPN	NPR-N	_	27	obl	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	27	punct	_	_
 
-# sent_id = G-2-1036615.SANITY,.9
-# X_ID = ID_MISSING
-# text = Óeirðarlögregla þurfti að koma kyndilbera Ólympíueldsins til aðstoðar í Ríó í gærkvöldi þegar hundruð mótmælenda hindruðu för hans um borgina .
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.6
+# X_ID = ID_missing_9
+# text = Óeirðarlögregla þurfti að koma kyndilbera Ólympíueldsins til aðstoðar í Ríó í gærkvöldi þegar hundruð mótmælenda hindruðu för hans um borgina.
 1	Óeirðarlögregla	óeirðarlögregla	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	þurfti	þurfa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -191,9 +179,9 @@
 20	borgina	borg	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1036615.SANITY,.10
-# X_ID = ID_MISSING
-# text = Öryggismál á leikunum hafa verið mikið til umfjöllunar
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.7
+# X_IDs = ID_missing_10 ; ID_missing_11
+# text = Öryggismál á leikunum hafa verið mikið til umfjöllunar og þá hefur gengið illa að selja miða á ýmsa viðburði þeirra.
 1	Öryggismál	öryggismál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 2	á	á	ADP	P	_	3	case	_	_
 3	leikunum	leikur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
@@ -202,27 +190,23 @@
 6	mikið	mikill	DET	Q-A	Case=Acc	4	obl	_	_
 7	til	til	ADP	P	_	8	case	_	_
 8	umfjöllunar	umfjöllun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	obl	_	_
+9	og	og	CCONJ	CONJ	_	12	cc	_	_
+10	þá	þá	ADV	ADV	Degree=Pos	12	advmod	_	_
+11	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	12	aux	_	_
+12	gengið	ganga	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
+13	illa	illa	ADV	ADV	Degree=Pos	12	advmod	_	_
+14	að	að	PART	TO	_	15	mark	_	_
+15	selja	selja	VERB	VB	VerbForm=Inf	12	xcomp	_	_
+16	miða	miði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obj	_	_
+17	á	á	ADP	P	_	19	case	_	_
+18	ýmsa	ýmis	DET	Q-A	Case=Acc	19	amod	_	_
+19	viðburði	viðburður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obl	_	_
+20	þeirra	hann	PRON	PRO-G	Case=Gen	19	nmod:poss	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1036615.SANITY,.11
-# X_ID = ID_MISSING
-# text = og þá hefur gengið illa að selja miða á ýmsa viðburði þeirra .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
-3	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
-4	gengið	ganga	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-5	illa	illa	ADV	ADV	Degree=Pos	4	advmod	_	_
-6	að	að	PART	TO	_	7	mark	_	_
-7	selja	selja	VERB	VB	VerbForm=Inf	4	xcomp	_	_
-8	miða	miði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obj	_	_
-9	á	á	ADP	P	_	11	case	_	_
-10	ýmsa	ýmis	DET	Q-A	Case=Acc	11	amod	_	_
-11	viðburði	viðburður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	_
-12	þeirra	hann	PRON	PRO-G	Case=Gen	11	nmod:poss	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-2-1036615.SANITY,.12
-# X_ID = ID_MISSING
-# text = „ Við erum svolítið blokkeruð frá þessu .
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.8
+# X_ID = ID_missing_12
+# text = „ Við erum svolítið blokkeruð frá þessu.
 1	„	„	PUNCT	"	_	5	punct	_	_
 2	Við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 3	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -232,103 +216,91 @@
 7	þessu	þessi	DET	D-D	Case=Dat	5	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1036615.SANITY,.13
-# X_ID = ID_MISSING
-# text = Við erum inni í Ólympíuþorpinu
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.9
+# X_IDs = ID_missing_13 ; ID_missing_14
+# text = Við erum inni í Ólympíuþorpinu og það má eiginlega segja að við séum í svona loftbólu.
 1	Við	ég	PRON	PRO-N	Case=Nom	0	root	_	_
 2	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	inni	inni	ADV	ADV	Degree=Pos	5	advmod	_	_
 4	í	í	ADP	P	_	5	case	_	_
 5	Ólympíuþorpinu	ólympíuþorp	PROPN	NPR-D	_	1	obl	_	_
+6	og	og	CCONJ	CONJ	_	10	cc	_	_
+7	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	10	expl	_	_
+8	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	10	aux	_	_
+9	eiginlega	eiginlega	ADV	ADV	Degree=Pos	10	advmod	_	_
+10	segja	segja	VERB	VB	VerbForm=Inf	1	conj	_	OriginalHead=0
+11	að	að	SCONJ	C	_	16	mark	_	_
+12	við	ég	PRON	PRO-N	Case=Nom	16	nsubj	_	_
+13	séum	vera	AUX	BEPS	Mood=Sub|Tense=Pres	16	cop	_	_
+14	í	í	ADP	P	_	16	case	_	_
+15	svona	svona	ADV	ADV	Degree=Pos	16	advmod	_	_
+16	loftbólu	loftbóla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	ccomp	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-2-1036615.SANITY,.14
-# X_ID = ID_MISSING
-# text = og það má eiginlega segja að við séum í svona loftbólu .
-1	og	og	CCONJ	CONJ	_	5	cc	_	_
-2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
-3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
-4	eiginlega	eiginlega	ADV	ADV	Degree=Pos	5	advmod	_	_
-5	segja	segja	VERB	VB	VerbForm=Inf	0	root	_	_
-6	að	að	SCONJ	C	_	11	mark	_	_
-7	við	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-8	séum	vera	AUX	BEPS	Mood=Sub|Tense=Pres	11	cop	_	_
-9	í	í	ADP	P	_	11	case	_	_
-10	svona	svona	ADV	ADV	Degree=Pos	11	advmod	_	_
-11	loftbólu	loftbóla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	ccomp	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	5	punct	_	_
-
-# sent_id = G-2-1036615.SANITY,.15
-# X_ID = ID_MISSING
-# text = Allt gengur vel hjá okkur
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.10
+# X_IDs = ID_missing_15 ; ID_missing_16 ; ID_missing_17
+# text = Allt gengur vel hjá okkur og það er verið að passa upp á íþróttafólkið, að það sé í forgrunni og kannski best hugsað um þau svo við sjáum voða lítið af þessu.“ Andri á von á því að ekki verði sama aðsókn á Ólympíuleikana í Ríó og var í London fyrir fjórum árum.
 1	Allt	allur	DET	Q-N	Case=Nom	2	nsubj	_	_
 2	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vel	vel	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	hjá	hjá	ADP	P	_	5	case	_	_
 5	okkur	ég	PRON	PRO-D	Case=Dat	2	obl	_	_
+6	og	og	CCONJ	CONJ	_	27	cc	_	_
+7	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	27	expl	_	_
+8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
+9	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	27	cop	_	_
+10	að	að	PART	TO	_	11	mark	_	_
+11	passa	passa	VERB	VB	VerbForm=Inf	27	xcomp	_	_
+12	upp	upp	ADP	RP	_	14	compound:prt	_	_
+13	á	á	ADP	P	_	14	case	_	_
+14	íþróttafólkið	íþróttafólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	að	að	SCONJ	C	_	20	mark	_	_
+17	það	það	PRON	PRO-N	Case=Nom	20	nsubj	_	_
+18	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	20	cop	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	forgrunni	forgrunnur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	conj	_	_
+21	og	og	CCONJ	CONJ	_	24	cc	_	_
+22	kannski	kannski	ADV	ADV	Degree=Pos	24	advmod	_	_
+23	best	vel	ADV	ADVS	Degree=Sup	24	advmod	_	_
+24	hugsað	hugsa	VERB	VAN	Tense=Past|VerbForm=Part	20	conj	_	_
+25	um	um	ADP	P	_	26	case	_	_
+26	þau	það	PRON	PRO-A	Case=Acc	24	obl	_	_
+27	svo	svo	ADV	ADV	Degree=Pos	2	conj	_	OriginalHead=0
+28	við	ég	PRON	PRO-N	Case=Nom	29	nsubj	_	_
+29	sjáum	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	27	advcl	_	_
+30	voða	voða	ADV	ADV	Degree=Pos	29	obj	_	_
+31	lítið	lítill	DET	Q-A	Case=Acc	30	amod	_	_
+32	af	af	ADP	P	_	33	case	_	_
+33	þessu	þessi	DET	D-D	Case=Dat	30	obl	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	33	punct	_	SpaceAfter=No
+35	“	“	PUNCT	"	_	33	punct	_	_
+36	Andri	andri	PROPN	NPR-N	_	37	nsubj	_	_
+37	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+38	von	von	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	obj	_	_
+39	á	á	ADP	P	_	40	case	_	_
+40	því	það	PRON	PRO-D	Case=Dat	38	obl	_	_
+41	að	að	SCONJ	C	_	43	mark	_	_
+42	ekki	ekki	ADV	NEG	_	43	advmod	_	_
+43	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	40	ccomp	_	_
+44	sama	sami	ADJ	ADJ-N	Case=Nom|Degree=Pos	45	amod	_	_
+45	aðsókn	aðsókn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	43	nsubj	_	_
+46	á	á	ADP	P	_	47	case	_	_
+47	Ólympíuleikana	ólympíuleikar	PROPN	NPRS-A	_	43	obl	_	_
+48	í	í	ADP	P	_	49	case	_	_
+49	Ríó	ríó	PROPN	NPR-D	_	47	obl	_	_
+50	og	og	ADP	P	_	53	case	_	_
+51	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	53	cop	_	_
+52	í	í	ADP	P	_	53	case	_	_
+53	London	london	PROPN	NPR-D	_	43	obl	_	_
+54	fyrir	fyrir	ADP	P	_	56	case	_	_
+55	fjórum	fjórir	NUM	NUM-D	Case=Dat	56	nummod	_	_
+56	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	53	obl	_	SpaceAfter=No
+57	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1036615.SANITY,.16
-# X_ID = ID_MISSING
-# text = og það er verið að passa upp á íþróttafólkið, að það sé í forgrunni og kannski best hugsað um þau svo við sjáum voða lítið af þessu . “
-1	og	og	CCONJ	CONJ	_	22	cc	_	_
-2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	22	expl	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
-4	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	22	cop	_	_
-5	að	að	PART	TO	_	6	mark	_	_
-6	passa	passa	VERB	VB	VerbForm=Inf	22	xcomp	_	_
-7	upp	upp	ADP	RP	_	9	compound:prt	_	_
-8	á	á	ADP	P	_	9	case	_	_
-9	íþróttafólkið	íþróttafólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	að	að	SCONJ	C	_	15	mark	_	_
-12	það	það	PRON	PRO-N	Case=Nom	15	nsubj	_	_
-13	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	15	cop	_	_
-14	í	í	ADP	P	_	15	case	_	_
-15	forgrunni	forgrunnur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	conj	_	_
-16	og	og	CCONJ	CONJ	_	19	cc	_	_
-17	kannski	kannski	ADV	ADV	Degree=Pos	19	advmod	_	_
-18	best	vel	ADV	ADVS	Degree=Sup	19	advmod	_	_
-19	hugsað	hugsa	VERB	VAN	Tense=Past|VerbForm=Part	15	conj	_	_
-20	um	um	ADP	P	_	21	case	_	_
-21	þau	það	PRON	PRO-A	Case=Acc	19	obl	_	_
-22	svo	svo	ADV	ADV	Degree=Pos	0	root	_	_
-23	við	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
-24	sjáum	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	22	advcl	_	_
-25	voða	voða	ADV	ADV	Degree=Pos	24	obj	_	_
-26	lítið	lítill	DET	Q-A	Case=Acc	25	amod	_	_
-27	af	af	ADP	P	_	28	case	_	_
-28	þessu	þessi	DET	D-D	Case=Dat	25	obl	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	28	punct	_	SpaceAfter=No
-30	“	“	PUNCT	"	_	22	punct	_	_
-
-# sent_id = G-2-1036615.SANITY,.17
-# X_ID = ID_MISSING
-# text = Andri á von á því að ekki verði sama aðsókn á Ólympíuleikana í Ríó og var í London fyrir fjórum árum .
-1	Andri	andri	PROPN	NPR-N	_	2	nsubj	_	_
-2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	von	von	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
-4	á	á	ADP	P	_	5	case	_	_
-5	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
-6	að	að	SCONJ	C	_	8	mark	_	_
-7	ekki	ekki	ADV	NEG	_	8	advmod	_	_
-8	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	5	ccomp	_	_
-9	sama	sami	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	_
-10	aðsókn	aðsókn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
-11	á	á	ADP	P	_	12	case	_	_
-12	Ólympíuleikana	ólympíuleikar	PROPN	NPRS-A	_	8	obl	_	_
-13	í	í	ADP	P	_	14	case	_	_
-14	Ríó	ríó	PROPN	NPR-D	_	12	obl	_	_
-15	og	og	ADP	P	_	18	case	_	_
-16	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	18	cop	_	_
-17	í	í	ADP	P	_	18	case	_	_
-18	London	london	PROPN	NPR-D	_	8	obl	_	_
-19	fyrir	fyrir	ADP	P	_	21	case	_	_
-20	fjórum	fjórir	NUM	NUM-D	Case=Dat	21	nummod	_	_
-21	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1036615.SANITY,.18
-# X_ID = ID_MISSING
-# text = Leikarnir í London hafi tekist frábærlega en Brasilíumennirnir hafi aðeins annan háttinn á .
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.11
+# X_ID = ID_missing_18
+# text = Leikarnir í London hafi tekist frábærlega en Brasilíumennirnir hafi aðeins annan háttinn á.
 1	Leikarnir	leikur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
 2	í	í	ADP	P	_	3	case	_	_
 3	London	london	PROPN	NPR-D	_	1	obl	_	_
@@ -344,66 +316,60 @@
 13	á	á	ADP	P	_	9	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1036615.SANITY,.19
-# X_ID = ID_MISSING
-# text = „ Þeir eru velviljaðir en
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.12
+# X_IDs = ID_missing_19 ; ID_missing_20 ; ID_missing_21
+# text = „ Þeir eru velviljaðir en „ í dag“ getur alveg eins þýtt„ á morgun“ hjá þeim.“ Í dag kemur í ljós hver íslensku keppendanna átta mun bera fána Íslands á setningarathöfninni á Maracana-vellinum annað kvöld.
 1	„	„	PUNCT	"	_	4	punct	_	_
 2	Þeir	hann	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 4	velviljaðir	velviljaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 5	en	en	CCONJ	CONJ	_	4	cc	_	_
-6	None	_	None	None	_	_	None	_	_
-
-# sent_id = G-2-1036615.SANITY,.20
-# X_ID = ID_MISSING
-# text = „ í dag “ getur alveg eins þýtt „ á morgun “ hjá þeim . “
-1	„	„	PUNCT	"	_	8	punct	_	_
-2	í	í	ADP	P	_	3	case	_	_
-3	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	dep	_	SpaceAfter=No
-4	“	“	PUNCT	"	_	3	punct	_	_
-5	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	8	aux	_	_
-6	alveg	alveg	ADV	ADV	Degree=Pos	8	advmod	_	_
-7	eins	eins	ADV	ADVR	Degree=Cmp	6	advmod	_	_
-8	þýtt	þýða	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
-9	„	„	PUNCT	"	_	8	punct	_	_
-10	á	á	ADP	P	_	11	case	_	_
-11	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	dep	_	SpaceAfter=No
-12	“	“	PUNCT	"	_	11	punct	_	_
-13	hjá	hjá	ADP	P	_	14	case	_	_
-14	þeim	hann	PRON	PRO-D	Case=Dat	8	obl	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	14	punct	_	SpaceAfter=No
-16	“	“	PUNCT	"	_	8	punct	_	_
-
-# sent_id = G-2-1036615.SANITY,.21
-# X_ID = ID_MISSING
-# text = Í dag kemur í ljós hver íslensku keppendanna átta mun bera fána Íslands á setningarathöfninni á Maracana-vellinum annað kvöld .
-1	Í	í	ADP	P	_	2	case	_	_
-2	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
-3	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	í	í	ADP	P	_	5	case	_	_
-5	ljós	ljós	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
-6	hver	hver	PRON	WPRO-N	Case=Nom	11	obj	_	_
-7	íslensku	íslenskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	8	amod	_	_
-8	keppendanna	keppandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	nmod:poss	_	_
-9	átta	átta	NUM	NUM-G	Case=Gen	8	amod	_	_
-10	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	11	aux	_	_
-11	bera	bera	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-12	fána	fáni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
-13	Íslands	ísland	PROPN	NPR-G	_	12	nmod:poss	_	_
-14	á	á	ADP	P	_	15	case	_	_
-15	setningarathöfninni	setningarathöfn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+7	„	„	PUNCT	"	_	14	punct	_	_
+8	í	í	ADP	P	_	9	case	_	_
+9	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	dep	_	SpaceAfter=No
+10	“	“	PUNCT	"	_	9	punct	_	_
+11	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	14	aux	_	_
+12	alveg	alveg	ADV	ADV	Degree=Pos	14	advmod	_	_
+13	eins	eins	ADV	ADVR	Degree=Cmp	12	advmod	_	_
+14	þýtt	þýða	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0|SpaceAfter=No
+15	„	„	PUNCT	"	_	14	punct	_	_
 16	á	á	ADP	P	_	17	case	_	_
-17	Maracana-vellinum	maracana-völlur	PROPN	NPR-D	_	15	obl	_	_
-18	annað	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	19	amod	_	_
-19	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	3	punct	_	_
+17	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	dep	_	SpaceAfter=No
+18	“	“	PUNCT	"	_	17	punct	_	_
+19	hjá	hjá	ADP	P	_	20	case	_	_
+20	þeim	hann	PRON	PRO-D	Case=Dat	14	obl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	20	punct	_	SpaceAfter=No
+22	“	“	PUNCT	"	_	20	punct	_	_
+23	Í	í	ADP	P	_	24	case	_	_
+24	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obl	_	_
+25	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+26	í	í	ADP	P	_	27	case	_	_
+27	ljós	ljós	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obl	_	_
+28	hver	hver	PRON	WPRO-N	Case=Nom	33	obj	_	_
+29	íslensku	íslenskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	30	amod	_	_
+30	keppendanna	keppandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	28	nmod:poss	_	_
+31	átta	átta	NUM	NUM-G	Case=Gen	30	amod	_	_
+32	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	33	aux	_	_
+33	bera	bera	VERB	VB	VerbForm=Inf	25	xcomp	_	_
+34	fána	fáni	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obj	_	_
+35	Íslands	ísland	PROPN	NPR-G	_	34	nmod:poss	_	_
+36	á	á	ADP	P	_	37	case	_	_
+37	setningarathöfninni	setningarathöfn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	33	obl	_	_
+38	á	á	ADP	P	_	39	case	_	_
+39	Maracana-vellinum	maracana-völlur	PROPN	NPR-D	_	37	obl	_	_
+40	annað	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	41	amod	_	_
+41	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	obl	_	SpaceAfter=No
+42	.	.	PUNCT	.	_	4	punct	_	_
 
+# sent_id = RUV_ESP_2016_G-2-1036615.SANITY,.13
+# X_ID = ID_missing_22
+# text = Í kvöld heldur Íþrótta- og Ólympíusamband Íslands svo móttökuhátíð í þorpinu fyrir íslenska liðið.
 1	Í	í	ADP	P	_	2	case	_	_
 2	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
 3	heldur	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 4	Íþrótta-	íþrótt	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	nmod:poss	_	_
 5	og	og	CCONJ	CONJ	_	6	cc	_	_
-6	Ólympíu	ólympía	PROPN	NPR-G	_	4	conj	_	_|SpaceAfter=No
+6	Ólympíu	ólympía	PROPN	NPR-G	_	4	conj	_	SpaceAfter=No
 7	samband	samband	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 8	Íslands	ísland	PROPN	NPR-G	_	7	nmod:poss	_	_
 9	svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
@@ -412,6 +378,6 @@
 12	þorpinu	þorp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
 13	fyrir	fyrir	ADP	P	_	15	case	_	_
 14	íslenska	íslenskur	ADJ	ADJ-A	Case=Acc|Degree=Pos	15	amod	_	_
-15	liðið	lið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
+15	liðið	lið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	3	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = G-33-4549968,.1
-# X_ID = ID_MISSING
-# text = Herra forseti . Mér finnst alvarlegt ef þingflokkur Samfylkingarinnar hefur ekki talið ástæðu til að staldra við og fá til dæmis stjórnlagaspekinga til að fara yfir umsögn fjármálaráðuneytisins .
+# sent_id = ALTHINGI_TKG_2011_G-33-4549968,.1
+# X_ID = ID_missing_1
+# text = Herra forseti. Mér finnst alvarlegt ef þingflokkur Samfylkingarinnar hefur ekki talið ástæðu til að staldra við og fá til dæmis stjórnlagaspekinga til að fara yfir umsögn fjármálaráðuneytisins.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -31,9 +31,9 @@
 28	fjármálaráðuneytisins	fjármálaráðuneyti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	27	nmod:poss	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4549968,.2
-# X_ID = ID_MISSING
-# text = Á hinn bóginn vil ég undirstrika varðandi veiðileyfagjaldið að við tengjum nýtingarsamninga .
+# sent_id = ALTHINGI_TKG_2011_G-33-4549968,.2
+# X_ID = ID_missing_2
+# text = Á hinn bóginn vil ég undirstrika varðandi veiðileyfagjaldið að við tengjum nýtingarsamninga.
 1	Á	á	ADP	P	_	3	case	_	_
 2	hinn	hinn	DET	D-A	Case=Acc	3	det	_	_
 3	bóginn	bógur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
@@ -48,9 +48,9 @@
 12	nýtingarsamninga	nýtingarsamningur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4549968,.3
-# X_ID = ID_MISSING
-# text = Ég fagna því sérstaklega sem hv. þingmaður sagði áðan þegar hann gaf í skyn að nýtingartíminn sem gefinn var upp í báðum frumvörpunum væri allt of skammur .
+# sent_id = ALTHINGI_TKG_2011_G-33-4549968,.3
+# X_ID = ID_missing_3
+# text = Ég fagna því sérstaklega sem hv. þingmaður sagði áðan þegar hann gaf í skyn að nýtingartíminn sem gefinn var upp í báðum frumvörpunum væri allt of skammur.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	fagna	fagna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	því	það	PRON	PRO-D	Case=Dat	2	obj	_	_
@@ -80,45 +80,41 @@
 27	skammur	skammur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	ccomp	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4549968,.4
-# X_ID = ID_MISSING
-# text = Hann er allt of skammur
+# sent_id = ALTHINGI_TKG_2011_G-33-4549968,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Hann er allt of skammur og ef við tengjum hann til dæmis við orkuna erum við kannski að tala um 30 40 ár, jafnvel 60 ár.
 1	Hann	hann	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	allt	allur	DET	Q-A	Case=Acc	4	obl	_	_
 4	of	of	ADV	ADV	Degree=Pos	5	amod	_	_
 5	skammur	skammur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+6	og	og	CCONJ	CONJ	_	19	cc	_	_
+7	ef	ef	ADP	P	_	9	case	_	_
+8	við	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+9	tengjum	tengja	VERB	VBPI	Mood=Ind|Tense=Pres	19	obl	_	_
+10	hann	hann	PRON	PRO-A	Case=Acc	9	obj	_	_
+11	til	til	ADP	P	_	12	case	_	_
+12	dæmis	dæmi	ADV	N-G	Case=Gen|Definite=Ind|Number=Sing	9	advmod	_	_
+13	við	við	ADP	P	_	14	case	_	_
+14	orkuna	orka	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+15	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	19	cop	_	_
+16	við	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
+17	kannski	kannski	ADV	ADV	Degree=Pos	19	advmod	_	_
+18	að	að	PART	TO	_	19	mark	_	_
+19	tala	tala	VERB	VB	VerbForm=Inf	5	conj	_	OriginalHead=0
+20	um	um	ADP	P	_	23	case	_	_
+21	30	þrjátíu	NUM	NUM-A	Case=Acc	23	nummod	_	_
+22	40	fjörutíu	NUM	NUM-A	Case=Acc	21	nummod	_	_
+23	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obl	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	jafnvel	jafnvel	ADV	ADV	Degree=Pos	27	advmod	_	_
+26	60	sextíu	NUM	NUM-A	Case=Acc	27	nummod	_	_
+27	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	conj	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4549968,.5
-# X_ID = ID_MISSING
-# text = og ef við tengjum hann til dæmis við orkuna erum við kannski að tala um 30 40 ár, jafnvel 60 ár .
-1	og	og	CCONJ	CONJ	_	14	cc	_	_
-2	ef	ef	ADP	P	_	4	case	_	_
-3	við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-4	tengjum	tengja	VERB	VBPI	Mood=Ind|Tense=Pres	14	obl	_	_
-5	hann	hann	PRON	PRO-A	Case=Acc	4	obj	_	_
-6	til	til	ADP	P	_	7	case	_	_
-7	dæmis	dæmi	ADV	N-G	Case=Gen|Definite=Ind|Number=Sing	4	advmod	_	_
-8	við	við	ADP	P	_	9	case	_	_
-9	orkuna	orka	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
-10	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
-11	við	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-12	kannski	kannski	ADV	ADV	Degree=Pos	14	advmod	_	_
-13	að	að	PART	TO	_	14	mark	_	_
-14	tala	tala	VERB	VB	VerbForm=Inf	0	root	_	_
-15	um	um	ADP	P	_	18	case	_	_
-16	30	þrjátíu	NUM	NUM-A	Case=Acc	18	nummod	_	_
-17	40	fjörutíu	NUM	NUM-A	Case=Acc	16	nummod	_	_
-18	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	SpaceAfter=No
-19	,	,	PUNCT	,	_	18	punct	_	_
-20	jafnvel	jafnvel	ADV	ADV	Degree=Pos	22	advmod	_	_
-21	60	sextíu	NUM	NUM-A	Case=Acc	22	nummod	_	_
-22	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	18	conj	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	14	punct	_	_
-
-# sent_id = G-33-4549968,.6
-# X_ID = ID_MISSING
-# text = Auðvitað þurfa sjávarútvegsfyrirtækin að fá ákveðna vissu fyrir því að með því að greiða ákveðið auðlindagjald fyrir aðgang að auðlindinni fái þau nýtingarsamninga til langs tíma svo að óvissan verði ekki alger .
+# sent_id = ALTHINGI_TKG_2011_G-33-4549968,.5
+# X_ID = ID_missing_6
+# text = Auðvitað þurfa sjávarútvegsfyrirtækin að fá ákveðna vissu fyrir því að með því að greiða ákveðið auðlindagjald fyrir aðgang að auðlindinni fái þau nýtingarsamninga til langs tíma svo að óvissan verði ekki alger.
 1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	þurfa	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	sjávarútvegsfyrirtækin	sjávarútvegsfyrirtæki	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
@@ -153,9 +149,9 @@
 32	alger	alger	ADJ	ADJ-N	Case=Nom|Degree=Pos	30	amod	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4549968,.7
-# X_ID = ID_MISSING
-# text = Ég kvíði því ef fara á með málið til þingnefndar og taka það síðan þaðan út með töngum sem ég spái ef það fer þangað .
+# sent_id = ALTHINGI_TKG_2011_G-33-4549968,.6
+# X_ID = ID_missing_7
+# text = Ég kvíði því ef fara á með málið til þingnefndar og taka það síðan þaðan út með töngum sem ég spái ef það fer þangað.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	kvíði	kvíða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	því	því	ADV	ADV	Degree=Pos	2	obj	_	_
@@ -183,16 +179,16 @@
 25	þangað	þangað	ADV	ADV	Degree=Pos	24	advmod	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4549968,.8
-# X_ID = ID_MISSING
-# text = Forseti hringir .
+# sent_id = ALTHINGI_TKG_2011_G-33-4549968,.7
+# X_ID = ID_missing_8
+# text = Forseti hringir.
 1	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4549968,.9
-# X_ID = ID_MISSING
-# text = Fyrst málið fór með þessum hætti í gegnum þingflokk Samfylkingarinnar hvað mun þá ríkisstjórnin gera til að beita sér gagnvart þingnefndinni í þessu máli ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4549968,.8
+# X_ID = ID_missing_9
+# text = Fyrst málið fór með þessum hætti í gegnum þingflokk Samfylkingarinnar hvað mun þá ríkisstjórnin gera til að beita sér gagnvart þingnefndinni í þessu máli?
 1	Fyrst	fyrst	ADP	P	_	3	case	_	_
 2	málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	15	obl	_	_
@@ -219,6 +215,9 @@
 24	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
 25	?	?	PUNCT	.	_	15	punct	_	_
 
+# sent_id = ALTHINGI_TKG_2011_G-33-4549968,.9
+# X_ID = ID_missing_10
+# text = Ég er hrædd um að hún muni beita sér af fullum krafti og taka málið út með töngum Forseti hringir. hvort sem okkur líkar það betur eða verr.
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	hrædd	hræddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -238,7 +237,7 @@
 17	með	með	ADP	P	_	18	case	_	_
 18	töngum	töng	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	_
 19	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	nsubj	_	_
-20	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	14	dep	_	_
+20	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	14	dep	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	20	punct	_	_
 22	hvort	hvort	SCONJ	WQ	_	25	mark	_	_
 23	sem	sem	SCONJ	C	_	22	fixed	_	_
@@ -247,6 +246,6 @@
 26	það	það	PRON	PRO-N	Case=Nom	25	obj	_	_
 27	betur	vel	ADV	ADVR	Degree=Cmp	25	advmod	_	_
 28	eða	eða	CCONJ	CONJ	_	29	cc	_	_
-29	verr	illa	ADV	ADVR	Degree=Cmp	27	conj	_	_
+29	verr	illa	ADV	ADVR	Degree=Cmp	27	conj	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	3	punct	_	_
 

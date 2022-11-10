@@ -1,6 +1,6 @@
-# sent_id = G-33-4698744,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Til þess að taka af allan vafa þá vil ég ekki að hv. þingmenn skilji mig þannig að ég sé ekki ánægð með tillöguna .
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Til þess að taka af allan vafa þá vil ég ekki að hv. þingmenn skilji mig þannig að ég sé ekki ánægð með tillöguna.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -30,25 +30,21 @@
 27	tillöguna	tillaga	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	amod	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = G-33-4698744,.2
-# X_ID = ID_MISSING
-# text = Ég er það,
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.2
+# X_IDs = ID_missing_2 ; ID_missing_3
+# text = Ég er það, ég er meðflutningsmaður.
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	það	það	PRON	PRO-N	Case=Nom	0	root	_	SpaceAfter=No
 4	,	,	PUNCT	,	_	3	punct	_	_
+5	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
+6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
+7	meðflutningsmaður	meðflutningsmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	conj	_	OriginalHead=0|SpaceAfter=No
+8	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4698744,.3
-# X_ID = ID_MISSING
-# text = ég er meðflutningsmaður .
-1	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	meðflutningsmaður	meðflutningsmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
-4	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4698744,.4
-# X_ID = ID_MISSING
-# text = En það er gott að eiga þessar samræður við hv. þm. Össur Skarphéðinsson .
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.3
+# X_ID = ID_missing_4
+# text = En það er gott að eiga þessar samræður við hv. þm. Össur Skarphéðinsson.
 1	En	en	CCONJ	CONJ	_	4	cc	_	_
 2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -64,9 +60,9 @@
 13	Skarphéðinsson	skarphéðinsson	PROPN	NPR-A	_	11	dep	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4698744,.5
-# X_ID = ID_MISSING
-# text = Ég er honum alveg sammála um að það er mikilvægt að efla sjálfstæði þingsins .
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.4
+# X_ID = ID_missing_5
+# text = Ég er honum alveg sammála um að það er mikilvægt að efla sjálfstæði þingsins.
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	honum	hann	PRON	PRO-D	Case=Dat	5	obl	_	_
@@ -83,9 +79,9 @@
 14	þingsins	þing	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	nmod:poss	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4698744,.6
-# X_ID = ID_MISSING
-# text = Það er raunverulega þannig að sérstaklega minni hlutinn það hlýtur alltaf að vera þannig, hver svo sem þar er hefur ekki mikið um málið að segja .
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.5
+# X_ID = ID_missing_6
+# text = Það er raunverulega þannig að sérstaklega minni hlutinn það hlýtur alltaf að vera þannig, hver svo sem þar er hefur ekki mikið um málið að segja.
 1	Það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	raunverulega	raunverulega	ADV	ADV	Degree=Pos	1	advmod	_	_
@@ -115,9 +111,9 @@
 27	segja	segja	VERB	VB	VerbForm=Inf	23	xcomp	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4698744,.7
-# X_ID = ID_MISSING
-# text = Það er ef til vill betur hægt, þrátt fyrir allt tal um mikilvægi samráðs og sátta, þegar þingmenn hafa beinan aðgang að málinu .
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.6
+# X_ID = ID_missing_7
+# text = Það er ef til vill betur hægt, þrátt fyrir allt tal um mikilvægi samráðs og sátta, þegar þingmenn hafa beinan aðgang að málinu.
 1	Það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 3	ef	ef	ADP	P	_	5	case	_	_
@@ -145,32 +141,28 @@
 25	málinu	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4698744,.8
-# X_ID = ID_MISSING
-# text = Það er ágreiningur um leiðir
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.7
+# X_IDs = ID_missing_8 ; ID_missing_9
+# text = Það er ágreiningur um leiðir og það er mikilvægt að við ræðum um þær.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	ágreiningur	ágreiningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 4	um	um	ADP	P	_	5	case	_	_
 5	leiðir	leið	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obl	_	_
+6	og	og	CCONJ	CONJ	_	9	cc	_	_
+7	það	það	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
+9	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0
+10	að	að	SCONJ	C	_	12	mark	_	_
+11	við	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+12	ræðum	ræða	VERB	VBPI	Mood=Ind|Tense=Pres	9	ccomp	_	_
+13	um	um	ADP	P	_	14	case	_	_
+14	þær	hún	PRON	PRO-A	Case=Acc	12	obl	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4698744,.9
-# X_ID = ID_MISSING
-# text = og það er mikilvægt að við ræðum um þær .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-4	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-5	að	að	SCONJ	C	_	7	mark	_	_
-6	við	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-7	ræðum	ræða	VERB	VBPI	Mood=Ind|Tense=Pres	4	ccomp	_	_
-8	um	um	ADP	P	_	9	case	_	_
-9	þær	hún	PRON	PRO-A	Case=Acc	7	obl	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4698744,.10
-# X_ID = ID_MISSING
-# text = Við gætum orðið ósátt við hvaða leiðir ríkisstjórnin vill fara til að byggja upp Landspítalann .
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.8
+# X_ID = ID_missing_10
+# text = Við gætum orðið ósátt við hvaða leiðir ríkisstjórnin vill fara til að byggja upp Landspítalann.
 1	Við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	gætum	geta	AUX	MDDS	Mood=Sub|Tense=Past	3	aux	_	_
 3	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -188,9 +180,9 @@
 15	Landspítalann	landspítali	PROPN	NPR-A	_	13	obj	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4698744,.11
-# X_ID = ID_MISSING
-# text = Ég segi fyrir mig að ég vil að það sé alveg á hreinu að Landspítalinn verði á einhverjum tímapunkti eign þjóðarinnar, að það verði ekki einkaaðilar sem reki hann í stórum stíl .
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.9
+# X_ID = ID_missing_11
+# text = Ég segi fyrir mig að ég vil að það sé alveg á hreinu að Landspítalinn verði á einhverjum tímapunkti eign þjóðarinnar, að það verði ekki einkaaðilar sem reki hann í stórum stíl.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	segi	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -226,9 +218,9 @@
 33	stíl	stíll	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obl	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4698744,.12
-# X_ID = ID_MISSING
-# text = Ég verð að segja að ég varð svolítið hrædd í þeirri umræðu sem ég átti við hæstv. fjármálaráðherra, þegar ég ræddi þessar leiðir við hann, um að hann væri ef til vill ekki sama sinnis .
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.10
+# X_ID = ID_missing_12
+# text = Ég verð að segja að ég varð svolítið hrædd í þeirri umræðu sem ég átti við hæstv. fjármálaráðherra, þegar ég ræddi þessar leiðir við hann, um að hann væri ef til vill ekki sama sinnis.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	verð	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -268,9 +260,9 @@
 37	sinnis	sinni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	36	xcomp	_	SpaceAfter=No
 38	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4698744,.13
-# X_ID = ID_MISSING
-# text = Þá hugsaði ég : Jæja, það er kannski betra ég veit ekki hvort ég á að segja þetta að láta kyrrt liggja .
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.11
+# X_ID = ID_missing_13
+# text = Þá hugsaði ég: Jæja, það er kannski betra ég veit ekki hvort ég á að segja þetta að láta kyrrt liggja.
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	hugsaði	hugsa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	SpaceAfter=No
@@ -296,6 +288,9 @@
 23	liggja	liggja	VERB	VB	VerbForm=Inf	21	xcomp	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_BO_2014_G-33-4698744,.12
+# X_ID = ID_missing_14
+# text = Það er vissulega mikilvægast í þessu stóra máli að fólk Forseti hringir. komist að samkomulagi og þetta sé gert í sátt.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	vissulega	vissulega	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -307,7 +302,7 @@
 9	að	að	SCONJ	C	_	14	mark	_	_
 10	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
 11	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
-12	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	14	dep	_	_
+12	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	14	dep	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	12	punct	_	_
 14	komist	koma	VERB	VBPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
 15	að	að	ADP	P	_	16	case	_	_
@@ -317,6 +312,6 @@
 19	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	20	cop	_	_
 20	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	14	conj	_	_
 21	í	í	ADP	P	_	22	case	_	_
-22	sátt	sátt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	_
+22	sátt	sátt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	4	punct	_	_
 

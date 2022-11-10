@@ -1,6 +1,6 @@
-# sent_id = G-33-4624362,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Það er svo sem ekki mikið eftir að ræða í sjálfu sér hvað viðkemur þessu tiltekna máli .
+# sent_id = ALTHINGI_HHG_2013_G-33-4624362,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Það er svo sem ekki mikið eftir að ræða í sjálfu sér hvað viðkemur þessu tiltekna máli.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -23,9 +23,9 @@
 20	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obj	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = G-33-4624362,.2
-# X_ID = ID_MISSING
-# text = Við erum í raun og veru sammála um niðurstöðuna þegar kemur að veiðigjöldunum .
+# sent_id = ALTHINGI_HHG_2013_G-33-4624362,.2
+# X_ID = ID_missing_2
+# text = Við erum í raun og veru sammála um niðurstöðuna þegar kemur að veiðigjöldunum.
 1	Við	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 2	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -41,9 +41,9 @@
 13	veiðigjöldunum	veiðigjald	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4624362,.3
-# X_ID = ID_MISSING
-# text = Mér finnst umræðan um hægri og vinstri áhugaverð vegna þess að ég sé það aðeins öðruvísi en hv. þingmaður .
+# sent_id = ALTHINGI_HHG_2013_G-33-4624362,.3
+# X_ID = ID_missing_3
+# text = Mér finnst umræðan um hægri og vinstri áhugaverð vegna þess að ég sé það aðeins öðruvísi en hv. þingmaður.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	umræðan	umræða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
@@ -65,9 +65,9 @@
 19	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4624362,.4
-# X_ID = ID_MISSING
-# text = Það er klassískt séð togstreitan milli samfélags og einstaklings þegar samfélagið er í raun og veru, eins og margir hægri menn eiga til að segja, lítið annað en samansafn af einstaklingum
+# sent_id = ALTHINGI_HHG_2013_G-33-4624362,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Það er klassískt séð togstreitan milli samfélags og einstaklings þegar samfélagið er í raun og veru, eins og margir hægri menn eiga til að segja, lítið annað en samansafn af einstaklingum og sömuleiðis mætti saka hið klassíska vinstri um að átta sig ekki alveg á því að hægt sé að segja einstaklingar í fleirtölu.
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	klassískt	klassískt	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -101,38 +101,34 @@
 31	samansafn	samansafn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	29	obl	_	_
 32	af	af	ADP	P	_	33	case	_	_
 33	einstaklingum	einstaklingur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	31	obl	_	_
+34	og	og	CCONJ	CONJ	_	37	cc	_	_
+35	sömuleiðis	sömuleiðis	ADV	ADV	Degree=Pos	37	advmod	_	_
+36	mætti	mega	AUX	MDDS	Mood=Sub|Tense=Past	37	aux	_	_
+37	saka	saka	VERB	VB	VerbForm=Inf	5	conj	_	OriginalHead=0
+38	hið	hinn	DET	D-A	Case=Acc	40	det	_	_
+39	klassíska	klassískur	ADJ	ADJ-A	Case=Acc|Degree=Pos	40	amod	_	_
+40	vinstri	vinstri	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	obj	_	_
+41	um	um	ADP	P	_	43	case	_	_
+42	að	að	PART	TO	_	43	mark	_	_
+43	átta	átta	VERB	VB	VerbForm=Inf	37	obl	_	_
+44	sig	sig	PRON	PRO-A	Case=Acc	43	obj	_	_
+45	ekki	ekki	ADV	NEG	_	43	advmod	_	_
+46	alveg	alveg	ADV	ADV	Degree=Pos	43	advmod	_	_
+47	á	á	ADP	P	_	48	case	_	_
+48	því	það	PRON	PRO-D	Case=Dat	43	obl	_	_
+49	að	að	SCONJ	C	_	53	mark	_	_
+50	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	53	amod	_	_
+51	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	53	cop	_	_
+52	að	að	PART	TO	_	53	mark	_	_
+53	segja	segja	VERB	VB	VerbForm=Inf	48	xcomp	_	_
+54	einstaklingar	einstaklingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	53	dep	_	_
+55	í	í	ADP	P	_	56	case	_	_
+56	fleirtölu	fleirtala	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	53	obl	_	SpaceAfter=No
+57	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4624362,.5
-# X_ID = ID_MISSING
-# text = og sömuleiðis mætti saka hið klassíska vinstri um að átta sig ekki alveg á því að hægt sé að segja einstaklingar í fleirtölu .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	sömuleiðis	sömuleiðis	ADV	ADV	Degree=Pos	4	advmod	_	_
-3	mætti	mega	AUX	MDDS	Mood=Sub|Tense=Past	4	aux	_	_
-4	saka	saka	VERB	VB	VerbForm=Inf	0	root	_	_
-5	hið	hinn	DET	D-A	Case=Acc	7	det	_	_
-6	klassíska	klassískur	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
-7	vinstri	vinstri	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
-8	um	um	ADP	P	_	10	case	_	_
-9	að	að	PART	TO	_	10	mark	_	_
-10	átta	átta	VERB	VB	VerbForm=Inf	4	obl	_	_
-11	sig	sig	PRON	PRO-A	Case=Acc	10	obj	_	_
-12	ekki	ekki	ADV	NEG	_	10	advmod	_	_
-13	alveg	alveg	ADV	ADV	Degree=Pos	10	advmod	_	_
-14	á	á	ADP	P	_	15	case	_	_
-15	því	það	PRON	PRO-D	Case=Dat	10	obl	_	_
-16	að	að	SCONJ	C	_	20	mark	_	_
-17	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
-18	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	20	cop	_	_
-19	að	að	PART	TO	_	20	mark	_	_
-20	segja	segja	VERB	VB	VerbForm=Inf	15	xcomp	_	_
-21	einstaklingar	einstaklingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	20	dep	_	_
-22	í	í	ADP	P	_	23	case	_	_
-23	fleirtölu	fleirtala	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4624362,.6
-# X_ID = ID_MISSING
-# text = Það er kannski eitthvað sem við ættum að ræða betur yfir kaffibolla eða eitthvað svoleiðis .
+# sent_id = ALTHINGI_HHG_2013_G-33-4624362,.5
+# X_ID = ID_missing_6
+# text = Það er kannski eitthvað sem við ættum að ræða betur yfir kaffibolla eða eitthvað svoleiðis.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	kannski	kannski	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -150,9 +146,9 @@
 15	svoleiðis	svoleiðis	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	xcomp	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4624362,.7
-# X_ID = ID_MISSING
-# text = Mér finnst veiðigjaldið og auðlindagjaldið og munurinn þar á svolítið mikilvægt vegna þess að þegar við segjum veiðigjald er eins og við séum að tala um einhverja sérstaka sátt þegar kemur að kvótakerfinu eða öllu heldur veiðiheimildum .
+# sent_id = ALTHINGI_HHG_2013_G-33-4624362,.6
+# X_ID = ID_missing_7
+# text = Mér finnst veiðigjaldið og auðlindagjaldið og munurinn þar á svolítið mikilvægt vegna þess að þegar við segjum veiðigjald er eins og við séum að tala um einhverja sérstaka sátt þegar kemur að kvótakerfinu eða öllu heldur veiðiheimildum.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	veiðigjaldið	veiðigjald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
@@ -192,9 +188,9 @@
 37	veiðiheimildum	veiðiheimild	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	31	conj	_	SpaceAfter=No
 38	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4624362,.8
-# X_ID = ID_MISSING
-# text = Ég tel að við ættum að líta á þjóðareignir í sama skilningi og við lítum á eignarrétt einstaklings, í gegnum sama stækkunargler og við sjáum lýðræðið þegar kemur að sjálfsákvörðunarrétti einstaklings .
+# sent_id = ALTHINGI_HHG_2013_G-33-4624362,.7
+# X_ID = ID_missing_8
+# text = Ég tel að við ættum að líta á þjóðareignir í sama skilningi og við lítum á eignarrétt einstaklings, í gegnum sama stækkunargler og við sjáum lýðræðið þegar kemur að sjálfsákvörðunarrétti einstaklings.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	5	mark	_	_
@@ -229,9 +225,9 @@
 32	einstaklings	einstaklingur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	31	nmod:poss	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4624362,.9
-# X_ID = ID_MISSING
-# text = Eins og lýðræðið er sjálfsákvörðunarréttur á stórum skala er einstaklingsfrelsið sjálfsákvörðunarréttur á litlum skala .
+# sent_id = ALTHINGI_HHG_2013_G-33-4624362,.8
+# X_ID = ID_missing_9
+# text = Eins og lýðræðið er sjálfsákvörðunarréttur á stórum skala er einstaklingsfrelsið sjálfsákvörðunarréttur á litlum skala.
 1	Eins	eins	ADV	ADVR	Degree=Cmp	11	advmod	_	_
 2	og	og	ADP	P	_	5	case	_	_
 3	lýðræðið	lýðræði	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
@@ -248,9 +244,9 @@
 14	skala	skali	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = G-33-4624362,.10
-# X_ID = ID_MISSING
-# text = Það sem ég meina með því og ég þakka undirtektir hv. þingmanns um að frekar beri að kalla þetta auðlindagjald en veiðigjald er að mér finnst að það ætti kannski að endurspeglast meira í nefndarstörfum og þegar við tölum um það almennt, vegna þess að eignarréttur hlýtur að eiga við þar og er enginn ágreiningur um það eftir því sem ég best fæ séð .
+# sent_id = ALTHINGI_HHG_2013_G-33-4624362,.9
+# X_ID = ID_missing_10
+# text = Það sem ég meina með því og ég þakka undirtektir hv. þingmanns um að frekar beri að kalla þetta auðlindagjald en veiðigjald er að mér finnst að það ætti kannski að endurspeglast meira í nefndarstörfum og þegar við tölum um það almennt, vegna þess að eignarréttur hlýtur að eiga við þar og er enginn ágreiningur um það eftir því sem ég best fæ séð.
 1	Það	sá	DET	D-N	Case=Nom	9	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -318,6 +314,9 @@
 65	séð	sjá	VERB	VBN	Tense=Past|VerbForm=Part	64	advcl	_	SpaceAfter=No
 66	.	.	PUNCT	.	_	9	punct	_	_
 
+# sent_id = ALTHINGI_HHG_2013_G-33-4624362,.10
+# X_ID = ID_missing_11
+# text = Svo lengi sem við tölum um það á réttum skala ætti það heita auðlindagjald en ekki veiðigjald.
 1	Svo	svo	ADV	ADV	Degree=Pos	11	advmod	_	_
 2	lengi	lengi	ADV	ADV	Degree=Pos	1	advmod	_	_
 3	sem	sem	SCONJ	C	_	5	mark	_	_
@@ -334,6 +333,6 @@
 14	auðlindagjald	auðlindagjald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	xcomp	_	_
 15	en	en	CCONJ	CONJ	_	17	cc	_	_
 16	ekki	ekki	ADV	NEG	_	17	advmod	_	_
-17	veiðigjald	veiðigjald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	conj	_	_
+17	veiðigjald	veiðigjald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	conj	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	11	punct	_	_
 

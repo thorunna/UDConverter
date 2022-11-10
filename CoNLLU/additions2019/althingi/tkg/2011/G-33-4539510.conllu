@@ -1,6 +1,6 @@
-# sent_id = G-33-4539510,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Þetta er góð spurning
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.1
+# X_IDs = ID_missing_1 ; ID_missing_2
+# text = Frú forseti. Þetta er góð spurning og svarið er mjög einfalt:
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -8,20 +8,16 @@
 5	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 6	góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
 7	spurning	spurning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+8	og	og	CCONJ	CONJ	_	12	cc	_	_
+9	svarið	svar	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	nsubj	_	_
+10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
+11	mjög	mjög	ADV	ADV	Degree=Pos	12	amod	_	_
+12	einfalt	einfaldur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	conj	_	OriginalHead=0|SpaceAfter=No
+13	:	:	PUNCT	,	_	7	punct	_	_
 
-# sent_id = G-33-4539510,.2
-# X_ID = ID_MISSING
-# text = og svarið er mjög einfalt :
-1	og	og	CCONJ	CONJ	_	5	cc	_	_
-2	svarið	svar	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-4	mjög	mjög	ADV	ADV	Degree=Pos	5	amod	_	_
-5	einfalt	einfaldur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
-6	:	:	PUNCT	,	_	5	punct	_	_
-
-# sent_id = G-33-4539510,.3
-# X_ID = ID_MISSING
-# text = Það þarf að skipta um ríkisstjórn .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.2
+# X_ID = ID_missing_3
+# text = Það þarf að skipta um ríkisstjórn.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -30,9 +26,9 @@
 6	ríkisstjórn	ríkisstjórn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4539510,.4
-# X_ID = ID_MISSING
-# text = Það er stóra svarið við spurningunni .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.3
+# X_ID = ID_missing_4
+# text = Það er stóra svarið við spurningunni.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	stóra	stór	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -41,9 +37,9 @@
 6	spurningunni	spurning	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4539510,.5
-# X_ID = ID_MISSING
-# text = Ég vil geta þess að ég var einmitt að reyna að draga fram aðrar framkvæmdir sem eru ekki á vegum ríkisins sem er nauðsynlegt að reyna að hvetja til að farið verði af stað með .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.4
+# X_ID = ID_missing_5
+# text = Ég vil geta þess að ég var einmitt að reyna að draga fram aðrar framkvæmdir sem eru ekki á vegum ríkisins sem er nauðsynlegt að reyna að hvetja til að farið verði af stað með.
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	geta	geta	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -81,9 +77,9 @@
 35	með	með	ADP	P	_	31	obl	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4539510,.6
-# X_ID = ID_MISSING
-# text = Ég er að tala um þær opinberu framkvæmdir, upp á 6,5 milljarða, sem nú þegar er búið að gera ráð fyrir í fjárlögum .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.5
+# X_ID = ID_missing_6
+# text = Ég er að tala um þær opinberu framkvæmdir, upp á 6,5 milljarða, sem nú þegar er búið að gera ráð fyrir í fjárlögum.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -111,9 +107,9 @@
 25	fjárlögum	fjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	21	obl	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4539510,.7
-# X_ID = ID_MISSING
-# text = Ég spyr : Af hverju er ekki farið af stað nú þegar með þær framkvæmdir ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.6
+# X_ID = ID_missing_7
+# text = Ég spyr: Af hverju er ekki farið af stað nú þegar með þær framkvæmdir?
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	,	_	2	punct	_	_
@@ -131,9 +127,9 @@
 15	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	SpaceAfter=No
 16	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4539510,.8
-# X_ID = ID_MISSING
-# text = Við erum búin að gera ráð fyrir þeim í fjárlögum .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.7
+# X_ID = ID_missing_8
+# text = Við erum búin að gera ráð fyrir þeim í fjárlögum.
 1	Við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	búin	búa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -146,9 +142,9 @@
 10	fjárlögum	fjárlag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4539510,.9
-# X_ID = ID_MISSING
-# text = Við þurfum síðan að gera allt til að örva einkaframtakið .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.8
+# X_ID = ID_missing_9
+# text = Við þurfum síðan að gera allt til að örva einkaframtakið.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	síðan	síðan	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -161,9 +157,9 @@
 10	einkaframtakið	einkaframtak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4539510,.10
-# X_ID = ID_MISSING
-# text = Það verður ekki gert með þeirri stjórnarstefnu sem er núna, með auknum álögum á fyrirtækin fyrir utan heimilin í landinu,
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.9
+# X_IDs = ID_missing_10 ; ID_missing_11
+# text = Það verður ekki gert með þeirri stjórnarstefnu sem er núna, með auknum álögum á fyrirtækin fyrir utan heimilin í landinu, það verður ekki gert með því að hækka tryggingagjaldið lon og don, því að það mun deyfa vilja minni og meðalstórra fyrirtækja til að fara af stað í auknar framkvæmdir og fjárfestingar.
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -185,49 +181,45 @@
 19	heimilin	heimili	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obl	_	_
 20	í	í	ADP	P	_	21	case	_	_
 21	landinu	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	2	punct	_	_
+22	,	,	PUNCT	,	_	19	punct	_	_
+23	það	það	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+24	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+25	ekki	ekki	ADV	NEG	_	24	advmod	_	_
+26	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	24	ccomp	_	_
+27	með	með	ADP	P	_	28	case	_	_
+28	því	það	PRON	PRO-D	Case=Dat	24	obl	_	_
+29	að	að	PART	TO	_	30	mark	_	_
+30	hækka	hækka	VERB	VB	VerbForm=Inf	28	xcomp	_	_
+31	tryggingagjaldið	tryggingagjald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obj	_	_
+32	lon	lon	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	_
+33	og	og	CCONJ	CONJ	_	34	cc	_	_
+34	don	don	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	32	conj	_	SpaceAfter=No
+35	,	,	PUNCT	,	_	34	punct	_	_
+36	því	það	PRON	PRO-D	Case=Dat	24	obl	_	_
+37	að	að	SCONJ	C	_	40	mark	_	_
+38	það	það	PRON	PRO-N	Case=Nom	40	nsubj	_	_
+39	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	40	aux	_	_
+40	deyfa	deyfa	VERB	VB	VerbForm=Inf	36	ccomp	_	_
+41	vilja	vilji	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	40	obj	_	_
+42	minni	lítill	ADJ	ADJS-G	Case=Gen|Degree=Sup	45	amod	_	_
+43	og	og	CCONJ	CONJ	_	44	cc	_	_
+44	meðalstórra	meðalstór	ADJ	ADJ-G	Case=Gen|Degree=Pos	42	conj	_	_
+45	fyrirtækja	fyrirtæki	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	41	nmod:poss	_	_
+46	til	til	ADP	P	_	48	case	_	_
+47	að	að	PART	TO	_	48	mark	_	_
+48	fara	fara	VERB	VB	VerbForm=Inf	41	obl	_	_
+49	af	af	ADP	P	_	50	case	_	_
+50	stað	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	48	obl	_	_
+51	í	í	ADP	P	_	53	case	_	_
+52	auknar	aukinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	53	amod	_	_
+53	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	48	obl	_	_
+54	og	og	CCONJ	CONJ	_	55	cc	_	_
+55	fjárfestingar	fjárfesting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	53	conj	_	SpaceAfter=No
+56	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4539510,.11
-# X_ID = ID_MISSING
-# text = það verður ekki gert með því að hækka tryggingagjaldið lon og don, því að það mun deyfa vilja minni og meðalstórra fyrirtækja til að fara af stað í auknar framkvæmdir og fjárfestingar .
-1	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
-4	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	2	ccomp	_	_
-5	með	með	ADP	P	_	6	case	_	_
-6	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
-7	að	að	PART	TO	_	8	mark	_	_
-8	hækka	hækka	VERB	VB	VerbForm=Inf	6	xcomp	_	_
-9	tryggingagjaldið	tryggingagjald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	_
-10	lon	lon	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
-11	og	og	CCONJ	CONJ	_	12	cc	_	_
-12	don	don	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	conj	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	12	punct	_	_
-14	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
-15	að	að	SCONJ	C	_	18	mark	_	_
-16	það	það	PRON	PRO-N	Case=Nom	18	nsubj	_	_
-17	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	18	aux	_	_
-18	deyfa	deyfa	VERB	VB	VerbForm=Inf	14	ccomp	_	_
-19	vilja	vilji	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obj	_	_
-20	minni	lítill	ADJ	ADJS-G	Case=Gen|Degree=Sup	23	amod	_	_
-21	og	og	CCONJ	CONJ	_	22	cc	_	_
-22	meðalstórra	meðalstór	ADJ	ADJ-G	Case=Gen|Degree=Pos	20	conj	_	_
-23	fyrirtækja	fyrirtæki	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	nmod:poss	_	_
-24	til	til	ADP	P	_	26	case	_	_
-25	að	að	PART	TO	_	26	mark	_	_
-26	fara	fara	VERB	VB	VerbForm=Inf	19	obl	_	_
-27	af	af	ADP	P	_	28	case	_	_
-28	stað	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	_
-29	í	í	ADP	P	_	31	case	_	_
-30	auknar	aukinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	31	amod	_	_
-31	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obl	_	_
-32	og	og	CCONJ	CONJ	_	33	cc	_	_
-33	fjárfestingar	fjárfesting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	31	conj	_	SpaceAfter=No
-34	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4539510,.12
-# X_ID = ID_MISSING
-# text = Að mínu viti þarf að breyta frá þeirri stjórnarstefnu sem nú er til að örva framkvæmdir .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.10
+# X_ID = ID_missing_12
+# text = Að mínu viti þarf að breyta frá þeirri stjórnarstefnu sem nú er til að örva framkvæmdir.
 1	Að	að	ADP	P	_	3	case	_	_
 2	mínu	minn	PRON	PRO-D	Case=Dat	3	nmod:poss	_	_
 3	viti	vit	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
@@ -246,9 +238,9 @@
 16	framkvæmdir	framkvæmd	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	15	obj	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4539510,.13
-# X_ID = ID_MISSING
-# text = Það á að hætta að tala fjandsamlega til fjárfesta, ekki síst erlendra fjárfesta sem vilja koma hingað inn, og ógna þeim með því að ef þeir hegði sér ekki eins og forsætisráðherra óskar verði farið í ákveðna þjóðnýtingu .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.11
+# X_ID = ID_missing_13
+# text = Það á að hætta að tala fjandsamlega til fjárfesta, ekki síst erlendra fjárfesta sem vilja koma hingað inn, og ógna þeim með því að ef þeir hegði sér ekki eins og forsætisráðherra óskar verði farið í ákveðna þjóðnýtingu.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -291,9 +283,9 @@
 40	þjóðnýtingu	þjóðnýting	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	obl	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4539510,.14
-# X_ID = ID_MISSING
-# text = Þannig að fyrsta svarið og augljósast er að skipta um ríkisstjórn .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.12
+# X_ID = ID_missing_14
+# text = Þannig að fyrsta svarið og augljósast er að skipta um ríkisstjórn.
 1	Þannig	þannig	ADV	ADV	Degree=Pos	0	root	_	_
 2	að	að	SCONJ	C	_	4	mark	_	_
 3	fyrsta	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	4	amod	_	_
@@ -307,9 +299,9 @@
 11	ríkisstjórn	ríkisstjórn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4539510,.15
-# X_ID = ID_MISSING
-# text = En ef ekki er hægt að gera það, þá er það skylda okkar í stjórnarandstöðunni að tala um fyrir ríkisstjórninni og sýna fram á að það þarf að örva fjárfestingar, við verðum að vaxa, við verðum að framleiða, við verðum að fara í að skapa
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.13
+# X_IDs = ID_missing_15 ; ID_missing_16
+# text = En ef ekki er hægt að gera það, þá er það skylda okkar í stjórnarandstöðunni að tala um fyrir ríkisstjórninni og sýna fram á að það þarf að örva fjárfestingar, við verðum að vaxa, við verðum að framleiða, við verðum að fara í að skapa það verður ekki gert bara í gegnum opinberar framkvæmdir.
 1	En	en	CCONJ	CONJ	_	13	cc	_	_
 2	ef	ef	SCONJ	C	_	7	mark	_	_
 3	ekki	ekki	ADV	NEG	_	7	advmod	_	_
@@ -359,24 +351,20 @@
 47	í	í	ADP	P	_	49	case	_	_
 48	að	að	PART	TO	_	49	mark	_	_
 49	skapa	skapa	VERB	VB	VerbForm=Inf	46	obl	_	_
+50	það	það	PRON	PRO-N	Case=Nom	51	nsubj	_	_
+51	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	13	conj	_	OriginalHead=0
+52	ekki	ekki	ADV	NEG	_	51	advmod	_	_
+53	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	51	ccomp	_	_
+54	bara	bara	ADV	FP	Degree=Pos	58	advmod	_	_
+55	í	í	ADP	P	_	58	case	_	_
+56	gegnum	gegnum	ADP	P	_	58	case	_	_
+57	opinberar	opinber	ADJ	ADJ-A	Case=Acc|Degree=Pos	58	amod	_	_
+58	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	51	obl	_	SpaceAfter=No
+59	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = G-33-4539510,.16
-# X_ID = ID_MISSING
-# text = það verður ekki gert bara í gegnum opinberar framkvæmdir .
-1	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
-4	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	2	ccomp	_	_
-5	bara	bara	ADV	FP	Degree=Pos	9	advmod	_	_
-6	í	í	ADP	P	_	9	case	_	_
-7	gegnum	gegnum	ADP	P	_	9	case	_	_
-8	opinberar	opinber	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	_
-9	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4539510,.17
-# X_ID = ID_MISSING
-# text = Það vitum við manna best, Pétur Blöndal, ég og aðrir, ekki síst þingmenn Sjálfstæðisflokksins .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.14
+# X_ID = ID_missing_17
+# text = Það vitum við manna best, Pétur Blöndal, ég og aðrir, ekki síst þingmenn Sjálfstæðisflokksins.
 1	Það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
 2	vitum	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -396,9 +384,9 @@
 17	Sjálfstæðisflokksins	sjálfstæðisflokkur	PROPN	NPR-G	_	16	nmod:poss	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4539510,.18
-# X_ID = ID_MISSING
-# text = Mín ósk er sú að við notum þær heimildir sem við höfum nú þegar í lögum til að fara í einkaframkvæmdir og ekki síður í opinberar framkvæmdir .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.15
+# X_ID = ID_missing_18
+# text = Mín ósk er sú að við notum þær heimildir sem við höfum nú þegar í lögum til að fara í einkaframkvæmdir og ekki síður í opinberar framkvæmdir.
 1	Mín	minn	PRON	PRO-N	Case=Nom	2	nmod:poss	_	_
 2	ósk	ósk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -428,9 +416,9 @@
 27	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	21	conj	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4539510,.19
-# X_ID = ID_MISSING
-# text = Um 16.000 Íslendingar eru atvinnulausir .
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.16
+# X_ID = ID_missing_19
+# text = Um 16.000 Íslendingar eru atvinnulausir.
 1	Um	um	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	16.000	16.000	NUM	NUM-N	Case=Nom	3	nummod	_	_
 3	Íslendingar	íslendingur	PROPN	NPRS-N	_	5	nsubj	_	_
@@ -438,11 +426,14 @@
 5	atvinnulausir	atvinnulaus	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	5	punct	_	_
 
+# sent_id = ALTHINGI_TKG_2011_G-33-4539510,.17
+# X_ID = ID_missing_20
+# text = Þeir þurfa að fá eitthvert svar.
 1	Þeir	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þurfa	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
 4	fá	fá	VERB	VB	VerbForm=Inf	2	xcomp	_	_
 5	eitthvert	einhver	DET	Q-A	Case=Acc	6	amod	_	_
-6	svar	svar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
+6	svar	svar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	2	punct	_	_
 

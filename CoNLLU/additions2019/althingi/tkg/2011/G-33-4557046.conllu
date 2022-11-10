@@ -1,6 +1,6 @@
-# sent_id = G-33-4557046,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Um leið og ég þakka hæstv. ráðherra fyrir að hafa komið hingað í þingið er ég ekki endilega viss um að þetta liðki allt til fyrir umræðunni .
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.1
+# X_ID = ID_missing_1
+# text = Frú forseti. Um leið og ég þakka hæstv. ráðherra fyrir að hafa komið hingað í þingið er ég ekki endilega viss um að þetta liðki allt til fyrir umræðunni.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -33,9 +33,9 @@
 30	umræðunni	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	22	punct	_	_
 
-# sent_id = G-33-4557046,.2
-# X_ID = ID_MISSING
-# text = Ég mun áfram óska eftir því að vera á ræðulistanum hér á eftir .
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.2
+# X_ID = ID_missing_2
+# text = Ég mun áfram óska eftir því að vera á ræðulistanum hér á eftir.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	áfram	áfram	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -51,16 +51,16 @@
 13	eftir	eftir	ADV	ADV	Degree=Pos	11	advmod	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4557046,.3
-# X_ID = ID_MISSING
-# text = Galin umræða .
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.3
+# X_ID = ID_missing_3
+# text = Galin umræða.
 1	Galin	galinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	umræða	umræða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4557046,.4
-# X_ID = ID_MISSING
-# text = Já, ég er sammála því að hún er galin að því leyti hvernig menn nálguðust suðvesturhornið,
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Já, ég er sammála því að hún er galin að því leyti hvernig menn nálguðust suðvesturhornið, mér fannst það galin umræða.
 1	Já	já	INTJ	INTJ	_	5	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -78,21 +78,17 @@
 15	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	16	nsubj	_	_
 16	nálguðust	nálgast	VERB	VBDI	Mood=Ind|Tense=Past	13	ccomp	_	_
 17	suðvesturhornið	suðvesturhorn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obj	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	5	punct	_	_
+18	,	,	PUNCT	,	_	16	punct	_	_
+19	mér	ég	PRON	PRO-D	Case=Dat	20	nsubj	_	_
+20	fannst	finna	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
+21	það	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+22	galin	galinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	23	amod	_	_
+23	umræða	umræða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	20	ccomp	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4557046,.5
-# X_ID = ID_MISSING
-# text = mér fannst það galin umræða .
-1	mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
-2	fannst	finna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-4	galin	galinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
-5	umræða	umræða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	SpaceAfter=No
-6	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4557046,.6
-# X_ID = ID_MISSING
-# text = Það er ekki hægt að segja að það sama gildi um Vaðlaheiðargöngin og um suðvesturhornið af því aðstæður eru aðrar fyrir norðan en hér fyrir sunnan ;
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.5
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Það er ekki hægt að segja að það sama gildi um Vaðlaheiðargöngin og um suðvesturhornið af því aðstæður eru aðrar fyrir norðan en hér fyrir sunnan; eina útgönguleið okkar sem búum á suðvesturhorninu er einmitt þessi.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -119,26 +115,22 @@
 24	hér	hér	ADV	ADV	Degree=Pos	20	obl	_	_
 25	fyrir	fyrir	ADP	P	_	24	case	_	_
 26	sunnan	sunnan	ADV	ADV	Degree=Pos	24	advmod	_	SpaceAfter=No
-27	;	;	PUNCT	.	_	4	punct	_	_
+27	;	;	PUNCT	.	_	24	punct	_	_
+28	eina	einn	DET	ONE-A	Case=Acc	29	det	_	_
+29	útgönguleið	útgönguleið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	37	nsubj	_	_
+30	okkar	ég	PRON	PRO-G	Case=Gen	29	nmod:poss	_	_
+31	sem	sem	SCONJ	C	_	32	mark	_	_
+32	búum	búa	VERB	VBPI	Mood=Ind|Tense=Pres	30	acl:relcl	_	_
+33	á	á	ADP	P	_	34	case	_	_
+34	suðvesturhorninu	suðvesturhorn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
+35	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	37	cop	_	_
+36	einmitt	einmitt	ADV	ADV	Degree=Pos	37	advmod	_	_
+37	þessi	þessi	DET	D-N	Case=Nom	4	conj	_	OriginalHead=0|SpaceAfter=No
+38	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4557046,.7
-# X_ID = ID_MISSING
-# text = eina útgönguleið okkar sem búum á suðvesturhorninu er einmitt þessi .
-1	eina	einn	DET	ONE-A	Case=Acc	2	det	_	_
-2	útgönguleið	útgönguleið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	nsubj	_	_
-3	okkar	ég	PRON	PRO-G	Case=Gen	2	nmod:poss	_	_
-4	sem	sem	SCONJ	C	_	5	mark	_	_
-5	búum	búa	VERB	VBPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	_
-6	á	á	ADP	P	_	7	case	_	_
-7	suðvesturhorninu	suðvesturhorn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
-8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
-9	einmitt	einmitt	ADV	ADV	Degree=Pos	10	advmod	_	_
-10	þessi	þessi	DET	D-N	Case=Nom	0	root	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	10	punct	_	_
-
-# sent_id = G-33-4557046,.8
-# X_ID = ID_MISSING
-# text = Ég vil spyrja hæstv. ráðherra, hann er búinn að svara einni spurningu : Hefur sá hópur sem átti að hittast í tengslum við kjarasamninga varðandi samgönguframkvæmdir hist ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.6
+# X_ID = ID_missing_8
+# text = Ég vil spyrja hæstv. ráðherra, hann er búinn að svara einni spurningu: Hefur sá hópur sem átti að hittast í tengslum við kjarasamninga varðandi samgönguframkvæmdir hist?
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	spyrja	spyrja	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -169,9 +161,9 @@
 28	hist	hitta	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	SpaceAfter=No
 29	?	?	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4557046,.9
-# X_ID = ID_MISSING
-# text = Hæstv. ráðherra segir að það sé farið af stað með framkvæmdir .
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.7
+# X_ID = ID_missing_9
+# text = Hæstv. ráðherra segir að það sé farið af stað með framkvæmdir.
 1	Hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -185,17 +177,17 @@
 11	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4557046,.10
-# X_ID = ID_MISSING
-# text = Gott og vel .
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.8
+# X_ID = ID_missing_10
+# text = Gott og vel.
 1	Gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 2	og	og	CCONJ	CONJ	_	3	cc	_	_
 3	vel	vel	ADV	ADV	Degree=Pos	1	conj	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4557046,.11
-# X_ID = ID_MISSING
-# text = Mínar heimildir eru þær að menn séu ekki komnir nándar nærri eins langt og hægt hefði verið .
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.9
+# X_ID = ID_missing_11
+# text = Mínar heimildir eru þær að menn séu ekki komnir nándar nærri eins langt og hægt hefði verið.
 1	Mínar	minn	PRON	PRO-N	Case=Nom	2	nmod:poss	_	_
 2	heimildir	heimild	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -215,9 +207,9 @@
 17	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	11	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4557046,.12
-# X_ID = ID_MISSING
-# text = Það getur vel verið að eitthvað sé að fara af stað
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.10
+# X_IDs = ID_missing_12 ; ID_missing_13 ; ID_missing_14
+# text = Það getur vel verið að eitthvað sé að fara af stað og það er vel, en menn vilja einfaldlega fleiri framkvæmdir og að menn nýti það svigrúm sem til staðar er innan fjárlaga.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	getur	geta	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vel	vel	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -229,42 +221,34 @@
 9	fara	fara	VERB	VB	VerbForm=Inf	2	ccomp	_	_
 10	af	af	ADP	P	_	11	case	_	_
 11	stað	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	það	það	PRON	PRO-N	Case=Nom	2	conj	_	OriginalHead=0
+14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
+15	vel	vel	ADV	ADV	Degree=Pos	13	advmod	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	2	punct	_	_
+17	en	en	CCONJ	CONJ	_	19	cc	_	_
+18	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	19	nsubj	_	_
+19	vilja	vilja	VERB	MDPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+20	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	19	advmod	_	_
+21	fleiri	margur	DET	QR-A	Case=Acc	22	amod	_	_
+22	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obl	_	_
+23	og	og	CCONJ	CONJ	_	26	cc	_	_
+24	að	að	SCONJ	C	_	26	mark	_	_
+25	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	26	nsubj	_	_
+26	nýti	nýta	VERB	VBPS	Mood=Sub|Tense=Pres	19	obj	_	_
+27	það	sá	DET	D-A	Case=Acc	28	det	_	_
+28	svigrúm	svigrúm	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obj	_	_
+29	sem	sem	SCONJ	C	_	31	mark	_	_
+30	til	til	ADP	P	_	31	case	_	_
+31	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	28	acl:relcl	_	_
+32	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
+33	innan	innan	ADP	P	_	34	case	_	_
+34	fjárlaga	fjárlag	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	31	obl	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4557046,.13
-# X_ID = ID_MISSING
-# text = og það er vel,
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
-4	vel	vel	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	2	punct	_	_
-
-# sent_id = G-33-4557046,.14
-# X_ID = ID_MISSING
-# text = en menn vilja einfaldlega fleiri framkvæmdir og að menn nýti það svigrúm sem til staðar er innan fjárlaga .
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
-3	vilja	vilja	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	3	advmod	_	_
-5	fleiri	margur	DET	QR-A	Case=Acc	6	amod	_	_
-6	framkvæmdir	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	_
-7	og	og	CCONJ	CONJ	_	10	cc	_	_
-8	að	að	SCONJ	C	_	10	mark	_	_
-9	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
-10	nýti	nýta	VERB	VBPS	Mood=Sub|Tense=Pres	3	obj	_	_
-11	það	sá	DET	D-A	Case=Acc	12	det	_	_
-12	svigrúm	svigrúm	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
-13	sem	sem	SCONJ	C	_	15	mark	_	_
-14	til	til	ADP	P	_	15	case	_	_
-15	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	12	acl:relcl	_	_
-16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
-17	innan	innan	ADP	P	_	18	case	_	_
-18	fjárlaga	fjárlag	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	obl	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4557046,.15
-# X_ID = ID_MISSING
-# text = Ég vil síðan ræða sérstaklega þann fund sem ég sat með sveitarstjórnarmönnum og fleirum af suðvesturhorninu, sem hæstv. ráðherra boðaði menn á til að vera í samráði .
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.11
+# X_ID = ID_missing_15
+# text = Ég vil síðan ræða sérstaklega þann fund sem ég sat með sveitarstjórnarmönnum og fleirum af suðvesturhorninu, sem hæstv. ráðherra boðaði menn á til að vera í samráði.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	síðan	síðan	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -295,25 +279,21 @@
 28	samráði	samráð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4557046,.16
-# X_ID = ID_MISSING
-# text = Það er vel,
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.12
+# X_IDs = ID_missing_16 ; ID_missing_17
+# text = Það er vel, ég fagna því.
 1	Það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	vel	vel	ADV	ADV	Degree=Pos	1	advmod	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	1	punct	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	ég	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
+6	fagna	fagna	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
+7	því	það	PRON	PRO-D	Case=Dat	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4557046,.17
-# X_ID = ID_MISSING
-# text = ég fagna því .
-1	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	fagna	fagna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	því	það	PRON	PRO-D	Case=Dat	2	obj	_	SpaceAfter=No
-4	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4557046,.18
-# X_ID = ID_MISSING
-# text = En hvað líður því að menn fái ákveðnar lausnir ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.13
+# X_ID = ID_missing_18
+# text = En hvað líður því að menn fái ákveðnar lausnir?
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	hvað	hvað	ADV	WADV	Degree=Pos	3	advmod	_	_
 3	líður	líða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -325,9 +305,9 @@
 9	lausnir	lausn	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obj	_	SpaceAfter=No
 10	?	?	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4557046,.19
-# X_ID = ID_MISSING
-# text = Þeir sveitarstjórnarmenn sem komu að austan, frá Hveragerði, frá Selfossi, og fleiri bentu á að menn þurfi ekki að bíða eftir því hvort 2+2 eða 2+1 leiðin verði farin, menn geti farið af stað með ýmsar úrbætur nú þegar á Suðurlandsveginum .
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.14
+# X_ID = ID_missing_19
+# text = Þeir sveitarstjórnarmenn sem komu að austan, frá Hveragerði, frá Selfossi, og fleiri bentu á að menn þurfi ekki að bíða eftir því hvort 2+2 eða 2+1 leiðin verði farin, menn geti farið af stað með ýmsar úrbætur nú þegar á Suðurlandsveginum.
 1	Þeir	sá	DET	D-N	Case=Nom	2	det	_	_
 2	sveitarstjórnarmenn	sveitarstjórnarmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	16	nsubj	_	_
 3	sem	sem	SCONJ	C	_	4	mark	_	_
@@ -379,9 +359,9 @@
 49	Suðurlandsveginum	suðurlandsvegur	PROPN	NPR-D	_	40	obl	_	SpaceAfter=No
 50	.	.	PUNCT	.	_	16	punct	_	_
 
-# sent_id = G-33-4557046,.20
-# X_ID = ID_MISSING
-# text = Af hverju er ekki farið af stað í það ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.15
+# X_ID = ID_missing_20
+# text = Af hverju er ekki farið af stað í það?
 1	Af	af	ADP	P	_	2	case	_	_
 2	hverju	hver	PRON	WPRO-D	Case=Dat	5	obl	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -393,9 +373,9 @@
 9	það	það	PRON	PRO-A	Case=Acc	5	obl	_	SpaceAfter=No
 10	?	?	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4557046,.21
-# X_ID = ID_MISSING
-# text = Við vitum að þá var þegar farið af stað með ákveðna tvöföldun .
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.16
+# X_ID = ID_missing_21
+# text = Við vitum að þá var þegar farið af stað með ákveðna tvöföldun.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	vitum	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	7	mark	_	_
@@ -410,6 +390,9 @@
 12	tvöföldun	tvöföldun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_TKG_2011_G-33-4557046,.17
+# X_ID = ID_missing_22
+# text = Við erum að ræða um fleiri þætti og fleiri úrbætur á þeim vegi sem mér fannst sveitarstjórnarfólkið rökstyðja mjög vel að hægt væri að fara í.
 1	Við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -435,6 +418,6 @@
 23	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	25	cop	_	_
 24	að	að	PART	TO	_	25	mark	_	_
 25	fara	fara	VERB	VB	VerbForm=Inf	18	ccomp	_	_
-26	í	í	ADP	P	_	25	obl	_	_
+26	í	í	ADP	P	_	25	obl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	4	punct	_	_
 

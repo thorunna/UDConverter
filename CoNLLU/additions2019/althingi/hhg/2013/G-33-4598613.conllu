@@ -1,6 +1,6 @@
-# sent_id = G-33-4598613,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Ég þakka hv. þm. Brynjari Níelssyni fyrir fína ræðu .
+# sent_id = ALTHINGI_HHG_2013_G-33-4598613,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Ég þakka hv. þm. Brynjari Níelssyni fyrir fína ræðu.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -15,6 +15,9 @@
 12	ræðu	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	5	punct	_	_
 
+# sent_id = ALTHINGI_HHG_2013_G-33-4598613,.2
+# X_ID = ID_missing_2
+# text = Mig langar að spyrja hvort hv. þingmaður telji þetta frumvarp standast meðalhóf með hliðsjón af því að það hafa komið fram hugmyndir sem þarf að ræða betur, hugmyndir sem væru vægari og mundu ekki brjóta friðhelgi einkalífsins en gætu stuðlað að árangri gegn sama vandamáli.
 1	Mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
 2	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -41,7 +44,7 @@
 24	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	22	acl:relcl	_	_
 25	að	að	PART	TO	_	26	mark	_	_
 26	ræða	ræða	VERB	VB	VerbForm=Inf	24	xcomp	_	_
-27	betur	vel	ADV	ADVR	Degree=Cmp	26	advmod	_	_
+27	betur	vel	ADV	ADVR	Degree=Cmp	26	advmod	_	SpaceAfter=No
 28	,	,	PUNCT	,	_	27	punct	_	_
 29	hugmyndir	hugmynd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	appos	_	_
 30	sem	sem	SCONJ	C	_	32	mark	_	_
@@ -60,6 +63,6 @@
 43	árangri	árangur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	41	obl	_	_
 44	gegn	gegn	ADP	P	_	46	case	_	_
 45	sama	sami	ADJ	ADJ-D	Case=Dat|Degree=Pos	46	amod	_	_
-46	vandamáli	vandamál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	43	obl	_	_
+46	vandamáli	vandamál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	43	obl	_	SpaceAfter=No
 47	.	.	PUNCT	.	_	2	punct	_	_
 

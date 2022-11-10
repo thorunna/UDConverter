@@ -1,6 +1,6 @@
-# sent_id = G-33-4719940,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Ég þakka hv. þm. Pétri H. Blöndal fyrir ræðuna,
+# sent_id = ALTHINGI_HHG_2013_G-33-4719940,.1
+# X_IDs = ID_missing_1 ; ID_missing_2
+# text = Virðulegi forseti. Ég þakka hv. þm. Pétri H. Blöndal fyrir ræðuna, hann fór inn á margt sem er mjög mikilvægt að ræða.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -13,27 +13,23 @@
 10	Blöndal	blöndal	PROPN	NPR-D	_	7	dep	_	_
 11	fyrir	fyrir	ADP	P	_	12	case	_	_
 12	ræðuna	ræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	5	punct	_	_
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	hann	hann	PRON	PRO-N	Case=Nom	15	nsubj	_	_
+15	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
+16	inn	inn	ADP	RP	_	18	compound:prt	_	_
+17	á	á	ADP	P	_	18	case	_	_
+18	margt	margur	DET	Q-A	Case=Acc	15	obl	_	_
+19	sem	sem	SCONJ	C	_	24	mark	_	_
+20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
+21	mjög	mjög	ADV	ADV	Degree=Pos	22	amod	_	_
+22	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	amod	_	_
+23	að	að	PART	TO	_	24	mark	_	_
+24	ræða	ræða	VERB	VB	VerbForm=Inf	18	acl:relcl	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4719940,.2
-# X_ID = ID_MISSING
-# text = hann fór inn á margt sem er mjög mikilvægt að ræða .
-1	hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	inn	inn	ADP	RP	_	5	compound:prt	_	_
-4	á	á	ADP	P	_	5	case	_	_
-5	margt	margur	DET	Q-A	Case=Acc	2	obl	_	_
-6	sem	sem	SCONJ	C	_	11	mark	_	_
-7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
-8	mjög	mjög	ADV	ADV	Degree=Pos	9	amod	_	_
-9	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
-10	að	að	PART	TO	_	11	mark	_	_
-11	ræða	ræða	VERB	VB	VerbForm=Inf	5	acl:relcl	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4719940,.3
-# X_ID = ID_MISSING
-# text = En mig langar að spyrja í stuttu máli : Með hliðsjón af þeim tækniframförum sem eiga sér stað og hafa átt sér stað síðustu þrjá til fjóra áratugi, seinustu öld eiginlega, er þá ekki sérstaklega mikilvægt að við Íslendingar reynum í það minnsta að vera til fyrirmyndar þegar kemur að löggjöf um friðhelgi einkalífsins ?
+# sent_id = ALTHINGI_HHG_2013_G-33-4719940,.2
+# X_ID = ID_missing_3
+# text = En mig langar að spyrja í stuttu máli: Með hliðsjón af þeim tækniframförum sem eiga sér stað og hafa átt sér stað síðustu þrjá til fjóra áratugi, seinustu öld eiginlega, er þá ekki sérstaklega mikilvægt að við Íslendingar reynum í það minnsta að vera til fyrirmyndar þegar kemur að löggjöf um friðhelgi einkalífsins?
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	mig	ég	PRON	PRO-A	Case=Acc	3	nsubj	_	_
 3	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -92,9 +88,9 @@
 56	einkalífsins	einkalíf	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	55	nmod:poss	_	SpaceAfter=No
 57	?	?	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4719940,.4
-# X_ID = ID_MISSING
-# text = Er ekki mikilvægt, einmitt vegna stöðunnar í heiminum og brota NSA til dæmis, sem þó eru frá Bandaríkjunum
+# sent_id = ALTHINGI_HHG_2013_G-33-4719940,.3
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Er ekki mikilvægt, einmitt vegna stöðunnar í heiminum og brota NSA til dæmis, sem þó eru frá Bandaríkjunum athugið, friðhelgi einkalífsins á að vera tryggð í stjórnarskrá Bandaríkjanna.
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 2	ekki	ekki	ADV	NEG	_	3	advmod	_	_
 3	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
@@ -115,26 +111,22 @@
 18	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	20	cop	_	_
 19	frá	frá	ADP	P	_	20	case	_	_
 20	Bandaríkjunum	bandaríki	PROPN	NPRS-D	_	12	acl:relcl	_	_
+21	athugið	athuga	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0|SpaceAfter=No
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	friðhelgi	friðhelgi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	nsubj	_	_
+24	einkalífsins	einkalíf	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	nmod:poss	_	_
+25	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	21	ccomp	_	_
+26	að	að	PART	TO	_	28	mark	_	_
+27	vera	vera	AUX	BE	VerbForm=Inf	28	cop	_	_
+28	tryggð	tryggja	VERB	VAN	Tense=Past|VerbForm=Part	25	xcomp	_	_
+29	í	í	ADP	P	_	30	case	_	_
+30	stjórnarskrá	stjórnarskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	_
+31	Bandaríkjanna	bandaríki	PROPN	NPRS-G	_	30	nmod:poss	_	SpaceAfter=No
+32	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4719940,.5
-# X_ID = ID_MISSING
-# text = athugið, friðhelgi einkalífsins á að vera tryggð í stjórnarskrá Bandaríkjanna .
-1	athugið	athuga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
-2	,	,	PUNCT	,	_	1	punct	_	_
-3	friðhelgi	friðhelgi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
-4	einkalífsins	einkalíf	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	nmod:poss	_	_
-5	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	1	ccomp	_	_
-6	að	að	PART	TO	_	8	mark	_	_
-7	vera	vera	AUX	BE	VerbForm=Inf	8	cop	_	_
-8	tryggð	tryggja	VERB	VAN	Tense=Past|VerbForm=Part	5	xcomp	_	_
-9	í	í	ADP	P	_	10	case	_	_
-10	stjórnarskrá	stjórnarskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
-11	Bandaríkjanna	bandaríki	PROPN	NPRS-G	_	10	nmod:poss	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	1	punct	_	_
-
-# sent_id = G-33-4719940,.6
-# X_ID = ID_MISSING
-# text = Þeir telja sig ekki brjóta hana vegna þess að þeir hafa í gegnum tíðina alltaf fundið fleiri og fleiri ástæður til að ganga á friðhelgi einkalífsins, IV. viðauka stjórnarskrár Bandaríkjanna .
+# sent_id = ALTHINGI_HHG_2013_G-33-4719940,.4
+# X_ID = ID_missing_6
+# text = Þeir telja sig ekki brjóta hana vegna þess að þeir hafa í gegnum tíðina alltaf fundið fleiri og fleiri ástæður til að ganga á friðhelgi einkalífsins, IV. viðauka stjórnarskrár Bandaríkjanna.
 1	Þeir	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	telja	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	sig	sig	PRON	PRO-A	Case=Acc	5	nsubj	_	_
@@ -168,9 +160,9 @@
 31	Bandaríkjanna	bandaríki	PROPN	NPRS-G	_	30	nmod:poss	_	SpaceAfter=No
 32	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4719940,.7
-# X_ID = ID_MISSING
-# text = Ég óttast, og við píratar og fleiri, að sama þróunin eigi sér stað hér .
+# sent_id = ALTHINGI_HHG_2013_G-33-4719940,.5
+# X_ID = ID_missing_7
+# text = Ég óttast, og við píratar og fleiri, að sama þróunin eigi sér stað hér.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	óttast	óttast	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	2	punct	_	_
@@ -189,9 +181,9 @@
 16	hér	hér	ADV	ADV	Degree=Pos	13	advmod	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4719940,.8
-# X_ID = ID_MISSING
-# text = Burt séð frá því hvaða heimildir hafa verið veittar í fortíðinni réttlætir það ekki að við getum endalaust gengið lengra .
+# sent_id = ALTHINGI_HHG_2013_G-33-4719940,.6
+# X_ID = ID_missing_8
+# text = Burt séð frá því hvaða heimildir hafa verið veittar í fortíðinni réttlætir það ekki að við getum endalaust gengið lengra.
 1	Burt	burt	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	séð	sjá	VERB	VAN	Tense=Past|VerbForm=Part	12	advcl	_	_
 3	frá	frá	ADP	P	_	4	case	_	_
@@ -214,9 +206,9 @@
 20	lengra	langt	ADV	ADVR	Degree=Cmp	19	advmod	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = G-33-4719940,.9
-# X_ID = ID_MISSING
-# text = Einhvers staðar þurfum við að segja stopp .
+# sent_id = ALTHINGI_HHG_2013_G-33-4719940,.7
+# X_ID = ID_missing_9
+# text = Einhvers staðar þurfum við að segja stopp.
 1	Einhvers	einhver	DET	Q-G	Case=Gen	2	amod	_	_
 2	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	obl	_	_
 3	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -226,9 +218,9 @@
 7	stopp	stopp	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	dep	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4719940,.10
-# X_ID = ID_MISSING
-# text = Einhvers staðar þurfum við að átta okkur á því að við höfum kannski þegar gengið of langt og ættum ekki að ganga lengra .
+# sent_id = ALTHINGI_HHG_2013_G-33-4719940,.8
+# X_ID = ID_missing_10
+# text = Einhvers staðar þurfum við að átta okkur á því að við höfum kannski þegar gengið of langt og ættum ekki að ganga lengra.
 1	Einhvers	einhver	DET	Q-G	Case=Gen	2	amod	_	_
 2	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	3	obl	_	_
 3	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -254,9 +246,9 @@
 23	lengra	langt	ADV	ADVR	Degree=Cmp	22	advmod	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4719940,.11
-# X_ID = ID_MISSING
-# text = Við ættum að skoða friðhelgi einkalífsins með hliðsjón af því að styrkja hana í staðinn fyrir að finna sífellt fleiri og fleiri ástæður sem við munum finna til þess að á ganga á það .
+# sent_id = ALTHINGI_HHG_2013_G-33-4719940,.9
+# X_ID = ID_missing_11
+# text = Við ættum að skoða friðhelgi einkalífsins með hliðsjón af því að styrkja hana í staðinn fyrir að finna sífellt fleiri og fleiri ástæður sem við munum finna til þess að á ganga á það.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	ættum	eiga	VERB	VBDS	Mood=Sub|Tense=Past	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -293,6 +285,9 @@
 34	það	það	PRON	PRO-A	Case=Acc	32	obl	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_HHG_2013_G-33-4719940,.10
+# X_ID = ID_missing_12
+# text = Mig langar því að spyrja hv. þm. Pétur H. Blöndal hvort hann telji ekki frekar að við ættum að salta þetta mál í bili og ræða það upp á nýtt í nefndinni á haustþingi og þá með hliðsjón af friðhelgi einkalífsins, með hliðsjón af njósnum NSA og ástandinu í heiminum.
 1	Mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
 2	langar	langa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
@@ -333,7 +328,7 @@
 38	hliðsjón	hliðsjón	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	xcomp	_	_
 39	af	af	ADP	P	_	40	case	_	_
 40	friðhelgi	friðhelgi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	38	obl	_	_
-41	einkalífsins	einkalíf	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	40	nmod:poss	_	_
+41	einkalífsins	einkalíf	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	40	nmod:poss	_	SpaceAfter=No
 42	,	,	PUNCT	,	_	41	punct	_	_
 43	með	með	ADP	P	_	44	case	_	_
 44	hliðsjón	hliðsjón	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	38	obl	_	_
@@ -343,6 +338,6 @@
 48	og	og	CCONJ	CONJ	_	49	cc	_	_
 49	ástandinu	ástand	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	46	conj	_	_
 50	í	í	ADP	P	_	51	case	_	_
-51	heiminum	heimur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	49	obl	_	_
+51	heiminum	heimur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	49	obl	_	SpaceAfter=No
 52	.	.	PUNCT	.	_	2	punct	_	_
 

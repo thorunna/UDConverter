@@ -1,6 +1,6 @@
-# sent_id = G-33-4723471,.1
-# X_ID = ID_MISSING
-# text = Herra forseti . Bara svo ég hnykki á því sem stendur í nefndarálitinu um málið þá segir þar að nefndin sé sammála um að vegna þeirrar óvissu sem sé um málið á þessu stigi sé nauðsynlegt að hefja sem fyrst vinnu við nánari greiningu á verkefninu á grundvelli þeirra atriða sem fram komu hjá ráðgjafarhópnum .
+# sent_id = ALTHINGI_BO_2014_G-33-4723471,.1
+# X_ID = ID_missing_1
+# text = Herra forseti. Bara svo ég hnykki á því sem stendur í nefndarálitinu um málið þá segir þar að nefndin sé sammála um að vegna þeirrar óvissu sem sé um málið á þessu stigi sé nauðsynlegt að hefja sem fyrst vinnu við nánari greiningu á verkefninu á grundvelli þeirra atriða sem fram komu hjá ráðgjafarhópnum.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -58,18 +58,18 @@
 55	ráðgjafarhópnum	ráðgjafarhópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	53	obl	_	SpaceAfter=No
 56	.	.	PUNCT	.	_	17	punct	_	_
 
-# sent_id = G-33-4723471,.2
-# X_ID = ID_MISSING
-# text = Það er mjög skýrt .
+# sent_id = ALTHINGI_BO_2014_G-33-4723471,.2
+# X_ID = ID_missing_2
+# text = Það er mjög skýrt.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
 4	skýrt	skýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4723471,.3
-# X_ID = ID_MISSING
-# text = Eins og ég sagði hefði alveg verið hægt að gera eitthvað annað .
+# sent_id = ALTHINGI_BO_2014_G-33-4723471,.3
+# X_ID = ID_missing_3
+# text = Eins og ég sagði hefði alveg verið hægt að gera eitthvað annað.
 1	Eins	eins	ADV	ADV	Degree=Pos	8	advmod	_	_
 2	og	og	ADP	P	_	4	case	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -84,6 +84,9 @@
 12	annað	annar	PRON	OTHER-A	Case=Acc	11	amod	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	8	punct	_	_
 
+# sent_id = ALTHINGI_BO_2014_G-33-4723471,.4
+# X_ID = ID_missing_4
+# text = Fram kom í formála ráðherra að þarna væru í rauninni þrjár sviðsmyndir: Það er að hægja á verkefninu, fara strax í könnunarviðræður eða halda áfram að safna þessum upplýsingum, eins og ráðgjafarhópurinn gerir grein fyrir í skýrslunni, og sú varð niðurstaðan.
 1	Fram	fram	ADP	RP	_	2	compound:prt	_	_
 2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -95,14 +98,14 @@
 9	í	í	ADP	P	_	10	case	_	_
 10	rauninni	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	ccomp	_	_
 11	þrjár	þrír	NUM	NUM-N	Case=Nom	12	nummod	_	_
-12	sviðsmyndir	sviðsmynd	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
+12	sviðsmyndir	sviðsmynd	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	SpaceAfter=No
 13	:	:	PUNCT	,	_	12	punct	_	_
 14	Það	það	PRON	PRO-N	Case=Nom	10	parataxis	_	_
 15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
 16	að	að	PART	TO	_	17	mark	_	_
 17	hægja	hægja	VERB	VB	VerbForm=Inf	14	dep	_	_
 18	á	á	ADP	P	_	19	case	_	_
-19	verkefninu	verkefni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
+19	verkefninu	verkefni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
 20	,	,	PUNCT	,	_	19	punct	_	_
 21	fara	fara	VERB	VBPI	Mood=Ind|Tense=Pres	17	xcomp	_	_
 22	strax	strax	ADV	ADV	Degree=Pos	21	advmod	_	_
@@ -114,7 +117,7 @@
 28	að	að	PART	TO	_	29	mark	_	_
 29	safna	safna	VERB	VB	VerbForm=Inf	26	xcomp	_	_
 30	þessum	þessi	DET	D-D	Case=Dat	31	det	_	_
-31	upplýsingum	upplýsing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	29	obj	_	_
+31	upplýsingum	upplýsing	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	29	obj	_	SpaceAfter=No
 32	,	,	PUNCT	,	_	31	punct	_	_
 33	eins	_	ADV	ADVR	Degree=Cmp	26	advmod	_	_
 34	og	_	ADP	P	_	36	case	_	_
@@ -123,11 +126,11 @@
 37	grein	grein	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	36	obj	_	_
 38	fyrir	fyrir	ADP	P	_	36	obl	_	_
 39	í	í	ADP	P	_	40	case	_	_
-40	skýrslunni	skýrsla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	36	obl	_	_
+40	skýrslunni	skýrsla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	36	obl	_	SpaceAfter=No
 41	,	,	PUNCT	,	_	40	punct	_	_
 42	og	og	CCONJ	CONJ	_	43	cc	_	_
 43	sú	sá	DET	D-N	Case=Nom	26	parataxis	_	_
 44	varð	verða	AUX	RDDI	Mood=Ind|Tense=Past	43	aux	_	_
-45	niðurstaðan	niðurstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	43	nsubj	_	_
+45	niðurstaðan	niðurstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	43	nsubj	_	SpaceAfter=No
 46	.	.	PUNCT	.	_	2	punct	_	_
 

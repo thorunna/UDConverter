@@ -1,6 +1,6 @@
-# sent_id = G-33-4629754,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Vegna þess sem hv. þingmaður ræddi um stöðu fjáraukalagafrumvarpa og umræður sem urðu hér í gær, nokkuð spaklegar, um aðferðafræðina í Svíþjóð, þá er það að sönnu rétt að Svíar hafa um árabil haft öguð vinnubrögð, bæði varðandi undirbúning fjárlaga og vinnubrögð við framfylgni þeirra .
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.1
+# X_ID = ID_missing_1
+# text = Frú forseti. Vegna þess sem hv. þingmaður ræddi um stöðu fjáraukalagafrumvarpa og umræður sem urðu hér í gær, nokkuð spaklegar, um aðferðafræðina í Svíþjóð, þá er það að sönnu rétt að Svíar hafa um árabil haft öguð vinnubrögð, bæði varðandi undirbúning fjárlaga og vinnubrögð við framfylgni þeirra.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -55,9 +55,9 @@
 52	þeirra	hún	PRON	PRO-G	Case=Gen	51	nmod:poss	_	SpaceAfter=No
 53	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4629754,.2
-# X_ID = ID_MISSING
-# text = Þeir nota það sem kölluð er rammaaðferðafræði og hefur í raun verið í undirbúningi hér um nokkurra ára skeið, tveggja til þriggja ára skeið, að taka upp á Íslandi ; var liður í ráðgjöf Alþjóðagjaldeyrissjóðsins þegar hann kom hér í árdögum og leit á þessi mál, mælti eindregið með því .
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.2
+# X_ID = ID_missing_2
+# text = Þeir nota það sem kölluð er rammaaðferðafræði og hefur í raun verið í undirbúningi hér um nokkurra ára skeið, tveggja til þriggja ára skeið, að taka upp á Íslandi; var liður í ráðgjöf Alþjóðagjaldeyrissjóðsins þegar hann kom hér í árdögum og leit á þessi mál, mælti eindregið með því.
 1	Þeir	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	nota	nota	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	sá	DET	D-A	Case=Acc	2	obj	_	_
@@ -113,9 +113,9 @@
 53	því	það	PRON	PRO-D	Case=Dat	50	obl	_	SpaceAfter=No
 54	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4629754,.3
-# X_ID = ID_MISSING
-# text = Í grunninn gengur sú aðferðafræði út á að afgreiddir eru á þinginu bindandi útgjaldarammar að vori .
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.3
+# X_ID = ID_missing_3
+# text = Í grunninn gengur sú aðferðafræði út á að afgreiddir eru á þinginu bindandi útgjaldarammar að vori.
 1	Í	í	ADP	P	_	2	case	_	_
 2	grunninn	grunnur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
 3	gengur	ganga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -134,9 +134,9 @@
 16	vori	vor	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4629754,.4
-# X_ID = ID_MISSING
-# text = Framkvæmdarvaldið hefur síðan svigrúm til að fylla út í þá ramma
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Framkvæmdarvaldið hefur síðan svigrúm til að fylla út í þá ramma en verður að halda sig innan þeirra.
 1	Framkvæmdarvaldið	framkvæmdarvald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	síðan	síðan	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -148,22 +148,18 @@
 9	í	í	ADP	P	_	11	case	_	_
 10	þá	sá	DET	D-A	Case=Acc	11	det	_	_
 11	ramma	rammi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	_
+12	en	en	CCONJ	CONJ	_	13	cc	_	_
+13	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+14	að	að	PART	TO	_	15	mark	_	_
+15	halda	halda	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+16	sig	sig	PRON	PRO-A	Case=Acc	15	obj	_	_
+17	innan	innan	ADP	P	_	18	case	_	_
+18	þeirra	hann	PRON	PRO-G	Case=Gen	15	obl	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4629754,.5
-# X_ID = ID_MISSING
-# text = en verður að halda sig innan þeirra .
-1	en	en	CCONJ	CONJ	_	2	cc	_	_
-2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	að	að	PART	TO	_	4	mark	_	_
-4	halda	halda	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-5	sig	sig	PRON	PRO-A	Case=Acc	4	obj	_	_
-6	innan	innan	ADP	P	_	7	case	_	_
-7	þeirra	hann	PRON	PRO-G	Case=Gen	4	obl	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4629754,.6
-# X_ID = ID_MISSING
-# text = Þannig að fjárlagafrumvarpið kemur fram að hausti í samræmi við rammana .
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.5
+# X_ID = ID_missing_6
+# text = Þannig að fjárlagafrumvarpið kemur fram að hausti í samræmi við rammana.
 1	Þannig	þannig	ADV	ADV	Degree=Pos	0	root	_	_
 2	að	að	SCONJ	C	_	4	mark	_	_
 3	fjárlagafrumvarpið	fjárlagafrumvarp	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
@@ -177,9 +173,9 @@
 11	rammana	ramma	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4629754,.7
-# X_ID = ID_MISSING
-# text = Hins vegar er þar síðan pottur til að ráðstafa í ófyrirséð útgjöld, nákvæmlega eins og við tókum upp hér strax á árinu 2009 .
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.6
+# X_ID = ID_missing_7
+# text = Hins vegar er þar síðan pottur til að ráðstafa í ófyrirséð útgjöld, nákvæmlega eins og við tókum upp hér strax á árinu 2009.
 1	Hins	hinn	DET	D-G	Case=Gen	2	det	_	_
 2	vegar	vegur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
@@ -206,9 +202,9 @@
 24	2009	2009	NUM	NUM-D	Case=Dat	23	appos	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4629754,.8
-# X_ID = ID_MISSING
-# text = Í fyrsta sinn var í fjárlögum á Íslandi stór, óskiptur varasjóður upp á milli 4 og 5 milljarða kr. lagt upp með 5 milljarða, lækkaði reyndar nokkuð í meðförum þingsins þannig að hann var eitthvað um 4 milljarðar
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.7
+# X_IDs = ID_missing_8 ; ID_missing_9 ; ID_missing_10 ; ID_missing_11
+# text = Í fyrsta sinn var í fjárlögum á Íslandi stór, óskiptur varasjóður upp á milli 4 og 5 milljarða kr. lagt upp með 5 milljarða, lækkaði reyndar nokkuð í meðförum þingsins þannig að hann var eitthvað um 4 milljarðar og það kom sér vel strax á næsta ári þar á eftir því að náttúruhamfarirnar á Íslandi í apríl og í framhaldinu 2010 ætli þær hafi ekki endað með því að kosta ríkissjóð eða hið opinbera eitthvað á annan milljarð króna og það fé kom allt úr þessum potti.
 1	Í	í	ADP	P	_	3	case	_	_
 2	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	3	amod	_	_
 3	sinn	sinn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	27	obl	_	_
@@ -218,7 +214,7 @@
 7	á	á	ADP	P	_	8	case	_	_
 8	Íslandi	ísland	PROPN	NPR-D	_	27	obl	_	_
 9	stór	stór	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
 11	óskiptur	óskiptur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	amod	_	_
 12	varasjóður	varasjóður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
 13	upp	upp	ADP	RP	_	19	compound:prt	_	_
@@ -249,72 +245,60 @@
 38	um	um	ADV	ADV	Degree=Pos	40	advmod	_	_
 39	4	fjórir	NUM	NUM-N	Case=Nom	40	nummod	_	_
 40	milljarðar	milljarður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	33	advcl	_	_
+41	og	og	CCONJ	CONJ	_	43	cc	_	_
+42	það	það	PRON	PRO-N	Case=Nom	43	nsubj	_	_
+43	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	27	conj	_	OriginalHead=0
+44	sér	sig	PRON	PRO-D	Case=Dat	43	obj	_	_
+45	vel	vel	ADV	ADV	Degree=Pos	43	advmod	_	_
+46	strax	strax	ADV	ADV	Degree=Pos	49	advmod	_	_
+47	á	á	ADP	P	_	49	case	_	_
+48	næsta	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	49	amod	_	_
+49	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	43	obl	_	_
+50	þar	þar	ADV	ADV	Degree=Pos	49	obl	_	_
+51	á	á	ADV	ADV	Degree=Pos	50	advmod	_	_
+52	eftir	eftir	ADP	P	_	50	obl	_	_
+53	því	það	PRON	PRO-D	Case=Dat	43	obl	_	_
+54	að	að	SCONJ	C	_	55	mark	_	_
+55	náttúruhamfarirnar	náttúruhamfarir	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	53	ccomp	_	_
+56	á	á	ADP	P	_	57	case	_	_
+57	Íslandi	ísland	PROPN	NPR-D	_	55	obl	_	_
+58	í	í	ADP	P	_	59	case	_	_
+59	apríl	apríl	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	55	obl	_	_
+60	og	og	CCONJ	CONJ	_	59	cc	_	_
+61	í	í	ADP	P	_	62	case	_	_
+62	framhaldinu	framhald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	59	obl	_	_
+63	2010	2010	NUM	NUM-A	Case=Acc	62	obl	_	_
+64	ætli	ætla	VERB	VBPS	Mood=Sub|Tense=Pres	27	conj	_	OriginalHead=0
+65	þær	hún	PRON	PRO-N	Case=Nom	68	nsubj	_	_
+66	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	68	aux	_	_
+67	ekki	ekki	ADV	NEG	_	68	advmod	_	_
+68	endað	enda	VERB	VBN	Tense=Past|VerbForm=Part	64	ccomp	_	_
+69	með	með	ADP	P	_	70	case	_	_
+70	því	það	PRON	PRO-D	Case=Dat	68	obl	_	_
+71	að	að	PART	TO	_	72	mark	_	_
+72	kosta	kosta	VERB	VB	VerbForm=Inf	70	xcomp	_	_
+73	ríkissjóð	ríkissjóður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	72	iobj	_	_
+74	eða	eða	CCONJ	CONJ	_	76	cc	_	_
+75	hið	hinn	DET	D-A	Case=Acc	76	det	_	_
+76	opinbera	opinber	ADJ	ADJ-A	Case=Acc|Degree=Pos	73	conj	_	_
+77	eitthvað	einhver	DET	Q-A	Case=Acc	72	obj	_	_
+78	á	á	ADP	P	_	80	case	_	_
+79	annan	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	80	amod	_	_
+80	milljarð	milljarður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	77	obl	_	_
+81	króna	króna	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	80	nmod:poss	_	_
+82	og	og	CCONJ	CONJ	_	85	cc	_	_
+83	það	sá	DET	D-A	Case=Acc	84	det	_	_
+84	fé	fé	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	85	nsubj	_	_
+85	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	27	conj	_	OriginalHead=0
+86	allt	allur	DET	Q-N	Case=Nom	85	amod	_	_
+87	úr	úr	ADP	P	_	89	case	_	_
+88	þessum	þessi	DET	D-D	Case=Dat	89	det	_	_
+89	potti	pottur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	85	obl	_	SpaceAfter=No
+90	.	.	PUNCT	.	_	27	punct	_	_
 
-# sent_id = G-33-4629754,.9
-# X_ID = ID_MISSING
-# text = og það kom sér vel strax á næsta ári þar á eftir því að náttúruhamfarirnar á Íslandi í apríl og í framhaldinu 2010
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	sér	sig	PRON	PRO-D	Case=Dat	3	obj	_	_
-5	vel	vel	ADV	ADV	Degree=Pos	3	advmod	_	_
-6	strax	strax	ADV	ADV	Degree=Pos	9	advmod	_	_
-7	á	á	ADP	P	_	9	case	_	_
-8	næsta	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	9	amod	_	_
-9	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-10	þar	þar	ADV	ADV	Degree=Pos	9	obl	_	_
-11	á	á	ADV	ADV	Degree=Pos	10	advmod	_	_
-12	eftir	eftir	ADP	P	_	10	obl	_	_
-13	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
-14	að	að	SCONJ	C	_	15	mark	_	_
-15	náttúruhamfarirnar	náttúruhamfarir	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	ccomp	_	_
-16	á	á	ADP	P	_	17	case	_	_
-17	Íslandi	ísland	PROPN	NPR-D	_	15	obl	_	_
-18	í	í	ADP	P	_	19	case	_	_
-19	apríl	apríl	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
-20	og	og	CCONJ	CONJ	_	19	cc	_	_
-21	í	í	ADP	P	_	22	case	_	_
-22	framhaldinu	framhald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
-23	2010	2010	NUM	NUM-A	Case=Acc	22	obl	_	_
-
-# sent_id = G-33-4629754,.10
-# X_ID = ID_MISSING
-# text = ætli þær hafi ekki endað með því að kosta ríkissjóð eða hið opinbera eitthvað á annan milljarð króna
-1	ætli	ætla	VERB	VBPS	Mood=Sub|Tense=Pres	0	root	_	_
-2	þær	hún	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-3	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	5	aux	_	_
-4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
-5	endað	enda	VERB	VBN	Tense=Past|VerbForm=Part	1	ccomp	_	_
-6	með	með	ADP	P	_	7	case	_	_
-7	því	það	PRON	PRO-D	Case=Dat	5	obl	_	_
-8	að	að	PART	TO	_	9	mark	_	_
-9	kosta	kosta	VERB	VB	VerbForm=Inf	7	xcomp	_	_
-10	ríkissjóð	ríkissjóður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	iobj	_	_
-11	eða	eða	CCONJ	CONJ	_	13	cc	_	_
-12	hið	hinn	DET	D-A	Case=Acc	13	det	_	_
-13	opinbera	opinber	ADJ	ADJ-A	Case=Acc|Degree=Pos	10	conj	_	_
-14	eitthvað	einhver	DET	Q-A	Case=Acc	9	obj	_	_
-15	á	á	ADP	P	_	17	case	_	_
-16	annan	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	17	amod	_	_
-17	milljarð	milljarður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
-18	króna	króna	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	17	nmod:poss	_	_
-
-# sent_id = G-33-4629754,.11
-# X_ID = ID_MISSING
-# text = og það fé kom allt úr þessum potti .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	það	sá	DET	D-A	Case=Acc	3	det	_	_
-3	fé	fé	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	nsubj	_	_
-4	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-5	allt	allur	DET	Q-N	Case=Nom	4	amod	_	_
-6	úr	úr	ADP	P	_	8	case	_	_
-7	þessum	þessi	DET	D-D	Case=Dat	8	det	_	_
-8	potti	pottur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4629754,.12
-# X_ID = ID_MISSING
-# text = Alþingi samþykkir ráðstöfun þess eftir á, það er pottinum er skipt og síðan eru fjárheimildirnar færðar í fjáraukalögum með samþykki Alþingis yfir í þau verkefni sem komu upp á á árinu .
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.8
+# X_ID = ID_missing_12
+# text = Alþingi samþykkir ráðstöfun þess eftir á, það er pottinum er skipt og síðan eru fjárheimildirnar færðar í fjáraukalögum með samþykki Alþingis yfir í þau verkefni sem komu upp á á árinu.
 1	Alþingi	alþingi	PROPN	NPR-N	_	2	nsubj	_	_
 2	samþykkir	samþykkja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ráðstöfun	ráðstöfun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	_
@@ -349,9 +333,9 @@
 32	árinu	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4629754,.13
-# X_ID = ID_MISSING
-# text = Það er liður í því að draga úr vægi og þörf fyrir fjáraukalög .
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.9
+# X_ID = ID_missing_13
+# text = Það er liður í því að draga úr vægi og þörf fyrir fjáraukalög.
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	liður	liður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
@@ -367,9 +351,9 @@
 13	fjáraukalög	fjáraukalög	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4629754,.14
-# X_ID = ID_MISSING
-# text = En auðvitað verður aldrei hægt að útiloka þau
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.10
+# X_IDs = ID_missing_14 ; ID_missing_15
+# text = En auðvitað verður aldrei hægt að útiloka þau og það sem skiptir mestu máli er, og mesta agaleysið er, þegar smyglgóss er tekið inn í fjáraukalög Forseti hringir. sem á þar ekkert erindi.
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	auðvitað	auðvitað	ADV	ADV	Degree=Pos	3	advmod	_	_
 3	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -378,43 +362,39 @@
 6	að	að	PART	TO	_	7	mark	_	_
 7	útiloka	útiloka	VERB	VB	VerbForm=Inf	3	xcomp	_	_
 8	þau	það	PRON	PRO-A	Case=Acc	7	obj	_	_
+9	og	og	CCONJ	CONJ	_	17	cc	_	_
+10	það	sá	DET	D-N	Case=Nom	17	nsubj	_	_
+11	sem	sem	SCONJ	C	_	12	mark	_	_
+12	skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	10	acl:relcl	_	_
+13	mestu	mikill	DET	QS-D	Case=Dat	14	amod	_	_
+14	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obj	_	_
+15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	og	og	CCONJ	CONJ	_	3	conj	_	OriginalHead=0
+18	mesta	mikill	DET	QS-N	Case=Nom	19	amod	_	_
+19	agaleysið	agaleysi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	obl	_	_
+20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	20	punct	_	_
+22	þegar	þegar	ADP	P	_	25	case	_	_
+23	smyglgóss	smyglgóss	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	nsubj	_	_
+24	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
+25	tekið	taka	VERB	VAN	Tense=Past|VerbForm=Part	17	obl	_	_
+26	inn	inn	ADP	RP	_	28	compound:prt	_	_
+27	í	í	ADP	P	_	28	case	_	_
+28	fjáraukalög	fjáraukalög	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	25	obl	_	_
+29	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	30	nsubj	_	_
+30	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	25	dep	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	30	punct	_	_
+32	sem	sem	SCONJ	C	_	33	mark	_	_
+33	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	25	acl:relcl	_	_
+34	þar	þar	ADV	ADV	Degree=Pos	33	advmod	_	_
+35	ekkert	enginn	DET	Q-A	Case=Acc	36	amod	_	_
+36	erindi	erindi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obj	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4629754,.15
-# X_ID = ID_MISSING
-# text = og það sem skiptir mestu máli er, og mesta agaleysið er, þegar smyglgóss er tekið inn í fjáraukalög Forseti hringir . sem á þar ekkert erindi .
-1	og	og	CCONJ	CONJ	_	9	cc	_	_
-2	það	sá	DET	D-N	Case=Nom	9	nsubj	_	_
-3	sem	sem	SCONJ	C	_	4	mark	_	_
-4	skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	2	acl:relcl	_	_
-5	mestu	mikill	DET	QS-D	Case=Dat	6	amod	_	_
-6	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obj	_	_
-7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	7	punct	_	_
-9	og	og	CCONJ	CONJ	_	0	root	_	_
-10	mesta	mikill	DET	QS-N	Case=Nom	11	amod	_	_
-11	agaleysið	agaleysi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	obl	_	_
-12	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	12	punct	_	_
-14	þegar	þegar	ADP	P	_	17	case	_	_
-15	smyglgóss	smyglgóss	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
-16	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
-17	tekið	taka	VERB	VAN	Tense=Past|VerbForm=Part	9	obl	_	_
-18	inn	inn	ADP	RP	_	20	compound:prt	_	_
-19	í	í	ADP	P	_	20	case	_	_
-20	fjáraukalög	fjáraukalög	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obl	_	_
-21	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	22	nsubj	_	_
-22	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	17	dep	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	22	punct	_	_
-24	sem	sem	SCONJ	C	_	25	mark	_	_
-25	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	17	acl:relcl	_	_
-26	þar	þar	ADV	ADV	Degree=Pos	25	advmod	_	_
-27	ekkert	enginn	DET	Q-A	Case=Acc	28	amod	_	_
-28	erindi	erindi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obj	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	9	punct	_	_
-
-# sent_id = G-33-4629754,.16
-# X_ID = ID_MISSING
-# text = Það finnst mér verra en í sjálfu sér að menn séu með fjáraukalög til umfjöllunar .
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.11
+# X_ID = ID_missing_16
+# text = Það finnst mér verra en í sjálfu sér að menn séu með fjáraukalög til umfjöllunar.
 1	Það	það	PRON	PRO-N	Case=Nom	2	obl	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
@@ -432,9 +412,9 @@
 15	umfjöllunar	umfjöllun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4629754,.17
-# X_ID = ID_MISSING
-# text = Og Forseti hringir . því miður er það tilfellið,
+# sent_id = ALTHINGI_SJS_2013_G-33-4629754,.12
+# X_IDs = ID_missing_17 ; ID_missing_18
+# text = Og Forseti hringir. því miður er það tilfellið, hér eru liðir sem eiga ekki heima í fjáraukalögum.
 1	Og	og	CCONJ	CONJ	_	9	cc	_	_
 2	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	9	dep	_	SpaceAfter=No
@@ -445,15 +425,14 @@
 8	það	það	PRON	PRO-N	Case=Nom	9	nsubj	_	_
 9	tilfellið	tilfelli	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	9	punct	_	_
-
-1	hér	hér	ADV	ADV	Degree=Pos	3	advmod	_	_
-2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	liðir	liður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
-4	sem	sem	SCONJ	C	_	5	mark	_	_
-5	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	3	acl:relcl	_	_
-6	ekki	ekki	ADV	NEG	_	5	advmod	_	_
-7	heima	heima	ADV	ADV	Degree=Pos	5	advmod	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	fjáraukalögum	fjáraukalög	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
-10	.	.	PUNCT	.	_	3	punct	_	_
+11	hér	hér	ADV	ADV	Degree=Pos	13	advmod	_	_
+12	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
+13	liðir	liður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	conj	_	OriginalHead=0
+14	sem	sem	SCONJ	C	_	15	mark	_	_
+15	eiga	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	_
+16	ekki	ekki	ADV	NEG	_	15	advmod	_	_
+17	heima	heima	ADV	ADV	Degree=Pos	15	advmod	_	_
+18	í	í	ADP	P	_	19	case	_	_
+19	fjáraukalögum	fjáraukalög	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	9	punct	_	_
 

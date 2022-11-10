@@ -1,6 +1,6 @@
-# sent_id = G-33-4608533,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Vitsmunaleg geta mín nær ekki utan um þetta,
+# sent_id = ALTHINGI_BO_2015_G-33-4608533,.1
+# X_IDs = ID_missing_1 ; ID_missing_2
+# text = Virðulegi forseti. Vitsmunaleg geta mín nær ekki utan um þetta, ég verð að viðurkenna það.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -12,21 +12,17 @@
 9	utan	utan	ADV	ADV	Degree=Pos	11	advmod	_	_
 10	um	um	ADP	P	_	11	case	_	_
 11	þetta	þessi	DET	D-A	Case=Acc	7	obl	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	7	punct	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	ég	ég	PRON	PRO-N	Case=Nom	14	nsubj	_	_
+14	verð	verða	VERB	RDPI	Mood=Ind|Tense=Pres	7	conj	_	OriginalHead=0
+15	að	að	PART	TO	_	16	mark	_	_
+16	viðurkenna	viðurkenna	VERB	VB	VerbForm=Inf	14	xcomp	_	_
+17	það	það	PRON	PRO-A	Case=Acc	16	obj	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4608533,.2
-# X_ID = ID_MISSING
-# text = ég verð að viðurkenna það .
-1	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	verð	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	að	að	PART	TO	_	4	mark	_	_
-4	viðurkenna	viðurkenna	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-5	það	það	PRON	PRO-A	Case=Acc	4	obj	_	SpaceAfter=No
-6	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4608533,.3
-# X_ID = ID_MISSING
-# text = Ég skil ekki enn þá, frú forseti, svör hæstv. umhverfisráðherra .
+# sent_id = ALTHINGI_BO_2015_G-33-4608533,.2
+# X_ID = ID_missing_3
+# text = Ég skil ekki enn þá, frú forseti, svör hæstv. umhverfisráðherra.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -41,9 +37,9 @@
 12	umhverfisráðherra	umhverfisráðherra	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	nmod:poss	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4608533,.4
-# X_ID = ID_MISSING
-# text = Ef hægt er að taka út Hagavatn eitt og sér en hún er samt með því og hefði kannski gert alveg eins og fyrrverandi ráðherra ég bara skil þetta ekki,
+# sent_id = ALTHINGI_BO_2015_G-33-4608533,.3
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Ef hægt er að taka út Hagavatn eitt og sér en hún er samt með því og hefði kannski gert alveg eins og fyrrverandi ráðherra ég bara skil þetta ekki, fyrirgefið.
 1	Ef	ef	ADP	P	_	5	case	_	_
 2	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -74,17 +70,13 @@
 28	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 29	þetta	þessi	DET	D-A	Case=Acc	28	obj	_	_
 30	ekki	ekki	ADV	NEG	_	28	advmod	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	28	punct	_	_
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	fyrirgefið	fyrirgefa	VERB	VBI	Mood=Imp|VerbForm=Inf	28	conj	_	OriginalHead=0|SpaceAfter=No
+33	.	.	PUNCT	.	_	28	punct	_	_
 
-# sent_id = G-33-4608533,.5
-# X_ID = ID_MISSING
-# text = fyrirgefið .
-1	fyrirgefið	fyrirgefa	VERB	VBI	Mood=Imp|VerbForm=Inf	0	root	_	SpaceAfter=No
-2	.	.	PUNCT	.	_	1	punct	_	_
-
-# sent_id = G-33-4608533,.6
-# X_ID = ID_MISSING
-# text = Ég verð að biðja hæstv. ráðherra að útskýra þetta betur fyrir mér og kannski öðrum sem eru ekki alveg með á nótunum .
+# sent_id = ALTHINGI_BO_2015_G-33-4608533,.4
+# X_ID = ID_missing_6
+# text = Ég verð að biðja hæstv. ráðherra að útskýra þetta betur fyrir mér og kannski öðrum sem eru ekki alveg með á nótunum.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	verð	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -109,9 +101,9 @@
 22	nótunum	nóta	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	acl:relcl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4608533,.7
-# X_ID = ID_MISSING
-# text = Mér finnst standa eftir spurningin : Styður hæstv. ráðherra ekki þá vinnu sem núverandi verkefnisstjórn um rammaáætlun, nr. 3 sem sagt, vann fyrir forvera hennar í starfi ?
+# sent_id = ALTHINGI_BO_2015_G-33-4608533,.5
+# X_ID = ID_missing_7
+# text = Mér finnst standa eftir spurningin: Styður hæstv. ráðherra ekki þá vinnu sem núverandi verkefnisstjórn um rammaáætlun, nr. 3 sem sagt, vann fyrir forvera hennar í starfi?
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	standa	standa	VERB	VB	VerbForm=Inf	2	xcomp	_	_
@@ -143,9 +135,9 @@
 29	starfi	starf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
 30	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4608533,.8
-# X_ID = ID_MISSING
-# text = Styður hún ekki vinnu síns eigin ráðuneytis ?
+# sent_id = ALTHINGI_BO_2015_G-33-4608533,.6
+# X_ID = ID_missing_8
+# text = Styður hún ekki vinnu síns eigin ráðuneytis?
 1	Styður	styðja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	hún	hún	PRON	PRO-N	Case=Nom	1	nsubj	_	_
 3	ekki	ekki	ADV	NEG	_	1	advmod	_	_
@@ -155,9 +147,9 @@
 7	ráðuneytis	ráðuneyti	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	nmod:poss	_	SpaceAfter=No
 8	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4608533,.9
-# X_ID = ID_MISSING
-# text = Og af hverju erum við farin að ræða hérna allt í einu atvinnuveganefnd Alþingis sem eitthvert ígildi Forseti hringir . verkefnisstjórnar ?
+# sent_id = ALTHINGI_BO_2015_G-33-4608533,.7
+# X_ID = ID_missing_9
+# text = Og af hverju erum við farin að ræða hérna allt í einu atvinnuveganefnd Alþingis sem eitthvert ígildi Forseti hringir. verkefnisstjórnar?
 1	Og	og	CCONJ	CONJ	_	6	cc	_	_
 2	af	af	ADP	P	_	3	case	_	_
 3	hverju	hver	PRON	WPRO-D	Case=Dat	6	obl	_	_
@@ -181,8 +173,11 @@
 21	verkefnisstjórnar	verkefnisstjórn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	nmod:poss	_	SpaceAfter=No
 22	?	?	PUNCT	.	_	6	punct	_	_
 
+# sent_id = ALTHINGI_BO_2015_G-33-4608533,.8
+# X_ID = ID_missing_10
+# text = Hvaðan kemur það?
 1	Hvaðan	hvaðan	ADV	WADV	Degree=Pos	2	advmod	_	_
 2	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
+3	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	SpaceAfter=No
 4	?	?	PUNCT	.	_	2	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = G-33-4604326,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Það var sólarhringur sem leið á milli þess að hv. formaður tilkynnti að það ætti að taka málið út
+# sent_id = ALTHINGI_BO_2015_G-33-4604326,.1
+# X_IDs = ID_missing_1 ; ID_missing_2
+# text = Virðulegi forseti. Það var sólarhringur sem leið á milli þess að hv. formaður tilkynnti að það ætti að taka málið út og svo varð að fresta aftur.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -23,21 +23,17 @@
 20	taka	taka	VERB	VB	VerbForm=Inf	18	xcomp	_	_
 21	málið	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obj	_	_
 22	út	út	ADP	RP	_	20	compound:prt	_	_
+23	og	og	CCONJ	CONJ	_	25	cc	_	_
+24	svo	svo	ADV	ADV	Degree=Pos	25	advmod	_	_
+25	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	6	conj	_	OriginalHead=0
+26	að	að	PART	TO	_	27	mark	_	_
+27	fresta	fresta	VERB	VB	VerbForm=Inf	25	xcomp	_	_
+28	aftur	aftur	ADV	ADV	Degree=Pos	27	advmod	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4604326,.2
-# X_ID = ID_MISSING
-# text = og svo varð að fresta aftur .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
-3	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
-4	að	að	PART	TO	_	5	mark	_	_
-5	fresta	fresta	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-6	aftur	aftur	ADV	ADV	Degree=Pos	5	advmod	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4604326,.3
-# X_ID = ID_MISSING
-# text = Ég vil segja það, Gripið fram í . ég er með orðið, takk fyrir, að ég var til dæmis veik á þeim fundi sem málið var tekið út og hafði sérstaklega fyrir því að láta vita af því við formann nefndarinnar .
+# sent_id = ALTHINGI_BO_2015_G-33-4604326,.2
+# X_ID = ID_missing_3
+# text = Ég vil segja það, Gripið fram í. ég er með orðið, takk fyrir, að ég var til dæmis veik á þeim fundi sem málið var tekið út og hafði sérstaklega fyrir því að láta vita af því við formann nefndarinnar.
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	segja	segja	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -84,9 +80,9 @@
 44	nefndarinnar	nefnd	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	43	nmod:poss	_	SpaceAfter=No
 45	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4604326,.4
-# X_ID = ID_MISSING
-# text = Þetta er stórt og mikið mál og mikilvægt að það fari í gegn, mikilvægt að það sé vel unnið
+# sent_id = ALTHINGI_BO_2015_G-33-4604326,.3
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Þetta er stórt og mikið mál og mikilvægt að það fari í gegn, mikilvægt að það sé vel unnið og þá skil ég ekki þann asa sem er hér á síðustu metrunum.
 1	Þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	stórt	stór	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
@@ -107,28 +103,24 @@
 18	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	20	cop	_	_
 19	vel	vel	ADV	ADV	Degree=Pos	20	advmod	_	_
 20	unnið	vinna	VERB	VAN	Tense=Past|VerbForm=Part	15	ccomp	_	_
+21	og	og	CCONJ	CONJ	_	23	cc	_	_
+22	þá	þá	ADV	ADV	Degree=Pos	23	advmod	_	_
+23	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
+24	ég	ég	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+25	ekki	ekki	ADV	NEG	_	23	advmod	_	_
+26	þann	sá	DET	D-A	Case=Acc	27	det	_	_
+27	asa	asi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	23	obj	_	_
+28	sem	sem	SCONJ	C	_	33	mark	_	_
+29	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	33	cop	_	_
+30	hér	hér	ADV	ADV	Degree=Pos	33	advmod	_	_
+31	á	á	ADP	P	_	33	case	_	_
+32	síðustu	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	33	amod	_	_
+33	metrunum	metri	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	acl:relcl	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4604326,.5
-# X_ID = ID_MISSING
-# text = og þá skil ég ekki þann asa sem er hér á síðustu metrunum .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
-3	skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-5	ekki	ekki	ADV	NEG	_	3	advmod	_	_
-6	þann	sá	DET	D-A	Case=Acc	7	det	_	_
-7	asa	asi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
-8	sem	sem	SCONJ	C	_	13	mark	_	_
-9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-10	hér	hér	ADV	ADV	Degree=Pos	13	advmod	_	_
-11	á	á	ADP	P	_	13	case	_	_
-12	síðustu	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	13	amod	_	_
-13	metrunum	metri	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	acl:relcl	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4604326,.6
-# X_ID = ID_MISSING
-# text = Mér finnst gott að heyra að formaðurinn er sammála mér um að við þurfum að vinna ákveðna þætti betur
+# sent_id = ALTHINGI_BO_2015_G-33-4604326,.4
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Mér finnst gott að heyra að formaðurinn er sammála mér um að við þurfum að vinna ákveðna þætti betur og þá skulum við bara einhenda okkur í það.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	amod	_	_
@@ -148,15 +140,14 @@
 17	ákveðna	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	18	amod	_	_
 18	þætti	þáttur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obj	_	_
 19	betur	vel	ADV	ADVR	Degree=Cmp	16	advmod	_	_
-
-1	og	og	CCONJ	CONJ	_	6	cc	_	_
-2	þá	þá	ADV	ADV	Degree=Pos	6	advmod	_	_
-3	skulum	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
-4	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
-5	bara	bara	ADV	FP	Degree=Pos	6	advmod	_	_
-6	einhenda	einhenda	VERB	VB	VerbForm=Inf	0	root	_	_
-7	okkur	ég	PRON	PRO-D	Case=Dat	6	obj	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	það	það	PRON	PRO-A	Case=Acc	6	obl	_	_
-10	.	.	PUNCT	.	_	6	punct	_	_
+20	og	og	CCONJ	CONJ	_	25	cc	_	_
+21	þá	þá	ADV	ADV	Degree=Pos	25	advmod	_	_
+22	skulum	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	25	aux	_	_
+23	við	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
+24	bara	bara	ADV	FP	Degree=Pos	25	advmod	_	_
+25	einhenda	einhenda	VERB	VB	VerbForm=Inf	2	conj	_	OriginalHead=0
+26	okkur	ég	PRON	PRO-D	Case=Dat	25	obj	_	_
+27	í	í	ADP	P	_	28	case	_	_
+28	það	það	PRON	PRO-A	Case=Acc	25	obl	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	2	punct	_	_
 

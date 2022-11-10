@@ -1,6 +1,6 @@
-# sent_id = G-33-4602100,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Það kemur einhvern veginn sífellt betur í ljós að tilgangurinn með þessu frumvarpi var aldrei skýr frá upphafi .
+# sent_id = ALTHINGI_HHG_2013_G-33-4602100,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Það kemur einhvern veginn sífellt betur í ljós að tilgangurinn með þessu frumvarpi var aldrei skýr frá upphafi.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -24,9 +24,9 @@
 21	upphafi	upphaf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4602100,.2
-# X_ID = ID_MISSING
-# text = Tilgangurinn virðist vera tvíþættur í það minnsta, annars vegar sá að öðlast betri hagskýrslur almennt og hins vegar sá að eiga við þetta meinta neyðarástand .
+# sent_id = ALTHINGI_HHG_2013_G-33-4602100,.2
+# X_ID = ID_missing_2
+# text = Tilgangurinn virðist vera tvíþættur í það minnsta, annars vegar sá að öðlast betri hagskýrslur almennt og hins vegar sá að eiga við þetta meinta neyðarástand.
 1	Tilgangurinn	tilgangur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	virðist	virða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vera	vera	AUX	BE	VerbForm=Inf	4	cop	_	_
@@ -55,9 +55,9 @@
 26	neyðarástand	neyðarástand	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4602100,.3
-# X_ID = ID_MISSING
-# text = Ef við einblínum á hið meinta neyðarástand, sem er jú skuldavandi heimilanna, hefur fólk sem er í þeim vandræðum ekki verið feimið við að tjá hug sinn undir fullu nafni á internetinu og víðar,
+# sent_id = ALTHINGI_HHG_2013_G-33-4602100,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Ef við einblínum á hið meinta neyðarástand, sem er jú skuldavandi heimilanna, hefur fólk sem er í þeim vandræðum ekki verið feimið við að tjá hug sinn undir fullu nafni á internetinu og víðar, það hefur ekki verið feimið við að leita til umboðsmanns skuldara.
 1	Ef	ef	ADP	P	_	3	case	_	_
 2	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	einblínum	einblína	VERB	VBPI	Mood=Ind|Tense=Pres	24	obl	_	_
@@ -94,27 +94,23 @@
 34	internetinu	internet	PROPN	NPR-D	_	27	obl	_	_
 35	og	og	CCONJ	CONJ	_	36	cc	_	_
 36	víðar	víða	ADV	ADVR	Degree=Cmp	34	conj	_	SpaceAfter=No
-37	,	,	PUNCT	,	_	24	punct	_	_
+37	,	,	PUNCT	,	_	34	punct	_	_
+38	það	það	PRON	PRO-N	Case=Nom	42	nsubj	_	_
+39	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	42	aux	_	_
+40	ekki	ekki	ADV	NEG	_	42	advmod	_	_
+41	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	42	cop	_	_
+42	feimið	feiminn	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	conj	_	OriginalHead=0
+43	við	við	ADP	P	_	45	case	_	_
+44	að	að	PART	TO	_	45	mark	_	_
+45	leita	leita	VERB	VB	VerbForm=Inf	42	amod	_	_
+46	til	til	ADP	P	_	47	case	_	_
+47	umboðsmanns	umboðsmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	45	obl	_	_
+48	skuldara	skuldari	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	47	nmod:poss	_	SpaceAfter=No
+49	.	.	PUNCT	.	_	24	punct	_	_
 
-# sent_id = G-33-4602100,.4
-# X_ID = ID_MISSING
-# text = það hefur ekki verið feimið við að leita til umboðsmanns skuldara .
-1	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
-3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
-4	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	5	cop	_	_
-5	feimið	feiminn	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-6	við	við	ADP	P	_	8	case	_	_
-7	að	að	PART	TO	_	8	mark	_	_
-8	leita	leita	VERB	VB	VerbForm=Inf	5	amod	_	_
-9	til	til	ADP	P	_	10	case	_	_
-10	umboðsmanns	umboðsmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	obl	_	_
-11	skuldara	skuldari	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	10	nmod:poss	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	5	punct	_	_
-
-# sent_id = G-33-4602100,.5
-# X_ID = ID_MISSING
-# text = Það er ekki feimið við að leitast við að veita yfirvöldum þær upplýsingar sem þarf til þess að leysa vanda þess hóps .
+# sent_id = ALTHINGI_HHG_2013_G-33-4602100,.4
+# X_ID = ID_missing_5
+# text = Það er ekki feimið við að leitast við að veita yfirvöldum þær upplýsingar sem þarf til þess að leysa vanda þess hóps.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -139,9 +135,9 @@
 22	hóps	hópur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4602100,.6
-# X_ID = ID_MISSING
-# text = Því velti ég fyrir mér hvers vegna við þurfum þessar upplýsingar um alla, því að nú hef ég ítrekað bent á að hægt er að fara leið, tæknin er til staðar, hún er í notkun, það er hægt að fara leið sem tryggir upplýst samþykki hvers og eins aðila sem kærir sig um að vera með í þessu líka brýna verkefni .
+# sent_id = ALTHINGI_HHG_2013_G-33-4602100,.5
+# X_ID = ID_missing_6
+# text = Því velti ég fyrir mér hvers vegna við þurfum þessar upplýsingar um alla, því að nú hef ég ítrekað bent á að hægt er að fara leið, tæknin er til staðar, hún er í notkun, það er hægt að fara leið sem tryggir upplýst samþykki hvers og eins aðila sem kærir sig um að vera með í þessu líka brýna verkefni.
 1	Því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -209,11 +205,14 @@
 65	verkefni	verkefni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	55	obl	_	SpaceAfter=No
 66	.	.	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_HHG_2013_G-33-4602100,.6
+# X_ID = ID_missing_7
+# text = Því verð ég að spyrja: Til þess að laga vandamál og skoða vandamál og afleiðingar gjörða ríkisstjórnarinnar gagnvart þeim hópi sem er í vandræðum, er í skuldavandræðum, er í þessari neyð: Mundi ekki nægja að hafa svo gott sem allar skulda- og jafnvel eignaupplýsingar um þann hóp og bara þann hóp til að ná því markmiði að eiga við skuldavanda heimilanna?
 1	Því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 2	verð	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	að	að	PART	TO	_	5	mark	_	_
-5	spyrja	spyrja	VERB	VB	VerbForm=Inf	2	xcomp	_	_
+5	spyrja	spyrja	VERB	VB	VerbForm=Inf	2	xcomp	_	SpaceAfter=No
 6	:	:	PUNCT	,	_	5	punct	_	_
 7	Til	til	ADP	P	_	10	case	_	_
 8	þess	það	PRON	PRO-G	Case=Gen	10	nmod	_	_
@@ -233,16 +232,16 @@
 22	sem	sem	SCONJ	C	_	25	mark	_	_
 23	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
 24	í	í	ADP	P	_	25	case	_	_
-25	vandræðum	vandræði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	21	acl:relcl	_	_
+25	vandræðum	vandræði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	21	acl:relcl	_	SpaceAfter=No
 26	,	,	PUNCT	,	_	27	punct	_	_
 27	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	conj	_	_
 28	í	í	ADP	P	_	29	case	_	_
-29	skuldavandræðum	skuldavandræði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	obl	_	_
+29	skuldavandræðum	skuldavandræði	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	obl	_	SpaceAfter=No
 30	,	,	PUNCT	,	_	31	punct	_	_
 31	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	conj	_	_
 32	í	í	ADP	P	_	34	case	_	_
 33	þessari	þessi	DET	D-D	Case=Dat	34	det	_	_
-34	neyð	neyð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	_
+34	neyð	neyð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	SpaceAfter=No
 35	:	:	PUNCT	,	_	38	punct	_	_
 36	Mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	38	aux	_	_
 37	ekki	ekki	ADV	NEG	_	38	advmod	_	_
@@ -275,6 +274,6 @@
 63	eiga	eiga	VERB	VB	VerbForm=Inf	61	xcomp	_	_
 64	við	við	ADP	P	_	65	case	_	_
 65	skuldavanda	skuldavandi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	63	obl	_	_
-66	heimilanna	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	65	nmod:poss	_	_
+66	heimilanna	heimili	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	65	nmod:poss	_	SpaceAfter=No
 67	?	?	PUNCT	.	_	2	punct	_	_
 

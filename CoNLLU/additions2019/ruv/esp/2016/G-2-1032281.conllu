@@ -1,6 +1,6 @@
-# sent_id = G-2-1032281,.1
-# X_ID = ID_MISSING
-# text = Íslandsmótið í golfi verður haldið á Jaðarsvelli á Akureyri um helgina .
+# sent_id = RUV_ESP_2016_G-2-1032281,.1
+# X_ID = ID_missing_1
+# text = Íslandsmótið í golfi verður haldið á Jaðarsvelli á Akureyri um helgina.
 1	Íslandsmótið	íslandsmót	PROPN	NPR-N	_	4	nsubj	_	_
 2	í	í	ADP	P	_	3	case	_	_
 3	golfi	golf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
@@ -14,9 +14,9 @@
 11	helgina	helgi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1032281,.2
-# X_ID = ID_MISSING
-# text = Allir bestu kylfingar landsins verða á meðal þátttakenda,
+# sent_id = RUV_ESP_2016_G-2-1032281,.2
+# X_IDs = ID_missing_2 ; ID_missing_3
+# text = Allir bestu kylfingar landsins verða á meðal þátttakenda, 137 keppendur eru skráðir til leiks þar af 31 í kvennaflokki sem er yfir meðaltali síðustu ára.
 1	Allir	allur	DET	Q-N	Case=Nom	3	amod	_	_
 2	bestu	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	3	amod	_	_
 3	kylfingar	kylfingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
@@ -25,33 +25,29 @@
 6	á	á	ADP	P	_	8	case	_	_
 7	meðal	meðal	ADP	P	_	8	case	_	_
 8	þátttakenda	þátttakandi	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	5	punct	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	137	137	NUM	NUM-N	Case=Nom	11	nummod	_	_
+11	keppendur	keppandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	16	nsubj	_	_
+12	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
+13	skráðir	skrá	VERB	VAN	Tense=Past|VerbForm=Part	16	acl	_	_
+14	til	til	ADP	P	_	15	case	_	_
+15	leiks	leikur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	obl	_	_
+16	þar	þar	ADV	ADV	Degree=Pos	5	conj	_	OriginalHead=0
+17	af	af	ADP	P	_	16	case	_	_
+18	31	31	NUM	NUM-N	Case=Nom	16	obl	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	kvennaflokki	kvennaflokkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
+21	sem	sem	SCONJ	C	_	24	mark	_	_
+22	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	24	cop	_	_
+23	yfir	yfir	ADP	P	_	24	case	_	_
+24	meðaltali	meðaltal	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	acl:relcl	_	_
+25	síðustu	síðari	ADJ	ADJS-G	Case=Gen|Degree=Sup	26	amod	_	_
+26	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	24	nmod:poss	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1032281,.3
-# X_ID = ID_MISSING
-# text = 137 keppendur eru skráðir til leiks þar af 31 í kvennaflokki sem er yfir meðaltali síðustu ára .
-1	137	137	NUM	NUM-N	Case=Nom	2	nummod	_	_
-2	keppendur	keppandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	nsubj	_	_
-3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
-4	skráðir	skrá	VERB	VAN	Tense=Past|VerbForm=Part	7	acl	_	_
-5	til	til	ADP	P	_	6	case	_	_
-6	leiks	leikur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	obl	_	_
-7	þar	þar	ADV	ADV	Degree=Pos	0	root	_	_
-8	af	af	ADP	P	_	7	case	_	_
-9	31	31	NUM	NUM-N	Case=Nom	7	obl	_	_
-10	í	í	ADP	P	_	11	case	_	_
-11	kvennaflokki	kvennaflokkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-12	sem	sem	SCONJ	C	_	15	mark	_	_
-13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
-14	yfir	yfir	ADP	P	_	15	case	_	_
-15	meðaltali	meðaltal	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	acl:relcl	_	_
-16	síðustu	síðari	ADJ	ADJS-G	Case=Gen|Degree=Sup	17	amod	_	_
-17	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	nmod:poss	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	7	punct	_	_
-
-# sent_id = G-2-1032281,.4
-# X_ID = ID_MISSING
-# text = Ólafíu Þórunni Kristinsdóttur úr GR er spáð sigrinum í kvennaflokki og Birgi Leifi Hafþórssyni, GKG, í karlaflokki .
+# sent_id = RUV_ESP_2016_G-2-1032281,.3
+# X_ID = ID_missing_4
+# text = Ólafíu Þórunni Kristinsdóttur úr GR er spáð sigrinum í kvennaflokki og Birgi Leifi Hafþórssyni, GKG, í karlaflokki.
 1	Ólafíu	ólafía	PROPN	NPR-D	_	7	nsubj	_	_
 2	Þórunni	þórunn	PROPN	NPR-D	_	1	flat:name	_	_
 3	Kristinsdóttur	kristinsdóttir	PROPN	NPR-D	_	1	dep	_	_
@@ -73,9 +69,9 @@
 19	karlaflokki	karlaflokkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	conj	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-2-1032281,.5
-# X_ID = ID_MISSING
-# text = Þessi spá sérfræðinga var kynnt á blaðamannafundi fyrir norðan í hádeginu .
+# sent_id = RUV_ESP_2016_G-2-1032281,.4
+# X_ID = ID_missing_5
+# text = Þessi spá sérfræðinga var kynnt á blaðamannafundi fyrir norðan í hádeginu.
 1	Þessi	þessi	DET	D-N	Case=Nom	2	det	_	_
 2	spá	spá	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 3	sérfræðinga	sérfræðingur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	nmod:poss	_	_
@@ -89,34 +85,30 @@
 11	hádeginu	hádegi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1032281,.6
-# X_ID = ID_MISSING
-# text = Alls var hægt að fá 120
+# sent_id = RUV_ESP_2016_G-2-1032281,.5
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Alls var hægt að fá 120 og niðurstaðan varð þessi:
 1	Alls	alls	ADV	ADV	Degree=Pos	3	advmod	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
 3	hægt	hægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 4	að	að	PART	TO	_	5	mark	_	_
 5	fá	fá	VERB	VB	VerbForm=Inf	3	xcomp	_	_
 6	120	120	NUM	NUM-A	Case=Acc	5	obj	_	_
+7	og	og	CCONJ	CONJ	_	9	cc	_	_
+8	niðurstaðan	niðurstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
+9	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
+10	þessi	þessi	DET	D-N	Case=Nom	9	xcomp	_	SpaceAfter=No
+11	:	:	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1032281,.7
-# X_ID = ID_MISSING
-# text = og niðurstaðan varð þessi :
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	niðurstaðan	niðurstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
-3	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
-4	þessi	þessi	DET	D-N	Case=Nom	3	xcomp	_	SpaceAfter=No
-5	:	:	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-2-1032281,.8
-# X_ID = ID_MISSING
-# text = Karlaflokkur :
+# sent_id = RUV_ESP_2016_G-2-1032281,.6
+# X_ID = ID_missing_8
+# text = Karlaflokkur:
 1	Karlaflokkur	karlaflokkur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-2-1032281,.9
-# X_ID = ID_MISSING
-# text = 1. Birgir Leifur Hafþórsson, GKG 98
+# sent_id = RUV_ESP_2016_G-2-1032281,.7
+# X_IDs = ID_missing_9 ; ID_missing_10 ; ID_missing_11 ; ID_missing_12 ; ID_missing_13 ; ID_missing_14
+# text = 1. Birgir Leifur Hafþórsson, GKG 98 2. Gísli Sveinbergsson, GK 69 3. Axel Bóasson, GK 50 4. Andri Þór Björnsson, GR 41 5 Þórður Rafn Gissurarson, GR 35 Kvennaflokkur:
 1	1.	fyrstur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	dep	_	_
 2	Birgir	birgir	PROPN	NPR-N	_	0	root	_	_
 3	Leifur	leifur	PROPN	NPR-N	_	2	flat:name	_	_
@@ -124,58 +116,38 @@
 5	,	,	PUNCT	,	_	4	punct	_	_
 6	GKG	gkg	PROPN	NPR-D	_	2	dep	_	_
 7	98	98	NUM	NUM-N	Case=Nom	2	obl	_	_
+8	2.	annar	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	dep	_	_
+9	Gísli	gísli	PROPN	NPR-N	_	2	conj	_	OriginalHead=0
+10	Sveinbergsson	sveinbergsson	PROPN	NPR-N	_	9	flat:name	_	SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	GK	gk	PROPN	NPR-D	_	9	dep	_	_
+13	69	69	NUM	NUM-N	Case=Nom	9	obl	_	_
+14	3.	þriðji	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	dep	_	_
+15	Axel	axel	PROPN	NPR-N	_	2	conj	_	OriginalHead=0
+16	Bóasson	bóasson	PROPN	NPR-N	_	15	flat:name	_	SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	GK	gk	PROPN	NPR-D	_	15	dep	_	_
+19	50	fimmtíu	NUM	NUM-N	Case=Nom	15	obl	_	_
+20	4.	fjórði	ADJ	ADJ-N	Case=Nom|Degree=Pos	21	dep	_	_
+21	Andri	andri	PROPN	NPR-N	_	2	conj	_	OriginalHead=0
+22	Þór	þór	PROPN	NPR-N	_	21	flat:name	_	_
+23	Björnsson	björnsson	PROPN	NPR-N	_	21	dep	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	GR	gr	PROPN	NPR-D	_	21	dep	_	_
+26	41	41	NUM	NUM-N	Case=Nom	21	obl	_	_
+27	5	fimmti	ADJ	ADJ-N	Case=Nom|Degree=Pos	28	dep	_	_
+28	Þórður	þórður	PROPN	NPR-N	_	2	conj	_	OriginalHead=0
+29	Rafn	rafn	PROPN	NPR-N	_	28	flat:name	_	_
+30	Gissurarson	gissurarson	PROPN	NPR-N	_	28	dep	_	SpaceAfter=No
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	GR	gr	PROPN	NPR-D	_	28	dep	_	_
+33	35	35	NUM	NUM-N	Case=Nom	28	obl	_	_
+34	Kvennaflokkur	kvennaflokkur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0|SpaceAfter=No
+35	:	:	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1032281,.10
-# X_ID = ID_MISSING
-# text = 2. Gísli Sveinbergsson, GK 69
-1	2.	annar	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	dep	_	_
-2	Gísli	gísli	PROPN	NPR-N	_	0	root	_	_
-3	Sveinbergsson	sveinbergsson	PROPN	NPR-N	_	2	flat:name	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	3	punct	_	_
-5	GK	gk	PROPN	NPR-D	_	2	dep	_	_
-6	69	69	NUM	NUM-N	Case=Nom	2	obl	_	_
-
-# sent_id = G-2-1032281,.11
-# X_ID = ID_MISSING
-# text = 3. Axel Bóasson, GK 50
-1	3.	þriðji	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	dep	_	_
-2	Axel	axel	PROPN	NPR-N	_	0	root	_	_
-3	Bóasson	bóasson	PROPN	NPR-N	_	2	flat:name	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	3	punct	_	_
-5	GK	gk	PROPN	NPR-D	_	2	dep	_	_
-6	50	fimmtíu	NUM	NUM-N	Case=Nom	2	obl	_	_
-
-# sent_id = G-2-1032281,.12
-# X_ID = ID_MISSING
-# text = 4. Andri Þór Björnsson, GR 41
-1	4.	fjórði	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	dep	_	_
-2	Andri	andri	PROPN	NPR-N	_	0	root	_	_
-3	Þór	þór	PROPN	NPR-N	_	2	flat:name	_	_
-4	Björnsson	björnsson	PROPN	NPR-N	_	2	dep	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
-6	GR	gr	PROPN	NPR-D	_	2	dep	_	_
-7	41	41	NUM	NUM-N	Case=Nom	2	obl	_	_
-
-# sent_id = G-2-1032281,.13
-# X_ID = ID_MISSING
-# text = 5 Þórður Rafn Gissurarson, GR 35
-1	5	fimmti	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	dep	_	_
-2	Þórður	þórður	PROPN	NPR-N	_	0	root	_	_
-3	Rafn	rafn	PROPN	NPR-N	_	2	flat:name	_	_
-4	Gissurarson	gissurarson	PROPN	NPR-N	_	2	dep	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
-6	GR	gr	PROPN	NPR-D	_	2	dep	_	_
-7	35	35	NUM	NUM-N	Case=Nom	2	obl	_	_
-
-# sent_id = G-2-1032281,.14
-# X_ID = ID_MISSING
-# text = Kvennaflokkur :
-1	Kvennaflokkur	kvennaflokkur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
-2	:	:	PUNCT	.	_	1	punct	_	_
-
-# sent_id = G-2-1032281,.15
-# X_ID = ID_MISSING
-# text = 1. Ólafía Þórunn Kristinsdóttir, GR 107
+# sent_id = RUV_ESP_2016_G-2-1032281,.8
+# X_IDs = ID_missing_15 ; ID_missing_16 ; ID_missing_17 ; ID_missing_18 ; ID_missing_19 ; ID_missing_20
+# text = 1. Ólafía Þórunn Kristinsdóttir, GR 107 2. Guðrún Brá Björgvinsdóttir, GK 87 3. Valdís Þóra Jensdóttir, GL 67 4. Signý Arnórsdóttir, GK, 47 5. Sunna Víðisdóttir, GR 18 Þórður Rafn Gissurarson úr GR og Signý Arnórsdóttir úr GK eru ríkjandi Íslandsmeistarar.
 1	1.	fyrstur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	dep	_	_
 2	Ólafía	ólafía	PROPN	NPR-N	_	0	root	_	_
 3	Þórunn	þórunn	PROPN	NPR-N	_	2	flat:name	_	_
@@ -183,81 +155,64 @@
 5	,	,	PUNCT	,	_	4	punct	_	_
 6	GR	gr	PROPN	NPR-D	_	2	dep	_	_
 7	107	107	NUM	NUM-N	Case=Nom	2	obl	_	_
+8	2.	annar	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	dep	_	_
+9	Guðrún	guðrún	PROPN	NPR-N	_	2	conj	_	OriginalHead=0
+10	Brá	brá	PROPN	NPR-N	_	9	flat:name	_	_
+11	Björgvinsdóttir	björgvinsdóttir	PROPN	NPR-N	_	9	dep	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	GK	gk	PROPN	NPR-D	_	9	dep	_	_
+14	87	87	NUM	NUM-N	Case=Nom	9	obl	_	_
+15	3.	þriðji	NUM	NUM-N	Case=Nom	16	dep	_	_
+16	Valdís	valdís	PROPN	NPR-N	_	2	conj	_	OriginalHead=0
+17	Þóra	þóra	PROPN	NPR-N	_	16	flat:name	_	_
+18	Jensdóttir	jensdóttir	PROPN	NPR-N	_	16	dep	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	GL	gl	PROPN	NPR-D	_	16	dep	_	_
+21	67	67	NUM	NUM-N	Case=Nom	16	obl	_	_
+22	4.	fjórði	NUM	NUM-N	Case=Nom	23	dep	_	_
+23	Signý	signý	PROPN	NPR-N	_	2	conj	_	OriginalHead=0
+24	Arnórsdóttir	arnórsdóttir	PROPN	NPR-N	_	23	flat:name	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	GK	gk	PROPN	NPR-D	_	23	dep	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	26	punct	_	_
+28	47	47	NUM	NUM-N	Case=Nom	23	obl	_	_
+29	5.	fimmti	NUM	NUM-N	Case=Nom	30	dep	_	_
+30	Sunna	sunna	PROPN	NPR-N	_	2	conj	_	OriginalHead=0
+31	Víðisdóttir	víðisdóttir	PROPN	NPR-N	_	30	flat:name	_	SpaceAfter=No
+32	,	,	PUNCT	,	_	31	punct	_	_
+33	GR	gr	PROPN	NPR-D	_	30	dep	_	_
+34	18	átján	NUM	NUM-N	Case=Nom	30	obl	_	_
+35	Þórður	þórður	PROPN	NPR-N	_	46	nsubj	_	_
+36	Rafn	rafn	PROPN	NPR-N	_	35	flat:name	_	_
+37	Gissurarson	gissurarson	PROPN	NPR-N	_	35	dep	_	_
+38	úr	úr	ADP	P	_	39	case	_	_
+39	GR	gr	PROPN	NPR-D	_	35	obl	_	_
+40	og	og	CCONJ	CONJ	_	41	cc	_	_
+41	Signý	signý	PROPN	NPR-N	_	35	conj	_	_
+42	Arnórsdóttir	arnórsdóttir	PROPN	NPR-N	_	41	flat:name	_	_
+43	úr	úr	ADP	P	_	44	case	_	_
+44	GK	gk	PROPN	NPR-D	_	41	obl	_	_
+45	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	46	cop	_	_
+46	ríkjandi	ríkjandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
+47	Íslandsmeistarar	íslandsmeistari	PROPN	NPRS-N	_	46	conj	_	SpaceAfter=No
+48	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1032281,.16
-# X_ID = ID_MISSING
-# text = 2. Guðrún Brá Björgvinsdóttir, GK 87
-1	2.	annar	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	dep	_	_
-2	Guðrún	guðrún	PROPN	NPR-N	_	0	root	_	_
-3	Brá	brá	PROPN	NPR-N	_	2	flat:name	_	_
-4	Björgvinsdóttir	björgvinsdóttir	PROPN	NPR-N	_	2	dep	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
-6	GK	gk	PROPN	NPR-D	_	2	dep	_	_
-7	87	87	NUM	NUM-N	Case=Nom	2	obl	_	_
-
-# sent_id = G-2-1032281,.17
-# X_ID = ID_MISSING
-# text = 3. Valdís Þóra Jensdóttir, GL 67
-1	3.	þriðji	NUM	NUM-N	Case=Nom	2	dep	_	_
-2	Valdís	valdís	PROPN	NPR-N	_	0	root	_	_
-3	Þóra	þóra	PROPN	NPR-N	_	2	flat:name	_	_
-4	Jensdóttir	jensdóttir	PROPN	NPR-N	_	2	dep	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
-6	GL	gl	PROPN	NPR-D	_	2	dep	_	_
-7	67	67	NUM	NUM-N	Case=Nom	2	obl	_	_
-
-# sent_id = G-2-1032281,.18
-# X_ID = ID_MISSING
-# text = 4. Signý Arnórsdóttir, GK, 47
-1	4.	fjórði	NUM	NUM-N	Case=Nom	2	dep	_	_
-2	Signý	signý	PROPN	NPR-N	_	0	root	_	_
-3	Arnórsdóttir	arnórsdóttir	PROPN	NPR-N	_	2	flat:name	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	3	punct	_	_
-5	GK	gk	PROPN	NPR-D	_	2	dep	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	5	punct	_	_
-7	47	47	NUM	NUM-N	Case=Nom	2	obl	_	_
-
-# sent_id = G-2-1032281,.19
-# X_ID = ID_MISSING
-# text = 5. Sunna Víðisdóttir, GR 18
-1	5.	fimmti	NUM	NUM-N	Case=Nom	2	dep	_	_
-2	Sunna	sunna	PROPN	NPR-N	_	0	root	_	_
-3	Víðisdóttir	víðisdóttir	PROPN	NPR-N	_	2	flat:name	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	3	punct	_	_
-5	GR	gr	PROPN	NPR-D	_	2	dep	_	_
-6	18	átján	NUM	NUM-N	Case=Nom	2	obl	_	_
-
-# sent_id = G-2-1032281,.20
-# X_ID = ID_MISSING
-# text = Þórður Rafn Gissurarson úr GR og Signý Arnórsdóttir úr GK eru ríkjandi Íslandsmeistarar .
-1	Þórður	þórður	PROPN	NPR-N	_	12	nsubj	_	_
-2	Rafn	rafn	PROPN	NPR-N	_	1	flat:name	_	_
-3	Gissurarson	gissurarson	PROPN	NPR-N	_	1	dep	_	_
-4	úr	úr	ADP	P	_	5	case	_	_
-5	GR	gr	PROPN	NPR-D	_	1	obl	_	_
-6	og	og	CCONJ	CONJ	_	7	cc	_	_
-7	Signý	signý	PROPN	NPR-N	_	1	conj	_	_
-8	Arnórsdóttir	arnórsdóttir	PROPN	NPR-N	_	7	flat:name	_	_
-9	úr	úr	ADP	P	_	10	case	_	_
-10	GK	gk	PROPN	NPR-D	_	7	obl	_	_
-11	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
-12	ríkjandi	ríkjandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-13	Íslandsmeistarar	íslandsmeistari	PROPN	NPRS-N	_	12	conj	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	12	punct	_	_
-
+# sent_id = RUV_ESP_2016_G-2-1032281,.9
+# X_ID = ID_missing_21
+# text = Sýnt verður frá tveimur síðustu keppnisdögunum, á laugardag og sunnudag, á RÚV.
 1	Sýnt	sýna	VERB	VAN	Tense=Past|VerbForm=Part	2	xcomp	_	_
 2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	frá	frá	ADP	P	_	6	case	_	_
 4	tveimur	tveir	NUM	NUM-D	Case=Dat	6	nummod	_	_
 5	síðustu	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	6	amod	_	_
-6	keppnisdögunum	keppnisdagur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	_
+6	keppnisdögunum	keppnisdagur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
 7	,	,	PUNCT	,	_	6	punct	_	_
 8	á	á	ADP	P	_	9	case	_	_
 9	laugardag	laugardagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 10	og	og	CCONJ	CONJ	_	11	cc	_	_
-11	sunnudag	sunnudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	conj	_	_
+11	sunnudag	sunnudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	conj	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	11	punct	_	_
 13	á	á	ADP	P	_	14	case	_	_
-14	RÚV	rúv	PROPN	NPR-D	_	2	obl	_	_
+14	RÚV	rúv	PROPN	NPR-D	_	2	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 

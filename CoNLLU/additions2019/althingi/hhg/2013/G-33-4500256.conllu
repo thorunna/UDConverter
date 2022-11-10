@@ -1,6 +1,6 @@
-# sent_id = G-33-4500256,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Ég þakka hv. þingmanni kærlega fyrir svarið .
+# sent_id = ALTHINGI_HHG_2013_G-33-4500256,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Ég þakka hv. þingmanni kærlega fyrir svarið.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -13,9 +13,9 @@
 10	svarið	svar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4500256,.2
-# X_ID = ID_MISSING
-# text = Þá velti ég fyrir mér öðru sem ég er að vona að hv. þingmaður geti kannski frætt mig svolítið um vegna þess að ég er nýr þingmaður og hef ekki enn kynnst öllum þeim lausnum og kannski trikkunum til að fara með fjármál ríkisins almennt .
+# sent_id = ALTHINGI_HHG_2013_G-33-4500256,.2
+# X_ID = ID_missing_2
+# text = Þá velti ég fyrir mér öðru sem ég er að vona að hv. þingmaður geti kannski frætt mig svolítið um vegna þess að ég er nýr þingmaður og hef ekki enn kynnst öllum þeim lausnum og kannski trikkunum til að fara með fjármál ríkisins almennt.
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -63,9 +63,9 @@
 45	almennt	almennt	ADV	ADV	Degree=Pos	43	advmod	_	SpaceAfter=No
 46	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4500256,.3
-# X_ID = ID_MISSING
-# text = Ég heyrði að það kæmi til greina að hækka skráningargjöld úr 60 þúsundum upp í 85 þúsund og að sá peningur ætti ekki einu sinni allur að renna til háskólans .
+# sent_id = ALTHINGI_HHG_2013_G-33-4500256,.3
+# X_ID = ID_missing_3
+# text = Ég heyrði að það kæmi til greina að hækka skráningargjöld úr 60 þúsundum upp í 85 þúsund og að sá peningur ætti ekki einu sinni allur að renna til háskólans.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	heyrði	heyra	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	að	að	SCONJ	C	_	5	mark	_	_
@@ -98,9 +98,9 @@
 30	háskólans	háskóli	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	28	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4500256,.4
-# X_ID = ID_MISSING
-# text = Þetta minnir mig afskaplega mikið á nefskattinn gagnvart RÚV, Ríkisútvarpinu,
+# sent_id = ALTHINGI_HHG_2013_G-33-4500256,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Þetta minnir mig afskaplega mikið á nefskattinn gagnvart RÚV, Ríkisútvarpinu, og ég tek eftir meiru og meiru svona, að gjöld eru innheimt án þess að þau rati á sinn rétta stað.
 1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	minnir	minna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mig	ég	PRON	PRO-A	Case=Acc	2	obj	_	_
@@ -112,35 +112,34 @@
 9	RÚV	rúv	PROPN	NPR-D	_	7	obl	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	9	punct	_	_
 11	Ríkisútvarpinu	ríkisútvarp	PROPN	NPR-D	_	9	appos	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	2	punct	_	_
+12	,	,	PUNCT	,	_	9	punct	_	_
+13	og	og	CCONJ	CONJ	_	15	cc	_	_
+14	ég	ég	PRON	PRO-N	Case=Nom	15	nsubj	_	_
+15	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+16	eftir	eftir	ADP	P	_	17	case	_	_
+17	meiru	meiru	ADJ	ADJR-D	Case=Dat|Degree=Cmp	15	obl	_	_
+18	og	og	CCONJ	CONJ	_	19	cc	_	_
+19	meiru	meiru	ADJ	ADJR-D	Case=Dat|Degree=Cmp	17	conj	_	_
+20	svona	svona	ADV	ADV	Degree=Pos	17	advmod	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	20	punct	_	_
+22	að	að	SCONJ	C	_	25	mark	_	_
+23	gjöld	gjald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	25	nsubj	_	_
+24	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	25	cop	_	_
+25	innheimt	innheimta	VERB	VAN	Tense=Past|VerbForm=Part	17	ccomp	_	_
+26	án	án	ADP	P	_	27	case	_	_
+27	þess	það	PRON	PRO-G	Case=Gen	25	obl	_	_
+28	að	að	SCONJ	C	_	30	mark	_	_
+29	þau	það	PRON	PRO-N	Case=Nom	30	nsubj	_	_
+30	rati	rata	VERB	VBPS	Mood=Sub|Tense=Pres	27	ccomp	_	_
+31	á	á	ADP	P	_	34	case	_	_
+32	sinn	sinn	PRON	PRO-A	Case=Acc	34	nmod:poss	_	_
+33	rétta	réttur	ADJ	ADJ-A	Case=Acc|Degree=Pos	34	amod	_	_
+34	stað	staður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4500256,.5
-# X_ID = ID_MISSING
-# text = og ég tek eftir meiru og meiru svona, að gjöld eru innheimt án þess að þau rati á sinn rétta stað .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	eftir	eftir	ADP	P	_	5	case	_	_
-5	meiru	meiru	ADJ	ADJR-D	Case=Dat|Degree=Cmp	3	obl	_	_
-6	og	og	CCONJ	CONJ	_	7	cc	_	_
-7	meiru	meiru	ADJ	ADJR-D	Case=Dat|Degree=Cmp	5	conj	_	_
-8	svona	svona	ADV	ADV	Degree=Pos	5	advmod	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	8	punct	_	_
-10	að	að	SCONJ	C	_	13	mark	_	_
-11	gjöld	gjald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	_
-12	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-13	innheimt	innheimta	VERB	VAN	Tense=Past|VerbForm=Part	5	ccomp	_	_
-14	án	án	ADP	P	_	15	case	_	_
-15	þess	það	PRON	PRO-G	Case=Gen	13	obl	_	_
-16	að	að	SCONJ	C	_	18	mark	_	_
-17	þau	það	PRON	PRO-N	Case=Nom	18	nsubj	_	_
-18	rati	rata	VERB	VBPS	Mood=Sub|Tense=Pres	15	ccomp	_	_
-19	á	á	ADP	P	_	22	case	_	_
-20	sinn	sinn	PRON	PRO-A	Case=Acc	22	nmod:poss	_	_
-21	rétta	réttur	ADJ	ADJ-A	Case=Acc|Degree=Pos	22	amod	_	_
-22	stað	staður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	3	punct	_	_
-
+# sent_id = ALTHINGI_HHG_2013_G-33-4500256,.5
+# X_ID = ID_missing_6
+# text = Ég var að velta fyrir mér hvort þingmaðurinn hefði einhverjar hugmyndir sem hann gæti deilt með nýjum þingmanni um það hvernig mætti bregðast við þessu eða jafnvel reyna að leysa þetta vandamál.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -172,6 +171,6 @@
 29	að	að	PART	TO	_	30	mark	_	_
 30	leysa	leysa	VERB	VB	VerbForm=Inf	28	xcomp	_	_
 31	þetta	þessi	DET	D-A	Case=Acc	32	det	_	_
-32	vandamál	vandamál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obj	_	_
+32	vandamál	vandamál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obj	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	4	punct	_	_
 

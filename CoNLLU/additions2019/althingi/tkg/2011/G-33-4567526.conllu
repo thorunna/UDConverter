@@ -1,6 +1,6 @@
-# sent_id = G-33-4567526,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Um leið og ég þakka hæstv. innanríkisráðherra fyrir að hafa setið hér og hlustað á ræðu mína verð ég að segja að ég sakna svara við nokkrum af spurningum mínum .
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.1
+# X_ID = ID_missing_1
+# text = Frú forseti. Um leið og ég þakka hæstv. innanríkisráðherra fyrir að hafa setið hér og hlustað á ræðu mína verð ég að segja að ég sakna svara við nokkrum af spurningum mínum.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -36,9 +36,9 @@
 33	mínum	minn	PRON	PRO-D	Case=Dat	32	nmod:poss	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	21	punct	_	_
 
-# sent_id = G-33-4567526,.2
-# X_ID = ID_MISSING
-# text = En ég greini það engu að síður að eftir sem áður, og þrátt fyrir fallega orðaða hugsun í ræðunni, stendur fyrirvari hæstv. innanríkisráðherra gagnvart málinu enn .
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.2
+# X_ID = ID_missing_2
+# text = En ég greini það engu að síður að eftir sem áður, og þrátt fyrir fallega orðaða hugsun í ræðunni, stendur fyrirvari hæstv. innanríkisráðherra gagnvart málinu enn.
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	greini	greina	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -69,33 +69,29 @@
 28	enn	enn	ADV	ADV	Degree=Pos	22	advmod	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4567526,.3
-# X_ID = ID_MISSING
-# text = Hann telur að málið hafi þroskast,
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Hann telur að málið hafi þroskast, þá væri forvitnilegt að vita í hvaða veru.
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	telur	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
 4	málið	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
 5	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	6	aux	_	_
 6	þroskast	þroska	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	2	punct	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	þá	þá	ADV	ADV	Degree=Pos	10	advmod	_	_
+9	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	10	cop	_	_
+10	forvitnilegt	forvitnilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
+11	að	að	PART	TO	_	12	mark	_	_
+12	vita	vita	VERB	VB	VerbForm=Inf	10	xcomp	_	_
+13	í	í	ADP	P	_	15	case	_	_
+14	hvaða	hvaða	DET	WD-D	Case=Dat	15	det	_	_
+15	veru	vera	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	xcomp	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4567526,.4
-# X_ID = ID_MISSING
-# text = þá væri forvitnilegt að vita í hvaða veru .
-1	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
-2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	3	cop	_	_
-3	forvitnilegt	forvitnilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-4	að	að	PART	TO	_	5	mark	_	_
-5	vita	vita	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-6	í	í	ADP	P	_	8	case	_	_
-7	hvaða	hvaða	DET	WD-D	Case=Dat	8	det	_	_
-8	veru	vera	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	xcomp	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4567526,.5
-# X_ID = ID_MISSING
-# text = Telur hæstv. ráðherra rétt að málið þroskist í þann farveg innan meiri hlutans í allsherjarnefnd að völd forsætisráðherra, með þessari breytingu sem hefði verið mikil, verði í raun takmarkalaus, það er ekki er lengur hámark á þeim ráðuneytum sem hæstv. forsætisráðherra á að skipa heldur getur forsætisráðherra verið með einn eða tíu ráðherra,
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.4
+# X_IDs = ID_missing_5 ; ID_missing_6
+# text = Telur hæstv. ráðherra rétt að málið þroskist í þann farveg innan meiri hlutans í allsherjarnefnd að völd forsætisráðherra, með þessari breytingu sem hefði verið mikil, verði í raun takmarkalaus, það er ekki er lengur hámark á þeim ráðuneytum sem hæstv. forsætisráðherra á að skipa heldur getur forsætisráðherra verið með einn eða tíu ráðherra, hann getur verið með tuttugu ráðherra.
 1	Telur	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
 3	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
@@ -152,22 +148,18 @@
 54	eða	eða	CCONJ	CONJ	_	55	cc	_	_
 55	tíu	tíu	NUM	NUM-A	Case=Acc	53	conj	_	_
 56	ráðherra	ráðherra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	49	obl	_	SpaceAfter=No
-57	,	,	PUNCT	,	_	1	punct	_	_
+57	,	,	PUNCT	,	_	49	punct	_	_
+58	hann	hann	PRON	PRO-N	Case=Nom	59	nsubj	_	_
+59	getur	geta	VERB	MDPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
+60	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	59	cop	_	_
+61	með	með	ADP	P	_	63	case	_	_
+62	tuttugu	tuttugu	NUM	NUM-A	Case=Acc	63	nummod	_	_
+63	ráðherra	ráðherra	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	59	obl	_	SpaceAfter=No
+64	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4567526,.6
-# X_ID = ID_MISSING
-# text = hann getur verið með tuttugu ráðherra .
-1	hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	getur	geta	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	2	cop	_	_
-4	með	með	ADP	P	_	6	case	_	_
-5	tuttugu	tuttugu	NUM	NUM-A	Case=Acc	6	nummod	_	_
-6	ráðherra	ráðherra	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4567526,.7
-# X_ID = ID_MISSING
-# text = Telur hv. þingmaður það vera réttu breytinguna, að málið þroskist með þessum hætti ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.5
+# X_ID = ID_missing_7
+# text = Telur hv. þingmaður það vera réttu breytinguna, að málið þroskist með þessum hætti?
 1	Telur	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
 3	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
@@ -184,9 +176,9 @@
 14	hætti	háttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 15	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4567526,.8
-# X_ID = ID_MISSING
-# text = Það væri forvitnilegt að vita hvað hæstv. ráðherra segir hvað þetta varðar .
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.6
+# X_ID = ID_missing_8
+# text = Það væri forvitnilegt að vita hvað hæstv. ráðherra segir hvað þetta varðar.
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	3	cop	_	_
 3	forvitnilegt	forvitnilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -201,9 +193,9 @@
 12	varðar	varða	VERB	VBPI	Mood=Ind|Tense=Pres	10	acl:relcl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4567526,.9
-# X_ID = ID_MISSING
-# text = Ég vil gjarnan fá svör við þeim tveimur lykilspurningum sem ég bar upp áðan .
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.7
+# X_ID = ID_missing_9
+# text = Ég vil gjarnan fá svör við þeim tveimur lykilspurningum sem ég bar upp áðan.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	gjarnan	gjarnan	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -220,17 +212,17 @@
 14	áðan	áðan	ADV	ADV	Degree=Pos	12	advmod	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4567526,.10
-# X_ID = ID_MISSING
-# text = Hvað liggur á ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.8
+# X_ID = ID_missing_10
+# text = Hvað liggur á?
 1	Hvað	hver	PRON	WPRO-A	Case=Acc	2	obj	_	_
 2	liggur	liggja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	á	á	ADP	RP	_	2	compound:prt	_	SpaceAfter=No
 4	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4567526,.11
-# X_ID = ID_MISSING
-# text = Hvaða dagsetning knýr á um það að við erum á þessum septemberstubbi að afgreiða þetta mál en ekki málefni sem snerta til að mynda heimilin, fjölskyldurnar og fyrirtækin í landinu, sem meðal annars eru á dagskrá á þinginu .
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.9
+# X_ID = ID_missing_11
+# text = Hvaða dagsetning knýr á um það að við erum á þessum septemberstubbi að afgreiða þetta mál en ekki málefni sem snerta til að mynda heimilin, fjölskyldurnar og fyrirtækin í landinu, sem meðal annars eru á dagskrá á þinginu.
 1	Hvaða	hvaða	DET	WD-N	Case=Nom	2	det	_	_
 2	dagsetning	dagsetning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	obj	_	_
 3	knýr	knýja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -273,9 +265,9 @@
 40	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	35	obl	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4567526,.12
-# X_ID = ID_MISSING
-# text = Önnur dagsetningarmál sem skipta máli .
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.10
+# X_ID = ID_missing_12
+# text = Önnur dagsetningarmál sem skipta máli.
 1	Önnur	annar	PRON	OTHER-A	Case=Acc	2	det	_	_
 2	dagsetningarmál	dagsetningarmál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	0	root	_	_
 3	sem	sem	SCONJ	C	_	4	mark	_	_
@@ -283,9 +275,9 @@
 5	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obj	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4567526,.13
-# X_ID = ID_MISSING
-# text = Hvað knýr þetta mál áfram ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.11
+# X_ID = ID_missing_13
+# text = Hvað knýr þetta mál áfram?
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	knýr	knýja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þetta	þessi	DET	D-A	Case=Acc	4	det	_	_
@@ -293,9 +285,9 @@
 5	áfram	áfram	ADV	ADV	Degree=Pos	2	advmod	_	SpaceAfter=No
 6	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4567526,.14
-# X_ID = ID_MISSING
-# text = Ég vil gjarnan fá svar við því .
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.12
+# X_ID = ID_missing_14
+# text = Ég vil gjarnan fá svar við því.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	gjarnan	gjarnan	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -305,9 +297,9 @@
 7	því	það	PRON	PRO-D	Case=Dat	4	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4567526,.15
-# X_ID = ID_MISSING
-# text = Ég spyr líka hvort hann sé ekki sammála mér í því að með þeirri vegferð sem verið er að leggja út í sé ekki bara verið að auka miðstýringu innan ráðuneytanna, eins og hann sagði réttilega að hans fyrirvari hefði snúist um, heldur líka verið að skerða eftirlitshlutverk löggjafarvaldsins með ráðuneytunum .
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.13
+# X_ID = ID_missing_15
+# text = Ég spyr líka hvort hann sé ekki sammála mér í því að með þeirri vegferð sem verið er að leggja út í sé ekki bara verið að auka miðstýringu innan ráðuneytanna, eins og hann sagði réttilega að hans fyrirvari hefði snúist um, heldur líka verið að skerða eftirlitshlutverk löggjafarvaldsins með ráðuneytunum.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	líka	líka	ADV	ALSO	_	2	advmod	_	_
@@ -363,6 +355,9 @@
 53	ráðuneytunum	ráðuneyti	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	50	obl	_	SpaceAfter=No
 54	.	.	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_TKG_2011_G-33-4567526,.14
+# X_ID = ID_missing_16
+# text = Er ekki verið að færa vald frá þinginu yfir til framkvæmdarvaldsins?
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 2	ekki	ekki	ADV	NEG	_	3	advmod	_	_
 3	verið	vera	VERB	BEN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -373,6 +368,6 @@
 8	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 9	yfir	yfir	ADP	RP	_	11	compound:prt	_	_
 10	til	til	ADP	P	_	11	case	_	_
-11	framkvæmdarvaldsins	framkvæmdarvald	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	_
+11	framkvæmdarvaldsins	framkvæmdarvald	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 12	?	?	PUNCT	.	_	3	punct	_	_
 

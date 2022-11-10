@@ -1,6 +1,6 @@
-# sent_id = G-2-1037669.SANITY,.1
-# X_ID = ID_MISSING
-# text = Fyrirliðar Stjörnunnar og Selfoss í úrvalsdeild kvenna í fótbolta eru sammála um að deildin sé sífellt að verða betri, keppnin harðari og aukinn áhugi hafi jákvæð áhrif á leikmenn og áhangendur .
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.1
+# X_ID = ID_missing_1
+# text = Fyrirliðar Stjörnunnar og Selfoss í úrvalsdeild kvenna í fótbolta eru sammála um að deildin sé sífellt að verða betri, keppnin harðari og aukinn áhugi hafi jákvæð áhrif á leikmenn og áhangendur.
 1	Fyrirliðar	fyrirliði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	nsubj	_	_
 2	Stjörnunnar	stjarna	PROPN	NPR-G	_	1	nmod:poss	_	_
 3	og	og	CCONJ	CONJ	_	4	cc	_	_
@@ -35,9 +35,9 @@
 32	áhangendur	áhangandi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	30	conj	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.2
-# X_ID = ID_MISSING
-# text = „ Ég held að það sé ekkert lið að fara í gegnum þessa deild án þess að tapa leik, sem er ótrúlega gaman, “ segir landsliðskonan og Selfyssingurinn Guðmunda Brynja Óladóttir .
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.2
+# X_ID = ID_missing_2
+# text = „ Ég held að það sé ekkert lið að fara í gegnum þessa deild án þess að tapa leik, sem er ótrúlega gaman,“ segir landsliðskonan og Selfyssingurinn Guðmunda Brynja Óladóttir.
 1	„	„	PUNCT	"	_	3	punct	_	_
 2	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -73,47 +73,39 @@
 33	Óladóttir	óladóttir	PROPN	NPR-N	_	31	dep	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.3
-# X_ID = ID_MISSING
-# text = Meiri umfjöllun
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.3
+# X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5
+# text = Meiri umfjöllun Vefsíðan fotbolti.net og AZAZO tókum höndum saman og bjuggu til svokallaða draumaliðsdeild eins og hefur tíðkast í kringum úrvalsdeild karla frá 2012.
 1	Meiri	mikill	DET	QR-N	Case=Nom	2	amod	_	_
 2	umfjöllun	umfjöllun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+3	Vefsíðan	vefsíða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0
+4	fotbolti.net	fotbolti.net	PRON	PRO-N	Case=Nom	3	appos	_	_
+5	og	og	CCONJ	CONJ	_	6	cc	_	_
+6	AZAZO	azazo	PROPN	NPR-N	_	3	conj	_	_
+7	tókum	taka	X	X	_	3	dep	_	_
+8	höndum	hönd	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	3	obj	_	_
+9	saman	saman	ADV	ADV	Degree=Pos	3	advmod	_	_
+10	og	og	CCONJ	CONJ	_	11	cc	_	_
+11	bjuggu	búa	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+12	til	til	ADP	RP	_	11	compound:prt	_	_
+13	svo	svo	ADJ	ADJ-A	Case=Acc|Degree=Pos	14	amod	_	SpaceAfter=No
+14	kallaða	kalla	VERB	VAN-A	Case=Acc|Tense=Past|VerbForm=Part	15	acl	_	_
+15	draumaliðsdeild	draumaliðsdeild	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obj	_	_
+16	eins	_	ADV	ADVR	Degree=Cmp	15	advmod	_	_
+17	og	_	ADP	P	_	19	case	_	_
+18	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	19	aux	_	_
+19	tíðkast	tíðka	VERB	VBN	Tense=Past|VerbForm=Part	16	obl	_	_
+20	í	í	ADP	P	_	22	case	_	_
+21	kringum	kringum	ADP	P	_	22	case	_	_
+22	úrvalsdeild	úrvalsdeild	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	_
+23	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	22	nmod:poss	_	_
+24	frá	frá	ADP	P	_	25	case	_	_
+25	2012	2012	NUM	NUM-D	Case=Dat	19	obl	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.4
-# X_ID = ID_MISSING
-# text = Vefsíðan fotbolti.net og AZAZO tókum höndum saman
-1	Vefsíðan	vefsíða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-2	fotbolti.net	fotbolti.net	PRON	PRO-N	Case=Nom	1	appos	_	_
-3	og	og	CCONJ	CONJ	_	4	cc	_	_
-4	AZAZO	azazo	PROPN	NPR-N	_	1	conj	_	_
-5	tókum	taka	X	X	_	1	dep	_	_
-6	höndum	hönd	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	1	obj	_	_
-7	saman	saman	ADV	ADV	Degree=Pos	1	advmod	_	_
-
-# sent_id = G-2-1037669.SANITY,.5
-# X_ID = ID_MISSING
-# text = og bjuggu til svokallaða draumaliðsdeild eins og hefur tíðkast í kringum úrvalsdeild karla frá 2012 .
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	bjuggu	búa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	til	til	ADP	RP	_	2	compound:prt	_	_
-4	svo	svo	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	SpaceAfter=No
-5	kallaða	kalla	VERB	VAN-A	Case=Acc|Tense=Past|VerbForm=Part	6	acl	_	_
-6	draumaliðsdeild	draumaliðsdeild	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
-7	eins	_	ADV	ADVR	Degree=Cmp	6	advmod	_	_
-8	og	_	ADP	P	_	10	case	_	_
-9	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	10	aux	_	_
-10	tíðkast	tíðka	VERB	VBN	Tense=Past|VerbForm=Part	7	obl	_	_
-11	í	í	ADP	P	_	13	case	_	_
-12	kringum	kringum	ADP	P	_	13	case	_	_
-13	úrvalsdeild	úrvalsdeild	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
-14	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	13	nmod:poss	_	_
-15	frá	frá	ADP	P	_	16	case	_	_
-16	2012	2012	NUM	NUM-D	Case=Dat	10	obl	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1037669.SANITY,.6
-# X_ID = ID_MISSING
-# text = Leikurinn er þannig að hver þátttakandi fær 100 milljónir króna til að kaupa 15 leikmenn úr deildinni og stilla upp sínu liði .
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.4
+# X_ID = ID_missing_6
+# text = Leikurinn er þannig að hver þátttakandi fær 100 milljónir króna til að kaupa 15 leikmenn úr deildinni og stilla upp sínu liði.
 1	Leikurinn	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	þannig	þannig	ADV	ADV	Degree=Pos	1	advmod	_	_
@@ -138,9 +130,9 @@
 22	liði	lið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obj	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.7
-# X_ID = ID_MISSING
-# text = Leikmennirnir fá svo stig fyrir frammistöðu sína á vellinum .
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.5
+# X_ID = ID_missing_7
+# text = Leikmennirnir fá svo stig fyrir frammistöðu sína á vellinum.
 1	Leikmennirnir	leikmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
 2	fá	fá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -152,9 +144,9 @@
 9	vellinum	völlur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.8
-# X_ID = ID_MISSING
-# text = Jafnframt hefur Stöð 2 Sport hafið sýningar á sérstökum markaþáttum fyrir kvennaboltann .
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.6
+# X_ID = ID_missing_8
+# text = Jafnframt hefur Stöð 2 Sport hafið sýningar á sérstökum markaþáttum fyrir kvennaboltann.
 1	Jafnframt	jafnframt	ADV	ADV	Degree=Pos	6	advmod	_	_
 2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
 3	Stöð	stöð	PROPN	NPR-N	_	6	nsubj	_	_
@@ -169,40 +161,32 @@
 12	kvennaboltann	kvennabolti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.9
-# X_ID = ID_MISSING
-# text = „ Það er miklu meiri áhugi
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.7
+# X_IDs = ID_missing_9 ; ID_missing_10 ; ID_missing_11
+# text = „ Það er miklu meiri áhugi og fjölmiðlar sýna þessu rosalegan áhuga og það er bara virkilega jákvætt.
 1	„	„	PUNCT	"	_	2	punct	_	_
 2	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
 4	miklu	mikill	DET	Q-D	Case=Dat	5	obl	_	_
 5	meiri	mikill	ADV	QR-N	Case=Nom	6	advmod	_	_
 6	áhugi	áhugi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	obl	_	_
+7	og	og	CCONJ	CONJ	_	9	cc	_	_
+8	fjölmiðlar	fjölmiðill	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	nsubj	_	_
+9	sýna	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+10	þessu	þessi	DET	D-D	Case=Dat	9	iobj	_	_
+11	rosalegan	rosalegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	12	amod	_	_
+12	áhuga	áhugi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
+13	og	og	CCONJ	CONJ	_	18	cc	_	_
+14	það	það	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
+16	bara	bara	ADV	FP	Degree=Pos	18	advmod	_	_
+17	virkilega	virkilega	ADV	ADV	Degree=Pos	18	amod	_	_
+18	jákvætt	jákvæður	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0|SpaceAfter=No
+19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.10
-# X_ID = ID_MISSING
-# text = og fjölmiðlar sýna þessu rosalegan áhuga
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	fjölmiðlar	fjölmiðill	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
-3	sýna	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	þessu	þessi	DET	D-D	Case=Dat	3	iobj	_	_
-5	rosalegan	rosalegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	6	amod	_	_
-6	áhuga	áhugi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
-
-# sent_id = G-2-1037669.SANITY,.11
-# X_ID = ID_MISSING
-# text = og það er bara virkilega jákvætt .
-1	og	og	CCONJ	CONJ	_	6	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
-4	bara	bara	ADV	FP	Degree=Pos	6	advmod	_	_
-5	virkilega	virkilega	ADV	ADV	Degree=Pos	6	amod	_	_
-6	jákvætt	jákvæður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	6	punct	_	_
-
-# sent_id = G-2-1037669.SANITY,.12
-# X_ID = ID_MISSING
-# text = Maður er stressaður að fara meiddur út af ef einhver hefur keypt mann í Fantasy innsk : draumaliðsdeildinni, “ segir Ásgerður Stefanía Baldursdóttir, fyrirliði Stjörnunnar .
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.8
+# X_ID = ID_missing_12
+# text = Maður er stressaður að fara meiddur út af ef einhver hefur keypt mann í Fantasy innsk: draumaliðsdeildinni,“ segir Ásgerður Stefanía Baldursdóttir, fyrirliði Stjörnunnar.
 1	Maður	maður	PRON	MAN-N	_	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	stressaður	stressaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -232,45 +216,41 @@
 27	Stjörnunnar	stjarna	PROPN	NPR-G	_	26	nmod:poss	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.13
-# X_ID = ID_MISSING
-# text = Skiptir miklu máli
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.9
+# X_IDs = ID_missing_13 ; ID_missing_14
+# text = Skiptir miklu máli Stuðningur við knattspyrnufólk er góður á Selfossi að mati Guðmundu Brynju sem viðurkennir þó að sér sárni þegar færri mæta á kvennaleiki en karlaleiki.
 1	Skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	miklu	mikill	DET	Q-D	Case=Dat	3	amod	_	_
 3	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obj	_	_
+4	Stuðningur	stuðningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
+5	við	við	ADP	P	_	6	case	_	_
+6	knattspyrnufólk	knattspyrnufólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
+8	góður	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	1	conj	_	OriginalHead=0
+9	á	á	ADP	P	_	10	case	_	_
+10	Selfossi	selfoss	PROPN	NPR-D	_	8	obl	_	_
+11	að	að	ADP	P	_	12	case	_	_
+12	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+13	Guðmundu	guðmunda	PROPN	NPR-G	_	12	nmod:poss	_	_
+14	Brynju	brynja	PROPN	NPR-G	_	13	flat:name	_	_
+15	sem	sem	SCONJ	C	_	16	mark	_	_
+16	viðurkennir	viðurkenna	VERB	VBPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	_
+17	þó	þó	ADV	ADV	Degree=Pos	16	advmod	_	_
+18	að	að	SCONJ	C	_	20	mark	_	_
+19	sér	sig	PRON	PRO-D	Case=Dat	20	nsubj	_	_
+20	sárni	sárna	VERB	VBPS	Mood=Sub|Tense=Pres	16	ccomp	_	_
+21	þegar	þegar	ADP	P	_	23	case	_	_
+22	færri	fár	DET	Q-N	Case=Nom	23	nsubj	_	_
+23	mæta	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	20	obl	_	_
+24	á	á	ADP	P	_	25	case	_	_
+25	kvennaleiki	kvennaleikur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
+26	en	en	ADP	P	_	27	case	_	_
+27	karlaleiki	karlaleikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obl	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.14
-# X_ID = ID_MISSING
-# text = Stuðningur við knattspyrnufólk er góður á Selfossi að mati Guðmundu Brynju sem viðurkennir þó að sér sárni þegar færri mæta á kvennaleiki en karlaleiki .
-1	Stuðningur	stuðningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
-2	við	við	ADP	P	_	3	case	_	_
-3	knattspyrnufólk	knattspyrnufólk	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
-4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-5	góður	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-6	á	á	ADP	P	_	7	case	_	_
-7	Selfossi	selfoss	PROPN	NPR-D	_	5	obl	_	_
-8	að	að	ADP	P	_	9	case	_	_
-9	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
-10	Guðmundu	guðmunda	PROPN	NPR-G	_	9	nmod:poss	_	_
-11	Brynju	brynja	PROPN	NPR-G	_	10	flat:name	_	_
-12	sem	sem	SCONJ	C	_	13	mark	_	_
-13	viðurkennir	viðurkenna	VERB	VBPI	Mood=Ind|Tense=Pres	10	acl:relcl	_	_
-14	þó	þó	ADV	ADV	Degree=Pos	13	advmod	_	_
-15	að	að	SCONJ	C	_	17	mark	_	_
-16	sér	sig	PRON	PRO-D	Case=Dat	17	nsubj	_	_
-17	sárni	sárna	VERB	VBPS	Mood=Sub|Tense=Pres	13	ccomp	_	_
-18	þegar	þegar	ADP	P	_	20	case	_	_
-19	færri	fár	DET	Q-N	Case=Nom	20	nsubj	_	_
-20	mæta	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	17	obl	_	_
-21	á	á	ADP	P	_	22	case	_	_
-22	kvennaleiki	kvennaleikur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	_
-23	en	en	ADP	P	_	24	case	_	_
-24	karlaleiki	karlaleikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	20	obl	_	SpaceAfter=No
-25	.	.	PUNCT	.	_	5	punct	_	_
-
-# sent_id = G-2-1037669.SANITY,.15
-# X_ID = ID_MISSING
-# text = Það hafi þó batnað í ár og það skili sér til leikmanna .
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.10
+# X_ID = ID_missing_15
+# text = Það hafi þó batnað í ár og það skili sér til leikmanna.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	4	aux	_	_
 3	þó	þó	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -285,9 +265,9 @@
 12	leikmanna	leikmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.16
-# X_ID = ID_MISSING
-# text = „ Þetta skiptir okkur gríðarlega miklu máli .
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.11
+# X_ID = ID_missing_16
+# text = „ Þetta skiptir okkur gríðarlega miklu máli.
 1	„	„	PUNCT	"	_	3	punct	_	_
 2	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 3	skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -297,9 +277,9 @@
 7	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obj	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.17
-# X_ID = ID_MISSING
-# text = Að finna þessa miklu umfjöllun sem er í gangi
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.12
+# X_IDs = ID_missing_17 ; ID_missing_18
+# text = Að finna þessa miklu umfjöllun sem er í gangi og þetta gefur manni byr undir báða vængi að halda áfram,“ segir Ásgerður.
 1	Að	að	PART	TO	_	2	mark	_	_
 2	finna	finna	VERB	VB	VerbForm=Inf	0	root	_	_
 3	þessa	þessi	DET	D-A	Case=Acc	5	det	_	_
@@ -309,27 +289,26 @@
 7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	9	cop	_	_
 8	í	í	ADP	P	_	9	case	_	_
 9	gangi	gangur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	acl:relcl	_	_
+10	og	og	CCONJ	CONJ	_	12	cc	_	_
+11	þetta	þessi	DET	D-N	Case=Nom	12	nsubj	_	_
+12	gefur	gefa	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+13	manni	maður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	iobj	_	_
+14	byr	byr	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obj	_	_
+15	undir	undir	ADP	P	_	17	case	_	_
+16	báða	báðir	DET	Q-A	Case=Acc	17	amod	_	_
+17	vængi	vængur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
+18	að	að	PART	TO	_	19	mark	_	_
+19	halda	halda	VERB	VB	VerbForm=Inf	12	advcl	_	_
+20	áfram	áfram	ADV	ADV	Degree=Pos	19	advmod	_	SpaceAfter=No
+21	,	,	PUNCT	,	_	20	punct	_	SpaceAfter=No
+22	“	“	PUNCT	"	_	21	punct	_	_
+23	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	12	parataxis	_	_
+24	Ásgerður	ásgerður	PROPN	NPR-N	_	23	nsubj	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1037669.SANITY,.18
-# X_ID = ID_MISSING
-# text = og þetta gefur manni byr undir báða vængi að halda áfram, “ segir Ásgerður .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
-3	gefur	gefa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	manni	maður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	iobj	_	_
-5	byr	byr	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
-6	undir	undir	ADP	P	_	8	case	_	_
-7	báða	báðir	DET	Q-A	Case=Acc	8	amod	_	_
-8	vængi	vængur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
-9	að	að	PART	TO	_	10	mark	_	_
-10	halda	halda	VERB	VB	VerbForm=Inf	3	advcl	_	_
-11	áfram	áfram	ADV	ADV	Degree=Pos	10	advmod	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	11	punct	_	SpaceAfter=No
-13	“	“	PUNCT	"	_	12	punct	_	_
-14	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	3	parataxis	_	_
-15	Ásgerður	ásgerður	PROPN	NPR-N	_	14	nsubj	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	3	punct	_	_
-
+# sent_id = RUV_ESP_2016_G-2-1037669.SANITY,.13
+# X_ID = ID_missing_19
+# text = Viðtal við þær stöllur má finna í spilaranum að ofan.
 1	Viðtal	viðtal	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obj	_	_
 2	við	við	ADP	P	_	4	case	_	_
 3	þær	hún	PRON	PRO-A	Case=Acc	4	nmod	_	_
@@ -339,6 +318,6 @@
 7	í	í	ADP	P	_	8	case	_	_
 8	spilaranum	spilari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 9	að	að	ADP	P	_	10	case	_	_
-10	ofan	ofan	ADV	ADV	Degree=Pos	8	obl	_	_
+10	ofan	ofan	ADV	ADV	Degree=Pos	8	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	6	punct	_	_
 

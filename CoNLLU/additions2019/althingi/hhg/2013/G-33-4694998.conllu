@@ -1,6 +1,6 @@
-# sent_id = G-33-4694998,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Ég þakka svörin .
+# sent_id = ALTHINGI_HHG_2013_G-33-4694998,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Ég þakka svörin.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -9,9 +9,9 @@
 6	svörin	svar	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4694998,.2
-# X_ID = ID_MISSING
-# text = Ég gæti eiginlega ekki verið meira sammála hvað varðar leikritið vegna þess að ég gagnrýndi mikið fyrir hrun að hér væri efnahagurinn oft talaður upp og talaður niður, eins og það væri þannig sem ætti að tryggja einhvern árangur í efnahagsmálum, það er einfaldlega að líta vel út .
+# sent_id = ALTHINGI_HHG_2013_G-33-4694998,.2
+# X_ID = ID_missing_2
+# text = Ég gæti eiginlega ekki verið meira sammála hvað varðar leikritið vegna þess að ég gagnrýndi mikið fyrir hrun að hér væri efnahagurinn oft talaður upp og talaður niður, eins og það væri þannig sem ætti að tryggja einhvern árangur í efnahagsmálum, það er einfaldlega að líta vel út.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	gæti	geta	VERB	MDDS	Mood=Sub|Tense=Past	0	root	_	_
 3	eiginlega	eiginlega	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -64,9 +64,9 @@
 50	út	út	ADP	RP	_	48	compound:prt	_	SpaceAfter=No
 51	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4694998,.3
-# X_ID = ID_MISSING
-# text = Gott ef ég flutti ekki ræðu um það einhvern tíma að það þurfi meira en að hafa frontinn í lagi .
+# sent_id = ALTHINGI_HHG_2013_G-33-4694998,.3
+# X_ID = ID_missing_3
+# text = Gott ef ég flutti ekki ræðu um það einhvern tíma að það þurfi meira en að hafa frontinn í lagi.
 1	Gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 2	ef	ef	ADP	P	_	4	case	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -89,9 +89,9 @@
 20	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4694998,.4
-# X_ID = ID_MISSING
-# text = Það er ekki nóg að hlutirnir líti vel út,
+# sent_id = ALTHINGI_HHG_2013_G-33-4694998,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Það er ekki nóg að hlutirnir líti vel út, þeir þurfa að hafa eitthvað á bak við sig.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -102,24 +102,20 @@
 8	vel	vel	ADV	ADV	Degree=Pos	7	advmod	_	_
 9	út	út	ADP	RP	_	7	compound:prt	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	4	punct	_	_
+11	þeir	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+12	þurfa	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+13	að	að	PART	TO	_	15	mark	_	_
+14	hafa	hafa	AUX	HV	VerbForm=Inf	15	aux	_	_
+15	eitthvað	einhver	DET	Q-A	Case=Acc	12	xcomp	_	_
+16	á	á	ADP	P	_	17	case	_	_
+17	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
+18	við	við	ADP	P	_	19	case	_	_
+19	sig	sig	PRON	PRO-A	Case=Acc	17	obl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4694998,.5
-# X_ID = ID_MISSING
-# text = þeir þurfa að hafa eitthvað á bak við sig .
-1	þeir	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	þurfa	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	að	að	PART	TO	_	5	mark	_	_
-4	hafa	hafa	AUX	HV	VerbForm=Inf	5	aux	_	_
-5	eitthvað	einhver	DET	Q-A	Case=Acc	2	xcomp	_	_
-6	á	á	ADP	P	_	7	case	_	_
-7	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
-8	við	við	ADP	P	_	9	case	_	_
-9	sig	sig	PRON	PRO-A	Case=Acc	7	obl	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4694998,.6
-# X_ID = ID_MISSING
-# text = Mér þótti fyrir hrun orðið mjög augljóst að það vantaði mikið á bak við,
+# sent_id = ALTHINGI_HHG_2013_G-33-4694998,.5
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Mér þótti fyrir hrun orðið mjög augljóst að það vantaði mikið á bak við, enda bjóst ég við hruninu.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	þótti	þykja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -134,82 +130,66 @@
 12	á	á	ADP	P	_	13	case	_	_
 13	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obl	_	_
 14	við	við	ADP	RP	_	13	compound:prt	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	2	punct	_	_
+15	,	,	PUNCT	,	_	13	punct	_	_
+16	enda	enda	ADV	ADV	Degree=Pos	17	advmod	_	_
+17	bjóst	búa	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+18	ég	ég	PRON	PRO-N	Case=Nom	17	nsubj	_	_
+19	við	við	ADP	P	_	20	case	_	_
+20	hruninu	hrun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4694998,.7
-# X_ID = ID_MISSING
-# text = enda bjóst ég við hruninu .
-1	enda	enda	ADV	ADV	Degree=Pos	2	advmod	_	_
-2	bjóst	búa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-4	við	við	ADP	P	_	5	case	_	_
-5	hruninu	hrun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
-6	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4694998,.8
-# X_ID = ID_MISSING
-# text = Margir aðrir bjuggust líka við hruninu,
+# sent_id = ALTHINGI_HHG_2013_G-33-4694998,.6
+# X_IDs = ID_missing_8 ; ID_missing_9
+# text = Margir aðrir bjuggust líka við hruninu, það er ekki alveg satt sem er sagt, að enginn hafi séð það fyrir.
 1	Margir	margur	DET	Q-N	Case=Nom	2	amod	_	_
 2	aðrir	annar	PRON	OTHER-N	Case=Nom	3	nsubj	_	_
 3	bjuggust	búa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 4	líka	líka	ADV	ALSO	_	3	advmod	_	_
 5	við	við	ADP	P	_	6	case	_	_
 6	hruninu	hrun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	3	punct	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	það	það	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+9	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
+10	ekki	ekki	ADV	NEG	_	12	advmod	_	_
+11	alveg	alveg	ADV	ADV	Degree=Pos	12	amod	_	_
+12	satt	sannur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0
+13	sem	sem	SCONJ	C	_	15	mark	_	_
+14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
+15	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	12	acl:relcl	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	að	að	SCONJ	C	_	20	mark	_	_
+18	enginn	enginn	DET	Q-N	Case=Nom	20	nsubj	_	_
+19	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	20	aux	_	_
+20	séð	sjá	VERB	VBN	Tense=Past|VerbForm=Part	12	ccomp	_	_
+21	það	það	PRON	PRO-A	Case=Acc	20	obj	_	_
+22	fyrir	fyrir	ADP	RP	_	20	compound:prt	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4694998,.9
-# X_ID = ID_MISSING
-# text = það er ekki alveg satt sem er sagt, að enginn hafi séð það fyrir .
-1	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
-4	alveg	alveg	ADV	ADV	Degree=Pos	5	amod	_	_
-5	satt	sannur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-6	sem	sem	SCONJ	C	_	8	mark	_	_
-7	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
-8	sagt	segja	VERB	VAN	Tense=Past|VerbForm=Part	5	acl:relcl	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	8	punct	_	_
-10	að	að	SCONJ	C	_	13	mark	_	_
-11	enginn	enginn	DET	Q-N	Case=Nom	13	nsubj	_	_
-12	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	13	aux	_	_
-13	séð	sjá	VERB	VBN	Tense=Past|VerbForm=Part	5	ccomp	_	_
-14	það	það	PRON	PRO-A	Case=Acc	13	obj	_	_
-15	fyrir	fyrir	ADP	RP	_	13	compound:prt	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	5	punct	_	_
-
-# sent_id = G-33-4694998,.10
-# X_ID = ID_MISSING
-# text = Ég sá það fyrir
+# sent_id = ALTHINGI_HHG_2013_G-33-4694998,.7
+# X_IDs = ID_missing_10 ; ID_missing_11 ; ID_missing_12
+# text = Ég sá það fyrir og margir aðrir sáu það fyrir og hefðu átt að sjá það fyrir.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	sá	sjá	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
 4	fyrir	fyrir	ADP	RP	_	2	compound:prt	_	_
+5	og	og	CCONJ	CONJ	_	8	cc	_	_
+6	margir	margur	DET	Q-N	Case=Nom	8	amod	_	_
+7	aðrir	annar	PRON	OTHER-N	Case=Nom	8	nsubj	_	_
+8	sáu	sjá	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+9	það	það	PRON	PRO-A	Case=Acc	8	obj	_	_
+10	fyrir	fyrir	ADP	RP	_	8	compound:prt	_	_
+11	og	og	CCONJ	CONJ	_	13	cc	_	_
+12	hefðu	hafa	AUX	HVDS	Mood=Sub|Tense=Past	13	aux	_	_
+13	átt	eiga	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
+14	að	að	PART	TO	_	15	mark	_	_
+15	sjá	sjá	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+16	það	það	PRON	PRO-A	Case=Acc	15	obj	_	_
+17	fyrir	fyrir	ADP	RP	_	15	compound:prt	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4694998,.11
-# X_ID = ID_MISSING
-# text = og margir aðrir sáu það fyrir
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	margir	margur	DET	Q-N	Case=Nom	4	amod	_	_
-3	aðrir	annar	PRON	OTHER-N	Case=Nom	4	nsubj	_	_
-4	sáu	sjá	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-5	það	það	PRON	PRO-A	Case=Acc	4	obj	_	_
-6	fyrir	fyrir	ADP	RP	_	4	compound:prt	_	_
-
-# sent_id = G-33-4694998,.12
-# X_ID = ID_MISSING
-# text = og hefðu átt að sjá það fyrir .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	hefðu	hafa	AUX	HVDS	Mood=Sub|Tense=Past	3	aux	_	_
-3	átt	eiga	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-4	að	að	PART	TO	_	5	mark	_	_
-5	sjá	sjá	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-6	það	það	PRON	PRO-A	Case=Acc	5	obj	_	_
-7	fyrir	fyrir	ADP	RP	_	5	compound:prt	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4694998,.13
-# X_ID = ID_MISSING
-# text = Mér finnst svolítið þreytandi að hlusta á fólk láta eins og hrunið hafi bara komið allt í einu og enginn hafi vitað neitt .
+# sent_id = ALTHINGI_HHG_2013_G-33-4694998,.8
+# X_ID = ID_missing_13
+# text = Mér finnst svolítið þreytandi að hlusta á fólk láta eins og hrunið hafi bara komið allt í einu og enginn hafi vitað neitt.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	svolítið	svolítið	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -235,9 +215,9 @@
 23	neitt	neinn	DET	Q-A	Case=Acc	22	obj	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4694998,.14
-# X_ID = ID_MISSING
-# text = Stjórnmálamenn hafa verið gagnrýndir fyrir að tala efnahaginn niður á sínum tíma sem er mjög barnalegt að mínu mati .
+# sent_id = ALTHINGI_HHG_2013_G-33-4694998,.9
+# X_ID = ID_missing_14
+# text = Stjórnmálamenn hafa verið gagnrýndir fyrir að tala efnahaginn niður á sínum tíma sem er mjög barnalegt að mínu mati.
 1	Stjórnmálamenn	stjórnmálamaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	4	cop	_	_
@@ -259,6 +239,9 @@
 19	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	4	punct	_	_
 
+# sent_id = ALTHINGI_HHG_2013_G-33-4694998,.10
+# X_ID = ID_missing_15
+# text = Ég velti þá fyrir mér hvaða lexíur hv. þingmanni þyki Forseti hringir. að ríkisstjórnin núna ætti helst að taka til sín.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -270,7 +253,7 @@
 9	þingmanni	þingmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	nsubj	_	_
 10	þyki	þykja	VERB	VBPS	Mood=Sub|Tense=Pres	2	ccomp	_	_
 11	Forseti	forseti	PROPN	NPR-N	_	12	nsubj	_	_
-12	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	10	dep	_	_
+12	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	10	dep	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	12	punct	_	_
 14	að	að	SCONJ	C	_	17	mark	_	_
 15	ríkisstjórnin	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	17	nsubj	_	_
@@ -280,6 +263,6 @@
 19	að	að	PART	TO	_	20	mark	_	_
 20	taka	taka	VERB	VB	VerbForm=Inf	17	xcomp	_	_
 21	til	til	ADP	P	_	22	case	_	_
-22	sín	sig	PRON	PRO-G	Case=Gen	20	obl	_	_
+22	sín	sig	PRON	PRO-G	Case=Gen	20	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	2	punct	_	_
 

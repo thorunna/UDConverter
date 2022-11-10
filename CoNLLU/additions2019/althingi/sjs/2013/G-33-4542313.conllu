@@ -1,6 +1,6 @@
-# sent_id = G-33-4542313,.1
-# X_ID = ID_MISSING
-# text = Herra forseti . Það er að sjálfsögðu rétt og skylt að greiða götu þessa máls úr því það er komið af stað á annað borð og mikilvægt að það bíði ekki lengi eitthvert réttaróvissuástand eftir að væntingar eru komnar um að fullnustuaðgerðir verði stöðvaðar eða frystar tímabundið .
+# sent_id = ALTHINGI_SJS_2013_G-33-4542313,.1
+# X_ID = ID_missing_1
+# text = Herra forseti. Það er að sjálfsögðu rétt og skylt að greiða götu þessa máls úr því það er komið af stað á annað borð og mikilvægt að það bíði ekki lengi eitthvert réttaróvissuástand eftir að væntingar eru komnar um að fullnustuaðgerðir verði stöðvaðar eða frystar tímabundið.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -50,9 +50,9 @@
 47	tímabundið	tímabundið	ADV	ADV	Degree=Pos	44	advmod	_	SpaceAfter=No
 48	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-33-4542313,.2
-# X_ID = ID_MISSING
-# text = Ég held að það sé skynsamlegt að horfa yfir það sem gert var í þessum efnum á síðasta kjörtímabili
+# sent_id = ALTHINGI_SJS_2013_G-33-4542313,.2
+# X_IDs = ID_missing_2 ; ID_missing_3
+# text = Ég held að það sé skynsamlegt að horfa yfir það sem gert var í þessum efnum á síðasta kjörtímabili og hæstv. ráðherra kom reyndar lítillega inn á það.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	8	mark	_	_
@@ -72,24 +72,20 @@
 17	á	á	ADP	P	_	19	case	_	_
 18	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	19	amod	_	_
 19	kjörtímabili	kjörtímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+20	og	og	CCONJ	CONJ	_	23	cc	_	_
+21	hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	22	amod	_	_
+22	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	nsubj	_	_
+23	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+24	reyndar	reyndar	ADV	ADV	Degree=Pos	23	advmod	_	_
+25	lítillega	lítillega	ADV	ADV	Degree=Pos	23	advmod	_	_
+26	inn	inn	ADP	RP	_	28	compound:prt	_	_
+27	á	á	ADP	P	_	28	case	_	_
+28	það	það	PRON	PRO-A	Case=Acc	23	obl	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4542313,.3
-# X_ID = ID_MISSING
-# text = og hæstv. ráðherra kom reyndar lítillega inn á það .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
-3	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
-4	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-5	reyndar	reyndar	ADV	ADV	Degree=Pos	4	advmod	_	_
-6	lítillega	lítillega	ADV	ADV	Degree=Pos	4	advmod	_	_
-7	inn	inn	ADP	RP	_	9	compound:prt	_	_
-8	á	á	ADP	P	_	9	case	_	_
-9	það	það	PRON	PRO-A	Case=Acc	4	obl	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4542313,.4
-# X_ID = ID_MISSING
-# text = Þá var farið í sambærilega aðgerð í býsna langan tíma og ítrekað framlengd stöðvun á nauðungaruppboðum á meðan verið var að búa til skjól til að fólk kæmist í þau úrræði sem í boði voru og nýta sér þau .
+# sent_id = ALTHINGI_SJS_2013_G-33-4542313,.3
+# X_ID = ID_missing_4
+# text = Þá var farið í sambærilega aðgerð í býsna langan tíma og ítrekað framlengd stöðvun á nauðungaruppboðum á meðan verið var að búa til skjól til að fólk kæmist í þau úrræði sem í boði voru og nýta sér þau.
 1	Þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
 3	farið	fara	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -131,9 +127,9 @@
 39	þau	það	PRON	PRO-A	Case=Acc	37	obj	_	SpaceAfter=No
 40	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4542313,.5
-# X_ID = ID_MISSING
-# text = Sömuleiðis var fresturinn styttur eða ferlið stytt niður í tvö ár og opnaður farvegur fyrir fólk til að hafa aðgang að eignum sínum í vissan tíma eftir uppboð .
+# sent_id = ALTHINGI_SJS_2013_G-33-4542313,.4
+# X_ID = ID_missing_5
+# text = Sömuleiðis var fresturinn styttur eða ferlið stytt niður í tvö ár og opnaður farvegur fyrir fólk til að hafa aðgang að eignum sínum í vissan tíma eftir uppboð.
 1	Sömuleiðis	sömuleiðis	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 3	fresturinn	frestur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
@@ -164,33 +160,29 @@
 28	uppboð	uppboð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4542313,.6
-# X_ID = ID_MISSING
-# text = Allt skiptir þetta máli
+# sent_id = ALTHINGI_SJS_2013_G-33-4542313,.5
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Allt skiptir þetta máli og hefur áhrif nú þegar þessi aðgerð er aftur tekin upp.
 1	Allt	allur	DET	Q-N	Case=Nom	2	amod	_	_
 2	skiptir	skipta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 4	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	_
+5	og	og	CCONJ	CONJ	_	6	cc	_	_
+6	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+7	áhrif	áhrif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	obj	_	_
+8	nú	nú	ADV	ADV	Degree=Pos	6	advmod	_	_
+9	þegar	þegar	ADP	P	_	14	case	_	_
+10	þessi	þessi	DET	D-N	Case=Nom	11	det	_	_
+11	aðgerð	aðgerð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
+12	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+13	aftur	aftur	ADV	ADV	Degree=Pos	14	advmod	_	_
+14	tekin	taka	VERB	VAN	Tense=Past|VerbForm=Part	8	obl	_	_
+15	upp	upp	ADP	RP	_	14	compound:prt	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4542313,.7
-# X_ID = ID_MISSING
-# text = og hefur áhrif nú þegar þessi aðgerð er aftur tekin upp .
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	áhrif	áhrif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
-4	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
-5	þegar	þegar	ADP	P	_	10	case	_	_
-6	þessi	þessi	DET	D-N	Case=Nom	7	det	_	_
-7	aðgerð	aðgerð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
-8	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
-9	aftur	aftur	ADV	ADV	Degree=Pos	10	advmod	_	_
-10	tekin	taka	VERB	VAN	Tense=Past|VerbForm=Part	4	obl	_	_
-11	upp	upp	ADP	RP	_	10	compound:prt	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4542313,.8
-# X_ID = ID_MISSING
-# text = Ég tel vonbrigði í sjálfu sér, úr því í þetta er farið á annað borð, að það skyldi ekki vera gert í vor, vegna þess að væntingar fólks hafa staðið til þess að slíkar aðgerðir yrðu að veruleika allt frá kosningum og strax á vordögum .
+# sent_id = ALTHINGI_SJS_2013_G-33-4542313,.6
+# X_ID = ID_missing_8
+# text = Ég tel vonbrigði í sjálfu sér, úr því í þetta er farið á annað borð, að það skyldi ekki vera gert í vor, vegna þess að væntingar fólks hafa staðið til þess að slíkar aðgerðir yrðu að veruleika allt frá kosningum og strax á vordögum.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vonbrigði	vonbrigði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	ccomp	_	_
@@ -241,9 +233,9 @@
 48	vordögum	vordagur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	42	conj	_	SpaceAfter=No
 49	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4542313,.9
-# X_ID = ID_MISSING
-# text = Við verðum að horfast í augu við að eitthvað af slíkum uppboðum hefur farið fram í sumar og haust þar sem aðstæður kunna að vera mjög keimlíkar þeim sem núna verða hins vegar stöðvaðar .
+# sent_id = ALTHINGI_SJS_2013_G-33-4542313,.7
+# X_ID = ID_missing_9
+# text = Við verðum að horfast í augu við að eitthvað af slíkum uppboðum hefur farið fram í sumar og haust þar sem aðstæður kunna að vera mjög keimlíkar þeim sem núna verða hins vegar stöðvaðar.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -280,9 +272,9 @@
 34	stöðvaðar	stöðva	VERB	VAN	Tense=Past|VerbForm=Part	28	acl:relcl	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4542313,.10
-# X_ID = ID_MISSING
-# text = Að síðustu verðum við jafnframt að hafa í huga, ef hæstv. ráðherra og hæstv. ríkisstjórn hafa ekki gert það, að svo lýkur þessu tímabili, hvort sem það verður 1. júlí eða 1. september .
+# sent_id = ALTHINGI_SJS_2013_G-33-4542313,.8
+# X_ID = ID_missing_10
+# text = Að síðustu verðum við jafnframt að hafa í huga, ef hæstv. ráðherra og hæstv. ríkisstjórn hafa ekki gert það, að svo lýkur þessu tímabili, hvort sem það verður 1. júlí eða 1. september.
 1	Að	að	ADP	P	_	2	case	_	_
 2	síðustu	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	3	obl	_	_
 3	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -321,9 +313,9 @@
 36	september	september	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	conj	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4542313,.11
-# X_ID = ID_MISSING
-# text = Því miður verður að horfast í augu við reynsluna af því að þá kemur óþægilegur tími þegar aðgerðir hefjast á nýjan leik .
+# sent_id = ALTHINGI_SJS_2013_G-33-4542313,.9
+# X_ID = ID_missing_11
+# text = Því miður verður að horfast í augu við reynsluna af því að þá kemur óþægilegur tími þegar aðgerðir hefjast á nýjan leik.
 1	Því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 2	miður	lítt	ADV	ADVR	Degree=Cmp	3	advmod	_	_
 3	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -348,6 +340,9 @@
 22	leik	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	3	punct	_	_
 
+# sent_id = ALTHINGI_SJS_2013_G-33-4542313,.10
+# X_ID = ID_missing_12
+# text = Ósköp einfaldlega vegna þess að hinar margboðuðu aðgerðir og rómaðar sem þær eru, að minnsta kosti Forseti hringir. af aðstandendum, munu ekki leysa vandræði allra, þá munu aftur hefjast nauðungaruppboð.
 1	Ósköp	ósköp	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	einfaldlega	einfaldlega	ADV	ADV	Degree=Pos	1	advmod	_	_
 3	vegna	vegna	ADP	P	_	4	case	_	_
@@ -360,27 +355,27 @@
 10	rómaðar	rómaður	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	conj	_	_
 11	sem	sem	SCONJ	C	_	22	mark	_	_
 12	þær	hún	PRON	PRO-N	Case=Nom	22	nsubj	_	_
-13	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
+13	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	13	punct	_	_
 15	að	að	ADV	P	_	22	advmod	_	_
 16	minnsta	lítill	ADJ	ADJS-D	Case=Dat|Degree=Sup	17	amod	_	_
 17	kosti	kostur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
 18	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
-19	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	22	dep	_	_
+19	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	22	dep	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	19	punct	_	_
 21	af	af	ADP	P	_	22	case	_	_
-22	aðstandendum	aðstandandi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	amod	_	_
+22	aðstandendum	aðstandandi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	10	amod	_	SpaceAfter=No
 23	,	,	PUNCT	,	_	22	punct	_	_
 24	munu	munu	AUX	MDPI	Mood=Ind|Tense=Pres	26	aux	_	_
 25	ekki	ekki	ADV	NEG	_	26	advmod	_	_
 26	leysa	leysa	VERB	VB	VerbForm=Inf	4	ccomp	_	_
 27	vandræði	vandræði	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obj	_	_
-28	allra	allur	DET	Q-G	Case=Gen	27	nmod:poss	_	_
+28	allra	allur	DET	Q-G	Case=Gen	27	nmod:poss	_	SpaceAfter=No
 29	,	,	PUNCT	,	_	33	punct	_	_
 30	þá	þá	ADV	ADV	Degree=Pos	33	advmod	_	_
 31	munu	munu	AUX	MDPI	Mood=Ind|Tense=Pres	33	aux	_	_
 32	aftur	aftur	ADV	ADV	Degree=Pos	33	advmod	_	_
 33	hefjast	hefja	VERB	VB	VerbForm=Inf	0	root	_	_
-34	nauðungaruppboð	nauðungaruppboð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	33	nsubj	_	_
+34	nauðungaruppboð	nauðungaruppboð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	33	nsubj	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	33	punct	_	_
 

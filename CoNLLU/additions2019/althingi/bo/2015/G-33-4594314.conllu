@@ -1,6 +1,6 @@
-# sent_id = G-33-4594314,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Aðeins fyrst um hugmyndir okkar, mínar og okkar í Bjartri framtíð, um að bjóða út þessar hlutdeildir .
+# sent_id = ALTHINGI_BO_2015_G-33-4594314,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Aðeins fyrst um hugmyndir okkar, mínar og okkar í Bjartri framtíð, um að bjóða út þessar hlutdeildir.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -25,9 +25,9 @@
 22	hlutdeildir	hlutdeildur	ADJ	ADJ-A	Case=Acc|Degree=Pos	21	amod	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4594314,.2
-# X_ID = ID_MISSING
-# text = Ég held að því þurfi að vera skipt niður .
+# sent_id = ALTHINGI_BO_2015_G-33-4594314,.2
+# X_ID = ID_missing_2
+# text = Ég held að því þurfi að vera skipt niður.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	5	mark	_	_
@@ -39,9 +39,9 @@
 9	niður	niður	ADP	RP	_	8	compound:prt	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4594314,.3
-# X_ID = ID_MISSING
-# text = Við viljum ekki hafa þetta 100<percent> á algjörlega opnum markaði, ekki enn sem komið er,
+# sent_id = ALTHINGI_BO_2015_G-33-4594314,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Við viljum ekki hafa þetta 100<percent> á algjörlega opnum markaði, ekki enn sem komið er, og þá tala ég fyrir sjálfa mig.
 1	Við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
 2	viljum	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	13	aux	_	_
 3	ekki	ekki	ADV	NEG	_	13	advmod	_	_
@@ -59,23 +59,19 @@
 15	sem	sem	SCONJ	C	_	16	mark	_	_
 16	komið	koma	VERB	VBN	Tense=Past|VerbForm=Part	14	advcl	_	_
 17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	SpaceAfter=No
-18	,	,	PUNCT	,	_	13	punct	_	_
+18	,	,	PUNCT	,	_	16	punct	_	_
+19	og	og	CCONJ	CONJ	_	21	cc	_	_
+20	þá	þá	ADV	ADV	Degree=Pos	21	advmod	_	_
+21	tala	tala	VERB	VBPI	Mood=Ind|Tense=Pres	13	conj	_	OriginalHead=0
+22	ég	ég	PRON	PRO-N	Case=Nom	21	nsubj	_	_
+23	fyrir	fyrir	ADP	P	_	24	case	_	_
+24	sjálfa	sjálfur	PRON	PRO-A	Case=Acc	21	obl	_	_
+25	mig	ég	PRON	PRO-A	Case=Acc	24	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = G-33-4594314,.4
-# X_ID = ID_MISSING
-# text = og þá tala ég fyrir sjálfa mig .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
-3	tala	tala	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-5	fyrir	fyrir	ADP	P	_	6	case	_	_
-6	sjálfa	sjálfur	PRON	PRO-A	Case=Acc	3	obl	_	_
-7	mig	ég	PRON	PRO-A	Case=Acc	6	nmod	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4594314,.5
-# X_ID = ID_MISSING
-# text = Að sjálfsögðu er mikilvægt að skipta því eitthvað upp .
+# sent_id = ALTHINGI_BO_2015_G-33-4594314,.4
+# X_ID = ID_missing_5
+# text = Að sjálfsögðu er mikilvægt að skipta því eitthvað upp.
 1	Að	að	ADV	P	_	4	advmod	_	_
 2	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Degree=Pos	1	amod	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -87,37 +83,33 @@
 9	upp	upp	ADP	RP	_	6	compound:prt	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4594314,.6
-# X_ID = ID_MISSING
-# text = Það eru byggðasjónarmið þarna inni,
+# sent_id = ALTHINGI_BO_2015_G-33-4594314,.5
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Það eru byggðasjónarmið þarna inni, það eru mismunandi útgerðaraðilar, mismunandi útgerðarform sem þarf að hugsa út í.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	byggðasjónarmið	byggðasjónarmið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	_
 4	þarna	þarna	ADV	ADV	Degree=Pos	3	advmod	_	_
 5	inni	inni	ADV	ADV	Degree=Pos	4	advmod	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	3	punct	_	_
+7	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	10	expl	_	_
+8	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
+9	mismunandi	mismunandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	_
+10	útgerðaraðilar	útgerðaraðili	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	conj	_	OriginalHead=0|SpaceAfter=No
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	mismunandi	mismunandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
+13	útgerðarform	útgerðarform	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	conj	_	_
+14	sem	sem	SCONJ	C	_	15	mark	_	_
+15	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	10	acl:relcl	_	_
+16	að	að	PART	TO	_	17	mark	_	_
+17	hugsa	hugsa	VERB	VB	VerbForm=Inf	15	xcomp	_	_
+18	út	út	ADP	RP	_	19	compound:prt	_	_
+19	í	í	ADP	P	_	17	obl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4594314,.7
-# X_ID = ID_MISSING
-# text = það eru mismunandi útgerðaraðilar, mismunandi útgerðarform sem þarf að hugsa út í .
-1	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
-2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	mismunandi	mismunandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
-4	útgerðaraðilar	útgerðaraðili	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	4	punct	_	_
-6	mismunandi	mismunandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
-7	útgerðarform	útgerðarform	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	conj	_	_
-8	sem	sem	SCONJ	C	_	9	mark	_	_
-9	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
-10	að	að	PART	TO	_	11	mark	_	_
-11	hugsa	hugsa	VERB	VB	VerbForm=Inf	9	xcomp	_	_
-12	út	út	ADP	RP	_	13	compound:prt	_	_
-13	í	í	ADP	P	_	11	obl	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4594314,.8
-# X_ID = ID_MISSING
-# text = Hvað varðar leigukvóta eða þá leið sem hv. þingmaður nefndi hef ég ekki skoðað hana nógu vel
+# sent_id = ALTHINGI_BO_2015_G-33-4594314,.6
+# X_IDs = ID_missing_8 ; ID_missing_9
+# text = Hvað varðar leigukvóta eða þá leið sem hv. þingmaður nefndi hef ég ekki skoðað hana nógu vel en hún er sett fram, held ég, til þess að skipta hlutanum upp á einhvern ákveðinn hátt.
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	varðar	varða	ADV	VBPI	Mood=Ind|Tense=Pres	14	advmod	_	_
 3	leigukvóta	leigukvóti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	_
@@ -135,37 +127,36 @@
 15	hana	hún	PRON	PRO-A	Case=Acc	14	obj	_	_
 16	nógu	nógur	ADJ	ADJR-D	Case=Dat|Degree=Cmp	17	amod	_	_
 17	vel	vel	ADV	ADV	Degree=Pos	14	advmod	_	_
+18	en	en	CCONJ	CONJ	_	21	cc	_	_
+19	hún	hún	PRON	PRO-N	Case=Nom	21	nsubj	_	_
+20	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	21	cop	_	_
+21	sett	setja	VERB	VAN	Tense=Past|VerbForm=Part	14	conj	_	OriginalHead=0
+22	fram	fram	ADP	RP	_	21	compound:prt	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	21	parataxis	_	_
+25	ég	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	til	til	ADP	P	_	30	case	_	_
+28	þess	það	PRON	PRO-G	Case=Gen	30	nmod	_	_
+29	að	að	PART	TO	_	30	mark	_	_
+30	skipta	skipta	VERB	VB	VerbForm=Inf	21	obl	_	_
+31	hlutanum	hluti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obj	_	_
+32	upp	upp	ADP	RP	_	30	compound:prt	_	_
+33	á	á	ADP	P	_	36	case	_	_
+34	einhvern	einhver	DET	Q-A	Case=Acc	36	amod	_	_
+35	ákveðinn	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	36	amod	_	_
+36	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	14	punct	_	_
 
-# sent_id = G-33-4594314,.9
-# X_ID = ID_MISSING
-# text = en hún er sett fram, held ég, til þess að skipta hlutanum upp á einhvern ákveðinn hátt .
-1	en	en	CCONJ	CONJ	_	4	cc	_	_
-2	hún	hún	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-4	sett	setja	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
-5	fram	fram	ADP	RP	_	4	compound:prt	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	5	punct	_	_
-7	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	4	parataxis	_	_
-8	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	8	punct	_	_
-10	til	til	ADP	P	_	13	case	_	_
-11	þess	það	PRON	PRO-G	Case=Gen	13	nmod	_	_
-12	að	að	PART	TO	_	13	mark	_	_
-13	skipta	skipta	VERB	VB	VerbForm=Inf	4	obl	_	_
-14	hlutanum	hluti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obj	_	_
-15	upp	upp	ADP	RP	_	13	compound:prt	_	_
-16	á	á	ADP	P	_	19	case	_	_
-17	einhvern	einhver	DET	Q-A	Case=Acc	19	amod	_	_
-18	ákveðinn	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	19	amod	_	_
-19	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	4	punct	_	_
-
+# sent_id = ALTHINGI_BO_2015_G-33-4594314,.7
+# X_ID = ID_missing_10
+# text = Hvað varðar 10 kr. Forseti hringir. þá kemst ég ekki í að fara yfir það.
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	2	obj	_	_
 2	varðar	varða	ADV	VBPI	Mood=Ind|Tense=Pres	9	advmod	_	_
 3	10	tíu	NUM	NUM-A	Case=Acc	4	nummod	_	_
 4	kr.	króna	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obj	_	_
 5	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
-6	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	9	dep	_	_
+6	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	9	dep	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	6	punct	_	_
 8	þá	þá	ADV	ADV	Degree=Pos	9	advmod	_	_
 9	kemst	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -175,6 +166,6 @@
 13	að	að	PART	TO	_	14	mark	_	_
 14	fara	fara	VERB	VB	VerbForm=Inf	9	obl	_	_
 15	yfir	yfir	ADP	P	_	16	case	_	_
-16	það	það	PRON	PRO-A	Case=Acc	14	obl	_	_
+16	það	það	PRON	PRO-A	Case=Acc	14	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	9	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = G-2-1031964,.1
-# X_ID = ID_MISSING
-# text = Hannes Þór Halldórsson, landsliðsmarkmaður Íslands í fótbolta, er genginn til liðs við danska úrvalsdeildarliðið Randers frá NEC Nijmegen í Hollandi .
+# sent_id = RUV_ESP_2016_G-2-1031964,.1
+# X_ID = ID_missing_1
+# text = Hannes Þór Halldórsson, landsliðsmarkmaður Íslands í fótbolta, er genginn til liðs við danska úrvalsdeildarliðið Randers frá NEC Nijmegen í Hollandi.
 1	Hannes	hannes	PROPN	NPR-N	_	11	nsubj	_	_
 2	Þór	þór	PROPN	NPR-N	_	1	flat:name	_	_
 3	Halldórsson	halldórsson	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
@@ -25,9 +25,9 @@
 22	Hollandi	holland	PROPN	NPR-D	_	19	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = G-2-1031964,.2
-# X_ID = ID_MISSING
-# text = Þetta var staðfest á heimasíðu Randers nú í morgun .
+# sent_id = RUV_ESP_2016_G-2-1031964,.2
+# X_ID = ID_missing_2
+# text = Þetta var staðfest á heimasíðu Randers nú í morgun.
 1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
 3	staðfest	staðfesta	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -39,9 +39,9 @@
 9	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1031964,.3
-# X_ID = ID_MISSING
-# text = Hannes Þór vakti mikla athygli á nýafstöðu Evrópumóti í Frakklandi,
+# sent_id = RUV_ESP_2016_G-2-1031964,.3
+# X_IDs = ID_missing_3 ; ID_missing_4 ; ID_missing_5
+# text = Hannes Þór vakti mikla athygli á nýafstöðu Evrópumóti í Frakklandi, varði flest skot allra markmanna á mótinu og margir biðu spenntir að sjá hvert framhaldið yrði hjá þessum 32 ára gamla uppalda Leiknis-manni.
 1	Hannes	hannes	PROPN	NPR-N	_	3	nsubj	_	_
 2	Þór	þór	PROPN	NPR-N	_	1	flat:name	_	_
 3	vakti	vekja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -53,42 +53,34 @@
 9	í	í	ADP	P	_	10	case	_	_
 10	Frakklandi	frakkland	PROPN	NPR-D	_	8	obl	_	SpaceAfter=No
 11	,	,	PUNCT	,	_	3	punct	_	_
+12	varði	verja	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
+13	flest	margur	ADJ	ADJS-A	Case=Acc|Degree=Sup	14	amod	_	_
+14	skot	skot	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obj	_	_
+15	allra	allur	DET	Q-G	Case=Gen	14	nmod:poss	_	_
+16	markmanna	markmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	conj	_	_
+17	á	á	ADP	P	_	18	case	_	_
+18	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
+19	og	og	CCONJ	CONJ	_	21	cc	_	_
+20	margir	margur	DET	Q-N	Case=Nom	21	nsubj	_	_
+21	biðu	bíða	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
+22	spenntir	spenntur	ADJ	ADJ-N	Case=Nom|Degree=Pos	21	amod	_	_
+23	að	að	PART	TO	_	24	mark	_	_
+24	sjá	sjá	VERB	VB	VerbForm=Inf	21	xcomp	_	_
+25	hvert	hver	PRON	WPRO-N	Case=Nom	27	obj	_	_
+26	framhaldið	framhald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	27	nsubj	_	_
+27	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	24	ccomp	_	_
+28	hjá	hjá	ADP	P	_	34	case	_	_
+29	þessum	þessi	DET	D-D	Case=Dat	34	det	_	_
+30	32	32	NUM	NUM-G	Case=Gen	31	nummod	_	_
+31	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	32	nmod:poss	_	_
+32	gamla	gamall	ADJ	ADJ-D	Case=Dat|Degree=Pos	34	amod	_	_
+33	uppalda	uppalinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	34	amod	_	_
+34	Leiknis-manni	leiknis-maður	PROPN	NPR-D	_	27	obl	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1031964,.4
-# X_ID = ID_MISSING
-# text = varði flest skot allra markmanna á mótinu
-1	varði	verja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-2	flest	margur	ADJ	ADJS-A	Case=Acc|Degree=Sup	3	amod	_	_
-3	skot	skot	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obj	_	_
-4	allra	allur	DET	Q-G	Case=Gen	3	nmod:poss	_	_
-5	markmanna	markmaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	4	conj	_	_
-6	á	á	ADP	P	_	7	case	_	_
-7	mótinu	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
-
-# sent_id = G-2-1031964,.5
-# X_ID = ID_MISSING
-# text = og margir biðu spenntir að sjá hvert framhaldið yrði hjá þessum 32 ára gamla uppalda Leiknis-manni .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	margir	margur	DET	Q-N	Case=Nom	3	nsubj	_	_
-3	biðu	bíða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	spenntir	spenntur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
-5	að	að	PART	TO	_	6	mark	_	_
-6	sjá	sjá	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-7	hvert	hver	PRON	WPRO-N	Case=Nom	9	obj	_	_
-8	framhaldið	framhald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
-9	yrði	verða	VERB	RDDS	Mood=Sub|Tense=Past	6	ccomp	_	_
-10	hjá	hjá	ADP	P	_	16	case	_	_
-11	þessum	þessi	DET	D-D	Case=Dat	16	det	_	_
-12	32	32	NUM	NUM-G	Case=Gen	13	nummod	_	_
-13	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	nmod:poss	_	_
-14	gamla	gamall	ADJ	ADJ-D	Case=Dat|Degree=Pos	16	amod	_	_
-15	uppalda	uppalinn	ADJ	ADJ-D	Case=Dat|Degree=Pos	16	amod	_	_
-16	Leiknis-manni	leiknis-maður	PROPN	NPR-D	_	9	obl	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-2-1031964,.6
-# X_ID = ID_MISSING
-# text = Það hefur nú verið staðfest, þriggja ára samningur við Randers .
+# sent_id = RUV_ESP_2016_G-2-1031964,.4
+# X_ID = ID_missing_6
+# text = Það hefur nú verið staðfest, þriggja ára samningur við Randers.
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
 3	nú	nú	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -102,9 +94,9 @@
 11	Randers	randers	PROPN	NPR-A	_	9	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1031964,.7
-# X_ID = ID_MISSING
-# text = Ólafur Kristjánsson er þjálfari Randers sem hefur leik á nýju tímabili á mánudag gegn Midtjylland
+# sent_id = RUV_ESP_2016_G-2-1031964,.5
+# X_IDs = ID_missing_7 ; ID_missing_8
+# text = Ólafur Kristjánsson er þjálfari Randers sem hefur leik á nýju tímabili á mánudag gegn Midtjylland og verður Hannes þá í hópnum.
 1	Ólafur	ólafur	PROPN	NPR-N	_	4	nsubj	_	_
 2	Kristjánsson	kristjánsson	PROPN	NPR-N	_	1	flat:name	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -120,18 +112,17 @@
 13	mánudag	mánudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
 14	gegn	gegn	ADP	P	_	15	case	_	_
 15	Midtjylland	midtjylland	PROPN	NPR-D	_	7	obl	_	_
+16	og	og	CCONJ	CONJ	_	17	cc	_	_
+17	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+18	Hannes	hannes	PROPN	NPR-N	_	17	nsubj	_	_
+19	þá	þá	ADV	ADV	Degree=Pos	17	advmod	_	_
+20	í	í	ADP	P	_	21	case	_	_
+21	hópnum	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1031964,.8
-# X_ID = ID_MISSING
-# text = og verður Hannes þá í hópnum .
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	Hannes	hannes	PROPN	NPR-N	_	2	nsubj	_	_
-4	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
-5	í	í	ADP	P	_	6	case	_	_
-6	hópnum	hópur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	2	punct	_	_
-
+# sent_id = RUV_ESP_2016_G-2-1031964,.6
+# X_ID = ID_missing_9
+# text = Randers hafnaði í sjötta sæti dönsku deildarinnar á síðasta tímabili.
 1	Randers	randers	PROPN	NPR-N	_	2	nsubj	_	_
 2	hafnaði	hafna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	í	í	ADP	P	_	5	case	_	_
@@ -141,6 +132,6 @@
 7	deildarinnar	deild	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
 8	á	á	ADP	P	_	10	case	_	_
 9	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	10	amod	_	_
-10	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+10	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	2	punct	_	_
 

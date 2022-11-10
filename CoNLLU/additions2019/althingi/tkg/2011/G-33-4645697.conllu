@@ -1,6 +1,6 @@
-# sent_id = G-33-4645697,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Ég held að eðlislæg óbeit hv. þingmanns á Sjálfstæðisflokknum sé nú að koma fram með einhverjum hætti því að það er sama hvað sett er fram hér
+# sent_id = ALTHINGI_TKG_2011_G-33-4645697,.1
+# X_IDs = ID_missing_1 ; ID_missing_2
+# text = Frú forseti. Ég held að eðlislæg óbeit hv. þingmanns á Sjálfstæðisflokknum sé nú að koma fram með einhverjum hætti því að það er sama hvað sett er fram hér það er eins og hann hlusti ekki.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -31,22 +31,18 @@
 28	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
 29	fram	fram	ADP	RP	_	27	compound:prt	_	_
 30	hér	hér	ADV	ADV	Degree=Pos	27	advmod	_	_
+31	það	það	PRON	PRO-N	Case=Nom	5	conj	_	OriginalHead=0
+32	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
+33	eins	_	ADV	ADVR	Degree=Cmp	31	advmod	_	_
+34	og	_	ADP	P	_	35	case	_	_
+35	hann	hann	PRON	PRO-N	Case=Nom	33	obl	_	_
+36	hlusti	hlusta	VERB	VBPS	Mood=Sub|Tense=Pres	35	xcomp	_	_
+37	ekki	ekki	ADV	NEG	_	36	advmod	_	SpaceAfter=No
+38	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4645697,.2
-# X_ID = ID_MISSING
-# text = það er eins og hann hlusti ekki .
-1	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
-3	eins	_	ADV	ADVR	Degree=Cmp	1	advmod	_	_
-4	og	_	ADP	P	_	5	case	_	_
-5	hann	hann	PRON	PRO-N	Case=Nom	3	obl	_	_
-6	hlusti	hlusta	VERB	VBPS	Mood=Sub|Tense=Pres	5	xcomp	_	_
-7	ekki	ekki	ADV	NEG	_	6	advmod	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	1	punct	_	_
-
-# sent_id = G-33-4645697,.3
-# X_ID = ID_MISSING
-# text = Og það er eins og hann hafi ekki haft hljóðið á þegar hann horfði á umræðurnar hér fyrir tveimur árum, þegar við ætluðum að breyta stjórnarskránni, því að það kom margoft fram af hálfu okkar Sjálfstæðismanna að við viljum breyta stjórnarskránni .
+# sent_id = ALTHINGI_TKG_2011_G-33-4645697,.2
+# X_ID = ID_missing_3
+# text = Og það er eins og hann hafi ekki haft hljóðið á þegar hann horfði á umræðurnar hér fyrir tveimur árum, þegar við ætluðum að breyta stjórnarskránni, því að það kom margoft fram af hálfu okkar Sjálfstæðismanna að við viljum breyta stjórnarskránni.
 1	Og	og	CCONJ	CONJ	_	29	cc	_	_
 2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	29	expl	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	29	cop	_	_
@@ -92,9 +88,9 @@
 43	stjórnarskránni	stjórnarskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	42	obj	_	SpaceAfter=No
 44	.	.	PUNCT	.	_	29	punct	_	_
 
-# sent_id = G-33-4645697,.4
-# X_ID = ID_MISSING
-# text = Það kom líka fram varðandi stjórnlagaþingið að við erum á móti þeirri aðferð af því við viljum fara eftir núgildandi stjórnarskrá .
+# sent_id = ALTHINGI_TKG_2011_G-33-4645697,.3
+# X_ID = ID_missing_4
+# text = Það kom líka fram varðandi stjórnlagaþingið að við erum á móti þeirri aðferð af því við viljum fara eftir núgildandi stjórnarskrá.
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	líka	líka	ADV	ALSO	_	2	advmod	_	_
@@ -118,9 +114,9 @@
 21	stjórnarskrá	stjórnarskrá	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4645697,.5
-# X_ID = ID_MISSING
-# text = Það er alveg á hreinu að við viljum breyta stjórnarskránni
+# sent_id = ALTHINGI_TKG_2011_G-33-4645697,.4
+# X_IDs = ID_missing_5 ; ID_missing_6 ; ID_missing_7 ; ID_missing_8
+# text = Það er alveg á hreinu að við viljum breyta stjórnarskránni og við höfum til dæmis gert það í samvinnu við Framsóknarflokkinn, við breyttum stjórnarskránni 1995, við breyttum stjórnarskránni verulega 1999.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	alveg	alveg	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -131,45 +127,33 @@
 8	viljum	vilja	AUX	MDPS	Mood=Sub|Tense=Pres	9	aux	_	_
 9	breyta	breyta	VERB	VB	VerbForm=Inf	5	ccomp	_	_
 10	stjórnarskránni	stjórnarskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obj	_	_
+11	og	og	CCONJ	CONJ	_	16	cc	_	_
+12	við	ég	PRON	PRO-N	Case=Nom	16	nsubj	_	_
+13	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	16	aux	_	_
+14	til	til	ADP	P	_	15	case	_	_
+15	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	16	obl	_	_
+16	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
+17	það	það	PRON	PRO-A	Case=Acc	16	obj	_	_
+18	í	í	ADP	P	_	19	case	_	_
+19	samvinnu	samvinna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
+20	við	við	ADP	P	_	21	case	_	_
+21	Framsóknarflokkinn	framsóknarflokkur	PROPN	NPR-A	_	19	obl	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	19	punct	_	_
+23	við	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+24	breyttum	breyta	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
+25	stjórnarskránni	stjórnarskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obj	_	_
+26	1995	1995	NUM	NUM-A	Case=Acc	24	obl	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	5	punct	_	_
+28	við	ég	PRON	PRO-N	Case=Nom	29	nsubj	_	_
+29	breyttum	breyta	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
+30	stjórnarskránni	stjórnarskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obj	_	_
+31	verulega	verulega	ADV	ADV	Degree=Pos	29	advmod	_	_
+32	1999	1999	NUM	NUM-A	Case=Acc	29	obl	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4645697,.6
-# X_ID = ID_MISSING
-# text = og við höfum til dæmis gert það í samvinnu við Framsóknarflokkinn,
-1	og	og	CCONJ	CONJ	_	6	cc	_	_
-2	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
-3	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
-4	til	til	ADP	P	_	5	case	_	_
-5	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	_
-6	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	0	root	_	_
-7	það	það	PRON	PRO-A	Case=Acc	6	obj	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	samvinnu	samvinna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
-10	við	við	ADP	P	_	11	case	_	_
-11	Framsóknarflokkinn	framsóknarflokkur	PROPN	NPR-A	_	9	obl	_	SpaceAfter=No
-12	,	,	PUNCT	,	_	6	punct	_	_
-
-# sent_id = G-33-4645697,.7
-# X_ID = ID_MISSING
-# text = við breyttum stjórnarskránni 1995,
-1	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	breyttum	breyta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	stjórnarskránni	stjórnarskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	_
-4	1995	1995	NUM	NUM-A	Case=Acc	2	obl	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	2	punct	_	_
-
-# sent_id = G-33-4645697,.8
-# X_ID = ID_MISSING
-# text = við breyttum stjórnarskránni verulega 1999 .
-1	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	breyttum	breyta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	stjórnarskránni	stjórnarskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obj	_	_
-4	verulega	verulega	ADV	ADV	Degree=Pos	2	advmod	_	_
-5	1999	1999	NUM	NUM-A	Case=Acc	2	obl	_	SpaceAfter=No
-6	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4645697,.9
-# X_ID = ID_MISSING
-# text = Þáverandi formenn Sjálfstæðisflokksins og Framsóknarflokksins lögðu meðal annars fram sameiginlega breytingartillögu á mjög umdeildu ákvæði í stjórnarskránni varðandi auðlindaákvæðið .
+# sent_id = ALTHINGI_TKG_2011_G-33-4645697,.5
+# X_ID = ID_missing_9
+# text = Þáverandi formenn Sjálfstæðisflokksins og Framsóknarflokksins lögðu meðal annars fram sameiginlega breytingartillögu á mjög umdeildu ákvæði í stjórnarskránni varðandi auðlindaákvæðið.
 1	Þáverandi	þáverandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	formenn	formaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
 3	Sjálfstæðisflokksins	sjálfstæðisflokkur	PROPN	NPR-G	_	2	nmod:poss	_	_
@@ -191,9 +175,9 @@
 19	auðlindaákvæðið	auðlindaákvæði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obj	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4645697,.10
-# X_ID = ID_MISSING
-# text = Þannig að ekki er hægt að brigsla okkur sjálfstæðismönnum um það að vilja ekki breyta Forseti hringir . stjórnarskránni .
+# sent_id = ALTHINGI_TKG_2011_G-33-4645697,.6
+# X_ID = ID_missing_10
+# text = Þannig að ekki er hægt að brigsla okkur sjálfstæðismönnum um það að vilja ekki breyta Forseti hringir. stjórnarskránni.
 1	Þannig	þannig	ADV	ADV	Degree=Pos	0	root	_	_
 2	að	að	SCONJ	C	_	7	mark	_	_
 3	ekki	ekki	ADV	NEG	_	7	advmod	_	_
@@ -215,9 +199,9 @@
 19	stjórnarskránni	stjórnarskrá	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obj	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4645697,.11
-# X_ID = ID_MISSING
-# text = Ég vil hins vegar spyrja hv. þingmann Forseti hringir . um orð Sigurðar Líndals prófessors af því að honum verður Forseti hringir . tíðrætt um Forseti hringir . að við séum Forseti hringir . Forseti hringir . að fara Forseti hringir . á svig við dómsvaldið .
+# sent_id = ALTHINGI_TKG_2011_G-33-4645697,.7
+# X_ID = ID_missing_11
+# text = Ég vil hins vegar spyrja hv. þingmann Forseti hringir. um orð Sigurðar Líndals prófessors af því að honum verður Forseti hringir. tíðrætt um Forseti hringir. að við séum Forseti hringir. Forseti hringir. að fara Forseti hringir. á svig við dómsvaldið.
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
 3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
@@ -266,40 +250,43 @@
 46	dómsvaldið	dómsvald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	44	obl	_	SpaceAfter=No
 47	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4645697,.12
-# X_ID = ID_MISSING
-# text = Forseti hringir .
+# sent_id = ALTHINGI_TKG_2011_G-33-4645697,.8
+# X_ID = ID_missing_12
+# text = Forseti hringir.
 1	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_TKG_2011_G-33-4645697,.9
+# X_ID = ID_missing_13
+# text = Hvað segir hv. þingmaður Forseti hringir. um orð Sigurðar Líndals Forseti hringir. í títtnefndri grein Forseti hringir. sem verið hefur Forseti hringir. til umræðu?
 1	Hvað	hver	PRON	WPRO-A	Case=Acc	2	obj	_	_
 2	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
 4	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 5	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
-6	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	2	dep	_	_
+6	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	2	dep	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	6	punct	_	_
 8	um	um	ADP	P	_	9	case	_	_
 9	orð	orð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
 10	Sigurðar	sigurður	PROPN	NPR-G	_	9	nmod:poss	_	_
 11	Líndals	líndal	PROPN	NPR-G	_	10	flat:name	_	_
 12	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
-13	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	2	dep	_	_
+13	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	2	dep	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	13	punct	_	_
 15	í	í	ADP	P	_	17	case	_	_
 16	títtnefndri	títtnefndur	ADJ	ADJ-D	Case=Dat|Degree=Pos	17	amod	_	_
 17	grein	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 18	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
-19	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	17	dep	_	_
+19	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	17	dep	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	19	punct	_	_
 21	sem	sem	SCONJ	C	_	22	mark	_	_
 22	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	17	acl:relcl	_	_
 23	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	22	aux	_	_
 24	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	25	nsubj	_	_
-25	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	22	dep	_	_
+25	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	22	dep	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	25	punct	_	_
 27	til	til	ADP	P	_	28	case	_	_
-28	umræðu	umræða	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	obl	_	_
+28	umræðu	umræða	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
 29	?	?	PUNCT	.	_	2	punct	_	_
 

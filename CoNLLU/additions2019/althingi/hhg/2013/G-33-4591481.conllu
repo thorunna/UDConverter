@@ -1,6 +1,6 @@
-# sent_id = G-33-4591481,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Ég þakka upplýsingarnar .
+# sent_id = ALTHINGI_HHG_2013_G-33-4591481,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Ég þakka upplýsingarnar.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -9,9 +9,9 @@
 6	upplýsingarnar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4591481,.2
-# X_ID = ID_MISSING
-# text = Ég verð að viðurkenna að ég var ekki meðvitaður um að þetta væru þvílíkar upphæðir .
+# sent_id = ALTHINGI_HHG_2013_G-33-4591481,.2
+# X_ID = ID_missing_2
+# text = Ég verð að viðurkenna að ég var ekki meðvitaður um að þetta væru þvílíkar upphæðir.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	verð	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -29,9 +29,9 @@
 15	upphæðir	upphæð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	amod	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4591481,.3
-# X_ID = ID_MISSING
-# text = Eitt finnst mér þó alveg ljóst af umræðunni í samfélaginu og á hinu háa þingi, eftir að umræðan um legugjöld kom upp, að þjóðin vill forgangsraða heilbrigðiskerfinu .
+# sent_id = ALTHINGI_HHG_2013_G-33-4591481,.3
+# X_ID = ID_missing_3
+# text = Eitt finnst mér þó alveg ljóst af umræðunni í samfélaginu og á hinu háa þingi, eftir að umræðan um legugjöld kom upp, að þjóðin vill forgangsraða heilbrigðiskerfinu.
 1	Eitt	einn	DET	ONE-N	Case=Nom	2	obl	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
@@ -63,18 +63,18 @@
 29	heilbrigðiskerfinu	heilbrigðiskerfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obj	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4591481,.4
-# X_ID = ID_MISSING
-# text = Það er alveg kýrskýrt .
+# sent_id = ALTHINGI_HHG_2013_G-33-4591481,.4
+# X_ID = ID_missing_4
+# text = Það er alveg kýrskýrt.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	alveg	alveg	ADV	ADV	Degree=Pos	4	amod	_	_
 4	kýrskýrt	kýrskýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4591481,.5
-# X_ID = ID_MISSING
-# text = Ef maður spyr Íslendinga segja þeir : Við erum með heilbrigðiskerfi,
+# sent_id = ALTHINGI_HHG_2013_G-33-4591481,.5
+# X_IDs = ID_missing_5 ; ID_missing_6
+# text = Ef maður spyr Íslendinga segja þeir: Við erum með heilbrigðiskerfi, það er þess vegna sem við þurfum hærri skatta en margir mundu kannski vilja borga.
 1	Ef	ef	ADP	P	_	3	case	_	_
 2	maður	maður	PRON	MAN-N	_	3	nsubj	_	_
 3	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	5	obl	_	_
@@ -87,30 +87,26 @@
 10	með	með	ADP	P	_	11	case	_	_
 11	heilbrigðiskerfi	heilbrigðiskerfi	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	5	punct	_	_
+13	það	það	PRON	PRO-N	Case=Nom	5	conj	_	OriginalHead=0
+14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
+15	þess	það	PRON	PRO-G	Case=Gen	13	obl	_	_
+16	vegna	vegna	ADP	P	_	15	case	_	_
+17	sem	sem	SCONJ	C	_	19	mark	_	_
+18	við	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
+19	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	_
+20	hærri	hár	ADJ	ADJR-A	Case=Acc|Degree=Cmp	21	amod	_	_
+21	skatta	skattur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	19	obj	_	_
+22	en	en	ADP	P	_	27	case	_	_
+23	margir	margur	DET	Q-N	Case=Nom	27	nsubj	_	_
+24	mundu	munu	AUX	MDDI	Mood=Ind|Tense=Past	27	aux	_	_
+25	kannski	kannski	ADV	ADV	Degree=Pos	27	advmod	_	_
+26	vilja	vilja	AUX	MD	VerbForm=Inf	27	aux	_	_
+27	borga	borga	VERB	VB	VerbForm=Inf	21	obl	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4591481,.6
-# X_ID = ID_MISSING
-# text = það er þess vegna sem við þurfum hærri skatta en margir mundu kannski vilja borga .
-1	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
-3	þess	það	PRON	PRO-G	Case=Gen	1	obl	_	_
-4	vegna	vegna	ADP	P	_	3	case	_	_
-5	sem	sem	SCONJ	C	_	7	mark	_	_
-6	við	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-7	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	1	acl:relcl	_	_
-8	hærri	hár	ADJ	ADJR-A	Case=Acc|Degree=Cmp	9	amod	_	_
-9	skatta	skattur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obj	_	_
-10	en	en	ADP	P	_	15	case	_	_
-11	margir	margur	DET	Q-N	Case=Nom	15	nsubj	_	_
-12	mundu	munu	AUX	MDDI	Mood=Ind|Tense=Past	15	aux	_	_
-13	kannski	kannski	ADV	ADV	Degree=Pos	15	advmod	_	_
-14	vilja	vilja	AUX	MD	VerbForm=Inf	15	aux	_	_
-15	borga	borga	VERB	VB	VerbForm=Inf	9	obl	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	1	punct	_	_
-
-# sent_id = G-33-4591481,.7
-# X_ID = ID_MISSING
-# text = Það er þess vegna sem við höfum svokallað ríkisbákn fyrst og fremst .
+# sent_id = ALTHINGI_HHG_2013_G-33-4591481,.6
+# X_ID = ID_missing_7
+# text = Það er þess vegna sem við höfum svokallað ríkisbákn fyrst og fremst.
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	þess	það	PRON	PRO-G	Case=Gen	0	root	_	_
@@ -125,9 +121,9 @@
 12	fremst	harla	ADV	ADVS	Degree=Sup	10	conj	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4591481,.8
-# X_ID = ID_MISSING
-# text = Við þurfum auðvitað lögreglu og dómskerfi o.s.frv.
+# sent_id = ALTHINGI_HHG_2013_G-33-4591481,.7
+# X_IDs = ID_missing_8 ; ID_missing_9
+# text = Við þurfum auðvitað lögreglu og dómskerfi o.s.frv. en ef það er eitt sem fólk almennt vill að við séum með framar öðrum þjóðum, ekki bara sem grunnstoð heldur að við höfum það sem best þá er það heilbrigðiskerfið, hef ég tekið eftir.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -137,52 +133,48 @@
 7	o.	og	CCONJ	CONJ	_	8	cc	_	SpaceAfter=No
 8	s.	svo	ADV	ADV	Degree=Pos	6	conj	_	SpaceAfter=No
 9	frv.	framvegis	ADV	ADV	Degree=Pos	8	advmod	_	_
+10	en	en	CCONJ	CONJ	_	41	cc	_	_
+11	ef	ef	ADP	P	_	14	case	_	_
+12	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	14	expl	_	_
+13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+14	eitt	einn	DET	ONE-N	Case=Nom	41	obl	_	_
+15	sem	sem	SCONJ	C	_	18	mark	_	_
+16	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
+17	almennt	almennt	ADV	ADV	Degree=Pos	18	advmod	_	_
+18	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	14	acl:relcl	_	_
+19	að	að	SCONJ	C	_	22	mark	_	_
+20	við	ég	PRON	PRO-N	Case=Nom	22	nsubj	_	_
+21	séum	vera	AUX	BEPS	Mood=Sub|Tense=Pres	22	cop	_	_
+22	með	með	ADP	P	_	18	ccomp	_	_
+23	framar	frammi	ADV	ADVR	Degree=Cmp	22	advmod	_	_
+24	öðrum	annar	PRON	OTHER-D	Case=Dat	25	det	_	_
+25	þjóðum	þjóð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	23	obl	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	27	punct	_	_
+27	ekki	ekki	ADV	NEG	_	22	conj	_	_
+28	bara	bara	ADV	FP	Degree=Pos	27	advmod	_	_
+29	sem	sem	SCONJ	C	_	30	mark	_	_
+30	grunnstoð	grunnstoð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	27	advcl	_	_
+31	heldur	heldur	ADV	ADVR	Degree=Cmp	27	conj	_	_
+32	að	að	SCONJ	C	_	34	mark	_	_
+33	við	ég	PRON	PRO-N	Case=Nom	34	nsubj	_	_
+34	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	31	ccomp	_	_
+35	það	það	PRON	PRO-A	Case=Acc	36	nsubj	_	_
+36	sem	sem	SCONJ	C	_	34	ccomp	_	_
+37	best	góður	ADJ	ADJS	Degree=Sup	36	amod	_	_
+38	þá	þá	ADV	ADV	Degree=Pos	41	advmod	_	_
+39	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	41	cop	_	_
+40	það	það	PRON	PRO-N	Case=Nom	41	nsubj	_	_
+41	heilbrigðiskerfið	heilbrigðiskerfi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	conj	_	OriginalHead=0|SpaceAfter=No
+42	,	,	PUNCT	,	_	41	punct	_	_
+43	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	45	aux	_	_
+44	ég	ég	PRON	PRO-N	Case=Nom	45	nsubj	_	_
+45	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	41	parataxis	_	_
+46	eftir	eftir	ADV	ADV	Degree=Pos	45	advmod	_	SpaceAfter=No
+47	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4591481,.9
-# X_ID = ID_MISSING
-# text = en ef það er eitt sem fólk almennt vill að við séum með framar öðrum þjóðum, ekki bara sem grunnstoð heldur að við höfum það sem best þá er það heilbrigðiskerfið, hef ég tekið eftir .
-1	en	en	CCONJ	CONJ	_	32	cc	_	_
-2	ef	ef	ADP	P	_	5	case	_	_
-3	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
-4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-5	eitt	einn	DET	ONE-N	Case=Nom	32	obl	_	_
-6	sem	sem	SCONJ	C	_	9	mark	_	_
-7	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
-8	almennt	almennt	ADV	ADV	Degree=Pos	9	advmod	_	_
-9	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	5	acl:relcl	_	_
-10	að	að	SCONJ	C	_	13	mark	_	_
-11	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-12	séum	vera	AUX	BEPS	Mood=Sub|Tense=Pres	13	cop	_	_
-13	með	með	ADP	P	_	9	ccomp	_	_
-14	framar	frammi	ADV	ADVR	Degree=Cmp	13	advmod	_	_
-15	öðrum	annar	PRON	OTHER-D	Case=Dat	16	det	_	_
-16	þjóðum	þjóð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	18	punct	_	_
-18	ekki	ekki	ADV	NEG	_	13	conj	_	_
-19	bara	bara	ADV	FP	Degree=Pos	18	advmod	_	_
-20	sem	sem	SCONJ	C	_	21	mark	_	_
-21	grunnstoð	grunnstoð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	advcl	_	_
-22	heldur	heldur	ADV	ADVR	Degree=Cmp	18	conj	_	_
-23	að	að	SCONJ	C	_	25	mark	_	_
-24	við	ég	PRON	PRO-N	Case=Nom	25	nsubj	_	_
-25	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	22	ccomp	_	_
-26	það	það	PRON	PRO-A	Case=Acc	27	nsubj	_	_
-27	sem	sem	SCONJ	C	_	25	ccomp	_	_
-28	best	góður	ADJ	ADJS	Degree=Sup	27	amod	_	_
-29	þá	þá	ADV	ADV	Degree=Pos	32	advmod	_	_
-30	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	32	cop	_	_
-31	það	það	PRON	PRO-N	Case=Nom	32	nsubj	_	_
-32	heilbrigðiskerfið	heilbrigðiskerfi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
-33	,	,	PUNCT	,	_	32	punct	_	_
-34	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	36	aux	_	_
-35	ég	ég	PRON	PRO-N	Case=Nom	36	nsubj	_	_
-36	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	32	parataxis	_	_
-37	eftir	eftir	ADV	ADV	Degree=Pos	36	advmod	_	SpaceAfter=No
-38	.	.	PUNCT	.	_	32	punct	_	_
-
-# sent_id = G-33-4591481,.10
-# X_ID = ID_MISSING
-# text = Ég mundi skjóta á að menntakerfið væri aðeins á eftir en ekki langt .
+# sent_id = ALTHINGI_HHG_2013_G-33-4591481,.8
+# X_ID = ID_missing_10
+# text = Ég mundi skjóta á að menntakerfið væri aðeins á eftir en ekki langt.
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	3	aux	_	_
 3	skjóta	skjóta	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -198,9 +190,9 @@
 13	langt	langur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	conj	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4591481,.11
-# X_ID = ID_MISSING
-# text = Vissulega kemur það í ljós út frá reiði almennings og allra sem ég talaði við á sínum tíma, sem létu sig málið varða á annað borð, að forgangsröðunin á að vera á heilbrigðiskerfinu
+# sent_id = ALTHINGI_HHG_2013_G-33-4591481,.9
+# X_IDs = ID_missing_11 ; ID_missing_12
+# text = Vissulega kemur það í ljós út frá reiði almennings og allra sem ég talaði við á sínum tíma, sem létu sig málið varða á annað borð, að forgangsröðunin á að vera á heilbrigðiskerfinu og þess vegna er afskaplega leiðinlegt að sjá þá hugmynd dvína sem maður hafði um að heilbrigðiskerfið á Íslandi væri gott. Ekki bara út frá þjónustulegu sjónarmiði heldur líka að því leyti að fólk þyrfti ekki að greiða mikið fyrir það, að fólk hefði raunhæfan aðgang að þjónustunni óháð efnahag.
 1	Vissulega	vissulega	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
@@ -236,67 +228,63 @@
 33	vera	vera	AUX	BE	VerbForm=Inf	35	cop	_	_
 34	á	á	ADP	P	_	35	case	_	_
 35	heilbrigðiskerfinu	heilbrigðiskerfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	xcomp	_	_
+36	og	og	CCONJ	CONJ	_	41	cc	_	_
+37	þess	það	ADV	PRO-G	Case=Gen	41	advmod	_	_
+38	vegna	vegna	ADP	P	_	37	case	_	_
+39	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	41	cop	_	_
+40	afskaplega	afskaplega	ADV	ADV	Degree=Pos	41	amod	_	_
+41	leiðinlegt	leiðinlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
+42	að	að	PART	TO	_	43	mark	_	_
+43	sjá	sjá	VERB	VB	VerbForm=Inf	41	xcomp	_	_
+44	þá	sá	DET	D-A	Case=Acc	45	det	_	_
+45	hugmynd	hugmynd	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	46	nsubj	_	_
+46	dvína	dvína	VERB	VBPI	Mood=Ind|Tense=Pres	43	xcomp	_	_
+47	sem	sem	SCONJ	C	_	49	mark	_	_
+48	maður	maður	PRON	MAN-N	_	49	nsubj	_	_
+49	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	46	acl:relcl	_	_
+50	um	um	ADP	P	_	56	case	_	_
+51	að	að	SCONJ	C	_	56	mark	_	_
+52	heilbrigðiskerfið	heilbrigðiskerfi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	56	nsubj	_	_
+53	á	á	ADP	P	_	54	case	_	_
+54	Íslandi	ísland	PROPN	NPR-D	_	52	obl	_	_
+55	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	56	cop	_	_
+56	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	46	obl	_	SpaceAfter=No
+57	.	.	PUNCT	.	_	56	punct	_	_
+58	Ekki	ekki	ADV	NEG	_	63	advmod	_	_
+59	bara	bara	ADV	FP	Degree=Pos	63	advmod	_	_
+60	út	út	ADP	RP	_	63	compound:prt	_	_
+61	frá	frá	ADP	P	_	63	case	_	_
+62	þjónustulegu	þjónustulegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	63	amod	_	_
+63	sjónarmiði	sjónarmið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	56	conj	_	_
+64	heldur	heldur	ADV	ADVR	Degree=Cmp	68	advmod	_	_
+65	líka	líka	ADV	ALSO	_	68	advmod	_	_
+66	að	að	ADP	P	_	68	case	_	_
+67	því	sá	DET	D-D	Case=Dat	68	det	_	_
+68	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	63	conj	_	_
+69	að	að	SCONJ	C	_	71	mark	_	_
+70	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	71	nsubj	_	_
+71	þyrfti	þurfa	VERB	VBDS	Mood=Sub|Tense=Past	68	ccomp	_	_
+72	ekki	ekki	ADV	NEG	_	71	advmod	_	_
+73	að	að	PART	TO	_	74	mark	_	_
+74	greiða	greiða	VERB	VB	VerbForm=Inf	71	xcomp	_	_
+75	mikið	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	74	obj	_	_
+76	fyrir	fyrir	ADP	P	_	77	case	_	_
+77	það	það	PRON	PRO-A	Case=Acc	74	obl	_	SpaceAfter=No
+78	,	,	PUNCT	,	_	77	punct	_	_
+79	að	að	SCONJ	C	_	71	dep	_	_
+80	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	81	nsubj	_	_
+81	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	79	conj	_	_
+82	raunhæfan	raunhæfur	ADJ	ADJ-A	Case=Acc|Degree=Pos	83	amod	_	_
+83	aðgang	aðgangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	81	obj	_	_
+84	að	að	ADP	P	_	85	case	_	_
+85	þjónustunni	þjónusta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	83	obl	_	_
+86	óháð	óháð	ADP	P	_	87	case	_	_
+87	efnahag	efnahagur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	81	obl	_	SpaceAfter=No
+88	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4591481,.12
-# X_ID = ID_MISSING
-# text = og þess vegna er afskaplega leiðinlegt að sjá þá hugmynd dvína sem maður hafði um að heilbrigðiskerfið á Íslandi væri gott . Ekki bara út frá þjónustulegu sjónarmiði heldur líka að því leyti að fólk þyrfti ekki að greiða mikið fyrir það, að fólk hefði raunhæfan aðgang að þjónustunni óháð efnahag .
-1	og	og	CCONJ	CONJ	_	6	cc	_	_
-2	þess	það	ADV	PRO-G	Case=Gen	6	advmod	_	_
-3	vegna	vegna	ADP	P	_	2	case	_	_
-4	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
-5	afskaplega	afskaplega	ADV	ADV	Degree=Pos	6	amod	_	_
-6	leiðinlegt	leiðinlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-7	að	að	PART	TO	_	8	mark	_	_
-8	sjá	sjá	VERB	VB	VerbForm=Inf	6	xcomp	_	_
-9	þá	sá	DET	D-A	Case=Acc	10	det	_	_
-10	hugmynd	hugmynd	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	nsubj	_	_
-11	dvína	dvína	VERB	VBPI	Mood=Ind|Tense=Pres	8	xcomp	_	_
-12	sem	sem	SCONJ	C	_	14	mark	_	_
-13	maður	maður	PRON	MAN-N	_	14	nsubj	_	_
-14	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	11	acl:relcl	_	_
-15	um	um	ADP	P	_	21	case	_	_
-16	að	að	SCONJ	C	_	21	mark	_	_
-17	heilbrigðiskerfið	heilbrigðiskerfi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	_
-18	á	á	ADP	P	_	19	case	_	_
-19	Íslandi	ísland	PROPN	NPR-D	_	17	obl	_	_
-20	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	21	cop	_	_
-21	gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	obl	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	21	punct	_	_
-23	Ekki	ekki	ADV	NEG	_	28	advmod	_	_
-24	bara	bara	ADV	FP	Degree=Pos	28	advmod	_	_
-25	út	út	ADP	RP	_	28	compound:prt	_	_
-26	frá	frá	ADP	P	_	28	case	_	_
-27	þjónustulegu	þjónustulegur	ADJ	ADJ-D	Case=Dat|Degree=Pos	28	amod	_	_
-28	sjónarmiði	sjónarmið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	conj	_	_
-29	heldur	heldur	ADV	ADVR	Degree=Cmp	33	advmod	_	_
-30	líka	líka	ADV	ALSO	_	33	advmod	_	_
-31	að	að	ADP	P	_	33	case	_	_
-32	því	sá	DET	D-D	Case=Dat	33	det	_	_
-33	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	conj	_	_
-34	að	að	SCONJ	C	_	36	mark	_	_
-35	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	36	nsubj	_	_
-36	þyrfti	þurfa	VERB	VBDS	Mood=Sub|Tense=Past	33	ccomp	_	_
-37	ekki	ekki	ADV	NEG	_	36	advmod	_	_
-38	að	að	PART	TO	_	39	mark	_	_
-39	greiða	greiða	VERB	VB	VerbForm=Inf	36	xcomp	_	_
-40	mikið	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	39	obj	_	_
-41	fyrir	fyrir	ADP	P	_	42	case	_	_
-42	það	það	PRON	PRO-A	Case=Acc	39	obl	_	SpaceAfter=No
-43	,	,	PUNCT	,	_	42	punct	_	_
-44	að	að	SCONJ	C	_	36	dep	_	_
-45	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	46	nsubj	_	_
-46	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	44	conj	_	_
-47	raunhæfan	raunhæfur	ADJ	ADJ-A	Case=Acc|Degree=Pos	48	amod	_	_
-48	aðgang	aðgangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	46	obj	_	_
-49	að	að	ADP	P	_	50	case	_	_
-50	þjónustunni	þjónusta	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	48	obl	_	_
-51	óháð	óháð	ADP	P	_	52	case	_	_
-52	efnahag	efnahagur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	46	obl	_	SpaceAfter=No
-53	.	.	PUNCT	.	_	6	punct	_	_
-
-# sent_id = G-33-4591481,.13
-# X_ID = ID_MISSING
-# text = Því tek ég undir áhyggjur hv. þm. Árna Þór Sigurðssonar
+# sent_id = ALTHINGI_HHG_2013_G-33-4591481,.10
+# X_IDs = ID_missing_13 ; ID_missing_14
+# text = Því tek ég undir áhyggjur hv. þm. Árna Þór Sigurðssonar og vona að á þessu finnist einhver farsæl lausn.
 1	Því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 2	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -307,15 +295,14 @@
 8	Árna	árni	PROPN	NPR-G	_	7	flat:name	_	_
 9	Þór	þór	PROPN	NPR-G	_	7	dep	_	_
 10	Sigurðssonar	sigurðsson	PROPN	NPR-G	_	7	dep	_	_
-
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	að	að	SCONJ	C	_	6	mark	_	_
-4	á	á	ADP	P	_	5	case	_	_
-5	þessu	þessi	DET	D-D	Case=Dat	6	obl	_	_
-6	finnist	finna	VERB	VBPS	Mood=Sub|Tense=Pres	2	ccomp	_	_
-7	einhver	einhver	DET	Q-N	Case=Nom	9	amod	_	_
-8	farsæl	farsæll	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
-9	lausn	lausn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
-10	.	.	PUNCT	.	_	2	punct	_	_
+11	og	og	CCONJ	CONJ	_	12	cc	_	_
+12	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+13	að	að	SCONJ	C	_	16	mark	_	_
+14	á	á	ADP	P	_	15	case	_	_
+15	þessu	þessi	DET	D-D	Case=Dat	16	obl	_	_
+16	finnist	finna	VERB	VBPS	Mood=Sub|Tense=Pres	12	ccomp	_	_
+17	einhver	einhver	DET	Q-N	Case=Nom	19	amod	_	_
+18	farsæl	farsæll	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	amod	_	_
+19	lausn	lausn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	2	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = G-2-1032815.SANITY,.1
-# X_ID = ID_MISSING
-# text = Handboltamaðurinn Ómar Ingi Magnússon sem hefur leikið við gott orðspor með Val síðustu misseri hefur gert þriggja ára samning við danska úrvalsdeildarliðið Århus frá og með sumri .
+# sent_id = RUV_TGS_2016_G-2-1032815.SANITY,.1
+# X_ID = ID_missing_1
+# text = Handboltamaðurinn Ómar Ingi Magnússon sem hefur leikið við gott orðspor með Val síðustu misseri hefur gert þriggja ára samning við danska úrvalsdeildarliðið Århus frá og með sumri.
 1	Handboltamaðurinn	handboltamaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
 2	Ómar	ómar	PROPN	NPR-N	_	1	appos	_	_
 3	Ingi	ingi	PROPN	NPR-N	_	2	flat:name	_	_
@@ -30,9 +30,9 @@
 27	sumri	sumar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	16	punct	_	_
 
-# sent_id = G-2-1032815.SANITY,.2
-# X_ID = ID_MISSING
-# text = Þetta kemur fram á heimasíðu danska félagsins .
+# sent_id = RUV_TGS_2016_G-2-1032815.SANITY,.2
+# X_ID = ID_missing_2
+# text = Þetta kemur fram á heimasíðu danska félagsins.
 1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	fram	fram	ADP	RP	_	5	compound:prt	_	_
@@ -42,9 +42,9 @@
 7	félagsins	félag	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1032815.SANITY,.3
-# X_ID = ID_MISSING
-# text = Ómar sem er 19 ára er örvhent skytta
+# sent_id = RUV_TGS_2016_G-2-1032815.SANITY,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Ómar sem er 19 ára er örvhent skytta og hefur verið lykilmaður í U20 ára landsliði Íslands.
 1	Ómar	ómar	PROPN	NPR-N	_	8	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -53,62 +53,50 @@
 6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
 7	örvhent	örvhentur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
 8	skytta	skytta	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
+9	og	og	CCONJ	CONJ	_	12	cc	_	_
+10	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	12	aux	_	_
+11	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	12	cop	_	_
+12	lykilmaður	lykilmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	conj	_	OriginalHead=0
+13	í	í	ADP	P	_	16	case	_	_
+14	U20	u20	NUM	NUM-N	Case=Nom	15	nummod	_	_
+15	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	16	amod	_	_
+16	landsliði	landslið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+17	Íslands	ísland	PROPN	NPR-G	_	16	nmod:poss	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-2-1032815.SANITY,.4
-# X_ID = ID_MISSING
-# text = og hefur verið lykilmaður í U20 ára landsliði Íslands .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
-3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	4	cop	_	_
-4	lykilmaður	lykilmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-5	í	í	ADP	P	_	8	case	_	_
-6	U20	u20	NUM	NUM-N	Case=Nom	7	nummod	_	_
-7	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	amod	_	_
-8	landsliði	landslið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
-9	Íslands	ísland	PROPN	NPR-G	_	8	nmod:poss	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-2-1032815.SANITY,.5
-# X_ID = ID_MISSING
-# text = Hann er uppalinn á Selfossi
+# sent_id = RUV_TGS_2016_G-2-1032815.SANITY,.4
+# X_IDs = ID_missing_5 ; ID_missing_6 ; ID_missing_7
+# text = Hann er uppalinn á Selfossi en hefur leikið með Val síðustu ár, en spilar reyndar ekki meira með Valsmönnum á þessari leiktíð vegna meiðsla.
 1	Hann	hann	PRON	PRO-N	Case=Nom	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	uppalinn	uppala	VERB	VAN	Tense=Past|VerbForm=Part	1	acl	_	_
 4	á	á	ADP	P	_	5	case	_	_
 5	Selfossi	selfoss	PROPN	NPR-D	_	3	obl	_	_
+6	en	en	CCONJ	CONJ	_	8	cc	_	_
+7	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	8	aux	_	_
+8	leikið	leika	VERB	VBN	Tense=Past|VerbForm=Part	1	conj	_	OriginalHead=0
+9	með	með	ADP	P	_	10	case	_	_
+10	Val	valur	PROPN	NPR-D	_	8	obl	_	_
+11	síðustu	síðari	ADJ	ADJS-A	Case=Acc|Degree=Sup	12	amod	_	_
+12	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	1	punct	_	_
+14	en	en	CCONJ	CONJ	_	15	cc	_	_
+15	spilar	spila	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
+16	reyndar	reyndar	ADV	ADV	Degree=Pos	15	advmod	_	_
+17	ekki	ekki	ADV	NEG	_	15	advmod	_	_
+18	meira	mikill	DET	QR-A	Case=Acc	15	obl	_	_
+19	með	með	ADP	P	_	20	case	_	_
+20	Valsmönnum	valsmaður	PROPN	NPRS-D	_	15	obl	_	_
+21	á	á	ADP	P	_	23	case	_	_
+22	þessari	þessi	DET	D-D	Case=Dat	23	det	_	_
+23	leiktíð	leiktíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
+24	vegna	vegna	ADP	P	_	25	case	_	_
+25	meiðsla	meiðsli	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	15	obl	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-2-1032815.SANITY,.6
-# X_ID = ID_MISSING
-# text = en hefur leikið með Val síðustu ár,
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	3	aux	_	_
-3	leikið	leika	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-4	með	með	ADP	P	_	5	case	_	_
-5	Val	valur	PROPN	NPR-D	_	3	obl	_	_
-6	síðustu	síðari	ADJ	ADJS-A	Case=Acc|Degree=Sup	7	amod	_	_
-7	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	3	punct	_	_
-
-# sent_id = G-2-1032815.SANITY,.7
-# X_ID = ID_MISSING
-# text = en spilar reyndar ekki meira með Valsmönnum á þessari leiktíð vegna meiðsla .
-1	en	en	CCONJ	CONJ	_	2	cc	_	_
-2	spilar	spila	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	reyndar	reyndar	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
-5	meira	mikill	DET	QR-A	Case=Acc	2	obl	_	_
-6	með	með	ADP	P	_	7	case	_	_
-7	Valsmönnum	valsmaður	PROPN	NPRS-D	_	2	obl	_	_
-8	á	á	ADP	P	_	10	case	_	_
-9	þessari	þessi	DET	D-D	Case=Dat	10	det	_	_
-10	leiktíð	leiktíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
-11	vegna	vegna	ADP	P	_	12	case	_	_
-12	meiðsla	meiðsli	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	obl	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1032815.SANITY,.8
-# X_ID = ID_MISSING
-# text = Á heimasíðu danska félagsins er Ómari Inga lýst sem miklu efni
+# sent_id = RUV_TGS_2016_G-2-1032815.SANITY,.5
+# X_IDs = ID_missing_8 ; ID_missing_9
+# text = Á heimasíðu danska félagsins er Ómari Inga lýst sem miklu efni og er haft eftir Erik Veje þjálfara liðsins að hann geri mikla væntingar til þessa nýja liðsmanns.
 1	Á	á	ADP	P	_	2	case	_	_
 2	heimasíðu	heimasíða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
 3	danska	danskur	ADJ	ADJ-G	Case=Gen|Degree=Pos	4	amod	_	_
@@ -120,32 +108,28 @@
 9	sem	sem	SCONJ	C	_	11	mark	_	_
 10	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	11	amod	_	_
 11	efni	efni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	advcl	_	_
+12	og	og	CCONJ	CONJ	_	14	cc	_	_
+13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
+14	haft	hafa	VERB	HAN	Tense=Past|VerbForm=Part	8	conj	_	OriginalHead=0
+15	eftir	eftir	ADP	P	_	16	case	_	_
+16	Erik	erik	PROPN	NPR-D	_	14	obl	_	_
+17	Veje	veje	PROPN	NPR-D	_	16	flat:name	_	_
+18	þjálfara	þjálfari	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	appos	_	_
+19	liðsins	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	_
+20	að	að	SCONJ	C	_	22	mark	_	_
+21	hann	hann	PRON	PRO-N	Case=Nom	22	nsubj	_	_
+22	geri	gera	VERB	DOPS	Mood=Sub|Tense=Pres	14	ccomp	_	_
+23	mikla	mikill	DET	Q-A	Case=Acc	24	amod	_	_
+24	væntingar	vænting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	22	obj	_	_
+25	til	til	ADP	P	_	28	case	_	_
+26	þessa	þessi	DET	D-G	Case=Gen	28	det	_	_
+27	nýja	nýr	ADJ	ADJ-G	Case=Gen|Degree=Pos	28	amod	_	_
+28	liðsmanns	liðsmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-2-1032815.SANITY,.9
-# X_ID = ID_MISSING
-# text = og er haft eftir Erik Veje þjálfara liðsins að hann geri mikla væntingar til þessa nýja liðsmanns .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	haft	hafa	VERB	HAN	Tense=Past|VerbForm=Part	0	root	_	_
-4	eftir	eftir	ADP	P	_	5	case	_	_
-5	Erik	erik	PROPN	NPR-D	_	3	obl	_	_
-6	Veje	veje	PROPN	NPR-D	_	5	flat:name	_	_
-7	þjálfara	þjálfari	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	appos	_	_
-8	liðsins	lið	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
-9	að	að	SCONJ	C	_	11	mark	_	_
-10	hann	hann	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-11	geri	gera	VERB	DOPS	Mood=Sub|Tense=Pres	3	ccomp	_	_
-12	mikla	mikill	DET	Q-A	Case=Acc	13	amod	_	_
-13	væntingar	vænting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obj	_	_
-14	til	til	ADP	P	_	17	case	_	_
-15	þessa	þessi	DET	D-G	Case=Gen	17	det	_	_
-16	nýja	nýr	ADJ	ADJ-G	Case=Gen|Degree=Pos	17	amod	_	_
-17	liðsmanns	liðsmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-2-1032815.SANITY,.10
-# X_ID = ID_MISSING
-# text = Minnst þrír Íslendingar ættu að vera í herbúðum Århus á næstu leiktíð .
+# sent_id = RUV_TGS_2016_G-2-1032815.SANITY,.6
+# X_ID = ID_missing_10
+# text = Minnst þrír Íslendingar ættu að vera í herbúðum Århus á næstu leiktíð.
 1	Minnst	lítill	DET	QS-A	Case=Acc	3	obl	_	_
 2	þrír	þrír	NUM	NUM-N	Case=Nom	3	nummod	_	_
 3	Íslendingar	íslendingur	PROPN	NPRS-N	_	4	nsubj	_	_
@@ -160,9 +144,9 @@
 12	leiktíð	leiktíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1032815.SANITY,.11
-# X_ID = ID_MISSING
-# text = Fyrir er þar hornamðurinn Sigvaldi Björn Guðjónsson
+# sent_id = RUV_TGS_2016_G-2-1032815.SANITY,.7
+# X_IDs = ID_missing_11 ; ID_missing_12 ; ID_missing_13
+# text = Fyrir er þar hornamðurinn Sigvaldi Björn Guðjónsson en að auki hefur landsliðsmaðurinn Róbert Gunnarsson samið við félagið frá og með komandi sumri, en Róbert leikur nú með PSG í Frakklandi.
 1	Fyrir	fyrir	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	þar	þar	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -170,46 +154,41 @@
 5	Sigvaldi	sigvaldi	PROPN	NPR-N	_	4	appos	_	_
 6	Björn	björn	PROPN	NPR-N	_	5	flat:name	_	_
 7	Guðjónsson	guðjónsson	PROPN	NPR-N	_	5	dep	_	_
+8	en	en	CCONJ	CONJ	_	15	cc	_	_
+9	að	að	ADP	P	_	10	case	_	_
+10	auki	auki	ADV	ADV	Degree=Pos	15	obl	_	_
+11	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	15	aux	_	_
+12	landsliðsmaðurinn	landsliðsmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
+13	Róbert	róbert	PROPN	NPR-N	_	12	appos	_	_
+14	Gunnarsson	gunnarsson	PROPN	NPR-N	_	13	flat:name	_	_
+15	samið	semja	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	OriginalHead=0
+16	við	við	ADP	P	_	17	case	_	_
+17	félagið	félag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	15	obl	_	_
+18	frá	frá	ADP	P	_	22	case	_	_
+19	og	og	CCONJ	CONJ	_	22	cc	_	_
+20	með	með	ADP	P	_	22	case	_	_
+21	komandi	koma	VERB	VAG-D	Case=Dat|Tense=Pres|VerbForm=Part	22	amod	_	_
+22	sumri	sumar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
+23	,	,	PUNCT	,	_	4	punct	_	_
+24	en	en	CCONJ	CONJ	_	26	cc	_	_
+25	Róbert	róbert	PROPN	NPR-N	_	26	nsubj	_	_
+26	leikur	leika	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+27	nú	nú	ADV	ADV	Degree=Pos	26	advmod	_	_
+28	með	með	ADP	P	_	29	case	_	_
+29	PSG	psg	PROPN	NPR-D	_	26	obl	_	_
+30	í	í	ADP	P	_	31	case	_	_
+31	Frakklandi	frakkland	PROPN	NPR-D	_	29	obl	_	SpaceAfter=No
+32	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1032815.SANITY,.12
-# X_ID = ID_MISSING
-# text = en að auki hefur landsliðsmaðurinn Róbert Gunnarsson samið við félagið frá og með komandi sumri,
-1	en	en	CCONJ	CONJ	_	8	cc	_	_
-2	að	að	ADP	P	_	3	case	_	_
-3	auki	auki	ADV	ADV	Degree=Pos	8	obl	_	_
-4	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	8	aux	_	_
-5	landsliðsmaðurinn	landsliðsmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
-6	Róbert	róbert	PROPN	NPR-N	_	5	appos	_	_
-7	Gunnarsson	gunnarsson	PROPN	NPR-N	_	6	flat:name	_	_
-8	samið	semja	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-9	við	við	ADP	P	_	10	case	_	_
-10	félagið	félag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obl	_	_
-11	frá	frá	ADP	P	_	15	case	_	_
-12	og	og	CCONJ	CONJ	_	15	cc	_	_
-13	með	með	ADP	P	_	15	case	_	_
-14	komandi	koma	VERB	VAG-D	Case=Dat|Tense=Pres|VerbForm=Part	15	amod	_	_
-15	sumri	sumar	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	8	punct	_	_
-
-# sent_id = G-2-1032815.SANITY,.13
-# X_ID = ID_MISSING
-# text = en Róbert leikur nú með PSG í Frakklandi .
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	Róbert	róbert	PROPN	NPR-N	_	3	nsubj	_	_
-3	leikur	leika	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	nú	nú	ADV	ADV	Degree=Pos	3	advmod	_	_
-5	með	með	ADP	P	_	6	case	_	_
-6	PSG	psg	PROPN	NPR-D	_	3	obl	_	_
-7	í	í	ADP	P	_	8	case	_	_
-8	Frakklandi	frakkland	PROPN	NPR-D	_	6	obl	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	3	punct	_	_
-
+# sent_id = RUV_TGS_2016_G-2-1032815.SANITY,.8
+# X_ID = ID_missing_14
+# text = Frétt Århus Håndbold um komu Ómars Inga.
 1	Frétt	frétt	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 2	Århus	Århus	PROPN	NPR-G	_	1	nmod:poss	_	_
 3	Håndbold	Håndbold	PROPN	NPR-G	_	2	flat:name	_	_
 4	um	um	ADP	P	_	5	case	_	_
 5	komu	koma	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
 6	Ómars	ómar	PROPN	NPR-G	_	5	nmod:poss	_	_
-7	Inga	ingi	PROPN	NPR-G	_	6	flat:name	_	_
+7	Inga	ingi	PROPN	NPR-G	_	6	flat:name	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	1	punct	_	_
 

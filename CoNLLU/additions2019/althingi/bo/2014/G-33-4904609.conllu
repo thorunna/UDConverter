@@ -1,6 +1,6 @@
-# sent_id = G-33-4904609,.1
-# X_ID = ID_MISSING
-# text = Herra forseti . Ég vil gjarnan lýsa því betur eða reyna að spá í spilin og velta þeim hættum upp sem eru fram undan ef þetta er á áætlun, að auka kostnaðarþátttöku þannig að fólk fer að reiða fram veskið áður en það leggst inn á spítala og þarf að hugsa sig um hvort það hafi raunverulega efni á því að fara í þessa og hina meðferðina .
+# sent_id = ALTHINGI_BO_2014_G-33-4904609,.1
+# X_ID = ID_missing_1
+# text = Herra forseti. Ég vil gjarnan lýsa því betur eða reyna að spá í spilin og velta þeim hættum upp sem eru fram undan ef þetta er á áætlun, að auka kostnaðarþátttöku þannig að fólk fer að reiða fram veskið áður en það leggst inn á spítala og þarf að hugsa sig um hvort það hafi raunverulega efni á því að fara í þessa og hina meðferðina.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -71,49 +71,44 @@
 68	meðferðina	meðferð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	63	obl	_	SpaceAfter=No
 69	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4904609,.2
-# X_ID = ID_MISSING
-# text = Það verður auðvitað misskipting,
+# sent_id = ALTHINGI_BO_2014_G-33-4904609,.2
+# X_IDs = ID_missing_2 ; ID_missing_3 ; ID_missing_4
+# text = Það verður auðvitað misskipting, það verður þannig að fólk fer ekki og fær þá þjónustu sem það þarf og þá sjáum við stéttaskiptingu, held ég, í fyrsta skipti fyrir alvöru í þessu landi.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	misskipting	misskipting	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
-5	,	,	PUNCT	,	_	2	punct	_	_
-
-# sent_id = G-33-4904609,.3
-# X_ID = ID_MISSING
-# text = það verður þannig að fólk fer ekki og fær þá þjónustu sem það þarf
-1	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	þannig	þannig	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	að	að	SCONJ	C	_	6	mark	_	_
-5	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
-6	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	3	advcl	_	_
-7	ekki	ekki	ADV	NEG	_	6	advmod	_	_
-8	og	og	CCONJ	CONJ	_	9	cc	_	_
-9	fær	fá	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	_
-10	þá	sá	DET	D-A	Case=Acc	11	det	_	_
-11	þjónustu	þjónusta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
-12	sem	sem	SCONJ	C	_	14	mark	_	_
-13	það	það	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-14	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	11	acl:relcl	_	_
-
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
-3	sjáum	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-5	stéttaskiptingu	stéttaskipting	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
-6	,	,	PUNCT	,	_	5	punct	_	_
-7	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	3	parataxis	_	_
-8	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-9	,	,	PUNCT	,	_	8	punct	_	_
-10	í	í	ADP	P	_	12	case	_	_
-11	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	12	amod	_	_
-12	skipti	skipti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
-13	fyrir	fyrir	ADP	P	_	14	case	_	_
-14	alvöru	alvara	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	_
-15	í	í	ADP	P	_	17	case	_	_
-16	þessu	þessi	DET	D-D	Case=Dat	17	det	_	_
-17	landi	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-18	.	.	PUNCT	.	_	3	punct	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
+7	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+8	þannig	þannig	ADV	ADV	Degree=Pos	7	advmod	_	_
+9	að	að	SCONJ	C	_	11	mark	_	_
+10	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
+11	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	8	advcl	_	_
+12	ekki	ekki	ADV	NEG	_	11	advmod	_	_
+13	og	og	CCONJ	CONJ	_	14	cc	_	_
+14	fær	fá	VERB	VBPI	Mood=Ind|Tense=Pres	11	conj	_	_
+15	þá	sá	DET	D-A	Case=Acc	16	det	_	_
+16	þjónustu	þjónusta	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
+17	sem	sem	SCONJ	C	_	19	mark	_	_
+18	það	það	PRON	PRO-N	Case=Nom	19	nsubj	_	_
+19	þarf	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	16	acl:relcl	_	_
+20	og	og	CCONJ	CONJ	_	22	cc	_	_
+21	þá	þá	ADV	ADV	Degree=Pos	22	advmod	_	_
+22	sjáum	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+23	við	ég	PRON	PRO-N	Case=Nom	22	nsubj	_	_
+24	stéttaskiptingu	stéttaskipting	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obj	_	SpaceAfter=No
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	22	parataxis	_	_
+27	ég	ég	PRON	PRO-N	Case=Nom	26	nsubj	_	SpaceAfter=No
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	í	í	ADP	P	_	31	case	_	_
+30	fyrsta	fyrstur	ADJ	ADJS-A	Case=Acc|Degree=Sup	31	amod	_	_
+31	skipti	skipti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obl	_	_
+32	fyrir	fyrir	ADP	P	_	33	case	_	_
+33	alvöru	alvara	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	31	obl	_	_
+34	í	í	ADP	P	_	36	case	_	_
+35	þessu	þessi	DET	D-D	Case=Dat	36	det	_	_
+36	landi	land	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	2	punct	_	_
 

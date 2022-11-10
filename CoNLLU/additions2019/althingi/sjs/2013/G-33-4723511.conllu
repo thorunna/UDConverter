@@ -1,6 +1,6 @@
-# sent_id = G-33-4723511,.1
-# X_ID = ID_MISSING
-# text = Herra forseti . Á bls. 279 stendur, með leyfi forseta : „ Í fimmta lagi er gert ráð fyrir að ríkistekjur aukist um 137,3 millj. kr. og að greiðsla úr ríkissjóði lækki á móti um sömu fjárhæð . “
+# sent_id = ALTHINGI_SJS_2013_G-33-4723511,.1
+# X_IDs = ID_missing_1 ; ID_missing_2 ; ID_missing_3
+# text = Herra forseti. Á bls. 279 stendur, með leyfi forseta: „ Í fimmta lagi er gert ráð fyrir að ríkistekjur aukist um 137,3 millj. kr. og að greiðsla úr ríkissjóði lækki á móti um sömu fjárhæð.“ Þetta er í samræmi við áform um að háskólunum verði heimilað að hækka skrásetningargjald sem nemendur greiða o.s.frv. Það er erfitt að skilja þetta öðruvísi en þetta sé algerlega króna fyrir krónu.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -40,54 +40,46 @@
 37	sömu	sami	ADJ	ADJ-A	Case=Acc|Degree=Pos	38	amod	_	_
 38	fjárhæð	fjárhæð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	33	obl	_	SpaceAfter=No
 39	.	.	PUNCT	.	_	38	punct	_	SpaceAfter=No
-40	“	“	PUNCT	"	_	7	punct	_	_
+40	“	“	PUNCT	"	_	38	punct	_	_
+41	Þetta	þessi	DET	D-N	Case=Nom	7	conj	_	OriginalHead=0
+42	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	41	cop	_	_
+43	í	í	ADP	P	_	44	case	_	_
+44	samræmi	samræmi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	41	obl	_	_
+45	við	við	ADP	P	_	46	case	_	_
+46	áform	áform	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	44	obl	_	_
+47	um	um	ADP	P	_	48	case	_	_
+48	að	að	SCONJ	C	_	46	obl	_	_
+49	háskólunum	háskóli	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	51	nsubj	_	_
+50	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	51	aux	_	_
+51	heimilað	heimila	VERB	VAN	Tense=Past|VerbForm=Part	48	ccomp	_	_
+52	að	að	PART	TO	_	53	mark	_	_
+53	hækka	hækka	VERB	VB	VerbForm=Inf	51	xcomp	_	_
+54	skrásetningargjald	skrásetningargjald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	53	obj	_	_
+55	sem	sem	SCONJ	C	_	57	mark	_	_
+56	nemendur	nemandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	57	nsubj	_	_
+57	greiða	greiða	VERB	VBPI	Mood=Ind|Tense=Pres	54	acl:relcl	_	_
+58	o.	og	CCONJ	CONJ	_	41	conj	_	SpaceAfter=No
+59	s.	svo	ADV	ADV	Degree=Pos	58	xcomp	_	SpaceAfter=No
+60	frv.	framvegis	ADV	ADV	Degree=Pos	59	advmod	_	_
+61	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	63	expl	_	_
+62	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	63	cop	_	_
+63	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	conj	_	OriginalHead=0
+64	að	að	PART	TO	_	65	mark	_	_
+65	skilja	skilja	VERB	VB	VerbForm=Inf	63	xcomp	_	_
+66	þetta	þessi	DET	D-A	Case=Acc	65	obj	_	_
+67	öðruvísi	öðruvísi	ADV	ADV	Degree=Pos	65	advmod	_	_
+68	en	en	ADP	P	_	69	case	_	_
+69	þetta	þessi	DET	D-N	Case=Nom	67	obl	_	_
+70	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	69	cop	_	_
+71	algerlega	algerlega	ADV	ADV	Degree=Pos	69	advmod	_	_
+72	króna	króna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	69	obl	_	_
+73	fyrir	fyrir	ADP	P	_	74	case	_	_
+74	krónu	króna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	72	obl	_	SpaceAfter=No
+75	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4723511,.2
-# X_ID = ID_MISSING
-# text = Þetta er í samræmi við áform um að háskólunum verði heimilað að hækka skrásetningargjald sem nemendur greiða o.s.frv.
-1	Þetta	þessi	DET	D-N	Case=Nom	0	root	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
-3	í	í	ADP	P	_	4	case	_	_
-4	samræmi	samræmi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
-5	við	við	ADP	P	_	6	case	_	_
-6	áform	áform	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
-7	um	um	ADP	P	_	8	case	_	_
-8	að	að	SCONJ	C	_	6	obl	_	_
-9	háskólunum	háskóli	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	nsubj	_	_
-10	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	11	aux	_	_
-11	heimilað	heimila	VERB	VAN	Tense=Past|VerbForm=Part	8	ccomp	_	_
-12	að	að	PART	TO	_	13	mark	_	_
-13	hækka	hækka	VERB	VB	VerbForm=Inf	11	xcomp	_	_
-14	skrásetningargjald	skrásetningargjald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
-15	sem	sem	SCONJ	C	_	17	mark	_	_
-16	nemendur	nemandi	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	nsubj	_	_
-17	greiða	greiða	VERB	VBPI	Mood=Ind|Tense=Pres	14	acl:relcl	_	_
-18	o.	og	CCONJ	CONJ	_	1	conj	_	SpaceAfter=No
-19	s.	svo	ADV	ADV	Degree=Pos	18	xcomp	_	SpaceAfter=No
-20	frv.	framvegis	ADV	ADV	Degree=Pos	19	advmod	_	_
-
-# sent_id = G-33-4723511,.3
-# X_ID = ID_MISSING
-# text = Það er erfitt að skilja þetta öðruvísi en þetta sé algerlega króna fyrir krónu .
-1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-4	að	að	PART	TO	_	5	mark	_	_
-5	skilja	skilja	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-6	þetta	þessi	DET	D-A	Case=Acc	5	obj	_	_
-7	öðruvísi	öðruvísi	ADV	ADV	Degree=Pos	5	advmod	_	_
-8	en	en	ADP	P	_	9	case	_	_
-9	þetta	þessi	DET	D-N	Case=Nom	7	obl	_	_
-10	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	9	cop	_	_
-11	algerlega	algerlega	ADV	ADV	Degree=Pos	9	advmod	_	_
-12	króna	króna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	obl	_	_
-13	fyrir	fyrir	ADP	P	_	14	case	_	_
-14	krónu	króna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4723511,.4
-# X_ID = ID_MISSING
-# text = Varðandi spurninguna um lögmæti hækkunarinnar þá er fróðleg umfjöllun um þetta í greinargerð bandormsfrumvarpsins, 3. mál .
+# sent_id = ALTHINGI_SJS_2013_G-33-4723511,.2
+# X_ID = ID_missing_4
+# text = Varðandi spurninguna um lögmæti hækkunarinnar þá er fróðleg umfjöllun um þetta í greinargerð bandormsfrumvarpsins, 3. mál.
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	13	dep	_	_
 2	spurninguna	spurning	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
 3	um	um	ADP	P	_	4	case	_	_
@@ -107,9 +99,9 @@
 17	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	dep	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = G-33-4723511,.5
-# X_ID = ID_MISSING
-# text = Þar kemur fram að samkvæmt bókhaldi Háskóla Íslands var raunkostnaður þar 69.600 kr. og í Háskólanum á Akureyri um 80 þús. kr., hvort tveggja á árinu 2012 .
+# sent_id = ALTHINGI_SJS_2013_G-33-4723511,.3
+# X_ID = ID_missing_5
+# text = Þar kemur fram að samkvæmt bókhaldi Háskóla Íslands var raunkostnaður þar 69.600 kr. og í Háskólanum á Akureyri um 80 þús. kr., hvort tveggja á árinu 2012.
 1	Þar	þar	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	fram	fram	ADP	RP	_	2	compound:prt	_	_
@@ -140,9 +132,9 @@
 28	2012	2012	NUM	NUM-D	Case=Dat	27	appos	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4723511,.6
-# X_ID = ID_MISSING
-# text = Ef meðaltalið er tekið og miðað við verðlag ársins 2013 ætti það að vera um 72.400
+# sent_id = ALTHINGI_SJS_2013_G-33-4723511,.4
+# X_IDs = ID_missing_6 ; ID_missing_7 ; ID_missing_8 ; ID_missing_9
+# text = Ef meðaltalið er tekið og miðað við verðlag ársins 2013 ætti það að vera um 72.400 en svo taka menn 4<percent/> verðhækkun á þetta umfram verðuppreikning annarra liða í fjárlagafrumvarpi og koma því þannig upp í 75 þús. kr. og telja það vera hæfilegt gjald á árinu 2014.
 1	Ef	ef	ADP	P	_	4	case	_	_
 2	meðaltalið	meðaltal	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -159,60 +151,51 @@
 14	vera	vera	AUX	BE	VerbForm=Inf	16	cop	_	_
 15	um	um	ADP	P	_	16	case	_	_
 16	72.400	72.400	NUM	NUM-A	Case=Acc	11	xcomp	_	_
+17	en	en	CCONJ	CONJ	_	19	cc	_	_
+18	svo	svo	ADV	ADV	Degree=Pos	19	advmod	_	_
+19	taka	taka	VERB	VBPI	Mood=Ind|Tense=Pres	11	conj	_	OriginalHead=0
+20	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	19	nsubj	_	_
+21	4	fjórir	NUM	NUM-A	Case=Acc	22	nummod	_	SpaceAfter=No
+22	<percent/>	prósent	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	23	obl	_	_
+23	verðhækkun	verðhækkun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
+24	á	á	ADP	P	_	25	case	_	_
+25	þetta	þessi	DET	D-A	Case=Acc	19	obl	_	_
+26	umfram	umfram	ADP	P	_	27	case	_	_
+27	verðuppreikning	verðuppreikningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	_
+28	annarra	annar	PRON	OTHER-G	Case=Gen	29	det	_	_
+29	liða	liður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	27	nmod:poss	_	_
+30	í	í	ADP	P	_	31	case	_	_
+31	fjárlagafrumvarpi	fjárlagafrumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obl	_	_
+32	og	og	CCONJ	CONJ	_	33	cc	_	_
+33	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	11	conj	_	OriginalHead=0
+34	því	það	PRON	PRO-D	Case=Dat	33	obj	_	_
+35	þannig	þannig	ADV	ADV	Degree=Pos	33	advmod	_	_
+36	upp	upp	ADP	RP	_	40	compound:prt	_	_
+37	í	í	ADP	P	_	40	case	_	_
+38	75	75	NUM	NUM-A	Case=Acc	40	nummod	_	_
+39	þús.	þúsund	NUM	NUM-A	Case=Acc	40	nummod	_	_
+40	kr.	króna	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	33	obl	_	_
+41	og	og	CCONJ	CONJ	_	42	cc	_	_
+42	telja	telja	VERB	VBPI	Mood=Ind|Tense=Pres	11	conj	_	OriginalHead=0
+43	það	það	PRON	PRO-A	Case=Acc	46	nsubj	_	_
+44	vera	vera	AUX	BE	VerbForm=Inf	46	cop	_	_
+45	hæfilegt	hæfilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	46	amod	_	_
+46	gjald	gjald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	42	xcomp	_	_
+47	á	á	ADP	P	_	48	case	_	_
+48	árinu	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	46	obl	_	_
+49	2014	2014	NUM	NUM-D	Case=Dat	48	appos	_	SpaceAfter=No
+50	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = G-33-4723511,.7
-# X_ID = ID_MISSING
-# text = en svo taka menn 4<percent/> verðhækkun á þetta umfram verðuppreikning annarra liða í fjárlagafrumvarpi
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
-3	taka	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	menn	maður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
-5	4	fjórir	NUM	NUM-A	Case=Acc	6	nummod	_	SpaceAfter=No
-6	<percent/>	prósent	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obl	_	_
-7	verðhækkun	verðhækkun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
-8	á	á	ADP	P	_	9	case	_	_
-9	þetta	þessi	DET	D-A	Case=Acc	3	obl	_	_
-10	umfram	umfram	ADP	P	_	11	case	_	_
-11	verðuppreikning	verðuppreikningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
-12	annarra	annar	PRON	OTHER-G	Case=Gen	13	det	_	_
-13	liða	liður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	nmod:poss	_	_
-14	í	í	ADP	P	_	15	case	_	_
-15	fjárlagafrumvarpi	fjárlagafrumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
-
-# sent_id = G-33-4723511,.8
-# X_ID = ID_MISSING
-# text = og koma því þannig upp í 75 þús. kr.
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	því	það	PRON	PRO-D	Case=Dat	2	obj	_	_
-4	þannig	þannig	ADV	ADV	Degree=Pos	2	advmod	_	_
-5	upp	upp	ADP	RP	_	9	compound:prt	_	_
-6	í	í	ADP	P	_	9	case	_	_
-7	75	75	NUM	NUM-A	Case=Acc	9	nummod	_	_
-8	þús.	þúsund	NUM	NUM-A	Case=Acc	9	nummod	_	_
-9	kr.	króna	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
-
-# sent_id = G-33-4723511,.9
-# X_ID = ID_MISSING
-# text = og telja það vera hæfilegt gjald á árinu 2014 .
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	telja	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	það	það	PRON	PRO-A	Case=Acc	6	nsubj	_	_
-4	vera	vera	AUX	BE	VerbForm=Inf	6	cop	_	_
-5	hæfilegt	hæfilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	amod	_	_
-6	gjald	gjald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	_
-7	á	á	ADP	P	_	8	case	_	_
-8	árinu	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
-9	2014	2014	NUM	NUM-D	Case=Dat	8	appos	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4723511,.10
-# X_ID = ID_MISSING
-# text = Forseti hringir .
+# sent_id = ALTHINGI_SJS_2013_G-33-4723511,.5
+# X_ID = ID_missing_10
+# text = Forseti hringir.
 1	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_SJS_2013_G-33-4723511,.6
+# X_ID = ID_missing_11
+# text = Ég tel að hér sé farið á ýtrasta vað gagnvart því að hækkun gjaldsins sé ólögleg því hún fari umfram það sem bókhaldsgögn opinberu háskólanna benda til að raunkostnaðurinn sé.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -242,6 +225,6 @@
 27	til	til	ADP	P	_	29	case	_	_
 28	að	að	SCONJ	C	_	29	mark	_	_
 29	raunkostnaðurinn	raunkostnaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	26	obl	_	_
-30	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	29	cop	_	_
+30	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	29	cop	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	2	punct	_	_
 

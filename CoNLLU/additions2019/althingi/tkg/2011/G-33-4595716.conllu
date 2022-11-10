@@ -1,6 +1,6 @@
-# sent_id = G-33-4595716,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Ég er fegin að heyra að fyrirvarar þingmannsins lúta að bæði framsalinu og ráðherraræðinu sem fylgir í þessu frumvarpi .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595716,.1
+# X_ID = ID_missing_1
+# text = Frú forseti. Ég er fegin að heyra að fyrirvarar þingmannsins lúta að bæði framsalinu og ráðherraræðinu sem fylgir í þessu frumvarpi.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -25,9 +25,9 @@
 22	frumvarpi	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4595716,.2
-# X_ID = ID_MISSING
-# text = Við skulum átta okkur á því að innan tíðar getur ráðherrann sjálfur verið með allt að 100 þús. ígildum í gegnum pottana sem hann getur vílað og dílað með hverju sinni .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595716,.2
+# X_ID = ID_missing_2
+# text = Við skulum átta okkur á því að innan tíðar getur ráðherrann sjálfur verið með allt að 100 þús. ígildum í gegnum pottana sem hann getur vílað og dílað með hverju sinni.
 1	Við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	skulum	skulu	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	átta	átta	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -61,9 +61,9 @@
 31	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
 32	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4595716,.3
-# X_ID = ID_MISSING
-# text = Ég tel þetta bagalegt og miklu meira en það,
+# sent_id = ALTHINGI_TKG_2011_G-33-4595716,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Ég tel þetta bagalegt og miklu meira en það, ég held að þetta sé mikil skammsýni og síst til þess fallið að stuðla að því að við fjarlægjumst hokur landbúnaðarkerfisins.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þetta	þessi	DET	D-A	Case=Acc	4	nsubj	_	_
@@ -73,37 +73,33 @@
 7	meira	mikill	DET	QR-A	Case=Acc	4	amod	_	_
 8	en	en	ADP	P	_	9	case	_	_
 9	það	það	PRON	PRO-A	Case=Acc	7	amod	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	2	punct	_	_
+10	,	,	PUNCT	,	_	7	punct	_	_
+11	ég	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+12	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+13	að	að	SCONJ	C	_	17	mark	_	_
+14	þetta	þessi	DET	D-N	Case=Nom	17	nsubj	_	_
+15	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	17	cop	_	_
+16	mikil	mikill	DET	Q-N	Case=Nom	17	amod	_	_
+17	skammsýni	skammsýni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	12	ccomp	_	_
+18	og	og	CCONJ	CONJ	_	22	cc	_	_
+19	síst	varla	ADV	ADVS	Degree=Sup	22	advmod	_	_
+20	til	til	ADP	P	_	21	case	_	_
+21	þess	það	PRON	PRO-G	Case=Gen	22	obl	_	_
+22	fallið	falla	VERB	VBN	Tense=Past|VerbForm=Part	17	conj	_	_
+23	að	að	PART	TO	_	24	mark	_	_
+24	stuðla	stuðla	VERB	VB	VerbForm=Inf	22	xcomp	_	_
+25	að	að	ADP	P	_	26	case	_	_
+26	því	það	PRON	PRO-D	Case=Dat	24	obl	_	_
+27	að	að	SCONJ	C	_	29	mark	_	_
+28	við	ég	PRON	PRO-N	Case=Nom	29	nsubj	_	_
+29	fjarlægjumst	fjarlægja	VERB	VBPI	Mood=Ind|Tense=Pres	26	ccomp	_	_
+30	hokur	hokur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	29	obj	_	_
+31	landbúnaðarkerfisins	landbúnaðarkerfi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	30	nmod:poss	_	SpaceAfter=No
+32	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4595716,.4
-# X_ID = ID_MISSING
-# text = ég held að þetta sé mikil skammsýni og síst til þess fallið að stuðla að því að við fjarlægjumst hokur landbúnaðarkerfisins .
-1	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	að	að	SCONJ	C	_	7	mark	_	_
-4	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
-5	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	7	cop	_	_
-6	mikil	mikill	DET	Q-N	Case=Nom	7	amod	_	_
-7	skammsýni	skammsýni	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	_
-8	og	og	CCONJ	CONJ	_	12	cc	_	_
-9	síst	varla	ADV	ADVS	Degree=Sup	12	advmod	_	_
-10	til	til	ADP	P	_	11	case	_	_
-11	þess	það	PRON	PRO-G	Case=Gen	12	obl	_	_
-12	fallið	falla	VERB	VBN	Tense=Past|VerbForm=Part	7	conj	_	_
-13	að	að	PART	TO	_	14	mark	_	_
-14	stuðla	stuðla	VERB	VB	VerbForm=Inf	12	xcomp	_	_
-15	að	að	ADP	P	_	16	case	_	_
-16	því	það	PRON	PRO-D	Case=Dat	14	obl	_	_
-17	að	að	SCONJ	C	_	19	mark	_	_
-18	við	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-19	fjarlægjumst	fjarlægja	VERB	VBPI	Mood=Ind|Tense=Pres	16	ccomp	_	_
-20	hokur	hokur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
-21	landbúnaðarkerfisins	landbúnaðarkerfi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	20	nmod:poss	_	SpaceAfter=No
-22	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4595716,.5
-# X_ID = ID_MISSING
-# text = Þetta stuðlar miklu frekar að því að allt verði eins og landbúnaðarkerfið er, þunglamalegt og svifaseint, í stað þess að vera núna með ákveðna reglufestu og markaðsdrifið eins og sjávarútvegurinn er rekinn í dag .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595716,.4
+# X_ID = ID_missing_5
+# text = Þetta stuðlar miklu frekar að því að allt verði eins og landbúnaðarkerfið er, þunglamalegt og svifaseint, í stað þess að vera núna með ákveðna reglufestu og markaðsdrifið eins og sjávarútvegurinn er rekinn í dag.
 1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	stuðlar	stuðla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	4	obl	_	_
@@ -142,9 +138,9 @@
 36	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
 37	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4595716,.6
-# X_ID = ID_MISSING
-# text = Það er ekki af sjálfu sér sem íslenski sjávarútvegurinn er eini sjávarútvegurinn sem er rekinn með jafnmikilli arðbærni og raun ber vitni, og eini sjávarútvegurinn í dag sem ekki er ríkisstyrktur .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595716,.5
+# X_ID = ID_missing_6
+# text = Það er ekki af sjálfu sér sem íslenski sjávarútvegurinn er eini sjávarútvegurinn sem er rekinn með jafnmikilli arðbærni og raun ber vitni, og eini sjávarútvegurinn í dag sem ekki er ríkisstyrktur.
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
@@ -179,9 +175,9 @@
 32	ríkisstyrktur	ríkisstyrktur	ADJ	ADJ-N	Case=Nom|Degree=Pos	26	acl:relcl	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4595716,.7
-# X_ID = ID_MISSING
-# text = Ég held að það sé til mikils að vinna að við reynum að forða ríkinu frá rekstrinum í sjávarútvegi til þess að nota meðal annars í góða þjónustu sem við erum sammála um að eigi að vera góð eins og á sviði velferðarmála .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595716,.6
+# X_ID = ID_missing_7
+# text = Ég held að það sé til mikils að vinna að við reynum að forða ríkinu frá rekstrinum í sjávarútvegi til þess að nota meðal annars í góða þjónustu sem við erum sammála um að eigi að vera góð eins og á sviði velferðarmála.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	7	mark	_	_
@@ -227,9 +223,9 @@
 43	velferðarmála	velferðarmál	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	42	nmod:poss	_	SpaceAfter=No
 44	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4595716,.8
-# X_ID = ID_MISSING
-# text = Þar þurfum við á fjármagni að halda en ekki að dæla því inn í sjávarútveginn .
+# sent_id = ALTHINGI_TKG_2011_G-33-4595716,.7
+# X_ID = ID_missing_8
+# text = Þar þurfum við á fjármagni að halda en ekki að dæla því inn í sjávarútveginn.
 1	Þar	þar	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -247,6 +243,9 @@
 15	sjávarútveginn	sjávarútvegur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_TKG_2011_G-33-4595716,.8
+# X_ID = ID_missing_9
+# text = Við erum að fara þá leið með þessu frumvarpi Forseti hringir. og líka hinu sem vonandi kemur aldrei til umræðu í þinginu.
 1	Við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -257,7 +256,7 @@
 8	þessu	þessi	DET	D-D	Case=Dat	9	det	_	_
 9	frumvarpi	frumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
 10	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
-11	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	9	dep	_	_
+11	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	9	dep	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	11	punct	_	_
 13	og	og	CCONJ	CONJ	_	14	cc	_	_
 14	líka	líka	ADV	ALSO	_	9	conj	_	_
@@ -269,6 +268,6 @@
 20	til	til	ADP	P	_	21	case	_	_
 21	umræðu	umræða	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	obl	_	_
 22	í	í	ADP	P	_	23	case	_	_
-23	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	_
+23	þinginu	þing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	4	punct	_	_
 

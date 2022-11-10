@@ -1,6 +1,6 @@
-# sent_id = G-33-4695027,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Ég hygg að þetta sé rétt .
+# sent_id = ALTHINGI_SJS_2013_G-33-4695027,.1
+# X_ID = ID_missing_1
+# text = Frú forseti. Ég hygg að þetta sé rétt.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -12,9 +12,9 @@
 9	rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	ccomp	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4695027,.2
-# X_ID = ID_MISSING
-# text = Í samræmi við minni mitt var ráðist í þessar aðgerðir í samstarfi við aðila vinnumarkaðarins
+# sent_id = ALTHINGI_SJS_2013_G-33-4695027,.2
+# X_IDs = ID_missing_2 ; ID_missing_3
+# text = Í samræmi við minni mitt var ráðist í þessar aðgerðir í samstarfi við aðila vinnumarkaðarins og þær voru að uppistöðu til kostaðar af fjármunum sem voru færðir úr Atvinnuleysistryggingasjóði eða fjármagnaðir með tryggingagjaldi.
 1	Í	í	ADP	P	_	2	case	_	_
 2	samræmi	samræmi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
 3	við	við	ADP	P	_	4	case	_	_
@@ -30,33 +30,29 @@
 13	við	við	ADP	P	_	14	case	_	_
 14	aðila	aðili	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
 15	vinnumarkaðarins	vinnumarkaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	nmod:poss	_	_
+16	og	og	CCONJ	CONJ	_	22	cc	_	_
+17	þær	hún	PRON	PRO-N	Case=Nom	22	nsubj	_	_
+18	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	22	cop	_	_
+19	að	að	ADP	P	_	20	case	_	_
+20	uppistöðu	uppistaða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
+21	til	til	ADP	RP	_	20	compound:prt	_	_
+22	kostaðar	kosta	VERB	VAN	Tense=Past|VerbForm=Part	7	conj	_	OriginalHead=0
+23	af	af	ADP	P	_	24	case	_	_
+24	fjármunum	fjármunir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	22	obl	_	_
+25	sem	sem	SCONJ	C	_	27	mark	_	_
+26	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	27	cop	_	_
+27	færðir	færa	VERB	VAN	Tense=Past|VerbForm=Part	24	acl:relcl	_	_
+28	úr	úr	ADP	P	_	29	case	_	_
+29	Atvinnuleysistryggingasjóði	atvinnuleysistryggingasjóður	PROPN	NPR-D	_	27	obl	_	_
+30	eða	eða	CCONJ	CONJ	_	31	cc	_	_
+31	fjármagnaðir	fjármagna	VERB	VAN	Tense=Past|VerbForm=Part	27	conj	_	_
+32	með	með	ADP	P	_	33	case	_	_
+33	tryggingagjaldi	tryggingagjald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4695027,.3
-# X_ID = ID_MISSING
-# text = og þær voru að uppistöðu til kostaðar af fjármunum sem voru færðir úr Atvinnuleysistryggingasjóði eða fjármagnaðir með tryggingagjaldi .
-1	og	og	CCONJ	CONJ	_	7	cc	_	_
-2	þær	hún	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-3	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
-4	að	að	ADP	P	_	5	case	_	_
-5	uppistöðu	uppistaða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-6	til	til	ADP	RP	_	5	compound:prt	_	_
-7	kostaðar	kosta	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
-8	af	af	ADP	P	_	9	case	_	_
-9	fjármunum	fjármunir	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obl	_	_
-10	sem	sem	SCONJ	C	_	12	mark	_	_
-11	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	12	cop	_	_
-12	færðir	færa	VERB	VAN	Tense=Past|VerbForm=Part	9	acl:relcl	_	_
-13	úr	úr	ADP	P	_	14	case	_	_
-14	Atvinnuleysistryggingasjóði	atvinnuleysistryggingasjóður	PROPN	NPR-D	_	12	obl	_	_
-15	eða	eða	CCONJ	CONJ	_	16	cc	_	_
-16	fjármagnaðir	fjármagna	VERB	VAN	Tense=Past|VerbForm=Part	12	conj	_	_
-17	með	með	ADP	P	_	18	case	_	_
-18	tryggingagjaldi	tryggingagjald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
-19	.	.	PUNCT	.	_	7	punct	_	_
-
-# sent_id = G-33-4695027,.4
-# X_ID = ID_MISSING
-# text = Ríkið lagði vissulega talsvert fé á móti í ýmsar þessar aðgerðir og þá beint til skólanna o.s.frv.,
+# sent_id = ALTHINGI_SJS_2013_G-33-4695027,.3
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Ríkið lagði vissulega talsvert fé á móti í ýmsar þessar aðgerðir og þá beint til skólanna o.s.frv., en að stærstum hluta var þetta fjármagnað með tryggingagjaldi og í samstarfi við aðila vinnumarkaðarins.
 1	Ríkið	ríki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	lagði	leggja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	vissulega	vissulega	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -76,31 +72,27 @@
 17	o.	og	CCONJ	CONJ	_	16	conj	_	SpaceAfter=No
 18	s.	svo	ADV	ADV	Degree=Pos	17	xcomp	_	SpaceAfter=No
 19	frv.	framvegis	ADV	ADV	Degree=Pos	18	advmod	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	2	punct	_	_
+20	,	,	PUNCT	,	_	18	punct	_	_
+21	en	en	CCONJ	CONJ	_	27	cc	_	_
+22	að	að	ADP	P	_	24	case	_	_
+23	stærstum	stór	ADJ	ADJS-D	Case=Dat|Degree=Sup	24	amod	_	_
+24	hluta	hluti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	27	obl	_	_
+25	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	27	cop	_	_
+26	þetta	þessi	DET	D-N	Case=Nom	27	nsubj	_	_
+27	fjármagnað	fjármagna	VERB	VAN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
+28	með	með	ADP	P	_	29	case	_	_
+29	tryggingagjaldi	tryggingagjald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	27	obl	_	_
+30	og	og	CCONJ	CONJ	_	32	cc	_	_
+31	í	í	ADP	P	_	32	case	_	_
+32	samstarfi	samstarf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	conj	_	_
+33	við	við	ADP	P	_	34	case	_	_
+34	aðila	aðili	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	32	obl	_	_
+35	vinnumarkaðarins	vinnumarkaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	34	nmod:poss	_	SpaceAfter=No
+36	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4695027,.5
-# X_ID = ID_MISSING
-# text = en að stærstum hluta var þetta fjármagnað með tryggingagjaldi og í samstarfi við aðila vinnumarkaðarins .
-1	en	en	CCONJ	CONJ	_	7	cc	_	_
-2	að	að	ADP	P	_	4	case	_	_
-3	stærstum	stór	ADJ	ADJS-D	Case=Dat|Degree=Sup	4	amod	_	_
-4	hluta	hluti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-5	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
-6	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
-7	fjármagnað	fjármagna	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
-8	með	með	ADP	P	_	9	case	_	_
-9	tryggingagjaldi	tryggingagjald	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-10	og	og	CCONJ	CONJ	_	12	cc	_	_
-11	í	í	ADP	P	_	12	case	_	_
-12	samstarfi	samstarf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	conj	_	_
-13	við	við	ADP	P	_	14	case	_	_
-14	aðila	aðili	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
-15	vinnumarkaðarins	vinnumarkaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	nmod:poss	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	7	punct	_	_
-
-# sent_id = G-33-4695027,.6
-# X_ID = ID_MISSING
-# text = Auðvitað væri ekki skrýtið þótt þeir væru svolítið súrir yfir að sjá svo allt í einu þær æfingar sem þarna eru greinilega í gangi að taka þessar fjárveitingar úr þeim farvegi og búa þær í hendur menntamálaráðherra á næsta ári sem einhvern framtíðarsjóð fyrir hugðarefni hans um að stytta nám til stúdentsprófs eða hvað það nú er .
+# sent_id = ALTHINGI_SJS_2013_G-33-4695027,.4
+# X_ID = ID_missing_6
+# text = Auðvitað væri ekki skrýtið þótt þeir væru svolítið súrir yfir að sjá svo allt í einu þær æfingar sem þarna eru greinilega í gangi að taka þessar fjárveitingar úr þeim farvegi og búa þær í hendur menntamálaráðherra á næsta ári sem einhvern framtíðarsjóð fyrir hugðarefni hans um að stytta nám til stúdentsprófs eða hvað það nú er.
 1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	4	cop	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -160,9 +152,9 @@
 57	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	55	cop	_	SpaceAfter=No
 58	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4695027,.7
-# X_ID = ID_MISSING
-# text = Ég tel þetta líka skrýtinn frágang í skilningi fjárreiðulaga o.fl.
+# sent_id = ALTHINGI_SJS_2013_G-33-4695027,.5
+# X_IDs = ID_missing_7 ; ID_missing_8 ; ID_missing_9
+# text = Ég tel þetta líka skrýtinn frágang í skilningi fjárreiðulaga o.fl. Auðvitað hefði verið eðlilegast að þessi fjárveiting félli niður ef hún væri ekki nýtt í því skyni sem hún var mörkuð til, útgjöldin hefðu þá ekki orðið frá sjóðnum.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þetta	þessi	DET	D-A	Case=Acc	6	nsubj	_	_
@@ -174,49 +166,41 @@
 9	fjárreiðulaga	fjárreiðulög	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	_
 10	o.	og	CCONJ	CONJ	_	11	cc	_	SpaceAfter=No
 11	fl.	margur	DET	QR-G	Case=Gen	9	conj	_	_
+12	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	15	advmod	_	_
+13	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	15	aux	_	_
+14	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	15	cop	_	_
+15	eðlilegast	eðlilegur	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	conj	_	OriginalHead=0
+16	að	að	SCONJ	C	_	19	mark	_	_
+17	þessi	þessi	DET	D-N	Case=Nom	18	det	_	_
+18	fjárveiting	fjárveiting	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
+19	félli	falla	VERB	VBDS	Mood=Sub|Tense=Past	15	ccomp	_	_
+20	niður	niður	ADP	RP	_	19	compound:prt	_	_
+21	ef	ef	ADP	P	_	25	case	_	_
+22	hún	hún	PRON	PRO-N	Case=Nom	25	nsubj	_	_
+23	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	25	cop	_	_
+24	ekki	ekki	ADV	NEG	_	25	advmod	_	_
+25	nýtt	nýta	VERB	VAN	Tense=Past|VerbForm=Part	19	obl	_	_
+26	í	í	ADP	P	_	28	case	_	_
+27	því	sá	DET	D-D	Case=Dat	28	det	_	_
+28	skyni	skyn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
+29	sem	sem	SCONJ	C	_	32	mark	_	_
+30	hún	hún	PRON	PRO-N	Case=Nom	32	nsubj	_	_
+31	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	32	cop	_	_
+32	mörkuð	marka	VERB	VAN	Tense=Past|VerbForm=Part	28	acl:relcl	_	_
+33	til	til	ADP	P	_	32	obl	_	SpaceAfter=No
+34	,	,	PUNCT	,	_	32	punct	_	_
+35	útgjöldin	útgjöld	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	39	nsubj	_	_
+36	hefðu	hafa	AUX	HVDS	Mood=Sub|Tense=Past	39	aux	_	_
+37	þá	þá	ADV	ADV	Degree=Pos	39	advmod	_	_
+38	ekki	ekki	ADV	NEG	_	39	advmod	_	_
+39	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
+40	frá	frá	ADP	P	_	41	case	_	_
+41	sjóðnum	sjóður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	39	obl	_	SpaceAfter=No
+42	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4695027,.8
-# X_ID = ID_MISSING
-# text = Auðvitað hefði verið eðlilegast að þessi fjárveiting félli niður ef hún væri ekki nýtt í því skyni sem hún var mörkuð til,
-1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	4	advmod	_	_
-2	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	4	aux	_	_
-3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	4	cop	_	_
-4	eðlilegast	eðlilegur	ADJ	ADJS-N	Case=Nom|Degree=Sup	0	root	_	_
-5	að	að	SCONJ	C	_	8	mark	_	_
-6	þessi	þessi	DET	D-N	Case=Nom	7	det	_	_
-7	fjárveiting	fjárveiting	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
-8	félli	falla	VERB	VBDS	Mood=Sub|Tense=Past	4	ccomp	_	_
-9	niður	niður	ADP	RP	_	8	compound:prt	_	_
-10	ef	ef	ADP	P	_	14	case	_	_
-11	hún	hún	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-12	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	14	cop	_	_
-13	ekki	ekki	ADV	NEG	_	14	advmod	_	_
-14	nýtt	nýta	VERB	VAN	Tense=Past|VerbForm=Part	8	obl	_	_
-15	í	í	ADP	P	_	17	case	_	_
-16	því	sá	DET	D-D	Case=Dat	17	det	_	_
-17	skyni	skyn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
-18	sem	sem	SCONJ	C	_	21	mark	_	_
-19	hún	hún	PRON	PRO-N	Case=Nom	21	nsubj	_	_
-20	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	21	cop	_	_
-21	mörkuð	marka	VERB	VAN	Tense=Past|VerbForm=Part	17	acl:relcl	_	_
-22	til	til	ADP	P	_	21	obl	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	4	punct	_	_
-
-# sent_id = G-33-4695027,.9
-# X_ID = ID_MISSING
-# text = útgjöldin hefðu þá ekki orðið frá sjóðnum .
-1	útgjöldin	útgjöld	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
-2	hefðu	hafa	AUX	HVDS	Mood=Sub|Tense=Past	5	aux	_	_
-3	þá	þá	ADV	ADV	Degree=Pos	5	advmod	_	_
-4	ekki	ekki	ADV	NEG	_	5	advmod	_	_
-5	orðið	verða	VERB	RDN	Tense=Past|VerbForm=Part	0	root	_	_
-6	frá	frá	ADP	P	_	7	case	_	_
-7	sjóðnum	sjóður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	5	punct	_	_
-
-# sent_id = G-33-4695027,.10
-# X_ID = ID_MISSING
-# text = En til þess að peningarnir verði í sjóði hæstv. ráðherra á næsta ári verður greiðslan að fara úr Atvinnuleysistryggingasjóði og inn í þennan nýja pott .
+# sent_id = ALTHINGI_SJS_2013_G-33-4695027,.6
+# X_ID = ID_missing_10
+# text = En til þess að peningarnir verði í sjóði hæstv. ráðherra á næsta ári verður greiðslan að fara úr Atvinnuleysistryggingasjóði og inn í þennan nýja pott.
 1	En	en	CCONJ	CONJ	_	14	cc	_	_
 2	til	til	ADP	P	_	3	case	_	_
 3	þess	það	PRON	PRO-G	Case=Gen	14	obl	_	_
@@ -244,9 +228,9 @@
 25	pott	pottur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	conj	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	14	punct	_	_
 
-# sent_id = G-33-4695027,.11
-# X_ID = ID_MISSING
-# text = Varðandi framkvæmdirnar í ár þá er mjög dapurlegt að sjá ýmsar góðar framkvæmdir sem var verið að koma á og eru með fjárveitingar á þessu ári höggnar þarna niður, heilbrigðisstofnunina í Stykkishólmi, byggingu við heilbrigðisstofnunina á Selfossi, löngu tímabærar endurbætur, og nýja verknámshúsið við Fjölbrautaskóla Suðurlands .
+# sent_id = ALTHINGI_SJS_2013_G-33-4695027,.7
+# X_ID = ID_missing_11
+# text = Varðandi framkvæmdirnar í ár þá er mjög dapurlegt að sjá ýmsar góðar framkvæmdir sem var verið að koma á og eru með fjárveitingar á þessu ári höggnar þarna niður, heilbrigðisstofnunina í Stykkishólmi, byggingu við heilbrigðisstofnunina á Selfossi, löngu tímabærar endurbætur, og nýja verknámshúsið við Fjölbrautaskóla Suðurlands.
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	8	dep	_	_
 2	framkvæmdirnar	framkvæmd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obj	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -299,52 +283,51 @@
 50	Suðurlands	suðurland	PROPN	NPR-G	_	49	flat:name	_	SpaceAfter=No
 51	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-33-4695027,.12
-# X_ID = ID_MISSING
-# text = Það er afar dapurlegt
+# sent_id = ALTHINGI_SJS_2013_G-33-4695027,.8
+# X_IDs = ID_missing_12 ; ID_missing_13
+# text = Það er afar dapurlegt enda þegar maður greinir þetta núna mun opinber fjárfesting minnka umtalsvert milli ára og framlag samneyslunnar til hagvaxtar á næsta ári verða neikvætt vegna þess að við erum að fara aftur á bak í þessum efnum frá yfirstandandi ári.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	afar	afar	ADV	ADV	Degree=Pos	4	amod	_	_
 4	dapurlegt	dapurlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-
-1	enda	enda	ADV	ADV	Degree=Pos	10	advmod	_	_
-2	þegar	þegar	ADP	P	_	4	case	_	_
-3	maður	maður	PRON	MAN-N	_	4	nsubj	_	_
-4	greinir	greina	VERB	VBPI	Mood=Ind|Tense=Pres	10	obl	_	_
-5	þetta	þessi	DET	D-A	Case=Acc	4	obj	_	_
-6	núna	núna	ADV	ADV	Degree=Pos	4	advmod	_	_
-7	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	10	aux	_	_
-8	opinber	opinber	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
-9	fjárfesting	fjárfesting	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
-10	minnka	minnka	VERB	VB	VerbForm=Inf	0	root	_	_
-11	umtalsvert	umtalsvert	ADV	ADV	Degree=Pos	10	advmod	_	_
-12	milli	milli	ADP	P	_	13	case	_	_
-13	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	10	obl	_	_
-14	og	og	CCONJ	CONJ	_	22	cc	_	_
-15	framlag	framlag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	nsubj	_	_
-16	samneyslunnar	samneysla	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	15	nmod:poss	_	_
-17	til	til	ADP	P	_	18	case	_	_
-18	hagvaxtar	hagvöxtur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	22	obl	_	_
-19	á	á	ADP	P	_	21	case	_	_
-20	næsta	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	21	amod	_	_
-21	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	22	obl	_	_
-22	verða	verða	VERB	RD	VerbForm=Inf	10	conj	_	_
-23	neikvætt	neikvæður	ADV	ADJ-N	Case=Nom|Degree=Pos	22	advmod	_	_
-24	vegna	vegna	ADP	P	_	25	case	_	_
-25	þess	það	PRON	PRO-G	Case=Gen	22	obl	_	_
-26	að	að	SCONJ	C	_	30	mark	_	_
-27	við	ég	PRON	PRO-N	Case=Nom	30	nsubj	_	_
-28	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	30	cop	_	_
-29	að	að	PART	TO	_	30	mark	_	_
-30	fara	fara	VERB	VB	VerbForm=Inf	25	ccomp	_	_
-31	aftur	aftur	ADV	ADV	Degree=Pos	33	advmod	_	_
-32	á	á	ADP	P	_	33	case	_	_
-33	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	obl	_	_
-34	í	í	ADP	P	_	36	case	_	_
-35	þessum	þessi	DET	D-D	Case=Dat	36	det	_	_
-36	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	30	obl	_	_
-37	frá	frá	ADP	P	_	39	case	_	_
-38	yfirstandandi	yfirstandandi	ADJ	ADJ-D	Case=Dat|Degree=Pos	39	amod	_	_
-39	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	30	obl	_	_
-40	.	.	PUNCT	.	_	10	punct	_	_
+5	enda	enda	ADV	ADV	Degree=Pos	14	advmod	_	_
+6	þegar	þegar	ADP	P	_	8	case	_	_
+7	maður	maður	PRON	MAN-N	_	8	nsubj	_	_
+8	greinir	greina	VERB	VBPI	Mood=Ind|Tense=Pres	14	obl	_	_
+9	þetta	þessi	DET	D-A	Case=Acc	8	obj	_	_
+10	núna	núna	ADV	ADV	Degree=Pos	8	advmod	_	_
+11	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	14	aux	_	_
+12	opinber	opinber	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
+13	fjárfesting	fjárfesting	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
+14	minnka	minnka	VERB	VB	VerbForm=Inf	4	conj	_	OriginalHead=0
+15	umtalsvert	umtalsvert	ADV	ADV	Degree=Pos	14	advmod	_	_
+16	milli	milli	ADP	P	_	17	case	_	_
+17	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	14	obl	_	_
+18	og	og	CCONJ	CONJ	_	26	cc	_	_
+19	framlag	framlag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	nsubj	_	_
+20	samneyslunnar	samneysla	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	nmod:poss	_	_
+21	til	til	ADP	P	_	22	case	_	_
+22	hagvaxtar	hagvöxtur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	26	obl	_	_
+23	á	á	ADP	P	_	25	case	_	_
+24	næsta	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	25	amod	_	_
+25	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	26	obl	_	_
+26	verða	verða	VERB	RD	VerbForm=Inf	14	conj	_	_
+27	neikvætt	neikvæður	ADV	ADJ-N	Case=Nom|Degree=Pos	26	advmod	_	_
+28	vegna	vegna	ADP	P	_	29	case	_	_
+29	þess	það	PRON	PRO-G	Case=Gen	26	obl	_	_
+30	að	að	SCONJ	C	_	34	mark	_	_
+31	við	ég	PRON	PRO-N	Case=Nom	34	nsubj	_	_
+32	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	34	cop	_	_
+33	að	að	PART	TO	_	34	mark	_	_
+34	fara	fara	VERB	VB	VerbForm=Inf	29	ccomp	_	_
+35	aftur	aftur	ADV	ADV	Degree=Pos	37	advmod	_	_
+36	á	á	ADP	P	_	37	case	_	_
+37	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	obl	_	_
+38	í	í	ADP	P	_	40	case	_	_
+39	þessum	þessi	DET	D-D	Case=Dat	40	det	_	_
+40	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	34	obl	_	_
+41	frá	frá	ADP	P	_	43	case	_	_
+42	yfirstandandi	yfirstandandi	ADJ	ADJ-D	Case=Dat|Degree=Pos	43	amod	_	_
+43	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
+44	.	.	PUNCT	.	_	4	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = G-33-4583228,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Það sem ég vil er að við förum yfir málin .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.1
+# X_ID = ID_missing_1
+# text = Frú forseti. Það sem ég vil er að við förum yfir málin.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -16,9 +16,9 @@
 13	málin	mál	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4583228,.2
-# X_ID = ID_MISSING
-# text = Ef það leiðir til þess að helstu sérfræðingar í áfengismálum og allir flokkar komast að þeirri niðurstöðu að það sé betra að leyfa áfengisauglýsingar með ákveðnum römmum mun ég fara yfir það .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.2
+# X_ID = ID_missing_2
+# text = Ef það leiðir til þess að helstu sérfræðingar í áfengismálum og allir flokkar komast að þeirri niðurstöðu að það sé betra að leyfa áfengisauglýsingar með ákveðnum römmum mun ég fara yfir það.
 1	Ef	ef	ADP	P	_	3	case	_	_
 2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	leiðir	leiða	VERB	VBPI	Mood=Ind|Tense=Pres	30	obl	_	_
@@ -53,9 +53,9 @@
 32	það	það	PRON	PRO-A	Case=Acc	30	obl	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	30	punct	_	_
 
-# sent_id = G-33-4583228,.3
-# X_ID = ID_MISSING
-# text = Ég ætla ekki að standa hér í þessum þingsal og segja já eða nei .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.3
+# X_ID = ID_missing_3
+# text = Ég ætla ekki að standa hér í þessum þingsal og segja já eða nei.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	ætla	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -72,37 +72,33 @@
 14	nei	nei	INTJ	INTJ	_	12	conj	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4583228,.4
-# X_ID = ID_MISSING
-# text = Við erum ekki í þannig pólitík
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Við erum ekki í þannig pólitík og við eigum ekki að vera í þannig pólitík núna í svona málum.
 1	Við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
 2	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	ekki	ekki	ADV	NEG	_	6	advmod	_	_
 4	í	í	ADP	P	_	6	case	_	_
 5	þannig	þannig	ADV	ADV	Degree=Pos	6	advmod	_	_
 6	pólitík	pólitík	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
+7	og	og	CCONJ	CONJ	_	9	cc	_	_
+8	við	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+9	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
+10	ekki	ekki	ADV	NEG	_	9	advmod	_	_
+11	að	að	PART	TO	_	15	mark	_	_
+12	vera	vera	AUX	BE	VerbForm=Inf	15	cop	_	_
+13	í	í	ADP	P	_	15	case	_	_
+14	þannig	þannig	ADV	ADV	Degree=Pos	15	advmod	_	_
+15	pólitík	pólitík	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	xcomp	_	_
+16	núna	núna	ADV	ADV	Degree=Pos	15	advmod	_	_
+17	í	í	ADP	P	_	19	case	_	_
+18	svona	svona	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
+19	málum	mála	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4583228,.5
-# X_ID = ID_MISSING
-# text = og við eigum ekki að vera í þannig pólitík núna í svona málum .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	ekki	ekki	ADV	NEG	_	3	advmod	_	_
-5	að	að	PART	TO	_	9	mark	_	_
-6	vera	vera	AUX	BE	VerbForm=Inf	9	cop	_	_
-7	í	í	ADP	P	_	9	case	_	_
-8	þannig	þannig	ADV	ADV	Degree=Pos	9	advmod	_	_
-9	pólitík	pólitík	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	xcomp	_	_
-10	núna	núna	ADV	ADV	Degree=Pos	9	advmod	_	_
-11	í	í	ADP	P	_	13	case	_	_
-12	svona	svona	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	amod	_	_
-13	málum	mála	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4583228,.6
-# X_ID = ID_MISSING
-# text = Við eigum að fara vel yfir þau .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.5
+# X_ID = ID_missing_6
+# text = Við eigum að fara vel yfir þau.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -112,9 +108,9 @@
 7	þau	það	PRON	PRO-A	Case=Acc	4	obl	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4583228,.7
-# X_ID = ID_MISSING
-# text = Að hæstv. ráðherra skuli leyfa sér að koma hingað upp og fara eins og köttur í kringum heitan graut í þessu máli þýðir einfaldlega að hann veit upp á sig skömmina, hann er ekki búinn að vinna grunnvinnuna .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.6
+# X_ID = ID_missing_7
+# text = Að hæstv. ráðherra skuli leyfa sér að koma hingað upp og fara eins og köttur í kringum heitan graut í þessu máli þýðir einfaldlega að hann veit upp á sig skömmina, hann er ekki búinn að vinna grunnvinnuna.
 1	Að	að	SCONJ	C	_	5	mark	_	_
 2	hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
 3	ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
@@ -156,9 +152,9 @@
 39	grunnvinnuna	grunnvinna	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	38	obj	_	SpaceAfter=No
 40	.	.	PUNCT	.	_	23	punct	_	_
 
-# sent_id = G-33-4583228,.8
-# X_ID = ID_MISSING
-# text = Ég tek undir með hæstv. ráðherra að mér finnst miður ef ekki hefur verið hlustað á hv. þingmenn í gegnum tíðina, væntanlega þegar þeir voru í stjórnarandstöðu .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.7
+# X_ID = ID_missing_8
+# text = Ég tek undir með hæstv. ráðherra að mér finnst miður ef ekki hefur verið hlustað á hv. þingmenn í gegnum tíðina, væntanlega þegar þeir voru í stjórnarandstöðu.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tek	taka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	undir	undir	ADP	P	_	2	obl	_	_
@@ -189,9 +185,9 @@
 28	stjórnarandstöðu	stjórnarandstaða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
 29	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4583228,.9
-# X_ID = ID_MISSING
-# text = En er þá ekki ráðherra í lófa lagið núna þegar hann er kominn í stjórnarmeirihluta að breyta þeim vinnubrögðum ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.8
+# X_ID = ID_missing_9
+# text = En er þá ekki ráðherra í lófa lagið núna þegar hann er kominn í stjórnarmeirihluta að breyta þeim vinnubrögðum?
 1	En	en	CCONJ	CONJ	_	5	cc	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	þá	þá	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -213,9 +209,9 @@
 19	vinnubrögðum	vinnubrögð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	17	obj	_	SpaceAfter=No
 20	?	?	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4583228,.10
-# X_ID = ID_MISSING
-# text = Nei, hann ætlar að viðhalda þeim vinnubrögðum .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.9
+# X_ID = ID_missing_10
+# text = Nei, hann ætlar að viðhalda þeim vinnubrögðum.
 1	Nei	nei	INTJ	INTJ	_	4	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	hann	hann	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -226,9 +222,9 @@
 8	vinnubrögðum	vinnubrögð	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	6	obj	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4583228,.11
-# X_ID = ID_MISSING
-# text = Það á ekki að tala við stjórnarandstöðuna núna, ekki frekar en fyrri daginn .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.10
+# X_ID = ID_missing_11
+# text = Það á ekki að tala við stjórnarandstöðuna núna, ekki frekar en fyrri daginn.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -245,9 +241,9 @@
 14	daginn	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4583228,.12
-# X_ID = ID_MISSING
-# text = Af hverju eigum við ekki að læra af fortíðinni ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.11
+# X_ID = ID_missing_12
+# text = Af hverju eigum við ekki að læra af fortíðinni?
 1	Af	af	ADP	P	_	2	case	_	_
 2	hverju	hver	PRON	WPRO-D	Case=Dat	3	obl	_	_
 3	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -259,9 +255,9 @@
 9	fortíðinni	fortíð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	SpaceAfter=No
 10	?	?	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4583228,.13
-# X_ID = ID_MISSING
-# text = Á ég að gera hlé á máli mínu meðan aðstoðarmaður ráðherra gefur honum ráð ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.12
+# X_ID = ID_missing_13
+# text = Á ég að gera hlé á máli mínu meðan aðstoðarmaður ráðherra gefur honum ráð?
 1	Á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	1	nsubj	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -278,9 +274,9 @@
 14	ráð	ráð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obj	_	SpaceAfter=No
 15	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4583228,.14
-# X_ID = ID_MISSING
-# text = Eigum við þá ekki að reyna að vinna fordómalaust saman að þessu máli ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.13
+# X_ID = ID_missing_14
+# text = Eigum við þá ekki að reyna að vinna fordómalaust saman að þessu máli?
 1	Eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	við	ég	PRON	PRO-N	Case=Nom	1	nsubj	_	_
 3	þá	þá	ADV	ADV	Degree=Pos	1	advmod	_	_
@@ -296,9 +292,9 @@
 13	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 14	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4583228,.15
-# X_ID = ID_MISSING
-# text = Það getur vel verið að við nánari athugun komi í ljós að það sé betra að fara einhverjar svipaðar leiðir og ráðherra leggur til .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.14
+# X_ID = ID_missing_15
+# text = Það getur vel verið að við nánari athugun komi í ljós að það sé betra að fara einhverjar svipaðar leiðir og ráðherra leggur til.
 1	Það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	getur	geta	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vel	vel	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -325,9 +321,9 @@
 24	til	til	ADP	RP	_	23	compound:prt	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4583228,.16
-# X_ID = ID_MISSING
-# text = Ég hef bara ekki komið auga á þær enn þá .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.15
+# X_ID = ID_missing_16
+# text = Ég hef bara ekki komið auga á þær enn þá.
 1	Ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	hef	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
 3	bara	bara	ADV	FP	Degree=Pos	5	advmod	_	_
@@ -340,9 +336,9 @@
 10	þá	þá	ADV	ADV	Degree=Pos	9	advmod	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4583228,.17
-# X_ID = ID_MISSING
-# text = Mér finnst það fullgild rök sem hafa verið sett fram, meira annars af umsagnaraðilum sem sendu umsagnir sínar til nefndarinnar á síðasta ári,
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.16
+# X_IDs = ID_missing_17 ; ID_missing_18
+# text = Mér finnst það fullgild rök sem hafa verið sett fram, meira annars af umsagnaraðilum sem sendu umsagnir sínar til nefndarinnar á síðasta ári, en á þetta hefur ekki reynt.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -367,22 +363,18 @@
 22	á	á	ADP	P	_	24	case	_	_
 23	síðasta	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	24	amod	_	_
 24	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
-25	,	,	PUNCT	,	_	2	punct	_	_
+25	,	,	PUNCT	,	_	17	punct	_	_
+26	en	en	CCONJ	CONJ	_	31	cc	_	_
+27	á	á	ADP	P	_	28	case	_	_
+28	þetta	þessi	DET	D-A	Case=Acc	31	obl	_	_
+29	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	31	aux	_	_
+30	ekki	ekki	ADV	NEG	_	31	advmod	_	_
+31	reynt	reyna	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0|SpaceAfter=No
+32	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4583228,.18
-# X_ID = ID_MISSING
-# text = en á þetta hefur ekki reynt .
-1	en	en	CCONJ	CONJ	_	6	cc	_	_
-2	á	á	ADP	P	_	3	case	_	_
-3	þetta	þessi	DET	D-A	Case=Acc	6	obl	_	_
-4	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
-5	ekki	ekki	ADV	NEG	_	6	advmod	_	_
-6	reynt	reyna	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	6	punct	_	_
-
-# sent_id = G-33-4583228,.19
-# X_ID = ID_MISSING
-# text = Nú á að kæfa okkur sem viljum reyna að ná einhverri samstöðu í þessu máli .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.17
+# X_ID = ID_missing_19
+# text = Nú á að kæfa okkur sem viljum reyna að ná einhverri samstöðu í þessu máli.
 1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -400,9 +392,9 @@
 15	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4583228,.20
-# X_ID = ID_MISSING
-# text = Þetta er ekki mál sem við eigum að karpa hér um endalaust .
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.18
+# X_ID = ID_missing_20
+# text = Þetta er ekki mál sem við eigum að karpa hér um endalaust.
 1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -417,9 +409,9 @@
 12	endalaust	endalaus	ADJ	ADJ-A	Case=Acc|Degree=Pos	9	amod	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4583228,.21
-# X_ID = ID_MISSING
-# text = Við eigum að vinna þetta saman,
+# sent_id = ALTHINGI_TKG_2011_G-33-4583228,.19
+# X_IDs = ID_missing_21 ; ID_missing_22
+# text = Við eigum að vinna þetta saman, ég ítreka það.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -427,9 +419,8 @@
 5	þetta	þessi	DET	D-A	Case=Acc	4	obj	_	_
 6	saman	saman	ADV	ADV	Degree=Pos	4	advmod	_	SpaceAfter=No
 7	,	,	PUNCT	,	_	2	punct	_	_
-
-1	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	ítreka	ítreka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
-4	.	.	PUNCT	.	_	2	punct	_	_
+8	ég	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+9	ítreka	ítreka	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+10	það	það	PRON	PRO-A	Case=Acc	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	2	punct	_	_
 

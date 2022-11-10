@@ -1,6 +1,6 @@
-# sent_id = G-2-1039764.SANITY,.1
-# X_ID = ID_MISSING
-# text = Írska knattspyrnuliðið Dundalk F.C. komst í gærkvöldi áfram í lokaumferð forkeppni Meistaradeildar Evrópu með samanlögðum 3 1 sigri á BATE Borisov frá Hvíta Rússlandi .
+# sent_id = RUV_ESP_2016_G-2-1039764.SANITY,.1
+# X_ID = ID_missing_1
+# text = Írska knattspyrnuliðið Dundalk F.C. komst í gærkvöldi áfram í lokaumferð forkeppni Meistaradeildar Evrópu með samanlögðum 3 1 sigri á BATE Borisov frá Hvíta Rússlandi.
 1	Írska	írskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	knattspyrnuliðið	knattspyrnulið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 3	Dundalk	dundalk	PROPN	NPR-N	_	2	appos	_	_
@@ -27,9 +27,9 @@
 24	Rússlandi	rússland	PROPN	NPR-D	_	20	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1039764.SANITY,.2
-# X_ID = ID_MISSING
-# text = Falli liðið úr leik í næstu umferð er það þó öruggt með sæti í riðlakeppni Evrópudeildarinnar
+# sent_id = RUV_ESP_2016_G-2-1039764.SANITY,.2
+# X_IDs = ID_missing_2 ; ID_missing_3
+# text = Falli liðið úr leik í næstu umferð er það þó öruggt með sæti í riðlakeppni Evrópudeildarinnar og fyrir það fást a.m.k. sjö milljónir evra eða 926 milljónir króna.
 1	Falli	falla	VERB	VBPS	Mood=Sub|Tense=Pres	11	advcl	_	_
 2	liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
 3	úr	úr	ADP	P	_	4	case	_	_
@@ -46,29 +46,25 @@
 14	í	í	ADP	P	_	15	case	_	_
 15	riðlakeppni	riðlakeppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	_
 16	Evrópudeildarinnar	evrópudeild	PROPN	NPR-G	_	15	nmod:poss	_	_
+17	og	og	CCONJ	CONJ	_	20	cc	_	_
+18	fyrir	fyrir	ADP	P	_	19	case	_	_
+19	það	það	PRON	PRO-A	Case=Acc	20	obl	_	_
+20	fást	fá	VERB	VBPI	Mood=Ind|Tense=Pres	11	conj	_	OriginalHead=0
+21	a.	meðal	ADP	P	_	23	case	_	SpaceAfter=No
+22	m.	lítill	ADJ	ADJS-D	Case=Dat|Degree=Sup	23	amod	_	SpaceAfter=No
+23	k.	kostur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
+24	sjö	sjö	NUM	NUM-N	Case=Nom	25	nummod	_	_
+25	milljónir	milljón	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	20	nsubj	_	_
+26	evra	evra	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	25	nmod:poss	_	_
+27	eða	eða	CCONJ	CONJ	_	29	cc	_	_
+28	926	926	NUM	NUM-N	Case=Nom	29	nummod	_	_
+29	milljónir	milljón	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	25	conj	_	_
+30	króna	króna	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	29	nmod:poss	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = G-2-1039764.SANITY,.3
-# X_ID = ID_MISSING
-# text = og fyrir það fást a.m.k. sjö milljónir evra eða 926 milljónir króna .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	fyrir	fyrir	ADP	P	_	3	case	_	_
-3	það	það	PRON	PRO-A	Case=Acc	4	obl	_	_
-4	fást	fá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-5	a.	meðal	ADP	P	_	7	case	_	SpaceAfter=No
-6	m.	lítill	ADJ	ADJS-D	Case=Dat|Degree=Sup	7	amod	_	SpaceAfter=No
-7	k.	kostur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
-8	sjö	sjö	NUM	NUM-N	Case=Nom	9	nummod	_	_
-9	milljónir	milljón	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
-10	evra	evra	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	nmod:poss	_	_
-11	eða	eða	CCONJ	CONJ	_	13	cc	_	_
-12	926	926	NUM	NUM-N	Case=Nom	13	nummod	_	_
-13	milljónir	milljón	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	9	conj	_	_
-14	króna	króna	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	13	nmod:poss	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-2-1039764.SANITY,.4
-# X_ID = ID_MISSING
-# text = Dundalk sló Íslandsmeistara FH út í síðustu umferð .
+# sent_id = RUV_ESP_2016_G-2-1039764.SANITY,.3
+# X_ID = ID_missing_4
+# text = Dundalk sló Íslandsmeistara FH út í síðustu umferð.
 1	Dundalk	dundalk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	sló	slá	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	Íslandsmeistara	íslandsmeistari	PROPN	NPR-A	_	2	obj	_	_
@@ -79,9 +75,9 @@
 8	umferð	umferð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1039764.SANITY,.5
-# X_ID = ID_MISSING
-# text = Fyrri leikur liðanna fór 1 1 ytra og sá seinni í Kaplakrika 2 2
+# sent_id = RUV_ESP_2016_G-2-1039764.SANITY,.4
+# X_IDs = ID_missing_5 ; ID_missing_6
+# text = Fyrri leikur liðanna fór 1 1 ytra og sá seinni í Kaplakrika 2 2 og írska liðið fór áfram á fleiri mörkum skoruðum á útivelli.
 1	Fyrri	fyrri	ADJ	ADJR-N	Case=Nom|Degree=Cmp	2	amod	_	_
 2	leikur	leikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 3	liðanna	lið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	nmod:poss	_	_
@@ -96,26 +92,22 @@
 12	Kaplakrika	kaplakriki	PROPN	NPR-D	_	9	obl	_	_
 13	2	tveir	NUM	NUM-N	Case=Nom	9	obl	_	_
 14	2	tveir	NUM	NUM-N	Case=Nom	13	nummod	_	_
+15	og	og	CCONJ	CONJ	_	18	cc	_	_
+16	írska	írskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	17	amod	_	_
+17	liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
+18	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
+19	áfram	áfram	ADV	ADV	Degree=Pos	18	advmod	_	_
+20	á	á	ADP	P	_	22	case	_	_
+21	fleiri	margur	DET	QR-D	Case=Dat	22	amod	_	_
+22	mörkum	mark	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	18	obl	_	_
+23	skoruðum	skora	VERB	VAN-D	Case=Dat|Tense=Past|VerbForm=Part	22	acl:relcl	_	_
+24	á	á	ADP	P	_	25	case	_	_
+25	útivelli	útivöllur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1039764.SANITY,.6
-# X_ID = ID_MISSING
-# text = og írska liðið fór áfram á fleiri mörkum skoruðum á útivelli .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	írska	írskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
-3	liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
-4	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-5	áfram	áfram	ADV	ADV	Degree=Pos	4	advmod	_	_
-6	á	á	ADP	P	_	8	case	_	_
-7	fleiri	margur	DET	QR-D	Case=Dat	8	amod	_	_
-8	mörkum	mark	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
-9	skoruðum	skora	VERB	VAN-D	Case=Dat|Tense=Past|VerbForm=Part	8	acl:relcl	_	_
-10	á	á	ADP	P	_	11	case	_	_
-11	útivelli	útivöllur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-2-1039764.SANITY,.7
-# X_ID = ID_MISSING
-# text = Ekki liggur fyrir hver mótherji Dundalk verður í lokaumferð forkeppninnar
+# sent_id = RUV_ESP_2016_G-2-1039764.SANITY,.5
+# X_IDs = ID_missing_7 ; ID_missing_8
+# text = Ekki liggur fyrir hver mótherji Dundalk verður í lokaumferð forkeppninnar en dregið verður á föstudag.
 1	Ekki	ekki	ADV	NEG	_	2	advmod	_	_
 2	liggur	liggja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	fyrir	fyrir	ADP	RP	_	2	compound:prt	_	_
@@ -126,20 +118,16 @@
 8	í	í	ADP	P	_	9	case	_	_
 9	lokaumferð	lokaumferð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
 10	forkeppninnar	forkeppni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	nmod:poss	_	_
+11	en	en	CCONJ	CONJ	_	13	cc	_	_
+12	dregið	draga	VERB	VAN	Tense=Past|VerbForm=Part	13	xcomp	_	_
+13	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+14	á	á	ADP	P	_	15	case	_	_
+15	föstudag	föstudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1039764.SANITY,.8
-# X_ID = ID_MISSING
-# text = en dregið verður á föstudag .
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	dregið	draga	VERB	VAN	Tense=Past|VerbForm=Part	3	xcomp	_	_
-3	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	á	á	ADP	P	_	5	case	_	_
-5	föstudag	föstudagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-6	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-2-1039764.SANITY,.9
-# X_ID = ID_MISSING
-# text = Komist liðið alla leið í riðlakeppni Meistaradeildarinnar verður það fyrsta írska liðið til að spila þar .
+# sent_id = RUV_ESP_2016_G-2-1039764.SANITY,.6
+# X_ID = ID_missing_9
+# text = Komist liðið alla leið í riðlakeppni Meistaradeildarinnar verður það fyrsta írska liðið til að spila þar.
 1	Komist	koma	VERB	VBPS	Mood=Sub|Tense=Pres	8	advcl	_	_
 2	liðið	lið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	nsubj	_	_
 3	alla	allur	DET	Q-A	Case=Acc	4	amod	_	_
@@ -158,6 +146,9 @@
 16	þar	þar	ADV	ADV	Degree=Pos	15	advmod	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	8	punct	_	_
 
+# sent_id = RUV_ESP_2016_G-2-1039764.SANITY,.7
+# X_ID = ID_missing_10
+# text = Önnur lið sem komust áfram í forkeppninni í gærkvöld eru Plzen frá Tékklandi, APOEL frá Kýpur, Ludogorets frá Búlgaríu og Dinamo Zagreb frá Króatíu.
 1	Önnur	annar	PRON	OTHER-N	Case=Nom	2	det	_	_
 2	lið	lið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	11	nsubj	_	_
 3	sem	sem	SCONJ	C	_	4	mark	_	_
@@ -170,11 +161,11 @@
 10	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 11	Plzen	plzen	PROPN	NPR-N	_	0	root	_	_
 12	frá	frá	ADP	P	_	13	case	_	_
-13	Tékklandi	tékkland	PROPN	NPR-D	_	11	obl	_	_
+13	Tékklandi	tékkland	PROPN	NPR-D	_	11	obl	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	15	punct	_	_
 15	APOEL	apoel	PROPN	NPR-N	_	11	conj	_	_
 16	frá	frá	ADP	P	_	17	case	_	_
-17	Kýpur	kýpur	PROPN	NPR-D	_	15	obl	_	_
+17	Kýpur	kýpur	PROPN	NPR-D	_	15	obl	_	SpaceAfter=No
 18	,	,	PUNCT	,	_	19	punct	_	_
 19	Ludogorets	ludogorets	PROPN	NPR-N	_	11	conj	_	_
 20	frá	frá	ADP	P	_	21	case	_	_
@@ -183,6 +174,6 @@
 23	Dinamo	dinamo	PROPN	NPR-N	_	11	conj	_	_
 24	Zagreb	zagreb	PROPN	NPR-N	_	23	flat:name	_	_
 25	frá	frá	ADP	P	_	26	case	_	_
-26	Króatíu	króatía	PROPN	NPR-D	_	23	obl	_	_
+26	Króatíu	króatía	PROPN	NPR-D	_	23	obl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	11	punct	_	_
 

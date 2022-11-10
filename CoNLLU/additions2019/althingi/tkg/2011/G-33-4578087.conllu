@@ -1,6 +1,6 @@
-# sent_id = G-33-4578087,.1
-# X_ID = ID_MISSING
-# text = Herra forseti . Ég þakka formanni Framsóknarflokksins fyrir aldeilis prýðilega ræðu þar sem hann fór vel yfir það hvernig sjávarútvegsmálin hafa þróast og ekki síst það hvernig hann dró fram að þegar núverandi fiskveiðistjórnarkerfi var sett á laggirnar var það umdeilt .
+# sent_id = ALTHINGI_TKG_2011_G-33-4578087,.1
+# X_ID = ID_missing_1
+# text = Herra forseti. Ég þakka formanni Framsóknarflokksins fyrir aldeilis prýðilega ræðu þar sem hann fór vel yfir það hvernig sjávarútvegsmálin hafa þróast og ekki síst það hvernig hann dró fram að þegar núverandi fiskveiðistjórnarkerfi var sett á laggirnar var það umdeilt.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -44,9 +44,9 @@
 41	umdeilt	umdeildur	ADJ	ADJ-N	Case=Nom|Degree=Pos	29	ccomp	_	SpaceAfter=No
 42	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4578087,.2
-# X_ID = ID_MISSING
-# text = Það var að sjálfsögðu erfitt fyrir margra hluta sakir
+# sent_id = ALTHINGI_TKG_2011_G-33-4578087,.2
+# X_IDs = ID_missing_2 ; ID_missing_3
+# text = Það var að sjálfsögðu erfitt fyrir margra hluta sakir og auðvitað greindi menn á um það hvernig ætti að skipta takmarkaðri auðlind.
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
 3	að	að	ADV	P	_	5	advmod	_	_
@@ -56,28 +56,24 @@
 7	margra	margur	DET	Q-G	Case=Gen	9	nmod:poss	_	_
 8	hluta	hlutur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	conj	_	_
 9	sakir	sök	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	_
+10	og	og	CCONJ	CONJ	_	12	cc	_	_
+11	auðvitað	auðvitað	ADV	ADV	Degree=Pos	12	advmod	_	_
+12	greindi	greina	VERB	VBDI	Mood=Ind|Tense=Past	5	conj	_	OriginalHead=0
+13	menn	maður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	nsubj	_	_
+14	á	á	ADP	RP	_	12	compound:prt	_	_
+15	um	um	ADP	P	_	16	case	_	_
+16	það	það	PRON	PRO-A	Case=Acc	12	obl	_	_
+17	hvernig	hvernig	ADV	WADV	Degree=Pos	18	advmod	_	_
+18	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	16	ccomp	_	_
+19	að	að	PART	TO	_	20	mark	_	_
+20	skipta	skipta	VERB	VB	VerbForm=Inf	18	xcomp	_	_
+21	takmarkaðri	takmarkaður	ADJ	ADJ-D	Case=Dat|Degree=Pos	22	amod	_	_
+22	auðlind	auðlind	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obj	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4578087,.3
-# X_ID = ID_MISSING
-# text = og auðvitað greindi menn á um það hvernig ætti að skipta takmarkaðri auðlind .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	auðvitað	auðvitað	ADV	ADV	Degree=Pos	3	advmod	_	_
-3	greindi	greina	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	menn	maður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	nsubj	_	_
-5	á	á	ADP	RP	_	3	compound:prt	_	_
-6	um	um	ADP	P	_	7	case	_	_
-7	það	það	PRON	PRO-A	Case=Acc	3	obl	_	_
-8	hvernig	hvernig	ADV	WADV	Degree=Pos	9	advmod	_	_
-9	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	7	ccomp	_	_
-10	að	að	PART	TO	_	11	mark	_	_
-11	skipta	skipta	VERB	VB	VerbForm=Inf	9	xcomp	_	_
-12	takmarkaðri	takmarkaður	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	amod	_	_
-13	auðlind	auðlind	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obj	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4578087,.4
-# X_ID = ID_MISSING
-# text = Þeir sem höfðu stundað útgerð lengi vel áttuðu sig ekki síst á því að þeir gátu ekki fiskað lengur .
+# sent_id = ALTHINGI_TKG_2011_G-33-4578087,.3
+# X_ID = ID_missing_4
+# text = Þeir sem höfðu stundað útgerð lengi vel áttuðu sig ekki síst á því að þeir gátu ekki fiskað lengur.
 1	Þeir	sá	DET	D-N	Case=Nom	8	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	höfðu	hafa	AUX	HVDI	Mood=Ind|Tense=Past	4	aux	_	_
@@ -99,9 +95,9 @@
 19	lengur	lengi	ADV	ADVR	Degree=Cmp	18	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-33-4578087,.5
-# X_ID = ID_MISSING
-# text = Auðvitað kallaði það á mikla umræðu og sársaukafulla hagræðingu innan greinarinnar sem mér finnst allt of margir hafa gleymt í dag .
+# sent_id = ALTHINGI_TKG_2011_G-33-4578087,.4
+# X_ID = ID_missing_5
+# text = Auðvitað kallaði það á mikla umræðu og sársaukafulla hagræðingu innan greinarinnar sem mér finnst allt of margir hafa gleymt í dag.
 1	Auðvitað	auðvitað	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	kallaði	kalla	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -125,9 +121,9 @@
 21	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4578087,.6
-# X_ID = ID_MISSING
-# text = Það getur vel verið að það sé hægt að gagnrýna hvernig þáverandi stjórnvöld stóðu að breytingunum
+# sent_id = ALTHINGI_TKG_2011_G-33-4578087,.5
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Það getur vel verið að það sé hægt að gagnrýna hvernig þáverandi stjórnvöld stóðu að breytingunum en að mínu mati voru þær nauðsynlegar, ekki síst vegna þess að fiskstofnarnir voru á niðurleið.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	2	expl	_	_
 2	getur	geta	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vel	vel	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -144,32 +140,28 @@
 14	stóðu	standa	VERB	VBDI	Mood=Ind|Tense=Past	10	ccomp	_	_
 15	að	að	ADP	P	_	16	case	_	_
 16	breytingunum	breyting	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	_
+17	en	en	CCONJ	CONJ	_	23	cc	_	_
+18	að	að	ADP	P	_	20	case	_	_
+19	mínu	minn	PRON	PRO-D	Case=Dat	20	nmod:poss	_	_
+20	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
+21	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	23	cop	_	_
+22	þær	hún	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+23	nauðsynlegar	nauðsynlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0|SpaceAfter=No
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	ekki	ekki	ADV	NEG	_	26	advmod	_	_
+26	síst	varla	ADV	ADVS	Degree=Sup	28	advmod	_	_
+27	vegna	vegna	ADP	P	_	28	case	_	_
+28	þess	það	PRON	PRO-G	Case=Gen	23	obl	_	_
+29	að	að	SCONJ	C	_	33	mark	_	_
+30	fiskstofnarnir	fiskstofn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	33	nsubj	_	_
+31	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	33	cop	_	_
+32	á	á	ADP	P	_	33	case	_	_
+33	niðurleið	niðurleið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	ccomp	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4578087,.7
-# X_ID = ID_MISSING
-# text = en að mínu mati voru þær nauðsynlegar, ekki síst vegna þess að fiskstofnarnir voru á niðurleið .
-1	en	en	CCONJ	CONJ	_	7	cc	_	_
-2	að	að	ADP	P	_	4	case	_	_
-3	mínu	minn	PRON	PRO-D	Case=Dat	4	nmod:poss	_	_
-4	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
-5	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
-6	þær	hún	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-7	nauðsynlegar	nauðsynlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	7	punct	_	_
-9	ekki	ekki	ADV	NEG	_	10	advmod	_	_
-10	síst	varla	ADV	ADVS	Degree=Sup	12	advmod	_	_
-11	vegna	vegna	ADP	P	_	12	case	_	_
-12	þess	það	PRON	PRO-G	Case=Gen	7	obl	_	_
-13	að	að	SCONJ	C	_	17	mark	_	_
-14	fiskstofnarnir	fiskstofn	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	nsubj	_	_
-15	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	17	cop	_	_
-16	á	á	ADP	P	_	17	case	_	_
-17	niðurleið	niðurleið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	ccomp	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	7	punct	_	_
-
-# sent_id = G-33-4578087,.8
-# X_ID = ID_MISSING
-# text = Sumir segja að þeir hafi verið að hruni komnir þannig að það þurfti að taka ákvörðun um framtíð fiskveiða .
+# sent_id = ALTHINGI_TKG_2011_G-33-4578087,.6
+# X_ID = ID_missing_8
+# text = Sumir segja að þeir hafi verið að hruni komnir þannig að það þurfti að taka ákvörðun um framtíð fiskveiða.
 1	Sumir	sumur	DET	Q-N	Case=Nom	2	nsubj	_	_
 2	segja	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -191,9 +183,9 @@
 19	fiskveiða	fiskveiði	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	18	nmod:poss	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4578087,.9
-# X_ID = ID_MISSING
-# text = Það var tekin ákvörðun um þetta kerfi sem við búum við í dag sem hefur tekið Forseti hringir . margháttuðum breytingum .
+# sent_id = ALTHINGI_TKG_2011_G-33-4578087,.7
+# X_ID = ID_missing_9
+# text = Það var tekin ákvörðun um þetta kerfi sem við búum við í dag sem hefur tekið Forseti hringir. margháttuðum breytingum.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
 3	tekin	taka	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -217,9 +209,9 @@
 21	breytingum	breyting	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	16	obj	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4578087,.10
-# X_ID = ID_MISSING
-# text = Ég spyr hv. þingmann : Telur hann hægt að ná sátt ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4578087,.8
+# X_ID = ID_missing_10
+# text = Ég spyr hv. þingmann: Telur hann hægt að ná sátt?
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	hv.	háttvirtur	ADJ	ADJ-A	Case=Acc|Degree=Pos	4	amod	_	_
@@ -233,19 +225,22 @@
 11	sátt	sátt	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	SpaceAfter=No
 12	?	?	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_TKG_2011_G-33-4578087,.9
+# X_ID = ID_missing_11
+# text = Er styttra á milli manna en forsætisráðherra, ekki síst, vill vera láta?
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
 2	styttra	stuttur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	0	root	_	_
 3	á	á	ADP	P	_	5	case	_	_
 4	milli	milli	ADP	P	_	5	case	_	_
 5	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	2	obl	_	_
 6	en	en	ADP	P	_	14	case	_	_
-7	forsætisráðherra	forsætisráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
+7	forsætisráðherra	forsætisráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	_
 9	ekki	ekki	ADV	NEG	_	10	advmod	_	_
-10	síst	varla	ADV	ADVS	Degree=Sup	7	advmod	_	_
+10	síst	varla	ADV	ADVS	Degree=Sup	7	advmod	_	SpaceAfter=No
 11	,	,	PUNCT	,	_	14	punct	_	_
 12	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	14	aux	_	_
 13	vera	vera	AUX	BE	VerbForm=Inf	14	xcomp	_	_
-14	láta	láta	VERB	VB	VerbForm=Inf	2	obl	_	_
+14	láta	láta	VERB	VB	VerbForm=Inf	2	obl	_	SpaceAfter=No
 15	?	?	PUNCT	.	_	2	punct	_	_
 

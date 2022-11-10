@@ -1,6 +1,6 @@
-# sent_id = G-2-1037663.SANITY,.1
-# X_ID = ID_MISSING
-# text = Ríkjandi bikarmeistarar Stjörnunnar mæta FH í 16-liða úrslitum bikarkeppni kvenna í fótbolta .
+# sent_id = RUV_ESP_2016_G-2-1037663.SANITY,.1
+# X_ID = ID_missing_1
+# text = Ríkjandi bikarmeistarar Stjörnunnar mæta FH í 16-liða úrslitum bikarkeppni kvenna í fótbolta.
 1	Ríkjandi	ríkjandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	bikarmeistarar	bikarmeistari	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	4	nsubj	_	_
 3	Stjörnunnar	stjarna	PROPN	NPR-G	_	2	nmod:poss	_	_
@@ -17,9 +17,9 @@
 14	fótbolta	fótbolti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1037663.SANITY,.2
-# X_ID = ID_MISSING
-# text = Dregið var í hádeginu í dag .
+# sent_id = RUV_ESP_2016_G-2-1037663.SANITY,.2
+# X_ID = ID_missing_2
+# text = Dregið var í hádeginu í dag.
 1	Dregið	draga	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	1	cop	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -28,9 +28,9 @@
 6	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-2-1037663.SANITY,.3
-# X_ID = ID_MISSING
-# text = Ásgerður Stefanía Baldursdóttir, fyrirliði Stjörnunnar, segir liðið hafa fengið einn af erfiðari útileikjunum í drættinum .
+# sent_id = RUV_ESP_2016_G-2-1037663.SANITY,.3
+# X_ID = ID_missing_3
+# text = Ásgerður Stefanía Baldursdóttir, fyrirliði Stjörnunnar, segir liðið hafa fengið einn af erfiðari útileikjunum í drættinum.
 1	Ásgerður	ásgerður	PROPN	NPR-N	_	8	nsubj	_	_
 2	Stefanía	stefanía	PROPN	NPR-N	_	1	flat:name	_	_
 3	Baldursdóttir	baldursdóttir	PROPN	NPR-N	_	1	dep	_	SpaceAfter=No
@@ -50,9 +50,9 @@
 17	drættinum	dráttur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-2-1037663.SANITY,.4
-# X_ID = ID_MISSING
-# text = „ Mér finnst erfitt að fara í Krikann að spila,
+# sent_id = RUV_ESP_2016_G-2-1037663.SANITY,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = „ Mér finnst erfitt að fara í Krikann að spila, þetta er örugglega einn af betri grasvöllum landsins þannig ég held að þetta verði hörkuleikur,“ segir Adda.
 1	„	„	PUNCT	"	_	3	punct	_	_
 2	Mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
 3	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -63,32 +63,31 @@
 8	Krikann	kriki	PROPN	NPR-A	_	6	obl	_	_
 9	að	að	PART	TO	_	10	mark	_	_
 10	spila	spila	VERB	VB	VerbForm=Inf	6	advcl	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	3	punct	_	_
+11	,	,	PUNCT	,	_	6	punct	_	_
+12	þetta	þessi	DET	D-N	Case=Nom	29	nsubj	_	_
+13	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	29	cop	_	_
+14	örugglega	örugglega	ADV	ADV	Degree=Pos	29	advmod	_	_
+15	einn	einn	DET	ONE-N	Case=Nom	29	xcomp	_	_
+16	af	af	ADP	P	_	18	case	_	_
+17	betri	góður	ADJ	ADJR-D	Case=Dat|Degree=Cmp	18	amod	_	_
+18	grasvöllum	grasvöllur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	_
+19	landsins	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	18	nmod:poss	_	_
+20	þannig	þannig	ADV	ADV	Degree=Pos	29	advmod	_	_
+21	ég	ég	PRON	PRO-N	Case=Nom	22	nsubj	_	_
+22	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	20	advcl	_	_
+23	að	að	SCONJ	C	_	24	mark	_	_
+24	þetta	þessi	DET	D-N	Case=Nom	22	obl	_	_
+25	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	24	aux	_	_
+26	hörkuleikur	hörkuleikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	xcomp	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	24	punct	_	SpaceAfter=No
+28	“	“	PUNCT	"	_	27	punct	_	_
+29	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+30	Adda	adda	PROPN	NPR-N	_	29	obl	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1037663.SANITY,.5
-# X_ID = ID_MISSING
-# text = þetta er örugglega einn af betri grasvöllum landsins þannig ég held að þetta verði hörkuleikur, “ segir Adda .
-1	þetta	þessi	DET	D-N	Case=Nom	18	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	_
-3	örugglega	örugglega	ADV	ADV	Degree=Pos	18	advmod	_	_
-4	einn	einn	DET	ONE-N	Case=Nom	18	xcomp	_	_
-5	af	af	ADP	P	_	7	case	_	_
-6	betri	góður	ADJ	ADJR-D	Case=Dat|Degree=Cmp	7	amod	_	_
-7	grasvöllum	grasvöllur	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
-8	landsins	land	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
-9	þannig	þannig	ADV	ADV	Degree=Pos	18	advmod	_	_
-10	ég	ég	PRON	PRO-N	Case=Nom	11	nsubj	_	_
-11	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	9	advcl	_	_
-12	að	að	SCONJ	C	_	13	mark	_	_
-13	þetta	þessi	DET	D-N	Case=Nom	11	obl	_	_
-14	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	13	aux	_	_
-15	hörkuleikur	hörkuleikur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	xcomp	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	18	punct	_	SpaceAfter=No
-17	“	“	PUNCT	"	_	16	punct	_	_
-18	segir	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-19	Adda	adda	PROPN	NPR-N	_	18	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	18	punct	_	_
-
+# sent_id = RUV_ESP_2016_G-2-1037663.SANITY,.5
+# X_ID = ID_missing_6
+# text = Viðtal við fyrirliðann má finna í spilaranum að ofan.
 1	Viðtal	viðtal	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
 2	við	við	ADP	P	_	3	case	_	_
 3	fyrirliðann	fyrirliði	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
@@ -97,6 +96,6 @@
 6	í	í	ADP	P	_	7	case	_	_
 7	spilaranum	spilari	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
 8	að	að	ADP	P	_	9	case	_	_
-9	ofan	ofan	ADV	ADV	Degree=Pos	7	obl	_	_
+9	ofan	ofan	ADV	ADV	Degree=Pos	7	obl	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 

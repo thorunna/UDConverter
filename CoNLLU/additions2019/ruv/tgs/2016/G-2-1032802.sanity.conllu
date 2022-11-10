@@ -1,6 +1,6 @@
-# sent_id = G-2-1032802.SANITY,.1
-# X_ID = ID_MISSING
-# text = Kim Collins, spretthlaupari frá smáríkinu Saint Kitts og Nevis gerði sér lítið fyrir þegar hann hljóp 100 metra hlaup á alþjóðlegu frjálsíþróttamóti í Þýskalandi í gær á 9,93 sekúndum .
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.1
+# X_ID = ID_missing_1
+# text = Kim Collins, spretthlaupari frá smáríkinu Saint Kitts og Nevis gerði sér lítið fyrir þegar hann hljóp 100 metra hlaup á alþjóðlegu frjálsíþróttamóti í Þýskalandi í gær á 9,93 sekúndum.
 1	Kim	kim	PROPN	NPR-N	_	11	nsubj	_	_
 2	Collins	collins	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	2	punct	_	_
@@ -33,9 +33,9 @@
 30	sekúndum	sekúnda	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	17	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = G-2-1032802.SANITY,.2
-# X_ID = ID_MISSING
-# text = Þetta er persónulegt met hjá Collins .
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.2
+# X_ID = ID_missing_2
+# text = Þetta er persónulegt met hjá Collins.
 1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	persónulegt	persónulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -44,9 +44,9 @@
 6	Collins	collins	PROPN	NPR-D	_	4	obl	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1032802.SANITY,.3
-# X_ID = ID_MISSING
-# text = Árangurinn er sérlega merkilegur í ljósi þess að Kim Collins varð 40 ára í apríl
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Árangurinn er sérlega merkilegur í ljósi þess að Kim Collins varð 40 ára í apríl en sýnir það að aldurinn er ekkert annað en tala, fyrst hann er enn í framför.
 1	Árangurinn	árangur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	sérlega	sérlega	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -62,32 +62,28 @@
 13	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	amod	_	_
 14	í	í	ADP	P	_	15	case	_	_
 15	apríl	apríl	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+16	en	en	CCONJ	CONJ	_	17	cc	_	_
+17	sýnir	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+18	það	það	PRON	PRO-A	Case=Acc	17	obj	_	_
+19	að	að	SCONJ	C	_	23	mark	_	_
+20	aldurinn	aldur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	nsubj	_	_
+21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
+22	ekkert	enginn	DET	Q-N	Case=Nom	23	amod	_	_
+23	annað	annar	PRON	OTHER-N	Case=Nom	18	ccomp	_	_
+24	en	en	ADP	P	_	25	case	_	_
+25	tala	tala	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	fyrst	fyrst	ADP	P	_	32	case	_	_
+28	hann	hann	PRON	PRO-N	Case=Nom	32	nsubj	_	_
+29	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	32	cop	_	_
+30	enn	enn	ADV	ADV	Degree=Pos	32	advmod	_	_
+31	í	í	ADP	P	_	32	case	_	_
+32	framför	framför	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	advcl	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1032802.SANITY,.4
-# X_ID = ID_MISSING
-# text = en sýnir það að aldurinn er ekkert annað en tala, fyrst hann er enn í framför .
-1	en	en	CCONJ	CONJ	_	2	cc	_	_
-2	sýnir	sýna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	það	það	PRON	PRO-A	Case=Acc	2	obj	_	_
-4	að	að	SCONJ	C	_	8	mark	_	_
-5	aldurinn	aldur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
-6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
-7	ekkert	enginn	DET	Q-N	Case=Nom	8	amod	_	_
-8	annað	annar	PRON	OTHER-N	Case=Nom	3	ccomp	_	_
-9	en	en	ADP	P	_	10	case	_	_
-10	tala	tala	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	10	punct	_	_
-12	fyrst	fyrst	ADP	P	_	17	case	_	_
-13	hann	hann	PRON	PRO-N	Case=Nom	17	nsubj	_	_
-14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
-15	enn	enn	ADV	ADV	Degree=Pos	17	advmod	_	_
-16	í	í	ADP	P	_	17	case	_	_
-17	framför	framför	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	advcl	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1032802.SANITY,.5
-# X_ID = ID_MISSING
-# text = Collins er fyrrverandi heimsmeistari í 100 m hlaupi karla,
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.4
+# X_IDs = ID_missing_5 ; ID_missing_6
+# text = Collins er fyrrverandi heimsmeistari í 100 m hlaupi karla, en hann vann gullverðlaun í greininni á HM 2003 í París þegar hann kom í mark á 10,07 sek., þá 27 ára.
 1	Collins	collins	PROPN	NPR-N	_	8	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
 3	fyrrverandi	fyrrverandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -97,39 +93,35 @@
 7	m	metri	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	_
 8	hlaupi	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
 9	karla	karl	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	8	punct	_	_
-
-# sent_id = G-2-1032802.SANITY,.6
-# X_ID = ID_MISSING
-# text = en hann vann gullverðlaun í greininni á HM 2003 í París þegar hann kom í mark á 10,07 sek., þá 27 ára .
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	hann	hann	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	gullverðlaun	gullverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	_
-5	í	í	ADP	P	_	6	case	_	_
-6	greininni	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
-7	á	á	ADP	P	_	8	case	_	_
-8	HM	hm	PROPN	NPR-D	_	3	obl	_	_
-9	2003	2003	NUM	NUM-A	Case=Acc	8	obl	_	_
-10	í	í	ADP	P	_	11	case	_	_
-11	París	parís	PROPN	NPR-D	_	8	obl	_	_
-12	þegar	þegar	ADP	P	_	14	case	_	_
-13	hann	hann	PRON	PRO-N	Case=Nom	14	nsubj	_	_
-14	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	3	obl	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	en	en	CCONJ	CONJ	_	13	cc	_	_
+12	hann	hann	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+13	vann	vinna	VERB	VBDI	Mood=Ind|Tense=Past	8	conj	_	OriginalHead=0
+14	gullverðlaun	gullverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obj	_	_
 15	í	í	ADP	P	_	16	case	_	_
-16	mark	mark	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obl	_	_
-17	á	á	ADP	P	_	19	case	_	_
-18	10,07	10,07	NUM	NUM-D	Case=Dat	19	nummod	_	_
-19	sek.	sekúnda	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	14	obl	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	19	punct	_	_
-21	þá	þá	ADV	ADV	Degree=Pos	14	amod	_	_
-22	27	27	NUM	NUM-G	Case=Gen	23	nummod	_	_
-23	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	21	obl	_	SpaceAfter=No
-24	.	.	PUNCT	.	_	3	punct	_	_
+16	greininni	grein	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
+17	á	á	ADP	P	_	18	case	_	_
+18	HM	hm	PROPN	NPR-D	_	13	obl	_	_
+19	2003	2003	NUM	NUM-A	Case=Acc	18	obl	_	_
+20	í	í	ADP	P	_	21	case	_	_
+21	París	parís	PROPN	NPR-D	_	18	obl	_	_
+22	þegar	þegar	ADP	P	_	24	case	_	_
+23	hann	hann	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+24	kom	koma	VERB	VBDI	Mood=Ind|Tense=Past	13	obl	_	_
+25	í	í	ADP	P	_	26	case	_	_
+26	mark	mark	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obl	_	_
+27	á	á	ADP	P	_	29	case	_	_
+28	10,07	10,07	NUM	NUM-D	Case=Dat	29	nummod	_	_
+29	sek.	sekúnda	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	24	obl	_	SpaceAfter=No
+30	,	,	PUNCT	,	_	29	punct	_	_
+31	þá	þá	ADV	ADV	Degree=Pos	24	amod	_	_
+32	27	27	NUM	NUM-G	Case=Gen	33	nummod	_	_
+33	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	31	obl	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-2-1032802.SANITY,.7
-# X_ID = ID_MISSING
-# text = Hann á bronsverðlaun í 200 m hlaupi frá HM 2001 og í 100 m hlaupi frá HM 2005 og HM 2011 .
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.5
+# X_ID = ID_missing_7
+# text = Hann á bronsverðlaun í 200 m hlaupi frá HM 2001 og í 100 m hlaupi frá HM 2005 og HM 2011.
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	á	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	bronsverðlaun	bronsverðlaun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	15	obl	_	_
@@ -153,9 +145,9 @@
 21	2011	2011	NUM	NUM-A	Case=Acc	20	obl	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1032802.SANITY,.8
-# X_ID = ID_MISSING
-# text = Besti tími Collins var áður 9,96 sek. frá því í júlí 2014
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.6
+# X_IDs = ID_missing_8 ; ID_missing_9
+# text = Besti tími Collins var áður 9,96 sek. frá því í júlí 2014 en bætti nú sitt besta og um leið landsmetið í Saint Kitts og Nevis um þrjá hundraðshluta úr sekúndu.
 1	Besti	góður	ADJ	ADJS-N	Case=Nom|Degree=Sup	2	amod	_	_
 2	tími	tími	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 3	Collins	collins	PROPN	NPR-G	_	2	nmod:poss	_	_
@@ -168,34 +160,30 @@
 10	í	í	ADP	P	_	11	case	_	_
 11	júlí	júlí	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	_
 12	2014	2014	NUM	NUM-A	Case=Acc	11	obl	_	_
+13	en	en	CCONJ	CONJ	_	14	cc	_	_
+14	bætti	bæta	VERB	VBDI	Mood=Ind|Tense=Past	7	conj	_	OriginalHead=0
+15	nú	nú	ADV	ADV	Degree=Pos	14	advmod	_	_
+16	sitt	sinn	PRON	PRO-A	Case=Acc	21	obl	_	_
+17	besta	góður	ADJ	ADJS-A	Case=Acc|Degree=Sup	16	amod	_	_
+18	og	og	CCONJ	CONJ	_	21	cc	_	_
+19	um	um	ADP	P	_	20	case	_	_
+20	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	21	obl	_	_
+21	landsmetið	landsmet	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	14	obj	_	_
+22	í	í	ADP	P	_	23	case	_	_
+23	Saint	saint	PROPN	NPR-D	_	21	obl	_	_
+24	Kitts	kitts	PROPN	NPR-D	_	23	flat:name	_	_
+25	og	og	CCONJ	CONJ	_	26	cc	_	_
+26	Nevis	nevis	PROPN	NPR-D	_	23	conj	_	_
+27	um	um	ADP	P	_	29	case	_	_
+28	þrjá	þrír	NUM	NUM-A	Case=Acc	29	nummod	_	_
+29	hundraðshluta	hundraðshluti	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
+30	úr	úr	ADP	P	_	31	case	_	_
+31	sekúndu	sekúnda	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	29	obl	_	SpaceAfter=No
+32	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-2-1032802.SANITY,.9
-# X_ID = ID_MISSING
-# text = en bætti nú sitt besta og um leið landsmetið í Saint Kitts og Nevis um þrjá hundraðshluta úr sekúndu .
-1	en	en	CCONJ	CONJ	_	2	cc	_	_
-2	bætti	bæta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	sitt	sinn	PRON	PRO-A	Case=Acc	9	obl	_	_
-5	besta	góður	ADJ	ADJS-A	Case=Acc|Degree=Sup	4	amod	_	_
-6	og	og	CCONJ	CONJ	_	9	cc	_	_
-7	um	um	ADP	P	_	8	case	_	_
-8	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
-9	landsmetið	landsmet	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
-10	í	í	ADP	P	_	11	case	_	_
-11	Saint	saint	PROPN	NPR-D	_	9	obl	_	_
-12	Kitts	kitts	PROPN	NPR-D	_	11	flat:name	_	_
-13	og	og	CCONJ	CONJ	_	14	cc	_	_
-14	Nevis	nevis	PROPN	NPR-D	_	11	conj	_	_
-15	um	um	ADP	P	_	17	case	_	_
-16	þrjá	þrír	NUM	NUM-A	Case=Acc	17	nummod	_	_
-17	hundraðshluta	hundraðshluti	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
-18	úr	úr	ADP	P	_	19	case	_	_
-19	sekúndu	sekúnda	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
-20	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1032802.SANITY,.10
-# X_ID = ID_MISSING
-# text = Meðvindur í hlaupinu var 1,9 m/s
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.7
+# X_IDs = ID_missing_10 ; ID_missing_11 ; ID_missing_12
+# text = Meðvindur í hlaupinu var 1,9 m/s og er því tími Collins í gær löglegur, en hann má mest vera +2,0.
 1	Meðvindur	meðvindur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
 2	í	í	ADP	P	_	3	case	_	_
 3	hlaupinu	hlaup	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
@@ -203,37 +191,29 @@
 5	1,9	1,9	NUM	NUM-N	Case=Nom	6	nummod	_	_
 6	m	metri	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
 7-8	/s	_	_	_	_	_	_	_	_
-7-8	/s	_	_	_	_	_	_	_	_7	/	á	ADP	P	_	8	case	_	_
-8	s	sekúnda	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+7	/	á	ADP	P	_	8	case	_	_
+8	$s	sekúnda	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+9	og	og	CCONJ	CONJ	_	16	cc	_	_
+10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
+11	því	það	PRON	PRO-D	Case=Dat	16	obl	_	_
+12	tími	tími	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
+13	Collins	collins	PROPN	NPR-G	_	12	nmod:poss	_	_
+14	í	í	ADP	P	_	15	case	_	_
+15	gær	gær	ADV	ADV	Degree=Pos	12	obl	_	_
+16	löglegur	löglegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	6	conj	_	OriginalHead=0|SpaceAfter=No
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	en	en	CCONJ	CONJ	_	23	cc	_	_
+19	hann	hann	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+20	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	23	aux	_	_
+21	mest	mikill	DET	QS-A	Case=Acc	23	obl	_	_
+22	vera	vera	AUX	BE	VerbForm=Inf	23	cop	_	_
+23	+	plús	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	conj	_	OriginalHead=0|SpaceAfter=No
+24	2,0	2,0	NUM	NUM-N	Case=Nom	23	nummod	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-2-1032802.SANITY,.11
-# X_ID = ID_MISSING
-# text = og er því tími Collins í gær löglegur,
-1	og	og	CCONJ	CONJ	_	8	cc	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
-3	því	það	PRON	PRO-D	Case=Dat	8	obl	_	_
-4	tími	tími	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	nsubj	_	_
-5	Collins	collins	PROPN	NPR-G	_	4	nmod:poss	_	_
-6	í	í	ADP	P	_	7	case	_	_
-7	gær	gær	ADV	ADV	Degree=Pos	4	obl	_	_
-8	löglegur	löglegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	8	punct	_	_
-
-# sent_id = G-2-1032802.SANITY,.12
-# X_ID = ID_MISSING
-# text = en hann má mest vera +2,0 .
-1	en	en	CCONJ	CONJ	_	6	cc	_	_
-2	hann	hann	PRON	PRO-N	Case=Nom	6	nsubj	_	_
-3	má	mega	AUX	MDPI	Mood=Ind|Tense=Pres	6	aux	_	_
-4	mest	mikill	DET	QS-A	Case=Acc	6	obl	_	_
-5	vera	vera	AUX	BE	VerbForm=Inf	6	cop	_	_
-6	+	plús	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
-7	2,0	2,0	NUM	NUM-N	Case=Nom	6	nummod	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	6	punct	_	_
-
-# sent_id = G-2-1032802.SANITY,.13
-# X_ID = ID_MISSING
-# text = Tími Collins í gær er jafnframt heimsmet í aldursflokki 40 ára
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.8
+# X_IDs = ID_missing_13 ; ID_missing_14
+# text = Tími Collins í gær er jafnframt heimsmet í aldursflokki 40 ára og aðeins fjórir hlauparar í heiminum hafa hlaupið hraðar eða jafnhratt á árinu.
 1	Tími	tími	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 2	Collins	collins	PROPN	NPR-G	_	1	nmod:poss	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -245,28 +225,24 @@
 9	aldursflokki	aldursflokkur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	7	obl	_	_
 10	40	fjörutíu	NUM	NUM-G	Case=Gen	11	nummod	_	_
 11	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	nmod:poss	_	_
+12	og	og	CCONJ	CONJ	_	19	cc	_	_
+13	aðeins	aðeins	ADV	FP	Degree=Pos	15	advmod	_	_
+14	fjórir	fjórir	NUM	NUM-N	Case=Nom	15	nummod	_	_
+15	hlauparar	hlaupari	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	19	nsubj	_	_
+16	í	í	ADP	P	_	17	case	_	_
+17	heiminum	heimur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
+18	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	19	aux	_	_
+19	hlaupið	hlaupa	VERB	VBN	Tense=Past|VerbForm=Part	7	conj	_	OriginalHead=0
+20	hraðar	hratt	ADV	ADVR	Degree=Cmp	19	advmod	_	_
+21	eða	eða	CCONJ	CONJ	_	22	cc	_	_
+22	jafnhratt	jafnhratt	ADV	ADV	Degree=Pos	20	conj	_	_
+23	á	á	ADP	P	_	24	case	_	_
+24	árinu	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-2-1032802.SANITY,.14
-# X_ID = ID_MISSING
-# text = og aðeins fjórir hlauparar í heiminum hafa hlaupið hraðar eða jafnhratt á árinu .
-1	og	og	CCONJ	CONJ	_	8	cc	_	_
-2	aðeins	aðeins	ADV	FP	Degree=Pos	4	advmod	_	_
-3	fjórir	fjórir	NUM	NUM-N	Case=Nom	4	nummod	_	_
-4	hlauparar	hlaupari	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	nsubj	_	_
-5	í	í	ADP	P	_	6	case	_	_
-6	heiminum	heimur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
-7	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	8	aux	_	_
-8	hlaupið	hlaupa	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-9	hraðar	hratt	ADV	ADVR	Degree=Cmp	8	advmod	_	_
-10	eða	eða	CCONJ	CONJ	_	11	cc	_	_
-11	jafnhratt	jafnhratt	ADV	ADV	Degree=Pos	9	conj	_	_
-12	á	á	ADP	P	_	13	case	_	_
-13	árinu	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	8	punct	_	_
-
-# sent_id = G-2-1032802.SANITY,.15
-# X_ID = ID_MISSING
-# text = Kim Collins verður meðal þátttakenda á Ólympíuleikunum í Ríó de Janeiro í Brasilíu í ágúst,
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.9
+# X_IDs = ID_missing_15 ; ID_missing_16
+# text = Kim Collins verður meðal þátttakenda á Ólympíuleikunum í Ríó de Janeiro í Brasilíu í ágúst, en það verða fimmtu Ólympíuleikar Collins.
 1	Kim	kim	PROPN	NPR-N	_	3	nsubj	_	_
 2	Collins	collins	PROPN	NPR-N	_	1	flat:name	_	_
 3	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -282,22 +258,18 @@
 13	Brasilíu	brasilía	PROPN	NPR-D	_	9	obl	_	_
 14	í	í	ADP	P	_	15	case	_	_
 15	ágúst	ágúst	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	3	punct	_	_
+16	,	,	PUNCT	,	_	9	punct	_	_
+17	en	en	CCONJ	CONJ	_	19	cc	_	_
+18	það	það	PRON	PRO-N	Case=Nom	19	nsubj	_	_
+19	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+20	fimmtu	fimmti	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	xcomp	_	_
+21	Ólympíuleikar	ólympíuleikar	PROPN	NPRS-N	_	20	conj	_	_
+22	Collins	collins	PROPN	NPR-G	_	20	nmod:poss	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1032802.SANITY,.16
-# X_ID = ID_MISSING
-# text = en það verða fimmtu Ólympíuleikar Collins .
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	fimmtu	fimmti	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	xcomp	_	_
-5	Ólympíuleikar	ólympíuleikar	PROPN	NPRS-N	_	4	conj	_	_
-6	Collins	collins	PROPN	NPR-G	_	4	nmod:poss	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-2-1032802.SANITY,.17
-# X_ID = ID_MISSING
-# text = Hann var fyrst meðal keppenda í Atlanta árið 1996
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.10
+# X_IDs = ID_missing_17 ; ID_missing_18
+# text = Hann var fyrst meðal keppenda í Atlanta árið 1996 og var svo mættur aftur til leiks í Sydney 2000, Aþenu 2004 og í Peking 2008.
 1	Hann	hann	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
 3	fyrst	snemma	ADV	ADVS	Degree=Sup	5	advmod	_	_
@@ -307,32 +279,28 @@
 7	Atlanta	atlanta	PROPN	NPR-D	_	5	obl	_	_
 8	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
 9	1996	1996	NUM	NUM-A	Case=Acc	8	appos	_	_
+10	og	og	CCONJ	CONJ	_	13	cc	_	_
+11	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	13	cop	_	_
+12	svo	svo	ADV	ADV	Degree=Pos	13	advmod	_	_
+13	mættur	mæta	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	OriginalHead=0
+14	aftur	aftur	ADV	ADV	Degree=Pos	13	advmod	_	_
+15	til	til	ADP	P	_	16	case	_	_
+16	leiks	leikur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	obl	_	_
+17	í	í	ADP	P	_	18	case	_	_
+18	Sydney	sydney	PROPN	NPR-D	_	13	obl	_	_
+19	2000	2000	NUM	NUM-A	Case=Acc	18	obl	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	21	punct	_	_
+21	Aþenu	aþena	PROPN	NPR-D	_	18	conj	_	_
+22	2004	2004	NUM	NUM-A	Case=Acc	21	obl	_	_
+23	og	og	CCONJ	CONJ	_	25	cc	_	_
+24	í	í	ADP	P	_	25	case	_	_
+25	Peking	peking	PROPN	NPR-D	_	18	conj	_	_
+26	2008	2008	NUM	NUM-A	Case=Acc	25	obl	_	SpaceAfter=No
+27	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1032802.SANITY,.18
-# X_ID = ID_MISSING
-# text = og var svo mættur aftur til leiks í Sydney 2000, Aþenu 2004 og í Peking 2008 .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
-3	svo	svo	ADV	ADV	Degree=Pos	4	advmod	_	_
-4	mættur	mæta	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-5	aftur	aftur	ADV	ADV	Degree=Pos	4	advmod	_	_
-6	til	til	ADP	P	_	7	case	_	_
-7	leiks	leikur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	4	obl	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	Sydney	sydney	PROPN	NPR-D	_	4	obl	_	_
-10	2000	2000	NUM	NUM-A	Case=Acc	9	obl	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	12	punct	_	_
-12	Aþenu	aþena	PROPN	NPR-D	_	9	conj	_	_
-13	2004	2004	NUM	NUM-A	Case=Acc	12	obl	_	_
-14	og	og	CCONJ	CONJ	_	16	cc	_	_
-15	í	í	ADP	P	_	16	case	_	_
-16	Peking	peking	PROPN	NPR-D	_	9	conj	_	_
-17	2008	2008	NUM	NUM-A	Case=Acc	16	obl	_	SpaceAfter=No
-18	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-2-1032802.SANITY,.19
-# X_ID = ID_MISSING
-# text = Collins var svo mættur til London fyrir fjórum árum til keppni á Ólympíuleikunum 2012,
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.11
+# X_IDs = ID_missing_19 ; ID_missing_20
+# text = Collins var svo mættur til London fyrir fjórum árum til keppni á Ólympíuleikunum 2012, en forsvarsmenn Ólympíusambands Saint Kitts og Nevis ákvaðu að reka hann heim, eftir að Collins yfirgaf Ólympíuþorpið í leyfisleysi til að verja nótt með eiginkonu sinni og börnum þeirra.
 1	Collins	collins	PROPN	NPR-N	_	4	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	4	cop	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -347,46 +315,42 @@
 12	á	á	ADP	P	_	13	case	_	_
 13	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	11	obl	_	_
 14	2012	2012	NUM	NUM-A	Case=Acc	13	obl	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	4	punct	_	_
+15	,	,	PUNCT	,	_	13	punct	_	_
+16	en	en	CCONJ	CONJ	_	25	cc	_	_
+17	forsvarsmenn	forsvarsmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	25	nsubj	_	_
+18	Ólympíusambands	ólympíusamband	PROPN	NPR-G	_	17	nmod:poss	_	_
+19	Saint	saint	PROPN	NPR-G	_	18	flat:name	_	_
+20	Kitts	kitts	PROPN	NPR-G	_	19	flat:name	_	_
+21	og	og	CCONJ	CONJ	_	22	cc	_	_
+22	Nevis	nevis	PROPN	NPR-G	_	19	conj	_	_
+23	ákvaðu	ákvaa	X	X	_	25	dep	_	_
+24	að	að	PART	TO	_	25	mark	_	_
+25	reka	reka	VERB	VB	VerbForm=Inf	4	conj	_	OriginalHead=0
+26	hann	hann	PRON	PRO-A	Case=Acc	25	obj	_	_
+27	heim	heim	ADV	ADV	Degree=Pos	25	advmod	_	SpaceAfter=No
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	eftir	eftir	ADP	P	_	32	case	_	_
+30	að	að	SCONJ	C	_	32	mark	_	_
+31	Collins	collins	PROPN	NPR-N	_	32	nsubj	_	_
+32	yfirgaf	yfirgefa	VERB	VBDI	Mood=Ind|Tense=Past	25	obl	_	_
+33	Ólympíuþorpið	ólympíuþorp	PROPN	NPR-A	_	32	obj	_	_
+34	í	í	ADP	P	_	35	case	_	_
+35	leyfisleysi	leyfisleysi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	32	obl	_	_
+36	til	til	ADP	P	_	38	case	_	_
+37	að	að	PART	TO	_	38	advcl	_	_
+38	verja	verja	VERB	VB	VerbForm=Inf	32	obl	_	_
+39	nótt	nótt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	38	obj	_	_
+40	með	með	ADP	P	_	41	case	_	_
+41	eiginkonu	eiginkona	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	38	obl	_	_
+42	sinni	sinn	PRON	PRO-D	Case=Dat	41	nmod:poss	_	_
+43	og	og	CCONJ	CONJ	_	44	cc	_	_
+44	börnum	barn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	41	conj	_	_
+45	þeirra	það	PRON	PRO-G	Case=Gen	44	nmod:poss	_	SpaceAfter=No
+46	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1032802.SANITY,.20
-# X_ID = ID_MISSING
-# text = en forsvarsmenn Ólympíusambands Saint Kitts og Nevis ákvaðu að reka hann heim, eftir að Collins yfirgaf Ólympíuþorpið í leyfisleysi til að verja nótt með eiginkonu sinni og börnum þeirra .
-1	en	en	CCONJ	CONJ	_	10	cc	_	_
-2	forsvarsmenn	forsvarsmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	10	nsubj	_	_
-3	Ólympíusambands	ólympíusamband	PROPN	NPR-G	_	2	nmod:poss	_	_
-4	Saint	saint	PROPN	NPR-G	_	3	flat:name	_	_
-5	Kitts	kitts	PROPN	NPR-G	_	4	flat:name	_	_
-6	og	og	CCONJ	CONJ	_	7	cc	_	_
-7	Nevis	nevis	PROPN	NPR-G	_	4	conj	_	_
-8	ákvaðu	ákvaa	X	X	_	10	dep	_	_
-9	að	að	PART	TO	_	10	mark	_	_
-10	reka	reka	VERB	VB	VerbForm=Inf	0	root	_	_
-11	hann	hann	PRON	PRO-A	Case=Acc	10	obj	_	_
-12	heim	heim	ADV	ADV	Degree=Pos	10	advmod	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	12	punct	_	_
-14	eftir	eftir	ADP	P	_	17	case	_	_
-15	að	að	SCONJ	C	_	17	mark	_	_
-16	Collins	collins	PROPN	NPR-N	_	17	nsubj	_	_
-17	yfirgaf	yfirgefa	VERB	VBDI	Mood=Ind|Tense=Past	10	obl	_	_
-18	Ólympíuþorpið	ólympíuþorp	PROPN	NPR-A	_	17	obj	_	_
-19	í	í	ADP	P	_	20	case	_	_
-20	leyfisleysi	leyfisleysi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
-21	til	til	ADP	P	_	23	case	_	_
-22	að	að	PART	TO	_	23	advcl	_	_
-23	verja	verja	VERB	VB	VerbForm=Inf	17	obl	_	_
-24	nótt	nótt	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obj	_	_
-25	með	með	ADP	P	_	26	case	_	_
-26	eiginkonu	eiginkona	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
-27	sinni	sinn	PRON	PRO-D	Case=Dat	26	nmod:poss	_	_
-28	og	og	CCONJ	CONJ	_	29	cc	_	_
-29	börnum	barn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	26	conj	_	_
-30	þeirra	það	PRON	PRO-G	Case=Gen	29	nmod:poss	_	SpaceAfter=No
-31	.	.	PUNCT	.	_	10	punct	_	_
-
-# sent_id = G-2-1032802.SANITY,.21
-# X_ID = ID_MISSING
-# text = Collins hljóp því aldrei á leikunum í London,
+# sent_id = RUV_TGS_2016_G-2-1032802.SANITY,.12
+# X_IDs = ID_missing_21 ; ID_missing_22
+# text = Collins hljóp því aldrei á leikunum í London, en mætir nú sterkari en nokkru sinni fyrr til leiks þegar það styttist í Ólympíuleikana í Ríó, sem verða þá hans fimmtu leikar.
 1	Collins	collins	PROPN	NPR-N	_	2	nsubj	_	_
 2	hljóp	hlaupa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
@@ -396,30 +360,29 @@
 7	í	í	ADP	P	_	8	case	_	_
 8	London	london	PROPN	NPR-D	_	6	obl	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	2	punct	_	_
-
-1	en	en	CCONJ	CONJ	_	2	cc	_	_
-2	mætir	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	sterkari	sterkur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	2	amod	_	_
-5	en	en	ADP	P	_	7	case	_	_
-6	nokkru	nokkur	DET	Q-D	Case=Dat	7	amod	_	_
-7	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	amod	_	_
-8	fyrr	snemma	ADV	ADVR	Degree=Cmp	7	advmod	_	_
-9	til	til	ADP	P	_	10	case	_	_
-10	leiks	leikur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	2	obl	_	_
-11	þegar	þegar	ADP	P	_	13	case	_	_
-12	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	13	expl	_	_
-13	styttist	stytta	VERB	VBPI	Mood=Ind|Tense=Pres	2	obl	_	_
-14	í	í	ADP	P	_	15	case	_	_
-15	Ólympíuleikana	ólympíuleikar	PROPN	NPRS-A	_	13	obl	_	_
-16	í	í	ADP	P	_	17	case	_	_
-17	Ríó	ríó	PROPN	NPR-D	_	15	obl	_	_
-18	,	,	PUNCT	,	_	17	punct	_	_
-19	sem	sem	SCONJ	C	_	20	mark	_	_
-20	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	15	acl:relcl	_	_
-21	þá	þá	ADV	ADV	Degree=Pos	20	advmod	_	_
-22	hans	hann	PRON	PRO-G	Case=Gen	24	nmod:poss	_	_
-23	fimmtu	fimmti	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	amod	_	_
-24	leikar	leikur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	20	xcomp	_	_
-25	.	.	PUNCT	.	_	2	punct	_	_
+10	en	en	CCONJ	CONJ	_	11	cc	_	_
+11	mætir	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+12	nú	nú	ADV	ADV	Degree=Pos	11	advmod	_	_
+13	sterkari	sterkur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	11	amod	_	_
+14	en	en	ADP	P	_	16	case	_	_
+15	nokkru	nokkur	DET	Q-D	Case=Dat	16	amod	_	_
+16	sinni	sinn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	amod	_	_
+17	fyrr	snemma	ADV	ADVR	Degree=Cmp	16	advmod	_	_
+18	til	til	ADP	P	_	19	case	_	_
+19	leiks	leikur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	11	obl	_	_
+20	þegar	þegar	ADP	P	_	22	case	_	_
+21	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	22	expl	_	_
+22	styttist	stytta	VERB	VBPI	Mood=Ind|Tense=Pres	11	obl	_	_
+23	í	í	ADP	P	_	24	case	_	_
+24	Ólympíuleikana	ólympíuleikar	PROPN	NPRS-A	_	22	obl	_	_
+25	í	í	ADP	P	_	26	case	_	_
+26	Ríó	ríó	PROPN	NPR-D	_	24	obl	_	SpaceAfter=No
+27	,	,	PUNCT	,	_	26	punct	_	_
+28	sem	sem	SCONJ	C	_	29	mark	_	_
+29	verða	verða	VERB	RDPI	Mood=Ind|Tense=Pres	24	acl:relcl	_	_
+30	þá	þá	ADV	ADV	Degree=Pos	29	advmod	_	_
+31	hans	hann	PRON	PRO-G	Case=Gen	33	nmod:poss	_	_
+32	fimmtu	fimmti	ADJ	ADJ-N	Case=Nom|Degree=Pos	33	amod	_	_
+33	leikar	leikur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	29	xcomp	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	2	punct	_	_
 

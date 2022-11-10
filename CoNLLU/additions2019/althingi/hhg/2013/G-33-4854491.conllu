@@ -1,6 +1,6 @@
-# sent_id = G-33-4854491,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Ég þakka hv. þingmanni kærlega fyrir svarið .
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Ég þakka hv. þingmanni kærlega fyrir svarið.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -13,9 +13,9 @@
 10	svarið	svar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4854491,.2
-# X_ID = ID_MISSING
-# text = Ég hlakka til að skoða þetta aðeins betur .
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.2
+# X_ID = ID_missing_2
+# text = Ég hlakka til að skoða þetta aðeins betur.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hlakka	hlakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	til	til	ADP	P	_	5	case	_	_
@@ -26,9 +26,9 @@
 8	betur	vel	ADV	ADVR	Degree=Cmp	7	advmod	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4854491,.3
-# X_ID = ID_MISSING
-# text = Til að árétta hvað ég átti nákvæmlega við er það ekki bara það að öryrkjar og atvinnulausir fái ekki desemberuppbótina, jafnvel þótt það væri bara til að borga reikningana,
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Til að árétta hvað ég átti nákvæmlega við er það ekki bara það að öryrkjar og atvinnulausir fái ekki desemberuppbótina, jafnvel þótt það væri bara til að borga reikningana, það er ekki punktur minn, heldur að við undanskiljum þau í raun og veru frá því að taka þátt í jólunum, að taka þátt í þessari trylltu góðmennsku sem maður vonar að jólin snúist um.
 1	Til	til	ADP	P	_	3	case	_	_
 2	að	að	PART	TO	_	3	advcl	_	_
 3	árétta	árétta	VERB	VB	VerbForm=Inf	13	obl	_	_
@@ -59,53 +59,49 @@
 28	að	að	PART	TO	_	29	advcl	_	_
 29	borga	borga	VERB	VB	VerbForm=Inf	18	obl	_	_
 30	reikningana	reikningur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	29	obj	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	13	punct	_	_
+31	,	,	PUNCT	,	_	29	punct	_	_
+32	það	það	PRON	PRO-N	Case=Nom	35	nsubj	_	_
+33	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
+34	ekki	ekki	ADV	NEG	_	35	advmod	_	_
+35	punktur	punktur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	conj	_	OriginalHead=0
+36	minn	minn	PRON	PRO-N	Case=Nom	35	nmod:poss	_	SpaceAfter=No
+37	,	,	PUNCT	,	_	36	punct	_	_
+38	heldur	heldur	ADV	ADVR	Degree=Cmp	35	advmod	_	_
+39	að	að	SCONJ	C	_	41	mark	_	_
+40	við	ég	PRON	PRO-N	Case=Nom	41	nsubj	_	_
+41	undanskiljum	undanskilja	VERB	VBPI	Mood=Ind|Tense=Pres	35	ccomp	_	_
+42	þau	það	PRON	PRO-A	Case=Acc	41	obj	_	_
+43	í	í	ADP	P	_	44	case	_	_
+44	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	41	obl	_	_
+45	og	og	CCONJ	CONJ	_	46	cc	_	_
+46	veru	vera	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	44	conj	_	_
+47	frá	frá	ADP	P	_	48	case	_	_
+48	því	það	PRON	PRO-D	Case=Dat	41	obl	_	_
+49	að	að	X	TP	_	50	dep	_	_
+50	taka	taka	VERB	VB	VerbForm=Inf	48	xcomp	_	_
+51	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	50	obj	_	_
+52	í	í	ADP	P	_	53	case	_	_
+53	jólunum	jól	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	50	obl	_	SpaceAfter=No
+54	,	,	PUNCT	,	_	53	punct	_	_
+55	að	að	PART	TO	_	56	mark	_	_
+56	taka	taka	VERB	VB	VerbForm=Inf	48	xcomp	_	_
+57	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	56	obj	_	_
+58	í	í	ADP	P	_	61	case	_	_
+59	þessari	þessi	DET	D-D	Case=Dat	61	det	_	_
+60	trylltu	trylltur	ADJ	ADJ-D	Case=Dat|Degree=Pos	61	amod	_	_
+61	góðmennsku	góðmennska	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	56	obl	_	_
+62	sem	sem	SCONJ	C	_	64	mark	_	_
+63	maður	maður	PRON	MAN-N	_	64	nsubj	_	_
+64	vonar	vona	VERB	VBPI	Mood=Ind|Tense=Pres	61	acl:relcl	_	_
+65	að	að	SCONJ	C	_	67	mark	_	_
+66	jólin	jól	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	67	nsubj	_	_
+67	snúist	snúa	VERB	VBPS	Mood=Sub|Tense=Pres	64	ccomp	_	_
+68	um	um	ADV	ADV	Degree=Pos	67	advmod	_	SpaceAfter=No
+69	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = G-33-4854491,.4
-# X_ID = ID_MISSING
-# text = það er ekki punktur minn, heldur að við undanskiljum þau í raun og veru frá því að taka þátt í jólunum, að taka þátt í þessari trylltu góðmennsku sem maður vonar að jólin snúist um .
-1	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
-4	punktur	punktur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-5	minn	minn	PRON	PRO-N	Case=Nom	4	nmod:poss	_	SpaceAfter=No
-6	,	,	PUNCT	,	_	5	punct	_	_
-7	heldur	heldur	ADV	ADVR	Degree=Cmp	4	advmod	_	_
-8	að	að	SCONJ	C	_	10	mark	_	_
-9	við	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-10	undanskiljum	undanskilja	VERB	VBPI	Mood=Ind|Tense=Pres	4	ccomp	_	_
-11	þau	það	PRON	PRO-A	Case=Acc	10	obj	_	_
-12	í	í	ADP	P	_	13	case	_	_
-13	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	_
-14	og	og	CCONJ	CONJ	_	15	cc	_	_
-15	veru	vera	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	conj	_	_
-16	frá	frá	ADP	P	_	17	case	_	_
-17	því	það	PRON	PRO-D	Case=Dat	10	obl	_	_
-18	að	að	X	TP	_	19	dep	_	_
-19	taka	taka	VERB	VB	VerbForm=Inf	17	xcomp	_	_
-20	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	19	obj	_	_
-21	í	í	ADP	P	_	22	case	_	_
-22	jólunum	jól	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	19	obl	_	SpaceAfter=No
-23	,	,	PUNCT	,	_	22	punct	_	_
-24	að	að	PART	TO	_	25	mark	_	_
-25	taka	taka	VERB	VB	VerbForm=Inf	17	xcomp	_	_
-26	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obj	_	_
-27	í	í	ADP	P	_	30	case	_	_
-28	þessari	þessi	DET	D-D	Case=Dat	30	det	_	_
-29	trylltu	trylltur	ADJ	ADJ-D	Case=Dat|Degree=Pos	30	amod	_	_
-30	góðmennsku	góðmennska	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	25	obl	_	_
-31	sem	sem	SCONJ	C	_	33	mark	_	_
-32	maður	maður	PRON	MAN-N	_	33	nsubj	_	_
-33	vonar	vona	VERB	VBPI	Mood=Ind|Tense=Pres	30	acl:relcl	_	_
-34	að	að	SCONJ	C	_	36	mark	_	_
-35	jólin	jól	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	36	nsubj	_	_
-36	snúist	snúa	VERB	VBPS	Mood=Sub|Tense=Pres	33	ccomp	_	_
-37	um	um	ADV	ADV	Degree=Pos	36	advmod	_	SpaceAfter=No
-38	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4854491,.5
-# X_ID = ID_MISSING
-# text = Hv. þingmaður var í ríkisstjórn á síðasta kjörtímabil .
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.4
+# X_ID = ID_missing_5
+# text = Hv. þingmaður var í ríkisstjórn á síðasta kjörtímabil.
 1	Hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 3	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	5	cop	_	_
@@ -116,9 +112,9 @@
 8	kjörtímabil	kjörtímabil	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4854491,.6
-# X_ID = ID_MISSING
-# text = Því meira sem ég skoða þetta fjárlagafrumvarp, því meira undrandi verð ég á því að það hafi tekist að skera þó þetta mikið á hallann sem myndaðist í kjölfar hrunsins .
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.5
+# X_ID = ID_missing_6
+# text = Því meira sem ég skoða þetta fjárlagafrumvarp, því meira undrandi verð ég á því að það hafi tekist að skera þó þetta mikið á hallann sem myndaðist í kjölfar hrunsins.
 1	Því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
 2	meira	mikill	DET	QR-A	Case=Acc	12	obl	_	_
 3	sem	sem	SCONJ	C	_	5	mark	_	_
@@ -152,9 +148,9 @@
 31	hrunsins	hrun	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	30	nmod:poss	_	SpaceAfter=No
 32	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = G-33-4854491,.7
-# X_ID = ID_MISSING
-# text = Nú veit ég að það var farin svokölluð blönduð leið, það er leið tekjustyrkingar eða skattahækkana og niðurskurðar, eins óþægilegt og það er, sérstaklega fyrir vinstri stjórn .
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.6
+# X_ID = ID_missing_7
+# text = Nú veit ég að það var farin svokölluð blönduð leið, það er leið tekjustyrkingar eða skattahækkana og niðurskurðar, eins óþægilegt og það er, sérstaklega fyrir vinstri stjórn.
 1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	veit	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -187,9 +183,9 @@
 30	stjórn	stjórn	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	27	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4854491,.8
-# X_ID = ID_MISSING
-# text = Ég vil hrósa hv. þingmanni fyrir að hafa þó haft kjarkinn til að takast á við þau verkefni því að það er sennilega erfiðast fyrir Vinstri græna og Samfylkinguna af öllum flokkum að þurfa að gera það sem þurfti að gera .
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.7
+# X_ID = ID_missing_8
+# text = Ég vil hrósa hv. þingmanni fyrir að hafa þó haft kjarkinn til að takast á við þau verkefni því að það er sennilega erfiðast fyrir Vinstri græna og Samfylkinguna af öllum flokkum að þurfa að gera það sem þurfti að gera.
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	hrósa	hrósa	VERB	VB	VerbForm=Inf	0	root	_	_
@@ -233,9 +229,9 @@
 41	gera	gera	VERB	DO	VerbForm=Inf	39	xcomp	_	SpaceAfter=No
 42	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4854491,.9
-# X_ID = ID_MISSING
-# text = Ég velti fyrir mér hvort það séu einhver nánari fræði á bak við það hvernig þetta var gert .
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.8
+# X_ID = ID_missing_9
+# text = Ég velti fyrir mér hvort það séu einhver nánari fræði á bak við það hvernig þetta var gert.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	velti	velta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -256,9 +252,9 @@
 18	gert	gera	VERB	DAN	Tense=Past|VerbForm=Part	14	ccomp	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4854491,.10
-# X_ID = ID_MISSING
-# text = Þrátt fyrir þau vandamál sem að okkur steðja núna finnst mér árangurinn ótrúlegur miðað við það sem við horfðum framan í á sínum tíma .
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.9
+# X_ID = ID_missing_10
+# text = Þrátt fyrir þau vandamál sem að okkur steðja núna finnst mér árangurinn ótrúlegur miðað við það sem við horfðum framan í á sínum tíma.
 1	Þrátt	þrátt	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	fyrir	fyrir	ADP	P	_	4	case	_	_
 3	þau	sá	DET	D-A	Case=Acc	4	det	_	_
@@ -285,9 +281,9 @@
 24	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = G-33-4854491,.11
-# X_ID = ID_MISSING
-# text = Hv. þingmaður nefndi með útlendinga í námi hér að þetta gæti borgað sig fyrir okkur .
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.10
+# X_ID = ID_missing_11
+# text = Hv. þingmaður nefndi með útlendinga í námi hér að þetta gæti borgað sig fyrir okkur.
 1	Hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	nefndi	nefna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -305,32 +301,28 @@
 15	okkur	ég	PRON	PRO-A	Case=Acc	12	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4854491,.12
-# X_ID = ID_MISSING
-# text = Ég er því sammála
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.11
+# X_IDs = ID_missing_12 ; ID_missing_13
+# text = Ég er því sammála en þá fer ég einmitt að velta fyrir mér langtímafjárfestingum.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	því	því	ADV	ADV	Degree=Pos	4	obl	_	_
 4	sammála	sammála	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+5	en	en	CCONJ	CONJ	_	7	cc	_	_
+6	þá	þá	ADV	ADV	Degree=Pos	7	advmod	_	_
+7	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+8	ég	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
+9	einmitt	einmitt	ADV	ADV	Degree=Pos	7	advmod	_	_
+10	að	að	PART	TO	_	11	mark	_	_
+11	velta	velta	VERB	VB	VerbForm=Inf	7	xcomp	_	_
+12	fyrir	fyrir	ADP	P	_	13	case	_	_
+13	mér	ég	PRON	PRO-D	Case=Dat	11	obl	_	_
+14	langtímafjárfestingum	langtímafjárfesting	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	11	obj	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4854491,.13
-# X_ID = ID_MISSING
-# text = en þá fer ég einmitt að velta fyrir mér langtímafjárfestingum .
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
-3	fer	fara	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-5	einmitt	einmitt	ADV	ADV	Degree=Pos	3	advmod	_	_
-6	að	að	PART	TO	_	7	mark	_	_
-7	velta	velta	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-8	fyrir	fyrir	ADP	P	_	9	case	_	_
-9	mér	ég	PRON	PRO-D	Case=Dat	7	obl	_	_
-10	langtímafjárfestingum	langtímafjárfesting	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	obj	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4854491,.14
-# X_ID = ID_MISSING
-# text = Af hvaða helstu aðferðum tekur hv. þingmaður mið þegar taka þarf ákvarðanir um fjárútlát til langtímafjárfestinga á borð við nám eða eins og ég mundi segja lýðræðisumbætur sem ég tel svolítið áhugaverðan vinkil ?
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.12
+# X_ID = ID_missing_14
+# text = Af hvaða helstu aðferðum tekur hv. þingmaður mið þegar taka þarf ákvarðanir um fjárútlát til langtímafjárfestinga á borð við nám eða eins og ég mundi segja lýðræðisumbætur sem ég tel svolítið áhugaverðan vinkil?
 1	Af	af	ADP	P	_	4	case	_	_
 2	hvaða	hvaða	DET	WD-D	Case=Dat	4	det	_	_
 3	helstu	heldri	ADJ	ADJS-D	Case=Dat|Degree=Sup	4	amod	_	_
@@ -366,35 +358,34 @@
 33	vinkil	vinkill	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	30	ccomp	_	SpaceAfter=No
 34	?	?	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4854491,.15
-# X_ID = ID_MISSING
-# text = Nú hef ég ekki meiri tíma,
+# sent_id = ALTHINGI_HHG_2013_G-33-4854491,.13
+# X_IDs = ID_missing_15 ; ID_missing_16
+# text = Nú hef ég ekki meiri tíma, en hvaða fræði eru það helst sem hv. þingmaður mundi taka til við ákvörðun Forseti hringir. um langtímafjárfestingar?
 1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 4	ekki	ekki	ADV	NEG	_	2	advmod	_	_
 5	meiri	mikill	DET	QR-A	Case=Acc	6	amod	_	_
 6	tíma	tími	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	SpaceAfter=No
-7	,	,	PUNCT	,	_	2	punct	_	_
-
-1	en	en	CCONJ	CONJ	_	5	cc	_	_
-2	hvaða	hvaða	DET	WD-N	Case=Nom	3	det	_	_
-3	fræði	fræði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	obj	_	_
-4	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-5	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
-6	helst	gjarna	ADV	ADVS	Degree=Sup	5	advmod	_	_
-7	sem	sem	SCONJ	C	_	11	mark	_	_
-8	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
-9	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	nsubj	_	_
-10	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	11	aux	_	_
-11	taka	taka	VERB	VB	VerbForm=Inf	5	acl:relcl	_	_
-12	til	til	ADP	RP	_	11	compound:prt	_	_
-13	við	við	ADP	P	_	14	case	_	_
-14	ákvörðun	ákvörðun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
-15	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	16	nsubj	_	_
-16	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	14	dep	_	_
-17	.	.	PUNCT	.	_	16	punct	_	_
-18	um	um	ADP	P	_	19	case	_	_
-19	langtímafjárfestingar	langtímafjárfesting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
-20	?	?	PUNCT	.	_	5	punct	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	en	en	CCONJ	CONJ	_	12	cc	_	_
+9	hvaða	hvaða	DET	WD-N	Case=Nom	10	det	_	_
+10	fræði	fræði	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	12	obj	_	_
+11	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
+12	það	það	PRON	PRO-N	Case=Nom	2	conj	_	OriginalHead=0
+13	helst	gjarna	ADV	ADVS	Degree=Sup	12	advmod	_	_
+14	sem	sem	SCONJ	C	_	18	mark	_	_
+15	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	16	amod	_	_
+16	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
+17	mundi	munu	AUX	MDDS	Mood=Sub|Tense=Past	18	aux	_	_
+18	taka	taka	VERB	VB	VerbForm=Inf	12	acl:relcl	_	_
+19	til	til	ADP	RP	_	18	compound:prt	_	_
+20	við	við	ADP	P	_	21	case	_	_
+21	ákvörðun	ákvörðun	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
+22	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	23	nsubj	_	_
+23	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	21	dep	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	23	punct	_	_
+25	um	um	ADP	P	_	26	case	_	_
+26	langtímafjárfestingar	langtímafjárfesting	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	21	obl	_	SpaceAfter=No
+27	?	?	PUNCT	.	_	2	punct	_	_
 

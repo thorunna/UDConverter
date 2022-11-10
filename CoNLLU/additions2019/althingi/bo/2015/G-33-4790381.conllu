@@ -1,6 +1,6 @@
-# sent_id = G-33-4790381,.1
-# X_ID = ID_MISSING
-# text = Hæstv. forseti . Ég vil byrja á því að biðjast afsökunar á því að hafa ætlað hæstv. forsætisráðherra það að hafa sett inn þessar skilyrðingar ef það er meiri hluti fjárlaganefndar sem gerði það .
+# sent_id = ALTHINGI_BO_2015_G-33-4790381,.1
+# X_ID = ID_missing_1
+# text = Hæstv. forseti. Ég vil byrja á því að biðjast afsökunar á því að hafa ætlað hæstv. forsætisráðherra það að hafa sett inn þessar skilyrðingar ef það er meiri hluti fjárlaganefndar sem gerði það.
 1	Hæstv.	hæstvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -37,31 +37,27 @@
 34	það	það	PRON	PRO-A	Case=Acc	33	obj	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4790381,.2
-# X_ID = ID_MISSING
-# text = Rétt skal vera rétt í því
+# sent_id = ALTHINGI_BO_2015_G-33-4790381,.2
+# X_IDs = ID_missing_2 ; ID_missing_3
+# text = Rétt skal vera rétt í því og ég þakka bara fyrir þær upplýsingar.
 1	Rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	nsubj	_	_
 2	skal	skulu	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	vera	vera	AUX	BE	VerbForm=Inf	2	cop	_	_
 4	rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 5	í	í	ADP	P	_	6	case	_	_
 6	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
+7	og	og	CCONJ	CONJ	_	9	cc	_	_
+8	ég	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+9	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+10	bara	bara	ADV	FP	Degree=Pos	9	advmod	_	_
+11	fyrir	fyrir	ADP	P	_	13	case	_	_
+12	þær	sá	DET	D-A	Case=Acc	13	det	_	_
+13	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obl	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4790381,.3
-# X_ID = ID_MISSING
-# text = og ég þakka bara fyrir þær upplýsingar .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	þakka	þakka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	bara	bara	ADV	FP	Degree=Pos	3	advmod	_	_
-5	fyrir	fyrir	ADP	P	_	7	case	_	_
-6	þær	sá	DET	D-A	Case=Acc	7	det	_	_
-7	upplýsingar	upplýsing	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obl	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4790381,.4
-# X_ID = ID_MISSING
-# text = Ég bíð náttúrlega eftir svari um þetta kostnaðarmódel, hvernig við getum passað sem best upp á að spítalinn fái það sem hann þarf út af því að nú vitum við að það er meira álag, sjúklingar eru fleiri, þyngslin eru meiri og við verðum auðvitað að borga fyrir það .
+# sent_id = ALTHINGI_BO_2015_G-33-4790381,.3
+# X_ID = ID_missing_4
+# text = Ég bíð náttúrlega eftir svari um þetta kostnaðarmódel, hvernig við getum passað sem best upp á að spítalinn fái það sem hann þarf út af því að nú vitum við að það er meira álag, sjúklingar eru fleiri, þyngslin eru meiri og við verðum auðvitað að borga fyrir það.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	bíð	bíða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	náttúrlega	náttúrlega	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -116,9 +112,9 @@
 52	það	það	PRON	PRO-A	Case=Acc	50	obl	_	SpaceAfter=No
 53	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4790381,.5
-# X_ID = ID_MISSING
-# text = Við getum ekki ætlast til þess að finna út úr þessu með því bara að láta fólk einhvern veginn lifa á loftinu þarna .
+# sent_id = ALTHINGI_BO_2015_G-33-4790381,.4
+# X_ID = ID_missing_5
+# text = Við getum ekki ætlast til þess að finna út úr þessu með því bara að láta fólk einhvern veginn lifa á loftinu þarna.
 1	Við	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -144,9 +140,9 @@
 23	þarna	þarna	ADV	ADV	Degree=Pos	20	advmod	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4790381,.6
-# X_ID = ID_MISSING
-# text = Annað sem mig langar að nefna í fjárlagafrumvarpinu er þessi sérstaka norðvesturnefnd sem var sett á fót til þess að efla hag þess hluta landsins í fjárlagafrumvarpinu .
+# sent_id = ALTHINGI_BO_2015_G-33-4790381,.5
+# X_ID = ID_missing_6
+# text = Annað sem mig langar að nefna í fjárlagafrumvarpinu er þessi sérstaka norðvesturnefnd sem var sett á fót til þess að efla hag þess hluta landsins í fjárlagafrumvarpinu.
 1	Annað	annar	PRON	OTHER-N	Case=Nom	12	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	mig	ég	PRON	PRO-A	Case=Acc	4	nsubj	_	_
@@ -176,9 +172,9 @@
 27	fjárlagafrumvarpinu	fjárlagafrumvarp	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	12	punct	_	_
 
-# sent_id = G-33-4790381,.7
-# X_ID = ID_MISSING
-# text = Það er allt gott og blessað með það að styðja við byggðir .
+# sent_id = ALTHINGI_BO_2015_G-33-4790381,.6
+# X_ID = ID_missing_7
+# text = Það er allt gott og blessað með það að styðja við byggðir.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	allt	allur	DET	Q-N	Case=Nom	4	amod	_	_
@@ -193,9 +189,9 @@
 12	byggðir	byggð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4790381,.8
-# X_ID = ID_MISSING
-# text = En ég spyr mig um þá aðferðafræði við að færa þeim parti landsins um 250 milljónir eftir því sem okkur reiknast til þegar óljóst er hvað hinir partarnir eiga að fá, því að við eða þeir sem hér hafa setið lengur vorum með þetta í ágætum farvegi að ég tel sem heitir sóknaráætlun landshluta . Þar voru landshlutarnir allir, fólkið þar og sveitarfélögin þar inni, þurftu að forgangsraða hjá sér og sækja inn í ríkissjóð til þess að efla sínar byggðir .
+# sent_id = ALTHINGI_BO_2015_G-33-4790381,.7
+# X_ID = ID_missing_8
+# text = En ég spyr mig um þá aðferðafræði við að færa þeim parti landsins um 250 milljónir eftir því sem okkur reiknast til þegar óljóst er hvað hinir partarnir eiga að fá, því að við eða þeir sem hér hafa setið lengur vorum með þetta í ágætum farvegi að ég tel sem heitir sóknaráætlun landshluta. Þar voru landshlutarnir allir, fólkið þar og sveitarfélögin þar inni, þurftu að forgangsraða hjá sér og sækja inn í ríkissjóð til þess að efla sínar byggðir.
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -282,6 +278,9 @@
 84	byggðir	byggð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	82	obj	_	SpaceAfter=No
 85	.	.	PUNCT	.	_	3	punct	_	_
 
+# sent_id = ALTHINGI_BO_2015_G-33-4790381,.8
+# X_ID = ID_missing_9
+# text = Hvernig stendur á því að í þessu fjárlagafrumvarpi er einum parti gert svona hátt undir höfði en öðrum ekki?
 1	Hvernig	hvernig	ADV	WADV	Degree=Pos	2	advmod	_	_
 2	stendur	standa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	á	á	ADP	P	_	4	case	_	_
@@ -300,6 +299,6 @@
 16	höfði	höfuð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	amod	_	_
 17	en	en	CCONJ	CONJ	_	18	cc	_	_
 18	öðrum	annar	PRON	OTHER-D	Case=Dat	12	conj	_	_
-19	ekki	ekki	ADV	NEG	_	18	advmod	_	_
+19	ekki	ekki	ADV	NEG	_	18	advmod	_	SpaceAfter=No
 20	?	?	PUNCT	.	_	2	punct	_	_
 

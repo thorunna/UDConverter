@@ -1,6 +1,6 @@
-# sent_id = G-33-4616309,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Ég þakka svörin .
+# sent_id = ALTHINGI_BO_2014_G-33-4616309,.1
+# X_ID = ID_missing_1
+# text = Frú forseti. Ég þakka svörin.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -9,9 +9,9 @@
 6	svörin	svar	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obj	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4616309,.2
-# X_ID = ID_MISSING
-# text = Samanburðurinn við Sviss var áhugaverður .
+# sent_id = ALTHINGI_BO_2014_G-33-4616309,.2
+# X_ID = ID_missing_2
+# text = Samanburðurinn við Sviss var áhugaverður.
 1	Samanburðurinn	samanburður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 2	við	við	ADP	P	_	3	case	_	_
 3	Sviss	sviss	PROPN	NPR-A	_	1	obl	_	_
@@ -19,9 +19,9 @@
 5	áhugaverður	áhugaverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4616309,.3
-# X_ID = ID_MISSING
-# text = Sviss er væntanlega í allt annarri stöðu en við þar sem þeir þurfa ekki sífellt að fella gengi sitt til að vera samanburðarhæfir og geta verið í samvinnu við aðrar þjóðir, af því þeir eru svo sterkir á velli .
+# sent_id = ALTHINGI_BO_2014_G-33-4616309,.3
+# X_ID = ID_missing_3
+# text = Sviss er væntanlega í allt annarri stöðu en við þar sem þeir þurfa ekki sífellt að fella gengi sitt til að vera samanburðarhæfir og geta verið í samvinnu við aðrar þjóðir, af því þeir eru svo sterkir á velli.
 1	Sviss	sviss	PROPN	NPR-N	_	7	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
 3	væntanlega	væntanlega	ADV	ADV	Degree=Pos	7	advmod	_	_
@@ -64,9 +64,9 @@
 40	velli	völlur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	38	obl	_	SpaceAfter=No
 41	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4616309,.4
-# X_ID = ID_MISSING
-# text = Skil ég þingmanninn rétt að hún telji að þetta geti haldið svona áfram um X langa tíð eða alla vega þau þrjú ár sem þessi ríkisstjórn á að eiga eftir,
+# sent_id = ALTHINGI_BO_2014_G-33-4616309,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Skil ég þingmanninn rétt að hún telji að þetta geti haldið svona áfram um X langa tíð eða alla vega þau þrjú ár sem þessi ríkisstjórn á að eiga eftir, eða hvað sér hún fyrir sér með þetta hlé?
 1	Skil	skilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	1	nsubj	_	_
 3	þingmanninn	þingmaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obj	_	_
@@ -97,22 +97,21 @@
 28	að	að	PART	TO	_	29	mark	_	_
 29	eiga	eiga	VERB	VB	VerbForm=Inf	27	xcomp	_	_
 30	eftir	eftir	ADV	ADV	Degree=Pos	29	ccomp	_	SpaceAfter=No
-31	,	,	PUNCT	,	_	1	punct	_	_
+31	,	,	PUNCT	,	_	29	punct	_	_
+32	eða	eða	CCONJ	CONJ	_	34	cc	_	_
+33	hvað	hver	PRON	WPRO-A	Case=Acc	34	obj	_	_
+34	sér	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0
+35	hún	hún	PRON	PRO-N	Case=Nom	34	nsubj	_	_
+36	fyrir	fyrir	ADP	P	_	37	case	_	_
+37	sér	sig	PRON	PRO-D	Case=Dat	34	obl	_	_
+38	með	með	ADP	P	_	40	case	_	_
+39	þetta	þessi	DET	D-A	Case=Acc	40	det	_	_
+40	hlé	hlé	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	obl	_	SpaceAfter=No
+41	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4616309,.5
-# X_ID = ID_MISSING
-# text = eða hvað sér hún fyrir sér með þetta hlé ?
-1	eða	eða	CCONJ	CONJ	_	3	cc	_	_
-2	hvað	hver	PRON	WPRO-A	Case=Acc	3	obj	_	_
-3	sér	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	hún	hún	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-5	fyrir	fyrir	ADP	P	_	6	case	_	_
-6	sér	sig	PRON	PRO-D	Case=Dat	3	obl	_	_
-7	með	með	ADP	P	_	9	case	_	_
-8	þetta	þessi	DET	D-A	Case=Acc	9	det	_	_
-9	hlé	hlé	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-10	?	?	PUNCT	.	_	3	punct	_	_
-
+# sent_id = ALTHINGI_BO_2014_G-33-4616309,.5
+# X_ID = ID_missing_6
+# text = Getum við sætt okkur við að vera í eilífu hléi eins og Sviss?
 1	Getum	geta	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 2	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 3	sætt	sætta	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -125,6 +124,6 @@
 10	hléi	hlé	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
 11	eins	_	ADV	ADVR	Degree=Cmp	10	advmod	_	_
 12	og	_	ADP	P	_	13	case	_	_
-13	Sviss	sviss	PROPN	NPR-N	_	11	obl	_	_
+13	Sviss	sviss	PROPN	NPR-N	_	11	obl	_	SpaceAfter=No
 14	?	?	PUNCT	.	_	3	punct	_	_
 

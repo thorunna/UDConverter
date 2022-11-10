@@ -1,6 +1,6 @@
-# sent_id = G-2-1032928,.1
-# X_ID = ID_MISSING
-# text = Margir af bestu kylfingum heims ætla ekki að nýta þátttökurétt sinn á Ólympíuleikunum í Ríó sem hefjast eftir 24 daga .
+# sent_id = RUV_ESP_2016_G-2-1032928,.1
+# X_ID = ID_missing_1
+# text = Margir af bestu kylfingum heims ætla ekki að nýta þátttökurétt sinn á Ólympíuleikunum í Ríó sem hefjast eftir 24 daga.
 1	Margir	margur	DET	Q-N	Case=Nom	6	nsubj	_	_
 2	af	af	ADP	P	_	4	case	_	_
 3	bestu	góður	ADJ	ADJS-D	Case=Dat|Degree=Sup	4	amod	_	_
@@ -23,9 +23,9 @@
 20	daga	dagur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	17	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-2-1032928,.2
-# X_ID = ID_MISSING
-# text = Það er leiðinlegt að þessi staða sé komin upp, og í raun tækifæri sem er farið í vaskinn, segir forseti Golfsambands Íslands .
+# sent_id = RUV_ESP_2016_G-2-1032928,.2
+# X_ID = ID_missing_2
+# text = Það er leiðinlegt að þessi staða sé komin upp, og í raun tækifæri sem er farið í vaskinn, segir forseti Golfsambands Íslands.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	leiðinlegt	leiðinlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -52,9 +52,9 @@
 24	Íslands	ísland	PROPN	NPR-G	_	23	flat:name	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1032928,.3
-# X_ID = ID_MISSING
-# text = Jason Day, Dustin Johnson, Shane Lowry, Rory McIlroy, Graeme McDowell, Adam Scott, Louis Oosthuizen, Vijay Singh og Jordan Spieth eru allir í hópi þeirra sem hafa afboðið sig á leikana .
+# sent_id = RUV_ESP_2016_G-2-1032928,.3
+# X_ID = ID_missing_3
+# text = Jason Day, Dustin Johnson, Shane Lowry, Rory McIlroy, Graeme McDowell, Adam Scott, Louis Oosthuizen, Vijay Singh og Jordan Spieth eru allir í hópi þeirra sem hafa afboðið sig á leikana.
 1	Jason	jason	PROPN	NPR-N	_	30	nsubj	_	_
 2	Day	day	PROPN	NPR-N	_	1	flat:name	_	SpaceAfter=No
 3	,	,	PUNCT	,	_	4	punct	_	_
@@ -94,9 +94,9 @@
 37	leikana	leikur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	34	obl	_	SpaceAfter=No
 38	.	.	PUNCT	.	_	30	punct	_	_
 
-# sent_id = G-2-1032928,.4
-# X_ID = ID_MISSING
-# text = Þarna á meðal eru fjórir bestu kylfingar heims .
+# sent_id = RUV_ESP_2016_G-2-1032928,.4
+# X_ID = ID_missing_4
+# text = Þarna á meðal eru fjórir bestu kylfingar heims.
 1	Þarna	þarna	ADV	ADV	Degree=Pos	0	root	_	_
 2	á	á	ADP	P	_	1	case	_	_
 3	meðal	meðal	ADP	P	_	1	obl	_	_
@@ -107,9 +107,9 @@
 8	heims	heimur	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-2-1032928,.5
-# X_ID = ID_MISSING
-# text = En af hverju vilja þeir ekki taka þátt ?
+# sent_id = RUV_ESP_2016_G-2-1032928,.5
+# X_ID = ID_missing_5
+# text = En af hverju vilja þeir ekki taka þátt?
 1	En	en	CCONJ	CONJ	_	7	cc	_	_
 2	af	af	ADP	P	_	3	case	_	_
 3	hverju	hver	PRON	WPRO-D	Case=Dat	7	obl	_	_
@@ -120,9 +120,9 @@
 8	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obj	_	SpaceAfter=No
 9	?	?	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-2-1032928,.6
-# X_ID = ID_MISSING
-# text = „ Í fyrsta lagi þá er það þessi Zika-veira sem keppendur virðast vera smeykir við,
+# sent_id = RUV_ESP_2016_G-2-1032928,.6
+# X_IDs = ID_missing_6 ; ID_missing_7 ; ID_missing_8
+# text = „ Í fyrsta lagi þá er það þessi Zika-veira sem keppendur virðast vera smeykir við, en það ætti svo sem ekki að skýra sérstaklega mikið brottfall kylfinga, það ætti þá að skýra brottfall allra íþróttamanna.
 1	„	„	PUNCT	"	_	5	punct	_	_
 2	Í	í	ADP	P	_	4	case	_	_
 3	fyrsta	fyrstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	4	amod	_	_
@@ -138,41 +138,33 @@
 13	vera	vera	AUX	BE	VerbForm=Inf	12	xcomp	_	_
 14	smeykir	smeykur	ADJ	ADJ-N	Case=Nom|Degree=Pos	13	amod	_	_
 15	við	við	ADP	P	_	14	amod	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	5	punct	_	_
+16	,	,	PUNCT	,	_	14	punct	_	_
+17	en	en	CCONJ	CONJ	_	19	cc	_	_
+18	það	það	PRON	PRO-N	Case=Nom	19	nsubj	_	_
+19	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	5	conj	_	OriginalHead=0
+20	svo	svo	ADV	ADV	Degree=Pos	19	advmod	_	_
+21	sem	sem	ADV	ADV	Degree=Pos	20	advmod	_	_
+22	ekki	ekki	ADV	NEG	_	19	advmod	_	_
+23	að	að	PART	TO	_	24	mark	_	_
+24	skýra	skýra	VERB	VB	VerbForm=Inf	19	xcomp	_	_
+25	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	26	advmod	_	_
+26	mikið	mikill	ADV	Q-A	Case=Acc	27	advmod	_	_
+27	brottfall	brottfall	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obj	_	_
+28	kylfinga	kylfingur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	27	nmod:poss	_	SpaceAfter=No
+29	,	,	PUNCT	,	_	27	punct	_	_
+30	það	það	PRON	PRO-N	Case=Nom	31	nsubj	_	_
+31	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	5	conj	_	OriginalHead=0
+32	þá	þá	ADV	ADV	Degree=Pos	31	advmod	_	_
+33	að	að	PART	TO	_	34	mark	_	_
+34	skýra	skýra	VERB	VB	VerbForm=Inf	31	xcomp	_	_
+35	brottfall	brottfall	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	obj	_	_
+36	allra	allur	DET	Q-G	Case=Gen	35	nmod:poss	_	_
+37	íþróttamanna	íþróttamaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	36	conj	_	SpaceAfter=No
+38	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1032928,.7
-# X_ID = ID_MISSING
-# text = en það ætti svo sem ekki að skýra sérstaklega mikið brottfall kylfinga,
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	0	root	_	_
-4	svo	svo	ADV	ADV	Degree=Pos	3	advmod	_	_
-5	sem	sem	ADV	ADV	Degree=Pos	4	advmod	_	_
-6	ekki	ekki	ADV	NEG	_	3	advmod	_	_
-7	að	að	PART	TO	_	8	mark	_	_
-8	skýra	skýra	VERB	VB	VerbForm=Inf	3	xcomp	_	_
-9	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	10	advmod	_	_
-10	mikið	mikill	ADV	Q-A	Case=Acc	11	advmod	_	_
-11	brottfall	brottfall	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	8	obj	_	_
-12	kylfinga	kylfingur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	11	nmod:poss	_	SpaceAfter=No
-13	,	,	PUNCT	,	_	3	punct	_	_
-
-# sent_id = G-2-1032928,.8
-# X_ID = ID_MISSING
-# text = það ætti þá að skýra brottfall allra íþróttamanna .
-1	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	ætti	eiga	VERB	VBDS	Mood=Sub|Tense=Past	0	root	_	_
-3	þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	að	að	PART	TO	_	5	mark	_	_
-5	skýra	skýra	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-6	brottfall	brottfall	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
-7	allra	allur	DET	Q-G	Case=Gen	6	nmod:poss	_	_
-8	íþróttamanna	íþróttamaður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	7	conj	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1032928,.9
-# X_ID = ID_MISSING
-# text = Ég hef ekki forsendur til að meta það hvað er mikið til í því eða hættuna af þessari Zika-veiru
+# sent_id = RUV_ESP_2016_G-2-1032928,.7
+# X_IDs = ID_missing_9 ; ID_missing_10
+# text = Ég hef ekki forsendur til að meta það hvað er mikið til í því eða hættuna af þessari Zika-veiru en það er að minnsta kosti ástæðan sem þeir gefa upp.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hef	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -192,26 +184,22 @@
 17	af	af	ADP	P	_	19	case	_	_
 18	þessari	þessi	DET	D-D	Case=Dat	19	det	_	_
 19	Zika-veiru	zika-veira	PROPN	NPR-D	_	16	obl	_	_
+20	en	en	CCONJ	CONJ	_	21	cc	_	_
+21	það	það	PRON	PRO-N	Case=Nom	2	conj	_	OriginalHead=0
+22	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	21	cop	_	_
+23	að	að	ADP	P	_	25	case	_	_
+24	minnsta	lítill	ADJ	ADJS-D	Case=Dat|Degree=Sup	25	amod	_	_
+25	kosti	kostur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	21	obl	_	_
+26	ástæðan	ástæða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	xcomp	_	_
+27	sem	sem	SCONJ	C	_	29	mark	_	_
+28	þeir	hann	PRON	PRO-N	Case=Nom	29	nsubj	_	_
+29	gefa	gefa	VERB	VBPI	Mood=Ind|Tense=Pres	26	acl:relcl	_	_
+30	upp	upp	ADP	RP	_	29	compound:prt	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1032928,.10
-# X_ID = ID_MISSING
-# text = en það er að minnsta kosti ástæðan sem þeir gefa upp .
-1	en	en	CCONJ	CONJ	_	2	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
-4	að	að	ADP	P	_	6	case	_	_
-5	minnsta	lítill	ADJ	ADJS-D	Case=Dat|Degree=Sup	6	amod	_	_
-6	kosti	kostur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
-7	ástæðan	ástæða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	xcomp	_	_
-8	sem	sem	SCONJ	C	_	10	mark	_	_
-9	þeir	hann	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-10	gefa	gefa	VERB	VBPI	Mood=Ind|Tense=Pres	7	acl:relcl	_	_
-11	upp	upp	ADP	RP	_	10	compound:prt	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1032928,.11
-# X_ID = ID_MISSING
-# text = Í öðru lagi er það tekjutap þessarra kylfinga
+# sent_id = RUV_ESP_2016_G-2-1032928,.8
+# X_IDs = ID_missing_11 ; ID_missing_12 ; ID_missing_13 ; ID_missing_14
+# text = Í öðru lagi er það tekjutap þessarra kylfinga og með fullri virðingu fyrir Ólympíuleikunum þá keppa atvinnukylfingar í hverri einustu viku og það að fara til Ríó í tvær vikur eða svoleiðis myndi þýða tekjutap fyrir þá, mér finnst það reyndar frekar ómerkileg ástæða eða afsökun því Ólympíuleikarnir eru bara merkilegri.
 1	Í	í	ADP	P	_	3	case	_	_
 2	öðru	annar	ADJ	ADJ-D	Case=Dat|Degree=Pos	3	amod	_	_
 3	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
@@ -220,67 +208,55 @@
 6	tekjutap	tekjutap	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	xcomp	_	_
 7	þessarra	þessi	DET	D-G	Case=Gen	8	det	_	_
 8	kylfinga	kylfingur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	6	nmod:poss	_	_
+9	og	og	CCONJ	CONJ	_	16	cc	_	_
+10	með	með	ADP	P	_	12	case	_	_
+11	fullri	fullur	ADJ	ADJ-D	Case=Dat|Degree=Pos	12	amod	_	_
+12	virðingu	virðing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
+13	fyrir	fyrir	ADP	P	_	14	case	_	_
+14	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	12	obl	_	_
+15	þá	þá	ADV	ADV	Degree=Pos	16	advmod	_	_
+16	keppa	keppa	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+17	atvinnukylfingar	atvinnukylfingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	16	nsubj	_	_
+18	í	í	ADP	P	_	21	case	_	_
+19	hverri	hver	DET	Q-D	Case=Dat	21	amod	_	_
+20	einustu	einasti	ADJ	ADJ-D	Case=Dat|Degree=Pos	21	amod	_	_
+21	viku	vika	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
+22	og	og	CCONJ	CONJ	_	34	cc	_	_
+23	það	það	PRON	PRO-N	Case=Nom	34	nsubj	_	_
+24	að	að	PART	TO	_	25	mark	_	_
+25	fara	fara	VERB	VB	VerbForm=Inf	23	xcomp	_	_
+26	til	til	ADP	P	_	27	case	_	_
+27	Ríó	ríó	PROPN	NPR-G	_	25	obl	_	_
+28	í	í	ADP	P	_	30	case	_	_
+29	tvær	tveir	NUM	NUM-A	Case=Acc	30	nummod	_	_
+30	vikur	vika	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	25	obl	_	_
+31	eða	eða	CCONJ	CONJ	_	32	cc	_	_
+32	svoleiðis	svoleiðis	ADV	ADV	Degree=Pos	30	conj	_	_
+33	myndi	munu	AUX	MDDS	Mood=Sub|Tense=Past	34	aux	_	_
+34	þýða	þýða	VERB	VB	VerbForm=Inf	5	conj	_	OriginalHead=0
+35	tekjutap	tekjutap	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	obj	_	_
+36	fyrir	fyrir	ADP	P	_	37	case	_	_
+37	þá	hann	PRON	PRO-A	Case=Acc	35	obl	_	SpaceAfter=No
+38	,	,	PUNCT	,	_	35	punct	_	_
+39	mér	ég	PRON	PRO-D	Case=Dat	40	nsubj	_	_
+40	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+41	það	það	PRON	PRO-N	Case=Nom	45	nsubj	_	_
+42	reyndar	reyndar	ADV	ADV	Degree=Pos	45	advmod	_	_
+43	frekar	frekar	ADV	ADVR	Degree=Cmp	44	amod	_	_
+44	ómerkileg	ómerkilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	45	amod	_	_
+45	ástæða	ástæða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	40	ccomp	_	_
+46	eða	eða	CCONJ	CONJ	_	47	cc	_	_
+47	afsökun	afsökun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	45	conj	_	_
+48	því	það	PRON	PRO-D	Case=Dat	40	obl	_	_
+49	Ólympíuleikarnir	ólympíuleikar	PROPN	NPRS-N	_	52	nsubj	_	_
+50	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	52	cop	_	_
+51	bara	bara	ADV	ADV	Degree=Pos	52	advmod	_	_
+52	merkilegri	merkilegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	48	ccomp	_	SpaceAfter=No
+53	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1032928,.12
-# X_ID = ID_MISSING
-# text = og með fullri virðingu fyrir Ólympíuleikunum þá keppa atvinnukylfingar í hverri einustu viku
-1	og	og	CCONJ	CONJ	_	8	cc	_	_
-2	með	með	ADP	P	_	4	case	_	_
-3	fullri	fullur	ADJ	ADJ-D	Case=Dat|Degree=Pos	4	amod	_	_
-4	virðingu	virðing	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
-5	fyrir	fyrir	ADP	P	_	6	case	_	_
-6	Ólympíuleikunum	ólympíuleikar	PROPN	NPRS-D	_	4	obl	_	_
-7	þá	þá	ADV	ADV	Degree=Pos	8	advmod	_	_
-8	keppa	keppa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-9	atvinnukylfingar	atvinnukylfingur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	8	nsubj	_	_
-10	í	í	ADP	P	_	13	case	_	_
-11	hverri	hver	DET	Q-D	Case=Dat	13	amod	_	_
-12	einustu	einasti	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	amod	_	_
-13	viku	vika	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
-
-# sent_id = G-2-1032928,.13
-# X_ID = ID_MISSING
-# text = og það að fara til Ríó í tvær vikur eða svoleiðis myndi þýða tekjutap fyrir þá,
-1	og	og	CCONJ	CONJ	_	13	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-3	að	að	PART	TO	_	4	mark	_	_
-4	fara	fara	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-5	til	til	ADP	P	_	6	case	_	_
-6	Ríó	ríó	PROPN	NPR-G	_	4	obl	_	_
-7	í	í	ADP	P	_	9	case	_	_
-8	tvær	tveir	NUM	NUM-A	Case=Acc	9	nummod	_	_
-9	vikur	vika	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
-10	eða	eða	CCONJ	CONJ	_	11	cc	_	_
-11	svoleiðis	svoleiðis	ADV	ADV	Degree=Pos	9	conj	_	_
-12	myndi	munu	AUX	MDDS	Mood=Sub|Tense=Past	13	aux	_	_
-13	þýða	þýða	VERB	VB	VerbForm=Inf	0	root	_	_
-14	tekjutap	tekjutap	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
-15	fyrir	fyrir	ADP	P	_	16	case	_	_
-16	þá	hann	PRON	PRO-A	Case=Acc	14	obl	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	13	punct	_	_
-
-# sent_id = G-2-1032928,.14
-# X_ID = ID_MISSING
-# text = mér finnst það reyndar frekar ómerkileg ástæða eða afsökun því Ólympíuleikarnir eru bara merkilegri .
-1	mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
-2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-4	reyndar	reyndar	ADV	ADV	Degree=Pos	7	advmod	_	_
-5	frekar	frekar	ADV	ADVR	Degree=Cmp	6	amod	_	_
-6	ómerkileg	ómerkilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	amod	_	_
-7	ástæða	ástæða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	ccomp	_	_
-8	eða	eða	CCONJ	CONJ	_	9	cc	_	_
-9	afsökun	afsökun	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	conj	_	_
-10	því	það	PRON	PRO-D	Case=Dat	2	obl	_	_
-11	Ólympíuleikarnir	ólympíuleikar	PROPN	NPRS-N	_	14	nsubj	_	_
-12	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	14	cop	_	_
-13	bara	bara	ADV	ADV	Degree=Pos	14	advmod	_	_
-14	merkilegri	merkilegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	10	ccomp	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1032928,.15
-# X_ID = ID_MISSING
-# text = Í þriðja lagi er það að Ólympíuleikarnir passa ekki nógu vel við mótadagskrá PGA mótaraðarinnar því að í vikunni eftir að Ólympíuleikunum lýkur þá fer fram síðasta risamót ársins sem er PGA meistaramótið
+# sent_id = RUV_ESP_2016_G-2-1032928,.9
+# X_IDs = ID_missing_15 ; ID_missing_16 ; ID_missing_17
+# text = Í þriðja lagi er það að Ólympíuleikarnir passa ekki nógu vel við mótadagskrá PGA mótaraðarinnar því að í vikunni eftir að Ólympíuleikunum lýkur þá fer fram síðasta risamót ársins sem er PGA meistaramótið og í hugum atvinnukylfinga þá er draumur þeirra fyrst og fremst að sigra á stórmóti, risa móti í golfi, og því miður held ég að í hugum þeirra séu þessi risamót bara skör hærri heldur en Ólympíuleikarnir eru,“ sagði Haukur Örn Birgisson þegar RÚV ræddi við hann í gær.
 1	Í	í	ADP	P	_	3	case	_	_
 2	þriðja	þriðji	ADJ	ADJ-D	Case=Dat|Degree=Pos	3	amod	_	_
 3	lagi	lag	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
@@ -314,72 +290,64 @@
 31	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	28	acl:relcl	_	_
 32	PGA	pga	NOUN	N	Definite=Ind|Number=Sing	31	xcomp	_	_
 33	meistaramótið	meistaramót	NOUN	N	Definite=Ind|Number=Sing	32	conj	_	_
+34	og	og	CCONJ	CONJ	_	38	cc	_	_
+35	í	í	ADP	P	_	36	case	_	_
+36	hugum	hugi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	38	obl	_	_
+37	atvinnukylfinga	atvinnukylfingur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	36	nmod:poss	_	_
+38	þá	þá	ADV	ADV	Degree=Pos	5	conj	_	OriginalHead=0
+39	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	38	cop	_	_
+40	draumur	draumur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	38	nsubj	_	_
+41	þeirra	hann	PRON	PRO-G	Case=Gen	40	nmod:poss	_	_
+42	fyrst	snemma	ADV	ADVS	Degree=Sup	38	advmod	_	_
+43	og	og	CCONJ	CONJ	_	44	cc	_	_
+44	fremst	harla	ADV	ADVS	Degree=Sup	42	conj	_	_
+45	að	að	PART	TO	_	46	mark	_	_
+46	sigra	sigra	VERB	VB	VerbForm=Inf	38	xcomp	_	_
+47	á	á	ADP	P	_	48	case	_	_
+48	stórmóti	stórmót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	46	obl	_	SpaceAfter=No
+49	,	,	PUNCT	,	_	48	punct	_	_
+50	risa	risi	NOUN	N	Definite=Ind|Number=Sing	48	appos	_	_
+51	móti	mót	NOUN	N	Definite=Ind|Number=Sing	50	conj	_	_
+52	í	í	ADP	P	_	53	case	_	_
+53	golfi	golf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	50	obl	_	SpaceAfter=No
+54	,	,	PUNCT	,	_	50	punct	_	_
+55	og	og	CCONJ	CONJ	_	58	cc	_	_
+56	því	það	PRON	PRO-D	Case=Dat	57	obl	_	_
+57	miður	lítt	ADV	ADVR	Degree=Cmp	58	advmod	_	_
+58	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+59	ég	ég	PRON	PRO-N	Case=Nom	58	nsubj	_	_
+60	að	að	SCONJ	C	_	69	mark	_	_
+61	í	í	ADP	P	_	62	case	_	_
+62	hugum	hugi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	69	obl	_	_
+63	þeirra	hann	PRON	PRO-G	Case=Gen	62	nmod:poss	_	_
+64	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	69	cop	_	_
+65	þessi	þessi	DET	D-N	Case=Nom	66	det	_	_
+66	risamót	risamót	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	69	nsubj	_	_
+67	bara	bara	ADV	ADV	Degree=Pos	69	advmod	_	_
+68	skör	skör	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	69	obl	_	_
+69	hærri	hár	ADJ	ADJR-N	Case=Nom|Degree=Cmp	58	ccomp	_	_
+70	heldur	gjarna	ADV	ADVR	Degree=Cmp	69	advmod	_	_
+71	en	en	CCONJ	CONJ	_	72	cc	_	_
+72	Ólympíuleikarnir	ólympíuleikar	PROPN	NPRS-N	_	69	obl	_	_
+73	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	72	cop	_	SpaceAfter=No
+74	,	,	PUNCT	,	_	73	punct	_	SpaceAfter=No
+75	“	“	PUNCT	"	_	74	punct	_	_
+76	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	58	parataxis	_	_
+77	Haukur	haukur	PROPN	NPR-N	_	76	nsubj	_	_
+78	Örn	örn	PROPN	NPR-N	_	77	flat:name	_	_
+79	Birgisson	birgisson	PROPN	NPR-N	_	77	dep	_	_
+80	þegar	þegar	ADP	P	_	82	case	_	_
+81	RÚV	rúv	PROPN	NPR-N	_	82	nsubj	_	_
+82	ræddi	ræða	VERB	VBDI	Mood=Ind|Tense=Past	76	obl	_	_
+83	við	við	ADP	P	_	84	case	_	_
+84	hann	hann	PRON	PRO-A	Case=Acc	82	obl	_	_
+85	í	í	ADP	P	_	86	case	_	_
+86	gær	gær	ADV	ADV	Degree=Pos	82	obl	_	SpaceAfter=No
+87	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1032928,.16
-# X_ID = ID_MISSING
-# text = og í hugum atvinnukylfinga þá er draumur þeirra fyrst og fremst að sigra á stórmóti, risa móti í golfi,
-1	og	og	CCONJ	CONJ	_	5	cc	_	_
-2	í	í	ADP	P	_	3	case	_	_
-3	hugum	hugi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	5	obl	_	_
-4	atvinnukylfinga	atvinnukylfingur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	3	nmod:poss	_	_
-5	þá	þá	ADV	ADV	Degree=Pos	0	root	_	_
-6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-7	draumur	draumur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
-8	þeirra	hann	PRON	PRO-G	Case=Gen	7	nmod:poss	_	_
-9	fyrst	snemma	ADV	ADVS	Degree=Sup	5	advmod	_	_
-10	og	og	CCONJ	CONJ	_	11	cc	_	_
-11	fremst	harla	ADV	ADVS	Degree=Sup	9	conj	_	_
-12	að	að	PART	TO	_	13	mark	_	_
-13	sigra	sigra	VERB	VB	VerbForm=Inf	5	xcomp	_	_
-14	á	á	ADP	P	_	15	case	_	_
-15	stórmóti	stórmót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	15	punct	_	_
-17	risa	risi	NOUN	N	Definite=Ind|Number=Sing	15	appos	_	_
-18	móti	mót	NOUN	N	Definite=Ind|Number=Sing	17	conj	_	_
-19	í	í	ADP	P	_	20	case	_	_
-20	golfi	golf	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	5	punct	_	_
-
-# sent_id = G-2-1032928,.17
-# X_ID = ID_MISSING
-# text = og því miður held ég að í hugum þeirra séu þessi risamót bara skör hærri heldur en Ólympíuleikarnir eru, “ sagði Haukur Örn Birgisson þegar RÚV ræddi við hann í gær .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
-3	miður	lítt	ADV	ADVR	Degree=Cmp	4	advmod	_	_
-4	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-5	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-6	að	að	SCONJ	C	_	15	mark	_	_
-7	í	í	ADP	P	_	8	case	_	_
-8	hugum	hugi	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	15	obl	_	_
-9	þeirra	hann	PRON	PRO-G	Case=Gen	8	nmod:poss	_	_
-10	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	15	cop	_	_
-11	þessi	þessi	DET	D-N	Case=Nom	12	det	_	_
-12	risamót	risamót	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	15	nsubj	_	_
-13	bara	bara	ADV	ADV	Degree=Pos	15	advmod	_	_
-14	skör	skör	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
-15	hærri	hár	ADJ	ADJR-N	Case=Nom|Degree=Cmp	4	ccomp	_	_
-16	heldur	gjarna	ADV	ADVR	Degree=Cmp	15	advmod	_	_
-17	en	en	CCONJ	CONJ	_	18	cc	_	_
-18	Ólympíuleikarnir	ólympíuleikar	PROPN	NPRS-N	_	15	obl	_	_
-19	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	18	cop	_	SpaceAfter=No
-20	,	,	PUNCT	,	_	19	punct	_	SpaceAfter=No
-21	“	“	PUNCT	"	_	20	punct	_	_
-22	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	4	parataxis	_	_
-23	Haukur	haukur	PROPN	NPR-N	_	22	nsubj	_	_
-24	Örn	örn	PROPN	NPR-N	_	23	flat:name	_	_
-25	Birgisson	birgisson	PROPN	NPR-N	_	23	dep	_	_
-26	þegar	þegar	ADP	P	_	28	case	_	_
-27	RÚV	rúv	PROPN	NPR-N	_	28	nsubj	_	_
-28	ræddi	ræða	VERB	VBDI	Mood=Ind|Tense=Past	22	obl	_	_
-29	við	við	ADP	P	_	30	case	_	_
-30	hann	hann	PRON	PRO-A	Case=Acc	28	obl	_	_
-31	í	í	ADP	P	_	32	case	_	_
-32	gær	gær	ADV	ADV	Degree=Pos	28	obl	_	SpaceAfter=No
-33	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-2-1032928,.18
-# X_ID = ID_MISSING
-# text = Þetta verður í fyrsta skipti sem keppt er í golfi á Ólympíuleikum í 112 ár .
+# sent_id = RUV_ESP_2016_G-2-1032928,.10
+# X_ID = ID_missing_18
+# text = Þetta verður í fyrsta skipti sem keppt er í golfi á Ólympíuleikum í 112 ár.
 1	Þetta	þessi	DET	D-N	Case=Nom	2	nsubj	_	_
 2	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	í	í	ADP	P	_	5	case	_	_
@@ -397,9 +365,9 @@
 15	ár	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1032928,.19
-# X_ID = ID_MISSING
-# text = Ákveðið var að bæta íþróttinni við sem keppnisgrein í Ríó í ár og í Tókýó 2020 .
+# sent_id = RUV_ESP_2016_G-2-1032928,.11
+# X_ID = ID_missing_19
+# text = Ákveðið var að bæta íþróttinni við sem keppnisgrein í Ríó í ár og í Tókýó 2020.
 1	Ákveðið	ákveða	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	1	cop	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -418,9 +386,9 @@
 16	2020	2020	NUM	NUM-A	Case=Acc	15	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-2-1032928,.20
-# X_ID = ID_MISSING
-# text = „ En vonandi ef golf heldur áfram að vera keppnisíþrótt á Ólympíuleikunum þá mun myndast meiri hefð fyrir því
+# sent_id = RUV_ESP_2016_G-2-1032928,.12
+# X_IDs = ID_missing_20 ; ID_missing_21
+# text = „ En vonandi ef golf heldur áfram að vera keppnisíþrótt á Ólympíuleikunum þá mun myndast meiri hefð fyrir því og Ólympíuleikarnir verði þá svona stærsta risa mótið því það er keppt á þessum risamótum á hverju einasta ári og þau eru fjögur á hverju einasta ári en Ólympíuleikarnir eru bara á fjögurra ára fresti og þeir ættu því að vera merkilegri fyrir vikið.
 1	„	„	PUNCT	"	_	15	punct	_	_
 2	En	en	CCONJ	CONJ	_	15	cc	_	_
 3	vonandi	vonandi	ADV	ADV	Degree=Pos	15	advmod	_	_
@@ -440,59 +408,55 @@
 17	hefð	hefð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	15	nsubj	_	_
 18	fyrir	fyrir	ADP	P	_	19	case	_	_
 19	því	það	PRON	PRO-D	Case=Dat	17	obl	_	_
+20	og	og	CCONJ	CONJ	_	22	cc	_	_
+21	Ólympíuleikarnir	ólympíuleikar	PROPN	NPRS-N	_	22	nsubj	_	_
+22	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	15	conj	_	OriginalHead=0
+23	þá	þá	ADV	ADV	Degree=Pos	22	advmod	_	_
+24	svona	svona	ADV	ADV	Degree=Pos	26	advmod	_	_
+25	stærsta	stór	ADJ	ADJS-N	Case=Nom|Degree=Sup	26	amod	_	_
+26	risa	risi	NOUN	N	Definite=Ind|Number=Sing	22	xcomp	_	_
+27	mótið	mót	NOUN	N	Definite=Ind|Number=Sing	26	conj	_	_
+28	því	það	PRON	PRO-D	Case=Dat	22	obl	_	_
+29	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	31	expl	_	_
+30	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
+31	keppt	keppa	VERB	VAN	Tense=Past|VerbForm=Part	28	ccomp	_	_
+32	á	á	ADP	P	_	34	case	_	_
+33	þessum	þessi	DET	D-D	Case=Dat	34	det	_	_
+34	risamótum	risamót	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	31	obl	_	_
+35	á	á	ADP	P	_	38	case	_	_
+36	hverju	hver	DET	Q-D	Case=Dat	38	amod	_	_
+37	einasta	einasti	ADJ	ADJ-D	Case=Dat|Degree=Pos	38	amod	_	_
+38	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	_
+39	og	og	CCONJ	CONJ	_	42	cc	_	_
+40	þau	það	PRON	PRO-N	Case=Nom	42	nsubj	_	_
+41	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	42	cop	_	_
+42	fjögur	fjórir	NUM	NUM-N	Case=Nom	31	conj	_	_
+43	á	á	ADP	P	_	46	case	_	_
+44	hverju	hver	DET	Q-D	Case=Dat	46	amod	_	_
+45	einasta	einasti	ADJ	ADJ-D	Case=Dat|Degree=Pos	46	amod	_	_
+46	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	42	obl	_	_
+47	en	en	CCONJ	CONJ	_	54	cc	_	_
+48	Ólympíuleikarnir	ólympíuleikar	PROPN	NPRS-N	_	54	nsubj	_	_
+49	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	54	cop	_	_
+50	bara	bara	ADV	FP	Degree=Pos	54	advmod	_	_
+51	á	á	ADP	P	_	54	case	_	_
+52	fjögurra	fjórir	NUM	NUM-G	Case=Gen	53	nummod	_	_
+53	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	54	nmod:poss	_	_
+54	fresti	frestur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	conj	_	_
+55	og	og	CCONJ	CONJ	_	57	cc	_	_
+56	þeir	hann	PRON	PRO-N	Case=Nom	57	nsubj	_	_
+57	ættu	eiga	VERB	VBDS	Mood=Sub|Tense=Past	54	conj	_	_
+58	því	það	PRON	PRO-D	Case=Dat	57	obl	_	_
+59	að	að	PART	TO	_	57	xcomp	_	_
+60	vera	vera	AUX	BE	VerbForm=Inf	59	cop	_	_
+61	merkilegri	merkilegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	59	amod	_	_
+62	fyrir	fyrir	ADP	P	_	63	case	_	_
+63	vikið	vik	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	59	obl	_	SpaceAfter=No
+64	.	.	PUNCT	.	_	15	punct	_	_
 
-# sent_id = G-2-1032928,.21
-# X_ID = ID_MISSING
-# text = og Ólympíuleikarnir verði þá svona stærsta risa mótið því það er keppt á þessum risamótum á hverju einasta ári og þau eru fjögur á hverju einasta ári en Ólympíuleikarnir eru bara á fjögurra ára fresti og þeir ættu því að vera merkilegri fyrir vikið .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	Ólympíuleikarnir	ólympíuleikar	PROPN	NPRS-N	_	3	nsubj	_	_
-3	verði	verða	VERB	RDPS	Mood=Sub|Tense=Pres	0	root	_	_
-4	þá	þá	ADV	ADV	Degree=Pos	3	advmod	_	_
-5	svona	svona	ADV	ADV	Degree=Pos	7	advmod	_	_
-6	stærsta	stór	ADJ	ADJS-N	Case=Nom|Degree=Sup	7	amod	_	_
-7	risa	risi	NOUN	N	Definite=Ind|Number=Sing	3	xcomp	_	_
-8	mótið	mót	NOUN	N	Definite=Ind|Number=Sing	7	conj	_	_
-9	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
-10	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	12	expl	_	_
-11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
-12	keppt	keppa	VERB	VAN	Tense=Past|VerbForm=Part	9	ccomp	_	_
-13	á	á	ADP	P	_	15	case	_	_
-14	þessum	þessi	DET	D-D	Case=Dat	15	det	_	_
-15	risamótum	risamót	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	_
-16	á	á	ADP	P	_	19	case	_	_
-17	hverju	hver	DET	Q-D	Case=Dat	19	amod	_	_
-18	einasta	einasti	ADJ	ADJ-D	Case=Dat|Degree=Pos	19	amod	_	_
-19	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
-20	og	og	CCONJ	CONJ	_	23	cc	_	_
-21	þau	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
-22	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
-23	fjögur	fjórir	NUM	NUM-N	Case=Nom	12	conj	_	_
-24	á	á	ADP	P	_	27	case	_	_
-25	hverju	hver	DET	Q-D	Case=Dat	27	amod	_	_
-26	einasta	einasti	ADJ	ADJ-D	Case=Dat|Degree=Pos	27	amod	_	_
-27	ári	ár	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	_
-28	en	en	CCONJ	CONJ	_	35	cc	_	_
-29	Ólympíuleikarnir	ólympíuleikar	PROPN	NPRS-N	_	35	nsubj	_	_
-30	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	35	cop	_	_
-31	bara	bara	ADV	FP	Degree=Pos	35	advmod	_	_
-32	á	á	ADP	P	_	35	case	_	_
-33	fjögurra	fjórir	NUM	NUM-G	Case=Gen	34	nummod	_	_
-34	ára	ár	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	35	nmod:poss	_	_
-35	fresti	frestur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	conj	_	_
-36	og	og	CCONJ	CONJ	_	38	cc	_	_
-37	þeir	hann	PRON	PRO-N	Case=Nom	38	nsubj	_	_
-38	ættu	eiga	VERB	VBDS	Mood=Sub|Tense=Past	35	conj	_	_
-39	því	það	PRON	PRO-D	Case=Dat	38	obl	_	_
-40	að	að	PART	TO	_	38	xcomp	_	_
-41	vera	vera	AUX	BE	VerbForm=Inf	40	cop	_	_
-42	merkilegri	merkilegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	40	amod	_	_
-43	fyrir	fyrir	ADP	P	_	44	case	_	_
-44	vikið	vik	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	40	obl	_	SpaceAfter=No
-45	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-2-1032928,.22
-# X_ID = ID_MISSING
-# text = Og þurfa þeir bestu þá ekki einmitt að taka þátt til að það skapist einhver hefð ?
+# sent_id = RUV_ESP_2016_G-2-1032928,.13
+# X_ID = ID_missing_22
+# text = Og þurfa þeir bestu þá ekki einmitt að taka þátt til að það skapist einhver hefð?
 1	Og	og	CCONJ	CONJ	_	2	cc	_	_
 2	þurfa	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þeir	sá	DET	D-N	Case=Nom	2	nsubj	_	_
@@ -511,9 +475,9 @@
 16	hefð	hefð	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	obl	_	SpaceAfter=No
 17	?	?	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1032928,.23
-# X_ID = ID_MISSING
-# text = Jú, alveg sammála þér í því, “ sagði Haukur .
+# sent_id = RUV_ESP_2016_G-2-1032928,.14
+# X_ID = ID_missing_23
+# text = Jú, alveg sammála þér í því,“ sagði Haukur.
 1	Jú	jú	INTJ	INTJ	_	10	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	alveg	alveg	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -527,9 +491,9 @@
 11	Haukur	haukur	PROPN	NPR-N	_	10	nsubj	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = G-2-1032928,.24
-# X_ID = ID_MISSING
-# text = Haukur hefði eðlilega viljað sjá alla bestu kylfinga heims á leikunum,
+# sent_id = RUV_ESP_2016_G-2-1032928,.15
+# X_IDs = ID_missing_24 ; ID_missing_25
+# text = Haukur hefði eðlilega viljað sjá alla bestu kylfinga heims á leikunum, annað sé lélegt.
 1	Haukur	haukur	PROPN	NPR-N	_	5	nsubj	_	_
 2	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	5	aux	_	_
 3	eðlilega	eðlilega	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -542,18 +506,14 @@
 10	á	á	ADP	P	_	11	case	_	_
 11	leikunum	leika	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	5	punct	_	_
+13	annað	annar	PRON	OTHER-N	Case=Nom	15	nsubj	_	_
+14	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	15	cop	_	_
+15	lélegt	lélegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	conj	_	OriginalHead=0|SpaceAfter=No
+16	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1032928,.25
-# X_ID = ID_MISSING
-# text = annað sé lélegt .
-1	annað	annar	PRON	OTHER-N	Case=Nom	3	nsubj	_	_
-2	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	3	cop	_	_
-3	lélegt	lélegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
-4	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-2-1032928,.26
-# X_ID = ID_MISSING
-# text = Ólympíuleikarnir séu stórkostlegur viðburður og kynning fyrir golfíþróttina .
+# sent_id = RUV_ESP_2016_G-2-1032928,.16
+# X_ID = ID_missing_26
+# text = Ólympíuleikarnir séu stórkostlegur viðburður og kynning fyrir golfíþróttina.
 1	Ólympíuleikarnir	ólympíuleikar	PROPN	NPRS-N	_	0	root	_	_
 2	séu	vera	AUX	BEPS	Mood=Sub|Tense=Pres	1	cop	_	_
 3	stórkostlegur	stórkostlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -563,21 +523,4 @@
 7	fyrir	fyrir	ADP	P	_	8	case	_	_
 8	golfíþróttina	golfíþrótt	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	1	punct	_	_
-
-1	„	„	PUNCT	"	_	3	punct	_	_
-2	Mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
-3	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	þetta	þessi	DET	D-N	Case=Nom	6	nsubj	_	_
-5	bara	bara	ADV	FP	Degree=Pos	6	advmod	_	_
-6	tækifæri	tækifæri	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	ccomp	_	_
-7	sem	sem	SCONJ	C	_	9	mark	_	_
-8	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	9	aux	_	_
-9	farið	fara	VERB	VBN	Tense=Past|VerbForm=Part	6	acl:relcl	_	_
-10	í	í	ADP	P	_	11	case	_	_
-11	vaskinn	vaskur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
-12	,	,	PUNCT	,	_	11	punct	_	_
-13	því	það	PRON	PRO-D	Case=Dat	14	obl	_	_
-14	miður	lítt	ADV	ADVR	Degree=Cmp	6	advmod	_	_
-15	.	.	PUNCT	.	_	14	punct	_	_
-16	“	“	PUNCT	"	_	3	punct	_	_
 

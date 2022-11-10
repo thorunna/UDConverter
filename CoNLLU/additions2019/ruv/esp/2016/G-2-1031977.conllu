@@ -1,6 +1,6 @@
-# sent_id = G-2-1031977,.1
-# X_ID = ID_MISSING
-# text = Dregið var í þriðju umferð forkeppni Evrópudeildar karla í fótbolta fyrir skömmu .
+# sent_id = RUV_ESP_2016_G-2-1031977,.1
+# X_ID = ID_missing_1
+# text = Dregið var í þriðju umferð forkeppni Evrópudeildar karla í fótbolta fyrir skömmu.
 1	Dregið	draga	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	1	cop	_	_
 3	í	í	ADP	P	_	5	case	_	_
@@ -15,9 +15,9 @@
 12	skömmu	skammur	ADJ	ADJ-D	Case=Dat|Degree=Pos	1	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-2-1031977,.2
-# X_ID = ID_MISSING
-# text = Sigurvegarinn í viðureign KR og svissneska liðsins Grasshopper mætir Apollon Limassol frá Kýpur í næstu umferð .
+# sent_id = RUV_ESP_2016_G-2-1031977,.2
+# X_ID = ID_missing_2
+# text = Sigurvegarinn í viðureign KR og svissneska liðsins Grasshopper mætir Apollon Limassol frá Kýpur í næstu umferð.
 1	Sigurvegarinn	sigurvegari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
 2	í	í	ADP	P	_	3	case	_	_
 3	viðureign	viðureign	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	1	obl	_	_
@@ -36,9 +36,9 @@
 16	umferð	umferð	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = G-2-1031977,.3
-# X_ID = ID_MISSING
-# text = KR og Grasshopper gerðu 3 3 jafntefli í vesturbænum í gærkvöld
+# sent_id = RUV_ESP_2016_G-2-1031977,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = KR og Grasshopper gerðu 3 3 jafntefli í vesturbænum í gærkvöld og mætast aftur ytra í næstu viku.
 1	KR	kr	PROPN	NPR-N	_	4	nsubj	_	_
 2	og	og	CCONJ	CONJ	_	3	cc	_	_
 3	Grasshopper	grasshopper	PROPN	NPR-N	_	1	conj	_	_
@@ -50,22 +50,18 @@
 9	vesturbænum	vesturbær	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
 10	í	í	ADP	P	_	11	case	_	_
 11	gærkvöld	gærkvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obl	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	mætast	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+14	aftur	aftur	ADV	ADV	Degree=Pos	13	advmod	_	_
+15	ytra	ytra	ADV	ADVR	Degree=Cmp	13	advmod	_	_
+16	í	í	ADP	P	_	18	case	_	_
+17	næstu	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	18	amod	_	_
+18	viku	vika	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obl	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1031977,.4
-# X_ID = ID_MISSING
-# text = og mætast aftur ytra í næstu viku .
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	mætast	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	aftur	aftur	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	ytra	ytra	ADV	ADVR	Degree=Cmp	2	advmod	_	_
-5	í	í	ADP	P	_	7	case	_	_
-6	næstu	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	7	amod	_	_
-7	viku	vika	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1031977,.5
-# X_ID = ID_MISSING
-# text = Fyrr í morgun var dregið í þriðju umferð forkeppni Meistaradeildar Evrópu þar sem Íslandsmeistarar FH eru meðal þátttökuliða .
+# sent_id = RUV_ESP_2016_G-2-1031977,.4
+# X_ID = ID_missing_5
+# text = Fyrr í morgun var dregið í þriðju umferð forkeppni Meistaradeildar Evrópu þar sem Íslandsmeistarar FH eru meðal þátttökuliða.
 1	Fyrr	snemma	ADV	ADVR	Degree=Cmp	5	advmod	_	_
 2	í	í	ADP	P	_	3	case	_	_
 3	morgun	morgunn	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
@@ -86,9 +82,9 @@
 18	þátttökuliða	þátttökulið	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	acl:relcl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1031977,.6
-# X_ID = ID_MISSING
-# text = FH og írska liðið Dundalk gerðu 1 1 jafntefli í fyrri leik sínum í síðustu viku
+# sent_id = RUV_ESP_2016_G-2-1031977,.5
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = FH og írska liðið Dundalk gerðu 1 1 jafntefli í fyrri leik sínum í síðustu viku og mætast aftur í þeirri næstu.
 1	FH	fh	PROPN	NPR-N	_	6	nsubj	_	_
 2	og	og	CCONJ	CONJ	_	4	cc	_	_
 3	írska	írskur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -105,21 +101,17 @@
 14	í	í	ADP	P	_	16	case	_	_
 15	síðustu	síðari	ADJ	ADJS-D	Case=Dat|Degree=Sup	16	amod	_	_
 16	viku	vika	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
+17	og	og	CCONJ	CONJ	_	18	cc	_	_
+18	mætast	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	6	conj	_	OriginalHead=0
+19	aftur	aftur	ADV	ADV	Degree=Pos	18	advmod	_	_
+20	í	í	ADP	P	_	22	case	_	_
+21	þeirri	sá	DET	D-D	Case=Dat	22	det	_	_
+22	næstu	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	18	obl	_	SpaceAfter=No
+23	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-2-1031977,.7
-# X_ID = ID_MISSING
-# text = og mætast aftur í þeirri næstu .
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	mætast	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	aftur	aftur	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	í	í	ADP	P	_	6	case	_	_
-5	þeirri	sá	DET	D-D	Case=Dat	6	det	_	_
-6	næstu	næstur	ADJ	ADJS-D	Case=Dat|Degree=Sup	2	obl	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-2-1031977,.8
-# X_ID = ID_MISSING
-# text = Sigurvegarinn í þeirri viðureign mætir annað hvort BATE Borisov frá Hvíta-Rússlandi í næstu umferð eða SJK Seinäjoki frá Finnlandi .
+# sent_id = RUV_ESP_2016_G-2-1031977,.6
+# X_ID = ID_missing_8
+# text = Sigurvegarinn í þeirri viðureign mætir annað hvort BATE Borisov frá Hvíta-Rússlandi í næstu umferð eða SJK Seinäjoki frá Finnlandi.
 1	Sigurvegarinn	sigurvegari	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 2	í	í	ADP	P	_	4	case	_	_
 3	þeirri	sá	DET	D-D	Case=Dat	4	det	_	_
@@ -141,33 +133,28 @@
 19	Finnlandi	finnland	PROPN	NPR-D	_	16	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-2-1031977,.9
-# X_ID = ID_MISSING
-# text = FH hefur tvisvar mætt BATE áður
+# sent_id = RUV_ESP_2016_G-2-1031977,.7
+# X_IDs = ID_missing_9 ; ID_missing_10 ; ID_missing_11
+# text = FH hefur tvisvar mætt BATE áður og tapaði í bæði skiptin en Hafnfirðingur slógu Seinäjoki-menn út í keppninni í fyrra.
 1	FH	fh	PROPN	NPR-N	_	4	nsubj	_	_
 2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	tvisvar	tvisvar	NUM	NUM	_	4	obl	_	_
 4	mætt	mæta	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
 5	BATE	bate	PROPN	NPR-D	_	4	obj	_	_
 6	áður	áður	ADV	ADVR	Degree=Cmp	4	advmod	_	_
-
-# sent_id = G-2-1031977,.10
-# X_ID = ID_MISSING
-# text = og tapaði í bæði skiptin
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	tapaði	tapa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	í	í	ADP	P	_	5	case	_	_
-4	bæði	báðir	DET	Q-A	Case=Acc	5	amod	_	_
-5	skiptin	skipti	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
-
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	Hafnfirðingur	hafnfirðingur	X	X	_	3	dep	_	_
-3	slógu	slá	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	Seinäjoki-menn	Seinäjoki-maður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	_
-5	út	út	ADP	RP	_	3	compound:prt	_	_
-6	í	í	ADP	P	_	7	case	_	_
-7	keppninni	keppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	obl	_	_
-8	í	í	ADP	P	_	9	case	_	_
-9	fyrra	fyrri	ADJ	ADJR-A	Case=Acc|Degree=Cmp	3	obl	_	_
-10	.	.	PUNCT	.	_	3	punct	_	_
+7	og	og	CCONJ	CONJ	_	8	cc	_	_
+8	tapaði	tapa	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
+9	í	í	ADP	P	_	11	case	_	_
+10	bæði	báðir	DET	Q-A	Case=Acc	11	amod	_	_
+11	skiptin	skipti	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	8	obl	_	_
+12	en	en	CCONJ	CONJ	_	14	cc	_	_
+13	Hafnfirðingur	hafnfirðingur	X	X	_	14	dep	_	_
+14	slógu	slá	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
+15	Seinäjoki-menn	Seinäjoki-maður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obj	_	_
+16	út	út	ADP	RP	_	14	compound:prt	_	_
+17	í	í	ADP	P	_	18	case	_	_
+18	keppninni	keppni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	14	obl	_	_
+19	í	í	ADP	P	_	20	case	_	_
+20	fyrra	fyrri	ADJ	ADJR-A	Case=Acc|Degree=Cmp	14	obl	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	4	punct	_	_
 

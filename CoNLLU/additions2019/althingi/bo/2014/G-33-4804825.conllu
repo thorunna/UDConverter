@@ -1,6 +1,6 @@
-# sent_id = G-33-4804825,.1
-# X_ID = ID_MISSING
-# text = Herra forseti . Ég vildi aðeins hnykkja á því sem ég sagði í ræðu minni áðan þegar ég mælti fyrir nefndarálitinu, og kannski skýra þá mismunandi afstöðu sem ég skynjaði þegar hv. þm. Össur Skarphéðinsson fór í andsvör og það sem hv. þingmaður nefndi hér .
+# sent_id = ALTHINGI_BO_2014_G-33-4804825,.1
+# X_ID = ID_missing_1
+# text = Herra forseti. Ég vildi aðeins hnykkja á því sem ég sagði í ræðu minni áðan þegar ég mælti fyrir nefndarálitinu, og kannski skýra þá mismunandi afstöðu sem ég skynjaði þegar hv. þm. Össur Skarphéðinsson fór í andsvör og það sem hv. þingmaður nefndi hér.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -49,9 +49,9 @@
 46	hér	hér	ADV	ADV	Degree=Pos	45	advmod	_	SpaceAfter=No
 47	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4804825,.2
-# X_ID = ID_MISSING
-# text = Við í Bjartri framtíð lögðum fram þingsályktunartillögu sem við í atvinnuveganefnd fórum í gegnum samhliða þessu máli .
+# sent_id = ALTHINGI_BO_2014_G-33-4804825,.2
+# X_ID = ID_missing_2
+# text = Við í Bjartri framtíð lögðum fram þingsályktunartillögu sem við í atvinnuveganefnd fórum í gegnum samhliða þessu máli.
 1	Við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	í	í	ADP	P	_	4	case	_	_
 3	Bjartri	bjartur	ADJ	ADJ-D	Case=Dat|Degree=Pos	4	amod	_	_
@@ -71,9 +71,9 @@
 17	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4804825,.3
-# X_ID = ID_MISSING
-# text = Það var þegar skýrslan frá ráðgjafarhópnum kom fram .
+# sent_id = ALTHINGI_BO_2014_G-33-4804825,.3
+# X_ID = ID_missing_3
+# text = Það var þegar skýrslan frá ráðgjafarhópnum kom fram.
 1	Það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	7	cop	_	_
 3	þegar	þegar	ADP	P	_	7	case	_	_
@@ -84,9 +84,9 @@
 8	fram	fram	ADP	RP	_	7	compound:prt	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4804825,.4
-# X_ID = ID_MISSING
-# text = Hún hljóðaði upp á það að fela ráðherra að fara strax að vinna að þeim sjö tillögum sem fram komu þar .
+# sent_id = ALTHINGI_BO_2014_G-33-4804825,.4
+# X_ID = ID_missing_4
+# text = Hún hljóðaði upp á það að fela ráðherra að fara strax að vinna að þeim sjö tillögum sem fram komu þar.
 1	Hún	hún	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	hljóðaði	hljóða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	upp	upp	ADP	RP	_	5	compound:prt	_	_
@@ -110,9 +110,9 @@
 21	þar	þar	ADV	ADV	Degree=Pos	20	advmod	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4804825,.5
-# X_ID = ID_MISSING
-# text = Ráðherra valdi að senda skýrsluna inn í þingið, fannst það vera betri leið
+# sent_id = ALTHINGI_BO_2014_G-33-4804825,.5
+# X_IDs = ID_missing_5 ; ID_missing_6
+# text = Ráðherra valdi að senda skýrsluna inn í þingið, fannst það vera betri leið og það er svo sem bara skiljanlegt.
 1	Ráðherra	ráðherra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	valdi	velja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -127,22 +127,18 @@
 12	vera	vera	AUX	BE	VerbForm=Inf	14	cop	_	_
 13	betri	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	14	amod	_	_
 14	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	xcomp	_	_
+15	og	og	CCONJ	CONJ	_	21	cc	_	_
+16	það	það	PRON	PRO-N	Case=Nom	21	nsubj	_	_
+17	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	21	cop	_	_
+18	svo	svo	ADV	ADV	Degree=Pos	21	advmod	_	_
+19	sem	sem	ADV	ADV	Degree=Pos	18	advmod	_	_
+20	bara	bara	ADV	FP	Degree=Pos	21	advmod	_	_
+21	skiljanlegt	skiljanlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0|SpaceAfter=No
+22	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4804825,.6
-# X_ID = ID_MISSING
-# text = og það er svo sem bara skiljanlegt .
-1	og	og	CCONJ	CONJ	_	7	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
-4	svo	svo	ADV	ADV	Degree=Pos	7	advmod	_	_
-5	sem	sem	ADV	ADV	Degree=Pos	4	advmod	_	_
-6	bara	bara	ADV	FP	Degree=Pos	7	advmod	_	_
-7	skiljanlegt	skiljanlegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
-8	.	.	PUNCT	.	_	7	punct	_	_
-
-# sent_id = G-33-4804825,.7
-# X_ID = ID_MISSING
-# text = Henni fannst það vera lýðræðislegra .
+# sent_id = ALTHINGI_BO_2014_G-33-4804825,.6
+# X_ID = ID_missing_7
+# text = Henni fannst það vera lýðræðislegra.
 1	Henni	hún	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	fannst	finna	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
@@ -150,9 +146,9 @@
 5	lýðræðislegra	lýðræðislegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	2	xcomp	_	SpaceAfter=No
 6	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4804825,.8
-# X_ID = ID_MISSING
-# text = Ég er ánægð með að við í atvinnuveganefnd skyldum vinna það mál mjög hratt og vel .
+# sent_id = ALTHINGI_BO_2014_G-33-4804825,.7
+# X_ID = ID_missing_8
+# text = Ég er ánægð með að við í atvinnuveganefnd skyldum vinna það mál mjög hratt og vel.
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	ánægð	ánægður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -171,9 +167,9 @@
 16	vel	vel	ADV	ADV	Degree=Pos	15	advmod	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4804825,.9
-# X_ID = ID_MISSING
-# text = Ég er ánægðust með að samhljómur var í áliti okkar þó svo að sumum þingmönnum sem áður hafa talað hér heyrðist sá samhljómur ekki vera nógu sterkur eða nógu mikið í samræmi við skoðanir sínar .
+# sent_id = ALTHINGI_BO_2014_G-33-4804825,.8
+# X_ID = ID_missing_9
+# text = Ég er ánægðust með að samhljómur var í áliti okkar þó svo að sumum þingmönnum sem áður hafa talað hér heyrðist sá samhljómur ekki vera nógu sterkur eða nógu mikið í samræmi við skoðanir sínar.
 1	Ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	ánægðust	ánægður	ADJ	ADJS-N	Case=Nom|Degree=Sup	0	root	_	_
@@ -211,9 +207,9 @@
 35	sínar	sinn	PRON	PRO-A	Case=Acc	34	nmod:poss	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4804825,.10
-# X_ID = ID_MISSING
-# text = Ég held að mestu máli skipti að við séum sammála um þetta og þau skilaboð koma mjög skýrt fram til ráðherra að hún haldi málinu áfram .
+# sent_id = ALTHINGI_BO_2014_G-33-4804825,.9
+# X_ID = ID_missing_10
+# text = Ég held að mestu máli skipti að við séum sammála um þetta og þau skilaboð koma mjög skýrt fram til ráðherra að hún haldi málinu áfram.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -242,9 +238,9 @@
 26	áfram	áfram	ADV	ADV	Degree=Pos	24	advmod	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4804825,.11
-# X_ID = ID_MISSING
-# text = Önnur leið hefði verið að hætta og draga úr þessu verkefni
+# sent_id = ALTHINGI_BO_2014_G-33-4804825,.10
+# X_IDs = ID_missing_11 ; ID_missing_12
+# text = Önnur leið hefði verið að hætta og draga úr þessu verkefni en það varð ekki niðurstaðan.
 1	Önnur	annar	PRON	OTHER-N	Case=Nom	2	det	_	_
 2	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	hefði	hafa	VERB	HVDS	Mood=Sub|Tense=Past	0	root	_	_
@@ -256,20 +252,16 @@
 9	úr	úr	ADP	P	_	11	case	_	_
 10	þessu	þessi	DET	D-D	Case=Dat	11	det	_	_
 11	verkefni	verkefni	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
+12	en	en	CCONJ	CONJ	_	14	cc	_	_
+13	það	það	PRON	PRO-N	Case=Nom	14	nsubj	_	_
+14	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
+15	ekki	ekki	ADV	NEG	_	14	advmod	_	_
+16	niðurstaðan	niðurstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	xcomp	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4804825,.12
-# X_ID = ID_MISSING
-# text = en það varð ekki niðurstaðan .
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
-4	ekki	ekki	ADV	NEG	_	3	advmod	_	_
-5	niðurstaðan	niðurstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	xcomp	_	SpaceAfter=No
-6	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4804825,.13
-# X_ID = ID_MISSING
-# text = Niðurstaðan varð sú að hvetja ráðherra til að halda áfram
+# sent_id = ALTHINGI_BO_2014_G-33-4804825,.11
+# X_IDs = ID_missing_13 ; ID_missing_14
+# text = Niðurstaðan varð sú að hvetja ráðherra til að halda áfram og hefur hún móttekið þau skilaboð.
 1	Niðurstaðan	niðurstaða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 2	varð	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
 3	sú	sá	DET	D-N	Case=Nom	2	xcomp	_	_
@@ -280,12 +272,11 @@
 8	að	að	PART	TO	_	9	mark	_	_
 9	halda	halda	VERB	VB	VerbForm=Inf	5	obl	_	_
 10	áfram	áfram	ADV	ADV	Degree=Pos	9	advmod	_	_
-
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
-3	hún	hún	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-4	móttekið	móttaka	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-5	þau	sá	DET	D-A	Case=Acc	6	det	_	_
-6	skilaboð	skilaboð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obj	_	_
-7	.	.	PUNCT	.	_	4	punct	_	_
+11	og	og	CCONJ	CONJ	_	14	cc	_	_
+12	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	14	aux	_	_
+13	hún	hún	PRON	PRO-N	Case=Nom	14	nsubj	_	_
+14	móttekið	móttaka	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
+15	þau	sá	DET	D-A	Case=Acc	16	det	_	_
+16	skilaboð	skilaboð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obj	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	2	punct	_	_
 

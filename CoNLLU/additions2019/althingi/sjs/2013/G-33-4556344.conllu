@@ -1,6 +1,6 @@
-# sent_id = G-33-4556344,.1
-# X_ID = ID_MISSING
-# text = Herra forseti . Ég tek undir það með hæstv. fjármálaráðherra að vonandi getum við, a.m.k. sum hver, átt málefnalegar rökræður um það hvernig er best að haga skattkerfinu og alveg einkum og sér í lagi álagningu tekjuskatts á einstaklinga því að það er eitt stærsta og öflugasta tækið sem við höfum í höndum til þess að reyna að vinna til dæmis gegn vaxandi launamun og bremsa vinnumarkaðinn af í þeim efnum o.s.frv.
+# sent_id = ALTHINGI_SJS_2013_G-33-4556344,.1
+# X_IDs = ID_missing_1 ; ID_missing_2
+# text = Herra forseti. Ég tek undir það með hæstv. fjármálaráðherra að vonandi getum við, a.m.k. sum hver, átt málefnalegar rökræður um það hvernig er best að haga skattkerfinu og alveg einkum og sér í lagi álagningu tekjuskatts á einstaklinga því að það er eitt stærsta og öflugasta tækið sem við höfum í höndum til þess að reyna að vinna til dæmis gegn vaxandi launamun og bremsa vinnumarkaðinn af í þeim efnum o.s.frv. Ég tel það í sjálfu sér ekki vera nein rök, þó að rétt sé, að ríkið fái ekki út úr tekjuskatti manna fyrr en launin eru komin yfir 230 þúsund vegna fyrirkomulags sem hefur verið langalengi við lýði, að ríkið bæti sveitarfélögunum upp það sem á vantar í fullt útsvar af launum þar fyrir neðan.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -79,73 +79,69 @@
 76	o.	og	CCONJ	CONJ	_	63	xcomp	_	SpaceAfter=No
 77	s.	svo	ADV	ADV	Degree=Pos	76	xcomp	_	SpaceAfter=No
 78	frv.	framvegis	ADV	ADV	Degree=Pos	77	advmod	_	_
+79	Ég	ég	PRON	PRO-N	Case=Nom	80	nsubj	_	_
+80	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+81	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	88	expl	_	_
+82	í	í	ADP	P	_	83	case	_	_
+83	sjálfu	sjálfur	PRON	PRO-D	Case=Dat	88	obl	_	_
+84	sér	sig	PRON	PRO-D	Case=Dat	83	nmod	_	_
+85	ekki	ekki	ADV	NEG	_	88	advmod	_	_
+86	vera	vera	AUX	BE	VerbForm=Inf	88	cop	_	_
+87	nein	neinn	DET	Q-A	Case=Acc	88	amod	_	_
+88	rök	rök	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	80	xcomp	_	SpaceAfter=No
+89	,	,	PUNCT	,	_	88	punct	_	_
+90	þó	þó	ADP	P	_	92	case	_	_
+91	að	að	SCONJ	C	_	92	mark	_	_
+92	rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	88	obl	_	_
+93	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	92	cop	_	SpaceAfter=No
+94	,	,	PUNCT	,	_	93	punct	_	_
+95	að	að	SCONJ	C	_	97	mark	_	_
+96	ríkið	ríki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	97	nsubj	_	_
+97	fái	fá	VERB	VBPS	Mood=Sub|Tense=Pres	88	ccomp	_	_
+98	ekki	ekki	ADV	NEG	_	97	advmod	_	_
+99	út	út	ADP	RP	_	101	compound:prt	_	_
+100	úr	úr	ADP	P	_	101	case	_	_
+101	tekjuskatti	tekjuskattur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	97	obl	_	_
+102	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	101	nmod:poss	_	_
+103	fyrr	snemma	ADV	ADVR	Degree=Cmp	97	advmod	_	_
+104	en	en	ADP	P	_	107	case	_	_
+105	launin	laun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	107	nsubj	_	_
+106	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	107	cop	_	_
+107	komin	koma	VERB	VBN	Tense=Past|VerbForm=Part	103	obl	_	_
+108	yfir	yfir	ADP	P	_	109	case	_	_
+109	230	230	NUM	NUM-A	Case=Acc	107	obl	_	_
+110	þúsund	þúsund	NUM	NUM-A	Case=Acc	109	nummod	_	_
+111	vegna	vegna	ADP	P	_	112	case	_	_
+112	fyrirkomulags	fyrirkomulag	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	97	obl	_	_
+113	sem	sem	SCONJ	C	_	115	mark	_	_
+114	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	115	aux	_	_
+115	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	112	acl:relcl	_	_
+116	langalengi	langalengi	ADV	ADV	Degree=Pos	115	obl	_	_
+117	við	við	ADP	P	_	118	case	_	_
+118	lýði	lýður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	115	obl	_	SpaceAfter=No
+119	,	,	PUNCT	,	_	118	punct	_	_
+120	að	að	SCONJ	C	_	122	mark	_	_
+121	ríkið	ríki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	122	nsubj	_	_
+122	bæti	bæta	VERB	VBPS	Mood=Sub|Tense=Pres	112	ccomp	_	_
+123	sveitarfélögunum	sveitarfélag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	122	iobj	_	_
+124	upp	upp	ADP	RP	_	122	compound:prt	_	_
+125	það	sá	DET	D-A	Case=Acc	122	obj	_	_
+126	sem	sem	SCONJ	C	_	128	mark	_	_
+127	á	á	ADP	RP	_	128	compound:prt	_	_
+128	vantar	vanta	VERB	VBPI	Mood=Ind|Tense=Pres	125	acl:relcl	_	_
+129	í	í	ADP	P	_	131	case	_	_
+130	fullt	fullur	ADJ	ADJ-A	Case=Acc|Degree=Pos	131	amod	_	_
+131	útsvar	útsvar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	128	obl	_	_
+132	af	af	ADP	P	_	133	case	_	_
+133	launum	laun	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	131	obl	_	_
+134	þar	þar	ADV	ADV	Degree=Pos	133	obl	_	_
+135	fyrir	fyrir	ADP	P	_	134	case	_	_
+136	neðan	neðan	ADV	ADV	Degree=Pos	134	advmod	_	SpaceAfter=No
+137	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4556344,.2
-# X_ID = ID_MISSING
-# text = Ég tel það í sjálfu sér ekki vera nein rök, þó að rétt sé, að ríkið fái ekki út úr tekjuskatti manna fyrr en launin eru komin yfir 230 þúsund vegna fyrirkomulags sem hefur verið langalengi við lýði, að ríkið bæti sveitarfélögunum upp það sem á vantar í fullt útsvar af launum þar fyrir neðan .
-1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	10	expl	_	_
-4	í	í	ADP	P	_	5	case	_	_
-5	sjálfu	sjálfur	PRON	PRO-D	Case=Dat	10	obl	_	_
-6	sér	sig	PRON	PRO-D	Case=Dat	5	nmod	_	_
-7	ekki	ekki	ADV	NEG	_	10	advmod	_	_
-8	vera	vera	AUX	BE	VerbForm=Inf	10	cop	_	_
-9	nein	neinn	DET	Q-A	Case=Acc	10	amod	_	_
-10	rök	rök	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	xcomp	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	10	punct	_	_
-12	þó	þó	ADP	P	_	14	case	_	_
-13	að	að	SCONJ	C	_	14	mark	_	_
-14	rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	obl	_	_
-15	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	14	cop	_	SpaceAfter=No
-16	,	,	PUNCT	,	_	15	punct	_	_
-17	að	að	SCONJ	C	_	19	mark	_	_
-18	ríkið	ríki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
-19	fái	fá	VERB	VBPS	Mood=Sub|Tense=Pres	10	ccomp	_	_
-20	ekki	ekki	ADV	NEG	_	19	advmod	_	_
-21	út	út	ADP	RP	_	23	compound:prt	_	_
-22	úr	úr	ADP	P	_	23	case	_	_
-23	tekjuskatti	tekjuskattur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	_
-24	manna	maður	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	23	nmod:poss	_	_
-25	fyrr	snemma	ADV	ADVR	Degree=Cmp	19	advmod	_	_
-26	en	en	ADP	P	_	29	case	_	_
-27	launin	laun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	29	nsubj	_	_
-28	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	29	cop	_	_
-29	komin	koma	VERB	VBN	Tense=Past|VerbForm=Part	25	obl	_	_
-30	yfir	yfir	ADP	P	_	31	case	_	_
-31	230	230	NUM	NUM-A	Case=Acc	29	obl	_	_
-32	þúsund	þúsund	NUM	NUM-A	Case=Acc	31	nummod	_	_
-33	vegna	vegna	ADP	P	_	34	case	_	_
-34	fyrirkomulags	fyrirkomulag	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	obl	_	_
-35	sem	sem	SCONJ	C	_	37	mark	_	_
-36	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	37	aux	_	_
-37	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	34	acl:relcl	_	_
-38	langalengi	langalengi	ADV	ADV	Degree=Pos	37	obl	_	_
-39	við	við	ADP	P	_	40	case	_	_
-40	lýði	lýður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	37	obl	_	SpaceAfter=No
-41	,	,	PUNCT	,	_	40	punct	_	_
-42	að	að	SCONJ	C	_	44	mark	_	_
-43	ríkið	ríki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	44	nsubj	_	_
-44	bæti	bæta	VERB	VBPS	Mood=Sub|Tense=Pres	34	ccomp	_	_
-45	sveitarfélögunum	sveitarfélag	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	44	iobj	_	_
-46	upp	upp	ADP	RP	_	44	compound:prt	_	_
-47	það	sá	DET	D-A	Case=Acc	44	obj	_	_
-48	sem	sem	SCONJ	C	_	50	mark	_	_
-49	á	á	ADP	RP	_	50	compound:prt	_	_
-50	vantar	vanta	VERB	VBPI	Mood=Ind|Tense=Pres	47	acl:relcl	_	_
-51	í	í	ADP	P	_	53	case	_	_
-52	fullt	fullur	ADJ	ADJ-A	Case=Acc|Degree=Pos	53	amod	_	_
-53	útsvar	útsvar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	50	obl	_	_
-54	af	af	ADP	P	_	55	case	_	_
-55	launum	laun	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	53	obl	_	_
-56	þar	þar	ADV	ADV	Degree=Pos	55	obl	_	_
-57	fyrir	fyrir	ADP	P	_	56	case	_	_
-58	neðan	neðan	ADV	ADV	Degree=Pos	56	advmod	_	SpaceAfter=No
-59	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4556344,.3
-# X_ID = ID_MISSING
-# text = Það er bara hluti af hinum föstu tekjusamskiptum ríkis og sveitarfélaga
+# sent_id = ALTHINGI_SJS_2013_G-33-4556344,.2
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Það er bara hluti af hinum föstu tekjusamskiptum ríkis og sveitarfélaga og hefur verið svo mjög lengi.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	bara	bara	ADV	FP	Degree=Pos	4	advmod	_	_
@@ -157,21 +153,17 @@
 9	ríkis	ríki	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	8	nmod:poss	_	_
 10	og	og	CCONJ	CONJ	_	11	cc	_	_
 11	sveitarfélaga	sveitarfélag	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	conj	_	_
+12	og	og	CCONJ	CONJ	_	13	cc	_	_
+13	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	4	conj	_	OriginalHead=0
+14	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	13	cop	_	_
+15	svo	svo	ADV	ADV	Degree=Pos	13	advmod	_	_
+16	mjög	mjög	ADV	ADV	Degree=Pos	13	advmod	_	_
+17	lengi	lengi	ADV	ADV	Degree=Pos	16	advmod	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4556344,.4
-# X_ID = ID_MISSING
-# text = og hefur verið svo mjög lengi .
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	hefur	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	2	cop	_	_
-4	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
-5	mjög	mjög	ADV	ADV	Degree=Pos	2	advmod	_	_
-6	lengi	lengi	ADV	ADV	Degree=Pos	5	advmod	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4556344,.5
-# X_ID = ID_MISSING
-# text = Það er að vísu rétt að ríkið hefur axlað þyngri byrðar seinni árin vegna þessa fyrirkomulags því að menn hafa fært verkefni frá ríki til sveitarfélaga og fjármagnað þau með hækkun útsvars .
+# sent_id = ALTHINGI_SJS_2013_G-33-4556344,.3
+# X_ID = ID_missing_5
+# text = Það er að vísu rétt að ríkið hefur axlað þyngri byrðar seinni árin vegna þessa fyrirkomulags því að menn hafa fært verkefni frá ríki til sveitarfélaga og fjármagnað þau með hækkun útsvars.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	17	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
 3	að	að	ADV	P	_	17	advmod	_	_
@@ -206,9 +198,9 @@
 32	útsvars	útsvar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	31	nmod:poss	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	17	punct	_	_
 
-# sent_id = G-33-4556344,.6
-# X_ID = ID_MISSING
-# text = Þar með er útsvarið orðið stærri hluti tekjuskattsstofnsins
+# sent_id = ALTHINGI_SJS_2013_G-33-4556344,.4
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Þar með er útsvarið orðið stærri hluti tekjuskattsstofnsins og þegar upp á vantar verður dýrara að bæta það upp.
 1	Þar	þar	ADV	ADV	Degree=Pos	5	obl	_	_
 2	með	með	ADP	P	_	1	case	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -217,26 +209,22 @@
 6	stærri	stór	ADJ	ADJR-A	Case=Acc|Degree=Cmp	7	amod	_	_
 7	hluti	hlutur	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obj	_	_
 8	tekjuskattsstofnsins	tekjuskattsstofn	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
+9	og	og	CCONJ	CONJ	_	14	cc	_	_
+10	þegar	þegar	ADP	P	_	13	case	_	_
+11	upp	upp	ADP	RP	_	12	compound:prt	_	_
+12	á	á	ADV	ADV	Degree=Pos	13	advmod	_	_
+13	vantar	vanta	VERB	VBPI	Mood=Ind|Tense=Pres	14	obl	_	_
+14	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+15	dýrara	dýr	ADJ	ADJR-N	Case=Nom|Degree=Cmp	14	amod	_	_
+16	að	að	PART	TO	_	17	mark	_	_
+17	bæta	bæta	VERB	VB	VerbForm=Inf	14	xcomp	_	_
+18	það	það	PRON	PRO-A	Case=Acc	17	obj	_	_
+19	upp	upp	ADP	RP	_	17	compound:prt	_	SpaceAfter=No
+20	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4556344,.7
-# X_ID = ID_MISSING
-# text = og þegar upp á vantar verður dýrara að bæta það upp .
-1	og	og	CCONJ	CONJ	_	6	cc	_	_
-2	þegar	þegar	ADP	P	_	5	case	_	_
-3	upp	upp	ADP	RP	_	4	compound:prt	_	_
-4	á	á	ADV	ADV	Degree=Pos	5	advmod	_	_
-5	vantar	vanta	VERB	VBPI	Mood=Ind|Tense=Pres	6	obl	_	_
-6	verður	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-7	dýrara	dýr	ADJ	ADJR-N	Case=Nom|Degree=Cmp	6	amod	_	_
-8	að	að	PART	TO	_	9	mark	_	_
-9	bæta	bæta	VERB	VB	VerbForm=Inf	6	xcomp	_	_
-10	það	það	PRON	PRO-A	Case=Acc	9	obj	_	_
-11	upp	upp	ADP	RP	_	9	compound:prt	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	6	punct	_	_
-
-# sent_id = G-33-4556344,.8
-# X_ID = ID_MISSING
-# text = Sveitarfélögin hafa kannski ekki metið þetta að verðleikum sérstaklega .
+# sent_id = ALTHINGI_SJS_2013_G-33-4556344,.5
+# X_ID = ID_missing_8
+# text = Sveitarfélögin hafa kannski ekki metið þetta að verðleikum sérstaklega.
 1	Sveitarfélögin	sveitarfélag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	5	nsubj	_	_
 2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	5	aux	_	_
 3	kannski	kannski	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -248,9 +236,9 @@
 9	sérstaklega	sérstaklega	ADV	ADV	Degree=Pos	5	advmod	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4556344,.9
-# X_ID = ID_MISSING
-# text = Þau fengu til dæmis þennan mun alveg ókeypis þegar málefni fatlaðra voru færð yfir og ríkið færði yfir 1,2 prósentustig sem jók auðvitað þennan halla og kostnað ríkisins við að bæta upp fullt útsvar .
+# sent_id = ALTHINGI_SJS_2013_G-33-4556344,.6
+# X_ID = ID_missing_9
+# text = Þau fengu til dæmis þennan mun alveg ókeypis þegar málefni fatlaðra voru færð yfir og ríkið færði yfir 1,2 prósentustig sem jók auðvitað þennan halla og kostnað ríkisins við að bæta upp fullt útsvar.
 1	Þau	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	fengu	fá	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	til	til	ADP	P	_	4	case	_	_
@@ -287,9 +275,9 @@
 34	útsvar	útsvar	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	31	obj	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4556344,.10
-# X_ID = ID_MISSING
-# text = Varðandi jaðaráhrifin í kerfinu eru þau að sjálfsögðu til staðar
+# sent_id = ALTHINGI_SJS_2013_G-33-4556344,.7
+# X_IDs = ID_missing_10 ; ID_missing_11 ; ID_missing_12 ; ID_missing_13
+# text = Varðandi jaðaráhrifin í kerfinu eru þau að sjálfsögðu til staðar og hafa að einhverju leyti aukist vegna skarpari tekjutengingar, til dæmis vaxtabótanna, en þau eru þó ekki nema u.þ.b. 50<percent/> það er algengast.
 1	Varðandi	varða	VERB	VAG	Tense=Pres|VerbForm=Part	10	acl	_	_
 2	jaðaráhrifin	jaðaráhrif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	1	obj	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -300,48 +288,39 @@
 8	sjálfsögðu	sjálfsagður	ADJ	ADJ-D	Case=Dat|Degree=Pos	7	amod	_	_
 9	til	til	ADP	P	_	10	case	_	_
 10	staðar	staður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	0	root	_	_
+11	og	og	CCONJ	CONJ	_	16	cc	_	_
+12	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	16	aux	_	_
+13	að	að	ADP	P	_	15	case	_	_
+14	einhverju	einhver	DET	Q-D	Case=Dat	15	amod	_	_
+15	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	16	obl	_	_
+16	aukist	auka	VERB	VBN	Tense=Past|VerbForm=Part	10	conj	_	OriginalHead=0
+17	vegna	vegna	ADP	P	_	19	case	_	_
+18	skarpari	skarpur	ADJ	ADJR-G	Case=Gen|Degree=Cmp	19	amod	_	_
+19	tekjutengingar	tekjutenging	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	til	til	ADP	P	_	22	case	_	_
+22	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	23	obl	_	_
+23	vaxtabótanna	vaxtabætur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	19	appos	_	SpaceAfter=No
+24	,	,	PUNCT	,	_	19	punct	_	_
+25	en	en	CCONJ	CONJ	_	31	cc	_	_
+26	þau	það	PRON	PRO-N	Case=Nom	31	nsubj	_	_
+27	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	31	cop	_	_
+28	þó	þó	ADV	ADV	Degree=Pos	31	advmod	_	_
+29	ekki	ekki	ADV	NEG	_	31	advmod	_	_
+30	nema	nema	ADP	P	_	31	case	_	_
+31	u.	um	ADP	P	_	10	conj	_	OriginalHead=0|SpaceAfter=No
+32	þ.	sá	DET	D-A	Case=Acc	33	det	_	SpaceAfter=No
+33	b.	bil	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	35	obl	_	_
+34	50	fimmtíu	NUM	NUM-N	Case=Nom	35	nummod	_	SpaceAfter=No
+35	<percent/>	prósent	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	31	conj	_	_
+36	það	það	PRON	PRO-N	Case=Nom	38	nsubj	_	_
+37	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	38	cop	_	_
+38	algengast	algengur	ADJ	ADJS-N	Case=Nom|Degree=Sup	10	conj	_	OriginalHead=0|SpaceAfter=No
+39	.	.	PUNCT	.	_	10	punct	_	_
 
-# sent_id = G-33-4556344,.11
-# X_ID = ID_MISSING
-# text = og hafa að einhverju leyti aukist vegna skarpari tekjutengingar, til dæmis vaxtabótanna,
-1	og	og	CCONJ	CONJ	_	6	cc	_	_
-2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	6	aux	_	_
-3	að	að	ADP	P	_	5	case	_	_
-4	einhverju	einhver	DET	Q-D	Case=Dat	5	amod	_	_
-5	leyti	leyti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
-6	aukist	auka	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-7	vegna	vegna	ADP	P	_	9	case	_	_
-8	skarpari	skarpur	ADJ	ADJR-G	Case=Gen|Degree=Cmp	9	amod	_	_
-9	tekjutengingar	tekjutenging	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
-10	,	,	PUNCT	,	_	9	punct	_	_
-11	til	til	ADP	P	_	12	case	_	_
-12	dæmis	dæmi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	13	obl	_	_
-13	vaxtabótanna	vaxtabætur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	appos	_	SpaceAfter=No
-14	,	,	PUNCT	,	_	6	punct	_	_
-
-# sent_id = G-33-4556344,.12
-# X_ID = ID_MISSING
-# text = en þau eru þó ekki nema u.þ.b. 50<percent/>
-1	en	en	CCONJ	CONJ	_	7	cc	_	_
-2	þau	það	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-3	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
-4	þó	þó	ADV	ADV	Degree=Pos	7	advmod	_	_
-5	ekki	ekki	ADV	NEG	_	7	advmod	_	_
-6	nema	nema	ADP	P	_	7	case	_	_
-7	u.	um	ADP	P	_	0	root	_	SpaceAfter=No
-8	þ.	sá	DET	D-A	Case=Acc	9	det	_	SpaceAfter=No
-9	b.	bil	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
-10	50	fimmtíu	NUM	NUM-N	Case=Nom	11	nummod	_	SpaceAfter=No
-11	<percent/>	prósent	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	conj	_	_
-
-# sent_id = G-33-4556344,.13
-# X_ID = ID_MISSING
-# text = það er algengast .
-1	það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	algengast	algengur	ADJ	ADJS-N	Case=Nom|Degree=Sup	0	root	_	SpaceAfter=No
-4	.	.	PUNCT	.	_	3	punct	_	_
-
+# sent_id = ALTHINGI_SJS_2013_G-33-4556344,.8
+# X_ID = ID_missing_14
+# text = Það er talsvert betra en það var hérna í eina tíð þegar jaðaráhrifin fóru alveg upp í 65<percent/> og jafnvel meira ef tekjutengdar afborganir námslána voru teknar með.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	talsvert	talsvert	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -359,7 +338,7 @@
 15	alveg	alveg	ADV	ADV	Degree=Pos	14	advmod	_	_
 16	upp	upp	ADP	RP	_	19	compound:prt	_	_
 17	í	í	ADP	P	_	19	case	_	_
-18	65	65	NUM	NUM-A	Case=Acc	19	nummod	_	_|SpaceAfter=No
+18	65	65	NUM	NUM-A	Case=Acc	19	nummod	_	SpaceAfter=No
 19	<percent/>	prósent	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	_
 20	og	og	CCONJ	CONJ	_	22	cc	_	_
 21	jafnvel	jafnvel	ADV	ADV	Degree=Pos	22	advmod	_	_
@@ -370,6 +349,6 @@
 26	námslána	námslán	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	25	nmod:poss	_	_
 27	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	28	cop	_	_
 28	teknar	taka	VERB	VAN	Tense=Past|VerbForm=Part	14	obl	_	_
-29	með	með	ADP	RP	_	28	compound:prt	_	_
+29	með	með	ADP	RP	_	28	compound:prt	_	SpaceAfter=No
 30	.	.	PUNCT	.	_	4	punct	_	_
 

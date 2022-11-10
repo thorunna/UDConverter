@@ -1,6 +1,6 @@
-# sent_id = G-33-4591478,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Mér þykir svo gaman að í hvert sinn sem ég nefni tölvur, gögn og internetið og það allt í pontu eru flestir sammála, sem mér finnst alveg frábært .
+# sent_id = ALTHINGI_HHG_2013_G-33-4591478,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Mér þykir svo gaman að í hvert sinn sem ég nefni tölvur, gögn og internetið og það allt í pontu eru flestir sammála, sem mér finnst alveg frábært.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -36,9 +36,9 @@
 33	frábært	frábær	ADJ	ADJ-N	Case=Nom|Degree=Pos	31	xcomp	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4591478,.2
-# X_ID = ID_MISSING
-# text = Aftur vil ég þakka hv. þm. Katrínu Júlíusdóttur fyrir að standa að þessu verkefni á seinasta ári og sömuleiðis hv. þm. Guðlaugi Þór Þórðarsyni fyrir tillögu sína að því að opna gögn á sveitarstjórnarstigi .
+# sent_id = ALTHINGI_HHG_2013_G-33-4591478,.2
+# X_ID = ID_missing_2
+# text = Aftur vil ég þakka hv. þm. Katrínu Júlíusdóttur fyrir að standa að þessu verkefni á seinasta ári og sömuleiðis hv. þm. Guðlaugi Þór Þórðarsyni fyrir tillögu sína að því að opna gögn á sveitarstjórnarstigi.
 1	Aftur	aftur	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -75,9 +75,9 @@
 34	sveitarstjórnarstigi	sveitarstjórnarstig	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	31	obl	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4591478,.3
-# X_ID = ID_MISSING
-# text = Það er líka hárrétt sem hv. þm. Katrín Júlíusdóttir segir um sniðið á gögnunum .
+# sent_id = ALTHINGI_HHG_2013_G-33-4591478,.3
+# X_ID = ID_missing_3
+# text = Það er líka hárrétt sem hv. þm. Katrín Júlíusdóttir segir um sniðið á gögnunum.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	líka	líka	ADV	ALSO	_	4	advmod	_	_
@@ -94,43 +94,39 @@
 14	gögnunum	gagn	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	12	obl	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4591478,.4
-# X_ID = ID_MISSING
-# text = Þau eru á hráu sniði
+# sent_id = ALTHINGI_HHG_2013_G-33-4591478,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Þau eru á hráu sniði og það einmitt vekur svo mikið traust vegna þess að þá getur fólk gert hvað sem það vill með þau.
 1	Þau	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	á	á	ADP	P	_	5	case	_	_
 4	hráu	hrár	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
 5	sniði	snið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	0	root	_	_
+6	og	og	CCONJ	CONJ	_	9	cc	_	_
+7	það	það	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+8	einmitt	einmitt	ADV	ADV	Degree=Pos	9	advmod	_	_
+9	vekur	vekja	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+10	svo	svo	ADV	ADV	Degree=Pos	11	amod	_	_
+11	mikið	mikill	DET	Q-N	Case=Nom	12	amod	_	_
+12	traust	traust	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obj	_	_
+13	vegna	vegna	ADP	P	_	14	case	_	_
+14	þess	það	PRON	PRO-G	Case=Gen	9	obl	_	_
+15	að	að	SCONJ	C	_	19	mark	_	_
+16	þá	þá	ADV	ADV	Degree=Pos	19	advmod	_	_
+17	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	19	aux	_	_
+18	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	19	nsubj	_	_
+19	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	14	ccomp	_	_
+20	hvað	hver	PRON	WPRO-A	Case=Acc	23	obj	_	_
+21	sem	sem	SCONJ	C	_	23	mark	_	_
+22	það	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+23	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	19	obj	_	_
+24	með	með	ADP	P	_	25	case	_	_
+25	þau	það	PRON	PRO-A	Case=Acc	19	obl	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4591478,.5
-# X_ID = ID_MISSING
-# text = og það einmitt vekur svo mikið traust vegna þess að þá getur fólk gert hvað sem það vill með þau .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-3	einmitt	einmitt	ADV	ADV	Degree=Pos	4	advmod	_	_
-4	vekur	vekja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-5	svo	svo	ADV	ADV	Degree=Pos	6	amod	_	_
-6	mikið	mikill	DET	Q-N	Case=Nom	7	amod	_	_
-7	traust	traust	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	4	obj	_	_
-8	vegna	vegna	ADP	P	_	9	case	_	_
-9	þess	það	PRON	PRO-G	Case=Gen	4	obl	_	_
-10	að	að	SCONJ	C	_	14	mark	_	_
-11	þá	þá	ADV	ADV	Degree=Pos	14	advmod	_	_
-12	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	14	aux	_	_
-13	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	14	nsubj	_	_
-14	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	9	ccomp	_	_
-15	hvað	hver	PRON	WPRO-A	Case=Acc	18	obj	_	_
-16	sem	sem	SCONJ	C	_	18	mark	_	_
-17	það	það	PRON	PRO-N	Case=Nom	18	nsubj	_	_
-18	vill	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	14	obj	_	_
-19	með	með	ADP	P	_	20	case	_	_
-20	þau	það	PRON	PRO-A	Case=Acc	14	obl	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4591478,.6
-# X_ID = ID_MISSING
-# text = Við eigum ekki endilega að matreiða þessi gögn ofan í almenning,
+# sent_id = ALTHINGI_HHG_2013_G-33-4591478,.5
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Við eigum ekki endilega að matreiða þessi gögn ofan í almenning, þvert á móti einmitt eins og hv. þingmaður nefnir getur það virkað ótrúverðugt.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	eigum	eiga	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -143,28 +139,24 @@
 10	í	í	ADP	P	_	11	case	_	_
 11	almenning	almenningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
 12	,	,	PUNCT	,	_	2	punct	_	_
+13	þvert	þvert	ADV	ADV	Degree=Pos	15	advmod	_	_
+14	á	á	ADP	P	_	15	case	_	_
+15	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	obl	_	_
+16	einmitt	einmitt	ADV	ADV	Degree=Pos	15	advmod	_	_
+17	eins	_	ADV	ADVR	Degree=Cmp	16	advmod	_	_
+18	og	_	ADP	P	_	21	case	_	_
+19	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	20	amod	_	_
+20	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	_
+21	nefnir	nefna	VERB	VBPI	Mood=Ind|Tense=Pres	16	obl	_	_
+22	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	24	aux	_	_
+23	það	það	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+24	virkað	virka	VERB	VBN	Tense=Past|VerbForm=Part	2	conj	_	OriginalHead=0
+25	ótrúverðugt	ótrúverðugur	ADJ	ADJ-N	Case=Nom|Degree=Pos	24	ccomp	_	SpaceAfter=No
+26	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4591478,.7
-# X_ID = ID_MISSING
-# text = þvert á móti einmitt eins og hv. þingmaður nefnir getur það virkað ótrúverðugt .
-1	þvert	þvert	ADV	ADV	Degree=Pos	3	advmod	_	_
-2	á	á	ADP	P	_	3	case	_	_
-3	móti	móti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
-4	einmitt	einmitt	ADV	ADV	Degree=Pos	3	advmod	_	_
-5	eins	_	ADV	ADVR	Degree=Cmp	4	advmod	_	_
-6	og	_	ADP	P	_	9	case	_	_
-7	hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	8	amod	_	_
-8	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	9	nsubj	_	_
-9	nefnir	nefna	VERB	VBPI	Mood=Ind|Tense=Pres	4	obl	_	_
-10	getur	geta	AUX	MDPI	Mood=Ind|Tense=Pres	12	aux	_	_
-11	það	það	PRON	PRO-N	Case=Nom	12	nsubj	_	_
-12	virkað	virka	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-13	ótrúverðugt	ótrúverðugur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	ccomp	_	SpaceAfter=No
-14	.	.	PUNCT	.	_	12	punct	_	_
-
-# sent_id = G-33-4591478,.8
-# X_ID = ID_MISSING
-# text = Miklu frekar er að við opnum allt .
+# sent_id = ALTHINGI_HHG_2013_G-33-4591478,.6
+# X_ID = ID_missing_8
+# text = Miklu frekar er að við opnum allt.
 1	Miklu	mikill	ADJ	ADJ-D	Case=Dat|Degree=Pos	2	obl	_	_
 2	frekar	frekar	ADV	ADVR	Degree=Cmp	0	root	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	2	cop	_	_
@@ -174,9 +166,9 @@
 7	allt	allur	DET	Q-A	Case=Acc	6	obj	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4591478,.9
-# X_ID = ID_MISSING
-# text = Ég held að það sé alveg satt að kerfið er ekki með það mikinn mótþróa þegar allt kemur til alls .
+# sent_id = ALTHINGI_HHG_2013_G-33-4591478,.7
+# X_ID = ID_missing_9
+# text = Ég held að það sé alveg satt að kerfið er ekki með það mikinn mótþróa þegar allt kemur til alls.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	7	mark	_	_
@@ -199,9 +191,9 @@
 20	alls	allur	DET	Q-G	Case=Gen	18	obl	_	SpaceAfter=No
 21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4591478,.10
-# X_ID = ID_MISSING
-# text = Ég held ekki að þar liggi vandinn
+# sent_id = ALTHINGI_HHG_2013_G-33-4591478,.8
+# X_IDs = ID_missing_10 ; ID_missing_11
+# text = Ég held ekki að þar liggi vandinn heldur þvert á móti þurfum við bara að vilja þetta.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -209,25 +201,21 @@
 5	þar	þar	ADV	ADV	Degree=Pos	6	advmod	_	_
 6	liggi	liggja	VERB	VBPS	Mood=Sub|Tense=Pres	2	ccomp	_	_
 7	vandinn	vandi	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
+8	heldur	heldur	ADV	ADVR	Degree=Cmp	12	advmod	_	_
+9	þvert	þvert	ADV	ADV	Degree=Pos	11	advmod	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
+12	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+13	við	ég	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+14	bara	bara	ADV	FP	Degree=Pos	12	advmod	_	_
+15	að	að	PART	TO	_	16	mark	_	_
+16	vilja	vilja	VERB	VB	VerbForm=Inf	12	xcomp	_	_
+17	þetta	þessi	DET	D-A	Case=Acc	16	obj	_	SpaceAfter=No
+18	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4591478,.11
-# X_ID = ID_MISSING
-# text = heldur þvert á móti þurfum við bara að vilja þetta .
-1	heldur	heldur	ADV	ADVR	Degree=Cmp	5	advmod	_	_
-2	þvert	þvert	ADV	ADV	Degree=Pos	4	advmod	_	_
-3	á	á	ADP	P	_	4	case	_	_
-4	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
-5	þurfum	þurfa	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-6	við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-7	bara	bara	ADV	FP	Degree=Pos	5	advmod	_	_
-8	að	að	PART	TO	_	9	mark	_	_
-9	vilja	vilja	VERB	VB	VerbForm=Inf	5	xcomp	_	_
-10	þetta	þessi	DET	D-A	Case=Acc	9	obj	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	5	punct	_	_
-
-# sent_id = G-33-4591478,.12
-# X_ID = ID_MISSING
-# text = Ég sé að hér er samstaða milli hv. þingmanns Samfylkingar, hv. þingmanns Sjálfstæðisflokks Forseti hringir . og vissulega okkar pírata
+# sent_id = ALTHINGI_HHG_2013_G-33-4591478,.9
+# X_IDs = ID_missing_12 ; ID_missing_13
+# text = Ég sé að hér er samstaða milli hv. þingmanns Samfylkingar, hv. þingmanns Sjálfstæðisflokks Forseti hringir. og vissulega okkar pírata og því vona ég að þetta starf muni bara halda áfram og styrkjast.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	sé	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	9	mark	_	_
@@ -249,19 +237,18 @@
 19	vissulega	vissulega	ADV	ADV	Degree=Pos	20	advmod	_	_
 20	okkar	ég	PRON	PRO-G	Case=Gen	9	conj	_	_
 21	pírata	pírati	PROPN	NPRS-G	_	20	obl	_	_
-
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
-3	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-5	að	að	SCONJ	C	_	10	mark	_	_
-6	þetta	þessi	DET	D-N	Case=Nom	7	det	_	_
-7	starf	starf	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
-8	muni	munu	AUX	MDPS	Mood=Sub|Tense=Pres	10	aux	_	_
-9	bara	bara	ADV	FP	Degree=Pos	10	advmod	_	_
-10	halda	halda	VERB	VB	VerbForm=Inf	3	ccomp	_	_
-11	áfram	áfram	ADV	ADV	Degree=Pos	10	advmod	_	_
-12	og	og	CCONJ	CONJ	_	13	cc	_	_
-13	styrkjast	styrkja	VERB	VB	VerbForm=Inf	10	conj	_	_
-14	.	.	PUNCT	.	_	3	punct	_	_
+22	og	og	CCONJ	CONJ	_	24	cc	_	_
+23	því	það	PRON	PRO-D	Case=Dat	24	obl	_	_
+24	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+25	ég	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+26	að	að	SCONJ	C	_	31	mark	_	_
+27	þetta	þessi	DET	D-N	Case=Nom	28	det	_	_
+28	starf	starf	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	31	nsubj	_	_
+29	muni	munu	AUX	MDPS	Mood=Sub|Tense=Pres	31	aux	_	_
+30	bara	bara	ADV	FP	Degree=Pos	31	advmod	_	_
+31	halda	halda	VERB	VB	VerbForm=Inf	24	ccomp	_	_
+32	áfram	áfram	ADV	ADV	Degree=Pos	31	advmod	_	_
+33	og	og	CCONJ	CONJ	_	34	cc	_	_
+34	styrkjast	styrkja	VERB	VB	VerbForm=Inf	31	conj	_	SpaceAfter=No
+35	.	.	PUNCT	.	_	2	punct	_	_
 

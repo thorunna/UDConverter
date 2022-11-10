@@ -1,6 +1,6 @@
-# sent_id = G-33-4588733,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Það er ánægjulegt að hv. þm. Ásmundur Einar Daðason er ánægður með fjárlagafrumvarpið og þá væntanlega ánægður nú með niðurskurð í heilbrigðiskerfinu,
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.1
+# X_IDs = ID_missing_1 ; ID_missing_2
+# text = Frú forseti. Það er ánægjulegt að hv. þm. Ásmundur Einar Daðason er ánægður með fjárlagafrumvarpið og þá væntanlega ánægður nú með niðurskurð í heilbrigðiskerfinu, það var hann ekki haustið 2010.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -26,22 +26,18 @@
 23	niðurskurð	niðurskurður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	_
 24	í	í	ADP	P	_	25	case	_	_
 25	heilbrigðiskerfinu	heilbrigðiskerfi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	23	obl	_	SpaceAfter=No
-26	,	,	PUNCT	,	_	6	punct	_	_
+26	,	,	PUNCT	,	_	23	punct	_	_
+27	það	það	PRON	PRO-N	Case=Nom	6	conj	_	OriginalHead=0
+28	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	27	cop	_	_
+29	hann	hann	PRON	PRO-N	Case=Nom	27	nsubj	_	_
+30	ekki	ekki	ADV	NEG	_	27	advmod	_	_
+31	haustið	haust	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	27	obl	_	_
+32	2010	2010	NUM	NUM-A	Case=Acc	31	obl	_	SpaceAfter=No
+33	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4588733,.2
-# X_ID = ID_MISSING
-# text = það var hann ekki haustið 2010 .
-1	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
-2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	1	cop	_	_
-3	hann	hann	PRON	PRO-N	Case=Nom	1	nsubj	_	_
-4	ekki	ekki	ADV	NEG	_	1	advmod	_	_
-5	haustið	haust	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
-6	2010	2010	NUM	NUM-A	Case=Acc	5	obl	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	1	punct	_	_
-
-# sent_id = G-33-4588733,.3
-# X_ID = ID_MISSING
-# text = Hv. þingmaður kvartaði eiginlega undan því að fyrri ríkisstjórn hefði ekki verið nógu dugleg að skattleggja bankakerfið eða fjármálastofnanir .
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.2
+# X_ID = ID_missing_3
+# text = Hv. þingmaður kvartaði eiginlega undan því að fyrri ríkisstjórn hefði ekki verið nógu dugleg að skattleggja bankakerfið eða fjármálastofnanir.
 1	Hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	kvartaði	kvarta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -63,9 +59,9 @@
 19	fjármálastofnanir	fjármálastofnun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obj	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4588733,.4
-# X_ID = ID_MISSING
-# text = Samt er það þannig að við komum á bankaskatti 2010 og við komum á fjársýsluskatti 2011
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.3
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Samt er það þannig að við komum á bankaskatti 2010 og við komum á fjársýsluskatti 2011 og eitthvað kvörtuðu og kveinuðu fjármálastofnanirnar undan því.
 1	Samt	samt	ADV	ADV	Degree=Pos	3	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
@@ -82,23 +78,19 @@
 14	á	á	ADP	RP	_	13	compound:prt	_	_
 15	fjársýsluskatti	fjársýsluskattur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	13	obj	_	_
 16	2011	2011	NUM	NUM-A	Case=Acc	13	obl	_	_
+17	og	og	CCONJ	CONJ	_	19	cc	_	_
+18	eitthvað	einhver	DET	Q-A	Case=Acc	19	obl	_	_
+19	kvörtuðu	kvarta	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	OriginalHead=0
+20	og	og	CCONJ	CONJ	_	21	cc	_	_
+21	kveinuðu	kveina	VERB	VBDI	Mood=Ind|Tense=Past	19	conj	_	_
+22	fjármálastofnanirnar	fjármálastofnun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	19	nsubj	_	_
+23	undan	undan	ADP	P	_	24	case	_	_
+24	því	það	PRON	PRO-D	Case=Dat	19	obl	_	SpaceAfter=No
+25	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4588733,.5
-# X_ID = ID_MISSING
-# text = og eitthvað kvörtuðu og kveinuðu fjármálastofnanirnar undan því .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	eitthvað	einhver	DET	Q-A	Case=Acc	3	obl	_	_
-3	kvörtuðu	kvarta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	og	og	CCONJ	CONJ	_	5	cc	_	_
-5	kveinuðu	kveina	VERB	VBDI	Mood=Ind|Tense=Past	3	conj	_	_
-6	fjármálastofnanirnar	fjármálastofnun	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
-7	undan	undan	ADP	P	_	8	case	_	_
-8	því	það	PRON	PRO-D	Case=Dat	3	obl	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4588733,.6
-# X_ID = ID_MISSING
-# text = Þær hafa tekið á sig verulega aukinn kostnað vegna fjármálaeftirlitsins sem hefur verið umfangsmikið á þessum árum .
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.4
+# X_ID = ID_missing_6
+# text = Þær hafa tekið á sig verulega aukinn kostnað vegna fjármálaeftirlitsins sem hefur verið umfangsmikið á þessum árum.
 1	Þær	hún	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
@@ -118,38 +110,34 @@
 17	árum	ár	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4588733,.7
-# X_ID = ID_MISSING
-# text = Þær greiða kostnað af umboðsmanni skuldara
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.5
+# X_IDs = ID_missing_7 ; ID_missing_8
+# text = Þær greiða kostnað af umboðsmanni skuldara og þær greiddu í tvígang 2,3 milljarða í sérstakar vaxtaniðurgreiðslur árin 2011 og 2012.
 1	Þær	hún	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	greiða	greiða	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	kostnað	kostnaður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obj	_	_
 4	af	af	ADP	P	_	5	case	_	_
 5	umboðsmanni	umboðsmaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
 6	skuldara	skuldari	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	5	nmod:poss	_	_
+7	og	og	CCONJ	CONJ	_	9	cc	_	_
+8	þær	hún	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+9	greiddu	greiða	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+10	í	í	ADP	P	_	11	case	_	_
+11	tvígang	tvígangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+12	2,3	2,3	NUM	NUM-A	Case=Acc	13	nummod	_	_
+13	milljarða	milljarður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obj	_	_
+14	í	í	ADP	P	_	16	case	_	_
+15	sérstakar	sérstakur	ADJ	ADJ-A	Case=Acc|Degree=Pos	16	amod	_	_
+16	vaxtaniðurgreiðslur	vaxtaniðurgreiðsla	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obl	_	_
+17	árin	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obl	_	_
+18	2011	2011	NUM	NUM-A	Case=Acc	17	appos	_	_
+19	og	og	CCONJ	CONJ	_	20	cc	_	_
+20	2012	2012	NUM	NUM-A	Case=Acc	18	conj	_	SpaceAfter=No
+21	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4588733,.8
-# X_ID = ID_MISSING
-# text = og þær greiddu í tvígang 2,3 milljarða í sérstakar vaxtaniðurgreiðslur árin 2011 og 2012 .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	þær	hún	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	greiddu	greiða	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	í	í	ADP	P	_	5	case	_	_
-5	tvígang	tvígangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
-6	2,3	2,3	NUM	NUM-A	Case=Acc	7	nummod	_	_
-7	milljarða	milljarður	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	_
-8	í	í	ADP	P	_	10	case	_	_
-9	sérstakar	sérstakur	ADJ	ADJ-A	Case=Acc|Degree=Pos	10	amod	_	_
-10	vaxtaniðurgreiðslur	vaxtaniðurgreiðsla	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obl	_	_
-11	árin	ár	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obl	_	_
-12	2011	2011	NUM	NUM-A	Case=Acc	11	appos	_	_
-13	og	og	CCONJ	CONJ	_	14	cc	_	_
-14	2012	2012	NUM	NUM-A	Case=Acc	12	conj	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4588733,.9
-# X_ID = ID_MISSING
-# text = Ýmsum þótti nú nokkuð vel að gert með þeim byrðum sem lagðar voru á fjármálafyrirtækin .
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.6
+# X_ID = ID_missing_9
+# text = Ýmsum þótti nú nokkuð vel að gert með þeim byrðum sem lagðar voru á fjármálafyrirtækin.
 1	Ýmsum	ýmis	DET	Q-D	Case=Dat	2	nsubj	_	_
 2	þótti	þykja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -167,9 +155,9 @@
 15	fjármálafyrirtækin	fjármálafyrirtæki	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4588733,.10
-# X_ID = ID_MISSING
-# text = Ef núverandi ríkisstjórn metur það svo að hægt sé að auka þetta enn umtalsvert með hækkun bankaskatts, og þar á meðal til dæmis álögur á sparisjóði, þá er það áhugavert
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.7
+# X_IDs = ID_missing_10 ; ID_missing_11
+# text = Ef núverandi ríkisstjórn metur það svo að hægt sé að auka þetta enn umtalsvert með hækkun bankaskatts, og þar á meðal til dæmis álögur á sparisjóði, þá er það áhugavert og við sjáum til.
 1	Ef	ef	ADP	P	_	4	case	_	_
 2	núverandi	núverandi	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
 3	ríkisstjórn	ríkisstjórn	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
@@ -202,19 +190,15 @@
 30	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	32	cop	_	_
 31	það	það	PRON	PRO-N	Case=Nom	32	nsubj	_	_
 32	áhugavert	áhugaverður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
+33	og	og	CCONJ	CONJ	_	35	cc	_	_
+34	við	ég	PRON	PRO-N	Case=Nom	35	nsubj	_	_
+35	sjáum	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	32	conj	_	OriginalHead=0
+36	til	til	ADP	RP	_	35	compound:prt	_	SpaceAfter=No
+37	.	.	PUNCT	.	_	32	punct	_	_
 
-# sent_id = G-33-4588733,.11
-# X_ID = ID_MISSING
-# text = og við sjáum til .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	sjáum	sjá	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	til	til	ADP	RP	_	3	compound:prt	_	SpaceAfter=No
-5	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4588733,.12
-# X_ID = ID_MISSING
-# text = Frú forseti . Hitt ætla ég að frábiðja mér, ómagaorð af því tagi frá hv. þm. Ásmundi Einari Daðasyni að fyrri ríkisstjórn hafi stundað þjónkun við erlenda kröfuhafa allt síðastliðið kjörtímabil .
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.8
+# X_ID = ID_missing_12
+# text = Frú forseti. Hitt ætla ég að frábiðja mér, ómagaorð af því tagi frá hv. þm. Ásmundi Einari Daðasyni að fyrri ríkisstjórn hafi stundað þjónkun við erlenda kröfuhafa allt síðastliðið kjörtímabil.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -249,41 +233,29 @@
 32	kjörtímabil	kjörtímabil	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	25	obl	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4588733,.13
-# X_ID = ID_MISSING
-# text = Þetta eru ómagaorð,
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.9
+# X_IDs = ID_missing_13 ; ID_missing_14 ; ID_missing_15 ; ID_missing_16
+# text = Þetta eru ómagaorð, þetta er ómaklegt, þetta er órökstutt og þetta er rangt.
 1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	ómagaorð	ómagaorð	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	0	root	_	SpaceAfter=No
 4	,	,	PUNCT	,	_	3	punct	_	_
+5	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
+6	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
+7	ómaklegt	ómaklegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0|SpaceAfter=No
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	þetta	þessi	DET	D-N	Case=Nom	11	nsubj	_	_
+10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
+11	órökstutt	órökstuddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0
+12	og	og	CCONJ	CONJ	_	15	cc	_	_
+13	þetta	þessi	DET	D-N	Case=Nom	15	nsubj	_	_
+14	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	15	cop	_	_
+15	rangt	rangur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	conj	_	OriginalHead=0|SpaceAfter=No
+16	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4588733,.14
-# X_ID = ID_MISSING
-# text = þetta er ómaklegt,
-1	þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	ómaklegt	ómaklegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	3	punct	_	_
-
-# sent_id = G-33-4588733,.15
-# X_ID = ID_MISSING
-# text = þetta er órökstutt
-1	þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	órökstutt	órökstuddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-
-# sent_id = G-33-4588733,.16
-# X_ID = ID_MISSING
-# text = og þetta er rangt .
-1	og	og	CCONJ	CONJ	_	4	cc	_	_
-2	þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-4	rangt	rangur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
-5	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4588733,.17
-# X_ID = ID_MISSING
-# text = Það er þannig að það var einmitt árvekni fyrri ríkisstjórnar og Seðlabankans að þakka að gripið var til þeirra ráðstafana sem þurfti til að tryggja hagsmuni Íslands í samskiptum við erlenda kröfuhafa .
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.10
+# X_ID = ID_missing_17
+# text = Það er þannig að það var einmitt árvekni fyrri ríkisstjórnar og Seðlabankans að þakka að gripið var til þeirra ráðstafana sem þurfti til að tryggja hagsmuni Íslands í samskiptum við erlenda kröfuhafa.
 1	Það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	1	cop	_	_
 3	þannig	þannig	ADV	ADV	Degree=Pos	1	advmod	_	_
@@ -318,9 +290,9 @@
 32	kröfuhafa	kröfuhafi	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	29	obl	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4588733,.18
-# X_ID = ID_MISSING
-# text = Það var ég sem flutti frumvarp í mars 2012 um að taka eignir gömlu þrotabúanna inn fyrir gjaldeyrishöftin og
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.11
+# X_IDs = ID_missing_18 ; ID_missing_19
+# text = Það var ég sem flutti frumvarp í mars 2012 um að taka eignir gömlu þrotabúanna inn fyrir gjaldeyrishöftin og það er vegna þess sem við höfum tök á þeim málum.
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	0	root	_	_
@@ -340,26 +312,22 @@
 17	fyrir	fyrir	ADP	P	_	18	case	_	_
 18	gjaldeyrishöftin	gjaldeyrishaft	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	12	obl	_	_
 19	og	og	CCONJ	CONJ	_	3	cc	_	_
+20	það	það	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+21	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	23	cop	_	_
+22	vegna	vegna	ADP	P	_	23	case	_	_
+23	þess	það	PRON	PRO-G	Case=Gen	3	conj	_	OriginalHead=0
+24	sem	sem	SCONJ	C	_	26	mark	_	_
+25	við	ég	PRON	PRO-N	Case=Nom	26	nsubj	_	_
+26	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	23	acl:relcl	_	_
+27	tök	tak	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obj	_	_
+28	á	á	ADP	P	_	30	case	_	_
+29	þeim	sá	DET	D-D	Case=Dat	30	det	_	_
+30	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	27	obl	_	SpaceAfter=No
+31	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4588733,.19
-# X_ID = ID_MISSING
-# text = það er vegna þess sem við höfum tök á þeim málum .
-1	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	vegna	vegna	ADP	P	_	4	case	_	_
-4	þess	það	PRON	PRO-G	Case=Gen	0	root	_	_
-5	sem	sem	SCONJ	C	_	7	mark	_	_
-6	við	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-7	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
-8	tök	tak	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	7	obj	_	_
-9	á	á	ADP	P	_	11	case	_	_
-10	þeim	sá	DET	D-D	Case=Dat	11	det	_	_
-11	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	8	obl	_	SpaceAfter=No
-12	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4588733,.20
-# X_ID = ID_MISSING
-# text = Og það er í skjóli þess sem framsókn gat gert út á þetta mál í kosningabaráttunni, að fyrri ríkisstjórn hafði passað upp á hagsmuni Íslands .
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.12
+# X_ID = ID_missing_20
+# text = Og það er í skjóli þess sem framsókn gat gert út á þetta mál í kosningabaráttunni, að fyrri ríkisstjórn hafði passað upp á hagsmuni Íslands.
 1	Og	og	CCONJ	CONJ	_	5	cc	_	_
 2	það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
@@ -388,9 +356,9 @@
 26	Íslands	ísland	PROPN	NPR-G	_	25	nmod:poss	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4588733,.21
-# X_ID = ID_MISSING
-# text = Þetta er sagan eins og hún er rétt .
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.13
+# X_ID = ID_missing_21
+# text = Þetta er sagan eins og hún er rétt.
 1	Þetta	þessi	DET	D-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	sagan	saga	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
@@ -401,20 +369,19 @@
 8	rétt	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	obl	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4588733,.22
-# X_ID = ID_MISSING
-# text = Framsóknarmenn sátu hjá
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.14
+# X_IDs = ID_missing_22 ; ID_missing_23
+# text = Framsóknarmenn sátu hjá Forseti hringir.
 1	Framsóknarmenn	framsóknarmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	2	nsubj	_	_
 2	sátu	sitja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	hjá	hjá	ADV	ADV	Degree=Pos	2	advmod	_	_
+4	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
+5	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0|SpaceAfter=No
+6	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4588733,.23
-# X_ID = ID_MISSING
-# text = Forseti hringir .
-1	Forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
-2	hringir	hringja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	SpaceAfter=No
-3	.	.	PUNCT	.	_	2	punct	_	_
-
+# sent_id = ALTHINGI_SJS_2013_G-33-4588733,.15
+# X_ID = ID_missing_24
+# text = og sjálfstæðismenn voru sumir á móti þegar þetta tímamótamál fór í gegn.
 1	og	og	CCONJ	CONJ	_	6	cc	_	_
 2	sjálfstæðismenn	sjálfstæðismaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	6	nsubj	_	_
 3	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
@@ -426,6 +393,6 @@
 9	tímamótamál	tímamótamál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	10	nsubj	_	_
 10	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	6	obl	_	_
 11	í	í	ADP	P	_	12	case	_	_
-12	gegn	gegn	ADV	ADV	Degree=Pos	10	obl	_	_
+12	gegn	gegn	ADV	ADV	Degree=Pos	10	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	6	punct	_	_
 

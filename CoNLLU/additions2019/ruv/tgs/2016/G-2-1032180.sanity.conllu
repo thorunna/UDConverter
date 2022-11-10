@@ -1,6 +1,6 @@
-# sent_id = G-2-1032180.SANITY,.1
-# X_ID = ID_MISSING
-# text = KR-ingar urðu í kvöld eina íslenska liðið til að komast áfram í 2. umferð Evrópudeildar UEFA í knattspyrnu .
+# sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.1
+# X_ID = ID_missing_1
+# text = KR-ingar urðu í kvöld eina íslenska liðið til að komast áfram í 2. umferð Evrópudeildar UEFA í knattspyrnu.
 1	KR-ingar	kr-ingur	PROPN	NPRS-N	_	2	nsubj	_	_
 2	urðu	verða	VERB	RDDI	Mood=Ind|Tense=Past	0	root	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -21,9 +21,9 @@
 18	knattspyrnu	knattspyrna	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1032180.SANITY,.2
-# X_ID = ID_MISSING
-# text = KR burstaði norður-írska liðið Glenavon 6 á útivelli í kvöld .
+# sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.2
+# X_ID = ID_missing_2
+# text = KR burstaði norður-írska liðið Glenavon 6 á útivelli í kvöld.
 1	KR	kr	PROPN	NPR-N	_	2	nsubj	_	_
 2	burstaði	bursta	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	norður-írska	norður-írskur	ADJ	ADJ-A	Case=Acc|Degree=Pos	4	amod	_	_
@@ -36,9 +36,9 @@
 10	kvöld	kvöld	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1032180.SANITY,.3
-# X_ID = ID_MISSING
-# text = Kennie Chopart skoraði tvö mörk og Hólmbert Aron Friðjónsson, Denis Fazlagic, Óskar Örn Hauksson og Morten Beck Andersen allir eitt mark hver .
+# sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.3
+# X_ID = ID_missing_3
+# text = Kennie Chopart skoraði tvö mörk og Hólmbert Aron Friðjónsson, Denis Fazlagic, Óskar Örn Hauksson og Morten Beck Andersen allir eitt mark hver.
 1	Kennie	kennie	PROPN	NPR-N	_	3	nsubj	_	_
 2	Chopart	chopart	PROPN	NPR-N	_	1	flat:name	_	_
 3	skoraði	skora	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -65,9 +65,9 @@
 24	hver	hver	DET	Q-N	Case=Nom	7	amod	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1032180.SANITY,.4
-# X_ID = ID_MISSING
-# text = Þar sem KR vann fyrri leikinn 2 1 unnu KR-inga einvígið samanlagt 8 1
+# sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Þar sem KR vann fyrri leikinn 2 1 unnu KR-inga einvígið samanlagt 8 1 og eru komnir áfram í 2. umferð forkeppni Evrópudeildarinnar.
 1	Þar	þar	ADV	ADV	Degree=Pos	9	advmod	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	KR	kr	PROPN	NPR-N	_	4	nsubj	_	_
@@ -82,24 +82,20 @@
 12	samanlagt	samanlagt	ADV	ADV	Degree=Pos	9	advmod	_	_
 13	8	átta	NUM	NUM-N	Case=Nom	9	obl	_	_
 14	1	einn	DET	ONE-N	Case=Nom	13	conj	_	_
+15	og	og	CCONJ	CONJ	_	17	cc	_	_
+16	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
+17	komnir	koma	VERB	VBN	Tense=Past|VerbForm=Part	9	conj	_	OriginalHead=0
+18	áfram	áfram	ADV	ADV	Degree=Pos	21	advmod	_	_
+19	í	í	ADP	P	_	21	case	_	_
+20	2.	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	21	amod	_	_
+21	umferð	umferð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
+22	forkeppni	forkeppni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	21	nmod:poss	_	_
+23	Evrópudeildarinnar	evrópudeild	PROPN	NPR-G	_	22	nmod:poss	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	9	punct	_	_
 
-# sent_id = G-2-1032180.SANITY,.5
-# X_ID = ID_MISSING
-# text = og eru komnir áfram í 2. umferð forkeppni Evrópudeildarinnar .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
-3	komnir	koma	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
-4	áfram	áfram	ADV	ADV	Degree=Pos	7	advmod	_	_
-5	í	í	ADP	P	_	7	case	_	_
-6	2.	annar	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
-7	umferð	umferð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
-8	forkeppni	forkeppni	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
-9	Evrópudeildarinnar	evrópudeild	PROPN	NPR-G	_	8	nmod:poss	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-2-1032180.SANITY,.6
-# X_ID = ID_MISSING
-# text = Þar mæta KR-ingar svissneska liðinu Grashopper .
+# sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.5
+# X_ID = ID_missing_6
+# text = Þar mæta KR-ingar svissneska liðinu Grashopper.
 1	Þar	þar	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	mæta	mæta	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	KR-ingar	kr-ingur	PROPN	NPRS-N	_	2	nsubj	_	_
@@ -108,9 +104,9 @@
 6	Grashopper	grashopper	PROPN	NPR-D	_	5	appos	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1032180.SANITY,.7
-# X_ID = ID_MISSING
-# text = Landsliðsmaðurinn Rúnar Már Sigurjónsson er nýgenginn í raðir Grashopper frá Sundsvall í Svíþjóð .
+# sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.6
+# X_ID = ID_missing_7
+# text = Landsliðsmaðurinn Rúnar Már Sigurjónsson er nýgenginn í raðir Grashopper frá Sundsvall í Svíþjóð.
 1	Landsliðsmaðurinn	landsliðsmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
 2	Rúnar	rúnar	PROPN	NPR-N	_	1	appos	_	_
 3	Már	már	PROPN	NPR-N	_	2	flat:name	_	_
@@ -126,9 +122,9 @@
 13	Svíþjóð	svíþjóð	PROPN	NPR-D	_	11	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-2-1032180.SANITY,.8
-# X_ID = ID_MISSING
-# text = Fyrr í dag féllu Breiðablik og Valur út úr Evrópudeildinni .
+# sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.7
+# X_ID = ID_missing_8
+# text = Fyrr í dag féllu Breiðablik og Valur út úr Evrópudeildinni.
 1	Fyrr	snemma	ADV	ADVR	Degree=Cmp	4	advmod	_	_
 2	í	í	ADP	P	_	3	case	_	_
 3	dag	dagur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	1	obl	_	_
@@ -141,9 +137,9 @@
 10	Evrópudeildinni	evrópudeild	PROPN	NPR-D	_	4	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-2-1032180.SANITY,.9
-# X_ID = ID_MISSING
-# text = Breiðablik gerði 2 2 jafntefli við lettneska liðið Jelgava á útivelli .
+# sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.8
+# X_ID = ID_missing_9
+# text = Breiðablik gerði 2 2 jafntefli við lettneska liðið Jelgava á útivelli.
 1	Breiðablik	breiðablik	PROPN	NPR-N	_	2	nsubj	_	_
 2	gerði	gera	VERB	DODI	Mood=Ind|Tense=Past	0	root	_	_
 3	2	tveir	NUM	NUM-N	Case=Nom	5	dep	_	_
@@ -157,9 +153,9 @@
 11	útivelli	útivöllur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1032180.SANITY,.10
-# X_ID = ID_MISSING
-# text = Þau úrslit nægðu Blikum ekki sem töpuðu fyrri leiknum 3 2 .
+# sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.9
+# X_ID = ID_missing_10
+# text = Þau úrslit nægðu Blikum ekki sem töpuðu fyrri leiknum 3 2.
 1	Þau	sá	DET	D-N	Case=Nom	2	det	_	_
 2	úrslit	úrslit	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	3	nsubj	_	_
 3	nægðu	nægja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -173,9 +169,9 @@
 11	2	tveir	NUM	NUM-N	Case=Nom	10	conj	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-2-1032180.SANITY,.11
-# X_ID = ID_MISSING
-# text = Valsmenn steinlágu svo fyrir danska liðinu Bröndby, 6
+# sent_id = RUV_TGS_2016_G-2-1032180.SANITY,.10
+# X_IDs = ID_missing_11 ; ID_missing_12
+# text = Valsmenn steinlágu svo fyrir danska liðinu Bröndby, 6 og töpuðu samanlagt, 10 1.
 1	Valsmenn	valsmaður	PROPN	NPRS-N	_	2	nsubj	_	_
 2	steinlágu	steinliggja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -185,13 +181,11 @@
 7	Bröndby	bröndby	PROPN	NPR-D	_	6	appos	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	_
 9	6	sex	NUM	NUM-N	Case=Nom	2	obl	_	_
-10	None	_	None	None	_	9	conj	_	_
-
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	töpuðu	tapa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	samanlagt	samanlagt	ADV	ADV	Degree=Pos	2	advmod	_	_
-4	,	,	PUNCT	,	_	3	punct	_	_
-5	10	tíu	NUM	NUM-N	Case=Nom	2	obl	_	_
-6	1	einn	NUM	NUM-N	Case=Nom	5	conj	_	_
-7	.	.	PUNCT	.	_	2	punct	_	_
+11	og	og	CCONJ	CONJ	_	12	cc	_	_
+12	töpuðu	tapa	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+13	samanlagt	samanlagt	ADV	ADV	Degree=Pos	12	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	10	tíu	NUM	NUM-N	Case=Nom	12	obl	_	_
+16	1	einn	NUM	NUM-N	Case=Nom	15	conj	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	2	punct	_	_
 

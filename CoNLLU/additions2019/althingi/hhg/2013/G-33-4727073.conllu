@@ -1,6 +1,6 @@
-# sent_id = G-33-4727073,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Nú er ég ekki viss um að ég hafi náð því hvort þarna hafi leynst spurning eða ekki
+# sent_id = ALTHINGI_HHG_2013_G-33-4727073,.1
+# X_IDs = ID_missing_1 ; ID_missing_2
+# text = Virðulegi forseti. Nú er ég ekki viss um að ég hafi náð því hvort þarna hafi leynst spurning eða ekki en ég ber mikla virðingu fyrir því að þessi mál eru mjög flókin og hafa lengi verið gerð á ákveðinn hátt og þá er mjög erfitt að breyta.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -22,43 +22,39 @@
 19	spurning	spurning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	nsubj	_	_
 20	eða	eða	CCONJ	CONJ	_	21	cc	_	_
 21	ekki	ekki	ADV	NEG	_	18	conj	_	_
+22	en	en	CCONJ	CONJ	_	24	cc	_	_
+23	ég	ég	PRON	PRO-N	Case=Nom	24	nsubj	_	_
+24	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	8	conj	_	OriginalHead=0
+25	mikla	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	26	amod	_	_
+26	virðingu	virðing	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	24	obj	_	_
+27	fyrir	fyrir	ADP	P	_	28	case	_	_
+28	því	það	PRON	PRO-D	Case=Dat	24	obl	_	_
+29	að	að	SCONJ	C	_	34	mark	_	_
+30	þessi	þessi	DET	D-N	Case=Nom	31	det	_	_
+31	mál	mál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	34	nsubj	_	_
+32	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	34	cop	_	_
+33	mjög	mjög	ADV	ADV	Degree=Pos	34	amod	_	_
+34	flókin	flókinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	28	ccomp	_	_
+35	og	og	CCONJ	CONJ	_	39	cc	_	_
+36	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	39	aux	_	_
+37	lengi	lengi	ADV	ADV	Degree=Pos	39	advmod	_	_
+38	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	39	cop	_	_
+39	gerð	gera	VERB	DAN	Tense=Past|VerbForm=Part	34	conj	_	_
+40	á	á	ADP	P	_	42	case	_	_
+41	ákveðinn	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	42	amod	_	_
+42	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	39	obl	_	_
+43	og	og	CCONJ	CONJ	_	49	cc	_	_
+44	þá	þá	ADV	ADV	Degree=Pos	49	advmod	_	_
+45	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	49	cop	_	_
+46	mjög	mjög	ADV	ADV	Degree=Pos	47	amod	_	_
+47	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	49	amod	_	_
+48	að	að	PART	TO	_	49	mark	_	_
+49	breyta	breyta	VERB	VB	VerbForm=Inf	34	conj	_	SpaceAfter=No
+50	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-33-4727073,.2
-# X_ID = ID_MISSING
-# text = en ég ber mikla virðingu fyrir því að þessi mál eru mjög flókin og hafa lengi verið gerð á ákveðinn hátt og þá er mjög erfitt að breyta .
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	mikla	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
-5	virðingu	virðing	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obj	_	_
-6	fyrir	fyrir	ADP	P	_	7	case	_	_
-7	því	það	PRON	PRO-D	Case=Dat	3	obl	_	_
-8	að	að	SCONJ	C	_	13	mark	_	_
-9	þessi	þessi	DET	D-N	Case=Nom	10	det	_	_
-10	mál	mál	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	_
-11	eru	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
-12	mjög	mjög	ADV	ADV	Degree=Pos	13	amod	_	_
-13	flókin	flókinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	7	ccomp	_	_
-14	og	og	CCONJ	CONJ	_	18	cc	_	_
-15	hafa	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	18	aux	_	_
-16	lengi	lengi	ADV	ADV	Degree=Pos	18	advmod	_	_
-17	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	18	cop	_	_
-18	gerð	gera	VERB	DAN	Tense=Past|VerbForm=Part	13	conj	_	_
-19	á	á	ADP	P	_	21	case	_	_
-20	ákveðinn	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	21	amod	_	_
-21	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
-22	og	og	CCONJ	CONJ	_	28	cc	_	_
-23	þá	þá	ADV	ADV	Degree=Pos	28	advmod	_	_
-24	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	28	cop	_	_
-25	mjög	mjög	ADV	ADV	Degree=Pos	26	amod	_	_
-26	erfitt	erfiður	ADJ	ADJ-N	Case=Nom|Degree=Pos	28	amod	_	_
-27	að	að	PART	TO	_	28	mark	_	_
-28	breyta	breyta	VERB	VB	VerbForm=Inf	13	conj	_	SpaceAfter=No
-29	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4727073,.3
-# X_ID = ID_MISSING
-# text = Það er mjög erfitt að breyta um stefnu á stóru og þungu skipi .
+# sent_id = ALTHINGI_HHG_2013_G-33-4727073,.2
+# X_ID = ID_missing_3
+# text = Það er mjög erfitt að breyta um stefnu á stóru og þungu skipi.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	mjög	mjög	ADV	ADV	Degree=Pos	4	amod	_	_
@@ -74,9 +70,9 @@
 13	skipi	skip	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4727073,.4
-# X_ID = ID_MISSING
-# text = Ég ber mikla virðingu fyrir því vandamáli
+# sent_id = ALTHINGI_HHG_2013_G-33-4727073,.3
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Ég ber mikla virðingu fyrir því vandamáli en þeim mun frekar finnst mér mikilvægt að hafist sé handa sem allra fyrst við að reyna að leysa það.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mikla	mikill	ADJ	ADJ-A	Case=Acc|Degree=Pos	4	amod	_	_
@@ -84,35 +80,31 @@
 5	fyrir	fyrir	ADP	P	_	7	case	_	_
 6	því	sá	DET	D-D	Case=Dat	7	det	_	_
 7	vandamáli	vandamál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+8	en	en	CCONJ	CONJ	_	12	cc	_	_
+9	þeim	sá	DET	D-D	Case=Dat	10	det	_	_
+10	mun	munur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+11	frekar	frekar	ADV	ADVR	Degree=Cmp	12	advmod	_	_
+12	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+13	mér	ég	PRON	PRO-D	Case=Dat	12	nsubj	_	_
+14	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	12	xcomp	_	_
+15	að	að	SCONJ	C	_	16	mark	_	_
+16	hafist	hefja	VERB	VAN	Tense=Past|VerbForm=Part	14	ccomp	_	_
+17	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	16	cop	_	_
+18	handa	hönd	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	16	obl	_	_
+19	sem	sem	SCONJ	C	_	21	mark	_	_
+20	allra	allur	DET	Q-G	Case=Gen	21	nmod:poss	_	_
+21	fyrst	snemma	ADV	ADVS	Degree=Sup	16	advmod	_	_
+22	við	við	ADP	P	_	24	case	_	_
+23	að	að	PART	TO	_	24	mark	_	_
+24	reyna	reyna	VERB	VB	VerbForm=Inf	16	obl	_	_
+25	að	að	PART	TO	_	26	mark	_	_
+26	leysa	leysa	VERB	VB	VerbForm=Inf	24	xcomp	_	_
+27	það	það	PRON	PRO-A	Case=Acc	26	obj	_	SpaceAfter=No
+28	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4727073,.5
-# X_ID = ID_MISSING
-# text = en þeim mun frekar finnst mér mikilvægt að hafist sé handa sem allra fyrst við að reyna að leysa það .
-1	en	en	CCONJ	CONJ	_	5	cc	_	_
-2	þeim	sá	DET	D-D	Case=Dat	3	det	_	_
-3	mun	munur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
-4	frekar	frekar	ADV	ADVR	Degree=Cmp	5	advmod	_	_
-5	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-6	mér	ég	PRON	PRO-D	Case=Dat	5	nsubj	_	_
-7	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	xcomp	_	_
-8	að	að	SCONJ	C	_	9	mark	_	_
-9	hafist	hefja	VERB	VAN	Tense=Past|VerbForm=Part	7	ccomp	_	_
-10	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	9	cop	_	_
-11	handa	hönd	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	9	obl	_	_
-12	sem	sem	SCONJ	C	_	14	mark	_	_
-13	allra	allur	DET	Q-G	Case=Gen	14	nmod:poss	_	_
-14	fyrst	snemma	ADV	ADVS	Degree=Sup	9	advmod	_	_
-15	við	við	ADP	P	_	17	case	_	_
-16	að	að	PART	TO	_	17	mark	_	_
-17	reyna	reyna	VERB	VB	VerbForm=Inf	9	obl	_	_
-18	að	að	PART	TO	_	19	mark	_	_
-19	leysa	leysa	VERB	VB	VerbForm=Inf	17	xcomp	_	_
-20	það	það	PRON	PRO-A	Case=Acc	19	obj	_	SpaceAfter=No
-21	.	.	PUNCT	.	_	5	punct	_	_
-
-# sent_id = G-33-4727073,.6
-# X_ID = ID_MISSING
-# text = Aftur ber ég virðingu fyrir því að við eigum við mjög erfiðan fjárhag að stríða og því ekki augljóst undir hvaða kringumstæðum maður ætti að eyða 100 milljónum í hugbúnaðargerð eða eitthvað því um líkt .
+# sent_id = ALTHINGI_HHG_2013_G-33-4727073,.4
+# X_ID = ID_missing_6
+# text = Aftur ber ég virðingu fyrir því að við eigum við mjög erfiðan fjárhag að stríða og því ekki augljóst undir hvaða kringumstæðum maður ætti að eyða 100 milljónum í hugbúnaðargerð eða eitthvað því um líkt.
 1	Aftur	aftur	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	ber	bera	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -150,9 +142,9 @@
 35	líkt	líkur	ADJ	ADJ-A	Case=Acc|Degree=Pos	33	amod	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4727073,.7
-# X_ID = ID_MISSING
-# text = En mér finnst mikilvægt að halda þeirri umræðu á lofti .
+# sent_id = ALTHINGI_HHG_2013_G-33-4727073,.5
+# X_ID = ID_missing_7
+# text = En mér finnst mikilvægt að halda þeirri umræðu á lofti.
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	mér	ég	PRON	PRO-D	Case=Dat	3	nsubj	_	_
 3	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -165,9 +157,9 @@
 10	lofti	loft	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4727073,.8
-# X_ID = ID_MISSING
-# text = Mér finnst mikilvægt að hvert skref sem við stígum, hvaða ákvörðun svo sem við tökum, þá séum við líka með hugann við það hvernig við eigum að taka ákvörðun um þetta .
+# sent_id = ALTHINGI_HHG_2013_G-33-4727073,.6
+# X_ID = ID_missing_8
+# text = Mér finnst mikilvægt að hvert skref sem við stígum, hvaða ákvörðun svo sem við tökum, þá séum við líka með hugann við það hvernig við eigum að taka ákvörðun um þetta.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	xcomp	_	_
@@ -203,15 +195,18 @@
 33	þetta	þessi	DET	D-A	Case=Acc	30	obl	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_HHG_2013_G-33-4727073,.7
+# X_ID = ID_missing_9
+# text = Mér finnst svolítið skorta hér, af góðum ástæðum, að við höfum almennilegt tækifæri til að hleypa almenningi sérstaklega inn í þá umræðu.
 1	Mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
 2	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	svolítið	svolítið	ADV	ADV	Degree=Pos	4	advmod	_	_
 4	skorta	skorta	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-5	hér	hér	ADV	ADV	Degree=Pos	4	advmod	_	_
+5	hér	hér	ADV	ADV	Degree=Pos	4	advmod	_	SpaceAfter=No
 6	,	,	PUNCT	,	_	5	punct	_	_
 7	af	af	ADP	P	_	9	case	_	_
 8	góðum	góður	ADJ	ADJ-D	Case=Dat|Degree=Pos	9	amod	_	_
-9	ástæðum	ástæða	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	_
+9	ástæðum	ástæða	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	4	obl	_	SpaceAfter=No
 10	,	,	PUNCT	,	_	9	punct	_	_
 11	að	að	SCONJ	C	_	13	mark	_	_
 12	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
@@ -226,6 +221,6 @@
 21	inn	inn	ADP	RP	_	24	compound:prt	_	_
 22	í	í	ADP	P	_	24	case	_	_
 23	þá	sá	DET	D-A	Case=Acc	24	det	_	_
-24	umræðu	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
+24	umræðu	umræða	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	2	punct	_	_
 

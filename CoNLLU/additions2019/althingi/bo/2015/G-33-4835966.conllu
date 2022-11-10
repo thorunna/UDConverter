@@ -1,6 +1,6 @@
-# sent_id = G-33-4835966,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Ég þakka hæstv. ráðherra skýr svör .
+# sent_id = ALTHINGI_BO_2015_G-33-4835966,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Ég þakka hæstv. ráðherra skýr svör.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -12,18 +12,18 @@
 9	svör	svar	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obj	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4835966,.2
-# X_ID = ID_MISSING
-# text = Þau voru það sannarlega .
+# sent_id = ALTHINGI_BO_2015_G-33-4835966,.2
+# X_ID = ID_missing_2
+# text = Þau voru það sannarlega.
 1	Þau	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	3	cop	_	_
 3	það	það	PRON	PRO-N	Case=Nom	0	root	_	_
 4	sannarlega	sannarlega	ADV	ADV	Degree=Pos	3	advmod	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4835966,.3
-# X_ID = ID_MISSING
-# text = Hann telur að tækifærið sé runnið okkur úr greipum með uppboðsleið í sjávarútvegi
+# sent_id = ALTHINGI_BO_2015_G-33-4835966,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Hann telur að tækifærið sé runnið okkur úr greipum með uppboðsleið í sjávarútvegi en þá vil ég spyrja hann um það fyrirkomulag sem hann leggur hér til, eins og ég sagði áðan, eins konar míní-samningaleið, ég vona að það sé ekki rangt skilið hjá mér:
 1	Hann	hann	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	telur	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	að	að	SCONJ	C	_	6	mark	_	_
@@ -37,50 +37,46 @@
 11	uppboðsleið	uppboðsleið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
 12	í	í	ADP	P	_	13	case	_	_
 13	sjávarútvegi	sjávarútvegur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+14	en	en	CCONJ	CONJ	_	18	cc	_	_
+15	þá	þá	ADV	ADV	Degree=Pos	18	advmod	_	_
+16	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	18	aux	_	_
+17	ég	ég	PRON	PRO-N	Case=Nom	18	nsubj	_	_
+18	spyrja	spyrja	VERB	VB	VerbForm=Inf	2	conj	_	OriginalHead=0
+19	hann	hann	PRON	PRO-A	Case=Acc	18	iobj	_	_
+20	um	um	ADP	P	_	22	case	_	_
+21	það	sá	DET	D-A	Case=Acc	22	det	_	_
+22	fyrirkomulag	fyrirkomulag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	18	obl	_	_
+23	sem	sem	SCONJ	C	_	25	mark	_	_
+24	hann	hann	PRON	PRO-N	Case=Nom	25	nsubj	_	_
+25	leggur	leggja	VERB	VBPI	Mood=Ind|Tense=Pres	22	acl:relcl	_	_
+26	hér	hér	ADV	ADV	Degree=Pos	25	advmod	_	_
+27	til	til	ADP	RP	_	25	compound:prt	_	SpaceAfter=No
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	eins	_	ADV	ADVR	Degree=Cmp	37	advmod	_	_
+30	og	_	ADP	P	_	32	case	_	_
+31	ég	ég	PRON	PRO-N	Case=Nom	32	nsubj	_	_
+32	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	29	obl	_	_
+33	áðan	áðan	ADV	ADV	Degree=Pos	32	advmod	_	SpaceAfter=No
+34	,	,	PUNCT	,	_	37	punct	_	_
+35	eins	einn	DET	ONE-G	Case=Gen	36	det	_	_
+36	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	37	nmod:poss	_	_
+37	míní-samningaleið	míní-samningaleið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	appos	_	SpaceAfter=No
+38	,	,	PUNCT	,	_	37	punct	_	_
+39	ég	ég	PRON	PRO-N	Case=Nom	40	nsubj	_	_
+40	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	18	parataxis	_	_
+41	að	að	SCONJ	C	_	45	mark	_	_
+42	það	það	PRON	PRO-N	Case=Nom	45	nsubj	_	_
+43	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	45	cop	_	_
+44	ekki	ekki	ADV	NEG	_	45	advmod	_	_
+45	rangt	rangur	ADJ	ADJ-N	Case=Nom|Degree=Pos	40	ccomp	_	_
+46	skilið	skilja	VERB	VAN	Tense=Past|VerbForm=Part	45	amod	_	_
+47	hjá	hjá	ADP	P	_	48	case	_	_
+48	mér	ég	PRON	PRO-D	Case=Dat	45	obl	_	SpaceAfter=No
+49	:	:	PUNCT	,	_	2	punct	_	_
 
-# sent_id = G-33-4835966,.4
-# X_ID = ID_MISSING
-# text = en þá vil ég spyrja hann um það fyrirkomulag sem hann leggur hér til, eins og ég sagði áðan, eins konar míní-samningaleið, ég vona að það sé ekki rangt skilið hjá mér :
-1	en	en	CCONJ	CONJ	_	5	cc	_	_
-2	þá	þá	ADV	ADV	Degree=Pos	5	advmod	_	_
-3	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	5	aux	_	_
-4	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-5	spyrja	spyrja	VERB	VB	VerbForm=Inf	0	root	_	_
-6	hann	hann	PRON	PRO-A	Case=Acc	5	iobj	_	_
-7	um	um	ADP	P	_	9	case	_	_
-8	það	sá	DET	D-A	Case=Acc	9	det	_	_
-9	fyrirkomulag	fyrirkomulag	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
-10	sem	sem	SCONJ	C	_	12	mark	_	_
-11	hann	hann	PRON	PRO-N	Case=Nom	12	nsubj	_	_
-12	leggur	leggja	VERB	VBPI	Mood=Ind|Tense=Pres	9	acl:relcl	_	_
-13	hér	hér	ADV	ADV	Degree=Pos	12	advmod	_	_
-14	til	til	ADP	RP	_	12	compound:prt	_	SpaceAfter=No
-15	,	,	PUNCT	,	_	14	punct	_	_
-16	eins	_	ADV	ADVR	Degree=Cmp	24	advmod	_	_
-17	og	_	ADP	P	_	19	case	_	_
-18	ég	ég	PRON	PRO-N	Case=Nom	19	nsubj	_	_
-19	sagði	segja	VERB	VBDI	Mood=Ind|Tense=Past	16	obl	_	_
-20	áðan	áðan	ADV	ADV	Degree=Pos	19	advmod	_	SpaceAfter=No
-21	,	,	PUNCT	,	_	24	punct	_	_
-22	eins	einn	DET	ONE-G	Case=Gen	23	det	_	_
-23	konar	konar	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	24	nmod:poss	_	_
-24	míní-samningaleið	míní-samningaleið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	appos	_	SpaceAfter=No
-25	,	,	PUNCT	,	_	24	punct	_	_
-26	ég	ég	PRON	PRO-N	Case=Nom	27	nsubj	_	_
-27	vona	vona	VERB	VBPI	Mood=Ind|Tense=Pres	5	parataxis	_	_
-28	að	að	SCONJ	C	_	32	mark	_	_
-29	það	það	PRON	PRO-N	Case=Nom	32	nsubj	_	_
-30	sé	vera	AUX	BEPS	Mood=Sub|Tense=Pres	32	cop	_	_
-31	ekki	ekki	ADV	NEG	_	32	advmod	_	_
-32	rangt	rangur	ADJ	ADJ-N	Case=Nom|Degree=Pos	27	ccomp	_	_
-33	skilið	skilja	VERB	VAN	Tense=Past|VerbForm=Part	32	amod	_	_
-34	hjá	hjá	ADP	P	_	35	case	_	_
-35	mér	ég	PRON	PRO-D	Case=Dat	32	obl	_	SpaceAfter=No
-36	:	:	PUNCT	,	_	5	punct	_	_
-
-# sent_id = G-33-4835966,.5
-# X_ID = ID_MISSING
-# text = Hvað þá með eftirmarkað á þessum hlutdeildum ?
+# sent_id = ALTHINGI_BO_2015_G-33-4835966,.4
+# X_ID = ID_missing_5
+# text = Hvað þá með eftirmarkað á þessum hlutdeildum?
 1	Hvað	hver	PRON	WPRO-N	Case=Nom	0	root	_	_
 2	þá	þá	ADV	ADV	Degree=Pos	4	advmod	_	_
 3	með	með	ADP	P	_	4	case	_	_
@@ -90,9 +86,9 @@
 7	hlutdeildum	hlutdeildur	ADJ	ADJ-D	Case=Dat|Degree=Pos	4	obl	_	SpaceAfter=No
 8	?	?	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4835966,.6
-# X_ID = ID_MISSING
-# text = Segjum sem svo að þið séuð að fara að útdeila þessu til þessara fyrirtækja, sem ég sé ekki að ættu að vilja gefa úthlutunina frá sér af því að þau eru búin að fá gullið tækifæri upp í hendurnar,
+# sent_id = ALTHINGI_BO_2015_G-33-4835966,.5
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Segjum sem svo að þið séuð að fara að útdeila þessu til þessara fyrirtækja, sem ég sé ekki að ættu að vilja gefa úthlutunina frá sér af því að þau eru búin að fá gullið tækifæri upp í hendurnar, en ég spyr: Er eitthvað sem mælir á móti því að eftirmarkaður á þessum hlutdeildum gæti verið á frjálsum uppboðsmarkaði?
 1	Segjum	segja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 2	sem	sem	SCONJ	C	_	3	mark	_	_
 3	svo	svo	ADV	ADV	Degree=Pos	1	advcl	_	_
@@ -133,28 +129,27 @@
 38	upp	upp	ADP	RP	_	40	compound:prt	_	_
 39	í	í	ADP	P	_	40	case	_	_
 40	hendurnar	hönd	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	35	obl	_	SpaceAfter=No
-41	,	,	PUNCT	,	_	1	punct	_	_
-
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	:	:	PUNCT	,	_	3	punct	_	_
-5	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	ccomp	_	_
-6	eitthvað	einhver	DET	Q-N	Case=Nom	5	nsubj	_	_
-7	sem	sem	SCONJ	C	_	8	mark	_	_
-8	mælir	mæla	VERB	VBPI	Mood=Ind|Tense=Pres	6	acl:relcl	_	_
-9	á	á	ADP	P	_	10	case	_	_
-10	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
-11	því	það	PRON	PRO-D	Case=Dat	10	nmod:poss	_	_
-12	að	að	SCONJ	C	_	21	mark	_	_
-13	eftirmarkaður	eftirmarkaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	21	nsubj	_	_
-14	á	á	ADP	P	_	16	case	_	_
-15	þessum	þessi	DET	D-D	Case=Dat	16	det	_	_
-16	hlutdeildum	hlutdeildur	ADJ	ADJ-D	Case=Dat|Degree=Pos	13	obl	_	_
-17	gæti	geta	AUX	MDDS	Mood=Sub|Tense=Past	21	aux	_	_
-18	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	21	cop	_	_
-19	á	á	ADP	P	_	21	case	_	_
-20	frjálsum	frjáls	ADJ	ADJ-D	Case=Dat|Degree=Pos	21	amod	_	_
-21	uppboðsmarkaði	uppboðsmarkaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	ccomp	_	_
-22	?	?	PUNCT	.	_	3	punct	_	_
+41	,	,	PUNCT	,	_	35	punct	_	_
+42	en	en	CCONJ	CONJ	_	44	cc	_	_
+43	ég	ég	PRON	PRO-N	Case=Nom	44	nsubj	_	_
+44	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	1	conj	_	OriginalHead=0|SpaceAfter=No
+45	:	:	PUNCT	,	_	44	punct	_	_
+46	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	44	ccomp	_	_
+47	eitthvað	einhver	DET	Q-N	Case=Nom	46	nsubj	_	_
+48	sem	sem	SCONJ	C	_	49	mark	_	_
+49	mælir	mæla	VERB	VBPI	Mood=Ind|Tense=Pres	47	acl:relcl	_	_
+50	á	á	ADP	P	_	51	case	_	_
+51	móti	mót	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	49	obl	_	_
+52	því	það	PRON	PRO-D	Case=Dat	51	nmod:poss	_	_
+53	að	að	SCONJ	C	_	62	mark	_	_
+54	eftirmarkaður	eftirmarkaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	62	nsubj	_	_
+55	á	á	ADP	P	_	57	case	_	_
+56	þessum	þessi	DET	D-D	Case=Dat	57	det	_	_
+57	hlutdeildum	hlutdeildur	ADJ	ADJ-D	Case=Dat|Degree=Pos	54	obl	_	_
+58	gæti	geta	AUX	MDDS	Mood=Sub|Tense=Past	62	aux	_	_
+59	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	62	cop	_	_
+60	á	á	ADP	P	_	62	case	_	_
+61	frjálsum	frjáls	ADJ	ADJ-D	Case=Dat|Degree=Pos	62	amod	_	_
+62	uppboðsmarkaði	uppboðsmarkaður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	52	ccomp	_	SpaceAfter=No
+63	?	?	PUNCT	.	_	1	punct	_	_
 

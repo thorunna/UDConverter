@@ -1,6 +1,6 @@
-# sent_id = G-33-4748288,.1
-# X_ID = ID_MISSING
-# text = Herra forseti . Það má enginn skilja orð mín svo að ég sé á nokkurn hátt að leggjast gegn þessu máli .
+# sent_id = ALTHINGI_SJS_2013_G-33-4748288,.1
+# X_ID = ID_missing_1
+# text = Herra forseti. Það má enginn skilja orð mín svo að ég sé á nokkurn hátt að leggjast gegn þessu máli.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -24,9 +24,9 @@
 21	máli	mál	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	18	obl	_	SpaceAfter=No
 22	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4748288,.2
-# X_ID = ID_MISSING
-# text = Ég tel þvert á móti að sterk efnisleg rök séu fyrir því að gera þetta núna .
+# sent_id = ALTHINGI_SJS_2013_G-33-4748288,.2
+# X_ID = ID_missing_2
+# text = Ég tel þvert á móti að sterk efnisleg rök séu fyrir því að gera þetta núna.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	tel	telja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	þvert	þvert	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -45,9 +45,9 @@
 16	núna	núna	ADV	ADV	Degree=Pos	14	advmod	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4748288,.3
-# X_ID = ID_MISSING
-# text = Það er út af fyrir sig málefnalegt sjónarmið að þegar komin er einhver mynd á þessar aðgerðir sé staðan sterkari að því leyti til að hægt sé að höfða skýrt til þess að það megi teljast málefnalegt að þar sem ætla megi að einhverjir sem eru í þessum vanda fái þannig úrlausn að þeir komist hjá nauðungaruppboðum sé skynsamlegt að búa til þennan frest .
+# sent_id = ALTHINGI_SJS_2013_G-33-4748288,.3
+# X_ID = ID_missing_3
+# text = Það er út af fyrir sig málefnalegt sjónarmið að þegar komin er einhver mynd á þessar aðgerðir sé staðan sterkari að því leyti til að hægt sé að höfða skýrt til þess að það megi teljast málefnalegt að þar sem ætla megi að einhverjir sem eru í þessum vanda fái þannig úrlausn að þeir komist hjá nauðungaruppboðum sé skynsamlegt að búa til þennan frest.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	8	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	8	cop	_	_
 3	út	út	ADP	RP	_	4	compound:prt	_	_
@@ -114,9 +114,9 @@
 64	frest	frestur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	61	obj	_	SpaceAfter=No
 65	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-33-4748288,.4
-# X_ID = ID_MISSING
-# text = Það mun hins vegar því miður ekki breyta hinu að ýmsir munu segja, sem fyrir þessu urðu á liðnum sumar- og haustmánuðum, að þeir hefðu þegið að fá sambærilega meðferð,
+# sent_id = ALTHINGI_SJS_2013_G-33-4748288,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Það mun hins vegar því miður ekki breyta hinu að ýmsir munu segja, sem fyrir þessu urðu á liðnum sumar- og haustmánuðum, að þeir hefðu þegið að fá sambærilega meðferð, það er bara veruleiki sem við verðum að horfast í augu við.
 1	Það	það	PRON	PRO-N	Case=Nom	8	nsubj	_	_
 2	mun	munu	AUX	MDPI	Mood=Ind|Tense=Pres	8	aux	_	_
 3	hins	hinn	DET	D-G	Case=Gen	4	det	_	_
@@ -150,28 +150,24 @@
 31	fá	fá	VERB	VB	VerbForm=Inf	29	xcomp	_	_
 32	sambærilega	sambærilegur	ADJ	ADJ-A	Case=Acc|Degree=Pos	33	amod	_	_
 33	meðferð	meðferð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	31	obj	_	SpaceAfter=No
-34	,	,	PUNCT	,	_	8	punct	_	_
+34	,	,	PUNCT	,	_	31	punct	_	_
+35	það	það	PRON	PRO-N	Case=Nom	38	nsubj	_	_
+36	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	38	cop	_	_
+37	bara	bara	ADV	FP	Degree=Pos	38	advmod	_	_
+38	veruleiki	veruleiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	conj	_	OriginalHead=0
+39	sem	sem	SCONJ	C	_	41	mark	_	_
+40	við	ég	PRON	PRO-N	Case=Nom	41	nsubj	_	_
+41	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	38	acl:relcl	_	_
+42	að	að	PART	TO	_	43	mark	_	_
+43	horfast	horfa	VERB	VB	VerbForm=Inf	41	xcomp	_	_
+44	í	í	ADP	P	_	45	case	_	_
+45	augu	auga	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	43	obl	_	_
+46	við	við	ADP	P	_	43	obl	_	SpaceAfter=No
+47	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-33-4748288,.5
-# X_ID = ID_MISSING
-# text = það er bara veruleiki sem við verðum að horfast í augu við .
-1	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	bara	bara	ADV	FP	Degree=Pos	4	advmod	_	_
-4	veruleiki	veruleiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-5	sem	sem	SCONJ	C	_	7	mark	_	_
-6	við	ég	PRON	PRO-N	Case=Nom	7	nsubj	_	_
-7	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
-8	að	að	PART	TO	_	9	mark	_	_
-9	horfast	horfa	VERB	VB	VerbForm=Inf	7	xcomp	_	_
-10	í	í	ADP	P	_	11	case	_	_
-11	augu	auga	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	obl	_	_
-12	við	við	ADP	P	_	9	obl	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4748288,.6
-# X_ID = ID_MISSING
-# text = Út af fyrir sig má líka spyrja : Höfðu stjórnvöld, sem boðuðu þessar aðgerðir reyndar miklu umfangsmeiri en niðurstaðan virðist svo ætla að verða, ekki þá trú á þeim að þau gætu teflt þeim fram og sagt : Þetta er að koma .
+# sent_id = ALTHINGI_SJS_2013_G-33-4748288,.5
+# X_ID = ID_missing_6
+# text = Út af fyrir sig má líka spyrja: Höfðu stjórnvöld, sem boðuðu þessar aðgerðir reyndar miklu umfangsmeiri en niðurstaðan virðist svo ætla að verða, ekki þá trú á þeim að þau gætu teflt þeim fram og sagt: Þetta er að koma.
 1	Út	út	ADP	RP	_	2	compound:prt	_	_
 2	af	af	ADV	ADV	Degree=Pos	4	advmod	_	_
 3	fyrir	fyrir	ADP	P	_	4	case	_	_
@@ -218,9 +214,9 @@
 44	koma	koma	VERB	VB	VerbForm=Inf	41	xcomp	_	SpaceAfter=No
 45	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4748288,.7
-# X_ID = ID_MISSING
-# text = Við munum í krafti valdaaðstöðu okkar og meiri hluta fara í þannig aðgerðir að þær stofna efnislega rétt til þess að stöðva nauðungaruppboð ?
+# sent_id = ALTHINGI_SJS_2013_G-33-4748288,.6
+# X_ID = ID_missing_7
+# text = Við munum í krafti valdaaðstöðu okkar og meiri hluta fara í þannig aðgerðir að þær stofna efnislega rétt til þess að stöðva nauðungaruppboð?
 1	Við	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
 2	munum	munu	AUX	MDPI	Mood=Ind|Tense=Pres	10	aux	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -246,9 +242,9 @@
 23	nauðungaruppboð	nauðungaruppboð	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	22	obj	_	SpaceAfter=No
 24	?	?	PUNCT	.	_	10	punct	_	_
 
-# sent_id = G-33-4748288,.8
-# X_ID = ID_MISSING
-# text = Ég ætla ekki að fara út í nánari rökræður eða deilur um lögfræðina í þeim efnum,
+# sent_id = ALTHINGI_SJS_2013_G-33-4748288,.7
+# X_IDs = ID_missing_8 ; ID_missing_9 ; ID_missing_10
+# text = Ég ætla ekki að fara út í nánari rökræður eða deilur um lögfræðina í þeim efnum, við erum bara þar stödd þar sem við erum stödd og verðum að horfast í augu við það.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	ætla	ætla	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	ekki	ekki	ADV	NEG	_	2	advmod	_	_
@@ -265,38 +261,30 @@
 14	í	í	ADP	P	_	16	case	_	_
 15	þeim	sá	DET	D-D	Case=Dat	16	det	_	_
 16	efnum	efni	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	13	obl	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	2	punct	_	_
+17	,	,	PUNCT	,	_	13	punct	_	_
+18	við	ég	PRON	PRO-N	Case=Nom	22	nsubj	_	_
+19	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	22	cop	_	_
+20	bara	bara	ADV	FP	Degree=Pos	22	advmod	_	_
+21	þar	þar	ADV	ADV	Degree=Pos	22	advmod	_	_
+22	stödd	staddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	conj	_	OriginalHead=0
+23	þar	þar	ADV	ADV	Degree=Pos	27	advmod	_	_
+24	sem	sem	SCONJ	C	_	27	mark	_	_
+25	við	ég	PRON	PRO-N	Case=Nom	27	nsubj	_	_
+26	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	27	cop	_	_
+27	stödd	staddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	22	acl:relcl	_	_
+28	og	og	CCONJ	CONJ	_	29	cc	_	_
+29	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	2	conj	_	OriginalHead=0
+30	að	að	PART	TO	_	31	mark	_	_
+31	horfast	horfa	VERB	VB	VerbForm=Inf	29	xcomp	_	_
+32	í	í	ADP	P	_	33	case	_	_
+33	augu	auga	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	31	obl	_	_
+34	við	við	ADP	P	_	35	case	_	_
+35	það	það	PRON	PRO-A	Case=Acc	31	obl	_	SpaceAfter=No
+36	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4748288,.9
-# X_ID = ID_MISSING
-# text = við erum bara þar stödd þar sem við erum stödd
-1	við	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-2	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-3	bara	bara	ADV	FP	Degree=Pos	5	advmod	_	_
-4	þar	þar	ADV	ADV	Degree=Pos	5	advmod	_	_
-5	stödd	staddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-6	þar	þar	ADV	ADV	Degree=Pos	10	advmod	_	_
-7	sem	sem	SCONJ	C	_	10	mark	_	_
-8	við	ég	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-9	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	10	cop	_	_
-10	stödd	staddur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	acl:relcl	_	_
-
-# sent_id = G-33-4748288,.10
-# X_ID = ID_MISSING
-# text = og verðum að horfast í augu við það .
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	verðum	verða	VERB	RDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	að	að	PART	TO	_	4	mark	_	_
-4	horfast	horfa	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-5	í	í	ADP	P	_	6	case	_	_
-6	augu	auga	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	4	obl	_	_
-7	við	við	ADP	P	_	8	case	_	_
-8	það	það	PRON	PRO-A	Case=Acc	4	obl	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4748288,.11
-# X_ID = ID_MISSING
-# text = En síðan endurtek ég bara þau varnaðarorð, sem ég held að hljóti megi kalla, að það er ekkert einfalt í þessum málum .
+# sent_id = ALTHINGI_SJS_2013_G-33-4748288,.8
+# X_ID = ID_missing_11
+# text = En síðan endurtek ég bara þau varnaðarorð, sem ég held að hljóti megi kalla, að það er ekkert einfalt í þessum málum.
 1	En	en	CCONJ	CONJ	_	3	cc	_	_
 2	síðan	síðan	ADV	ADV	Degree=Pos	3	advmod	_	_
 3	endurtek	endurtaka	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -323,9 +311,9 @@
 24	málum	mál	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	7	ccomp	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4748288,.12
-# X_ID = ID_MISSING
-# text = Það er býsna snúið að fara inn í þetta á hvern hátt sem það er gert, meðal annars vegna þess að svo lýkur svona tímabili .
+# sent_id = ALTHINGI_SJS_2013_G-33-4748288,.9
+# X_ID = ID_missing_12
+# text = Það er býsna snúið að fara inn í þetta á hvern hátt sem það er gert, meðal annars vegna þess að svo lýkur svona tímabili.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	býsna	býsna	ADV	ADV	Degree=Pos	4	advmod	_	_
@@ -354,6 +342,9 @@
 26	tímabili	tímabil	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	24	nsubj	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	4	punct	_	_
 
+# sent_id = ALTHINGI_SJS_2013_G-33-4748288,.10
+# X_ID = ID_missing_13
+# text = Þá kemur upp erfið staða þegar hin hefðbundnu, lögbundnu ferli eru sett í gang á nýjan leik.
 1	Þá	þá	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	kemur	koma	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	upp	upp	ADP	RP	_	2	compound:prt	_	_
@@ -361,7 +352,7 @@
 5	staða	staða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
 6	þegar	þegar	ADP	P	_	13	case	_	_
 7	hin	hinn	DET	D-N	Case=Nom	11	det	_	_
-8	hefðbundnu	hefðbundinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
+8	hefðbundnu	hefðbundinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	SpaceAfter=No
 9	,	,	PUNCT	,	_	8	punct	_	_
 10	lögbundnu	lögbundinn	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
 11	ferli	ferli	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
@@ -371,6 +362,6 @@
 15	gang	gangur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
 16	á	á	ADP	P	_	18	case	_	_
 17	nýjan	nýr	ADJ	ADJ-A	Case=Acc|Degree=Pos	18	amod	_	_
-18	leik	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	_
+18	leik	leikur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	2	obl	_	SpaceAfter=No
 19	.	.	PUNCT	.	_	2	punct	_	_
 

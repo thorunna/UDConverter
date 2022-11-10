@@ -1,6 +1,6 @@
-# sent_id = G-2-1036163,.1
-# X_ID = ID_MISSING
-# text = Landsliðskonan Anna Björk Kristjánsdóttir er gengin á ný til liðs við Stjörnuna í úrvalsdeild kvenna í fótbolta, þó bara á tímabundnu láni .
+# sent_id = RUV_ESP_2016_G-2-1036163,.1
+# X_ID = ID_missing_1
+# text = Landsliðskonan Anna Björk Kristjánsdóttir er gengin á ný til liðs við Stjörnuna í úrvalsdeild kvenna í fótbolta, þó bara á tímabundnu láni.
 1	Landsliðskonan	landsliðskona	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	6	nsubj	_	_
 2	Anna	anna	PROPN	NPR-N	_	1	appos	_	_
 3	Björk	björk	PROPN	NPR-N	_	2	flat:name	_	_
@@ -26,9 +26,9 @@
 23	láni	lán	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	parataxis	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-2-1036163,.2
-# X_ID = ID_MISSING
-# text = Anna lék með Stjörnunni frá 2009 2015 þegar hún hélt til Örebro í sænsku úrvalsdeildinni þar sem hún hefur spilað síðasta hálfa árið .
+# sent_id = RUV_ESP_2016_G-2-1036163,.2
+# X_ID = ID_missing_2
+# text = Anna lék með Stjörnunni frá 2009 2015 þegar hún hélt til Örebro í sænsku úrvalsdeildinni þar sem hún hefur spilað síðasta hálfa árið.
 1	Anna	anna	PROPN	NPR-N	_	2	nsubj	_	_
 2	lék	leika	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	með	með	ADP	P	_	4	case	_	_
@@ -54,9 +54,9 @@
 23	árið	ár	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	20	obl	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-2-1036163,.3
-# X_ID = ID_MISSING
-# text = Anna sem er 27 ára hefur spilað 127 leiki í efstu deild auk þess að hafa verið fastamaður í vörn íslenska landsliðsins undanfarið .
+# sent_id = RUV_ESP_2016_G-2-1036163,.3
+# X_ID = ID_missing_3
+# text = Anna sem er 27 ára hefur spilað 127 leiki í efstu deild auk þess að hafa verið fastamaður í vörn íslenska landsliðsins undanfarið.
 1	Anna	anna	PROPN	NPR-N	_	7	nsubj	_	_
 2	sem	sem	SCONJ	C	_	4	mark	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
@@ -82,9 +82,9 @@
 23	undanfarið	undanfarið	ADV	ADV	Degree=Pos	15	advmod	_	SpaceAfter=No
 24	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-2-1036163,.4
-# X_ID = ID_MISSING
-# text = Stjarnan er í harðri toppbaráttu við Breiðablik í deildinni
+# sent_id = RUV_ESP_2016_G-2-1036163,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Stjarnan er í harðri toppbaráttu við Breiðablik í deildinni og situr í öðru sæti eftir átta umferðir, einu stigi á eftir Breiðabliki.
 1	Stjarnan	stjarna	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	í	í	ADP	P	_	5	case	_	_
@@ -94,20 +94,19 @@
 7	Breiðablik	breiðablik	PROPN	NPR-A	_	5	obl	_	_
 8	í	í	ADP	P	_	9	case	_	_
 9	deildinni	deild	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	5	obl	_	_
-
-1	og	og	CCONJ	CONJ	_	2	cc	_	_
-2	situr	sitja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	í	í	ADP	P	_	5	case	_	_
-4	öðru	annar	ADJ	ADJ-D	Case=Dat|Degree=Pos	5	amod	_	_
-5	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
-6	eftir	eftir	ADP	P	_	8	case	_	_
-7	átta	átta	NUM	NUM-A	Case=Acc	8	nummod	_	_
-8	umferðir	umferð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	2	obl	_	_
-9	,	,	PUNCT	,	_	8	punct	_	_
-10	einu	einn	DET	ONE-D	Case=Dat	11	det	_	_
-11	stigi	stig	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
-12	á	á	ADP	P	_	11	case	_	_
-13	eftir	eftir	ADP	P	_	14	case	_	_
-14	Breiðabliki	breiðablik	PROPN	NPR-D	_	11	obl	_	_
-15	.	.	PUNCT	.	_	2	punct	_	_
+10	og	og	CCONJ	CONJ	_	11	cc	_	_
+11	situr	sitja	VERB	VBPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+12	í	í	ADP	P	_	14	case	_	_
+13	öðru	annar	ADJ	ADJ-D	Case=Dat|Degree=Pos	14	amod	_	_
+14	sæti	sæti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+15	eftir	eftir	ADP	P	_	17	case	_	_
+16	átta	átta	NUM	NUM-A	Case=Acc	17	nummod	_	_
+17	umferðir	umferð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	11	obl	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	einu	einn	DET	ONE-D	Case=Dat	20	det	_	_
+20	stigi	stig	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	11	obl	_	_
+21	á	á	ADP	P	_	20	case	_	_
+22	eftir	eftir	ADP	P	_	23	case	_	_
+23	Breiðabliki	breiðablik	PROPN	NPR-D	_	20	obl	_	SpaceAfter=No
+24	.	.	PUNCT	.	_	5	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = G-33-4931176,.1
-# X_ID = ID_MISSING
-# text = Herra forseti . Ég held að við verðum að muna í þessari umræðu allri að mörg Evrópulönd fóru ekki illa út úr kreppunni, til dæmis Norðurlöndin .
+# sent_id = ALTHINGI_BO_2014_G-33-4931176,.1
+# X_ID = ID_missing_1
+# text = Herra forseti. Ég held að við verðum að muna í þessari umræðu allri að mörg Evrópulönd fóru ekki illa út úr kreppunni, til dæmis Norðurlöndin.
 1	Herra	herra	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -30,17 +30,17 @@
 27	Norðurlöndin	norðurlönd	PROPN	NPRS-A	_	18	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4931176,.2
-# X_ID = ID_MISSING
-# text = Gripið fram í .
+# sent_id = ALTHINGI_BO_2014_G-33-4931176,.2
+# X_ID = ID_missing_2
+# text = Gripið fram í.
 1	Gripið	grípa	VERB	VAN	Tense=Past|VerbForm=Part	0	root	_	_
 2	fram	fram	ADP	RP	_	3	compound:prt	_	_
 3	í	í	ADV	ADV	Degree=Pos	1	advmod	_	SpaceAfter=No
 4	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4931176,.3
-# X_ID = ID_MISSING
-# text = Já, en mörg gerðu það ekki,
+# sent_id = ALTHINGI_BO_2014_G-33-4931176,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Já, en mörg gerðu það ekki, það er mikill breytileiki innan Evrópusambandsins.
 1	Já	já	INTJ	INTJ	_	5	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	en	en	CCONJ	CONJ	_	5	cc	_	_
@@ -48,49 +48,41 @@
 5	gerðu	gera	VERB	DODI	Mood=Ind|Tense=Past	0	root	_	_
 6	það	það	PRON	PRO-A	Case=Acc	5	obj	_	_
 7	ekki	ekki	ADV	NEG	_	5	advmod	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	5	punct	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	það	það	PRON	PRO-N	Case=Nom	12	nsubj	_	_
+10	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	12	cop	_	_
+11	mikill	mikill	DET	Q-N	Case=Nom	12	amod	_	_
+12	breytileiki	breytileiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	conj	_	OriginalHead=0
+13	innan	innan	ADP	P	_	14	case	_	_
+14	Evrópusambandsins	evrópusamband	PROPN	NPR-G	_	12	obl	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4931176,.4
-# X_ID = ID_MISSING
-# text = það er mikill breytileiki innan Evrópusambandsins .
-1	það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	mikill	mikill	DET	Q-N	Case=Nom	4	amod	_	_
-4	breytileiki	breytileiki	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
-5	innan	innan	ADP	P	_	6	case	_	_
-6	Evrópusambandsins	evrópusamband	PROPN	NPR-G	_	4	obl	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4931176,.5
-# X_ID = ID_MISSING
-# text = Við fórum illa út úr kreppunni
+# sent_id = ALTHINGI_BO_2014_G-33-4931176,.4
+# X_IDs = ID_missing_5 ; ID_missing_6
+# text = Við fórum illa út úr kreppunni og við fórum ákveðna leið sem var ágæt leið að mínu mati.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	fórum	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	illa	illa	ADV	ADV	Degree=Pos	2	advmod	_	_
 4	út	út	ADP	RP	_	6	compound:prt	_	_
 5	úr	úr	ADP	P	_	6	case	_	_
 6	kreppunni	kreppa	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	2	obl	_	_
+7	og	og	CCONJ	CONJ	_	9	cc	_	_
+8	við	ég	PRON	PRO-N	Case=Nom	9	nsubj	_	_
+9	fórum	fara	VERB	VBDI	Mood=Ind|Tense=Past	2	conj	_	OriginalHead=0
+10	ákveðna	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	11	amod	_	_
+11	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	9	obl	_	_
+12	sem	sem	SCONJ	C	_	15	mark	_	_
+13	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	15	cop	_	_
+14	ágæt	ágætur	ADJ	ADJ-N	Case=Nom|Degree=Pos	15	amod	_	_
+15	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	11	acl:relcl	_	_
+16	að	að	ADP	P	_	18	case	_	_
+17	mínu	minn	PRON	PRO-D	Case=Dat	18	nmod:poss	_	_
+18	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4931176,.6
-# X_ID = ID_MISSING
-# text = og við fórum ákveðna leið sem var ágæt leið að mínu mati .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	við	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	fórum	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	ákveðna	ákveðinn	ADJ	ADJ-A	Case=Acc|Degree=Pos	5	amod	_	_
-5	leið	leið	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	_
-6	sem	sem	SCONJ	C	_	9	mark	_	_
-7	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	9	cop	_	_
-8	ágæt	ágætur	ADJ	ADJ-N	Case=Nom|Degree=Pos	9	amod	_	_
-9	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	acl:relcl	_	_
-10	að	að	ADP	P	_	12	case	_	_
-11	mínu	minn	PRON	PRO-D	Case=Dat	12	nmod:poss	_	_
-12	mati	mat	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	9	obl	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4931176,.7
-# X_ID = ID_MISSING
-# text = Nú er ég búin að gleyma hinum hluta spurningar hv. þingmanns .
+# sent_id = ALTHINGI_BO_2014_G-33-4931176,.5
+# X_ID = ID_missing_7
+# text = Nú er ég búin að gleyma hinum hluta spurningar hv. þingmanns.
 1	Nú	nú	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
@@ -104,9 +96,9 @@
 11	þingmanns	þingmaður	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	9	nmod:poss	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4931176,.8
-# X_ID = ID_MISSING
-# text = Gripið fram í : Aðferðafræðin við að vinna sig út úr kreppu .
+# sent_id = ALTHINGI_BO_2014_G-33-4931176,.6
+# X_ID = ID_missing_8
+# text = Gripið fram í: Aðferðafræðin við að vinna sig út úr kreppu.
 1	Gripið	grípa	VERB	VAN	Tense=Past|VerbForm=Part	5	dep	_	_
 2	fram	fram	ADP	RP	_	3	compound:prt	_	_
 3	í	í	ADV	ADV	Degree=Pos	1	advmod	_	SpaceAfter=No
@@ -121,9 +113,9 @@
 12	kreppu	kreppa	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4931176,.9
-# X_ID = ID_MISSING
-# text = Hv. þingmaður talaði um flöktið á gjaldmiðlinum og allt það .
+# sent_id = ALTHINGI_BO_2014_G-33-4931176,.7
+# X_ID = ID_missing_9
+# text = Hv. þingmaður talaði um flöktið á gjaldmiðlinum og allt það.
 1	Hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	talaði	tala	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -136,9 +128,9 @@
 10	það	það	PRON	PRO-A	Case=Acc	5	conj	_	SpaceAfter=No
 11	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4931176,.10
-# X_ID = ID_MISSING
-# text = Ég held einmitt að við eigum að vinna að því öllum árum að stöðva það og koma á stöðugleika .
+# sent_id = ALTHINGI_BO_2014_G-33-4931176,.8
+# X_ID = ID_missing_10
+# text = Ég held einmitt að við eigum að vinna að því öllum árum að stöðva það og koma á stöðugleika.
 1	Ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	held	halda	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	einmitt	einmitt	ADV	ADV	Degree=Pos	2	advmod	_	_
@@ -160,23 +152,22 @@
 19	stöðugleika	stöðugleiki	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4931176,.11
-# X_ID = ID_MISSING
-# text = Margir vilja handstýra hér öllu
+# sent_id = ALTHINGI_BO_2014_G-33-4931176,.9
+# X_IDs = ID_missing_11 ; ID_missing_12
+# text = Margir vilja handstýra hér öllu og ég vil ekki að við getum gert það.
 1	Margir	margur	DET	Q-N	Case=Nom	3	nsubj	_	_
 2	vilja	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	3	aux	_	_
 3	handstýra	handstýra	VERB	VB	VerbForm=Inf	0	root	_	_
 4	hér	hér	ADV	ADV	Degree=Pos	3	advmod	_	_
 5	öllu	allur	DET	Q-D	Case=Dat	3	obj	_	_
-
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	vil	vilja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	ekki	ekki	ADV	NEG	_	3	advmod	_	_
-5	að	að	SCONJ	C	_	8	mark	_	_
-6	við	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
-7	getum	geta	AUX	MDPS	Mood=Sub|Tense=Pres	8	aux	_	_
-8	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	3	ccomp	_	_
-9	það	það	PRON	PRO-A	Case=Acc	8	obj	_	_
-10	.	.	PUNCT	.	_	3	punct	_	_
+6	og	og	CCONJ	CONJ	_	8	cc	_	_
+7	ég	ég	PRON	PRO-N	Case=Nom	8	nsubj	_	_
+8	vil	vilja	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+9	ekki	ekki	ADV	NEG	_	8	advmod	_	_
+10	að	að	SCONJ	C	_	13	mark	_	_
+11	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
+12	getum	geta	AUX	MDPS	Mood=Sub|Tense=Pres	13	aux	_	_
+13	gert	gera	VERB	DON	Tense=Past|VerbForm=Part	8	ccomp	_	_
+14	það	það	PRON	PRO-A	Case=Acc	13	obj	_	SpaceAfter=No
+15	.	.	PUNCT	.	_	3	punct	_	_
 

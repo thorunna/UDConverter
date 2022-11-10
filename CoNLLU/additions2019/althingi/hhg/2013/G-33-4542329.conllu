@@ -1,13 +1,13 @@
-# sent_id = G-33-4542329,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti .
+# sent_id = ALTHINGI_HHG_2013_G-33-4542329,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4542329,.2
-# X_ID = ID_MISSING
-# text = Hv. þm. Haraldur Einarsson spyr : Af hverju að kjósa um þetta núna eða ákveða þetta núna ?
+# sent_id = ALTHINGI_HHG_2013_G-33-4542329,.2
+# X_ID = ID_missing_2
+# text = Hv. þm. Haraldur Einarsson spyr: Af hverju að kjósa um þetta núna eða ákveða þetta núna?
 1	Hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	þm.	þingmaður	PROPN	NPR-N	_	5	nsubj	_	_
 3	Haraldur	haraldur	PROPN	NPR-N	_	2	flat:name	_	_
@@ -27,36 +27,32 @@
 17	núna	núna	ADV	ADV	Degree=Pos	15	advmod	_	SpaceAfter=No
 18	?	?	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4542329,.3
-# X_ID = ID_MISSING
-# text = Ástæðan er sú
+# sent_id = ALTHINGI_HHG_2013_G-33-4542329,.3
+# X_IDs = ID_missing_3 ; ID_missing_4
+# text = Ástæðan er sú ég man þegar fjölmiðlalög voru samþykkt á Alþingi sem var síðan hafnað af forseta lýðveldisins.
 1	Ástæðan	ástæða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	sú	sá	DET	D-N	Case=Nom	0	root	_	_
+4	ég	ég	PRON	PRO-N	Case=Nom	5	nsubj	_	_
+5	man	muna	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+6	þegar	þegar	ADP	P	_	9	case	_	_
+7	fjölmiðlalög	fjölmiðlalag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	9	nsubj	_	_
+8	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	9	cop	_	_
+9	samþykkt	samþykkja	VERB	VAN	Tense=Past|VerbForm=Part	5	obj	_	_
+10	á	á	ADP	P	_	11	case	_	_
+11	Alþingi	alþingi	PROPN	NPR-D	_	9	obl	_	_
+12	sem	sem	SCONJ	C	_	15	mark	_	_
+13	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	15	cop	_	_
+14	síðan	síðan	ADV	ADV	Degree=Pos	15	advmod	_	_
+15	hafnað	hafna	VERB	VAN	Tense=Past|VerbForm=Part	9	acl:relcl	_	_
+16	af	af	ADP	P	_	17	case	_	_
+17	forseta	forseti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	15	obl	_	_
+18	lýðveldisins	lýðveldi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	17	nmod:poss	_	SpaceAfter=No
+19	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4542329,.4
-# X_ID = ID_MISSING
-# text = ég man þegar fjölmiðlalög voru samþykkt á Alþingi sem var síðan hafnað af forseta lýðveldisins .
-1	ég	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	man	muna	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	þegar	þegar	ADP	P	_	6	case	_	_
-4	fjölmiðlalög	fjölmiðlalag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	6	nsubj	_	_
-5	voru	vera	AUX	BEDI	Mood=Ind|Tense=Past	6	cop	_	_
-6	samþykkt	samþykkja	VERB	VAN	Tense=Past|VerbForm=Part	2	obj	_	_
-7	á	á	ADP	P	_	8	case	_	_
-8	Alþingi	alþingi	PROPN	NPR-D	_	6	obl	_	_
-9	sem	sem	SCONJ	C	_	12	mark	_	_
-10	var	vera	AUX	BEDI	Mood=Ind|Tense=Past	12	cop	_	_
-11	síðan	síðan	ADV	ADV	Degree=Pos	12	advmod	_	_
-12	hafnað	hafna	VERB	VAN	Tense=Past|VerbForm=Part	6	acl:relcl	_	_
-13	af	af	ADP	P	_	14	case	_	_
-14	forseta	forseti	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	12	obl	_	_
-15	lýðveldisins	lýðveldi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	14	nmod:poss	_	SpaceAfter=No
-16	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4542329,.5
-# X_ID = ID_MISSING
-# text = Það hafði ekki gerst áður þannig að það ætti að fara í þjóðaratkvæðagreiðslu
+# sent_id = ALTHINGI_HHG_2013_G-33-4542329,.4
+# X_IDs = ID_missing_5 ; ID_missing_6 ; ID_missing_7
+# text = Það hafði ekki gerst áður þannig að það ætti að fara í þjóðaratkvæðagreiðslu en það gerðist svolítið merkilegt við þann gjörning, skyndilega fór fólk að taka þátt í umræðunni sem hafði aldrei áður tekið þátt í henni.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	4	aux	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -70,44 +66,36 @@
 11	fara	fara	VERB	VB	VerbForm=Inf	9	xcomp	_	_
 12	í	í	ADP	P	_	13	case	_	_
 13	þjóðaratkvæðagreiðslu	þjóðaratkvæðagreiðsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
+14	en	en	CCONJ	CONJ	_	16	cc	_	_
+15	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	16	expl	_	_
+16	gerðist	gera	VERB	DODI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
+17	svolítið	svolítill	ADJ	ADJ-N	Case=Nom|Degree=Pos	16	obl	_	_
+18	merkilegt	merkilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	17	amod	_	_
+19	við	við	ADP	P	_	21	case	_	_
+20	þann	sá	DET	D-A	Case=Acc	21	det	_	_
+21	gjörning	gjörningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	16	obl	_	SpaceAfter=No
+22	,	,	PUNCT	,	_	4	punct	_	_
+23	skyndilega	skyndilega	ADV	ADV	Degree=Pos	24	advmod	_	_
+24	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	4	conj	_	OriginalHead=0
+25	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	24	nsubj	_	_
+26	að	að	PART	TO	_	27	mark	_	_
+27	taka	taka	VERB	VB	VerbForm=Inf	24	xcomp	_	_
+28	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	27	obj	_	_
+29	í	í	ADP	P	_	30	case	_	_
+30	umræðunni	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	28	obl	_	_
+31	sem	sem	SCONJ	C	_	35	mark	_	_
+32	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	35	aux	_	_
+33	aldrei	aldrei	ADV	ADV	Degree=Pos	35	advmod	_	_
+34	áður	áður	ADV	ADVR	Degree=Cmp	33	advmod	_	_
+35	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	24	acl:relcl	_	_
+36	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	35	obj	_	_
+37	í	í	ADP	P	_	38	case	_	_
+38	henni	hún	PRON	PRO-D	Case=Dat	36	obl	_	SpaceAfter=No
+39	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4542329,.6
-# X_ID = ID_MISSING
-# text = en það gerðist svolítið merkilegt við þann gjörning,
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	3	expl	_	_
-3	gerðist	gera	VERB	DODI	Mood=Ind|Tense=Past	0	root	_	_
-4	svolítið	svolítill	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	obl	_	_
-5	merkilegt	merkilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
-6	við	við	ADP	P	_	8	case	_	_
-7	þann	sá	DET	D-A	Case=Acc	8	det	_	_
-8	gjörning	gjörningur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	3	obl	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	3	punct	_	_
-
-# sent_id = G-33-4542329,.7
-# X_ID = ID_MISSING
-# text = skyndilega fór fólk að taka þátt í umræðunni sem hafði aldrei áður tekið þátt í henni .
-1	skyndilega	skyndilega	ADV	ADV	Degree=Pos	2	advmod	_	_
-2	fór	fara	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-3	fólk	fólk	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	2	nsubj	_	_
-4	að	að	PART	TO	_	5	mark	_	_
-5	taka	taka	VERB	VB	VerbForm=Inf	2	xcomp	_	_
-6	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obj	_	_
-7	í	í	ADP	P	_	8	case	_	_
-8	umræðunni	umræða	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
-9	sem	sem	SCONJ	C	_	13	mark	_	_
-10	hafði	hafa	AUX	HVDI	Mood=Ind|Tense=Past	13	aux	_	_
-11	aldrei	aldrei	ADV	ADV	Degree=Pos	13	advmod	_	_
-12	áður	áður	ADV	ADVR	Degree=Cmp	11	advmod	_	_
-13	tekið	taka	VERB	VBN	Tense=Past|VerbForm=Part	2	acl:relcl	_	_
-14	þátt	þáttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
-15	í	í	ADP	P	_	16	case	_	_
-16	henni	hún	PRON	PRO-D	Case=Dat	14	obl	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	2	punct	_	_
-
-# sent_id = G-33-4542329,.8
-# X_ID = ID_MISSING
-# text = Það er vegna þess að þegar þjóðin skynjar að hún hefur raunverulegt vald fer hún kannski stundum að hugsa til þess að hún ætti að nýta það á skynsaman hátt .
+# sent_id = ALTHINGI_HHG_2013_G-33-4542329,.5
+# X_ID = ID_missing_8
+# text = Það er vegna þess að þegar þjóðin skynjar að hún hefur raunverulegt vald fer hún kannski stundum að hugsa til þess að hún ætti að nýta það á skynsaman hátt.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	vegna	vegna	ADP	P	_	4	case	_	_
@@ -140,9 +128,9 @@
 30	hátt	háttur	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	26	obl	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4542329,.9
-# X_ID = ID_MISSING
-# text = Eins og það er núna, þar sem völdin liggja yfirleitt hjá einhvers konar fulltrúum, er nóg fyrir marga, jafnvel flesta, að bölva þeim í stað þess að láta þjóðina sjálfa ráða þessu þannig að hún hafi fullt tækifæri og fullt erindi til að ræða það með hliðsjón af því að það verði þjóðaratkvæðagreiðsla og þá geti niðurstaðan orðið sem lýðræðislegust .
+# sent_id = ALTHINGI_HHG_2013_G-33-4542329,.6
+# X_ID = ID_missing_9
+# text = Eins og það er núna, þar sem völdin liggja yfirleitt hjá einhvers konar fulltrúum, er nóg fyrir marga, jafnvel flesta, að bölva þeim í stað þess að láta þjóðina sjálfa ráða þessu þannig að hún hafi fullt tækifæri og fullt erindi til að ræða það með hliðsjón af því að það verði þjóðaratkvæðagreiðsla og þá geti niðurstaðan orðið sem lýðræðislegust.
 1	Eins	eins	ADV	ADVR	Degree=Cmp	18	advmod	_	_
 2	og	og	ADP	P	_	3	case	_	_
 3	það	það	PRON	PRO-N	Case=Nom	1	obl	_	_
@@ -209,9 +197,9 @@
 64	lýðræðislegust	lýðræðislegur	ADJ	ADJS-N	Case=Nom|Degree=Sup	62	amod	_	SpaceAfter=No
 65	.	.	PUNCT	.	_	18	punct	_	_
 
-# sent_id = G-33-4542329,.10
-# X_ID = ID_MISSING
-# text = Hv. þingmaður spyr einnig hvort samningar séu á leiðinni .
+# sent_id = ALTHINGI_HHG_2013_G-33-4542329,.7
+# X_ID = ID_missing_10
+# text = Hv. þingmaður spyr einnig hvort samningar séu á leiðinni.
 1	Hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
@@ -223,9 +211,9 @@
 9	leiðinni	leið	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	3	ccomp	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4542329,.11
-# X_ID = ID_MISSING
-# text = Nei, ekki í augnablikinu, en það er vegna þess að búið er að stöðva samningaviðræðurnar og um að gera að kjósa sem fyrst um það hvort við eigum ekki að halda þeim áfram .
+# sent_id = ALTHINGI_HHG_2013_G-33-4542329,.8
+# X_ID = ID_missing_11
+# text = Nei, ekki í augnablikinu, en það er vegna þess að búið er að stöðva samningaviðræðurnar og um að gera að kjósa sem fyrst um það hvort við eigum ekki að halda þeim áfram.
 1	Nei	nei	INTJ	INTJ	_	5	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	,	_	1	punct	_	_
 3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
@@ -263,9 +251,9 @@
 35	áfram	áfram	ADV	ADV	Degree=Pos	33	advmod	_	SpaceAfter=No
 36	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4542329,.12
-# X_ID = ID_MISSING
-# text = Síðast en ekki síst nefnir hv. þingmaður það aftur þegar verið er að innleiða ýmislegt frá Evrópu .
+# sent_id = ALTHINGI_HHG_2013_G-33-4542329,.9
+# X_ID = ID_missing_12
+# text = Síðast en ekki síst nefnir hv. þingmaður það aftur þegar verið er að innleiða ýmislegt frá Evrópu.
 1	Síðast	síðar	ADV	ADVS	Degree=Sup	5	advmod	_	_
 2	en	en	CCONJ	CONJ	_	3	cc	_	_
 3	ekki	ekki	ADV	NEG	_	1	conj	_	_
@@ -285,9 +273,9 @@
 17	Evrópu	evrópa	PROPN	NPR-D	_	14	obl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4542329,.13
-# X_ID = ID_MISSING
-# text = Það er óhjákvæmileg afleiðing af því að vera í EES
+# sent_id = ALTHINGI_HHG_2013_G-33-4542329,.10
+# X_IDs = ID_missing_13 ; ID_missing_14
+# text = Það er óhjákvæmileg afleiðing af því að vera í EES og við erum ekkert að fara út úr EES jafnvel þótt við sleppum því að kjósa um þetta.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	óhjákvæmileg	óhjákvæmilegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -298,24 +286,23 @@
 8	vera	vera	AUX	BE	VerbForm=Inf	10	cop	_	_
 9	í	í	ADP	P	_	10	case	_	_
 10	EES	ees	PROPN	NPR-D	_	6	xcomp	_	_
-
-1	og	og	CCONJ	CONJ	_	6	cc	_	_
-2	við	ég	PRON	PRO-N	Case=Nom	6	nsubj	_	_
-3	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
-4	ekkert	enginn	ADV	Q-N	Case=Nom	6	advmod	_	_
-5	að	að	PART	TO	_	6	mark	_	_
-6	fara	fara	VERB	VB	VerbForm=Inf	0	root	_	_
-7	út	út	ADP	RP	_	9	compound:prt	_	_
-8	úr	úr	ADP	P	_	9	case	_	_
-9	EES	ees	PROPN	NPR-D	_	6	obl	_	_
-10	jafnvel	jafnvel	ADV	ADV	Degree=Pos	13	advmod	_	_
-11	þótt	þótt	ADP	P	_	13	case	_	_
-12	við	ég	PRON	PRO-N	Case=Nom	13	nsubj	_	_
-13	sleppum	sleppa	VERB	VBPS	Mood=Sub|Tense=Pres	6	obl	_	_
-14	því	það	PRON	PRO-D	Case=Dat	13	obj	_	_
+11	og	og	CCONJ	CONJ	_	16	cc	_	_
+12	við	ég	PRON	PRO-N	Case=Nom	16	nsubj	_	_
+13	erum	vera	AUX	BEPI	Mood=Ind|Tense=Pres	16	cop	_	_
+14	ekkert	enginn	ADV	Q-N	Case=Nom	16	advmod	_	_
 15	að	að	PART	TO	_	16	mark	_	_
-16	kjósa	kjósa	VERB	VB	VerbForm=Inf	14	xcomp	_	_
-17	um	um	ADP	P	_	18	case	_	_
-18	þetta	þessi	DET	D-A	Case=Acc	16	obl	_	_
-19	.	.	PUNCT	.	_	6	punct	_	_
+16	fara	fara	VERB	VB	VerbForm=Inf	4	conj	_	OriginalHead=0
+17	út	út	ADP	RP	_	19	compound:prt	_	_
+18	úr	úr	ADP	P	_	19	case	_	_
+19	EES	ees	PROPN	NPR-D	_	16	obl	_	_
+20	jafnvel	jafnvel	ADV	ADV	Degree=Pos	23	advmod	_	_
+21	þótt	þótt	ADP	P	_	23	case	_	_
+22	við	ég	PRON	PRO-N	Case=Nom	23	nsubj	_	_
+23	sleppum	sleppa	VERB	VBPS	Mood=Sub|Tense=Pres	16	obl	_	_
+24	því	það	PRON	PRO-D	Case=Dat	23	obj	_	_
+25	að	að	PART	TO	_	26	mark	_	_
+26	kjósa	kjósa	VERB	VB	VerbForm=Inf	24	xcomp	_	_
+27	um	um	ADP	P	_	28	case	_	_
+28	þetta	þessi	DET	D-A	Case=Acc	26	obl	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	4	punct	_	_
 

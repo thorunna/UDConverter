@@ -1,6 +1,6 @@
-# sent_id = G-33-4492074,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Hv. þm. Katrín Jakobsdóttir skilur ekki margt eftir til að spyrja að í raun og veru
+# sent_id = ALTHINGI_HHG_2013_G-33-4492074,.1
+# X_IDs = ID_missing_1 ; ID_missing_2
+# text = Virðulegi forseti. Hv. þm. Katrín Jakobsdóttir skilur ekki margt eftir til að spyrja að í raun og veru en mig langaði bara vegna þess að þingmenn hinna svokölluðu vinstri flokka spyrja aftur og aftur, hvaðan þessir peningar koma, hvað verði skorið niður.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	8	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -20,41 +20,37 @@
 17	raun	raun	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	8	obl	_	_
 18	og	og	CCONJ	CONJ	_	19	cc	_	_
 19	veru	vera	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	conj	_	_
+20	en	en	CCONJ	CONJ	_	22	cc	_	_
+21	mig	ég	PRON	PRO-A	Case=Acc	22	nsubj	_	_
+22	langaði	langa	VERB	VBDI	Mood=Ind|Tense=Past	8	conj	_	OriginalHead=0
+23	bara	bara	ADV	FP	Degree=Pos	22	advmod	_	_
+24	vegna	vegna	ADP	P	_	25	case	_	_
+25	þess	það	PRON	PRO-G	Case=Gen	22	obl	_	_
+26	að	að	SCONJ	C	_	32	mark	_	_
+27	þingmenn	þingmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	32	nsubj	_	_
+28	hinna	hinn	DET	D-G	Case=Gen	31	det	_	_
+29	svokölluðu	svokallaður	ADJ	ADJ-G	Case=Gen|Degree=Pos	31	amod	_	_
+30	vinstri	vinstri	ADJ	ADJ-G	Case=Gen|Degree=Pos	31	amod	_	_
+31	flokka	flokkur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	27	nmod:poss	_	_
+32	spyrja	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	25	ccomp	_	_
+33	aftur	aftur	ADV	ADV	Degree=Pos	32	advmod	_	_
+34	og	og	CCONJ	CONJ	_	35	cc	_	_
+35	aftur	aftur	ADV	ADV	Degree=Pos	33	conj	_	SpaceAfter=No
+36	,	,	PUNCT	,	_	35	punct	_	_
+37	hvaðan	hvaðan	ADV	WADV	Degree=Pos	40	advmod	_	_
+38	þessir	þessi	DET	D-N	Case=Nom	39	det	_	_
+39	peningar	peningur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	40	nsubj	_	_
+40	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	32	ccomp	_	SpaceAfter=No
+41	,	,	PUNCT	,	_	40	punct	_	_
+42	hvað	hver	PRON	WPRO-N	Case=Nom	44	obj	_	_
+43	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	44	aux	_	_
+44	skorið	skera	VERB	VAN	Tense=Past|VerbForm=Part	40	conj	_	_
+45	niður	niður	ADP	RP	_	44	compound:prt	_	SpaceAfter=No
+46	.	.	PUNCT	.	_	8	punct	_	_
 
-# sent_id = G-33-4492074,.2
-# X_ID = ID_MISSING
-# text = en mig langaði bara vegna þess að þingmenn hinna svokölluðu vinstri flokka spyrja aftur og aftur, hvaðan þessir peningar koma, hvað verði skorið niður .
-1	en	en	CCONJ	CONJ	_	3	cc	_	_
-2	mig	ég	PRON	PRO-A	Case=Acc	3	nsubj	_	_
-3	langaði	langa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
-4	bara	bara	ADV	FP	Degree=Pos	3	advmod	_	_
-5	vegna	vegna	ADP	P	_	6	case	_	_
-6	þess	það	PRON	PRO-G	Case=Gen	3	obl	_	_
-7	að	að	SCONJ	C	_	13	mark	_	_
-8	þingmenn	þingmaður	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	_
-9	hinna	hinn	DET	D-G	Case=Gen	12	det	_	_
-10	svokölluðu	svokallaður	ADJ	ADJ-G	Case=Gen|Degree=Pos	12	amod	_	_
-11	vinstri	vinstri	ADJ	ADJ-G	Case=Gen|Degree=Pos	12	amod	_	_
-12	flokka	flokkur	NOUN	NS-G	Case=Gen|Definite=Ind|Number=Plur	8	nmod:poss	_	_
-13	spyrja	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	6	ccomp	_	_
-14	aftur	aftur	ADV	ADV	Degree=Pos	13	advmod	_	_
-15	og	og	CCONJ	CONJ	_	16	cc	_	_
-16	aftur	aftur	ADV	ADV	Degree=Pos	14	conj	_	SpaceAfter=No
-17	,	,	PUNCT	,	_	16	punct	_	_
-18	hvaðan	hvaðan	ADV	WADV	Degree=Pos	21	advmod	_	_
-19	þessir	þessi	DET	D-N	Case=Nom	20	det	_	_
-20	peningar	peningur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	21	nsubj	_	_
-21	koma	koma	VERB	VBPI	Mood=Ind|Tense=Pres	13	ccomp	_	SpaceAfter=No
-22	,	,	PUNCT	,	_	21	punct	_	_
-23	hvað	hver	PRON	WPRO-N	Case=Nom	25	obj	_	_
-24	verði	verða	AUX	RDPS	Mood=Sub|Tense=Pres	25	aux	_	_
-25	skorið	skera	VERB	VAN	Tense=Past|VerbForm=Part	21	conj	_	_
-26	niður	niður	ADP	RP	_	25	compound:prt	_	SpaceAfter=No
-27	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4492074,.3
-# X_ID = ID_MISSING
-# text = Ég vil bara ítreka að það þarf ekkert að skera niður, það er ekkert mál að gefa öllum ókeypis peninga ef maður fær þá einfaldlega lánaða .
+# sent_id = ALTHINGI_HHG_2013_G-33-4492074,.2
+# X_ID = ID_missing_3
+# text = Ég vil bara ítreka að það þarf ekkert að skera niður, það er ekkert mál að gefa öllum ókeypis peninga ef maður fær þá einfaldlega lánaða.
 1	Ég	ég	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	vil	vilja	AUX	MDPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	bara	bara	ADV	FP	Degree=Pos	4	advmod	_	_
@@ -84,9 +80,9 @@
 27	lánaða	lána	VERB	VAN-A	Case=Acc|Tense=Past|VerbForm=Part	24	ccomp	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4492074,.4
-# X_ID = ID_MISSING
-# text = Þá er eina spurningin hversu mikið meira munu komandi kynslóðir fá að borga fyrir það .
+# sent_id = ALTHINGI_HHG_2013_G-33-4492074,.3
+# X_ID = ID_missing_4
+# text = Þá er eina spurningin hversu mikið meira munu komandi kynslóðir fá að borga fyrir það.
 1	Þá	þá	ADV	ADV	Degree=Pos	11	advmod	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	11	cop	_	_
 3	eina	einn	DET	ONE-N	Case=Nom	4	det	_	_
@@ -104,9 +100,9 @@
 15	það	það	PRON	PRO-A	Case=Acc	13	obl	_	SpaceAfter=No
 16	.	.	PUNCT	.	_	11	punct	_	_
 
-# sent_id = G-33-4492074,.5
-# X_ID = ID_MISSING
-# text = Það er svo sem enginn ágreiningur um það,
+# sent_id = ALTHINGI_HHG_2013_G-33-4492074,.4
+# X_IDs = ID_missing_5 ; ID_missing_6
+# text = Það er svo sem enginn ágreiningur um það, þetta er bara eitthvað sem mér finnst mikilvægt að rifja upp aftur.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	6	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	6	cop	_	_
 3	svo	svo	ADV	ADVR	Degree=Cmp	6	advmod	_	_
@@ -115,28 +111,24 @@
 6	ágreiningur	ágreiningur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	_
 7	um	um	ADP	P	_	8	case	_	_
 8	það	það	PRON	PRO-A	Case=Acc	6	obl	_	SpaceAfter=No
-9	,	,	PUNCT	,	_	6	punct	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	þetta	þessi	DET	D-N	Case=Nom	13	nsubj	_	_
+11	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	13	cop	_	_
+12	bara	bara	ADV	FP	Degree=Pos	13	advmod	_	_
+13	eitthvað	einhver	DET	Q-N	Case=Nom	6	conj	_	OriginalHead=0
+14	sem	sem	SCONJ	C	_	16	mark	_	_
+15	mér	ég	PRON	PRO-D	Case=Dat	16	nsubj	_	_
+16	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	_
+17	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	19	amod	_	_
+18	að	að	PART	TO	_	19	mark	_	_
+19	rifja	rifja	VERB	VB	VerbForm=Inf	16	xcomp	_	_
+20	upp	upp	ADP	RP	_	19	compound:prt	_	_
+21	aftur	aftur	ADV	ADV	Degree=Pos	19	advmod	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	6	punct	_	_
 
-# sent_id = G-33-4492074,.6
-# X_ID = ID_MISSING
-# text = þetta er bara eitthvað sem mér finnst mikilvægt að rifja upp aftur .
-1	þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	bara	bara	ADV	FP	Degree=Pos	4	advmod	_	_
-4	eitthvað	einhver	DET	Q-N	Case=Nom	0	root	_	_
-5	sem	sem	SCONJ	C	_	7	mark	_	_
-6	mér	ég	PRON	PRO-D	Case=Dat	7	nsubj	_	_
-7	finnst	finna	VERB	VBPI	Mood=Ind|Tense=Pres	4	acl:relcl	_	_
-8	mikilvægt	mikilvægur	ADJ	ADJ-N	Case=Nom|Degree=Pos	10	amod	_	_
-9	að	að	PART	TO	_	10	mark	_	_
-10	rifja	rifja	VERB	VB	VerbForm=Inf	7	xcomp	_	_
-11	upp	upp	ADP	RP	_	10	compound:prt	_	_
-12	aftur	aftur	ADV	ADV	Degree=Pos	10	advmod	_	SpaceAfter=No
-13	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4492074,.7
-# X_ID = ID_MISSING
-# text = Þetta er ekki spurning um hægrið, að lækka skatta, eða vinstrið, að auka útgjöld .
+# sent_id = ALTHINGI_HHG_2013_G-33-4492074,.5
+# X_ID = ID_missing_7
+# text = Þetta er ekki spurning um hægrið, að lækka skatta, eða vinstrið, að auka útgjöld.
 1	Þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	ekki	ekki	ADV	NEG	_	4	advmod	_	_
@@ -156,9 +148,9 @@
 17	útgjöld	útgjöld	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	16	obj	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4492074,.8
-# X_ID = ID_MISSING
-# text = Í stærra samhengi snýst þetta líka um að halda jafnvægi í ríkissjóði til lengri tíma, burtséð frá því hvort við erum til hægri eða vinstri og hvort sem við erum að hækka skatta eða auka útgjöld eða hvað það er .
+# sent_id = ALTHINGI_HHG_2013_G-33-4492074,.6
+# X_ID = ID_missing_8
+# text = Í stærra samhengi snýst þetta líka um að halda jafnvægi í ríkissjóði til lengri tíma, burtséð frá því hvort við erum til hægri eða vinstri og hvort sem við erum að hækka skatta eða auka útgjöld eða hvað það er.
 1	Í	í	ADP	P	_	3	case	_	_
 2	stærra	stór	ADJ	ADJR-D	Case=Dat|Degree=Cmp	3	amod	_	_
 3	samhengi	samhengi	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
@@ -202,9 +194,9 @@
 41	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	40	cop	_	SpaceAfter=No
 42	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4492074,.9
-# X_ID = ID_MISSING
-# text = Einnig hefur verið vikið að því í þessum umræðum áður að svokallaður hugmyndafræðilegur ágreiningur aftur varðandi þetta vinstri hægri dæmi allt saman, sem á sér kannski einhverja réttlætingu, þó að mínu mati frekar mikið ýkta vegna þess að þegar kemur að eignarrétti, sem ég held að allir hérna trúi á, þá er gamla spurningin um kvótakerfið einmitt spurning um eignarrétt einstaklingsins á móti eignarrétti þjóðar .
+# sent_id = ALTHINGI_HHG_2013_G-33-4492074,.7
+# X_ID = ID_missing_9
+# text = Einnig hefur verið vikið að því í þessum umræðum áður að svokallaður hugmyndafræðilegur ágreiningur aftur varðandi þetta vinstri hægri dæmi allt saman, sem á sér kannski einhverja réttlætingu, þó að mínu mati frekar mikið ýkta vegna þess að þegar kemur að eignarrétti, sem ég held að allir hérna trúi á, þá er gamla spurningin um kvótakerfið einmitt spurning um eignarrétt einstaklingsins á móti eignarrétti þjóðar.
 1	Einnig	einnig	ADV	ADV	Degree=Pos	4	advmod	_	_
 2	hefur	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	4	aux	_	_
 3	verið	vera	AUX	BEN	Tense=Past|VerbForm=Part	4	cop	_	_
@@ -276,9 +268,9 @@
 69	þjóðar	þjóð	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	68	nmod:poss	_	SpaceAfter=No
 70	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4492074,.10
-# X_ID = ID_MISSING
-# text = Það er sama spurningin og á milli einstaklingsfrelsis og lýðræðis, eignarréttur yfir náttúruauðlindum er í raun bara eignarréttur á öðrum skala á öðrum stað .
+# sent_id = ALTHINGI_HHG_2013_G-33-4492074,.8
+# X_ID = ID_missing_10
+# text = Það er sama spurningin og á milli einstaklingsfrelsis og lýðræðis, eignarréttur yfir náttúruauðlindum er í raun bara eignarréttur á öðrum skala á öðrum stað.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	sama	sami	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -306,9 +298,9 @@
 25	stað	staður	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	19	obl	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4492074,.11
-# X_ID = ID_MISSING
-# text = Mig langaði að spyrja hv. þm. Katrínu Jakobsdóttur aðeins meira út í þetta þar sem þetta er kallað veiðigjald .
+# sent_id = ALTHINGI_HHG_2013_G-33-4492074,.9
+# X_ID = ID_missing_11
+# text = Mig langaði að spyrja hv. þm. Katrínu Jakobsdóttur aðeins meira út í þetta þar sem þetta er kallað veiðigjald.
 1	Mig	ég	PRON	PRO-A	Case=Acc	2	nsubj	_	_
 2	langaði	langa	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -330,9 +322,9 @@
 19	veiðigjald	veiðigjald	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	18	ccomp	_	SpaceAfter=No
 20	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4492074,.12
-# X_ID = ID_MISSING
-# text = Nú vitum við öll að þetta er viðurkenning á því að þjóðin eigi auðlindina .
+# sent_id = ALTHINGI_HHG_2013_G-33-4492074,.10
+# X_ID = ID_missing_12
+# text = Nú vitum við öll að þetta er viðurkenning á því að þjóðin eigi auðlindina.
 1	Nú	nú	ADV	ADV	Degree=Pos	2	advmod	_	_
 2	vitum	vita	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
@@ -349,6 +341,9 @@
 14	auðlindina	auðlind	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	SpaceAfter=No
 15	.	.	PUNCT	.	_	2	punct	_	_
 
+# sent_id = ALTHINGI_HHG_2013_G-33-4492074,.11
+# X_ID = ID_missing_13
+# text = En mætti þetta ekki alveg eins heita auðlindagjald ef markmiðið er að setja þetta gjald á fleiri auðlindir?
 1	En	en	CCONJ	CONJ	_	7	cc	_	_
 2	mætti	mega	AUX	MDDS	Mood=Sub|Tense=Past	7	aux	_	_
 3	þetta	þessi	DET	D-N	Case=Nom	7	nsubj	_	_
@@ -366,6 +361,6 @@
 15	gjald	gjald	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	13	obj	_	_
 16	á	á	ADP	P	_	18	case	_	_
 17	fleiri	margur	DET	QR-A	Case=Acc	18	amod	_	_
-18	auðlindir	auðlind	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obl	_	_
+18	auðlindir	auðlind	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	13	obl	_	SpaceAfter=No
 19	?	?	PUNCT	.	_	7	punct	_	_
 

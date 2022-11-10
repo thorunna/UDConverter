@@ -1,6 +1,6 @@
-# sent_id = G-33-4522155,.1
-# X_ID = ID_MISSING
-# text = Frú forseti . Ég þakka hv. þm. Ásbirni Óttarssyni fyrir mjög góða ræðu þar sem hann útskýrði marga hluti sem menn hafa verið að spyrja um .
+# sent_id = ALTHINGI_TKG_2011_G-33-4522155,.1
+# X_ID = ID_missing_1
+# text = Frú forseti. Ég þakka hv. þm. Ásbirni Óttarssyni fyrir mjög góða ræðu þar sem hann útskýrði marga hluti sem menn hafa verið að spyrja um.
 1	Frú	frú	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	1	conj	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -29,9 +29,9 @@
 26	um	um	ADP	P	_	25	obl	_	SpaceAfter=No
 27	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4522155,.2
-# X_ID = ID_MISSING
-# text = Það er auðvitað ekki hægt að aðgreina þetta mál frá því stóra samhengi sem þetta mál snýst raunverulega um, það er samgönguframkvæmdir og hvernig við getum ýtt þeim áfram .
+# sent_id = ALTHINGI_TKG_2011_G-33-4522155,.2
+# X_ID = ID_missing_2
+# text = Það er auðvitað ekki hægt að aðgreina þetta mál frá því stóra samhengi sem þetta mál snýst raunverulega um, það er samgönguframkvæmdir og hvernig við getum ýtt þeim áfram.
 1	Það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	5	expl	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	auðvitað	auðvitað	ADV	ADV	Degree=Pos	5	advmod	_	_
@@ -64,9 +64,9 @@
 30	áfram	áfram	ADV	ADV	Degree=Pos	28	advmod	_	SpaceAfter=No
 31	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4522155,.3
-# X_ID = ID_MISSING
-# text = Þetta sérstaka mál snýr að því hvernig við getum farið af stað með framkvæmdir á Vaðlaheiði .
+# sent_id = ALTHINGI_TKG_2011_G-33-4522155,.3
+# X_ID = ID_missing_3
+# text = Þetta sérstaka mál snýr að því hvernig við getum farið af stað með framkvæmdir á Vaðlaheiði.
 1	Þetta	þessi	DET	D-N	Case=Nom	3	det	_	_
 2	sérstaka	sérstakur	ADJ	ADJ-N	Case=Nom|Degree=Pos	3	amod	_	_
 3	mál	mál	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	4	nsubj	_	_
@@ -85,9 +85,9 @@
 16	Vaðlaheiði	vaðlaheiði	PROPN	NPR-D	_	14	obl	_	SpaceAfter=No
 17	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4522155,.4
-# X_ID = ID_MISSING
-# text = Hv. þingmaður hélt hér ræður á sínum tíma í tengslum við umræðuna um gjaldtöku í vegamálum varðandi Reykjanesbraut, Vesturlandsveg, Suðurlandsveg og síðan Vaðlaheiði
+# sent_id = ALTHINGI_TKG_2011_G-33-4522155,.4
+# X_IDs = ID_missing_4 ; ID_missing_5
+# text = Hv. þingmaður hélt hér ræður á sínum tíma í tengslum við umræðuna um gjaldtöku í vegamálum varðandi Reykjanesbraut, Vesturlandsveg, Suðurlandsveg og síðan Vaðlaheiði og ég spyr hann hvaða nákvæmu skoðanir hann hafi sett fram á sínum tíma.
 1	Hv.	háttvirtur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	þingmaður	þingmaður	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	hélt	halda	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
@@ -113,38 +113,34 @@
 23	og	og	CCONJ	CONJ	_	25	cc	_	_
 24	síðan	síðan	ADV	ADV	Degree=Pos	25	advmod	_	_
 25	Vaðlaheiði	vaðlaheiði	PROPN	NPR-A	_	20	conj	_	_
+26	og	og	CCONJ	CONJ	_	28	cc	_	_
+27	ég	ég	PRON	PRO-N	Case=Nom	28	nsubj	_	_
+28	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	3	conj	_	OriginalHead=0
+29	hann	hann	PRON	PRO-A	Case=Acc	28	iobj	_	_
+30	hvaða	hvaða	DET	WD-A	Case=Acc	32	det	_	_
+31	nákvæmu	nákvæmur	ADJ	ADJ-A	Case=Acc|Degree=Pos	32	amod	_	_
+32	skoðanir	skoðun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	35	obj	_	_
+33	hann	hann	PRON	PRO-N	Case=Nom	35	nsubj	_	_
+34	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	35	aux	_	_
+35	sett	setja	VERB	VBN	Tense=Past|VerbForm=Part	28	ccomp	_	_
+36	fram	fram	ADP	RP	_	35	compound:prt	_	_
+37	á	á	ADP	P	_	39	case	_	_
+38	sínum	sinn	PRON	PRO-D	Case=Dat	39	nmod:poss	_	_
+39	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	35	obl	_	SpaceAfter=No
+40	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4522155,.5
-# X_ID = ID_MISSING
-# text = og ég spyr hann hvaða nákvæmu skoðanir hann hafi sett fram á sínum tíma .
-1	og	og	CCONJ	CONJ	_	3	cc	_	_
-2	ég	ég	PRON	PRO-N	Case=Nom	3	nsubj	_	_
-3	spyr	spyrja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
-4	hann	hann	PRON	PRO-A	Case=Acc	3	iobj	_	_
-5	hvaða	hvaða	DET	WD-A	Case=Acc	7	det	_	_
-6	nákvæmu	nákvæmur	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
-7	skoðanir	skoðun	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	10	obj	_	_
-8	hann	hann	PRON	PRO-N	Case=Nom	10	nsubj	_	_
-9	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	10	aux	_	_
-10	sett	setja	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	_
-11	fram	fram	ADP	RP	_	10	compound:prt	_	_
-12	á	á	ADP	P	_	14	case	_	_
-13	sínum	sinn	PRON	PRO-D	Case=Dat	14	nmod:poss	_	_
-14	tíma	tími	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	10	obl	_	SpaceAfter=No
-15	.	.	PUNCT	.	_	3	punct	_	_
-
-# sent_id = G-33-4522155,.6
-# X_ID = ID_MISSING
-# text = Það er fyrsta spurning .
+# sent_id = ALTHINGI_TKG_2011_G-33-4522155,.5
+# X_ID = ID_missing_6
+# text = Það er fyrsta spurning.
 1	Það	það	PRON	PRO-N	Case=Nom	4	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 3	fyrsta	fyrstur	ADJ	ADJS-N	Case=Nom|Degree=Sup	4	amod	_	_
 4	spurning	spurning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	.	_	4	punct	_	_
 
-# sent_id = G-33-4522155,.7
-# X_ID = ID_MISSING
-# text = Önnur spurning er hvort hann geti upplýst, a.m.k. mig og þá þingheim líka, hvaða sjónarmið hafi verið reifuð innan samgöngunefndar af hálfu þeirra sem höfðu ákveðnar efasemdir um þessa leið og þetta mál .
+# sent_id = ALTHINGI_TKG_2011_G-33-4522155,.6
+# X_ID = ID_missing_7
+# text = Önnur spurning er hvort hann geti upplýst, a.m.k. mig og þá þingheim líka, hvaða sjónarmið hafi verið reifuð innan samgöngunefndar af hálfu þeirra sem höfðu ákveðnar efasemdir um þessa leið og þetta mál.
 1	Önnur	annar	PRON	OTHER-N	Case=Nom	2	det	_	_
 2	spurning	spurning	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	7	nsubj	_	_
 3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	7	cop	_	_
@@ -184,9 +180,9 @@
 37	mál	mál	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	34	conj	_	SpaceAfter=No
 38	.	.	PUNCT	.	_	7	punct	_	_
 
-# sent_id = G-33-4522155,.8
-# X_ID = ID_MISSING
-# text = Gott væri að fá það upplýst .
+# sent_id = ALTHINGI_TKG_2011_G-33-4522155,.7
+# X_ID = ID_missing_8
+# text = Gott væri að fá það upplýst.
 1	Gott	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
 2	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	1	cop	_	_
 3	að	að	PART	TO	_	4	mark	_	_
@@ -195,9 +191,9 @@
 6	upplýst	upplýsa	VERB	VAN	Tense=Past|VerbForm=Part	4	ccomp	_	SpaceAfter=No
 7	.	.	PUNCT	.	_	1	punct	_	_
 
-# sent_id = G-33-4522155,.9
-# X_ID = ID_MISSING
-# text = Skildi ég hv. þingmann rétt í því að ef þessi framkvæmd kemur ekki til með að gefa af sér þann arð og hagkvæmni sem menn gera kannski ráð fyrir í dag geri hann ráð fyrir því að ríkið muni yfirtaka restina af hlutafélaginu og það muni þá hafa í för með sér útlát fyrir ríkissjóð ?
+# sent_id = ALTHINGI_TKG_2011_G-33-4522155,.8
+# X_ID = ID_missing_9
+# text = Skildi ég hv. þingmann rétt í því að ef þessi framkvæmd kemur ekki til með að gefa af sér þann arð og hagkvæmni sem menn gera kannski ráð fyrir í dag geri hann ráð fyrir því að ríkið muni yfirtaka restina af hlutafélaginu og það muni þá hafa í för með sér útlát fyrir ríkissjóð?
 1	Skildi	skilja	VERB	VBDI	Mood=Ind|Tense=Past	0	root	_	_
 2	ég	ég	PRON	PRO-N	Case=Nom	1	nsubj	_	_
 3	hv.	háttvirtur	ADJ	ADJ-A	Case=Acc|Degree=Pos	4	amod	_	_
@@ -255,6 +251,9 @@
 55	ríkissjóð	ríkissjóður	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	53	obl	_	SpaceAfter=No
 56	?	?	PUNCT	.	_	1	punct	_	_
 
+# sent_id = ALTHINGI_TKG_2011_G-33-4522155,.9
+# X_ID = ID_missing_10
+# text = Er þetta réttur skilningur hjá mér í þessari þriðju spurningu minni til hans?
 1	Er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
 2	þetta	þessi	DET	D-N	Case=Nom	4	nsubj	_	_
 3	réttur	réttur	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	_
@@ -267,6 +266,6 @@
 10	spurningu	spurning	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	4	obl	_	_
 11	minni	minn	PRON	PRO-D	Case=Dat	10	nmod:poss	_	_
 12	til	til	ADP	P	_	13	case	_	_
-13	hans	hann	PRON	PRO-G	Case=Gen	10	obl	_	_
+13	hans	hann	PRON	PRO-G	Case=Gen	10	obl	_	SpaceAfter=No
 14	?	?	PUNCT	.	_	4	punct	_	_
 

@@ -1,6 +1,6 @@
-# sent_id = G-33-4736504,.1
-# X_ID = ID_MISSING
-# text = Virðulegi forseti . Ég þakka hv. þingmanni fyrir þessi góðu viðbrögð .
+# sent_id = ALTHINGI_HHG_2013_G-33-4736504,.1
+# X_ID = ID_missing_1
+# text = Virðulegi forseti. Ég þakka hv. þingmanni fyrir þessi góðu viðbrögð.
 1	Virðulegi	virðulegur	ADJ	ADJ-N	Case=Nom|Degree=Pos	2	amod	_	_
 2	forseti	forseti	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	5	vocative	_	SpaceAfter=No
 3	.	.	PUNCT	.	_	2	punct	_	_
@@ -14,9 +14,9 @@
 11	viðbrögð	viðbragð	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	5	obl	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4736504,.2
-# X_ID = ID_MISSING
-# text = Það er ekki bara það sem hv. þingmaður nefnir réttilega, að þegar þrýstingurinn á það að sýna gögnin og frumvarpið og rökstyðja það með viðundandi hætti er til staðar myndist betri umræða,
+# sent_id = ALTHINGI_HHG_2013_G-33-4736504,.2
+# X_IDs = ID_missing_2 ; ID_missing_3
+# text = Það er ekki bara það sem hv. þingmaður nefnir réttilega, að þegar þrýstingurinn á það að sýna gögnin og frumvarpið og rökstyðja það með viðundandi hætti er til staðar myndist betri umræða, það er líka ágætt að yfirvöld hafi það alltaf á bak við eyrað að hlutirnir geti endað í þjóðaratkvæðagreiðslu í óþökk þeirra.
 1	Það	það	PRON	PRO-N	Case=Nom	5	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
 3	ekki	ekki	ADV	NEG	_	5	advmod	_	_
@@ -51,37 +51,33 @@
 32	betri	góður	ADJ	ADJR-N	Case=Nom|Degree=Cmp	33	amod	_	_
 33	umræða	umræða	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	31	nsubj	_	SpaceAfter=No
 34	,	,	PUNCT	,	_	5	punct	_	_
+35	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	38	expl	_	_
+36	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	38	cop	_	_
+37	líka	líka	ADV	ALSO	_	38	advmod	_	_
+38	ágætt	ágætur	ADJ	ADJ-N	Case=Nom|Degree=Pos	5	conj	_	OriginalHead=0
+39	að	að	SCONJ	C	_	41	mark	_	_
+40	yfirvöld	yfirvald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	41	nsubj	_	_
+41	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	38	ccomp	_	_
+42	það	það	PRON	PRO-A	Case=Acc	41	obj	_	_
+43	alltaf	alltaf	ADV	ADV	Degree=Pos	41	advmod	_	_
+44	á	á	ADP	P	_	45	case	_	_
+45	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	41	obl	_	_
+46	við	við	ADP	P	_	47	case	_	_
+47	eyrað	eyra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	45	obl	_	_
+48	að	að	SCONJ	C	_	51	mark	_	_
+49	hlutirnir	hlutur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	51	nsubj	_	_
+50	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	51	aux	_	_
+51	endað	enda	VERB	VBN	Tense=Past|VerbForm=Part	41	ccomp	_	_
+52	í	í	ADP	P	_	53	case	_	_
+53	þjóðaratkvæðagreiðslu	þjóðaratkvæðagreiðsla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	51	obl	_	_
+54	í	í	ADP	P	_	55	case	_	_
+55	óþökk	óþökk	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	51	obl	_	_
+56	þeirra	hann	PRON	PRO-G	Case=Gen	55	nmod:poss	_	SpaceAfter=No
+57	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4736504,.3
-# X_ID = ID_MISSING
-# text = það er líka ágætt að yfirvöld hafi það alltaf á bak við eyrað að hlutirnir geti endað í þjóðaratkvæðagreiðslu í óþökk þeirra .
-1	það	það	PRON	ES	Case=Nom|Gender=Neut|Number=Sing	4	expl	_	_
-2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	4	cop	_	_
-3	líka	líka	ADV	ALSO	_	4	advmod	_	_
-4	ágætt	ágætur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
-5	að	að	SCONJ	C	_	7	mark	_	_
-6	yfirvöld	yfirvald	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	7	nsubj	_	_
-7	hafi	hafa	AUX	HVPS	Mood=Sub|Tense=Pres	4	ccomp	_	_
-8	það	það	PRON	PRO-A	Case=Acc	7	obj	_	_
-9	alltaf	alltaf	ADV	ADV	Degree=Pos	7	advmod	_	_
-10	á	á	ADP	P	_	11	case	_	_
-11	bak	bak	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	7	obl	_	_
-12	við	við	ADP	P	_	13	case	_	_
-13	eyrað	eyra	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	11	obl	_	_
-14	að	að	SCONJ	C	_	17	mark	_	_
-15	hlutirnir	hlutur	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	17	nsubj	_	_
-16	geti	geta	AUX	MDPS	Mood=Sub|Tense=Pres	17	aux	_	_
-17	endað	enda	VERB	VBN	Tense=Past|VerbForm=Part	7	ccomp	_	_
-18	í	í	ADP	P	_	19	case	_	_
-19	þjóðaratkvæðagreiðslu	þjóðaratkvæðagreiðsla	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
-20	í	í	ADP	P	_	21	case	_	_
-21	óþökk	óþökk	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	17	obl	_	_
-22	þeirra	hann	PRON	PRO-G	Case=Gen	21	nmod:poss	_	SpaceAfter=No
-23	.	.	PUNCT	.	_	4	punct	_	_
-
-# sent_id = G-33-4736504,.4
-# X_ID = ID_MISSING
-# text = Það er hollt vegna þess að þá einmitt undirbúa þau málin kannski með þeim hætti að þau séu skýrari fyrir almenningi eins og hv. þingmaður minntist á .
+# sent_id = ALTHINGI_HHG_2013_G-33-4736504,.3
+# X_ID = ID_missing_4
+# text = Það er hollt vegna þess að þá einmitt undirbúa þau málin kannski með þeim hætti að þau séu skýrari fyrir almenningi eins og hv. þingmaður minntist á.
 1	Það	það	PRON	PRO-N	Case=Nom	3	nsubj	_	_
 2	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	3	cop	_	_
 3	hollt	hollur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	_
@@ -111,9 +107,9 @@
 27	á	á	ADP	P	_	26	obl	_	SpaceAfter=No
 28	.	.	PUNCT	.	_	3	punct	_	_
 
-# sent_id = G-33-4736504,.5
-# X_ID = ID_MISSING
-# text = Sú leið sem við neyðumst til að fara undir núverandi stjórnarskrá er afleit .
+# sent_id = ALTHINGI_HHG_2013_G-33-4736504,.4
+# X_ID = ID_missing_5
+# text = Sú leið sem við neyðumst til að fara undir núverandi stjórnarskrá er afleit.
 1	Sú	sá	DET	D-N	Case=Nom	2	det	_	_
 2	leið	leið	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	13	nsubj	_	_
 3	sem	sem	SCONJ	C	_	5	mark	_	_
@@ -129,9 +125,9 @@
 13	afleit	afleitur	ADJ	ADJ-N	Case=Nom|Degree=Pos	0	root	_	SpaceAfter=No
 14	.	.	PUNCT	.	_	13	punct	_	_
 
-# sent_id = G-33-4736504,.6
-# X_ID = ID_MISSING
-# text = Við höfum í raun bara eina leið til að knýja fram þjóðaratkvæðagreiðslu
+# sent_id = ALTHINGI_HHG_2013_G-33-4736504,.5
+# X_IDs = ID_missing_6 ; ID_missing_7
+# text = Við höfum í raun bara eina leið til að knýja fram þjóðaratkvæðagreiðslu og hún er að treysta á forseta lýðveldisins til að hafna því að skrifa undir lög.
 1	Við	ég	PRON	PRO-N	Case=Nom	2	nsubj	_	_
 2	höfum	hafa	VERB	HVPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -144,31 +140,27 @@
 10	knýja	knýja	VERB	VB	VerbForm=Inf	7	obl	_	_
 11	fram	fram	ADP	RP	_	10	compound:prt	_	_
 12	þjóðaratkvæðagreiðslu	þjóðaratkvæðagreiðsla	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	10	obj	_	_
+13	og	og	CCONJ	CONJ	_	17	cc	_	_
+14	hún	hún	PRON	PRO-N	Case=Nom	17	nsubj	_	_
+15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
+16	að	að	PART	TO	_	17	mark	_	_
+17	treysta	treysta	VERB	VB	VerbForm=Inf	2	conj	_	OriginalHead=0
+18	á	á	ADP	P	_	19	case	_	_
+19	forseta	forseti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	17	obl	_	_
+20	lýðveldisins	lýðveldi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	19	nmod:poss	_	_
+21	til	til	ADP	P	_	23	case	_	_
+22	að	að	PART	TO	_	23	mark	_	_
+23	hafna	hafna	VERB	VB	VerbForm=Inf	17	obl	_	_
+24	því	það	PRON	PRO-D	Case=Dat	23	obj	_	_
+25	að	að	PART	TO	_	26	mark	_	_
+26	skrifa	skrifa	VERB	VB	VerbForm=Inf	24	xcomp	_	_
+27	undir	undir	ADP	P	_	28	case	_	_
+28	lög	lag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	26	obl	_	SpaceAfter=No
+29	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4736504,.7
-# X_ID = ID_MISSING
-# text = og hún er að treysta á forseta lýðveldisins til að hafna því að skrifa undir lög .
-1	og	og	CCONJ	CONJ	_	5	cc	_	_
-2	hún	hún	PRON	PRO-N	Case=Nom	5	nsubj	_	_
-3	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	5	cop	_	_
-4	að	að	PART	TO	_	5	mark	_	_
-5	treysta	treysta	VERB	VB	VerbForm=Inf	0	root	_	_
-6	á	á	ADP	P	_	7	case	_	_
-7	forseta	forseti	NOUN	N-A	Case=Acc|Definite=Ind|Number=Sing	5	obl	_	_
-8	lýðveldisins	lýðveldi	NOUN	N-G	Case=Gen|Definite=Ind|Number=Sing	7	nmod:poss	_	_
-9	til	til	ADP	P	_	11	case	_	_
-10	að	að	PART	TO	_	11	mark	_	_
-11	hafna	hafna	VERB	VB	VerbForm=Inf	5	obl	_	_
-12	því	það	PRON	PRO-D	Case=Dat	11	obj	_	_
-13	að	að	PART	TO	_	14	mark	_	_
-14	skrifa	skrifa	VERB	VB	VerbForm=Inf	12	xcomp	_	_
-15	undir	undir	ADP	P	_	16	case	_	_
-16	lög	lag	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	14	obl	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	5	punct	_	_
-
-# sent_id = G-33-4736504,.8
-# X_ID = ID_MISSING
-# text = Þetta þykir mér og okkar flokki mjög óeðlilegt fyrirkomulag en því miður það eina sem við höfum .
+# sent_id = ALTHINGI_HHG_2013_G-33-4736504,.6
+# X_ID = ID_missing_8
+# text = Þetta þykir mér og okkar flokki mjög óeðlilegt fyrirkomulag en því miður það eina sem við höfum.
 1	Þetta	þessi	DET	D-N	Case=Nom	2	obl	_	_
 2	þykir	þykja	VERB	VBPI	Mood=Ind|Tense=Pres	0	root	_	_
 3	mér	ég	PRON	PRO-D	Case=Dat	2	nsubj	_	_
@@ -188,9 +180,9 @@
 17	höfum	hafa	AUX	HVPI	Mood=Ind|Tense=Pres	13	acl:relcl	_	SpaceAfter=No
 18	.	.	PUNCT	.	_	2	punct	_	_
 
-# sent_id = G-33-4736504,.9
-# X_ID = ID_MISSING
-# text = Allar leiðir til að koma svona málum í þjóðaratkvæðagreiðslu með skilvirkari hætti, svo sem við mótmæli einhverrar prósentu kjósenda gegn lögum til að knýja fram þjóðaratkvæðagreiðslu, eru akkúrat það sem við mundum helst vilja
+# sent_id = ALTHINGI_HHG_2013_G-33-4736504,.7
+# X_IDs = ID_missing_9 ; ID_missing_10
+# text = Allar leiðir til að koma svona málum í þjóðaratkvæðagreiðslu með skilvirkari hætti, svo sem við mótmæli einhverrar prósentu kjósenda gegn lögum til að knýja fram þjóðaratkvæðagreiðslu, eru akkúrat það sem við mundum helst vilja og það væri mun eðlilegri farvegur.
 1	Allar	allur	DET	Q-N	Case=Nom	2	amod	_	_
 2	leiðir	leið	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	31	nsubj	_	_
 3	til	til	ADP	P	_	5	case	_	_
@@ -227,21 +219,17 @@
 34	mundum	munu	AUX	MDDS	Mood=Sub|Tense=Past	36	aux	_	_
 35	helst	gjarna	ADV	ADVS	Degree=Sup	36	advmod	_	_
 36	vilja	vilja	VERB	VB	VerbForm=Inf	31	acl:relcl	_	_
+37	og	og	CCONJ	CONJ	_	42	cc	_	_
+38	það	það	PRON	PRO-N	Case=Nom	42	nsubj	_	_
+39	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	42	cop	_	_
+40	mun	munur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	42	obl	_	_
+41	eðlilegri	eðlilegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	42	amod	_	_
+42	farvegur	farvegur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	31	conj	_	OriginalHead=0|SpaceAfter=No
+43	.	.	PUNCT	.	_	31	punct	_	_
 
-# sent_id = G-33-4736504,.10
-# X_ID = ID_MISSING
-# text = og það væri mun eðlilegri farvegur .
-1	og	og	CCONJ	CONJ	_	6	cc	_	_
-2	það	það	PRON	PRO-N	Case=Nom	6	nsubj	_	_
-3	væri	vera	AUX	BEDS	Mood=Sub|Tense=Past	6	cop	_	_
-4	mun	munur	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	6	obl	_	_
-5	eðlilegri	eðlilegur	ADJ	ADJR-N	Case=Nom|Degree=Cmp	6	amod	_	_
-6	farvegur	farvegur	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	0	root	_	SpaceAfter=No
-7	.	.	PUNCT	.	_	6	punct	_	_
-
-# sent_id = G-33-4736504,.11
-# X_ID = ID_MISSING
-# text = Með hliðsjón af því að nú hafa borist 34 þús. undirskriftir gegn þessu frumvarpi af einni eða annarri ástæðu liggur í augum uppi að þetta frumvarp hefði farið í þjóðaratkvæðagreiðslu undir slíkum kringumstæðum .
+# sent_id = ALTHINGI_HHG_2013_G-33-4736504,.8
+# X_ID = ID_missing_11
+# text = Með hliðsjón af því að nú hafa borist 34 þús. undirskriftir gegn þessu frumvarpi af einni eða annarri ástæðu liggur í augum uppi að þetta frumvarp hefði farið í þjóðaratkvæðagreiðslu undir slíkum kringumstæðum.
 1	Með	með	ADP	P	_	2	case	_	_
 2	hliðsjón	hliðsjón	NOUN	N-D	Case=Dat|Definite=Ind|Number=Sing	20	obl	_	_
 3	af	af	ADP	P	_	4	case	_	_
@@ -277,9 +265,9 @@
 33	kringumstæðum	kringumstæður	NOUN	NS-D	Case=Dat|Definite=Ind|Number=Plur	28	obl	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	20	punct	_	_
 
-# sent_id = G-33-4736504,.12
-# X_ID = ID_MISSING
-# text = Með það í huga kemur alveg til greina að ræða breytingartillögur að því að lýðræðisvæða þetta frumvarp, að sjálfsögðu, með þetta frumvarp og öll frumvörp,
+# sent_id = ALTHINGI_HHG_2013_G-33-4736504,.9
+# X_IDs = ID_missing_12 ; ID_missing_13
+# text = Með það í huga kemur alveg til greina að ræða breytingartillögur að því að lýðræðisvæða þetta frumvarp, að sjálfsögðu, með þetta frumvarp og öll frumvörp, það má vera alveg skýrt.
 1	Með	með	ADP	P	_	2	case	_	_
 2	það	það	PRON	PRO-A	Case=Acc	5	obl	_	_
 3	í	í	ADP	P	_	4	case	_	_
@@ -308,30 +296,29 @@
 26	öll	allur	DET	Q-N	Case=Nom	27	amod	_	_
 27	frumvörp	frumvarp	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	24	conj	_	SpaceAfter=No
 28	,	,	PUNCT	,	_	5	punct	_	_
+29	það	það	PRON	PRO-N	Case=Nom	30	nsubj	_	_
+30	má	mega	VERB	MDPI	Mood=Ind|Tense=Pres	5	conj	_	OriginalHead=0
+31	vera	vera	AUX	BE	VerbForm=Inf	30	cop	_	_
+32	alveg	alveg	ADV	ADV	Degree=Pos	30	advmod	_	_
+33	skýrt	skýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	32	amod	_	SpaceAfter=No
+34	.	.	PUNCT	.	_	5	punct	_	_
 
-# sent_id = G-33-4736504,.13
-# X_ID = ID_MISSING
-# text = það má vera alveg skýrt .
-1	það	það	PRON	PRO-N	Case=Nom	2	nsubj	_	_
-2	má	mega	VERB	MDPI	Mood=Ind|Tense=Pres	0	root	_	_
-3	vera	vera	AUX	BE	VerbForm=Inf	2	cop	_	_
-4	alveg	alveg	ADV	ADV	Degree=Pos	2	advmod	_	_
-5	skýrt	skýr	ADJ	ADJ-N	Case=Nom|Degree=Pos	4	amod	_	SpaceAfter=No
-6	.	.	PUNCT	.	_	2	punct	_	_
-
+# sent_id = ALTHINGI_HHG_2013_G-33-4736504,.10
+# X_ID = ID_missing_14
+# text = Ef þjóðaratkvæðagreiðsla hefði einhver meint neikvæð áhrif, að góð lög yrðu felld, er samt mikilvægt að sá þrýstingur sé til staðar fyrir yfirvöld svo þau hugsi sinn gang þegar þau semja frumvörp.
 1	Ef	ef	ADP	P	_	3	case	_	_
 2	þjóðaratkvæðagreiðsla	þjóðaratkvæðagreiðsla	NOUN	N-N	Case=Nom|Definite=Ind|Number=Sing	3	nsubj	_	_
 3	hefði	hafa	AUX	HVDS	Mood=Sub|Tense=Past	17	obl	_	_
 4	einhver	einhver	DET	Q-A	Case=Acc	7	amod	_	_
 5	meint	meina	VERB	VAN	Tense=Past|VerbForm=Part	7	amod	_	_
 6	neikvæð	neikvæður	ADJ	ADJ-A	Case=Acc|Degree=Pos	7	amod	_	_
-7	áhrif	áhrif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	_
+7	áhrif	áhrif	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	3	obj	_	SpaceAfter=No
 8	,	,	PUNCT	,	_	7	punct	_	_
 9	að	að	SCONJ	C	_	7	dep	_	_
 10	góð	góður	ADJ	ADJ-N	Case=Nom|Degree=Pos	11	amod	_	_
 11	lög	lag	NOUN	NS-N	Case=Nom|Definite=Ind|Number=Plur	13	nsubj	_	_
 12	yrðu	verða	AUX	RDDS	Mood=Sub|Tense=Past	13	aux	_	_
-13	felld	fella	VERB	VAN	Tense=Past|VerbForm=Part	9	conj	_	_
+13	felld	fella	VERB	VAN	Tense=Past|VerbForm=Part	9	conj	_	SpaceAfter=No
 14	,	,	PUNCT	,	_	13	punct	_	_
 15	er	vera	AUX	BEPI	Mood=Ind|Tense=Pres	17	cop	_	_
 16	samt	samt	ADV	ADV	Degree=Pos	17	advmod	_	_
@@ -352,6 +339,6 @@
 31	þegar	þegar	ADP	P	_	33	case	_	_
 32	þau	það	PRON	PRO-N	Case=Nom	33	nsubj	_	_
 33	semja	semja	VERB	VBPI	Mood=Ind|Tense=Pres	28	obl	_	_
-34	frumvörp	frumvarp	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	33	obj	_	_
+34	frumvörp	frumvarp	NOUN	NS-A	Case=Acc|Definite=Ind|Number=Plur	33	obj	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	17	punct	_	_
 
