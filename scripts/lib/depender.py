@@ -274,8 +274,8 @@ class UniversalDependencyGraph(DependencyGraph):
                     feats_str=self._dict_to_string(node["feats"]),
                     misc_str=self._dict_to_string(node["misc"]),
                 )
-                for i, node in sorted(self.nodes.items())
-                if node["tag"] != "TOP"
+                for i, node in sorted(filter(lambda x: x[0] != "_", self.nodes.items()))
+                if node["tag"] != "TOP" and node["word"] != None
             )
             + "\n"
         )
