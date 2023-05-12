@@ -1,5 +1,5 @@
 # Treebank format converter
-Version 1.0
+Version 1.1
 
 A Python module for converting bracket-parsed [PPCHE-format](https://www.ling.upenn.edu/hist-corpora/) treebanks to the [Universal Dependencies](https://universaldependencies.org/) framework. It is heavily based on existing [NLTK](https://www.nltk.org/) packages.
 
@@ -7,7 +7,7 @@ The module is specifically configured to convert treebanks in the [IcePaHC](http
 
 The converter has been used to create two Icelandic UD treebanks: [UD_Icelandic-IcePaHC](https://github.com/UniversalDependencies/UD_Icelandic-IcePaHC/tree/master) and [UD_Icelandic-Modern](https://github.com/UniversalDependencies/UD_Icelandic-Modern/tree/master), and one Faroese: [UD_Faroese-FarPaHC](https://github.com/UniversalDependencies/UD_Faroese-FarPaHC/tree/master).
 
-Version 1.0 has an 81.39 LAS.
+Version 1.1 has an 82.87 LAS.
 
 ## Setup
 
